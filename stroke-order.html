@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한자 획순 애니메이션 - 한자/간지 쓰는 순서 무료 학습</title>
+<meta name="description" content="한자를 입력하면 획순을 애니메이션으로 보여주는 무료 학습 도구입니다. 일본어 간지, 중국어 한자 모두 확인할 수 있어요.">
+<meta name="keywords" content="한자 획순, 간지 획순, 한자 쓰는 순서, stroke order, 한자 필순">
+<link rel="canonical" href="https://dailytoolbox.chchddr.workers.dev/stroke-order.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="한자 획순 애니메이션 학습기">
+<meta property="og:description" content="한자를 입력하면 획순을 애니메이션으로 보여주는 무료 학습 도구">
+<meta property="og:url" content="https://dailytoolbox.chchddr.workers.dev/stroke-order.html">
+<meta property="og:locale" content="ko_KR">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "한자 획순 애니메이션 학습기",
+  "url": "https://dailytoolbox.chchddr.workers.dev/stroke-order.html",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "description": "한자를 입력하면 획순을 애니메이션으로 보여주는 무료 학습 도구"
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.7/dist/hanzi-writer.min.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8WYH7KGCP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z8WYH7KGCP');
+</script>
+
+<style>
+  :root {
+    --paper: #f1ede4;
+    --paper-deep: #e7e1d2;
+    --ink: #201d1a;
+    --ink-soft: #56514a;
+    --jade: #2f6b52;
+    --jade-deep: #234f3d;
+    --vermillion: #b8492f;
+    --line: #d8d0bd;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px 80px;
+  }
+
+  .site-nav {
+    width: 100%;
+    max-width: 680px;
+    display: flex;
+    gap: 4px;
+    margin-bottom: 28px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+
+  .site-nav a {
+    font-size: 13px;
+    color: var(--ink-soft);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+
+  .site-nav a:hover { background: var(--paper-deep); color: var(--ink); }
+  .site-nav a.active { background: var(--jade); color: #fffdf8; }
+
+  main { width: 100%; max-width: 680px; }
+
+  .brand { font-size: 15px; color: var(--ink-soft); margin-bottom: 24px; }
+  .brand b { color: var(--jade); font-weight: 700; }
+
+  h1 {
+    font-size: 27px;
+    line-height: 1.35;
+    margin: 0 0 8px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  h1 .cjk { font-size: 32px; color: var(--jade); margin-right: 8px; }
+
+  .sub {
+    color: var(--ink-soft);
+    font-size: 15px;
+    margin: 0 0 28px;
+    line-height: 1.6;
+    max-width: 48ch;
+  }
+
+  .input-wrap {
+    display: flex;
+    gap: 10px;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    background: #fffdf8;
+    padding: 6px;
+  }
+
+  input[type="text"] {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 12px 14px;
+    font-size: 20px;
+    color: var(--ink);
+    font-family: inherit;
+    outline: none;
+  }
+
+  input[type="text"]::placeholder { color: #b3ab9c; font-size: 16px; }
+
+  .go-btn {
+    background: var(--jade);
+    color: #fffdf8;
+    border: none;
+    border-radius: 3px;
+    padding: 0 22px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+
+  .go-btn:hover { background: var(--jade-deep); }
+
+  .hint-row {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #a39a89;
+  }
+
+  .result-section { margin-top: 34px; }
+
+  .result-label {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .result-label::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+  .empty-state {
+    border: 1px dashed var(--line);
+    border-radius: 3px;
+    padding: 32px 20px;
+    text-align: center;
+    color: #a39a89;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .char-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .char-card {
+    background: #fffdf8;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .char-card .target {
+    width: 140px;
+    height: 140px;
+    background:
+      linear-gradient(var(--paper-deep) 1px, transparent 1px),
+      linear-gradient(90deg, var(--paper-deep) 1px, transparent 1px);
+    background-size: 50% 50%;
+    background-position: center;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+  }
+
+  .char-card .controls {
+    display: flex;
+    gap: 6px;
+  }
+
+  .char-card button {
+    background: none;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: var(--ink-soft);
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+
+  .char-card button:hover { background: var(--paper-deep); color: var(--ink); }
+
+  .char-card .not-found {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    color: var(--vermillion);
+    padding: 10px;
+    line-height: 1.5;
+  }
+
+  footer {
+    margin-top: 56px;
+    font-size: 12px;
+    color: #a39a89;
+    text-align: center;
+    line-height: 1.8;
+  }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html">병음 변환기</a>
+  <a href="furigana.html">후리가나 표시기</a>
+  <a href="stroke-order.html" class="active">한자 획순</a>
+</nav>
+
+<main>
+  <div class="brand"><b>筆</b>順 · 한자 획순 애니메이션</div>
+  <h1><span class="cjk">筆順</span>한자 획순 애니메이션</h1>
+  <p class="sub">한자를 입력하면 쓰는 순서를 애니메이션으로 보여드려요. 여러 글자를 한 번에 입력해도 됩니다.</p>
+
+  <div class="input-wrap">
+    <input type="text" id="input" placeholder="예) 永愛学" maxlength="10">
+    <button class="go-btn" id="goBtn">보기</button>
+  </div>
+  <div class="hint-row">최대 10자까지 한 번에 입력 가능해요</div>
+
+  <div class="result-section">
+    <div class="result-label">획순 보기</div>
+    <div id="result">
+      <div class="empty-state">위 칸에 한자를 입력하고 "보기"를 눌러주세요</div>
+    </div>
+  </div>
+
+  <footer>
+    획순 데이터는 오픈소스 프로젝트(Make Me a Hanzi) 기준입니다. 중국어 간체/번체와 일본어 신자체 간 획순이 일부 다를 수 있어요.
+  </footer>
+</main>
+
+<script>
+  const input = document.getElementById('input');
+  const goBtn = document.getElementById('goBtn');
+  const result = document.getElementById('result');
+
+  function isCJK(ch) {
+    return /[\u4e00-\u9fff]/.test(ch);
+  }
+
+  function trackUsage(chars) {
+    if (typeof gtag === 'function') {
+      gtag('event', 'stroke_order_used', { char_count: chars.length });
+    }
+  }
+
+  function render() {
+    const raw = input.value.trim();
+    const chars = [...raw].filter(isCJK);
+
+    if (chars.length === 0) {
+      result.innerHTML = '<div class="empty-state">위 칸에 한자를 입력하고 "보기"를 눌러주세요</div>';
+      return;
+    }
+
+    result.innerHTML = '<div class="char-grid" id="charGrid"></div>';
+    const grid = document.getElementById('charGrid');
+
+    chars.forEach((ch, idx) => {
+      const card = document.createElement('div');
+      card.className = 'char-card';
+
+      const targetId = 'target-' + idx + '-' + Date.now();
+      const targetDiv = document.createElement('div');
+      targetDiv.className = 'target';
+      targetDiv.id = targetId;
+      card.appendChild(targetDiv);
+
+      const controls = document.createElement('div');
+      controls.className = 'controls';
+      const replayBtn = document.createElement('button');
+      replayBtn.textContent = '다시보기';
+      controls.appendChild(replayBtn);
+      card.appendChild(controls);
+
+      grid.appendChild(card);
+
+      try {
+        const writer = HanziWriter.create(targetId, ch, {
+          width: 140,
+          height: 140,
+          padding: 5,
+          showOutline: true,
+          strokeAnimationSpeed: 1,
+          delayBetweenStrokes: 250,
+          strokeColor: '#201d1a',
+          outlineColor: '#d8d0bd'
+        });
+
+        const showNotFound = () => {
+          targetDiv.remove();
+          const notFound = document.createElement('div');
+          notFound.className = 'not-found';
+          notFound.textContent = `"${ch}" 획순 데이터를 찾을 수 없어요`;
+          card.insertBefore(notFound, controls);
+          replayBtn.remove();
+        };
+
+        writer.animateCharacter().catch(showNotFound);
+        replayBtn.addEventListener('click', () => writer.animateCharacter().catch(showNotFound));
+      } catch (e) {
+        targetDiv.remove();
+        const notFound = document.createElement('div');
+        notFound.className = 'not-found';
+        notFound.textContent = `"${ch}" 획순 데이터를 찾을 수 없어요`;
+        card.insertBefore(notFound, controls);
+        replayBtn.remove();
+      }
+    });
+
+    trackUsage(chars);
+  }
+
+  goBtn.addEventListener('click', render);
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') render();
+  });
+</script>
+
+</body>
+</html>

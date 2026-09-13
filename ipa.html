@@ -297,8 +297,8 @@
   const VOWEL_JUNG = { i:'ㅣ',ɪ:'ㅣ',e:'ㅔ',ɛ:'ㅔ',æ:'ㅐ',ɑ:'ㅏ',ɒ:'ㅏ',ʌ:'ㅓ',ə:'ㅓ',ɜ:'ㅓ',ɔ:'ㅗ',o:'ㅗ',u:'ㅜ',ʊ:'ㅜ' };
   const ONSET = { p:'ㅍ',b:'ㅂ',t:'ㅌ',d:'ㄷ',k:'ㅋ',g:'ㄱ',f:'ㅍ',v:'ㅂ',θ:'ㅅ',ð:'ㄷ',s:'ㅅ',z:'ㅈ',ʃ:'ㅅ',ʒ:'ㅈ','tʃ':'ㅊ','dʒ':'ㅈ',h:'ㅎ',m:'ㅁ',n:'ㄴ',ŋ:'ㅇ',l:'ㄹ',r:'ㄹ',ㅇ:'ㅇ' };
   const CODA_OK = { p:'ㅂ',t:'ㅅ',k:'ㄱ',m:'ㅁ',n:'ㄴ',ŋ:'ㅇ',l:'ㄹ' };
-  const J_JUNG = { i:'ㅣ',ɪ:'ㅣ',e:'ㅖ',ɛ:'ㅖ',æ:'ㅒ',ɑ:'ㅑ',ʌ:'ㅕ',ə:'ㅕ',ɔ:'ㅛ',o:'ㅛ',u:'ㅠ',ʊ:'ㅠ' };
-  const W_JUNG = { ɑ:'ㅘ',æ:'ㅙ',ɛ:'ㅞ',e:'ㅞ',i:'ㅟ',ʌ:'ㅝ',ə:'ㅝ',ɔ:'ㅝ',o:'ㅝ',u:'ㅜ',ʊ:'ㅜ' };
+  const J_JUNG = { i:'ㅣ',ɪ:'ㅣ',e:'ㅖ',ɛ:'ㅖ',æ:'ㅒ',ɑ:'ㅑ',ʌ:'ㅕ',ə:'ㅕ',ɜ:'ㅕ',ɔ:'ㅛ',o:'ㅛ',u:'ㅠ',ʊ:'ㅠ' };
+  const W_JUNG = { ɑ:'ㅘ',æ:'ㅙ',ɛ:'ㅞ',e:'ㅞ',i:'ㅟ',ʌ:'ㅝ',ə:'ㅝ',ɜ:'ㅝ',ɔ:'ㅝ',o:'ㅝ',u:'ㅜ',ʊ:'ㅜ' };
 
   function tokenizeIpa(ipa) {
     // IPA 전용 유니코드 문자를 매핑 테이블의 일반 알파벳 키와 맞춰줌
@@ -407,8 +407,14 @@
           carryOnset = 'ㅇ';
           carryOnsetRaw = null;
         } else if (run.length === 1) {
-          syllables.push(composeSyllable(carryOnset, jung, ''));
-          carryOnsetRaw = run[0];
+          const single = run[0];
+          if (single === 'l') {
+            // 'l'은 앞 음절 받침 + 다음 음절 초성으로 동시에 쓰이는 경우가 많음 (color=컬러, dollar=달러)
+            syllables.push(composeSyllable(carryOnset, jung, 'ㄹ'));
+          } else {
+            syllables.push(composeSyllable(carryOnset, jung, ''));
+          }
+          carryOnsetRaw = single;
           carryOnset = ONSET[carryOnsetRaw] || 'ㅇ';
         } else {
           syllables.push(composeSyllable(carryOnset, jung, ''));

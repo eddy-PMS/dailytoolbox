@@ -229,6 +229,9 @@
   <a href="hsk-test.html">HSK 레벨 테스트</a>
   <a href="readability.html">지문 난이도 체커</a>
   <a href="etymology.html">어원 분석기</a>
+  <a href="wordlist.html">단어장 추출기</a>
+  <a href="tts.html">발음 듣기</a>
+  <a href="kana-quiz.html">가나 퀴즈</a>
 </nav>
 
 <main>
@@ -494,6 +497,16 @@
 
   goBtn.addEventListener('click', render);
   input.addEventListener('keydown', (e) => { if (e.key === 'Enter') render(); });
+</script>
+
+<!-- Naver Analytics -->
+<script type="text/javascript" src="//wcs.pstatic.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "260eb743dce6220";
+if(window.wcs) {
+  wcs_do();
+}
 </script>
 
 </body>

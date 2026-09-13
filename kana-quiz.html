@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>히라가나 가타카나 퀴즈 - 일본어 가나 암기 무료 테스트</title>
+<meta name="description" content="히라가나·가타카나를 퀴즈로 외우는 무료 도구. 행별로 골라서 연습하고 점수를 확인해보세요.">
+<meta name="keywords" content="히라가나 퀴즈, 가타카나 퀴즈, 히라가나 외우기, 가타카나 외우기, 일본어 가나 테스트">
+<link rel="canonical" href="https://dailyfreetoolbox.com/kana-quiz.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="히라가나 가타카나 퀴즈">
+<meta property="og:description" content="히라가나·가타카나를 퀴즈로 외우는 무료 도구">
+<meta property="og:url" content="https://dailyfreetoolbox.com/kana-quiz.html">
+<meta property="og:locale" content="ko_KR">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "히라가나 가타카나 퀴즈",
+  "url": "https://dailyfreetoolbox.com/kana-quiz.html",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "description": "히라가나·가타카나를 퀴즈로 외우는 무료 도구"
+}
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8WYH7KGCP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z8WYH7KGCP');
+</script>
+
+<style>
+  :root {
+    --paper: #f2efe9;
+    --paper-deep: #e8e3d8;
+    --ink: #1e1c1a;
+    --ink-soft: #55504a;
+    --indigo: #2f4a5e;
+    --indigo-deep: #223947;
+    --amber: #b8923f;
+    --line: #d8d2c3;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px 80px;
+  }
+
+  .site-nav {
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    gap: 4px;
+    margin-bottom: 28px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+
+  .site-nav a {
+    font-size: 13px;
+    color: var(--ink-soft);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+
+  .site-nav a:hover { background: var(--paper-deep); color: var(--ink); }
+  .site-nav a.active { background: var(--indigo); color: #fffdf8; }
+
+  main { width: 100%; max-width: 640px; }
+
+  .brand { font-size: 15px; color: var(--ink-soft); margin-bottom: 24px; }
+  .brand b { color: var(--indigo); font-weight: 700; }
+
+  h1 { font-size: 26px; line-height: 1.35; margin: 0 0 8px; font-weight: 700; letter-spacing: -0.01em; }
+  .sub { color: var(--ink-soft); font-size: 15px; margin: 0 0 24px; line-height: 1.6; max-width: 48ch; }
+
+  .setup-card {
+    background: #fffdf8;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 26px 24px;
+  }
+
+  .setup-group { margin-bottom: 20px; }
+  .setup-group:last-of-type { margin-bottom: 0; }
+  .setup-title { font-size: 13px; color: var(--ink-soft); margin-bottom: 8px; }
+
+  .choice-row { display: flex; flex-wrap: wrap; gap: 6px; }
+  .choice-btn {
+    padding: 8px 14px;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    background: var(--paper);
+    font-size: 13px;
+    color: var(--ink-soft);
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .choice-btn.active { background: var(--indigo); color: #fffdf8; border-color: var(--indigo); }
+
+  .row-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+  .row-chip {
+    padding: 7px 12px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: var(--paper);
+    font-size: 13px;
+    color: var(--ink-soft);
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .row-chip.active { background: var(--paper-deep); color: var(--ink); border-color: var(--indigo); }
+
+  .start-btn {
+    margin-top: 22px;
+    width: 100%;
+    background: var(--indigo);
+    color: #fffdf8;
+    border: none;
+    border-radius: 3px;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .start-btn:hover { background: var(--indigo-deep); }
+  .start-btn:disabled { opacity: 0.5; cursor: default; }
+
+  .progress-row { display: flex; justify-content: space-between; font-size: 13px; color: var(--ink-soft); margin-bottom: 10px; }
+  .progress-bar { height: 4px; background: var(--paper-deep); border-radius: 2px; overflow: hidden; margin-bottom: 30px; }
+  .progress-bar-fill { height: 100%; background: var(--indigo); transition: width 0.25s ease; }
+
+  .question-card { background: #fffdf8; border: 1px solid var(--line); border-radius: 3px; padding: 30px 26px; }
+  .prompt-label { font-size: 12px; color: var(--ink-soft); margin-bottom: 10px; }
+  .prompt-display { font-size: 64px; font-weight: 700; text-align: center; margin: 6px 0 26px; line-height: 1.2; }
+  .prompt-display.romaji { font-size: 40px; letter-spacing: 0.04em; }
+
+  .options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .option-btn {
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    background: var(--paper);
+    font-size: 22px;
+    color: var(--ink);
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.15s ease, border-color 0.15s ease;
+  }
+  .option-btn:hover { background: var(--paper-deep); }
+  .option-btn.correct { background: #dce6ec; border-color: var(--indigo); }
+  .option-btn.wrong { background: #f3dcd6; border-color: #a8483a; }
+  .option-btn:disabled { cursor: default; }
+
+  .result-card { background: #fffdf8; border: 1px solid var(--line); border-radius: 3px; padding: 32px 26px; }
+  .result-headline { font-size: 24px; font-weight: 700; margin: 0 0 6px; }
+  .result-sub { color: var(--ink-soft); font-size: 14px; margin: 0 0 22px; line-height: 1.6; }
+
+  .missed { margin-bottom: 22px; }
+  .missed-title { font-size: 13px; color: var(--ink-soft); margin-bottom: 8px; }
+  .missed-list { display: flex; flex-wrap: wrap; gap: 8px; }
+  .missed-item { background: var(--paper-deep); border-radius: 3px; padding: 6px 12px; font-size: 15px; }
+  .missed-item small { color: var(--ink-soft); margin-left: 6px; font-size: 12px; }
+
+  .btn-row { display: flex; gap: 8px; }
+  .retry-btn {
+    background: var(--indigo); color: #fffdf8; border: none; border-radius: 3px;
+    padding: 10px 22px; font-size: 14px; cursor: pointer; font-family: inherit;
+  }
+  .ghost-btn {
+    background: none; border: 1px solid var(--line); border-radius: 3px;
+    padding: 10px 22px; font-size: 14px; color: var(--ink-soft); cursor: pointer; font-family: inherit;
+  }
+  .ghost-btn:hover { background: var(--paper-deep); color: var(--ink); }
+
+  .hidden { display: none; }
+
+  footer { margin-top: 56px; font-size: 12px; color: #a39a89; text-align: center; line-height: 1.8; }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html">병음 변환기</a>
+  <a href="furigana.html">후리가나 표시기</a>
+  <a href="stroke-order.html">한자 획순</a>
+  <a href="ipa.html">IPA 발음 변환</a>
+  <a href="level-test.html">영어 레벨 테스트</a>
+  <a href="jlpt-test.html">JLPT 레벨 테스트</a>
+  <a href="hsk-test.html">HSK 레벨 테스트</a>
+  <a href="readability.html">지문 난이도 체커</a>
+  <a href="etymology.html">어원 분석기</a>
+  <a href="wordlist.html">단어장 추출기</a>
+  <a href="tts.html">발음 듣기</a>
+  <a href="kana-quiz.html" class="active">가나 퀴즈</a>
+</nav>
+
+<main>
+  <div class="brand"><b>あ</b> 히라가나·가타카나 퀴즈</div>
+  <h1>가나, 퀴즈로 빠르게 외워요</h1>
+  <p class="sub">문자 종류와 연습할 행을 고르면 10문제씩 출제돼요. 틀린 글자는 결과에서 다시 확인할 수 있어요.</p>
+
+  <div id="setupScreen">
+    <div class="setup-card">
+      <div class="setup-group">
+        <div class="setup-title">문자 종류</div>
+        <div class="choice-row" id="scriptChoices">
+          <button class="choice-btn active" data-v="hira">히라가나</button>
+          <button class="choice-btn" data-v="kata">가타카나</button>
+          <button class="choice-btn" data-v="both">둘 다 섞어서</button>
+        </div>
+      </div>
+      <div class="setup-group">
+        <div class="setup-title">출제 방식</div>
+        <div class="choice-row" id="modeChoices">
+          <button class="choice-btn active" data-v="k2r">가나 보고 → 발음 고르기</button>
+          <button class="choice-btn" data-v="r2k">발음 보고 → 가나 고르기</button>
+        </div>
+      </div>
+      <div class="setup-group">
+        <div class="setup-title">연습할 행 <span style="font-weight:400">(여러 개 선택 가능)</span></div>
+        <div class="row-grid" id="rowChoices"></div>
+      </div>
+      <button class="start-btn" id="startBtn">퀴즈 시작</button>
+    </div>
+  </div>
+
+  <div id="quizScreen" class="hidden">
+    <div class="progress-row"><span id="progressText">1 / 10</span><span id="scoreText">정답 0</span></div>
+    <div class="progress-bar"><div class="progress-bar-fill" id="progressFill" style="width:0%"></div></div>
+    <div class="question-card">
+      <div class="prompt-label" id="promptLabel"></div>
+      <div class="prompt-display" id="promptDisplay"></div>
+      <div class="options" id="optionsWrap"></div>
+    </div>
+  </div>
+
+  <div id="resultScreen" class="hidden">
+    <div class="result-card">
+      <div class="result-headline" id="resultHeadline"></div>
+      <p class="result-sub" id="resultSub"></p>
+      <div class="missed" id="missedWrap"></div>
+      <div class="btn-row">
+        <button class="retry-btn" id="retryBtn">같은 설정으로 다시</button>
+        <button class="ghost-btn" id="setupBtn">설정 바꾸기</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>발음 표기는 헵번식 로마자를 기준으로 합니다 (し=shi, ち=chi, つ=tsu, ふ=fu).</footer>
+</main>
+
+<script>
+  const ROWS = [
+    { key: 'a',  label: 'あ행', hira: 'あいうえお', kata: 'アイウエオ', romaji: ['a','i','u','e','o'] },
+    { key: 'ka', label: 'か행', hira: 'かきくけこ', kata: 'カキクケコ', romaji: ['ka','ki','ku','ke','ko'] },
+    { key: 'sa', label: 'さ행', hira: 'さしすせそ', kata: 'サシスセソ', romaji: ['sa','shi','su','se','so'] },
+    { key: 'ta', label: 'た행', hira: 'たちつてと', kata: 'タチツテト', romaji: ['ta','chi','tsu','te','to'] },
+    { key: 'na', label: 'な행', hira: 'なにぬねの', kata: 'ナニヌネノ', romaji: ['na','ni','nu','ne','no'] },
+    { key: 'ha', label: 'は행', hira: 'はひふへほ', kata: 'ハヒフヘホ', romaji: ['ha','hi','fu','he','ho'] },
+    { key: 'ma', label: 'ま행', hira: 'まみむめも', kata: 'マミムメモ', romaji: ['ma','mi','mu','me','mo'] },
+    { key: 'ya', label: 'や행', hira: 'やゆよ',     kata: 'ヤユヨ',     romaji: ['ya','yu','yo'] },
+    { key: 'ra', label: 'ら행', hira: 'らりるれろ', kata: 'ラリルレロ', romaji: ['ra','ri','ru','re','ro'] },
+    { key: 'wa', label: 'わ행·ん', hira: 'わをん',  kata: 'ワヲン',     romaji: ['wa','wo','n'] },
+    { key: 'ga', label: 'が행(탁음)', hira: 'がぎぐげご', kata: 'ガギグゲゴ', romaji: ['ga','gi','gu','ge','go'] },
+    { key: 'za', label: 'ざ행(탁음)', hira: 'ざじずぜぞ', kata: 'ザジズゼゾ', romaji: ['za','ji','zu','ze','zo'] },
+    { key: 'da', label: 'だ행(탁음)', hira: 'だぢづでど', kata: 'ダヂヅデド', romaji: ['da','ji','zu','de','do'] },
+    { key: 'ba', label: 'ば행(탁음)', hira: 'ばびぶべぼ', kata: 'バビブベボ', romaji: ['ba','bi','bu','be','bo'] },
+    { key: 'pa', label: 'ぱ행(반탁음)', hira: 'ぱぴぷぺぽ', kata: 'パピプペポ', romaji: ['pa','pi','pu','pe','po'] }
+  ];
+
+  const state = { script: 'hira', mode: 'k2r', rows: new Set(['a','ka','sa','ta','na']) };
+  let pool = [];
+  let questions = [];
+  let current = 0;
+  let score = 0;
+  let missed = [];
+  let answered = false;
+
+  const setupScreen = document.getElementById('setupScreen');
+  const quizScreen = document.getElementById('quizScreen');
+  const resultScreen = document.getElementById('resultScreen');
+  const rowChoices = document.getElementById('rowChoices');
+  const startBtn = document.getElementById('startBtn');
+
+  function bindChoices(containerId, key) {
+    const c = document.getElementById(containerId);
+    c.querySelectorAll('.choice-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        c.querySelectorAll('.choice-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        state[key] = btn.dataset.v;
+      });
+    });
+  }
+  bindChoices('scriptChoices', 'script');
+  bindChoices('modeChoices', 'mode');
+
+  ROWS.forEach(r => {
+    const chip = document.createElement('button');
+    chip.className = 'row-chip' + (state.rows.has(r.key) ? ' active' : '');
+    chip.textContent = r.label;
+    chip.addEventListener('click', () => {
+      if (state.rows.has(r.key)) state.rows.delete(r.key); else state.rows.add(r.key);
+      chip.classList.toggle('active');
+      startBtn.disabled = state.rows.size === 0;
+    });
+    rowChoices.appendChild(chip);
+  });
+
+  function buildPool() {
+    pool = [];
+    ROWS.filter(r => state.rows.has(r.key)).forEach(r => {
+      r.romaji.forEach((ro, i) => {
+        if (state.script === 'hira' || state.script === 'both') pool.push({ kana: r.hira[i], romaji: ro });
+        if (state.script === 'kata' || state.script === 'both') pool.push({ kana: r.kata[i], romaji: ro });
+      });
+    });
+  }
+
+  function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+    return a;
+  }
+
+  function startQuiz() {
+    buildPool();
+    if (pool.length === 0) return;
+    questions = shuffle(pool).slice(0, Math.min(10, pool.length));
+    current = 0; score = 0; missed = [];
+    setupScreen.classList.add('hidden');
+    resultScreen.classList.add('hidden');
+    quizScreen.classList.remove('hidden');
+    renderQuestion();
+  }
+
+  function renderQuestion() {
+    answered = false;
+    const q = questions[current];
+    document.getElementById('progressText').textContent = (current + 1) + ' / ' + questions.length;
+    document.getElementById('scoreText').textContent = '정답 ' + score;
+    document.getElementById('progressFill').style.width = (current / questions.length * 100) + '%';
+
+    const promptDisplay = document.getElementById('promptDisplay');
+    const promptLabel = document.getElementById('promptLabel');
+    const k2r = state.mode === 'k2r';
+    promptLabel.textContent = k2r ? '이 글자의 발음은?' : '이 발음의 글자는?';
+    promptDisplay.textContent = k2r ? q.kana : q.romaji;
+    promptDisplay.classList.toggle('romaji', !k2r);
+
+    // 보기: 정답 + 같은 풀에서 오답 3개 (발음이 같은 항목은 오답에서 제외)
+    const distractors = shuffle(pool.filter(p => p.romaji !== q.romaji && p.kana !== q.kana));
+    const seen = new Set([k2r ? q.romaji : q.kana]);
+    const picked = [];
+    for (const d of distractors) {
+      const v = k2r ? d.romaji : d.kana;
+      if (seen.has(v)) continue;
+      seen.add(v); picked.push(v);
+      if (picked.length === 3) break;
+    }
+    const options = shuffle([k2r ? q.romaji : q.kana, ...picked]);
+
+    const wrap = document.getElementById('optionsWrap');
+    wrap.innerHTML = '';
+    options.forEach(opt => {
+      const btn = document.createElement('button');
+      btn.className = 'option-btn';
+      btn.textContent = opt;
+      btn.addEventListener('click', () => select(btn, opt, q));
+      wrap.appendChild(btn);
+    });
+  }
+
+  function select(btn, opt, q) {
+    if (answered) return;
+    answered = true;
+    const answer = state.mode === 'k2r' ? q.romaji : q.kana;
+    const buttons = [...document.getElementById('optionsWrap').children];
+    if (opt === answer) { btn.classList.add('correct'); score++; }
+    else {
+      btn.classList.add('wrong');
+      buttons.forEach(b => { if (b.textContent === answer) b.classList.add('correct'); });
+      missed.push(q);
+    }
+    buttons.forEach(b => b.disabled = true);
+    setTimeout(() => {
+      current++;
+      if (current < questions.length) renderQuestion(); else showResult();
+    }, 600);
+  }
+
+  function showResult() {
+    quizScreen.classList.add('hidden');
+    resultScreen.classList.remove('hidden');
+    const total = questions.length;
+    document.getElementById('resultHeadline').textContent = `${score} / ${total} 정답`;
+    let sub;
+    if (score === total) sub = '완벽해요! 다음 행으로 넘어가거나 둘 다 섞어서 도전해보세요.';
+    else if (score >= total * 0.7) sub = '거의 다 외우셨어요. 틀린 글자만 한 번 더 보면 끝!';
+    else sub = '틀린 글자를 아래에서 확인하고 같은 설정으로 한 번 더 해보세요.';
+    document.getElementById('resultSub').textContent = sub;
+
+    const mw = document.getElementById('missedWrap');
+    if (missed.length === 0) { mw.innerHTML = ''; }
+    else {
+      mw.innerHTML = '<div class="missed-title">틀린 글자</div><div class="missed-list">' +
+        missed.map(m => `<span class="missed-item">${m.kana}<small>${m.romaji}</small></span>`).join('') + '</div>';
+    }
+
+    if (typeof gtag === 'function') {
+      gtag('event', 'kana_quiz_completed', { script: state.script, mode: state.mode, score, total, rows: state.rows.size });
+    }
+  }
+
+  startBtn.addEventListener('click', startQuiz);
+  document.getElementById('retryBtn').addEventListener('click', startQuiz);
+  document.getElementById('setupBtn').addEventListener('click', () => {
+    resultScreen.classList.add('hidden');
+    setupScreen.classList.remove('hidden');
+  });
+</script>
+
+<!-- Naver Analytics -->
+<script type="text/javascript" src="//wcs.pstatic.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "260eb743dce6220";
+if(window.wcs) {
+  wcs_do();
+}
+</script>
+
+</body>
+</html>

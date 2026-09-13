@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>텍스트 단어장 추출기 - 지문에서 단어 뽑아 CSV 만들기</title>
+<meta name="description" content="영어·일본어 지문을 붙여넣으면 자주 나오는 단어를 추출해 단어장 CSV로 다운로드할 수 있는 무료 도구입니다.">
+<meta name="keywords" content="단어장 만들기, 영어 단어 추출, 일본어 단어 추출, 단어 빈도 분석, 단어장 CSV">
+<link rel="canonical" href="https://dailyfreetoolbox.com/wordlist.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="텍스트 단어장 추출기">
+<meta property="og:description" content="지문을 붙여넣으면 자주 나오는 단어를 추출해 단어장 CSV로 만들어주는 무료 도구">
+<meta property="og:url" content="https://dailyfreetoolbox.com/wordlist.html">
+<meta property="og:locale" content="ko_KR">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "텍스트 단어장 추출기",
+  "url": "https://dailyfreetoolbox.com/wordlist.html",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "description": "지문에서 자주 나오는 단어를 추출해 단어장 CSV로 만들어주는 무료 도구"
+}
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8WYH7KGCP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z8WYH7KGCP');
+</script>
+
+<style>
+  :root {
+    --paper: #f1ede3;
+    --paper-deep: #e6e0d0;
+    --ink: #1f1c17;
+    --ink-soft: #57513f;
+    --bronze: #7a5a2a;
+    --bronze-deep: #5c4320;
+    --line: #d8d0b8;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px 80px;
+  }
+
+  .site-nav {
+    width: 100%;
+    max-width: 680px;
+    display: flex;
+    gap: 4px;
+    margin-bottom: 28px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+
+  .site-nav a {
+    font-size: 13px;
+    color: var(--ink-soft);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+
+  .site-nav a:hover { background: var(--paper-deep); color: var(--ink); }
+  .site-nav a.active { background: var(--bronze); color: #fffdf8; }
+
+  main { width: 100%; max-width: 680px; }
+
+  .brand { font-size: 15px; color: var(--ink-soft); margin-bottom: 24px; }
+  .brand b { color: var(--bronze); font-weight: 700; }
+
+  h1 { font-size: 26px; line-height: 1.35; margin: 0 0 8px; font-weight: 700; letter-spacing: -0.01em; }
+  .sub { color: var(--ink-soft); font-size: 15px; margin: 0 0 24px; line-height: 1.6; max-width: 52ch; }
+
+  .options-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 22px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+
+  .options-row label { display: flex; align-items: center; gap: 6px; cursor: pointer; }
+  .options-row select, .options-row input[type="number"] {
+    font-family: inherit;
+    font-size: 13px;
+    padding: 4px 8px;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    background: #fffdf8;
+    color: var(--ink);
+  }
+  .options-row input[type="number"] { width: 60px; }
+
+  .input-wrap { border: 1px solid var(--line); border-radius: 3px; background: #fffdf8; }
+
+  textarea {
+    width: 100%;
+    min-height: 170px;
+    resize: vertical;
+    border: none;
+    background: transparent;
+    padding: 18px 20px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--ink);
+    font-family: inherit;
+    outline: none;
+  }
+
+  textarea::placeholder { color: #aaa495; font-size: 14px; }
+
+  .input-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 12px;
+    font-size: 12px;
+    color: #9a9285;
+  }
+
+  .btn-primary {
+    background: var(--bronze);
+    color: #fffdf8;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .btn-primary:hover { background: var(--bronze-deep); }
+  .btn-primary:disabled { opacity: 0.5; cursor: default; }
+
+  .btn-ghost {
+    background: none;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 8px 14px;
+    font-size: 13px;
+    color: var(--ink-soft);
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .btn-ghost:hover { background: var(--paper-deep); color: var(--ink); }
+
+  .status-line { margin-top: 12px; font-size: 13px; color: var(--ink-soft); min-height: 18px; }
+
+  .result-section { margin-top: 30px; }
+
+  .result-label {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .result-label::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+  .empty-state {
+    border: 1px dashed var(--line);
+    border-radius: 3px;
+    padding: 32px 20px;
+    text-align: center;
+    color: #aaa495;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .summary-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+
+  .download-row { display: flex; gap: 8px; flex-wrap: wrap; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fffdf8;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    font-size: 14px;
+  }
+
+  th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--paper-deep); }
+  th { font-size: 12px; color: var(--ink-soft); font-weight: 600; background: var(--paper-deep); }
+  tr:last-child td { border-bottom: none; }
+  td.num { color: var(--ink-soft); width: 48px; }
+  td.count { color: var(--bronze); font-weight: 600; width: 60px; }
+  td.reading { color: var(--ink-soft); font-size: 13px; }
+  td.remove { width: 40px; text-align: right; }
+  td.remove button {
+    background: none; border: none; color: #b0a898; cursor: pointer; font-size: 15px; line-height: 1;
+  }
+  td.remove button:hover { color: #a8483a; }
+
+  footer {
+    margin-top: 56px;
+    font-size: 12px;
+    color: #aaa495;
+    text-align: center;
+    line-height: 1.8;
+  }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html">병음 변환기</a>
+  <a href="furigana.html">후리가나 표시기</a>
+  <a href="stroke-order.html">한자 획순</a>
+  <a href="ipa.html">IPA 발음 변환</a>
+  <a href="level-test.html">영어 레벨 테스트</a>
+  <a href="jlpt-test.html">JLPT 레벨 테스트</a>
+  <a href="hsk-test.html">HSK 레벨 테스트</a>
+  <a href="readability.html">지문 난이도 체커</a>
+  <a href="etymology.html">어원 분석기</a>
+  <a href="wordlist.html" class="active">단어장 추출기</a>
+  <a href="tts.html">발음 듣기</a>
+  <a href="kana-quiz.html">가나 퀴즈</a>
+</nav>
+
+<main>
+  <div class="brand"><b>CSV</b> 텍스트 단어장 추출기</div>
+  <h1>지문에서 외울 단어만 쏙 뽑아드려요</h1>
+  <p class="sub">영어나 일본어 글을 붙여넣으면 자주 나온 단어 순으로 정리하고, 단어장 CSV로 바로 내려받을 수 있어요. 일본어는 활용된 형태도 기본형으로 묶어드립니다.</p>
+
+  <div class="options-row">
+    <label>언어
+      <select id="langSelect">
+        <option value="auto">자동 감지</option>
+        <option value="en">영어</option>
+        <option value="ja">일본어</option>
+      </select>
+    </label>
+    <label>최소 글자 수 <input type="number" id="minLen" value="3" min="1" max="10"></label>
+    <label><input type="checkbox" id="skipStop" checked> 기초 단어(a, the, です 등) 제외</label>
+  </div>
+
+  <div class="input-wrap">
+    <textarea id="input" placeholder="영어 또는 일본어 지문을 여기에 붙여넣으세요" spellcheck="false"></textarea>
+    <div class="input-foot">
+      <span id="charCount">0자</span>
+      <div style="display:flex; gap:8px; align-items:center;">
+        <button class="btn-ghost" id="clearBtn">지우기</button>
+        <button class="btn-primary" id="extractBtn">단어 추출</button>
+      </div>
+    </div>
+  </div>
+  <div class="status-line" id="status"></div>
+
+  <div class="result-section">
+    <div class="result-label">추출 결과</div>
+    <div id="result">
+      <div class="empty-state">지문을 입력하고 "단어 추출"을 눌러주세요</div>
+    </div>
+  </div>
+
+  <footer>
+    영어는 복수형·과거형 등이 별도 단어로 집계될 수 있어요(기본형 변환 미지원). 일본어는 형태소 분석(kuromoji)으로 기본형을 추출합니다.<br>
+    내려받은 CSV의 "뜻" 칸은 비어 있으니, 단어장 앱에 올리기 전에 채워주세요.
+  </footer>
+</main>
+
+<script>
+  const input = document.getElementById('input');
+  const result = document.getElementById('result');
+  const status = document.getElementById('status');
+  const charCount = document.getElementById('charCount');
+  const clearBtn = document.getElementById('clearBtn');
+  const extractBtn = document.getElementById('extractBtn');
+  const langSelect = document.getElementById('langSelect');
+  const minLenInput = document.getElementById('minLen');
+  const skipStop = document.getElementById('skipStop');
+
+  const EN_STOP = new Set(('a an the and or but if then so of to in on at by for with from as is are was were be been being am do does did have has had not no yes it its this that these those there here he she they them his her their we us our you your i me my mine who whom which what when where why how all any some each every both few more most other such only own same than too very can could will would shall should may might must just also about into over under again further once up down out off than very s t don now').split(' '));
+  const JA_STOP = new Set(['する','いる','ある','なる','こと','もの','これ','それ','あれ','ここ','そこ','ため','よう','いう','ない','れる','られる','せる','させる','です','ます','だ','ん','の','事','物','人','者','時','中','方','私','僕','あなた','彼','彼女','今','何','日','年','月','言う','思う','見る','来る','行く','出来る','できる','ところ']);
+
+  let jaWorker = null;
+  let jaReady = false;
+  let lastRows = [];
+  let lastLang = 'en';
+
+  input.addEventListener('input', () => { charCount.textContent = input.value.length + '자'; });
+
+  clearBtn.addEventListener('click', () => {
+    input.value = '';
+    charCount.textContent = '0자';
+    result.innerHTML = '<div class="empty-state">지문을 입력하고 "단어 추출"을 눌러주세요</div>';
+    status.textContent = '';
+    input.focus();
+  });
+
+  function detectLang(text) {
+    const jaChars = (text.match(/[\u3040-\u30ff\u4e00-\u9fff]/g) || []).length;
+    const enChars = (text.match(/[A-Za-z]/g) || []).length;
+    return jaChars > enChars ? 'ja' : 'en';
+  }
+
+  function katakanaToHiragana(s) {
+    return s.replace(/[\u30a1-\u30f6]/g, ch => String.fromCharCode(ch.charCodeAt(0) - 0x60));
+  }
+
+  // ---- 영어 ----
+  function extractEnglish(text) {
+    const minLen = parseInt(minLenInput.value, 10) || 1;
+    const words = text.toLowerCase().match(/[a-z]+(?:'[a-z]+)?/g) || [];
+    const counts = new Map();
+    for (const w of words) {
+      if (w.length < minLen) continue;
+      if (skipStop.checked && EN_STOP.has(w)) continue;
+      counts.set(w, (counts.get(w) || 0) + 1);
+    }
+    return [...counts.entries()]
+      .map(([word, count]) => ({ word, count, reading: '' }))
+      .sort((a, b) => b.count - a.count || a.word.localeCompare(b.word));
+  }
+
+  // ---- 일본어 (Worker) ----
+  function ensureJaWorker() {
+    if (jaWorker) return;
+    const code = `
+      self.importScripts("https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js");
+      let tokenizer = null;
+      kuromoji.builder({ dicPath: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/" }).build(function(err, t) {
+        if (err) { postMessage({ type: 'init-error', message: String(err) }); return; }
+        tokenizer = t;
+        postMessage({ type: 'ready' });
+      });
+      onmessage = function(e) {
+        if (e.data.type !== 'tokenize' || !tokenizer) return;
+        const tokens = tokenizer.tokenize(e.data.text).map(function(t) {
+          return { surface: t.surface_form, basic: t.basic_form, pos: t.pos, pos1: t.pos_detail_1, reading: t.reading || '' };
+        });
+        postMessage({ type: 'tokens', id: e.data.id, tokens: tokens });
+      };
+    `;
+    const blob = new Blob([code], { type: 'application/javascript' });
+    jaWorker = new Worker(URL.createObjectURL(blob));
+    jaWorker.onmessage = (e) => {
+      const d = e.data;
+      if (d.type === 'ready') { jaReady = true; status.textContent = '일본어 사전 준비 완료'; setTimeout(() => { status.textContent = ''; }, 1500); if (pendingJa) { runJa(pendingJa); pendingJa = null; } }
+      else if (d.type === 'init-error') { status.textContent = '일본어 사전 로딩에 실패했어요. 새로고침 후 다시 시도해주세요.'; extractBtn.disabled = false; }
+      else if (d.type === 'tokens') { renderRows(buildJaRows(d.tokens), 'ja'); extractBtn.disabled = false; status.textContent = ''; }
+    };
+    jaWorker.onerror = () => { status.textContent = '일본어 사전 로딩에 실패했어요.'; extractBtn.disabled = false; };
+  }
+
+  let pendingJa = null;
+  function runJa(text) { jaWorker.postMessage({ type: 'tokenize', id: Date.now(), text }); }
+
+  function buildJaRows(tokens) {
+    const minLen = parseInt(minLenInput.value, 10) || 1;
+    const KEEP_POS = new Set(['名詞', '動詞', '形容詞', '副詞']);
+    const SKIP_DETAIL = new Set(['数', '非自立', '接尾', '代名詞', '接続詞的', '副詞可能']);
+    const counts = new Map();
+    for (const t of tokens) {
+      if (!KEEP_POS.has(t.pos)) continue;
+      if (SKIP_DETAIL.has(t.pos1)) continue;
+      const base = (t.basic && t.basic !== '*') ? t.basic : t.surface;
+      if (!base || /^[\s\d\p{P}\p{S}]+$/u.test(base)) continue;
+      if (base.length < minLen) continue;
+      if (skipStop.checked && JA_STOP.has(base)) continue;
+      const cur = counts.get(base) || { count: 0, reading: '' };
+      cur.count += 1;
+      if (!cur.reading && t.reading && t.reading !== '*') cur.reading = katakanaToHiragana(t.reading);
+      counts.set(base, cur);
+    }
+    return [...counts.entries()]
+      .map(([word, v]) => ({ word, count: v.count, reading: v.reading }))
+      .sort((a, b) => b.count - a.count || a.word.localeCompare(b.word, 'ja'));
+  }
+
+  // ---- 렌더 & 다운로드 ----
+  function renderRows(rows, lang) {
+    lastRows = rows;
+    lastLang = lang;
+    if (rows.length === 0) {
+      result.innerHTML = '<div class="empty-state">추출된 단어가 없어요. 조건을 조정해보세요.</div>';
+      return;
+    }
+    const total = rows.reduce((s, r) => s + r.count, 0);
+    let html = `<div class="summary-row"><span>고유 단어 ${rows.length}개 · 총 출현 ${total}회 · ${lang === 'ja' ? '일본어' : '영어'}</span>
+      <div class="download-row">
+        <button class="btn-ghost" id="dlVocab">단어장 CSV 내려받기</button>
+        <button class="btn-ghost" id="dlFreq">빈도표 CSV 내려받기</button>
+      </div></div>`;
+    html += '<table><thead><tr><th>#</th><th>단어</th>' + (lang === 'ja' ? '<th>읽기</th>' : '') + '<th>횟수</th><th></th></tr></thead><tbody>';
+    rows.forEach((r, i) => {
+      html += `<tr data-i="${i}"><td class="num">${i + 1}</td><td>${r.word}</td>` + (lang === 'ja' ? `<td class="reading">${r.reading}</td>` : '') + `<td class="count">${r.count}</td><td class="remove"><button title="목록에서 제외">×</button></td></tr>`;
+    });
+    html += '</tbody></table>';
+    result.innerHTML = html;
+
+    result.querySelectorAll('td.remove button').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const tr = e.target.closest('tr');
+        const idx = parseInt(tr.dataset.i, 10);
+        lastRows.splice(idx, 1);
+        renderRows(lastRows, lastLang);
+      });
+    });
+    document.getElementById('dlVocab').addEventListener('click', () => downloadCsv('vocab'));
+    document.getElementById('dlFreq').addEventListener('click', () => downloadCsv('freq'));
+  }
+
+  function csvCell(s) {
+    s = String(s ?? '');
+    return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+  }
+
+  function downloadCsv(kind) {
+    let lines;
+    if (kind === 'freq') {
+      lines = lastRows.map(r => [r.word, r.count].map(csvCell).join(','));
+    } else if (lastLang === 'ja') {
+      // 일본어·뜻·읽기(히라가나)
+      lines = lastRows.map(r => [r.word, '', r.reading].map(csvCell).join(','));
+    } else {
+      // 단어·뜻
+      lines = lastRows.map(r => [r.word, ''].map(csvCell).join(','));
+    }
+    const bom = '\uFEFF';
+    const blob = new Blob([bom + lines.join('\n')], { type: 'text/csv;charset=utf-8' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = (kind === 'freq' ? 'word_frequency' : 'wordlist') + '_' + lastLang + '.csv';
+    a.click();
+    URL.revokeObjectURL(a.href);
+    if (typeof gtag === 'function') gtag('event', 'wordlist_csv_downloaded', { kind, lang: lastLang, rows: lastRows.length });
+  }
+
+  extractBtn.addEventListener('click', () => {
+    const text = input.value.trim();
+    if (!text) { result.innerHTML = '<div class="empty-state">지문을 먼저 입력해주세요</div>'; return; }
+    let lang = langSelect.value;
+    if (lang === 'auto') lang = detectLang(text);
+
+    if (typeof gtag === 'function') gtag('event', 'wordlist_extracted', { lang, chars: text.length });
+
+    if (lang === 'en') {
+      renderRows(extractEnglish(text), 'en');
+      return;
+    }
+    extractBtn.disabled = true;
+    ensureJaWorker();
+    if (jaReady) { runJa(text); }
+    else { pendingJa = text; status.textContent = '일본어 사전을 불러오는 중이에요… (처음 한 번만, 최대 30초)'; }
+  });
+</script>
+
+<!-- Naver Analytics -->
+<script type="text/javascript" src="//wcs.pstatic.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "260eb743dce6220";
+if(window.wcs) {
+  wcs_do();
+}
+</script>
+
+</body>
+</html>

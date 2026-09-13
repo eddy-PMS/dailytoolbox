@@ -408,6 +408,10 @@
           syllables.push(composeSyllable(carryOnset, jung, ''));
         } else if (run.length === 1 && CODA_OK[run[0]]) {
           syllables.push(composeSyllable(carryOnset, jung, CODA_OK[run[0]]));
+        } else if (run.length >= 2 && CODA_OK[run[0]]) {
+          // 첫 자음은 받침으로, 나머지는 각각 으-음절로 풀어씀
+          syllables.push(composeSyllable(carryOnset, jung, CODA_OK[run[0]]));
+          for (let k = 1; k < run.length; k++) syllables.push(epenthesis(run[k]));
         } else {
           syllables.push(composeSyllable(carryOnset, jung, ''));
           for (const c of run) syllables.push(epenthesis(c));

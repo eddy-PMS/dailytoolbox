@@ -214,9 +214,43 @@
     text-align: center;
     line-height: 1.8;
   }
+  .site-nav {
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    gap: 4px;
+    margin-bottom: 28px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+
+  .site-nav a {
+    font-size: 13px;
+    color: var(--ink-soft);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+
+  .site-nav a:hover {
+    background: var(--paper-deep);
+    color: var(--ink);
+  }
+
+  .site-nav a.active {
+    background: var(--indigo);
+    color: #fffdf8;
+  }
 </style>
 </head>
 <body>
+
+<nav class="site-nav">
+  <a href="index.html">병음 변환기</a>
+  <a href="furigana.html" class="active">후리가나 표시기</a>
+</nav>
 
 <div class="brand"><b>振</b>り仮名 · 후리가나 자동 표시기</div>
 

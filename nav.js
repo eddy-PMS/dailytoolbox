@@ -41,7 +41,8 @@
     + '#site-nav .nav-group>button{display:flex;align-items:center;gap:5px}'
     + '#site-nav .nav-group>button .caret{font-size:9px;opacity:.6;transition:transform .15s ease}'
     + '#site-nav .nav-group.has-active>button{color:var(--nav-accent);font-weight:700}'
-    + '#site-nav .nav-menu{display:none;position:absolute;top:calc(100% + 4px);left:0;min-width:170px;background:#fffdf8;border:1px solid rgba(0,0,0,.12);border-radius:3px;box-shadow:0 6px 18px rgba(0,0,0,.08);padding:6px;z-index:50;flex-direction:column;gap:2px}'
+    + '#site-nav .nav-menu{display:none;position:absolute;top:100%;left:0;min-width:170px;background:#fffdf8;border:1px solid rgba(0,0,0,.12);border-radius:3px;box-shadow:0 6px 18px rgba(0,0,0,.08);padding:6px;z-index:50;flex-direction:column;gap:2px;margin-top:4px}'
+    + '#site-nav .nav-menu::before{content:"";position:absolute;left:0;right:0;top:-6px;height:6px}'
     + '#site-nav .nav-menu a{display:block;white-space:nowrap}'
     + '#site-nav .nav-menu a.active{background:var(--nav-accent);color:#fffdf8}'
     + '#site-nav .nav-group.open .nav-menu{display:flex}'
@@ -68,15 +69,29 @@
 
   nav.innerHTML = html;
 
-  // 터치/클릭 토글 (모바일)
+  // 터치/클릭 토글 (모바일) + 마우스 hover 유예 (데스크톱)
   var groups = nav.querySelectorAll('.nav-group');
+  var canHover = window.matchMedia && window.matchMedia('(hover: hover)').matches;
   groups.forEach(function (g) {
     var btn = g.querySelector('button');
+    var closeTimer = null;
     btn.addEventListener('click', function (e) {
       e.stopPropagation();
       var willOpen = !g.classList.contains('open');
       groups.forEach(function (o) { o.classList.remove('open'); o.querySelector('button').setAttribute('aria-expanded', 'false'); });
       if (willOpen) { g.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+    });
+    if (!canHover) return;
+    g.addEventListener('mouseenter', function () {
+      if (closeTimer) { clearTimeout(closeTimer); closeTimer = null; }
+      g.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    });
+    g.addEventListener('mouseleave', function () {
+      closeTimer = setTimeout(function () {
+        g.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }, 150);
     });
   });
   document.addEventListener('click', function () {

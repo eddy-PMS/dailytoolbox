@@ -359,9 +359,11 @@
     return CODA_OK[consonantSym];
   }
 
-  function jungFor(sym) {
+  function jungFor(sym, precedingRawConsonant) {
     if (sym.startsWith('j:')) return J_JUNG[sym.slice(2)] || 'ㅣ';
     if (sym.startsWith('w:')) return W_JUNG[sym.slice(2)] || 'ㅜ';
+    // sh(ʃ) 뒤 모음은 관용적으로 야/여/요/유 계열로 표기 (셔츠, 샤크, 슈 등)
+    if (precedingRawConsonant === 'ʃ' && J_JUNG[sym]) return J_JUNG[sym];
     return VOWEL_JUNG[sym] || 'ㅡ';
   }
 
@@ -378,32 +380,36 @@
 
     const syllables = [];
     let carryOnset = null; // 다음 모음에 붙을 확정된 onset 자음(간이자음)
+    let carryOnsetRaw = null; // 위 onset의 원본 IPA 음소 (ʃ 등 특수 규칙 판단용)
 
     // 첫 모음 이전 자음 처리
     const leading = seq.slice(0, vowelIdx[0]).map(t => t.sym);
     if (leading.length === 0) {
       carryOnset = 'ㅇ';
+      carryOnsetRaw = null;
     } else {
       for (let k = 0; k < leading.length - 1; k++) syllables.push(epenthesis(leading[k]));
-      carryOnset = ONSET[leading[leading.length - 1]] || 'ㅇ';
+      carryOnsetRaw = leading[leading.length - 1];
+      carryOnset = ONSET[carryOnsetRaw] || 'ㅇ';
     }
 
     for (let vi = 0; vi < vowelIdx.length; vi++) {
       const idx = vowelIdx[vi];
-      const jung = jungFor(seq[idx].sym);
+      const jung = jungFor(seq[idx].sym, carryOnsetRaw);
       const nextVowelIdx = vowelIdx[vi + 1];
       const runEnd = nextVowelIdx !== undefined ? nextVowelIdx : seq.length;
       const run = seq.slice(idx + 1, runEnd).map(t => t.sym);
 
-      let jong = '';
       if (nextVowelIdx !== undefined) {
         if (run.length === 0) {
           // onset 없음, 그대로 다음 모음도 carryOnset='ㅇ'
           syllables.push(composeSyllable(carryOnset, jung, ''));
           carryOnset = 'ㅇ';
+          carryOnsetRaw = null;
         } else if (run.length === 1) {
           syllables.push(composeSyllable(carryOnset, jung, ''));
-          carryOnset = ONSET[run[0]] || 'ㅇ';
+          carryOnsetRaw = run[0];
+          carryOnset = ONSET[carryOnsetRaw] || 'ㅇ';
         } else {
           syllables.push(composeSyllable(carryOnset, jung, ''));
           const first = run[0];
@@ -416,7 +422,8 @@
             syllables.push(epenthesis(first));
           }
           for (let k = 1; k < run.length - 1; k++) syllables.push(epenthesis(run[k]));
-          carryOnset = ONSET[run[run.length - 1]] || 'ㅇ';
+          carryOnsetRaw = run[run.length - 1];
+          carryOnset = ONSET[carryOnsetRaw] || 'ㅇ';
         }
       } else {
         // 마지막 모음: run은 단어 끝 자음군

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>영단어 어원 분석기 - 접두사 어근 접미사 무료 분해</title>
+<meta name="description" content="영단어를 접두사·어근·접미사로 분해해서 의미를 알려주는 무료 도구입니다.">
+<meta name="keywords" content="영단어 어원, 접두사 접미사, 어근 분석, 영단어 어원 분석기">
+<link rel="canonical" href="https://dailyfreetoolbox.com/etymology.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="영단어 어원 분석기">
+<meta property="og:description" content="영단어를 접두사·어근·접미사로 분해해서 의미를 알려주는 무료 도구">
+<meta property="og:url" content="https://dailyfreetoolbox.com/etymology.html">
+<meta property="og:locale" content="ko_KR">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "영단어 어원 분석기",
+  "url": "https://dailyfreetoolbox.com/etymology.html",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "description": "영단어를 접두사·어근·접미사로 분해해서 의미를 알려주는 무료 도구"
+}
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8WYH7KGCP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z8WYH7KGCP');
+</script>
+
+<style>
+  :root {
+    --paper: #f0ede2;
+    --paper-deep: #e5e0d0;
+    --ink: #1f1c17;
+    --ink-soft: #55503f;
+    --plum: #6b3f56;
+    --plum-deep: #502f40;
+    --amber: #b8823a;
+    --line: #d8d0b8;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px 80px;
+  }
+
+  .site-nav {
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    gap: 4px;
+    margin-bottom: 28px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+
+  .site-nav a {
+    font-size: 13px;
+    color: var(--ink-soft);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+
+  .site-nav a:hover { background: var(--paper-deep); color: var(--ink); }
+  .site-nav a.active { background: var(--plum); color: #fffdf8; }
+
+  main { width: 100%; max-width: 640px; }
+
+  .brand { font-size: 15px; color: var(--ink-soft); margin-bottom: 24px; }
+  .brand b { color: var(--plum); font-weight: 700; }
+
+  h1 {
+    font-size: 26px;
+    line-height: 1.35;
+    margin: 0 0 8px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .sub {
+    color: var(--ink-soft);
+    font-size: 15px;
+    margin: 0 0 20px;
+    line-height: 1.6;
+    max-width: 48ch;
+  }
+
+  .input-wrap {
+    display: flex;
+    gap: 10px;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    background: #fffdf8;
+    padding: 6px;
+  }
+
+  input[type="text"] {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 12px 14px;
+    font-size: 18px;
+    color: var(--ink);
+    font-family: inherit;
+    outline: none;
+  }
+
+  input[type="text"]::placeholder { color: #aaa495; font-size: 15px; }
+
+  .go-btn {
+    background: var(--plum);
+    color: #fffdf8;
+    border: none;
+    border-radius: 3px;
+    padding: 0 22px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .go-btn:hover { background: var(--plum-deep); }
+
+  .examples { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .example-chip {
+    background: none;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 12px;
+    color: var(--ink-soft);
+    cursor: pointer;
+  }
+  .example-chip:hover { background: var(--paper-deep); }
+
+  .result-section { margin-top: 30px; }
+
+  .result-label {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .result-label::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+  .empty-state {
+    border: 1px dashed var(--line);
+    border-radius: 3px;
+    padding: 32px 20px;
+    text-align: center;
+    color: #aaa495;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .parts-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+
+  .part-block {
+    border-radius: 3px;
+    padding: 12px 16px;
+    min-width: 80px;
+    text-align: center;
+  }
+
+  .part-block .part-text { font-size: 20px; font-weight: 700; }
+  .part-block .part-tag { font-size: 11px; margin-top: 4px; opacity: 0.75; }
+
+  .part-block.prefix { background: #e6dcea; color: var(--plum-deep); }
+  .part-block.root { background: #fce8cf; color: #8a5a1a; }
+  .part-block.suffix { background: #dbe7e0; color: #2f5d4e; }
+  .part-block.unknown { background: var(--paper-deep); color: var(--ink-soft); }
+
+  .meaning-list {
+    background: #fffdf8;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 20px 22px;
+  }
+
+  .meaning-item {
+    display: flex;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--paper-deep);
+    font-size: 14px;
+  }
+  .meaning-item:last-child { border-bottom: none; }
+  .meaning-item .m-part { font-weight: 700; min-width: 70px; }
+  .meaning-item.prefix .m-part { color: var(--plum-deep); }
+  .meaning-item.root .m-part { color: #8a5a1a; }
+  .meaning-item.suffix .m-part { color: #2f5d4e; }
+
+  footer {
+    margin-top: 56px;
+    font-size: 12px;
+    color: #aaa495;
+    text-align: center;
+    line-height: 1.8;
+  }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html">병음 변환기</a>
+  <a href="furigana.html">후리가나 표시기</a>
+  <a href="stroke-order.html">한자 획순</a>
+  <a href="ipa.html">IPA 발음 변환</a>
+  <a href="level-test.html">영어 레벨 테스트</a>
+  <a href="jlpt-test.html">JLPT 레벨 테스트</a>
+  <a href="hsk-test.html">HSK 레벨 테스트</a>
+  <a href="readability.html">지문 난이도 체커</a>
+  <a href="etymology.html" class="active">어원 분석기</a>
+</nav>
+
+<main>
+  <div class="brand"><b>Ety.</b> 영단어 어원 분석기</div>
+  <h1>이 단어, 어떻게 만들어졌을까요?</h1>
+  <p class="sub">접두사·어근·접미사로 쪼개서 각 조각의 의미를 보여드려요. 처음 보는 단어도 조각의 뜻을 알면 유추하기 쉬워져요.</p>
+
+  <div class="input-wrap">
+    <input type="text" id="input" placeholder="예) unbelievable" maxlength="30">
+    <button class="go-btn" id="goBtn">분석</button>
+  </div>
+  <div class="examples" id="examples"></div>
+
+  <div class="result-section">
+    <div class="result-label">분석 결과</div>
+    <div id="result">
+      <div class="empty-state">위 칸에 영단어를 입력하고 "분석"을 눌러주세요</div>
+    </div>
+  </div>
+
+  <footer>
+    이 도구는 규칙 기반 간이 분석기예요. 영어는 철자 변화(묵음 e 탈락, 자음 중복 등)와 예외가 많아서<br>
+    일부 단어, 특히 흔치 않은 단어는 조각이 부정확하게 나뉘거나 어근을 못 찾을 수 있어요.
+  </footer>
+</main>
+
+<script>
+  const input = document.getElementById('input');
+  const goBtn = document.getElementById('goBtn');
+  const result = document.getElementById('result');
+  const examplesWrap = document.getElementById('examples');
+
+  const EXAMPLES = ['unbelievable', 'international', 'transportation', 'biography', 'telephone', 'disagreement', 'photography', 'inspection'];
+
+  EXAMPLES.forEach(w => {
+    const chip = document.createElement('button');
+    chip.className = 'example-chip';
+    chip.textContent = w;
+    chip.addEventListener('click', () => { input.value = w; render(); });
+    examplesWrap.appendChild(chip);
+  });
+
+  const PREFIX_MEANINGS = {
+    bio: '생명',
+    inter: '~사이의, 상호간의', intra: '~내부의', extra: '~외의, 추가의',
+    contra: '반대의', counter: '반대로', super: '위에, 초과하는', hyper: '지나친, 초과하는',
+    hypo: '아래의, 부족한', trans: '가로질러, 이동하는', multi: '여러', semi: '절반의',
+    homo: '같은', hetero: '다른', macro: '큰', micro: '작은',
+    under: '아래의, 부족한', over: '지나친, 위의', para: '옆의, 유사한', peri: '주위의',
+    auto: '스스로', mono: '하나의', poly: '여러', uni: '하나의', tri: '셋의', bi: '둘의',
+    post: '~후의', pre: '미리, ~전의', anti: '반대하는', non: '아닌',
+    dis: '반대, 제거', mis: '잘못된', sub: '아래의, 하위의', pro: '앞으로, 지지하는',
+    syn: '함께', sym: '함께', neo: '새로운', de: '아래로, 제거',
+    com: '함께', con: '함께', co: '함께', en: '~하게 만드는', em: '~하게 만드는',
+    il: '부정의', ir: '부정의', im: '부정의, 안으로', in: '부정의, 안으로',
+    ex: '밖으로, 이전의', re: '다시', un: '반대, 부정'
+  };
+
+  const SUFFIX_MEANINGS = {
+    ation: '~하는 행위, 결과', ition: '~하는 행위, 결과', tion: '~하는 행위, 결과', sion: '~하는 행위, 결과',
+    ical: '~의, ~에 관한', ible: '~할 수 있는', able: '~할 수 있는',
+    ment: '~하는 행위, 결과물', ness: '~한 상태, 성질', ance: '~하는 것, 상태', ence: '~하는 것, 상태',
+    ship: '~신분, 관계', hood: '~신분, 상태', less: '~이 없는', ful: '~로 가득한',
+    ify: '~하게 만들다', ize: '~하게 만들다', ise: '~하게 만들다', fy: '~하게 만들다',
+    ism: '~주의', ist: '~하는 사람', ity: '~한 상태, 성질', ive: '~하는 경향이 있는',
+    ous: '~로 가득한, ~한 특성의', dom: '~상태, 영역', ty: '~한 상태, 성질',
+    al: '~의, ~에 관한', ic: '~의, ~에 관한', er: '~하는 사람(것)', or: '~하는 사람(것)',
+    ly: '~하게', y: '~한 특성이 있는'
+  };
+
+  const CORE_RAW = {
+    'bio': '생명', 'graph': '쓰다, 기록하다', 'phon': '소리', 'scop': '보다, 관찰하다',
+    'tele': '멀리', 'photo': '빛', 'therm': '열', 'geo': '땅, 지구',
+    'chron': '시간', 'path': '감정, 고통', 'morph': '형태', 'log': '말, 학문',
+    'dict': '말하다', 'duc/duct': '이끌다', 'fac/fact': '만들다', 'ject': '던지다',
+    'mit/miss': '보내다', 'port': '나르다', 'rupt': '깨다', 'scrib/script': '쓰다',
+    'spec/spect': '보다', 'struct': '짓다, 세우다', 'tract': '끌다', 'vert/vers': '돌리다',
+    'vis/vid': '보다', 'cred': '믿다', 'cede/ceed/cess': '가다, 양보하다', 'clud/clus': '닫다',
+    'fer': '나르다, 옮기다', 'flect/flex': '구부리다', 'form': '형태', 'gen': '태어나다, 만들다',
+    'grad/gress': '걷다, 나아가다', 'jud/jur': '법, 판단하다', 'loc': '장소', 'luc/lum': '빛',
+    'man': '손', 'mob/mot/mov': '움직이다', 'nov': '새로운', 'ped/pod': '발',
+    'pel/puls': '밀다', 'pon/pos': '놓다', 'sect/sec': '자르다', 'sent/sens': '느끼다',
+    'sequ/secut': '따르다', 'sist/sta': '서다', 'sol': '혼자', 'somn': '잠',
+    'son': '소리', 'spir': '숨쉬다', 'tempo': '시간', 'terr': '땅',
+    'vac': '비다', 'val': '가치, 힘', 'ven/vent': '오다', 'voc/vok': '부르다',
+    'volv': '구르다, 돌다',
+    'believe': '믿다', 'agree': '동의하다', 'like': '좋아하다', 'care': '돌보다',
+    'comfort': '편안함', 'thank': '감사하다', 'power': '힘', 'view': '보다',
+    'place': '놓다, 장소', 'close': '닫다', 'count': '세다', 'use': '사용하다',
+    'appear': '나타나다', 'please': '기쁘게 하다', 'act': '행동하다', 'differ': '다르다',
+    'depend': '의존하다', 'connect': '연결하다', 'respond': '응답하다', 'cover': '덮다',
+    'help': '돕다', 'happy': '행복한', 'kind': '친절한', 'honest': '정직한',
+    'patient': '참을성 있는', 'wonder': '궁금해하다', 'friend': '친구', 'danger': '위험',
+    'fashion': '유행', 'employ': '고용하다', 'point': '가리키다, 지점', 'stand': '서다',
+    'take': '잡다, 가지다', 'move': '움직이다', 'state': '상태, 진술하다'
+  };
+
+  const CORE_MEANINGS = {};
+  Object.entries(CORE_RAW).forEach(([keys, meaning]) => {
+    keys.split('/').forEach(k => { CORE_MEANINGS[k] = meaning; });
+  });
+
+  const PREFIXES = Object.keys(PREFIX_MEANINGS).sort((a, b) => b.length - a.length);
+  const SUFFIXES = Object.keys(SUFFIX_MEANINGS).sort((a, b) => b.length - a.length);
+  const ROOT_KEYS = Object.keys(CORE_MEANINGS);
+
+  function findRootMeaning(remainder) {
+    if (!remainder) return null;
+    if (CORE_MEANINGS[remainder]) return { key: remainder, meaning: CORE_MEANINGS[remainder] };
+    if (remainder.length >= 4) {
+      let best = null;
+      for (const key of ROOT_KEYS) {
+        if (key.length >= 4 && key.startsWith(remainder)) {
+          if (!best || key.length < best.key.length) best = { key, meaning: CORE_MEANINGS[key] };
+        }
+      }
+      if (best) return best;
+    }
+    for (const key of ROOT_KEYS) {
+      if (key.length >= 4 && remainder.startsWith(key)) {
+        return { key, meaning: CORE_MEANINGS[key] };
+      }
+    }
+    return null;
+  }
+
+  function analyzeWord(raw) {
+    const word = raw.toLowerCase().replace(/[^a-z]/g, '');
+    if (word.length < 4) return null;
+
+    let remainder = word;
+    let prefix = null;
+
+    if (word.length >= 6) {
+      for (const p of PREFIXES) {
+        if (remainder.startsWith(p) && remainder.length - p.length >= 3) {
+          prefix = p;
+          remainder = remainder.slice(p.length);
+          break;
+        }
+      }
+    }
+
+    let suffix = null;
+    if (remainder.length >= 5) {
+      for (const s of SUFFIXES) {
+        if (remainder.endsWith(s) && remainder.length - s.length >= 2) {
+          suffix = s;
+          remainder = remainder.slice(0, remainder.length - s.length);
+          break;
+        }
+      }
+    }
+
+    const rootMatch = findRootMeaning(remainder);
+
+    return {
+      word,
+      prefix: prefix ? { text: prefix, meaning: PREFIX_MEANINGS[prefix] } : null,
+      root: { text: remainder, meaning: rootMatch ? rootMatch.meaning : null },
+      suffix: suffix ? { text: suffix, meaning: SUFFIX_MEANINGS[suffix] } : null
+    };
+  }
+
+  function trackUsage(word, found) {
+    if (typeof gtag === 'function') {
+      gtag('event', 'etymology_analyzed', { word_length: word.length, root_found: found });
+    }
+  }
+
+  function render() {
+    const raw = input.value.trim();
+    if (!raw) {
+      result.innerHTML = '<div class="empty-state">위 칸에 영단어를 입력하고 "분석"을 눌러주세요</div>';
+      return;
+    }
+
+    const a = analyzeWord(raw);
+    if (!a) {
+      result.innerHTML = '<div class="empty-state">4글자 이상의 영단어를 입력해주세요</div>';
+      return;
+    }
+
+    let partsHtml = '<div class="parts-row">';
+    if (a.prefix) partsHtml += `<div class="part-block prefix"><div class="part-text">${a.prefix.text}-</div><div class="part-tag">접두사</div></div>`;
+    partsHtml += `<div class="part-block root"><div class="part-text">${a.root.text}</div><div class="part-tag">어근</div></div>`;
+    if (a.suffix) partsHtml += `<div class="part-block suffix"><div class="part-text">-${a.suffix.text}</div><div class="part-tag">접미사</div></div>`;
+    partsHtml += '</div>';
+
+    let meaningHtml = '<div class="meaning-list">';
+    if (a.prefix) meaningHtml += `<div class="meaning-item prefix"><span class="m-part">${a.prefix.text}-</span><span>${a.prefix.meaning}</span></div>`;
+    meaningHtml += `<div class="meaning-item root"><span class="m-part">${a.root.text}</span><span>${a.root.meaning || '학습된 어근 목록에 없는 부분이에요'}</span></div>`;
+    if (a.suffix) meaningHtml += `<div class="meaning-item suffix"><span class="m-part">-${a.suffix.text}</span><span>${a.suffix.meaning}</span></div>`;
+    meaningHtml += '</div>';
+
+    if (!a.prefix && !a.suffix && !a.root.meaning) {
+      result.innerHTML = '<div class="empty-state">이 단어는 접두사/접미사 패턴을 찾지 못했어요.<br>단일 어근으로 이루어진 단어이거나, 학습된 목록에 없는 단어일 수 있어요.</div>';
+    } else {
+      result.innerHTML = partsHtml + meaningHtml;
+    }
+
+    trackUsage(a.word, !!a.root.meaning);
+  }
+
+  goBtn.addEventListener('click', render);
+  input.addEventListener('keydown', (e) => { if (e.key === 'Enter') render(); });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>영어 지문 난이도 체커 - 토익/수능 지문 수준 무료 분석</title>
+<meta name="description" content="영어 지문을 붙여넣으면 문장 길이와 어휘 수준을 분석해 난이도를 알려주는 무료 도구입니다.">
+<meta name="keywords" content="영어 지문 난이도, 토익 지문 난이도, 영어 읽기 난이도, Flesch-Kincaid">
+<link rel="canonical" href="https://dailyfreetoolbox.com/readability.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="영어 지문 난이도 체커">
+<meta property="og:description" content="영어 지문을 붙여넣으면 난이도를 분석해주는 무료 도구">
+<meta property="og:url" content="https://dailyfreetoolbox.com/readability.html">
+<meta property="og:locale" content="ko_KR">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "영어 지문 난이도 체커",
+  "url": "https://dailyfreetoolbox.com/readability.html",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "description": "영어 지문의 난이도를 분석해주는 무료 도구"
+}
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8WYH7KGCP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z8WYH7KGCP');
+</script>
+
+<style>
+  :root {
+    --paper: #eeeeec;
+    --paper-deep: #e2e3df;
+    --ink: #1c1e1d;
+    --ink-soft: #52564f;
+    --teal: #2d5f5f;
+    --teal-deep: #204545;
+    --amber: #b8823a;
+    --line: #d3d4cd;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px 80px;
+  }
+
+  .site-nav {
+    width: 100%;
+    max-width: 680px;
+    display: flex;
+    gap: 4px;
+    margin-bottom: 28px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+
+  .site-nav a {
+    font-size: 13px;
+    color: var(--ink-soft);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+
+  .site-nav a:hover { background: var(--paper-deep); color: var(--ink); }
+  .site-nav a.active { background: var(--teal); color: #fffdf8; }
+
+  main { width: 100%; max-width: 680px; }
+
+  .brand { font-size: 15px; color: var(--ink-soft); margin-bottom: 24px; }
+  .brand b { color: var(--teal); font-weight: 700; }
+
+  h1 {
+    font-size: 26px;
+    line-height: 1.35;
+    margin: 0 0 8px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .sub {
+    color: var(--ink-soft);
+    font-size: 15px;
+    margin: 0 0 28px;
+    line-height: 1.6;
+    max-width: 52ch;
+  }
+
+  .input-wrap {
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    background: #fffdf8;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 160px;
+    resize: vertical;
+    border: none;
+    background: transparent;
+    padding: 18px 20px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--ink);
+    font-family: inherit;
+    outline: none;
+  }
+
+  textarea::placeholder { color: #a8aba0; font-size: 14px; }
+
+  .input-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 12px;
+    font-size: 12px;
+    color: #9a9d95;
+  }
+
+  .analyze-btn {
+    background: var(--teal);
+    color: #fffdf8;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .analyze-btn:hover { background: var(--teal-deep); }
+
+  .clear-btn {
+    background: none;
+    border: none;
+    color: var(--ink-soft);
+    font-size: 13px;
+    cursor: pointer;
+    padding: 4px 8px;
+  }
+
+  .clear-btn:hover { color: var(--teal); }
+
+  .result-section { margin-top: 34px; }
+
+  .result-label {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .result-label::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+  .empty-state {
+    border: 1px dashed var(--line);
+    border-radius: 3px;
+    padding: 32px 20px;
+    text-align: center;
+    color: #9a9d95;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .level-card {
+    background: #fffdf8;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 26px 24px;
+    margin-bottom: 20px;
+  }
+
+  .level-badge {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 5px 14px;
+    border-radius: 20px;
+    background: var(--teal);
+    color: #fffdf8;
+    margin-bottom: 10px;
+  }
+
+  .level-desc { color: var(--ink-soft); font-size: 14px; line-height: 1.6; }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .stat-box {
+    background: #fffdf8;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .stat-box .num { font-size: 22px; font-weight: 700; color: var(--teal); }
+  .stat-box .label { font-size: 12px; color: var(--ink-soft); margin-top: 4px; }
+
+  .vocab-box {
+    background: #fffdf8;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 20px 22px;
+  }
+
+  .vocab-box h3 { font-size: 14px; margin: 0 0 10px; }
+  .vocab-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .vocab-tag {
+    background: var(--paper-deep);
+    color: var(--ink);
+    font-size: 13px;
+    padding: 4px 10px;
+    border-radius: 3px;
+  }
+  .vocab-none { color: #9a9d95; font-size: 13px; }
+
+  footer {
+    margin-top: 56px;
+    font-size: 12px;
+    color: #9a9d95;
+    text-align: center;
+    line-height: 1.8;
+  }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html">병음 변환기</a>
+  <a href="furigana.html">후리가나 표시기</a>
+  <a href="stroke-order.html">한자 획순</a>
+  <a href="ipa.html">IPA 발음 변환</a>
+  <a href="level-test.html">영어 레벨 테스트</a>
+  <a href="jlpt-test.html">JLPT 레벨 테스트</a>
+  <a href="hsk-test.html">HSK 레벨 테스트</a>
+  <a href="readability.html" class="active">지문 난이도 체커</a>
+</nav>
+
+<main>
+  <div class="brand"><b>Lv.</b> 영어 지문 난이도 체커</div>
+  <h1>이 영어 지문, 어느 정도 수준일까요?</h1>
+  <p class="sub">문장 길이와 단어 구성을 분석해서 읽기 난이도를 알려드려요. 토익/수능 지문이나 원서 구절을 붙여넣어보세요.</p>
+
+  <div class="input-wrap">
+    <textarea id="input" placeholder="영어 지문을 여기에 붙여넣으세요 (최소 2~3문장 이상 권장)" spellcheck="false"></textarea>
+    <div class="input-foot">
+      <span id="charCount">0자</span>
+      <div style="display:flex; gap:8px; align-items:center;">
+        <button class="clear-btn" id="clearBtn">지우기</button>
+        <button class="analyze-btn" id="analyzeBtn">분석하기</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="result-section">
+    <div class="result-label">분석 결과</div>
+    <div id="result">
+      <div class="empty-state">지문을 입력하고 "분석하기"를 눌러주세요</div>
+    </div>
+  </div>
+
+  <footer>
+    난이도는 Flesch-Kincaid 읽기 난이도 공식(문장 길이·음절 수 기반)을 기준으로 계산합니다.<br>
+    실제 시험 난이도는 어휘 외에도 배경지식, 문제 유형 등 다양한 요소가 영향을 미치니 참고용으로만 활용해주세요.
+  </footer>
+</main>
+
+<script>
+  const input = document.getElementById('input');
+  const result = document.getElementById('result');
+  const charCount = document.getElementById('charCount');
+  const clearBtn = document.getElementById('clearBtn');
+  const analyzeBtn = document.getElementById('analyzeBtn');
+
+  // 보조 지표용 고급/실무 어휘 표본 (앞서 만든 영어 레벨 테스트 고급+실무 단계 단어 기준)
+  const ADVANCED_WORDS = new Set([
+    'ambiguous','resilience','inevitable','arbitrary','plausible',
+    'reimbursement','invoice','negotiate','stakeholder','subsidiary',
+    'comprehensive','meticulous','inherent','controversial','subsequent'
+  ]);
+
+  input.addEventListener('input', () => {
+    charCount.textContent = input.value.length + '자';
+  });
+
+  clearBtn.addEventListener('click', () => {
+    input.value = '';
+    charCount.textContent = '0자';
+    result.innerHTML = '<div class="empty-state">지문을 입력하고 "분석하기"를 눌러주세요</div>';
+    input.focus();
+  });
+
+  function countSyllables(word) {
+    word = word.toLowerCase().replace(/[^a-z]/g, '');
+    if (!word) return 0;
+    if (word.length <= 3) return 1;
+    word = word.replace(/(?:[^laeiouy]es|ed|[^laeiouy]e)$/, '');
+    word = word.replace(/^y/, '');
+    const matches = word.match(/[aeiouy]{1,2}/g);
+    return matches ? matches.length : 1;
+  }
+
+  function analyze(text) {
+    const sentences = text.split(/[.!?]+/).map(s => s.trim()).filter(Boolean);
+    const words = text.match(/[A-Za-z']+/g) || [];
+    const sentenceCount = Math.max(sentences.length, 1);
+    const wordCount = words.length;
+
+    let totalSyllables = 0;
+    const foundAdvanced = new Set();
+    words.forEach(w => {
+      totalSyllables += countSyllables(w);
+      const lw = w.toLowerCase();
+      if (ADVANCED_WORDS.has(lw)) foundAdvanced.add(lw);
+    });
+
+    const wordsPerSentence = wordCount / sentenceCount;
+    const syllablesPerWord = wordCount > 0 ? totalSyllables / wordCount : 0;
+
+    const gradeLevel = 0.39 * wordsPerSentence + 11.8 * syllablesPerWord - 15.59;
+    const readingEase = 206.835 - 1.015 * wordsPerSentence - 84.6 * syllablesPerWord;
+
+    return { wordCount, sentenceCount, wordsPerSentence, gradeLevel, readingEase, foundAdvanced };
+  }
+
+  function levelFromGrade(grade) {
+    if (grade < 6) return { badge: '기초', desc: '초·중학교 교과서 수준의 짧고 쉬운 문장으로 구성되어 있어요. 토익 파트5 쉬운 문항 정도의 난이도예요.' };
+    if (grade < 9) return { badge: '중급', desc: '고등학교 영어 교과서~토익 기초 지문 수준이에요. 일상적인 어휘와 무난한 문장 길이로 구성되어 있어요.' };
+    if (grade < 12) return { badge: '고급', desc: '수능 지문~토익 중고급 지문 수준이에요. 문장이 길어지고 다소 복잡한 구조가 섞여 있어요.' };
+    if (grade < 15) return { badge: '최상급', desc: '텝스·편입 영어~토익 최고난도 지문 수준이에요. 문장 구조가 복잡하고 어휘 수준도 높아요.' };
+    return { badge: '전문가급', desc: '학술 논문이나 원서 수준의 매우 복잡한 문장 구조예요. 배경지식 없이는 독해가 까다로울 수 있어요.' };
+  }
+
+  function render() {
+    const text = input.value.trim();
+    if (!text) {
+      result.innerHTML = '<div class="empty-state">지문을 입력하고 "분석하기"를 눌러주세요</div>';
+      return;
+    }
+
+    const words = text.match(/[A-Za-z']+/g) || [];
+    if (words.length < 15) {
+      result.innerHTML = '<div class="empty-state">정확한 분석을 위해 최소 15단어 이상(2~3문장 이상) 입력해주세요</div>';
+      return;
+    }
+
+    const a = analyze(text);
+    const level = levelFromGrade(a.gradeLevel);
+    const gradeDisplay = Math.max(0, Math.round(a.gradeLevel * 10) / 10);
+
+    let html = '';
+    html += `<div class="level-card"><span class="level-badge">${level.badge}</span><p class="level-desc">${level.desc}</p></div>`;
+
+    html += '<div class="stat-grid">';
+    html += `<div class="stat-box"><div class="num">${a.wordCount}</div><div class="label">단어 수</div></div>`;
+    html += `<div class="stat-box"><div class="num">${a.sentenceCount}</div><div class="label">문장 수</div></div>`;
+    html += `<div class="stat-box"><div class="num">${(Math.round(a.wordsPerSentence * 10) / 10)}</div><div class="label">문장당 평균 단어 수</div></div>`;
+    html += `<div class="stat-box"><div class="num">${gradeDisplay}</div><div class="label">난이도 지수 (학년 수준)</div></div>`;
+    html += '</div>';
+
+    html += '<div class="vocab-box"><h3>발견된 고급 어휘 (표본 기준)</h3>';
+    if (a.foundAdvanced.size > 0) {
+      html += '<div class="vocab-tags">' + [...a.foundAdvanced].map(w => `<span class="vocab-tag">${w}</span>`).join('') + '</div>';
+    } else {
+      html += '<div class="vocab-none">이번 지문에서는 표본 고급 어휘 목록에 해당하는 단어가 발견되지 않았어요.</div>';
+    }
+    html += '</div>';
+
+    result.innerHTML = html;
+
+    if (typeof gtag === 'function') {
+      gtag('event', 'readability_check_used', { word_count: a.wordCount, grade_level: gradeDisplay });
+    }
+  }
+
+  analyzeBtn.addEventListener('click', render);
+</script>
+
+</body>
+</html>

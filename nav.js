@@ -43,6 +43,10 @@
     + '#site-nav a,#site-nav button{font-family:inherit;font-size:13px;color:rgba(0,0,0,.62);text-decoration:none;padding:6px 12px;border-radius:3px;background:none;border:none;cursor:pointer;line-height:1.4;transition:background .15s ease,color .15s ease}'
     + '#site-nav a:hover,#site-nav button:hover{background:rgba(0,0,0,.06);color:rgba(0,0,0,.88)}'
     + '#site-nav .nav-home.active{background:var(--nav-accent);color:#fffdf8}'
+    + '#site-nav .nav-util{margin-left:auto;display:flex;gap:2px}'
+    + '#site-nav .nav-util a{font-size:12px;color:rgba(0,0,0,.5);padding:6px 8px}'
+    + '#site-nav .nav-util a.active{color:var(--nav-accent);font-weight:700}'
+    + '@media (max-width:520px){#site-nav .nav-util{margin-left:0;width:100%;justify-content:flex-end}}'
     + '#site-nav .nav-group{position:relative}'
     + '#site-nav .nav-group>button{display:flex;align-items:center;gap:5px}'
     + '#site-nav .nav-group>button .caret{font-size:9px;opacity:.6;transition:transform .15s ease}'
@@ -73,6 +77,10 @@
     html += '</div></div>';
   });
 
+  html += '<div class="nav-util">'
+    + '<a href="about.html"' + (path === 'about.html' ? ' class="active"' : '') + '>소개</a>'
+    + '<a href="privacy.html"' + (path === 'privacy.html' ? ' class="active"' : '') + '>개인정보처리방침</a>'
+    + '</div>';
   nav.innerHTML = html;
 
   // 터치/클릭 토글 (모바일) + 마우스 hover 유예 (데스크톱)

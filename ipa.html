@@ -301,7 +301,11 @@
   const W_JUNG = { ɑ:'ㅘ',æ:'ㅙ',ɛ:'ㅞ',e:'ㅞ',i:'ㅟ',ʌ:'ㅝ',ə:'ㅝ',ɔ:'ㅝ',o:'ㅝ',u:'ㅜ',ʊ:'ㅜ' };
 
   function tokenizeIpa(ipa) {
-    const s = ipa.replace(/[\/ˈˌːˑ.\s]/g, '');
+    // IPA 전용 유니코드 문자를 매핑 테이블의 일반 알파벳 키와 맞춰줌
+    // (ɡ U+0261, ɹ U+0279 등은 자판의 g, r과 겉보기엔 같지만 다른 문자임)
+    const NORMALIZE = { 'ɡ':'g', 'ɹ':'r', 'ɫ':'l', 'ʔ':'' };
+    let s = ipa.replace(/[ɡɹɫʔ]/g, ch => NORMALIZE[ch]);
+    s = s.replace(/[\/ˈˌːˑ.\s]/g, '');
     const tokens = [];
     let i = 0;
     outer: while (i < s.length) {

@@ -6,12 +6,12 @@
 <title>영어 발음기호 IPA 변환기 - 한글 발음 표기 무료 도구</title>
 <meta name="description" content="영어 단어를 입력하면 IPA 발음기호와 한글 발음 표기를 함께 보여주는 무료 변환기입니다.">
 <meta name="keywords" content="IPA 변환기, 영어 발음기호, 영어 발음 한글표기, 발음기호 읽는법">
-<link rel="canonical" href="https://dailytoolbox.chchddr.workers.dev/ipa.html">
+<link rel="canonical" href="https://dailyfreetoolbox.com/ipa.html">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="영어 발음기호 IPA 변환기">
 <meta property="og:description" content="영어 단어를 입력하면 IPA 발음기호와 한글 발음 표기를 함께 보여주는 무료 변환기">
-<meta property="og:url" content="https://dailytoolbox.chchddr.workers.dev/ipa.html">
+<meta property="og:url" content="https://dailyfreetoolbox.com/ipa.html">
 <meta property="og:locale" content="ko_KR">
 
 <script type="application/ld+json">
@@ -19,7 +19,7 @@
   "@context": "https://schema.org",
   "@type": "WebApplication",
   "name": "영어 발음기호 IPA 변환기",
-  "url": "https://dailytoolbox.chchddr.workers.dev/ipa.html",
+  "url": "https://dailyfreetoolbox.com/ipa.html",
   "applicationCategory": "EducationalApplication",
   "operatingSystem": "Any",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
@@ -297,11 +297,15 @@
   const VOWEL_JUNG = { i:'ㅣ',ɪ:'ㅣ',e:'ㅔ',ɛ:'ㅔ',æ:'ㅐ',ɑ:'ㅏ',ɒ:'ㅏ',ʌ:'ㅓ',ə:'ㅓ',ɜ:'ㅓ',ɔ:'ㅗ',o:'ㅗ',u:'ㅜ',ʊ:'ㅜ' };
   const ONSET = { p:'ㅍ',b:'ㅂ',t:'ㅌ',d:'ㄷ',k:'ㅋ',g:'ㄱ',f:'ㅍ',v:'ㅂ',θ:'ㅅ',ð:'ㄷ',s:'ㅅ',z:'ㅈ',ʃ:'ㅅ',ʒ:'ㅈ','tʃ':'ㅊ','dʒ':'ㅈ',h:'ㅎ',m:'ㅁ',n:'ㄴ',ŋ:'ㅇ',l:'ㄹ',r:'ㄹ',ㅇ:'ㅇ' };
   const CODA_OK = { p:'ㅂ',t:'ㅅ',k:'ㄱ',m:'ㅁ',n:'ㄴ',ŋ:'ㅇ',l:'ㄹ' };
-  const J_JUNG = { i:'ㅣ',ɪ:'ㅣ',e:'ㅖ',ɛ:'ㅖ',æ:'ㅒ',ɑ:'ㅑ',ʌ:'ㅕ',ə:'ㅕ',ɔ:'ㅛ',o:'ㅛ',u:'ㅠ',ʊ:'ㅠ' };
-  const W_JUNG = { ɑ:'ㅘ',æ:'ㅙ',ɛ:'ㅞ',e:'ㅞ',i:'ㅟ',ʌ:'ㅝ',ə:'ㅝ',ɔ:'ㅝ',o:'ㅝ',u:'ㅜ',ʊ:'ㅜ' };
+  const J_JUNG = { i:'ㅣ',ɪ:'ㅣ',e:'ㅖ',ɛ:'ㅖ',æ:'ㅒ',ɑ:'ㅑ',ʌ:'ㅕ',ə:'ㅕ',ɜ:'ㅕ',ɔ:'ㅛ',o:'ㅛ',u:'ㅠ',ʊ:'ㅠ' };
+  const W_JUNG = { ɑ:'ㅘ',æ:'ㅙ',ɛ:'ㅞ',e:'ㅞ',i:'ㅟ',ʌ:'ㅝ',ə:'ㅝ',ɜ:'ㅝ',ɔ:'ㅝ',o:'ㅝ',u:'ㅜ',ʊ:'ㅜ' };
 
   function tokenizeIpa(ipa) {
-    const s = ipa.replace(/[\/ˈˌːˑ.\s]/g, '');
+    // IPA 전용 유니코드 문자를 매핑 테이블의 일반 알파벳 키와 맞춰줌
+    // (ɡ U+0261, ɹ U+0279 등은 자판의 g, r과 겉보기엔 같지만 다른 문자임)
+    const NORMALIZE = { 'ɡ':'g', 'ɹ':'r', 'ɫ':'l', 'ʔ':'' };
+    let s = ipa.replace(/[ɡɹɫʔ]/g, ch => NORMALIZE[ch]);
+    s = s.replace(/[\/ˈˌːˑ.\s]/g, '');
     const tokens = [];
     let i = 0;
     outer: while (i < s.length) {
@@ -318,16 +322,26 @@
     const out = [];
     for (let i = 0; i < tokens.length; i++) {
       const t = tokens[i];
-      if (t in RCOLORED) { out.push({ type:'V', sym: RCOLORED[t] }); continue; }
-      if (t in DIPHTHONGS) { for (const v of DIPHTHONGS[t]) out.push({ type:'V', sym: v }); continue; }
-      if (VOWELS.has(t)) { out.push({ type:'V', sym: t }); continue; }
+      if (t in RCOLORED) { out.push({ type:'V', sym: RCOLORED[t], complex: true }); continue; }
+      if (t in DIPHTHONGS) { for (const v of DIPHTHONGS[t]) out.push({ type:'V', sym: v, complex: true }); continue; }
+      if (VOWELS.has(t)) { out.push({ type:'V', sym: t, complex: false }); continue; }
       if (t === 'j' || t === 'w') {
         const next = tokens[i+1];
         let nv = next;
-        if (next in RCOLORED) nv = RCOLORED[next];
-        else if (next in DIPHTHONGS) nv = DIPHTHONGS[next][0];
+        let extraVowel = null;
+        let isComplex = false;
+        if (next in RCOLORED) {
+          nv = RCOLORED[next];
+          isComplex = true;
+        } else if (next in DIPHTHONGS) {
+          const parts = DIPHTHONGS[next];
+          nv = parts[0];
+          if (parts.length > 1) extraVowel = parts[1];
+          isComplex = true;
+        }
         if (nv && VOWELS.has(nv)) {
-          out.push({ type:'V', sym: (t === 'j' ? 'j:' : 'w:') + nv });
+          out.push({ type:'V', sym: (t === 'j' ? 'j:' : 'w:') + nv, complex: isComplex });
+          if (extraVowel) out.push({ type:'V', sym: extraVowel, complex: true });
           i++;
           continue;
         }
@@ -339,9 +353,17 @@
     return out;
   }
 
-  function jungFor(sym) {
+  // 이중모음/r-발음 뒤의 t는 받침(ㅅ) 대신 "트"로 풀어쓰는 관용 표기를 반영
+  function codaFor(consonantSym, vowelIsComplex) {
+    if (consonantSym === 't' && vowelIsComplex) return undefined;
+    return CODA_OK[consonantSym];
+  }
+
+  function jungFor(sym, precedingRawConsonant) {
     if (sym.startsWith('j:')) return J_JUNG[sym.slice(2)] || 'ㅣ';
     if (sym.startsWith('w:')) return W_JUNG[sym.slice(2)] || 'ㅜ';
+    // sh(ʃ) 뒤 모음은 관용적으로 야/여/요/유 계열로 표기 (셔츠, 샤크, 슈 등)
+    if (precedingRawConsonant === 'ʃ' && J_JUNG[sym]) return J_JUNG[sym];
     return VOWEL_JUNG[sym] || 'ㅡ';
   }
 
@@ -358,52 +380,68 @@
 
     const syllables = [];
     let carryOnset = null; // 다음 모음에 붙을 확정된 onset 자음(간이자음)
+    let carryOnsetRaw = null; // 위 onset의 원본 IPA 음소 (ʃ 등 특수 규칙 판단용)
 
     // 첫 모음 이전 자음 처리
     const leading = seq.slice(0, vowelIdx[0]).map(t => t.sym);
     if (leading.length === 0) {
       carryOnset = 'ㅇ';
+      carryOnsetRaw = null;
     } else {
       for (let k = 0; k < leading.length - 1; k++) syllables.push(epenthesis(leading[k]));
-      carryOnset = ONSET[leading[leading.length - 1]] || 'ㅇ';
+      carryOnsetRaw = leading[leading.length - 1];
+      carryOnset = ONSET[carryOnsetRaw] || 'ㅇ';
     }
 
     for (let vi = 0; vi < vowelIdx.length; vi++) {
       const idx = vowelIdx[vi];
-      const jung = jungFor(seq[idx].sym);
+      const jung = jungFor(seq[idx].sym, carryOnsetRaw);
       const nextVowelIdx = vowelIdx[vi + 1];
       const runEnd = nextVowelIdx !== undefined ? nextVowelIdx : seq.length;
       const run = seq.slice(idx + 1, runEnd).map(t => t.sym);
 
-      let jong = '';
       if (nextVowelIdx !== undefined) {
         if (run.length === 0) {
           // onset 없음, 그대로 다음 모음도 carryOnset='ㅇ'
           syllables.push(composeSyllable(carryOnset, jung, ''));
           carryOnset = 'ㅇ';
+          carryOnsetRaw = null;
         } else if (run.length === 1) {
-          syllables.push(composeSyllable(carryOnset, jung, ''));
-          carryOnset = ONSET[run[0]] || 'ㅇ';
+          const single = run[0];
+          if (single === 'l') {
+            // 'l'은 앞 음절 받침 + 다음 음절 초성으로 동시에 쓰이는 경우가 많음 (color=컬러, dollar=달러)
+            syllables.push(composeSyllable(carryOnset, jung, 'ㄹ'));
+          } else {
+            syllables.push(composeSyllable(carryOnset, jung, ''));
+          }
+          carryOnsetRaw = single;
+          carryOnset = ONSET[carryOnsetRaw] || 'ㅇ';
         } else {
           syllables.push(composeSyllable(carryOnset, jung, ''));
           const first = run[0];
-          if (CODA_OK[first]) {
+          const codaJamo = codaFor(first, seq[idx].complex);
+          if (codaJamo) {
             // 직전 음절에 받침으로 재구성
-            const last = syllables.pop();
-            // 직전 음절을 다시 구성: cho/jung은 그대로, jong만 추가
-            syllables.push(composeSyllable(carryOnset, jung, CODA_OK[first]));
+            syllables.pop();
+            syllables.push(composeSyllable(carryOnset, jung, codaJamo));
           } else {
             syllables.push(epenthesis(first));
           }
           for (let k = 1; k < run.length - 1; k++) syllables.push(epenthesis(run[k]));
-          carryOnset = ONSET[run[run.length - 1]] || 'ㅇ';
+          carryOnsetRaw = run[run.length - 1];
+          carryOnset = ONSET[carryOnsetRaw] || 'ㅇ';
         }
       } else {
         // 마지막 모음: run은 단어 끝 자음군
+        const codaJamo = run.length > 0 ? codaFor(run[0], seq[idx].complex) : null;
         if (run.length === 0) {
           syllables.push(composeSyllable(carryOnset, jung, ''));
-        } else if (run.length === 1 && CODA_OK[run[0]]) {
-          syllables.push(composeSyllable(carryOnset, jung, CODA_OK[run[0]]));
+        } else if (run.length === 1 && codaJamo) {
+          syllables.push(composeSyllable(carryOnset, jung, codaJamo));
+        } else if (run.length >= 2 && codaJamo) {
+          // 첫 자음은 받침으로, 나머지는 각각 으-음절로 풀어씀
+          syllables.push(composeSyllable(carryOnset, jung, codaJamo));
+          for (let k = 1; k < run.length; k++) syllables.push(epenthesis(run[k]));
         } else {
           syllables.push(composeSyllable(carryOnset, jung, ''));
           for (const c of run) syllables.push(epenthesis(c));

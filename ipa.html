@@ -322,16 +322,26 @@
     const out = [];
     for (let i = 0; i < tokens.length; i++) {
       const t = tokens[i];
-      if (t in RCOLORED) { out.push({ type:'V', sym: RCOLORED[t] }); continue; }
-      if (t in DIPHTHONGS) { for (const v of DIPHTHONGS[t]) out.push({ type:'V', sym: v }); continue; }
-      if (VOWELS.has(t)) { out.push({ type:'V', sym: t }); continue; }
+      if (t in RCOLORED) { out.push({ type:'V', sym: RCOLORED[t], complex: true }); continue; }
+      if (t in DIPHTHONGS) { for (const v of DIPHTHONGS[t]) out.push({ type:'V', sym: v, complex: true }); continue; }
+      if (VOWELS.has(t)) { out.push({ type:'V', sym: t, complex: false }); continue; }
       if (t === 'j' || t === 'w') {
         const next = tokens[i+1];
         let nv = next;
-        if (next in RCOLORED) nv = RCOLORED[next];
-        else if (next in DIPHTHONGS) nv = DIPHTHONGS[next][0];
+        let extraVowel = null;
+        let isComplex = false;
+        if (next in RCOLORED) {
+          nv = RCOLORED[next];
+          isComplex = true;
+        } else if (next in DIPHTHONGS) {
+          const parts = DIPHTHONGS[next];
+          nv = parts[0];
+          if (parts.length > 1) extraVowel = parts[1];
+          isComplex = true;
+        }
         if (nv && VOWELS.has(nv)) {
-          out.push({ type:'V', sym: (t === 'j' ? 'j:' : 'w:') + nv });
+          out.push({ type:'V', sym: (t === 'j' ? 'j:' : 'w:') + nv, complex: isComplex });
+          if (extraVowel) out.push({ type:'V', sym: extraVowel, complex: true });
           i++;
           continue;
         }
@@ -341,6 +351,12 @@
       out.push({ type:'C', sym: t });
     }
     return out;
+  }
+
+  // 이중모음/r-발음 뒤의 t는 받침(ㅅ) 대신 "트"로 풀어쓰는 관용 표기를 반영
+  function codaFor(consonantSym, vowelIsComplex) {
+    if (consonantSym === 't' && vowelIsComplex) return undefined;
+    return CODA_OK[consonantSym];
   }
 
   function jungFor(sym) {
@@ -391,11 +407,11 @@
         } else {
           syllables.push(composeSyllable(carryOnset, jung, ''));
           const first = run[0];
-          if (CODA_OK[first]) {
+          const codaJamo = codaFor(first, seq[idx].complex);
+          if (codaJamo) {
             // 직전 음절에 받침으로 재구성
-            const last = syllables.pop();
-            // 직전 음절을 다시 구성: cho/jung은 그대로, jong만 추가
-            syllables.push(composeSyllable(carryOnset, jung, CODA_OK[first]));
+            syllables.pop();
+            syllables.push(composeSyllable(carryOnset, jung, codaJamo));
           } else {
             syllables.push(epenthesis(first));
           }
@@ -404,13 +420,14 @@
         }
       } else {
         // 마지막 모음: run은 단어 끝 자음군
+        const codaJamo = run.length > 0 ? codaFor(run[0], seq[idx].complex) : null;
         if (run.length === 0) {
           syllables.push(composeSyllable(carryOnset, jung, ''));
-        } else if (run.length === 1 && CODA_OK[run[0]]) {
-          syllables.push(composeSyllable(carryOnset, jung, CODA_OK[run[0]]));
-        } else if (run.length >= 2 && CODA_OK[run[0]]) {
+        } else if (run.length === 1 && codaJamo) {
+          syllables.push(composeSyllable(carryOnset, jung, codaJamo));
+        } else if (run.length >= 2 && codaJamo) {
           // 첫 자음은 받침으로, 나머지는 각각 으-음절로 풀어씀
-          syllables.push(composeSyllable(carryOnset, jung, CODA_OK[run[0]]));
+          syllables.push(composeSyllable(carryOnset, jung, codaJamo));
           for (let k = 1; k < run.length; k++) syllables.push(epenthesis(run[k]));
         } else {
           syllables.push(composeSyllable(carryOnset, jung, ''));

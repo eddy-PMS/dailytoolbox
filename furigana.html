@@ -27,10 +27,6 @@
 }
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/kuroshiro@1.1.2/dist/kuroshiro.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/kuroshiro-analyzer-kuromoji@1.1.0/dist/kuroshiro-analyzer-kuromoji.min.js"></script>
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8WYH7KGCP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -287,28 +283,100 @@
   const clearBtn = document.getElementById('clearBtn');
   const status = document.getElementById('status');
 
-  let kuroshiro = null;
   let ready = false;
   let usageTimer = null;
+  let pendingId = 0;
+  let latestRequestedId = 0;
 
   status.classList.add('loading');
 
-  const analyzer = new KuromojiAnalyzer({
-    dictPath: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/"
-  });
-  kuroshiro = (typeof Kuroshiro === 'function') ? new Kuroshiro() : new Kuroshiro.default();
+  // 무거운 사전 로딩/형태소 분석을 별도 스레드(Worker)에서 처리해서
+  // 화면(메인 스레드)이 멈추지(먹통 되지) 않도록 함
+  const workerCode = `
+    self.importScripts(
+      "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js",
+      "https://cdn.jsdelivr.net/npm/kuroshiro@1.1.2/dist/kuroshiro.min.js",
+      "https://cdn.jsdelivr.net/npm/kuroshiro-analyzer-kuromoji@1.1.0/dist/kuroshiro-analyzer-kuromoji.min.js"
+    );
 
-  kuroshiro.init(analyzer).then(() => {
-    ready = true;
-    status.classList.remove('loading');
-    status.textContent = '준비 완료! 문장을 입력해보세요.';
-    setTimeout(() => { status.textContent = ''; }, 2500);
-  }).catch(() => {
-    status.classList.remove('loading');
-    status.textContent = '사전 로딩에 실패했어요. 새로고침 후 다시 시도해주세요.';
-  });
+    let kuroshiro = null;
 
-  async function render() {
+    function getKuroshiroInstance() {
+      return (typeof Kuroshiro === 'function') ? new Kuroshiro() : new Kuroshiro.default();
+    }
+
+    (function init() {
+      try {
+        const analyzer = new KuromojiAnalyzer({
+          dictPath: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/"
+        });
+        kuroshiro = getKuroshiroInstance();
+        kuroshiro.init(analyzer).then(function () {
+          postMessage({ type: 'ready' });
+        }).catch(function (err) {
+          postMessage({ type: 'init-error', message: String(err && err.message || err) });
+        });
+      } catch (err) {
+        postMessage({ type: 'init-error', message: String(err && err.message || err) });
+      }
+    })();
+
+    onmessage = function (e) {
+      if (e.data.type === 'convert') {
+        const id = e.data.id;
+        kuroshiro.convert(e.data.text, { mode: 'furigana' }).then(function (html) {
+          postMessage({ type: 'result', id: id, html: html });
+        }).catch(function (err) {
+          postMessage({ type: 'convert-error', id: id, message: String(err && err.message || err) });
+        });
+      }
+    };
+  `;
+
+  let worker;
+  try {
+    const blob = new Blob([workerCode], { type: 'application/javascript' });
+    worker = new Worker(URL.createObjectURL(blob));
+  } catch (e) {
+    status.classList.remove('loading');
+    status.textContent = '이 브라우저에서는 후리가나 변환기를 지원하지 않아요.';
+  }
+
+  // 사전 로딩이 비정상적으로 오래 걸리면 안내 문구 전환 (완전히 멈춘 것처럼 보이지 않도록)
+  const slowLoadTimer = setTimeout(() => {
+    if (!ready) status.textContent = '사전 데이터가 다소 커서 시간이 걸리고 있어요. 네트워크에 따라 최대 1분 정도 걸릴 수 있습니다…';
+  }, 8000);
+
+  if (worker) {
+    worker.onmessage = (e) => {
+      const data = e.data;
+      if (data.type === 'ready') {
+        ready = true;
+        clearTimeout(slowLoadTimer);
+        status.classList.remove('loading');
+        status.textContent = '준비 완료! 문장을 입력해보세요.';
+        setTimeout(() => { status.textContent = ''; }, 2500);
+      } else if (data.type === 'init-error') {
+        clearTimeout(slowLoadTimer);
+        status.classList.remove('loading');
+        status.textContent = '사전 로딩에 실패했어요. 새로고침 후 다시 시도해주세요.';
+      } else if (data.type === 'result') {
+        if (data.id !== latestRequestedId) return; // 이전 입력에 대한 응답은 무시
+        result.innerHTML = `<div class="result-box">${data.html}</div>`;
+      } else if (data.type === 'convert-error') {
+        if (data.id !== latestRequestedId) return;
+        result.innerHTML = '<div class="empty-state">변환 중 오류가 발생했어요.</div>';
+      }
+    };
+
+    worker.onerror = () => {
+      clearTimeout(slowLoadTimer);
+      status.classList.remove('loading');
+      status.textContent = '사전 로딩에 실패했어요. 새로고침 후 다시 시도해주세요.';
+    };
+  }
+
+  function render() {
     const text = input.value;
     charCount.textContent = text.length + '자';
 
@@ -322,12 +390,9 @@
       return;
     }
 
-    try {
-      const html = await kuroshiro.convert(text, { mode: 'furigana' });
-      result.innerHTML = `<div class="result-box">${html}</div>`;
-    } catch (e) {
-      result.innerHTML = '<div class="empty-state">변환 중 오류가 발생했어요.</div>';
-    }
+    pendingId += 1;
+    latestRequestedId = pendingId;
+    worker.postMessage({ type: 'convert', id: pendingId, text: text });
   }
 
   function trackUsageIfNeeded() {

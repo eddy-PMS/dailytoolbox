@@ -3,9 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>한자 병음 변환기 | 汉字拼音转换器</title>
-<meta name="description" content="한자를 입력하면 병음과 성조를 바로 확인할 수 있는 무료 변환기">
+<title>중국어 병음 변환기 - 한자 발음 성조 표기 무료 도구</title>
+<meta name="description" content="한자를 입력하면 글자마다 병음과 성조를 바로 확인할 수 있는 무료 변환기. 중국어 발음, HSK 학습에 유용합니다.">
+<meta name="keywords" content="병음 변환기, 중국어 병음, 한자 발음, 병음 성조, pinyin converter, HSK 발음">
+<link rel="canonical" href="https://dailytoolbox.chchddr.workers.dev/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="중국어 병음 변환기 - 한자 발음 성조 표기 무료 도구">
+<meta property="og:description" content="한자를 입력하면 글자마다 병음과 성조를 바로 확인할 수 있는 무료 변환기입니다.">
+<meta property="og:url" content="https://dailytoolbox.chchddr.workers.dev/">
+<meta property="og:locale" content="ko_KR">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="중국어 병음 변환기">
+<meta name="twitter:description" content="한자 입력하면 병음과 성조를 바로 확인하는 무료 도구">
+
+<!-- 구조화 데이터: 검색엔진에 '웹 도구'임을 명시 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "중국어 병음 변환기",
+  "url": "https://dailytoolbox.chchddr.workers.dev/",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "KRW"
+  },
+  "description": "한자를 입력하면 병음과 성조를 바로 확인할 수 있는 무료 변환기"
+}
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3.19.6/dist/index.js"></script>
+
+<!-- Google Analytics 4: 방문자 수 + 기능 사용(변환 실행) 이벤트 추적 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8WYH7KGCP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z8WYH7KGCP');
+</script>
 <style>
   @font-face {
     font-family: 'system-cjk';
@@ -369,7 +411,28 @@
     result.innerHTML = html;
   }
 
-  input.addEventListener('input', render);
+  let usageTimer = null;
+  function trackUsageIfNeeded() {
+    // 입력이 있고, 실제로 한자가 포함된 경우에만 "기능 사용"으로 집계
+    const text = input.value;
+    if (!text.trim()) return;
+    const hasCJK = /[\u4e00-\u9fff]/.test(text);
+    if (!hasCJK) return;
+    clearTimeout(usageTimer);
+    // 타이핑이 잠시 멈춘 뒤 1회만 집계 (매 키입력마다 카운트되는 것 방지)
+    usageTimer = setTimeout(() => {
+      if (typeof gtag === 'function') {
+        gtag('event', 'pinyin_convert_used', {
+          input_length: text.length
+        });
+      }
+    }, 1000);
+  }
+
+  input.addEventListener('input', () => {
+    render();
+    trackUsageIfNeeded();
+  });
   clearBtn.addEventListener('click', () => {
     input.value = '';
     input.focus();

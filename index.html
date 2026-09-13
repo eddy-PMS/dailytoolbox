@@ -301,14 +301,43 @@
     text-decoration: none;
   }
 
-  @media (max-width: 480px) {
-    h1 { font-size: 23px; }
-    h1 .cjk { font-size: 27px; }
-    .char-block .hz { font-size: 26px; }
+  .site-nav {
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    gap: 4px;
+    margin-bottom: 28px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+
+  .site-nav a {
+    font-size: 13px;
+    color: var(--ink-soft);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+
+  .site-nav a:hover {
+    background: var(--paper-deep);
+    color: var(--ink);
+  }
+
+  .site-nav a.active {
+    background: var(--seal);
+    color: #fffdf8;
   }
 </style>
 </head>
 <body>
+
+<nav class="site-nav">
+  <a href="index.html" class="active">병음 변환기</a>
+  <a href="furigana.html">후리가나 표시기</a>
+</nav>
 
 <div class="brand">
   <div class="brand-mark"><b>拼</b>音 · 병음 변환기</div>

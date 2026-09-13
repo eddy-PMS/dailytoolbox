@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>일본어 후리가나 자동 표시기 - 한자 읽는법 무료 변환</title>
+<meta name="description" content="일본어 문장을 붙여넣으면 한자 위에 후리가나(읽는법)를 자동으로 표시해주는 무료 도구입니다.">
+<meta name="keywords" content="후리가나, 일본어 한자 읽는법, furigana, 일본어 발음, JLPT 한자">
+<link rel="canonical" href="https://dailytoolbox.chchddr.workers.dev/furigana.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="일본어 후리가나 자동 표시기">
+<meta property="og:description" content="일본어 문장을 붙여넣으면 한자 위에 후리가나를 자동으로 표시해주는 무료 도구">
+<meta property="og:url" content="https://dailytoolbox.chchddr.workers.dev/furigana.html">
+<meta property="og:locale" content="ko_KR">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "일본어 후리가나 자동 표시기",
+  "url": "https://dailytoolbox.chchddr.workers.dev/furigana.html",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "description": "일본어 문장을 붙여넣으면 한자 위에 후리가나를 자동으로 표시해주는 무료 도구"
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/kuroshiro@1.1.2/dist/kuroshiro.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/kuroshiro-analyzer-kuromoji@1.1.0/dist/kuroshiro-analyzer-kuromoji.min.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8WYH7KGCP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z8WYH7KGCP');
+</script>
+
+<style>
+  :root {
+    --paper: #f2efe9;
+    --paper-deep: #e8e3d8;
+    --ink: #1e1c1a;
+    --ink-soft: #5a564e;
+    --indigo: #2f4a5e;
+    --indigo-deep: #223947;
+    --vermillion: #b8492f;
+    --line: #d8d2c3;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px 80px;
+  }
+
+  .brand {
+    width: 100%;
+    max-width: 640px;
+    font-size: 15px;
+    color: var(--ink-soft);
+    margin-bottom: 36px;
+  }
+
+  .brand b { color: var(--indigo); font-weight: 700; }
+
+  main { width: 100%; max-width: 640px; }
+
+  h1 {
+    font-size: 27px;
+    line-height: 1.35;
+    margin: 0 0 8px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  h1 .cjk { font-size: 32px; color: var(--indigo); margin-right: 8px; }
+
+  .sub {
+    color: var(--ink-soft);
+    font-size: 15px;
+    margin: 0 0 32px;
+    line-height: 1.6;
+    max-width: 48ch;
+  }
+
+  .input-wrap {
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    background: #fffdf8;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 110px;
+    resize: vertical;
+    border: none;
+    background: transparent;
+    padding: 18px 20px;
+    font-size: 19px;
+    line-height: 1.8;
+    color: var(--ink);
+    font-family: inherit;
+    outline: none;
+  }
+
+  textarea::placeholder { color: #b3ab9c; font-size: 16px; }
+
+  .input-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 12px;
+    font-size: 12px;
+    color: #a39a89;
+  }
+
+  .clear-btn {
+    background: none;
+    border: none;
+    color: var(--ink-soft);
+    font-size: 13px;
+    cursor: pointer;
+    padding: 4px 8px;
+  }
+
+  .clear-btn:hover { color: var(--vermillion); }
+
+  .status-line {
+    margin-top: 14px;
+    font-size: 13px;
+    color: var(--ink-soft);
+    min-height: 18px;
+  }
+
+  .status-line.loading::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--indigo);
+    margin-right: 6px;
+    animation: pulse 1s infinite ease-in-out;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+  }
+
+  .result-section { margin-top: 30px; }
+
+  .result-label {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .result-label::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+  }
+
+  .empty-state {
+    border: 1px dashed var(--line);
+    border-radius: 3px;
+    padding: 32px 20px;
+    text-align: center;
+    color: #a39a89;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .result-box {
+    border-radius: 3px;
+    background: #fffdf8;
+    border: 1px solid var(--line);
+    padding: 28px 24px;
+    font-size: 24px;
+    line-height: 2.6;
+    word-break: keep-all;
+  }
+
+  .result-box ruby rt {
+    font-size: 12px;
+    color: var(--indigo);
+    font-weight: 600;
+  }
+
+  footer {
+    margin-top: 56px;
+    font-size: 12px;
+    color: #a39a89;
+    text-align: center;
+    line-height: 1.8;
+  }
+</style>
+</head>
+<body>
+
+<div class="brand"><b>振</b>り仮名 · 후리가나 자동 표시기</div>
+
+<main>
+  <h1><span class="cjk">振り仮名</span>후리가나 자동 표시기</h1>
+  <p class="sub">일본어 문장을 붙여넣으면 한자 위에 읽는법(후리가나)을 자동으로 달아드려요.</p>
+
+  <div class="input-wrap">
+    <textarea id="input" placeholder="예) 私は韓国人です。日本語を勉強しています。" spellcheck="false"></textarea>
+    <div class="input-foot">
+      <span id="charCount">0자</span>
+      <button class="clear-btn" id="clearBtn">지우기</button>
+    </div>
+  </div>
+
+  <div class="status-line" id="status">사전 데이터를 불러오는 중이에요. 잠시만 기다려주세요…</div>
+
+  <div class="result-section">
+    <div class="result-label">변환 결과</div>
+    <div id="result">
+      <div class="empty-state">위 칸에 일본어 문장을 입력하면<br>여기에 후리가나가 표시됩니다</div>
+    </div>
+  </div>
+
+  <footer>
+    형태소 분석 사전을 처음 불러올 때 몇 초 정도 걸릴 수 있어요. 다음자 한자는 문맥에 따라 다르게 표시될 수 있습니다.
+  </footer>
+</main>
+
+<script>
+  const input = document.getElementById('input');
+  const result = document.getElementById('result');
+  const charCount = document.getElementById('charCount');
+  const clearBtn = document.getElementById('clearBtn');
+  const status = document.getElementById('status');
+
+  let kuroshiro = null;
+  let ready = false;
+  let usageTimer = null;
+
+  status.classList.add('loading');
+
+  const analyzer = new KuromojiAnalyzer({
+    dictPath: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/"
+  });
+  kuroshiro = (typeof Kuroshiro === 'function') ? new Kuroshiro() : new Kuroshiro.default();
+
+  kuroshiro.init(analyzer).then(() => {
+    ready = true;
+    status.classList.remove('loading');
+    status.textContent = '준비 완료! 문장을 입력해보세요.';
+    setTimeout(() => { status.textContent = ''; }, 2500);
+  }).catch(() => {
+    status.classList.remove('loading');
+    status.textContent = '사전 로딩에 실패했어요. 새로고침 후 다시 시도해주세요.';
+  });
+
+  async function render() {
+    const text = input.value;
+    charCount.textContent = text.length + '자';
+
+    if (!text.trim()) {
+      result.innerHTML = '<div class="empty-state">위 칸에 일본어 문장을 입력하면<br>여기에 후리가나가 표시됩니다</div>';
+      return;
+    }
+
+    if (!ready) {
+      result.innerHTML = '<div class="empty-state">사전을 아직 불러오는 중이에요…</div>';
+      return;
+    }
+
+    try {
+      const html = await kuroshiro.convert(text, { mode: 'furigana' });
+      result.innerHTML = `<div class="result-box">${html}</div>`;
+    } catch (e) {
+      result.innerHTML = '<div class="empty-state">변환 중 오류가 발생했어요.</div>';
+    }
+  }
+
+  function trackUsageIfNeeded() {
+    const text = input.value;
+    if (!text.trim() || !ready) return;
+    clearTimeout(usageTimer);
+    usageTimer = setTimeout(() => {
+      if (typeof gtag === 'function') {
+        gtag('event', 'furigana_convert_used', { input_length: text.length });
+      }
+    }, 1200);
+  }
+
+  input.addEventListener('input', () => {
+    render();
+    trackUsageIfNeeded();
+  });
+
+  clearBtn.addEventListener('click', () => {
+    input.value = '';
+    input.focus();
+    render();
+  });
+</script>
+
+</body>
+</html>

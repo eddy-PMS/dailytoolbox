@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>중국어 간체 번체 변환기 - 간체자 번체자 상호 변환 무료</title>
+<meta name="description" content="간체자를 번체자로, 번체자를 간체자로 바꿔주는 무료 변환기. 대만·홍콩 표기와 지역 용어 변환도 지원합니다.">
+<meta name="keywords" content="간체 번체 변환, 간체자 번체자, 번체 간체 변환기, 중국어 변환, 대만 번체">
+<link rel="canonical" href="https://dailyfreetoolbox.com/chinese-convert.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="중국어 간체 ↔ 번체 변환기">
+<meta property="og:description" content="간체자와 번체자를 서로 바꿔주는 무료 변환기 (대만·홍콩 표기 지원)">
+<meta property="og:url" content="https://dailyfreetoolbox.com/chinese-convert.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"중국어 간체 번체 변환기","url":"https://dailyfreetoolbox.com/chinese-convert.html","applicationCategory":"EducationalApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"},"description":"간체자와 번체자를 서로 바꿔주는 무료 변환기"}
+</script>
+<script src="common.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/opencc-js@1.0.5/dist/umd/full.js"></script>
+<style>
+  :root { --paper:#f3ede1; --paper-deep:#ece3d3; --ink:#201d1a; --ink-soft:#55504a; --seal:#a83a2c; --seal-deep:#8a2f23; --line:#d9cfba; }
+  * { box-sizing:border-box; }
+  html, body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif; }
+  body { min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:48px 20px 80px; }
+  main { width:100%; max-width:680px; }
+  .brand { font-size:15px; color:var(--ink-soft); margin-bottom:24px; } .brand b { color:var(--seal); font-weight:700; }
+  h1 { font-size:26px; line-height:1.35; margin:0 0 8px; font-weight:700; letter-spacing:-0.01em; }
+  .sub { color:var(--ink-soft); font-size:15px; margin:0 0 22px; line-height:1.6; max-width:50ch; }
+  .dir-row { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px; }
+  .dir-btn { padding:9px 14px; border:1px solid var(--line); border-radius:3px; background:#fffdf8; font-size:13px; color:var(--ink-soft); cursor:pointer; font-family:inherit; }
+  .dir-btn.active { background:var(--seal); color:#fffdf8; border-color:var(--seal); }
+  .panes { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  @media (max-width:560px) { .panes { grid-template-columns:1fr; } }
+  .pane { border:1px solid var(--line); border-radius:3px; background:#fffdf8; display:flex; flex-direction:column; }
+  .pane-head { display:flex; justify-content:space-between; align-items:center; padding:8px 12px; font-size:12px; color:var(--ink-soft); border-bottom:1px solid var(--paper-deep); }
+  .pane textarea, .pane .out { min-height:220px; padding:14px; font-size:18px; line-height:1.8; font-family:inherit; color:var(--ink); }
+  .pane textarea { border:none; background:transparent; resize:vertical; outline:none; width:100%; }
+  .pane .out { white-space:pre-wrap; word-break:break-word; }
+  .pane .out.placeholder { color:#b3ab9c; font-size:15px; }
+  .link-btn { background:none; border:none; color:var(--seal); font-size:12px; cursor:pointer; font-family:inherit; padding:2px 6px; }
+  .link-btn:hover { text-decoration:underline; }
+  .btn-row { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+  .btn { background:var(--seal); color:#fffdf8; border:none; border-radius:3px; padding:10px 20px; font-size:14px; font-weight:700; cursor:pointer; font-family:inherit; }
+  .btn:hover { background:var(--seal-deep); }
+  .btn-ghost { background:none; border:1px solid var(--line); border-radius:3px; padding:9px 14px; font-size:13px; color:var(--ink-soft); cursor:pointer; font-family:inherit; }
+  .btn-ghost:hover { background:var(--paper-deep); color:var(--ink); }
+  .status { font-size:12px; color:#a39a89; margin-top:8px; min-height:16px; }
+  footer { margin-top:56px; font-size:12px; color:#a39a89; text-align:center; line-height:1.8; }
+</style>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#a83a2c"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>简 ↔ 繁</b> 간체·번체 변환기</div>
+  <h1>간체자와 번체자, 한 번에 바꿔요</h1>
+  <p class="sub">글자 변환만 하거나, 대만·홍콩식 표기와 지역 용어(软件↔軟體)까지 함께 바꿀 수 있어요. 입력하는 대로 바로 변환됩니다.</p>
+
+  <div class="dir-row" id="dirs">
+    <button class="dir-btn active" data-from="cn" data-to="tw">간체 → 번체(대만)</button>
+    <button class="dir-btn" data-from="cn" data-to="twp">간체 → 번체(대만·용어 포함)</button>
+    <button class="dir-btn" data-from="cn" data-to="hk">간체 → 번체(홍콩)</button>
+    <button class="dir-btn" data-from="tw" data-to="cn">번체 → 간체</button>
+    <button class="dir-btn" data-from="twp" data-to="cn">번체(대만 용어) → 간체</button>
+  </div>
+
+  <div class="panes">
+    <div class="pane">
+      <div class="pane-head"><span id="inLabel">입력 (간체)</span><button class="link-btn" id="clearBtn">지우기</button></div>
+      <textarea id="input" placeholder="예) 我喜欢学习汉语，软件工程很有意思。" spellcheck="false"></textarea>
+    </div>
+    <div class="pane">
+      <div class="pane-head"><span id="outLabel">결과 (번체)</span><button class="link-btn" id="copyBtn">복사</button></div>
+      <div class="out placeholder" id="output">변환 결과가 여기에 표시돼요</div>
+    </div>
+  </div>
+  <div class="btn-row">
+    <button class="btn-ghost" id="swapBtn">⇄ 결과를 입력으로 (방향 반전)</button>
+  </div>
+  <div class="status" id="status"></div>
+
+  <footer>변환 엔진은 오픈소스 OpenCC(opencc-js)를 사용하며 모든 처리는 브라우저 안에서 이루어져요.<br>일대다 대응 글자(예: 发→發/髮, 后→後/后)는 문맥에 따라 자동 선택되며, 드물게 다를 수 있습니다.</footer>
+</main>
+
+<script>
+  const $ = id => document.getElementById(id);
+  let from = 'cn', to = 'tw', converter = null;
+  const LABEL = { cn:'간체', tw:'번체(대만)', twp:'번체(대만·용어)', hk:'번체(홍콩)' };
+
+  function build() {
+    try { converter = OpenCC.Converter({ from, to }); $('status').textContent = ''; }
+    catch (e) { converter = null; $('status').textContent = '변환 엔진을 불러오지 못했어요. 새로고침 후 다시 시도해주세요.'; }
+    $('inLabel').textContent = `입력 (${LABEL[from]})`;
+    $('outLabel').textContent = `결과 (${LABEL[to]})`;
+    run();
+  }
+
+  let timer = null;
+  function run() {
+    const text = $('input').value;
+    const out = $('output');
+    if (!text.trim()) { out.textContent = '변환 결과가 여기에 표시돼요'; out.classList.add('placeholder'); return; }
+    if (!converter) return;
+    out.textContent = converter(text); out.classList.remove('placeholder');
+  }
+
+  $('input').addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => { run(); if (typeof gtag === 'function') gtag('event', 'chinese_convert_used', { from, to, chars: $('input').value.length }); }, 250); });
+
+  document.querySelectorAll('.dir-btn').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.dir-btn').forEach(x => x.classList.remove('active')); b.classList.add('active');
+    from = b.dataset.from; to = b.dataset.to; build();
+  }));
+
+  $('clearBtn').addEventListener('click', () => { $('input').value = ''; run(); $('input').focus(); });
+  $('copyBtn').addEventListener('click', async () => {
+    const t = $('output').classList.contains('placeholder') ? '' : $('output').textContent;
+    if (!t) return;
+    try { await navigator.clipboard.writeText(t); $('status').textContent = '복사했어요'; setTimeout(() => $('status').textContent = '', 1500); } catch { $('status').textContent = '복사에 실패했어요. 직접 드래그해서 복사해주세요.'; }
+  });
+  $('swapBtn').addEventListener('click', () => {
+    const t = $('output').classList.contains('placeholder') ? '' : $('output').textContent;
+    const reverse = { 'cn>tw':['tw','cn'], 'cn>twp':['twp','cn'], 'cn>hk':['hk','cn'], 'tw>cn':['cn','tw'], 'twp>cn':['cn','twp'], 'hk>cn':['cn','hk'] }[from + '>' + to] || ['tw','cn'];
+    from = reverse[0]; to = reverse[1];
+    document.querySelectorAll('.dir-btn').forEach(x => x.classList.toggle('active', x.dataset.from === from && x.dataset.to === to));
+    $('input').value = t; build();
+  });
+
+  if (typeof OpenCC === 'undefined') $('status').textContent = '변환 엔진 로딩 중… 잠시 후 다시 입력해보세요.';
+  build();
+</script>
+
+</body>
+</html>

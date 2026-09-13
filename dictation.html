@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>받아쓰기 연습기 - 영어 일본어 중국어 딕테이션 무료</title>
+<meta name="description" content="문장을 원어민 음성으로 들려주면 받아쓰고, 틀린 부분을 바로 확인하는 무료 딕테이션 연습 도구. 내 문장으로도 연습 가능.">
+<meta name="keywords" content="받아쓰기 연습, 영어 딕테이션, 일본어 받아쓰기, 중국어 받아쓰기, 듣기 연습">
+<link rel="canonical" href="https://dailyfreetoolbox.com/dictation.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="받아쓰기 연습기">
+<meta property="og:description" content="원어민 음성으로 듣고 받아쓰는 무료 딕테이션 연습 도구">
+<meta property="og:url" content="https://dailyfreetoolbox.com/dictation.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"받아쓰기 연습기","url":"https://dailyfreetoolbox.com/dictation.html","applicationCategory":"EducationalApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"},"description":"원어민 음성으로 듣고 받아쓰는 무료 딕테이션 연습 도구"}
+</script>
+<script src="common.js"></script>
+<style>
+  :root { --paper:#edeef0; --paper-deep:#e0e2e6; --ink:#1c1e21; --ink-soft:#545862; --accent:#3b6d8a; --accent-deep:#2a5168; --line:#d2d5db; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif; }
+  body { min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:48px 20px 80px; }
+  main { width:100%; max-width:640px; }
+  .brand { font-size:15px; color:var(--ink-soft); margin-bottom:24px; } .brand b { color:var(--accent); font-weight:700; }
+  h1 { font-size:26px; line-height:1.35; margin:0 0 8px; font-weight:700; letter-spacing:-0.01em; }
+  .sub { color:var(--ink-soft); font-size:15px; margin:0 0 22px; line-height:1.6; max-width:48ch; }
+  .card { background:#fbfbfc; border:1px solid var(--line); border-radius:3px; padding:22px 22px; }
+  .lang-tabs { display:flex; gap:6px; margin-bottom:14px; }
+  .lang-tab { flex:1; padding:9px; border:1px solid var(--line); border-radius:3px; background:#fff; font-size:13px; color:var(--ink-soft); cursor:pointer; font-family:inherit; }
+  .lang-tab.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .row { display:flex; flex-wrap:wrap; gap:10px 16px; align-items:center; font-size:13px; color:var(--ink-soft); margin-bottom:12px; }
+  .row label { display:flex; align-items:center; gap:6px; }
+  select, input[type="range"] { font-family:inherit; font-size:13px; }
+  select { padding:5px 8px; border:1px solid var(--line); border-radius:3px; background:#fff; max-width:220px; }
+  textarea { width:100%; min-height:90px; resize:vertical; border:1px solid var(--line); border-radius:3px; background:#fff; padding:12px 14px; font-size:14px; line-height:1.6; color:var(--ink); font-family:inherit; outline:none; }
+  .hint { font-size:12px; color:#9a9ea8; margin-top:6px; }
+  .btn { background:var(--accent); color:#fff; border:none; border-radius:3px; padding:11px 22px; font-size:14px; font-weight:700; cursor:pointer; font-family:inherit; }
+  .btn:hover { background:var(--accent-deep); } .btn:disabled { opacity:.5; cursor:default; }
+  .btn-ghost { background:none; border:1px solid var(--line); border-radius:3px; padding:10px 16px; font-size:13px; color:var(--ink-soft); cursor:pointer; font-family:inherit; }
+  .btn-ghost:hover { background:var(--paper-deep); color:var(--ink); }
+  .btn-row { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+  .hidden { display:none; }
+  .progress { display:flex; justify-content:space-between; font-size:13px; color:var(--ink-soft); margin-bottom:10px; }
+  .play-big { width:100%; padding:18px; font-size:16px; margin-bottom:14px; }
+  .answer-input { width:100%; padding:14px; font-size:18px; border:1px solid var(--line); border-radius:3px; font-family:inherit; outline:none; background:#fff; }
+  .answer-input:focus { border-color:var(--accent); }
+  .diff { margin-top:16px; padding:14px 16px; background:#fff; border:1px solid var(--line); border-radius:3px; font-size:17px; line-height:1.9; word-break:break-word; }
+  .diff .ok { color:#2f5d4e; } .diff .miss { color:#a8483a; text-decoration:underline; text-decoration-style:wavy; }
+  .diff .extra { color:#a8483a; text-decoration:line-through; opacity:.7; }
+  .diff-label { font-size:12px; color:var(--ink-soft); margin-bottom:6px; }
+  .score-line { margin-top:10px; font-size:14px; font-weight:700; }
+  .result-head { font-size:24px; font-weight:700; margin:0 0 6px; }
+  .result-sub { color:var(--ink-soft); font-size:14px; margin:0 0 18px; }
+  .missed { font-size:14px; line-height:1.8; }
+  .missed li { margin-bottom:4px; }
+  footer { margin-top:56px; font-size:12px; color:#a5a8b0; text-align:center; line-height:1.8; }
+</style>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#3b6d8a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>✎</b> 받아쓰기 연습기</div>
+  <h1>듣고, 쓰고, 바로 확인하세요</h1>
+  <p class="sub">문장을 원어민 음성으로 들려드려요. 받아쓴 뒤 정답과 비교하면 틀린 단어가 표시됩니다. 기본 문장으로 시작하거나 내 문장을 넣어 연습할 수 있어요.</p>
+
+  <div id="setup" class="card">
+    <div class="lang-tabs">
+      <button class="lang-tab active" data-lang="en-US">영어</button>
+      <button class="lang-tab" data-lang="ja-JP">일본어</button>
+      <button class="lang-tab" data-lang="zh-CN">중국어</button>
+    </div>
+    <div class="row">
+      <label>목소리 <select id="voiceSelect"></select></label>
+      <label>속도 <input type="range" id="rate" min="0.5" max="1.2" step="0.1" value="0.85"> <span id="rateVal">0.85x</span></label>
+    </div>
+    <textarea id="sentences" placeholder="연습할 문장을 한 줄에 하나씩 입력하세요. 비워두면 기본 문장으로 연습해요."></textarea>
+    <div class="hint">비워두면 언어별 기본 문장 8개가 출제됩니다.</div>
+    <div class="btn-row"><button class="btn" id="startBtn">연습 시작</button></div>
+  </div>
+
+  <div id="quiz" class="card hidden">
+    <div class="progress"><span id="progressText"></span><span id="scoreText"></span></div>
+    <button class="btn play-big" id="playBtn">▶ 문장 듣기</button>
+    <input class="answer-input" id="answer" placeholder="들은 대로 입력하고 Enter" autocomplete="off" autocapitalize="off" spellcheck="false">
+    <div id="diffWrap" class="hidden">
+      <div class="diff-label">정답과 비교 (밑줄: 틀림/누락, 취소선: 추가로 쓴 것)</div>
+      <div class="diff" id="diff"></div>
+      <div class="score-line" id="scoreLine"></div>
+    </div>
+    <div class="btn-row">
+      <button class="btn-ghost" id="checkBtn">정답 확인</button>
+      <button class="btn-ghost hidden" id="nextBtn">다음 문장 →</button>
+      <button class="btn-ghost" id="quitBtn">그만하기</button>
+    </div>
+  </div>
+
+  <div id="result" class="card hidden">
+    <div class="result-head" id="resultHead"></div>
+    <p class="result-sub" id="resultSub"></p>
+    <ul class="missed" id="missedList"></ul>
+    <div class="btn-row">
+      <button class="btn" id="againBtn">같은 문장으로 다시</button>
+      <button class="btn-ghost" id="backBtn">설정으로</button>
+    </div>
+  </div>
+
+  <footer>브라우저 내장 음성(Web Speech API)을 사용하며 입력한 문장은 서버로 전송되지 않아요.<br>영어는 단어 단위, 일본어·중국어는 글자 단위로 비교합니다.</footer>
+</main>
+
+<script>
+  const DEFAULTS = {
+    'en-US': [
+      'The early bird catches the worm.',
+      'Could you tell me where the station is?',
+      'I have been studying English for three years.',
+      'She usually goes jogging before breakfast.',
+      'Please let me know if you have any questions.',
+      'It was raining heavily when we left the office.',
+      'Practice a little every day and you will improve.',
+      'The meeting has been postponed until next Monday.'
+    ],
+    'ja-JP': [
+      '今日はいい天気ですね。',
+      '駅までどうやって行けばいいですか。',
+      '毎朝七時に起きて、コーヒーを飲みます。',
+      '週末は友達と映画を見に行きました。',
+      'この本はとても面白いと思います。',
+      'すみません、もう一度言ってください。',
+      '来年、日本に旅行するつもりです。',
+      '雨が降っているので、傘を持って行きましょう。'
+    ],
+    'zh-CN': [
+      '今天天气很好。',
+      '请问，地铁站在哪里？',
+      '我每天早上七点起床。',
+      '周末我和朋友一起去看电影。',
+      '这本书很有意思。',
+      '对不起，请再说一遍。',
+      '我明年打算去中国旅行。',
+      '外面下雨了，我们带伞吧。'
+    ]
+  };
+
+  const synth = window.speechSynthesis;
+  let voices = [];
+  let lang = 'en-US';
+  let list = [], idx = 0, results = [], checked = false;
+
+  const $ = id => document.getElementById(id);
+  const setup = $('setup'), quiz = $('quiz'), result = $('result');
+  const voiceSelect = $('voiceSelect'), rate = $('rate'), rateVal = $('rateVal');
+  const answer = $('answer');
+
+  function loadVoices() { voices = synth ? synth.getVoices() : []; populateVoices(); }
+  function populateVoices() {
+    const prefix = lang.split('-')[0];
+    const exact = voices.filter(v => v.lang.replace('_','-').toLowerCase() === lang.toLowerCase());
+    const same = voices.filter(v => v.lang.toLowerCase().startsWith(prefix) && !exact.includes(v));
+    const all = [...exact, ...same];
+    voiceSelect.innerHTML = '';
+    if (!all.length) { voiceSelect.innerHTML = '<option value="">이 언어 음성이 없어요</option>'; return; }
+    all.forEach(v => { const o = document.createElement('option'); o.value = v.name; o.textContent = `${v.name} (${v.lang})`; voiceSelect.appendChild(o); });
+  }
+  if (synth) { loadVoices(); if ('onvoiceschanged' in synth) synth.onvoiceschanged = loadVoices; }
+  else { $('startBtn').disabled = true; $('setup').insertAdjacentHTML('beforeend', '<div class="hint">이 브라우저는 음성 재생을 지원하지 않아요. 크롬·엣지·사파리를 사용해주세요.</div>'); }
+
+  document.querySelectorAll('.lang-tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.lang-tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active'); lang = t.dataset.lang; populateVoices();
+  }));
+  rate.addEventListener('input', () => rateVal.textContent = rate.value + 'x');
+
+  function speak(text) {
+    if (!synth) return;
+    synth.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = lang; u.rate = parseFloat(rate.value);
+    const v = voices.find(x => x.name === voiceSelect.value); if (v) u.voice = v;
+    synth.speak(u);
+  }
+
+  function normalizeEn(s) { return s.toLowerCase().replace(/[^\p{L}\p{N}'\s]/gu, ' ').split(/\s+/).filter(Boolean); }
+  function normalizeCjk(s) { return [...s.replace(/[\s\p{P}]/gu, '')]; }
+  function tokens(s) { return lang === 'en-US' ? normalizeEn(s) : normalizeCjk(s); }
+
+  // 간단 LCS 기반 diff
+  function diffTokens(a, b) {
+    const m = a.length, n = b.length;
+    const dp = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
+    for (let i = m - 1; i >= 0; i--) for (let j = n - 1; j >= 0; j--)
+      dp[i][j] = a[i] === b[j] ? dp[i+1][j+1] + 1 : Math.max(dp[i+1][j], dp[i][j+1]);
+    const out = []; let i = 0, j = 0;
+    while (i < m && j < n) {
+      if (a[i] === b[j]) { out.push({ t: a[i], k: 'ok' }); i++; j++; }
+      else if (dp[i+1][j] >= dp[i][j+1]) { out.push({ t: a[i], k: 'miss' }); i++; }
+      else { out.push({ t: b[j], k: 'extra' }); j++; }
+    }
+    while (i < m) out.push({ t: a[i++], k: 'miss' });
+    while (j < n) out.push({ t: b[j++], k: 'extra' });
+    return out;
+  }
+
+  function start() {
+    const custom = $('sentences').value.split('\n').map(s => s.trim()).filter(Boolean);
+    list = custom.length ? custom : DEFAULTS[lang].slice();
+    idx = 0; results = [];
+    setup.classList.add('hidden'); result.classList.add('hidden'); quiz.classList.remove('hidden');
+    showSentence();
+    if (typeof gtag === 'function') gtag('event', 'dictation_started', { lang, count: list.length, custom: custom.length > 0 });
+  }
+
+  function showSentence() {
+    checked = false;
+    $('progressText').textContent = `${idx + 1} / ${list.length}`;
+    $('scoreText').textContent = results.length ? `평균 ${Math.round(results.reduce((s, r) => s + r.acc, 0) / results.length)}%` : '';
+    answer.value = ''; answer.disabled = false;
+    $('diffWrap').classList.add('hidden'); $('nextBtn').classList.add('hidden'); $('checkBtn').classList.remove('hidden');
+    setTimeout(() => { speak(list[idx]); answer.focus(); }, 300);
+  }
+
+  function check() {
+    if (checked) return;
+    checked = true;
+    const target = list[idx];
+    const a = tokens(target), b = tokens(answer.value);
+    const d = diffTokens(a, b);
+    const okCount = d.filter(x => x.k === 'ok').length;
+    const acc = a.length ? Math.round(okCount / a.length * 100) : 0;
+    results.push({ target, typed: answer.value, acc });
+    const sep = lang === 'en-US' ? ' ' : '';
+    $('diff').innerHTML = d.map(x => `<span class="${x.k}">${x.t}</span>`).join(sep);
+    $('scoreLine').textContent = `정확도 ${acc}%  ·  정답: ${target}`;
+    $('diffWrap').classList.remove('hidden');
+    $('checkBtn').classList.add('hidden'); $('nextBtn').classList.remove('hidden');
+    answer.disabled = true;
+    $('nextBtn').focus();
+  }
+
+  function next() {
+    idx++;
+    if (idx < list.length) showSentence(); else finish();
+  }
+
+  function finish() {
+    quiz.classList.add('hidden'); result.classList.remove('hidden');
+    const avg = Math.round(results.reduce((s, r) => s + r.acc, 0) / results.length);
+    $('resultHead').textContent = `평균 정확도 ${avg}%`;
+    $('resultSub').textContent = avg >= 90 ? '거의 완벽해요! 속도를 올리거나 새 문장으로 도전해보세요.' : avg >= 70 ? '잘하고 있어요. 틀린 문장을 다시 들어보세요.' : '천천히 여러 번 들으면서 연습해보세요. 속도를 0.7x로 낮추는 것도 방법이에요.';
+    const missed = results.filter(r => r.acc < 100);
+    $('missedList').innerHTML = missed.length ? missed.map(r => `<li>${r.target} <span style="color:#9a9ea8">(${r.acc}%)</span></li>`).join('') : '<li>모든 문장을 정확히 받아썼어요 🎉</li>';
+    if (typeof gtag === 'function') gtag('event', 'dictation_completed', { lang, count: list.length, avg });
+  }
+
+  $('startBtn').addEventListener('click', start);
+  $('playBtn').addEventListener('click', () => speak(list[idx]));
+  $('checkBtn').addEventListener('click', check);
+  $('nextBtn').addEventListener('click', next);
+  $('quitBtn').addEventListener('click', () => { synth && synth.cancel(); if (results.length) finish(); else { quiz.classList.add('hidden'); setup.classList.remove('hidden'); } });
+  $('againBtn').addEventListener('click', () => { idx = 0; results = []; result.classList.add('hidden'); quiz.classList.remove('hidden'); showSentence(); });
+  $('backBtn').addEventListener('click', () => { result.classList.add('hidden'); setup.classList.remove('hidden'); });
+  answer.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); if (!checked) check(); else next(); } });
+</script>
+
+</body>
+</html>

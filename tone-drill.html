@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>중국어 성조 훈련 - 1성 2성 3성 4성 듣고 구분하기 무료</title>
+<meta name="description" content="같은 음절의 1~4성을 연속으로 듣고 비교하고, 퀴즈로 성조 구분 능력을 키우는 무료 중국어 발음 도구.">
+<meta name="keywords" content="중국어 성조 연습, 성조 듣기, 1성 2성 3성 4성, 중국어 발음 훈련, 성조 퀴즈">
+<link rel="canonical" href="https://dailyfreetoolbox.com/tone-drill.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="중국어 성조 훈련">
+<meta property="og:description" content="1~4성을 듣고 비교하고 퀴즈로 구분하는 무료 성조 훈련 도구">
+<meta property="og:url" content="https://dailyfreetoolbox.com/tone-drill.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"중국어 성조 훈련","url":"https://dailyfreetoolbox.com/tone-drill.html","applicationCategory":"EducationalApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"},"description":"1~4성을 듣고 비교하고 퀴즈로 구분하는 무료 성조 훈련 도구"}
+</script>
+<script src="common.js"></script>
+<style>
+  :root { --paper:#f3ede1; --paper-deep:#ece3d3; --ink:#201d1a; --ink-soft:#55504a; --seal:#a83a2c; --seal-deep:#8a2f23; --line:#d9cfba; --t1:#a83a2c; --t2:#b8923f; --t3:#3f6b52; --t4:#3a5a8a; }
+  * { box-sizing:border-box; }
+  html, body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif; }
+  body { min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:48px 20px 80px; }
+  main { width:100%; max-width:640px; }
+  .brand { font-size:15px; color:var(--ink-soft); margin-bottom:24px; } .brand b { color:var(--seal); font-weight:700; }
+  h1 { font-size:26px; line-height:1.35; margin:0 0 8px; font-weight:700; letter-spacing:-0.01em; }
+  .sub { color:var(--ink-soft); font-size:15px; margin:0 0 22px; line-height:1.6; max-width:48ch; }
+  .card { background:#fffdf8; border:1px solid var(--line); border-radius:3px; padding:22px; margin-bottom:16px; }
+  .card h2 { font-size:14px; margin:0 0 12px; color:var(--ink-soft); font-weight:700; }
+  .row { display:flex; flex-wrap:wrap; gap:10px 16px; align-items:center; font-size:13px; color:var(--ink-soft); margin-bottom:12px; }
+  select { font-family:inherit; font-size:13px; padding:5px 8px; border:1px solid var(--line); border-radius:3px; background:#fff; max-width:220px; }
+  .syl-grid { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px; }
+  .syl-chip { padding:7px 12px; border:1px solid var(--line); border-radius:20px; background:var(--paper); font-size:13px; cursor:pointer; font-family:inherit; color:var(--ink-soft); }
+  .syl-chip.active { background:var(--seal); color:#fffdf8; border-color:var(--seal); }
+  .tones { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; }
+  .tone-btn { border:1px solid var(--line); border-radius:3px; background:var(--paper); padding:14px 8px; cursor:pointer; font-family:inherit; text-align:center; transition:background .15s; }
+  .tone-btn:hover { background:var(--paper-deep); }
+  .tone-btn .hz { font-size:28px; font-weight:700; line-height:1.2; }
+  .tone-btn .py { font-size:14px; font-weight:600; margin-top:4px; }
+  .tone-btn .lab { font-size:11px; color:var(--ink-soft); margin-top:2px; }
+  .tone-btn.t1 .py { color:var(--t1); } .tone-btn.t2 .py { color:var(--t2); } .tone-btn.t3 .py { color:var(--t3); } .tone-btn.t4 .py { color:var(--t4); }
+  .tone-btn.correct { background:#dcecdf; border-color:#2f5d4e; } .tone-btn.wrong { background:#f3dcd6; border-color:#a8483a; }
+  .btn { background:var(--seal); color:#fffdf8; border:none; border-radius:3px; padding:11px 22px; font-size:14px; font-weight:700; cursor:pointer; font-family:inherit; }
+  .btn:hover { background:var(--seal-deep); }
+  .btn-ghost { background:none; border:1px solid var(--line); border-radius:3px; padding:10px 16px; font-size:13px; color:var(--ink-soft); cursor:pointer; font-family:inherit; }
+  .btn-ghost:hover { background:var(--paper-deep); color:var(--ink); }
+  .btn-row { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+  .quiz-prompt { text-align:center; padding:10px 0 18px; }
+  .quiz-prompt .big { font-size:15px; color:var(--ink-soft); margin-bottom:12px; }
+  .score { font-size:13px; color:var(--ink-soft); display:flex; justify-content:space-between; margin-bottom:10px; }
+  .feedback { text-align:center; margin-top:12px; font-size:14px; min-height:20px; font-weight:600; }
+  .hidden { display:none; }
+  .legend { font-size:12px; color:var(--ink-soft); line-height:1.8; }
+  footer { margin-top:56px; font-size:12px; color:#a39a89; text-align:center; line-height:1.8; }
+</style>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#a83a2c"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>四声</b> 중국어 성조 훈련</div>
+  <h1>같은 음절, 다른 성조를 귀로 익혀요</h1>
+  <p class="sub">妈·麻·马·骂처럼 성조만 다른 글자를 연속으로 듣고 비교한 뒤, 퀴즈로 몇 성인지 맞혀보세요.</p>
+
+  <div class="card">
+    <h2>1. 음절 고르기</h2>
+    <div class="syl-grid" id="sylGrid"></div>
+    <div class="row">
+      <label>목소리 <select id="voiceSelect"></select></label>
+      <label>속도 <input type="range" id="rate" min="0.5" max="1.2" step="0.1" value="0.8"> <span id="rateVal">0.8x</span></label>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>2. 듣고 비교하기 — 버튼을 누르면 그 성조를 읽어줘요</h2>
+    <div class="tones" id="toneGrid"></div>
+    <div class="btn-row">
+      <button class="btn" id="playAll">▶ 1성→4성 연속 듣기</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>3. 퀴즈 — 들리는 글자가 몇 성일까요?</h2>
+    <div class="score"><span id="qCount">문제 0</span><span id="qScore">정답 0</span></div>
+    <div class="quiz-prompt">
+      <div class="big" id="qHint">"문제 듣기"를 누르면 4개 중 하나를 읽어줘요</div>
+      <button class="btn" id="qPlay">▶ 문제 듣기</button>
+    </div>
+    <div class="tones" id="quizGrid"></div>
+    <div class="feedback" id="feedback"></div>
+    <div class="btn-row">
+      <label class="legend"><input type="checkbox" id="randomSyl" checked> 퀴즈는 선택한 음절 외에 다른 음절도 섞어 출제</label>
+    </div>
+  </div>
+
+  <footer>브라우저 내장 중국어 음성을 사용합니다. 성조 구분이 뚜렷한 음성(예: Google 普通话, Microsoft Xiaoxiao)을 고르면 연습에 더 좋아요.<br>기기에 중국어 음성이 없으면 소리가 나지 않아요.</footer>
+</main>
+
+<script>
+  const SETS = [
+    { syl:'ma', chars:['妈','麻','马','骂'], py:['mā','má','mǎ','mà'] },
+    { syl:'ba', chars:['八','拔','把','爸'], py:['bā','bá','bǎ','bà'] },
+    { syl:'yi', chars:['一','姨','椅','亿'], py:['yī','yí','yǐ','yì'] },
+    { syl:'wu', chars:['屋','无','五','物'], py:['wū','wú','wǔ','wù'] },
+    { syl:'shi', chars:['诗','十','史','是'], py:['shī','shí','shǐ','shì'] },
+    { syl:'tang', chars:['汤','糖','躺','烫'], py:['tāng','táng','tǎng','tàng'] },
+    { syl:'qi', chars:['七','骑','起','气'], py:['qī','qí','qǐ','qì'] },
+    { syl:'xi', chars:['西','习','喜','戏'], py:['xī','xí','xǐ','xì'] },
+    { syl:'tu', chars:['突','图','土','兔'], py:['tū','tú','tǔ','tù'] },
+    { syl:'fu', chars:['夫','服','府','父'], py:['fū','fú','fǔ','fù'] },
+    { syl:'zhu', chars:['猪','竹','主','住'], py:['zhū','zhú','zhǔ','zhù'] },
+    { syl:'shu', chars:['书','熟','数','树'], py:['shū','shú','shǔ','shù'] },
+    { syl:'ji', chars:['鸡','急','几','记'], py:['jī','jí','jǐ','jì'] },
+    { syl:'bi', chars:['逼','鼻','笔','必'], py:['bī','bí','bǐ','bì'] },
+    { syl:'mi', chars:['眯','迷','米','密'], py:['mī','mí','mǐ','mì'] },
+    { syl:'wen', chars:['温','文','稳','问'], py:['wēn','wén','wěn','wèn'] }
+  ];
+  const TONE_LABEL = ['1성 (높고 평평)', '2성 (올라감)', '3성 (내렸다 올림)', '4성 (뚝 떨어짐)'];
+
+  const $ = id => document.getElementById(id);
+  const synth = window.speechSynthesis;
+  let voices = [], current = SETS[0];
+  let quiz = null, qTotal = 0, qCorrect = 0, answered = true;
+
+  function loadVoices() {
+    voices = synth ? synth.getVoices().filter(v => v.lang.toLowerCase().startsWith('zh')) : [];
+    const sel = $('voiceSelect'); sel.innerHTML = '';
+    if (!voices.length) { sel.innerHTML = '<option value="">중국어 음성이 설치되어 있지 않아요</option>'; return; }
+    voices.forEach(v => { const o = document.createElement('option'); o.value = v.name; o.textContent = `${v.name} (${v.lang})`; sel.appendChild(o); });
+    const pref = voices.find(v => /zh[-_]CN/i.test(v.lang)); if (pref) sel.value = pref.name;
+  }
+  if (synth) { loadVoices(); if ('onvoiceschanged' in synth) synth.onvoiceschanged = loadVoices; }
+  $('rate').addEventListener('input', () => $('rateVal').textContent = $('rate').value + 'x');
+
+  function speak(text) {
+    return new Promise(resolve => {
+      if (!synth) return resolve();
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = 'zh-CN'; u.rate = parseFloat($('rate').value);
+      const v = voices.find(x => x.name === $('voiceSelect').value); if (v) u.voice = v;
+      u.onend = resolve; u.onerror = resolve;
+      synth.speak(u);
+    });
+  }
+
+  // 음절 칩
+  SETS.forEach((s, i) => {
+    const c = document.createElement('button');
+    c.className = 'syl-chip' + (i === 0 ? ' active' : ''); c.textContent = s.syl;
+    c.addEventListener('click', () => { document.querySelectorAll('.syl-chip').forEach(x => x.classList.remove('active')); c.classList.add('active'); current = s; renderTones(); });
+    $('sylGrid').appendChild(c);
+  });
+
+  function toneButton(set, t, onClick) {
+    const b = document.createElement('button');
+    b.className = 'tone-btn t' + (t + 1);
+    b.innerHTML = `<div class="hz">${set.chars[t]}</div><div class="py">${set.py[t]}</div><div class="lab">${TONE_LABEL[t]}</div>`;
+    b.addEventListener('click', () => onClick(t, b));
+    return b;
+  }
+
+  function renderTones() {
+    const g = $('toneGrid'); g.innerHTML = '';
+    for (let t = 0; t < 4; t++) g.appendChild(toneButton(current, t, (t) => { synth && synth.cancel(); speak(current.chars[t]); }));
+    renderQuizGrid();
+  }
+
+  $('playAll').addEventListener('click', async () => {
+    synth && synth.cancel();
+    for (let t = 0; t < 4; t++) { await speak(current.chars[t]); await new Promise(r => setTimeout(r, 350)); }
+    if (typeof gtag === 'function') gtag('event', 'tone_play_all', { syl: current.syl });
+  });
+
+  // 퀴즈
+  function renderQuizGrid(set) {
+    const s = set || current;
+    const g = $('quizGrid'); g.innerHTML = '';
+    for (let t = 0; t < 4; t++) g.appendChild(toneButton(s, t, onAnswer));
+  }
+
+  $('qPlay').addEventListener('click', () => {
+    const pool = $('randomSyl').checked ? SETS : [current];
+    const set = pool[Math.floor(Math.random() * pool.length)];
+    const tone = Math.floor(Math.random() * 4);
+    quiz = { set, tone }; answered = false;
+    renderQuizGrid(set);
+    $('feedback').textContent = '';
+    $('qHint').textContent = `음절 "${set.syl}" — 몇 성일까요?`;
+    synth && synth.cancel(); speak(set.chars[tone]);
+  });
+
+  function onAnswer(t, btn) {
+    if (!quiz) { synth && synth.cancel(); speak(current.chars[t]); return; }
+    if (answered) { synth && synth.cancel(); speak(quiz.set.chars[t]); return; }
+    answered = true; qTotal++;
+    const ok = t === quiz.tone;
+    if (ok) { qCorrect++; btn.classList.add('correct'); $('feedback').textContent = '정답! ' + quiz.set.py[t]; $('feedback').style.color = '#2f5d4e'; }
+    else {
+      btn.classList.add('wrong');
+      [...$('quizGrid').children][quiz.tone].classList.add('correct');
+      $('feedback').textContent = `아쉬워요. 정답은 ${quiz.tone + 1}성 ${quiz.set.py[quiz.tone]}`; $('feedback').style.color = '#a8483a';
+    }
+    $('qCount').textContent = `문제 ${qTotal}`; $('qScore').textContent = `정답 ${qCorrect}`;
+    if (typeof gtag === 'function') gtag('event', 'tone_quiz_answered', { correct: ok, tone: quiz.tone + 1 });
+  }
+
+  renderTones();
+</script>
+
+</body>
+</html>

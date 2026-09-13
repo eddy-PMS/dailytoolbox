@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>영어 스펠링 퀴즈 생성기 - 내 단어 목록으로 철자 테스트 무료</title>
+<meta name="description" content="단어 목록을 붙여넣으면 발음을 듣거나 뜻을 보고 철자를 입력하는 스펠링 퀴즈를 만들어주는 무료 도구.">
+<meta name="keywords" content="스펠링 퀴즈, 영어 철자 테스트, 영단어 시험 만들기, 단어 시험, 받아쓰기 단어">
+<link rel="canonical" href="https://dailyfreetoolbox.com/spelling-quiz.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="영어 스펠링 퀴즈 생성기">
+<meta property="og:description" content="내 단어 목록으로 바로 만드는 철자 테스트, 무료">
+<meta property="og:url" content="https://dailyfreetoolbox.com/spelling-quiz.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"영어 스펠링 퀴즈 생성기","url":"https://dailyfreetoolbox.com/spelling-quiz.html","applicationCategory":"EducationalApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"},"description":"내 단어 목록으로 바로 만드는 철자 테스트"}
+</script>
+<script src="common.js"></script>
+<style>
+  :root { --paper:#f0eee7; --paper-deep:#e6e2d6; --ink:#1e1d1b; --ink-soft:#56534c; --navy:#2c3e5e; --navy-deep:#202d45; --line:#d6d0bf; }
+  * { box-sizing:border-box; }
+  html, body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif; }
+  body { min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:48px 20px 80px; }
+  main { width:100%; max-width:640px; }
+  .brand { font-size:15px; color:var(--ink-soft); margin-bottom:24px; } .brand b { color:var(--navy); font-weight:700; }
+  h1 { font-size:26px; line-height:1.35; margin:0 0 8px; font-weight:700; letter-spacing:-0.01em; }
+  .sub { color:var(--ink-soft); font-size:15px; margin:0 0 22px; line-height:1.6; max-width:48ch; }
+  .card { background:#fffdf8; border:1px solid var(--line); border-radius:3px; padding:22px; }
+  textarea { width:100%; min-height:130px; resize:vertical; border:1px solid var(--line); border-radius:3px; background:#fff; padding:12px 14px; font-size:14px; line-height:1.6; color:var(--ink); font-family:inherit; outline:none; }
+  .hint { font-size:12px; color:#9a9285; margin-top:6px; line-height:1.6; }
+  .row { display:flex; flex-wrap:wrap; gap:10px 18px; align-items:center; font-size:13px; color:var(--ink-soft); margin:12px 0; }
+  .row label { display:flex; align-items:center; gap:6px; }
+  select { font-family:inherit; font-size:13px; padding:5px 8px; border:1px solid var(--line); border-radius:3px; background:#fff; max-width:220px; }
+  .btn { background:var(--navy); color:#fffdf8; border:none; border-radius:3px; padding:11px 22px; font-size:14px; font-weight:700; cursor:pointer; font-family:inherit; }
+  .btn:hover { background:var(--navy-deep); } .btn:disabled { opacity:.5; cursor:default; }
+  .btn-ghost { background:none; border:1px solid var(--line); border-radius:3px; padding:10px 16px; font-size:13px; color:var(--ink-soft); cursor:pointer; font-family:inherit; }
+  .btn-ghost:hover { background:var(--paper-deep); color:var(--ink); }
+  .btn-row { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+  .progress { display:flex; justify-content:space-between; font-size:13px; color:var(--ink-soft); margin-bottom:10px; }
+  .prompt { text-align:center; padding:14px 0 18px; }
+  .prompt .meaning { font-size:22px; font-weight:700; min-height:30px; }
+  .prompt .meta { font-size:13px; color:var(--ink-soft); margin-top:6px; }
+  .answer { width:100%; padding:14px; font-size:20px; border:1px solid var(--line); border-radius:3px; font-family:inherit; outline:none; background:#fff; text-align:center; letter-spacing:.05em; }
+  .answer:focus { border-color:var(--navy); }
+  .answer.ok { background:#dcecdf; border-color:#2f5d4e; } .answer.bad { background:#f3dcd6; border-color:#a8483a; }
+  .feedback { text-align:center; margin-top:10px; font-size:14px; min-height:20px; font-weight:600; }
+  .result-head { font-size:24px; font-weight:700; margin:0 0 6px; }
+  .result-sub { color:var(--ink-soft); font-size:14px; margin:0 0 18px; }
+  .missed { font-size:14px; line-height:1.9; }
+  .missed li b { color:#a8483a; }
+  .hidden { display:none; }
+  footer { margin-top:56px; font-size:12px; color:#a39a89; text-align:center; line-height:1.8; }
+</style>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2c3e5e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>abc</b> 스펠링 퀴즈 생성기</div>
+  <h1>내 단어 목록으로 철자 시험 보기</h1>
+  <p class="sub">단어 목록을 붙여넣으면 발음을 듣거나 뜻을 보고 철자를 입력하는 퀴즈가 만들어져요. 시험 전 마지막 점검에 좋아요.</p>
+
+  <div id="setup" class="card">
+    <textarea id="words" placeholder="한 줄에 하나씩
+apple, 사과
+opportunity, 기회
+environment"></textarea>
+    <div class="hint">"단어, 뜻" 형식이면 뜻이 문제로 표시되고, 단어만 있으면 발음만 들려드려요. 단어장 추출기에서 내려받은 CSV 내용을 그대로 붙여넣어도 됩니다.</div>
+    <div class="row">
+      <label>출제 방식
+        <select id="mode">
+          <option value="both">발음 + 뜻 (뜻 있을 때)</option>
+          <option value="audio">발음만</option>
+          <option value="meaning">뜻만 (발음 없음)</option>
+        </select>
+      </label>
+      <label>목소리 <select id="voiceSelect"></select></label>
+      <label><input type="checkbox" id="shuffle" checked> 순서 섞기</label>
+    </div>
+    <div class="btn-row"><button class="btn" id="startBtn">퀴즈 시작</button></div>
+  </div>
+
+  <div id="quiz" class="card hidden">
+    <div class="progress"><span id="progressText"></span><span id="scoreText"></span></div>
+    <div class="prompt">
+      <div class="meaning" id="meaning"></div>
+      <div class="meta" id="meta"></div>
+      <div class="btn-row" style="justify-content:center"><button class="btn-ghost" id="replayBtn">🔊 다시 듣기</button></div>
+    </div>
+    <input class="answer" id="answer" placeholder="철자를 입력하고 Enter" autocomplete="off" autocapitalize="off" spellcheck="false">
+    <div class="feedback" id="feedback"></div>
+    <div class="btn-row">
+      <button class="btn-ghost" id="skipBtn">모르겠어요 (정답 보기)</button>
+      <button class="btn-ghost" id="quitBtn">그만하기</button>
+    </div>
+  </div>
+
+  <div id="result" class="card hidden">
+    <div class="result-head" id="resultHead"></div>
+    <p class="result-sub" id="resultSub"></p>
+    <ul class="missed" id="missedList"></ul>
+    <div class="btn-row">
+      <button class="btn" id="retryMissed">틀린 단어만 다시</button>
+      <button class="btn-ghost" id="againBtn">전체 다시</button>
+      <button class="btn-ghost" id="backBtn">목록 수정</button>
+    </div>
+  </div>
+
+  <footer>발음은 브라우저 내장 영어 음성을 사용합니다. 채점은 대소문자를 구분하지 않아요.</footer>
+</main>
+
+<script>
+  const $ = id => document.getElementById(id);
+  const synth = window.speechSynthesis;
+  let voices = [], items = [], order = [], idx = 0, correct = 0, missed = [], answered = false;
+
+  function loadVoices() {
+    voices = synth ? synth.getVoices().filter(v => v.lang.toLowerCase().startsWith('en')) : [];
+    const sel = $('voiceSelect'); sel.innerHTML = '';
+    if (!voices.length) { sel.innerHTML = '<option value="">영어 음성 없음</option>'; return; }
+    voices.forEach(v => { const o = document.createElement('option'); o.value = v.name; o.textContent = `${v.name} (${v.lang})`; sel.appendChild(o); });
+    const pref = voices.find(v => /en[-_]US/i.test(v.lang)); if (pref) sel.value = pref.name;
+  }
+  if (synth) { loadVoices(); if ('onvoiceschanged' in synth) synth.onvoiceschanged = loadVoices; }
+
+  function speak(text) {
+    if (!synth || $('mode').value === 'meaning') return;
+    synth.cancel();
+    const u = new SpeechSynthesisUtterance(text); u.lang = 'en-US'; u.rate = 0.9;
+    const v = voices.find(x => x.name === $('voiceSelect').value); if (v) u.voice = v;
+    synth.speak(u);
+  }
+
+  function parse(text) {
+    return text.split('\n').map(l => l.trim()).filter(Boolean).map(l => {
+      const parts = l.split(/[,\t]/).map(s => s.trim().replace(/^"|"$/g, ''));
+      return { word: parts[0], meaning: parts.slice(1).filter(Boolean).join(', ') };
+    }).filter(it => /^[A-Za-z][A-Za-z' -]*$/.test(it.word));
+  }
+
+  function start(subset) {
+    if (!subset) {
+      items = parse($('words').value);
+      if (!items.length) { alert('영어 단어를 한 줄에 하나씩 입력해주세요.'); return; }
+    } else items = subset;
+    order = items.map((_, i) => i);
+    if ($('shuffle').checked) order.sort(() => Math.random() - 0.5);
+    idx = 0; correct = 0; missed = [];
+    $('setup').classList.add('hidden'); $('result').classList.add('hidden'); $('quiz').classList.remove('hidden');
+    show();
+    if (typeof gtag === 'function') gtag('event', 'spelling_quiz_started', { count: items.length, mode: $('mode').value });
+  }
+
+  function current() { return items[order[idx]]; }
+
+  function show() {
+    answered = false;
+    const it = current(), mode = $('mode').value;
+    $('progressText').textContent = `${idx + 1} / ${items.length}`;
+    $('scoreText').textContent = `정답 ${correct}`;
+    const showMeaning = it.meaning && mode !== 'audio';
+    $('meaning').textContent = showMeaning ? it.meaning : (mode === 'meaning' ? '(뜻 없음)' : '🔊');
+    $('meta').textContent = `${it.word.length}글자`;
+    $('replayBtn').style.display = mode === 'meaning' ? 'none' : '';
+    const a = $('answer'); a.value = ''; a.className = 'answer'; a.disabled = false; a.focus();
+    $('feedback').textContent = '';
+    setTimeout(() => speak(it.word), 250);
+  }
+
+  function norm(s) { return s.toLowerCase().replace(/[^a-z' -]/g, '').trim(); }
+
+  function submit(skip) {
+    if (answered) return;
+    answered = true;
+    const it = current(), a = $('answer');
+    const ok = !skip && norm(a.value) === norm(it.word);
+    a.disabled = true;
+    if (ok) { correct++; a.classList.add('ok'); $('feedback').textContent = '정답!'; $('feedback').style.color = '#2f5d4e'; }
+    else { a.classList.add('bad'); a.value = it.word; $('feedback').textContent = skip ? `정답: ${it.word}` : `틀렸어요 — 정답: ${it.word}`; $('feedback').style.color = '#a8483a'; missed.push(it); }
+    $('scoreText').textContent = `정답 ${correct}`;
+    setTimeout(() => { idx++; if (idx < items.length) show(); else finish(); }, ok ? 600 : 1300);
+  }
+
+  function finish() {
+    $('quiz').classList.add('hidden'); $('result').classList.remove('hidden');
+    $('resultHead').textContent = `${correct} / ${items.length} 정답`;
+    $('resultSub').textContent = missed.length ? '틀린 단어를 다시 풀어보세요.' : '전부 맞혔어요! 🎉';
+    $('missedList').innerHTML = missed.map(m => `<li><b>${m.word}</b>${m.meaning ? ' — ' + m.meaning : ''}</li>`).join('');
+    $('retryMissed').disabled = !missed.length;
+    if (typeof gtag === 'function') gtag('event', 'spelling_quiz_completed', { count: items.length, correct });
+  }
+
+  $('startBtn').addEventListener('click', () => start());
+  $('replayBtn').addEventListener('click', () => speak(current().word));
+  $('skipBtn').addEventListener('click', () => submit(true));
+  $('quitBtn').addEventListener('click', () => { synth && synth.cancel(); $('quiz').classList.add('hidden'); $('setup').classList.remove('hidden'); });
+  $('answer').addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); submit(false); } });
+  $('retryMissed').addEventListener('click', () => start(missed.slice()));
+  $('againBtn').addEventListener('click', () => start(parse($('words').value)));
+  $('backBtn').addEventListener('click', () => { $('result').classList.add('hidden'); $('setup').classList.remove('hidden'); });
+</script>
+
+</body>
+</html>

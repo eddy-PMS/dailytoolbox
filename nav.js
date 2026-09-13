@@ -5,6 +5,8 @@
   var GROUPS = [
     { label: '중국어', items: [
       ['pinyin.html', '병음 변환기'],
+      ['chinese-convert.html', '간체↔번체 변환'],
+      ['tone-drill.html', '성조 훈련'],
       ['hsk-test.html', 'HSK 레벨 테스트']
     ]},
     { label: '일본어', items: [
@@ -16,10 +18,14 @@
       ['ipa.html', 'IPA 발음 변환'],
       ['level-test.html', '영어 레벨 테스트'],
       ['readability.html', '지문 난이도 체커'],
-      ['etymology.html', '어원 분석기']
+      ['etymology.html', '어원 분석기'],
+      ['irregular-verbs.html', '불규칙동사 표·퀴즈'],
+      ['cloze.html', '빈칸 문제 생성기'],
+      ['spelling-quiz.html', '스펠링 퀴즈']
     ]},
     { label: '공통', items: [
       ['tts.html', '발음 듣기'],
+      ['dictation.html', '받아쓰기 연습'],
       ['wordlist.html', '단어장 추출기'],
       ['stroke-order.html', '한자 획순']
     ]}

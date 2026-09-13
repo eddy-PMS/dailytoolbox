@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>영어 빈칸 문제 생성기 - 지문으로 빈칸 채우기 연습 만들기 무료</title>
+<meta name="description" content="영어 문장이나 지문을 붙여넣으면 핵심 단어를 빈칸으로 바꿔 암기 문제를 만들어주는 무료 도구. 바로 풀고 채점까지.">
+<meta name="keywords" content="빈칸 문제 만들기, cloze test, 영어 빈칸 채우기, 문장 암기, 영어 지문 연습">
+<link rel="canonical" href="https://dailyfreetoolbox.com/cloze.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="영어 빈칸 문제 생성기">
+<meta property="og:description" content="지문을 붙여넣으면 빈칸 채우기 문제를 자동으로 만들어주는 무료 도구">
+<meta property="og:url" content="https://dailyfreetoolbox.com/cloze.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"영어 빈칸 문제 생성기","url":"https://dailyfreetoolbox.com/cloze.html","applicationCategory":"EducationalApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"},"description":"지문을 붙여넣으면 빈칸 채우기 문제를 자동으로 만들어주는 무료 도구"}
+</script>
+<script src="common.js"></script>
+<style>
+  :root { --paper:#f1eee5; --paper-deep:#e7e2d2; --ink:#201d19; --ink-soft:#56514a; --forest:#2f5d4e; --forest-deep:#22453a; --line:#d9d1bd; }
+  * { box-sizing:border-box; }
+  html, body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif; }
+  body { min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:48px 20px 80px; }
+  main { width:100%; max-width:680px; }
+  .brand { font-size:15px; color:var(--ink-soft); margin-bottom:24px; } .brand b { color:var(--forest); font-weight:700; }
+  h1 { font-size:26px; line-height:1.35; margin:0 0 8px; font-weight:700; letter-spacing:-0.01em; }
+  .sub { color:var(--ink-soft); font-size:15px; margin:0 0 22px; line-height:1.6; max-width:52ch; }
+  .card { background:#fffdf8; border:1px solid var(--line); border-radius:3px; padding:22px; margin-bottom:16px; }
+  textarea { width:100%; min-height:150px; resize:vertical; border:1px solid var(--line); border-radius:3px; background:#fff; padding:14px; font-size:15px; line-height:1.7; color:var(--ink); font-family:inherit; outline:none; }
+  .row { display:flex; flex-wrap:wrap; gap:10px 18px; align-items:center; font-size:13px; color:var(--ink-soft); margin:12px 0; }
+  .row label { display:flex; align-items:center; gap:6px; }
+  input[type="number"], select { font-family:inherit; font-size:13px; padding:4px 8px; border:1px solid var(--line); border-radius:3px; background:#fff; color:var(--ink); }
+  input[type="number"] { width:64px; }
+  .btn { background:var(--forest); color:#fffdf8; border:none; border-radius:3px; padding:11px 22px; font-size:14px; font-weight:700; cursor:pointer; font-family:inherit; }
+  .btn:hover { background:var(--forest-deep); }
+  .btn-ghost { background:none; border:1px solid var(--line); border-radius:3px; padding:10px 16px; font-size:13px; color:var(--ink-soft); cursor:pointer; font-family:inherit; }
+  .btn-ghost:hover { background:var(--paper-deep); color:var(--ink); }
+  .btn-row { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+  .cloze { font-size:17px; line-height:2.3; word-break:break-word; }
+  .cloze input { display:inline-block; width:var(--w, 90px); min-width:60px; padding:2px 8px; margin:0 2px; border:none; border-bottom:2px solid var(--forest); background:var(--paper); font-size:16px; font-family:inherit; color:var(--ink); text-align:center; outline:none; vertical-align:baseline; }
+  .cloze input:focus { background:#fff; }
+  .cloze input.ok { border-bottom-color:#2f5d4e; background:#dcecdf; }
+  .cloze input.bad { border-bottom-color:#a8483a; background:#f3dcd6; }
+  .cloze .reveal { color:#a8483a; font-size:12px; margin-left:3px; }
+  .cloze .hint-letter { color:var(--ink-soft); font-size:12px; margin-right:2px; }
+  .score-line { margin-top:14px; font-size:15px; font-weight:700; }
+  .empty { border:1px dashed var(--line); border-radius:3px; padding:28px; text-align:center; color:#a39a89; font-size:14px; }
+  .hidden { display:none; }
+  footer { margin-top:56px; font-size:12px; color:#a39a89; text-align:center; line-height:1.8; }
+  @media print { nav, .no-print, footer { display:none !important; } body { padding:0; } .cloze input { border-bottom:1px solid #000; background:none; } }
+</style>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f5d4e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>___</b> 빈칸 문제 생성기</div>
+  <h1>지문을 붙여넣으면, 외울 단어가 빈칸이 돼요</h1>
+  <p class="sub">기초 단어는 놔두고 핵심 단어만 빈칸으로 바꿔줍니다. 바로 풀고 채점하거나, 인쇄해서 학습지로 써도 좋아요.</p>
+
+  <div class="card no-print">
+    <textarea id="input" placeholder="영어 문장이나 지문을 붙여넣으세요 (한글은 지원하지 않아요)" spellcheck="false"></textarea>
+    <div class="row">
+      <label>빈칸 비율 <select id="ratio"><option value="0.15">적게 (15%)</option><option value="0.25" selected>보통 (25%)</option><option value="0.4">많이 (40%)</option></select></label>
+      <label>최소 글자 수 <input type="number" id="minLen" value="4" min="2" max="12"></label>
+      <label><input type="checkbox" id="firstLetter"> 첫 글자 힌트 표시</label>
+      <label><input type="checkbox" id="skipStop" checked> 기초 단어는 빈칸에서 제외</label>
+    </div>
+    <div class="btn-row">
+      <button class="btn" id="genBtn">문제 만들기</button>
+      <button class="btn-ghost" id="reshuffleBtn">다른 단어로 다시</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div id="out"><div class="empty">지문을 입력하고 "문제 만들기"를 눌러주세요</div></div>
+    <div class="btn-row no-print hidden" id="actions">
+      <button class="btn" id="checkBtn">채점하기</button>
+      <button class="btn-ghost" id="revealBtn">정답 보기</button>
+      <button class="btn-ghost" id="printBtn">인쇄하기</button>
+    </div>
+    <div class="score-line" id="scoreLine"></div>
+  </div>
+
+  <footer>단어 선택은 무작위이며, 채점은 대소문자와 구두점을 무시하고 비교합니다.</footer>
+</main>
+
+<script>
+  const STOP = new Set(('a an the and or but if then so of to in on at by for with from as is are was were be been being am do does did have has had not no it its this that these those there here he she they them his her their we us our you your i me my who whom which what when where why how all any some each every both few more most other such only own same than too very can could will would shall should may might must just also about into over under again once up down out off').split(' '));
+  const $ = id => document.getElementById(id);
+  let blanks = []; // {answer, el}
+
+  function generate() {
+    const text = $('input').value.trim();
+    if (!text) { $('out').innerHTML = '<div class="empty">지문을 먼저 입력해주세요</div>'; $('actions').classList.add('hidden'); return; }
+    const ratio = parseFloat($('ratio').value), minLen = parseInt($('minLen').value, 10) || 3;
+    const tokens = text.split(/(\s+)/);
+    const candidates = [];
+    tokens.forEach((tok, i) => {
+      const core = tok.replace(/^[^A-Za-z']+|[^A-Za-z']+$/g, '');
+      if (!/^[A-Za-z][A-Za-z']*$/.test(core)) return;
+      if (core.length < minLen) return;
+      if ($('skipStop').checked && STOP.has(core.toLowerCase())) return;
+      candidates.push(i);
+    });
+    if (!candidates.length) { $('out').innerHTML = '<div class="empty">빈칸으로 만들 만한 단어가 없어요. 최소 글자 수를 줄여보세요.</div>'; $('actions').classList.add('hidden'); return; }
+    const want = Math.max(1, Math.round(candidates.length * ratio));
+    const chosen = new Set(candidates.sort(() => Math.random() - 0.5).slice(0, want));
+    blanks = [];
+    let n = 0;
+    const html = tokens.map((tok, i) => {
+      if (!chosen.has(i)) return escapeHtml(tok);
+      const m = tok.match(/^([^A-Za-z']*)([A-Za-z][A-Za-z']*)([^A-Za-z']*)$/);
+      const [_, pre, core, post] = m;
+      n++;
+      const hint = $('firstLetter').checked ? `<span class="hint-letter">${escapeHtml(core[0])}</span>` : '';
+      return `${escapeHtml(pre)}${hint}<input data-i="${n - 1}" data-ans="${escapeHtml(core)}" style="--w:${Math.max(60, core.length * 11 + 24)}px" autocomplete="off" autocapitalize="off" spellcheck="false">${escapeHtml(post)}`;
+    }).join('').replace(/\n/g, '<br>');
+    $('out').innerHTML = `<div class="cloze">${html}</div>`;
+    blanks = [...$('out').querySelectorAll('input')].map(el => ({ el, answer: el.dataset.ans }));
+    $('actions').classList.remove('hidden'); $('scoreLine').textContent = '';
+    if (typeof gtag === 'function') gtag('event', 'cloze_generated', { blanks: blanks.length, words: candidates.length });
+  }
+
+  function norm(s) { return s.toLowerCase().replace(/[^a-z']/g, ''); }
+
+  function check() {
+    let ok = 0;
+    blanks.forEach(b => {
+      const right = norm(b.el.value) === norm(b.answer);
+      b.el.classList.toggle('ok', right); b.el.classList.toggle('bad', !right);
+      if (right) ok++;
+    });
+    $('scoreLine').textContent = `${ok} / ${blanks.length} 정답 (${Math.round(ok / blanks.length * 100)}%)`;
+    if (typeof gtag === 'function') gtag('event', 'cloze_checked', { blanks: blanks.length, correct: ok });
+  }
+
+  function reveal() {
+    blanks.forEach(b => { if (norm(b.el.value) !== norm(b.answer)) { b.el.value = b.answer; b.el.classList.remove('bad'); b.el.classList.add('ok'); } });
+  }
+
+  function escapeHtml(s) { return s.replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c])); }
+
+  $('genBtn').addEventListener('click', generate);
+  $('reshuffleBtn').addEventListener('click', generate);
+  $('checkBtn').addEventListener('click', check);
+  $('revealBtn').addEventListener('click', reveal);
+  $('printBtn').addEventListener('click', () => window.print());
+</script>
+
+</body>
+</html>

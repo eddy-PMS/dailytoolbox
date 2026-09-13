@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>영어 발음기호 IPA 변환기 - 한글 발음 표기 무료 도구</title>
+<meta name="description" content="영어 단어를 입력하면 IPA 발음기호와 한글 발음 표기를 함께 보여주는 무료 변환기입니다.">
+<meta name="keywords" content="IPA 변환기, 영어 발음기호, 영어 발음 한글표기, 발음기호 읽는법">
+<link rel="canonical" href="https://dailytoolbox.chchddr.workers.dev/ipa.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="영어 발음기호 IPA 변환기">
+<meta property="og:description" content="영어 단어를 입력하면 IPA 발음기호와 한글 발음 표기를 함께 보여주는 무료 변환기">
+<meta property="og:url" content="https://dailytoolbox.chchddr.workers.dev/ipa.html">
+<meta property="og:locale" content="ko_KR">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "영어 발음기호 IPA 변환기",
+  "url": "https://dailytoolbox.chchddr.workers.dev/ipa.html",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "description": "영어 단어를 입력하면 IPA 발음기호와 한글 발음 표기를 함께 보여주는 무료 변환기"
+}
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8WYH7KGCP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z8WYH7KGCP');
+</script>
+
+<style>
+  :root {
+    --paper: #f0eee7;
+    --paper-deep: #e6e2d6;
+    --ink: #1e1d1b;
+    --ink-soft: #56534c;
+    --navy: #2c3e5e;
+    --navy-deep: #202d45;
+    --burgundy: #8c3a3a;
+    --line: #d6d0bf;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px 80px;
+  }
+
+  .site-nav {
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    gap: 4px;
+    margin-bottom: 28px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+
+  .site-nav a {
+    font-size: 13px;
+    color: var(--ink-soft);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+
+  .site-nav a:hover { background: var(--paper-deep); color: var(--ink); }
+  .site-nav a.active { background: var(--navy); color: #fffdf8; }
+
+  main { width: 100%; max-width: 640px; }
+
+  .brand { font-size: 15px; color: var(--ink-soft); margin-bottom: 24px; }
+  .brand b { color: var(--navy); font-weight: 700; }
+
+  h1 {
+    font-size: 26px;
+    line-height: 1.35;
+    margin: 0 0 8px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .sub {
+    color: var(--ink-soft);
+    font-size: 15px;
+    margin: 0 0 28px;
+    line-height: 1.6;
+    max-width: 48ch;
+  }
+
+  .input-wrap {
+    display: flex;
+    gap: 10px;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    background: #fffdf8;
+    padding: 6px;
+  }
+
+  input[type="text"] {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 12px 14px;
+    font-size: 18px;
+    color: var(--ink);
+    font-family: inherit;
+    outline: none;
+  }
+
+  input[type="text"]::placeholder { color: #b3ab9c; font-size: 15px; }
+
+  .go-btn {
+    background: var(--navy);
+    color: #fffdf8;
+    border: none;
+    border-radius: 3px;
+    padding: 0 22px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+
+  .go-btn:hover { background: var(--navy-deep); }
+
+  .status-line {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #a39a89;
+  }
+
+  .result-section { margin-top: 30px; }
+
+  .result-label {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .result-label::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+  .empty-state {
+    border: 1px dashed var(--line);
+    border-radius: 3px;
+    padding: 32px 20px;
+    text-align: center;
+    color: #a39a89;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .word-list { display: flex; flex-direction: column; gap: 10px; }
+
+  .word-row {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    background: #fffdf8;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 14px 18px;
+    flex-wrap: wrap;
+  }
+
+  .word-row .word {
+    font-size: 17px;
+    font-weight: 700;
+    min-width: 90px;
+  }
+
+  .word-row .ipa {
+    font-size: 17px;
+    color: var(--navy);
+    font-family: "Doulos SIL", "Charis SIL", serif;
+  }
+
+  .word-row .hangul {
+    font-size: 15px;
+    color: var(--burgundy);
+    font-weight: 600;
+  }
+
+  .word-row.not-found .word { color: var(--ink-soft); }
+  .word-row.not-found .hint { font-size: 13px; color: #a39a89; }
+
+  footer {
+    margin-top: 56px;
+    font-size: 12px;
+    color: #a39a89;
+    text-align: center;
+    line-height: 1.8;
+  }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html">병음 변환기</a>
+  <a href="furigana.html">후리가나 표시기</a>
+  <a href="stroke-order.html">한자 획순</a>
+  <a href="ipa.html" class="active">IPA 발음 변환</a>
+</nav>
+
+<main>
+  <div class="brand"><b>IPA</b> · 영어 발음기호 변환기</div>
+  <h1>영어 발음기호(IPA) ↔ 한글 표기 변환기</h1>
+  <p class="sub">영어 단어를 입력하면 정확한 IPA 발음기호와, 참고용 한글 발음 표기를 함께 보여드려요.</p>
+
+  <div class="input-wrap">
+    <input type="text" id="input" placeholder="예) apple banana computer" maxlength="80">
+    <button class="go-btn" id="goBtn">변환</button>
+  </div>
+  <div class="status-line" id="status">발음사전을 불러오는 중이에요…</div>
+
+  <div class="result-section">
+    <div class="result-label">변환 결과</div>
+    <div id="result">
+      <div class="empty-state">위 칸에 영어 단어를 입력하고 "변환"을 눌러주세요<br>여러 단어를 띄어써서 한 번에 입력해도 됩니다</div>
+    </div>
+  </div>
+
+  <footer>
+    IPA 발음기호는 오픈소스 사전(ipa-dict, 미국식 발음 기준)에서 가져옵니다.<br>
+    한글 발음 표기는 규칙 기반 간이 변환으로, 실제 국립국어원 외래어 표기법과 다를 수 있어요. 정확한 발음은 IPA를 기준으로 참고해주세요.
+  </footer>
+</main>
+
+<script>
+  const input = document.getElementById('input');
+  const goBtn = document.getElementById('goBtn');
+  const result = document.getElementById('result');
+  const status = document.getElementById('status');
+
+  let dict = null;
+
+  fetch('https://cdn.jsdelivr.net/gh/open-dict-data/ipa-dict@master/data/en_US.txt')
+    .then(r => r.text())
+    .then(text => {
+      dict = new Map();
+      const lines = text.split('\n');
+      for (const line of lines) {
+        const tab = line.indexOf('\t');
+        if (tab === -1) continue;
+        const word = line.slice(0, tab).trim();
+        const ipaRaw = line.slice(tab + 1).trim();
+        const first = ipaRaw.split(',')[0].trim().replace(/^\//, '').replace(/\/$/, '');
+        if (word) dict.set(word.toLowerCase(), first);
+      }
+      status.textContent = `준비 완료! (${dict.size.toLocaleString()}개 단어)`;
+      setTimeout(() => { status.textContent = ''; }, 2000);
+    })
+    .catch(() => {
+      status.textContent = '발음사전을 불러오지 못했어요. 새로고침 후 다시 시도해주세요.';
+    });
+
+  // ---- IPA → 한글 간이 변환 로직 ----
+
+  const CHO = ['ㄱ','ㄲ','ㄴ','ㄷ','ㄸ','ㄹ','ㅁ','ㅂ','ㅃ','ㅅ','ㅆ','ㅇ','ㅈ','ㅉ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
+  const JUNG = ['ㅏ','ㅐ','ㅑ','ㅒ','ㅓ','ㅔ','ㅕ','ㅖ','ㅗ','ㅘ','ㅙ','ㅚ','ㅛ','ㅜ','ㅝ','ㅞ','ㅟ','ㅠ','ㅡ','ㅢ','ㅣ'];
+  const JONG = ['','ㄱ','ㄲ','ㄳ','ㄴ','ㄵ','ㄶ','ㄷ','ㄹ','ㄺ','ㄻ','ㄼ','ㄽ','ㄾ','ㄿ','ㅀ','ㅁ','ㅂ','ㅄ','ㅅ','ㅆ','ㅇ','ㅈ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
+
+  function composeSyllable(cho, jung, jong) {
+    const ci = CHO.indexOf(cho), ji = JUNG.indexOf(jung), ki = JONG.indexOf(jong || '');
+    if (ci < 0 || ji < 0 || ki < 0) return (cho || '') + (jung || '') + (jong || '');
+    return String.fromCharCode(0xAC00 + (ci * 21 + ji) * 28 + ki);
+  }
+
+  const VOWELS = new Set(['i','ɪ','e','ɛ','æ','ɑ','ɒ','ʌ','ə','ɜ','ɔ','o','u','ʊ']);
+  const DIPHTHONGS = { 'eɪ': ['e','ɪ'], 'aɪ': ['ɑ','ɪ'], 'ɔɪ': ['ɔ','ɪ'], 'aʊ': ['ɑ','ʊ'], 'oʊ': ['o'] };
+  const RCOLORED = { 'ɪr':'ɪ','ɛr':'ɛ','ɑr':'ɑ','ɔr':'ɔ','ʊr':'ʊ','ɜr':'ɜ','ɝ':'ɜ','ɚ':'ə' };
+  const MULTI = ['tʃ','dʒ','eɪ','aɪ','ɔɪ','aʊ','oʊ','ɪr','ɛr','ɑr','ɔr','ʊr','ɜr'];
+
+  const VOWEL_JUNG = { i:'ㅣ',ɪ:'ㅣ',e:'ㅔ',ɛ:'ㅔ',æ:'ㅐ',ɑ:'ㅏ',ɒ:'ㅏ',ʌ:'ㅓ',ə:'ㅓ',ɜ:'ㅓ',ɔ:'ㅗ',o:'ㅗ',u:'ㅜ',ʊ:'ㅜ' };
+  const ONSET = { p:'ㅍ',b:'ㅂ',t:'ㅌ',d:'ㄷ',k:'ㅋ',g:'ㄱ',f:'ㅍ',v:'ㅂ',θ:'ㅅ',ð:'ㄷ',s:'ㅅ',z:'ㅈ',ʃ:'ㅅ',ʒ:'ㅈ','tʃ':'ㅊ','dʒ':'ㅈ',h:'ㅎ',m:'ㅁ',n:'ㄴ',ŋ:'ㅇ',l:'ㄹ',r:'ㄹ',ㅇ:'ㅇ' };
+  const CODA_OK = { p:'ㅂ',t:'ㅅ',k:'ㄱ',m:'ㅁ',n:'ㄴ',ŋ:'ㅇ',l:'ㄹ' };
+  const J_JUNG = { i:'ㅣ',ɪ:'ㅣ',e:'ㅖ',ɛ:'ㅖ',æ:'ㅒ',ɑ:'ㅑ',ʌ:'ㅕ',ə:'ㅕ',ɔ:'ㅛ',o:'ㅛ',u:'ㅠ',ʊ:'ㅠ' };
+  const W_JUNG = { ɑ:'ㅘ',æ:'ㅙ',ɛ:'ㅞ',e:'ㅞ',i:'ㅟ',ʌ:'ㅝ',ə:'ㅝ',ɔ:'ㅝ',o:'ㅝ',u:'ㅜ',ʊ:'ㅜ' };
+
+  function tokenizeIpa(ipa) {
+    const s = ipa.replace(/[\/ˈˌːˑ.\s]/g, '');
+    const tokens = [];
+    let i = 0;
+    outer: while (i < s.length) {
+      for (const m of MULTI) {
+        if (s.startsWith(m, i)) { tokens.push(m); i += m.length; continue outer; }
+      }
+      tokens.push(s[i]); i += 1;
+    }
+    return tokens;
+  }
+
+  // 토큰을 V(모음, 글라이드 결합 포함) / C(자음) 시퀀스로 정규화
+  function classify(tokens) {
+    const out = [];
+    for (let i = 0; i < tokens.length; i++) {
+      const t = tokens[i];
+      if (t in RCOLORED) { out.push({ type:'V', sym: RCOLORED[t] }); continue; }
+      if (t in DIPHTHONGS) { for (const v of DIPHTHONGS[t]) out.push({ type:'V', sym: v }); continue; }
+      if (VOWELS.has(t)) { out.push({ type:'V', sym: t }); continue; }
+      if (t === 'j' || t === 'w') {
+        const next = tokens[i+1];
+        let nv = next;
+        if (next in RCOLORED) nv = RCOLORED[next];
+        else if (next in DIPHTHONGS) nv = DIPHTHONGS[next][0];
+        if (nv && VOWELS.has(nv)) {
+          out.push({ type:'V', sym: (t === 'j' ? 'j:' : 'w:') + nv });
+          i++;
+          continue;
+        }
+        out.push({ type:'C', sym: 'ㅇ' });
+        continue;
+      }
+      out.push({ type:'C', sym: t });
+    }
+    return out;
+  }
+
+  function jungFor(sym) {
+    if (sym.startsWith('j:')) return J_JUNG[sym.slice(2)] || 'ㅣ';
+    if (sym.startsWith('w:')) return W_JUNG[sym.slice(2)] || 'ㅜ';
+    return VOWEL_JUNG[sym] || 'ㅡ';
+  }
+
+  function epenthesis(consonantSym) {
+    const onset = ONSET[consonantSym] || 'ㅇ';
+    return composeSyllable(onset, 'ㅡ', '');
+  }
+
+  function ipaToHangul(ipa) {
+    const seq = classify(tokenizeIpa(ipa));
+    const vowelIdx = [];
+    seq.forEach((tok, i) => { if (tok.type === 'V') vowelIdx.push(i); });
+    if (vowelIdx.length === 0) return '';
+
+    const syllables = [];
+    let carryOnset = null; // 다음 모음에 붙을 확정된 onset 자음(간이자음)
+
+    // 첫 모음 이전 자음 처리
+    const leading = seq.slice(0, vowelIdx[0]).map(t => t.sym);
+    if (leading.length === 0) {
+      carryOnset = 'ㅇ';
+    } else {
+      for (let k = 0; k < leading.length - 1; k++) syllables.push(epenthesis(leading[k]));
+      carryOnset = ONSET[leading[leading.length - 1]] || 'ㅇ';
+    }
+
+    for (let vi = 0; vi < vowelIdx.length; vi++) {
+      const idx = vowelIdx[vi];
+      const jung = jungFor(seq[idx].sym);
+      const nextVowelIdx = vowelIdx[vi + 1];
+      const runEnd = nextVowelIdx !== undefined ? nextVowelIdx : seq.length;
+      const run = seq.slice(idx + 1, runEnd).map(t => t.sym);
+
+      let jong = '';
+      if (nextVowelIdx !== undefined) {
+        if (run.length === 0) {
+          // onset 없음, 그대로 다음 모음도 carryOnset='ㅇ'
+          syllables.push(composeSyllable(carryOnset, jung, ''));
+          carryOnset = 'ㅇ';
+        } else if (run.length === 1) {
+          syllables.push(composeSyllable(carryOnset, jung, ''));
+          carryOnset = ONSET[run[0]] || 'ㅇ';
+        } else {
+          syllables.push(composeSyllable(carryOnset, jung, ''));
+          const first = run[0];
+          if (CODA_OK[first]) {
+            // 직전 음절에 받침으로 재구성
+            const last = syllables.pop();
+            // 직전 음절을 다시 구성: cho/jung은 그대로, jong만 추가
+            syllables.push(composeSyllable(carryOnset, jung, CODA_OK[first]));
+          } else {
+            syllables.push(epenthesis(first));
+          }
+          for (let k = 1; k < run.length - 1; k++) syllables.push(epenthesis(run[k]));
+          carryOnset = ONSET[run[run.length - 1]] || 'ㅇ';
+        }
+      } else {
+        // 마지막 모음: run은 단어 끝 자음군
+        if (run.length === 0) {
+          syllables.push(composeSyllable(carryOnset, jung, ''));
+        } else if (run.length === 1 && CODA_OK[run[0]]) {
+          syllables.push(composeSyllable(carryOnset, jung, CODA_OK[run[0]]));
+        } else {
+          syllables.push(composeSyllable(carryOnset, jung, ''));
+          for (const c of run) syllables.push(epenthesis(c));
+        }
+      }
+    }
+
+    return syllables.join('');
+  }
+
+  function trackUsage(count) {
+    if (typeof gtag === 'function') {
+      gtag('event', 'ipa_convert_used', { word_count: count });
+    }
+  }
+
+  function render() {
+    const raw = input.value.trim();
+    if (!raw) {
+      result.innerHTML = '<div class="empty-state">위 칸에 영어 단어를 입력하고 "변환"을 눌러주세요<br>여러 단어를 띄어써서 한 번에 입력해도 됩니다</div>';
+      return;
+    }
+
+    if (!dict) {
+      result.innerHTML = '<div class="empty-state">발음사전을 아직 불러오는 중이에요…</div>';
+      return;
+    }
+
+    const words = raw.toLowerCase().split(/\s+/).filter(Boolean);
+    const rows = words.map(w => {
+      const clean = w.replace(/[^a-z'-]/g, '');
+      const ipa = dict.get(clean);
+      if (!ipa) {
+        return `<div class="word-row not-found"><span class="word">${w}</span><span class="hint">사전에서 찾을 수 없어요</span></div>`;
+      }
+      let hangul = '';
+      try { hangul = ipaToHangul(ipa); } catch (e) { hangul = ''; }
+      return `<div class="word-row"><span class="word">${w}</span><span class="ipa">/${ipa}/</span>${hangul ? `<span class="hangul">${hangul}</span>` : ''}</div>`;
+    });
+
+    result.innerHTML = `<div class="word-list">${rows.join('')}</div>`;
+    trackUsage(words.length);
+  }
+
+  goBtn.addEventListener('click', render);
+  input.addEventListener('keydown', (e) => { if (e.key === 'Enter') render(); });
+</script>
+
+</body>
+</html>

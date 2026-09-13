@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>중국어 병음 변환기 - 한자 발음 성조 표기 무료 도구</title>
+<meta name="description" content="한자를 입력하면 글자마다 병음과 성조를 바로 확인할 수 있는 무료 변환기. 중국어 발음, HSK 학습에 유용합니다.">
+<meta name="keywords" content="병음 변환기, 중국어 병음, 한자 발음, 병음 성조, pinyin converter, HSK 발음">
+<link rel="canonical" href="https://dailyfreetoolbox.com/pinyin.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="중국어 병음 변환기 - 한자 발음 성조 표기 무료 도구">
+<meta property="og:description" content="한자를 입력하면 글자마다 병음과 성조를 바로 확인할 수 있는 무료 변환기입니다.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/pinyin.html">
+<meta property="og:locale" content="ko_KR">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="중국어 병음 변환기">
+<meta name="twitter:description" content="한자 입력하면 병음과 성조를 바로 확인하는 무료 도구">
+
+<!-- 구조화 데이터: 검색엔진에 '웹 도구'임을 명시 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "중국어 병음 변환기",
+  "url": "https://dailyfreetoolbox.com/pinyin.html",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "KRW"
+  },
+  "description": "한자를 입력하면 병음과 성조를 바로 확인할 수 있는 무료 변환기"
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3.19.6/dist/index.js"></script>
+
+<!-- Google Analytics 4: 방문자 수 + 기능 사용(변환 실행) 이벤트 추적 -->
+<script src="common.js"></script>
+<style>
+  @font-face {
+    font-family: 'system-cjk';
+    src: local('Noto Sans KR');
+  }
+
+  :root {
+    --paper: #f3ede1;
+    --paper-deep: #ece3d3;
+    --ink: #201d1a;
+    --ink-soft: #55504a;
+    --seal: #a83a2c;
+    --seal-deep: #8a2f23;
+    --gold: #b8923f;
+    --line: #d9cfba;
+    --tone1: #a83a2c;
+    --tone2: #b8923f;
+    --tone3: #3f6b52;
+    --tone4: #3a5a8a;
+    --tone0: #837c70;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px 80px;
+  }
+
+  .brand {
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 36px;
+  }
+
+  .brand-mark {
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    color: var(--ink-soft);
+  }
+
+  .brand-mark b {
+    color: var(--seal);
+    font-weight: 700;
+  }
+
+  main {
+    width: 100%;
+    max-width: 640px;
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 1.35;
+    margin: 0 0 8px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  h1 .cjk {
+    font-size: 34px;
+    color: var(--seal);
+    margin-right: 10px;
+  }
+
+  .sub {
+    color: var(--ink-soft);
+    font-size: 15px;
+    margin: 0 0 32px;
+    line-height: 1.6;
+    max-width: 46ch;
+  }
+
+  .input-wrap {
+    position: relative;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    background: #fffdf8;
+    box-shadow: 0 1px 0 rgba(32,29,26,0.03);
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 96px;
+    resize: vertical;
+    border: none;
+    background: transparent;
+    padding: 18px 20px;
+    font-size: 22px;
+    line-height: 1.6;
+    color: var(--ink);
+    font-family: inherit;
+    outline: none;
+  }
+
+  textarea::placeholder {
+    color: #b3ab9c;
+    font-size: 18px;
+  }
+
+  .input-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 12px;
+    font-size: 12px;
+    color: #a39a89;
+  }
+
+  .clear-btn {
+    background: none;
+    border: none;
+    color: var(--ink-soft);
+    font-size: 13px;
+    cursor: pointer;
+    padding: 4px 8px;
+  }
+
+  .clear-btn:hover { color: var(--seal); }
+
+  .result-section {
+    margin-top: 40px;
+  }
+
+  .result-label {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .result-label::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+  }
+
+  .empty-state {
+    border: 1px dashed var(--line);
+    border-radius: 3px;
+    padding: 32px 20px;
+    text-align: center;
+    color: #a39a89;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .char-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 4px;
+  }
+
+  .char-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 46px;
+    padding: 10px 4px 8px;
+    border-radius: 3px;
+    transition: background 0.15s ease;
+  }
+
+  .char-block:hover { background: var(--paper-deep); }
+
+  .char-block .py {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    white-space: nowrap;
+  }
+
+  .char-block .hz {
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .char-block.punct .py { visibility: hidden; }
+  .char-block.punct .hz { color: var(--ink-soft); }
+
+  .tone-1 { color: var(--tone1); }
+  .tone-2 { color: var(--tone2); }
+  .tone-3 { color: var(--tone3); }
+  .tone-4 { color: var(--tone4); }
+  .tone-0 { color: var(--tone0); }
+
+  .plain-line {
+    margin-top: 24px;
+    padding: 16px 18px;
+    background: var(--paper-deep);
+    border-radius: 3px;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    color: var(--ink-soft);
+  }
+
+  .plain-line b {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .legend {
+    margin-top: 48px;
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: var(--ink-soft);
+  }
+
+  .legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .legend i {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  footer {
+    margin-top: 64px;
+    font-size: 12px;
+    color: #a39a89;
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  footer a {
+    color: var(--seal);
+    text-decoration: none;
+  }
+
+
+
+
+</style>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#a83a2c"></nav>
+<script src="nav.js"></script>
+
+<div class="brand">
+  <div class="brand-mark"><b>拼</b>音 · 병음 변환기</div>
+</div>
+
+<main>
+  <h1><span class="cjk">拼音</span>한자 병음 변환기</h1>
+  <p class="sub">한자를 입력하면 글자마다 병음과 성조를 바로 보여드려요. 문장을 통째로 붙여넣어도 됩니다.</p>
+
+  <div class="input-wrap">
+    <textarea id="input" placeholder="예) 你好，我是韩国人。" spellcheck="false"></textarea>
+    <div class="input-foot">
+      <span id="charCount">0자</span>
+      <button class="clear-btn" id="clearBtn">지우기</button>
+    </div>
+  </div>
+
+  <div class="result-section">
+    <div class="result-label">변환 결과</div>
+    <div id="result">
+      <div class="empty-state">위 칸에 한자를 입력하면<br>여기에 병음이 표시됩니다</div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <span><i style="background:var(--tone1)"></i>1성</span>
+    <span><i style="background:var(--tone2)"></i>2성</span>
+    <span><i style="background:var(--tone3)"></i>3성</span>
+    <span><i style="background:var(--tone4)"></i>4성</span>
+    <span><i style="background:var(--tone0)"></i>경성</span>
+  </div>
+
+  <footer>
+    성조 표기는 pinyin-pro 사전 데이터를 기준으로 합니다. 다음자(여러 발음 한자)는 문맥에 따라 다르게 표시될 수 있어요.
+  </footer>
+</main>
+
+<script>
+  const input = document.getElementById('input');
+  const result = document.getElementById('result');
+  const charCount = document.getElementById('charCount');
+  const clearBtn = document.getElementById('clearBtn');
+
+  function toneClass(pyWithTone) {
+    const toneMarks = {
+      1: 'āēīōūǖ',
+      2: 'áéíóúǘ',
+      3: 'ǎěǐǒǔǚ',
+      4: 'àèìòùǜ'
+    };
+    for (const t of [1,2,3,4]) {
+      for (const ch of toneMarks[t]) {
+        if (pyWithTone.includes(ch)) return 'tone-' + t;
+      }
+    }
+    if (/\d/.test(pyWithTone)) {
+      const m = pyWithTone.match(/[1-4]/);
+      if (m) return 'tone-' + m[0];
+    }
+    return 'tone-0';
+  }
+
+  function isCJK(ch) {
+    return /[\u4e00-\u9fff]/.test(ch);
+  }
+
+  function render() {
+    const text = input.value;
+    charCount.textContent = text.length + '자';
+
+    if (!text.trim()) {
+      result.innerHTML = '<div class="empty-state">위 칸에 한자를 입력하면<br>여기에 병음이 표시됩니다</div>';
+      return;
+    }
+
+    let html = '<div class="char-grid">';
+    let plain = '';
+
+    for (const ch of text) {
+      if (isCJK(ch)) {
+        let py = '';
+        try {
+          py = pinyinPro.pinyin(ch, { toneType: 'symbol' });
+        } catch (e) {
+          py = '';
+        }
+        const cls = toneClass(py);
+        html += `<div class="char-block"><span class="py ${cls}">${py}</span><span class="hz">${ch}</span></div>`;
+        plain += py + ' ';
+      } else if (ch.trim() === '') {
+        html += `<div class="char-block punct"><span class="py">&nbsp;</span><span class="hz">${ch === '\n' ? '' : ch}</span></div>`;
+      } else {
+        html += `<div class="char-block punct"><span class="py">&nbsp;</span><span class="hz">${ch}</span></div>`;
+        plain += ch + ' ';
+      }
+    }
+    html += '</div>';
+    html += `<div class="plain-line"><b>전체 병음</b> · ${plain.trim()}</div>`;
+
+    result.innerHTML = html;
+  }
+
+  let usageTimer = null;
+  function trackUsageIfNeeded() {
+    // 입력이 있고, 실제로 한자가 포함된 경우에만 "기능 사용"으로 집계
+    const text = input.value;
+    if (!text.trim()) return;
+    const hasCJK = /[\u4e00-\u9fff]/.test(text);
+    if (!hasCJK) return;
+    clearTimeout(usageTimer);
+    // 타이핑이 잠시 멈춘 뒤 1회만 집계 (매 키입력마다 카운트되는 것 방지)
+    usageTimer = setTimeout(() => {
+      if (typeof gtag === 'function') {
+        gtag('event', 'pinyin_convert_used', {
+          input_length: text.length
+        });
+      }
+    }, 1000);
+  }
+
+  input.addEventListener('input', () => {
+    render();
+    trackUsageIfNeeded();
+  });
+  clearBtn.addEventListener('click', () => {
+    input.value = '';
+    input.focus();
+    render();
+  });
+
+  render();
+</script>
+
+</body>
+</html>

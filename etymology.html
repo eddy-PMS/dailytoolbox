@@ -28,13 +28,7 @@
 }
 </script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8WYH7KGCP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-Z8WYH7KGCP');
-</script>
+<script src="common.js"></script>
 
 <style>
   :root {
@@ -65,28 +59,8 @@
     padding: 48px 20px 80px;
   }
 
-  .site-nav {
-    width: 100%;
-    max-width: 640px;
-    display: flex;
-    gap: 4px;
-    margin-bottom: 28px;
-    padding-bottom: 14px;
-    border-bottom: 1px solid var(--line);
-    flex-wrap: wrap;
-  }
 
-  .site-nav a {
-    font-size: 13px;
-    color: var(--ink-soft);
-    text-decoration: none;
-    padding: 6px 12px;
-    border-radius: 3px;
-    transition: background 0.15s ease, color 0.15s ease;
-  }
 
-  .site-nav a:hover { background: var(--paper-deep); color: var(--ink); }
-  .site-nav a.active { background: var(--plum); color: #fffdf8; }
 
   main { width: 100%; max-width: 640px; }
 
@@ -232,20 +206,8 @@
 </head>
 <body>
 
-<nav class="site-nav">
-  <a href="index.html">병음 변환기</a>
-  <a href="furigana.html">후리가나 표시기</a>
-  <a href="stroke-order.html">한자 획순</a>
-  <a href="ipa.html">IPA 발음 변환</a>
-  <a href="level-test.html">영어 레벨 테스트</a>
-  <a href="jlpt-test.html">JLPT 레벨 테스트</a>
-  <a href="hsk-test.html">HSK 레벨 테스트</a>
-  <a href="readability.html">지문 난이도 체커</a>
-  <a href="etymology.html" class="active">어원 분석기</a>
-  <a href="wordlist.html">단어장 추출기</a>
-  <a href="tts.html">발음 듣기</a>
-  <a href="kana-quiz.html">가나 퀴즈</a>
-</nav>
+<nav id="site-nav" data-accent="#6b3f56"></nav>
+<script src="nav.js"></script>
 
 <main>
   <div class="brand"><b>Ety.</b> 영단어 어원 분석기</div>
@@ -451,16 +413,6 @@
 
   goBtn.addEventListener('click', render);
   input.addEventListener('keydown', (e) => { if (e.key === 'Enter') render(); });
-</script>
-
-<!-- Naver Analytics -->
-<script type="text/javascript" src="//wcs.pstatic.net/wcslog.js"></script>
-<script type="text/javascript">
-if(!wcs_add) var wcs_add = {};
-wcs_add["wa"] = "260eb743dce6220";
-if(window.wcs) {
-  wcs_do();
-}
 </script>
 
 </body>

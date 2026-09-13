@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://dailyfreetoolbox.com/</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://dailyfreetoolbox.com/pinyin.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/furigana.html</loc>
@@ -42,6 +47,21 @@
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/etymology.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dailyfreetoolbox.com/wordlist.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dailyfreetoolbox.com/tts.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dailyfreetoolbox.com/kana-quiz.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

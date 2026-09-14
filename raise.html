@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>연봉 인상률 계산기 - 인상률·인상액·실수령 변화, N년 뒤 연봉</title>
+<meta name="description" content="현재 연봉과 새 연봉(또는 인상률)을 넣으면 인상률·월급 차이·실수령 변화를 계산하고, 매년 같은 인상률일 때 N년 뒤 연봉을 보여주는 무료 계산기.">
+<meta name="keywords" content="연봉 인상률 계산기, 연봉 인상 계산, 연봉 협상 계산기, 인상률 계산, 연봉 상승률, 5년 뒤 연봉">
+<link rel="canonical" href="https://dailyfreetoolbox.com/raise.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="연봉 인상률 계산기">
+<meta property="og:description" content="현재 연봉과 새 연봉(또는 인상률)을 넣으면 인상률·월급 차이·실수령 변화를 계산하고, 매년 같은 인상률일 때 N년 뒤 연봉을 보여주는 무료 계산기.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/raise.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "연봉 인상률 계산기", "url": "https://dailyfreetoolbox.com/raise.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "현재 연봉과 새 연봉(또는 인상률)을 넣으면 인상률·월급 차이·실수령 변화를 계산하고, 매년 같은 인상률일 때 N년 뒤 연봉을 보여주는 무료 계산기."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#7a5a2a; --accent-deep:#5c4320; }</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "연봉 협상 때 몇 %를 요구해야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "같은 회사 내 인상은 5~10%, 이직은 현재 연봉의 10~20% 인상을 기준으로 시장 평균·성과·물가를 근거로 제시하는 게 일반적이에요."}}, {"@type": "Question", "name": "성과급은 인상률에 포함하나요?", "acceptedAnswer": {"@type": "Answer", "text": "기본급 인상률과 성과급은 따로 봐요. 성과급은 변동성이 커서 연봉 협상에서는 기본급(고정급) 기준으로 비교하세요."}}, {"@type": "Question", "name": "연봉이 올랐는데 실수령이 별로 안 늘어요.", "acceptedAnswer": {"@type": "Answer", "text": "소득세 구간(1,400만·5,000만·8,800만원 과세표준)을 넘기면 초과분 세율이 15→24→35%로 뛰어요. 연봉 실수령액 계산기에서 정확한 금액을 확인하세요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#7a5a2a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>📈 연봉 인상률 계산기</b></div>
+  <h1>연봉 인상률 계산기</h1>
+  <p class="tagline">몇 % 오른 건지, 실제로 얼마 더 받는지</p>
+  <p class="sub">인상률과 인상액을 서로 변환하고, 세후 실수령이 얼마나 늘어나는지도 계산해요. 같은 인상률이 이어지면 5년·10년 뒤 연봉이 얼마가 되는지도 볼 수 있어요.</p>
+
+  <div class="card">
+    <div class="tabs"><button class="tab active" data-m="new">현재 연봉 + 새 연봉 → 인상률</button><button class="tab" data-m="rate">현재 연봉 + 인상률 → 새 연봉</button></div>
+    <div class="grid2">
+      <div class="field"><label>현재 연봉</label><div class="unit"><input type="number" id="cur" value="40000000" step="100000"><span>원</span></div></div>
+      <div class="field" id="newWrap"><label>새 연봉</label><div class="unit"><input type="number" id="new" value="43000000" step="100000"><span>원</span></div></div>
+      <div class="field hidden" id="rateWrap"><label>인상률</label><div class="unit"><input type="number" id="rate" value="5" step="0.1"><span>%</span></div></div>
+      <div class="field"><label>미래 전망 기간</label><select id="years"><option value="5" selected>5년</option><option value="10">10년</option><option value="20">20년</option></select></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>연봉 인상률, 어떻게 봐야 하나요</h2><p>인상률은 (새 연봉 − 현재 연봉) ÷ 현재 연봉 × 100이에요. 4,000만원에서 4,300만원이면 7.5%예요. 2026년 국내 기업 평균 인상률은 3~5% 수준이고, 물가상승률(약 2%)을 빼면 실질 인상은 1~3%예요. 인상률이 물가상승률보다 낮으면 숫자는 올랐어도 실질 소득은 줄어든 거예요. 이직 시에는 10~20% 인상이 흔해 같은 회사 인상률과 비교하는 기준이 돼요.</p><p>인상액이 전부 통장에 들어오진 않아요. 4대보험(약 9.4%)과 누진세율 때문에 인상액의 70~80%만 실수령이 늘어요. 연봉 4,000만원에서 300만원 오르면 월 세전은 25만원 늘지만 실수령은 약 19만원 늘어요.</p>
+<h2>복리로 보는 인상률의 힘</h2><p><table><thead><tr><th>연 인상률</th><th class="r">5년 뒤 (4,000만 기준)</th><th class="r">10년 뒤</th><th class="r">20년 뒤</th></tr></thead><tbody><tr><td>3%</td><td class="r">4,637만</td><td class="r">5,376만</td><td class="r">7,224만</td></tr><tr><td>5%</td><td class="r">5,105만</td><td class="r">6,516만</td><td class="r">1억 613만</td></tr><tr><td>7%</td><td class="r">5,610만</td><td class="r">7,869만</td><td class="r">1억 5,479만</td></tr><tr><td>10%</td><td class="r">6,442만</td><td class="r">1억 375만</td><td class="r">2억 6,910만</td></tr></tbody></table></p><p>매년 2%p 차이가 20년 뒤엔 연봉 두 배 차이로 벌어져요. 초기 연차에 인상률을 높이는 것(이직·승진)이 장기적으로 가장 큰 영향을 줘요.</p>
+<h2>사용 방법</h2><ol><li>현재 연봉과 새 연봉을 넣으면 인상률이, 인상률을 넣으면 새 연봉이 계산돼요.</li><li>월 세전·세후 변화와 인상액 중 실제로 손에 들어오는 비율을 확인하세요.</li><li>매년 같은 인상률일 때 5·10·20년 뒤 연봉을 표에서 보세요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>연봉 협상 때 몇 %를 요구해야 하나요?</summary><p>같은 회사 내 인상은 5~10%, 이직은 현재 연봉의 10~20% 인상을 기준으로 시장 평균·성과·물가를 근거로 제시하는 게 일반적이에요.</p></details><details><summary>성과급은 인상률에 포함하나요?</summary><p>기본급 인상률과 성과급은 따로 봐요. 성과급은 변동성이 커서 연봉 협상에서는 기본급(고정급) 기준으로 비교하세요.</p></details><details><summary>연봉이 올랐는데 실수령이 별로 안 늘어요.</summary><p>소득세 구간(1,400만·5,000만·8,800만원 과세표준)을 넘기면 초과분 세율이 15→24→35%로 뛰어요. 연봉 실수령액 계산기에서 정확한 금액을 확인하세요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="salary.html">연봉 실수령액 계산기</a><a href="wage-convert.html">시급·월급·연봉 변환</a><a href="severance.html">퇴직금 계산기</a><a href="compound.html">복리·적금 계산기</a></div></section>
+  <footer>연봉 협상 참고용이며, 회사별 상여·성과급 구조에 따라 실제 총보수는 달라요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const won=n=>Math.round(n).toLocaleString('ko-KR')+'원';
+let mode='new';
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.m;$('newWrap').classList.toggle('hidden',mode!=='new');$('rateWrap').classList.toggle('hidden',mode!=='rate');calc();}));
+// 실수령 근사 (연봉 실수령액 계산기와 동일 로직, 부양가족 1인·식대 20만원)
+function net(annual){const meal=200000;const mg=annual/12;const tm=Math.max(0,mg-meal);const np=Math.floor(Math.min(Math.max(tm,410000),6590000)*0.0475/10)*10,hi=Math.floor(tm*0.03595/10)*10,ltc=Math.floor(hi*0.1314/10)*10,ei=Math.floor(tm*0.009/10)*10;const gross=tm*12;let ded;if(gross<=5e6)ded=gross*0.7;else if(gross<=15e6)ded=3.5e6+(gross-5e6)*0.4;else if(gross<=45e6)ded=7.5e6+(gross-15e6)*0.15;else if(gross<=1e8)ded=12e6+(gross-45e6)*0.05;else ded=14.75e6+(gross-1e8)*0.02;ded=Math.min(ded,2e7);let base=Math.max(0,gross-ded-1.5e6-(np+hi+ltc+ei)*12);const br=[[14e6,.06,0],[50e6,.15,1.26e6],[88e6,.24,5.76e6],[150e6,.35,15.44e6],[300e6,.38,19.94e6],[500e6,.40,25.94e6],[1e9,.42,35.94e6],[Infinity,.45,65.94e6]];let tax=0;for(const[l,r,d]of br){if(base<=l){tax=base*r-d;break;}}let cr=tax<=1.3e6?tax*0.55:715000+(tax-1.3e6)*0.3;let cap;if(gross<=33e6)cap=740000;else if(gross<=70e6)cap=Math.max(660000,740000-(gross-33e6)*0.008);else if(gross<=120e6)cap=Math.max(500000,660000-(gross-70e6)*0.005);else cap=Math.max(200000,500000-(gross-120e6)*0.005);cr=Math.min(cr,cap);let at=Math.max(0,tax-cr-130000);const it=Math.floor(at/12/10)*10,lt=Math.floor(it*0.1/10)*10;return mg-np-hi-ltc-ei-it-lt;}
+function calc(){
+  const cur=+$('cur').value||0; let nw, rate;
+  if(mode==='new'){ nw=+$('new').value||0; rate= cur? (nw-cur)/cur*100 : 0; } else { rate=+$('rate').value||0; nw=cur*(1+rate/100); }
+  if(!cur){ $('out').innerHTML='<div class="empty">현재 연봉을 입력하세요</div>'; return; }
+  const y=+$('years').value; const rows=[]; let v=cur; for(let k=1;k<=y;k++){ v=v*(1+rate/100); if(k<=3||k%5===0||k===y) rows.push([k,v]); }
+  const n1=net(cur), n2=net(nw);
+  $('out').innerHTML=`<div class="big-result">${mode==='new'? (rate>=0?'+':'')+rate.toFixed(2)+'%' : won(nw)}<small>${mode==='new'?'연봉 인상률':'새 연봉'}</small></div>
+    <table style="margin-top:12px"><tbody>
+      <tr><td>연봉 변화</td><td class="r">${won(cur)} → ${won(nw)} (${nw-cur>=0?'+':''}${won(nw-cur)})</td></tr>
+      <tr><td>월 세전 변화</td><td class="r">${won(cur/12)} → ${won(nw/12)} (${nw-cur>=0?'+':''}${won((nw-cur)/12)})</td></tr>
+      <tr><td><b>월 실수령 변화 (근사)</b></td><td class="r"><b>${won(n1)} → ${won(n2)} (${n2-n1>=0?'+':''}${won(n2-n1)})</b></td></tr>
+      <tr><td>인상액 중 실제 손에 들어오는 비율</td><td class="r">${nw-cur? ((n2-n1)*12/(nw-cur)*100).toFixed(0):0}%</td></tr>
+    </tbody></table>
+    <table style="margin-top:12px"><thead><tr><th>매년 ${rate.toFixed(1)}% 인상 시</th><th class="r">연봉</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${r[0]}년 뒤</td><td class="r">${won(r[1])}</td></tr>`).join('')}</tbody></table>
+    <div class="note">실수령은 부양가족 1인·비과세 식대 20만원 기준 근사치예요. 인상액의 70~80%만 실제 손에 들어오는 건 4대보험과 누진세율 때문이에요. 2026년 물가상승률(약 2%)보다 인상률이 낮으면 실질 소득은 줄어든 셈이에요.</div>`;
+  if(typeof gtag==='function') gtag('event','raise_calculated',{mode});
+}
+['cur','new','rate','years'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+ 
+</script>
+
+</body>
+</html>

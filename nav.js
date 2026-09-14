@@ -59,6 +59,7 @@
     ]},
     { label: '직장·사업', items: [
       ['parttime.html', '알바 급여 계산기'],
+      ['raise.html', '연봉 인상률 계산기'],
       ['annual-leave.html', '연차 계산기'],
       ['wage-convert.html', '시급·월급·연봉 변환'],
       ['unemployment.html', '실업급여 계산기'],
@@ -92,7 +93,10 @@
     { label: '재테크', items: [
       ['avgprice.html', '평단가 계산기'],
       ['avgdown.html', '물타기 계산기'],
-      ['compound.html', '복리·적금 계산기']
+      ['compound.html', '복리·적금 계산기'],
+      ['mortgage.html', '주택담보대출 한도'],
+      ['jeonse-loan.html', '전세대출 이자'],
+      ['car-loan.html', '자동차 할부']
     ]}
   ];
 

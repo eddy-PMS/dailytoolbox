@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>자동차 할부 계산기 - 월 납입금·총 이자·잔가유예 비교</title>
+<meta name="description" content="차량가·선수금·할부 금리·기간을 넣으면 월 납입금과 총 이자를 계산하고, 잔가유예(거치) 방식과 취득세까지 비교하는 무료 자동차 할부 계산기.">
+<meta name="keywords" content="자동차 할부 계산기, 차 할부 월납입금, 자동차 할부 이자 계산, 잔가유예 할부, 신차 할부 계산, 취득세 계산">
+<link rel="canonical" href="https://dailyfreetoolbox.com/car-loan.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="자동차 할부 계산기">
+<meta property="og:description" content="차량가·선수금·할부 금리·기간을 넣으면 월 납입금과 총 이자를 계산하고, 잔가유예(거치) 방식과 취득세까지 비교하는 무료 자동차 할부 계산기.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/car-loan.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "자동차 할부 계산기", "url": "https://dailyfreetoolbox.com/car-loan.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "차량가·선수금·할부 금리·기간을 넣으면 월 납입금과 총 이자를 계산하고, 잔가유예(거치) 방식과 취득세까지 비교하는 무료 자동차 할부 계산기."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2c3e5e; --accent-deep:#202d45; }</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "할부와 리스·렌트 중 뭐가 유리한가요?", "acceptedAnswer": {"@type": "Answer", "text": "개인이 오래 탈 거면 할부(또는 은행 대출)가 총비용이 가장 적어요. 리스·렌트는 사업자 경비 처리나 3년 주기 교체에 유리하고, 보험·세금이 포함된 대신 총비용은 높아요."}}, {"@type": "Question", "name": "선수금을 많이 내는 게 좋나요?", "acceptedAnswer": {"@type": "Answer", "text": "이자를 줄이려면 선수금을 늘리는 게 좋지만, 그 돈을 예금·투자해서 할부 금리보다 높은 수익을 낼 수 있다면 할부가 나을 수도 있어요. 무이자 프로모션이면 선수금을 최소로 하는 게 유리해요."}}, {"@type": "Question", "name": "중도상환하면 수수료가 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "캐피탈 할부는 보통 잔액의 1~2% 중도상환수수료가 있고, 일정 기간(1~3년) 후 면제되는 경우가 많아요. 계약서를 확인하세요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2c3e5e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🚗 자동차 할부 계산기</b></div>
+  <h1>자동차 할부 계산기</h1>
+  <p class="tagline">차 사면 매달 얼마씩 나갈까요</p>
+  <p class="sub">차량가에서 선수금을 뺀 금액을 할부로 계산해요. 일반 할부와 잔가유예 할부(만기에 잔가 일시 납부)를 비교하고, 취득세·등록 비용을 포함한 총 구매 비용도 보여드려요.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>차량 가격 (옵션 포함)</label><div class="unit"><input type="number" id="price" value="35000000" step="100000"><span>원</span></div></div>
+      <div class="field"><label>선수금 (계약금·현금 납부)</label><div class="unit"><input type="number" id="down" value="5000000" step="100000"><span>원</span></div></div>
+      <div class="field"><label>할부 금리 (연)</label><div class="unit"><input type="number" id="rate" value="5.9" step="0.1"><span>%</span></div></div>
+      <div class="field"><label>할부 기간</label><select id="months"><option value="12">12개월</option><option value="24">24개월</option><option value="36" selected>36개월</option><option value="48">48개월</option><option value="60">60개월</option><option value="72">72개월</option></select></div>
+      <div class="field"><label>잔가유예 비율 (0이면 일반 할부)</label><div class="unit"><input type="number" id="residual" value="0" min="0" max="60" step="5"><span>%</span></div></div>
+      <div class="field"><label>취득세·등록 비용 포함</label><select id="tax"><option value="0">포함 안 함</option><option value="0.07" selected>승용차 약 7% (취득세 7%)</option><option value="0.05">경차·화물 약 5%</option></select></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>자동차 할부, 어떻게 계산되나요</h2><p>자동차 할부는 차량가에서 선수금(계약금·현금 납부분)을 뺀 금액을 원리금균등 방식으로 나눠 갚는 구조예요. 3,500만원 차를 선수금 500만원, 연 5.9%, 36개월로 사면 월 약 91만원을 내고 총 이자는 약 280만원이에요. 기간을 60개월로 늘리면 월 부담은 58만원으로 줄지만 총 이자는 약 470만원으로 늘어나요. 월 납입금만 보지 말고 총 이자를 꼭 비교하세요.</p><p>잔가유예(거치·유예) 할부는 차량가의 30~50%를 만기에 한 번에 내는 조건으로 월 납입금을 낮춘 상품이에요. 만기에 잔가를 내거나 재할부하거나 차를 반납하는데, 총 이자는 일반 할부보다 많고 재할부 시 금리가 오르는 경우가 흔해요. 3년 뒤 차를 바꿀 계획이 확실할 때만 유리해요.</p>
+<h2>차 살 때 드는 추가 비용</h2><p><table><thead><tr><th>항목</th><th class="r">금액</th><th>비고</th></tr></thead><tbody><tr><td>취득세</td><td class="r">차량가의 7%</td><td>경차 4% (감면), 승합·화물 5%, 전기차 최대 140만원 감면</td></tr><tr><td>공채 매입</td><td class="r">차량가의 0~20% (지역별)</td><td>대부분 즉시 할인 매도(실부담 1~2%)</td></tr><tr><td>번호판·등록대행</td><td class="r">5~15만원</td><td></td></tr><tr><td>탁송료</td><td class="r">10~30만원</td><td>거리에 따라</td></tr><tr><td>보험료 (첫해)</td><td class="r">60~150만원+</td><td>연령·차종·경력에 따라 큰 차이</td></tr></tbody></table></p><p>캐피탈사 할부 금리는 신용도에 따라 4~9%, 제조사 금융(현대캐피탈 등)은 프로모션으로 무이자~3%대도 있어요. 카드사 할부는 결제 한도 내에서 가능하고 캐시백이 붙기도 해요. 은행 자동차 대출(신용대출 형태)이 금리가 가장 낮은 경우가 많으니 세 가지를 비교하세요.</p>
+<h2>사용 방법</h2><ol><li>차량 가격, 선수금, 할부 금리, 기간을 입력하세요.</li><li>잔가유예 할부라면 잔가 비율을 넣으면 일반 할부와 비교돼요.</li><li>취득세 옵션을 켜면 총 구매 비용까지 나와요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>할부와 리스·렌트 중 뭐가 유리한가요?</summary><p>개인이 오래 탈 거면 할부(또는 은행 대출)가 총비용이 가장 적어요. 리스·렌트는 사업자 경비 처리나 3년 주기 교체에 유리하고, 보험·세금이 포함된 대신 총비용은 높아요.</p></details><details><summary>선수금을 많이 내는 게 좋나요?</summary><p>이자를 줄이려면 선수금을 늘리는 게 좋지만, 그 돈을 예금·투자해서 할부 금리보다 높은 수익을 낼 수 있다면 할부가 나을 수도 있어요. 무이자 프로모션이면 선수금을 최소로 하는 게 유리해요.</p></details><details><summary>중도상환하면 수수료가 있나요?</summary><p>캐피탈 할부는 보통 잔액의 1~2% 중도상환수수료가 있고, 일정 기간(1~3년) 후 면제되는 경우가 많아요. 계약서를 확인하세요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="loan.html">대출 이자 계산기</a><a href="salary.html">연봉 실수령액 계산기</a><a href="mortgage.html">주택담보대출 한도 계산기</a><a href="compound.html">복리·적금 계산기</a></div></section>
+  <footer>원리금균등 월 복리 기준이며 취급수수료·보증보험료는 반영하지 않아요. 실제 조건은 견적서를 확인하세요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const won=n=>Math.round(n).toLocaleString('ko-KR')+'원';
+function pmt(P,i,n,R){ if(i===0) return (P-R)/n; return (P-R*Math.pow(1+i,-n))*i/(1-Math.pow(1+i,-n)); }
+function calc(){
+  const price=+$('price').value||0, down=Math.min(+$('down').value||0,price), r=(+$('rate').value||0)/100/12, n=+$('months').value, res=(+$('residual').value||0)/100, taxRate=+$('tax').value;
+  const P=price-down; if(P<=0){ $('out').innerHTML='<div class="empty">할부 원금이 0원이에요. 선수금을 확인하세요.</div>'; return; }
+  const R=P*res; const m=pmt(P,r,n,R); const totalPay=m*n+R; const interest=totalPay-P;
+  const m0=pmt(P,r,n,0), int0=m0*n-P;
+  const tax=price*taxRate; const totalCost=price+interest+tax;
+  $('out').innerHTML=`<div class="big-result">${won(m)}<small>월 납입금 (${n}개월${res?', 잔가 '+won(R)+' 만기 납부':''})</small></div>
+    <table style="margin-top:12px"><tbody>
+      <tr><td>할부 원금 (차량가 − 선수금)</td><td class="r">${won(P)}</td></tr>
+      <tr><td>총 이자</td><td class="r">${won(interest)}</td></tr>
+      <tr><td>총 납입액 (원금+이자${res?'+잔가':''})</td><td class="r">${won(totalPay)}</td></tr>
+      ${taxRate?`<tr><td>취득세·등록 비용 (약 ${(taxRate*100).toFixed(0)}%)</td><td class="r">${won(tax)}</td></tr>`:''}
+      <tr><td><b>총 구매 비용 (차량가+이자${taxRate?'+취득세':''})</b></td><td class="r"><b>${won(totalCost)}</b></td></tr>
+      ${res?`<tr><td>비교: 일반 할부 시 월 납입금 / 총 이자</td><td class="r">${won(m0)} / ${won(int0)}</td></tr>`:''}
+    </tbody></table>
+    <div class="note">${res?'잔가유예 할부는 월 납입은 줄지만 만기에 잔가를 한 번에 내거나 재할부해야 하고 총 이자는 더 많아요. ':''}취득세는 차량가(부가세 포함 공급가액 기준)의 7%이며, 공채 매입·번호판·탁송료 등은 별도예요. 캐피탈·카드사 할부는 무이자·저금리 프로모션에 따라 실제 조건이 달라요.</div>`;
+  if(typeof gtag==='function') gtag('event','car_loan_calculated',{n});
+}
+['price','down','rate','months','residual','tax'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+ 
+</script>
+
+</body>
+</html>

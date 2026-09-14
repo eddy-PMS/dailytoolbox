@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>주택담보대출 한도 계산기 2026 - LTV·DSR·스트레스 DSR 반영</title>
+<meta name="description" content="주택 가격·지역·연소득·기존 대출을 넣으면 2026년 규제(규제지역 LTV 40%·시가별 한도, 스트레스 DSR 3단계)를 반영한 주담대 가능 금액과 월 상환액을 계산하는 무료 계산기.">
+<meta name="keywords" content="주택담보대출 계산기, 주담대 한도 계산, LTV 계산기, DSR 계산기, 스트레스 DSR, 주택담보대출 한도 2026, 대출 가능 금액">
+<link rel="canonical" href="https://dailyfreetoolbox.com/mortgage.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="주택담보대출 한도 계산기 2026">
+<meta property="og:description" content="주택 가격·지역·연소득·기존 대출을 넣으면 2026년 규제(규제지역 LTV 40%·시가별 한도, 스트레스 DSR 3단계)를 반영한 주담대 가능 금액과 월 상환액을 계산하는 무료 계산기.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/mortgage.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "주택담보대출 한도 계산기 2026", "url": "https://dailyfreetoolbox.com/mortgage.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "주택 가격·지역·연소득·기존 대출을 넣으면 2026년 규제(규제지역 LTV 40%·시가별 한도, 스트레스 DSR 3단계)를 반영한 주담대 가능 금액과 월 상환액을 계산하는 무료 계산기."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#3a3f4a; --accent-deep:#26292f; }</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "부부 합산 소득으로 계산할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 공동명의로 대출받으면 소득을 합산해 DSR 여유가 늘어요. 연소득 칸에 합산 소득을 넣으세요."}}, {"@type": "Question", "name": "기존 대출 연간 원리금은 어떻게 구하나요?", "acceptedAnswer": {"@type": "Answer", "text": "신용대출은 원금 ÷ 5년 + 연 이자, 자동차 할부는 연간 납입액, 카드론도 포함이에요. 마이너스통장은 한도 기준으로 계산되니 안 쓰는 한도는 줄이는 게 유리해요."}}, {"@type": "Question", "name": "디딤돌·보금자리론도 같은 규제인가요?", "acceptedAnswer": {"@type": "Answer", "text": "정책 대출은 별도 한도·금리가 있고 DSR 적용이 완화되는 경우가 있어요. 무주택·소득 요건이 되면 정책 대출부터 확인하세요."}}, {"@type": "Question", "name": "한도를 늘리려면요?", "acceptedAnswer": {"@type": "Answer", "text": "기존 신용대출 상환, 부부 합산, 지방은 40년 만기 선택이 효과적이에요. 규제지역에서는 만기 연장이 안 되니 소득 합산과 기존 부채 정리가 핵심이에요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#3a3f4a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🏦 주택담보대출 한도 계산기 (2026)</b></div>
+  <h1>주택담보대출 한도 계산기 2026</h1>
+  <p class="tagline">이 집, 얼마까지 대출이 나올까요</p>
+  <p class="sub">LTV(담보 기준)와 DSR(소득 기준) 두 한도 중 낮은 쪽이 실제 대출 가능액이에요. 2026년 규제지역 LTV 40%·시가별 한도(6억/4억/2억), 스트레스 DSR 3단계를 반영해 계산해요.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>주택 가격 (시가)</label><div class="unit"><input type="number" id="price" value="900000000" step="10000000"><span>원</span></div></div>
+      <div class="field"><label>지역</label><select id="region"><option value="reg">규제지역 (서울 전역·경기 12곳)</option><option value="cap">수도권 비규제</option><option value="non">지방 비규제</option></select></div>
+      <div class="field"><label>차주 유형</label><select id="type"><option value="normal">무주택 일반</option><option value="first">생애최초 (LTV 70% 적용 가정)</option><option value="one">1주택 (처분조건부 = 무주택 기준)</option></select></div>
+      <div class="field"><label>연소득 (세전, 부부 합산 가능)</label><div class="unit"><input type="number" id="income" value="70000000" step="1000000"><span>원</span></div></div>
+      <div class="field"><label>기존 대출 연간 원리금 (신용·자동차 등)</label><div class="unit"><input type="number" id="existing" value="0" step="100000"><span>원</span></div></div>
+      <div class="field"><label>대출 금리 (연)</label><div class="unit"><input type="number" id="rate" value="4.2" step="0.1"><span>%</span></div></div>
+      <div class="field"><label>대출 기간</label><select id="years"><option value="20">20년</option><option value="30" selected>30년</option><option value="40">40년 (비수도권·청년 등)</option></select></div>
+      <div class="field"><label>스트레스 금리 가산 (DSR 계산용)</label><div class="unit"><input type="number" id="stress" value="1.5" step="0.25"><span>%p</span></div></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>2026년 주택담보대출 한도, 이렇게 정해져요</h2><p>주담대 한도는 세 가지를 모두 통과해야 해요. ① LTV(담보인정비율): 집값의 몇 %까지, ② 시가별 절대 한도: 수도권·규제지역은 집값 15억 이하 6억, 15~25억 4억, 25억 초과 2억, ③ DSR(총부채원리금상환비율): 연소득의 40% 안에서 모든 대출의 연간 원리금이 들어와야 해요. 이 셋 중 가장 낮은 금액이 실제 한도예요.</p><p>2025년 6·27 대책과 10·15 대책으로 서울 전역과 경기 12곳이 규제지역이 되면서 LTV 40%가 적용되고, 수도권 주담대 만기는 30년으로 제한됐어요. 다주택자는 수도권 추가 주택 구입 시 LTV 0%(대출 불가)예요. 지방 비규제지역은 LTV 70%에 시가별 한도가 없어 상대적으로 여유가 있어요.</p>
+<h2>스트레스 DSR이란</h2><p>DSR을 계산할 때 실제 금리에 "스트레스 금리"를 더해 원리금을 계산하는 제도예요. 금리가 오를 때를 대비해 한도를 보수적으로 잡는 거예요. 2025년 7월 3단계부터 수도권은 +1.5%p, 지방은 +0.75%p(이후 단계적 상향)가 적용되고, 실제 내는 이자에는 영향이 없어요. 연소득 7천만원, 금리 4.2%, 30년이면 DSR 40% 기준 한도가 스트레스 없이 약 4.8억, 스트레스 1.5%p 적용 시 약 4.0억으로 줄어요.</p><p><table><thead><tr><th>지역·유형</th><th class="r">LTV</th><th>시가별 한도</th><th>비고</th></tr></thead><tbody><tr><td>규제지역 무주택</td><td class="r">40%</td><td>6억 / 4억 / 2억</td><td>6개월 내 전입 의무</td></tr><tr><td>수도권 비규제 무주택</td><td class="r">70%</td><td>6억</td><td>만기 30년 제한</td></tr><tr><td>지방 비규제 무주택</td><td class="r">70%</td><td>없음</td><td>40년 만기 가능</td></tr><tr><td>생애최초</td><td class="r">70% (시점별 확인)</td><td>동일</td><td>과거 80%에서 축소</td></tr><tr><td>다주택자 (수도권 추가 구입)</td><td class="r">0%</td><td>-</td><td>대출 불가</td></tr></tbody></table></p>
+<h2>사용 방법</h2><ol><li>주택 가격, 지역, 차주 유형, 연소득, 기존 대출 연간 원리금을 입력하세요.</li><li>금리·기간·스트레스 가산을 확인하세요(수도권 기본 1.5%p).</li><li>LTV·시가 한도·DSR 각각의 한도와 최종 대출 가능액, 월 상환액이 나와요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>부부 합산 소득으로 계산할 수 있나요?</summary><p>네. 공동명의로 대출받으면 소득을 합산해 DSR 여유가 늘어요. 연소득 칸에 합산 소득을 넣으세요.</p></details><details><summary>기존 대출 연간 원리금은 어떻게 구하나요?</summary><p>신용대출은 원금 ÷ 5년 + 연 이자, 자동차 할부는 연간 납입액, 카드론도 포함이에요. 마이너스통장은 한도 기준으로 계산되니 안 쓰는 한도는 줄이는 게 유리해요.</p></details><details><summary>디딤돌·보금자리론도 같은 규제인가요?</summary><p>정책 대출은 별도 한도·금리가 있고 DSR 적용이 완화되는 경우가 있어요. 무주택·소득 요건이 되면 정책 대출부터 확인하세요.</p></details><details><summary>한도를 늘리려면요?</summary><p>기존 신용대출 상환, 부부 합산, 지방은 40년 만기 선택이 효과적이에요. 규제지역에서는 만기 연장이 안 되니 소득 합산과 기존 부채 정리가 핵심이에요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="loan.html">대출 이자 계산기</a><a href="jeonse-loan.html">전세대출 이자 계산기</a><a href="rent.html">전월세 전환·중개수수료</a><a href="salary.html">연봉 실수령액 계산기</a><a href="car-loan.html">자동차 할부 계산기</a></div></section>
+  <footer>2025년 6·27 및 10·15 대책, 스트레스 DSR 3단계(2025.7~) 기준. 규제는 수시로 바뀌니 실제 한도는 은행 상담으로 확인하세요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const won=n=>Math.round(n).toLocaleString('ko-KR')+'원';
+const eok=n=>(n/1e8).toFixed(2).replace(/\.?0+$/,'')+'억';
+function annualPay(P,r,years){ const i=r/12, n=years*12; if(i===0) return P/years; return P*i/(1-Math.pow(1+i,-n))*12; }
+function maxByDSR(cap,r,years){ const i=r/12, n=years*12; if(i===0) return cap*years; return cap/12*(1-Math.pow(1+i,-n))/i; }
+function calc(){
+  const price=+$('price').value||0, region=$('region').value, type=$('type').value, income=+$('income').value||0, existing=+$('existing').value||0, r=(+$('rate').value||0)/100, stress=(+$('stress').value||0)/100;
+  let years=+$('years').value; let yearsNote='';
+  if(region!=='non' && years>30){ years=30; yearsNote='수도권·규제지역은 주담대 만기 30년 제한이 적용돼 30년으로 계산했어요. '; }
+  let ltv= region==='reg'? 0.4 : 0.7; if(type==='first') ltv=0.7;
+  let ltvAmt=price*ltv; let cap=Infinity, capNote='';
+  if(region==='reg'){ cap= price<=15e8? 6e8 : price<=25e8? 4e8 : 2e8; capNote=`규제지역 시가별 한도 ${eok(cap)}`; }
+  else if(region==='cap'){ cap=6e8; capNote='수도권 한도 6억'; }
+  const ltvLimit=Math.min(ltvAmt,cap);
+  const dsrCap=Math.max(0,income*0.4-existing); // 연간 원리금 여유
+  const dsrLimit=maxByDSR(dsrCap, r+stress, years);
+  const limit=Math.min(ltvLimit,dsrLimit);
+  const binding= ltvLimit<=dsrLimit? (ltvAmt<=cap?'LTV':'시가별 한도') : 'DSR';
+  const pay=annualPay(limit,r,years)/12; const dsrActual= income? annualPay(limit,r+stress,years)/income*100 : 0;
+  const need=price-limit;
+  $('out').innerHTML=`<div class="big-result">${won(limit)}<small>대출 가능 금액 (${binding} 기준으로 결정)</small></div>
+    <table style="margin-top:12px"><tbody>
+      <tr><td>LTV ${(ltv*100).toFixed(0)}% 기준</td><td class="r">${won(ltvAmt)}${cap<Infinity?` → ${capNote} 적용 ${won(ltvLimit)}`:''}</td></tr>
+      <tr><td>DSR 40% 기준 (스트레스 금리 ${((r+stress)*100).toFixed(2)}%, ${years}년)</td><td class="r">${won(dsrLimit)}</td></tr>
+      <tr><td>연소득 대비 연간 원리금 여유</td><td class="r">${won(dsrCap)} (소득 40% − 기존 원리금)</td></tr>
+      <tr><td><b>월 상환액 (실제 금리 ${(r*100).toFixed(1)}%, 원리금균등)</b></td><td class="r"><b>${won(pay)}</b></td></tr>
+      <tr><td>스트레스 기준 DSR</td><td class="r">${dsrActual.toFixed(1)}%</td></tr>
+      <tr><td>필요한 자기자금 (집값 − 대출)</td><td class="r">${won(need)} + 취득세·중개보수 등</td></tr>
+    </tbody></table>
+    <div class="note">${yearsNote}LTV·시가별 한도·DSR 중 가장 낮은 값이 실제 한도예요. 생애최초 우대는 시점·지역에 따라 달라 70% 가정으로 계산했으니 은행에 확인하세요. 다주택자는 수도권 주택구입 목적 주담대 LTV 0%이고, 규제지역은 6개월 내 전입 의무가 있어요. 정책대출(디딤돌·보금자리론)은 별도 기준이 적용돼요.</div>`;
+  if(typeof gtag==='function') gtag('event','mortgage_calculated',{region,binding});
+}
+['price','region','type','income','existing','rate','years','stress'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+ 
+</script>
+
+</body>
+</html>

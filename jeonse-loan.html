@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>전세대출 이자 계산기 - 월 이자·총 이자, 전세 vs 월세 비교</title>
+<meta name="description" content="전세자금대출 금액과 금리, 기간을 넣으면 월 이자와 총 이자를 계산하고, 같은 집을 월세로 살 때와 월 부담을 비교하는 무료 계산기.">
+<meta name="keywords" content="전세대출 이자 계산기, 전세자금대출 이자, 전세대출 월 이자, 전세 월세 비교, 버팀목 전세대출 이자, 전세대출 계산">
+<link rel="canonical" href="https://dailyfreetoolbox.com/jeonse-loan.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="전세대출 이자 계산기">
+<meta property="og:description" content="전세자금대출 금액과 금리, 기간을 넣으면 월 이자와 총 이자를 계산하고, 같은 집을 월세로 살 때와 월 부담을 비교하는 무료 계산기.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/jeonse-loan.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "전세대출 이자 계산기", "url": "https://dailyfreetoolbox.com/jeonse-loan.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "전세자금대출 금액과 금리, 기간을 넣으면 월 이자와 총 이자를 계산하고, 같은 집을 월세로 살 때와 월 부담을 비교하는 무료 계산기."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2f5d4e; --accent-deep:#22453a; }</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "전세대출은 보증금의 몇 %까지 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "일반적으로 보증금의 80%, 정책 대출은 70~80%예요. 보증기관(HF·HUG·SGI) 한도와 본인 소득에 따라 달라요."}}, {"@type": "Question", "name": "전세보증보험은 꼭 들어야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "의무는 아니지만 강력히 권해요. 보증금의 연 0.1~0.2% 비용으로 집주인이 보증금을 못 돌려줄 때 보증기관이 대신 지급해요. HUG 보증 전세대출은 보증보험이 결합된 경우가 많아요."}}, {"@type": "Question", "name": "계약 갱신하면 대출도 연장되나요?", "acceptedAnswer": {"@type": "Answer", "text": "대부분 만기 연장이 가능하지만 금리는 연장 시점 기준으로 바뀌고, 보증금이 오르면 증액 심사를 다시 받아요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f5d4e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🏠 전세대출 이자 계산기</b></div>
+  <h1>전세대출 이자 계산기</h1>
+  <p class="tagline">전세대출 받으면 매달 이자가 얼마일까요</p>
+  <p class="sub">전세대출은 대부분 만기일시상환이라 매달 이자만 내요. 월 이자·총 이자를 계산하고, 월세로 살 때와 비교해 어느 쪽이 유리한지도 보여드려요.</p>
+
+  <div class="card">
+    <h2>전세대출</h2>
+    <div class="grid2">
+      <div class="field"><label>전세 보증금</label><div class="unit"><input type="number" id="deposit" value="300000000" step="1000000"><span>원</span></div></div>
+      <div class="field"><label>대출 금액</label><div class="unit"><input type="number" id="loan" value="200000000" step="1000000"><span>원</span></div></div>
+      <div class="field"><label>대출 금리 (연)</label><div class="unit"><input type="number" id="rate" value="3.8" step="0.1"><span>%</span></div></div>
+      <div class="field"><label>계약 기간</label><select id="years"><option value="1">1년</option><option value="2" selected>2년</option><option value="3">3년</option><option value="4">4년</option></select></div>
+    </div>
+    <h2 style="margin-top:18px">비교할 월세 조건 (선택)</h2>
+    <div class="grid2">
+      <div class="field"><label>월세 보증금</label><div class="unit"><input type="number" id="mDeposit" value="50000000" step="1000000"><span>원</span></div></div>
+      <div class="field"><label>월세</label><div class="unit"><input type="number" id="mRent" value="1000000" step="10000"><span>원</span></div></div>
+      <div class="field"><label>내 돈의 기회비용 (예금 금리)</label><div class="unit"><input type="number" id="oppRate" value="3.0" step="0.1"><span>%</span></div></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>전세대출 이자 계산과 전세·월세 비교</h2><p>전세자금대출은 대부분 만기일시상환이라 매달 이자만 내고 원금은 계약 종료 시 보증금을 돌려받아 갚아요. 2억원을 연 3.8%로 빌리면 월 이자 약 63만원, 2년 총 이자 약 1,520만원이에요. 전세와 월세를 비교할 때는 이자만 보면 안 되고, 보증금으로 묶이는 내 돈의 기회비용(예금했으면 받았을 이자)까지 더해서 "실질 월 부담"으로 비교해야 정확해요.</p><p>예를 들어 보증금 3억(대출 2억) 전세와 보증금 5천만원·월세 100만원을 비교하면, 전세는 이자 63만원 + 내 돈 1억의 기회비용 25만원(3% 기준) = 88만원, 월세는 100만원 + 5천만원 기회비용 12.5만원 = 112.5만원으로 전세가 월 24만원 정도 유리해요. 금리가 오르면 이 차이가 줄어들어요.</p>
+<h2>전세대출 주요 상품 (2026년 참고)</h2><p><table><thead><tr><th>상품</th><th>대상</th><th>한도·금리</th></tr></thead><tbody><tr><td>버팀목 전세자금대출</td><td>무주택, 부부합산 연소득 5천만원 이하 (신혼·다자녀 7,500만원)</td><td>수도권 1.2억, 금리 연 2.3~3.3%</td></tr><tr><td>청년 버팀목</td><td>만 19~34세 무주택, 연소득 5천만원 이하</td><td>최대 2억, 금리 연 2.0~3.1%</td></tr><tr><td>신혼부부 버팀목</td><td>혼인 7년 이내</td><td>수도권 3억, 금리 연 1.7~2.9%</td></tr><tr><td>은행 일반 전세대출 (HF·HUG·SGI 보증)</td><td>소득 제한 없음</td><td>보증금의 80%, 최대 5억 안팎, 금리 연 3.5~5%</td></tr></tbody></table></p><p>정책 대출은 소득·자산 요건이 있지만 금리가 1~2%p 낮아 조건이 되면 무조건 먼저 알아보세요. 2025년부터 1주택자의 수도권 전세대출 이자는 DSR에 포함돼요.</p>
+<h2>사용 방법</h2><ol><li>전세 보증금, 대출 금액, 금리, 계약 기간을 입력하세요.</li><li>비교할 월세 조건(보증금·월세)과 내 돈의 기회비용(예금 금리)을 넣으세요.</li><li>월 이자·총 이자와 전세·월세 실질 부담 비교가 나와요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>전세대출은 보증금의 몇 %까지 되나요?</summary><p>일반적으로 보증금의 80%, 정책 대출은 70~80%예요. 보증기관(HF·HUG·SGI) 한도와 본인 소득에 따라 달라요.</p></details><details><summary>전세보증보험은 꼭 들어야 하나요?</summary><p>의무는 아니지만 강력히 권해요. 보증금의 연 0.1~0.2% 비용으로 집주인이 보증금을 못 돌려줄 때 보증기관이 대신 지급해요. HUG 보증 전세대출은 보증보험이 결합된 경우가 많아요.</p></details><details><summary>계약 갱신하면 대출도 연장되나요?</summary><p>대부분 만기 연장이 가능하지만 금리는 연장 시점 기준으로 바뀌고, 보증금이 오르면 증액 심사를 다시 받아요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="rent.html">전월세 전환·중개수수료</a><a href="mortgage.html">주택담보대출 한도 계산기</a><a href="loan.html">대출 이자 계산기</a><a href="compound.html">복리·적금 계산기</a></div></section>
+  <footer>금리는 상품·신용도·우대 조건에 따라 달라요. 버팀목·청년 전세대출 등 정책 상품은 금리가 낮으니 자격을 먼저 확인하세요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const won=n=>Math.round(n).toLocaleString('ko-KR')+'원';
+function calc(){
+  const dep=+$('deposit').value||0, loan=Math.min(+$('loan').value||0,dep), r=(+$('rate').value||0)/100, y=+$('years').value, opp=(+$('oppRate').value||0)/100;
+  const mInt=loan*r/12, total=mInt*12*y;
+  const own=dep-loan; const oppJ=own*opp/12; const jeonseMonthly=mInt+oppJ;
+  const mDep=+$('mDeposit').value||0, mRent=+$('mRent').value||0; const oppW=mDep*opp/12; const wolseMonthly=mRent+oppW;
+  const diff=wolseMonthly-jeonseMonthly;
+  $('out').innerHTML=`<div class="big-result">${won(mInt)}<small>월 이자 (대출 ${won(loan)} · 연 ${(r*100).toFixed(1)}%)</small></div>
+    <table style="margin-top:12px"><tbody>
+      <tr><td>${y}년 총 이자</td><td class="r">${won(total)}</td></tr>
+      <tr><td>내 돈 (보증금 − 대출)</td><td class="r">${won(own)}</td></tr>
+      <tr><td>내 돈의 기회비용 (월, 예금 ${(opp*100).toFixed(1)}% 기준)</td><td class="r">${won(oppJ)}</td></tr>
+      <tr><td><b>전세 실질 월 부담</b></td><td class="r"><b>${won(jeonseMonthly)}</b></td></tr>
+    </tbody></table>
+    ${mRent?`<table style="margin-top:12px"><thead><tr><th>비교</th><th class="r">전세 (대출)</th><th class="r">월세</th></tr></thead><tbody>
+      <tr><td>매달 나가는 돈</td><td class="r">${won(mInt)} (이자)</td><td class="r">${won(mRent)} (월세)</td></tr>
+      <tr><td>보증금 기회비용</td><td class="r">${won(oppJ)}</td><td class="r">${won(oppW)}</td></tr>
+      <tr><td><b>실질 월 부담</b></td><td class="r"><b>${won(jeonseMonthly)}</b></td><td class="r"><b>${won(wolseMonthly)}</b></td></tr>
+      <tr><td>${y}년 합계 차이</td><td class="r" colspan="2">${diff>=0? '전세가 월 '+won(diff)+' 유리 (총 '+won(diff*12*y)+')' : '월세가 월 '+won(-diff)+' 유리 (총 '+won(-diff*12*y)+')'}</td></tr>
+    </tbody></table>`:''}
+    <div class="note">전세대출은 만기일시상환(이자만 납부)이 일반적이에요. 기회비용은 보증금으로 묶인 내 돈을 예금했을 때 받을 이자예요. 전세는 보증금 반환 위험(전세보증보험료 연 0.1~0.2% 별도), 월세는 보증금이 적어 목돈 부담이 낮다는 차이도 함께 고려하세요.</div>`;
+  if(typeof gtag==='function') gtag('event','jeonse_loan_calculated',{});
+}
+['deposit','loan','rate','years','mDeposit','mRent','oppRate'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+ 
+</script>
+
+</body>
+</html>

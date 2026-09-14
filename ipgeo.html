@@ -43,34 +43,43 @@
     · 무료 조회 데이터를 사용하므로 하루 조회량이 많으면 잠시 제한될 수 있어요. 같은 IP는 30일간 캐시되어 빠르게 응답합니다.
   </div></div>
  
-  <footer>위치 데이터는 ipwhois.io 무료 API를 사용하며, 조회한 IP는 캐시 목적 외에 저장하지 않아요.</footer>
+  <footer>위치 데이터는 ipwhois.io·ipapi.co 무료 API를 사용하며, 조회는 이용자 브라우저에서 직접 이루어지고 사이트는 결과를 저장하지 않아요.</footer>
 </main>
 
 <script>
 
 const $=id=>document.getElementById(id);
 const MSG={invalid_ip:'올바른 IP 주소 형식이 아니에요.',private_ip:'사설/내부 IP는 인터넷 상 위치가 없어 조회할 수 없어요.',not_found:'이 IP의 위치 정보를 찾지 못했어요.',quota:'오늘 무료 조회량이 많아 잠시 제한됐어요. 내일 다시 시도하거나 "내 IP 확인" 도구를 이용해주세요.',upstream:'조회 서버가 응답하지 않아요. 잠시 후 다시 시도해주세요.',forbidden:'허용되지 않은 요청이에요.'};
+const IPV4=/^(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}$/, IPV6=/^[0-9a-fA-F:]{2,39}$/;
+const isPrivate=ip=>/^(10\.|127\.|192\.168\.|169\.254\.|172\.(1[6-9]|2\d|3[01])\.|0\.|::1$|fc|fd|fe80)/i.test(ip);
+// 브라우저에서 직접 호출 (사용자별 한도) → 실패 시 워커 경유
+async function viaIpwho(ip){ const r=await fetch(`https://ipwho.is/${ip}`); const d=await r.json(); if(!d.success){ if(/(limit|quota|exceed)/i.test(d.message||'')) throw 'quota'; throw 'not_found'; }
+  return {ok:true,ip:d.ip,type:d.type||'',country:d.country||'',countryCode:d.country_code||'',flag:(d.flag&&d.flag.emoji)||'',region:d.region||'',city:d.city||'',postal:d.postal||'',latitude:d.latitude??'',longitude:d.longitude??'',timezone:(d.timezone&&d.timezone.id)||'',utcOffset:(d.timezone&&d.timezone.utc)||'',asn:(d.connection&&d.connection.asn)||'',isp:(d.connection&&d.connection.isp)||'',org:(d.connection&&d.connection.org)||''}; }
+async function viaIpapi(ip){ const r=await fetch(`https://ipapi.co/${ip}/json/`); const d=await r.json(); if(d.error){ if(/(quota|limit|throttl)/i.test(d.reason||'')) throw 'quota'; throw 'not_found'; }
+  return {ok:true,ip:d.ip,type:d.version||'',country:d.country_name||'',countryCode:d.country_code||'',flag:'',region:d.region||'',city:d.city||'',postal:d.postal||'',latitude:d.latitude??'',longitude:d.longitude??'',timezone:d.timezone||'',utcOffset:d.utc_offset||'',asn:(d.asn||'').replace(/^AS/,''),isp:d.org||'',org:d.org||''}; }
+async function viaWorker(ip){ const r=await fetch('/api/geo?ip='+encodeURIComponent(ip)); const d=await r.json(); if(!d.ok) throw d.error||'upstream'; return d; }
 async function lookup(){
   const ip=$('ip').value.trim(); if(!ip){ $('status').textContent='IP 주소를 입력해주세요.'; return; }
+  if(!(IPV4.test(ip)||IPV6.test(ip))){ $('status').textContent=MSG.invalid_ip; return; }
+  if(isPrivate(ip)){ $('status').textContent=MSG.private_ip; return; }
   $('status').textContent='조회 중…'; $('run').disabled=true;
-  try{
-    const r=await fetch('/api/geo?ip='+encodeURIComponent(ip)); const d=await r.json();
-    if(!d.ok){ const m=MSG[d.error]||'조회에 실패했어요.'; $('status').textContent=m; $('out').innerHTML=`<div class="empty">${m}${d.detail?`<div class="note" style="margin-top:8px">상세: ${d.detail}</div>`:''}</div>`; return; }
-    $('status').textContent='';
-    const loc=[d.country?d.flag+' '+d.country:'', d.region, d.city].filter(Boolean).join(' · ');
-    const map= d.latitude!==''&&d.longitude!==''? `<a href="https://www.openstreetmap.org/?mlat=${d.latitude}&mlon=${d.longitude}#map=10/${d.latitude}/${d.longitude}" target="_blank" rel="noopener">지도에서 보기 ↗</a>`:'';
-    $('out').innerHTML=`<div class="card"><div class="big-result" style="font-size:26px;word-break:break-all">${d.ip}<small>${d.type||''}</small></div>
-      <table style="margin-top:12px"><tbody>
-        <tr><td>위치 (추정)</td><td class="r">${loc||'-'} ${map}</td></tr>
-        <tr><td>우편번호</td><td class="r">${d.postal||'-'}</td></tr>
-        <tr><td>위도 / 경도</td><td class="r">${d.latitude!==''?d.latitude+' / '+d.longitude:'-'}</td></tr>
-        <tr><td>통신사 (ISP)</td><td class="r">${d.isp||'-'}</td></tr>
-        <tr><td>기관 / AS</td><td class="r">${d.org||'-'}${d.asn?` (AS${d.asn})`:''}</td></tr>
-        <tr><td>시간대</td><td class="r">${d.timezone||'-'}${d.utcOffset?` (UTC${d.utcOffset})`:''}</td></tr>
-      </tbody></table></div>`;
-    if(typeof gtag==='function') gtag('event','ipgeo_lookup',{country:d.countryCode||''});
-  }catch(e){ $('status').textContent=MSG.upstream; }
-  finally{ $('run').disabled=false; }
+  let d=null, lastErr='upstream';
+  for(const fn of [viaIpwho, viaIpapi, viaWorker]){ try{ d=await fn(ip); break; }catch(e){ lastErr= typeof e==='string'? e : 'upstream'; } }
+  $('run').disabled=false;
+  if(!d){ const m=MSG[lastErr]||MSG.upstream; $('status').textContent=m; $('out').innerHTML=`<div class="empty">${m}</div>`; return; }
+  $('status').textContent='';
+  const loc=[d.country?(d.flag?d.flag+' ':'')+d.country:'', d.region, d.city].filter(Boolean).join(' · ');
+  const map= d.latitude!==''&&d.longitude!==''? `<a href="https://www.openstreetmap.org/?mlat=${d.latitude}&mlon=${d.longitude}#map=10/${d.latitude}/${d.longitude}" target="_blank" rel="noopener">지도에서 보기 ↗</a>`:'';
+  $('out').innerHTML=`<div class="card"><div class="big-result" style="font-size:26px;word-break:break-all">${d.ip}<small>${d.type||''}</small></div>
+    <table style="margin-top:12px"><tbody>
+      <tr><td>위치 (추정)</td><td class="r">${loc||'-'} ${map}</td></tr>
+      <tr><td>우편번호</td><td class="r">${d.postal||'-'}</td></tr>
+      <tr><td>위도 / 경도</td><td class="r">${d.latitude!==''?d.latitude+' / '+d.longitude:'-'}</td></tr>
+      <tr><td>통신사 (ISP)</td><td class="r">${d.isp||'-'}</td></tr>
+      <tr><td>기관 / AS</td><td class="r">${d.org||'-'}${d.asn?` (AS${d.asn})`:''}</td></tr>
+      <tr><td>시간대</td><td class="r">${d.timezone||'-'}${d.utcOffset?` (UTC${d.utcOffset})`:''}</td></tr>
+    </tbody></table><div class="note">위치는 통신사 IP 등록지 기준 추정이라 실제와 다를 수 있어요.</div></div>`;
+  if(typeof gtag==='function') gtag('event','ipgeo_lookup',{country:d.countryCode||''});
 }
 $('run').addEventListener('click',lookup); $('ip').addEventListener('keydown',e=>{if(e.key==='Enter')lookup();});
 $('ex1').addEventListener('click',()=>{$('ip').value='8.8.8.8';lookup();}); $('ex2').addEventListener('click',()=>{$('ip').value='1.1.1.1';lookup();});

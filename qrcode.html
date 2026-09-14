@@ -19,7 +19,7 @@
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
 <style>:root { --accent:#1f1d1a; --accent-deep:#000000; }</style>
-<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js"></script>
 </head>
 <body>
 
@@ -47,7 +47,7 @@
     <div class="status" id="status"></div>
   </div>
  
-  <footer>QR 생성은 오픈소스 node-qrcode 라이브러리를 사용하며, 입력 내용은 브라우저 밖으로 나가지 않아요.</footer>
+  <footer>QR 생성은 오픈소스 qrcode-generator 라이브러리를 사용하며, 입력 내용은 브라우저 밖으로 나가지 않아요.</footer>
 </main>
 
 <script>
@@ -61,12 +61,16 @@ let timer;
 function draw(){ clearTimeout(timer); timer=setTimeout(()=>{
   const data=payload(); const c=$('qr'); const dl=$('dl');
   if(!data){ c.width=c.height=0; dl.classList.add('hidden'); $('status').textContent=''; return; }
-  if(typeof QRCode==='undefined'){ $('status').textContent='QR 라이브러리를 불러오는 중이에요…'; return; }
-  QRCode.toCanvas(c, data, {width:+$('size').value, margin:2, errorCorrectionLevel:$('ecl').value, color:{dark:'#1f1d1a',light:'#ffffff'}}, err=>{
-    if(err){ $('status').textContent='내용이 너무 길어요. 줄여주세요.'; dl.classList.add('hidden'); return; }
+  if(typeof qrcode==='undefined'){ $('status').textContent='QR 라이브러리를 불러오는 중이에요…'; return; }
+  try{
+    qrcode.stringToBytes=qrcode.stringToBytesFuncs['UTF-8'];
+    const qr=qrcode(0,$('ecl').value); qr.addData(data,'Byte'); qr.make();
+    const n=qr.getModuleCount(), size=+$('size').value, margin=2, cell=Math.floor(size/(n+margin*2)), total=cell*(n+margin*2);
+    c.width=c.height=total; const ctx=c.getContext('2d'); ctx.fillStyle='#ffffff'; ctx.fillRect(0,0,total,total); ctx.fillStyle='#1f1d1a';
+    for(let r=0;r<n;r++) for(let col=0;col<n;col++) if(qr.isDark(r,col)) ctx.fillRect((col+margin)*cell,(r+margin)*cell,cell,cell);
     c.style.width='256px'; c.style.height='256px'; dl.href=c.toDataURL('image/png'); dl.classList.remove('hidden'); $('status').textContent='';
     if(typeof gtag==='function') gtag('event','qr_generated',{mode});
-  });
+  }catch(e){ $('status').textContent='내용이 너무 길어요. 줄여주세요.'; dl.classList.add('hidden'); }
 },200); }
 ['text','ssid','pw','enc','hidden','size','ecl'].forEach(id=>$(id).addEventListener('input',draw));
  

@@ -108,10 +108,10 @@
     + '#site-nav a,#site-nav button{font-family:inherit;font-size:13px;color:rgba(0,0,0,.62);text-decoration:none;padding:6px 12px;border-radius:3px;background:none;border:none;cursor:pointer;line-height:1.4;transition:background .15s ease,color .15s ease}'
     + '#site-nav a:hover,#site-nav button:hover{background:rgba(0,0,0,.06);color:rgba(0,0,0,.88)}'
     + '#site-nav .nav-home.active{background:var(--nav-accent);color:#fffdf8}'
-    + '#site-nav .nav-util{margin-left:auto;display:flex;gap:2px}'
-    + '#site-nav .nav-util a{font-size:12px;color:rgba(0,0,0,.5);padding:6px 8px}'
-    + '#site-nav .nav-util a.active{color:var(--nav-accent);font-weight:700}'
-    + '@media (max-width:520px){#site-nav .nav-util{margin-left:0;width:100%;justify-content:flex-end}}'
+    + '#site-footer-links{width:100%;max-width:680px;margin:36px auto 0;padding-top:16px;border-top:1px solid rgba(0,0,0,.12);display:flex;justify-content:center;gap:18px;font-size:12px}'
+    + '#site-footer-links a{color:rgba(0,0,0,.5);text-decoration:none}'
+    + '#site-footer-links a:hover{color:rgba(0,0,0,.85)}'
+    + '#site-footer-links a.active{color:var(--nav-accent);font-weight:700}'
     + '#site-nav .nav-group{position:relative}'
     + '#site-nav .nav-group>button{display:flex;align-items:center;gap:5px}'
     + '#site-nav .nav-group>button .caret{font-size:9px;opacity:.6;transition:transform .15s ease}'
@@ -142,11 +142,23 @@
     html += '</div></div>';
   });
 
-  html += '<div class="nav-util">'
-    + '<a href="about.html"' + (path === 'about.html' ? ' class="active"' : '') + '>소개</a>'
-    + '<a href="privacy.html"' + (path === 'privacy.html' ? ' class="active"' : '') + '>개인정보처리방침</a>'
-    + '</div>';
   nav.innerHTML = html;
+
+  // 페이지 하단에 소개·개인정보처리방침 링크 삽입
+  function addFooterLinks() {
+    if (document.getElementById('site-footer-links')) return;
+    var hasOwn = document.querySelector('footer a[href="privacy.html"]');
+    if (hasOwn) return;
+    var box = document.createElement('div');
+    box.id = 'site-footer-links';
+    box.style.setProperty('--nav-accent', accent);
+    box.innerHTML = '<a href="index.html">홈</a>'
+      + '<a href="about.html"' + (path === 'about.html' ? ' class="active"' : '') + '>사이트 소개</a>'
+      + '<a href="privacy.html"' + (path === 'privacy.html' ? ' class="active"' : '') + '>개인정보처리방침</a>';
+    var main = document.querySelector('main');
+    if (main && main.parentNode) main.parentNode.insertBefore(box, main.nextSibling); else document.body.appendChild(box);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', addFooterLinks); else addFooterLinks();
 
   // 터치/클릭 토글 (모바일) + 마우스 hover 유예 (데스크톱)
   var groups = nav.querySelectorAll('.nav-group');

@@ -47,28 +47,28 @@
 
 const $=id=>document.getElementById(id);
 const cv=$('cv'), ctx=cv.getContext('2d');
-let names=[], results=[], rungs=[], paths=[], W=0, H=0, colW=0, top=50, bottom=50, done=false;
+let names=[], results=[], rungs=[], paths=[], W=0, H=0, colW=0, padT=50, padB=50, done=false;
 const parse=s=>s.split(/[\n,]/).map(x=>x.trim()).filter(Boolean);
 function make(){
   names=parse($('names').value); if(names.length<2){ alert('참가자를 2명 이상 입력하세요'); return; }
   results=parse($('results').value); while(results.length<names.length) results.push('꽝'); results=results.slice(0,names.length);
   const n=names.length; colW=Math.max(70,Math.min(110,600/n)); W=colW*n; H=360;
-  rungs=[]; const levels=12; const step=(H-top-bottom)/(levels+1);
-  for(let l=1;l<=levels;l++){ let prev=false; for(let c=0;c<n-1;c++){ if(!prev&&Math.random()<0.45){ rungs.push({y:top+step*l,c}); prev=true; } else prev=false; } }
+  rungs=[]; const levels=12; const step=(H-padT-padB)/(levels+1);
+  for(let l=1;l<=levels;l++){ let prev=false; for(let c=0;c<n-1;c++){ if(!prev&&Math.random()<0.45){ rungs.push({y:padT+step*l,c}); prev=true; } else prev=false; } }
   paths=names.map((_,i)=>trace(i)); done=false; draw(); $('hint').textContent='위 이름을 클릭하면 길을 따라가요';
 }
-function trace(col){ const pts=[{x:col,y:top}]; let c=col; const ys=[...new Set(rungs.map(r=>r.y))].sort((a,b)=>a-b);
+function trace(col){ const pts=[{x:col,y:padT}]; let c=col; const ys=[...new Set(rungs.map(r=>r.y))].sort((a,b)=>a-b);
   for(const y of ys){ const r=rungs.find(r=>r.y===y&&(r.c===c||r.c===c-1)); if(r){ pts.push({x:c,y}); c= r.c===c? c+1 : c-1; pts.push({x:c,y}); } }
-  pts.push({x:c,y:H-bottom}); return {pts,end:c}; }
+  pts.push({x:c,y:H-padB}); return {pts,end:c}; }
 function draw(highlight){
   cv.width=W; cv.height=H; ctx.clearRect(0,0,W,H); ctx.lineWidth=3; ctx.strokeStyle='#c9bfa8'; ctx.font='bold 14px sans-serif'; ctx.textAlign='center'; ctx.fillStyle='#1f1d1a';
-  names.forEach((nm,i)=>{ const x=colW*i+colW/2; ctx.beginPath(); ctx.moveTo(x,top); ctx.lineTo(x,H-bottom); ctx.stroke(); ctx.fillText(nm,x,top-16); });
+  names.forEach((nm,i)=>{ const x=colW*i+colW/2; ctx.beginPath(); ctx.moveTo(x,padT); ctx.lineTo(x,H-padB); ctx.stroke(); ctx.fillText(nm,x,padT-16); });
   rungs.forEach(r=>{ const x1=colW*r.c+colW/2, x2=x1+colW; ctx.beginPath(); ctx.moveTo(x1,r.y); ctx.lineTo(x2,r.y); ctx.stroke(); });
-  results.forEach((rs,i)=>{ const x=colW*i+colW/2; ctx.fillStyle= done||highlight!=null? '#1f1d1a':'#b3ab9c'; ctx.fillText(done||highlight!=null? rs:'?',x,H-bottom+22); });
+  results.forEach((rs,i)=>{ const x=colW*i+colW/2; ctx.fillStyle= done||highlight!=null? '#1f1d1a':'#b3ab9c'; ctx.fillText(done||highlight!=null? rs:'?',x,H-padB+22); });
   if(highlight!=null){ const p=paths[highlight].pts; ctx.strokeStyle='#b8823a'; ctx.lineWidth=5; ctx.beginPath(); p.forEach((pt,i)=>{ const x=colW*pt.x+colW/2; i? ctx.lineTo(x,pt.y):ctx.moveTo(x,pt.y); }); ctx.stroke(); }
 }
 function animate(i){ const p=paths[i].pts; let seg=0, t=0; const step=()=>{ draw(); ctx.strokeStyle='#b8823a'; ctx.lineWidth=5; ctx.beginPath(); for(let k=0;k<seg;k++){ const a=p[k], b=p[k+1]; ctx.moveTo(colW*a.x+colW/2,a.y); ctx.lineTo(colW*b.x+colW/2,b.y); } if(seg<p.length-1){ const a=p[seg], b=p[seg+1]; const x=colW*a.x+colW/2+(colW*b.x-colW*a.x)*t, y=a.y+(b.y-a.y)*t; ctx.moveTo(colW*a.x+colW/2,a.y); ctx.lineTo(x,y); } ctx.stroke(); t+=0.12; if(t>=1){ t=0; seg++; } if(seg<p.length-1) requestAnimationFrame(step); else { draw(i); $('hint').innerHTML=`<b>${names[i]}</b> → <b style="color:var(--accent)">${results[paths[i].end]}</b>`; } }; step(); }
-cv.addEventListener('click',e=>{ if(!names.length) return; const rect=cv.getBoundingClientRect(); const x=(e.clientX-rect.left)*(cv.width/rect.width), y=(e.clientY-rect.top)*(cv.height/rect.height); if(y<top){ const i=Math.floor(x/colW); if(i>=0&&i<names.length){ animate(i); if(typeof gtag==='function') gtag('event','ladder_played',{n:names.length}); } } });
+cv.addEventListener('click',e=>{ if(!names.length) return; const rect=cv.getBoundingClientRect(); const x=(e.clientX-rect.left)*(cv.width/rect.width), y=(e.clientY-rect.padT)*(cv.height/rect.height); if(y<padT){ const i=Math.floor(x/colW); if(i>=0&&i<names.length){ animate(i); if(typeof gtag==='function') gtag('event','ladder_played',{n:names.length}); } } });
 $('make').addEventListener('click',make); $('all').addEventListener('click',()=>{ if(!names.length) return; done=true; draw(); $('hint').innerHTML=names.map((nm,i)=>`${nm} → <b>${results[paths[i].end]}</b>`).join(' · '); });
 make();
  

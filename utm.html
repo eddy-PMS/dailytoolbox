@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>UTM 생성기 - 캠페인 URL 만들기 (utm_source·medium·campaign)</title>
+<meta name="description" content="랜딩 URL에 utm_source·utm_medium·utm_campaign 등 UTM 파라미터를 붙여 광고·SNS·뉴스레터 유입을 추적하는 캠페인 URL을 만드는 무료 도구. 네이버·구글·카카오 프리셋.">
+<meta name="keywords" content="UTM 생성기, UTM 링크 만들기, UTM 파라미터, 캠페인 URL 생성, utm_source utm_medium, GA4 유입 추적">
+<link rel="canonical" href="https://dailyfreetoolbox.com/utm.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="UTM 생성기">
+<meta property="og:description" content="랜딩 URL에 utm_source·utm_medium·utm_campaign 등 UTM 파라미터를 붙여 광고·SNS·뉴스레터 유입을 추적하는 캠페인 URL을 만드는 무료 도구. 네이버·구글·카카오 프리셋.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/utm.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "UTM 생성기", "url": "https://dailyfreetoolbox.com/utm.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "랜딩 URL에 utm_source·utm_medium·utm_campaign 등 UTM 파라미터를 붙여 광고·SNS·뉴스레터 유입을 추적하는 캠페인 URL을 만드는 무료 도구. 네이버·구글·카카오 프리셋."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#3b6d8a; --accent-deep:#2a5168; }</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "UTM 링크가 너무 길어요.", "acceptedAnswer": {"@type": "Answer", "text": "단축 URL 서비스(bit.ly, 네이버 me2.do 등)로 줄여 쓰면 돼요. 단축해도 UTM은 유지돼요."}}, {"@type": "Question", "name": "내부 링크에도 UTM을 붙이나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 사이트 안에서 이동하는 링크에 UTM을 붙이면 세션이 끊기고 원래 유입 정보가 덮어써져요. 외부에서 들어오는 링크에만 쓰세요."}}, {"@type": "Question", "name": "GA4에서 어디서 확인하나요?", "acceptedAnswer": {"@type": "Answer", "text": "보고서 > 획득 > 트래픽 획득에서 세션 소스/매체, 세션 캠페인 측정기준으로 보면 돼요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#3b6d8a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🔗 UTM 생성기</b></div>
+  <h1>UTM 생성기</h1>
+  <p class="tagline">어디서 들어왔는지 GA에서 바로 보이게</p>
+  <p class="sub">URL과 소스·매체·캠페인 이름을 넣으면 UTM이 붙은 링크가 만들어져요. 자주 쓰는 채널 프리셋을 누르면 규칙에 맞는 값이 채워져요.</p>
+
+  <div class="card">
+    <div class="field"><label>랜딩 URL</label><input type="text" id="url" placeholder="https://example.com/event"></div>
+    <div class="row" style="margin:12px 0 4px;gap:6px" id="presets"></div>
+    <div class="grid2">
+      <div class="field"><label>utm_source (유입처) *</label><input type="text" id="source" placeholder="naver, google, instagram"></div>
+      <div class="field"><label>utm_medium (매체) *</label><input type="text" id="medium" placeholder="cpc, social, email, banner"></div>
+      <div class="field"><label>utm_campaign (캠페인) *</label><input type="text" id="campaign" placeholder="2026_autumn_sale"></div>
+      <div class="field"><label>utm_content (소재 구분, 선택)</label><input type="text" id="content" placeholder="banner_a, video_15s"></div>
+      <div class="field"><label>utm_term (키워드, 선택)</label><input type="text" id="term" placeholder="검색광고 키워드"></div>
+    </div>
+    <div class="row" style="margin-top:10px"><label><input type="checkbox" id="lower" checked> 소문자로 통일</label><label><input type="checkbox" id="dash" checked> 공백을 _ 로</label></div>
+    <div id="out" style="margin-top:14px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;word-break:break-all;background:var(--paper);padding:14px;border-radius:3px;border:1px solid var(--line);min-height:48px;color:var(--ink-soft)">URL과 필수 항목을 입력하세요</div>
+    <div class="btn-row"><button class="btn" id="copy" disabled>링크 복사</button><button class="btn-ghost" id="qr">QR코드로 만들기 →</button></div>
+    <div class="status" id="status"></div>
+  </div>
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>UTM 파라미터란</h2><p>UTM은 URL 뒤에 붙이는 추적용 꼬리표예요. utm_source(어디서: naver, instagram), utm_medium(어떤 방식: cpc, social, email), utm_campaign(어떤 캠페인: 2026_autumn_sale)이 필수 3종이고, utm_content(소재 구분)와 utm_term(검색 키워드)은 선택이에요. 이 꼬리표가 붙은 링크로 들어온 방문은 GA4·네이버 애널리틱스 보고서에 소스/매체/캠페인별로 나뉘어 잡혀서, 어느 광고·게시물이 실제 방문과 구매를 만들었는지 알 수 있어요.</p><p>UTM 없이 인스타그램 프로필 링크를 걸면 GA4에는 "instagram / referral"이나 앱 내 브라우저 때문에 "(direct)"로 뭉뚱그려져요. 캠페인별로 링크를 따로 만들어야 성과 비교가 가능해요.</p>
+<h2>UTM 표기 규칙 (권장)</h2><p><table><thead><tr><th>파라미터</th><th>권장 값 예시</th><th>주의</th></tr></thead><tbody><tr><td>utm_source</td><td>naver, google, instagram, kakao, newsletter</td><td>플랫폼 이름, 소문자</td></tr><tr><td>utm_medium</td><td>cpc, paid_social, social, email, display, referral</td><td>GA4 기본 채널 그룹과 맞추면 자동 분류됨</td></tr><tr><td>utm_campaign</td><td>2026_autumn_sale, launch_app_v2</td><td>날짜·목적을 넣어 나중에 알아보기 쉽게</td></tr><tr><td>utm_content</td><td>banner_a, video_15s, cta_top</td><td>A/B 테스트 소재 구분</td></tr><tr><td>utm_term</td><td>영어 단어장 앱</td><td>검색광고 키워드 (자동 태깅 쓰면 생략)</td></tr></tbody></table></p><p>GA4는 대소문자를 구분해서 Naver와 naver가 다른 소스로 잡혀요. 팀에서 소문자·언더바 규칙을 정해두는 게 가장 중요해요. 구글 애즈는 자동 태깅(gclid)을 쓰면 UTM을 따로 안 붙여도 되고, 네이버 검색광고는 UTM을 직접 붙여야 해요.</p>
+<h2>사용 방법</h2><ol><li>랜딩 URL을 넣고 채널 프리셋을 누르거나 source·medium·campaign을 직접 입력하세요.</li><li>소재 구분(content)·키워드(term)는 필요할 때만 넣으세요.</li><li>만들어진 링크를 복사하거나 "QR코드로 만들기"로 바로 QR을 만드세요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>UTM 링크가 너무 길어요.</summary><p>단축 URL 서비스(bit.ly, 네이버 me2.do 등)로 줄여 쓰면 돼요. 단축해도 UTM은 유지돼요.</p></details><details><summary>내부 링크에도 UTM을 붙이나요?</summary><p>아니요. 사이트 안에서 이동하는 링크에 UTM을 붙이면 세션이 끊기고 원래 유입 정보가 덮어써져요. 외부에서 들어오는 링크에만 쓰세요.</p></details><details><summary>GA4에서 어디서 확인하나요?</summary><p>보고서 > 획득 > 트래픽 획득에서 세션 소스/매체, 세션 캠페인 측정기준으로 보면 돼요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="qrcode.html">QR코드 생성기</a><a href="roas.html">ROAS 계산기</a><a href="cac-ltv.html">CAC·LTV 계산기</a><a href="charcount.html">글자수 세기</a></div></section>
+  <footer>UTM 값은 GA4·네이버 애널리틱스에서 대소문자를 구분해요. 팀 내 표기 규칙(소문자, 언더바)을 정해두면 보고서가 깔끔해져요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const PRESETS=[['네이버 검색광고','naver','cpc'],['구글 검색광고','google','cpc'],['메타(인스타·페북) 광고','meta','paid_social'],['인스타그램 게시물','instagram','social'],['유튜브','youtube','video'],['카카오 채널','kakao','message'],['뉴스레터','newsletter','email'],['블로그','blog','referral']];
+PRESETS.forEach(p=>{ const b=document.createElement('button'); b.className='btn-ghost'; b.style.cssText='padding:5px 10px;font-size:12px'; b.textContent=p[0]; b.addEventListener('click',()=>{ $('source').value=p[1]; $('medium').value=p[2]; build(); }); $('presets').appendChild(b); });
+let result='';
+function norm(v){ v=v.trim(); if($('dash').checked) v=v.replace(/\s+/g,'_'); if($('lower').checked) v=v.toLowerCase(); return v; }
+function build(){
+  let url=$('url').value.trim(); const s=norm($('source').value), m=norm($('medium').value), c=norm($('campaign').value), ct=norm($('content').value), t=norm($('term').value);
+  if(!url||!s||!m||!c){ $('out').textContent='URL과 필수 항목(source·medium·campaign)을 입력하세요'; $('out').style.color='var(--ink-soft)'; $('copy').disabled=true; result=''; return; }
+  if(!/^https?:\/\//i.test(url)) url='https://'+url;
+  let u; try{ u=new URL(url); }catch{ $('out').textContent='URL 형식을 확인하세요'; $('copy').disabled=true; return; }
+  u.searchParams.set('utm_source',s); u.searchParams.set('utm_medium',m); u.searchParams.set('utm_campaign',c); if(ct) u.searchParams.set('utm_content',ct); else u.searchParams.delete('utm_content'); if(t) u.searchParams.set('utm_term',t); else u.searchParams.delete('utm_term');
+  result=u.toString(); $('out').textContent=result; $('out').style.color='var(--ink)'; $('copy').disabled=false;
+}
+['url','source','medium','campaign','content','term','lower','dash'].forEach(id=>$(id).addEventListener('input',build));
+$('copy').addEventListener('click',async()=>{ try{ await navigator.clipboard.writeText(result); $('status').textContent='복사했어요'; setTimeout(()=>$('status').textContent='',1500); if(typeof gtag==='function') gtag('event','utm_generated',{}); }catch{ $('status').textContent='복사에 실패했어요. 직접 드래그해서 복사하세요.'; } });
+$('qr').addEventListener('click',()=>{ if(!result){ $('status').textContent='먼저 링크를 만드세요'; return; } sessionStorage.setItem('qr_prefill',result); location.href='qrcode.html'; });
+ 
+</script>
+
+</body>
+</html>

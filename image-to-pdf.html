@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>이미지 PDF 변환 - JPG PNG 사진 여러 장을 PDF 한 파일로</title>
+<meta name="description" content="JPG·PNG·WEBP 사진 여러 장을 순서대로 PDF 한 파일로 만드는 무료 변환기. A4 맞춤·원본 크기 선택, 업로드 없이 브라우저에서 처리.">
+<meta name="keywords" content="이미지 PDF 변환, JPG PDF 변환, 사진 PDF로 만들기, PNG PDF 변환, 이미지 여러장 PDF, 스캔 사진 PDF">
+<link rel="canonical" href="https://dailyfreetoolbox.com/image-to-pdf.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="이미지 PDF 변환">
+<meta property="og:description" content="JPG·PNG·WEBP 사진 여러 장을 순서대로 PDF 한 파일로 만드는 무료 변환기. A4 맞춤·원본 크기 선택, 업로드 없이 브라우저에서 처리.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/image-to-pdf.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "이미지 PDF 변환", "url": "https://dailyfreetoolbox.com/image-to-pdf.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "JPG·PNG·WEBP 사진 여러 장을 순서대로 PDF 한 파일로 만드는 무료 변환기. A4 맞춤·원본 크기 선택, 업로드 없이 브라우저에서 처리."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2f5d4e; --accent-deep:#22453a; }</style>
+<script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script><style>
+.drop{border:2px dashed var(--line);border-radius:3px;padding:26px;text-align:center;color:var(--ink-soft);font-size:14px;cursor:pointer;background:#fff}
+.drop.over{border-color:var(--accent);background:var(--paper-deep)}
+.flist{margin-top:12px;font-size:14px}.flist .fi{display:flex;align-items:center;gap:10px;padding:8px 10px;border-bottom:1px solid var(--paper-deep)}
+.flist .fi .nm{flex:1;word-break:break-all}.flist .fi small{color:var(--ink-soft)}
+.flist .fi button{padding:4px 8px;font-size:12px}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "아이폰 HEIC 사진이 안 올라가요.", "acceptedAnswer": {"@type": "Answer", "text": "사파리 외 브라우저는 HEIC를 읽지 못해요. 아이폰 설정 > 카메라 > 포맷을 \"높은 호환성\"으로 바꾸거나, 사진을 JPG로 공유한 뒤 사용하세요."}}, {"@type": "Question", "name": "PNG 투명 배경은 어떻게 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "흰색 배경으로 바뀌어요. PDF 페이지가 흰색이라 대부분 자연스러워요."}}, {"@type": "Question", "name": "한 장을 한 페이지에 두 개씩 넣을 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "현재는 한 장에 한 이미지예요. 여러 장을 한 페이지에 배치하려면 이미지 편집기에서 먼저 합치세요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f5d4e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🖼 이미지 → PDF 변환</b></div>
+  <h1>이미지 PDF 변환</h1>
+  <p class="tagline">사진 여러 장을 PDF 한 장으로</p>
+  <p class="sub">서류 사진, 스캔본, 스크린샷을 골라 순서를 정하면 PDF로 묶어드려요. A4 규격에 맞추거나 원본 크기 그대로 넣을 수 있고, 파일은 서버로 가지 않아요.</p>
+
+  <div class="card">
+    <div class="drop" id="drop">여기에 이미지를 끌어다 놓거나 클릭해서 선택 (JPG·PNG·WEBP, 여러 장)<input type="file" id="file" accept="image/*" multiple style="display:none"></div>
+    <div class="flist" id="list"></div>
+    <div class="row" style="margin-top:12px">
+      <label>페이지 크기 <select id="size" style="width:auto;padding:5px 8px;font-size:13px"><option value="a4">A4 세로 (이미지 맞춤)</option><option value="a4l">A4 가로</option><option value="fit">이미지 원본 크기</option></select></label>
+      <label>여백 <select id="margin" style="width:auto;padding:5px 8px;font-size:13px"><option value="0">없음</option><option value="20" selected>보통</option><option value="40">넓게</option></select></label>
+      <label>JPG 품질 <select id="q" style="width:auto;padding:5px 8px;font-size:13px"><option value="0.92">높음</option><option value="0.8" selected>보통 (용량 절약)</option><option value="0.6">낮음</option></select></label>
+    </div>
+    <div class="btn-row"><button class="btn" id="run" disabled>PDF 만들기</button><button class="btn-ghost" id="clear">비우기</button></div>
+    <div class="status" id="status"></div>
+  </div>
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>사진을 PDF로 만들어야 할 때</h2><p>신분증·통장 사본·계약서를 폰으로 찍어 제출할 때, 여러 장의 스캔 이미지를 한 파일로 묶을 때, 스크린샷 모음을 문서처럼 보낼 때 이미지→PDF 변환이 필요해요. 이 도구는 JPG·PNG·WEBP 여러 장을 순서대로 PDF 한 파일로 만들고, A4 규격에 자동으로 맞춰줘요. 서버에 올리지 않으니 신분증 사진도 안전해요.</p><p>제출용 서류는 "A4 세로 + 보통 여백"이 무난하고, 가로로 긴 표나 화면 캡처는 "A4 가로"가 보기 좋아요. 이미지를 자르거나 회전할 필요가 있다면 먼저 폰 갤러리에서 편집한 뒤 올리세요.</p>
+<h2>용량과 화질</h2><p><table><thead><tr><th>JPG 품질</th><th>사진 1장당 대략</th><th>용도</th></tr></thead><tbody><tr><td>높음 (92%)</td><td>600KB~1.5MB</td><td>인쇄용, 세밀한 도면</td></tr><tr><td>보통 (80%)</td><td>300~700KB</td><td>일반 제출 서류 (권장)</td></tr><tr><td>낮음 (60%)</td><td>150~400KB</td><td>메일 첨부, 용량 제한이 빡빡할 때</td></tr></tbody></table></p><p>긴 변을 2480px(A4 300dpi)로 맞추기 때문에 스마트폰 원본(4000px대)보다 작아지지만 인쇄·제출용으로는 충분해요.</p>
+<h2>사용 방법</h2><ol><li>이미지를 끌어다 놓거나 여러 장 선택하고 ↑↓로 순서를 정하세요.</li><li>페이지 크기(A4 세로/가로/원본), 여백, JPG 품질을 고르세요.</li><li>"PDF 만들기"를 누르면 images.pdf가 다운로드돼요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>아이폰 HEIC 사진이 안 올라가요.</summary><p>사파리 외 브라우저는 HEIC를 읽지 못해요. 아이폰 설정 > 카메라 > 포맷을 "높은 호환성"으로 바꾸거나, 사진을 JPG로 공유한 뒤 사용하세요.</p></details><details><summary>PNG 투명 배경은 어떻게 되나요?</summary><p>흰색 배경으로 바뀌어요. PDF 페이지가 흰색이라 대부분 자연스러워요.</p></details><details><summary>한 장을 한 페이지에 두 개씩 넣을 수 있나요?</summary><p>현재는 한 장에 한 이미지예요. 여러 장을 한 페이지에 배치하려면 이미지 편집기에서 먼저 합치세요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="pdf-merge.html">PDF 합치기</a><a href="pdf-split.html">PDF 분할하기</a><a href="image-compress.html">이미지 용량 줄이기</a><a href="qrcode.html">QR코드 생성기</a></div></section>
+  <footer>이미지는 JPG로 변환되어 PDF에 담겨요(긴 변 2480px 이하로 조정, 인쇄용 A4 300dpi 수준). 아이폰 HEIC는 브라우저에 따라 안 될 수 있으니 JPG로 내보낸 뒤 사용하세요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+let files=[];
+const kb=n=>n>1048576?(n/1048576).toFixed(1)+' MB':Math.round(n/1024)+' KB';
+function render(){ $('list').innerHTML=files.map((f,i)=>`<div class="fi"><span style="color:var(--ink-soft)">${i+1}</span><span class="nm">${f.name} <small>(${kb(f.size)})</small></span><button class="btn-ghost up" data-i="${i}">↑</button><button class="btn-ghost down" data-i="${i}">↓</button><button class="btn-ghost del" data-i="${i}">×</button></div>`).join(''); $('run').disabled=!files.length;
+  $('list').querySelectorAll('.up').forEach(b=>b.addEventListener('click',()=>{const i=+b.dataset.i; if(i>0){[files[i-1],files[i]]=[files[i],files[i-1]];render();}}));
+  $('list').querySelectorAll('.down').forEach(b=>b.addEventListener('click',()=>{const i=+b.dataset.i; if(i<files.length-1){[files[i+1],files[i]]=[files[i],files[i+1]];render();}}));
+  $('list').querySelectorAll('.del').forEach(b=>b.addEventListener('click',()=>{files.splice(+b.dataset.i,1);render();})); }
+function add(list){ for(const f of list){ if(/^image\//.test(f.type)) files.push(f); } render(); }
+$('drop').addEventListener('click',()=>$('file').click()); $('file').addEventListener('change',e=>{add(e.target.files);e.target.value='';});
+['dragenter','dragover'].forEach(ev=>$('drop').addEventListener(ev,e=>{e.preventDefault();$('drop').classList.add('over');})); ['dragleave','drop'].forEach(ev=>$('drop').addEventListener(ev,e=>{e.preventDefault();$('drop').classList.remove('over');})); $('drop').addEventListener('drop',e=>add(e.dataTransfer.files));
+$('clear').addEventListener('click',()=>{files=[];render();$('status').textContent='';});
+function loadImg(f){ return new Promise((res,rej)=>{ const img=new Image(); img.onload=()=>res(img); img.onerror=rej; img.src=URL.createObjectURL(f); }); }
+async function toJpegBytes(img,q){ const c=document.createElement('canvas'); const max=2480; const sc=Math.min(1,max/Math.max(img.naturalWidth,img.naturalHeight)); c.width=Math.round(img.naturalWidth*sc); c.height=Math.round(img.naturalHeight*sc); const ctx=c.getContext('2d'); ctx.fillStyle='#fff'; ctx.fillRect(0,0,c.width,c.height); ctx.drawImage(img,0,0,c.width,c.height); const blob=await new Promise(r=>c.toBlob(r,'image/jpeg',q)); return new Uint8Array(await blob.arrayBuffer()); }
+$('run').addEventListener('click',async()=>{
+  if(typeof PDFLib==='undefined'){ $('status').textContent='PDF 라이브러리를 불러오는 중이에요. 잠시 후 다시 눌러주세요.'; return; }
+  $('run').disabled=true; $('status').textContent='변환 중…';
+  try{ const doc=await PDFLib.PDFDocument.create(); const size=$('size').value, margin=+$('margin').value, q=+$('q').value;
+    for(const f of files){ const img=await loadImg(f); const bytes=await toJpegBytes(img,q); const emb=await doc.embedJpg(bytes); URL.revokeObjectURL(img.src);
+      let pw,ph; if(size==='a4'){pw=595.28;ph=841.89;} else if(size==='a4l'){pw=841.89;ph=595.28;} else { pw=emb.width*0.75+margin*2; ph=emb.height*0.75+margin*2; }
+      const page=doc.addPage([pw,ph]); const aw=pw-margin*2, ah=ph-margin*2; const sc=Math.min(aw/emb.width, ah/emb.height); const w=emb.width*sc, h=emb.height*sc;
+      page.drawImage(emb,{x:(pw-w)/2,y:(ph-h)/2,width:w,height:h}); }
+    const out=await doc.save(); const blob=new Blob([out],{type:'application/pdf'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='images.pdf'; a.click();
+    $('status').innerHTML=`<span class="ok">완료 — ${files.length}장 → PDF (${kb(blob.size)}). 다운로드가 시작됐어요.</span>`;
+    if(typeof gtag==='function') gtag('event','image_to_pdf',{n:files.length});
+  }catch(e){ $('status').innerHTML='<span class="bad">변환에 실패했어요. 지원하지 않는 이미지 형식(HEIC 등)이 섞여 있는지 확인하세요.</span>'; }
+  $('run').disabled=false;
+});
+ 
+</script>
+
+</body>
+</html>

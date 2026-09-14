@@ -51,7 +51,10 @@
       ['lotto.html', '로또 번호 생성기'],
       ['password.html', '비밀번호 생성기'],
       ['percent.html', '퍼센트 계산기'],
-      ['discount.html', '할인율 계산기']
+      ['discount.html', '할인율 계산기'],
+      ['pdf-merge.html', 'PDF 합치기'],
+      ['pdf-split.html', 'PDF 분할하기'],
+      ['image-to-pdf.html', '이미지 → PDF']
     ]},
     { label: '가족', items: [
       ['pregnancy.html', '출산예정일·임신 주수'],
@@ -71,7 +74,8 @@
       ['breakeven.html', '손익분기점 계산기'],
       ['roas.html', 'ROAS 계산기'],
       ['cac-ltv.html', 'CAC·LTV 계산기'],
-      ['worktime.html', '근무시간·야근 계산기']
+      ['worktime.html', '근무시간·야근 계산기'],
+      ['utm.html', 'UTM 생성기']
     ]},
     { label: '학생', items: [
       ['gpa.html', '학점 계산기'],

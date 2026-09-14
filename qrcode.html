@@ -82,6 +82,7 @@ function draw(){ clearTimeout(timer); timer=setTimeout(()=>{
   }catch(e){ $('status').textContent='내용이 너무 길어요. 줄여주세요.'; dl.classList.add('hidden'); }
 },200); }
 ['text','ssid','pw','enc','hidden','size','ecl'].forEach(id=>$(id).addEventListener('input',draw));
+try{ const pre=sessionStorage.getItem('qr_prefill'); if(pre){ $('text').value=pre; sessionStorage.removeItem('qr_prefill'); draw(); } }catch(e){}
  
 </script>
 

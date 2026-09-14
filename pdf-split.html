@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>PDF 분할하기 - 페이지 범위 추출, 페이지별로 나누기</title>
+<meta name="description" content="PDF에서 원하는 페이지만 뽑아 새 PDF로 만들거나, 페이지마다 따로 나누는 무료 도구. 브라우저에서 처리해 파일이 서버로 올라가지 않아요.">
+<meta name="keywords" content="PDF 분할, PDF 나누기, PDF 페이지 추출, PDF 페이지 분리, PDF 특정 페이지만 저장, PDF 쪼개기">
+<link rel="canonical" href="https://dailyfreetoolbox.com/pdf-split.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PDF 분할하기">
+<meta property="og:description" content="PDF에서 원하는 페이지만 뽑아 새 PDF로 만들거나, 페이지마다 따로 나누는 무료 도구. 브라우저에서 처리해 파일이 서버로 올라가지 않아요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/pdf-split.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "PDF 분할하기", "url": "https://dailyfreetoolbox.com/pdf-split.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "PDF에서 원하는 페이지만 뽑아 새 PDF로 만들거나, 페이지마다 따로 나누는 무료 도구. 브라우저에서 처리해 파일이 서버로 올라가지 않아요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2c3e5e; --accent-deep:#202d45; }</style>
+<script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script><style>
+.drop{border:2px dashed var(--line);border-radius:3px;padding:26px;text-align:center;color:var(--ink-soft);font-size:14px;cursor:pointer;background:#fff}
+.drop.over{border-color:var(--accent);background:var(--paper-deep)}
+.flist{margin-top:12px;font-size:14px}.flist .fi{display:flex;align-items:center;gap:10px;padding:8px 10px;border-bottom:1px solid var(--paper-deep)}
+.flist .fi .nm{flex:1;word-break:break-all}.flist .fi small{color:var(--ink-soft)}
+.flist .fi button{padding:4px 8px;font-size:12px}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "페이지 순서를 바꿔서 저장할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 범위 추출에서 \"3, 1, 2\"처럼 입력하면 그 순서대로 배치돼요."}}, {"@type": "Question", "name": "한 번에 여러 범위를 각각 다른 파일로 만들 수는 없나요?", "acceptedAnswer": {"@type": "Answer", "text": "현재는 한 범위가 한 파일이에요. 필요한 만큼 반복해서 추출하세요."}}, {"@type": "Question", "name": "분할한 파일 용량이 원본보다 커요.", "acceptedAnswer": {"@type": "Answer", "text": "폰트·이미지 등 공유 자원이 각 파일에 복사되기 때문이에요. 페이지별 분할 시 흔한 현상이에요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2c3e5e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>✂ PDF 분할하기</b></div>
+  <h1>PDF 분할하기</h1>
+  <p class="tagline">필요한 페이지만 뽑거나, 한 장씩 나누거나</p>
+  <p class="sub">"1-3, 5, 8-10"처럼 페이지 범위를 지정해 새 PDF로 저장하거나, 모든 페이지를 각각 별도 PDF로 나눌 수 있어요. 업로드 없이 브라우저에서 처리해요.</p>
+
+  <div class="card">
+    <div class="drop" id="drop">여기에 PDF 파일을 끌어다 놓거나 클릭해서 선택<input type="file" id="file" accept="application/pdf" style="display:none"></div>
+    <div class="status" id="info"></div>
+    <div class="tabs" style="margin-top:12px"><button class="tab active" data-m="range">페이지 범위 추출</button><button class="tab" data-m="each">페이지별로 나누기</button><button class="tab" data-m="chunk">N쪽씩 나누기</button></div>
+    <div class="grid2">
+      <div class="field" id="rangeWrap"><label>추출할 페이지 (예: 1-3, 5, 8-10)</label><input type="text" id="range" placeholder="1-3, 5"></div>
+      <div class="field hidden" id="chunkWrap"><label>한 파일당 페이지 수</label><input type="number" id="chunk" value="10" min="1"></div>
+    </div>
+    <div class="btn-row"><button class="btn" id="run" disabled>분할하기</button></div>
+    <div class="status" id="status"></div>
+  </div>
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>PDF 분할, 세 가지 방식</h2><p>① 페이지 범위 추출: "1-3, 5, 8-10"처럼 필요한 페이지만 골라 새 PDF 하나로 저장해요. 긴 보고서에서 제출할 부분만 뽑을 때 써요. ② 페이지별로 나누기: 모든 페이지를 각각 별도 PDF로 저장해요. 급여명세서·성적표처럼 한 파일에 여러 사람 것이 묶인 경우에 유용해요. ③ N쪽씩 나누기: 10쪽씩, 20쪽씩 일정 단위로 쪼개요. 메일 첨부 용량 제한에 맞출 때 좋아요.</p><p>모든 처리는 브라우저 안에서 이루어져 파일이 서버로 가지 않아요. 여러 파일이 만들어질 때는 브라우저가 "여러 파일 다운로드를 허용할까요?"라고 물을 수 있는데, 허용하면 순서대로 저장돼요.</p>
+<h2>페이지 범위 입력 예시</h2><p><table><thead><tr><th>입력</th><th>결과</th></tr></thead><tbody><tr><td>1-3</td><td>1, 2, 3쪽</td></tr><tr><td>5</td><td>5쪽만</td></tr><tr><td>1-3, 7, 10-12</td><td>1, 2, 3, 7, 10, 11, 12쪽을 순서대로</td></tr><tr><td>5, 1</td><td>5쪽 다음 1쪽 (입력 순서대로 배치)</td></tr></tbody></table></p>
+<h2>사용 방법</h2><ol><li>PDF를 끌어다 놓거나 선택하면 총 페이지 수가 표시돼요.</li><li>방식(범위 추출 / 페이지별 / N쪽씩)을 고르고 필요한 값을 넣으세요.</li><li>"분할하기"를 누르면 새 PDF가 다운로드돼요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>페이지 순서를 바꿔서 저장할 수 있나요?</summary><p>네. 범위 추출에서 "3, 1, 2"처럼 입력하면 그 순서대로 배치돼요.</p></details><details><summary>한 번에 여러 범위를 각각 다른 파일로 만들 수는 없나요?</summary><p>현재는 한 범위가 한 파일이에요. 필요한 만큼 반복해서 추출하세요.</p></details><details><summary>분할한 파일 용량이 원본보다 커요.</summary><p>폰트·이미지 등 공유 자원이 각 파일에 복사되기 때문이에요. 페이지별 분할 시 흔한 현상이에요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="pdf-merge.html">PDF 합치기</a><a href="image-to-pdf.html">이미지 → PDF</a><a href="image-compress.html">이미지 용량 줄이기</a><a href="charcount.html">글자수 세기</a></div></section>
+  <footer>모든 처리는 브라우저 안에서 이루어지며 파일이 서버로 전송되지 않아요. 암호가 걸린 PDF는 먼저 암호를 해제해야 해요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+let file=null, pageCount=0, mode='range';
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.m;$('rangeWrap').classList.toggle('hidden',mode!=='range');$('chunkWrap').classList.toggle('hidden',mode!=='chunk');}));
+async function setFile(f){ if(!f) return; file=f; $('info').textContent='읽는 중…'; try{ const doc=await PDFLib.PDFDocument.load(await f.arrayBuffer(),{ignoreEncryption:true}); pageCount=doc.getPageCount(); $('info').innerHTML=`<b>${f.name}</b> — 총 ${pageCount}쪽`; $('run').disabled=false; $('range').placeholder=`1-${pageCount}`; }catch(e){ $('info').innerHTML='<span class="bad">PDF를 읽지 못했어요. 암호가 걸렸거나 손상된 파일일 수 있어요.</span>'; } }
+$('drop').addEventListener('click',()=>$('file').click()); $('file').addEventListener('change',e=>setFile(e.target.files[0]));
+['dragenter','dragover'].forEach(ev=>$('drop').addEventListener(ev,e=>{e.preventDefault();$('drop').classList.add('over');})); ['dragleave','drop'].forEach(ev=>$('drop').addEventListener(ev,e=>{e.preventDefault();$('drop').classList.remove('over');})); $('drop').addEventListener('drop',e=>setFile(e.dataTransfer.files[0]));
+function parseRange(s,max){ const set=[]; for(const part of s.split(',')){ const t=part.trim(); if(!t) continue; const m=t.match(/^(\d+)\s*-\s*(\d+)$/); if(m){ for(let i=+m[1];i<=+m[2];i++) if(i>=1&&i<=max&&!set.includes(i-1)) set.push(i-1); } else if(/^\d+$/.test(t)){ const i=+t; if(i>=1&&i<=max&&!set.includes(i-1)) set.push(i-1); } } return set; }
+async function save(src, idx, name){ const out=await PDFLib.PDFDocument.create(); const pages=await out.copyPages(src, idx); pages.forEach(p=>out.addPage(p)); const bytes=await out.save(); const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([bytes],{type:'application/pdf'})); a.download=name; a.click(); }
+$('run').addEventListener('click',async()=>{
+  if(!file) return; $('run').disabled=true; $('status').textContent='처리 중…';
+  try{ const src=await PDFLib.PDFDocument.load(await file.arrayBuffer(),{ignoreEncryption:true}); const base=file.name.replace(/\.pdf$/i,''); let n=0;
+    if(mode==='range'){ const idx=parseRange($('range').value,pageCount); if(!idx.length){ $('status').innerHTML='<span class="bad">추출할 페이지를 입력하세요 (예: 1-3, 5)</span>'; $('run').disabled=false; return; } await save(src,idx,`${base}_p${$('range').value.replace(/\s/g,'')}.pdf`); n=1; }
+    else if(mode==='each'){ for(let i=0;i<pageCount;i++){ await save(src,[i],`${base}_${i+1}.pdf`); n++; await new Promise(r=>setTimeout(r,250)); } }
+    else { const c=Math.max(1,+$('chunk').value||1); for(let s=0;s<pageCount;s+=c){ const idx=[]; for(let i=s;i<Math.min(s+c,pageCount);i++) idx.push(i); await save(src,idx,`${base}_${s+1}-${Math.min(s+c,pageCount)}.pdf`); n++; await new Promise(r=>setTimeout(r,250)); } }
+    $('status').innerHTML=`<span class="ok">완료 — 파일 ${n}개 다운로드. 여러 파일이면 브라우저가 "여러 파일 다운로드 허용"을 물을 수 있어요.</span>`;
+    if(typeof gtag==='function') gtag('event','pdf_split',{mode,n});
+  }catch(e){ $('status').innerHTML='<span class="bad">분할에 실패했어요. 파일을 확인해주세요.</span>'; }
+  $('run').disabled=false;
+});
+ 
+</script>
+
+</body>
+</html>

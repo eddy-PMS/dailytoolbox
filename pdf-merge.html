@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>PDF 합치기 - 여러 PDF 파일 하나로 병합 (설치·업로드 없음)</title>
+<meta name="description" content="여러 PDF를 순서대로 하나로 합치는 무료 도구. 브라우저 안에서 처리해 파일이 서버로 올라가지 않아 계약서·개인 서류도 안전하게.">
+<meta name="keywords" content="PDF 합치기, PDF 병합, PDF 하나로 합치기, PDF 합치기 무료, PDF 합치는 방법, PDF 결합">
+<link rel="canonical" href="https://dailyfreetoolbox.com/pdf-merge.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PDF 합치기">
+<meta property="og:description" content="여러 PDF를 순서대로 하나로 합치는 무료 도구. 브라우저 안에서 처리해 파일이 서버로 올라가지 않아 계약서·개인 서류도 안전하게.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/pdf-merge.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "PDF 합치기", "url": "https://dailyfreetoolbox.com/pdf-merge.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "여러 PDF를 순서대로 하나로 합치는 무료 도구. 브라우저 안에서 처리해 파일이 서버로 올라가지 않아 계약서·개인 서류도 안전하게."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#a83a2c; --accent-deep:#8a2f23; }</style>
+<script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script><style>
+.drop{border:2px dashed var(--line);border-radius:3px;padding:26px;text-align:center;color:var(--ink-soft);font-size:14px;cursor:pointer;background:#fff}
+.drop.over{border-color:var(--accent);background:var(--paper-deep)}
+.flist{margin-top:12px;font-size:14px}.flist .fi{display:flex;align-items:center;gap:10px;padding:8px 10px;border-bottom:1px solid var(--paper-deep)}
+.flist .fi .nm{flex:1;word-break:break-all}.flist .fi small{color:var(--ink-soft)}
+.flist .fi button{padding:4px 8px;font-size:12px}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "암호가 걸린 PDF도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "열람 암호가 걸린 파일은 합칠 수 없어요. 먼저 PDF 뷰어에서 암호를 해제해 다시 저장한 뒤 사용하세요."}}, {"@type": "Question", "name": "합치면 화질이 떨어지나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 페이지를 그대로 복사하기 때문에 원본 화질이 유지되고, 용량은 원본 합계와 비슷해요."}}, {"@type": "Question", "name": "몇 개까지 합칠 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "개수 제한은 없지만 총 용량이 100MB를 넘으면 기기 메모리에 따라 느려질 수 있어요."}}, {"@type": "Question", "name": "PDF 안의 링크·북마크도 유지되나요?", "acceptedAnswer": {"@type": "Answer", "text": "페이지 내용과 링크는 유지되지만 북마크(목차)는 합칠 때 사라질 수 있어요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#a83a2c"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>📎 PDF 합치기</b></div>
+  <h1>PDF 합치기</h1>
+  <p class="tagline">여러 PDF를 하나로, 업로드 없이</p>
+  <p class="sub">PDF 파일을 여러 개 고르고 순서를 정하면 하나로 합쳐드려요. 모든 처리가 내 브라우저 안에서 이루어져 파일이 어디에도 전송되지 않아요.</p>
+
+  <div class="card">
+    <div class="drop" id="drop">여기에 PDF 파일을 끌어다 놓거나 클릭해서 선택 (여러 개 가능)<input type="file" id="file" accept="application/pdf" multiple style="display:none"></div>
+    <div class="flist" id="list"></div>
+    <div class="btn-row"><button class="btn" id="run" disabled>합치기</button><button class="btn-ghost" id="clear">비우기</button></div>
+    <div class="status" id="status"></div>
+  </div>
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>PDF 합치기, 왜 브라우저에서 하나요</h2><p>계약서·이력서·증빙 서류처럼 개인정보가 담긴 PDF를 온라인 서비스에 올리는 건 늘 찜찜해요. 이 도구는 PDF를 서버로 보내지 않고 내 브라우저 안에서 합쳐요. 파일이 컴퓨터 밖으로 나가지 않으니 민감한 서류도 안심하고 쓸 수 있고, 회원가입·설치·워터마크도 없어요.</p><p>여러 파일을 고른 뒤 ↑↓ 버튼으로 순서를 정하고 "합치기"를 누르면 merged.pdf로 저장돼요. 스캔한 서류 여러 장, 챕터별로 나뉜 교재, 앞뒤로 따로 스캔된 양면 문서를 하나로 묶을 때 쓰세요.</p>
+<h2>PDF 도구 한눈에</h2><p><table><thead><tr><th>하고 싶은 것</th><th>도구</th></tr></thead><tbody><tr><td>여러 PDF를 하나로</td><td>PDF 합치기 (이 페이지)</td></tr><tr><td>PDF에서 일부 페이지만 뽑기 / 낱장으로</td><td>PDF 분할하기</td></tr><tr><td>사진·스캔 이미지를 PDF로</td><td>이미지 → PDF 변환</td></tr><tr><td>PDF 용량 줄이기</td><td>이미지 용량 줄이기 후 이미지→PDF (스캔본의 경우)</td></tr></tbody></table></p>
+<h2>사용 방법</h2><ol><li>PDF 파일을 끌어다 놓거나 클릭해서 여러 개 선택하세요.</li><li>↑↓로 순서를 조정하고 필요 없는 파일은 ×로 빼세요.</li><li>"합치기"를 누르면 합쳐진 PDF가 바로 다운로드돼요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>암호가 걸린 PDF도 되나요?</summary><p>열람 암호가 걸린 파일은 합칠 수 없어요. 먼저 PDF 뷰어에서 암호를 해제해 다시 저장한 뒤 사용하세요.</p></details><details><summary>합치면 화질이 떨어지나요?</summary><p>아니요. 페이지를 그대로 복사하기 때문에 원본 화질이 유지되고, 용량은 원본 합계와 비슷해요.</p></details><details><summary>몇 개까지 합칠 수 있나요?</summary><p>개수 제한은 없지만 총 용량이 100MB를 넘으면 기기 메모리에 따라 느려질 수 있어요.</p></details><details><summary>PDF 안의 링크·북마크도 유지되나요?</summary><p>페이지 내용과 링크는 유지되지만 북마크(목차)는 합칠 때 사라질 수 있어요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="pdf-split.html">PDF 분할하기</a><a href="image-to-pdf.html">이미지 → PDF</a><a href="image-compress.html">이미지 용량 줄이기</a><a href="qrcode.html">QR코드 생성기</a></div></section>
+  <footer>모든 처리는 브라우저 안에서 이루어지며 파일이 서버로 전송되지 않아요. 아주 큰 파일(100MB 이상)은 기기 메모리에 따라 느리거나 실패할 수 있어요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+let files=[];
+const kb=n=>n>1048576?(n/1048576).toFixed(1)+' MB':Math.round(n/1024)+' KB';
+function render(){ $('list').innerHTML=files.map((f,i)=>`<div class="fi"><span style="color:var(--ink-soft)">${i+1}</span><span class="nm">${f.name} <small>(${kb(f.size)})</small></span><button class="btn-ghost up" data-i="${i}">↑</button><button class="btn-ghost down" data-i="${i}">↓</button><button class="btn-ghost del" data-i="${i}">×</button></div>`).join(''); $('run').disabled=files.length<2;
+  $('list').querySelectorAll('.up').forEach(b=>b.addEventListener('click',()=>{const i=+b.dataset.i; if(i>0){[files[i-1],files[i]]=[files[i],files[i-1]];render();}}));
+  $('list').querySelectorAll('.down').forEach(b=>b.addEventListener('click',()=>{const i=+b.dataset.i; if(i<files.length-1){[files[i+1],files[i]]=[files[i],files[i+1]];render();}}));
+  $('list').querySelectorAll('.del').forEach(b=>b.addEventListener('click',()=>{files.splice(+b.dataset.i,1);render();})); }
+function add(list){ for(const f of list){ if(f.type==='application/pdf'||/\.pdf$/i.test(f.name)) files.push(f); } render(); }
+$('drop').addEventListener('click',()=>$('file').click()); $('file').addEventListener('change',e=>{add(e.target.files);e.target.value='';});
+['dragenter','dragover'].forEach(ev=>$('drop').addEventListener(ev,e=>{e.preventDefault();$('drop').classList.add('over');})); ['dragleave','drop'].forEach(ev=>$('drop').addEventListener(ev,e=>{e.preventDefault();$('drop').classList.remove('over');})); $('drop').addEventListener('drop',e=>add(e.dataTransfer.files));
+$('clear').addEventListener('click',()=>{files=[];render();$('status').textContent='';});
+$('run').addEventListener('click',async()=>{
+  if(typeof PDFLib==='undefined'){ $('status').textContent='PDF 라이브러리를 불러오는 중이에요. 잠시 후 다시 눌러주세요.'; return; }
+  $('run').disabled=true; $('status').textContent='합치는 중…';
+  try{ const out=await PDFLib.PDFDocument.create(); let pages=0;
+    for(const f of files){ const src=await PDFLib.PDFDocument.load(await f.arrayBuffer(),{ignoreEncryption:true}); const copied=await out.copyPages(src, src.getPageIndices()); copied.forEach(p=>out.addPage(p)); pages+=copied.length; }
+    const bytes=await out.save(); const blob=new Blob([bytes],{type:'application/pdf'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='merged.pdf'; a.click();
+    $('status').innerHTML=`<span class="ok">완료 — ${files.length}개 파일, ${pages}쪽 (${kb(blob.size)}). 다운로드가 시작됐어요.</span>`;
+    if(typeof gtag==='function') gtag('event','pdf_merged',{files:files.length,pages});
+  }catch(e){ $('status').innerHTML='<span class="bad">합치기에 실패했어요. 암호가 걸렸거나 손상된 PDF가 있는지 확인하세요.</span>'; }
+  $('run').disabled=false;
+});
+ 
+</script>
+
+</body>
+</html>

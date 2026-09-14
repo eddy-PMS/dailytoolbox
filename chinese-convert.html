@@ -48,6 +48,17 @@
   .status { font-size:12px; color:#a39a89; margin-top:8px; min-height:16px; }
   footer { margin-top:56px; font-size:12px; color:#a39a89; text-align:center; line-height:1.8; }
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "대만식과 홍콩식 번체가 다른가요?", "acceptedAnswer": {"@type": "Answer", "text": "글자 모양이 몇 개 달라요(예: 裡/裏, 為/爲). 대만 자료면 tw, 홍콩 자료면 hk를 고르세요."}}, {"@type": "Question", "name": "일본 한자(신자체)로도 바꿀 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "이 도구는 중국어 간체·번체 전용이에요. 일본 신자체는 별도 규칙이 필요해 지원하지 않아요."}}, {"@type": "Question", "name": "입력한 글이 서버로 가나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 변환 엔진(OpenCC)이 브라우저 안에서 동작해 어디에도 전송되지 않아요."}}]}</script>
+<style>
+.ad-slot{margin:18px 0;text-align:center}.ad-slot:empty{display:none}
+.seo{background:#fffdf8;border:1px solid var(--line,#d8d3c6);border-radius:3px;padding:22px 24px;margin-top:18px;font-size:15px;line-height:1.8;color:var(--ink,#1f1d1a)}
+.seo h2{font-size:17px;margin:0 0 8px;font-weight:700}.seo p+h2,.seo ol+h2,.seo table+h2{margin-top:22px}
+.seo p{margin:0 0 10px}.seo ol{margin:0 0 10px;padding-left:22px}.seo li{margin-bottom:4px}
+.seo table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0 12px;background:#fffdf8}
+.seo th,.seo td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--paper-deep,#e6e2d6)}.seo th{font-size:12px;color:var(--ink-soft,#57534b);background:var(--paper-deep,#e6e2d6);font-weight:600}.seo td.r,.seo th.r{text-align:right}
+.seo.faq details{border-top:1px solid var(--paper-deep,#e6e2d6);padding:10px 0}.seo.faq details:first-of-type{border-top:none}.seo.faq summary{cursor:pointer;font-weight:600;font-size:15px}.seo.faq details p{margin:8px 0 0;color:var(--ink-soft,#57534b);font-size:14px}
+.related-grid{display:flex;flex-wrap:wrap;gap:8px}.related-grid a{border:1px solid var(--line,#d8d3c6);border-radius:20px;padding:7px 14px;font-size:13px;color:var(--ink,#1f1d1a);text-decoration:none;background:var(--paper,#f1eee6)}.related-grid a:hover{background:var(--paper-deep,#e6e2d6)}
+</style>
 </head>
 <body>
 
@@ -81,6 +92,16 @@
     <button class="btn-ghost" id="swapBtn">⇄ 결과를 입력으로 (방향 반전)</button>
   </div>
   <div class="status" id="status"></div>
+
+  <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>간체자와 번체자, 무엇이 다른가요</h2><p>간체자(简体字)는 1950~60년대 중국 정부가 획수를 줄여 만든 글자로 중국 본토·싱가포르·말레이시아에서 쓰고, 번체자(繁體字)는 전통 한자로 대만·홍콩·마카오에서 써요. 예를 들어 "학습"은 간체 学习, 번체 學習이에요. 같은 중국어지만 표기가 달라 대만 사이트를 읽거나 홍콩 자료를 인용할 때 변환이 필요해요.</p><p>글자뿐 아니라 어휘도 달라요. 소프트웨어는 중국 软件, 대만 軟體이고, 택시는 중국 出租车, 대만 計程車예요. 이 변환기는 글자만 바꾸는 모드와 대만 용어까지 바꾸는 모드(twp)를 따로 제공해요.</p>
+<h2>변환 시 주의할 점</h2><p><table><thead><tr><th>간체</th><th>번체 후보</th><th>구분</th></tr></thead><tbody><tr><td>发</td><td>發 / 髮</td><td>發(출발·발전) / 髮(머리카락)</td></tr><tr><td>后</td><td>後 / 后</td><td>後(뒤) / 后(황후)</td></tr><tr><td>干</td><td>乾 / 幹 / 干</td><td>乾(마르다) / 幹(하다) / 干(방패)</td></tr><tr><td>面</td><td>面 / 麵</td><td>面(얼굴) / 麵(국수)</td></tr><tr><td>只</td><td>只 / 隻</td><td>只(단지) / 隻(마리)</td></tr></tbody></table></p><p>간체 한 글자가 번체 여러 글자에 대응하는 "일대다" 관계가 있어요. OpenCC 엔진이 문맥(단어 단위)으로 판단하지만 드물게 틀릴 수 있으니 중요한 문서는 확인하세요.</p>
+<h2>사용 방법</h2><ol><li>변환 방향(간→번 대만/홍콩, 용어 포함 여부, 번→간)을 고르세요.</li><li>왼쪽에 입력하면 오른쪽에 실시간으로 변환돼요.</li><li>"복사"로 결과를 가져가거나, "방향 반전"으로 결과를 다시 입력으로 쓸 수 있어요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>대만식과 홍콩식 번체가 다른가요?</summary><p>글자 모양이 몇 개 달라요(예: 裡/裏, 為/爲). 대만 자료면 tw, 홍콩 자료면 hk를 고르세요.</p></details><details><summary>일본 한자(신자체)로도 바꿀 수 있나요?</summary><p>이 도구는 중국어 간체·번체 전용이에요. 일본 신자체는 별도 규칙이 필요해 지원하지 않아요.</p></details><details><summary>입력한 글이 서버로 가나요?</summary><p>아니요. 변환 엔진(OpenCC)이 브라우저 안에서 동작해 어디에도 전송되지 않아요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="pinyin.html">병음 변환기</a><a href="hanja.html">한자 음훈 조회</a><a href="tone-drill.html">성조 훈련</a><a href="hsk-test.html">HSK 레벨 테스트</a></div></section>
 
   <footer>변환 엔진은 오픈소스 OpenCC(opencc-js)를 사용하며 모든 처리는 브라우저 안에서 이루어져요.<br>일대다 대응 글자(예: 发→發/髮, 后→後/后)는 문맥에 따라 자동 선택되며, 드물게 다를 수 있습니다.</footer>
 </main>

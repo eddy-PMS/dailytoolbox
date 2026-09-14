@@ -19,7 +19,7 @@
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
 <style>:root { --accent:#a83a2c; --accent-deep:#8a2f23; }</style>
-
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "평단을 현재가까지 낮출 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "이론적으로 무한히 사야 해서 불가능해요. 목표 평단은 현재가보다 높고 기존 평단보다 낮은 값만 계산할 수 있어요."}}, {"@type": "Question", "name": "수수료와 세금은 반영되나요?", "acceptedAnswer": {"@type": "Answer", "text": "반영하지 않아요. 국내 주식은 매도 시 거래세·농특세 약 0.15~0.2%, 해외 주식은 양도세가 있으니 실제 손익은 이보다 조금 낮아요."}}, {"@type": "Question", "name": "불타기는 뭔가요?", "acceptedAnswer": {"@type": "Answer", "text": "물타기의 반대로, 오르는 종목을 추가 매수해 평단을 올리는 거예요. 추세 추종 전략에서 쓰며, 이 계산기의 \"추가 매수 수량\" 탭에 현재가를 평단보다 높게 넣으면 계산돼요."}}]}</script>
 </head>
 <body>
 
@@ -44,7 +44,15 @@
     </div>
     <div id="out" style="margin-top:14px"></div>
   </div>
- 
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>물타기란, 그리고 계산 방법</h2><p>물타기는 보유한 주식이나 코인의 가격이 떨어졌을 때 추가로 매수해 평균 매수 단가(평단)를 낮추는 거예요. 새 평단은 (기존 평단 × 기존 수량 + 매수가 × 추가 수량) ÷ (기존 수량 + 추가 수량)으로 계산돼요. 예를 들어 8만원에 10주를 갖고 있는데 6만원에 10주를 더 사면 평단은 7만원이 됩니다.</p><p>목표 평단이 정해져 있으면 필요한 수량을 역산할 수 있어요. 필요 수량 = 기존 수량 × (기존 평단 − 목표 평단) ÷ (목표 평단 − 현재가). 목표 평단을 현재가에 가깝게 잡을수록 필요한 수량이 급격히 늘어나니, 현실적인 목표를 잡는 게 중요해요.</p>
+<h2>물타기 전에 생각할 점</h2><p>물타기는 평단을 낮춰 본전 회복에 필요한 상승률을 줄여주지만, 투자 금액이 커져 추가 하락 시 손실도 커져요. 떨어진 이유가 일시적인지(시장 전체 조정) 구조적인지(실적 악화, 프로젝트 문제) 먼저 판단하고, 총 투자 한도를 정해두는 게 좋아요. "물타기 계산기"는 숫자를 보여줄 뿐, 매수 판단은 본인 몫입니다.</p>
+<h2>사용 방법</h2><ol><li>현재 평단가, 보유 수량, 현재가(추가 매수가)를 입력하세요.</li><li>"추가 매수 수량으로" 탭에서 수량을 넣으면 새 평단과 본전까지 필요한 상승률이 나와요.</li><li>"목표 평단으로" 탭에서 목표 평단을 넣으면 필요한 수량과 금액이 나와요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>평단을 현재가까지 낮출 수 있나요?</summary><p>이론적으로 무한히 사야 해서 불가능해요. 목표 평단은 현재가보다 높고 기존 평단보다 낮은 값만 계산할 수 있어요.</p></details><details><summary>수수료와 세금은 반영되나요?</summary><p>반영하지 않아요. 국내 주식은 매도 시 거래세·농특세 약 0.15~0.2%, 해외 주식은 양도세가 있으니 실제 손익은 이보다 조금 낮아요.</p></details><details><summary>불타기는 뭔가요?</summary><p>물타기의 반대로, 오르는 종목을 추가 매수해 평단을 올리는 거예요. 추세 추종 전략에서 쓰며, 이 계산기의 "추가 매수 수량" 탭에 현재가를 평단보다 높게 넣으면 계산돼요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="avgprice.html">평단가 계산기</a><a href="compound.html">복리·적금 계산기</a><a href="loan.html">대출 이자 계산기</a><a href="exchange.html">환율 계산기</a></div></section>
   <footer>수수료·세금은 반영하지 않으며, 투자 판단과 손실 책임은 본인에게 있어요.</footer>
 </main>
 

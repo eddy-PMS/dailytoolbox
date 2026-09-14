@@ -19,7 +19,7 @@
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
 <style>:root { --accent:#3b6d8a; --accent-deep:#2a5168; }</style>
-
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "타수 계산이 다른 사이트와 달라요.", "acceptedAnswer": {"@type": "Answer", "text": "사이트마다 겹자모·공백 처리 기준이 달라요. 이 도구는 자모 단위(겹자모 2타, 공백 1타)로 계산해요."}}, {"@type": "Question", "name": "한영 전환 실수도 오타로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 입력된 글자와 예문을 글자 단위로 비교해서 다른 글자는 모두 오타로 처리해요."}}, {"@type": "Question", "name": "예문을 직접 넣을 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "현재는 내장 예문만 제공해요. 받아쓰기 연습 도구에서는 내 문장으로 연습할 수 있어요."}}]}</script>
 </head>
 <body>
 
@@ -39,7 +39,15 @@
     <div class="row" style="margin:10px 0 0"><span id="live"></span><button class="btn-ghost" id="next" style="margin-left:auto">다른 문장</button></div>
   </div>
   <div id="result"></div>
- 
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>타자 속도 기준</h2><p>한글 타자는 분당 타수로 재요. 자모 하나가 1타이고 겹자모(ㅘ, ㄳ 등)는 2타로 세는 게 일반적인 타자연습 프로그램 기준이에요. 일반 사무직은 300~400타, 빠른 편은 500타 이상, 속기·전문 타이핑은 700타를 넘어요. 영문은 분당 단어 수(WPM, 5글자=1단어)로 재며 평균 40WPM, 빠르면 70WPM 이상이에요.</p><p>속도보다 정확도가 먼저예요. 오타를 고치는 시간이 더 크기 때문에 정확도 95% 이상을 유지하면서 속도를 올리는 게 효율적이에요. 매일 5분씩 같은 문장을 반복하면 2주 안에 눈에 띄게 늘어요.</p>
+<h2>타수·WPM 수준표</h2><p><table><thead><tr><th>한글 타/분</th><th>영문 WPM</th><th>수준</th></tr></thead><tbody><tr><td>~200</td><td>~30</td><td>입문</td></tr><tr><td>200~350</td><td>30~45</td><td>보통</td></tr><tr><td>350~500</td><td>45~65</td><td>빠름 (사무직 상위)</td></tr><tr><td>500~700</td><td>65~90</td><td>매우 빠름</td></tr><tr><td>700+</td><td>90+</td><td>전문가·속기</td></tr></tbody></table></p>
+<h2>사용 방법</h2><ol><li>한글 또는 영문 탭을 고르세요.</li><li>예문을 보고 그대로 입력하세요. 첫 글자를 치는 순간 시간이 시작돼요.</li><li>다 입력하면 타수·정확도·소요 시간이 나오고, "다른 문장"으로 반복하세요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>타수 계산이 다른 사이트와 달라요.</summary><p>사이트마다 겹자모·공백 처리 기준이 달라요. 이 도구는 자모 단위(겹자모 2타, 공백 1타)로 계산해요.</p></details><details><summary>한영 전환 실수도 오타로 세나요?</summary><p>네. 입력된 글자와 예문을 글자 단위로 비교해서 다른 글자는 모두 오타로 처리해요.</p></details><details><summary>예문을 직접 넣을 수 있나요?</summary><p>현재는 내장 예문만 제공해요. 받아쓰기 연습 도구에서는 내 문장으로 연습할 수 있어요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="reaction.html">반응속도 테스트</a><a href="dictation.html">받아쓰기 연습</a><a href="charcount.html">글자수 세기</a><a href="sens.html">마우스 감도 변환기</a></div></section>
   <footer>한글 타수는 자모 단위(초성·중성·종성, 겹자모는 2타)로 계산하며, 흔히 쓰는 타자연습 프로그램과 비슷한 기준이에요.</footer>
 </main>
 

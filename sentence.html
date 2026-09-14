@@ -28,7 +28,7 @@
 .tk{color:var(--c);border-bottom:2px solid var(--c);padding:0 1px}
 .tk[role="S"]::after{content:"S";font-size:10px;vertical-align:super;margin-left:2px;background:var(--c);color:#fff;border-radius:2px;padding:0 3px}
 .tk[role="V"]::after{content:"V";font-size:10px;vertical-align:super;margin-left:2px;background:var(--c);color:#fff;border-radius:2px;padding:0 3px}
-</style>
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "주어 표시가 틀린 것 같아요.", "acceptedAnswer": {"@type": "Answer", "text": "규칙 기반 분석이라 도치문·복문·관계절에서는 틀릴 수 있어요. 첫 동사 앞의 마지막 명사를 주어로 보는 간단한 규칙을 써요."}}, {"@type": "Question", "name": "한국어 문장도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "영어 전용이에요. 한국어는 품사 태깅 방식이 달라 지원하지 않아요."}}, {"@type": "Question", "name": "정확도는 어느 정도인가요?", "acceptedAnswer": {"@type": "Answer", "text": "품사 태깅은 약 86% 수준이에요. 학습 보조용으로 쓰고, 애매한 문장은 사전·문법서로 확인하세요."}}]}</script>
 </head>
 <body>
 
@@ -49,7 +49,15 @@
     <span><span class="tagdot n"></span>명사</span><span><span class="tagdot v"></span>동사</span><span><span class="tagdot a"></span>형용사</span><span><span class="tagdot d"></span>부사</span><span><span class="tagdot p"></span>전치사</span><span><span class="tagdot c"></span>접속사</span><span><span class="tagdot o"></span>기타</span>
   </div></div>
   <div id="out"><div class="empty">문장을 입력하고 분석하기를 눌러주세요</div></div>
- 
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>영어 문장 구조 파악이 독해의 시작</h2><p>영어 문장이 길어지면 어디까지가 주어이고 동사가 무엇인지 놓치기 쉬워요. 이 도구는 품사(명사·동사·형용사·부사·전치사·접속사)를 색으로 구분하고 각 문장의 주어(S)와 동사(V)를 표시해서 문장의 뼈대를 먼저 보여줘요. 뼈대를 잡은 뒤 수식어를 붙여 읽으면 긴 문장도 구조적으로 이해할 수 있어요.</p><p>영어의 기본 5형식은 S+V, S+V+C, S+V+O, S+V+O+O, S+V+O+C예요. 어떤 문장이든 주어와 동사를 찾는 게 첫 단계이고, 그 다음 동사가 목적어·보어를 필요로 하는지 보면 형식이 정해져요.</p>
+<h2>품사별 색상과 역할</h2><p><table><thead><tr><th>품사</th><th>역할</th><th>예</th></tr></thead><tbody><tr><td>명사·대명사</td><td>주어·목적어·보어</td><td>student, she, happiness</td></tr><tr><td>동사</td><td>서술어의 핵심</td><td>run, is, has been studying</td></tr><tr><td>형용사</td><td>명사 수식·보어</td><td>quick, beautiful</td></tr><tr><td>부사</td><td>동사·형용사·문장 수식</td><td>quickly, very, however</td></tr><tr><td>전치사</td><td>명사 앞에서 관계 표시</td><td>in, over, with</td></tr><tr><td>접속사</td><td>단어·절 연결</td><td>and, because, although</td></tr></tbody></table></p>
+<h2>사용 방법</h2><ol><li>영어 문장을 붙여넣고 "분석하기"를 누르세요.</li><li>문장별로 품사가 색으로 표시되고 S·V 표시가 붙어요.</li><li>표에서 주어·동사·명사구·동사구를 확인하세요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>주어 표시가 틀린 것 같아요.</summary><p>규칙 기반 분석이라 도치문·복문·관계절에서는 틀릴 수 있어요. 첫 동사 앞의 마지막 명사를 주어로 보는 간단한 규칙을 써요.</p></details><details><summary>한국어 문장도 되나요?</summary><p>영어 전용이에요. 한국어는 품사 태깅 방식이 달라 지원하지 않아요.</p></details><details><summary>정확도는 어느 정도인가요?</summary><p>품사 태깅은 약 86% 수준이에요. 학습 보조용으로 쓰고, 애매한 문장은 사전·문법서로 확인하세요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="readability.html">지문 난이도 체커</a><a href="cloze.html">빈칸 문제 생성기</a><a href="etymology.html">어원 분석기</a><a href="level-test.html">영어 레벨 테스트</a></div></section>
   <footer>품사 태깅은 오픈소스 compromise 라이브러리(규칙 기반, 정확도 약 86%)를 사용해요. 주어·동사 표시는 간단한 규칙이라 복문·도치문에서는 틀릴 수 있습니다.</footer>
 </main>
 

@@ -19,7 +19,7 @@
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
 <style>:root { --accent:#2f4a5e; --accent-deep:#223947; }</style>
-
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "ある의 ない형이 이상하게 나와요.", "acceptedAnswer": {"@type": "Answer", "text": "ある는 예외적으로 ない형이 \"ない\"예요(あらない 아님). 규칙 기반이라 이런 특수 활용은 다르게 나올 수 있어요."}}, {"@type": "Question", "name": "가능형과 수동형이 1단 동사에서 같아요.", "acceptedAnswer": {"@type": "Answer", "text": "네. 1단 동사와 来る는 가능형·수동형이 둘 다 られる로 같아요. 회화에서는 가능형을 れる로 줄인 \"ら抜き\" 표현(食べれる)도 흔해요."}}, {"@type": "Question", "name": "경어(ます) 외에 존경·겸양 표현도 나오나요?", "acceptedAnswer": {"@type": "Answer", "text": "현재는 기본 활용형만 지원해요. いらっしゃる·伺う 같은 경어 동사는 별도로 익혀야 해요."}}]}</script>
 </head>
 <body>
 
@@ -38,7 +38,15 @@
     <div class="status" id="status"></div>
   </div>
   <div id="out"><div class="empty">동사를 입력하면 활용표가 표시돼요</div></div>
- 
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>일본어 동사 3종류와 활용</h2><p>일본어 동사는 5단(1그룹), 1단(2그룹), 불규칙(する·来る, 3그룹) 세 가지로 나뉘고, 종류에 따라 활용 방식이 달라요. 사전형이 る로 끝나고 그 앞이 i단·e단이면 대부분 1단 동사(食べる, 見る), 그 외 う·く·す·つ·ぬ·ぶ·む·る로 끝나면 5단 동사(書く, 話す, 帰る)예요. 帰る·入る·走る처럼 る로 끝나도 5단인 예외가 있어 사전 확인이 필요해요.</p><p>이 도구는 형태소 분석기로 동사 종류를 판별한 뒤 ます형·ない형·て형·た형·가능형·의지형·명령형·조건형·수동형·사역형까지 한 번에 만들어줘요. て형 음편(音便) 규칙이 가장 헷갈리는데, 표로 확인하면서 익히세요.</p>
+<h2>5단 동사 て형 음편 규칙</h2><p><table><thead><tr><th>어미</th><th>て형 / た형</th><th>예</th></tr></thead><tbody><tr><td>く / ぐ</td><td>いて / いで</td><td>書く→書いて, 泳ぐ→泳いで (예외: 行く→行って)</td></tr><tr><td>す</td><td>して</td><td>話す→話して</td></tr><tr><td>う · つ · る</td><td>って</td><td>買う→買って, 待つ→待って, 帰る→帰って</td></tr><tr><td>ぬ · ぶ · む</td><td>んで</td><td>死ぬ→死んで, 遊ぶ→遊んで, 読む→読んで</td></tr></tbody></table></p>
+<h2>사용 방법</h2><ol><li>동사를 사전형 또는 활용된 형태로 입력하세요.</li><li>동사 종류(5단·1단·불규칙)와 12가지 활용형이 표로 나와요.</li><li>예시 버튼(食べる, 行く, 来る 등)으로 유형별 차이를 비교해보세요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>ある의 ない형이 이상하게 나와요.</summary><p>ある는 예외적으로 ない형이 "ない"예요(あらない 아님). 규칙 기반이라 이런 특수 활용은 다르게 나올 수 있어요.</p></details><details><summary>가능형과 수동형이 1단 동사에서 같아요.</summary><p>네. 1단 동사와 来る는 가능형·수동형이 둘 다 られる로 같아요. 회화에서는 가능형을 れる로 줄인 "ら抜き" 표현(食べれる)도 흔해요.</p></details><details><summary>경어(ます) 외에 존경·겸양 표현도 나오나요?</summary><p>현재는 기본 활용형만 지원해요. いらっしゃる·伺う 같은 경어 동사는 별도로 익혀야 해요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="furigana.html">후리가나 표시기</a><a href="kana-quiz.html">가나 퀴즈</a><a href="jlpt-test.html">JLPT 레벨 테스트</a><a href="irregular-verbs.html">영어 불규칙동사</a></div></section>
   <footer>동사 종류 판별은 오픈소스 형태소 분석기 kuromoji를, 활용은 표준 문법 규칙을 사용해요. 존경어·특수 활용(いらっしゃる 등)과 ある의 ない형(ない) 같은 예외는 다르게 나올 수 있습니다.</footer>
 </main>
 

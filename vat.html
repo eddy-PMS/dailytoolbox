@@ -19,7 +19,7 @@
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
 <style>:root { --accent:#3b6d8a; --accent-deep:#2a5168; }</style>
-
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "부가세 포함 금액에서 부가세만 구하려면요?", "acceptedAnswer": {"@type": "Answer", "text": "합계금액 ÷ 11이 부가세예요. 110,000원이면 10,000원입니다. 합계금액 칸에 넣으면 자동으로 계산돼요."}}, {"@type": "Question", "name": "원 단위는 어떻게 처리하나요?", "acceptedAnswer": {"@type": "Answer", "text": "세금계산서상 세액은 원 단위 절사가 일반적이에요. 계산기 상단에서 반올림·절사·올림을 고를 수 있어요."}}, {"@type": "Question", "name": "면세 품목도 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "미가공 농수산물, 의료·교육 서비스, 도서·신문 등은 부가세가 면제돼요. 이 경우 공급가액 = 합계금액입니다."}}]}</script>
 </head>
 <body>
 
@@ -41,7 +41,15 @@
     </div>
     <div id="out" class="note" style="font-size:14px;color:var(--ink);margin-top:14px"></div>
   </div>
- 
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>부가세 계산의 기본</h2><p>부가가치세는 물건이나 서비스 가격에 10%가 붙는 세금이에요. 공급가액(부가세 별도 금액)에 10%를 더하면 합계금액(부가세 포함)이 되고, 반대로 부가세 포함 금액에서 공급가액을 구하려면 1.1로 나누면 됩니다. 예를 들어 합계 110,000원이면 공급가액 100,000원, 부가세 10,000원이에요.</p><p>세금계산서나 견적서를 쓸 때는 공급가액과 세액을 따로 적어야 하고, 소비자 대상 가격 표시는 부가세 포함 금액이 원칙이에요. 이 계산기는 셋 중 아는 금액 하나만 넣으면 나머지를 바로 채워드려요.</p>
+<h2>일반과세자와 간이과세자</h2><p><table><thead><tr><th>구분</th><th>일반과세자</th><th>간이과세자</th></tr></thead><tbody><tr><td>기준</td><td>연 매출 1억 4백만원 이상</td><td>연 매출 1억 4백만원 미만</td></tr><tr><td>세율</td><td>10%</td><td>업종별 부가가치율 × 10% (1.5~4%)</td></tr><tr><td>세금계산서</td><td>발행 가능</td><td>연 매출 4,800만원 이상만 발행</td></tr><tr><td>매입세액공제</td><td>전액 공제</td><td>매입액의 0.5%만 공제</td></tr><tr><td>신고</td><td>1·7월 (법인은 분기)</td><td>1월 연 1회</td></tr></tbody></table></p>
+<h2>사용 방법</h2><ol><li>부가세율(기본 10%)과 원 단위 처리 방식을 확인하세요.</li><li>공급가액·부가세·합계금액 중 아는 값 하나를 입력하면 나머지가 자동 계산돼요.</li><li>아래 문장으로 정리된 계산 결과를 견적서에 옮겨 적으세요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>부가세 포함 금액에서 부가세만 구하려면요?</summary><p>합계금액 ÷ 11이 부가세예요. 110,000원이면 10,000원입니다. 합계금액 칸에 넣으면 자동으로 계산돼요.</p></details><details><summary>원 단위는 어떻게 처리하나요?</summary><p>세금계산서상 세액은 원 단위 절사가 일반적이에요. 계산기 상단에서 반올림·절사·올림을 고를 수 있어요.</p></details><details><summary>면세 품목도 있나요?</summary><p>미가공 농수산물, 의료·교육 서비스, 도서·신문 등은 부가세가 면제돼요. 이 경우 공급가액 = 합계금액입니다.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="margin.html">마진율 계산기</a><a href="platform-fee.html">카드·배달앱 수수료</a><a href="freelancer-tax.html">3.3% 프리랜서 세금</a><a href="salary.html">연봉 실수령액 계산기</a></div></section>
   <footer>일반과세자 기준(10%). 간이과세자는 업종별 부가가치율이 적용되어 계산이 다릅니다.</footer>
 </main>
 

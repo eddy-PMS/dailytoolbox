@@ -19,7 +19,7 @@
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
 <style>:root { --accent:#2f5d4e; --accent-deep:#22453a; }</style>
-
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "은행 환율과 왜 다른가요?", "acceptedAnswer": {"@type": "Answer", "text": "은행은 기준 환율에 수수료를 더한 \"살 때/팔 때\" 환율을 적용해요. 이 계산기는 수수료가 없는 기준 환율이라 은행 현찰 환율보다 1~2% 정도 차이가 납니다."}}, {"@type": "Question", "name": "환율은 얼마나 자주 갱신되나요?", "acceptedAnswer": {"@type": "Answer", "text": "ECB가 매 영업일 오후(중부유럽시간 기준)에 한 번 고시해요. 실시간 시세는 아니지만 일상적인 계산에는 충분한 정확도예요."}}, {"@type": "Question", "name": "여기 없는 통화는 어떻게 계산하나요?", "acceptedAnswer": {"@type": "Answer", "text": "ECB가 고시하는 약 30개 통화만 지원해요. 그 외 통화는 은행 고시 환율을 참고하세요."}}]}</script>
 </head>
 <body>
 
@@ -40,7 +40,15 @@
     <div class="status" id="status">환율을 불러오는 중이에요…</div>
     <table style="margin-top:8px"><tbody id="out"></tbody></table>
   </div>
- 
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>환율 계산기, 어떤 환율을 쓰나요</h2><p>이 계산기는 유럽중앙은행(ECB)이 매 영업일 고시하는 기준 환율을 사용해요. 은행이 고시하는 "매매기준율"과 거의 같은 개념으로, 실제 환전할 때는 여기에 은행 수수료(스프레드)가 붙어요. 현찰로 살 때는 기준율보다 1.5~2% 비싸고, 팔 때는 그만큼 싸게 계산되는 게 보통이라, 환전 금액을 정확히 알고 싶다면 은행 앱의 "현찰 살 때" 환율을 함께 확인하세요.</p><p>환율은 주말·공휴일에는 고시되지 않아서, 토·일요일에는 금요일 환율이 표시돼요. 여행 경비 계산, 해외직구 가격 비교, 해외 송금 예상액 확인에 쓰기 좋아요.</p>
+<h2>주요 통화 환전 팁</h2><p><table><thead><tr><th>통화</th><th>알아둘 점</th></tr></thead><tbody><tr><td>미국 달러(USD)</td><td>대부분 은행이 환전 수수료 우대(80~90%)를 제공해 실질 비용이 가장 낮아요.</td></tr><tr><td>일본 엔(JPY)</td><td>100엔 단위로 표시돼요. 소액은 현지 ATM 인출이 더 유리할 때도 있어요.</td></tr><tr><td>유로(EUR)</td><td>주요 은행 모두 취급하지만 우대율은 달러보다 낮은 편이에요.</td></tr><tr><td>중국 위안(CNY)</td><td>국내 은행 현찰 보유량이 적어 큰 금액은 미리 예약하세요.</td></tr><tr><td>동남아 통화(THB·VND 등)</td><td>국내 환전보다 달러를 가져가 현지 환전하는 게 유리한 경우가 많아요.</td></tr></tbody></table></p>
+<h2>사용 방법</h2><ol><li>금액과 통화를 고르세요. 기본은 외화→원화 방향이에요.</li><li>"원화 ↔ 외화 바꾸기"를 누르면 원화를 넣어 외화로 계산할 수 있어요.</li><li>1단위 환율과 달러 참고 환율이 함께 표시돼요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>은행 환율과 왜 다른가요?</summary><p>은행은 기준 환율에 수수료를 더한 "살 때/팔 때" 환율을 적용해요. 이 계산기는 수수료가 없는 기준 환율이라 은행 현찰 환율보다 1~2% 정도 차이가 납니다.</p></details><details><summary>환율은 얼마나 자주 갱신되나요?</summary><p>ECB가 매 영업일 오후(중부유럽시간 기준)에 한 번 고시해요. 실시간 시세는 아니지만 일상적인 계산에는 충분한 정확도예요.</p></details><details><summary>여기 없는 통화는 어떻게 계산하나요?</summary><p>ECB가 고시하는 약 30개 통화만 지원해요. 그 외 통화는 은행 고시 환율을 참고하세요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="unit.html">단위 변환기</a><a href="vat.html">부가세 계산기</a><a href="compound.html">복리·적금 계산기</a><a href="avgprice.html">평단가 계산기</a></div></section>
   <footer>환율 데이터: 유럽중앙은행(ECB) 기준 환율(frankfurter API). 주말·휴일에는 직전 영업일 환율이 표시돼요. 실제 환전 금액은 은행·카드사 고시 환율과 수수료에 따라 달라요.</footer>
 </main>
 

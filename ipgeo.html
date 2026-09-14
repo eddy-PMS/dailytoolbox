@@ -55,7 +55,7 @@ async function lookup(){
   $('status').textContent='조회 중…'; $('run').disabled=true;
   try{
     const r=await fetch('/api/geo?ip='+encodeURIComponent(ip)); const d=await r.json();
-    if(!d.ok){ $('status').textContent=MSG[d.error]||'조회에 실패했어요.'; $('out').innerHTML=`<div class="empty">${MSG[d.error]||'조회에 실패했어요.'}</div>`; return; }
+    if(!d.ok){ const m=MSG[d.error]||'조회에 실패했어요.'; $('status').textContent=m; $('out').innerHTML=`<div class="empty">${m}${d.detail?`<div class="note" style="margin-top:8px">상세: ${d.detail}</div>`:''}</div>`; return; }
     $('status').textContent='';
     const loc=[d.country?d.flag+' '+d.country:'', d.region, d.city].filter(Boolean).join(' · ');
     const map= d.latitude!==''&&d.longitude!==''? `<a href="https://www.openstreetmap.org/?mlat=${d.latitude}&mlon=${d.longitude}#map=10/${d.latitude}/${d.longitude}" target="_blank" rel="noopener">지도에서 보기 ↗</a>`:'';

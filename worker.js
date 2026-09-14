@@ -47,25 +47,34 @@ export default {
       const hit = await cache.match(cacheKey);
       if (hit) return hit;
 
-      let up;
-      try {
-        up = await fetch(`https://ipwho.is/${ip}?lang=en`, { headers: { 'user-agent': 'dailyfreetoolbox/1.0' } });
-      } catch (e) {
-        return json({ ok: false, error: 'upstream' }, 502);
+      // 여러 무료 제공처를 순서대로 시도 (한 곳이 막혀도 동작하도록)
+      const providers = [
+        { name: 'ipwho.is', url: `https://ipwho.is/${ip}`, parse: d => d.success ? ({ country: d.country, cc: d.country_code, flag: d.flag && d.flag.emoji, region: d.region, city: d.city, postal: d.postal, lat: d.latitude, lon: d.longitude, tz: d.timezone && d.timezone.id, utc: d.timezone && d.timezone.utc, asn: d.connection && d.connection.asn, isp: d.connection && d.connection.isp, org: d.connection && d.connection.org, type: d.type }) : (/(limit|quota|exceed)/i.test(d.message || '') ? 'quota' : null) },
+        { name: 'freeipapi', url: `https://freeipapi.com/api/json/${ip}`, parse: d => d.countryName ? ({ country: d.countryName, cc: d.countryCode, flag: '', region: d.regionName, city: d.cityName, postal: d.zipCode, lat: d.latitude, lon: d.longitude, tz: (d.timeZones && d.timeZones[0]) || '', utc: '', asn: '', isp: d.asnOrganization || '', org: '', type: d.ipVersion === 6 ? 'IPv6' : 'IPv4' }) : null },
+        { name: 'ipapi.co', url: `https://ipapi.co/${ip}/json/`, parse: d => d.error ? (/(quota|limit|throttl)/i.test(d.reason || '') ? 'quota' : null) : ({ country: d.country_name, cc: d.country_code, flag: '', region: d.region, city: d.city, postal: d.postal, lat: d.latitude, lon: d.longitude, tz: d.timezone, utc: d.utc_offset, asn: (d.asn || '').replace(/^AS/, ''), isp: d.org, org: d.org, type: d.version || '' }) }
+      ];
+      let info = null, quota = false, errors = [];
+      for (const p of providers) {
+        try {
+          const r = await fetch(p.url, { headers: { 'user-agent': 'Mozilla/5.0 (compatible; dailyfreetoolbox/1.0; +https://dailyfreetoolbox.com)', 'accept': 'application/json' }, cf: { cacheTtl: 0 } });
+          if (!r.ok) { errors.push(p.name + ':' + r.status); continue; }
+          const d = await r.json();
+          const parsed = p.parse(d);
+          if (parsed === 'quota') { quota = true; errors.push(p.name + ':quota'); continue; }
+          if (!parsed) { errors.push(p.name + ':nodata'); continue; }
+          info = parsed; break;
+        } catch (e) { errors.push(p.name + ':' + (e && e.message ? e.message.slice(0, 40) : 'err')); }
       }
-      if (!up.ok) return json({ ok: false, error: 'upstream', status: up.status }, 502);
-      const d = await up.json();
-      if (!d.success) {
-        const quota = /limit|quota|exceed/i.test(d.message || '');
-        return json({ ok: false, error: quota ? 'quota' : 'not_found', message: d.message || '' }, quota ? 429 : 404);
+      if (!info) {
+        return json({ ok: false, error: quota ? 'quota' : 'upstream', detail: errors.join(' | ') }, quota ? 429 : 502);
       }
       const body = {
-        ok: true, ip: d.ip, type: d.type || '',
-        country: d.country || '', countryCode: d.country_code || '', flag: (d.flag && d.flag.emoji) || '',
-        region: d.region || '', city: d.city || '', postal: d.postal || '',
-        latitude: d.latitude ?? '', longitude: d.longitude ?? '',
-        timezone: (d.timezone && d.timezone.id) || '', utcOffset: (d.timezone && d.timezone.utc) || '',
-        asn: (d.connection && d.connection.asn) || '', isp: (d.connection && d.connection.isp) || '', org: (d.connection && d.connection.org) || ''
+        ok: true, ip, type: info.type || '',
+        country: info.country || '', countryCode: info.cc || '', flag: info.flag || '',
+        region: info.region || '', city: info.city || '', postal: info.postal || '',
+        latitude: info.lat ?? '', longitude: info.lon ?? '',
+        timezone: info.tz || '', utcOffset: info.utc || '',
+        asn: info.asn || '', isp: info.isp || '', org: info.org || ''
       };
       const res = json(body, 200, { 'cache-control': 'public, max-age=2592000' }); // 30일
       ctx.waitUntil(cache.put(cacheKey, res.clone()));

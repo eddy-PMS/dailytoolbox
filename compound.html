@@ -54,7 +54,7 @@ function calc(){
   const P=+$('p').value||0, M=+$('m').value||0, r=(+$('r').value||0)/100, Y=+$('y').value||1, n=Y*12, tax=+$('tax').value, mode=$('mode').value;
   const yearly=[]; let bal=P, principal=P, interest=0;
   for(let k=1;k<=n;k++){
-    if(mode==='compound'){ bal=bal*(1+r/12)+M; principal+=M; interest=bal-principal; }
+    if(mode==='compound'){ bal=(bal+M)*(1+r/12); principal+=M; interest=bal-principal; } // 월초 납입 후 월 복리
     else { principal+=M; interest= P*r*k/12 + M*r*(k*(k+1)/2)/12; bal=principal+interest; }
     if(k%12===0) yearly.push({y:k/12,principal,interest,bal});
   }
@@ -62,7 +62,7 @@ function calc(){
   $('out').innerHTML=`<div class="big-result">${won(net)}<small>세후 만기 수령액</small></div>
     <div class="stat-grid" style="margin-top:12px"><div class="stat"><div class="num">${won(principal)}</div><div class="label">총 원금</div></div><div class="stat"><div class="num">${won(interest)}</div><div class="label">세전 이자</div></div><div class="stat"><div class="num">${won(interest*tax)}</div><div class="label">이자소득세</div></div></div>
     <table style="margin-top:12px"><thead><tr><th>연차</th><th class="r">원금</th><th class="r">누적 이자</th><th class="r">잔액(세전)</th></tr></thead><tbody>${yearly.map(x=>`<tr><td>${x.y}년</td><td class="r">${won(x.principal)}</td><td class="r">${won(x.interest)}</td><td class="r">${won(x.bal)}</td></tr>`).join('')}</tbody></table>
-    <div class="note">월 복리는 매달 이자가 원금에 더해지는 방식(투자·복리예금), 단리는 은행 적금처럼 각 납입금에 남은 기간만큼 이자가 붙는 방식이에요.</div>`;
+    <div class="note">두 방식 모두 매달 초에 납입하는 것으로 계산해요. 월 복리는 매달 붙은 이자에 다시 이자가 붙는 방식(투자·복리예금), 단리는 은행 적금처럼 각 납입금에 남은 기간만큼만 이자가 붙는 방식이라 같은 금리면 복리가 항상 조금 더 많아요.</div>`;
 }
 ['p','m','r','y','mode','tax'].forEach(id=>$(id).addEventListener('input',calc)); calc();
 let sent=false; $('m').addEventListener('input',()=>{ if(!sent&&typeof gtag==='function'){ gtag('event','compound_calculated',{}); sent=true; } });

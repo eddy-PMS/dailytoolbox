@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>퍼센트 계산기 - 몇 %인지, N%는 얼마, 증감률 계산</title>
+<meta name="description" content="전체 대비 몇 %인지, 특정 금액의 N%는 얼마인지, 값이 얼마나 늘거나 줄었는지(증감률)를 한 번에 계산하는 무료 퍼센트 계산기.">
+<meta name="keywords" content="퍼센트 계산기, 퍼센트 계산, 백분율 계산기, 증감률 계산, 비율 계산기, 몇 퍼센트인지 계산">
+<link rel="canonical" href="https://dailyfreetoolbox.com/percent.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="퍼센트 계산기">
+<meta property="og:description" content="전체 대비 몇 %인지, 특정 금액의 N%는 얼마인지, 값이 얼마나 늘거나 줄었는지(증감률)를 한 번에 계산하는 무료 퍼센트 계산기.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/percent.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "퍼센트 계산기", "url": "https://dailyfreetoolbox.com/percent.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "전체 대비 몇 %인지, 특정 금액의 N%는 얼마인지, 값이 얼마나 늘거나 줄었는지(증감률)를 한 번에 계산하는 무료 퍼센트 계산기."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#3a3f4a; --accent-deep:#26292f; }</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "역산은 어떻게 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "\"A의 N%가 B\"일 때 A를 구하려면 B ÷ N × 100이에요. 15%가 7,500원이면 원래 값은 50,000원. ② 칸에서 값을 조정해 맞추거나 할인율 계산기의 역산 탭을 쓰세요."}}, {"@type": "Question", "name": "소수점은 몇 자리까지 나오나요?", "acceptedAnswer": {"@type": "Answer", "text": "최대 소수 둘째 자리까지 표시하고 그 아래는 반올림해요."}}, {"@type": "Question", "name": "음수도 계산되나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 증감률에서 값이 줄면 음수 퍼센트로 표시돼요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#3a3f4a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>% 퍼센트 계산기</b></div>
+  <h1>퍼센트 계산기</h1>
+  <p class="tagline">이건 몇 %고, N%는 얼마일까요</p>
+  <p class="sub">자주 쓰는 퍼센트 계산 네 가지를 한 화면에서 해결해요. 입력하는 대로 바로 계산돼요.</p>
+
+  <div class="card"><h2>① A는 B의 몇 %?</h2><div class="row" style="margin:0;gap:8px"><input type="number" id="a1" value="30" style="width:110px"> 은(는) <input type="number" id="b1" value="200" style="width:110px"> 의 <b id="r1" style="min-width:80px">15%</b></div></div>
+  <div class="card"><h2>② A의 N%는 얼마?</h2><div class="row" style="margin:0;gap:8px"><input type="number" id="a2" value="50000" style="width:110px"> 의 <input type="number" id="n2" value="15" style="width:80px"> % 는 <b id="r2" style="min-width:80px">7,500</b></div></div>
+  <div class="card"><h2>③ A에서 B로 바뀌면 몇 % 증감?</h2><div class="row" style="margin:0;gap:8px"><input type="number" id="a3" value="40000" style="width:110px"> → <input type="number" id="b3" value="46000" style="width:110px"> 는 <b id="r3" style="min-width:80px">+15%</b></div></div>
+  <div class="card"><h2>④ A에 N% 더하기·빼기</h2><div class="row" style="margin:0;gap:8px"><input type="number" id="a4" value="120000" style="width:110px"> 에 <input type="number" id="n4" value="10" style="width:80px"> % → 더하면 <b id="r4a">132,000</b> / 빼면 <b id="r4b">108,000</b></div></div>
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>퍼센트 계산, 네 가지만 알면 끝</h2><p>① A는 B의 몇 %인가: A ÷ B × 100. 30은 200의 15%예요. ② A의 N%는 얼마: A × N ÷ 100. 5만원의 15%는 7,500원. ③ A에서 B로 몇 % 변했나(증감률): (B − A) ÷ A × 100. 4만원이 4.6만원이 되면 +15%. ④ A에 N%를 더하거나 빼기: A × (1 ± N/100). 12만원에 10%를 더하면 13.2만원이에요.</p><p>헷갈리는 건 "기준"이에요. 증감률은 항상 처음 값(A)이 기준이라, 100에서 50으로 줄면 −50%지만 50에서 100으로 늘면 +100%예요. 같은 50 차이여도 방향에 따라 퍼센트가 달라요.</p>
+<h2>퍼센트 vs 퍼센트포인트</h2><p><table><thead><tr><th>상황</th><th>표현</th></tr></thead><tbody><tr><td>금리 3% → 4%</td><td>1%p(퍼센트포인트) 상승 = 33% 상승</td></tr><tr><td>지지율 40% → 44%</td><td>4%p 상승 = 10% 상승</td></tr><tr><td>할인 20% → 30%</td><td>10%p 추가 할인 (총 할인 50%가 아님)</td></tr></tbody></table></p><p>뉴스에서 "%p"와 "%"가 섞여 나올 때 이 차이를 알면 숫자를 정확히 읽을 수 있어요.</p>
+<h2>사용 방법</h2><ol><li>네 가지 계산 중 필요한 칸에 숫자를 넣으세요.</li><li>입력하는 즉시 결과가 바로 옆에 표시돼요.</li><li>증감률은 처음 값 → 나중 값 순서로 넣으세요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>역산은 어떻게 하나요?</summary><p>"A의 N%가 B"일 때 A를 구하려면 B ÷ N × 100이에요. 15%가 7,500원이면 원래 값은 50,000원. ② 칸에서 값을 조정해 맞추거나 할인율 계산기의 역산 탭을 쓰세요.</p></details><details><summary>소수점은 몇 자리까지 나오나요?</summary><p>최대 소수 둘째 자리까지 표시하고 그 아래는 반올림해요.</p></details><details><summary>음수도 계산되나요?</summary><p>네. 증감률에서 값이 줄면 음수 퍼센트로 표시돼요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="discount.html">할인율 계산기</a><a href="vat.html">부가세 계산기</a><a href="margin.html">마진율 계산기</a><a href="raise.html">연봉 인상률 계산기</a></div></section>
+  <footer>퍼센트포인트(%p)는 퍼센트의 차이예요. 10%에서 15%로 오르면 5%p 상승, 증가율로는 50% 상승이에요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const f=n=>Number.isFinite(n)? n.toLocaleString(undefined,{maximumFractionDigits:2}) : '-';
+function calc(){
+  const a1=+$('a1').value,b1=+$('b1').value; $('r1').textContent= b1? f(a1/b1*100)+'%':'-';
+  const a2=+$('a2').value,n2=+$('n2').value; $('r2').textContent=f(a2*n2/100);
+  const a3=+$('a3').value,b3=+$('b3').value; const d= a3? (b3-a3)/a3*100 : NaN; $('r3').textContent= Number.isFinite(d)? (d>=0?'+':'')+f(d)+'%':'-';
+  const a4=+$('a4').value,n4=+$('n4').value; $('r4a').textContent=f(a4*(1+n4/100)); $('r4b').textContent=f(a4*(1-n4/100));
+}
+document.querySelectorAll('input').forEach(i=>i.addEventListener('input',calc)); calc();
+let sent=false; document.addEventListener('input',()=>{ if(!sent&&typeof gtag==='function'){ gtag('event','percent_calculated',{}); sent=true; } });
+ 
+</script>
+
+</body>
+</html>

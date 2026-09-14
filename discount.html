@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>할인율 계산기 - 할인가·할인율·원가 역산, 쿠폰 중복 할인</title>
+<meta name="description" content="정가와 할인율로 할인가를, 정가와 할인가로 할인율을, 할인가와 할인율로 정가를 역산하고 쿠폰 중복 할인까지 계산하는 무료 할인 계산기.">
+<meta name="keywords" content="할인율 계산기, 할인가 계산, 할인 계산기, 세일 가격 계산, 중복 할인 계산, 퍼센트 할인 계산">
+<link rel="canonical" href="https://dailyfreetoolbox.com/discount.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="할인율 계산기">
+<meta property="og:description" content="정가와 할인율로 할인가를, 정가와 할인가로 할인율을, 할인가와 할인율로 정가를 역산하고 쿠폰 중복 할인까지 계산하는 무료 할인 계산기.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/discount.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "할인율 계산기", "url": "https://dailyfreetoolbox.com/discount.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "정가와 할인율로 할인가를, 정가와 할인가로 할인율을, 할인가와 할인율로 정가를 역산하고 쿠폰 중복 할인까지 계산하는 무료 할인 계산기."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#a83a2c; --accent-deep:#8a2f23; }</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "정액 쿠폰(5,000원 할인)은 어떻게 넣나요?", "acceptedAnswer": {"@type": "Answer", "text": "할인가 칸에 정가 − 5,000원을 넣고 \"정가+할인가 → 할인율\" 탭을 쓰면 몇 % 할인인지 나와요."}}, {"@type": "Question", "name": "세일가에 또 세일한다는데 얼마인가요?", "acceptedAnswer": {"@type": "Answer", "text": "1차 할인율과 쿠폰 % 를 각각 넣으면 곱해서 계산해줘요. 두 할인율을 더하면 틀려요."}}, {"@type": "Question", "name": "할인율이 100%면요?", "acceptedAnswer": {"@type": "Answer", "text": "정가 역산이 불가능해 계산되지 않아요. 할인율은 100% 미만으로 넣어주세요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#a83a2c"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🏷 할인율 계산기</b></div>
+  <h1>할인율 계산기</h1>
+  <p class="tagline">30% 할인이면 얼마, 이 가격이면 몇 % 할인?</p>
+  <p class="sub">정가·할인율·할인가 중 둘을 알면 나머지를 계산해요. 1차 할인 후 쿠폰으로 또 할인하는 중복 할인도 정확히 계산해드려요.</p>
+
+  <div class="card">
+    <div class="tabs"><button class="tab active" data-m="price">정가 + 할인율 → 할인가</button><button class="tab" data-m="rate">정가 + 할인가 → 할인율</button><button class="tab" data-m="orig">할인가 + 할인율 → 정가</button></div>
+    <div class="grid2">
+      <div class="field" id="origWrap"><label>정가</label><div class="unit"><input type="number" id="orig" value="59000" step="100"><span>원</span></div></div>
+      <div class="field" id="rateWrap"><label>할인율</label><div class="unit"><input type="number" id="rate" value="30" step="1"><span>%</span></div></div>
+      <div class="field hidden" id="saleWrap"><label>할인가</label><div class="unit"><input type="number" id="sale" value="41300" step="100"><span>원</span></div></div>
+      <div class="field"><label>추가 쿠폰 할인 (선택)</label><div class="unit"><input type="number" id="coupon" value="0" step="1"><span>%</span></div></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>할인율 계산, 중복 할인의 함정</h2><p>할인가 = 정가 × (1 − 할인율). 59,000원의 30% 할인은 41,300원이에요. 반대로 할인율 = (1 − 할인가 ÷ 정가) × 100이고, 할인가와 할인율로 정가를 역산하면 할인가 ÷ (1 − 할인율)이에요. 쇼핑몰의 "정가 대비 N%"가 실제와 다른지 확인할 때 유용해요.</p><p>중복 할인은 더하지 않고 곱해요. 30% 할인 상품에 10% 쿠폰을 쓰면 40%가 아니라 1 − 0.7 × 0.9 = 37% 할인이에요. 쿠폰은 보통 할인된 가격에 적용되기 때문이에요. "최대 50% + 추가 20%" 광고를 보면 실제 최대 할인은 60%예요.</p>
+<h2>할인 표현별 실제 할인율</h2><p><table><thead><tr><th>표현</th><th class="r">실제 할인율</th></tr></thead><tbody><tr><td>30% + 10% 쿠폰</td><td class="r">37%</td></tr><tr><td>50% + 20% 쿠폰</td><td class="r">60%</td></tr><tr><td>1+1 (두 개 사면 하나 무료)</td><td class="r">50% (단, 2개 구매 시)</td></tr><tr><td>2+1</td><td class="r">33.3%</td></tr><tr><td>10만원 이상 1만원 할인</td><td class="r">최대 10% (구매액 클수록 낮아짐)</td></tr></tbody></table></p>
+<h2>사용 방법</h2><ol><li>정가+할인율, 정가+할인가, 할인가+할인율 중 아는 조합의 탭을 고르세요.</li><li>값을 넣으면 나머지가 계산돼요.</li><li>추가 쿠폰이 있으면 % 를 넣어 최종가와 총 할인율을 확인하세요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>정액 쿠폰(5,000원 할인)은 어떻게 넣나요?</summary><p>할인가 칸에 정가 − 5,000원을 넣고 "정가+할인가 → 할인율" 탭을 쓰면 몇 % 할인인지 나와요.</p></details><details><summary>세일가에 또 세일한다는데 얼마인가요?</summary><p>1차 할인율과 쿠폰 % 를 각각 넣으면 곱해서 계산해줘요. 두 할인율을 더하면 틀려요.</p></details><details><summary>할인율이 100%면요?</summary><p>정가 역산이 불가능해 계산되지 않아요. 할인율은 100% 미만으로 넣어주세요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="percent.html">퍼센트 계산기</a><a href="vat.html">부가세 계산기</a><a href="margin.html">마진율 계산기</a><a href="exchange.html">환율 계산기</a></div></section>
+  <footer>정액 할인(예: 5,000원 할인)은 정가 칸에 넣고 할인율 0%로 두면 쿠폰과 함께 계산할 수 있어요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const won=n=>Math.round(n).toLocaleString('ko-KR')+'원';
+let mode='price';
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.m;$('origWrap').classList.toggle('hidden',mode==='orig');$('rateWrap').classList.toggle('hidden',mode==='rate');$('saleWrap').classList.toggle('hidden',mode==='price');calc();}));
+function calc(){
+  let orig=+$('orig').value, rate=+$('rate').value, sale=+$('sale').value; const c=+$('coupon').value||0;
+  if(mode==='price'){ sale=orig*(1-rate/100); } else if(mode==='rate'){ rate= orig? (1-sale/orig)*100 : 0; } else { orig= rate<100? sale/(1-rate/100) : 0; }
+  if(!(orig>0)){ $('out').innerHTML='<div class="empty">값을 입력하세요</div>'; return; }
+  const final=sale*(1-c/100); const totalRate=(1-final/orig)*100;
+  $('out').innerHTML=`<div class="big-result">${won(final)}<small>${c?'쿠폰까지 적용한 최종가':'할인가'}</small></div>
+    <table style="margin-top:12px"><tbody>
+      <tr><td>정가</td><td class="r">${won(orig)}</td></tr>
+      <tr><td>1차 할인 ${rate.toFixed(1)}%</td><td class="r">−${won(orig-sale)} → ${won(sale)}</td></tr>
+      ${c?`<tr><td>쿠폰 ${c}% (할인가 기준)</td><td class="r">−${won(sale-final)} → ${won(final)}</td></tr><tr><td>총 할인율 (정가 대비)</td><td class="r"><b>${totalRate.toFixed(1)}%</b> (${rate.toFixed(0)}% + ${c}% ≠ ${(rate+c).toFixed(0)}%)</td></tr>`:''}
+      <tr><td>총 절약액</td><td class="r"><b>${won(orig-final)}</b></td></tr>
+    </tbody></table>
+    <div class="note">중복 할인은 더하는 게 아니라 곱해요. 30% 할인 후 10% 쿠폰이면 총 37% 할인(1 − 0.7 × 0.9)이지 40%가 아니에요.</div>`;
+  if(typeof gtag==='function') gtag('event','discount_calculated',{mode});
+}
+['orig','rate','sale','coupon'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+ 
+</script>
+
+</body>
+</html>

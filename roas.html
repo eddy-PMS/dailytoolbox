@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>ROAS 계산기 - 광고수익률·ROI·CPA·전환율 계산</title>
+<meta name="description" content="광고비와 광고 매출을 넣으면 ROAS와 ROI를, 클릭·전환 수를 넣으면 CPC·CPA·전환율까지 계산하고 손익분기 ROAS를 알려주는 무료 광고 성과 계산기.">
+<meta name="keywords" content="ROAS 계산기, 광고수익률 계산, ROI 계산기, CPA 계산, 전환율 계산, 손익분기 ROAS, 광고 효율 계산">
+<link rel="canonical" href="https://dailyfreetoolbox.com/roas.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ROAS 계산기">
+<meta property="og:description" content="광고비와 광고 매출을 넣으면 ROAS와 ROI를, 클릭·전환 수를 넣으면 CPC·CPA·전환율까지 계산하고 손익분기 ROAS를 알려주는 무료 광고 성과 계산기.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/roas.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "ROAS 계산기", "url": "https://dailyfreetoolbox.com/roas.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "광고비와 광고 매출을 넣으면 ROAS와 ROI를, 클릭·전환 수를 넣으면 CPC·CPA·전환율까지 계산하고 손익분기 ROAS를 알려주는 무료 광고 성과 계산기."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#a83a2c; --accent-deep:#8a2f23; }</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "ROAS 300%면 잘한 건가요?", "acceptedAnswer": {"@type": "Answer", "text": "마진율에 따라 달라요. 마진 40%면 손익분기 ROAS 250%라 이익이고, 마진 25%면 400%가 손익분기라 손해예요. 이 계산기의 손익분기 ROAS와 비교하세요."}}, {"@type": "Question", "name": "광고 매출은 어떻게 잡나요?", "acceptedAnswer": {"@type": "Answer", "text": "플랫폼(메타·구글·네이버) 전환 추적의 광고 기여 매출을 쓰는 게 일반적이에요. 기여 기간(클릭 후 7일 등) 설정에 따라 숫자가 달라지니 채널 간 비교 시 기준을 맞추세요."}}, {"@type": "Question", "name": "CPA 목표는 어떻게 정하나요?", "acceptedAnswer": {"@type": "Answer", "text": "객단가 × 마진율이 전환 1건의 이익이니, 그보다 낮은 CPA가 목표예요. 객단가 5만원·마진 30%면 CPA 1.5만원 이하."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#a83a2c"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>📣 ROAS·광고수익률 계산기</b></div>
+  <h1>ROAS 계산기</h1>
+  <p class="tagline">광고비 100만원 써서 얼마 벌었나요</p>
+  <p class="sub">ROAS(매출 ÷ 광고비)와 ROI(이익 ÷ 광고비)는 달라요. 마진율을 넣으면 실제로 남는 돈 기준 손익분기 ROAS까지 계산해드려요.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>광고비</label><div class="unit"><input type="number" id="spend" value="1000000" step="10000"><span>원</span></div></div>
+      <div class="field"><label>광고로 발생한 매출</label><div class="unit"><input type="number" id="revenue" value="4000000" step="10000"><span>원</span></div></div>
+      <div class="field"><label>마진율 (매출 대비 이익, 선택)</label><div class="unit"><input type="number" id="margin" value="30" step="1"><span>%</span></div></div>
+      <div class="field"><label>노출 수 (선택)</label><input type="number" id="imp" placeholder="예: 200000"></div>
+      <div class="field"><label>클릭 수 (선택)</label><input type="number" id="clicks" placeholder="예: 4000"></div>
+      <div class="field"><label>전환(구매) 수 (선택)</label><input type="number" id="conv" placeholder="예: 80"></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>ROAS와 ROI, 뭐가 다른가요</h2><p>ROAS(Return On Ad Spend)는 광고비 대비 매출이에요. 광고비 100만원으로 매출 400만원이면 ROAS 400%예요. ROI(Return On Investment)는 광고비 대비 이익으로, 마진율 30%면 이익은 400만 × 0.3 − 100만 = 20만원, ROI 20%예요. ROAS 400%가 대단해 보여도 마진율이 25%면 ROI는 0%, 즉 본전이에요. 광고 성과를 판단할 때는 손익분기 ROAS(100 ÷ 마진율)를 먼저 계산해두세요.</p><p>업종별 평균 ROAS는 대략 이커머스 300~500%, 앱 설치 캠페인 100~200%, 브랜드 인지 캠페인은 직접 매출보다 도달 지표로 봐요. 네이버 쇼핑검색·구글 쇼핑처럼 구매 의도가 높은 채널이 ROAS가 높고, 디스플레이·SNS는 낮은 대신 신규 고객 유입에 강해요.</p>
+<h2>광고 지표 용어</h2><p><table><thead><tr><th>지표</th><th>계산</th><th>의미</th></tr></thead><tbody><tr><td>CPM</td><td>광고비 ÷ 노출 × 1,000</td><td>1,000회 노출 비용</td></tr><tr><td>CTR</td><td>클릭 ÷ 노출</td><td>클릭률 (1~3%가 보통)</td></tr><tr><td>CPC</td><td>광고비 ÷ 클릭</td><td>클릭당 비용</td></tr><tr><td>CVR</td><td>전환 ÷ 클릭</td><td>전환율 (이커머스 1~3%)</td></tr><tr><td>CPA</td><td>광고비 ÷ 전환</td><td>구매 1건당 비용</td></tr><tr><td>ROAS</td><td>매출 ÷ 광고비</td><td>광고비 대비 매출</td></tr></tbody></table></p>
+<h2>사용 방법</h2><ol><li>광고비와 광고 매출을 넣으면 ROAS가 바로 나와요.</li><li>마진율을 넣으면 ROI와 손익분기 ROAS, 이익·손실 여부가 표시돼요.</li><li>노출·클릭·전환 수를 넣으면 CPM·CTR·CPC·CVR·CPA까지 계산돼요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>ROAS 300%면 잘한 건가요?</summary><p>마진율에 따라 달라요. 마진 40%면 손익분기 ROAS 250%라 이익이고, 마진 25%면 400%가 손익분기라 손해예요. 이 계산기의 손익분기 ROAS와 비교하세요.</p></details><details><summary>광고 매출은 어떻게 잡나요?</summary><p>플랫폼(메타·구글·네이버) 전환 추적의 광고 기여 매출을 쓰는 게 일반적이에요. 기여 기간(클릭 후 7일 등) 설정에 따라 숫자가 달라지니 채널 간 비교 시 기준을 맞추세요.</p></details><details><summary>CPA 목표는 어떻게 정하나요?</summary><p>객단가 × 마진율이 전환 1건의 이익이니, 그보다 낮은 CPA가 목표예요. 객단가 5만원·마진 30%면 CPA 1.5만원 이하.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="cac-ltv.html">CAC·LTV 계산기</a><a href="breakeven.html">손익분기점 계산기</a><a href="margin.html">마진율 계산기</a><a href="percent.html">퍼센트 계산기</a></div></section>
+  <footer>매출은 광고 기여분(플랫폼 전환 추적 기준)을 넣으세요. 광고 부가세, 대행 수수료가 있으면 광고비에 포함하는 게 정확해요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const won=n=>Math.round(n).toLocaleString('ko-KR')+'원';
+function calc(){
+  const S=+$('spend').value||0, R=+$('revenue').value||0, m=(+$('margin').value||0)/100, imp=+$('imp').value, cl=+$('clicks').value, cv=+$('conv').value;
+  if(!S){ $('out').innerHTML='<div class="empty">광고비를 입력하세요</div>'; return; }
+  const roas=R/S*100; const profit=R*m-S; const roi=profit/S*100; const bepRoas= m? 100/m : null;
+  let rows=`<tr><td>ROAS (매출 ÷ 광고비)</td><td class="r"><b>${roas.toFixed(0)}%</b> (광고비 1원당 매출 ${(R/S).toFixed(2)}원)</td></tr>`;
+  if(m){ rows+=`<tr><td>광고 이익 (매출 × 마진율 − 광고비)</td><td class="r ${profit>=0?'ok':'bad'}"><b>${won(profit)}</b></td></tr><tr><td>ROI (이익 ÷ 광고비)</td><td class="r ${roi>=0?'ok':'bad'}">${roi.toFixed(0)}%</td></tr><tr><td>손익분기 ROAS (마진율 ${(m*100).toFixed(0)}% 기준)</td><td class="r">${bepRoas.toFixed(0)}% ${roas>=bepRoas?'— 현재 이익 구간':'— 현재 손실 구간'}</td></tr>`; }
+  if(cl){ rows+=`<tr><td>CPC (클릭당 비용)</td><td class="r">${won(S/cl)}</td></tr>`; if(imp) rows+=`<tr><td>CTR (클릭률)</td><td class="r">${(cl/imp*100).toFixed(2)}%</td></tr>`; if(cv) rows+=`<tr><td>전환율 (전환 ÷ 클릭)</td><td class="r">${(cv/cl*100).toFixed(2)}%</td></tr>`; }
+  if(cv){ rows+=`<tr><td>CPA (전환당 비용)</td><td class="r">${won(S/cv)}</td></tr><tr><td>객단가 (매출 ÷ 전환)</td><td class="r">${won(R/cv)}</td></tr>`; }
+  if(imp) rows+=`<tr><td>CPM (1,000회 노출당 비용)</td><td class="r">${won(S/imp*1000)}</td></tr>`;
+  $('out').innerHTML=`<div class="big-result">ROAS ${roas.toFixed(0)}%<small>${m?'ROI '+roi.toFixed(0)+'%':''}</small></div><table style="margin-top:12px"><tbody>${rows}</tbody></table>
+    <div class="note">ROAS가 높아도 마진율이 낮으면 손해일 수 있어요. 손익분기 ROAS = 100 ÷ 마진율(%)×100. 마진율 30%면 ROAS 333% 이상이어야 이익이에요.</div>`;
+  if(typeof gtag==='function') gtag('event','roas_calculated',{});
+}
+['spend','revenue','margin','imp','clicks','conv'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+ 
+</script>
+
+</body>
+</html>

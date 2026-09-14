@@ -49,7 +49,9 @@
       ['exchange.html', '환율 계산기'],
       ['rent.html', '전월세·중개수수료'],
       ['lotto.html', '로또 번호 생성기'],
-      ['password.html', '비밀번호 생성기']
+      ['password.html', '비밀번호 생성기'],
+      ['percent.html', '퍼센트 계산기'],
+      ['discount.html', '할인율 계산기']
     ]},
     { label: '가족', items: [
       ['pregnancy.html', '출산예정일·임신 주수'],
@@ -65,7 +67,11 @@
       ['unemployment.html', '실업급여 계산기'],
       ['freelancer-tax.html', '3.3% 프리랜서 세금'],
       ['margin.html', '마진율 계산기'],
-      ['platform-fee.html', '카드·배달앱 수수료']
+      ['platform-fee.html', '카드·배달앱 수수료'],
+      ['breakeven.html', '손익분기점 계산기'],
+      ['roas.html', 'ROAS 계산기'],
+      ['cac-ltv.html', 'CAC·LTV 계산기'],
+      ['worktime.html', '근무시간·야근 계산기']
     ]},
     { label: '학생', items: [
       ['gpa.html', '학점 계산기'],

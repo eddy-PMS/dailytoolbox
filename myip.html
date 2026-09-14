@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>내 IP 주소 확인 - 아이피 위치·통신사·접속 정보 조회</title>
+<meta name="description" content="지금 접속 중인 내 IP 주소와 대략적인 위치(국가·도시), 통신사, 시간대, 브라우저 정보를 바로 확인하는 무료 도구.">
+<meta name="keywords" content="내 IP 확인, 내 아이피 주소, IP 주소 조회, 아이피 위치, 내 IP 위치 확인, 공인 IP">
+<link rel="canonical" href="https://dailyfreetoolbox.com/myip.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="내 IP 주소 확인">
+<meta property="og:description" content="지금 접속 중인 내 IP 주소와 대략적인 위치(국가·도시), 통신사, 시간대, 브라우저 정보를 바로 확인하는 무료 도구.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/myip.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "내 IP 주소 확인", "url": "https://dailyfreetoolbox.com/myip.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "지금 접속 중인 내 IP 주소와 대략적인 위치(국가·도시), 통신사, 시간대, 브라우저 정보를 바로 확인하는 무료 도구."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#3b6d8a; --accent-deep:#2a5168; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#3b6d8a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>⌖ 내 IP 주소 확인</b></div>
+  <h1>지금 접속 중인 내 IP와 위치를 확인해요</h1>
+  <p class="sub">공인 IP 주소, 대략적인 위치(국가·지역·도시), 통신사, 시간대와 브라우저 정보를 보여드려요. 서버에 저장하지 않고 화면에만 표시합니다.</p>
+
+  <div class="card" id="main"><div class="empty">접속 정보를 불러오는 중이에요…</div></div>
+  <div class="card"><h2>IP 위치는 얼마나 정확한가요?</h2><div class="note" style="font-size:13px;color:var(--ink)">
+    · IP 위치는 통신사가 IP를 배정한 지역을 추정한 것이라 <b>도시 단위 근사치</b>예요. 실제 위치와 수십 km 이상 차이 나는 경우가 흔합니다.<br>
+    · 휴대폰 데이터(LTE/5G)는 통신사 게이트웨이 위치로 잡혀 서울로 표시되는 경우가 많아요.<br>
+    · VPN이나 회사 프록시를 쓰면 그쪽 위치로 표시됩니다. GPS처럼 사람의 위치를 찾는 용도로는 쓸 수 없어요.
+  </div></div>
+ 
+  <footer>위치 정보는 Cloudflare 네트워크가 제공하는 IP 기반 추정치이며, 이 페이지는 조회 결과를 어디에도 저장하지 않습니다.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const REGION={KR:'대한민국',US:'미국',JP:'일본',CN:'중국',TW:'대만',HK:'홍콩',SG:'싱가포르',VN:'베트남',TH:'태국',PH:'필리핀',ID:'인도네시아',MY:'말레이시아',IN:'인도',AU:'호주',NZ:'뉴질랜드',GB:'영국',DE:'독일',FR:'프랑스',CA:'캐나다',ES:'스페인',IT:'이탈리아',NL:'네덜란드',RU:'러시아',BR:'브라질',MX:'멕시코',AE:'아랍에미리트'};
+function ua(s){ const b= /Edg\//.test(s)?'Edge': /OPR\//.test(s)?'Opera': /Chrome\//.test(s)?'Chrome': /Safari\//.test(s)&&/Version\//.test(s)?'Safari': /Firefox\//.test(s)?'Firefox':'브라우저';
+  const os= /Windows/.test(s)?'Windows': /Android/.test(s)?'Android': /iPhone|iPad/.test(s)?'iOS': /Mac OS/.test(s)?'macOS': /Linux/.test(s)?'Linux':'기타'; return b+' · '+os; }
+fetch('/api/myip',{cache:'no-store'}).then(r=>r.json()).then(d=>{
+  const loc=[d.country?(REGION[d.country]||d.country):'', d.region, d.city].filter(Boolean).join(' · ');
+  const map= d.latitude&&d.longitude? `<a href="https://www.openstreetmap.org/?mlat=${d.latitude}&mlon=${d.longitude}#map=11/${d.latitude}/${d.longitude}" target="_blank" rel="noopener">지도에서 보기 ↗</a>`:'';
+  $('main').innerHTML=`<div class="big-result" style="font-size:32px;word-break:break-all">${d.ip||'-'}<small>공인 IP</small></div>
+    <div class="btn-row"><button class="btn-ghost" id="copy">IP 복사</button></div>
+    <table style="margin-top:14px"><tbody>
+      <tr><td>대략적 위치</td><td class="r">${loc||'-'} ${map}</td></tr>
+      <tr><td>통신사 / 네트워크</td><td class="r">${d.isp||'-'}${d.asn?` (AS${d.asn})`:''}</td></tr>
+      <tr><td>시간대</td><td class="r">${d.timezone||'-'}</td></tr>
+      <tr><td>IP 종류</td><td class="r">${d.ip.includes(':')?'IPv6':'IPv4'}</td></tr>
+      <tr><td>브라우저 / 기기</td><td class="r">${ua(d.userAgent)}</td></tr>
+      <tr><td>화면 해상도</td><td class="r">${screen.width}×${screen.height}</td></tr>
+      <tr><td>브라우저 언어</td><td class="r">${navigator.language}</td></tr>
+    </tbody></table>`;
+  $('copy').addEventListener('click',async()=>{ try{ await navigator.clipboard.writeText(d.ip); $('copy').textContent='복사됨'; setTimeout(()=>$('copy').textContent='IP 복사',1500);}catch{} });
+  if(typeof gtag==='function') gtag('event','myip_viewed',{country:d.country||''});
+}).catch(()=>{ $('main').innerHTML='<div class="empty">접속 정보를 불러오지 못했어요. 새로고침 해주세요.</div>'; });
+ 
+</script>
+
+</body>
+</html>

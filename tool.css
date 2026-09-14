@@ -42,3 +42,19 @@ td.r, th.r { text-align:right; font-variant-numeric:tabular-nums; }
 .status { font-size:13px; color:var(--ink-soft); min-height:18px; margin-top:8px; }
 .ok { color:var(--ok); } .bad { color:var(--bad); }
 footer { margin-top:56px; font-size:12px; color:#a39a89; text-align:center; line-height:1.8; }
+/* SEO 콘텐츠·광고 자리 */
+.ad-slot { margin: 18px 0; text-align: center; }
+.ad-slot:empty { display: none; }
+.seo { background: #fffdf8; border: 1px solid var(--line); border-radius: 3px; padding: 22px 24px; margin-top: 18px; font-size: 15px; line-height: 1.8; }
+.seo h2 { font-size: 17px; margin: 0 0 8px; font-weight: 700; color: var(--ink); }
+.seo h2 + h2, .seo p + h2, .seo ol + h2, .seo table + h2 { margin-top: 22px; }
+.seo p { margin: 0 0 10px; color: var(--ink); }
+.seo ol { margin: 0 0 10px; padding-left: 22px; } .seo li { margin-bottom: 4px; }
+.seo table { font-size: 14px; margin: 8px 0 12px; }
+.seo.faq details { border-top: 1px solid var(--paper-deep); padding: 10px 0; }
+.seo.faq details:first-of-type { border-top: none; }
+.seo.faq summary { cursor: pointer; font-weight: 600; font-size: 15px; }
+.seo.faq details p { margin: 8px 0 0; color: var(--ink-soft); font-size: 14px; }
+.related-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+.related-grid a { border: 1px solid var(--line); border-radius: 20px; padding: 7px 14px; font-size: 13px; color: var(--ink); text-decoration: none; background: var(--paper); }
+.related-grid a:hover { background: var(--paper-deep); }

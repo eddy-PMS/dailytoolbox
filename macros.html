@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>단백질 칼로리 섭취량 계산기 - 벌크업 다이어트 하루 권장량</title>
+<meta name="description" content="키·몸무게·활동량·목표(벌크업/유지/다이어트)로 하루 칼로리와 단백질·탄수화물·지방 권장 섭취량을 계산하는 무료 도구.">
+<meta name="keywords" content="단백질 섭취량 계산기, 칼로리 계산기, 하루 칼로리, 벌크업 칼로리, 다이어트 칼로리, 탄단지 계산">
+<link rel="canonical" href="https://dailyfreetoolbox.com/macros.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="단백질 칼로리 섭취량 계산기">
+<meta property="og:description" content="키·몸무게·활동량·목표(벌크업/유지/다이어트)로 하루 칼로리와 단백질·탄수화물·지방 권장 섭취량을 계산하는 무료 도구.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/macros.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "단백질 칼로리 섭취량 계산기", "url": "https://dailyfreetoolbox.com/macros.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "키·몸무게·활동량·목표(벌크업/유지/다이어트)로 하루 칼로리와 단백질·탄수화물·지방 권장 섭취량을 계산하는 무료 도구."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2f5d4e; --accent-deep:#22453a; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f5d4e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🍗 단백질·칼로리 섭취량 계산기</b></div>
+  <h1>내 목표에 맞는 하루 식단 숫자</h1>
+  <p class="sub">기초대사량(Mifflin-St Jeor)에 활동량을 곱해 유지 칼로리를 구하고, 목표에 따라 칼로리와 탄단지 비율을 조정해요.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>성별</label><select id="sex"><option value="m">남성</option><option value="f">여성</option></select></div>
+      <div class="field"><label>나이</label><div class="unit"><input type="number" id="age" value="22" min="10" max="90"><span>세</span></div></div>
+      <div class="field"><label>키</label><div class="unit"><input type="number" id="h" value="175" min="100" max="230"><span>cm</span></div></div>
+      <div class="field"><label>몸무게</label><div class="unit"><input type="number" id="w" value="70" min="30" max="200" step="0.5"><span>kg</span></div></div>
+      <div class="field"><label>활동량</label><select id="act"><option value="1.2">거의 안 움직임 (사무직, 운동 안 함)</option><option value="1.375">가벼운 활동 (주 1~3회 운동)</option><option value="1.55" selected>보통 활동 (주 3~5회 운동)</option><option value="1.725">활발 (주 6~7회 운동)</option><option value="1.9">매우 활발 (육체노동 + 운동)</option></select></div>
+      <div class="field"><label>목표</label><select id="goal"><option value="cut">다이어트 (−20%)</option><option value="maintain" selected>유지</option><option value="bulk">린매스업 (+10%)</option><option value="bigbulk">벌크업 (+20%)</option></select></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ 
+  <footer>일반 성인 기준 참고용이며, 질환이 있거나 청소년·임산부는 전문가와 상담하세요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+function calc(){
+  const sex=$('sex').value, age=+$('age').value||20, h=+$('h').value||170, w=+$('w').value||65, act=+$('act').value, goal=$('goal').value;
+  const bmr= sex==='m'? 10*w+6.25*h-5*age+5 : 10*w+6.25*h-5*age-161;
+  const tdee=bmr*act;
+  const mult={cut:0.8,maintain:1,bulk:1.1,bigbulk:1.2}[goal]; const kcal=tdee*mult;
+  const protPerKg={cut:2.0,maintain:1.6,bulk:1.8,bigbulk:1.8}[goal]; const prot=w*protPerKg;
+  const fat=w*0.9; const carb=Math.max(0,(kcal-prot*4-fat*9)/4);
+  $('out').innerHTML=`<div class="stat-grid"><div class="stat"><div class="num">${Math.round(kcal)}</div><div class="label">하루 목표 kcal</div></div><div class="stat"><div class="num">${Math.round(prot)}g</div><div class="label">단백질 (${protPerKg}g/kg)</div></div><div class="stat"><div class="num">${Math.round(carb)}g</div><div class="label">탄수화물</div></div><div class="stat"><div class="num">${Math.round(fat)}g</div><div class="label">지방</div></div></div>
+    <table style="margin-top:12px"><tbody><tr><td>기초대사량 (BMR)</td><td class="r">${Math.round(bmr)} kcal</td></tr><tr><td>유지 칼로리 (TDEE)</td><td class="r">${Math.round(tdee)} kcal</td></tr><tr><td>단백질 ${Math.round(prot)}g 예시</td><td class="r">닭가슴살 약 ${Math.round(prot/23)}장(100g당 23g) 또는 계란 약 ${Math.round(prot/6)}개</td></tr></tbody></table>
+    <div class="note">단백질은 목표별 체중 1kg당 1.6~2.0g, 지방은 0.9g/kg, 나머지를 탄수화물로 배분했어요. 개인차가 크니 2~3주 체중 변화를 보며 ±100~200kcal씩 조정하세요.</div>`;
+}
+['sex','age','h','w','act','goal'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+let sent=false; $('w').addEventListener('input',()=>{ if(!sent&&typeof gtag==='function'){ gtag('event','macros_calculated',{}); sent=true; } });
+ 
+</script>
+
+</body>
+</html>

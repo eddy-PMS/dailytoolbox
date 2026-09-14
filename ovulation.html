@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>배란일 계산기 - 가임기·생리 예정일 계산</title>
+<meta name="description" content="마지막 생리일과 주기를 넣으면 다음 배란일, 가임기(임신 가능 기간), 다음 생리 예정일을 3개월치 계산하는 무료 도구.">
+<meta name="keywords" content="배란일 계산기, 가임기 계산, 배란일 계산, 생리 예정일 계산, 임신 가능 기간, 배란 주기">
+<link rel="canonical" href="https://dailyfreetoolbox.com/ovulation.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="배란일 계산기">
+<meta property="og:description" content="마지막 생리일과 주기를 넣으면 다음 배란일, 가임기(임신 가능 기간), 다음 생리 예정일을 3개월치 계산하는 무료 도구.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/ovulation.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "배란일 계산기", "url": "https://dailyfreetoolbox.com/ovulation.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "마지막 생리일과 주기를 넣으면 다음 배란일, 가임기(임신 가능 기간), 다음 생리 예정일을 3개월치 계산하는 무료 도구."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#a83a2c; --accent-deep:#8a2f23; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#a83a2c"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>📆 배란일·가임기 계산기</b></div>
+  <h1>이번 달 배란일과 가임기는 언제일까요</h1>
+  <p class="sub">생리 주기를 바탕으로 배란일(다음 생리 14일 전)과 가임기(배란일 5일 전~1일 후)를 3개월치 계산해요.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>마지막 생리 시작일</label><input type="date" id="lmp"></div>
+      <div class="field"><label>평균 생리 주기</label><div class="unit"><input type="number" id="cycle" value="28" min="20" max="45"><span>일</span></div></div>
+      <div class="field"><label>생리 기간</label><div class="unit"><input type="number" id="period" value="5" min="2" max="10"><span>일</span></div></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ 
+  <footer>의학적 판단을 대신하지 않으며 참고용이에요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const today=new Date(); today.setHours(0,0,0,0);
+const fmt=d=>`${d.getMonth()+1}/${d.getDate()} (${['일','월','화','수','목','금','토'][d.getDay()]})`;
+const addD=(d,n)=>{const x=new Date(d);x.setDate(x.getDate()+n);return x;};
+const dl=addD(today,-10); $('lmp').value=dl.toISOString().slice(0,10);
+function calc(){
+  const lmp=new Date($('lmp').value); if(isNaN(lmp)) return; lmp.setHours(0,0,0,0); const cyc=+$('cycle').value||28, per=+$('period').value||5;
+  let rows=''; let cur=lmp; let firstOv=null;
+  for(let i=0;i<3;i++){ const next=addD(cur,cyc); const ov=addD(next,-14); const f1=addD(ov,-5), f2=addD(ov,1); if(!firstOv&&ov>=today) firstOv=ov;
+    rows+=`<tr><td>${i+1}번째</td><td class="r">${fmt(cur)} ~ ${fmt(addD(cur,per-1))}</td><td class="r"><b>${fmt(ov)}</b></td><td class="r">${fmt(f1)} ~ ${fmt(f2)}</td><td class="r">${fmt(next)}</td></tr>`; cur=next; }
+  const dOv= firstOv? Math.round((firstOv-today)/86400000):null;
+  $('out').innerHTML=`${firstOv?`<div class="big-result" style="font-size:24px">다음 배란일 ${fmt(firstOv)}<small>${dOv===0?'오늘':'D-'+dOv}</small></div>`:''}
+    <table style="margin-top:12px"><thead><tr><th>주기</th><th class="r">생리 기간</th><th class="r">배란 예상일</th><th class="r">가임기</th><th class="r">다음 생리</th></tr></thead><tbody>${rows}</tbody></table>
+    <div class="note">주기가 불규칙하면 오차가 커요. 정확한 배란 확인은 배란 테스트기나 기초체온 측정을 함께 활용하세요. 이 계산은 피임 목적으로 쓰기엔 적절하지 않아요.</div>`;
+  if(typeof gtag==='function') gtag('event','ovulation_calculated',{cycle:cyc});
+}
+['lmp','cycle','period'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+ 
+</script>
+
+</body>
+</html>

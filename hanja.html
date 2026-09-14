@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>한자 음훈 조회 - 한자 뜻과 음 찾기 (음훈 사전)</title>
+<meta name="description" content="한자를 입력하면 훈(뜻)과 음을 바로 알려주는 무료 한자 사전. 여러 글자를 한 번에 조회할 수 있어요.">
+<meta name="keywords" content="한자 음훈, 한자 뜻 찾기, 한자 사전, 한자 음 찾기, 한자 읽는법, 한자 훈음">
+<link rel="canonical" href="https://dailyfreetoolbox.com/hanja.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="한자 음훈 조회">
+<meta property="og:description" content="한자를 입력하면 훈(뜻)과 음을 바로 알려주는 무료 한자 사전. 여러 글자를 한 번에 조회할 수 있어요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/hanja.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "한자 음훈 조회", "url": "https://dailyfreetoolbox.com/hanja.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "한자를 입력하면 훈(뜻)과 음을 바로 알려주는 무료 한자 사전. 여러 글자를 한 번에 조회할 수 있어요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2f6b52; --accent-deep:#234f3d; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f6b52"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>訓音 한자 음훈 조회</b></div>
+  <h1>이 한자, 무슨 뜻이고 어떻게 읽을까요</h1>
+  <p class="sub">한자를 입력하면 글자마다 훈(뜻)과 음을 보여드려요. 문장을 통째로 붙여넣어도 한자만 골라 조회합니다. 2만여 자 수록.</p>
+
+  <div class="card">
+    <textarea id="input" placeholder="예) 天地玄黃 宇宙洪荒" style="min-height:90px;font-size:20px"></textarea>
+    <div class="status" id="status">사전 데이터를 불러오는 중이에요…</div>
+  </div>
+  <div id="result"><div class="empty">한자를 입력하면 여기에 음과 훈이 표시돼요</div></div>
+ 
+  <footer>사전 데이터는 오픈소스 libhangul 프로젝트의 한자 사전(LGPL)을 바탕으로 합니다. 다음자(여러 음이 있는 글자)는 모든 음을 표시하고, 전체 음독은 대표음 기준이라 문맥과 다를 수 있어요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+let DICT=null;
+fetch('hanja-data.json').then(r=>r.json()).then(d=>{DICT=d;$('status').textContent='';render();}).catch(()=>{$('status').textContent='사전 데이터를 불러오지 못했어요. 새로고침 해주세요.';});
+const isHanja=ch=>/[\u4e00-\u9fff\uf900-\ufaff]/.test(ch);
+function render(){
+  const text=$('input').value; const chars=[...text].filter(isHanja);
+  if(!chars.length){ $('result').innerHTML='<div class="empty">한자를 입력하면 여기에 음과 훈이 표시돼요</div>'; return; }
+  if(!DICT) return;
+  const seen=new Set();
+  const cards=chars.filter(c=>{ if(seen.has(c)) return false; seen.add(c); return true; }).map(c=>{
+    const entries=DICT[c];
+    if(!entries) return `<div class="card" style="padding:14px 18px;display:flex;gap:16px;align-items:center"><div style="font-size:40px;font-weight:700;min-width:56px;text-align:center">${c}</div><div class="note" style="margin:0">사전에 없는 글자예요</div></div>`;
+    const list=entries.map(([eum,hun])=>`<div><b style="color:var(--accent)">${eum}</b> ${hun? '<span style="color:var(--ink-soft)">'+hun+'</span>':''}</div>`).join('');
+    return `<div class="card" style="padding:14px 18px;display:flex;gap:16px;align-items:center"><div style="font-size:40px;font-weight:700;min-width:56px;text-align:center">${c}</div><div style="font-size:15px;line-height:1.7">${list}</div></div>`;
+  });
+  const reading=chars.map(c=>DICT[c]? DICT[c][DICT[c].length-1][0] : '?').join('');
+  $('result').innerHTML=`<div class="card" style="padding:14px 18px"><span class="note" style="margin:0">전체 음독 (대표음 기준)</span><div style="font-size:18px;margin-top:4px">${reading}</div></div>`+cards.join('');
+}
+let t; $('input').addEventListener('input',()=>{clearTimeout(t);t=setTimeout(()=>{render(); if(typeof gtag==='function') gtag('event','hanja_lookup',{chars:[...$('input').value].filter(isHanja).length});},200);});
+ 
+</script>
+
+</body>
+</html>

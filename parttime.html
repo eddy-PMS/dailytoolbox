@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>알바 급여 계산기 2026 - 주휴수당·야간수당 포함 월급 계산</title>
+<meta name="description" content="시급과 근무시간을 넣으면 2026년 최저시급 기준 주휴수당·야간·연장수당을 반영한 주급·월급과 3.3% 공제 후 실수령액을 계산하는 무료 도구.">
+<meta name="keywords" content="알바 급여 계산기, 알바 월급 계산, 주휴수당 계산기, 야간수당 계산, 최저시급 2026, 알바비 계산">
+<link rel="canonical" href="https://dailyfreetoolbox.com/parttime.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="알바 급여 계산기 2026">
+<meta property="og:description" content="시급과 근무시간을 넣으면 2026년 최저시급 기준 주휴수당·야간·연장수당을 반영한 주급·월급과 3.3% 공제 후 실수령액을 계산하는 무료 도구.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/parttime.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "알바 급여 계산기 2026", "url": "https://dailyfreetoolbox.com/parttime.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "시급과 근무시간을 넣으면 2026년 최저시급 기준 주휴수당·야간·연장수당을 반영한 주급·월급과 3.3% 공제 후 실수령액을 계산하는 무료 도구."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2f5d4e; --accent-deep:#22453a; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f5d4e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>₩ 알바 급여 계산기 (2026)</b></div>
+  <h1>내 알바비, 주휴수당까지 제대로 받고 있나요</h1>
+  <p class="sub">2026년 최저시급은 10,320원이에요. 주 15시간 이상 일하면 주휴수당이 붙고, 5인 이상 사업장은 야간·연장 근무에 50%가 가산됩니다.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>시급</label><div class="unit"><input type="number" id="wage" value="10320" step="10" min="0"><span>원</span></div></div>
+      <div class="field"><label>주 근무일수</label><div class="unit"><input type="number" id="days" value="5" min="1" max="7"><span>일</span></div></div>
+      <div class="field"><label>하루 근무시간 (휴게 제외)</label><div class="unit"><input type="number" id="hours" value="6" min="0.5" max="16" step="0.5"><span>시간</span></div></div>
+      <div class="field"><label>그중 야간(22시~06시) 시간</label><div class="unit"><input type="number" id="night" value="0" min="0" max="8" step="0.5"><span>시간</span></div></div>
+      <div class="field"><label>사업장 규모</label><select id="size"><option value="5">5인 이상 (야간·연장 가산 적용)</option><option value="4">5인 미만 (가산 없음)</option></select></div>
+      <div class="field"><label>공제</label><select id="tax"><option value="0">공제 없음 (세전)</option><option value="0.033">3.3% 원천징수</option><option value="0.094">4대보험 약 9.4%</option></select></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ 
+  <footer>2026년 최저임금 기준. 수습(3개월, 1년 이상 계약)은 최저임금의 90%까지 가능하며, 단순노무직은 감액이 안 돼요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const won=n=>Math.round(n).toLocaleString('ko-KR')+'원';
+function calc(){
+  const w=+$('wage').value||0, d=+$('days').value||0, h=+$('hours').value||0, night=Math.min(+$('night').value||0,h), big=$('size').value==='5', tax=+$('tax').value;
+  const weekHours=d*h; const base=weekHours*w;
+  const overtimeDaily=Math.max(0,h-8)*d; const overtimeExtra= big? overtimeDaily*w*0.5:0;
+  const nightExtra= big? night*d*w*0.5:0;
+  const juhyu= weekHours>=15? Math.min(weekHours,40)/40*8*w : 0;
+  const weekly=base+overtimeExtra+nightExtra+juhyu; const monthly=weekly*4.345; const net=monthly*(1-tax);
+  const minWage=10320; const warn= w<minWage? `<div class="note bad">입력한 시급이 2026년 최저시급(${minWage.toLocaleString()}원)보다 낮아요. 최저임금법 위반이에요.</div>`:'';
+  $('out').innerHTML=`<div class="big-result">${won(net)}<small>월 예상 ${tax?'실수령액':'급여 (세전)'}</small></div>
+    <table style="margin-top:12px"><tbody>
+      <tr><td>기본급 (주 ${weekHours}시간)</td><td class="r">${won(base)} / 주</td></tr>
+      <tr><td>주휴수당 ${weekHours>=15?'':'(주 15시간 미만이라 없음)'}</td><td class="r">${won(juhyu)} / 주</td></tr>
+      <tr><td>야간 가산 (50%)</td><td class="r">${won(nightExtra)} / 주</td></tr>
+      <tr><td>연장 가산 (1일 8시간 초과, 50%)</td><td class="r">${won(overtimeExtra)} / 주</td></tr>
+      <tr><td><b>주급</b></td><td class="r"><b>${won(weekly)}</b></td></tr>
+      <tr><td>월급 (주급 × 4.345)</td><td class="r">${won(monthly)}</td></tr>
+      ${tax?`<tr><td>공제 (${(tax*100).toFixed(1)}%)</td><td class="r">-${won(monthly*tax)}</td></tr>`:''}
+    </tbody></table>${warn}
+    <div class="note">주휴수당 = (주 소정근로시간 ÷ 40) × 8시간 × 시급, 주 15시간 이상·개근 시 발생. 야간·연장 가산은 5인 이상 사업장에만 의무예요. 4대보험 공제율은 대략치(국민연금 4.75%+건강 3.595%+장기요양+고용 0.9%)입니다.</div>`;
+  if(typeof gtag==='function') gtag('event','parttime_calculated',{});
+}
+['wage','days','hours','night','size','tax'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+ 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>만 나이 계산기 - 생년월일로 만 나이·연 나이·세는 나이 계산</title>
+<meta name="description" content="생년월일을 입력하면 오늘 기준 만 나이와 연 나이, 세는 나이, 다음 생일까지 남은 날짜를 알려주는 무료 계산기.">
+<meta name="keywords" content="만 나이 계산기, 만나이 계산, 나이 계산기, 연 나이, 세는 나이, 생일 디데이">
+<link rel="canonical" href="https://dailyfreetoolbox.com/age.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="만 나이 계산기">
+<meta property="og:description" content="생년월일을 입력하면 오늘 기준 만 나이와 연 나이, 세는 나이, 다음 생일까지 남은 날짜를 알려주는 무료 계산기.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/age.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "만 나이 계산기", "url": "https://dailyfreetoolbox.com/age.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "생년월일을 입력하면 오늘 기준 만 나이와 연 나이, 세는 나이, 다음 생일까지 남은 날짜를 알려주는 무료 계산기."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#7a5a2a; --accent-deep:#5c4320; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#7a5a2a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🎂 만 나이 계산기</b></div>
+  <h1>오늘 기준으로 내 나이가 몇 살인지</h1>
+  <p class="sub">2023년 만 나이 통일법 이후 공식 나이는 "만 나이"예요. 연 나이(병역·주류 등)와 세는 나이도 함께 보여드려요.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>생년월일</label><input type="date" id="birth"></div>
+      <div class="field"><label>기준일</label><input type="date" id="ref"></div>
+    </div>
+    <div class="btn-row"><button class="btn" id="calc">계산하기</button></div>
+  </div>
+  <div class="card" id="result"><div class="empty">생년월일을 입력해주세요</div></div>
+ 
+  <footer>기준일을 바꾸면 특정 날짜 시점의 나이도 계산할 수 있어요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const t=new Date(); $('ref').value=t.toISOString().slice(0,10);
+function calc(){
+  const b=new Date($('birth').value), r=new Date($('ref').value);
+  if(isNaN(b)||isNaN(r)||b>r){ $('result').innerHTML='<div class="empty">생년월일을 확인해주세요</div>'; return; }
+  let age=r.getFullYear()-b.getFullYear();
+  const beforeBday=(r.getMonth()<b.getMonth())||(r.getMonth()===b.getMonth()&&r.getDate()<b.getDate());
+  if(beforeBday) age--;
+  const yearAge=r.getFullYear()-b.getFullYear();
+  const korAge=yearAge+1;
+  let next=new Date(r.getFullYear(), b.getMonth(), b.getDate()); if(next<=r) next=new Date(r.getFullYear()+1, b.getMonth(), b.getDate());
+  const dday=Math.round((next-r)/86400000);
+  const lived=Math.round((r-b)/86400000);
+  $('result').innerHTML=`
+    <div class="stat-grid">
+      <div class="stat"><div class="num">만 ${age}세</div><div class="label">만 나이 (공식)</div></div>
+      <div class="stat"><div class="num">${yearAge}세</div><div class="label">연 나이 (올해 − 출생년)</div></div>
+      <div class="stat"><div class="num">${korAge}세</div><div class="label">세는 나이</div></div>
+    </div>
+    <table style="margin-top:14px"><tbody>
+      <tr><td>다음 생일</td><td class="r">${next.toISOString().slice(0,10)} (D-${dday})</td></tr>
+      <tr><td>태어난 지</td><td class="r">${lived.toLocaleString()}일</td></tr>
+      <tr><td>태어난 요일</td><td class="r">${['일','월','화','수','목','금','토'][b.getDay()]}요일</td></tr>
+    </tbody></table>
+    <div class="note">연 나이는 병역법·청소년보호법(주류·담배)에서 쓰이고, 그 외 대부분은 만 나이를 씁니다.</div>`;
+  if(typeof gtag==='function') gtag('event','age_calculated',{});
+}
+$('calc').addEventListener('click',calc);
+$('birth').addEventListener('change',calc);
+ 
+</script>
+
+</body>
+</html>

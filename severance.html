@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>퇴직금 계산기 - 입사일·퇴사일·평균임금으로 예상 퇴직금 계산</title>
+<meta name="description" content="입사일과 퇴사일, 최근 3개월 급여를 입력하면 1일 평균임금과 예상 퇴직금을 계산해주는 무료 계산기.">
+<meta name="keywords" content="퇴직금 계산기, 퇴직금 계산 방법, 평균임금 계산, 퇴직금 예상, 근속일수 계산">
+<link rel="canonical" href="https://dailyfreetoolbox.com/severance.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="퇴직금 계산기">
+<meta property="og:description" content="입사일과 퇴사일, 최근 3개월 급여를 입력하면 1일 평균임금과 예상 퇴직금을 계산해주는 무료 계산기.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/severance.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "퇴직금 계산기", "url": "https://dailyfreetoolbox.com/severance.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "입사일과 퇴사일, 최근 3개월 급여를 입력하면 1일 평균임금과 예상 퇴직금을 계산해주는 무료 계산기."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2c3e5e; --accent-deep:#202d45; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2c3e5e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>₩ 퇴직금 계산기</b></div>
+  <h1>입사일·퇴사일·최근 급여만 넣으면 돼요</h1>
+  <p class="sub">퇴직금 = 1일 평균임금 × 30일 × (재직일수 ÷ 365). 퇴직 전 3개월 임금과 연간 상여·연차수당을 반영해 계산합니다.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>입사일</label><input type="date" id="start"></div>
+      <div class="field"><label>퇴사일 (마지막 근무일 다음날)</label><input type="date" id="end"></div>
+      <div class="field"><label>퇴직 전 3개월 임금 총액 (세전)</label><div class="unit"><input type="number" id="pay3" placeholder="예: 9000000" step="10000" min="0"><span>원</span></div></div>
+      <div class="field"><label>퇴직 전 1년간 상여금 총액</label><div class="unit"><input type="number" id="bonus" value="0" step="10000" min="0"><span>원</span></div></div>
+      <div class="field"><label>퇴직 전 1년간 연차수당</label><div class="unit"><input type="number" id="leave" value="0" step="10000" min="0"><span>원</span></div></div>
+    </div>
+    <div class="btn-row"><button class="btn" id="calc">계산하기</button></div>
+  </div>
+  <div class="card" id="result"><div class="empty">정보를 입력하고 계산하기를 눌러주세요</div></div>
+ 
+  <footer>근로자퇴직급여 보장법 기준의 일반적인 계산이며, 실제 지급액은 회사 규정·통상임금·퇴직소득세에 따라 달라질 수 있습니다.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const won=n=>Math.round(n).toLocaleString('ko-KR')+'원';
+const today=new Date(); $('end').value=today.toISOString().slice(0,10);
+const s=new Date(today); s.setFullYear(s.getFullYear()-3); $('start').value=s.toISOString().slice(0,10);
+function calc(){
+  const start=new Date($('start').value), end=new Date($('end').value);
+  if(isNaN(start)||isNaN(end)||end<=start){ $('result').innerHTML='<div class="empty">퇴사일이 입사일보다 뒤여야 해요</div>'; return; }
+  const days=Math.round((end-start)/86400000);
+  if(days<365){ $('result').innerHTML='<div class="empty bad">재직기간이 1년(365일) 미만이면 법정 퇴직금 지급 대상이 아니에요. 현재 '+days+'일</div>'; return; }
+  const pay3=+$('pay3').value||0, bonus=+$('bonus').value||0, leave=+$('leave').value||0;
+  const d3=new Date(end); d3.setMonth(d3.getMonth()-3); const days3=Math.round((end-d3)/86400000);
+  const total3=pay3+bonus*3/12+leave*3/12;
+  const avgDaily=total3/days3;
+  const sev=avgDaily*30*days/365;
+  const y=Math.floor(days/365), m=Math.floor((days%365)/30), dd=days%365%30;
+  $('result').innerHTML=`
+    <div class="big-result">${won(sev)}<small>예상 퇴직금 (세전)</small></div>
+    <table style="margin-top:14px"><tbody>
+      <tr><td>재직기간</td><td class="r">${y}년 ${m}개월 ${dd}일 (${days.toLocaleString()}일)</td></tr>
+      <tr><td>퇴직 전 3개월 일수</td><td class="r">${days3}일</td></tr>
+      <tr><td>3개월 임금 총액 (상여·연차 안분 포함)</td><td class="r">${won(total3)}</td></tr>
+      <tr><td>1일 평균임금</td><td class="r">${won(avgDaily)}</td></tr>
+      <tr><td>계산식</td><td class="r">${won(avgDaily)} × 30 × ${days}/365</td></tr>
+    </tbody></table>
+    <div class="note">평균임금이 통상임금보다 적으면 통상임금으로 계산해야 해요. 퇴직소득세는 별도로 공제되며, DC형 퇴직연금 가입자는 적립 방식이 달라 이 계산과 다를 수 있습니다.</div>`;
+  if(typeof gtag==='function') gtag('event','severance_calculated',{days});
+}
+$('calc').addEventListener('click',calc);
+ 
+</script>
+
+</body>
+</html>

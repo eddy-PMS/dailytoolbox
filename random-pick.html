@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>랜덤 뽑기 - 이름·항목 중 무작위 추첨, 룰렛 뽑기</title>
+<meta name="description" content="이름이나 항목을 넣으면 그중에서 무작위로 뽑아주는 무료 추첨 도구. 여러 명 뽑기, 중복 제외, 순서 섞기 지원.">
+<meta name="keywords" content="랜덤 뽑기, 무작위 추첨, 이름 뽑기, 랜덤 추첨기, 제비뽑기, 룰렛 뽑기">
+<link rel="canonical" href="https://dailyfreetoolbox.com/random-pick.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="랜덤 뽑기">
+<meta property="og:description" content="이름이나 항목을 넣으면 그중에서 무작위로 뽑아주는 무료 추첨 도구. 여러 명 뽑기, 중복 제외, 순서 섞기 지원.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/random-pick.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "랜덤 뽑기", "url": "https://dailyfreetoolbox.com/random-pick.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "이름이나 항목을 넣으면 그중에서 무작위로 뽑아주는 무료 추첨 도구. 여러 명 뽑기, 중복 제외, 순서 섞기 지원."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#6b3f56; --accent-deep:#502f40; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#6b3f56"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🎲 랜덤 뽑기</b></div>
+  <h1>고민될 땐 운에 맡기세요</h1>
+  <p class="sub">항목을 넣고 몇 개 뽑을지 정하면 무작위로 골라드려요. 점심 메뉴, 발표 순서, 당첨자 추첨에.</p>
+
+  <div class="card">
+    <div class="field"><label>항목 (줄바꿈 또는 쉼표)</label><textarea id="items" style="min-height:110px">김치찌개, 돈까스, 초밥, 파스타, 햄버거, 쌀국수</textarea></div>
+    <div class="row" style="margin-top:12px"><label>뽑을 개수 <input class="inline" type="number" id="k" value="1" min="1" style="width:70px"></label><label><input type="checkbox" id="order"> 전체 순서 섞기</label></div>
+    <div class="btn-row"><button class="btn" id="go">뽑기</button></div>
+  </div>
+  <div class="card"><div id="stage" style="text-align:center;font-size:34px;font-weight:700;min-height:60px;line-height:1.4;color:var(--accent)">?</div><div id="list" class="note" style="text-align:center"></div></div>
+ 
+  <footer>브라우저의 난수를 사용하며 결과는 저장되지 않아요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const parse=s=>s.split(/[\n,]/).map(x=>x.trim()).filter(Boolean);
+let spinning=false;
+function go(){
+  if(spinning) return; const items=parse($('items').value); if(!items.length){ $('stage').textContent='항목을 입력하세요'; return; }
+  const shuffled=items.slice(); for(let i=shuffled.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [shuffled[i],shuffled[j]]=[shuffled[j],shuffled[i]]; }
+  const k=$('order').checked? shuffled.length : Math.min(Math.max(1,+$('k').value||1), shuffled.length);
+  const picked=shuffled.slice(0,k);
+  spinning=true; let t=0; const iv=setInterval(()=>{ $('stage').textContent=items[Math.floor(Math.random()*items.length)]; t++; if(t>18){ clearInterval(iv); spinning=false; $('stage').innerHTML= k===1? picked[0] : picked.map((p,i)=>`<div style="font-size:22px">${i+1}. ${p}</div>`).join(''); $('list').textContent= k===1? `총 ${items.length}개 중에서 뽑았어요` : ''; if(typeof gtag==='function') gtag('event','random_picked',{n:items.length,k}); } },70);
+}
+$('go').addEventListener('click',go);
+ 
+</script>
+
+</body>
+</html>

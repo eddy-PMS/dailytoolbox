@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>전역일 계산기 - 입대일로 전역일·복무율·진급일 계산</title>
+<meta name="description" content="입대일과 군종을 입력하면 전역일, 남은 날짜, 복무율 %, 진급 예정일을 계산하는 무료 전역일 계산기. 육군·해군·공군·해병대·사회복무요원.">
+<meta name="keywords" content="전역일 계산기, 전역 디데이, 복무율 계산, 진급일 계산, 군대 전역일, 입대일 전역일">
+<link rel="canonical" href="https://dailyfreetoolbox.com/discharge.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="전역일 계산기">
+<meta property="og:description" content="입대일과 군종을 입력하면 전역일, 남은 날짜, 복무율 %, 진급 예정일을 계산하는 무료 전역일 계산기. 육군·해군·공군·해병대·사회복무요원.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/discharge.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "전역일 계산기", "url": "https://dailyfreetoolbox.com/discharge.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "입대일과 군종을 입력하면 전역일, 남은 날짜, 복무율 %, 진급 예정일을 계산하는 무료 전역일 계산기. 육군·해군·공군·해병대·사회복무요원."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#3a3f4a; --accent-deep:#26292f; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#3a3f4a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🎖 전역일 계산기</b></div>
+  <h1>전역까지 얼마나 남았을까요</h1>
+  <p class="sub">입대일과 군종만 넣으면 전역일과 복무율, 진급 예정일이 나와요. 복무기간은 육군·해병대 18개월, 해군 20개월, 공군 21개월, 사회복무요원 21개월 기준입니다.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>입대일</label><input type="date" id="start"></div>
+      <div class="field"><label>군종</label><select id="branch"><option value="army">육군 (18개월)</option><option value="marine">해병대 (18개월)</option><option value="navy">해군 (20개월)</option><option value="airforce">공군 (21개월)</option><option value="social">사회복무요원 (21개월)</option></select></div>
+    </div>
+    <div class="btn-row"><button class="btn" id="calc">계산하기</button></div>
+  </div>
+  <div id="out"></div>
+ 
+  <footer>복무기간은 2026년 기준이며, 조기 전역·휴가 이월 등 개인 사정은 반영하지 않아요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const BR={army:{m:18,ranks:[['이병',0],['일병',2],['상병',8],['병장',14]]},marine:{m:18,ranks:[['이병',0],['일병',2],['상병',8],['병장',14]]},navy:{m:20,ranks:[['이병',0],['일병',2],['상병',8],['병장',14]]},airforce:{m:21,ranks:[['이병',0],['일병',2],['상병',8],['병장',14]]},social:{m:21,ranks:[]}};
+const fmt=d=>`${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')} (${['일','월','화','수','목','금','토'][d.getDay()]})`;
+const today=new Date(); today.setHours(0,0,0,0);
+const dflt=new Date(today); dflt.setMonth(dflt.getMonth()-6); $('start').value=dflt.toISOString().slice(0,10);
+function addMonths(d,m){ const x=new Date(d); x.setMonth(x.getMonth()+m); return x; }
+function calc(){
+  const s=new Date($('start').value); if(isNaN(s)) return; s.setHours(0,0,0,0);
+  const b=BR[$('branch').value];
+  const end=addMonths(s,b.m); end.setDate(end.getDate()-1); // 전역일 = 입대일 + 복무개월 - 1일
+  const total=Math.round((end-s)/86400000)+1, served=Math.min(total,Math.max(0,Math.round((today-s)/86400000)+1)), left=Math.max(0,Math.round((end-today)/86400000));
+  const pct=Math.min(100,Math.max(0,served/total*100));
+  let rank='-', nextRank='';
+  b.ranks.forEach((r,i)=>{ const at=addMonths(s,r[1]); if(today>=at){ rank=r[0]; const n=b.ranks[i+1]; nextRank= n? `${n[0]} 진급 ${fmt(addMonths(s,n[1]))}` : '전역 대기'; } });
+  const ranksHtml=b.ranks.length? `<table style="margin-top:12px"><thead><tr><th>계급</th><th class="r">진급일</th></tr></thead><tbody>${b.ranks.map(r=>`<tr><td>${r[0]}</td><td class="r">${fmt(addMonths(s,r[1]))}</td></tr>`).join('')}</tbody></table>`:'';
+  $('out').innerHTML=`<div class="card"><div class="big-result">${left>0?'D-'+left:'전역 완료 🎉'}<small>전역일 ${fmt(end)}</small></div>
+    <div style="height:10px;background:var(--paper-deep);border-radius:5px;overflow:hidden;margin:14px 0 6px"><div style="height:100%;width:${pct}%;background:var(--accent)"></div></div>
+    <div class="row" style="margin:0;justify-content:space-between"><span>복무율 <b>${pct.toFixed(2)}%</b></span><span>${served}일 복무 / 총 ${total}일</span></div>
+    <table style="margin-top:12px"><tbody><tr><td>현재 계급</td><td class="r"><b>${rank}</b>${nextRank?` · ${nextRank}`:''}</td></tr><tr><td>남은 기간</td><td class="r">${Math.floor(left/30)}개월 ${left%30}일</td></tr><tr><td>남은 주말</td><td class="r">약 ${Math.floor(left/7)}번</td></tr></tbody></table>${ranksHtml}
+    <div class="note">진급일은 최소 복무기간 기준(이병 2개월·일병 6개월·상병 6개월)이며 부대 사정으로 달라질 수 있어요. 전역일은 입대일 기준 복무개월 후 하루 전이며, 실제 전역일은 병무청 안내를 확인하세요.</div></div>`;
+  if(typeof gtag==='function') gtag('event','discharge_calculated',{branch:$('branch').value});
+}
+$('calc').addEventListener('click',calc); calc();
+ 
+</script>
+
+</body>
+</html>

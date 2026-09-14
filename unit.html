@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>단위 변환기 - 평 ㎡ 변환, cm inch, kg lb, 온도 환산</title>
+<meta name="description" content="평↔제곱미터, 길이·무게·부피·온도·속도 단위를 서로 변환하는 무료 단위 변환기. 입력 즉시 모든 단위로 환산.">
+<meta name="keywords" content="단위 변환기, 평 제곱미터 변환, 평 계산기, cm inch 변환, kg lb 변환, 화씨 섭씨 변환, 단위 환산">
+<link rel="canonical" href="https://dailyfreetoolbox.com/unit.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="단위 변환기">
+<meta property="og:description" content="평↔제곱미터, 길이·무게·부피·온도·속도 단위를 서로 변환하는 무료 단위 변환기. 입력 즉시 모든 단위로 환산.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/unit.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "단위 변환기", "url": "https://dailyfreetoolbox.com/unit.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "평↔제곱미터, 길이·무게·부피·온도·속도 단위를 서로 변환하는 무료 단위 변환기. 입력 즉시 모든 단위로 환산."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#3b6d8a; --accent-deep:#2a5168; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#3b6d8a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>⇄ 단위 변환기</b></div>
+  <h1>평·㎡·인치·파운드, 뭐든 바로 환산</h1>
+  <p class="sub">값 하나를 넣으면 같은 종류의 모든 단위로 변환돼요. 부동산 평수 계산, 해외직구 사이즈, 요리 계량에 쓰세요.</p>
+
+  <div class="card">
+    <div class="tabs" id="cats" style="flex-wrap:wrap"></div>
+    <div class="grid2"><div class="field"><label>값</label><input type="number" id="val" value="1" step="any"></div><div class="field"><label>단위</label><select id="from"></select></div></div>
+    <table style="margin-top:14px"><tbody id="out"></tbody></table>
+  </div>
+ 
+  <footer>1평 = 3.305785㎡, 1돈 = 3.75g, 1근 = 600g(고기)·375g(채소는 지역차) 기준이에요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const CATS={
+  '넓이':{'㎡':1,'평':3.305785,'㎢':1e6,'ha':1e4,'ft²':0.09290304,'acre':4046.856},
+  '길이':{'mm':0.001,'cm':0.01,'m':1,'km':1000,'inch':0.0254,'ft':0.3048,'yd':0.9144,'mile':1609.344},
+  '무게':{'g':1,'kg':1000,'t':1e6,'oz':28.3495,'lb':453.592,'돈':3.75,'근':600},
+  '부피':{'ml':1,'L':1000,'cc':1,'tsp(작은술)':4.929,'tbsp(큰술)':14.787,'cup(컵)':236.588,'fl oz':29.574,'gal(미국)':3785.41,'되':1803.9,'말':18039},
+  '속도':{'km/h':1,'m/s':3.6,'mph':1.609344,'knot':1.852},
+  '온도':null
+};
+let cat='넓이';
+Object.keys(CATS).forEach(c=>{ const b=document.createElement('button'); b.className='tab'+(c===cat?' active':''); b.textContent=c; b.addEventListener('click',()=>{cat=c;document.querySelectorAll('#cats .tab').forEach(x=>x.classList.toggle('active',x.textContent===c));fill();}); $('cats').appendChild(b); });
+function fill(){ const u= cat==='온도'?['°C','°F','K']:Object.keys(CATS[cat]); $('from').innerHTML=u.map(x=>`<option>${x}</option>`).join(''); conv(); }
+const fmt=n=>Math.abs(n)>=1e6||(Math.abs(n)<1e-4&&n!==0)? n.toExponential(4) : n.toLocaleString(undefined,{maximumFractionDigits:6});
+function conv(){
+  const v=+$('val').value||0, f=$('from').value; let rows=[];
+  if(cat==='온도'){ const c= f==='°C'?v: f==='°F'?(v-32)*5/9 : v-273.15; rows=[['°C',c],['°F',c*9/5+32],['K',c+273.15]]; }
+  else { const base=v*CATS[cat][f]; rows=Object.entries(CATS[cat]).map(([u,k])=>[u,base/k]); }
+  $('out').innerHTML=rows.map(r=>`<tr${r[0]===f?' style="color:var(--ink-soft)"':''}><td>${r[0]}</td><td class="r"><b>${fmt(r[1])}</b></td></tr>`).join('');
+}
+['val','from'].forEach(id=>$(id).addEventListener('input',conv)); fill();
+let sent=false; $('val').addEventListener('input',()=>{ if(!sent&&typeof gtag==='function'){ gtag('event','unit_converted',{cat}); sent=true; } });
+ 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>QR코드 생성기 - URL·텍스트·와이파이 QR 무료 만들기</title>
+<meta name="description" content="URL, 텍스트, 와이파이 접속 정보로 QR코드를 만들고 PNG로 저장하는 무료 도구. 서버 전송 없이 브라우저에서 생성.">
+<meta name="keywords" content="QR코드 생성기, QR코드 만들기, 무료 QR코드, 와이파이 QR코드, URL QR코드">
+<link rel="canonical" href="https://dailyfreetoolbox.com/qrcode.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="QR코드 생성기">
+<meta property="og:description" content="URL, 텍스트, 와이파이 접속 정보로 QR코드를 만들고 PNG로 저장하는 무료 도구. 서버 전송 없이 브라우저에서 생성.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/qrcode.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "QR코드 생성기", "url": "https://dailyfreetoolbox.com/qrcode.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "URL, 텍스트, 와이파이 접속 정보로 QR코드를 만들고 PNG로 저장하는 무료 도구. 서버 전송 없이 브라우저에서 생성."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#1f1d1a; --accent-deep:#000000; }</style>
+<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#1f1d1a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>▦ QR코드 생성기</b></div>
+  <h1>URL이든 와이파이든 바로 QR로</h1>
+  <p class="sub">입력하는 즉시 QR코드가 만들어지고 PNG로 저장할 수 있어요. 와이파이 QR은 카메라로 찍으면 바로 접속됩니다.</p>
+
+  <div class="tabs"><button class="tab active" data-t="text">URL·텍스트</button><button class="tab" data-t="wifi">와이파이</button></div>
+  <div class="card">
+    <div id="paneText"><div class="field"><label>URL 또는 텍스트</label><input type="text" id="text" placeholder="https://example.com"></div></div>
+    <div id="paneWifi" class="hidden grid2">
+      <div class="field"><label>네트워크 이름 (SSID)</label><input type="text" id="ssid"></div>
+      <div class="field"><label>비밀번호</label><input type="text" id="pw"></div>
+      <div class="field"><label>암호화</label><select id="enc"><option value="WPA">WPA/WPA2/WPA3</option><option value="WEP">WEP</option><option value="nopass">없음(개방형)</option></select></div>
+      <div class="field"><label>숨김 네트워크</label><select id="hidden"><option value="false">아니오</option><option value="true">예</option></select></div>
+    </div>
+    <div class="row" style="margin-top:12px"><label>크기 <select id="size" style="width:auto;padding:5px 8px;font-size:13px"><option value="256">256px</option><option value="512" selected>512px</option><option value="1024">1024px</option></select></label>
+      <label>오류 정정 <select id="ecl" style="width:auto;padding:5px 8px;font-size:13px"><option value="M">보통(M)</option><option value="L">낮음(L)</option><option value="Q">높음(Q)</option><option value="H">최고(H)</option></select></label></div>
+    <div style="text-align:center;margin-top:16px"><canvas id="qr"></canvas></div>
+    <div class="btn-row" style="justify-content:center"><a class="btn hidden" id="dl" download="qrcode.png">PNG 저장</a></div>
+    <div class="status" id="status"></div>
+  </div>
+ 
+  <footer>QR 생성은 오픈소스 node-qrcode 라이브러리를 사용하며, 입력 내용은 브라우저 밖으로 나가지 않아요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+let mode='text';
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.t;$('paneText').classList.toggle('hidden',mode!=='text');$('paneWifi').classList.toggle('hidden',mode!=='wifi');draw();}));
+const esc=s=>s.replace(/([\\;,:"])/g,'\\$1');
+function payload(){ if(mode==='text') return $('text').value.trim(); const ssid=$('ssid').value.trim(); if(!ssid) return ''; const enc=$('enc').value; return `WIFI:T:${enc};S:${esc(ssid)};${enc==='nopass'?'':'P:'+esc($('pw').value)+';'}H:${$('hidden').value};;`; }
+let timer;
+function draw(){ clearTimeout(timer); timer=setTimeout(()=>{
+  const data=payload(); const c=$('qr'); const dl=$('dl');
+  if(!data){ c.width=c.height=0; dl.classList.add('hidden'); $('status').textContent=''; return; }
+  if(typeof QRCode==='undefined'){ $('status').textContent='QR 라이브러리를 불러오는 중이에요…'; return; }
+  QRCode.toCanvas(c, data, {width:+$('size').value, margin:2, errorCorrectionLevel:$('ecl').value, color:{dark:'#1f1d1a',light:'#ffffff'}}, err=>{
+    if(err){ $('status').textContent='내용이 너무 길어요. 줄여주세요.'; dl.classList.add('hidden'); return; }
+    c.style.width='256px'; c.style.height='256px'; dl.href=c.toDataURL('image/png'); dl.classList.remove('hidden'); $('status').textContent='';
+    if(typeof gtag==='function') gtag('event','qr_generated',{mode});
+  });
+},200); }
+['text','ssid','pw','enc','hidden','size','ecl'].forEach(id=>$(id).addEventListener('input',draw));
+ 
+</script>
+
+</body>
+</html>

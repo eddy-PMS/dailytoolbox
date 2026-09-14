@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>글자수 세기 - 공백 포함·제외, 바이트, 원고지 매수 계산</title>
+<meta name="description" content="자소서·보고서 글자 수를 공백 포함/제외로 세고, 바이트 수·단어 수·원고지 매수까지 실시간으로 계산하는 무료 도구.">
+<meta name="keywords" content="글자수 세기, 글자수 계산기, 자소서 글자수, 공백 제외 글자수, 바이트 계산, 원고지 매수">
+<link rel="canonical" href="https://dailyfreetoolbox.com/charcount.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="글자수 세기">
+<meta property="og:description" content="자소서·보고서 글자 수를 공백 포함/제외로 세고, 바이트 수·단어 수·원고지 매수까지 실시간으로 계산하는 무료 도구.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/charcount.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "글자수 세기", "url": "https://dailyfreetoolbox.com/charcount.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "자소서·보고서 글자 수를 공백 포함/제외로 세고, 바이트 수·단어 수·원고지 매수까지 실시간으로 계산하는 무료 도구."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#3a3f4a; --accent-deep:#26292f; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#3a3f4a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>✎ 글자수 세기</b></div>
+  <h1>붙여넣는 즉시 글자 수가 세어져요</h1>
+  <p class="sub">자기소개서, 보고서, SNS 글자 제한 확인에 쓰세요. 공백 포함·제외, 바이트, 단어, 문장, 줄 수, 원고지 매수를 한 번에 보여드려요.</p>
+
+  <div class="card">
+    <textarea id="input" placeholder="여기에 글을 붙여넣으세요" style="min-height:200px"></textarea>
+    <div class="row" style="margin-top:10px">
+      <label>목표 글자 수 <input class="inline" type="number" id="limit" placeholder="예: 1000" style="width:90px"></label>
+      <label><select id="limitMode" style="width:auto;padding:5px 8px;font-size:13px"><option value="withSpace">공백 포함 기준</option><option value="noSpace">공백 제외 기준</option></select></label>
+      <button class="btn-ghost" id="clear" style="margin-left:auto">지우기</button>
+    </div>
+    <div id="limitBar" class="note"></div>
+  </div>
+  <div class="stat-grid" id="stats"></div>
+  <div class="card" style="margin-top:16px"><h2>바이트 수</h2><table><tbody id="bytes"></tbody></table><div class="note">UTF-8은 한글 3바이트, EUC-KR은 한글 2바이트로 셉니다. 채용 사이트마다 기준이 달라 "바이트" 제한이면 어느 기준인지 확인하세요.</div></div>
+ 
+  <footer>입력한 글은 브라우저에서만 세어지고 어디에도 전송되지 않아요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+function count(){
+  const t=$('input').value;
+  const chars=[...t].length;
+  const noSpace=[...t.replace(/\s/g,'')].length;
+  const noSpaceNoBreak=[...t.replace(/[ \t]/g,'')].length;
+  const words=t.trim()? t.trim().split(/\s+/).length:0;
+  const lines=t? t.split(/\n/).length:0;
+  const sentences=(t.match(/[^.!?。！？\n]+[.!?。！？]+/g)||[]).length;
+  const utf8=new TextEncoder().encode(t).length;
+  let euckr=0; for(const ch of t){ euckr+= ch.charCodeAt(0)>127?2:1; }
+  const manuscript=Math.ceil(chars/200);
+  const s=[['공백 포함',chars],['공백 제외',noSpace],['줄바꿈만 제외',noSpaceNoBreak],['단어',words],['문장',sentences],['줄',lines],['원고지(200자)',manuscript+'매']];
+  $('stats').innerHTML=s.map(([l,v])=>`<div class="stat"><div class="num">${typeof v==='number'?v.toLocaleString():v}</div><div class="label">${l}</div></div>`).join('');
+  $('bytes').innerHTML=`<tr><td>UTF-8 (한글 3바이트)</td><td class="r">${utf8.toLocaleString()} bytes</td></tr><tr><td>EUC-KR (한글 2바이트)</td><td class="r">${euckr.toLocaleString()} bytes</td></tr>`;
+  const lim=+$('limit').value; const cur=$('limitMode').value==='withSpace'?chars:noSpace;
+  $('limitBar').innerHTML= lim? (cur<=lim? `<span class="ok">${cur.toLocaleString()} / ${lim.toLocaleString()}자 — ${(lim-cur).toLocaleString()}자 남음</span>` : `<span class="bad">${cur.toLocaleString()} / ${lim.toLocaleString()}자 — ${(cur-lim).toLocaleString()}자 초과</span>`) : '';
+}
+['input','limit','limitMode'].forEach(id=>$(id).addEventListener('input',count));
+$('clear').addEventListener('click',()=>{$('input').value='';count();$('input').focus();});
+count();
+let sent=false; $('input').addEventListener('input',()=>{ if(!sent&&$('input').value.length>50&&typeof gtag==='function'){ gtag('event','charcount_used',{}); sent=true; } });
+ 
+</script>
+
+</body>
+</html>

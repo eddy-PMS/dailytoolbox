@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>D-day 계산기 - 시험·기념일까지 남은 날짜, 날짜 더하기 빼기</title>
+<meta name="description" content="목표 날짜까지 남은 날(D-day)과 지난 날, 특정 날짜에서 N일 후·전 날짜를 계산하는 무료 도구.">
+<meta name="keywords" content="디데이 계산기, D-day 계산, 남은 날짜 계산, 날짜 계산기, 날짜 더하기, 기념일 계산">
+<link rel="canonical" href="https://dailyfreetoolbox.com/dday.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="D-day 계산기">
+<meta property="og:description" content="목표 날짜까지 남은 날(D-day)과 지난 날, 특정 날짜에서 N일 후·전 날짜를 계산하는 무료 도구.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/dday.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "D-day 계산기", "url": "https://dailyfreetoolbox.com/dday.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "목표 날짜까지 남은 날(D-day)과 지난 날, 특정 날짜에서 N일 후·전 날짜를 계산하는 무료 도구."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#a83a2c; --accent-deep:#8a2f23; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#a83a2c"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>📅 D-day 계산기</b></div>
+  <h1>그날까지 며칠 남았을까요</h1>
+  <p class="sub">시험, 기념일, 마감일까지 남은 날짜를 세거나, 특정 날짜에서 N일 뒤가 언제인지 계산해요.</p>
+
+  <div class="tabs"><button class="tab active" data-t="a">D-day 세기</button><button class="tab" data-t="b">날짜 더하기·빼기</button></div>
+  <div class="card" id="paneA">
+    <div class="grid2">
+      <div class="field"><label>목표 날짜</label><input type="date" id="target"></div>
+      <div class="field"><label>이름 (선택)</label><input type="text" id="name" placeholder="예: 토익 시험"></div>
+    </div>
+    <div class="row" style="margin-top:12px"><label><input type="checkbox" id="incl"> 당일 포함해서 세기 (오늘=1일)</label></div>
+    <div id="resA" style="margin-top:12px"></div>
+  </div>
+  <div class="card hidden" id="paneB">
+    <div class="grid2">
+      <div class="field"><label>기준 날짜</label><input type="date" id="base"></div>
+      <div class="field"><label>더하거나 뺄 일수</label><div class="unit"><input type="number" id="n" value="100"><span>일</span></div></div>
+    </div>
+    <div id="resB" style="margin-top:12px"></div>
+  </div>
+ 
+  <footer>날짜는 기기의 오늘 날짜(자정 기준)를 사용합니다.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const today=new Date(); today.setHours(0,0,0,0);
+const iso=d=>d.toISOString().slice(0,10);
+const fmt=d=>`${d.getFullYear()}년 ${d.getMonth()+1}월 ${d.getDate()}일 (${['일','월','화','수','목','금','토'][d.getDay()]})`;
+$('base').value=iso(today);
+const t=new Date(today); t.setDate(t.getDate()+30); $('target').value=iso(t);
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');$('paneA').classList.toggle('hidden',b.dataset.t!=='a');$('paneB').classList.toggle('hidden',b.dataset.t!=='b');}));
+function calcA(){
+  const d=new Date($('target').value); if(isNaN(d)) return; d.setHours(0,0,0,0);
+  let diff=Math.round((d-today)/86400000); const incl=$('incl').checked;
+  const name=$('name').value.trim()||'목표일';
+  let label; if(diff>0) label=`D-${incl?diff+1:diff}`; else if(diff===0) label='D-Day'; else label=`D+${incl?-diff+1:-diff}`;
+  const weeks=Math.floor(Math.abs(diff)/7), rem=Math.abs(diff)%7;
+  $('resA').innerHTML=`<div class="big-result">${label}<small>${name}</small></div>
+    <table style="margin-top:12px"><tbody><tr><td>목표 날짜</td><td class="r">${fmt(d)}</td></tr><tr><td>${diff>=0?'남은':'지난'} 기간</td><td class="r">${Math.abs(diff).toLocaleString()}일 (${weeks}주 ${rem}일)</td></tr></tbody></table>`;
+  if(typeof gtag==='function') gtag('event','dday_calculated',{diff});
+}
+function calcB(){
+  const b=new Date($('base').value); if(isNaN(b)) return; const n=+$('n').value||0;
+  const plus=new Date(b); plus.setDate(plus.getDate()+n); const minus=new Date(b); minus.setDate(minus.getDate()-n);
+  $('resB').innerHTML=`<table><tbody><tr><td>${n}일 후</td><td class="r">${fmt(plus)}</td></tr><tr><td>${n}일 전</td><td class="r">${fmt(minus)}</td></tr></tbody></table>
+  <div class="note">100일 기념일은 사귄 날을 1일로 세어 "99일 후"가 100일째예요.</div>`;
+}
+['target','name','incl'].forEach(id=>$(id).addEventListener('input',calcA)); ['base','n'].forEach(id=>$(id).addEventListener('input',calcB));
+calcA(); calcB();
+ 
+</script>
+
+</body>
+</html>

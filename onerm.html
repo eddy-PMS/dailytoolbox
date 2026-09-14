@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>1RM 계산기 - 중량과 횟수로 최대 중량 계산, 훈련 % 표</title>
+<meta name="description" content="들어올린 중량과 반복 횟수로 1RM(1회 최대 중량)을 계산하고, 60~95% 훈련 중량표를 보여주는 무료 헬스 계산기.">
+<meta name="keywords" content="1rm 계산기, 최대 중량 계산, 벤치프레스 1rm, 스쿼트 1rm, 데드리프트 1rm, 헬스 계산기">
+<link rel="canonical" href="https://dailyfreetoolbox.com/onerm.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="1RM 계산기">
+<meta property="og:description" content="들어올린 중량과 반복 횟수로 1RM(1회 최대 중량)을 계산하고, 60~95% 훈련 중량표를 보여주는 무료 헬스 계산기.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/onerm.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "1RM 계산기", "url": "https://dailyfreetoolbox.com/onerm.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "들어올린 중량과 반복 횟수로 1RM(1회 최대 중량)을 계산하고, 60~95% 훈련 중량표를 보여주는 무료 헬스 계산기."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#a83a2c; --accent-deep:#8a2f23; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#a83a2c"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🏋 1RM 계산기</b></div>
+  <h1>몇 kg를 몇 번 들었는지만 알면 돼요</h1>
+  <p class="sub">실제로 1RM을 재는 건 위험하니, 무게와 횟수로 추정해요. Epley·Brzycki 공식의 평균을 쓰고 훈련용 % 표도 함께 보여드려요.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>들어올린 중량</label><div class="unit"><input type="number" id="w" value="80" step="2.5" min="0"><span>kg</span></div></div>
+      <div class="field"><label>반복 횟수 (1~12회에서 정확)</label><div class="unit"><input type="number" id="r" value="5" min="1" max="30"><span>회</span></div></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ 
+  <footer>추정치는 종목과 개인차에 따라 다르며, 실제 최대 중량 시도는 보조자와 함께 하세요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+function calc(){
+  const w=+$('w').value||0, r=+$('r').value||1;
+  const epley=r===1?w:w*(1+r/30), brz=r===1?w:w*36/(37-r), lom=w*(1+0.033*r);
+  const rm=(epley+brz+lom)/3;
+  const pct=[95,90,85,80,75,70,65,60]; const reps={95:2,90:4,85:6,80:8,75:10,70:12,65:15,60:20};
+  $('out').innerHTML=`<div class="big-result">${rm.toFixed(1)} kg<small>예상 1RM</small></div>
+    <table style="margin-top:12px"><thead><tr><th>강도</th><th class="r">중량</th><th class="r">가능 횟수 (대략)</th></tr></thead><tbody>${pct.map(p=>`<tr><td>${p}%</td><td class="r">${(rm*p/100).toFixed(1)} kg</td><td class="r">${reps[p]}회</td></tr>`).join('')}</tbody></table>
+    <div class="note">Epley ${epley.toFixed(1)} · Brzycki ${brz.toFixed(1)} · Lombardi ${lom.toFixed(1)} kg의 평균이에요. 횟수가 12회를 넘으면 오차가 커집니다.</div>`;
+}
+['w','r'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+let sent=false; $('w').addEventListener('input',()=>{ if(!sent&&typeof gtag==='function'){ gtag('event','onerm_calculated',{}); sent=true; } });
+ 
+</script>
+
+</body>
+</html>

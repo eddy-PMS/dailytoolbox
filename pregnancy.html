@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>출산예정일 계산기 - 임신 주수·삼분기·마지막 생리일로 계산</title>
+<meta name="description" content="마지막 생리 시작일을 넣으면 출산예정일, 현재 임신 주수·일수, 삼분기 구분, 주요 검사 시기를 알려주는 무료 계산기.">
+<meta name="keywords" content="출산예정일 계산기, 임신 주수 계산, 임신 몇 주, 출산 예정일, 마지막 생리일 계산, 임신 주차 계산">
+<link rel="canonical" href="https://dailyfreetoolbox.com/pregnancy.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="출산예정일 계산기">
+<meta property="og:description" content="마지막 생리 시작일을 넣으면 출산예정일, 현재 임신 주수·일수, 삼분기 구분, 주요 검사 시기를 알려주는 무료 계산기.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/pregnancy.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "출산예정일 계산기", "url": "https://dailyfreetoolbox.com/pregnancy.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "마지막 생리 시작일을 넣으면 출산예정일, 현재 임신 주수·일수, 삼분기 구분, 주요 검사 시기를 알려주는 무료 계산기."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#6b3f56; --accent-deep:#502f40; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#6b3f56"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🤰 출산예정일·임신 주수 계산기</b></div>
+  <h1>오늘 몇 주차인지, 예정일은 언제인지</h1>
+  <p class="sub">마지막 생리 시작일(LMP)과 생리 주기로 계산해요. 초음파로 확정된 예정일이 있으면 그 날짜를 직접 넣어도 됩니다.</p>
+
+  <div class="card">
+    <div class="tabs"><button class="tab active" data-m="lmp">마지막 생리일로</button><button class="tab" data-m="edd">예정일을 알고 있어요</button></div>
+    <div class="grid2">
+      <div class="field" id="lmpWrap"><label>마지막 생리 시작일</label><input type="date" id="lmp"></div>
+      <div class="field" id="cycleWrap"><label>평균 생리 주기</label><div class="unit"><input type="number" id="cycle" value="28" min="20" max="45"><span>일</span></div></div>
+      <div class="field hidden" id="eddWrap"><label>출산예정일</label><input type="date" id="edd"></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ 
+  <footer>의학적 판단을 대신하지 않으며, 검사 시기는 병원 안내를 따르세요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const today=new Date(); today.setHours(0,0,0,0);
+const fmt=d=>`${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`;
+const addD=(d,n)=>{const x=new Date(d);x.setDate(x.getDate()+n);return x;};
+let mode='lmp';
+const dl=addD(today,-70); $('lmp').value=dl.toISOString().slice(0,10);
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.m;$('lmpWrap').classList.toggle('hidden',mode!=='lmp');$('cycleWrap').classList.toggle('hidden',mode!=='lmp');$('eddWrap').classList.toggle('hidden',mode!=='edd');calc();}));
+function calc(){
+  let lmp;
+  if(mode==='lmp'){ lmp=new Date($('lmp').value); if(isNaN(lmp)) return; lmp.setHours(0,0,0,0); const cyc=+$('cycle').value||28; lmp=addD(lmp, 0); var edd=addD(lmp,280+(cyc-28)); var lmpAdj=addD(lmp,cyc-28); }
+  else { var edd=new Date($('edd').value); if(isNaN(edd)) return; edd.setHours(0,0,0,0); var lmpAdj=addD(edd,-280); }
+  const days=Math.round((today-lmpAdj)/86400000); const weeks=Math.floor(days/7), rem=days%7;
+  if(days<0||days>310){ $('out').innerHTML='<div class="empty">날짜를 확인해주세요 (임신 기간 범위를 벗어났어요)</div>'; return; }
+  const tri= weeks<14?'1삼분기 (초기)': weeks<28?'2삼분기 (중기)':'3삼분기 (후기)';
+  const left=Math.round((edd-today)/86400000);
+  const milestones=[['임신 확인·첫 진료',5,7],['1차 기형아 검사(NT 초음파)',11,13],['2차 기형아 검사',15,20],['정밀 초음파',20,24],['임신성 당뇨 검사',24,28],['막달 검사',35,37],['출산 예정',40,40]];
+  $('out').innerHTML=`<div class="stat-grid"><div class="stat"><div class="num">${weeks}주 ${rem}일</div><div class="label">현재 임신 주수</div></div><div class="stat"><div class="num">${fmt(edd)}</div><div class="label">출산예정일 (D-${Math.max(0,left)})</div></div><div class="stat"><div class="num">${tri}</div><div class="label">${Math.round(days/280*100)}% 진행</div></div></div>
+    <table style="margin-top:12px"><thead><tr><th>시기</th><th class="r">주수</th><th class="r">날짜 (대략)</th></tr></thead><tbody>${milestones.map(m=>`<tr${weeks>=m[1]&&weeks<=m[2]?' style="font-weight:700;color:var(--accent)"':''}><td>${m[0]}</td><td class="r">${m[1]}~${m[2]}주</td><td class="r">${fmt(addD(lmpAdj,m[1]*7))}${m[1]!==m[2]?' ~ '+fmt(addD(lmpAdj,m[2]*7+6)):''}</td></tr>`).join('')}</tbody></table>
+    <div class="note">예정일은 마지막 생리일 + 280일(네겔레 법칙)에 생리 주기 차이를 보정한 값이에요. 실제 출산은 예정일 앞뒤 2주 안에 이루어지는 경우가 대부분이며, 정확한 주수는 초음파로 확정합니다.</div>`;
+  if(typeof gtag==='function') gtag('event','pregnancy_calculated',{weeks});
+}
+['lmp','cycle','edd'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+ 
+</script>
+
+</body>
+</html>

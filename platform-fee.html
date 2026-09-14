@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>카드수수료·배달앱 수수료 계산기 - 실제 정산금 계산</title>
+<meta name="description" content="판매금액에서 카드수수료, 배달앱 중개수수료·결제수수료·배달비를 빼면 실제로 얼마가 정산되는지 계산하는 무료 도구.">
+<meta name="keywords" content="카드수수료 계산기, 배달앱 수수료 계산, 배민 수수료 계산, 정산금 계산, 배달의민족 정산, 쿠팡이츠 수수료">
+<link rel="canonical" href="https://dailyfreetoolbox.com/platform-fee.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="카드수수료·배달앱 수수료 계산기">
+<meta property="og:description" content="판매금액에서 카드수수료, 배달앱 중개수수료·결제수수료·배달비를 빼면 실제로 얼마가 정산되는지 계산하는 무료 도구.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/platform-fee.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "카드수수료·배달앱 수수료 계산기", "url": "https://dailyfreetoolbox.com/platform-fee.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "판매금액에서 카드수수료, 배달앱 중개수수료·결제수수료·배달비를 빼면 실제로 얼마가 정산되는지 계산하는 무료 도구."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2f5d4e; --accent-deep:#22453a; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f5d4e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>₩ 카드·배달앱 수수료 계산기</b></div>
+  <h1>만 원짜리 팔면 실제로 얼마가 들어올까요</h1>
+  <p class="sub">카드 결제와 배달앱 주문의 각종 수수료를 빼고 남는 정산금을 계산해요. 수수료율은 계약·플랫폼마다 달라 직접 입력할 수 있어요.</p>
+
+  <div class="card">
+    <div class="tabs"><button class="tab active" data-m="card">카드 결제</button><button class="tab" data-m="app">배달앱 주문</button></div>
+    <div class="grid2">
+      <div class="field"><label>판매금액 (부가세 포함)</label><div class="unit"><input type="number" id="amount" value="20000" step="100"><span>원</span></div></div>
+      <div class="field" id="cardWrap"><label>카드수수료율</label><div class="unit"><input type="number" id="cardFee" value="1.5" step="0.05"><span>%</span></div></div>
+      <div class="field hidden app"><label>중개수수료율</label><div class="unit"><input type="number" id="brokerFee" value="6.8" step="0.1"><span>%</span></div></div>
+      <div class="field hidden app"><label>결제수수료율</label><div class="unit"><input type="number" id="payFee" value="3.0" step="0.1"><span>%</span></div></div>
+      <div class="field hidden app"><label>배달비 중 사장님 부담</label><div class="unit"><input type="number" id="delivery" value="2900" step="100"><span>원</span></div></div>
+      <div class="field"><label>원가 (재료비 등, 선택)</label><div class="unit"><input type="number" id="cost" value="0" step="100"><span>원</span></div></div>
+    </div>
+    <div class="row" style="margin-top:12px"><label><input type="checkbox" id="vatOnFee" checked> 수수료에 부가세 10% 붙음</label></div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ 
+  <footer>실제 정산 방식은 플랫폼 약관과 계약 조건을 확인하세요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const won=n=>Math.round(n).toLocaleString('ko-KR')+'원';
+let mode='card';
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.m;$('cardWrap').classList.toggle('hidden',mode!=='card');document.querySelectorAll('.app').forEach(e=>e.classList.toggle('hidden',mode!=='app'));calc();}));
+function calc(){
+  const a=+$('amount').value||0, v=$('vatOnFee').checked?1.1:1, cost=+$('cost').value||0; let rows=[], fees=0;
+  if(mode==='card'){ const f=a*(+$('cardFee').value||0)/100*v; fees=f; rows.push(['카드수수료',f]); }
+  else { const b=a*(+$('brokerFee').value||0)/100*v, p=a*(+$('payFee').value||0)/100*v, d=(+$('delivery').value||0)*v; fees=b+p+d; rows.push(['중개수수료',b],['결제수수료',p],['배달비 부담분',d]); }
+  const net=a-fees; const supply=a/1.1, vat=a-supply; const profit=net-cost-vat;
+  $('out').innerHTML=`<div class="big-result">${won(net)}<small>정산 예상금 (판매금액의 ${(net/a*100).toFixed(1)}%)</small></div>
+    <table style="margin-top:12px"><tbody>${rows.map(r=>`<tr><td>${r[0]}${$('vatOnFee').checked?' (부가세 포함)':''}</td><td class="r">-${won(r[1])}</td></tr>`).join('')}<tr><td><b>수수료 합계</b></td><td class="r"><b>-${won(fees)} (${(fees/a*100).toFixed(1)}%)</b></td></tr><tr><td>정산금</td><td class="r">${won(net)}</td></tr><tr><td>판매액에 포함된 부가세 (별도 납부)</td><td class="r">-${won(vat)}</td></tr>${cost?`<tr><td>원가</td><td class="r">-${won(cost)}</td></tr>`:''}<tr><td><b>부가세·원가 제외 남는 돈</b></td><td class="r"><b class="${profit>=0?'ok':'bad'}">${won(profit)}</b></td></tr></tbody></table>
+    <div class="note">플랫폼 수수료율은 요금제·계약에 따라 달라요(예: 배달앱 중개 6.8~9.8%, 결제 3% 안팎). 수수료에는 보통 부가세 10%가 별도로 붙고, 판매액의 부가세는 매입세액공제 후 신고·납부해요.</div>`;
+}
+['amount','cardFee','brokerFee','payFee','delivery','cost','vatOnFee'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+let sent=false; $('amount').addEventListener('input',()=>{ if(!sent&&typeof gtag==='function'){ gtag('event','platform_fee_calculated',{mode}); sent=true; } });
+ 
+</script>
+
+</body>
+</html>

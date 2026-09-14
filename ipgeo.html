@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>IP 주소 위치 조회 - 아이피로 국가·도시·통신사 확인</title>
+<meta name="description" content="IP 주소를 입력하면 국가, 지역, 도시, 통신사, 시간대를 조회하는 무료 도구. IPv4·IPv6 지원, 결과는 지도에서 확인.">
+<meta name="keywords" content="IP 위치 조회, 아이피 위치 추적, IP 주소 조회, IP 국가 확인, 아이피 검색, IP 통신사 조회">
+<link rel="canonical" href="https://dailyfreetoolbox.com/ipgeo.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="IP 주소 위치 조회">
+<meta property="og:description" content="IP 주소를 입력하면 국가, 지역, 도시, 통신사, 시간대를 조회하는 무료 도구. IPv4·IPv6 지원, 결과는 지도에서 확인.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/ipgeo.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "IP 주소 위치 조회", "url": "https://dailyfreetoolbox.com/ipgeo.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "IP 주소를 입력하면 국가, 지역, 도시, 통신사, 시간대를 조회하는 무료 도구. IPv4·IPv6 지원, 결과는 지도에서 확인."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#3b6d8a; --accent-deep:#2a5168; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#3b6d8a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>⌖ IP 주소 위치 조회</b></div>
+  <h1>IP 주소를 넣으면 어디 IP인지 알려드려요</h1>
+  <p class="sub">국가·지역·도시, 통신사, 시간대를 조회해요. 위치는 도시 단위 근사치이며, 사람의 실제 위치를 찾는 용도로는 쓸 수 없어요.</p>
+
+  <div class="card">
+    <div class="row"><input type="text" id="ip" placeholder="예) 8.8.8.8 또는 2001:4860:4860::8888" style="flex:1;font-size:17px" autocomplete="off"><button class="btn" id="run">조회</button></div>
+    <div class="row" style="margin:0;gap:6px"><button class="btn-ghost" id="mine" style="padding:5px 10px;font-size:12px">내 IP 넣기</button><button class="btn-ghost" id="ex1" style="padding:5px 10px;font-size:12px">8.8.8.8</button><button class="btn-ghost" id="ex2" style="padding:5px 10px;font-size:12px">1.1.1.1</button></div>
+    <div class="status" id="status"></div>
+  </div>
+  <div id="out"><div class="empty">IP 주소를 입력하고 조회를 눌러주세요</div></div>
+  <div class="card"><h2>알아두세요</h2><div class="note" style="font-size:13px;color:var(--ink)">
+    · IP 위치는 통신사가 IP를 배정한 지역의 추정치예요. 실제와 수십 km 이상 차이 나는 일이 흔하고, 휴대폰 IP는 통신사 게이트웨이(주로 서울)로 잡힙니다.<br>
+    · 사설 IP(192.168.x.x, 10.x.x.x 등)는 인터넷 상 위치가 없어 조회되지 않아요.<br>
+    · 무료 조회 데이터를 사용하므로 하루 조회량이 많으면 잠시 제한될 수 있어요. 같은 IP는 30일간 캐시되어 빠르게 응답합니다.
+  </div></div>
+ 
+  <footer>위치 데이터는 ipwhois.io 무료 API를 사용하며, 조회한 IP는 캐시 목적 외에 저장하지 않아요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const MSG={invalid_ip:'올바른 IP 주소 형식이 아니에요.',private_ip:'사설/내부 IP는 인터넷 상 위치가 없어 조회할 수 없어요.',not_found:'이 IP의 위치 정보를 찾지 못했어요.',quota:'오늘 무료 조회량이 많아 잠시 제한됐어요. 내일 다시 시도하거나 "내 IP 확인" 도구를 이용해주세요.',upstream:'조회 서버가 응답하지 않아요. 잠시 후 다시 시도해주세요.',forbidden:'허용되지 않은 요청이에요.'};
+async function lookup(){
+  const ip=$('ip').value.trim(); if(!ip){ $('status').textContent='IP 주소를 입력해주세요.'; return; }
+  $('status').textContent='조회 중…'; $('run').disabled=true;
+  try{
+    const r=await fetch('/api/geo?ip='+encodeURIComponent(ip)); const d=await r.json();
+    if(!d.ok){ $('status').textContent=MSG[d.error]||'조회에 실패했어요.'; $('out').innerHTML=`<div class="empty">${MSG[d.error]||'조회에 실패했어요.'}</div>`; return; }
+    $('status').textContent='';
+    const loc=[d.country?d.flag+' '+d.country:'', d.region, d.city].filter(Boolean).join(' · ');
+    const map= d.latitude!==''&&d.longitude!==''? `<a href="https://www.openstreetmap.org/?mlat=${d.latitude}&mlon=${d.longitude}#map=10/${d.latitude}/${d.longitude}" target="_blank" rel="noopener">지도에서 보기 ↗</a>`:'';
+    $('out').innerHTML=`<div class="card"><div class="big-result" style="font-size:26px;word-break:break-all">${d.ip}<small>${d.type||''}</small></div>
+      <table style="margin-top:12px"><tbody>
+        <tr><td>위치 (추정)</td><td class="r">${loc||'-'} ${map}</td></tr>
+        <tr><td>우편번호</td><td class="r">${d.postal||'-'}</td></tr>
+        <tr><td>위도 / 경도</td><td class="r">${d.latitude!==''?d.latitude+' / '+d.longitude:'-'}</td></tr>
+        <tr><td>통신사 (ISP)</td><td class="r">${d.isp||'-'}</td></tr>
+        <tr><td>기관 / AS</td><td class="r">${d.org||'-'}${d.asn?` (AS${d.asn})`:''}</td></tr>
+        <tr><td>시간대</td><td class="r">${d.timezone||'-'}${d.utcOffset?` (UTC${d.utcOffset})`:''}</td></tr>
+      </tbody></table></div>`;
+    if(typeof gtag==='function') gtag('event','ipgeo_lookup',{country:d.countryCode||''});
+  }catch(e){ $('status').textContent=MSG.upstream; }
+  finally{ $('run').disabled=false; }
+}
+$('run').addEventListener('click',lookup); $('ip').addEventListener('keydown',e=>{if(e.key==='Enter')lookup();});
+$('ex1').addEventListener('click',()=>{$('ip').value='8.8.8.8';lookup();}); $('ex2').addEventListener('click',()=>{$('ip').value='1.1.1.1';lookup();});
+$('mine').addEventListener('click',async()=>{ try{ const d=await (await fetch('/api/myip')).json(); $('ip').value=d.ip; lookup(); }catch{ $('status').textContent='내 IP를 가져오지 못했어요.'; } });
+ 
+</script>
+
+</body>
+</html>

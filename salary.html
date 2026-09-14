@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>연봉 실수령액 계산기 2026 - 4대보험·소득세 자동 계산</title>
+<meta name="description" content="연봉을 입력하면 2026년 4대보험 요율과 소득세를 반영해 월 실수령액을 계산해주는 무료 계산기. 부양가족·비과세 식대 반영.">
+<meta name="keywords" content="연봉 실수령액 계산기, 연봉 실수령액 2026, 월급 실수령액, 4대보험 계산, 세후 월급">
+<link rel="canonical" href="https://dailyfreetoolbox.com/salary.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="연봉 실수령액 계산기 2026">
+<meta property="og:description" content="연봉을 입력하면 2026년 4대보험 요율과 소득세를 반영해 월 실수령액을 계산해주는 무료 계산기. 부양가족·비과세 식대 반영.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/salary.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "연봉 실수령액 계산기 2026", "url": "https://dailyfreetoolbox.com/salary.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "연봉을 입력하면 2026년 4대보험 요율과 소득세를 반영해 월 실수령액을 계산해주는 무료 계산기. 부양가족·비과세 식대 반영."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2f5d4e; --accent-deep:#22453a; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f5d4e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>₩ 연봉 실수령액 계산기 (2026)</b></div>
+  <h1>연봉 입력하면 세후 월급이 바로 나와요</h1>
+  <p class="sub">2026년 4대보험 요율(국민연금 4.75%, 건강 3.595%, 장기요양 13.14%, 고용 0.9%)과 소득세·지방소득세를 반영해 계산합니다.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>연봉 (세전)</label><div class="unit"><input type="number" id="salary" value="40000000" step="100000" min="0"><span>원</span></div></div>
+      <div class="field"><label>비과세 식대 (월)</label><div class="unit"><input type="number" id="meal" value="200000" step="10000" min="0" max="200000"><span>원</span></div></div>
+      <div class="field"><label>부양가족 수 (본인 포함)</label><div class="unit"><input type="number" id="family" value="1" min="1" max="10"><span>명</span></div></div>
+      <div class="field"><label>8세~20세 자녀 수</label><div class="unit"><input type="number" id="children" value="0" min="0" max="10"><span>명</span></div></div>
+    </div>
+    <div class="row" style="margin-top:12px"><label><input type="checkbox" id="includeMeal" checked> 식대는 연봉에 포함되어 있음</label></div>
+    <div class="btn-row"><button class="btn" id="calc">계산하기</button></div>
+  </div>
+  <div class="card" id="result"><div class="empty">연봉을 입력하고 계산하기를 눌러주세요</div></div>
+ 
+  <footer>2026년 요율 기준(국민연금·건강보험은 2026.1월, 국민연금 상·하한은 2026.7월 조정 반영). 요율은 매년 바뀌니 급여명세서와 다를 수 있으며 참고용입니다.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const won=n=>Math.round(n).toLocaleString('ko-KR')+'원';
+function calc(){
+  const annual=+$('salary').value||0, meal=Math.min(+$('meal').value||0,200000), fam=Math.max(1,+$('family').value||1), kids=+$('children').value||0;
+  const includeMeal=$('includeMeal').checked;
+  const monthlyGross=annual/12;
+  const taxableMonthly=Math.max(0, includeMeal? monthlyGross-meal : monthlyGross);
+  const nonTaxMonthly=includeMeal? meal : 0;
+  // 4대보험 (근로자 부담, 과세급여 기준)
+  const npBase=Math.min(Math.max(taxableMonthly,410000),6590000);
+  const np=Math.floor(npBase*0.0475/10)*10;
+  const hi=Math.floor(taxableMonthly*0.03595/10)*10;
+  const ltc=Math.floor(hi*0.1314/10)*10;
+  const ei=Math.floor(taxableMonthly*0.009/10)*10;
+  const ins=np+hi+ltc+ei;
+  // 소득세 (연간 근사) — 근로소득공제, 기본공제, 보험료공제, 세액공제
+  const gross=taxableMonthly*12;
+  let ded; if(gross<=5e6) ded=gross*0.7; else if(gross<=15e6) ded=3.5e6+(gross-5e6)*0.4; else if(gross<=45e6) ded=7.5e6+(gross-15e6)*0.15; else if(gross<=1e8) ded=12e6+(gross-45e6)*0.05; else ded=14.75e6+(gross-1e8)*0.02; ded=Math.min(ded,2e7);
+  let base=gross-ded-fam*1.5e6-(np+hi+ltc+ei)*12; base=Math.max(0,base);
+  const br=[[14e6,.06,0],[50e6,.15,1.26e6],[88e6,.24,5.76e6],[150e6,.35,15.44e6],[300e6,.38,19.94e6],[500e6,.40,25.94e6],[1e9,.42,35.94e6],[Infinity,.45,65.94e6]];
+  let tax=0; for(const [lim,r,d] of br){ if(base<=lim){ tax=base*r-d; break; } }
+  let credit=tax<=1.3e6? tax*0.55 : 715000+(tax-1.3e6)*0.3;
+  let cap; if(gross<=33e6) cap=740000; else if(gross<=70e6) cap=Math.max(660000,740000-(gross-33e6)*0.008); else if(gross<=120e6) cap=Math.max(500000,660000-(gross-70e6)*0.005); else cap=Math.max(200000,500000-(gross-120e6)*0.005);
+  credit=Math.min(credit,cap);
+  let kidCredit= kids===0?0: kids===1?250000: kids===2?550000: 550000+(kids-2)*400000;
+  let annualTax=Math.max(0, tax-credit-130000-kidCredit);
+  const incomeTax=Math.floor(annualTax/12/10)*10, localTax=Math.floor(incomeTax*0.1/10)*10;
+  const net=monthlyGross-ins-incomeTax-localTax;
+  $('result').innerHTML=`
+    <div class="big-result">${won(net)}<small>월 실수령액 (예상)</small></div>
+    <div class="note" style="margin-bottom:14px">연 실수령 약 ${won(net*12)} · 월 세전 ${won(monthlyGross)}${nonTaxMonthly?` (비과세 ${won(nonTaxMonthly)} 포함)`:''}</div>
+    <table><thead><tr><th>공제 항목</th><th class="r">월 금액</th></tr></thead><tbody>
+      <tr><td>국민연금 (4.75%)</td><td class="r">${won(np)}</td></tr>
+      <tr><td>건강보험 (3.595%)</td><td class="r">${won(hi)}</td></tr>
+      <tr><td>장기요양 (건보료의 13.14%)</td><td class="r">${won(ltc)}</td></tr>
+      <tr><td>고용보험 (0.9%)</td><td class="r">${won(ei)}</td></tr>
+      <tr><td>소득세 (근사)</td><td class="r">${won(incomeTax)}</td></tr>
+      <tr><td>지방소득세 (소득세의 10%)</td><td class="r">${won(localTax)}</td></tr>
+      <tr><td><b>공제 합계</b></td><td class="r"><b>${won(ins+incomeTax+localTax)}</b></td></tr>
+    </tbody></table>
+    <div class="note">소득세는 연말정산 기준(근로소득공제·기본공제·근로소득세액공제·표준세액공제·자녀세액공제)으로 연 세액을 구해 12로 나눈 근사치예요. 회사가 매월 적용하는 간이세액표와는 다소 차이가 있을 수 있고, 국민연금은 기준소득월액 상한(659만원)·하한(41만원)이 적용됩니다.</div>`;
+  if(typeof gtag==='function') gtag('event','salary_calculated',{annual});
+}
+$('calc').addEventListener('click',calc); calc();
+ 
+</script>
+
+</body>
+</html>

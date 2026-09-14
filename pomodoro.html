@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>뽀모도로 타이머 - 25분 집중 5분 휴식 공부 타이머</title>
+<meta name="description" content="25분 집중, 5분 휴식을 반복하는 뽀모도로 공부 타이머. 시간 조절, 알림음, 오늘 완료한 세션 수 표시. 설치 없이 바로 사용.">
+<meta name="keywords" content="뽀모도로 타이머, 공부 타이머, 집중 타이머, 25분 타이머, 온라인 타이머, 스터디 타이머">
+<link rel="canonical" href="https://dailyfreetoolbox.com/pomodoro.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="뽀모도로 타이머">
+<meta property="og:description" content="25분 집중, 5분 휴식을 반복하는 뽀모도로 공부 타이머. 시간 조절, 알림음, 오늘 완료한 세션 수 표시. 설치 없이 바로 사용.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/pomodoro.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "뽀모도로 타이머", "url": "https://dailyfreetoolbox.com/pomodoro.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "25분 집중, 5분 휴식을 반복하는 뽀모도로 공부 타이머. 시간 조절, 알림음, 오늘 완료한 세션 수 표시. 설치 없이 바로 사용."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#a83a2c; --accent-deep:#8a2f23; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#a83a2c"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🍅 뽀모도로 타이머</b></div>
+  <h1>25분 집중, 5분 휴식</h1>
+  <p class="sub">집중 시간이 끝나면 알림음이 울리고 자동으로 휴식으로 넘어가요. 4세션마다 긴 휴식. 탭을 다른 곳에 두어도 제목에 남은 시간이 표시됩니다.</p>
+
+  <div class="card" style="text-align:center">
+    <div id="phase" style="font-size:14px;color:var(--ink-soft);margin-bottom:6px">집중</div>
+    <div id="time" style="font-size:72px;font-weight:700;letter-spacing:.02em;line-height:1.1;color:var(--accent)">25:00</div>
+    <div class="btn-row" style="justify-content:center;margin-top:18px"><button class="btn" id="start">시작</button><button class="btn-ghost" id="skip">건너뛰기</button><button class="btn-ghost" id="reset">초기화</button></div>
+    <div class="note" id="count">오늘 완료한 세션: 0</div>
+  </div>
+  <div class="card"><h2>설정</h2><div class="row" style="margin:0">
+    <label>집중 <input class="inline" type="number" id="focus" value="25" min="1" max="120" style="width:60px"> 분</label>
+    <label>짧은 휴식 <input class="inline" type="number" id="short" value="5" min="1" max="60" style="width:60px"> 분</label>
+    <label>긴 휴식 <input class="inline" type="number" id="long" value="15" min="1" max="60" style="width:60px"> 분</label>
+    <label><input type="checkbox" id="sound" checked> 알림음</label>
+    <label><input type="checkbox" id="auto" checked> 자동으로 다음 단계 시작</label>
+  </div></div>
+ 
+  <footer>브라우저 탭을 닫으면 타이머가 멈춰요. 세션 수는 새로고침하면 초기화됩니다.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+let phase='focus', remain=25*60, timer=null, sessions=0, endAt=0;
+const NAMES={focus:'집중',short:'짧은 휴식',long:'긴 휴식'};
+function mins(p){ return +$({focus:'focus',short:'short',long:'long'}[p]).value||1; }
+function render(){ const m=Math.floor(remain/60), s=remain%60; const t=`${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`; $('time').textContent=t; $('phase').textContent=NAMES[phase]; document.title=(timer?t+' · ':'')+NAMES[phase]+' - 뽀모도로'; $('time').style.color= phase==='focus'?'var(--accent)':'#2f5d4e'; }
+function beep(){ if(!$('sound').checked) return; try{ const ac=new (window.AudioContext||window.webkitAudioContext)(); [0,0.25,0.5].forEach(d=>{ const o=ac.createOscillator(), g=ac.createGain(); o.frequency.value=880; o.connect(g); g.connect(ac.destination); g.gain.setValueAtTime(0.2,ac.currentTime+d); g.gain.exponentialRampToValueAtTime(0.001,ac.currentTime+d+0.2); o.start(ac.currentTime+d); o.stop(ac.currentTime+d+0.2); }); }catch{} }
+function next(){ if(phase==='focus'){ sessions++; $('count').textContent='오늘 완료한 세션: '+sessions; phase= sessions%4===0?'long':'short'; if(typeof gtag==='function') gtag('event','pomodoro_session_done',{sessions}); } else phase='focus'; remain=mins(phase)*60; render(); if($('auto').checked) start(); }
+function tick(){ remain=Math.max(0,Math.round((endAt-Date.now())/1000)); render(); if(remain<=0){ stop(); beep(); if(Notification&&Notification.permission==='granted') new Notification(NAMES[phase]+' 끝!'); next(); } }
+function start(){ if(timer) return; endAt=Date.now()+remain*1000; timer=setInterval(tick,250); $('start').textContent='일시정지'; render(); }
+function stop(){ clearInterval(timer); timer=null; $('start').textContent='시작'; render(); }
+$('start').addEventListener('click',()=>{ if(timer) stop(); else { if(window.Notification&&Notification.permission==='default') Notification.requestPermission(); start(); } });
+$('skip').addEventListener('click',()=>{ stop(); next(); });
+$('reset').addEventListener('click',()=>{ stop(); phase='focus'; remain=mins('focus')*60; render(); });
+['focus','short','long'].forEach(id=>$(id).addEventListener('input',()=>{ if(!timer){ remain=mins(phase)*60; render(); } }));
+render();
+ 
+</script>
+
+</body>
+</html>

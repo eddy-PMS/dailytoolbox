@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>마진율 계산기 - 원가·판매가·마진율 계산, 마진과 마크업 차이</title>
+<meta name="description" content="원가와 판매가로 마진율을, 원가와 목표 마진율로 판매가를 계산하는 무료 도구. 마진율과 마크업(원가 대비 이익률) 차이도 함께.">
+<meta name="keywords" content="마진율 계산기, 마진 계산, 판매가 계산, 원가 마진율, 마크업 계산, 이익률 계산">
+<link rel="canonical" href="https://dailyfreetoolbox.com/margin.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="마진율 계산기">
+<meta property="og:description" content="원가와 판매가로 마진율을, 원가와 목표 마진율로 판매가를 계산하는 무료 도구. 마진율과 마크업(원가 대비 이익률) 차이도 함께.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/margin.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "마진율 계산기", "url": "https://dailyfreetoolbox.com/margin.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "원가와 판매가로 마진율을, 원가와 목표 마진율로 판매가를 계산하는 무료 도구. 마진율과 마크업(원가 대비 이익률) 차이도 함께."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#7a5a2a; --accent-deep:#5c4320; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#7a5a2a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>₩ 마진율 계산기</b></div>
+  <h1>얼마에 팔아야 마진이 얼마일까요</h1>
+  <p class="sub">원가·판매가·마진율 중 둘을 알면 나머지를 계산해요. 마진율(판매가 기준)과 마크업(원가 기준)은 다른 개념이라 둘 다 보여드려요.</p>
+
+  <div class="card">
+    <div class="tabs"><button class="tab active" data-m="margin">원가+판매가 → 마진율</button><button class="tab" data-m="price">원가+목표 마진율 → 판매가</button></div>
+    <div class="grid2">
+      <div class="field"><label>원가 (매입가+부대비용)</label><div class="unit"><input type="number" id="cost" value="7000"><span>원</span></div></div>
+      <div class="field" id="priceWrap"><label>판매가</label><div class="unit"><input type="number" id="price" value="10000"><span>원</span></div></div>
+      <div class="field hidden" id="rateWrap"><label>목표 마진율 (판매가 기준)</label><div class="unit"><input type="number" id="rate" value="30" step="0.5"><span>%</span></div></div>
+      <div class="field"><label>수수료·기타 비용 (판매가 대비, 선택)</label><div class="unit"><input type="number" id="fee" value="0" step="0.1"><span>%</span></div></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ 
+  <footer>부가세는 별도로 고려하세요. 부가세 포함 판매가라면 공급가액으로 환산한 뒤 계산하는 게 정확해요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const won=n=>Math.round(n).toLocaleString('ko-KR')+'원';
+let mode='margin';
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.m;$('priceWrap').classList.toggle('hidden',mode!=='margin');$('rateWrap').classList.toggle('hidden',mode!=='price');calc();}));
+function calc(){
+  const cost=+$('cost').value||0, fee=(+$('fee').value||0)/100; let price;
+  if(mode==='margin'){ price=+$('price').value||0; } else { const r=(+$('rate').value||0)/100; if(r+fee>=1){ $('out').innerHTML='<div class="empty bad">마진율+수수료가 100% 이상이면 계산할 수 없어요</div>'; return; } price=cost/(1-r-fee); }
+  if(!price||!cost){ $('out').innerHTML='<div class="empty">원가와 판매가를 입력하세요</div>'; return; }
+  const feeAmt=price*fee, profit=price-cost-feeAmt, margin=profit/price*100, markup=profit/cost*100;
+  $('out').innerHTML=`<div class="big-result">${mode==='price'?won(price):margin.toFixed(1)+'%'}<small>${mode==='price'?'권장 판매가':'마진율 (판매가 기준)'}</small></div>
+    <table style="margin-top:12px"><tbody><tr><td>판매가</td><td class="r">${won(price)}</td></tr><tr><td>원가</td><td class="r">${won(cost)}</td></tr>${fee?`<tr><td>수수료·비용 (${(fee*100).toFixed(1)}%)</td><td class="r">${won(feeAmt)}</td></tr>`:''}<tr><td><b>개당 이익</b></td><td class="r"><b>${won(profit)}</b></td></tr><tr><td>마진율 (이익 ÷ 판매가)</td><td class="r">${margin.toFixed(1)}%</td></tr><tr><td>마크업 (이익 ÷ 원가)</td><td class="r">${markup.toFixed(1)}%</td></tr></tbody></table>
+    <div class="note">"마진 30%"라고 할 때 판매가 기준(마진율)인지 원가 기준(마크업)인지에 따라 판매가가 달라요. 원가 7,000원에 마진율 30%면 판매가 10,000원, 마크업 30%면 9,100원.</div>`;
+}
+['cost','price','rate','fee'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+let sent=false; $('cost').addEventListener('input',()=>{ if(!sent&&typeof gtag==='function'){ gtag('event','margin_calculated',{}); sent=true; } });
+ 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>영어 문장 구조 분석기 - 품사·주어·동사 색으로 표시</title>
+<meta name="description" content="영어 문장을 붙여넣으면 명사·동사·형용사·부사·전치사를 색으로 구분하고 주어와 동사를 짚어주는 무료 도구.">
+<meta name="keywords" content="영어 문장 구조 분석, 영어 품사 분석, 영어 문장 성분, 주어 동사 찾기, 영어 독해 구조">
+<link rel="canonical" href="https://dailyfreetoolbox.com/sentence.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="영어 문장 구조 분석기">
+<meta property="og:description" content="영어 문장을 붙여넣으면 명사·동사·형용사·부사·전치사를 색으로 구분하고 주어와 동사를 짚어주는 무료 도구.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/sentence.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "영어 문장 구조 분석기", "url": "https://dailyfreetoolbox.com/sentence.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "영어 문장을 붙여넣으면 명사·동사·형용사·부사·전치사를 색으로 구분하고 주어와 동사를 짚어주는 무료 도구."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2c3e5e; --accent-deep:#202d45; }</style>
+<script src="https://cdn.jsdelivr.net/npm/compromise@14/builds/compromise.min.js"></script>
+<style>
+.tagdot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle}
+.tagdot.n,.tk.n{--c:#2c3e5e}.tagdot.v,.tk.v{--c:#a83a2c}.tagdot.a,.tk.a{--c:#2f6b52}.tagdot.d,.tk.d{--c:#b8823a}.tagdot.p,.tk.p{--c:#6b3f56}.tagdot.c,.tk.c{--c:#3b6d8a}.tagdot.o,.tk.o{--c:#8a867d}
+.tagdot{background:var(--c)}
+.sent{font-size:18px;line-height:2.2}
+.tk{color:var(--c);border-bottom:2px solid var(--c);padding:0 1px}
+.tk[role="S"]::after{content:"S";font-size:10px;vertical-align:super;margin-left:2px;background:var(--c);color:#fff;border-radius:2px;padding:0 3px}
+.tk[role="V"]::after{content:"V";font-size:10px;vertical-align:super;margin-left:2px;background:var(--c);color:#fff;border-radius:2px;padding:0 3px}
+</style>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2c3e5e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>S·V·O 영어 문장 구조 분석기</b></div>
+  <h1>문장의 뼈대를 색으로 보여드려요</h1>
+  <p class="sub">품사를 색으로 구분하고, 각 문장의 주어(S)와 동사(V)를 표시해요. 긴 문장을 읽기 전에 구조를 먼저 잡는 데 유용합니다.</p>
+
+  <div class="card">
+    <textarea id="input" placeholder="예) The quick brown fox jumps over the lazy dog. She has been studying English for three years."></textarea>
+    <div class="btn-row"><button class="btn" id="run">분석하기</button><button class="btn-ghost" id="clear">지우기</button></div>
+  </div>
+  <div class="card"><div class="row" style="margin-bottom:0;gap:8px 14px">
+    <span><span class="tagdot n"></span>명사</span><span><span class="tagdot v"></span>동사</span><span><span class="tagdot a"></span>형용사</span><span><span class="tagdot d"></span>부사</span><span><span class="tagdot p"></span>전치사</span><span><span class="tagdot c"></span>접속사</span><span><span class="tagdot o"></span>기타</span>
+  </div></div>
+  <div id="out"><div class="empty">문장을 입력하고 분석하기를 눌러주세요</div></div>
+ 
+  <footer>품사 태깅은 오픈소스 compromise 라이브러리(규칙 기반, 정확도 약 86%)를 사용해요. 주어·동사 표시는 간단한 규칙이라 복문·도치문에서는 틀릴 수 있습니다.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const CLS=[['Preposition','p'],['Conjunction','c'],['Adverb','d'],['Adjective','a'],['Verb','v'],['Noun','n'],['Pronoun','n'],['Determiner','o']];
+function cls(tags){ for(const [t,c] of CLS){ if(tags.includes(t)) return c; } return 'o'; }
+function analyze(){
+  const text=$('input').value.trim(); if(!text){ $('out').innerHTML='<div class="empty">문장을 먼저 입력해주세요</div>'; return; }
+  if(typeof nlp==='undefined'){ $('out').innerHTML='<div class="empty">분석 라이브러리를 불러오는 중이에요. 잠시 후 다시 눌러주세요.</div>'; return; }
+  const doc=nlp(text); const sents=doc.sentences();
+  let html='';
+  sents.forEach((s,i)=>{
+    const terms=s.terms().json({offset:false}).map(t=>({text:t.text, tags:t.terms?t.terms[0].tags:(t.tags||[])}));
+    // 주어: 첫 동사 앞의 마지막 명사/대명사, 동사: 첫 동사구
+    let firstV=-1; for(let k=0;k<terms.length;k++){ if(terms[k].tags.includes('Verb')&&!terms[k].tags.includes('Gerund')&&!terms[k].tags.includes('Infinitive')){ firstV=k; break; } }
+    let subj=-1; if(firstV>0){ for(let k=firstV-1;k>=0;k--){ if(terms[k].tags.includes('Noun')||terms[k].tags.includes('Pronoun')){ subj=k; break; } } }
+    let vEnd=firstV; while(vEnd+1<terms.length && terms[vEnd+1].tags.includes('Verb')) vEnd++;
+    const spans=terms.map((t,k)=>{ const c=cls(t.tags); const role= k===subj?' role="S"': (k>=firstV&&k<=vEnd&&firstV>=0)?' role="V"':''; return `<span class="tk ${c}"${role}>${t.text}</span>`; }).join(' ');
+    const subjTxt= subj>=0? terms[subj].text : '(없음/생략)'; const verbTxt= firstV>=0? terms.slice(firstV,vEnd+1).map(t=>t.text).join(' ') : '(없음)';
+    const nouns=s.nouns().out('array'); const verbs=s.verbs().out('array');
+    html+=`<div class="card"><div class="sent">${spans}</div>
+      <table style="margin-top:12px"><tbody><tr><td>주어 (S)</td><td><b>${subjTxt}</b></td></tr><tr><td>동사 (V)</td><td><b>${verbTxt}</b></td></tr><tr><td>명사구</td><td>${nouns.join(', ')||'-'}</td></tr><tr><td>동사구</td><td>${verbs.join(', ')||'-'}</td></tr></tbody></table></div>`;
+  });
+  $('out').innerHTML=html;
+  if(typeof gtag==='function') gtag('event','sentence_analyzed',{sentences:sents.length});
+}
+$('run').addEventListener('click',analyze); $('clear').addEventListener('click',()=>{$('input').value='';$('out').innerHTML='<div class="empty">문장을 입력하고 분석하기를 눌러주세요</div>';});
+ 
+</script>
+
+</body>
+</html>

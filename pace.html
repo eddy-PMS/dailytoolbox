@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>러닝 페이스 계산기 - 완주 시간·km당 페이스·스플릿 계산</title>
+<meta name="description" content="거리와 목표 시간을 넣으면 km당 페이스와 속도를, 페이스를 넣으면 5km·10km·하프·풀 완주 예상 시간을 계산하는 무료 러닝 계산기.">
+<meta name="keywords" content="러닝 페이스 계산기, 페이스 계산, 마라톤 완주 시간 계산, 10km 페이스, 하프 마라톤 페이스, 러닝 속도 계산">
+<link rel="canonical" href="https://dailyfreetoolbox.com/pace.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="러닝 페이스 계산기">
+<meta property="og:description" content="거리와 목표 시간을 넣으면 km당 페이스와 속도를, 페이스를 넣으면 5km·10km·하프·풀 완주 예상 시간을 계산하는 무료 러닝 계산기.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/pace.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "러닝 페이스 계산기", "url": "https://dailyfreetoolbox.com/pace.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "거리와 목표 시간을 넣으면 km당 페이스와 속도를, 페이스를 넣으면 5km·10km·하프·풀 완주 예상 시간을 계산하는 무료 러닝 계산기."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2f5d4e; --accent-deep:#22453a; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f5d4e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🏃 러닝 페이스 계산기</b></div>
+  <h1>이 페이스면 풀코스 몇 시간일까요</h1>
+  <p class="sub">페이스(분/km)·거리·시간 중 둘을 넣으면 나머지를 계산하고, 주요 거리별 예상 기록과 1km 스플릿 표를 보여드려요.</p>
+
+  <div class="card">
+    <div class="tabs"><button class="tab active" data-m="pace">거리+시간 → 페이스</button><button class="tab" data-m="time">페이스 → 완주 시간</button></div>
+    <div class="grid2">
+      <div class="field" id="distWrap"><label>거리</label><select id="dist"><option value="5">5 km</option><option value="10" selected>10 km</option><option value="21.0975">하프 (21.0975 km)</option><option value="42.195">풀 (42.195 km)</option><option value="custom">직접 입력</option></select></div>
+      <div class="field hidden" id="customWrap"><label>거리 (km)</label><input type="number" id="custom" value="3" step="0.1"></div>
+      <div class="field" id="timeWrap"><label>목표 시간 (시:분:초)</label><div class="row" style="margin:0;gap:6px"><input type="number" id="h" value="0" min="0" style="width:70px"> : <input type="number" id="m" value="55" min="0" max="59" style="width:70px"> : <input type="number" id="s" value="0" min="0" max="59" style="width:70px"></div></div>
+      <div class="field hidden" id="paceWrap"><label>페이스 (분:초 /km)</label><div class="row" style="margin:0;gap:6px"><input type="number" id="pm" value="5" min="2" max="20" style="width:70px"> : <input type="number" id="ps" value="30" min="0" max="59" style="width:70px"></div></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ 
+  <footer>하프 21.0975km, 풀코스 42.195km 기준이에요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+let mode='pace';
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.m;$('timeWrap').classList.toggle('hidden',mode!=='pace');$('paceWrap').classList.toggle('hidden',mode!=='time');$('distWrap').classList.toggle('hidden',mode!=='pace');$('customWrap').classList.toggle('hidden',!(mode==='pace'&&$('dist').value==='custom'));calc();}));
+$('dist').addEventListener('input',()=>{ $('customWrap').classList.toggle('hidden',$('dist').value!=='custom'); calc(); });
+const fmtT=sec=>{ sec=Math.round(sec); const h=Math.floor(sec/3600), m=Math.floor(sec%3600/60), s=sec%60; return (h?h+':':'')+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0'); };
+function calc(){
+  let paceSec;
+  if(mode==='pace'){ const d= $('dist').value==='custom'? +$('custom').value : +$('dist').value; const t=(+$('h').value||0)*3600+(+$('m').value||0)*60+(+$('s').value||0); if(!d||!t) return; paceSec=t/d; }
+  else { paceSec=(+$('pm').value||0)*60+(+$('ps').value||0); if(!paceSec) return; }
+  const kmh=3600/paceSec; const dists=[[5,'5 km'],[10,'10 km'],[21.0975,'하프'],[42.195,'풀코스']];
+  const d= mode==='pace'? ($('dist').value==='custom'? +$('custom').value : +$('dist').value) : 10;
+  const splits=[]; for(let k=1;k<=Math.min(Math.ceil(d),42);k++){ splits.push(`<tr><td>${k} km</td><td class="r">${fmtT(paceSec*Math.min(k,d))}</td></tr>`); }
+  $('out').innerHTML=`<div class="stat-grid"><div class="stat"><div class="num">${fmtT(paceSec)}</div><div class="label">페이스 (/km)</div></div><div class="stat"><div class="num">${kmh.toFixed(2)}</div><div class="label">km/h</div></div><div class="stat"><div class="num">${fmtT(paceSec*1.609)}</div><div class="label">페이스 (/mile)</div></div></div>
+    <table style="margin-top:12px"><thead><tr><th>거리</th><th class="r">예상 기록</th></tr></thead><tbody>${dists.map(x=>`<tr><td>${x[1]}</td><td class="r"><b>${fmtT(paceSec*x[0])}</b></td></tr>`).join('')}</tbody></table>
+    <details style="margin-top:12px"><summary style="cursor:pointer;font-size:13px;color:var(--ink-soft)">1km 스플릿 표 (${d} km)</summary><table style="margin-top:8px"><tbody>${splits.join('')}</tbody></table></details>
+    <div class="note">같은 페이스를 끝까지 유지한다고 가정한 계산이에요. 장거리는 후반에 느려지기 쉬우니 목표보다 5~10% 여유를 두세요.</div>`;
+  if(typeof gtag==='function') gtag('event','pace_calculated',{mode});
+}
+['h','m','s','pm','ps','custom'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+ 
+</script>
+
+</body>
+</html>

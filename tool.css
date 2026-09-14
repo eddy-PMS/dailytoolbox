@@ -1,0 +1,44 @@
+/* dailyfreetoolbox 공통 도구 스타일. 페이지에서 :root{--accent;--accent-deep}만 지정 */
+:root { --paper:#f1eee6; --paper-deep:#e6e2d6; --ink:#1f1d1a; --ink-soft:#57534b; --line:#d8d3c6; --accent:#3a3f4a; --accent-deep:#26292f; --ok:#2f5d4e; --bad:#a8483a; }
+* { box-sizing:border-box; }
+html, body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif; }
+body { min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:48px 20px 80px; }
+main { width:100%; max-width:680px; }
+.brand { font-size:15px; color:var(--ink-soft); margin-bottom:24px; } .brand b { color:var(--accent); font-weight:700; }
+h1 { font-size:26px; line-height:1.35; margin:0 0 8px; font-weight:700; letter-spacing:-0.01em; }
+.sub { color:var(--ink-soft); font-size:15px; margin:0 0 22px; line-height:1.6; max-width:52ch; }
+.card { background:#fffdf8; border:1px solid var(--line); border-radius:3px; padding:22px; margin-bottom:16px; }
+.card h2 { font-size:14px; margin:0 0 12px; color:var(--ink-soft); font-weight:700; }
+.row { display:flex; flex-wrap:wrap; gap:10px 18px; align-items:center; font-size:13px; color:var(--ink-soft); margin-bottom:12px; }
+.row label, .field label { display:flex; align-items:center; gap:8px; }
+.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:12px 16px; } @media (max-width:520px){ .grid2 { grid-template-columns:1fr; } }
+.field { display:flex; flex-direction:column; gap:5px; font-size:13px; color:var(--ink-soft); }
+.field label { display:block; }
+input[type="text"], input[type="number"], input[type="date"], select, textarea { font-family:inherit; font-size:15px; padding:10px 12px; border:1px solid var(--line); border-radius:3px; background:#fff; color:var(--ink); outline:none; width:100%; }
+input:focus, select:focus, textarea:focus { border-color:var(--accent); }
+textarea { min-height:140px; resize:vertical; line-height:1.7; }
+input.inline { width:auto; padding:6px 8px; font-size:13px; }
+.unit { display:flex; align-items:center; gap:6px; } .unit input { flex:1; } .unit span { font-size:13px; color:var(--ink-soft); white-space:nowrap; }
+.btn { background:var(--accent); color:#fffdf8; border:none; border-radius:3px; padding:11px 22px; font-size:14px; font-weight:700; cursor:pointer; font-family:inherit; }
+.btn:hover { background:var(--accent-deep); } .btn:disabled { opacity:.5; cursor:default; }
+.btn-ghost { background:none; border:1px solid var(--line); border-radius:3px; padding:10px 16px; font-size:13px; color:var(--ink-soft); cursor:pointer; font-family:inherit; }
+.btn-ghost:hover { background:var(--paper-deep); color:var(--ink); }
+.btn-row { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+.tabs { display:flex; gap:6px; margin-bottom:14px; }
+.tab { flex:1; padding:10px; border:1px solid var(--line); border-radius:3px; background:#fffdf8; font-size:14px; color:var(--ink-soft); cursor:pointer; font-family:inherit; }
+.tab.active { background:var(--accent); color:#fffdf8; border-color:var(--accent); }
+.stat-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:10px; }
+.stat { background:#fffdf8; border:1px solid var(--line); border-radius:3px; padding:14px; text-align:center; }
+.stat .num { font-size:22px; font-weight:700; color:var(--accent); } .stat .label { font-size:12px; color:var(--ink-soft); margin-top:4px; }
+.big-result { font-size:30px; font-weight:700; color:var(--accent); }
+.big-result small { font-size:14px; color:var(--ink-soft); font-weight:400; margin-left:6px; }
+table { width:100%; border-collapse:collapse; font-size:14px; background:#fffdf8; }
+th, td { padding:8px 10px; text-align:left; border-bottom:1px solid var(--paper-deep); }
+th { font-size:12px; color:var(--ink-soft); background:var(--paper-deep); font-weight:600; }
+td.r, th.r { text-align:right; font-variant-numeric:tabular-nums; }
+.note { font-size:12px; color:#9a9285; line-height:1.7; margin-top:8px; }
+.empty { border:1px dashed var(--line); border-radius:3px; padding:28px; text-align:center; color:#a39a89; font-size:14px; }
+.hidden { display:none; }
+.status { font-size:13px; color:var(--ink-soft); min-height:18px; margin-top:8px; }
+.ok { color:var(--ok); } .bad { color:var(--bad); }
+footer { margin-top:56px; font-size:12px; color:#a39a89; text-align:center; line-height:1.8; }

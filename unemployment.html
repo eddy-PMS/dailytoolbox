@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>실업급여 계산기 2026 - 구직급여 예상 수급액과 기간</title>
+<meta name="description" content="퇴직 전 3개월 급여, 나이, 고용보험 가입기간을 넣으면 2026년 기준 1일 구직급여액과 지급일수, 총 예상 수급액을 계산하는 무료 도구.">
+<meta name="keywords" content="실업급여 계산기, 구직급여 계산, 실업급여 얼마, 실업급여 기간, 실업급여 상한액 2026, 실업급여 모의계산">
+<link rel="canonical" href="https://dailyfreetoolbox.com/unemployment.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="실업급여 계산기 2026">
+<meta property="og:description" content="퇴직 전 3개월 급여, 나이, 고용보험 가입기간을 넣으면 2026년 기준 1일 구직급여액과 지급일수, 총 예상 수급액을 계산하는 무료 도구.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/unemployment.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "실업급여 계산기 2026", "url": "https://dailyfreetoolbox.com/unemployment.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "퇴직 전 3개월 급여, 나이, 고용보험 가입기간을 넣으면 2026년 기준 1일 구직급여액과 지급일수, 총 예상 수급액을 계산하는 무료 도구."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#3a3f4a; --accent-deep:#26292f; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#3a3f4a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>₩ 실업급여 계산기 (2026)</b></div>
+  <h1>실업급여, 얼마를 며칠 동안 받을까요</h1>
+  <p class="sub">1일 구직급여 = 퇴직 전 3개월 평균임금의 60% (2026년 상한 68,100원·하한 66,048원). 지급일수는 나이와 고용보험 가입기간으로 정해져요.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>퇴직 전 3개월 급여 총액 (세전)</label><div class="unit"><input type="number" id="pay3" value="9000000" step="100000"><span>원</span></div></div>
+      <div class="field"><label>퇴사 시 만 나이</label><div class="unit"><input type="number" id="age" value="30" min="15" max="70"><span>세</span></div></div>
+      <div class="field"><label>고용보험 가입기간 (전체 합산)</label><select id="years"><option value="0">1년 미만</option><option value="1" selected>1년 이상 3년 미만</option><option value="3">3년 이상 5년 미만</option><option value="5">5년 이상 10년 미만</option><option value="10">10년 이상</option></select></div>
+      <div class="field"><label>퇴사일</label><input type="date" id="end"></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ 
+  <footer>2026년 1월 1일 이후 퇴사자 기준(상한 68,100원·하한 66,048원). 반복 수급 감액 등 개별 사정은 반영하지 않아요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const won=n=>Math.round(n).toLocaleString('ko-KR')+'원';
+const today=new Date(); $('end').value=today.toISOString().slice(0,10);
+const MAX=68100, MIN=66048;
+const DAYS={young:{0:120,1:150,3:180,5:210,10:240},old:{0:120,1:180,3:210,5:240,10:270}};
+function calc(){
+  const pay=+$('pay3').value||0, age=+$('age').value||30, y=$('years').value, end=new Date($('end').value);
+  const d3=new Date(end); d3.setMonth(d3.getMonth()-3); const days3=Math.max(1,Math.round((end-d3)/86400000));
+  const avgDaily=pay/days3; let daily=avgDaily*0.6; let note='';
+  if(daily>MAX){ daily=MAX; note='상한액 적용'; } else if(daily<MIN){ daily=MIN; note='하한액 적용'; }
+  const n=DAYS[age>=50?'old':'young'][y]; const total=daily*n;
+  const eligible= $('years').value!=='0' || true;
+  $('out').innerHTML=`<div class="big-result">${won(total)}<small>총 예상 수급액 (${n}일)</small></div>
+    <table style="margin-top:12px"><tbody>
+      <tr><td>1일 평균임금</td><td class="r">${won(avgDaily)}</td></tr>
+      <tr><td>1일 구직급여 (60%) ${note?'· '+note:''}</td><td class="r"><b>${won(daily)}</b></td></tr>
+      <tr><td>지급일수 (${age>=50?'50세 이상':'50세 미만'} · 가입 ${$('years').options[$('years').selectedIndex].text})</td><td class="r">${n}일</td></tr>
+      <tr><td>월 환산 (30일)</td><td class="r">${won(daily*30)}</td></tr>
+    </tbody></table>
+    <div class="note">수급 요건: 이직 전 18개월 중 고용보험 가입 180일 이상, 비자발적 퇴사(권고사직·계약만료 등), 구직활동. 자발적 퇴사는 원칙적으로 대상이 아니에요. 대기기간 7일 후 지급되며, 정확한 금액은 고용24 모의계산·고용센터에서 확인하세요.</div>`;
+  if(typeof gtag==='function') gtag('event','unemployment_calculated',{});
+}
+['pay3','age','years','end'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+ 
+</script>
+
+</body>
+</html>

@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
-<title>Daily Free Toolbox - 영어·일본어·중국어 학습 무료 도구 모음</title>
-<meta name="description" content="병음 변환, 후리가나, 한자 획순, 발음 듣기, 레벨 테스트, 단어장 추출까지. 회원가입 없이 바로 쓰는 무료 어학 도구 18종.">
+<title>Daily Free Toolbox - 어학·생활 무료 도구 모음</title>
+<meta name="description" content="병음 변환, 후리가나, 한자 획순, 발음 듣기, 레벨 테스트, 단어장 추출까지. 회원가입 없이 바로 쓰는 무료 어학·생활 도구 67종.">
 <meta name="keywords" content="무료 어학 도구, 영어 학습 도구, 일본어 학습 도구, 중국어 학습 도구, 병음 변환기, 후리가나, 레벨 테스트">
 <link rel="canonical" href="https://dailyfreetoolbox.com/">
 
@@ -39,6 +39,8 @@
     --ja: #2f4a5e;
     --en: #2f5d4e;
     --all: #7a5a2a;
+    --life: #3a3f4a;
+    --game: #a83a2c; --army: #3a3f4a; --fit: #2f5d4e; --money: #2c3e5e; --family: #6b3f56; --work: #2f5d4e; --student: #2c3e5e;
   }
 
   * { box-sizing: border-box; }
@@ -99,6 +101,8 @@
   .group.ja .card { --card-accent: var(--ja); }
   .group.en .card { --card-accent: var(--en); }
   .group.all .card { --card-accent: var(--all); }
+  .group.life .card { --card-accent: var(--life); }
+  .group.game .card { --card-accent: var(--game); } .group.army .card { --card-accent: var(--army); } .group.fit .card { --card-accent: var(--fit); } .group.money .card { --card-accent: var(--money); } .group.family .card { --card-accent: var(--family); } .group.work .card { --card-accent: var(--work); } .group.student .card { --card-accent: var(--student); }
 
   footer {
     margin-top: 40px;
@@ -122,9 +126,10 @@
   </section>
 
   <section class="group zh">
-    <div class="group-head"><h2>중국어</h2><span class="count">4개</span></div>
+    <div class="group-head"><h2>중국어</h2><span class="count">5개</span></div>
     <div class="cards">
       <a class="card" href="pinyin.html"><div class="title">병음 변환기</div><div class="desc">한자를 입력하면 글자마다 병음과 성조를 색으로 표시</div></a>
+      <a class="card" href="hanja.html"><div class="title">한자 음훈 조회</div><div class="desc">한자를 입력하면 훈(뜻)과 음을 바로, 2만여 자 수록</div></a>
       <a class="card" href="chinese-convert.html"><div class="title">간체 ↔ 번체 변환</div><div class="desc">간체자와 번체자를 서로 변환, 대만·홍콩 표기 지원</div></a>
       <a class="card" href="tone-drill.html"><div class="title">성조 훈련</div><div class="desc">같은 음절의 1~4성을 듣고 비교하고 퀴즈로 구분</div></a>
       <a class="card" href="hsk-test.html"><div class="title">HSK 레벨 테스트</div><div class="desc">단어 20개로 알아보는 내 중국어 어휘 수준</div></a>
@@ -132,18 +137,20 @@
   </section>
 
   <section class="group ja">
-    <div class="group-head"><h2>일본어</h2><span class="count">3개</span></div>
+    <div class="group-head"><h2>일본어</h2><span class="count">4개</span></div>
     <div class="cards">
       <a class="card" href="furigana.html"><div class="title">후리가나 표시기</div><div class="desc">문장을 붙여넣으면 한자 위에 읽는 법을 자동으로</div></a>
+      <a class="card" href="jp-verb.html"><div class="title">동사 활용표</div><div class="desc">동사 하나로 ます·て·た·ない·가능·수동·사역형까지</div></a>
       <a class="card" href="kana-quiz.html"><div class="title">가나 퀴즈</div><div class="desc">히라가나·가타카나를 행별로 골라 퀴즈로 암기</div></a>
       <a class="card" href="jlpt-test.html"><div class="title">JLPT 레벨 테스트</div><div class="desc">N5부터 N1까지, 단어 20개로 보는 내 수준</div></a>
     </div>
   </section>
 
   <section class="group en">
-    <div class="group-head"><h2>영어</h2><span class="count">7개</span></div>
+    <div class="group-head"><h2>영어</h2><span class="count">8개</span></div>
     <div class="cards">
       <a class="card" href="ipa.html"><div class="title">IPA 발음 변환</div><div class="desc">단어의 발음기호와 참고용 한글 표기를 함께</div></a>
+      <a class="card" href="sentence.html"><div class="title">문장 구조 분석기</div><div class="desc">품사를 색으로 구분하고 주어·동사를 표시</div></a>
       <a class="card" href="level-test.html"><div class="title">영어 레벨 테스트</div><div class="desc">기초부터 실무 어휘까지 20문제로 진단</div></a>
       <a class="card" href="readability.html"><div class="title">지문 난이도 체커</div><div class="desc">붙여넣은 지문이 토익·수능 어느 수준인지 분석</div></a>
       <a class="card" href="etymology.html"><div class="title">어원 분석기</div><div class="desc">접두사·어근·접미사로 쪼개서 뜻을 유추</div></a>
@@ -154,12 +161,101 @@
   </section>
 
   <section class="group all">
-    <div class="group-head"><h2>공통</h2><span class="count">4개</span></div>
+    <div class="group-head"><h2>공통</h2><span class="count">5개</span></div>
     <div class="cards">
       <a class="card" href="tts.html"><div class="title">발음 듣기</div><div class="desc">영어·일본어·중국어 문장을 원어민 음성으로, 속도 조절 가능</div></a>
       <a class="card" href="dictation.html"><div class="title">받아쓰기 연습</div><div class="desc">문장을 듣고 받아쓰면 틀린 부분을 바로 표시</div></a>
       <a class="card" href="wordlist.html"><div class="title">단어장 추출기</div><div class="desc">지문에서 자주 나온 단어를 뽑아 단어장 CSV로</div></a>
       <a class="card" href="stroke-order.html"><div class="title">한자 획순</div><div class="desc">한자·간지 쓰는 순서를 애니메이션으로</div></a>
+      <a class="card" href="romanize.html"><div class="title">이름 로마자 변환</div><div class="desc">여권 영문 이름을 표기법대로, 성씨 관용 표기 포함</div></a>
+    </div>
+  </section>
+
+  <section class="group life">
+    <div class="group-head"><h2>생활</h2><span class="count">16개</span></div>
+    <div class="cards">
+      <a class="card" href="salary.html"><div class="title">연봉 실수령액 계산기</div><div class="desc">2026년 4대보험·소득세 반영, 세후 월급 계산</div></a>
+      <a class="card" href="severance.html"><div class="title">퇴직금 계산기</div><div class="desc">입사·퇴사일과 최근 급여로 예상 퇴직금</div></a>
+      <a class="card" href="loan.html"><div class="title">대출 이자 계산기</div><div class="desc">원리금균등·원금균등·만기일시 비교와 상환표</div></a>
+      <a class="card" href="vat.html"><div class="title">부가세 계산기</div><div class="desc">공급가액·부가세·합계 어느 쪽이든 입력</div></a>
+      <a class="card" href="age.html"><div class="title">만 나이 계산기</div><div class="desc">만 나이·연 나이·세는 나이와 다음 생일 D-day</div></a>
+      <a class="card" href="dday.html"><div class="title">D-day 계산기</div><div class="desc">남은 날짜 세기, 날짜 더하기·빼기</div></a>
+      <a class="card" href="charcount.html"><div class="title">글자수 세기</div><div class="desc">공백 포함·제외, 바이트, 원고지 매수까지</div></a>
+      <a class="card" href="image-compress.html"><div class="title">이미지 용량 줄이기</div><div class="desc">업로드 없이 내 기기에서 압축·리사이즈·변환</div></a>
+      <a class="card" href="qrcode.html"><div class="title">QR코드 생성기</div><div class="desc">URL·텍스트·와이파이 QR을 PNG로</div></a>
+      <a class="card" href="myip.html"><div class="title">내 IP 주소 확인</div><div class="desc">공인 IP와 대략적 위치, 통신사, 접속 정보</div></a>
+      <a class="card" href="ipgeo.html"><div class="title">IP 위치 조회</div><div class="desc">IP 주소로 국가·도시·통신사·시간대 확인</div></a>
+      <a class="card" href="unit.html"><div class="title">단위 변환기</div><div class="desc">평↔㎡, cm↔inch, kg↔lb, 온도·속도 환산</div></a>
+      <a class="card" href="exchange.html"><div class="title">환율 계산기</div><div class="desc">ECB 고시 환율로 달러·엔·유로·위안 환산</div></a>
+      <a class="card" href="rent.html"><div class="title">전월세 전환·중개수수료</div><div class="desc">전세↔월세 전환액과 복비 상한</div></a>
+      <a class="card" href="lotto.html"><div class="title">로또 번호 생성기</div><div class="desc">고정·제외 번호 지정, 최대 10게임</div></a>
+      <a class="card" href="password.html"><div class="title">비밀번호 생성기</div><div class="desc">안전한 무작위 비밀번호, 강도 표시</div></a>
+    </div>
+  </section>
+
+
+  <section class="group game">
+    <div class="group-head"><h2>게임·재미</h2><span class="count">6개</span></div>
+    <div class="cards">
+      <a class="card" href="sens.html"><div class="title">마우스 감도 변환기</div><div class="desc">발로란트·CS2·오버워치·에이펙스 감도 변환, eDPI·cm/360</div></a>
+      <a class="card" href="reaction.html"><div class="title">반응속도 테스트</div><div class="desc">초록색이 되면 클릭, 5회 평균 ms와 등급</div></a>
+      <a class="card" href="typing.html"><div class="title">타자 속도 테스트</div><div class="desc">한글·영문 분당 타수와 정확도</div></a>
+      <a class="card" href="ladder.html"><div class="title">사다리타기</div><div class="desc">이름 클릭하면 길 따라가는 온라인 사다리</div></a>
+      <a class="card" href="team.html"><div class="title">팀 나누기</div><div class="desc">이름 넣고 팀 수 정하면 랜덤 편성</div></a>
+      <a class="card" href="random-pick.html"><div class="title">랜덤 뽑기</div><div class="desc">메뉴·발표 순서·당첨자 무작위 추첨</div></a>
+    </div>
+  </section>
+  <section class="group army">
+    <div class="group-head"><h2>군대</h2><span class="count">2개</span></div>
+    <div class="cards">
+      <a class="card" href="discharge.html"><div class="title">전역일 계산기</div><div class="desc">입대일·군종으로 전역 D-day, 복무율, 진급일</div></a>
+      <a class="card" href="military-savings.html"><div class="title">군적금 만기 계산기</div><div class="desc">장병내일준비적금 매칭·이자 합친 수령액</div></a>
+    </div>
+  </section>
+  <section class="group fit">
+    <div class="group-head"><h2>헬스</h2><span class="count">4개</span></div>
+    <div class="cards">
+      <a class="card" href="onerm.html"><div class="title">1RM 계산기</div><div class="desc">중량×횟수로 최대 중량, 훈련 % 표</div></a>
+      <a class="card" href="macros.html"><div class="title">단백질·칼로리 계산기</div><div class="desc">목표별 하루 칼로리와 탄단지 권장량</div></a>
+      <a class="card" href="bmi.html"><div class="title">BMI·체지방률 계산기</div><div class="desc">키·몸무게·둘레로 체지방률 추정</div></a>
+      <a class="card" href="pace.html"><div class="title">러닝 페이스 계산기</div><div class="desc">페이스↔완주 시간, 거리별 예상 기록</div></a>
+    </div>
+  </section>
+  <section class="group money">
+    <div class="group-head"><h2>재테크</h2><span class="count">3개</span></div>
+    <div class="cards">
+      <a class="card" href="avgprice.html"><div class="title">평단가 계산기</div><div class="desc">나눠 산 주식·코인의 평균 단가와 수익률</div></a>
+      <a class="card" href="avgdown.html"><div class="title">물타기 계산기</div><div class="desc">추가 매수 후 평단, 목표 평단까지 필요 수량</div></a>
+      <a class="card" href="compound.html"><div class="title">복리·적금 계산기</div><div class="desc">매달 적립 시 만기 금액과 세후 이자</div></a>
+    </div>
+  </section>
+  <section class="group family">
+    <div class="group-head"><h2>가족</h2><span class="count">4개</span></div>
+    <div class="cards">
+      <a class="card" href="pregnancy.html"><div class="title">출산예정일·임신 주수</div><div class="desc">마지막 생리일로 예정일, 현재 주수, 검사 시기</div></a>
+      <a class="card" href="ovulation.html"><div class="title">배란일·가임기 계산기</div><div class="desc">3개월치 배란일과 가임기, 다음 생리 예정일</div></a>
+      <a class="card" href="baby-age.html"><div class="title">아기 개월수·백일·돌</div><div class="desc">생후 며칠·개월수, 백일·돌 날짜</div></a>
+      <a class="card" href="pet-age.html"><div class="title">강아지·고양이 나이</div><div class="desc">반려동물 나이를 사람 나이로 환산</div></a>
+    </div>
+  </section>
+  <section class="group work">
+    <div class="group-head"><h2>직장·사업</h2><span class="count">7개</span></div>
+    <div class="cards">
+      <a class="card" href="parttime.html"><div class="title">알바 급여 계산기</div><div class="desc">2026 최저시급, 주휴·야간·연장수당 반영</div></a>
+      <a class="card" href="annual-leave.html"><div class="title">연차 계산기</div><div class="desc">입사일 기준 올해 연차와 발생일</div></a>
+      <a class="card" href="wage-convert.html"><div class="title">시급·월급·연봉 변환</div><div class="desc">하나만 넣으면 전부 환산</div></a>
+      <a class="card" href="unemployment.html"><div class="title">실업급여 계산기</div><div class="desc">2026 상·하한 반영, 지급일수와 총액</div></a>
+      <a class="card" href="freelancer-tax.html"><div class="title">3.3% 프리랜서 세금</div><div class="desc">원천징수 후 실수령, 세전 역산</div></a>
+      <a class="card" href="margin.html"><div class="title">마진율 계산기</div><div class="desc">원가·판매가·마진율, 마크업 차이</div></a>
+      <a class="card" href="platform-fee.html"><div class="title">카드·배달앱 수수료</div><div class="desc">수수료 빼고 실제 정산금</div></a>
+    </div>
+  </section>
+  <section class="group student">
+    <div class="group-head"><h2>학생</h2><span class="count">3개</span></div>
+    <div class="cards">
+      <a class="card" href="gpa.html"><div class="title">학점 계산기</div><div class="desc">4.5·4.3·100점 환산, 누적 평점</div></a>
+      <a class="card" href="school-grade.html"><div class="title">내신 등급 계산기</div><div class="desc">석차·점수로 9등급·5등급</div></a>
+      <a class="card" href="pomodoro.html"><div class="title">뽀모도로 타이머</div><div class="desc">25분 집중 5분 휴식, 알림음</div></a>
     </div>
   </section>
 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>BMI 체지방률 계산기 - 키 몸무게 허리둘레로 체지방 추정</title>
+<meta name="description" content="키와 몸무게로 BMI를, 허리·목둘레를 추가하면 미해군 공식으로 체지방률을 추정하는 무료 계산기. 정상 체중 범위도 함께.">
+<meta name="keywords" content="BMI 계산기, 체지방률 계산, 체지방 추정, 정상 체중 계산, 비만도 계산, 허리둘레 체지방">
+<link rel="canonical" href="https://dailyfreetoolbox.com/bmi.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BMI 체지방률 계산기">
+<meta property="og:description" content="키와 몸무게로 BMI를, 허리·목둘레를 추가하면 미해군 공식으로 체지방률을 추정하는 무료 계산기. 정상 체중 범위도 함께.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/bmi.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "BMI 체지방률 계산기", "url": "https://dailyfreetoolbox.com/bmi.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "키와 몸무게로 BMI를, 허리·목둘레를 추가하면 미해군 공식으로 체지방률을 추정하는 무료 계산기. 정상 체중 범위도 함께."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#3b6d8a; --accent-deep:#2a5168; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#3b6d8a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>⚖ BMI·체지방률 계산기</b></div>
+  <h1>숫자로 보는 내 몸 상태</h1>
+  <p class="sub">BMI는 키·몸무게로, 체지방률은 허리·목둘레(여성은 엉덩이둘레 추가)로 추정해요. 줄자만 있으면 인바디 없이도 대략 알 수 있어요.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>성별</label><select id="sex"><option value="m">남성</option><option value="f">여성</option></select></div>
+      <div class="field"><label>나이</label><div class="unit"><input type="number" id="age" value="22" min="10" max="90"><span>세</span></div></div>
+      <div class="field"><label>키</label><div class="unit"><input type="number" id="h" value="175" min="100" max="230"><span>cm</span></div></div>
+      <div class="field"><label>몸무게</label><div class="unit"><input type="number" id="w" value="70" min="30" max="200" step="0.5"><span>kg</span></div></div>
+      <div class="field"><label>허리둘레 (배꼽 높이, 선택)</label><div class="unit"><input type="number" id="waist" placeholder="예: 80" step="0.5"><span>cm</span></div></div>
+      <div class="field"><label>목둘레 (선택)</label><div class="unit"><input type="number" id="neck" placeholder="예: 38" step="0.5"><span>cm</span></div></div>
+      <div class="field hidden" id="hipWrap"><label>엉덩이둘레 (여성, 선택)</label><div class="unit"><input type="number" id="hip" placeholder="예: 95" step="0.5"><span>cm</span></div></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ 
+  <footer>건강 관련 참고 정보이며 의학적 진단을 대신하지 않아요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+function bmiCat(b){ return b<18.5?['저체중','#3b6d8a']:b<23?['정상','#2f5d4e']:b<25?['과체중','#b8823a']:b<30?['비만 1단계','#a8483a']:b<35?['비만 2단계','#8a2f23']:['비만 3단계','#6b1f17']; }
+function fatCat(f,sex){ const t= sex==='m'?[[6,'필수지방'],[14,'운동선수'],[18,'건강'],[25,'평균'],[100,'높음']]:[[14,'필수지방'],[21,'운동선수'],[25,'건강'],[32,'평균'],[100,'높음']]; for(const [lim,l] of t){ if(f<lim) return l; } return '높음'; }
+function calc(){
+  const sex=$('sex').value, age=+$('age').value||20, h=+$('h').value||170, w=+$('w').value||65, waist=+$('waist').value, neck=+$('neck').value, hip=+$('hip').value;
+  $('hipWrap').classList.toggle('hidden',sex!=='f');
+  const bmi=w/Math.pow(h/100,2); const [cat,color]=bmiCat(bmi);
+  const minW=18.5*Math.pow(h/100,2), maxW=22.9*Math.pow(h/100,2);
+  let fat=null, method='';
+  if(waist&&neck&&(sex==='m'||hip)){ const l=Math.log10; fat= sex==='m'? 495/(1.0324-0.19077*l(waist-neck)+0.15456*l(h))-450 : 495/(1.29579-0.35004*l(waist+hip-neck)+0.22100*l(h))-450; method='미해군 공식 (둘레 기반)'; }
+  else { fat= 1.2*bmi+0.23*age-10.8*(sex==='m'?1:0)-5.4; method='Deurenberg 공식 (BMI 기반 추정, 둘레를 넣으면 더 정확)'; }
+  fat=Math.max(2,Math.min(60,fat)); const lean=w*(1-fat/100);
+  $('out').innerHTML=`<div class="stat-grid"><div class="stat"><div class="num" style="color:${color}">${bmi.toFixed(1)}</div><div class="label">BMI · ${cat}</div></div><div class="stat"><div class="num">${fat.toFixed(1)}%</div><div class="label">체지방률 · ${fatCat(fat,sex)}</div></div><div class="stat"><div class="num">${lean.toFixed(1)}kg</div><div class="label">제지방량</div></div></div>
+    <table style="margin-top:12px"><tbody><tr><td>정상 체중 범위 (BMI 18.5~22.9)</td><td class="r">${minW.toFixed(1)} ~ ${maxW.toFixed(1)} kg</td></tr><tr><td>체지방률 계산 방식</td><td class="r">${method}</td></tr></tbody></table>
+    <div class="note">BMI 기준은 대한비만학회(아시아) 기준이에요. 근육량이 많으면 BMI가 높게 나올 수 있고, 둘레 기반 체지방률도 ±3~4% 오차가 있어요.</div>`;
+}
+['sex','age','h','w','waist','neck','hip'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+let sent=false; $('w').addEventListener('input',()=>{ if(!sent&&typeof gtag==='function'){ gtag('event','bmi_calculated',{}); sent=true; } });
+ 
+</script>
+
+</body>
+</html>

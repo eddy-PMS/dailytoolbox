@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>3.3% 프리랜서 세금 계산기 - 원천징수 후 실수령액</title>
+<meta name="description" content="프리랜서·용역 계약금액에서 3.3%(소득세 3%+지방세 0.3%) 원천징수 후 실수령액을 계산하고, 세전 금액 역산도 지원하는 무료 도구.">
+<meta name="keywords" content="3.3% 계산기, 프리랜서 세금 계산, 원천징수 3.3 계산, 프리랜서 실수령액, 사업소득 원천징수, 3.3 떼고">
+<link rel="canonical" href="https://dailyfreetoolbox.com/freelancer-tax.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="3.3% 프리랜서 세금 계산기">
+<meta property="og:description" content="프리랜서·용역 계약금액에서 3.3%(소득세 3%+지방세 0.3%) 원천징수 후 실수령액을 계산하고, 세전 금액 역산도 지원하는 무료 도구.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/freelancer-tax.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "3.3% 프리랜서 세금 계산기", "url": "https://dailyfreetoolbox.com/freelancer-tax.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "프리랜서·용역 계약금액에서 3.3%(소득세 3%+지방세 0.3%) 원천징수 후 실수령액을 계산하고, 세전 금액 역산도 지원하는 무료 도구."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2c3e5e; --accent-deep:#202d45; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2c3e5e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>₩ 3.3% 프리랜서 세금 계산기</b></div>
+  <h1>3.3% 떼면 얼마, 실수령이 이만큼이려면 얼마</h1>
+  <p class="sub">프리랜서·용역 소득은 지급 시 3.3%를 원천징수해요. 세전→실수령, 실수령→세전 역산을 모두 계산하고, 5월 종합소득세 신고 시 환급 가능성도 안내해요.</p>
+
+  <div class="card">
+    <div class="tabs"><button class="tab active" data-m="gross">세전 금액 → 실수령</button><button class="tab" data-m="net">실수령 → 세전 역산</button></div>
+    <div class="grid2">
+      <div class="field" id="grossWrap"><label>계약(세전) 금액</label><div class="unit"><input type="number" id="gross" value="3000000" step="10000"><span>원</span></div></div>
+      <div class="field hidden" id="netWrap"><label>받고 싶은 실수령액</label><div class="unit"><input type="number" id="net" value="3000000" step="10000"><span>원</span></div></div>
+      <div class="field"><label>원천징수율</label><select id="rate"><option value="0.033">3.3% (사업소득)</option><option value="0.088">8.8% (기타소득, 필요경비 60% 적용 시)</option></select></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ 
+  <footer>종합소득세 최종 세액은 개인 사정에 따라 크게 달라 세무사 상담을 권해요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const won=n=>Math.round(n).toLocaleString('ko-KR')+'원';
+let mode='gross';
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.m;$('grossWrap').classList.toggle('hidden',mode!=='gross');$('netWrap').classList.toggle('hidden',mode!=='net');calc();}));
+function calc(){
+  const r=+$('rate').value; let gross, net;
+  if(mode==='gross'){ gross=+$('gross').value||0; net=gross*(1-r); } else { net=+$('net').value||0; gross=net/(1-r); }
+  const tax=gross*r, inc=tax/1.1, local=tax-inc;
+  $('out').innerHTML=`<div class="big-result">${mode==='gross'?won(net):won(gross)}<small>${mode==='gross'?'실수령액':'계약해야 할 세전 금액'}</small></div>
+    <table style="margin-top:12px"><tbody><tr><td>세전 금액</td><td class="r">${won(gross)}</td></tr><tr><td>소득세 (${(r/1.1*100).toFixed(1)}%)</td><td class="r">-${won(inc)}</td></tr><tr><td>지방소득세 (소득세의 10%)</td><td class="r">-${won(local)}</td></tr><tr><td><b>실수령액</b></td><td class="r"><b>${won(net)}</b></td></tr><tr><td>연 12회 기준 연 원천징수액</td><td class="r">${won(tax*12)}</td></tr></tbody></table>
+    <div class="note">3.3%는 미리 내는 세금(기납부세액)이에요. 다음 해 5월 종합소득세 신고에서 연 소득·경비·공제에 따라 실제 세금을 정산하며, 연 소득이 적거나 경비가 많으면 환급받는 경우가 많고, 소득이 크면 추가 납부할 수 있어요. 4대보험은 별도로 지역가입자로 납부합니다.</div>`;
+}
+['gross','net','rate'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+let sent=false; $('gross').addEventListener('input',()=>{ if(!sent&&typeof gtag==='function'){ gtag('event','freelancer_tax_calculated',{}); sent=true; } });
+ 
+</script>
+
+</body>
+</html>

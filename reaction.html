@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>반응속도 테스트 - 클릭 반응 시간 측정 (ms)</title>
+<meta name="description" content="화면이 초록색으로 바뀌면 클릭! 5회 평균 반응속도를 밀리초로 측정하고 등급을 알려주는 무료 테스트.">
+<meta name="keywords" content="반응속도 테스트, 반응 속도 측정, 클릭 반응속도, 반응시간 테스트, 게이머 반응속도">
+<link rel="canonical" href="https://dailyfreetoolbox.com/reaction.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="반응속도 테스트">
+<meta property="og:description" content="화면이 초록색으로 바뀌면 클릭! 5회 평균 반응속도를 밀리초로 측정하고 등급을 알려주는 무료 테스트.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/reaction.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "반응속도 테스트", "url": "https://dailyfreetoolbox.com/reaction.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "화면이 초록색으로 바뀌면 클릭! 5회 평균 반응속도를 밀리초로 측정하고 등급을 알려주는 무료 테스트."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2f5d4e; --accent-deep:#22453a; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f5d4e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>⚡ 반응속도 테스트</b></div>
+  <h1>초록색이 되는 순간, 클릭!</h1>
+  <p class="sub">5번 측정해서 평균 반응 시간을 알려드려요. 일반인 평균은 200~250ms, 프로게이머는 150ms 안팎이에요.</p>
+
+  <div id="pad" style="height:300px;border-radius:3px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;user-select:none;background:var(--accent);color:#fff;font-size:22px;font-weight:700;text-align:center;padding:20px;line-height:1.5">클릭해서 시작</div>
+  <div class="card" style="margin-top:16px"><div class="row" style="margin:0" id="tries"></div><div id="result"></div></div>
+ 
+  <footer>측정값에는 마우스·모니터·브라우저 지연이 포함돼요. 같은 환경에서 비교할 때 의미가 있습니다.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const pad=$('pad'); let state='idle', timer=null, t0=0, results=[];
+const COLORS={idle:'var(--accent)',wait:'#a8483a',go:'#3cae5c',early:'#b8823a',done:'var(--accent)'};
+function set(s,text){ state=s; pad.style.background=COLORS[s]; pad.innerHTML=text; }
+function startWait(){ set('wait','기다리세요…<br><span style="font-size:14px;font-weight:400">초록색이 되면 클릭</span>'); timer=setTimeout(()=>{ set('go','지금 클릭!'); t0=performance.now(); }, 1500+Math.random()*3500); }
+function grade(ms){ return ms<150?'프로게이머급':ms<200?'상위권':ms<250?'평균':ms<300?'평균 이하':'연습이 필요해요'; }
+pad.addEventListener('pointerdown',()=>{
+  if(state==='idle'||state==='done'){ results=[]; $('result').innerHTML=''; renderTries(); startWait(); return; }
+  if(state==='wait'){ clearTimeout(timer); set('early','너무 빨라요!<br><span style="font-size:14px;font-weight:400">클릭해서 다시</span>'); return; }
+  if(state==='early'){ startWait(); return; }
+  if(state==='go'){ const ms=Math.round(performance.now()-t0); results.push(ms); renderTries();
+    if(results.length>=5){ const avg=Math.round(results.reduce((a,b)=>a+b,0)/5), best=Math.min(...results);
+      set('done',`평균 ${avg}ms<br><span style="font-size:15px;font-weight:400">${grade(avg)} · 클릭해서 다시</span>`);
+      $('result').innerHTML=`<div class="stat-grid" style="margin-top:12px"><div class="stat"><div class="num">${avg}ms</div><div class="label">평균</div></div><div class="stat"><div class="num">${best}ms</div><div class="label">최고 기록</div></div><div class="stat"><div class="num">${grade(avg)}</div><div class="label">등급</div></div></div>`;
+      if(typeof gtag==='function') gtag('event','reaction_test_done',{avg});
+    } else { set('go',`${ms}ms<br><span style="font-size:14px;font-weight:400">클릭해서 다음 (${results.length}/5)</span>`); state='next'; }
+    return; }
+  if(state==='next'){ startWait(); }
+});
+function renderTries(){ $('tries').innerHTML=[0,1,2,3,4].map(i=>`<span style="padding:6px 12px;border:1px solid var(--line);border-radius:20px;background:${results[i]!=null?'var(--paper-deep)':'#fffdf8'}">${i+1}회: ${results[i]!=null?results[i]+'ms':'-'}</span>`).join(''); }
+renderTries();
+ 
+</script>
+
+</body>
+</html>

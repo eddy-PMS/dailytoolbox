@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>물타기 계산기 - 추가 매수로 평단 낮추기, 목표 평단 필요 수량</title>
+<meta name="description" content="보유 평단과 현재가를 넣으면 추가 매수 후 평단 변화와, 목표 평단까지 필요한 수량·금액을 계산하는 무료 물타기 계산기.">
+<meta name="keywords" content="물타기 계산기, 추가매수 평단 계산, 목표 평단 계산, 주식 물타기, 코인 물타기, 평단 낮추기">
+<link rel="canonical" href="https://dailyfreetoolbox.com/avgdown.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="물타기 계산기">
+<meta property="og:description" content="보유 평단과 현재가를 넣으면 추가 매수 후 평단 변화와, 목표 평단까지 필요한 수량·금액을 계산하는 무료 물타기 계산기.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/avgdown.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "물타기 계산기", "url": "https://dailyfreetoolbox.com/avgdown.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "보유 평단과 현재가를 넣으면 추가 매수 후 평단 변화와, 목표 평단까지 필요한 수량·금액을 계산하는 무료 물타기 계산기."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#a83a2c; --accent-deep:#8a2f23; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#a83a2c"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>📉 물타기 계산기</b></div>
+  <h1>얼마나 더 사야 평단이 원하는 곳까지 내려올까요</h1>
+  <p class="sub">보유 내역과 현재가를 넣고, "추가 매수 수량"을 넣으면 새 평단을, "목표 평단"을 넣으면 필요한 수량을 계산해요.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>현재 평단가</label><input type="number" id="avg" value="80000" step="any"></div>
+      <div class="field"><label>보유 수량</label><input type="number" id="qty" value="10" step="any"></div>
+      <div class="field"><label>현재가 (추가 매수가)</label><input type="number" id="cur" value="60000" step="any"></div>
+    </div>
+    <div class="tabs" style="margin-top:14px"><button class="tab active" data-m="qty">추가 매수 수량으로</button><button class="tab" data-m="target">목표 평단으로</button></div>
+    <div class="grid2">
+      <div class="field" id="qtyWrap"><label>추가 매수 수량</label><input type="number" id="addQty" value="10" step="any"></div>
+      <div class="field hidden" id="targetWrap"><label>목표 평단가</label><input type="number" id="target" value="65000" step="any"></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ 
+  <footer>수수료·세금은 반영하지 않으며, 투자 판단과 손실 책임은 본인에게 있어요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const fmt=n=>n.toLocaleString(undefined,{maximumFractionDigits:2});
+let mode='qty';
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.m;$('qtyWrap').classList.toggle('hidden',mode!=='qty');$('targetWrap').classList.toggle('hidden',mode!=='target');calc();}));
+function calc(){
+  const avg=+$('avg').value, qty=+$('qty').value, cur=+$('cur').value;
+  if(!(avg>0&&qty>0&&cur>0)){ $('out').innerHTML='<div class="empty">평단·수량·현재가를 입력하세요</div>'; return; }
+  const curLoss=(cur-avg)/avg*100;
+  if(mode==='qty'){
+    const a=+$('addQty').value; if(!(a>0)){ $('out').innerHTML='<div class="empty">추가 매수 수량을 입력하세요</div>'; return; }
+    const newAvg=(avg*qty+cur*a)/(qty+a); const need=(newAvg-cur)/cur*100;
+    $('out').innerHTML=`<div class="big-result">${fmt(newAvg)}<small>추가 매수 후 평단</small></div><table style="margin-top:12px"><tbody><tr><td>평단 변화</td><td class="r">${fmt(avg)} → ${fmt(newAvg)} (${fmt((newAvg-avg)/avg*100)}%)</td></tr><tr><td>추가 투자금</td><td class="r">${fmt(cur*a)}</td></tr><tr><td>총 수량 / 총 투자금</td><td class="r">${fmt(qty+a)} / ${fmt(avg*qty+cur*a)}</td></tr><tr><td>현재 수익률</td><td class="r ${curLoss>=0?'ok':'bad'}">${fmt(curLoss)}%</td></tr><tr><td>본전까지 필요한 상승률</td><td class="r">${fmt(need)}%</td></tr></tbody></table>`;
+  } else {
+    const t=+$('target').value; if(!(t>0)){ $('out').innerHTML='<div class="empty">목표 평단을 입력하세요</div>'; return; }
+    if(t<=cur||t>=avg){ $('out').innerHTML=`<div class="empty bad">목표 평단은 현재가(${fmt(cur)})보다 높고 현재 평단(${fmt(avg)})보다 낮아야 해요</div>`; return; }
+    const a=qty*(avg-t)/(t-cur);
+    $('out').innerHTML=`<div class="big-result">${fmt(a)}<small>목표 평단까지 필요한 추가 수량</small></div><table style="margin-top:12px"><tbody><tr><td>필요 투자금</td><td class="r">${fmt(cur*a)}</td></tr><tr><td>매수 후 총 수량 / 총 투자금</td><td class="r">${fmt(qty+a)} / ${fmt(avg*qty+cur*a)}</td></tr><tr><td>현재 수익률</td><td class="r ${curLoss>=0?'ok':'bad'}">${fmt(curLoss)}%</td></tr></tbody></table><div class="note">평단을 크게 낮추려면 보유 수량보다 훨씬 많이 사야 하는 경우가 많아요. 손실 확대 위험도 함께 커집니다.</div>`;
+  }
+}
+['avg','qty','cur','addQty','target'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+let sent=false; $('addQty').addEventListener('input',()=>{ if(!sent&&typeof gtag==='function'){ gtag('event','avgdown_calculated',{}); sent=true; } });
+ 
+</script>
+
+</body>
+</html>

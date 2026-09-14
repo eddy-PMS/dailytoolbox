@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>연차 계산기 - 입사일 기준 연차 발생 개수와 발생일</title>
+<meta name="description" content="입사일을 넣으면 근로기준법에 따른 올해 연차 개수, 1년 미만 월차 발생, 근속별 가산 연차와 다음 발생일을 계산하는 무료 도구.">
+<meta name="keywords" content="연차 계산기, 연차 발생 기준, 입사일 연차 계산, 연차 개수, 1년 미만 연차, 근속 연차">
+<link rel="canonical" href="https://dailyfreetoolbox.com/annual-leave.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="연차 계산기">
+<meta property="og:description" content="입사일을 넣으면 근로기준법에 따른 올해 연차 개수, 1년 미만 월차 발생, 근속별 가산 연차와 다음 발생일을 계산하는 무료 도구.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/annual-leave.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "연차 계산기", "url": "https://dailyfreetoolbox.com/annual-leave.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "입사일을 넣으면 근로기준법에 따른 올해 연차 개수, 1년 미만 월차 발생, 근속별 가산 연차와 다음 발생일을 계산하는 무료 도구."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2c3e5e; --accent-deep:#202d45; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2c3e5e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🗓 연차 계산기</b></div>
+  <h1>내 연차는 올해 몇 개일까요</h1>
+  <p class="sub">근로기준법 기준(입사일 방식)으로 계산해요. 1년 미만은 매월 개근 시 1일씩(최대 11일), 1년 이상은 15일에 2년마다 1일씩 늘어 최대 25일입니다.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>입사일</label><input type="date" id="start"></div>
+      <div class="field"><label>기준일</label><input type="date" id="ref"></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ 
+  <footer>5인 이상 사업장 기준이며, 출근율 80% 미만·휴직 등 개별 사정은 반영하지 않아요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const today=new Date(); today.setHours(0,0,0,0);
+const fmt=d=>`${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`;
+const addM=(d,n)=>{const x=new Date(d);x.setMonth(x.getMonth()+n);return x;};
+const addY=(d,n)=>{const x=new Date(d);x.setFullYear(x.getFullYear()+n);return x;};
+$('ref').value=today.toISOString().slice(0,10); const s0=addY(today,-2); $('start').value=s0.toISOString().slice(0,10);
+function leaveFor(years){ return Math.min(25, 15+Math.floor((years-1)/2)); }
+function calc(){
+  const s=new Date($('start').value), r=new Date($('ref').value); if(isNaN(s)||isNaN(r)||r<s){ $('out').innerHTML='<div class="empty">날짜를 확인해주세요</div>'; return; } s.setHours(0,0,0,0); r.setHours(0,0,0,0);
+  let years=r.getFullYear()-s.getFullYear(); if(r<addY(s,years)) years--; // 만 근속연수
+  let html='';
+  if(years<1){ let months=(r.getFullYear()-s.getFullYear())*12+(r.getMonth()-s.getMonth()); if(r.getDate()<s.getDate()) months--; const earned=Math.min(11,Math.max(0,months));
+    html=`<div class="big-result">${earned}일<small>지금까지 발생한 연차 (1년 미만, 월 개근 기준)</small></div><table style="margin-top:12px"><tbody><tr><td>다음 1일 발생</td><td class="r">${months<11?fmt(addM(s,months+1)):'11일 모두 발생'}</td></tr><tr><td>1년 되는 날 (15일 발생)</td><td class="r">${fmt(addY(s,1))}</td></tr></tbody></table><div class="note">1년 미만 연차는 입사 1년이 되는 날 전까지 써야 하고, 1년 차 연차 15일과는 별개예요.</div>`; }
+  else { const cur=leaveFor(years); const rows=[]; for(let y=1;y<=Math.min(years+3,21);y++){ rows.push(`<tr${y===years?' style="font-weight:700;color:var(--accent)"':''}><td>${y}년차 (${fmt(addY(s,y))} 발생)</td><td class="r">${leaveFor(y)}일</td></tr>`); }
+    html=`<div class="big-result">${cur}일<small>현재 사용 가능한 연차 (근속 만 ${years}년)</small></div><table style="margin-top:12px"><thead><tr><th>근속</th><th class="r">연차</th></tr></thead><tbody>${rows.join('')}</tbody></table><div class="note">${fmt(addY(s,years))}에 발생한 ${cur}일을 ${fmt(addY(s,years+1))} 전까지 쓸 수 있어요. 회사가 회계연도(1월 1일) 기준으로 운영하면 첫해는 일할 계산돼 숫자가 달라요.</div>`; }
+  $('out').innerHTML=html;
+  if(typeof gtag==='function') gtag('event','annual_leave_calculated',{years});
+}
+['start','ref'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+ 
+</script>
+
+</body>
+</html>

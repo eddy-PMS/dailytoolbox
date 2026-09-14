@@ -1,7 +1,9 @@
 {
   "name": "dailytoolbox",
+  "main": "worker.js",
   "compatibility_date": "2026-09-13",
   "assets": {
-    "directory": "."
+    "directory": ".",
+    "binding": "ASSETS"
   }
 }

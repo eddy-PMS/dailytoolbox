@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>내신 등급 계산기 - 석차·백분위로 9등급 5등급 계산</title>
+<meta name="description" content="과목 석차와 재적 인원, 또는 원점수·평균·표준편차로 내신 등급(9등급제·2025 고1부터 5등급제)을 계산하는 무료 도구.">
+<meta name="keywords" content="내신 등급 계산기, 내신 9등급 계산, 5등급제 계산, 석차 등급, 등급컷 계산, 고등학교 내신 계산">
+<link rel="canonical" href="https://dailyfreetoolbox.com/school-grade.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="내신 등급 계산기">
+<meta property="og:description" content="과목 석차와 재적 인원, 또는 원점수·평균·표준편차로 내신 등급(9등급제·2025 고1부터 5등급제)을 계산하는 무료 도구.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/school-grade.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "내신 등급 계산기", "url": "https://dailyfreetoolbox.com/school-grade.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "과목 석차와 재적 인원, 또는 원점수·평균·표준편차로 내신 등급(9등급제·2025 고1부터 5등급제)을 계산하는 무료 도구."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#a83a2c; --accent-deep:#8a2f23; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#a83a2c"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>📝 내신 등급 계산기</b></div>
+  <h1>이 석차면 몇 등급일까요</h1>
+  <p class="sub">석차 기준으로 등급을 계산해요. 2025년 고1부터는 5등급제, 그 이전 입학생은 9등급제가 적용돼요. 원점수·평균·표준편차로 백분위를 추정하는 방식도 있어요.</p>
+
+  <div class="card">
+    <div class="tabs"><button class="tab active" data-m="rank">석차로</button><button class="tab" data-m="score">점수·평균·표준편차로</button></div>
+    <div class="row"><label>등급제 <select id="sys" style="width:auto;padding:5px 8px;font-size:13px"><option value="5">5등급제 (2025년 고1~)</option><option value="9">9등급제 (2024년 이전 입학)</option></select></label></div>
+    <div class="grid2" id="rankPane">
+      <div class="field"><label>내 석차</label><div class="unit"><input type="number" id="rank" value="20" min="1"><span>등</span></div></div>
+      <div class="field"><label>과목 재적 인원</label><div class="unit"><input type="number" id="total" value="200" min="1"><span>명</span></div></div>
+      <div class="field"><label>동석차 인원 (나 포함, 선택)</label><div class="unit"><input type="number" id="tie" value="1" min="1"><span>명</span></div></div>
+    </div>
+    <div class="grid2 hidden" id="scorePane">
+      <div class="field"><label>내 원점수</label><input type="number" id="score" value="85"></div>
+      <div class="field"><label>과목 평균</label><input type="number" id="mean" value="70"></div>
+      <div class="field"><label>표준편차</label><input type="number" id="sd" value="15"></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ 
+  <footer>등급 구간: 9등급제 4·11·23·40·60·77·89·96%, 5등급제 10·34·66·90%.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const CUT={9:[4,11,23,40,60,77,89,96,100],5:[10,34,66,90,100]};
+let mode='rank';
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.m;$('rankPane').classList.toggle('hidden',mode!=='rank');$('scorePane').classList.toggle('hidden',mode!=='score');calc();}));
+function normCdf(z){ const t=1/(1+0.2316419*Math.abs(z)); const d=0.3989423*Math.exp(-z*z/2); let p=d*t*(0.3193815+t*(-0.3565638+t*(1.781478+t*(-1.821256+t*1.330274)))); return z>0?1-p:p; }
+function gradeOf(pct,sys){ const c=CUT[sys]; for(let i=0;i<c.length;i++){ if(pct<=c[i]) return i+1; } return c.length; }
+function calc(){
+  const sys=$('sys').value; let pct, desc;
+  if(mode==='rank'){ const r=+$('rank').value||1, t=+$('total').value||1, tie=Math.max(1,+$('tie').value||1); pct=(r+(tie-1)/2)/t*100; desc=`석차 ${r}등 / ${t}명 → 누적 비율 ${pct.toFixed(1)}%${tie>1?' (동석차 중간 석차 적용)':''}`; }
+  else { const s=+$('score').value, m=+$('mean').value, sd=+$('sd').value||1; const z=(s-m)/sd; pct=(1-normCdf(z))*100; desc=`Z점수 ${z.toFixed(2)} → 상위 약 ${pct.toFixed(1)}% (정규분포 가정)`; }
+  const g=gradeOf(pct,sys); const c=CUT[sys];
+  $('out').innerHTML=`<div class="big-result">${g}등급<small>${sys}등급제</small></div><div class="note">${desc}</div>
+    <table style="margin-top:12px"><thead><tr><th>등급</th><th class="r">누적 비율</th>${mode==='rank'?'<th class="r">석차 범위 ('+$('total').value+'명 기준)</th>':''}</tr></thead><tbody>${c.map((cut,i)=>{ const prev=i?c[i-1]:0; const t=+$('total').value||1; const lo=Math.floor(prev*t/100)+1, hi=Math.floor(cut*t/100); return `<tr${i+1===g?' style="font-weight:700;color:var(--accent)"':''}><td>${i+1}등급</td><td class="r">${prev}% ~ ${cut}%</td>${mode==='rank'?`<td class="r">${lo}~${hi}등</td>`:''}</tr>`; }).join('')}</tbody></table>
+    <div class="note">동석차가 있으면 중간 석차로 계산해요. 실제 등급은 학교 성적 처리 규정(동점자 처리 등)에 따라 달라질 수 있어요.</div>`;
+  if(typeof gtag==='function') gtag('event','school_grade_calculated',{sys});
+}
+['sys','rank','total','tie','score','mean','sd'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+ 
+</script>
+
+</body>
+</html>

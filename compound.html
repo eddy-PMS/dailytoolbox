@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>복리 계산기 & 적금 계산기 - 매달 적립 시 만기 금액, 세후 이자</title>
+<meta name="description" content="목돈 복리 투자와 매달 적립하는 적금의 만기 금액, 총 이자, 세후 수령액을 계산하고 연도별 증가표를 보여주는 무료 계산기.">
+<meta name="keywords" content="복리 계산기, 적금 계산기, 적금 이자 계산, 복리 이자 계산, 만기 금액 계산, 세후 이자">
+<link rel="canonical" href="https://dailyfreetoolbox.com/compound.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="복리 계산기 & 적금 계산기">
+<meta property="og:description" content="목돈 복리 투자와 매달 적립하는 적금의 만기 금액, 총 이자, 세후 수령액을 계산하고 연도별 증가표를 보여주는 무료 계산기.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/compound.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "복리 계산기 & 적금 계산기", "url": "https://dailyfreetoolbox.com/compound.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "목돈 복리 투자와 매달 적립하는 적금의 만기 금액, 총 이자, 세후 수령액을 계산하고 연도별 증가표를 보여주는 무료 계산기."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2f5d4e; --accent-deep:#22453a; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f5d4e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>₩ 복리·적금 계산기</b></div>
+  <h1>매달 얼마씩, 몇 년 뒤 얼마가 될까요</h1>
+  <p class="sub">목돈을 굴리는 복리와 매달 넣는 적립식을 함께 계산해요. 이자소득세(15.4%)를 뺀 세후 금액도 보여드려요.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>초기 목돈 (없으면 0)</label><div class="unit"><input type="number" id="p" value="0" step="100000" min="0"><span>원</span></div></div>
+      <div class="field"><label>매달 적립액</label><div class="unit"><input type="number" id="m" value="500000" step="10000" min="0"><span>원</span></div></div>
+      <div class="field"><label>연 수익률(금리)</label><div class="unit"><input type="number" id="r" value="4.0" step="0.1"><span>%</span></div></div>
+      <div class="field"><label>기간</label><div class="unit"><input type="number" id="y" value="3" min="1" max="50"><span>년</span></div></div>
+      <div class="field"><label>이자 계산 방식</label><select id="mode"><option value="compound">월 복리 (투자·예금)</option><option value="simple">단리 (일반 적금)</option></select></div>
+      <div class="field"><label>세금</label><select id="tax"><option value="0.154">일반과세 15.4%</option><option value="0.095">세금우대 9.5%</option><option value="0">비과세</option></select></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ 
+  <footer>투자 수익률은 보장되지 않으며, 실제 적금 이자는 은행별 계산 방식·우대 조건에 따라 달라요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const won=n=>Math.round(n).toLocaleString('ko-KR')+'원';
+function calc(){
+  const P=+$('p').value||0, M=+$('m').value||0, r=(+$('r').value||0)/100, Y=+$('y').value||1, n=Y*12, tax=+$('tax').value, mode=$('mode').value;
+  const yearly=[]; let bal=P, principal=P, interest=0;
+  for(let k=1;k<=n;k++){
+    if(mode==='compound'){ bal=bal*(1+r/12)+M; principal+=M; interest=bal-principal; }
+    else { principal+=M; interest= P*r*k/12 + M*r*(k*(k+1)/2)/12; bal=principal+interest; }
+    if(k%12===0) yearly.push({y:k/12,principal,interest,bal});
+  }
+  const net=principal+interest*(1-tax);
+  $('out').innerHTML=`<div class="big-result">${won(net)}<small>세후 만기 수령액</small></div>
+    <div class="stat-grid" style="margin-top:12px"><div class="stat"><div class="num">${won(principal)}</div><div class="label">총 원금</div></div><div class="stat"><div class="num">${won(interest)}</div><div class="label">세전 이자</div></div><div class="stat"><div class="num">${won(interest*tax)}</div><div class="label">이자소득세</div></div></div>
+    <table style="margin-top:12px"><thead><tr><th>연차</th><th class="r">원금</th><th class="r">누적 이자</th><th class="r">잔액(세전)</th></tr></thead><tbody>${yearly.map(x=>`<tr><td>${x.y}년</td><td class="r">${won(x.principal)}</td><td class="r">${won(x.interest)}</td><td class="r">${won(x.bal)}</td></tr>`).join('')}</tbody></table>
+    <div class="note">월 복리는 매달 이자가 원금에 더해지는 방식(투자·복리예금), 단리는 은행 적금처럼 각 납입금에 남은 기간만큼 이자가 붙는 방식이에요.</div>`;
+}
+['p','m','r','y','mode','tax'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+let sent=false; $('m').addEventListener('input',()=>{ if(!sent&&typeof gtag==='function'){ gtag('event','compound_calculated',{}); sent=true; } });
+ 
+</script>
+
+</body>
+</html>

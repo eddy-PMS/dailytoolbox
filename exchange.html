@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>환율 계산기 - 달러 엔 유로 위안 원화 환전 계산</title>
+<meta name="description" content="유럽중앙은행 고시 환율로 달러·엔·유로·위안 등 주요 통화를 원화로 변환하는 무료 환율 계산기. 매일 갱신.">
+<meta name="keywords" content="환율 계산기, 달러 환율 계산, 엔화 환율 계산, 유로 원화 환산, 환전 계산기, 오늘 환율">
+<link rel="canonical" href="https://dailyfreetoolbox.com/exchange.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="환율 계산기">
+<meta property="og:description" content="유럽중앙은행 고시 환율로 달러·엔·유로·위안 등 주요 통화를 원화로 변환하는 무료 환율 계산기. 매일 갱신.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/exchange.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "환율 계산기", "url": "https://dailyfreetoolbox.com/exchange.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "유럽중앙은행 고시 환율로 달러·엔·유로·위안 등 주요 통화를 원화로 변환하는 무료 환율 계산기. 매일 갱신."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2f5d4e; --accent-deep:#22453a; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f5d4e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>💱 환율 계산기</b></div>
+  <h1>오늘 환율로 바로 환산</h1>
+  <p class="sub">유럽중앙은행(ECB)이 매 영업일 고시하는 기준 환율을 사용해요. 실제 환전은 은행 스프레드가 붙어 이보다 불리하니 참고용으로 보세요.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>금액</label><input type="number" id="amt" value="100" step="any"></div>
+      <div class="field"><label>통화</label><select id="from"></select></div>
+    </div>
+    <div class="btn-row"><button class="btn-ghost" id="swap">⇄ 원화 ↔ 외화 바꾸기</button></div>
+    <div class="status" id="status">환율을 불러오는 중이에요…</div>
+    <table style="margin-top:8px"><tbody id="out"></tbody></table>
+  </div>
+ 
+  <footer>환율 데이터: 유럽중앙은행(ECB) 기준 환율(frankfurter API). 주말·휴일에는 직전 영업일 환율이 표시돼요. 실제 환전 금액은 은행·카드사 고시 환율과 수수료에 따라 달라요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const CUR=[['USD','미국 달러'],['JPY','일본 엔'],['EUR','유로'],['CNY','중국 위안'],['GBP','영국 파운드'],['HKD','홍콩 달러'],['TWD','대만 달러'],['THB','태국 바트'],['VND','베트남 동'],['SGD','싱가포르 달러'],['AUD','호주 달러'],['CAD','캐나다 달러'],['CHF','스위스 프랑'],['PHP','필리핀 페소'],['IDR','인도네시아 루피아'],['MYR','말레이시아 링깃'],['INR','인도 루피'],['NZD','뉴질랜드 달러'],['SEK','스웨덴 크로나'],['MXN','멕시코 페소']];
+let rates=null, date='', toKRW=true;
+CUR.forEach(c=>{ const o=document.createElement('option'); o.value=c[0]; o.textContent=`${c[1]} (${c[0]})`; $('from').appendChild(o); });
+async function load(){
+  const urls=['https://api.frankfurter.dev/v1/latest?base=KRW','https://api.frankfurter.app/latest?from=KRW'];
+  for(const u of urls){ try{ const r=await fetch(u); if(!r.ok) continue; const d=await r.json(); if(d&&d.rates){ rates=d.rates; date=d.date; $('status').textContent=`기준일 ${date} (ECB 고시)`; calc(); return; } }catch(e){} }
+  $('status').textContent='환율을 불러오지 못했어요. 잠시 후 새로고침 해주세요.';
+}
+function calc(){
+  if(!rates) return; const amt=+$('amt').value||0, cur=$('from').value; const perKRW=rates[cur]; if(!perKRW){ $('out').innerHTML='<tr><td>이 통화는 제공되지 않아요</td></tr>'; return; }
+  const krwPer1=1/perKRW; // 1 외화 = ? KRW
+  const fmt=(n,d=2)=>n.toLocaleString(undefined,{maximumFractionDigits:d});
+  const rows=[];
+  if(toKRW){ rows.push([`${fmt(amt)} ${cur} → 원화`, `<b>${fmt(amt*krwPer1,0)} 원</b>`]); }
+  else { rows.push([`${fmt(amt,0)} 원 → ${cur}`, `<b>${fmt(amt*perKRW, cur==='JPY'||cur==='VND'||cur==='IDR'?0:2)} ${cur}</b>`]); }
+  rows.push([`1 ${cur}`, `${fmt(krwPer1, krwPer1<10?4:2)} 원`]); if(cur==='JPY'||cur==='VND'||cur==='IDR') rows.push([`100 ${cur}`, `${fmt(krwPer1*100,2)} 원`]);
+  rows.push(['1 USD (참고)', `${fmt(1/rates['USD'],2)} 원`]);
+  $('out').innerHTML=rows.map(r=>`<tr><td>${r[0]}</td><td class="r">${r[1]}</td></tr>`).join('');
+}
+$('swap').addEventListener('click',()=>{ toKRW=!toKRW; $('amt').value= toKRW? 100 : 100000; calc(); });
+['amt','from'].forEach(id=>$(id).addEventListener('input',calc)); load();
+let sent=false; $('amt').addEventListener('input',()=>{ if(!sent&&typeof gtag==='function'){ gtag('event','exchange_calculated',{}); sent=true; } });
+ 
+</script>
+
+</body>
+</html>

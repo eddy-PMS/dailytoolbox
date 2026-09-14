@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>마우스 감도 변환기 - 발로란트 오버워치 CS2 에이펙스 감도 변환</title>
+<meta name="description" content="게임 간 마우스 감도를 변환하고 eDPI와 cm/360을 계산하는 무료 도구. 발로란트·CS2·에이펙스·오버워치2·콜오브듀티·포트나이트·레인보우식스 지원.">
+<meta name="keywords" content="마우스 감도 변환, 발로란트 감도 변환, 오버워치 감도 변환, cs2 감도, 에이펙스 감도, edpi 계산기, cm/360">
+<link rel="canonical" href="https://dailyfreetoolbox.com/sens.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="마우스 감도 변환기">
+<meta property="og:description" content="게임 간 마우스 감도를 변환하고 eDPI와 cm/360을 계산하는 무료 도구. 발로란트·CS2·에이펙스·오버워치2·콜오브듀티·포트나이트·레인보우식스 지원.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/sens.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "마우스 감도 변환기", "url": "https://dailyfreetoolbox.com/sens.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "게임 간 마우스 감도를 변환하고 eDPI와 cm/360을 계산하는 무료 도구. 발로란트·CS2·에이펙스·오버워치2·콜오브듀티·포트나이트·레인보우식스 지원."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#a83a2c; --accent-deep:#8a2f23; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#a83a2c"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🖱 마우스 감도 변환기</b></div>
+  <h1>게임 바꿔도 같은 손맛으로</h1>
+  <p class="sub">지금 쓰는 게임의 감도와 DPI를 넣으면 다른 게임에서 똑같은 회전량이 되는 감도를 계산해요. eDPI와 cm/360(한 바퀴 도는 데 필요한 마우스 이동 거리)도 함께.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>지금 쓰는 게임</label><select id="from"></select></div>
+      <div class="field"><label>감도 값</label><input type="number" id="sens" value="0.5" step="0.001" min="0"></div>
+      <div class="field"><label>마우스 DPI</label><input type="number" id="dpi" value="800" step="50" min="50"></div>
+      <div class="field"><label>변환할 게임의 DPI (같으면 그대로)</label><input type="number" id="dpi2" value="800" step="50" min="50"></div>
+    </div>
+    <div class="stat-grid" style="margin-top:14px" id="stats"></div>
+  </div>
+  <div class="card"><h2>다른 게임에서의 감도</h2><table><thead><tr><th>게임</th><th class="r">감도</th><th class="r">eDPI</th></tr></thead><tbody id="tbody"></tbody></table>
+  <div class="note">게임별 회전 계수(yaw): CS2/에이펙스 0.022, 발로란트 0.07, 오버워치2/콜오브듀티 0.0066, 포트나이트 0.005555(%), 레인보우식스 0.00573(기본 배율). 조준(ADS) 감도와 FOV 차이는 반영하지 않아요.</div></div>
+ 
+  <footer>변환은 회전 계수 기준이라 게임 내 FOV·조준 배율 설정에 따라 체감이 다를 수 있어요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const GAMES=[['cs2','CS2 / CS:GO',0.022,3],['valorant','발로란트',0.07,3],['apex','에이펙스 레전드',0.022,3],['ow2','오버워치 2',0.0066,2],['cod','콜 오브 듀티',0.0066,2],['fortnite','포트나이트 (%)',0.005555,1],['r6','레인보우식스 시즈',0.00572957,0],['quake','퀘이크 / 둠',0.022,3],['tf2','팀포트리스 2',0.022,3]];
+GAMES.forEach(g=>{const o=document.createElement('option');o.value=g[0];o.textContent=g[1];$('from').appendChild(o);});
+$('from').value='valorant';
+function calc(){
+  const from=GAMES.find(g=>g[0]===$('from').value); const s=+$('sens').value||0, dpi=+$('dpi').value||800, dpi2=+$('dpi2').value||dpi;
+  const deg=from[2]*s*dpi; // degrees per inch
+  const cm360= deg>0? 360/deg*2.54 : 0; const edpi=s*dpi;
+  $('stats').innerHTML=`<div class="stat"><div class="num">${edpi.toFixed(1)}</div><div class="label">eDPI (감도×DPI)</div></div><div class="stat"><div class="num">${cm360.toFixed(1)} cm</div><div class="label">cm/360 (한 바퀴)</div></div><div class="stat"><div class="num">${(cm360/2.54).toFixed(2)}"</div><div class="label">inch/360</div></div>`;
+  $('tbody').innerHTML=GAMES.map(g=>{ const v= deg>0? deg/(g[2]*dpi2):0; const same=g[0]===from[0]&&dpi===dpi2; return `<tr${same?' style="color:var(--accent);font-weight:700"':''}><td>${g[1]}</td><td class="r">${v.toFixed(g[3])}</td><td class="r">${(v*dpi2).toFixed(1)}</td></tr>`; }).join('');
+}
+['from','sens','dpi','dpi2'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+let sent=false; $('sens').addEventListener('input',()=>{ if(!sent&&typeof gtag==='function'){ gtag('event','sens_converted',{}); sent=true; } });
+ 
+</script>
+
+</body>
+</html>

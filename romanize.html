@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>한글 이름 로마자 변환기 - 여권 영문 이름 표기법</title>
+<meta name="description" content="한글 이름을 국어의 로마자 표기법에 따라 영문으로 변환. 성씨 관용 표기(Kim, Lee, Park)와 여권용 붙여쓰기·하이픈 표기를 함께 보여주는 무료 도구.">
+<meta name="keywords" content="한글 이름 로마자 변환, 여권 영문 이름, 이름 영어로 변환, 로마자 표기법, 영문 이름 표기">
+<link rel="canonical" href="https://dailyfreetoolbox.com/romanize.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="한글 이름 로마자 변환기">
+<meta property="og:description" content="한글 이름을 국어의 로마자 표기법에 따라 영문으로 변환. 성씨 관용 표기(Kim, Lee, Park)와 여권용 붙여쓰기·하이픈 표기를 함께 보여주는 무료 도구.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/romanize.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "한글 이름 로마자 변환기", "url": "https://dailyfreetoolbox.com/romanize.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "한글 이름을 국어의 로마자 표기법에 따라 영문으로 변환. 성씨 관용 표기(Kim, Lee, Park)와 여권용 붙여쓰기·하이픈 표기를 함께 보여주는 무료 도구."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2f4a5e; --accent-deep:#223947; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f4a5e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>Aa 한글 이름 로마자 변환기</b></div>
+  <h1>여권에 쓸 영문 이름, 표기법대로 만들어드려요</h1>
+  <p class="sub">국어의 로마자 표기법(문화체육관광부)을 기준으로 변환하고, 여권에서 널리 쓰는 성씨 관용 표기도 함께 보여드려요.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>성</label><input type="text" id="last" placeholder="예: 김" maxlength="4"></div>
+      <div class="field"><label>이름</label><input type="text" id="first" placeholder="예: 민수" maxlength="6"></div>
+    </div>
+    <div id="out" style="margin-top:16px"></div>
+  </div>
+  <div class="card"><h2>알아두면 좋은 점</h2><div class="note" style="font-size:13px;color:var(--ink)">
+    · 이름은 음절 사이의 소리 변화(연음·자음동화 등)를 표기에 반영하지 않아요. <b>복잡한 건 아니고, 글자 그대로 옮긴다</b>는 뜻입니다.<br>
+    · 여권은 이름을 붙여 쓰는 것이 기본이고(예: MINSU), 하이픈(MIN-SU)도 허용돼요. 한 번 정한 표기는 바꾸기 어려우니 신중히 정하세요.<br>
+    · 성씨는 표기법 원칙(Gim, I, Bak)보다 관용 표기(Kim, Lee, Park)가 일반적이며 여권에서도 인정됩니다.
+  </div></div>
+ 
+  <footer>실제 여권 발급 시 외교부 여권 영문 이름 기준을 최종 확인하세요. 이미 발급된 가족의 여권 성 표기와 맞추는 것이 좋습니다.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const CHO=['g','kk','n','d','tt','r','m','b','pp','s','ss','','j','jj','ch','k','t','p','h'];
+const JUNG=['a','ae','ya','yae','eo','e','yeo','ye','o','wa','wae','oe','yo','u','wo','we','wi','yu','eu','ui','i'];
+const JONG=['','k','k','k','n','n','n','t','l','k','m','l','l','t','p','l','m','p','p','t','t','ng','t','t','k','t','p','t'];
+const SURNAME={'김':'Kim','이':'Lee','박':'Park','최':'Choi','정':'Jung','강':'Kang','조':'Cho','윤':'Yoon','장':'Jang','임':'Lim','한':'Han','오':'Oh','서':'Seo','신':'Shin','권':'Kwon','황':'Hwang','안':'Ahn','송':'Song','류':'Ryu','전':'Jeon','홍':'Hong','고':'Ko','문':'Moon','양':'Yang','손':'Son','배':'Bae','백':'Baek','허':'Heo','유':'Yoo','남':'Nam','심':'Shim','노':'Noh','하':'Ha','곽':'Kwak','성':'Sung','차':'Cha','주':'Joo','우':'Woo','구':'Koo','민':'Min','나':'Na','진':'Jin','지':'Ji','엄':'Uhm','채':'Chae','원':'Won','천':'Chun','방':'Bang','공':'Kong','현':'Hyun','함':'Ham','변':'Byun','염':'Yeom','여':'Yeo','추':'Choo','도':'Do','소':'So','석':'Seok','선':'Sun','설':'Seol','마':'Ma','길':'Gil','연':'Yeon','위':'Wi','표':'Pyo','명':'Myung','기':'Ki','반':'Ban','왕':'Wang','금':'Keum','옥':'Ok','육':'Yook','인':'In','맹':'Maeng','제':'Je','모':'Mo','탁':'Tak','국':'Kook','어':'Eo','은':'Eun','편':'Pyun','용':'Yong','남궁':'Namkoong','황보':'Hwangbo','제갈':'Jegal','선우':'Sunwoo','독고':'Dokgo','사공':'Sagong'};
+function syl(ch){ const c=ch.charCodeAt(0)-0xAC00; if(c<0||c>11171) return null; return [Math.floor(c/588), Math.floor(c%588/28), c%28]; }
+function roman(str){ let out=''; for(const ch of str){ const s=syl(ch); if(!s){ out+=ch; continue; } out+=CHO[s[0]]+JUNG[s[1]]+JONG[s[2]]; } return out; }
+function romanSyllables(str){ return [...str].map(ch=>{const s=syl(ch); return s? CHO[s[0]]+JUNG[s[1]]+JONG[s[2]] : ch;}); }
+const cap=s=>s? s[0].toUpperCase()+s.slice(1):'';
+function render(){
+  const last=$('last').value.trim(), first=$('first').value.trim();
+  if(!last&&!first){ $('out').innerHTML='<div class="empty">성과 이름을 한글로 입력하세요</div>'; return; }
+  const lastRule=cap(roman(last)); const lastCommon=SURNAME[last]||lastRule;
+  const parts=romanSyllables(first); const firstJoined=cap(parts.join('')); const firstHyphen=parts.map((p,i)=>i? p:cap(p)).join('-');
+  const rows=[
+    ['여권용 (성 관용 + 이름 붙여쓰기)', `${lastCommon.toUpperCase()} ${firstJoined.toUpperCase()}`],
+    ['성 관용 + 이름 하이픈', `${lastCommon} ${firstHyphen}`],
+    ['표기법 원칙 (성 포함)', `${lastRule} ${firstJoined}`],
+    ['이름 음절별', parts.map(cap).join(' · ')]
+  ];
+  $('out').innerHTML=`<div class="big-result" style="font-size:26px">${lastCommon} ${firstJoined}</div><table style="margin-top:12px"><tbody>${rows.map(r=>`<tr><td>${r[0]}</td><td class="r"><b>${r[1]}</b></td></tr>`).join('')}</tbody></table>`;
+}
+['last','first'].forEach(id=>$(id).addEventListener('input',render)); render();
+let sent=false; $('first').addEventListener('input',()=>{ if(!sent&&$('first').value.length>=2&&typeof gtag==='function'){ gtag('event','romanize_used',{}); sent=true; } });
+ 
+</script>
+
+</body>
+</html>

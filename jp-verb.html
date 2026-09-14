@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>일본어 동사 활용표 - ます형 て형 た형 ない형 자동 변환</title>
+<meta name="description" content="일본어 동사를 입력하면 ます형·て형·た형·ない형·가능형·의지형·명령형·조건형·수동·사역까지 자동으로 활용해주는 무료 도구.">
+<meta name="keywords" content="일본어 동사 활용, ます형, て형, た형, ない형, 일본어 동사 변환, 5단 동사 1단 동사">
+<link rel="canonical" href="https://dailyfreetoolbox.com/jp-verb.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="일본어 동사 활용표">
+<meta property="og:description" content="일본어 동사를 입력하면 ます형·て형·た형·ない형·가능형·의지형·명령형·조건형·수동·사역까지 자동으로 활용해주는 무료 도구.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/jp-verb.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "일본어 동사 활용표", "url": "https://dailyfreetoolbox.com/jp-verb.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "일본어 동사를 입력하면 ます형·て형·た형·ない형·가능형·의지형·명령형·조건형·수동·사역까지 자동으로 활용해주는 무료 도구."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2f4a5e; --accent-deep:#223947; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f4a5e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>活用 일본어 동사 활용표</b></div>
+  <h1>동사 하나 넣으면 활용형 전부 나와요</h1>
+  <p class="sub">사전형이든 활용된 형태든 입력하면 동사 종류(5단·1단·불규칙)를 판별해 주요 활용형 11가지를 만들어 드려요.</p>
+
+  <div class="card">
+    <div class="row"><input type="text" id="input" placeholder="예) 食べる, 行く, 勉強する, 来る" style="flex:1;font-size:18px"><button class="btn" id="run">활용</button></div>
+    <div class="row" style="margin:0;gap:6px" id="examples"></div>
+    <div class="status" id="status"></div>
+  </div>
+  <div id="out"><div class="empty">동사를 입력하면 활용표가 표시돼요</div></div>
+ 
+  <footer>동사 종류 판별은 오픈소스 형태소 분석기 kuromoji를, 활용은 표준 문법 규칙을 사용해요. 존경어·특수 활용(いらっしゃる 등)과 ある의 ない형(ない) 같은 예외는 다르게 나올 수 있습니다.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const EX=['食べる','行く','話す','待つ','読む','泳ぐ','死ぬ','遊ぶ','買う','帰る','勉強する','来る'];
+EX.forEach(w=>{const b=document.createElement('button');b.className='btn-ghost';b.style.padding='5px 10px';b.style.fontSize='12px';b.textContent=w;b.addEventListener('click',()=>{$('input').value=w;run();});$('examples').appendChild(b);});
+// kuromoji worker
+let worker=null, ready=false, pending=null;
+function ensure(){ if(worker) return; const code=`self.importScripts("https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js");let tk=null;kuromoji.builder({dicPath:"https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/"}).build(function(e,t){if(e){postMessage({type:'err'});return;}tk=t;postMessage({type:'ready'});});onmessage=function(e){if(!tk)return;const ts=tk.tokenize(e.data.text).map(function(t){return{s:t.surface_form,b:t.basic_form,pos:t.pos,ct:t.conjugated_type,r:t.reading||''};});postMessage({type:'tokens',tokens:ts});};`;
+  worker=new Worker(URL.createObjectURL(new Blob([code],{type:'application/javascript'})));
+  worker.onmessage=e=>{const d=e.data; if(d.type==='ready'){ready=true;$('status').textContent='';if(pending){worker.postMessage({text:pending});pending=null;}} else if(d.type==='err'){$('status').textContent='사전 로딩 실패. 새로고침 해주세요.';} else if(d.type==='tokens'){render(d.tokens);}};
+}
+const KATA2HIRA=s=>s.replace(/[\u30a1-\u30f6]/g,c=>String.fromCharCode(c.charCodeAt(0)-0x60));
+const ROW={'カ':'かきくけこ','ガ':'がぎぐげご','サ':'さしすせそ','タ':'たちつてと','ナ':'なにぬねの','バ':'ばびぶべぼ','マ':'まみむめも','ラ':'らりるれろ','ワ':'わいうえお'};
+const TE={'カ':['いて','いた'],'ガ':['いで','いだ'],'サ':['して','した'],'タ':['って','った'],'ナ':['んで','んだ'],'バ':['んで','んだ'],'マ':['んで','んだ'],'ラ':['って','った'],'ワ':['って','った']};
+function conj(base, ct){
+  const F={};
+  if(/サ変/.test(ct)){ const stem=base.replace(/する$/,''); Object.assign(F,{'사전형':base,'ます형':stem+'します','ない형':stem+'しない','て형':stem+'して','た형':stem+'した','가능형':stem+'できる','의지형':stem+'しよう','명령형':stem+'しろ','조건형(ば)':stem+'すれば','수동형':stem+'される','사역형':stem+'させる','금지형':base+'な'}); return {type:'불규칙 (サ変)',F}; }
+  if(/カ変/.test(ct)||base==='来る'){ const k=base.startsWith('来')?'来':'く'; Object.assign(F,{'사전형':base,'ます형':k+'ます'+(k==='来'?' (きます)':''),'ない형':k+'ない'+(k==='来'?' (こない)':''),'て형':k+'て'+(k==='来'?' (きて)':''),'た형':k+'た'+(k==='来'?' (きた)':''),'가능형':k+'られる'+(k==='来'?' (こられる)':''),'의지형':k+'よう'+(k==='来'?' (こよう)':''),'명령형':k+'い'+(k==='来'?' (こい)':''),'조건형(ば)':k+'れば'+(k==='来'?' (くれば)':''),'수동형':k+'られる'+(k==='来'?' (こられる)':''),'사역형':k+'させる'+(k==='来'?' (こさせる)':''),'금지형':base+'な'}); return {type:'불규칙 (カ変)',F}; }
+  if(/一段/.test(ct)){ const stem=base.slice(0,-1); Object.assign(F,{'사전형':base,'ます형':stem+'ます','ない형':stem+'ない','て형':stem+'て','た형':stem+'た','가능형':stem+'られる','의지형':stem+'よう','명령형':stem+'ろ','조건형(ば)':stem+'れば','수동형':stem+'られる','사역형':stem+'させる','금지형':base+'な'}); return {type:'1단 동사',F}; }
+  const m=ct.match(/五段・(.)行/); if(!m) return null;
+  const row=m[1]==='ワ'&&/ワ行促音便/.test(ct)?'ワ':m[1]; const r=ROW[row]; if(!r) return null;
+  const stem=base.slice(0,-1); const a=row==='ワ'?'わ':r[0]; const i=r[1], e=r[3], o=r[4];
+  let [te,ta]=TE[row]; if(base==='行く'||base==='いく'){ te='って'; ta='った'; }
+  Object.assign(F,{'사전형':base,'ます형':stem+i+'ます','ない형':stem+a+'ない','て형':stem+te,'た형':stem+ta,'가능형':stem+e+'る','의지형':stem+o+'う','명령형':stem+e,'조건형(ば)':stem+e+'ば','수동형':stem+a+'れる','사역형':stem+a+'せる','금지형':base+'な'});
+  return {type:'5단 동사 ('+row+'행)',F};
+}
+function render(tokens){
+  const v=tokens.find(t=>t.pos==='動詞')||tokens.find(t=>t.pos==='名詞'&&tokens.some(x=>x.b==='する'));
+  if(!v){ $('out').innerHTML='<div class="empty">동사를 찾지 못했어요. 사전형(예: 食べる)으로 입력해보세요.</div>'; return; }
+  let base=v.b&&v.b!=='*'?v.b:v.s, ct=v.ct||'';
+  if(v.pos==='名詞'){ base=v.s+'する'; ct='サ変・スル'; }
+  const res=conj(base, ct);
+  if(!res){ $('out').innerHTML='<div class="empty">이 동사의 활용 종류를 판별하지 못했어요.</div>'; return; }
+  const reading=v.r&&v.r!=='*'?KATA2HIRA(v.r):'';
+  $('out').innerHTML=`<div class="card"><div class="big-result" style="font-size:24px">${base}<small>${reading} · ${res.type}</small></div>
+    <table style="margin-top:12px"><tbody>${Object.entries(res.F).map(([k,f])=>`<tr><td style="width:36%">${k}</td><td><b style="font-size:16px">${f}</b></td></tr>`).join('')}</tbody></table></div>`;
+  if(typeof gtag==='function') gtag('event','jp_verb_conjugated',{type:res.type});
+}
+function run(){ const text=$('input').value.trim(); if(!text) return; ensure(); if(ready) worker.postMessage({text}); else { pending=text; $('status').textContent='일본어 사전을 불러오는 중이에요… (처음 한 번, 최대 30초)'; } }
+$('run').addEventListener('click',run); $('input').addEventListener('keydown',e=>{if(e.key==='Enter')run();});
+ 
+</script>
+
+</body>
+</html>

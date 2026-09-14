@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>평단가 계산기 - 주식 코인 여러 번 매수 평균 단가 계산</title>
+<meta name="description" content="여러 번 나눠 산 주식·코인의 평균 매수 단가와 총 수량, 현재가 대비 수익률을 계산하는 무료 평단가 계산기.">
+<meta name="keywords" content="평단가 계산기, 주식 평단가 계산, 코인 평단가, 평균 매수 단가, 수익률 계산기">
+<link rel="canonical" href="https://dailyfreetoolbox.com/avgprice.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="평단가 계산기">
+<meta property="og:description" content="여러 번 나눠 산 주식·코인의 평균 매수 단가와 총 수량, 현재가 대비 수익률을 계산하는 무료 평단가 계산기.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/avgprice.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "평단가 계산기", "url": "https://dailyfreetoolbox.com/avgprice.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "여러 번 나눠 산 주식·코인의 평균 매수 단가와 총 수량, 현재가 대비 수익률을 계산하는 무료 평단가 계산기."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2c3e5e; --accent-deep:#202d45; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2c3e5e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>📈 평단가 계산기</b></div>
+  <h1>나눠 산 만큼 평단은 어디일까요</h1>
+  <p class="sub">매수 내역을 줄 단위로 넣으면 평균 단가와 총 투자금이 나와요. 현재가를 넣으면 수익률과 평가손익까지.</p>
+
+  <div class="card">
+    <table><thead><tr><th>매수가</th><th>수량</th><th></th></tr></thead><tbody id="rows"></tbody></table>
+    <div class="btn-row"><button class="btn-ghost" id="add">+ 매수 추가</button></div>
+    <div class="grid2" style="margin-top:14px"><div class="field"><label>현재가 (선택)</label><input type="number" id="cur" placeholder="예: 72000" step="any"></div><div class="field"><label>수수료 (선택, %)</label><input type="number" id="fee" value="0" step="0.01" min="0"></div></div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ 
+  <footer>세금(거래세·양도세)은 반영하지 않으며, 투자 판단의 참고 자료일 뿐이에요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const fmt=n=>Number.isInteger(n)? n.toLocaleString() : n.toLocaleString(undefined,{maximumFractionDigits:4});
+function addRow(p='',q=''){ const tr=document.createElement('tr'); tr.innerHTML=`<td><input type="number" class="p" value="${p}" placeholder="가격" step="any" style="padding:8px"></td><td><input type="number" class="q" value="${q}" placeholder="수량" step="any" style="padding:8px"></td><td class="r"><button class="btn-ghost del" style="padding:6px 10px">×</button></td>`; $('rows').appendChild(tr); tr.querySelector('.del').addEventListener('click',()=>{tr.remove();calc();}); tr.querySelectorAll('input').forEach(i=>i.addEventListener('input',calc)); }
+function calc(){
+  let cost=0, qty=0; document.querySelectorAll('#rows tr').forEach(tr=>{ const p=+tr.querySelector('.p').value, q=+tr.querySelector('.q').value; if(p>0&&q>0){ cost+=p*q; qty+=q; } });
+  if(!qty){ $('out').innerHTML='<div class="empty">매수가와 수량을 입력하세요</div>'; return; }
+  const fee=(+$('fee').value||0)/100; const avg=cost/qty; const avgFee=avg*(1+fee); const cur=+$('cur').value;
+  let extra=''; if(cur>0){ const val=cur*qty*(1-fee), pl=val-cost*(1+fee), pct=pl/(cost*(1+fee))*100; extra=`<tr><td>평가금액</td><td class="r">${fmt(Math.round(val))}</td></tr><tr><td>평가손익</td><td class="r ${pl>=0?'ok':'bad'}"><b>${pl>=0?'+':''}${fmt(Math.round(pl))} (${pct>=0?'+':''}${pct.toFixed(2)}%)</b></td></tr>`; }
+  $('out').innerHTML=`<div class="big-result">${fmt(Math.round(avg*100)/100)}<small>평균 매수 단가</small></div><table style="margin-top:12px"><tbody><tr><td>총 수량</td><td class="r">${fmt(qty)}</td></tr><tr><td>총 매수금액</td><td class="r">${fmt(Math.round(cost))}</td></tr>${fee?`<tr><td>수수료 반영 평단</td><td class="r">${fmt(Math.round(avgFee*100)/100)}</td></tr>`:''}${extra}</tbody></table>`;
+}
+$('add').addEventListener('click',()=>addRow()); ['cur','fee'].forEach(id=>$(id).addEventListener('input',calc));
+addRow(70000,10); addRow(65000,10); calc();
+let sent=false; $('rows').addEventListener('input',()=>{ if(!sent&&typeof gtag==='function'){ gtag('event','avgprice_calculated',{}); sent=true; } });
+ 
+</script>
+
+</body>
+</html>

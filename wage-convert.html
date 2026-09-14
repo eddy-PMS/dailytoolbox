@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>시급 월급 연봉 변환기 - 시급으로 월급, 연봉으로 시급 계산</title>
+<meta name="description" content="시급·일급·주급·월급·연봉 중 하나를 넣으면 나머지를 모두 변환해주는 무료 계산기. 주 40시간·월 209시간 기준.">
+<meta name="keywords" content="시급 월급 변환, 연봉 시급 계산, 월급 시급 환산, 시급 연봉 계산, 209시간">
+<link rel="canonical" href="https://dailyfreetoolbox.com/wage-convert.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="시급 월급 연봉 변환기">
+<meta property="og:description" content="시급·일급·주급·월급·연봉 중 하나를 넣으면 나머지를 모두 변환해주는 무료 계산기. 주 40시간·월 209시간 기준.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/wage-convert.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "시급 월급 연봉 변환기", "url": "https://dailyfreetoolbox.com/wage-convert.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "시급·일급·주급·월급·연봉 중 하나를 넣으면 나머지를 모두 변환해주는 무료 계산기. 주 40시간·월 209시간 기준."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#3b6d8a; --accent-deep:#2a5168; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#3b6d8a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>↔ 시급·월급·연봉 변환기</b></div>
+  <h1>하나만 넣으면 전부 환산돼요</h1>
+  <p class="sub">주 소정근로시간을 기준으로 시급↔일급↔주급↔월급↔연봉을 서로 바꿔요. 월급은 주휴시간을 포함한 월 209시간(주 40시간 기준)으로 계산합니다.</p>
+
+  <div class="card">
+    <div class="row"><label>주 근무시간 <input class="inline" type="number" id="weekly" value="40" min="1" max="60" style="width:70px"> 시간</label><label><input type="checkbox" id="juhyu" checked> 주휴수당 포함 (주 15시간 이상)</label></div>
+    <div class="grid2">
+      <div class="field"><label>시급</label><div class="unit"><input type="number" id="hour" placeholder="10320"><span>원</span></div></div>
+      <div class="field"><label>일급 (8시간)</label><div class="unit"><input type="number" id="day"><span>원</span></div></div>
+      <div class="field"><label>주급</label><div class="unit"><input type="number" id="week"><span>원</span></div></div>
+      <div class="field"><label>월급</label><div class="unit"><input type="number" id="month"><span>원</span></div></div>
+      <div class="field"><label>연봉</label><div class="unit"><input type="number" id="year"><span>원</span></div></div>
+    </div>
+    <div class="note" id="info"></div>
+  </div>
+ 
+  <footer>세전 기준이며 상여·수당·세금은 포함하지 않아요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+let lock=false;
+function monthHours(){ const w=+$('weekly').value||40; const j= $('juhyu').checked&&w>=15? Math.min(w,40)/40*8:0; return (w+j)*365/7/12; }
+function from(src){
+  if(lock) return; lock=true; const w=+$('weekly').value||40, mh=monthHours(); const v=+$(src).value;
+  let hour; if(src==='hour') hour=v; else if(src==='day') hour=v/8; else if(src==='week') hour=v/(w+($('juhyu').checked&&w>=15?Math.min(w,40)/40*8:0)); else if(src==='month') hour=v/mh; else hour=v/mh/12;
+  const set=(id,val)=>{ if(id!==src) $(id).value=Math.round(val); };
+  set('hour',hour); set('day',hour*8); set('week',hour*(w+($('juhyu').checked&&w>=15?Math.min(w,40)/40*8:0))); set('month',hour*mh); set('year',hour*mh*12);
+  $('info').textContent=`월 환산 시간 ${mh.toFixed(1)}시간 (주 ${w}시간${$('juhyu').checked&&w>=15?' + 주휴 '+ (Math.min(w,40)/40*8).toFixed(1)+'시간':''}) · 2026 최저시급 10,320원 = 월 2,156,880원`;
+  lock=false;
+}
+['hour','day','week','month','year'].forEach(id=>$(id).addEventListener('input',()=>from(id)));
+['weekly','juhyu'].forEach(id=>$(id).addEventListener('input',()=>{ if($('hour').value) from('hour'); }));
+$('hour').value=10320; from('hour');
+let sent=false; document.querySelector('.card').addEventListener('input',()=>{ if(!sent&&typeof gtag==='function'){ gtag('event','wage_converted',{}); sent=true; } });
+ 
+</script>
+
+</body>
+</html>

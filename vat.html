@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>부가세 계산기 - 공급가액·부가세·합계금액 상호 변환</title>
+<meta name="description" content="금액 하나만 넣으면 공급가액, 부가세(10%), 합계금액을 서로 변환해주는 무료 계산기. 세금계산서·견적서 작성에 유용.">
+<meta name="keywords" content="부가세 계산기, 부가가치세 계산, 공급가액 계산, 부가세 포함 금액, 세금계산서 부가세">
+<link rel="canonical" href="https://dailyfreetoolbox.com/vat.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="부가세 계산기">
+<meta property="og:description" content="금액 하나만 넣으면 공급가액, 부가세(10%), 합계금액을 서로 변환해주는 무료 계산기. 세금계산서·견적서 작성에 유용.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/vat.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "부가세 계산기", "url": "https://dailyfreetoolbox.com/vat.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "금액 하나만 넣으면 공급가액, 부가세(10%), 합계금액을 서로 변환해주는 무료 계산기. 세금계산서·견적서 작성에 유용."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#3b6d8a; --accent-deep:#2a5168; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#3b6d8a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>₩ 부가세 계산기</b></div>
+  <h1>공급가액 ↔ 합계금액, 어느 쪽이든 넣으세요</h1>
+  <p class="sub">아는 금액 하나만 입력하면 나머지가 자동으로 채워져요. 부가세율은 기본 10%이고 바꿀 수 있습니다.</p>
+
+  <div class="card">
+    <div class="row"><label>부가세율 <input class="inline" type="number" id="rate" value="10" step="0.5" min="0" style="width:70px"> %</label>
+      <label>원 단위 <select id="round" style="width:auto;padding:5px 8px;font-size:13px"><option value="round">반올림</option><option value="floor">절사</option><option value="ceil">올림</option></select></label></div>
+    <div class="grid2">
+      <div class="field"><label>공급가액 (부가세 별도)</label><div class="unit"><input type="number" id="supply" placeholder="예: 1000000"><span>원</span></div></div>
+      <div class="field"><label>부가세</label><div class="unit"><input type="number" id="vat" placeholder="자동"><span>원</span></div></div>
+      <div class="field"><label>합계금액 (부가세 포함)</label><div class="unit"><input type="number" id="total" placeholder="예: 1100000"><span>원</span></div></div>
+    </div>
+    <div id="out" class="note" style="font-size:14px;color:var(--ink);margin-top:14px"></div>
+  </div>
+ 
+  <footer>일반과세자 기준(10%). 간이과세자는 업종별 부가가치율이 적용되어 계산이 다릅니다.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const won=n=>Math.round(n).toLocaleString('ko-KR')+'원';
+let lock=false;
+function rnd(n){const m=$('round').value; return m==='floor'?Math.floor(n):m==='ceil'?Math.ceil(n):Math.round(n);}
+function from(src){
+  if(lock) return; lock=true;
+  const r=(+$('rate').value||0)/100; const v=+$(src).value;
+  let s,t,vat;
+  if(src==='supply'){ s=v; vat=rnd(s*r); t=s+vat; }
+  else if(src==='total'){ t=v; s=rnd(t/(1+r)); vat=t-s; }
+  else { vat=v; s= r>0? rnd(vat/r):0; t=s+vat; }
+  if(src!=='supply') $('supply').value=s; if(src!=='total') $('total').value=t; if(src!=='vat') $('vat').value=vat;
+  $('out').innerHTML= isNaN(v)||v===0? '' : `공급가액 <b>${won(s)}</b> + 부가세 <b>${won(vat)}</b> = 합계 <b>${won(t)}</b>`;
+  lock=false;
+  if(typeof gtag==='function') gtag('event','vat_calculated',{src});
+}
+['supply','vat','total'].forEach(id=>$(id).addEventListener('input',()=>from(id)));
+['rate','round'].forEach(id=>$(id).addEventListener('input',()=>from('supply')));
+ 
+</script>
+
+</body>
+</html>

@@ -5,17 +5,20 @@
   var GROUPS = [
     { label: '중국어', items: [
       ['pinyin.html', '병음 변환기'],
+      ['hanja.html', '한자 음훈 조회'],
       ['chinese-convert.html', '간체↔번체 변환'],
       ['tone-drill.html', '성조 훈련'],
       ['hsk-test.html', 'HSK 레벨 테스트']
     ]},
     { label: '일본어', items: [
       ['furigana.html', '후리가나 표시기'],
+      ['jp-verb.html', '동사 활용표'],
       ['kana-quiz.html', '가나 퀴즈'],
       ['jlpt-test.html', 'JLPT 레벨 테스트']
     ]},
     { label: '영어', items: [
       ['ipa.html', 'IPA 발음 변환'],
+      ['sentence.html', '문장 구조 분석'],
       ['level-test.html', '영어 레벨 테스트'],
       ['readability.html', '지문 난이도 체커'],
       ['etymology.html', '어원 분석기'],
@@ -27,7 +30,69 @@
       ['tts.html', '발음 듣기'],
       ['dictation.html', '받아쓰기 연습'],
       ['wordlist.html', '단어장 추출기'],
-      ['stroke-order.html', '한자 획순']
+      ['stroke-order.html', '한자 획순'],
+      ['romanize.html', '이름 로마자 변환']
+    ]},
+    { label: '생활', items: [
+      ['salary.html', '연봉 실수령액'],
+      ['severance.html', '퇴직금 계산기'],
+      ['loan.html', '대출 이자 계산기'],
+      ['vat.html', '부가세 계산기'],
+      ['age.html', '만 나이 계산기'],
+      ['dday.html', 'D-day 계산기'],
+      ['charcount.html', '글자수 세기'],
+      ['image-compress.html', '이미지 용량 줄이기'],
+      ['qrcode.html', 'QR코드 생성기'],
+      ['myip.html', '내 IP 주소 확인'],
+      ['ipgeo.html', 'IP 위치 조회'],
+      ['unit.html', '단위 변환기'],
+      ['exchange.html', '환율 계산기'],
+      ['rent.html', '전월세·중개수수료'],
+      ['lotto.html', '로또 번호 생성기'],
+      ['password.html', '비밀번호 생성기']
+    ]},
+    { label: '가족', items: [
+      ['pregnancy.html', '출산예정일·임신 주수'],
+      ['ovulation.html', '배란일·가임기'],
+      ['baby-age.html', '아기 개월수·백일·돌'],
+      ['pet-age.html', '강아지·고양이 나이']
+    ]},
+    { label: '직장·사업', items: [
+      ['parttime.html', '알바 급여 계산기'],
+      ['annual-leave.html', '연차 계산기'],
+      ['wage-convert.html', '시급·월급·연봉 변환'],
+      ['unemployment.html', '실업급여 계산기'],
+      ['freelancer-tax.html', '3.3% 프리랜서 세금'],
+      ['margin.html', '마진율 계산기'],
+      ['platform-fee.html', '카드·배달앱 수수료']
+    ]},
+    { label: '학생', items: [
+      ['gpa.html', '학점 계산기'],
+      ['school-grade.html', '내신 등급 계산기'],
+      ['pomodoro.html', '뽀모도로 타이머']
+    ]},
+    { label: '게임·재미', items: [
+      ['sens.html', '마우스 감도 변환기'],
+      ['reaction.html', '반응속도 테스트'],
+      ['typing.html', '타자 속도 테스트'],
+      ['ladder.html', '사다리타기'],
+      ['team.html', '팀 나누기'],
+      ['random-pick.html', '랜덤 뽑기']
+    ]},
+    { label: '군대', items: [
+      ['discharge.html', '전역일 계산기'],
+      ['military-savings.html', '군적금 만기 계산기']
+    ]},
+    { label: '헬스', items: [
+      ['onerm.html', '1RM 계산기'],
+      ['macros.html', '단백질·칼로리 계산기'],
+      ['bmi.html', 'BMI·체지방률'],
+      ['pace.html', '러닝 페이스 계산기']
+    ]},
+    { label: '재테크', items: [
+      ['avgprice.html', '평단가 계산기'],
+      ['avgdown.html', '물타기 계산기'],
+      ['compound.html', '복리·적금 계산기']
     ]}
   ];
 

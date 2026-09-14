@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>군적금 만기 계산기 - 장병내일준비적금 전역 시 수령액</title>
+<meta name="description" content="장병내일준비적금 월 납입액과 복무기간을 넣으면 정부 매칭지원금과 이자를 더한 전역 시 예상 수령액을 계산하는 무료 계산기.">
+<meta name="keywords" content="군적금 계산기, 장병내일준비적금 계산, 군적금 만기 수령액, 군적금 매칭지원금, 군적금 이자">
+<link rel="canonical" href="https://dailyfreetoolbox.com/military-savings.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="군적금 만기 계산기">
+<meta property="og:description" content="장병내일준비적금 월 납입액과 복무기간을 넣으면 정부 매칭지원금과 이자를 더한 전역 시 예상 수령액을 계산하는 무료 계산기.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/military-savings.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "군적금 만기 계산기", "url": "https://dailyfreetoolbox.com/military-savings.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "장병내일준비적금 월 납입액과 복무기간을 넣으면 정부 매칭지원금과 이자를 더한 전역 시 예상 수령액을 계산하는 무료 계산기."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2c3e5e; --accent-deep:#202d45; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2c3e5e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>₩ 군적금 만기 계산기</b></div>
+  <h1>전역할 때 통장에 얼마가 들어올까요</h1>
+  <p class="sub">장병내일준비적금은 본인 납입액에 정부가 같은 금액을 매칭해줘요(2026년 월 최대 55만원). 이자와 매칭지원금을 합친 예상 수령액을 계산합니다.</p>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>월 납입액</label><div class="unit"><input type="number" id="monthly" value="550000" step="10000" min="0" max="550000"><span>원</span></div></div>
+      <div class="field"><label>납입 개월 수</label><select id="months"><option value="18">18개월 (육군·해병대)</option><option value="20">20개월 (해군)</option><option value="21">21개월 (공군·사회복무)</option></select></div>
+      <div class="field"><label>은행 금리 (연, 우대 포함)</label><div class="unit"><input type="number" id="rate" value="5.0" step="0.1" min="0"><span>%</span></div></div>
+      <div class="field"><label>정부 매칭 비율</label><div class="unit"><input type="number" id="match" value="100" step="10" min="0" max="100"><span>%</span></div></div>
+    </div>
+    <div class="btn-row"><button class="btn" id="calc">계산하기</button></div>
+  </div>
+  <div id="out"></div>
+ 
+  <footer>2026년 제도 기준(월 한도 55만원, 매칭 100%). 제도는 매년 바뀔 수 있으니 국방부·가입 은행 안내를 확인하세요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const won=n=>Math.round(n).toLocaleString('ko-KR')+'원';
+function calc(){
+  const m=Math.min(+$('monthly').value||0,550000), n=+$('months').value, r=(+$('rate').value||0)/100, mt=(+$('match').value||0)/100;
+  const principal=m*n;
+  let interest=0; for(let i=1;i<=n;i++){ interest+= m*r*(n-i+1)/12; } // 단리 적금 이자
+  const matching=principal*mt;
+  const total=principal+interest+matching;
+  $('out').innerHTML=`<div class="card"><div class="big-result">${won(total)}<small>전역 시 예상 수령액</small></div>
+    <table style="margin-top:12px"><tbody>
+      <tr><td>본인 납입 원금</td><td class="r">${won(principal)}</td></tr>
+      <tr><td>은행 이자 (연 ${(r*100).toFixed(1)}%, 비과세)</td><td class="r">${won(interest)}</td></tr>
+      <tr><td>정부 매칭지원금 (${(mt*100).toFixed(0)}%)</td><td class="r">${won(matching)}</td></tr>
+      <tr><td><b>합계</b></td><td class="r"><b>${won(total)}</b></td></tr>
+    </tbody></table>
+    <div class="note">매칭지원금은 전역 후 은행에서 전역 확인서를 제출해야 지급돼요. 이자는 적금 단리 방식으로 계산했고, 실제 금리·비과세 조건은 가입 은행과 가입 시점에 따라 달라요. 월 납입 한도는 2026년 기준 55만원입니다.</div></div>`;
+  if(typeof gtag==='function') gtag('event','military_savings_calculated',{monthly:m,months:n});
+}
+$('calc').addEventListener('click',calc); calc();
+ 
+</script>
+
+</body>
+</html>

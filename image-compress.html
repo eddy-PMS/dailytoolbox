@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>이미지 용량 줄이기 - 사진 압축·리사이즈·JPG WEBP 변환 무료</title>
+<meta name="description" content="브라우저에서 바로 사진 용량을 줄이고 크기를 조절하고 JPG·PNG·WEBP로 변환하는 무료 도구. 업로드 없이 내 기기에서 처리.">
+<meta name="keywords" content="이미지 용량 줄이기, 사진 압축, 이미지 리사이즈, jpg 변환, webp 변환, 이미지 압축 사이트">
+<link rel="canonical" href="https://dailyfreetoolbox.com/image-compress.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="이미지 용량 줄이기">
+<meta property="og:description" content="브라우저에서 바로 사진 용량을 줄이고 크기를 조절하고 JPG·PNG·WEBP로 변환하는 무료 도구. 업로드 없이 내 기기에서 처리.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/image-compress.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "이미지 용량 줄이기", "url": "https://dailyfreetoolbox.com/image-compress.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "브라우저에서 바로 사진 용량을 줄이고 크기를 조절하고 JPG·PNG·WEBP로 변환하는 무료 도구. 업로드 없이 내 기기에서 처리."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#6b3f56; --accent-deep:#502f40; }</style>
+
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#6b3f56"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🖼 이미지 용량 줄이기</b></div>
+  <h1>사진을 올리면 이 자리에서 바로 줄여드려요</h1>
+  <p class="sub">서버로 업로드하지 않고 브라우저 안에서 처리해요. 품질과 최대 크기를 조절하고 JPG·WEBP·PNG로 저장할 수 있습니다.</p>
+
+  <div class="card">
+    <input type="file" id="file" accept="image/*" multiple style="font-size:14px">
+    <div class="row" style="margin-top:12px">
+      <label>품질 <input type="range" id="q" min="0.3" max="1" step="0.05" value="0.8"> <span id="qv">80%</span></label>
+      <label>최대 가로/세로 <input class="inline" type="number" id="max" value="1920" min="100" step="10" style="width:80px"> px</label>
+      <label>형식 <select id="fmt" style="width:auto;padding:5px 8px;font-size:13px"><option value="image/jpeg">JPG</option><option value="image/webp">WEBP</option><option value="image/png">PNG</option></select></label>
+    </div>
+    <div class="btn-row"><button class="btn" id="run">압축하기</button><button class="btn-ghost hidden" id="dlAll">전체 저장</button></div>
+    <div class="status" id="status"></div>
+  </div>
+  <div id="list"></div>
+ 
+  <footer>사진은 내 기기 안에서만 처리되며 어디에도 업로드되지 않아요. PNG는 무손실이라 용량이 크게 줄지 않을 수 있습니다.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+$('q').addEventListener('input',()=>$('qv').textContent=Math.round($('q').value*100)+'%');
+const kb=n=>n>1048576? (n/1048576).toFixed(2)+' MB' : Math.round(n/1024)+' KB';
+let results=[];
+function load(file){ return new Promise((res,rej)=>{ const img=new Image(); img.onload=()=>res(img); img.onerror=rej; img.src=URL.createObjectURL(file); }); }
+async function compress(file){
+  const img=await load(file); const max=+$('max').value||1920; const fmt=$('fmt').value; const q=+$('q').value;
+  let w=img.naturalWidth, h=img.naturalHeight; const scale=Math.min(1, max/Math.max(w,h)); w=Math.round(w*scale); h=Math.round(h*scale);
+  const c=document.createElement('canvas'); c.width=w; c.height=h; const ctx=c.getContext('2d');
+  if(fmt==='image/jpeg'){ ctx.fillStyle='#fff'; ctx.fillRect(0,0,w,h); }
+  ctx.drawImage(img,0,0,w,h);
+  const blob=await new Promise(r=>c.toBlob(r,fmt,q));
+  URL.revokeObjectURL(img.src);
+  const ext=fmt==='image/jpeg'?'jpg':fmt==='image/webp'?'webp':'png';
+  return {name:file.name.replace(/\.[^.]+$/,'')+'_min.'+ext, blob, before:file.size, after:blob.size, w, h, ow:img.naturalWidth, oh:img.naturalHeight};
+}
+$('run').addEventListener('click',async()=>{
+  const files=[...$('file').files]; if(!files.length){ $('status').textContent='이미지를 먼저 선택하세요.'; return; }
+  $('status').textContent='처리 중…'; results=[]; $('list').innerHTML='';
+  for(const f of files){ try{ const r=await compress(f); results.push(r); addCard(r); }catch(e){ $('status').textContent=f.name+' 처리 실패 (지원하지 않는 형식일 수 있어요)'; } }
+  $('status').textContent=`${results.length}개 완료`; $('dlAll').classList.toggle('hidden',results.length<2);
+  if(typeof gtag==='function') gtag('event','image_compressed',{count:results.length});
+});
+function addCard(r){
+  const url=URL.createObjectURL(r.blob); const saved=Math.round((1-r.after/r.before)*100);
+  const div=document.createElement('div'); div.className='card';
+  div.innerHTML=`<div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap"><img src="${url}" style="width:96px;height:96px;object-fit:cover;border-radius:3px;border:1px solid var(--line)">
+    <div style="flex:1;min-width:200px;font-size:14px"><b>${r.name}</b><div class="note">${r.ow}×${r.oh} → ${r.w}×${r.h}<br>${kb(r.before)} → <b class="${saved>0?'ok':'bad'}">${kb(r.after)}</b> (${saved>0?'-'+saved+'%':'+'+(-saved)+'%'})</div></div>
+    <a class="btn" href="${url}" download="${r.name}" style="text-decoration:none">저장</a></div>`;
+  $('list').appendChild(div);
+}
+$('dlAll').addEventListener('click',()=>{ results.forEach((r,i)=>setTimeout(()=>{ const a=document.createElement('a'); a.href=URL.createObjectURL(r.blob); a.download=r.name; a.click(); }, i*300)); });
+ 
+</script>
+
+</body>
+</html>

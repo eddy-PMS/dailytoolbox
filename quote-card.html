@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>감성 문구 카드 생성기 - 인스타 감성 이미지 만들기 무료</title>
+<meta name="description" content="문장을 입력하면 배경·폰트·색을 조합해 인스타그램 감성 문구 카드를 만들어주는 무료 도구. PNG로 저장해 바로 공유할 수 있어요.">
+<meta name="keywords" content="감성 문구 카드 생성기, 인스타 감성 이미지, 명언 카드 만들기, 글귀 이미지 생성, 감성 배경화면 만들기">
+<link rel="canonical" href="https://dailyfreetoolbox.com/quote-card.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="감성 문구 카드 생성기">
+<meta property="og:description" content="문장을 입력하면 배경·폰트·색을 조합해 인스타그램 감성 문구 카드를 만들어주는 무료 도구. PNG로 저장해 바로 공유할 수 있어요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/quote-card.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "감성 문구 카드 생성기", "url": "https://dailyfreetoolbox.com/quote-card.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "문장을 입력하면 배경·폰트·색을 조합해 인스타그램 감성 문구 카드를 만들어주는 무료 도구. PNG로 저장해 바로 공유할 수 있어요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#6b3f56; --accent-deep:#502f40; }</style>
+<style>
+.drop{border:2px dashed var(--line);border-radius:3px;padding:26px;text-align:center;color:var(--ink-soft);font-size:14px;cursor:pointer;background:#fff}
+.drop.over{border-color:var(--accent);background:var(--paper-deep)}
+.flist{margin-top:12px;font-size:14px}.flist .fi{display:flex;align-items:center;gap:10px;padding:8px 10px;border-bottom:1px solid var(--paper-deep)}
+.flist .fi .nm{flex:1;word-break:break-all}.flist .fi small{color:var(--ink-soft)}
+.flist .fi button{padding:4px 8px;font-size:12px}
+</style><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Serif+KR:wght@400;600&family=Gaegu&display=swap"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "내가 만든 이미지가 저장되나요?", "acceptedAnswer": {"@type": "Answer", "text": "이 사이트에는 저장되지 않아요. PNG로 다운로드한 파일만 내 기기에 남아요."}}, {"@type": "Question", "name": "폰트를 더 추가할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "현재는 명조·고딕·손글씨 세 가지예요. 필요한 폰트가 있으면 의견을 남겨주세요."}}, {"@type": "Question", "name": "저작권이 있는 명언을 써도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "짧은 인용은 대체로 문제없지만, 유명 작가의 긴 문장을 출처 없이 상업적으로 쓰는 건 피하세요. 개인 SNS 공유는 통상 문제되지 않아요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#6b3f56"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>✒ 감성 문구 카드 생성기</b></div>
+  <h1>감성 문구 카드 생성기</h1>
+  <p class="tagline">내 문장을, 감성 있게</p>
+  <p class="sub">문장을 넣고 배경·폰트·정렬을 고르면 바로 카드가 만들어져요. PNG로 저장해 인스타그램 스토리나 피드에 올리세요.</p>
+
+  <div class="card">
+    <div class="field"><label>문구</label><textarea id="text" style="min-height:80px;font-size:16px">오늘도 나는
+조금씩 나아가고 있다.</textarea></div>
+    <div class="grid2">
+      <div class="field"><label>작은 글씨 (출처·서명, 선택)</label><input type="text" id="sub" placeholder="- 오늘의 나 -"></div>
+      <div class="field"><label>비율</label><select id="ratio"><option value="1080x1080">정사각 (피드, 1:1)</option><option value="1080x1350" selected>세로 (피드, 4:5)</option><option value="1080x1920">스토리 (9:16)</option></select></div>
+      <div class="field"><label>배경</label><select id="bg"></select></div>
+      <div class="field"><label>폰트 느낌</label><select id="font"><option value="'Noto Serif KR', serif">명조 (차분함)</option><option value="'Noto Sans KR', sans-serif" selected>고딕 (깔끔함)</option><option value="'Gaegu', cursive">손글씨 느낌</option></select></div>
+      <div class="field"><label>글자 크기</label><input type="range" id="size" min="28" max="72" value="44"></div>
+      <div class="field"><label>정렬</label><select id="align"><option value="center" selected>가운데</option><option value="left">왼쪽</option></select></div>
+    </div>
+    <div style="text-align:center;margin-top:16px"><canvas id="cv" style="max-width:100%;border-radius:4px;box-shadow:0 4px 16px rgba(0,0,0,.15)"></canvas></div>
+    <div class="btn-row" style="justify-content:center"><a class="btn" id="dl" download="quote.png">PNG 저장</a></div>
+  </div>
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>감성 문구 카드, 이렇게 활용하세요</h2><p>좋아하는 문장, 오늘 느낀 감정, 다이어리에 적을 법한 한 줄을 넣으면 배경과 폰트가 어우러진 카드로 만들어줘요. 인스타그램 스토리·피드용 정사각형(1:1)과 세로(4:5), 스토리 전용(9:16) 세 가지 비율을 지원해서 바로 올릴 수 있어요. 만든 이미지는 브라우저에서 캔버스로 그려지기 때문에 서버를 거치지 않고 즉시 PNG로 저장돼요.</p><p>짧고 여운 있는 문장이 잘 어울려요. 줄바꿈을 직접 넣으면 그대로 반영되니, 의미 단위로 끊어서 2~4줄 정도로 만들어보세요. 작은 글씨(서명·출처)는 화자를 표시하거나 날짜를 적는 용도로 쓰기 좋아요.</p>
+<h2>배경·폰트 고르는 팁</h2><p><table><thead><tr><th>느낌</th><th>추천 배경</th><th>추천 폰트</th></tr></thead><tbody><tr><td>차분하고 사색적인</td><td>어두운 그레이·네이비</td><td>명조</td></tr><tr><td>따뜻하고 다정한</td><td>버건디·포레스트그린</td><td>고딕 또는 손글씨</td></tr><tr><td>미니멀·깔끔한</td><td>밝은 배경</td><td>고딕</td></tr><tr><td>일기·다이어리 느낌</td><td>어느 배경이든</td><td>손글씨 느낌</td></tr></tbody></table></p>
+<h2>사용 방법</h2><ol><li>문구와 작은 글씨(선택)를 입력하세요. 줄바꿈은 그대로 반영돼요.</li><li>비율·배경·폰트·글자 크기·정렬을 골라 미리보기를 확인하세요.</li><li>"PNG 저장"으로 다운로드해 SNS에 올리세요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>내가 만든 이미지가 저장되나요?</summary><p>이 사이트에는 저장되지 않아요. PNG로 다운로드한 파일만 내 기기에 남아요.</p></details><details><summary>폰트를 더 추가할 수 있나요?</summary><p>현재는 명조·고딕·손글씨 세 가지예요. 필요한 폰트가 있으면 의견을 남겨주세요.</p></details><details><summary>저작권이 있는 명언을 써도 되나요?</summary><p>짧은 인용은 대체로 문제없지만, 유명 작가의 긴 문장을 출처 없이 상업적으로 쓰는 건 피하세요. 개인 SNS 공유는 통상 문제되지 않아요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="kakao-analyzer.html">카카오톡 대화 분석기</a><a href="ascii-art.html">아스키 아트 생성기</a><a href="image-compress.html">이미지 용량 줄이기</a><a href="password.html">비밀번호 생성기</a></div></section>
+  <footer>만든 이미지는 개인 SNS 공유용으로 자유롭게 쓰세요. 저작권이 있는 타인의 문장을 출처 없이 상업적으로 쓰는 건 피해주세요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const BGS=[['#2b2b2b→#4a4a4a','linear'],['#3a3f4a→#1f1d1a','linear'],['#6b3f56→#3a2436','linear'],['#2c3e5e→#152030','linear'],['#2f5d4e→#173327','linear'],['#a83a2c→#5c1f16','linear'],['#f1eee6→#e6e2d6','light'],['#fffdf8→#f1eee6','light']];
+BGS.forEach((b,i)=>{ const o=document.createElement('option'); o.value=i; o.textContent='배경 '+(i+1)+(b[1]==='light'?' (밝은)':' (어두운)'); $('bg').appendChild(o); });
+$('bg').value=2;
+function wrapText(ctx,text,maxWidth){
+  const paras=text.split('\n'); const lines=[];
+  for(const para of paras){ if(!para){ lines.push(''); continue; } let line='';
+    for(const ch of para){ const test=line+ch; if(ctx.measureText(test).width>maxWidth && line){ lines.push(line); line=ch; } else line=test; }
+    lines.push(line);
+  }
+  return lines;
+}
+function draw(){
+  const [w,h]=$('ratio').value.split('x').map(Number); const cv=$('cv'); cv.width=w; cv.height=h; const ctx=cv.getContext('2d');
+  const bi=+$('bg').value; const [colors,type]=BGS[bi]; const [c1,c2]=colors.split('→'); const dark=type==='linear';
+  const grad=ctx.createLinearGradient(0,0,w,h); grad.addColorStop(0,c1); grad.addColorStop(1,c2); ctx.fillStyle=grad; ctx.fillRect(0,0,w,h);
+  ctx.fillStyle= dark? 'rgba(255,255,255,0.95)':'rgba(30,28,25,0.92)';
+  const size=+$('size').value * (w/1080); const font=$('font').value; ctx.font=`${size}px ${font}`;
+  const align=$('align').value; ctx.textAlign= align==='center'?'center':'left'; ctx.textBaseline='middle';
+  const pad=w*0.12; const maxWidth=w-pad*2; const lines=wrapText(ctx,$('text').value,maxWidth);
+  const lh=size*1.5; const totalH=lines.length*lh; let y=h/2-totalH/2+lh/2;
+  const x= align==='center'? w/2 : pad;
+  for(const line of lines){ ctx.fillText(line,x,y); y+=lh; }
+  const sub=$('sub').value.trim(); if(sub){ ctx.font=`${size*0.45}px ${font}`; ctx.fillStyle= dark?'rgba(255,255,255,0.6)':'rgba(30,28,25,0.55)'; ctx.fillText(sub, x, y+lh*0.3); }
+  $('dl').href=cv.toDataURL('image/png');
+}
+document.querySelectorAll('input,select,textarea').forEach(el=>el.addEventListener('input',draw));
+if(document.fonts&&document.fonts.ready) document.fonts.ready.then(draw); else draw();
+let sent=false; $('dl').addEventListener('click',()=>{ if(!sent&&typeof gtag==='function'){ gtag('event','quote_card_created',{}); sent=true; } });
+ 
+</script>
+
+</body>
+</html>

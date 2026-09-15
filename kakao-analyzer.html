@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>카카오톡 대화 분석기 - 말수·답장속도·자주 쓴 단어 통계</title>
+<meta name="description" content="카카오톡 대화 내보내기 파일(txt)을 넣으면 누가 더 많이 말했는지, 답장 속도, 시간대별 대화 패턴, 자주 쓴 단어를 분석해주는 무료 도구. 업로드 없이 브라우저에서 처리.">
+<meta name="keywords" content="카카오톡 대화 분석기, 카톡 대화 분석, 카톡 통계, 카카오톡 채팅 분석, 카톡 대화량 비교, 카톡 답장 속도">
+<link rel="canonical" href="https://dailyfreetoolbox.com/kakao-analyzer.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="카카오톡 대화 분석기">
+<meta property="og:description" content="카카오톡 대화 내보내기 파일(txt)을 넣으면 누가 더 많이 말했는지, 답장 속도, 시간대별 대화 패턴, 자주 쓴 단어를 분석해주는 무료 도구. 업로드 없이 브라우저에서 처리.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/kakao-analyzer.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "카카오톡 대화 분석기", "url": "https://dailyfreetoolbox.com/kakao-analyzer.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "카카오톡 대화 내보내기 파일(txt)을 넣으면 누가 더 많이 말했는지, 답장 속도, 시간대별 대화 패턴, 자주 쓴 단어를 분석해주는 무료 도구. 업로드 없이 브라우저에서 처리."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#b8823a; --accent-deep:#8a5f25; }</style>
+<style>
+.drop{border:2px dashed var(--line);border-radius:3px;padding:26px;text-align:center;color:var(--ink-soft);font-size:14px;cursor:pointer;background:#fff}
+.drop.over{border-color:var(--accent);background:var(--paper-deep)}
+.flist{margin-top:12px;font-size:14px}.flist .fi{display:flex;align-items:center;gap:10px;padding:8px 10px;border-bottom:1px solid var(--paper-deep)}
+.flist .fi .nm{flex:1;word-break:break-all}.flist .fi small{color:var(--ink-soft)}
+.flist .fi button{padding:4px 8px;font-size:12px}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "대화 내용이 서버로 전송되나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 파일은 브라우저 안에서만 읽고 분석하며 어디에도 업로드되지 않아요. 페이지를 닫으면 내용은 완전히 사라져요."}}, {"@type": "Question", "name": "그룹 채팅방도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 참여자별로 카드가 나뉘어 나오지만, 인원이 많으면 카드가 길어져요. 1:1 대화에 최적화되어 있어요."}}, {"@type": "Question", "name": "분석이 이상하게 나와요.", "acceptedAnswer": {"@type": "Answer", "text": "\"텍스트만 보내기\"가 아니라 \"모든 메시지 저장\"으로 내보내면 형식이 달라 인식이 안 될 수 있어요. 텍스트 내보내기로 다시 시도해보세요."}}, {"@type": "Question", "name": "사진이나 이모티콘도 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "메시지 수에는 포함되지만 \"사진\", \"이모티콘\" 같은 표시는 단어 분석에서 제외해요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#b8823a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>💬 카카오톡 대화 분석기</b></div>
+  <h1>카카오톡 대화 분석기</h1>
+  <p class="tagline">우리 둘, 누가 더 많이 말했을까요</p>
+  <p class="sub">카카오톡에서 내보낸 대화 파일을 넣으면 말수·답장 속도·활동 시간대·자주 쓴 단어를 분석해드려요. 파일은 서버로 전송되지 않고 브라우저 안에서만 처리돼요.</p>
+
+  <div class="card">
+    <div class="drop" id="drop">여기에 카카오톡 대화 txt 파일을 끌어다 놓거나 클릭해서 선택<input type="file" id="file" accept=".txt" style="display:none"></div>
+    <details style="margin-top:10px"><summary style="cursor:pointer;font-size:13px;color:var(--ink-soft)">내보내는 방법 (모르면 클릭)</summary>
+      <div class="note" style="margin-top:8px">카카오톡 채팅방 → 우측 상단 메뉴(≡) → 설정(⚙) → 대화 내용 내보내기 → "텍스트만 보내기" 선택 → 나에게 보내기(이메일 등) → 받은 .txt 파일을 여기에 올리세요.</div>
+    </details>
+    <div class="status" id="status"></div>
+  </div>
+  <div id="result"></div>
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>카톡 대화 분석, 뭘 볼 수 있나요</h2><p>카카오톡에서 내보낸 대화 파일에는 날짜·시간·발신자·내용이 그대로 담겨 있어요. 이 도구는 그 파일을 읽어 누가 메시지를 더 많이 보냈는지, 답장까지 걸린 평균 시간, 하루 중 가장 활발한 시간대, 자주 쓴 단어를 정리해줘요. 연인·친구 사이에서 "누가 더 톡을 많이 하나" 재미로 확인하거나, 대화 습관을 돌아보는 용도로 쓰세요.</p><p>답장 속도는 상대가 보낸 뒤 내가 답하기까지 걸린 시간의 평균이에요. 같은 사람이 연속으로 여러 개 보낸 경우(3시간 이내)만 답장으로 계산하고, 그보다 오래 걸리면 새로운 대화 시작으로 봐서 평균이 왜곡되지 않게 했어요.</p>
+<h2>대화 내보내기 방법</h2><p><table><thead><tr><th>단계</th><th>안드로이드</th><th>아이폰</th></tr></thead><tbody><tr><td>1</td><td colspan="2">분석할 채팅방 열기</td></tr><tr><td>2</td><td colspan="2">우측 상단 메뉴(≡) → 설정(⚙)</td></tr><tr><td>3</td><td colspan="2">대화 내용 내보내기</td></tr><tr><td>4</td><td>"텍스트만 보내기" 선택</td><td>"텍스트 메시지만 보내기" 선택</td></tr><tr><td>5</td><td colspan="2">나에게 보내기(이메일 등)로 받은 .txt 파일을 저장</td></tr></tbody></table></p><p>이렇게 받은 파일을 이 페이지에 끌어다 놓으면 바로 분석돼요. 미디어(사진·동영상)는 제외하고 텍스트만 내보내는 게 용량도 작고 분석에 필요한 전부예요.</p>
+<h2>사용 방법</h2><ol><li>카카오톡에서 "텍스트만 보내기"로 대화를 내보내 .txt 파일을 받으세요.</li><li>이 페이지에 파일을 끌어다 놓거나 클릭해서 선택하세요.</li><li>메시지 수, 답장 속도, 활동 시간대, 자주 쓴 단어를 확인하세요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>대화 내용이 서버로 전송되나요?</summary><p>아니요. 파일은 브라우저 안에서만 읽고 분석하며 어디에도 업로드되지 않아요. 페이지를 닫으면 내용은 완전히 사라져요.</p></details><details><summary>그룹 채팅방도 되나요?</summary><p>네. 참여자별로 카드가 나뉘어 나오지만, 인원이 많으면 카드가 길어져요. 1:1 대화에 최적화되어 있어요.</p></details><details><summary>분석이 이상하게 나와요.</summary><p>"텍스트만 보내기"가 아니라 "모든 메시지 저장"으로 내보내면 형식이 달라 인식이 안 될 수 있어요. 텍스트 내보내기로 다시 시도해보세요.</p></details><details><summary>사진이나 이모티콘도 세나요?</summary><p>메시지 수에는 포함되지만 "사진", "이모티콘" 같은 표시는 단어 분석에서 제외해요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="quote-card.html">감성 문구 카드 생성기</a><a href="ladder.html">사다리타기</a><a href="team.html">팀 나누기</a><a href="typing.html">타자 속도 테스트</a></div></section>
+  <footer>분석은 브라우저 안에서만 이루어지고 대화 내용은 어디에도 전송·저장되지 않아요. 1:1 대화 기준으로 최적화되어 있고, 단체 채팅방도 분석되지만 참여자가 많으면 카드가 길어질 수 있어요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+function parse(text){
+  const lines=text.split(/\r?\n/);
+  const re=/^(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\.\s*(오전|오후)\s*(\d{1,2}):(\d{2}),\s*(.+?)\s*:\s*(.*)$/;
+  const msgs=[]; let cur=null;
+  for(const line of lines){
+    const m=line.match(re);
+    if(m){ if(cur) msgs.push(cur);
+      let h=+m[5]; if(m[4]==='오후'&&h!==12) h+=12; if(m[4]==='오전'&&h===12) h=0;
+      const date=new Date(+m[1],+m[2]-1,+m[3],h,+m[6]);
+      cur={date, user:m[7].trim(), text:m[8]};
+    } else if(cur && line.trim() && !/^-+\s*\d{4}년/.test(line)){ cur.text+='\n'+line; }
+  }
+  if(cur) msgs.push(cur);
+  return msgs.filter(m=>!/사진|이모티콘|삭제된 메시지입니다|파일:|동영상/.test(m.text)&&m.text.trim());
+}
+const STOP=new Set('그리고 그래서 근데 그럼 이제 진짜 완전 그냥 나도 나는 이거 저거 그거 아니 아니야 그니까 그러니까 하는 해서 했어 했다 이랑 이랑 그런 저런 이런 것도 거야 거임 인데 하고 하지 해도 근데 그게 뭐야 뭐지 아니면'.split(' '));
+function tokenize(t){ return t.replace(/[^가-힣a-zA-Z0-9\s]/g,' ').split(/\s+/).filter(w=>w.length>=2 && !STOP.has(w)); }
+function analyze(msgs){
+  const users=[...new Set(msgs.map(m=>m.user))];
+  const byUser={}; users.forEach(u=>byUser[u]={count:0,chars:0,words:{},hours:new Array(24).fill(0),replies:[]});
+  let lastUser=null, lastTime=null;
+  msgs.forEach((m,i)=>{
+    const b=byUser[m.user]; b.count++; b.chars+=m.text.length; b.hours[m.date.getHours()]++;
+    tokenize(m.text).forEach(w=>b.words[w]=(b.words[w]||0)+1);
+    if(lastUser && lastUser!==m.user && lastTime){ const diff=(m.date-lastTime)/60000; if(diff>=0 && diff<180) byUser[m.user].replies.push(diff); }
+    lastUser=m.user; lastTime=m.date;
+  });
+  const first=msgs[0].date, last=msgs[msgs.length-1].date; const days=Math.max(1,Math.round((last-first)/86400000));
+  return {users,byUser,total:msgs.length,days,first,last};
+}
+function topWords(obj,n){ return Object.entries(obj).sort((a,b)=>b[1]-a[1]).slice(0,n); }
+function avg(arr){ return arr.length? arr.reduce((a,b)=>a+b,0)/arr.length : null; }
+function fmtMin(m){ if(m==null) return '-'; if(m<1) return '1분 미만'; if(m<60) return Math.round(m)+'분'; return (m/60).toFixed(1)+'시간'; }
+function render(a){
+  const total=a.total; const ranked=a.users.map(u=>({name:u, ...a.byUser[u]})).sort((x,y)=>y.count-x.count);
+  const cards=ranked.map(b=>{ const pct=(b.count/total*100).toFixed(1); const peak=b.hours.indexOf(Math.max(...b.hours)); const words=topWords(b.words,8);
+    return `<div class="card"><h2 style="font-size:16px;color:var(--ink)">${b.name}</h2>
+      <div class="stat-grid"><div class="stat"><div class="num">${b.count.toLocaleString()}</div><div class="label">메시지 수 (${pct}%)</div></div><div class="stat"><div class="num">${Math.round(b.chars/b.count)}</div><div class="label">평균 글자수/메시지</div></div><div class="stat"><div class="num">${fmtMin(avg(b.replies))}</div><div class="label">평균 답장 속도</div></div><div class="stat"><div class="num">${peak}시</div><div class="label">가장 활발한 시간대</div></div></div>
+      <div class="note" style="margin-top:10px">자주 쓴 단어: ${words.map(w=>w[0]+'('+w[1]+')').join(', ')||'-'}</div></div>`; }).join('');
+  const winner=ranked[0];
+  $('result').innerHTML=`<div class="card"><div class="big-result" style="font-size:22px">총 ${total.toLocaleString()}개 메시지<small>${a.first.toLocaleDateString('ko-KR')} ~ ${a.last.toLocaleDateString('ko-KR')} (${a.days}일간)</small></div>
+    <div class="note" style="margin-top:8px">하루 평균 ${Math.round(total/a.days)}개${a.users.length>1?` · <b>${winner.name}</b>가 대화의 ${(winner.count/total*100).toFixed(0)}%를 차지해요`:''}</div></div>
+    ${cards}
+    <div class="note" style="text-align:center">파일은 분석 후 버려지며 어디에도 저장되지 않아요.</div>`;
+}
+function handle(file){
+  if(!file){ return; } $('status').textContent='분석 중…';
+  const reader=new FileReader();
+  reader.onload=e=>{ try{ const msgs=parse(e.target.result); if(msgs.length<5){ $('status').innerHTML='<span class="bad">대화를 충분히 읽지 못했어요. 카카오톡 "텍스트만 보내기"로 내보낸 파일이 맞는지 확인해주세요.</span>'; return; } const a=analyze(msgs); render(a); $('status').textContent=''; if(typeof gtag==='function') gtag('event','kakao_analyzed',{messages:msgs.length,users:a.users.length}); }catch(err){ $('status').innerHTML='<span class="bad">분석에 실패했어요. 파일 형식을 확인해주세요.</span>'; } };
+  reader.readAsText(file,'utf-8');
+}
+$('drop').addEventListener('click',()=>$('file').click()); $('file').addEventListener('change',e=>handle(e.target.files[0]));
+['dragenter','dragover'].forEach(ev=>$('drop').addEventListener(ev,e=>{e.preventDefault();$('drop').classList.add('over');})); ['dragleave','drop'].forEach(ev=>$('drop').addEventListener(ev,e=>{e.preventDefault();$('drop').classList.remove('over');})); $('drop').addEventListener('drop',e=>handle(e.dataTransfer.files[0]));
+ 
+</script>
+
+</body>
+</html>

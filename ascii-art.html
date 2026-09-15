@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>아스키 아트 생성기 - 텍스트로 큰 글자, 이미지로 아스키 아트 변환</title>
+<meta name="description" content="문구를 큰 아스키 글자로 만들거나, 사진을 아스키 문자로 변환하는 무료 도구. 카톡 프사, 커밋 메시지, 터미널 배너에 쓰세요.">
+<meta name="keywords" content="아스키 아트 생성기, 아스키 아트 만들기, 텍스트 아스키 변환, 이미지 아스키 아트, ASCII art generator, 아스키 글자">
+<link rel="canonical" href="https://dailyfreetoolbox.com/ascii-art.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="아스키 아트 생성기">
+<meta property="og:description" content="문구를 큰 아스키 글자로 만들거나, 사진을 아스키 문자로 변환하는 무료 도구. 카톡 프사, 커밋 메시지, 터미널 배너에 쓰세요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/ascii-art.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "아스키 아트 생성기", "url": "https://dailyfreetoolbox.com/ascii-art.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "문구를 큰 아스키 글자로 만들거나, 사진을 아스키 문자로 변환하는 무료 도구. 카톡 프사, 커밋 메시지, 터미널 배너에 쓰세요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#3a3f4a; --accent-deep:#26292f; }</style>
+<style>
+.drop{border:2px dashed var(--line);border-radius:3px;padding:26px;text-align:center;color:var(--ink-soft);font-size:14px;cursor:pointer;background:#fff}
+.drop.over{border-color:var(--accent);background:var(--paper-deep)}
+.flist{margin-top:12px;font-size:14px}.flist .fi{display:flex;align-items:center;gap:10px;padding:8px 10px;border-bottom:1px solid var(--paper-deep)}
+.flist .fi .nm{flex:1;word-break:break-all}.flist .fi small{color:var(--ink-soft)}
+.flist .fi button{padding:4px 8px;font-size:12px}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "한글도 큰 글자로 만들 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "현재 텍스트 모드는 영문·숫자·일부 기호만 지원해요. 한글은 자모 조합이 복잡해 정확한 블록 폰트를 아직 지원하지 않아요."}}, {"@type": "Question", "name": "이미지가 너무 크면 어떻게 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "가로 문자 수를 기준으로 자동 축소해 처리하니 원본 크기와 상관없이 동작해요. 다만 아주 큰 사진은 변환에 몇 초 걸릴 수 있어요."}}, {"@type": "Question", "name": "컬러로 복사하면 색이 유지되나요?", "acceptedAnswer": {"@type": "Answer", "text": "메모장이나 카톡처럼 일반 텍스트로 복사하면 문자만 복사되고 색은 빠져요. 색을 유지하려면 화면을 캡처하세요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#3a3f4a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>▒ 아스키 아트 생성기</b></div>
+  <h1>아스키 아트 생성기</h1>
+  <p class="tagline">글자도, 사진도 문자로</p>
+  <p class="sub">문구를 넣으면 큰 아스키 글자로, 사진을 올리면 명암을 문자로 바꿔드려요. 복사해서 코드 주석, 카톡, 커밋 메시지에 쓰세요.</p>
+
+  <div class="tabs"><button class="tab active" data-t="text">글자 → 아스키</button><button class="tab" data-t="image">이미지 → 아스키</button></div>
+  <div class="card" id="textPane">
+    <div class="grid2">
+      <div class="field"><label>텍스트 (영문·숫자, 짧게)</label><input type="text" id="word" value="HELLO" maxlength="12"></div>
+      <div class="field"><label>글꼴</label><select id="font"></select></div>
+    </div>
+    <pre id="asciiOut" style="background:#1f1d1a;color:#e8e4d8;padding:16px;border-radius:3px;overflow-x:auto;font-size:12px;line-height:1.15;margin-top:12px">준비 중…</pre>
+    <div class="btn-row"><button class="btn-ghost" id="copyText">복사</button></div>
+  </div>
+  <div class="card hidden" id="imagePane">
+    <div class="drop" id="drop">이미지를 끌어다 놓거나 클릭해서 선택<input type="file" id="file" accept="image/*" style="display:none"></div>
+    <div class="grid2" style="margin-top:12px">
+      <div class="field"><label>가로 문자 수 (넓을수록 정밀, 느려짐)</label><input type="number" id="width" value="100" min="30" max="200" step="10"></div>
+      <div class="field"><label>색상</label><select id="mode"><option value="mono">흑백 (텍스트만)</option><option value="color">컬러 (문자에 색 입힘)</option></select></div>
+    </div>
+    <pre id="imgOut" style="background:#1f1d1a;color:#e8e4d8;padding:10px;border-radius:3px;overflow-x:auto;font-size:6px;line-height:0.9;margin-top:12px;white-space:pre"></pre>
+    <div class="btn-row"><button class="btn-ghost" id="copyImg">텍스트 복사</button></div>
+  </div>
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>아스키 아트란</h2><p>아스키 아트는 문자만으로 그림이나 글자 모양을 표현하는 방식이에요. 텍스트 모드는 짧은 단어를 5×5 픽셀 블록 문자로 크게 만들어줘서 터미널 배너, 커밋 메시지, 카톡 프로필 문구, README 파일 제목에 쓰기 좋아요. 이미지 모드는 사진의 밝고 어두운 정도를 문자 농도로 바꿔서, 사진을 문자로만 그린 것처럼 표현해요.</p><p>이미지 변환은 밝은 부분엔 성긴 문자(공백·점), 어두운 부분엔 빽빽한 문자(@, %, #)를 배치하는 원리예요. 가로 문자 수를 늘리면 더 정교해지지만 브라우저가 그리는 데 시간이 더 걸리고, 복사했을 때 줄이 길어져 다른 곳에 붙여넣기 불편할 수 있어요.</p>
+<h2>아스키 아트 활용 예</h2><p><table><thead><tr><th>용도</th><th>추천 설정</th></tr></thead><tbody><tr><td>깃허브 README 제목</td><td>텍스트 모드, 6~8글자 이내</td></tr><tr><td>카톡 대화방 이름/상태메시지</td><td>텍스트 모드, 짧은 단어</td></tr><tr><td>인스타 프로필 배경 느낌</td><td>이미지 모드, 흑백, 너비 60~80</td></tr><tr><td>재미로 출력해보기 (콘솔 등)</td><td>이미지 모드, 흑백, 너비 80~120</td></tr></tbody></table></p>
+<h2>사용 방법</h2><ol><li>텍스트 탭에서 단어(영문·숫자, 최대 12자)를 입력하면 큰 아스키 글자가 만들어져요.</li><li>이미지 탭에서 사진을 올리고 가로 문자 수와 색상 모드를 정하세요.</li><li>"복사"로 결과를 가져가 원하는 곳에 붙여넣으세요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>한글도 큰 글자로 만들 수 있나요?</summary><p>현재 텍스트 모드는 영문·숫자·일부 기호만 지원해요. 한글은 자모 조합이 복잡해 정확한 블록 폰트를 아직 지원하지 않아요.</p></details><details><summary>이미지가 너무 크면 어떻게 되나요?</summary><p>가로 문자 수를 기준으로 자동 축소해 처리하니 원본 크기와 상관없이 동작해요. 다만 아주 큰 사진은 변환에 몇 초 걸릴 수 있어요.</p></details><details><summary>컬러로 복사하면 색이 유지되나요?</summary><p>메모장이나 카톡처럼 일반 텍스트로 복사하면 문자만 복사되고 색은 빠져요. 색을 유지하려면 화면을 캡처하세요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="quote-card.html">감성 문구 카드 생성기</a><a href="kakao-analyzer.html">카카오톡 대화 분석기</a><a href="image-compress.html">이미지 용량 줄이기</a><a href="qrcode.html">QR코드 생성기</a></div></section>
+  <footer>이미지는 브라우저 안에서만 처리되며 서버로 전송되지 않아요. 컬러 모드는 화면에서만 색이 보이고, 일반 텍스트로 복사하면 흑백 문자만 복사돼요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');$('textPane').classList.toggle('hidden',b.dataset.t!=='text');$('imagePane').classList.toggle('hidden',b.dataset.t!=='image');}));
+
+// ---- 텍스트 아스키 (5x5 비트맵 폰트, 대문자+숫자) ----
+const F5={' ':['00000','00000','00000','00000','00000'],
+'A':['01110','10001','11111','10001','10001'],'B':['11110','10001','11110','10001','11110'],'C':['01111','10000','10000','10000','01111'],'D':['11110','10001','10001','10001','11110'],'E':['11111','10000','11110','10000','11111'],'F':['11111','10000','11110','10000','10000'],'G':['01111','10000','10011','10001','01111'],'H':['10001','10001','11111','10001','10001'],'I':['01110','00100','00100','00100','01110'],'J':['00001','00001','00001','10001','01110'],'K':['10001','10010','11100','10010','10001'],'L':['10000','10000','10000','10000','11111'],'M':['10001','11011','10101','10001','10001'],'N':['10001','11001','10101','10011','10001'],'O':['01110','10001','10001','10001','01110'],'P':['11110','10001','11110','10000','10000'],'Q':['01110','10001','10101','10010','01101'],'R':['11110','10001','11110','10010','10001'],'S':['01111','10000','01110','00001','11110'],'T':['11111','00100','00100','00100','00100'],'U':['10001','10001','10001','10001','01110'],'V':['10001','10001','10001','01010','00100'],'W':['10001','10001','10101','10101','01010'],'X':['10001','01010','00100','01010','10001'],'Y':['10001','01010','00100','00100','00100'],'Z':['11111','00010','00100','01000','11111'],
+'0':['01110','10011','10101','11001','01110'],'1':['00100','01100','00100','00100','01110'],'2':['01110','10001','00010','00100','11111'],'3':['11110','00001','00110','00001','11110'],'4':['00010','00110','01010','11111','00010'],'5':['11111','10000','11110','00001','11110'],'6':['00110','01000','11110','10001','01110'],'7':['11111','00010','00100','01000','01000'],'8':['01110','10001','01110','10001','01110'],'9':['01110','10001','01111','00010','01100'],
+'!':['00100','00100','00100','00000','00100'],'?':['01110','10001','00110','00000','00100'],'.':['00000','00000','00000','00000','00100'],',':['00000','00000','00000','00100','01000'],'-':['00000','00000','11111','00000','00000'],"'":['00100','00100','00000','00000','00000']};
+function textAscii(s){
+  s=s.toUpperCase(); const rows=['','','','',''];
+  for(const ch of s){ const g=F5[ch]||F5[' ']; for(let r=0;r<5;r++) rows[r]+= g[r].replace(/1/g,'█').replace(/0/g,' ')+' '; }
+  return rows.join('\n');
+}
+$('font').innerHTML='<option value="block">블록체 (기본)</option>';
+function renderText(){ const w=$('word').value||'HELLO'; $('asciiOut').textContent= textAscii(w.slice(0,12)); }
+$('word').addEventListener('input',renderText); $('font').addEventListener('input',renderText); renderText();
+$('copyText').addEventListener('click',async()=>{ try{ await navigator.clipboard.writeText($('asciiOut').textContent); $('copyText').textContent='복사됨'; setTimeout(()=>$('copyText').textContent='복사',1500);}catch{} if(typeof gtag==='function') gtag('event','ascii_text_created',{}); });
+
+// ---- 이미지 아스키 ----
+const CHARS=' .:-=+*#%@';
+$('drop').addEventListener('click',()=>$('file').click());
+['dragenter','dragover'].forEach(ev=>$('drop').addEventListener(ev,e=>{e.preventDefault();$('drop').classList.add('over');})); ['dragleave','drop'].forEach(ev=>$('drop').addEventListener(ev,e=>{e.preventDefault();$('drop').classList.remove('over');})); $('drop').addEventListener('drop',e=>{e.preventDefault();handleImg(e.dataTransfer.files[0]);});
+$('file').addEventListener('change',e=>handleImg(e.target.files[0]));
+let lastImg=null;
+function handleImg(f){ if(!f) return; lastImg=f; convert(); }
+['width','mode'].forEach(id=>$(id).addEventListener('input',()=>{ if(lastImg) convert(); }));
+function convert(){
+  const img=new Image();
+  img.onload=()=>{
+    const cols=+$('width').value||100; const rows=Math.round(cols*img.naturalHeight/img.naturalWidth*0.5);
+    const c=document.createElement('canvas'); c.width=cols; c.height=rows; const ctx=c.getContext('2d'); ctx.drawImage(img,0,0,cols,rows);
+    const data=ctx.getImageData(0,0,cols,rows).data; const mode=$('mode').value; let html='';
+    for(let y=0;y<rows;y++){ for(let x=0;x<cols;x++){ const i=(y*cols+x)*4; const r=data[i],g=data[i+1],b=data[i+2]; const lum=(0.299*r+0.587*g+0.114*b)/255; const ch=CHARS[Math.min(CHARS.length-1,Math.floor((1-lum)*CHARS.length))];
+        if(mode==='color') html+=`<span style="color:rgb(${r},${g},${b})">${ch===' '?'&nbsp;':ch}</span>`; else html+= ch===' '?'&nbsp;':ch; }
+      html+='\n'; }
+    $('imgOut').innerHTML=html; URL.revokeObjectURL(img.src);
+    if(typeof gtag==='function') gtag('event','ascii_image_created',{cols});
+  };
+  img.src=URL.createObjectURL(lastImg);
+}
+$('copyImg').addEventListener('click',async()=>{ try{ await navigator.clipboard.writeText($('imgOut').textContent); $('copyImg').textContent='복사됨'; setTimeout(()=>$('copyImg').textContent='텍스트 복사',1500);}catch{} });
+ 
+</script>
+
+</body>
+</html>

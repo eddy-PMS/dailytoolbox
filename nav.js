@@ -88,7 +88,10 @@
       ['typing.html', '타자 속도 테스트'],
       ['ladder.html', '사다리타기'],
       ['team.html', '팀 나누기'],
-      ['random-pick.html', '랜덤 뽑기']
+      ['random-pick.html', '랜덤 뽑기'],
+      ['kakao-analyzer.html', '카카오톡 대화 분석기'],
+      ['quote-card.html', '감성 문구 카드'],
+      ['ascii-art.html', '아스키 아트 생성기']
     ]},
     { label: '군대', items: [
       ['discharge.html', '전역일 계산기'],

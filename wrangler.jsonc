@@ -4,12 +4,13 @@
   "compatibility_date": "2026-09-13",
   "assets": {
     "directory": ".",
-    "binding": "ASSETS"
+    "binding": "ASSETS",
+    "run_worker_first": ["/worldcup", "/worldcup.html"]
   },
   "kv_namespaces": [
     {
       "binding": "WORLDCUP_KV",
-      "id": "40d9b75cbf704d93ad53030f6f225439"
+      "id": "여기에_KV_네임스페이스_ID를_붙여넣으세요"
     }
   ]
 }

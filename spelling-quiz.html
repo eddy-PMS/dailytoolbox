@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
 <title>영어 스펠링 퀴즈 생성기 - 내 단어 목록으로 철자 테스트 무료</title>
 <meta name="description" content="단어 목록을 붙여넣으면 발음을 듣거나 뜻을 보고 철자를 입력하는 스펠링 퀴즈를 만들어주는 무료 도구.">
@@ -12,16 +15,20 @@
 <meta property="og:title" content="영어 스펠링 퀴즈 생성기">
 <meta property="og:description" content="내 단어 목록으로 바로 만드는 철자 테스트, 무료">
 <meta property="og:url" content="https://dailyfreetoolbox.com/spelling-quiz.html">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="ko_KR">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication","name":"영어 스펠링 퀴즈 생성기","url":"https://dailyfreetoolbox.com/spelling-quiz.html","applicationCategory":"EducationalApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"},"description":"내 단어 목록으로 바로 만드는 철자 테스트"}
 </script>
 <script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
 <style>
+  /* tool.css 기반 위에 이 페이지 고유 스타일만 덧씌움 */
+  label > select, label > input:not([type="checkbox"]):not([type="radio"]), .row select, .row input:not([type="checkbox"]):not([type="radio"]) { width:auto; padding:6px 8px; font-size:13px; }
   :root { --paper:#f0eee7; --paper-deep:#e6e2d6; --ink:#1e1d1b; --ink-soft:#56534c; --navy:#2c3e5e; --navy-deep:#202d45; --line:#d6d0bf; }
-  * { box-sizing:border-box; }
-  html, body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif; }
-  body { min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:48px 20px 80px; }
   main { width:100%; max-width:640px; }
   .brand { font-size:15px; color:var(--ink-soft); margin-bottom:24px; } .brand b { color:var(--navy); font-weight:700; }
   h1 { font-size:26px; line-height:1.35; margin:0 0 8px; font-weight:700; letter-spacing:-0.01em; }
@@ -49,21 +56,10 @@
   .result-sub { color:var(--ink-soft); font-size:14px; margin:0 0 18px; }
   .missed { font-size:14px; line-height:1.9; }
   .missed li b { color:#a8483a; }
-  .hidden { display:none; }
   footer { margin-top:56px; font-size:12px; color:#a39a89; text-align:center; line-height:1.8; }
 </style>
 <style>.tagline{font-size:18px;font-weight:600;color:var(--ink,#1f1d1a);margin:0 0 8px;line-height:1.45;letter-spacing:-0.01em}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "발음이 안 들려요.", "acceptedAnswer": {"@type": "Answer", "text": "기기에 영어 음성이 있어야 해요. 목소리 목록이 비어 있으면 \"뜻만\" 모드로 쓰거나 브라우저를 바꿔보세요."}}, {"@type": "Question", "name": "단어 목록이 저장되나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 새로고침하면 사라지니 메모장에 따로 보관하세요."}}, {"@type": "Question", "name": "한 번에 몇 개까지 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "제한은 없지만 집중력을 고려해 20~30개씩 나눠 푸는 걸 권해요."}}]}</script>
-<style>
-.ad-slot{margin:18px 0;text-align:center}.ad-slot:empty{display:none}
-.seo{background:#fffdf8;border:1px solid var(--line,#d8d3c6);border-radius:3px;padding:22px 24px;margin-top:18px;font-size:15px;line-height:1.8;color:var(--ink,#1f1d1a)}
-.seo h2{font-size:17px;margin:0 0 8px;font-weight:700}.seo p+h2,.seo ol+h2,.seo table+h2{margin-top:22px}
-.seo p{margin:0 0 10px}.seo ol{margin:0 0 10px;padding-left:22px}.seo li{margin-bottom:4px}
-.seo table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0 12px;background:#fffdf8}
-.seo th,.seo td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--paper-deep,#e6e2d6)}.seo th{font-size:12px;color:var(--ink-soft,#57534b);background:var(--paper-deep,#e6e2d6);font-weight:600}.seo td.r,.seo th.r{text-align:right}
-.seo.faq details{border-top:1px solid var(--paper-deep,#e6e2d6);padding:10px 0}.seo.faq details:first-of-type{border-top:none}.seo.faq summary{cursor:pointer;font-weight:600;font-size:15px}.seo.faq details p{margin:8px 0 0;color:var(--ink-soft,#57534b);font-size:14px}
-.related-grid{display:flex;flex-wrap:wrap;gap:8px}.related-grid a{border:1px solid var(--line,#d8d3c6);border-radius:20px;padding:7px 14px;font-size:13px;color:var(--ink,#1f1d1a);text-decoration:none;background:var(--paper,#f1eee6)}.related-grid a:hover{background:var(--paper-deep,#e6e2d6)}
-</style>
 </head>
 <body>
 

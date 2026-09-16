@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
 <title>중국어 병음 변환기 - 한자 발음 성조 표기 무료 도구</title>
 <meta name="description" content="한자를 입력하면 글자마다 병음과 성조를 바로 확인할 수 있는 무료 변환기. 중국어 발음, HSK 학습에 유용합니다.">
@@ -14,10 +17,13 @@
 <meta property="og:title" content="중국어 병음 변환기 - 한자 발음 성조 표기 무료 도구">
 <meta property="og:description" content="한자를 입력하면 글자마다 병음과 성조를 바로 확인할 수 있는 무료 변환기입니다.">
 <meta property="og:url" content="https://dailyfreetoolbox.com/pinyin.html">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:locale" content="ko_KR">
 
 <!-- Twitter Card -->
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="중국어 병음 변환기">
 <meta name="twitter:description" content="한자 입력하면 병음과 성조를 바로 확인하는 무료 도구">
 
@@ -43,7 +49,10 @@
 
 <!-- Google Analytics 4: 방문자 수 + 기능 사용(변환 실행) 이벤트 추적 -->
 <script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
 <style>
+  /* tool.css 기반 위에 이 페이지 고유 스타일만 덧씌움 */
+  label > select, label > input:not([type="checkbox"]):not([type="radio"]), .row select, .row input:not([type="checkbox"]):not([type="radio"]) { width:auto; padding:6px 8px; font-size:13px; }
   @font-face {
     font-family: 'system-cjk';
     src: local('Noto Sans KR');
@@ -63,24 +72,6 @@
     --tone3: #3f6b52;
     --tone4: #3a5a8a;
     --tone0: #837c70;
-  }
-
-  * { box-sizing: border-box; }
-
-  html, body {
-    margin: 0;
-    padding: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
-  }
-
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 48px 20px 80px;
   }
 
   .brand {
@@ -296,21 +287,8 @@
     text-decoration: none;
   }
 
-
-
-
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "다음자(多音字)는 어떻게 처리되나요?", "acceptedAnswer": {"@type": "Answer", "text": "行(xíng/háng), 长(cháng/zhǎng)처럼 여러 발음이 있는 글자는 문맥에 따라 가장 흔한 발음이 선택돼요. 단어 단위로 입력하면 정확도가 높아지고, 드물게 다를 수 있으니 사전으로 확인하세요."}}, {"@type": "Question", "name": "성조 없이 병음만 볼 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "현재는 성조 부호가 포함된 형태로만 표시돼요. 성조 없는 병음이 필요하면 복사 후 부호를 지우거나, 숫자 성조(ma1)로 바꿔 쓰세요."}}, {"@type": "Question", "name": "번체자도 변환되나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 간체·번체 모두 인식해요. 번체를 간체로 바꾸고 싶으면 간체↔번체 변환기를 함께 쓰세요."}}, {"@type": "Question", "name": "한국식 한자 독음(음)도 볼 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "한자 음훈 조회 도구에서 한국식 음과 훈을 확인할 수 있어요."}}]}</script>
-<style>
-.ad-slot{margin:18px 0;text-align:center}.ad-slot:empty{display:none}
-.seo{background:#fffdf8;border:1px solid var(--line,#d8d3c6);border-radius:3px;padding:22px 24px;margin-top:18px;font-size:15px;line-height:1.8;color:var(--ink,#1f1d1a)}
-.seo h2{font-size:17px;margin:0 0 8px;font-weight:700}.seo p+h2,.seo ol+h2,.seo table+h2{margin-top:22px}
-.seo p{margin:0 0 10px}.seo ol{margin:0 0 10px;padding-left:22px}.seo li{margin-bottom:4px}
-.seo table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0 12px;background:#fffdf8}
-.seo th,.seo td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--paper-deep,#e6e2d6)}.seo th{font-size:12px;color:var(--ink-soft,#57534b);background:var(--paper-deep,#e6e2d6);font-weight:600}.seo td.r,.seo th.r{text-align:right}
-.seo.faq details{border-top:1px solid var(--paper-deep,#e6e2d6);padding:10px 0}.seo.faq details:first-of-type{border-top:none}.seo.faq summary{cursor:pointer;font-weight:600;font-size:15px}.seo.faq details p{margin:8px 0 0;color:var(--ink-soft,#57534b);font-size:14px}
-.related-grid{display:flex;flex-wrap:wrap;gap:8px}.related-grid a{border:1px solid var(--line,#d8d3c6);border-radius:20px;padding:7px 14px;font-size:13px;color:var(--ink,#1f1d1a);text-decoration:none;background:var(--paper,#f1eee6)}.related-grid a:hover{background:var(--paper-deep,#e6e2d6)}
-</style>
 </head>
 <body>
 

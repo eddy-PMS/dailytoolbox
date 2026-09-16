@@ -2,6 +2,8 @@
 
 
 const WC_ID_CHARS = '23456789abcdefghjkmnpqrstuvwxyz';
+const VOTE_SAMPLE_AFTER = 100; // 이 참여 수부터 표본 집계
+const VOTE_SAMPLE_RATE = 5;    // 5회 중 1회만 KV 에 기록
 function wcGenId() {
   const bytes = crypto.getRandomValues(new Uint8Array(8));
   let s = '';
@@ -9,9 +11,13 @@ function wcGenId() {
   return s;
 }
 function isSameOrigin(request, host) {
-  const ref = request.headers.get('referer') || '';
-  const org = request.headers.get('origin') || '';
-  return ref.includes(host) || org.includes(host);
+  // referer/origin 의 hostname 이 우리 호스트와 정확히 같아야 통과 (문자열 포함 검사는 우회 가능)
+  for (const h of ['origin', 'referer']) {
+    const v = request.headers.get(h);
+    if (!v) continue;
+    try { if (new URL(v).hostname === host) return true; } catch (e) {}
+  }
+  return false;
 }
 
 const IPV4 = /^(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}$/;
@@ -143,20 +149,28 @@ export default {
       const data = await env.WORLDCUP_KV.get(key, 'json');
       if (!data) return json({ ok: false, error: 'not_found' }, 404);
       data.stats = data.stats || {};
+      data.totalPlays = data.totalPlays || 0;
+      // KV 쓰기 한도(무료: 하루 1,000회, 같은 키 초당 1회) 보호용 표본 집계:
+      // 참여 100회까지는 전부 기록하고, 그 뒤로는 5회 중 1회만 기록하되 5배 가중치로 더한다(비율은 그대로, 쓰기 횟수는 1/5).
+      const weight = data.totalPlays >= VOTE_SAMPLE_AFTER ? VOTE_SAMPLE_RATE : 1;
+      if (weight > 1 && Math.random() * weight >= 1) {
+        return json({ ok: true, stats: data.stats, totalPlays: data.totalPlays, sampled: true });
+      }
       for (const i of playedIdx) {
         if (i < 0 || i >= data.items.length) continue;
         data.stats[i] = data.stats[i] || { played: 0, champion: 0 };
-        data.stats[i].played++;
+        data.stats[i].played += weight;
       }
       if (championIdx >= 0 && championIdx < data.items.length) {
         data.stats[championIdx] = data.stats[championIdx] || { played: 0, champion: 0 };
-        data.stats[championIdx].champion++;
+        data.stats[championIdx].champion += weight;
       }
-      data.totalPlays = (data.totalPlays || 0) + 1;
+      data.totalPlays += weight;
       try {
         await env.WORLDCUP_KV.put(key, JSON.stringify(data), { expirationTtl: 60 * 60 * 24 * 180 });
       } catch (e) {
-        return json({ ok: false, error: 'quota' }, 429);
+        // 쓰기 한도 초과 시에도 플레이는 정상 종료되도록 현재 통계를 그대로 돌려준다
+        return json({ ok: true, stats: data.stats, totalPlays: data.totalPlays, sampled: true, saved: false });
       }
       return json({ ok: true, stats: data.stats, totalPlays: data.totalPlays });
     }
@@ -177,9 +191,10 @@ export default {
             .on('meta[property="og:title"]', { element(el) { el.setAttribute('content', wcTitle); } })
             .on('meta[property="og:description"]', { element(el) { el.setAttribute('content', wcDesc); } });
           if (firstImg) {
-            rewriter.on('meta[property="og:url"]', { element(el) {
-              el.after(`<meta property="og:image" content="${firstImg.replace(/"/g, '&quot;')}">`, { html: true });
-            } });
+            // 페이지 기본 og:image(사이트 대표 이미지)를 월드컵 첫 항목 이미지로 교체
+            rewriter.on('meta[property="og:image"]', { element(el) { el.setAttribute('content', firstImg); } })
+                    .on('meta[property="og:image:width"]', { element(el) { el.remove(); } })
+                    .on('meta[property="og:image:height"]', { element(el) { el.remove(); } });
           }
           return rewriter.transform(assetRes);
         }

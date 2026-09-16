@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
 <title>사이트 소개 - Daily Free Toolbox</title>
 <meta name="description" content="Daily Free Toolbox는 생활 계산기, 변환기, 게임·헬스·재테크 도구, 어학 학습 도구를 회원가입 없이 무료로 제공하는 사이트입니다.">
@@ -11,13 +14,17 @@
 <meta property="og:title" content="사이트 소개 - Daily Free Toolbox">
 <meta property="og:description" content="무료 도구 89종, 만든 이유와 운영 원칙">
 <meta property="og:url" content="https://dailyfreetoolbox.com/about.html">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="ko_KR">
 <script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
 <style>
+  /* tool.css 기반 위에 이 페이지 고유 스타일만 덧씌움 */
+  label > select, label > input:not([type="checkbox"]):not([type="radio"]), .row select, .row input:not([type="checkbox"]):not([type="radio"]) { width:auto; padding:6px 8px; font-size:13px; }
   :root { --paper:#f1eee7; --paper-deep:#e6e2d8; --ink:#1f1d1a; --ink-soft:#57534b; --accent:#3a3f4a; --line:#d8d3c7; }
-  * { box-sizing:border-box; }
-  html, body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif; }
-  body { min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:48px 20px 80px; }
   main { width:100%; max-width:680px; }
   h1 { font-size:26px; line-height:1.35; margin:0 0 20px; font-weight:700; }
   .doc { background:#fffdf8; border:1px solid var(--line); border-radius:3px; padding:28px 30px; font-size:15px; line-height:1.85; }
@@ -42,7 +49,7 @@
 
   <div class="doc">
     <h2>Daily Free Toolbox는 어떤 곳인가요</h2>
-    <p>"연봉 4천이면 실수령이 얼마지?", "전역까지 며칠 남았지?", "이 한자 어떻게 읽지?" 같은 작은 궁금증은 하루에도 몇 번씩 생깁니다. 그때마다 앱을 설치하거나 회원가입을 하기는 번거롭죠. 이 사이트는 그런 순간에 브라우저에서 바로 쓸 수 있는 작은 도구들을 모아둔 곳입니다. 생활 계산기와 변환기, 게임·군대·헬스·재테크 도구, 그리고 영어·일본어·중국어 학습 도구까지 67종을 무료로 제공하고 있으며, 계속 추가하고 있습니다.</p>
+    <p>"연봉 4천이면 실수령이 얼마지?", "전역까지 며칠 남았지?", "이 한자 어떻게 읽지?" 같은 작은 궁금증은 하루에도 몇 번씩 생깁니다. 그때마다 앱을 설치하거나 회원가입을 하기는 번거롭죠. 이 사이트는 그런 순간에 브라우저에서 바로 쓸 수 있는 작은 도구들을 모아둔 곳입니다. 생활 계산기와 변환기, 게임·군대·헬스·재테크 도구, 그리고 영어·일본어·중국어 학습 도구까지 89종을 무료로 제공하고 있으며, 계속 추가하고 있습니다.</p>
 
     <h2>운영 원칙</h2>
     <ul>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>페이지를 찾을 수 없어요 - 데일리 프리 툴박스</title>
+<meta name="robots" content="noindex, follow">
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+  :root { --accent:#3a3f4a; --accent-deep:#26292f; }
+  .code { font-size:64px; font-weight:700; color:var(--accent); letter-spacing:-0.03em; line-height:1; margin:8px 0 14px; }
+  .popular { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:8px; margin-top:6px; }
+  .popular a { display:block; border:1px solid var(--line); border-radius:3px; background:#fffdf8; padding:11px 12px; font-size:14px; color:var(--ink); text-decoration:none; }
+  .popular a:hover { border-color:var(--accent); }
+</style>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#3a3f4a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>데일리 프리 툴박스</b></div>
+  <div class="code">404</div>
+  <h1>페이지를 찾을 수 없어요</h1>
+  <p class="sub">주소가 바뀌었거나 잘못 입력됐을 수 있어요. 아래에서 원하는 도구를 찾아보거나 홈으로 돌아가 주세요.</p>
+
+  <div class="btn-row">
+    <a class="btn" href="/" style="text-decoration:none;display:inline-block">홈으로 가기</a>
+    <button class="btn-ghost" type="button" onclick="history.back()">이전 페이지로</button>
+  </div>
+
+  <div class="card" style="margin-top:22px">
+    <h2>많이 쓰는 도구</h2>
+    <div class="popular">
+      <a href="/salary.html">연봉 실수령액 계산기</a>
+      <a href="/loan.html">대출 이자 계산기</a>
+      <a href="/dday.html">D-day 계산기</a>
+      <a href="/age.html">만 나이 계산기</a>
+      <a href="/pdf-merge.html">PDF 합치기</a>
+      <a href="/image-compress.html">이미지 용량 줄이기</a>
+      <a href="/qrcode.html">QR코드 생성기</a>
+      <a href="/pinyin.html">병음 변환기</a>
+      <a href="/furigana.html">후리가나 표시기</a>
+      <a href="/worldcup.html">이상형 월드컵</a>
+    </div>
+  </div>
+
+  <footer>문제가 계속되면 contact@dailyfreetoolbox.com 으로 알려주세요.</footer>
+</main>
+</body>
+</html>

@@ -3,36 +3,6 @@
    메뉴를 바꾸려면 아래 GROUPS만 수정하면 모든 페이지에 반영됩니다. */
 (function () {
   var GROUPS = [
-    { label: '중국어', items: [
-      ['pinyin.html', '병음 변환기'],
-      ['hanja.html', '한자 음훈 조회'],
-      ['chinese-convert.html', '간체↔번체 변환'],
-      ['tone-drill.html', '성조 훈련'],
-      ['hsk-test.html', 'HSK 레벨 테스트']
-    ]},
-    { label: '일본어', items: [
-      ['furigana.html', '후리가나 표시기'],
-      ['jp-verb.html', '동사 활용표'],
-      ['kana-quiz.html', '가나 퀴즈'],
-      ['jlpt-test.html', 'JLPT 레벨 테스트']
-    ]},
-    { label: '영어', items: [
-      ['ipa.html', 'IPA 발음 변환'],
-      ['sentence.html', '문장 구조 분석'],
-      ['level-test.html', '영어 레벨 테스트'],
-      ['readability.html', '지문 난이도 체커'],
-      ['etymology.html', '어원 분석기'],
-      ['irregular-verbs.html', '불규칙동사 표·퀴즈'],
-      ['cloze.html', '빈칸 문제 생성기'],
-      ['spelling-quiz.html', '스펠링 퀴즈']
-    ]},
-    { label: '공통', items: [
-      ['tts.html', '발음 듣기'],
-      ['dictation.html', '받아쓰기 연습'],
-      ['wordlist.html', '단어장 추출기'],
-      ['stroke-order.html', '한자 획순'],
-      ['romanize.html', '이름 로마자 변환']
-    ]},
     { label: '생활', items: [
       ['salary.html', '연봉 실수령액'],
       ['severance.html', '퇴직금 계산기'],
@@ -115,6 +85,36 @@
       ['mortgage.html', '주택담보대출 한도'],
       ['jeonse-loan.html', '전세대출 이자'],
       ['car-loan.html', '자동차 할부']
+    ]},
+    { label: '중국어', items: [
+      ['pinyin.html', '병음 변환기'],
+      ['hanja.html', '한자 음훈 조회'],
+      ['chinese-convert.html', '간체↔번체 변환'],
+      ['tone-drill.html', '성조 훈련'],
+      ['hsk-test.html', 'HSK 레벨 테스트']
+    ]},
+    { label: '일본어', items: [
+      ['furigana.html', '후리가나 표시기'],
+      ['jp-verb.html', '동사 활용표'],
+      ['kana-quiz.html', '가나 퀴즈'],
+      ['jlpt-test.html', 'JLPT 레벨 테스트']
+    ]},
+    { label: '영어', items: [
+      ['ipa.html', 'IPA 발음 변환'],
+      ['sentence.html', '문장 구조 분석'],
+      ['level-test.html', '영어 레벨 테스트'],
+      ['readability.html', '지문 난이도 체커'],
+      ['etymology.html', '어원 분석기'],
+      ['irregular-verbs.html', '불규칙동사 표·퀴즈'],
+      ['cloze.html', '빈칸 문제 생성기'],
+      ['spelling-quiz.html', '스펠링 퀴즈']
+    ]},
+    { label: '공통', items: [
+      ['tts.html', '발음 듣기'],
+      ['dictation.html', '받아쓰기 연습'],
+      ['wordlist.html', '단어장 추출기'],
+      ['stroke-order.html', '한자 획순'],
+      ['romanize.html', '이름 로마자 변환']
     ]}
   ];
 

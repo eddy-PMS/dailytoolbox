@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
 <title>영어 단어 레벨 테스트 - 내 영어 어휘 수준 무료 진단</title>
 <meta name="description" content="20개 단어로 알아보는 내 영어 어휘 수준. 기초부터 실무 어휘까지 무료로 바로 진단해보세요.">
@@ -13,6 +16,10 @@
 <meta property="og:title" content="영어 단어 레벨 테스트">
 <meta property="og:description" content="20개 단어로 알아보는 내 영어 어휘 수준, 무료 진단">
 <meta property="og:url" content="https://dailyfreetoolbox.com/level-test.html">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="ko_KR">
 
 <script type="application/ld+json">
@@ -30,7 +37,10 @@
 
 <script src="common.js"></script>
 
+<link rel="stylesheet" href="tool.css">
 <style>
+  /* tool.css 기반 위에 이 페이지 고유 스타일만 덧씌움 */
+  label > select, label > input:not([type="checkbox"]):not([type="radio"]), .row select, .row input:not([type="checkbox"]):not([type="radio"]) { width:auto; padding:6px 8px; font-size:13px; }
   :root {
     --paper: #f1eee5;
     --paper-deep: #e7e2d2;
@@ -41,26 +51,6 @@
     --amber: #b8823a;
     --line: #d9d1bd;
   }
-
-  * { box-sizing: border-box; }
-
-  html, body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
-  }
-
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 48px 20px 80px;
-  }
-
-
-
 
   main { width: 100%; max-width: 640px; }
 
@@ -207,8 +197,6 @@
 
   .retry-btn:hover { background: var(--paper-deep); color: var(--ink); }
 
-  .hidden { display: none; }
-
   footer {
     margin-top: 56px;
     font-size: 12px;
@@ -218,16 +206,6 @@
   }
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "20문제로 수준을 알 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "정밀 진단은 아니에요. 단계별로 대표 단어를 뽑아 \"어느 단계에서 막히는지\"를 보는 간이 진단이라, 교재 고르기와 목표 설정용 참고로 쓰세요."}}, {"@type": "Question", "name": "같은 문제가 반복되나요?", "acceptedAnswer": {"@type": "Answer", "text": "현재는 고정된 20문제예요. 한 번 풀고 나면 답을 기억할 수 있으니 결과는 첫 시도 기준으로 보세요."}}, {"@type": "Question", "name": "일본어·중국어 테스트도 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "JLPT 레벨 테스트와 HSK 레벨 테스트가 같은 방식으로 준비되어 있어요."}}]}</script>
-<style>
-.ad-slot{margin:18px 0;text-align:center}.ad-slot:empty{display:none}
-.seo{background:#fffdf8;border:1px solid var(--line,#d8d3c6);border-radius:3px;padding:22px 24px;margin-top:18px;font-size:15px;line-height:1.8;color:var(--ink,#1f1d1a)}
-.seo h2{font-size:17px;margin:0 0 8px;font-weight:700}.seo p+h2,.seo ol+h2,.seo table+h2{margin-top:22px}
-.seo p{margin:0 0 10px}.seo ol{margin:0 0 10px;padding-left:22px}.seo li{margin-bottom:4px}
-.seo table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0 12px;background:#fffdf8}
-.seo th,.seo td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--paper-deep,#e6e2d6)}.seo th{font-size:12px;color:var(--ink-soft,#57534b);background:var(--paper-deep,#e6e2d6);font-weight:600}.seo td.r,.seo th.r{text-align:right}
-.seo.faq details{border-top:1px solid var(--paper-deep,#e6e2d6);padding:10px 0}.seo.faq details:first-of-type{border-top:none}.seo.faq summary{cursor:pointer;font-weight:600;font-size:15px}.seo.faq details p{margin:8px 0 0;color:var(--ink-soft,#57534b);font-size:14px}
-.related-grid{display:flex;flex-wrap:wrap;gap:8px}.related-grid a{border:1px solid var(--line,#d8d3c6);border-radius:20px;padding:7px 14px;font-size:13px;color:var(--ink,#1f1d1a);text-decoration:none;background:var(--paper,#f1eee6)}.related-grid a:hover{background:var(--paper-deep,#e6e2d6)}
-</style>
 <style>.tagline{font-size:18px;font-weight:600;color:var(--ink,#1f1d1a);margin:0 0 8px;line-height:1.45;letter-spacing:-0.01em}</style>
 </head>
 <body>

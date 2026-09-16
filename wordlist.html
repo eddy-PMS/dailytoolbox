@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
 <title>텍스트 단어장 추출기 - 지문에서 단어 뽑아 CSV 만들기</title>
 <meta name="description" content="영어·일본어 지문을 붙여넣으면 자주 나오는 단어를 추출해 단어장 CSV로 다운로드할 수 있는 무료 도구입니다.">
@@ -13,6 +16,10 @@
 <meta property="og:title" content="텍스트 단어장 추출기">
 <meta property="og:description" content="지문을 붙여넣으면 자주 나오는 단어를 추출해 단어장 CSV로 만들어주는 무료 도구">
 <meta property="og:url" content="https://dailyfreetoolbox.com/wordlist.html">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="ko_KR">
 
 <script type="application/ld+json">
@@ -30,7 +37,10 @@
 
 <script src="common.js"></script>
 
+<link rel="stylesheet" href="tool.css">
 <style>
+  /* tool.css 기반 위에 이 페이지 고유 스타일만 덧씌움 */
+  label > select, label > input:not([type="checkbox"]):not([type="radio"]), .row select, .row input:not([type="checkbox"]):not([type="radio"]) { width:auto; padding:6px 8px; font-size:13px; }
   :root {
     --paper: #f1ede3;
     --paper-deep: #e6e0d0;
@@ -40,26 +50,6 @@
     --bronze-deep: #5c4320;
     --line: #d8d0b8;
   }
-
-  * { box-sizing: border-box; }
-
-  html, body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
-  }
-
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 48px 20px 80px;
-  }
-
-
-
 
   main { width: 100%; max-width: 680px; }
 
@@ -210,16 +200,6 @@
 </style>
 <style>.tagline{font-size:18px;font-weight:600;color:var(--ink,#1f1d1a);margin:0 0 8px;line-height:1.45;letter-spacing:-0.01em}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "뜻은 왜 비어 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "무료로 쓸 수 있는 영한·일한 사전 데이터가 없어 뜻 칸은 비워둬요. 단어장 앱의 자동 번역이나 사전으로 채우세요."}}, {"@type": "Question", "name": "중국어도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "현재 영어·일본어만 지원해요. 중국어는 단어 경계 분리(분사)가 필요해 추후 검토 중이에요."}}, {"@type": "Question", "name": "CSV가 엑셀에서 깨져요.", "acceptedAnswer": {"@type": "Answer", "text": "UTF-8 BOM 형식이라 엑셀에서 바로 열려요. 그래도 깨지면 \"데이터 > 텍스트 가져오기\"에서 UTF-8을 선택하세요."}}]}</script>
-<style>
-.ad-slot{margin:18px 0;text-align:center}.ad-slot:empty{display:none}
-.seo{background:#fffdf8;border:1px solid var(--line,#d8d3c6);border-radius:3px;padding:22px 24px;margin-top:18px;font-size:15px;line-height:1.8;color:var(--ink,#1f1d1a)}
-.seo h2{font-size:17px;margin:0 0 8px;font-weight:700}.seo p+h2,.seo ol+h2,.seo table+h2{margin-top:22px}
-.seo p{margin:0 0 10px}.seo ol{margin:0 0 10px;padding-left:22px}.seo li{margin-bottom:4px}
-.seo table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0 12px;background:#fffdf8}
-.seo th,.seo td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--paper-deep,#e6e2d6)}.seo th{font-size:12px;color:var(--ink-soft,#57534b);background:var(--paper-deep,#e6e2d6);font-weight:600}.seo td.r,.seo th.r{text-align:right}
-.seo.faq details{border-top:1px solid var(--paper-deep,#e6e2d6);padding:10px 0}.seo.faq details:first-of-type{border-top:none}.seo.faq summary{cursor:pointer;font-weight:600;font-size:15px}.seo.faq details p{margin:8px 0 0;color:var(--ink-soft,#57534b);font-size:14px}
-.related-grid{display:flex;flex-wrap:wrap;gap:8px}.related-grid a{border:1px solid var(--line,#d8d3c6);border-radius:20px;padding:7px 14px;font-size:13px;color:var(--ink,#1f1d1a);text-decoration:none;background:var(--paper,#f1eee6)}.related-grid a:hover{background:var(--paper-deep,#e6e2d6)}
-</style>
 </head>
 <body>
 

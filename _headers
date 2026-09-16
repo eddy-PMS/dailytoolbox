@@ -13,7 +13,10 @@
 /og-image.png
   Cache-Control: public, max-age=2592000
 
-/og-worldcup.png
+/og-worldcup.jpg
+  Cache-Control: public, max-age=2592000
+
+/og-balance.jpg
   Cache-Control: public, max-age=2592000
 
 /favicon.svg

@@ -43,7 +43,7 @@ svg.pitch{width:100%;height:auto;display:block;user-select:none;-webkit-user-sel
 .roster .pr.onfield{background:#f2f8f4}
 .hint{font-size:12px;color:var(--ink-soft);margin:6px 0 0;line-height:1.6}
 .sel-banner{background:#fff8e1;border:1px solid #f0dcb8;border-radius:3px;padding:8px 10px;font-size:13px;margin-bottom:8px}
-.colors{display:flex;gap:8px;align-items:center;flex-wrap:wrap;min-height:40px}.colors span{width:28px;height:28px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;transition:transform .1s}.colors span.on{box-shadow:0 0 0 3px var(--accent);transform:scale(1.12)}.colors .cname{font-size:13px;color:var(--ink-soft);margin-left:2px}
+.colors{display:flex;gap:8px;align-items:center;flex-wrap:wrap;min-height:40px}.colors span{width:28px;height:28px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;transition:transform .1s}.colors span.on{box-shadow:0 0 0 3px var(--accent);transform:scale(1.12)}
 .info-line{font-size:13px;color:var(--ink-soft);margin-top:4px}
 .landing-head{text-align:center;margin-bottom:10px}.landing-head h2{font-size:22px;margin:4px 0 4px}.landing-head .note{margin:0}
 .rlist{display:grid;grid-template-columns:1fr 1fr;gap:4px 14px;font-size:14px}@media(max-width:520px){.rlist{grid-template-columns:1fr}}
@@ -131,7 +131,7 @@ svg.pitch{width:100%;height:auto;display:block;user-select:none;-webkit-user-sel
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>선수 위치를 자유롭게 옮길 수 있나요?</summary><p>네. 포메이션을 고르면 기본 위치가 잡히고, 경기장 위의 선수를 드래그해서 원하는 곳으로 옮길 수 있어요. 한 선수를 다른 선수 위에 놓으면 두 사람의 자리가 바뀌어요.</p></details><details><summary>카톡 단톡방에 어떻게 올리나요?</summary><p>"이미지로 저장"을 누르면 전술판이 PNG 파일로 저장돼 사진처럼 올릴 수 있고, "공유 링크 만들기"를 누르면 짧은 링크가 생겨 팀원이 열어볼 수 있어요.</p></details><details><summary>링크는 얼마나 유지되나요?</summary><p>만든 날로부터 30일 동안 유지되고 그 뒤엔 자동으로 삭제돼요. 이미지로 저장해두면 기간과 상관없이 남아요.</p></details><details><summary>풋살이나 7인제도 되나요?</summary><p>5인(풋살)부터 6·7·8·9·11인까지 인원별 포메이션을 제공해요. 인원을 바꾸면 그에 맞는 포메이션 목록이 나와요.</p></details><details><summary>쿼터별로 다른 라인업을 만들고 싶어요.</summary><p>지금은 라인업 하나에 전술 메모로 교체 계획을 적는 방식이에요. 쿼터마다 다른 라인업이 필요하면 각각 만들어 링크를 따로 보내주세요.</p></details></section>
 <section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="team.html">팀 나누기</a><a href="ladder.html">사다리타기</a><a href="random-pick.html">랜덤 뽑기</a><a href="worktime.html">근무시간 계산기</a></div></section>
-  <footer>공유 링크의 라인업은 서버(Cloudflare KV)에 저장돼 짧은 링크로 공유되고, 만든 날로부터 30일 뒤 자동 삭제돼요. 이미지 저장은 브라우저 안에서만 처리돼요.<br><span class="version-tag">v1.2 · 2026-09-17 업데이트</span></footer>
+  <footer>공유 링크의 라인업은 서버(Cloudflare KV)에 저장돼 짧은 링크로 공유되고, 만든 날로부터 30일 뒤 자동 삭제돼요. 이미지 저장은 브라우저 안에서만 처리돼요.<br><span class="version-tag">v1.3 · 2026-09-17 업데이트</span></footer>
 </main>
 
 <script>
@@ -172,9 +172,9 @@ function resetSlots(keepPlayers){
 $('size').addEventListener('change',()=>{ state.size=+$('size').value; fillFormations(); resetSlots(true); render(); });
 $('formation').addEventListener('change',()=>{ state.formation=$('formation').value; resetSlots(true); render(); });
 ['team','vs','when','place','memo'].forEach(id=>$(id).addEventListener('input',()=>{ state[id]=$(id).value; if(id==='team') render(); }));
-$('colors').innerHTML=COLORS.map((c,i)=>`<span data-i="${i}" style="background:${c[0]};color:${c[1]}" title="${c[2]}"></span>`).join('')+'<span class="cname" id="cname"></span>';
+$('colors').innerHTML=COLORS.map((c,i)=>`<span data-i="${i}" style="background:${c[0]};color:${c[1]}" title="${c[2]}"></span>`).join('')
 $('colors').querySelectorAll('span[data-i]').forEach(el=>el.addEventListener('click',()=>{ state.color=+el.dataset.i; render(); }));
-function renderColors(){ $('colors').querySelectorAll('span[data-i]').forEach(el=>{ const on=+el.dataset.i===state.color; el.classList.toggle('on',on); el.textContent=on?'✓':''; }); $('cname').textContent=COLORS[state.color][2]+' 유니폼'; }
+function renderColors(){ $('colors').querySelectorAll('span[data-i]').forEach(el=>{ const on=+el.dataset.i===state.color; el.classList.toggle('on',on); el.textContent=on?'✓':''; }); }
 
 function parseRoster(text){
   const out=[]; text.split(/\n/).forEach(line=>{

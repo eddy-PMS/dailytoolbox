@@ -5,5 +5,11 @@
   "assets": {
     "directory": ".",
     "binding": "ASSETS"
-  }
+  },
+  "kv_namespaces": [
+    {
+      "binding": "WORLDCUP_KV",
+      "id": "40d9b75cbf704d93ad53030f6f225439"
+    }
+  ]
 }

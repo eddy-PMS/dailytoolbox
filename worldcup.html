@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
 <title>이상형 월드컵 생성기 - 나만의 토너먼트 만들고 공유하기</title>
-<meta name="description" content="항목을 넣으면 자동으로 토너먼트를 만들어주는 이상형 월드컵 생성기. 텍스트나 이미지 URL로 만들면 공유 링크로 친구에게 바로 보낼 수 있어요.">
-<meta name="keywords" content="이상형 월드컵 만들기, 이상형 월드컵 생성기, 월드컵 게임 만들기, 커스텀 월드컵, 텍스트 월드컵">
+<meta name="description" content="항목을 넣으면 자동으로 토너먼트를 만들어주는 이상형 월드컵 생성기. 만들면 짧은 링크가 생기고, 친구들이 플레이한 결과로 우승 비율 랭킹도 볼 수 있어요.">
+<meta name="keywords" content="이상형 월드컵 만들기, 이상형 월드컵 생성기, 월드컵 게임 만들기, 커스텀 월드컵, 월드컵 랭킹">
 <link rel="canonical" href="https://dailyfreetoolbox.com/worldcup.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="이상형 월드컵 생성기">
-<meta property="og:description" content="항목을 넣으면 자동으로 토너먼트를 만들어주는 이상형 월드컵 생성기. 텍스트나 이미지 URL로 만들면 공유 링크로 친구에게 바로 보낼 수 있어요.">
+<meta property="og:description" content="항목을 넣으면 자동으로 토너먼트를 만들어주는 이상형 월드컵 생성기. 만들면 짧은 링크가 생기고, 친구들이 플레이한 결과로 우승 비율 랭킹도 볼 수 있어요.">
 <meta property="og:url" content="https://dailyfreetoolbox.com/worldcup.html">
 <meta property="og:locale" content="ko_KR">
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "WebApplication", "name": "이상형 월드컵 생성기", "url": "https://dailyfreetoolbox.com/worldcup.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "항목을 넣으면 자동으로 토너먼트를 만들어주는 이상형 월드컵 생성기. 텍스트나 이미지 URL로 만들면 공유 링크로 친구에게 바로 보낼 수 있어요."}
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "이상형 월드컵 생성기", "url": "https://dailyfreetoolbox.com/worldcup.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "항목을 넣으면 자동으로 토너먼트를 만들어주는 이상형 월드컵 생성기. 만들면 짧은 링크가 생기고, 친구들이 플레이한 결과로 우승 비율 랭킹도 볼 수 있어요."}
 </script>
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
@@ -31,7 +31,7 @@
 .wc-card img{width:100%;height:180px;object-fit:cover;display:block}
 .wc-name{padding:10px;font-weight:700;text-align:center;font-size:15px}
 .wc-textonly{padding:70px 10px;font-size:20px}
-</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "이미지 URL은 어디서 구하나요?", "acceptedAnswer": {"@type": "Answer", "text": "이미 인터넷에 올라가 있는 이미지의 주소예요. 이미지에 마우스 우클릭 → \"이미지 주소 복사\"로 얻을 수 있어요. 저작권이 있는 이미지는 개인적인 용도로만 사용하세요."}}, {"@type": "Question", "name": "내 사진으로 만든 월드컵을 친구에게 보내려면요?", "acceptedAnswer": {"@type": "Answer", "text": "사진을 이미지 호스팅 서비스에 올려 URL을 받은 뒤 \"텍스트·이미지 URL\" 방식으로 다시 만들면 공유할 수 있어요."}}, {"@type": "Question", "name": "항목이 대진표 크기와 안 맞으면요?", "acceptedAnswer": {"@type": "Answer", "text": "넣은 항목 수보다 작거나 같은 크기만 선택할 수 있어요. 항목이 10개면 8강까지 가능해요."}}]}</script>
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "이미지 URL은 어디서 구하나요?", "acceptedAnswer": {"@type": "Answer", "text": "이미 인터넷에 올라가 있는 이미지의 주소예요. 이미지에 마우스 우클릭 → \"이미지 주소 복사\"로 얻을 수 있어요. 저작권이 있는 이미지는 개인적인 용도로만 사용하세요."}}, {"@type": "Question", "name": "네이버 검색 이미지가 안 떠요.", "acceptedAnswer": {"@type": "Answer", "text": "네이버 등 일부 사이트는 외부에서 이미지를 불러오는 것(핫링크)을 막아둬서 안 뜰 수 있어요. 그런 경우 이름만 표시돼요. 잘 뜨는 이미지가 필요하면 이미지 호스팅 서비스에 직접 올린 주소를 쓰세요."}}, {"@type": "Question", "name": "공유 링크는 언제까지 유지되나요?", "acceptedAnswer": {"@type": "Answer", "text": "만든 뒤 180일 동안 유지돼요. 그 이후엔 자동으로 삭제되고 링크가 더 이상 동작하지 않아요."}}, {"@type": "Question", "name": "우승 비율은 어떻게 계산되나요?", "acceptedAnswer": {"@type": "Answer", "text": "그 항목이 대진표에 등장한 횟수 대비 최종 우승한 횟수의 비율이에요. 여러 사람이 플레이할수록 더 의미 있는 숫자가 돼요."}}, {"@type": "Question", "name": "내가 만든 월드컵을 지우고 싶어요.", "acceptedAnswer": {"@type": "Answer", "text": "현재는 삭제 기능이 없어요. 180일 후 자동으로 사라지니 그때까지 기다려주세요."}}]}</script>
 </head>
 <body>
 
@@ -42,21 +42,22 @@
   <div class="brand"><b>🏆 이상형 월드컵 생성기</b></div>
   <h1>이상형 월드컵 생성기</h1>
   <p class="tagline">내가 만든 월드컵, 친구한테 바로 보내세요</p>
-  <p class="sub">항목을 넣으면 무작위 토너먼트가 만들어져요. 텍스트나 이미지 URL로 만들면 공유 링크가 생기고, 내 사진을 올리면 이 브라우저에서 바로 즐길 수 있어요.</p>
+  <p class="sub">항목을 넣으면 무작위 토너먼트가 만들어져요. "공유 링크 만들기"를 누르면 짧은 링크가 생기고, 그 링크로 여러 사람이 플레이하면 우승 비율 랭킹도 쌓여요.</p>
 
   <div id="setup" class="card">
-    <div class="tabs"><button class="tab active" data-m="url">텍스트 · 이미지 URL (공유 가능)</button><button class="tab" data-m="upload">내 사진 올리기 (이 기기에서만)</button></div>
+    <div class="tabs"><button class="tab active" data-m="url">텍스트 · 이미지 URL</button><button class="tab" data-m="upload">내 사진 올리기</button></div>
     <div id="urlPane">
       <div class="field"><label>제목</label><input type="text" id="title" placeholder="예: 최애 아이돌 월드컵" value="이상형 월드컵"></div>
       <table><thead><tr><th>이름</th><th>이미지 URL (선택)</th><th></th></tr></thead><tbody id="urlRows"></tbody></table>
       <div class="btn-row"><button class="btn-ghost" id="addRow">+ 항목 추가</button></div>
     </div>
     <div id="uploadPane" class="hidden">
+      <div class="field"><label>제목</label><input type="text" id="title2" placeholder="예: 최애 아이돌 월드컵" value="이상형 월드컵"></div>
       <div class="drop" id="drop">사진을 끌어다 놓거나 클릭해서 여러 장 선택<input type="file" id="file" accept="image/*" multiple style="display:none"></div>
       <div class="flist" id="uploadList"></div>
     </div>
     <div class="row" style="margin-top:14px"><label>대진표 크기 <select id="size"></select></label></div>
-    <div class="btn-row"><button class="btn" id="start">시작하기</button><button class="btn-ghost" id="share">공유 링크 복사</button></div>
+    <div class="btn-row"><button class="btn" id="start">바로 해보기</button><button class="btn-ghost" id="share">공유 링크 만들기</button></div>
     <div class="status" id="status"></div>
   </div>
   <div id="play" class="card hidden">
@@ -70,30 +71,30 @@
   <div id="resultWrap" class="card hidden"></div>
  <div class="ad-slot" data-ad="below-result"></div>
 <section class="seo">
-<h2>이상형 월드컵, 어떻게 만드나요</h2><p>좋아하는 음식, 아이돌, 여행지 등 무엇이든 항목으로 넣으면 토너먼트 대진표가 자동으로 만들어져요. 두 항목씩 나와서 하나를 고르면 다음 라운드로 올라가고, 최종 우승자가 나올 때까지 반복해요. 4강·8강·16강·32강 중 넣은 항목 수에 맞는 크기를 고를 수 있어요.</p><p>텍스트나 이미지 URL(이미 인터넷에 올라가 있는 사진 주소)로 만들면 공유 링크가 생성돼요. 이 링크에는 항목 정보가 그대로 담겨 있어서 별도 서버 저장 없이 친구에게 보내면 똑같은 월드컵을 즐길 수 있어요.</p>
-<h2>공유 링크 vs 내 사진 올리기</h2><p><table><thead><tr><th>방식</th><th>공유</th><th>특징</th></tr></thead><tbody><tr><td>텍스트만</td><td>가능</td><td>가장 간단, 어디서든 바로 공유</td></tr><tr><td>이미지 URL</td><td>가능</td><td>이미 온라인에 있는 사진 주소 필요</td></tr><tr><td>내 사진 업로드</td><td>불가능</td><td>이 브라우저에서만 재생, 사진은 어디에도 전송되지 않음</td></tr></tbody></table></p>
-<h2>사용 방법</h2><ol><li>항목 이름을 넣고, 필요하면 이미지 URL도 함께 넣으세요.</li><li>대진표 크기를 고르고 "시작하기"를 누르세요.</li><li>마음에 드는 쪽을 클릭해 우승자가 나올 때까지 진행하세요. "공유 링크 복사"로 친구에게 보내세요.</li></ol>
+<h2>이상형 월드컵, 어떻게 만드나요</h2><p>좋아하는 음식, 아이돌, 여행지 등 무엇이든 항목으로 넣으면 토너먼트 대진표가 자동으로 만들어져요. 두 항목씩 나와서 하나를 고르면 다음 라운드로 올라가고, 최종 우승자가 나올 때까지 반복해요. 4강부터 32강까지 넣은 항목 수에 맞는 크기를 고를 수 있어요.</p><p>"공유 링크 만들기"를 누르면 짧은 링크(예: dailyfreetoolbox.com/worldcup?id=ab12cd34)가 만들어져요. 이 링크를 친구에게 보내면 같은 월드컵을 플레이할 수 있고, 여러 사람이 플레이할수록 각 항목의 "우승 비율" 랭킹이 쌓여요. "바로 해보기"는 저장 없이 내 화면에서만 한 번 즐기는 방식이에요.</p>
+<h2>공유 링크 vs 바로 해보기</h2><p><table><thead><tr><th>방식</th><th>공유</th><th>랭킹 집계</th><th>보관 기간</th></tr></thead><tbody><tr><td>공유 링크 만들기</td><td>가능 (짧은 링크)</td><td>가능</td><td>180일</td></tr><tr><td>바로 해보기</td><td>불가능</td><td>불가능</td><td>저장 안 함</td></tr></tbody></table></p><p>공유 링크를 만들면 제목·항목 이름·이미지(URL 또는 업로드한 사진)가 서버에 저장돼요. 업로드한 사진은 자동으로 압축해서 저장 용량을 줄여요. 180일이 지나면 링크는 자동으로 사라져요.</p>
+<h2>사용 방법</h2><ol><li>항목 이름을 넣고, 이미지 URL을 넣거나 사진을 직접 올리세요.</li><li>대진표 크기를 고르고 "바로 해보기"로 먼저 확인하거나, "공유 링크 만들기"로 친구에게 보낼 링크를 만드세요.</li><li>링크로 들어온 사람이 플레이할 때마다 우승 비율 랭킹이 쌓여요.</li></ol>
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
-<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>이미지 URL은 어디서 구하나요?</summary><p>이미 인터넷에 올라가 있는 이미지의 주소예요. 이미지에 마우스 우클릭 → "이미지 주소 복사"로 얻을 수 있어요. 저작권이 있는 이미지는 개인적인 용도로만 사용하세요.</p></details><details><summary>내 사진으로 만든 월드컵을 친구에게 보내려면요?</summary><p>사진을 이미지 호스팅 서비스에 올려 URL을 받은 뒤 "텍스트·이미지 URL" 방식으로 다시 만들면 공유할 수 있어요.</p></details><details><summary>항목이 대진표 크기와 안 맞으면요?</summary><p>넣은 항목 수보다 작거나 같은 크기만 선택할 수 있어요. 항목이 10개면 8강까지 가능해요.</p></details></section>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>이미지 URL은 어디서 구하나요?</summary><p>이미 인터넷에 올라가 있는 이미지의 주소예요. 이미지에 마우스 우클릭 → "이미지 주소 복사"로 얻을 수 있어요. 저작권이 있는 이미지는 개인적인 용도로만 사용하세요.</p></details><details><summary>네이버 검색 이미지가 안 떠요.</summary><p>네이버 등 일부 사이트는 외부에서 이미지를 불러오는 것(핫링크)을 막아둬서 안 뜰 수 있어요. 그런 경우 이름만 표시돼요. 잘 뜨는 이미지가 필요하면 이미지 호스팅 서비스에 직접 올린 주소를 쓰세요.</p></details><details><summary>공유 링크는 언제까지 유지되나요?</summary><p>만든 뒤 180일 동안 유지돼요. 그 이후엔 자동으로 삭제되고 링크가 더 이상 동작하지 않아요.</p></details><details><summary>우승 비율은 어떻게 계산되나요?</summary><p>그 항목이 대진표에 등장한 횟수 대비 최종 우승한 횟수의 비율이에요. 여러 사람이 플레이할수록 더 의미 있는 숫자가 돼요.</p></details><details><summary>내가 만든 월드컵을 지우고 싶어요.</summary><p>현재는 삭제 기능이 없어요. 180일 후 자동으로 사라지니 그때까지 기다려주세요.</p></details></section>
 <section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="balance-game.html">밸런스 게임 생성기</a><a href="random-pick.html">랜덤 뽑기</a><a href="ladder.html">사다리타기</a><a href="team.html">팀 나누기</a></div></section>
-  <footer>이미지 URL은 외부에 이미 올라가 있는 사진 주소를 넣는 방식이라 공유 링크에 그대로 담을 수 있어요. 다만 네이버 검색 썸네일처럼 핫링크(외부 삽입)를 막아둔 이미지는 뜨지 않을 수 있어요 — 그런 경우 이름만 표시돼요. 잘 뜨는 이미지가 필요하면 이미지 호스팅 사이트(이미지 전용 업로드 서비스)에 직접 올린 주소를 쓰는 걸 권해요. 내 사진을 직접 올리면 이 브라우저 안에서만 재생되며, 어디에도 업로드되지 않아요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
+  <footer>제목·항목은 서버(Cloudflare KV)에 최대 180일간 저장돼 짧은 링크로 공유돼요. 네이버 검색 썸네일처럼 핫링크를 막아둔 이미지는 안 뜰 수 있고, 그럴 땐 이름만 표시돼요. 업로드한 사진은 자동으로 압축해서 저장해요.<br><span class="version-tag">v2.0 · 2026-09-16 업데이트</span></footer>
 </main>
 
 <script>
 
-function b64encode(obj){ return btoa(unescape(encodeURIComponent(JSON.stringify(obj)))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,''); }
-function b64decode(str){ str=str.replace(/-/g,'+').replace(/_/g,'/'); while(str.length%4) str+='='; try{ return JSON.parse(decodeURIComponent(escape(atob(str)))); }catch(e){ return null; } }
-
 const $=id=>document.getElementById(id);
-let mode='url', items=[], bracket=[], round=[], winners=[], matchIdx=0, roundNum=1;
-document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.m;$('urlPane').classList.toggle('hidden',mode!=='url');$('uploadPane').classList.toggle('hidden',mode!=='upload');$('share').classList.toggle('hidden',mode!=='url');$('status').textContent='';updateSizeOptions();}));
-function addUrlRow(name='',img=''){ const tr=document.createElement('tr'); tr.innerHTML=`<td><input type="text" class="nm" value="${name}" placeholder="이름" style="padding:8px"></td><td><input type="text" class="im" value="${img}" placeholder="https://..." style="padding:8px"></td><td><button class="btn-ghost del" style="padding:6px 10px">×</button></td>`; $('urlRows').appendChild(tr); tr.querySelector('.del').addEventListener('click',()=>{tr.remove();updateSizeOptions();}); tr.querySelectorAll('input').forEach(i=>i.addEventListener('input',updateSizeOptions)); }
+function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+let mode='url', items=[], bracket=[], round=[], winners=[], matchIdx=0, currentId=null, playedIdxSet=new Set();
+
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.m;$('urlPane').classList.toggle('hidden',mode!=='url');$('uploadPane').classList.toggle('hidden',mode!=='upload');$('status').textContent='';updateSizeOptions();}));
+
+function addUrlRow(name='',img=''){ const tr=document.createElement('tr'); tr.innerHTML=`<td><input type="text" class="nm" value="${esc(name)}" placeholder="이름" style="padding:8px"></td><td><input type="text" class="im" value="${esc(img)}" placeholder="https://..." style="padding:8px"></td><td><button class="btn-ghost del" style="padding:6px 10px">×</button></td>`; $('urlRows').appendChild(tr); tr.querySelector('.del').addEventListener('click',()=>{tr.remove();updateSizeOptions();}); tr.querySelectorAll('input').forEach(i=>i.addEventListener('input',updateSizeOptions)); }
 ['민수','지훈','서연','하늘','도윤','수아','시우','예린'].forEach(n=>addUrlRow(n));
 $('addRow').addEventListener('click',()=>{addUrlRow();updateSizeOptions();});
 
 let uploadedFiles=[];
-function renderUploadList(){ $('uploadList').innerHTML=uploadedFiles.map((f,i)=>`<div class="fi"><span class="nm">${f.name}</span><button class="btn-ghost del" data-i="${i}">×</button></div>`).join(''); $('uploadList').querySelectorAll('.del').forEach(b=>b.addEventListener('click',()=>{uploadedFiles.splice(+b.dataset.i,1);renderUploadList();updateSizeOptions();})); updateSizeOptions(); }
+function renderUploadList(){ $('uploadList').innerHTML=uploadedFiles.map((f,i)=>`<div class="fi"><span class="nm">${esc(f.name)}</span><button class="btn-ghost del" data-i="${i}">×</button></div>`).join(''); $('uploadList').querySelectorAll('.del').forEach(b=>b.addEventListener('click',()=>{uploadedFiles.splice(+b.dataset.i,1);renderUploadList();updateSizeOptions();})); updateSizeOptions(); }
 function addFiles(list){ for(const f of list){ if(/^image\//.test(f.type)) uploadedFiles.push(f); } renderUploadList(); }
 $('drop').addEventListener('click',()=>$('file').click()); $('file').addEventListener('change',e=>{addFiles(e.target.files);e.target.value='';});
 ['dragenter','dragover'].forEach(ev=>$('drop').addEventListener(ev,e=>{e.preventDefault();$('drop').classList.add('over');})); ['dragleave','drop'].forEach(ev=>$('drop').addEventListener(ev,e=>{e.preventDefault();$('drop').classList.remove('over');})); $('drop').addEventListener('drop',e=>addFiles(e.dataTransfer.files));
@@ -107,23 +108,32 @@ function updateSizeOptions(){
 }
 updateSizeOptions();
 
-async function fileToDataUrl(f){ return new Promise(res=>{ const r=new FileReader(); r.onload=()=>res(r.result); r.readAsDataURL(f); }); }
+// 업로드 사진은 가로 640px, JPG 70%로 압축해서 저장 용량을 줄여요.
+function compressImage(file){
+  return new Promise((res,rej)=>{
+    const img=new Image();
+    img.onload=()=>{ const sc=Math.min(1,640/Math.max(img.naturalWidth,img.naturalHeight)); const c=document.createElement('canvas'); c.width=Math.round(img.naturalWidth*sc); c.height=Math.round(img.naturalHeight*sc); const ctx=c.getContext('2d'); ctx.fillStyle='#fff'; ctx.fillRect(0,0,c.width,c.height); ctx.drawImage(img,0,0,c.width,c.height); URL.revokeObjectURL(img.src); res(c.toDataURL('image/jpeg',0.7)); };
+    img.onerror=rej; img.src=URL.createObjectURL(file);
+  });
+}
 
 async function collectItems(){
   if(mode==='url'){
     return [...$('urlRows').querySelectorAll('tr')].map(tr=>({name:tr.querySelector('.nm').value.trim(), img:tr.querySelector('.im').value.trim()})).filter(it=>it.name);
   } else {
-    const arr=[]; for(const f of uploadedFiles){ arr.push({name:f.name.replace(/\.[^.]+$/,''), img:await fileToDataUrl(f)}); } return arr;
+    const arr=[]; for(const f of uploadedFiles){ arr.push({name:f.name.replace(/\.[^.]+$/,''), img:await compressImage(f)}); } return arr;
   }
 }
+function currentTitle(){ return (mode==='url'? $('title').value : $('title2').value) || '이상형 월드컵'; }
 
 function shuffle(a){ const arr=a.slice(); for(let i=arr.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [arr[i],arr[j]]=[arr[j],arr[i]]; } return arr; }
 
 function renderCard(el,item){
   if(item.img){
-    el.innerHTML = `<img src="${item.img}" alt="${item.name}" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='<div class\"wc-name wc-textonly\">'+this.alt+'</div>'"><div class="wc-name">${item.name}</div>`;
+    el.innerHTML = `<img src="${esc(item.img)}" alt="${esc(item.name)}" referrerpolicy="no-referrer"><div class="wc-name">${esc(item.name)}</div>`;
+    el.querySelector('img').addEventListener('error', function(){ this.parentElement.innerHTML=`<div class="wc-name wc-textonly">${esc(item.name)}</div>`; });
   } else {
-    el.innerHTML = `<div class="wc-name wc-textonly">${item.name}</div>`;
+    el.innerHTML = `<div class="wc-name wc-textonly">${esc(item.name)}</div>`;
   }
 }
 
@@ -132,46 +142,85 @@ function showMatch(){
   renderCard($('cardA'), round[matchIdx*2]); renderCard($('cardB'), round[matchIdx*2+1]);
 }
 function pick(which){
-  winners.push(which===0? round[matchIdx*2] : round[matchIdx*2+1]); matchIdx++;
+  const a=round[matchIdx*2], b=round[matchIdx*2+1];
+  [a,b].forEach(it=>{ if(it._idx!=null) playedIdxSet.add(it._idx); });
+  winners.push(which===0? a : b); matchIdx++;
   if(matchIdx*2 < round.length){ showMatch(); }
   else if(winners.length===1){ finish(winners[0]); }
   else { round=winners; winners=[]; matchIdx=0; showMatch(); }
 }
 $('cardA').addEventListener('click',()=>pick(0)); $('cardB').addEventListener('click',()=>pick(1));
 
-function finish(champ){
+async function finish(champ){
   $('play').classList.add('hidden'); $('resultWrap').classList.remove('hidden');
   $('resultWrap').innerHTML=`<div style="text-align:center"><div style="font-size:14px;color:var(--ink-soft);margin-bottom:10px">🏆 우승</div>
-    <div class="wc-card" style="margin:0 auto;cursor:default">${champ.img?`<img src="${champ.img}" alt="${champ.name}" referrerpolicy="no-referrer" onerror="this.remove()">`:''}<div class="wc-name" style="${champ.img?'':'font-size:26px'}">${champ.name}</div></div>
-    <div class="btn-row" style="justify-content:center;margin-top:16px"><button class="btn" id="again">다시 하기</button></div></div>`;
+    <div class="wc-card" style="margin:0 auto;cursor:default">${champ.img?`<img src="${esc(champ.img)}" alt="${esc(champ.name)}" referrerpolicy="no-referrer">`:''}<div class="wc-name" style="${champ.img?'':'font-size:26px'}">${esc(champ.name)}</div></div>
+    <div class="btn-row" style="justify-content:center;margin-top:16px"><button class="btn" id="again">다시 하기</button></div>
+    <div id="rankBox" style="margin-top:18px;text-align:left"></div></div>`;
   $('again').addEventListener('click',()=>{ $('resultWrap').classList.add('hidden'); $('setup').classList.remove('hidden'); });
   if(typeof gtag==='function') gtag('event','worldcup_finished',{});
+  if(currentId!=null && champ._idx!=null){
+    try{
+      const r=await fetch('/api/worldcup/vote',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({id:currentId, playedIdx:[...playedIdxSet], championIdx:champ._idx})});
+      const d=await r.json();
+      if(d.ok) renderRanking(d.stats);
+    }catch(e){}
+  }
+}
+function renderRanking(stats){
+  const rows=items.map((it,i)=>{ const s=stats[i]||stats[String(i)]||{played:0,champion:0}; return {name:it.name, played:s.played||0, champion:s.champion||0}; })
+    .filter(r=>r.played>0).sort((a,b)=>(b.champion/b.played)-(a.champion/a.played));
+  if(!rows.length) return;
+  $('rankBox').innerHTML = `<h2 style="font-size:15px;margin-bottom:8px">우승 비율 랭킹 (누적)</h2><table><thead><tr><th>이름</th><th class="r">우승 비율</th><th class="r">등장/우승</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${esc(r.name)}</td><td class="r"><b>${Math.round(r.champion/r.played*100)}%</b></td><td class="r">${r.played} / ${r.champion}</td></tr>`).join('')}</tbody></table>`;
+}
+
+function startLocal(size){
+  bracket = shuffle(items.map((it,i)=>({...it,_idx:i}))).slice(0,size);
+  round=bracket; winners=[]; matchIdx=0; playedIdxSet=new Set();
+  $('setup').classList.add('hidden'); $('play').classList.remove('hidden'); showMatch();
+  if(typeof gtag==='function') gtag('event','worldcup_started',{size});
 }
 
 $('start').addEventListener('click',async()=>{
   items=await collectItems(); const size=+$('size').value; if(!size||items.length<size) return;
-  bracket = shuffle(items).slice(0,size);
-  round=bracket; winners=[]; matchIdx=0;
-  $('setup').classList.add('hidden'); $('play').classList.remove('hidden'); showMatch();
-  if(typeof gtag==='function') gtag('event','worldcup_started',{size});
+  startLocal(size);
 });
 
 $('share').addEventListener('click',async()=>{
-  const its=await collectItems(); if(mode!=='url'){ $('status').textContent='내 사진으로 만든 월드컵은 공유 링크를 만들 수 없어요.'; return; }
-  const url=location.origin+location.pathname+'#'+b64encode({title:$('title').value||'이상형 월드컵', items:its});
-  try{ await navigator.clipboard.writeText(url); $('status').innerHTML='<span class="ok">공유 링크를 복사했어요!</span>'; }catch{ $('status').textContent=url; }
-  if(typeof gtag==='function') gtag('event','worldcup_shared',{});
+  const its=await collectItems(); if(its.length<2){ $('status').innerHTML='<span class="bad">항목을 2개 이상 넣어주세요.</span>'; return; }
+  $('share').disabled=true; $('status').textContent='만드는 중…';
+  try{
+    const r=await fetch('/api/worldcup',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({title:currentTitle(), items:its})});
+    const d=await r.json();
+    if(!d.ok){
+      const MSG={quota:'오늘 만들기 요청이 많아 잠시 제한됐어요. 내일 다시 시도해주세요.',too_large:'사진 용량이 너무 커요. 장 수를 줄이거나 더 작은 사진으로 시도해보세요.',need_more_items:'항목을 2개 이상 넣어주세요.'};
+      $('status').innerHTML=`<span class="bad">${MSG[d.error]||'만들기에 실패했어요. 잠시 후 다시 시도해주세요.'}</span>`;
+    } else {
+      const url=location.origin+location.pathname+'?id='+d.id;
+      try{ await navigator.clipboard.writeText(url); $('status').innerHTML=`<span class="ok">공유 링크를 복사했어요! (180일간 유지돼요)</span>`; }catch{ $('status').innerHTML=`<span class="ok">링크가 만들어졌어요:</span> ${esc(url)}`; }
+      if(typeof gtag==='function') gtag('event','worldcup_shared',{n:its.length});
+    }
+  }catch(e){ $('status').innerHTML='<span class="bad">네트워크 오류로 실패했어요. 잠시 후 다시 시도해주세요.</span>'; }
+  $('share').disabled=false;
 });
 
-// 공유 링크로 접속한 경우 자동 채우기
-(function(){
-  if(location.hash.length>1){
-    const data=b64decode(location.hash.slice(1));
-    if(data && data.items && data.items.length>=2){
-      $('title').value=data.title||'이상형 월드컵';
-      $('urlRows').innerHTML=''; data.items.forEach(it=>addUrlRow(it.name,it.img||''));
-      updateSizeOptions();
-    }
+// 짧은 링크(?id=)로 들어온 경우: 서버에서 불러와 바로 시작
+(async function(){
+  const qid=new URLSearchParams(location.search).get('id');
+  if(qid && /^[0-9a-z]{4,16}$/.test(qid)){
+    $('status').textContent='불러오는 중…';
+    try{
+      const r=await fetch('/api/worldcup?id='+encodeURIComponent(qid)); const d=await r.json();
+      if(d.ok && d.items && d.items.length>=2){
+        currentId=qid; items=d.items;
+        $('title').value=d.title; $('urlRows').innerHTML=''; d.items.forEach(it=>addUrlRow(it.name,it.img||''));
+        updateSizeOptions(); $('status').textContent='';
+        const size=nextPow2Floor(items.length); $('size').value=String(size);
+        startLocal(size);
+      } else {
+        $('status').innerHTML='<span class="bad">링크를 찾을 수 없어요. 만료됐거나 잘못된 링크일 수 있어요.</span>';
+      }
+    }catch(e){ $('status').innerHTML='<span class="bad">불러오기에 실패했어요.</span>'; }
   }
 })();
 

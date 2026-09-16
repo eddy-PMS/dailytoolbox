@@ -25,6 +25,7 @@
 </script>
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
+<style>.ymd{display:flex;gap:6px}.ymd select{flex:1;min-width:0;padding:10px 6px}.ymd .y{flex:1.4}</style>
 <style>:root { --accent:#a83a2c; --accent-deep:#8a2f23; }</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "진짜 사주를 보는 건가요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 생년월일을 재료로 재미로 만든 콘텐츠이고, 실제 사주명리학과는 무관해요."}}, {"@type": "Question", "name": "같은 생년월일인데 결과가 매번 달라요.", "acceptedAnswer": {"@type": "Answer", "text": "오늘 하루 안에서는 항상 같은 결과가 나와요. 날짜가 바뀌면 새로운 결과로 바뀝니다."}}, {"@type": "Question", "name": "궁합 퍼센트가 낮게 나왔어요, 안 좋은 건가요?", "acceptedAnswer": {"@type": "Answer", "text": "재미로 보는 숫자일 뿐이에요. 실제 관계는 서로 어떻게 노력하느냐에 달려 있어요."}}]}</script>
 </head>
@@ -43,15 +44,15 @@
   <div class="card" id="todayPane">
     <div class="grid2">
       <div class="field"><label>이름 (선택)</label><input type="text" id="name1" placeholder="홍길동"></div>
-      <div class="field"><label>생년월일</label><input type="date" id="birth1"></div>
+      <div class="field"><label>생년월일</label><div class="ymd" data-for="birth1"><select class="y"></select><select class="m"></select><select class="d"></select></div><input type="hidden" id="birth1"></div>
     </div>
     <div class="btn-row"><button class="btn" id="seeToday">오늘의 운세 보기</button></div>
     <div id="todayOut" style="margin-top:14px"></div>
   </div>
   <div class="card hidden" id="matchPane">
     <div class="grid2">
-      <div class="field"><label>나의 생년월일</label><input type="date" id="birthA"></div>
-      <div class="field"><label>상대방 생년월일</label><input type="date" id="birthB"></div>
+      <div class="field"><label>나의 생년월일</label><div class="ymd" data-for="birthA"><select class="y"></select><select class="m"></select><select class="d"></select></div><input type="hidden" id="birthA"></div>
+      <div class="field"><label>상대방 생년월일</label><div class="ymd" data-for="birthB"><select class="y"></select><select class="m"></select><select class="d"></select></div><input type="hidden" id="birthB"></div>
     </div>
     <div class="btn-row"><button class="btn" id="seeMatch">궁합 보기</button></div>
     <div id="matchOut" style="margin-top:14px"></div>
@@ -65,12 +66,23 @@
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>진짜 사주를 보는 건가요?</summary><p>아니요. 생년월일을 재료로 재미로 만든 콘텐츠이고, 실제 사주명리학과는 무관해요.</p></details><details><summary>같은 생년월일인데 결과가 매번 달라요.</summary><p>오늘 하루 안에서는 항상 같은 결과가 나와요. 날짜가 바뀌면 새로운 결과로 바뀝니다.</p></details><details><summary>궁합 퍼센트가 낮게 나왔어요, 안 좋은 건가요?</summary><p>재미로 보는 숫자일 뿐이에요. 실제 관계는 서로 어떻게 노력하느냐에 달려 있어요.</p></details></section>
 <section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="mbti-test.html">간이 MBTI 테스트</a><a href="age.html">만 나이 계산기</a><a href="dday.html">D-day 계산기</a></div></section>
-  <footer>이 콘텐츠는 오락 목적의 참고용이며 실제 사주·점술과는 무관해요. 중요한 결정은 이 결과와 상관없이 신중하게 판단하세요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
+  <footer>이 콘텐츠는 오락 목적의 참고용이며 실제 사주·점술과는 무관해요. 중요한 결정은 이 결과와 상관없이 신중하게 판단하세요.<br><span class="version-tag">v1.1 · 2026-09-16 업데이트</span></footer>
 </main>
 
 <script>
 
 const $=id=>document.getElementById(id);
+// 생년월일: 연/월/일 드롭다운 (type=date 는 연도 이동이 번거로워 교체). 값은 숨은 input(#id)에 YYYY-MM-DD 로 담김
+document.querySelectorAll('.ymd').forEach(box=>{
+  const hid=$(box.dataset.for), Y=box.querySelector('.y'), M=box.querySelector('.m'), D=box.querySelector('.d');
+  const now=new Date().getFullYear();
+  Y.innerHTML='<option value="">연도</option>'+Array.from({length:100},(_,i)=>`<option value="${now-i}">${now-i}년</option>`).join('');
+  M.innerHTML='<option value="">월</option>'+Array.from({length:12},(_,i)=>`<option value="${i+1}">${i+1}월</option>`).join('');
+  function fillD(){ const y=+Y.value, m=+M.value; const n=(y&&m)? new Date(y,m,0).getDate() : 31; const cur=D.value; D.innerHTML='<option value="">일</option>'+Array.from({length:n},(_,i)=>`<option value="${i+1}">${i+1}일</option>`).join(''); if(+cur<=n) D.value=cur; }
+  function sync(){ fillD(); const y=Y.value,m=M.value,d=D.value; hid.value=(y&&m&&d)? `${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}` : ''; }
+  [Y,M,D].forEach(el=>el.addEventListener('change',sync)); fillD();
+});
+
 document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');$('todayPane').classList.toggle('hidden',b.dataset.t!=='today');$('matchPane').classList.toggle('hidden',b.dataset.t!=='match');}));
 function hashCode(s){ let h=0; for(let i=0;i<s.length;i++){ h=(h*31+s.charCodeAt(i))|0; } return Math.abs(h); }
 function pick(arr,seed){ return arr[seed%arr.length]; }

@@ -56,7 +56,7 @@
       <div class="flist" id="uploadList"></div>
     </div>
     <div class="row" style="margin-top:14px"><label>대진표 크기 <select id="size"></select></label></div>
-    <div class="btn-row"><button class="btn" id="start">시작하기</button><button class="btn-ghost hidden" id="share">공유 링크 복사</button></div>
+    <div class="btn-row"><button class="btn" id="start">시작하기</button><button class="btn-ghost" id="share">공유 링크 복사</button></div>
     <div class="status" id="status"></div>
   </div>
   <div id="play" class="card hidden">
@@ -87,7 +87,7 @@ function b64decode(str){ str=str.replace(/-/g,'+').replace(/_/g,'/'); while(str.
 
 const $=id=>document.getElementById(id);
 let mode='url', items=[], bracket=[], round=[], winners=[], matchIdx=0, roundNum=1;
-document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.m;$('urlPane').classList.toggle('hidden',mode!=='url');$('uploadPane').classList.toggle('hidden',mode!=='upload');updateSizeOptions();}));
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.m;$('urlPane').classList.toggle('hidden',mode!=='url');$('uploadPane').classList.toggle('hidden',mode!=='upload');$('share').classList.toggle('hidden',mode!=='url');$('status').textContent='';updateSizeOptions();}));
 function addUrlRow(name='',img=''){ const tr=document.createElement('tr'); tr.innerHTML=`<td><input type="text" class="nm" value="${name}" placeholder="이름" style="padding:8px"></td><td><input type="text" class="im" value="${img}" placeholder="https://..." style="padding:8px"></td><td><button class="btn-ghost del" style="padding:6px 10px">×</button></td>`; $('urlRows').appendChild(tr); tr.querySelector('.del').addEventListener('click',()=>{tr.remove();updateSizeOptions();}); tr.querySelectorAll('input').forEach(i=>i.addEventListener('input',updateSizeOptions)); }
 ['민수','지훈','서연','하늘','도윤','수아','시우','예린'].forEach(n=>addUrlRow(n));
 $('addRow').addEventListener('click',()=>{addUrlRow();updateSizeOptions();});

@@ -184,18 +184,12 @@ export default {
           const assetRes = await env.ASSETS.fetch(request);
           const wcTitle = data.title || '이상형 월드컵';
           const wcDesc = `${data.items[0].name} vs ${data.items[1].name} 등 ${data.items.length}개 항목 중 최고를 골라보세요!`;
-          const firstImg = (data.items.find(it => /^https?:\/\//.test(it.img || '')) || {}).img || '';
           const rewriter = new HTMLRewriter()
             .on('title', { element(el) { el.setInnerContent(`${wcTitle} - 이상형 월드컵`); } })
             .on('meta[name="description"]', { element(el) { el.setAttribute('content', wcDesc); } })
             .on('meta[property="og:title"]', { element(el) { el.setAttribute('content', wcTitle); } })
             .on('meta[property="og:description"]', { element(el) { el.setAttribute('content', wcDesc); } });
-          if (firstImg) {
-            // 페이지 기본 og:image(사이트 대표 이미지)를 월드컵 첫 항목 이미지로 교체
-            rewriter.on('meta[property="og:image"]', { element(el) { el.setAttribute('content', firstImg); } })
-                    .on('meta[property="og:image:width"]', { element(el) { el.remove(); } })
-                    .on('meta[property="og:image:height"]', { element(el) { el.remove(); } });
-          }
+          // 공유 썸네일은 항목 사진 대신 월드컵 전용 이미지를 고정 사용 (사용자 사진은 비율이 제각각이라 잘려 보임)
           return rewriter.transform(assetRes);
         }
       }

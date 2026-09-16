@@ -161,6 +161,31 @@ export default {
       return json({ ok: true, stats: data.stats, totalPlays: data.totalPlays });
     }
 
+    // ---- 이상형 월드컵 페이지: 공유된 월드컵이면 카카오톡 등 미리보기용 제목/설명/이미지를 실제 내용으로 바꿔치기 ----
+    if ((url.pathname === '/worldcup.html' || url.pathname === '/worldcup') && url.searchParams.has('id') && env.WORLDCUP_KV) {
+      const id = url.searchParams.get('id');
+      if (/^[0-9a-z]{4,16}$/.test(id)) {
+        const data = await env.WORLDCUP_KV.get('wc:' + id, 'json');
+        if (data && Array.isArray(data.items) && data.items.length >= 2) {
+          const assetRes = await env.ASSETS.fetch(request);
+          const wcTitle = data.title || '이상형 월드컵';
+          const wcDesc = `${data.items[0].name} vs ${data.items[1].name} 등 ${data.items.length}개 항목 중 최고를 골라보세요!`;
+          const firstImg = (data.items.find(it => /^https?:\/\//.test(it.img || '')) || {}).img || '';
+          const rewriter = new HTMLRewriter()
+            .on('title', { element(el) { el.setInnerContent(`${wcTitle} - 이상형 월드컵`); } })
+            .on('meta[name="description"]', { element(el) { el.setAttribute('content', wcDesc); } })
+            .on('meta[property="og:title"]', { element(el) { el.setAttribute('content', wcTitle); } })
+            .on('meta[property="og:description"]', { element(el) { el.setAttribute('content', wcDesc); } });
+          if (firstImg) {
+            rewriter.on('meta[property="og:url"]', { element(el) {
+              el.after(`<meta property="og:image" content="${firstImg.replace(/"/g, '&quot;')}">`, { html: true });
+            } });
+          }
+          return rewriter.transform(assetRes);
+        }
+      }
+    }
+
     return env.ASSETS.fetch(request);
   }
 };

@@ -7,13 +7,13 @@
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
-<title>오늘의 운세 & 궁합 보기 - 생년월일로 재미있게 (참고용)</title>
-<meta name="description" content="생년월일을 넣으면 오늘의 운세를, 두 사람 생년월일로 궁합을 재미로 보여주는 무료 도구. 실제 사주·점술과는 무관한 오락용 콘텐츠입니다.">
-<meta name="keywords" content="오늘의 운세, 생년월일 운세, 궁합 보기, 커플 궁합 테스트, 재미로 보는 운세">
+<title>사주 보기 & 오늘의 운세·궁합 - 만세력 기반 무료 사주풀이</title>
+<meta name="description" content="생년월일과 태어난 시간으로 사주팔자(년주·월주·일주·시주)를 뽑고 오행 분포와 일간 성격을 풀이해요. 오늘의 일진으로 보는 운세, 두 사람 일간·일지 관계로 보는 궁합까지 무료.">
+<meta name="keywords" content="사주 보기, 무료 사주, 사주팔자, 만세력, 일주 풀이, 일간 성격, 오늘의 운세, 오늘의 일진, 궁합 보기, 사주 궁합">
 <link rel="canonical" href="https://dailyfreetoolbox.com/fortune.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="오늘의 운세 & 궁합 보기">
-<meta property="og:description" content="생년월일을 넣으면 오늘의 운세를, 두 사람 생년월일로 궁합을 재미로 보여주는 무료 도구. 실제 사주·점술과는 무관한 오락용 콘텐츠입니다.">
+<meta property="og:title" content="사주 보기 & 오늘의 운세·궁합 - 만세력 기반 무료 사주풀이">
+<meta property="og:description" content="생년월일과 태어난 시간으로 사주팔자를 뽑고 오행·일간 성격을 풀이해요. 오늘의 일진 운세와 사주 궁합까지 무료.">
 <meta property="og:url" content="https://dailyfreetoolbox.com/fortune.html">
 <meta property="og:image" content="https://dailyfreetoolbox.com/og-image.jpg">
 <meta property="og:image:width" content="1200">
@@ -21,13 +21,43 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="ko_KR">
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "WebApplication", "name": "오늘의 운세 & 궁합 보기", "url": "https://dailyfreetoolbox.com/fortune.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "생년월일을 넣으면 오늘의 운세를, 두 사람 생년월일로 궁합을 재미로 보여주는 무료 도구. 실제 사주·점술과는 무관한 오락용 콘텐츠입니다."}
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "사주 보기 & 오늘의 운세·궁합", "url": "https://dailyfreetoolbox.com/fortune.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "생년월일과 태어난 시간으로 사주팔자를 뽑고 오행 분포와 일간 성격을 풀이하는 무료 도구. 오늘의 일진 운세와 두 사람의 사주 궁합도 볼 수 있어요."}
 </script>
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
-<style>.ymd{display:flex;gap:6px}.ymd select{flex:1;min-width:0;padding:10px 6px}.ymd .y{flex:1.4}</style>
-<style>:root { --accent:#a83a2c; --accent-deep:#8a2f23; }</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "진짜 사주를 보는 건가요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 생년월일을 재료로 재미로 만든 콘텐츠이고, 실제 사주명리학과는 무관해요."}}, {"@type": "Question", "name": "같은 생년월일인데 결과가 매번 달라요.", "acceptedAnswer": {"@type": "Answer", "text": "오늘 하루 안에서는 항상 같은 결과가 나와요. 날짜가 바뀌면 새로운 결과로 바뀝니다."}}, {"@type": "Question", "name": "궁합 퍼센트가 낮게 나왔어요, 안 좋은 건가요?", "acceptedAnswer": {"@type": "Answer", "text": "재미로 보는 숫자일 뿐이에요. 실제 관계는 서로 어떻게 노력하느냐에 달려 있어요."}}]}</script>
+<style>
+:root { --accent:#a83a2c; --accent-deep:#8a2f23; }
+.ymd{display:flex;gap:6px}.ymd select{flex:1;min-width:0;padding:10px 6px}.ymd .y{flex:1.4}
+.person{border:1px solid var(--line);border-radius:3px;padding:14px;background:#fffdf8;margin-bottom:12px}
+.person h3{font-size:14px;margin:0 0 10px;color:var(--ink-soft);font-weight:700}
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0}
+.pil{border:1px solid var(--line);border-radius:4px;background:#fff;text-align:center;padding:10px 4px}
+.pil .lb{font-size:11px;color:var(--ink-soft);margin-bottom:6px}
+.pil .ch{font-size:30px;font-weight:700;line-height:1.15}
+.pil .kr{font-size:12px;color:var(--ink-soft)}
+.pil .ss{font-size:11px;margin-top:3px;padding:2px 0;border-radius:2px;background:var(--paper-deep)}
+.pil .me{background:var(--accent);color:#fff}
+.e-wood{color:#2e7d4f}.e-fire{color:#c0392b}.e-earth{color:#9a6b1f}.e-metal{color:#7a7f8a}.e-water{color:#1f5fa8}
+.ohaeng{margin:12px 0}
+.ohaeng .row5{display:flex;align-items:center;gap:10px;font-size:13px;margin:5px 0}
+.ohaeng .row5 .nm{width:56px;font-weight:700}
+.ohaeng .row5 .bar{flex:1;height:14px;background:var(--paper-deep);border-radius:3px;overflow:hidden}
+.ohaeng .row5 .bar i{display:block;height:100%;border-radius:3px}
+.b-wood{background:#3a9a63}.b-fire{background:#d9534f}.b-earth{background:#c08a2e}.b-metal{background:#9aa0ab}.b-water{background:#3b82c4}
+.ohaeng .row5 .ct{width:70px;text-align:right;color:var(--ink-soft)}
+.block{margin-top:14px;padding-top:12px;border-top:1px solid var(--paper-deep)}
+.block h3{font-size:15px;margin:0 0 6px}
+.block p{margin:0 0 8px;font-size:14px;line-height:1.75}
+.tag{display:inline-block;font-size:12px;padding:2px 8px;border-radius:10px;background:var(--paper-deep);margin-right:4px}
+.scorebig{font-size:40px;font-weight:700;color:var(--accent);line-height:1}
+.mrow{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid var(--paper-deep);font-size:14px}
+.mrow .k{color:var(--ink-soft);white-space:nowrap}
+.mrow .v{text-align:right}
+.warn{font-size:12px;color:#8a5f25;background:#fff7e8;border:1px solid #f0dcb8;padding:8px 10px;border-radius:3px;margin-top:8px}
+.today-jin{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+.today-jin .ch{font-size:34px;font-weight:700}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "실제 만세력 기준으로 계산되나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 년주는 입춘, 월주는 24절기의 절입 시각을 태양 황경으로 계산해 정하고, 일주는 60갑자 순환, 시주는 태어난 시각으로 정해요. 절입 경계에 태어난 분은 사이트마다 결과가 다를 수 있어요."}}, {"@type": "Question", "name": "음력 생일만 아는데요?", "acceptedAnswer": {"@type": "Answer", "text": "현재는 양력 생년월일 기준이에요. 음력 생일은 양력으로 변환한 날짜를 넣어주세요. 음력 입력 기능은 준비 중이에요."}}, {"@type": "Question", "name": "태어난 시간을 모르면요?", "acceptedAnswer": {"@type": "Answer", "text": "시간을 모름으로 두면 년·월·일 세 기둥으로 풀이해요. 시주가 빠지면 오행 분포가 조금 달라질 수 있지만 일간 성격과 오늘의 운세, 궁합은 그대로 볼 수 있어요."}}, {"@type": "Question", "name": "오늘의 운세는 어떻게 정해지나요?", "acceptedAnswer": {"@type": "Answer", "text": "오늘 날짜의 간지(일진)와 내 일간의 관계를 십신으로 풀고, 오늘의 지지와 내 일지의 합·충 관계를 더해 풀이해요. 그래서 같은 생년월일이면 그날은 같은 결과가 나오고, 날짜가 바뀌면 근거가 달라져요."}}]}</script>
 </head>
 <body>
 
@@ -35,44 +65,196 @@
 <script src="nav.js"></script>
 
 <main>
-  <div class="brand"><b>🔮 오늘의 운세 & 궁합</b></div>
-  <h1>오늘의 운세 & 궁합 보기</h1>
-  <p class="tagline">오늘은 어떤 하루일까요</p>
-  <p class="sub">생년월일을 넣으면 오늘의 운세를 보여드려요. 두 사람 생년월일을 넣으면 궁합도 볼 수 있어요. 재미로 보는 콘텐츠예요.</p>
+  <div class="brand"><b>🔮 사주 보기 & 오늘의 운세·궁합</b></div>
+  <h1>사주 보기 & 오늘의 운세·궁합</h1>
+  <p class="tagline">만세력 기준으로 뽑은 내 사주팔자</p>
+  <p class="sub">생년월일(양력)과 태어난 시간을 넣으면 사주팔자와 오행 분포, 일간 성격을 풀이해요. 오늘의 일진으로 보는 운세와 두 사람의 사주 궁합도 볼 수 있어요.</p>
 
-  <div class="tabs"><button class="tab active" data-t="today">오늘의 운세</button><button class="tab" data-t="match">궁합 보기</button></div>
-  <div class="card" id="todayPane">
-    <div class="grid2">
-      <div class="field"><label>이름 (선택)</label><input type="text" id="name1" placeholder="홍길동"></div>
-      <div class="field"><label>생년월일</label><div class="ymd" data-for="birth1"><select class="y"></select><select class="m"></select><select class="d"></select></div><input type="hidden" id="birth1"></div>
+  <div class="tabs"><button class="tab active" data-t="saju">사주 보기</button><button class="tab" data-t="today">오늘의 운세</button><button class="tab" data-t="match">궁합 보기</button></div>
+
+  <div class="card" id="sajuPane">
+    <div class="person">
+      <h3>나의 정보</h3>
+      <div class="grid2">
+        <div class="field"><label>이름 (선택)</label><input type="text" id="name1" placeholder="홍길동"></div>
+        <div class="field"><label>생년월일 (양력)</label><div class="ymd" data-for="birth1"><select class="y"></select><select class="m"></select><select class="d"></select></div><input type="hidden" id="birth1"></div>
+        <div class="field"><label>태어난 시간</label><select id="hour1" class="hsel"></select></div>
+        <div class="field"><label>시간 보정</label><label style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--ink)"><input type="checkbox" id="tst1" checked> 한국 표준시 보정(−30분) 적용</label></div>
+      </div>
+    </div>
+    <div class="btn-row"><button class="btn" id="seeSaju">사주 보기</button></div>
+    <div id="sajuOut" style="margin-top:14px"></div>
+  </div>
+
+  <div class="card hidden" id="todayPane">
+    <div class="person">
+      <h3>나의 정보</h3>
+      <div class="grid2">
+        <div class="field"><label>이름 (선택)</label><input type="text" id="name2" placeholder="홍길동"></div>
+        <div class="field"><label>생년월일 (양력)</label><div class="ymd" data-for="birth2"><select class="y"></select><select class="m"></select><select class="d"></select></div><input type="hidden" id="birth2"></div>
+        <div class="field"><label>태어난 시간 (선택)</label><select id="hour2" class="hsel"></select></div>
+      </div>
     </div>
     <div class="btn-row"><button class="btn" id="seeToday">오늘의 운세 보기</button></div>
     <div id="todayOut" style="margin-top:14px"></div>
   </div>
+
   <div class="card hidden" id="matchPane">
-    <div class="grid2">
-      <div class="field"><label>나의 생년월일</label><div class="ymd" data-for="birthA"><select class="y"></select><select class="m"></select><select class="d"></select></div><input type="hidden" id="birthA"></div>
-      <div class="field"><label>상대방 생년월일</label><div class="ymd" data-for="birthB"><select class="y"></select><select class="m"></select><select class="d"></select></div><input type="hidden" id="birthB"></div>
+    <div class="person">
+      <h3>나</h3>
+      <div class="grid2">
+        <div class="field"><label>생년월일 (양력)</label><div class="ymd" data-for="birthA"><select class="y"></select><select class="m"></select><select class="d"></select></div><input type="hidden" id="birthA"></div>
+        <div class="field"><label>태어난 시간 (선택)</label><select id="hourA" class="hsel"></select></div>
+      </div>
+    </div>
+    <div class="person">
+      <h3>상대방</h3>
+      <div class="grid2">
+        <div class="field"><label>생년월일 (양력)</label><div class="ymd" data-for="birthB"><select class="y"></select><select class="m"></select><select class="d"></select></div><input type="hidden" id="birthB"></div>
+        <div class="field"><label>태어난 시간 (선택)</label><select id="hourB" class="hsel"></select></div>
+      </div>
     </div>
     <div class="btn-row"><button class="btn" id="seeMatch">궁합 보기</button></div>
     <div id="matchOut" style="margin-top:14px"></div>
   </div>
+
  <div class="ad-slot" data-ad="below-result"></div>
 <section class="seo">
-<h2>이 운세는 어떻게 만들어지나요</h2><p>생년월일과 오늘 날짜를 조합해 매일 다른(하지만 그날 하루는 항상 같은) 결과를 보여줘요. 실제 사주명리학의 천간지지나 오행 계산과는 무관한, 재미로 즐기는 콘텐츠예요. 같은 생년월일이면 오늘 하루 동안은 몇 번을 봐도 같은 결과가 나오고, 내일이 되면 새로운 운세로 바뀝니다.</p><p>궁합도 마찬가지로 두 사람의 생년월일을 조합해 재미로 보는 결과예요. 실제 궁합이나 상성을 판단하는 근거로 쓰기보다는, 대화 소재나 가벼운 즐길 거리로 봐주세요.</p>
-<h2>재미로 보는 콘텐츠, 이렇게 즐기세요</h2><p><table><tbody><tr><td>추천</td><td>친구·연인과 함께 보고 대화 소재로 삼기</td></tr><tr><td>비추천</td><td>중요한 결정(투자, 이직, 만남 여부)을 이 결과로 판단하기</td></tr></tbody></table></p>
-<h2>사용 방법</h2><ol><li>"오늘의 운세" 탭에서 생년월일을 넣으면 오늘 하루의 운세가 나와요.</li><li>"궁합 보기" 탭에서 두 사람의 생년월일을 넣으면 궁합 결과가 나와요.</li><li>내일 다시 보면 오늘의 운세는 새로운 내용으로 바뀌어요.</li></ol>
+<h2>사주팔자는 어떻게 뽑나요</h2><p>사주(四柱)는 태어난 해·달·날·시각을 각각 천간과 지지 두 글자로 나타낸 네 기둥, 여덟 글자(팔자)예요. 이 도구는 만세력 규칙 그대로 계산해요. 년주는 양력 1월 1일이 아니라 <b>입춘</b>을 기준으로 바뀌고, 월주는 24절기 중 12절기(입춘·경칩·청명·입하·망종·소서·입추·백로·한로·입동·대설·소한)의 절입 시각을 기준으로 바뀌어요. 절입 시각은 태양의 황경을 천문 공식으로 계산해 분 단위로 판정해요. 일주는 60갑자가 하루에 하나씩 순환하고, 시주는 태어난 시각을 두 시간 단위 열두 시진으로 나눠 정해요.</p>
+<p>태어난 시간에 "한국 표준시 보정"을 켜면 30분을 빼고 계산해요. 우리나라 표준시는 동경 135도 기준인데 서울은 약 127.5도라 실제 태양 시간이 30분쯤 느리기 때문이에요. 많은 만세력 사이트가 이 보정을 적용하지만 적용하지 않는 곳도 있어서, 시진 경계(홀수 시 정각 앞뒤)에 태어난 분은 결과가 갈릴 수 있어요.</p>
+<h2>일간·오행·십신이란</h2><p><b>일간(日干)</b>은 일주의 천간, 곧 "나 자신"을 뜻하는 글자예요. 사주 풀이는 일간을 중심으로 나머지 글자들이 어떤 관계인지 보는 데서 시작해요. <b>오행</b>은 목·화·토·금·수 다섯 기운으로, 여덟 글자 각각이 하나의 오행에 속해요. 어떤 오행이 많고 적은지로 성향과 보완점을 봐요. <b>십신(十神)</b>은 일간과 다른 글자의 관계를 열 가지로 이름 붙인 것으로, 비견·겁재(나와 같은 기운), 식신·상관(내가 낳는 기운), 편재·정재(내가 다스리는 기운), 편관·정관(나를 다스리는 기운), 편인·정인(나를 낳는 기운)이 있어요.</p>
+<h2>오늘의 운세와 궁합은 어떻게 보나요</h2><p><table><thead><tr><th>항목</th><th>보는 방법</th></tr></thead><tbody><tr><td>오늘의 운세</td><td>오늘 날짜의 간지(일진)의 천간이 내 일간에게 어떤 십신인지, 오늘의 지지가 내 일지와 합·충·형·파·해 중 어떤 관계인지로 풀이</td></tr><tr><td>궁합</td><td>두 사람 일간의 천간합·상생·상극, 일지와 년지의 육합·삼합·충·원진 관계, 서로 부족한 오행을 채워주는지로 풀이</td></tr></tbody></table></p><p>명리학에서 널리 쓰이는 일반적인 해석 기준을 정리한 것이며, 전문 상담가의 감정과는 차이가 있을 수 있어요. 인생의 중요한 결정은 참고 자료 중 하나로만 활용해주세요.</p>
+<h2>사용 방법</h2><ol><li>양력 생년월일을 고르고, 알면 태어난 시간도 고르세요. 모르면 "모름"으로 두면 세 기둥으로 풀이해요.</li><li>"사주 보기"에서 사주팔자·오행 분포·일간 성격을 확인하세요.</li><li>"오늘의 운세" 탭은 오늘의 일진과 내 사주의 관계로 하루 운세를 보여주고, "궁합 보기"는 두 사람의 사주를 비교해요.</li></ol>
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
-<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>진짜 사주를 보는 건가요?</summary><p>아니요. 생년월일을 재료로 재미로 만든 콘텐츠이고, 실제 사주명리학과는 무관해요.</p></details><details><summary>같은 생년월일인데 결과가 매번 달라요.</summary><p>오늘 하루 안에서는 항상 같은 결과가 나와요. 날짜가 바뀌면 새로운 결과로 바뀝니다.</p></details><details><summary>궁합 퍼센트가 낮게 나왔어요, 안 좋은 건가요?</summary><p>재미로 보는 숫자일 뿐이에요. 실제 관계는 서로 어떻게 노력하느냐에 달려 있어요.</p></details></section>
-<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="mbti-test.html">간이 MBTI 테스트</a><a href="age.html">만 나이 계산기</a><a href="dday.html">D-day 계산기</a></div></section>
-  <footer>이 콘텐츠는 오락 목적의 참고용이며 실제 사주·점술과는 무관해요. 중요한 결정은 이 결과와 상관없이 신중하게 판단하세요.<br><span class="version-tag">v1.1 · 2026-09-16 업데이트</span></footer>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>실제 만세력 기준으로 계산되나요?</summary><p>네. 년주는 입춘, 월주는 24절기의 절입 시각을 태양 황경으로 계산해 정하고, 일주는 60갑자 순환, 시주는 태어난 시각으로 정해요. 절입 경계에 태어난 분은 사이트마다 결과가 다를 수 있어요.</p></details><details><summary>음력 생일만 아는데요?</summary><p>현재는 양력 생년월일 기준이에요. 음력 생일은 양력으로 변환한 날짜를 넣어주세요. 음력 입력 기능은 준비 중이에요.</p></details><details><summary>태어난 시간을 모르면요?</summary><p>시간을 "모름"으로 두면 년·월·일 세 기둥으로 풀이해요. 시주가 빠지면 오행 분포가 조금 달라질 수 있지만 일간 성격과 오늘의 운세, 궁합은 그대로 볼 수 있어요.</p></details><details><summary>오늘의 운세는 어떻게 정해지나요?</summary><p>오늘 날짜의 간지(일진)와 내 일간의 관계를 십신으로 풀고, 오늘의 지지와 내 일지의 합·충 관계를 더해 풀이해요. 같은 생년월일이면 그날은 같은 결과가 나오고, 날짜가 바뀌면 근거가 달라져요.</p></details><details><summary>밤 11시 이후에 태어났어요.</summary><p>밤 11시부터 새벽 1시까지는 자시(子時)예요. 이 도구는 밤 11시 이후 출생도 일주는 그날 것을 쓰고, 시주는 다음 날 일간 기준으로 정하는 야자시 방식을 따라요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="mbti-test.html">MBTI 성격유형 테스트</a><a href="age.html">만 나이 계산기</a><a href="dday.html">D-day 계산기</a><a href="hanja.html">한자 사전</a></div></section>
+  <footer>만세력 규칙(입춘·절입·60갑자·시진)에 따라 계산하고 명리학의 일반적인 해석을 정리한 풀이예요. 전문가 감정을 대신하지 않으며 참고용으로만 활용해주세요.<br><span class="version-tag">v2.0 · 2026-09-16 업데이트</span></footer>
 </main>
 
 <script>
-
 const $=id=>document.getElementById(id);
-// 생년월일: 연/월/일 드롭다운 (type=date 는 연도 이동이 번거로워 교체). 값은 숨은 input(#id)에 YYYY-MM-DD 로 담김
+function esc(v){ return String(v==null?'':v).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+// ===== 기본 데이터 =====
+const STEM='甲乙丙丁戊己庚辛壬癸', STEM_KR='갑을병정무기경신임계';
+const BR='子丑寅卯辰巳午未申酉戌亥', BR_KR='자축인묘진사오미신유술해';
+const BR_ANIMAL=['쥐','소','호랑이','토끼','용','뱀','말','양','원숭이','닭','개','돼지'];
+const ELE=['목','화','토','금','수'], ELE_CLS=['wood','fire','earth','metal','water'];
+const STEM_ELE=[0,0,1,1,2,2,3,3,4,4];          // 갑을목 병정화 무기토 경신금 임계수
+const BR_ELE=[4,2,0,0,2,1,1,2,3,3,2,4];         // 子水 丑土 寅卯木 辰土 巳午火 未土 申酉金 戌土 亥水
+const BR_MAIN=[9,5,0,1,4,2,3,5,6,7,4,8];        // 지지 정기(본기) 천간
+const SIPSIN=['비견','겁재','식신','상관','편재','정재','편관','정관','편인','정인'];
+const HOUR_LABEL=['자시(23:00~01:00)','축시(01:00~03:00)','인시(03:00~05:00)','묘시(05:00~07:00)','진시(07:00~09:00)','사시(09:00~11:00)','오시(11:00~13:00)','미시(13:00~15:00)','신시(15:00~17:00)','유시(17:00~19:00)','술시(19:00~21:00)','해시(21:00~23:00)'];
+
+// ===== 만세력 계산 =====
+// 태양 황경(도). Meeus 약식 공식, 절입 시각 오차 ±15분 이내
+function sunLon(jd){
+  const T=(jd-2451545)/36525, r=Math.PI/180;
+  const L0=280.46646+36000.76983*T+0.0003032*T*T;
+  const M=(357.52911+35999.05029*T-0.0001537*T*T)*r;
+  const C=(1.914602-0.004817*T-0.000014*T*T)*Math.sin(M)+(0.019993-0.000101*T)*Math.sin(2*M)+0.000289*Math.sin(3*M);
+  const Om=(125.04-1934.136*T)*r;
+  return (((L0+C-0.00569-0.00478*Math.sin(Om))%360)+360)%360;
+}
+function jdKST(y,m,d,h,mi){ return Date.UTC(y,m-1,d,h-9,mi)/86400000+2440587.5; }
+// hour: 0~23 또는 null(모름). tst: 표준시 보정(-30분)
+function calcSaju(y,m,d,hour,tst){
+  let h=hour==null? 12 : hour, mi=30;
+  let dt=new Date(y,m-1,d,h,mi);
+  if(hour!=null && tst) dt=new Date(dt.getTime()-30*60000);
+  const Y=dt.getFullYear(), M=dt.getMonth()+1, D=dt.getDate(), H=dt.getHours(), MI=dt.getMinutes();
+  // 일주: 2000-01-01 = 戊午(54). 야자시(23시 이후)도 일주는 당일
+  const days=Math.round((Date.UTC(Y,M-1,D)-Date.UTC(2000,0,1))/86400000);
+  const dayIdx=((54+days)%60+60)%60;
+  // 월주: 황경 315°(입춘)부터 30°마다 寅→卯→…
+  const lon=sunLon(jdKST(Y,M,D,H,MI));
+  const mIdx=Math.floor((((lon-315)%360)+360)%360/30);
+  let yy=Y; if(M<=2 && lon<315 && lon>=270) yy-=1;   // 입춘 전은 전년
+  const yIdx=((yy-4)%60+60)%60, yStem=yIdx%10;
+  const mStem=((yStem%5)*2+2+mIdx)%10, mBr=(mIdx+2)%12;
+  let hourP=null;
+  if(hour!=null){
+    const hIdx=Math.floor((H+1)/2)%12;
+    const dStemForHour=(H>=23)? (dayIdx+1)%10 : dayIdx%10;   // 야자시는 다음날 일간 기준
+    hourP={s:((dStemForHour%5)*2+hIdx)%10, b:hIdx};
+  }
+  // 절입 경계 근접 여부(황경 기준 ±0.1° ≈ ±2.4시간)
+  const distToBoundary=Math.min(((lon-315)%30+30)%30, 30-((lon-315)%30+30)%30);
+  return { year:{s:yStem,b:yIdx%12}, month:{s:mStem,b:mBr}, day:{s:dayIdx%10,b:dayIdx%12}, hour:hourP, nearBoundary:distToBoundary<0.1, y:Y,m:M,d:D };
+}
+function sipsin(me,other){
+  const a=STEM_ELE[me], b=STEM_ELE[other], same=(me%2)===(other%2);
+  let rel; if(a===b) rel=0; else if((a+1)%5===b) rel=1; else if((a+2)%5===b) rel=2; else if((b+2)%5===a) rel=3; else rel=4;
+  return rel*2+(same?0:1);
+}
+function gz(p){ return STEM[p.s]+BR[p.b]; }
+function gzKr(p){ return STEM_KR[p.s]+BR_KR[p.b]; }
+
+// ===== 지지 관계표 =====
+const YUKHAP=[[0,1],[2,11],[3,10],[4,9],[5,8],[6,7]];
+const SAMHAP=[[8,0,4],[11,3,7],[2,6,10],[5,9,1]];
+const CHUNG=[[0,6],[1,7],[2,8],[3,9],[4,10],[5,11]];
+const WONJIN=[[0,7],[1,6],[2,9],[3,8],[4,11],[5,10]];
+const HYEONG=[[2,5],[5,8],[2,8],[1,10],[10,7],[1,7],[0,3]];
+const PA=[[0,9],[1,4],[2,11],[3,6],[5,8],[7,10]];
+const HAE=[[0,7],[1,6],[2,5],[3,4],[8,11],[9,10]];
+function inPairs(list,a,b){ return list.some(p=>p.includes(a)&&p.includes(b)&&a!==b); }
+function branchRel(a,b){
+  if(a===b) return '같음';
+  if(inPairs(YUKHAP,a,b)) return '육합';
+  if(inPairs(SAMHAP,a,b)) return '삼합';
+  if(inPairs(CHUNG,a,b)) return '충';
+  if(inPairs(WONJIN,a,b)) return '원진';
+  if(inPairs(HYEONG,a,b)) return '형';
+  if(inPairs(PA,a,b)) return '파';
+  if(inPairs(HAE,a,b)) return '해';
+  return '무관';
+}
+function stemRel(a,b){
+  if(a===b) return '동일';
+  if((a%5)===(b%5)) return '비화';
+  if(Math.abs(a-b)===5) return '천간합';
+  const ea=STEM_ELE[a], eb=STEM_ELE[b];
+  if((ea+1)%5===eb) return '내가생';
+  if((eb+1)%5===ea) return '상대가생';
+  if((ea+2)%5===eb) return '내가극';
+  return '상대가극';
+}
+
+// ===== 해설 데이터 =====
+const ILGAN_TXT=[
+ ['갑목(甲木)','큰 나무처럼 곧고 진취적이에요. 리더십과 추진력이 있고 옳다고 믿는 일에는 굽히지 않아요. 다만 고집이 강해 유연함이 부족해 보일 수 있고, 시작은 잘하지만 마무리에서 힘이 빠지기 쉬워요.'],
+ ['을목(乙木)','풀과 덩굴처럼 유연하고 적응력이 뛰어나요. 환경에 맞춰 끈질기게 자리를 잡는 생활력이 강점이고, 사람들과 부드럽게 어울려요. 겉보기보다 속이 단단하지만, 결정을 미루거나 남에게 기대는 면이 있어요.'],
+ ['병화(丙火)','태양처럼 밝고 열정적이에요. 표현력이 좋고 주변을 환하게 만드는 에너지가 있어 어디서든 눈에 띄어요. 다만 감정이 얼굴에 드러나고 성급해지기 쉬우며, 뒷심이 약해질 때가 있어요.'],
+ ['정화(丁火)','촛불·등불처럼 따뜻하고 섬세해요. 배려심이 깊고 분위기를 잘 읽으며, 한 가지를 깊이 파고드는 집중력이 있어요. 겉은 부드러워도 속에는 뜨거운 고집이 있고, 감정 기복이 생기면 오래 가요.'],
+ ['무토(戊土)','큰 산처럼 듬직하고 신뢰감을 줘요. 중심이 잘 잡혀 있어 사람들이 기대고, 한번 맡은 일은 묵묵히 끝내요. 다만 변화를 싫어하고 고집스러워 보일 수 있으며, 속마음을 잘 드러내지 않아요.'],
+ ['기토(己土)','논밭의 흙처럼 실속 있고 포용력이 있어요. 현실 감각이 좋고 꼼꼼하게 챙기며, 사람을 키우고 돕는 역할이 잘 맞아요. 걱정이 많고 생각이 깊어 결정이 느려질 수 있어요.'],
+ ['경금(庚金)','원석·쇠처럼 결단력 있고 강직해요. 의리를 중시하고 옳고 그름이 분명하며, 큰일을 밀어붙이는 힘이 있어요. 직설적인 말이 오해를 부르기도 하고, 융통성이 부족해 보일 수 있어요.'],
+ ['신금(辛金)','보석처럼 예리하고 감각이 뛰어나요. 완벽주의 성향이 있어 일 처리가 깔끔하고, 미적 안목과 자존심이 강해요. 예민해서 상처를 잘 받고, 말에 날이 설 때가 있어요.'],
+ ['임수(壬水)','큰 강·바다처럼 지혜롭고 포용력이 커요. 자유롭고 개방적이며 큰 그림을 보는 시야가 있어요. 한곳에 머무르기 싫어하고, 생각이 많아 실행이 늦어지거나 감정을 숨기는 면이 있어요.'],
+ ['계수(癸水)','비·이슬처럼 섬세하고 직관이 뛰어나요. 감성이 풍부하고 사람 마음을 잘 헤아리며, 조용히 스며들어 영향력을 발휘해요. 걱정과 상상이 많고, 환경에 따라 기분이 크게 흔들릴 수 있어요.']
+];
+const ILJI_TXT=['생각이 깊고 지혜로우며 밤에 활동적인 편이에요. 속마음을 쉽게 드러내지 않아요.','성실하고 묵묵히 견디는 힘이 있어요. 느리지만 확실하게 쌓아가는 스타일이에요.','추진력이 있고 시작을 두려워하지 않아요. 독립심이 강하고 리더 역할이 잘 맞아요.','온화하고 예의 바르며 인기가 있어요. 감수성이 풍부하고 사람 사이의 균형을 중시해요.','포부가 크고 자존심이 강해요. 큰일을 맡을 때 능력이 드러나고 변화를 잘 다뤄요.','총명하고 언변이 좋아요. 겉은 차분하지만 속에는 강한 열정과 야망이 있어요.','활발하고 표현이 솔직해요. 열정적이지만 감정 기복이 있고 한번 마음 먹으면 빨라요.','온순하고 인정이 많으며 안정을 추구해요. 가정과 사람을 소중히 여기고 은근히 고집이 있어요.','재주가 많고 손재주·응용력이 뛰어나요. 변화에 빠르고 재치가 있으며 지루한 걸 못 참아요.','깔끔하고 원칙적이며 자기 관리에 철저해요. 미적 감각이 좋고 비판에 민감해요.','의리 있고 책임감이 강해요. 믿음직하지만 속마음을 잘 안 보이고 고집이 있어요.','포용력이 있고 순수하며 생각이 자유로워요. 정이 많고 남을 잘 도우며 낙천적이에요.'];
+const SIPSIN_DAY=[
+ ['비견','나와 같은 기운이 들어오는 날. 자기 주도적으로 움직이면 좋고, 동료·친구와의 협력이나 경쟁이 생길 수 있어요. 내 의견을 분명히 하되 고집은 조금 내려놓으세요.',62],
+ ['겁재','경쟁과 지출의 기운. 예상치 못한 돈 나갈 일이나 남과 부딪히는 일을 조심하세요. 동업·보증·큰 결제는 미루는 게 좋고, 운동이나 활동적인 일에 에너지를 쓰면 풀려요.',48],
+ ['식신','여유롭고 즐거운 기운. 먹을 복이 따르고 창의적인 일이 잘 풀려요. 사람들과 편하게 어울리고 표현을 아끼지 마세요. 건강·식사도 잘 챙겨지는 날이에요.',78],
+ ['상관','재치와 아이디어가 넘치는 날. 언변이 살아나지만 말이 앞서 구설이 생길 수 있어요. 창작·기획에는 좋고, 윗사람이나 규칙과 부딪히는 건 피하세요.',58],
+ ['편재','활동적인 재물의 기운. 뜻밖의 수입이나 좋은 기회가 오지만 그만큼 지출도 커질 수 있어요. 사교 활동이 잘 풀리고, 투자·구매는 충동보다 계획으로 하세요.',70],
+ ['정재','안정적인 수입과 실속의 기운. 꼼꼼하게 처리한 일이 결과로 돌아와요. 재무 정리, 계약 확인, 저축에 좋은 날이고 무리한 모험은 맞지 않아요.',74],
+ ['편관','압박과 도전의 기운. 갑작스러운 일이나 책임이 생길 수 있고 스트레스가 쌓이기 쉬워요. 사고·다툼을 조심하고, 정면 돌파보다 한 템포 쉬어가는 게 좋아요.',42],
+ ['정관','명예와 질서의 기운. 규칙을 지키고 성실하게 임하면 인정을 받아요. 윗사람·공적인 일·시험·면접에 유리하고, 격식을 갖추는 게 도움이 돼요.',72],
+ ['편인','생각이 많아지고 아이디어가 떠오르는 날. 공부·연구·혼자 하는 일에 좋지만 변덕과 고독감이 생길 수 있어요. 결정은 한 번 더 확인하고, 문서·계약은 세부를 살피세요.',56],
+ ['정인','배움과 귀인의 기운. 도움을 주는 사람이 나타나거나 문서·자격·학업에 좋은 소식이 있어요. 마음이 안정되고 공부가 잘되는 날이니 새 지식을 들이세요.',76]
+];
+const BREL_DAY={'육합':['오늘의 지지와 내 일지가 합을 이뤄요. 인간관계가 부드럽고 협력이 잘 되는 날이에요.',8],'삼합':['오늘의 지지가 내 일지와 삼합이에요. 사람들과 뜻이 모이고 일이 순조롭게 굴러가요.',6],'충':['오늘의 지지가 내 일지를 충해요. 변동·이동·다툼이 생기기 쉬우니 급한 결정과 말싸움은 피하세요.',-12],'원진':['원진 관계라 이유 없이 마음이 불편하거나 사람과 어긋날 수 있어요. 예민해지지 않게 여유를 두세요.',-8],'형':['형 관계라 사소한 마찰이나 규칙·법·건강 문제에 신경 쓸 일이 생길 수 있어요.',-6],'파':['파 관계라 계획이 틀어지거나 약속이 바뀔 수 있어요. 여유 있게 일정을 잡으세요.',-4],'해':['해 관계라 뜻하지 않은 방해가 있을 수 있어요. 세부를 한 번 더 확인하면 넘어가요.',-3],'같음':['오늘의 지지가 내 일지와 같아요. 익숙하고 편안한 흐름이지만 자기 고집이 세질 수 있어요.',2],'무관':['오늘의 지지와 내 일지는 특별한 합·충이 없어요. 무난하게 흘러가는 날이에요.',0]};
+const ELE_LACK=['목(木)이 부족하면 새로운 시작과 성장의 기운이 약해요. 초록색, 동쪽, 식물·산책이 도움이 돼요.','화(火)가 부족하면 열정과 표현력이 약해질 수 있어요. 붉은색, 남쪽, 햇빛과 활동적인 취미가 도움이 돼요.','토(土)가 부족하면 안정감과 끈기가 약해요. 노란·베이지색, 중심을 잡는 루틴과 규칙적인 생활이 도움이 돼요.','금(金)이 부족하면 결단력과 마무리가 약할 수 있어요. 흰색·금속색, 서쪽, 정리 정돈이 도움이 돼요.','수(水)가 부족하면 유연함과 지혜의 기운이 약해요. 검정·파랑, 북쪽, 충분한 수분과 휴식이 도움이 돼요.'];
+const ELE_MUCH=['목(木)이 많으면 추진력은 강하지만 고집과 조급함이 생기기 쉬워요. 금(金)의 절제가 균형을 잡아줘요.','화(火)가 많으면 열정적이지만 성급하고 감정 기복이 커요. 수(水)의 차분함이 균형을 잡아줘요.','토(土)가 많으면 듬직하지만 변화가 느리고 답답할 수 있어요. 목(木)의 활력이 균형을 잡아줘요.','금(金)이 많으면 원칙적이고 예리하지만 융통성이 부족해요. 화(火)의 따뜻함이 균형을 잡아줘요.','수(水)가 많으면 지혜롭지만 생각이 많고 우유부단해질 수 있어요. 토(土)의 안정이 균형을 잡아줘요.'];
+const STEM_MATCH={'천간합':['두 사람의 일간이 천간합(天干合)이에요. 명리에서 가장 좋게 보는 짝으로, 서로에게 끌리고 부족한 부분을 자연스럽게 채워줘요.',22],'동일':['일간이 같아요. 비슷한 기질이라 이해가 빠르지만 같은 데서 부딪히기도 해요. 역할을 나누면 좋아요.',8],'비화':['일간의 오행이 같아요. 친구처럼 편하고 이해가 빠르지만, 자존심 대결이 되지 않게 양보가 필요해요.',10],'내가생':['내 일간이 상대를 생(生)해요. 내가 주고 챙기는 쪽이 되기 쉬워요. 헌신이 당연해지지 않도록 표현을 받아내세요.',12],'상대가생':['상대의 일간이 나를 생(生)해요. 상대에게 받는 게 많고 의지가 돼요. 고마움을 표현하면 관계가 오래가요.',14],'내가극':['내 일간이 상대를 극(剋)해요. 내가 주도하는 관계가 되기 쉬워요. 상대의 의견을 먼저 묻는 습관이 필요해요.',4],'상대가극':['상대의 일간이 나를 극(剋)해요. 상대에게 맞추게 되는 관계라 답답함이 쌓일 수 있어요. 내 선을 분명히 하세요.',2]};
+const BR_MATCH={'육합':['육합(六合)이에요. 서로 끌리고 함께 있으면 편안한 궁합이에요.',16],'삼합':['삼합(三合)이에요. 같은 목표를 향해 힘을 모으기 좋은 관계예요.',12],'충':['충(沖)이에요. 자극이 강해 처음엔 끌리지만 부딪힘도 많아요. 거리와 시간을 조절하면 오래갈 수 있어요.',-14],'원진':['원진(怨嗔)이에요. 이유 없이 서운함이 쌓이기 쉬운 관계라 오해를 바로바로 풀어야 해요.',-10],'형':['형(刑)이에요. 서로를 다듬어주지만 그 과정이 아플 수 있어요. 말투에 신경 쓰세요.',-6],'파':['파(破)예요. 계획이 어긋나기 쉬우니 약속과 역할을 명확히 하세요.',-4],'해':['해(害)예요. 은근한 방해나 서운함이 생길 수 있어요. 솔직한 대화가 답이에요.',-3],'같음':['같은 지지예요. 취향과 생활 리듬이 비슷해 편하지만 새로움이 부족할 수 있어요.',6],'무관':['특별한 합·충이 없어요. 무난하게 서로를 존중하며 지내는 관계예요.',2]};
+
+// ===== 입력 UI =====
 document.querySelectorAll('.ymd').forEach(box=>{
   const hid=$(box.dataset.for), Y=box.querySelector('.y'), M=box.querySelector('.m'), D=box.querySelector('.d');
   const now=new Date().getFullYear();
@@ -82,46 +264,98 @@ document.querySelectorAll('.ymd').forEach(box=>{
   function sync(){ fillD(); const y=Y.value,m=M.value,d=D.value; hid.value=(y&&m&&d)? `${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}` : ''; }
   [Y,M,D].forEach(el=>el.addEventListener('change',sync)); fillD();
 });
+document.querySelectorAll('.hsel').forEach(sel=>{ sel.innerHTML='<option value="">모름</option>'+Array.from({length:24},(_,h)=>`<option value="${h}">${String(h).padStart(2,'0')}시 (${HOUR_LABEL[Math.floor((h+1)/2)%12].split('(')[0]})</option>`).join(''); });
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{ document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active')); b.classList.add('active'); ['saju','today','match'].forEach(t=>$(t+'Pane').classList.toggle('hidden',t!==b.dataset.t)); }));
+function readPerson(birthId,hourId,tstId){
+  const b=$(birthId).value; if(!b) return null;
+  const [y,m,d]=b.split('-').map(Number); const hv=$(hourId).value; const hour=hv===''? null : +hv;
+  const tst=tstId? $(tstId).checked : true;
+  return calcSaju(y,m,d,hour,tst);
+}
 
-document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');$('todayPane').classList.toggle('hidden',b.dataset.t!=='today');$('matchPane').classList.toggle('hidden',b.dataset.t!=='match');}));
-function hashCode(s){ let h=0; for(let i=0;i<s.length;i++){ h=(h*31+s.charCodeAt(i))|0; } return Math.abs(h); }
-function pick(arr,seed){ return arr[seed%arr.length]; }
-const TOTAL=['생각지도 못한 좋은 기회가 찾아올 수 있어요.','평소보다 마음이 편안한 하루가 될 거예요.','서두르지만 않으면 무난하게 흘러가는 날이에요.','작은 행운이 여기저기 숨어있어요, 잘 찾아보세요.','오늘은 컨디션 관리가 관건이에요.','뜻밖의 인연이나 소식이 있을 수 있어요.','평범해 보여도 나중에 돌아보면 의미 있는 하루예요.'];
-const LOVE=['솔직한 말 한마디가 관계를 더 가깝게 만들어요.','괜히 서운해하기보단 마음을 표현해보세요.','혼자만의 시간도 관계에 도움이 되는 날이에요.','작은 배려가 크게 느껴지는 하루예요.','오늘은 상대의 말을 한 번 더 들어주세요.'];
-const MONEY=['계획에 없던 지출은 한 번 더 생각해보세요.','작은 절약이 나중에 큰 도움이 될 수 있어요.','금전운은 무난, 다만 충동구매는 주의하세요.','뜻밖의 수입이나 좋은 소식이 있을 수 있어요.','오늘은 돈보다 시간 관리에 신경 써보세요.'];
-const HEALTH=['가볍게 몸을 움직여주면 컨디션이 좋아져요.','수분 섭취와 스트레칭, 잊지 마세요.','무리하지 말고 페이스 조절이 필요한 날이에요.','잠을 충분히 자는 게 오늘의 핵심이에요.','평소보다 몸의 신호에 귀 기울여보세요.'];
-const COLORS=['하늘색','노란색','초록색','보라색','주황색','베이지','네이비'];
-const ITEMS=['따뜻한 차 한 잔','손수건','작은 메모지','좋아하는 노래','우산','향긋한 핸드크림'];
-function seeToday(){
-  const b=$('birth1').value; if(!b){ $('todayOut').innerHTML='<div class="empty">생년월일을 입력해주세요</div>'; return; }
-  const today=new Date().toISOString().slice(0,10); const seed=hashCode(b+today);
-  const name=$('name1').value.trim()||'오늘';
-  $('todayOut').innerHTML=`<div class="big-result" style="font-size:20px">${name}님의 오늘</div>
-    <table style="margin-top:12px"><tbody>
-      <tr><td>총운</td><td class="r">${pick(TOTAL,seed)}</td></tr>
-      <tr><td>애정운</td><td class="r">${pick(LOVE,seed>>1)}</td></tr>
-      <tr><td>금전운</td><td class="r">${pick(MONEY,seed>>2)}</td></tr>
-      <tr><td>건강운</td><td class="r">${pick(HEALTH,seed>>3)}</td></tr>
-      <tr><td>행운의 색</td><td class="r">${pick(COLORS,seed>>4)}</td></tr>
-      <tr><td>행운의 숫자</td><td class="r">${(seed%9)+1}</td></tr>
-      <tr><td>행운의 아이템</td><td class="r">${pick(ITEMS,seed>>5)}</td></tr>
-    </tbody></table>
-    <div class="note" style="margin-top:10px">같은 생년월일이면 오늘 하루는 같은 결과가 나와요. 내일 다시 보면 새로운 운세가 나옵니다.</div>`;
+// ===== 렌더링 =====
+function pillarBox(label,p,me,isMe){
+  if(!p) return `<div class="pil"><div class="lb">${label}</div><div class="ch" style="color:var(--ink-soft)">?</div><div class="kr">시간 모름</div></div>`;
+  const ss=isMe?'<div class="ss me">일간(나)</div>':`<div class="ss">${SIPSIN[sipsin(me,p.s)]}</div>`;
+  const sb=`<div class="ss">${SIPSIN[sipsin(me,BR_MAIN[p.b])]}</div>`;
+  return `<div class="pil"><div class="lb">${label}</div><div class="ch e-${ELE_CLS[STEM_ELE[p.s]]}">${STEM[p.s]}</div><div class="kr">${STEM_KR[p.s]}·${ELE[STEM_ELE[p.s]]}</div>${ss}<div class="ch e-${ELE_CLS[BR_ELE[p.b]]}" style="margin-top:8px">${BR[p.b]}</div><div class="kr">${BR_KR[p.b]}·${ELE[BR_ELE[p.b]]}</div>${sb}</div>`;
+}
+function eleCount(s){
+  const c=[0,0,0,0,0]; [s.year,s.month,s.day,s.hour].forEach(p=>{ if(!p) return; c[STEM_ELE[p.s]]++; c[BR_ELE[p.b]]++; }); return c;
+}
+function ohaengHtml(c){
+  const total=c.reduce((a,b)=>a+b,0);
+  return `<div class="ohaeng">${c.map((n,i)=>`<div class="row5"><span class="nm e-${ELE_CLS[i]}">${ELE[i]}(${'木火土金水'[i]})</span><div class="bar"><i class="b-${ELE_CLS[i]}" style="width:${Math.round(n/total*100)}%"></i></div><span class="ct">${n}개 · ${Math.round(n/total*100)}%</span></div>`).join('')}</div>`;
+}
+function eleBalanceText(c){
+  const total=c.reduce((a,b)=>a+b,0); const out=[];
+  const lack=c.map((n,i)=>[n,i]).filter(x=>x[0]===0).map(x=>x[1]);
+  const much=c.map((n,i)=>[n,i]).filter(x=>x[0]/total>=0.4).map(x=>x[1]);
+  if(lack.length) lack.forEach(i=>out.push(ELE_LACK[i]));
+  if(much.length) much.forEach(i=>out.push(ELE_MUCH[i]));
+  if(!out.length) out.push('다섯 오행이 비교적 고르게 분포해 있어요. 한쪽으로 치우치지 않아 균형 잡힌 성향이지만, 특별히 강한 무기가 없다고 느낄 수도 있어요. 부족한 쪽보다 가장 약한 오행을 의식적으로 보완하면 좋아요.');
+  return out.map(t=>`<p>${t}</p>`).join('');
+}
+function luckyElement(c){ let min=0; c.forEach((n,i)=>{ if(n<c[min]) min=i; }); return min; }
+const LUCKY=[['초록·연두','동쪽','3, 8'],['빨강·주황','남쪽','2, 7'],['노랑·베이지','중앙','5, 10'],['흰색·은색','서쪽','4, 9'],['검정·파랑','북쪽','1, 6']];
+
+function sajuHtml(s,name){
+  const me=s.day.s; const c=eleCount(s);
+  const warn=s.nearBoundary?`<div class="warn">절기가 바뀌는 시각과 매우 가까운 출생이라 월주(또는 년주)가 사이트마다 다를 수 있어요. 정확한 출생 시각으로 다시 확인해보세요.</div>`:'';
+  return `<div class="note" style="margin-top:0">${esc(name||'나')}의 사주 · ${s.y}년 ${s.m}월 ${s.d}일생 · 오른쪽부터 년·월·일·시</div>
+  <div class="pillars">${pillarBox('시주(時柱)',s.hour,me,false)}${pillarBox('일주(日柱)',s.day,me,true)}${pillarBox('월주(月柱)',s.month,me,false)}${pillarBox('년주(年柱)',s.year,me,false)}</div>
+  ${warn}
+  <div class="block"><h3>오행 분포</h3>${ohaengHtml(c)}${eleBalanceText(c)}</div>
+  <div class="block"><h3>일간 ${ILGAN_TXT[me][0]} — 나의 기본 성향</h3><p>${ILGAN_TXT[me][1]}</p></div>
+  <div class="block"><h3>일주 ${gz(s.day)}(${gzKr(s.day)}) — 일지가 말하는 내면</h3><p>${ILJI_TXT[s.day.b]}</p><p class="note">일지는 명리에서 배우자 자리이자 나의 속마음을 나타내는 자리로 봐요. 띠는 년지 기준 <b>${BR_ANIMAL[s.year.b]}띠(${BR[s.year.b]})</b>예요.</p></div>
+  <div class="block"><h3>나에게 힘이 되는 오행</h3><p>가장 부족한 <b class="e-${ELE_CLS[luckyElement(c)]}">${ELE[luckyElement(c)]}(${'木火土金水'[luckyElement(c)]})</b> 기운이 보완 포인트예요. 색은 ${LUCKY[luckyElement(c)][0]}, 방향은 ${LUCKY[luckyElement(c)][1]}, 숫자는 ${LUCKY[luckyElement(c)][2]}이 어울려요.</p></div>`;
+}
+$('seeSaju').addEventListener('click',()=>{
+  const s=readPerson('birth1','hour1','tst1'); if(!s){ $('sajuOut').innerHTML='<div class="empty">생년월일을 선택해주세요</div>'; return; }
+  $('sajuOut').innerHTML=sajuHtml(s,$('name1').value.trim());
+  if(typeof gtag==='function') gtag('event','saju_viewed',{});
+});
+
+$('seeToday').addEventListener('click',()=>{
+  const s=readPerson('birth2','hour2',null); if(!s){ $('todayOut').innerHTML='<div class="empty">생년월일을 선택해주세요</div>'; return; }
+  const now=new Date(); const t=calcSaju(now.getFullYear(),now.getMonth()+1,now.getDate(),null,false);
+  const me=s.day.s; const ss=sipsin(me,t.day.s); const brel=branchRel(s.day.b,t.day.b);
+  const c=eleCount(s); const lucky=luckyElement(c);
+  let score=SIPSIN_DAY[ss][2]+BREL_DAY[brel][1];
+  if(STEM_ELE[t.day.s]===lucky||BR_ELE[t.day.b]===lucky){ score+=6; }
+  score=Math.max(20,Math.min(96,score));
+  const name=$('name2').value.trim()||'오늘';
+  const stars='★'.repeat(Math.round(score/20))+'☆'.repeat(5-Math.round(score/20));
+  $('todayOut').innerHTML=`<div class="today-jin"><div><div class="note" style="margin:0">${now.getFullYear()}년 ${now.getMonth()+1}월 ${now.getDate()}일의 일진</div><div class="ch"><span class="e-${ELE_CLS[STEM_ELE[t.day.s]]}">${STEM[t.day.s]}</span><span class="e-${ELE_CLS[BR_ELE[t.day.b]]}">${BR[t.day.b]}</span> <span style="font-size:16px;color:var(--ink-soft)">${gzKr(t.day)}일</span></div></div><div style="margin-left:auto;text-align:right"><div class="scorebig">${score}</div><div class="note" style="margin:0">${stars}</div></div></div>
+  <div class="block" style="border-top:0;padding-top:0"><h3>${esc(name)} — 일간 ${STEM[me]}(${STEM_KR[me]})에게 오늘은 <span class="tag">${SIPSIN_DAY[ss][0]}</span>의 날</h3><p>${SIPSIN_DAY[ss][1]}</p><p>${BREL_DAY[brel][0]}</p></div>
+  <div class="block"><h3>오늘의 포인트</h3><div class="mrow"><span class="k">행운 오행</span><span class="v e-${ELE_CLS[lucky]}"><b>${ELE[lucky]}(${'木火土金水'[lucky]})</b></span></div><div class="mrow"><span class="k">행운 색</span><span class="v">${LUCKY[lucky][0]}</span></div><div class="mrow"><span class="k">행운 방향</span><span class="v">${LUCKY[lucky][1]}</span></div><div class="mrow"><span class="k">행운 숫자</span><span class="v">${LUCKY[lucky][2]}</span></div><div class="mrow"><span class="k">오늘 일진과 내 일지</span><span class="v">${BR[t.day.b]} ↔ ${BR[s.day.b]} · ${brel}</span></div></div>
+  <p class="note">오늘의 일진 천간이 내 일간에게 어떤 십신인지, 오늘의 지지가 내 일지와 어떤 관계인지로 풀이했어요. 날짜가 바뀌면 근거가 달라져요.</p>`;
   if(typeof gtag==='function') gtag('event','fortune_today_viewed',{});
-}
-const MATCH_MSG={great:['찰떡궁합! 서로에게 좋은 영향을 주는 관계예요.','편안하면서도 서로를 성장시키는 좋은 궁합이에요.'],good:['잘 맞는 편이에요. 서로 조금만 배려하면 더 좋아져요.','대체로 무난하고 안정적인 궁합이에요.'],soso:['다른 점이 많지만 그만큼 서로에게 배울 게 많아요.','노력하기 나름인 궁합이에요. 대화가 열쇠예요.'],bad:['서로 다른 스타일이라 초반엔 부딪힐 수 있어요.','시간을 두고 서로를 이해해가면 괜찮아질 궁합이에요.']};
-function seeMatch(){
-  const a=$('birthA').value, b=$('birthB').value; if(!a||!b){ $('matchOut').innerHTML='<div class="empty">두 사람의 생년월일을 모두 입력해주세요</div>'; return; }
-  const key=[a,b].sort().join('|'); const seed=hashCode(key); const pct=30+(seed%70);
-  const tier= pct>=85?'great': pct>=65?'good': pct>=45?'soso':'bad';
-  $('matchOut').innerHTML=`<div class="big-result" style="font-size:36px">${pct}%</div>
-    <p style="font-size:15px;margin-top:8px">${pick(MATCH_MSG[tier],seed>>2)}</p>
-    <div class="note" style="margin-top:10px">같은 두 날짜를 넣으면 항상 같은 결과가 나와요. 재미로만 봐주세요.</div>`;
-  if(typeof gtag==='function') gtag('event','fortune_match_viewed',{pct});
-}
-$('seeToday').addEventListener('click',seeToday); $('seeMatch').addEventListener('click',seeMatch);
-const t=new Date().toISOString().slice(0,10);
+});
 
+$('seeMatch').addEventListener('click',()=>{
+  const a=readPerson('birthA','hourA',null), b=readPerson('birthB','hourB',null);
+  if(!a||!b){ $('matchOut').innerHTML='<div class="empty">두 사람의 생년월일을 모두 선택해주세요</div>'; return; }
+  const sr=stemRel(a.day.s,b.day.s), dr=branchRel(a.day.b,b.day.b), yr=branchRel(a.year.b,b.year.b);
+  const ca=eleCount(a), cb=eleCount(b);
+  const lackA=ca.map((n,i)=>n===0?i:-1).filter(i=>i>=0), lackB=cb.map((n,i)=>n===0?i:-1).filter(i=>i>=0);
+  const fillAB=lackA.filter(i=>cb[i]>=2), fillBA=lackB.filter(i=>ca[i]>=2);
+  let ele=0, eleTxt;
+  if(fillAB.length||fillBA.length){ ele=6+3*(fillAB.length+fillBA.length); eleTxt=`서로 부족한 오행을 채워줘요. ${fillAB.length?`상대는 나에게 없는 ${fillAB.map(i=>ELE[i]).join('·')} 기운을, `:''}${fillBA.length?`나는 상대에게 없는 ${fillBA.map(i=>ELE[i]).join('·')} 기운을 `:''}보태줘서 함께 있을 때 균형이 잡혀요.`; }
+  else if(!lackA.length&&!lackB.length){ ele=6; eleTxt='두 사람 모두 오행이 고른 편이라 특별히 기대는 부분 없이 대등하게 어울려요.'; }
+  else { ele=0; eleTxt='서로 부족한 오행이 겹치거나 채워주지 못해요. 같은 약점을 함께 의식하면 오히려 동지가 될 수 있어요.'; }
+  let score=50+STEM_MATCH[sr][1]+BR_MATCH[dr][1]+Math.round(BR_MATCH[yr][1]*0.6)+ele;
+  score=Math.max(25,Math.min(98,score));
+  const grade= score>=85?'천생연분에 가까운 궁합':score>=70?'잘 맞는 궁합':score>=55?'노력하면 좋아지는 궁합':'서로 다름을 인정해야 하는 궁합';
+  const pil=(s)=>`<b>${gz(s.day)}</b>(${gzKr(s.day)})일주 · ${BR_ANIMAL[s.year.b]}띠`;
+  $('matchOut').innerHTML=`<div style="text-align:center"><div class="note" style="margin:0">나 ${pil(a)}<br>상대 ${pil(b)}</div><div class="scorebig" style="margin:8px 0 2px">${score}<span style="font-size:18px">점</span></div><div style="font-weight:700">${grade}</div></div>
+  <div class="block"><h3>일간 관계 <span class="tag">${sr==='내가생'||sr==='상대가생'?'상생':sr==='내가극'||sr==='상대가극'?'상극':sr}</span></h3><p>${STEM_MATCH[sr][0]}</p></div>
+  <div class="block"><h3>일지 관계 <span class="tag">${BR[a.day.b]}·${BR[b.day.b]} ${dr}</span></h3><p>${BR_MATCH[dr][0]}</p><p class="note">일지는 배우자 자리라 연인·부부 궁합에서 가장 비중 있게 봐요.</p></div>
+  <div class="block"><h3>띠(년지) 관계 <span class="tag">${BR_ANIMAL[a.year.b]}·${BR_ANIMAL[b.year.b]} ${yr}</span></h3><p>${BR_MATCH[yr][0]}</p></div>
+  <div class="block"><h3>오행 보완</h3><p>${eleTxt}</p></div>
+  <p class="note">일간의 천간합·상생·상극, 일지·년지의 합·충 관계, 오행 보완 여부를 점수로 합산했어요. 명리학의 일반적인 해석이며 실제 관계는 두 사람의 노력에 달려 있어요.</p>`;
+  if(typeof gtag==='function') gtag('event','fortune_match_viewed',{});
+});
 </script>
 
 </body>

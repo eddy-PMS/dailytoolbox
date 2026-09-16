@@ -65,7 +65,7 @@
       ['mbti-test.html', '간이 MBTI 테스트'],
       ['worldcup.html', '이상형 월드컵'],
       ['balance-game.html', '밸런스 게임 생성기'],
-      ['fortune.html', '오늘의 운세 & 궁합'],
+      ['fortune.html', '사주 보기 & 오늘의 운세·궁합'],
       ['stress-test.html', '스트레스 지수 테스트']
     ]},
     { label: '군대', items: [

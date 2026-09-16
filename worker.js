@@ -108,7 +108,7 @@ export default {
         img: typeof (it && it.img) === 'string' ? it.img.slice(0, 6_000_000) : ''
       })).filter(it => it.name);
       if (cleanItems.length < 2) return json({ ok: false, error: 'need_more_items' }, 400);
-      const payload = JSON.stringify({ title, items: cleanItems, stats: {}, createdAt: Date.now() });
+      const payload = JSON.stringify({ title, items: cleanItems, stats: {}, totalPlays: 0, createdAt: Date.now() });
       if (payload.length > 24_000_000) return json({ ok: false, error: 'too_large' }, 413);
       const id = wcGenId();
       try {
@@ -126,7 +126,7 @@ export default {
       if (!/^[0-9a-z]{4,16}$/.test(id)) return json({ ok: false, error: 'invalid_id' }, 400);
       const data = await env.WORLDCUP_KV.get('wc:' + id, 'json');
       if (!data) return json({ ok: false, error: 'not_found' }, 404);
-      return json({ ok: true, title: data.title, items: data.items, stats: data.stats || {} });
+      return json({ ok: true, title: data.title, items: data.items, stats: data.stats || {}, totalPlays: data.totalPlays || 0 });
     }
 
     // ---- 이상형 월드컵: 결과 반영(승률 집계) ----
@@ -152,12 +152,13 @@ export default {
         data.stats[championIdx] = data.stats[championIdx] || { played: 0, champion: 0 };
         data.stats[championIdx].champion++;
       }
+      data.totalPlays = (data.totalPlays || 0) + 1;
       try {
         await env.WORLDCUP_KV.put(key, JSON.stringify(data), { expirationTtl: 60 * 60 * 24 * 180 });
       } catch (e) {
         return json({ ok: false, error: 'quota' }, 429);
       }
-      return json({ ok: true, stats: data.stats });
+      return json({ ok: true, stats: data.stats, totalPlays: data.totalPlays });
     }
 
     return env.ASSETS.fetch(request);

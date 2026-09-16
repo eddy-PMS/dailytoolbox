@@ -45,6 +45,7 @@
   <p class="sub">항목을 넣으면 무작위 토너먼트가 만들어져요. "공유 링크 만들기"를 누르면 짧은 링크가 생기고, 그 링크로 여러 사람이 플레이하면 우승 비율 랭킹도 쌓여요.</p>
 
   <div id="setup" class="card">
+    <div id="loadedBanner" class="hidden" style="background:var(--paper-deep);border-radius:4px;padding:12px 14px;margin-bottom:14px;font-size:14px"></div>
     <div class="tabs"><button class="tab active" data-m="url">텍스트 · 이미지 URL</button><button class="tab" data-m="upload">내 사진 올리기</button></div>
     <div id="urlPane">
       <div class="field"><label>제목</label><input type="text" id="title" placeholder="예: 최애 아이돌 월드컵" value="이상형 월드컵"></div>
@@ -61,6 +62,7 @@
     <div class="status" id="status"></div>
   </div>
   <div id="play" class="card hidden">
+    <h2 id="playTitle" style="font-size:16px;margin:0 0 10px;text-align:center"></h2>
     <div class="progress" style="display:flex;justify-content:space-between;font-size:13px;color:var(--ink-soft);margin-bottom:12px"><span id="roundText"></span><span id="matchText"></span></div>
     <div style="display:flex;gap:12px;align-items:stretch;flex-wrap:wrap;justify-content:center">
       <button class="wc-card" id="cardA"></button>
@@ -85,7 +87,7 @@
 
 const $=id=>document.getElementById(id);
 function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-let mode='url', items=[], bracket=[], round=[], winners=[], matchIdx=0, currentId=null, playedIdxSet=new Set();
+let mode='url', items=[], bracket=[], round=[], winners=[], matchIdx=0, currentId=null, playedIdxSet=new Set(), activeTitle='이상형 월드컵';
 
 document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.m;$('urlPane').classList.toggle('hidden',mode!=='url');$('uploadPane').classList.toggle('hidden',mode!=='upload');$('status').textContent='';updateSizeOptions();}));
 
@@ -153,7 +155,7 @@ $('cardA').addEventListener('click',()=>pick(0)); $('cardB').addEventListener('c
 
 async function finish(champ){
   $('play').classList.add('hidden'); $('resultWrap').classList.remove('hidden');
-  $('resultWrap').innerHTML=`<div style="text-align:center"><div style="font-size:14px;color:var(--ink-soft);margin-bottom:10px">🏆 우승</div>
+  $('resultWrap').innerHTML=`<div style="text-align:center"><div style="font-size:14px;color:var(--ink-soft);margin-bottom:4px">${esc(activeTitle)}</div><div style="font-size:14px;color:var(--ink-soft);margin-bottom:10px">🏆 우승</div>
     <div class="wc-card" style="margin:0 auto;cursor:default">${champ.img?`<img src="${esc(champ.img)}" alt="${esc(champ.name)}" referrerpolicy="no-referrer">`:''}<div class="wc-name" style="${champ.img?'':'font-size:26px'}">${esc(champ.name)}</div></div>
     <div class="btn-row" style="justify-content:center;margin-top:16px"><button class="btn" id="again">다시 하기</button></div>
     <div id="rankBox" style="margin-top:18px;text-align:left"></div></div>`;
@@ -163,48 +165,53 @@ async function finish(champ){
     try{
       const r=await fetch('/api/worldcup/vote',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({id:currentId, playedIdx:[...playedIdxSet], championIdx:champ._idx})});
       const d=await r.json();
-      if(d.ok) renderRanking(d.stats);
+      if(d.ok) renderRanking(d.stats, d.totalPlays);
     }catch(e){}
   }
 }
-function renderRanking(stats){
+function renderRanking(stats, totalPlays){
   const rows=items.map((it,i)=>{ const s=stats[i]||stats[String(i)]||{played:0,champion:0}; return {name:it.name, played:s.played||0, champion:s.champion||0}; })
     .filter(r=>r.played>0).sort((a,b)=>(b.champion/b.played)-(a.champion/a.played));
   if(!rows.length) return;
-  $('rankBox').innerHTML = `<h2 style="font-size:15px;margin-bottom:8px">우승 비율 랭킹 (누적)</h2><table><thead><tr><th>이름</th><th class="r">우승 비율</th><th class="r">등장/우승</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${esc(r.name)}</td><td class="r"><b>${Math.round(r.champion/r.played*100)}%</b></td><td class="r">${r.played} / ${r.champion}</td></tr>`).join('')}</tbody></table>`;
+  const totalLine = totalPlays!=null? `<div class="note" style="margin-bottom:8px">총 참여 ${totalPlays.toLocaleString()}회</div>` : '';
+  $('rankBox').innerHTML = `<h2 style="font-size:15px;margin-bottom:8px">우승 비율 랭킹 (누적)</h2>${totalLine}<table><thead><tr><th>이름</th><th class="r">우승 비율</th><th class="r">우승 횟수</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${esc(r.name)}</td><td class="r"><b>${Math.round(r.champion/r.played*100)}%</b></td><td class="r">${r.champion}</td></tr>`).join('')}</tbody></table>`;
 }
 
 function startLocal(size){
   bracket = shuffle(items.map((it,i)=>({...it,_idx:i}))).slice(0,size);
   round=bracket; winners=[]; matchIdx=0; playedIdxSet=new Set();
+  $('playTitle').textContent=activeTitle;
   $('setup').classList.add('hidden'); $('play').classList.remove('hidden'); showMatch();
   if(typeof gtag==='function') gtag('event','worldcup_started',{size});
 }
 
 $('start').addEventListener('click',async()=>{
   items=await collectItems(); const size=+$('size').value; if(!size||items.length<size) return;
+  if(currentId==null) activeTitle=currentTitle();
   startLocal(size);
 });
 
 $('share').addEventListener('click',async()=>{
   const its=await collectItems(); if(its.length<2){ $('status').innerHTML='<span class="bad">항목을 2개 이상 넣어주세요.</span>'; return; }
+  const t=currentTitle();
   $('share').disabled=true; $('status').textContent='만드는 중…';
   try{
-    const r=await fetch('/api/worldcup',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({title:currentTitle(), items:its})});
+    const r=await fetch('/api/worldcup',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({title:t, items:its})});
     const d=await r.json();
     if(!d.ok){
       const MSG={quota:'오늘 만들기 요청이 많아 잠시 제한됐어요. 내일 다시 시도해주세요.',too_large:'사진 용량이 너무 커요. 장 수를 줄이거나 더 작은 사진으로 시도해보세요.',need_more_items:'항목을 2개 이상 넣어주세요.'};
       $('status').innerHTML=`<span class="bad">${MSG[d.error]||'만들기에 실패했어요. 잠시 후 다시 시도해주세요.'}</span>`;
     } else {
+      currentId=d.id; activeTitle=t;
       const url=location.origin+location.pathname+'?id='+d.id;
-      try{ await navigator.clipboard.writeText(url); $('status').innerHTML=`<span class="ok">공유 링크를 복사했어요! (180일간 유지돼요)</span>`; }catch{ $('status').innerHTML=`<span class="ok">링크가 만들어졌어요:</span> ${esc(url)}`; }
+      try{ await navigator.clipboard.writeText(url); $('status').innerHTML=`<span class="ok">"${esc(t)}" 공유 링크를 복사했어요! (180일간 유지돼요)</span>`; }catch{ $('status').innerHTML=`<span class="ok">"${esc(t)}" 링크가 만들어졌어요:</span> ${esc(url)}`; }
       if(typeof gtag==='function') gtag('event','worldcup_shared',{n:its.length});
     }
   }catch(e){ $('status').innerHTML='<span class="bad">네트워크 오류로 실패했어요. 잠시 후 다시 시도해주세요.</span>'; }
   $('share').disabled=false;
 });
 
-// 짧은 링크(?id=)로 들어온 경우: 서버에서 불러와 바로 시작
+// 짧은 링크(?id=)로 들어온 경우: 제목과 항목 수를 먼저 보여주고, 버튼을 눌러야 시작하게 함
 (async function(){
   const qid=new URLSearchParams(location.search).get('id');
   if(qid && /^[0-9a-z]{4,16}$/.test(qid)){
@@ -212,11 +219,13 @@ $('share').addEventListener('click',async()=>{
     try{
       const r=await fetch('/api/worldcup?id='+encodeURIComponent(qid)); const d=await r.json();
       if(d.ok && d.items && d.items.length>=2){
-        currentId=qid; items=d.items;
+        currentId=qid; items=d.items; activeTitle=d.title||'이상형 월드컵';
         $('title').value=d.title; $('urlRows').innerHTML=''; d.items.forEach(it=>addUrlRow(it.name,it.img||''));
         updateSizeOptions(); $('status').textContent='';
         const size=nextPow2Floor(items.length); $('size').value=String(size);
-        startLocal(size);
+        $('loadedBanner').classList.remove('hidden');
+        $('loadedBanner').innerHTML=`🏆 <b>${esc(activeTitle)}</b> 월드컵을 불러왔어요 · 항목 ${items.length}개${d.totalPlays?` · 지금까지 참여 ${d.totalPlays.toLocaleString()}회`:''}<br>아래에서 대진표 크기를 확인하고 "시작하기"를 눌러주세요.`;
+        $('start').textContent='시작하기';
       } else {
         $('status').innerHTML='<span class="bad">링크를 찾을 수 없어요. 만료됐거나 잘못된 링크일 수 있어요.</span>';
       }

@@ -39,6 +39,14 @@
   <p class="tagline">이거 vs 저거, 당신의 선택은</p>
   <p class="sub">질문을 직접 만들어 친구에게 공유하거나, 기본 질문으로 바로 즐겨보세요.</p>
 
+  <div id="landing" class="card hidden" style="text-align:center">
+    <div class="note">⚖ 공유된 밸런스 게임</div>
+    <h2 id="landingTitle" style="font-size:22px;margin:4px 0 6px"></h2>
+    <div class="note" id="landingMeta" style="color:var(--ink-soft);font-size:13px"></div>
+    <div class="btn-row" style="justify-content:center;margin-top:16px"><button class="btn" id="landingStart" style="min-width:160px">시작하기</button></div>
+    <div class="note" style="margin-top:14px;font-size:13px"><a href="#" id="remix">질문을 고쳐서 내 것 만들기</a> · <a href="balance-game.html">새 게임 만들기</a></div>
+  </div>
+
   <div id="setup" class="card">
     <div class="field"><label>제목</label><input type="text" id="title" value="밸런스 게임"></div>
     <table><thead><tr><th>A</th><th>B</th><th></th></tr></thead><tbody id="rows"></tbody></table>
@@ -57,14 +65,14 @@
   <div id="resultWrap" class="card hidden"></div>
  <div class="ad-slot" data-ad="below-result"></div>
 <section class="seo">
-<h2>밸런스 게임이 재밌는 이유</h2><p>"평생 여름만 vs 평생 겨울만"처럼 둘 다 완벽하지 않은 선택지 중 하나를 고르는 게임이에요. 정답이 없어서 부담 없이 즐길 수 있고, 친구들과 답을 비교하면서 의외의 취향을 알게 되는 재미가 있어요. 기본으로 제공되는 질문으로 바로 즐기거나, 나만의 질문을 만들어 공유할 수 있어요.</p><p>만든 질문은 공유 링크 안에 그대로 담겨서 서버 저장 없이 친구에게 보낼 수 있어요. 소개팅, 회식, MT 아이스브레이킹용으로도 좋아요.</p>
+<h2>밸런스 게임이 재밌는 이유</h2><p>"평생 여름만 vs 평생 겨울만"처럼 둘 다 완벽하지 않은 선택지 중 하나를 고르는 게임이에요. 정답이 없어서 부담 없이 즐길 수 있고, 친구들과 답을 비교하면서 의외의 취향을 알게 되는 재미가 있어요. 기본으로 제공되는 질문으로 바로 즐기거나, 나만의 질문을 만들어 공유할 수 있어요.</p><p>"공유 링크 복사"를 누르면 짧은 링크(예: dailyfreetoolbox.com/balance-game?id=ab12cd34)가 만들어져 친구에게 바로 보낼 수 있어요. 소개팅, 회식, MT 아이스브레이킹용으로도 좋아요.</p>
 <h2>밸런스 게임 활용 아이디어</h2><p><table><thead><tr><th>상황</th><th>질문 소재 예시</th></tr></thead><tbody><tr><td>친구들과</td><td>음식, 여행, 초능력, 연애관</td></tr><tr><td>회사 아이스브레이킹</td><td>업무 스타일, 워라밸, 협업 방식</td></tr><tr><td>커플</td><td>데이트 취향, 미래 계획</td></tr></tbody></table></p>
 <h2>사용 방법</h2><ol><li>기본 질문으로 바로 시작하거나, 표에서 나만의 A/B 질문을 만드세요.</li><li>"시작하기"로 바로 플레이하거나 "공유 링크 복사"로 친구에게 보내세요.</li><li>A 또는 B를 선택하며 끝까지 진행하면 내 선택 목록이 정리돼 나와요.</li></ol>
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
-<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>질문 개수 제한이 있나요?</summary><p>제한은 없지만 너무 많으면 링크가 길어질 수 있어요. 10~20개 정도가 적당해요.</p></details><details><summary>상대방과 답을 비교할 수 있나요?</summary><p>같은 링크로 각자 플레이한 뒤 결과 화면을 캡처해서 비교해보세요. 실시간 비교 기능은 없어요.</p></details><details><summary>만든 질문을 수정하려면요?</summary><p>공유 링크를 열면 그 질문들이 채워진 채로 나오니, 내용을 고쳐서 새 링크를 다시 만들면 돼요.</p></details></section>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>질문 개수 제한이 있나요?</summary><p>최대 100개까지 넣을 수 있어요. 플레이하는 사람이 지치지 않게 10~20개 정도가 적당해요.</p></details><details><summary>공유 링크는 언제까지 유지되나요?</summary><p>만든 날로부터 30일 동안 유지되고, 그 뒤엔 자동으로 삭제돼요(연장 없음). 남은 기간은 링크를 열면 표시돼요.</p></details><details><summary>상대방과 답을 비교할 수 있나요?</summary><p>같은 링크로 각자 플레이한 뒤 결과 화면을 캡처해서 비교해보세요. 실시간 비교 기능은 없어요.</p></details><details><summary>만든 질문을 수정하려면요?</summary><p>공유 링크를 열고 "질문을 고쳐서 내 것 만들기"를 누르면 질문이 채워진 편집 화면이 나와요. 고친 뒤 새 링크를 만들면 돼요.</p></details></section>
 <section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="worldcup.html">이상형 월드컵 생성기</a><a href="random-pick.html">랜덤 뽑기</a><a href="ladder.html">사다리타기</a></div></section>
-  <footer>만든 질문은 링크 안에 그대로 담겨 있어서 서버에 저장되지 않아요. 링크를 잃어버리면 복구할 수 없으니 꼭 저장해두세요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
+  <footer>공유 링크의 제목·질문은 서버(Cloudflare KV)에 저장돼 짧은 링크로 공유되고, 만든 날로부터 30일 뒤 자동 삭제돼요. 링크를 잃어버리면 찾을 수 없으니 저장해두세요.<br><span class="version-tag">v1.1 · 2026-09-16 업데이트</span></footer>
 </main>
 
 <script>
@@ -73,8 +81,10 @@ function b64encode(obj){ return btoa(unescape(encodeURIComponent(JSON.stringify(
 function b64decode(str){ str=str.replace(/-/g,'+').replace(/_/g,'/'); while(str.length%4) str+='='; try{ return JSON.parse(decodeURIComponent(escape(atob(str)))); }catch(e){ return null; } }
 
 const $=id=>document.getElementById(id);
+function expiryText(expiresAt){ if(!expiresAt) return ''; const ms=expiresAt*1000-Date.now(); const days=Math.max(0,Math.ceil(ms/86400000)); const d=new Date(expiresAt*1000); const date=`${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`; return days<=1? `오늘 만료 (${date})` : `남은 기간 ${days}일 (${date}까지)`; }
+function esc(v){ return String(v==null?'':v).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 const DEFAULT=[['평생 여름만','평생 겨울만'],['돈은 많은데 시간 없음','시간은 많은데 돈 없음'],['하늘을 나는 능력','투명인간 되는 능력'],['맛없는데 건강한 음식','맛있는데 몸에 안 좋은 음식'],['인기 많지만 외로움','인기 없지만 절친 한 명'],['과거로 시간여행','미래로 시간여행']];
-function addRow(a='',b=''){ const tr=document.createElement('tr'); tr.innerHTML=`<td><input type="text" class="a" value="${a}" placeholder="A" style="padding:8px"></td><td><input type="text" class="b" value="${b}" placeholder="B" style="padding:8px"></td><td><button class="btn-ghost del" style="padding:6px 10px">×</button></td>`; $('rows').appendChild(tr); tr.querySelector('.del').addEventListener('click',()=>tr.remove()); }
+function addRow(a='',b=''){ const tr=document.createElement('tr'); tr.innerHTML=`<td><input type="text" class="a" value="${esc(a)}" placeholder="A" style="padding:8px"></td><td><input type="text" class="b" value="${esc(b)}" placeholder="B" style="padding:8px"></td><td><button class="btn-ghost del" style="padding:6px 10px">×</button></td>`; $('rows').appendChild(tr); tr.querySelector('.del').addEventListener('click',()=>tr.remove()); }
 DEFAULT.forEach(([a,b])=>addRow(a,b));
 $('addRow').addEventListener('click',()=>addRow());
 
@@ -87,9 +97,10 @@ $('optA').addEventListener('click',()=>choose('A')); $('optB').addEventListener(
 
 function finish(){
   $('play').classList.add('hidden'); $('resultWrap').classList.remove('hidden');
-  const rows=pairs.map((p,i)=>`<tr><td>${i+1}. ${p[0]} vs ${p[1]}</td><td class="r"><b>${choices[i]==='A'?p[0]:p[1]}</b></td></tr>`).join('');
-  $('resultWrap').innerHTML=`<h2 style="font-size:16px;margin-bottom:10px">내 선택 결과</h2><table><tbody>${rows}</tbody></table><div class="btn-row"><button class="btn" id="again">다시 하기</button></div>`;
-  $('again').addEventListener('click',()=>{ idx=0; choices=[]; $('resultWrap').classList.add('hidden'); $('setup').classList.remove('hidden'); });
+  const rows=pairs.map((p,i)=>`<tr><td>${i+1}. ${esc(p[0])} vs ${esc(p[1])}</td><td class="r"><b>${esc(choices[i]==='A'?p[0]:p[1])}</b></td></tr>`).join('');
+  $('resultWrap').innerHTML=`<h2 style="font-size:16px;margin-bottom:10px">내 선택 결과</h2><table><tbody>${rows}</tbody></table><div class="btn-row"><button class="btn" id="again">다시 하기</button>${currentId?'<button class="btn-ghost" id="copyLink">링크 복사</button><a class="btn-ghost" href="balance-game.html" style="text-decoration:none;display:inline-block">나도 만들기</a>':''}</div><div class="status" id="resultStatus"></div>${currentId&&currentExpires?`<div class="note" style="font-size:12px;color:var(--ink-soft)">이 게임 링크 ${expiryText(currentExpires)}</div>`:''}`;
+  $('again').addEventListener('click',()=>{ idx=0; choices=[]; $('resultWrap').classList.add('hidden'); $(currentId?'landing':'setup').classList.remove('hidden'); });
+  if(currentId){ $('copyLink').addEventListener('click',async()=>{ const url=location.origin+location.pathname+'?id='+currentId; try{ await navigator.clipboard.writeText(url); $('resultStatus').innerHTML='<span class="ok">링크를 복사했어요!</span>'; }catch{ $('resultStatus').textContent=url; } }); }
   if(typeof gtag==='function') gtag('event','balance_game_finished',{n:pairs.length});
 }
 
@@ -99,18 +110,46 @@ $('start').addEventListener('click',()=>{
   $('setup').classList.add('hidden'); $('play').classList.remove('hidden'); showQ();
   if(typeof gtag==='function') gtag('event','balance_game_started',{n:pairs.length});
 });
+let currentId=null, currentExpires=null;
+async function copyUrl(url,okMsg){ try{ await navigator.clipboard.writeText(url); $('status').innerHTML=`<span class="ok">${okMsg}</span>`; }catch{ $('status').innerHTML=`<span class="ok">링크가 만들어졌어요:</span> ${esc(url)}`; } }
 $('share').addEventListener('click',async()=>{
-  const p=collectPairs(); if(p.length<1) return;
-  const url=location.origin+location.pathname+'#'+b64encode({title:$('title').value||'밸런스 게임', pairs:p});
-  try{ await navigator.clipboard.writeText(url); $('status').innerHTML='<span class="ok">공유 링크를 복사했어요!</span>'; }catch{ $('status').textContent=url; }
+  const p=collectPairs(); if(p.length<1){ $('status').innerHTML='<span class="bad">질문을 1개 이상 넣어주세요.</span>'; return; }
+  const title=$('title').value||'밸런스 게임';
+  $('share').disabled=true; $('status').textContent='링크 만드는 중…';
+  try{
+    const r=await fetch('/api/balance',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({title, pairs:p})});
+    const d=await r.json();
+    if(d.ok){ currentId=d.id; currentExpires=d.expiresAt||null; await copyUrl(location.origin+location.pathname+'?id='+d.id,'공유 링크를 복사했어요!'+(currentExpires?` <span class="note">· ${expiryText(currentExpires)}</span>`:'')); }
+    else throw new Error(d.error||'fail');
+  }catch(e){
+    // 서버 저장이 안 되면 예전처럼 링크 안에 내용을 담아 보냄 (길지만 동작은 함)
+    await copyUrl(location.origin+location.pathname+'#'+b64encode({title, pairs:p}),'공유 링크를 복사했어요! (서버 사정으로 긴 링크가 만들어졌어요)');
+  }
+  $('share').disabled=false;
   if(typeof gtag==='function') gtag('event','balance_game_shared',{});
 });
-(function(){
-  if(location.hash.length>1){
+function fillForm(data){ $('title').value=data.title||'밸런스 게임'; $('rows').innerHTML=''; data.pairs.forEach(([a,b])=>addRow(a,b)); }
+function showLanding(data){
+  fillForm(data); pairs=data.pairs;
+  $('landingTitle').textContent=data.title||'밸런스 게임';
+  $('landingMeta').textContent=`${data.pairs.length}문제 · 첫 질문: ${data.pairs[0][0]} vs ${data.pairs[0][1]}${data.expiresAt?` · ${expiryText(data.expiresAt)}`:''}`;
+  $('setup').classList.add('hidden'); $('landing').classList.remove('hidden');
+  document.querySelector('.tagline').textContent='친구가 공유한 밸런스 게임이에요';
+  $('landingStart').addEventListener('click',()=>{ pairs=collectPairs(); if(pairs.length<1) return; idx=0; choices=[]; $('landing').classList.add('hidden'); $('play').classList.remove('hidden'); showQ(); if(typeof gtag==='function') gtag('event','balance_game_started',{n:pairs.length}); });
+  $('remix').addEventListener('click',e=>{ e.preventDefault(); currentId=null; $('landing').classList.add('hidden'); $('setup').classList.remove('hidden'); $('status').innerHTML='<span class="ok">복사본을 편집 중이에요. 질문을 고친 뒤 "공유 링크 복사"를 누르면 새 링크가 생겨요.</span>'; });
+}
+(async function(){
+  const qid=new URLSearchParams(location.search).get('id');
+  if(qid && /^[0-9a-z]{4,16}$/.test(qid)){
+    $('status').textContent='불러오는 중…';
+    try{
+      const r=await fetch('/api/balance?id='+encodeURIComponent(qid)); const d=await r.json();
+      if(d.ok && d.pairs && d.pairs.length){ currentId=qid; currentExpires=d.expiresAt||null; $('status').textContent=''; showLanding(d); }
+      else $('status').innerHTML='<span class="bad">링크를 찾을 수 없어요. 만료됐거나 잘못된 링크일 수 있어요.</span>';
+    }catch(e){ $('status').innerHTML='<span class="bad">불러오기에 실패했어요.</span>'; }
+  } else if(location.hash.length>1){
     const data=b64decode(location.hash.slice(1));
-    if(data && data.pairs && data.pairs.length){
-      $('title').value=data.title||'밸런스 게임'; $('rows').innerHTML=''; data.pairs.forEach(([a,b])=>addRow(a,b));
-    }
+    if(data && data.pairs && data.pairs.length) showLanding(data);
   }
 })();
 

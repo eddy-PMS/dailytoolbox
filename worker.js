@@ -2,6 +2,10 @@
 
 
 const WC_ID_CHARS = '23456789abcdefghjkmnpqrstuvwxyz';
+const SHARE_TTL_DAYS = 30;                       // 공유 데이터 보관 기간. 만든 시점 기준으로 고정, 열거나 플레이해도 연장되지 않음
+const SHARE_TTL = 60 * 60 * 24 * SHARE_TTL_DAYS;
+// 만료 시각(초 단위 unix time). 이후 모든 put 은 expirationTtl 대신 이 절대 시각을 써서 만료가 밀리지 않게 함
+function expiresAtOf(createdAtMs) { return Math.floor(createdAtMs / 1000) + SHARE_TTL; }
 const VOTE_SAMPLE_AFTER = 100; // 이 참여 수부터 표본 집계
 const VOTE_SAMPLE_RATE = 5;    // 5회 중 1회만 KV 에 기록
 function wcGenId() {
@@ -100,6 +104,35 @@ export default {
     }
 
 
+    // ---- 밸런스 게임: 짧은 공유 링크 (제목 + A/B 질문 목록을 KV 에 30일 저장) ----
+    if (url.pathname === '/api/balance' && request.method === 'POST') {
+      if (!isSameOrigin(request, host)) return json({ ok: false, error: 'forbidden' }, 403);
+      if (!env.WORLDCUP_KV) return json({ ok: false, error: 'not_configured' }, 500);
+      let body;
+      try { body = await request.json(); } catch { return json({ ok: false, error: 'bad_request' }, 400); }
+      const title = String(body.title || '밸런스 게임').slice(0, 60);
+      const pairs = (Array.isArray(body.pairs) ? body.pairs.slice(0, 100) : [])
+        .map(p => Array.isArray(p) ? [String(p[0] || '').slice(0, 80), String(p[1] || '').slice(0, 80)] : null)
+        .filter(p => p && p[0] && p[1]);
+      if (pairs.length < 1) return json({ ok: false, error: 'need_more_items' }, 400);
+      const id = wcGenId();
+      const createdAt = Date.now(), expiresAt = expiresAtOf(createdAt);
+      try {
+        await env.WORLDCUP_KV.put('bg:' + id, JSON.stringify({ title, pairs, createdAt, expiresAt }), { expiration: expiresAt });
+      } catch (e) {
+        return json({ ok: false, error: 'quota' }, 429);
+      }
+      return json({ ok: true, id, expiresAt });
+    }
+    if (url.pathname === '/api/balance' && request.method === 'GET') {
+      if (!env.WORLDCUP_KV) return json({ ok: false, error: 'not_configured' }, 500);
+      const id = (url.searchParams.get('id') || '').trim();
+      if (!/^[0-9a-z]{4,16}$/.test(id)) return json({ ok: false, error: 'invalid_id' }, 400);
+      const data = await env.WORLDCUP_KV.get('bg:' + id, 'json');
+      if (!data) return json({ ok: false, error: 'not_found' }, 404);
+      return json({ ok: true, title: data.title, pairs: data.pairs, expiresAt: data.expiresAt || expiresAtOf(data.createdAt || Date.now()) }, 200, { 'cache-control': 'public, max-age=3600' });
+    }
+
     // ---- 이상형 월드컵: 만들기 ----
     if (url.pathname === '/api/worldcup' && request.method === 'POST') {
       if (!isSameOrigin(request, host)) return json({ ok: false, error: 'forbidden' }, 403);
@@ -114,15 +147,16 @@ export default {
         img: typeof (it && it.img) === 'string' ? it.img.slice(0, 6_000_000) : ''
       })).filter(it => it.name);
       if (cleanItems.length < 2) return json({ ok: false, error: 'need_more_items' }, 400);
-      const payload = JSON.stringify({ title, items: cleanItems, stats: {}, totalPlays: 0, createdAt: Date.now() });
+      const createdAt = Date.now(), expiresAt = expiresAtOf(createdAt);
+      const payload = JSON.stringify({ title, items: cleanItems, stats: {}, totalPlays: 0, createdAt, expiresAt });
       if (payload.length > 24_000_000) return json({ ok: false, error: 'too_large' }, 413);
       const id = wcGenId();
       try {
-        await env.WORLDCUP_KV.put('wc:' + id, payload, { expirationTtl: 60 * 60 * 24 * 180 });
+        await env.WORLDCUP_KV.put('wc:' + id, payload, { expiration: expiresAt });
       } catch (e) {
         return json({ ok: false, error: 'quota' }, 429);
       }
-      return json({ ok: true, id });
+      return json({ ok: true, id, expiresAt });
     }
 
     // ---- 이상형 월드컵: 불러오기 ----
@@ -132,7 +166,7 @@ export default {
       if (!/^[0-9a-z]{4,16}$/.test(id)) return json({ ok: false, error: 'invalid_id' }, 400);
       const data = await env.WORLDCUP_KV.get('wc:' + id, 'json');
       if (!data) return json({ ok: false, error: 'not_found' }, 404);
-      return json({ ok: true, title: data.title, items: data.items, stats: data.stats || {}, totalPlays: data.totalPlays || 0 });
+      return json({ ok: true, title: data.title, items: data.items, stats: data.stats || {}, totalPlays: data.totalPlays || 0, expiresAt: data.expiresAt || expiresAtOf(data.createdAt || Date.now()) });
     }
 
     // ---- 이상형 월드컵: 결과 반영(승률 집계) ----
@@ -166,8 +200,10 @@ export default {
         data.stats[championIdx].champion += weight;
       }
       data.totalPlays += weight;
+      // 만료 시각은 만들 때 정한 값 그대로 (투표해도 연장되지 않음). 예전 데이터에 expiresAt 이 없으면 생성 시각 기준으로 계산
+      if (!data.expiresAt) data.expiresAt = expiresAtOf(data.createdAt || Date.now());
       try {
-        await env.WORLDCUP_KV.put(key, JSON.stringify(data), { expirationTtl: 60 * 60 * 24 * 180 });
+        await env.WORLDCUP_KV.put(key, JSON.stringify(data), { expiration: data.expiresAt });
       } catch (e) {
         // 쓰기 한도 초과 시에도 플레이는 정상 종료되도록 현재 통계를 그대로 돌려준다
         return json({ ok: true, stats: data.stats, totalPlays: data.totalPlays, sampled: true, saved: false });
@@ -193,6 +229,26 @@ export default {
             .on('meta[property="og:url"]', { element(el) { el.setAttribute('content', `https://${url.hostname}/worldcup?id=${id}`); } });
           // 공유 썸네일은 항목 사진 대신 월드컵 전용 이미지를 고정 사용 (사용자 사진은 비율이 제각각이라 잘려 보임)
           return rewriter.transform(assetRes);
+        }
+      }
+    }
+
+    // ---- 밸런스 게임 공유 페이지: 제목·설명을 게임 내용으로 치환 ----
+    if ((url.pathname === '/balance-game.html' || url.pathname === '/balance-game') && url.searchParams.has('id') && env.WORLDCUP_KV) {
+      const id = url.searchParams.get('id');
+      if (/^[0-9a-z]{4,16}$/.test(id)) {
+        const data = await env.WORLDCUP_KV.get('bg:' + id, 'json');
+        if (data && Array.isArray(data.pairs) && data.pairs.length >= 1) {
+          const assetRes = await env.ASSETS.fetch(request);
+          const bgTitle = data.title || '밸런스 게임';
+          const bgDesc = `${data.pairs[0][0]} vs ${data.pairs[0][1]}${data.pairs.length > 1 ? ` 외 ${data.pairs.length - 1}문제` : ''} — 당신의 선택은?`;
+          return new HTMLRewriter()
+            .on('title', { element(el) { el.setInnerContent(`${bgTitle} - 밸런스 게임`); } })
+            .on('meta[name="description"]', { element(el) { el.setAttribute('content', bgDesc); } })
+            .on('meta[property="og:title"]', { element(el) { el.setAttribute('content', bgTitle); } })
+            .on('meta[property="og:description"]', { element(el) { el.setAttribute('content', bgDesc); } })
+            .on('meta[property="og:url"]', { element(el) { el.setAttribute('content', `https://${url.hostname}/balance-game?id=${id}`); } })
+            .transform(assetRes);
         }
       }
     }

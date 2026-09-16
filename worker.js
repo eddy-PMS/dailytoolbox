@@ -188,7 +188,9 @@ export default {
             .on('title', { element(el) { el.setInnerContent(`${wcTitle} - 이상형 월드컵`); } })
             .on('meta[name="description"]', { element(el) { el.setAttribute('content', wcDesc); } })
             .on('meta[property="og:title"]', { element(el) { el.setAttribute('content', wcTitle); } })
-            .on('meta[property="og:description"]', { element(el) { el.setAttribute('content', wcDesc); } });
+            .on('meta[property="og:description"]', { element(el) { el.setAttribute('content', wcDesc); } })
+            // 카카오 스크랩은 og:url 이 공유 주소와 다르면 og:url 쪽 메타를 읽을 수 있어, 공유 링크 자체를 og:url 로 지정
+            .on('meta[property="og:url"]', { element(el) { el.setAttribute('content', `https://${url.hostname}/worldcup?id=${id}`); } });
           // 공유 썸네일은 항목 사진 대신 월드컵 전용 이미지를 고정 사용 (사용자 사진은 비율이 제각각이라 잘려 보임)
           return rewriter.transform(assetRes);
         }

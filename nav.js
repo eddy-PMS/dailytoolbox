@@ -91,7 +91,12 @@
       ['random-pick.html', '랜덤 뽑기'],
       ['kakao-analyzer.html', '카카오톡 대화 분석기'],
       ['quote-card.html', '감성 문구 카드'],
-      ['ascii-art.html', '아스키 아트 생성기']
+      ['ascii-art.html', '아스키 아트 생성기'],
+      ['mbti-test.html', '간이 MBTI 테스트'],
+      ['worldcup.html', '이상형 월드컵'],
+      ['balance-game.html', '밸런스 게임 생성기'],
+      ['fortune.html', '오늘의 운세 & 궁합'],
+      ['stress-test.html', '스트레스 지수 테스트']
     ]},
     { label: '군대', items: [
       ['discharge.html', '전역일 계산기'],

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>오늘의 운세 & 궁합 보기 - 생년월일로 재미있게 (참고용)</title>
+<meta name="description" content="생년월일을 넣으면 오늘의 운세를, 두 사람 생년월일로 궁합을 재미로 보여주는 무료 도구. 실제 사주·점술과는 무관한 오락용 콘텐츠입니다.">
+<meta name="keywords" content="오늘의 운세, 생년월일 운세, 궁합 보기, 커플 궁합 테스트, 재미로 보는 운세">
+<link rel="canonical" href="https://dailyfreetoolbox.com/fortune.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="오늘의 운세 & 궁합 보기">
+<meta property="og:description" content="생년월일을 넣으면 오늘의 운세를, 두 사람 생년월일로 궁합을 재미로 보여주는 무료 도구. 실제 사주·점술과는 무관한 오락용 콘텐츠입니다.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/fortune.html">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "오늘의 운세 & 궁합 보기", "url": "https://dailyfreetoolbox.com/fortune.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "생년월일을 넣으면 오늘의 운세를, 두 사람 생년월일로 궁합을 재미로 보여주는 무료 도구. 실제 사주·점술과는 무관한 오락용 콘텐츠입니다."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#a83a2c; --accent-deep:#8a2f23; }</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "진짜 사주를 보는 건가요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 생년월일을 재료로 재미로 만든 콘텐츠이고, 실제 사주명리학과는 무관해요."}}, {"@type": "Question", "name": "같은 생년월일인데 결과가 매번 달라요.", "acceptedAnswer": {"@type": "Answer", "text": "오늘 하루 안에서는 항상 같은 결과가 나와요. 날짜가 바뀌면 새로운 결과로 바뀝니다."}}, {"@type": "Question", "name": "궁합 퍼센트가 낮게 나왔어요, 안 좋은 건가요?", "acceptedAnswer": {"@type": "Answer", "text": "재미로 보는 숫자일 뿐이에요. 실제 관계는 서로 어떻게 노력하느냐에 달려 있어요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#a83a2c"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🔮 오늘의 운세 & 궁합</b></div>
+  <h1>오늘의 운세 & 궁합 보기</h1>
+  <p class="tagline">오늘은 어떤 하루일까요</p>
+  <p class="sub">생년월일을 넣으면 오늘의 운세를 보여드려요. 두 사람 생년월일을 넣으면 궁합도 볼 수 있어요. 재미로 보는 콘텐츠예요.</p>
+
+  <div class="tabs"><button class="tab active" data-t="today">오늘의 운세</button><button class="tab" data-t="match">궁합 보기</button></div>
+  <div class="card" id="todayPane">
+    <div class="grid2">
+      <div class="field"><label>이름 (선택)</label><input type="text" id="name1" placeholder="홍길동"></div>
+      <div class="field"><label>생년월일</label><input type="date" id="birth1"></div>
+    </div>
+    <div class="btn-row"><button class="btn" id="seeToday">오늘의 운세 보기</button></div>
+    <div id="todayOut" style="margin-top:14px"></div>
+  </div>
+  <div class="card hidden" id="matchPane">
+    <div class="grid2">
+      <div class="field"><label>나의 생년월일</label><input type="date" id="birthA"></div>
+      <div class="field"><label>상대방 생년월일</label><input type="date" id="birthB"></div>
+    </div>
+    <div class="btn-row"><button class="btn" id="seeMatch">궁합 보기</button></div>
+    <div id="matchOut" style="margin-top:14px"></div>
+  </div>
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>이 운세는 어떻게 만들어지나요</h2><p>생년월일과 오늘 날짜를 조합해 매일 다른(하지만 그날 하루는 항상 같은) 결과를 보여줘요. 실제 사주명리학의 천간지지나 오행 계산과는 무관한, 재미로 즐기는 콘텐츠예요. 같은 생년월일이면 오늘 하루 동안은 몇 번을 봐도 같은 결과가 나오고, 내일이 되면 새로운 운세로 바뀝니다.</p><p>궁합도 마찬가지로 두 사람의 생년월일을 조합해 재미로 보는 결과예요. 실제 궁합이나 상성을 판단하는 근거로 쓰기보다는, 대화 소재나 가벼운 즐길 거리로 봐주세요.</p>
+<h2>재미로 보는 콘텐츠, 이렇게 즐기세요</h2><p><table><tbody><tr><td>추천</td><td>친구·연인과 함께 보고 대화 소재로 삼기</td></tr><tr><td>비추천</td><td>중요한 결정(투자, 이직, 만남 여부)을 이 결과로 판단하기</td></tr></tbody></table></p>
+<h2>사용 방법</h2><ol><li>"오늘의 운세" 탭에서 생년월일을 넣으면 오늘 하루의 운세가 나와요.</li><li>"궁합 보기" 탭에서 두 사람의 생년월일을 넣으면 궁합 결과가 나와요.</li><li>내일 다시 보면 오늘의 운세는 새로운 내용으로 바뀌어요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>진짜 사주를 보는 건가요?</summary><p>아니요. 생년월일을 재료로 재미로 만든 콘텐츠이고, 실제 사주명리학과는 무관해요.</p></details><details><summary>같은 생년월일인데 결과가 매번 달라요.</summary><p>오늘 하루 안에서는 항상 같은 결과가 나와요. 날짜가 바뀌면 새로운 결과로 바뀝니다.</p></details><details><summary>궁합 퍼센트가 낮게 나왔어요, 안 좋은 건가요?</summary><p>재미로 보는 숫자일 뿐이에요. 실제 관계는 서로 어떻게 노력하느냐에 달려 있어요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="mbti-test.html">간이 MBTI 테스트</a><a href="age.html">만 나이 계산기</a><a href="dday.html">D-day 계산기</a></div></section>
+  <footer>이 콘텐츠는 오락 목적의 참고용이며 실제 사주·점술과는 무관해요. 중요한 결정은 이 결과와 상관없이 신중하게 판단하세요.</footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');$('todayPane').classList.toggle('hidden',b.dataset.t!=='today');$('matchPane').classList.toggle('hidden',b.dataset.t!=='match');}));
+function hashCode(s){ let h=0; for(let i=0;i<s.length;i++){ h=(h*31+s.charCodeAt(i))|0; } return Math.abs(h); }
+function pick(arr,seed){ return arr[seed%arr.length]; }
+const TOTAL=['생각지도 못한 좋은 기회가 찾아올 수 있어요.','평소보다 마음이 편안한 하루가 될 거예요.','서두르지만 않으면 무난하게 흘러가는 날이에요.','작은 행운이 여기저기 숨어있어요, 잘 찾아보세요.','오늘은 컨디션 관리가 관건이에요.','뜻밖의 인연이나 소식이 있을 수 있어요.','평범해 보여도 나중에 돌아보면 의미 있는 하루예요.'];
+const LOVE=['솔직한 말 한마디가 관계를 더 가깝게 만들어요.','괜히 서운해하기보단 마음을 표현해보세요.','혼자만의 시간도 관계에 도움이 되는 날이에요.','작은 배려가 크게 느껴지는 하루예요.','오늘은 상대의 말을 한 번 더 들어주세요.'];
+const MONEY=['계획에 없던 지출은 한 번 더 생각해보세요.','작은 절약이 나중에 큰 도움이 될 수 있어요.','금전운은 무난, 다만 충동구매는 주의하세요.','뜻밖의 수입이나 좋은 소식이 있을 수 있어요.','오늘은 돈보다 시간 관리에 신경 써보세요.'];
+const HEALTH=['가볍게 몸을 움직여주면 컨디션이 좋아져요.','수분 섭취와 스트레칭, 잊지 마세요.','무리하지 말고 페이스 조절이 필요한 날이에요.','잠을 충분히 자는 게 오늘의 핵심이에요.','평소보다 몸의 신호에 귀 기울여보세요.'];
+const COLORS=['하늘색','노란색','초록색','보라색','주황색','베이지','네이비'];
+const ITEMS=['따뜻한 차 한 잔','손수건','작은 메모지','좋아하는 노래','우산','향긋한 핸드크림'];
+function seeToday(){
+  const b=$('birth1').value; if(!b){ $('todayOut').innerHTML='<div class="empty">생년월일을 입력해주세요</div>'; return; }
+  const today=new Date().toISOString().slice(0,10); const seed=hashCode(b+today);
+  const name=$('name1').value.trim()||'오늘';
+  $('todayOut').innerHTML=`<div class="big-result" style="font-size:20px">${name}님의 오늘</div>
+    <table style="margin-top:12px"><tbody>
+      <tr><td>총운</td><td class="r">${pick(TOTAL,seed)}</td></tr>
+      <tr><td>애정운</td><td class="r">${pick(LOVE,seed>>1)}</td></tr>
+      <tr><td>금전운</td><td class="r">${pick(MONEY,seed>>2)}</td></tr>
+      <tr><td>건강운</td><td class="r">${pick(HEALTH,seed>>3)}</td></tr>
+      <tr><td>행운의 색</td><td class="r">${pick(COLORS,seed>>4)}</td></tr>
+      <tr><td>행운의 숫자</td><td class="r">${(seed%9)+1}</td></tr>
+      <tr><td>행운의 아이템</td><td class="r">${pick(ITEMS,seed>>5)}</td></tr>
+    </tbody></table>
+    <div class="note" style="margin-top:10px">같은 생년월일이면 오늘 하루는 같은 결과가 나와요. 내일 다시 보면 새로운 운세가 나옵니다.</div>`;
+  if(typeof gtag==='function') gtag('event','fortune_today_viewed',{});
+}
+const MATCH_MSG={great:['찰떡궁합! 서로에게 좋은 영향을 주는 관계예요.','편안하면서도 서로를 성장시키는 좋은 궁합이에요.'],good:['잘 맞는 편이에요. 서로 조금만 배려하면 더 좋아져요.','대체로 무난하고 안정적인 궁합이에요.'],soso:['다른 점이 많지만 그만큼 서로에게 배울 게 많아요.','노력하기 나름인 궁합이에요. 대화가 열쇠예요.'],bad:['서로 다른 스타일이라 초반엔 부딪힐 수 있어요.','시간을 두고 서로를 이해해가면 괜찮아질 궁합이에요.']};
+function seeMatch(){
+  const a=$('birthA').value, b=$('birthB').value; if(!a||!b){ $('matchOut').innerHTML='<div class="empty">두 사람의 생년월일을 모두 입력해주세요</div>'; return; }
+  const key=[a,b].sort().join('|'); const seed=hashCode(key); const pct=30+(seed%70);
+  const tier= pct>=85?'great': pct>=65?'good': pct>=45?'soso':'bad';
+  $('matchOut').innerHTML=`<div class="big-result" style="font-size:36px">${pct}%</div>
+    <p style="font-size:15px;margin-top:8px">${pick(MATCH_MSG[tier],seed>>2)}</p>
+    <div class="note" style="margin-top:10px">같은 두 날짜를 넣으면 항상 같은 결과가 나와요. 재미로만 봐주세요.</div>`;
+  if(typeof gtag==='function') gtag('event','fortune_match_viewed',{pct});
+}
+$('seeToday').addEventListener('click',seeToday); $('seeMatch').addEventListener('click',seeMatch);
+const t=new Date().toISOString().slice(0,10);
+
+</script>
+
+</body>
+</html>

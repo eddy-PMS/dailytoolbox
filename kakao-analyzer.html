@@ -156,6 +156,7 @@ function analyze(msgs){
   return {users,byUser,total:msgs.length,days,first,last};
 }
 function topWords(obj,n){ return Object.entries(obj).sort((a,b)=>b[1]-a[1]).slice(0,n); }
+function allWords(obj){ return Object.entries(obj).sort((a,b)=>b[1]-a[1]); }
 function avg(arr){ return arr.length? arr.reduce((a,b)=>a+b,0)/arr.length : null; }
 function fmtMin(m){ if(m==null) return '-'; if(m<1) return '1분 미만'; if(m<60) return Math.round(m)+'분'; return (m/60).toFixed(1)+'시간'; }
 function render(a){
@@ -166,7 +167,7 @@ function render(a){
       <div class="note" style="margin-top:10px">자주 쓴 단어: ${words.map(w=>w[0]+'('+w[1]+')').join(', ')||'-'}</div>
       <div class="note" style="margin-top:4px">말버릇 (자주 쓰는 짧은 표현): ${habits.length? habits.map(w=>w[0]+'('+w[1]+')').join(', ') : '뚜렷한 게 없어요'}</div>
       <div class="note" style="margin-top:4px">웃음 표현(ㅋㅋ·ㅎㅎ류) ${b.laughs.toLocaleString()}회 · 눈물 표현(ㅠㅠ·ㅜㅜ류) ${b.cries.toLocaleString()}회</div>
-      <div class="note" style="margin-top:4px">자주 틀리는 표현: ${topWords(b.typos,6).length? topWords(b.typos,6).map(w=>w[0]+'('+w[1]+'회)').join(', ') : '눈에 띄는 게 없어요'}</div>
+      <div class="note" style="margin-top:4px">자주 틀리는 표현: ${allWords(b.typos).length? allWords(b.typos).map(w=>w[0]+'('+w[1]+'회)').join(', ') : '눈에 띄는 게 없어요'}</div>
       <div class="note" style="margin-top:4px">자판이 밀린 오타 (예: ${b.jamoSamples.length? b.jamoSamples.join(', ') : '없음'}) 총 ${b.jamoCount.toLocaleString()}회</div></div>`; }).join('');
   const winner=ranked[0];
   $('result').innerHTML=`<div class="card"><div class="big-result" style="font-size:22px">총 ${total.toLocaleString()}개 메시지<small>${a.first.toLocaleDateString('ko-KR')} ~ ${a.last.toLocaleDateString('ko-KR')} (${a.days}일간)</small></div>

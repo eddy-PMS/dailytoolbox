@@ -133,6 +133,39 @@ export default {
       return json({ ok: true, title: data.title, pairs: data.pairs, expiresAt: data.expiresAt || expiresAtOf(data.createdAt || Date.now()) }, 200, { 'cache-control': 'public, max-age=3600' });
     }
 
+    // ---- 축구 라인업: 짧은 공유 링크 (경기 정보·명단·배치·메모를 KV 에 30일 저장) ----
+    if (url.pathname === '/api/lineup' && request.method === 'POST') {
+      if (!isSameOrigin(request, host)) return json({ ok: false, error: 'forbidden' }, 403);
+      if (!env.WORLDCUP_KV) return json({ ok: false, error: 'not_configured' }, 500);
+      let b;
+      try { b = await request.json(); } catch { return json({ ok: false, error: 'bad_request' }, 400); }
+      const str = (v, n) => String(v || '').slice(0, n);
+      const size = [5, 6, 7, 8, 9, 11].includes(+b.size) ? +b.size : 11;
+      const players = (Array.isArray(b.players) ? b.players.slice(0, 40) : []).map(p => ({ name: str(p && p.name, 12), no: str(p && p.no, 2) })).filter(p => p.name);
+      const slots = (Array.isArray(b.slots) ? b.slots.slice(0, 11) : []).map(s => ({
+        x: Math.max(0, Math.min(100, +s.x || 0)), y: Math.max(0, Math.min(100, +s.y || 0)),
+        role: str(s && s.role, 2), p: (Number.isInteger(s && s.p) && s.p >= 0 && s.p < players.length) ? s.p : null
+      }));
+      if (!slots.some(s => s.p != null)) return json({ ok: false, error: 'need_more_items' }, 400);
+      const data = { team: str(b.team, 30), vs: str(b.vs, 30), when: str(b.when, 30), place: str(b.place, 30), size, formation: str(b.formation, 12), color: Math.max(0, Math.min(7, +b.color || 0)), players, slots, memo: str(b.memo, 1000) };
+      const id = wcGenId();
+      const createdAt = Date.now(), expiresAt = expiresAtOf(createdAt);
+      try {
+        await env.WORLDCUP_KV.put('lu:' + id, JSON.stringify({ data, createdAt, expiresAt }), { expiration: expiresAt });
+      } catch (e) {
+        return json({ ok: false, error: 'quota' }, 429);
+      }
+      return json({ ok: true, id, expiresAt });
+    }
+    if (url.pathname === '/api/lineup' && request.method === 'GET') {
+      if (!env.WORLDCUP_KV) return json({ ok: false, error: 'not_configured' }, 500);
+      const id = (url.searchParams.get('id') || '').trim();
+      if (!/^[0-9a-z]{4,16}$/.test(id)) return json({ ok: false, error: 'invalid_id' }, 400);
+      const rec = await env.WORLDCUP_KV.get('lu:' + id, 'json');
+      if (!rec) return json({ ok: false, error: 'not_found' }, 404);
+      return json({ ok: true, data: rec.data, expiresAt: rec.expiresAt }, 200, { 'cache-control': 'public, max-age=3600' });
+    }
+
     // ---- 이상형 월드컵: 만들기 ----
     if (url.pathname === '/api/worldcup' && request.method === 'POST') {
       if (!isSameOrigin(request, host)) return json({ ok: false, error: 'forbidden' }, 403);
@@ -248,6 +281,28 @@ export default {
             .on('meta[property="og:title"]', { element(el) { el.setAttribute('content', bgTitle); } })
             .on('meta[property="og:description"]', { element(el) { el.setAttribute('content', bgDesc); } })
             .on('meta[property="og:url"]', { element(el) { el.setAttribute('content', `https://${url.hostname}/balance-game?id=${id}`); } })
+            .transform(assetRes);
+        }
+      }
+    }
+
+    // ---- 라인업 공유 페이지: 제목·설명을 경기 정보로 치환 ----
+    if ((url.pathname === '/lineup.html' || url.pathname === '/lineup') && url.searchParams.has('id') && env.WORLDCUP_KV) {
+      const id = url.searchParams.get('id');
+      if (/^[0-9a-z]{4,16}$/.test(id)) {
+        const rec = await env.WORLDCUP_KV.get('lu:' + id, 'json');
+        if (rec && rec.data) {
+          const d = rec.data;
+          const assetRes = await env.ASSETS.fetch(request);
+          const luTitle = `${d.team || '우리 팀'} 라인업${d.when ? ' · ' + d.when : ''}`;
+          const starters = d.slots.filter(s => s.p != null).length;
+          const luDesc = `${d.size}인제 ${d.formation} · 선발 ${starters}명${d.vs ? ' · vs ' + d.vs : ''}${d.place ? ' · ' + d.place : ''}`;
+          return new HTMLRewriter()
+            .on('title', { element(el) { el.setInnerContent(`${luTitle} - 축구 라인업`); } })
+            .on('meta[name="description"]', { element(el) { el.setAttribute('content', luDesc); } })
+            .on('meta[property="og:title"]', { element(el) { el.setAttribute('content', luTitle); } })
+            .on('meta[property="og:description"]', { element(el) { el.setAttribute('content', luDesc); } })
+            .on('meta[property="og:url"]', { element(el) { el.setAttribute('content', `https://${url.hostname}/lineup?id=${id}`); } })
             .transform(assetRes);
         }
       }

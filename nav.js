@@ -76,7 +76,8 @@
       ['onerm.html', '1RM 계산기'],
       ['macros.html', '단백질·칼로리 계산기'],
       ['bmi.html', 'BMI·체지방률'],
-      ['pace.html', '러닝 페이스 계산기']
+      ['pace.html', '러닝 페이스 계산기'],
+      ['lineup.html', '축구 라인업 & 전술판']
     ]},
     { label: '재테크', items: [
       ['avgprice.html', '평단가 계산기'],

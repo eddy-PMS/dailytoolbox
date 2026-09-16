@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>축구 라인업 & 전술판 - 포메이션 짜고 팀원에게 공유</title>
+<meta name="description" content="조기축구·풋살 동호회용 무료 라인업 메이커. 5~11인 포메이션을 고르고 선수 이름을 배치해 전술판을 만든 뒤 이미지 저장이나 링크로 팀원에게 공유하세요.">
+<meta name="keywords" content="축구 라인업 메이커, 축구 전술판, 포메이션 만들기, 조기축구 라인업, 풋살 포메이션, 선발 명단 공유, 축구 동호회, 라인업 이미지">
+<link rel="canonical" href="https://dailyfreetoolbox.com/lineup.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="축구 라인업 & 전술판 - 포메이션 짜고 팀원에게 공유">
+<meta property="og:description" content="5~11인 포메이션을 고르고 선수 이름을 배치해 전술판을 만든 뒤, 이미지 저장이나 링크로 팀원에게 공유하는 무료 도구.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/lineup.html">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "축구 라인업 & 전술판", "url": "https://dailyfreetoolbox.com/lineup.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "조기축구·풋살 동호회용 라인업 메이커. 5~11인 포메이션을 고르고 선수를 배치해 전술판을 만든 뒤 이미지 저장이나 링크로 팀원에게 공유하는 무료 도구."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#2f7d4f; --accent-deep:#23603c; }
+.lay{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:720px){.lay{grid-template-columns:1fr}}
+.pitchwrap{position:relative;background:#fff;border:1px solid var(--line);border-radius:4px;padding:8px}
+svg.pitch{width:100%;height:auto;display:block;touch-action:none;user-select:none;-webkit-user-select:none}
+.tok{cursor:grab}.tok.dragging{cursor:grabbing}
+.tok.sel circle.body{stroke:#ffd23f;stroke-width:4}
+.roster{border:1px solid var(--line);border-radius:3px;background:#fff;max-height:340px;overflow:auto}
+.roster .pr{display:flex;align-items:center;gap:8px;padding:7px 10px;border-bottom:1px solid var(--paper-deep);font-size:14px}
+.roster .pr:last-child{border-bottom:0}
+.roster .pr .no{width:26px;height:26px;border-radius:50%;background:var(--paper-deep);font-size:12px;display:flex;align-items:center;justify-content:center;flex:none;font-weight:700}
+.roster .pr .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.roster .pr .pos{font-size:11px;color:var(--ink-soft);white-space:nowrap}
+.roster .pr button{padding:4px 8px;font-size:12px}
+.roster .pr.onfield{background:#f2f8f4}
+.hint{font-size:12px;color:var(--ink-soft);margin:6px 0 0;line-height:1.6}
+.sel-banner{background:#fff8e1;border:1px solid #f0dcb8;border-radius:3px;padding:8px 10px;font-size:13px;margin-bottom:8px}
+.colors{display:flex;gap:6px;align-items:center}.colors span{width:24px;height:24px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line);cursor:pointer}.colors span.on{box-shadow:0 0 0 2px var(--accent)}
+.info-line{font-size:13px;color:var(--ink-soft);margin-top:4px}
+.landing-head{text-align:center;margin-bottom:10px}.landing-head h2{font-size:22px;margin:4px 0 4px}.landing-head .note{margin:0}
+.rlist{display:grid;grid-template-columns:1fr 1fr;gap:4px 14px;font-size:14px}@media(max-width:520px){.rlist{grid-template-columns:1fr}}
+.rlist div{padding:5px 0;border-bottom:1px solid var(--paper-deep)}
+.rlist b{display:inline-block;min-width:34px;color:var(--ink-soft);font-size:12px}
+.memo-view{white-space:pre-wrap;font-size:14px;line-height:1.7;background:#fffdf8;border:1px solid var(--line);border-radius:3px;padding:12px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "선수 위치를 자유롭게 옮길 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 포메이션을 고르면 기본 위치가 잡히고, 경기장 위의 선수를 드래그해서 원하는 곳으로 옮길 수 있어요. 한 선수를 다른 선수 위에 놓으면 두 사람의 자리가 바뀌어요."}}, {"@type": "Question", "name": "카톡 단톡방에 어떻게 올리나요?", "acceptedAnswer": {"@type": "Answer", "text": "\"이미지로 저장\"을 누르면 전술판이 PNG 파일로 저장돼 사진처럼 올릴 수 있고, \"공유 링크 만들기\"를 누르면 짧은 링크가 생겨 팀원이 열어볼 수 있어요."}}, {"@type": "Question", "name": "링크는 얼마나 유지되나요?", "acceptedAnswer": {"@type": "Answer", "text": "만든 날로부터 30일 동안 유지되고 그 뒤엔 자동으로 삭제돼요. 이미지로 저장해두면 기간과 상관없이 남아요."}}, {"@type": "Question", "name": "풋살이나 7인제도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "5인(풋살)부터 6·7·8·9·11인까지 인원별 포메이션을 제공해요. 인원을 바꾸면 그에 맞는 포메이션 목록이 나와요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f7d4f"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>⚽ 축구 라인업 & 전술판</b></div>
+  <h1>축구 라인업 & 전술판</h1>
+  <p class="tagline">이번 주 선발, 이걸로 한 방에 공지</p>
+  <p class="sub">인원과 포메이션을 고르고 명단에서 선수를 자리에 배치하세요. 드래그로 위치를 다듬고, 전술 메모까지 적어서 이미지나 링크로 팀원에게 보내면 끝이에요.</p>
+
+  <div id="landing" class="card hidden">
+    <div class="landing-head"><div class="note">⚽ 공유된 라인업</div><h2 id="lTeam"></h2><div class="note" id="lMeta"></div></div>
+    <div class="pitchwrap"><svg class="pitch" id="lPitch" viewBox="0 0 360 560" xmlns="http://www.w3.org/2000/svg"></svg></div>
+    <div class="btn-row" style="justify-content:center"><button class="btn" id="lSave">이미지로 저장</button><button class="btn-ghost" id="lCopy">링크 복사</button><button class="btn-ghost" id="lRemix">복사해서 편집</button></div>
+    <div class="status" id="lStatus" style="text-align:center"></div>
+    <div class="block" style="margin-top:14px"><h3 style="font-size:15px;margin:0 0 8px">선발 명단</h3><div class="rlist" id="lStart"></div></div>
+    <div class="block" id="lBenchWrap" style="margin-top:14px"><h3 style="font-size:15px;margin:0 0 8px">후보 명단</h3><div class="rlist" id="lBench"></div></div>
+    <div class="block" id="lMemoWrap" style="margin-top:14px"><h3 style="font-size:15px;margin:0 0 8px">전술 메모</h3><div class="memo-view" id="lMemo"></div></div>
+    <div class="note" style="text-align:center;margin-top:14px;font-size:13px"><a href="lineup.html">새 라인업 만들기</a></div>
+  </div>
+
+  <div id="editor">
+  <div class="card">
+    <h2>경기 정보</h2>
+    <div class="grid2">
+      <div class="field"><label>팀 이름</label><input type="text" id="team" placeholder="예: FC 주말러" maxlength="30"></div>
+      <div class="field"><label>상대팀 (선택)</label><input type="text" id="vs" placeholder="예: 강북 유나이티드" maxlength="30"></div>
+      <div class="field"><label>경기 일시 (선택)</label><input type="text" id="when" placeholder="예: 9/21(일) 07:00" maxlength="30"></div>
+      <div class="field"><label>장소 (선택)</label><input type="text" id="place" placeholder="예: 잠실 보조경기장" maxlength="30"></div>
+      <div class="field"><label>인원</label><select id="size"><option value="11">11인제</option><option value="9">9인제</option><option value="8">8인제</option><option value="7">7인제</option><option value="6">6인제</option><option value="5">5인제 (풋살)</option></select></div>
+      <div class="field"><label>포메이션</label><select id="formation"></select></div>
+      <div class="field"><label>유니폼 색</label><div class="colors" id="colors"></div></div>
+    </div>
+  </div>
+
+  <div class="lay">
+    <div class="card">
+      <h2>전술판</h2>
+      <div id="selBanner" class="sel-banner hidden"></div>
+      <div class="pitchwrap"><svg class="pitch" id="pitch" viewBox="0 0 360 560" xmlns="http://www.w3.org/2000/svg"></svg></div>
+      <p class="hint">자리(동그라미)를 누른 뒤 오른쪽 명단에서 선수를 고르면 배치돼요. 드래그로 위치를 옮기고, 다른 선수 위에 놓으면 서로 자리가 바뀌어요. 자리를 두 번 누르면 비워져요.</p>
+      <div class="btn-row"><button class="btn-ghost" id="autoFill">명단 순서대로 자동 배치</button><button class="btn-ghost" id="resetPos">기본 위치로</button><button class="btn-ghost" id="clearField">전부 비우기</button></div>
+    </div>
+    <div class="card">
+      <h2>선수 명단</h2>
+      <div class="field"><label>이름을 한 줄에 한 명씩 (번호는 "이름 7" 또는 "7 이름")</label><textarea id="rosterText" placeholder="김민수 7
+박지훈 10
+9 이서연
+정도윤" style="min-height:110px"></textarea></div>
+      <div class="btn-row" style="margin-top:8px"><button class="btn" id="applyRoster">명단 반영</button></div>
+      <div class="roster" id="roster" style="margin-top:10px"></div>
+      <p class="hint">배치되지 않은 선수는 자동으로 후보 명단이 돼요.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>전술 메모 (선택)</h2>
+    <textarea id="memo" placeholder="예)
+- 수비 라인 하프라인까지 올리고 전방 압박
+- 코너킥: 왼쪽 민수 / 오른쪽 지훈
+- 후반 15분 교체: 도윤 → 서연
+- 집합 06:40, 유니폼 흰색" style="min-height:120px" maxlength="1000"></textarea>
+    <div class="btn-row"><button class="btn" id="save">이미지로 저장</button><button class="btn" id="share">공유 링크 만들기</button></div>
+    <div class="status" id="status"></div>
+  </div>
+  </div>
+
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>동호회 라인업, 매주 공지하기 귀찮으셨죠</h2><p>조기축구·풋살 동호회는 매주 누가 어디에 서는지 정하는 게 일이에요. 단톡방에 글로 쓰면 못 보고 지나치고, 손으로 그리면 매번 다시 그려야 하죠. 이 도구는 인원(5·6·7·8·9·11인)과 포메이션을 고르고 선수 이름만 넣으면 전술판이 만들어져요. 경기장 위에서 드래그로 위치를 다듬을 수 있고, 명단에 있지만 배치되지 않은 선수는 자동으로 후보가 돼요.</p>
+<p>완성한 전술판은 두 가지로 공유해요. <b>이미지로 저장</b>은 PNG 파일을 내려받아 단톡방에 사진처럼 올리는 방식이고, <b>공유 링크</b>는 짧은 주소로 팀원이 열어서 명단·후보·전술 메모까지 볼 수 있는 방식이에요. 링크를 연 팀원이 "복사해서 편집"으로 자기 버전을 만들 수도 있어요.</p>
+<h2>인원별 기본 포메이션</h2><p><table><thead><tr><th>인원</th><th>제공 포메이션</th><th>많이 쓰는 상황</th></tr></thead><tbody><tr><td>11인제</td><td>4-4-2, 4-3-3, 4-2-3-1, 3-5-2, 3-4-3, 5-3-2, 4-1-4-1</td><td>정식 경기, 조기축구 리그</td></tr><tr><td>9인제</td><td>3-3-2, 3-2-3, 2-4-2, 4-3-1</td><td>인원이 부족한 주말 경기</td></tr><tr><td>8인제</td><td>3-3-1, 2-3-2, 3-2-2, 2-4-1</td><td>풋살장보다 큰 미니 구장</td></tr><tr><td>7인제</td><td>2-3-1, 3-2-1, 2-2-2, 3-1-2</td><td>미니 구장, 직장인 리그</td></tr><tr><td>6인제</td><td>2-2-1, 2-1-2, 1-3-1</td><td>소규모 친선 경기</td></tr><tr><td>5인제</td><td>1-2-1, 2-2, 1-1-2, 2-1-1</td><td>풋살</td></tr></tbody></table></p>
+<h2>사용 방법</h2><ol><li>팀 이름과 경기 정보를 적고 인원·포메이션·유니폼 색을 고르세요.</li><li>선수 명단을 한 줄에 한 명씩 붙여넣고 "명단 반영"을 누르세요. 번호는 이름 앞이나 뒤에 붙이면 돼요.</li><li>경기장의 자리를 누르고 명단에서 선수를 고르거나, "명단 순서대로 자동 배치"를 누르세요. 드래그로 위치를 다듬으세요.</li><li>전술 메모를 적고 "이미지로 저장" 또는 "공유 링크 만들기"로 팀원에게 보내세요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>선수 위치를 자유롭게 옮길 수 있나요?</summary><p>네. 포메이션을 고르면 기본 위치가 잡히고, 경기장 위의 선수를 드래그해서 원하는 곳으로 옮길 수 있어요. 한 선수를 다른 선수 위에 놓으면 두 사람의 자리가 바뀌어요.</p></details><details><summary>카톡 단톡방에 어떻게 올리나요?</summary><p>"이미지로 저장"을 누르면 전술판이 PNG 파일로 저장돼 사진처럼 올릴 수 있고, "공유 링크 만들기"를 누르면 짧은 링크가 생겨 팀원이 열어볼 수 있어요.</p></details><details><summary>링크는 얼마나 유지되나요?</summary><p>만든 날로부터 30일 동안 유지되고 그 뒤엔 자동으로 삭제돼요. 이미지로 저장해두면 기간과 상관없이 남아요.</p></details><details><summary>풋살이나 7인제도 되나요?</summary><p>5인(풋살)부터 6·7·8·9·11인까지 인원별 포메이션을 제공해요. 인원을 바꾸면 그에 맞는 포메이션 목록이 나와요.</p></details><details><summary>쿼터별로 다른 라인업을 만들고 싶어요.</summary><p>지금은 라인업 하나에 전술 메모로 교체 계획을 적는 방식이에요. 쿼터마다 다른 라인업이 필요하면 각각 만들어 링크를 따로 보내주세요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="team.html">팀 나누기</a><a href="ladder.html">사다리타기</a><a href="random-pick.html">랜덤 뽑기</a><a href="worktime.html">근무시간 계산기</a></div></section>
+  <footer>공유 링크의 라인업은 서버(Cloudflare KV)에 저장돼 짧은 링크로 공유되고, 만든 날로부터 30일 뒤 자동 삭제돼요. 이미지 저장은 브라우저 안에서만 처리돼요.<br><span class="version-tag">v1.0 · 2026-09-17 업데이트</span></footer>
+</main>
+
+<script>
+const $=id=>document.getElementById(id);
+function esc(v){ return String(v==null?'':v).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function expiryText(expiresAt){ if(!expiresAt) return ''; const days=Math.max(0,Math.ceil((expiresAt*1000-Date.now())/86400000)); const d=new Date(expiresAt*1000); const date=`${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`; return days<=1? `오늘 만료 (${date})` : `남은 기간 ${days}일 (${date}까지)`; }
+
+// ===== 포메이션 =====
+const FORMS={11:['4-4-2','4-3-3','4-2-3-1','3-5-2','3-4-3','5-3-2','4-1-4-1'],9:['3-3-2','3-2-3','2-4-2','4-3-1'],8:['3-3-1','2-3-2','3-2-2','2-4-1'],7:['2-3-1','3-2-1','2-2-2','3-1-2'],6:['2-2-1','2-1-2','1-3-1'],5:['1-2-1','2-2','1-1-2','2-1-1']};
+const COLORS=[['#d64545','#fff'],['#2b5fd9','#fff'],['#f2f2f2','#222'],['#222','#fff'],['#2f9e44','#fff'],['#f5b301','#222'],['#7b3fa0','#fff'],['#ff7f2a','#fff']];
+// 포메이션 문자열 → 자리 배열 [{x,y,role}] (x,y: 0~100, 위쪽이 상대 골문)
+function slotsFor(size,form){
+  const lines=form.split('-').map(Number); const n=lines.length;
+  const out=[{x:50,y:92,role:'GK'}];
+  const top=20, bottom=76;
+  lines.forEach((cnt,li)=>{
+    const y= n===1? 48 : bottom-(bottom-top)*li/(n-1);
+    const role= li===0?'DF' : li===n-1?'FW' : (n===4&&li===1?'DM': n===4&&li===2?'AM':'MF');
+    for(let k=0;k<cnt;k++){
+      const x= cnt===1? 50 : 14+(72*k/(cnt-1));
+      // 3명 이상 라인은 양끝을 조금 안쪽으로, 1명은 가운데
+      out.push({x:Math.round(x), y:Math.round(y), role});
+    }
+  });
+  return out;
+}
+
+// ===== 상태 =====
+let state={team:'',vs:'',when:'',place:'',size:11,formation:'4-4-2',color:0,players:[],slots:[],memo:''};
+let selSlot=-1, currentId=null, currentExpires=null;
+
+function fillFormations(){ const f=FORMS[state.size]; $('formation').innerHTML=f.map(x=>`<option value="${x}">${x}</option>`).join(''); if(!f.includes(state.formation)) state.formation=f[0]; $('formation').value=state.formation; }
+function resetSlots(keepPlayers){
+  const old=state.slots; const ns=slotsFor(state.size,state.formation);
+  ns.forEach((s,i)=>{ s.p = keepPlayers && old[i] && old[i].p!=null ? old[i].p : null; });
+  state.slots=ns;
+}
+$('size').addEventListener('change',()=>{ state.size=+$('size').value; fillFormations(); resetSlots(true); render(); });
+$('formation').addEventListener('change',()=>{ state.formation=$('formation').value; resetSlots(true); render(); });
+['team','vs','when','place','memo'].forEach(id=>$(id).addEventListener('input',()=>{ state[id]=$(id).value; if(id==='team') render(); }));
+$('colors').innerHTML=COLORS.map((c,i)=>`<span data-i="${i}" style="background:${c[0]}"></span>`).join('');
+$('colors').querySelectorAll('span').forEach(el=>el.addEventListener('click',()=>{ state.color=+el.dataset.i; render(); }));
+
+function parseRoster(text){
+  const out=[]; text.split(/\n/).forEach(line=>{
+    let t=line.trim(); if(!t) return;
+    let no=''; let m=t.match(/^(\d{1,2})\s*[.\-)]?\s+(.+)$/); if(m){ no=m[1]; t=m[2]; } else { m=t.match(/^(.+?)\s+(\d{1,2})$/); if(m){ t=m[1]; no=m[2]; } }
+    t=t.replace(/[#()]/g,'').trim().slice(0,12); if(t) out.push({name:t,no});
+  });
+  return out.slice(0,40);
+}
+$('applyRoster').addEventListener('click',()=>{
+  const list=parseRoster($('rosterText').value);
+  // 이미 배치된 선수는 이름으로 이어붙임
+  const byName={}; state.players.forEach((p,i)=>byName[p.name]=i);
+  const remap={}; list.forEach((p,i)=>{ if(byName[p.name]!=null) remap[byName[p.name]]=i; });
+  state.slots.forEach(s=>{ s.p = s.p!=null && remap[s.p]!=null ? remap[s.p] : null; });
+  state.players=list; render();
+  $('status').textContent=list.length? `${list.length}명 반영됐어요.` : '명단이 비어 있어요.';
+});
+$('autoFill').addEventListener('click',()=>{ const used=new Set(); state.slots.forEach(s=>{ if(s.p!=null) used.add(s.p); }); let k=0; state.slots.forEach(s=>{ if(s.p!=null) return; while(k<state.players.length && used.has(k)) k++; if(k<state.players.length){ s.p=k; used.add(k); k++; } }); render(); });
+$('resetPos').addEventListener('click',()=>{ resetSlots(true); render(); });
+$('clearField').addEventListener('click',()=>{ state.slots.forEach(s=>s.p=null); selSlot=-1; render(); });
+
+// ===== 경기장 그리기 =====
+function pitchSvg(svg,st,interactive){
+  const W=360,H=560; const c=COLORS[st.color]||COLORS[0];
+  const line='#e9f5ec';
+  let g=`<rect x="0" y="0" width="${W}" height="${H}" rx="6" fill="#3f9a5c"/>`;
+  for(let i=0;i<8;i++){ if(i%2) g+=`<rect x="0" y="${i*H/8}" width="${W}" height="${H/8}" fill="#4aa568" opacity="0.5"/>`; }
+  g+=`<g fill="none" stroke="${line}" stroke-width="2.5"><rect x="14" y="14" width="${W-28}" height="${H-28}"/><line x1="14" y1="${H/2}" x2="${W-14}" y2="${H/2}"/><circle cx="${W/2}" cy="${H/2}" r="46"/><rect x="${W/2-88}" y="14" width="176" height="72"/><rect x="${W/2-40}" y="14" width="80" height="28"/><rect x="${W/2-88}" y="${H-86}" width="176" height="72"/><rect x="${W/2-40}" y="${H-42}" width="80" height="28"/><path d="M ${W/2-32} 86 A 40 40 0 0 0 ${W/2+32} 86"/><path d="M ${W/2-32} ${H-86} A 40 40 0 0 1 ${W/2+32} ${H-86}"/></g><circle cx="${W/2}" cy="${H/2}" r="3" fill="${line}"/>`;
+  if(st.team){ g+=`<text x="${W/2}" y="${H/2-8}" text-anchor="middle" font-size="26" font-weight="700" fill="#ffffff" opacity="0.28" font-family="inherit">${esc(st.team)}</text>`; }
+  st.slots.forEach((s,i)=>{
+    const x=s.x/100*W, y=s.y/100*H; const p=s.p!=null? st.players[s.p] : null;
+    const isGK=s.role==='GK'; const fill= p? (isGK?'#f5b301':c[0]) : 'rgba(255,255,255,0.35)'; const txt= p? (isGK?'#222':c[1]) : '#fff';
+    const label= p? p.name : s.role;
+    g+=`<g class="tok${i===selSlot&&interactive?' sel':''}" data-i="${i}" transform="translate(${x},${y})"><circle class="body" r="19" fill="${fill}" stroke="${p?'#fff':'#ffffff'}" stroke-width="2.5" stroke-dasharray="${p?'':'4 3'}"/><text y="5" text-anchor="middle" font-size="${p&&p.no?'14':'11'}" font-weight="700" fill="${txt}" font-family="inherit">${p? (p.no||'') : s.role}</text><text y="34" text-anchor="middle" font-size="12" font-weight="700" fill="#fff" stroke="#1b4d2c" stroke-width="3" paint-order="stroke" font-family="inherit">${esc(label)}</text></g>`;
+  });
+  svg.innerHTML=g;
+}
+
+function render(){
+  pitchSvg($('pitch'),state,true);
+  // 명단
+  const onField={}; state.slots.forEach((s,i)=>{ if(s.p!=null) onField[s.p]=i; });
+  $('roster').innerHTML= state.players.length? state.players.map((p,i)=>{
+    const si=onField[i]; const pos= si!=null? state.slots[si].role : '후보';
+    const act= selSlot>=0? `<button class="btn-ghost put" data-i="${i}">이 자리에</button>` : (si!=null? `<button class="btn-ghost off" data-i="${i}">빼기</button>`:'');
+    return `<div class="pr${si!=null?' onfield':''}"><span class="no">${esc(p.no||'·')}</span><span class="nm">${esc(p.name)}</span><span class="pos">${pos}</span>${act}</div>`;
+  }).join('') : '<div class="empty" style="padding:16px">위에 명단을 넣고 "명단 반영"을 눌러주세요</div>';
+  $('roster').querySelectorAll('.put').forEach(b=>b.addEventListener('click',()=>{ const pi=+b.dataset.i; const prev=state.slots.findIndex(s=>s.p===pi); if(prev>=0) state.slots[prev].p=state.slots[selSlot].p; state.slots[selSlot].p=pi; selSlot=-1; render(); }));
+  $('roster').querySelectorAll('.off').forEach(b=>b.addEventListener('click',()=>{ const pi=+b.dataset.i; state.slots.forEach(s=>{ if(s.p===pi) s.p=null; }); render(); }));
+  $('selBanner').classList.toggle('hidden',selSlot<0);
+  if(selSlot>=0){ const s=state.slots[selSlot]; $('selBanner').textContent=`${s.role} 자리를 골랐어요. 오른쪽 명단에서 선수를 누르면 배치돼요. (한 번 더 누르면 비우기)`; }
+  bindDrag();
+}
+
+// ===== 드래그 / 선택 =====
+function bindDrag(){
+  const svg=$('pitch'); let drag=null;
+  const pt=e=>{ const r=svg.getBoundingClientRect(); return {x:(e.clientX-r.left)/r.width*100, y:(e.clientY-r.top)/r.height*100}; };
+  svg.querySelectorAll('.tok').forEach(tok=>{
+    const idx=+tok.dataset.i;
+    tok.addEventListener('pointerdown',e=>{ e.preventDefault(); drag={i:idx, start:pt(e), moved:false, ox:state.slots[idx].x, oy:state.slots[idx].y}; tok.classList.add('dragging'); try{ tok.setPointerCapture(e.pointerId); }catch(_){} });
+    tok.addEventListener('pointermove',e=>{
+      if(!drag||drag.i!==idx) return; const p=pt(e); const dx=p.x-drag.start.x, dy=p.y-drag.start.y;
+      if(Math.abs(dx)>1.2||Math.abs(dy)>1.2) drag.moved=true;
+      if(drag.moved){ const s=state.slots[idx]; s.x=Math.max(4,Math.min(96,drag.ox+dx)); s.y=Math.max(4,Math.min(96,drag.oy+dy)); tok.setAttribute('transform',`translate(${s.x/100*360},${s.y/100*560})`); }
+    });
+    const finish=()=>{
+      if(!drag||drag.i!==idx) return; const {moved,ox,oy}=drag; drag=null; tok.classList.remove('dragging');
+      const me=state.slots[idx];
+      if(!moved){ // 탭: 선택/해제, 선택된 자리를 다시 탭하면 비우기
+        if(selSlot===idx){ selSlot=-1; if(me.p!=null) me.p=null; } else selSlot=idx;
+        render(); return;
+      }
+      let hit=-1; state.slots.forEach((s,j)=>{ if(j===idx) return; if(Math.hypot((s.x-me.x)*3.6,(s.y-me.y)*5.6)<30) hit=j; });
+      if(hit>=0){ const t=state.slots[hit].p; state.slots[hit].p=me.p; me.p=t; me.x=ox; me.y=oy; }
+      render();
+    };
+    tok.addEventListener('pointerup',finish); tok.addEventListener('pointercancel',finish);
+  });
+}
+
+// ===== 이미지 저장 =====
+function saveImage(svgEl, st){
+  const clone=svgEl.cloneNode(true); clone.setAttribute('xmlns','http://www.w3.org/2000/svg'); clone.setAttribute('width','720'); clone.setAttribute('height','1120');
+  clone.querySelectorAll('text').forEach(t=>t.setAttribute('font-family','-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",sans-serif'));
+  const src=new XMLSerializer().serializeToString(clone);
+  const img=new Image(); const url=URL.createObjectURL(new Blob([src],{type:'image/svg+xml;charset=utf-8'}));
+  img.onload=()=>{
+    const c=document.createElement('canvas'); c.width=720; c.height=1120+150; const ctx=c.getContext('2d');
+    ctx.fillStyle='#f1eee6'; ctx.fillRect(0,0,c.width,c.height);
+    ctx.fillStyle='#1f1d1a'; ctx.font='700 34px sans-serif'; ctx.fillText(st.team||'라인업',24,52);
+    ctx.fillStyle='#57534b'; ctx.font='20px sans-serif';
+    const meta=[st.when, st.vs?('vs '+st.vs):'', st.place].filter(Boolean).join(' · '); ctx.fillText(meta||`${st.size}인제 ${st.formation}`,24,86);
+    ctx.fillText(`${st.size}인제 ${st.formation}${meta?'':''}`,24,116);
+    ctx.drawImage(img,0,140,720,1120);
+    // 후보
+    const bench=st.players.filter((p,i)=>!st.slots.some(s=>s.p===i)).map(p=>(p.no?p.no+' ':'')+p.name);
+    if(bench.length){ ctx.fillStyle='#57534b'; ctx.font='18px sans-serif'; ctx.fillText('후보: '+bench.join(', ').slice(0,80),24,c.height-14); }
+    URL.revokeObjectURL(url);
+    const a=document.createElement('a'); a.download=`${(st.team||'라인업').replace(/[\\/:*?"<>|]/g,'')}_${st.formation}.png`; a.href=c.toDataURL('image/png'); a.click();
+  };
+  img.onerror=()=>{ alert('이미지 저장에 실패했어요. 브라우저를 바꿔 시도해보세요.'); URL.revokeObjectURL(url); };
+  img.src=url;
+}
+$('save').addEventListener('click',()=>{ saveImage($('pitch'),state); if(typeof gtag==='function') gtag('event','lineup_image_saved',{}); });
+
+// ===== 공유 =====
+function payload(){ return {team:state.team,vs:state.vs,when:state.when,place:state.place,size:state.size,formation:state.formation,color:state.color,players:state.players,slots:state.slots.map(s=>({x:Math.round(s.x),y:Math.round(s.y),role:s.role,p:s.p})),memo:state.memo}; }
+$('share').addEventListener('click',async()=>{
+  if(!state.slots.some(s=>s.p!=null)){ $('status').innerHTML='<span class="bad">선수를 한 명 이상 배치해주세요.</span>'; return; }
+  $('share').disabled=true; $('status').textContent='링크 만드는 중…';
+  try{
+    const r=await fetch('/api/lineup',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload())});
+    const d=await r.json(); if(!d.ok) throw new Error(d.error||'fail');
+    currentId=d.id; currentExpires=d.expiresAt||null;
+    const url=location.origin+location.pathname+'?id='+d.id;
+    try{ await navigator.clipboard.writeText(url); $('status').innerHTML=`<span class="ok">공유 링크를 복사했어요! 단톡방에 붙여넣어 보내세요.</span> <span class="note">· ${expiryText(currentExpires)}</span>`; }catch{ $('status').innerHTML=`<span class="ok">링크:</span> ${esc(url)}`; }
+    if(typeof gtag==='function') gtag('event','lineup_shared',{n:state.players.length});
+  }catch(e){ const MSG={quota:'오늘 만들기 요청이 많아 잠시 제한됐어요. 이미지 저장을 이용하거나 내일 다시 시도해주세요.'}; $('status').innerHTML=`<span class="bad">${MSG[e.message]||'링크 만들기에 실패했어요. 이미지 저장으로 공유해보세요.'}</span>`; }
+  $('share').disabled=false;
+});
+
+// ===== 공유 링크 진입 =====
+function loadState(d){
+  state={team:d.team||'',vs:d.vs||'',when:d.when||'',place:d.place||'',size:+d.size||11,formation:d.formation,color:+d.color||0,players:d.players||[],slots:d.slots||[],memo:d.memo||''};
+  if(!FORMS[state.size]) state.size=11; if(!FORMS[state.size].includes(state.formation)) state.formation=FORMS[state.size][0];
+  if(!state.slots.length) resetSlots(false);
+  $('team').value=state.team; $('vs').value=state.vs; $('when').value=state.when; $('place').value=state.place; $('memo').value=state.memo;
+  $('size').value=String(state.size); fillFormations(); $('rosterText').value=state.players.map(p=>(p.no?p.no+' ':'')+p.name).join('\n');
+}
+function showLanding(d){
+  loadState(d); $('editor').classList.add('hidden'); $('landing').classList.remove('hidden');
+  $('lTeam').textContent=state.team||'라인업';
+  $('lMeta').textContent=[state.when, state.vs?('vs '+state.vs):'', state.place, `${state.size}인제 ${state.formation}`].filter(Boolean).join(' · ')+(currentExpires?` · ${expiryText(currentExpires)}`:'');
+  pitchSvg($('lPitch'),state,false);
+  const order=['GK','DF','DM','MF','AM','FW'];
+  const starters=state.slots.filter(s=>s.p!=null).sort((a,b)=>order.indexOf(a.role)-order.indexOf(b.role));
+  $('lStart').innerHTML=starters.map(s=>{ const p=state.players[s.p]; return `<div><b>${s.role}</b>${p.no?p.no+'번 ':''}${esc(p.name)}</div>`; }).join('');
+  const bench=state.players.filter((p,i)=>!state.slots.some(s=>s.p===i));
+  $('lBenchWrap').classList.toggle('hidden',!bench.length); $('lBench').innerHTML=bench.map(p=>`<div><b>후보</b>${p.no?p.no+'번 ':''}${esc(p.name)}</div>`).join('');
+  $('lMemoWrap').classList.toggle('hidden',!state.memo.trim()); $('lMemo').textContent=state.memo;
+  document.querySelector('.tagline').textContent='팀에서 공유한 이번 경기 라인업이에요';
+  $('lSave').addEventListener('click',()=>saveImage($('lPitch'),state));
+  $('lCopy').addEventListener('click',async()=>{ const url=location.origin+location.pathname+'?id='+currentId; try{ await navigator.clipboard.writeText(url); $('lStatus').innerHTML='<span class="ok">링크를 복사했어요!</span>'; }catch{ $('lStatus').textContent=url; } });
+  $('lRemix').addEventListener('click',()=>{ currentId=null; $('landing').classList.add('hidden'); $('editor').classList.remove('hidden'); render(); $('status').innerHTML='<span class="ok">복사본을 편집 중이에요. 고친 뒤 "공유 링크 만들기"를 누르면 새 링크가 생겨요.</span>'; window.scrollTo({top:0,behavior:'smooth'}); });
+}
+(async function init(){
+  $('size').value='11'; fillFormations(); resetSlots(false);
+  const qid=new URLSearchParams(location.search).get('id');
+  if(qid && /^[0-9a-z]{4,16}$/.test(qid)){
+    try{ const r=await fetch('/api/lineup?id='+encodeURIComponent(qid)); const d=await r.json();
+      if(d.ok && d.data){ currentId=qid; currentExpires=d.expiresAt||null; showLanding(d.data); return; }
+      $('status').innerHTML='<span class="bad">링크를 찾을 수 없어요. 만료됐거나 잘못된 링크일 수 있어요.</span>';
+    }catch(e){ $('status').innerHTML='<span class="bad">불러오기에 실패했어요.</span>'; }
+  }
+  render();
+})();
+</script>
+
+</body>
+</html>

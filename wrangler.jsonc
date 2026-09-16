@@ -6,7 +6,7 @@
     "directory": ".",
     "binding": "ASSETS",
     "not_found_handling": "404-page",
-    "run_worker_first": ["/api/*", "/worldcup", "/worldcup.html", "/balance-game", "/balance-game.html"]
+    "run_worker_first": ["/api/*", "/worldcup", "/worldcup.html", "/balance-game", "/balance-game.html", "/lineup", "/lineup.html"]
   },
   "kv_namespaces": [
     {

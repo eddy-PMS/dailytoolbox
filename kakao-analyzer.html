@@ -62,29 +62,93 @@
 
 const $=id=>document.getElementById(id);
 function parse(text){
+  text=text.replace(/^\uFEFF/,'');
   const lines=text.split(/\r?\n/);
-  const re=/^(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\.\s*(오전|오후)\s*(\d{1,2}):(\d{2}),\s*(.+?)\s*:\s*(.*)$/;
+  // "2024. 3. 15. 오후 9:15, 이름 : 내용" 과 "2024년 3월 15일 오후 9:15, 이름 : 내용" 형식 모두 지원
+  const re=/^(\d{4})[.\s]*년?\.?\s*(\d{1,2})[.\s]*월?\.?\s*(\d{1,2})[.\s]*일?\.?\s*(오전|오후)\s*(\d{1,2}):(\d{2}),\s*(.+?)\s*:\s*(.*)$/;
+  const dividerRe=/^\d{4}[.\s]*년?\.?\s*\d{1,2}[.\s]*월?\.?\s*\d{1,2}[.\s]*일?\.?(\s*(오전|오후)\s*\d{1,2}:\d{2})?\s*(월요일|화요일|수요일|목요일|금요일|토요일|일요일)?\s*$/;
+  const sysRe=/님이 (들어왔습니다|나갔습니다)\.?$|님을 초대했습니다\.?$|채팅방 관리자가|저장한 날짜\s*:|채팅방 이름을|삭제된 메시지입니다\.?$|공지로 등록되었습니다\.?$|공지가 삭제되었습니다\.?$|방장이 되었습니다\.?$|내보냈습니다\.?$/;
   const msgs=[]; let cur=null;
-  for(const line of lines){
+  for(const raw of lines){
+    const line=raw.replace(/\r$/,'');
     const m=line.match(re);
     if(m){ if(cur) msgs.push(cur);
       let h=+m[5]; if(m[4]==='오후'&&h!==12) h+=12; if(m[4]==='오전'&&h===12) h=0;
       const date=new Date(+m[1],+m[2]-1,+m[3],h,+m[6]);
       cur={date, user:m[7].trim(), text:m[8]};
-    } else if(cur && line.trim() && !/^-+\s*\d{4}년/.test(line)){ cur.text+='\n'+line; }
+    } else if(dividerRe.test(line.trim()) || sysRe.test(line) || /님과 카카오톡 대화$/.test(line.trim())){
+      // 날짜 구분선·시스템 메시지·헤더 줄은 무시
+    } else if(cur && line.trim()){ cur.text+='\n'+line; }
   }
   if(cur) msgs.push(cur);
-  return msgs.filter(m=>!/사진|이모티콘|삭제된 메시지입니다|파일:|동영상/.test(m.text)&&m.text.trim());
+  return msgs.filter(m=>{ const t=m.text.trim(); return t && !['사진','이모티콘','동영상','삭제된 메시지입니다.'].includes(t) && !/^파일:/.test(t); });
 }
 const STOP=new Set('그리고 그래서 근데 그럼 이제 진짜 완전 그냥 나도 나는 이거 저거 그거 아니 아니야 그니까 그러니까 하는 해서 했어 했다 이랑 이랑 그런 저런 이런 것도 거야 거임 인데 하고 하지 해도 근데 그게 뭐야 뭐지 아니면'.split(' '));
 function tokenize(t){ return t.replace(/[^가-힣a-zA-Z0-9\s]/g,' ').split(/\s+/).filter(w=>w.length>=2 && !STOP.has(w)); }
+const LAUGH=/^[ㅋㅎ]{2,}$/, CRY=/^[ㅠㅜ]{2,}$/;
+const TYPO_PAIRS=[
+  ['몇일','며칠'],['웬지','왠지'],['됬','됐'],['어의없','어이없'],['오랫만','오랜만'],
+  ['희안','희한'],['통채','통째'],['예기','얘기'],['있따가','이따가'],['어떻해','어떡해'],
+  ['금새','금세'],['제작년','재작년'],['눈쌀','눈살'],['왠만','웬만'],['구지','굳이'],
+  ['왠일','웬일'],['않되','안돼'],['삼가하','삼가'],['서슴치','서슴지'],['바램','바람'],
+  ['만듬','만듦'],['거이','거의'],
+  ['오랜동안','오랫동안'],['되요','돼요'],['할께','할게'],['갈께','갈게'],['줄께','줄게'],
+  ['볼께','볼게'],['올께','올게'],['할껄','할걸'],['어짜피','어차피'],['궁시렁','구시렁'],
+  ['뵈요','봬요'],['하마트면','하마터면'],['아니예요','아니에요'],['같애','같아'],
+  ['설겆이','설거지'],['눈에 띠','눈에 띄'],['통털어','통틀어'],['되물림','대물림'],
+  ['믿겨지다','믿기다'],['수 밖에','수밖에'],['뵜어요','뵀어요'],['뵈서','봬서'],
+  ['했데','했대'],['갔데','갔대'],['왔데','왔대'],['봤데','봤대'],
+  ['뭐에요','뭐예요'],['일일히','일일이'],['깨끗히','깨끗이'],['틈틈히','틈틈이'],
+  ['설레였','설렜'],['설레이는','설레는'],['설레인다','설렌다']
+];
+function countTypos(text){
+  const found=[];
+  for(const [wrong,right] of TYPO_PAIRS){
+    if(wrong==='예기'){ // "예기치 못한"은 표준어라 제외
+      const re=/예기(?!치)/g; const n=(text.match(re)||[]).length; if(n) found.push([wrong+'→'+right,n]); continue;
+    }
+    const re=new RegExp(wrong.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'g');
+    const n=(text.match(re)||[]).length; if(n) found.push([wrong+'→'+right,n]);
+  }
+  return found;
+}
+// 자판 입력 중 자음/모음이 음절에서 떨어져 찍히는 오타 감지 (예: "오ㅓㅆ어"→"왔어")
+// ㅋㅋ/ㅎㅎ/ㅠㅠ 같은 순수 감정 표현·단독 자모 줄임말(ㅇㅇ, ㄱㄱ 등)은 제외하고,
+// 실제 음절과 낱자모가 한 토큰 안에 섞여 있는 경우만 잡아요.
+function jamoTypoTokens(text){
+  const tokens=text.split(/\s+/).filter(Boolean); const found=[];
+  for(const tok of tokens){
+    let core=tok.replace(/[^가-힣ㄱ-ㅎㅏ-ㅣ]/g,'');
+    if(!core) continue;
+    // ㅡ도 "ㅠㅡㅠ"(우는 표정), "ㅡㅡ"(떨떠름한 표정) 같은 장식용으로 흔히 쓰여 제외
+    core=core.replace(/^[ㅋㅎㅠㅜㅡ]+/,'').replace(/[ㅋㅎㅠㅜㅡ]+$/,'');
+    if(/[가-힣]/.test(core) && /[ㄱ-ㅎㅏ-ㅣ]/.test(core)) found.push(tok);
+  }
+  return found;
+}
+function habitKey(text){
+  let t=text.trim();
+  if(!t) return null;
+  // 끝의 물결·느낌표·물음표·마침표 반복은 정규화 (웅웅~~! / 웅웅!! → 웅웅)
+  const core=t.replace(/[~!?.ㅎㅋ]+$/,'').trim();
+  if(!core) return null; // 문장부호·자모만 있는 건 말버릇에서 제외
+  // 초성체·감탄사류: 자음/모음만 있는 짧은 표현
+  if(/^[ㄱ-ㅎㅏ-ㅣ]{1,8}$/.test(core)) return core;
+  // 짧은 한 단어짜리 대답성 표현 (예: 넵, 웅, 오키, 넹, 웅웅)
+  if(core.length<=5 && /^[가-힣a-zA-Z]+$/.test(core)) return core;
+  return null;
+}
 function analyze(msgs){
   const users=[...new Set(msgs.map(m=>m.user))];
-  const byUser={}; users.forEach(u=>byUser[u]={count:0,chars:0,words:{},hours:new Array(24).fill(0),replies:[]});
+  const byUser={}; users.forEach(u=>byUser[u]={count:0,chars:0,words:{},habits:{},typos:{},jamoCount:0,jamoSamples:[],laughs:0,cries:0,hours:new Array(24).fill(0),replies:[]});
   let lastUser=null, lastTime=null;
   msgs.forEach((m,i)=>{
     const b=byUser[m.user]; b.count++; b.chars+=m.text.length; b.hours[m.date.getHours()]++;
     tokenize(m.text).forEach(w=>b.words[w]=(b.words[w]||0)+1);
+    const h=habitKey(m.text); if(h) b.habits[h]=(b.habits[h]||0)+1;
+    countTypos(m.text).forEach(([k,n])=>b.typos[k]=(b.typos[k]||0)+n);
+    const jt=jamoTypoTokens(m.text); if(jt.length){ b.jamoCount+=jt.length; jt.forEach(t=>{ if(b.jamoSamples.length<5 && !b.jamoSamples.includes(t)) b.jamoSamples.push(t); }); }
+    if(LAUGH.test(m.text.trim())) b.laughs++; if(CRY.test(m.text.trim())) b.cries++;
     if(lastUser && lastUser!==m.user && lastTime){ const diff=(m.date-lastTime)/60000; if(diff>=0 && diff<180) byUser[m.user].replies.push(diff); }
     lastUser=m.user; lastTime=m.date;
   });
@@ -96,10 +160,14 @@ function avg(arr){ return arr.length? arr.reduce((a,b)=>a+b,0)/arr.length : null
 function fmtMin(m){ if(m==null) return '-'; if(m<1) return '1분 미만'; if(m<60) return Math.round(m)+'분'; return (m/60).toFixed(1)+'시간'; }
 function render(a){
   const total=a.total; const ranked=a.users.map(u=>({name:u, ...a.byUser[u]})).sort((x,y)=>y.count-x.count);
-  const cards=ranked.map(b=>{ const pct=(b.count/total*100).toFixed(1); const peak=b.hours.indexOf(Math.max(...b.hours)); const words=topWords(b.words,8);
+  const cards=ranked.map(b=>{ const pct=(b.count/total*100).toFixed(1); const peak=b.hours.indexOf(Math.max(...b.hours)); const words=topWords(b.words,8); const habits=topWords(b.habits,6);
     return `<div class="card"><h2 style="font-size:16px;color:var(--ink)">${b.name}</h2>
       <div class="stat-grid"><div class="stat"><div class="num">${b.count.toLocaleString()}</div><div class="label">메시지 수 (${pct}%)</div></div><div class="stat"><div class="num">${Math.round(b.chars/b.count)}</div><div class="label">평균 글자수/메시지</div></div><div class="stat"><div class="num">${fmtMin(avg(b.replies))}</div><div class="label">평균 답장 속도</div></div><div class="stat"><div class="num">${peak}시</div><div class="label">가장 활발한 시간대</div></div></div>
-      <div class="note" style="margin-top:10px">자주 쓴 단어: ${words.map(w=>w[0]+'('+w[1]+')').join(', ')||'-'}</div></div>`; }).join('');
+      <div class="note" style="margin-top:10px">자주 쓴 단어: ${words.map(w=>w[0]+'('+w[1]+')').join(', ')||'-'}</div>
+      <div class="note" style="margin-top:4px">말버릇 (자주 쓰는 짧은 표현): ${habits.length? habits.map(w=>w[0]+'('+w[1]+')').join(', ') : '뚜렷한 게 없어요'}</div>
+      <div class="note" style="margin-top:4px">웃음 표현(ㅋㅋ·ㅎㅎ류) ${b.laughs.toLocaleString()}회 · 눈물 표현(ㅠㅠ·ㅜㅜ류) ${b.cries.toLocaleString()}회</div>
+      <div class="note" style="margin-top:4px">자주 틀리는 표현: ${topWords(b.typos,6).length? topWords(b.typos,6).map(w=>w[0]+'('+w[1]+'회)').join(', ') : '눈에 띄는 게 없어요'}</div>
+      <div class="note" style="margin-top:4px">자판이 밀린 오타 (예: ${b.jamoSamples.length? b.jamoSamples.join(', ') : '없음'}) 총 ${b.jamoCount.toLocaleString()}회</div></div>`; }).join('');
   const winner=ranked[0];
   $('result').innerHTML=`<div class="card"><div class="big-result" style="font-size:22px">총 ${total.toLocaleString()}개 메시지<small>${a.first.toLocaleDateString('ko-KR')} ~ ${a.last.toLocaleDateString('ko-KR')} (${a.days}일간)</small></div>
     <div class="note" style="margin-top:8px">하루 평균 ${Math.round(total/a.days)}개${a.users.length>1?` · <b>${winner.name}</b>가 대화의 ${(winner.count/total*100).toFixed(0)}%를 차지해요`:''}</div></div>

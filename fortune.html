@@ -137,7 +137,7 @@
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>실제 만세력 기준으로 계산되나요?</summary><p>네. 년주는 입춘, 월주는 24절기의 절입 시각을 태양 황경으로 계산해 정하고, 일주는 60갑자 순환, 시주는 태어난 시각으로 정해요. 절입 경계에 태어난 분은 사이트마다 결과가 다를 수 있어요.</p></details><details><summary>음력 생일만 아는데요?</summary><p>달력에서 음력을 고르면 1900~2050년 범위의 음력 생일을 자동으로 양력으로 바꿔 계산해요. 그 해에 윤달이 있는 달을 고르면 윤달 체크박스가 나타나요.</p></details><details><summary>태어난 시간을 모르면요?</summary><p>시간을 "모름"으로 두면 년·월·일 세 기둥으로 풀이해요. 시주가 빠지면 오행 분포가 조금 달라질 수 있지만 일간 성격과 오늘의 운세, 궁합은 그대로 볼 수 있어요.</p></details><details><summary>오늘의 운세는 어떻게 정해지나요?</summary><p>오늘 날짜의 간지(일진)와 내 일간의 관계를 십신으로 풀고, 오늘의 지지와 내 일지의 합·충 관계를 더해 풀이해요. 같은 생년월일이면 그날은 같은 결과가 나오고, 날짜가 바뀌면 근거가 달라져요.</p></details><details><summary>밤 11시 이후에 태어났어요.</summary><p>밤 11시부터 새벽 1시까지는 자시(子時)예요. 이 도구는 밤 11시 이후 출생도 일주는 그날 것을 쓰고, 시주는 다음 날 일간 기준으로 정하는 야자시 방식을 따라요.</p></details></section>
 <section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="mbti-test.html">MBTI 성격유형 테스트</a><a href="age.html">만 나이 계산기</a><a href="dday.html">D-day 계산기</a><a href="hanja.html">한자 사전</a></div></section>
-  <footer>만세력 규칙(입춘·절입·60갑자·시진)에 따라 계산하고 명리학의 일반적인 해석을 정리한 풀이예요. 전문가 감정을 대신하지 않으며 참고용으로만 활용해주세요.<br><span class="version-tag">v2.1 · 2026-09-17 업데이트</span></footer>
+  <footer>만세력 규칙(입춘·절입·60갑자·시진)에 따라 계산하고 명리학의 일반적인 해석을 정리한 풀이예요. 전문가 감정을 대신하지 않으며 참고용으로만 활용해주세요.<br><span class="version-tag">v2.2 · 2026-09-17 업데이트</span></footer>
 </main>
 
 <script>
@@ -404,7 +404,7 @@ function sajuHtml(s,name,gender){
 }
 $('seeSaju').addEventListener('click',()=>{
   const s=readPerson('birth1','hour1','tst1'); if(!s){ $('sajuOut').innerHTML='<div class="empty">생년월일을 선택해주세요</div>'; return; } if(s.error){ $('sajuOut').innerHTML=`<div class="empty">${s.error}</div>`; return; }
-  $('sajuOut').innerHTML=sajuHtml(s,$('name1').value.trim(),$('gender1').value);
+  $('sajuOut').innerHTML=sajuHtml(s,$('name1').value.trim(),$('gender1').value)+shareBar('saju',`${$('name1').value.trim()||'나'}의 사주 · ${gz(s.day)}(${gzKr(s.day)})일주`);
   if(typeof gtag==='function') gtag('event','saju_viewed',{});
 });
 
@@ -421,7 +421,7 @@ $('seeToday').addEventListener('click',()=>{
   $('todayOut').innerHTML=`<div class="today-jin"><div><div class="note" style="margin:0">${now.getFullYear()}년 ${now.getMonth()+1}월 ${now.getDate()}일의 일진</div><div class="ch"><span class="e-${ELE_CLS[STEM_ELE[t.day.s]]}">${STEM[t.day.s]}</span><span class="e-${ELE_CLS[BR_ELE[t.day.b]]}">${BR[t.day.b]}</span> <span style="font-size:16px;color:var(--ink-soft)">${gzKr(t.day)}일</span></div></div><div style="margin-left:auto;text-align:right"><div class="scorebig">${score}</div><div class="note" style="margin:0">${stars}</div></div></div>
   <div class="block" style="border-top:0;padding-top:0"><h3>${esc(name)} — 일간 ${STEM[me]}(${STEM_KR[me]})에게 오늘은 <span class="tag">${SIPSIN_DAY[ss][0]}</span>의 날</h3><p>${SIPSIN_DAY[ss][1]}</p><p>${BREL_DAY[brel][0]}</p></div>
   <div class="block"><h3>오늘의 포인트</h3><div class="mrow"><span class="k">행운 오행</span><span class="v e-${ELE_CLS[lucky]}"><b>${ELE[lucky]}(${'木火土金水'[lucky]})</b></span></div><div class="mrow"><span class="k">행운 색</span><span class="v">${LUCKY[lucky][0]}</span></div><div class="mrow"><span class="k">행운 방향</span><span class="v">${LUCKY[lucky][1]}</span></div><div class="mrow"><span class="k">행운 숫자</span><span class="v">${LUCKY[lucky][2]}</span></div><div class="mrow"><span class="k">오늘 일진과 내 일지</span><span class="v">${BR[t.day.b]} ↔ ${BR[s.day.b]} · ${brel}</span></div></div>
-  <p class="note">오늘의 일진 천간이 내 일간에게 어떤 십신인지, 오늘의 지지가 내 일지와 어떤 관계인지로 풀이했어요. 날짜가 바뀌면 근거가 달라져요.</p>`;
+  <p class="note">오늘의 일진 천간이 내 일간에게 어떤 십신인지, 오늘의 지지가 내 일지와 어떤 관계인지로 풀이했어요. 날짜가 바뀌면 근거가 달라져요.</p>`+shareBar('today',`${name}의 오늘 운세 ${score}점 · ${SIPSIN_DAY[ss][0]}의 날`);
   if(typeof gtag==='function') gtag('event','fortune_today_viewed',{});
 });
 
@@ -445,9 +445,61 @@ $('seeMatch').addEventListener('click',()=>{
   <div class="block"><h3>일지 관계 <span class="tag">${BR[a.day.b]}·${BR[b.day.b]} ${dr}</span></h3><p>${BR_MATCH[dr][0]}</p><p class="note">일지는 배우자 자리라 연인·부부 궁합에서 가장 비중 있게 봐요.</p></div>
   <div class="block"><h3>띠(년지) 관계 <span class="tag">${BR_ANIMAL[a.year.b]}·${BR_ANIMAL[b.year.b]} ${yr}</span></h3><p>${BR_MATCH[yr][0]}</p></div>
   <div class="block"><h3>오행 보완</h3><p>${eleTxt}</p></div>
-  <p class="note">일간의 천간합·상생·상극, 일지·년지의 합·충 관계, 오행 보완 여부를 점수로 합산했어요. 명리학의 일반적인 해석이며 실제 관계는 두 사람의 노력에 달려 있어요.</p>`;
+  <p class="note">일간의 천간합·상생·상극, 일지·년지의 합·충 관계, 오행 보완 여부를 점수로 합산했어요. 명리학의 일반적인 해석이며 실제 관계는 두 사람의 노력에 달려 있어요.</p>`+shareBar('match',`사주 궁합 ${score}점 · ${grade}`);
   if(typeof gtag==='function') gtag('event','fortune_match_viewed',{});
 });
+
+// ===== 결과 공유 (계산식이라 서버 저장 없이 입력값만 URL에 담음) =====
+function personParams(p, birthId, hourId, nameId, genderId, tstId){
+  const cm=calMode(birthId); const q=[];
+  q.push(`${p}=${$(birthId).value}`); if($(hourId).value!=='') q.push(`${p}h=${$(hourId).value}`);
+  if(cm.lunar) q.push(`${p}c=l`); if(cm.leap) q.push(`${p}l=1`);
+  if(nameId&&$(nameId).value.trim()) q.push(`${p}n=${encodeURIComponent($(nameId).value.trim())}`);
+  if(genderId&&$(genderId).value) q.push(`${p}g=${$(genderId).value}`);
+  if(tstId&&!$(tstId).checked) q.push(`${p}t=0`);
+  return q;
+}
+function shareUrl(tab){
+  let q=['tab='+tab];
+  if(tab==='saju') q=q.concat(personParams('b','birth1','hour1','name1','gender1','tst1'));
+  else if(tab==='today') q=q.concat(personParams('b','birth2','hour2','name2',null,null));
+  else q=q.concat(personParams('a','birthA','hourA',null,null,null), personParams('b','birthB','hourB',null,null,null));
+  return location.origin+location.pathname+'?'+q.join('&');
+}
+function shareBar(tab,title){
+  return `<div class="btn-row" style="justify-content:center;margin-top:16px"><button class="btn-ghost share-btn" data-tab="${tab}" data-title="${esc(title)}">결과 링크 공유</button></div><div class="status share-status" style="text-align:center"></div>`;
+}
+document.addEventListener('click',async e=>{
+  const b=e.target.closest('.share-btn'); if(!b) return;
+  const url=shareUrl(b.dataset.tab), st=b.parentElement.nextElementSibling;
+  if(navigator.share){ try{ await navigator.share({title:b.dataset.title, text:b.dataset.title, url}); return; }catch(err){ if(err&&err.name==='AbortError') return; } }
+  try{ await navigator.clipboard.writeText(url); st.innerHTML='<span class="ok">링크를 복사했어요. 카톡·메신저에 붙여넣어 보내세요!</span>'; }catch{ st.textContent=url; }
+  if(typeof gtag==='function') gtag('event','fortune_shared',{tab:b.dataset.tab});
+});
+// 공유 링크로 들어온 경우: 입력값 채우고 자동 실행
+function applyPerson(p, q, birthId, hourId, nameId, genderId, tstId){
+  const b=q.get(p); if(!b||!/^\d{4}-\d{2}-\d{2}$/.test(b)) return false;
+  const [y,m,d]=b.split('-').map(Number); const box=document.querySelector(`.ymd[data-for="${birthId}"]`);
+  const cal=document.querySelector(`.calsel[data-for="${birthId}"]`);
+  if(q.get(p+'c')==='l'){ cal.querySelector('input[value=lunar]').checked=true; cal.querySelector('input[value=lunar]').dispatchEvent(new Event('change')); }
+  const Y=box.querySelector('.y'),M=box.querySelector('.m'),D=box.querySelector('.d');
+  Y.value=String(y); Y.dispatchEvent(new Event('change')); M.value=String(m); M.dispatchEvent(new Event('change')); D.value=String(d); D.dispatchEvent(new Event('change'));
+  if(q.get(p+'l')==='1'){ cal.querySelector('.leap').checked=true; }
+  if(q.get(p+'h')!=null) $(hourId).value=q.get(p+'h');
+  if(nameId&&q.get(p+'n')) $(nameId).value=q.get(p+'n').slice(0,20);
+  if(genderId&&q.get(p+'g')) $(genderId).value=q.get(p+'g');
+  if(tstId&&q.get(p+'t')==='0') $(tstId).checked=false;
+  return !!$(birthId).value;
+}
+(function(){
+  const q=new URLSearchParams(location.search); const tab=q.get('tab'); if(!tab) return;
+  const tabBtn=document.querySelector(`.tab[data-t="${tab}"]`); if(!tabBtn) return; tabBtn.click();
+  let ok=false;
+  if(tab==='saju') ok=applyPerson('b',q,'birth1','hour1','name1','gender1','tst1');
+  else if(tab==='today') ok=applyPerson('b',q,'birth2','hour2','name2',null,null);
+  else ok=applyPerson('a',q,'birthA','hourA',null,null,null) & applyPerson('b',q,'birthB','hourB',null,null,null);
+  if(ok){ $({saju:'seeSaju',today:'seeToday',match:'seeMatch'}[tab]).click(); setTimeout(()=>{ const out=$({saju:'sajuOut',today:'todayOut',match:'matchOut'}[tab]); out&&out.scrollIntoView({behavior:'smooth',block:'start'}); },50); }
+})();
 </script>
 
 </body>

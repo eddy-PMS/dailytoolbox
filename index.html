@@ -105,6 +105,16 @@
     text-align: center;
     line-height: 1.8;
   }
+
+  .jin-widget{display:flex;gap:14px;align-items:center;border:1px solid var(--line);border-left:3px solid #a83a2c;border-radius:3px;background:#fffdf8;padding:12px 16px;margin:0 0 22px;text-decoration:none;color:var(--ink)}
+  .jin-widget:hover{background:var(--paper-deep)}
+  .jin-l{flex:none;text-align:center;min-width:86px}
+  .jin-lb{font-size:11px;color:var(--ink-soft)}
+  .jin-gz{font-size:28px;font-weight:700;line-height:1.15}
+  .jin-gz small{display:block;font-size:12px;font-weight:400;color:var(--ink-soft)}
+  .jin-txt{font-size:13px;line-height:1.55;color:var(--ink)}
+  .jin-cta{font-size:12px;color:#a83a2c;font-weight:700;margin-top:4px}
+  .e-wood{color:#2e7d4f}.e-fire{color:#c0392b}.e-earth{color:#9a6b1f}.e-metal{color:#7a7f8a}.e-water{color:#1f5fa8}
 </style>
 </head>
 <body>
@@ -118,6 +128,11 @@
     <h1>매일 한 번쯤 필요한 작은 도구들,<br>회원가입 없이 바로 쓰세요</h1>
     <p>연봉 실수령액, 전역일, 만 나이, 환율 같은 생활 계산기부터 게임·헬스·재테크, 그리고 어학 학습 도구까지 89종. 전부 브라우저에서 바로 동작하고 무료예요.</p>
   </section>
+
+  <a class="jin-widget" href="fortune.html?tab=today" id="jinWidget">
+    <div class="jin-l"><div class="jin-lb">오늘의 일진</div><div class="jin-gz" id="jinGz"></div></div>
+    <div class="jin-r"><div class="jin-txt" id="jinTxt"></div><div class="jin-cta">내 사주로 오늘 운세 보기 →</div></div>
+  </a>
   <section class="group life">
     <div class="group-head"><h2>생활</h2><span class="count">21개</span></div>
     <div class="cards">
@@ -281,5 +296,20 @@
   </footer>
 </main>
 
+
+<script>
+// 오늘의 일진 위젯: 60갑자는 2000-01-01=戊午(54)부터 하루에 하나씩 순환
+(function(){
+  const STEM='甲乙丙丁戊己庚辛壬癸', SK='갑을병정무기경신임계', BR='子丑寅卯辰巳午未申酉戌亥', BK='자축인묘진사오미신유술해';
+  const SE=[0,0,1,1,2,2,3,3,4,4], BE=[4,2,0,0,2,1,1,2,3,3,2,4], CLS=['wood','fire','earth','metal','water'];
+  const ANIMAL=['쥐','소','호랑이','토끼','용','뱀','말','양','원숭이','닭','개','돼지'];
+  const TIP=['생각을 정리하고 계획을 세우기 좋은 날. 밤에 집중이 잘돼요.','꾸준함이 통하는 날. 미뤄둔 일을 묵묵히 처리하세요.','새 시작에 좋은 날. 먼저 움직이는 사람이 기회를 잡아요.','사람을 만나고 관계를 다지기 좋은 날. 부드럽게 말하세요.','큰 결정과 큰 그림에 어울리는 날. 자신감을 가지세요.','머리 쓰는 일과 협상에 유리한 날. 말보다 근거로 설득하세요.','활동적이고 열정이 살아나는 날. 서두르다 실수만 조심하세요.','안정과 화합의 날. 가족·가까운 사람을 챙기세요.','변화와 이동, 재치가 필요한 날. 유연하게 대응하세요.','정리·정돈과 마무리에 좋은 날. 세부를 꼼꼼히 보세요.','책임을 다하고 약속을 지키는 날. 신뢰가 쌓여요.','베풀고 쉬어가기 좋은 날. 마음의 여유를 두세요.'];
+  const n=new Date(); const days=Math.round((Date.UTC(n.getFullYear(),n.getMonth(),n.getDate())-Date.UTC(2000,0,1))/86400000);
+  const k=((54+days)%60+60)%60, s=k%10, b=k%12;
+  const el=document.getElementById('jinGz'); if(!el) return;
+  el.innerHTML=`<span class="e-${CLS[SE[s]]}">${STEM[s]}</span><span class="e-${CLS[BE[b]]}">${BR[b]}</span><small>${SK[s]}${BK[b]}일</small>`;
+  document.getElementById('jinTxt').textContent=`${n.getMonth()+1}월 ${n.getDate()}일 · ${ANIMAL[b]}의 날. ${TIP[b]}`;
+})();
+</script>
 </body>
 </html>

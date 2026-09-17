@@ -54,6 +54,9 @@
     ]},
     { label: '게임·재미', items: [
       ['sens.html', '마우스 감도 변환기'],
+      ['nonogram.html', '네모로직 (노노그램)'],
+      ['water-sort.html', '물 붓기 퍼즐'],
+      ['block-fill.html', '블록 채우기'],
       ['order.html', '숫자 순서 누르기'],
       ['color-find.html', '틀린 색 찾기'],
       ['math-speed.html', '암산 스피드'],

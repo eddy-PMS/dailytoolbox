@@ -25,7 +25,12 @@ const SCORE_GAMES = {
   periph: { lower: false, min: 1, max: 60, minMs: 2000, msPerPoint: 1200 },             // 주변시 숫자 읽기: 도달 단계
   mot: { lower: false, min: 1, max: 40, minMs: 6000, msPerPoint: 6000 },                // 점 추적: 도달 단계 (단계당 7초 이상)
   reverse: { lower: false, min: 1, max: 150, minMs: 58000, maxMs: 75000 },              // 반대로 누르기: 60초 정답 수
-  gonogo: { lower: false, min: 1, max: 200, minMs: 3000, msPerPoint: 450 }              // 참기 게임: 초록 신호 성공 수
+  gonogo: { lower: false, min: 1, max: 200, minMs: 3000, msPerPoint: 450 },             // 참기 게임: 초록 신호 성공 수
+  'nono-5': { lower: true, min: 3000, max: 3600000, minMs: 3000 },                       // 네모로직 5×5: 완료 시간(ms)
+  'nono-10': { lower: true, min: 15000, max: 3600000, minMs: 15000 },                    // 네모로직 10×10
+  'nono-15': { lower: true, min: 40000, max: 7200000, minMs: 40000 },                    // 네모로직 15×15
+  water: { lower: false, min: 1, max: 60, minMs: 5000, msPerPoint: 6000 },               // 물 붓기: 도달 레벨 (레벨당 6초 이상)
+  block: { lower: false, min: 10, max: 100000, minMs: 5000, msPerPoint: 25 }             // 블록 채우기: 점수
 };
 const LB_SIZE = 100;
 const BAD_WORDS = ['시발','씨발','씨팔','ㅅㅂ','병신','ㅂㅅ','좆','존나','개새','새끼','니미','엿먹','fuck','shit','bitch','sex','섹스','자지','보지','창녀','걸레'];

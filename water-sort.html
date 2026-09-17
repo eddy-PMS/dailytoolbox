@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>물 붓기 퍼즐 - 색깔 물 정리하기, 레벨 랭킹 (무료)</title>
+<meta name="description" content="섞인 색깔 물을 병에 옮겨 색별로 정리하는 물 붓기 퍼즐. 레벨이 오를수록 색과 병이 늘어요. 되돌리기 무제한, 도달 레벨로 랭킹 도전. 설치 없이 무료.">
+<meta name="keywords" content="물 붓기 퍼즐, 물 정렬 게임, 워터 소트, 색깔 정리 퍼즐, 병 퍼즐 게임, 무료 퍼즐 게임, 힐링 게임">
+<link rel="canonical" href="https://dailyfreetoolbox.com/water-sort.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="물 붓기 퍼즐 - 몇 레벨까지?">
+<meta property="og:description" content="색깔 물을 병에 옮겨 정리하는 퍼즐. 레벨 랭킹 도전.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/water-sort.html">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "물 붓기 퍼즐", "url": "https://dailyfreetoolbox.com/water-sort.html", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "섞인 색깔 물을 병에 옮겨 색별로 정리하는 퍼즐. 도달 레벨로 랭킹에 등록할 수 있어요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#17a2b8; --accent-deep:#17a2b8; }
+.top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
+.big{font-size:26px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1}.lbl{font-size:12px;color:var(--ink-soft)}
+.tubes{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 10px;padding:10px 4px;min-height:200px;touch-action:manipulation;user-select:none;-webkit-user-select:none}
+.tube{width:46px;height:150px;border:3px solid #7a7f8a;border-top:0;border-radius:0 0 22px 22px;background:#fff;position:relative;display:flex;flex-direction:column-reverse;overflow:hidden;cursor:pointer;transition:transform .12s;-webkit-tap-highlight-color:transparent}
+.tube.sel{transform:translateY(-14px);border-color:var(--accent)}
+.tube.done{border-color:#2f9e44}
+.tube i{display:block;height:25%;width:100%}
+.board{position:relative}
+.overlay{position:absolute;inset:0;background:rgba(255,253,248,.94);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;border-radius:6px;text-align:center;padding:20px;z-index:2}
+.overlay .huge{font-size:40px;font-weight:700;color:var(--accent);line-height:1}
+.stats{display:flex;justify-content:center;gap:16px;font-size:13px;color:var(--ink-soft);margin-top:10px;flex-wrap:wrap}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "부을 수 없다고 나와요.", "acceptedAnswer": {"@type": "Answer", "text": "받는 병이 가득 찼거나, 받는 병의 맨 위 색이 붓는 색과 다르면 안 돼요. 빈 병에는 아무 색이나 부을 수 있어요."}}, {"@type": "Question", "name": "레벨이 안 풀려요.", "acceptedAnswer": {"@type": "Answer", "text": "되돌리기로 몇 수 전으로 가서 다른 병을 비우는 순서로 바꿔보세요. 정말 막히면 건너뛰기를 누르면 되지만 그 레벨은 기록에 들어가지 않아요."}}, {"@type": "Question", "name": "랭킹 기준이 뭔가요?", "acceptedAnswer": {"@type": "Answer", "text": "이번 판에서 직접 깬 최고 레벨이에요. 이어서 하다가 '여기까지 하고 랭킹 등록'을 누르면 등록돼요. 건너뛴 레벨은 포함되지 않아요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#17a2b8"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🧪 물 붓기 퍼즐</b></div>
+  <h1>물 붓기 퍼즐</h1>
+  <p class="tagline">색깔대로 병에 모으면 끝</p>
+  <p class="sub">병을 누르고 다른 병을 누르면 맨 위 색이 옮겨져요. 빈 병이거나 맨 위 색이 같을 때만 부을 수 있어요. 모든 병을 한 가지 색으로 채우면 다음 레벨!</p>
+
+  <div class="card">
+    <div class="top"><div><div class="lbl">레벨</div><div class="big" id="level">1</div></div><div style="text-align:center"><div class="lbl">이동</div><div class="big" id="moves">0</div></div><div style="text-align:right"><div class="lbl">최고 레벨</div><div class="big" id="bestLv">-</div></div></div>
+    <div class="board">
+      <div class="tubes" id="tubes"></div>
+      <div class="btn-row" style="justify-content:center"><button class="btn-ghost" id="undo">되돌리기</button><button class="btn-ghost" id="restart">처음부터</button><button class="btn-ghost" id="skip">이 레벨 건너뛰기</button></div>
+      <div class="overlay" id="overlay"><div style="font-size:15px;color:var(--ink-soft)">병을 눌러 고르고, 다른 병을 누르면 맨 위 색이 옮겨져요<br>같은 색끼리 병 하나에 모으면 성공</div><button class="btn" id="start" style="min-width:160px">시작</button><div class="note" id="bestNote" style="margin:0"></div></div>
+    </div>
+    <div class="stats"><span id="bestLocal"></span><span id="rankNote">랭킹 등록: 게임을 끝낼 때 도달 레벨로</span></div>
+    <div class="btn-row" style="justify-content:center;margin-top:6px"><button class="btn-ghost" id="quit" style="font-size:13px">여기까지 하고 랭킹 등록</button></div>
+  </div>
+
+  <div id="lb"></div>
+
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>물 붓기 퍼즐, 색을 정리하는 조용한 중독</h2><p>병마다 색깔 물이 섞여 담겨 있어요. 병을 누르고 다른 병을 누르면 맨 위 색이 옮겨지는데, <b>빈 병이거나 맨 위 색이 같을 때만</b> 부을 수 있고, 같은 색이 연속으로 쌓여 있으면 들어갈 수 있는 만큼 한 번에 옮겨져요. 모든 병이 한 가지 색으로 가득 차거나 비면 성공. 레벨이 오르면 색과 병이 늘어요.</p>
+<p>레벨은 번호마다 문제가 고정이라 누구나 같은 문제를 풀어요. 되돌리기는 무제한이고, 정말 막히면 건너뛸 수 있어요(건너뛴 레벨은 기록에 안 들어가요). "여기까지 하고 랭킹 등록"을 누르면 그때까지 <b>직접 깬 최고 레벨</b>로 랭킹에 올라가요. 진행 상황은 이 기기에 저장돼요.</p>
+<h2>푸는 요령</h2><ol><li>빈 병은 아껴두세요. 마지막에 색을 모을 공간이 필요해요.</li><li>맨 위 색이 같은 병 두 개를 찾아 먼저 합치면 아래 색이 드러나요.</li><li>한 병을 비우는 걸 목표로 잡으면 길이 보여요.</li><li>막히면 되돌리기로 두세 수 전으로 가서 다른 병을 비워보세요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>부을 수 없다고 나와요.</summary><p>받는 병이 가득 찼거나, 받는 병의 맨 위 색이 붓는 색과 다르면 안 돼요. 빈 병에는 아무 색이나 부을 수 있어요.</p></details><details><summary>레벨이 안 풀려요.</summary><p>되돌리기로 몇 수 전으로 가서 다른 병을 비우는 순서로 바꿔보세요. 정말 막히면 건너뛰기를 누르면 되지만 그 레벨은 기록에 들어가지 않아요.</p></details><details><summary>랭킹 기준이 뭔가요?</summary><p>이번 판에서 직접 깬 최고 레벨이에요. 이어서 하다가 '여기까지 하고 랭킹 등록'을 누르면 등록돼요. 건너뛴 레벨은 포함되지 않아요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="nonogram.html">네모로직</a><a href="block-fill.html">블록 채우기</a><a href="game2048.html">2048</a><a href="color-find.html">틀린 색 찾기</a></div></section>
+  <footer>기록은 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 기록이 서버에 저장돼요. 이 테스트는 특정 능력을 측정·연습하는 놀이이며 의학적 검사가 아니에요.<br><span class="version-tag">v1.0 · 2026-09-17 업데이트</span></footer>
+</main>
+
+<script src="leaderboard.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+const CAP=4, COLORS=['#d64545','#2b5fd9','#2f9e44','#f5b301','#7b3fa0','#ff7f2a','#17a2b8','#e83e8c','#6f4e37','#8fbc8f','#708090','#ffd700'];
+let level=1, tubes=[], sel=-1, moves=0, hist=[], running=false, startedAt=0, cleared=0, best=+localStorage.getItem('water_best')||0;
+function rng(seed){ let x=seed>>>0||1; return ()=>{ x^=x<<13; x>>>=0; x^=x>>>17; x^=x<<5; x>>>=0; return x/4294967296; }; }
+function nColors(l){ return Math.min(12, 3+Math.floor((l-1)/2)); }
+function gen(l){
+  const nc=nColors(l), r=rng(l*7919+13);
+  for(let attempt=0;attempt<50;attempt++){
+    const pool=[]; for(let c=0;c<nc;c++) for(let k=0;k<CAP;k++) pool.push(c);
+    for(let i=pool.length-1;i>0;i--){ const j=Math.floor(r()*(i+1)); [pool[i],pool[j]]=[pool[j],pool[i]]; }
+    const t=[]; for(let c=0;c<nc;c++) t.push(pool.slice(c*CAP,c*CAP+CAP));
+    // 이미 완성된 병이 있으면 다시
+    if(t.some(x=>x.every(v=>v===x[0]))) continue;
+    t.push([]); t.push([]); return t;
+  }
+  return null;
+}
+function render(){
+  $('tubes').innerHTML=tubes.map((t,i)=>`<div class="tube ${i===sel?'sel':''} ${t.length===CAP&&t.every(v=>v===t[0])?'done':''}" data-i="${i}">${t.map(c=>`<i style="background:${COLORS[c]}"></i>`).join('')}</div>`).join('');
+  $('level').textContent=level; $('moves').textContent=moves; $('bestLv').textContent=best||'-';
+}
+function canPour(a,b){ const A=tubes[a],B=tubes[b]; if(!A.length||B.length>=CAP) return false; if(!B.length) return true; return A[A.length-1]===B[B.length-1]; }
+function pour(a,b){ const A=tubes[a],B=tubes[b]; const c=A[A.length-1]; let n=0; for(let i=A.length-1;i>=0&&A[i]===c;i--) n++; const room=CAP-B.length; const k=Math.min(n,room); hist.push(tubes.map(t=>t.slice())); for(let i=0;i<k;i++){ A.pop(); B.push(c); } moves++; }
+function won(){ return tubes.every(t=>!t.length||(t.length===CAP&&t.every(v=>v===t[0]))); }
+$('tubes').addEventListener('pointerdown',e=>{ const el=e.target.closest('.tube'); if(!el||!running) return; e.preventDefault(); const i=+el.dataset.i;
+  if(sel<0){ if(tubes[i].length) sel=i; render(); return; }
+  if(sel===i){ sel=-1; render(); return; }
+  if(canPour(sel,i)){ pour(sel,i); sel=-1; render(); if(won()) clearLevel(); } else { sel= tubes[i].length? i : -1; render(); } });
+function clearLevel(){ running=false; cleared=Math.max(cleared,level); best=Math.max(best,level); localStorage.setItem('water_best',String(best)); localStorage.setItem('water_level',String(level+1));
+  $('overlay').innerHTML=`<div style="font-size:14px;color:var(--ink-soft)">레벨 ${level} 클리어!</div><div class="huge">${moves}수</div><div class="btn-row" style="justify-content:center;margin-top:6px"><button class="btn" id="next">다음 레벨</button></div>`; $('overlay').style.display='flex';
+  $('next').addEventListener('click',()=>{ level++; loadLevel(); }); if(typeof gtag==='function') gtag('event','water_cleared',{level}); }
+function loadLevel(){ tubes=gen(level); sel=-1; moves=0; hist=[]; running=true; $('overlay').style.display='none'; render(); }
+function start(){ level=Math.max(1,+localStorage.getItem('water_level')||1); cleared=0; startedAt=Date.now(); loadLevel(); showBest(); }
+$('undo').addEventListener('click',()=>{ if(!running||!hist.length) return; tubes=hist.pop(); moves=Math.max(0,moves-1); sel=-1; render(); });
+$('restart').addEventListener('click',()=>{ if(!running) return; loadLevel(); });
+$('skip').addEventListener('click',()=>{ if(!running) return; if(!confirm('이 레벨을 건너뛸까요? 건너뛴 레벨은 기록에 들어가지 않아요.')) return; level++; localStorage.setItem('water_level',String(level)); loadLevel(); });
+$('quit').addEventListener('click',()=>{ if(!startedAt){ alert('먼저 시작해서 레벨을 깨보세요.'); return; } if(cleared<1){ alert('이번 판에서 직접 깬 레벨이 아직 없어요.'); return; } LB.submit(cleared,{duration:Date.now()-startedAt, meta:`이동 ${moves}`}); });
+function showBest(){ $('bestLocal').textContent= best? '내 최고 레벨 '+best : ''; const bn=$('bestNote'); if(bn) bn.textContent= best? '내 최고 레벨 '+best+' · 이어서 레벨 '+(+localStorage.getItem('water_level')||1)+'부터':''; }
+$('start').addEventListener('click',start); showBest(); render();
+LB.init({game:'water', el:'#lb', label:'레벨', format:v=>'레벨 '+v});
+</script>
+
+</body>
+</html>

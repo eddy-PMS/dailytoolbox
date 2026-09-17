@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>2048 게임 - 설치 없이 바로 하는 무료 2048, 랭킹 도전</title>
+<meta name="description" content="같은 숫자 타일을 합쳐 2048을 만드는 퍼즐 게임. 키보드 방향키나 스와이프로 플레이하고, 점수를 이번 주·전체 랭킹에 닉네임으로 등록해보세요. 설치 없이 무료.">
+<meta name="keywords" content="2048 게임, 2048 온라인, 2048 무료, 숫자 퍼즐 게임, 2048 랭킹, 2048 하기, 두뇌 게임">
+<link rel="canonical" href="https://dailyfreetoolbox.com/game2048.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="2048 게임 - 설치 없이 바로 하는 무료 2048">
+<meta property="og:description" content="같은 숫자 타일을 합쳐 2048을 만드는 퍼즐 게임. 점수를 이번 주·전체 랭킹에 등록해 겨뤄보세요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/game2048.html">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "2048 게임", "url": "https://dailyfreetoolbox.com/game2048.html", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "같은 숫자 타일을 합쳐 2048을 만드는 퍼즐 게임. 키보드 방향키나 스와이프로 플레이하고 점수를 랭킹에 등록할 수 있어요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#b8823a; --accent-deep:#8a5f25; }
+.hud{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
+.hud .sc{display:flex;gap:8px}.hud .box{background:var(--paper-deep);border-radius:4px;padding:6px 12px;text-align:center;min-width:72px}.hud .box small{display:block;font-size:11px;color:var(--ink-soft)}.hud .box b{font-size:18px;font-variant-numeric:tabular-nums}
+.boardwrap{position:relative;max-width:420px;margin:0 auto}
+.board{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;background:#bbada0;border-radius:8px;padding:8px;touch-action:none;user-select:none;-webkit-user-select:none}
+.tile{aspect-ratio:1;border-radius:5px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:clamp(18px,7vw,34px);background:rgba(238,228,218,.35);color:#776e65;transition:transform .08s}
+.tile.new{animation:pop .15s}
+.tile.merged{animation:pop .15s}
+@keyframes pop{0%{transform:scale(.6)}100%{transform:scale(1)}}
+.t2{background:#eee4da}.t4{background:#ede0c8}.t8{background:#f2b179;color:#f9f6f2}.t16{background:#f59563;color:#f9f6f2}.t32{background:#f67c5f;color:#f9f6f2}.t64{background:#f65e3b;color:#f9f6f2}
+.t128{background:#edcf72;color:#f9f6f2;font-size:clamp(16px,6vw,30px)}.t256{background:#edcc61;color:#f9f6f2;font-size:clamp(16px,6vw,30px)}.t512{background:#edc850;color:#f9f6f2;font-size:clamp(16px,6vw,30px)}
+.t1024{background:#edc53f;color:#f9f6f2;font-size:clamp(14px,5vw,26px)}.t2048{background:#edc22e;color:#f9f6f2;font-size:clamp(14px,5vw,26px);box-shadow:0 0 18px rgba(237,194,46,.6)}
+.tbig{background:#3c3a32;color:#f9f6f2;font-size:clamp(13px,4.5vw,22px)}
+.overlay{position:absolute;inset:0;background:rgba(255,253,248,.88);display:none;flex-direction:column;align-items:center;justify-content:center;gap:10px;border-radius:8px;text-align:center;padding:16px}
+.overlay .big{font-size:30px;font-weight:700;color:var(--accent-deep)}
+.keys{font-size:12px;color:var(--ink-soft);text-align:center;margin-top:10px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "어떻게 조작하나요?", "acceptedAnswer": {"@type": "Answer", "text": "PC는 키보드 방향키(또는 WASD), 스마트폰은 판 위에서 상하좌우로 스와이프하면 돼요. 한 번 밀면 모든 타일이 그 방향으로 이동하고 같은 숫자끼리 합쳐져요."}}, {"@type": "Question", "name": "점수는 어떻게 계산되나요?", "acceptedAnswer": {"@type": "Answer", "text": "타일이 합쳐질 때 만들어진 숫자만큼 점수가 올라가요. 예를 들어 8과 8이 합쳐져 16이 되면 16점이에요."}}, {"@type": "Question", "name": "2048을 만들면 끝인가요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 2048을 만든 뒤에도 계속할 수 있고, 4096·8192까지도 도전할 수 있어요. 더 이상 움직일 수 없을 때 게임이 끝나요."}}, {"@type": "Question", "name": "랭킹은 어떻게 등록하나요?", "acceptedAnswer": {"@type": "Answer", "text": "게임이 끝나면 닉네임을 넣고 등록 버튼을 누르면 돼요. 이번 주 100위 또는 전체 100위 안에 들면 랭킹에 올라가요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#b8823a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🎮 2048</b></div>
+  <h1>2048 게임</h1>
+  <p class="tagline">같은 숫자를 합쳐 2048을 만드세요</p>
+  <p class="sub">방향키(PC) 또는 스와이프(모바일)로 타일을 밀면 같은 숫자끼리 합쳐져요. 더 이상 움직일 수 없으면 게임 끝. 점수를 랭킹에 등록할 수 있어요.</p>
+
+  <div class="card">
+    <div class="hud"><div class="sc"><div class="box"><small>점수</small><b id="score">0</b></div><div class="box"><small>최고</small><b id="best">0</b></div></div><button class="btn-ghost" id="newGame">새 게임</button></div>
+    <div class="boardwrap">
+      <div class="board" id="board"></div>
+      <div class="overlay" id="overlay"></div>
+    </div>
+    <div class="keys">PC: ← ↑ → ↓ 또는 W A S D · 모바일: 판 위에서 스와이프</div>
+  </div>
+
+  <div id="lb"></div>
+
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>2048, 규칙은 30초면 배워요</h2><p>4×4 판에서 타일을 한 방향으로 밀면 모든 타일이 그쪽으로 이동하고, 같은 숫자가 만나면 하나로 합쳐지며 두 배가 돼요. 밀 때마다 2(가끔 4)가 새로 생기고, 판이 꽉 차서 더 이상 합칠 수 없으면 끝이에요. 목표는 2048 타일을 만드는 것이지만, 만든 뒤에도 4096·8192를 향해 계속할 수 있어요.</p>
+<p>점수는 합쳐진 타일의 숫자만큼 쌓여요. 게임이 끝나면 닉네임을 넣어 <b>이번 주 랭킹</b>과 <b>전체 랭킹</b>에 등록할 수 있고, 최고 타일도 함께 표시돼요. 내 최고 점수는 이 기기에 저장돼요.</p>
+<h2>고수들이 쓰는 기본 전략</h2><ol><li><b>큰 타일은 구석에.</b> 가장 큰 타일을 한 구석(보통 왼쪽 아래)에 고정하고 그 줄을 채워가세요.</li><li><b>한 방향은 봉인.</b> 구석을 유지하려면 네 방향 중 하나(예: 위)는 웬만하면 누르지 마세요.</li><li><b>내림차순 사슬.</b> 구석에서부터 큰 숫자 → 작은 숫자 순으로 뱀처럼 이어지게 배치하면 합치기가 쉬워요.</li><li><b>급하면 진다.</b> 판이 복잡해질수록 한 수 앞을 보고 밀어야 해요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>어떻게 조작하나요?</summary><p>PC는 키보드 방향키(또는 WASD), 스마트폰은 판 위에서 상하좌우로 스와이프하면 돼요. 한 번 밀면 모든 타일이 그 방향으로 이동하고 같은 숫자끼리 합쳐져요.</p></details><details><summary>점수는 어떻게 계산되나요?</summary><p>타일이 합쳐질 때 만들어진 숫자만큼 점수가 올라가요. 예를 들어 8과 8이 합쳐져 16이 되면 16점이에요.</p></details><details><summary>2048을 만들면 끝인가요?</summary><p>아니요. 2048을 만든 뒤에도 계속할 수 있고, 4096·8192까지도 도전할 수 있어요. 더 이상 움직일 수 없을 때 게임이 끝나요.</p></details><details><summary>랭킹은 어떻게 등록하나요?</summary><p>게임이 끝나면 닉네임을 넣고 등록 버튼을 누르면 돼요. 이번 주 100위 또는 전체 100위 안에 들면 랭킹에 올라가요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="order.html">숫자 순서 누르기</a><a href="reaction.html">반응속도 테스트</a><a href="typing.html">타자 속도 테스트</a><a href="worldcup.html">이상형 월드컵</a></div></section>
+  <footer>진행 중인 게임과 최고 점수는 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 점수가 서버에 저장돼요.<br><span class="version-tag">v1.0 · 2026-09-17 업데이트</span></footer>
+</main>
+
+<script src="leaderboard.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+let g=[], score=0, best=+localStorage.getItem('g2048_best')||0, over=false, won=false, startedAt=0, moves=0, lastNew=-1, mergedSet=new Set();
+$('best').textContent=best;
+function empty(){ const e=[]; for(let i=0;i<16;i++) if(!g[i]) e.push(i); return e; }
+function addTile(){ const e=empty(); if(!e.length) return; const i=e[Math.floor(Math.random()*e.length)]; g[i]=Math.random()<0.9?2:4; lastNew=i; }
+function newGame(){ g=Array(16).fill(0); score=0; over=false; won=false; moves=0; startedAt=Date.now(); addTile(); addTile(); $('overlay').style.display='none'; save(); render(); }
+function save(){ localStorage.setItem('g2048_state',JSON.stringify({g,score,over,won,startedAt,moves})); }
+function load(){ try{ const s=JSON.parse(localStorage.getItem('g2048_state')); if(s&&Array.isArray(s.g)&&s.g.length===16&&!s.over){ g=s.g; score=s.score||0; won=!!s.won; startedAt=s.startedAt||Date.now(); moves=s.moves||0; return true; } }catch(e){} return false; }
+function render(){
+  $('board').innerHTML=g.map((v,i)=>`<div class="tile ${v?(v>2048?'tbig':'t'+v):''} ${i===lastNew?'new':''} ${mergedSet.has(i)?'merged':''}">${v||''}</div>`).join('');
+  $('score').textContent=score; if(score>best){ best=score; localStorage.setItem('g2048_best',String(best)); } $('best').textContent=best;
+  lastNew=-1; mergedSet=new Set();
+}
+// 한 줄을 왼쪽으로 밀기: 반환 [새 줄, 얻은 점수, 합쳐진 인덱스들]
+function slideRow(row){
+  const a=row.filter(v=>v); const out=[]; let gained=0; const merged=[];
+  for(let i=0;i<a.length;i++){ if(a[i]===a[i+1]){ out.push(a[i]*2); gained+=a[i]*2; merged.push(out.length-1); i++; } else out.push(a[i]); }
+  while(out.length<4) out.push(0);
+  return [out,gained,merged];
+}
+function move(dir){ // 0:left 1:up 2:right 3:down
+  if(over) return;
+  const before=g.join(','); let gained=0; const ng=Array(16).fill(0); const mset=new Set();
+  for(let r=0;r<4;r++){
+    let idx=[]; for(let c=0;c<4;c++){ idx.push(dir===0? r*4+c : dir===2? r*4+(3-c) : dir===1? c*4+r : (3-c)*4+r); }
+    const [out,gn,merged]=slideRow(idx.map(i=>g[i])); gained+=gn;
+    out.forEach((v,k)=>{ ng[idx[k]]=v; if(merged.includes(k)) mset.add(idx[k]); });
+  }
+  if(ng.join(',')===before) return;
+  g=ng; score+=gained; moves++; mergedSet=mset; addTile();
+  if(!won && g.includes(2048)){ won=true; showOverlay('🎉 2048 달성!','계속 도전하거나 점수를 등록하세요.',true); }
+  if(!canMove()){ over=true; }
+  save(); render();
+  if(over) finish();
+}
+function canMove(){ if(empty().length) return true; for(let i=0;i<16;i++){ const r=Math.floor(i/4), c=i%4; if(c<3&&g[i]===g[i+1]) return true; if(r<3&&g[i]===g[i+4]) return true; } return false; }
+function maxTile(){ return Math.max(...g); }
+function showOverlay(title,sub,cont){
+  $('overlay').innerHTML=`<div class="big">${title}</div><div class="note" style="margin:0">${sub}</div><div class="btn-row" style="justify-content:center;margin-top:6px">${cont?'<button class="btn-ghost" id="cont">계속하기</button>':''}<button class="btn" id="restart">새 게임</button></div>`;
+  $('overlay').style.display='flex';
+  $('restart').addEventListener('click',newGame);
+  const c=$('cont'); if(c) c.addEventListener('click',()=>{ $('overlay').style.display='none'; });
+}
+function finish(){
+  showOverlay('게임 종료',`점수 ${score.toLocaleString()} · 최고 타일 ${maxTile()}`,false);
+  if(score>=100) LB.submit(score,{duration:Date.now()-startedAt, meta:'최고 '+maxTile()});
+  if(typeof gtag==='function') gtag('event','g2048_finished',{score,max:maxTile()});
+}
+document.addEventListener('keydown',e=>{ const m={ArrowLeft:0,ArrowUp:1,ArrowRight:2,ArrowDown:3,a:0,w:1,d:2,s:3,A:0,W:1,D:2,S:3}[e.key]; if(m==null) return; if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA') return; e.preventDefault(); move(m); });
+let sx=0,sy=0,sw=false;
+const bd=$('board');
+bd.addEventListener('pointerdown',e=>{ sx=e.clientX; sy=e.clientY; sw=true; });
+bd.addEventListener('pointerup',e=>{ if(!sw) return; sw=false; const dx=e.clientX-sx, dy=e.clientY-sy; if(Math.max(Math.abs(dx),Math.abs(dy))<24) return; if(Math.abs(dx)>Math.abs(dy)) move(dx>0?2:0); else move(dy>0?3:1); });
+$('newGame').addEventListener('click',newGame);
+if(!load()) newGame(); else render();
+LB.init({game:'2048', el:'#lb', label:'점수', format:v=>v.toLocaleString()});
+</script>
+
+</body>
+</html>

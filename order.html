@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>숫자 순서 누르기 게임 - 1부터 30까지 몇 초? 랭킹 도전</title>
+<meta name="description" content="흩어진 숫자를 1부터 30까지 순서대로 빨리 누르는 집중력 게임. 기록을 초 단위로 재고 이번 주·전체 랭킹에 닉네임으로 등록해 친구와 겨뤄보세요. 무료, 설치 없음.">
+<meta name="keywords" content="숫자 순서 누르기, 숫자 찾기 게임, 슐테 테이블, 집중력 게임, 반응속도 게임, 순서대로 누르기, 온라인 미니게임, 랭킹 게임">
+<link rel="canonical" href="https://dailyfreetoolbox.com/order.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="숫자 순서 누르기 게임 - 1부터 30까지 몇 초?">
+<meta property="og:description" content="흩어진 숫자를 1부터 30까지 순서대로 빨리 누르는 집중력 게임. 이번 주·전체 랭킹에 도전해보세요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/order.html">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "숫자 순서 누르기 게임", "url": "https://dailyfreetoolbox.com/order.html", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "흩어진 숫자를 1부터 30까지 순서대로 빨리 누르는 집중력 게임. 기록을 초 단위로 재고 랭킹에 등록할 수 있어요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#2f5d4e; --accent-deep:#23473b; }
+.top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
+.timer{font-size:34px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);line-height:1}
+.next{font-size:14px;color:var(--ink-soft)}.next b{font-size:20px;color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;touch-action:manipulation;user-select:none;-webkit-user-select:none}
+.cell{aspect-ratio:1;border:1px solid var(--line);border-radius:6px;background:#fff;font-size:22px;font-weight:700;display:flex;align-items:center;justify-content:center;cursor:pointer;font-family:inherit;color:var(--ink);padding:0;-webkit-tap-highlight-color:transparent}
+.cell:active{transform:scale(.96)}
+.cell.done{background:var(--accent);color:#fff;border-color:var(--accent);opacity:.35}
+.cell.wrong{animation:shake .25s}
+.overlay{position:absolute;inset:0;background:rgba(255,253,248,.92);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;border-radius:6px;text-align:center;padding:20px}
+.overlay .big{font-size:40px;font-weight:700;color:var(--accent);line-height:1}
+.board{position:relative}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+.stats{display:flex;gap:14px;font-size:13px;color:var(--ink-soft);margin-top:10px;flex-wrap:wrap}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "몇 초면 잘하는 건가요?", "acceptedAnswer": {"@type": "Answer", "text": "처음엔 25~35초가 보통이에요. 20초 안쪽이면 상위권, 15초 이하면 연습을 많이 한 실력이에요. 세계적으로는 10초 근처 기록도 있어요."}}, {"@type": "Question", "name": "잘못 누르면 어떻게 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "칸이 흔들리고 실수 횟수에 기록되지만 시간이 멈추지는 않아요. 실수는 결과에 참고로 표시돼요."}}, {"@type": "Question", "name": "랭킹은 어떻게 등록하나요?", "acceptedAnswer": {"@type": "Answer", "text": "게임이 끝나면 닉네임을 넣고 등록 버튼을 누르면 돼요. 이번 주 100위 또는 전체 100위 안에 들면 랭킹에 올라가요. 회원가입은 필요 없어요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f5d4e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🔢 숫자 순서 누르기</b></div>
+  <h1>숫자 순서 누르기 게임</h1>
+  <p class="tagline">1부터 30까지, 당신은 몇 초?</p>
+  <p class="sub">흩어진 숫자를 1부터 순서대로 빨리 누르세요. 첫 숫자를 누르는 순간 시간이 시작되고, 30을 누르면 끝나요. 기록은 랭킹에 등록할 수 있어요.</p>
+
+  <div class="card">
+    <div class="top"><div class="timer" id="timer">0.00</div><div class="next">다음 숫자 <b id="next">1</b></div></div>
+    <div class="board">
+      <div class="grid" id="grid"></div>
+      <div class="overlay" id="overlay"><div style="font-size:15px;color:var(--ink-soft)">준비되면 시작을 누르세요</div><button class="btn" id="start" style="min-width:160px">시작</button><div class="note" id="bestNote" style="margin:0"></div></div>
+    </div>
+    <div class="stats"><span id="bestLocal"></span><span id="errs"></span></div>
+  </div>
+
+  <div id="lb"></div>
+
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>단순하지만 은근히 어려운 집중력 게임</h2><p>5×6 판에 1부터 30까지 숫자가 무작위로 흩어져 있어요. 1, 2, 3… 순서대로 최대한 빨리 누르는 게 전부지만, 시선을 넓게 쓰면서 다음 숫자를 미리 찾아두는 요령이 필요해서 기록 차이가 크게 나요. 집중력·시각 탐색 훈련에 쓰이는 슐테 테이블(Schulte table)과 같은 원리예요.</p>
+<p>기록은 0.01초 단위로 재고, 게임이 끝나면 닉네임을 넣어 <b>이번 주 랭킹</b>과 <b>전체 랭킹</b>에 등록할 수 있어요. 이번 주 랭킹은 월요일마다 새로 시작되니 매주 1위에 도전해보세요. 내 최고 기록은 이 기기에 저장돼요.</p>
+<h2>기록 올리는 요령</h2><ol><li>한 숫자를 누르는 동시에 눈은 이미 다음 숫자를 찾고 있어야 해요.</li><li>판 전체를 한눈에 보는 느낌으로, 시선을 중앙에 두고 주변시를 써보세요.</li><li>실수해도 시간은 계속 가니 당황하지 말고 바로 이어가세요.</li><li>스마트폰은 두 손 엄지, PC는 마우스보다 터치 패드가 빠른 사람도 있어요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>몇 초면 잘하는 건가요?</summary><p>처음엔 25~35초가 보통이에요. 20초 안쪽이면 상위권, 15초 이하면 연습을 많이 한 실력이에요. 세계적으로는 10초 근처 기록도 있어요.</p></details><details><summary>잘못 누르면 어떻게 되나요?</summary><p>칸이 흔들리고 실수 횟수에 기록되지만 시간이 멈추지는 않아요. 실수는 결과에 참고로 표시돼요.</p></details><details><summary>랭킹은 어떻게 등록하나요?</summary><p>게임이 끝나면 닉네임을 넣고 등록 버튼을 누르면 돼요. 이번 주 100위 또는 전체 100위 안에 들면 랭킹에 올라가요. 회원가입은 필요 없어요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="game2048.html">2048 게임</a><a href="reaction.html">반응속도 테스트</a><a href="typing.html">타자 속도 테스트</a><a href="pomodoro.html">뽀모도로 타이머</a></div></section>
+  <footer>기록은 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 기록이 서버에 저장돼요.<br><span class="version-tag">v1.0 · 2026-09-17 업데이트</span></footer>
+</main>
+
+<script src="leaderboard.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+const N=30; let order=[], next=1, t0=0, raf=0, errs=0, running=false, startedAt=0;
+function fmt(ms){ return (ms/1000).toFixed(2)+'초'; }
+function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+function build(){
+  order=shuffle(Array.from({length:N},(_,i)=>i+1));
+  $('grid').innerHTML=order.map(n=>`<button class="cell" data-n="${n}">${n}</button>`).join('');
+  $('grid').querySelectorAll('.cell').forEach(c=>c.addEventListener('pointerdown',()=>tap(c)));
+  next=1; errs=0; $('next').textContent='1'; $('timer').textContent='0.00'; $('errs').textContent='';
+}
+function tick(){ $('timer').textContent=((performance.now()-t0)/1000).toFixed(2); raf=requestAnimationFrame(tick); }
+function tap(c){
+  if(!running) return; const n=+c.dataset.n;
+  if(n!==next){ errs++; c.classList.remove('wrong'); void c.offsetWidth; c.classList.add('wrong'); $('errs').textContent='실수 '+errs+'회'; return; }
+  if(n===1){ t0=performance.now(); startedAt=Date.now(); tick(); }
+  c.classList.add('done'); next++; $('next').textContent= next<=N? next : '완료!';
+  if(next>N) finish();
+}
+function finish(){
+  cancelAnimationFrame(raf); running=false;
+  const ms=Math.round(performance.now()-t0); $('timer').textContent=(ms/1000).toFixed(2);
+  const best=+localStorage.getItem('order_best')||0; const isBest=!best||ms<best; if(isBest) localStorage.setItem('order_best',String(ms));
+  $('overlay').innerHTML=`<div style="font-size:14px;color:var(--ink-soft)">기록</div><div class="big">${fmt(ms)}</div><div class="note" style="margin:0">${isBest?'🎉 이 기기 최고 기록!':'최고 기록 '+fmt(best)}${errs?` · 실수 ${errs}회`:''}</div><div class="btn-row" style="justify-content:center;margin-top:6px"><button class="btn" id="again">다시 하기</button></div>`;
+  $('overlay').style.display='flex'; $('again').addEventListener('click',start); showBest();
+  LB.submit(ms,{duration:Date.now()-startedAt, meta: errs?`실수 ${errs}`:''});
+  if(typeof gtag==='function') gtag('event','order_finished',{ms});
+}
+function start(){ build(); $('overlay').style.display='none'; running=true; }
+function showBest(){ const b=+localStorage.getItem('order_best')||0; $('bestLocal').textContent= b? '내 최고 기록 '+fmt(b) : ''; const bn=$('bestNote'); if(bn) bn.textContent= b? '내 최고 기록 '+fmt(b):''; }
+$('start').addEventListener('click',start); build(); showBest();
+LB.init({game:'order', el:'#lb', lower:true, label:'기록', format:v=>(v/1000).toFixed(2)+'초'});
+</script>
+
+</body>
+</html>

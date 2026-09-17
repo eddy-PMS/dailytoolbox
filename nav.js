@@ -54,6 +54,8 @@
     ]},
     { label: '게임·재미', items: [
       ['sens.html', '마우스 감도 변환기'],
+      ['order.html', '숫자 순서 누르기'],
+      ['game2048.html', '2048 게임'],
       ['reaction.html', '반응속도 테스트'],
       ['typing.html', '타자 속도 테스트'],
       ['ladder.html', '사다리타기'],

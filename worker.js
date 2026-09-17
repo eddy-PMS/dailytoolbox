@@ -6,6 +6,36 @@ const SHARE_TTL_DAYS = 30;                       // 공유 데이터 보관 기�
 const SHARE_TTL = 60 * 60 * 24 * SHARE_TTL_DAYS;
 // 만료 시각(초 단위 unix time). 이후 모든 put 은 expirationTtl 대신 이 절대 시각을 써서 만료가 밀리지 않게 함
 function expiresAtOf(createdAtMs) { return Math.floor(createdAtMs / 1000) + SHARE_TTL; }
+
+// ===== 게임 점수 랭킹 =====
+// 게임별 규칙: lower=작을수록 좋은 점수(시간), max=허용 최대, minMs=최소 플레이 시간, msPerPoint=점수당 최소 소요(ms, 조작 방지용 대략치)
+const SCORE_GAMES = {
+  order: { lower: true,  min: 4000,  max: 600000, minMs: 4000 },            // 숫자 순서 누르기: 1~30 완료 시간(ms)
+  '2048': { lower: false, min: 100, max: 300000, minMs: 5000, msPerPoint: 2 } // 2048: 점수
+};
+const LB_SIZE = 100;
+const BAD_WORDS = ['시발','씨발','씨팔','ㅅㅂ','병신','ㅂㅅ','좆','존나','개새','새끼','니미','엿먹','fuck','shit','bitch','sex','섹스','자지','보지','창녀','걸레'];
+const rateMap = new Map(); // ip → [timestamps] (인스턴스 단위, 간이 제한)
+function rateOk(ip, limit, windowMs) {
+  const now = Date.now(); const arr = (rateMap.get(ip) || []).filter(t => now - t < windowMs);
+  if (arr.length >= limit) return false;
+  arr.push(now); rateMap.set(ip, arr); if (rateMap.size > 5000) rateMap.clear();
+  return true;
+}
+function weekKey(d = new Date()) { // ISO 주차: YYYY-Www
+  const t = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()));
+  const day = t.getUTCDay() || 7; t.setUTCDate(t.getUTCDate() + 4 - day);
+  const y0 = new Date(Date.UTC(t.getUTCFullYear(), 0, 1));
+  return `${t.getUTCFullYear()}-W${String(Math.ceil((((t - y0) / 86400000) + 1) / 7)).padStart(2, '0')}`;
+}
+function cleanName(v) {
+  let n = String(v || '').replace(/[<>"'&\\/]/g, '').replace(/\s+/g, ' ').trim().slice(0, 8);
+  if (n.length < 2) return null;
+  const low = n.toLowerCase().replace(/\s/g, '');
+  if (BAD_WORDS.some(w => low.includes(w))) return null;
+  return n;
+}
+function better(g, a, b) { return g.lower ? a < b : a > b; }
 const VOTE_SAMPLE_AFTER = 100; // 이 참여 수부터 표본 집계
 const VOTE_SAMPLE_RATE = 5;    // 5회 중 1회만 KV 에 기록
 function wcGenId() {
@@ -164,6 +194,48 @@ export default {
       const rec = await env.WORLDCUP_KV.get('lu:' + id, 'json');
       if (!rec) return json({ ok: false, error: 'not_found' }, 404);
       return json({ ok: true, data: rec.data, expiresAt: rec.expiresAt }, 200, { 'cache-control': 'public, max-age=3600' });
+    }
+
+    // ---- 게임 랭킹: 조회 ----
+    if (url.pathname === '/api/score' && request.method === 'GET') {
+      if (!env.WORLDCUP_KV) return json({ ok: false, error: 'not_configured' }, 500);
+      const game = url.searchParams.get('game') || '';
+      if (!SCORE_GAMES[game]) return json({ ok: false, error: 'unknown_game' }, 400);
+      const wk = weekKey();
+      const [all, week] = await Promise.all([env.WORLDCUP_KV.get(`lb:${game}:all`, 'json'), env.WORLDCUP_KV.get(`lb:${game}:${wk}`, 'json')]);
+      return json({ ok: true, week: wk, all: all || [], weekly: week || [] }, 200, { 'cache-control': 'public, max-age=30' });
+    }
+    // ---- 게임 랭킹: 등록 (100위 안에 들 때만 KV 에 씀) ----
+    if (url.pathname === '/api/score' && request.method === 'POST') {
+      if (!isSameOrigin(request, host)) return json({ ok: false, error: 'forbidden' }, 403);
+      if (!env.WORLDCUP_KV) return json({ ok: false, error: 'not_configured' }, 500);
+      const ip = request.headers.get('cf-connecting-ip') || '0';
+      if (!rateOk(ip, 5, 60000)) return json({ ok: false, error: 'rate' }, 429);
+      let b; try { b = await request.json(); } catch { return json({ ok: false, error: 'bad_request' }, 400); }
+      const game = String(b.game || ''); const g = SCORE_GAMES[game];
+      if (!g) return json({ ok: false, error: 'unknown_game' }, 400);
+      const name = cleanName(b.name); if (!name) return json({ ok: false, error: 'bad_name' }, 400);
+      const score = Math.round(+b.score), dur = Math.round(+b.duration || 0);
+      if (!Number.isFinite(score) || score < g.min || score > g.max) return json({ ok: false, error: 'bad_score' }, 400);
+      if (dur < g.minMs || (g.msPerPoint && dur < score * g.msPerPoint)) return json({ ok: false, error: 'suspicious' }, 400);
+      const meta = String(b.meta || '').slice(0, 20);
+      const entry = { n: name, s: score, m: meta, d: new Date().toISOString().slice(0, 10) };
+      const wk = weekKey();
+      const keys = [`lb:${game}:all`, `lb:${game}:${wk}`];
+      const boards = await Promise.all(keys.map(k => env.WORLDCUP_KV.get(k, 'json')));
+      const ranks = [], writes = [];
+      const lists = boards.map(bd => Array.isArray(bd) ? bd : []);
+      lists.forEach((list, i) => {
+        let pos = list.findIndex(e => better(g, score, e.s)); if (pos < 0) pos = list.length;
+        if (pos >= LB_SIZE) { ranks.push(null); return; }
+        list.splice(pos, 0, entry); if (list.length > LB_SIZE) list.length = LB_SIZE;
+        ranks.push(pos + 1);
+        const opts = i === 1 ? { expirationTtl: 60 * 60 * 24 * 21 } : {};  // 주간 보드는 3주 뒤 자동 삭제
+        writes.push(env.WORLDCUP_KV.put(keys[i], JSON.stringify(list), opts));
+      });
+      let saved = true;
+      try { await Promise.all(writes); } catch (e) { saved = false; }
+      return json({ ok: true, saved, rankAll: ranks[0], rankWeek: ranks[1], week: wk, all: lists[0], weekly: lists[1] });
     }
 
     // ---- 이상형 월드컵: 만들기 ----

@@ -1,6 +1,6 @@
 /* 공용 게임 랭킹 위젯
    사용: LB.init({ game:'order', el:'#lb', lower:true, format:v=>..., label:'기록' })
-        LB.submit(score, { duration, meta })  → 등록 폼 표시
+        LB.submit(score, { duration, meta, units })  → 등록 폼 표시 (units: 타자처럼 단위 수로 검증하는 게임만)
 */
 window.LB = (function () {
   const S = { game: null, el: null, lower: false, format: v => v, label: '점수', data: null, tab: 'weekly', pending: null };
@@ -56,7 +56,7 @@ window.LB = (function () {
     localStorage.setItem('lb_name', name);
     const btn = $('[data-act="submit"]'); btn.disabled = true; msg.className = 'lb-msg'; msg.textContent = '등록 중…';
     try {
-      const r = await fetch('/api/score', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ game: S.game, name, score: p.score, duration: p.duration || 0, meta: p.meta || '' }) });
+      const r = await fetch('/api/score', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ game: S.game, name, score: p.score, duration: p.duration || 0, meta: p.meta || '', units: p.units || 0 }) });
       const d = await r.json();
       if (!d.ok) {
         const M = { bad_name: '사용할 수 없는 닉네임이에요. 다른 닉네임을 써주세요.', rate: '너무 자주 등록했어요. 1분 뒤 다시 시도해주세요.', suspicious: '기록을 확인할 수 없어 등록되지 않았어요.', bad_score: '등록할 수 없는 점수예요.' };
@@ -73,7 +73,7 @@ window.LB = (function () {
 
   return {
     init(o) { S.game = o.game; S.el = typeof o.el === 'string' ? document.querySelector(o.el) : o.el; S.lower = !!o.lower; S.format = o.format || (v => v); S.label = o.label || '점수'; css(); render(); load(); },
-    submit(score, o) { S.pending = { score, duration: (o && o.duration) || 0, meta: (o && o.meta) || '' }; S.noteHtml = ''; render(); const f = $('.lb-form'); if (f) f.scrollIntoView({ behavior: 'smooth', block: 'center' }); },
+    submit(score, o) { S.pending = { score, duration: (o && o.duration) || 0, meta: (o && o.meta) || '', units: (o && o.units) || 0 }; S.noteHtml = ''; render(); const f = $('.lb-form'); if (f) f.scrollIntoView({ behavior: 'smooth', block: 'center' }); },
     refresh: load
   };
 })();

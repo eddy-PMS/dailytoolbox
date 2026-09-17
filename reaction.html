@@ -41,6 +41,8 @@
 
   <div id="pad" style="height:300px;border-radius:3px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;user-select:none;background:var(--accent);color:#fff;font-size:22px;font-weight:700;text-align:center;padding:20px;line-height:1.5">클릭해서 시작</div>
   <div class="card" style="margin-top:16px"><div class="row" style="margin:0" id="tries"></div><div id="result"></div></div>
+
+  <div id="lb"></div>
  <div class="ad-slot" data-ad="below-result"></div>
 <section class="seo">
 <h2>반응속도, 평균은 얼마일까요</h2><p>시각 자극에 대한 인간의 평균 반응속도는 약 250ms(0.25초)예요. 20대 초반이 가장 빠르고 나이가 들수록 조금씩 느려져요. 프로게이머는 150~180ms, 상위 게이머는 200ms 안팎이 흔해요. 이 테스트는 화면이 초록색으로 바뀌는 순간 클릭하는 시간을 5회 재서 평균과 최고 기록을 보여줘요.</p><p>측정값에는 모니터 응답 시간과 마우스 입력 지연(보통 합쳐서 10~30ms)이 포함돼요. 그래서 같은 사람도 장비에 따라 20~30ms 차이가 나니, 다른 사람과 비교보다는 같은 환경에서의 변화를 보는 게 의미 있어요.</p>
@@ -50,25 +52,26 @@
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>반응속도를 올릴 수 있나요?</summary><p>충분한 수면, 카페인 적당량, 꾸준한 연습으로 20~30ms 정도는 개선돼요. 다만 타고난 한계가 있어 큰 폭의 향상은 어려워요.</p></details><details><summary>모바일에서도 정확한가요?</summary><p>터치 지연이 마우스보다 커서 20~50ms 정도 느리게 나올 수 있어요.</p></details><details><summary>게임 실력과 관계가 있나요?</summary><p>FPS에서는 반응속도보다 예측·위치 선정·에임 정확도가 더 중요해요. 반응속도는 여러 요소 중 하나예요.</p></details></section>
 <section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="typing.html">타자 속도 테스트</a><a href="sens.html">마우스 감도 변환기</a><a href="random-pick.html">랜덤 뽑기</a><a href="team.html">팀 나누기</a></div></section>
-  <footer>측정값에는 마우스·모니터·브라우저 지연이 포함돼요. 같은 환경에서 비교할 때 의미가 있습니다.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
+  <footer>측정값에는 마우스·모니터·브라우저 지연이 포함돼요. 같은 환경에서 비교할 때 의미가 있습니다. 랭킹 등록 시에만 닉네임과 기록이 서버에 저장돼요.<br><span class="version-tag">v1.1 · 2026-09-17 업데이트</span></footer>
 </main>
 
+<script src="leaderboard.js"></script>
 <script>
-
 const $=id=>document.getElementById(id);
-const pad=$('pad'); let state='idle', timer=null, t0=0, results=[];
+const pad=$('pad'); let state='idle', timer=null, t0=0, results=[], startedAt=0;
 const COLORS={idle:'var(--accent)',wait:'#a8483a',go:'#3cae5c',early:'#b8823a',done:'var(--accent)'};
 function set(s,text){ state=s; pad.style.background=COLORS[s]; pad.innerHTML=text; }
 function startWait(){ set('wait','기다리세요…<br><span style="font-size:14px;font-weight:400">초록색이 되면 클릭</span>'); timer=setTimeout(()=>{ set('go','지금 클릭!'); t0=performance.now(); }, 1500+Math.random()*3500); }
 function grade(ms){ return ms<150?'프로게이머급':ms<200?'상위권':ms<250?'평균':ms<300?'평균 이하':'연습이 필요해요'; }
 pad.addEventListener('pointerdown',()=>{
-  if(state==='idle'||state==='done'){ results=[]; $('result').innerHTML=''; renderTries(); startWait(); return; }
+  if(state==='idle'||state==='done'){ results=[]; $('result').innerHTML=''; renderTries(); startedAt=Date.now(); startWait(); return; }
   if(state==='wait'){ clearTimeout(timer); set('early','너무 빨라요!<br><span style="font-size:14px;font-weight:400">클릭해서 다시</span>'); return; }
   if(state==='early'){ startWait(); return; }
   if(state==='go'){ const ms=Math.round(performance.now()-t0); results.push(ms); renderTries();
     if(results.length>=5){ const avg=Math.round(results.reduce((a,b)=>a+b,0)/5), best=Math.min(...results);
       set('done',`평균 ${avg}ms<br><span style="font-size:15px;font-weight:400">${grade(avg)} · 클릭해서 다시</span>`);
       $('result').innerHTML=`<div class="stat-grid" style="margin-top:12px"><div class="stat"><div class="num">${avg}ms</div><div class="label">평균</div></div><div class="stat"><div class="num">${best}ms</div><div class="label">최고 기록</div></div><div class="stat"><div class="num">${grade(avg)}</div><div class="label">등급</div></div></div>`;
+      LB.submit(avg,{duration:Date.now()-startedAt, meta:'최고 '+best+'ms'});
       if(typeof gtag==='function') gtag('event','reaction_test_done',{avg});
     } else { set('go',`${ms}ms<br><span style="font-size:14px;font-weight:400">클릭해서 다음 (${results.length}/5)</span>`); state='next'; }
     return; }
@@ -76,7 +79,7 @@ pad.addEventListener('pointerdown',()=>{
 });
 function renderTries(){ $('tries').innerHTML=[0,1,2,3,4].map(i=>`<span style="padding:6px 12px;border:1px solid var(--line);border-radius:20px;background:${results[i]!=null?'var(--paper-deep)':'#fffdf8'}">${i+1}회: ${results[i]!=null?results[i]+'ms':'-'}</span>`).join(''); }
 renderTries();
- 
+LB.init({game:'reaction', el:'#lb', lower:true, label:'평균', format:v=>v+'ms'});
 </script>
 
 </body>

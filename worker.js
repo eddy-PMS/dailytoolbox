@@ -10,8 +10,11 @@ function expiresAtOf(createdAtMs) { return Math.floor(createdAtMs / 1000) + SHAR
 // ===== 게임 점수 랭킹 =====
 // 게임별 규칙: lower=작을수록 좋은 점수(시간), max=허용 최대, minMs=최소 플레이 시간, msPerPoint=점수당 최소 소요(ms, 조작 방지용 대략치)
 const SCORE_GAMES = {
-  order: { lower: true,  min: 4000,  max: 600000, minMs: 4000 },            // 숫자 순서 누르기: 1~30 완료 시간(ms)
-  '2048': { lower: false, min: 100, max: 300000, minMs: 5000, msPerPoint: 2 } // 2048: 점수
+  order: { lower: true,  min: 4000,  max: 600000, minMs: 4000 },             // 숫자 순서 누르기: 1~30 완료 시간(ms)
+  '2048': { lower: false, min: 100, max: 300000, minMs: 5000, msPerPoint: 2 }, // 2048: 점수
+  reaction: { lower: true, min: 100, max: 1000, minMs: 7000 },               // 반응속도: 5회 평균(ms). 대기 1.5초×5회라 7초 미만은 불가
+  'typing-ko': { lower: false, min: 60, max: 1300, minMs: 3000, units: [60, 600] }, // 타자(한글): 타/분. units=문장 타수, 소요시간과 대조
+  'typing-en': { lower: false, min: 60, max: 1300, minMs: 3000, units: [40, 400] }  // 타자(영문): 타/분
 };
 const LB_SIZE = 100;
 const BAD_WORDS = ['시발','씨발','씨팔','ㅅㅂ','병신','ㅂㅅ','좆','존나','개새','새끼','니미','엿먹','fuck','shit','bitch','sex','섹스','자지','보지','창녀','걸레'];
@@ -218,6 +221,12 @@ export default {
       const score = Math.round(+b.score), dur = Math.round(+b.duration || 0);
       if (!Number.isFinite(score) || score < g.min || score > g.max) return json({ ok: false, error: 'bad_score' }, 400);
       if (dur < g.minMs || (g.msPerPoint && dur < score * g.msPerPoint)) return json({ ok: false, error: 'suspicious' }, 400);
+      if (g.units) { // 타수/분 = units / (dur/60000) 이 신고 점수와 맞는지 (±10%)
+        const units = Math.round(+b.units || 0);
+        if (units < g.units[0] || units > g.units[1]) return json({ ok: false, error: 'suspicious' }, 400);
+        const calc = units / (dur / 60000);
+        if (Math.abs(calc - score) > Math.max(20, score * 0.1)) return json({ ok: false, error: 'suspicious' }, 400);
+      }
       const meta = String(b.meta || '').slice(0, 20);
       const entry = { n: name, s: score, m: meta, d: new Date().toISOString().slice(0, 10) };
       const wk = weekKey();

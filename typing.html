@@ -46,6 +46,8 @@
     <div class="row" style="margin:10px 0 0"><span id="live"></span><button class="btn-ghost" id="next" style="margin-left:auto">다른 문장</button></div>
   </div>
   <div id="result"></div>
+
+  <div id="lb"></div>
  <div class="ad-slot" data-ad="below-result"></div>
 <section class="seo">
 <h2>타자 속도 기준</h2><p>한글 타자는 분당 타수로 재요. 자모 하나가 1타이고 겹자모(ㅘ, ㄳ 등)는 2타로 세는 게 일반적인 타자연습 프로그램 기준이에요. 일반 사무직은 300~400타, 빠른 편은 500타 이상, 속기·전문 타이핑은 700타를 넘어요. 영문은 분당 단어 수(WPM, 5글자=1단어)로 재며 평균 40WPM, 빠르면 70WPM 이상이에요.</p><p>속도보다 정확도가 먼저예요. 오타를 고치는 시간이 더 크기 때문에 정확도 95% 이상을 유지하면서 속도를 올리는 게 효율적이에요. 매일 5분씩 같은 문장을 반복하면 2주 안에 눈에 띄게 늘어요.</p>
@@ -55,18 +57,19 @@
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>타수 계산이 다른 사이트와 달라요.</summary><p>사이트마다 겹자모·공백 처리 기준이 달라요. 이 도구는 자모 단위(겹자모 2타, 공백 1타)로 계산해요.</p></details><details><summary>한영 전환 실수도 오타로 세나요?</summary><p>네. 입력된 글자와 예문을 글자 단위로 비교해서 다른 글자는 모두 오타로 처리해요.</p></details><details><summary>예문을 직접 넣을 수 있나요?</summary><p>현재는 내장 예문만 제공해요. 받아쓰기 연습 도구에서는 내 문장으로 연습할 수 있어요.</p></details></section>
 <section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="reaction.html">반응속도 테스트</a><a href="dictation.html">받아쓰기 연습</a><a href="charcount.html">글자수 세기</a><a href="sens.html">마우스 감도 변환기</a></div></section>
-  <footer>한글 타수는 자모 단위(초성·중성·종성, 겹자모는 2타)로 계산하며, 흔히 쓰는 타자연습 프로그램과 비슷한 기준이에요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
+  <footer>한글 타수는 자모 단위(초성·중성·종성, 겹자모는 2타)로 계산하며, 흔히 쓰는 타자연습 프로그램과 비슷한 기준이에요. 랭킹은 한글·영문 따로 집계되고 정확도 95% 이상일 때 등록할 수 있어요.<br><span class="version-tag">v1.1 · 2026-09-17 업데이트</span></footer>
 </main>
 
+<script src="leaderboard.js"></script>
 <script>
-
 const $=id=>document.getElementById(id);
 const KO=['가장 큰 위험은 아무 위험도 감수하지 않는 것이다. 빠르게 변하는 세상에서 실패가 보장된 유일한 전략은 위험을 감수하지 않는 것이다.','오늘 할 수 있는 일을 내일로 미루지 마라. 작은 습관이 쌓여 큰 차이를 만들고, 꾸준함은 재능을 이긴다.','여행은 목적지에 도착하는 것이 아니라 길 위에서 보내는 시간 그 자체다. 낯선 곳에서 우리는 자신을 새롭게 발견한다.','책을 읽는다는 것은 다른 사람의 머리로 생각하는 연습이다. 좋은 책 한 권은 좋은 친구 열 명보다 낫다.','성공은 매일 반복되는 작은 노력의 합이다. 어제보다 나은 오늘을 만드는 것, 그것이 전부다.'];
 const EN=['The quick brown fox jumps over the lazy dog while the sun sets slowly behind the mountains.','Success is not final, failure is not fatal. It is the courage to continue that counts in the end.','Practice makes progress, not perfection. Every small step forward is still a step in the right direction.','Technology is best when it brings people together and makes everyday life a little easier for everyone.','Do not watch the clock. Do what it does and keep going, one steady second at a time.'];
 let lang='ko', text='', t0=null, done=false, tick=null;
 function strokes(s){ let n=0; for(const ch of s){ const c=ch.charCodeAt(0)-0xAC00; if(c>=0&&c<=11171){ const cho=Math.floor(c/588), jung=Math.floor(c%588/28), jong=c%28; n+=1; n+= [9,10,11,14,15,16,19].includes(jung)?2:1; if(jong){ n+= [3,5,6,9,10,11,12,13,14,15,18].includes(jong)?2:1; } } else if(ch.trim()) n+=1; else n+=1; } return n; }
 function pick(){ const arr=lang==='ko'?KO:EN; text=arr[Math.floor(Math.random()*arr.length)]; $('sample').textContent=text; $('input').value=''; t0=null; done=false; $('result').innerHTML=''; $('live').textContent=''; clearInterval(tick); $('input').focus(); }
-document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');lang=b.dataset.l;pick();}));
+function initLB(){ LB.init({game:'typing-'+lang, el:'#lb', label:'타/분', format:v=>v+'타'}); }
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');lang=b.dataset.l;pick();initLB();}));
 $('next').addEventListener('click',pick);
 function stats(){ const v=$('input').value; const sec=(performance.now()-t0)/1000; const min=Math.max(sec/60,1/600);
   let correct=0; for(let i=0;i<v.length;i++){ if(v[i]===text[i]) correct++; } const acc= v.length? Math.round(correct/v.length*100):100;
@@ -76,10 +79,12 @@ $('input').addEventListener('input',()=>{
   const v=$('input').value;
   if(v.length>=text.length){ done=true; clearInterval(tick); const s=stats();
     $('result').innerHTML=`<div class="stat-grid"><div class="stat"><div class="num">${s.tasu}</div><div class="label">타/분</div></div>${lang==='en'?`<div class="stat"><div class="num">${s.wpm}</div><div class="label">WPM</div></div>`:''}<div class="stat"><div class="num">${s.acc}%</div><div class="label">정확도</div></div><div class="stat"><div class="num">${s.sec.toFixed(1)}s</div><div class="label">소요 시간</div></div></div><div class="note" style="text-align:center">${s.tasu>=600?'매우 빠름':s.tasu>=400?'빠름':s.tasu>=250?'보통':'연습하면 금방 늘어요'} · "다른 문장"으로 다시 도전</div>`;
-    $('live').textContent='완료!'; if(typeof gtag==='function') gtag('event','typing_test_done',{lang,tasu:s.tasu,acc:s.acc}); }
+    $('live').textContent='완료!';
+    if(s.acc>=95) LB.submit(s.tasu,{duration:Math.round(s.sec*1000), units:strokes(v), meta:`정확도 ${s.acc}%`});
+    else $('result').insertAdjacentHTML('beforeend','<div class="note" style="text-align:center">정확도 95% 이상일 때 랭킹에 등록할 수 있어요.</div>');
+    if(typeof gtag==='function') gtag('event','typing_test_done',{lang,tasu:s.tasu,acc:s.acc}); }
 });
-pick();
- 
+pick(); initLB();
 </script>
 
 </body>

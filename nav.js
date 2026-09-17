@@ -67,6 +67,7 @@
       ['kakao-analyzer.html', '카카오톡 대화 분석기'],
       ['quote-card.html', '감성 문구 카드'],
       ['ascii-art.html', '아스키 아트 생성기'],
+      ['iq-test.html', 'IQ 테스트'],
       ['mbti-test.html', '간이 MBTI 테스트'],
       ['worldcup.html', '이상형 월드컵'],
       ['balance-game.html', '밸런스 게임 생성기'],

@@ -13,8 +13,8 @@ const SCORE_GAMES = {
   order: { lower: true,  min: 4000,  max: 600000, minMs: 4000 },             // 숫자 순서 누르기: 1~30 완료 시간(ms)
   '2048': { lower: false, min: 100, max: 300000, minMs: 5000, msPerPoint: 2 }, // 2048: 점수
   reaction: { lower: true, min: 100, max: 1000, minMs: 7000 },               // 반응속도: 5회 평균(ms). 대기 1.5초×5회라 7초 미만은 불가
-  'typing-ko': { lower: false, min: 60, max: 1300, minMs: 3000, units: [60, 600] }, // 타자(한글): 타/분. units=문장 타수, 소요시간과 대조
-  'typing-en': { lower: false, min: 60, max: 1300, minMs: 3000, units: [40, 400] }  // 타자(영문): 타/분
+  'typing-ko': { lower: false, min: 60, max: 1300, minMs: 12000, units: [250, 500] }, // 타자(한글): 타/분. 주간 지정 3문장(약 300~450타), units=입력 타수를 소요시간과 대조
+  'typing-en': { lower: false, min: 60, max: 1300, minMs: 12000, units: [230, 330] }  // 타자(영문): 타/분. 주간 지정 3문장(약 260~310타)
 };
 const LB_SIZE = 100;
 const BAD_WORDS = ['시발','씨발','씨팔','ㅅㅂ','병신','ㅂㅅ','좆','존나','개새','새끼','니미','엿먹','fuck','shit','bitch','sex','섹스','자지','보지','창녀','걸레'];

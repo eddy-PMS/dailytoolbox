@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>영단어 스피드 퀴즈 - 60초 뜻 맞히기, 중등·고등·토익 랭킹</title>
+<meta name="description" content="영단어를 보고 알맞은 뜻을 4지선다로 고르는 60초 스피드 퀴즈. 중등·고등·토익 급별 100단어, 급별 이번 주·전체 랭킹 도전. 무료, 설치 없음.">
+<meta name="keywords" content="영단어 퀴즈, 영단어 게임, 영단어 테스트, 수능 영단어, 토익 영단어, 중학 영단어, 단어 뜻 맞히기, 영어 단어 시험, 랭킹 게임">
+<link rel="canonical" href="https://dailyfreetoolbox.com/vocab-quiz.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="영단어 스피드 퀴즈 - 60초에 몇 개?">
+<meta property="og:description" content="영단어 뜻 맞히기 60초 퀴즈. 중등·고등·토익 급별 랭킹에 도전해보세요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/vocab-quiz.html">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "영단어 스피드 퀴즈", "url": "https://dailyfreetoolbox.com/vocab-quiz.html", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "영단어를 보고 알맞은 뜻을 고르는 60초 스피드 퀴즈. 중등·고등·토익 급별로 랭킹에 등록할 수 있어요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#c0392b; --accent-deep:#c0392b; }
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.big{font-size:30px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1}.lbl{font-size:12px;color:var(--ink-soft)}
+.timebar{height:8px;background:var(--paper-deep);border-radius:4px;overflow:hidden;margin-bottom:14px}.timebar i{display:block;height:100%;background:var(--accent);width:100%;transition:width .2s linear}
+.word{font-size:clamp(30px,8vw,42px);font-weight:700;text-align:center;margin:6px 0 14px;letter-spacing:.01em}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}@media(max-width:420px){.opts{grid-template-columns:1fr}}
+.opt{padding:14px 10px;border:1px solid var(--line);border-radius:6px;background:#fff;font-size:16px;font-family:inherit;cursor:pointer;color:var(--ink);-webkit-tap-highlight-color:transparent}.opt:active{background:var(--paper-deep)}
+.opt.ok{background:#eefaf1;border-color:#2f9e44}.opt.bad{background:#fff0f0;border-color:#d64545}
+.board{position:relative;min-height:220px}
+.overlay{position:absolute;inset:0;background:rgba(255,253,248,.94);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;border-radius:6px;text-align:center;padding:20px}
+.overlay .huge{font-size:44px;font-weight:700;color:var(--accent);line-height:1}
+.stats{display:flex;justify-content:center;gap:16px;font-size:13px;color:var(--ink-soft);margin-top:10px}
+.promo{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:3px;background:#fffdf8;padding:12px 14px;font-size:14px;margin-top:14px;line-height:1.6}
+.promo a{font-weight:700}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "어떤 단어가 나오나요?", "acceptedAnswer": {"@type": "Answer", "text": "중등(교과서 필수어), 고등(수능 빈출어), 토익(비즈니스 빈출어) 세 급이 있고 급마다 100단어씩이에요. 문제는 무작위로 나오고 보기는 같은 급의 다른 뜻으로 채워져요."}}, {"@type": "Question", "name": "틀리면 어떻게 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "틀린 보기는 빨갛게, 정답은 초록으로 잠깐 표시된 뒤 다음 문제로 넘어가요. 감점은 없지만 시간이 흘러요."}}, {"@type": "Question", "name": "랭킹은 급별로 따로인가요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 중등·고등·토익 랭킹이 각각 있어요. 급을 바꾸면 랭킹도 그 급으로 바뀌어요."}}, {"@type": "Question", "name": "더 많은 단어로 공부하고 싶어요.", "acceptedAnswer": {"@type": "Answer", "text": "시험별 단어장을 갖춘 스파르타보카 앱에서 같은 방식으로 학습할 수 있어요. 페이지 하단 링크를 참고하세요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#c0392b"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🔤 영단어 스피드 퀴즈</b></div>
+  <h1>영단어 스피드 퀴즈</h1>
+  <p class="tagline">60초, 아는 단어는 몇 개?</p>
+  <p class="sub">단어를 보고 알맞은 뜻을 고르세요. 중등·고등·토익 급을 고를 수 있고, 60초 동안 맞힌 개수로 급별 랭킹에 도전해요.</p>
+
+  <div class="card">
+    <div class="tabs"><button class="tab active" data-l="mid">중등</button><button class="tab" data-l="high">고등</button><button class="tab" data-l="toeic">토익</button></div>
+    <div class="top"><div><div class="lbl">정답</div><div class="big" id="score">0</div></div><div style="text-align:center"><div class="lbl">연속</div><div class="big" id="streak">0</div></div><div style="text-align:right"><div class="lbl">남은 시간</div><div class="big" id="time">60.0</div></div></div>
+    <div class="timebar"><i id="bar"></i></div>
+    <div class="board">
+      <div class="word" id="word">ability</div>
+      <div class="opts" id="opts"></div>
+      <div class="overlay" id="overlay"><div style="font-size:15px;color:var(--ink-soft)">단어를 보고 알맞은 뜻을 고르세요<br>60초 동안 최대한 많이!</div><button class="btn" id="start" style="min-width:160px">시작</button><div class="note" id="bestNote" style="margin:0"></div></div>
+    </div>
+    <div class="stats"><span id="bestLocal"></span><span id="wrongs"></span></div>
+    <div class="promo">📚 시험별 단어장으로 제대로 외우고 싶다면 <a href="https://play.google.com/store/apps/details?id=com.spartavoca.app" target="_blank" rel="noopener">스파르타보카 앱</a>에서 같은 방식으로 학습할 수 있어요.</div>
+  </div>
+
+  <div id="lb"></div>
+
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>아는 단어인지 0.5초 만에 판가름</h2><p>영단어가 하나 뜨면 네 개의 뜻 중 맞는 것을 고르세요. 60초 동안 최대한 많이 맞히는 게임이고, 급은 <b>중등</b>(교과서 필수어)·<b>고등</b>(수능 빈출어)·<b>토익</b>(비즈니스 빈출어) 셋 중에서 고를 수 있어요. 급마다 100단어가 무작위로 나오고 보기는 같은 급의 다른 뜻으로 채워지기 때문에 대충 찍기는 어려워요.</p>
+<p>단어를 "안다"는 건 뜻이 바로 떠오른다는 뜻이에요. 시간 압박 속에서 고르다 보면 확실히 아는 단어와 눈에만 익은 단어가 갈려요. 틀린 단어는 잠깐 정답이 표시되니 그 자리에서 다시 외우세요. 급별로 <b>이번 주 랭킹</b>과 <b>전체 랭킹</b>이 따로 집계돼요.</p>
+<h2>점수 올리는 요령</h2><ol><li>모르는 단어는 고민하지 말고 바로 찍고 넘어가세요. 시간이 점수예요.</li><li>보기 네 개를 다 읽지 말고, 단어를 보는 순간 떠오른 뜻이 있으면 그것부터 찾으세요.</li><li>한 급에서 50개 이상 나오면 다음 급으로 올라가 보세요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>어떤 단어가 나오나요?</summary><p>중등(교과서 필수어), 고등(수능 빈출어), 토익(비즈니스 빈출어) 세 급이 있고 급마다 100단어씩이에요. 문제는 무작위로 나오고 보기는 같은 급의 다른 뜻으로 채워져요.</p></details><details><summary>틀리면 어떻게 되나요?</summary><p>틀린 보기는 빨갛게, 정답은 초록으로 잠깐 표시된 뒤 다음 문제로 넘어가요. 감점은 없지만 시간이 흘러요.</p></details><details><summary>랭킹은 급별로 따로인가요?</summary><p>네. 중등·고등·토익 랭킹이 각각 있어요. 급을 바꾸면 랭킹도 그 급으로 바뀌어요.</p></details><details><summary>더 많은 단어로 공부하고 싶어요.</summary><p>시험별 단어장을 갖춘 스파르타보카 앱에서 같은 방식으로 학습할 수 있어요. 페이지 하단 링크를 참고하세요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="math-speed.html">암산 스피드</a><a href="level-test.html">영어 레벨 테스트</a><a href="irregular-verbs.html">불규칙 동사표</a><a href="wordlist.html">단어장 만들기</a></div></section>
+  <footer>기록은 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 기록이 서버에 저장돼요. 단어 뜻은 대표 의미 하나로 표기했어요.<br><span class="version-tag">v1.0 · 2026-09-17 업데이트</span></footer>
+</main>
+
+<script src="leaderboard.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+const WORDS={"mid":[["ability","능력"],["accept","받아들이다"],["achieve","성취하다"],["afraid","두려워하는"],["agree","동의하다"],["allow","허락하다"],["ancient","고대의"],["appear","나타나다"],["arrive","도착하다"],["attend","참석하다"],["avoid","피하다"],["beside","~옆에"],["borrow","빌리다"],["bother","괴롭히다"],["brave","용감한"],["breathe","숨쉬다"],["bright","밝은"],["careful","조심스러운"],["celebrate","축하하다"],["cheap","값싼"],["choose","고르다"],["climb","오르다"],["collect","모으다"],["comfortable","편안한"],["compare","비교하다"],["complain","불평하다"],["continue","계속하다"],["curious","호기심 많은"],["dangerous","위험한"],["decide","결정하다"],["delicious","맛있는"],["describe","묘사하다"],["destroy","파괴하다"],["develop","발전시키다"],["difficult","어려운"],["disappear","사라지다"],["discover","발견하다"],["early","이른"],["enough","충분한"],["environment","환경"],["excellent","훌륭한"],["expensive","비싼"],["explain","설명하다"],["famous","유명한"],["favorite","가장 좋아하는"],["foreign","외국의"],["forget","잊다"],["future","미래"],["gather","모이다"],["gentle","온화한"],["habit","습관"],["healthy","건강한"],["honest","정직한"],["hurry","서두르다"],["imagine","상상하다"],["improve","개선하다"],["include","포함하다"],["invent","발명하다"],["invite","초대하다"],["island","섬"],["journey","여행"],["language","언어"],["lonely","외로운"],["mistake","실수"],["narrow","좁은"],["neighbor","이웃"],["nervous","긴장한"],["notice","알아차리다"],["ocean","바다"],["opinion","의견"],["patient","참을성 있는"],["popular","인기 있는"],["prepare","준비하다"],["promise","약속하다"],["protect","보호하다"],["proud","자랑스러운"],["quiet","조용한"],["receive","받다"],["remember","기억하다"],["repair","수리하다"],["respect","존경하다"],["safe","안전한"],["scared","겁먹은"],["search","찾다"],["share","나누다"],["shout","소리치다"],["similar","비슷한"],["solve","해결하다"],["special","특별한"],["strange","이상한"],["succeed","성공하다"],["suddenly","갑자기"],["surprise","놀라게 하다"],["terrible","끔찍한"],["travel","여행하다"],["useful","유용한"],["village","마을"],["weather","날씨"],["whole","전체의"],["wise","현명한"]],"high":[["abandon","버리다"],["abstract","추상적인"],["accumulate","축적하다"],["adequate","충분한"],["advocate","옹호하다"],["alternative","대안"],["ambiguous","모호한"],["anticipate","예상하다"],["apparent","명백한"],["arbitrary","임의의"],["assess","평가하다"],["assume","가정하다"],["attribute","~의 탓으로 돌리다"],["coherent","일관된"],["coincide","동시에 일어나다"],["compel","강요하다"],["compensate","보상하다"],["comprehensive","포괄적인"],["conceal","숨기다"],["confront","맞서다"],["consequence","결과"],["considerable","상당한"],["contradict","반박하다"],["controversy","논란"],["convey","전달하다"],["crucial","결정적인"],["deliberate","의도적인"],["deprive","빼앗다"],["derive","끌어내다"],["diminish","줄어들다"],["distinguish","구별하다"],["dominate","지배하다"],["elaborate","정교한"],["eliminate","제거하다"],["embrace","받아들이다"],["emerge","나타나다"],["enhance","향상시키다"],["evident","분명한"],["exaggerate","과장하다"],["exploit","이용하다"],["facilitate","촉진하다"],["fluctuate","변동하다"],["fundamental","근본적인"],["hypothesis","가설"],["implement","실행하다"],["implicit","암시적인"],["inevitable","불가피한"],["inherent","내재하는"],["innovative","혁신적인"],["integrate","통합하다"],["interpret","해석하다"],["intrinsic","본질적인"],["legitimate","합법적인"],["manipulate","조작하다"],["mediate","중재하다"],["modify","수정하다"],["notion","개념"],["obscure","모호한"],["obtain","얻다"],["perceive","인식하다"],["persist","지속하다"],["plausible","그럴듯한"],["precede","앞서다"],["predominant","지배적인"],["preliminary","예비의"],["prevail","우세하다"],["profound","심오한"],["prominent","두드러진"],["provoke","유발하다"],["reinforce","강화하다"],["reluctant","꺼리는"],["resolve","해결하다"],["restrain","억제하다"],["retain","유지하다"],["scrutinize","면밀히 조사하다"],["simultaneous","동시의"],["sophisticated","정교한"],["speculate","추측하다"],["subsequent","그 다음의"],["substantial","상당한"],["subtle","미묘한"],["sustain","유지하다"],["tangible","실체가 있는"],["tentative","잠정적인"],["thrive","번성하다"],["transform","변형시키다"],["undergo","겪다"],["undermine","약화시키다"],["vague","막연한"],["verify","확인하다"],["viable","실행 가능한"],["vulnerable","취약한"],["withdraw","철회하다"],["yield","산출하다"],["compromise","타협"],["deteriorate","악화되다"],["discrepancy","불일치"],["indispensable","없어서는 안 될"],["negligible","무시할 만한"],["paradox","역설"]],"toeic":[["accommodate","수용하다"],["acquisition","인수"],["adjacent","인접한"],["agenda","안건"],["allocate","할당하다"],["amend","수정하다"],["applicant","지원자"],["appraisal","평가"],["audit","회계 감사"],["beneficiary","수혜자"],["budget","예산"],["bulk","대량"],["clause","조항"],["collateral","담보"],["commence","시작하다"],["commute","통근하다"],["compliance","준수"],["comply","따르다"],["consecutive","연속적인"],["consolidate","통합하다"],["contingency","비상사태"],["cordially","진심으로"],["courier","택배 회사"],["credential","자격 증명"],["deadline","마감일"],["defective","결함 있는"],["delegate","위임하다"],["designate","지정하다"],["dispatch","발송하다"],["diverse","다양한"],["durable","내구성 있는"],["eligible","자격이 있는"],["endorse","지지하다"],["enroll","등록하다"],["estimate","견적"],["exceed","초과하다"],["exclusive","독점적인"],["expedite","신속히 처리하다"],["expenditure","지출"],["expertise","전문 지식"],["extend","연장하다"],["facility","시설"],["feasible","실현 가능한"],["fiscal","회계의"],["forecast","예측"],["fragile","깨지기 쉬운"],["grant","보조금"],["implement","시행하다"],["incentive","장려금"],["inquiry","문의"],["inspect","점검하다"],["installment","할부금"],["inventory","재고"],["invoice","송장"],["itinerary","여행 일정"],["landlord","집주인"],["lease","임대차 계약"],["liable","법적 책임이 있는"],["mandatory","의무적인"],["merchandise","상품"],["merger","합병"],["negotiate","협상하다"],["notify","통지하다"],["outstanding","미지불의"],["overdue","기한이 지난"],["payroll","급여 대장"],["perishable","상하기 쉬운"],["personnel","인사부"],["premises","구내"],["procurement","조달"],["prompt","신속한"],["proxy","대리인"],["quarterly","분기별의"],["quota","할당량"],["recruit","모집하다"],["redeem","상환하다"],["refund","환불"],["reimburse","환급하다"],["relocate","이전하다"],["renovate","개조하다"],["retail","소매"],["revenue","수익"],["shipment","선적"],["shortage","부족"],["specification","사양"],["stationery","문구류"],["subsidiary","자회사"],["supervise","감독하다"],["surplus","잉여"],["tariff","관세"],["tentative","잠정적인"],["terminate","종료하다"],["transaction","거래"],["turnover","이직률"],["unanimous","만장일치의"],["utilize","활용하다"],["vacancy","공석"],["venue","장소"],["warranty","품질 보증"],["workload","업무량"]]};
+const TOTAL=60000; let lang='mid', score=0, streak=0, wrong=0, endAt=0, raf=0, running=false, startedAt=0, cur=null, locked=false, queue=[];
+function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+function nextQ(){
+  if(!queue.length) queue=shuffle(WORDS[lang].map((_,i)=>i));
+  const i=queue.pop(); const [w,m]=WORDS[lang][i];
+  const others=shuffle(WORDS[lang].map((_,k)=>k).filter(k=>k!==i && WORDS[lang][k][1]!==m)).slice(0,3).map(k=>WORDS[lang][k][1]);
+  const opts=shuffle([m,...others]); cur={w,m};
+  $('word').textContent=w; $('opts').innerHTML=opts.map(o=>`<button class="opt">${o}</button>`).join('');
+  $('opts').querySelectorAll('.opt').forEach(b=>b.addEventListener('pointerdown',e=>{ e.preventDefault(); pick(b); }));
+}
+function pick(b){
+  if(!running||locked) return; locked=true;
+  if(b.textContent===cur.m){ score++; streak++; b.classList.add('ok'); $('score').textContent=score; $('streak').textContent=streak; setTimeout(()=>{ locked=false; nextQ(); },150); }
+  else { wrong++; streak=0; b.classList.add('bad'); $('opts').querySelectorAll('.opt').forEach(x=>{ if(x.textContent===cur.m) x.classList.add('ok'); }); $('streak').textContent=0; $('wrongs').textContent='오답 '+wrong; setTimeout(()=>{ locked=false; nextQ(); },650); }
+}
+function tick(){ const left=Math.max(0,endAt-performance.now()); $('time').textContent=(left/1000).toFixed(1); $('bar').style.width=(left/TOTAL*100)+'%'; if(left<=0){ finish(); return; } raf=requestAnimationFrame(tick); }
+function start(){ score=0; streak=0; wrong=0; queue=[]; $('score').textContent='0'; $('streak').textContent='0'; $('wrongs').textContent=''; running=true; locked=false; startedAt=Date.now(); endAt=performance.now()+TOTAL; $('overlay').style.display='none'; nextQ(); tick(); }
+function finish(){
+  running=false; cancelAnimationFrame(raf);
+  const key='vocab_best_'+lang; const best=+localStorage.getItem(key)||0; const isBest=score>best; if(isBest) localStorage.setItem(key,String(score));
+  $('overlay').innerHTML=`<div style="font-size:14px;color:var(--ink-soft)">60초 정답 수</div><div class="huge">${score}</div><div class="note" style="margin:0">${isBest?'🎉 이 기기 최고 기록!':'최고 기록 '+best+'개'}${wrong?` · 오답 ${wrong}`:''}</div><div class="btn-row" style="justify-content:center;margin-top:6px"><button class="btn" id="again">다시 하기</button></div>`;
+  $('overlay').style.display='flex'; $('again').addEventListener('click',start); showBest();
+  if(score>=1) LB.submit(score,{duration:Date.now()-startedAt, meta: wrong?`오답 ${wrong}`:'무오답'});
+  if(typeof gtag==='function') gtag('event','vocab_finished',{level:lang,score});
+}
+function showBest(){ const b=+localStorage.getItem('vocab_best_'+lang)||0; $('bestLocal').textContent=b?'내 최고 기록 '+b+'개':''; const bn=$('bestNote'); if(bn) bn.textContent=b?'내 최고 기록 '+b+'개':''; }
+function initLB(){ LB.init({game:'vocab-'+lang, el:'#lb', label:'정답', format:v=>v+'개'}); }
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{ if(running) return; document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active')); b.classList.add('active'); lang=b.dataset.l; showBest(); initLB(); $('word').textContent=WORDS[lang][0][0]; }));
+$('start').addEventListener('click',start); showBest(); initLB();
+</script>
+
+</body>
+</html>

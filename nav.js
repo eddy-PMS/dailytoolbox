@@ -55,6 +55,9 @@
     { label: '게임·재미', items: [
       ['sens.html', '마우스 감도 변환기'],
       ['order.html', '숫자 순서 누르기'],
+      ['color-find.html', '틀린 색 찾기'],
+      ['math-speed.html', '암산 스피드'],
+      ['vocab-quiz.html', '영단어 스피드 퀴즈'],
       ['game2048.html', '2048 게임'],
       ['reaction.html', '반응속도 테스트'],
       ['typing.html', '타자 속도 테스트'],

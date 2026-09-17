@@ -14,7 +14,12 @@ const SCORE_GAMES = {
   '2048': { lower: false, min: 100, max: 300000, minMs: 5000, msPerPoint: 2 }, // 2048: 점수
   reaction: { lower: true, min: 100, max: 1000, minMs: 7000 },               // 반응속도: 5회 평균(ms). 대기 1.5초×5회라 7초 미만은 불가
   'typing-ko': { lower: false, min: 60, max: 1300, minMs: 12000, units: [250, 500] }, // 타자(한글): 타/분. 주간 지정 3문장(약 300~450타), units=입력 타수를 소요시간과 대조
-  'typing-en': { lower: false, min: 60, max: 1300, minMs: 12000, units: [230, 330] }  // 타자(영문): 타/분. 주간 지정 3문장(약 260~310타)
+  'typing-en': { lower: false, min: 60, max: 1300, minMs: 12000, units: [230, 330] }, // 타자(영문): 타/분. 주간 지정 3문장(약 260~310타)
+  color: { lower: false, min: 1, max: 80, minMs: 3000, msPerPoint: 450 },              // 틀린 색 찾기: 도달 단계 (60초 제한)
+  math: { lower: false, min: 1, max: 100, minMs: 58000, maxMs: 75000 },                // 암산 스피드: 60초 정답 수
+  'vocab-mid': { lower: false, min: 1, max: 60, minMs: 58000, maxMs: 75000 },          // 영단어 퀴즈(중등): 60초 정답 수
+  'vocab-high': { lower: false, min: 1, max: 60, minMs: 58000, maxMs: 75000 },         // 영단어 퀴즈(고등)
+  'vocab-toeic': { lower: false, min: 1, max: 60, minMs: 58000, maxMs: 75000 }         // 영단어 퀴즈(토익)
 };
 const LB_SIZE = 100;
 const BAD_WORDS = ['시발','씨발','씨팔','ㅅㅂ','병신','ㅂㅅ','좆','존나','개새','새끼','니미','엿먹','fuck','shit','bitch','sex','섹스','자지','보지','창녀','걸레'];
@@ -220,7 +225,7 @@ export default {
       const name = cleanName(b.name); if (!name) return json({ ok: false, error: 'bad_name' }, 400);
       const score = Math.round(+b.score), dur = Math.round(+b.duration || 0);
       if (!Number.isFinite(score) || score < g.min || score > g.max) return json({ ok: false, error: 'bad_score' }, 400);
-      if (dur < g.minMs || (g.msPerPoint && dur < score * g.msPerPoint)) return json({ ok: false, error: 'suspicious' }, 400);
+      if (dur < g.minMs || (g.maxMs && dur > g.maxMs) || (g.msPerPoint && dur < score * g.msPerPoint)) return json({ ok: false, error: 'suspicious' }, 400);
       if (g.units) { // 타수/분 = units / (dur/60000) 이 신고 점수와 맞는지 (±10%)
         const units = Math.round(+b.units || 0);
         if (units < g.units[0] || units > g.units[1]) return json({ ok: false, error: 'suspicious' }, 400);

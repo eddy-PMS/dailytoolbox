@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>참기 게임 (Go/No-Go) - 초록은 누르고 빨강은 참기, 충동 억제 테스트 랭킹</title>
+<meta name="description" content="초록 신호엔 최대한 빨리 누르고 빨간 신호엔 참는 Go/No-Go 게임. 점점 빨라지고 목숨은 3개. 성공 수로 랭킹 도전, 평균 반응 시간 표시. 무료.">
+<meta name="keywords" content="참기 게임, go no go 테스트, 충동 억제 테스트, 자제력 게임, 반응 억제 훈련, 반응속도 게임, 집중력 게임">
+<link rel="canonical" href="https://dailyfreetoolbox.com/gonogo.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="참기 게임 - 초록은 누르고 빨강은 참기">
+<meta property="og:description" content="Go/No-Go 충동 억제 게임. 점점 빨라지는 신호, 몇 회까지 버틸까? 랭킹 도전.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/gonogo.html">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "참기 게임", "url": "https://dailyfreetoolbox.com/gonogo.html", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "초록 신호엔 빨리 누르고 빨간 신호엔 참는 Go/No-Go 게임. 성공 수로 랭킹에 등록할 수 있어요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#2f5d4e; --accent-deep:#2f5d4e; }
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.big{font-size:30px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1}.lbl{font-size:12px;color:var(--ink-soft)}
+.board{position:relative}
+.overlay{position:absolute;inset:0;background:rgba(255,253,248,.94);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;border-radius:6px;text-align:center;padding:20px;z-index:2}
+.overlay .huge{font-size:44px;font-weight:700;color:var(--accent);line-height:1}
+.stats{display:flex;justify-content:center;gap:16px;font-size:13px;color:var(--ink-soft);margin-top:10px;flex-wrap:wrap}
+.pad{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:300px;margin:14px auto 0}
+.pad button{font-size:24px;padding:12px 0;border:1px solid var(--line);border-radius:6px;background:#fff;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}.pad button:active{background:var(--paper-deep)}
+.pad .w{font-size:15px;color:var(--ink-soft)}.pad .go{background:var(--accent);color:#fff;border-color:var(--accent);font-size:16px}
+.stage{position:relative;width:100%;aspect-ratio:1;max-width:400px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;touch-action:manipulation;user-select:none;-webkit-user-select:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.sig{width:46%;aspect-ratio:1;border-radius:50%;display:none;box-shadow:0 2px 8px rgba(0,0,0,.2)}.sig.go{background:#2f9e44;display:block}.sig.no{background:#d64545;display:block}
+.stage.hit{background:#eefaf1}.stage.bad{background:#fff0f0}
+.stats2{display:flex;justify-content:center;gap:16px;font-size:13px;color:var(--ink-soft);margin-top:10px;flex-wrap:wrap}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "빨강에서 안 눌렀는데 왜 실패했나요?", "acceptedAnswer": {"@type": "Answer", "text": "신호가 뜨기 전에 미리 누른 경우도 실패로 쳐요. 리듬으로 예측해서 누르지 말고 신호를 보고 누르세요."}}, {"@type": "Question", "name": "초록을 못 누르는 시간은요?", "acceptedAnswer": {"@type": "Answer", "text": "처음엔 0.8초, 진행할수록 0.38초까지 줄어요. 평균 반응이 300ms 안팎이면 후반에도 여유가 있어요."}}, {"@type": "Question", "name": "몇 회면 잘하는 건가요?", "acceptedAnswer": {"@type": "Answer", "text": "30회 안팎이 보통, 60회를 넘기면 상위권이에요. 목숨 3개를 다 쓰면 끝이라 정확도가 곧 기록이에요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f5d4e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🛑 참기 게임</b></div>
+  <h1>참기 게임 (Go/No-Go)</h1>
+  <p class="tagline">초록은 누르고, 빨강은 참기</p>
+  <p class="sub">초록 원이 뜨면 바로 누르고, 빨간 원이 뜨면 아무것도 하지 마세요. 점점 빨라지고 목숨은 3개. 몇 회까지 버틸 수 있을까요?</p>
+
+  <div class="card">
+    <div class="top"><div><div class="lbl">성공</div><div class="big" id="score">0</div></div><div style="text-align:center"><div class="lbl">평균 반응</div><div class="big" id="avg">-<span style="font-size:14px">ms</span></div></div><div style="text-align:right"><div class="lbl">남은 목숨</div><div class="big" id="lives">3</div></div></div>
+    <div class="board">
+      <div class="stage" id="stage"><div class="sig" id="sig"></div></div>
+      <div class="overlay" id="overlay"><div style="font-size:15px;color:var(--ink-soft)"><b style="color:#2f9e44">초록</b>이 뜨면 바로 누르고, <b style="color:#d64545">빨강</b>이 뜨면 참으세요<br>점점 빨라져요</div><button class="btn" id="start" style="min-width:160px">시작</button><div class="note" id="bestNote" style="margin:0"></div></div>
+    </div>
+    <div class="stats2"><span id="bestLocal"></span><span>PC: 스페이스바 · 모바일: 화면 터치</span></div>
+  </div>
+
+  <div id="lb"></div>
+
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>참기 게임(Go/No-Go), 손이 먼저 나가는 걸 막는 훈련</h2><p>초록 원이 뜨면 최대한 빨리 누르고, 빨간 원이 뜨면 아무것도 하지 않고 참아요. 초록이 대부분이라 몸은 "뜨면 누른다"에 익숙해지는데, 그 사이 끼어드는 빨강에 손이 나가면 실패예요. 초록을 제한 시간 안에 못 눌러도 실패. 심리학에서 충동 억제를 재는 대표 과제(Go/No-Go)이고, 상대의 속임 동작에 반응하지 않고 참는 능력, 신호를 보고 멈추는 능력과 연결돼요.</p>
+<p>진행할수록 신호가 뜨는 간격이 짧아지고 초록에 반응할 수 있는 시간도 줄어요. 목숨 3개를 다 쓰면 끝. 초록 성공 수로 랭킹에 등록하고 평균 반응 시간도 함께 표시돼요.</p>
+<h2>잘하는 요령</h2><ol><li>초록이 연속으로 나올 때가 함정이에요. 리듬을 타지 말고 매번 색을 확인하세요.</li><li>손가락을 화면에 가까이 두되 닿지 않게. 누르는 거리를 줄이면 반응이 빨라져요.</li><li>빨강에서 참았다면 다음 초록이 바로 올 수 있으니 긴장을 풀지 마세요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>빨강에서 안 눌렀는데 왜 실패했나요?</summary><p>신호가 뜨기 전에 미리 누른 경우도 실패로 쳐요. 리듬으로 예측해서 누르지 말고 신호를 보고 누르세요.</p></details><details><summary>초록을 못 누르는 시간은요?</summary><p>처음엔 0.8초, 진행할수록 0.38초까지 줄어요. 평균 반응이 300ms 안팎이면 후반에도 여유가 있어요.</p></details><details><summary>몇 회면 잘하는 건가요?</summary><p>30회 안팎이 보통, 60회를 넘기면 상위권이에요. 목숨 3개를 다 쓰면 끝이라 정확도가 곧 기록이에요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="reverse.html">반대로 누르기</a><a href="reaction.html">반응속도 테스트</a><a href="mot.html">점 추적</a><a href="order.html">숫자 순서 누르기</a></div></section>
+  <footer>기록은 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 기록이 서버에 저장돼요. 이 테스트는 특정 능력을 측정·연습하는 놀이이며 의학적 검사가 아니에요.<br><span class="version-tag">v1.0 · 2026-09-17 업데이트</span></footer>
+</main>
+
+<script src="leaderboard.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+let score=0, lives=3, rts=[], running=false, startedAt=0, raf=0, tmo=0, phase='idle', sigAt=0, isGo=false, trial=0;
+function gapMs(){ return Math.max(350, 1200-trial*15)+Math.random()*600; } function windowMs(){ return Math.max(380, 800-trial*8); }
+function next(){ if(!running) return; phase='wait'; $('sig').className='sig'; $('stage').className='stage';
+  tmo=setTimeout(()=>{ if(!running) return; trial++; isGo=Math.random()<0.72; $('sig').className='sig '+(isGo?'go':'no'); sigAt=performance.now(); phase='sig';
+    tmo=setTimeout(()=>{ if(phase!=='sig') return; phase='gap'; $('sig').className='sig'; if(isGo){ fail('놓쳤어요'); } else { next(); } }, windowMs()); }, gapMs()); }
+function fail(){ lives--; $('lives').textContent=lives; $('stage').className='stage bad'; if(lives<=0){ tmo=setTimeout(finish,500); } else tmo=setTimeout(next,600); }
+function press(){ if(!running) return;
+  if(phase==='sig'){ phase='gap'; $('sig').className='sig'; if(isGo){ const rt=Math.round(performance.now()-sigAt); rts.push(rt); score++; $('score').textContent=score; $('avg').innerHTML=Math.round(rts.reduce((a,b)=>a+b,0)/rts.length)+'<span style="font-size:14px">ms</span>'; $('stage').className='stage hit'; tmo=setTimeout(next,250); } else fail(); }
+  else if(phase==='wait'){ /* 신호 전 성급한 입력: 실패 */ phase='gap'; clearTimeout(tmo); fail(); } }
+$('stage').addEventListener('pointerdown',e=>{ e.preventDefault(); press(); });
+document.addEventListener('keydown',e=>{ if(e.code==='Space'&&running){ e.preventDefault(); press(); } });
+function start(){ score=0; lives=3; rts=[]; trial=0; running=true; startedAt=Date.now(); $('score').textContent='0'; $('lives').textContent='3'; $('avg').innerHTML='-<span style="font-size:14px">ms</span>'; $('overlay').style.display='none'; next(); }
+function finalScore(){ return score; } function resultLabel(){ return '초록 성공 수'; } function resultExtra(){ return rts.length?` · 평균 ${Math.round(rts.reduce((a,b)=>a+b,0)/rts.length)}ms`:''; }
+function finish(){
+  running=false; cancelAnimationFrame(raf); clearTimeout(tmo);
+  const sc=finalScore();
+  const best=+localStorage.getItem('gonogo_best')||0; const isBest=sc>best; if(isBest) localStorage.setItem('gonogo_best',String(sc));
+  $('overlay').innerHTML=`<div style="font-size:14px;color:var(--ink-soft)">${resultLabel()}</div><div class="huge">${sc}${'회'}</div><div class="note" style="margin:0">${isBest?'🎉 이 기기 최고 기록!':'최고 기록 '+best+'회'}${resultExtra()}</div><div class="btn-row" style="justify-content:center;margin-top:6px"><button class="btn" id="again">다시 하기</button></div>`;
+  $('overlay').style.display='flex'; $('again').addEventListener('click',start); showBest();
+  if(sc>=1) LB.submit(sc,{duration:Date.now()-startedAt, meta:rts.length?`평균 ${Math.round(rts.reduce((a,b)=>a+b,0)/rts.length)}ms`:''});
+  if(typeof gtag==='function') gtag('event','gonogo_finished',{score:sc});
+}
+function showBest(){ const b=+localStorage.getItem('gonogo_best')||0; $('bestLocal').textContent=b?'내 최고 기록 '+b+'회':''; const bn=$('bestNote'); if(bn) bn.textContent=b?'내 최고 기록 '+b+'회':''; }
+$('start').addEventListener('click',start); showBest();
+LB.init({game:'gonogo', el:'#lb', label:'성공', format:v=>v+'회'});
+</script>
+
+</body>
+</html>

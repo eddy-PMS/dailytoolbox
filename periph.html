@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>주변시 테스트 - 가운데를 보며 가장자리 숫자 읽기, 시야 훈련 랭킹</title>
+<meta name="description" content="가운데 점을 보면서 가장자리에 0.4초 뜨는 숫자를 읽는 주변시(주변 시야) 테스트. 단계가 오를수록 멀고 짧게. 도달 단계로 랭킹 도전. 축구·속독용 시야 훈련. 무료.">
+<meta name="keywords" content="주변시 테스트, 주변 시야 훈련, 시야 넓히기 게임, 속독 훈련, 축구 시야 훈련, 시각 훈련 게임, 동체시력 테스트">
+<link rel="canonical" href="https://dailyfreetoolbox.com/periph.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="주변시 테스트 - 가장자리 숫자 몇 단계까지?">
+<meta property="og:description" content="가운데를 보면서 가장자리에 잠깐 뜨는 숫자 읽기. 시야 훈련, 랭킹 도전.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/periph.html">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "주변시 테스트", "url": "https://dailyfreetoolbox.com/periph.html", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "가운데 점을 보면서 가장자리에 잠깐 나타나는 숫자를 읽는 주변 시야 테스트. 도달 단계로 랭킹에 등록할 수 있어요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#2f5d4e; --accent-deep:#2f5d4e; }
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.big{font-size:30px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1}.lbl{font-size:12px;color:var(--ink-soft)}
+.board{position:relative}
+.overlay{position:absolute;inset:0;background:rgba(255,253,248,.94);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;border-radius:6px;text-align:center;padding:20px;z-index:2}
+.overlay .huge{font-size:44px;font-weight:700;color:var(--accent);line-height:1}
+.stats{display:flex;justify-content:center;gap:16px;font-size:13px;color:var(--ink-soft);margin-top:10px;flex-wrap:wrap}
+.pad{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:300px;margin:14px auto 0}
+.pad button{font-size:24px;padding:12px 0;border:1px solid var(--line);border-radius:6px;background:#fff;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}.pad button:active{background:var(--paper-deep)}
+.pad .w{font-size:15px;color:var(--ink-soft)}.pad .go{background:var(--accent);color:#fff;border-color:var(--accent);font-size:16px}
+.field-area{position:relative;width:100%;aspect-ratio:1;max-width:460px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden;user-select:none}
+.fix{position:absolute;left:50%;top:50%;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:var(--accent)}
+.fix::after{content:'';position:absolute;left:50%;top:50%;width:4px;height:4px;margin:-2px 0 0 -2px;border-radius:50%;background:#fff}
+.stim{position:absolute;font-size:22px;font-weight:700;color:var(--ink);transform:translate(-50%,-50%);font-variant-numeric:tabular-nums}
+.entry{font-size:28px;text-align:center;letter-spacing:.2em;min-height:44px;font-variant-numeric:tabular-nums;max-width:300px;margin:8px auto 0;border-bottom:2px solid var(--line)}
+.entry.ok{color:#2f9e44}.entry.bad{color:#d64545}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "눈을 움직여서 보면 안 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "숫자가 최대 0.4초만 나타나고 위치가 무작위라 눈을 굴리면 대부분 놓쳐요. 중앙에 시선을 두고 주변 시야로 읽는 게 이 게임의 핵심이에요."}}, {"@type": "Question", "name": "스마트폰에서도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "돼요. 다만 화면이 작으면 '가장자리'가 실제 시야에선 그리 멀지 않아요. 눈에서 30cm 이상 떨어뜨리고 하면 PC와 비슷한 조건이 돼요."}}, {"@type": "Question", "name": "몇 단계면 잘하는 건가요?", "acceptedAnswer": {"@type": "Answer", "text": "10단계 안팎이 보통, 20단계를 넘기면 상위권이에요. 20단계부터는 표시 시간이 0.2초 아래로 내려가요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f5d4e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>👁 주변시 숫자 읽기</b></div>
+  <h1>주변시 테스트</h1>
+  <p class="tagline">가운데를 보면서 가장자리를 읽어요</p>
+  <p class="sub">가운데 점에 시선을 고정한 채, 가장자리에 잠깐 나타나는 두 자리 숫자를 입력하세요. 단계가 오를수록 더 멀리, 더 짧게 나타나요.</p>
+
+  <div class="card">
+    <div class="top"><div><div class="lbl">단계</div><div class="big" id="level">1</div></div><div style="text-align:center"><div class="lbl">표시 시간</div><div class="big" id="ms">400<span style="font-size:14px">ms</span></div></div><div style="text-align:right"><div class="lbl">남은 목숨</div><div class="big" id="lives">3</div></div></div>
+    <div class="board">
+      <div class="field-area" id="area"><div class="fix"></div></div>
+      <div class="entry" id="entry"></div>
+      <div class="pad" id="pad"></div>
+      <div class="overlay" id="overlay"><div style="font-size:15px;color:var(--ink-soft)">가운데 점을 계속 보세요<br>가장자리에 잠깐 뜨는 두 자리 숫자를 입력해요</div><button class="btn" id="start" style="min-width:160px">시작</button><div class="note" id="bestNote" style="margin:0"></div></div>
+    </div>
+    <div class="stats"><span id="bestLocal"></span><span id="hint">💡 화면과 눈 사이를 30~40cm로 두면 적당해요</span></div>
+  </div>
+
+  <div id="lb"></div>
+
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>주변시, 공을 보면서 옆 수비수를 읽는 능력</h2><p>가운데 점에 시선을 고정한 채 가장자리에 아주 잠깐 나타나는 두 자리 숫자를 읽어요. 단계가 오르면 숫자는 더 멀리, 더 짧게(400ms→150ms) 나타나요. 눈을 굴려서 보면 늦기 때문에 시선은 중앙에 두고 주변 시야로 읽는 연습이 돼요. 축구·농구처럼 공을 보면서 주변 선수 위치를 파악해야 하는 운동, 속독, 운전 같은 상황에서 쓰이는 시야예요.</p>
+<p>목숨은 3개예요. 틀리거나 못 읽으면 하나 줄고, 다 쓰면 끝. 도달 단계로 랭킹에 등록해요. 같은 화면·같은 거리에서 재야 비교가 돼요.</p>
+<h2>잘하는 요령</h2><ol><li>중앙 점을 "노려보지" 말고 편하게 두세요. 힘을 빼야 주변이 넓어져요.</li><li>숫자가 어디에 뜰지 예측하지 말고 화면 전체를 흐릿하게 받아들이세요.</li><li>스마트폰은 눈에서 30cm 이상 떨어뜨리고 세로로 잡으세요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>눈을 움직여서 보면 안 되나요?</summary><p>숫자가 최대 0.4초만 나타나고 위치가 무작위라 눈을 굴리면 대부분 놓쳐요. 중앙에 시선을 두고 주변 시야로 읽는 게 이 게임의 핵심이에요.</p></details><details><summary>스마트폰에서도 되나요?</summary><p>돼요. 다만 화면이 작으면 '가장자리'가 실제 시야에선 그리 멀지 않아요. 눈에서 30cm 이상 떨어뜨리고 하면 PC와 비슷한 조건이 돼요.</p></details><details><summary>몇 단계면 잘하는 건가요?</summary><p>10단계 안팎이 보통, 20단계를 넘기면 상위권이에요. 20단계부터는 표시 시간이 0.2초 아래로 내려가요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="mot.html">점 추적</a><a href="reverse.html">반대로 누르기</a><a href="reaction.html">반응속도 테스트</a><a href="lineup.html">축구 라인업</a></div></section>
+  <footer>기록은 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 기록이 서버에 저장돼요. 이 테스트는 특정 능력을 측정·연습하는 놀이이며 의학적 검사가 아니에요.<br><span class="version-tag">v1.0 · 2026-09-17 업데이트</span></footer>
+</main>
+
+<script src="leaderboard.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+let level=1, lives=3, cur='', entry='', phase='idle', running=false, startedAt=0, raf=0, tmo=0;
+function showMs(){ return Math.max(150, 400-(level-1)*12); }
+function dist(){ return Math.min(0.48, 0.18+(level-1)*0.012); } // 중심에서 거리(영역 폭 대비)
+function present(){
+  phase='show'; entry=''; $('entry').textContent=''; $('entry').className='entry';
+  $('ms').innerHTML=showMs()+'<span style="font-size:14px">ms</span>'; $('level').textContent=level;
+  const area=$('area'); area.querySelectorAll('.stim').forEach(x=>x.remove());
+  const ang=Math.random()*Math.PI*2, r=dist(); const x=50+Math.cos(ang)*r*100, y=50+Math.sin(ang)*r*100;
+  cur=String(10+Math.floor(Math.random()*90));
+  tmo=setTimeout(()=>{ if(!running) return; const s=document.createElement('div'); s.className='stim'; s.style.left=x+'%'; s.style.top=y+'%'; s.textContent=cur; area.appendChild(s);
+    tmo=setTimeout(()=>{ s.remove(); phase='input'; },showMs()); }, 600+Math.random()*900);
+}
+function key(k){ if(!running||phase!=='input') return; if(k==='⌫'){ entry=entry.slice(0,-1); } else if(k==='입력'){ return; } else if(entry.length<2){ entry+=k; } $('entry').textContent=entry; if(entry.length===2) setTimeout(check,100); }
+function check(){ if(phase!=='input') return; phase='check';
+  if(entry===cur){ $('entry').className='entry ok'; level++; setTimeout(present,500); }
+  else { $('entry').className='entry bad'; $('entry').textContent=entry+' → '+cur; lives--; $('lives').textContent=lives; setTimeout(()=>{ if(lives<=0) finish(); else present(); },1200); } }
+function start(){ level=1; lives=3; running=true; startedAt=Date.now(); $('lives').textContent=3; $('overlay').style.display='none'; present(); }
+function finalScore(){ return level-1; } function resultLabel(){ return '도달 단계'; } function resultExtra(){ return ' · 마지막 표시 '+showMs()+'ms'; }
+function finish(){
+  running=false; cancelAnimationFrame(raf); clearTimeout(tmo);
+  const sc=finalScore();
+  const best=+localStorage.getItem('periph_best')||0; const isBest=sc>best; if(isBest) localStorage.setItem('periph_best',String(sc));
+  $('overlay').innerHTML=`<div style="font-size:14px;color:var(--ink-soft)">${resultLabel()}</div><div class="huge">${sc}${'단계'}</div><div class="note" style="margin:0">${isBest?'🎉 이 기기 최고 기록!':'최고 기록 '+best+'단계'}${resultExtra()}</div><div class="btn-row" style="justify-content:center;margin-top:6px"><button class="btn" id="again">다시 하기</button></div>`;
+  $('overlay').style.display='flex'; $('again').addEventListener('click',start); showBest();
+  if(sc>=1) LB.submit(sc,{duration:Date.now()-startedAt, meta:''});
+  if(typeof gtag==='function') gtag('event','periph_finished',{score:sc});
+}
+function showBest(){ const b=+localStorage.getItem('periph_best')||0; $('bestLocal').textContent=b?'내 최고 기록 '+b+'단계':''; const bn=$('bestNote'); if(bn) bn.textContent=b?'내 최고 기록 '+b+'단계':''; }
+$('pad').innerHTML=['7','8','9','4','5','6','1','2','3','⌫','0',''].map(k=>k?`<button data-k="${k}" class="${k==='⌫'?'w':''}">${k}</button>`:'<span></span>').join('');
+$('pad').querySelectorAll('button').forEach(b=>b.addEventListener('pointerdown',e=>{ e.preventDefault(); key(b.dataset.k); }));
+document.addEventListener('keydown',e=>{ if(!running) return; if(/^[0-9]$/.test(e.key)) key(e.key); else if(e.key==='Backspace'){ e.preventDefault(); key('⌫'); } });
+$('start').addEventListener('click',start); showBest();
+LB.init({game:'periph', el:'#lb', label:'단계', format:v=>v+'단계'});
+</script>
+
+</body>
+</html>

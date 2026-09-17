@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>숫자 외우기 테스트 (Digit Span) - 몇 자리까지 기억할까? 랭킹</title>
+<meta name="description" content="숫자가 하나씩 나타났다 사라지면 순서대로(또는 거꾸로) 입력하는 작업기억 테스트. 웩슬러 검사의 숫자 외우기와 같은 형식. 최대 자릿수로 랭킹 도전. 무료.">
+<meta name="keywords" content="숫자 외우기 테스트, 디지트 스팬, digit span, 작업기억 테스트, 기억력 테스트, 단기기억 게임, 두뇌 게임, 기억력 훈련">
+<link rel="canonical" href="https://dailyfreetoolbox.com/digit-span.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="숫자 외우기 테스트 - 몇 자리까지 기억할까?">
+<meta property="og:description" content="숫자가 하나씩 사라지면 순서대로 입력. 작업기억 테스트, 랭킹 도전.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/digit-span.html">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "숫자 외우기 테스트", "url": "https://dailyfreetoolbox.com/digit-span.html", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "숫자가 하나씩 나타났다 사라지면 순서대로 또는 거꾸로 입력하는 작업기억 테스트. 최대 자릿수로 랭킹에 등록할 수 있어요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#2f5d4e; --accent-deep:#2f5d4e; }
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.big{font-size:30px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1}.lbl{font-size:12px;color:var(--ink-soft)}
+.board{position:relative}
+.overlay{position:absolute;inset:0;background:rgba(255,253,248,.94);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;border-radius:6px;text-align:center;padding:20px;z-index:2}
+.overlay .huge{font-size:44px;font-weight:700;color:var(--accent);line-height:1}
+.stats{display:flex;justify-content:center;gap:16px;font-size:13px;color:var(--ink-soft);margin-top:10px;flex-wrap:wrap}
+.pad{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:300px;margin:14px auto 0}
+.pad button{font-size:24px;padding:12px 0;border:1px solid var(--line);border-radius:6px;background:#fff;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}.pad button:active{background:var(--paper-deep)}
+.pad .w{font-size:15px;color:var(--ink-soft)}.pad .go{background:var(--accent);color:#fff;border-color:var(--accent);font-size:16px}
+.digit{font-size:72px;font-weight:700;text-align:center;min-height:110px;display:flex;align-items:center;justify-content:center;font-variant-numeric:tabular-nums;color:var(--accent)}
+.entry{font-size:28px;text-align:center;letter-spacing:.2em;min-height:44px;font-variant-numeric:tabular-nums;border-bottom:2px solid var(--line);max-width:300px;margin:0 auto}
+.entry.ok{color:#2f9e44}.entry.bad{color:#d64545}
+.modes{display:flex;gap:8px;justify-content:center;margin-bottom:10px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "몇 자리면 잘하는 건가요?", "acceptedAnswer": {"@type": "Answer", "text": "성인 평균은 순서대로 7자리 안팎이에요. 9자리를 넘기면 상위권이고, 거꾸로는 보통 2자리쯤 짧게 나와요."}}, {"@type": "Question", "name": "숫자가 너무 빨리 사라져요.", "acceptedAnswer": {"@type": "Answer", "text": "0.7초씩 보여주고 0.25초 쉬어요. 표준 검사가 1초 간격인 것보다 조금 빠르지만, 속도보다 묶어서 기억하는 요령이 기록을 좌우해요."}}, {"@type": "Question", "name": "랭킹은 어떻게 등록하나요?", "acceptedAnswer": {"@type": "Answer", "text": "기회를 다 쓰면 닉네임을 넣고 등록 버튼을 누르면 돼요. 순서대로·거꾸로 랭킹이 따로 있어요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f5d4e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🔢 숫자 외우기</b></div>
+  <h1>숫자 외우기 테스트</h1>
+  <p class="tagline">몇 자리까지 기억할 수 있을까</p>
+  <p class="sub">숫자가 하나씩 나타났다 사라져요. 다 본 뒤 순서대로(또는 거꾸로) 입력하면 한 자리씩 늘어나고, 같은 자릿수에서 두 번 틀리면 끝이에요.</p>
+
+  <div class="card">
+    <div class="tabs"><button class="tab active" data-m="fwd">순서대로</button><button class="tab" data-m="rev">거꾸로</button></div>
+    <div class="top"><div><div class="lbl">현재 자릿수</div><div class="big" id="len">3</div></div><div style="text-align:right"><div class="lbl">남은 기회</div><div class="big" id="lives">2</div></div></div>
+    <div class="board">
+      <div class="digit" id="digit"></div>
+      <div class="entry" id="entry"></div>
+      <div class="pad" id="pad"></div>
+      <div class="overlay" id="overlay"><div style="font-size:15px;color:var(--ink-soft)">숫자가 하나씩 나타났다 사라져요<br>다 본 뒤 순서대로 입력하세요</div><button class="btn" id="start" style="min-width:160px">시작</button><div class="note" id="bestNote" style="margin:0"></div></div>
+    </div>
+    <div class="stats"><span id="bestLocal"></span></div>
+  </div>
+
+  <div id="lb"></div>
+
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>숫자 외우기(Digit Span), 작업기억의 표준 검사</h2><p>숫자가 하나씩 0.7초 간격으로 나타났다 사라지고, 다 본 뒤 순서대로 입력해요. 맞히면 한 자리씩 늘어나고, 같은 자릿수에서 두 번 틀리면 끝이에요. 웩슬러 지능검사의 '숫자 외우기' 소검사와 같은 형식이라 작업기억 용량을 가늠하는 데 오래 쓰여온 방식이에요. 성인은 보통 7자리 안팎(±2)이고, 9자리를 넘기면 상당히 좋은 편이에요.</p>
+<p><b>거꾸로</b> 모드는 본 순서의 반대로 입력해요. 단순히 기억하는 것에 더해 머릿속에서 조작해야 해서 보통 순서대로보다 2자리쯤 짧게 나와요. 두 모드는 랭킹이 따로 집계돼요.</p>
+<h2>잘하는 요령</h2><ol><li>숫자를 소리 내듯 속으로 읽고, 3~4개씩 묶어서(청킹) 기억하세요. 전화번호 외우듯이요.</li><li>거꾸로 모드는 숫자를 왼쪽에서 오른쪽으로 '보이는 그림'처럼 두고 뒤에서부터 읽는 식이 편해요.</li><li>틀렸을 때 바로 다음 시도가 오니 호흡을 한 번 고르고 시작하세요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>몇 자리면 잘하는 건가요?</summary><p>성인 평균은 순서대로 7자리 안팎이에요. 9자리를 넘기면 상위권이고, 거꾸로는 보통 2자리쯤 짧게 나와요.</p></details><details><summary>숫자가 너무 빨리 사라져요.</summary><p>0.7초씩 보여주고 0.25초 쉬어요. 표준 검사가 1초 간격인 것보다 조금 빠르지만, 속도보다 묶어서 기억하는 요령이 기록을 좌우해요.</p></details><details><summary>랭킹은 어떻게 등록하나요?</summary><p>기회를 다 쓰면 닉네임을 넣고 등록 버튼을 누르면 돼요. 순서대로·거꾸로 랭킹이 따로 있어요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="periph.html">주변시 숫자 읽기</a><a href="mot.html">점 추적</a><a href="order.html">숫자 순서 누르기</a><a href="iq-test.html">IQ 테스트</a></div></section>
+  <footer>기록은 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 기록이 서버에 저장돼요. 이 테스트는 특정 능력을 측정·연습하는 놀이이며 의학적 검사가 아니에요.<br><span class="version-tag">v1.0 · 2026-09-17 업데이트</span></footer>
+</main>
+
+<script src="leaderboard.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+const SHOW=700, GAP=250;
+let mode='fwd', len=3, lives=2, seq=[], entry='', phase='idle', running=false, startedAt=0, raf=0, tmo=0, maxLen=0;
+function key(k){ if(!running||phase!=='input') return; if(k==='⌫'){ entry=entry.slice(0,-1); } else if(k==='입력'){ check(); return; } else if(entry.length<len){ entry+=k; } $('entry').textContent=entry; $('entry').className='entry'; if(entry.length===len) setTimeout(check,120); }
+function check(){ if(phase!=='input') return; phase='check'; const target= mode==='rev'? seq.slice().reverse().join('') : seq.join('');
+  if(entry===target){ $('entry').className='entry ok'; maxLen=Math.max(maxLen,len); len++; $('len').textContent=len; setTimeout(show,700); }
+  else { $('entry').className='entry bad'; lives--; $('lives').textContent=lives; $('digit').textContent=target; $('digit').style.fontSize='34px'; setTimeout(()=>{ $('digit').style.fontSize=''; if(lives<=0) finish(); else show(); },1500); } }
+function show(){ phase='show'; entry=''; $('entry').textContent=''; $('entry').className='entry'; $('digit').textContent='';
+  seq=Array.from({length:len},()=>Math.floor(Math.random()*10)); let i=0;
+  const step=()=>{ if(!running) return; if(i>=seq.length){ $('digit').textContent=''; phase='input'; $('digit').textContent= mode==='rev'? '거꾸로 입력' : '순서대로 입력'; $('digit').style.fontSize='22px'; $('digit').style.color='var(--ink-soft)'; return; } $('digit').style.fontSize=''; $('digit').style.color=''; $('digit').textContent=seq[i]; tmo=setTimeout(()=>{ $('digit').textContent=''; i++; tmo=setTimeout(step,GAP); },SHOW); };
+  tmo=setTimeout(step,300); }
+function start(){ len=3; lives=2; maxLen=0; running=true; startedAt=Date.now(); $('len').textContent=len; $('lives').textContent=lives; $('overlay').style.display='none'; $('digit').style.fontSize=''; $('digit').style.color=''; show(); }
+function finalScore(){ return maxLen; } function resultLabel(){ return (mode==='rev'?'거꾸로 ':'')+'최대 자릿수'; } function resultExtra(){ return ''; }
+function finish(){
+  running=false; cancelAnimationFrame(raf); clearTimeout(tmo);
+  const sc=finalScore();
+  const best=+localStorage.getItem('digit_best_'+mode+'')||0; const isBest=sc>best; if(isBest) localStorage.setItem('digit_best_'+mode+'',String(sc));
+  $('overlay').innerHTML=`<div style="font-size:14px;color:var(--ink-soft)">${resultLabel()}</div><div class="huge">${sc}${'자리'}</div><div class="note" style="margin:0">${isBest?'🎉 이 기기 최고 기록!':'최고 기록 '+best+'자리'}${resultExtra()}</div><div class="btn-row" style="justify-content:center;margin-top:6px"><button class="btn" id="again">다시 하기</button></div>`;
+  $('overlay').style.display='flex'; $('again').addEventListener('click',start); showBest();
+  if(sc>=1) LB.submit(sc,{duration:Date.now()-startedAt, meta:mode==='rev'?'거꾸로':'순서대로'});
+  if(typeof gtag==='function') gtag('event','digit_finished',{score:sc});
+}
+function showBest(){ const b=+localStorage.getItem('digit_best_'+mode+'')||0; $('bestLocal').textContent=b?'내 최고 기록 '+b+'자리':''; const bn=$('bestNote'); if(bn) bn.textContent=b?'내 최고 기록 '+b+'자리':''; }
+$('pad').innerHTML=['7','8','9','4','5','6','1','2','3','⌫','0','입력'].map(k=>`<button data-k="${k}" class="${k==='⌫'?'w':k==='입력'?'go':''}">${k}</button>`).join('');
+$('pad').querySelectorAll('button').forEach(b=>b.addEventListener('pointerdown',e=>{ e.preventDefault(); key(b.dataset.k); }));
+document.addEventListener('keydown',e=>{ if(!running) return; if(/^[0-9]$/.test(e.key)) key(e.key); else if(e.key==='Backspace'){ e.preventDefault(); key('⌫'); } else if(e.key==='Enter') key('입력'); });
+function initLB(){ LB.init({game: mode==='rev'?'digit-rev':'digit', el:'#lb', label:'자릿수', format:v=>v+'자리'}); }
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{ if(running) return; document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active')); b.classList.add('active'); mode=b.dataset.m; showBest(); initLB(); }));
+$('start').addEventListener('click',start); showBest(); initLB();
+</script>
+
+</body>
+</html>

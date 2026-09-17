@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>점 추적 게임 (MOT) - 움직이는 점 여러 개 동시에 따라가기, 랭킹</title>
+<meta name="description" content="빨간 점을 기억했다가 모두 같은 색으로 5초간 움직인 뒤 찾아내는 다중 물체 추적(MOT) 게임. 프로 스포츠 인지 훈련 방식. 도달 단계로 랭킹 도전. 무료.">
+<meta name="keywords" content="점 추적 게임, 다중 물체 추적, MOT 훈련, 주의력 게임, 집중력 훈련, 축구 인지 훈련, 동체시력 게임, 뉴로트래커">
+<link rel="canonical" href="https://dailyfreetoolbox.com/mot.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="점 추적 게임 - 움직이는 점 몇 개까지 따라갈까?">
+<meta property="og:description" content="빨간 점을 기억했다가 움직임이 멈추면 찾아내기. 다중 물체 추적, 랭킹 도전.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/mot.html">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "점 추적 게임", "url": "https://dailyfreetoolbox.com/mot.html", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "표시된 점들을 기억했다가 모두 같은 색으로 움직인 뒤 찾아내는 다중 물체 추적 게임. 도달 단계로 랭킹에 등록할 수 있어요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#2f5d4e; --accent-deep:#2f5d4e; }
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.big{font-size:30px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1}.lbl{font-size:12px;color:var(--ink-soft)}
+.board{position:relative}
+.overlay{position:absolute;inset:0;background:rgba(255,253,248,.94);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;border-radius:6px;text-align:center;padding:20px;z-index:2}
+.overlay .huge{font-size:44px;font-weight:700;color:var(--accent);line-height:1}
+.stats{display:flex;justify-content:center;gap:16px;font-size:13px;color:var(--ink-soft);margin-top:10px;flex-wrap:wrap}
+.pad{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:300px;margin:14px auto 0}
+.pad button{font-size:24px;padding:12px 0;border:1px solid var(--line);border-radius:6px;background:#fff;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}.pad button:active{background:var(--paper-deep)}
+.pad .w{font-size:15px;color:var(--ink-soft)}.pad .go{background:var(--accent);color:#fff;border-color:var(--accent);font-size:16px}
+.arena{position:relative;width:100%;aspect-ratio:1;max-width:460px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden;touch-action:manipulation;user-select:none}
+.ball{position:absolute;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;background:#7a7f8a;border:3px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.25);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.ball.target{background:var(--accent)}.ball.pick{outline:3px solid #ffd23f}.ball.hit{background:#2f9e44}.ball.miss{background:#d64545}
+.msg{text-align:center;font-size:14px;color:var(--ink-soft);min-height:22px;margin-top:8px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "점이 겹치면 어떻게 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "겹치는 순간이 이 게임의 핵심 난관이에요. 겹치기 직전의 속도와 방향을 기억해 두면 갈라진 뒤에도 구분할 수 있어요. 점끼리는 서로 튕기도록 만들어서 완전히 포개지는 시간은 짧아요."}}, {"@type": "Question", "name": "몇 단계면 잘하는 건가요?", "acceptedAnswer": {"@type": "Answer", "text": "6단계(추적 3개)를 넘기면 보통 이상, 10단계 이상이면 상위권이에요. 12단계부터는 5개를 추적해야 해요."}}, {"@type": "Question", "name": "랭킹은 어떻게 등록하나요?", "acceptedAnswer": {"@type": "Answer", "text": "목숨을 다 쓰면 닉네임을 넣고 등록 버튼을 누르면 돼요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f5d4e"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🎯 점 추적</b></div>
+  <h1>점 추적 게임</h1>
+  <p class="tagline">움직이는 점, 몇 개까지 따라갈 수 있을까</p>
+  <p class="sub">빨간 점을 2초 동안 기억하세요. 전부 같은 색이 되어 5초간 움직인 뒤 멈추면, 아까 빨갰던 점들을 찾아 누르세요. 단계가 오르면 점이 늘고 빨라져요.</p>
+
+  <div class="card">
+    <div class="top"><div><div class="lbl">단계</div><div class="big" id="level">1</div></div><div style="text-align:center"><div class="lbl">추적할 점</div><div class="big" id="k">2</div></div><div style="text-align:right"><div class="lbl">남은 목숨</div><div class="big" id="lives">3</div></div></div>
+    <div class="board">
+      <div class="arena" id="arena"></div>
+      <div class="msg" id="msg"></div>
+      <div class="btn-row" style="justify-content:center"><button class="btn hidden" id="confirm">선택 완료</button></div>
+      <div class="overlay" id="overlay"><div style="font-size:15px;color:var(--ink-soft)">빨간 점을 기억했다가<br>움직임이 멈추면 그 점들을 찾아 누르세요</div><button class="btn" id="start" style="min-width:160px">시작</button><div class="note" id="bestNote" style="margin:0"></div></div>
+    </div>
+    <div class="stats"><span id="bestLocal"></span></div>
+  </div>
+
+  <div id="lb"></div>
+
+ <div class="ad-slot" data-ad="below-result"></div>
+<section class="seo">
+<h2>점 추적(MOT), 프로 구단이 쓰는 주의 훈련</h2><p>여러 개의 점 중 몇 개가 빨갛게 표시돼요. 2초 뒤 전부 같은 색이 되어 5초 동안 튀어 다니고, 멈추면 아까 빨갰던 점들을 찾아 누르세요. 다중 물체 추적(Multiple Object Tracking)이라는 과제로, 여러 대상에 동시에 주의를 나눠 유지하는 능력을 봐요. 축구 선수가 공을 다루면서 주변 선수 여럿의 위치를 놓치지 않는 것과 같은 능력이라 프로 스포츠 팀의 인지 훈련에도 쓰여요.</p>
+<p>단계가 오르면 추적할 점이 2개에서 5개까지 늘고 속도도 빨라져요. 하나라도 틀리면 목숨이 줄고, 3개를 다 쓰면 끝. 도달 단계로 랭킹에 등록해요.</p>
+<h2>잘하는 요령</h2><ol><li>점 하나하나를 따라가지 말고, 표적들이 이루는 도형(삼각형·사각형)의 변형을 보세요.</li><li>시선을 화면 중앙에 두고 전체를 보는 게 두 개 이상 추적할 때 유리해요.</li><li>점끼리 겹치는 순간이 가장 위험해요. 겹치기 직전 어느 쪽이 빨랐는지 기억하세요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>점이 겹치면 어떻게 하나요?</summary><p>겹치는 순간이 이 게임의 핵심 난관이에요. 겹치기 직전의 속도와 방향을 기억해 두면 갈라진 뒤에도 구분할 수 있어요. 점끼리는 서로 튕기도록 만들어서 완전히 포개지는 시간은 짧아요.</p></details><details><summary>몇 단계면 잘하는 건가요?</summary><p>6단계(추적 3개)를 넘기면 보통 이상, 10단계 이상이면 상위권이에요. 12단계부터는 5개를 추적해야 해요.</p></details><details><summary>랭킹은 어떻게 등록하나요?</summary><p>목숨을 다 쓰면 닉네임을 넣고 등록 버튼을 누르면 돼요.</p></details></section>
+<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="periph.html">주변시 숫자 읽기</a><a href="gonogo.html">참기 게임</a><a href="reaction.html">반응속도 테스트</a><a href="lineup.html">축구 라인업</a></div></section>
+  <footer>기록은 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 기록이 서버에 저장돼요. 이 테스트는 특정 능력을 측정·연습하는 놀이이며 의학적 검사가 아니에요.<br><span class="version-tag">v1.0 · 2026-09-17 업데이트</span></footer>
+</main>
+
+<script src="leaderboard.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+let level=1, lives=3, balls=[], targets=new Set(), picks=new Set(), phase='idle', running=false, startedAt=0, raf=0, tmo=0, lastT=0, moveUntil=0;
+function nBalls(){ return Math.min(12, 6+Math.floor((level-1)/2)); } function nTargets(){ return Math.min(5, 2+Math.floor((level-1)/3)); } function speed(){ return 0.10+(level-1)*0.012; } // 초당 영역 대비 비율
+function setup(){
+  const A=$('arena'); A.innerHTML=''; balls=[]; targets=new Set(); picks=new Set(); $('confirm').classList.add('hidden'); $('msg').textContent='빨간 점을 기억하세요';
+  const n=nBalls(), k=nTargets(); $('level').textContent=level; $('k').textContent=k;
+  const idx=[...Array(n).keys()]; for(let i=idx.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [idx[i],idx[j]]=[idx[j],idx[i]]; } idx.slice(0,k).forEach(i=>targets.add(i));
+  for(let i=0;i<n;i++){ let x,y,ok=false,tries=0; while(!ok&&tries<200){ x=8+Math.random()*84; y=8+Math.random()*84; ok=balls.every(b=>Math.hypot(b.x-x,b.y-y)>12); tries++; }
+    const ang=Math.random()*Math.PI*2; const el=document.createElement('div'); el.className='ball'+(targets.has(i)?' target':''); el.dataset.i=i; A.appendChild(el);
+    balls.push({x,y,vx:Math.cos(ang),vy:Math.sin(ang),el}); }
+  draw(); phase='memo';
+  tmo=setTimeout(()=>{ if(!running) return; balls.forEach(b=>b.el.classList.remove('target')); phase='move'; $('msg').textContent='추적하세요…'; lastT=performance.now(); moveUntil=lastT+5000; raf=requestAnimationFrame(move); },2000);
+}
+function draw(){ balls.forEach(b=>{ b.el.style.left=b.x+'%'; b.el.style.top=b.y+'%'; }); }
+function move(now){
+  if(!running||phase!=='move') return; const dt=Math.min(0.05,(now-lastT)/1000); lastT=now; const s=speed()*100;
+  balls.forEach(b=>{ b.x+=b.vx*s*dt; b.y+=b.vy*s*dt; if(b.x<5||b.x>95){ b.vx*=-1; b.x=Math.max(5,Math.min(95,b.x)); } if(b.y<5||b.y>95){ b.vy*=-1; b.y=Math.max(5,Math.min(95,b.y)); } });
+  // 공끼리 튕김
+  for(let i=0;i<balls.length;i++) for(let j=i+1;j<balls.length;j++){ const a=balls[i],c=balls[j]; const dx=c.x-a.x, dy=c.y-a.y, d=Math.hypot(dx,dy); if(d<9&&d>0){ const nx=dx/d, ny=dy/d; const p=(a.vx-c.vx)*nx+(a.vy-c.vy)*ny; if(p>0){ a.vx-=p*nx; a.vy-=p*ny; c.vx+=p*nx; c.vy+=p*ny; } } }
+  draw();
+  if(now>=moveUntil){ phase='pick'; $('msg').textContent=`아까 빨갰던 점 ${nTargets()}개를 누르세요`; $('confirm').classList.remove('hidden'); return; }
+  raf=requestAnimationFrame(move);
+}
+$('arena').addEventListener('pointerdown',e=>{ const el=e.target.closest('.ball'); if(!el||phase!=='pick') return; const i=+el.dataset.i; if(picks.has(i)){ picks.delete(i); el.classList.remove('pick'); } else if(picks.size<nTargets()){ picks.add(i); el.classList.add('pick'); } if(picks.size===nTargets()) setTimeout(judge,150); });
+$('confirm').addEventListener('click',()=>{ if(phase==='pick') judge(); });
+function judge(){ if(phase!=='pick') return; phase='judge'; $('confirm').classList.add('hidden');
+  let ok=true; balls.forEach(b=>{ const i=+b.el.dataset.i; b.el.classList.remove('pick'); if(targets.has(i)) b.el.classList.add(picks.has(i)?'hit':'miss'); if(targets.has(i)!==picks.has(i)) ok=false; });
+  if(ok){ $('msg').textContent='정답! 다음 단계'; level++; tmo=setTimeout(setup,1000); }
+  else { lives--; $('lives').textContent=lives; $('msg').textContent='틀렸어요. 초록이 정답, 빨강이 놓친 점'; tmo=setTimeout(()=>{ if(lives<=0) finish(); else setup(); },1600); } }
+function start(){ level=1; lives=3; running=true; startedAt=Date.now(); $('lives').textContent=3; $('overlay').style.display='none'; setup(); }
+function finalScore(){ return level-1; } function resultLabel(){ return '도달 단계'; } function resultExtra(){ return ''; }
+function finish(){
+  running=false; cancelAnimationFrame(raf); clearTimeout(tmo);
+  const sc=finalScore();
+  const best=+localStorage.getItem('mot_best')||0; const isBest=sc>best; if(isBest) localStorage.setItem('mot_best',String(sc));
+  $('overlay').innerHTML=`<div style="font-size:14px;color:var(--ink-soft)">${resultLabel()}</div><div class="huge">${sc}${'단계'}</div><div class="note" style="margin:0">${isBest?'🎉 이 기기 최고 기록!':'최고 기록 '+best+'단계'}${resultExtra()}</div><div class="btn-row" style="justify-content:center;margin-top:6px"><button class="btn" id="again">다시 하기</button></div>`;
+  $('overlay').style.display='flex'; $('again').addEventListener('click',start); showBest();
+  if(sc>=1) LB.submit(sc,{duration:Date.now()-startedAt, meta:''});
+  if(typeof gtag==='function') gtag('event','mot_finished',{score:sc});
+}
+function showBest(){ const b=+localStorage.getItem('mot_best')||0; $('bestLocal').textContent=b?'내 최고 기록 '+b+'단계':''; const bn=$('bestNote'); if(bn) bn.textContent=b?'내 최고 기록 '+b+'단계':''; }
+$('start').addEventListener('click',start); showBest();
+LB.init({game:'mot', el:'#lb', label:'단계', format:v=>v+'단계'});
+</script>
+
+</body>
+</html>

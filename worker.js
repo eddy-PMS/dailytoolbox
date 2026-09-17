@@ -19,7 +19,13 @@ const SCORE_GAMES = {
   math: { lower: false, min: 1, max: 100, minMs: 58000, maxMs: 75000 },                // 암산 스피드: 60초 정답 수
   'vocab-mid': { lower: false, min: 1, max: 60, minMs: 58000, maxMs: 75000 },          // 영단어 퀴즈(중등): 60초 정답 수
   'vocab-high': { lower: false, min: 1, max: 60, minMs: 58000, maxMs: 75000 },         // 영단어 퀴즈(고등)
-  'vocab-toeic': { lower: false, min: 1, max: 60, minMs: 58000, maxMs: 75000 }         // 영단어 퀴즈(토익)
+  'vocab-toeic': { lower: false, min: 1, max: 60, minMs: 58000, maxMs: 75000 },        // 영단어 퀴즈(토익)
+  digit: { lower: false, min: 3, max: 20, minMs: 3000, msPerPoint: 2200 },              // 숫자 외우기(순서): 최대 자릿수
+  'digit-rev': { lower: false, min: 3, max: 20, minMs: 3000, msPerPoint: 2200 },        // 숫자 외우기(역순)
+  periph: { lower: false, min: 1, max: 60, minMs: 2000, msPerPoint: 1200 },             // 주변시 숫자 읽기: 도달 단계
+  mot: { lower: false, min: 1, max: 40, minMs: 6000, msPerPoint: 6000 },                // 점 추적: 도달 단계 (단계당 7초 이상)
+  reverse: { lower: false, min: 1, max: 150, minMs: 58000, maxMs: 75000 },              // 반대로 누르기: 60초 정답 수
+  gonogo: { lower: false, min: 1, max: 200, minMs: 3000, msPerPoint: 450 }              // 참기 게임: 초록 신호 성공 수
 };
 const LB_SIZE = 100;
 const BAD_WORDS = ['시발','씨발','씨팔','ㅅㅂ','병신','ㅂㅅ','좆','존나','개새','새끼','니미','엿먹','fuck','shit','bitch','sex','섹스','자지','보지','창녀','걸레'];

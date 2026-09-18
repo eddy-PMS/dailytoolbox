@@ -9,6 +9,7 @@
   var accent = nav.getAttribute('data-accent') || '#3a3f4a';
   var path = location.pathname.split('/').pop() || 'index.html';
   if (path === '') path = 'index.html';
+  if (path.indexOf('.') < 0) path += '.html';   // /salary 처럼 확장자 없는 주소도 salary.html 로 취급
   var esc = function (s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
 
   var css = ''
@@ -153,7 +154,7 @@
       var main = document.querySelector('main');
       if (main && main.parentNode) main.parentNode.insertBefore(box, main.nextSibling); else document.body.appendChild(box);
     }
-    if (!document.getElementById('side-ad') && path !== 'index.html') {
+    if (!document.getElementById('side-ad') && path !== 'index.html' && path !== 'ads-admin.html') {
       var aside = document.createElement('aside'); aside.id = 'side-ad'; aside.innerHTML = '<div class="ad-slot" data-ad="side"></div>'; document.body.appendChild(aside);
     }
   }

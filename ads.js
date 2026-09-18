@@ -6,6 +6,8 @@
    미리보기: 아무 페이지나 ?adpreview=1 로 열면 설정과 무관하게 슬롯 자리를 라벨 박스로 표시 */
 (function () {
   var path = location.pathname.split('/').pop() || 'index.html'; if (path === '') path = 'index.html';
+  if (path.indexOf('.') < 0) path += '.html';
+  if (path === 'ads-admin.html') return;
   var preview = /[?&]adpreview=1/.test(location.search);
   var mobile = window.innerWidth < 720;
   var LABEL = { top: '상단', 'below-result': '결과 아래', 'in-content': '본문 중간', side: '사이드', infeed: '인피드' };

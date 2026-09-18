@@ -34,10 +34,10 @@
 <script src="nav.js"></script>
 
 <main>
-  <div class="brand"><b>↔ 시급·월급·연봉 변환기</b></div>
+  <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#돈·일">돈·일</a><span>›</span>시급·월급·연봉 변환</nav>
   <h1>시급 월급 연봉 변환기</h1>
-  <p class="tagline">하나만 넣으면 전부 환산돼요</p>
   <p class="sub">주 소정근로시간을 기준으로 시급↔일급↔주급↔월급↔연봉을 서로 바꿔요. 월급은 주휴시간을 포함한 월 209시간(주 40시간 기준)으로 계산합니다.</p>
+  <div class="ad-slot" data-ad="top"></div>
 
   <div class="card">
     <div class="row"><label>주 근무시간 <input class="inline" type="number" id="weekly" value="40" min="1" max="60" style="width:70px"> 시간</label><label><input type="checkbox" id="juhyu" checked> 주휴수당 포함 (주 15시간 이상)</label></div>
@@ -51,6 +51,7 @@
     <div class="note" id="info"></div>
   </div>
  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">돈·일 도구 더 보기</div><div class="chips"><a href="unemployment.html">실업급여 계산기</a><a href="freelancer-tax.html">3.3% 프리랜서 세금</a><a href="margin.html">마진율 계산기</a><a href="platform-fee.html">카드·배달앱 수수료</a><a href="breakeven.html">손익분기점 계산기</a><a href="roas.html">ROAS 계산기</a><a class="more" href="index.html#돈·일">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>시급·월급·연봉은 어떻게 환산하나요</h2><p>월급은 시급에 월 소정근로시간을 곱해서 구해요. 주 40시간 근무자는 주휴시간 8시간을 더한 주 48시간에 한 달 평균 주 수(365 ÷ 7 ÷ 12 ≈ 4.345)를 곱해 약 209시간이 되고, 이 209시간이 월급 환산의 표준이에요. 2026년 최저시급 10,320원 × 209시간 = 2,156,880원이 최저 월급인 이유입니다.</p><p>연봉은 월급 × 12예요. 반대로 연봉에서 시급을 구할 때는 연봉 ÷ 12 ÷ 209로 나누면 돼요. 연봉 3,000만원이면 시급 약 11,962원, 연봉 4,000만원이면 약 15,949원이에요. 주 근무시간이 40시간이 아니면 이 계산기 상단에서 바꿔서 계산하세요.</p>
 <h2>연봉별 환산 시급 (주 40시간 · 209시간 기준)</h2><p><table><thead><tr><th>연봉</th><th class="r">월급</th><th class="r">환산 시급</th></tr></thead><tbody><tr><td>2,588만원 (2026 최저)</td><td class="r">2,156,880원</td><td class="r">10,320원</td></tr><tr><td>3,000만원</td><td class="r">250만원</td><td class="r">11,962원</td></tr><tr><td>4,000만원</td><td class="r">333만원</td><td class="r">15,949원</td></tr><tr><td>5,000만원</td><td class="r">417만원</td><td class="r">19,936원</td></tr><tr><td>6,000만원</td><td class="r">500만원</td><td class="r">23,923원</td></tr><tr><td>8,000만원</td><td class="r">667만원</td><td class="r">31,898원</td></tr></tbody></table></p>
@@ -58,7 +59,6 @@
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>209시간은 어떻게 나온 숫자인가요?</summary><p>(주 40시간 + 주휴 8시간) × 365일 ÷ 7일 ÷ 12개월 = 208.57시간을 반올림한 값이에요. 고용노동부 최저임금 월 환산액도 이 기준을 씁니다.</p></details><details><summary>포괄임금제 연봉에서 시급을 구하려면요?</summary><p>연장·야간수당이 포함된 연봉이라면 실제 근무시간이 209시간보다 많아 실질 시급은 더 낮아요. 근로계약서의 소정근로시간과 고정 연장시간을 확인해 상단 "주 근무시간"을 조정하세요.</p></details><details><summary>주 5일 6시간 알바는 월급이 얼마인가요?</summary><p>주 30시간이라 주휴 6시간이 붙어 월 약 156시간이에요. 최저시급이면 약 161만원입니다. 상단에서 주 근무시간을 30으로 바꿔 계산하세요.</p></details></section>
-<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="parttime.html">알바 급여 계산기</a><a href="salary.html">연봉 실수령액 계산기</a><a href="annual-leave.html">연차 계산기</a><a href="unemployment.html">실업급여 계산기</a></div></section>
   <footer>세전 기준이며 상여·수당·세금은 포함하지 않아요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
 </main>
 

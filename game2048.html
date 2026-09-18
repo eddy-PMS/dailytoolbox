@@ -51,10 +51,10 @@
 <script src="nav.js"></script>
 
 <main>
-  <div class="brand"><b>🎮 2048</b></div>
+  <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#퍼즐·게임">퍼즐·게임</a><span>›</span>2048 게임</nav>
   <h1>2048 게임</h1>
-  <p class="tagline">같은 숫자를 합쳐 2048을 만드세요</p>
   <p class="sub">방향키(PC) 또는 스와이프(모바일)로 타일을 밀면 같은 숫자끼리 합쳐져요. 더 이상 움직일 수 없으면 게임 끝. 점수를 랭킹에 등록할 수 있어요.</p>
+  <div class="ad-slot" data-ad="top"></div>
 
   <div class="card">
     <div class="hud"><div class="sc"><div class="box"><small>점수</small><b id="score">0</b></div><div class="box"><small>최고</small><b id="best">0</b></div></div><button class="btn-ghost" id="newGame">새 게임</button></div>
@@ -68,6 +68,7 @@
   <div id="lb"></div>
 
  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">퍼즐·게임 도구 더 보기</div><div class="chips"><a href="nonogram.html">네모로직 (노노그램)</a><a href="water-sort.html">물 붓기 퍼즐</a><a href="block-fill.html">블록 채우기</a><a href="order.html">숫자 순서 누르기</a><a href="color-find.html">틀린 색 찾기</a><a href="math-speed.html">암산 스피드</a><a class="more" href="index.html#퍼즐·게임">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>2048, 규칙은 30초면 배워요</h2><p>4×4 판에서 타일을 한 방향으로 밀면 모든 타일이 그쪽으로 이동하고, 같은 숫자가 만나면 하나로 합쳐지며 두 배가 돼요. 밀 때마다 2(가끔 4)가 새로 생기고, 판이 꽉 차서 더 이상 합칠 수 없으면 끝이에요. 목표는 2048 타일을 만드는 것이지만, 만든 뒤에도 4096·8192를 향해 계속할 수 있어요.</p>
 <p>점수는 합쳐진 타일의 숫자만큼 쌓여요. 게임이 끝나면 닉네임을 넣어 <b>이번 주 랭킹</b>과 <b>전체 랭킹</b>에 등록할 수 있고, 최고 타일도 함께 표시돼요. 내 최고 점수는 이 기기에 저장돼요.</p>
@@ -75,7 +76,6 @@
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>어떻게 조작하나요?</summary><p>PC는 키보드 방향키(또는 WASD), 스마트폰은 판 위에서 상하좌우로 스와이프하면 돼요. 한 번 밀면 모든 타일이 그 방향으로 이동하고 같은 숫자끼리 합쳐져요.</p></details><details><summary>점수는 어떻게 계산되나요?</summary><p>타일이 합쳐질 때 만들어진 숫자만큼 점수가 올라가요. 예를 들어 8과 8이 합쳐져 16이 되면 16점이에요.</p></details><details><summary>2048을 만들면 끝인가요?</summary><p>아니요. 2048을 만든 뒤에도 계속할 수 있고, 4096·8192까지도 도전할 수 있어요. 더 이상 움직일 수 없을 때 게임이 끝나요.</p></details><details><summary>랭킹은 어떻게 등록하나요?</summary><p>게임이 끝나면 닉네임을 넣고 등록 버튼을 누르면 돼요. 이번 주 100위 또는 전체 100위 안에 들면 랭킹에 올라가요.</p></details></section>
-<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="order.html">숫자 순서 누르기</a><a href="reaction.html">반응속도 테스트</a><a href="typing.html">타자 속도 테스트</a><a href="worldcup.html">이상형 월드컵</a></div></section>
   <footer>진행 중인 게임과 최고 점수는 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 점수가 서버에 저장돼요.<br><span class="version-tag">v1.0 · 2026-09-17 업데이트</span></footer>
 </main>
 

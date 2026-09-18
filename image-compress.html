@@ -34,10 +34,10 @@
 <script src="nav.js"></script>
 
 <main>
-  <div class="brand"><b>🖼 이미지 용량 줄이기</b></div>
+  <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#계산·생활">계산·생활</a><span>›</span>이미지 용량 줄이기</nav>
   <h1>이미지 용량 줄이기</h1>
-  <p class="tagline">사진을 올리면 이 자리에서 바로 줄여드려요</p>
   <p class="sub">서버로 업로드하지 않고 브라우저 안에서 처리해요. 품질과 최대 크기를 조절하고 JPG·WEBP·PNG로 저장할 수 있습니다.</p>
+  <div class="ad-slot" data-ad="top"></div>
 
   <div class="card">
     <input type="file" id="file" accept="image/*" multiple style="font-size:14px">
@@ -51,6 +51,7 @@
   </div>
   <div id="list"></div>
  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="qrcode.html">QR코드 생성기</a><a href="myip.html">내 IP 주소 확인</a><a href="ipgeo.html">IP 위치 조회</a><a href="unit.html">단위 변환기</a><a href="exchange.html">환율 계산기</a><a href="rent.html">전월세·중개수수료</a><a class="more" href="index.html#계산·생활">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>이미지 용량, 왜 줄여야 하나요</h2><p>스마트폰 사진 한 장은 보통 3~8MB예요. 이력서 첨부, 게시판 업로드(대부분 2~5MB 제한), 카카오톡 전송, 홈페이지 게시에 그대로 쓰면 용량 초과나 느린 로딩 문제가 생겨요. 이 도구는 이미지를 서버로 보내지 않고 브라우저 안에서 크기를 줄이고 품질을 조절해 용량을 줄여드려요. 사진이 외부로 나가지 않으니 신분증·서류 사진도 안심하고 처리할 수 있어요.</p><p>용량은 두 가지로 줄어요. 하나는 가로·세로 픽셀 수를 줄이는 리사이즈(1920px면 모니터·웹용으로 충분), 다른 하나는 JPG·WEBP의 압축 품질(80% 정도면 육안 차이가 거의 없음)이에요. 둘을 함께 쓰면 8MB 사진이 300~500KB로 줄어듭니다.</p>
 <h2>형식별 특징</h2><p><table><thead><tr><th>형식</th><th>장점</th><th>단점</th><th>추천 용도</th></tr></thead><tbody><tr><td>JPG</td><td>어디서나 열림, 사진에 적합</td><td>투명 배경 불가</td><td>사진, 이력서 첨부</td></tr><tr><td>WEBP</td><td>JPG보다 25~35% 작음</td><td>일부 구형 프로그램에서 안 열림</td><td>웹사이트, 블로그</td></tr><tr><td>PNG</td><td>무손실, 투명 배경</td><td>사진은 용량이 큼</td><td>로고, 스크린샷, 투명 이미지</td></tr></tbody></table></p>
@@ -58,7 +59,6 @@
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>사진이 서버에 업로드되나요?</summary><p>아니요. 모든 처리는 내 브라우저 안에서 이루어지고 파일이 어디에도 전송되지 않아요.</p></details><details><summary>PNG인데 용량이 거의 안 줄어요.</summary><p>PNG는 무손실 형식이라 품질 옵션이 적용되지 않아요. 사진이라면 JPG나 WEBP로 저장하면 크게 줄어들고, 투명 배경이 필요 없으면 JPG를 권해요.</p></details><details><summary>이력서·증명사진은 어느 정도로 줄이면 되나요?</summary><p>대부분 사이트는 2MB 이하, 가로 1000px 정도면 충분해요. 최대 크기 1200px, 품질 85%로 설정해보세요.</p></details><details><summary>HEIC(아이폰) 사진도 되나요?</summary><p>브라우저가 HEIC를 지원하지 않으면 처리되지 않아요. 아이폰 설정에서 "호환성 우선"으로 바꾸거나 JPG로 내보낸 뒤 사용하세요.</p></details></section>
-<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="qrcode.html">QR코드 생성기</a><a href="charcount.html">글자수 세기</a><a href="password.html">비밀번호 생성기</a><a href="unit.html">단위 변환기</a></div></section>
   <footer>사진은 내 기기 안에서만 처리되며 어디에도 업로드되지 않아요. PNG는 무손실이라 용량이 크게 줄지 않을 수 있습니다.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
 </main>
 

@@ -34,10 +34,10 @@
 <script src="nav.js"></script>
 
 <main>
-  <div class="brand"><b>🎲 랜덤 뽑기</b></div>
+  <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#테스트·재미">테스트·재미</a><span>›</span>랜덤 뽑기</nav>
   <h1>랜덤 뽑기</h1>
-  <p class="tagline">고민될 땐 운에 맡기세요</p>
   <p class="sub">항목을 넣고 몇 개 뽑을지 정하면 무작위로 골라드려요. 점심 메뉴, 발표 순서, 당첨자 추첨에.</p>
+  <div class="ad-slot" data-ad="top"></div>
 
   <div class="card">
     <div class="field"><label>항목 (줄바꿈 또는 쉼표)</label><textarea id="items" style="min-height:110px">김치찌개, 돈까스, 초밥, 파스타, 햄버거, 쌀국수</textarea></div>
@@ -46,6 +46,7 @@
   </div>
   <div class="card"><div id="stage" style="text-align:center;font-size:34px;font-weight:700;min-height:60px;line-height:1.4;color:var(--accent)">?</div><div id="list" class="note" style="text-align:center"></div></div>
  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">테스트·재미 도구 더 보기</div><div class="chips"><a href="kakao-analyzer.html">카카오톡 대화 분석기</a><a href="quote-card.html">감성 문구 카드</a><a href="ascii-art.html">아스키 아트 생성기</a><a href="iq-test.html">IQ 테스트</a><a href="mbti-test.html">간이 MBTI 테스트</a><a href="worldcup.html">이상형 월드컵</a><a class="more" href="index.html#테스트·재미">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>랜덤 뽑기 활용법</h2><p>점심 메뉴, 발표 순서, 경품 당첨자, 오늘 할 운동, 여행지 후보처럼 여러 항목 중 하나(또는 여러 개)를 무작위로 고를 때 쓰세요. 항목을 넣고 뽑을 개수를 정하면 룰렛처럼 돌아가다 멈춰요. "전체 순서 섞기"를 켜면 발표 순서나 게임 순서를 한 번에 정할 수 있어요.</p><p>브라우저의 난수를 쓰기 때문에 결과가 어디에도 저장되지 않고 조작할 수 없어요. 경품 추첨처럼 공정성이 필요한 자리에서는 화면을 공유하면서 뽑으면 신뢰를 얻기 좋아요.</p>
 <h2>이런 항목을 넣어보세요</h2><p><table><thead><tr><th>상황</th><th>예시 항목</th></tr></thead><tbody><tr><td>점심 메뉴</td><td>김치찌개, 돈까스, 초밥, 파스타, 쌀국수</td></tr><tr><td>주말 활동</td><td>영화, 등산, 카페, 집에서 쉬기</td></tr><tr><td>발표 순서</td><td>조 이름 넣고 "전체 순서 섞기"</td></tr><tr><td>경품 추첨</td><td>참가자 이름 넣고 뽑을 개수 = 경품 수</td></tr></tbody></table></p>
@@ -53,7 +54,6 @@
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>같은 항목이 두 번 뽑히나요?</summary><p>아니요. 여러 개를 뽑을 때는 중복 없이 뽑아요.</p></details><details><summary>가중치를 줄 수 있나요?</summary><p>같은 항목을 여러 번 입력하면 뽑힐 확률이 그만큼 높아져요.</p></details><details><summary>결과가 저장되나요?</summary><p>아니요. 새로고침하면 사라져요.</p></details></section>
-<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="ladder.html">사다리타기</a><a href="team.html">팀 나누기</a><a href="lotto.html">로또 번호 생성기</a><a href="password.html">비밀번호 생성기</a></div></section>
   <footer>브라우저의 난수를 사용하며 결과는 저장되지 않아요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
 </main>
 

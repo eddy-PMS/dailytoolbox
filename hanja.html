@@ -34,10 +34,10 @@
 <script src="nav.js"></script>
 
 <main>
-  <div class="brand"><b>訓音 한자 음훈 조회</b></div>
+  <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#공부·어학">공부·어학</a><span>›</span>한자 음훈 조회</nav>
   <h1>한자 음훈 조회</h1>
-  <p class="tagline">이 한자, 무슨 뜻이고 어떻게 읽을까요</p>
   <p class="sub">한자를 입력하면 글자마다 훈(뜻)과 음을 보여드려요. 문장을 통째로 붙여넣어도 한자만 골라 조회합니다. 2만여 자 수록.</p>
+  <div class="ad-slot" data-ad="top"></div>
 
   <div class="card">
     <textarea id="input" placeholder="예) 天地玄黃 宇宙洪荒" style="min-height:90px;font-size:20px"></textarea>
@@ -45,6 +45,7 @@
   </div>
   <div id="result"><div class="empty">한자를 입력하면 여기에 음과 훈이 표시돼요</div></div>
  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">공부·어학 도구 더 보기</div><div class="chips"><a href="chinese-convert.html">간체↔번체 변환</a><a href="tone-drill.html">성조 훈련</a><a href="hsk-test.html">HSK 레벨 테스트</a><a href="tts.html">발음 듣기</a><a href="dictation.html">받아쓰기 연습</a><a href="wordlist.html">단어장 추출기</a><a class="more" href="index.html#공부·어학">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>한자 음훈 조회, 이럴 때 쓰세요</h2><p>한자 사전에서 글자를 찾으려면 부수나 획수를 알아야 해서 번거로워요. 이 도구는 한자를 그대로 입력하거나 붙여넣으면 훈(뜻)과 음(소리)을 바로 보여줘요. 이름 한자 뜻 확인, 한자 급수 시험 공부, 신문·고전·법률 문서의 한자 읽기, 중국어·일본어 한자를 한국식 음으로 확인할 때 쓰기 좋아요. 2만여 자를 수록해 일상 한자는 물론 드문 글자도 대부분 나와요.</p><p>한자는 하나의 글자가 여러 음을 갖는 경우(다음자)가 있어요. 樂은 즐길 락·풍류 악·좋아할 요로 읽히고, 說은 말씀 설·달랠 세·기꺼울 열이에요. 이 도구는 모든 음훈을 함께 보여주고, 전체 문장 음독은 대표음 기준으로 표시하니 문맥에 맞는 음을 골라 읽으세요.</p>
 <h2>한자 급수별 배정 글자 수 (한국어문회 기준)</h2><p><table><thead><tr><th>급수</th><th class="r">읽기 배정</th><th>수준</th></tr></thead><tbody><tr><td>8급</td><td class="r">50자</td><td>초등 1학년</td></tr><tr><td>7급</td><td class="r">150자</td><td>초등 2학년</td></tr><tr><td>6급</td><td class="r">300자</td><td>초등 3학년</td></tr><tr><td>5급</td><td class="r">500자</td><td>초등 4학년</td></tr><tr><td>4급</td><td class="r">1,000자</td><td>초등 6학년~중학</td></tr><tr><td>3급</td><td class="r">1,817자</td><td>고등학교</td></tr><tr><td>2급</td><td class="r">2,355자</td><td>대학 교양</td></tr><tr><td>1급</td><td class="r">3,500자</td><td>전문가</td></tr></tbody></table></p>
@@ -52,7 +53,6 @@
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>중국어 간체자도 조회되나요?</summary><p>일부 간체자는 수록되어 있지만, 한국에서 쓰는 정자(번체) 기준 사전이라 간체는 안 나올 수 있어요. 간체↔번체 변환기로 번체로 바꾼 뒤 조회하면 대부분 찾을 수 있어요.</p></details><details><summary>이름 한자의 뜻을 찾고 싶어요.</summary><p>한자를 입력하면 훈(뜻)이 나와요. 이름에 쓰는 한자는 인명용 한자 8,000여 자 범위 안이어야 출생신고가 가능하니 대법원 인명용 한자표도 함께 확인하세요.</p></details><details><summary>훈이 여러 개인 글자는요?</summary><p>한 음에 여러 훈이 있으면 쉼표로 나란히 보여줘요. 문맥에 맞는 뜻을 고르면 됩니다.</p></details></section>
-<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="pinyin.html">병음 변환기</a><a href="stroke-order.html">한자 획순</a><a href="furigana.html">후리가나 표시기</a><a href="chinese-convert.html">간체↔번체 변환</a><a href="romanize.html">이름 로마자 변환</a></div></section>
   <footer>사전 데이터는 오픈소스 libhangul 프로젝트의 한자 사전(LGPL)을 바탕으로 합니다. 다음자(여러 음이 있는 글자)는 모든 음을 표시하고, 전체 음독은 대표음 기준이라 문맥과 다를 수 있어요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
 </main>
 

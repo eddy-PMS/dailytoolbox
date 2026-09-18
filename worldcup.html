@@ -55,10 +55,10 @@
 <script src="nav.js"></script>
 
 <main>
-  <div class="brand"><b>🏆 이상형 월드컵 생성기</b></div>
+  <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#테스트·재미">테스트·재미</a><span>›</span>이상형 월드컵</nav>
   <h1>이상형 월드컵 생성기</h1>
-  <p class="tagline">내가 만든 월드컵, 친구한테 바로 보내세요</p>
   <p class="sub">항목을 넣으면 무작위 토너먼트가 만들어져요. "공유 링크 만들기"를 누르면 짧은 링크가 생기고, 그 링크로 여러 사람이 플레이하면 우승 비율 랭킹도 쌓여요.</p>
+  <div class="ad-slot" data-ad="top"></div>
 
   <div id="landing" class="card hidden">
     <div class="landing-head">
@@ -100,6 +100,7 @@
   </div>
   <div id="resultWrap" class="card hidden"></div>
  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">테스트·재미 도구 더 보기</div><div class="chips"><a href="balance-game.html">밸런스 게임 생성기</a><a href="fortune.html">사주 보기 & 오늘의 운세·궁합</a><a href="stress-test.html">스트레스 지수 테스트</a><a href="ladder.html">사다리타기</a><a href="team.html">팀 나누기</a><a href="random-pick.html">랜덤 뽑기</a><a class="more" href="index.html#테스트·재미">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>이상형 월드컵, 어떻게 만드나요</h2><p>좋아하는 음식, 아이돌, 여행지 등 무엇이든 항목으로 넣으면 토너먼트 대진표가 자동으로 만들어져요. 두 항목씩 나와서 하나를 고르면 다음 라운드로 올라가고, 최종 우승자가 나올 때까지 반복해요. 4강부터 32강까지 넣은 항목 수에 맞는 크기를 고를 수 있어요.</p><p>"공유 링크 만들기"를 누르면 짧은 링크(예: dailyfreetoolbox.com/worldcup?id=ab12cd34)가 만들어져요. 이 링크를 친구에게 보내면 같은 월드컵을 플레이할 수 있고, 여러 사람이 플레이할수록 각 항목의 "우승 비율" 랭킹이 쌓여요. "바로 해보기"는 저장 없이 내 화면에서만 한 번 즐기는 방식이에요.</p>
 <h2>공유 링크 vs 바로 해보기</h2><p><table><thead><tr><th>방식</th><th>공유</th><th>랭킹 집계</th><th>보관 기간</th></tr></thead><tbody><tr><td>공유 링크 만들기</td><td>가능 (짧은 링크)</td><td>가능</td><td>만든 날부터 30일</td></tr><tr><td>바로 해보기</td><td>불가능</td><td>불가능</td><td>저장 안 함</td></tr></tbody></table></p><p>공유 링크를 만들면 제목·항목 이름·이미지(URL 또는 업로드한 사진)가 서버에 저장돼요. 업로드한 사진은 자동으로 압축해서 저장 용량을 줄여요. 만든 날로부터 30일이 지나면 링크는 자동으로 사라져요(연장 없음).</p>
@@ -107,7 +108,6 @@
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>이미지 URL은 어디서 구하나요?</summary><p>이미 인터넷에 올라가 있는 이미지의 주소예요. 이미지에 마우스 우클릭 → "이미지 주소 복사"로 얻을 수 있어요. 저작권이 있는 이미지는 개인적인 용도로만 사용하세요.</p></details><details><summary>네이버 검색 이미지가 안 떠요.</summary><p>네이버 등 일부 사이트는 외부에서 이미지를 불러오는 것(핫링크)을 막아둬서 안 뜰 수 있어요. 그런 경우 이름만 표시돼요. 잘 뜨는 이미지가 필요하면 이미지 호스팅 서비스에 직접 올린 주소를 쓰세요.</p></details><details><summary>공유 링크는 언제까지 유지되나요?</summary><p>만든 날로부터 30일 동안 유지되고, 그 뒤엔 자동으로 삭제돼요. 플레이해도 연장되지 않아요. 남은 기간은 링크를 열면 상단에 표시돼요.</p></details><details><summary>우승 비율은 어떻게 계산되나요?</summary><p>그 항목이 대진표에 등장한 횟수 대비 최종 우승한 횟수의 비율이에요. 여러 사람이 플레이할수록 더 의미 있는 숫자가 돼요.</p></details><details><summary>내가 만든 월드컵을 지우고 싶어요.</summary><p>현재는 삭제 기능이 없어요. 만든 날로부터 30일이 지나면 자동으로 사라져요.</p></details></section>
-<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="balance-game.html">밸런스 게임 생성기</a><a href="random-pick.html">랜덤 뽑기</a><a href="ladder.html">사다리타기</a><a href="team.html">팀 나누기</a></div></section>
   <footer>제목·항목은 서버(Cloudflare KV)에 저장돼 짧은 링크로 공유되고, 만든 날로부터 30일 뒤 자동 삭제돼요. 네이버 검색 썸네일처럼 핫링크를 막아둔 이미지는 안 뜰 수 있고, 그럴 땐 이름만 표시돼요. 업로드한 사진은 자동으로 압축해서 저장해요. 참여 100회 이후의 우승 비율은 표본 집계라 실제와 소폭 차이가 날 수 있어요.<br><span class="version-tag">v2.3 · 2026-09-16 업데이트</span></footer>
 </main>
 

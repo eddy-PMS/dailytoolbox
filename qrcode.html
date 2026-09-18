@@ -34,10 +34,10 @@
 <script src="nav.js"></script>
 
 <main>
-  <div class="brand"><b>▦ QR코드 생성기</b></div>
+  <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#계산·생활">계산·생활</a><span>›</span>QR코드 생성기</nav>
   <h1>QR코드 생성기</h1>
-  <p class="tagline">URL이든 와이파이든 바로 QR로</p>
   <p class="sub">입력하는 즉시 QR코드가 만들어지고 PNG로 저장할 수 있어요. 와이파이 QR은 카메라로 찍으면 바로 접속됩니다.</p>
+  <div class="ad-slot" data-ad="top"></div>
 
   <div class="tabs"><button class="tab active" data-t="text">URL·텍스트</button><button class="tab" data-t="wifi">와이파이</button></div>
   <div class="card">
@@ -55,6 +55,7 @@
     <div class="status" id="status"></div>
   </div>
  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="myip.html">내 IP 주소 확인</a><a href="ipgeo.html">IP 위치 조회</a><a href="unit.html">단위 변환기</a><a href="exchange.html">환율 계산기</a><a href="rent.html">전월세·중개수수료</a><a href="lotto.html">로또 번호 생성기</a><a class="more" href="index.html#계산·생활">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>QR코드 생성기로 만들 수 있는 것</h2><p>QR코드는 문자열을 정사각형 패턴으로 바꾼 것이라 URL, 일반 텍스트, 와이파이 접속 정보, 연락처, 결제 링크 등 무엇이든 담을 수 있어요. 카메라로 찍으면 링크는 바로 열리고, 와이파이 QR은 비밀번호 입력 없이 접속돼요. 이 생성기는 브라우저 안에서 만들기 때문에 입력한 내용이 서버로 전송되지 않고, 만든 QR은 PNG로 저장해 인쇄물·명함·메뉴판·안내문에 쓸 수 있어요.</p><p>오류 정정 수준(L·M·Q·H)은 QR이 일부 훼손돼도 읽히는 정도예요. 높을수록 패턴이 촘촘해지지만 로고를 가운데 얹거나 인쇄 상태가 나빠도 잘 읽혀요. 일반 용도는 M, 스티커·현수막처럼 훼손 우려가 있으면 Q나 H를 권해요.</p>
 <h2>QR코드 인쇄 시 권장 크기</h2><p><table><thead><tr><th>용도</th><th class="r">최소 크기</th><th>비고</th></tr></thead><tbody><tr><td>명함·전단</td><td class="r">2×2 cm</td><td>30cm 거리에서 인식</td></tr><tr><td>메뉴판·포스터</td><td class="r">4×4 cm 이상</td><td>1m 거리</td></tr><tr><td>현수막·간판</td><td class="r">스캔 거리 ÷ 10</td><td>5m 거리면 50cm</td></tr></tbody></table></p><p>QR 주변에는 흰 여백(quiet zone)을 최소 모듈 4칸 이상 두어야 인식이 잘 돼요. 이 생성기는 여백을 자동으로 포함해요.</p>
@@ -62,7 +63,6 @@
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>만든 QR코드에 유효기간이 있나요?</summary><p>아니요. QR 자체는 문자열이라 영구적이에요. 다만 담긴 URL의 페이지가 없어지면 링크가 열리지 않아요. 나중에 링크를 바꾸고 싶으면 단축 URL 서비스를 거쳐 만드세요.</p></details><details><summary>와이파이 QR은 어떤 폰에서 되나요?</summary><p>아이폰(iOS 11+)과 안드로이드(10+) 기본 카메라 앱에서 인식돼요. 오래된 기기는 QR 스캐너 앱이 필요할 수 있어요.</p></details><details><summary>QR코드에 로고를 넣을 수 있나요?</summary><p>이 생성기에서는 지원하지 않지만, 오류 정정을 H로 만든 뒤 이미지 편집기에서 가운데 15% 이내 크기로 로고를 얹으면 대부분 인식돼요.</p></details></section>
-<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="image-compress.html">이미지 용량 줄이기</a><a href="password.html">비밀번호 생성기</a><a href="charcount.html">글자수 세기</a><a href="myip.html">내 IP 주소 확인</a></div></section>
   <footer>QR 생성은 오픈소스 qrcode-generator 라이브러리를 사용하며, 입력 내용은 브라우저 밖으로 나가지 않아요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
 </main>
 

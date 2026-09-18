@@ -2,11 +2,11 @@
 :root { --paper:#f1eee6; --paper-deep:#e6e2d6; --ink:#1f1d1a; --ink-soft:#57534b; --line:#d8d3c6; --accent:#3a3f4a; --accent-deep:#26292f; --ok:#2f5d4e; --bad:#a8483a; }
 * { box-sizing:border-box; }
 html, body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif; }
-body { min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:48px 20px 80px; }
+body { min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:0 20px 80px; }
 main { width:100%; max-width:680px; }
 .brand { font-size:15px; color:var(--ink-soft); margin-bottom:24px; } .brand b { color:var(--accent); font-weight:700; }
-h1 { font-size:26px; line-height:1.35; margin:0 0 8px; font-weight:700; letter-spacing:-0.01em; }
-.sub { color:var(--ink-soft); font-size:15px; margin:0 0 22px; line-height:1.6; max-width:52ch; }
+h1 { font-size:26px; line-height:1.35; margin:0 0 6px; font-weight:700; letter-spacing:-0.01em; }
+.sub { color:var(--ink-soft); font-size:15px; margin:0 0 18px; line-height:1.6; max-width:60ch; }
 .card { background:#fffdf8; border:1px solid var(--line); border-radius:3px; padding:22px; margin-bottom:16px; }
 .card h2 { font-size:14px; margin:0 0 12px; color:var(--ink-soft); font-weight:700; }
 .row { display:flex; flex-wrap:wrap; gap:10px 18px; align-items:center; font-size:13px; color:var(--ink-soft); margin-bottom:12px; }
@@ -60,3 +60,15 @@ footer { margin-top:56px; font-size:12px; color:#a39a89; text-align:center; line
 .related-grid a:hover { background: var(--paper-deep); }
 .tagline { font-size: 18px; font-weight: 600; color: var(--ink); margin: 0 0 8px; line-height: 1.45; letter-spacing: -0.01em; }
 .version-tag { opacity: .75; }
+
+/* ---- 2026-09 개편: 브레드크럼 · 상단 광고 · 같은 그룹 칩 ---- */
+.crumb { font-size:12px; color:var(--ink-soft); margin:2px 0 10px; }
+.crumb a { color:var(--ink-soft); text-decoration:none; } .crumb a:hover { color:var(--ink); }
+.crumb span { margin:0 6px; opacity:.6; }
+.ad-slot[data-ad="top"] { margin:0 0 18px; }
+.sibs { margin:18px 0 6px; }
+.sibs .lb { font-size:13px; font-weight:700; color:var(--ink); margin-bottom:8px; }
+.sibs .chips { display:flex; flex-wrap:wrap; gap:8px; }
+.sibs .chips a { border:1px solid var(--line); border-radius:20px; padding:7px 14px; font-size:13px; color:var(--ink); text-decoration:none; background:#fffdf8; }
+.sibs .chips a:hover { background:var(--paper-deep); }
+.sibs .chips a.more { color:var(--ink-soft); background:transparent; }

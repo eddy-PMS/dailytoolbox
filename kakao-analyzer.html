@@ -40,10 +40,10 @@
 <script src="nav.js"></script>
 
 <main>
-  <div class="brand"><b>💬 카카오톡 대화 분석기</b></div>
+  <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#테스트·재미">테스트·재미</a><span>›</span>카카오톡 대화 분석기</nav>
   <h1>카카오톡 대화 분석기</h1>
-  <p class="tagline">우리 둘, 누가 더 많이 말했을까요</p>
   <p class="sub">카카오톡에서 내보낸 대화 파일을 넣으면 말수·답장 속도·활동 시간대·자주 쓴 단어는 물론, 말버릇과 자주 틀리는 표현·자판 밀린 오타까지 분석해드려요. 파일은 서버로 전송되지 않고 브라우저 안에서만 처리돼요.</p>
+  <div class="ad-slot" data-ad="top"></div>
 
   <div class="card">
     <div class="drop" id="drop">여기에 카카오톡 대화 txt 파일을 끌어다 놓거나 클릭해서 선택<input type="file" id="file" accept=".txt" style="display:none"></div>
@@ -54,6 +54,7 @@
   </div>
   <div id="result"></div>
  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">테스트·재미 도구 더 보기</div><div class="chips"><a href="quote-card.html">감성 문구 카드</a><a href="ascii-art.html">아스키 아트 생성기</a><a href="iq-test.html">IQ 테스트</a><a href="mbti-test.html">간이 MBTI 테스트</a><a href="worldcup.html">이상형 월드컵</a><a href="balance-game.html">밸런스 게임 생성기</a><a class="more" href="index.html#테스트·재미">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>카톡 대화 분석, 뭘 볼 수 있나요</h2><p>카카오톡에서 내보낸 대화 파일에는 날짜·시간·발신자·내용이 그대로 담겨 있어요. 이 도구는 그 파일을 읽어 누가 메시지를 더 많이 보냈는지, 답장까지 걸린 평균 시간, 하루 중 가장 활발한 시간대, 자주 쓴 단어와 말버릇을 정리해줘요. 연인·친구 사이에서 "누가 더 톡을 많이 하나" 재미로 확인하거나, 대화 습관을 돌아보는 용도로 쓰세요.</p><p>답장 속도는 상대가 보낸 뒤 내가 답하기까지 걸린 시간의 평균이에요. 같은 사람이 연속으로 여러 개 보낸 경우(3시간 이내)만 답장으로 계산하고, 그보다 오래 걸리면 새로운 대화 시작으로 봐서 평균이 왜곡되지 않게 했어요.</p>
 <h2>오타·말버릇 분석은 어떻게 되나요</h2><p>"말버릇"은 "웅", "넹", "웅웅"처럼 5글자 이하로 자주 반복해 쓰는 짧은 표현을 모은 거예요. "자주 틀리는 표현"은 됬→됐, 할께→할게, 거이→거의처럼 실생활에서 흔히 틀리는 55개 표현을 미리 목록으로 만들어두고, 정확히 그 형태가 나오면 세는 방식이에요. 목록에 없는 오타는 잡지 못하지만, 그만큼 오탐(정상 문장을 틀렸다고 잘못 표시하는 것)이 거의 없어요.</p><p>"자판이 밀린 오타"는 조금 달라요. "오ㅓㅆ어"(→왔어)처럼 자음·모음이 음절 중간에서 분리되어 찍힌 경우를 실시간으로 감지하는 패턴이라, 고정된 단어 목록이 아니라 어떤 대화에도 적용돼요. 다만 "ㅋㅋ", "ㅠㅠ", "ㅡㅡ"처럼 감정을 표현하려고 일부러 쓰는 자모는 구분해서 제외했어요.</p>
@@ -62,7 +63,6 @@
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>대화 내용이 서버로 전송되나요?</summary><p>아니요. 파일은 브라우저 안에서만 읽고 분석하며 어디에도 업로드되지 않아요. 페이지를 닫으면 내용은 완전히 사라져요.</p></details><details><summary>그룹 채팅방도 되나요?</summary><p>네. 참여자별로 카드가 나뉘어 나오지만, 인원이 많으면 카드가 길어져요. 1:1 대화에 최적화되어 있어요.</p></details><details><summary>분석이 이상하게 나와요.</summary><p>"텍스트만 보내기"가 아니라 "모든 메시지 저장"으로 내보내면 형식이 달라 인식이 안 될 수 있어요. 텍스트 내보내기로 다시 시도해보세요.</p></details><details><summary>사진이나 이모티콘도 세나요?</summary><p>메시지 수에는 포함되지만 "사진", "이모티콘" 같은 표시는 단어 분석에서 제외해요.</p></details><details><summary>오타 분석이 완벽한 맞춤법 검사인가요?</summary><p>아니요. "자주 틀리는 표현"은 미리 만든 55개 목록과 정확히 일치할 때만 잡고, "자판이 밀린 오타"는 자모가 음절 중간에 분리된 패턴만 감지해요. 이 두 가지에 해당하지 않는 오타나 띄어쓰기 오류는 잡아내지 못해요.</p></details></section>
-<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="quote-card.html">감성 문구 카드 생성기</a><a href="ladder.html">사다리타기</a><a href="team.html">팀 나누기</a><a href="typing.html">타자 속도 테스트</a></div></section>
   <footer>분석은 브라우저 안에서만 이루어지고 대화 내용은 어디에도 전송·저장되지 않아요. 1:1 대화 기준으로 최적화되어 있고, 단체 채팅방도 분석되지만 참여자가 많으면 카드가 길어질 수 있어요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
 </main>
 

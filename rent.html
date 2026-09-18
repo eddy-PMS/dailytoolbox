@@ -34,10 +34,10 @@
 <script src="nav.js"></script>
 
 <main>
-  <div class="brand"><b>🏠 전월세 전환·중개수수료 계산기</b></div>
+  <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#계산·생활">계산·생활</a><span>›</span>전월세·중개수수료</nav>
   <h1>전월세 전환 계산기 & 부동산 중개수수료 계산기</h1>
-  <p class="tagline">전세를 월세로 바꾸면 얼마, 복비는 최대 얼마</p>
   <p class="sub">전월세 전환율(기준금리+2%, 2026년 현재 4.5% 안팎)로 보증금과 월세를 서로 바꾸고, 공인중개사법 상한 요율로 중개보수를 계산해요.</p>
+  <div class="ad-slot" data-ad="top"></div>
 
   <div class="tabs"><button class="tab active" data-t="conv">전월세 전환</button><button class="tab" data-t="fee">중개수수료</button></div>
   <div class="card" id="convPane">
@@ -58,6 +58,7 @@
     <div id="feeOut" style="margin-top:14px"></div>
   </div>
  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="lotto.html">로또 번호 생성기</a><a href="password.html">비밀번호 생성기</a><a href="percent.html">퍼센트 계산기</a><a href="discount.html">할인율 계산기</a><a href="pdf-merge.html">PDF 합치기</a><a href="pdf-split.html">PDF 분할하기</a><a class="more" href="index.html#계산·생활">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>전월세 전환율이란</h2><p>전월세 전환율은 전세 보증금을 월세로 바꿀 때 적용하는 연 이율이에요. 주택임대차보호법은 계약 갱신 시 전환율 상한을 "한국은행 기준금리 + 2%p"와 "연 10%" 중 낮은 값으로 정하고 있어요. 기준금리가 2.5%면 상한은 4.5%예요. 보증금 1억원을 월세로 바꾸면 1억 × 4.5% ÷ 12 = 월 37.5만원이 상한입니다.</p><p>이 상한은 기존 계약을 갱신하면서 전세→월세로 바꿀 때 적용돼요. 신규 계약은 당사자 합의로 정하지만, 시장에서 통용되는 전환율은 지역·시기에 따라 5~7% 수준으로 법정 상한보다 높은 경우가 많아요.</p>
 <h2>부동산 중개보수(복비) 상한 요율 (주택, 2021.10 개정)</h2><p><table><thead><tr><th>거래금액</th><th class="r">매매</th><th class="r">임대차</th></tr></thead><tbody><tr><td>5천만원 미만</td><td class="r">0.6% (한도 25만원)</td><td class="r">0.5% (한도 20만원)</td></tr><tr><td>5천만~2억 미만</td><td class="r">0.5% (한도 80만원)</td><td class="r">0.4% (한도 30만원, 1억 미만)</td></tr><tr><td>2억~9억 미만</td><td class="r">0.4%</td><td class="r">0.3% (1억~6억)</td></tr><tr><td>9억~12억 미만</td><td class="r">0.5%</td><td class="r">0.4% (6억~12억)</td></tr><tr><td>12억~15억 미만</td><td class="r">0.6%</td><td class="r">0.5%</td></tr><tr><td>15억 이상</td><td class="r">0.7%</td><td class="r">0.6%</td></tr></tbody></table></p><p>임대차 거래금액은 보증금 + (월세 × 100)으로 계산하고, 그 값이 5천만원 미만이면 월세 × 70을 씁니다. 요율은 상한이라 그 안에서 협의할 수 있고, 부가세 10%는 별도예요.</p>
@@ -65,7 +66,6 @@
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>집주인이 전환율 상한보다 높게 월세를 요구해요.</summary><p>갱신 계약이라면 법정 상한(기준금리+2%p)을 넘는 부분은 무효예요. 신규 계약은 합의 사항이지만 주변 시세와 비교해 협상하세요.</p></details><details><summary>복비는 누가 내나요?</summary><p>매매는 매도인·매수인이, 임대차는 임대인·임차인이 각각 중개사에게 지급해요. 표의 요율은 한쪽이 내는 금액 기준입니다.</p></details><details><summary>오피스텔 복비는 다른가요?</summary><p>주거용 오피스텔(전용 85㎡ 이하, 부엌·화장실 구비)은 매매 0.5%, 임대차 0.4% 고정 요율이에요. 그 외 오피스텔·상가는 0.9% 이내 협의입니다.</p></details></section>
-<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="loan.html">대출 이자 계산기</a><a href="unit.html">단위 변환기 (평↔㎡)</a><a href="vat.html">부가세 계산기</a><a href="compound.html">복리·적금 계산기</a></div></section>
   <footer>중개보수 요율은 2021년 10월 개정 기준(주택). 전환율은 기준금리 변동에 따라 달라지니 계약 시점 금리를 확인하세요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
 </main>
 

@@ -34,10 +34,10 @@
 <script src="nav.js"></script>
 
 <main>
-  <div class="brand"><b>🏷 할인율 계산기</b></div>
+  <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#계산·생활">계산·생활</a><span>›</span>할인율 계산기</nav>
   <h1>할인율 계산기</h1>
-  <p class="tagline">30% 할인이면 얼마, 이 가격이면 몇 % 할인?</p>
   <p class="sub">정가·할인율·할인가 중 둘을 알면 나머지를 계산해요. 1차 할인 후 쿠폰으로 또 할인하는 중복 할인도 정확히 계산해드려요.</p>
+  <div class="ad-slot" data-ad="top"></div>
 
   <div class="card">
     <div class="tabs"><button class="tab active" data-m="price">정가 + 할인율 → 할인가</button><button class="tab" data-m="rate">정가 + 할인가 → 할인율</button><button class="tab" data-m="orig">할인가 + 할인율 → 정가</button></div>
@@ -50,6 +50,7 @@
     <div id="out" style="margin-top:14px"></div>
   </div>
  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="pdf-merge.html">PDF 합치기</a><a href="pdf-split.html">PDF 분할하기</a><a href="image-to-pdf.html">이미지 → PDF</a><a href="discharge.html">전역일 계산기</a><a href="military-savings.html">군적금 만기 계산기</a><a href="salary.html">연봉 실수령액</a><a class="more" href="index.html#계산·생활">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>할인율 계산, 중복 할인의 함정</h2><p>할인가 = 정가 × (1 − 할인율). 59,000원의 30% 할인은 41,300원이에요. 반대로 할인율 = (1 − 할인가 ÷ 정가) × 100이고, 할인가와 할인율로 정가를 역산하면 할인가 ÷ (1 − 할인율)이에요. 쇼핑몰의 "정가 대비 N%"가 실제와 다른지 확인할 때 유용해요.</p><p>중복 할인은 더하지 않고 곱해요. 30% 할인 상품에 10% 쿠폰을 쓰면 40%가 아니라 1 − 0.7 × 0.9 = 37% 할인이에요. 쿠폰은 보통 할인된 가격에 적용되기 때문이에요. "최대 50% + 추가 20%" 광고를 보면 실제 최대 할인은 60%예요.</p>
 <h2>할인 표현별 실제 할인율</h2><p><table><thead><tr><th>표현</th><th class="r">실제 할인율</th></tr></thead><tbody><tr><td>30% + 10% 쿠폰</td><td class="r">37%</td></tr><tr><td>50% + 20% 쿠폰</td><td class="r">60%</td></tr><tr><td>1+1 (두 개 사면 하나 무료)</td><td class="r">50% (단, 2개 구매 시)</td></tr><tr><td>2+1</td><td class="r">33.3%</td></tr><tr><td>10만원 이상 1만원 할인</td><td class="r">최대 10% (구매액 클수록 낮아짐)</td></tr></tbody></table></p>
@@ -57,7 +58,6 @@
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>정액 쿠폰(5,000원 할인)은 어떻게 넣나요?</summary><p>할인가 칸에 정가 − 5,000원을 넣고 "정가+할인가 → 할인율" 탭을 쓰면 몇 % 할인인지 나와요.</p></details><details><summary>세일가에 또 세일한다는데 얼마인가요?</summary><p>1차 할인율과 쿠폰 % 를 각각 넣으면 곱해서 계산해줘요. 두 할인율을 더하면 틀려요.</p></details><details><summary>할인율이 100%면요?</summary><p>정가 역산이 불가능해 계산되지 않아요. 할인율은 100% 미만으로 넣어주세요.</p></details></section>
-<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="percent.html">퍼센트 계산기</a><a href="vat.html">부가세 계산기</a><a href="margin.html">마진율 계산기</a><a href="exchange.html">환율 계산기</a></div></section>
   <footer>정액 할인(예: 5,000원 할인)은 정가 칸에 넣고 할인율 0%로 두면 쿠폰과 함께 계산할 수 있어요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
 </main>
 

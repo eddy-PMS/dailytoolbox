@@ -40,10 +40,10 @@
 <script src="nav.js"></script>
 
 <main>
-  <div class="brand"><b>✂ PDF 분할하기</b></div>
+  <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#계산·생활">계산·생활</a><span>›</span>PDF 분할하기</nav>
   <h1>PDF 분할하기</h1>
-  <p class="tagline">필요한 페이지만 뽑거나, 한 장씩 나누거나</p>
   <p class="sub">"1-3, 5, 8-10"처럼 페이지 범위를 지정해 새 PDF로 저장하거나, 모든 페이지를 각각 별도 PDF로 나눌 수 있어요. 업로드 없이 브라우저에서 처리해요.</p>
+  <div class="ad-slot" data-ad="top"></div>
 
   <div class="card">
     <div class="drop" id="drop">여기에 PDF 파일을 끌어다 놓거나 클릭해서 선택<input type="file" id="file" accept="application/pdf" style="display:none"></div>
@@ -57,6 +57,7 @@
     <div class="status" id="status"></div>
   </div>
  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="image-to-pdf.html">이미지 → PDF</a><a href="discharge.html">전역일 계산기</a><a href="military-savings.html">군적금 만기 계산기</a><a href="salary.html">연봉 실수령액</a><a href="severance.html">퇴직금 계산기</a><a href="loan.html">대출 이자 계산기</a><a class="more" href="index.html#계산·생활">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>PDF 분할, 세 가지 방식</h2><p>① 페이지 범위 추출: "1-3, 5, 8-10"처럼 필요한 페이지만 골라 새 PDF 하나로 저장해요. 긴 보고서에서 제출할 부분만 뽑을 때 써요. ② 페이지별로 나누기: 모든 페이지를 각각 별도 PDF로 저장해요. 급여명세서·성적표처럼 한 파일에 여러 사람 것이 묶인 경우에 유용해요. ③ N쪽씩 나누기: 10쪽씩, 20쪽씩 일정 단위로 쪼개요. 메일 첨부 용량 제한에 맞출 때 좋아요.</p><p>모든 처리는 브라우저 안에서 이루어져 파일이 서버로 가지 않아요. 여러 파일이 만들어질 때는 브라우저가 "여러 파일 다운로드를 허용할까요?"라고 물을 수 있는데, 허용하면 순서대로 저장돼요.</p>
 <h2>페이지 범위 입력 예시</h2><p><table><thead><tr><th>입력</th><th>결과</th></tr></thead><tbody><tr><td>1-3</td><td>1, 2, 3쪽</td></tr><tr><td>5</td><td>5쪽만</td></tr><tr><td>1-3, 7, 10-12</td><td>1, 2, 3, 7, 10, 11, 12쪽을 순서대로</td></tr><tr><td>5, 1</td><td>5쪽 다음 1쪽 (입력 순서대로 배치)</td></tr></tbody></table></p>
@@ -64,7 +65,6 @@
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>페이지 순서를 바꿔서 저장할 수 있나요?</summary><p>네. 범위 추출에서 "3, 1, 2"처럼 입력하면 그 순서대로 배치돼요.</p></details><details><summary>한 번에 여러 범위를 각각 다른 파일로 만들 수는 없나요?</summary><p>현재는 한 범위가 한 파일이에요. 필요한 만큼 반복해서 추출하세요.</p></details><details><summary>분할한 파일 용량이 원본보다 커요.</summary><p>폰트·이미지 등 공유 자원이 각 파일에 복사되기 때문이에요. 페이지별 분할 시 흔한 현상이에요.</p></details></section>
-<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="pdf-merge.html">PDF 합치기</a><a href="image-to-pdf.html">이미지 → PDF</a><a href="image-compress.html">이미지 용량 줄이기</a><a href="charcount.html">글자수 세기</a></div></section>
   <footer>모든 처리는 브라우저 안에서 이루어지며 파일이 서버로 전송되지 않아요. 암호가 걸린 PDF는 먼저 암호를 해제해야 해요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
 </main>
 

@@ -40,10 +40,10 @@
 <script src="nav.js"></script>
 
 <main>
-  <div class="brand"><b>🖼 이미지 → PDF 변환</b></div>
+  <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#계산·생활">계산·생활</a><span>›</span>이미지 → PDF</nav>
   <h1>이미지 PDF 변환</h1>
-  <p class="tagline">사진 여러 장을 PDF 한 장으로</p>
   <p class="sub">서류 사진, 스캔본, 스크린샷을 골라 순서를 정하면 PDF로 묶어드려요. A4 규격에 맞추거나 원본 크기 그대로 넣을 수 있고, 파일은 서버로 가지 않아요.</p>
+  <div class="ad-slot" data-ad="top"></div>
 
   <div class="card">
     <div class="drop" id="drop">여기에 이미지를 끌어다 놓거나 클릭해서 선택 (JPG·PNG·WEBP, 여러 장)<input type="file" id="file" accept="image/*" multiple style="display:none"></div>
@@ -57,6 +57,7 @@
     <div class="status" id="status"></div>
   </div>
  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="discharge.html">전역일 계산기</a><a href="military-savings.html">군적금 만기 계산기</a><a href="salary.html">연봉 실수령액</a><a href="severance.html">퇴직금 계산기</a><a href="loan.html">대출 이자 계산기</a><a href="vat.html">부가세 계산기</a><a class="more" href="index.html#계산·생활">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>사진을 PDF로 만들어야 할 때</h2><p>신분증·통장 사본·계약서를 폰으로 찍어 제출할 때, 여러 장의 스캔 이미지를 한 파일로 묶을 때, 스크린샷 모음을 문서처럼 보낼 때 이미지→PDF 변환이 필요해요. 이 도구는 JPG·PNG·WEBP 여러 장을 순서대로 PDF 한 파일로 만들고, A4 규격에 자동으로 맞춰줘요. 서버에 올리지 않으니 신분증 사진도 안전해요.</p><p>제출용 서류는 "A4 세로 + 보통 여백"이 무난하고, 가로로 긴 표나 화면 캡처는 "A4 가로"가 보기 좋아요. 이미지를 자르거나 회전할 필요가 있다면 먼저 폰 갤러리에서 편집한 뒤 올리세요.</p>
 <h2>용량과 화질</h2><p><table><thead><tr><th>JPG 품질</th><th>사진 1장당 대략</th><th>용도</th></tr></thead><tbody><tr><td>높음 (92%)</td><td>600KB~1.5MB</td><td>인쇄용, 세밀한 도면</td></tr><tr><td>보통 (80%)</td><td>300~700KB</td><td>일반 제출 서류 (권장)</td></tr><tr><td>낮음 (60%)</td><td>150~400KB</td><td>메일 첨부, 용량 제한이 빡빡할 때</td></tr></tbody></table></p><p>긴 변을 2480px(A4 300dpi)로 맞추기 때문에 스마트폰 원본(4000px대)보다 작아지지만 인쇄·제출용으로는 충분해요.</p>
@@ -64,7 +65,6 @@
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>아이폰 HEIC 사진이 안 올라가요.</summary><p>사파리 외 브라우저는 HEIC를 읽지 못해요. 아이폰 설정 > 카메라 > 포맷을 "높은 호환성"으로 바꾸거나, 사진을 JPG로 공유한 뒤 사용하세요.</p></details><details><summary>PNG 투명 배경은 어떻게 되나요?</summary><p>흰색 배경으로 바뀌어요. PDF 페이지가 흰색이라 대부분 자연스러워요.</p></details><details><summary>한 장을 한 페이지에 두 개씩 넣을 수 있나요?</summary><p>현재는 한 장에 한 이미지예요. 여러 장을 한 페이지에 배치하려면 이미지 편집기에서 먼저 합치세요.</p></details></section>
-<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="pdf-merge.html">PDF 합치기</a><a href="pdf-split.html">PDF 분할하기</a><a href="image-compress.html">이미지 용량 줄이기</a><a href="qrcode.html">QR코드 생성기</a></div></section>
   <footer>이미지는 JPG로 변환되어 PDF에 담겨요(긴 변 2480px 이하로 조정, 인쇄용 A4 300dpi 수준). 아이폰 HEIC는 브라우저에 따라 안 될 수 있으니 JPG로 내보낸 뒤 사용하세요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
 </main>
 

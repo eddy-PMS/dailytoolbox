@@ -40,10 +40,10 @@
 <script src="nav.js"></script>
 
 <main>
-  <div class="brand"><b>▒ 아스키 아트 생성기</b></div>
+  <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#테스트·재미">테스트·재미</a><span>›</span>아스키 아트 생성기</nav>
   <h1>아스키 아트 생성기</h1>
-  <p class="tagline">글자도, 사진도 문자로</p>
   <p class="sub">문구를 넣으면 큰 아스키 글자로, 사진을 올리면 명암을 문자로 바꿔드려요. 복사해서 코드 주석, 카톡, 커밋 메시지에 쓰세요.</p>
+  <div class="ad-slot" data-ad="top"></div>
 
   <div class="tabs"><button class="tab active" data-t="text">글자 → 아스키</button><button class="tab" data-t="image">이미지 → 아스키</button></div>
   <div class="card" id="textPane">
@@ -64,6 +64,7 @@
     <div class="btn-row"><button class="btn-ghost" id="copyImg">텍스트 복사</button></div>
   </div>
  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">테스트·재미 도구 더 보기</div><div class="chips"><a href="iq-test.html">IQ 테스트</a><a href="mbti-test.html">간이 MBTI 테스트</a><a href="worldcup.html">이상형 월드컵</a><a href="balance-game.html">밸런스 게임 생성기</a><a href="fortune.html">사주 보기 & 오늘의 운세·궁합</a><a href="stress-test.html">스트레스 지수 테스트</a><a class="more" href="index.html#테스트·재미">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>아스키 아트란</h2><p>아스키 아트는 문자만으로 그림이나 글자 모양을 표현하는 방식이에요. 텍스트 모드는 짧은 단어를 5×5 픽셀 블록 문자로 크게 만들어줘서 터미널 배너, 커밋 메시지, 카톡 프로필 문구, README 파일 제목에 쓰기 좋아요. 이미지 모드는 사진의 밝고 어두운 정도를 문자 농도로 바꿔서, 사진을 문자로만 그린 것처럼 표현해요.</p><p>이미지 변환은 밝은 부분엔 성긴 문자(공백·점), 어두운 부분엔 빽빽한 문자(@, %, #)를 배치하는 원리예요. 가로 문자 수를 늘리면 더 정교해지지만 브라우저가 그리는 데 시간이 더 걸리고, 복사했을 때 줄이 길어져 다른 곳에 붙여넣기 불편할 수 있어요.</p>
 <h2>아스키 아트 활용 예</h2><p><table><thead><tr><th>용도</th><th>추천 설정</th></tr></thead><tbody><tr><td>깃허브 README 제목</td><td>텍스트 모드, 6~8글자 이내</td></tr><tr><td>카톡 대화방 이름/상태메시지</td><td>텍스트 모드, 짧은 단어</td></tr><tr><td>인스타 프로필 배경 느낌</td><td>이미지 모드, 흑백, 너비 60~80</td></tr><tr><td>재미로 출력해보기 (콘솔 등)</td><td>이미지 모드, 흑백, 너비 80~120</td></tr></tbody></table></p>
@@ -71,7 +72,6 @@
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>한글도 큰 글자로 만들 수 있나요?</summary><p>현재 텍스트 모드는 영문·숫자·일부 기호만 지원해요. 한글은 자모 조합이 복잡해 정확한 블록 폰트를 아직 지원하지 않아요.</p></details><details><summary>이미지가 너무 크면 어떻게 되나요?</summary><p>가로 문자 수를 기준으로 자동 축소해 처리하니 원본 크기와 상관없이 동작해요. 다만 아주 큰 사진은 변환에 몇 초 걸릴 수 있어요.</p></details><details><summary>컬러로 복사하면 색이 유지되나요?</summary><p>메모장이나 카톡처럼 일반 텍스트로 복사하면 문자만 복사되고 색은 빠져요. 색을 유지하려면 화면을 캡처하세요.</p></details></section>
-<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="quote-card.html">감성 문구 카드 생성기</a><a href="kakao-analyzer.html">카카오톡 대화 분석기</a><a href="image-compress.html">이미지 용량 줄이기</a><a href="qrcode.html">QR코드 생성기</a></div></section>
   <footer>이미지는 브라우저 안에서만 처리되며 서버로 전송되지 않아요. 컬러 모드는 화면에서만 색이 보이고, 일반 텍스트로 복사하면 흑백 문자만 복사돼요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
 </main>
 

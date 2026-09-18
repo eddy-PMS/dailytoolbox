@@ -59,10 +59,10 @@ svg.pitch{width:100%;height:auto;display:block;user-select:none;-webkit-user-sel
 <script src="nav.js"></script>
 
 <main>
-  <div class="brand"><b>⚽ 축구 라인업 & 전술판</b></div>
+  <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#가족·건강">가족·건강</a><span>›</span>축구 라인업 & 전술판</nav>
   <h1>축구 라인업 & 전술판</h1>
-  <p class="tagline">이번 주 선발, 이걸로 한 방에 공지</p>
   <p class="sub">인원과 포메이션을 고르고 명단에서 선수를 자리에 배치하세요. 드래그로 위치를 다듬고, 전술 메모까지 적어서 이미지나 링크로 팀원에게 보내면 끝이에요.</p>
+  <div class="ad-slot" data-ad="top"></div>
 
   <div id="landing" class="card hidden">
     <div class="landing-head"><div class="note">⚽ 공유된 라인업</div><h2 id="lTeam"></h2><div class="note" id="lMeta"></div></div>
@@ -122,6 +122,7 @@ svg.pitch{width:100%;height:auto;display:block;user-select:none;-webkit-user-sel
   </div>
 
  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">가족·건강 도구 더 보기</div><div class="chips"><a href="pregnancy.html">출산예정일·임신 주수</a><a href="ovulation.html">배란일·가임기</a><a href="baby-age.html">아기 개월수·백일·돌</a><a href="pet-age.html">강아지·고양이 나이</a><a href="onerm.html">1RM 계산기</a><a href="macros.html">단백질·칼로리 계산기</a><a class="more" href="index.html#가족·건강">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>동호회 라인업, 매주 공지하기 귀찮으셨죠</h2><p>조기축구·풋살 동호회는 매주 누가 어디에 서는지 정하는 게 일이에요. 단톡방에 글로 쓰면 못 보고 지나치고, 손으로 그리면 매번 다시 그려야 하죠. 이 도구는 인원(5·6·7·8·9·11인)과 포메이션을 고르고 선수 이름만 넣으면 전술판이 만들어져요. 경기장 위에서 드래그로 위치를 다듬을 수 있고, 명단에 있지만 배치되지 않은 선수는 자동으로 후보가 돼요.</p>
 <p>완성한 전술판은 두 가지로 공유해요. <b>이미지로 저장</b>은 PNG 파일을 내려받아 단톡방에 사진처럼 올리는 방식이고, <b>공유 링크</b>는 짧은 주소로 팀원이 열어서 명단·후보·전술 메모까지 볼 수 있는 방식이에요. 링크를 연 팀원이 "복사해서 편집"으로 자기 버전을 만들 수도 있어요.</p>
@@ -130,7 +131,6 @@ svg.pitch{width:100%;height:auto;display:block;user-select:none;-webkit-user-sel
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>선수 위치를 자유롭게 옮길 수 있나요?</summary><p>네. 포메이션을 고르면 기본 위치가 잡히고, 경기장 위의 선수를 드래그해서 원하는 곳으로 옮길 수 있어요. 한 선수를 다른 선수 위에 놓으면 두 사람의 자리가 바뀌어요.</p></details><details><summary>카톡 단톡방에 어떻게 올리나요?</summary><p>"이미지로 저장"을 누르면 전술판이 PNG 파일로 저장돼 사진처럼 올릴 수 있고, "공유 링크 만들기"를 누르면 짧은 링크가 생겨 팀원이 열어볼 수 있어요.</p></details><details><summary>링크는 얼마나 유지되나요?</summary><p>만든 날로부터 30일 동안 유지되고 그 뒤엔 자동으로 삭제돼요. 이미지로 저장해두면 기간과 상관없이 남아요.</p></details><details><summary>풋살이나 7인제도 되나요?</summary><p>5인(풋살)부터 6·7·8·9·11인까지 인원별 포메이션을 제공해요. 인원을 바꾸면 그에 맞는 포메이션 목록이 나와요.</p></details><details><summary>쿼터별로 다른 라인업을 만들고 싶어요.</summary><p>지금은 라인업 하나에 전술 메모로 교체 계획을 적는 방식이에요. 쿼터마다 다른 라인업이 필요하면 각각 만들어 링크를 따로 보내주세요.</p></details></section>
-<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="team.html">팀 나누기</a><a href="ladder.html">사다리타기</a><a href="random-pick.html">랜덤 뽑기</a><a href="worktime.html">근무시간 계산기</a></div></section>
   <footer>공유 링크의 라인업은 서버(Cloudflare KV)에 저장돼 짧은 링크로 공유되고, 만든 날로부터 30일 뒤 자동 삭제돼요. 이미지 저장은 브라우저 안에서만 처리돼요.<br><span class="version-tag">v1.3 · 2026-09-17 업데이트</span></footer>
 </main>
 

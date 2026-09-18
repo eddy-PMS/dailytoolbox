@@ -218,9 +218,10 @@
 <script src="nav.js"></script>
 
 <main>
-  <div class="brand"><b>筆</b>順 · 한자 획순 애니메이션</div>
+  <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#공부·어학">공부·어학</a><span>›</span>한자 획순</nav>
   <h1>한자 획순 애니메이션</h1>
   <p class="sub">한자를 입력하면 쓰는 순서를 애니메이션으로 보여드려요. 여러 글자를 한 번에 입력해도 됩니다.</p>
+  <div class="ad-slot" data-ad="top"></div>
 
   <div class="input-wrap">
     <input type="text" id="input" placeholder="예) 永愛学" maxlength="10">
@@ -236,6 +237,7 @@
   </div>
 
   <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">공부·어학 도구 더 보기</div><div class="chips"><a href="romanize.html">이름 로마자 변환</a><a href="gpa.html">학점 계산기</a><a href="school-grade.html">내신 등급 계산기</a><a href="pomodoro.html">뽀모도로 타이머</a><a href="ipa.html">IPA 발음 변환</a><a href="sentence.html">문장 구조 분석</a><a class="more" href="index.html#공부·어학">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>한자 획순, 왜 지켜야 하나요</h2><p>획순은 글자를 빠르고 균형 있게 쓰기 위해 정리된 순서예요. 위에서 아래로, 왼쪽에서 오른쪽으로, 가로 먼저 세로 나중, 바깥 먼저 안 나중(門→問), 가운데 먼저 양옆(小), 꿰뚫는 획은 마지막(中)이 기본 원칙이에요. 획순대로 쓰면 글씨가 안정되고, 한자 인식 앱과 필기 입력도 훨씬 잘 인식돼요.</p><p>이 도구는 오픈소스 획순 데이터로 한 획씩 애니메이션을 보여줘요. 중국어 간체·번체 기준 데이터라 일본어 신자체(예: 経·発)는 일부 획순이 다를 수 있어요.</p>
 <h2>기본 획순 규칙</h2><p><table><thead><tr><th>규칙</th><th>예</th></tr></thead><tbody><tr><td>위 → 아래</td><td>三, 言</td></tr><tr><td>왼쪽 → 오른쪽</td><td>川, 林</td></tr><tr><td>가로 → 세로 (교차 시)</td><td>十, 木</td></tr><tr><td>삐침(丿) → 파임(乀)</td><td>人, 文</td></tr><tr><td>바깥 → 안 → 닫기</td><td>國, 回</td></tr><tr><td>가운데 → 양옆</td><td>小, 水</td></tr><tr><td>꿰뚫는 획은 마지막</td><td>中, 車</td></tr></tbody></table></p>
@@ -243,7 +245,6 @@
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>한글이나 가나는 안 되나요?</summary><p>한자(CJK 통합 한자)만 지원해요. 히라가나·가타카나는 가나 퀴즈로 읽기를 익히세요.</p></details><details><summary>일본 한자 획순이 달라요.</summary><p>데이터가 중국어 기준이라 일본 신자체와 획순·모양이 다른 글자가 있어요. 일본어 시험용이면 일본 교과서 획순을 확인하세요.</p></details><details><summary>획순 데이터를 못 찾는 글자가 있어요.</summary><p>약 9,000자를 지원해요. 아주 드문 글자나 이체자는 데이터가 없을 수 있어요.</p></details></section>
-<section class="seo related"><h2>관련 도구</h2><div class="related-grid"><a href="hanja.html">한자 음훈 조회</a><a href="pinyin.html">병음 변환기</a><a href="furigana.html">후리가나 표시기</a><a href="chinese-convert.html">간체↔번체 변환</a></div></section>
 
   <footer>
     획순 데이터는 오픈소스 프로젝트(Make Me a Hanzi) 기준입니다. 중국어 간체/번체와 일본어 신자체 간 획순이 일부 다를 수 있어요.

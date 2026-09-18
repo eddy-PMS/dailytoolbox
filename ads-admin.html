@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>광고 관리 - 데일리 프리 툴박스</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#3a3f4a; --accent-deep:#26292f; }
+main { max-width: 860px; }
+.slotbox { border:1px solid var(--line); border-radius:4px; background:#fffdf8; padding:14px 16px; margin-bottom:12px; }
+.slotbox h3 { margin:0 0 10px; font-size:15px; display:flex; align-items:center; gap:10px; }
+.slotbox h3 code { font-size:12px; color:var(--ink-soft); font-weight:400; }
+.slotbox h3 label { margin-left:auto; font-size:13px; font-weight:400; display:flex; align-items:center; gap:6px; }
+.row3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; } @media(max-width:600px){ .row3{grid-template-columns:1fr} }
+.field label { font-size:12px; color:var(--ink-soft); display:block; margin-bottom:4px; }
+textarea.html { min-height:90px; font-family:ui-monospace, Menlo, Consolas, monospace; font-size:12px; }
+.tokenbar { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+.tokenbar input { flex:1; min-width:200px; }
+.status { min-height:20px; }
+.tip { font-size:12px; color:var(--ink-soft); line-height:1.7; margin-top:6px; }
+.pages { display:flex; flex-wrap:wrap; gap:6px; max-height:180px; overflow:auto; border:1px solid var(--line); border-radius:3px; padding:8px; background:#fff; }
+.pages label { font-size:12px; display:flex; align-items:center; gap:4px; padding:3px 8px; border:1px solid var(--line); border-radius:12px; background:#fffdf8; }
+.pages label.on { background:var(--accent); color:#fff; border-color:var(--accent); }
+.disabled { opacity:.5; pointer-events:none; }
+</style>
+</head>
+<body>
+<nav id="site-nav" data-accent="#3a3f4a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <h1>광고 관리</h1>
+  <p class="sub">전 페이지의 광고 자리 5곳을 여기서 켜고 끄고, 애드센스 단위나 직접 코드(HTML)를 배정해요. 저장하면 5분 안에 전 페이지에 반영돼요. 페이지를 다시 배포할 필요가 없어요.</p>
+
+  <div class="card">
+    <h2>관리자 인증</h2>
+    <div class="tokenbar"><input type="password" id="token" placeholder="ADMIN_TOKEN (Cloudflare 시크릿)"><button class="btn" id="load">설정 불러오기</button></div>
+    <p class="tip">토큰은 이 브라우저에만 저장돼요. Cloudflare 대시보드 → Workers → 이 워커 → Settings → Variables and Secrets 에 <code>ADMIN_TOKEN</code>으로 등록한 값과 같아야 해요.</p>
+    <div class="status" id="authStatus"></div>
+  </div>
+
+  <div id="editor" class="disabled">
+  <div class="card">
+    <h2>전체 설정</h2>
+    <div class="row3">
+      <div class="field"><label>광고 전체</label><select id="enabled"><option value="0">끄기</option><option value="1">켜기</option></select></div>
+      <div class="field"><label>애드센스 게시자 ID</label><input type="text" id="client" placeholder="ca-pub-1234567890123456"></div>
+      <div class="field"><label>애드센스 자동 광고(앵커 등)</label><select id="autoAds"><option value="0">끄기</option><option value="1">켜기 (콘솔 설정 따름)</option></select></div>
+    </div>
+    <div class="field" style="margin-top:10px"><label>광고를 아예 안 넣을 페이지</label><div class="pages" id="excludePages"></div></div>
+    <p class="tip">개인정보처리방침·소개 같은 페이지는 빼두는 게 좋아요. 게임 페이지는 조작 영역 근처에 광고가 없도록 이미 배치돼 있어요.</p>
+  </div>
+
+  <div class="card">
+    <h2>자리별 설정</h2>
+    <div id="slots"></div>
+    <p class="tip">애드센스: 콘솔에서 만든 광고 단위의 <b>슬롯 ID</b>(data-ad-slot 숫자)만 넣으면 돼요. 직접 코드: 다른 네트워크 태그나 자체 배너 HTML을 그대로 붙여넣어요(&lt;script&gt;도 실행돼요). 최소 높이는 광고가 늦게 떠도 화면이 밀리지 않게 미리 비워두는 값이에요.</p>
+  </div>
+
+  <div class="card">
+    <div class="btn-row"><button class="btn" id="save">저장 (전 페이지 반영)</button><a class="btn-ghost" href="salary.html?adpreview=1" target="_blank" style="text-decoration:none;display:inline-block">자리 미리보기 (연봉 페이지)</a><a class="btn-ghost" href="index.html?adpreview=1" target="_blank" style="text-decoration:none;display:inline-block">자리 미리보기 (홈)</a></div>
+    <div class="status" id="saveStatus"></div>
+    <p class="tip" id="meta"></p>
+  </div>
+  </div>
+</main>
+
+<script>
+const $=id=>document.getElementById(id);
+const SLOTS=[['top','상단 (설명 바로 아래 · 홈 히어로 아래)',{m:100,d:90},'horizontal'],['below-result','결과 아래 (게임은 랭킹 아래)',{m:250,d:250},'auto'],['in-content','본문 중간 (설명 문단 사이)',{m:250,d:250},'auto'],['side','데스크톱 사이드 300×600 (1100px 이상)',{m:0,d:600},'vertical'],['infeed','홈 인피드 (그룹 사이 2곳)',{m:250,d:250},'auto']];
+const PAGES=(window.TOOLBOX?window.TOOLBOX.groups.flatMap(g=>g.items.map(i=>i[0])):[]).concat(['index.html','about.html','privacy.html','404.html']);
+let cfg=null;
+function pagePicker(el, selected){ el.innerHTML=PAGES.map(p=>`<label class="${selected.includes(p)?'on':''}"><input type="checkbox" value="${p}" ${selected.includes(p)?'checked':''} hidden>${p.replace('.html','')}</label>`).join(''); el.querySelectorAll('label').forEach(l=>l.addEventListener('click',e=>{ e.preventDefault(); const c=l.querySelector('input'); c.checked=!c.checked; l.classList.toggle('on',c.checked); })); }
+function picked(el){ return [...el.querySelectorAll('input:checked')].map(i=>i.value); }
+function renderSlots(){
+  $('slots').innerHTML=SLOTS.map(([k,label,mh,fmt])=>{ const s=(cfg.slots&&cfg.slots[k])||{}; return `<div class="slotbox" data-k="${k}">
+    <h3>${label} <code>data-ad="${k}"</code><label><input type="checkbox" class="s-enabled" ${s.enabled?'checked':''}> 사용</label></h3>
+    <div class="row3">
+      <div class="field"><label>종류</label><select class="s-type"><option value="adsense" ${s.type!=='html'?'selected':''}>애드센스 단위</option><option value="html" ${s.type==='html'?'selected':''}>직접 코드 (HTML)</option></select></div>
+      <div class="field"><label>애드센스 슬롯 ID</label><input type="text" class="s-slot" value="${s.slot||''}" placeholder="1234567890"></div>
+      <div class="field"><label>형식</label><select class="s-format">${['auto','horizontal','rectangle','vertical'].map(f=>`<option value="${f}" ${(s.format||fmt)===f?'selected':''}>${f}</option>`).join('')}</select></div>
+      <div class="field"><label>최소 높이 · 모바일(px)</label><input type="number" class="s-mh-m" value="${s.minH?s.minH.m:mh.m}"></div>
+      <div class="field"><label>최소 높이 · 데스크톱(px)</label><input type="number" class="s-mh-d" value="${s.minH?s.minH.d:mh.d}"></div>
+    </div>
+    <div class="field" style="margin-top:8px"><label>직접 코드 (종류가 HTML일 때)</label><textarea class="s-html html" placeholder="<a href='...'><img src='...'></a> 또는 광고 네트워크 태그">${(s.html||'').replace(/</g,'&lt;')}</textarea></div>
+    <div class="field" style="margin-top:8px"><label>이 자리를 뺄 페이지</label><div class="pages s-exclude"></div></div>
+  </div>`; }).join('');
+  $('slots').querySelectorAll('.slotbox').forEach(box=>{ const k=box.dataset.k; pagePicker(box.querySelector('.s-exclude'), (cfg.slots&&cfg.slots[k]&&cfg.slots[k].exclude)||[]); });
+}
+function collect(){
+  const out={enabled:$('enabled').value==='1', client:$('client').value.trim(), autoAds:$('autoAds').value==='1', excludePages:picked($('excludePages')), slots:{}};
+  $('slots').querySelectorAll('.slotbox').forEach(box=>{ const k=box.dataset.k; out.slots[k]={enabled:box.querySelector('.s-enabled').checked, type:box.querySelector('.s-type').value, slot:box.querySelector('.s-slot').value.trim(), format:box.querySelector('.s-format').value, minH:{m:+box.querySelector('.s-mh-m').value||0, d:+box.querySelector('.s-mh-d').value||0}, html:box.querySelector('.s-html').value, exclude:picked(box.querySelector('.s-exclude'))}; });
+  return out;
+}
+function fill(c){ cfg=c||{enabled:false,client:'',autoAds:false,excludePages:['privacy.html','about.html','404.html'],slots:{}}; $('enabled').value=cfg.enabled?'1':'0'; $('client').value=cfg.client||''; $('autoAds').value=cfg.autoAds?'1':'0'; pagePicker($('excludePages'),cfg.excludePages||[]); renderSlots(); $('editor').classList.remove('disabled'); $('meta').textContent= cfg.updatedAt? '마지막 저장: '+new Date(cfg.updatedAt).toLocaleString('ko-KR') : '저장된 설정이 아직 없어요 (기본값 표시).'; }
+$('token').value=localStorage.getItem('ads_admin_token')||'';
+$('load').addEventListener('click',async()=>{ const t=$('token').value.trim(); if(!t){ $('authStatus').innerHTML='<span class="bad">토큰을 입력하세요.</span>'; return; } localStorage.setItem('ads_admin_token',t); $('authStatus').textContent='확인 중…';
+  try{ const r=await fetch('/api/ads?admin=1',{headers:{'x-admin-token':t}}); const d=await r.json(); if(!d.ok) throw new Error(d.error||'fail'); $('authStatus').innerHTML='<span class="ok">인증됐어요.</span>'; fill(d.config); }
+  catch(e){ $('authStatus').innerHTML='<span class="bad">'+(e.message==='unauthorized'?'토큰이 틀렸어요.':e.message==='no_admin_token'?'워커에 ADMIN_TOKEN 시크릿이 아직 없어요.':'불러오기에 실패했어요.')+'</span>'; } });
+$('save').addEventListener('click',async()=>{ const t=$('token').value.trim(); const body=collect(); $('saveStatus').textContent='저장 중…';
+  try{ const r=await fetch('/api/ads',{method:'POST',headers:{'content-type':'application/json','x-admin-token':t},body:JSON.stringify(body)}); const d=await r.json(); if(!d.ok) throw new Error(d.error||'fail'); cfg=Object.assign(body,{updatedAt:d.updatedAt}); $('saveStatus').innerHTML='<span class="ok">저장했어요. 방문자에게는 최대 5분 뒤 반영돼요.</span>'; $('meta').textContent='마지막 저장: '+new Date(d.updatedAt).toLocaleString('ko-KR'); }
+  catch(e){ $('saveStatus').innerHTML='<span class="bad">저장 실패: '+e.message+'</span>'; } });
+</script>
+</body>
+</html>

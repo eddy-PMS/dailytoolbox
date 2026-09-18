@@ -215,6 +215,29 @@ export default {
       return json({ ok: true, data: rec.data, expiresAt: rec.expiresAt }, 200, { 'cache-control': 'public, max-age=3600' });
     }
 
+    // ---- 광고 설정: 조회(공개, 5분 캐시) / 저장(관리자 토큰) ----
+    if (url.pathname === '/api/ads' && request.method === 'GET') {
+      if (!env.WORLDCUP_KV) return json({ ok: true, config: null });
+      const isAdmin = url.searchParams.get('admin') === '1' && env.ADMIN_TOKEN && request.headers.get('x-admin-token') === env.ADMIN_TOKEN;
+      const cache = caches.default; const ck = new Request(`https://${host}/api/ads`);
+      if (!isAdmin) { const hit = await cache.match(ck); if (hit) return hit; }
+      const cfg = await env.WORLDCUP_KV.get('ads:config', 'json');
+      const res = json({ ok: true, config: cfg || null }, 200, { 'cache-control': isAdmin ? 'no-store' : 'public, max-age=300' });
+      if (!isAdmin) ctx.waitUntil(cache.put(ck, res.clone()));
+      return res;
+    }
+    if (url.pathname === '/api/ads' && request.method === 'POST') {
+      if (!env.ADMIN_TOKEN) return json({ ok: false, error: 'no_admin_token' }, 500);
+      if (request.headers.get('x-admin-token') !== env.ADMIN_TOKEN) return json({ ok: false, error: 'unauthorized' }, 401);
+      if (!env.WORLDCUP_KV) return json({ ok: false, error: 'not_configured' }, 500);
+      let body; try { body = await request.json(); } catch { return json({ ok: false, error: 'bad_request' }, 400); }
+      const text = JSON.stringify(body); if (text.length > 60000) return json({ ok: false, error: 'too_large' }, 413);
+      body.updatedAt = new Date().toISOString();
+      await env.WORLDCUP_KV.put('ads:config', JSON.stringify(body));
+      ctx.waitUntil(caches.default.delete(new Request(`https://${host}/api/ads`)));
+      return json({ ok: true, updatedAt: body.updatedAt });
+    }
+
     // ---- 게임 랭킹: 조회 ----
     if (url.pathname === '/api/score' && request.method === 'GET') {
       if (!env.WORLDCUP_KV) return json({ ok: false, error: 'not_configured' }, 500);

@@ -158,4 +158,7 @@
     }
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', addExtras); else addExtras();
+
+  // 광고 로더 (설정은 ads-admin.html 에서, 전 페이지 자동 적용)
+  if (path !== 'ads-admin.html') { var adsS = document.createElement('script'); adsS.src = 'ads.js'; adsS.defer = true; document.head.appendChild(adsS); }
 })();

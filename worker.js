@@ -238,8 +238,13 @@ export default {
       let body; try { body = await request.json(); } catch { return json({ ok: false, error: 'bad_request' }, 400); }
       const text = JSON.stringify(body); if (text.length > 60000) return json({ ok: false, error: 'too_large' }, 413);
       body.updatedAt = new Date().toISOString();
-      await env.WORLDCUP_KV.put('ads:config', JSON.stringify(body));
-      ctx.waitUntil(caches.default.delete(new Request(`https://${host}/api/ads`)));
+      try {
+        await env.WORLDCUP_KV.put('ads:config', JSON.stringify(body));
+      } catch (e) {
+        // KV 하루 쓰기 한도(무료 1,000회) 초과 등
+        return json({ ok: false, error: 'kv_write_failed', detail: String(e && e.message || e).slice(0, 200) }, 500);
+      }
+      try { await caches.default.delete(new Request(`https://${host}/api/ads`)); } catch (e) { }
       return json({ ok: true, updatedAt: body.updatedAt });
     }
 

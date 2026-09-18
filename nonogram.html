@@ -7,13 +7,13 @@
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
-<title>네모로직 (노노그램) - 오늘의 문제 5×5·10×10·15×15, 시간 랭킹</title>
-<meta name="description" content="숫자 힌트로 격자를 칠해 그림을 완성하는 네모로직(노노그램) 퍼즐. 매일 새 문제, 추측 없이 논리로 풀리는 문제만 출제. 완성 시간으로 크기별 랭킹 도전. 무료.">
+<title>네모로직 (노노그램) - 5×5부터 30×30까지 100레벨, 랭킹 도전</title>
+<meta name="description" content="숫자 힌트로 격자를 칠해 그림을 완성하는 네모로직(노노그램) 퍼즐. 5×5부터 시작해 100레벨 30×30까지, 추측 없이 논리로 풀리는 문제만 출제. 도달 레벨로 랭킹 도전. 무료.">
 <meta name="keywords" content="네모로직, 노노그램, 네모네모 로직, 피크로스, 로직 퍼즐, 오늘의 퍼즐, 무료 퍼즐 게임, 논리 퍼즐">
 <link rel="canonical" href="https://dailyfreetoolbox.com/nonogram.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="네모로직 - 오늘의 문제, 몇 분에 풀까?">
-<meta property="og:description" content="숫자 힌트로 그림을 찾는 노노그램 퍼즐. 매일 새 문제, 시간 랭킹.">
+<meta property="og:title" content="네모로직 - 5×5부터 30×30까지, 몇 레벨까지?">
+<meta property="og:description" content="숫자 힌트로 그림을 찾는 노노그램 퍼즐. 100레벨 도전, 도달 레벨 랭킹.">
 <meta property="og:url" content="https://dailyfreetoolbox.com/nonogram.html">
 <meta property="og:image" content="https://dailyfreetoolbox.com/og-image.jpg">
 <meta property="og:image:width" content="1200">
@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="ko_KR">
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "WebApplication", "name": "네모로직 (노노그램)", "url": "https://dailyfreetoolbox.com/nonogram.html", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "숫자 힌트로 격자를 칠해 그림을 완성하는 논리 퍼즐. 매일 새 문제가 나오고 완성 시간으로 랭킹에 등록할 수 있어요."}
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "네모로직 (노노그램)", "url": "https://dailyfreetoolbox.com/nonogram.html", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "숫자 힌트로 격자를 칠해 그림을 완성하는 논리 퍼즐. 5×5부터 30×30까지 100레벨, 도달 레벨로 랭킹에 등록할 수 있어요."}
 </script>
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
@@ -29,7 +29,8 @@
 :root { --accent:#3a3f4a; --accent-deep:#3a3f4a; }
 .top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
 .big{font-size:26px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1}.lbl{font-size:12px;color:var(--ink-soft)}
-.wrap{overflow-x:auto}
+.wrap{overflow:auto;max-height:78vh}
+table.ng.tapmode{touch-action:pan-x pan-y}
 table.ng{border-collapse:collapse;margin:0 auto;touch-action:none;user-select:none;-webkit-user-select:none}
 table.ng td{border:1px solid #cfc9bb;padding:0;text-align:center;vertical-align:bottom}
 table.ng td.c{width:var(--cs);height:var(--cs);background:#fff;cursor:pointer;-webkit-tap-highlight-color:transparent;vertical-align:middle;font-size:calc(var(--cs) * .6);color:#b8b0a0;line-height:1}
@@ -44,7 +45,7 @@ table.ng td.h.done{color:#b8b0a0}
 .overlay .huge{font-size:40px;font-weight:700;color:var(--accent);line-height:1}
 .stats{display:flex;justify-content:center;gap:16px;font-size:13px;color:var(--ink-soft);margin-top:10px;flex-wrap:wrap}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "숫자가 무슨 뜻인가요?", "acceptedAnswer": {"@type": "Answer", "text": "그 줄에서 연속으로 칠해진 칸의 길이예요. '2 3'이면 2칸 연속, 최소 한 칸 띄우고, 3칸 연속이 칠해져 있어요. 순서도 그대로예요."}}, {"@type": "Question", "name": "추측해야 풀리는 문제도 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "없어요. 생성할 때 논리만으로 끝까지 풀리는지 검사해서 통과한 문제만 내요."}}, {"@type": "Question", "name": "오늘의 문제는 몇 시에 바뀌나요?", "acceptedAnswer": {"@type": "Answer", "text": "기기 시간 기준 자정에 바뀌어요. 크기별로 각각 하나씩이에요."}}, {"@type": "Question", "name": "랭킹은 어떻게 등록하나요?", "acceptedAnswer": {"@type": "Answer", "text": "오늘의 문제를 완성하면 닉네임을 넣고 등록 버튼을 누르면 돼요. 무작위 연습 문제는 랭킹에 오르지 않아요."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "숫자가 무슨 뜻인가요?", "acceptedAnswer": {"@type": "Answer", "text": "그 줄에서 연속으로 칠해진 칸의 길이예요. 2 3이면 2칸 연속, 최소 한 칸 띄우고, 3칸 연속이 칠해져 있어요."}}, {"@type": "Question", "name": "추측해야 풀리는 문제도 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "없어요. 생성할 때 논리만으로 끝까지 풀리는지 검사해서 통과한 문제만 내요."}}, {"@type": "Question", "name": "큰 판은 폰에서 어떻게 푸나요?", "acceptedAnswer": {"@type": "Answer", "text": "13×13부터는 한 칸씩 탭으로 칠하고 화면은 스크롤해요. +/− 버튼으로 칸 크기를 바꿀 수 있어요."}}, {"@type": "Question", "name": "랭킹은 어떻게 등록하나요?", "acceptedAnswer": {"@type": "Answer", "text": "레벨을 깬 뒤 여기까지 하고 랭킹 등록을 누르면 이번 판에서 직접 깬 최고 레벨로 올라가요."}}]}</script>
 </head>
 <body>
 
@@ -54,18 +55,18 @@ table.ng td.h.done{color:#b8b0a0}
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#퍼즐·게임">퍼즐·게임</a><span>›</span>네모로직 (노노그램)</nav>
   <h1>네모로직 (노노그램)</h1>
-  <p class="sub">가로·세로 숫자는 그 줄에서 연속으로 칠해진 칸의 길이예요. 힌트를 맞춰 칸을 채우세요. 매일 새 문제가 나오고, 완성 시간으로 크기별 랭킹에 도전해요.</p>
+  <p class="sub">가로·세로 숫자는 그 줄에서 연속으로 칠해진 칸의 길이예요. 5×5부터 시작해 레벨이 오를수록 판이 커지고(100레벨 = 30×30), 도달 레벨로 랭킹에 도전해요.</p>
   <div class="ad-slot" data-ad="top"></div>
 
   <div class="card">
-    <div class="tabs"><button class="tab active" data-n="5">5×5</button><button class="tab" data-n="10">10×10</button><button class="tab" data-n="15">15×15</button></div>
-    <div class="top"><div><div class="lbl" id="dayLbl">오늘의 문제</div><div class="big" id="pno">#1</div></div><div style="text-align:right"><div class="lbl">시간</div><div class="big" id="time">0:00</div></div></div>
+    <div class="top"><div><div class="lbl">레벨</div><div class="big" id="pno">1</div></div><div style="text-align:center"><div class="lbl">크기</div><div class="big" id="sizeLbl">5×5</div></div><div style="text-align:right"><div class="lbl">시간</div><div class="big" id="time">0:00</div></div></div>
     <div class="board">
       <div class="wrap" id="wrap"></div>
-      <div class="modes"><button class="btn-ghost on" id="mFill">■ 칠하기</button><button class="btn-ghost" id="mX">× 표시</button><button class="btn-ghost" id="clear">지우기</button></div>
-      <div class="overlay" id="overlay"><div style="font-size:15px;color:var(--ink-soft)">숫자는 그 줄에서 연속으로 칠해진 칸의 길이예요<br>매일 새 문제, 완성 시간으로 랭킹!</div><button class="btn" id="start" style="min-width:160px">오늘의 문제 시작</button><button class="btn-ghost" id="randomBtn">무작위 문제 (연습)</button><div class="note" id="bestNote" style="margin:0"></div></div>
+      <div class="modes"><button class="btn-ghost on" id="mFill">■ 칠하기</button><button class="btn-ghost" id="mX">× 표시</button><button class="btn-ghost" id="zoomOut">−</button><button class="btn-ghost" id="zoomIn">+</button><button class="btn-ghost" id="clear">지우기</button><button class="btn-ghost" id="reroll">다른 문제</button></div>
+      <div class="overlay" id="overlay"><div style="font-size:15px;color:var(--ink-soft)">숫자는 그 줄에서 연속으로 칠해진 칸의 길이예요<br>5×5부터 시작해 레벨이 오를수록 커져요 (100레벨 = 30×30)</div><button class="btn" id="start" style="min-width:160px">시작</button><div class="note" id="bestNote" style="margin:0"></div></div>
     </div>
-    <div class="stats"><span id="bestLocal"></span><span>PC: 좌클릭 칠하기 · 우클릭 ×</span></div>
+    <div class="stats"><span id="bestLocal"></span><span>PC: 좌클릭 칠하기 · 우클릭 × · 큰 판은 탭으로 한 칸씩</span></div>
+    <div class="btn-row" style="justify-content:center;margin-top:6px"><button class="btn-ghost" id="quit" style="font-size:13px">여기까지 하고 랭킹 등록</button></div>
   </div>
 
   <div id="lb"></div>
@@ -73,103 +74,129 @@ table.ng td.h.done{color:#b8b0a0}
  <div class="ad-slot" data-ad="below-result"></div>
 <div class="sibs"><div class="lb">퍼즐·게임 도구 더 보기</div><div class="chips"><a href="water-sort.html">물 붓기 퍼즐</a><a href="block-fill.html">블록 채우기</a><a href="order.html">숫자 순서 누르기</a><a href="color-find.html">틀린 색 찾기</a><a href="math-speed.html">암산 스피드</a><a href="vocab-quiz.html">영단어 스피드 퀴즈</a><a class="more" href="index.html#퍼즐·게임">전체 보기 →</a></div></div>
 <section class="seo">
-<h2>네모로직(노노그램), 숫자로 그림을 찾는 퍼즐</h2><p>각 줄의 숫자는 그 줄에서 <b>연속으로 칠해진 칸의 길이</b>예요. "3 1"이면 3칸 연속, 한 칸 이상 띄우고, 1칸이 칠해져 있다는 뜻. 가로·세로 힌트를 맞춰가며 칸을 채우면 그림이 완성돼요. 확실히 비어 있는 칸은 ×로 표시해 두면 헷갈리지 않아요. 5×5는 1~2분, 10×10은 5~10분, 15×15는 20분 안팎이 보통이에요.</p>
-<p><b>오늘의 문제</b>는 날짜마다 새로 만들어지고 누구에게나 같은 문제라서 완성 시간으로 공정하게 겨룰 수 있어요(크기별 랭킹). 문제는 추측 없이 논리만으로 풀리도록 검증된 것만 나와요. 연습하고 싶으면 무작위 문제를 무한으로 풀 수 있어요(랭킹 등록은 안 돼요).</p>
+<h2>네모로직(노노그램), 숫자로 그림을 찾는 퍼즐</h2><p>각 줄의 숫자는 그 줄에서 <b>연속으로 칠해진 칸의 길이</b>예요. "3 1"이면 3칸 연속, 한 칸 이상 띄우고, 1칸이 칠해져 있다는 뜻. 가로·세로 힌트를 맞춰가며 칸을 채우면 그림이 완성돼요. 확실히 비어 있는 칸은 ×로 표시해 두면 헷갈리지 않아요.</p>
+<p><b>레벨 1은 5×5</b>, 4레벨마다 한 칸씩 커져서 <b>100레벨은 30×30</b>이에요. 100레벨 뒤에도 30×30 새 문제가 계속 나와요. 문제는 레벨을 시작할 때마다 새로 만들어지니 다시 도전해도 매번 다르고, 전부 추측 없이 논리만으로 풀리는지 검증한 문제만 나와요. 큰 판은 스크롤로 보고 +/− 버튼으로 칸 크기를 조절할 수 있어요. 진행 중인 판(칠한 칸·경과 시간)과 레벨은 이 기기에 자동 저장되니 창을 닫아도 이어서 풀 수 있고, "여기까지 하고 랭킹 등록"을 누르면 이번 판에서 직접 깬 최고 레벨로 랭킹에 올라가요.</p>
 <h2>푸는 요령</h2><ol><li>합이 큰 줄부터. 10칸에 "8"이면 가운데 6칸은 무조건 칠해져요(겹침 기법).</li><li>"0"이나 힌트 합이 줄 길이와 같은 줄은 바로 끝낼 수 있어요.</li><li>완성된 줄의 나머지 칸은 ×로 막아두세요. 다른 줄 추론이 쉬워져요.</li><li>막히면 가로만 보지 말고 세로 힌트로 눈을 옮기세요.</li></ol>
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
-<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>숫자가 무슨 뜻인가요?</summary><p>그 줄에서 연속으로 칠해진 칸의 길이예요. '2 3'이면 2칸 연속, 최소 한 칸 띄우고, 3칸 연속이 칠해져 있어요. 순서도 그대로예요.</p></details><details><summary>추측해야 풀리는 문제도 있나요?</summary><p>없어요. 생성할 때 논리만으로 끝까지 풀리는지 검사해서 통과한 문제만 내요.</p></details><details><summary>오늘의 문제는 몇 시에 바뀌나요?</summary><p>기기 시간 기준 자정에 바뀌어요. 크기별로 각각 하나씩이에요.</p></details><details><summary>랭킹은 어떻게 등록하나요?</summary><p>오늘의 문제를 완성하면 닉네임을 넣고 등록 버튼을 누르면 돼요. 무작위 연습 문제는 랭킹에 오르지 않아요.</p></details></section>
-  <footer>기록은 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 기록이 서버에 저장돼요. 이 테스트는 특정 능력을 측정·연습하는 놀이이며 의학적 검사가 아니에요.<br><span class="version-tag">v1.0 · 2026-09-17 업데이트</span></footer>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>숫자가 무슨 뜻인가요?</summary><p>그 줄에서 연속으로 칠해진 칸의 길이예요. '2 3'이면 2칸 연속, 최소 한 칸 띄우고, 3칸 연속이 칠해져 있어요. 순서도 그대로예요.</p></details><details><summary>추측해야 풀리는 문제도 있나요?</summary><p>없어요. 생성할 때 논리만으로 끝까지 풀리는지 검사해서 통과한 문제만 내요. 30×30도 마찬가지예요.</p></details><details><summary>큰 판은 폰에서 어떻게 푸나요?</summary><p>13×13부터는 드래그 대신 한 칸씩 탭으로 칠하고, 화면은 손가락으로 스크롤해요. +/− 버튼으로 칸 크기를 바꿀 수 있어요.</p></details><details><summary>랭킹은 어떻게 등록하나요?</summary><p>레벨을 깬 뒤 "여기까지 하고 랭킹 등록"을 누르면 이번 판에서 직접 깬 최고 레벨로 올라가요. 진행은 저장되니 다음에 이어서 더 높은 레벨로 다시 등록할 수 있어요.</p></details></section>
+  <footer>기록은 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 기록이 서버에 저장돼요. 이 테스트는 특정 능력을 측정·연습하는 놀이이며 의학적 검사가 아니에요.<br><span class="version-tag">v2.2 · 2026-09-18 업데이트</span></footer>
 </main>
 
 <script src="leaderboard.js"></script>
 <script>
 const $=id=>document.getElementById(id);
-let N=5, grid=[], sol=[], rows=[], cols=[], mode='fill', running=false, t0=0, raf=0, startedAt=0, daily=true, pno='';
-// ---- 시드 난수 ----
+let level=1, N=5, grid=[], rows=[], cols=[], mode='fill', running=false, t0=0, raf=0, startedAt=0, cleared=0, best=+localStorage.getItem('nono_best')||0, zoom=0, totalMs=0;
 function rng(seed){ let x=seed>>>0||1; return ()=>{ x^=x<<13; x>>>=0; x^=x>>>17; x^=x<<5; x>>>=0; return x/4294967296; }; }
-function dayKey(){ const d=new Date(); return d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate(); }
+function sizeFor(l){ return Math.min(30, 5+Math.floor((l-1)/4)); }
+function densityFor(l){ return Math.max(0.45, 0.62-l*0.0017); }
 function clues(line){ const out=[]; let c=0; for(const v of line){ if(v) c++; else if(c){ out.push(c); c=0; } } if(c) out.push(c); return out.length?out:[0]; }
-// ---- 한 줄 풀이: 힌트와 현재 상태(1=칠,0=빈,-1=미정)에 맞는 모든 배치의 교집합 ----
+// ---- 한 줄 풀이 (DP): 힌트 cl 과 상태 st(1=칠,0=빈,-1=미정)로 각 칸이 칠해질 수/빌 수 있는지 판정 ----
 function lineSolve(cl, st){
-  const n=st.length; if(cl[0]===0){ return st.map(v=>v===1?null:0).every(v=>v!==null)? st.map(()=>0) : null; }
-  const cnt=new Array(n).fill(0); let total=0;
-  const place=(i,pos,cur)=>{
-    if(i===cl.length){ for(let k=pos;k<n;k++){ if(st[k]===1) return; cur[k]=0; } total++; for(let k=0;k<n;k++) if(cur[k]) cnt[k]++; return; }
-    const rest=cl.slice(i+1).reduce((a,b)=>a+b+1,0);
-    for(let s=pos; s+cl[i]+rest<=n; s++){
-      let ok=true; for(let k=pos;k<s;k++) if(st[k]===1){ ok=false; break; } if(!ok) break;
-      for(let k=s;k<s+cl[i];k++) if(st[k]===0){ ok=false; break; } if(!ok) continue;
-      if(s+cl[i]<n && st[s+cl[i]]===1) continue;
-      const nxt=cur.slice(); for(let k=pos;k<s;k++) nxt[k]=0; for(let k=s;k<s+cl[i];k++) nxt[k]=1; if(s+cl[i]<n) nxt[s+cl[i]]=0;
-      place(i+1, s+cl[i]+1, nxt); if(total>20000) return;
-    }
-  };
-  place(0,0,new Array(n).fill(-1));
-  if(!total) return null;
-  return cnt.map((c,k)=> c===total?1 : c===0?0 : st[k]);
+  const n=st.length; if(cl.length===1&&cl[0]===0){ if(st.some(v=>v===1)) return null; return new Array(n).fill(0); }
+  const k=cl.length;
+  // F[i][j]: 앞 i칸을 힌트 j개로 채울 수 있는가 (i칸 째가 빈칸으로 끝나거나 블록 끝)
+  const F=Array.from({length:n+1},()=>new Uint8Array(k+1)); F[0][0]=1;
+  for(let i=1;i<=n;i++){ for(let j=0;j<=k;j++){
+    // i번째 칸(인덱스 i-1)이 빈칸
+    if(st[i-1]!==1 && F[i-1][j]) F[i][j]=1;
+    // 블록 j 가 i-1 에서 끝남
+    if(j>0){ const L=cl[j-1]; if(i>=L){ let ok=true; for(let t=i-L;t<i;t++) if(st[t]===0){ ok=false; break; } if(ok){ if(i-L===0){ if(j===1) F[i][j]=1; } else { if(st[i-L-1]!==1 && F[i-L-1][j-1]) F[i][j]=1; } } } }
+  } }
+  if(!F[n][k]) return null;
+  // B[i][j]: i칸부터 끝까지를 힌트 j..k-1 로 채울 수 있는가
+  const B=Array.from({length:n+2},()=>new Uint8Array(k+1)); B[n][k]=1; B[n+1][k]=1;
+  for(let i=n-1;i>=0;i--){ for(let j=0;j<=k;j++){
+    if(st[i]!==1 && B[i+1][j]) B[i][j]=1;
+    if(j<k){ const L=cl[j]; if(i+L<=n){ let ok=true; for(let t=i;t<i+L;t++) if(st[t]===0){ ok=false; break; } if(ok){ if(i+L===n){ if(j===k-1) B[i][j]=1; } else { if(st[i+L]!==1 && B[i+L+1][j+1]) B[i][j]=1; } } } }
+  } }
+  const canE=new Uint8Array(n), canF=new Uint8Array(n);
+  for(let i=0;i<n;i++) for(let j=0;j<=k;j++){ if(st[i]!==1 && F[i][j] && B[i+1][j]) { canE[i]=1; break; } }
+  for(let j=0;j<k;j++){ const L=cl[j]; for(let s=0;s+L<=n;s++){ let ok=true; for(let t=s;t<s+L;t++) if(st[t]===0){ ok=false; break; } if(!ok) continue;
+    const leftOk= s===0? (j===0) : (st[s-1]!==1 && F[s-1][j]); if(!leftOk) continue;
+    const rightOk= s+L===n? (j===k-1) : (st[s+L]!==1 && B[s+L+1][j+1]); if(!rightOk) continue;
+    for(let t=s;t<s+L;t++) canF[t]=1; } }
+  const out=new Array(n); for(let i=0;i<n;i++){ if(st[i]!==-1) out[i]=st[i]; else if(canF[i]&&!canE[i]) out[i]=1; else if(canE[i]&&!canF[i]) out[i]=0; else if(!canE[i]&&!canF[i]) return null; else out[i]=-1; }
+  return out;
 }
-function solvable(rc,cc,n){
+function propagate(rc,cc,n){
   let st=Array.from({length:n},()=>new Array(n).fill(-1)); let changed=true, guard=0;
-  while(changed&&guard++<100){ changed=false;
-    for(let r=0;r<n;r++){ const res=lineSolve(rc[r],st[r]); if(!res) return false; for(let c=0;c<n;c++) if(res[c]!==st[r][c]){ st[r][c]=res[c]; changed=true; } }
-    for(let c=0;c<n;c++){ const col=st.map(row=>row[c]); const res=lineSolve(cc[c],col); if(!res) return false; for(let r=0;r<n;r++) if(res[r]!==st[r][c]){ st[r][c]=res[r]; changed=true; } }
+  while(changed&&guard++<400){ changed=false;
+    for(let r=0;r<n;r++){ const res=lineSolve(rc[r],st[r]); if(!res) return null; for(let c=0;c<n;c++) if(res[c]!==st[r][c]){ st[r][c]=res[c]; changed=true; } }
+    for(let c=0;c<n;c++){ const col=st.map(row=>row[c]); const res=lineSolve(cc[c],col); if(!res) return null; for(let r=0;r<n;r++) if(res[r]!==st[r][c]){ st[r][c]=res[r]; changed=true; } }
   }
-  return st.every(row=>row.every(v=>v!==-1));
+  return st;
 }
-function gen(n, seed){
-  let r=rng(seed); let tries=0;
-  while(tries++<200){
-    const dens=n===5?0.6:0.55;
-    const g=Array.from({length:n},()=>Array.from({length:n},()=>r()<dens?1:0));
-    const rc=g.map(clues), cc=Array.from({length:n},(_,c)=>clues(g.map(row=>row[c])));
-    if(solvable(rc,cc,n)) return {g,rc,cc,tries};
+// 큰 판은 순수 난수 그림이 논리로 안 풀리는 경우가 많아, 이웃 다수결로 한 번 뭉친 뒤(smooth)
+// 풀이가 막히는 미결정 칸을 이웃 다수결로 조금씩 고쳐(repair) 논리로 끝까지 풀리는 그림을 만든다
+function smooth(g,n,iters){ for(let it=0;it<iters;it++){ const ng=g.map(r=>r.slice()); for(let r=0;r<n;r++) for(let c=0;c<n;c++){ let s=0,t=0; for(let dr=-1;dr<=1;dr++) for(let dc=-1;dc<=1;dc++){ const rr=r+dr,cc=c+dc; if(rr<0||cc<0||rr>=n||cc>=n) continue; t++; s+=g[rr][cc]; } ng[r][c]= s*2>t?1: s*2<t?0: g[r][c]; } g=ng; } return g; }
+function gen(n, seed, dens){
+  for(let attempt=0; attempt<6; attempt++){
+    const r=rng(seed+attempt*104729); let g=Array.from({length:n},()=>Array.from({length:n},()=>r()<dens?1:0));
+    g=smooth(g,n, n>=10?1:0); let tries=0;
+    while(tries++<60){
+      const rc=g.map(clues), cc=Array.from({length:n},(_,c)=>clues(g.map(row=>row[c])));
+      const st=propagate(rc,cc,n);
+      if(st&&st.every(row=>row.every(v=>v!==-1))&&g.some(row=>row.some(v=>v))) return {g,rc,cc,tries};
+      let und=[]; if(st){ for(let a=0;a<n;a++) for(let b=0;b<n;b++) if(st[a][b]===-1) und.push([a,b]); } if(!und.length) und=[[Math.floor(r()*n),Math.floor(r()*n)]];
+      const k=Math.max(1,Math.floor(und.length*0.15));
+      for(let i=0;i<k;i++){ const [a,b]=und[Math.floor(r()*und.length)]; let s2=0,t=0; for(let dr=-1;dr<=1;dr++) for(let dc=-1;dc<=1;dc++){ const rr=a+dr,cc2=b+dc; if(rr<0||cc2<0||rr>=n||cc2>=n||(dr===0&&dc===0)) continue; t++; s2+=g[rr][cc2]; } g[a][b]= s2*2>=t?1:0; }
+    }
   }
   return null;
 }
 // ---- 렌더 ----
+function cellSize(){ const base= N<=5?44: N<=8?36: N<=12?28: N<=18?22: 18; const narrow=window.innerWidth<480; return Math.max(12, Math.min(48, (narrow? Math.min(base,Math.floor(300/N)+8) : base) + zoom*4)); }
 function build(){
-  const narrow=window.innerWidth<480; const cs= N===5?44: N===10?(narrow?28:32):(narrow?19:26); const maxR=Math.max(...rows.map(x=>x.length)), maxC=Math.max(...cols.map(x=>x.length));
-  let h=`<table class="ng" style="--cs:${cs}px"><tr><td class="h"></td>${cols.map((cl,c)=>`<td class="h hc" id="hc${c}">${cl.join('<br>')}</td>`).join('')}</tr>`;
+  const cs=cellSize(); const tap=N>12;
+  let h=`<table class="ng ${tap?'tapmode':''}" style="--cs:${cs}px"><tr><td class="h"></td>${cols.map((cl,c)=>`<td class="h hc" id="hc${c}">${cl.join('<br>')}</td>`).join('')}</tr>`;
   for(let r=0;r<N;r++){ h+=`<tr class="${(r+1)%5===0&&r<N-1?'b5':''}"><td class="h hr" id="hr${r}">${rows[r].join(' ')}</td>${grid[r].map((v,c)=>`<td class="c ${(c+1)%5===0&&c<N-1?'b5':''}" data-r="${r}" data-c="${c}"></td>`).join('')}</tr>`; }
   $('wrap').innerHTML=h+'</table>'; paintAll();
   const tbl=$('wrap').querySelector('table'); let drag=null;
   const cellAt=(x,y)=>{ const el=document.elementFromPoint(x,y); return el&&el.classList.contains('c')? el : null; };
-  tbl.addEventListener('pointerdown',e=>{ const el=cellAt(e.clientX,e.clientY); if(!el||!running) return; e.preventDefault(); const r=+el.dataset.r,c=+el.dataset.c; const want=(e.button===2||mode==='x')?2:1; const val= grid[r][c]===want? 0 : want; drag={val,seen:new Set()}; setCell(r,c,val,drag); });
-  tbl.addEventListener('pointermove',e=>{ if(!drag) return; const el=cellAt(e.clientX,e.clientY); if(!el) return; setCell(+el.dataset.r,+el.dataset.c,drag.val,drag); });
-  const end=()=>{ drag=null; }; tbl.addEventListener('pointerup',end); tbl.addEventListener('pointercancel',end); tbl.addEventListener('contextmenu',e=>e.preventDefault());
+  tbl.addEventListener('pointerdown',e=>{ const el=cellAt(e.clientX,e.clientY); if(!el||!running) return; if(!tap) e.preventDefault(); const r=+el.dataset.r,c=+el.dataset.c; const want=(e.button===2||mode==='x')?2:1; const val= grid[r][c]===want? 0 : want; drag={val,seen:new Set(),moved:false,sx:e.clientX,sy:e.clientY,r,c}; if(!tap) setCell(r,c,val,drag); });
+  tbl.addEventListener('pointermove',e=>{ if(!drag) return; if(tap){ if(Math.abs(e.clientX-drag.sx)>6||Math.abs(e.clientY-drag.sy)>6) drag.moved=true; return; } const el=cellAt(e.clientX,e.clientY); if(!el) return; setCell(+el.dataset.r,+el.dataset.c,drag.val,drag); });
+  const end=e=>{ if(drag&&tap&&!drag.moved) setCell(drag.r,drag.c,drag.val,drag); drag=null; }; tbl.addEventListener('pointerup',end); tbl.addEventListener('pointercancel',()=>{ drag=null; }); tbl.addEventListener('contextmenu',e=>e.preventDefault());
 }
-function setCell(r,c,val,drag){ const k=r*N+c; if(drag.seen.has(k)) return; drag.seen.add(k); grid[r][c]=val; paint(r,c); checkLines(r,c); checkWin(); }
+let saveT=0;
+function saveGrid(){ clearTimeout(saveT); saveT=setTimeout(()=>{ try{ localStorage.setItem('nono_grid', JSON.stringify({level, seed, grid, elapsed: Math.round(performance.now()-t0)})); }catch(e){} },300); }
+function setCell(r,c,val,drag){ const k=r*N+c; if(drag.seen.has(k)) return; drag.seen.add(k); grid[r][c]=val; paint(r,c); checkLines(r,c); saveGrid(); checkWin(); }
 function paint(r,c){ const el=$('wrap').querySelector(`td[data-r="${r}"][data-c="${c}"]`); el.className='c'+((c+1)%5===0&&c<N-1?' b5':'')+(grid[r][c]===1?' f':grid[r][c]===2?' x':''); }
 function paintAll(){ for(let r=0;r<N;r++) for(let c=0;c<N;c++){ paint(r,c); } for(let r=0;r<N;r++) checkLines(r,0); for(let c=0;c<N;c++) checkLines(0,c); }
 function checkLines(r,c){ const rl=clues(grid[r].map(v=>v===1?1:0)); $('hr'+r).classList.toggle('done', rl.join()===rows[r].join()); const cl=clues(grid.map(row=>row[c]===1?1:0)); $('hc'+c).classList.toggle('done', cl.join()===cols[c].join()); }
-function checkWin(){ for(let r=0;r<N;r++) if(clues(grid[r].map(v=>v===1?1:0)).join()!==rows[r].join()) return; for(let c=0;c<N;c++) if(clues(grid.map(row=>row[c]===1?1:0)).join()!==cols[c].join()) return; finish(); }
+function checkWin(){ for(let r=0;r<N;r++) if(clues(grid[r].map(v=>v===1?1:0)).join()!==rows[r].join()) return; for(let c=0;c<N;c++) if(clues(grid.map(row=>row[c]===1?1:0)).join()!==cols[c].join()) return; clearLevel(); }
 function tick(){ const s=Math.floor((performance.now()-t0)/1000); $('time').textContent=`${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}`; raf=requestAnimationFrame(tick); }
-function load(isDaily){
-  daily=isDaily; const seed= isDaily? dayKey()*7+N : (Math.random()*1e9)|0;
-  const p=gen(N,seed); if(!p){ $('overlay').innerHTML='문제 생성에 실패했어요. 다시 시도해주세요.'; return; }
-  sol=p.g; rows=p.rc; cols=p.cc; grid=Array.from({length:N},()=>new Array(N).fill(0));
-  pno= isDaily? `#${dayKey()}` : '연습'; $('pno').textContent=pno; $('dayLbl').textContent= isDaily? '오늘의 문제 · '+N+'×'+N : '무작위 문제 · 랭킹 미등록';
-  build(); running=true; t0=performance.now(); startedAt=Date.now(); $('overlay').style.display='none'; tick();
-}
-function finish(){
-  running=false; cancelAnimationFrame(raf); const ms=Math.round(performance.now()-t0); const s=Math.floor(ms/1000); const t=`${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}`;
-  const key=`nono_best_${N}`; const best=+localStorage.getItem(key)||0; const isBest=daily&&(!best||ms<best); if(isBest) localStorage.setItem(key,String(ms));
-  if(daily) localStorage.setItem(`nono_done_${N}_${dayKey()}`,String(ms));
-  $('overlay').innerHTML=`<div style="font-size:14px;color:var(--ink-soft)">완성!</div><div class="huge">${t}</div><div class="note" style="margin:0">${daily?(isBest?'🎉 이 기기 최고 기록!':'최고 기록 '+fmtMs(best)):'연습 문제 완료'}</div><div class="btn-row" style="justify-content:center;margin-top:6px"><button class="btn-ghost" id="randomBtn2">무작위 문제</button><button class="btn" id="start2">오늘의 문제 다시</button></div>`;
-  $('overlay').style.display='flex'; $('start2').addEventListener('click',()=>load(true)); $('randomBtn2').addEventListener('click',()=>load(false)); showBest();
-  if(daily) LB.submit(ms,{duration:Date.now()-startedAt, meta:pno});
-  if(typeof gtag==='function') gtag('event','nono_finished',{n:N,ms,daily});
-}
 function fmtMs(ms){ const s=Math.floor(ms/1000); return `${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}`; }
-function showBest(){ const b=+localStorage.getItem(`nono_best_${N}`)||0; $('bestLocal').textContent=b?'내 최고 기록 '+fmtMs(b):''; const bn=$('bestNote'); if(bn) bn.textContent=b?'내 최고 기록 '+fmtMs(b):''; }
+let seed=0;
+function loadLevel(reroll){
+  N=sizeFor(level); zoom=0;
+  let sv=null; try{ sv=JSON.parse(localStorage.getItem('nono_grid')); }catch(e){}
+  const resume= !reroll && sv && sv.level===level && Array.isArray(sv.grid) && sv.grid.length===N && sv.seed;
+  seed= resume? sv.seed : ((Math.random()*2147483647)|0)||1;   // 레벨마다 새 문제. 이어하기면 저장된 시드
+  const p=gen(N, seed, densityFor(level)); if(!p){ $('overlay').innerHTML='문제 생성에 실패했어요. 다시 시도해주세요.'; return; }
+  rows=p.rc; cols=p.cc; grid=Array.from({length:N},()=>new Array(N).fill(0));
+  let elapsed=0; if(resume){ grid=sv.grid; elapsed=sv.elapsed||0; } else { localStorage.setItem('nono_grid', JSON.stringify({level, seed, grid, elapsed:0})); }
+  $('pno').textContent=level; $('sizeLbl').textContent=N+'×'+N;
+  build(); running=true; t0=performance.now()-elapsed; $('overlay').style.display='none'; cancelAnimationFrame(raf); tick();
+}
+function clearLevel(){
+  running=false; cancelAnimationFrame(raf); const ms=Math.round(performance.now()-t0); totalMs+=ms;
+  cleared=Math.max(cleared,level); best=Math.max(best,level); localStorage.setItem('nono_best',String(best)); localStorage.setItem('nono_level',String(level+1)); clearTimeout(saveT); localStorage.removeItem('nono_grid');
+  $('overlay').innerHTML=`<div style="font-size:14px;color:var(--ink-soft)">레벨 ${level} 완성 · ${N}×${N}</div><div class="huge">${fmtMs(ms)}</div><div class="note" style="margin:0">다음 레벨은 ${sizeFor(level+1)}×${sizeFor(level+1)}</div><div class="btn-row" style="justify-content:center;margin-top:6px"><button class="btn" id="next">다음 레벨</button></div>`;
+  $('overlay').style.display='flex'; $('next').addEventListener('click',()=>{ level++; loadLevel(); }); showBest();
+  if(typeof gtag==='function') gtag('event','nono_cleared',{level,ms});
+}
+function start(){ level=Math.max(1,+localStorage.getItem('nono_level')||1); cleared=0; totalMs=0; startedAt=Date.now(); loadLevel(); }
+function showBest(){ $('bestLocal').textContent= best? '내 최고 레벨 '+best : ''; const bn=$('bestNote'); if(bn) bn.textContent= best? '내 최고 레벨 '+best+' · 이어서 레벨 '+(+localStorage.getItem('nono_level')||1)+'부터':''; }
 $('mFill').addEventListener('click',()=>{ mode='fill'; $('mFill').classList.add('on'); $('mX').classList.remove('on'); });
 $('mX').addEventListener('click',()=>{ mode='x'; $('mX').classList.add('on'); $('mFill').classList.remove('on'); });
-$('clear').addEventListener('click',()=>{ if(!running) return; grid=Array.from({length:N},()=>new Array(N).fill(0)); paintAll(); });
-$('start').addEventListener('click',()=>load(true)); $('randomBtn').addEventListener('click',()=>load(false));
-function initLB(){ LB.init({game:'nono-'+N, el:'#lb', lower:true, label:'시간', format:fmtMs}); }
-document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{ if(running&&!confirm('진행 중인 문제를 그만둘까요?')) return; running=false; cancelAnimationFrame(raf); document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active')); b.classList.add('active'); N=+b.dataset.n; $('overlay').style.display='flex'; $('overlay').innerHTML=`<div style="font-size:15px;color:var(--ink-soft)">${N}×${N} 오늘의 문제</div><button class="btn" id="start" style="min-width:160px">오늘의 문제 시작</button><button class="btn-ghost" id="randomBtn">무작위 문제 (연습)</button><div class="note" id="bestNote" style="margin:0"></div>`; $('start').addEventListener('click',()=>load(true)); $('randomBtn').addEventListener('click',()=>load(false)); $('wrap').innerHTML=''; showBest(); initLB(); }));
-showBest(); initLB();
+$('zoomIn').addEventListener('click',()=>{ if(!running) return; zoom=Math.min(4,zoom+1); build(); });
+$('zoomOut').addEventListener('click',()=>{ if(!running) return; zoom=Math.max(-2,zoom-1); build(); });
+$('reroll').addEventListener('click',()=>{ if(!running) return; if(!confirm('지금 문제를 버리고 같은 레벨의 새 문제를 받을까요?')) return; loadLevel(true); });
+$('clear').addEventListener('click',()=>{ if(!running) return; grid=Array.from({length:N},()=>new Array(N).fill(0)); paintAll(); saveGrid(); });
+$('quit').addEventListener('click',()=>{ if(!startedAt){ alert('먼저 시작해서 레벨을 깨보세요.'); return; } if(cleared<1){ alert('이번 판에서 직접 깬 레벨이 아직 없어요.'); return; } LB.submit(cleared,{duration:Date.now()-startedAt, meta:`누적 ${fmtMs(totalMs)}`}); });
+$('start').addEventListener('click',start); showBest();
+LB.init({game:'nono', el:'#lb', label:'레벨', format:v=>'레벨 '+v});
 </script>
 
 </body>

@@ -217,7 +217,7 @@ export default {
 
     // ---- 광고 설정: 조회(공개, 5분 캐시) / 저장(관리자 토큰) ----
     if (url.pathname === '/api/ads' && request.method === 'GET') {
-      if (!env.WORLDCUP_KV) return json({ ok: true, config: null });
+      if (!env.WORLDCUP_KV) return json({ ok: true, config: null }, 200, { 'cache-control': 'no-store' });
       const wantAdmin = url.searchParams.get('admin') === '1';
       if (wantAdmin) { // 관리 페이지 불러오기: 토큰을 여기서부터 검증 (시크릿 부재·불일치를 바로 알림)
         if (!env.ADMIN_TOKEN) return json({ ok: false, error: 'no_admin_token' }, 500);

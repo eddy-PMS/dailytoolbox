@@ -42,6 +42,21 @@
   .hero h1 em { font-style: normal; color: #2b5fd9; }
   .hero p { color: var(--ink-soft); font-size: 15px; line-height: 1.6; margin: 0 0 14px; }
   @media (max-width: 520px) { .hero h1 { font-size: 23px; } .hero p { font-size: 13.5px; } }
+  .hero-top { display:flex; align-items:center; gap:20px; margin-bottom:16px; }
+  .hero-copy { flex:1 1 240px; min-width:0; }
+  .hero-copy h1, .hero-copy p { margin-right:0; }
+  .hero-art { flex:none; width:340px; }
+  .hero-art img { display:block; width:100%; height:auto; aspect-ratio:880/548; }
+  .hero-checks { flex:none; list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:9px; }
+  .hero-checks li { font-size:13px; color:var(--ink); line-height:1.45; max-width:210px; display:flex; align-items:flex-start; gap:7px; }
+  .hero-checks li::before { content:"✓"; flex:none; width:17px; height:17px; margin-top:1px; border-radius:50%; background:#e6f2ea; color:#2e7d4f; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; }
+  @media (max-width:1000px) {
+    .hero-top { flex-wrap:wrap; }
+    .hero-checks { order:3; width:100%; flex-direction:row; flex-wrap:wrap; gap:8px 16px; margin-top:4px; }
+    .hero-checks li { font-size:12px; max-width:none; }
+  }
+  @media (max-width:860px) { .hero-art { width:150px; } .hero-art img { aspect-ratio:440/487; } }
+  @media (max-width:520px) { .hero-top { gap:12px; } .hero-art { width:104px; } .hero-checks li { font-size:11.5px; } }
   .hero-search { position: relative; max-width: 620px; }
   .hero-search input { width: 100%; padding: 14px 16px 14px 46px; border: 2px solid #2b5fd9; border-radius: 6px; font-size: 15px; font-family: inherit; color: inherit; background: #fffdf8 url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%232b5fd9%27 stroke-width=%272.2%27%3E%3Ccircle cx=%2711%27 cy=%2711%27 r=%277%27/%3E%3Cpath d=%27M20 20l-4-4%27/%3E%3C/svg%3E") 16px center/19px no-repeat; }
   .hero-search input:focus { outline: none; box-shadow: 0 0 0 3px rgba(43,95,217,.15); }
@@ -60,7 +75,7 @@
   @media (max-width:480px){ .pop-cards{ grid-template-columns:repeat(2,1fr); } }
   .pop-card { display:block; background:#fffdf8; border:1px solid var(--line); border-radius:6px; padding:14px 10px; text-decoration:none; color:var(--ink); text-align:center; }
   .pop-card:hover { background:var(--paper-deep); }
-  .pop-card .ic { display:flex; width:38px; height:38px; margin:0 auto 8px; border-radius:10px; align-items:center; justify-content:center; font-size:19px; }
+  .pop-card .ic { display:block; width:44px; height:44px; margin:0 auto 8px; }
   .pop-card .t { display:block; font-size:13px; font-weight:700; line-height:1.35; }
   .pop-card .d { display:block; font-size:11px; color:var(--ink-soft); margin-top:3px; line-height:1.4; }
   .cat-nav { margin: 0 0 28px; }
@@ -69,7 +84,7 @@
   @media (max-width:480px){ .cat-row{ grid-template-columns:repeat(3,1fr); } }
   .cat-row a { display:block; text-align:center; padding:12px 6px; border:1px solid var(--line); border-radius:6px; background:#fffdf8; text-decoration:none; color:var(--ink); }
   .cat-row a:hover { background:var(--paper-deep); }
-  .cat-row .ic { display:block; font-size:20px; margin-bottom:5px; }
+  .cat-row .ic { display:block; width:40px; height:40px; margin:0 auto 6px; }
   .cat-row .t { display:block; font-size:12.5px; font-weight:700; line-height:1.3; }
   .cat-row .c { display:block; font-size:11px; color:var(--ink-soft); margin-top:2px; }
   .jin-widget{display:flex;gap:12px;align-items:center;border:1px solid var(--line);border-left:3px solid #a83a2c;border-radius:3px;background:#fffdf8;padding:8px 14px;margin:0 0 16px;text-decoration:none;color:var(--ink);font-size:13px}
@@ -117,8 +132,21 @@
 
 <main>
   <section class="hero">
-    <h1>매일 필요한 <em>무료 도구</em>, 한 곳에서</h1>
-    <p>계산기부터 PDF·어학·게임까지 · 회원가입 없이 <b id="toolCount">105</b>개 도구를 바로 사용하세요.</p>
+    <div class="hero-top">
+      <div class="hero-copy">
+        <h1>매일 필요한 <em>무료 도구</em>, 한 곳에서</h1>
+        <p>계산기부터 PDF·어학·게임까지 · 회원가입 없이 <b class="js-total">105</b>개 도구를 바로 사용하세요.</p>
+      </div>
+      <picture class="hero-art">
+        <source srcset="/img/hero-art-m.webp" media="(max-width: 860px)">
+        <img src="/img/hero-art.webp" alt="" fetchpriority="high">
+      </picture>
+      <ul class="hero-checks">
+        <li>회원가입 없이 바로 사용</li>
+        <li>PC·모바일 모두 무료</li>
+        <li>계산기·PDF·어학·게임 등 <b class="js-total">105</b>개 도구</li>
+      </ul>
+    </div>
     <div class="hero-search nb-search">
       <input type="search" placeholder="어떤 도구가 필요하세요? 연봉, PDF, 환율, 영어, 대출…" aria-label="도구 검색" autocomplete="off">
       <div class="nb-results"></div>
@@ -133,12 +161,12 @@
   <section class="pop">
     <h2>🔥 인기 도구</h2>
     <div class="pop-cards">
-      <a class="pop-card" href="salary.html"><span class="ic" style="background:#e6f2ea">💰</span><span class="t">연봉 실수령액</span><span class="d">세후 월급 계산</span></a>
-      <a class="pop-card" href="age.html"><span class="ic" style="background:#fbe9e7">📅</span><span class="t">만 나이 계산기</span><span class="d">나이 · 다음 생일</span></a>
-      <a class="pop-card" href="loan.html"><span class="ic" style="background:#e8eefb">🏦</span><span class="t">대출 이자 계산기</span><span class="d">상환 방식별 비교</span></a>
-      <a class="pop-card" href="exchange.html"><span class="ic" style="background:#e6f0f7">💱</span><span class="t">환율 계산기</span><span class="d">주요 통화 환산</span></a>
-      <a class="pop-card" href="nonogram.html"><span class="ic" style="background:#f0e9f7">🧩</span><span class="t">네모로직</span><span class="d">5×5 ~ 30×30 퍼즐</span></a>
-      <a class="pop-card" href="fortune.html"><span class="ic" style="background:#f7edf3">🔮</span><span class="t">사주 보기</span><span class="d">오늘의 운세</span></a>
+      <a class="pop-card" href="salary.html"><img class="ic" src="/icons/salary.png" width="44" height="44" alt=""><span class="t">연봉 실수령액</span><span class="d">세후 월급 계산</span></a>
+      <a class="pop-card" href="age.html"><img class="ic" src="/icons/age.png" width="44" height="44" alt=""><span class="t">만 나이 계산기</span><span class="d">나이 · 다음 생일</span></a>
+      <a class="pop-card" href="loan.html"><img class="ic" src="/icons/loan.png" width="44" height="44" alt=""><span class="t">대출 이자 계산기</span><span class="d">상환 방식별 비교</span></a>
+      <a class="pop-card" href="exchange.html"><img class="ic" src="/icons/exchange.png" width="44" height="44" alt=""><span class="t">환율 계산기</span><span class="d">주요 통화 환산</span></a>
+      <a class="pop-card" href="nonogram.html"><img class="ic" src="/icons/nonogram.png" width="44" height="44" alt=""><span class="t">네모로직</span><span class="d">5×5 ~ 30×30 퍼즐</span></a>
+      <a class="pop-card" href="fortune.html"><img class="ic" src="/icons/fortune.png" width="44" height="44" alt=""><span class="t">사주 보기</span><span class="d">오늘의 운세</span></a>
     </div>
   </section>
 
@@ -147,13 +175,13 @@
   <section class="cat-nav">
     <div class="cat-head"><h2>🗂 카테고리로 둘러보기</h2></div>
     <div class="cat-row">
-      <a href="#계산·생활"><span class="ic">🧮</span><span class="t">계산·생활</span><span class="c" data-cnt="계산·생활">23개</span></a>
-      <a href="#돈·일"><span class="ic">💼</span><span class="t">돈·일</span><span class="c" data-cnt="돈·일">20개</span></a>
-      <a href="#가족·건강"><span class="ic">👨‍👩‍👧</span><span class="t">가족·건강</span><span class="c" data-cnt="가족·건강">9개</span></a>
-      <a href="#공부·어학"><span class="ic">📚</span><span class="t">공부·어학</span><span class="c" data-cnt="공부·어학">25개</span></a>
-      <a href="#퍼즐·게임"><span class="ic">🎮</span><span class="t">퍼즐·게임</span><span class="c" data-cnt="퍼즐·게임">10개</span></a>
-      <a href="#두뇌·감각 훈련"><span class="ic">🧠</span><span class="t">두뇌·감각</span><span class="c" data-cnt="두뇌·감각 훈련">6개</span></a>
-      <a href="#테스트·재미"><span class="ic">🎉</span><span class="t">테스트·재미</span><span class="c" data-cnt="테스트·재미">12개</span></a>
+      <a href="#계산·생활"><img class="ic" src="/icons/cat-life.png" width="40" height="40" alt=""><span class="t">계산·생활</span><span class="c" data-cnt="계산·생활">23개</span></a>
+      <a href="#돈·일"><img class="ic" src="/icons/cat-money.png" width="40" height="40" alt=""><span class="t">돈·일</span><span class="c" data-cnt="돈·일">20개</span></a>
+      <a href="#가족·건강"><img class="ic" src="/icons/cat-family.png" width="40" height="40" alt=""><span class="t">가족·건강</span><span class="c" data-cnt="가족·건강">9개</span></a>
+      <a href="#공부·어학"><img class="ic" src="/icons/cat-study.png" width="40" height="40" alt=""><span class="t">공부·어학</span><span class="c" data-cnt="공부·어학">25개</span></a>
+      <a href="#퍼즐·게임"><img class="ic" src="/icons/cat-game.png" width="40" height="40" alt=""><span class="t">퍼즐·게임</span><span class="c" data-cnt="퍼즐·게임">10개</span></a>
+      <a href="#두뇌·감각 훈련"><img class="ic" src="/icons/cat-brain.png" width="40" height="40" alt=""><span class="t">두뇌·감각</span><span class="c" data-cnt="두뇌·감각 훈련">6개</span></a>
+      <a href="#테스트·재미"><img class="ic" src="/icons/cat-fun.png" width="40" height="40" alt=""><span class="t">테스트·재미</span><span class="c" data-cnt="테스트·재미">12개</span></a>
     </div>
   </section>
 <!-- guides:home:start -->
@@ -341,7 +369,7 @@
   var T = window.TOOLBOX; if (!T || !T.groups) return;
   var total = 0, by = {};
   T.groups.forEach(function (g) { total += g.items.length; by[g.label] = g.items.length; });
-  var tc = document.getElementById('toolCount'); if (tc) tc.textContent = total;
+  document.querySelectorAll('.js-total').forEach(function (el) { el.textContent = total; });
   document.querySelectorAll('[data-cnt]').forEach(function (el) {
     var n = by[el.getAttribute('data-cnt')]; if (n != null) el.textContent = n + '개';
   });

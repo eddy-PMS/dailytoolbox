@@ -16,6 +16,7 @@ category: 돈·일           # 계산·생활 / 돈·일 / 가족·건강 / 공�
 tools: salary.html, severance.html   # 관련 도구 (첫 번째가 대표 도구)
 keywords: 실수령액 계산, 4대보험 요율
 sources: 국세청 간이세액표 | https://... ; 국민연금공단 | https://...
+draft: true               # (선택) 넣어두면 빌드에서 제외됨. 발행할 때 이 줄을 지운다
 ---
 본문 (## 제목, ### 소제목, 문단, - 목록, 1. 목록, | 표 |, > 인용, **굵게**, [링크](url))
 [[tool:salary.html|계산기에서 바로 계산해 보세요]]  → 도구 링크 카드
@@ -23,7 +24,11 @@ sources: 국세청 간이세액표 | https://... ; 국민연금공단 | https://
 내용
 :::
 """
-import os, re, glob, json, html, datetime
+import os, re, glob, json, html, datetime, sys
+
+# 콘솔이 cp949여도 한글·특수문자(—, ·) 출력이 깨지거나 멈추지 않게
+try: sys.stdout.reconfigure(encoding='utf-8')
+except Exception: pass
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(ROOT, 'guide', 'src')
@@ -132,6 +137,9 @@ def md_to_html(md, tools):
         para.append(st); i += 1
     flush_para(para)
     return '\n'.join(out), toc, faq
+
+def is_draft(meta):
+    return str(meta.get('draft', '')).strip().lower() in ('true', 'y', 'yes', '1')
 
 def parse(md_text):
     m = re.match(r'^---\n(.*?)\n---\n(.*)$', md_text, re.S)
@@ -323,10 +331,20 @@ def main():
     md_files = sorted(glob.glob(os.path.join(SRC, '*.md')))
     if not md_files:
         print('guide/src/ 에 원고(.md)가 없어요. 원고를 넣고 다시 실행하세요.'); return
+    drafts = []
     for p in md_files:
         meta, body = parse(open(p, encoding='utf-8').read())
         slug = os.path.splitext(os.path.basename(p))[0]
+        if is_draft(meta):
+            drafts.append((slug, meta.get('title', ''))); continue
         guides.append({'slug': slug, 'meta': meta, 'body': body})
+    if drafts:
+        print(f'초안 제외: {len(drafts)}편 (발행하려면 머리말의 draft 줄을 지우세요)')
+        for slug, title in drafts:
+            stale = ' ← 이전에 발행된 파일이 남아 있음' if os.path.exists(os.path.join(OUT, slug + '.html')) else ''
+            print(f'  - {slug}{stale}  ({title})')
+    if not guides:
+        print('발행할 원고가 없어요 (전부 draft). 빌드를 중단합니다.'); return
     guides.sort(key=lambda g: g['meta'].get('date', ''), reverse=True)
     for g in guides:
         html_out = render_guide(g['meta'], g['body'], g['slug'], tools, guides)

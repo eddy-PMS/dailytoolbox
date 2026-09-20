@@ -351,6 +351,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://dailyfreetoolbox.com/leave-pay.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://dailyfreetoolbox.com/wage-convert.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -536,7 +541,7 @@
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/guide/annual-leave-rules.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-09-20</lastmod>
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/guide/saju-basics.html</loc>
@@ -544,15 +549,15 @@
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/guide/salary-take-home-2026.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-09-20</lastmod>
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/guide/severance-pay-how-to.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-09-20</lastmod>
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/guide/unemployment-benefit-2026.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-09-20</lastmod>
   </url>
 <!-- guides:end -->
 </urlset>

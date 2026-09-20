@@ -57,7 +57,7 @@ def slugify(t):
     return re.sub(r'[^0-9a-zA-Z가-힣]+', '-', t).strip('-').lower()
 
 def md_to_html(md, tools):
-    lines = md.split('\n'); out = []; i = 0; toc = []
+    lines = md.split('\n'); out = []; i = 0; toc = []; faq = []
     def flush_para(buf):
         if buf: out.append('<p>' + inline(' '.join(buf)) + '</p>')
     para = []
@@ -72,6 +72,15 @@ def md_to_html(md, tools):
             lvl = len(m.group(1)); txt = m.group(2).strip(); sid = slugify(txt)
             if lvl == 2: toc.append((sid, txt))
             out.append(f'<h{lvl} id="{sid}">{inline(txt)}</h{lvl}>'); i += 1; continue
+        if st.startswith('?? '):
+            flush_para(para); para = []
+            q = st[3:].strip(); j = i + 1; ans = []
+            while j < len(lines) and lines[j].strip() and not lines[j].strip().startswith(('?? ', '## ', '### ')):
+                ans.append(lines[j].strip()); j += 1
+            a = ' '.join(ans)
+            faq.append((q, a))
+            out.append(f'<details><summary>{inline(q)}</summary><p>{inline(a)}</p></details>')
+            i = j; continue
         m = re.match(r'^\[\[tool:([a-z0-9-]+\.html)(?:\|(.+?))?\]\]$', st)
         if m:
             flush_para(para); para = []
@@ -122,7 +131,7 @@ def md_to_html(md, tools):
             flush_para(para); para = []; out.append('<hr>'); i += 1; continue
         para.append(st); i += 1
     flush_para(para)
-    return '\n'.join(out), toc
+    return '\n'.join(out), toc, faq
 
 def parse(md_text):
     m = re.match(r'^---\n(.*?)\n---\n(.*)$', md_text, re.S)
@@ -172,14 +181,17 @@ def head_common(title, desc, canonical, keywords, extra_ld):
 
 def render_guide(meta, body_md, slug, tools, all_guides):
     accent = CAT_ACCENT.get(meta.get('category', ''), '#3a3f4a')
-    content, toc = md_to_html(body_md, tools)
+    content, toc, faq = md_to_html(body_md, tools)
     # 본문 중간 광고: 두 번째 h2 앞
     h2s = [m.start() for m in re.finditer(r'<h2 ', content)]
     if len(h2s) >= 2:
         p = h2s[1]; content = content[:p] + '<div class="ad-slot" data-ad="in-content"></div>\n' + content[p:]
     chars = len(re.sub(r'<[^>]+>', '', content)); mins = max(1, round(chars / 600))
     canonical = f'{SITE}/guide/{slug}.html'
-    ld = json.dumps({"@context": "https://schema.org", "@type": "Article", "headline": meta['title'], "description": meta.get('description', ''), "datePublished": meta.get('date', ''), "dateModified": meta.get('updated', meta.get('date', '')), "author": {"@type": "Organization", "name": "데일리 프리 툴박스"}, "publisher": {"@type": "Organization", "name": "데일리 프리 툴박스", "logo": {"@type": "ImageObject", "url": f"{SITE}/apple-touch-icon.png"}}, "mainEntityOfPage": canonical, "inLanguage": "ko"}, ensure_ascii=False)
+    ld = json.dumps({"@context": "https://schema.org", "@type": "Article", "headline": meta['title'], "description": meta.get('description', ''), "image": [f"{SITE}/og-image.jpg"], "datePublished": meta.get('date', ''), "dateModified": meta.get('updated', meta.get('date', '')), "author": {"@type": "Organization", "name": "데일리 프리 툴박스", "url": SITE + "/"}, "publisher": {"@type": "Organization", "name": "데일리 프리 툴박스", "logo": {"@type": "ImageObject", "url": f"{SITE}/apple-touch-icon.png"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": canonical}, "inLanguage": "ko"}, ensure_ascii=False)
+    faq_ld = ''
+    if len(faq) >= 2:
+        faq_ld = '\n<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}, ensure_ascii=False) + '</script>' 
     crumbs = json.dumps({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": SITE + "/"}, {"@type": "ListItem", "position": 2, "name": "생활 가이드", "item": SITE + "/guide/"}, {"@type": "ListItem", "position": 3, "name": meta['title'], "item": canonical}]}, ensure_ascii=False)
     toc_html = ('<nav class="guide-toc"><b>목차</b><ol>' + ''.join(f'<li><a href="#{sid}">{esc(t)}</a></li>' for sid, t in toc) + '</ol></nav>') if len(toc) >= 3 else ''
     tools_html = ''
@@ -193,7 +205,7 @@ def render_guide(meta, body_md, slug, tools, all_guides):
     more_html = ''
     if others:
         more_html = '<section class="guide-tools"><h2>같은 주제의 다른 글</h2><div class="guide-list">' + ''.join(f'<a class="guide-card" href="/guide/{g["slug"]}.html"><b>{esc(g["meta"]["title"])}</b><p>{esc(g["meta"].get("description",""))}</p></a>' for g in others) + '</div></section>'
-    return head_common(meta['title'] + ' | 데일리 프리 툴박스 생활 가이드', meta.get('description', ''), canonical, meta.get('keywords', ''), f'<script type="application/ld+json">{ld}</script>\n<script type="application/ld+json">{crumbs}</script>') + f'''<style>:root {{ --accent:{accent}; --accent-deep:{accent}; }}</style>
+    return head_common(meta['title'] + ' | 데일리 프리 툴박스 생활 가이드', meta.get('description', ''), canonical, meta.get('keywords', ''), f'<script type="application/ld+json">{ld}</script>\n<script type="application/ld+json">{crumbs}</script>{faq_ld}') + f'''<style>:root {{ --accent:{accent}; --accent-deep:{accent}; }}</style>
 </head>
 <body>
 

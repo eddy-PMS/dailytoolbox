@@ -107,3 +107,6 @@ article.guide .toolcta .go { margin-left:auto; color:var(--accent); font-weight:
 .guides-rel { margin:18px 0 6px; } .guides-rel .lb { font-size:13px; font-weight:700; margin-bottom:8px; }
 .guides-rel a { display:block; padding:9px 12px; border:1px solid var(--line); border-radius:3px; background:#fffdf8; text-decoration:none; color:var(--ink); font-size:14px; margin-bottom:6px; }
 .guides-rel a:hover { background:var(--paper-deep); } .guides-rel a small { color:var(--ink-soft); font-size:12px; margin-left:6px; }
+article.guide details { border:1px solid var(--line); border-radius:3px; background:#fffdf8; padding:10px 14px; margin:0 0 8px; }
+article.guide details summary { cursor:pointer; font-weight:700; font-size:15px; }
+article.guide details p { margin:8px 0 0; font-size:14.5px; color:var(--ink-soft); }

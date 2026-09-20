@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>연차수당 계산기 - 미사용 연차 1일이 얼마인지 바로 계산</title>
+<meta name="description" content="월 통상임금과 미사용 연차일수를 넣으면 1일 통상임금과 연차수당을 계산해요. 209시간 기준 시간당·1일 통상임금과 일수별 금액표까지 한 번에. 무료, 설치 없음.">
+<meta name="keywords" content="연차수당 계산기, 연차수당 계산법, 미사용 연차수당, 1일 통상임금 계산, 통상임금 209시간, 연차 정산">
+<link rel="canonical" href="https://dailyfreetoolbox.com/leave-pay.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="연차수당 계산기 - 미사용 연차 1일이 얼마?">
+<meta property="og:description" content="월 통상임금과 남은 연차일수로 연차수당을 계산해요. 1일 통상임금과 일수별 금액표 제공.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/leave-pay.html">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "연차수당 계산기", "url": "https://dailyfreetoolbox.com/leave-pay.html", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "월 통상임금과 미사용 연차일수로 1일 통상임금과 연차수당을 계산하는 무료 도구."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#8a5f25; --accent-deep:#8a5f25; }
+.big-res{background:var(--paper-deep);border:1px solid var(--line);border-radius:4px;padding:16px 18px;margin-top:14px}
+.big-res .amt{font-size:32px;font-weight:700;color:var(--accent);line-height:1.1;font-variant-numeric:tabular-nums}
+.big-res .lb{font-size:13px;color:var(--ink-soft);margin-bottom:4px}
+table.detail{width:100%;border-collapse:collapse;font-size:14px;margin-top:12px}
+table.detail th,table.detail td{border-bottom:1px solid var(--paper-deep);padding:8px 4px;text-align:left}
+table.detail td.r,table.detail th.r{text-align:right;font-variant-numeric:tabular-nums}
+table.detail tr.hi td{font-weight:700;color:var(--accent)}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "통상임금에 뭐가 들어가나요?", "acceptedAnswer": {"@type": "Answer", "text": "기본급과 매달 정기적·일률적으로 받는 수당(직책수당·기술수당·식대 등)이 들어가요. 성과급, 상여금, 연장·야간수당처럼 실적이나 근무에 따라 달라지는 항목은 원칙적으로 빠져요. 정확한 범위는 회사 임금규정을 확인하세요."}}, {"@type": "Question", "name": "209시간은 어디서 나온 숫자인가요?", "acceptedAnswer": {"@type": "Answer", "text": "주 40시간 근무자의 월 소정근로시간이에요. (40시간 + 주휴 8시간) × 365일 ÷ 7일 ÷ 12개월 ≈ 209시간이에요. 주 40시간 미만이면 실제 소정근로시간을 넣으세요."}}, {"@type": "Question", "name": "연차수당은 언제 받나요?", "acceptedAnswer": {"@type": "Answer", "text": "연차가 발생한 뒤 1년이 지나 소멸할 때, 또는 퇴직할 때 미사용분을 정산해 받아요. 다만 회사가 법에 맞게 연차 사용 촉진 절차를 했다면 지급 의무가 없어요."}}, {"@type": "Question", "name": "퇴직할 때 연차수당에도 세금이 붙나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 연차수당은 근로소득이라 소득세·지방소득세가 원천징수돼요. 퇴직금과 달리 퇴직소득세가 아니라 일반 근로소득세로 계산돼요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#8a5f25"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <div class="brand"><b>🗓️ 연차수당 계산기</b></div>
+  <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#돈·일">돈·일</a><span>›</span>연차수당 계산기</nav>
+  <h1>연차수당 계산기</h1>
+  <p class="sub">월 통상임금과 미사용 연차일수를 넣으면 1일 통상임금과 받을 수 있는 연차수당이 나와요. 주 40시간 근무자는 소정근로시간 209시간을 그대로 두면 돼요.</p>
+  <div class="ad-slot" data-ad="top"></div>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label>월 통상임금 (기본급 + 고정수당)</label><div class="unit"><input type="number" id="pay" value="3000000" step="100000" min="0"><span>원</span></div></div>
+      <div class="field"><label>월 소정근로시간</label><div class="unit"><input type="number" id="hours" value="209" step="1" min="1" max="300"><span>시간</span></div></div>
+      <div class="field"><label>미사용 연차</label><div class="unit"><input type="number" id="days" value="5" step="0.5" min="0" max="30"><span>일</span></div></div>
+      <div class="field"><label>1일 소정근로시간</label><div class="unit"><input type="number" id="daily" value="8" step="0.5" min="1" max="12"><span>시간</span></div></div>
+    </div>
+    <div class="btn-row"><button class="btn" id="calc">계산하기</button></div>
+    <div id="result"></div>
+  </div>
+
+
+ <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">돈·일 도구 더 보기</div><div class="chips"><a href="annual-leave.html">연차 계산기</a><a href="severance.html">퇴직금 계산기</a><a href="salary.html">연봉 실수령액</a><a href="unemployment.html">실업급여 계산기</a><a href="worktime.html">근무시간 계산기</a><a href="wage-convert.html">시급·월급·연봉 변환</a><a class="more" href="index.html#돈·일">전체 보기 →</a></div></div>
+<!-- guides:tool:start -->
+<div class="guides-rel"><div class="lb">📝 관련 가이드</div><a href="/guide/annual-leave-rules.html">연차 계산법 완전 정리 — 1년 미만, 회계연도 vs 입사일, 퇴직 정산까지<small>2026-09-20</small></a></div>
+<!-- guides:tool:end -->
+<section class="seo">
+<h2>연차수당 계산 공식</h2><p>미사용 연차는 <b>1일 통상임금</b>으로 수당을 받아요. 1일 통상임금은 이렇게 구해요.</p>
+<p><b>시간당 통상임금 = 월 통상임금 ÷ 월 소정근로시간(주 40시간이면 209시간)</b><br><b>1일 통상임금 = 시간당 통상임금 × 1일 소정근로시간(보통 8시간)</b><br><b>연차수당 = 1일 통상임금 × 미사용 연차일수</b></p>
+<p>209시간은 주 40시간 근무자의 월 소정근로시간이에요. 주 40시간에 주휴 8시간을 더해 48시간, 이를 한 달 평균 주수(4.345주)로 곱하면 약 209시간이 나와요. 주 40시간 미만으로 일한다면 실제 소정근로시간을 넣어야 정확해요.</p>
+<h2>통상임금에 들어가는 것과 빠지는 것</h2><p><table><thead><tr><th>포함</th><th>제외</th></tr></thead><tbody><tr><td>기본급</td><td>성과급·경영성과급</td></tr><tr><td>직책·직무·기술수당 등 매달 고정 지급</td><td>연장·야간·휴일근로수당</td></tr><tr><td>정기적·일률적으로 주는 식대·교통비</td><td>명절 상여금(조건부 지급)</td></tr><tr><td>매달 같은 금액의 정기상여금(판례에 따라 인정)</td><td>실비 변상 성격의 출장비</td></tr></tbody></table></p>
+<p>통상임금 범위는 대법원 판례가 계속 다뒐지는 영역이라 회사마다 산정 기준이 조금씩 달라요. 급여명세서의 고정 항목을 더한 금액으로 계산하면 실제와 가장 가깝고, 정확한 금액은 회사 임금규정이나 인사팀에 확인하는 게 좋아요.</p>
+<h2>연차수당을 받을 수 있는 경우</h2><ol><li><b>연차 소멸 시</b> — 발생 후 1년이 지나 못 쓴 연차는 수당으로 바뀌어요.</li><li><b>퇴직 시</b> — 남은 연차를 정산해 받아요. 퇴직금과는 별개예요.</li><li><b>단, 사용 촉진을 했다면 제외</b> — 회사가 만료 6개월 전에 서면으로 사용 시기 지정을 요구하고, 2개월 전에 회사가 시기를 지정하는 절차를 법대로 밟았다면 지급 의무가 없어요.</li></ol>
+<p>연차수당도 근로소득이라 소득세와 지방소득세가 원천징수돼요. 실제 통장에 들어오는 금액은 계산 결과보다 조금 적어요.</p>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>통상임금에 뭐가 들어가나요?</summary><p>기본급과 매달 정기적·일률적으로 받는 수당(직책수당·기술수당·식대 등)이 들어가요. 성과급, 상여금, 연장·야간수당처럼 실적이나 근무에 따라 달라지는 항목은 원칙적으로 빠져요. 정확한 범위는 회사 임금규정을 확인하세요.</p></details><details><summary>209시간은 어디서 나온 숫자인가요?</summary><p>주 40시간 근무자의 월 소정근로시간이에요. (40시간 + 주휴 8시간) × 365일 ÷ 7일 ÷ 12개월 ≈ 209시간이에요. 주 40시간 미만이면 실제 소정근로시간을 넣으세요.</p></details><details><summary>연차수당은 언제 받나요?</summary><p>연차가 발생한 뒤 1년이 지나 소멸할 때, 또는 퇴직할 때 미사용분을 정산해 받아요. 다만 회사가 법에 맞게 연차 사용 촉진 절차를 했다면 지급 의무가 없어요.</p></details><details><summary>퇴직할 때 연차수당에도 세금이 붙나요?</summary><p>네. 연차수당은 근로소득이라 소득세·지방소득세가 원천징수돼요. 퇴직금과 달리 퇴직소득세가 아니라 일반 근로소득세로 계산돼요.</p></details></section>
+  <footer>통상임금 범위는 회사 임금규정과 판례에 따라 달라질 수 있어요. 계산 결과는 참고용이며 정확한 금액은 인사팀이나 노무 전문가에게 확인하세요.<br><span class="version-tag">v1.0 · 2026-09-17 업데이트</span></footer>
+</main>
+
+<script>
+const $=id=>document.getElementById(id);
+const won=n=>Math.round(n).toLocaleString('ko-KR');
+function calc(){
+  const pay=+$('pay').value||0, hours=+$('hours').value||209, days=+$('days').value||0, daily=+$('daily').value||8;
+  if(pay<=0||hours<=0){ $('result').innerHTML='<div class="empty">월 통상임금과 소정근로시간을 입력해주세요</div>'; return; }
+  const hourly=pay/hours, oneDay=hourly*daily, total=oneDay*days;
+  const rows=[1,3,5,10,15].map(d=>`<tr class="${d===Math.round(days)?'hi':''}"><td>${d}일</td><td class="r">${won(oneDay*d)}원</td></tr>`).join('');
+  $('result').innerHTML=`<div class="big-res"><div class="lb">미사용 연차 ${days}일의 연차수당 (세전)</div><div class="amt">${won(total)}원</div></div>
+  <table class="detail"><tbody>
+    <tr><td>시간당 통상임금</td><td class="r">${won(hourly)}원</td></tr>
+    <tr><td>1일 통상임금 (${daily}시간)</td><td class="r">${won(oneDay)}원</td></tr>
+    <tr><td>미사용 연차</td><td class="r">${days}일</td></tr>
+  </tbody></table>
+  <table class="detail" style="margin-top:14px"><thead><tr><th>연차일수</th><th class="r">수당</th></tr></thead><tbody>${rows}</tbody></table>
+  <p class="note">세전 금액이에요. 연차수당은 근로소득이라 소득세·지방소득세가 원천징수돼요.</p>`;
+  if(typeof gtag==='function') gtag('event','leave_pay_calculated',{days});
+}
+$('calc').addEventListener('click',calc);
+['pay','hours','days','daily'].forEach(id=>$(id).addEventListener('keydown',e=>{ if(e.key==='Enter') calc(); }));
+calc();
+</script>
+
+</body>
+</html>

@@ -301,7 +301,8 @@ def update_tool_pages(all_guides, tools):
 def update_home(all_guides):
     path = os.path.join(ROOT, 'index.html'); s = open(path, encoding='utf-8').read()
     latest = sorted(all_guides, key=lambda g: g['meta'].get('updated', g['meta'].get('date', '')), reverse=True)[:6]
-    cards = ''.join(f'<a class="card" href="/guide/{g["slug"]}.html"><div class="title">{esc(g["meta"]["title"])}</div><div class="desc">{esc(g["meta"].get("description",""))}</div></a>\n      ' for g in latest)
+    # 홈에서는 제목만 (설명까지 넣으면 제목이 길어 읽기 어려움). 구조는 도구 카드와 동일하게
+    cards = ''.join(f'<a class="card" href="/guide/{g["slug"]}.html"><img class="cic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="ct"><div class="title">{esc(g["meta"]["title"])}</div></span></a>\n      ' for g in latest)
     block = f'''
   <section class="group" id="생활 가이드" style="--card-accent:#2f7d4f">
     <div class="group-head"><h2><img class="hic" src="/icons/ui-guide.webp" width="26" height="26" alt="">생활 가이드</h2><span class="count">{len(all_guides)}편</span><a class="all" href="/guide/">전체 보기 →</a></div>

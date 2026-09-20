@@ -128,8 +128,13 @@
       return s ? { x: x, s: s } : null;
     }).filter(Boolean).sort(function (a, b) { return b.s - a.s; }).slice(0, 8).map(function (r) { return r.x; });
   }
-  nav.querySelectorAll('.nb-search').forEach(function (box) {
+  // 네비 안뿐 아니라 페이지 본문(홈 히어로 등)의 .nb-search 도 같은 로직으로 동작시킨다
+  function bindSearchBoxes() {
+  document.querySelectorAll('.nb-search').forEach(function (box) {
+    if (box.getAttribute('data-nb-bound')) return;
+    box.setAttribute('data-nb-bound', '1');
     var input = box.querySelector('input'), res = box.querySelector('.nb-results'), sel = -1;
+    if (!input || !res) return;
     function render() {
       var list = search(input.value);
       if (!input.value.trim()) { res.classList.remove('show'); res.innerHTML = ''; return; }
@@ -147,6 +152,9 @@
     document.addEventListener('click', function (e) { if (!box.contains(e.target)) res.classList.remove('show'); });
     input.addEventListener('click', function (e) { e.stopPropagation(); });
   });
+  }
+  bindSearchBoxes();
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', bindSearchBoxes);
 
   // ---- 푸터 링크 + 사이드 광고 자리 ----
   function addExtras() {

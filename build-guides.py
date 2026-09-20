@@ -305,9 +305,13 @@ def update_sitemap(all_guides):
     open(path, 'w', encoding='utf-8').write(new); print('sitemap 반영')
 
 def main():
+    os.makedirs(SRC, exist_ok=True); os.makedirs(OUT, exist_ok=True)
     tools = load_tools()
     guides = []
-    for p in sorted(glob.glob(os.path.join(SRC, '*.md'))):
+    md_files = sorted(glob.glob(os.path.join(SRC, '*.md')))
+    if not md_files:
+        print('guide/src/ 에 원고(.md)가 없어요. 원고를 넣고 다시 실행하세요.'); return
+    for p in md_files:
         meta, body = parse(open(p, encoding='utf-8').read())
         slug = os.path.splitext(os.path.basename(p))[0]
         guides.append({'slug': slug, 'meta': meta, 'body': body})

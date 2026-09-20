@@ -34,7 +34,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(ROOT, 'guide', 'src')
 OUT = os.path.join(ROOT, 'guide')
 SITE = 'https://dailyfreetoolbox.com'
-CAT_ACCENT = {'계산·생활': '#3a3f4a', '돈·일': '#8a5f25', '가족·건강': '#c0392b', '공부·어학': '#2b5fd9', '재미': '#7b3fa0'}
+CAT_ACCENT = {'계산·생활': '#2f7d4f', '돈·일': '#2f7d4f', '가족·건강': '#2f7d4f', '공부·어학': '#2f7d4f', '재미': '#2f7d4f'}
 
 # ---------- 도구 목록 (nav.js 에서 읽음) ----------
 def load_tools():
@@ -188,7 +188,7 @@ def head_common(title, desc, canonical, keywords, extra_ld):
 '''
 
 def render_guide(meta, body_md, slug, tools, all_guides):
-    accent = CAT_ACCENT.get(meta.get('category', ''), '#3a3f4a')
+    accent = CAT_ACCENT.get(meta.get('category', ''), '#2f7d4f')
     content, toc, faq = md_to_html(body_md, tools)
     # 본문 중간 광고: 두 번째 h2 앞
     h2s = [m.start() for m in re.finditer(r'<h2 ', content)]
@@ -213,7 +213,7 @@ def render_guide(meta, body_md, slug, tools, all_guides):
     more_html = ''
     if others:
         more_html = '<section class="guide-tools"><h2>같은 주제의 다른 글</h2><div class="guide-list">' + ''.join(f'<a class="guide-card" href="/guide/{g["slug"]}.html"><b>{esc(g["meta"]["title"])}</b><p>{esc(g["meta"].get("description",""))}</p></a>' for g in others) + '</div></section>'
-    return head_common(meta['title'] + ' | 데일리 프리 툴박스 생활 가이드', meta.get('description', ''), canonical, meta.get('keywords', ''), f'<script type="application/ld+json">{ld}</script>\n<script type="application/ld+json">{crumbs}</script>{faq_ld}') + f'''<style>:root {{ --accent:{accent}; --accent-deep:{accent}; }}</style>
+    return head_common(meta['title'] + ' | 데일리 프리 툴박스 생활 가이드', meta.get('description', ''), canonical, meta.get('keywords', ''), f'<script type="application/ld+json">{ld}</script>\n<script type="application/ld+json">{crumbs}</script>{faq_ld}') + f'''<style>:root {{ --accent:{accent}; --accent-deep:#23603c; }}</style>
 </head>
 <body class="guide-page">
 
@@ -251,13 +251,13 @@ def render_index(all_guides):
     for c in cats:
         items = [g for g in all_guides if g['meta'].get('category', '기타') == c]
         cards = ''.join(f'<a class="guide-card" href="/guide/{g["slug"]}.html"><b>{esc(g["meta"]["title"])}</b><p>{esc(g["meta"].get("description",""))}</p><small>{esc(g["meta"].get("updated", g["meta"].get("date","")))} · 관련 도구 {len(g["meta"]["tools"])}개</small></a>' for g in items)
-        sections += f'<section class="group" id="{esc(c)}" style="--accent:{CAT_ACCENT.get(c,"#3a3f4a")}"><div class="group-head" style="margin:26px 0 10px"><h2 style="font-size:17px;margin:0">{esc(c)}</h2><span class="count" style="font-size:12px;color:var(--ink-soft);margin-left:8px">{len(items)}편</span></div><div class="guide-list">{cards}</div></section>'
+        sections += f'<section class="group" id="{esc(c)}" style="--accent:{CAT_ACCENT.get(c,"#2f7d4f")}"><div class="group-head" style="margin:26px 0 10px"><h2 style="font-size:17px;margin:0">{esc(c)}</h2><span class="count" style="font-size:12px;color:var(--ink-soft);margin-left:8px">{len(items)}편</span></div><div class="guide-list">{cards}</div></section>'
     ld = json.dumps({"@context": "https://schema.org", "@type": "CollectionPage", "name": "생활 가이드", "url": canonical, "description": "연봉·퇴직금·실업급여·연차·사주처럼 매일 쓰는 도구 뒤에 있는 규칙과 계산법을 정리한 글 모음"}, ensure_ascii=False)
-    return head_common('생활 가이드 - 계산기 뒤의 규칙과 방법을 정리한 글 | 데일리 프리 툴박스', '연봉 실수령액·퇴직금·실업급여·연차·사주 보는 법처럼 도구를 쓰기 전에 알아두면 좋은 규칙과 계산 방법을 정리한 생활 가이드. 각 글에서 관련 계산기로 바로 이동.', canonical, '생활 가이드, 계산 방법, 실수령액 계산법, 퇴직금 계산법, 실업급여 조건, 연차 계산법, 사주 보는 법', f'<script type="application/ld+json">{ld}</script>') + '''<style>:root { --accent:#3a3f4a; --accent-deep:#26292f; }</style>
+    return head_common('생활 가이드 - 계산기 뒤의 규칙과 방법을 정리한 글 | 데일리 프리 툴박스', '연봉 실수령액·퇴직금·실업급여·연차·사주 보는 법처럼 도구를 쓰기 전에 알아두면 좋은 규칙과 계산 방법을 정리한 생활 가이드. 각 글에서 관련 계산기로 바로 이동.', canonical, '생활 가이드, 계산 방법, 실수령액 계산법, 퇴직금 계산법, 실업급여 조건, 연차 계산법, 사주 보는 법', f'<script type="application/ld+json">{ld}</script>') + '''<style>:root { --accent:#2f7d4f; --accent-deep:#23603c; }</style>
 </head>
 <body class="guide-page">
 
-<nav id="site-nav" data-accent="#3a3f4a"></nav>
+<nav id="site-nav" data-accent="#2f7d4f"></nav>
 <script src="/nav.js"></script>
 
 <main>
@@ -303,7 +303,7 @@ def update_home(all_guides):
     latest = sorted(all_guides, key=lambda g: g['meta'].get('updated', g['meta'].get('date', '')), reverse=True)[:6]
     cards = ''.join(f'<a class="card" href="/guide/{g["slug"]}.html"><div class="title">{esc(g["meta"]["title"])}</div><div class="desc">{esc(g["meta"].get("description",""))}</div></a>\n      ' for g in latest)
     block = f'''
-  <section class="group" id="생활 가이드" style="--card-accent:#a83a2c">
+  <section class="group" id="생활 가이드" style="--card-accent:#2f7d4f">
     <div class="group-head"><h2><img class="hic" src="/icons/ui-guide.webp" width="26" height="26" alt="">생활 가이드</h2><span class="count">{len(all_guides)}편</span><a class="all" href="/guide/">전체 보기 →</a></div>
     <div class="cards">
       {cards}</div>

@@ -26,7 +26,7 @@
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
 <style>
-:root { --accent:#2f7d4f; --accent-deep:#23603c; }
+:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
 .lay{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:720px){.lay{grid-template-columns:1fr}}
 .pitchwrap{position:relative;background:#fff;border:1px solid var(--line);border-radius:4px;padding:8px}
 svg.pitch{width:100%;height:auto;display:block;user-select:none;-webkit-user-select:none}
@@ -49,13 +49,13 @@ svg.pitch{width:100%;height:auto;display:block;user-select:none;-webkit-user-sel
 .rlist{display:grid;grid-template-columns:1fr 1fr;gap:4px 14px;font-size:14px}@media(max-width:520px){.rlist{grid-template-columns:1fr}}
 .rlist div{padding:5px 0;border-bottom:1px solid var(--paper-deep)}
 .rlist b{display:inline-block;min-width:34px;color:var(--ink-soft);font-size:12px}
-.memo-view{white-space:pre-wrap;font-size:14px;line-height:1.7;background:#fffdf8;border:1px solid var(--line);border-radius:3px;padding:12px}
+.memo-view{white-space:pre-wrap;font-size:14px;line-height:1.7;background:#fff;border:1px solid var(--line);border-radius:3px;padding:12px}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "선수 위치를 자유롭게 옮길 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 포메이션을 고르면 기본 위치가 잡히고, 경기장 위의 선수를 드래그해서 원하는 곳으로 옮길 수 있어요. 한 선수를 다른 선수 위에 놓으면 두 사람의 자리가 바뀌어요."}}, {"@type": "Question", "name": "카톡 단톡방에 어떻게 올리나요?", "acceptedAnswer": {"@type": "Answer", "text": "\"이미지로 저장\"을 누르면 전술판이 PNG 파일로 저장돼 사진처럼 올릴 수 있고, \"공유 링크 만들기\"를 누르면 짧은 링크가 생겨 팀원이 열어볼 수 있어요."}}, {"@type": "Question", "name": "링크는 얼마나 유지되나요?", "acceptedAnswer": {"@type": "Answer", "text": "만든 날로부터 30일 동안 유지되고 그 뒤엔 자동으로 삭제돼요. 이미지로 저장해두면 기간과 상관없이 남아요."}}, {"@type": "Question", "name": "풋살이나 7인제도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "5인(풋살)부터 6·7·8·9·11인까지 인원별 포메이션을 제공해요. 인원을 바꾸면 그에 맞는 포메이션 목록이 나와요."}}]}</script>
 </head>
 <body>
 
-<nav id="site-nav" data-accent="#2f7d4f"></nav>
+<nav id="site-nav" data-accent="#2b5fd9"></nav>
 <script src="nav.js"></script>
 
 <main>
@@ -266,7 +266,7 @@ function saveImage(svgEl, st){
   const img=new Image(); const url=URL.createObjectURL(new Blob([src],{type:'image/svg+xml;charset=utf-8'}));
   img.onload=()=>{
     const c=document.createElement('canvas'); c.width=720; c.height=1120+150; const ctx=c.getContext('2d');
-    ctx.fillStyle='#f1eee6'; ctx.fillRect(0,0,c.width,c.height);
+    ctx.fillStyle='#fff'; ctx.fillRect(0,0,c.width,c.height);
     ctx.fillStyle='#1f1d1a'; ctx.font='700 34px sans-serif'; ctx.fillText(st.team||'라인업',24,52);
     ctx.fillStyle='#57534b'; ctx.font='20px sans-serif';
     const meta=[st.when, st.vs?('vs '+st.vs):'', st.place].filter(Boolean).join(' · '); ctx.fillText(meta||`${st.size}인제 ${st.formation}`,24,86);

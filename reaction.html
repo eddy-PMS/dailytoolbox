@@ -25,12 +25,12 @@
 </script>
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
-<style>:root { --accent:#2f5d4e; --accent-deep:#22453a; }</style>
+<style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "반응속도를 올릴 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "충분한 수면, 카페인 적당량, 꾸준한 연습으로 20~30ms 정도는 개선돼요. 다만 타고난 한계가 있어 큰 폭의 향상은 어려워요."}}, {"@type": "Question", "name": "모바일에서도 정확한가요?", "acceptedAnswer": {"@type": "Answer", "text": "터치 지연이 마우스보다 커서 20~50ms 정도 느리게 나올 수 있어요."}}, {"@type": "Question", "name": "게임 실력과 관계가 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "FPS에서는 반응속도보다 예측·위치 선정·에임 정확도가 더 중요해요. 반응속도는 여러 요소 중 하나예요."}}]}</script>
 </head>
 <body>
 
-<nav id="site-nav" data-accent="#2f5d4e"></nav>
+<nav id="site-nav" data-accent="#2b5fd9"></nav>
 <script src="nav.js"></script>
 
 <main>
@@ -77,7 +77,7 @@ pad.addEventListener('pointerdown',()=>{
     return; }
   if(state==='next'){ startWait(); }
 });
-function renderTries(){ $('tries').innerHTML=[0,1,2,3,4].map(i=>`<span style="padding:6px 12px;border:1px solid var(--line);border-radius:20px;background:${results[i]!=null?'var(--paper-deep)':'#fffdf8'}">${i+1}회: ${results[i]!=null?results[i]+'ms':'-'}</span>`).join(''); }
+function renderTries(){ $('tries').innerHTML=[0,1,2,3,4].map(i=>`<span style="padding:6px 12px;border:1px solid var(--line);border-radius:20px;background:${results[i]!=null?'var(--paper-deep)':'#fff'}">${i+1}회: ${results[i]!=null?results[i]+'ms':'-'}</span>`).join(''); }
 renderTries();
 LB.init({game:'reaction', el:'#lb', lower:true, label:'평균', format:v=>v+'ms'});
 </script>

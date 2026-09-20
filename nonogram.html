@@ -26,7 +26,7 @@
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
 <style>
-:root { --accent:#3a3f4a; --accent-deep:#3a3f4a; }
+:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
 .top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
 .big{font-size:26px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1}.lbl{font-size:12px;color:var(--ink-soft)}
 .wrap{overflow:auto;max-height:78vh}
@@ -36,7 +36,7 @@ table.ng td{border:1px solid #cfc9bb;padding:0;text-align:center;vertical-align:
 table.ng td.c{width:var(--cs);height:var(--cs);background:#fff;cursor:pointer;-webkit-tap-highlight-color:transparent;vertical-align:middle;font-size:calc(var(--cs) * .6);color:#b8b0a0;line-height:1}
 table.ng td.c.f{background:#3a3f4a}table.ng td.c.x::after{content:'×'}
 table.ng td.c.b5{border-right:2px solid #7a7f8a}table.ng tr.b5 td{border-bottom:2px solid #7a7f8a}
-table.ng td.h{font-size:calc(var(--cs) * .5);color:var(--ink);background:#fffdf8;line-height:1.15;padding:2px 3px;font-variant-numeric:tabular-nums}
+table.ng td.h{font-size:calc(var(--cs) * .5);color:var(--ink);background:#fff;line-height:1.15;padding:2px 3px;font-variant-numeric:tabular-nums}
 table.ng td.hc{vertical-align:bottom}table.ng td.hr{text-align:right;white-space:nowrap;padding-right:6px}
 table.ng td.h.done{color:#b8b0a0}
 .modes{display:flex;gap:6px;justify-content:center;margin:12px 0 4px}.modes button{padding:8px 14px}.modes button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
@@ -51,7 +51,7 @@ table.ng td.h.done{color:#b8b0a0}
 </head>
 <body>
 
-<nav id="site-nav" data-accent="#3a3f4a"></nav>
+<nav id="site-nav" data-accent="#2b5fd9"></nav>
 <script src="nav.js"></script>
 
 <main>
@@ -186,7 +186,7 @@ function pickArt(n, sd){
     if(st&&st.every(row=>row.every(v=>v!==-1))) return {g,rc,cc,tries:1,art:a}; }
   return null;
 }
-function artPreview(g){ const n=g.length, cs=Math.max(3,Math.floor(100/n)); return `<div style="display:grid;grid-template-columns:repeat(${n},${cs}px);gap:1px;background:#d8d3c6;padding:2px;border-radius:3px;margin:6px auto;width:max-content">${g.map(row=>row.map(v=>`<i style="display:block;width:${cs}px;height:${cs}px;background:${v?'#3a3f4a':'#fff'}"></i>`).join('')).join('')}</div>`; }
+function artPreview(g){ const n=g.length, cs=Math.max(3,Math.floor(100/n)); return `<div style="display:grid;grid-template-columns:repeat(${n},${cs}px);gap:1px;background:#e3e9f3;padding:2px;border-radius:3px;margin:6px auto;width:max-content">${g.map(row=>row.map(v=>`<i style="display:block;width:${cs}px;height:${cs}px;background:${v?'#3a3f4a':'#fff'}"></i>`).join('')).join('')}</div>`; }
 function loadLevel(reroll){
   N=sizeFor(level); zoom=0;
   let sv=null; try{ sv=JSON.parse(localStorage.getItem('nono_grid')); }catch(e){}

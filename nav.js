@@ -6,14 +6,14 @@
 
   var nav = document.getElementById('site-nav');
   if (!nav) return;
-  var accent = nav.getAttribute('data-accent') || '#3a3f4a';
+  var accent = nav.getAttribute('data-accent') || '#2b5fd9';
   var path = location.pathname.split('/').pop() || 'index.html';
   if (path === '') path = 'index.html';
   if (path.indexOf('.') < 0) path += '.html';   // /salary 처럼 확장자 없는 주소도 salary.html 로 취급
   var esc = function (s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
 
   var css = ''
-    + '#site-nav{--nav-accent:' + accent + ';width:calc(100% + 40px);margin:0 -20px 26px;background:#fffdf8;border-bottom:1px solid rgba(0,0,0,.1);font-family:inherit;position:relative;z-index:60}'
+    + '#site-nav{--nav-accent:' + accent + ';width:calc(100% + 40px);margin:0 -20px 26px;background:#fff;border-bottom:1px solid rgba(0,0,0,.1);font-family:inherit;position:relative;z-index:60}'
     + '#site-nav *{box-sizing:border-box}'
     + '#site-nav .nb-in{max-width:1100px;margin:0 auto;padding:0 16px;height:54px;display:flex;align-items:center;gap:10px}'
     + '#site-nav .nb-logo{display:flex;align-items:center;gap:8px;text-decoration:none;color:rgba(0,0,0,.85);font-size:15px;font-weight:700;white-space:nowrap;margin-right:4px;flex:none}'
@@ -26,17 +26,17 @@
     + '#site-nav .nav-group>button .caret{font-size:8px;opacity:.55}'
     + '#site-nav .nav-group.has-active>button{color:var(--nav-accent);font-weight:700}'
     + '#site-nav .nb-guide{flex:none}#site-nav .nb-guide.active{color:var(--nav-accent);font-weight:700}'
-    + '#site-nav .nav-menu{display:none;position:absolute;top:100%;left:0;min-width:200px;max-height:70vh;overflow:auto;background:#fffdf8;border:1px solid rgba(0,0,0,.12);border-radius:4px;box-shadow:0 8px 22px rgba(0,0,0,.1);padding:6px;z-index:70;flex-direction:column;gap:1px;margin-top:2px}'
+    + '#site-nav .nav-menu{display:none;position:absolute;top:100%;left:0;min-width:200px;max-height:70vh;overflow:auto;background:#fff;border:1px solid rgba(0,0,0,.12);border-radius:4px;box-shadow:0 8px 22px rgba(0,0,0,.1);padding:6px;z-index:70;flex-direction:column;gap:1px;margin-top:2px}'
     + '#site-nav .nav-menu::before{content:"";position:absolute;left:0;right:0;top:-8px;height:8px}'
     + '#site-nav .nav-menu a{display:block;white-space:nowrap;font-size:13px}'
     + '#site-nav .nav-menu .sub{font-size:11px;color:rgba(0,0,0,.45);padding:8px 9px 2px;font-weight:700}'
-    + '#site-nav .nav-menu a.active{background:var(--nav-accent);color:#fffdf8}'
+    + '#site-nav .nav-menu a.active{background:var(--nav-accent);color:#fff}'
     + '#site-nav .nav-group.open .nav-menu{display:flex}'
     + '@media (hover:hover){#site-nav .nav-group:hover .nav-menu{display:flex}}'
     + '#site-nav .nb-search{position:relative;margin-left:auto;flex:0 1 210px;min-width:120px}'
     + '#site-nav .nb-search input{width:100%;padding:7px 12px 7px 32px;border:1px solid rgba(0,0,0,.14);border-radius:16px;font-size:13px;font-family:inherit;background:#fff url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%2357534b%27 stroke-width=%272.2%27%3E%3Ccircle cx=%2711%27 cy=%2711%27 r=%277%27/%3E%3Cpath d=%27M20 20l-4-4%27/%3E%3C/svg%3E") 10px center/15px no-repeat;color:inherit}'
     + '#site-nav .nb-search input:focus{outline:none;border-color:var(--nav-accent)}'
-    + '#site-nav .nb-results{display:none;position:absolute;top:100%;right:0;left:0;margin-top:4px;background:#fffdf8;border:1px solid rgba(0,0,0,.12);border-radius:4px;box-shadow:0 8px 22px rgba(0,0,0,.1);padding:4px;z-index:80;max-height:60vh;overflow:auto}'
+    + '#site-nav .nb-results{display:none;position:absolute;top:100%;right:0;left:0;margin-top:4px;background:#fff;border:1px solid rgba(0,0,0,.12);border-radius:4px;box-shadow:0 8px 22px rgba(0,0,0,.1);padding:4px;z-index:80;max-height:60vh;overflow:auto}'
     + '#site-nav .nb-results.show{display:block}'
     + '#site-nav .nb-results a{display:block;padding:8px 10px;border-radius:3px;text-decoration:none;color:rgba(0,0,0,.85);font-size:13px}'
     + '#site-nav .nb-results a small{display:block;color:rgba(0,0,0,.5);font-size:11px;margin-top:1px}'
@@ -44,16 +44,16 @@
     + '#site-nav .nb-results .none{padding:10px;font-size:12px;color:rgba(0,0,0,.5)}'
     + '#site-nav .nb-burger{display:none;margin-left:auto;width:40px;height:40px;border:none;background:none;cursor:pointer;flex-direction:column;justify-content:center;gap:5px;align-items:center;padding:0}'
     + '#site-nav .nb-burger i{display:block;width:22px;height:2px;background:rgba(0,0,0,.8);border-radius:2px}'
-    + '#site-nav .nb-drawer{display:none;position:fixed;inset:54px 0 0 0;background:#f1eee6;overflow:auto;padding:12px 16px 40px;z-index:65}'
+    + '#site-nav .nb-drawer{display:none;position:fixed;inset:54px 0 0 0;background:#f7faff;overflow:auto;padding:12px 16px 40px;z-index:65}'
     + '#site-nav.drawer-open .nb-drawer{display:block}'
     + '#site-nav .nb-drawer .nb-search{width:100%;margin:0 0 12px}'
-    + '#site-nav .nb-drawer details{border:1px solid rgba(0,0,0,.1);border-radius:4px;background:#fffdf8;margin-bottom:8px}'
+    + '#site-nav .nb-drawer details{border:1px solid rgba(0,0,0,.1);border-radius:4px;background:#fff;margin-bottom:8px}'
     + '#site-nav .nb-drawer summary{padding:12px 14px;font-size:15px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}'
     + '#site-nav .nb-drawer summary::-webkit-details-marker{display:none}'
     + '#site-nav .nb-drawer summary small{font-weight:400;font-size:12px;color:rgba(0,0,0,.45)}'
     + '#site-nav .nb-drawer .dl{padding:0 8px 8px}'
     + '#site-nav .nb-drawer .dl a{display:block;padding:9px 8px;font-size:14px;color:rgba(0,0,0,.8);text-decoration:none;border-radius:3px}'
-    + '#site-nav .nb-drawer .dl a.active{background:var(--nav-accent);color:#fffdf8}'
+    + '#site-nav .nb-drawer .dl a.active{background:var(--nav-accent);color:#fff}'
     + '#site-nav .nb-drawer .dl .sub{font-size:11px;color:rgba(0,0,0,.45);padding:8px 8px 2px;font-weight:700}'
     + '#site-nav .nb-drawer .dl-foot{margin-top:14px;font-size:13px;display:flex;gap:14px;justify-content:center}'
     + '#site-nav .nb-drawer .dl-foot a{color:rgba(0,0,0,.55);text-decoration:none}'

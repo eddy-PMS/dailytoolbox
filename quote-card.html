@@ -25,7 +25,7 @@
 </script>
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
-<style>:root { --accent:#6b3f56; --accent-deep:#502f40; }</style>
+<style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }</style>
 <style>
 .drop{border:2px dashed var(--line);border-radius:3px;padding:26px;text-align:center;color:var(--ink-soft);font-size:14px;cursor:pointer;background:#fff}
 .drop.over{border-color:var(--accent);background:var(--paper-deep)}
@@ -36,7 +36,7 @@
 </head>
 <body>
 
-<nav id="site-nav" data-accent="#6b3f56"></nav>
+<nav id="site-nav" data-accent="#2b5fd9"></nav>
 <script src="nav.js"></script>
 
 <main>
@@ -74,7 +74,7 @@
 <script>
 
 const $=id=>document.getElementById(id);
-const BGS=[['#2b2b2b→#4a4a4a','linear'],['#3a3f4a→#1f1d1a','linear'],['#6b3f56→#3a2436','linear'],['#2c3e5e→#152030','linear'],['#2f5d4e→#173327','linear'],['#a83a2c→#5c1f16','linear'],['#f1eee6→#e6e2d6','light'],['#fffdf8→#f1eee6','light']];
+const BGS=[['#2b2b2b→#4a4a4a','linear'],['#3a3f4a→#1f1d1a','linear'],['#6b3f56→#3a2436','linear'],['#2c3e5e→#152030','linear'],['#2f5d4e→#173327','linear'],['#a83a2c→#5c1f16','linear'],['#fff→#f2f7fe','light'],['#fff→#fff','light']];
 BGS.forEach((b,i)=>{ const o=document.createElement('option'); o.value=i; o.textContent='배경 '+(i+1)+(b[1]==='light'?' (밝은)':' (어두운)'); $('bg').appendChild(o); });
 $('bg').value=2;
 function wrapText(ctx,text,maxWidth){

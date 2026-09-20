@@ -304,7 +304,7 @@ def update_home(all_guides):
     cards = ''.join(f'<a class="card" href="/guide/{g["slug"]}.html"><div class="title">{esc(g["meta"]["title"])}</div><div class="desc">{esc(g["meta"].get("description",""))}</div></a>\n      ' for g in latest)
     block = f'''
   <section class="group" id="생활 가이드" style="--card-accent:#a83a2c">
-    <div class="group-head"><h2>📝 생활 가이드</h2><span class="count">{len(all_guides)}편</span><a class="all" href="/guide/">전체 보기 →</a></div>
+    <div class="group-head"><h2><img class="hic" src="/icons/ui-guide.webp" width="26" height="26" alt="">생활 가이드</h2><span class="count">{len(all_guides)}편</span><a class="all" href="/guide/">전체 보기 →</a></div>
     <div class="cards">
       {cards}</div>
   </section>

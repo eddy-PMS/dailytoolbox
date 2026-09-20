@@ -57,7 +57,8 @@
   .hero-search .nb-results a:hover, .hero-search .nb-results a.sel { background:var(--paper-deep); }
   .hero-search .nb-results .none { padding:10px; font-size:12px; color:var(--ink-soft); }
   .hero-hot { display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-top:14px; }
-  .hero-hot .lb { font-size:12px; color:var(--ink-soft); margin-right:2px; white-space:nowrap; }
+  .hero-hot .lb { font-size:12px; color:var(--ink-soft); margin-right:2px; white-space:nowrap; display:inline-flex; align-items:center; gap:4px; }
+  .hero-hot .lb img { width:17px; height:17px; display:block; }
   .hero-hot a { border:1px solid #dbe6f7; border-radius:20px; padding:5px 11px; font-size:12.5px; color:var(--ink); text-decoration:none; background:#fff; white-space:nowrap; }
   .hero-hot a:hover { background:var(--paper-deep); }
   @media (max-width:700px) { .hero h1 { font-size:27px; } }
@@ -77,6 +78,9 @@
   .pop-card .t { display:block; font-size:13px; font-weight:700; line-height:1.35; }
   .pop-card .d { display:block; font-size:11px; color:var(--ink-soft); margin-top:3px; line-height:1.4; }
   .cat-nav { margin: 0 0 28px; }
+  .cat-head { display:flex; align-items:center; gap:8px; margin:0 0 10px; }
+  .cat-head h2 { font-size:17px; font-weight:700; margin:0; display:flex; align-items:center; gap:7px; }
+  .cat-head .all { margin-left:auto; font-size:12px; color:var(--ink-soft); text-decoration:none; }
   .cat-row { display:grid; grid-template-columns:repeat(7,1fr); gap:8px; }
   @media (max-width:860px){ .cat-row{ grid-template-columns:repeat(4,1fr); } }
   @media (max-width:480px){ .cat-row{ grid-template-columns:repeat(3,1fr); } }
@@ -95,14 +99,15 @@
   @media(max-width:520px){.jin-txt{display:none}}
   .e-wood{color:#2e7d4f}.e-fire{color:#c0392b}.e-earth{color:#9a6b1f}.e-metal{color:#7a7f8a}.e-water{color:#1f5fa8}
   .pop { margin: 0 0 26px; }
-  .pop h2 { font-size: 14px; margin: 0 0 8px; }
+  .pop h2 { font-size: 17px; font-weight: 700; margin: 0 0 10px; display:flex; align-items:center; gap:7px; }
   .pop .chips { display:flex; gap:8px; overflow-x:auto; padding-bottom:4px; scrollbar-width:none; }
   .pop .chips::-webkit-scrollbar{display:none}
   .pop .chips a { flex:none; border:1px solid var(--line); border-radius:20px; padding:7px 14px; font-size:13px; color:var(--ink); text-decoration:none; background:#fff; white-space:nowrap; }
   .pop .chips a:hover { background: var(--paper-deep); }
   .group { margin-bottom: 30px; scroll-margin-top: 70px; }
-  .group-head { display:flex; align-items:baseline; gap:8px; margin-bottom: 10px; }
-  .group-head h2 { font-size: 17px; margin: 0; font-weight: 700; }
+  .group-head { display:flex; align-items:center; gap:8px; margin-bottom: 10px; }
+  .group-head h2 { font-size: 17px; margin: 0; font-weight: 700; display:flex; align-items:center; gap:7px; }
+  .hic { width:26px; height:26px; flex:none; }
   .group-head .count { font-size: 12px; color: var(--ink-soft); }
   .group-head .all { margin-left:auto; font-size:12px; color:var(--ink-soft); text-decoration:none; }
   .group-head .all:hover { color:var(--ink); }
@@ -141,7 +146,7 @@
         <input type="search" placeholder="어떤 도구가 필요하세요? 연봉, PDF, 환율, 영어, 대출…" aria-label="도구 검색" autocomplete="off">
         <div class="nb-results"></div>
       </div>
-      <div class="hero-hot"><span class="lb">⚡ 인기 검색어</span><a href="salary.html">연봉 실수령액</a><a href="age.html">만 나이</a><a href="loan.html">대출 이자</a><a href="exchange.html">환율</a><a href="pdf-merge.html">PDF</a><a href="fortune.html">사주</a><a href="nonogram.html">네모로직</a></div>
+      <div class="hero-hot"><span class="lb"><img src="/icons/ui-new.webp" width="17" height="17" alt="">신규</span><a href="leave-pay.html">연차수당 계산기</a><a href="block-fill.html">블록 채우기</a><a href="nonogram.html">네모로직</a><a href="water-sort.html">물 붓기 퍼즐</a><a href="digit-span.html">숫자 외우기</a><a href="gonogo.html">참기 게임</a></div>
     </div>
   </section>
 
@@ -150,7 +155,7 @@
   </a>
 
   <section class="pop">
-    <h2>🔥 인기 도구</h2>
+    <h2><img class="hic" src="/icons/ui-hot.webp" width="26" height="26" alt="">인기 도구</h2>
     <div class="pop-cards">
       <a class="pop-card" href="salary.html"><span class="ic" style="background:#e8f6ee"><img src="/icons/salary.webp" width="34" height="34" alt=""></span><span class="t">연봉 실수령액</span><span class="d">세후 월급 계산</span></a>
       <a class="pop-card" href="age.html"><span class="ic" style="background:#fdeaef"><img src="/icons/age.webp" width="34" height="34" alt=""></span><span class="t">만 나이 계산기</span><span class="d">나이 · 다음 생일</span></a>
@@ -164,7 +169,7 @@
   <div class="ad-slot" data-ad="top"></div>
 
   <section class="cat-nav">
-    <div class="cat-head"><h2>🗂 카테고리로 둘러보기</h2></div>
+    <div class="cat-head"><h2><img class="hic" src="/icons/ui-cat.webp" width="26" height="26" alt="">카테고리로 둘러보기</h2></div>
     <div class="cat-row">
       <a href="#계산·생활" style="--cb:#e9f6ef;--cl:#cfe8dc"><img class="ic" src="/icons/cat-life.webp" width="40" height="40" alt=""><span class="t">계산·생활</span><span class="c" data-cnt="계산·생활">23개</span></a>
       <a href="#돈·일" style="--cb:#e7f0fd;--cl:#cfe0fa"><img class="ic" src="/icons/cat-money.webp" width="40" height="40" alt=""><span class="t">돈·일</span><span class="c" data-cnt="돈·일">20개</span></a>
@@ -177,7 +182,7 @@
   </section>
 <!-- guides:home:start -->
   <section class="group" id="생활 가이드" style="--card-accent:#a83a2c">
-    <div class="group-head"><h2>📝 생활 가이드</h2><span class="count">9편</span><a class="all" href="/guide/">전체 보기 →</a></div>
+    <div class="group-head"><h2><img class="hic" src="/icons/ui-guide.webp" width="26" height="26" alt="">생활 가이드</h2><span class="count">9편</span><a class="all" href="/guide/">전체 보기 →</a></div>
     <div class="cards">
       <a class="card" href="/guide/jeonse-wolse-guide.html"><div class="title">전세·월세 완전 정리 — 뭐가 유리한지, 보증금은 어떻게 지키는지</div><div class="desc">전세와 월세 중 뭐가 싼지는 전월세전환율 하나로 갈려요. 2026년 기준 전환율 상한, 계약 전 확인할 서류, 대항력·확정일자, 갱신요구권 5% 상한, 중개보수와 월세 세액공제까지 정리했어요.</div></a>
       <a class="card" href="/guide/freelancer-tax-33.html"><div class="title">프리랜서 3.3% 세금 완전 정리 — 떼인 세금 5월에 돌려받는 방법</div><div class="desc">프리랜서로 받는 돈에서 떼는 3.3%는 세금이 아니라 미리 낸 돈이에요. 3.3%와 8.8%의 차이, 단순경비율로 환급받는 구조, 5월 종합소득세 신고 순서와 4대보험까지 정리했어요.</div></a>
@@ -190,7 +195,7 @@
 <!-- guides:home:end -->
 
   <section class="group" id="계산·생활" style="--card-accent:#3a3f4a">
-    <div class="group-head"><h2>🧮 계산·생활</h2><span class="count">23개</span><a class="all" href="#계산·생활" data-expand="1">전체 보기 →</a></div>
+    <div class="group-head"><h2><img class="hic" src="/icons/cat-life.webp" width="26" height="26" alt="">계산·생활</h2><span class="count">23개</span><a class="all" href="#계산·생활" data-expand="1">전체 보기 →</a></div>
     <div class="cards">
       <a class="card" href="salary.html"><img class="cic" src="/icons/salary.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="ct"><div class="title">연봉 실수령액</div><div class="desc">2026년 4대보험·소득세 반영, 세후 월급 계산</div></span></a>
       <a class="card" href="severance.html"><img class="cic" src="/icons/severance.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="ct"><div class="title">퇴직금 계산기</div><div class="desc">입사·퇴사일과 최근 급여로 예상 퇴직금</div></span></a>
@@ -220,7 +225,7 @@
   </section>
 
   <section class="group" id="돈·일" style="--card-accent:#8a5f25">
-    <div class="group-head"><h2>💼 돈·일</h2><span class="count">20개</span><a class="all" href="#돈·일" data-expand="1">전체 보기 →</a></div>
+    <div class="group-head"><h2><img class="hic" src="/icons/cat-money.webp" width="26" height="26" alt="">돈·일</h2><span class="count">20개</span><a class="all" href="#돈·일" data-expand="1">전체 보기 →</a></div>
     <div class="cards">
       <a class="card" href="parttime.html"><img class="cic" src="/icons/parttime.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="ct"><div class="title">알바 급여 계산기</div><div class="desc">2026 최저시급, 주휴·야간·연장수당 반영</div></span></a>
       <a class="card" href="raise.html"><img class="cic" src="/icons/raise.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="ct"><div class="title">연봉 인상률 계산기</div><div class="desc">인상률·실수령 변화, N년 뒤 연봉 전망</div></span></a>
@@ -249,7 +254,7 @@
   <div class="ad-slot" data-ad="infeed"></div>
 
   <section class="group" id="가족·건강" style="--card-accent:#c0392b">
-    <div class="group-head"><h2>👨‍👩‍👧 가족·건강</h2><span class="count">9개</span><a class="all" href="#가족·건강" data-expand="1">전체 보기 →</a></div>
+    <div class="group-head"><h2><img class="hic" src="/icons/cat-family.webp" width="26" height="26" alt="">가족·건강</h2><span class="count">9개</span><a class="all" href="#가족·건강" data-expand="1">전체 보기 →</a></div>
     <div class="cards">
       <a class="card" href="pregnancy.html"><img class="cic" src="/icons/pregnancy.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="ct"><div class="title">출산예정일·임신 주수</div><div class="desc">마지막 생리일로 예정일, 현재 주수, 검사 시기</div></span></a>
       <a class="card" href="ovulation.html"><img class="cic" src="/icons/ovulation.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="ct"><div class="title">배란일·가임기</div><div class="desc">3개월치 배란일과 가임기, 다음 생리 예정일</div></span></a>
@@ -265,7 +270,7 @@
   </section>
 
   <section class="group" id="공부·어학" style="--card-accent:#2b5fd9">
-    <div class="group-head"><h2>📚 공부·어학</h2><span class="count">25개</span><a class="all" href="#공부·어학" data-expand="1">전체 보기 →</a></div>
+    <div class="group-head"><h2><img class="hic" src="/icons/cat-study.webp" width="26" height="26" alt="">공부·어학</h2><span class="count">25개</span><a class="all" href="#공부·어학" data-expand="1">전체 보기 →</a></div>
     <div class="cards">
       <div class="subhead">학생</div>
       <a class="card" href="gpa.html"><img class="cic" src="/icons/gpa.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="ct"><div class="title">학점 계산기</div><div class="desc">4.5·4.3·100점 환산, 누적 평점</div></span></a>
@@ -302,7 +307,7 @@
   </section>
 
   <section class="group" id="퍼즐·게임" style="--card-accent:#2f7d4f">
-    <div class="group-head"><h2>🎮 퍼즐·게임</h2><span class="count">10개</span><a class="all" href="#퍼즐·게임" data-expand="1">전체 보기 →</a></div>
+    <div class="group-head"><h2><img class="hic" src="/icons/cat-game.webp" width="26" height="26" alt="">퍼즐·게임</h2><span class="count">10개</span><a class="all" href="#퍼즐·게임" data-expand="1">전체 보기 →</a></div>
     <div class="cards">
       <a class="card" href="game2048.html"><img class="cic" src="/icons/game2048.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="ct"><div class="title">2048 게임</div><div class="desc">타일 합쳐 2048 만들기, 점수 랭킹 등록</div></span></a>
       <a class="card" href="nonogram.html"><img class="cic" src="/icons/nonogram.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="ct"><div class="title">네모로직 (노노그램)</div><div class="desc">5×5부터 30×30까지 100레벨, 도달 레벨 랭킹</div></span></a>
@@ -321,7 +326,7 @@
   <div class="ad-slot" data-ad="infeed"></div>
 
   <section class="group" id="두뇌·감각 훈련" style="--card-accent:#2f5d4e">
-    <div class="group-head"><h2>🧠 두뇌·감각 훈련</h2><span class="count">6개</span></div>
+    <div class="group-head"><h2><img class="hic" src="/icons/cat-brain.webp" width="26" height="26" alt="">두뇌·감각 훈련</h2><span class="count">6개</span></div>
     <div class="cards">
       <a class="card" href="reaction.html"><img class="cic" src="/icons/reaction.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="ct"><div class="title">반응속도 테스트</div><div class="desc">초록색이 되면 클릭, 5회 평균 ms와 등급</div></span></a>
       <a class="card" href="digit-span.html"><img class="cic" src="/icons/digit-span.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="ct"><div class="title">숫자 외우기</div><div class="desc">숫자가 사라지면 순서대로 입력, 최대 자릿수 랭킹</div></span></a>
@@ -333,7 +338,7 @@
   </section>
 
   <section class="group" id="테스트·재미" style="--card-accent:#7b3fa0">
-    <div class="group-head"><h2>🎉 테스트·재미</h2><span class="count">12개</span><a class="all" href="#테스트·재미" data-expand="1">전체 보기 →</a></div>
+    <div class="group-head"><h2><img class="hic" src="/icons/cat-fun.webp" width="26" height="26" alt="">테스트·재미</h2><span class="count">12개</span><a class="all" href="#테스트·재미" data-expand="1">전체 보기 →</a></div>
     <div class="cards">
       <a class="card" href="ladder.html"><img class="cic" src="/icons/ladder.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="ct"><div class="title">사다리타기</div><div class="desc">이름 클릭하면 길 따라가는 온라인 사다리</div></span></a>
       <a class="card" href="team.html"><img class="cic" src="/icons/team.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="ct"><div class="title">팀 나누기</div><div class="desc">이름 넣고 팀 수 정하면 랜덤 편성</div></span></a>

@@ -16,16 +16,16 @@
     + '#site-nav{--nav-accent:' + accent + ';width:calc(100% + 40px);margin:0 -20px 26px;background:#fffdf8;border-bottom:1px solid rgba(0,0,0,.1);font-family:inherit;position:relative;z-index:60}'
     + '#site-nav *{box-sizing:border-box}'
     + '#site-nav .nb-in{max-width:1100px;margin:0 auto;padding:0 16px;height:54px;display:flex;align-items:center;gap:10px}'
-    + '#site-nav .nb-logo{display:flex;align-items:center;gap:8px;text-decoration:none;color:rgba(0,0,0,.85);font-size:15px;font-weight:700;white-space:nowrap;margin-right:6px}'
+    + '#site-nav .nb-logo{display:flex;align-items:center;gap:8px;text-decoration:none;color:rgba(0,0,0,.85);font-size:15px;font-weight:700;white-space:nowrap;margin-right:4px;flex:none}'
     + '#site-nav .nb-d{width:22px;height:22px;display:block;flex:none;margin:0 1px 0 3px}'
-    + '#site-nav .nb-groups{display:flex;align-items:center;gap:2px;flex:1;min-width:0}'
-    + '#site-nav .nb-groups a,#site-nav .nb-groups button{font-family:inherit;font-size:13px;color:rgba(0,0,0,.66);text-decoration:none;padding:6px 9px;border-radius:3px;background:none;border:none;cursor:pointer;line-height:1.4;white-space:nowrap}'
+    + '#site-nav .nb-groups{display:flex;align-items:center;gap:0;flex:0 1 auto;min-width:0;white-space:nowrap}'
+    + '#site-nav .nb-groups a,#site-nav .nb-groups button{font-family:inherit;font-size:13px;color:rgba(0,0,0,.66);text-decoration:none;padding:6px 7px;border-radius:3px;background:none;border:none;cursor:pointer;line-height:1.4;white-space:nowrap}'
     + '#site-nav .nb-groups a:hover,#site-nav .nb-groups button:hover{background:rgba(0,0,0,.06);color:rgba(0,0,0,.88)}'
     + '#site-nav .nav-group{position:relative}'
     + '#site-nav .nav-group>button{display:flex;align-items:center;gap:4px}'
     + '#site-nav .nav-group>button .caret{font-size:8px;opacity:.55}'
     + '#site-nav .nav-group.has-active>button{color:var(--nav-accent);font-weight:700}'
-    + '#site-nav .nb-guide.active{color:var(--nav-accent);font-weight:700}'
+    + '#site-nav .nb-guide{flex:none}#site-nav .nb-guide.active{color:var(--nav-accent);font-weight:700}'
     + '#site-nav .nav-menu{display:none;position:absolute;top:100%;left:0;min-width:200px;max-height:70vh;overflow:auto;background:#fffdf8;border:1px solid rgba(0,0,0,.12);border-radius:4px;box-shadow:0 8px 22px rgba(0,0,0,.1);padding:6px;z-index:70;flex-direction:column;gap:1px;margin-top:2px}'
     + '#site-nav .nav-menu::before{content:"";position:absolute;left:0;right:0;top:-8px;height:8px}'
     + '#site-nav .nav-menu a{display:block;white-space:nowrap;font-size:13px}'
@@ -33,7 +33,7 @@
     + '#site-nav .nav-menu a.active{background:var(--nav-accent);color:#fffdf8}'
     + '#site-nav .nav-group.open .nav-menu{display:flex}'
     + '@media (hover:hover){#site-nav .nav-group:hover .nav-menu{display:flex}}'
-    + '#site-nav .nb-search{position:relative;margin-left:auto;width:230px}'
+    + '#site-nav .nb-search{position:relative;margin-left:auto;flex:0 1 210px;min-width:120px}'
     + '#site-nav .nb-search input{width:100%;padding:7px 12px 7px 32px;border:1px solid rgba(0,0,0,.14);border-radius:16px;font-size:13px;font-family:inherit;background:#fff url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%2357534b%27 stroke-width=%272.2%27%3E%3Ccircle cx=%2711%27 cy=%2711%27 r=%277%27/%3E%3Cpath d=%27M20 20l-4-4%27/%3E%3C/svg%3E") 10px center/15px no-repeat;color:inherit}'
     + '#site-nav .nb-search input:focus{outline:none;border-color:var(--nav-accent)}'
     + '#site-nav .nb-results{display:none;position:absolute;top:100%;right:0;left:0;margin-top:4px;background:#fffdf8;border:1px solid rgba(0,0,0,.12);border-radius:4px;box-shadow:0 8px 22px rgba(0,0,0,.1);padding:4px;z-index:80;max-height:60vh;overflow:auto}'
@@ -57,7 +57,8 @@
     + '#site-nav .nb-drawer .dl .sub{font-size:11px;color:rgba(0,0,0,.45);padding:8px 8px 2px;font-weight:700}'
     + '#site-nav .nb-drawer .dl-foot{margin-top:14px;font-size:13px;display:flex;gap:14px;justify-content:center}'
     + '#site-nav .nb-drawer .dl-foot a{color:rgba(0,0,0,.55);text-decoration:none}'
-    + '@media (max-width:920px){#site-nav .nb-groups,#site-nav .nb-in>.nb-search{display:none}#site-nav .nb-burger{display:flex}}'
+    + '@media (max-width:1180px){#site-nav .nb-in>.nb-search{display:none}}'
+    + '@media (max-width:1040px){#site-nav .nb-groups,#site-nav .nb-in>.nb-search{display:none}#site-nav .nb-burger{display:flex}}'
     + 'body.nb-lock{overflow:hidden}'
     + '#site-footer-links{width:100%;max-width:680px;margin:40px auto 0;padding-top:16px;border-top:1px solid rgba(0,0,0,.12);font-size:12px;text-align:center;line-height:2}'
     + '#site-footer-links a{color:rgba(0,0,0,.5);text-decoration:none;margin:0 6px}'
@@ -80,7 +81,8 @@
   var bar = '<div class="nb-in"><a class="nb-logo" href="/"><img class="nb-d" src="/favicon.svg" width="22" height="22" alt=""><b>데일리 프리 툴박스</b></a><div class="nb-groups">';
   GROUPS.forEach(function (g) {
     var hasActive = g.items.some(function (it) { return it[0] === path; });
-    bar += '<div class="nav-group' + (hasActive ? ' has-active' : '') + '"><button type="button" aria-haspopup="true" aria-expanded="false">' + esc(g.label) + ' <span class="caret">▼</span></button><div class="nav-menu" role="menu">' + groupMenu(g) + '</div></div>';
+    var shortLabel = g.label.replace(' 훈련', '');   // 상단 바는 짧게, 드롭다운·드로어는 전체 이름
+    bar += '<div class="nav-group' + (hasActive ? ' has-active' : '') + '"><button type="button" aria-haspopup="true" aria-expanded="false">' + esc(shortLabel) + ' <span class="caret">▼</span></button><div class="nav-menu" role="menu">' + groupMenu(g) + '</div></div>';
   });
   bar += '<a href="/guide/" class="nb-guide' + (location.pathname.indexOf('/guide/') === 0 ? ' active' : '') + '">📝 가이드</a></div><div class="nb-search"><input type="search" placeholder="도구 검색" aria-label="도구 검색" autocomplete="off"><div class="nb-results"></div></div><button class="nb-burger" type="button" aria-label="메뉴 열기" aria-expanded="false"><i></i><i></i><i></i></button></div>';
   // ---- 모바일 드로어 ----

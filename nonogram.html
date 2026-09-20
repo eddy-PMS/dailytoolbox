@@ -82,7 +82,7 @@ table.ng td.h.done{color:#b8b0a0}
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>숫자가 무슨 뜻인가요?</summary><p>그 줄에서 연속으로 칠해진 칸의 길이예요. '2 3'이면 2칸 연속, 최소 한 칸 띄우고, 3칸 연속이 칠해져 있어요. 순서도 그대로예요.</p></details><details><summary>추측해야 풀리는 문제도 있나요?</summary><p>없어요. 생성할 때 논리만으로 끝까지 풀리는지 검사해서 통과한 문제만 내요. 30×30도 마찬가지예요.</p></details><details><summary>큰 판은 폰에서 어떻게 푸나요?</summary><p>13×13부터는 드래그 대신 한 칸씩 탭으로 칠하고, 화면은 손가락으로 스크롤해요. +/− 버튼으로 칸 크기를 바꿀 수 있어요.</p></details><details><summary>랭킹은 어떻게 등록하나요?</summary><p>레벨을 깬 뒤 "여기까지 하고 랭킹 등록"을 누르면 이번 판에서 직접 깬 최고 레벨로 올라가요. 진행은 저장되니 다음에 이어서 더 높은 레벨로 다시 등록할 수 있어요.</p></details></section>
-  <footer>기록은 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 기록이 서버에 저장돼요. 이 테스트는 특정 능력을 측정·연습하는 놀이이며 의학적 검사가 아니에요.<br><span class="version-tag">v2.7 · 2026-09-19 업데이트</span></footer>
+  <footer>기록은 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 기록이 서버에 저장돼요. 이 테스트는 특정 능력을 측정·연습하는 놀이이며 의학적 검사가 아니에요.<br><span class="version-tag">v2.8 · 2026-09-19 업데이트</span></footer>
 </main>
 
 <script src="leaderboard.js"></script>
@@ -206,7 +206,18 @@ function clearLevel(){
   $('overlay').style.display='flex'; $('overlay').parentElement.classList.add('show-ov'); $('next').addEventListener('click',()=>{ level++; loadLevel(); }); showBest();
   if(typeof gtag==='function') gtag('event','nono_cleared',{level,ms,art:art?art.n:''});
 }
-function start(){ level=Math.max(1,+localStorage.getItem('nono_level')||1); cleared=0; totalMs=0; startedAt=Date.now(); loadLevel(); }
+function beginFrom(lv){ level=lv; cleared=0; totalMs=0; startedAt=Date.now(); loadLevel(); }
+function start(){
+  const next=Math.max(1,+localStorage.getItem('nono_level')||1);
+  let sv=null; try{ sv=JSON.parse(localStorage.getItem('nono_grid')); }catch(e){}
+  const inProg= sv && sv.level===next && Array.isArray(sv.grid) && sv.grid.some(row=>row.some(v=>v));
+  if(next<=1 && !inProg){ beginFrom(1); return; }
+  const passed=next-1;
+  $('overlay').innerHTML=`<div style="font-size:15px;line-height:1.7">${passed>0?`이전에 <b>${passed}레벨</b>까지 통과하셨습니다.`:''}${inProg?`<br>풀던 <b>${next}레벨</b> 판이 저장돼 있어요.`:''}<br>${inProg?'이어서':'다음 레벨부터'} 진행할까요?</div><div class="btn-row" style="justify-content:center;margin-top:6px"><button class="btn" id="resumeBtn">${inProg?`${next}레벨 이어하기`:`${next}레벨부터 계속`}</button><button class="btn-ghost" id="restartBtn">1레벨부터 다시하기</button></div><div class="note" style="margin:0">최고 기록(레벨 ${best})은 그대로 남아요</div>`;
+  $('overlay').style.display='flex';
+  $('resumeBtn').addEventListener('click',()=>beginFrom(next));
+  $('restartBtn').addEventListener('click',()=>{ if(!confirm('진행 상황을 지우고 1레벨부터 다시 시작할까요? (최고 기록은 유지돼요)')) return; localStorage.removeItem('nono_level'); localStorage.removeItem('nono_grid'); beginFrom(1); });
+}
 function showBest(){ $('bestLocal').textContent= best? '내 최고 레벨 '+best : ''; const bn=$('bestNote'); if(bn) bn.textContent= best? '내 최고 레벨 '+best+' · 이어서 레벨 '+(+localStorage.getItem('nono_level')||1)+'부터':''; }
 $('mFill').addEventListener('click',()=>{ mode='fill'; $('mFill').classList.add('on'); $('mX').classList.remove('on'); });
 $('mX').addEventListener('click',()=>{ mode='x'; $('mX').classList.add('on'); $('mFill').classList.remove('on'); });

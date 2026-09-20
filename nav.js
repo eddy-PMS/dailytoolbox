@@ -25,6 +25,7 @@
     + '#site-nav .nav-group>button{display:flex;align-items:center;gap:4px}'
     + '#site-nav .nav-group>button .caret{font-size:8px;opacity:.55}'
     + '#site-nav .nav-group.has-active>button{color:var(--nav-accent);font-weight:700}'
+    + '#site-nav .nb-guide.active{color:var(--nav-accent);font-weight:700}'
     + '#site-nav .nav-menu{display:none;position:absolute;top:100%;left:0;min-width:200px;max-height:70vh;overflow:auto;background:#fffdf8;border:1px solid rgba(0,0,0,.12);border-radius:4px;box-shadow:0 8px 22px rgba(0,0,0,.1);padding:6px;z-index:70;flex-direction:column;gap:1px;margin-top:2px}'
     + '#site-nav .nav-menu::before{content:"";position:absolute;left:0;right:0;top:-8px;height:8px}'
     + '#site-nav .nav-menu a{display:block;white-space:nowrap;font-size:13px}'
@@ -72,23 +73,23 @@
     var h = '', lastSub = '';
     g.items.forEach(function (it) {
       if (it[3] && it[3] !== lastSub) { h += '<div class="sub">' + esc(it[3]) + '</div>'; lastSub = it[3]; }
-      h += '<a href="' + it[0] + '" role="menuitem"' + (it[0] === path ? ' class="active" aria-current="page"' : '') + '>' + esc(it[1]) + '</a>';
+      h += '<a href="/' + it[0] + '" role="menuitem"' + (it[0] === path ? ' class="active" aria-current="page"' : '') + '>' + esc(it[1]) + '</a>';
     });
     return h;
   }
-  var bar = '<div class="nb-in"><a class="nb-logo" href="index.html"><img class="nb-d" src="favicon.svg" width="22" height="22" alt=""><b>데일리 프리 툴박스</b></a><div class="nb-groups">';
+  var bar = '<div class="nb-in"><a class="nb-logo" href="/"><img class="nb-d" src="/favicon.svg" width="22" height="22" alt=""><b>데일리 프리 툴박스</b></a><div class="nb-groups">';
   GROUPS.forEach(function (g) {
     var hasActive = g.items.some(function (it) { return it[0] === path; });
     bar += '<div class="nav-group' + (hasActive ? ' has-active' : '') + '"><button type="button" aria-haspopup="true" aria-expanded="false">' + esc(g.label) + ' <span class="caret">▼</span></button><div class="nav-menu" role="menu">' + groupMenu(g) + '</div></div>';
   });
-  bar += '</div><div class="nb-search"><input type="search" placeholder="도구 검색" aria-label="도구 검색" autocomplete="off"><div class="nb-results"></div></div><button class="nb-burger" type="button" aria-label="메뉴 열기" aria-expanded="false"><i></i><i></i><i></i></button></div>';
+  bar += '<a href="/guide/" class="nb-guide' + (location.pathname.indexOf('/guide/') === 0 ? ' active' : '') + '">📝 가이드</a></div><div class="nb-search"><input type="search" placeholder="도구 검색" aria-label="도구 검색" autocomplete="off"><div class="nb-results"></div></div><button class="nb-burger" type="button" aria-label="메뉴 열기" aria-expanded="false"><i></i><i></i><i></i></button></div>';
   // ---- 모바일 드로어 ----
   var drawer = '<div class="nb-drawer"><div class="nb-search"><input type="search" placeholder="도구 검색" aria-label="도구 검색" autocomplete="off"><div class="nb-results"></div></div>';
   GROUPS.forEach(function (g) {
     var hasActive = g.items.some(function (it) { return it[0] === path; });
     drawer += '<details' + (hasActive ? ' open' : '') + '><summary>' + g.icon + ' ' + esc(g.label) + ' <small>' + g.items.length + '개</small></summary><div class="dl">' + groupMenu(g) + '</div></details>';
   });
-  drawer += '<div class="dl-foot"><a href="index.html">홈</a><a href="about.html">사이트 소개</a><a href="privacy.html">개인정보처리방침</a></div></div>';
+  drawer += '<div class="dl-foot"><a href="/">홈</a><a href="/guide/">생활 가이드</a><a href="/about.html">사이트 소개</a><a href="/privacy.html">개인정보처리방침</a></div></div>';
   nav.innerHTML = bar + drawer;
 
   // ---- 드롭다운 동작 ----
@@ -130,7 +131,7 @@
     function render() {
       var list = search(input.value);
       if (!input.value.trim()) { res.classList.remove('show'); res.innerHTML = ''; return; }
-      res.innerHTML = list.length ? list.map(function (x, i) { return '<a href="' + x.f + '" class="' + (i === sel ? 'sel' : '') + '">' + esc(x.t) + '<small>' + esc(x.g) + ' · ' + esc(x.d) + '</small></a>'; }).join('') : '<div class="none">검색 결과가 없어요</div>';
+      res.innerHTML = list.length ? list.map(function (x, i) { return '<a href="/' + x.f + '" class="' + (i === sel ? 'sel' : '') + '">' + esc(x.t) + '<small>' + esc(x.g) + ' · ' + esc(x.d) + '</small></a>'; }).join('') : '<div class="none">검색 결과가 없어요</div>';
       res.classList.add('show');
     }
     input.addEventListener('input', function () { sel = -1; render(); });
@@ -149,8 +150,8 @@
   function addExtras() {
     if (!document.getElementById('site-footer-links')) {
       var box = document.createElement('div'); box.id = 'site-footer-links'; box.style.setProperty('--nav-accent', accent);
-      var g = GROUPS.map(function (x) { return '<a href="index.html#' + encodeURIComponent(x.label) + '">' + esc(x.label) + '</a>'; }).join('');
-      box.innerHTML = '<div>' + g + '</div><div><a href="index.html">홈</a><a href="about.html"' + (path === 'about.html' ? ' class="active"' : '') + '>사이트 소개</a><a href="privacy.html"' + (path === 'privacy.html' ? ' class="active"' : '') + '>개인정보처리방침</a></div>';
+      var g = GROUPS.map(function (x) { return '<a href="/#' + encodeURIComponent(x.label) + '">' + esc(x.label) + '</a>'; }).join('');
+      box.innerHTML = '<div>' + g + '</div><div><a href="/">홈</a><a href="/guide/"' + (location.pathname.indexOf('/guide/') === 0 ? ' class="active"' : '') + '>생활 가이드</a><a href="/about.html"' + (path === 'about.html' ? ' class="active"' : '') + '>사이트 소개</a><a href="/privacy.html"' + (path === 'privacy.html' ? ' class="active"' : '') + '>개인정보처리방침</a></div>';
       var main = document.querySelector('main');
       if (main && main.parentNode) main.parentNode.insertBefore(box, main.nextSibling); else document.body.appendChild(box);
     }
@@ -161,5 +162,5 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', addExtras); else addExtras();
 
   // 광고 로더 (설정은 ads-admin.html 에서, 전 페이지 자동 적용)
-  if (path !== 'ads-admin.html') { var adsS = document.createElement('script'); adsS.src = 'ads.js'; adsS.defer = true; document.head.appendChild(adsS); }
+  if (path !== 'ads-admin.html') { var adsS = document.createElement('script'); adsS.src = '/ads.js'; adsS.defer = true; document.head.appendChild(adsS); }
 })();

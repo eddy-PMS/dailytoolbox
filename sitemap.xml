@@ -530,4 +530,29 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+<!-- guides:start -->
+  <url>
+    <loc>https://dailyfreetoolbox.com/guide/</loc>
+  </url>
+  <url>
+    <loc>https://dailyfreetoolbox.com/guide/annual-leave-rules.html</loc>
+    <lastmod>2026-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://dailyfreetoolbox.com/guide/saju-basics.html</loc>
+    <lastmod>2026-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://dailyfreetoolbox.com/guide/salary-take-home-2026.html</loc>
+    <lastmod>2026-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://dailyfreetoolbox.com/guide/severance-pay-how-to.html</loc>
+    <lastmod>2026-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://dailyfreetoolbox.com/guide/unemployment-benefit-2026.html</loc>
+    <lastmod>2026-09-19</lastmod>
+  </url>
+<!-- guides:end -->
 </urlset>

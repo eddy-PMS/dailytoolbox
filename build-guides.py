@@ -251,7 +251,14 @@ def render_index(all_guides):
     sections = ''
     for c in cats:
         items = [g for g in all_guides if g['meta'].get('category', '기타') == c]
-        cards = ''.join(f'<a class="guide-card" href="/guide/{g["slug"]}.html"><b>{esc(g["meta"]["title"])}</b><p>{esc(g["meta"].get("description",""))}</p><small>{esc(g["meta"].get("updated", g["meta"].get("date","")))} · 관련 도구 {len(g["meta"]["tools"])}개</small></a>' for g in items)
+        # .guide-card 는 display:flex 이므로 본문은 .tx 로 감싼다. 안 감싸면 제목·설명·날짜가 가로 3칸으로 나뉜다.
+        cards = ''.join(
+            f'<a class="guide-card" href="/guide/{g["slug"]}.html">'
+            f'<img class="gic" src="/icons/ui-guide.webp" width="30" height="30" alt="" loading="lazy" decoding="async">'
+            f'<div class="tx"><b>{esc(g["meta"]["title"])}</b>'
+            f'<p>{esc(g["meta"].get("description",""))}</p>'
+            f'<small>{esc(g["meta"].get("updated", g["meta"].get("date","")))} · 관련 도구 {len(g["meta"]["tools"])}개</small></div></a>'
+            for g in items)
         sections += f'<section class="group" id="{esc(c)}" style="--accent:{CAT_ACCENT.get(c,"#2f7d4f")}"><div class="group-head" style="margin:26px 0 10px"><h2 style="font-size:17px;margin:0">{esc(c)}</h2><span class="count" style="font-size:12px;color:var(--ink-soft);margin-left:8px">{len(items)}편</span></div><div class="guide-list">{cards}</div></section>'
     ld = json.dumps({"@context": "https://schema.org", "@type": "CollectionPage", "name": "생활 가이드", "url": canonical, "description": "연봉·퇴직금·실업급여·연차·사주처럼 매일 쓰는 도구 뒤에 있는 규칙과 계산법을 정리한 글 모음"}, ensure_ascii=False)
     return head_common('생활 가이드 - 계산기 뒤의 규칙과 방법을 정리한 글 | 데일리 프리 툴박스', '연봉 실수령액·퇴직금·실업급여·연차·사주 보는 법처럼 도구를 쓰기 전에 알아두면 좋은 규칙과 계산 방법을 정리한 생활 가이드. 각 글에서 관련 계산기로 바로 이동.', canonical, '생활 가이드, 계산 방법, 실수령액 계산법, 퇴직금 계산법, 실업급여 조건, 연차 계산법, 사주 보는 법', f'<script type="application/ld+json">{ld}</script>') + '''<style>:root { --accent:#2f7d4f; --accent-deep:#23603c; }</style>

@@ -52,7 +52,7 @@
         loadAdsense(cfg.client);
         var ins = document.createElement('ins'); ins.className = 'adsbygoogle'; ins.style.display = 'block';
         ins.setAttribute('data-ad-client', cfg.client); ins.setAttribute('data-ad-slot', sc.slot);
-        // 사이드 두 자리는 고정 크기. 왼쪽 세로는 레일 폭에 맞춰 1380px 미만에서만 160px (nav.js 참고)
+        // 사이드 두 자리는 고정 크기. 표준 규격이라야 제대로 채워진다 (레일 폭은 nav.js 참고)
         if (k === 'side') { ins.style.width = (window.innerWidth >= 1380 ? 300 : 160) + 'px'; ins.style.height = '600px'; }
         else if (k === 'side-box') { ins.style.width = '300px'; ins.style.height = '250px'; }
         else { ins.setAttribute('data-ad-format', sc.format || 'auto'); ins.setAttribute('data-full-width-responsive', 'true'); }

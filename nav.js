@@ -70,12 +70,14 @@
     // 왼쪽 — 세로로 긴 광고 하나. 화면에 고정해 스크롤해도 계속 보인다.
     //        300px 를 쓰면 왼쪽 끝이 50%-664px 이라 창이 1345px 이상이어야 안 잘리므로,
     //        1100~1380px 구간만 160px 로 줄여 넣고 1380px 부터 오른쪽과 같은 300px 로 넓힌다.
-    + '#rail-l{display:none;position:fixed;top:80px;bottom:12px;right:calc(50% + 364px);width:160px}'
+    // 폭에 +8px 은 내부 스크롤바 자리. 이만큼 빼두지 않으면 스크롤바가 생길 때 광고 오른쪽이 잘린다.
+    // right 도 8px 당겨 광고 자체는 본문에서 24px 떨어진 위치를 유지한다.
+    + '#rail-l{display:none;position:fixed;top:80px;bottom:12px;right:calc(50% + 356px);width:168px}'
     + '@media (min-width:1100px){#rail-l{display:block}}'
-    + '@media (min-width:1380px){#rail-l{width:300px}}'
+    + '@media (min-width:1380px){#rail-l{width:308px}}'
     // 오른쪽 — 박스 광고(300×250) 먼저, 그 아래 관련 도구·가이드(아래 moveToRail).
     //          오른쪽 끝이 50%+664px 이라 스크롤바를 감안하면 창이 1380px 이상이어야 안 잘린다.
-    + '#rail-r{display:none;position:fixed;top:80px;bottom:12px;left:calc(50% + 364px);width:300px}'
+    + '#rail-r{display:none;position:fixed;top:80px;bottom:12px;left:calc(50% + 364px);width:308px}'
     + '@media (min-width:1380px){#rail-r{display:block}}'
     // 두 레일 모두 화면에 고정해 스크롤을 따라오게 한다. 다만 내용(오른쪽은 900px 안팎, 왼쪽은 광고 600px)이
     // 화면 높이를 넘을 수 있으므로 top/bottom 으로 높이를 화면에 맞추고 넘치는 만큼만 레일 안에서 스크롤한다.
@@ -83,7 +85,10 @@
     + '#rail-l,#rail-r{overflow-y:auto;scrollbar-width:thin;scrollbar-color:#cbd2de transparent}'
     + '#rail-l::-webkit-scrollbar,#rail-r::-webkit-scrollbar{width:6px}'
     + '#rail-l::-webkit-scrollbar-thumb,#rail-r::-webkit-scrollbar-thumb{background:#cbd2de;border-radius:3px}'
+    // 광고 자리는 스크롤바 자리를 뺀 폭(왼쪽 160/300, 오른쪽 300)으로 잡아, 직접 넣은 HTML 배너도 같은 폭이 되게 한다
+    + '#rail-l .ad-slot,#rail-r .ad-slot{width:calc(100% - 8px)}'
     + '#rail-r .ad-slot{margin:0 0 20px}'
+    // 레일 안은 광고·카드 모두 300px 로 폭을 맞춘다(상자 308px = 300 + 스크롤바 8)
     + '#rail-r .sibs,#rail-r .guides-rel,#rail-r .guide-tools{margin:0 0 18px}'
     + '#rail-r .sibs .chips{grid-template-columns:1fr;gap:6px}'
     + '#rail-r .guide-tools .grid{grid-template-columns:1fr}'

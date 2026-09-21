@@ -72,7 +72,8 @@ window.LB = (function () {
   }
 
   return {
-    init(o) { S.game = o.game; S.el = typeof o.el === 'string' ? document.querySelector(o.el) : o.el; S.lower = !!o.lower; S.format = o.format || (v => v); S.label = o.label || '점수'; css(); render(); load(); },
+    // 같은 페이지에서 난이도를 바꿀 때처럼 다시 불릴 수 있어, 이전 판의 등록 폼·결과는 비우고 시작한다
+    init(o) { S.game = o.game; S.el = typeof o.el === 'string' ? document.querySelector(o.el) : o.el; S.lower = !!o.lower; S.format = o.format || (v => v); S.label = o.label || '점수'; S.data = null; S.tab = 'weekly'; S.pending = null; S.expanded = false; S.noteHtml = ''; S.lastName = null; S.lastScore = null; css(); render(); load(); },
     submit(score, o) { S.pending = { score, duration: (o && o.duration) || 0, meta: (o && o.meta) || '', units: (o && o.units) || 0 }; S.noteHtml = ''; render(); const f = $('.lb-form'); if (f) f.scrollIntoView({ behavior: 'smooth', block: 'center' }); },
     refresh: load
   };

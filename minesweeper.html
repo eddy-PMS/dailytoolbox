@@ -53,7 +53,7 @@
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#퍼즐·게임">퍼즐·게임</a><span>›</span>지뢰찾기</nav>
   <h1><img class="h1ic" src="/icons/minesweeper.webp" width="32" height="32" alt="">지뢰찾기</h1>
-  <p class="sub">숫자를 단서로 지뢰가 없는 칸을 모두 열면 이겨요. 설치 없이 바로 할 수 있고 최고 기록은 이 기기에 저장돼요.</p>
+  <p class="sub">숫자를 단서로 지뢰가 없는 칸을 모두 열면 이겨요. 설치 없이 바로 할 수 있고, 난이도별로 이번 주·전체 랭킹에 기록을 올릴 수 있어요.</p>
   <div class="ad-slot" data-ad="top"></div>
 
   <div class="card">
@@ -67,23 +67,33 @@
     <div class="ms-msg" id="msg"></div>
     <div class="status" id="best"></div>
   </div>
+
+  <div id="lb"></div>
+
  <div class="ad-slot" data-ad="below-result"></div>
 <div class="sibs"><div class="lb">퍼즐·게임 도구 더 보기</div><div class="chips"><a href="nonogram.html"><img class="sic" src="/icons/nonogram.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>네모로직</span></a><a href="water-sort.html"><img class="sic" src="/icons/water-sort.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>물 붓기 퍼즐</span></a><a href="block-fill.html"><img class="sic" src="/icons/block-fill.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>블록 채우기</span></a><a href="game2048.html"><img class="sic" src="/icons/game2048.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>2048 게임</span></a><a href="order.html"><img class="sic" src="/icons/order.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>숫자 순서 누르기</span></a><a href="math-speed.html"><img class="sic" src="/icons/math-speed.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>암산 스피드</span></a><a class="more" href="index.html#퍼즐·게임">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>지뢰찾기 규칙</h2><p>칸을 열면 숫자가 나오는데, 이 숫자는 <b>그 칸에 맞닿은 여덟 칸 중 지뢰가 몇 개인지</b>를 뜻해요. 숫자가 없는 빈 칸을 열면 주변이 한꺼번에 펼쳐집니다. 지뢰가 확실한 칸에는 깃발을 꽂아 표시해 두고, 지뢰가 아닌 칸을 전부 열면 승리예요. 지뢰를 누르면 그 판은 끝납니다.</p><p>첫 클릭은 항상 안전해요. 지뢰는 처음 누른 칸과 그 주변을 피해서 배치되기 때문에, 운으로 첫 수에 지는 일은 없습니다.</p>
 <h2>난이도</h2><p><table><thead><tr><th>난이도</th><th>판 크기</th><th>지뢰 수</th><th>지뢰 비율</th></tr></thead><tbody><tr><td>초급</td><td>9 × 9</td><td>10개</td><td>약 12%</td></tr><tr><td>중급</td><td>16 × 16</td><td>40개</td><td>약 16%</td></tr><tr><td>고급</td><td>16 × 30</td><td>99개</td><td>약 21%</td></tr></tbody></table></p>
 <h2>빨리 푸는 요령</h2><ol><li><b>숫자 1부터 보세요.</b> 1 주변에 닫힌 칸이 하나뿐이면 그 칸이 지뢰입니다.</li><li><b>숫자만큼 깃발을 꽂았다면</b> 그 숫자를 눌러 남은 칸을 한 번에 여세요. 속도가 크게 붙어요.</li><li><b>모서리와 가장자리</b>는 맞닿은 칸이 적어 경우의 수가 줄어듭니다. 막히면 가장자리부터 보세요.</li><li><b>두 숫자가 겹치는 구간</b>을 비교하면 확정 칸이 나와요. 1-2가 나란히 있으면 대개 한쪽이 정해집니다.</li></ol>
-<h2>사용 방법</h2><ol><li>난이도를 고르면 새 판이 시작돼요.</li><li>칸을 눌러 열고, 지뢰가 의심되면 깃발을 꽂으세요. PC는 오른쪽 버튼, 휴대폰은 깃발 모드나 길게 누르기입니다.</li><li>지뢰가 아닌 칸을 모두 열면 시간이 기록되고, 최고 기록은 이 기기에 저장돼요.</li></ol>
+<h2>사용 방법</h2><ol><li>난이도를 고르면 새 판이 시작돼요.</li><li>칸을 눌러 열고, 지뢰가 의심되면 깃발을 꽂으세요. PC는 오른쪽 버튼, 휴대폰은 깃발 모드나 길게 누르기입니다.</li><li>지뢰가 아닌 칸을 모두 열면 시간이 0.01초 단위로 기록돼요. 내 최고 기록은 이 기기에 저장되고, 닉네임을 넣으면 그 난이도의 이번 주·전체 랭킹에 등록할 수 있어요.</li></ol>
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
-<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>숫자는 무슨 뜻인가요?</summary><p>그 칸에 맞닿은 여덟 칸 중 지뢰가 몇 개인지를 뜻해요. 1이면 주변 여덟 칸 중 하나가 지뢰입니다.</p></details><details><summary>첫 클릭에서 바로 지뢰가 터지나요?</summary><p>아니요. 지뢰는 첫 클릭 뒤에 놓이고, 처음 누른 칸과 그 주변은 지뢰를 피해서 배치해요. 그래서 첫 수는 항상 안전합니다.</p></details><details><summary>휴대폰에서 깃발은 어떻게 꽂나요?</summary><p>깃발 버튼을 눌러 깃발 모드로 바꾸면 칸을 터치할 때 깃발이 꽂혀요. 칸을 길게 눌러도 됩니다. PC에서는 마우스 오른쪽 버튼을 쓰세요.</p></details><details><summary>숫자를 눌렀는데 주변이 한꺼번에 열렸어요.</summary><p>숫자만큼 깃발을 꽂아둔 상태에서 그 숫자를 누르면 남은 칸이 한 번에 열려요. 빠르게 진행할 때 쓰는 방법인데, 깃발이 틀렸다면 지뢰가 터집니다.</p></details><details><summary>기록은 어디에 저장되나요?</summary><p>이 브라우저 안에만 저장돼요. 서버로 보내지 않기 때문에 다른 기기에서는 보이지 않고, 인터넷 사용 기록을 지우면 함께 사라집니다.</p></details></section>
-  <footer>최고 기록은 이 브라우저에만 저장되며 서버로 전송되지 않아요.<br><span class="version-tag">v1.0 · 2026-09-21 업데이트</span></footer>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>숫자는 무슨 뜻인가요?</summary><p>그 칸에 맞닿은 여덟 칸 중 지뢰가 몇 개인지를 뜻해요. 1이면 주변 여덟 칸 중 하나가 지뢰입니다.</p></details><details><summary>첫 클릭에서 바로 지뢰가 터지나요?</summary><p>아니요. 지뢰는 첫 클릭 뒤에 놓이고, 처음 누른 칸과 그 주변은 지뢰를 피해서 배치해요. 그래서 첫 수는 항상 안전합니다.</p></details><details><summary>휴대폰에서 깃발은 어떻게 꽂나요?</summary><p>깃발 버튼을 눌러 깃발 모드로 바꾸면 칸을 터치할 때 깃발이 꽂혀요. 칸을 길게 눌러도 됩니다. PC에서는 마우스 오른쪽 버튼을 쓰세요.</p></details><details><summary>숫자를 눌렀는데 주변이 한꺼번에 열렸어요.</summary><p>숫자만큼 깃발을 꽂아둔 상태에서 그 숫자를 누르면 남은 칸이 한 번에 열려요. 빠르게 진행할 때 쓰는 방법인데, 깃발이 틀렸다면 지뢰가 터집니다.</p></details><details><summary>기록은 어디에 저장되나요?</summary><p>내 최고 기록은 이 브라우저 안에만 저장돼요. 다른 기기에서는 보이지 않고, 인터넷 사용 기록을 지우면 함께 사라집니다. 랭킹에 등록할 때만 닉네임과 기록이 서버에 저장돼요.</p></details><details><summary>랭킹은 어떻게 등록하나요?</summary><p>판을 이기면 닉네임 입력창이 나와요. 닉네임을 넣고 등록을 누르면 이번 주 100위 또는 전체 100위 안에 들 때 랭킹에 올라갑니다. 회원가입은 필요 없어요. 이번 주 랭킹은 월요일마다 새로 시작돼요.</p></details><details><summary>랭킹은 난이도별로 따로인가요?</summary><p>네. 초급·중급·고급이 판 크기와 지뢰 수가 달라 기록을 나란히 비교할 수 없어서, 난이도마다 랭킹을 따로 둡니다. 위쪽에서 난이도를 바꾸면 해당 난이도의 랭킹이 보여요.</p></details></section>
+  <footer>내 최고 기록은 이 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 기록이 서버에 저장돼요.<br><span class="version-tag">v1.1 · 2026-09-21 업데이트</span></footer>
 </main>
 
+<script src="leaderboard.js"></script>
 <script>
 
 const $=id=>document.getElementById(id);
 const LEVELS={easy:{r:9,c:9,m:10,nm:'초급'}, mid:{r:16,c:16,m:40,nm:'중급'}, hard:{r:16,c:30,m:99,nm:'고급'}};
+// 난이도마다 랭킹을 따로 둔다. LB_MIN 은 worker.js SCORE_GAMES 의 minMs 와 같은 값 —
+// 이보다 빠른 판은 서버가 받지 않으므로 등록 폼을 띄우지 않는다.
+const LB_GAME={easy:'mine-easy', mid:'mine-mid', hard:'mine-hard'};
+const LB_MIN={easy:1000, mid:8000, hard:25000};
+const fmtSec=ms=>(ms/1000).toFixed(2)+'초';
+function initLB(){ LB.init({game:LB_GAME[lv], el:'#lb', lower:true, label:'기록', format:fmtSec}); }
 let lv='easy', cells=[], rows=0, cols=0, mines=0, started=false, over=false, opened=0, flags=0, t0=0, tick=null, flagMode=false;
 
 function idx(r,c){ return r*cols+c; }
@@ -182,21 +192,23 @@ function checkWin(){
   if(over||!started) return;
   if(opened !== rows*cols-mines) return;
   over=true; if(tick){ clearInterval(tick); tick=null; }
-  const sec=Math.floor((Date.now()-t0)/1000);
+  const ms=Date.now()-t0, sec=Math.floor(ms/1000);
   $('timer').textContent=sec;
   cells.forEach((c,k)=>{ if(c.mine&&!c.flag){ c.flag=true; paint(k); } });
   $('mineLeft').textContent='0';
-  const key='ms_best_'+lv; let prev=0, extra='';
-  try{ prev=+(localStorage.getItem(key)||0); if(!prev||sec<prev){ localStorage.setItem(key,sec); extra=' 최고 기록을 새로 세웠어요!'; } }catch(e){}
-  $('msg').textContent=LEVELS[lv].nm+' 완료 · '+sec+'초.'+extra;
+  const key='ms_bestms_'+lv; let extra='';
+  try{ const prev=+(localStorage.getItem(key)||0); if(!prev||ms<prev){ localStorage.setItem(key,ms); extra=' 최고 기록을 새로 세웠어요!'; } }catch(e){}
+  if(ms<LB_MIN[lv]) extra+=' (너무 빨리 끝나 랭킹 등록은 건너뛰었어요.)';
+  $('msg').textContent=LEVELS[lv].nm+' 완료 · '+fmtSec(ms)+'.'+extra;
   $('msg').className='ms-msg win';
   showBest();
+  if(ms>=LB_MIN[lv]) LB.submit(ms,{duration:ms});
   if(typeof gtag==='function') gtag('event','minesweeper_win',{level:lv});
 }
 
 function showBest(){
-  let v=null; try{ v=localStorage.getItem('ms_best_'+lv); }catch(e){}
-  $('best').textContent = v ? LEVELS[lv].nm+' 최고 기록 '+v+'초' : LEVELS[lv].nm+' 최고 기록이 아직 없어요.';
+  let v=0; try{ v=+(localStorage.getItem('ms_bestms_'+lv)||0); }catch(e){}
+  $('best').textContent = v ? LEVELS[lv].nm+' 내 최고 기록 '+fmtSec(v) : LEVELS[lv].nm+' 최고 기록이 아직 없어요.';
 }
 
 // ---- 입력 ----
@@ -220,7 +232,7 @@ $('board').addEventListener('pointerdown',e=>{
 
 document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
-  b.classList.add('active'); lv=b.dataset.d; build();
+  b.classList.add('active'); lv=b.dataset.d; build(); initLB();
 }));
 $('newBtn').addEventListener('click',build);
 $('flagBtn').addEventListener('click',()=>{
@@ -230,6 +242,7 @@ $('flagBtn').addEventListener('click',()=>{
 });
 
 build();
+initLB();
 
 </script>
 

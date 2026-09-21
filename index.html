@@ -396,7 +396,12 @@
 // 그룹 펼치기/접기, #그룹명 으로 들어오면 자동 펼침
 document.querySelectorAll('.group').forEach(function(sec){
   var btn=sec.querySelector('.more'); if(btn) btn.addEventListener('click',function(){ sec.classList.toggle('expanded'); });
-  var all=sec.querySelector('.all'); if(all) all.addEventListener('click',function(e){ e.preventDefault(); sec.classList.add('expanded'); sec.scrollIntoView({behavior:'smooth',block:'start'}); });
+  // "N개 더 보기" 는 숨은 카드 수를 직접 세서 적는다. 도구를 추가해도 숫자가 밀리지 않도록.
+  var hid=sec.querySelectorAll('.card.hidden-more').length, o=sec.querySelector('.more .o');
+  if(o&&hid) o.textContent=hid+'개 더 보기 ∨';
+  // data-expand 가 붙은 것(도구 그룹)만 제자리에서 펼친다.
+  // 생활 가이드의 "전체 보기"는 /guide/ 로 가는 진짜 링크라 가로채면 안 된다.
+  var all=sec.querySelector('.all[data-expand]'); if(all) all.addEventListener('click',function(e){ e.preventDefault(); sec.classList.add('expanded'); sec.scrollIntoView({behavior:'smooth',block:'start'}); });
 });
 function openHash(){ var id=decodeURIComponent(location.hash.slice(1)); if(!id) return; var sec=document.getElementById(id); if(sec){ sec.classList.add('expanded'); sec.scrollIntoView({block:'start'}); } }
 openHash(); window.addEventListener('hashchange',openHash);

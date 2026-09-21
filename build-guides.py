@@ -205,7 +205,7 @@ def render_guide(meta, body_md, slug, tools, all_guides):
     toc_html = ('<nav class="guide-toc"><b>목차</b><ol>' + ''.join(f'<li><a href="#{sid}">{esc(t)}</a></li>' for sid, t in toc) + '</ol></nav>') if len(toc) >= 3 else ''
     tools_html = ''
     if meta['tools']:
-        cards = ''.join(f'<a href="/{f}"><img class="tic" src="/icons/{tools[f]["slug"]}.webp" width="28" height="28" alt="" loading="lazy" decoding="async"><span><b>{esc(tools[f]["title"])}</b><small>{esc(tools[f]["desc"])}</small></span></a>' for f in meta['tools'] if f in tools)
+        cards = ''.join(f'<a href="/{f}"><img class="tic" src="/icons/{tools[f]["slug"]}.webp" width="28" height="28" alt="" loading="lazy" decoding="async"><span><b>{esc(tools[f]["title"])}</b><small>{esc(tools[f]["desc"])}</small></span><span class="go">›</span></a>' for f in meta['tools'] if f in tools)
         tools_html = f'<section class="guide-tools"><h2>이 글과 함께 쓰는 도구</h2><div class="grid">{cards}</div></section>'
     src_html = ''
     if meta['sources']:
@@ -213,7 +213,7 @@ def render_guide(meta, body_md, slug, tools, all_guides):
     others = [g for g in all_guides if g['slug'] != slug and g['meta'].get('category') == meta.get('category')][:4]
     more_html = ''
     if others:
-        more_html = '<section class="guide-tools"><h2>같은 주제의 다른 글</h2><div class="guide-list">' + ''.join(f'<a class="guide-card" href="/guide/{g["slug"]}.html"><b>{esc(g["meta"]["title"])}</b><p>{esc(g["meta"].get("description",""))}</p></a>' for g in others) + '</div></section>'
+        more_html = '<section class="guide-tools"><h2>같은 주제의 다른 글</h2><div class="guide-list">' + ''.join(f'<a class="guide-card" href="/guide/{g["slug"]}.html"><img class="gic" src="/icons/ui-guide.webp" width="30" height="30" alt="" loading="lazy" decoding="async"><span class="tx"><b>{esc(g["meta"]["title"])}</b><p>{esc(g["meta"].get("description",""))}</p></span></a>' for g in others) + '</div></section>'
     return head_common(meta['title'] + ' | 데일리 프리 툴박스 생활 가이드', meta.get('description', ''), canonical, meta.get('keywords', ''), f'<script type="application/ld+json">{ld}</script>\n<script type="application/ld+json">{crumbs}</script>{faq_ld}') + f'''<style>:root {{ --accent:{accent}; --accent-deep:#23603c; }}</style>
 </head>
 <body class="guide-page">
@@ -290,7 +290,11 @@ def update_tool_pages(all_guides, tools):
         path = os.path.join(ROOT, f)
         if not os.path.exists(path): continue
         s = open(path, encoding='utf-8').read()
-        block = '\n<div class="guides-rel"><div class="lb">📝 관련 가이드</div>' + ''.join(f'<a href="/guide/{g["slug"]}.html">{esc(g["meta"]["title"])}<small>{esc(g["meta"].get("updated", g["meta"].get("date","")))}</small></a>' for g in gs[:4]) + '</div>\n'
+        block = ('\n<div class="guides-rel"><div class="lb"><img src="/icons/ui-guide.webp" width="22" height="22" alt="">관련 가이드</div>'
+                 + ''.join(f'<a href="/guide/{g["slug"]}.html">'
+                           f'<img class="gic" src="/icons/ui-guide.webp" width="28" height="28" alt="" loading="lazy" decoding="async">'
+                           f'<span class="tx">{esc(g["meta"]["title"])}<small>{esc(g["meta"].get("updated", g["meta"].get("date","")))}</small></span>'
+                           f'<span class="go">›</span></a>' for g in gs[:4]) + '</div>\n')
         new = inject(s, '<!-- guides:tool:start -->', '<!-- guides:tool:end -->', block)
         if new is None:
             m = re.search(r'<div class="sibs">.*?</div></div>\n', s, re.S)

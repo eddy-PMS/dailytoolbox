@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>자동차세 계산기 - 배기량·차령으로 연세액과 연납 할인 계산</title>
+<meta name="description" content="배기량과 차령을 넣으면 자동차세와 지방교육세, 기분별 납부액과 1월 연납 할인액까지 계산해요. 2026년 1월 시행 지방세법 세율 기준.">
+<meta name="keywords" content="자동차세 계산기, 자동차세 조회, 자동차세 연납 할인, 배기량 자동차세, 차령 자동차세, 전기차 자동차세, 지방교육세">
+<link rel="canonical" href="https://dailyfreetoolbox.com/car-tax.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="자동차세 계산기">
+<meta property="og:description" content="배기량과 차령을 넣으면 자동차세와 지방교육세, 기분별 납부액과 1월 연납 할인액까지 계산해요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/car-tax.html">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "자동차세 계산기", "url": "https://dailyfreetoolbox.com/car-tax.html", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "배기량과 차령으로 자동차세·지방교육세와 연납 할인액을 계산하는 무료 도구."}
+</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "자동차세는 어떻게 계산되나요?", "acceptedAnswer": {"@type": "Answer", "text": "비영업용 승용차는 배기량에 cc당 세액을 곱해요. 1,000cc 이하는 80원, 1,600cc 이하는 140원, 1,600cc 초과는 200원입니다. 여기에 자동차세액의 30%가 지방교육세로 더 붙습니다."}}, {"@type": "Question", "name": "차가 오래되면 세금이 줄어드나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 비영업용 승용차는 차령 3년째부터 해마다 5%씩 줄고 12년째에 50%로 멈춰요. 그보다 오래된 차도 50% 감면까지만 적용됩니다."}}, {"@type": "Question", "name": "전기차 자동차세는 얼마인가요?", "acceptedAnswer": {"@type": "Answer", "text": "배기량이 없어 '그 밖의 승용자동차'로 분류되고 비영업용은 연 10만원, 영업용은 연 2만원 정액이에요. 여기에 지방교육세 30%가 붙습니다."}}, {"@type": "Question", "name": "연납하면 얼마나 할인되나요?", "acceptedAnswer": {"@type": "Answer", "text": "1월에 한꺼번에 내면 2026년 기준 연세액의 4.6%를 공제받아요. 3월은 3.8%, 6월은 2.5%, 9월은 1.3%로 늦어질수록 공제가 줄어듭니다."}}]}</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
+.sw{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.sw label{flex:1;min-width:120px;border:1px solid var(--line);border-radius:3px;padding:9px 12px;font-size:14px;cursor:pointer;text-align:center;background:#fff}
+.sw input{position:absolute;opacity:0;width:0;height:0}
+.sw input:checked + span{font-weight:700;color:var(--accent)}
+.sw label:has(input:checked){border-color:var(--accent);background:var(--paper-deep)}
+</style>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2b5fd9"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#돈·일">돈·일</a><span>›</span>자동차세 계산기</nav>
+  <h1>자동차세 계산기</h1>
+  <p class="sub">배기량과 차령을 넣으면 자동차세와 지방교육세, 6월·12월 납부액, 1월 연납 할인액까지 한 번에 나와요. 2026년 1월 1일 시행 지방세법 세율 기준입니다.</p>
+  <div class="ad-slot" data-ad="top"></div>
+
+  <div class="card">
+    <div class="tabs"><button class="tab active" data-t="car">승용차</button><button class="tab" data-t="etc">승합·화물·특수</button></div>
+
+    <div id="carPane">
+      <div class="sw">
+        <label><input type="radio" name="use" value="priv" checked><span>비영업용 (자가용)</span></label>
+        <label><input type="radio" name="use" value="biz"><span>영업용 (택시·렌터카 등)</span></label>
+      </div>
+      <div class="grid2">
+        <div class="field"><label>배기량</label><div class="unit"><input type="number" id="cc" value="1998" min="0" step="1"><span>cc</span></div></div>
+        <div class="field"><label>차령 (등록 후 지난 햇수)</label><div class="unit"><input type="number" id="age" value="0" min="0" max="30" step="1"><span>년</span></div></div>
+      </div>
+      <div class="field"><label><input type="checkbox" id="ev"> 전기차·수소차 (배기량이 없는 차)</label></div>
+    </div>
+
+    <div id="etcPane" class="hidden">
+      <div class="sw">
+        <label><input type="radio" name="use2" value="priv" checked><span>비영업용</span></label>
+        <label><input type="radio" name="use2" value="biz"><span>영업용</span></label>
+      </div>
+      <div class="field"><label>차종</label><select id="kind">
+        <optgroup label="승합자동차"><option value="bus_express">고속버스</option><option value="bus_charter_l">대형전세버스</option><option value="bus_charter_s">소형전세버스</option><option value="bus_normal_l">대형일반버스</option><option value="bus_normal_s">소형일반버스</option></optgroup>
+        <optgroup label="화물자동차 (적재정량)"><option value="t1">1,000kg 이하</option><option value="t2">2,000kg 이하</option><option value="t3">3,000kg 이하</option><option value="t4">4,000kg 이하</option><option value="t5">5,000kg 이하</option><option value="t8">8,000kg 이하</option><option value="t10">1만kg 이하</option><option value="t10over">1만kg 초과</option></optgroup>
+        <optgroup label="특수자동차"><option value="sp_l">대형특수자동차</option><option value="sp_s">소형특수자동차</option></optgroup>
+        <optgroup label="기타"><option value="tri">3륜 이하 소형자동차</option></optgroup>
+      </select></div>
+      <div class="field hidden" id="overWrap"><label>1만kg 초과분 (1만kg마다 가산)</label><div class="unit"><input type="number" id="over" value="1" min="1" step="1"><span>만kg 초과</span></div></div>
+    </div>
+
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+ <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">돈·일 도구 더 보기</div><div class="chips"><a href="car-loan.html">자동차 할부</a><a href="loan.html">대출 이자 계산기</a><a href="vat.html">부가세 계산기</a><a href="freelancer-tax.html">3.3% 프리랜서 세금</a><a href="salary.html">연봉 실수령액</a><a href="compound.html">복리·적금 계산기</a><a class="more" href="index.html#돈·일">전체 보기 →</a></div></div>
+<section class="seo">
+<h2>자동차세는 이렇게 정해져요</h2><p>승용차 자동차세는 <b>배기량 × cc당 세액</b>으로 계산해요. 차값이 아니라 배기량만 보기 때문에, 같은 2,000cc라면 수입 고급차든 국산 준중형이든 세금이 같습니다. 여기에 자동차세액의 30%가 <b>지방교육세</b>로 더 붙어서 고지서 금액이 됩니다.</p><p>납기는 두 번이에요. 1월부터 6월까지분은 <b>6월 16일~30일</b>, 7월부터 12월까지분은 <b>12월 16일~31일</b>에 냅니다. 한 해 치를 미리 몰아서 내면(연납) 공제를 받아요.</p>
+<h2>승용차 cc당 세액 (지방세법 제127조)</h2><p><table><thead><tr><th>배기량</th><th class="r">비영업용</th><th class="r">영업용</th></tr></thead><tbody><tr><td>1,000cc 이하</td><td class="r">80원</td><td class="r">18원</td></tr><tr><td>1,600cc 이하</td><td class="r">140원</td><td class="r">18원</td></tr><tr><td>2,000cc 이하</td><td class="r">200원</td><td class="r">19원</td></tr><tr><td>2,500cc 이하</td><td class="r">200원</td><td class="r">19원</td></tr><tr><td>2,500cc 초과</td><td class="r">200원</td><td class="r">24원</td></tr></tbody></table></p><p>비영업용은 1,600cc를 넘으면 전부 cc당 200원이고, 영업용만 2,000cc와 2,500cc에서 한 번 더 나뉘어요. 배기량이 없는 전기차·수소차는 "그 밖의 승용자동차"로 묶여 <b>비영업용 연 10만원, 영업용 연 2만원</b> 정액입니다.</p>
+<h2>차가 오래되면 줄어듭니다</h2><p>비영업용 승용차는 <b>차령 3년째부터 해마다 5%씩</b> 세금이 줄고, 12년째에 50%가 되면 더 내려가지 않아요. 법에 적힌 계산식은 기분세액 = A÷2 − (A÷2 × 5/100) × (n−2) 이고, A는 배기량으로 구한 연세액, n은 차령입니다.</p><p><table><thead><tr><th>차령</th><th class="r">감면율</th><th class="r">2,000cc 기준 연세액</th></tr></thead><tbody><tr><td>2년 이하</td><td class="r">0%</td><td class="r">400,000원</td></tr><tr><td>3년</td><td class="r">5%</td><td class="r">380,000원</td></tr><tr><td>5년</td><td class="r">15%</td><td class="r">340,000원</td></tr><tr><td>7년</td><td class="r">25%</td><td class="r">300,000원</td></tr><tr><td>10년</td><td class="r">40%</td><td class="r">240,000원</td></tr><tr><td>12년 이상</td><td class="r">50%</td><td class="r">200,000원</td></tr></tbody></table></p><p>표의 금액은 자동차세만이고 지방교육세 30%는 따로 붙어요. 화물차·승합차·특수차는 이 차령 감면이 없습니다.</p>
+<h2>연납하면 얼마나 아끼나</h2><p>한 해 치를 미리 내면 공제를 받아요. 2026년 기준 공제율은 <b>1월 4.6%</b>, 3월 3.8%, 6월 2.5%, 9월 1.3%입니다. 빨리 낼수록 공제가 크니 1월이 가장 유리해요. 신청은 각 달 16일부터 말일까지이고, 서울은 이택스, 그 밖의 지역은 위택스에서 합니다.</p>
+<h2>사용 방법</h2><ol><li>승용차면 용도(비영업용/영업용)를 고르고 배기량과 차령을 넣으세요.</li><li>전기차·수소차는 체크박스를 켜면 정액으로 계산돼요.</li><li>버스·화물차·특수차는 위 탭을 바꿔 차종을 고르면 됩니다.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>자동차세는 어떻게 계산되나요?</summary><p>비영업용 승용차는 배기량에 cc당 세액을 곱해요. 1,000cc 이하는 80원, 1,600cc 이하는 140원, 1,600cc 초과는 200원입니다. 여기에 자동차세액의 30%가 지방교육세로 더 붙습니다.</p></details><details><summary>차가 오래되면 세금이 줄어드나요?</summary><p>네. 비영업용 승용차는 차령 3년째부터 해마다 5%씩 줄고 12년째에 50%로 멈춰요. 그보다 오래된 차도 50% 감면까지만 적용됩니다.</p></details><details><summary>전기차 자동차세는 얼마인가요?</summary><p>배기량이 없어 "그 밖의 승용자동차"로 분류되고 비영업용은 연 10만원, 영업용은 연 2만원 정액이에요. 여기에 지방교육세 30%가 붙습니다.</p></details><details><summary>연납하면 얼마나 할인되나요?</summary><p>1월에 한꺼번에 내면 2026년 기준 연세액의 4.6%를 공제받아요. 3월은 3.8%, 6월은 2.5%, 9월은 1.3%로 늦어질수록 공제가 줄어듭니다.</p></details><details><summary>계산 결과가 고지서 금액과 조금 달라요.</summary><p>지방자치단체는 조례로 표준세율의 50%까지 더 올려 정할 수 있고, 중간에 차를 사고팔면 보유 일수로 나눠 계산해요. 원 단위 처리 방식도 지자체마다 차이가 있어 몇십 원 정도는 어긋날 수 있습니다. 정확한 금액은 위택스나 이택스에서 확인하세요.</p></details><details><summary>세액이 아주 적으면 어떻게 되나요?</summary><p>계산한 세액이 2천원 미만이면 자동차세를 징수하지 않아요(지방세법 제130조).</p></details></section>
+  <footer>지방세법 제127조·제128조·제130조(시행 2026. 1. 1., 법률 제21308호)와 제151조 지방교육세 기준으로 계산해요. 연납 공제율은 2026년 기준이며 확인일은 2026-09-21입니다. 지자체 조례에 따라 실제 고지 금액이 다를 수 있어요.<br><span class="version-tag">v1.0 · 2026-09-21 업데이트</span></footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const won=n=>Math.round(n).toLocaleString('ko-KR')+'원';
+let mode='car';
+
+// 지방세법 제127조 제1항 제1호 — 승용자동차 cc당 세액
+function ccRate(cc, biz){
+  if(biz) return cc<=1000?18 : cc<=1600?18 : cc<=2000?19 : cc<=2500?19 : 24;
+  return cc<=1000?80 : cc<=1600?140 : 200;
+}
+// 같은 항 제3호 — 그 밖의 승용자동차(배기량 없음)
+const FLAT_EV = {priv:100000, biz:20000};
+// 제4~7호 — 승합·화물·특수·3륜
+const ETC = {
+  bus_express:{biz:100000, priv:null}, bus_charter_l:{biz:70000, priv:null}, bus_charter_s:{biz:50000, priv:null},
+  bus_normal_l:{biz:42000, priv:115000}, bus_normal_s:{biz:25000, priv:65000},
+  t1:{biz:6600, priv:28500}, t2:{biz:9600, priv:34500}, t3:{biz:13500, priv:48000},
+  t4:{biz:18000, priv:63000}, t5:{biz:22500, priv:79500}, t8:{biz:36000, priv:130500},
+  t10:{biz:45000, priv:157500}, t10over:{biz:45000, priv:157500},
+  sp_l:{biz:36000, priv:157500}, sp_s:{biz:13500, priv:58500},
+  tri:{biz:3300, priv:18000}
+};
+const YEARLY = [['1월 16일~31일', 0.046], ['3월 16일~31일', 0.038], ['6월 16일~30일', 0.025], ['9월 16일~30일', 0.013]];
+
+function ageCut(age){            // 제1항 제2호 — 비영업용 승용차 차령 감면
+  if(age < 3) return 0;
+  const n = Math.min(age, 12);
+  return 0.05 * (n - 2);
+}
+
+function render(html){ $('out').innerHTML = html; }
+
+function calcCar(){
+  const biz = document.querySelector('input[name=use]:checked').value === 'biz';
+  const isEv = $('ev').checked;
+  const cc = Math.max(0, +$('cc').value || 0);
+  const age = Math.max(0, +$('age').value || 0);
+  let base, cut = 0, how;
+  if(isEv){
+    base = biz ? FLAT_EV.biz : FLAT_EV.priv;
+    how = '배기량이 없는 차는 정액이에요 (지방세법 제127조 제1항 제3호).';
+  } else {
+    if(!cc){ render('<div class="note">배기량을 입력하면 세금이 계산돼요.</div>'); return; }
+    const r = ccRate(cc, biz);
+    base = cc * r;
+    how = cc.toLocaleString('ko-KR') + 'cc × ' + r + '원 = ' + won(cc*r);
+    if(!biz){ cut = ageCut(age); }
+  }
+  const tax = Math.floor(base * (1 - cut));
+  const edu = biz ? 0 : Math.floor(tax * 0.3);     // 제151조 — 비영업용 승용차만
+  const total = tax + edu;
+  const half = Math.floor(total / 2);
+
+  let rows = '<tr><td>자동차세</td><td class="r">' + won(tax) + '</td></tr>';
+  if(cut) rows += '<tr><td>차령 ' + age + '년 감면</td><td class="r">−' + Math.round(cut*100) + '% (' + won(base-tax) + ')</td></tr>';
+  rows += biz ? '<tr><td>지방교육세</td><td class="r">해당 없음 (영업용)</td></tr>'
+              : '<tr><td>지방교육세 (자동차세의 30%)</td><td class="r">' + won(edu) + '</td></tr>';
+  rows += '<tr><td>6월분 (6/16~6/30)</td><td class="r">' + won(half) + '</td></tr>';
+  rows += '<tr><td>12월분 (12/16~12/31)</td><td class="r">' + won(total-half) + '</td></tr>';
+
+  const disc = Math.floor(total * 0.046);
+  let note = '<div class="note">' + how + '</div>';
+  if(total < 2000) note += '<div class="note">세액이 2천원 미만이면 징수하지 않아요 (지방세법 제130조).</div>';
+
+  render('<div class="big-result">' + won(total) + '<small>한 해 총액 (자동차세 + 지방교육세)</small></div>'
+    + '<table style="margin-top:12px"><tbody>' + rows + '</tbody></table>'
+    + '<div class="big-result" style="margin-top:14px">' + won(total - disc) + '<small>1월에 연납하면 (4.6% 공제 · ' + won(disc) + ' 절약)</small></div>'
+    + '<table style="margin-top:10px"><thead><tr><th>연납 신청 시기</th><th class="r">공제율</th><th class="r">낼 금액</th></tr></thead><tbody>'
+    + YEARLY.map(([when, rate]) => '<tr><td>' + when + '</td><td class="r">' + (rate*100).toFixed(1) + '%</td><td class="r">' + won(total - Math.floor(total*rate)) + '</td></tr>').join('')
+    + '</tbody></table>' + note);
+}
+
+function calcEtc(){
+  const biz = document.querySelector('input[name=use2]:checked').value === 'biz';
+  const k = $('kind').value;
+  $('overWrap').classList.toggle('hidden', k !== 't10over');
+  const e = ETC[k];
+  const v = biz ? e.biz : e.priv;
+  if(v === null || v === undefined){
+    render('<div class="note">전세버스·고속버스는 영업용만 있어요. 용도를 영업용으로 바꿔 주세요.</div>');
+    return;
+  }
+  let tax = v, extra = '';
+  if(k === 't10over'){
+    const over = Math.max(1, +$('over').value || 1);
+    const add = (biz ? 10000 : 30000) * over;
+    tax = v + add;
+    extra = '<tr><td>1만kg 초과 가산 (' + over + '만kg)</td><td class="r">' + won(add) + '</td></tr>';
+  }
+  const half = Math.floor(tax / 2);
+  render('<div class="big-result">' + won(tax) + '<small>한 해 자동차세</small></div>'
+    + '<table style="margin-top:12px"><tbody>' + extra
+    + '<tr><td>6월분 (6/16~6/30)</td><td class="r">' + won(half) + '</td></tr>'
+    + '<tr><td>12월분 (12/16~12/31)</td><td class="r">' + won(tax-half) + '</td></tr></tbody></table>'
+    + '<div class="note">승합·화물·특수차는 차령에 따른 감면이 없고, 지방교육세는 비영업용 승용차에만 붙어요.</div>');
+}
+
+function run(){ mode==='car' ? calcCar() : calcEtc(); }
+
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active'); mode=b.dataset.t;
+  $('carPane').classList.toggle('hidden', mode!=='car');
+  $('etcPane').classList.toggle('hidden', mode!=='etc');
+  run();
+}));
+['cc','age','ev','over','kind'].forEach(id=>$(id).addEventListener('input',run));
+$('kind').addEventListener('change',run);
+document.querySelectorAll('input[name=use],input[name=use2]').forEach(el=>el.addEventListener('change',run));
+$('ev').addEventListener('change',()=>{ $('cc').disabled=$('ev').checked; $('age').disabled=$('ev').checked; run(); });
+
+run();
+
+let sent=false;
+document.querySelectorAll('input,select').forEach(i=>i.addEventListener('input',()=>{ if(!sent&&typeof gtag==='function'){ gtag('event','car_tax_calculated',{}); sent=true; } }));
+
+</script>
+
+</body>
+</html>

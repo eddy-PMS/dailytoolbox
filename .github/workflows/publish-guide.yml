@@ -1,0 +1,75 @@
+name: 생활 가이드 매일 발행
+
+# 한국시간 새벽 5시 = UTC 20시 (전날). 깃허브 예약 작업은 서버 사정으로
+# 몇 분에서 20분쯤 늦게 시작될 수 있어요.
+on:
+  schedule:
+    - cron: '0 20 * * *'
+  workflow_dispatch:        # 저장소 Actions 탭에서 수동 실행도 가능
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-guide
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 받기
+        uses: actions/checkout@v4
+
+      - name: 파이썬 준비
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 대기 중인 초안 하나 발행 상태로
+        id: pick
+        run: |
+          set +e
+          python publish-next-guide.py
+          code=$?
+          set -e
+          if [ "$code" = "3" ]; then
+            echo "nothing=1" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          exit $code
+
+      - name: 점검
+        if: steps.pick.outputs.nothing != '1'
+        run: python check-guides.py
+
+      - name: 빌드
+        if: steps.pick.outputs.nothing != '1'
+        run: python build-guides.py
+
+      - name: 커밋·푸시
+        if: steps.pick.outputs.nothing != '1'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add guide sitemap.xml index.html *.html
+          if git diff --cached --quiet; then
+            echo "바뀐 파일이 없어요. 넘어갑니다."
+            exit 0
+          fi
+          git commit -m "guide: publish ${{ steps.pick.outputs.slug }}
+
+          ${{ steps.pick.outputs.title }}
+          예약 발행(매일 새벽 5시). 남은 초안 ${{ steps.pick.outputs.left }}편."
+          git push
+
+      - name: 결과
+        run: |
+          if [ "${{ steps.pick.outputs.nothing }}" = "1" ]; then
+            echo "### 발행할 초안이 없습니다" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "### 발행 완료" >> "$GITHUB_STEP_SUMMARY"
+            echo "- ${{ steps.pick.outputs.title }}" >> "$GITHUB_STEP_SUMMARY"
+            echo "- https://dailyfreetoolbox.com/guide/${{ steps.pick.outputs.slug }}.html" >> "$GITHUB_STEP_SUMMARY"
+            echo "- 남은 초안 ${{ steps.pick.outputs.left }}편" >> "$GITHUB_STEP_SUMMARY"
+          fi

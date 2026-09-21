@@ -1,0 +1,11 @@
+# 자동 발행 순서 (한 줄에 slug 하나, 위에서부터)
+# 매일 새벽 5시(한국시간)에 이 순서대로 한 편씩 발행돼요.
+# 순서를 바꾸려면 줄을 옮기고, 잠시 건너뛰려면 앞에 # 을 붙이세요.
+# 여기 없는 초안은 순서가 끝난 뒤 파일명 순으로 발행됩니다.
+
+savings-interest-tax
+pyeong-square-meter
+bmi-obesity-standard
+exchange-fee-guide
+military-service-guide
+pregnancy-weeks-guide

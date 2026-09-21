@@ -77,10 +77,10 @@ function trace(col){ const pts=[{x:col,y:padT}]; let c=col; const ys=[...new Set
   for(const y of ys){ const r=rungs.find(r=>r.y===y&&(r.c===c||r.c===c-1)); if(r){ pts.push({x:c,y}); c= r.c===c? c+1 : c-1; pts.push({x:c,y}); } }
   pts.push({x:c,y:H-padB}); return {pts,end:c}; }
 function draw(highlight){
-  cv.width=W; cv.height=H; ctx.clearRect(0,0,W,H); ctx.lineWidth=3; ctx.strokeStyle='#c9bfa8'; ctx.font='bold 14px sans-serif'; ctx.textAlign='center'; ctx.fillStyle='#1f1d1a';
+  cv.width=W; cv.height=H; ctx.clearRect(0,0,W,H); ctx.lineWidth=3; ctx.strokeStyle='#adb5c4'; ctx.font='bold 14px sans-serif'; ctx.textAlign='center'; ctx.fillStyle='#1f1d1a';
   names.forEach((nm,i)=>{ const x=colW*i+colW/2; ctx.beginPath(); ctx.moveTo(x,padT); ctx.lineTo(x,H-padB); ctx.stroke(); ctx.fillText(nm,x,padT-16); });
   rungs.forEach(r=>{ const x1=colW*r.c+colW/2, x2=x1+colW; ctx.beginPath(); ctx.moveTo(x1,r.y); ctx.lineTo(x2,r.y); ctx.stroke(); });
-  results.forEach((rs,i)=>{ const x=colW*i+colW/2; ctx.fillStyle= done||highlight!=null? '#1f1d1a':'#b3ab9c'; ctx.fillText(done||highlight!=null? rs:'?',x,H-padB+22); });
+  results.forEach((rs,i)=>{ const x=colW*i+colW/2; ctx.fillStyle= done||highlight!=null? '#1f1d1a':'#9ca4b3'; ctx.fillText(done||highlight!=null? rs:'?',x,H-padB+22); });
   if(highlight!=null){ const p=paths[highlight].pts; ctx.strokeStyle='#b8823a'; ctx.lineWidth=5; ctx.beginPath(); p.forEach((pt,i)=>{ const x=colW*pt.x+colW/2; i? ctx.lineTo(x,pt.y):ctx.moveTo(x,pt.y); }); ctx.stroke(); }
 }
 function animate(i){ const p=paths[i].pts; let seg=0, t=0; const step=()=>{ draw(); ctx.strokeStyle='#b8823a'; ctx.lineWidth=5; ctx.beginPath(); for(let k=0;k<seg;k++){ const a=p[k], b=p[k+1]; ctx.moveTo(colW*a.x+colW/2,a.y); ctx.lineTo(colW*b.x+colW/2,b.y); } if(seg<p.length-1){ const a=p[seg], b=p[seg+1]; const x=colW*a.x+colW/2+(colW*b.x-colW*a.x)*t, y=a.y+(b.y-a.y)*t; ctx.moveTo(colW*a.x+colW/2,a.y); ctx.lineTo(x,y); } ctx.stroke(); t+=0.12; if(t>=1){ t=0; seg++; } if(seg<p.length-1) requestAnimationFrame(step); else { draw(i); $('hint').innerHTML=`<b>${names[i]}</b> → <b style="color:var(--accent)">${results[paths[i].end]}</b>`; } }; step(); }

@@ -10,18 +10,18 @@ window.LB = (function () {
   function css() {
     if (document.getElementById('lb-css')) return;
     const st = document.createElement('style'); st.id = 'lb-css';
-    st.textContent = `.lb{border:1px solid var(--line);border-radius:3px;background:#fffdf8;padding:14px 16px;margin-top:16px}
+    st.textContent = `.lb{border:1px solid var(--line);border-radius:3px;background:#ffffff;padding:14px 16px;margin-top:16px}
 .lb h2{font-size:15px;margin:0 0 10px;color:var(--ink)}
 .lb .lb-tabs{display:flex;gap:6px;margin-bottom:10px}.lb .lb-tab{flex:1;padding:7px;border:1px solid var(--line);border-radius:3px;background:#fff;font-size:13px;color:var(--ink-soft);cursor:pointer;font-family:inherit}.lb .lb-tab.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .lb table{width:100%;border-collapse:collapse;font-size:14px}.lb td,.lb th{padding:6px 4px;border-bottom:1px solid var(--paper-deep);text-align:left}.lb th{font-size:12px;color:var(--ink-soft);font-weight:700}
 .lb td.rk{width:34px;color:var(--ink-soft);font-weight:700}.lb td.sc{text-align:right;font-weight:700;white-space:nowrap}.lb td.dt{text-align:right;color:var(--ink-soft);font-size:12px;white-space:nowrap}
-.lb tr.me td{background:#fff3e0}
+.lb tr.me td{background:#e8f0ff}
 .lb .lb-more{width:100%;margin-top:8px;padding:8px;border:1px dashed var(--line);border-radius:3px;background:none;font-size:13px;color:var(--ink-soft);cursor:pointer;font-family:inherit}
 .lb .lb-form{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:0 0 12px;padding:12px;border:1px solid var(--accent);border-radius:3px;background:#fff}
 .lb .lb-form .sc{font-weight:700;font-size:15px;white-space:nowrap}.lb .lb-form input{flex:1;min-width:120px;padding:9px 10px;font-size:14px}
 .lb .lb-form button{padding:9px 14px}
 .lb .lb-msg{font-size:13px;margin-top:6px;color:var(--ink-soft)}.lb .lb-msg.ok{color:#2f7d4f}.lb .lb-msg.bad{color:#b23b3b}
-.lb .lb-empty{color:#a39a89;font-size:13px;padding:14px;text-align:center;border:1px dashed var(--line);border-radius:3px}`;
+.lb .lb-empty{color:#8993a3;font-size:13px;padding:14px;text-align:center;border:1px dashed var(--line);border-radius:3px}`;
     document.head.appendChild(st);
   }
 

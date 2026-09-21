@@ -29,7 +29,7 @@
 <style>
   /* tool.css 기반 위에 이 페이지 고유 스타일만 덧씌움 */
   label > select, label > input:not([type="checkbox"]):not([type="radio"]), .row select, .row input:not([type="checkbox"]):not([type="radio"]) { width:auto; padding:6px 8px; font-size:13px; }
-  :root { --paper:#f3ede1; --paper-deep:#ece3d3; --ink:#201d1a; --ink-soft:#55504a; --seal:#a83a2c; --seal-deep:#8a2f23; --line:#d9cfba; }
+  :root { --paper:#ffffff; --paper-deep:#f2f7fe; --ink:#151a23; --ink-soft:#5b6472; --seal:#a83a2c; --seal-deep:#8a2f23; --line:#e3e9f3; }
   main { width:100%; max-width:680px; }
   .brand { font-size:15px; color:var(--ink-soft); margin-bottom:24px; } .brand b { color:var(--seal); font-weight:700; }
   h1 { font-size:26px; line-height:1.35; margin:0 0 8px; font-weight:700; letter-spacing:-0.01em; }
@@ -44,7 +44,7 @@
   .pane textarea, .pane .out { min-height:220px; padding:14px; font-size:18px; line-height:1.8; font-family:inherit; color:var(--ink); }
   .pane textarea { border:none; background:transparent; resize:vertical; outline:none; width:100%; }
   .pane .out { white-space:pre-wrap; word-break:break-word; }
-  .pane .out.placeholder { color:#b3ab9c; font-size:15px; }
+  .pane .out.placeholder { color:#9ca4b3; font-size:15px; }
   .link-btn { background:none; border:none; color:var(--seal); font-size:12px; cursor:pointer; font-family:inherit; padding:2px 6px; }
   .link-btn:hover { text-decoration:underline; }
   .btn-row { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
@@ -52,8 +52,8 @@
   .btn:hover { background:var(--seal-deep); }
   .btn-ghost { background:none; border:1px solid var(--line); border-radius:3px; padding:9px 14px; font-size:13px; color:var(--ink-soft); cursor:pointer; font-family:inherit; }
   .btn-ghost:hover { background:var(--paper-deep); color:var(--ink); }
-  .status { font-size:12px; color:#a39a89; margin-top:8px; min-height:16px; }
-  footer { margin-top:56px; font-size:12px; color:#a39a89; text-align:center; line-height:1.8; }
+  .status { font-size:12px; color:#8993a3; margin-top:8px; min-height:16px; }
+  footer { margin-top:56px; font-size:12px; color:#8993a3; text-align:center; line-height:1.8; }
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "대만식과 홍콩식 번체가 다른가요?", "acceptedAnswer": {"@type": "Answer", "text": "글자 모양이 몇 개 달라요(예: 裡/裏, 為/爲). 대만 자료면 tw, 홍콩 자료면 hk를 고르세요."}}, {"@type": "Question", "name": "일본 한자(신자체)로도 바꿀 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "이 도구는 중국어 간체·번체 전용이에요. 일본 신자체는 별도 규칙이 필요해 지원하지 않아요."}}, {"@type": "Question", "name": "입력한 글이 서버로 가나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 변환 엔진(OpenCC)이 브라우저 안에서 동작해 어디에도 전송되지 않아요."}}]}</script>
 <style>.tagline{font-size:18px;font-weight:600;color:var(--ink,#1f1d1a);margin:0 0 8px;line-height:1.45;letter-spacing:-0.01em}</style>

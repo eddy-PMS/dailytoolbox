@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>지뢰찾기 - 초급·중급·고급 온라인 무료 게임</title>
+<meta name="description" content="설치 없이 브라우저에서 바로 하는 지뢰찾기. 초급·중급·고급 난이도와 깃발 모드, 최고 기록 저장까지. 모바일에서도 그대로 돼요.">
+<meta name="keywords" content="지뢰찾기, 지뢰찾기 게임, 온라인 지뢰찾기, 무료 지뢰찾기, 지뢰찾기 하는법, 브라우저 게임">
+<link rel="canonical" href="https://dailyfreetoolbox.com/minesweeper.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="지뢰찾기">
+<meta property="og:description" content="설치 없이 브라우저에서 바로 하는 지뢰찾기. 초급·중급·고급 난이도와 최고 기록 저장.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/minesweeper.html">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "지뢰찾기", "url": "https://dailyfreetoolbox.com/minesweeper.html", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "설치 없이 브라우저에서 바로 하는 지뢰찾기. 초급·중급·고급 난이도 제공."}
+</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "숫자는 무슨 뜻인가요?", "acceptedAnswer": {"@type": "Answer", "text": "그 칸에 맞닿은 여덟 칸 중 지뢰가 몇 개인지를 뜻해요. 1이면 주변 여덟 칸 중 하나가 지뢰입니다."}}, {"@type": "Question", "name": "첫 클릭에서 바로 지뢰가 터지나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 지뢰는 첫 클릭 뒤에 놓이고, 처음 누른 칸과 그 주변은 지뢰를 피해서 배치해요. 그래서 첫 수는 항상 안전합니다."}}, {"@type": "Question", "name": "휴대폰에서 깃발은 어떻게 꽂나요?", "acceptedAnswer": {"@type": "Answer", "text": "깃발 버튼을 눌러 깃발 모드로 바꾸면 칸을 터치할 때 깃발이 꽂혀요. 칸을 길게 눌러도 됩니다. PC에서는 마우스 오른쪽 버튼을 쓰세요."}}, {"@type": "Question", "name": "숫자를 눌렀는데 주변이 한꺼번에 열렸어요.", "acceptedAnswer": {"@type": "Answer", "text": "숫자만큼 깃발을 꽂아둔 상태에서 그 숫자를 누르면 남은 칸이 한 번에 열려요. 빠르게 진행할 때 쓰는 방법인데, 깃발이 틀렸다면 지뢰가 터집니다."}}]}</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
+.ms-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.ms-stat{display:flex;gap:14px;margin-left:auto;font-size:14px;font-variant-numeric:tabular-nums}
+.ms-stat b{font-size:17px}
+.ms-wrap{overflow-x:auto;padding-bottom:6px}
+.ms-board{display:grid;gap:2px;margin:0 auto;width:max-content;touch-action:manipulation}
+.ms-c{width:30px;height:30px;padding:0;border:1px solid #cdd9ee;border-radius:3px;background:#e8eefb;font-family:inherit;font-size:15px;font-weight:700;line-height:1;cursor:pointer;color:transparent;user-select:none;-webkit-user-select:none}
+.ms-c:hover{background:#dbe6f8}
+.ms-c.open{background:#fff;border-color:var(--line);cursor:default}
+.ms-c.flag{color:inherit}
+.ms-c.mine{background:#fdeaea;border-color:#f3c9c9}
+.ms-c.boom{background:#e74c3c;border-color:#c0392b}
+.ms-c.n1{color:#2b5fd9}.ms-c.n2{color:#2f7d4f}.ms-c.n3{color:#c0392b}.ms-c.n4{color:#5b3fa0}
+.ms-c.n5{color:#8a5f25}.ms-c.n6{color:#2d7d7d}.ms-c.n7{color:#151a23}.ms-c.n8{color:#5b6472}
+.ms-msg{margin-top:12px;font-size:15px;font-weight:700;min-height:22px}
+.ms-msg.win{color:#2f7d4f}.ms-msg.lose{color:#c0392b}
+@media(max-width:560px){.ms-c{width:26px;height:26px;font-size:13px}}
+</style>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2b5fd9"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#퍼즐·게임">퍼즐·게임</a><span>›</span>지뢰찾기</nav>
+  <h1>지뢰찾기</h1>
+  <p class="sub">숫자를 단서로 지뢰가 없는 칸을 모두 열면 이겨요. 설치 없이 바로 할 수 있고 최고 기록은 이 기기에 저장돼요.</p>
+  <div class="ad-slot" data-ad="top"></div>
+
+  <div class="card">
+    <div class="ms-top">
+      <div class="tabs"><button class="tab active" data-d="easy">초급</button><button class="tab" data-d="mid">중급</button><button class="tab" data-d="hard">고급</button></div>
+      <button class="btn-ghost" id="flagBtn" aria-pressed="false">🚩 깃발 끄기</button>
+      <button class="btn-ghost" id="newBtn">새 판</button>
+      <div class="ms-stat"><span>남은 지뢰 <b id="mineLeft">0</b></span><span>시간 <b id="timer">0</b>초</span></div>
+    </div>
+    <div class="ms-wrap"><div class="ms-board" id="board"></div></div>
+    <div class="ms-msg" id="msg"></div>
+    <div class="status" id="best"></div>
+  </div>
+ <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">퍼즐·게임 도구 더 보기</div><div class="chips"><a href="nonogram.html">네모로직</a><a href="water-sort.html">물 붓기 퍼즐</a><a href="block-fill.html">블록 채우기</a><a href="game2048.html">2048 게임</a><a href="order.html">숫자 순서 누르기</a><a href="math-speed.html">암산 스피드</a><a class="more" href="index.html#퍼즐·게임">전체 보기 →</a></div></div>
+<section class="seo">
+<h2>지뢰찾기 규칙</h2><p>칸을 열면 숫자가 나오는데, 이 숫자는 <b>그 칸에 맞닿은 여덟 칸 중 지뢰가 몇 개인지</b>를 뜻해요. 숫자가 없는 빈 칸을 열면 주변이 한꺼번에 펼쳐집니다. 지뢰가 확실한 칸에는 깃발을 꽂아 표시해 두고, 지뢰가 아닌 칸을 전부 열면 승리예요. 지뢰를 누르면 그 판은 끝납니다.</p><p>첫 클릭은 항상 안전해요. 지뢰는 처음 누른 칸과 그 주변을 피해서 배치되기 때문에, 운으로 첫 수에 지는 일은 없습니다.</p>
+<h2>난이도</h2><p><table><thead><tr><th>난이도</th><th>판 크기</th><th>지뢰 수</th><th>지뢰 비율</th></tr></thead><tbody><tr><td>초급</td><td>9 × 9</td><td>10개</td><td>약 12%</td></tr><tr><td>중급</td><td>16 × 16</td><td>40개</td><td>약 16%</td></tr><tr><td>고급</td><td>16 × 30</td><td>99개</td><td>약 21%</td></tr></tbody></table></p>
+<h2>빨리 푸는 요령</h2><ol><li><b>숫자 1부터 보세요.</b> 1 주변에 닫힌 칸이 하나뿐이면 그 칸이 지뢰입니다.</li><li><b>숫자만큼 깃발을 꽂았다면</b> 그 숫자를 눌러 남은 칸을 한 번에 여세요. 속도가 크게 붙어요.</li><li><b>모서리와 가장자리</b>는 맞닿은 칸이 적어 경우의 수가 줄어듭니다. 막히면 가장자리부터 보세요.</li><li><b>두 숫자가 겹치는 구간</b>을 비교하면 확정 칸이 나와요. 1-2가 나란히 있으면 대개 한쪽이 정해집니다.</li></ol>
+<h2>사용 방법</h2><ol><li>난이도를 고르면 새 판이 시작돼요.</li><li>칸을 눌러 열고, 지뢰가 의심되면 깃발을 꽂으세요. PC는 오른쪽 버튼, 휴대폰은 깃발 모드나 길게 누르기입니다.</li><li>지뢰가 아닌 칸을 모두 열면 시간이 기록되고, 최고 기록은 이 기기에 저장돼요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>숫자는 무슨 뜻인가요?</summary><p>그 칸에 맞닿은 여덟 칸 중 지뢰가 몇 개인지를 뜻해요. 1이면 주변 여덟 칸 중 하나가 지뢰입니다.</p></details><details><summary>첫 클릭에서 바로 지뢰가 터지나요?</summary><p>아니요. 지뢰는 첫 클릭 뒤에 놓이고, 처음 누른 칸과 그 주변은 지뢰를 피해서 배치해요. 그래서 첫 수는 항상 안전합니다.</p></details><details><summary>휴대폰에서 깃발은 어떻게 꽂나요?</summary><p>깃발 버튼을 눌러 깃발 모드로 바꾸면 칸을 터치할 때 깃발이 꽂혀요. 칸을 길게 눌러도 됩니다. PC에서는 마우스 오른쪽 버튼을 쓰세요.</p></details><details><summary>숫자를 눌렀는데 주변이 한꺼번에 열렸어요.</summary><p>숫자만큼 깃발을 꽂아둔 상태에서 그 숫자를 누르면 남은 칸이 한 번에 열려요. 빠르게 진행할 때 쓰는 방법인데, 깃발이 틀렸다면 지뢰가 터집니다.</p></details><details><summary>기록은 어디에 저장되나요?</summary><p>이 브라우저 안에만 저장돼요. 서버로 보내지 않기 때문에 다른 기기에서는 보이지 않고, 인터넷 사용 기록을 지우면 함께 사라집니다.</p></details></section>
+  <footer>최고 기록은 이 브라우저에만 저장되며 서버로 전송되지 않아요.<br><span class="version-tag">v1.0 · 2026-09-21 업데이트</span></footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const LEVELS={easy:{r:9,c:9,m:10,nm:'초급'}, mid:{r:16,c:16,m:40,nm:'중급'}, hard:{r:16,c:30,m:99,nm:'고급'}};
+let lv='easy', cells=[], rows=0, cols=0, mines=0, started=false, over=false, opened=0, flags=0, t0=0, tick=null, flagMode=false;
+
+function idx(r,c){ return r*cols+c; }
+function around(r,c){ const o=[]; for(let i=-1;i<=1;i++) for(let j=-1;j<=1;j++){ if(!i&&!j) continue; const y=r+i,x=c+j; if(y>=0&&y<rows&&x>=0&&x<cols) o.push(idx(y,x)); } return o; }
+
+function build(){
+  const L=LEVELS[lv]; rows=L.r; cols=L.c; mines=L.m;
+  cells=Array.from({length:rows*cols},()=>({mine:false,open:false,flag:false,n:0}));
+  started=false; over=false; opened=0; flags=0;
+  if(tick){ clearInterval(tick); tick=null; } $('timer').textContent='0';
+  $('mineLeft').textContent=mines; $('msg').textContent=''; $('msg').className='ms-msg';
+  const b=$('board'); b.style.gridTemplateColumns='repeat('+cols+',auto)'; b.innerHTML='';
+  cells.forEach((_,i)=>{
+    const el=document.createElement('button');
+    el.type='button'; el.className='ms-c'; el.dataset.i=i;
+    el.setAttribute('aria-label','닫힌 칸');
+    b.appendChild(el);
+  });
+  showBest();
+}
+
+function place(safe){
+  const ban=new Set([safe,...around(Math.floor(safe/cols), safe%cols)]);
+  let left=mines, guard=0;
+  while(left>0 && guard++<100000){
+    const i=Math.floor(Math.random()*cells.length);
+    if(cells[i].mine||ban.has(i)) continue;
+    cells[i].mine=true; left--;
+  }
+  for(let r=0;r<rows;r++) for(let c=0;c<cols;c++){
+    const i=idx(r,c); if(cells[i].mine) continue;
+    cells[i].n=around(r,c).filter(j=>cells[j].mine).length;
+  }
+}
+
+function paint(i){
+  const el=$('board').children[i], cl=cells[i];
+  el.className='ms-c'+(cl.open?' open':'')+(cl.flag&&!cl.open?' flag':'');
+  if(cl.open){
+    if(cl.mine){ el.classList.add('mine'); el.textContent='💣'; el.style.color='inherit'; }
+    else if(cl.n){ el.classList.add('n'+cl.n); el.textContent=cl.n; }
+    else el.textContent='';
+    el.setAttribute('aria-label', cl.mine?'지뢰':(cl.n?cl.n+'개':'빈 칸'));
+  } else {
+    el.textContent=cl.flag?'🚩':'';
+    el.setAttribute('aria-label', cl.flag?'깃발':'닫힌 칸');
+  }
+}
+
+function startTimer(){
+  t0=Date.now();
+  tick=setInterval(()=>{ $('timer').textContent=Math.floor((Date.now()-t0)/1000); },250);
+}
+
+function open(i){
+  const cl=cells[i];
+  if(over||cl.open||cl.flag) return;
+  if(!started){ started=true; place(i); startTimer(); }
+  const stack=[i];
+  while(stack.length){
+    const k=stack.pop(), c=cells[k];
+    if(c.open||c.flag) continue;
+    c.open=true; opened++; paint(k);
+    if(c.mine){ boom(k); return; }
+    if(c.n===0) around(Math.floor(k/cols),k%cols).forEach(j=>{ if(!cells[j].open&&!cells[j].flag) stack.push(j); });
+  }
+  checkWin();
+}
+
+function chord(i){
+  const c=cells[i];
+  if(!c.open||!c.n||over) return;
+  const nb=around(Math.floor(i/cols),i%cols);
+  if(nb.filter(j=>cells[j].flag).length!==c.n) return;
+  nb.forEach(j=>{ if(!cells[j].flag&&!cells[j].open) open(j); });
+}
+
+function toggleFlag(i){
+  const c=cells[i];
+  if(over||c.open) return;
+  c.flag=!c.flag; flags+=c.flag?1:-1;
+  $('mineLeft').textContent=mines-flags;
+  paint(i);
+  checkWin();
+}
+
+function boom(hit){
+  over=true; if(tick){ clearInterval(tick); tick=null; }
+  cells.forEach((c,k)=>{ if(c.mine){ c.open=true; paint(k); } });
+  $('board').children[hit].classList.add('boom');
+  $('msg').textContent='지뢰를 밟았어요. "새 판"을 눌러 다시 해보세요.';
+  $('msg').className='ms-msg lose';
+}
+
+function checkWin(){
+  if(over||!started) return;
+  if(opened !== rows*cols-mines) return;
+  over=true; if(tick){ clearInterval(tick); tick=null; }
+  const sec=Math.floor((Date.now()-t0)/1000);
+  $('timer').textContent=sec;
+  cells.forEach((c,k)=>{ if(c.mine&&!c.flag){ c.flag=true; paint(k); } });
+  $('mineLeft').textContent='0';
+  const key='ms_best_'+lv; let prev=0, extra='';
+  try{ prev=+(localStorage.getItem(key)||0); if(!prev||sec<prev){ localStorage.setItem(key,sec); extra=' 최고 기록을 새로 세웠어요!'; } }catch(e){}
+  $('msg').textContent=LEVELS[lv].nm+' 완료 · '+sec+'초.'+extra;
+  $('msg').className='ms-msg win';
+  showBest();
+  if(typeof gtag==='function') gtag('event','minesweeper_win',{level:lv});
+}
+
+function showBest(){
+  let v=null; try{ v=localStorage.getItem('ms_best_'+lv); }catch(e){}
+  $('best').textContent = v ? LEVELS[lv].nm+' 최고 기록 '+v+'초' : LEVELS[lv].nm+' 최고 기록이 아직 없어요.';
+}
+
+// ---- 입력 ----
+let press=null, longed=false;
+$('board').addEventListener('contextmenu',e=>{ e.preventDefault(); const el=e.target.closest('.ms-c'); if(el) toggleFlag(+el.dataset.i); });
+$('board').addEventListener('click',e=>{
+  const el=e.target.closest('.ms-c'); if(!el) return;
+  if(longed){ longed=false; return; }
+  const i=+el.dataset.i;
+  if(flagMode) toggleFlag(i);
+  else if(cells[i].open) chord(i);
+  else open(i);
+});
+$('board').addEventListener('pointerdown',e=>{
+  if(e.button) return;                       // 오른쪽 버튼은 contextmenu 가 처리
+  const el=e.target.closest('.ms-c'); if(!el) return;
+  const i=+el.dataset.i;
+  press=setTimeout(()=>{ longed=true; toggleFlag(i); press=null; }, 450);
+});
+['pointerup','pointerleave','pointercancel'].forEach(ev=>$('board').addEventListener(ev,()=>{ if(press){ clearTimeout(press); press=null; } }));
+
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active'); lv=b.dataset.d; build();
+}));
+$('newBtn').addEventListener('click',build);
+$('flagBtn').addEventListener('click',()=>{
+  flagMode=!flagMode;
+  $('flagBtn').textContent = flagMode ? '🚩 깃발 켜짐' : '🚩 깃발 끄기';
+  $('flagBtn').setAttribute('aria-pressed', flagMode?'true':'false');
+});
+
+build();
+
+</script>
+
+</body>
+</html>

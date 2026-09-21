@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>PDF를 JPG로 변환 - 페이지를 이미지로 저장하기</title>
+<meta name="description" content="PDF 페이지를 JPG·PNG 이미지로 바꾸는 무료 도구. 화질과 페이지 범위를 고를 수 있고, 업로드 없이 브라우저에서 바로 변환해요.">
+<meta name="keywords" content="PDF JPG 변환, PDF 이미지 변환, PDF PNG 변환, PDF 사진으로 저장, PDF 캡처, PDF 이미지 추출">
+<link rel="canonical" href="https://dailyfreetoolbox.com/pdf-to-jpg.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PDF를 JPG로 변환">
+<meta property="og:description" content="PDF 페이지를 JPG·PNG 이미지로 바꾸는 무료 도구. 화질과 페이지 범위를 고를 수 있고, 업로드 없이 브라우저에서 바로 변환해요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/pdf-to-jpg.html">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "PDF를 JPG로 변환", "url": "https://dailyfreetoolbox.com/pdf-to-jpg.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "PDF 페이지를 JPG·PNG 이미지로 바꾸는 무료 도구. 업로드 없이 브라우저에서 변환해요."}
+</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "PDF 파일이 서버로 올라가나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 변환은 전부 브라우저 안에서 이루어지고 파일이 밖으로 나가지 않아요. 인터넷이 끊겨도 페이지를 열어둔 상태라면 변환됩니다."}}, {"@type": "Question", "name": "JPG와 PNG 중 뭘 고르면 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "사진이 많은 문서는 JPG가 용량이 훨씬 작아요. 글자와 표, 도면처럼 선이 또렷해야 하는 문서는 PNG가 깔끔합니다."}}, {"@type": "Question", "name": "글자가 흐릿하게 나와요.", "acceptedAnswer": {"@type": "Answer", "text": "화질을 높음이나 최고로 올리면 또렷해져요. 대신 이미지 크기와 용량이 함께 커집니다."}}, {"@type": "Question", "name": "암호가 걸린 PDF도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "열기 암호가 걸린 PDF는 읽지 못해요. 암호를 푼 뒤에 올려주세요."}}]}</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
+.drop{border:2px dashed var(--line);border-radius:3px;padding:26px;text-align:center;color:var(--ink-soft);font-size:14px;cursor:pointer;background:#fff}
+.drop.over{border-color:var(--accent);background:var(--paper-deep)}
+.thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:14px}
+.thumb{border:1px solid var(--line);border-radius:3px;padding:8px;background:#fff;text-align:center}
+.thumb img{width:100%;height:auto;display:block;border:1px solid var(--paper-deep)}
+.thumb .nm{font-size:12px;color:var(--ink-soft);margin:6px 0 4px}
+.thumb button{width:100%;padding:6px;font-size:12px}
+.bar{height:6px;background:var(--paper-deep);border-radius:3px;overflow:hidden;margin-top:10px;display:none}
+.bar.on{display:block}.bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .15s}
+</style>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2b5fd9"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <nav class="crumb" aria-label="현재 위치"><a href="index.html">홈</a><span>›</span><a href="index.html#계산·생활">계산·생활</a><span>›</span>PDF → JPG</nav>
+  <h1>PDF를 JPG로 변환</h1>
+  <p class="sub">PDF 페이지를 이미지로 바꿔 저장해요. 화질과 페이지 범위를 고를 수 있고, 업로드 없이 브라우저에서 처리해요.</p>
+  <div class="ad-slot" data-ad="top"></div>
+
+  <div class="card">
+    <div class="drop" id="drop">여기에 PDF 파일을 끌어다 놓거나 클릭해서 선택<input type="file" id="file" accept="application/pdf" style="display:none"></div>
+    <div class="status" id="info"></div>
+    <div class="grid2" style="margin-top:12px">
+      <div class="field"><label>변환할 페이지 (예: 1-3, 5)</label><input type="text" id="range" placeholder="비워두면 전체"></div>
+      <div class="field"><label>화질</label><select id="scale"><option value="1">보통 (화면용)</option><option value="1.5" selected>높음 (기본)</option><option value="2">최고 (인쇄용)</option><option value="3">초고화질 (느림)</option></select></div>
+      <div class="field"><label>저장 형식</label><select id="fmt"><option value="jpg" selected>JPG (용량 작음)</option><option value="png">PNG (선이 또렷함)</option></select></div>
+    </div>
+    <div class="btn-row"><button class="btn" id="run" disabled>이미지로 변환</button><button class="btn-ghost hidden" id="saveAll">전체 저장</button></div>
+    <div class="bar" id="bar"><i id="barI"></i></div>
+    <div class="status" id="status"></div>
+    <div class="thumbs" id="thumbs"></div>
+  </div>
+ <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="pdf-merge.html">PDF 합치기</a><a href="pdf-split.html">PDF 분할하기</a><a href="image-to-pdf.html">이미지 → PDF</a><a href="image-compress.html">이미지 용량 줄이기</a><a href="qrcode.html">QR코드 생성기</a><a href="charcount.html">글자수 세기</a><a class="more" href="index.html#계산·생활">전체 보기 →</a></div></div>
+<section class="seo">
+<h2>PDF를 이미지로 바꿔야 할 때</h2><p>계약서나 청구서를 카카오톡으로 보낼 때, 블로그나 보고서에 PDF 한 장만 그림으로 넣을 때, 인쇄소에 이미지 파일로 넘겨야 할 때 쓰면 편해요. PDF 그대로는 미리보기가 안 되는 곳이 많은데 이미지로 바꾸면 어디서나 바로 보입니다.</p><p>변환은 PDF 페이지를 화면에 그리는 방식이라, 글자가 선택되는 문서든 스캔한 문서든 똑같이 이미지가 됩니다. 반대로 이미지를 PDF로 묶고 싶다면 이미지 → PDF 도구를 쓰세요.</p>
+<h2>화질은 어떻게 고르나</h2><p><table><thead><tr><th>화질</th><th>A4 기준 가로 픽셀</th><th>쓰기 좋은 곳</th></tr></thead><tbody><tr><td>보통</td><td>약 800px</td><td>메신저 전송, 화면으로 보기</td></tr><tr><td>높음</td><td>약 1,200px</td><td>대부분의 경우 (기본값)</td></tr><tr><td>최고</td><td>약 1,600px</td><td>인쇄, 글자가 작은 문서</td></tr><tr><td>초고화질</td><td>약 2,400px</td><td>도면·세밀한 표. 변환이 느리고 용량이 큽니다</td></tr></tbody></table></p>
+<h2>사용 방법</h2><ol><li>PDF를 끌어다 놓거나 클릭해서 고르면 총 페이지 수가 표시돼요.</li><li>필요하면 페이지 범위와 화질, 저장 형식을 바꾸세요. 범위를 비워두면 전체가 변환됩니다.</li><li>"이미지로 변환"을 누르면 미리보기가 나오고, 각 장 아래 버튼이나 "전체 저장"으로 내려받아요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>PDF 파일이 서버로 올라가나요?</summary><p>아니요. 변환은 전부 브라우저 안에서 이루어지고 파일이 밖으로 나가지 않아요. 인터넷이 끊겨도 페이지를 열어둔 상태라면 변환됩니다.</p></details><details><summary>JPG와 PNG 중 뭘 고르면 되나요?</summary><p>사진이 많은 문서는 JPG가 용량이 훨씬 작아요. 글자와 표, 도면처럼 선이 또렷해야 하는 문서는 PNG가 깔끔합니다.</p></details><details><summary>글자가 흐릿하게 나와요.</summary><p>화질을 높음이나 최고로 올리면 또렷해져요. 대신 이미지 크기와 용량이 함께 커집니다.</p></details><details><summary>암호가 걸린 PDF도 되나요?</summary><p>열기 암호가 걸린 PDF는 읽지 못해요. 암호를 푼 뒤에 올려주세요.</p></details><details><summary>페이지가 많은데 한꺼번에 저장할 수 있나요?</summary><p>"전체 저장"을 누르면 순서대로 내려받아요. 브라우저가 "여러 파일 다운로드를 허용할까요?"라고 물으면 허용해 주세요.</p></details></section>
+  <footer>모든 변환은 브라우저 안에서 이루어지며 파일이 서버로 전송되지 않아요. 페이지가 많거나 화질이 높으면 변환에 시간이 걸릴 수 있어요.<br><span class="version-tag">v1.0 · 2026-09-21 업데이트</span></footer>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+<script>
+
+const $=id=>document.getElementById(id);
+let pdfDoc=null, baseName='page', results=[];
+
+if (window.pdfjsLib) pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js';
+
+function parseRange(txt, max){
+  const t=(txt||'').trim();
+  if(!t) return Array.from({length:max},(_,i)=>i+1);
+  const out=[];
+  t.split(',').forEach(part=>{
+    const p=part.trim(); if(!p) return;
+    const m=p.match(/^(\d+)\s*-\s*(\d+)$/);
+    if(m){ let a=+m[1], b=+m[2]; if(a>b) [a,b]=[b,a];
+      for(let i=a;i<=b;i++) if(i>=1&&i<=max&&!out.includes(i)) out.push(i); }
+    else { const n=+p; if(n>=1&&n<=max&&!out.includes(n)) out.push(n); }
+  });
+  return out;
+}
+
+async function setFile(f){
+  if(!f) return;
+  if(!window.pdfjsLib){ $('info').innerHTML='<span class="bad">변환 기능을 불러오지 못했어요. 새로고침해 주세요.</span>'; return; }
+  baseName=f.name.replace(/\.pdf$/i,'') || 'page';
+  $('info').textContent='읽는 중…'; $('run').disabled=true;
+  try{
+    const buf=await f.arrayBuffer();
+    pdfDoc=await pdfjsLib.getDocument({data:buf}).promise;
+    $('info').innerHTML='<b>'+f.name+'</b> — 총 '+pdfDoc.numPages+'쪽';
+    $('range').placeholder='비워두면 전체 (1-'+pdfDoc.numPages+')';
+    $('run').disabled=false;
+  }catch(e){
+    pdfDoc=null;
+    $('info').innerHTML='<span class="bad">PDF를 읽지 못했어요. 암호가 걸렸거나 손상된 파일일 수 있어요.</span>';
+  }
+}
+
+$('drop').addEventListener('click',()=>$('file').click());
+$('file').addEventListener('change',e=>setFile(e.target.files[0]));
+['dragenter','dragover'].forEach(ev=>$('drop').addEventListener(ev,e=>{e.preventDefault();$('drop').classList.add('over');}));
+['dragleave','drop'].forEach(ev=>$('drop').addEventListener(ev,e=>{e.preventDefault();$('drop').classList.remove('over');}));
+$('drop').addEventListener('drop',e=>{ const f=e.dataTransfer.files[0]; if(f&&f.type==='application/pdf') setFile(f); });
+
+function download(url,name){ const a=document.createElement('a'); a.href=url; a.download=name; document.body.appendChild(a); a.click(); a.remove(); }
+
+$('run').addEventListener('click',async()=>{
+  if(!pdfDoc) return;
+  const pages=parseRange($('range').value, pdfDoc.numPages);
+  if(!pages.length){ $('status').innerHTML='<span class="bad">변환할 페이지가 없어요. 범위를 확인해 주세요.</span>'; return; }
+  const scale=+$('scale').value, fmt=$('fmt').value;
+  const mime = fmt==='png' ? 'image/png' : 'image/jpeg';
+  results.forEach(r=>URL.revokeObjectURL(r.url)); results=[];
+  $('thumbs').innerHTML=''; $('saveAll').classList.add('hidden');
+  $('run').disabled=true; $('bar').classList.add('on'); $('status').textContent='';
+  try{
+    for(let i=0;i<pages.length;i++){
+      const n=pages[i];
+      const page=await pdfDoc.getPage(n);
+      const vp=page.getViewport({scale});
+      const cv=document.createElement('canvas');
+      cv.width=Math.round(vp.width); cv.height=Math.round(vp.height);
+      const ctx=cv.getContext('2d');
+      if(fmt!=='png'){ ctx.fillStyle='#fff'; ctx.fillRect(0,0,cv.width,cv.height); }
+      await page.render({canvasContext:ctx, viewport:vp}).promise;
+      const blob=await new Promise(res=>cv.toBlob(res, mime, 0.92));
+      const url=URL.createObjectURL(blob);
+      const name=baseName+'_'+String(n).padStart(2,'0')+'.'+(fmt==='png'?'png':'jpg');
+      results.push({url,name});
+      const d=document.createElement('div'); d.className='thumb';
+      d.innerHTML='<img src="'+url+'" alt=""><div class="nm">'+n+'쪽 · '+Math.round(blob.size/1024)+'KB</div>';
+      const b=document.createElement('button'); b.className='btn-ghost'; b.textContent='저장';
+      b.addEventListener('click',()=>download(url,name));
+      d.appendChild(b); $('thumbs').appendChild(d);
+      $('barI').style.width=Math.round((i+1)/pages.length*100)+'%';
+      await new Promise(r=>setTimeout(r,0));
+    }
+    $('status').innerHTML='<b>'+results.length+'장</b>을 변환했어요. 각 장의 "저장"이나 아래 "전체 저장"을 누르세요.';
+    $('saveAll').classList.remove('hidden');
+  }catch(e){
+    $('status').innerHTML='<span class="bad">변환 중 문제가 생겼어요. 화질을 낮추거나 페이지를 나눠서 다시 시도해 주세요.</span>';
+  }
+  $('run').disabled=false; $('bar').classList.remove('on'); $('barI').style.width='0';
+});
+
+$('saveAll').addEventListener('click',()=>{
+  results.forEach((r,i)=>setTimeout(()=>download(r.url,r.name), i*250));
+});
+
+let sent=false;
+$('run').addEventListener('click',()=>{ if(!sent&&typeof gtag==='function'){ gtag('event','pdf_to_jpg',{}); sent=true; } });
+
+</script>
+
+</body>
+</html>

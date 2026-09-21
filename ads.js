@@ -10,13 +10,13 @@
   if (path === 'ads-admin.html') return;
   var preview = /[?&]adpreview=1/.test(location.search);
   var mobile = window.innerWidth < 720;
-  var LABEL = { top: '상단', 'below-result': '결과 아래', 'in-content': '본문 중간', side: '사이드', infeed: '인피드' };
+  var LABEL = { top: '상단', 'below-result': '결과 아래', 'in-content': '본문 중간', side: '왼쪽 세로', 'side-box': '오른쪽 박스', infeed: '인피드' };
 
   function slots() { return Array.prototype.slice.call(document.querySelectorAll('.ad-slot[data-ad]')); }
 
   function showPreview() {
     slots().forEach(function (el) {
-      var k = el.getAttribute('data-ad'); var h = k === 'side' ? 600 : (k === 'top' && !mobile ? 90 : 100);
+      var k = el.getAttribute('data-ad'); var h = k === 'side' ? 600 : (k === 'side-box' ? 250 : (k === 'top' && !mobile ? 90 : 100));
       el.style.minHeight = h + 'px'; el.innerHTML = '<div style="height:' + h + 'px;display:flex;align-items:center;justify-content:center;border:2px dashed #c9a227;background:#fff3bf;color:#7a5a00;font:700 13px sans-serif;border-radius:4px">광고 자리: ' + (LABEL[k] || k) + ' (' + k + ')</div>';
     });
   }
@@ -52,7 +52,9 @@
         loadAdsense(cfg.client);
         var ins = document.createElement('ins'); ins.className = 'adsbygoogle'; ins.style.display = 'block';
         ins.setAttribute('data-ad-client', cfg.client); ins.setAttribute('data-ad-slot', sc.slot);
-        if (k === 'side') { ins.style.width = '300px'; ins.style.height = '600px'; }
+        // 사이드 두 자리는 고정 크기. 왼쪽 세로는 레일 폭에 맞춰 1380px 미만에서만 160px (nav.js 참고)
+        if (k === 'side') { ins.style.width = (window.innerWidth >= 1380 ? 300 : 160) + 'px'; ins.style.height = '600px'; }
+        else if (k === 'side-box') { ins.style.width = '300px'; ins.style.height = '250px'; }
         else { ins.setAttribute('data-ad-format', sc.format || 'auto'); ins.setAttribute('data-full-width-responsive', 'true'); }
         el.appendChild(ins);
         try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) { }

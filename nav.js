@@ -66,9 +66,24 @@
     + '#site-footer-links a{color:rgba(0,0,0,.5);text-decoration:none;margin:0 6px}'
     + '#site-footer-links a:hover{color:rgba(0,0,0,.85)}'
     + '#site-footer-links a.active{color:var(--nav-accent);font-weight:700}'
-    + '#side-ad{display:none;position:fixed;top:80px;left:calc(50% + 370px);width:300px}'
-    + '@media (min-width:1100px){#side-ad{display:block}}'
-    + '#side-ad .ad-slot{margin:0}';
+    // 본문(main)은 680px 가운데 정렬이라 좌우 끝이 50%∓340px. 레일은 양쪽 모두 그 바깥 24px 자리.
+    // 왼쪽 — 세로로 긴 광고 하나. 화면에 고정해 스크롤해도 계속 보인다.
+    //        300px 를 쓰면 왼쪽 끝이 50%-664px 이라 창이 1345px 이상이어야 안 잘리므로,
+    //        1100~1380px 구간만 160px 로 줄여 넣고 1380px 부터 오른쪽과 같은 300px 로 넓힌다.
+    + '#rail-l{display:none;position:fixed;top:80px;right:calc(50% + 364px);width:160px}'
+    + '@media (min-width:1100px){#rail-l{display:block}}'
+    + '@media (min-width:1380px){#rail-l{width:300px}}'
+    // 오른쪽 — 박스 광고(300×250) 먼저, 그 아래 관련 도구·가이드(아래 moveToRail).
+    //          셋을 합치면 화면 높이를 넘으므로 고정하지 않고 본문과 함께 흐르게 둔다.
+    //          오른쪽 끝이 50%+664px 이라 스크롤바를 감안하면 창이 1380px 이상이어야 안 잘린다.
+    + '#rail-r{display:none;position:absolute;left:calc(50% + 364px);width:300px}'
+    + '@media (min-width:1380px){#rail-r{display:block}}'
+    + '#rail-r .ad-slot{margin:0 0 20px}'
+    + '#rail-r .sibs,#rail-r .guides-rel,#rail-r .guide-tools{margin:0 0 18px}'
+    + '#rail-r .sibs .chips{grid-template-columns:1fr;gap:6px}'
+    + '#rail-r .guide-tools .grid{grid-template-columns:1fr}'
+    + '#rail-r .guides-rel a .go,#rail-r .guide-tools a .go{display:none}'
+    + '#rail-l .ad-slot{margin:0}';
   var style = document.createElement('style'); style.textContent = css; document.head.appendChild(style);
 
   // ---- 데스크톱 바 ----
@@ -167,9 +182,56 @@
       var main = document.querySelector('main');
       if (main && main.parentNode) main.parentNode.insertBefore(box, main.nextSibling); else document.body.appendChild(box);
     }
-    if (!document.getElementById('side-ad') && path !== 'index.html' && path !== 'ads-admin.html') {
-      var aside = document.createElement('aside'); aside.id = 'side-ad'; aside.innerHTML = '<div class="ad-slot" data-ad="side"></div>'; document.body.appendChild(aside);
+    if (!document.getElementById('rail-l') && path !== 'index.html' && path !== 'ads-admin.html') {
+      var l = document.createElement('aside'); l.id = 'rail-l';
+      l.innerHTML = '<div class="ad-slot" data-ad="side"></div>';          // 세로로 긴 160×600
+      var r = document.createElement('aside'); r.id = 'rail-r';
+      r.innerHTML = '<div class="ad-slot" data-ad="side-box"></div>';      // 상단 박스 300×250
+      document.body.appendChild(l); document.body.appendChild(r);
+      setupRail();
     }
+  }
+
+  // ---- 관련 도구·가이드를 오른쪽 레일로 (1380px 이상) ----
+  // 폭이 300px 확보되는 1380px 부터만 옮긴다. 그보다 좁으면 오른쪽 레일 자체가 안 보이므로
+  // 본문 원래 자리에 그대로 둔다. DOM 에서 옮기기만 하므로 내용이 중복되지 않는다.
+  // .sibs/.guides-rel 은 도구 페이지, .guide-tools 는 가이드 글 페이지
+  // ("이 글과 함께 쓰는 도구"·"같은 주제의 다른 글" 두 개라 문서 순서대로 모두 옮긴다).
+  var RAIL_WIDE = 1380, RAIL_SEL = ['.sibs', '.guides-rel', '.guide-tools'], railMoved = [];
+
+  function moveToRail() {
+    var rail = document.getElementById('rail-r'); if (!rail || railMoved.length) return;
+    RAIL_SEL.forEach(function (sel) {
+      Array.prototype.forEach.call(document.querySelectorAll('main ' + sel), function (el) {
+        var mark = document.createComment('side-rail'); // 되돌릴 자리
+        el.parentNode.insertBefore(mark, el);
+        railMoved.push({ el: el, mark: mark });
+        rail.appendChild(el);                           // 광고 아래에 순서대로
+      });
+    });
+  }
+
+  function restoreFromRail() {
+    railMoved.forEach(function (m) {
+      if (m.mark.parentNode) { m.mark.parentNode.insertBefore(m.el, m.mark); m.mark.parentNode.removeChild(m.mark); }
+    });
+    railMoved = [];
+  }
+
+  function syncRail() {
+    var rail = document.getElementById('rail-r'); if (!rail) return;
+    var wide = window.innerWidth >= RAIL_WIDE;
+    if (wide) moveToRail(); else restoreFromRail();
+    // absolute 레일이라 본문이 시작하는 높이에 맞춰 준다(브레드크럼·제목과 같은 줄에서 시작)
+    var main = document.querySelector('main');
+    rail.style.top = (wide && main)
+      ? Math.round(main.getBoundingClientRect().top + window.pageYOffset) + 'px' : '';
+  }
+
+  function setupRail() {
+    syncRail();
+    var t; window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(syncRail, 150); });
+    window.addEventListener('load', syncRail);        // 광고·이미지가 다 뜬 뒤 본문 높이 다시 측정
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', addExtras); else addExtras();
 

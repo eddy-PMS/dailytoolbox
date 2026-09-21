@@ -33,7 +33,7 @@ textarea.html { min-height:90px; font-family:ui-monospace, Menlo, Consolas, mono
 
 <main>
   <h1>광고 관리</h1>
-  <p class="sub">전 페이지의 광고 자리 5곳을 여기서 켜고 끄고, 애드센스 단위나 직접 코드(HTML)를 배정해요. 저장하면 5분 안에 전 페이지에 반영돼요. 페이지를 다시 배포할 필요가 없어요.</p>
+  <p class="sub">전 페이지의 광고 자리 6곳을 여기서 켜고 끄고, 애드센스 단위나 직접 코드(HTML)를 배정해요. 저장하면 5분 안에 전 페이지에 반영돼요. 페이지를 다시 배포할 필요가 없어요.</p>
 
   <div class="card">
     <h2>관리자 인증</h2>
@@ -70,7 +70,7 @@ textarea.html { min-height:90px; font-family:ui-monospace, Menlo, Consolas, mono
 
 <script>
 const $=id=>document.getElementById(id);
-const SLOTS=[['top','상단 (설명 바로 아래 · 홈 히어로 아래)',{m:100,d:90},'horizontal'],['below-result','결과 아래 (게임은 랭킹 아래)',{m:250,d:250},'auto'],['in-content','본문 중간 (설명 문단 사이)',{m:250,d:250},'auto'],['side','데스크톱 사이드 300×600 (1100px 이상)',{m:0,d:600},'vertical'],['infeed','홈 인피드 (그룹 사이 2곳)',{m:250,d:250},'auto']];
+const SLOTS=[['top','상단 (설명 바로 아래 · 홈 히어로 아래)',{m:100,d:90},'horizontal'],['below-result','결과 아래 (게임은 랭킹 아래)',{m:250,d:250},'auto'],['in-content','본문 중간 (설명 문단 사이)',{m:250,d:250},'auto'],['side','왼쪽 세로 (1100px 이상 160×600, 1380px 이상 300×600, 화면 고정)',{m:0,d:600},'vertical'],['side-box','오른쪽 박스 300×250 (1380px 이상, 관련 도구 위)',{m:0,d:250},'rectangle'],['infeed','홈 인피드 (그룹 사이 2곳)',{m:250,d:250},'auto']];
 const PAGES=(window.TOOLBOX?window.TOOLBOX.groups.flatMap(g=>g.items.map(i=>i[0])):[]).concat(['index.html','about.html','privacy.html','404.html']);
 let cfg=null;
 function pagePicker(el, selected){ el.innerHTML=PAGES.map(p=>`<label class="${selected.includes(p)?'on':''}"><input type="checkbox" value="${p}" ${selected.includes(p)?'checked':''} hidden>${p.replace('.html','')}</label>`).join(''); el.querySelectorAll('label').forEach(l=>l.addEventListener('click',e=>{ e.preventDefault(); const c=l.querySelector('input'); c.checked=!c.checked; l.classList.toggle('on',c.checked); })); }

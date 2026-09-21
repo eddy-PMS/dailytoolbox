@@ -251,13 +251,13 @@ def render_index(all_guides):
     sections = ''
     for c in cats:
         items = [g for g in all_guides if g['meta'].get('category', '기타') == c]
-        # .guide-card 는 display:flex 이므로 본문은 .tx 로 감싼다. 안 감싸면 제목·설명·날짜가 가로 3칸으로 나뉜다.
+        # .guide-card 는 display:flex 이므로 본문은 .tx 로 감싼다. 안 감싸면 제목·날짜가 가로로 나뉜다.
+        # 설명은 넣지 않는다 — 제목이 길어 카드가 커지고 목록에서 고르기 어려워진다(제목은 두 줄까지, tool.css).
         cards = ''.join(
             f'<a class="guide-card" href="/guide/{g["slug"]}.html">'
             f'<img class="gic" src="/icons/ui-guide.webp" width="30" height="30" alt="" loading="lazy" decoding="async">'
-            f'<div class="tx"><b>{esc(g["meta"]["title"])}</b>'
-            f'<p>{esc(g["meta"].get("description",""))}</p>'
-            f'<small>{esc(g["meta"].get("updated", g["meta"].get("date","")))} · 관련 도구 {len(g["meta"]["tools"])}개</small></div></a>'
+            f'<span class="tx"><b>{esc(g["meta"]["title"])}</b>'
+            f'<small>{esc(g["meta"].get("updated", g["meta"].get("date","")))} · 관련 도구 {len(g["meta"]["tools"])}개</small></span></a>'
             for g in items)
         sections += f'<section class="group" id="{esc(c)}" style="--accent:{CAT_ACCENT.get(c,"#2f7d4f")}"><div class="group-head" style="margin:26px 0 10px"><h2 style="font-size:17px;margin:0">{esc(c)}</h2><span class="count" style="font-size:12px;color:var(--ink-soft);margin-left:8px">{len(items)}편</span></div><div class="guide-list">{cards}</div></section>'
     ld = json.dumps({"@context": "https://schema.org", "@type": "CollectionPage", "name": "생활 가이드", "url": canonical, "description": "연봉·퇴직금·실업급여·연차·사주처럼 매일 쓰는 도구 뒤에 있는 규칙과 계산법을 정리한 글 모음"}, ensure_ascii=False)
@@ -270,7 +270,7 @@ def render_index(all_guides):
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span>생활 가이드</nav>
-  <h1>생활 가이드</h1>
+  <h1><img class="h1ic" src="/icons/ui-guide.webp" width="32" height="32" alt="">생활 가이드</h1>
   <p class="sub">계산기에 숫자를 넣기 전에 알아두면 좋은 규칙과 계산 방법을 정리했어요. 각 글에서 관련 도구로 바로 이동할 수 있어요.</p>
   <div class="ad-slot" data-ad="top"></div>
 ''' + sections + '''

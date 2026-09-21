@@ -70,14 +70,19 @@
     // 왼쪽 — 세로로 긴 광고 하나. 화면에 고정해 스크롤해도 계속 보인다.
     //        300px 를 쓰면 왼쪽 끝이 50%-664px 이라 창이 1345px 이상이어야 안 잘리므로,
     //        1100~1380px 구간만 160px 로 줄여 넣고 1380px 부터 오른쪽과 같은 300px 로 넓힌다.
-    + '#rail-l{display:none;position:fixed;top:80px;right:calc(50% + 364px);width:160px}'
+    + '#rail-l{display:none;position:fixed;top:80px;bottom:12px;right:calc(50% + 364px);width:160px}'
     + '@media (min-width:1100px){#rail-l{display:block}}'
     + '@media (min-width:1380px){#rail-l{width:300px}}'
     // 오른쪽 — 박스 광고(300×250) 먼저, 그 아래 관련 도구·가이드(아래 moveToRail).
-    //          셋을 합치면 화면 높이를 넘으므로 고정하지 않고 본문과 함께 흐르게 둔다.
     //          오른쪽 끝이 50%+664px 이라 스크롤바를 감안하면 창이 1380px 이상이어야 안 잘린다.
-    + '#rail-r{display:none;position:absolute;left:calc(50% + 364px);width:300px}'
+    + '#rail-r{display:none;position:fixed;top:80px;bottom:12px;left:calc(50% + 364px);width:300px}'
     + '@media (min-width:1380px){#rail-r{display:block}}'
+    // 두 레일 모두 화면에 고정해 스크롤을 따라오게 한다. 다만 내용(오른쪽은 900px 안팎, 왼쪽은 광고 600px)이
+    // 화면 높이를 넘을 수 있으므로 top/bottom 으로 높이를 화면에 맞추고 넘치는 만큼만 레일 안에서 스크롤한다.
+    // 레일 끝까지 내려가면 페이지 스크롤로 이어지도록 overscroll-behavior 는 기본값(auto)을 둔다.
+    + '#rail-l,#rail-r{overflow-y:auto;scrollbar-width:thin;scrollbar-color:#cbd2de transparent}'
+    + '#rail-l::-webkit-scrollbar,#rail-r::-webkit-scrollbar{width:6px}'
+    + '#rail-l::-webkit-scrollbar-thumb,#rail-r::-webkit-scrollbar-thumb{background:#cbd2de;border-radius:3px}'
     + '#rail-r .ad-slot{margin:0 0 20px}'
     + '#rail-r .sibs,#rail-r .guides-rel,#rail-r .guide-tools{margin:0 0 18px}'
     + '#rail-r .sibs .chips{grid-template-columns:1fr;gap:6px}'
@@ -220,18 +225,12 @@
 
   function syncRail() {
     var rail = document.getElementById('rail-r'); if (!rail) return;
-    var wide = window.innerWidth >= RAIL_WIDE;
-    if (wide) moveToRail(); else restoreFromRail();
-    // absolute 레일이라 본문이 시작하는 높이에 맞춰 준다(브레드크럼·제목과 같은 줄에서 시작)
-    var main = document.querySelector('main');
-    rail.style.top = (wide && main)
-      ? Math.round(main.getBoundingClientRect().top + window.pageYOffset) + 'px' : '';
+    if (window.innerWidth >= RAIL_WIDE) moveToRail(); else restoreFromRail();
   }
 
   function setupRail() {
-    syncRail();
+    syncRail();   // 레일 높이는 CSS(top/bottom)가 잡으므로 창 너비만 보면 된다
     var t; window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(syncRail, 150); });
-    window.addEventListener('load', syncRail);        // 광고·이미지가 다 뜬 뒤 본문 높이 다시 측정
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', addExtras); else addExtras();
 

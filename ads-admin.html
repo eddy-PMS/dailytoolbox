@@ -25,6 +25,8 @@ textarea.html { min-height:90px; font-family:ui-monospace, Menlo, Consolas, mono
 .pages label { font-size:12px; display:flex; align-items:center; gap:4px; padding:3px 8px; border:1px solid var(--line); border-radius:12px; background:#ffffff; }
 .pages label.on { background:var(--accent); color:#fff; border-color:var(--accent); }
 .disabled { opacity:.5; pointer-events:none; }
+.mini { margin-left:8px; padding:3px 9px; font-size:11px; font-family:inherit; color:var(--ink-soft); background:#fff; border:1px solid var(--line); border-radius:11px; cursor:pointer; }
+.mini:hover { border-color:var(--accent); color:var(--accent); }
 </style>
 </head>
 <body>
@@ -85,10 +87,35 @@ function renderSlots(){
       <div class="field"><label>최소 높이 · 모바일(px)</label><input type="number" class="s-mh-m" value="${s.minH?s.minH.m:mh.m}"></div>
       <div class="field"><label>최소 높이 · 데스크톱(px)</label><input type="number" class="s-mh-d" value="${s.minH?s.minH.d:mh.d}"></div>
     </div>
-    <div class="field" style="margin-top:8px"><label>직접 코드 (종류가 HTML일 때)</label><textarea class="s-html html" placeholder="<a href='...'><img src='...'></a> 또는 광고 네트워크 태그">${(s.html||'').replace(/</g,'&lt;')}</textarea></div>
+    <div class="field" style="margin-top:8px"><label>직접 코드 (종류가 HTML일 때) <button type="button" class="s-test mini">테스트 배너 넣기</button></label><textarea class="s-html html" placeholder="<a href='...'><img src='...'></a> 또는 광고 네트워크 태그">${(s.html||'').replace(/</g,'&lt;')}</textarea></div>
     <div class="field" style="margin-top:8px"><label>이 자리를 뺄 페이지</label><div class="pages s-exclude"></div></div>
   </div>`; }).join('');
-  $('slots').querySelectorAll('.slotbox').forEach(box=>{ const k=box.dataset.k; pagePicker(box.querySelector('.s-exclude'), (cfg.slots&&cfg.slots[k]&&cfg.slots[k].exclude)||[]); });
+  $('slots').querySelectorAll('.slotbox').forEach(box=>{
+    const k=box.dataset.k;
+    pagePicker(box.querySelector('.s-exclude'), (cfg.slots&&cfg.slots[k]&&cfg.slots[k].exclude)||[]);
+    box.querySelector('.s-test').addEventListener('click',()=>{
+      box.querySelector('.s-html').value=testBanner(k);
+      box.querySelector('.s-type').value='html';          // 직접 코드로 전환
+      box.querySelector('.s-enabled').checked=true;       // 바로 보이도록 사용 켜기
+      $('saveStatus').className='status ok';
+      $('saveStatus').textContent='테스트 배너를 넣었어요. 아래 저장을 눌러야 사이트에 반영돼요.';
+    });
+  });
+}
+// 자리 크기에 맞춘 테스트용 배너. 외부 파일을 안 불러오는 순수 HTML 이라 그대로 넣으면 바로 보인다.
+const TEST_SIZE={top:90,'below-result':250,'in-content':250,side:600,'side-box':250,infeed:250};
+function testBanner(k){
+  const h=TEST_SIZE[k]||250, label=(SLOTS.find(s=>s[0]===k)||[,k])[1].replace(/\s*\(.*$/,'');
+  const small=h<=90;
+  return '<div style="width:100%;height:'+h+'px;display:flex;flex-direction:'+(small?'row':'column')
+    +';align-items:center;justify-content:center;gap:'+(small?'10px':'7px')
+    +';box-sizing:border-box;border:2px dashed #2b5fd9;border-radius:10px;'
+    +'background:linear-gradient(135deg,#eef4ff,#dbe8ff);color:#1e47a8;text-align:center;'
+    +'font-family:-apple-system,\'Apple SD Gothic Neo\',\'Noto Sans KR\',sans-serif">'
+    +'<div style="font-size:'+(small?'20px':'26px')+'">📢</div>'
+    +'<div style="font-weight:700;font-size:'+(small?'14px':'15px')+'">테스트 배너</div>'
+    +'<div style="font-size:12px;color:#5b6472">'+label+(label.includes('×')?'':' · 높이 '+h+'px')+'</div>'
+    +'</div>';
 }
 function collect(){
   const out={enabled:$('enabled').value==='1', client:$('client').value.trim(), autoAds:$('autoAds').value==='1', excludePages:picked($('excludePages')), slots:{}};

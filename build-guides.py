@@ -44,7 +44,7 @@ def load_tools():
     tools = {}
     for g in groups:
         for it in g['items']:
-            tools[it[0]] = {'title': it[1], 'desc': it[2], 'group': g['label'], 'icon': g['icon']}
+            tools[it[0]] = {'title': it[1], 'desc': it[2], 'group': g['label'], 'icon': g['icon'], 'slug': it[0][:-5]}
     return tools
 
 # ---------- 마크다운 ----------
@@ -89,9 +89,10 @@ def md_to_html(md, tools):
         m = re.match(r'^\[\[tool:([a-z0-9-]+\.html)(?:\|(.+?))?\]\]$', st)
         if m:
             flush_para(para); para = []
-            f = m.group(1); t = tools.get(f, {'title': f, 'desc': '', 'icon': '🔧'})
+            f = m.group(1); t = tools.get(f, {'title': f, 'desc': '', 'slug': f[:-5]})
             label = m.group(2) or t['title']
-            out.append(f'<a class="toolcta" href="/{f}"><span class="ic">{t["icon"]}</span><span><b>{esc(t["title"])}</b><small>{esc(label)}</small></span><span class="go">바로 계산하기 →</span></a>')
+            ic = f'<img class="ic" src="/icons/{t["slug"]}.webp" width="34" height="34" alt="" loading="lazy" decoding="async">'
+            out.append(f'<a class="toolcta" href="/{f}">{ic}<span><b>{esc(t["title"])}</b><small>{esc(label)}</small></span><span class="go">바로 계산하기 →</span></a>')
             i += 1; continue
         if st.startswith(':::'):
             flush_para(para); para = []
@@ -204,7 +205,7 @@ def render_guide(meta, body_md, slug, tools, all_guides):
     toc_html = ('<nav class="guide-toc"><b>목차</b><ol>' + ''.join(f'<li><a href="#{sid}">{esc(t)}</a></li>' for sid, t in toc) + '</ol></nav>') if len(toc) >= 3 else ''
     tools_html = ''
     if meta['tools']:
-        cards = ''.join(f'<a href="/{f}"><b>{tools[f]["icon"]} {esc(tools[f]["title"])}</b><small>{esc(tools[f]["desc"])}</small></a>' for f in meta['tools'] if f in tools)
+        cards = ''.join(f'<a href="/{f}"><img class="tic" src="/icons/{tools[f]["slug"]}.webp" width="28" height="28" alt="" loading="lazy" decoding="async"><span><b>{esc(tools[f]["title"])}</b><small>{esc(tools[f]["desc"])}</small></span></a>' for f in meta['tools'] if f in tools)
         tools_html = f'<section class="guide-tools"><h2>이 글과 함께 쓰는 도구</h2><div class="grid">{cards}</div></section>'
     src_html = ''
     if meta['sources']:

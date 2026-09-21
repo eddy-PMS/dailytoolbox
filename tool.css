@@ -71,7 +71,7 @@ footer { margin-top:56px; font-size:12px; color:#a39a89; text-align:center; line
 @media(max-width:620px){ .sibs .chips { grid-template-columns:repeat(2,1fr); } }
 .sibs .chips a { display:flex; align-items:center; gap:9px; border:1px solid var(--line); border-radius:10px; padding:10px 11px; font-size:13px; font-weight:700; line-height:1.35; color:var(--ink); text-decoration:none; background:#fff; transition:border-color .15s, background .15s; }
 .sibs .chips a:hover { background:var(--paper-deep); border-color:var(--accent); }
-.sibs .chips a .sic { width:30px; height:30px; flex:none; }
+.sibs .chips a .sic { width:34px; height:34px; flex:none; }
 .sibs .chips a.more { grid-column:1/-1; justify-content:center; font-weight:400; color:var(--ink-soft); background:transparent; border-style:dashed; }
 
 /* ---- 생활 가이드 ---- */
@@ -93,21 +93,21 @@ article.guide blockquote { margin:0 0 14px; padding:10px 14px; border-left:3px s
 article.guide .callout { border:1px solid var(--line); border-left:3px solid var(--accent); border-radius:3px; background:#fff; padding:12px 14px; margin:0 0 16px; font-size:14.5px; }
 article.guide .callout b { color:var(--accent); }
 article.guide .toolcta { display:flex; align-items:center; flex-wrap:wrap; gap:12px; border:1px solid var(--accent); border-radius:10px; background:#fff; padding:13px 14px; margin:6px 0 18px; text-decoration:none; color:var(--ink); line-height:1.5; }
-article.guide .toolcta .ic { width:34px; height:34px; flex:none; }
+article.guide .toolcta .ic { width:40px; height:40px; flex:none; }
 article.guide .toolcta > span:not(.go) { flex:1 1 180px; min-width:0; }
 article.guide .toolcta b { display:block; font-size:15px; line-height:1.4; }
-article.guide .toolcta small { display:block; color:var(--ink-soft); font-size:12.5px; line-height:1.5; margin-top:3px; }
-article.guide .toolcta .go { margin-left:auto; color:var(--accent); font-weight:700; font-size:13px; white-space:nowrap; }
-@media(max-width:560px){ article.guide .toolcta .go { width:100%; margin:4px 0 0 46px; } }
+article.guide .toolcta small { display:block; color:var(--ink-soft); font-size:12.5px; line-height:1.5; margin-top:3px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+article.guide .toolcta .go { margin-left:auto; color:var(--accent); font-size:20px; line-height:1; flex:none; }
+
 .guide-tools { margin:26px 0 8px; } .guide-tools h2 { font-size:15px; margin:0 0 10px; }
 .guide-tools .grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; } @media(max-width:520px){ .guide-tools .grid { grid-template-columns:1fr; } }
 .guide-tools a { display:flex; gap:10px; align-items:center; border:1px solid var(--line); border-radius:10px; background:#fff; padding:10px 12px; text-decoration:none; color:var(--ink); }
-.guide-tools a .tic { width:28px; height:28px; flex:none; }
+.guide-tools a .tic { width:34px; height:34px; flex:none; }
 .guide-tools a > span:not(.go) { flex:1; min-width:0; }
 .guide-tools a b { display:block; font-size:14px; line-height:1.4; }
 .guide-tools a:hover { background:var(--paper-deep); border-color:var(--accent); }
 .guide-tools a .go { margin-left:auto; color:var(--ink-soft); font-size:17px; line-height:1; flex:none; }
-.guide-tools a small { display:block; color:var(--ink-soft); font-size:12px; line-height:1.5; margin-top:2px; }
+.guide-tools a small { display:block; color:var(--ink-soft); font-size:12px; line-height:1.5; margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .guide-sources { font-size:12.5px; color:var(--ink-soft); border-top:1px solid var(--paper-deep); margin-top:26px; padding-top:12px; line-height:1.8; }
 .guide-sources ul { margin:4px 0 0; padding-left:18px; }
 .guide-list { display:grid; gap:10px; }
@@ -121,10 +121,139 @@ article.guide .toolcta .go { margin-left:auto; color:var(--accent); font-weight:
 .guides-rel .lb img { width:22px; height:22px; }
 .guides-rel a { display:flex; align-items:center; gap:10px; padding:11px 12px; border:1px solid var(--line); border-radius:10px; background:#fff; text-decoration:none; color:var(--ink); font-size:14px; margin-bottom:8px; line-height:1.4; transition:border-color .15s, background .15s; }
 .guides-rel a:hover { background:var(--paper-deep); border-color:var(--accent); }
-.guides-rel a .gic { width:28px; height:28px; flex:none; }
+.guides-rel a .gic { width:34px; height:34px; flex:none; }
 .guides-rel a .tx { flex:1; min-width:0; font-weight:700; }
 .guides-rel a small { display:block; color:var(--ink-soft); font-size:12px; font-weight:400; margin-top:2px; }
 .guides-rel a .go { color:var(--ink-soft); font-size:17px; line-height:1; flex:none; }
 article.guide details { border:1px solid var(--line); border-radius:3px; background:#fff; padding:10px 14px; margin:0 0 8px; }
 article.guide details summary { cursor:pointer; font-weight:700; font-size:15px; }
 article.guide details p { margin:8px 0 0; font-size:14.5px; color:var(--ink-soft); }
+
+/* ---- 링크 배너 아이콘 타일 ---- */
+article.guide .toolcta .ic,
+.guide-tools a .tic,
+.guides-rel a .gic,
+.sibs .chips a .sic { background:var(--tile,#f2f7fe); border-radius:9px; padding:4px; box-sizing:border-box; }
+/* 공간이 좁으면 꺾쇠 생략 */
+@media(max-width:430px){ article.guide .toolcta .go, .guide-tools a .go, .guides-rel a .go { display:none; } }
+
+/* ---- 아이콘별 배경색 (아이콘 그림에서 뽑은 연한 색) ---- */
+img[src$="/age.webp"]{--tile:#e3f5f3}
+img[src$="/annual-leave.webp"]{--tile:#e0eaf8}
+img[src$="/ascii-art.webp"]{--tile:#e5e8f3}
+img[src$="/avgdown.webp"]{--tile:#e5f3ea}
+img[src$="/avgprice.webp"]{--tile:#e0e9f8}
+img[src$="/baby-age.webp"]{--tile:#f8e0e5}
+img[src$="/balance-game.webp"]{--tile:#f8eee0}
+img[src$="/block-fill.webp"]{--tile:#e0eaf8}
+img[src$="/bmi.webp"]{--tile:#f8e0e5}
+img[src$="/breakeven.webp"]{--tile:#e0e8f8}
+img[src$="/cac-ltv.webp"]{--tile:#e1e3f6}
+img[src$="/car-loan.webp"]{--tile:#e0e9f8}
+img[src$="/car-tax.webp"]{--tile:#e5f2f3}
+img[src$="/cat-brain.webp"]{--tile:#e0f8f2}
+img[src$="/cat-family.webp"]{--tile:#f8e0e4}
+img[src$="/cat-fun.webp"]{--tile:#f8f0e0}
+img[src$="/cat-game.webp"]{--tile:#e6e0f8}
+img[src$="/cat-life.webp"]{--tile:#e0ebf8}
+img[src$="/cat-money.webp"]{--tile:#f8f0e0}
+img[src$="/cat-study.webp"]{--tile:#e0e8f8}
+img[src$="/charcount.webp"]{--tile:#e0eaf8}
+img[src$="/chinese-convert.webp"]{--tile:#e5f3f0}
+img[src$="/cloze.webp"]{--tile:#e7e0f8}
+img[src$="/color-find.webp"]{--tile:#e5e4f4}
+img[src$="/compound.webp"]{--tile:#f7f7e1}
+img[src$="/dday.webp"]{--tile:#e3f4f5}
+img[src$="/dictation.webp"]{--tile:#e2e3f6}
+img[src$="/digit-span.webp"]{--tile:#e0ebf8}
+img[src$="/discharge.webp"]{--tile:#eae5f3}
+img[src$="/discount.webp"]{--tile:#e0f8f2}
+img[src$="/etymology.webp"]{--tile:#e8e0f8}
+img[src$="/exchange.webp"]{--tile:#e0f0f8}
+img[src$="/fortune.webp"]{--tile:#e1f4f7}
+img[src$="/freelancer-tax.webp"]{--tile:#e2e9f6}
+img[src$="/furigana.webp"]{--tile:#e0e7f8}
+img[src$="/game2048.webp"]{--tile:#f8efe0}
+img[src$="/gonogo.webp"]{--tile:#f6ede1}
+img[src$="/gpa.webp"]{--tile:#f1e5f3}
+img[src$="/hanja.webp"]{--tile:#e5e9f3}
+img[src$="/hsk-test.webp"]{--tile:#f8e1e0}
+img[src$="/image-compress.webp"]{--tile:#e0f7f7}
+img[src$="/image-to-pdf.webp"]{--tile:#f3ece5}
+img[src$="/ipa.webp"]{--tile:#e0e7f8}
+img[src$="/ipgeo.webp"]{--tile:#e0eef8}
+img[src$="/iq-test.webp"]{--tile:#e1f2f6}
+img[src$="/irregular-verbs.webp"]{--tile:#e8e0f8}
+img[src$="/jeonse-loan.webp"]{--tile:#e5eaf3}
+img[src$="/jlpt-test.webp"]{--tile:#e9e0f8}
+img[src$="/jp-verb.webp"]{--tile:#e0ebf8}
+img[src$="/kakao-analyzer.webp"]{--tile:#e2f3f6}
+img[src$="/kana-quiz.webp"]{--tile:#f8e0ee}
+img[src$="/ladder.webp"]{--tile:#f8ece0}
+img[src$="/leave-pay.webp"]{--tile:#f8eae0}
+img[src$="/level-test.webp"]{--tile:#e0e9f8}
+img[src$="/lineup.webp"]{--tile:#e5e5f3}
+img[src$="/loan.webp"]{--tile:#e0e9f8}
+img[src$="/lotto.webp"]{--tile:#e4f1f4}
+img[src$="/macros.webp"]{--tile:#f8e0e5}
+img[src$="/margin.webp"]{--tile:#e0eaf8}
+img[src$="/math-speed.webp"]{--tile:#e0e5f8}
+img[src$="/mbti-test.webp"]{--tile:#e1f2f7}
+img[src$="/military-savings.webp"]{--tile:#e2f6e4}
+img[src$="/minesweeper.webp"]{--tile:#e5ecf3}
+img[src$="/mortgage.webp"]{--tile:#f7ece1}
+img[src$="/mot.webp"]{--tile:#f8e0e1}
+img[src$="/myip.webp"]{--tile:#e0ecf8}
+img[src$="/nonogram.webp"]{--tile:#f8ece0}
+img[src$="/onerm.webp"]{--tile:#e4e0f8}
+img[src$="/order.webp"]{--tile:#f3efe5}
+img[src$="/ovulation.webp"]{--tile:#f8e0e6}
+img[src$="/pace.webp"]{--tile:#e0ecf8}
+img[src$="/parttime.webp"]{--tile:#e0eaf8}
+img[src$="/password.webp"]{--tile:#e0e4f8}
+img[src$="/pdf-merge.webp"]{--tile:#f8e1e0}
+img[src$="/pdf-split.webp"]{--tile:#f8e0e0}
+img[src$="/pdf-to-jpg.webp"]{--tile:#e5eef3}
+img[src$="/percent.webp"]{--tile:#e0f8e4}
+img[src$="/periph.webp"]{--tile:#e0eaf8}
+img[src$="/pet-age.webp"]{--tile:#f8eae0}
+img[src$="/pinyin.webp"]{--tile:#f8e0e1}
+img[src$="/platform-fee.webp"]{--tile:#e3e6f5}
+img[src$="/pomodoro.webp"]{--tile:#f8e3e0}
+img[src$="/pregnancy.webp"]{--tile:#f8e0e6}
+img[src$="/qrcode.webp"]{--tile:#e5f3ed}
+img[src$="/quote-card.webp"]{--tile:#f8e0e0}
+img[src$="/raise.webp"]{--tile:#e0e9f8}
+img[src$="/random-pick.webp"]{--tile:#e0f7f8}
+img[src$="/reaction.webp"]{--tile:#f8efe0}
+img[src$="/readability.webp"]{--tile:#e7e0f8}
+img[src$="/rent.webp"]{--tile:#e2eef5}
+img[src$="/reverse.webp"]{--tile:#e9e5f3}
+img[src$="/roas.webp"]{--tile:#e0eff8}
+img[src$="/romanize.webp"]{--tile:#e8e3f5}
+img[src$="/salary.webp"]{--tile:#e0f8ef}
+img[src$="/school-grade.webp"]{--tile:#e0ecf8}
+img[src$="/sens.webp"]{--tile:#e5e4f4}
+img[src$="/sentence.webp"]{--tile:#e8e0f8}
+img[src$="/severance.webp"]{--tile:#e0e9f8}
+img[src$="/spelling-quiz.webp"]{--tile:#e7e0f8}
+img[src$="/stress-test.webp"]{--tile:#e0f2f8}
+img[src$="/stroke-order.webp"]{--tile:#e6e5f3}
+img[src$="/team.webp"]{--tile:#f0e5f3}
+img[src$="/tone-drill.webp"]{--tile:#e0e7f8}
+img[src$="/tts.webp"]{--tile:#e7e0f8}
+img[src$="/typing.webp"]{--tile:#f8eee0}
+img[src$="/ui-cat.webp"]{--tile:#f3f2e5}
+img[src$="/ui-guide.webp"]{--tile:#e0e9f8}
+img[src$="/ui-hot.webp"]{--tile:#f8eae0}
+img[src$="/ui-new.webp"]{--tile:#f8f2e0}
+img[src$="/unemployment.webp"]{--tile:#e0e9f8}
+img[src$="/unit.webp"]{--tile:#e0ebf8}
+img[src$="/utm.webp"]{--tile:#e0eaf8}
+img[src$="/vat.webp"]{--tile:#e0e9f8}
+img[src$="/vocab-quiz.webp"]{--tile:#e8e0f8}
+img[src$="/wage-convert.webp"]{--tile:#e0eaf8}
+img[src$="/water-sort.webp"]{--tile:#e0ecf8}
+img[src$="/wordlist.webp"]{--tile:#e7e0f8}
+img[src$="/worktime.webp"]{--tile:#e0e9f8}
+img[src$="/worldcup.webp"]{--tile:#f8e0e5}

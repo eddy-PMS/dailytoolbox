@@ -91,8 +91,8 @@ def md_to_html(md, tools):
             flush_para(para); para = []
             f = m.group(1); t = tools.get(f, {'title': f, 'desc': '', 'slug': f[:-5]})
             label = m.group(2) or t['title']
-            ic = f'<img class="ic" src="/icons/{t["slug"]}.webp" width="34" height="34" alt="" loading="lazy" decoding="async">'
-            out.append(f'<a class="toolcta" href="/{f}">{ic}<span><b>{esc(t["title"])}</b><small>{esc(label)}</small></span><span class="go">바로 계산하기 →</span></a>')
+            ic = f'<img class="ic" src="/icons/{t["slug"]}.webp" width="40" height="40" alt="" loading="lazy" decoding="async">'
+            out.append(f'<a class="toolcta" href="/{f}">{ic}<span><b>{esc(t["title"])}</b><small>{esc(label)}</small></span><span class="go">›</span></a>')
             i += 1; continue
         if st.startswith(':::'):
             flush_para(para); para = []
@@ -205,7 +205,7 @@ def render_guide(meta, body_md, slug, tools, all_guides):
     toc_html = ('<nav class="guide-toc"><b>목차</b><ol>' + ''.join(f'<li><a href="#{sid}">{esc(t)}</a></li>' for sid, t in toc) + '</ol></nav>') if len(toc) >= 3 else ''
     tools_html = ''
     if meta['tools']:
-        cards = ''.join(f'<a href="/{f}"><img class="tic" src="/icons/{tools[f]["slug"]}.webp" width="28" height="28" alt="" loading="lazy" decoding="async"><span><b>{esc(tools[f]["title"])}</b><small>{esc(tools[f]["desc"])}</small></span><span class="go">›</span></a>' for f in meta['tools'] if f in tools)
+        cards = ''.join(f'<a href="/{f}"><img class="tic" src="/icons/{tools[f]["slug"]}.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span><b>{esc(tools[f]["title"])}</b><small>{esc(tools[f]["desc"])}</small></span><span class="go">›</span></a>' for f in meta['tools'] if f in tools)
         tools_html = f'<section class="guide-tools"><h2>이 글과 함께 쓰는 도구</h2><div class="grid">{cards}</div></section>'
     src_html = ''
     if meta['sources']:
@@ -292,7 +292,7 @@ def update_tool_pages(all_guides, tools):
         s = open(path, encoding='utf-8').read()
         block = ('\n<div class="guides-rel"><div class="lb"><img src="/icons/ui-guide.webp" width="22" height="22" alt="">관련 가이드</div>'
                  + ''.join(f'<a href="/guide/{g["slug"]}.html">'
-                           f'<img class="gic" src="/icons/ui-guide.webp" width="28" height="28" alt="" loading="lazy" decoding="async">'
+                           f'<img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async">'
                            f'<span class="tx">{esc(g["meta"]["title"])}<small>{esc(g["meta"].get("updated", g["meta"].get("date","")))}</small></span>'
                            f'<span class="go">›</span></a>' for g in gs[:4]) + '</div>\n')
         new = inject(s, '<!-- guides:tool:start -->', '<!-- guides:tool:end -->', block)

@@ -293,7 +293,7 @@ def update_tool_pages(all_guides, tools):
         block = ('\n<div class="guides-rel"><div class="lb"><img src="/icons/ui-guide.webp" width="22" height="22" alt="">관련 가이드</div>'
                  + ''.join(f'<a href="/guide/{g["slug"]}.html">'
                            f'<img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async">'
-                           f'<span class="tx">{esc(g["meta"]["title"])}<small>{esc(g["meta"].get("updated", g["meta"].get("date","")))}</small></span>'
+                           f'<span class="tx">{esc(g["meta"]["title"])}</span>'
                            f'<span class="go">›</span></a>' for g in gs[:4]) + '</div>\n')
         new = inject(s, '<!-- guides:tool:start -->', '<!-- guides:tool:end -->', block)
         if new is None:

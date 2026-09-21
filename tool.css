@@ -89,7 +89,6 @@ article.guide ul, article.guide ol { margin:0 0 14px; padding-left:22px; } artic
 article.guide table { width:100%; border-collapse:collapse; font-size:14px; margin:0 0 16px; background:#fff; }
 article.guide th, article.guide td { border:1px solid #d9e8df; padding:8px 10px; text-align:left; vertical-align:top; }
 article.guide th { background:#eaf4ee; color:var(--accent-deep); font-weight:700; border-bottom-color:#bcd9c8; }
-article.guide tbody tr:nth-child(even) td { background:#f6fbf8; }
 article.guide blockquote { margin:0 0 14px; padding:10px 14px; border-left:3px solid var(--accent); background:#fff; color:var(--ink-soft); font-size:14.5px; }
 article.guide .callout { border:1px solid var(--line); border-left:3px solid var(--accent); border-radius:3px; background:#fff; padding:12px 14px; margin:0 0 16px; font-size:14.5px; }
 article.guide .callout b { color:var(--accent); }

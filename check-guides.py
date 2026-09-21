@@ -110,7 +110,8 @@ def main():
         for k in ('date', 'updated'):
             if meta.get(k) and not re.match(r'^\d{4}-\d{2}-\d{2}$', meta[k]):
                 err(where, f'{k} 가 YYYY-MM-DD 형식이 아니에요 → {meta[k]}')
-        if meta.get('sources') and '|' not in meta['sources']:
+        src = meta.get('sources', '')
+        if src and '|' not in src and not src.startswith(('인용한', '없음')):
             warn(where, 'sources 에 URL(| 뒤)이 없어요. "이름 | 주소" 형식을 권장해요')
 
         meta_tools = [x.strip() for x in meta.get('tools', '').split(',') if x.strip()]

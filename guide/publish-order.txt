@@ -9,3 +9,9 @@ bmi-obesity-standard
 exchange-fee-guide
 military-service-guide
 pregnancy-weeks-guide
+car-tax-guide
+self-intro-char-count
+passport-romanize
+pdf-tools-guide
+average-price-down
+gpa-conversion

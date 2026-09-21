@@ -331,11 +331,64 @@ def update_home(all_guides):
 
 def update_sitemap(all_guides):
     path = os.path.join(ROOT, 'sitemap.xml'); s = open(path, encoding='utf-8').read()
-    urls = f'  <url>\n    <loc>{SITE}/guide/</loc>\n  </url>\n' + ''.join(f'  <url>\n    <loc>{SITE}/guide/{g["slug"]}</loc>\n    <lastmod>{g["meta"].get("updated", g["meta"].get("date",""))}</lastmod>\n  </url>\n' for g in all_guides)
+    # 목록 페이지는 글이 추가될 때 바뀌므로 가장 최근 글 날짜를 쓴다
+    newest = max((g['meta'].get('updated', g['meta'].get('date', '')) for g in all_guides), default='')
+    urls = f'  <url>\n    <loc>{SITE}/guide/</loc>\n    <lastmod>{newest}</lastmod>\n  </url>\n' + ''.join(f'  <url>\n    <loc>{SITE}/guide/{g["slug"]}</loc>\n    <lastmod>{g["meta"].get("updated", g["meta"].get("date",""))}</lastmod>\n  </url>\n' for g in all_guides)
     new = inject(s, '<!-- guides:start -->\n', '<!-- guides:end -->\n', urls)
     if new is None:
         new = s.replace('</urlset>', '<!-- guides:start -->\n' + urls + '<!-- guides:end -->\n</urlset>')
     open(path, 'w', encoding='utf-8').write(new); print('sitemap 반영')
+
+def git_dates():
+    """파일별 마지막 커밋 날짜(YYYY-MM-DD).
+    얕은 클론에서는 모든 파일이 같은 날짜로 보여 잘못된 값이 되므로 빈 값을 돌려준다."""
+    import subprocess
+    try:
+        shallow = subprocess.run(['git', 'rev-parse', '--is-shallow-repository'],
+                                 cwd=ROOT, capture_output=True, text=True).stdout.strip()
+        if shallow != 'false':
+            print('  (얕은 클론이라 sitemap lastmod 는 손대지 않음)')
+            return {}
+        out = subprocess.run(['git', 'log', '--pretty=format:%cs', '--name-only'],
+                             cwd=ROOT, capture_output=True, text=True, encoding='utf-8').stdout
+    except Exception as e:
+        print('  (git 을 읽지 못해 sitemap lastmod 는 그대로 둠:', e, ')')
+        return {}
+    dates, cur = {}, None
+    for ln in out.split('\n'):
+        ln = ln.strip()
+        if not ln:
+            continue
+        if re.fullmatch(r'\d{4}-\d{2}-\d{2}', ln):
+            cur = ln
+        else:
+            dates.setdefault(ln, cur)   # 최신 커밋부터 나오므로 처음 만난 값이 마지막 수정일
+    return dates
+
+def refresh_sitemap_lastmod():
+    """가이드 블록 밖(도구·문서 페이지)의 <lastmod> 를 실제 마지막 수정일로 맞춘다.
+    구글은 lastmod 가 정확할 때만 참고하므로 지어내지 않고 커밋 날짜를 쓴다."""
+    dates = git_dates()
+    if not dates:
+        return
+    path = os.path.join(ROOT, 'sitemap.xml'); s = open(path, encoding='utf-8').read()
+    head, sep, tail = s.partition('<!-- guides:start -->')
+
+    def one(m):
+        block, url = m.group(0), m.group(1)
+        rel = url[len(SITE):].strip('/')
+        f = 'index.html' if rel == '' else rel + '.html'
+        d = dates.get(f)
+        if not d:
+            return block
+        if '<lastmod>' in block:
+            return re.sub(r'<lastmod>[^<]*</lastmod>', f'<lastmod>{d}</lastmod>', block)
+        return block.replace(f'<loc>{url}</loc>', f'<loc>{url}</loc>\n    <lastmod>{d}</lastmod>')
+
+    n = len(re.findall(r'<loc>', head))
+    head = re.sub(r'  <url>\s*<loc>([^<]+)</loc>.*?</url>', one, head, flags=re.S)
+    open(path, 'w', encoding='utf-8').write(head + sep + tail)
+    print(f'sitemap lastmod 반영 ({n}개 주소)')
 
 def main():
     os.makedirs(SRC, exist_ok=True); os.makedirs(OUT, exist_ok=True)
@@ -365,7 +418,7 @@ def main():
         print('생성:', f'guide/{g["slug"]}.html', f'({g["meta"]["title"]})')
     open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(render_index(guides))
     print('생성: guide/index.html')
-    update_tool_pages(guides, tools); update_home(guides); update_sitemap(guides)
+    update_tool_pages(guides, tools); update_home(guides); update_sitemap(guides); refresh_sitemap_lastmod()
 
 if __name__ == '__main__':
     main()

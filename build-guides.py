@@ -92,7 +92,7 @@ def md_to_html(md, tools):
             f = m.group(1); t = tools.get(f, {'title': f, 'desc': '', 'slug': f[:-5]})
             label = m.group(2) or t['title']
             ic = f'<img class="ic" src="/icons/{t["slug"]}.webp" width="40" height="40" alt="" loading="lazy" decoding="async">'
-            out.append(f'<a class="toolcta" href="/{f}">{ic}<span><b>{esc(t["title"])}</b><small>{esc(label)}</small></span><span class="go">›</span></a>')
+            out.append(f'<a class="toolcta" href="/{f[:-5]}">{ic}<span><b>{esc(t["title"])}</b><small>{esc(label)}</small></span><span class="go">›</span></a>')
             i += 1; continue
         if st.startswith(':::'):
             flush_para(para); para = []
@@ -196,7 +196,7 @@ def render_guide(meta, body_md, slug, tools, all_guides):
     if len(h2s) >= 2:
         p = h2s[1]; content = content[:p] + '<div class="ad-slot" data-ad="in-content"></div>\n' + content[p:]
     chars = len(re.sub(r'<[^>]+>', '', content)); mins = max(1, round(chars / 600))
-    canonical = f'{SITE}/guide/{slug}.html'
+    canonical = f'{SITE}/guide/{slug}'
     ld = json.dumps({"@context": "https://schema.org", "@type": "Article", "headline": meta['title'], "description": meta.get('description', ''), "image": [f"{SITE}/og-image.jpg"], "datePublished": meta.get('date', ''), "dateModified": meta.get('updated', meta.get('date', '')), "author": {"@type": "Organization", "name": "데일리 프리 툴박스", "url": SITE + "/"}, "publisher": {"@type": "Organization", "name": "데일리 프리 툴박스", "logo": {"@type": "ImageObject", "url": f"{SITE}/apple-touch-icon.png"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": canonical}, "inLanguage": "ko"}, ensure_ascii=False)
     faq_ld = ''
     if len(faq) >= 2:
@@ -205,7 +205,7 @@ def render_guide(meta, body_md, slug, tools, all_guides):
     toc_html = ('<nav class="guide-toc"><b>목차</b><ol>' + ''.join(f'<li><a href="#{sid}">{esc(t)}</a></li>' for sid, t in toc) + '</ol></nav>') if len(toc) >= 3 else ''
     tools_html = ''
     if meta['tools']:
-        cards = ''.join(f'<a href="/{f}"><img class="tic" src="/icons/{tools[f]["slug"]}.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span><b>{esc(tools[f]["title"])}</b><small>{esc(tools[f]["desc"])}</small></span><span class="go">›</span></a>' for f in meta['tools'] if f in tools)
+        cards = ''.join(f'<a href="/{f[:-5]}"><img class="tic" src="/icons/{tools[f]["slug"]}.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span><b>{esc(tools[f]["title"])}</b><small>{esc(tools[f]["desc"])}</small></span><span class="go">›</span></a>' for f in meta['tools'] if f in tools)
         tools_html = f'<section class="guide-tools"><h2>이 글과 함께 쓰는 도구</h2><div class="grid">{cards}</div></section>'
     src_html = ''
     if meta['sources']:
@@ -213,7 +213,7 @@ def render_guide(meta, body_md, slug, tools, all_guides):
     others = [g for g in all_guides if g['slug'] != slug and g['meta'].get('category') == meta.get('category')][:4]
     more_html = ''
     if others:
-        more_html = '<section class="guide-tools"><h2>같은 주제의 다른 글</h2><div class="guide-list">' + ''.join(f'<a class="guide-card" href="/guide/{g["slug"]}.html"><img class="gic" src="/icons/ui-guide.webp" width="30" height="30" alt="" loading="lazy" decoding="async"><span class="tx"><b>{esc(g["meta"]["title"])}</b></span></a>' for g in others) + '</div></section>'
+        more_html = '<section class="guide-tools"><h2>같은 주제의 다른 글</h2><div class="guide-list">' + ''.join(f'<a class="guide-card" href="/guide/{g["slug"]}"><img class="gic" src="/icons/ui-guide.webp" width="30" height="30" alt="" loading="lazy" decoding="async"><span class="tx"><b>{esc(g["meta"]["title"])}</b></span></a>' for g in others) + '</div></section>'
     return head_common(meta['title'] + ' | 데일리 프리 툴박스 생활 가이드', meta.get('description', ''), canonical, meta.get('keywords', ''), f'<script type="application/ld+json">{ld}</script>\n<script type="application/ld+json">{crumbs}</script>{faq_ld}') + f'''<style>:root {{ --accent:{accent}; --accent-deep:#23603c; }}</style>
 </head>
 <body class="guide-page">
@@ -254,7 +254,7 @@ def render_index(all_guides):
         # .guide-card 는 display:flex 이므로 본문은 .tx 로 감싼다. 안 감싸면 제목·날짜가 가로로 나뉜다.
         # 설명은 넣지 않는다 — 제목이 길어 카드가 커지고 목록에서 고르기 어려워진다(제목은 두 줄까지, tool.css).
         cards = ''.join(
-            f'<a class="guide-card" href="/guide/{g["slug"]}.html">'
+            f'<a class="guide-card" href="/guide/{g["slug"]}">'
             f'<img class="gic" src="/icons/ui-guide.webp" width="30" height="30" alt="" loading="lazy" decoding="async">'
             f'<span class="tx"><b>{esc(g["meta"]["title"])}</b>'
             f'<small>{esc(g["meta"].get("updated", g["meta"].get("date","")))} · 관련 도구 {len(g["meta"]["tools"])}개</small></span></a>'
@@ -298,7 +298,7 @@ def update_tool_pages(all_guides, tools):
         if not os.path.exists(path): continue
         s = open(path, encoding='utf-8').read()
         block = ('\n<div class="guides-rel"><div class="lb"><img src="/icons/ui-guide.webp" width="22" height="22" alt="">관련 가이드</div>'
-                 + ''.join(f'<a href="/guide/{g["slug"]}.html">'
+                 + ''.join(f'<a href="/guide/{g["slug"]}">'
                            f'<img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async">'
                            f'<span class="tx">{esc(g["meta"]["title"])}</span>'
                            f'<span class="go">›</span></a>' for g in gs[:4]) + '</div>\n')
@@ -314,7 +314,7 @@ def update_home(all_guides):
     path = os.path.join(ROOT, 'index.html'); s = open(path, encoding='utf-8').read()
     latest = sorted(all_guides, key=lambda g: g['meta'].get('updated', g['meta'].get('date', '')), reverse=True)[:6]
     # 홈에서는 제목만 (설명까지 넣으면 제목이 길어 읽기 어려움). 구조는 도구 카드와 동일하게
-    cards = ''.join(f'<a class="card" href="/guide/{g["slug"]}.html"><img class="cic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="ct"><div class="title">{esc(g["meta"]["title"])}</div></span></a>\n      ' for g in latest)
+    cards = ''.join(f'<a class="card" href="/guide/{g["slug"]}"><img class="cic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="ct"><div class="title">{esc(g["meta"]["title"])}</div></span></a>\n      ' for g in latest)
     block = f'''
   <section class="group" id="생활 가이드" style="--card-accent:#2f7d4f">
     <div class="group-head"><h2><img class="hic" src="/icons/ui-guide.webp" width="26" height="26" alt="">생활 가이드</h2><span class="count">{len(all_guides)}편</span><a class="all" href="/guide/">전체 보기 →</a></div>
@@ -331,7 +331,7 @@ def update_home(all_guides):
 
 def update_sitemap(all_guides):
     path = os.path.join(ROOT, 'sitemap.xml'); s = open(path, encoding='utf-8').read()
-    urls = f'  <url>\n    <loc>{SITE}/guide/</loc>\n  </url>\n' + ''.join(f'  <url>\n    <loc>{SITE}/guide/{g["slug"]}.html</loc>\n    <lastmod>{g["meta"].get("updated", g["meta"].get("date",""))}</lastmod>\n  </url>\n' for g in all_guides)
+    urls = f'  <url>\n    <loc>{SITE}/guide/</loc>\n  </url>\n' + ''.join(f'  <url>\n    <loc>{SITE}/guide/{g["slug"]}</loc>\n    <lastmod>{g["meta"].get("updated", g["meta"].get("date",""))}</lastmod>\n  </url>\n' for g in all_guides)
     new = inject(s, '<!-- guides:start -->\n', '<!-- guides:end -->\n', urls)
     if new is None:
         new = s.replace('</urlset>', '<!-- guides:start -->\n' + urls + '<!-- guides:end -->\n</urlset>')

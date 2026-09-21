@@ -101,7 +101,7 @@
     var h = '', lastSub = '';
     g.items.forEach(function (it) {
       if (it[3] && it[3] !== lastSub) { h += '<div class="sub">' + esc(it[3]) + '</div>'; lastSub = it[3]; }
-      h += '<a href="/' + it[0] + '" role="menuitem"' + (it[0] === path ? ' class="active" aria-current="page"' : '') + '>' + esc(it[1]) + '</a>';
+      h += '<a href="/' + it[0].slice(0, -5) + '" role="menuitem"' + (it[0] === path ? ' class="active" aria-current="page"' : '') + '>' + esc(it[1]) + '</a>';
     });
     return h;
   }
@@ -165,7 +165,7 @@
     function render() {
       var list = search(input.value);
       if (!input.value.trim()) { res.classList.remove('show'); res.innerHTML = ''; return; }
-      res.innerHTML = list.length ? list.map(function (x, i) { return '<a href="/' + x.f + '" class="' + (i === sel ? 'sel' : '') + '">' + esc(x.t) + '<small>' + esc(x.g) + ' · ' + esc(x.d) + '</small></a>'; }).join('') : '<div class="none">검색 결과가 없어요</div>';
+      res.innerHTML = list.length ? list.map(function (x, i) { return '<a href="/' + x.f.slice(0, -5) + '" class="' + (i === sel ? 'sel' : '') + '">' + esc(x.t) + '<small>' + esc(x.g) + ' · ' + esc(x.d) + '</small></a>'; }).join('') : '<div class="none">검색 결과가 없어요</div>';
       res.classList.add('show');
     }
     input.addEventListener('input', function () { sel = -1; render(); });

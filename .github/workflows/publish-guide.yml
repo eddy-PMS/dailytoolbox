@@ -1,10 +1,13 @@
 name: 생활 가이드 매일 발행
 
-# 한국시간 새벽 5시 = UTC 20시 (전날). 깃허브 예약 작업은 서버 사정으로
-# 몇 분에서 20분쯤 늦게 시작될 수 있어요.
+# 한국시간 새벽 2시 7분 = UTC 17시 7분 (전날).
+# 깃허브 예약 작업은 자원이 날 때 돌려서 실제로 2~3시간 늦게 시작돼요
+# (09-22 은 3시간 5분, 09-23 은 2시간 49분 늦음). 새벽 2시로 잡아두면
+# 그만큼 밀려도 아침 전에 발행이 끝납니다.
+# 정각(0분)은 예약이 몰려 더 밀리므로 7분으로 비켜 잡았어요.
 on:
   schedule:
-    - cron: '0 20 * * *'
+    - cron: '7 17 * * *'
   workflow_dispatch:        # 저장소 Actions 탭에서 수동 실행도 가능
 
 permissions:
@@ -62,7 +65,7 @@ jobs:
           git commit -m "guide: publish ${{ steps.pick.outputs.slug }}
 
           ${{ steps.pick.outputs.title }}
-          예약 발행(매일 새벽 5시). 남은 초안 ${{ steps.pick.outputs.left }}편."
+          예약 발행(매일 새벽 2시). 남은 초안 ${{ steps.pick.outputs.left }}편."
           git push
 
       - name: 결과

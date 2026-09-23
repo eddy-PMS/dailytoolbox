@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://dailyfreetoolbox.com/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -476,7 +476,7 @@
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/unit</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -500,7 +500,7 @@
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/rent</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -518,13 +518,13 @@
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/jeonse-loan</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/mortgage</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -663,7 +663,11 @@
 <!-- guides:start -->
   <url>
     <loc>https://dailyfreetoolbox.com/guide/</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-24</lastmod>
+  </url>
+  <url>
+    <loc>https://dailyfreetoolbox.com/guide/bmi-obesity-standard</loc>
+    <lastmod>2026-09-24</lastmod>
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/guide/pyeong-square-meter</loc>

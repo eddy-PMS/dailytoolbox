@@ -1,13 +1,12 @@
 ---
 title: 전역일 계산과 장병내일준비적금 — 입대 전에 정해두면 좋은 것들
 description: 육군·해병 18개월, 해군 20개월, 공군 21개월. 복무기간과 전역일이 정해지는 방식, 장병내일준비적금의 월 55만원 한도와 원금 100% 매칭지원금까지 정리했어요.
-date: 2026-09-21
-updated: 2026-09-21
+date: 2026-09-26
+updated: 2026-09-26
 category: 계산·생활
 tools: discharge.html, military-savings.html, compound.html, dday.html
 keywords: 전역일 계산, 군 복무기간, 육군 18개월, 장병내일준비적금, 매칭지원금, 군적금 만기, 사회복무요원 적금
 sources: 병역법 제18조·제19조 및 시행령 제27조 | https://www.law.go.kr ; 병무청 — 복무제도 안내 | https://www.mma.go.kr ; 찾기쉬운 생활법령정보 — 현역병 복무기간 및 보수 | https://www.easylaw.go.kr ; 국방부 — 장병내일준비적금 | https://www.mnd.go.kr ; 병무청 — 장병내일준비적금 공지 | https://www.mma.go.kr ; 대한민국 정책브리핑 — 적금 납입한도 상향 | https://www.korea.kr
-draft: true
 ---
 입대 날짜가 정해지면 제일 먼저 궁금한 게 전역일입니다. 그런데 복무기간은 군별로 다르고, 전역일은 달수만 더한다고 나오는 게 아니에요. 그리고 요즘은 **복무 중에 얼마를 모아 나오느냐**가 전역일만큼 중요해졌습니다. 아래 수치는 **확인일 2026-09-21** 기준이에요.
 

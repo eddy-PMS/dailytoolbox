@@ -160,7 +160,17 @@ def parse(md_text):
     return meta, body
 
 # ---------- 템플릿 ----------
-def head_common(title, desc, canonical, keywords, extra_ld):
+def og_image(slug=None):
+    """글 전용 OG 이미지가 og/ 에 실제로 있으면 그걸 쓰고, 없으면 기본 이미지.
+    없는 파일을 가리키면 공유 시 미리보기가 깨지므로 파일 존재를 확인한 뒤 쓴다."""
+    if slug:
+        f = f'og-guide-{slug}.jpg'
+        if os.path.exists(os.path.join(ROOT, 'og', f)):
+            return f'{SITE}/og/{f}'
+    return f'{SITE}/og-image.jpg'
+
+def head_common(title, desc, canonical, keywords, extra_ld, og_img=None):
+    og_img = og_img or f'{SITE}/og-image.jpg'
     return f'''<!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -178,7 +188,7 @@ def head_common(title, desc, canonical, keywords, extra_ld):
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:url" content="{canonical}">
-<meta property="og:image" content="{SITE}/og-image.jpg">
+<meta property="og:image" content="{og_img}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -197,7 +207,7 @@ def render_guide(meta, body_md, slug, tools, all_guides):
         p = h2s[1]; content = content[:p] + '<div class="ad-slot" data-ad="in-content"></div>\n' + content[p:]
     chars = len(re.sub(r'<[^>]+>', '', content)); mins = max(1, round(chars / 600))
     canonical = f'{SITE}/guide/{slug}'
-    ld = json.dumps({"@context": "https://schema.org", "@type": "Article", "headline": meta['title'], "description": meta.get('description', ''), "image": [f"{SITE}/og-image.jpg"], "datePublished": meta.get('date', ''), "dateModified": meta.get('updated', meta.get('date', '')), "author": {"@type": "Organization", "name": "데일리 프리 툴박스", "url": SITE + "/"}, "publisher": {"@type": "Organization", "name": "데일리 프리 툴박스", "logo": {"@type": "ImageObject", "url": f"{SITE}/apple-touch-icon.png"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": canonical}, "inLanguage": "ko"}, ensure_ascii=False)
+    ld = json.dumps({"@context": "https://schema.org", "@type": "Article", "headline": meta['title'], "description": meta.get('description', ''), "image": [og_image(slug)], "datePublished": meta.get('date', ''), "dateModified": meta.get('updated', meta.get('date', '')), "author": {"@type": "Organization", "name": "데일리 프리 툴박스", "url": SITE + "/"}, "publisher": {"@type": "Organization", "name": "데일리 프리 툴박스", "logo": {"@type": "ImageObject", "url": f"{SITE}/apple-touch-icon.png"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": canonical}, "inLanguage": "ko"}, ensure_ascii=False)
     faq_ld = ''
     if len(faq) >= 2:
         faq_ld = '\n<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}, ensure_ascii=False) + '</script>' 
@@ -214,7 +224,7 @@ def render_guide(meta, body_md, slug, tools, all_guides):
     more_html = ''
     if others:
         more_html = '<section class="guide-tools"><h2>같은 주제의 다른 글</h2><div class="guide-list">' + ''.join(f'<a class="guide-card" href="/guide/{g["slug"]}"><img class="gic" src="/icons/ui-guide.webp" width="30" height="30" alt="" loading="lazy" decoding="async"><span class="tx"><b>{esc(g["meta"]["title"])}</b></span></a>' for g in others) + '</div></section>'
-    return head_common(meta['title'] + ' | 데일리 프리 툴박스 생활 가이드', meta.get('description', ''), canonical, meta.get('keywords', ''), f'<script type="application/ld+json">{ld}</script>\n<script type="application/ld+json">{crumbs}</script>{faq_ld}') + f'''<style>:root {{ --accent:{accent}; --accent-deep:#23603c; }}</style>
+    return head_common(meta['title'] + ' | 데일리 프리 툴박스 생활 가이드', meta.get('description', ''), canonical, meta.get('keywords', ''), f'<script type="application/ld+json">{ld}</script>\n<script type="application/ld+json">{crumbs}</script>{faq_ld}', og_image(slug)) + f'''<style>:root {{ --accent:{accent}; --accent-deep:#23603c; }}</style>
 </head>
 <body class="guide-page">
 

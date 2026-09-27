@@ -49,6 +49,9 @@ def load_tools():
 
 # ---------- 마크다운 ----------
 def esc(s): return html.escape(s, quote=False)
+# 속성값(content="…") 전용. 따옴표까지 이스케이프하지 않으면 값이 중간에 끊겨
+# 구글·카카오가 앞부분만 읽는다. 본문에는 esc() 를 그대로 쓴다(&quot; 는 읽기 나쁨).
+def attr(s): return html.escape(str(s), quote=True)
 def inline(s):
     s = esc(s)
     s = re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', s)
@@ -181,12 +184,12 @@ def head_common(title, desc, canonical, keywords, extra_ld, og_img=None):
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
 <title>{esc(title)}</title>
-<meta name="description" content="{esc(desc)}">
-<meta name="keywords" content="{esc(keywords)}">
+<meta name="description" content="{attr(desc)}">
+<meta name="keywords" content="{attr(keywords)}">
 <link rel="canonical" href="{canonical}">
 <meta property="og:type" content="article">
-<meta property="og:title" content="{esc(title)}">
-<meta property="og:description" content="{esc(desc)}">
+<meta property="og:title" content="{attr(title)}">
+<meta property="og:description" content="{attr(desc)}">
 <meta property="og:url" content="{canonical}">
 <meta property="og:image" content="{og_img}">
 <meta property="og:image:width" content="1200">
@@ -224,7 +227,9 @@ def render_guide(meta, body_md, slug, tools, all_guides):
     more_html = ''
     if others:
         more_html = '<section class="guide-tools"><h2>같은 주제의 다른 글</h2><div class="guide-list">' + ''.join(f'<a class="guide-card" href="/guide/{g["slug"]}"><img class="gic" src="/icons/ui-guide.webp" width="30" height="30" alt="" loading="lazy" decoding="async"><span class="tx"><b>{esc(g["meta"]["title"])}</b></span></a>' for g in others) + '</div></section>'
-    return head_common(meta['title'] + ' | 데일리 프리 툴박스 생활 가이드', meta.get('description', ''), canonical, meta.get('keywords', ''), f'<script type="application/ld+json">{ld}</script>\n<script type="application/ld+json">{crumbs}</script>{faq_ld}', og_image(slug)) + f'''<style>:root {{ --accent:{accent}; --accent-deep:#23603c; }}</style>
+    # title 접미사 없음 — 도구 페이지 111개가 "제목 - 설명" 형식으로 사이트명을 붙이지 않는다.
+    # 예전 " | 데일리 프리 툴박스 생활 가이드"(20자) 때문에 검색 결과에서 뒷부분이 잘렸다.
+    return head_common(meta['title'], meta.get('description', ''), canonical, meta.get('keywords', ''), f'<script type="application/ld+json">{ld}</script>\n<script type="application/ld+json">{crumbs}</script>{faq_ld}', og_image(slug)) + f'''<style>:root {{ --accent:{accent}; --accent-deep:#23603c; }}</style>
 </head>
 <body class="guide-page">
 

@@ -7,13 +7,13 @@
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
-<title>네모로직 (노노그램) - 5×5부터 30×30까지 100레벨, 랭킹 도전</title>
-<meta name="description" content="숫자 힌트로 격자를 칠해 그림을 완성하는 네모로직(노노그램) 퍼즐. 5×5부터 시작해 100레벨 30×30까지, 추측 없이 논리로 풀리는 문제만 출제. 도달 레벨로 랭킹 도전. 무료.">
+<title>네모로직 (노노그램) - 5×5부터 25×25까지, 도달 레벨 랭킹</title>
+<meta name="description" content="숫자 힌트로 격자를 칠해 그림을 완성하는 네모로직(노노그램) 퍼즐. 5×5부터 시작해 4레벨마다 한 칸씩 커져 81레벨부터 25×25, 추측 없이 논리로 풀리는 문제만 출제. 도달 레벨로 랭킹 도전. 무료.">
 <meta name="keywords" content="네모로직, 노노그램, 네모네모 로직, 피크로스, 로직 퍼즐, 오늘의 퍼즐, 무료 퍼즐 게임, 논리 퍼즐">
 <link rel="canonical" href="https://dailyfreetoolbox.com/nonogram">
 <meta property="og:type" content="website">
-<meta property="og:title" content="네모로직 - 5×5부터 30×30까지, 몇 레벨까지?">
-<meta property="og:description" content="숫자 힌트로 그림을 찾는 노노그램 퍼즐. 100레벨 도전, 도달 레벨 랭킹.">
+<meta property="og:title" content="네모로직 - 5×5부터 25×25까지, 몇 레벨까지?">
+<meta property="og:description" content="숫자 힌트로 그림을 찾는 노노그램 퍼즐. 5×5부터 25×25까지, 도달 레벨 랭킹.">
 <meta property="og:url" content="https://dailyfreetoolbox.com/nonogram">
 <meta property="og:image" content="https://dailyfreetoolbox.com/og/og-nonogram.jpg">
 <meta property="og:image:width" content="1200">
@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="ko_KR">
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "WebApplication", "name": "네모로직 (노노그램)", "url": "https://dailyfreetoolbox.com/nonogram", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "숫자 힌트로 격자를 칠해 그림을 완성하는 논리 퍼즐. 5×5부터 30×30까지 100레벨, 도달 레벨로 랭킹에 등록할 수 있어요."}
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "네모로직 (노노그램)", "url": "https://dailyfreetoolbox.com/nonogram", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "숫자 힌트로 격자를 칠해 그림을 완성하는 논리 퍼즐. 5×5부터 25×25까지, 도달 레벨로 랭킹에 등록할 수 있어요."}
 </script>
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
@@ -57,7 +57,7 @@ table.ng td.h.done{color:#a0a9b8}
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#퍼즐·게임">퍼즐·게임</a><span>›</span>네모로직 (노노그램)</nav>
   <h1><img class="h1ic" src="/icons/nonogram.webp" width="32" height="32" alt="">네모로직 (노노그램)</h1>
-  <p class="sub">가로·세로 숫자는 그 줄에서 연속으로 칠해진 칸의 길이예요. 5×5부터 시작해 레벨이 오를수록 판이 커지고(100레벨 = 30×30), 도달 레벨로 랭킹에 도전해요.</p>
+  <p class="sub">가로·세로 숫자는 그 줄에서 연속으로 칠해진 칸의 길이예요. 5×5부터 시작해 레벨이 오를수록 판이 커지고(81레벨부터 25×25), 도달 레벨로 랭킹에 도전해요.</p>
   <div class="ad-slot" data-ad="top"></div>
 
   <div class="card">
@@ -65,7 +65,7 @@ table.ng td.h.done{color:#a0a9b8}
     <div class="board">
       <div class="wrap" id="wrap"></div>
       <div class="modes"><button class="btn-ghost on" id="mFill">■ 칠하기</button><button class="btn-ghost" id="mX">× 표시</button><button class="btn-ghost" id="zoomOut">−</button><button class="btn-ghost" id="zoomIn">+</button><button class="btn-ghost" id="clear">지우기</button><button class="btn-ghost" id="reroll">다른 문제</button></div>
-      <div class="overlay" id="overlay"><div style="font-size:15px;color:var(--ink-soft)">숫자는 그 줄에서 연속으로 칠해진 칸의 길이예요<br>5×5부터 시작해 레벨이 오를수록 커져요 (100레벨 = 30×30)</div><button class="btn" id="start" style="min-width:160px">시작</button><div class="note" id="bestNote" style="margin:0"></div></div>
+      <div class="overlay" id="overlay"><div style="font-size:15px;color:var(--ink-soft)">숫자는 그 줄에서 연속으로 칠해진 칸의 길이예요<br>5×5부터 시작해 레벨이 오를수록 커져요 (81레벨부터 25×25)</div><button class="btn" id="start" style="min-width:160px">시작</button><div class="note" id="bestNote" style="margin:0"></div></div>
     </div>
     <div class="stats"><span id="bestLocal"></span><span>PC: 좌클릭 칠하기 · 우클릭 × · 큰 판은 탭으로 한 칸씩</span></div>
     <div class="btn-row" style="justify-content:center;margin-top:6px"><button class="btn-ghost" id="quit" style="font-size:13px">여기까지 하고 랭킹 등록</button></div>
@@ -77,11 +77,11 @@ table.ng td.h.done{color:#a0a9b8}
 <div class="sibs"><div class="lb">퍼즐·게임 도구 더 보기</div><div class="chips"><a href="water-sort"><img class="sic" src="/icons/water-sort.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>물 붓기 퍼즐</span></a><a href="block-fill"><img class="sic" src="/icons/block-fill.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>블록 채우기</span></a><a href="order"><img class="sic" src="/icons/order.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>숫자 순서 누르기</span></a><a href="color-find"><img class="sic" src="/icons/color-find.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>틀린 색 찾기</span></a><a href="math-speed"><img class="sic" src="/icons/math-speed.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>암산 스피드</span></a><a href="vocab-quiz"><img class="sic" src="/icons/vocab-quiz.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>영단어 스피드 퀴즈</span></a><a class="more" href="/#퍼즐·게임">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>네모로직(노노그램), 숫자로 그림을 찾는 퍼즐</h2><p>각 줄의 숫자는 그 줄에서 <b>연속으로 칠해진 칸의 길이</b>예요. "3 1"이면 3칸 연속, 한 칸 이상 띄우고, 1칸이 칠해져 있다는 뜻. 가로·세로 힌트를 맞춰가며 칸을 채우면 그림이 완성돼요. 확실히 비어 있는 칸은 ×로 표시해 두면 헷갈리지 않아요. 한 줄의 힌트를 다 채우면 그 줄의 남은 칸에는 ×가 자동으로 들어가요.</p>
-<p><b>레벨 1은 5×5</b>, 4레벨마다 한 칸씩 커져서 <b>100레벨은 30×30</b>이에요. 100레벨 뒤에도 30×30 새 문제가 계속 나와요. 모든 크기에 하트·고양이·에펠탑·공룡 같은 픽셀 그림 도안(160여 개, 좌우 반전 변형 포함)이 준비돼 있어서 완성하면 그림과 이름이 떠요. 같은 레벨을 다시 하면 다른 도안이 나오고, 도안을 다 쓰면 무작위 패턴이 나와요. 전부 추측 없이 논리만으로 풀리는지 검증한 문제만 나와요. 큰 판은 스크롤로 보고 +/− 버튼으로 칸 크기를 조절할 수 있어요. 진행 중인 판(칠한 칸·경과 시간)과 레벨은 이 기기에 자동 저장되니 창을 닫아도 이어서 풀 수 있고, "여기까지 하고 랭킹 등록"을 누르면 이번 판에서 직접 깬 최고 레벨로 랭킹에 올라가요.</p>
+<p><b>레벨 1은 5×5</b>, 4레벨마다 한 칸씩 커져서 <b>81레벨부터 25×25</b>예요. 그 뒤로도 25×25 새 문제가 계속 나와요. 모든 크기에 하트·고양이·에펠탑·공룡 같은 픽셀 그림 도안(160여 개, 좌우 반전 변형 포함)이 준비돼 있어서 완성하면 그림과 이름이 떠요. 같은 레벨을 다시 하면 다른 도안이 나오고, 도안을 다 쓰면 무작위 패턴이 나와요. 전부 추측 없이 논리만으로 풀리는지 검증한 문제만 나와요. 큰 판은 스크롤로 보고 +/− 버튼으로 칸 크기를 조절할 수 있어요. 진행 중인 판(칠한 칸·경과 시간)과 레벨은 이 기기에 자동 저장되니 창을 닫아도 이어서 풀 수 있고, "여기까지 하고 랭킹 등록"을 누르면 이번 판에서 직접 깬 최고 레벨로 랭킹에 올라가요.</p>
 <h2>푸는 요령</h2><ol><li>합이 큰 줄부터. 10칸에 "8"이면 가운데 6칸은 무조건 칠해져요(겹침 기법).</li><li>"0"이나 힌트 합이 줄 길이와 같은 줄은 바로 끝낼 수 있어요.</li><li>완성된 줄의 나머지 칸은 ×로 막아두세요. 다른 줄 추론이 쉬워져요.</li><li>막히면 가로만 보지 말고 세로 힌트로 눈을 옮기세요.</li></ol>
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
-<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>숫자가 무슨 뜻인가요?</summary><p>그 줄에서 연속으로 칠해진 칸의 길이예요. '2 3'이면 2칸 연속, 최소 한 칸 띄우고, 3칸 연속이 칠해져 있어요. 순서도 그대로예요.</p></details><details><summary>추측해야 풀리는 문제도 있나요?</summary><p>없어요. 생성할 때 논리만으로 끝까지 풀리는지 검사해서 통과한 문제만 내요. 30×30도 마찬가지예요.</p></details><details><summary>큰 판은 폰에서 어떻게 푸나요?</summary><p>13×13부터는 드래그 대신 한 칸씩 탭으로 칠하고, 화면은 손가락으로 스크롤해요. +/− 버튼으로 칸 크기를 바꿀 수 있어요.</p></details><details><summary>랭킹은 어떻게 등록하나요?</summary><p>레벨을 깬 뒤 "여기까지 하고 랭킹 등록"을 누르면 이번 판에서 직접 깬 최고 레벨로 올라가요. 진행은 저장되니 다음에 이어서 더 높은 레벨로 다시 등록할 수 있어요.</p></details></section>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>숫자가 무슨 뜻인가요?</summary><p>그 줄에서 연속으로 칠해진 칸의 길이예요. '2 3'이면 2칸 연속, 최소 한 칸 띄우고, 3칸 연속이 칠해져 있어요. 순서도 그대로예요.</p></details><details><summary>추측해야 풀리는 문제도 있나요?</summary><p>없어요. 생성할 때 논리만으로 끝까지 풀리는지 검사해서 통과한 문제만 내요. 25×25도 마찬가지예요.</p></details><details><summary>큰 판은 폰에서 어떻게 푸나요?</summary><p>13×13부터는 드래그 대신 한 칸씩 탭으로 칠하고, 화면은 손가락으로 스크롤해요. +/− 버튼으로 칸 크기를 바꿀 수 있어요.</p></details><details><summary>랭킹은 어떻게 등록하나요?</summary><p>레벨을 깬 뒤 "여기까지 하고 랭킹 등록"을 누르면 이번 판에서 직접 깬 최고 레벨로 올라가요. 진행은 저장되니 다음에 이어서 더 높은 레벨로 다시 등록할 수 있어요.</p></details></section>
   <footer>기록은 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 기록이 서버에 저장돼요. 이 테스트는 특정 능력을 측정·연습하는 놀이이며 의학적 검사가 아니에요.<br><span class="version-tag">v2.8 · 2026-09-19 업데이트</span></footer>
 </main>
 
@@ -91,7 +91,7 @@ table.ng td.h.done{color:#a0a9b8}
 const $=id=>document.getElementById(id);
 let level=1, N=5, grid=[], rows=[], cols=[], mode='fill', running=false, t0=0, raf=0, startedAt=0, cleared=0, best=+localStorage.getItem('nono_best')||0, zoom=0, totalMs=0;
 function rng(seed){ let x=seed>>>0||1; return ()=>{ x^=x<<13; x>>>=0; x^=x>>>17; x^=x<<5; x>>>=0; return x/4294967296; }; }
-function sizeFor(l){ return Math.min(30, 5+Math.floor((l-1)/4)); }
+function sizeFor(l){ return Math.min(25, 5+Math.floor((l-1)/4)); }   // 25×25 가 마지막 크기 (81레벨부터)
 function densityFor(l){ return Math.max(0.45, 0.62-l*0.0017); }
 function clues(line){ const out=[]; let c=0; for(const v of line){ if(v) c++; else if(c){ out.push(c); c=0; } } if(c) out.push(c); return out.length?out:[0]; }
 // ---- 한 줄 풀이 (DP): 힌트 cl 과 상태 st(1=칠,0=빈,-1=미정)로 각 칸이 칠해질 수/빌 수 있는지 판정 ----

@@ -176,7 +176,9 @@ def main():
     # sitemap 에 빠진 도구
     sm = open(os.path.join(ROOT, 'sitemap.xml'), encoding='utf-8').read()
     listed = set(re.findall(r'<loc>\s*(.*?)\s*</loc>', sm))
-    missing = [f for f in sorted(nav) if f'{SITE}/{f}' not in listed]
+    # sitemap 은 확장자 없는 주소(/bmi)를 쓴다. 혹시 .html 형태로 적힌 것도 있을 수 있어 둘 다 본다.
+    missing = [f for f in sorted(nav)
+               if f'{SITE}/{f[:-5]}' not in listed and f'{SITE}/{f}' not in listed]
     for f in missing:
         warn('sitemap.xml', f'{f} 가 sitemap 에 없어요 ({nav[f]})')
 

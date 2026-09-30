@@ -1,13 +1,12 @@
 ---
 title: PDF 합치기·나누기·이미지 변환 — 설치 없이 브라우저에서
 description: 계약서 여러 장을 한 파일로 묶고, 필요한 쪽만 뽑고, 이미지로 바꾸는 방법을 정리했어요. 업로드 없이 내 기기에서 처리하는 것이 왜 중요한지도 함께 다룹니다.
-date: 2026-09-21
-updated: 2026-09-21
+date: 2026-10-01
+updated: 2026-10-01
 category: 계산·생활
 tools: pdf-merge.html, pdf-split.html, pdf-to-jpg.html, image-to-pdf.html, image-compress.html
 keywords: PDF 합치기, PDF 나누기, PDF 이미지 변환, PDF JPG 변환, 사진 PDF 만들기, PDF 용량 줄이기, 온라인 PDF 편집
 sources: 인용한 법령·공식 수치 없음 — 도구 사용법과 파일 처리 방식을 정리한 글입니다
-draft: true
 ---
 서류를 제출할 때 "PDF 한 파일로 보내 주세요"라는 말을 자주 듣습니다. 스캔한 장수가 여러 개이거나, 사진으로 찍어둔 것을 묶어야 하거나, 반대로 두꺼운 PDF에서 몇 쪽만 뽑아야 할 때가 있어요. 프로그램을 깔지 않고 브라우저에서 해결하는 방법을 정리했습니다.
 

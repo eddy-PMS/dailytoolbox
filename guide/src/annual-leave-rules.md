@@ -2,7 +2,7 @@
 title: 연차 계산법 완전 정리 — 1년 미만, 회계연도 vs 입사일, 퇴직 정산까지
 description: 입사 첫해는 월 1일씩 최대 11일, 1년이 되면 15일, 3년부터 2년마다 1일씩 최대 25일. 딱 1년 근무 시 11일인 이유, 회계연도 기준 일할 계산, 퇴직 정산과 연차수당 표까지 정리했어요.
 date: 2026-09-19
-updated: 2026-09-21
+updated: 2026-09-30
 category: 돈·일
 tools: annual-leave.html, leave-pay.html, severance.html, worktime.html
 keywords: 연차 계산법, 연차 발생 기준, 1년 미만 연차, 1년 계약직 연차 11일, 회계연도 연차, 연차수당 계산, 연차수당 1일, 연차 촉진, 미사용 연차
@@ -13,6 +13,8 @@ sources: 근로기준법 제60조 (연차 유급휴가) | https://www.law.go.kr 
 [[tool:annual-leave.html|입사일만 넣으면 지금까지 생긴 연차와 다음 발생일이 나와요]]
 
 ## 법이 정한 연차 발생 규칙
+
+[[img:annual-leave-rules-timeline-1200.webp|연차 발생 기준 타임라인|1200x1500]]
 
 | 근속 | 연차 | 조건 |
 |---|---|---|

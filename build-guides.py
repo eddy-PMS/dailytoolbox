@@ -20,6 +20,11 @@ draft: true               # (선택) 넣어두면 빌드에서 제외됨. 발행
 ---
 본문 (## 제목, ### 소제목, 문단, - 목록, 1. 목록, | 표 |, > 인용, **굵게**, [링크](url))
 [[tool:salary.html|계산기에서 바로 계산해 보세요]]  → 도구 링크 카드
+[[img:파일명|alt|폭x높이|캡션]]  → 본문 이미지 (파일은 img/guide/<slug>/ 에 둔다)
+    · 한 줄 전체가 이 문법일 때만. 문단 안에 섞어 쓰는 인라인 이미지는 지원 안 함
+    · alt 는 필수. 폭x높이(예 1200x1500)는 없으면 경고, 캡션은 선택
+    · <이름>-1200.webp 이고 같은 폴더에 -800·-400 이 둘 다 있으면 srcset 자동
+    · alt·캡션 안에 | 는 쓸 수 없다
 :::tip 제목
 내용
 :::
@@ -64,8 +69,57 @@ def inline(s):
 def slugify(t):
     return re.sub(r'[^0-9a-zA-Z가-힣]+', '-', t).strip('-').lower()
 
-def md_to_html(md, tools):
-    lines = md.split('\n'); out = []; i = 0; toc = []; faq = []
+IMG_NAME_RE = re.compile(r'^[A-Za-z0-9._-]+$')
+IMG_SIZE_RE = re.compile(r'^(\d+)x(\d+)$')
+IMG_SIZES_ATTR = '(max-width: 600px) 100vw, 520px'   # tool.css figure.gimg 최대 폭과 같게 유지
+
+
+def img_parts(inside):
+    """[[img:…]] 안쪽을 (파일명, alt, (폭,높이) 또는 None, 캡션 또는 None) 으로 나눈다.
+    형식이 아니면 (None, 사유) 를 돌려준다. alt·캡션 안의 | 는 지원하지 않는다."""
+    parts = inside.split('|')
+    if len(parts) < 2:
+        return None, 'alt 가 없어요 ([[img:파일|alt|폭x높이]] 형식)'
+    if len(parts) > 4:
+        return None, '칸이 너무 많아요. alt·캡션 안에는 | 를 쓸 수 없어요'
+    name, alt = parts[0].strip(), parts[1].strip()
+    if not IMG_NAME_RE.match(name):
+        return None, f'파일명이 «{name}» 인데 경로 없이 영문·숫자·. _ - 만 쓸 수 있어요'
+    size = cap = None
+    rest = parts[2:]
+    if rest:
+        m = IMG_SIZE_RE.match(rest[0].strip())
+        if m:
+            size = (m.group(1), m.group(2)); rest = rest[1:]
+        if rest:
+            cap = rest[0].strip() or None
+        if len(rest) > 1:
+            return None, '칸이 너무 많아요. alt·캡션 안에는 | 를 쓸 수 없어요'
+    return (name, alt, size, cap), None
+
+
+def img_figure(name, alt, size, cap, slug):
+    """<figure class="gimg"> 한 덩어리. -1200.webp 3벌이 갖춰져 있으면 srcset 을 붙인다."""
+    base = f'/img/guide/{slug}'
+    attrs = [f'src="{attr(base)}/{attr(name)}"']
+    m = re.match(r'^(.*)-1200\.webp$', name)
+    if m:
+        stem = m.group(1)
+        trio = [f'{stem}-{w}.webp' for w in (400, 800, 1200)]
+        if all(os.path.exists(os.path.join(ROOT, 'img', 'guide', slug, f)) for f in trio[:2]):
+            srcset = ', '.join(f'{base}/{f} {w}w' for f, w in zip(trio, (400, 800, 1200)))
+            attrs.append(f'srcset="{attr(srcset)}"')
+            attrs.append(f'sizes="{attr(IMG_SIZES_ATTR)}"')
+    if size:
+        attrs.append(f'width="{size[0]}" height="{size[1]}"')
+    attrs.append(f'alt="{attr(alt)}"')
+    attrs.append('loading="lazy" decoding="async"')
+    figcap = f'\n  <figcaption>{esc(cap)}</figcaption>' if cap else ''
+    return f'<figure class="gimg">\n  <img {" ".join(attrs)}>{figcap}\n</figure>'
+
+
+def md_to_html(md, tools, slug=None, where='원고', line_offset=0):
+    lines = md.split('\n'); out = []; i = 0; toc = []; faq = []; imgs = []
     def flush_para(buf):
         if buf: out.append('<p>' + inline(' '.join(buf)) + '</p>')
     para = []
@@ -96,6 +150,24 @@ def md_to_html(md, tools):
             label = m.group(2) or t['title']
             ic = f'<img class="ic" src="/icons/{t["slug"]}.webp" width="40" height="40" alt="" loading="lazy" decoding="async">'
             out.append(f'<a class="toolcta" href="/{f[:-5]}">{ic}<span><b>{esc(t["title"])}</b><small>{esc(label)}</small></span><span class="go">›</span></a>')
+            i += 1; continue
+        m = re.match(r'^\[\[img:(.*)\]\]$', st)
+        if m:
+            flush_para(para); para = []
+            at = f'{where}:{line_offset + i + 1}'
+            got, why = img_parts(m.group(1))
+            if got is None:
+                raise SystemExit(f'{at} [[img]] {why}')
+            name, alt, size, cap = got
+            if not alt:
+                raise SystemExit(f'{at} [[img]] alt 누락')
+            path = os.path.join(ROOT, 'img', 'guide', slug or '', name)
+            if not os.path.exists(path):
+                raise SystemExit(f'{at} [[img]] 파일이 없어요 → img/guide/{slug}/{name}')
+            if not size:
+                print(f'  [경고] {at} [[img]] 폭x높이가 없어 width·height 를 넣지 못했어요 ({name})')
+            out.append(img_figure(name, alt, size, cap, slug))
+            imgs.append(f'{SITE}/img/guide/{slug}/{name}')
             i += 1; continue
         if st.startswith(':::'):
             flush_para(para); para = []
@@ -140,7 +212,7 @@ def md_to_html(md, tools):
             flush_para(para); para = []; out.append('<hr>'); i += 1; continue
         para.append(st); i += 1
     flush_para(para)
-    return '\n'.join(out), toc, faq
+    return '\n'.join(out), toc, faq, imgs
 
 def is_draft(meta):
     return str(meta.get('draft', '')).strip().lower() in ('true', 'y', 'yes', '1')
@@ -153,6 +225,8 @@ def parse(md_text):
         if ':' in ln:
             k, v = ln.split(':', 1); meta[k.strip()] = v.strip()
     body = m.group(2)
+    # 오류 메시지의 줄 번호를 원고 파일 기준으로 맞추기 위한 머리말 길이
+    meta['_line_offset'] = md_text.count(chr(10), 0, m.start(2))
     meta['tools'] = [x.strip() for x in meta.get('tools', '').split(',') if x.strip()]
     srcs = []
     for part in meta.get('sources', '').split(';'):
@@ -201,16 +275,17 @@ def head_common(title, desc, canonical, keywords, extra_ld, og_img=None):
 <link rel="stylesheet" href="/tool.css">
 '''
 
-def render_guide(meta, body_md, slug, tools, all_guides):
+def render_guide(meta, body_md, slug, tools, all_guides, line_offset=0):
     accent = CAT_ACCENT.get(meta.get('category', ''), '#2f7d4f')
-    content, toc, faq = md_to_html(body_md, tools)
+    content, toc, faq, body_imgs = md_to_html(
+        body_md, tools, slug, f'guide/src/{slug}.md', line_offset)
     # 본문 중간 광고: 두 번째 h2 앞
     h2s = [m.start() for m in re.finditer(r'<h2 ', content)]
     if len(h2s) >= 2:
         p = h2s[1]; content = content[:p] + '<div class="ad-slot" data-ad="in-content"></div>\n' + content[p:]
     chars = len(re.sub(r'<[^>]+>', '', content)); mins = max(1, round(chars / 600))
     canonical = f'{SITE}/guide/{slug}'
-    ld = json.dumps({"@context": "https://schema.org", "@type": "Article", "headline": meta['title'], "description": meta.get('description', ''), "image": [og_image(slug)], "datePublished": meta.get('date', ''), "dateModified": meta.get('updated', meta.get('date', '')), "author": {"@type": "Organization", "name": "데일리 프리 툴박스", "url": SITE + "/"}, "publisher": {"@type": "Organization", "name": "데일리 프리 툴박스", "logo": {"@type": "ImageObject", "url": f"{SITE}/apple-touch-icon.png"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": canonical}, "inLanguage": "ko"}, ensure_ascii=False)
+    ld = json.dumps({"@context": "https://schema.org", "@type": "Article", "headline": meta['title'], "description": meta.get('description', ''), "image": [og_image(slug)] + body_imgs, "datePublished": meta.get('date', ''), "dateModified": meta.get('updated', meta.get('date', '')), "author": {"@type": "Organization", "name": "데일리 프리 툴박스", "url": SITE + "/"}, "publisher": {"@type": "Organization", "name": "데일리 프리 툴박스", "logo": {"@type": "ImageObject", "url": f"{SITE}/apple-touch-icon.png"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": canonical}, "inLanguage": "ko"}, ensure_ascii=False)
     faq_ld = ''
     if len(faq) >= 2:
         faq_ld = '\n<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}, ensure_ascii=False) + '</script>' 
@@ -428,7 +503,7 @@ def main():
         print('발행할 원고가 없어요 (전부 draft). 빌드를 중단합니다.'); return
     guides.sort(key=lambda g: g['meta'].get('date', ''), reverse=True)
     for g in guides:
-        html_out = render_guide(g['meta'], g['body'], g['slug'], tools, guides)
+        html_out = render_guide(g['meta'], g['body'], g['slug'], tools, guides, g['meta'].get('_line_offset', 0))
         open(os.path.join(OUT, g['slug'] + '.html'), 'w', encoding='utf-8').write(html_out)
         print('생성:', f'guide/{g["slug"]}.html', f'({g["meta"]["title"]})')
     open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(render_index(guides))

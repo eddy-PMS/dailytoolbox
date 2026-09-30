@@ -7,6 +7,8 @@
   [원고]  머리말 필수 항목 누락, :::/?? 문법 오류
   [도구]  가이드가 가리키는 도구가 실제로 있는지, nav.js 에 등록돼 있는지
   [문법]  [[tool:...]] 규칙(소문자·숫자·하이픈 + .html)에 안 맞아 카드로 안 바뀌는 줄
+          [[img:...]] 규칙에 안 맞는 줄, alt 누락, img/guide/<slug>/ 에 파일 없음 (모두 오류)
+          폭x높이 누락은 경고 (width·height 없이 출력돼 화면이 흔들림)
   [삽입]  도구 페이지에 "관련 가이드" 블록을 넣을 자리(마커 또는 sibs 블록)가 있는지
   [색인]  nav.js 에 있는데 sitemap.xml 에 빠진 도구 페이지
 
@@ -24,6 +26,9 @@ SITE = 'https://dailyfreetoolbox.com'
 REQUIRED = ['title', 'description', 'date', 'updated', 'category', 'tools', 'keywords', 'sources']
 CATEGORIES = ['계산·생활', '돈·일', '가족·건강', '공부·어학', '재미']
 TOOL_RE = re.compile(r'^\[\[tool:([a-z0-9-]+\.html)(?:\|(.+?))?\]\]$')
+IMG_RE = re.compile(r'^\[\[img:(.*)\]\]$')
+IMG_NAME_RE = re.compile(r'^[A-Za-z0-9._-]+$')
+IMG_SIZE_RE = re.compile(r'^(\d+)x(\d+)$')
 
 errors, warns = [], []
 def err(where, msg): errors.append((where, msg))
@@ -45,20 +50,52 @@ def load_nav_tools():
 
 def parse_front(text):
     m = re.match(r'^---\n(.*?)\n---\n(.*)$', text, re.S)
-    if not m: return None, None
+    if not m: return None, None, 0
     meta = {}
     for ln in m.group(1).split('\n'):
         if ':' in ln:
             k, v = ln.split(':', 1); meta[k.strip()] = v.strip()
-    return meta, m.group(2)
+    # 줄 번호를 원고 파일 기준으로 맞추기 위한 머리말 길이
+    return meta, m.group(2), text.count(chr(10), 0, m.start(2))
 
 
-def check_body(where, body, nav, referenced):
+def check_img(where, slug, n, inside):
+    """[[img:…]] 한 줄 검사. build-guides.py 의 img_parts 와 같은 규칙."""
+    parts = inside.split('|')
+    if len(parts) < 2:
+        err(where, f'{n}행: [[img:...]] 에 alt 가 없어요 ([[img:파일|alt|폭x높이]] 형식)'); return
+    if len(parts) > 4:
+        err(where, f'{n}행: [[img:...]] 칸이 너무 많아요. alt·캡션 안에는 | 를 쓸 수 없어요'); return
+    name, alt = parts[0].strip(), parts[1].strip()
+    if not IMG_NAME_RE.match(name):
+        err(where, f'{n}행: [[img:...]] 파일명이 «{name}» 인데 경로 없이 영문·숫자·. _ - 만 쓸 수 있어요'); return
+    if not alt:
+        err(where, f'{n}행: [[img:...]] alt 가 비었어요'); return
+    rest = parts[2:]
+    has_size = bool(rest) and bool(IMG_SIZE_RE.match(rest[0].strip()))
+    if has_size:
+        rest = rest[1:]
+    if len(rest) > 1:
+        err(where, f'{n}행: [[img:...]] 칸이 너무 많아요. alt·캡션 안에는 | 를 쓸 수 없어요'); return
+    if not has_size:
+        warn(where, f'{n}행: [[img:...]] 에 폭x높이가 없어요. width·height 가 빠져 읽는 중 화면이 흔들려요')
+    if not os.path.exists(os.path.join(ROOT, 'img', 'guide', slug, name)):
+        err(where, f'{n}행: [[img:...]] 파일이 없어요 → img/guide/{slug}/{name}')
+
+
+def check_body(where, body, nav, referenced, slug='', line_offset=0):
     depth = 0
-    for n, ln in enumerate(body.split('\n'), 1):
+    for n0, ln in enumerate(body.split('\n'), 1):
+        n = n0 + line_offset
         st = ln.strip()
         if st.startswith(':::'):
             depth = 0 if depth else 1
+        if st.startswith('[[img:'):
+            m = IMG_RE.match(st)
+            if not m:
+                err(where, f'{n}행: [[img:...]] 문법에 안 맞아 이미지로 안 바뀌어요 → {st[:60]}')
+            else:
+                check_img(where, slug, n, m.group(1))
         if '[[tool:' in st:
             m = TOOL_RE.match(st)
             if not m:
@@ -70,11 +107,11 @@ def check_body(where, body, nav, referenced):
             err(where, f'{n}행: ?? 뒤 질문이 비었어요')
     if depth: err(where, '::: 블록이 열리고 닫히지 않았어요')
 
-    for n, ln in enumerate(body.split('\n'), 1):
+    for n0, ln in enumerate(body.split('\n'), 1):
         if ln.strip().startswith('?? '):
-            nxt = body.split('\n')[n] if n < len(body.split('\n')) else ''
+            nxt = body.split('\n')[n0] if n0 < len(body.split('\n')) else ''
             if not nxt.strip():
-                err(where, f'{n}행: FAQ 질문 다음 줄에 답이 없어요 → {ln.strip()[:40]}')
+                err(where, f'{n0 + line_offset}행: FAQ 질문 다음 줄에 답이 없어요 → {ln.strip()[:40]}')
 
 
 def check_tool(where, f, nav, ctx):
@@ -94,7 +131,8 @@ def main():
     published = drafts = 0
     for p in files:
         where = os.path.relpath(p, ROOT).replace('\\', '/')
-        meta, body = parse_front(open(p, encoding='utf-8').read())
+        slug = os.path.splitext(os.path.basename(p))[0]
+        meta, body, line_offset = parse_front(open(p, encoding='utf-8').read())
         if meta is None:
             err(where, '머리말(--- 로 감싼 부분) 형식이 잘못됐어요'); continue
 
@@ -121,7 +159,7 @@ def main():
             referenced.add(f)
             check_tool(where, f, nav, '머리말 tools')
 
-        check_body(where, body, nav, referenced)
+        check_body(where, body, nav, referenced, slug, line_offset)
 
         if not re.search(r'^\[\[tool:', body, re.M):
             warn(where, '본문에 도구 링크 카드([[tool:...]])가 하나도 없어요')

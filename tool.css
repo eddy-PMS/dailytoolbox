@@ -98,6 +98,9 @@ article.guide .toolcta > span:not(.go) { flex:1 1 180px; min-width:0; }
 article.guide .toolcta b { display:block; font-size:15px; line-height:1.4; }
 article.guide .toolcta small { display:block; color:var(--ink-soft); font-size:12.5px; line-height:1.5; margin-top:3px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 article.guide .toolcta .go { margin-left:auto; color:var(--accent); font-size:20px; line-height:1; flex:none; }
+article.guide figure.gimg { margin:16px 0 18px; }
+article.guide figure.gimg img { display:block; max-width:min(100%,520px); height:auto; margin:0 auto; border:1px solid var(--line); border-radius:8px; }
+article.guide figure.gimg figcaption { margin-top:6px; text-align:center; font-size:13px; color:var(--ink-soft); }
 
 .guide-tools { margin:26px 0 8px; } .guide-tools h2 { font-size:15px; margin:0 0 10px; }
 .guide-tools .grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; } @media(max-width:520px){ .guide-tools .grid { grid-template-columns:1fr; } }

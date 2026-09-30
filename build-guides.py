@@ -19,6 +19,7 @@ sources: 국세청 간이세액표 | https://... ; 국민연금공단 | https://
 draft: true               # (선택) 넣어두면 빌드에서 제외됨. 발행할 때 이 줄을 지운다
 ---
 본문 (## 제목, ### 소제목, 문단, - 목록, 1. 목록, | 표 |, > 인용, **굵게**, [링크](url))
+    · 표는 <div class="tw"> 로 감싸 출력된다 (좁은 화면에서 표 영역만 가로 스크롤)
 [[tool:salary.html|계산기에서 바로 계산해 보세요]]  → 도구 링크 카드
 [[img:파일명|alt|폭x높이|캡션]]  → 본문 이미지 (파일은 img/guide/<slug>/ 에 둔다)
     · 한 줄 전체가 이 문법일 때만. 문단 안에 섞어 쓰는 인라인 이미지는 지원 안 함
@@ -187,7 +188,8 @@ def md_to_html(md, tools, slug=None, where='원고', line_offset=0):
             if rows:
                 h = '<table><thead><tr>' + ''.join(f'<th>{inline(c)}</th>' for c in rows[0]) + '</tr></thead><tbody>'
                 for r in rows[1:]: h += '<tr>' + ''.join(f'<td>{inline(c)}</td>' for c in r) + '</tr>'
-                out.append(h + '</tbody></table>')
+                # 휴대폰에서 넓은 표가 본문을 밀지 않도록 가로 스크롤 박스로 감싼다
+                out.append('<div class="tw">' + h + '</tbody></table></div>')
             continue
         if re.match(r'^[-*]\s+', st) or re.match(r'^\d+\.\s+', st):
             flush_para(para); para = []

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="t d">
+  <title id="t">주휴수당 계산기 계산 방법</title>
+  <desc id="d">주휴수당은 1주 15시간 이상 일하고 소정근로일을 개근하면 발생한다. 계산식은 (1주 소정근로시간 ÷ 40) × 8시간 × 시급. 예: 주 30시간, 시급 10,320원이면 주휴수당 61,920원. 주 40시간 이상이면 8시간분 82,560원.</desc>
+  <!-- 색: dailytoolbox tool.css :root 변수 값 (변수명 앞 대시 2개 생략) paper #ffffff, paper-deep #f2f7fe, ink #151a23, ink-soft #5b6472, line #e3e9f3, accent #2b5fd9, accent-deep #1e47a8 -->
+  <!-- 근거: dailytoolbox parttime.html 본문 "2026년 최저시급과 알바 월급 계산" (최저시급 10,320원, 계산식, 주 40시간 8시간분 82,560원). 예시 30÷40×8×10,320 = 61,920 은 같은 식으로 계산 -->
+  <rect width="800" height="560" rx="16" fill="#f2f7fe"/>
+  <g font-family="Pretendard, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">
+    <text x="40" y="58" font-size="28" font-weight="800" fill="#151a23">주휴수당 계산 방법 (2026)</text>
+
+    <!-- 1 조건 -->
+    <rect x="40" y="86" width="720" height="110" rx="14" fill="#ffffff" stroke="#e3e9f3" stroke-width="2"/>
+    <circle cx="80" cy="141" r="20" fill="#2b5fd9"/>
+    <text x="80" y="148" font-size="20" font-weight="800" fill="#ffffff" text-anchor="middle">1</text>
+    <text x="118" y="128" font-size="20" font-weight="800" fill="#151a23">받을 조건</text>
+    <text x="118" y="162" font-size="19" fill="#151a23">1주 15시간 이상 + 소정근로일 개근</text>
+
+    <path d="M400 202 l0 22 m-10 -10 l10 10 l10 -10" fill="none" stroke="#5b6472" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- 2 계산식 -->
+    <rect x="40" y="232" width="720" height="110" rx="14" fill="#ffffff" stroke="#2b5fd9" stroke-width="3"/>
+    <circle cx="80" cy="287" r="20" fill="#2b5fd9"/>
+    <text x="80" y="294" font-size="20" font-weight="800" fill="#ffffff" text-anchor="middle">2</text>
+    <text x="118" y="274" font-size="20" font-weight="800" fill="#151a23">계산식</text>
+    <text x="118" y="310" font-size="21" font-weight="700" fill="#1e47a8">(1주 소정근로시간 ÷ 40) × 8시간 × 시급</text>
+
+    <path d="M400 348 l0 22 m-10 -10 l10 10 l10 -10" fill="none" stroke="#5b6472" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- 3 예시 -->
+    <rect x="40" y="378" width="720" height="130" rx="14" fill="#ffffff" stroke="#e3e9f3" stroke-width="2"/>
+    <circle cx="80" cy="433" r="20" fill="#2b5fd9"/>
+    <text x="80" y="440" font-size="20" font-weight="800" fill="#ffffff" text-anchor="middle">3</text>
+    <text x="118" y="420" font-size="20" font-weight="800" fill="#151a23">예시: 주 30시간 · 시급 10,320원</text>
+    <text x="118" y="456" font-size="19" fill="#151a23">30 ÷ 40 × 8 × 10,320 = <tspan font-weight="800" fill="#1e47a8">61,920원 / 주</tspan></text>
+    <text x="118" y="488" font-size="16" fill="#5b6472">주 40시간 이상이면 8시간분 82,560원 (2026 최저시급 기준)</text>
+
+    <text x="40" y="540" font-size="15" fill="#5b6472">5인 미만 사업장도 주휴수당은 의무 · dailyfreetoolbox.com</text>
+  </g>
+</svg>

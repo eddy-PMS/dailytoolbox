@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" role="img" aria-labelledby="t d">
+  <title id="t">BMI 계산기 비만도 기준표</title>
+  <desc id="d">대한비만학회 아시아 기준 BMI 분류: 18.5 미만 저체중, 18.5~22.9 정상, 23~24.9 과체중(비만 전단계), 25~29.9 1단계 비만, 30~34.9 2단계 비만, 35 이상 3단계 비만(고도비만)</desc>
+  <!-- 색: dailytoolbox tool.css :root 변수 값 (변수명 앞 대시 2개 생략) paper #ffffff, paper-deep #f2f7fe, ink #151a23, ink-soft #5b6472, line #e3e9f3, accent #2b5fd9, ok #2f7d4f, bad #c0392b -->
+  <!-- 근거: dailytoolbox bmi.html 본문 "BMI 기준 (대한비만학회, 아시아)" 표 -->
+  <rect width="800" height="380" rx="16" fill="#f2f7fe"/>
+  <g font-family="Pretendard, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">
+    <text x="40" y="58" font-size="28" font-weight="800" fill="#151a23">BMI 비만도 기준 (대한비만학회·아시아)</text>
+    <text x="40" y="92" font-size="18" fill="#5b6472">BMI = 몸무게(kg) ÷ 키(m)²</text>
+
+    <!-- 막대: BMI 15~40 을 x 60~740 에 비례 배치 (1 = 27.2px) -->
+    <rect x="60" y="130" width="95.2" height="56" fill="#2b5fd9" fill-opacity="0.35"/>
+    <rect x="155.2" y="130" width="122.4" height="56" fill="#2f7d4f"/>
+    <rect x="277.6" y="130" width="54.4" height="56" fill="#c0392b" fill-opacity="0.3"/>
+    <rect x="332" y="130" width="136" height="56" fill="#c0392b" fill-opacity="0.5"/>
+    <rect x="468" y="130" width="136" height="56" fill="#c0392b" fill-opacity="0.72"/>
+    <rect x="604" y="130" width="136" height="56" fill="#c0392b"/>
+
+    <text x="107.6" y="165" font-size="17" font-weight="700" fill="#151a23" text-anchor="middle">저체중</text>
+    <text x="216.4" y="165" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">정상</text>
+    <text x="304.8" y="165" font-size="15" font-weight="700" fill="#151a23" text-anchor="middle">과체중</text>
+    <text x="400" y="165" font-size="17" font-weight="700" fill="#151a23" text-anchor="middle">1단계 비만</text>
+    <text x="536" y="165" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">2단계 비만</text>
+    <text x="672" y="165" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">3단계 비만</text>
+
+    <!-- 경계값 -->
+    <g font-size="17" font-weight="700" fill="#151a23" text-anchor="middle">
+      <text x="155.2" y="216">18.5</text>
+      <text x="277.6" y="216">23</text>
+      <text x="332" y="216">25</text>
+      <text x="468" y="216">30</text>
+      <text x="604" y="216">35</text>
+    </g>
+    <g stroke="#151a23" stroke-width="2">
+      <line x1="155.2" y1="186" x2="155.2" y2="196"/>
+      <line x1="277.6" y1="186" x2="277.6" y2="196"/>
+      <line x1="332" y1="186" x2="332" y2="196"/>
+      <line x1="468" y1="186" x2="468" y2="196"/>
+      <line x1="604" y1="186" x2="604" y2="196"/>
+    </g>
+
+    <!-- 범위 설명 -->
+    <g font-size="17" fill="#151a23">
+      <text x="40" y="266">· 18.5 미만 저체중   · 18.5~22.9 정상   · 23~24.9 과체중(비만 전단계)</text>
+      <text x="40" y="296">· 25~29.9 1단계 비만   · 30~34.9 2단계 비만   · 35 이상 3단계 비만(고도비만)</text>
+    </g>
+    <text x="40" y="342" font-size="15" fill="#5b6472">허리둘레 남성 90cm·여성 85cm 이상은 BMI와 별개로 복부비만 · dailyfreetoolbox.com</text>
+  </g>
+</svg>

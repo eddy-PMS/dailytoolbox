@@ -1,8 +1,8 @@
 ---
-title: 원리금균등 vs 원금균등, 어떤 게 유리할까 — 대출 이자 줄이는 순서
+title: 원리금균등 원금균등 차이 — 어떤 게 유리할까, 대출 이자 줄이는 순서
 description: 같은 금리라도 상환 방식에 따라 총 이자가 1,500만원 차이 날 수 있어요. 세 가지 상환 방식의 계산 구조와 총 이자 비교, 중도상환수수료·DSR·거치기간까지 예시로 정리했어요.
 date: 2026-09-20
-updated: 2026-09-21
+updated: 2026-10-02
 category: 돈·일
 tools: loan.html, mortgage.html, car-loan.html, jeonse-loan.html
 keywords: 원리금균등 원금균등 차이, 대출 이자 계산, 중도상환수수료, 거치기간, DSR 계산, 만기일시상환

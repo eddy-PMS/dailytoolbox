@@ -15,3 +15,15 @@ passport-romanize
 pdf-tools-guide
 average-price-down
 gpa-conversion
+minimum-wage-2026
+weekly-holiday-pay
+hiragana-katakana-chart
+four-insurances-2026
+jlpt-levels-guide
+jeonse-loan-guide
+ovulation-fertile-window
+dsr-ltv-mortgage-limit
+reduce-photo-size
+bmr-daily-calories
+inch-cm-conversion
+pet-age-in-human-years

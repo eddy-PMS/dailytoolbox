@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://dailyfreetoolbox.com/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -368,19 +368,19 @@
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/avgprice</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/avgdown</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/compound</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -554,7 +554,7 @@
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/percent</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -663,7 +663,11 @@
 <!-- guides:start -->
   <url>
     <loc>https://dailyfreetoolbox.com/guide/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://dailyfreetoolbox.com/guide/gpa-conversion</loc>
+    <lastmod>2026-10-03</lastmod>
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/guide/average-price-down</loc>

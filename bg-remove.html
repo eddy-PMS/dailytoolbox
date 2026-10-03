@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>배경 제거 - 단색 배경 지우기·누끼 따기, 투명 PNG 무료 저장</title>
+<meta name="description" content="배경이 한 가지 색인 사진의 배경을 지워 투명 PNG로 만드는 무료 배경 제거 도구. 흰 배경 상품 사진·로고·도장·서명에 잘 맞고, 업로드 없이 내 기기에서 처리해요.">
+<meta name="keywords" content="배경 제거, 배경 지우기, 누끼 따기, 이미지 배경 제거, 사진 배경 제거, 도장 배경 제거, 서명 배경 제거, 투명 배경 만들기, 증명사진 배경 바꾸기">
+<link rel="canonical" href="https://dailyfreetoolbox.com/bg-remove">
+<meta property="og:type" content="website">
+<meta property="og:title" content="배경 제거 - 단색 배경 지우기·누끼 따기, 투명 PNG 무료 저장">
+<meta property="og:description" content="배경이 한 가지 색인 사진의 배경을 지워 투명 PNG로 만드는 무료 배경 제거 도구. 흰 배경 상품 사진·로고·도장·서명에 잘 맞고, 업로드 없이 내 기기에서 처리해요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/bg-remove">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og/og-bg-remove.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "배경 제거 (단색 배경 지우기)", "url": "https://dailyfreetoolbox.com/bg-remove", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "배경이 한 가지 색인 사진의 배경을 지워 투명 PNG로 만드는 무료 배경 제거 도구. 흰 배경 상품 사진·로고·도장·서명에 잘 맞고, 업로드 없이 내 기기에서 처리해요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
+.bgr-stage { position:relative; margin-top:12px; border:1px solid var(--line); border-radius:3px; overflow:auto; max-height:70vh;
+  background-color:#fff;
+  background-image:linear-gradient(45deg,#e6e9ef 25%,transparent 25%),linear-gradient(-45deg,#e6e9ef 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#e6e9ef 75%),linear-gradient(-45deg,transparent 75%,#e6e9ef 75%);
+  background-size:16px 16px; background-position:0 0,0 8px,8px -8px,-8px 0; }
+.bgr-stage canvas { display:block; max-width:100%; height:auto; cursor:crosshair; }
+.bgr-sw { display:inline-block; width:22px; height:22px; border:1px solid var(--line); border-radius:3px; vertical-align:-5px; }
+.bgr-hint { font-size:12.5px; color:var(--ink-soft); margin-top:8px; }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "AI 누끼와 무엇이 다른가요?", "acceptedAnswer": {"@type": "Answer", "text": "AI 누끼는 사람·사물의 모양을 학습한 모델이 배경을 알아서 오려 내요. 배경이 복잡해도 되지만 모델을 내려받아야 해서 느리고, 결과를 사람이 세밀하게 조절하기 어렵습니다. 이 도구는 지울 색을 직접 고르는 방식이라 배경이 단색일 때만 쓸 수 있는 대신, 즉시 처리되고 허용 범위를 바꿔 가며 원하는 만큼 다듬을 수 있어요."}}, {"@type": "Question", "name": "사진이 서버에 올라가나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 선택한 사진은 브라우저 안에서만 처리되고 어디에도 전송되지 않아요. 인터넷을 끊고도 동작합니다."}}, {"@type": "Question", "name": "인물 사진 배경도 지워지나요?", "acceptedAnswer": {"@type": "Answer", "text": "배경이 단색(흰 벽, 스튜디오 배경)이면 잘 됩니다. 풍경처럼 색이 여러 가지인 배경은 이 방식으로 깔끔하게 지워지지 않고, 머리카락처럼 가늘고 반투명한 경계도 완벽하지는 않아요."}}, {"@type": "Question", "name": "피사체 일부가 같이 지워져요.", "acceptedAnswer": {"@type": "Answer", "text": "지울 색과 비슷한 색이 피사체에도 있을 때 생겨요. 허용 범위를 낮추고, 지우는 방식을 \"가장자리에서 이어진 배경만\"으로 두면 사진 안쪽은 건드리지 않아요."}}, {"@type": "Question", "name": "저장했더니 배경이 흰색이에요.", "acceptedAnswer": {"@type": "Answer", "text": "JPG는 투명을 저장할 수 없어서 흰색으로 채워집니다. 투명하게 쓰려면 PNG로 저장하세요. 이 도구는 PNG로 저장합니다."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2b5fd9"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#계산·생활">계산·생활</a><span>›</span>배경 제거</nav>
+  <h1><img class="h1ic" src="/icons/bg-remove.webp" width="32" height="32" alt="">배경 제거 (단색 배경 지우기)</h1>
+  <p class="sub">지울 색을 골라 그 색과 비슷한 부분을 투명하게 만드는 방식이에요. AI 자동 누끼가 아니라서 풍경처럼 배경 색이 여러 가지인 사진에는 맞지 않아요. 사진은 업로드되지 않고 내 기기 안에서 처리됩니다.</p>
+  <div class="ad-slot" data-ad="top"></div>
+
+  <div class="card">
+    <input type="file" id="file" accept="image/*" style="font-size:14px">
+    <div class="row" style="margin-top:12px">
+      <label>지울 색 <span class="bgr-sw" id="sw"></span> <button class="btn-ghost" id="auto" style="padding:5px 10px;font-size:13px">모서리에서 자동</button></label>
+      <label>허용 범위 <input type="range" id="tol" min="0" max="150" step="1" value="40"> <span id="tolv">40</span></label>
+      <label>가장자리 부드럽게 <input type="range" id="fea" min="0" max="40" step="1" value="12"> <span id="feav">12</span></label>
+    </div>
+    <div class="row">
+      <label>지우는 방식 <select id="mode" style="width:auto;padding:5px 8px;font-size:13px"><option value="edge">가장자리에서 이어진 배경만</option><option value="all">비슷한 색 전부</option></select></label>
+      <label>처리 크기 <select id="size" style="width:auto;padding:5px 8px;font-size:13px"><option value="2400">최대 2400px</option><option value="1600">최대 1600px</option><option value="0">원본 그대로</option></select></label>
+      <label>배경 채우기 <select id="fill" style="width:auto;padding:5px 8px;font-size:13px"><option value="">투명</option><option value="#ffffff">흰색</option><option value="custom">직접 고르기</option></select> <input type="color" id="fillc" value="#ffffff" class="hidden" style="width:44px;padding:0;height:30px;vertical-align:-8px"></label>
+    </div>
+    <div class="btn-row"><button class="btn" id="save">PNG로 저장</button><button class="btn-ghost" id="reset">처음으로</button></div>
+    <div class="status" id="status">이미지를 선택하면 모서리 색을 자동으로 잡아 배경을 지웁니다.</div>
+    <div class="bgr-stage hidden" id="stage"><canvas id="cv"></canvas></div>
+    <div class="bgr-hint hidden" id="hint">결과 그림을 눌러 지울 색을 직접 고를 수 있어요. 바둑판 무늬가 보이는 곳이 투명해진 부분입니다.</div>
+  </div>
+
+ <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="image-compress"><img class="sic" src="/icons/image-compress.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>이미지 용량 줄이기</span></a><a href="image-to-pdf"><img class="sic" src="/icons/image-to-pdf.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>이미지 PDF 변환</span></a><a href="pdf-to-jpg"><img class="sic" src="/icons/pdf-to-jpg.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>PDF JPG 변환</span></a><a href="qrcode"><img class="sic" src="/icons/qrcode.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>QR코드 만들기</span></a><a href="charcount"><img class="sic" src="/icons/charcount.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>글자수 세기</span></a><a href="unit"><img class="sic" src="/icons/unit.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>단위 변환기</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
+<section class="seo">
+<h2>어떤 사진에 잘 되나요</h2><p>이 도구는 "지울 색"을 정해 그 색과 비슷한 픽셀을 투명하게 만드는 방식이에요. 그래서 배경이 한 가지 색으로 고른 사진에서 결과가 가장 깨끗합니다. AI로 사람과 사물을 알아서 따내는 방식이 아니라, 배경이 복잡한 일상 사진에는 맞지 않아요.</p><p><table><thead><tr><th>사진</th><th>결과</th><th>요령</th></tr></thead><tbody><tr><td>흰 배경 상품 사진</td><td>잘 됨</td><td>허용 범위 30~60</td></tr><tr><td>로고·아이콘(흰 바탕)</td><td>잘 됨</td><td>가장자리 부드럽게 5~15</td></tr><tr><td>서명·도장 스캔</td><td>잘 됨</td><td>허용 범위를 올려 종이 누런기까지 제거</td></tr><tr><td>흰 벽 앞 인물·증명사진</td><td>대체로 됨</td><td>머리카락 경계는 완벽하지 않음</td></tr><tr><td>야외·실내 풍경 배경</td><td>어려움</td><td>배경 색이 여러 가지라 이 방식으로는 한계</td></tr></tbody></table></p>
+<h2>허용 범위와 가장자리 설정</h2><p>허용 범위는 "지울 색에서 얼마나 달라도 배경으로 볼지"예요. 너무 낮으면 배경에 얼룩이 남고, 너무 높으면 피사체의 밝은 부분까지 같이 지워집니다. 흰 배경은 보통 30~60 사이에서 맞아요.</p><p>가장자리 부드럽게는 경계선을 한 번에 자르지 않고 서서히 투명해지게 만들어요. 값이 0이면 테두리가 계단처럼 거칠고, 10~20이면 자연스럽습니다. 지우는 방식을 "가장자리에서 이어진 배경만"으로 두면 사진 바깥쪽에서 연결된 부분만 지우기 때문에, 피사체 안에 배경과 비슷한 색이 있어도 구멍이 뚫리지 않아요.</p>
+<h2>도장·서명 스캔을 투명 PNG로</h2><p>계약서나 신청서에 넣을 도장·서명은 배경이 투명해야 문서 위에 자연스럽게 얹힙니다. 흰 종이에 찍은 뒤 사진으로 찍거나 스캔해서 불러오고, "모서리에서 자동"으로 종이 색을 잡은 다음 허용 범위를 조금씩 올리세요. 종이의 누런 기나 그림자까지 사라지고 글씨·인영만 남으면 된 거예요. 지우는 방식은 "가장자리에서 이어진 배경만"으로 두는 편이 안전합니다. 도장 안쪽의 빈 공간까지 비치게 하려면 "비슷한 색 전부"로 바꾸세요.</p>
+<h2>증명사진 배경 바꾸기</h2><p>흰 벽이나 단색 배경 앞에서 찍은 사진이라면 배경을 다른 색으로 바꿀 수 있어요. 배경을 지운 뒤 "배경 채우기"에서 흰색을 고르거나 직접 색을 골라 저장하면 됩니다. 여권·민원 서류처럼 규격이 정해진 사진은 기관이 요구하는 배경색과 크기를 먼저 확인하세요. 머리카락 경계가 거칠면 "가장자리 부드럽게"를 올리면 자연스러워집니다. 배경이 복잡한 곳에서 찍은 사진은 이 방식으로 깔끔하게 바뀌지 않아요.</p>
+<h2>투명 PNG와 흰 배경</h2><p>투명 배경은 PNG로 저장해야 유지됩니다. JPG는 투명을 담을 수 없어 저장하는 순간 흰색이나 검은색으로 채워져요. 쇼핑몰 상세페이지나 문서에 넣을 때는 투명 PNG가 편하고, 증명사진처럼 배경이 흰색이어야 하는 곳에는 "배경 채우기"를 흰색으로 두고 저장하면 됩니다.</p>
+<h2>사용 방법</h2><ol><li>사진을 선택하면 네 모서리 색을 평균 내어 자동으로 배경색을 잡고 결과를 보여줘요.</li><li>배경이 덜 지워졌으면 허용 범위를 올리고, 피사체가 깎이면 내리세요. 결과 그림을 눌러 지울 색을 직접 고를 수도 있어요.</li><li>"PNG로 저장"을 누르면 투명 배경 그대로 내려받습니다. 큰 사진은 처리 크기를 "원본 그대로"로 바꾸면 원래 해상도로 저장돼요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>AI 누끼와 무엇이 다른가요?</summary><p>AI 누끼는 사람·사물의 모양을 학습한 모델이 배경을 알아서 오려 내요. 배경이 복잡해도 되지만 모델을 내려받아야 해서 느리고, 결과를 사람이 세밀하게 조절하기 어렵습니다. 이 도구는 지울 색을 직접 고르는 방식이라 배경이 단색일 때만 쓸 수 있는 대신, 즉시 처리되고 허용 범위를 바꿔 가며 원하는 만큼 다듬을 수 있어요.</p></details><details><summary>사진이 서버에 올라가나요?</summary><p>아니요. 선택한 사진은 브라우저 안에서만 처리되고 어디에도 전송되지 않아요. 인터넷을 끊고도 동작합니다.</p></details><details><summary>인물 사진 배경도 지워지나요?</summary><p>배경이 단색(흰 벽, 스튜디오 배경)이면 잘 됩니다. 풍경처럼 색이 여러 가지인 배경은 이 방식으로 깔끔하게 지워지지 않고, 머리카락처럼 가늘고 반투명한 경계도 완벽하지는 않아요.</p></details><details><summary>피사체 일부가 같이 지워져요.</summary><p>지울 색과 비슷한 색이 피사체에도 있을 때 생겨요. 허용 범위를 낮추고, 지우는 방식을 “가장자리에서 이어진 배경만”으로 두면 사진 안쪽은 건드리지 않아요.</p></details><details><summary>저장했더니 배경이 흰색이에요.</summary><p>JPG는 투명을 저장할 수 없어서 흰색으로 채워집니다. 투명하게 쓰려면 PNG로 저장하세요. 이 도구는 PNG로 저장합니다.</p></details></section>
+  <footer>배경이 단색일 때를 위한 도구예요. 사진은 내 기기 안에서만 처리되며 어디에도 업로드되지 않아요.<br><span class="version-tag">v1.0 · 2026-10-03 업데이트</span></footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const cv=$('cv'), ctx=cv.getContext('2d', {willReadFrequently:true});
+let src=null;          // 작업 크기로 그린 원본 ImageData
+let target=[255,255,255];
+let timer=null;
+
+function hex(c){ return '#'+c.map(v=>v.toString(16).padStart(2,'0')).join(''); }
+function setSwatch(){ $('sw').style.background=hex(target); }
+
+$('tol').addEventListener('input',()=>{ $('tolv').textContent=$('tol').value; schedule(); });
+$('fea').addEventListener('input',()=>{ $('feav').textContent=$('fea').value; schedule(); });
+['mode','fill'].forEach(id=>$(id).addEventListener('change',()=>{
+  $('fillc').classList.toggle('hidden', $('fill').value!=='custom');
+  schedule();
+}));
+$('fillc').addEventListener('input',schedule);
+$('size').addEventListener('change',()=>{ if(lastFile) loadFile(lastFile); });
+
+let lastFile=null;
+$('file').addEventListener('change',e=>{ const f=e.target.files[0]; if(f) loadFile(f); });
+
+function loadFile(file){
+  lastFile=file;
+  const img=new Image();
+  img.onload=()=>{
+    const max=+$('size').value;
+    let w=img.naturalWidth, h=img.naturalHeight;
+    if(max){ const s=Math.min(1, max/Math.max(w,h)); w=Math.round(w*s); h=Math.round(h*s); }
+    cv.width=w; cv.height=h;
+    ctx.clearRect(0,0,w,h);
+    ctx.drawImage(img,0,0,w,h);
+    src=ctx.getImageData(0,0,w,h);
+    URL.revokeObjectURL(img.src);
+    pickCorners();
+    $('stage').classList.remove('hidden');
+    $('hint').classList.remove('hidden');
+    apply();
+  };
+  img.onerror=()=>{ $('status').textContent='이 형식은 브라우저가 열지 못해요. JPG·PNG로 바꿔서 시도해 보세요.'; };
+  img.src=URL.createObjectURL(file);
+}
+
+function pickCorners(){
+  const d=src.data, w=src.width, h=src.height;
+  const pts=[[0,0],[w-1,0],[0,h-1],[w-1,h-1]];
+  let r=0,g=0,b=0;
+  pts.forEach(([x,y])=>{ const i=(y*w+x)*4; r+=d[i]; g+=d[i+1]; b+=d[i+2]; });
+  target=[Math.round(r/4),Math.round(g/4),Math.round(b/4)];
+  setSwatch();
+}
+
+cv.addEventListener('click',e=>{
+  if(!src) return;
+  const r=cv.getBoundingClientRect();
+  const x=Math.floor((e.clientX-r.left)/r.width*cv.width);
+  const y=Math.floor((e.clientY-r.top)/r.height*cv.height);
+  if(x<0||y<0||x>=cv.width||y>=cv.height) return;
+  const i=(y*cv.width+x)*4, d=src.data;
+  target=[d[i],d[i+1],d[i+2]];
+  setSwatch(); apply();
+});
+
+function schedule(){ if(!src) return; clearTimeout(timer); timer=setTimeout(apply,120); }
+
+function apply(){
+  if(!src) return;
+  const t0=performance.now();
+  const w=src.width, h=src.height;
+  const out=new ImageData(new Uint8ClampedArray(src.data), w, h);
+  const d=out.data;
+  const tol=+$('tol').value, fea=+$('fea').value;
+  const [tr,tg,tb]=target;
+  const dist=i=>{ const a=d[i]-tr, b=d[i+1]-tg, c=d[i+2]-tb; return Math.sqrt(a*a+b*b+c*c); };
+  const alphaFor=(dd,cur)=>{
+    if(dd<=tol) return 0;
+    if(fea>0 && dd<=tol+fea) return Math.round(cur*(dd-tol)/fea);
+    return cur;
+  };
+
+  let erased=0;                              // 알파가 깎인 픽셀 수(안내용)
+  if($('mode').value==='all'){
+    for(let i=0;i<d.length;i+=4){
+      const before=d[i+3], after=alphaFor(dist(i), before);
+      if(after<before) erased++;
+      d[i+3]=after;
+    }
+  } else {
+    const n=w*h;
+    const seen=new Uint8Array(n);
+    const queue=new Int32Array(n);
+    let head=0, tail=0;
+    const push=p=>{ if(!seen[p]){ seen[p]=1; queue[tail++]=p; } };
+    for(let x=0;x<w;x++){ push(x); push((h-1)*w+x); }
+    for(let y=0;y<h;y++){ push(y*w); push(y*w+w-1); }
+    while(head<tail){
+      const p=queue[head++], i=p*4;
+      const dd=dist(i);
+      if(dd>tol+fea) continue;              // 배경이 아니면 여기서 멈춘다
+      const before=d[i+3], after=alphaFor(dd, before);
+      if(after<before) erased++;
+      d[i+3]=after;
+      const x=p%w, y=(p-x)/w;
+      if(x>0) push(p-1);
+      if(x<w-1) push(p+1);
+      if(y>0) push(p-w);
+      if(y<h-1) push(p+w);
+    }
+  }
+
+  ctx.clearRect(0,0,w,h);
+  const fill=$('fill').value==='custom' ? $('fillc').value : $('fill').value;
+  if(fill){ ctx.fillStyle=fill; ctx.fillRect(0,0,w,h); }
+  ctx.putImageData(out,0,0);
+  if(fill){                                  // 채운 배경 위에 합성해서 다시 그린다
+    const tmp=document.createElement('canvas'); tmp.width=w; tmp.height=h;
+    tmp.getContext('2d').putImageData(out,0,0);
+    ctx.clearRect(0,0,w,h);
+    ctx.fillStyle=fill; ctx.fillRect(0,0,w,h);
+    ctx.drawImage(tmp,0,0);
+  }
+  const ms=Math.round(performance.now()-t0);
+  const pct=Math.round(erased/(w*h)*100);
+  let msg=`${w}×${h} · 지운 영역 ${pct}% · ${ms}ms`;
+  if(erased===0){
+    msg = $('mode').value==='edge'
+      ? '지워진 곳이 없어요. 고른 색이 사진 가장자리에 없으면 이 방식으로는 지워지지 않아요 — 배경을 눌러 색을 다시 고르거나 "비슷한 색 전부"로 바꿔 보세요.'
+      : '지워진 곳이 없어요. 허용 범위를 올리거나 배경을 눌러 색을 다시 골라 보세요.';
+  }
+  $('status').textContent=msg;
+}
+
+$('auto').addEventListener('click',()=>{ if(src){ pickCorners(); apply(); } });
+
+$('save').addEventListener('click',()=>{
+  if(!src){ $('status').textContent='이미지를 먼저 선택하세요.'; return; }
+  cv.toBlob(blob=>{
+    const a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    a.download=(lastFile? lastFile.name.replace(/\.[^.]+$/,'') : 'image')+'_nobg.png';
+    a.click();
+    setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+  },'image/png');
+  if(typeof gtag==='function') gtag('event','bg_removed',{});
+});
+
+$('reset').addEventListener('click',()=>{
+  src=null; lastFile=null; $('file').value='';
+  $('stage').classList.add('hidden'); $('hint').classList.add('hidden');
+  $('tol').value=40; $('tolv').textContent='40';
+  $('fea').value=12; $('feav').textContent='12';
+  $('mode').value='edge'; $('fill').value=''; $('fillc').classList.add('hidden');
+  target=[255,255,255]; setSwatch();
+  $('status').textContent='이미지를 선택하면 모서리 색을 자동으로 잡아 배경을 지웁니다.';
+});
+
+setSwatch();
+
+</script>
+
+</body>
+</html>

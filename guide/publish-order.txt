@@ -27,3 +27,8 @@ reduce-photo-size
 bmr-daily-calories
 inch-cm-conversion
 pet-age-in-human-years
+toeic-vocabulary
+suneung-vocabulary
+hsk-vocabulary
+english-vocabulary-method
+civil-service-vocabulary

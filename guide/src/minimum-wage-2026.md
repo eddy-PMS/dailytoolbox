@@ -1,13 +1,12 @@
 ---
 title: 2026 최저시급 정리 — 시급·일급·월급 환산과 주휴수당 포함 계산
 description: 2026 최저시급은 10,320원, 하루 8시간 일급 82,560원, 주 40시간 월급은 주휴수당 포함 2,156,880원(209시간)이에요. 근무시간별 월급 환산표, 수습 감액, 내 월급이 최저임금 미달인지 확인하는 법과 신고 경로까지 정리했어요.
-date: 2026-10-01
-updated: 2026-10-01
+date: 2026-10-04
+updated: 2026-10-04
 category: 돈·일
 tools: parttime.html, wage-convert.html, worktime.html
 keywords: 최저시급, 2026 최저시급, 최저임금, 최저시급 월급, 최저임금 월급, 최저임금 209시간, 최저시급 주휴수당, 수습 최저임금 90%, 최저임금 위반 신고
 sources: 최저임금위원회 — 연도별 최저임금 결정현황 | https://www.minimumwage.go.kr/minWage/policy/decisionMain.do ; 고용노동부 노동포털 — 최저임금제도 | https://labor.moel.go.kr/minwonSysInfo/minwagesys.do ; 찾기쉬운 생활법령정보 — 최저임금 | https://www.easylaw.go.kr/CSP/CnpClsMain.laf?csmSeq=1694&ccfNo=1&cciNo=2&cnpClsNo=3 ; 대한민국 정책브리핑 — 2026년 1월 1일부터 최저임금 시급 인상 | https://www.korea.kr/news/policyNewsView.do?newsId=148952897 ; 찾기쉬운 생활법령정보 — 임금의 시효 소멸 | https://www.easylaw.go.kr/CSP/CnpClsMain.laf?csmSeq=1694&ccfNo=2&cciNo=4&cnpClsNo=1
-draft: true
 ---
 2026 최저시급은 **10,320원**이에요. 하루 8시간이면 일급 82,560원, 주 40시간 일하면 주휴수당을 포함해 월 **2,156,880원**(209시간 기준)이 최저 월급이에요. 숫자 자체는 단순한데, "주휴수당이 들어간 금액인지", "내 월급이 최저임금에 맞는지"에서 자주 헷갈려요. 환산표와 계산 예시로 순서대로 정리했어요. (확인일 2026-10-01)
 

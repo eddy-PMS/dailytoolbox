@@ -7,13 +7,13 @@
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
-<title>글자수 세기 - 공백 포함·제외, 바이트, 원고지 매수 계산</title>
-<meta name="description" content="자소서·보고서 글자 수를 공백 포함/제외로 세고, 바이트 수·단어 수·원고지 매수까지 실시간으로 계산하는 무료 도구.">
-<meta name="keywords" content="글자수 세기, 글자수 계산기, 자소서 글자수, 공백 제외 글자수, 바이트 계산, 원고지 매수">
+<title>글자수 세기 - 글자수 계산기, 공백 포함·제외·바이트·단어수 세기</title>
+<meta name="description" content="자소서·보고서 글자수를 공백 포함·제외로 세는 무료 글자수 계산기. 바이트 계산, 영어 단어수 세기, 원고지 매수까지 입력하는 대로 바로 보여줘요.">
+<meta name="keywords" content="글자수 세기, 글자수 계산기, 글자수, 글자수 확인, 공백 제외 글자수, 바이트 계산기, 단어수 세기, 영어 단어수 세기, 자소서 글자수 세기">
 <link rel="canonical" href="https://dailyfreetoolbox.com/charcount">
 <meta property="og:type" content="website">
-<meta property="og:title" content="글자수 세기">
-<meta property="og:description" content="자소서·보고서 글자 수를 공백 포함/제외로 세고, 바이트 수·단어 수·원고지 매수까지 실시간으로 계산하는 무료 도구.">
+<meta property="og:title" content="글자수 세기 - 글자수 계산기, 공백 포함·제외·바이트·단어수 세기">
+<meta property="og:description" content="자소서·보고서 글자수를 공백 포함·제외로 세는 무료 글자수 계산기. 바이트 계산, 영어 단어수 세기, 원고지 매수까지 입력하는 대로 바로 보여줘요.">
 <meta property="og:url" content="https://dailyfreetoolbox.com/charcount">
 <meta property="og:image" content="https://dailyfreetoolbox.com/og/og-charcount.jpg">
 <meta property="og:image:width" content="1200">
@@ -21,12 +21,12 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="ko_KR">
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "WebApplication", "name": "글자수 세기", "url": "https://dailyfreetoolbox.com/charcount", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "자소서·보고서 글자 수를 공백 포함/제외로 세고, 바이트 수·단어 수·원고지 매수까지 실시간으로 계산하는 무료 도구."}
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "글자수 세기", "url": "https://dailyfreetoolbox.com/charcount", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "자소서·보고서 글자수를 공백 포함·제외로 세는 무료 글자수 계산기. 바이트 계산, 영어 단어수 세기, 원고지 매수까지 입력하는 대로 바로 보여줘요."}
 </script>
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
 <style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "공백 포함과 공백 제외 중 뭐가 기준인가요?", "acceptedAnswer": {"@type": "Answer", "text": "제출처 안내문을 따르는 게 원칙이고, 명시가 없으면 대부분 공백 포함이 기준이에요. 한글 문서(HWP)의 \"문서 정보\"도 공백 포함 글자 수를 기본으로 보여줍니다."}}, {"@type": "Question", "name": "줄바꿈도 글자로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "공백 포함 기준에서는 줄바꿈도 한 글자로 세는 경우가 많아요. 이 도구의 \"공백 포함\"은 줄바꿈을 포함하고, \"줄바꿈만 제외\" 값도 따로 보여드려요."}}, {"@type": "Question", "name": "바이트는 어떤 기준으로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "UTF-8(한글 3바이트, 영문·숫자 1바이트)과 EUC-KR(한글 2바이트) 두 가지를 모두 계산해요. 오래된 채용 시스템은 EUC-KR 기준이 많습니다."}}, {"@type": "Question", "name": "입력한 글이 저장되나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 모든 계산은 브라우저 안에서만 이루어지고 어디에도 전송되지 않아요."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "공백 포함과 공백 제외 중 뭐가 기준인가요?", "acceptedAnswer": {"@type": "Answer", "text": "제출처 안내문을 따르는 게 원칙이고, 명시가 없으면 대부분 공백 포함이 기준이에요. 한글 문서(HWP)의 \"문서 정보\"도 공백 포함 글자 수를 기본으로 보여줍니다."}}, {"@type": "Question", "name": "줄바꿈도 글자로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "기준에 따라 달라요. 이 도구는 세 가지를 같이 보여줍니다. 공백 포함은 띄어쓰기와 줄바꿈을 모두 세고, 공백 제외는 둘 다 빼요. 줄바꿈만 제외는 띄어쓰기는 세고 줄바꿈만 뺀 값이라, \"공백 포함이지만 줄바꿈은 빼고 세는\" 양식에 맞출 때 보면 됩니다."}}, {"@type": "Question", "name": "바이트는 어떤 기준으로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "UTF-8(한글 3바이트, 영문·숫자 1바이트)과 EUC-KR(한글 2바이트) 두 가지를 모두 계산해요. 오래된 채용 시스템은 EUC-KR 기준이 많습니다."}}, {"@type": "Question", "name": "입력한 글이 저장되나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 모든 계산은 브라우저 안에서만 이루어지고 어디에도 전송되지 않아요."}}, {"@type": "Question", "name": "영어 단어 수는 어떤 기준으로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "띄어쓰기를 기준으로 셉니다. 공백·탭·줄바꿈으로 나뉜 덩어리 하나가 한 단어예요. don't나 well-known처럼 붙어 있으면 한 단어로 셉니다. 제출처가 하이픈을 두 단어로 보는 곳이라면 숫자가 다를 수 있으니 안내문을 확인하세요."}}, {"@type": "Question", "name": "이모지는 몇 글자로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "😀처럼 하나짜리 이모지는 1자, UTF-8로는 4바이트예요. 👨‍👩‍👧처럼 여러 그림이 이어 붙은 이모지는 눈에는 하나로 보여도 5자로 세어지고 18바이트가 됩니다. 글자 수가 빠듯하면 빼는 편이 안전해요."}}]}</script>
 </head>
 <body>
 
@@ -58,10 +58,24 @@
 <section class="seo">
 <h2>글자수 세기, 왜 기준이 헷갈릴까요</h2><p>자기소개서는 "공백 포함 1,000자 이내", 어떤 공모전은 "공백 제외", 채용 사이트는 "2,000바이트"처럼 기준이 제각각이에요. 같은 글이라도 기준에 따라 숫자가 크게 달라지기 때문에 제출 전에 반드시 요구하는 기준으로 세어야 합니다. 이 도구는 붙여넣는 즉시 공백 포함·공백 제외·바이트·단어·문장·줄 수·원고지 매수를 한 번에 보여줘요.</p><p>바이트 기준은 특히 주의가 필요해요. 한글 한 글자는 UTF-8에서 3바이트, EUC-KR에서 2바이트로 계산되는데, 채용 시스템마다 어느 방식을 쓰는지 달라요. 두 기준을 모두 보여드리니 안내문에 적힌 바이트 수와 비교해보세요.</p>
 <h2>자주 쓰는 글자수 기준</h2><p><table><thead><tr><th>용도</th><th>일반적인 기준</th></tr></thead><tbody><tr><td>대기업 자기소개서</td><td>공백 포함 500~1,000자 / 항목</td></tr><tr><td>공무원·공기업 자소서</td><td>공백 포함 또는 바이트(2,000~3,000) 기준 혼용</td></tr><tr><td>인스타그램 캡션</td><td>2,200자</td></tr><tr><td>X(트위터)</td><td>280자 (한글도 동일)</td></tr><tr><td>원고지 매수</td><td>200자 원고지 기준, 공백 포함</td></tr></tbody></table></p>
+<p>제출처별로 자주 쓰는 기준과 분량 줄이는 방법은 <a href="/guide/self-intro-char-count">자기소개서 글자수 세는 법</a> 가이드에 더 자세히 정리했어요.</p>
+<h2>영어 단어수 세기 — 무엇을 한 단어로 세나</h2><p>이 도구는 <strong>띄어쓰기를 기준으로</strong> 단어를 셉니다. 공백·탭·줄바꿈으로 나뉜 덩어리 하나가 한 단어예요. 그래서 아래처럼 세어집니다.</p>
+<p><table><thead><tr><th>입력</th><th>단어 수</th><th>왜</th></tr></thead><tbody><tr><td>don't</td><td>1</td><td>작은따옴표가 있어도 붙어 있으면 한 덩어리</td></tr><tr><td>well-known</td><td>1</td><td>하이픈으로 이어져 있어 한 덩어리</td></tr><tr><td>3개</td><td>1</td><td>숫자와 한글이 붙어 있어도 한 덩어리</td></tr><tr><td>don't well-known 3개 test</td><td>4</td><td>띄어쓰기로 네 덩어리</td></tr></tbody></table></p>
+<p>영어 과제나 영문 이력서처럼 단어 수 제한이 있는 글에 쓰면 편해요. 다만 제출처가 하이픈으로 이어진 말을 두 단어로 세는 곳이라면 숫자가 다를 수 있으니 안내문을 확인하세요. 한글은 띄어쓰기 단위라 어절 수에 가깝습니다.</p>
+
+<h2>바이트 계산 — 한글은 몇 바이트인가</h2><p>한글 한 글자의 바이트 수는 <strong>인코딩에 따라 다릅니다.</strong> 그래서 이 도구는 두 가지를 같이 보여줘요.</p>
+<p><table><thead><tr><th>인코딩</th><th>한글 1자</th><th>영문·숫자 1자</th><th>&quot;한글&quot; 2자</th></tr></thead><tbody><tr><td>UTF-8</td><td>3바이트</td><td>1바이트</td><td>6바이트</td></tr><tr><td>EUC-KR</td><td>2바이트</td><td>1바이트</td><td>4바이트</td></tr></tbody></table></p>
+<p>채용 사이트나 공공기관 양식에서 &quot;2,000바이트&quot;처럼 제한을 걸어 두는 곳이 있는데, 어느 인코딩인지는 적어 두지 않는 경우가 많아요. 오래된 시스템일수록 EUC-KR 기준인 경우가 많습니다. 두 값을 모두 보고 <strong>더 큰 쪽(UTF-8)으로 맞춰 두면</strong> 어느 기준이든 넘치지 않아요.</p>
+
+<h2>줄바꿈·특수문자·이모지는 몇 자로 세나</h2><p>헷갈리기 쉬운 것들을 실제로 넣어 보면 이렇게 나옵니다.</p>
+<p><table><thead><tr><th>입력</th><th>공백 포함</th><th>공백 제외</th><th>UTF-8 바이트</th></tr></thead><tbody><tr><td>줄바꿈 1개</td><td>1자로 셈</td><td>세지 않음</td><td>1바이트</td></tr><tr><td>😀 (웃는 얼굴)</td><td>1자</td><td>1자</td><td>4바이트</td></tr><tr><td>👨‍👩‍👧 (가족)</td><td>5자</td><td>5자</td><td>18바이트</td></tr></tbody></table></p>
+<p>줄바꿈은 기준마다 처리가 달라서 세 가지를 모두 보여줘요. <strong>공백 포함</strong>은 띄어쓰기와 줄바꿈을 모두 세고, <strong>공백 제외</strong>는 둘 다 뺍니다. <strong>줄바꿈만 제외</strong>는 띄어쓰기는 세고 줄바꿈만 뺀 값이에요. 문단을 나눠 쓴 자기소개서를 &quot;공백 포함&quot;으로 내야 하는데 양식이 줄바꿈을 세지 않는다면 이 값으로 맞추면 됩니다.</p>
+<p>가족 이모지처럼 <strong>여러 그림이 이어 붙은 이모지는 한 글자로 세지 않아요.</strong> 사람 셋과 이음 기호가 각각 세어져서 5자가 됩니다. 눈에는 하나로 보여도 시스템이 그렇게 읽기 때문인데, 제출 양식에서도 같은 일이 생길 수 있어요. 글자 수가 빠듯하다면 이모지는 빼는 편이 안전합니다.</p>
+
 <h2>사용 방법</h2><ol><li>위 입력칸에 글을 붙여넣으세요. 입력하는 대로 바로 세어져요.</li><li>목표 글자 수를 넣으면 남은 글자 수와 초과 여부가 색으로 표시돼요.</li><li>바이트 제한이면 아래 표에서 UTF-8과 EUC-KR 값을 확인하세요.</li></ol>
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
-<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>공백 포함과 공백 제외 중 뭐가 기준인가요?</summary><p>제출처 안내문을 따르는 게 원칙이고, 명시가 없으면 대부분 공백 포함이 기준이에요. 한글 문서(HWP)의 "문서 정보"도 공백 포함 글자 수를 기본으로 보여줍니다.</p></details><details><summary>줄바꿈도 글자로 세나요?</summary><p>공백 포함 기준에서는 줄바꿈도 한 글자로 세는 경우가 많아요. 이 도구의 "공백 포함"은 줄바꿈을 포함하고, "줄바꿈만 제외" 값도 따로 보여드려요.</p></details><details><summary>바이트는 어떤 기준으로 세나요?</summary><p>UTF-8(한글 3바이트, 영문·숫자 1바이트)과 EUC-KR(한글 2바이트) 두 가지를 모두 계산해요. 오래된 채용 시스템은 EUC-KR 기준이 많습니다.</p></details><details><summary>입력한 글이 저장되나요?</summary><p>아니요. 모든 계산은 브라우저 안에서만 이루어지고 어디에도 전송되지 않아요.</p></details></section>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>공백 포함과 공백 제외 중 뭐가 기준인가요?</summary><p>제출처 안내문을 따르는 게 원칙이고, 명시가 없으면 대부분 공백 포함이 기준이에요. 한글 문서(HWP)의 "문서 정보"도 공백 포함 글자 수를 기본으로 보여줍니다.</p></details><details><summary>줄바꿈도 글자로 세나요?</summary><p>기준에 따라 달라요. 이 도구는 세 가지를 같이 보여줍니다. <strong>공백 포함</strong>은 띄어쓰기와 줄바꿈을 모두 세고, <strong>공백 제외</strong>는 둘 다 빼요. <strong>줄바꿈만 제외</strong>는 띄어쓰기는 세고 줄바꿈만 뺀 값이라, &quot;공백 포함이지만 줄바꿈은 빼고 세는&quot; 양식에 맞출 때 보면 됩니다.</p></details><details><summary>바이트는 어떤 기준으로 세나요?</summary><p>UTF-8(한글 3바이트, 영문·숫자 1바이트)과 EUC-KR(한글 2바이트) 두 가지를 모두 계산해요. 오래된 채용 시스템은 EUC-KR 기준이 많습니다.</p></details><details><summary>입력한 글이 저장되나요?</summary><p>아니요. 모든 계산은 브라우저 안에서만 이루어지고 어디에도 전송되지 않아요.</p></details><details><summary>영어 단어 수는 어떤 기준으로 세나요?</summary><p>띄어쓰기를 기준으로 셉니다. 공백·탭·줄바꿈으로 나뉜 덩어리 하나가 한 단어예요. don't나 well-known처럼 붙어 있으면 한 단어로 셉니다. 제출처가 하이픈을 두 단어로 보는 곳이라면 숫자가 다를 수 있으니 안내문을 확인하세요.</p></details><details><summary>이모지는 몇 글자로 세나요?</summary><p>😀처럼 하나짜리 이모지는 1자, UTF-8로는 4바이트예요. 👨‍👩‍👧처럼 여러 그림이 이어 붙은 이모지는 눈에는 하나로 보여도 5자로 세어지고 18바이트가 됩니다. 글자 수가 빠듯하면 빼는 편이 안전해요.</p></details></section>
   <footer>입력한 글은 브라우저에서만 세어지고 어디에도 전송되지 않아요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
 </main>
 
@@ -72,7 +86,7 @@ function count(){
   const t=$('input').value;
   const chars=[...t].length;
   const noSpace=[...t.replace(/\s/g,'')].length;
-  const noSpaceNoBreak=[...t.replace(/[ \t]/g,'')].length;
+  const noSpaceNoBreak=[...t.replace(/[\r\n]/g,'')].length;
   const words=t.trim()? t.trim().split(/\s+/).length:0;
   const lines=t? t.split(/\n/).length:0;
   const sentences=(t.match(/[^.!?。！？\n]+[.!?。！？]+/g)||[]).length;

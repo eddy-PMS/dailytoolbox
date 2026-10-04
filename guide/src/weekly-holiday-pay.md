@@ -1,13 +1,12 @@
 ---
 title: 주휴수당 조건과 계산법 — 주 15시간, 개근, 알바도 받는 법
 description: 주휴수당은 1주 소정근로시간이 15시간 이상이고 그 주를 개근하면 생겨요. 5인 미만 사업장·알바도 똑같이 받아요. 계산식, 2026년 최저시급 기준 근무시간별 금액표, 퇴사 주·결근 주 처리, 미지급 시 진정 방법까지 정리했어요.
-date: 2026-10-01
-updated: 2026-10-01
+date: 2026-10-05
+updated: 2026-10-05
 category: 돈·일
 tools: parttime.html, worktime.html, wage-convert.html
 keywords: 주휴수당, 주휴수당 조건, 주휴수당 계산법, 주휴수당 미지급, 주 15시간 주휴수당, 알바 주휴수당, 5인 미만 주휴수당, 퇴사 주휴수당, 주휴수당 개근
 sources: 근로기준법 제55조 (휴일) | https://casenote.kr/법령/근로기준법/제55조 ; 근로기준법 제18조 (단시간근로자의 근로조건) | https://casenote.kr/법령/근로기준법/제18조 ; 근로기준법 제110조 (벌칙) | https://casenote.kr/법령/근로기준법/제110조 ; 근로기준법 시행령 별표 1 (상시 4명 이하 사업장 적용 규정) | https://www.law.go.kr/flDownload.do?gubun=&flSeq=150839883&bylClsCd=110201 ; 고용노동부 — 주휴수당 및 연차휴가 산정방법 관련 행정해석 변경 안내 (2021.8.4) | https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20210802167 ; 고용노동부 빠른인터넷상담 — 주휴수당 발생 요건·산정 기준 | https://www.moel.go.kr/minwon/fastcounsel/fastcounselView.do?inetDcssMngId=202302011542216101000 ; 고용노동부 고객상담센터 — 지각·조퇴·외출과 주휴수당 | https://1350.moel.go.kr/home/hp/data/faqView.do?faq_idx=1000001231 ; 고용노동부 — 2026년 적용 최저임금 시간급 10,320원 | https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=18144 ; 고용노동부 — 2027년도 적용 최저임금 시간급 10,700원 | https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=19744 ; 고용노동부 — 공공부문 비정규직 처우개선 대책 (2026.5.29) | https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=19458 ; 정부24 — 체불임금 해결 방법(진정 및 고소) | https://www.gov.kr/portal/service/serviceInfo/PTR000051573 ; 고용노동부 노동포털 — 임금체불 진정서 | https://labor.moel.go.kr/minwonApply/minwonFormat.do?searchVal=SN001
-draft: true
 ---
 주휴수당은 조건이 딱 두 가지예요. **1주 소정근로시간이 15시간 이상**이고, **그 주에 정해진 근무일을 모두 출근(개근)**했으면 하루치 임금을 더 받아요. 정규직·계약직·알바를 가리지 않고, 5인 미만 사업장에서도 똑같아요. 아래에서 조건, 계산식, 헷갈리는 경우를 순서대로 정리했어요. (법령·수치 확인일 2026-10-01)
 

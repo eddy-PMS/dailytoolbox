@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>경력 계산기 - 근무기간·재직기간 계산, 여러 회사 경력 합산</title>
+<meta name="description" content="입사일과 퇴사일로 근무기간·재직기간을 년·월·일로 계산하고, 여러 회사 경력을 더해 합산하는 무료 경력 계산기. 공백 기간을 빼고 근속년수도 바로 확인해요.">
+<meta name="keywords" content="경력 계산기, 근무기간 계산기, 재직기간 계산기, 근속년수 계산기, 근속기간 계산기, 경력 계산, 근무개월수 계산">
+<link rel="canonical" href="https://dailyfreetoolbox.com/career">
+<meta property="og:type" content="website">
+<meta property="og:title" content="경력 계산기 - 근무기간·재직기간 계산, 여러 회사 경력 합산">
+<meta property="og:description" content="입사일과 퇴사일로 근무기간·재직기간을 년·월·일로 계산하고, 여러 회사 경력을 더해 합산하는 무료 경력 계산기. 공백 기간을 빼고 근속년수도 바로 확인해요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/career">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og/og-career.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "경력 계산기 (근무기간 합산)", "url": "https://dailyfreetoolbox.com/career", "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "입사일과 퇴사일로 근무기간·재직기간을 년·월·일로 계산하고, 여러 회사 경력을 더해 합산하는 무료 경력 계산기. 공백 기간을 빼고 근속년수도 바로 확인해요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#1f7a5a; --accent-deep:#155c43; }
+.cr-row { display:grid; grid-template-columns:1.2fr 1fr 1fr auto; gap:8px; align-items:end; margin-bottom:8px; }
+.cr-row label { font-size:12.5px; display:block; }
+.cr-row input { width:100%; }
+.cr-del { padding:6px 9px; font-size:13px; }
+.cr-sum { font-size:12.5px; color:var(--ink-soft); margin-top:4px; min-height:17px; }
+.cr-big { font-size:26px; font-weight:800; letter-spacing:-.5px; }
+.cr-tot { border:1px solid var(--line); border-radius:3px; padding:14px; margin-top:12px; background:var(--paper-deep); }
+.cr-tot .line { display:flex; justify-content:space-between; gap:12px; font-size:14px; padding:4px 0; }
+.cr-tot .line b { font-variant-numeric:tabular-nums; }
+.cr-rule { font-size:12.5px; color:var(--ink-soft); margin-top:10px; line-height:1.7; }
+@media (max-width:560px){ .cr-row { grid-template-columns:1fr 1fr; } .cr-row .cr-name { grid-column:1 / -1; } .cr-del { grid-column:1 / -1; justify-self:start; } }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "근무기간에 입사일과 퇴사일을 포함하나요?", "acceptedAnswer": {"@type": "Answer", "text": "이 계산기는 입사일과 퇴사일을 모두 포함해서 셉니다(초일 산입). 2026년 1월 1일 입사해 2026년 1월 31일 퇴사했다면 31일이에요. 경력증명서도 대개 이 방식으로 적습니다. 다만 기관에 따라 입사일만 세고 퇴사일은 빼는 곳도 있어서, 제출 서류의 기간과 하루 차이가 나면 그 기관 기준을 확인하세요. 화면에서 이 기준을 끄면 하루를 빼고 계산합니다."}}, {"@type": "Question", "name": "여러 회사 경력은 어떻게 합산하나요?", "acceptedAnswer": {"@type": "Answer", "text": "회사마다 기간을 따로 구한 뒤 더합니다. 회사 사이의 공백 기간은 자동으로 빠져요. 합산할 때는 일수는 30일을 한 달로, 개월수는 12개월을 1년으로 올려 계산합니다. 이 방식은 기관마다 다를 수 있어서 총 일수도 함께 보여 줍니다."}}, {"@type": "Question", "name": "경력 인정률도 계산되나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 이 계산기는 실제 기간의 합계만 냅니다. 공무원 호봉이나 회사별 채용 기준에서 쓰는 경력 인정률(예: 유사 경력 80%만 인정)은 기관마다 기준이 완전히 달라서 반영하지 않았어요. 인정 비율은 지원하는 곳의 공고와 내규를 직접 확인하셔야 합니다."}}, {"@type": "Question", "name": "재직 중이면 어떻게 넣나요?", "acceptedAnswer": {"@type": "Answer", "text": "퇴사일을 비워 두면 오늘 날짜까지로 계산합니다. 경력증명서를 뗄 날짜가 정해져 있다면 그 날짜를 퇴사일 칸에 넣어 맞춰 보세요."}}, {"@type": "Question", "name": "근속년수는 퇴직금 계산과 같은 건가요?", "acceptedAnswer": {"@type": "Answer", "text": "기간을 세는 것은 같지만 쓰임이 달라요. 퇴직금은 계속근로기간과 평균임금으로 금액을 구하고, 휴직 기간 처리 같은 규정이 따로 있습니다. 금액까지 보려면 퇴직금 계산기를 쓰세요."}}, {"@type": "Question", "name": "휴직 기간은 어떻게 처리하나요?", "acceptedAnswer": {"@type": "Answer", "text": "이 계산기는 입력한 기간을 그대로 셉니다. 휴직을 빼야 한다면 재직 기간을 휴직 앞뒤로 나눠 두 줄로 넣으세요. 휴직을 경력에 넣을지는 기관마다 다릅니다."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#1f7a5a"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#돈·일">돈·일</a><span>›</span>경력 계산기</nav>
+  <h1><img class="h1ic" src="/icons/career.webp" width="32" height="32" alt="">경력 계산기 (근무기간 합산)</h1>
+  <p class="sub">입사일과 퇴사일을 넣으면 근무기간을 년·월·일로 계산해요. 회사를 여러 개 넣으면 합산되고, 회사 사이의 공백은 자동으로 빠집니다. 기간 합계만 계산하며 경력 인정률은 반영하지 않아요.</p>
+  <div class="ad-slot" data-ad="top"></div>
+
+  <div class="card">
+    <div id="rows"></div>
+    <div class="btn-row">
+      <button class="btn-ghost" id="add">+ 회사 추가</button>
+      <button class="btn-ghost" id="reset">처음으로</button>
+    </div>
+
+    <label style="font-size:13px;display:block;margin-top:10px">
+      <input type="checkbox" id="incl" checked style="width:auto;vertical-align:-2px"> 입사일과 퇴사일을 모두 포함해서 세기 (초일 산입)
+    </label>
+
+    <div class="cr-tot">
+      <div class="line"><span>총 경력</span><b class="cr-big" id="tot">-</b></div>
+      <div class="line"><span>총 일수</span><b id="days">-</b></div>
+      <div class="line"><span>총 개월수 (30일 기준)</span><b id="months">-</b></div>
+      <div class="line"><span>근속년수 (소수)</span><b id="years">-</b></div>
+    </div>
+    <div class="cr-rule" id="rule"></div>
+  </div>
+
+ <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">돈·일 도구 더 보기</div><div class="chips"><a href="severance"><img class="sic" src="/icons/severance.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>퇴직금 계산기</span></a><a href="annual-leave"><img class="sic" src="/icons/annual-leave.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>연차 계산기</span></a><a href="unemployment"><img class="sic" src="/icons/unemployment.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>실업급여 계산기</span></a><a href="wage-convert"><img class="sic" src="/icons/wage-convert.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>시급·월급·연봉 변환</span></a><a href="salary"><img class="sic" src="/icons/salary.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>연봉 실수령액</span></a><a href="worktime"><img class="sic" src="/icons/worktime.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>근무시간·야근 계산기</span></a><a class="more" href="/#돈·일">전체 보기 →</a></div></div>
+
+<section class="seo">
+<h2>근무기간 계산, 입사일·퇴사일을 포함하나요</h2><p>경력을 셀 때 가장 많이 어긋나는 지점이 <strong>첫날과 마지막 날을 넣느냐</strong>입니다. 하루 차이로 "2년 0개월"이 "1년 11개월 30일"이 되기도 해요.</p>
+<p>이 계산기는 <strong>입사일과 퇴사일을 모두 포함</strong>해서 셉니다. 이것을 초일 산입이라고 해요. 2026년 1월 1일에 입사해 1월 31일에 퇴사했다면 31일입니다. 경력증명서도 대개 이 방식으로 적습니다.</p>
+<p><table><thead><tr><th>입사일</th><th>퇴사일</th><th>포함해서 셀 때</th><th>빼고 셀 때</th></tr></thead><tbody><tr><td>2026-01-01</td><td>2026-01-31</td><td>1개월 0일 (31일)</td><td>0개월 30일 (30일)</td></tr><tr><td>2023-03-02</td><td>2026-03-01</td><td>3년 0개월 0일</td><td>2년 11개월 27일</td></tr><tr><td>2024-05-10</td><td>2026-05-09</td><td>2년 0개월 0일</td><td>1년 11개월 29일</td></tr></tbody></table></p>
+<p>셋째 줄을 보면 하루를 빼는 것만으로 "2년"이 "1년 11개월"이 됩니다. 경력 1년·2년처럼 <strong>딱 떨어지는 기준으로 자르는 공고</strong>에서는 이 하루가 당락을 가를 수 있어요.</p>
+<p>기관에 따라 퇴사일을 빼고 세는 곳도 있습니다. 제출한 서류의 기간과 하루가 다르면 화면의 체크를 끄고 다시 보세요. 둘 중 어느 쪽이 맞는지는 <strong>받는 기관의 기준</strong>을 따릅니다.</p>
+
+<h2>여러 회사 경력 합산하는 법</h2><p>회사를 여러 줄로 넣으면 각각의 기간을 구한 뒤 더합니다. <strong>회사 사이의 공백 기간은 자동으로 빠져요.</strong> 2020년에 퇴사하고 2022년에 다시 입사했다면 그 사이 2년은 경력에 들어가지 않습니다.</p>
+<p>합산할 때 쓰는 규칙은 이렇습니다.</p>
+<ul><li>회사마다 년·월·일을 따로 구합니다.</li><li>일수를 모두 더해 <strong>30일이 되면 1개월</strong>로 올립니다.</li><li>개월수를 모두 더해 <strong>12개월이 되면 1년</strong>으로 올립니다.</li></ul>
+<p>이 방식은 기관마다 조금씩 다를 수 있어요. 어떤 곳은 일수로만 세고, 어떤 곳은 월 단위로 끊습니다. 그래서 화면에 <strong>총 일수</strong>도 같이 보여 줍니다. 총 일수는 해석이 갈리지 않는 숫자라 서류와 맞춰 보기 좋아요.</p>
+<p>재직 중인 회사는 퇴사일을 비워 두면 오늘까지로 계산합니다. 휴직을 빼야 한다면 휴직 앞뒤로 기간을 나눠 두 줄로 넣으세요.</p>
+
+<h2>근속년수와 경력 연차 읽는 법</h2><p>채용 공고의 "경력 3년 이상"은 보통 <strong>실제 근무한 기간의 합</strong>을 뜻합니다. 공백은 빼고, 여러 회사를 다녔다면 더해서 셉니다.</p>
+<p><table><thead><tr><th>총 경력</th><th>흔히 부르는 말</th><th>공고에서</th></tr></thead><tbody><tr><td>1년 미만</td><td>신입 · 0년차</td><td>신입 또는 경력 무관</td></tr><tr><td>1년 ~ 3년 미만</td><td>주니어 · 1~2년차</td><td>경력 1년 이상</td></tr><tr><td>3년 ~ 7년 미만</td><td>중간 연차</td><td>경력 3년 이상</td></tr><tr><td>7년 이상</td><td>시니어</td><td>경력 7년 이상</td></tr></tbody></table></p>
+<p>위 구분은 통상적으로 쓰는 말이고 법으로 정해진 기준이 아니에요. 회사마다 부르는 방식이 다릅니다.</p>
+<p>한 가지 주의할 점이 있어요. <strong>경력 인정률</strong>은 이 계산기가 다루지 않습니다. 공무원 호봉이나 일부 회사에서는 다른 업종 경력을 80%만 인정하는 식으로 깎기도 해요. 기준이 기관마다 완전히 달라서 반영할 수가 없습니다. 지원하는 곳의 공고와 내규를 직접 확인하세요.</p>
+
+<h2>경력증명서 기간과 맞춰 보기</h2><p>경력증명서에 적힌 기간과 계산 결과가 다르면 대개 아래 셋 중 하나예요.</p>
+<ol><li><strong>첫날·마지막 날 처리</strong>가 다릅니다. 화면의 체크를 끄고 다시 보세요. 하루 차이는 거의 이 이유입니다.</li><li><strong>휴직이나 무급 기간</strong>이 빠져 있습니다. 증명서가 실제 재직일만 적은 경우가 있어요.</li><li><strong>수습 기간</strong>의 시작일이 다릅니다. 입사일을 수습 시작일로 볼지 정규 전환일로 볼지가 갈려요.</li></ol>
+<p>서류를 내기 전에는 증명서의 기간을 그대로 입력해 보고, 합산 결과가 공고의 요구 기간을 넘는지 확인하는 순서가 안전합니다.</p>
+<p>금액까지 알아야 한다면 기간만으로는 부족해요. <a href="/severance">퇴직금 계산기</a>는 평균임금까지 넣어 금액을 내고, <a href="/annual-leave">연차 계산기</a>는 근속에 따라 생기는 연차 일수를 계산합니다.</p>
+
+<h2>사용 방법</h2><ol><li>회사 이름(선택)과 입사일·퇴사일을 넣으세요. 재직 중이면 퇴사일을 비워 둡니다.</li><li>회사가 여럿이면 "+ 회사 추가"로 줄을 늘리세요. 공백 기간은 자동으로 빠집니다.</li><li>총 경력과 총 일수를 확인하세요. 서류와 하루 차이가 나면 초일 산입 체크를 바꿔 봅니다.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2>
+<details><summary>근무기간에 입사일과 퇴사일을 포함하나요?</summary><p>이 계산기는 입사일과 퇴사일을 모두 포함해서 셉니다(초일 산입). 2026년 1월 1일 입사해 2026년 1월 31일 퇴사했다면 31일이에요. 경력증명서도 대개 이 방식으로 적습니다. 다만 기관에 따라 입사일만 세고 퇴사일은 빼는 곳도 있어서, 제출 서류의 기간과 하루 차이가 나면 그 기관 기준을 확인하세요. 화면에서 이 기준을 끄면 하루를 빼고 계산합니다.</p></details>
+<details><summary>여러 회사 경력은 어떻게 합산하나요?</summary><p>회사마다 기간을 따로 구한 뒤 더합니다. 회사 사이의 공백 기간은 자동으로 빠져요. 합산할 때는 일수는 30일을 한 달로, 개월수는 12개월을 1년으로 올려 계산합니다. 이 방식은 기관마다 다를 수 있어서 총 일수도 함께 보여 줍니다.</p></details>
+<details><summary>경력 인정률도 계산되나요?</summary><p>아니요. 이 계산기는 실제 기간의 합계만 냅니다. 공무원 호봉이나 회사별 채용 기준에서 쓰는 경력 인정률(예: 유사 경력 80%만 인정)은 기관마다 기준이 완전히 달라서 반영하지 않았어요. 인정 비율은 지원하는 곳의 공고와 내규를 직접 확인하셔야 합니다.</p></details>
+<details><summary>재직 중이면 어떻게 넣나요?</summary><p>퇴사일을 비워 두면 오늘 날짜까지로 계산합니다. 경력증명서를 뗄 날짜가 정해져 있다면 그 날짜를 퇴사일 칸에 넣어 맞춰 보세요.</p></details>
+<details><summary>근속년수는 퇴직금 계산과 같은 건가요?</summary><p>기간을 세는 것은 같지만 쓰임이 달라요. 퇴직금은 계속근로기간과 평균임금으로 금액을 구하고, 휴직 기간 처리 같은 규정이 따로 있습니다. 금액까지 보려면 퇴직금 계산기를 쓰세요.</p></details>
+<details><summary>휴직 기간은 어떻게 처리하나요?</summary><p>이 계산기는 입력한 기간을 그대로 셉니다. 휴직을 빼야 한다면 재직 기간을 휴직 앞뒤로 나눠 두 줄로 넣으세요. 휴직을 경력에 넣을지는 기관마다 다릅니다.</p></details>
+</section>
+  <footer>기간 합계만 계산하는 도구예요. 경력 인정률과 휴직 처리는 기관마다 달라서 반영하지 않습니다.<br><span class="version-tag">v1.0 · 2026-10-04 업데이트</span></footer>
+</main>
+
+<script>
+(function(){
+'use strict';
+var $ = function(id){ return document.getElementById(id); };
+var rows = $('rows');
+
+function todayStr(){
+  var d = new Date();
+  return d.getFullYear() + '-' + ('0'+(d.getMonth()+1)).slice(-2) + '-' + ('0'+d.getDate()).slice(-2);
+}
+function parse(v){
+  if (!v) return null;
+  var a = v.split('-');
+  if (a.length !== 3) return null;
+  var d = new Date(+a[0], +a[1]-1, +a[2]);
+  if (isNaN(d.getTime()) || d.getFullYear() !== +a[0] || d.getMonth() !== +a[1]-1 || d.getDate() !== +a[2]) return null;
+  return d;
+}
+// 달을 더한다. 월말은 그 달의 마지막 날로 맞춘다(1/31 + 1개월 = 2/28 또는 2/29).
+function addMonths(dt, n){
+  var y = dt.getFullYear(), mo = dt.getMonth() + n, day = dt.getDate();
+  var last = new Date(y, mo + 1, 0).getDate();
+  return new Date(y, mo, Math.min(day, last));
+}
+
+// 시작~끝 사이의 년·월·일과 총 일수. incl 이면 끝날을 하루 뒤로 밀어 포함해 센다.
+// 커서를 년→월→일 순서로 옮겨 세기 때문에 월말 경계에서도 음수가 나오지 않는다.
+function span(s, e, incl){
+  var end = new Date(e.getFullYear(), e.getMonth(), e.getDate() + (incl ? 1 : 0));
+  if (end <= s) return null;
+  var cur = new Date(s.getFullYear(), s.getMonth(), s.getDate());
+  var y = 0, m = 0, next;
+  while ((next = addMonths(cur, 12)) <= end){ cur = next; y++; }
+  while ((next = addMonths(cur, 1)) <= end){ cur = next; m++; }
+  var d = Math.round((end - cur) / 86400000);
+  var days = Math.round((end - s) / 86400000);
+  return { y:y, m:m, d:d, days:days };
+}
+
+function addRow(name, from, to){
+  var wrap = document.createElement('div');
+  wrap.innerHTML =
+    '<div class="cr-row">' +
+      '<label class="cr-name">회사 (선택)<input type="text" class="f-name" placeholder="회사 이름" maxlength="24"></label>' +
+      '<label>입사일<input type="date" class="f-from"></label>' +
+      '<label>퇴사일 <span style="color:var(--ink-soft)">(비우면 오늘)</span><input type="date" class="f-to"></label>' +
+      '<button class="btn-ghost cr-del" type="button">삭제</button>' +
+    '</div><div class="cr-sum"></div>';
+  rows.appendChild(wrap);
+  wrap.querySelector('.f-name').value = name || '';
+  wrap.querySelector('.f-from').value = from || '';
+  wrap.querySelector('.f-to').value = to || '';
+  wrap.querySelector('.cr-del').addEventListener('click', function(){
+    if (rows.children.length <= 1){ wrap.querySelector('.f-from').value=''; wrap.querySelector('.f-to').value=''; wrap.querySelector('.f-name').value=''; }
+    else rows.removeChild(wrap);
+    calc();
+  });
+  ['.f-name','.f-from','.f-to'].forEach(function(s){
+    wrap.querySelector(s).addEventListener('input', calc);
+    wrap.querySelector(s).addEventListener('change', calc);
+  });
+  return wrap;
+}
+
+function fmt(n){ return n.toLocaleString('ko-KR'); }
+
+function calc(){
+  var incl = $('incl').checked;
+  var ty = 0, tm = 0, td = 0, totalDays = 0, any = false, bad = 0;
+  Array.prototype.forEach.call(rows.children, function(wrap){
+    var sEl = wrap.querySelector('.f-from'), eEl = wrap.querySelector('.f-to');
+    var out = wrap.querySelector('.cr-sum');
+    var s = parse(sEl.value);
+    var e = parse(eEl.value) || (s ? parse(todayStr()) : null);
+    if (!s){ out.textContent = ''; return; }
+    if (!e){ out.textContent = ''; return; }
+    var r = span(s, e, incl);
+    if (!r){ out.textContent = '퇴사일이 입사일보다 빨라요.'; bad++; return; }
+    any = true;
+    ty += r.y; tm += r.m; td += r.d; totalDays += r.days;
+    out.textContent = r.y + '년 ' + r.m + '개월 ' + r.d + '일 · ' + fmt(r.days) + '일'
+      + (eEl.value ? '' : ' (오늘까지)');
+  });
+
+  if (!any){
+    $('tot').textContent = '-'; $('days').textContent = '-';
+    $('months').textContent = '-'; $('years').textContent = '-';
+    $('rule').textContent = bad ? '날짜를 다시 확인해 주세요.' : '입사일을 넣으면 계산돼요.';
+    return;
+  }
+  tm += Math.floor(td / 30); td = td % 30;
+  ty += Math.floor(tm / 12); tm = tm % 12;
+  $('tot').textContent = ty + '년 ' + tm + '개월 ' + td + '일';
+  $('days').textContent = fmt(totalDays) + '일';
+  $('months').textContent = Math.floor(totalDays / 30) + '개월';
+  $('years').textContent = (totalDays / 365).toFixed(2) + '년';
+  $('rule').textContent = incl
+    ? '입사일과 퇴사일을 모두 포함해서 셌어요(초일 산입). 합산은 30일을 1개월, 12개월을 1년으로 올립니다. 기관 기준이 다르면 총 일수로 맞춰 보세요.'
+    : '퇴사일을 빼고 셌어요. 합산은 30일을 1개월, 12개월을 1년으로 올립니다. 기관 기준이 다르면 총 일수로 맞춰 보세요.';
+}
+
+$('add').addEventListener('click', function(){ addRow(); calc(); });
+$('incl').addEventListener('change', calc);
+$('reset').addEventListener('click', function(){
+  rows.innerHTML = '';
+  addRow('', '2021-03-02', '2023-06-30');
+  addRow('', '2023-09-01', '');
+  $('incl').checked = true;
+  calc();
+});
+
+addRow('', '2021-03-02', '2023-06-30');
+addRow('', '2023-09-01', '');
+calc();
+})();
+</script>
+
+</body>
+</html>

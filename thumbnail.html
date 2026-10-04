@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>썸네일 만들기 - 유튜브·블로그 썸네일 제목 글자, 외곽선·그림자 무료</title>
+<meta name="description" content="유튜브·블로그 썸네일을 규격에 맞춰 만드는 무료 도구. 배경을 고르고 제목 글자에 외곽선·그림자를 넣어 PNG로 저장해요. 글자만 투명 PNG로 뽑을 수도 있고, 업로드 없이 내 기기에서 처리해요.">
+<meta name="keywords" content="썸네일 만들기, 유튜브 썸네일 만들기, 블로그 썸네일 만들기, 유튜브 썸네일, 블로그 썸네일, 썸네일 제작, 썸네일 글자, 유튜브 썸네일 크기, 유튜브 썸네일 사이즈">
+<link rel="canonical" href="https://dailyfreetoolbox.com/thumbnail">
+<meta property="og:type" content="website">
+<meta property="og:title" content="썸네일 만들기 - 유튜브·블로그 썸네일 제목 글자, 외곽선·그림자 무료">
+<meta property="og:description" content="유튜브·블로그 썸네일을 규격에 맞춰 만드는 무료 도구. 배경을 고르고 제목 글자에 외곽선·그림자를 넣어 PNG로 저장해요. 글자만 투명 PNG로 뽑을 수도 있고, 업로드 없이 내 기기에서 처리해요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/thumbnail">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og/og-thumbnail.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "썸네일 만들기 (제목 글자)", "url": "https://dailyfreetoolbox.com/thumbnail", "applicationCategory": "DesignApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "유튜브·블로그 썸네일을 규격에 맞춰 만드는 무료 도구. 배경을 고르고 제목 글자에 외곽선·그림자를 넣어 PNG로 저장해요. 글자만 투명 PNG로 뽑을 수도 있고, 업로드 없이 내 기기에서 처리해요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#c0392b; --accent-deep:#96291c; }
+.tb-stage { margin-top:12px; border:1px solid var(--line); border-radius:3px; overflow:hidden;
+  background-color:#fff;
+  background-image:linear-gradient(45deg,#e6e9ef 25%,transparent 25%),linear-gradient(-45deg,#e6e9ef 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#e6e9ef 75%),linear-gradient(-45deg,transparent 75%,#e6e9ef 75%);
+  background-size:16px 16px; background-position:0 0,0 8px,8px -8px,-8px 0; }
+.tb-stage canvas { display:block; max-width:100%; height:auto; }
+.tb-hint { font-size:12.5px; color:var(--ink-soft); margin-top:8px; }
+.tb-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:10px 14px; margin-top:12px; }
+.tb-grid label { display:block; font-size:13px; }
+.tb-grid input[type=range] { width:100%; }
+.tb-num { color:var(--ink-soft); font-variant-numeric:tabular-nums; }
+.tb-sub { border-top:1px dashed var(--line); margin-top:14px; padding-top:12px; }
+.tb-sub .lb2 { font-size:13px; font-weight:700; margin-bottom:6px; }
+@media (max-width:480px){ .tb-grid { grid-template-columns:1fr 1fr; } }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "유튜브 썸네일 크기는 얼마인가요?", "acceptedAnswer": {"@type": "Answer", "text": "유튜브 공식 안내 기준으로 가로세로비는 16:9, 최소 너비는 640픽셀이고 권장 해상도는 3840×2160입니다. 파일 형식은 JPG·PNG를 받고 용량은 휴대폰에서 2MB, 데스크톱에서 50MB까지입니다. 흔히 쓰는 1280×720도 16:9라 그대로 쓸 수 있어요. 쇼츠는 9:16이고 최소 높이가 640픽셀입니다(확인일 2026-10-04)."}}, {"@type": "Question", "name": "사진이 서버에 올라가나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 배경으로 고른 사진과 입력한 문구는 브라우저 안에서만 처리되고 어디에도 전송되지 않아요. 다만 글꼴 파일은 구글 폰트에서 받아오기 때문에 그 요청은 바깥으로 나갑니다. 글꼴을 받은 뒤에는 인터넷을 끊어도 동작해요."}}, {"@type": "Question", "name": "글자만 따로 저장할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 배경을 투명으로 두고 저장하면 글자만 담긴 투명 PNG가 나와요. 영상 편집 프로그램이나 다른 이미지 위에 그대로 얹어 쓸 수 있습니다. 이때는 글자 주변의 빈 공간을 잘라낸 크기로 저장됩니다."}}, {"@type": "Question", "name": "글자가 배경에 묻혀서 안 보여요.", "acceptedAnswer": {"@type": "Answer", "text": "외곽선을 먼저 올려 보세요. 흰 글자에 검은 외곽선을 6~12 정도 주면 어떤 배경에서도 읽힙니다. 그래도 어수선하면 그림자 흐림을 20 안팎으로 주거나, 배경 어둡게를 30~50%로 올려 사진을 눌러 주세요."}}, {"@type": "Question", "name": "만든 썸네일을 상업적으로 써도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "이 도구가 제공하는 글꼴은 모두 오픈 폰트 라이선스(OFL) 계열로, 글꼴로 만든 이미지를 상업적으로 쓰고 배포하는 것이 허용됩니다. 배경으로 올린 사진의 권리는 직접 확인하세요. 글꼴 라이선스는 바뀔 수 있으니 중요한 작업 전에는 원문을 확인하는 편이 안전합니다."}}, {"@type": "Question", "name": "글꼴이 적용되지 않고 기본 글씨로 보여요.", "acceptedAnswer": {"@type": "Answer", "text": "글꼴을 내려받는 동안 잠깐 기본 글씨로 보일 수 있어요. 한글 글꼴은 용량이 커서 처음 고를 때 몇 초 걸립니다. 회사나 학교 네트워크에서 구글 폰트 주소가 막혀 있으면 계속 기본 글씨로 보일 수 있어요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#c0392b"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#계산·생활">계산·생활</a><span>›</span>썸네일 만들기</nav>
+  <h1><img class="h1ic" src="/icons/thumbnail.webp" width="32" height="32" alt="">썸네일 만들기 (제목 글자)</h1>
+  <p class="sub">규격을 고르고 제목 글자에 외곽선·그림자를 넣어 PNG로 저장해요. 배경을 투명으로 두면 글자만 뽑을 수도 있어요. 사진과 문구는 업로드되지 않고 내 기기 안에서 처리됩니다.</p>
+  <div class="ad-slot" data-ad="top"></div>
+
+  <div class="card">
+    <label style="font-size:13px">문구 (줄바꿈하면 여러 줄로 나와요)
+      <textarea id="txt" rows="2" style="width:100%;margin-top:4px" maxlength="120">하루 10분으로
+끝내는 정리법</textarea>
+    </label>
+
+    <div class="tb-grid">
+      <label>규격
+        <select id="preset" style="width:100%;padding:5px 8px;font-size:13px">
+          <option value="1280x720">유튜브 1280×720</option>
+          <option value="1920x1080">유튜브 1920×1080</option>
+          <option value="3840x2160">유튜브 3840×2160 (권장)</option>
+          <option value="1080x1920">쇼츠·릴스 1080×1920</option>
+          <option value="1080x1080">정사각 1080×1080</option>
+          <option value="800x450">블로그 가로 800×450</option>
+          <option value="custom">직접 입력</option>
+        </select>
+      </label>
+      <label id="cwWrap" class="hidden">가로 <input type="number" id="cw" value="1280" min="100" max="4096" style="width:100%"></label>
+      <label id="chWrap" class="hidden">세로 <input type="number" id="ch" value="720" min="100" max="4096" style="width:100%"></label>
+      <label>배경
+        <select id="bgmode" style="width:100%;padding:5px 8px;font-size:13px">
+          <option value="color">단색</option>
+          <option value="image">내 사진</option>
+          <option value="none">투명 (글자만)</option>
+        </select>
+      </label>
+      <label id="bgcWrap">배경색 <input type="color" id="bgc" value="#1d2433" style="width:100%;height:30px;padding:0"></label>
+      <label id="bgfWrap" class="hidden">사진 <input type="file" id="bgf" accept="image/*" style="font-size:12px;width:100%"></label>
+      <label id="dimWrap" class="hidden">배경 어둡게 <span class="tb-num" id="dimv">35</span>%
+        <input type="range" id="dim" min="0" max="80" step="5" value="35"></label>
+    </div>
+
+    <div class="tb-sub">
+      <div class="lb2">제목 글자</div>
+      <div class="tb-grid">
+        <label>글꼴 <select id="fam" style="width:100%;padding:5px 8px;font-size:13px"></select></label>
+        <label>굵기 <select id="wt" style="width:100%;padding:5px 8px;font-size:13px"></select></label>
+        <label>글자색 <input type="color" id="fg" value="#ffffff" style="width:100%;height:30px;padding:0"></label>
+        <label>크기 <span class="tb-num" id="fsv">11</span>%
+          <input type="range" id="fs" min="4" max="24" step="1" value="11"></label>
+        <label>자간 <span class="tb-num" id="lsv">0</span>
+          <input type="range" id="ls" min="-10" max="20" step="1" value="0"></label>
+        <label>행간 <span class="tb-num" id="lhv">1.25</span>
+          <input type="range" id="lh" min="90" max="220" step="5" value="125"></label>
+        <label>가로 위치 <select id="ax" style="width:100%;padding:5px 8px;font-size:13px"><option value="center">가운데</option><option value="left">왼쪽</option><option value="right">오른쪽</option></select></label>
+        <label>세로 위치 <select id="ay" style="width:100%;padding:5px 8px;font-size:13px"><option value="middle">가운데</option><option value="top">위</option><option value="bottom">아래</option></select></label>
+      </div>
+    </div>
+
+    <div class="tb-sub">
+      <div class="lb2">잘 보이게</div>
+      <div class="tb-grid">
+        <label>외곽선 두께 <span class="tb-num" id="stv">8</span>
+          <input type="range" id="st" min="0" max="24" step="1" value="8"></label>
+        <label>외곽선 색 <input type="color" id="stc" value="#000000" style="width:100%;height:30px;padding:0"></label>
+        <label>그림자 흐림 <span class="tb-num" id="shv">0</span>
+          <input type="range" id="sh" min="0" max="40" step="2" value="0"></label>
+        <label>그림자 색 <input type="color" id="shc" value="#000000" style="width:100%;height:30px;padding:0"></label>
+      </div>
+    </div>
+
+    <div class="btn-row"><button class="btn" id="save">PNG로 저장</button><button class="btn-ghost" id="reset">처음으로</button></div>
+    <div class="status" id="status">글꼴을 받아오는 중이에요…</div>
+    <div class="tb-stage" id="stage"><canvas id="cv"></canvas></div>
+    <div class="tb-hint">바둑판 무늬가 보이는 곳이 투명해지는 부분이에요. 글꼴은 구글 폰트에서 받아오고, 문구와 사진은 전송되지 않아요.</div>
+  </div>
+
+ <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="bg-remove"><img class="sic" src="/icons/bg-remove.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>배경 제거</span></a><a href="image-compress"><img class="sic" src="/icons/image-compress.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>이미지 용량 줄이기</span></a><a href="image-to-pdf"><img class="sic" src="/icons/image-to-pdf.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>이미지 PDF 변환</span></a><a href="qrcode"><img class="sic" src="/icons/qrcode.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>QR코드 만들기</span></a><a href="charcount"><img class="sic" src="/icons/charcount.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>글자수 세기</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
+
+<section class="seo">
+<h2>유튜브 썸네일 크기(1280×720)와 블로그 썸네일 크기</h2><p>썸네일은 규격을 먼저 맞추고 시작하는 편이 빠릅니다. 나중에 늘리거나 자르면 글자가 흐려지거나 잘려요. 유튜브 공식 안내 기준으로 동영상 썸네일은 <strong>가로세로비 16:9</strong>, 최소 너비 640픽셀이고 권장 해상도는 3840×2160입니다. 쇼츠는 9:16이고 최소 높이가 640픽셀이에요. 파일은 JPG·PNG를 받고 용량은 휴대폰에서 2MB, 데스크톱에서 50MB까지입니다(확인일 2026-10-04).</p>
+<p><table><thead><tr><th>쓰는 곳</th><th>크기</th><th>비율</th></tr></thead><tbody><tr><td>유튜브 (가장 흔함)</td><td>1280×720</td><td>16:9</td></tr><tr><td>유튜브 (권장 최대)</td><td>3840×2160</td><td>16:9</td></tr><tr><td>쇼츠·릴스</td><td>1080×1920</td><td>9:16</td></tr><tr><td>정사각 (인스타·팟캐스트)</td><td>1080×1080</td><td>1:1</td></tr><tr><td>블로그 본문 가로</td><td>800×450</td><td>16:9</td></tr></tbody></table></p>
+<p>블로그 썸네일은 플랫폼마다 잘리는 모양이 달라요. 목록에서 정사각으로 잘리는 곳도 있고 가로로 길게 보이는 곳도 있습니다. 어느 쪽이든 <strong>글자를 가운데로 모아 두면</strong> 잘려도 제목이 남아요. 네 귀퉁이에 중요한 글자를 두지 마세요.</p>
+
+<h2>썸네일 제목 글자 잘 보이게 하는 법 (외곽선·그림자)</h2><p>썸네일은 목록에서 아주 작게 보입니다. 휴대폰에서는 가로 150픽셀 남짓으로 줄어들기도 해요. 그래서 예쁜 것보다 <strong>작아져도 읽히는 것</strong>이 먼저예요.</p>
+<p><table><thead><tr><th>문제</th><th>설정</th><th>값</th></tr></thead><tbody><tr><td>배경 사진에 글자가 묻힌다</td><td>외곽선 두께</td><td>6~12</td></tr><tr><td>외곽선만으로 부족하다</td><td>그림자 흐림</td><td>16~24</td></tr><tr><td>사진이 너무 밝고 어수선하다</td><td>배경 어둡게</td><td>30~50%</td></tr><tr><td>글자가 답답해 보인다</td><td>자간</td><td>-2~2</td></tr><tr><td>두 줄이 붙어 보인다</td><td>행간</td><td>1.2~1.4</td></tr></tbody></table></p>
+<p>가장 확실한 조합은 <strong>흰 글자 + 검은 외곽선</strong>이에요. 배경이 밝든 어둡든 읽힙니다. 색 글자를 쓰고 싶다면 글자색만 바꾸고 외곽선은 검은색으로 두세요. 글자색과 외곽선색을 둘 다 화려하게 쓰면 작아졌을 때 뭉개져요.</p>
+<p>글자 수도 줄이는 게 좋아요. 썸네일 제목은 <strong>한 줄에 7~10자, 두 줄까지</strong>가 읽기 편합니다. 설명은 영상 제목에 쓰고 썸네일에는 핵심만 남기세요.</p>
+
+<h2>글자만 투명 PNG로 저장하기</h2><p>배경을 <strong>투명 (글자만)</strong>으로 바꾸고 저장하면 배경 없이 글자만 담긴 PNG가 나옵니다. 글자 주변의 빈 공간은 잘라내고 저장돼요.</p>
+<p>이렇게 뽑은 글자는 영상 편집 프로그램의 자막 위에 얹거나, 다른 이미지 위에 올려 쓰기 좋아요. 편집 프로그램 안에서 한글 글꼴을 고르기 번거로울 때 특히 편합니다. 투명을 유지하려면 반드시 PNG로 두세요. JPG는 투명을 담을 수 없어 흰색으로 채워집니다.</p>
+<p>이미 만들어 둔 사진에서 배경만 지우고 싶다면 <a href="/bg-remove">배경 제거</a>를 쓰세요. 반대로 저장한 PNG가 너무 무거우면 <a href="/image-compress">이미지 용량 줄이기</a>로 줄일 수 있어요.</p>
+
+<h2>쓸 수 있는 폰트와 라이선스</h2><p>이 도구의 글꼴은 모두 구글 폰트에서 받아오는 <strong>오픈 폰트 라이선스(OFL)</strong> 계열입니다. OFL은 글꼴로 만든 이미지를 상업적으로 쓰고 배포하는 것을 허용해요. 만든 썸네일을 수익이 나는 영상이나 블로그에 써도 됩니다.</p>
+<p><table><thead><tr><th>분류</th><th>글꼴</th><th>어울리는 곳</th></tr></thead><tbody><tr><td>고딕</td><td>본고딕, 고딕 A1, 나눔고딕, 고운돋움, IBM Plex Sans KR</td><td>정보·리뷰처럼 또박또박 읽혀야 할 때</td></tr><tr><td>명조</td><td>본명조, 나눔명조, 송명, 고운바탕</td><td>차분한 분위기, 글·책 관련</td></tr><tr><td>굵은 제목</td><td>검은고딕, 주아, 도현, 가석, 베이글팻</td><td>작게 보여도 눈에 띄어야 할 때</td></tr><tr><td>손글씨</td><td>개구, 나눔손글씨 펜·붓, 동글, 하이멜로디</td><td>가볍고 친근한 분위기</td></tr></tbody></table></p>
+<p>다만 두 가지는 직접 확인하셔야 해요. 첫째, <strong>배경으로 올린 사진의 권리</strong>는 이 도구가 보장하지 않습니다. 둘째, 글꼴 라이선스는 바뀔 수 있으니 중요한 작업 전에는 <a href="https://fonts.google.com/" rel="nofollow noopener" target="_blank">구글 폰트</a>에서 해당 글꼴의 조건을 확인하는 편이 안전합니다.</p>
+
+<h2>사용 방법</h2><ol><li>문구를 입력하고 규격을 고르세요. 줄을 바꾸면 여러 줄로 나옵니다.</li><li>배경을 단색·내 사진·투명 중에서 고릅니다. 사진을 쓰면 배경 어둡게로 글자가 묻히지 않게 눌러 주세요.</li><li>글꼴과 크기를 정하고, 외곽선 두께를 올려 작게 보일 때도 읽히는지 확인하세요.</li><li>"PNG로 저장"을 누르면 고른 규격 그대로 내려받습니다.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2>
+<details><summary>유튜브 썸네일 크기는 얼마인가요?</summary><p>유튜브 공식 안내 기준으로 가로세로비는 16:9, 최소 너비는 640픽셀이고 권장 해상도는 3840×2160입니다. 파일 형식은 JPG·PNG를 받고 용량은 휴대폰에서 2MB, 데스크톱에서 50MB까지입니다. 흔히 쓰는 1280×720도 16:9라 그대로 쓸 수 있어요. 쇼츠는 9:16이고 최소 높이가 640픽셀입니다(확인일 2026-10-04).</p></details>
+<details><summary>사진이 서버에 올라가나요?</summary><p>아니요. 배경으로 고른 사진과 입력한 문구는 브라우저 안에서만 처리되고 어디에도 전송되지 않아요. 다만 글꼴 파일은 구글 폰트에서 받아오기 때문에 그 요청은 바깥으로 나갑니다. 글꼴을 받은 뒤에는 인터넷을 끊어도 동작해요.</p></details>
+<details><summary>글자만 따로 저장할 수 있나요?</summary><p>네. 배경을 투명으로 두고 저장하면 글자만 담긴 투명 PNG가 나와요. 영상 편집 프로그램이나 다른 이미지 위에 그대로 얹어 쓸 수 있습니다. 이때는 글자 주변의 빈 공간을 잘라낸 크기로 저장됩니다.</p></details>
+<details><summary>글자가 배경에 묻혀서 안 보여요.</summary><p>외곽선을 먼저 올려 보세요. 흰 글자에 검은 외곽선을 6~12 정도 주면 어떤 배경에서도 읽힙니다. 그래도 어수선하면 그림자 흐림을 20 안팎으로 주거나, 배경 어둡게를 30~50%로 올려 사진을 눌러 주세요.</p></details>
+<details><summary>만든 썸네일을 상업적으로 써도 되나요?</summary><p>이 도구가 제공하는 글꼴은 모두 오픈 폰트 라이선스(OFL) 계열로, 글꼴로 만든 이미지를 상업적으로 쓰고 배포하는 것이 허용됩니다. 배경으로 올린 사진의 권리는 직접 확인하세요. 글꼴 라이선스는 바뀔 수 있으니 중요한 작업 전에는 원문을 확인하는 편이 안전합니다.</p></details>
+<details><summary>글꼴이 적용되지 않고 기본 글씨로 보여요.</summary><p>글꼴을 내려받는 동안 잠깐 기본 글씨로 보일 수 있어요. 한글 글꼴은 용량이 커서 처음 고를 때 몇 초 걸립니다. 회사나 학교 네트워크에서 구글 폰트 주소가 막혀 있으면 계속 기본 글씨로 보일 수 있어요.</p></details>
+</section>
+  <footer>썸네일에 쓸 제목 글자를 만드는 도구예요. 글꼴은 구글 폰트(OFL 계열)에서 받아오며, 배경 사진의 권리는 직접 확인하세요.<br><span class="version-tag">v1.0 · 2026-10-04 업데이트</span></footer>
+</main>
+
+<script>
+(function(){
+'use strict';
+var $ = function(id){ return document.getElementById(id); };
+
+var FONTS = [
+  ['고딕', [
+    ['Noto Sans KR','본고딕',[400,700,900]],
+    ['Gothic A1','고딕 A1',[400,700,900]],
+    ['Nanum Gothic','나눔고딕',[400,700,800]],
+    ['Gowun Dodum','고운돋움',[400]],
+    ['IBM Plex Sans KR','IBM Plex Sans KR',[400,600,700]]
+  ]],
+  ['명조', [
+    ['Noto Serif KR','본명조',[400,700,900]],
+    ['Nanum Myeongjo','나눔명조',[400,700,800]],
+    ['Song Myung','송명',[400]],
+    ['Gowun Batang','고운바탕',[400,700]]
+  ]],
+  ['굵은 제목', [
+    ['Black Han Sans','검은고딕',[400]],
+    ['Jua','주아',[400]],
+    ['Do Hyeon','도현',[400]],
+    ['Gasoek One','가석',[400]],
+    ['Bagel Fat One','베이글팻',[400]]
+  ]],
+  ['손글씨', [
+    ['Gaegu','개구',[300,400,700]],
+    ['Nanum Pen Script','나눔손글씨 펜',[400]],
+    ['Nanum Brush Script','나눔손글씨 붓',[400]],
+    ['Dongle','동글',[300,400,700]],
+    ['Hi Melody','하이멜로디',[400]]
+  ]]
+];
+var WEIGHT_NAME = {100:'가늘게 100',200:'가늘게 200',300:'가늘게 300',400:'보통 400',500:'중간 500',600:'중간 600',700:'굵게 700',800:'굵게 800',900:'아주 굵게 900'};
+
+var famSel = $('fam'), wtSel = $('wt');
+var byFamily = {};
+FONTS.forEach(function(grp){
+  var og = document.createElement('optgroup'); og.label = grp[0];
+  grp[1].forEach(function(f){
+    byFamily[f[0]] = f;
+    var o = document.createElement('option'); o.value = f[0]; o.textContent = f[1];
+    og.appendChild(o);
+  });
+  famSel.appendChild(og);
+});
+famSel.value = 'Black Han Sans';
+
+function fillWeights(){
+  var f = byFamily[famSel.value], ws = f[2], cur = wtSel.value;
+  wtSel.innerHTML = '';
+  ws.forEach(function(w){
+    var o = document.createElement('option'); o.value = w; o.textContent = WEIGHT_NAME[w] || w;
+    wtSel.appendChild(o);
+  });
+  wtSel.value = ws.indexOf(Number(cur)) >= 0 ? cur : (ws.indexOf(700) >= 0 ? 700 : ws[ws.length - 1]);
+  wtSel.disabled = ws.length < 2;
+}
+
+var fontLinks = {};
+function loadFont(fam){
+  if (fontLinks[fam]) return fontLinks[fam];
+  var f = byFamily[fam];
+  var href = 'https://fonts.googleapis.com/css2?family=' + fam.replace(/ /g,'+') +
+             ':wght@' + f[2].join(';') + '&display=swap';
+  var link = document.createElement('link');
+  link.rel = 'stylesheet'; link.href = href;
+  document.head.appendChild(link);
+  fontLinks[fam] = new Promise(function(res){
+    var done = false, fin = function(){ if(!done){ done = true; res(); } };
+    link.onload = fin; link.onerror = fin; setTimeout(fin, 6000);
+  });
+  return fontLinks[fam];
+}
+
+var bgImg = null;
+
+function canvasSize(){
+  var p = $('preset').value;
+  if (p === 'custom'){
+    return [Math.max(100, Math.min(4096, +$('cw').value || 1280)),
+            Math.max(100, Math.min(4096, +$('ch').value || 720))];
+  }
+  var a = p.split('x');
+  return [+a[0], +a[1]];
+}
+
+function lines(){
+  return $('txt').value.replace(/\r/g,'').split('\n').slice(0, 6);
+}
+
+// 자간을 직접 적용해 글자를 그린다 (ctx.letterSpacing 미지원 브라우저 대비)
+function drawLine(ctx, text, x, y, ls, how){
+  if (!ls){ ctx[how](text, x, y); return; }
+  var chars = Array.from(text);
+  var total = 0, i;
+  for (i = 0; i < chars.length; i++) total += ctx.measureText(chars[i]).width + ls;
+  total -= ls;
+  var sx = ctx.textAlign === 'center' ? x - total/2 : (ctx.textAlign === 'right' ? x - total : x);
+  var old = ctx.textAlign;
+  ctx.textAlign = 'left';
+  for (i = 0; i < chars.length; i++){
+    ctx[how](chars[i], sx, y);
+    sx += ctx.measureText(chars[i]).width + ls;
+  }
+  ctx.textAlign = old;
+}
+
+function lineWidth(ctx, text, ls){
+  if (!ls) return ctx.measureText(text).width;
+  var chars = Array.from(text), total = 0;
+  for (var i = 0; i < chars.length; i++) total += ctx.measureText(chars[i]).width + ls;
+  return total - ls;
+}
+
+function render(forSave){
+  var cv = $('cv'), ctx = cv.getContext('2d');
+  var size = canvasSize(), W = size[0], H = size[1];
+  var mode = $('bgmode').value;
+  var ls = +$('ls').value, lh = +$('lh').value / 100;
+  var fsPct = +$('fs').value / 100;
+  var fpx = Math.round(Math.min(W, H) * fsPct * (H > W ? 1.4 : 1));
+  var fam = famSel.value, wt = wtSel.value;
+  var ln = lines();
+  var font = wt + ' ' + fpx + 'px "' + fam + '", sans-serif';
+  var pad = Math.round(Math.min(W, H) * 0.06);
+
+  // 글자만 저장: 글자 크기에 맞춘 캔버스
+  if (forSave && mode === 'none'){
+    var m = document.createElement('canvas').getContext('2d');
+    m.font = font;
+    var wMax = 0;
+    ln.forEach(function(t){ wMax = Math.max(wMax, lineWidth(m, t, ls)); });
+    var st0 = +$('st').value, sh0 = +$('sh').value;
+    var grow = Math.round(fpx * (st0/100) + sh0 * 1.5 + fpx * 0.08) + 8;
+    W = Math.max(8, Math.ceil(wMax) + grow * 2);
+    H = Math.max(8, Math.ceil(fpx * lh * ln.length) + grow * 2);
+    pad = grow;
+  }
+
+  cv.width = W; cv.height = H;
+  ctx.clearRect(0, 0, W, H);
+
+  if (mode === 'color'){
+    ctx.fillStyle = $('bgc').value; ctx.fillRect(0, 0, W, H);
+  } else if (mode === 'image' && bgImg){
+    var s = Math.max(W / bgImg.width, H / bgImg.height);
+    var dw = bgImg.width * s, dh = bgImg.height * s;
+    ctx.drawImage(bgImg, (W - dw)/2, (H - dh)/2, dw, dh);
+    var dim = +$('dim').value;
+    if (dim){ ctx.fillStyle = 'rgba(0,0,0,' + (dim/100) + ')'; ctx.fillRect(0, 0, W, H); }
+  }
+
+  ctx.font = font;
+  ctx.textBaseline = 'middle';
+  var ax = $('ax').value, ay = $('ay').value;
+  ctx.textAlign = ax === 'left' ? 'left' : (ax === 'right' ? 'right' : 'center');
+  var x = ax === 'left' ? pad : (ax === 'right' ? W - pad : W / 2);
+
+  var step = fpx * lh, blockH = step * ln.length;
+  var top;
+  if (forSave && mode === 'none') top = pad;
+  else if (ay === 'top') top = pad;
+  else if (ay === 'bottom') top = H - pad - blockH;
+  else top = (H - blockH) / 2;
+
+  var stroke = +$('st').value, blur = +$('sh').value;
+  for (var i = 0; i < ln.length; i++){
+    var y = top + step * i + step / 2;
+    if (blur){
+      ctx.save();
+      ctx.shadowColor = $('shc').value; ctx.shadowBlur = blur * (fpx / 100);
+      ctx.fillStyle = $('fg').value;
+      drawLine(ctx, ln[i], x, y, ls, 'fillText');
+      ctx.restore();
+    }
+    if (stroke){
+      ctx.lineWidth = fpx * (stroke / 100);
+      ctx.strokeStyle = $('stc').value;
+      ctx.lineJoin = 'round'; ctx.miterLimit = 2;
+      drawLine(ctx, ln[i], x, y, ls, 'strokeText');
+    }
+    ctx.fillStyle = $('fg').value;
+    drawLine(ctx, ln[i], x, y, ls, 'fillText');
+  }
+  return cv;
+}
+
+var busy = false;
+function update(){
+  if (busy) return;
+  busy = true;
+  var fam = famSel.value;
+  loadFont(fam).then(function(){
+    var probe = wtSel.value + ' 64px "' + fam + '"';
+    var p = (document.fonts && document.fonts.load) ? document.fonts.load(probe, $('txt').value || '가') : Promise.resolve();
+    return p['catch'](function(){});
+  }).then(function(){
+    render(false);
+    var s = canvasSize();
+    var msg = s[0] + ' × ' + s[1] + 'px · ' + (byFamily[fam][1]) + ' · 줄 ' + lines().length + '개';
+    if ($('bgmode').value === 'none') msg += ' · 저장하면 글자 크기에 맞춰 잘려요';
+    $('status').textContent = msg;
+    busy = false;
+  })['catch'](function(){
+    render(false);
+    $('status').textContent = '글꼴을 불러오지 못해 기본 글씨로 그렸어요.';
+    busy = false;
+  });
+}
+
+function syncUI(){
+  var p = $('preset').value === 'custom';
+  $('cwWrap').classList.toggle('hidden', !p);
+  $('chWrap').classList.toggle('hidden', !p);
+  var m = $('bgmode').value;
+  $('bgcWrap').classList.toggle('hidden', m !== 'color');
+  $('bgfWrap').classList.toggle('hidden', m !== 'image');
+  $('dimWrap').classList.toggle('hidden', m !== 'image');
+  $('fsv').textContent = $('fs').value;
+  $('lsv').textContent = $('ls').value;
+  $('lhv').textContent = (+$('lh').value / 100).toFixed(2);
+  $('stv').textContent = $('st').value;
+  $('shv').textContent = $('sh').value;
+  $('dimv').textContent = $('dim').value;
+}
+
+['txt','preset','cw','ch','bgmode','bgc','dim','fg','fs','ls','lh','ax','ay','st','stc','sh','shc','wt']
+  .forEach(function(id){
+    var el = $(id);
+    el.addEventListener('input', function(){ syncUI(); update(); });
+    el.addEventListener('change', function(){ syncUI(); update(); });
+  });
+famSel.addEventListener('change', function(){ fillWeights(); syncUI(); update(); });
+
+$('bgf').addEventListener('change', function(e){
+  var f = e.target.files && e.target.files[0];
+  if (!f) return;
+  var img = new Image();
+  img.onload = function(){ bgImg = img; update(); };
+  img.onerror = function(){ $('status').textContent = '이미지를 읽지 못했어요.'; };
+  img.src = URL.createObjectURL(f);
+});
+
+$('save').addEventListener('click', function(){
+  var fam = famSel.value;
+  loadFont(fam).then(function(){
+    var cv = render(true);
+    cv.toBlob(function(b){
+      if (!b) return;
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(b);
+      a.download = 'thumbnail-' + cv.width + 'x' + cv.height + '.png';
+      a.click();
+      setTimeout(function(){ URL.revokeObjectURL(a.href); }, 2000);
+      render(false);
+    }, 'image/png');
+  });
+});
+
+$('reset').addEventListener('click', function(){
+  $('txt').value = '하루 10분으로\n끝내는 정리법';
+  $('preset').value = '1280x720'; $('bgmode').value = 'color'; $('bgc').value = '#1d2433';
+  $('fg').value = '#ffffff'; $('fs').value = 11; $('ls').value = 0; $('lh').value = 125;
+  $('ax').value = 'center'; $('ay').value = 'middle';
+  $('st').value = 8; $('stc').value = '#000000'; $('sh').value = 0; $('shc').value = '#000000';
+  $('dim').value = 35; famSel.value = 'Black Han Sans'; bgImg = null; $('bgf').value = '';
+  fillWeights(); syncUI(); update();
+});
+
+fillWeights();
+syncUI();
+update();
+})();
+</script>
+
+</body>
+</html>

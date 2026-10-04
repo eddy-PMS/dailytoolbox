@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>사인 만들기 - 서명 이미지 만들기, 전자서명용 사인 투명 PNG 무료</title>
+<meta name="description" content="이름을 넣어 손글씨 폰트로 사인을 만들거나 직접 그려서 투명 PNG 서명 이미지로 저장하는 무료 도구. 전자 문서에 붙이는 이미지이고 인증서 기반 전자서명은 아니에요. 업로드 없이 처리해요.">
+<meta name="keywords" content="사인 만들기, 싸인 만들기, 서명 만들기, 전자서명 만들기, 서명 이미지 만들기, 사인 만들기 사이트, 서명 png">
+<link rel="canonical" href="https://dailyfreetoolbox.com/sign">
+<meta property="og:type" content="website">
+<meta property="og:title" content="사인 만들기 - 서명 이미지 만들기, 전자서명용 사인 투명 PNG 무료">
+<meta property="og:description" content="이름을 넣어 손글씨 폰트로 사인을 만들거나 직접 그려서 투명 PNG 서명 이미지로 저장하는 무료 도구. 전자 문서에 붙이는 이미지이고 인증서 기반 전자서명은 아니에요. 업로드 없이 처리해요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/sign">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og/og-sign.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "사인 만들기 (서명 이미지)", "url": "https://dailyfreetoolbox.com/sign", "applicationCategory": "DesignApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "이름을 넣어 손글씨 폰트로 사인을 만들거나 직접 그려서 투명 PNG 서명 이미지로 저장하는 무료 도구. 전자 문서에 붙이는 이미지이고 인증서 기반 전자서명은 아니에요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#1d3f8f; --accent-deep:#152e69; }
+.sg-tabs { display:flex; gap:6px; margin-bottom:12px; }
+.sg-tabs button { flex:1; padding:9px 10px; font-size:13.5px; border:1px solid var(--line); background:#fff; border-radius:3px; cursor:pointer; }
+.sg-tabs button[aria-selected=true] { background:var(--accent); border-color:var(--accent); color:#fff; font-weight:700; }
+.sg-stage { margin-top:12px; border:1px solid var(--line); border-radius:3px; overflow:hidden;
+  background-color:#fff;
+  background-image:linear-gradient(45deg,#e6e9ef 25%,transparent 25%),linear-gradient(-45deg,#e6e9ef 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#e6e9ef 75%),linear-gradient(-45deg,transparent 75%,#e6e9ef 75%);
+  background-size:16px 16px; background-position:0 0,0 8px,8px -8px,-8px 0; }
+.sg-stage canvas { display:block; max-width:100%; height:auto; touch-action:none; }
+.sg-picks { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:8px; margin-top:10px; }
+.sg-pick { border:1px solid var(--line); border-radius:3px; background:#fff; padding:8px 6px; cursor:pointer; min-height:56px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+.sg-pick[aria-pressed=true] { border-color:var(--accent); box-shadow:0 0 0 1px var(--accent) inset; }
+.sg-pick span { font-size:24px; line-height:1.3; white-space:nowrap; }
+.sg-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px 14px; margin-top:12px; }
+.sg-grid label { display:block; font-size:13px; }
+.sg-grid input[type=range] { width:100%; }
+.sg-num { color:var(--ink-soft); font-variant-numeric:tabular-nums; }
+.sg-warn { border:1px solid #cdd6e8; background:#f5f8fd; border-radius:3px; padding:11px 13px; font-size:13px; line-height:1.75; margin-top:12px; }
+@media (max-width:480px){ .sg-grid { grid-template-columns:1fr 1fr; } }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "전자서명과 서명 이미지는 무엇이 다른가요?", "acceptedAnswer": {"@type": "Answer", "text": "이 도구가 만드는 것은 그림 파일입니다. 문서에 붙이면 서명처럼 보이지만, 누가 언제 서명했는지를 기술적으로 증명하지는 못해요. 인증서 기반 전자서명은 서명자 확인과 문서 위변조 여부를 검증할 수 있는 방식이라 다릅니다. 법적 효력이 필요한 계약에는 그런 서비스를 쓰세요."}}, {"@type": "Question", "name": "사인은 어떻게 만드나요?", "acceptedAnswer": {"@type": "Answer", "text": "두 가지 방법이 있어요. 이름을 입력해 손글씨 글꼴로 만드는 방법과, 마우스나 손가락으로 직접 그리는 방법입니다. 폰트로 만들면 깔끔하고 빠르지만 같은 글꼴을 쓰는 사람과 모양이 같아요. 직접 그리면 나만의 모양이 됩니다."}}, {"@type": "Question", "name": "서명 이미지가 서버에 올라가나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 입력한 이름과 그린 서명은 브라우저 안에서만 처리되고 어디에도 전송되지 않아요. 글꼴 파일만 구글 폰트에서 받아옵니다."}}, {"@type": "Question", "name": "PDF나 워드에 어떻게 넣나요?", "acceptedAnswer": {"@type": "Answer", "text": "투명 PNG로 저장한 뒤 문서에 이미지로 넣고 크기를 조절하면 됩니다. 워드·한글에서는 그림 삽입 후 글자처럼 취급을 바꿔 위치를 잡으세요. PDF는 편집 프로그램이나 PDF 뷰어의 서명·도장 기능에서 이미지 파일을 불러오면 됩니다."}}, {"@type": "Question", "name": "서명 이미지를 남이 가져다 쓰면 어떻게 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "그림 파일이라 복사하면 그대로 쓸 수 있다는 점을 알고 계셔야 해요. 중요한 문서에 넣어 보낼 때는 파일을 따로 공유하지 말고, 꼭 필요한 곳에만 넣으세요. 위조가 문제가 될 수 있는 계약에는 인증서 기반 전자서명을 쓰는 편이 안전합니다."}}, {"@type": "Question", "name": "이미 종이에 한 서명을 이미지로 만들려면?", "acceptedAnswer": {"@type": "Answer", "text": "흰 종이에 서명하고 사진을 찍거나 스캔한 뒤 배경 제거를 쓰세요. 종이 색을 지우면 서명 획만 남은 투명 PNG가 됩니다. 평소 쓰던 서명 모양을 그대로 쓸 수 있어요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#1d3f8f"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#계산·생활">계산·생활</a><span>›</span>사인 만들기</nav>
+  <h1><img class="h1ic" src="/icons/sign.webp" width="32" height="32" alt="">사인 만들기 (서명 이미지)</h1>
+  <p class="sub">이름을 손글씨 글꼴로 만들거나 직접 그려서 투명 PNG 서명 이미지로 저장해요. 전자 문서에 붙이는 그림 파일이고 인증서 기반 전자서명은 아니에요. 입력한 이름은 전송되지 않습니다.</p>
+  <div class="ad-slot" data-ad="top"></div>
+
+  <div class="card">
+    <div class="sg-tabs" role="tablist">
+      <button type="button" id="tabFont" role="tab" aria-selected="true">글꼴로 만들기</button>
+      <button type="button" id="tabDraw" role="tab" aria-selected="false">직접 그리기</button>
+    </div>
+
+    <div id="paneFont">
+      <label style="font-size:13px">이름
+        <input type="text" id="name" value="홍길동" maxlength="20" style="width:100%;margin-top:4px">
+      </label>
+      <div class="sg-picks" id="picks"></div>
+    </div>
+
+    <div id="paneDraw" class="hidden">
+      <div style="font-size:13px;color:var(--ink-soft)">아래 칸에 마우스나 손가락으로 서명을 그리세요.</div>
+      <div class="sg-stage" style="margin-top:8px"><canvas id="pad" width="760" height="300"></canvas></div>
+      <div class="btn-row" style="margin-top:8px">
+        <button class="btn-ghost" id="undo" type="button">한 획 지우기</button>
+        <button class="btn-ghost" id="clear" type="button">전부 지우기</button>
+      </div>
+    </div>
+
+    <div class="sg-grid">
+      <label>색 <input type="color" id="col" value="#12213f" style="width:100%;height:30px;padding:0"></label>
+      <label id="thWrap">획 두께 <span class="sg-num" id="thv">4</span>
+        <input type="range" id="th" min="1" max="14" step="1" value="4"></label>
+      <label id="szWrap">크기 <span class="sg-num" id="szv">90</span>px
+        <input type="range" id="sz" min="40" max="160" step="5" value="90"></label>
+      <label id="slWrap">기울기 <span class="sg-num" id="slv">0</span>°
+        <input type="range" id="sl" min="-20" max="20" step="2" value="0"></label>
+      <label>저장 배율 <select id="scale" style="width:100%;padding:5px 8px;font-size:13px">
+        <option value="1">1배</option><option value="2" selected>2배</option><option value="4">4배</option></select></label>
+    </div>
+
+    <div class="btn-row"><button class="btn" id="save">투명 PNG로 저장</button><button class="btn-ghost" id="reset">처음으로</button></div>
+    <div class="status" id="status">글꼴을 받아오는 중이에요…</div>
+    <div class="sg-stage"><canvas id="cv" width="760" height="260"></canvas></div>
+
+    <div class="sg-warn"><strong>이것은 인증서 기반 전자서명이 아니에요.</strong> 그림 파일이라서 누가 언제 서명했는지를 증명하지 못하고, 복사하면 그대로 쓸 수 있습니다. 법적 효력이 필요한 계약에는 서명자 확인과 위변조 검증이 되는 전자서명 서비스를 쓰세요.</div>
+  </div>
+
+ <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="stamp"><img class="sic" src="/icons/stamp.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>도장 만들기</span></a><a href="bg-remove"><img class="sic" src="/icons/bg-remove.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>배경 제거</span></a><a href="thumbnail"><img class="sic" src="/icons/thumbnail.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>썸네일 만들기</span></a><a href="image-to-pdf"><img class="sic" src="/icons/image-to-pdf.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>이미지 PDF 변환</span></a><a href="pdf-merge"><img class="sic" src="/icons/pdf-merge.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>PDF 합치기</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
+
+<section class="seo">
+<h2>사인 만드는 두 가지 방법 — 폰트로, 직접 그려서</h2><p>이 도구는 두 가지를 다 할 수 있어요. 쓰임이 달라서 상황에 맞게 고르면 됩니다.</p>
+<p><table><thead><tr><th></th><th>글꼴로 만들기</th><th>직접 그리기</th></tr></thead><tbody><tr><td>걸리는 시간</td><td>몇 초</td><td>몇 번 연습 필요</td></tr><tr><td>모양</td><td>깔끔하고 일정함</td><td>나만의 모양</td></tr><tr><td>단점</td><td>같은 글꼴을 쓴 사람과 모양이 같음</td><td>마우스로는 손맛이 안 남</td></tr><tr><td>어울리는 곳</td><td>사내 문서, 양식의 서명란</td><td>평소 쓰는 서명을 옮길 때</td></tr></tbody></table></p>
+<p>직접 그릴 때는 <strong>마우스보다 휴대폰이나 태블릿에서 손가락·펜으로</strong> 그리는 쪽이 훨씬 자연스럽습니다. 휴대폰으로 이 페이지를 열어 그린 뒤 저장하는 방법을 권해요.</p>
+
+<h2>전자서명과 서명 이미지는 다르다</h2><p>이 부분은 분명히 알고 쓰셔야 합니다. <strong>여기서 만든 것은 그림 파일이에요.</strong></p>
+<p><table><thead><tr><th>구분</th><th>서명 이미지 (이 도구)</th><th>인증서 기반 전자서명</th></tr></thead><tbody><tr><td>본질</td><td>그림 파일(PNG)</td><td>전자적으로 서명한 기록</td></tr><tr><td>서명자 확인</td><td>안 됨</td><td>인증 수단으로 확인</td></tr><tr><td>위변조 확인</td><td>안 됨</td><td>문서가 바뀌었는지 검증 가능</td></tr><tr><td>복사</td><td>파일을 복사하면 그대로 쓸 수 있음</td><td>복사해도 효력이 옮겨지지 않음</td></tr></tbody></table></p>
+<p>그래서 <strong>법적 다툼이 생길 수 있는 계약</strong>에는 서명 이미지를 쓰지 마세요. 서명자 확인과 위변조 검증이 되는 전자서명 서비스를 이용해야 합니다. 반대로 사내 결재 서식, 간단한 확인서, 견적서처럼 상대가 모양만 확인하면 되는 문서에는 이미지로 충분한 경우가 많아요.</p>
+<p>한 가지 더 주의할 점이 있어요. 서명 이미지는 <strong>복사하면 누구나 쓸 수 있습니다.</strong> 파일 자체를 여기저기 공유하지 말고, 필요한 문서에만 넣어서 보내세요.</p>
+
+<h2>PDF·전자 문서에 서명 이미지 넣는 법</h2><p>저장한 PNG는 배경이 투명해서 문서 위에 얹어도 흰 네모가 생기지 않아요.</p>
+<ol><li><strong>워드·한글</strong>: 그림을 삽입한 뒤 "글자처럼 취급"을 끄고 서명란 위로 옮기세요.</li><li><strong>PDF</strong>: PDF 뷰어의 서명·도장 기능에서 이미지 파일을 불러오면 됩니다. 편집 프로그램이 있다면 이미지로 삽입해도 돼요.</li><li><strong>이미지로 만든 서식</strong>: 서식을 이미지로 받았다면 서명 PNG를 얹어 저장하면 됩니다.</li></ol>
+<p>서식이 여러 장이라면 <a href="/pdf-merge">PDF 합치기</a>로 한 파일로 묶고, 사진으로 찍은 서식은 <a href="/image-to-pdf">이미지 PDF 변환</a>으로 PDF를 만들 수 있어요.</p>
+<p>이미 종이에 한 서명을 그대로 쓰고 싶다면 흰 종이에 서명하고 사진을 찍은 뒤 <a href="/bg-remove">배경 제거</a>로 종이 색을 지우세요. 평소 쓰던 모양이 그대로 남습니다.</p>
+
+<h2>사인 잘 만드는 요령 (획 수·크기)</h2><p>서명은 예쁜 것보다 <strong>빠르게 그릴 수 있고 일관되게 나오는 것</strong>이 중요해요. 매번 모양이 달라지면 서명으로서의 쓸모가 떨어집니다.</p>
+<ul><li><strong>획은 3~5개</strong>가 적당해요. 너무 복잡하면 매번 다르게 그려집니다.</li><li><strong>성을 크게, 이름은 흘려서</strong> 쓰면 알아보기 쉬우면서 빨라요.</li><li><strong>첫 글자를 크게</strong> 시작하면 서명다운 흐름이 생깁니다.</li><li>문서에 넣을 크기를 생각하세요. 서명란이 작으면 획이 뭉쳐 보입니다.</li></ul>
+<p>직접 그릴 때는 획 두께를 <strong>3~6</strong> 사이로 두는 편이 자연스러워요. 너무 얇으면 작게 넣었을 때 사라지고, 너무 두꺼우면 획이 붙습니다. 저장 배율은 2배 이상으로 두면 문서에서 확대해도 깨지지 않아요.</p>
+<p>글꼴로 만들 때는 이름을 한글로 넣을지 영문으로 넣을지에 따라 어울리는 글꼴이 달라요. 한글은 손글씨 계열이, 영문은 흘림체가 서명처럼 보입니다. 글꼴은 모두 오픈 폰트 라이선스(OFL) 계열이라 만든 이미지를 자유롭게 쓸 수 있어요.</p>
+
+<h2>사용 방법</h2><ol><li>"글꼴로 만들기"에서 이름을 넣고 마음에 드는 글꼴을 고르세요.</li><li>나만의 모양이 필요하면 "직접 그리기"로 옮겨 손으로 그립니다. 휴대폰에서 손가락으로 그리면 자연스러워요.</li><li>색과 두께, 크기를 맞추고 "투명 PNG로 저장"을 누르세요.</li><li>저장한 파일을 문서에 그림으로 넣으면 됩니다.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2>
+<details><summary>전자서명과 서명 이미지는 무엇이 다른가요?</summary><p>이 도구가 만드는 것은 그림 파일입니다. 문서에 붙이면 서명처럼 보이지만, 누가 언제 서명했는지를 기술적으로 증명하지는 못해요. 인증서 기반 전자서명은 서명자 확인과 문서 위변조 여부를 검증할 수 있는 방식이라 다릅니다. 법적 효력이 필요한 계약에는 그런 서비스를 쓰세요.</p></details>
+<details><summary>사인은 어떻게 만드나요?</summary><p>두 가지 방법이 있어요. 이름을 입력해 손글씨 글꼴로 만드는 방법과, 마우스나 손가락으로 직접 그리는 방법입니다. 폰트로 만들면 깔끔하고 빠르지만 같은 글꼴을 쓰는 사람과 모양이 같아요. 직접 그리면 나만의 모양이 됩니다.</p></details>
+<details><summary>서명 이미지가 서버에 올라가나요?</summary><p>아니요. 입력한 이름과 그린 서명은 브라우저 안에서만 처리되고 어디에도 전송되지 않아요. 글꼴 파일만 구글 폰트에서 받아옵니다.</p></details>
+<details><summary>PDF나 워드에 어떻게 넣나요?</summary><p>투명 PNG로 저장한 뒤 문서에 이미지로 넣고 크기를 조절하면 됩니다. 워드·한글에서는 그림 삽입 후 글자처럼 취급을 바꿔 위치를 잡으세요. PDF는 편집 프로그램이나 PDF 뷰어의 서명·도장 기능에서 이미지 파일을 불러오면 됩니다.</p></details>
+<details><summary>서명 이미지를 남이 가져다 쓰면 어떻게 하나요?</summary><p>그림 파일이라 복사하면 그대로 쓸 수 있다는 점을 알고 계셔야 해요. 중요한 문서에 넣어 보낼 때는 파일을 따로 공유하지 말고, 꼭 필요한 곳에만 넣으세요. 위조가 문제가 될 수 있는 계약에는 인증서 기반 전자서명을 쓰는 편이 안전합니다.</p></details>
+<details><summary>이미 종이에 한 서명을 이미지로 만들려면?</summary><p>흰 종이에 서명하고 사진을 찍거나 스캔한 뒤 배경 제거를 쓰세요. 종이 색을 지우면 서명 획만 남은 투명 PNG가 됩니다. 평소 쓰던 서명 모양을 그대로 쓸 수 있어요.</p></details>
+</section>
+  <footer>문서에 붙이는 서명 이미지를 만드는 도구예요. 인증서 기반 전자서명을 대신하지 않습니다.<br><span class="version-tag">v1.0 · 2026-10-04 업데이트</span></footer>
+</main>
+
+<script>
+(function(){
+'use strict';
+var $ = function(id){ return document.getElementById(id); };
+
+var FONTS = [
+  ['Nanum Pen Script','나눔손글씨 펜'],
+  ['Nanum Brush Script','나눔손글씨 붓'],
+  ['Gaegu','개구'],
+  ['Hi Melody','하이멜로디'],
+  ['Dongle','동글'],
+  ['Gamja Flower','감자꽃'],
+  ['Great Vibes','Great Vibes (영문)'],
+  ['Sacramento','Sacramento (영문)'],
+  ['Dancing Script','Dancing Script (영문)'],
+  ['Satisfy','Satisfy (영문)']
+];
+var mode = 'font', pickFam = FONTS[0][0];
+
+var links = {};
+function loadFont(fam){
+  if (links[fam]) return links[fam];
+  var l = document.createElement('link');
+  l.rel = 'stylesheet';
+  l.href = 'https://fonts.googleapis.com/css2?family=' + fam.replace(/ /g,'+') + '&display=swap';
+  document.head.appendChild(l);
+  links[fam] = new Promise(function(res){
+    var done = false, fin = function(){ if(!done){ done = true; res(); } };
+    l.onload = fin; l.onerror = fin; setTimeout(fin, 6000);
+  });
+  return links[fam];
+}
+
+// 글꼴 고르는 카드
+var picks = $('picks');
+FONTS.forEach(function(f){
+  var b = document.createElement('button');
+  b.type = 'button'; b.className = 'sg-pick'; b.setAttribute('aria-pressed', f[0] === pickFam);
+  b.title = f[1];
+  b.innerHTML = '<span style="font-family:\'' + f[0] + '\',cursive"></span>';
+  b.addEventListener('click', function(){
+    pickFam = f[0];
+    Array.prototype.forEach.call(picks.children, function(c){ c.setAttribute('aria-pressed','false'); });
+    b.setAttribute('aria-pressed','true');
+    update();
+  });
+  picks.appendChild(b);
+  loadFont(f[0]);
+});
+function refreshPicks(){
+  var nm = $('name').value || '홍길동';
+  Array.prototype.forEach.call(picks.children, function(c){ c.querySelector('span').textContent = nm; });
+}
+
+// 직접 그리기
+var strokes = [], drawing = null;
+var pad = $('pad'), pctx = pad.getContext('2d');
+function padPos(e){
+  var r = pad.getBoundingClientRect();
+  return [(e.clientX - r.left) * (pad.width / r.width), (e.clientY - r.top) * (pad.height / r.height)];
+}
+function redrawPad(){
+  pctx.clearRect(0, 0, pad.width, pad.height);
+  pctx.lineCap = 'round'; pctx.lineJoin = 'round';
+  pctx.strokeStyle = $('col').value;
+  pctx.lineWidth = +$('th').value;
+  strokes.forEach(function(s){
+    if (s.length < 2) {
+      if (s.length === 1){ pctx.beginPath(); pctx.arc(s[0][0], s[0][1], pctx.lineWidth/2, 0, Math.PI*2); pctx.fillStyle = $('col').value; pctx.fill(); }
+      return;
+    }
+    pctx.beginPath(); pctx.moveTo(s[0][0], s[0][1]);
+    for (var i = 1; i < s.length; i++) pctx.lineTo(s[i][0], s[i][1]);
+    pctx.stroke();
+  });
+}
+pad.addEventListener('pointerdown', function(e){
+  pad.setPointerCapture(e.pointerId);
+  drawing = [padPos(e)]; strokes.push(drawing); redrawPad(); update();
+});
+pad.addEventListener('pointermove', function(e){
+  if (!drawing) return;
+  drawing.push(padPos(e)); redrawPad();
+});
+pad.addEventListener('pointerup', function(){ drawing = null; update(); });
+pad.addEventListener('pointercancel', function(){ drawing = null; update(); });
+$('undo').addEventListener('click', function(){ strokes.pop(); redrawPad(); update(); });
+$('clear').addEventListener('click', function(){ strokes = []; redrawPad(); update(); });
+
+// 결과 그리기
+function render(scale, crop){
+  scale = scale || 1;
+  var cv = $('cv'), ctx = cv.getContext('2d');
+  var W = 760 * scale, H = 260 * scale;
+  cv.width = W; cv.height = H;
+  ctx.clearRect(0, 0, W, H);
+  var color = $('col').value;
+  var slope = +$('sl').value * Math.PI / 180;
+
+  if (mode === 'font'){
+    var fpx = +$('sz').value * scale;
+    ctx.font = fpx + 'px "' + pickFam + '", cursive';
+    ctx.fillStyle = color; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.save();
+    ctx.translate(W/2, H/2);
+    if (slope) ctx.transform(1, 0, -Math.tan(slope), 1, 0, 0);
+    ctx.fillText($('name').value || '', 0, 0);
+    ctx.restore();
+  } else {
+    ctx.save();
+    ctx.translate(W/2, H/2);
+    if (slope) ctx.transform(1, 0, -Math.tan(slope), 1, 0, 0);
+    ctx.translate(-W/2, -H/2);
+    ctx.scale(scale, scale);
+    ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+    ctx.strokeStyle = color; ctx.fillStyle = color;
+    ctx.lineWidth = +$('th').value;
+    strokes.forEach(function(s){
+      if (s.length === 1){ ctx.beginPath(); ctx.arc(s[0][0], s[0][1], ctx.lineWidth/2, 0, Math.PI*2); ctx.fill(); return; }
+      if (s.length < 2) return;
+      ctx.beginPath(); ctx.moveTo(s[0][0], s[0][1]);
+      for (var i = 1; i < s.length; i++) ctx.lineTo(s[i][0], s[i][1]);
+      ctx.stroke();
+    });
+    ctx.restore();
+  }
+
+  if (!crop) return cv;
+
+  // 저장할 때는 빈 공간을 잘라낸다
+  var d = ctx.getImageData(0, 0, W, H).data;
+  var minX = W, maxX = -1, minY = H, maxY = -1;
+  for (var y = 0; y < H; y++){
+    for (var x = 0; x < W; x++){
+      if (d[(y*W + x)*4 + 3] > 8){
+        if (x < minX) minX = x; if (x > maxX) maxX = x;
+        if (y < minY) minY = y; if (y > maxY) maxY = y;
+      }
+    }
+  }
+  if (maxX < 0) return cv;
+  var m = Math.round(8 * scale);
+  minX = Math.max(0, minX - m); minY = Math.max(0, minY - m);
+  maxX = Math.min(W-1, maxX + m); maxY = Math.min(H-1, maxY + m);
+  var out = document.createElement('canvas');
+  out.width = maxX - minX + 1; out.height = maxY - minY + 1;
+  out.getContext('2d').drawImage(cv, minX, minY, out.width, out.height, 0, 0, out.width, out.height);
+  return out;
+}
+
+function sync(){
+  $('thv').textContent = $('th').value;
+  $('szv').textContent = $('sz').value;
+  $('slv').textContent = $('sl').value;
+  $('szWrap').classList.toggle('hidden', mode !== 'font');
+  $('thWrap').classList.toggle('hidden', mode !== 'draw');
+}
+
+function update(){
+  sync();
+  if (mode === 'font'){
+    refreshPicks();
+    loadFont(pickFam).then(function(){
+      var p = (document.fonts && document.fonts.load)
+        ? document.fonts.load('64px "' + pickFam + '"', $('name').value || '가') : Promise.resolve();
+      return p['catch'](function(){});
+    }).then(function(){
+      render(1);
+      $('status').textContent = ($('name').value ? '글꼴 서명 · ' : '이름을 넣어 주세요 · ')
+        + (FONTS.filter(function(f){ return f[0] === pickFam; })[0] || ['',''])[1];
+    })['catch'](function(){ render(1); $('status').textContent = '글꼴을 불러오지 못했어요.'; });
+  } else {
+    redrawPad();
+    render(1);
+    $('status').textContent = strokes.length ? ('직접 그리기 · 획 ' + strokes.length + '개') : '서명을 그려 주세요.';
+  }
+}
+
+function setMode(m){
+  mode = m;
+  $('tabFont').setAttribute('aria-selected', m === 'font');
+  $('tabDraw').setAttribute('aria-selected', m === 'draw');
+  $('paneFont').classList.toggle('hidden', m !== 'font');
+  $('paneDraw').classList.toggle('hidden', m !== 'draw');
+  update();
+}
+$('tabFont').addEventListener('click', function(){ setMode('font'); });
+$('tabDraw').addEventListener('click', function(){ setMode('draw'); });
+
+['name','col','th','sz','sl'].forEach(function(id){
+  $(id).addEventListener('input', update);
+  $(id).addEventListener('change', update);
+});
+
+$('save').addEventListener('click', function(){
+  loadFont(pickFam).then(function(){
+    var cv = render(+$('scale').value, true);
+    cv.toBlob(function(b){
+      if (!b) return;
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(b);
+      a.download = 'sign-' + cv.width + 'x' + cv.height + '.png';
+      a.click();
+      setTimeout(function(){ URL.revokeObjectURL(a.href); }, 2000);
+      render(1);
+    }, 'image/png');
+  });
+});
+
+$('reset').addEventListener('click', function(){
+  $('name').value = '홍길동'; $('col').value = '#12213f';
+  $('th').value = 4; $('sz').value = 90; $('sl').value = 0; $('scale').value = '2';
+  strokes = []; pickFam = FONTS[0][0];
+  Array.prototype.forEach.call(picks.children, function(c, i){ c.setAttribute('aria-pressed', i === 0); });
+  setMode('font');
+});
+
+refreshPicks();
+sync();
+update();
+})();
+</script>
+
+</body>
+</html>

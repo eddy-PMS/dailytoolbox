@@ -25,7 +25,17 @@
 </script>
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
-<style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }</style>
+<style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
+/* 휴대폰에서 학점·성적 선택 칸이 좁아 화살표가 글자를 가리던 문제 (2026-10-04) */
+#rows select { width:100%; box-sizing:border-box; }
+#rows .cr { min-width:60px; }
+#rows .gr { min-width:78px; }
+#rows .nm { width:100%; min-width:0; box-sizing:border-box; }
+@media (max-width:420px){
+  #rows .nm { font-size:13px; padding:8px 6px; }
+  #rows select { padding:8px 2px 8px 6px; }
+  .opt { display:none; }
+}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "재수강하면 원래 성적은 어떻게 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "대부분 대학은 재수강 성적으로 대체하고 원래 성적은 성적표에서 삭제하거나 \"R\" 표시를 남겨요. 재수강 성적 상한(A0 또는 B+)을 두는 학교도 있어요."}}, {"@type": "Question", "name": "4.3 만점을 4.5로 환산하면 불리한가요?", "acceptedAnswer": {"@type": "Answer", "text": "단순 비율 환산은 A+에서 손해가 없지만 B+(3.3→3.45)처럼 중간 등급에서 조금 불리할 수 있어요. 지원처가 별도 환산표를 쓰면 그 표를 따르세요."}}, {"@type": "Question", "name": "전공 평점만 따로 계산하려면요?", "acceptedAnswer": {"@type": "Answer", "text": "전공 과목만 입력하면 돼요. 대학원·편입은 전공 평점을 따로 요구하는 경우가 많아요."}}, {"@type": "Question", "name": "4.5 만점과 4.3 만점 중 무엇을 골라야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "다니는 학교의 만점 기준을 고르세요. 한국 대학은 대부분 4.5 만점이고 일부 대학이 4.3 만점을 씁니다. 성적표에 적힌 만점이 기준이에요. 고른 만점과 다른 쪽으로 환산한 값도 결과에 함께 나옵니다."}}, {"@type": "Question", "name": "100점 환산은 학교마다 다른가요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 이 계산기의 환산표는 널리 쓰이는 기준이고 학교·지원처마다 자체 환산표가 있어요. 편입이나 대학원, 기업 지원처럼 환산 값이 중요한 곳에서는 그쪽이 제시한 표를 따라야 합니다."}}, {"@type": "Question", "name": "입력한 성적이 저장되나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 과목과 성적, 이전 평점은 브라우저 안에서만 계산에 쓰이고 어디에도 전송되지 않아요."}}]}</script>
 </head>
 <body>
@@ -41,7 +51,7 @@
 
   <div class="card">
     <div class="row"><label>만점 기준 <select id="scale" style="width:auto;padding:5px 8px;font-size:13px"><option value="4.5">4.5</option><option value="4.3">4.3</option></select></label></div>
-    <table><thead><tr><th>과목명 (선택)</th><th>학점</th><th>성적</th><th></th></tr></thead><tbody id="rows"></tbody></table>
+    <table><thead><tr><th>과목명<span class="opt"> (선택)</span></th><th>학점</th><th>성적</th><th></th></tr></thead><tbody id="rows"></tbody></table>
     <div class="btn-row"><button class="btn-ghost" id="add">+ 과목 추가</button></div>
     <div class="grid2" style="margin-top:14px"><div class="field"><label>기존 누적 평점 (선택)</label><input type="number" id="prevGpa" placeholder="예: 3.8" step="0.01"></div><div class="field"><label>기존 이수 학점 (선택)</label><input type="number" id="prevCredits" placeholder="예: 60"></div></div>
     <div id="out" style="margin-top:14px"></div>
@@ -52,17 +62,36 @@
 <div class="guides-rel"><div class="lb"><img src="/icons/ui-guide.webp" width="22" height="22" alt="">관련 가이드</div><a href="/guide/gpa-conversion"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">GPA 환산·학점 환산법 — 4.5 만점과 4.3 만점, 백분위 100점까지</span><span class="go">›</span></a></div>
 <!-- guides:tool:end -->
 <section class="seo">
-<h2>학점(GPA) 계산 방법</h2><p>평점은 각 과목의 성적 점수에 이수 학점을 곱해 모두 더한 뒤, 총 이수 학점으로 나눈 값이에요. 예를 들어 3학점 A+(4.5)와 2학점 B0(3.0)이면 (4.5×3 + 3.0×2) ÷ 5 = 3.9예요. P/F 과목은 학점에 포함되지 않고, F는 0점으로 계산되지만 재수강하면 학교 규정에 따라 대체되기도 해요.</p><p>한국 대학은 대부분 4.5 만점을 쓰고, 일부 대학(연세대·고려대·서강대 등)은 4.3 만점을 써요. 만점이 다르면 단순 비율 환산(4.3 → 4.5는 ×4.5/4.3)이 흔히 쓰이지만, 편입·대학원·기업마다 자체 환산표가 있어 지원처 기준을 꼭 확인해야 합니다.</p>
+<h2>학점(GPA) 계산 방법</h2><p>평점은 각 과목의 성적 점수에 이수 학점을 곱해 모두 더한 뒤, 총 이수 학점으로 나눈 값이에요. 예를 들어 3학점 A+(4.5)와 2학점 B0(3.0)이면 (4.5×3 + 3.0×2) ÷ 5 = 3.9예요. P/F 과목은 학점에 포함되지 않고, F는 0점으로 계산되지만 재수강하면 학교 규정에 따라 대체되기도 해요.</p>
+<img src="/img/gpa/gpa-formula.svg" width="800" height="330" alt="학점 계산 방법 평점 공식"
+     loading="lazy" decoding="async"
+     style="max-width:100%;height:auto;display:block;margin:12px auto"><p>한국 대학은 대부분 4.5 만점을 쓰고, 일부 대학(연세대·고려대·서강대 등)은 4.3 만점을 써요. 만점이 다르면 단순 비율 환산(4.3 → 4.5는 ×4.5/4.3)이 흔히 쓰이지만, 편입·대학원·기업마다 자체 환산표가 있어 지원처 기준을 꼭 확인해야 합니다.</p>
+<figure style="margin:12px 0"><img src="/img/gpa/gpa-calculator-result-800.webp"
+     srcset="/img/gpa/gpa-calculator-result-400.webp 400w, /img/gpa/gpa-calculator-result-800.webp 800w, /img/gpa/gpa-calculator-result-1200.webp 1200w"
+     sizes="(max-width: 480px) 100vw, 800px"
+     width="1200" height="704" alt="학점 계산기 평점 4.5 4.3 100점 환산 결과" loading="lazy" decoding="async"
+     style="max-width:100%;height:auto;display:block;margin:12px auto"><figcaption style="margin-top:6px;text-align:center;font-size:13px;color:var(--ink-soft)">3과목 8학점: 4.06 / 4.5 · 4.3 환산 3.88 · 100점 93.4</figcaption></figure>
 <h2>4.5 / 4.3 / 100점 환산표 (일반적 기준)</h2><p><table><thead><tr><th>등급</th><th class="r">4.5 만점</th><th class="r">4.3 만점</th><th class="r">100점 환산</th></tr></thead><tbody><tr><td>A+</td><td class="r">4.5</td><td class="r">4.3</td><td class="r">95~100</td></tr><tr><td>A0</td><td class="r">4.0</td><td class="r">4.0</td><td class="r">90~94</td></tr><tr><td>B+</td><td class="r">3.5</td><td class="r">3.3</td><td class="r">85~89</td></tr><tr><td>B0</td><td class="r">3.0</td><td class="r">3.0</td><td class="r">80~84</td></tr><tr><td>C+</td><td class="r">2.5</td><td class="r">2.3</td><td class="r">75~79</td></tr><tr><td>C0</td><td class="r">2.0</td><td class="r">2.0</td><td class="r">70~74</td></tr><tr><td>D+</td><td class="r">1.5</td><td class="r">1.3</td><td class="r">65~69</td></tr><tr><td>D0</td><td class="r">1.0</td><td class="r">1.0</td><td class="r">60~64</td></tr><tr><td>F</td><td class="r">0</td><td class="r">0</td><td class="r">0~59</td></tr></tbody></table></p>
+<img src="/img/gpa/grade-point-table.svg" width="800" height="690" alt="학점 변환표 4.5 4.3 100점"
+     loading="lazy" decoding="async"
+     style="max-width:100%;height:auto;display:block;margin:12px auto">
 <p>위 표는 널리 쓰이는 기준이고 <strong>학교·지원처마다 다릅니다.</strong> 환산 기준을 어디에 맞춰야 하는지, 백분위로는 어떻게 바꾸는지는 <a href="/guide/gpa-conversion">GPA 환산·학점 환산법</a> 가이드에 정리했어요.</p>
 
 <h2>누적 평점 계산 — 이전 학기와 합치기</h2><p>이전 평점과 이전 이수 학점을 넣으면 이번 학기를 합친 새 누적 평점이 나와요. 계산은 <strong>학점으로 가중 평균</strong>을 냅니다.</p>
+<figure style="margin:12px 0"><img src="/img/gpa/gpa-calculator-cumulative-800.webp"
+     srcset="/img/gpa/gpa-calculator-cumulative-400.webp 400w, /img/gpa/gpa-calculator-cumulative-800.webp 800w, /img/gpa/gpa-calculator-cumulative-1200.webp 1200w"
+     sizes="(max-width: 480px) 100vw, 800px"
+     width="1200" height="908" alt="학점 계산기 누적 평점 계산" loading="lazy" decoding="async"
+     style="max-width:100%;height:auto;display:block;margin:12px auto"><figcaption style="margin-top:6px;text-align:center;font-size:13px;color:var(--ink-soft)">기존 3.8 / 60학점 + 이번 8학점 → 누적 3.83</figcaption></figure>
 <p>새 누적 평점 = (이전 평점 × 이전 학점 + 이번 학기 평점 × 이번 학점) ÷ (이전 학점 + 이번 학점)</p>
 <p>단순히 두 평점을 더해 2로 나누면 안 되는 이유가 여기 있어요. <strong>학점이 많은 학기가 더 크게 반영</strong>됩니다. 9학점만 들은 학기의 4.5와 21학점을 들은 학기의 3.0은 무게가 다릅니다.</p>
 <p>성적표의 누적 평점과 맞지 않는다면 <strong>이전 이수 학점에 P/F 과목이 들어갔는지</strong> 확인해 보세요. 평점 계산에서 빠지는 과목은 이수 학점에도 넣지 않아야 숫자가 맞습니다.</p>
 
 <h2>P/F·재수강 과목은 어떻게 넣나</h2><p>학교마다 규정이 다릅니다. 아래는 일반적인 처리 방식이고, <strong>최종 기준은 소속 학교 학칙</strong>이에요.</p>
 <p><table><thead><tr><th>과목</th><th>이 계산기에서</th><th>흔한 학교 규정</th></tr></thead><tbody><tr><td>P(패스) 과목</td><td>성적을 &quot;P&quot;로 두면 계산에서 빠져요</td><td>평점에 넣지 않고 이수 학점만 인정</td></tr><tr><td>F 과목</td><td>0점으로 계산돼요</td><td>평점에 넣는 곳이 많음</td></tr><tr><td>재수강</td><td>새 성적만 넣으세요</td><td>원래 성적을 대체. 상한을 두는 곳도 있음</td></tr><tr><td>전공 평점만 보고 싶을 때</td><td>전공 과목만 넣으면 됩니다</td><td>대학원·편입에서 따로 요구</td></tr></tbody></table></p>
+<img src="/img/gpa/pass-fail-retake.svg" width="800" height="644" alt="학점 계산기 P F 재수강"
+     loading="lazy" decoding="async"
+     style="max-width:100%;height:auto;display:block;margin:12px auto">
 <p>재수강 상한(A0 또는 B+까지만 인정)이 있는 학교라면 상한 성적으로 넣어야 실제 성적표와 맞아요.</p>
 <h2>사용 방법</h2><ol><li>만점 기준(4.5 또는 4.3)을 고르세요.</li><li>과목마다 학점(이수 단위)과 성적을 선택하세요. P/F 과목은 "P"로 두면 계산에서 빠져요.</li><li>기존 누적 평점과 이수 학점을 넣으면 이번 학기를 합친 새 누적 평점도 나와요.</li></ol>
 </section>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>평수 계산기 - 평 계산기, 제곱미터 평 변환·가로 세로 평수 계산</title>
+<meta name="description" content="평을 제곱미터(㎡)로, 제곱미터를 평으로 바로 바꾸는 무료 평수 계산기. 가로·세로 길이로 평수를 구하고, 평수를 한 변 길이(m·cm)로도 볼 수 있어요. 1평 = 3.305785㎡ 기준.">
+<meta name="keywords" content="평수 계산기, 평 계산기, 평수 계산, 제곱미터 평, 평수 변환, 평 변환, 평 환산, 평수 계산법, 아파트 평수 계산, 1평 크기">
+<link rel="canonical" href="https://dailyfreetoolbox.com/pyeong">
+<meta property="og:type" content="website">
+<meta property="og:title" content="평수 계산기 - 평 계산기, 제곱미터 평 변환·가로 세로 평수 계산">
+<meta property="og:description" content="평을 제곱미터(㎡)로, 제곱미터를 평으로 바로 바꾸는 무료 평수 계산기. 가로·세로 길이로 평수를 구하고, 평수를 한 변 길이(m·cm)로도 볼 수 있어요. 1평 = 3.305785㎡ 기준.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/pyeong">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og/og-pyeong.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "평수 계산기", "url": "https://dailyfreetoolbox.com/pyeong", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "평을 제곱미터(㎡)로, 제곱미터를 평으로 바로 바꾸는 무료 평수 계산기. 가로·세로 길이로 평수를 구하고, 평수를 한 변 길이(m·cm)로도 볼 수 있어요. 1평 = 3.305785㎡ 기준."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
+.card input, .card select { font-size:16px; }
+.qchips { display:flex; flex-wrap:wrap; gap:6px; margin-top:12px; }
+.qchips button { padding:7px 11px; border:1px solid var(--line); border-radius:999px; background:#fff; font-size:13px; color:var(--ink-soft); cursor:pointer; font-family:inherit; }
+.qchips button:hover { border-color:var(--accent); color:var(--accent); }
+.res { margin-top:16px; }
+.res .big-result { font-size:24px; line-height:1.4; overflow-wrap:anywhere; }
+.res .fine { font-size:13px; color:var(--ink-soft); margin-top:4px; overflow-wrap:anywhere; }
+.pane[hidden] { display:none; }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "1평은 몇 ㎡인가요?", "acceptedAnswer": {"@type": "Answer", "text": "1평 = 3.305785㎡예요. 거꾸로 1㎡는 약 0.3025평이에요. 10평은 33.06㎡, 25평은 82.64㎡, 34평은 112.4㎡입니다."}}, {"@type": "Question", "name": "가로 세로 길이로 평수는 어떻게 구하나요?", "acceptedAnswer": {"@type": "Answer", "text": "가로(m) × 세로(m)로 ㎡를 구한 뒤 3.305785로 나누면 평이에요. 가로 4m·세로 5m 방은 20㎡이고 6.05평입니다. cm로 쟀다면 100으로 나눠 m로 바꾼 다음 곱하세요. 위 계산기의 가로×세로 탭에 길이 두 개를 넣으면 바로 나와요."}}, {"@type": "Question", "name": "평을 cm 나 m 로 바꿀 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "평은 넓이이고 cm·m는 길이라서 그대로 바꿀 수는 없어요. 대신 정사각형이라고 보면 한 변 길이를 짐작할 수 있어요. 한 변 = √㎡ 이고, 13.5평(44.63㎡)이면 한 변이 약 6.68m(668cm)예요. 가로를 알면 세로는 ㎡ ÷ 가로로 구합니다. 한 변 길이 탭에서 바로 볼 수 있어요."}}, {"@type": "Question", "name": "84㎡ 아파트는 왜 34평이라고 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "아파트 평수 계산에서 자주 헷갈리는 부분인데, 84㎡는 전용면적이고 34평은 공급면적을 평으로 바꾼 값이라 재는 기준이 달라요. 전용면적 84㎡만 평으로 바꾸면 25.41평입니다. 자세한 내용은 평과 ㎡ 환산법 가이드(/guide/pyeong-square-meter)에 정리해 뒀어요."}}, {"@type": "Question", "name": "평 계산이 사이트마다 조금씩 다른 이유가 뭔가요?", "acceptedAnswer": {"@type": "Answer", "text": "어디까지 반올림한 값을 쓰는지가 달라요. 1평은 정확히 400/121㎡라서 끝나지 않는 소수(3.30578512…)예요. 3.3으로 줄여 쓰면 평수가 커질수록 차이가 벌어지고, 3.3058을 쓰면 거의 같아집니다. 국가기술표준원도 “1평 ≒ 3.3058㎡”로 안내하고 있어요(확인일 2026-10-04). 이 계산기는 3.305785을 씁니다. 참고로 넓이의 법정단위는 ㎡이고 평은 비법정단위예요."}}, {"@type": "Question", "name": "계약서에는 평과 ㎡ 중 무엇을 봐야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "㎡를 보세요. 넓이의 법정단위는 ㎡이고, 평은 계산 방식에 따라 소수점 아래가 조금씩 달라질 수 있어요. 등기·계약처럼 정확한 값이 필요한 곳에는 이 계산기로 바꾼 값이 아니라 서류에 적힌 ㎡ 숫자를 그대로 쓰세요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2b5fd9"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#계산·생활">계산·생활</a><span>›</span>평수 계산기</nav>
+  <h1><img class="h1ic" src="/icons/pyeong.webp" width="32" height="32" alt="">평수 계산기</h1>
+  <p class="sub">평을 ㎡로, ㎡를 평으로 바로 바꾸고, 가로·세로 길이로 평수도 구해요.</p>
+  <div class="ad-slot" data-ad="top"></div>
+
+  <div class="card">
+    <div class="tabs" id="modes">
+      <button type="button" class="tab active" data-mode="convert">평 ↔ ㎡</button>
+      <button type="button" class="tab" data-mode="rect">가로×세로</button>
+      <button type="button" class="tab" data-mode="side">한 변 길이</button>
+    </div>
+
+    <div class="pane" id="pane-convert">
+      <div class="grid2">
+        <div class="field"><label for="py">평</label><input type="number" id="py" value="34" min="0" step="any" inputmode="decimal"></div>
+        <div class="field"><label for="sqm">㎡</label><input type="number" id="sqm" min="0" step="any" inputmode="decimal"></div>
+      </div>
+      <div class="qchips" id="quick">
+        <button type="button" data-py="10">10평</button><button type="button" data-py="18">18평</button><button type="button" data-py="24">24평</button><button type="button" data-py="25">25평</button><button type="button" data-py="32">32평</button><button type="button" data-py="34">34평</button><button type="button" data-py="40">40평</button>
+      </div>
+      <div class="res"><div class="big-result" id="r1">—</div><div class="fine" id="r1s"></div></div>
+    </div>
+
+    <div class="pane" id="pane-rect" hidden>
+      <div class="grid2">
+        <div class="field"><label for="rw">가로</label><input type="number" id="rw" value="6" min="0" step="any" inputmode="decimal"></div>
+        <div class="field"><label for="rh">세로</label><input type="number" id="rh" value="7.44" min="0" step="any" inputmode="decimal"></div>
+        <div class="field"><label for="ru">단위</label><select id="ru"><option value="m">m</option><option value="cm">cm</option></select></div>
+      </div>
+      <div class="res"><div class="big-result" id="r2">—</div><div class="fine" id="r2s"></div></div>
+    </div>
+
+    <div class="pane" id="pane-side" hidden>
+      <div class="grid2">
+        <div class="field"><label for="sa">넓이</label><input type="number" id="sa" value="13.5" min="0" step="any" inputmode="decimal"></div>
+        <div class="field"><label for="su">단위</label><select id="su"><option value="py">평</option><option value="sqm">㎡</option></select></div>
+        <div class="field"><label for="sw">가로(m) — 알면 넣으세요</label><input type="number" id="sw" min="0" step="any" inputmode="decimal"></div>
+      </div>
+      <div class="res"><div class="big-result" id="r3">—</div><div class="big-result" id="r3b" hidden></div><div class="fine" id="r3s"></div></div>
+      <p class="note">넓이가 같아도 모양에 따라 가로·세로는 달라져요.</p>
+    </div>
+  </div>
+  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="unit"><img class="sic" src="/icons/unit.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>단위 변환기</span></a><a href="rent"><img class="sic" src="/icons/rent.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>전월세·중개수수료</span></a><a href="exchange"><img class="sic" src="/icons/exchange.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>환율 계산기</span></a><a href="percent"><img class="sic" src="/icons/percent.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>퍼센트 계산기</span></a><a href="discount"><img class="sic" src="/icons/discount.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>할인율 계산기</span></a><a href="lotto"><img class="sic" src="/icons/lotto.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>로또 번호 생성기</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
+<!-- guides:tool:start -->
+<div class="guides-rel"><div class="lb"><img src="/icons/ui-guide.webp" width="22" height="22" alt="">관련 가이드</div><a href="/guide/pyeong-square-meter"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">평과 ㎡ 환산법 — 전용면적 공급면적 차이, 84㎡가 34평인 이유</span><span class="go">›</span></a></div>
+<!-- guides:tool:end -->
+<section class="seo">
+<h2>평 계산 공식</h2><p>1평은 3.305785㎡예요. 평을 ㎡로 바꿀 때는 곱하고, ㎡를 평으로 바꿀 때는 나눠요.</p><p><strong>㎡ = 평 × 3.305785 · 평 = ㎡ ÷ 3.305785</strong></p><p>넓이의 법정단위는 ㎡이고, 평은 오래 써 온 관습 단위예요. 그래서 서류에는 ㎡가 적히고 일상에서는 평으로 말하는 일이 많아 두 단위를 오가게 됩니다.</p>
+<h2>자주 찾는 평수표</h2><p>자주 찾는 평수를 ㎡로 미리 바꿔 둔 표예요. 소수점 둘째 자리까지 끊었어요.</p><table id="t-py"><thead><tr><th>평</th><th class="r">㎡</th></tr></thead><tbody><tr><td>5평</td><td class="r">16.53㎡</td></tr><tr><td>10평</td><td class="r">33.06㎡</td></tr><tr><td>15평</td><td class="r">49.59㎡</td></tr><tr><td>18평</td><td class="r">59.5㎡</td></tr><tr><td>20평</td><td class="r">66.12㎡</td></tr><tr><td>24평</td><td class="r">79.34㎡</td></tr><tr><td>25평</td><td class="r">82.64㎡</td></tr><tr><td>30평</td><td class="r">99.17㎡</td></tr><tr><td>32평</td><td class="r">105.79㎡</td></tr><tr><td>34평</td><td class="r">112.4㎡</td></tr><tr><td>40평</td><td class="r">132.23㎡</td></tr><tr><td>45평</td><td class="r">148.76㎡</td></tr><tr><td>50평</td><td class="r">165.29㎡</td></tr></tbody></table>
+<h2>가로 세로로 평수 구하기 — 평수 계산법</h2><p>방이나 땅의 가로·세로 길이를 알면 평수를 구할 수 있어요. 길이를 m로 맞춰 곱하면 ㎡가 되고, 그 값을 3.305785로 나누면 평이에요. cm로 쟀다면 먼저 100으로 나눠 m로 바꾸세요.</p><p><strong>㎡ = 가로(m) × 세로(m) · 평 = ㎡ ÷ 3.305785</strong></p><table id="t-rect"><thead><tr><th>가로 × 세로</th><th class="r">㎡</th><th class="r">평</th></tr></thead><tbody><tr><td>3m × 4m</td><td class="r">12㎡</td><td class="r">3.63평</td></tr><tr><td>4m × 5m</td><td class="r">20㎡</td><td class="r">6.05평</td></tr><tr><td>5m × 6m</td><td class="r">30㎡</td><td class="r">9.08평</td></tr><tr><td>6m × 7.44m</td><td class="r">44.64㎡</td><td class="r">13.5평</td></tr><tr><td>8m × 10m</td><td class="r">80㎡</td><td class="r">24.2평</td></tr></tbody></table>
+<h2>평수를 가로·세로 길이로 보면</h2><p>평은 넓이라서 길이 하나로 바꿀 수는 없지만, 정사각형이라고 보면 한 변 길이로 크기를 짐작할 수 있어요. 한 변 = √㎡ 예요.</p><table id="t-side"><thead><tr><th>평</th><th class="r">㎡</th><th class="r">정사각형 한 변</th></tr></thead><tbody><tr><td>1평</td><td class="r">3.31㎡</td><td class="r">약 1.82m (181.8cm)</td></tr><tr><td>10평</td><td class="r">33.06㎡</td><td class="r">약 5.75m (575cm)</td></tr><tr><td>13.5평</td><td class="r">44.63㎡</td><td class="r">약 6.68m (668cm)</td></tr><tr><td>18평</td><td class="r">59.5㎡</td><td class="r">약 7.71m (771.4cm)</td></tr><tr><td>25평</td><td class="r">82.64㎡</td><td class="r">약 9.09m (909.1cm)</td></tr><tr><td>34평</td><td class="r">112.4㎡</td><td class="r">약 10.6m (1060.2cm)</td></tr></tbody></table><p>넓이가 같아도 모양에 따라 가로·세로는 달라져요. 가로를 알고 있다면 세로는 ㎡ ÷ 가로로 구합니다.</p>
+<h2>전용면적과 공급면적</h2><p>아파트 평수를 볼 때는 무엇을 잰 면적인지 먼저 확인해야 해요. 전용면적은 현관 안쪽에서 실제로 쓰는 공간이고, 공급면적은 여기에 계단·복도 같은 주거공용면적을 더한 값이에요. 분양 광고의 &quot;34평형&quot;은 공급면적 기준이라, 전용면적 84㎡를 평으로 바꾼 25.41평과는 다른 숫자입니다. 자세한 내용은 <a href="/guide/pyeong-square-meter">평과 ㎡ 환산법 가이드</a>에 정리해 뒀어요.</p>
+<h2>사용 방법</h2><ol><li>평 ↔ ㎡: 평이나 ㎡ 칸에 숫자를 넣으면 반대쪽이 바로 바뀌어요. 아래 칩을 누르면 자주 찾는 평수가 들어갑니다.</li><li>가로×세로: 가로와 세로 길이를 넣고 단위(m·cm)를 고르면 ㎡와 평이 나와요.</li><li>한 변 길이: 넓이를 평이나 ㎡로 넣으면 정사각형 한 변이 나오고, 가로를 넣으면 세로도 함께 보여줘요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>1평은 몇 ㎡인가요?</summary><p>1평 = 3.305785㎡예요. 거꾸로 1㎡는 약 0.3025평이에요. 10평은 33.06㎡, 25평은 82.64㎡, 34평은 112.4㎡입니다.</p></details><details><summary>가로 세로 길이로 평수는 어떻게 구하나요?</summary><p>가로(m) × 세로(m)로 ㎡를 구한 뒤 3.305785로 나누면 평이에요. 가로 4m·세로 5m 방은 20㎡이고 6.05평입니다. cm로 쟀다면 100으로 나눠 m로 바꾼 다음 곱하세요. 위 계산기의 가로×세로 탭에 길이 두 개를 넣으면 바로 나와요.</p></details><details><summary>평을 cm 나 m 로 바꿀 수 있나요?</summary><p>평은 넓이이고 cm·m는 길이라서 그대로 바꿀 수는 없어요. 대신 정사각형이라고 보면 한 변 길이를 짐작할 수 있어요. 한 변 = √㎡ 이고, 13.5평(44.63㎡)이면 한 변이 약 6.68m(668cm)예요. 가로를 알면 세로는 ㎡ ÷ 가로로 구합니다. 한 변 길이 탭에서 바로 볼 수 있어요.</p></details><details><summary>84㎡ 아파트는 왜 34평이라고 하나요?</summary><p>아파트 평수 계산에서 자주 헷갈리는 부분인데, 84㎡는 전용면적이고 34평은 공급면적을 평으로 바꾼 값이라 재는 기준이 달라요. 전용면적 84㎡만 평으로 바꾸면 25.41평입니다. 자세한 내용은 <a href="/guide/pyeong-square-meter">평과 ㎡ 환산법 가이드</a>에 정리해 뒀어요.</p></details><details><summary>평 계산이 사이트마다 조금씩 다른 이유가 뭔가요?</summary><p>어디까지 반올림한 값을 쓰는지가 달라요. 1평은 정확히 400/121㎡라서 끝나지 않는 소수(3.30578512…)예요. 3.3으로 줄여 쓰면 평수가 커질수록 차이가 벌어지고, 3.3058을 쓰면 거의 같아집니다. 국가기술표준원도 &quot;1평 ≒ 3.3058㎡&quot;로 안내하고 있어요(확인일 2026-10-04). 이 계산기는 3.305785을 씁니다. 참고로 넓이의 법정단위는 ㎡이고 평은 비법정단위예요.</p></details><details><summary>계약서에는 평과 ㎡ 중 무엇을 봐야 하나요?</summary><p>㎡를 보세요. 넓이의 법정단위는 ㎡이고, 평은 계산 방식에 따라 소수점 아래가 조금씩 달라질 수 있어요. 등기·계약처럼 정확한 값이 필요한 곳에는 이 계산기로 바꾼 값이 아니라 서류에 적힌 ㎡ 숫자를 그대로 쓰세요.</p></details></section>
+  <footer>1평 = 3.305785㎡ 기준이에요. 등기·계약에는 서류에 적힌 ㎡를 쓰세요.<br><span class="version-tag">v1.0 · 2026-10-05 업데이트</span></footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const PY=3.305785; // unit.html 과 같은 상수
+const ok=v=>Number.isFinite(v)&&v>0;
+const num=id=>{ const s=$(id).value.trim(); return s===''?NaN:Number(s); };
+const f2=n=>String(+n.toFixed(2)), f1=n=>String(+n.toFixed(1)), f6=n=>String(+n.toFixed(6));
+const safe=n=>Number.isFinite(n);
+
+// 탭 — 숨기기만 하므로 각 탭의 입력값은 그대로 남는다
+let mode='convert';
+document.querySelectorAll('#modes .tab').forEach(b=>b.addEventListener('click',()=>{
+  mode=b.dataset.mode;
+  document.querySelectorAll('#modes .tab').forEach(x=>x.classList.toggle('active',x===b));
+  ['convert','rect','side'].forEach(m=>{ $('pane-'+m).hidden = m!==mode; });
+}));
+
+// 1. 평 ↔ ㎡
+function fromPy(){
+  const p=num('py'), m=p*PY;
+  if(!ok(p)||!safe(m)){ $('sqm').value=''; $('r1').textContent='—'; $('r1s').textContent=''; return; }
+  $('sqm').value=f2(m);
+  $('r1').textContent=f2(p)+'평 = '+f2(m)+'㎡';
+  $('r1s').textContent=f6(p)+'평 = '+f6(m)+'㎡';
+}
+function fromSqm(){
+  const m=num('sqm'), p=m/PY;
+  if(!ok(m)||!safe(p)){ $('py').value=''; $('r1').textContent='—'; $('r1s').textContent=''; return; }
+  $('py').value=f2(p);
+  $('r1').textContent=f2(m)+'㎡ = '+f2(p)+'평';
+  $('r1s').textContent=f6(m)+'㎡ = '+f6(p)+'평';
+}
+$('py').addEventListener('input',fromPy);
+$('sqm').addEventListener('input',fromSqm);
+$('quick').addEventListener('click',e=>{ const b=e.target.closest('button'); if(!b) return; $('py').value=b.dataset.py; fromPy(); track(); });
+
+// 2. 가로×세로
+function rect(){
+  const k=$('ru').value==='cm'?0.01:1, w=num('rw')*k, h=num('rh')*k, m=w*h;
+  if(!ok(w)||!ok(h)||!safe(m)||!ok(m)){ $('r2').textContent='—'; $('r2s').textContent=''; return; }
+  $('r2').textContent='넓이 '+f2(m)+'㎡ · '+f2(m/PY)+'평';
+  $('r2s').textContent=f6(m)+'㎡ = '+f6(m/PY)+'평';
+}
+['rw','rh','ru'].forEach(id=>$(id).addEventListener('input',rect));
+
+// 3. 한 변 길이
+function side(){
+  const a=num('sa'), m=$('su').value==='py'?a*PY:a, s=Math.sqrt(m), w=num('sw');
+  if(!ok(a)||!safe(m)||!ok(s)){ $('r3').textContent='—'; $('r3b').hidden=true; $('r3s').textContent=''; return; }
+  $('r3').textContent='정사각형이면 한 변 약 '+f2(s)+'m('+f1(s*100)+'cm)';
+  const h=m/w;
+  if(ok(w)&&ok(h)){ $('r3b').textContent='가로 '+f2(w)+'m면 세로 약 '+f2(h)+'m('+f1(h*100)+'cm)'; $('r3b').hidden=false; }
+  else $('r3b').hidden=true;
+  $('r3s').textContent=($('su').value==='py'?f6(a)+'평 = ':'')+f6(m)+'㎡';
+}
+['sa','su','sw'].forEach(id=>$(id).addEventListener('input',side));
+
+fromPy(); rect(); side();
+
+let sent=false;
+function track(){ if(!sent&&typeof gtag==='function'){ gtag('event','pyeong_calculated',{mode}); sent=true; } }
+['py','sqm','rw','rh','ru','sa','su','sw'].forEach(id=>$(id).addEventListener('input',track));
+
+</script>
+
+</body>
+</html>

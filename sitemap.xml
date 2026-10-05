@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://dailyfreetoolbox.com/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -116,7 +116,7 @@
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/about</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -675,7 +675,11 @@
 <!-- guides:start -->
   <url>
     <loc>https://dailyfreetoolbox.com/guide/</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://dailyfreetoolbox.com/guide/hiragana-katakana-chart</loc>
+    <lastmod>2026-10-06</lastmod>
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/guide/weekly-holiday-pay</loc>

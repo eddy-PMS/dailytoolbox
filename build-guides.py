@@ -444,6 +444,8 @@ def git_first_dates():
             dates[ln] = cur           # 최신 커밋부터 나오므로 마지막에 덮어쓴 값이 처음 추가된 날
     return dates
 
+PAREN_TAIL = re.compile(r'\s*\(.*?\)\s*$')    # 제목 끝의 괄호 설명 — '네모로직 (노노그램)' → '네모로직'
+
 def update_home_new(tools, n=6):
     """홈 히어로의 "신규" 칩을 가장 최근에 추가된 도구 n개로 바꾼다.
     추가일은 git 에 처음 커밋된 날. 아직 커밋 전인 새 도구는 오늘로 보고 맨 앞에 둔다.
@@ -455,7 +457,9 @@ def update_home_new(tools, n=6):
     today = datetime.date.today().isoformat()
     order = list(tools)                                    # GROUPS 순서
     ranked = sorted(order, key=lambda f: (first.get(f) or today, -order.index(f)), reverse=True)[:n]
-    chips = ''.join(f'<a href="{tools[f]["slug"]}">{esc(re.sub(r"\s*\(.*?\)\s*$", "", tools[f]["title"]))}</a>' for f in ranked)
+    # 주의: 깃허브 자동 빌드는 파이썬 3.11 이라 f-string 의 { } 안에 역슬래시를 쓸 수 없다. 정규식은 밖에서 처리한다.
+    short = lambda f: esc(PAREN_TAIL.sub('', tools[f]['title']))
+    chips = ''.join(f'<a href="{tools[f]["slug"]}">{short(f)}</a>' for f in ranked)
     new = inject(s, '<!-- new:home:start -->', '<!-- new:home:end -->', chips)
     if new is None:                                        # 처음 한 번: 손으로 적혀 있던 칩을 표시 주석으로 감싼다
         m = re.search(r'(<div class="hero-hot"><span class="lb">.*?</span>)(.*?)(</div>)', s, flags=re.S)

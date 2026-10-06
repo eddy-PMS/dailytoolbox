@@ -30,8 +30,8 @@ textarea.html { min-height:90px; font-family:ui-monospace, Menlo, Consolas, mono
 .creative .only-adsense, .creative .only-image, .creative .only-html { display:none; }
 .creative[data-type="adsense"] .only-adsense, .creative[data-type="image"] .only-image, .creative[data-type="html"] .only-html { display:block; }
 .imgrow { display:flex; gap:12px; align-items:flex-start; margin-top:8px; flex-wrap:wrap; }
-.c-preview { width:200px; max-width:100%; min-height:70px; border:1px dashed var(--line); border-radius:4px; background:#fafbfd; display:flex; align-items:center; justify-content:center; font-size:12px; color:var(--ink-soft); overflow:hidden; }
-.c-preview img { max-width:100%; height:auto; display:block; }
+.i-preview { width:200px; max-width:100%; min-height:70px; border:1px dashed var(--line); border-radius:4px; background:#fafbfd; display:flex; align-items:center; justify-content:center; font-size:12px; color:var(--ink-soft); overflow:hidden; }
+.i-preview img { max-width:100%; height:auto; display:block; }
 .imgside { flex:1; min-width:180px; }
 .rule { margin-top:12px; padding:12px; border:1px solid var(--line); border-left:3px solid var(--accent); border-radius:4px; background:#fafbfd; }
 .rulehead { display:flex; align-items:center; justify-content:space-between; margin-bottom:8px; font-size:13px; }
@@ -68,7 +68,7 @@ textarea.html { min-height:90px; font-family:ui-monospace, Menlo, Consolas, mono
   <div class="card">
     <h2>자리별 설정</h2>
     <div id="slots"></div>
-    <p class="tip">이미지 배너: 이미지 파일(PNG·JPG·GIF·WebP, 1MB 이하)을 올리고 누르면 이동할 주소를 넣어요. 화면보다 큰 이미지는 폭에 맞춰 줄어들어요. 페이지별 배너: 고른 페이지에서는 기본 배너 대신 그 배너가 나오고, 여러 묶음에 같은 페이지가 있으면 위쪽 묶음이 이겨요. 특정 페이지에만 배너를 내고 싶으면 자리의 “사용”은 켜 두고 기본 배너의 이미지를 비워 두세요.</p>
+    <p class="tip">이미지 배너: 이미지 파일(PNG·JPG·GIF·WebP, 1MB 이하)을 올리고 누르면 이동할 주소를 넣어요. 화면보다 큰 이미지는 폭에 맞춰 줄어들어요. PC용과 휴대폰용을 따로 올릴 수 있고, 휴대폰용을 비워 두면 PC용이 같이 쓰여요. 페이지별 배너: 고른 페이지에서는 기본 배너 대신 그 배너가 나오고, 여러 묶음에 같은 페이지가 있으면 위쪽 묶음이 이겨요. 특정 페이지에만 배너를 내고 싶으면 자리의 “사용”은 켜 두고 기본 배너의 이미지를 비워 두세요.</p>
     <p class="tip">애드센스: 콘솔에서 만든 광고 단위의 <b>슬롯 ID</b>(data-ad-slot 숫자)만 넣으면 돼요. 직접 코드: 다른 네트워크 태그나 자체 배너 HTML을 그대로 붙여넣어요(&lt;script&gt;도 실행돼요). 최소 높이는 광고가 늦게 떠도 화면이 밀리지 않게 미리 비워두는 값이에요.</p>
   </div>
 
@@ -88,6 +88,18 @@ let cfg=null;
 function pagePicker(el, selected){ el.innerHTML=PAGES.map(p=>`<label class="${selected.includes(p)?'on':''}"><input type="checkbox" value="${p}" ${selected.includes(p)?'checked':''} hidden>${p.replace('.html','')}</label>`).join(''); el.querySelectorAll('label').forEach(l=>l.addEventListener('click',e=>{ e.preventDefault(); const c=l.querySelector('input'); c.checked=!c.checked; l.classList.toggle('on',c.checked); })); }
 function picked(el){ return [...el.querySelectorAll('input:checked')].map(i=>i.value); }
 const escA=v=>String(v==null?'':v).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+// 이미지 한 장을 올리는 줄. v 가 '' 이면 PC·기본, 'M' 이면 휴대폰용 (설정 키: img/w/h, imgM/wM/hM)
+function imgRow(c, v, label){ const src=c['img'+v]; return `<div class="field" style="margin-top:8px"><label>${label}</label></div>
+      <div class="imgrow" data-v="${v}">
+        <div class="i-preview">${src?`<img src="${escA(src)}" alt="">`:'<span>이미지 없음</span>'}</div>
+        <div class="imgside">
+          <input type="file" class="i-file" accept="image/png,image/jpeg,image/gif,image/webp" hidden>
+          <button type="button" class="i-pick mini" style="margin-left:0">이미지 파일 올리기</button>
+          <button type="button" class="i-clear mini">비우기</button>
+          <div class="i-status tip">${src&&c['w'+v]?c['w'+v]+'×'+c['h'+v]+'px':''}</div>
+          <input type="hidden" class="i-img" value="${escA(src)}"><input type="hidden" class="i-w" value="${escA(c['w'+v]||'')}"><input type="hidden" class="i-h" value="${escA(c['h'+v]||'')}">
+        </div>
+      </div>`; }
 // 배너 한 개의 입력란. 자리의 기본 배너와 페이지별 배너가 같은 모양을 쓴다.
 function creativeHTML(c, fmt){ c=c||{}; const t=c.type||'adsense'; return `<div class="creative">
     <div class="row3">
@@ -96,25 +108,18 @@ function creativeHTML(c, fmt){ c=c||{}; const t=c.type||'adsense'; return `<div 
       <div class="field only-adsense"><label>형식</label><select class="c-format">${['auto','horizontal','rectangle','vertical'].map(f=>`<option value="${f}" ${(c.format||fmt)===f?'selected':''}>${f}</option>`).join('')}</select></div>
     </div>
     <div class="only-image">
-      <div class="imgrow">
-        <div class="c-preview">${c.img?`<img src="${escA(c.img)}" alt="">`:'<span>이미지 없음</span>'}</div>
-        <div class="imgside">
-          <input type="file" class="c-file" accept="image/png,image/jpeg,image/gif,image/webp" hidden>
-          <button type="button" class="c-pick mini" style="margin-left:0">이미지 파일 올리기</button>
-          <div class="c-upstatus tip"></div>
-          <input type="hidden" class="c-img" value="${escA(c.img)}"><input type="hidden" class="c-w" value="${escA(c.w||'')}"><input type="hidden" class="c-h" value="${escA(c.h||'')}">
-        </div>
-      </div>
+      ${imgRow(c,'','PC용 이미지 (휴대폰용을 따로 안 올리면 휴대폰에도 이 이미지가 나와요)')}
+      ${imgRow(c,'M','휴대폰용 이미지 (선택 — 화면 폭 720px 미만에서 나와요)')}
       <div class="field" style="margin-top:8px"><label>누르면 이동할 주소 (비우면 링크 없이 이미지만)</label><input type="url" class="c-href" value="${escA(c.href)}" placeholder="https://"></div>
       <div class="field" style="margin-top:8px"><label>이미지 설명 (alt — 화면 낭독기·이미지가 안 뜰 때 보이는 글)</label><input type="text" class="c-alt" value="${escA(c.alt)}" placeholder="예: ○○ 가을 할인"></div>
     </div>
     <div class="field only-html" style="margin-top:8px"><label>직접 코드 <button type="button" class="s-test mini">테스트 배너 넣기</button></label><textarea class="c-html html" placeholder="<a href='...'><img src='...'></a> 또는 광고 네트워크 태그">${(c.html||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')}</textarea></div>
   </div>`; }
-function readCreative(el){ const g=c=>el.querySelector(c); return { type:g('.c-type').value, slot:g('.c-slot').value.trim(), format:g('.c-format').value, html:g('.c-html').value, img:g('.c-img').value.trim(), href:g('.c-href').value.trim(), alt:g('.c-alt').value.trim(), w:+g('.c-w').value||0, h:+g('.c-h').value||0 }; }
+function readCreative(el){ const g=c=>el.querySelector(c); const im=v=>{ const r=el.querySelector('.imgrow[data-v="'+v+'"]'); return {['img'+v]:r.querySelector('.i-img').value.trim(), ['w'+v]:+r.querySelector('.i-w').value||0, ['h'+v]:+r.querySelector('.i-h').value||0}; }; return Object.assign({ type:g('.c-type').value, slot:g('.c-slot').value.trim(), format:g('.c-format').value, html:g('.c-html').value, href:g('.c-href').value.trim(), alt:g('.c-alt').value.trim() }, im(''), im('M')); }
 function syncType(el){ el.dataset.type=el.querySelector('.c-type').value; }
-// 이미지 파일을 워커에 올리고 받은 주소·크기를 입력란에 채운다
+// 이미지 파일을 워커에 올리고 받은 주소·크기를 그 줄(.imgrow)의 입력란에 채운다
 async function uploadImage(el, file){
-  const st=el.querySelector('.c-upstatus'); const say=(m,cls)=>{ st.className='c-upstatus tip'+(cls?' '+cls:''); st.textContent=m; };
+  const st=el.querySelector('.i-status'); const say=(m,cls)=>{ st.className='i-status tip'+(cls?' '+cls:''); st.textContent=m; };
   if(!file) return;
   if(!/^image\/(png|jpeg|gif|webp)$/.test(file.type)){ say('PNG·JPG·GIF·WebP 파일만 올릴 수 있어요.','bad'); return; }
   if(file.size>1024*1024){ say('파일이 1MB 를 넘어요('+Math.round(file.size/1024)+'KB). 줄여서 다시 올려 주세요.','bad'); return; }
@@ -125,16 +130,19 @@ async function uploadImage(el, file){
     const r=await fetch('/api/ads/image',{method:'POST',cache:'no-store',headers:{'content-type':file.type,'x-admin-token':$('token').value.trim()},body:file});
     const raw=await r.text(); let d; try{ d=JSON.parse(raw); }catch{ throw new Error('HTTP '+r.status); }
     if(!d.ok) throw new Error(d.error||'fail');
-    el.querySelector('.c-img').value=d.url; el.querySelector('.c-w').value=dims.w; el.querySelector('.c-h').value=dims.h;
-    el.querySelector('.c-preview').innerHTML=''; const im=document.createElement('img'); im.src=d.url; im.alt=''; el.querySelector('.c-preview').appendChild(im);
+    el.querySelector('.i-img').value=d.url; el.querySelector('.i-w').value=dims.w; el.querySelector('.i-h').value=dims.h;
+    el.querySelector('.i-preview').innerHTML=''; const im=document.createElement('img'); im.src=d.url; im.alt=''; el.querySelector('.i-preview').appendChild(im);
     say('올렸어요 — '+dims.w+'×'+dims.h+'px, '+Math.round(file.size/1024)+'KB. 아래 저장을 눌러야 사이트에 반영돼요.','ok');
   }catch(e){ const M={unauthorized:'토큰이 틀렸어요.',no_admin_token:'워커에 ADMIN_TOKEN 시크릿이 없어요.',too_large:'파일이 1MB 를 넘어요.',bad_type:'PNG·JPG·GIF·WebP 가 아닌 파일이에요.',kv_write_failed:'저장소 쓰기 실패 — 오늘 쓰기 한도를 넘겼을 수 있어요.'}; say('올리기 실패: '+(M[e.message]||e.message),'bad'); }
 }
 function bindCreative(el, k){
   syncType(el);
   el.querySelector('.c-type').addEventListener('change',()=>syncType(el));
-  el.querySelector('.c-pick').addEventListener('click',()=>el.querySelector('.c-file').click());
-  el.querySelector('.c-file').addEventListener('change',e=>{ uploadImage(el,e.target.files[0]); e.target.value=''; });
+  el.querySelectorAll('.imgrow').forEach(row=>{
+    row.querySelector('.i-pick').addEventListener('click',()=>row.querySelector('.i-file').click());
+    row.querySelector('.i-file').addEventListener('change',e=>{ uploadImage(row,e.target.files[0]); e.target.value=''; });
+    row.querySelector('.i-clear').addEventListener('click',()=>{ row.querySelector('.i-img').value=''; row.querySelector('.i-w').value=''; row.querySelector('.i-h').value=''; row.querySelector('.i-preview').innerHTML='<span>이미지 없음</span>'; row.querySelector('.i-status').className='i-status tip'; row.querySelector('.i-status').textContent='비웠어요. 아래 저장을 눌러야 반영돼요.'; });
+  });
   el.querySelector('.s-test').addEventListener('click',()=>{
     el.querySelector('.c-html').value=testBanner(k);
     el.querySelector('.c-type').value='html'; syncType(el);      // 직접 코드로 전환

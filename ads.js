@@ -4,6 +4,7 @@
    { enabled:true, client:'ca-pub-xxxx', excludePages:['privacy.html'],
      slots:{ top:{enabled, type:'adsense'|'html'|'image', slot:'1234567890', format:'auto'|'horizontal'|'rectangle', html:'',
                   img:'/api/ads/image/<id>', href:'https://…', alt:'', w:728, h:90,      // type:'image' 일 때 — 이미지 배너
+                  imgM:'/api/ads/image/<id>', wM:640, hM:200,                           // (선택) 휴대폰용 이미지. 없으면 img 를 같이 쓴다
                   minH:{m:100,d:90}, exclude:['game2048.html'],
                   rules:[ {pages:['salary.html','pyeong.html'], type:'image', img, href, alt, w, h} ]   // 페이지별 배너. 맞는 첫 규칙이 기본 배너 대신 나온다
                 }, ... } }
@@ -46,11 +47,14 @@
 
   // 이미지 배너. 설정값을 HTML 로 이어 붙이지 않고 요소를 직접 만들어 넣는다
   function imageBanner(el, c, k) {
-    var src = safeUrl(c.img); if (!src) return false;
+    // 휴대폰(화면 폭 720px 미만)에서는 휴대폰용 이미지가 있으면 그것을, 없으면 PC용을 쓴다
+    var useM = mobile && safeUrl(c.imgM);
+    var src = useM ? safeUrl(c.imgM) : safeUrl(c.img); if (!src) return false;
+    var iw = useM ? +c.wM : +c.w, ih = useM ? +c.hM : +c.h;
     var href = safeUrl(c.href);
     var img = document.createElement('img');
     img.src = src; img.alt = c.alt || ''; img.decoding = 'async';
-    if (+c.w > 0 && +c.h > 0) { img.width = +c.w; img.height = +c.h; }
+    if (iw > 0 && ih > 0) { img.width = iw; img.height = ih; }
     img.style.cssText = 'max-width:100%;height:auto;display:block;margin:0 auto;border:0';
     var box = img;
     if (href) {

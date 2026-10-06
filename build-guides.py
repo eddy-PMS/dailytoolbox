@@ -421,6 +421,89 @@ def update_home(all_guides):
         new = s[:j] + '\n<!-- guides:home:start -->' + block + '<!-- guides:home:end -->' + s[j:]
     open(path, 'w', encoding='utf-8').write(new); print('홈 생활 가이드 섹션 반영')
 
+def git_first_dates():
+    """파일별 처음 추가된 커밋 날짜(YYYY-MM-DD). 얕은 클론·git 오류면 None."""
+    import subprocess
+    try:
+        shallow = subprocess.run(['git', 'rev-parse', '--is-shallow-repository'],
+                                 cwd=ROOT, capture_output=True, text=True).stdout.strip()
+        if shallow != 'false':
+            return None
+        out = subprocess.run(['git', '-c', 'core.quotepath=false', 'log', '--diff-filter=A', '--pretty=format:%cs', '--name-only'],
+                             cwd=ROOT, capture_output=True, text=True, encoding='utf-8').stdout
+    except Exception:
+        return None
+    dates, cur = {}, None
+    for ln in out.split('\n'):
+        ln = ln.strip()
+        if not ln:
+            continue
+        if re.fullmatch(r'\d{4}-\d{2}-\d{2}', ln):
+            cur = ln
+        else:
+            dates[ln] = cur           # 최신 커밋부터 나오므로 마지막에 덮어쓴 값이 처음 추가된 날
+    return dates
+
+def update_home_new(tools, n=6):
+    """홈 히어로의 "신규" 칩을 가장 최근에 추가된 도구 n개로 바꾼다.
+    추가일은 git 에 처음 커밋된 날. 아직 커밋 전인 새 도구는 오늘로 보고 맨 앞에 둔다.
+    같은 날 추가된 도구끼리는 nav.js GROUPS 에 적힌 순서를 따른다."""
+    first = git_first_dates()
+    if first is None:
+        print('  (git 이력을 읽지 못해 홈 신규 목록은 그대로 둠)'); return
+    path = os.path.join(ROOT, 'index.html'); s = open(path, encoding='utf-8').read()
+    today = datetime.date.today().isoformat()
+    order = list(tools)                                    # GROUPS 순서
+    ranked = sorted(order, key=lambda f: (first.get(f) or today, -order.index(f)), reverse=True)[:n]
+    chips = ''.join(f'<a href="{tools[f]["slug"]}">{esc(re.sub(r"\s*\(.*?\)\s*$", "", tools[f]["title"]))}</a>' for f in ranked)
+    new = inject(s, '<!-- new:home:start -->', '<!-- new:home:end -->', chips)
+    if new is None:                                        # 처음 한 번: 손으로 적혀 있던 칩을 표시 주석으로 감싼다
+        m = re.search(r'(<div class="hero-hot"><span class="lb">.*?</span>)(.*?)(</div>)', s, flags=re.S)
+        if not m:
+            print('  (홈에서 신규 목록 자리를 찾지 못함)'); return
+        new = s[:m.start(2)] + '<!-- new:home:start -->' + chips + '<!-- new:home:end -->' + s[m.end(2):]
+    if new != s:
+        open(path, 'w', encoding='utf-8').write(new)
+    print('홈 신규 목록 반영:', ', '.join(tools[f]['slug'] for f in ranked))
+
+def update_home_popular(tools, n=6):
+    """홈 "인기 도구" 카드를 guide/popular-order.txt 에 적힌 순서대로 다시 쓴다.
+    한 줄 형식: slug | 카드 제목 | 짧은 설명 | 배경색 (slug 뒤는 생략 가능). 파일이 없으면 홈을 그대로 둔다."""
+    order = os.path.join(OUT, 'popular-order.txt')
+    if not os.path.exists(order):
+        return
+    picked = []
+    for line in open(order, encoding='utf-8'):
+        line = line.split('#')[0].strip() if line.lstrip().startswith('#') else line.strip()
+        if not line:
+            continue
+        cols = [c.strip() for c in line.split('|')] + ['', '', '']
+        f = cols[0] + '.html'
+        if f not in tools or any(p[0] == f for p in picked):
+            continue                                       # nav.js 에 없는 도구·중복은 건너뛴다
+        t = tools[f]
+        title = cols[1] or re.sub(r'\s*\(.*?\)\s*$', '', t['title'])
+        desc = cols[2] or re.split(r'[,·]', t['desc'])[0].strip()
+        bg = cols[3] if re.fullmatch(r'#[0-9a-fA-F]{3,8}', cols[3]) else '#eef3fb'
+        picked.append((f, title, desc, bg))
+        if len(picked) == n:
+            break
+    if not picked:
+        print('  (popular-order.txt 에 쓸 수 있는 도구가 없어 홈 인기 도구는 그대로 둠)'); return
+    path = os.path.join(ROOT, 'index.html'); s = open(path, encoding='utf-8').read()
+    cards = '\n' + ''.join(
+        f'      <a class="pop-card" href="{tools[f]["slug"]}"><span class="ic" style="background:{bg}"><img src="/icons/{tools[f]["slug"]}.webp" width="34" height="34" alt=""></span>'
+        f'<span class="t">{esc(title)}</span><span class="d">{esc(desc)}</span></a>\n' for f, title, desc, bg in picked) + '    '
+    new = inject(s, '<!-- pop:home:start -->', '<!-- pop:home:end -->', cards)
+    if new is None:                                        # 처음 한 번: 손으로 적혀 있던 카드를 표시 주석으로 감싼다
+        m = re.search(r'(<div class="pop-cards">)(.*?)(</div>\s*</section>)', s, flags=re.S)
+        if not m:
+            print('  (홈에서 인기 도구 자리를 찾지 못함)'); return
+        new = s[:m.start(2)] + '<!-- pop:home:start -->' + cards + '<!-- pop:home:end -->' + s[m.end(2):]
+    if new != s:
+        open(path, 'w', encoding='utf-8').write(new)
+    print('홈 인기 도구 반영:', ', '.join(tools[f]['slug'] for f, *_ in picked))
+
 def update_sitemap(all_guides):
     path = os.path.join(ROOT, 'sitemap.xml'); s = open(path, encoding='utf-8').read()
     # 목록 페이지는 글이 추가될 때 바뀌므로 가장 최근 글 날짜를 쓴다
@@ -510,7 +593,7 @@ def main():
         print('생성:', f'guide/{g["slug"]}.html', f'({g["meta"]["title"]})')
     open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(render_index(guides))
     print('생성: guide/index.html')
-    update_tool_pages(guides, tools); update_home(guides); update_sitemap(guides); refresh_sitemap_lastmod()
+    update_tool_pages(guides, tools); update_home(guides); update_home_new(tools); update_home_popular(tools); update_sitemap(guides); refresh_sitemap_lastmod()
 
 if __name__ == '__main__':
     main()

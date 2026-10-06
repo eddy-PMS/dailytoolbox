@@ -128,10 +128,21 @@ def main():
     if not files:
         print('guide/src/ 에 원고가 없어요.'); return 0
 
-    published = drafts = 0
+    # publish-order.txt 에 '!slug' 로 적힌 초안은 발행하지 않는 원고라 검사하지 않는다
+    # (그림을 다른 곳으로 옮긴 원고가 남아 있어도 매일 발행이 막히지 않게).
+    held = set()
+    order = os.path.join(ROOT, 'guide', 'publish-order.txt')
+    if os.path.exists(order):
+        for line in open(order, encoding='utf-8'):
+            h = line.split('#')[0].strip()
+            if h.startswith('!'): held.add(h[1:].strip())
+
+    published = drafts = skipped = 0
     for p in files:
         where = os.path.relpath(p, ROOT).replace('\\', '/')
         slug = os.path.splitext(os.path.basename(p))[0]
+        if slug in held:
+            skipped += 1; continue
         meta, body, line_offset = parse_front(open(p, encoding='utf-8').read())
         if meta is None:
             err(where, '머리말(--- 로 감싼 부분) 형식이 잘못됐어요'); continue
@@ -182,7 +193,7 @@ def main():
     for f in missing:
         warn('sitemap.xml', f'{f} 가 sitemap 에 없어요 ({nav[f]})')
 
-    print(f'원고 {len(files)}편 (발행 {published} / 초안 {drafts}) · 도구 {len(nav)}개 검사')
+    print(f'원고 {len(files)}편 (발행 {published} / 초안 {drafts}' + (f' / 발행 제외 {skipped}' if skipped else '') + f') · 도구 {len(nav)}개 검사')
     print()
     for where, msg in errors: print(f'  [오류] {where} — {msg}')
     for where, msg in warns: print(f'  [경고] {where} — {msg}')

@@ -66,7 +66,16 @@
         if (typeof gtag === 'function') gtag('event', 'ad_banner_click', { slot: k, page: path, banner: src.split('/').pop() });
       });
     }
-    el.appendChild(box);
+    // 이미지 오른쪽 위에 광고 표시(AD)를 붙인다. 바탕은 투명 — 흰 글씨에 어두운 테두리 그림자를 둘러 밝은 배너에서도 읽힌다.
+    // 감싸는 상자를 이미지 크기에 맞춰 표시가 이미지 모서리에 오게 한다
+    var wrap = document.createElement('div');
+    wrap.style.cssText = 'position:relative;display:inline-block;max-width:100%;line-height:0;vertical-align:top';
+    var mark = document.createElement('span');
+    mark.textContent = 'AD';
+    mark.style.cssText = 'position:absolute;top:0;right:0;padding:2px 5px;border-radius:0 0 0 4px;background:transparent;color:#fff;text-shadow:0 0 2px rgba(0,0,0,.75),0 0 1px rgba(0,0,0,.9);'
+      + 'font:700 10px/1.3 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.04em;pointer-events:none';
+    wrap.appendChild(box); wrap.appendChild(mark);
+    el.appendChild(wrap);
     return true;
   }
 

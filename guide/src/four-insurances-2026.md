@@ -1,13 +1,12 @@
 ---
 title: 4대보험 요율과 가입 조건 2026 — 누가, 얼마를, 어떻게 내나
 description: 2026년 4대보험 요율은 근로자 기준 국민연금 4.75%, 건강보험 3.595%, 장기요양 0.4724%, 고용보험 0.9%예요. 사업주 부담, 알바·단시간·일용직 4대보험 가입 조건, 월급별 공제액 표, 프리랜서 3.3%와의 차이까지 정리했어요.
-date: 2026-10-01
-updated: 2026-10-01
+date: 2026-10-07
+updated: 2026-10-07
 category: 돈·일
 tools: salary.html, parttime.html, freelancer-tax.html
 keywords: 4대보험, 4대보험 요율, 4대보험 요율 2026, 4대보험 가입 조건, 4대보험 계산, 건강보험료 계산, 알바 4대보험, 월 60시간 미만, 일용직 4대보험
 sources: 국민연금공단 — 사업장가입자(가입 대상·보험료율·기준소득월액) | https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0016M0.do ; 국민연금공단 — 연금보험료(기준소득월액 상·하한) | https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0038M0.do ; 보건복지부 — 2026년 건강보험료율 7.19%로 결정 | https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1487279&mid=a10503000000 ; 보건복지부 — 2026년도 장기요양보험료율 0.9448% | https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1487817&mid=a10503000000 ; 고용노동부 — 2026년 평균 산재보험료율 1.47% 유지 | https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=18810 ; 국가법령정보센터 — 고용산재보험료징수법 시행령 제12조(고용보험료율) | https://www.law.go.kr/LSW/lsLawLinkInfo.do?lsJoLnkSeq=1000953537&chrClsCd=010202 ; 고용노동부 — 단시간 근로자 고용보험 가입 여부(자주하는 질문) | https://www.moel.go.kr/faq/faqView.do?seqRepeat=77 ; 찾기쉬운 생활법령정보 — 건강보험 직장가입자 가입 자격 | https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=1063&ccfNo=2&cciNo=1&cnpClsNo=1 ; 두루누리 사회보험료 지원 | http://insurancesupport.or.kr/home/start.php
-draft: true
 ---
 4대보험은 국민연금·건강보험·고용보험·산재보험 네 가지예요. 2026년 근로자는 월급의 약 **9.72%**를 내고, 회사는 그보다 조금 더 냅니다. 요율은 누구에게나 같지만 **가입 대상인지**는 근무시간과 기간에 따라 달라져요. 아래 수치는 모두 공식 자료로 확인했어요(확인일 2026-10-01).
 

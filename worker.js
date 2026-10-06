@@ -35,6 +35,16 @@ const SCORE_GAMES = {
   'mine-hard': { lower: true, min: 25000, max: 1800000, minMs: 25000, timeIsScore: true }  // 지뢰찾기 고급(16×30·99)
 };
 const LB_SIZE = 100;
+// ===== 광고 배너 이미지 =====
+const AD_IMG_MAX = 1024 * 1024;                  // 1MB. 배너 한 장으로는 충분하고 KV 값 한도(25MB)보다 훨씬 작다
+const AD_IMG_TYPES = ['image/png', 'image/jpeg', 'image/gif', 'image/webp'];   // SVG 는 스크립트를 담을 수 있어 받지 않는다
+function adImageType(b) {
+  if (b.length > 8 && b[0] === 0x89 && b[1] === 0x50 && b[2] === 0x4e && b[3] === 0x47) return 'image/png';
+  if (b.length > 3 && b[0] === 0xff && b[1] === 0xd8 && b[2] === 0xff) return 'image/jpeg';
+  if (b.length > 6 && b[0] === 0x47 && b[1] === 0x49 && b[2] === 0x46 && b[3] === 0x38) return 'image/gif';
+  if (b.length > 12 && b[0] === 0x52 && b[1] === 0x49 && b[2] === 0x46 && b[3] === 0x46 && b[8] === 0x57 && b[9] === 0x45 && b[10] === 0x42 && b[11] === 0x50) return 'image/webp';
+  return null;
+}
 const BAD_WORDS = ['시발','씨발','씨팔','ㅅㅂ','병신','ㅂㅅ','좆','존나','개새','새끼','니미','엿먹','fuck','shit','bitch','sex','섹스','자지','보지','창녀','걸레'];
 const rateMap = new Map(); // ip → [timestamps] (인스턴스 단위, 간이 제한)
 function rateOk(ip, limit, windowMs) {
@@ -248,6 +258,53 @@ export default {
       }
       try { await caches.default.delete(new Request(`https://${host}/api/ads`)); } catch (e) { }
       return json({ ok: true, updatedAt: body.updatedAt });
+    }
+
+    // ---- 광고 배너 이미지: 올리기(관리자 토큰) / 내려받기(공개, 장기 캐시) / 지우기(관리자 토큰) ----
+    // 관리 페이지에서 올린 이미지 파일을 KV 에 보관한다. 주소는 /api/ads/image/<id> — id 가 매번 새로 생겨 내용이 바뀌지 않으므로 오래 캐시해도 된다.
+    if (url.pathname === '/api/ads/image' && request.method === 'POST') {
+      if (!env.ADMIN_TOKEN) return json({ ok: false, error: 'no_admin_token' }, 500);
+      if (request.headers.get('x-admin-token') !== env.ADMIN_TOKEN) return json({ ok: false, error: 'unauthorized' }, 401);
+      if (!env.WORLDCUP_KV) return json({ ok: false, error: 'not_configured' }, 500);
+      const buf = await request.arrayBuffer();
+      if (!buf.byteLength) return json({ ok: false, error: 'bad_request' }, 400);
+      if (buf.byteLength > AD_IMG_MAX) return json({ ok: false, error: 'too_large' }, 413);
+      const type = adImageType(new Uint8Array(buf));   // 보낸 쪽이 적은 종류는 믿지 않고 파일 앞머리로 판별
+      if (!type) return json({ ok: false, error: 'bad_type' }, 415);
+      let id = ''; const rnd = crypto.getRandomValues(new Uint8Array(12));
+      for (const b of rnd) id += WC_ID_CHARS[b % WC_ID_CHARS.length];
+      try {
+        await env.WORLDCUP_KV.put('adimg:' + id, buf, { metadata: { type, size: buf.byteLength, at: new Date().toISOString() } });
+      } catch (e) {
+        return json({ ok: false, error: 'kv_write_failed', detail: String(e && e.message || e).slice(0, 200) }, 500);
+      }
+      return json({ ok: true, id, url: '/api/ads/image/' + id, type, size: buf.byteLength });
+    }
+    if (url.pathname.startsWith('/api/ads/image/')) {
+      const id = url.pathname.slice('/api/ads/image/'.length);
+      if (!/^[0-9a-z]{8,16}$/.test(id)) return json({ ok: false, error: 'not_found' }, 404);
+      const ck = new Request(`https://${host}/api/ads/image/${id}`);
+      if (request.method === 'DELETE') {
+        if (!env.ADMIN_TOKEN) return json({ ok: false, error: 'no_admin_token' }, 500);
+        if (request.headers.get('x-admin-token') !== env.ADMIN_TOKEN) return json({ ok: false, error: 'unauthorized' }, 401);
+        if (!env.WORLDCUP_KV) return json({ ok: false, error: 'not_configured' }, 500);
+        await env.WORLDCUP_KV.delete('adimg:' + id);
+        try { await caches.default.delete(ck); } catch (e) { }
+        return json({ ok: true });
+      }
+      if (request.method === 'GET') {
+        if (!env.WORLDCUP_KV) return json({ ok: false, error: 'not_found' }, 404);
+        const hit = await caches.default.match(ck); if (hit) return hit;
+        const rec = await env.WORLDCUP_KV.getWithMetadata('adimg:' + id, 'arrayBuffer');
+        if (!rec || !rec.value) return json({ ok: false, error: 'not_found' }, 404);
+        const res = new Response(rec.value, { status: 200, headers: {
+          'content-type': (rec.metadata && AD_IMG_TYPES.includes(rec.metadata.type)) ? rec.metadata.type : 'application/octet-stream',
+          'cache-control': 'public, max-age=31536000, immutable',
+          'x-content-type-options': 'nosniff'
+        } });
+        ctx.waitUntil(caches.default.put(ck, res.clone()));
+        return res;
+      }
     }
 
     // ---- 게임 랭킹: 조회 ----

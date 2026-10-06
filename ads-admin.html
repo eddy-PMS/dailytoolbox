@@ -27,6 +27,15 @@ textarea.html { min-height:90px; font-family:ui-monospace, Menlo, Consolas, mono
 .disabled { opacity:.5; pointer-events:none; }
 .mini { margin-left:8px; padding:3px 9px; font-size:11px; font-family:inherit; color:var(--ink-soft); background:#fff; border:1px solid var(--line); border-radius:11px; cursor:pointer; }
 .mini:hover { border-color:var(--accent); color:var(--accent); }
+.creative .only-adsense, .creative .only-image, .creative .only-html { display:none; }
+.creative[data-type="adsense"] .only-adsense, .creative[data-type="image"] .only-image, .creative[data-type="html"] .only-html { display:block; }
+.imgrow { display:flex; gap:12px; align-items:flex-start; margin-top:8px; flex-wrap:wrap; }
+.c-preview { width:200px; max-width:100%; min-height:70px; border:1px dashed var(--line); border-radius:4px; background:#fafbfd; display:flex; align-items:center; justify-content:center; font-size:12px; color:var(--ink-soft); overflow:hidden; }
+.c-preview img { max-width:100%; height:auto; display:block; }
+.imgside { flex:1; min-width:180px; }
+.rule { margin-top:12px; padding:12px; border:1px solid var(--line); border-left:3px solid var(--accent); border-radius:4px; background:#fafbfd; }
+.rulehead { display:flex; align-items:center; justify-content:space-between; margin-bottom:8px; font-size:13px; }
+.tip.ok { color:#1a7f4b; } .tip.bad { color:#c0392b; }
 </style>
 </head>
 <body>
@@ -35,7 +44,7 @@ textarea.html { min-height:90px; font-family:ui-monospace, Menlo, Consolas, mono
 
 <main>
   <h1>광고 관리</h1>
-  <p class="sub">전 페이지의 광고 자리 6곳을 여기서 켜고 끄고, 애드센스 단위나 직접 코드(HTML)를 배정해요. 저장하면 5분 안에 전 페이지에 반영돼요. 페이지를 다시 배포할 필요가 없어요.</p>
+  <p class="sub">전 페이지의 광고 자리 6곳을 여기서 켜고 끄고, 애드센스 단위·이미지 배너·직접 코드(HTML)를 배정해요. 자리마다 페이지별로 다른 배너도 넣을 수 있어요. 저장하면 5분 안에 전 페이지에 반영돼요. 페이지를 다시 배포할 필요가 없어요.</p>
 
   <div class="card">
     <h2>관리자 인증</h2>
@@ -59,6 +68,7 @@ textarea.html { min-height:90px; font-family:ui-monospace, Menlo, Consolas, mono
   <div class="card">
     <h2>자리별 설정</h2>
     <div id="slots"></div>
+    <p class="tip">이미지 배너: 이미지 파일(PNG·JPG·GIF·WebP, 1MB 이하)을 올리고 누르면 이동할 주소를 넣어요. 화면보다 큰 이미지는 폭에 맞춰 줄어들어요. 페이지별 배너: 고른 페이지에서는 기본 배너 대신 그 배너가 나오고, 여러 묶음에 같은 페이지가 있으면 위쪽 묶음이 이겨요. 특정 페이지에만 배너를 내고 싶으면 자리의 “사용”은 켜 두고 기본 배너의 이미지를 비워 두세요.</p>
     <p class="tip">애드센스: 콘솔에서 만든 광고 단위의 <b>슬롯 ID</b>(data-ad-slot 숫자)만 넣으면 돼요. 직접 코드: 다른 네트워크 태그나 자체 배너 HTML을 그대로 붙여넣어요(&lt;script&gt;도 실행돼요). 최소 높이는 광고가 늦게 떠도 화면이 밀리지 않게 미리 비워두는 값이에요.</p>
   </div>
 
@@ -77,29 +87,98 @@ const PAGES=(window.TOOLBOX?window.TOOLBOX.groups.flatMap(g=>g.items.map(i=>i[0]
 let cfg=null;
 function pagePicker(el, selected){ el.innerHTML=PAGES.map(p=>`<label class="${selected.includes(p)?'on':''}"><input type="checkbox" value="${p}" ${selected.includes(p)?'checked':''} hidden>${p.replace('.html','')}</label>`).join(''); el.querySelectorAll('label').forEach(l=>l.addEventListener('click',e=>{ e.preventDefault(); const c=l.querySelector('input'); c.checked=!c.checked; l.classList.toggle('on',c.checked); })); }
 function picked(el){ return [...el.querySelectorAll('input:checked')].map(i=>i.value); }
+const escA=v=>String(v==null?'':v).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+// 배너 한 개의 입력란. 자리의 기본 배너와 페이지별 배너가 같은 모양을 쓴다.
+function creativeHTML(c, fmt){ c=c||{}; const t=c.type||'adsense'; return `<div class="creative">
+    <div class="row3">
+      <div class="field"><label>종류</label><select class="c-type"><option value="adsense" ${t==='adsense'?'selected':''}>애드센스 단위</option><option value="image" ${t==='image'?'selected':''}>이미지 배너</option><option value="html" ${t==='html'?'selected':''}>직접 코드 (HTML)</option></select></div>
+      <div class="field only-adsense"><label>애드센스 슬롯 ID</label><input type="text" class="c-slot" value="${escA(c.slot)}" placeholder="1234567890"></div>
+      <div class="field only-adsense"><label>형식</label><select class="c-format">${['auto','horizontal','rectangle','vertical'].map(f=>`<option value="${f}" ${(c.format||fmt)===f?'selected':''}>${f}</option>`).join('')}</select></div>
+    </div>
+    <div class="only-image">
+      <div class="imgrow">
+        <div class="c-preview">${c.img?`<img src="${escA(c.img)}" alt="">`:'<span>이미지 없음</span>'}</div>
+        <div class="imgside">
+          <input type="file" class="c-file" accept="image/png,image/jpeg,image/gif,image/webp" hidden>
+          <button type="button" class="c-pick mini" style="margin-left:0">이미지 파일 올리기</button>
+          <div class="c-upstatus tip"></div>
+          <input type="hidden" class="c-img" value="${escA(c.img)}"><input type="hidden" class="c-w" value="${escA(c.w||'')}"><input type="hidden" class="c-h" value="${escA(c.h||'')}">
+        </div>
+      </div>
+      <div class="field" style="margin-top:8px"><label>누르면 이동할 주소 (비우면 링크 없이 이미지만)</label><input type="url" class="c-href" value="${escA(c.href)}" placeholder="https://"></div>
+      <div class="field" style="margin-top:8px"><label>이미지 설명 (alt — 화면 낭독기·이미지가 안 뜰 때 보이는 글)</label><input type="text" class="c-alt" value="${escA(c.alt)}" placeholder="예: ○○ 가을 할인"></div>
+    </div>
+    <div class="field only-html" style="margin-top:8px"><label>직접 코드 <button type="button" class="s-test mini">테스트 배너 넣기</button></label><textarea class="c-html html" placeholder="<a href='...'><img src='...'></a> 또는 광고 네트워크 태그">${(c.html||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')}</textarea></div>
+  </div>`; }
+function readCreative(el){ const g=c=>el.querySelector(c); return { type:g('.c-type').value, slot:g('.c-slot').value.trim(), format:g('.c-format').value, html:g('.c-html').value, img:g('.c-img').value.trim(), href:g('.c-href').value.trim(), alt:g('.c-alt').value.trim(), w:+g('.c-w').value||0, h:+g('.c-h').value||0 }; }
+function syncType(el){ el.dataset.type=el.querySelector('.c-type').value; }
+// 이미지 파일을 워커에 올리고 받은 주소·크기를 입력란에 채운다
+async function uploadImage(el, file){
+  const st=el.querySelector('.c-upstatus'); const say=(m,cls)=>{ st.className='c-upstatus tip'+(cls?' '+cls:''); st.textContent=m; };
+  if(!file) return;
+  if(!/^image\/(png|jpeg|gif|webp)$/.test(file.type)){ say('PNG·JPG·GIF·WebP 파일만 올릴 수 있어요.','bad'); return; }
+  if(file.size>1024*1024){ say('파일이 1MB 를 넘어요('+Math.round(file.size/1024)+'KB). 줄여서 다시 올려 주세요.','bad'); return; }
+  const dims=await new Promise(res=>{ const im=new Image(); const u=URL.createObjectURL(file); im.onload=()=>{ res({w:im.naturalWidth,h:im.naturalHeight}); URL.revokeObjectURL(u); }; im.onerror=()=>{ res(null); URL.revokeObjectURL(u); }; im.src=u; });
+  if(!dims){ say('이미지를 읽지 못했어요. 파일을 확인해 주세요.','bad'); return; }
+  say('올리는 중…');
+  try{
+    const r=await fetch('/api/ads/image',{method:'POST',cache:'no-store',headers:{'content-type':file.type,'x-admin-token':$('token').value.trim()},body:file});
+    const raw=await r.text(); let d; try{ d=JSON.parse(raw); }catch{ throw new Error('HTTP '+r.status); }
+    if(!d.ok) throw new Error(d.error||'fail');
+    el.querySelector('.c-img').value=d.url; el.querySelector('.c-w').value=dims.w; el.querySelector('.c-h').value=dims.h;
+    el.querySelector('.c-preview').innerHTML=''; const im=document.createElement('img'); im.src=d.url; im.alt=''; el.querySelector('.c-preview').appendChild(im);
+    say('올렸어요 — '+dims.w+'×'+dims.h+'px, '+Math.round(file.size/1024)+'KB. 아래 저장을 눌러야 사이트에 반영돼요.','ok');
+  }catch(e){ const M={unauthorized:'토큰이 틀렸어요.',no_admin_token:'워커에 ADMIN_TOKEN 시크릿이 없어요.',too_large:'파일이 1MB 를 넘어요.',bad_type:'PNG·JPG·GIF·WebP 가 아닌 파일이에요.',kv_write_failed:'저장소 쓰기 실패 — 오늘 쓰기 한도를 넘겼을 수 있어요.'}; say('올리기 실패: '+(M[e.message]||e.message),'bad'); }
+}
+function bindCreative(el, k){
+  syncType(el);
+  el.querySelector('.c-type').addEventListener('change',()=>syncType(el));
+  el.querySelector('.c-pick').addEventListener('click',()=>el.querySelector('.c-file').click());
+  el.querySelector('.c-file').addEventListener('change',e=>{ uploadImage(el,e.target.files[0]); e.target.value=''; });
+  el.querySelector('.s-test').addEventListener('click',()=>{
+    el.querySelector('.c-html').value=testBanner(k);
+    el.querySelector('.c-type').value='html'; syncType(el);      // 직접 코드로 전환
+    const box=el.closest('.slotbox'); if(el.parentNode.classList.contains('s-default')) box.querySelector('.s-enabled').checked=true;   // 바로 보이도록 사용 켜기
+    $('saveStatus').className='status ok';
+    $('saveStatus').textContent='테스트 배너를 넣었어요. 아래 저장을 눌러야 사이트에 반영돼요.';
+  });
+}
+// 페이지별 배너 한 묶음: 어느 페이지에 + 어떤 배너
+function addRule(box, k, fmt, rule){
+  rule=rule||{type:'image',pages:[]};
+  const known=(rule.pages||[]).filter(p=>PAGES.includes(p)), extra=(rule.pages||[]).filter(p=>!PAGES.includes(p));
+  const div=document.createElement('div'); div.className='rule';
+  div.innerHTML=`<div class="rulehead"><b>페이지별 배너</b><button type="button" class="r-del mini">이 묶음 지우기</button></div>
+    <div class="field"><label>이 배너를 보여줄 페이지 (누른 페이지에서만 기본 배너 대신 나와요)</label><div class="pages r-pages"></div></div>
+    <div class="field" style="margin-top:8px"><label>가이드 글처럼 위 목록에 없는 페이지 (주소 끝 이름을 쉼표로)</label><input type="text" class="r-extra" value="${escA(extra.map(p=>p.replace(/\.html$/,'')).join(', '))}" placeholder="예: pyeong-square-meter, minimum-wage-2026"></div>
+    <div style="margin-top:10px">${creativeHTML(rule,fmt)}</div>`;
+  box.querySelector('.s-rules').appendChild(div);
+  pagePicker(div.querySelector('.r-pages'), known);
+  bindCreative(div.querySelector('.creative'), k);
+  div.querySelector('.r-del').addEventListener('click',()=>div.remove());
+}
+function readRule(div){
+  const extra=div.querySelector('.r-extra').value.split(',').map(x=>x.trim().replace(/^\/+/,'').replace(/^guide\//,'')).filter(Boolean).map(x=>/\.html$/.test(x)?x:x+'.html');
+  return Object.assign({pages:[...new Set(picked(div.querySelector('.r-pages')).concat(extra))]}, readCreative(div.querySelector('.creative')));
+}
 function renderSlots(){
   $('slots').innerHTML=SLOTS.map(([k,label,mh,fmt])=>{ const s=(cfg.slots&&cfg.slots[k])||{}; return `<div class="slotbox" data-k="${k}">
     <h3>${label} <code>data-ad="${k}"</code><label><input type="checkbox" class="s-enabled" ${s.enabled?'checked':''}> 사용</label></h3>
-    <div class="row3">
-      <div class="field"><label>종류</label><select class="s-type"><option value="adsense" ${s.type!=='html'?'selected':''}>애드센스 단위</option><option value="html" ${s.type==='html'?'selected':''}>직접 코드 (HTML)</option></select></div>
-      <div class="field"><label>애드센스 슬롯 ID</label><input type="text" class="s-slot" value="${s.slot||''}" placeholder="1234567890"></div>
-      <div class="field"><label>형식</label><select class="s-format">${['auto','horizontal','rectangle','vertical'].map(f=>`<option value="${f}" ${(s.format||fmt)===f?'selected':''}>${f}</option>`).join('')}</select></div>
+    <div class="s-default">${creativeHTML(s,fmt)}</div>
+    <div class="row3" style="margin-top:8px">
       <div class="field"><label>최소 높이 · 모바일(px)</label><input type="number" class="s-mh-m" value="${s.minH?s.minH.m:mh.m}"></div>
       <div class="field"><label>최소 높이 · 데스크톱(px)</label><input type="number" class="s-mh-d" value="${s.minH?s.minH.d:mh.d}"></div>
     </div>
-    <div class="field" style="margin-top:8px"><label>직접 코드 (종류가 HTML일 때) <button type="button" class="s-test mini">테스트 배너 넣기</button></label><textarea class="s-html html" placeholder="<a href='...'><img src='...'></a> 또는 광고 네트워크 태그">${(s.html||'').replace(/</g,'&lt;')}</textarea></div>
     <div class="field" style="margin-top:8px"><label>이 자리를 뺄 페이지</label><div class="pages s-exclude"></div></div>
+    <div class="s-rules"></div>
+    <button type="button" class="s-addrule mini" style="margin:10px 0 0">+ 페이지별 배너 추가</button>
   </div>`; }).join('');
   $('slots').querySelectorAll('.slotbox').forEach(box=>{
-    const k=box.dataset.k;
-    pagePicker(box.querySelector('.s-exclude'), (cfg.slots&&cfg.slots[k]&&cfg.slots[k].exclude)||[]);
-    box.querySelector('.s-test').addEventListener('click',()=>{
-      box.querySelector('.s-html').value=testBanner(k);
-      box.querySelector('.s-type').value='html';          // 직접 코드로 전환
-      box.querySelector('.s-enabled').checked=true;       // 바로 보이도록 사용 켜기
-      $('saveStatus').className='status ok';
-      $('saveStatus').textContent='테스트 배너를 넣었어요. 아래 저장을 눌러야 사이트에 반영돼요.';
-    });
+    const k=box.dataset.k, fmt=(SLOTS.find(s=>s[0]===k)||[])[3], s=(cfg.slots&&cfg.slots[k])||{};
+    pagePicker(box.querySelector('.s-exclude'), s.exclude||[]);
+    bindCreative(box.querySelector('.s-default .creative'), k);
+    (s.rules||[]).forEach(r=>addRule(box,k,fmt,r));
+    box.querySelector('.s-addrule').addEventListener('click',()=>addRule(box,k,fmt));
   });
 }
 // 자리 크기에 맞춘 테스트용 배너. 외부 파일을 안 불러오는 순수 HTML 이라 그대로 넣으면 바로 보인다.
@@ -119,7 +198,7 @@ function testBanner(k){
 }
 function collect(){
   const out={enabled:$('enabled').value==='1', client:$('client').value.trim(), autoAds:$('autoAds').value==='1', excludePages:picked($('excludePages')), slots:{}};
-  $('slots').querySelectorAll('.slotbox').forEach(box=>{ const k=box.dataset.k; out.slots[k]={enabled:box.querySelector('.s-enabled').checked, type:box.querySelector('.s-type').value, slot:box.querySelector('.s-slot').value.trim(), format:box.querySelector('.s-format').value, minH:{m:+box.querySelector('.s-mh-m').value||0, d:+box.querySelector('.s-mh-d').value||0}, html:box.querySelector('.s-html').value, exclude:picked(box.querySelector('.s-exclude'))}; });
+  $('slots').querySelectorAll('.slotbox').forEach(box=>{ const k=box.dataset.k; out.slots[k]=Object.assign({enabled:box.querySelector('.s-enabled').checked}, readCreative(box.querySelector('.s-default .creative')), {minH:{m:+box.querySelector('.s-mh-m').value||0, d:+box.querySelector('.s-mh-d').value||0}, exclude:picked(box.querySelector('.s-exclude')), rules:[...box.querySelectorAll('.rule')].map(readRule).filter(r=>r.pages.length)}); });
   return out;
 }
 function fill(c){ cfg=c||{enabled:false,client:'',autoAds:false,excludePages:['privacy.html','about.html','404.html'],slots:{}}; $('enabled').value=cfg.enabled?'1':'0'; $('client').value=cfg.client||''; $('autoAds').value=cfg.autoAds?'1':'0'; pagePicker($('excludePages'),cfg.excludePages||[]); renderSlots(); $('editor').classList.remove('disabled'); $('meta').textContent= cfg.updatedAt? '마지막 저장: '+new Date(cfg.updatedAt).toLocaleString('ko-KR') : '저장된 설정이 아직 없어요 (기본값 표시).'; }

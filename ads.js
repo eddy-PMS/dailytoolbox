@@ -2,7 +2,11 @@
    /api/ads 의 설정(관리 페이지 ads-admin.html 에서 저장)을 읽어 .ad-slot[data-ad=…] 자리에 광고를 넣는다.
    설정 구조:
    { enabled:true, client:'ca-pub-xxxx', excludePages:['privacy.html'],
-     slots:{ top:{enabled, type:'adsense'|'html', slot:'1234567890', format:'auto'|'horizontal'|'rectangle', html:'', minH:{m:100,d:90}, exclude:['game2048.html']}, ... } }
+     slots:{ top:{enabled, type:'adsense'|'html'|'image', slot:'1234567890', format:'auto'|'horizontal'|'rectangle', html:'',
+                  img:'/api/ads/image/<id>', href:'https://…', alt:'', w:728, h:90,      // type:'image' 일 때 — 이미지 배너
+                  minH:{m:100,d:90}, exclude:['game2048.html'],
+                  rules:[ {pages:['salary.html','pyeong.html'], type:'image', img, href, alt, w, h} ]   // 페이지별 배너. 맞는 첫 규칙이 기본 배너 대신 나온다
+                }, ... } }
    미리보기: 아무 페이지나 ?adpreview=1 로 열면 설정과 무관하게 슬롯 자리를 라벨 박스로 표시 */
 (function () {
   var path = location.pathname.split('/').pop() || 'index.html'; if (path === '') path = 'index.html';
@@ -29,6 +33,39 @@
     });
   }
 
+  // 페이지별 규칙: 이 페이지가 들어 있는 첫 규칙을 쓰고, 없으면 자리의 기본 배너를 쓴다
+  function creativeFor(sc) {
+    var rules = sc.rules || [];
+    for (var i = 0; i < rules.length; i++) {
+      if (rules[i] && (rules[i].pages || []).indexOf(path) >= 0) return rules[i];
+    }
+    return sc;
+  }
+
+  function safeUrl(u) { u = String(u || '').trim(); return /^(https?:\/\/|\/(?!\/))/i.test(u) ? u : ''; }
+
+  // 이미지 배너. 설정값을 HTML 로 이어 붙이지 않고 요소를 직접 만들어 넣는다
+  function imageBanner(el, c, k) {
+    var src = safeUrl(c.img); if (!src) return false;
+    var href = safeUrl(c.href);
+    var img = document.createElement('img');
+    img.src = src; img.alt = c.alt || ''; img.decoding = 'async';
+    if (+c.w > 0 && +c.h > 0) { img.width = +c.w; img.height = +c.h; }
+    img.style.cssText = 'max-width:100%;height:auto;display:block;margin:0 auto;border:0';
+    var box = img;
+    if (href) {
+      box = document.createElement('a');
+      box.href = href; box.target = '_blank'; box.rel = 'sponsored noopener';
+      box.style.cssText = 'display:block';
+      box.appendChild(img);
+      box.addEventListener('click', function () {
+        if (typeof gtag === 'function') gtag('event', 'ad_banner_click', { slot: k, page: path, banner: src.split('/').pop() });
+      });
+    }
+    el.appendChild(box);
+    return true;
+  }
+
   var adsenseLoaded = false;
   function loadAdsense(client) {
     if (adsenseLoaded || !client) return; adsenseLoaded = true;
@@ -47,15 +84,17 @@
       if ((sc.exclude || []).indexOf(path) >= 0) return;
       var mh = sc.minH ? (mobile ? sc.minH.m : sc.minH.d) : 0;
       if (mh) el.style.minHeight = mh + 'px';
-      if (sc.type === 'html' && sc.html) { el.innerHTML = sc.html; runScripts(el); any = true; return; }
-      if (sc.type === 'adsense' && sc.slot && cfg.client) {
+      var c = creativeFor(sc);
+      if (c.type === 'image') { if (imageBanner(el, c, k)) any = true; return; }
+      if (c.type === 'html' && c.html) { el.innerHTML = c.html; runScripts(el); any = true; return; }
+      if (c.type === 'adsense' && c.slot && cfg.client) {
         loadAdsense(cfg.client);
         var ins = document.createElement('ins'); ins.className = 'adsbygoogle'; ins.style.display = 'block';
-        ins.setAttribute('data-ad-client', cfg.client); ins.setAttribute('data-ad-slot', sc.slot);
+        ins.setAttribute('data-ad-client', cfg.client); ins.setAttribute('data-ad-slot', c.slot);
         // 사이드 두 자리는 고정 크기. 표준 규격이라야 제대로 채워진다 (레일 폭은 nav.js 참고)
         if (k === 'side') { ins.style.width = (window.innerWidth >= 1380 ? 300 : 160) + 'px'; ins.style.height = '600px'; }
         else if (k === 'side-box') { ins.style.width = '300px'; ins.style.height = '250px'; }
-        else { ins.setAttribute('data-ad-format', sc.format || 'auto'); ins.setAttribute('data-full-width-responsive', 'true'); }
+        else { ins.setAttribute('data-ad-format', c.format || sc.format || 'auto'); ins.setAttribute('data-full-width-responsive', 'true'); }
         el.appendChild(ins);
         try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) { }
         any = true;

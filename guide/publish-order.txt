@@ -2,6 +2,7 @@
 # 매일 새벽 5시(한국시간)에 이 순서대로 한 편씩 발행돼요.
 # 순서를 바꾸려면 줄을 옮기고, 잠시 건너뛰려면 앞에 # 을 붙이세요.
 # 여기 없는 초안은 순서가 끝난 뒤 파일명 순으로 발행됩니다.
+# 아예 발행하지 않으려면 줄을 지우지 말고 맨 아래처럼 !slug 로 적으세요.
 
 savings-interest-tax
 pyeong-square-meter
@@ -27,8 +28,11 @@ reduce-photo-size
 bmr-daily-calories
 inch-cm-conversion
 pet-age-in-human-years
-toeic-vocabulary
-suneung-vocabulary
-hsk-vocabulary
-english-vocabulary-method
-civil-service-vocabulary
+
+# 발행하지 않는 초안 — 앞에 ! 를 붙이면 자동 발행에서 빠져요(원고는 초안으로 남음).
+# 단어 가이드 5편은 spartavoca.com 으로 옮긴다(2026-10-06).
+!toeic-vocabulary
+!suneung-vocabulary
+!hsk-vocabulary
+!english-vocabulary-method
+!civil-service-vocabulary

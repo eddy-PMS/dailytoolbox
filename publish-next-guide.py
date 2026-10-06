@@ -4,6 +4,7 @@
 
   · guide/publish-order.txt 에 적힌 순서대로 고른다.
   · 그 파일에 없거나 순서가 끝났으면 남은 초안 중 파일명 순으로 고른다.
+  · 그 파일에 '!slug' 로 적힌 초안은 발행하지 않는다 (원고는 초안으로 남는다).
   · 고른 원고의 draft 줄을 지우고 date·updated 를 발행일(한국시간)로 바꾼다.
   · 발행할 초안이 없으면 종료 코드 3 으로 끝낸다 (작업 없음, 오류 아님).
 
@@ -35,8 +36,21 @@ def is_draft(path):
     return False
 
 
+def held():
+    """순서 파일에 '!slug' 로 적어 둔, 발행하지 않을 초안"""
+    out = set()
+    if os.path.exists(ORDER):
+        for line in open(ORDER, encoding='utf-8'):
+            slug = line.split('#')[0].strip()
+            if slug.startswith('!'):
+                out.add(slug[1:].strip())
+    return out
+
+
 def pick():
-    drafts = [p for p in sorted(glob.glob(os.path.join(SRC, '*.md'))) if is_draft(p)]
+    hold = held()
+    drafts = [p for p in sorted(glob.glob(os.path.join(SRC, '*.md')))
+              if is_draft(p) and os.path.splitext(os.path.basename(p))[0] not in hold]
     if not drafts:
         return None, []
     by_slug = {os.path.splitext(os.path.basename(p))[0]: p for p in drafts}

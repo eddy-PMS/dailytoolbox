@@ -4,7 +4,7 @@ description: 한국의 비만 기준은 BMI 25부터로 세계보건기구 기�
 date: 2026-09-24
 updated: 2026-09-24
 category: 가족·건강
-tools: bmi.html, macros.html, onerm.html, pace.html
+tools: bmi.html, body-fat.html, macros.html, onerm.html, pace.html
 keywords: BMI 계산, 비만 기준 25, 복부비만 허리둘레, 대한비만학회 기준, 허리둘레 재는 법, 체질량지수, 마른 비만
 sources: 질병관리청 국가건강정보포털 — 비만 | https://health.kdca.go.kr ; 대한비만학회 비만치료지침 2018 (국가건강정보포털 인용) | https://health.kdca.go.kr ; 보건복지부 — 정상체중인데 비만이라고요? 허리둘레부터 확인하세요 | https://www.mohw.go.kr ; 보건복지부 — 2025 한국인 영양소 섭취기준 | https://www.mohw.go.kr
 ---

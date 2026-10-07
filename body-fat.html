@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>체지방률 계산기 - 줄자로 체지방 계산, 남자·여자 체지방률 기준표</title>
+<meta name="description" content="허리·목둘레(여성은 엉덩이둘레)와 키를 넣으면 미 해군 공식으로 체지방률을 계산해 주는 무료 체지방률 계산기. 체지방량·제지방량과 남자·여자 체지방률 기준표도 함께 보여줘요.">
+<meta name="keywords" content="체지방률 계산기, 체지방률 계산, 체지방 계산기, 체지방률, 남자 체지방률, 여자 체지방률, 체지방률 평균, 제지방량 계산기">
+<link rel="canonical" href="https://dailyfreetoolbox.com/body-fat">
+<meta property="og:type" content="website">
+<meta property="og:title" content="체지방률 계산기 - 줄자로 체지방 계산, 남자·여자 체지방률 기준표">
+<meta property="og:description" content="허리·목둘레(여성은 엉덩이둘레)와 키를 넣으면 미 해군 공식으로 체지방률을 계산해 주는 무료 체지방률 계산기. 체지방량·제지방량과 남자·여자 체지방률 기준표도 함께 보여줘요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/body-fat">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og/og-body-fat.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "체지방률 계산기", "url": "https://dailyfreetoolbox.com/body-fat", "applicationCategory": "HealthApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "허리·목둘레(여성은 엉덩이둘레)와 키를 넣으면 미 해군 공식으로 체지방률을 계산해 주는 무료 체지방률 계산기. 체지방량·제지방량과 남자·여자 체지방률 기준표도 함께 보여줘요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
+.card input, .card select { font-size:16px; }
+.tw { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.tw th, .tw td:first-child { word-break:keep-all; }
+tr.me td { background:#eaf1ff; font-weight:700; }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "체지방률 정상 범위는 얼마인가요?", "acceptedAnswer": {"@type": "Answer", "text": "하나로 정해진 정상 범위는 없고, 자주 쓰는 구간표가 있어요. 미국운동협회(ACE)가 쓰는 구간으로는 남성 18~24%, 여성 25~31%가 운동선수가 아닌 일반인의 보통 범위예요. 남성 25% 이상, 여성 32% 이상은 비만 구간으로 봅니다. 이 계산기의 값은 추정치라 건강 상태를 판정하지는 않아요."}}, {"@type": "Question", "name": "남자와 여자 기준이 왜 다른가요?", "acceptedAnswer": {"@type": "Answer", "text": "몸이 꼭 필요로 하는 필수지방의 양이 달라서예요. 구간표에서 필수지방은 남성 2~5%, 여성 10~13%로 여성이 더 높아요. 그래서 같은 체지방률이라도 남성과 여성이 들어가는 구간이 다릅니다."}}, {"@type": "Question", "name": "줄자로 잰 값이 인바디와 달라요.", "acceptedAnswer": {"@type": "Answer", "text": "재는 방법이 달라서 그래요. 이 계산기는 허리·목(여성은 엉덩이) 둘레와 키로 추정하는 방식이라 ±3~4% 정도 오차가 있고, 인바디 같은 체성분 분석기도 몸속 수분 상태에 따라 값이 달라져요. 어느 쪽이든 한 번의 숫자보다 같은 방법으로 꾸준히 재서 변화를 보는 데 쓰는 게 좋아요."}}, {"@type": "Question", "name": "둘레는 어디를 재나요?", "acceptedAnswer": {"@type": "Answer", "text": "허리는 배꼽 높이에서 숨을 내쉰 상태로, 목은 후두 바로 아래, 엉덩이는 가장 튀어나온 부분을 줄자를 수평으로 대고 재세요. 줄자가 살을 누르지 않게 가볍게 두르고, 같은 자리를 두세 번 재서 비슷한 값을 쓰면 됩니다."}}, {"@type": "Question", "name": "체지방량과 제지방량은 무엇인가요?", "acceptedAnswer": {"@type": "Answer", "text": "체지방량은 몸무게 가운데 지방의 무게이고, 제지방량은 지방을 뺀 나머지(근육·뼈·수분 등)의 무게예요. 체지방량 = 몸무게 × 체지방률, 제지방량 = 몸무게 − 체지방량으로 계산합니다. 70kg에 체지방률 20%면 체지방량 14kg, 제지방량 56kg이에요."}}, {"@type": "Question", "name": "체지방률은 낮을수록 좋은가요?", "acceptedAnswer": {"@type": "Answer", "text": "아니에요. 몸에는 꼭 필요한 필수지방이 있어서, 구간표에서도 남성 2~5%, 여성 10~13%는 줄일 대상이 아닌 필수지방으로 따로 둬요. 지나치게 낮추려 하기보다 자신에게 맞는 범위를 유지하는 게 좋고, 건강이 걱정되면 의료진과 상담하세요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2b5fd9"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#가족·건강">가족·건강</a><span>›</span>체지방률 계산기</nav>
+  <h1><img class="h1ic" src="/icons/body-fat.webp" width="32" height="32" alt="">체지방률 계산기</h1>
+  <p class="sub">줄자로 잰 허리·목둘레(여성은 엉덩이둘레)와 키로 체지방률을 추정해요. 몸무게를 넣으면 체지방량과 제지방량도 함께 나옵니다.</p>
+  <div class="ad-slot" data-ad="top"></div>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label for="sex">성별</label><select id="sex"><option value="m">남성</option><option value="f">여성</option></select></div>
+      <div class="field"><label for="h">키</label><div class="unit"><input type="number" id="h" value="175" min="100" max="230" step="0.1" inputmode="decimal"><span>cm</span></div></div>
+      <div class="field"><label for="waist">허리둘레 (배꼽 높이)</label><div class="unit"><input type="number" id="waist" value="85" step="0.5" min="0" inputmode="decimal"><span>cm</span></div></div>
+      <div class="field"><label for="neck">목둘레</label><div class="unit"><input type="number" id="neck" value="38" step="0.5" min="0" inputmode="decimal"><span>cm</span></div></div>
+      <div class="field hidden" id="hipWrap"><label for="hip">엉덩이둘레 (여성)</label><div class="unit"><input type="number" id="hip" placeholder="예: 95" step="0.5" min="0" inputmode="decimal"><span>cm</span></div></div>
+      <div class="field"><label for="w">몸무게 (선택 — 체지방량·제지방량 계산)</label><div class="unit"><input type="number" id="w" value="70" min="0" max="300" step="0.1" inputmode="decimal"><span>kg</span></div></div>
+    </div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">가족·건강 도구 더 보기</div><div class="chips"><a href="bmi"><img class="sic" src="/icons/bmi.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>BMI 계산기</span></a><a href="macros"><img class="sic" src="/icons/macros.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>칼로리·단백질 계산기</span></a><a href="onerm"><img class="sic" src="/icons/onerm.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>1RM 계산기</span></a><a href="pace"><img class="sic" src="/icons/pace.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>러닝 페이스 계산기</span></a><a href="pregnancy"><img class="sic" src="/icons/pregnancy.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>출산예정일·임신 주수</span></a><a href="baby-age"><img class="sic" src="/icons/baby-age.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>아기 개월수·백일·돌</span></a><a class="more" href="/#가족·건강">전체 보기 →</a></div></div>
+<!-- guides:tool:start -->
+<div class="guides-rel"><div class="lb"><img src="/icons/ui-guide.webp" width="22" height="22" alt="">관련 가이드</div><a href="/guide/bmi-obesity-standard"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">BMI 비만 기준과 허리둘레 — 한국은 25부터 비만입니다</span><span class="go">›</span></a></div>
+<!-- guides:tool:end -->
+<section class="seo">
+<h2>체지방률 계산 방법 — 미 해군 둘레법</h2><p>이 계산기는 미 해군에서 쓰는 둘레법으로 체지방률을 추정해요. 남성은 허리둘레와 목둘레, 여성은 허리·엉덩이·목둘레와 키를 씁니다. 길이는 모두 cm예요.</p><p><strong>남성: 495 ÷ (1.0324 − 0.19077 × log₁₀(허리 − 목) + 0.15456 × log₁₀(키)) − 450</strong></p><p><strong>여성: 495 ÷ (1.29579 − 0.35004 × log₁₀(허리 + 엉덩이 − 목) + 0.22100 × log₁₀(키)) − 450</strong></p><p>이 식은 호지던(Hodgdon)과 베킷(Beckett)이 1984년 미 해군 보건연구센터 보고서에서 내놓은 것이에요. 몸의 밀도를 둘레와 키로 추정한 뒤 체지방률로 바꾸는 방식이라, 실제 값과 ±3~4% 정도 차이가 날 수 있습니다. <a href="/bmi">BMI 계산기</a>에 둘레를 넣었을 때와 같은 식이라 두 곳에서 같은 값이 나와요.</p><p><strong>체지방량 = 몸무게 × 체지방률 · 제지방량 = 몸무게 − 체지방량</strong></p>
+<h2>남자 체지방률 기준표</h2><p>미국운동협회(ACE)가 쓰는 구간이에요. 위 계산기에 값을 넣으면 내 체지방률이 들어가는 줄이 색으로 표시됩니다.</p><div class="tw"><table id="t-m"><thead><tr><th>구간</th><th class="r">남자 체지방률</th></tr></thead><tbody><tr data-lo="2" data-hi="6"><td>필수지방</td><td class="r">2~5%</td></tr><tr data-lo="6" data-hi="14"><td>운동선수</td><td class="r">6~13%</td></tr><tr data-lo="14" data-hi="18"><td>피트니스</td><td class="r">14~17%</td></tr><tr data-lo="18" data-hi="25"><td>보통</td><td class="r">18~24%</td></tr><tr data-lo="25" data-hi="101"><td>비만</td><td class="r">25% 이상</td></tr></tbody></table></div>
+<h2>여자 체지방률 기준표</h2><p>여성은 필수지방이 더 많아서 모든 구간이 남성보다 높아요.</p><div class="tw"><table id="t-f"><thead><tr><th>구간</th><th class="r">여자 체지방률</th></tr></thead><tbody><tr data-lo="10" data-hi="14"><td>필수지방</td><td class="r">10~13%</td></tr><tr data-lo="14" data-hi="21"><td>운동선수</td><td class="r">14~20%</td></tr><tr data-lo="21" data-hi="25"><td>피트니스</td><td class="r">21~24%</td></tr><tr data-lo="25" data-hi="32"><td>보통</td><td class="r">25~31%</td></tr><tr data-lo="32" data-hi="101"><td>비만</td><td class="r">32% 이상</td></tr></tbody></table></div><p>체지방률 평균이 궁금할 때는 "보통" 구간을 참고하면 돼요. ACE는 남성 18~24%, 여성 25~31%를 운동선수가 아닌 일반인의 흔한 범위로 설명합니다. 나이대별 평균은 믿을 만한 출처를 확인하지 못해 싣지 않았어요.</p>
+<h2>둘레 재는 위치</h2><p>허리는 배꼽 높이, 목은 후두(목젖) 바로 아래, 엉덩이는 가장 튀어나온 부분을 재요. 줄자를 바닥과 수평으로 두르고 살을 누르지 않게 가볍게 댑니다. 숨은 편하게 내쉰 상태에서 재세요.</p><img src="/img/bmi/body-fat-measure-guide.svg" width="800" height="640" alt="체지방률 계산 둘레 재는 위치" loading="lazy" decoding="async" style="max-width:100%;height:auto;display:block;margin:12px auto">
+<h2>체지방률과 BMI의 차이</h2><p>BMI는 키와 몸무게만으로 계산해서 근육과 지방을 구분하지 못해요. 근육이 많은 사람은 BMI가 높게 나오고, 근육이 적고 지방이 많은 사람은 정상으로 나올 수 있습니다. 체지방률은 몸에서 지방이 차지하는 비율이라 이런 차이를 보여 줘요. 비만도 판정과 정상 체중 범위는 <a href="/bmi">BMI 계산기</a>에서 확인하세요.</p><p>체지방을 줄이거나 근육을 늘릴 계획이라면 하루 칼로리와 단백질은 <a href="/macros">칼로리·단백질 계산기</a>로, 운동 중량은 <a href="/onerm">1RM 계산기</a>로 잡아 볼 수 있어요.</p>
+<h2>사용 방법</h2><ol><li>성별과 키를 넣으세요.</li><li>줄자로 잰 허리둘레와 목둘레를 넣으세요. 여성은 엉덩이둘레 칸이 하나 더 나와요.</li><li>몸무게를 넣으면 체지방량과 제지방량이 함께 계산돼요.</li></ol>
+<p class="note">출처: Hodgdon &amp; Beckett (1984), 미 해군 보건연구센터(Naval Health Research Center) 보고서 84-11(남성)·84-29(여성). 구간표는 미국운동협회(American Council on Exercise, ACE)의 체지방률 구분. 확인일 2026-10-07.</p>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>체지방률 정상 범위는 얼마인가요?</summary><p>하나로 정해진 정상 범위는 없고, 자주 쓰는 구간표가 있어요. 미국운동협회(ACE)가 쓰는 구간으로는 남성 18~24%, 여성 25~31%가 운동선수가 아닌 일반인의 보통 범위예요. 남성 25% 이상, 여성 32% 이상은 비만 구간으로 봅니다. 이 계산기의 값은 추정치라 건강 상태를 판정하지는 않아요.</p></details><details><summary>남자와 여자 기준이 왜 다른가요?</summary><p>몸이 꼭 필요로 하는 필수지방의 양이 달라서예요. 구간표에서 필수지방은 남성 2~5%, 여성 10~13%로 여성이 더 높아요. 그래서 같은 체지방률이라도 남성과 여성이 들어가는 구간이 다릅니다.</p></details><details><summary>줄자로 잰 값이 인바디와 달라요.</summary><p>재는 방법이 달라서 그래요. 이 계산기는 허리·목(여성은 엉덩이) 둘레와 키로 추정하는 방식이라 ±3~4% 정도 오차가 있고, 인바디 같은 체성분 분석기도 몸속 수분 상태에 따라 값이 달라져요. 어느 쪽이든 한 번의 숫자보다 같은 방법으로 꾸준히 재서 변화를 보는 데 쓰는 게 좋아요.</p></details><details><summary>둘레는 어디를 재나요?</summary><p>허리는 배꼽 높이에서 숨을 내쉰 상태로, 목은 후두 바로 아래, 엉덩이는 가장 튀어나온 부분을 줄자를 수평으로 대고 재세요. 줄자가 살을 누르지 않게 가볍게 두르고, 같은 자리를 두세 번 재서 비슷한 값을 쓰면 됩니다.</p></details><details><summary>체지방량과 제지방량은 무엇인가요?</summary><p>체지방량은 몸무게 가운데 지방의 무게이고, 제지방량은 지방을 뺀 나머지(근육·뼈·수분 등)의 무게예요. 체지방량 = 몸무게 × 체지방률, 제지방량 = 몸무게 − 체지방량으로 계산합니다. 70kg에 체지방률 20%면 체지방량 14kg, 제지방량 56kg이에요.</p></details><details><summary>체지방률은 낮을수록 좋은가요?</summary><p>아니에요. 몸에는 꼭 필요한 필수지방이 있어서, 구간표에서도 남성 2~5%, 여성 10~13%는 줄일 대상이 아닌 필수지방으로 따로 둬요. 지나치게 낮추려 하기보다 자신에게 맞는 범위를 유지하는 게 좋고, 건강이 걱정되면 의료진과 상담하세요.</p></details></section>
+  <footer>건강 관련 참고 정보이며 의학적 진단을 대신하지 않아요. 둘레로 추정한 값이라 ±3~4% 오차가 있습니다.<br><span class="version-tag">v1.0 · 2026-10-07 업데이트</span></footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+// ACE 구간 — bmi.html 의 fatCat 과 같은 경계. 표의 data-lo·data-hi 와도 같은 값이다.
+const CATS={m:[[6,'필수지방'],[14,'운동선수'],[18,'피트니스'],[25,'보통'],[101,'비만']],f:[[14,'필수지방'],[21,'운동선수'],[25,'피트니스'],[32,'보통'],[101,'비만']]};
+const pos=id=>{ const s=$(id).value.trim(); const v=Number(s); return s!==''&&Number.isFinite(v)&&v>0? v : NaN; };
+function calc(){
+  const sex=$('sex').value; $('hipWrap').classList.toggle('hidden',sex!=='f');
+  const h=pos('h'), waist=pos('waist'), neck=pos('neck'), hip=pos('hip'), w=pos('w');
+  document.querySelectorAll('tr.me').forEach(r=>r.classList.remove('me'));
+  const l=Math.log10;
+  // 미 해군 둘레법 (Hodgdon & Beckett 1984) — bmi.html 과 같은 식
+  const girth= sex==='m'? waist-neck : waist+hip-neck;
+  let fat= sex==='m'? 495/(1.0324-0.19077*l(girth)+0.15456*l(h))-450 : 495/(1.29579-0.35004*l(girth)+0.22100*l(h))-450;
+  if(!(girth>0)||!Number.isFinite(fat)){
+    const need= sex==='m'? '키·허리둘레·목둘레를 넣어 주세요. 허리둘레는 목둘레보다 커야 해요.' : '키·허리둘레·엉덩이둘레·목둘레를 넣어 주세요.';
+    $('out').innerHTML=`<div class="stat-grid"><div class="stat"><div class="num">—</div><div class="label">체지방률</div></div></div><div class="note">${need}</div>`; return;
+  }
+  fat=Math.max(2,Math.min(60,fat));          // bmi.html 과 같은 범위로 자른다
+  const cat=CATS[sex].find(c=>fat<c[0])[1];
+  const below= sex==='m'? fat<2 : fat<10;
+  const fatKg= Number.isFinite(w)? w*fat/100 : NaN, lean= Number.isFinite(w)? w-fatKg : NaN;
+  document.querySelectorAll(`#t-${sex} tbody tr`).forEach(r=>{ if(fat>=+r.dataset.lo&&fat<+r.dataset.hi) r.classList.add('me'); });
+  $('out').innerHTML=`<div class="stat-grid"><div class="stat"><div class="num">${fat.toFixed(1)}%</div><div class="label">체지방률 · ${below?'필수지방 아래':cat}</div></div><div class="stat"><div class="num">${Number.isFinite(fatKg)?fatKg.toFixed(1)+'kg':'—'}</div><div class="label">체지방량</div></div><div class="stat"><div class="num">${Number.isFinite(lean)?lean.toFixed(1)+'kg':'—'}</div><div class="label">제지방량</div></div></div>
+    <div class="note">${Number.isFinite(w)?'':'몸무게를 넣으면 체지방량과 제지방량도 나와요. '}둘레로 추정한 값이라 ±3~4% 오차가 있어요. 구간은 미국운동협회(ACE) 구분이고, 아래 ${sex==='m'?'남자':'여자'} 기준표에 내 줄이 표시돼요. 비만도(BMI)는 <a href="/bmi">BMI 계산기</a>에서 볼 수 있어요.</div>`;
+}
+let sent=false;
+['sex','h','waist','neck','hip','w'].forEach(id=>$(id).addEventListener('input',()=>{ calc(); if(!sent&&typeof gtag==='function'){ gtag('event','body_fat_calculated',{sex:$('sex').value}); sent=true; } }));
+calc();
+
+</script>
+
+</body>
+</html>

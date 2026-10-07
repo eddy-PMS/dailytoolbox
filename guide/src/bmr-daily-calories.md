@@ -4,7 +4,7 @@ description: 기초대사량 계산 공식(미플린-세인트 지어)과 활동
 date: 2026-10-01
 updated: 2026-10-01
 category: 가족·건강
-tools: macros.html, bmi.html, onerm.html, pace.html
+tools: macros.html, bmi.html, body-fat.html, onerm.html, pace.html
 keywords: 기초대사량, 체지방률, 기초대사량 계산, 기초대사량 평균, 단백질 섭취량, 단백질 하루 권장량, 하루 칼로리, 유지 칼로리
 sources: 보건복지부·한국영양학회 — 2025 한국인 영양소 섭취기준 | https://www.kns.or.kr/fileroom/fileroom_view.asp?idx=167&BoardID=Kdr ; 보건복지부 보도자료 — 영양소 적정 섭취기준 개정 (2025.12.31) | https://www.korea.kr/briefing/pressReleaseView.do?newsId=156737581 ; American Council on Exercise (ACE) — 체지방률 분류 | https://www.acefitness.org/about-ace/press-room/in-the-news/8602/body-fat-percentage-charting-averages-in-men-and-women-very-well-health/ ; Mifflin MD, St Jeor ST 외 (1990), Am J Clin Nutr 51(2):241-7 | https://pubmed.ncbi.nlm.nih.gov/2305711/
 draft: true
@@ -104,6 +104,8 @@ draft: true
 여성의 범위가 전체적으로 높은 것은 필수지방 자체가 더 많기 때문이에요. 이 표는 미국 단체의 분류이고 진단 기준이 아닙니다. 한국에서 비만을 판정할 때는 BMI와 허리둘레를 쓰는데, 그 기준은 [BMI 비만 기준과 허리둘레](/guide/bmi-obesity-standard.html) 글에 정리해 두었어요.
 
 [[tool:bmi.html|키·몸무게만으로 체지방률 추정치를, 목·허리 둘레를 넣으면 더 가까운 값을 보여줘요]]
+
+[[tool:body-fat.html|줄자로 잰 둘레로 체지방률·체지방량·제지방량과 남녀 기준표를 봐요]]
 
 재는 방법에 따라 값이 꽤 달라집니다. 이 사이트 도구는 둘레를 넣으면 미해군 공식으로, 넣지 않으면 BMI와 나이로 추정하는 공식으로 계산하고, 둘레 방식도 ±3~4% 오차가 있다고 안내해요. 가정용 체성분 측정기도 수분 상태에 따라 흔들리니, **같은 방법으로 같은 조건(아침 공복 등)에서 재서 변화의 방향을 보는 용도**로 쓰는 편이 맞습니다.
 

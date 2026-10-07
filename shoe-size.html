@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>신발 사이즈표 - US·UK·EU 신발 사이즈 mm 변환 (남성·여성)</title>
+<meta name="description" content="한국 신발 사이즈(mm)를 넣으면 미국 US·영국 UK·유럽 EU 사이즈로 바로 바꿔 주는 무료 신발 사이즈 변환기. 남성·여성 신발 사이즈표와 발 사이즈 재는법도 정리했어요.">
+<meta name="keywords" content="신발 사이즈표, 신발 사이즈 변환, 신발 사이즈, eu 신발 사이즈, us 신발 사이즈, uk 신발 사이즈, 미국 신발 사이즈, 유럽 신발 사이즈, 발 사이즈 재는법">
+<link rel="canonical" href="https://dailyfreetoolbox.com/shoe-size">
+<meta property="og:type" content="website">
+<meta property="og:title" content="신발 사이즈표 - US·UK·EU 신발 사이즈 mm 변환 (남성·여성)">
+<meta property="og:description" content="한국 신발 사이즈(mm)를 넣으면 미국 US·영국 UK·유럽 EU 사이즈로 바로 바꿔 주는 무료 신발 사이즈 변환기. 남성·여성 신발 사이즈표와 발 사이즈 재는법도 정리했어요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/shoe-size">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og/og-shoe-size.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "신발 사이즈 변환 · 사이즈표", "url": "https://dailyfreetoolbox.com/shoe-size", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "한국 신발 사이즈(mm)를 넣으면 미국 US·영국 UK·유럽 EU 사이즈로 바로 바꿔 주는 무료 신발 사이즈 변환기. 남성·여성 신발 사이즈표와 발 사이즈 재는법도 정리했어요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
+.card select { font-size:16px; }
+.sz { display:grid; grid-template-columns:repeat(5,1fr); gap:10px; } @media(max-width:620px){ .sz { grid-template-columns:1fr 1fr; } }
+.tw { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.tw th, .tw td:first-child { word-break:keep-all; white-space:nowrap; }
+tr.me td { background:#eaf1ff; font-weight:700; }
+.res .big-result { font-size:22px; line-height:1.45; overflow-wrap:anywhere; }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "250mm는 US로 몇인가요?", "acceptedAnswer": {"@type": "Answer", "text": "국제표준 ISO 19407:2023의 변환표로 250mm는 US 남성 7.5, US 여성 8.5예요. 같은 줄에서 UK는 6.5, EU는 39.5입니다. 브랜드에 따라 반 사이즈쯤 다르게 표기하는 곳도 있어요(확인일 2026-10-07)."}}, {"@type": "Question", "name": "EU 사이즈는 어떻게 계산하나요?", "acceptedAnswer": {"@type": "Answer", "text": "유럽 사이즈는 한 치수 간격이 6.67mm(3분의 2cm)예요. ISO 19407은 발 길이에 두 치수만큼의 여유를 더해 계산합니다. 식으로는 EU = (발 길이 mm + 13.33) ÷ 6.67이고, 250mm면 39.5가 나와요. 다만 이 페이지의 표와 변환기는 식으로 계산하지 않고 ISO 표의 값을 그대로 씁니다."}}, {"@type": "Question", "name": "US 남성과 여성 사이즈는 왜 다른가요?", "acceptedAnswer": {"@type": "Answer", "text": "미국 사이즈는 영국 사이즈와 같은 간격을 쓰면서 숫자만 옮겨 적는데, 옮기는 폭이 남녀가 달라요. ISO 19407은 남성은 영국 사이즈보다 1, 여성은 보통 2 크게 표기한다고 설명합니다. 그래서 같은 발 길이라도 US 여성 사이즈가 US 남성 사이즈보다 1 커요."}}, {"@type": "Question", "name": "UK와 US는 얼마나 차이 나나요?", "acceptedAnswer": {"@type": "Answer", "text": "남성은 US가 UK보다 1 크고, 여성은 US가 UK보다 2 커요. 예를 들어 UK 7은 US 남성 8, US 여성 9입니다. 영국 사이즈는 남녀를 나누지 않고 하나로 씁니다."}}, {"@type": "Question", "name": "발 길이는 어떻게 재나요?", "acceptedAnswer": {"@type": "Answer", "text": "발뒤꿈치 끝에서 가장 긴 발가락 끝까지의 길이를 재요. 종이를 벽에 붙여 놓고 뒤꿈치를 벽에 댄 채 서서, 가장 긴 발가락 끝에 표시한 뒤 벽에서 표시까지를 mm로 잽니다. 양쪽 발을 모두 재서 더 긴 쪽을 기준으로 하세요."}}, {"@type": "Question", "name": "변환표와 브랜드 사이즈표가 다르면 어느 쪽을 믿나요?", "acceptedAnswer": {"@type": "Answer", "text": "그 브랜드의 공식 사이즈표를 따르세요. 변환표는 발 길이를 기준으로 한 일반적인 대응이고, 실제 신발은 브랜드와 모델마다 발볼·여유 공간이 달라요. 구매 전에 판매 페이지의 mm 표기와 사이즈표를 확인하는 게 가장 정확합니다."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2b5fd9"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#계산·생활">계산·생활</a><span>›</span>신발 사이즈 변환</nav>
+  <h1><img class="h1ic" src="/icons/shoe-size.webp" width="32" height="32" alt="">신발 사이즈 변환 · 사이즈표</h1>
+  <p class="sub">한국 사이즈(mm)나 US·UK·EU 중 아는 칸 하나만 고르면 나머지가 바로 채워져요. 아래 사이즈표에서 내 줄도 표시됩니다.</p>
+  <div class="ad-slot" data-ad="top"></div>
+
+  <div class="card">
+    <div class="sz">
+      <div class="field"><label for="s-mm">한국 (mm)</label><select id="s-mm"></select></div>
+      <div class="field"><label for="s-eu">유럽 EU</label><select id="s-eu"></select></div>
+      <div class="field"><label for="s-uk">영국 UK</label><select id="s-uk"></select></div>
+      <div class="field"><label for="s-usm">미국 US 남성</label><select id="s-usm"></select></div>
+      <div class="field"><label for="s-usw">미국 US 여성</label><select id="s-usw"></select></div>
+    </div>
+    <div class="res" style="margin-top:14px"><div class="big-result" id="r">—</div><p class="note" id="rn"></p></div>
+  </div>
+  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="unit"><img class="sic" src="/icons/unit.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>단위 변환기</span></a><a href="exchange"><img class="sic" src="/icons/exchange.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>환율 계산기</span></a><a href="discount"><img class="sic" src="/icons/discount.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>할인율 계산기</span></a><a href="percent"><img class="sic" src="/icons/percent.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>퍼센트 계산기</span></a><a href="pyeong"><img class="sic" src="/icons/pyeong.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>평수 계산기</span></a><a href="dday"><img class="sic" src="/icons/dday.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>D-day·날짜 계산</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
+<section class="seo">
+<h2>신발 사이즈표는 무엇을 기준으로 하나요</h2><p>한국 신발 사이즈는 발 길이를 mm로 적는 방식이에요. 유럽(EU)·영국(UK)·미국(US)은 저마다 다른 간격과 시작점을 쓰기 때문에 숫자가 서로 달라요. 이 페이지의 변환기와 사이즈표는 국제표준 ISO 19407:2023 「신발 — 사이즈 — 사이즈 체계의 변환」에 실린 성인용 권장 표기 표의 값을 그대로 썼습니다. 근사식으로 계산한 값이 아니에요.</p><p>세 체계는 한 치수의 간격이 달라서(한국 5mm, 유럽 6.67mm, 영국·미국 8.47mm) 서로 딱 맞아떨어지지 않아요. 그래서 mm에서 EU로 바꾼 값과, 그 EU를 다시 mm로 바꾼 값이 한 칸 다를 수 있습니다. 위 변환기는 고른 칸의 체계를 기준으로 표에서 찾아 줘요.</p>
+<h2>남성 신발 사이즈표</h2><div class="tw"><table id="t-men"><thead><tr><th>한국 (mm)</th><th class="r">US 남성</th><th class="r">UK</th><th class="r">EU</th></tr></thead><tbody><tr data-mm="240"><td>240</td><td class="r">6.5</td><td class="r">5.5</td><td class="r">38</td></tr><tr data-mm="245"><td>245</td><td class="r">7</td><td class="r">6</td><td class="r">38.5</td></tr><tr data-mm="250"><td>250</td><td class="r">7.5</td><td class="r">6.5</td><td class="r">39.5</td></tr><tr data-mm="255"><td>255</td><td class="r">8</td><td class="r">7</td><td class="r">40</td></tr><tr data-mm="260"><td>260</td><td class="r">8.5</td><td class="r">7.5</td><td class="r">41</td></tr><tr data-mm="265"><td>265</td><td class="r">9.5</td><td class="r">8.5</td><td class="r">41.5</td></tr><tr data-mm="270"><td>270</td><td class="r">10</td><td class="r">9</td><td class="r">42.5</td></tr><tr data-mm="275"><td>275</td><td class="r">10.5</td><td class="r">9.5</td><td class="r">43</td></tr><tr data-mm="280"><td>280</td><td class="r">11</td><td class="r">10</td><td class="r">44</td></tr><tr data-mm="285"><td>285</td><td class="r">11.5</td><td class="r">10.5</td><td class="r">44.5</td></tr><tr data-mm="290"><td>290</td><td class="r">12</td><td class="r">11</td><td class="r">45.5</td></tr><tr data-mm="295"><td>295</td><td class="r">13</td><td class="r">12</td><td class="r">46</td></tr><tr data-mm="300"><td>300</td><td class="r">13.5</td><td class="r">12.5</td><td class="r">47</td></tr><tr data-mm="305"><td>305</td><td class="r">14</td><td class="r">13</td><td class="r">47.5</td></tr><tr data-mm="310"><td>310</td><td class="r">14.5</td><td class="r">13.5</td><td class="r">48.5</td></tr><tr data-mm="315"><td>315</td><td class="r">15</td><td class="r">14</td><td class="r">49</td></tr><tr data-mm="320"><td>320</td><td class="r">16</td><td class="r">15</td><td class="r">50</td></tr></tbody></table></div>
+<h2>여성 신발 사이즈표</h2><div class="tw"><table id="t-women"><thead><tr><th>한국 (mm)</th><th class="r">US 여성</th><th class="r">UK</th><th class="r">EU</th></tr></thead><tbody><tr data-mm="215"><td>215</td><td class="r">4.5</td><td class="r">2.5</td><td class="r">34</td></tr><tr data-mm="220"><td>220</td><td class="r">5</td><td class="r">3</td><td class="r">35</td></tr><tr data-mm="225"><td>225</td><td class="r">5.5</td><td class="r">3.5</td><td class="r">35.5</td></tr><tr data-mm="230"><td>230</td><td class="r">6</td><td class="r">4</td><td class="r">36.5</td></tr><tr data-mm="235"><td>235</td><td class="r">6.5</td><td class="r">4.5</td><td class="r">37</td></tr><tr data-mm="240"><td>240</td><td class="r">7.5</td><td class="r">5.5</td><td class="r">38</td></tr><tr data-mm="245"><td>245</td><td class="r">8</td><td class="r">6</td><td class="r">38.5</td></tr><tr data-mm="250"><td>250</td><td class="r">8.5</td><td class="r">6.5</td><td class="r">39.5</td></tr><tr data-mm="255"><td>255</td><td class="r">9</td><td class="r">7</td><td class="r">40</td></tr><tr data-mm="260"><td>260</td><td class="r">9.5</td><td class="r">7.5</td><td class="r">41</td></tr><tr data-mm="265"><td>265</td><td class="r">10.5</td><td class="r">8.5</td><td class="r">41.5</td></tr><tr data-mm="270"><td>270</td><td class="r">11</td><td class="r">9</td><td class="r">42.5</td></tr></tbody></table></div><p>두 표는 같은 ISO 표에서 남성·여성이 주로 찾는 범위만 나눠 실은 것이에요. 같은 mm라면 UK와 EU 값은 남녀가 같고, US만 다릅니다. 아동용 사이즈표는 표준의 원문 표를 확인하지 못해 싣지 않았어요.</p>
+<h2>미국 US 신발 사이즈 — 남녀 숫자가 달라요</h2><p>미국 사이즈는 영국 사이즈와 같은 간격(8.47mm, 3분의 1인치)을 쓰고 숫자만 옮겨서 적어요. ISO 19407은 미국 사이즈가 남성은 영국 사이즈보다 1, 여성은 보통 2 크다고 설명합니다. 그래서 260mm는 UK 7.5, US 남성 8.5, US 여성 9.5가 돼요. 해외 사이트에서 US 사이즈를 고를 때는 남성용(Men)인지 여성용(Women)인지부터 확인하세요.</p>
+<h2>영국 UK 신발 사이즈</h2><p>영국 사이즈는 한 치수가 8.47mm이고, 반 사이즈(0.5) 단위로 나와요. 남녀를 나누지 않고 하나의 숫자를 씁니다. 표에서 250mm는 UK 6.5, 270mm는 UK 9예요. 미국 사이즈와 헷갈리기 쉬운데, 같은 신발이면 UK 숫자가 US 남성보다 1 작아요.</p>
+<h2>유럽 EU 신발 사이즈</h2><p>유럽 사이즈는 한 치수가 6.67mm(3분의 2cm)예요. 표에서 240mm는 EU 38, 250mm는 EU 39.5, 260mm는 EU 41, 270mm는 EU 42.5입니다. 유럽 사이즈도 남녀를 나누지 않아요.</p><p>ISO 19407은 유럽 사이즈가 나라에 따라 신발 틀 길이 기준으로도, 발 길이 기준으로도 쓰여서 표기가 달라질 수 있다고 설명해요. 예를 들어 표준의 표는 UK 8을 EU 41.5로 보지만, 실제 신발에는 UK 8 / EU 42로 적힌 경우가 많다고 합니다. 반 사이즈쯤의 차이는 이런 이유로 생겨요.</p>
+<h2>발 사이즈 재는법</h2><ol><li>종이를 바닥에 놓고 한쪽 끝을 벽에 붙이세요.</li><li>뒤꿈치를 벽에 댄 채 종이 위에 똑바로 서세요.</li><li>가장 긴 발가락 끝에 표시하고, 벽에서 표시까지의 길이를 mm로 재세요.</li><li>양쪽 발을 모두 재서 더 긴 쪽을 기준으로 하세요.</li></ol><p>신발 사이즈는 발뒤꿈치 끝에서 가장 긴 발가락 끝까지의 발 길이를 기준으로 해요. 가장 긴 발가락이 엄지가 아닌 사람도 있으니 눈으로 확인하고 표시하세요. 길이를 인치로 알고 있다면 <a href="/unit">단위 변환기</a>에서 cm로 바꿀 수 있어요.</p>
+<h2>브랜드마다 사이즈가 다른 이유</h2><p>변환표는 발 길이만 놓고 본 일반적인 대응이에요. 실제 신발은 브랜드와 모델마다 발볼, 발등 높이, 앞쪽 여유가 달라서 같은 숫자여도 크기가 다르게 느껴집니다. 구매 전에 그 브랜드의 공식 사이즈표와 상품 페이지의 mm 표기를 확인하세요. 해외 가격을 원화로 볼 때는 <a href="/exchange">환율 계산기</a>, 할인 가격은 <a href="/discount">할인율 계산기</a>가 있어요.</p>
+<h2>사용 방법</h2><ol><li>다섯 칸 중 아는 사이즈 하나를 고르세요. 한국 mm, EU, UK, US 남성, US 여성 어느 것이든 돼요.</li><li>나머지 칸이 자동으로 채워지고, 결과 줄에 한 번에 정리돼요.</li><li>아래 남성·여성 사이즈표에서 내 mm에 해당하는 줄이 색으로 표시됩니다.</li></ol>
+<p class="note">출처: ISO 19407:2023 Footwear — Sizing — Conversion of sizing systems, Table 2 (Adults' recommended shoe size marking) 및 4.2절. 확인일 2026-10-07.</p>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>250mm는 US로 몇인가요?</summary><p>국제표준 ISO 19407:2023의 변환표로 250mm는 US 남성 7.5, US 여성 8.5예요. 같은 줄에서 UK는 6.5, EU는 39.5입니다. 브랜드에 따라 반 사이즈쯤 다르게 표기하는 곳도 있어요(확인일 2026-10-07).</p></details><details><summary>EU 사이즈는 어떻게 계산하나요?</summary><p>유럽 사이즈는 한 치수 간격이 6.67mm(3분의 2cm)예요. ISO 19407은 발 길이에 두 치수만큼의 여유를 더해 계산합니다. 식으로는 EU = (발 길이 mm + 13.33) ÷ 6.67이고, 250mm면 39.5가 나와요. 다만 이 페이지의 표와 변환기는 식으로 계산하지 않고 ISO 표의 값을 그대로 씁니다.</p></details><details><summary>US 남성과 여성 사이즈는 왜 다른가요?</summary><p>미국 사이즈는 영국 사이즈와 같은 간격을 쓰면서 숫자만 옮겨 적는데, 옮기는 폭이 남녀가 달라요. ISO 19407은 남성은 영국 사이즈보다 1, 여성은 보통 2 크게 표기한다고 설명합니다. 그래서 같은 발 길이라도 US 여성 사이즈가 US 남성 사이즈보다 1 커요.</p></details><details><summary>UK와 US는 얼마나 차이 나나요?</summary><p>남성은 US가 UK보다 1 크고, 여성은 US가 UK보다 2 커요. 예를 들어 UK 7은 US 남성 8, US 여성 9입니다. 영국 사이즈는 남녀를 나누지 않고 하나로 씁니다.</p></details><details><summary>발 길이는 어떻게 재나요?</summary><p>발뒤꿈치 끝에서 가장 긴 발가락 끝까지의 길이를 재요. 종이를 벽에 붙여 놓고 뒤꿈치를 벽에 댄 채 서서, 가장 긴 발가락 끝에 표시한 뒤 벽에서 표시까지를 mm로 잽니다. 양쪽 발을 모두 재서 더 긴 쪽을 기준으로 하세요.</p></details><details><summary>변환표와 브랜드 사이즈표가 다르면 어느 쪽을 믿나요?</summary><p>그 브랜드의 공식 사이즈표를 따르세요. 변환표는 발 길이를 기준으로 한 일반적인 대응이고, 실제 신발은 브랜드와 모델마다 발볼·여유 공간이 달라요. 구매 전에 판매 페이지의 mm 표기와 사이즈표를 확인하는 게 가장 정확합니다.</p></details></section>
+  <footer>ISO 19407:2023 성인용 권장 표기 표 기준이에요. 브랜드·모델마다 다를 수 있으니 구매 전 그 브랜드의 사이즈표를 확인하세요.<br><span class="version-tag">v1.0 · 2026-10-07 업데이트</span></footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+// ISO 19407:2023 Table 2 (Adults' recommended shoe size marking) 의 세 구획을 그대로 옮긴 값.
+//  M = 한국·몬도포인트 기준 [mm, EU, UK, US남, US여] / E = 유럽 기준 [EU, mm, UK, US남, US여] / U = 영국 기준 [UK, mm, EU, US남, US여]
+const D={"M":[[215,34,2.5,3.5,4.5],[220,35,3,4,5],[225,35.5,3.5,4.5,5.5],[230,36.5,4,5,6],[235,37,4.5,5.5,6.5],[240,38,5.5,6.5,7.5],[245,38.5,6,7,8],[250,39.5,6.5,7.5,8.5],[255,40,7,8,9],[260,41,7.5,8.5,9.5],[265,41.5,8.5,9.5,10.5],[270,42.5,9,10,11],[275,43,9.5,10.5,11.5],[280,44,10,11,12],[285,44.5,10.5,11.5,12.5],[290,45.5,11,12,13],[295,46,12,13,14],[300,47,12.5,13.5,14.5],[305,47.5,13,14,15],[310,48.5,13.5,14.5,15.5],[315,49,14,15,16],[320,50,15,16,17]],"E":[[34,215,2,3,4],[34.5,215,2.5,3.5,4.5],[35,220,3,4,5],[35.5,225,3.5,4.5,5.5],[36,225,4,5,6],[36.5,230,4,5,6],[37,235,4.5,5.5,6.5],[37.5,235,5,6,7],[38,240,5.5,6.5,7.5],[38.5,245,5.5,6.5,7.5],[39,245,6,7,8],[39.5,250,6.5,7.5,8.5],[40,255,7,8,9],[40.5,255,7.5,8.5,9.5],[41,260,7.5,8.5,9.5],[41.5,265,8,9,10],[42,265,8.5,9.5,10.5],[42.5,270,9,10,11],[43,275,9.5,10.5,11.5],[43.5,275,9.5,10.5,11.5],[44,280,10,11,12],[44.5,285,10.5,11.5,12.5],[45,285,11,12,13],[45.5,290,11.5,12.5,13.5],[46,295,11.5,12.5,13.5],[46.5,295,12,13,14],[47,300,12.5,13.5,14.5],[47.5,305,13,14,15],[48,305,13,14,15],[48.5,310,13.5,14.5,15.5],[49,315,14,15,16],[49.5,315,14.5,15.5,16.5],[50,320,15,16,17]],"U":[[2,210,34,3,4],[2.5,215,34.5,3.5,4.5],[3,220,35,4,5],[3.5,225,35.5,4.5,5.5],[4,230,36.5,5,6],[4.5,235,37,5.5,6.5],[5,235,37.5,6,7],[5.5,240,38,6.5,7.5],[6,245,39,7,8],[6.5,250,39.5,7.5,8.5],[7,255,40,8,9],[7.5,260,40.5,8.5,9.5],[8,260,41.5,9,10],[8.5,265,42,9.5,10.5],[9,270,42.5,10,11],[9.5,275,43.5,10.5,11.5],[10,280,44,11,12],[10.5,285,44.5,11.5,12.5],[11,290,45,12,13],[11.5,290,46,12.5,13.5],[12,295,46.5,13,14],[12.5,300,47,13.5,14.5],[13,305,47.5,14,15],[13.5,310,48.5,14.5,15.5],[14,315,49,15,16],[14.5,320,49.5,15.5,16.5],[15,320,50,16,17]]};
+const byMm={}; D.M.forEach(r=>byMm[r[0]]={mm:r[0],eu:r[1],uk:r[2],usm:r[3],usw:r[4]});
+const u0=D.U[0]; byMm[u0[1]]=byMm[u0[1]]||{mm:u0[1],eu:u0[2],uk:u0[0],usm:u0[3],usw:u0[4]};   // 210mm 는 영국 기준 구획에만 있다
+const byEu={}; D.E.forEach(r=>byEu[r[0]]={eu:r[0],mm:r[1],uk:r[2],usm:r[3],usw:r[4]});
+const byUk={}; D.U.forEach(r=>byUk[r[0]]={uk:r[0],mm:r[1],eu:r[2],usm:r[3],usw:r[4]});
+const num=(a,b)=>a-b;
+const OPT={mm:Object.keys(byMm).map(Number).sort(num), eu:Object.keys(byEu).map(Number).sort(num), uk:Object.keys(byUk).map(Number).sort(num)};
+OPT.usm=OPT.uk.map(v=>v+1); OPT.usw=OPT.uk.map(v=>v+2);
+const KEYS=['mm','eu','uk','usm','usw'], NAME={mm:'한국 mm',eu:'유럽 EU',uk:'영국 UK',usm:'미국 US 남성',usw:'미국 US 여성'};
+KEYS.forEach(k=>{ $('s-'+k).innerHTML=OPT[k].map(v=>`<option value="${v}">${v}</option>`).join(''); });
+function rowFor(k,v){ return k==='mm'? byMm[v] : k==='eu'? byEu[v] : byUk[k==='uk'? v : k==='usm'? v-1 : v-2]; }
+function show(k){
+  const v=Number($('s-'+k).value), r=rowFor(k,v);
+  if(!r){ $('r').textContent='—'; $('rn').textContent=''; return; }
+  KEYS.forEach(x=>{ if(x!==k) $('s-'+x).value=String(r[x]); });
+  $('r').textContent=`${r.mm}mm = EU ${r.eu} · UK ${r.uk} · US 남성 ${r.usm} · US 여성 ${r.usw}`;
+  $('rn').textContent=`${NAME[k]} ${v} 기준으로 ISO 19407:2023 표에서 찾은 값이에요. 체계마다 간격이 달라 다른 칸을 기준으로 다시 찾으면 한 칸 다를 수 있고, 브랜드에 따라 반 사이즈쯤 차이가 납니다.`;
+  document.querySelectorAll('tr.me').forEach(t=>t.classList.remove('me'));
+  document.querySelectorAll(`tr[data-mm="${r.mm}"]`).forEach(t=>t.classList.add('me'));
+}
+let sent=false;
+KEYS.forEach(k=>$('s-'+k).addEventListener('change',()=>{ show(k); if(!sent&&typeof gtag==='function'){ gtag('event','shoe_size_converted',{from:k}); sent=true; } }));
+$('s-mm').value='250'; show('mm');
+
+</script>
+
+</body>
+</html>

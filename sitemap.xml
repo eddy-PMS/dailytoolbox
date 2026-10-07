@@ -290,7 +290,7 @@
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/onerm</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -723,7 +723,11 @@
 <!-- guides:start -->
   <url>
     <loc>https://dailyfreetoolbox.com/guide/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
+  </url>
+  <url>
+    <loc>https://dailyfreetoolbox.com/guide/jlpt-levels-guide</loc>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/guide/four-insurances-2026</loc>

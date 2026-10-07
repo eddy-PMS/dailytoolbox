@@ -1,13 +1,12 @@
 ---
 title: JLPT 등급별 수준과 시험 일정 — N5부터 N1까지 무엇이 다른가
 description: JLPT는 N5(가장 쉬움)부터 N1(가장 어려움)까지 5등급이에요. 등급별 수준, 과목과 시험 시간, 합격점과 과목별 기준점, 2026년 12월 시험 일정과 접수, 내 수준에 맞는 등급 고르는 법을 공식 자료 기준으로 정리했어요.
-date: 2026-10-01
-updated: 2026-10-01
+date: 2026-10-08
+updated: 2026-10-08
 category: 공부·어학
 tools: jlpt-test.html, kana-quiz.html, furigana.html, jp-verb.html
 keywords: JLPT, JLPT 등급, JLPT 시험일정, JLPT N3, JLPT N2, JLPT 합격 점수, JLPT 접수, 일본어능력시험, JLPT 과목, JLPT 기준점
 sources: 일본어능력시험 공식 — N1~N5 인정 기준 | https://www.jlpt.jp/about/levelsummary.html ; 일본어능력시험 공식 — 시험 과목과 시험 시간 | https://www.jlpt.jp/guideline/testsections.html ; 일본어능력시험 공식 — 득점 구분·합격 판정 | https://www.jlpt.jp/guideline/results.html ; 일본어능력시험 공식 — 자주 묻는 질문 | https://www.jlpt.jp/faq/index.html ; 일본어능력시험 공식 — 해외 응시 안내(2026년 시험일) | https://www.jlpt.jp/application/overseas_index.html ; JLPT 한국 접수 사이트 — 2026년 제2회 일정 | https://www.jlpt.or.kr/html/
-draft: true
 ---
 JLPT(일본어능력시험)는 **N5가 가장 쉽고 N1이 가장 어려운 5등급** 시험이에요. 등급마다 문제지가 따로 있어서, 접수할 때 볼 등급을 직접 골라야 해요. 그래서 "어느 등급을 볼까"가 첫 번째 결정이에요. 등급별 수준과 과목, 합격 기준, 시험 일정을 공식 자료 기준으로 정리했어요(확인일 2026-10-01).
 

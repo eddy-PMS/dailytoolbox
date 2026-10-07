@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>3대 측정 계산기 - 스쿼트·벤치프레스·데드리프트 3대 중량 합계</title>
+<meta name="description" content="스쿼트·벤치프레스·데드리프트 기록을 넣으면 3대 중량 합계와 체중 대비 몇 배인지 계산해 주는 무료 3대 측정 계산기. 1RM 을 모르면 든 무게와 횟수로 추정해요.">
+<meta name="keywords" content="3대 측정, 3대 측정 계산기, 3대 중량, 3대 중량 계산기, 3대 운동, 3대 500, 스쿼트 벤치프레스 데드리프트">
+<link rel="canonical" href="https://dailyfreetoolbox.com/big3">
+<meta property="og:type" content="website">
+<meta property="og:title" content="3대 측정 계산기 - 스쿼트·벤치프레스·데드리프트 3대 중량 합계">
+<meta property="og:description" content="스쿼트·벤치프레스·데드리프트 기록을 넣으면 3대 중량 합계와 체중 대비 몇 배인지 계산해 주는 무료 3대 측정 계산기. 1RM 을 모르면 든 무게와 횟수로 추정해요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/big3">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og/og-big3.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "3대 측정 계산기", "url": "https://dailyfreetoolbox.com/big3", "applicationCategory": "HealthApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "스쿼트·벤치프레스·데드리프트 기록을 넣으면 3대 중량 합계와 체중 대비 몇 배인지 계산해 주는 무료 3대 측정 계산기. 1RM 을 모르면 든 무게와 횟수로 추정해요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
+.card input { font-size:16px; }
+.lift { display:grid; grid-template-columns:1.1fr 1fr 1fr; gap:10px; align-items:end; margin-bottom:10px; }
+.lift .nm { font-weight:700; font-size:15px; padding-bottom:10px; }
+@media(max-width:520px){ .lift { grid-template-columns:1fr 1fr; } .lift .nm { grid-column:1/-1; padding-bottom:0; } }
+.tw { overflow-x:auto; -webkit-overflow-scrolling:touch; } .tw th, .tw td:first-child { word-break:keep-all; }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "3대 측정은 어떻게 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "스쿼트·벤치프레스·데드리프트 세 종목에서 한 번 들 수 있는 최대 무게(1RM)를 각각 구해 더하면 돼요. 세 값을 더한 숫자를 흔히 3대 몇이라고 부릅니다. 이 계산기에 종목별 무게와 횟수를 넣으면 합계와 체중 대비 배수가 나와요."}}, {"@type": "Question", "name": "1RM을 직접 안 들어 봐도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 여러 번 든 기록으로 추정할 수 있어요. 무게와 횟수를 넣으면 Epley·Brzycki·Lombardi 세 공식의 평균으로 1RM을 추정합니다. 이 사이트의 1RM 계산기와 같은 식이에요. 횟수가 12회를 넘으면 오차가 커지니 10회 이하 기록을 쓰는 게 좋아요."}}, {"@type": "Question", "name": "3대 500은 어느 정도인가요?", "acceptedAnswer": {"@type": "Answer", "text": "세 종목 최대 무게를 더해 500kg이라는 뜻이에요. 3대 300·400·500 같은 말은 운동 커뮤니티에서 수준을 가늠할 때 쓰는 표현이고, 공식 등급은 아닙니다. 같은 500kg이라도 체중에 따라 의미가 달라서, 이 계산기는 체중 대비 배수를 함께 보여 줘요."}}, {"@type": "Question", "name": "체중 대비로 보는 이유는요?", "acceptedAnswer": {"@type": "Answer", "text": "몸이 클수록 드는 무게도 커지기 쉬워서, 합계만으로는 체중이 다른 사람끼리 비교하기 어려워요. 합계를 체중으로 나누면 내 몸무게의 몇 배를 드는지가 나와서, 체중이 달라도 견줘 볼 수 있습니다. 체중이 변하는 동안 내 기록의 변화를 볼 때도 쓸모가 있어요."}}, {"@type": "Question", "name": "스미스머신 기록도 넣어도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "넣을 수는 있지만 프리웨이트 기록과 같은 값으로 보기는 어려워요. 스미스머신은 바의 움직임을 레일이 잡아 줘서 균형을 잡는 부담이 다릅니다. 기록을 비교할 때는 같은 기구·같은 방식으로 잰 것끼리 비교하세요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2b5fd9"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#가족·건강">가족·건강</a><span>›</span>3대 측정 계산기</nav>
+  <h1><img class="h1ic" src="/icons/big3.webp" width="32" height="32" alt="">3대 측정 계산기</h1>
+  <p class="sub">스쿼트·벤치프레스·데드리프트 기록으로 3대 중량 합계와 체중 대비 배수를 계산해요. 1RM을 모르면 든 무게와 횟수만 넣으세요.</p>
+  <div class="ad-slot" data-ad="top"></div>
+
+  <div class="card">
+    <div class="lift"><div class="nm">스쿼트</div><div class="field"><label for="sq-w">무게 (kg)</label><input type="number" id="sq-w" value="100" min="0" step="0.5" inputmode="decimal"></div><div class="field"><label for="sq-r">횟수 (1회 = 1RM)</label><input type="number" id="sq-r" value="5" min="1" max="30" step="1" inputmode="numeric"></div></div>
+    <div class="lift"><div class="nm">벤치프레스</div><div class="field"><label for="bp-w">무게 (kg)</label><input type="number" id="bp-w" value="70" min="0" step="0.5" inputmode="decimal"></div><div class="field"><label for="bp-r">횟수 (1회 = 1RM)</label><input type="number" id="bp-r" value="5" min="1" max="30" step="1" inputmode="numeric"></div></div>
+    <div class="lift"><div class="nm">데드리프트</div><div class="field"><label for="dl-w">무게 (kg)</label><input type="number" id="dl-w" value="120" min="0" step="0.5" inputmode="decimal"></div><div class="field"><label for="dl-r">횟수 (1회 = 1RM)</label><input type="number" id="dl-r" value="5" min="1" max="30" step="1" inputmode="numeric"></div></div>
+    <div class="grid2"><div class="field"><label for="bw">체중 (kg, 선택)</label><input type="number" id="bw" value="75" min="0" step="0.1" inputmode="decimal"></div></div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">가족·건강 도구 더 보기</div><div class="chips"><a href="onerm"><img class="sic" src="/icons/onerm.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>1RM 계산기</span></a><a href="macros"><img class="sic" src="/icons/macros.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>칼로리·단백질 계산기</span></a><a href="body-fat"><img class="sic" src="/icons/body-fat.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>체지방률 계산기</span></a><a href="bmi"><img class="sic" src="/icons/bmi.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>BMI 계산기</span></a><a href="pace"><img class="sic" src="/icons/pace.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>러닝 페이스 계산기</span></a><a href="pregnancy"><img class="sic" src="/icons/pregnancy.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>출산예정일·임신 주수</span></a><a class="more" href="/#가족·건강">전체 보기 →</a></div></div>
+<section class="seo">
+<h2>3대 측정이란</h2><p>스쿼트·벤치프레스·데드리프트 세 종목에서 한 번 들 수 있는 최대 무게(1RM)를 더한 값이에요. "3대 400" 같은 말은 세 값을 더해 400kg이라는 뜻입니다.</p><p><strong>3대 중량 = 스쿼트 1RM + 벤치프레스 1RM + 데드리프트 1RM</strong></p><p>최대 무게를 직접 들어 보지 않았다면 여러 번 든 기록으로 추정할 수 있어요. 이 계산기는 무게와 횟수를 넣으면 Epley·Brzycki·Lombardi 세 공식의 평균으로 1RM을 추정합니다. <a href="/onerm">1RM 계산기</a>와 같은 식이라, 여러 번 든 기록을 넣으면 두 곳의 값이 같아요. 횟수를 1로 넣으면 그 무게를 그대로 1RM으로 씁니다.</p>
+<h2>3대 운동 세 종목</h2><div class="tw"><table><thead><tr><th>종목</th><th>동작</th></tr></thead><tbody><tr><td>스쿼트</td><td>바벨을 어깨에 지고 앉았다 일어서는 동작. 하체와 몸통을 함께 씁니다</td></tr><tr><td>벤치프레스</td><td>벤치에 누워 바벨을 가슴까지 내렸다가 밀어 올리는 동작. 가슴·어깨·팔을 씁니다</td></tr><tr><td>데드리프트</td><td>바닥의 바벨을 잡고 몸을 세워 들어 올리는 동작. 몸 뒤쪽 근육 전체를 씁니다</td></tr></tbody></table></div>
+<h2>체중 대비 배수로 보기</h2><p>합계가 같아도 체중이 다르면 의미가 달라요. 그래서 합계를 체중으로 나눈 값, 곧 내 몸무게의 몇 배를 드는지를 함께 봅니다.</p><p><strong>체중 대비 배수 = 3대 중량 ÷ 체중</strong></p><p>체중 75kg인 사람이 3대 330kg이면 330 ÷ 75 = 4.4배예요. 종목마다도 같은 식으로 계산하고, 세 종목이 합계에서 차지하는 비율도 함께 보여 줍니다.</p>
+<h2>3대 300·400·500이라는 말</h2><p>3대 300, 3대 400, 3대 500 같은 표현은 운동 커뮤니티에서 수준을 가늠할 때 쓰는 말이에요. 공식 등급이나 인증 기준은 아닙니다. 이 페이지에는 "몇 kg이면 상위 몇 %" 같은 평균·등급표를 싣지 않았어요. 믿을 만한 출처를 확인하지 못했기 때문입니다. 내 기록의 변화와 체중 대비 배수를 기준으로 삼는 편이 낫습니다.</p>
+<h2>측정할 때 주의할 점</h2><p>최대 무게에 가까운 시도는 다칠 위험이 커요. 보조자와 함께하고, 스쿼트와 벤치프레스는 안전바(세이프티)를 맞춰 두세요. 무리해서 1RM을 직접 재기보다 3~5회 들 수 있는 무게로 추정하는 방법이 더 안전합니다.</p><p>근력을 늘리는 동안 먹는 양은 <a href="/macros">칼로리·단백질 계산기</a>로, 체성분은 <a href="/body-fat">체지방률 계산기</a>와 <a href="/bmi">BMI 계산기</a>로 확인할 수 있어요.</p>
+<h2>사용 방법</h2><ol><li>종목마다 든 무게와 횟수를 넣으세요. 1RM을 알고 있으면 횟수를 1로 두면 됩니다.</li><li>체중을 넣으면 체중 대비 배수가 함께 나와요.</li><li>아래 표에서 종목별 추정 1RM, 체중 대비 배수, 합계에서 차지하는 비율을 확인하세요.</li></ol>
+<p class="note">1RM 추정은 Epley(무게 × (1 + 횟수 ÷ 30)), Brzycki(무게 × 36 ÷ (37 − 횟수)), Lombardi(무게 × (1 + 0.033 × 횟수)) 세 공식의 평균이에요. 횟수가 많을수록 오차가 커집니다.</p>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>3대 측정은 어떻게 하나요?</summary><p>스쿼트·벤치프레스·데드리프트 세 종목에서 한 번 들 수 있는 최대 무게(1RM)를 각각 구해 더하면 돼요. 세 값을 더한 숫자를 흔히 3대 몇이라고 부릅니다. 이 계산기에 종목별 무게와 횟수를 넣으면 합계와 체중 대비 배수가 나와요.</p></details><details><summary>1RM을 직접 안 들어 봐도 되나요?</summary><p>네. 여러 번 든 기록으로 추정할 수 있어요. 무게와 횟수를 넣으면 Epley·Brzycki·Lombardi 세 공식의 평균으로 1RM을 추정합니다. 이 사이트의 1RM 계산기와 같은 식이에요. 횟수가 12회를 넘으면 오차가 커지니 10회 이하 기록을 쓰는 게 좋아요.</p></details><details><summary>3대 500은 어느 정도인가요?</summary><p>세 종목 최대 무게를 더해 500kg이라는 뜻이에요. 3대 300·400·500 같은 말은 운동 커뮤니티에서 수준을 가늠할 때 쓰는 표현이고, 공식 등급은 아닙니다. 같은 500kg이라도 체중에 따라 의미가 달라서, 이 계산기는 체중 대비 배수를 함께 보여 줘요.</p></details><details><summary>체중 대비로 보는 이유는요?</summary><p>몸이 클수록 드는 무게도 커지기 쉬워서, 합계만으로는 체중이 다른 사람끼리 비교하기 어려워요. 합계를 체중으로 나누면 내 몸무게의 몇 배를 드는지가 나와서, 체중이 달라도 견줘 볼 수 있습니다. 체중이 변하는 동안 내 기록의 변화를 볼 때도 쓸모가 있어요.</p></details><details><summary>스미스머신 기록도 넣어도 되나요?</summary><p>넣을 수는 있지만 프리웨이트 기록과 같은 값으로 보기는 어려워요. 스미스머신은 바의 움직임을 레일이 잡아 줘서 균형을 잡는 부담이 다릅니다. 기록을 비교할 때는 같은 기구·같은 방식으로 잰 것끼리 비교하세요.</p></details></section>
+  <footer>추정값이며 실제 최대 무게와 다를 수 있어요. 최대 중량 시도는 보조자와 함께 안전하게 하세요.<br><span class="version-tag">v1.0 · 2026-10-07 업데이트</span></footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const LIFTS=[['sq','스쿼트'],['bp','벤치프레스'],['dl','데드리프트']];
+const pos=id=>{ const s=$(id).value.trim(), v=Number(s); return s!==''&&Number.isFinite(v)&&v>0? v : NaN; };
+// 1RM 추정 — onerm.html 과 같은 식(Epley·Brzycki·Lombardi 평균). 횟수 1은 직접 잰 1RM 으로 보고 그대로 쓴다.
+function rm(w,r){
+  if(r===1) return w;
+  const epley=w*(1+r/30), brz=w*36/(37-r), lom=w*(1+0.033*r);
+  return (epley+brz+lom)/3;
+}
+const f1=n=>n.toFixed(1);
+function calc(){
+  const bw=pos('bw'); let total=0, okAll=true; const rows=[];
+  LIFTS.forEach(([k,name])=>{
+    const w=pos(k+'-w'); let r=Math.round(pos(k+'-r'));
+    const ok=Number.isFinite(w)&&Number.isFinite(r)&&r>=1&&r<=30;
+    const v= ok? rm(w,r) : NaN;
+    if(ok) total+=v; else okAll=false;
+    rows.push({name,w,r,v,ok});
+  });
+  if(!okAll){
+    $('out').innerHTML='<div class="big-result">—</div><p class="note">세 종목의 무게와 횟수(1~30회)를 모두 넣어 주세요.</p>'; return;
+  }
+  const hasBw=Number.isFinite(bw);
+  $('out').innerHTML=`<div class="big-result">3대 ${f1(total)}kg<small>${hasBw? '체중의 '+(total/bw).toFixed(2)+'배' : '체중을 넣으면 배수가 나와요'}</small></div>
+    <div class="tw"><table style="margin-top:12px"><thead><tr><th>종목</th><th class="r">추정 1RM</th><th class="r">체중 대비</th><th class="r">비율</th></tr></thead><tbody>
+    ${rows.map(x=>`<tr><td>${x.name}</td><td class="r">${f1(x.v)}kg</td><td class="r">${hasBw?(x.v/bw).toFixed(2)+'배':'—'}</td><td class="r">${(x.v/total*100).toFixed(0)}%</td></tr>`).join('')}
+    <tr><td><b>합계</b></td><td class="r"><b>${f1(total)}kg</b></td><td class="r"><b>${hasBw?(total/bw).toFixed(2)+'배':'—'}</b></td><td class="r">100%</td></tr>
+    </tbody></table></div>
+    <div class="note">${rows.some(x=>x.r>12)?'횟수가 12회를 넘는 종목은 오차가 커요. ':''}무게×횟수로 넣은 종목은 추정값이에요(1RM 계산기와 같은 식). 최대 무게 시도는 보조자와 함께 하세요.</div>`;
+}
+let sent=false;
+['sq-w','sq-r','bp-w','bp-r','dl-w','dl-r','bw'].forEach(id=>$(id).addEventListener('input',()=>{ calc(); if(!sent&&typeof gtag==='function'){ gtag('event','big3_calculated',{}); sent=true; } }));
+calc();
+
+</script>
+
+</body>
+</html>

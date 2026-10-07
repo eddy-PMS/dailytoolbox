@@ -32,7 +32,9 @@ const SCORE_GAMES = {
   block: { lower: false, min: 10, max: 100000, minMs: 5000, msPerPoint: 25 },            // 블록 채우기: 점수
   'mine-easy': { lower: true, min: 1000,  max: 600000,  minMs: 1000,  timeIsScore: true }, // 지뢰찾기 초급(9×9·10): 완료 시간(ms)
   'mine-mid':  { lower: true, min: 8000,  max: 1200000, minMs: 8000,  timeIsScore: true }, // 지뢰찾기 중급(16×16·40)
-  'mine-hard': { lower: true, min: 25000, max: 1800000, minMs: 25000, timeIsScore: true }  // 지뢰찾기 고급(16×30·99)
+  'mine-hard': { lower: true, min: 25000, max: 1800000, minMs: 25000, timeIsScore: true }, // 지뢰찾기 고급(16×30·99)
+  cps: { lower: false, min: 10, max: 250, minMs: 9500, maxMs: 13000 },                    // CPS 테스트: 10초 동안 누른 횟수 (초당 25회가 상한)
+  aim: { lower: true, min: 6000, max: 180000, minMs: 6000, timeIsScore: true }             // 에임 테스트: 과녁 30개를 맞히는 데 걸린 시간(ms). 과녁당 0.2초 미만은 불가
 };
 const LB_SIZE = 100;
 // ===== 광고 배너 이미지 =====

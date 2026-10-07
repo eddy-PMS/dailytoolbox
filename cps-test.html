@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>CPS 테스트 - 마우스 클릭 속도 테스트, 초당 클릭 수 측정</title>
+<meta name="description" content="정해진 시간 동안 누른 횟수로 초당 클릭 수(CPS)를 재는 무료 CPS 테스트. 1초·5초·10초 가운데 골라 마우스 클릭 속도를 측정하고 내 최고 기록과 비교해 보세요.">
+<meta name="keywords" content="cps 테스트, 마우스 클릭 테스트, 클릭 속도 테스트, cps 측정, 클릭 테스트, 마우스 클릭 속도, cps">
+<link rel="canonical" href="https://dailyfreetoolbox.com/cps-test">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CPS 테스트 - 마우스 클릭 속도 테스트, 초당 클릭 수 측정">
+<meta property="og:description" content="정해진 시간 동안 누른 횟수로 초당 클릭 수(CPS)를 재는 무료 CPS 테스트. 1초·5초·10초 가운데 골라 마우스 클릭 속도를 측정하고 내 최고 기록과 비교해 보세요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/cps-test">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og/og-cps-test.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "CPS 테스트", "url": "https://dailyfreetoolbox.com/cps-test", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "정해진 시간 동안 누른 횟수로 초당 클릭 수(CPS)를 재는 무료 CPS 테스트. 1초·5초·10초 가운데 골라 마우스 클릭 속도를 측정하고 내 최고 기록과 비교해 보세요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
+#pad { height:280px; border-radius:6px; display:flex; flex-direction:column; align-items:center; justify-content:center; cursor:pointer; user-select:none; -webkit-user-select:none; touch-action:manipulation; background:var(--accent); color:#fff; font-size:22px; font-weight:700; text-align:center; padding:20px; line-height:1.5; }
+#pad.run { background:#1e47a8; } #pad.done { background:#3a3f4a; cursor:default; }
+#pad .big { font-size:46px; line-height:1.2; font-variant-numeric:tabular-nums; } #pad .small { font-size:14px; font-weight:400; opacity:.9; }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "CPS는 무엇인가요?", "acceptedAnswer": {"@type": "Answer", "text": "Clicks Per Second의 줄임말로, 1초에 몇 번 눌렀는지를 뜻해요. 누른 횟수를 잰 시간(초)으로 나눠서 구합니다. 10초 동안 70번 눌렀다면 7.0 CPS예요."}}, {"@type": "Question", "name": "몇 초로 재는 게 정확한가요?", "acceptedAnswer": {"@type": "Answer", "text": "재려는 것이 달라요. 1초는 순간적으로 낼 수 있는 가장 빠른 속도에 가깝고, 누르는 순간의 차이에 따라 값이 크게 흔들려요. 5초와 10초는 그 속도를 얼마나 유지하는지를 보여 줘서 더 안정적인 값이 나옵니다. 서로 다른 시간으로 잰 기록은 직접 비교하지 않는 게 좋아요."}}, {"@type": "Question", "name": "휴대폰 터치로도 잴 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "네, 화면을 두드리면 같은 방식으로 세요. 다만 손가락 여러 개로 번갈아 두드릴 수 있어서 마우스 기록과는 성격이 달라요. 마우스 클릭 속도를 재려면 PC에서 재세요."}}, {"@type": "Question", "name": "더블클릭이 되는 마우스는 어떻게 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "한 번 눌렀는데 두 번 입력되는 마우스는 실제보다 높은 값이 나와요. 이 테스트는 0.02초 안에 연달아 들어온 입력이 많으면 결과 아래에 알려 줍니다. 그런 안내가 나오면 마우스 상태를 확인해 보세요."}}, {"@type": "Question", "name": "반응속도 테스트와 무엇이 다른가요?", "acceptedAnswer": {"@type": "Answer", "text": "CPS 테스트는 얼마나 빠르게 연달아 누르는지를 재고, 반응속도 테스트는 신호를 보고 처음 누르기까지 걸리는 시간을 재요. 손가락을 빠르게 움직이는 능력과 신호에 반응하는 능력은 서로 다른 것이라 두 기록이 꼭 같이 가지는 않아요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2b5fd9"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#두뇌·감각 훈련">두뇌·감각 훈련</a><span>›</span>CPS 테스트</nav>
+  <h1><img class="h1ic" src="/icons/cps-test.webp" width="32" height="32" alt="">CPS 테스트</h1>
+  <p class="sub">정해진 시간 동안 최대한 빠르게 눌러 초당 클릭 수(CPS)를 재요. 첫 클릭과 함께 시간이 흐르기 시작합니다.</p>
+  <div class="ad-slot" data-ad="top"></div>
+
+  <div class="tabs" id="modes"><button type="button" class="tab" data-s="1">1초</button><button type="button" class="tab" data-s="5">5초</button><button type="button" class="tab active" data-s="10">10초</button></div>
+  <div id="pad"><div>여기를 눌러 시작</div><div class="small">마우스 클릭 · 화면 터치</div></div>
+  <div class="card" style="margin-top:16px"><div id="result"><div class="stat-grid"><div class="stat"><div class="num">—</div><div class="label">CPS</div></div><div class="stat"><div class="num">—</div><div class="label">클릭 수</div></div><div class="stat"><div class="num" id="bestNum">—</div><div class="label" id="bestLabel">내 최고 (10초)</div></div></div></div><p class="note" id="note">랭킹은 10초 기록으로만 등록할 수 있어요.</p></div>
+
+  <div id="lb"></div>
+  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">두뇌·감각 훈련 도구 더 보기</div><div class="chips"><a href="reaction"><img class="sic" src="/icons/reaction.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>반응속도 테스트</span></a><a href="aim-test"><img class="sic" src="/icons/aim-test.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>에임 테스트</span></a><a href="sens"><img class="sic" src="/icons/sens.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>마우스 감도 변환기</span></a><a href="typing"><img class="sic" src="/icons/typing.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>타자 속도 테스트</span></a><a href="order"><img class="sic" src="/icons/order.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>숫자 순서 누르기</span></a><a href="color-find"><img class="sic" src="/icons/color-find.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>틀린 색 찾기</span></a><a class="more" href="/#두뇌·감각 훈련">전체 보기 →</a></div></div>
+<section class="seo">
+<h2>CPS란 — 초당 클릭 수 계산</h2><p>CPS는 Clicks Per Second, 곧 1초에 누른 횟수예요. 계산은 단순합니다.</p><p><strong>CPS = 누른 횟수 ÷ 잰 시간(초)</strong></p><p>5초 동안 34번 눌렀다면 34 ÷ 5 = 6.8 CPS이고, 10초 동안 70번이면 7.0 CPS예요. 이 테스트는 첫 클릭을 한 순간부터 시간을 재고, 정해진 시간이 지나면 자동으로 멈춥니다.</p>
+<h2>마우스 클릭 테스트 — 1초·5초·10초의 차이</h2><p>같은 사람이라도 재는 시간에 따라 값이 달라져요. 1초는 순간 속도에 가까워 값이 가장 높게 나오기 쉽고, 한두 번의 차이로도 결과가 크게 바뀝니다. 5초와 10초는 속도를 유지하는 힘까지 반영돼서 값이 조금 낮아지는 대신 더 일정해요. 기록을 비교할 때는 같은 시간으로 잰 것끼리 비교하세요. 랭킹은 10초 기록으로만 받습니다.</p>
+<h2>클릭 속도 테스트에서 기록을 올리려면</h2><p>손에 힘을 빼고 손가락을 버튼에서 멀리 떼지 않는 것이 기본이에요. 누르는 깊이가 얕을수록 다음 클릭으로 넘어가는 시간이 줄어듭니다. 손목과 팔을 편하게 받치고, 마우스를 꽉 쥐지 않도록 하세요.</p><p>짧게 여러 번 재는 편이 한 번에 오래 하는 것보다 좋아요. 손이나 손목이 뻐근하면 바로 쉬세요. 빠른 클릭을 오래 반복하면 손목에 무리가 갈 수 있습니다.</p>
+<h2>클릭 속도와 반응속도는 달라요</h2><p>CPS 테스트는 연달아 누르는 빠르기를 재고, <a href="/reaction">반응속도 테스트</a>는 신호가 나온 뒤 처음 누르기까지의 시간을 재요. 움직이는 과녁을 맞히는 정확도는 <a href="/aim-test">에임 테스트</a>로 따로 잴 수 있고, 키보드 입력 속도는 <a href="/typing">타자 속도 테스트</a>가 있어요. 마우스 감도를 맞추고 싶다면 <a href="/sens">마우스 감도 변환기</a>를 쓰세요.</p><p>이 페이지에는 "몇 CPS면 상위 몇 %" 같은 등급표를 싣지 않았어요. 믿을 만한 기준 자료를 확인하지 못했기 때문입니다. 대신 아래 랭킹에서 다른 이용자의 기록과 비교해 볼 수 있어요.</p>
+<h2>사용 방법</h2><ol><li>위에서 1초·5초·10초 중 하나를 고르세요.</li><li>파란 영역을 누르면 바로 측정이 시작돼요. 시간이 끝날 때까지 계속 누르세요.</li><li>끝나면 CPS와 클릭 수, 이 기기에 저장된 내 최고 기록이 나와요. 10초 기록은 닉네임을 넣어 랭킹에 올릴 수 있어요.</li></ol>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>CPS는 무엇인가요?</summary><p>Clicks Per Second의 줄임말로, 1초에 몇 번 눌렀는지를 뜻해요. 누른 횟수를 잰 시간(초)으로 나눠서 구합니다. 10초 동안 70번 눌렀다면 7.0 CPS예요.</p></details><details><summary>몇 초로 재는 게 정확한가요?</summary><p>재려는 것이 달라요. 1초는 순간적으로 낼 수 있는 가장 빠른 속도에 가깝고, 누르는 순간의 차이에 따라 값이 크게 흔들려요. 5초와 10초는 그 속도를 얼마나 유지하는지를 보여 줘서 더 안정적인 값이 나옵니다. 서로 다른 시간으로 잰 기록은 직접 비교하지 않는 게 좋아요.</p></details><details><summary>휴대폰 터치로도 잴 수 있나요?</summary><p>네, 화면을 두드리면 같은 방식으로 세요. 다만 손가락 여러 개로 번갈아 두드릴 수 있어서 마우스 기록과는 성격이 달라요. 마우스 클릭 속도를 재려면 PC에서 재세요.</p></details><details><summary>더블클릭이 되는 마우스는 어떻게 되나요?</summary><p>한 번 눌렀는데 두 번 입력되는 마우스는 실제보다 높은 값이 나와요. 이 테스트는 0.02초 안에 연달아 들어온 입력이 많으면 결과 아래에 알려 줍니다. 그런 안내가 나오면 마우스 상태를 확인해 보세요.</p></details><details><summary>반응속도 테스트와 무엇이 다른가요?</summary><p>CPS 테스트는 얼마나 빠르게 연달아 누르는지를 재고, 반응속도 테스트는 신호를 보고 처음 누르기까지 걸리는 시간을 재요. 손가락을 빠르게 움직이는 능력과 신호에 반응하는 능력은 서로 다른 것이라 두 기록이 꼭 같이 가지는 않아요.</p></details></section>
+  <footer>측정값은 마우스·브라우저 상태에 따라 달라질 수 있어요. 최고 기록은 이 기기에만 저장되고, 랭킹에 등록할 때만 닉네임과 기록이 서버에 저장돼요.<br><span class="version-tag">v1.0 · 2026-10-07 업데이트</span></footer>
+</main>
+
+<script src="leaderboard.js"></script>
+<script>
+
+const $=id=>document.getElementById(id);
+const pad=$('pad');
+let secs=10, state='idle', clicks=0, t0=0, raf=0, lastAt=0, fast=0, lockUntil=0;
+const bestKey=s=>'cps_best_'+s;
+function getBest(s){ try{ const v=Number(localStorage.getItem(bestKey(s))); return Number.isFinite(v)&&v>0? v : 0; }catch(e){ return 0; } }
+function showBest(){ const b=getBest(secs); $('bestNum').textContent= b? (b/secs).toFixed(1) : '—'; $('bestLabel').textContent=`내 최고 CPS (${secs}초)`; }
+function idle(){ state='idle'; pad.className=''; pad.innerHTML='<div>여기를 눌러 시작</div><div class="small">마우스 클릭 · 화면 터치</div>'; }
+function tick(){
+  const el=(performance.now()-t0)/1000, left=Math.max(0,secs-el);
+  if(left<=0){ finish(); return; }
+  pad.innerHTML=`<div class="big">${clicks}</div><div class="small">남은 시간 ${left.toFixed(1)}초</div>`;
+  raf=requestAnimationFrame(tick);
+}
+function finish(){
+  cancelAnimationFrame(raf); state='done'; lockUntil=performance.now()+1200;
+  const elapsed=Math.round(performance.now()-t0), cps=clicks/secs;
+  pad.className='done'; pad.innerHTML=`<div class="big">${cps.toFixed(1)} CPS</div><div class="small">${secs}초 동안 ${clicks}번 · 잠시 뒤 눌러서 다시</div>`;
+  let best=getBest(secs); const isBest=clicks>best;
+  if(isBest){ try{ localStorage.setItem(bestKey(secs),String(clicks)); }catch(e){} best=clicks; }
+  $('result').innerHTML=`<div class="stat-grid"><div class="stat"><div class="num">${cps.toFixed(1)}</div><div class="label">CPS</div></div><div class="stat"><div class="num">${clicks}</div><div class="label">클릭 수 (${secs}초)</div></div><div class="stat"><div class="num" id="bestNum">${(best/secs).toFixed(1)}</div><div class="label" id="bestLabel">내 최고 CPS (${secs}초)</div></div></div>`;
+  const warn= fast>=Math.max(3,clicks*0.15)? ' 0.02초 안에 연달아 들어온 입력이 많았어요. 더블클릭이 되는 마우스인지 확인해 보세요.' : '';
+  $('note').textContent=(isBest?'새 최고 기록이에요. ':'')+(secs===10?'10초 기록은 아래 랭킹에 올릴 수 있어요.':'랭킹은 10초 기록으로만 등록할 수 있어요.')+warn;
+  if(secs===10&&clicks>=10&&clicks<=250) LB.submit(clicks,{duration:elapsed});      // 서버 규칙과 같은 범위(초당 25회까지)만 랭킹에 올린다
+  if(typeof gtag==='function') gtag('event','cps_test_done',{secs,clicks});
+}
+pad.addEventListener('pointerdown',e=>{
+  e.preventDefault();
+  const now=performance.now();
+  if(state==='done'){ if(now<lockUntil) return; idle(); return; }
+  if(state==='idle'){ state='run'; clicks=0; fast=0; t0=now; lastAt=now; pad.className='run'; clicks=1; raf=requestAnimationFrame(tick); return; }
+  if(state==='run'){ if(now-t0>=secs*1000){ finish(); return; } if(now-lastAt<20) fast++; lastAt=now; clicks++; }
+});
+pad.addEventListener('contextmenu',e=>e.preventDefault());
+document.querySelectorAll('#modes .tab').forEach(b=>b.addEventListener('click',()=>{
+  if(state==='run') return;
+  secs=Number(b.dataset.s); document.querySelectorAll('#modes .tab').forEach(x=>x.classList.toggle('active',x===b)); idle(); showBest();
+  $('note').textContent= secs===10?'랭킹은 10초 기록으로만 등록할 수 있어요.':'랭킹은 10초 기록으로만 등록할 수 있어요. 지금은 '+secs+'초 측정이에요.';
+}));
+showBest();
+LB.init({game:'cps', el:'#lb', label:'10초 CPS', format:v=>(v/10).toFixed(1)+' CPS'});
+
+</script>
+
+</body>
+</html>

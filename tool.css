@@ -91,6 +91,8 @@ article.guide th, article.guide td { border:1px solid #d9e8df; padding:8px 10px;
 article.guide th { background:#dcefe2; color:var(--ink); font-weight:700; border-bottom-color:#b4d4c2; }
 article.guide .tw { overflow-x:auto; margin:0 0 16px; -webkit-overflow-scrolling:touch; }
 article.guide .tw > table { margin:0; }
+/* 열이 많은 표에서 첫 열·머리칸의 한글이 한 글자씩 세로로 쪼개지지 않게 낱말 단위로만 줄바꿈한다. 넘치는 폭은 .tw 가 가로 스크롤로 받는다. */
+article.guide .tw th, article.guide .tw td:first-child { word-break:keep-all; }
 @media(max-width:480px){
   article.guide table { font-size:13px; }
   article.guide th, article.guide td { padding:6px 7px; }

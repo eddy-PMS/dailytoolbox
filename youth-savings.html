@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>청년미래적금 계산기 - 만기 수령액·정부기여금, 일반형 우대형 비교</title>
+<meta name="description" content="월 납입액과 금리를 넣으면 청년미래적금 3년 만기 수령액을 원금·이자·정부기여금으로 나눠 보여 주는 무료 계산기. 일반형 6%·우대형 12% 기여금 차이와 가입 조건도 정리했어요.">
+<meta name="keywords" content="청년미래적금 계산기, 청년미래적금, 청년미래적금 조건, 청년미래적금 만기 수령액, 청년미래적금 정부기여금, 청년도약계좌 계산기, 청년도약계좌 만기, 청년 적금">
+<link rel="canonical" href="https://dailyfreetoolbox.com/youth-savings">
+<meta property="og:type" content="website">
+<meta property="og:title" content="청년미래적금 계산기 - 만기 수령액·정부기여금, 일반형 우대형 비교">
+<meta property="og:description" content="월 납입액과 금리를 넣으면 청년미래적금 3년 만기 수령액을 원금·이자·정부기여금으로 나눠 보여 주는 무료 계산기. 일반형 6%·우대형 12% 기여금 차이와 가입 조건도 정리했어요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/youth-savings">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og/og-youth-savings.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "청년미래적금 계산기", "url": "https://dailyfreetoolbox.com/youth-savings", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "월 납입액과 금리를 넣으면 청년미래적금 3년 만기 수령액을 원금·이자·정부기여금으로 나눠 보여 주는 무료 계산기. 일반형 6%·우대형 12% 기여금 차이와 가입 조건도 정리했어요."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#2f7d4f; --accent-deep:#215c39; }
+.card input, .card select { font-size:16px; }
+.qchips { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+.qchips button { padding:6px 11px; border:1px solid var(--line); border-radius:999px; background:#fff; font-size:13px; color:var(--ink-soft); cursor:pointer; font-family:inherit; }
+.qchips button:hover { border-color:var(--accent); color:var(--accent); }
+.tw { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.seo .tw table th, .seo .tw table td:first-child, #out .tw th, #out .tw td:first-child { word-break:keep-all; }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "청년미래적금은 누가 가입할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "가입일 기준 만 19세부터 34세까지이고, 병역을 마쳤다면 그 기간(최대 6년)을 나이에서 빼고 계산해요. 개인소득은 직전 과세기간 총급여 7,500만원(종합소득 6,300만원) 이하이거나 연매출 3억원 이하 소상공인이어야 하고, 가구소득은 기준 중위소득 200% 이하(맞벌이 2인가구는 250% 이하)여야 합니다. 모든 금융기관을 통틀어 1인 1계좌만 만들 수 있어요(확인일 2026-10-07)."}}, {"@type": "Question", "name": "정부기여금은 얼마나 받나요?", "acceptedAnswer": {"@type": "Answer", "text": "매달 넣은 금액(월 50만원 한도)의 6%(일반형) 또는 12%(우대형)를 정부가 더해 줘요. 월 50만원을 3년 동안 넣으면 원금 1,800만원에 기여금이 일반형 108만원, 우대형 216만원입니다. 기여금에도 기본이자율(연 5%)로 이자가 붙어요. 총급여가 6,000만원을 넘고 7,500만원 이하이면 가입은 할 수 있지만 기여금 지급 기준에는 들어가지 않아 이자 비과세 혜택만 받습니다."}}, {"@type": "Question", "name": "일반형과 우대형은 어떻게 나뉘나요?", "acceptedAnswer": {"@type": "Answer", "text": "우대형(12%)은 세 가지 경우예요. 총급여 3,600만원 이하인 중소기업 재직자, 직전 연도에 처음 취업해 지금 중소기업에 다니는 신규 취업자(총급여 6,000만원 이하), 연매출 1억원 이하 소상공인입니다. 그 밖에 총급여 6,000만원 이하이거나 연매출 3억원 이하 소상공인이면 일반형(6%)이에요. 유형은 가입할 때 정해지고, 중소기업 재직자·신규 취업자는 만기 한 달 전까지 29개월 이상 중소기업에 근무해야 우대형이 유지됩니다."}}, {"@type": "Question", "name": "이자에 세금이 붙나요?", "acceptedAnswer": {"@type": "Answer", "text": "만기까지 유지하면 적금 이자와 기여금 이자 모두 소득세와 농어촌특별세가 붙지 않아요. 일반 적금은 이자의 15.4%를 세금으로 떼니, 같은 금리라도 손에 쥐는 돈이 더 많습니다. 다만 중간에 해지하면(특별중도해지 제외) 이자에 세금이 붙어요."}}, {"@type": "Question", "name": "중간에 해지하면 어떻게 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "만기 전에 해지하면 낮은 중도해지 이자율이 적용되고, 정부기여금을 받지 못하며, 이자에 세금이 붙어요. 다만 가입자의 사망·해외이주, 천재지변, 퇴직, 사업장 폐업, 3개월 이상 입원이나 요양이 필요한 상해·질병 같은 사유로 해지하는 특별중도해지는 기본이자율이 적용되고 기여금과 비과세 혜택도 받을 수 있습니다."}}, {"@type": "Question", "name": "청년도약계좌에서 갈아탈 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "청년도약계좌를 가진 채로 청년미래적금에 함께 가입할 수는 없어요. 처음 가입을 받은 2026년 6월 22일부터 8월 7일까지는 청년도약계좌를 특별중도해지하고 넘어오는 연계가입이 허용됐지만 그 기간은 끝났습니다. 지금은 청년도약계좌를 해지한 뒤에 청년미래적금을 신청할 수 있어요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2f7d4f"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#돈·일">돈·일</a><span>›</span>청년미래적금 계산기</nav>
+  <h1><img class="h1ic" src="/icons/youth-savings.webp" width="32" height="32" alt="">청년미래적금 계산기</h1>
+  <p class="sub">월 납입액과 금리를 넣으면 3년 뒤 받는 돈을 원금·이자·정부기여금으로 나눠 보여 줘요. 일반형과 우대형도 나란히 비교합니다.</p>
+  <div class="ad-slot" data-ad="top"></div>
+
+  <div class="card">
+    <div class="grid2">
+      <div class="field"><label for="monthly">월 납입액 (원, 최대 50만원)</label><input type="number" id="monthly" value="500000" min="1000" max="500000" step="1000" inputmode="numeric">
+        <div class="qchips" id="qm"><button type="button" data-v="100000">10만</button><button type="button" data-v="200000">20만</button><button type="button" data-v="300000">30만</button><button type="button" data-v="400000">40만</button><button type="button" data-v="500000">50만</button></div></div>
+      <div class="field"><label for="rate">적금 금리 (연 %, 세전)</label><input type="number" id="rate" value="5" min="0" max="20" step="0.1" inputmode="decimal">
+        <div class="qchips" id="qr"><button type="button" data-v="5">기본 5%</button><button type="button" data-v="7">7%</button><button type="button" data-v="8">8%</button></div></div>
+      <div class="field"><label for="type">가입 유형</label><select id="type"><option value="6">일반형 (기여금 6%)</option><option value="12">우대형 (기여금 12%)</option><option value="0">기여금 없음 (총급여 6,000만원 초과)</option></select></div>
+    </div>
+    <p class="note">금리는 가입한 은행과 우대 조건에 따라 달라요. 기본이자율은 연 5%로 모든 취급기관이 같고, 우대금리를 더하면 최고 연 7~8%입니다.</p>
+  </div>
+  <div id="out"></div>
+  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">돈·일 도구 더 보기</div><div class="chips"><a href="compound"><img class="sic" src="/icons/compound.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>복리·적금 계산기</span></a><a href="military-savings"><img class="sic" src="/icons/military-savings.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>군적금 계산기</span></a><a href="salary"><img class="sic" src="/icons/salary.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>연봉 실수령액</span></a><a href="soldier-pay"><img class="sic" src="/icons/soldier-pay.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>병사 월급 계산기</span></a><a href="mortgage"><img class="sic" src="/icons/mortgage.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>주택담보대출 한도</span></a><a href="jeonse-loan"><img class="sic" src="/icons/jeonse-loan.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>전세대출 이자</span></a><a class="more" href="/#돈·일">전체 보기 →</a></div></div>
+<section class="seo">
+<h2>청년미래적금 만기 수령액 계산</h2><p>청년미래적금은 매달 50만원까지 자유롭게 넣는 3년 만기 적금이에요. 만기에 받는 돈은 네 가지를 더한 값입니다.</p><p><strong>만기 수령액 = 납입 원금 + 은행 이자 + 정부기여금 + 기여금 이자</strong></p><p>은행 이자는 넣은 돈마다 만기까지 남은 기간만큼 단리로 붙어요. 정부기여금은 매달 넣은 금액의 6%(일반형)나 12%(우대형)이고, 기여금에도 기본이자율 연 5%로 이자가 붙습니다. 이자에는 세금이 없어요.</p><p>금융위원회가 든 예시(금리 연 7% 가정, 월 50만원)는 일반형 약 2,110만원, 우대형 약 2,227만원이에요. 이 계산기로 같은 값을 넣으면 일반형 2,110만 5,750원, 우대형 2,226만 9,000원이 나옵니다. 기여금 이자는 실제로 기여금이 들어온 날부터 계산하기 때문에 몇천 원에서 몇만 원 차이가 날 수 있어요.</p>
+<h2>청년미래적금 조건</h2><p>나이·개인소득·가구소득 세 가지를 모두 충족해야 가입할 수 있어요.</p><div class="tw"><table id="t-cond"><thead><tr><th>구분</th><th>기준</th></tr></thead><tbody><tr><td>나이</td><td>가입일 기준 만 19~34세. 병역 이행 기간은 최대 6년까지 나이에서 빼고 계산</td></tr><tr><td>개인소득</td><td>직전 과세기간 총급여 7,500만원(종합소득 6,300만원) 이하, 또는 연매출 3억원 이하 소상공인</td></tr><tr><td>가구소득</td><td>기준 중위소득 200% 이하 (맞벌이 2인가구는 250% 이하)</td></tr><tr><td>납입</td><td>월 1천원~50만원, 연 600만원 이하, 자유적립식</td></tr><tr><td>기간·금리</td><td>3년 만기, 3년 고정금리. 기본 연 5% + 기관별 우대 최대 2~3%p</td></tr><tr><td>세금</td><td>만기까지 유지하면 이자소득세·농어촌특별세 없음</td></tr></tbody></table></div><p>최근 3년 안에 금융소득종합과세 대상자였던 적이 있으면 가입할 수 없어요. 계좌는 모든 금융기관을 통틀어 한 사람이 하나만 만들 수 있습니다.</p>
+<h2>일반형과 우대형</h2><p>기여금 비율은 가입을 신청할 때의 소득 심사로 정해지고, 한번 정해지면 원칙적으로 바뀌지 않아요.</p><div class="tw"><table id="t-type"><thead><tr><th>유형</th><th>대상</th><th>개인소득</th><th>가구소득</th><th class="r">기여금</th></tr></thead><tbody><tr><td>일반형</td><td>일반 소득자</td><td>총급여 6,000만원(종합소득 4,800만원) 이하</td><td>200% 이하</td><td class="r">6%</td></tr><tr><td>일반형</td><td>소상공인</td><td>연매출 3억원 이하</td><td>200% 이하</td><td class="r">6%</td></tr><tr><td>우대형</td><td>중소기업 재직자</td><td>총급여 3,600만원(종합소득 2,600만원) 이하</td><td>150% 이하</td><td class="r">12%</td></tr><tr><td>우대형</td><td>중소기업 신규 취업자</td><td>총급여 6,000만원(종합소득 4,800만원) 이하</td><td>200% 이하</td><td class="r">12%</td></tr><tr><td>우대형</td><td>소상공인</td><td>연매출 1억원 이하</td><td>150% 이하</td><td class="r">12%</td></tr></tbody></table></div><p>맞벌이 2인가구는 가구소득 기준이 50%p씩 높아요(200% → 250%, 150% → 200%). 신규 취업자는 직전 연도에 처음 취업해 신청할 때 중소기업에 다니고 있는 사람을 말합니다. 중소기업 재직자와 신규 취업자는 만기 한 달 전까지 29개월 이상 중소기업에 근무해야 하고(이직은 2회까지 허용), 채우지 못하면 일반형 비율이 적용돼요.</p><p>총급여가 6,000만원을 넘고 7,500만원 이하인 사람은 가입은 할 수 있지만 위 기여금 지급 기준에 들어가지 않아요. 이 경우 이자 비과세 혜택만 받습니다. 외국인에게도 기여금은 지급되지 않아요.</p>
+<h2>납입액별 만기 수령액</h2><p>매달 같은 금액을 36번 넣었을 때의 값이에요. <strong>금리 연 5%(기본이자율) 가정</strong>이고, 우대금리를 받으면 은행 이자가 더 늘어납니다.</p><div class="tw"><table id="t-amount"><thead><tr><th>월 납입액</th><th class="r">원금</th><th class="r">일반형 만기</th><th class="r">우대형 만기</th></tr></thead><tbody><tr><td>10만원</td><td class="r">360만원</td><td class="r">411만 150원</td><td class="r">434만 2,800원</td></tr><tr><td>20만원</td><td class="r">720만원</td><td class="r">822만 300원</td><td class="r">868만 5,600원</td></tr><tr><td>30만원</td><td class="r">1,080만원</td><td class="r">1,233만 450원</td><td class="r">1,302만 8,400원</td></tr><tr><td>40만원</td><td class="r">1,440만원</td><td class="r">1,644만 600원</td><td class="r">1,737만 1,200원</td></tr><tr><td>50만원</td><td class="r">1,800만원</td><td class="r">2,055만 750원</td><td class="r">2,171만 4,000원</td></tr></tbody></table></div><p>월 50만원을 넣으면 3년 동안 받는 기여금은 일반형 108만원, 우대형 216만원이에요. 금리를 바꿔 보고 싶으면 위 계산기에 숫자를 넣어 보세요.</p>
+<h2>청년도약계좌와 다른 점, 갈아타기</h2><p>청년미래적금은 3년 만기에 월 50만원까지, 기여금은 납입액의 6% 또는 12%예요. 청년도약계좌를 가진 사람은 청년미래적금에 함께 가입할 수 없습니다.</p><p>청년도약계좌에서 넘어오는 연계가입은 처음 가입을 받은 2026년 6월 22일부터 8월 7일까지만 허용됐어요. 이 기간에는 청년미래적금을 먼저 만들고 청년도약계좌를 특별중도해지할 수 있었습니다. 지금은 그 기간이 끝나서, 청년도약계좌를 해지한 뒤에 청년미래적금을 신청해야 해요. 청년도약계좌 만기 금액이나 해지 조건은 가입한 은행과 서민금융진흥원 안내를 확인하세요.</p><p>정책 적금이 아닌 일반 적금이나 예금의 만기 금액은 <a href="/compound">복리·적금 계산기</a>로, 군 복무 중 넣는 장병내일준비적금은 <a href="/military-savings">군적금 계산기</a>로 계산할 수 있어요. 내 총급여가 기준 안에 드는지는 <a href="/salary">연봉 실수령액 계산기</a>와 함께 보면 편합니다.</p>
+<h2>신청 시기·방법</h2><p>청년미래적금은 아무 때나 가입할 수 없고, 정해진 기간에 신청을 받아요. 금융위원회는 연 2회(6월·12월) 모집한다고 밝혔고, 첫 신청은 2026년 6월 22일부터 7월 3일까지였습니다. 2차 가입 기간은 2026년 12월로 예정돼 있어요.</p><p>신청은 취급기관 앱에서 서류 없이 비대면으로 합니다. 신청하면 서민금융진흥원이 소득과 가구 요건을 심사해 결과를 알려 주고, 통과한 사람만 정해진 기간에 계좌를 만들 수 있어요. 정확한 일정과 내 유형은 <a href="https://www.kinfa.or.kr/financialProduct/youthFutureSavings.do" target="_blank" rel="noopener">서민금융진흥원 청년미래적금 안내</a>나 서민금융콜센터(국번 없이 1397)에서 확인하세요.</p>
+<h2>사용 방법</h2><ol><li>월 납입액을 넣으세요. 한도는 월 50만원이에요.</li><li>적금 금리를 넣으세요. 모르면 기본이자율 5%로 두고, 가입한 은행의 우대금리를 더해 보세요.</li><li>가입 유형을 고르면 원금·은행 이자·정부기여금·기여금 이자와 합계가 나와요. 아래 표에서 일반형과 우대형을 나란히 볼 수 있습니다.</li></ol>
+<p class="note">출처: 금융위원회 보도자료 「청년미래적금 출시 준비 점검회의 개최」(2026-04-23), 「청년미래적금 취급기관별 금리 공시」(2026-05-29), 「청년미래적금 출시, 6월 22일부터 7.3일까지 가입신청」(2026-06-22), 신한은행 「신한 청년미래적금 상품설명서」(2026-06-22 현재). 확인일 2026-10-07.</p>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>청년미래적금은 누가 가입할 수 있나요?</summary><p>가입일 기준 만 19세부터 34세까지이고, 병역을 마쳤다면 그 기간(최대 6년)을 나이에서 빼고 계산해요. 개인소득은 직전 과세기간 총급여 7,500만원(종합소득 6,300만원) 이하이거나 연매출 3억원 이하 소상공인이어야 하고, 가구소득은 기준 중위소득 200% 이하(맞벌이 2인가구는 250% 이하)여야 합니다. 모든 금융기관을 통틀어 1인 1계좌만 만들 수 있어요(확인일 2026-10-07).</p></details><details><summary>정부기여금은 얼마나 받나요?</summary><p>매달 넣은 금액(월 50만원 한도)의 6%(일반형) 또는 12%(우대형)를 정부가 더해 줘요. 월 50만원을 3년 동안 넣으면 원금 1,800만원에 기여금이 일반형 108만원, 우대형 216만원입니다. 기여금에도 기본이자율(연 5%)로 이자가 붙어요. 총급여가 6,000만원을 넘고 7,500만원 이하이면 가입은 할 수 있지만 기여금 지급 기준에는 들어가지 않아 이자 비과세 혜택만 받습니다.</p></details><details><summary>일반형과 우대형은 어떻게 나뉘나요?</summary><p>우대형(12%)은 세 가지 경우예요. 총급여 3,600만원 이하인 중소기업 재직자, 직전 연도에 처음 취업해 지금 중소기업에 다니는 신규 취업자(총급여 6,000만원 이하), 연매출 1억원 이하 소상공인입니다. 그 밖에 총급여 6,000만원 이하이거나 연매출 3억원 이하 소상공인이면 일반형(6%)이에요. 유형은 가입할 때 정해지고, 중소기업 재직자·신규 취업자는 만기 한 달 전까지 29개월 이상 중소기업에 근무해야 우대형이 유지됩니다.</p></details><details><summary>이자에 세금이 붙나요?</summary><p>만기까지 유지하면 적금 이자와 기여금 이자 모두 소득세와 농어촌특별세가 붙지 않아요. 일반 적금은 이자의 15.4%를 세금으로 떼니, 같은 금리라도 손에 쥐는 돈이 더 많습니다. 다만 중간에 해지하면(특별중도해지 제외) 이자에 세금이 붙어요. 일반 예금·적금 이자의 세금은 <a href="/guide/savings-interest-tax">예적금 이자 세금 가이드</a>에 정리해 뒀어요.</p></details><details><summary>중간에 해지하면 어떻게 되나요?</summary><p>만기 전에 해지하면 낮은 중도해지 이자율이 적용되고, 정부기여금을 받지 못하며, 이자에 세금이 붙어요. 다만 가입자의 사망·해외이주, 천재지변, 퇴직, 사업장 폐업, 3개월 이상 입원이나 요양이 필요한 상해·질병 같은 사유로 해지하는 특별중도해지는 기본이자율이 적용되고 기여금과 비과세 혜택도 받을 수 있습니다.</p></details><details><summary>청년도약계좌에서 갈아탈 수 있나요?</summary><p>청년도약계좌를 가진 채로 청년미래적금에 함께 가입할 수는 없어요. 처음 가입을 받은 2026년 6월 22일부터 8월 7일까지는 청년도약계좌를 특별중도해지하고 넘어오는 연계가입이 허용됐지만 그 기간은 끝났습니다. 지금은 청년도약계좌를 해지한 뒤에 청년미래적금을 신청할 수 있어요.</p></details></section>
+  <footer>2026년 10월 7일에 확인한 제도 기준이에요. 정부기여금은 정책·법률이 바뀌면 달라질 수 있고, 실제 금리와 가입 가능 여부는 은행과 서민금융진흥원 심사에 따릅니다.<br><span class="version-tag">v1.0 · 2026-10-07 업데이트</span></footer>
+</main>
+
+<script>
+
+const $=id=>document.getElementById(id);
+const won=n=>Math.round(n).toLocaleString('ko-KR')+'원';
+const N=36, MAX=500000, BASE=0.05, TAX=0.154;   // 3년 만기, 월 한도, 기여금에 붙는 기본이자율, 일반 적금 이자소득세
+// 매달 초에 같은 금액을 넣는다고 보고, 넣은 돈마다 만기까지 남은 달만큼 단리 이자를 더한다(군적금 계산기와 같은 방식)
+function ys(m,ratePct,govPct){
+  const r=ratePct/100, g=m*govPct/100; let pi=0, gi=0;
+  for(let i=1;i<=N;i++){ pi+=m*r*(N-i+1)/12; gi+=g*BASE*(N-i+1)/12; }
+  pi=Math.floor(pi); gi=Math.floor(gi);
+  const P=m*N, G=g*N;
+  return {P,pi,G,gi,total:P+pi+G+gi};
+}
+function calc(){
+  const mRaw=Number($('monthly').value), rate=Number($('rate').value), gov=Number($('type').value);
+  if(!(mRaw>0)||!(rate>=0)||!Number.isFinite(mRaw)||!Number.isFinite(rate)||$('rate').value.trim()===''){ $('out').innerHTML='<div class="card"><div class="big-result">—</div><p class="note">월 납입액과 금리를 넣어 주세요.</p></div>'; return; }
+  const m=Math.min(Math.floor(mRaw),MAX), over=mRaw>MAX;
+  const a=ys(m,rate,gov), g6=ys(m,rate,6), g12=ys(m,rate,12), plain=ys(m,rate,0);
+  const plainAfterTax=plain.P+Math.floor(plain.pi*(1-TAX));
+  const label=gov===12?'우대형':gov===6?'일반형':'기여금 없음';
+  $('out').innerHTML=`<div class="card"><div class="big-result">${won(a.total)}<small>3년 만기 예상 수령액 · ${label}</small></div>
+    <table style="margin-top:12px"><tbody>
+      <tr><td>납입 원금 (월 ${won(m)} × 36개월)</td><td class="r">${won(a.P)}</td></tr>
+      <tr><td>은행 이자 (연 ${rate}%, 비과세)</td><td class="r">${won(a.pi)}</td></tr>
+      <tr><td>정부기여금 (${gov}%)</td><td class="r">${won(a.G)}</td></tr>
+      <tr><td>기여금 이자 (연 5%, 비과세)</td><td class="r">${won(a.gi)}</td></tr>
+      <tr><td><b>합계</b></td><td class="r"><b>${won(a.total)}</b></td></tr>
+    </tbody></table>
+    <div class="tw"><table style="margin-top:14px"><thead><tr><th>비교</th><th class="r">일반형 6%</th><th class="r">우대형 12%</th></tr></thead><tbody>
+      <tr><td>정부기여금</td><td class="r">${won(g6.G)}</td><td class="r">${won(g12.G)}</td></tr>
+      <tr><td>이자 합계</td><td class="r">${won(g6.pi+g6.gi)}</td><td class="r">${won(g12.pi+g12.gi)}</td></tr>
+      <tr><td><b>만기 수령액</b></td><td class="r"><b>${won(g6.total)}</b></td><td class="r"><b>${won(g12.total)}</b></td></tr>
+    </tbody></table></div>
+    <div class="note">${over?'월 납입 한도가 50만원이라 50만원으로 계산했어요. ':''}같은 금액을 같은 금리의 일반 적금에 넣으면 이자소득세 15.4%를 떼고 ${won(plainAfterTax)}을 받아요. ${gov>0?`${label}은 이보다 ${won(a.total-plainAfterTax)} 더 받는 셈이에요. `:''}매달 초에 같은 금액을 넣는다고 가정한 단리 계산이고, 실제 이자는 입금한 날짜와 기여금이 들어온 날짜에 따라 조금 달라요.</div></div>`;
+}
+let sent=false;
+function track(){ if(!sent&&typeof gtag==='function'){ gtag('event','youth_savings_calculated',{type:$('type').value}); sent=true; } }
+['monthly','rate','type'].forEach(id=>$(id).addEventListener('input',()=>{ calc(); track(); }));
+$('qm').addEventListener('click',e=>{ const b=e.target.closest('button'); if(!b) return; $('monthly').value=b.dataset.v; calc(); track(); });
+$('qr').addEventListener('click',e=>{ const b=e.target.closest('button'); if(!b) return; $('rate').value=b.dataset.v; calc(); track(); });
+calc();
+
+</script>
+
+</body>
+</html>

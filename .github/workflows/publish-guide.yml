@@ -29,7 +29,7 @@ jobs:
       - name: 파이썬 준비
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.14'   # 작업 PC 와 같은 버전. 낮추면 PC 에서 되는 문법이 여기서 오류가 될 수 있다(2026-10-07 발행 실패)
 
       - name: 대기 중인 초안 하나 발행 상태로
         id: pick

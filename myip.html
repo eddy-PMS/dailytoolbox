@@ -48,7 +48,7 @@
  <div class="ad-slot" data-ad="below-result"></div>
 <div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="ipgeo"><img class="sic" src="/icons/ipgeo.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>IP 위치 조회</span></a><a href="unit"><img class="sic" src="/icons/unit.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>단위 변환기</span></a><a href="exchange"><img class="sic" src="/icons/exchange.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>환율 계산기</span></a><a href="rent"><img class="sic" src="/icons/rent.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>전월세·중개수수료</span></a><a href="lotto"><img class="sic" src="/icons/lotto.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>로또 번호 생성기</span></a><a href="password"><img class="sic" src="/icons/password.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>비밀번호 생성기</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
 <section class="seo">
-<h2>내 IP 주소란</h2><p>IP 주소는 인터넷에서 내 기기(정확히는 내 인터넷 회선)를 식별하는 번호예요. 집에서 공유기를 쓰면 공유기 안쪽 기기들은 192.168.x.x 같은 사설 IP를 쓰고, 인터넷에 나갈 때는 통신사가 배정한 하나의 공인 IP로 나가요. 이 페이지가 보여주는 건 그 공인 IP예요. 원격 접속 설정, 서버 화이트리스트 등록, 게임 서버 개설, IP 차단 문의 때 필요합니다.</p><p>IPv4(예: 121.134.xx.xx)와 IPv6(예: 2001:2d8:...)가 함께 쓰이는 시기라 접속 환경에 따라 둘 중 하나가 표시돼요. 통신사 대부분은 아직 IPv4를 주로 쓰지만, 휴대폰 데이터는 IPv6가 우선 잡히는 경우가 많아요.</p>
+<h2>내 IP 주소란</h2><p>IP 주소는 인터넷에서 내 기기(정확히는 내 인터넷 회선)를 식별하는 번호예요. 집에서 공유기를 쓰면 공유기 안쪽 기기들은 192.168.x.x 같은 사설 IP를 쓰고, 인터넷에 나갈 때는 통신사가 배정한 하나의 공인 IP로 나가요. 이 페이지가 보여주는 건 그 공인 IP예요. 원격 접속 설정, 서버 화이트리스트 등록, 게임 서버 개설, IP 차단 문의 때 필요합니다.</p><p>IPv4(예: 121.134.xx.xx)와 IPv6(예: 2001:2d8:...)가 함께 쓰이는 시기라, 회선에 따라 주소가 둘 다 있을 수 있어요. 이 페이지는 두 주소를 모두 찾아서 보여 주고, 흔히 쓰는 IPv4를 크게 표시해요. 통신사 대부분은 아직 IPv4를 주로 쓰지만, 휴대폰 데이터는 IPv6가 우선 잡히는 경우가 많아요.</p>
 <h2>휴대폰 IP 확인 — 와이파이와 데이터에서 다르게 나오는 이유</h2><p>같은 휴대폰인데 와이파이를 켰을 때와 끄고 데이터를 쓸 때 IP가 다르게 나와요. 인터넷으로 나가는 길이 다르기 때문이에요.</p>
 <p><table><thead><tr><th></th><th>와이파이</th><th>모바일 데이터(LTE·5G)</th></tr></thead><tbody><tr><td>보이는 IP</td><td>공유기가 물린 회선의 공인 IP</td><td>통신사 게이트웨이의 IP</td></tr><tr><td>위치</td><td>그 회선이 등록된 지역</td><td>게이트웨이 위치 — 서울로 나오는 경우가 많음</td></tr><tr><td>집에서 PC와 비교하면</td><td>같은 공유기면 PC와 같은 IP</td><td>PC와 전혀 다른 IP</td></tr><tr><td>IPv6</td><td>회선에 따라 다름</td><td>우선 잡히는 경우가 많음</td></tr></tbody></table></p><img src="/img/myip/wifi-vs-mobile-ip.svg" width="800" height="406" alt="휴대폰 IP 확인 와이파이 데이터 차이" loading="lazy" decoding="async" style="max-width:100%;height:auto;display:block;margin:12px auto">
 <p>그래서 <strong>휴대폰에서 확인한 IP를 집 공유기 설정이나 서버 화이트리스트에 넣으면 안 맞을 수 있어요.</strong> 집 회선의 IP가 필요하면 와이파이에 연결한 상태에서 이 페이지를 열어야 합니다.</p>
@@ -87,18 +87,36 @@ function ua(s){ const b= /Edg\//.test(s)?'Edge': /OPR\//.test(s)?'Opera': /Chrom
 fetch('/api/myip',{cache:'no-store'}).then(r=>r.json()).then(d=>{
   const loc=[d.country?(REGION[d.country]||d.country):'', d.region, d.city].filter(Boolean).join(' · ');
   const map= d.latitude&&d.longitude? `<a href="https://www.openstreetmap.org/?mlat=${d.latitude}&mlon=${d.longitude}#map=11/${d.latitude}/${d.longitude}" target="_blank" rel="noopener">지도에서 보기 ↗</a>`:'';
-  $('main').innerHTML=`<div class="big-result" style="font-size:32px;word-break:break-all">${d.ip||'-'}<small>공인 IP</small></div>
+  const isV6=(d.ip||'').includes(':');
+  $('main').innerHTML=`<div class="big-result" style="font-size:32px;word-break:break-all"><span id="ipBig">${d.ip||'-'}</span><small id="ipKind">공인 IP · ${isV6?'IPv6':'IPv4'}</small></div>
     <div class="btn-row"><button class="btn-ghost" id="copy">IP 복사</button></div>
     <table style="margin-top:14px"><tbody>
       <tr><td>대략적 위치</td><td class="r">${loc||'-'} ${map}</td></tr>
       <tr><td>통신사 / 네트워크</td><td class="r">${d.isp||'-'}${d.asn?` (AS${d.asn})`:''}</td></tr>
       <tr><td>시간대</td><td class="r">${d.timezone||'-'}</td></tr>
-      <tr><td>IP 종류</td><td class="r">${d.ip.includes(':')?'IPv6':'IPv4'}</td></tr>
+      <tr><td>IPv4 주소</td><td class="r" id="ip4" style="word-break:break-all">${isV6?'확인 중…':d.ip}</td></tr>
+      <tr><td>IPv6 주소</td><td class="r" id="ip6" style="word-break:break-all">${isV6?d.ip:'확인 중…'}</td></tr>
+      <tr><td>지금 접속에 쓴 주소</td><td class="r">${isV6?'IPv6':'IPv4'}</td></tr>
       <tr><td>브라우저 / 기기</td><td class="r">${ua(d.userAgent)}</td></tr>
       <tr><td>화면 해상도</td><td class="r">${screen.width}×${screen.height}</td></tr>
       <tr><td>브라우저 언어</td><td class="r">${navigator.language}</td></tr>
     </tbody></table>`;
-  $('copy').addEventListener('click',async()=>{ try{ await navigator.clipboard.writeText(d.ip); $('copy').textContent='복사됨'; setTimeout(()=>$('copy').textContent='IP 복사',1500);}catch{} });
+  let shown=d.ip;      // 크게 보여 주는 주소(복사 대상). IPv4 를 찾으면 IPv4 로 바꾼다
+  $('copy').addEventListener('click',async()=>{ try{ await navigator.clipboard.writeText(shown); $('copy').textContent='복사됨'; setTimeout(()=>$('copy').textContent='IP 복사',1500);}catch{} });
+  // 회선에 IPv4·IPv6 가 둘 다 있으면 이 사이트에는 한쪽으로만 접속된다. 다른 쪽 주소는 Cloudflare 의 숫자 주소(1.1.1.1 / 2606:4700:4700::1111)로
+  // 한 번 더 물어서 알아낸다 — 숫자 주소라 그 종류의 길로만 연결된다. 응답은 화면에만 쓰고 저장하지 않는다.
+  function other(url){
+    const ac=new AbortController(); const t=setTimeout(()=>ac.abort(),5000);
+    return fetch(url,{cache:'no-store',signal:ac.signal}).then(r=>r.text()).then(x=>{ clearTimeout(t); const m=x.match(/^ip=(.+)$/m); return m?m[1].trim():''; }).catch(()=>{ clearTimeout(t); return ''; });
+  }
+  if(isV6){
+    other('https://1.1.1.1/cdn-cgi/trace').then(ip=>{
+      if(ip&&!ip.includes(':')){ $('ip4').textContent=ip; shown=ip; $('ipBig').textContent=ip; $('ipKind').textContent='공인 IP · IPv4'; }
+      else $('ip4').textContent='확인하지 못했어요 (IPv6 전용 회선이거나 연결이 막혀 있어요)';
+    });
+  } else {
+    other('https://[2606:4700:4700::1111]/cdn-cgi/trace').then(ip=>{ $('ip6').textContent= ip&&ip.includes(':')? ip : '없음 (이 회선은 IPv4 만 써요)'; });
+  }
   if(typeof gtag==='function') gtag('event','myip_viewed',{country:d.country||''});
 }).catch(()=>{ $('main').innerHTML='<div class="empty">접속 정보를 불러오지 못했어요. 새로고침 해주세요.</div>'; });
  

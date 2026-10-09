@@ -1,13 +1,12 @@
 ---
 title: 가임기·배란일 계산법 — 생리 주기로 날짜 세는 법
 description: 가임기 계산은 다음 생리 예정일에서 14일을 빼 배란일을 잡는 데서 시작해요. 주기 26·28·30·32일별 배란일과 가임기 날짜 예시, 주기가 불규칙할 때 계산이 얼마나 벌어지는지까지 표로 정리했어요.
-date: 2026-10-01
-updated: 2026-10-01
+date: 2026-10-10
+updated: 2026-10-10
 category: 가족·건강
 tools: ovulation.html, pregnancy.html, baby-age.html
 keywords: 가임기 계산, 배란일, 가임기, 배란기, 배란일 계산, 생리 주기 계산, 다음 생리 예정일
 sources: 질병관리청 국가건강정보포털 — 정상 월경의 이해 | https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=6618 ; 질병관리청 국가건강정보포털 — 불규칙한 월경주기와 월경전증후군 | https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=6613 ; 임신육아종합포털 아이사랑 — 배란·수정·착상 | https://www.childcare.go.kr/?menuno=354 ; 국민건강보험공단 — 생리주기·배란일 계산 | https://www.nhis.or.kr/magazin/145/html/sub6.html ; NHS — Fertility in the menstrual cycle | https://www.nhs.uk/conditions/periods/fertility-in-the-menstrual-cycle/ ; NHS — Trying to get pregnant | https://www.nhs.uk/pregnancy/trying-for-a-baby/trying-to-get-pregnant/ ; 미국 보건복지부 여성건강국 — Ovulation calculator | https://www.womenshealth.gov/ovulation-calculator
-draft: true
 ---
 가임기 계산은 생각보다 단순해요. **다음 생리 예정일에서 14일을 빼면 배란 예상일**이고, 그 날짜 앞뒤 며칠이 가임기예요. 헷갈리는 이유는 "생리 시작 후 14일째"로 외우기 때문인데, 이건 주기가 28일일 때만 맞아요. 아래 내용은 공공기관 자료를 **확인일 2026-10-01** 기준으로 정리한 것이고, 날짜를 세는 방식만 다뤄요. 진단이나 치료에 관한 판단은 이 글의 범위가 아니에요.
 

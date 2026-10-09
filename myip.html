@@ -75,7 +75,7 @@
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>위치가 실제 사는 곳과 다르게 나와요.</summary><p>IP 위치는 GPS가 아니라 통신사가 그 IP 대역을 등록한 지역이에요. 경기·지방에서도 서울로 나오는 경우가 흔하고, 휴대폰 데이터는 거의 항상 통신사 게이트웨이 위치로 잡혀요.</p></details><details><summary>내 IP를 다른 사람이 알면 위험한가요?</summary><p>IP만으로 집 주소나 신원을 알 수는 없어요. 다만 온라인 게임 등에서 IP가 노출되면 DDoS 공격 대상이 될 수 있으니 불특정 다수에게 공개하지 않는 게 좋아요.</p></details><details><summary>IP를 바꾸고 싶으면요?</summary><p>유동 IP라면 공유기를 껐다가 10분 정도 뒤에 켜면 바뀌는 경우가 많아요. VPN을 쓰면 VPN 서버의 IP로 보이게 됩니다.</p></details><details><summary>휴대폰과 컴퓨터의 IP가 다르게 나와요.</summary><p>모바일 데이터를 쓰면 통신사 게이트웨이의 IP로 나가기 때문에 집 공유기에 물린 컴퓨터와 전혀 다른 IP가 보여요. 같은 와이파이에 연결하면 둘 다 같은 공인 IP로 보입니다. 집 회선의 IP가 필요하면 와이파이에 연결한 상태에서 확인하세요.</p></details><details><summary>VPN을 켜면 IP가 어떻게 보이나요?</summary><p>VPN 서버의 IP와 그 서버가 있는 나라·도시로 보여요. 실제 내 IP와 위치는 가려집니다. 회사 프록시를 거칠 때도 마찬가지로 그쪽 위치로 표시돼요.</p></details><details><summary>이 페이지가 내 IP를 저장하나요?</summary><p>아니요. 접속 정보를 받아 화면에 보여줄 뿐이고 서버에 저장하지 않아요.</p></details></section>
-  <footer>위치 정보는 Cloudflare 네트워크가 제공하는 IP 기반 추정치이며, 이 페이지는 조회 결과를 어디에도 저장하지 않습니다.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
+  <footer>위치 정보는 IP 위치 자료(Cloudflare·IP.SB)로 추정한 값이라 실제와 다를 수 있습니다. 더 자세한 위치를 위해 브라우저가 IP.SB 에 한 번 조회하며, 이 사이트는 조회 결과를 저장하지 않습니다.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
 </main>
 
 <script>
@@ -91,7 +91,7 @@ fetch('/api/myip',{cache:'no-store'}).then(r=>r.json()).then(d=>{
   $('main').innerHTML=`<div class="big-result" style="font-size:32px;word-break:break-all"><span id="ipBig">${d.ip||'-'}</span><small id="ipKind">공인 IP · ${isV6?'IPv6':'IPv4'}</small></div>
     <div class="btn-row"><button class="btn-ghost" id="copy">IP 복사</button></div>
     <table style="margin-top:14px"><tbody>
-      <tr><td>대략적 위치</td><td class="r">${loc||'-'} ${map}</td></tr>
+      <tr><td>대략적 위치</td><td class="r" id="loc">${loc||'-'} ${map}</td></tr>
       <tr><td>통신사 / 네트워크</td><td class="r">${d.isp||'-'}${d.asn?` (AS${d.asn})`:''}</td></tr>
       <tr><td>시간대</td><td class="r">${d.timezone||'-'}</td></tr>
       <tr><td>IPv4 주소</td><td class="r" id="ip4" style="word-break:break-all">${isV6?'확인 중…':d.ip}</td></tr>
@@ -117,6 +117,23 @@ fetch('/api/myip',{cache:'no-store'}).then(r=>r.json()).then(d=>{
   } else {
     other('https://[2606:4700:4700::1111]/cdn-cgi/trace').then(ip=>{ $('ip6').textContent= ip&&ip.includes(':')? ip : '없음 (이 회선은 IPv4 만 써요)'; });
   }
+  // 위치는 구·시 단위까지 나오는 IP 위치 자료(ip.sb)로 한 번 더 물어 더 자세하면 바꿔 쓴다. IPv4 기준이 더 정확해 IPv4 를 먼저, 안 되면 접속한 주소로.
+  // 브라우저가 직접 묻고(우리 서버를 거치지 않는다) 화면에만 쓴다. 실패하면 위의 Cloudflare 값이 그대로 남는다.
+  function geo(url){
+    const ac=new AbortController(); const t=setTimeout(()=>ac.abort(),5000);
+    return fetch(url,{cache:'no-store',signal:ac.signal}).then(r=>r.ok?r.json():null).then(g=>{ clearTimeout(t); return g&&(g.city||g.region)?g:null; }).catch(()=>{ clearTimeout(t); return null; });
+  }
+  geo('https://api-ipv4.ip.sb/geoip').then(g=>g||geo('https://api.ip.sb/geoip')).then(g=>{
+    if(!g) return;
+    const cell=$('loc'); if(!cell) return;
+    const cc=String(g.country_code||'');
+    const parts=[REGION[cc]||g.country||'', g.region, g.city].filter(Boolean).map(String).filter((v,i,a)=>a.indexOf(v)===i);
+    cell.textContent=parts.join(' · ')+' ';
+    const la=Number(g.latitude), lo=Number(g.longitude);
+    if(isFinite(la)&&isFinite(lo)&&(la||lo)){
+      const a=document.createElement('a'); a.href=`https://www.openstreetmap.org/?mlat=${la}&mlon=${lo}#map=11/${la}/${lo}`; a.target='_blank'; a.rel='noopener'; a.textContent='지도에서 보기 ↗'; cell.appendChild(a);
+    }
+  });
   if(typeof gtag==='function') gtag('event','myip_viewed',{country:d.country||''});
 }).catch(()=>{ $('main').innerHTML='<div class="empty">접속 정보를 불러오지 못했어요. 새로고침 해주세요.</div>'; });
  

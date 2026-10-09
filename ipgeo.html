@@ -42,6 +42,7 @@
   <div class="card">
     <div class="row"><input type="text" id="ip" placeholder="예) 8.8.8.8 또는 2001:4860:4860::8888" style="flex:1;font-size:17px" autocomplete="off"><button class="btn" id="run">조회</button></div>
     <div class="row" style="margin:0;gap:6px"><button class="btn-ghost" id="mine" style="padding:5px 10px;font-size:12px">내 IP 넣기</button><button class="btn-ghost" id="ex1" style="padding:5px 10px;font-size:12px">8.8.8.8</button><button class="btn-ghost" id="ex2" style="padding:5px 10px;font-size:12px">1.1.1.1</button></div>
+    <div class="row" id="mineBox" style="margin:6px 0 0;gap:6px;flex-wrap:wrap" hidden></div>
     <div class="status" id="status"></div>
   </div>
   <div id="out"><div class="empty">IP 주소를 입력하고 조회를 눌러주세요</div></div>
@@ -66,11 +67,11 @@
 <h2>통신사·기관을 공식으로 확인하려면</h2><p>이 도구가 보여주는 통신사 이름은 IP 위치 데이터베이스에서 온 값이에요. <strong>공식 할당 정보</strong>는 한국인터넷진흥원(KISA)이 운영하는 후이즈 검색에서 볼 수 있습니다.</p>
 <p><a href="https://whois.kr/" rel="nofollow noopener" target="_blank">whois.kr</a> 에서 IP 주소나 AS 번호를 넣으면 그 대역이 어느 기관에 할당돼 있는지 확인할 수 있어요. 국내뿐 아니라 해외 IP·AS 번호도 조회됩니다.</p>
 <p>조회 결과가 이 도구와 다르게 나오면 후이즈 쪽이 공식 기록이에요. 다만 후이즈도 <strong>할당받은 기관</strong>까지만 알려 주고 개인 가입자는 알려 주지 않습니다.</p>
-<h2>사용 방법</h2><ol><li>IP 주소(IPv4 또는 IPv6)를 입력하고 "조회"를 누르세요.</li><li>"내 IP 넣기"로 현재 접속 IP를 바로 조회할 수 있어요.</li><li>위치 옆 "지도에서 보기"로 대략적인 지점을 지도에서 확인할 수 있어요.</li></ol>
+<h2>사용 방법</h2><ol><li>IP 주소(IPv4 또는 IPv6)를 입력하고 "조회"를 누르세요.</li><li>"내 IP 넣기"를 누르면 내 IPv4·IPv6 주소가 둘 다 나오고, IPv4 가 먼저 조회돼요. IPv6 를 누르면 그 주소로 다시 조회합니다.</li><li>위치 옆 "지도에서 보기"로 대략적인 지점을 지도에서 확인할 수 있어요.</li></ol>
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>IP로 누가 사는지 알 수 있나요?</summary><p>아니요. IP는 통신사가 회선에 배정한 번호일 뿐이고, 가입자 정보는 통신사만 알며 법원 영장 없이는 공개되지 않아요. 이 도구는 지역과 통신사 수준까지만 보여줍니다.</p></details><details><summary>조회 결과가 다른 사이트와 다른데요?</summary><p>사이트마다 다른 IP 데이터베이스를 쓰기 때문에 도시가 다르게 나올 수 있어요. 국가·통신사는 대체로 일치합니다.</p></details><details><summary>하루 조회 횟수 제한이 있나요?</summary><p>무료 조회 데이터를 사용하기 때문에 한 사람이 짧은 시간에 아주 많이 조회하면 잠시 제한될 수 있어요. 일반적인 사용에는 문제없습니다.</p></details><details><summary>모바일 IP를 조회하면 왜 서울로 나오나요?</summary><p>모바일 데이터는 통신사 게이트웨이를 거쳐 나가기 때문에 그 게이트웨이 위치로 잡혀요. 국내 통신사는 게이트웨이가 수도권에 몰려 있어서 실제로 어디에 있든 서울 근처로 표시되는 경우가 많습니다.</p></details><details><summary>VPN이나 프록시를 쓴 IP도 알 수 있나요?</summary><p>VPN 서버의 위치가 나와요. 실제 사용자의 위치는 가려집니다. 회선 종류가 데이터센터나 VPN으로 표시되면 그 IP 뒤에 누가 있는지는 이 방식으로 알 수 없다고 보면 됩니다.</p></details><details><summary>조회한 사실이 상대에게 알려지나요?</summary><p>아니요. 이 조회는 IP 데이터베이스를 찾아보는 것이라 해당 IP 쪽에 아무 연결도 하지 않아요. 상대가 알 수 있는 방법이 없고, 조회 기록도 저장하지 않습니다.</p></details></section>
-  <footer>위치 데이터는 ipwhois.io·ipapi.co 무료 API를 사용하며, 조회는 이용자 브라우저에서 직접 이루어지고 사이트는 결과를 저장하지 않아요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
+  <footer>위치 데이터는 IP.SB·ipwhois.io·ipapi.co 무료 API를 사용하며, 조회는 이용자 브라우저에서 직접 이루어지고 사이트는 결과를 저장하지 않아요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
 </main>
 
 <script>
@@ -80,6 +81,8 @@ const MSG={invalid_ip:'올바른 IP 주소 형식이 아니에요.',private_ip:'
 const IPV4=/^(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}$/, IPV6=/^[0-9a-fA-F:]{2,39}$/;
 const isPrivate=ip=>/^(10\.|127\.|192\.168\.|169\.254\.|172\.(1[6-9]|2\d|3[01])\.|0\.|::1$|fc|fd|fe80)/i.test(ip);
 // 브라우저에서 직접 호출 (사용자별 한도) → 실패 시 워커 경유
+async function viaIpsb(ip){ const r=await fetch(`https://api.ip.sb/geoip/${ip}`); if(!r.ok) throw (r.status===429?'quota':'upstream'); const d=await r.json(); if(!d.country&&!d.country_code) throw 'not_found';
+  return {ok:true,ip:d.ip||ip,type:String(d.ip||ip).includes(':')?'IPv6':'IPv4',country:d.country||'',countryCode:d.country_code||'',flag:'',region:d.region||'',city:d.city||'',postal:d.postal_code||'',latitude:d.latitude??'',longitude:d.longitude??'',timezone:d.timezone||'',utcOffset:'',asn:d.asn||'',isp:d.isp||'',org:d.asn_organization||d.organization||''}; }
 async function viaIpwho(ip){ const r=await fetch(`https://ipwho.is/${ip}`); const d=await r.json(); if(!d.success){ if(/(limit|quota|exceed)/i.test(d.message||'')) throw 'quota'; throw 'not_found'; }
   return {ok:true,ip:d.ip,type:d.type||'',country:d.country||'',countryCode:d.country_code||'',flag:(d.flag&&d.flag.emoji)||'',region:d.region||'',city:d.city||'',postal:d.postal||'',latitude:d.latitude??'',longitude:d.longitude??'',timezone:(d.timezone&&d.timezone.id)||'',utcOffset:(d.timezone&&d.timezone.utc)||'',asn:(d.connection&&d.connection.asn)||'',isp:(d.connection&&d.connection.isp)||'',org:(d.connection&&d.connection.org)||''}; }
 async function viaIpapi(ip){ const r=await fetch(`https://ipapi.co/${ip}/json/`); const d=await r.json(); if(d.error){ if(/(quota|limit|throttl)/i.test(d.reason||'')) throw 'quota'; throw 'not_found'; }
@@ -91,7 +94,7 @@ async function lookup(){
   if(isPrivate(ip)){ $('status').textContent=MSG.private_ip; return; }
   $('status').textContent='조회 중…'; $('run').disabled=true;
   let d=null, lastErr='upstream';
-  for(const fn of [viaIpwho, viaIpapi, viaWorker]){ try{ d=await fn(ip); break; }catch(e){ lastErr= typeof e==='string'? e : 'upstream'; } }
+  for(const fn of [viaIpsb, viaIpwho, viaIpapi, viaWorker]){ try{ d=await fn(ip); break; }catch(e){ lastErr= typeof e==='string'? e : 'upstream'; } }
   $('run').disabled=false;
   if(!d){ const m=MSG[lastErr]||MSG.upstream; $('status').textContent=m; $('out').innerHTML=`<div class="empty">${m}</div>`; return; }
   $('status').textContent='';
@@ -110,7 +113,31 @@ async function lookup(){
 }
 $('run').addEventListener('click',lookup); $('ip').addEventListener('keydown',e=>{if(e.key==='Enter')lookup();});
 $('ex1').addEventListener('click',()=>{$('ip').value='8.8.8.8';lookup();}); $('ex2').addEventListener('click',()=>{$('ip').value='1.1.1.1';lookup();});
-$('mine').addEventListener('click',async()=>{ try{ const d=await (await fetch('/api/myip')).json(); $('ip').value=d.ip; lookup(); }catch{ $('status').textContent='내 IP를 가져오지 못했어요.'; } });
+// 내 IP 넣기: 회선에 IPv4·IPv6 가 둘 다 있으면 이 사이트에는 한쪽으로만 접속된다. 다른 쪽은 Cloudflare 의 숫자 주소(1.1.1.1 / 2606:4700:4700::1111)에
+// 한 번 더 물어 알아내고(/myip 와 같은 방식), 둘 다 보여 준 뒤 IPv4 를 먼저 넣어 조회한다.
+function otherIp(url){
+  const ac=new AbortController(); const t=setTimeout(()=>ac.abort(),5000);
+  return fetch(url,{cache:'no-store',signal:ac.signal}).then(r=>r.text()).then(x=>{ clearTimeout(t); const m=x.match(/^ip=(.+)$/m); return m?m[1].trim():''; }).catch(()=>{ clearTimeout(t); return ''; });
+}
+function showMine(v4,v6,pending){
+  const box=$('mineBox'); box.textContent=''; box.hidden=false;
+  [['IPv4',v4],['IPv6',v6]].forEach(([k,v])=>{
+    const b=document.createElement('button'); b.className='btn-ghost'; b.style.cssText='padding:5px 10px;font-size:12px;word-break:break-all;text-align:left';
+    b.textContent='내 '+k+' · '+(v|| (pending===k?'확인 중…':'없음')); b.disabled=!v;
+    if(v) b.addEventListener('click',()=>{ $('ip').value=v; lookup(); });
+    box.appendChild(b);
+  });
+}
+$('mine').addEventListener('click',async()=>{
+  $('status').textContent='내 IP 확인 중…'; $('mine').disabled=true;
+  let v4='', v6='';
+  try{ const d=await (await fetch('/api/myip',{cache:'no-store'})).json(); const ip=d.ip||''; if(ip.includes(':')) v6=ip; else v4=ip; }catch{}
+  if(!v4){ showMine('',v6,'IPv4'); const x=await otherIp('https://1.1.1.1/cdn-cgi/trace'); if(x&&!x.includes(':')) v4=x; if(!v6){ const y=await otherIp('https://[2606:4700:4700::1111]/cdn-cgi/trace'); if(y.includes(':')) v6=y; } showMine(v4,v6); }
+  else { showMine(v4,'','IPv6'); otherIp('https://[2606:4700:4700::1111]/cdn-cgi/trace').then(y=>{ showMine(v4, y.includes(':')?y:''); }); }
+  $('mine').disabled=false;
+  if(!v4&&!v6){ $('mineBox').hidden=true; $('status').textContent='내 IP를 가져오지 못했어요.'; return; }
+  $('ip').value=v4||v6; lookup();
+});
  
 </script>
 

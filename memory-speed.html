@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>영단어 암기 속도 측정기 - 암기력 테스트, 영어 단어 10개 외우는 시간</title>
+<meta name="description" content="영어 단어 10개를 외우고 테스트를 다 맞힐 때까지 걸린 시간을 재는 무료 암기력 테스트. 분당 암기 단어 수와 내 영단어 암기 속도를 확인해요. 중등·고등·토익 수준 선택.">
+<meta name="keywords" content="영단어 암기 속도 측정기, 암기력 테스트, 영단어 암기, 영어 단어 암기, 영단어 외우기, 암기 속도 측정, 암기 테스트">
+<link rel="canonical" href="https://dailyfreetoolbox.com/memory-speed">
+<meta property="og:type" content="website">
+<meta property="og:title" content="영단어 암기 속도 측정기 - 암기력 테스트, 영어 단어 10개 외우는 시간">
+<meta property="og:description" content="영어 단어 10개를 외우고 테스트를 다 맞힐 때까지 걸린 시간으로 내 암기 속도를 재요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/memory-speed">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og/og-memory-speed.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "영단어 암기 속도 측정기", "url": "https://dailyfreetoolbox.com/memory-speed", "applicationCategory": "EducationalApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "영어 단어 10개를 외우고 테스트를 다 맞힐 때까지 걸린 시간을 재는 무료 암기력 테스트. 분당 암기 단어 수와 내 영단어 암기 속도를 확인해요. 중등·고등·토익 수준 선택."}
+</script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="tool.css">
+<style>
+:root { --accent:#c0392b; --accent-deep:#96281b; }
+.steps{display:flex;gap:4px;margin-bottom:10px}.step{flex:1;text-align:center;font-size:12px;padding:8px 2px;border-radius:3px;background:var(--paper-deep);color:var(--ink-soft)}.step.on{background:var(--accent);color:#fff;font-weight:700}.step.done{background:#e7f2ea;color:#2f7d4f}
+.clock{display:flex;align-items:baseline;justify-content:center;gap:8px;margin:0 0 10px;font-variant-numeric:tabular-nums}.clock b{font-size:30px;line-height:1}.clock small{font-size:12px;color:var(--ink-soft)}
+.clock[hidden]{display:none}
+.pick{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}.pick>span{font-size:13px;color:var(--ink-soft);min-width:72px}
+.seg{display:flex;gap:4px;flex-wrap:wrap}.seg button{padding:8px 14px;border:1px solid var(--line);background:#fff;border-radius:3px;font-family:inherit;font-size:14px;cursor:pointer;color:var(--ink)}.seg button.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+.prog{font-size:13px;color:var(--ink-soft);text-align:center;margin-bottom:8px}
+.bar{height:6px;border-radius:3px;background:var(--paper-deep);overflow:hidden;margin:0 0 10px}.bar i{display:block;height:100%;width:100%;background:var(--accent);transform-origin:left}
+.flash{min-height:210px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;border:1px solid var(--line);border-radius:8px;background:#fff;padding:18px 12px;text-align:center;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;touch-action:manipulation;cursor:pointer}
+.flash .w{font-size:clamp(32px,9vw,46px);font-weight:800;word-break:break-all;line-height:1.15}
+.flash .m{font-size:clamp(20px,5.5vw,26px);color:var(--accent-deep);font-weight:700;min-height:1.4em}.flash .m.hide{visibility:hidden}
+.hint{font-size:13px;color:var(--ink-soft);text-align:center;margin:10px 0 0}
+.q{font-size:clamp(28px,7vw,38px);font-weight:700;text-align:center;margin:6px 0 14px;word-break:break-all}
+.q .spk{border:0;background:none;cursor:pointer;font-size:16px;padding:0 4px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}@media(max-width:420px){.opts{grid-template-columns:1fr}}
+.opt{padding:14px 10px;border:1px solid var(--line);border-radius:6px;background:#fff;font-size:16px;font-family:inherit;cursor:pointer;color:var(--ink);-webkit-tap-highlight-color:transparent}
+.opt.ok{background:#eefaf1;border-color:#2f9e44}.opt.bad{background:#fff0f0;border-color:#d64545}
+.wordlist{display:grid;gap:8px}
+.wc{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:6px;padding:10px 14px}
+.wc .n{width:22px;font-size:12px;color:var(--ink-soft)}.wc .w{font-size:18px;font-weight:700;flex:1;word-break:break-all}.wc .m{font-size:15px;color:var(--ink);text-align:right}
+.res{text-align:center;padding:6px 0}
+.res .big{font-size:clamp(40px,11vw,56px);font-weight:800;line-height:1.1;margin:4px 0 2px;font-variant-numeric:tabular-nums}.res .big small{font-size:16px;font-weight:600;color:var(--ink-soft)}
+.dash{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.dash .box{flex:1;min-width:120px;background:#fffdf8;border:1px solid var(--line);border-radius:3px;padding:10px 6px;text-align:center}.dash .box small{display:block;font-size:11px;color:var(--ink-soft)}.dash .box b{font-size:18px}
+.promo{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:3px;background:#fffdf8;padding:12px 14px;font-size:14px;margin-top:14px;line-height:1.6;text-align:left}.promo a{font-weight:700}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "암기 속도는 어떻게 계산하나요?", "acceptedAnswer": {"@type": "Answer", "text": "측정 시작을 누른 때부터 10개를 전부 맞힐 때까지 걸린 시간을 재고, 10을 그 시간(분)으로 나눠 분당 암기 단어 수를 구해요. 외우는 시간과 테스트 시간이 모두 들어가고, 중간 결과 화면을 보는 동안은 빠집니다."}}, {"@type": "Question", "name": "1시간 환산은 실제로 그만큼 외울 수 있다는 뜻인가요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 지금 속도가 한 시간 동안 그대로 이어진다고 가정한 계산값이에요. 실제로는 집중이 떨어지고 외운 단어를 다시 보는 시간도 필요해서 이보다 적어집니다."}}, {"@type": "Question", "name": "중학·고교·토익 수준은 어떤 단어인가요?", "acceptedAnswer": {"@type": "Answer", "text": "수준마다 100단어를 담아 두었고, 측정할 때마다 그 가운데 10개가 무작위로 나와요. 이 사이트가 난이도에 맞춰 고른 단어이고, 교육과정이나 시험 주관사의 공식 단어 목록은 아닙니다."}}, {"@type": "Question", "name": "다시 재면 결과가 달라지나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 재 볼 때마다 단어가 바뀌고, 방식에 익숙해지면 빨라지기도 해요. 아는 단어가 몇 개 섞였는지에 따라서도 달라지니 같은 조건으로 여러 번 재서 비교해 보세요."}}, {"@type": "Question", "name": "외운 단어는 얼마나 오래 기억되나요?", "acceptedAnswer": {"@type": "Answer", "text": "이 도구는 방금 외운 것을 바로 확인한 시간만 재요. 오래 남기려면 한 번에 끝내지 말고 며칠에 걸쳐 간격을 두고 다시 봐야 합니다."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#c0392b"></nav>
+<script src="nav.js"></script>
+
+<main>
+  <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#공부·어학">공부·어학</a><span>›</span>영단어 암기 속도 측정기</nav>
+  <h1><img class="h1ic" src="/icons/memory-speed.webp" width="32" height="32" alt="">영단어 암기 속도 측정기</h1>
+  <p class="sub">영어 단어 10개를 외우고 <b>테스트를 전부 맞힐 때까지</b> 걸린 시간을 재요. 분당 몇 단어를 외우는 속도인지 알려 드려요.</p>
+  <div class="ad-slot" data-ad="top"></div>
+
+  <div class="card">
+    <div class="steps"><div class="step" data-s="1">암기</div><div class="step" data-s="2">전체 테스트</div><div class="step" data-s="3">틀린 단어</div><div class="step" data-s="4">확인 테스트</div></div>
+    <div class="clock" id="clock" hidden><b id="time">0:00</b><small id="clockLb">경과 시간</small></div>
+    <div id="stage"></div>
+  </div>
+
+  <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">공부·어학 도구 더 보기</div><div class="chips"><a href="level-test"><img class="sic" src="/icons/level-test.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>영어 레벨 테스트</span></a><a href="spelling-quiz"><img class="sic" src="/icons/spelling-quiz.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>스펠링 퀴즈</span></a><a href="vocab-quiz"><img class="sic" src="/icons/vocab-quiz.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>영단어 스피드 퀴즈</span></a><a href="wordlist"><img class="sic" src="/icons/wordlist.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>단어장 추출기</span></a><a href="dictation"><img class="sic" src="/icons/dictation.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>받아쓰기 연습</span></a><a href="tts"><img class="sic" src="/icons/tts.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>발음 듣기</span></a><a class="more" href="/#공부·어학">전체 보기 →</a></div></div>
+<section class="seo">
+<h2>암기 속도는 이렇게 재요</h2>
+<p>"측정 시작"을 누른 순간부터 <b>10개를 전부 맞힐 때까지</b>의 시간을 재요. 외우는 시간과 테스트 푸는 시간이 모두 들어갑니다. 테스트 사이에 나오는 중간 결과 화면을 보는 동안과, 다른 화면으로 나가 있는 동안은 시계가 멈춰요.</p>
+<p>순서는 암기 → 전체 테스트입니다. 전체 테스트를 다 맞히면 거기서 끝나요. 틀린 단어가 있으면 그 단어만 다시 외우고 다시 풀고, 전부 맞히면 10개를 다시 푸는 확인 테스트로 넘어갑니다. 확인 테스트까지 다 맞혀야 시계가 멈춰요.</p>
+<h2>암기력 테스트 결과 읽는 법</h2>
+<p><b>분당 암기 단어 수</b>는 10을 걸린 시간(분)으로 나눈 값이에요. 2분 30초가 걸렸다면 분당 4단어입니다. <b>단어 하나에</b>는 걸린 시간을 10으로 나눈 값이에요.</p>
+<p><b>1시간 환산(계산값)</b>은 지금 속도가 한 시간 동안 그대로 이어진다고 가정하고 계산한 숫자예요. 실제로 한 시간에 그만큼 외울 수 있다는 뜻은 아닙니다. 오래 하면 집중이 떨어지고, 외운 단어를 다시 보는 시간도 필요하기 때문이에요.</p>
+<p><b>첫 테스트 정답</b>이 10에 가까울수록 한 번에 외웠다는 뜻이고, <b>다시 외운 횟수</b>가 많을수록 시간이 늘어납니다.</p>
+<h2>영어 단어 암기, 이 순서로 나와요</h2>
+<p>단어는 한 번에 하나씩 나와요. 3개씩 묶은 구간을 한 칸씩 밀어 가며 보기 때문에 1·2·3번을 본 다음 2·3·4번, 3·4·5번 순으로 이어집니다. 10개를 한 바퀴 도는 동안 단어마다 3번씩 다시 마주치고, 카드는 모두 32장이에요.</p>
+<p>스파르타보카 앱의 윈도우 슬라이딩 암기법과 같은 순서예요. 방식이 더 궁금하다면 <a href="https://spartavoca.com/window-sliding.html" target="_blank" rel="noopener">윈도우 슬라이딩 암기법 설명</a>을 보세요.</p>
+<p>넘기는 방식은 두 가지예요. <b>자동</b>은 단어 2초, 뜻 2초 뒤에 저절로 넘어가요. 암기 시간이 같아서 테스트를 얼마나 틀리지 않느냐가 결과를 가릅니다. <b>내 속도</b>는 카드를 누르고 있는 동안 뜻이 보이고, 손을 떼면 다음 단어로 넘어가요.</p>
+<h2>정확하게 재려면</h2>
+<ul><li><b>모르는 단어가 많은 수준으로</b>: 이미 아는 단어가 섞이면 실제보다 빠르게 나와요. 첫 테스트를 다 맞혔다면 한 단계 높은 수준으로 다시 재 보세요.</li><li><b>한 번에 끝까지</b>: 조용한 곳에서 중간에 멈추지 않고 진행하세요.</li><li><b>같은 조건으로 다시</b>: 수준과 넘기는 방식을 같게 두고 재야 기록끼리 비교할 수 있어요. 최고 기록도 조건별로 따로 저장됩니다.</li></ul>
+<h2>영단어 외우기, 속도를 올리려면</h2>
+<p>한 단어를 오래 붙잡고 있기보다 짧게 보고 여러 번 다시 보는 편이 대체로 수월해요. 단어가 나올 때 소리 내어 읽거나 발음을 들으면 눈으로만 볼 때보다 단서가 하나 더 생깁니다. 뜻을 보기 전에 먼저 떠올려 보는 것도 도움이 돼요. "내 속도"에서 카드를 누르기 전에 뜻을 생각해 보세요.</p>
+<p>아는 단어를 빨리 맞히는 연습은 <a href="/vocab-quiz">영단어 스피드 퀴즈</a>, 지금 어휘 수준을 알아보려면 <a href="/level-test">영어 레벨 테스트</a>를 쓰세요.</p>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>암기 속도는 어떻게 계산하나요?</summary><p>측정 시작을 누른 때부터 10개를 전부 맞힐 때까지 걸린 시간을 재고, 10을 그 시간(분)으로 나눠 분당 암기 단어 수를 구해요. 외우는 시간과 테스트 시간이 모두 들어가고, 중간 결과 화면을 보는 동안은 빠집니다.</p></details><details><summary>1시간 환산은 실제로 그만큼 외울 수 있다는 뜻인가요?</summary><p>아니요. 지금 속도가 한 시간 동안 그대로 이어진다고 가정한 계산값이에요. 실제로는 집중이 떨어지고 외운 단어를 다시 보는 시간도 필요해서 이보다 적어집니다.</p></details><details><summary>중학·고교·토익 수준은 어떤 단어인가요?</summary><p>수준마다 100단어를 담아 두었고, 측정할 때마다 그 가운데 10개가 무작위로 나와요. 이 사이트가 난이도에 맞춰 고른 단어이고, 교육과정이나 시험 주관사의 공식 단어 목록은 아닙니다.</p></details><details><summary>다시 재면 결과가 달라지나요?</summary><p>네. 재 볼 때마다 단어가 바뀌고, 방식에 익숙해지면 빨라지기도 해요. 아는 단어가 몇 개 섞였는지에 따라서도 달라지니 같은 조건으로 여러 번 재서 비교해 보세요.</p></details><details><summary>외운 단어는 얼마나 오래 기억되나요?</summary><p>이 도구는 방금 외운 것을 바로 확인한 시간만 재요. 오래 남기려면 한 번에 끝내지 말고 며칠에 걸쳐 간격을 두고 다시 봐야 합니다.</p></details></section>
+
+  <footer>최고 기록은 이 기기의 브라우저에만 저장돼요. 발음은 기기에 들어 있는 영어 음성으로 읽어 줍니다. 단어 뜻은 대표 의미 하나로 표기했어요.<br><span class="version-tag" style="opacity:.75">v1.0 · 2026-10-11 업데이트</span></footer>
+</main>
+
+<script>
+const $=id=>document.getElementById(id);
+const WORDS={"mid":[["ability","능력"],["accept","받아들이다"],["achieve","성취하다"],["afraid","두려워하는"],["agree","동의하다"],["allow","허락하다"],["ancient","고대의"],["appear","나타나다"],["arrive","도착하다"],["attend","참석하다"],["avoid","피하다"],["beside","~옆에"],["borrow","빌리다"],["bother","괴롭히다"],["brave","용감한"],["breathe","숨쉬다"],["bright","밝은"],["careful","조심스러운"],["celebrate","축하하다"],["cheap","값싼"],["choose","고르다"],["climb","오르다"],["collect","모으다"],["comfortable","편안한"],["compare","비교하다"],["complain","불평하다"],["continue","계속하다"],["curious","호기심 많은"],["dangerous","위험한"],["decide","결정하다"],["delicious","맛있는"],["describe","묘사하다"],["destroy","파괴하다"],["develop","발전시키다"],["difficult","어려운"],["disappear","사라지다"],["discover","발견하다"],["early","이른"],["enough","충분한"],["environment","환경"],["excellent","훌륭한"],["expensive","비싼"],["explain","설명하다"],["famous","유명한"],["favorite","가장 좋아하는"],["foreign","외국의"],["forget","잊다"],["future","미래"],["gather","모이다"],["gentle","온화한"],["habit","습관"],["healthy","건강한"],["honest","정직한"],["hurry","서두르다"],["imagine","상상하다"],["improve","개선하다"],["include","포함하다"],["invent","발명하다"],["invite","초대하다"],["island","섬"],["journey","여행"],["language","언어"],["lonely","외로운"],["mistake","실수"],["narrow","좁은"],["neighbor","이웃"],["nervous","긴장한"],["notice","알아차리다"],["ocean","바다"],["opinion","의견"],["patient","참을성 있는"],["popular","인기 있는"],["prepare","준비하다"],["promise","약속하다"],["protect","보호하다"],["proud","자랑스러운"],["quiet","조용한"],["receive","받다"],["remember","기억하다"],["repair","수리하다"],["respect","존경하다"],["safe","안전한"],["scared","겁먹은"],["search","찾다"],["share","나누다"],["shout","소리치다"],["similar","비슷한"],["solve","해결하다"],["special","특별한"],["strange","이상한"],["succeed","성공하다"],["suddenly","갑자기"],["surprise","놀라게 하다"],["terrible","끔찍한"],["travel","여행하다"],["useful","유용한"],["village","마을"],["weather","날씨"],["whole","전체의"],["wise","현명한"]],"high":[["abandon","버리다"],["abstract","추상적인"],["accumulate","축적하다"],["adequate","충분한"],["advocate","옹호하다"],["alternative","대안"],["ambiguous","모호한"],["anticipate","예상하다"],["apparent","명백한"],["arbitrary","임의의"],["assess","평가하다"],["assume","가정하다"],["attribute","~의 탓으로 돌리다"],["coherent","일관된"],["coincide","동시에 일어나다"],["compel","강요하다"],["compensate","보상하다"],["comprehensive","포괄적인"],["conceal","숨기다"],["confront","맞서다"],["consequence","결과"],["considerable","상당한"],["contradict","반박하다"],["controversy","논란"],["convey","전달하다"],["crucial","결정적인"],["deliberate","의도적인"],["deprive","빼앗다"],["derive","끌어내다"],["diminish","줄어들다"],["distinguish","구별하다"],["dominate","지배하다"],["elaborate","정교한"],["eliminate","제거하다"],["embrace","받아들이다"],["emerge","나타나다"],["enhance","향상시키다"],["evident","분명한"],["exaggerate","과장하다"],["exploit","이용하다"],["facilitate","촉진하다"],["fluctuate","변동하다"],["fundamental","근본적인"],["hypothesis","가설"],["implement","실행하다"],["implicit","암시적인"],["inevitable","불가피한"],["inherent","내재하는"],["innovative","혁신적인"],["integrate","통합하다"],["interpret","해석하다"],["intrinsic","본질적인"],["legitimate","합법적인"],["manipulate","조작하다"],["mediate","중재하다"],["modify","수정하다"],["notion","개념"],["obscure","모호한"],["obtain","얻다"],["perceive","인식하다"],["persist","지속하다"],["plausible","그럴듯한"],["precede","앞서다"],["predominant","지배적인"],["preliminary","예비의"],["prevail","우세하다"],["profound","심오한"],["prominent","두드러진"],["provoke","유발하다"],["reinforce","강화하다"],["reluctant","꺼리는"],["resolve","해결하다"],["restrain","억제하다"],["retain","유지하다"],["scrutinize","면밀히 조사하다"],["simultaneous","동시의"],["sophisticated","정교한"],["speculate","추측하다"],["subsequent","그 다음의"],["substantial","상당한"],["subtle","미묘한"],["sustain","유지하다"],["tangible","실체가 있는"],["tentative","잠정적인"],["thrive","번성하다"],["transform","변형시키다"],["undergo","겪다"],["undermine","약화시키다"],["vague","막연한"],["verify","확인하다"],["viable","실행 가능한"],["vulnerable","취약한"],["withdraw","철회하다"],["yield","산출하다"],["compromise","타협"],["deteriorate","악화되다"],["discrepancy","불일치"],["indispensable","없어서는 안 될"],["negligible","무시할 만한"],["paradox","역설"]],"toeic":[["accommodate","수용하다"],["acquisition","인수"],["adjacent","인접한"],["agenda","안건"],["allocate","할당하다"],["amend","수정하다"],["applicant","지원자"],["appraisal","평가"],["audit","회계 감사"],["beneficiary","수혜자"],["budget","예산"],["bulk","대량"],["clause","조항"],["collateral","담보"],["commence","시작하다"],["commute","통근하다"],["compliance","준수"],["comply","따르다"],["consecutive","연속적인"],["consolidate","통합하다"],["contingency","비상사태"],["cordially","진심으로"],["courier","택배 회사"],["credential","자격 증명"],["deadline","마감일"],["defective","결함 있는"],["delegate","위임하다"],["designate","지정하다"],["dispatch","발송하다"],["diverse","다양한"],["durable","내구성 있는"],["eligible","자격이 있는"],["endorse","지지하다"],["enroll","등록하다"],["estimate","견적"],["exceed","초과하다"],["exclusive","독점적인"],["expedite","신속히 처리하다"],["expenditure","지출"],["expertise","전문 지식"],["extend","연장하다"],["facility","시설"],["feasible","실현 가능한"],["fiscal","회계의"],["forecast","예측"],["fragile","깨지기 쉬운"],["grant","보조금"],["implement","시행하다"],["incentive","장려금"],["inquiry","문의"],["inspect","점검하다"],["installment","할부금"],["inventory","재고"],["invoice","송장"],["itinerary","여행 일정"],["landlord","집주인"],["lease","임대차 계약"],["liable","법적 책임이 있는"],["mandatory","의무적인"],["merchandise","상품"],["merger","합병"],["negotiate","협상하다"],["notify","통지하다"],["outstanding","미지불의"],["overdue","기한이 지난"],["payroll","급여 대장"],["perishable","상하기 쉬운"],["personnel","인사부"],["premises","구내"],["procurement","조달"],["prompt","신속한"],["proxy","대리인"],["quarterly","분기별의"],["quota","할당량"],["recruit","모집하다"],["redeem","상환하다"],["refund","환불"],["reimburse","환급하다"],["relocate","이전하다"],["renovate","개조하다"],["retail","소매"],["revenue","수익"],["shipment","선적"],["shortage","부족"],["specification","사양"],["stationery","문구류"],["subsidiary","자회사"],["supervise","감독하다"],["surplus","잉여"],["tariff","관세"],["tentative","잠정적인"],["terminate","종료하다"],["transaction","거래"],["turnover","이직률"],["unanimous","만장일치의"],["utilize","활용하다"],["vacancy","공석"],["venue","장소"],["warranty","품질 보증"],["workload","업무량"]]};
+// ===== 스파르타보카 앱과 맞춘 값 (StudyViewModel 기준) =====
+const N=10;            // 단어 수 (고정)
+const WINDOW=3;        // 단어 반복 수 = 윈도우 크기 (고정)
+const WORD_MS=2000;    // 자동: 단어만 보이는 시간
+const MEAN_MS=2000;    // 자동: 뜻까지 보이는 시간
+const QUIZ_MS=5000;    // 테스트: 문제당 제한 시간 (넘기면 오답)
+const FEEDBACK_MS=1000;// 답을 고른 뒤 다음 문제까지
+const LV_NAME={mid:'중학 수준',high:'고교 수준',toeic:'토익 수준'};
+const MODE_NAME={auto:'자동',manual:'내 속도'};
+
+let lang='mid', mode='auto', sound=true;
+let step=0, set=[], wrongSet=[], queue=[], cur=null, locked=false, testResult={}, firstScore=null, rounds=0, timers=[], run=0;
+function later(fn,ms){ const r=run; const t=setTimeout(()=>{ if(r===run) fn(); },ms); timers.push(t); return t; }
+function clearTimers(){ timers.forEach(clearTimeout); timers=[]; }
+
+// ---- 시계: 암기+테스트만 센다. 중간 결과 화면·화면이 가려진 동안은 멈춘다 ----
+let acc=0, t0=0, running=false, tick=null, wantRun=false;
+function elapsed(){ return acc+(running? performance.now()-t0 : 0); }
+function fmt(ms){ const s=Math.floor(ms/1000); return Math.floor(s/60)+':'+String(s%60).padStart(2,'0'); }
+function fmtK(ms){ const s=Math.round(ms/1000); const m=Math.floor(s/60); return (m? m+'분 ':'')+(s%60)+'초'; }
+function showTime(){ $('time').textContent=fmt(elapsed()); }
+function resume(){ wantRun=true; if(!running&&!document.hidden){ t0=performance.now(); running=true; } $('clockLb').textContent='경과 시간'; }
+function pause(){ wantRun=false; if(running){ acc+=performance.now()-t0; running=false; } showTime(); $('clockLb').textContent='멈춤'; }
+function startClock(){ acc=0; running=false; $('clock').hidden=false; clearInterval(tick); tick=setInterval(showTime,250); resume(); showTime(); }
+function endClock(){ pause(); clearInterval(tick); tick=null; $('clockLb').textContent='걸린 시간'; }
+document.addEventListener('visibilitychange',()=>{ if(document.hidden){ if(running){ acc+=performance.now()-t0; running=false; } } else if(wantRun&&!running){ t0=performance.now(); running=true; } });
+
+function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+function speak(w){ if(!sound) return; try{ const u=new SpeechSynthesisUtterance(w); u.lang='en-US'; u.rate=0.95; speechSynthesis.cancel(); speechSynthesis.speak(u); }catch(e){} }
+function loadBest(){ try{ return JSON.parse(localStorage.getItem('ms_best'))||{}; }catch(e){ return {}; } }
+function saveBest(b){ try{ localStorage.setItem('ms_best',JSON.stringify(b)); }catch(e){} }
+function markSteps(){ document.querySelectorAll('.step').forEach(el=>{ const s=+el.dataset.s; el.classList.toggle('on',s===step); el.classList.toggle('done',s<step); }); }
+function setStep(s){ step=s; markSteps(); }
+
+// ---- 시작 화면 ----
+function renderHome(){
+  run++; clearTimers(); setStep(0); clearInterval(tick); tick=null; running=false; wantRun=false; $('clock').hidden=true;
+  const b=loadBest()[lang+'_'+mode];
+  $('stage').innerHTML=`<div class="pick"><span>단어 수준</span><div class="seg" id="segL">${Object.keys(LV_NAME).map(k=>`<button data-v="${k}" class="${k===lang?'on':''}">${LV_NAME[k]}</button>`).join('')}</div></div>
+  <div class="pick"><span>넘기는 방식</span><div class="seg" id="segM"><button data-v="auto" class="${mode==='auto'?'on':''}">자동 (단어 2초·뜻 2초)</button><button data-v="manual" class="${mode==='manual'?'on':''}">내 속도 (눌러서 넘기기)</button></div></div>
+  <div class="pick"><span>발음 듣기</span><div class="seg" id="segS"><button data-v="1" class="${sound?'on':''}">켬</button><button data-v="0" class="${!sound?'on':''}">끔</button></div></div>
+  <p class="note" style="margin:8px 0">단어 10개 · 단어마다 3번 반복(카드 32장). ${b?`이 조건의 내 최고 기록: <b>분당 ${b.wpm}단어</b> (${fmtK(b.ms)})`:'이 조건으로 잰 기록이 아직 없어요.'}</p>
+  <div class="btn-row"><button class="btn" id="start">측정 시작</button></div>
+  <p class="note" style="margin-top:8px">시작을 누르면 바로 시계가 돌아요. ${mode==='auto'?'자동으로 넘어가니 화면만 보면 돼요.':'카드를 누르고 있으면 뜻이 보이고, 손을 떼면 다음 단어로 넘어가요. PC 에서는 스페이스 키도 돼요.'}</p>`;
+  $('segL').querySelectorAll('button').forEach(x=>x.addEventListener('click',()=>{ lang=x.dataset.v; renderHome(); }));
+  $('segM').querySelectorAll('button').forEach(x=>x.addEventListener('click',()=>{ mode=x.dataset.v; renderHome(); }));
+  $('segS').querySelectorAll('button').forEach(x=>x.addEventListener('click',()=>{ sound=x.dataset.v==='1'; renderHome(); }));
+  $('start').addEventListener('click',begin);
+}
+function begin(){
+  run++; clearTimers();
+  set=shuffle(WORDS[lang].slice()).slice(0,N).map(([w,m])=>({w,m}));
+  wrongSet=[]; firstScore=null; rounds=0; setStep(1); startClock(); startMemorize(set,()=>{ setStep(2); startTest(set,'test'); });
+  if(typeof gtag==='function') gtag('event','memory_speed_start',{level:lang,mode:mode});
+}
+
+// ---- 암기: 윈도우 슬라이딩 재생 목록 (앱 generatePlaylist 와 같은 순서) ----
+// 준비 구간(앞에서 2개 … WINDOW-1개) 뒤에, 시작 위치를 한 칸씩 밀며 WINDOW 개씩. 끝에서는 처음으로 이어진다.
+// 단어 수가 WINDOW 보다 적으면(틀린 단어 다시 외울 때) 목록 전체를 WINDOW 번 되풀이한다.
+function playlist(list){
+  const n=list.length, out=[];
+  if(n<WINDOW){ for(let r=0;r<WINDOW;r++) out.push(...list); return out; }
+  for(let w=2;w<WINDOW;w++) out.push(...list.slice(0,w));
+  for(let s=0;s<n;s++) for(let k=0;k<WINDOW;k++) out.push(list[(s+k)%n]);
+  return out;
+}
+let cards=[], ci=0, afterMem=null, held=false;
+function startMemorize(list,done){ cards=playlist(list); ci=0; afterMem=done; showCard(); }
+function showCard(){
+  if(ci>=cards.length){ held=false; const f=afterMem; afterMem=null; f(); return; }
+  const c=cards[ci]; held=false;
+  $('stage').innerHTML=`<div class="prog">${step===3?'틀린 단어 다시 외우기':'암기'} · ${ci+1} / ${cards.length}</div>
+  <div class="bar"><i id="barI"></i></div>
+  <div class="flash" id="flash"><div class="w">${c.w}</div><div class="m hide" id="mean">${c.m}</div></div>
+  <p class="hint">${mode==='auto'?'단어 2초 → 뜻 2초 뒤 자동으로 넘어가요':'누르고 있으면 뜻이 보여요 · 떼면 다음 단어'}</p>`;
+  speak(c.w);
+  const bar=$('barI');
+  if(mode==='auto'){
+    bar.animate([{transform:'scaleX(1)'},{transform:'scaleX(0)'}],{duration:WORD_MS+MEAN_MS,fill:'forwards'});
+    later(()=>{ const m=$('mean'); if(m) m.classList.remove('hide'); },WORD_MS);
+    later(()=>{ ci++; showCard(); },WORD_MS+MEAN_MS);
+  } else {
+    bar.style.transform='scaleX('+(1-ci/cards.length)+')';
+    const f=$('flash');
+    f.addEventListener('pointerdown',e=>{ e.preventDefault(); pressCard(); });
+    f.addEventListener('contextmenu',e=>e.preventDefault());
+  }
+}
+function pressCard(){ if(mode!=='manual'||held||!$('mean')) return; held=true; $('mean').classList.remove('hide'); }
+function releaseCard(){ if(mode!=='manual'||!held) return; held=false; ci++; showCard(); }
+document.addEventListener('pointerup',releaseCard); document.addEventListener('pointercancel',releaseCard);
+document.addEventListener('keydown',e=>{ if(e.code==='Space'&&$('flash')){ e.preventDefault(); if(!e.repeat) pressCard(); } });
+document.addEventListener('keyup',e=>{ if(e.code==='Space'&&$('flash')){ e.preventDefault(); releaseCard(); } });
+
+// ---- 테스트 (4지선다 · 문제당 5초 · 보기는 그 수준 전체 단어에서) ----
+function startTest(list, tmode){ queue=shuffle(list.slice()); testResult={mode:tmode, total:list.length, wrong:[]}; nextQ(); }
+function nextQ(){
+  clearTimers();
+  if(!queue.length){ endTest(); return; }
+  cur=queue.shift(); const pool=[...new Set(WORDS[lang].map(([w,m])=>m))].filter(m=>m!==cur.m);
+  const opts=shuffle([cur.m,...shuffle(pool).slice(0,3)]); const r=testResult; const done=r.total-queue.length-1;
+  const label={test:'전체 테스트',wrong:'틀린 단어 테스트',final:'확인 테스트'}[r.mode];
+  $('stage').innerHTML=`<div class="prog">${label} · ${done+1} / ${r.total}</div><div class="bar"><i id="barI"></i></div><div class="q">${cur.w} <button class="spk" title="발음 듣기">🔊</button></div><div class="opts">${opts.map(o=>`<button class="opt">${o}</button>`).join('')}</div>`;
+  $('barI').animate([{transform:'scaleX(1)'},{transform:'scaleX(0)'}],{duration:QUIZ_MS,fill:'forwards'});
+  $('stage').querySelector('.spk').addEventListener('click',()=>{ const s=sound; sound=true; speak(cur.w); sound=s; });
+  $('stage').querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>pick(b)));
+  speak(cur.w); locked=false;
+  later(()=>pick(null),QUIZ_MS);   // 시간 초과는 오답
+}
+function pick(b){
+  if(locked) return; locked=true; clearTimers();
+  const bar=$('barI'); if(bar) bar.getAnimations().forEach(a=>a.pause());
+  const ok=b&&b.textContent===cur.m;
+  if(ok) b.classList.add('ok');
+  else { if(b) b.classList.add('bad'); $('stage').querySelectorAll('.opt').forEach(x=>{ if(x.textContent===cur.m) x.classList.add('ok'); }); testResult.wrong.push(cur); }
+  later(nextQ,FEEDBACK_MS);
+}
+// 한 바퀴가 끝나면 중간 결과 화면(시계 멈춤) → 버튼으로 다음 단계
+function endTest(){
+  const r=testResult; const correct=r.total-r.wrong.length;
+  if(r.mode==='test') firstScore=correct;
+  if((r.mode==='test'||r.mode==='final')&&!r.wrong.length){ finish(); return; }
+  pause();
+  let msg, next, go;
+  if(r.wrong.length){
+    wrongSet=r.wrong.slice();
+    msg=`${correct} / ${r.total} 맞혔어요. 남은 ${wrongSet.length}개를 다시 외워요.`; next='틀린 단어 다시 외우기';
+    go=()=>{ rounds++; setStep(3); resume(); startMemorize(wrongSet,()=>startTest(wrongSet,'wrong')); };
+  } else {   // 틀린 단어 테스트를 다 맞힘 → 전체를 다시 확인
+    msg='틀린 단어를 전부 맞혔어요. 이제 10개를 다시 확인해요.'; next='확인 테스트 시작';
+    go=()=>{ setStep(4); resume(); startTest(set,'final'); };
+  }
+  const list= r.wrong.length? `<div class="wordlist" style="margin:10px 0">${r.wrong.map(x=>`<div class="wc"><span class="w">${x.w}</span><span class="m">${x.m}</span></div>`).join('')}</div>`:'';
+  $('stage').innerHTML=`<p style="margin:0 0 6px;font-weight:700">${msg}</p>${list}<div class="btn-row"><button class="btn" id="go">${next}</button></div><p class="note" style="margin-top:8px">이 화면에서는 시계가 멈춰 있어요.</p>`;
+  $('go').addEventListener('click',go);
+}
+
+// ---- 결과 ----
+function finish(){
+  run++; clearTimers(); endClock(); setStep(5);
+  const ms=Math.max(acc,1000); const wpm=Math.round(N/(ms/60000)*10)/10; const wph=Math.floor(N/ms*3600000); const per=Math.round(ms/1000/N*10)/10;
+  const best=loadBest(); const key=lang+'_'+mode; const old=best[key]; const isBest=!old||ms<old.ms;
+  if(isBest){ best[key]={ms:Math.round(ms),wpm,d:new Date().toISOString().slice(0,10)}; saveBest(best); }
+  const text=`영단어 암기 속도 측정 결과 (${LV_NAME[lang]} 10단어 · ${MODE_NAME[mode]}): 분당 ${wpm}단어 · ${fmtK(ms)}`;
+  $('stage').innerHTML=`<div class="res">
+    <p class="note" style="margin:0">내 영단어 암기 속도</p>
+    <div class="big"><small>분당 </small>${wpm}<small> 단어</small></div>
+    <p class="note" style="margin:0">${LV_NAME[lang]} 10단어를 전부 외우는 데 <b>${fmtK(ms)}</b> (${MODE_NAME[mode]})</p>
+    <div class="dash"><div class="box"><small>단어 하나에</small><b>${per}초</b></div><div class="box"><small>1시간 환산 (계산값)</small><b>약 ${wph}개</b></div><div class="box"><small>첫 테스트 정답</small><b>${firstScore} / ${N}</b></div><div class="box"><small>다시 외운 횟수</small><b>${rounds}번</b></div></div>
+    <p class="note" style="margin:0 0 6px">${isBest? (old?`🎉 최고 기록을 고쳤어요! (이전 분당 ${old.wpm}단어)`:'첫 기록이에요. 다음에는 이 기록을 넘어 보세요.') : `내 최고 기록은 분당 ${old.wpm}단어 (${fmtK(old.ms)})`}</p>
+    <p class="note" style="margin:0 0 6px">1시간 환산은 이 속도가 그대로 이어진다고 가정한 계산값이에요. 실제로 그만큼 외울 수 있다는 뜻은 아닙니다.</p>
+    ${firstScore===N?'<p class="note" style="margin:0 0 6px">첫 테스트를 다 맞혔어요. 이미 아는 단어가 많았다면 한 단계 높은 수준으로 재 보세요.</p>':''}
+    <div class="btn-row" style="justify-content:center"><button class="btn" id="again">다시 측정</button><button class="btn-ghost" id="copy">결과 복사</button></div>
+    <details style="text-align:left;margin-top:10px"><summary>이번에 외운 단어 보기</summary><div class="wordlist" style="margin-top:8px">${set.map((x,i)=>`<div class="wc"><span class="n">${i+1}</span><span class="w">${x.w}</span><span class="m">${x.m}</span></div>`).join('')}</div></details>
+    <div class="promo">📱 같은 순서로 단어장을 통째로 외우고 복습까지 챙기려면 <a id="appLink" href="https://play.google.com/store/apps/details?id=com.spartavoca.app" target="_blank" rel="noopener">스파르타보카 앱</a>을 써보세요. (만 19세 이상 이용)</div></div>`;
+  $('again').addEventListener('click',renderHome);
+  $('appLink').addEventListener('click',()=>{ if(typeof gtag==='function') gtag('event','memory_speed_app_click',{level:lang,mode:mode}); });
+  $('copy').addEventListener('click',async()=>{ try{ await navigator.clipboard.writeText(text+' — https://dailyfreetoolbox.com/memory-speed'); $('copy').textContent='복사됨'; setTimeout(()=>{ if($('copy')) $('copy').textContent='결과 복사'; },1500); }catch(e){} });
+  if(typeof gtag==='function') gtag('event','memory_speed_done',{level:lang,mode:mode,seconds:Math.round(ms/1000),wpm:wpm});
+}
+renderHome();
+</script>
+
+</body>
+</html>

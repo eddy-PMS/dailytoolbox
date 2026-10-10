@@ -1,13 +1,12 @@
 ---
 title: DSR·LTV 뜻과 주택담보대출 한도 계산 — 내 연봉으로 얼마까지
 description: DSR은 소득 기준, LTV는 집값 기준 한도예요. DSR 계산식, 스트레스 DSR 가산금리, 규제지역 LTV 40%와 6억·4억·2억 한도, 연봉 4천~1억의 주택담보대출 한도 예시를 표로 정리했어요.
-date: 2026-10-01
-updated: 2026-10-01
+date: 2026-10-11
+updated: 2026-10-11
 category: 돈·일
 tools: mortgage.html, loan.html, jeonse-loan.html
 keywords: DSR, LTV, 주택담보대출 한도, 스트레스 DSR, DSR 계산, DSR 40%, LTV 40%, 주담대 한도 6억, 연봉별 대출 한도
 sources: 금융위원회 — 주택시장 안정화를 위한 대출수요 관리 방안 (2025.10.15) | https://www.fsc.go.kr/po010101/85432 ; 금융위원회 — 3단계 스트레스 DSR 시행방안 (2025.5.20) | https://www.fsc.go.kr/no010101/84617 ; 금융위원회 — 2026년도 가계부채 관리방안 (2026.4.1) | https://www.fsc.go.kr/no010101/86606 ; 금융위원회 — 가계부채 관리 강화방안 (2021.10.26) | https://www.fsc.go.kr/no010101/76740 ; 대한민국 정책브리핑 — 수도권·규제지역 주담대 6억 한도 (2025.6.27) | https://www.korea.kr/news/policyNewsView.do?newsId=148945077 ; 대한민국 정책브리핑 — 서울·경기 12곳 주담대 한도 축소 (2025.10.15) | https://www.korea.kr/news/policyNewsView.do?newsId=148950959
-draft: true
 ---
 주택담보대출 한도는 "집값의 몇 %"만으로 정해지지 않아요. **LTV(집값 기준)**, **주택가격별 한도**, **DSR(소득 기준)** 세 가지를 따로 계산해서 **가장 작은 금액**이 실제 한도가 돼요. 연봉이 높아도 집값 기준에 막히고, 집이 비싸도 소득 기준에 막히는 이유예요. 아래 규제 수치는 금융위원회 자료를 기준으로 정리했어요(확인일 2026-10-01).
 

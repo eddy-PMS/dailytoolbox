@@ -1,13 +1,12 @@
 ---
 title: 사진 용량 줄이기 — 화질은 지키고 크기만 줄이는 방법
 description: 사진 용량 줄이기는 픽셀 수를 줄이고 압축 품질을 조절하는 두 단계면 끝나요. JPG·PNG·WEBP 차이, 여권 사진·메일·메신저 용도별 크기, 브라우저에서 줄이는 순서를 표와 예시로 정리했어요.
-date: 2026-10-01
-updated: 2026-10-01
+date: 2026-10-12
+updated: 2026-10-12
 category: 계산·생활
 tools: image-compress.html, image-to-pdf.html, pdf-to-jpg.html
 keywords: 사진 용량 줄이기, 이미지 압축, 사진 용량, 사진 크기 줄이기, JPG PNG WEBP 차이, 여권 사진 크기, 메일 첨부 용량
 sources: 외교부 여권안내 — 여권 사진 규격 | https://www.passport.go.kr/home/kor/contents.do?menuPos=32 ; Gmail 고객센터 — Gmail 메일로 첨부파일 전송하기 | https://support.google.com/mail/answer/6584?hl=ko ; 카카오 고객센터 — PC에서 이미지/동영상/음성/압축 파일을 전송할 수 있나요? | https://cs.kakao.com/helps_html/1073209399?locale=ko ; 카카오 고객센터 — 톡클라우드에 백업된 이미지 파일의 화질 | https://cs.kakao.com/helps_html/1073206516?locale=ko
-draft: true
 ---
 사진 용량 줄이기는 두 가지만 하면 돼요. **픽셀 수(가로×세로)를 줄이고, 압축 품질을 조금 낮추는 것**이에요. 둘 중 효과가 큰 쪽은 픽셀 수예요. 접수 화면에서 "용량 초과"가 떴을 때 무엇부터 손대야 하는지, 형식은 무엇을 골라야 하는지 순서대로 정리했어요.
 

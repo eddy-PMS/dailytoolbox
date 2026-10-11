@@ -140,7 +140,7 @@
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/loan</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -584,13 +584,13 @@
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/jeonse-loan</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/mortgage</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -729,7 +729,11 @@
 <!-- guides:start -->
   <url>
     <loc>https://dailyfreetoolbox.com/guide/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://dailyfreetoolbox.com/guide/reduce-photo-size</loc>
+    <lastmod>2026-10-12</lastmod>
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/guide/dsr-ltv-mortgage-limit</loc>

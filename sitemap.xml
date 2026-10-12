@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://dailyfreetoolbox.com/</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -182,7 +182,7 @@
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/image-compress</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -650,7 +650,7 @@
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/image-to-pdf</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -710,7 +710,7 @@
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/pdf-to-jpg</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -729,7 +729,11 @@
 <!-- guides:start -->
   <url>
     <loc>https://dailyfreetoolbox.com/guide/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
+    <loc>https://dailyfreetoolbox.com/guide/bmr-daily-calories</loc>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://dailyfreetoolbox.com/guide/reduce-photo-size</loc>

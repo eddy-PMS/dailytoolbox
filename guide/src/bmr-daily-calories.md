@@ -1,13 +1,12 @@
 ---
 title: 기초대사량과 하루 칼로리 — 체지방률, 단백질 섭취량까지 계산
 description: 기초대사량 계산 공식(미플린-세인트 지어)과 활동량별 유지 칼로리, 체지방률 범위, 목표별 칼로리와 단백질 섭취량을 예시 숫자로 정리했어요. 2025 한국인 영양소 섭취기준의 단백질 하루 권장량도 함께 담았어요.
-date: 2026-10-01
-updated: 2026-10-01
+date: 2026-10-13
+updated: 2026-10-13
 category: 가족·건강
 tools: macros.html, bmi.html, body-fat.html, onerm.html, pace.html
 keywords: 기초대사량, 체지방률, 기초대사량 계산, 기초대사량 평균, 단백질 섭취량, 단백질 하루 권장량, 하루 칼로리, 유지 칼로리
 sources: 보건복지부·한국영양학회 — 2025 한국인 영양소 섭취기준 | https://www.kns.or.kr/fileroom/fileroom_view.asp?idx=167&BoardID=Kdr ; 보건복지부 보도자료 — 영양소 적정 섭취기준 개정 (2025.12.31) | https://www.korea.kr/briefing/pressReleaseView.do?newsId=156737581 ; American Council on Exercise (ACE) — 체지방률 분류 | https://www.acefitness.org/about-ace/press-room/in-the-news/8602/body-fat-percentage-charting-averages-in-men-and-women-very-well-health/ ; Mifflin MD, St Jeor ST 외 (1990), Am J Clin Nutr 51(2):241-7 | https://pubmed.ncbi.nlm.nih.gov/2305711/
-draft: true
 ---
 **기초대사량**은 하루 종일 누워만 있어도 몸이 쓰는 에너지예요. 여기에 움직인 만큼을 더한 값이 "유지 칼로리"이고, 살을 빼거나 근육을 늘릴 때는 이 숫자에서 얼마를 덜고 더할지를 정합니다. 계산은 덧셈과 곱셈 몇 번이면 끝나요. 아래 공식 수치는 **확인일 2026-10-01** 기준입니다.
 

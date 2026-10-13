@@ -26,8 +26,8 @@ ovulation-fertile-window
 dsr-ltv-mortgage-limit
 reduce-photo-size
 bmr-daily-calories
-inch-cm-conversion
-pet-age-in-human-years
+!inch-cm-conversion
+!pet-age-in-human-years
 
 # 발행하지 않는 초안 — 앞에 ! 를 붙이면 자동 발행에서 빠져요(원고는 초안으로 남음).
 # 단어 가이드 5편은 spartavoca.com 으로 옮긴다(2026-10-06).

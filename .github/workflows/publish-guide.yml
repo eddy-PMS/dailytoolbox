@@ -57,7 +57,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add guide sitemap.xml index.html *.html
+          git add guide sitemap.xml rss.xml index.html *.html
           if git diff --cached --quiet; then
             echo "바뀐 파일이 없어요. 넘어갑니다."
             exit 0

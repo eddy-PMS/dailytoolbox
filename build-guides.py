@@ -569,6 +569,58 @@ def refresh_sitemap_lastmod():
     open(path, 'w', encoding='utf-8').write(head + sep + tail)
     print(f'sitemap lastmod 반영 ({n}개 주소)')
 
+def build_rss():
+    """sitemap.xml 의 주소를 그대로 RSS 2.0(rss.xml)으로 낸다 — 네이버 서치어드바이저 RSS 제출용.
+    title·description 은 각 페이지의 <title>·meta description, pubDate 는 sitemap 의 lastmod(한국 시간 0시).
+    지금 시각을 쓰지 않으므로 페이지가 안 바뀌면 rss.xml 도 그대로다(매일 빌드에서 헛커밋이 안 생김)."""
+    from email.utils import format_datetime
+    sm = open(os.path.join(ROOT, 'sitemap.xml'), encoding='utf-8').read()
+    kst = datetime.timezone(datetime.timedelta(hours=9))
+    items, missing = [], []
+    for i, (url, block) in enumerate(re.findall(r'<url>\s*<loc>([^<]+)</loc>(.*?)</url>', sm, flags=re.S)):
+        rel = url[len(SITE):].strip('/')
+        f = 'index.html' if rel == '' else (rel + '/index.html' if url.endswith('/') else rel + '.html')
+        p = os.path.join(ROOT, f)
+        if not os.path.exists(p):
+            missing.append(url); continue
+        page = open(p, encoding='utf-8').read()
+        t = re.search(r'<title>(.*?)</title>', page, flags=re.S)
+        d = re.search(r'<meta\s+name="description"\s+content="([^"]*)"', page)
+        lm = re.search(r'<lastmod>(\d{4}-\d{2}-\d{2})</lastmod>', block)
+        if not t or not lm:
+            missing.append(url); continue
+        y, mo, dd = map(int, lm.group(1).split('-'))
+        when = datetime.datetime(y, mo, dd, tzinfo=kst)
+        items.append((when, i, url, html.unescape(t.group(1).strip()), html.unescape(d.group(1)) if d else ''))
+    items.sort(key=lambda x: (-x[0].timestamp(), x[1]))   # 최근 순, 같은 날은 sitemap 순서
+    x = lambda s: html.escape(s, quote=False)
+    home = open(os.path.join(ROOT, 'index.html'), encoding='utf-8').read()
+    ch_title = html.unescape(re.search(r'<title>(.*?)</title>', home, flags=re.S).group(1).strip())
+    ch_desc = html.unescape(re.search(r'<meta\s+name="description"\s+content="([^"]*)"', home).group(1))
+    last = format_datetime(items[0][0]) if items else ''
+    out = ['<?xml version="1.0" encoding="UTF-8"?>',
+           '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">',
+           '<channel>',
+           f'  <title>{x(ch_title)}</title>',
+           f'  <link>{SITE}/</link>',
+           f'  <description>{x(ch_desc)}</description>',
+           '  <language>ko</language>',
+           f'  <lastBuildDate>{last}</lastBuildDate>',
+           f'  <atom:link href="{SITE}/rss.xml" rel="self" type="application/rss+xml"/>']
+    for when, _, url, t, d in items:
+        out += ['  <item>',
+                f'    <title>{x(t)}</title>',
+                f'    <link>{url}</link>',
+                f'    <description>{x(d)}</description>',
+                f'    <pubDate>{format_datetime(when)}</pubDate>',
+                f'    <guid isPermaLink="true">{url}</guid>',
+                '  </item>']
+    out += ['</channel>', '</rss>', '']
+    open(os.path.join(ROOT, 'rss.xml'), 'w', encoding='utf-8', newline='\n').write('\n'.join(out))
+    print(f'rss.xml 반영 ({len(items)}개 항목)')
+    for u in missing:
+        print('  (rss 에서 뺌 — 파일·title·lastmod 를 찾지 못함):', u)
+
 def main():
     os.makedirs(SRC, exist_ok=True); os.makedirs(OUT, exist_ok=True)
     tools = load_tools()
@@ -597,7 +649,7 @@ def main():
         print('생성:', f'guide/{g["slug"]}.html', f'({g["meta"]["title"]})')
     open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(render_index(guides))
     print('생성: guide/index.html')
-    update_tool_pages(guides, tools); update_home(guides); update_home_new(tools); update_home_popular(tools); update_sitemap(guides); refresh_sitemap_lastmod()
+    update_tool_pages(guides, tools); update_home(guides); update_home_new(tools); update_home_popular(tools); update_sitemap(guides); refresh_sitemap_lastmod(); build_rss()
 
 if __name__ == '__main__':
     main()

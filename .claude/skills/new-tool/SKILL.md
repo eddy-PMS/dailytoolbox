@@ -19,6 +19,7 @@ description: 사이트에 새 도구 페이지를 만들어 추가할 때 부른
 2. `nav.js` GROUPS 의 알맞은 그룹에 항목(파일·제목·설명·필요 시 소제목)을 추가한다.
 
 3. `sitemap.xml` 에 URL 을 추가한다(확장자 없는 주소 + `lastmod`).
+   sitemap 추가 뒤 `python build-guides.py` 실행 → `rss.xml` 도 함께 커밋한다(rss 는 sitemap 주소로 만들어진다).
 
 4. 도구 수가 적힌 문구(`index.html`, `about.html` 등)를 검색해서 숫자를 갱신한다.
    홈은 실행 시 GROUPS 에서 자동 계산하지만, `about.html` 의 도구 목록은 손으로 넣어야 한다.

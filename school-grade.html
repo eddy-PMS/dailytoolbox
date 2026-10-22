@@ -26,7 +26,7 @@
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
 <style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "200명 중 몇 등까지 1등급인가요?", "acceptedAnswer": {"@type": "Answer", "text": "9등급제는 8등(4%), 5등급제는 20등(10%)까지예요. 계산기 표에서 인원 기준 석차 범위를 볼 수 있어요."}}, {"@type": "Question", "name": "동석차가 많으면 불리한가요?", "acceptedAnswer": {"@type": "Answer", "text": "동석차는 중간 석차로 계산돼서, 1등이 5명이면 모두 3등으로 처리돼요. 만점자가 많은 과목은 1등급이 없을 수도 있어요."}}, {"@type": "Question", "name": "진로선택 과목도 등급이 나오나요?", "acceptedAnswer": {"@type": "Answer", "text": "진로선택 과목은 석차등급 없이 성취도(A·B·C)만 표기돼요."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "200명 중 몇 등까지 1등급인가요?", "acceptedAnswer": {"@type": "Answer", "text": "9등급제는 8등(4%), 5등급제는 20등(10%)까지예요. 계산기 표에서 인원 기준 석차 범위를 볼 수 있어요."}}, {"@type": "Question", "name": "동석차가 많으면 불리한가요?", "acceptedAnswer": {"@type": "Answer", "text": "동점자는 모두 같은 석차로 적어요(1등이 5명이면 1(5)). 동점자 무리가 한 등급 안에 있으면 그 등급을 그대로 받고, 등급 경계에 걸칠 때만 중간석차(석차 + (동석차 수 − 1) ÷ 2)의 백분율로 등급을 매겨요. 그래서 만점자가 많은 과목은 1등급이 없을 수도 있어요(2026학년도 학교생활기록부 기재요령)."}}, {"@type": "Question", "name": "진로선택 과목도 등급이 나오나요?", "acceptedAnswer": {"@type": "Answer", "text": "9등급제(2024년 이전 입학생)에서는 진로선택 과목에 석차등급 없이 성취도(A·B·C)만 적어요. 5등급제(2025년 고1부터)에서는 진로선택을 포함한 선택 과목도 성취도(A~E)와 석차등급을 함께 적고, 사회·과학 융합선택 9과목과 체육·예술·교양 과목에만 석차등급이 없어요(2026학년도 학교생활기록부 기재요령)."}}]}</script>
 </head>
 <body>
 
@@ -60,12 +60,12 @@
 <div class="guides-rel"><div class="lb"><img src="/icons/ui-guide.webp" width="22" height="22" alt="">관련 가이드</div><a href="/guide/gpa-conversion"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">GPA 환산·학점 환산법 — 4.5 만점과 4.3 만점, 백분위 100점까지</span><span class="go">›</span></a><a href="/guide/korean-age-rules"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">만 나이 계산법과 아직 연 나이를 쓰는 곳 — 술·담배, 입학, 병역 기준 정리</span><span class="go">›</span></a></div>
 <!-- guides:tool:end -->
 <section class="seo">
-<h2>내신 등급 계산 방식 (9등급제 vs 5등급제)</h2><p>2024년 이전 입학생은 9등급제, 2025년 고1부터는 5등급제가 적용돼요. 등급은 과목별 석차의 누적 비율로 정해지며, 9등급제는 상위 4%가 1등급, 11%까지 2등급, 23%까지 3등급이에요. 5등급제는 상위 10%가 1등급, 34%까지 2등급, 66%까지 3등급으로 구간이 훨씬 넓어요. 동석차가 있으면 중간 석차를 적용해요.</p><p>석차를 모르고 점수·평균·표준편차만 알 때는 정규분포를 가정해 백분위를 추정할 수 있어요(Z점수 방식). 실제 분포와 다를 수 있으니 참고용이에요.</p>
+<h2>내신 등급 계산 방식 (9등급제 vs 5등급제)</h2><p>2024년 이전 입학생은 9등급제, 2025년 고1부터는 5등급제가 적용돼요. 등급은 과목별 석차의 누적 비율로 정해지며, 9등급제는 상위 4%가 1등급, 11%까지 2등급, 23%까지 3등급이에요. 5등급제는 상위 10%가 1등급, 34%까지 2등급, 66%까지 3등급으로 구간이 훨씬 넓어요. 등급별 누적 인원은 수강자 수 × 누적 비율을 반올림해 정하고, 동석차가 등급 경계에 걸리면 중간석차 백분율로 등급을 매겨요.</p><p>석차를 모르고 점수·평균·표준편차만 알 때는 정규분포를 가정해 백분위를 추정할 수 있어요(Z점수 방식). 실제 분포와 다를 수 있으니 참고용이에요.</p>
 <h2>등급 구간 비교</h2><p><table><thead><tr><th>등급</th><th class="r">9등급제 (누적)</th><th class="r">5등급제 (누적)</th></tr></thead><tbody><tr><td>1등급</td><td class="r">4%</td><td class="r">10%</td></tr><tr><td>2등급</td><td class="r">11%</td><td class="r">34%</td></tr><tr><td>3등급</td><td class="r">23%</td><td class="r">66%</td></tr><tr><td>4등급</td><td class="r">40%</td><td class="r">90%</td></tr><tr><td>5등급</td><td class="r">60%</td><td class="r">100%</td></tr><tr><td>6~9등급</td><td class="r">77·89·96·100%</td><td class="r">-</td></tr></tbody></table></p>
 <h2>사용 방법</h2><ol><li>등급제(5등급/9등급)를 고르세요.</li><li>석차와 재적 인원, 동석차 인원을 넣거나, 점수·평균·표준편차 탭을 쓰세요.</li><li>등급과 등급별 석차 범위 표가 나와요.</li></ol>
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
-<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>200명 중 몇 등까지 1등급인가요?</summary><p>9등급제는 8등(4%), 5등급제는 20등(10%)까지예요. 계산기 표에서 인원 기준 석차 범위를 볼 수 있어요.</p></details><details><summary>동석차가 많으면 불리한가요?</summary><p>동석차는 중간 석차로 계산돼서, 1등이 5명이면 모두 3등으로 처리돼요. 만점자가 많은 과목은 1등급이 없을 수도 있어요.</p></details><details><summary>진로선택 과목도 등급이 나오나요?</summary><p>진로선택 과목은 석차등급 없이 성취도(A·B·C)만 표기돼요.</p></details></section>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>200명 중 몇 등까지 1등급인가요?</summary><p>9등급제는 8등(4%), 5등급제는 20등(10%)까지예요. 계산기 표에서 인원 기준 석차 범위를 볼 수 있어요.</p></details><details><summary>동석차가 많으면 불리한가요?</summary><p>동점자는 모두 같은 석차로 적어요(1등이 5명이면 1(5)). 동점자 무리가 한 등급 안에 있으면 그 등급을 그대로 받고, 등급 경계에 걸칠 때만 중간석차(석차 + (동석차 수 − 1) ÷ 2)의 백분율로 등급을 매겨요. 그래서 만점자가 많은 과목은 1등급이 없을 수도 있어요(2026학년도 학교생활기록부 기재요령).</p></details><details><summary>진로선택 과목도 등급이 나오나요?</summary><p>9등급제(2024년 이전 입학생)에서는 진로선택 과목에 석차등급 없이 성취도(A·B·C)만 적어요. 5등급제(2025년 고1부터)에서는 진로선택을 포함한 선택 과목도 성취도(A~E)와 석차등급을 함께 적고, 사회·과학 융합선택 9과목과 체육·예술·교양 과목에만 석차등급이 없어요(2026학년도 학교생활기록부 기재요령).</p></details></section>
   <footer>등급 구간: 9등급제 4·11·23·40·60·77·89·96%, 5등급제 10·34·66·90%.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
 </main>
 
@@ -78,13 +78,17 @@ document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{doc
 function normCdf(z){ const t=1/(1+0.2316419*Math.abs(z)); const d=0.3989423*Math.exp(-z*z/2); let p=d*t*(0.3193815+t*(-0.3565638+t*(1.781478+t*(-1.821256+t*1.330274)))); return z>0?1-p:p; }
 function gradeOf(pct,sys){ const c=CUT[sys]; for(let i=0;i<c.length;i++){ if(pct<=c[i]) return i+1; } return c.length; }
 function calc(){
-  const sys=$('sys').value; let pct, desc;
-  if(mode==='rank'){ const r=+$('rank').value||1, t=+$('total').value||1, tie=Math.max(1,+$('tie').value||1); pct=(r+(tie-1)/2)/t*100; desc=`석차 ${r}등 / ${t}명 → 누적 비율 ${pct.toFixed(1)}%${tie>1?' (동석차 중간 석차 적용)':''}`; }
+  const sys=$('sys').value; let pct, desc, g;
+  if(mode==='rank'){ const t=Math.max(1,+$('total').value||1), r=Math.min(t,Math.max(1,+$('rank').value||1)), tie=Math.min(t-r+1,Math.max(1,+$('tie').value||1));
+    // 기재요령: 등급별 누적 인원 = 수강자 수 × 누적 비율 반올림. 동석차가 등급 경계에 걸칠 때만 중간석차 백분율 적용
+    const N=CUT[sys].map(p=>Math.round(t*p/100)), gAt=k=>N.findIndex(n=>k<=n)+1, g1=gAt(r), g2=gAt(r+tie-1);
+    if(g1===g2){ g=g1; pct=r/t*100; desc=`석차 ${r}등${tie>1?'('+tie+')':''} / ${t}명 → ${g}등급 구간(누적 ${N[g-1]}명까지)${tie>1?' · 동석차가 한 등급 안에 있어 그대로 적용':''}`; }
+    else { const mid=r+(tie-1)/2; pct=mid/t*100; g=gradeOf(pct,sys); desc=`석차 ${r}등(${tie}) / ${t}명 → 동석차가 등급 경계에 걸려 중간석차 ${mid}등, 중간석차 백분율 ${pct.toFixed(2)}% 적용`; } }
   else { const s=+$('score').value, m=+$('mean').value, sd=+$('sd').value||1; const z=(s-m)/sd; pct=(1-normCdf(z))*100; desc=`Z점수 ${z.toFixed(2)} → 상위 약 ${pct.toFixed(1)}% (정규분포 가정)`; }
-  const g=gradeOf(pct,sys); const c=CUT[sys];
+  if(g==null) g=gradeOf(pct,sys); const c=CUT[sys];
   $('out').innerHTML=`<div class="big-result">${g}등급<small>${sys}등급제</small></div><div class="note">${desc}</div>
-    <table style="margin-top:12px"><thead><tr><th>등급</th><th class="r">누적 비율</th>${mode==='rank'?'<th class="r">석차 범위 ('+$('total').value+'명 기준)</th>':''}</tr></thead><tbody>${c.map((cut,i)=>{ const prev=i?c[i-1]:0; const t=+$('total').value||1; const lo=Math.floor(prev*t/100)+1, hi=Math.floor(cut*t/100); return `<tr${i+1===g?' style="font-weight:700;color:var(--accent)"':''}><td>${i+1}등급</td><td class="r">${prev}% ~ ${cut}%</td>${mode==='rank'?`<td class="r">${lo}~${hi}등</td>`:''}</tr>`; }).join('')}</tbody></table>
-    <div class="note">동석차가 있으면 중간 석차로 계산해요. 실제 등급은 학교 성적 처리 규정(동점자 처리 등)에 따라 달라질 수 있어요.</div>`;
+    <table style="margin-top:12px"><thead><tr><th>등급</th><th class="r">누적 비율</th>${mode==='rank'?'<th class="r">석차 범위 ('+$('total').value+'명 기준)</th>':''}</tr></thead><tbody>${c.map((cut,i)=>{ const prev=i?c[i-1]:0; const t=+$('total').value||1; const lo=Math.round(prev*t/100)+1, hi=Math.round(cut*t/100); return `<tr${i+1===g?' style="font-weight:700;color:var(--accent)"':''}><td>${i+1}등급</td><td class="r">${prev}% ~ ${cut}%</td>${mode==='rank'?`<td class="r">${hi>=lo?lo+'~'+hi+'등':'없음'}</td>`:''}</tr>`; }).join('')}</tbody></table>
+    <div class="note">누적 인원은 반올림, 동석차는 등급 경계에 걸릴 때만 중간석차 백분율로 계산해요. 실제 등급은 학교 성적 처리 규정(동점자 처리 등)에 따라 달라질 수 있어요.</div>`;
   if(typeof gtag==='function') gtag('event','school_grade_calculated',{sys});
 }
 ['sys','rank','total','tie','score','mean','sd'].forEach(id=>$(id).addEventListener('input',calc)); calc();

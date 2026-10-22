@@ -91,10 +91,11 @@
 </main>
 
 <script>
+const localYmd=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); // toISOString 은 UTC 라 한국 시간 오전 9시 전·자정 기준 날짜가 하루 앞당겨진다
 
 const $=id=>document.getElementById(id);
 const today=new Date(); today.setHours(0,0,0,0);
-const iso=d=>d.toISOString().slice(0,10);
+const iso=d=>localYmd(d);
 const fmt=d=>`${d.getFullYear()}년 ${d.getMonth()+1}월 ${d.getDate()}일 (${['일','월','화','수','목','금','토'][d.getDay()]})`;
 $('base').value=iso(today);
 const t=new Date(today); t.setDate(t.getDate()+30); $('target').value=iso(t);
@@ -103,7 +104,7 @@ function calcA(){
   const d=new Date($('target').value); if(isNaN(d)) return; d.setHours(0,0,0,0);
   let diff=Math.round((d-today)/86400000); const incl=$('incl').checked;
   const name=$('name').value.trim()||'목표일';
-  let label; if(diff>0) label=`D-${incl?diff+1:diff}`; else if(diff===0) label='D-Day'; else label=`D+${incl?-diff+1:-diff}`;
+  let label; if(diff>0) label=`D-${incl?diff+1:diff}`; else if(diff===0) label=incl?'D-Day (1일째)':'D-Day'; else label=`D+${incl?-diff+1:-diff}`;
   const weeks=Math.floor(Math.abs(diff)/7), rem=Math.abs(diff)%7;
   $('resA').innerHTML=`<div class="big-result">${label}<small>${name}</small></div>
     <table style="margin-top:12px"><tbody><tr><td>목표 날짜</td><td class="r">${fmt(d)}</td></tr><tr><td>${diff>=0?'남은':'지난'} 기간</td><td class="r">${Math.abs(diff).toLocaleString()}일 (${weeks}주 ${rem}일)</td></tr></tbody></table>`;

@@ -63,12 +63,13 @@
 </main>
 
 <script>
+const localYmd=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); // toISOString 은 UTC 라 한국 시간 오전 9시 전·자정 기준 날짜가 하루 앞당겨진다
 
 const $=id=>document.getElementById(id);
 const today=new Date(); today.setHours(0,0,0,0);
 const fmt=d=>`${d.getMonth()+1}/${d.getDate()} (${['일','월','화','수','목','금','토'][d.getDay()]})`;
 const addD=(d,n)=>{const x=new Date(d);x.setDate(x.getDate()+n);return x;};
-const dl=addD(today,-10); $('lmp').value=dl.toISOString().slice(0,10);
+const dl=addD(today,-10); $('lmp').value=localYmd(dl);
 function calc(){
   const lmp=new Date($('lmp').value); if(isNaN(lmp)) return; lmp.setHours(0,0,0,0); const cyc=+$('cycle').value||28, per=+$('period').value||5;
   let rows=''; let cur=lmp; let firstOv=null;

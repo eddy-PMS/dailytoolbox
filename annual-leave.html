@@ -62,13 +62,14 @@
 </main>
 
 <script>
+const localYmd=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); // toISOString 은 UTC 라 한국 시간 오전 9시 전·자정 기준 날짜가 하루 앞당겨진다
 
 const $=id=>document.getElementById(id);
 const today=new Date(); today.setHours(0,0,0,0);
 const fmt=d=>`${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`;
 const addM=(d,n)=>{const x=new Date(d);x.setMonth(x.getMonth()+n);return x;};
 const addY=(d,n)=>{const x=new Date(d);x.setFullYear(x.getFullYear()+n);return x;};
-$('ref').value=today.toISOString().slice(0,10); const s0=addY(today,-2); $('start').value=s0.toISOString().slice(0,10);
+$('ref').value=localYmd(today); const s0=addY(today,-2); $('start').value=localYmd(s0);
 function leaveFor(years){ return Math.min(25, 15+Math.floor((years-1)/2)); }
 function calc(){
   const s=new Date($('start').value), r=new Date($('ref').value); if(isNaN(s)||isNaN(r)||r<s){ $('out').innerHTML='<div class="empty">날짜를 확인해주세요</div>'; return; } s.setHours(0,0,0,0); r.setHours(0,0,0,0);

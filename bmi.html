@@ -26,7 +26,7 @@
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
 <style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "둘레는 어디를 재나요?", "acceptedAnswer": {"@type": "Answer", "text": "허리는 배꼽 높이에서 숨을 내쉰 상태로, 목은 후두 바로 아래, 엉덩이는 가장 튀어나온 부분을 줄자를 수평으로 대고 재세요."}}, {"@type": "Question", "name": "인바디와 결과가 달라요.", "acceptedAnswer": {"@type": "Answer", "text": "인바디도 체수분 상태에 따라 ±3% 정도 변해요. 둘레 기반 추정과 인바디 모두 추이를 보는 용도로 쓰세요."}}, {"@type": "Question", "name": "BMI 정상인데 체지방률이 높아요.", "acceptedAnswer": {"@type": "Answer", "text": "마른 비만이에요. 체중보다 근육량을 늘리는 근력 운동과 단백질 섭취가 우선이에요."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "둘레는 어디를 재나요?", "acceptedAnswer": {"@type": "Answer", "text": "허리는 쓰임에 따라 재는 자리가 달라요. 복부비만(남성 90cm·여성 85cm 이상) 판정용은 대한비만학회 기준대로 갈비뼈 가장 아래와 골반 가장 높은 곳의 중간에서, 체지방률(미 해군 공식)용은 공식이 만들어진 방식대로 남성은 배꼽 높이·여성은 허리의 가장 가는 곳에서 숨을 편하게 내쉰 상태로 재요. 목은 후두 바로 아래, 엉덩이는 가장 튀어나온 부분을 줄자를 수평으로 대고 재세요."}}, {"@type": "Question", "name": "인바디와 결과가 달라요.", "acceptedAnswer": {"@type": "Answer", "text": "인바디도 체수분 상태에 따라 ±3% 정도 변해요. 둘레 기반 추정과 인바디 모두 추이를 보는 용도로 쓰세요."}}, {"@type": "Question", "name": "BMI 정상인데 체지방률이 높아요.", "acceptedAnswer": {"@type": "Answer", "text": "마른 비만이에요. 체중보다 근육량을 늘리는 근력 운동과 단백질 섭취가 우선이에요."}}]}</script>
 </head>
 <body>
 
@@ -45,7 +45,7 @@
       <div class="field"><label>나이</label><div class="unit"><input type="number" id="age" value="22" min="10" max="90"><span>세</span></div></div>
       <div class="field"><label>키</label><div class="unit"><input type="number" id="h" value="175" min="100" max="230"><span>cm</span></div></div>
       <div class="field"><label>몸무게</label><div class="unit"><input type="number" id="w" value="70" min="30" max="200" step="0.5"><span>kg</span></div></div>
-      <div class="field"><label>허리둘레 (배꼽 높이, 선택)</label><div class="unit"><input type="number" id="waist" placeholder="예: 80" step="0.5"><span>cm</span></div></div>
+      <div class="field"><label>허리둘레 (선택 · 재는 위치는 아래 FAQ)</label><div class="unit"><input type="number" id="waist" placeholder="예: 80" step="0.5"><span>cm</span></div></div>
       <div class="field"><label>목둘레 (선택)</label><div class="unit"><input type="number" id="neck" placeholder="예: 38" step="0.5"><span>cm</span></div></div>
       <div class="field hidden" id="hipWrap"><label>엉덩이둘레 (여성, 선택)</label><div class="unit"><input type="number" id="hip" placeholder="예: 95" step="0.5"><span>cm</span></div></div>
     </div>
@@ -74,7 +74,7 @@
 <p><table><thead><tr><th>BMI</th><th>분류</th></tr></thead><tbody><tr><td>18.5 미만</td><td>저체중</td></tr><tr><td>18.5~22.9</td><td>정상</td></tr><tr><td>23~24.9</td><td>과체중 (비만 전단계)</td></tr><tr><td>25~29.9</td><td>1단계 비만</td></tr><tr><td>30~34.9</td><td>2단계 비만</td></tr><tr><td>35 이상</td><td>3단계 비만 (고도비만)</td></tr></tbody></table></p>
 <img src="/img/bmi/bmi-weight-range-example.svg" width="800" height="574" alt="BMI 계산기 키 172cm 몸무게별 구간"
      loading="lazy" decoding="async"
-     style="max-width:100%;height:auto;display:block;margin:12px auto"><p>허리둘레는 BMI와 별개로 복부비만 지표예요. 남성 90cm(35.4인치), 여성 85cm(33.5인치) 이상이면 복부비만으로 대사질환 위험이 높아져요.</p>
+     style="max-width:100%;height:auto;display:block;margin:12px auto"><p>허리둘레는 BMI와 별개로 복부비만 지표예요. 남성 90cm(35.4인치), 여성 85cm(33.5인치) 이상이면 복부비만으로 대사질환 위험이 높아져요. 복부비만을 볼 때는 갈비뼈 가장 아래와 골반 가장 높은 곳의 중간에서 재요(대한비만학회).</p>
 <h2>사용 방법</h2>
 <img src="/img/bmi/bmi-calculator-input-800.webp"
      srcset="/img/bmi/bmi-calculator-input-400.webp 400w, /img/bmi/bmi-calculator-input-800.webp 800w, /img/bmi/bmi-calculator-input-1200.webp 1200w"
@@ -86,7 +86,7 @@
      style="max-width:100%;height:auto;display:block;margin:12px auto">
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
-<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>둘레는 어디를 재나요?</summary><p>허리는 배꼽 높이에서 숨을 내쉰 상태로, 목은 후두 바로 아래, 엉덩이는 가장 튀어나온 부분을 줄자를 수평으로 대고 재세요.</p></details><details><summary>인바디와 결과가 달라요.</summary><p>인바디도 체수분 상태에 따라 ±3% 정도 변해요. 둘레 기반 추정과 인바디 모두 추이를 보는 용도로 쓰세요.</p></details><details><summary>BMI 정상인데 체지방률이 높아요.</summary><p>마른 비만이에요. 체중보다 근육량을 늘리는 근력 운동과 단백질 섭취가 우선이에요.</p></details></section>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>둘레는 어디를 재나요?</summary><p>허리는 쓰임에 따라 재는 자리가 달라요. 복부비만(남성 90cm·여성 85cm 이상) 판정용은 대한비만학회 기준대로 갈비뼈 가장 아래와 골반 가장 높은 곳의 중간에서, 체지방률(미 해군 공식)용은 공식이 만들어진 방식대로 남성은 배꼽 높이·여성은 허리의 가장 가는 곳에서 숨을 편하게 내쉰 상태로 재요. 목은 후두 바로 아래, 엉덩이는 가장 튀어나온 부분을 줄자를 수평으로 대고 재세요.</p></details><details><summary>인바디와 결과가 달라요.</summary><p>인바디도 체수분 상태에 따라 ±3% 정도 변해요. 둘레 기반 추정과 인바디 모두 추이를 보는 용도로 쓰세요.</p></details><details><summary>BMI 정상인데 체지방률이 높아요.</summary><p>마른 비만이에요. 체중보다 근육량을 늘리는 근력 운동과 단백질 섭취가 우선이에요.</p></details></section>
   <footer>건강 관련 참고 정보이며 의학적 진단을 대신하지 않아요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
 </main>
 

@@ -59,13 +59,14 @@
 </main>
 
 <script>
+const localYmd=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); // toISOString 은 UTC 라 한국 시간 오전 9시 전·자정 기준 날짜가 하루 앞당겨진다
 
 const $=id=>document.getElementById(id);
 const today=new Date(); today.setHours(0,0,0,0);
 const fmt=d=>`${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')} (${['일','월','화','수','목','금','토'][d.getDay()]})`;
 const addD=(d,n)=>{const x=new Date(d);x.setDate(x.getDate()+n);return x;};
 const addM=(d,n)=>{const x=new Date(d);x.setMonth(x.getMonth()+n);return x;};
-const dl=addD(today,-45); $('birth').value=dl.toISOString().slice(0,10);
+const dl=addD(today,-45); $('birth').value=localYmd(dl);
 function calc(){
   const b=new Date($('birth').value); if(isNaN(b)||b>today){ $('out').innerHTML='<div class="empty">생년월일을 확인해주세요</div>'; return; } b.setHours(0,0,0,0);
   const days=Math.round((today-b)/86400000)+1; // 태어난 날 = 1일째

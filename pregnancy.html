@@ -83,13 +83,14 @@
 </main>
 
 <script>
+const localYmd=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); // toISOString 은 UTC 라 한국 시간 오전 9시 전·자정 기준 날짜가 하루 앞당겨진다
 
 const $=id=>document.getElementById(id);
 const today=new Date(); today.setHours(0,0,0,0);
 const fmt=d=>`${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`;
 const addD=(d,n)=>{const x=new Date(d);x.setDate(x.getDate()+n);return x;};
 let mode='lmp';
-const dl=addD(today,-70); $('lmp').value=dl.toISOString().slice(0,10);
+const dl=addD(today,-70); $('lmp').value=localYmd(dl);
 document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.m;$('lmpWrap').classList.toggle('hidden',mode!=='lmp');$('cycleWrap').classList.toggle('hidden',mode!=='lmp');$('eddWrap').classList.toggle('hidden',mode!=='edd');calc();}));
 function calc(){
   let lmp;

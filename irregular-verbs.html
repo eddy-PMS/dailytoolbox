@@ -7,13 +7,13 @@
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
-<title>영어 불규칙동사표 + 퀴즈 - 과거형 과거분사 변화표 무료 암기</title>
-<meta name="description" content="자주 쓰는 불규칙동사 75개의 과거형·과거분사를 한눈에 보는 불규칙동사표와 검색, 직접 입력하는 암기 퀴즈. 무료.">
-<meta name="keywords" content="불규칙동사표, 불규칙동사 표, 불규칙동사 퀴즈, 과거형 과거분사, 동사 변화표, 영어 동사 암기">
+<title>영어 불규칙동사표 + 퀴즈 - 과거형·과거분사 표 75개 한눈에</title>
+<meta name="description" content="자주 쓰는 영어 불규칙동사 75개의 과거형·과거분사 표. 원형·과거형·과거분사를 한눈에 보고 동사나 뜻으로 검색할 수 있어요. 직접 입력하는 암기 퀴즈로 틀린 동사만 다시 풀 수 있습니다. 무료.">
+<meta name="keywords" content="불규칙동사표, 과거분사 표, 불규칙 과거분사, 불규칙동사, 동사 3단 변화, 불규칙 동사 변화표, 과거형 과거분사">
 <link rel="canonical" href="https://dailyfreetoolbox.com/irregular-verbs">
 <meta property="og:type" content="website">
-<meta property="og:title" content="영어 불규칙동사표 + 퀴즈 - 과거형 과거분사 변화표 무료 암기">
-<meta property="og:description" content="자주 쓰는 불규칙동사 75개의 과거형·과거분사를 한눈에 보는 불규칙동사표와 검색, 직접 입력하는 암기 퀴즈. 무료.">
+<meta property="og:title" content="영어 불규칙동사표 + 퀴즈 - 과거형·과거분사 표 75개 한눈에">
+<meta property="og:description" content="자주 쓰는 영어 불규칙동사 75개의 과거형·과거분사 표. 원형·과거형·과거분사를 한눈에 보고 동사나 뜻으로 검색할 수 있어요. 직접 입력하는 암기 퀴즈로 틀린 동사만 다시 풀 수 있습니다. 무료.">
 <meta property="og:url" content="https://dailyfreetoolbox.com/irregular-verbs">
 <meta property="og:image" content="https://dailyfreetoolbox.com/og/og-irregular-verbs.jpg">
 <meta property="og:image:width" content="1200">
@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="ko_KR">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebApplication","name":"영어 불규칙동사 변화표 + 퀴즈","url":"https://dailyfreetoolbox.com/irregular-verbs","applicationCategory":"EducationalApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"},"description":"자주 쓰는 불규칙동사 75개의 과거형·과거분사를 한눈에 보는 불규칙동사표와 검색, 직접 입력하는 암기 퀴즈. 무료."}
+{"@context":"https://schema.org","@type":"WebApplication","name":"영어 불규칙동사 변화표 + 퀴즈","url":"https://dailyfreetoolbox.com/irregular-verbs","applicationCategory":"EducationalApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"},"description":"자주 쓰는 영어 불규칙동사 75개의 과거형·과거분사 표. 원형·과거형·과거분사를 한눈에 보고 동사나 뜻으로 검색할 수 있어요. 직접 입력하는 암기 퀴즈로 틀린 동사만 다시 풀 수 있습니다. 무료."}
 </script>
 <script src="common.js"></script>
 <link rel="stylesheet" href="tool.css">
@@ -37,6 +37,9 @@
   .tab { flex:1; padding:10px; border:1px solid var(--line); border-radius:3px; background:#fff; font-size:14px; color:var(--ink-soft); cursor:pointer; font-family:inherit; }
   .tab.active { background:var(--forest); color:#fff; border-color:var(--forest); }
   .card { background:#fff; border:1px solid var(--line); border-radius:3px; padding:20px 22px; }
+  .vtypes { display:flex; flex-wrap:wrap; gap:6px; margin:-4px 0 12px; }
+  .vtypes button { padding:6px 12px; font-size:13px; border:1px solid var(--line); border-radius:3px; background:#fff; color:inherit; font-family:inherit; cursor:pointer; }
+  .vtypes button.on { background:var(--accent); border-color:var(--accent); color:#fff; }
   .search { width:100%; padding:11px 14px; font-size:15px; border:1px solid var(--line); border-radius:3px; font-family:inherit; outline:none; margin-bottom:12px; background:#fff; }
   table { width:100%; border-collapse:collapse; font-size:14px; }
   th, td { padding:9px 10px; text-align:left; border-bottom:1px solid var(--paper-deep); }
@@ -64,7 +67,7 @@
   .missed { font-size:14px; line-height:1.9; }
   footer { margin-top:56px; font-size:12px; color:#8993a3; text-align:center; line-height:1.8; }
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "got과 gotten 중 뭐가 맞나요?", "acceptedAnswer": {"@type": "Answer", "text": "미국식은 gotten, 영국식은 got을 과거분사로 써요. 이 퀴즈는 둘 다 정답으로 인정해요. learned/learnt, dreamed/dreamt도 마찬가지예요."}}, {"@type": "Question", "name": "과거분사는 언제 쓰나요?", "acceptedAnswer": {"@type": "Answer", "text": "완료 시제(have + p.p.), 수동태(be + p.p.), 형용사 역할(a broken window)에 써요. 과거형은 단순 과거에만 씁니다."}}, {"@type": "Question", "name": "몇 개나 외워야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "핵심 75~100개면 일상·시험 영어 대부분을 커버해요. 이 표의 75개를 완벽히 하면 충분합니다."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "got과 gotten 중 뭐가 맞나요?", "acceptedAnswer": {"@type": "Answer", "text": "미국식은 gotten, 영국식은 got을 과거분사로 써요. 이 퀴즈는 둘 다 정답으로 인정해요. learned/learnt, dreamed/dreamt도 마찬가지예요."}}, {"@type": "Question", "name": "과거분사는 언제 쓰나요?", "acceptedAnswer": {"@type": "Answer", "text": "완료 시제(have + p.p.), 수동태(be + p.p.), 형용사 역할(a broken window)에 써요. 과거형은 단순 과거에만 씁니다."}}, {"@type": "Question", "name": "몇 개나 외워야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "정해진 개수는 없어요. 교과서와 일상 대화에 자주 나오는 동사부터 외우는 게 좋아요. 이 표의 75개도 자주 쓰는 동사 위주로 골랐으니, 퀴즈로 틀린 동사만 다시 풀며 줄여 가세요."}}, {"@type": "Question", "name": "과거형과 과거분사는 어떻게 다른가요?", "acceptedAnswer": {"@type": "Answer", "text": "과거형은 혼자서 \"~했다\"를 나타내요(I went). 과거분사는 혼자 동사로 쓰지 않고 have·be 같은 말과 함께 써요(I have gone, It was written). 그래서 과거형 자리에 과거분사를 쓰면 틀려요(I gone ✗)."}}, {"@type": "Question", "name": "불규칙동사와 규칙동사는 어떻게 구분하나요?", "acceptedAnswer": {"@type": "Answer", "text": "과거형과 과거분사를 원형에 -ed만 붙여 만들면 규칙동사(play-played-played), 그렇지 않으면 불규칙동사예요. 철자만 보고는 알 수 없어서 불규칙동사는 따로 외워야 해요."}}, {"@type": "Question", "name": "동사 3단 변화가 뭔가요?", "acceptedAnswer": {"@type": "Answer", "text": "원형·과거형·과거분사 세 형태를 묶어 부르는 말이에요(go-went-gone). 이 페이지의 표가 바로 동사 3단 변화를 정리한 표예요."}}]}</script>
 <style>.tagline{font-size:18px;font-weight:600;color:var(--ink,#1f1d1a);margin:0 0 8px;line-height:1.45;letter-spacing:-0.01em}</style>
 </head>
 <body>
@@ -85,6 +88,7 @@
 
   <div id="tablePane" class="card">
     <input class="search" id="search" placeholder="동사나 뜻으로 검색 (예: take, 먹다)">
+    <div class="vtypes" id="vtypes"><button class="on" data-t="">전체</button><button data-t="AAA">A-A-A</button><button data-t="ABB">A-B-B</button><button data-t="ABA">A-B-A</button><button data-t="ABC">A-B-C</button></div>
     <div style="max-height:520px; overflow:auto;">
       <table>
         <thead><tr><th>원형</th><th>과거형</th><th>과거분사</th><th>뜻</th></tr></thead>
@@ -129,14 +133,17 @@
   <div class="ad-slot" data-ad="below-result"></div>
 <div class="sibs"><div class="lb">공부·어학 도구 더 보기</div><div class="chips"><a href="cloze"><img class="sic" src="/icons/cloze.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>빈칸 문제 생성기</span></a><a href="spelling-quiz"><img class="sic" src="/icons/spelling-quiz.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>스펠링 퀴즈</span></a><a href="furigana"><img class="sic" src="/icons/furigana.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>후리가나 표시기</span></a><a href="jp-verb"><img class="sic" src="/icons/jp-verb.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>동사 활용표</span></a><a href="kana-quiz"><img class="sic" src="/icons/kana-quiz.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>가나 퀴즈</span></a><a href="jlpt-test"><img class="sic" src="/icons/jlpt-test.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>JLPT 레벨 테스트</span></a><a class="more" href="/#공부·어학">전체 보기 →</a></div></div>
 <section class="seo">
-<h2>불규칙동사, 이렇게 외우면 쉬워요</h2><p>영어 동사 대부분은 과거형·과거분사에 -ed를 붙이지만, 자주 쓰는 동사일수록 불규칙이에요(go-went-gone, take-took-taken). 자주 쓰이기 때문에 옛 형태가 그대로 남은 거라, 억지로 외우기보다 패턴별로 묶으면 훨씬 빨라요. 이 페이지의 표는 75개 핵심 동사를 담고 있고, 퀴즈로 바로 확인할 수 있어요.</p><p>패턴 예시: ①세 형태가 모두 같은 A-A-A형(cut, put, set, hit), ②과거형과 과거분사가 같은 A-B-B형(buy-bought-bought, teach-taught-taught, think-thought-thought), ③원형과 과거분사가 같은 A-B-A형(come-came-come, run-ran-run), ④모두 다른 A-B-C형(begin-began-begun, sing-sang-sung, drive-drove-driven). 모음이 i-a-u로 바뀌는 그룹(sing, ring, drink, swim, begin)처럼 소리 규칙으로 묶어 외우세요.</p>
+<h2>불규칙 과거분사 표 보는 법</h2><p>이 과거분사 표는 한 줄에 원형·과거형·과거분사 세 형태를 나란히 보여 줘요. 원형은 사전에 실린 기본 형태(go), 과거형은 "~했다"를 말할 때 쓰는 형태(went), 과거분사는 have와 함께 완료형을 만들거나 be와 함께 수동태를 만들 때 쓰는 형태(gone)예요. 과거분사는 영어로 past participle이라 문법책에서는 흔히 p.p.라고 줄여 써요.</p><p>이 세 형태를 묶어 "동사 3단 변화"라고도 불러요. 표에서 원형과 같은 철자인 칸은 흐리게 표시돼서, 어느 형태가 바뀌는지 바로 눈에 들어와요. read처럼 철자는 셋 다 같아도 과거형·과거분사는 [레드]로 소리가 달라지는 동사도 있으니 소리 내어 읽으며 외우세요.</p>
+<h2>불규칙동사, 이렇게 외우면 쉬워요</h2><p>영어 동사 대부분은 과거형·과거분사에 -ed를 붙이지만, 자주 쓰는 동사일수록 불규칙이에요(go-went-gone, take-took-taken). 자주 쓰이기 때문에 옛 형태가 그대로 남은 거라, 억지로 외우기보다 패턴별로 묶으면 훨씬 빨라요. 이 페이지의 표는 자주 쓰는 동사 75개를 담고 있고, 퀴즈로 바로 확인할 수 있어요.</p>
+<h2>유형별로 묶어 보기 — 불규칙동사 A-A-A·A-B-B·A-B-A·A-B-C</h2><p>불규칙동사는 세 형태가 어떻게 바뀌는지에 따라 네 가지로 나눌 수 있어요. 아래 개수는 이 페이지 표 75개를 직접 센 것이고, 표 위의 유형 단추를 누르면 그 유형만 모아 볼 수 있어요. 두 형태가 있는 동사(get-got-gotten/got 등)는 첫 번째 형태로 나눴어요.</p><p><table><thead><tr><th>유형</th><th>뜻</th><th class="r">개수</th><th>예시</th></tr></thead><tbody><tr><td>A-A-A</td><td>세 형태가 모두 같음</td><td class="r">9개</td><td>cut, put, hit, set, let, shut</td></tr><tr><td>A-B-B</td><td>과거형과 과거분사가 같음</td><td class="r">31개</td><td>buy-bought-bought, bring-brought-brought, make-made-made, teach-taught-taught</td></tr><tr><td>A-B-A</td><td>원형과 과거분사가 같음</td><td class="r">3개</td><td>come-came-come, run-ran-run, become-became-become</td></tr><tr><td>A-B-C</td><td>셋이 모두 다름</td><td class="r">32개</td><td>go-went-gone, eat-ate-eaten, write-wrote-written, begin-began-begun</td></tr></tbody></table></p><p>가장 많은 A-B-B형은 과거형 하나만 외우면 과거분사까지 끝나요. A-B-C형은 다시 소리로 묶으면 쉬워요. 모음이 i-a-u로 바뀌는 무리(sing-sang-sung, ring, drink, swim, begin), 과거분사가 -en으로 끝나는 무리(take-took-taken, eat, give, write, speak)처럼 묶어서 소리 내어 외우세요.</p>
 <h2>시험에 자주 나오는 헷갈리는 쌍</h2><p><table><thead><tr><th>동사</th><th>과거형</th><th>과거분사</th><th>헷갈리는 점</th></tr></thead><tbody><tr><td>lie (눕다)</td><td>lay</td><td>lain</td><td>lay(놓다)-laid-laid와 혼동</td></tr><tr><td>rise (오르다)</td><td>rose</td><td>risen</td><td>raise(올리다)는 규칙동사</td></tr><tr><td>fall (떨어지다)</td><td>fell</td><td>fallen</td><td>feel-felt-felt와 혼동</td></tr><tr><td>find (찾다)</td><td>found</td><td>found</td><td>found(설립하다)는 규칙동사</td></tr><tr><td>wind (감다)</td><td>wound</td><td>wound</td><td>wound(상처)와 철자 같음</td></tr></tbody></table></p>
 <h2>사용 방법</h2><ol><li>"변화표" 탭에서 동사나 뜻으로 검색해 세 형태를 확인하세요.</li><li>"퀴즈" 탭에서 문제 수와 출제 범위(과거형/과거분사)를 고르고 시작하세요.</li><li>틀린 동사만 다시 풀어 확실히 외우세요.</li></ol>
+<p>불규칙동사를 다 외웠다면 <a href="/vocab-quiz">영단어 스피드 퀴즈</a>로 어휘를 넓히고, <a href="/level-test">영어 레벨 테스트</a>로 지금 수준을 확인해 보세요. 철자가 자주 헷갈리는 동사는 <a href="/spelling-quiz">스펠링 퀴즈</a>에 내 단어 목록으로 넣어 듣고 받아쓰기로 연습할 수 있어요.</p>
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
-<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>got과 gotten 중 뭐가 맞나요?</summary><p>미국식은 gotten, 영국식은 got을 과거분사로 써요. 이 퀴즈는 둘 다 정답으로 인정해요. learned/learnt, dreamed/dreamt도 마찬가지예요.</p></details><details><summary>과거분사는 언제 쓰나요?</summary><p>완료 시제(have + p.p.), 수동태(be + p.p.), 형용사 역할(a broken window)에 써요. 과거형은 단순 과거에만 씁니다.</p></details><details><summary>몇 개나 외워야 하나요?</summary><p>핵심 75~100개면 일상·시험 영어 대부분을 커버해요. 이 표의 75개를 완벽히 하면 충분합니다.</p></details></section>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>got과 gotten 중 뭐가 맞나요?</summary><p>미국식은 gotten, 영국식은 got을 과거분사로 써요. 이 퀴즈는 둘 다 정답으로 인정해요. learned/learnt, dreamed/dreamt도 마찬가지예요.</p></details><details><summary>과거분사는 언제 쓰나요?</summary><p>완료 시제(have + p.p.), 수동태(be + p.p.), 형용사 역할(a broken window)에 써요. 과거형은 단순 과거에만 씁니다.</p></details><details><summary>몇 개나 외워야 하나요?</summary><p>정해진 개수는 없어요. 교과서와 일상 대화에 자주 나오는 동사부터 외우는 게 좋아요. 이 표의 75개도 자주 쓰는 동사 위주로 골랐으니, 퀴즈로 틀린 동사만 다시 풀며 줄여 가세요.</p></details><details><summary>과거형과 과거분사는 어떻게 다른가요?</summary><p>과거형은 혼자서 "~했다"를 나타내요(I went). 과거분사는 혼자 동사로 쓰지 않고 have·be 같은 말과 함께 써요(I have gone, It was written). 그래서 과거형 자리에 과거분사를 쓰면 틀려요(I gone ✗).</p></details><details><summary>불규칙동사와 규칙동사는 어떻게 구분하나요?</summary><p>과거형과 과거분사를 원형에 -ed만 붙여 만들면 규칙동사(play-played-played), 그렇지 않으면 불규칙동사예요. 철자만 보고는 알 수 없어서 불규칙동사는 따로 외워야 해요.</p></details><details><summary>동사 3단 변화가 뭔가요?</summary><p>원형·과거형·과거분사 세 형태를 묶어 부르는 말이에요(go-went-gone). 이 페이지의 표가 바로 동사 3단 변화를 정리한 표예요.</p></details></section>
 
-  <footer>과거형·과거분사에 두 가지 형태가 있는 동사(예: get → got / gotten)는 둘 다 정답으로 인정해요.<br><span class="version-tag" style="opacity:.75">v1.0 · 2026-09-16 업데이트</span></footer>
+  <footer>과거형·과거분사에 두 가지 형태가 있는 동사(예: get → got / gotten)는 둘 다 정답으로 인정해요.<br><span class="version-tag" style="opacity:.75">v1.1 · 2026-10-27 업데이트</span></footer>
 </main>
 
 <script>
@@ -154,7 +161,7 @@
     ['make','made','made','만들다'],['mean','meant','meant','의미하다'],['meet','met','met','만나다'],['pay','paid','paid','지불하다'],
     ['put','put','put','놓다'],['read','read','read','읽다'],['ride','rode','ridden','타다'],['ring','rang','rung','울리다'],
     ['rise','rose','risen','오르다'],['run','ran','run','달리다'],['say','said','said','말하다'],['see','saw','seen','보다'],
-    ['sell','sold','sold','팔다'],['send','sent','sent','보내다'],['set','set','set','놓다, 설정하다'],['show','showed','shown/showed','보여주다'],
+    ['sell','sold','sold','팔다'],['send','sent','sent','보내다'],['set','set','set','놓다, 설정하다'],['show','showed','shown/showed','보여주다'],['shut','shut','shut','닫다'],
     ['sing','sang','sung','노래하다'],['sit','sat','sat','앉다'],['sleep','slept','slept','자다'],['speak','spoke','spoken','말하다'],
     ['spend','spent','spent','쓰다, 보내다'],['stand','stood','stood','서다'],['steal','stole','stolen','훔치다'],['swim','swam','swum','수영하다'],
     ['take','took','taken','가져가다'],['teach','taught','taught','가르치다'],['tell','told','told','말하다'],['think','thought','thought','생각하다'],
@@ -165,12 +172,20 @@
   const $ = id => document.getElementById(id);
 
   // ---- 표 ----
+  // 유형: 첫 번째 형태 기준 (get-got-gotten 은 A-B-C)
+  function vtype(v) { const b = v[0], p = v[1].split('/')[0], pp = v[2].split('/')[0];
+    return b === p && p === pp ? 'AAA' : b === pp ? 'ABA' : p === pp ? 'ABB' : 'ABC'; }
+  let curType = '';
   function renderTable(filter) {
     const f = (filter || '').trim().toLowerCase();
-    $('tbody').innerHTML = VERBS.filter(v => !f || v[0].includes(f) || v[1].includes(f) || v[2].includes(f) || v[3].includes(f))
+    $('tbody').innerHTML = VERBS.filter(v => (!curType || vtype(v) === curType) && (!f || v[0].includes(f) || v[1].includes(f) || v[2].includes(f) || v[3].includes(f)))
       .map(v => `<tr><td class="base">${v[0]}</td><td class="${v[1]===v[0]?'same':''}">${v[1]}</td><td class="${v[2]===v[0]?'same':''}">${v[2]}</td><td class="ko">${v[3]}</td></tr>`).join('') || '<tr><td colspan="4" style="color:#8993a3">검색 결과가 없어요</td></tr>';
   }
   renderTable();
+  document.querySelectorAll('#vtypes button').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('#vtypes button').forEach(x => x.classList.toggle('on', x === b));
+    curType = b.dataset.t; renderTable($('search').value);
+  }));
   $('search').addEventListener('input', e => renderTable(e.target.value));
 
   document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {

@@ -23,15 +23,15 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "만 나이 계산기", "url": "https://dailyfreetoolbox.com/age", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "생년월일을 넣으면 오늘 기준 만 나이와 연 나이, 한국 나이(세는 나이), 띠, 다음 생일까지 남은 날을 알려주는 무료 나이 계산기."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "생일 당일에는 만 나이가 올라가나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 생일 당일부터 한 살 더 먹은 것으로 계산해요. 이 계산기도 생일 당일을 새 나이로 표시합니다."}}, {"@type": "Question", "name": "2월 29일생은 어떻게 계산하나요?", "acceptedAnswer": {"@type": "Answer", "text": "윤년이 아닌 해에는 3월 1일에 한 살이 늘어나요. 민법은 나이를 출생일부터 세고(제158조), 끝나는 달에 해당하는 날이 없으면 그달 말일에 기간이 끝난다고 정해서(제160조 제3항) 2월 28일이 지나야 만 나이가 올라가요. 이 계산기도 같은 방식으로 처리합니다."}}, {"@type": "Question", "name": "술은 만 19세부터 살 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 청소년보호법은 연 나이 기준이라 만 19세가 되는 해의 1월 1일부터 구매할 수 있어요. 예를 들어 2007년생은 생일과 관계없이 2026년 1월 1일부터 가능합니다."}}, {"@type": "Question", "name": "특정 날짜 기준 나이를 구할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 기준일을 바꾸면 그날 기준으로 계산해요. 시험 응시 자격이나 보험 가입처럼 \"그날 기준 몇 살\"을 물어보는 곳에 쓰면 됩니다. 공고에 적힌 날짜를 그대로 넣으세요."}}, {"@type": "Question", "name": "한국 나이와 만 나이는 몇 살 차이인가요?", "acceptedAnswer": {"@type": "Answer", "text": "세는 나이(한국 나이)는 생일이 지났으면 만 나이보다 1살, 생일 전이면 2살 많아요. 태어나자마자 1살로 시작해 해가 바뀔 때마다 한 살씩 더하기 때문입니다. 2023년 만 나이 통일법 이후 공식 문서에는 쓰지 않아요."}}, {"@type": "Question", "name": "입력한 생년월일이 저장되나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 생년월일과 기준일은 브라우저 안에서만 계산에 쓰이고 어디에도 전송되지 않아요."}}, {"@type": "Question", "name": "제 띠는 무엇인가요?", "acceptedAnswer": {"@type": "Answer", "text": "생년월일을 넣으면 결과 표에 띠가 함께 나와요. 양력 출생연도를 기준으로 계산합니다. 다만 전통적으로 띠가 바뀌는 시점은 설날(또는 입춘)이라, 1월·2월 초에 태어났다면 사주 같은 전통 기준으로는 앞 해의 띠가 될 수 있어요."}}]}</script>
 </head>
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#계산·생활">계산·생활</a><span>›</span>만 나이 계산기</nav>
@@ -48,7 +48,7 @@
   </div>
   <div class="card" id="result"><div class="empty">생년월일을 입력해주세요</div></div>
  <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="dday"><img class="sic" src="/icons/dday.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>D-day·날짜 계산기</span></a><a href="charcount"><img class="sic" src="/icons/charcount.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>글자수 세기</span></a><a href="image-compress"><img class="sic" src="/icons/image-compress.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>이미지 용량 줄이기</span></a><a href="qrcode"><img class="sic" src="/icons/qrcode.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>QR코드 만들기</span></a><a href="myip"><img class="sic" src="/icons/myip.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>내 IP 주소 확인</span></a><a href="ipgeo"><img class="sic" src="/icons/ipgeo.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>IP 위치 조회</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="/dday"><img class="sic" src="/icons/dday.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>D-day·날짜 계산기</span></a><a href="/charcount"><img class="sic" src="/icons/charcount.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>글자수 세기</span></a><a href="/image-compress"><img class="sic" src="/icons/image-compress.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>이미지 용량 줄이기</span></a><a href="/qrcode"><img class="sic" src="/icons/qrcode.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>QR코드 만들기</span></a><a href="/myip"><img class="sic" src="/icons/myip.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>내 IP 주소 확인</span></a><a href="/ipgeo"><img class="sic" src="/icons/ipgeo.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>IP 위치 조회</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
 <!-- guides:tool:start -->
 <div class="guides-rel"><div class="lb"><img src="/icons/ui-guide.webp" width="22" height="22" alt="">관련 가이드</div><a href="/guide/korean-age-rules"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">만 나이 계산법과 아직 연 나이를 쓰는 곳 — 술·담배, 입학, 병역 기준 정리</span><span class="go">›</span></a><a href="/guide/saju-basics"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">사주 보는 법 기초 — 내 사주팔자 여덟 글자를 직접 읽는 순서</span><span class="go">›</span></a></div>
 <!-- guides:tool:end -->

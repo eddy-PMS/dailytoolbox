@@ -23,8 +23,8 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "숫자 순서 누르기 게임", "url": "https://dailyfreetoolbox.com/order", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "흩어진 숫자를 1부터 30까지 순서대로 빨리 누르는 집중력 게임. 기록을 초 단위로 재고 랭킹에 등록할 수 있어요."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>
 :root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
 .top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
@@ -46,7 +46,7 @@
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#퍼즐·게임">퍼즐·게임</a><span>›</span>숫자 순서 누르기</nav>
@@ -66,7 +66,7 @@
   <div id="lb"></div>
 
  <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">퍼즐·게임 도구 더 보기</div><div class="chips"><a href="color-find"><img class="sic" src="/icons/color-find.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>틀린 색 찾기</span></a><a href="math-speed"><img class="sic" src="/icons/math-speed.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>암산 스피드</span></a><a href="vocab-quiz"><img class="sic" src="/icons/vocab-quiz.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>영단어 스피드 퀴즈</span></a><a href="typing"><img class="sic" src="/icons/typing.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>타자 속도 테스트</span></a><a href="sens"><img class="sic" src="/icons/sens.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>마우스 감도 변환기</span></a><a href="game2048"><img class="sic" src="/icons/game2048.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>2048 게임</span></a><a class="more" href="/#퍼즐·게임">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">퍼즐·게임 도구 더 보기</div><div class="chips"><a href="/color-find"><img class="sic" src="/icons/color-find.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>틀린 색 찾기</span></a><a href="/math-speed"><img class="sic" src="/icons/math-speed.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>암산 스피드</span></a><a href="/vocab-quiz"><img class="sic" src="/icons/vocab-quiz.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>영단어 스피드 퀴즈</span></a><a href="/typing"><img class="sic" src="/icons/typing.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>타자 속도 테스트</span></a><a href="/sens"><img class="sic" src="/icons/sens.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>마우스 감도 변환기</span></a><a href="/game2048"><img class="sic" src="/icons/game2048.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>2048 게임</span></a><a class="more" href="/#퍼즐·게임">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>단순하지만 은근히 어려운 집중력 게임</h2><p>5×6 판에 1부터 30까지 숫자가 무작위로 흩어져 있어요. 1, 2, 3… 순서대로 최대한 빨리 누르는 게 전부지만, 시선을 넓게 쓰면서 다음 숫자를 미리 찾아두는 요령이 필요해서 기록 차이가 크게 나요. 집중력·시각 탐색 훈련에 쓰이는 슐테 테이블(Schulte table)과 같은 원리예요.</p>
 <p>기록은 0.01초 단위로 재고, 게임이 끝나면 닉네임을 넣어 <b>이번 주 랭킹</b>과 <b>전체 랭킹</b>에 등록할 수 있어요. 이번 주 랭킹은 월요일마다 새로 시작되니 매주 1위에 도전해보세요. 내 최고 기록은 이 기기에 저장돼요.</p>
@@ -77,7 +77,7 @@
   <footer>기록은 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 기록이 서버에 저장돼요.<br><span class="version-tag">v1.0 · 2026-09-17 업데이트</span></footer>
 </main>
 
-<script src="leaderboard.js"></script>
+<script src="/leaderboard.js"></script>
 <script>
 const $=id=>document.getElementById(id);
 const N=30; let order=[], next=1, t0=0, raf=0, errs=0, running=false, startedAt=0;

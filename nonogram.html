@@ -23,8 +23,8 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "네모로직 (노노그램)", "url": "https://dailyfreetoolbox.com/nonogram", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "숫자 힌트로 격자를 칠해 그림을 완성하는 논리 퍼즐. 5×5부터 25×25까지, 도달 레벨로 랭킹에 등록할 수 있어요."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>
 :root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
 .top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
@@ -52,7 +52,7 @@ table.ng td.h.done{color:#a0a9b8}
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#퍼즐·게임">퍼즐·게임</a><span>›</span>네모로직 (노노그램)</nav>
@@ -74,7 +74,7 @@ table.ng td.h.done{color:#a0a9b8}
   <div id="lb"></div>
 
  <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">퍼즐·게임 도구 더 보기</div><div class="chips"><a href="water-sort"><img class="sic" src="/icons/water-sort.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>물 붓기 퍼즐</span></a><a href="block-fill"><img class="sic" src="/icons/block-fill.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>블록 채우기</span></a><a href="order"><img class="sic" src="/icons/order.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>숫자 순서 누르기</span></a><a href="color-find"><img class="sic" src="/icons/color-find.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>틀린 색 찾기</span></a><a href="math-speed"><img class="sic" src="/icons/math-speed.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>암산 스피드</span></a><a href="vocab-quiz"><img class="sic" src="/icons/vocab-quiz.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>영단어 스피드 퀴즈</span></a><a class="more" href="/#퍼즐·게임">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">퍼즐·게임 도구 더 보기</div><div class="chips"><a href="/water-sort"><img class="sic" src="/icons/water-sort.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>물 붓기 퍼즐</span></a><a href="/block-fill"><img class="sic" src="/icons/block-fill.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>블록 채우기</span></a><a href="/order"><img class="sic" src="/icons/order.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>숫자 순서 누르기</span></a><a href="/color-find"><img class="sic" src="/icons/color-find.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>틀린 색 찾기</span></a><a href="/math-speed"><img class="sic" src="/icons/math-speed.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>암산 스피드</span></a><a href="/vocab-quiz"><img class="sic" src="/icons/vocab-quiz.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>영단어 스피드 퀴즈</span></a><a class="more" href="/#퍼즐·게임">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>네모로직(노노그램), 숫자로 그림을 찾는 퍼즐</h2><p>각 줄의 숫자는 그 줄에서 <b>연속으로 칠해진 칸의 길이</b>예요. "3 1"이면 3칸 연속, 한 칸 이상 띄우고, 1칸이 칠해져 있다는 뜻. 가로·세로 힌트를 맞춰가며 칸을 채우면 그림이 완성돼요. 확실히 비어 있는 칸은 ×로 표시해 두면 헷갈리지 않아요. 한 줄의 힌트를 다 채우면 그 줄의 남은 칸에는 ×가 자동으로 들어가요.</p>
 <p><b>레벨 1은 5×5</b>, 4레벨마다 한 칸씩 커져서 <b>81레벨부터 25×25</b>예요. 그 뒤로도 25×25 새 문제가 계속 나와요. 모든 크기에 하트·고양이·에펠탑·공룡 같은 픽셀 그림 도안(160여 개, 좌우 반전 변형 포함)이 준비돼 있어서 완성하면 그림과 이름이 떠요. 같은 레벨을 다시 하면 다른 도안이 나오고, 도안을 다 쓰면 무작위 패턴이 나와요. 전부 추측 없이 논리만으로 풀리는지 검증한 문제만 나와요. 큰 판은 스크롤로 보고 +/− 버튼으로 칸 크기를 조절할 수 있어요. 진행 중인 판(칠한 칸·경과 시간)과 레벨은 이 기기에 자동 저장되니 창을 닫아도 이어서 풀 수 있고, "여기까지 하고 랭킹 등록"을 누르면 이번 판에서 직접 깬 최고 레벨로 랭킹에 올라가요.</p>
@@ -85,8 +85,8 @@ table.ng td.h.done{color:#a0a9b8}
   <footer>기록은 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 기록이 서버에 저장돼요. 이 테스트는 특정 능력을 측정·연습하는 놀이이며 의학적 검사가 아니에요.<br><span class="version-tag">v2.8 · 2026-09-19 업데이트</span></footer>
 </main>
 
-<script src="leaderboard.js"></script>
-<script src="nono-art.js"></script>
+<script src="/leaderboard.js"></script>
+<script src="/nono-art.js"></script>
 <script>
 const $=id=>document.getElementById(id);
 let level=1, N=5, grid=[], rows=[], cols=[], mode='fill', running=false, t0=0, raf=0, startedAt=0, cleared=0, best=+localStorage.getItem('nono_best')||0, zoom=0, totalMs=0;

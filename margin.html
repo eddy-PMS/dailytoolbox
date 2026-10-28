@@ -23,15 +23,15 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "마진율 계산기", "url": "https://dailyfreetoolbox.com/margin", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "원가와 판매가로 마진율을, 원가와 목표 마진율로 판매가를 계산하는 무료 도구. 마진율과 마크업(원가 대비 이익률) 차이도 함께."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "부가세는 어떻게 넣나요?", "acceptedAnswer": {"@type": "Answer", "text": "원가·판매가 모두 부가세 별도(공급가액) 기준으로 넣는 게 정확해요. 부가세 포함 판매가라면 1.1로 나눈 값을 넣으세요."}}, {"@type": "Question", "name": "원가에 뭘 포함해야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "매입가에 배송비·포장비·관세 등 상품 하나에 직접 붙는 비용을 더한 게 원가예요. 임대료·인건비는 고정비로 따로 봐요."}}, {"@type": "Question", "name": "손익분기점은 어떻게 구하나요?", "acceptedAnswer": {"@type": "Answer", "text": "고정비 ÷ 개당 이익이 손익분기 판매 수량이에요. 월 고정비 300만원, 개당 이익 3,000원이면 1,000개예요."}}]}</script>
 </head>
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#돈·일">돈·일</a><span>›</span>마진율 계산기</nav>
@@ -50,7 +50,7 @@
     <div id="out" style="margin-top:14px"></div>
   </div>
  <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">돈·일 도구 더 보기</div><div class="chips"><a href="platform-fee"><img class="sic" src="/icons/platform-fee.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>카드·배달앱 수수료</span></a><a href="breakeven"><img class="sic" src="/icons/breakeven.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>손익분기점 계산기</span></a><a href="roas"><img class="sic" src="/icons/roas.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>ROAS 계산기</span></a><a href="cac-ltv"><img class="sic" src="/icons/cac-ltv.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>CAC·LTV 계산기</span></a><a href="worktime"><img class="sic" src="/icons/worktime.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>근무시간·야근 계산기</span></a><a href="utm"><img class="sic" src="/icons/utm.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>UTM 생성기</span></a><a class="more" href="/#돈·일">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">돈·일 도구 더 보기</div><div class="chips"><a href="/platform-fee"><img class="sic" src="/icons/platform-fee.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>카드·배달앱 수수료</span></a><a href="/breakeven"><img class="sic" src="/icons/breakeven.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>손익분기점 계산기</span></a><a href="/roas"><img class="sic" src="/icons/roas.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>ROAS 계산기</span></a><a href="/cac-ltv"><img class="sic" src="/icons/cac-ltv.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>CAC·LTV 계산기</span></a><a href="/worktime"><img class="sic" src="/icons/worktime.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>근무시간·야근 계산기</span></a><a href="/utm"><img class="sic" src="/icons/utm.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>UTM 생성기</span></a><a class="more" href="/#돈·일">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>마진율과 마크업, 헷갈리지 마세요</h2><p>"마진 30%"라는 말은 기준이 판매가인지 원가인지에 따라 뜻이 달라요. 마진율(margin)은 이익 ÷ 판매가, 마크업(markup)은 이익 ÷ 원가예요. 원가 7,000원짜리를 10,000원에 팔면 이익 3,000원으로 마진율 30%, 마크업 42.9%예요. 거래처와 "마진 30%"를 이야기할 때 기준을 확인하지 않으면 판매가가 900원 차이 나요.</p><p>목표 마진율로 판매가를 정할 때는 원가 ÷ (1 − 마진율)이에요. 원가 7,000원에 마진율 30%면 7,000 ÷ 0.7 = 10,000원. 여기에 카드수수료·플랫폼수수료처럼 판매가에 비례하는 비용이 있으면 그 비율도 함께 빼줘야 실제 마진이 맞아요.</p>
 <h2>업종별 일반적인 마진율 (참고)</h2><p><table><thead><tr><th>업종</th><th class="r">마진율</th></tr></thead><tbody><tr><td>편의점·마트 (식품)</td><td class="r">20~30%</td></tr><tr><td>의류·잡화 소매</td><td class="r">40~60%</td></tr><tr><td>음식점 (식재료 원가 기준)</td><td class="r">60~70% (원가율 30~40%)</td></tr><tr><td>온라인 쇼핑몰</td><td class="r">20~40% (수수료 차감 전)</td></tr><tr><td>카페 (음료)</td><td class="r">70~80%</td></tr></tbody></table></p><p>마진율이 높아 보여도 임대료·인건비·수수료를 빼면 순이익은 매출의 10% 안팎인 경우가 많아요.</p>

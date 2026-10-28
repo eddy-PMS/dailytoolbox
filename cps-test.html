@@ -23,8 +23,8 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "CPS 테스트", "url": "https://dailyfreetoolbox.com/cps-test", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "정해진 시간 동안 누른 횟수로 초당 클릭 수(CPS)를 재는 무료 CPS 테스트. 1초·5초·10초 가운데 골라 마우스 클릭 속도를 측정하고 내 최고 기록과 비교해 보세요."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>
 :root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
 #pad { height:280px; border-radius:6px; display:flex; flex-direction:column; align-items:center; justify-content:center; cursor:pointer; user-select:none; -webkit-user-select:none; touch-action:manipulation; background:var(--accent); color:#fff; font-size:22px; font-weight:700; text-align:center; padding:20px; line-height:1.5; }
@@ -36,7 +36,7 @@
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#두뇌·감각 훈련">두뇌·감각 훈련</a><span>›</span>CPS 테스트</nav>
@@ -50,7 +50,7 @@
 
   <div id="lb"></div>
   <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">두뇌·감각 훈련 도구 더 보기</div><div class="chips"><a href="reaction"><img class="sic" src="/icons/reaction.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>반응속도 테스트</span></a><a href="aim-test"><img class="sic" src="/icons/aim-test.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>에임 테스트</span></a><a href="sens"><img class="sic" src="/icons/sens.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>마우스 감도 변환기</span></a><a href="typing"><img class="sic" src="/icons/typing.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>타자 속도 테스트</span></a><a href="order"><img class="sic" src="/icons/order.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>숫자 순서 누르기</span></a><a href="color-find"><img class="sic" src="/icons/color-find.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>틀린 색 찾기</span></a><a class="more" href="/#두뇌·감각 훈련">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">두뇌·감각 훈련 도구 더 보기</div><div class="chips"><a href="/reaction"><img class="sic" src="/icons/reaction.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>반응속도 테스트</span></a><a href="/aim-test"><img class="sic" src="/icons/aim-test.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>에임 테스트</span></a><a href="/sens"><img class="sic" src="/icons/sens.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>마우스 감도 변환기</span></a><a href="/typing"><img class="sic" src="/icons/typing.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>타자 속도 테스트</span></a><a href="/order"><img class="sic" src="/icons/order.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>숫자 순서 누르기</span></a><a href="/color-find"><img class="sic" src="/icons/color-find.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>틀린 색 찾기</span></a><a class="more" href="/#두뇌·감각 훈련">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>CPS란 — 초당 클릭 수 계산</h2><p>CPS는 Clicks Per Second, 곧 1초에 누른 횟수예요. 계산은 단순합니다.</p><p><strong>CPS = 누른 횟수 ÷ 잰 시간(초)</strong></p><p>5초 동안 34번 눌렀다면 34 ÷ 5 = 6.8 CPS이고, 10초 동안 70번이면 7.0 CPS예요. 이 테스트는 첫 클릭을 한 순간부터 시간을 재고, 정해진 시간이 지나면 자동으로 멈춥니다.</p>
 <h2>마우스 클릭 테스트 — 1초·5초·10초의 차이</h2><p>같은 사람이라도 재는 시간에 따라 값이 달라져요. 1초는 순간 속도에 가까워 값이 가장 높게 나오기 쉽고, 한두 번의 차이로도 결과가 크게 바뀝니다. 5초와 10초는 속도를 유지하는 힘까지 반영돼서 값이 조금 낮아지는 대신 더 일정해요. 기록을 비교할 때는 같은 시간으로 잰 것끼리 비교하세요. 랭킹은 10초 기록으로만 받습니다.</p>
@@ -63,7 +63,7 @@
   <footer>측정값은 마우스·브라우저 상태에 따라 달라질 수 있어요. 최고 기록은 이 기기에만 저장되고, 랭킹에 등록할 때만 닉네임과 기록이 서버에 저장돼요.<br><span class="version-tag">v1.0 · 2026-10-07 업데이트</span></footer>
 </main>
 
-<script src="leaderboard.js"></script>
+<script src="/leaderboard.js"></script>
 <script>
 
 const $=id=>document.getElementById(id);

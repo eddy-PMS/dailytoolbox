@@ -23,8 +23,8 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "참기 게임", "url": "https://dailyfreetoolbox.com/gonogo", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "초록 신호엔 빨리 누르고 빨간 신호엔 참는 Go/No-Go 게임. 성공 수로 랭킹에 등록할 수 있어요."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>
 :root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
 .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
@@ -46,7 +46,7 @@
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#두뇌·감각 훈련">두뇌·감각 훈련</a><span>›</span>참기 게임 (Go/No-Go)</nav>
@@ -66,7 +66,7 @@
   <div id="lb"></div>
 
  <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">두뇌·감각 훈련 도구 더 보기</div><div class="chips"><a href="reaction"><img class="sic" src="/icons/reaction.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>반응속도 테스트</span></a><a href="digit-span"><img class="sic" src="/icons/digit-span.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>숫자 외우기</span></a><a href="periph"><img class="sic" src="/icons/periph.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>주변시 숫자 읽기</span></a><a href="mot"><img class="sic" src="/icons/mot.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>점 추적 (MOT)</span></a><a href="reverse"><img class="sic" src="/icons/reverse.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>반대로 누르기</span></a><a class="more" href="/#두뇌·감각 훈련">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">두뇌·감각 훈련 도구 더 보기</div><div class="chips"><a href="/reaction"><img class="sic" src="/icons/reaction.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>반응속도 테스트</span></a><a href="/digit-span"><img class="sic" src="/icons/digit-span.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>숫자 외우기</span></a><a href="/periph"><img class="sic" src="/icons/periph.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>주변시 숫자 읽기</span></a><a href="/mot"><img class="sic" src="/icons/mot.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>점 추적 (MOT)</span></a><a href="/reverse"><img class="sic" src="/icons/reverse.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>반대로 누르기</span></a><a class="more" href="/#두뇌·감각 훈련">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>참기 게임(Go/No-Go), 손이 먼저 나가는 걸 막는 훈련</h2><p>초록 원이 뜨면 최대한 빨리 누르고, 빨간 원이 뜨면 아무것도 하지 않고 참아요. 초록이 대부분이라 몸은 "뜨면 누른다"에 익숙해지는데, 그 사이 끼어드는 빨강에 손이 나가면 실패예요. 초록을 제한 시간 안에 못 눌러도 실패. 심리학에서 충동 억제를 재는 대표 과제(Go/No-Go)이고, 상대의 속임 동작에 반응하지 않고 참는 능력, 신호를 보고 멈추는 능력과 연결돼요.</p>
 <p>진행할수록 신호가 뜨는 간격이 짧아지고 초록에 반응할 수 있는 시간도 줄어요. 목숨 3개를 다 쓰면 끝. 초록 성공 수로 랭킹에 등록하고 평균 반응 시간도 함께 표시돼요.</p>
@@ -77,7 +77,7 @@
   <footer>기록은 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 기록이 서버에 저장돼요. 이 테스트는 특정 능력을 측정·연습하는 놀이이며 의학적 검사가 아니에요.<br><span class="version-tag">v1.0 · 2026-09-17 업데이트</span></footer>
 </main>
 
-<script src="leaderboard.js"></script>
+<script src="/leaderboard.js"></script>
 <script>
 const $=id=>document.getElementById(id);
 let score=0, lives=3, rts=[], running=false, startedAt=0, raf=0, tmo=0, phase='idle', sigAt=0, isGo=false, trial=0;

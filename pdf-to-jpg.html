@@ -24,8 +24,8 @@
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "PDF JPG 변환", "url": "https://dailyfreetoolbox.com/pdf-to-jpg", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "PDF 페이지를 JPG·PNG 이미지로 바꾸는 무료 PDF 이미지 변환 도구. 화질과 페이지 범위를 고를 수 있고, 업로드 없이 브라우저에서 바로 변환해요."}
 </script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "PDF 파일이 서버로 올라가나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 변환은 전부 브라우저 안에서 이루어지고 파일이 밖으로 나가지 않아요. 인터넷이 끊겨도 페이지를 열어둔 상태라면 변환됩니다."}}, {"@type": "Question", "name": "JPG와 PNG 중 뭘 고르면 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "사진이 많은 문서는 JPG가 용량이 훨씬 작아요. 글자와 표, 도면처럼 선이 또렷해야 하는 문서는 PNG가 깔끔합니다."}}, {"@type": "Question", "name": "글자가 흐릿하게 나와요.", "acceptedAnswer": {"@type": "Answer", "text": "화질을 높음이나 최고로 올리면 또렷해져요. 대신 이미지 크기와 용량이 함께 커집니다."}}, {"@type": "Question", "name": "암호가 걸린 PDF도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "열기 암호가 걸린 PDF는 읽지 못해요. 암호를 푼 뒤에 올려주세요."}}]}</script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
 .drop{border:2px dashed var(--line);border-radius:3px;padding:26px;text-align:center;color:var(--ink-soft);font-size:14px;cursor:pointer;background:#fff}
 .drop.over{border-color:var(--accent);background:var(--paper-deep)}
@@ -41,7 +41,7 @@
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#계산·생활">계산·생활</a><span>›</span>PDF JPG 변환</nav>
@@ -63,7 +63,7 @@
     <div class="thumbs" id="thumbs"></div>
   </div>
  <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="pdf-merge"><img class="sic" src="/icons/pdf-merge.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>PDF 합치기</span></a><a href="pdf-split"><img class="sic" src="/icons/pdf-split.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>PDF 분할하기</span></a><a href="image-to-pdf"><img class="sic" src="/icons/image-to-pdf.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>이미지 PDF 변환</span></a><a href="image-compress"><img class="sic" src="/icons/image-compress.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>이미지 용량 줄이기</span></a><a href="qrcode"><img class="sic" src="/icons/qrcode.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>QR코드 만들기</span></a><a href="charcount"><img class="sic" src="/icons/charcount.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>글자수 세기</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="/pdf-merge"><img class="sic" src="/icons/pdf-merge.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>PDF 합치기</span></a><a href="/pdf-split"><img class="sic" src="/icons/pdf-split.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>PDF 분할하기</span></a><a href="/image-to-pdf"><img class="sic" src="/icons/image-to-pdf.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>이미지 PDF 변환</span></a><a href="/image-compress"><img class="sic" src="/icons/image-compress.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>이미지 용량 줄이기</span></a><a href="/qrcode"><img class="sic" src="/icons/qrcode.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>QR코드 만들기</span></a><a href="/charcount"><img class="sic" src="/icons/charcount.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>글자수 세기</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
 <!-- guides:tool:start -->
 <div class="guides-rel"><div class="lb"><img src="/icons/ui-guide.webp" width="22" height="22" alt="">관련 가이드</div><a href="/guide/reduce-photo-size"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">사진 용량 줄이기 — 화질은 지키고 크기만 줄이는 방법</span><span class="go">›</span></a><a href="/guide/pdf-tools-guide"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">PDF 합치기·나누기·이미지 변환 — 설치 없이 브라우저에서</span><span class="go">›</span></a></div>
 <!-- guides:tool:end -->

@@ -23,8 +23,8 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "주변시 테스트", "url": "https://dailyfreetoolbox.com/periph", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "가운데 점을 보면서 가장자리에 잠깐 나타나는 숫자를 읽는 주변 시야 테스트. 도달 단계로 랭킹에 등록할 수 있어요."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>
 :root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
 .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
@@ -48,7 +48,7 @@
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#두뇌·감각 훈련">두뇌·감각 훈련</a><span>›</span>주변시 숫자 읽기</nav>
@@ -70,7 +70,7 @@
   <div id="lb"></div>
 
  <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">두뇌·감각 훈련 도구 더 보기</div><div class="chips"><a href="mot"><img class="sic" src="/icons/mot.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>점 추적 (MOT)</span></a><a href="reverse"><img class="sic" src="/icons/reverse.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>반대로 누르기</span></a><a href="gonogo"><img class="sic" src="/icons/gonogo.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>참기 게임 (Go/No-Go)</span></a><a href="reaction"><img class="sic" src="/icons/reaction.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>반응속도 테스트</span></a><a href="digit-span"><img class="sic" src="/icons/digit-span.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>숫자 외우기</span></a><a class="more" href="/#두뇌·감각 훈련">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">두뇌·감각 훈련 도구 더 보기</div><div class="chips"><a href="/mot"><img class="sic" src="/icons/mot.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>점 추적 (MOT)</span></a><a href="/reverse"><img class="sic" src="/icons/reverse.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>반대로 누르기</span></a><a href="/gonogo"><img class="sic" src="/icons/gonogo.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>참기 게임 (Go/No-Go)</span></a><a href="/reaction"><img class="sic" src="/icons/reaction.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>반응속도 테스트</span></a><a href="/digit-span"><img class="sic" src="/icons/digit-span.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>숫자 외우기</span></a><a class="more" href="/#두뇌·감각 훈련">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>주변시, 공을 보면서 옆 수비수를 읽는 능력</h2><p>가운데 점에 시선을 고정한 채 가장자리에 아주 잠깐 나타나는 두 자리 숫자를 읽어요. 단계가 오르면 숫자는 더 멀리, 더 짧게(400ms→150ms) 나타나요. 눈을 굴려서 보면 늦기 때문에 시선은 중앙에 두고 주변 시야로 읽는 연습이 돼요. 축구·농구처럼 공을 보면서 주변 선수 위치를 파악해야 하는 운동, 속독, 운전 같은 상황에서 쓰이는 시야예요.</p>
 <p>목숨은 3개예요. 틀리거나 못 읽으면 하나 줄고, 다 쓰면 끝. 도달 단계로 랭킹에 등록해요. 같은 화면·같은 거리에서 재야 비교가 돼요.</p>
@@ -81,7 +81,7 @@
   <footer>기록은 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 기록이 서버에 저장돼요. 이 테스트는 특정 능력을 측정·연습하는 놀이이며 의학적 검사가 아니에요.<br><span class="version-tag">v1.0 · 2026-09-17 업데이트</span></footer>
 </main>
 
-<script src="leaderboard.js"></script>
+<script src="/leaderboard.js"></script>
 <script>
 const $=id=>document.getElementById(id);
 let level=1, lives=3, cur='', entry='', phase='idle', running=false, startedAt=0, raf=0, tmo=0;

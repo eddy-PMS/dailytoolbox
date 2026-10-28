@@ -23,15 +23,15 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "내신 등급 계산기", "url": "https://dailyfreetoolbox.com/school-grade", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "과목 석차와 재적 인원, 또는 원점수·평균·표준편차로 내신 등급(9등급제·2025 고1부터 5등급제)을 계산하는 무료 도구."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "200명 중 몇 등까지 1등급인가요?", "acceptedAnswer": {"@type": "Answer", "text": "9등급제는 8등(4%), 5등급제는 20등(10%)까지예요. 계산기 표에서 인원 기준 석차 범위를 볼 수 있어요."}}, {"@type": "Question", "name": "동석차가 많으면 불리한가요?", "acceptedAnswer": {"@type": "Answer", "text": "동점자는 모두 같은 석차로 적어요(1등이 5명이면 1(5)). 동점자 무리가 한 등급 안에 있으면 그 등급을 그대로 받고, 등급 경계에 걸칠 때만 중간석차(석차 + (동석차 수 − 1) ÷ 2)의 백분율로 등급을 매겨요. 그래서 만점자가 많은 과목은 1등급이 없을 수도 있어요(2026학년도 학교생활기록부 기재요령)."}}, {"@type": "Question", "name": "진로선택 과목도 등급이 나오나요?", "acceptedAnswer": {"@type": "Answer", "text": "9등급제(2024년 이전 입학생)에서는 진로선택 과목에 석차등급 없이 성취도(A·B·C)만 적어요. 5등급제(2025년 고1부터)에서는 진로선택을 포함한 선택 과목도 성취도(A~E)와 석차등급을 함께 적고, 사회·과학 융합선택 9과목과 체육·예술·교양 과목에만 석차등급이 없어요(2026학년도 학교생활기록부 기재요령)."}}]}</script>
 </head>
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#공부·어학">공부·어학</a><span>›</span>내신 등급 계산기</nav>
@@ -55,7 +55,7 @@
     <div id="out" style="margin-top:14px"></div>
   </div>
  <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">공부·어학 도구 더 보기</div><div class="chips"><a href="pomodoro"><img class="sic" src="/icons/pomodoro.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>뽀모도로 타이머</span></a><a href="ipa"><img class="sic" src="/icons/ipa.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>IPA 발음 변환</span></a><a href="sentence"><img class="sic" src="/icons/sentence.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>문장 구조 분석</span></a><a href="level-test"><img class="sic" src="/icons/level-test.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>영어 레벨 테스트</span></a><a href="readability"><img class="sic" src="/icons/readability.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>지문 난이도 체커</span></a><a href="etymology"><img class="sic" src="/icons/etymology.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>어원 분석기</span></a><a class="more" href="/#공부·어학">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">공부·어학 도구 더 보기</div><div class="chips"><a href="/pomodoro"><img class="sic" src="/icons/pomodoro.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>뽀모도로 타이머</span></a><a href="/ipa"><img class="sic" src="/icons/ipa.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>IPA 발음 변환</span></a><a href="/sentence"><img class="sic" src="/icons/sentence.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>문장 구조 분석</span></a><a href="/level-test"><img class="sic" src="/icons/level-test.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>영어 레벨 테스트</span></a><a href="/readability"><img class="sic" src="/icons/readability.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>지문 난이도 체커</span></a><a href="/etymology"><img class="sic" src="/icons/etymology.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>어원 분석기</span></a><a class="more" href="/#공부·어학">전체 보기 →</a></div></div>
 <!-- guides:tool:start -->
 <div class="guides-rel"><div class="lb"><img src="/icons/ui-guide.webp" width="22" height="22" alt="">관련 가이드</div><a href="/guide/gpa-conversion"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">GPA 환산·학점 환산법 — 4.5 만점과 4.3 만점, 백분위 100점까지</span><span class="go">›</span></a><a href="/guide/korean-age-rules"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">만 나이 계산법과 아직 연 나이를 쓰는 곳 — 술·담배, 입학, 병역 기준 정리</span><span class="go">›</span></a></div>
 <!-- guides:tool:end -->

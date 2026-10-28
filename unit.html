@@ -23,15 +23,15 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "단위 변환기", "url": "https://dailyfreetoolbox.com/unit", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "길이·넓이·무게·부피·온도·속도 단위를 입력하는 즉시 바꾸는 무료 단위 변환기. 인치↔cm, 파운드↔kg, 화씨↔섭씨, 평↔㎡까지 모든 단위로 한 번에 환산해요."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "1평은 몇 ㎡인가요?", "acceptedAnswer": {"@type": "Answer", "text": "1평 = 3.305785㎡예요. 거꾸로 1㎡는 약 0.3025평이에요. 10평은 33.06㎡, 34평은 112.4㎡입니다."}}, {"@type": "Question", "name": "평 계산이 사이트마다 조금씩 다른 이유가 뭔가요?", "acceptedAnswer": {"@type": "Answer", "text": "어디까지 반올림한 값을 쓰는지가 달라요. 1평은 정확히 400/121㎡라서 끝나지 않는 소수(3.30578512…)예요. 3.3으로 줄여 쓰면 평수가 커질수록 차이가 벌어지고, 3.3058을 쓰면 거의 같아집니다. 국가기술표준원도 \"1평 ≒ 3.3058㎡\"로 안내하고 있어요(확인일 2026-10-04). 이 계산기는 3.305785을 씁니다. 참고로 넓이의 법정단위는 ㎡이고 평은 비법정단위예요."}}, {"@type": "Question", "name": "인치를 cm로 바꾸는 방법은요?", "acceptedAnswer": {"@type": "Answer", "text": "1인치 = 2.54cm예요. 인치 × 2.54 = cm, cm ÷ 2.54 = 인치입니다. 15인치는 38.1cm, 27인치는 68.58cm예요. 모니터·TV의 인치는 화면 대각선 길이라서 가로 길이와는 다릅니다."}}, {"@type": "Question", "name": "파운드를 kg으로 바꾸면 얼마인가요?", "acceptedAnswer": {"@type": "Answer", "text": "1파운드(lb) = 0.45359237kg이에요. 10파운드는 4.535924kg, 반대로 70kg은 약 154.32파운드입니다."}}, {"@type": "Question", "name": "화씨와 섭씨는 어떻게 바꾸나요?", "acceptedAnswer": {"@type": "Answer", "text": "℃ = (℉ − 32) × 5/9, ℉ = ℃ × 9/5 + 32 예요. 68℉가 20℃, 86℉가 30℃입니다. 사람 체온 36.5℃는 97.7℉예요."}}, {"@type": "Question", "name": "소수점이 왜 여섯째 자리까지 나오나요?", "acceptedAnswer": {"@type": "Answer", "text": "이 계산기는 소수점 여섯째 자리까지 보여주고, 값이 100만을 넘거나 아주 작으면 지수 표기로 바꿔요. ㎡를 평으로 바꾸는 것처럼 나누어떨어지지 않는 계산은 맨 뒷자리가 1 차이로 흔들릴 수 있어요. 등기부나 계약서처럼 정확한 값이 필요한 곳에는 서류에 적힌 ㎡ 숫자를 그대로 쓰세요."}}]}</script>
 </head>
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#계산·생활">계산·생활</a><span>›</span>단위 변환기</nav>
@@ -45,7 +45,7 @@
     <table style="margin-top:14px"><tbody id="out"></tbody></table>
   </div>
  <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="exchange"><img class="sic" src="/icons/exchange.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>환율 계산기</span></a><a href="rent"><img class="sic" src="/icons/rent.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>전월세·중개수수료</span></a><a href="lotto"><img class="sic" src="/icons/lotto.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>로또 번호 생성기</span></a><a href="password"><img class="sic" src="/icons/password.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>비밀번호 생성기</span></a><a href="percent"><img class="sic" src="/icons/percent.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>퍼센트 계산기</span></a><a href="discount"><img class="sic" src="/icons/discount.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>할인율 계산기</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="/exchange"><img class="sic" src="/icons/exchange.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>환율 계산기</span></a><a href="/rent"><img class="sic" src="/icons/rent.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>전월세·중개수수료</span></a><a href="/lotto"><img class="sic" src="/icons/lotto.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>로또 번호 생성기</span></a><a href="/password"><img class="sic" src="/icons/password.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>비밀번호 생성기</span></a><a href="/percent"><img class="sic" src="/icons/percent.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>퍼센트 계산기</span></a><a href="/discount"><img class="sic" src="/icons/discount.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>할인율 계산기</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
 <!-- guides:tool:start -->
 <div class="guides-rel"><div class="lb"><img src="/icons/ui-guide.webp" width="22" height="22" alt="">관련 가이드</div><a href="/guide/exchange-fee-guide"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">환전 수수료와 해외 카드 결제 — 원화로 결제하면 손해 보는 이유</span><span class="go">›</span></a><a href="/guide/pyeong-square-meter"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">평과 ㎡ 환산법 — 전용면적 공급면적 차이, 84㎡가 34평인 이유</span><span class="go">›</span></a></div>
 <!-- guides:tool:end -->

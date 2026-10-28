@@ -23,15 +23,15 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "글자수 세기", "url": "https://dailyfreetoolbox.com/charcount", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "자소서·보고서 글자수를 공백 포함·제외로 세는 무료 글자수 계산기. 바이트 계산, 영어 단어수 세기, 원고지 매수까지 입력하는 대로 바로 보여줘요."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "공백 포함과 공백 제외 중 뭐가 기준인가요?", "acceptedAnswer": {"@type": "Answer", "text": "제출처 안내문을 따르는 게 원칙이고, 명시가 없으면 대부분 공백 포함이 기준이에요. 한글 문서(HWP)의 \"문서 정보\"도 공백 포함 글자 수를 기본으로 보여줍니다."}}, {"@type": "Question", "name": "줄바꿈도 글자로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "기준에 따라 달라요. 이 도구는 세 가지를 같이 보여줍니다. 공백 포함은 띄어쓰기와 줄바꿈을 모두 세고, 공백 제외는 둘 다 빼요. 줄바꿈만 제외는 띄어쓰기는 세고 줄바꿈만 뺀 값이라, \"공백 포함이지만 줄바꿈은 빼고 세는\" 양식에 맞출 때 보면 됩니다."}}, {"@type": "Question", "name": "바이트는 어떤 기준으로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "UTF-8(한글 3바이트, 영문·숫자 1바이트)과 EUC-KR(한글 2바이트) 두 가지를 모두 계산해요. 오래된 채용 시스템은 EUC-KR 기준이 많습니다."}}, {"@type": "Question", "name": "입력한 글이 저장되나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 모든 계산은 브라우저 안에서만 이루어지고 어디에도 전송되지 않아요."}}, {"@type": "Question", "name": "영어 단어 수는 어떤 기준으로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "띄어쓰기를 기준으로 셉니다. 공백·탭·줄바꿈으로 나뉜 덩어리 하나가 한 단어예요. don't나 well-known처럼 붙어 있으면 한 단어로 셉니다. 제출처가 하이픈을 두 단어로 보는 곳이라면 숫자가 다를 수 있으니 안내문을 확인하세요."}}, {"@type": "Question", "name": "이모지는 몇 글자로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "😀처럼 하나짜리 이모지는 1자, UTF-8로는 4바이트예요. 👨‍👩‍👧처럼 여러 그림이 이어 붙은 이모지는 눈에는 하나로 보여도 5자로 세어지고 18바이트가 됩니다. 글자 수가 빠듯하면 빼는 편이 안전해요."}}]}</script>
 </head>
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#계산·생활">계산·생활</a><span>›</span>글자수 세기</nav>
@@ -51,7 +51,7 @@
   <div class="stat-grid" id="stats"></div>
   <div class="card" style="margin-top:16px"><h2>바이트 수</h2><table><tbody id="bytes"></tbody></table><div class="note">UTF-8은 한글 3바이트, EUC-KR은 한글 2바이트로 셉니다. 채용 사이트마다 기준이 달라 "바이트" 제한이면 어느 기준인지 확인하세요.</div></div>
  <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="image-compress"><img class="sic" src="/icons/image-compress.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>이미지 용량 줄이기</span></a><a href="qrcode"><img class="sic" src="/icons/qrcode.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>QR코드 만들기</span></a><a href="myip"><img class="sic" src="/icons/myip.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>내 IP 주소 확인</span></a><a href="ipgeo"><img class="sic" src="/icons/ipgeo.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>IP 위치 조회</span></a><a href="unit"><img class="sic" src="/icons/unit.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>단위 변환기</span></a><a href="exchange"><img class="sic" src="/icons/exchange.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>환율 계산기</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="/image-compress"><img class="sic" src="/icons/image-compress.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>이미지 용량 줄이기</span></a><a href="/qrcode"><img class="sic" src="/icons/qrcode.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>QR코드 만들기</span></a><a href="/myip"><img class="sic" src="/icons/myip.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>내 IP 주소 확인</span></a><a href="/ipgeo"><img class="sic" src="/icons/ipgeo.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>IP 위치 조회</span></a><a href="/unit"><img class="sic" src="/icons/unit.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>단위 변환기</span></a><a href="/exchange"><img class="sic" src="/icons/exchange.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>환율 계산기</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
 <!-- guides:tool:start -->
 <div class="guides-rel"><div class="lb"><img src="/icons/ui-guide.webp" width="22" height="22" alt="">관련 가이드</div><a href="/guide/self-intro-char-count"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">자기소개서 글자수 세는 법 — 공백 포함이 기본인 이유</span><span class="go">›</span></a></div>
 <!-- guides:tool:end -->

@@ -23,8 +23,8 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "병사 월급 계산기", "url": "https://dailyfreetoolbox.com/soldier-pay", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "2026년 이병·일병·상병·병장 월급 표와, 입대일을 넣으면 계급별로 받는 달 수와 전역까지 받는 월급 총액을 계산해 주는 무료 병사 월급 계산기. 육군·해군·공군·해병대 복무 기간 반영."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>
 :root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
 .card input, .card select { font-size:16px; }
@@ -36,7 +36,7 @@
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#계산·생활">계산·생활</a><span>›</span>병사 월급 계산기</nav>
@@ -54,7 +54,7 @@
   </div>
   <div id="out"></div>
   <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="discharge"><img class="sic" src="/icons/discharge.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>전역일 계산기</span></a><a href="military-savings"><img class="sic" src="/icons/military-savings.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>군적금 계산기</span></a><a href="youth-savings"><img class="sic" src="/icons/youth-savings.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>청년미래적금 계산기</span></a><a href="salary"><img class="sic" src="/icons/salary.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>연봉 실수령액</span></a><a href="age"><img class="sic" src="/icons/age.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>만 나이 계산기</span></a><a href="dday"><img class="sic" src="/icons/dday.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>D-day·날짜 계산</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="/discharge"><img class="sic" src="/icons/discharge.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>전역일 계산기</span></a><a href="/military-savings"><img class="sic" src="/icons/military-savings.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>군적금 계산기</span></a><a href="/youth-savings"><img class="sic" src="/icons/youth-savings.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>청년미래적금 계산기</span></a><a href="/salary"><img class="sic" src="/icons/salary.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>연봉 실수령액</span></a><a href="/age"><img class="sic" src="/icons/age.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>만 나이 계산기</span></a><a href="/dday"><img class="sic" src="/icons/dday.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>D-day·날짜 계산</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>2026 군인 월급 — 이병·일병·상병·병장</h2><p>2026년 병사 월급은 이병 75만원, 일병 90만원, 상병 120만원, 병장 150만원이에요. 공무원보수규정 별표 13 「군인의 봉급표」(2026년 1월 2일 개정)에 이등병 750,000원, 일등병 900,000원, 상등병 1,200,000원, 병장 1,500,000원으로 적혀 있습니다. 육군·해군·공군·해병대가 모두 같은 금액을 받아요.</p><p>이 페이지의 월급은 봉급만 적은 값이에요. 장병내일준비적금에 붙는 정부 매칭지원금은 전역할 때 한꺼번에 받는 돈이라 월급에 더하지 않았습니다.</p>
 <h2>병장 월급·상병 월급을 받는 기간</h2><p>진급에 필요한 최소 복무 기간은 이병 2개월, 일병 6개월, 상병 6개월이에요. 그래서 입대 후 2개월이 지나면 일병, 8개월이 지나면 상병, 14개월이 지나면 병장이 됩니다. 병장으로 지내는 기간은 복무 기간에 따라 달라요.</p><div class="tw"><table id="t-rank"><thead><tr><th>계급</th><th class="r">월급</th><th class="r">받는 기간</th><th class="r">소계</th></tr></thead><tbody><tr><td>이병 월급</td><td class="r">75만원</td><td class="r">2개월</td><td class="r">150만원</td></tr><tr><td>일병 월급</td><td class="r">90만원</td><td class="r">6개월</td><td class="r">540만원</td></tr><tr><td>상병 월급</td><td class="r">120만원</td><td class="r">6개월</td><td class="r">720만원</td></tr><tr><td>병장 월급</td><td class="r">150만원</td><td class="r">육군 4개월</td><td class="r">600만원</td></tr></tbody></table></div><p>위 계산기에 입대일을 넣으면 계급이 바뀌는 날짜까지 함께 보여 줘요. 진급일을 세는 방식은 <a href="/discharge">전역일 계산기</a>와 같습니다. 실제 진급은 부대 사정이나 심사 결과에 따라 늦어질 수 있어요.</p>

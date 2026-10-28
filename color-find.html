@@ -23,8 +23,8 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "틀린 색 찾기 게임", "url": "https://dailyfreetoolbox.com/color-find", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "같은 색 타일 중 살짝 다른 하나를 찾는 집중력 게임. 60초 동안 도달한 단계로 랭킹에 등록할 수 있어요."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>
 :root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
 .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
@@ -42,7 +42,7 @@
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#퍼즐·게임">퍼즐·게임</a><span>›</span>틀린 색 찾기</nav>
@@ -63,7 +63,7 @@
   <div id="lb"></div>
 
  <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">퍼즐·게임 도구 더 보기</div><div class="chips"><a href="math-speed"><img class="sic" src="/icons/math-speed.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>암산 스피드</span></a><a href="vocab-quiz"><img class="sic" src="/icons/vocab-quiz.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>영단어 스피드 퀴즈</span></a><a href="typing"><img class="sic" src="/icons/typing.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>타자 속도 테스트</span></a><a href="sens"><img class="sic" src="/icons/sens.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>마우스 감도 변환기</span></a><a href="game2048"><img class="sic" src="/icons/game2048.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>2048 게임</span></a><a href="nonogram"><img class="sic" src="/icons/nonogram.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>네모로직 (노노그램)</span></a><a class="more" href="/#퍼즐·게임">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">퍼즐·게임 도구 더 보기</div><div class="chips"><a href="/math-speed"><img class="sic" src="/icons/math-speed.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>암산 스피드</span></a><a href="/vocab-quiz"><img class="sic" src="/icons/vocab-quiz.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>영단어 스피드 퀴즈</span></a><a href="/typing"><img class="sic" src="/icons/typing.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>타자 속도 테스트</span></a><a href="/sens"><img class="sic" src="/icons/sens.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>마우스 감도 변환기</span></a><a href="/game2048"><img class="sic" src="/icons/game2048.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>2048 게임</span></a><a href="/nonogram"><img class="sic" src="/icons/nonogram.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>네모로직 (노노그램)</span></a><a class="more" href="/#퍼즐·게임">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>눈이 좋은 게 아니라 집중력이 좋은 겁니다</h2><p>같은 색 타일 사이에 딱 하나, 아주 살짝 밝기가 다른 타일이 숨어 있어요. 찾아서 누르면 다음 단계로 넘어가고, 단계가 오를수록 타일이 많아지고 색 차이는 줄어들어요. 제한 시간은 60초, 잘못 누르면 2초가 깎여요. 처음엔 누구나 찾지만 20단계를 넘기면 화면을 노려봐야 하고, 30단계쯤 되면 모니터 밝기까지 신경 쓰이기 시작해요.</p>
 <p>단계마다 색상(빨강·초록·파랑·보라…)이 무작위로 바뀌고, 다른 타일은 명도만 살짝 달라요. 그래서 색상 구분보다는 미세한 밝기 차이를 알아채는 감각과 화면 전체를 훑는 집중력이 기록을 좌우해요. 시간이 끝나면 도달 단계로 <b>이번 주 랭킹</b>과 <b>전체 랭킹</b>에 등록할 수 있어요.</p>
@@ -74,7 +74,7 @@
   <footer>기록은 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 기록이 서버에 저장돼요.<br><span class="version-tag">v1.0 · 2026-09-17 업데이트</span></footer>
 </main>
 
-<script src="leaderboard.js"></script>
+<script src="/leaderboard.js"></script>
 <script>
 const $=id=>document.getElementById(id);
 const TOTAL=60000; let level=1, endAt=0, raf=0, running=false, startedAt=0, oddIdx=-1;

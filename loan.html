@@ -23,15 +23,15 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "대출 이자 계산기", "url": "https://dailyfreetoolbox.com/loan", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "대출 원금·금리·기간을 입력하면 상환 방식별 월 납입금과 총 이자를 비교하고 상환 스케줄을 보여주는 무료 계산기."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "변동금리 대출도 계산할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "이 계산기는 고정금리 기준이에요. 변동금리는 현재 금리로 계산한 뒤, 금리가 오를 경우를 가정해 1~2%p 높게도 계산해보는 걸 권해요."}}, {"@type": "Question", "name": "거치기간이 있으면 총 이자가 늘어나나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 거치 중에는 원금이 줄지 않아 그만큼 이자를 더 내게 돼요. 다만 초기 월 부담은 줄어듭니다."}}, {"@type": "Question", "name": "중도상환수수료는 반영되나요?", "acceptedAnswer": {"@type": "Answer", "text": "반영하지 않아요. 보통 대출 후 3년 이내 상환 시 잔액의 1% 안팎이 붙으며, 금융기관마다 달라요."}}]}</script>
 </head>
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#계산·생활">계산·생활</a><span>›</span>대출 이자 계산기</nav>
@@ -51,7 +51,7 @@
   <div class="card" id="cmp"></div>
   <div class="card" id="sched"></div>
  <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="vat"><img class="sic" src="/icons/vat.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>부가세 계산기</span></a><a href="age"><img class="sic" src="/icons/age.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>만 나이 계산기</span></a><a href="dday"><img class="sic" src="/icons/dday.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>D-day·날짜 계산기</span></a><a href="charcount"><img class="sic" src="/icons/charcount.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>글자수 세기</span></a><a href="image-compress"><img class="sic" src="/icons/image-compress.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>이미지 용량 줄이기</span></a><a href="qrcode"><img class="sic" src="/icons/qrcode.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>QR코드 만들기</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="/vat"><img class="sic" src="/icons/vat.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>부가세 계산기</span></a><a href="/age"><img class="sic" src="/icons/age.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>만 나이 계산기</span></a><a href="/dday"><img class="sic" src="/icons/dday.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>D-day·날짜 계산기</span></a><a href="/charcount"><img class="sic" src="/icons/charcount.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>글자수 세기</span></a><a href="/image-compress"><img class="sic" src="/icons/image-compress.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>이미지 용량 줄이기</span></a><a href="/qrcode"><img class="sic" src="/icons/qrcode.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>QR코드 만들기</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
 <!-- guides:tool:start -->
 <div class="guides-rel"><div class="lb"><img src="/icons/ui-guide.webp" width="22" height="22" alt="">관련 가이드</div><a href="/guide/dsr-ltv-mortgage-limit"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">DSR·LTV 뜻과 주택담보대출 한도 계산 — 내 연봉으로 얼마까지</span><span class="go">›</span></a><a href="/guide/jeonse-loan-guide"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">전세대출 조건과 이자 계산 — 한도, 금리, 월 이자 얼마인지</span><span class="go">›</span></a><a href="/guide/car-tax-guide"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">자동차 취득세·개별소비세·자동차세 — 자동차 세금 한 번에 정리</span><span class="go">›</span></a><a href="/guide/jeonse-wolse-guide"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">전세·월세 완전 정리 — 뭐가 유리한지, 보증금은 어떻게 지키는지</span><span class="go">›</span></a></div>
 <!-- guides:tool:end -->

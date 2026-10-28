@@ -23,15 +23,15 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "퇴직금 계산기", "url": "https://dailyfreetoolbox.com/severance", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "입사일과 퇴사일, 최근 3개월 급여를 입력하면 1일 평균임금과 예상 퇴직금을 계산해주는 무료 계산기."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "1년을 며칠 못 채우면 퇴직금이 없나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 계속 근로기간이 365일 미만이면 법정 퇴직금 대상이 아니에요. 다만 회사 규정으로 지급하는 곳도 있으니 취업규칙을 확인하세요."}}, {"@type": "Question", "name": "퇴직금에서 세금은 얼마나 떼나요?", "acceptedAnswer": {"@type": "Answer", "text": "퇴직소득세는 근속연수공제와 환산급여 방식으로 계산해 일반 급여보다 세율이 낮아요. 근속 5년·퇴직금 1,500만원이면 퇴직소득세가 약 16만원(지방소득세 포함 약 17.6만원)으로 10만원대예요(현행 공제로 계산한 값)."}}, {"@type": "Question", "name": "육아휴직 기간도 재직일수에 포함되나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 육아휴직·병가 등 휴직 기간도 계속 근로기간에 포함돼요. 다만 평균임금 산정 기간에서는 제외됩니다."}}, {"@type": "Question", "name": "아르바이트도 퇴직금을 받나요?", "acceptedAnswer": {"@type": "Answer", "text": "1년 이상, 주 15시간 이상 일했다면 받을 수 있어요. 5인 미만 사업장도 해당됩니다."}}]}</script>
 </head>
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#계산·생활">계산·생활</a><span>›</span>퇴직금 계산기</nav>
@@ -51,7 +51,7 @@
   </div>
   <div class="card" id="result"><div class="empty">정보를 입력하고 계산하기를 눌러주세요</div></div>
  <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="loan"><img class="sic" src="/icons/loan.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>대출 이자 계산기</span></a><a href="vat"><img class="sic" src="/icons/vat.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>부가세 계산기</span></a><a href="age"><img class="sic" src="/icons/age.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>만 나이 계산기</span></a><a href="dday"><img class="sic" src="/icons/dday.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>D-day·날짜 계산기</span></a><a href="charcount"><img class="sic" src="/icons/charcount.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>글자수 세기</span></a><a href="image-compress"><img class="sic" src="/icons/image-compress.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>이미지 용량 줄이기</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="/loan"><img class="sic" src="/icons/loan.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>대출 이자 계산기</span></a><a href="/vat"><img class="sic" src="/icons/vat.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>부가세 계산기</span></a><a href="/age"><img class="sic" src="/icons/age.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>만 나이 계산기</span></a><a href="/dday"><img class="sic" src="/icons/dday.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>D-day·날짜 계산기</span></a><a href="/charcount"><img class="sic" src="/icons/charcount.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>글자수 세기</span></a><a href="/image-compress"><img class="sic" src="/icons/image-compress.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>이미지 용량 줄이기</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
 <!-- guides:tool:start -->
 <div class="guides-rel"><div class="lb"><img src="/icons/ui-guide.webp" width="22" height="22" alt="">관련 가이드</div><a href="/guide/annual-leave-rules"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">연차 발생 기준과 계산법 — 1년 미만, 회계연도 vs 입사일, 퇴직 정산까지</span><span class="go">›</span></a><a href="/guide/severance-pay-how-to"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">퇴직금 계산 방법 — 평균임금 구하는 법과 자주 틀리는 5가지</span><span class="go">›</span></a><a href="/guide/unemployment-benefit-2026"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">2026 실업급여 조건·금액·지급일수 총정리 — 나는 얼마나, 며칠 받을까</span><span class="go">›</span></a></div>
 <!-- guides:tool:end -->

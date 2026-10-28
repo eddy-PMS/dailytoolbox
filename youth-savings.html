@@ -23,8 +23,8 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "청년미래적금 계산기", "url": "https://dailyfreetoolbox.com/youth-savings", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "월 납입액과 금리를 넣으면 청년미래적금 3년 만기 수령액을 원금·이자·정부기여금으로 나눠 보여 주는 무료 계산기. 일반형 6%·우대형 12% 기여금 차이와 가입 조건도 정리했어요."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>
 :root { --accent:#2f7d4f; --accent-deep:#215c39; }
 .card input, .card select { font-size:16px; }
@@ -39,7 +39,7 @@
 <body>
 
 <nav id="site-nav" data-accent="#2f7d4f"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#돈·일">돈·일</a><span>›</span>청년미래적금 계산기</nav>
@@ -59,7 +59,7 @@
   </div>
   <div id="out"></div>
   <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">돈·일 도구 더 보기</div><div class="chips"><a href="compound"><img class="sic" src="/icons/compound.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>복리·적금 계산기</span></a><a href="military-savings"><img class="sic" src="/icons/military-savings.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>군적금 계산기</span></a><a href="salary"><img class="sic" src="/icons/salary.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>연봉 실수령액</span></a><a href="soldier-pay"><img class="sic" src="/icons/soldier-pay.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>병사 월급 계산기</span></a><a href="mortgage"><img class="sic" src="/icons/mortgage.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>주택담보대출 한도</span></a><a href="jeonse-loan"><img class="sic" src="/icons/jeonse-loan.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>전세대출 이자</span></a><a class="more" href="/#돈·일">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">돈·일 도구 더 보기</div><div class="chips"><a href="/compound"><img class="sic" src="/icons/compound.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>복리·적금 계산기</span></a><a href="/military-savings"><img class="sic" src="/icons/military-savings.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>군적금 계산기</span></a><a href="/salary"><img class="sic" src="/icons/salary.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>연봉 실수령액</span></a><a href="/soldier-pay"><img class="sic" src="/icons/soldier-pay.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>병사 월급 계산기</span></a><a href="/mortgage"><img class="sic" src="/icons/mortgage.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>주택담보대출 한도</span></a><a href="/jeonse-loan"><img class="sic" src="/icons/jeonse-loan.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>전세대출 이자</span></a><a class="more" href="/#돈·일">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>청년미래적금 만기 수령액 계산</h2><p>청년미래적금은 매달 50만원까지 자유롭게 넣는 3년 만기 적금이에요. 만기에 받는 돈은 네 가지를 더한 값입니다.</p><p><strong>만기 수령액 = 납입 원금 + 은행 이자 + 정부기여금 + 기여금 이자</strong></p><p>은행 이자는 넣은 돈마다 만기까지 남은 기간만큼 단리로 붙어요. 정부기여금은 매달 넣은 금액의 6%(일반형)나 12%(우대형)이고, 기여금에도 기본이자율 연 5%로 이자가 붙습니다. 이자에는 세금이 없어요.</p><p>금융위원회가 든 예시(금리 연 7% 가정, 월 50만원)는 일반형 약 2,110만원, 우대형 약 2,227만원이에요. 이 계산기로 같은 값을 넣으면 일반형 2,110만 5,750원, 우대형 2,226만 9,000원이 나옵니다. 기여금 이자는 실제로 기여금이 들어온 날부터 계산하기 때문에 몇천 원에서 몇만 원 차이가 날 수 있어요.</p>
 <h2>청년미래적금 조건</h2><p>나이·개인소득·가구소득 세 가지를 모두 충족해야 가입할 수 있어요.</p><div class="tw"><table id="t-cond"><thead><tr><th>구분</th><th>기준</th></tr></thead><tbody><tr><td>나이</td><td>가입일 기준 만 19~34세. 병역 이행 기간은 최대 6년까지 나이에서 빼고 계산</td></tr><tr><td>개인소득</td><td>직전 과세기간 총급여 7,500만원(종합소득 6,300만원) 이하, 또는 연매출 3억원 이하 소상공인</td></tr><tr><td>가구소득</td><td>기준 중위소득 200% 이하 (맞벌이 2인가구는 250% 이하)</td></tr><tr><td>납입</td><td>월 1천원~50만원, 연 600만원 이하, 자유적립식</td></tr><tr><td>기간·금리</td><td>3년 만기, 3년 고정금리. 기본 연 5% + 기관별 우대 최대 2~3%p</td></tr><tr><td>세금</td><td>만기까지 유지하면 이자소득세·농어촌특별세 없음</td></tr></tbody></table></div><p>최근 3년 안에 금융소득종합과세 대상자였던 적이 있으면 가입할 수 없어요. 계좌는 모든 금융기관을 통틀어 한 사람이 하나만 만들 수 있습니다.</p>

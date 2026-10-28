@@ -23,8 +23,8 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "축구 라인업 & 전술판", "url": "https://dailyfreetoolbox.com/lineup", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "조기축구·풋살 동호회용 무료 라인업 메이커. 5~11인 포메이션을 고르고 선수 이름을 배치해 전술판을 만든 뒤 이미지 저장이나 링크로 팀원에게 공유하세요."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>
 :root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
 .lay{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:720px){.lay{grid-template-columns:1fr}}
@@ -56,7 +56,7 @@ svg.pitch{width:100%;height:auto;display:block;user-select:none;-webkit-user-sel
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#가족·건강">가족·건강</a><span>›</span>축구 라인업 & 전술판</nav>
@@ -72,7 +72,7 @@ svg.pitch{width:100%;height:auto;display:block;user-select:none;-webkit-user-sel
     <div class="block" style="margin-top:14px"><h3 style="font-size:15px;margin:0 0 8px">선발 명단</h3><div class="rlist" id="lStart"></div></div>
     <div class="block" id="lBenchWrap" style="margin-top:14px"><h3 style="font-size:15px;margin:0 0 8px">후보 명단</h3><div class="rlist" id="lBench"></div></div>
     <div class="block" id="lMemoWrap" style="margin-top:14px"><h3 style="font-size:15px;margin:0 0 8px">전술 메모</h3><div class="memo-view" id="lMemo"></div></div>
-    <div class="note" style="text-align:center;margin-top:14px;font-size:13px"><a href="lineup">새 라인업 만들기</a></div>
+    <div class="note" style="text-align:center;margin-top:14px;font-size:13px"><a href="/lineup">새 라인업 만들기</a></div>
   </div>
 
   <div id="editor">
@@ -122,7 +122,7 @@ svg.pitch{width:100%;height:auto;display:block;user-select:none;-webkit-user-sel
   </div>
 
  <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">가족·건강 도구 더 보기</div><div class="chips"><a href="pregnancy"><img class="sic" src="/icons/pregnancy.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>출산예정일·임신 주수</span></a><a href="ovulation"><img class="sic" src="/icons/ovulation.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>배란일·가임기</span></a><a href="baby-age"><img class="sic" src="/icons/baby-age.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>아기 개월수·백일·돌</span></a><a href="pet-age"><img class="sic" src="/icons/pet-age.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>강아지·고양이 나이</span></a><a href="onerm"><img class="sic" src="/icons/onerm.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>1RM 계산기</span></a><a href="macros"><img class="sic" src="/icons/macros.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>칼로리·단백질 계산기</span></a><a class="more" href="/#가족·건강">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">가족·건강 도구 더 보기</div><div class="chips"><a href="/pregnancy"><img class="sic" src="/icons/pregnancy.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>출산예정일·임신 주수</span></a><a href="/ovulation"><img class="sic" src="/icons/ovulation.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>배란일·가임기</span></a><a href="/baby-age"><img class="sic" src="/icons/baby-age.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>아기 개월수·백일·돌</span></a><a href="/pet-age"><img class="sic" src="/icons/pet-age.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>강아지·고양이 나이</span></a><a href="/onerm"><img class="sic" src="/icons/onerm.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>1RM 계산기</span></a><a href="/macros"><img class="sic" src="/icons/macros.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>칼로리·단백질 계산기</span></a><a class="more" href="/#가족·건강">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>동호회 라인업, 매주 공지하기 귀찮으셨죠</h2><p>조기축구·풋살 동호회는 매주 누가 어디에 서는지 정하는 게 일이에요. 단톡방에 글로 쓰면 못 보고 지나치고, 손으로 그리면 매번 다시 그려야 하죠. 이 도구는 인원(5·6·7·8·9·11인)과 포메이션을 고르고 선수 이름만 넣으면 전술판이 만들어져요. 경기장 위에서 드래그로 위치를 다듬을 수 있고, 명단에 있지만 배치되지 않은 선수는 자동으로 후보가 돼요.</p>
 <p>완성한 전술판은 두 가지로 공유해요. <b>이미지로 저장</b>은 PNG 파일을 내려받아 단톡방에 사진처럼 올리는 방식이고, <b>공유 링크</b>는 짧은 주소로 팀원이 열어서 명단·후보·전술 메모까지 볼 수 있는 방식이에요. 링크를 연 팀원이 "복사해서 편집"으로 자기 버전을 만들 수도 있어요.</p>

@@ -23,8 +23,8 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "신발 사이즈 변환 · 사이즈표", "url": "https://dailyfreetoolbox.com/shoe-size", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "한국 신발 사이즈(mm)를 넣으면 미국 US·영국 UK·유럽 EU 사이즈로 바로 바꿔 주는 무료 신발 사이즈 변환기. 남성·여성 신발 사이즈표와 발 사이즈 재는법도 정리했어요."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>
 :root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
 .card select { font-size:16px; }
@@ -39,7 +39,7 @@ tr.me td { background:#eaf1ff; font-weight:700; }
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#계산·생활">계산·생활</a><span>›</span>신발 사이즈 변환</nav>
@@ -58,7 +58,7 @@ tr.me td { background:#eaf1ff; font-weight:700; }
     <div class="res" style="margin-top:14px"><div class="big-result" id="r">—</div><p class="note" id="rn"></p></div>
   </div>
   <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="unit"><img class="sic" src="/icons/unit.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>단위 변환기</span></a><a href="exchange"><img class="sic" src="/icons/exchange.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>환율 계산기</span></a><a href="discount"><img class="sic" src="/icons/discount.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>할인율 계산기</span></a><a href="percent"><img class="sic" src="/icons/percent.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>퍼센트 계산기</span></a><a href="pyeong"><img class="sic" src="/icons/pyeong.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>평수 계산기</span></a><a href="dday"><img class="sic" src="/icons/dday.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>D-day·날짜 계산</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="/unit"><img class="sic" src="/icons/unit.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>단위 변환기</span></a><a href="/exchange"><img class="sic" src="/icons/exchange.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>환율 계산기</span></a><a href="/discount"><img class="sic" src="/icons/discount.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>할인율 계산기</span></a><a href="/percent"><img class="sic" src="/icons/percent.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>퍼센트 계산기</span></a><a href="/pyeong"><img class="sic" src="/icons/pyeong.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>평수 계산기</span></a><a href="/dday"><img class="sic" src="/icons/dday.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>D-day·날짜 계산</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>신발 사이즈표는 무엇을 기준으로 하나요</h2><p>한국 신발 사이즈는 발 길이를 mm로 적는 방식이에요. 유럽(EU)·영국(UK)·미국(US)은 저마다 다른 간격과 시작점을 쓰기 때문에 숫자가 서로 달라요. 이 페이지의 변환기와 사이즈표는 국제표준 ISO 19407:2023 「신발 — 사이즈 — 사이즈 체계의 변환」에 실린 성인용 권장 표기 표의 값을 그대로 썼습니다. 근사식으로 계산한 값이 아니에요.</p><p>세 체계는 한 치수의 간격이 달라서(한국 5mm, 유럽 6.67mm, 영국·미국 8.47mm) 서로 딱 맞아떨어지지 않아요. 그래서 mm에서 EU로 바꾼 값과, 그 EU를 다시 mm로 바꾼 값이 한 칸 다를 수 있습니다. 위 변환기는 고른 칸의 체계를 기준으로 표에서 찾아 줘요.</p>
 <h2>남성 신발 사이즈표</h2><div class="tw"><table id="t-men"><thead><tr><th>한국 (mm)</th><th class="r">US 남성</th><th class="r">UK</th><th class="r">EU</th></tr></thead><tbody><tr data-mm="240"><td>240</td><td class="r">6.5</td><td class="r">5.5</td><td class="r">38</td></tr><tr data-mm="245"><td>245</td><td class="r">7</td><td class="r">6</td><td class="r">38.5</td></tr><tr data-mm="250"><td>250</td><td class="r">7.5</td><td class="r">6.5</td><td class="r">39.5</td></tr><tr data-mm="255"><td>255</td><td class="r">8</td><td class="r">7</td><td class="r">40</td></tr><tr data-mm="260"><td>260</td><td class="r">8.5</td><td class="r">7.5</td><td class="r">41</td></tr><tr data-mm="265"><td>265</td><td class="r">9.5</td><td class="r">8.5</td><td class="r">41.5</td></tr><tr data-mm="270"><td>270</td><td class="r">10</td><td class="r">9</td><td class="r">42.5</td></tr><tr data-mm="275"><td>275</td><td class="r">10.5</td><td class="r">9.5</td><td class="r">43</td></tr><tr data-mm="280"><td>280</td><td class="r">11</td><td class="r">10</td><td class="r">44</td></tr><tr data-mm="285"><td>285</td><td class="r">11.5</td><td class="r">10.5</td><td class="r">44.5</td></tr><tr data-mm="290"><td>290</td><td class="r">12</td><td class="r">11</td><td class="r">45.5</td></tr><tr data-mm="295"><td>295</td><td class="r">13</td><td class="r">12</td><td class="r">46</td></tr><tr data-mm="300"><td>300</td><td class="r">13.5</td><td class="r">12.5</td><td class="r">47</td></tr><tr data-mm="305"><td>305</td><td class="r">14</td><td class="r">13</td><td class="r">47.5</td></tr><tr data-mm="310"><td>310</td><td class="r">14.5</td><td class="r">13.5</td><td class="r">48.5</td></tr><tr data-mm="315"><td>315</td><td class="r">15</td><td class="r">14</td><td class="r">49</td></tr><tr data-mm="320"><td>320</td><td class="r">16</td><td class="r">15</td><td class="r">50</td></tr></tbody></table></div>

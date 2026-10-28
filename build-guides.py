@@ -459,7 +459,7 @@ def update_home_new(tools, n=6):
     ranked = sorted(order, key=lambda f: (first.get(f) or today, -order.index(f)), reverse=True)[:n]
     # 주의: 깃허브 자동 빌드는 파이썬 3.11 이라 f-string 의 { } 안에 역슬래시를 쓸 수 없다. 정규식은 밖에서 처리한다.
     short = lambda f: esc(PAREN_TAIL.sub('', tools[f]['title']))
-    chips = ''.join(f'<a href="{tools[f]["slug"]}">{short(f)}</a>' for f in ranked)
+    chips = ''.join(f'<a href="/{tools[f]["slug"]}">{short(f)}</a>' for f in ranked)
     new = inject(s, '<!-- new:home:start -->', '<!-- new:home:end -->', chips)
     if new is None:                                        # 처음 한 번: 손으로 적혀 있던 칩을 표시 주석으로 감싼다
         m = re.search(r'(<div class="hero-hot"><span class="lb">.*?</span>)(.*?)(</div>)', s, flags=re.S)
@@ -496,7 +496,7 @@ def update_home_popular(tools, n=6):
         print('  (popular-order.txt 에 쓸 수 있는 도구가 없어 홈 인기 도구는 그대로 둠)'); return
     path = os.path.join(ROOT, 'index.html'); s = open(path, encoding='utf-8').read()
     cards = '\n' + ''.join(
-        f'      <a class="pop-card" href="{tools[f]["slug"]}"><span class="ic" style="background:{bg}"><img src="/icons/{tools[f]["slug"]}.webp" width="34" height="34" alt=""></span>'
+        f'      <a class="pop-card" href="/{tools[f]["slug"]}"><span class="ic" style="background:{bg}"><img src="/icons/{tools[f]["slug"]}.webp" width="34" height="34" alt=""></span>'
         f'<span class="t">{esc(title)}</span><span class="d">{esc(desc)}</span></a>\n' for f, title, desc, bg in picked) + '    '
     new = inject(s, '<!-- pop:home:start -->', '<!-- pop:home:end -->', cards)
     if new is None:                                        # 처음 한 번: 손으로 적혀 있던 카드를 표시 주석으로 감싼다

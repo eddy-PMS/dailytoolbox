@@ -23,8 +23,8 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication","name":"영어 스펠링 퀴즈 생성기","url":"https://dailyfreetoolbox.com/spelling-quiz","applicationCategory":"EducationalApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"},"description":"외울 단어 목록을 붙여넣으면 발음을 듣거나 뜻을 보고 철자를 쓰는 영어 단어 시험이 바로 만들어져요. 틀린 단어만 모아 다시 풀 수 있고, 가입 없이 무료."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>
   /* tool.css 기반 위에 이 페이지 고유 스타일만 덧씌움 */
   label > select, label > input:not([type="checkbox"]):not([type="radio"]), .row select, .row input:not([type="checkbox"]):not([type="radio"]) { width:auto; padding:6px 8px; font-size:13px; }
@@ -64,7 +64,7 @@
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#공부·어학">공부·어학</a><span>›</span>스펠링 퀴즈</nav>
@@ -119,7 +119,7 @@ environment"></textarea>
   </div>
 
   <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">공부·어학 도구 더 보기</div><div class="chips"><a href="furigana"><img class="sic" src="/icons/furigana.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>후리가나 표시기</span></a><a href="jp-verb"><img class="sic" src="/icons/jp-verb.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>동사 활용표</span></a><a href="kana-quiz"><img class="sic" src="/icons/kana-quiz.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>가나 퀴즈</span></a><a href="jlpt-test"><img class="sic" src="/icons/jlpt-test.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>JLPT 레벨 테스트</span></a><a href="pinyin"><img class="sic" src="/icons/pinyin.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>병음 변환기</span></a><a href="hanja"><img class="sic" src="/icons/hanja.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>한자 음훈 조회</span></a><a class="more" href="/#공부·어학">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">공부·어학 도구 더 보기</div><div class="chips"><a href="/furigana"><img class="sic" src="/icons/furigana.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>후리가나 표시기</span></a><a href="/jp-verb"><img class="sic" src="/icons/jp-verb.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>동사 활용표</span></a><a href="/kana-quiz"><img class="sic" src="/icons/kana-quiz.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>가나 퀴즈</span></a><a href="/jlpt-test"><img class="sic" src="/icons/jlpt-test.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>JLPT 레벨 테스트</span></a><a href="/pinyin"><img class="sic" src="/icons/pinyin.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>병음 변환기</span></a><a href="/hanja"><img class="sic" src="/icons/hanja.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>한자 음훈 조회</span></a><a class="more" href="/#공부·어학">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>출제 방식 세 가지, 언제 무엇을 고를까</h2><p>뜻을 보면 아는 단어도 막상 손으로 쓰면 글자 하나가 빠지기 쉬워요. 그래서 이 퀴즈는 같은 목록으로 세 가지 방식의 시험을 낼 수 있게 했어요. 외우는 단계에 따라 골라 쓰면 돼요.</p><p><table><thead><tr><th>방식</th><th>화면에 나오는 것</th><th>이럴 때</th></tr></thead><tbody><tr><td>발음 + 뜻</td><td>뜻을 보여 주고 발음도 읽어 줌</td><td>처음 외울 때. 소리·뜻·철자를 한꺼번에 묶어 익혀요</td></tr><tr><td>발음만</td><td>발음만 들려줌</td><td>받아쓰기형. 소리 나지 않는 글자, 겹자음처럼 소리만으로는 헷갈리는 철자를 확인해요</td></tr><tr><td>뜻만</td><td>뜻만 보여 줌, 소리 없음</td><td>학교·학원 단어 시험처럼 우리말 뜻을 보고 영어로 쓰는 연습</td></tr></tbody></table></p><p>"순서 섞기"는 기본으로 켜져 있어요. 목록 순서대로만 풀면 앞 단어가 다음 단어의 힌트가 돼서, 외운 줄 알았는데 순서를 기억한 것일 때가 많거든요.</p>
 <h2>단어 목록 넣는 법</h2><p>한 줄에 단어 하나씩 넣어요. 단어 뒤에 쉼표(,)나 탭을 두고 뜻을 쓰면 그 뜻이 문제로 나와요. 엑셀·구글 시트에서 "단어 | 뜻" 두 칸을 복사해 붙이면 탭으로 들어가니 그대로 쓰면 돼요.</p><pre>necessary, 필요한

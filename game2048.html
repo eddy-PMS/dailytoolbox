@@ -23,8 +23,8 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "2048 게임", "url": "https://dailyfreetoolbox.com/game2048", "applicationCategory": "GameApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "같은 숫자 타일을 합쳐 2048을 만드는 퍼즐 게임. 키보드 방향키나 스와이프로 플레이하고 점수를 랭킹에 등록할 수 있어요."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>
 :root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
 .hud{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
@@ -48,7 +48,7 @@
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#퍼즐·게임">퍼즐·게임</a><span>›</span>2048 게임</nav>
@@ -68,7 +68,7 @@
   <div id="lb"></div>
 
  <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">퍼즐·게임 도구 더 보기</div><div class="chips"><a href="nonogram"><img class="sic" src="/icons/nonogram.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>네모로직 (노노그램)</span></a><a href="water-sort"><img class="sic" src="/icons/water-sort.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>물 붓기 퍼즐</span></a><a href="block-fill"><img class="sic" src="/icons/block-fill.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>블록 채우기</span></a><a href="order"><img class="sic" src="/icons/order.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>숫자 순서 누르기</span></a><a href="color-find"><img class="sic" src="/icons/color-find.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>틀린 색 찾기</span></a><a href="math-speed"><img class="sic" src="/icons/math-speed.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>암산 스피드</span></a><a class="more" href="/#퍼즐·게임">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">퍼즐·게임 도구 더 보기</div><div class="chips"><a href="/nonogram"><img class="sic" src="/icons/nonogram.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>네모로직 (노노그램)</span></a><a href="/water-sort"><img class="sic" src="/icons/water-sort.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>물 붓기 퍼즐</span></a><a href="/block-fill"><img class="sic" src="/icons/block-fill.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>블록 채우기</span></a><a href="/order"><img class="sic" src="/icons/order.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>숫자 순서 누르기</span></a><a href="/color-find"><img class="sic" src="/icons/color-find.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>틀린 색 찾기</span></a><a href="/math-speed"><img class="sic" src="/icons/math-speed.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>암산 스피드</span></a><a class="more" href="/#퍼즐·게임">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>2048, 규칙은 30초면 배워요</h2><p>4×4 판에서 타일을 한 방향으로 밀면 모든 타일이 그쪽으로 이동하고, 같은 숫자가 만나면 하나로 합쳐지며 두 배가 돼요. 밀 때마다 2(가끔 4)가 새로 생기고, 판이 꽉 차서 더 이상 합칠 수 없으면 끝이에요. 목표는 2048 타일을 만드는 것이지만, 만든 뒤에도 4096·8192를 향해 계속할 수 있어요.</p>
 <p>점수는 합쳐진 타일의 숫자만큼 쌓여요. 게임이 끝나면 닉네임을 넣어 <b>이번 주 랭킹</b>과 <b>전체 랭킹</b>에 등록할 수 있고, 최고 타일도 함께 표시돼요. 내 최고 점수는 이 기기에 저장돼요.</p>
@@ -79,7 +79,7 @@
   <footer>진행 중인 게임과 최고 점수는 이 기기의 브라우저에 저장되고, 랭킹 등록 시에만 닉네임과 점수가 서버에 저장돼요.<br><span class="version-tag">v1.0 · 2026-09-17 업데이트</span></footer>
 </main>
 
-<script src="leaderboard.js"></script>
+<script src="/leaderboard.js"></script>
 <script>
 const $=id=>document.getElementById(id);
 let g=[], score=0, best=+localStorage.getItem('g2048_best')||0, over=false, won=false, startedAt=0, moves=0, lastNew=-1, mergedSet=new Set();

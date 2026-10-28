@@ -23,15 +23,15 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebApplication", "name": "IP 주소 확인·위치 조회", "url": "https://dailyfreetoolbox.com/ipgeo", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "IP 주소 확인이 필요할 때 쓰는 무료 도구. IP 주소를 넣으면 국가·지역·도시, 통신사, 시간대를 조회하고, 버튼 하나로 내 IP 주소도 확인해요. 개인 신원이나 정확한 주소는 나오지 않아요."}
 </script>
-<script src="common.js"></script>
-<link rel="stylesheet" href="tool.css">
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
 <style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "내 IP 주소는 어떻게 확인하나요?", "acceptedAnswer": {"@type": "Answer", "text": "이 페이지를 열면 내 IP로 한 번 자동 조회돼요. \"내 IP 넣기\"를 누르면 내 IPv4·IPv6 주소가 둘 다 나오고 IPv4가 먼저 조회됩니다. 브라우저·기기 정보까지 한눈에 보려면 내 IP 주소 확인 도구를 쓰세요."}}, {"@type": "Question", "name": "IP로 누가 사는지 알 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. IP는 통신사가 회선에 배정한 번호일 뿐이고, 가입자 정보는 통신사만 알며 법원 영장 없이는 공개되지 않아요. 이 도구는 지역과 통신사 수준까지만 보여줍니다."}}, {"@type": "Question", "name": "조회 결과가 다른 사이트와 다른데요?", "acceptedAnswer": {"@type": "Answer", "text": "사이트마다 다른 IP 데이터베이스를 쓰기 때문에 도시가 다르게 나올 수 있어요. 국가·통신사는 대체로 일치합니다."}}, {"@type": "Question", "name": "하루 조회 횟수 제한이 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "무료 조회 데이터를 사용하기 때문에 한 사람이 짧은 시간에 아주 많이 조회하면 잠시 제한될 수 있어요. 일반적인 사용에는 문제없습니다."}}, {"@type": "Question", "name": "모바일 IP를 조회하면 왜 서울로 나오나요?", "acceptedAnswer": {"@type": "Answer", "text": "모바일 데이터는 통신사 게이트웨이를 거쳐 나가기 때문에 그 게이트웨이 위치로 잡혀요. 국내 통신사는 게이트웨이가 수도권에 몰려 있어서 실제로 어디에 있든 서울 근처로 표시되는 경우가 많습니다."}}, {"@type": "Question", "name": "VPN이나 프록시를 쓴 IP도 알 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "VPN 서버의 위치가 나와요. 실제 사용자의 위치는 가려집니다. 회선 종류가 데이터센터나 VPN으로 표시되면 그 IP 뒤에 누가 있는지는 이 방식으로 알 수 없다고 보면 됩니다."}}, {"@type": "Question", "name": "조회한 사실이 상대에게 알려지나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 이 조회는 IP 데이터베이스를 찾아보는 것이라 해당 IP 쪽에 아무 연결도 하지 않아요. 상대가 알 수 있는 방법이 없고, 조회 기록도 저장하지 않습니다."}}]}</script>
 </head>
 <body>
 
 <nav id="site-nav" data-accent="#2b5fd9"></nav>
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#계산·생활">계산·생활</a><span>›</span>IP 주소 확인·조회</nav>
@@ -52,7 +52,7 @@
     · 무료 조회 데이터를 사용하므로 하루 조회량이 많으면 잠시 제한될 수 있어요. 같은 IP는 30일간 캐시되어 빠르게 응답합니다.
   </div></div>
  <div class="ad-slot" data-ad="below-result"></div>
-<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="unit"><img class="sic" src="/icons/unit.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>단위 변환기</span></a><a href="exchange"><img class="sic" src="/icons/exchange.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>환율 계산기</span></a><a href="rent"><img class="sic" src="/icons/rent.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>전월세·중개수수료</span></a><a href="lotto"><img class="sic" src="/icons/lotto.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>로또 번호 생성기</span></a><a href="password"><img class="sic" src="/icons/password.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>비밀번호 생성기</span></a><a href="percent"><img class="sic" src="/icons/percent.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>퍼센트 계산기</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
+<div class="sibs"><div class="lb">계산·생활 도구 더 보기</div><div class="chips"><a href="/unit"><img class="sic" src="/icons/unit.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>단위 변환기</span></a><a href="/exchange"><img class="sic" src="/icons/exchange.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>환율 계산기</span></a><a href="/rent"><img class="sic" src="/icons/rent.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>전월세·중개수수료</span></a><a href="/lotto"><img class="sic" src="/icons/lotto.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>로또 번호 생성기</span></a><a href="/password"><img class="sic" src="/icons/password.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>비밀번호 생성기</span></a><a href="/percent"><img class="sic" src="/icons/percent.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>퍼센트 계산기</span></a><a class="more" href="/#계산·생활">전체 보기 →</a></div></div>
 <section class="seo">
 <h2>IP 주소 확인 — 내 IP와 다른 IP</h2><p>이 페이지에서는 IP 주소 확인을 두 가지로 할 수 있어요. 하나는 <strong>지금 내가 쓰는 IP</strong>이고, 다른 하나는 메일이나 접속 기록에 찍힌 <strong>다른 IP</strong>입니다.</p>
 <p>내 IP는 페이지를 열면 자동으로 한 번 조회돼요. "내 IP 넣기"를 누르면 내 IPv4·IPv6 주소가 둘 다 나오고, 누른 주소로 다시 조회합니다. 브라우저·기기 정보까지 같이 보려면 <a href="/myip">내 IP 주소 확인</a>이 더 편해요.</p>

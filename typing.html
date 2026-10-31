@@ -26,7 +26,7 @@
 <script src="/common.js"></script>
 <link rel="stylesheet" href="/tool.css">
 <style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "타수 계산이 다른 사이트와 달라요.", "acceptedAnswer": {"@type": "Answer", "text": "사이트마다 겹자모·공백 처리 기준이 달라요. 이 도구는 자모 단위(겹자모 2타, 공백 1타)로 계산해요."}}, {"@type": "Question", "name": "한영 전환 실수도 오타로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 입력된 글자와 예문을 글자 단위로 비교해서 다른 글자는 모두 오타로 처리해요."}}, {"@type": "Question", "name": "예문을 직접 넣을 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "현재는 내장 예문만 제공해요. 받아쓰기 연습 도구에서는 내 문장으로 연습할 수 있어요."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "타수 계산이 다른 사이트와 달라요.", "acceptedAnswer": {"@type": "Answer", "text": "사이트마다 겹자모·공백 처리 기준이 달라요. 이 도구는 자모 단위(겹자모 2타, 공백 1타)로 계산해요."}}, {"@type": "Question", "name": "한영 전환 실수도 오타로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 입력한 글과 예문을 글자 단위로 맞춰 보고, 다르게 치거나 빠뜨리거나 더 친 글자를 오타로 세요. 한 글자를 빠뜨려도 뒤 글자가 전부 오타가 되지는 않아요."}}, {"@type": "Question", "name": "예문을 직접 넣을 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "현재는 내장 예문만 제공해요. 받아쓰기 연습 도구에서는 내 문장으로 연습할 수 있어요."}}]}</script>
 </head>
 <body>
 
@@ -44,7 +44,7 @@
     <div id="sample" style="font-size:18px;line-height:1.9;padding:14px 16px;background:var(--paper);border:1px solid var(--line);border-radius:3px;margin-bottom:12px;user-select:none"></div>
     <textarea id="input" placeholder="여기에 위 문장을 그대로 입력하세요. 첫 글자를 치는 순간 시간이 시작돼요." style="min-height:110px;font-size:17px" autocomplete="off" autocapitalize="off" spellcheck="false"></textarea>
     <div class="row" style="margin:10px 0 0;flex-wrap:wrap;gap:8px"><span id="live"></span><span id="modeTag" class="note" style="margin:0"></span><button class="btn-ghost" id="next" style="margin-left:auto">다른 문장 (연습)</button><button class="btn" id="challenge">🏆 랭킹 도전</button></div>
-    <p class="note" id="modeHelp" style="margin:8px 0 0">연습은 무작위 문장이에요. 랭킹에 등록하려면 "랭킹 도전"을 눌러 이번 주 지정 문장(3문장)을 입력하세요. 지정 문장은 매주 월요일에 바뀌고, 그 주에는 모두가 같은 문장으로 겨뤄요.</p>
+    <p class="note" id="modeHelp" style="margin:8px 0 0">연습은 무작위 문장이에요. 랭킹에 등록하려면 "랭킹 도전"을 눌러 이번 주 지정 문장(3문장)을 입력하세요. 지정 문장은 매주 월요일 오전 9시(한국 시간)에 바뀌고, 그 주에는 모두가 같은 문장으로 겨뤄요.</p>
   </div>
   <div id="result"></div>
 
@@ -52,17 +52,15 @@
  <div class="ad-slot" data-ad="below-result"></div>
 <div class="sibs"><div class="lb">퍼즐·게임 도구 더 보기</div><div class="chips"><a href="/sens"><img class="sic" src="/icons/sens.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>마우스 감도 변환기</span></a><a href="/game2048"><img class="sic" src="/icons/game2048.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>2048 게임</span></a><a href="/nonogram"><img class="sic" src="/icons/nonogram.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>네모로직 (노노그램)</span></a><a href="/water-sort"><img class="sic" src="/icons/water-sort.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>물 붓기 퍼즐</span></a><a href="/block-fill"><img class="sic" src="/icons/block-fill.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>블록 채우기</span></a><a href="/order"><img class="sic" src="/icons/order.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>숫자 순서 누르기</span></a><a class="more" href="/#퍼즐·게임">전체 보기 →</a></div></div>
 <section class="seo">
-<h2>타자 속도 기준</h2><p>한글 타자는 분당 타수로 재요. 자모 하나가 1타이고 겹자모(ㅘ, ㄳ 등)는 2타로 세는 게 일반적인 타자연습 프로그램 기준이에요. 일반 사무직은 300~400타, 빠른 편은 500타 이상, 속기·전문 타이핑은 700타를 넘어요. 영문은 분당 단어 수(WPM, 5글자=1단어)로 재며 평균 40WPM, 빠르면 70WPM 이상이에요.</p>
-<img src="/img/typing/typing-speed-standard.svg" width="800" height="320" alt="한글 타자연습 타수 기준"
-     loading="lazy" decoding="async"
-     style="max-width:100%;height:auto;display:block;margin:12px auto"><p>속도보다 정확도가 먼저예요. 오타를 고치는 시간이 더 크기 때문에 정확도 95% 이상을 유지하면서 속도를 올리는 게 효율적이에요. 매일 5분씩 같은 문장을 반복하면 2주 안에 눈에 띄게 늘어요.</p>
+<h2>타자 속도 기준</h2><p>한글 타자는 분당 타수로 재요. 이 도구는 자모 하나를 1타, 겹자모(ㅘ, ㄳ 등)를 2타, 공백을 1타로 세요. 사이트·프로그램마다 세는 법이 조금씩 달라 같은 글이라도 숫자가 다를 수 있어요. 영문은 분당 단어 수(WPM, 5글자=1단어)로도 보여 줘요. 몇 타가 "빠르다"는 공식 기준은 없어서, 아래 수준표는 이 도구가 나눈 구간이에요.</p>
+<p>속도보다 정확도가 먼저예요. 오타를 고치는 시간이 더 크기 때문에 정확도 95% 이상을 유지하면서 속도를 올리는 게 효율적이에요. 짧게라도 자주, 같은 문장을 반복하며 손에 익히는 연습이 도움이 돼요.</p>
 <img src="/img/typing/typing-count-and-accuracy.svg" width="800" height="502" alt="타자연습 타수 계산 방법 정확도"
      loading="lazy" decoding="async"
      style="max-width:100%;height:auto;display:block;margin:12px auto">
-<h2>타수·WPM 수준표</h2>
+<h2>타수·WPM 수준표</h2><p>공식 기준이 아니라 이 도구가 결과 화면에서 쓰는 구간이에요. 영문은 WPM 기준으로 나눠요.</p>
 <img src="/img/typing/typing-speed-levels.svg" width="800" height="456" alt="타자 속도 타수 WPM 수준표"
      loading="lazy" decoding="async"
-     style="max-width:100%;height:auto;display:block;margin:12px auto"><p><table><thead><tr><th>한글 타/분</th><th>영문 WPM</th><th>수준</th></tr></thead><tbody><tr><td>~200</td><td>~30</td><td>입문</td></tr><tr><td>200~350</td><td>30~45</td><td>보통</td></tr><tr><td>350~500</td><td>45~65</td><td>빠름 (사무직 상위)</td></tr><tr><td>500~700</td><td>65~90</td><td>매우 빠름</td></tr><tr><td>700+</td><td>90+</td><td>전문가·속기</td></tr></tbody></table></p>
+     style="max-width:100%;height:auto;display:block;margin:12px auto"><p><table><thead><tr><th>한글 타/분</th><th>영문 WPM</th><th>수준</th></tr></thead><tbody><tr><td>~200</td><td>~30</td><td>입문</td></tr><tr><td>200~350</td><td>30~45</td><td>보통</td></tr><tr><td>350~500</td><td>45~65</td><td>빠름</td></tr><tr><td>500~700</td><td>65~90</td><td>매우 빠름</td></tr><tr><td>700+</td><td>90+</td><td>전문가·속기</td></tr></tbody></table></p>
 <h2>사용 방법</h2>
 <img src="/img/typing/typing-test-start-800.webp"
      srcset="/img/typing/typing-test-start-400.webp 400w, /img/typing/typing-test-start-800.webp 800w, /img/typing/typing-test-start-1200.webp 1200w"
@@ -76,8 +74,8 @@
      style="max-width:min(100%,420px);height:auto;display:block;margin:12px auto">
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
-<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>타수 계산이 다른 사이트와 달라요.</summary><p>사이트마다 겹자모·공백 처리 기준이 달라요. 이 도구는 자모 단위(겹자모 2타, 공백 1타)로 계산해요.</p></details><details><summary>한영 전환 실수도 오타로 세나요?</summary><p>네. 입력된 글자와 예문을 글자 단위로 비교해서 다른 글자는 모두 오타로 처리해요.</p></details><details><summary>예문을 직접 넣을 수 있나요?</summary><p>현재는 내장 예문만 제공해요. 받아쓰기 연습 도구에서는 내 문장으로 연습할 수 있어요.</p></details></section>
-  <footer>한글 타수는 자모 단위(초성·중성·종성, 겹자모는 2타)로 계산하며, 흔히 쓰는 타자연습 프로그램과 비슷한 기준이에요. 랭킹은 한글·영문 따로 집계되고, 매주 바뀌는 지정 문장(3문장)을 정확도 95% 이상으로 입력했을 때만 등록할 수 있어요.<br><span class="version-tag">v1.3 · 2026-09-17 업데이트</span></footer>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>타수 계산이 다른 사이트와 달라요.</summary><p>사이트마다 겹자모·공백 처리 기준이 달라요. 이 도구는 자모 단위(겹자모 2타, 공백 1타)로 계산해요.</p></details><details><summary>한영 전환 실수도 오타로 세나요?</summary><p>네. 입력한 글과 예문을 글자 단위로 맞춰 보고, 다르게 치거나 빠뜨리거나 더 친 글자를 오타로 세요. 한 글자를 빠뜨려도 뒤 글자가 전부 오타가 되지는 않아요.</p></details><details><summary>예문을 직접 넣을 수 있나요?</summary><p>현재는 내장 예문만 제공해요. 받아쓰기 연습 도구에서는 내 문장으로 연습할 수 있어요.</p></details></section>
+  <footer>한글 타수는 자모 단위(초성·중성·종성, 겹자모는 2타)로 계산해요. 랭킹은 한글·영문 따로 집계되고, 매주 바뀌는 지정 문장(3문장)을 정확도 95% 이상으로 입력했을 때만 등록할 수 있어요.<br><span class="version-tag">v1.4 · 2026-10-31 업데이트</span></footer>
 </main>
 
 <script src="/leaderboard.js"></script>
@@ -99,14 +97,18 @@ function initLB(){ LB.init({game:'typing-'+lang, el:'#lb', label:'타/분', form
 document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');lang=b.dataset.l;pick();initLB();}));
 $('next').addEventListener('click',pick);
 $('challenge').addEventListener('click',startChallenge);
+// 오타 수: 입력과 예문 앞부분(길이 자유) 사이의 최소 편집 거리. 같은 자리끼리만 비교하면 한 글자 빠뜨렸을 때 뒤가 전부 오타가 된다
+function typos(v,t){ let prev=new Array(t.length+1).fill(0); for(let i=1;i<=v.length;i++){ const cur=[i]; for(let j=1;j<=t.length;j++){ cur[j]=Math.min(prev[j]+1,cur[j-1]+1,prev[j-1]+(v[i-1]===t[j-1]?0:1)); } prev=cur; } return Math.min(...prev); }
+// 결과 등급은 페이지의 수준표와 같은 구간(한글 타/분, 영문 WPM)
+function level(s){ const [v,c]=lang==='en'?[s.wpm,[90,65,45,30]]:[s.tasu,[700,500,350,200]]; return v>=c[0]?'전문가·속기':v>=c[1]?'매우 빠름':v>=c[2]?'빠름':v>=c[3]?'보통':'입문'; }
 function stats(){ const v=$('input').value; const sec=(performance.now()-t0)/1000; const min=Math.max(sec/60,1/600);
-  let correct=0; for(let i=0;i<v.length;i++){ if(v[i]===text[i]) correct++; } const acc= v.length? Math.round(correct/v.length*100):100;
+  const acc= v.length? Math.round(Math.max(0,v.length-typos(v,text))/v.length*100):100;
   const tasu=Math.round(strokes(v)/min); const wpm=Math.round((v.length/5)/min); return {sec,acc,tasu,wpm,len:v.length}; }
 $('input').addEventListener('input',()=>{
   if(done) return; if(t0===null){ t0=performance.now(); tick=setInterval(()=>{ const s=stats(); $('live').textContent=`${s.sec.toFixed(1)}초 · ${s.tasu}타/분 · 정확도 ${s.acc}%`; },250); }
   const v=$('input').value;
   if(v.length>=text.length){ done=true; clearInterval(tick); const s=stats();
-    $('result').innerHTML=`<div class="stat-grid"><div class="stat"><div class="num">${s.tasu}</div><div class="label">타/분</div></div>${lang==='en'?`<div class="stat"><div class="num">${s.wpm}</div><div class="label">WPM</div></div>`:''}<div class="stat"><div class="num">${s.acc}%</div><div class="label">정확도</div></div><div class="stat"><div class="num">${s.sec.toFixed(1)}s</div><div class="label">소요 시간</div></div></div><div class="note" style="text-align:center">${s.tasu>=600?'매우 빠름':s.tasu>=400?'빠름':s.tasu>=250?'보통':'연습하면 금방 늘어요'} · "다른 문장"으로 다시 도전</div>`;
+    $('result').innerHTML=`<div class="stat-grid"><div class="stat"><div class="num">${s.tasu}</div><div class="label">타/분</div></div>${lang==='en'?`<div class="stat"><div class="num">${s.wpm}</div><div class="label">WPM</div></div>`:''}<div class="stat"><div class="num">${s.acc}%</div><div class="label">정확도</div></div><div class="stat"><div class="num">${s.sec.toFixed(1)}s</div><div class="label">소요 시간</div></div></div><div class="note" style="text-align:center">${level(s)} · "다른 문장"으로 다시 도전</div>`;
     $('live').textContent='완료!';
     if(mode!=='rank') $('result').insertAdjacentHTML('beforeend','<div class="note" style="text-align:center">연습 기록이에요. 랭킹에 올리려면 "랭킹 도전"으로 이번 주 지정 문장을 입력하세요.</div>');
     else if(s.acc>=95) LB.submit(s.tasu,{duration:Math.round(s.sec*1000), units:strokes(v), meta:`정확도 ${s.acc}%`});

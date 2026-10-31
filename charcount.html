@@ -26,7 +26,7 @@
 <script src="/common.js"></script>
 <link rel="stylesheet" href="/tool.css">
 <style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "공백 포함과 공백 제외 중 뭐가 기준인가요?", "acceptedAnswer": {"@type": "Answer", "text": "제출처 안내문을 따르는 게 원칙이고, 명시가 없으면 대부분 공백 포함이 기준이에요. 한글 문서(HWP)의 \"문서 정보\"도 공백 포함 글자 수를 기본으로 보여줍니다."}}, {"@type": "Question", "name": "줄바꿈도 글자로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "기준에 따라 달라요. 이 도구는 세 가지를 같이 보여줍니다. 공백 포함은 띄어쓰기와 줄바꿈을 모두 세고, 공백 제외는 둘 다 빼요. 줄바꿈만 제외는 띄어쓰기는 세고 줄바꿈만 뺀 값이라, \"공백 포함이지만 줄바꿈은 빼고 세는\" 양식에 맞출 때 보면 됩니다."}}, {"@type": "Question", "name": "바이트는 어떤 기준으로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "UTF-8(한글 3바이트, 영문·숫자 1바이트)과 EUC-KR(한글 2바이트) 두 가지를 모두 계산해요. 오래된 채용 시스템은 EUC-KR 기준이 많습니다."}}, {"@type": "Question", "name": "입력한 글이 저장되나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 모든 계산은 브라우저 안에서만 이루어지고 어디에도 전송되지 않아요."}}, {"@type": "Question", "name": "영어 단어 수는 어떤 기준으로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "띄어쓰기를 기준으로 셉니다. 공백·탭·줄바꿈으로 나뉜 덩어리 하나가 한 단어예요. don't나 well-known처럼 붙어 있으면 한 단어로 셉니다. 제출처가 하이픈을 두 단어로 보는 곳이라면 숫자가 다를 수 있으니 안내문을 확인하세요."}}, {"@type": "Question", "name": "이모지는 몇 글자로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "😀처럼 하나짜리 이모지는 1자, UTF-8로는 4바이트예요. 👨‍👩‍👧처럼 여러 그림이 이어 붙은 이모지는 눈에는 하나로 보여도 5자로 세어지고 18바이트가 됩니다. 글자 수가 빠듯하면 빼는 편이 안전해요."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "공백 포함과 공백 제외 중 뭐가 기준인가요?", "acceptedAnswer": {"@type": "Answer", "text": "제출처 안내문을 따르는 게 원칙이고, 명시가 없으면 대부분 공백 포함이 기준이에요."}}, {"@type": "Question", "name": "줄바꿈도 글자로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "기준에 따라 달라요. 이 도구는 세 가지를 같이 보여줍니다. 공백 포함은 띄어쓰기와 줄바꿈을 모두 세고, 공백 제외는 둘 다 빼요. 줄바꿈만 제외는 띄어쓰기는 세고 줄바꿈만 뺀 값이라, \"공백 포함이지만 줄바꿈은 빼고 세는\" 양식에 맞출 때 보면 됩니다."}}, {"@type": "Question", "name": "바이트는 어떤 기준으로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "UTF-8(한글 3바이트, 영문·숫자 1바이트)과 EUC-KR(한글 2바이트) 두 가지를 모두 계산해요. 제출처가 어느 기준인지 적지 않았다면 더 큰 쪽(UTF-8)에 맞추면 안전해요."}}, {"@type": "Question", "name": "입력한 글이 저장되나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 모든 계산은 브라우저 안에서만 이루어지고 어디에도 전송되지 않아요."}}, {"@type": "Question", "name": "영어 단어 수는 어떤 기준으로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "띄어쓰기를 기준으로 셉니다. 공백·탭·줄바꿈으로 나뉜 덩어리 하나가 한 단어예요. don't나 well-known처럼 붙어 있으면 한 단어로 셉니다. 제출처가 하이픈을 두 단어로 보는 곳이라면 숫자가 다를 수 있으니 안내문을 확인하세요."}}, {"@type": "Question", "name": "이모지는 몇 글자로 세나요?", "acceptedAnswer": {"@type": "Answer", "text": "😀처럼 하나짜리 이모지는 1자, UTF-8로는 4바이트예요. 👨‍👩‍👧처럼 여러 그림이 이어 붙은 이모지는 눈에는 하나로 보여도 5자로 세어지고 18바이트가 됩니다. 글자 수가 빠듯하면 빼는 편이 안전해요."}}]}</script>
 </head>
 <body>
 
@@ -62,8 +62,8 @@
      sizes="(max-width: 480px) 100vw, 420px"
      width="1200" height="3135" alt="글자수 세기 공백 포함 제외 바이트 결과" loading="lazy" decoding="async"
      style="max-width:min(100%,420px);height:auto;display:block;margin:12px auto"><p>바이트 기준은 특히 주의가 필요해요. 한글 한 글자는 UTF-8에서 3바이트, EUC-KR에서 2바이트로 계산되는데, 채용 시스템마다 어느 방식을 쓰는지 달라요. 두 기준을 모두 보여드리니 안내문에 적힌 바이트 수와 비교해보세요.</p>
-<h2>자주 쓰는 글자수 기준</h2><p><table><thead><tr><th>용도</th><th>일반적인 기준</th></tr></thead><tbody><tr><td>대기업 자기소개서</td><td>공백 포함 500~1,000자 / 항목</td></tr><tr><td>공무원·공기업 자소서</td><td>공백 포함 또는 바이트(2,000~3,000) 기준 혼용</td></tr><tr><td>인스타그램 캡션</td><td>2,200자</td></tr><tr><td>X(트위터)</td><td>280자 (한글도 동일)</td></tr><tr><td>원고지 매수</td><td>200자 원고지 기준, 공백 포함</td></tr></tbody></table></p>
-<img src="/img/charcount/character-count-limits.svg" width="800" height="490" alt="자소서 글자수 기준 자주 쓰는 글자수"
+<h2>자주 쓰는 글자수 기준</h2><p><table><thead><tr><th>용도</th><th>일반적인 기준</th></tr></thead><tbody><tr><td>자기소개서·공모전</td><td>회사·기관마다 다름 — 공고의 기준(공백 포함·제외, 바이트)을 따르기</td></tr><tr><td>바이트 제한</td><td>인코딩이 안 적혀 있으면 더 큰 UTF-8 값에 맞추기</td></tr><tr><td>인스타그램 캡션</td><td>2,200자</td></tr><tr><td>X(트위터)</td><td>280 (한글·한자·일본어와 이모지는 1자를 2로 셈 → 한글만 쓰면 140자)</td></tr><tr><td>원고지 매수</td><td>200자 원고지 기준 — 이 도구는 공백 포함 글자 수 ÷ 200(올림)</td></tr></tbody></table></p><p class="note">출처: 인스타그램 캡션 — Meta 개발자 문서 Instagram Graph API(IG User Media, caption 최대 2,200자), X — X 개발자 문서 「Counting characters」. 확인일 2026-10-31.</p>
+<img src="/img/charcount/character-count-limits.svg" width="800" height="490" alt="자주 쓰는 글자수 기준 — 자기소개서는 공고마다 다르고, 인스타그램 캡션 2,200자, X는 한글 140자"
      loading="lazy" decoding="async"
      style="max-width:100%;height:auto;display:block;margin:12px auto">
 <p>제출처별로 자주 쓰는 기준과 분량 줄이는 방법은 <a href="/guide/self-intro-char-count">자기소개서 글자수 세는 법</a> 가이드에 더 자세히 정리했어요.</p>
@@ -79,7 +79,7 @@
 <img src="/img/charcount/byte-count-encoding.svg" width="800" height="340" alt="바이트 계산기 한글 바이트"
      loading="lazy" decoding="async"
      style="max-width:100%;height:auto;display:block;margin:12px auto">
-<p>채용 사이트나 공공기관 양식에서 &quot;2,000바이트&quot;처럼 제한을 걸어 두는 곳이 있는데, 어느 인코딩인지는 적어 두지 않는 경우가 많아요. 오래된 시스템일수록 EUC-KR 기준인 경우가 많습니다. 두 값을 모두 보고 <strong>더 큰 쪽(UTF-8)으로 맞춰 두면</strong> 어느 기준이든 넘치지 않아요.</p>
+<p>채용 사이트나 공공기관 양식에서 &quot;2,000바이트&quot;처럼 제한을 걸어 두는 곳이 있는데, 어느 인코딩인지는 적어 두지 않는 경우가 많아요. 두 값을 모두 보고 <strong>더 큰 쪽(UTF-8)으로 맞춰 두면</strong> 어느 기준이든 넘치지 않아요.</p>
 
 <h2>줄바꿈·특수문자·이모지는 몇 자로 세나</h2><p>헷갈리기 쉬운 것들을 실제로 넣어 보면 이렇게 나옵니다.</p>
 <p><table><thead><tr><th>입력</th><th>공백 포함</th><th>공백 제외</th><th>UTF-8 바이트</th></tr></thead><tbody><tr><td>줄바꿈 1개</td><td>1자로 셈</td><td>세지 않음</td><td>1바이트</td></tr><tr><td>😀 (웃는 얼굴)</td><td>1자</td><td>1자</td><td>4바이트</td></tr><tr><td>👨‍👩‍👧 (가족)</td><td>5자</td><td>5자</td><td>18바이트</td></tr></tbody></table></p>
@@ -92,8 +92,8 @@
 <h2>사용 방법</h2><ol><li>위 입력칸에 글을 붙여넣으세요. 입력하는 대로 바로 세어져요.</li><li>목표 글자 수를 넣으면 남은 글자 수와 초과 여부가 색으로 표시돼요.</li><li>바이트 제한이면 아래 표에서 UTF-8과 EUC-KR 값을 확인하세요.</li></ol>
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
-<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>공백 포함과 공백 제외 중 뭐가 기준인가요?</summary><p>제출처 안내문을 따르는 게 원칙이고, 명시가 없으면 대부분 공백 포함이 기준이에요. 한글 문서(HWP)의 "문서 정보"도 공백 포함 글자 수를 기본으로 보여줍니다.</p></details><details><summary>줄바꿈도 글자로 세나요?</summary><p>기준에 따라 달라요. 이 도구는 세 가지를 같이 보여줍니다. <strong>공백 포함</strong>은 띄어쓰기와 줄바꿈을 모두 세고, <strong>공백 제외</strong>는 둘 다 빼요. <strong>줄바꿈만 제외</strong>는 띄어쓰기는 세고 줄바꿈만 뺀 값이라, &quot;공백 포함이지만 줄바꿈은 빼고 세는&quot; 양식에 맞출 때 보면 됩니다.</p></details><details><summary>바이트는 어떤 기준으로 세나요?</summary><p>UTF-8(한글 3바이트, 영문·숫자 1바이트)과 EUC-KR(한글 2바이트) 두 가지를 모두 계산해요. 오래된 채용 시스템은 EUC-KR 기준이 많습니다.</p></details><details><summary>입력한 글이 저장되나요?</summary><p>아니요. 모든 계산은 브라우저 안에서만 이루어지고 어디에도 전송되지 않아요.</p></details><details><summary>영어 단어 수는 어떤 기준으로 세나요?</summary><p>띄어쓰기를 기준으로 셉니다. 공백·탭·줄바꿈으로 나뉜 덩어리 하나가 한 단어예요. don't나 well-known처럼 붙어 있으면 한 단어로 셉니다. 제출처가 하이픈을 두 단어로 보는 곳이라면 숫자가 다를 수 있으니 안내문을 확인하세요.</p></details><details><summary>이모지는 몇 글자로 세나요?</summary><p>😀처럼 하나짜리 이모지는 1자, UTF-8로는 4바이트예요. 👨‍👩‍👧처럼 여러 그림이 이어 붙은 이모지는 눈에는 하나로 보여도 5자로 세어지고 18바이트가 됩니다. 글자 수가 빠듯하면 빼는 편이 안전해요.</p></details></section>
-  <footer>입력한 글은 브라우저에서만 세어지고 어디에도 전송되지 않아요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>공백 포함과 공백 제외 중 뭐가 기준인가요?</summary><p>제출처 안내문을 따르는 게 원칙이고, 명시가 없으면 대부분 공백 포함이 기준이에요.</p></details><details><summary>줄바꿈도 글자로 세나요?</summary><p>기준에 따라 달라요. 이 도구는 세 가지를 같이 보여줍니다. <strong>공백 포함</strong>은 띄어쓰기와 줄바꿈을 모두 세고, <strong>공백 제외</strong>는 둘 다 빼요. <strong>줄바꿈만 제외</strong>는 띄어쓰기는 세고 줄바꿈만 뺀 값이라, &quot;공백 포함이지만 줄바꿈은 빼고 세는&quot; 양식에 맞출 때 보면 됩니다.</p></details><details><summary>바이트는 어떤 기준으로 세나요?</summary><p>UTF-8(한글 3바이트, 영문·숫자 1바이트)과 EUC-KR(한글 2바이트) 두 가지를 모두 계산해요. 제출처가 어느 기준인지 적지 않았다면 더 큰 쪽(UTF-8)에 맞추면 안전해요.</p></details><details><summary>입력한 글이 저장되나요?</summary><p>아니요. 모든 계산은 브라우저 안에서만 이루어지고 어디에도 전송되지 않아요.</p></details><details><summary>영어 단어 수는 어떤 기준으로 세나요?</summary><p>띄어쓰기를 기준으로 셉니다. 공백·탭·줄바꿈으로 나뉜 덩어리 하나가 한 단어예요. don't나 well-known처럼 붙어 있으면 한 단어로 셉니다. 제출처가 하이픈을 두 단어로 보는 곳이라면 숫자가 다를 수 있으니 안내문을 확인하세요.</p></details><details><summary>이모지는 몇 글자로 세나요?</summary><p>😀처럼 하나짜리 이모지는 1자, UTF-8로는 4바이트예요. 👨‍👩‍👧처럼 여러 그림이 이어 붙은 이모지는 눈에는 하나로 보여도 5자로 세어지고 18바이트가 됩니다. 글자 수가 빠듯하면 빼는 편이 안전해요.</p></details></section>
+  <footer>입력한 글은 브라우저에서만 세어지고 어디에도 전송되지 않아요.<br><span class="version-tag">v1.1 · 2026-10-31 업데이트</span></footer>
 </main>
 
 <script>
@@ -106,13 +106,15 @@ function count(){
   const noSpaceNoBreak=[...t.replace(/[\r\n]/g,'')].length;
   const words=t.trim()? t.trim().split(/\s+/).length:0;
   const lines=t? t.split(/\n/).length:0;
-  const sentences=(t.match(/[^.!?。！？\n]+[.!?。！？]+/g)||[]).length;
+  // 소수점(3.5)은 문장 끝으로 보지 않고, 끝 부호 없는 마지막 문장·줄도 한 문장으로 센다
+  const sentences=t.replace(/(\d)\.(?=\d)/g,'$1').split(/[.!?。！？]+|\n/).filter(x=>x.trim()).length;
   const utf8=new TextEncoder().encode(t).length;
-  let euckr=0; for(const ch of t){ euckr+= ch.charCodeAt(0)>127?2:1; }
+  // EUC-KR(CP949)에 없는 문자(U+FFFF 밖 이모지, 이모지 결합 문자)는 바이트에서 빼고 따로 센다
+  let euckr=0, noEuc=0; for(const ch of t){ const c=ch.codePointAt(0); if(c>0xFFFF||c===0x200D||c===0xFE0F||c===0xFE0E){ noEuc++; continue; } euckr+= c>127?2:1; }
   const manuscript=Math.ceil(chars/200);
   const s=[['공백 포함',chars],['공백 제외',noSpace],['줄바꿈만 제외',noSpaceNoBreak],['단어',words],['문장',sentences],['줄',lines],['원고지(200자)',manuscript+'매']];
   $('stats').innerHTML=s.map(([l,v])=>`<div class="stat"><div class="num">${typeof v==='number'?v.toLocaleString():v}</div><div class="label">${l}</div></div>`).join('');
-  $('bytes').innerHTML=`<tr><td>UTF-8 (한글 3바이트)</td><td class="r">${utf8.toLocaleString()} bytes</td></tr><tr><td>EUC-KR (한글 2바이트)</td><td class="r">${euckr.toLocaleString()} bytes</td></tr>`;
+  $('bytes').innerHTML=`<tr><td>UTF-8 (한글 3바이트)</td><td class="r">${utf8.toLocaleString()} bytes</td></tr><tr><td>EUC-KR (한글 2바이트)</td><td class="r">${euckr.toLocaleString()} bytes</td></tr>${noEuc?`<tr><td colspan="2" class="note">이모지 등 EUC-KR에 없는 문자 ${noEuc.toLocaleString()}개는 EUC-KR 바이트에서 뺐어요. 그 기준의 양식에서는 입력되지 않거나 ?로 바뀔 수 있어요.</td></tr>`:''}`;
   const lim=+$('limit').value; const cur=$('limitMode').value==='withSpace'?chars:noSpace;
   $('limitBar').innerHTML= lim? (cur<=lim? `<span class="ok">${cur.toLocaleString()} / ${lim.toLocaleString()}자 — ${(lim-cur).toLocaleString()}자 남음</span>` : `<span class="bad">${cur.toLocaleString()} / ${lim.toLocaleString()}자 — ${(cur-lim).toLocaleString()}자 초과</span>`) : '';
 }

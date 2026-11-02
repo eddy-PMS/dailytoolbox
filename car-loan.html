@@ -26,7 +26,7 @@
 <script src="/common.js"></script>
 <link rel="stylesheet" href="/tool.css">
 <style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "할부와 리스·렌트 중 뭐가 유리한가요?", "acceptedAnswer": {"@type": "Answer", "text": "개인이 오래 탈 거면 할부(또는 은행 대출)가 총비용이 가장 적어요. 리스·렌트는 사업자 경비 처리나 3년 주기 교체에 유리하고, 보험·세금이 포함된 대신 총비용은 높아요."}}, {"@type": "Question", "name": "선수금을 많이 내는 게 좋나요?", "acceptedAnswer": {"@type": "Answer", "text": "이자를 줄이려면 선수금을 늘리는 게 좋지만, 그 돈을 예금·투자해서 할부 금리보다 높은 수익을 낼 수 있다면 할부가 나을 수도 있어요. 무이자 프로모션이면 선수금을 최소로 하는 게 유리해요."}}, {"@type": "Question", "name": "중도상환하면 수수료가 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "캐피탈 할부는 보통 잔액의 1~2% 중도상환수수료가 있고, 일정 기간(1~3년) 후 면제되는 경우가 많아요. 계약서를 확인하세요."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "할부와 리스·렌트 중 뭐가 유리한가요?", "acceptedAnswer": {"@type": "Answer", "text": "개인이 오래 탈 거면 할부(또는 은행 대출)가 총비용이 가장 적어요. 리스·렌트는 사업자 경비 처리나 3년 주기 교체에 유리하고, 보험·세금이 포함된 대신 총비용은 높아요."}}, {"@type": "Question", "name": "선수금을 많이 내는 게 좋나요?", "acceptedAnswer": {"@type": "Answer", "text": "이자를 줄이려면 선수금을 늘리는 게 좋지만, 그 돈을 예금·투자해서 할부 금리보다 높은 수익을 낼 수 있다면 할부가 나을 수도 있어요. 무이자 프로모션이면 선수금을 최소로 하는 게 유리해요."}}, {"@type": "Question", "name": "중도상환하면 수수료가 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "계약마다 달라요. 수수료율과 면제 시점은 계약서·상품설명서에서 확인하세요. 참고로 금융소비자보호법은 대출성 상품의 중도상환수수료를 원칙적으로 금지하고, 대출일부터 3년 안에 갚을 때만 예외로 받을 수 있게 하고 있어요(금융위원회 2023-11-29 보도자료). 자동차 할부 계약에 어떻게 적용되는지는 금융사에 확인하세요."}}]}</script>
 </head>
 <body>
 
@@ -45,7 +45,7 @@
       <div class="field"><label>선수금 (계약금·현금 납부)</label><div class="unit"><input type="number" id="down" value="5000000" step="100000"><span>원</span></div></div>
       <div class="field"><label>할부 금리 (연)</label><div class="unit"><input type="number" id="rate" value="5.9" step="0.1"><span>%</span></div></div>
       <div class="field"><label>할부 기간</label><select id="months"><option value="12">12개월</option><option value="24">24개월</option><option value="36" selected>36개월</option><option value="48">48개월</option><option value="60">60개월</option><option value="72">72개월</option></select></div>
-      <div class="field"><label>잔가유예 비율 (0이면 일반 할부)</label><div class="unit"><input type="number" id="residual" value="0" min="0" max="60" step="5"><span>%</span></div></div>
+      <div class="field"><label>잔가유예 비율 (할부 원금 대비, 0이면 일반 할부)</label><div class="unit"><input type="number" id="residual" value="0" min="0" max="60" step="5"><span>%</span></div></div>
       <div class="field"><label>취득세·등록 비용 포함</label><select id="tax"><option value="0">포함 안 함</option><option value="0.07" selected>승용차 약 7% (취득세 7%)</option><option value="0.05">경차·화물 약 5%</option></select></div>
     </div>
     <div id="out" style="margin-top:14px"></div>
@@ -56,13 +56,13 @@
 <div class="guides-rel"><div class="lb"><img src="/icons/ui-guide.webp" width="22" height="22" alt="">관련 가이드</div><a href="/guide/car-tax-guide"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">자동차 취득세·개별소비세·자동차세 — 자동차 세금 한 번에 정리</span><span class="go">›</span></a><a href="/guide/loan-repayment-types"><img class="gic" src="/icons/ui-guide.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span class="tx">원리금균등 원금균등 차이 — 어떤 게 유리할까, 대출 이자 줄이는 순서</span><span class="go">›</span></a></div>
 <!-- guides:tool:end -->
 <section class="seo">
-<h2>자동차 할부, 어떻게 계산되나요</h2><p>자동차 할부는 차량가에서 선수금(계약금·현금 납부분)을 뺀 금액을 원리금균등 방식으로 나눠 갚는 구조예요. 3,500만원 차를 선수금 500만원, 연 5.9%, 36개월로 사면 월 약 91만원을 내고 총 이자는 약 280만원이에요. 기간을 60개월로 늘리면 월 부담은 58만원으로 줄지만 총 이자는 약 470만원으로 늘어나요. 월 납입금만 보지 말고 총 이자를 꼭 비교하세요.</p><p>잔가유예(거치·유예) 할부는 차량가의 30~50%를 만기에 한 번에 내는 조건으로 월 납입금을 낮춘 상품이에요. 만기에 잔가를 내거나 재할부하거나 차를 반납하는데, 총 이자는 일반 할부보다 많고 재할부 시 금리가 오르는 경우가 흔해요. 3년 뒤 차를 바꿀 계획이 확실할 때만 유리해요.</p>
-<h2>차 살 때 드는 추가 비용</h2><p><table><thead><tr><th>항목</th><th class="r">금액</th><th>비고</th></tr></thead><tbody><tr><td>취득세</td><td class="r">차량가의 7%</td><td>경차 4% (감면), 승합·화물 5%, 전기차 최대 140만원 감면</td></tr><tr><td>공채 매입</td><td class="r">차량가의 0~20% (지역별)</td><td>대부분 즉시 할인 매도(실부담 1~2%)</td></tr><tr><td>번호판·등록대행</td><td class="r">5~15만원</td><td></td></tr><tr><td>탁송료</td><td class="r">10~30만원</td><td>거리에 따라</td></tr><tr><td>보험료 (첫해)</td><td class="r">60~150만원+</td><td>연령·차종·경력에 따라 큰 차이</td></tr></tbody></table></p><p>캐피탈사 할부 금리는 신용도에 따라 4~9%, 제조사 금융(현대캐피탈 등)은 프로모션으로 무이자~3%대도 있어요. 카드사 할부는 결제 한도 내에서 가능하고 캐시백이 붙기도 해요. 은행 자동차 대출(신용대출 형태)이 금리가 가장 낮은 경우가 많으니 세 가지를 비교하세요.</p>
+<h2>자동차 할부, 어떻게 계산되나요</h2><p>자동차 할부는 차량가에서 선수금(계약금·현금 납부분)을 뺀 금액을 원리금균등 방식으로 나눠 갚는 구조예요. 3,500만원 차를 선수금 500만원, 연 5.9%, 36개월로 사면 월 약 91만원을 내고 총 이자는 약 280만원이에요. 기간을 60개월로 늘리면 월 부담은 58만원으로 줄지만 총 이자는 약 470만원으로 늘어나요. 월 납입금만 보지 말고 총 이자를 꼭 비교하세요.</p><p>잔가유예(거치·유예) 할부는 할부 원금의 일부를 만기에 한 번에 내는 조건으로 월 납입금을 낮춘 상품이에요. 유예 비율은 금융사·상품마다 다르고, 이 계산기는 할부 원금(차량가 − 선수금)에 넣은 비율을 곱해 만기 잔가를 계산해요. 만기에 잔가를 내거나 재할부하거나 차를 반납하는데, 잔가에도 이자가 계속 붙어 총 이자는 일반 할부보다 많아요. 재할부 금리와 반납 조건은 계약 전에 꼭 확인하세요.</p>
+<h2>차 살 때 드는 추가 비용</h2><p><table><thead><tr><th>항목</th><th class="r">금액</th><th>비고</th></tr></thead><tbody><tr><td>취득세</td><td class="r">차량가의 7%</td><td>경차 4% (감면), 승합·화물 5%, 전기차 최대 140만원 감면</td></tr><tr><td>공채 매입</td><td class="r">차량가의 0~20% (지역별)</td><td>대부분 즉시 할인 매도(실부담 1~2%)</td></tr><tr><td>번호판·등록대행</td><td class="r">5~15만원</td><td></td></tr><tr><td>탁송료</td><td class="r">10~30만원</td><td>거리에 따라</td></tr><tr><td>보험료 (첫해)</td><td class="r">60~150만원+</td><td>연령·차종·경력에 따라 큰 차이</td></tr></tbody></table></p><p>할부 금리는 금융사·신용도·차종·프로모션에 따라 크게 달라요. 캐피탈사 할부, 카드사 할부, 은행 자동차대출 견적을 각각 받아 위 계산기에 넣고 월 납입금보다 총 이자를 비교하세요.</p>
 <h2>사용 방법</h2><ol><li>차량 가격, 선수금, 할부 금리, 기간을 입력하세요.</li><li>잔가유예 할부라면 잔가 비율을 넣으면 일반 할부와 비교돼요.</li><li>취득세 옵션을 켜면 총 구매 비용까지 나와요.</li></ol>
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
-<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>할부와 리스·렌트 중 뭐가 유리한가요?</summary><p>개인이 오래 탈 거면 할부(또는 은행 대출)가 총비용이 가장 적어요. 리스·렌트는 사업자 경비 처리나 3년 주기 교체에 유리하고, 보험·세금이 포함된 대신 총비용은 높아요.</p></details><details><summary>선수금을 많이 내는 게 좋나요?</summary><p>이자를 줄이려면 선수금을 늘리는 게 좋지만, 그 돈을 예금·투자해서 할부 금리보다 높은 수익을 낼 수 있다면 할부가 나을 수도 있어요. 무이자 프로모션이면 선수금을 최소로 하는 게 유리해요.</p></details><details><summary>중도상환하면 수수료가 있나요?</summary><p>캐피탈 할부는 보통 잔액의 1~2% 중도상환수수료가 있고, 일정 기간(1~3년) 후 면제되는 경우가 많아요. 계약서를 확인하세요.</p></details></section>
-  <footer>원리금균등 월 복리 기준이며 취급수수료·보증보험료는 반영하지 않아요. 실제 조건은 견적서를 확인하세요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>할부와 리스·렌트 중 뭐가 유리한가요?</summary><p>개인이 오래 탈 거면 할부(또는 은행 대출)가 총비용이 가장 적어요. 리스·렌트는 사업자 경비 처리나 3년 주기 교체에 유리하고, 보험·세금이 포함된 대신 총비용은 높아요.</p></details><details><summary>선수금을 많이 내는 게 좋나요?</summary><p>이자를 줄이려면 선수금을 늘리는 게 좋지만, 그 돈을 예금·투자해서 할부 금리보다 높은 수익을 낼 수 있다면 할부가 나을 수도 있어요. 무이자 프로모션이면 선수금을 최소로 하는 게 유리해요.</p></details><details><summary>중도상환하면 수수료가 있나요?</summary><p>계약마다 달라요. 수수료율과 면제 시점은 계약서·상품설명서에서 확인하세요. 참고로 금융소비자보호법은 대출성 상품의 중도상환수수료를 원칙적으로 금지하고, 대출일부터 3년 안에 갚을 때만 예외로 받을 수 있게 하고 있어요(금융위원회 2023-11-29 보도자료). 자동차 할부 계약에 어떻게 적용되는지는 금융사에 확인하세요.</p></details></section>
+  <footer>원리금균등 월 복리 기준이며 취급수수료·보증보험료는 반영하지 않아요. 실제 조건은 견적서를 확인하세요.<br><span class="version-tag">v1.1 · 2026-10-31 업데이트</span></footer>
 </main>
 
 <script>
@@ -85,7 +85,7 @@ function calc(){
       <tr><td><b>총 구매 비용 (차량가+이자${taxRate?'+취득세':''})</b></td><td class="r"><b>${won(totalCost)}</b></td></tr>
       ${res?`<tr><td>비교: 일반 할부 시 월 납입금 / 총 이자</td><td class="r">${won(m0)} / ${won(int0)}</td></tr>`:''}
     </tbody></table>
-    <div class="note">${res?'잔가유예 할부는 월 납입은 줄지만 만기에 잔가를 한 번에 내거나 재할부해야 하고 총 이자는 더 많아요. ':''}취득세는 차량가(부가세 포함 공급가액 기준)의 7%이며, 공채 매입·번호판·탁송료 등은 별도예요. 캐피탈·카드사 할부는 무이자·저금리 프로모션에 따라 실제 조건이 달라요.</div>`;
+    <div class="note">${res?'잔가유예 할부는 월 납입은 줄지만 만기에 잔가를 한 번에 내거나 재할부해야 하고 총 이자는 더 많아요. ':''}취득세는 부가세를 뺀 취득가격에 세율(비영업용 승용차 7%)을 곱해요. 이 계산기는 입력한 차량가에 그대로 곱하므로, 부가세가 포함된 가격을 넣으면 실제보다 조금 크게 나와요. 공채 매입·번호판·탁송료 등은 별도이고, 실제 금리·조건은 금융사 견적에 따라 달라요.</div>`;
   if(typeof gtag==='function') gtag('event','car_loan_calculated',{n});
 }
 ['price','down','rate','months','residual','tax'].forEach(id=>$(id).addEventListener('input',calc)); calc();

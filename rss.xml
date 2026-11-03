@@ -5,14 +5,28 @@
   <link>https://dailyfreetoolbox.com/</link>
   <description>연봉 실수령액·만 나이·환율 계산기부터 퍼즐·두뇌 훈련·어학 도구까지. 회원가입·설치 없이 바로 쓰는 무료 웹 도구 모음.</description>
   <language>ko</language>
-  <lastBuildDate>Sat, 31 Oct 2026 00:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0900</lastBuildDate>
   <atom:link href="https://dailyfreetoolbox.com/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
-    <title>글자수 세기 - 글자수 계산기, 공백 포함·제외·바이트·단어수 세기</title>
+    <title>글자수 세기·영어 단어 수 세기 - 공백 포함·제외, 바이트 계산기</title>
     <link>https://dailyfreetoolbox.com/charcount</link>
-    <description>자소서·보고서 글자수를 공백 포함·제외로 세는 무료 글자수 계산기. 바이트 계산, 영어 단어수 세기, 원고지 매수까지 입력하는 대로 바로 보여줘요.</description>
-    <pubDate>Sat, 31 Oct 2026 00:00:00 +0900</pubDate>
+    <description>자소서 글자수를 공백 포함·제외로 바로 세고, 영어 단어 수·바이트·원고지 매수까지 한 화면에 보여 줘요. 붙여 넣기만 하면 되는 무료 글자수 계산기.</description>
+    <pubDate>Wed, 04 Nov 2026 00:00:00 +0900</pubDate>
     <guid isPermaLink="true">https://dailyfreetoolbox.com/charcount</guid>
+  </item>
+  <item>
+    <title>경력 계산기·근무경력 계산기 - 재직기간·근무기간 계산, 여러 회사 합산</title>
+    <link>https://dailyfreetoolbox.com/career</link>
+    <description>입사일·퇴사일만 넣으면 근무경력을 년·월·일과 총 일수로 계산해요. 여러 회사 경력을 공백 기간 빼고 합산하는 무료 경력 계산기.</description>
+    <pubDate>Wed, 04 Nov 2026 00:00:00 +0900</pubDate>
+    <guid isPermaLink="true">https://dailyfreetoolbox.com/career</guid>
+  </item>
+  <item>
+    <title>데일리 프리 툴박스 | 회원가입 없이 바로 쓰는 무료 웹 도구 모음</title>
+    <link>https://dailyfreetoolbox.com/</link>
+    <description>연봉 실수령액·만 나이·환율 계산기부터 퍼즐·두뇌 훈련·어학 도구까지. 회원가입·설치 없이 바로 쓰는 무료 웹 도구 모음.</description>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 +0900</pubDate>
+    <guid isPermaLink="true">https://dailyfreetoolbox.com/</guid>
   </item>
   <item>
     <title>한글 타자연습·타자 속도 테스트 - 분당 타수·WPM 측정</title>
@@ -48,13 +62,6 @@
     <description>항목을 넣으면 토너먼트가 자동으로 만들어지는 무료 이상형 월드컵 만들기 도구. 짧은 공유 링크가 생기고, 친구들이 플레이한 결과로 우승 비율 랭킹도 볼 수 있어요.</description>
     <pubDate>Sat, 31 Oct 2026 00:00:00 +0900</pubDate>
     <guid isPermaLink="true">https://dailyfreetoolbox.com/worldcup</guid>
-  </item>
-  <item>
-    <title>데일리 프리 툴박스 | 회원가입 없이 바로 쓰는 무료 웹 도구 모음</title>
-    <link>https://dailyfreetoolbox.com/</link>
-    <description>연봉 실수령액·만 나이·환율 계산기부터 퍼즐·두뇌 훈련·어학 도구까지. 회원가입·설치 없이 바로 쓰는 무료 웹 도구 모음.</description>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 +0900</pubDate>
-    <guid isPermaLink="true">https://dailyfreetoolbox.com/</guid>
   </item>
   <item>
     <title>중국어 병음 변환기 - 한자 발음 성조 표기 무료 도구</title>
@@ -986,13 +993,6 @@
     <description>이름을 넣어 손글씨 폰트로 사인을 만들거나 직접 그려서 투명 PNG 서명 이미지로 저장하는 무료 도구. 전자 문서에 붙이는 이미지이고 인증서 기반 전자서명은 아니에요. 업로드 없이 처리해요.</description>
     <pubDate>Sun, 04 Oct 2026 00:00:00 +0900</pubDate>
     <guid isPermaLink="true">https://dailyfreetoolbox.com/sign</guid>
-  </item>
-  <item>
-    <title>경력 계산기 - 근무기간·재직기간 계산, 여러 회사 경력 합산</title>
-    <link>https://dailyfreetoolbox.com/career</link>
-    <description>입사일과 퇴사일로 근무기간·재직기간을 년·월·일로 계산하고, 여러 회사 경력을 더해 합산하는 무료 경력 계산기. 공백 기간을 빼고 근속년수도 바로 확인해요.</description>
-    <pubDate>Sun, 04 Oct 2026 00:00:00 +0900</pubDate>
-    <guid isPermaLink="true">https://dailyfreetoolbox.com/career</guid>
   </item>
   <item>
     <title>GPA 환산·학점 환산법 — 4.5 만점과 4.3 만점, 백분위 100점까지</title>

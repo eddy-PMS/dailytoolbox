@@ -564,9 +564,12 @@ def refresh_sitemap_lastmod():
             return re.sub(r'<lastmod>[^<]*</lastmod>', f'<lastmod>{d}</lastmod>', block)
         return block.replace(f'<loc>{url}</loc>', f'<loc>{url}</loc>\n    <lastmod>{d}</lastmod>')
 
-    n = len(re.findall(r'<loc>', head))
+    # 가이드 구역(guides:start~end) 뒤에 붙은 도구 주소도 함께 맞춘다
+    guides, sep2, after = tail.partition('<!-- guides:end -->')
+    n = len(re.findall(r'<loc>', head + after))
     head = re.sub(r'  <url>\s*<loc>([^<]+)</loc>.*?</url>', one, head, flags=re.S)
-    open(path, 'w', encoding='utf-8').write(head + sep + tail)
+    after = re.sub(r'  <url>\s*<loc>([^<]+)</loc>.*?</url>', one, after, flags=re.S)
+    open(path, 'w', encoding='utf-8').write(head + sep + guides + sep2 + after)
     print(f'sitemap lastmod 반영 ({n}개 주소)')
 
 def build_rss():

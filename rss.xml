@@ -5,8 +5,92 @@
   <link>https://dailyfreetoolbox.com/</link>
   <description>연봉 실수령액·만 나이·환율 계산기부터 퍼즐·두뇌 훈련·어학 도구까지. 회원가입·설치 없이 바로 쓰는 무료 웹 도구 모음.</description>
   <language>ko</language>
-  <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0900</lastBuildDate>
   <atom:link href="https://dailyfreetoolbox.com/rss.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>대출 이자 계산기 - 원리금균등·원금균등·만기일시 상환 비교</title>
+    <link>https://dailyfreetoolbox.com/loan</link>
+    <description>대출 원금·금리·기간을 입력하면 상환 방식별 월 납입금과 총 이자를 비교하고 상환 스케줄을 보여주는 무료 계산기.</description>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0900</pubDate>
+    <guid isPermaLink="true">https://dailyfreetoolbox.com/loan</guid>
+  </item>
+  <item>
+    <title>로마자 표기법 변환기 - 한글 이름 영어로 변환, 여권 영문 이름</title>
+    <link>https://dailyfreetoolbox.com/romanize</link>
+    <description>한글 이름을 국어의 로마자 표기법에 따라 영어로 변환하는 무료 도구. 성씨 관용 표기(Kim, Lee, Park)와 여권용 붙여쓰기·하이픈 표기를 함께 보여줘요.</description>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0900</pubDate>
+    <guid isPermaLink="true">https://dailyfreetoolbox.com/romanize</guid>
+  </item>
+  <item>
+    <title>물타기 계산기 - 추가 매수로 평단 낮추기, 목표 평단 필요 수량</title>
+    <link>https://dailyfreetoolbox.com/avgdown</link>
+    <description>보유 평단과 현재가를 넣으면 추가 매수 후 평단 변화와, 목표 평단까지 필요한 수량·금액을 계산하는 무료 물타기 계산기.</description>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0900</pubDate>
+    <guid isPermaLink="true">https://dailyfreetoolbox.com/avgdown</guid>
+  </item>
+  <item>
+    <title>복리 계산기 &amp; 적금 계산기 - 매달 적립 시 만기 금액, 세후 이자</title>
+    <link>https://dailyfreetoolbox.com/compound</link>
+    <description>목돈 복리 투자와 매달 적립하는 적금의 만기 금액, 총 이자, 세후 수령액을 계산하고 연도별 증가표를 보여주는 무료 계산기.</description>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0900</pubDate>
+    <guid isPermaLink="true">https://dailyfreetoolbox.com/compound</guid>
+  </item>
+  <item>
+    <title>임신 주수 계산기·출산예정일 계산기 - 마지막 생리일로 계산</title>
+    <link>https://dailyfreetoolbox.com/pregnancy</link>
+    <description>마지막 생리 시작일을 넣으면 출산예정일과 현재 임신 주수(주차)·일수, 삼분기, 주요 검사 시기를 알려주는 무료 임신 주수 계산기.</description>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0900</pubDate>
+    <guid isPermaLink="true">https://dailyfreetoolbox.com/pregnancy</guid>
+  </item>
+  <item>
+    <title>강아지 사람 나이 계산기 - 강아지·고양이 나이 환산</title>
+    <link>https://dailyfreetoolbox.com/pet-age</link>
+    <description>강아지·고양이 나이를 사람 나이로 환산해주는 무료 계산기. 강아지는 크기별, 최신 연구 공식 반영.</description>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0900</pubDate>
+    <guid isPermaLink="true">https://dailyfreetoolbox.com/pet-age</guid>
+  </item>
+  <item>
+    <title>주휴수당 계산기·알바 급여 계산기 2026 - 야간수당 포함 월급</title>
+    <link>https://dailyfreetoolbox.com/parttime</link>
+    <description>시급과 근무시간을 넣으면 2026년 최저시급 기준 주휴수당·야간·연장수당을 반영한 주급·월급과 3.3% 공제 후 실수령액을 계산하는 무료 주휴수당 계산기.</description>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0900</pubDate>
+    <guid isPermaLink="true">https://dailyfreetoolbox.com/parttime</guid>
+  </item>
+  <item>
+    <title>연차 계산기 - 입사일 기준 연차 발생 개수와 발생일</title>
+    <link>https://dailyfreetoolbox.com/annual-leave</link>
+    <description>입사일을 넣으면 근로기준법에 따른 올해 연차 개수, 1년 미만 월차 발생, 근속별 가산 연차와 다음 발생일을 계산하는 무료 도구.</description>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0900</pubDate>
+    <guid isPermaLink="true">https://dailyfreetoolbox.com/annual-leave</guid>
+  </item>
+  <item>
+    <title>연차수당 계산기 - 미사용 연차 1일이 얼마인지 바로 계산</title>
+    <link>https://dailyfreetoolbox.com/leave-pay</link>
+    <description>월 통상임금과 미사용 연차일수를 넣으면 1일 통상임금과 연차수당을 계산해요. 209시간 기준 시간당·1일 통상임금과 일수별 금액표까지 한 번에. 무료, 설치 없음.</description>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0900</pubDate>
+    <guid isPermaLink="true">https://dailyfreetoolbox.com/leave-pay</guid>
+  </item>
+  <item>
+    <title>단위 변환기 - 단위 환산, 길이·넓이·무게 단위 변환·인치 cm·파운드 kg·화씨 섭씨</title>
+    <link>https://dailyfreetoolbox.com/unit</link>
+    <description>길이·넓이·무게·부피·온도·속도 단위를 입력하는 즉시 바꾸는 무료 단위 변환기. 인치↔cm, 파운드↔kg, 화씨↔섭씨, 평↔㎡까지 모든 단위로 한 번에 환산해요.</description>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0900</pubDate>
+    <guid isPermaLink="true">https://dailyfreetoolbox.com/unit</guid>
+  </item>
+  <item>
+    <title>환율 계산기 - 달러 엔 유로 위안 원화 환전 계산</title>
+    <link>https://dailyfreetoolbox.com/exchange</link>
+    <description>유럽중앙은행 고시 환율로 달러·엔·유로·위안 등 주요 통화를 원화로 변환하는 무료 환율 계산기. 매일 갱신.</description>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0900</pubDate>
+    <guid isPermaLink="true">https://dailyfreetoolbox.com/exchange</guid>
+  </item>
+  <item>
+    <title>전세대출 이자 계산기 - 월 이자·총 이자, 전세 vs 월세 비교</title>
+    <link>https://dailyfreetoolbox.com/jeonse-loan</link>
+    <description>전세자금대출 금액과 금리, 기간을 넣으면 월 이자와 총 이자를 계산하고, 같은 집을 월세로 살 때와 월 부담을 비교하는 무료 계산기.</description>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0900</pubDate>
+    <guid isPermaLink="true">https://dailyfreetoolbox.com/jeonse-loan</guid>
+  </item>
   <item>
     <title>글자수 세기·영어 단어 수 세기 - 공백 포함·제외, 바이트 계산기</title>
     <link>https://dailyfreetoolbox.com/charcount</link>
@@ -218,13 +302,6 @@
     <guid isPermaLink="true">https://dailyfreetoolbox.com/severance</guid>
   </item>
   <item>
-    <title>대출 이자 계산기 - 원리금균등·원금균등·만기일시 상환 비교</title>
-    <link>https://dailyfreetoolbox.com/loan</link>
-    <description>대출 원금·금리·기간을 입력하면 상환 방식별 월 납입금과 총 이자를 비교하고 상환 스케줄을 보여주는 무료 계산기.</description>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 +0900</pubDate>
-    <guid isPermaLink="true">https://dailyfreetoolbox.com/loan</guid>
-  </item>
-  <item>
     <title>부가세 계산기 - 공급가액·부가세·합계금액 상호 변환</title>
     <link>https://dailyfreetoolbox.com/vat</link>
     <description>금액 하나만 넣으면 공급가액, 부가세(10%), 합계금액을 서로 변환해주는 무료 계산기. 세금계산서·견적서 작성에 유용.</description>
@@ -244,13 +321,6 @@
     <description>시험·기념일까지 남은 날(디데이)과 지난 날, 특정 날짜에서 N일 후·전 날짜를 계산하는 무료 날짜 계산기.</description>
     <pubDate>Thu, 29 Oct 2026 00:00:00 +0900</pubDate>
     <guid isPermaLink="true">https://dailyfreetoolbox.com/dday</guid>
-  </item>
-  <item>
-    <title>로마자 표기법 변환기 - 한글 이름 영어로 변환, 여권 영문 이름</title>
-    <link>https://dailyfreetoolbox.com/romanize</link>
-    <description>한글 이름을 국어의 로마자 표기법에 따라 영어로 변환하는 무료 도구. 성씨 관용 표기(Kim, Lee, Park)와 여권용 붙여쓰기·하이픈 표기를 함께 보여줘요.</description>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 +0900</pubDate>
-    <guid isPermaLink="true">https://dailyfreetoolbox.com/romanize</guid>
   </item>
   <item>
     <title>운전면허 필기 모의고사 - 운전면허 필기시험 문제 무료 풀기 (1종·2종 보통)</title>
@@ -533,27 +603,6 @@
     <guid isPermaLink="true">https://dailyfreetoolbox.com/avgprice</guid>
   </item>
   <item>
-    <title>물타기 계산기 - 추가 매수로 평단 낮추기, 목표 평단 필요 수량</title>
-    <link>https://dailyfreetoolbox.com/avgdown</link>
-    <description>보유 평단과 현재가를 넣으면 추가 매수 후 평단 변화와, 목표 평단까지 필요한 수량·금액을 계산하는 무료 물타기 계산기.</description>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 +0900</pubDate>
-    <guid isPermaLink="true">https://dailyfreetoolbox.com/avgdown</guid>
-  </item>
-  <item>
-    <title>복리 계산기 &amp; 적금 계산기 - 매달 적립 시 만기 금액, 세후 이자</title>
-    <link>https://dailyfreetoolbox.com/compound</link>
-    <description>목돈 복리 투자와 매달 적립하는 적금의 만기 금액, 총 이자, 세후 수령액을 계산하고 연도별 증가표를 보여주는 무료 계산기.</description>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 +0900</pubDate>
-    <guid isPermaLink="true">https://dailyfreetoolbox.com/compound</guid>
-  </item>
-  <item>
-    <title>임신 주수 계산기·출산예정일 계산기 - 마지막 생리일로 계산</title>
-    <link>https://dailyfreetoolbox.com/pregnancy</link>
-    <description>마지막 생리 시작일을 넣으면 출산예정일과 현재 임신 주수(주차)·일수, 삼분기, 주요 검사 시기를 알려주는 무료 임신 주수 계산기.</description>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 +0900</pubDate>
-    <guid isPermaLink="true">https://dailyfreetoolbox.com/pregnancy</guid>
-  </item>
-  <item>
     <title>배란일 계산기 - 가임기·생리 예정일 계산</title>
     <link>https://dailyfreetoolbox.com/ovulation</link>
     <description>마지막 생리일과 주기를 넣으면 다음 배란일, 가임기(임신 가능 기간), 다음 생리 예정일을 3개월치 계산하는 무료 도구.</description>
@@ -566,34 +615,6 @@
     <description>아기 생년월일로 오늘 생후 며칠·몇 개월인지, 백일과 첫돌 날짜, 개월별 기념일을 계산하는 무료 도구.</description>
     <pubDate>Thu, 29 Oct 2026 00:00:00 +0900</pubDate>
     <guid isPermaLink="true">https://dailyfreetoolbox.com/baby-age</guid>
-  </item>
-  <item>
-    <title>강아지 사람 나이 계산기 - 강아지·고양이 나이 환산</title>
-    <link>https://dailyfreetoolbox.com/pet-age</link>
-    <description>강아지·고양이 나이를 사람 나이로 환산해주는 무료 계산기. 강아지는 크기별, 최신 연구 공식 반영.</description>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 +0900</pubDate>
-    <guid isPermaLink="true">https://dailyfreetoolbox.com/pet-age</guid>
-  </item>
-  <item>
-    <title>주휴수당 계산기·알바 급여 계산기 2026 - 야간수당 포함 월급</title>
-    <link>https://dailyfreetoolbox.com/parttime</link>
-    <description>시급과 근무시간을 넣으면 2026년 최저시급 기준 주휴수당·야간·연장수당을 반영한 주급·월급과 3.3% 공제 후 실수령액을 계산하는 무료 주휴수당 계산기.</description>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 +0900</pubDate>
-    <guid isPermaLink="true">https://dailyfreetoolbox.com/parttime</guid>
-  </item>
-  <item>
-    <title>연차 계산기 - 입사일 기준 연차 발생 개수와 발생일</title>
-    <link>https://dailyfreetoolbox.com/annual-leave</link>
-    <description>입사일을 넣으면 근로기준법에 따른 올해 연차 개수, 1년 미만 월차 발생, 근속별 가산 연차와 다음 발생일을 계산하는 무료 도구.</description>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 +0900</pubDate>
-    <guid isPermaLink="true">https://dailyfreetoolbox.com/annual-leave</guid>
-  </item>
-  <item>
-    <title>연차수당 계산기 - 미사용 연차 1일이 얼마인지 바로 계산</title>
-    <link>https://dailyfreetoolbox.com/leave-pay</link>
-    <description>월 통상임금과 미사용 연차일수를 넣으면 1일 통상임금과 연차수당을 계산해요. 209시간 기준 시간당·1일 통상임금과 일수별 금액표까지 한 번에. 무료, 설치 없음.</description>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 +0900</pubDate>
-    <guid isPermaLink="true">https://dailyfreetoolbox.com/leave-pay</guid>
   </item>
   <item>
     <title>시급 월급 연봉 변환기 - 시급으로 월급, 연봉으로 시급 계산</title>
@@ -652,13 +673,6 @@
     <guid isPermaLink="true">https://dailyfreetoolbox.com/freelancer-tax</guid>
   </item>
   <item>
-    <title>단위 변환기 - 단위 환산, 길이·넓이·무게 단위 변환·인치 cm·파운드 kg·화씨 섭씨</title>
-    <link>https://dailyfreetoolbox.com/unit</link>
-    <description>길이·넓이·무게·부피·온도·속도 단위를 입력하는 즉시 바꾸는 무료 단위 변환기. 인치↔cm, 파운드↔kg, 화씨↔섭씨, 평↔㎡까지 모든 단위로 한 번에 환산해요.</description>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 +0900</pubDate>
-    <guid isPermaLink="true">https://dailyfreetoolbox.com/unit</guid>
-  </item>
-  <item>
     <title>신발 사이즈표 - US·UK·EU 신발 사이즈 mm 변환 (남성·여성)</title>
     <link>https://dailyfreetoolbox.com/shoe-size</link>
     <description>한국 신발 사이즈(mm)를 넣으면 미국 US·영국 UK·유럽 EU 사이즈로 바로 바꿔 주는 무료 신발 사이즈 변환기. 남성·여성 신발 사이즈표와 발 사이즈 재는법도 정리했어요.</description>
@@ -671,13 +685,6 @@
     <description>평을 제곱미터(㎡)로, 제곱미터를 평으로 바로 바꾸는 무료 평수 계산기. 가로·세로 길이로 평수를 구하고, 평수를 한 변 길이(m·cm)로도 볼 수 있어요. 1평 = 3.305785㎡ 기준.</description>
     <pubDate>Thu, 29 Oct 2026 00:00:00 +0900</pubDate>
     <guid isPermaLink="true">https://dailyfreetoolbox.com/pyeong</guid>
-  </item>
-  <item>
-    <title>환율 계산기 - 달러 엔 유로 위안 원화 환전 계산</title>
-    <link>https://dailyfreetoolbox.com/exchange</link>
-    <description>유럽중앙은행 고시 환율로 달러·엔·유로·위안 등 주요 통화를 원화로 변환하는 무료 환율 계산기. 매일 갱신.</description>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 +0900</pubDate>
-    <guid isPermaLink="true">https://dailyfreetoolbox.com/exchange</guid>
   </item>
   <item>
     <title>로또 번호 생성기·추출기 - 고정·제외 번호로 무료 번호 추천</title>
@@ -706,13 +713,6 @@
     <description>거리와 목표 시간을 넣으면 km당 페이스와 속도를, 페이스를 넣으면 5km·10km·하프·풀 완주 예상 시간을 계산하는 무료 러닝 계산기.</description>
     <pubDate>Thu, 29 Oct 2026 00:00:00 +0900</pubDate>
     <guid isPermaLink="true">https://dailyfreetoolbox.com/pace</guid>
-  </item>
-  <item>
-    <title>전세대출 이자 계산기 - 월 이자·총 이자, 전세 vs 월세 비교</title>
-    <link>https://dailyfreetoolbox.com/jeonse-loan</link>
-    <description>전세자금대출 금액과 금리, 기간을 넣으면 월 이자와 총 이자를 계산하고, 같은 집을 월세로 살 때와 월 부담을 비교하는 무료 계산기.</description>
-    <pubDate>Thu, 29 Oct 2026 00:00:00 +0900</pubDate>
-    <guid isPermaLink="true">https://dailyfreetoolbox.com/jeonse-loan</guid>
   </item>
   <item>
     <title>주택담보대출 한도 계산기 2026 - LTV·DSR·스트레스 DSR 반영</title>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
+<title>핸드폰 타자연습 - 모바일 타자연습·휴대폰 타자 속도 측정</title>
+<meta name="description" content="핸드폰으로 짧은 문장 5개를 엄지로 쳐서 분당 타수와 정확도를 재는 무료 핸드폰 타자연습이에요. 모바일 타자연습, 휴대폰 타자 속도 연습에 쓰세요.">
+<meta name="keywords" content="핸드폰 타자연습, 모바일 타자연습, 휴대폰 타자연습, 폰 타자연습, 스마트폰 타자연습, 핸드폰 타자 속도, 모바일 타자">
+<link rel="canonical" href="https://dailyfreetoolbox.com/phone-typing">
+<meta property="og:type" content="website">
+<meta property="og:title" content="핸드폰 타자연습 - 모바일 타자연습·휴대폰 타자 속도 측정">
+<meta property="og:description" content="핸드폰으로 짧은 문장 5개를 엄지로 쳐서 분당 타수와 정확도를 재는 무료 핸드폰 타자연습이에요. 모바일 타자연습, 휴대폰 타자 속도 연습에 쓰세요.">
+<meta property="og:url" content="https://dailyfreetoolbox.com/phone-typing">
+<meta property="og:image" content="https://dailyfreetoolbox.com/og/og-phone-typing.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "핸드폰 타자연습", "url": "https://dailyfreetoolbox.com/phone-typing", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "description": "핸드폰으로 짧은 문장 5개를 엄지로 쳐서 분당 타수와 정확도를 재는 무료 핸드폰 타자연습이에요. 모바일 타자연습, 휴대폰 타자 속도 연습에 쓰세요."}
+</script>
+<script src="/common.js"></script>
+<link rel="stylesheet" href="/tool.css">
+<style>:root { --accent:#2b5fd9; --accent-deep:#1e47a8; }
+.pt-kbpick { display:flex; gap:6px; margin-bottom:10px; }
+.pt-kbpick .tab { padding:9px 4px; font-size:13px; }
+.pt-lbl { font-size:12px; font-weight:700; color:var(--ink-soft); margin:0 0 6px; }
+.pt-ask { background:var(--paper-deep); border:1px solid var(--line); border-radius:3px; padding:12px; text-align:center; font-size:14px; color:var(--ink); margin:0 0 10px; }
+.pt-bar { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin:0 0 10px; font-size:13px; color:var(--ink-soft); }
+.pt-bar .btn-ghost { padding:7px 12px; }
+.pt-bar label { display:flex; gap:4px; align-items:center; }
+#prog { font-size:14px; font-weight:700; color:var(--ink); font-variant-numeric:tabular-nums; margin:0 0 6px; min-height:20px; }
+#sample { font-size:22px; line-height:1.6; padding:10px 12px; background:var(--paper); border:1px solid var(--line); border-radius:3px; margin-bottom:8px; user-select:none; word-break:keep-all; }
+#sample .ok { color:var(--ok); } #sample .bad { color:var(--bad); background:#fdecea; } #sample .cur { border-bottom:2px solid var(--accent); }
+#target { text-align:center; padding:0; }
+#target .ch { font-size:40px; font-weight:700; line-height:1.15; color:var(--ink); }
+#target .seq { font-size:15px; color:var(--ink-soft); min-height:22px; }
+#target .again { display:inline-block; margin-left:6px; font-size:14px; font-weight:700; color:var(--bad); }
+#inp { width:100%; box-sizing:border-box; font-size:20px; padding:10px 12px; border:1px solid var(--line); border-radius:3px; font-family:inherit; }
+#inp:disabled { background:#f5f6f8; }
+.pt-kb { margin:0 0 8px; }
+#inp::placeholder { font-size:15px; }
+.pt-kb svg { display:block; width:100%; max-width:300px; height:auto; margin:0 auto; }
+.pt-kb .note { text-align:center; margin-top:2px; }
+.pt-slow { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:10px; }
+.pt-slow > div { border:1px solid var(--line); border-radius:3px; padding:6px; text-align:center; background:#fff; }
+.pt-slow b { font-size:24px; display:block; } .pt-slow span { font-size:12px; color:var(--ink-soft); font-variant-numeric:tabular-nums; }
+.pt-slow svg { width:100%; height:auto; display:block; }
+.stat .num { font-variant-numeric:tabular-nums; }
+#result h3 { font-size:16px; margin:0 0 10px; }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "타수는 어떻게 계산하나요?", "acceptedAnswer": {"@type": "Answer", "text": "PC용 타자 속도 테스트와 같은 기준이에요. 자모 하나를 1타, 겹자모(ㅘ, ㄳ 등)를 2타, 공백을 1타로 세고, 5문장을 치는 데 걸린 시간으로 분당 타수를 계산해요. 영문은 5글자를 1단어로 보아 WPM도 보여 줘요."}}, {"@type": "Question", "name": "천지인 자판도 연습할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 내 자판을 천지인으로 고르면 자리 연습에서 그 글자를 치는 키와 누르는 순서를 그림으로 보여 줘요. 자판 그림은 많이 쓰는 기본 배열로 그렸고, 자판 앱마다 배열이 조금 다를 수 있어요."}}, {"@type": "Question", "name": "화면에 그려진 자판을 눌러서 치나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 그림은 자리를 알려 주는 길잡이일 뿐이고, 입력은 휴대폰에 원래 깔려 있는 자판으로 해요. 자판 종류를 바꾸는 기능은 없어서, 평소 쓰던 자판 그대로 고르고 연습하면 돼요."}}, {"@type": "Question", "name": "마지막 글자에서 다음 문장으로 안 넘어가요.", "acceptedAnswer": {"@type": "Answer", "text": "한글은 마지막 글자를 조합하는 중이면 넘어가지 않아요. 글자를 다 쳤다면 띄어쓰기나 엔터(이동) 키를 한 번 누르세요. 자동 완성이 켜져 있으면 단어가 통째로 바뀌어 들어올 수 있으니 설명의 끄는 법을 참고하세요."}}, {"@type": "Question", "name": "기록은 어디에 저장되나요?", "acceptedAnswer": {"@type": "Answer", "text": "단계와 언어별 내 최고 기록, 고른 자판만 이 휴대폰 브라우저에 저장돼요. 서버로 보내지 않고, 다른 기기나 다른 브라우저에서는 보이지 않아요. 시크릿 모드처럼 저장이 막힌 곳에서는 최고 기록 줄이 나오지 않아요."}}, {"@type": "Question", "name": "PC에서도 쓸 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "쓸 수는 있지만 휴대폰 엄지 타자에 맞춘 도구예요. PC 키보드로 연습하려면 타자 속도 테스트를 쓰세요. 긴 예문과 주간 랭킹이 있어요."}}]}</script>
+</head>
+<body>
+
+<nav id="site-nav" data-accent="#2b5fd9"></nav>
+<script src="/nav.js"></script>
+
+<main>
+  <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#퍼즐·게임">퍼즐·게임</a><span>›</span>핸드폰 타자연습</nav>
+  <h1><img class="h1ic" src="/icons/phone-typing.webp" width="32" height="32" alt="">핸드폰 타자연습</h1>
+  <p class="sub">휴대폰 자판으로 짧은 문장 5개를 쳐서 분당 타수와 정확도를 재요. 엄지 타자 연습용이에요.</p>
+  <div class="ad-slot" data-ad="top"></div>
+
+  <div class="card" id="tool">
+    <p class="note" id="pcNote" style="display:none;margin:0 0 10px">PC 키보드로 연습하려면 <a href="/typing">타자 속도 테스트</a>를 쓰세요.</p>
+    <p class="pt-lbl">내 자판</p>
+    <div class="pt-kbpick" id="kbPick"><button class="tab" data-kb="qwerty">쿼티(두벌식)</button><button class="tab" data-kb="cji">천지인</button></div>
+    <p class="pt-ask" id="kbAsk">내 휴대폰 자판을 골라 주세요.</p>
+    <div class="tabs" id="langTabs"><button class="tab active" data-l="ko">한글</button><button class="tab" data-l="en">영문</button></div>
+    <div class="tabs" id="stageTabs"><button class="tab" data-s="key">자리 연습</button><button class="tab" data-s="word">낱말 연습</button><button class="tab active" data-s="sent">문장 연습</button></div>
+    <div class="pt-bar"><span id="setTog"><label><input type="radio" name="set" value="basic" checked>기본 자모만</label><label><input type="radio" name="set" value="all">전체</label></span><button class="btn-ghost" id="kbToggle" type="button" style="margin-left:auto">자판 보기</button></div>
+    <div id="run">
+      <div id="prog"></div>
+      <div id="target" style="display:none"><div class="ch" id="tch"></div><div class="seq" id="tseq"></div></div>
+      <div id="sample"></div>
+      <div class="pt-kb" id="kbPic" style="display:none"></div>
+      <input id="inp" type="text" placeholder="여기를 누르고 위 문장을 그대로 치세요" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="next">
+      <p class="note" id="keyHelp" style="display:none;margin:6px 0 0">표시된 자리를 내 자판에서 찾아 누르세요.</p>
+    </div>
+    <p class="note" style="margin:10px 0 0">자동 완성·자동 수정이 켜져 있으면 기록이 달라질 수 있어요. 끄는 법은 아래 설명을 보세요.</p>
+  </div>
+  <div id="result"></div>
+
+ <div class="ad-slot" data-ad="below-result"></div>
+<div class="sibs"><div class="lb">퍼즐·게임 도구 더 보기</div><div class="chips"><a href="/typing"><img class="sic" src="/icons/typing.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>타자 속도 테스트</span></a><a href="/vocab-quiz"><img class="sic" src="/icons/vocab-quiz.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>영단어 스피드 퀴즈</span></a><a href="/math-speed"><img class="sic" src="/icons/math-speed.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>암산 스피드</span></a><a href="/order"><img class="sic" src="/icons/order.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>숫자 순서 누르기</span></a><a href="/color-find"><img class="sic" src="/icons/color-find.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>틀린 색 찾기</span></a><a href="/game2048"><img class="sic" src="/icons/game2048.webp" width="34" height="34" alt="" loading="lazy" decoding="async"><span>2048 게임</span></a><a class="more" href="/#퍼즐·게임">전체 보기 →</a></div></div>
+<section class="seo">
+<h2>핸드폰 타자 속도 재는 법</h2><p>핸드폰 타자 속도는 PC처럼 분당 타수로 재요. 이 도구는 휴대폰으로 실제 주고받는 말 같은 짧은 문장 5개를 내고, 첫 글자를 치는 순간부터 다섯 번째 문장을 다 칠 때까지의 시간을 잽니다. 문장과 문장 사이에 넘어가는 시간도 포함해요. 실제로 메시지를 보낼 때도 문장 사이에 잠깐씩 멈추기 때문이에요.</p><p>타수는 자모 하나를 1타, 겹자모(ㅘ, ㄳ 등)를 2타, 공백을 1타로 셉니다. 예를 들어 "도착하면 문자 줄게"는 자모 20개와 공백 2개로 22타예요. 영문은 글자 수를 타수로 세고, 5글자를 1단어로 보아 WPM(분당 단어 수)도 함께 보여 줘요. 정확도는 예문 글자 가운데 맞게 친 글자의 비율이에요. 한 글자를 빠뜨려도 뒤 글자가 전부 틀린 것으로 세지지 않도록, 입력과 예문을 맞춰 보며 다른 글자·빠진 글자·더 친 글자만 오타로 셉니다.</p><p>한글은 자판에서 글자를 조합하는 동안 아직 끝나지 않은 글자가 따로 들어와요. "가"를 치려다 "ㄱ"만 친 순간을 오타로 세면 기록이 엉망이 되기 때문에, 조합 중인 마지막 글자는 비교에서 빼고 조합이 끝난 글자만 맞음·틀림을 표시해요. 문장 끝 글자를 다 쳤는데 다음으로 넘어가지 않으면 띄어쓰기나 엔터(이동) 키를 한 번 누르면 됩니다.</p>
+<h2>엄지 타자가 빨라지는 연습 순서</h2><p>휴대폰 자판이 아직 낯설다면 문장부터 치기보다 자리부터 익히는 게 빨라요. 이 도구의 연습 단계도 그 순서로 되어 있어요.</p><ol><li><strong>자리 연습</strong> — 낱자 20개가 하나씩 나오고, 고른 자판 그림에 그 글자를 치는 키가 표시돼요. 여러 번 눌러야 하는 글자는 누르는 순서도 함께 나와요. 처음에는 "기본 자모만"으로 자음 14개와 기본 모음 10개를 익히고, 익숙해지면 "전체"로 쌍자음과 이중모음까지 넓히세요.</li><li><strong>낱말 연습</strong> — "사과", "문자"처럼 두세 글자 낱말 20개를 쳐요. 받침과 모음이 이어지는 흐름에 손이 익어요.</li><li><strong>문장 연습</strong> — 짧은 문장 5개로 실제 메시지 속도를 재요. 띄어쓰기와 문장부호까지 들어가요.</li></ol><p>빨리 치는 것보다 틀리지 않는 것이 먼저예요. 엄지 타자는 지우고 다시 치는 시간이 크기 때문에, 정확도가 떨어지면 속도를 조금 늦추고 같은 단계를 반복하는 편이 결국 빨라요. 결과의 "오래 걸린 글자" 3개는 자리를 아직 찾는 글자이니 그 글자 위주로 다시 연습해 보세요. 두 손 엄지를 함께 쓰면 한 손보다 빨라지지만, 자리가 익숙해진 다음에 바꾸는 것이 좋아요.</p>
+<h2>자동 완성·자동 수정 끄는 법</h2><p>자동 완성(추천 단어)과 자동 수정이 켜져 있으면 친 글자가 다른 단어로 바뀌거나 단어가 통째로 들어와 기록이 달라져요. 연습할 때만 잠시 꺼 두고, 끝나면 다시 켜도 됩니다. 메뉴 이름은 기종과 소프트웨어 버전마다 조금씩 다를 수 있어요(확인일 2026-11-03).</p><ul><li><strong>갤럭시(삼성 키보드)</strong> — 설정 › 일반 관리 › 삼성 키보드 설정 › 스마트 입력에서 문구 추천, 문구 대체(자동 교체), 맞춤법 검사를 끄세요. 자판 위의 톱니바퀴 아이콘으로도 같은 설정에 들어갈 수 있어요.</li><li><strong>Gboard(안드로이드 구글 자판)</strong> — 자판 위쪽의 기능 메뉴 › 설정 › 텍스트 수정에서 자동 수정과 추천 관련 항목을 끄세요.</li><li><strong>아이폰(기본 자판)</strong> — 설정 › 일반 › 키보드에서 자동 수정과 자동 완성 텍스트를 끄세요. 지구본 키를 길게 눌러 키보드 설정으로 들어가도 돼요.</li></ul><p>이 페이지의 입력 칸에는 자동 완성·자동 수정·자동 대문자를 쓰지 말라는 표시를 해 두었지만, 자판 앱에 따라 이 표시를 따르지 않는 경우가 있어요. 기록이 이상하게 나오면 위 설정을 먼저 확인해 보세요.</p>
+<h2>천지인·쿼티·단모음 자판 자리 익히기</h2><p>휴대폰 한글 자판은 크게 세 가지를 많이 써요. 웹 페이지는 내가 어떤 자판을 쓰는지 알 수 없어서, 도구 맨 위의 "내 자판"에서 직접 고르면 그 자판 그림으로 자리를 짚어 줘요. 그림은 길잡이일 뿐이고, 입력은 내 휴대폰 자판으로 해요.</p><ul><li><strong>쿼티(두벌식)</strong> — PC 키보드와 같은 두벌식 배열을 화면에 줄인 자판이에요. 한 글자를 한 번에 누르는 대신 키가 작아요. 쌍자음(ㅃ·ㅉ·ㄸ·ㄲ·ㅆ)과 ㅒ·ㅖ는 Shift 키를 누른 뒤 치고, ㅘ·ㅢ 같은 겹모음은 두 모음을 이어서 쳐요.</li><li><strong>천지인</strong> — 모음을 ㅣ(사람)·ㆍ(하늘)·ㅡ(땅) 세 키로 만들어요. ㅏ는 ㅣ 다음 ㆍ, ㅓ는 ㆍ 다음 ㅣ, ㅗ는 ㆍ 다음 ㅡ, ㅜ는 ㅡ 다음 ㆍ 처럼 글자 모양 순서대로 눌러요. 자음은 한 키에 두세 개가 들어 있어 ㄱㅋ 키를 한 번 누르면 ㄱ, 두 번 누르면 ㅋ, 세 번 누르면 ㄲ이 돼요. 키가 커서 누르기 쉽지만 <strong>누르는 순서를 외우는 게 먼저</strong>라서, 자리 연습에서 순서를 보며 익히는 것이 좋아요.</li><li><strong>단모음</strong> — 쿼티보다 키 수를 줄이고 기본 모음 키를 따로 둔 자판이에요. 삼성 키보드에서는 같은 자음을 두 번 누르면 쌍자음이 돼요. 이 도구는 단모음 배열을 아직 확인하는 중이라 그림을 넣지 않았어요. 단모음을 쓴다면 내 자판은 쿼티로 고르고 낱말·문장 연습으로 속도를 재 보세요. 낱말·문장 연습은 그림 없이 내 자판으로 치기만 하면 돼요.</li></ul><p>자판 앱마다 배열이 조금씩 달라요. 같은 천지인이라도 앱에 따라 ㄱㅋ 키 자리나 문장부호 키 위치가 다를 수 있어서, 그림과 내 자판이 다르면 내 자판을 기준으로 연습하면 됩니다.</p>
+<h2>PC 타자연습과 다른 점</h2><p>PC 키보드로 재는 <a href="/typing">타자 속도 테스트</a>와 타수를 세는 기준은 같아요(자모 단위, 겹자모 2타, 공백 1타). 다른 점은 문장과 연습 방식이에요. PC용은 긴 예문 한 문장을 치고 주간 지정 문장 랭킹이 있지만, 이 도구는 휴대폰 화면에 맞춘 짧은 문장 5개를 치고 기록은 이 휴대폰에만 남겨요. 휴대폰 자판이 올라오면 화면 절반이 가려지기 때문에, 입력 칸을 누르면 예문과 진행 줄이 화면 위쪽으로 올라오게 했어요.</p><p>같은 사람이라도 PC와 휴대폰의 타수는 꽤 다르게 나와요. 손가락 열 개로 치는 PC와 엄지 두 개로 치는 휴대폰은 방식이 다르고, 자판 종류에 따라 한 글자를 치는 데 누르는 횟수도 달라요. 그래서 PC 기록과 비교하기보다 이 도구에서 내 최고 기록과 비교하는 것이 의미가 있어요.</p>
+</section>
+<div class="ad-slot" data-ad="in-content"></div>
+<section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>타수는 어떻게 계산하나요?</summary><p>PC용 타자 속도 테스트와 같은 기준이에요. 자모 하나를 1타, 겹자모(ㅘ, ㄳ 등)를 2타, 공백을 1타로 세고, 5문장을 치는 데 걸린 시간으로 분당 타수를 계산해요. 영문은 5글자를 1단어로 보아 WPM도 보여 줘요.</p></details><details><summary>천지인 자판도 연습할 수 있나요?</summary><p>네. 내 자판을 천지인으로 고르면 자리 연습에서 그 글자를 치는 키와 누르는 순서를 그림으로 보여 줘요. 자판 그림은 많이 쓰는 기본 배열로 그렸고, 자판 앱마다 배열이 조금 다를 수 있어요.</p></details><details><summary>화면에 그려진 자판을 눌러서 치나요?</summary><p>아니요. 그림은 자리를 알려 주는 길잡이일 뿐이고, 입력은 휴대폰에 원래 깔려 있는 자판으로 해요. 자판 종류를 바꾸는 기능은 없어서, 평소 쓰던 자판 그대로 고르고 연습하면 돼요.</p></details><details><summary>마지막 글자에서 다음 문장으로 안 넘어가요.</summary><p>한글은 마지막 글자를 조합하는 중이면 넘어가지 않아요. 글자를 다 쳤다면 띄어쓰기나 엔터(이동) 키를 한 번 누르세요. 자동 완성이 켜져 있으면 단어가 통째로 바뀌어 들어올 수 있으니 설명의 끄는 법을 참고하세요.</p></details><details><summary>기록은 어디에 저장되나요?</summary><p>단계와 언어별 내 최고 기록, 고른 자판만 이 휴대폰 브라우저에 저장돼요. 서버로 보내지 않고, 다른 기기나 다른 브라우저에서는 보이지 않아요. 시크릿 모드처럼 저장이 막힌 곳에서는 최고 기록 줄이 나오지 않아요.</p></details><details><summary>PC에서도 쓸 수 있나요?</summary><p>쓸 수는 있지만 휴대폰 엄지 타자에 맞춘 도구예요. PC 키보드로 연습하려면 타자 속도 테스트를 쓰세요. 긴 예문과 주간 랭킹이 있어요.</p></details></section>
+  <footer>타수는 자모 단위(겹자모 2타, 공백 1타)로 계산하고, 기록은 이 휴대폰 브라우저에만 저장돼요. 입력한 글은 서버로 보내지 않아요.<br><span class="version-tag">v1.0 · 2026-11-03 업데이트</span></footer>
+</main>
+
+<script>
+const $=id=>document.getElementById(id);
+const KO=["오늘 저녁 일곱 시에 만나자", "도착하면 문자 줄게", "지금 출발했어 금방 갈게", "점심 뭐 먹을지 정했어?", "내일 아침 아홉 시에 회의 있어", "우산 챙겨 가 비 온대", "집에 오는 길에 우유 좀 사 와", "주말에 같이 영화 볼래?", "버스가 늦어서 십 분 늦을 것 같아", "생일 축하해 좋은 하루 보내", "회의 끝나면 바로 전화할게", "사진 잘 받았어 고마워", "엄마 오늘 조금 늦게 들어가요", "택배 문 앞에 두고 갔대", "저녁은 집에서 먹을게", "지금 통화 괜찮아?", "도서관 앞에서 기다릴게", "감기 조심하고 푹 쉬어", "다음 주 화요일 어때?", "길이 막혀서 조금 늦어", "약속 장소가 카페로 바뀌었어", "오늘 정말 수고 많았어", "주소 한 번만 다시 보내 줄래?", "학원 끝나면 데리러 갈게", "퇴근하고 운동 갈 거야", "배고프다 뭐 시켜 먹을까", "기차표 두 장 예매했어", "잘 도착했어 걱정하지 마", "내일 비 오면 다음에 가자", "날씨 추우니까 따뜻하게 입어", "조금 있다가 다시 연락할게", "문 앞에 도착했어 나와 줘"];
+const EN=["I will be there in ten minutes.", "Running a little late, sorry!", "Can you call me after lunch?", "See you at the station at six.", "Did you get my last message?", "Let me know when you get home.", "Thanks for the photos, they look great.", "What time does the movie start?", "I left my umbrella at your place.", "Happy birthday, have a great day!", "The meeting moved to Friday morning.", "Can you pick up some milk on the way?", "I just finished work, heading out now.", "Do you want to grab dinner tonight?", "The bus is late again, wait for me.", "Please send me the address again.", "I am at the front door, come down.", "Good luck on your test tomorrow.", "Call me when you have a minute.", "Traffic is heavy, I will be late.", "We are out of coffee at home.", "Take care and get some rest tonight.", "The package arrived this afternoon.", "Are you free this weekend?", "Let us meet at the cafe instead.", "I will text you when I land.", "Dinner is ready, come downstairs.", "Do not forget your keys this time.", "It is raining, bring a jacket.", "Thanks again for your help today.", "Sorry, I missed your call earlier.", "See you tomorrow at nine."];
+const KO_W=["사과", "문자", "전화", "친구", "학교", "버스", "우산", "커피", "점심", "저녁", "아침", "주말", "사진", "약속", "시간", "내일", "오늘", "가방", "지갑", "열쇠", "기차", "바다", "하늘", "우유", "김밥", "라면", "공원", "시장", "병원", "학원", "회사", "생일", "축하해", "고마워", "미안해", "가족", "동생", "선물", "날씨", "휴가", "도착", "출발", "연락", "택배", "노래", "지하철", "도서관", "운동화"];
+const EN_W=["hello", "thanks", "sorry", "phone", "call", "text", "later", "today", "friend", "coffee", "lunch", "dinner", "home", "work", "bus", "train", "rain", "sunny", "happy", "music", "movie", "photo", "water", "apple", "bread", "house", "school", "money", "time", "night", "morning", "quick", "ready", "maybe", "great", "smile", "dream", "green", "table", "window", "letter"];
+// 자판 배열: 행마다 [표시 글자, 키 이름, 폭]. 키 이름은 누르는 순서 표에 쓰는 이름
+const KB={"qwerty": {"name": "쿼티(두벌식)", "rows": [[["ㅂ", "ㅂ"], ["ㅈ", "ㅈ"], ["ㄷ", "ㄷ"], ["ㄱ", "ㄱ"], ["ㅅ", "ㅅ"], ["ㅛ", "ㅛ"], ["ㅕ", "ㅕ"], ["ㅑ", "ㅑ"], ["ㅐ", "ㅐ"], ["ㅔ", "ㅔ"]], [["ㅁ", "ㅁ"], ["ㄴ", "ㄴ"], ["ㅇ", "ㅇ"], ["ㄹ", "ㄹ"], ["ㅎ", "ㅎ"], ["ㅗ", "ㅗ"], ["ㅓ", "ㅓ"], ["ㅏ", "ㅏ"], ["ㅣ", "ㅣ"]], [["Shift", "Shift", 1.5], ["ㅋ", "ㅋ"], ["ㅌ", "ㅌ"], ["ㅊ", "ㅊ"], ["ㅍ", "ㅍ"], ["ㅠ", "ㅠ"], ["ㅜ", "ㅜ"], ["ㅡ", "ㅡ"], ["⌫", "", 1.5]]], "seqList": {"ㅃ": ["Shift", "ㅂ"], "ㅉ": ["Shift", "ㅈ"], "ㄸ": ["Shift", "ㄷ"], "ㄲ": ["Shift", "ㄱ"], "ㅆ": ["Shift", "ㅅ"], "ㅒ": ["Shift", "ㅐ"], "ㅖ": ["Shift", "ㅔ"], "ㅘ": ["ㅗ", "ㅏ"], "ㅙ": ["ㅗ", "ㅐ"], "ㅚ": ["ㅗ", "ㅣ"], "ㅝ": ["ㅜ", "ㅓ"], "ㅞ": ["ㅜ", "ㅔ"], "ㅟ": ["ㅜ", "ㅣ"], "ㅢ": ["ㅡ", "ㅣ"]}, "keyList": ["Shift", "ㄱ", "ㄴ", "ㄷ", "ㄹ", "ㅁ", "ㅂ", "ㅅ", "ㅇ", "ㅈ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ", "ㅏ", "ㅐ", "ㅑ", "ㅓ", "ㅔ", "ㅕ", "ㅗ", "ㅛ", "ㅜ", "ㅠ", "ㅡ", "ㅣ"], "hide": ""}, "cji": {"name": "천지인", "rows": [[["ㅣ", "ㅣ", 2.5], ["ㆍ", "ㆍ", 2.5], ["ㅡ", "ㅡ", 2.5], ["⌫", "", 2.5]], [["ㄱㅋ", "ㄱ", 2.5], ["ㄴㄹ", "ㄴ", 2.5], ["ㄷㅌ", "ㄷ", 2.5], ["↵", "", 2.5]], [["ㅂㅍ", "ㅂ", 2.5], ["ㅅㅎ", "ㅅ", 2.5], ["ㅈㅊ", "ㅈ", 2.5], [".,?!", "", 2.5]], [["한/영", "", 2.5], ["ㅇㅁ", "ㅇ", 2.5], ["띄어쓰기", "", 2.5], ["특수", "", 2.5]]], "seqList": {"ㅋ": ["ㄱ", "ㄱ"], "ㄲ": ["ㄱ", "ㄱ", "ㄱ"], "ㄹ": ["ㄴ", "ㄴ"], "ㅌ": ["ㄷ", "ㄷ"], "ㄸ": ["ㄷ", "ㄷ", "ㄷ"], "ㅍ": ["ㅂ", "ㅂ"], "ㅃ": ["ㅂ", "ㅂ", "ㅂ"], "ㅎ": ["ㅅ", "ㅅ"], "ㅆ": ["ㅅ", "ㅅ", "ㅅ"], "ㅊ": ["ㅈ", "ㅈ"], "ㅉ": ["ㅈ", "ㅈ", "ㅈ"], "ㅁ": ["ㅇ", "ㅇ"], "ㅏ": ["ㅣ", "ㆍ"], "ㅑ": ["ㅣ", "ㆍ", "ㆍ"], "ㅓ": ["ㆍ", "ㅣ"], "ㅕ": ["ㆍ", "ㆍ", "ㅣ"], "ㅗ": ["ㆍ", "ㅡ"], "ㅛ": ["ㆍ", "ㆍ", "ㅡ"], "ㅜ": ["ㅡ", "ㆍ"], "ㅠ": ["ㅡ", "ㆍ", "ㆍ"], "ㅔ": ["ㆍ", "ㅣ", "ㅣ"], "ㅝ": ["ㅡ", "ㆍ", "ㆍ", "ㅣ"], "ㅐ": ["ㅣ", "ㆍ", "ㅣ"], "ㅒ": ["ㅣ", "ㆍ", "ㆍ", "ㅣ"], "ㅖ": ["ㆍ", "ㆍ", "ㅣ", "ㅣ"], "ㅘ": ["ㆍ", "ㅡ", "ㅣ", "ㆍ"], "ㅙ": ["ㆍ", "ㅡ", "ㅣ", "ㆍ", "ㅣ"], "ㅚ": ["ㆍ", "ㅡ", "ㅣ"], "ㅞ": ["ㅡ", "ㆍ", "ㆍ", "ㅣ", "ㅣ"], "ㅟ": ["ㅡ", "ㆍ", "ㅣ"], "ㅢ": ["ㅡ", "ㅣ"]}, "keyList": ["ㄱ", "ㄴ", "ㄷ", "ㅂ", "ㅅ", "ㅇ", "ㅈ", "ㅡ", "ㅣ", "ㆍ"], "hide": "ㅐㅒㅖㅘㅙㅚㅞㅟㅢ"}, "en": {"name": "쿼티 영문", "rows": [[["q", "q"], ["w", "w"], ["e", "e"], ["r", "r"], ["t", "t"], ["y", "y"], ["u", "u"], ["i", "i"], ["o", "o"], ["p", "p"]], [["a", "a"], ["s", "s"], ["d", "d"], ["f", "f"], ["g", "g"], ["h", "h"], ["j", "j"], ["k", "k"], ["l", "l"]], [["Shift", "", 1.5], ["z", "z"], ["x", "x"], ["c", "c"], ["v", "v"], ["b", "b"], ["n", "n"], ["m", "m"], ["⌫", "", 1.5]]], "seqList": {}, "keyList": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"], "hide": ""}}; for(const k in KB){ KB[k].seq=KB[k].seqList; KB[k].keys=new Set(KB[k].keyList); }
+const CHO_BASIC='ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ', DBL='ㄲㄸㅃㅆㅉ', V_BASIC='ㅏㅑㅓㅕㅗㅛㅜㅠㅡㅣ', V_ALL='ㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢㅣ';
+const DOTS='ㆍᆞ·‥ᆢ:･•';
+
+// /typing 과 같은 타수 기준: 자모 하나 1타, 겹자모(ㅘ·ㄳ 등) 2타, 공백 1타
+function strokes(s){ let n=0; for(const ch of s){ const c=ch.charCodeAt(0)-0xAC00; if(c>=0&&c<=11171){ const jung=Math.floor(c%588/28), jong=c%28; n+=1; n+= [9,10,11,14,15,16,19].includes(jung)?2:1; if(jong){ n+= [3,5,6,9,10,11,12,13,14,15,18].includes(jong)?2:1; } } else n+=1; } return n; }
+// 오타 수: 입력과 예문 사이의 편집 거리(한 글자를 빠뜨려도 뒤가 전부 오타가 되지 않게)
+function typos(v,t){ let prev=Array.from({length:t.length+1},(_,j)=>j); for(let i=1;i<=v.length;i++){ const cur=[i]; for(let j=1;j<=t.length;j++){ cur[j]=Math.min(prev[j]+1,cur[j-1]+1,prev[j-1]+(v[i-1]===t[j-1]?0:1)); } prev=cur; } return prev[t.length]; }
+
+// 저장: 막힌 브라우저에서도 오류 없이
+let storeOK=true; try{ localStorage.setItem('pt-test','1'); localStorage.removeItem('pt-test'); }catch(e){ storeOK=false; }
+function lsGet(k){ if(!storeOK) return null; try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function lsSet(k,v){ if(!storeOK) return false; try{ localStorage.setItem(k,v); return true; }catch(e){ return false; } }
+
+let kb=lsGet('pt-kb'); if(!KB[kb]) kb=null;
+let lang='ko', stage='sent', showKb=false;
+let st=null; // 진행 중인 세트
+let composing=false;
+const inp=$('inp');
+
+function shuffle(a){ a=a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+function curKb(){ return lang==='en'?'en':kb; }
+
+// 글자 하나를 치는 키 순서
+function seqOf(k,ch){ const d=KB[k]; if(!d) return null; if(d.seq[ch]) return d.seq[ch]; if(d.keys.has(ch)) return [ch]; return null; }
+// 목표로 가는 중간 단계인지: 그 글자의 키 순서가 목표 키 순서의 앞부분이면 중간 단계
+function isStep(k,val,target){ const ts=seqOf(k,target); if(!ts) return false;
+  if(k==='cji' && val.length===1 && DOTS.includes(val)) return ts[0]==='ㆍ';
+  if(k==='cji' && val.length===2 && [...val].every(c=>DOTS.includes(c))) return ts[0]==='ㆍ'&&ts[1]==='ㆍ';
+  const vs=seqOf(k,val); if(!vs||vs.length>=ts.length) return false; return vs.every((x,i)=>x===ts[i]); }
+
+function kbSVG(k,hl,small){ const d=KB[k]; if(!d) return ''; const U=36,H=40,G=4; const W=10*U; const rows=d.rows;
+  let y=G, out=''; const set=new Set(hl||[]); const first=(hl||[])[0];
+  for(const r of rows){ const tw=r.reduce((a,x)=>a+(x[2]||1),0); let x=(W-tw*U)/2+G/2;
+    for(const [lab,id,w] of r){ const kw=(w||1)*U-G; const on=id&&set.has(id); const isF=id&&id===first;
+      out+=`<rect x="${x.toFixed(1)}" y="${y}" width="${kw.toFixed(1)}" height="${H-G}" rx="5" fill="${on?'#eaf0fd':'#fff'}" stroke="${on?'#2b5fd9':'#c9d2e0'}" stroke-width="${on?(isF?3.5:2.5):1}"/>`;
+      if(lab) out+=`<text x="${(x+kw/2).toFixed(1)}" y="${y+(H-G)/2+1}" text-anchor="middle" dominant-baseline="middle" font-size="${lab.length>2?11:(lab.length>1?14:17)}" fill="${on?'#1e47a8':'#151a23'}" font-weight="${on?700:400}">${lab}</text>`;
+      x+=(w||1)*U; }
+    y+=H; }
+  return `<svg viewBox="0 0 ${W+G} ${y+G}" role="img" aria-label="${d.name} 자판 그림"><rect width="${W+G}" height="${y+G}" rx="6" fill="#eef1f6"/>${out}</svg>`; }
+// 확인하지 못한 순서(hide)는 화면에 보이지 않는다
+function seqText(k,ch){ const s=seqOf(k,ch); if(!s||s.length<2||(KB[k].hide||'').includes(ch)) return ''; return `${ch} = ${s.join(' → ')}`; }
+
+function bestKey(){ return `pt-best-${stage}-${lang}`; }
+
+function setActive(sel,attr,val){ document.querySelectorAll(sel+' .tab').forEach(b=>b.classList.toggle('active',b.dataset[attr]===val)); }
+function render(){
+  setActive('#kbPick','kb',kb||''); $('kbAsk').style.display=kb?'none':'block';
+  setActive('#langTabs','l',lang); setActive('#stageTabs','s',stage);
+  $('setTog').style.visibility=(stage==='key'&&lang==='ko')?'visible':'hidden';
+  $('kbToggle').style.display=stage==='key'?'none':'';
+  $('kbToggle').textContent=showKb?'자판 접기':'자판 보기';
+  $('target').style.display=stage==='key'?'':'none'; $('sample').style.display=stage==='key'?'none':''; $('keyHelp').style.display=stage==='key'?'':'none';
+  inp.placeholder=stage==='key'?'':'여기를 누르고 위 문장을 그대로 치세요';
+  inp.disabled=!kb;
+}
+function drawKb(){ const pic=$('kbPic'); const vis=kb&&(stage==='key'||showKb); pic.style.display=vis?'':'none'; if(!vis) return;
+  const k=curKb(); const hl=(stage==='key'&&st&&st.items[st.i])?(seqOf(k,st.items[st.i])||[]):[];
+  pic.innerHTML=kbSVG(k,hl)+'<p class="note">자판 앱마다 배열이 조금 다를 수 있어요.</p>'; }
+
+// 새 세트 시작(탭을 바꾸거나 다시 하기를 누르면 이전 세트는 버린다)
+function start(){
+  $('result').innerHTML=''; composing=false; inp.value='';
+  if(!kb){ st=null; render(); $('prog').textContent=''; $('sample').textContent=''; $('tch').textContent=''; $('tseq').textContent=''; drawKb(); return; }
+  let items;
+  if(stage==='key'){ const basic=document.querySelector('input[name=set]:checked').value==='basic';
+    const pool=lang==='en'?[...'abcdefghijklmnopqrstuvwxyz']:[...CHO_BASIC,...(basic?'':DBL),...(basic?V_BASIC:V_ALL)];
+    items=shuffle(pool).slice(0,20); }
+  else if(stage==='word') items=shuffle(lang==='ko'?KO_W:EN_W).slice(0,20);
+  else items=shuffle(lang==='ko'?KO:EN).slice(0,5);
+  st={items,i:0,t0:null,typed:[],tries:items.map(()=>0),times:[],last:null,wrong:false};
+  render(); show(); }
+
+function elapsed(){ return st&&st.t0!==null?(performance.now()-st.t0)/1000:0; }
+let tick=null;
+function prog(){ if(!st) return; const n=Math.min(st.i+1,st.items.length), N=st.items.length, sec=elapsed();
+  if(stage==='key'){ $('prog').textContent=`${n} / ${N} · ${sec.toFixed(1)}초`; return; }
+  const v=committed(); const s=[...st.typed,v].join(''); const tasu=sec>0?Math.round(strokes(s)/Math.max(sec/60,1/600)):0;
+  $('prog').textContent=`${n} / ${N} · ${sec.toFixed(1)}초 · ${tasu}타/분`; }
+function committed(){ const v=inp.value; return composing&&v.length?v.slice(0,-1):v; }
+
+function show(){ const t=st.items[st.i];
+  if(stage==='key'){ $('tch').textContent=t; const k=curKb(); $('tseq').innerHTML=seqText(k,t)+(st.wrong?'<span class="again">다시</span>':''); }
+  else paint();
+  drawKb(); prog(); }
+function paint(){ const t=st.items[st.i], v=committed(); let h='';
+  [...t].forEach((c,i)=>{ const cls=i<v.length?(v[i]===c?'ok':'bad'):(i===v.length?'cur':''); const e=c===' '?'&nbsp;':c.replace(/[&<>]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[m])); h+=cls?`<span class="${cls}">${e}</span>`:e; });
+  $('sample').innerHTML=h; }
+
+function begin(){ if(st.t0===null){ st.t0=performance.now(); st.last=st.t0; clearInterval(tick); tick=setInterval(prog,250); } }
+function clearInp(){ inp.value=''; if(composing){ composing=false; inp.blur(); inp.focus(); } }
+
+function onInput(){ if(!st||st.done) return; const raw=inp.value; if(!raw) { if(stage!=='key') { paint(); prog(); } return; } begin();
+  const t=st.items[st.i];
+  if(stage==='key'){ let v=raw.trim(); if(lang==='en') v=v.toLowerCase(); if(!v) return;
+    if(v===t){ const now=performance.now(); st.times[st.i]=(now-st.last)/1000; st.last=now; st.i++; st.wrong=false; clearInp(); if(st.i>=st.items.length) return finish(); show(); return; }
+    if(isStep(curKb(),v,t)) return;
+    st.tries[st.i]++; st.wrong=true; clearInp(); show(); return; }
+  // 낱말·문장: 글자 수가 같아지면 다음으로. 조합 중인 마지막 글자는 맞을 때만 넘긴다
+  const trail=/\s$/.test(raw)&&raw.trimEnd().length>=t.length;
+  if(trail || (raw.length>=t.length && (!composing || raw.slice(-1)===t.slice(-1))) || raw.length>t.length) return next(trail?raw.trimEnd():raw);
+  paint(); prog(); }
+function next(v){ st.typed.push(v); st.i++; clearInp(); if(st.i>=st.items.length) return finish(); show(); }
+
+function finish(){ st.done=true; clearInterval(tick); const sec=elapsed(); const N=st.items.length; let html='<div class="card"><h3>이번 기록</h3>', best=null, better=false, score;
+  if(stage==='key'){ const avg=st.times.reduce((a,b)=>a+b,0)/N; const first=st.tries.filter(x=>x===0).length; score=Math.round(avg*100)/100;
+    const slow=st.times.map((s,i)=>[s,st.items[i]]).sort((a,b)=>b[0]-a[0]).slice(0,3); const k=curKb();
+    html+=`<div class="stat-grid"><div class="stat"><div class="num">${avg.toFixed(2)}초</div><div class="label">글자당 평균</div></div><div class="stat"><div class="num">${Math.round(first/N*100)}%</div><div class="label">한 번에 맞힘</div></div><div class="stat"><div class="num">${sec.toFixed(1)}s</div><div class="label">걸린 시간</div></div></div>`;
+    html+=`<p class="pt-lbl" style="margin-top:12px">오래 걸린 글자</p><div class="pt-slow">${slow.map(([s,c])=>`<div><b>${c}</b><span>${s.toFixed(1)}초</span>${kbSVG(k,seqOf(k,c)||[],true)}</div>`).join('')}</div>`;
+    const prev=parseFloat(lsGet(bestKey())); best=isNaN(prev)?null:prev; better=best===null||score<best; }
+  else { const all=st.typed.join(''); const min=Math.max(sec/60,1/600); const tasu=Math.round(strokes(all)/min); const wpm=Math.round((all.length/5)/min);
+    let ok=0, tot=0; st.items.forEach((t,i)=>{ ok+=Math.max(0,t.length-typos(st.typed[i]||'',t)); tot+=t.length; }); const acc=Math.round(ok/tot*100); score=tasu;
+    html+=`<div class="stat-grid"><div class="stat"><div class="num">${tasu}</div><div class="label">분당 타수</div></div>${lang==='en'?`<div class="stat"><div class="num">${wpm}</div><div class="label">WPM</div></div>`:''}<div class="stat"><div class="num">${acc}%</div><div class="label">정확도</div></div><div class="stat"><div class="num">${sec.toFixed(1)}s</div><div class="label">걸린 시간</div></div></div>`;
+    const prev=parseInt(lsGet(bestKey()),10); best=isNaN(prev)?null:prev; better=best===null||score>best;
+    if(typeof gtag==='function') gtag('event','phone_typing_done',{stage,lang,kb,tasu,acc}); }
+  if(stage==='key'&&typeof gtag==='function') gtag('event','phone_typing_done',{stage,lang,kb,avg_sec:score});
+  const saved=better?lsSet(bestKey(),String(score)):storeOK;
+  if(saved){ const shown=better?score:best; const unit=stage==='key'?`글자당 ${shown.toFixed(2)}초`:`${shown}타/분`;
+    html+=`<p class="note" style="text-align:center;font-size:14px;color:var(--ink)">내 최고 기록 ${unit} (이 휴대폰에만 저장돼요)<br>${best===null?'첫 기록이에요.':(better?'최고 기록을 새로 세웠어요!':'')}</p>`; }
+  html+='<div style="text-align:center;margin-top:10px"><button class="btn" id="again" type="button">다시 하기</button></div></div>';
+  $('result').innerHTML=html; $('prog').textContent=`${N} / ${N} · ${sec.toFixed(1)}초`; inp.blur();
+  $('again').addEventListener('click',()=>{ start(); inp.focus(); });
+  $('result').scrollIntoView({block:'start',behavior:'smooth'}); }
+
+inp.addEventListener('compositionstart',()=>{ composing=true; });
+inp.addEventListener('compositionend',()=>{ composing=false; setTimeout(onInput,0); });
+inp.addEventListener('input',e=>{ if(typeof e.isComposing==='boolean') composing=e.isComposing; onInput(); });
+inp.addEventListener('keydown',e=>{ if(e.key!=='Enter'||!st||st.done||stage==='key') return; e.preventDefault(); const v=inp.value.trimEnd(); if(v.length>=st.items[st.i].length) next(v); });
+
+// 자판이 올라와도 예문·입력 칸이 보이게: 진행 줄을 화면 위쪽에 맞춘다
+function keepVisible(){ if(document.activeElement!==inp) return; const r=$('run').getBoundingClientRect(); const navH=(document.getElementById('site-nav')||{}).offsetHeight||0; const top=getComputedStyle(document.getElementById('site-nav')).position==='sticky'||getComputedStyle(document.getElementById('site-nav')).position==='fixed'?navH:0; window.scrollTo({top:window.scrollY+r.top-top-6}); }
+inp.addEventListener('focus',()=>{ setTimeout(keepVisible,300); });
+if(window.visualViewport) visualViewport.addEventListener('resize',()=>setTimeout(keepVisible,50));
+
+document.querySelectorAll('#kbPick .tab').forEach(b=>b.addEventListener('click',()=>{ kb=b.dataset.kb; lsSet('pt-kb',kb); start(); }));
+document.querySelectorAll('#langTabs .tab').forEach(b=>b.addEventListener('click',()=>{ lang=b.dataset.l; start(); }));
+document.querySelectorAll('#stageTabs .tab').forEach(b=>b.addEventListener('click',()=>{ stage=b.dataset.s; start(); }));
+document.querySelectorAll('input[name=set]').forEach(r=>r.addEventListener('change',start));
+$('kbToggle').addEventListener('click',()=>{ showKb=!showKb; render(); drawKb(); });
+if(window.matchMedia&&matchMedia('(hover: hover) and (pointer: fine)').matches) $('pcNote').style.display='block';
+start();
+</script>
+
+</body>
+</html>

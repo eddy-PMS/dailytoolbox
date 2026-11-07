@@ -125,6 +125,8 @@ async function uploadImage(el, file){
   if(file.size>1024*1024){ say('파일이 1MB 를 넘어요('+Math.round(file.size/1024)+'KB). 줄여서 다시 올려 주세요.','bad'); return; }
   const dims=await new Promise(res=>{ const im=new Image(); const u=URL.createObjectURL(file); im.onload=()=>{ res({w:im.naturalWidth,h:im.naturalHeight}); URL.revokeObjectURL(u); }; im.onerror=()=>{ res(null); URL.revokeObjectURL(u); }; im.src=u; });
   if(!dims){ say('이미지를 읽지 못했어요. 파일을 확인해 주세요.','bad'); return; }
+  // 파일 이름이 @2x 면 고해상도 화면용 2배 그림으로 보고 표시 크기는 절반으로 적는다(그림은 그 크기로 선명하게 그려진다)
+  if(/@2x\.[a-z]+$/i.test(file.name)){ dims.w=Math.round(dims.w/2); dims.h=Math.round(dims.h/2); }
   say('올리는 중…');
   try{
     const r=await fetch('/api/ads/image',{method:'POST',cache:'no-store',headers:{'content-type':file.type,'x-admin-token':$('token').value.trim()},body:file});
@@ -132,7 +134,7 @@ async function uploadImage(el, file){
     if(!d.ok) throw new Error(d.error||'fail');
     el.querySelector('.i-img').value=d.url; el.querySelector('.i-w').value=dims.w; el.querySelector('.i-h').value=dims.h;
     el.querySelector('.i-preview').innerHTML=''; const im=document.createElement('img'); im.src=d.url; im.alt=''; el.querySelector('.i-preview').appendChild(im);
-    say('올렸어요 — '+dims.w+'×'+dims.h+'px, '+Math.round(file.size/1024)+'KB. 아래 저장을 눌러야 사이트에 반영돼요.','ok');
+    say('올렸어요 — '+dims.w+'×'+dims.h+'px'+(/@2x\.[a-z]+$/i.test(file.name)?'(2배 파일)':'')+', '+Math.round(file.size/1024)+'KB. 아래 저장을 눌러야 사이트에 반영돼요.','ok');
   }catch(e){ const M={unauthorized:'토큰이 틀렸어요.',no_admin_token:'워커에 ADMIN_TOKEN 시크릿이 없어요.',too_large:'파일이 1MB 를 넘어요.',bad_type:'PNG·JPG·GIF·WebP 가 아닌 파일이에요.',kv_write_failed:'저장소 쓰기 실패 — 오늘 쓰기 한도를 넘겼을 수 있어요.'}; say('올리기 실패: '+(M[e.message]||e.message),'bad'); }
 }
 function bindCreative(el, k){

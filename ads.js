@@ -76,7 +76,25 @@
       + 'font:700 10px/1.3 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.04em;pointer-events:none';
     wrap.appendChild(box); wrap.appendChild(mark);
     el.appendChild(wrap);
+    watchView(wrap, k, src);
     return true;
+  }
+
+  // 노출 측정: 배너가 화면에 50% 이상 1초 넘게 보이면 ad_banner_view 를 보낸다. 페이지당 자리마다 한 번만
+  var viewed = {};
+  function watchView(node, k, src) {
+    if (viewed[k] || typeof IntersectionObserver !== 'function') return;
+    var timer = null;
+    var io = new IntersectionObserver(function (ents) {
+      var e = ents[ents.length - 1];
+      if (e.isIntersecting && e.intersectionRatio >= 0.5) {
+        if (!timer) timer = setTimeout(function () {
+          if (viewed[k]) return; viewed[k] = true; io.disconnect();
+          if (typeof gtag === 'function') gtag('event', 'ad_banner_view', { slot: k, page: path, banner: src.split('/').pop() });
+        }, 1000);
+      } else if (timer) { clearTimeout(timer); timer = null; }
+    }, { threshold: [0, 0.5] });
+    io.observe(node);
   }
 
   var adsenseLoaded = false;

@@ -49,7 +49,7 @@
 <main>
   <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span>›</span><a href="/#계산·생활">계산·생활</a><span>›</span>도장 만들기</nav>
   <h1><img class="h1ic" src="/icons/stamp.webp" width="32" height="32" alt="">도장 만들기 (도장 이미지)</h1>
-  <p class="sub">이름이나 문구로 원형·사각 도장 이미지를 만들어 투명 PNG로 저장해요. 문서 꾸미기·디자인용 이미지이고 인감 같은 효력은 없어요. 입력한 글자는 전송되지 않고 내 기기 안에서 처리됩니다.</p>
+  <p class="sub">이름이나 문구로 원형·타원형·사각 도장 이미지를 만들어 투명 PNG로 저장해요. 문서 꾸미기·디자인용 이미지이고 인감 같은 효력은 없어요. 입력한 글자는 전송되지 않고 내 기기 안에서 처리됩니다.</p>
   <div class="ad-slot" data-ad="top"></div>
 
   <div class="card">
@@ -59,7 +59,7 @@
 
     <div class="sp-grid">
       <label>모양 <select id="shape" style="width:100%;padding:5px 8px;font-size:13px">
-        <option value="circle">원형</option><option value="square">사각</option><option value="round">둥근 사각</option></select></label>
+        <option value="circle">원형</option><option value="square">사각</option><option value="round">둥근 사각</option><option value="ellipse">타원형</option></select></label>
       <label>글자 배치 <select id="layout" style="width:100%;padding:5px 8px;font-size:13px">
         <option value="auto">자동</option><option value="h">가로 한 줄</option><option value="v">세로 한 줄</option><option value="vv">두 줄 세로 (전통)</option></select></label>
       <label>글꼴 <select id="fam" style="width:100%;padding:5px 8px;font-size:13px"></select></label>
@@ -128,7 +128,7 @@
 <p>흰 종이에 또렷하게 찍은 뒤 사진으로 찍거나 스캔해서 불러오고, 종이 색을 지우면 인영만 남은 투명 PNG가 됩니다. 종이의 누런 기나 그림자까지 함께 사라져요. 실제 도장의 모양과 질감이 그대로 남는다는 점이 다릅니다.</p>
 <p>서명이 필요하다면 <a href="/sign">사인 만들기</a>로 서명 이미지를 만들 수 있어요. 만든 PNG가 무겁다면 <a href="/image-compress">이미지 용량 줄이기</a>로 줄이세요.</p>
 
-<h2>사용 방법</h2><ol><li>새길 글자를 넣고 모양(원형·사각·둥근 사각)을 고르세요.</li><li>배치를 자동으로 두거나, 글자 수에 맞춰 직접 고릅니다.</li><li>색과 테두리 두께를 조절해 문서에 넣었을 때 또렷한지 확인하세요.</li><li>"PNG로 저장"을 누르면 투명 배경 그대로 내려받습니다.</li></ol>
+<h2>사용 방법</h2><ol><li>새길 글자를 넣고 모양(원형·사각·둥근 사각·타원형)을 고르세요. 타원형은 세로로 긴 모양이라 세로 한 줄 이름에 잘 어울려요.</li><li>배치를 자동으로 두거나, 글자 수에 맞춰 직접 고릅니다.</li><li>색과 테두리 두께를 조절해 문서에 넣었을 때 또렷한지 확인하세요.</li><li>"PNG로 저장"을 누르면 투명 배경 그대로 내려받습니다.</li></ol>
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2>
@@ -139,7 +139,7 @@
 <details><summary>남의 이름이나 회사 이름으로 만들어도 되나요?</summary><p>안 됩니다. 다른 사람이나 회사의 이름으로 도장 이미지를 만들어 문서에 쓰면 사문서 위조 같은 문제가 될 수 있어요. 본인 이름이나 권한이 있는 곳의 표시로만 쓰세요.</p></details>
 <details><summary>투명 배경으로 저장되나요?</summary><p>네. PNG로 저장하면 도장 모양만 남고 주변은 투명합니다. 문서나 이미지 위에 그대로 얹어도 흰 네모가 생기지 않아요. JPG는 투명을 담을 수 없어서 이 도구는 PNG로만 저장합니다.</p></details>
 </section>
-  <footer>문서 꾸미기·디자인용 도장 이미지를 만드는 도구예요. 인감이나 등록 도장을 대신하지 않습니다.<br><span class="version-tag">v1.0 · 2026-10-04 업데이트</span></footer>
+  <footer>문서 꾸미기·디자인용 도장 이미지를 만드는 도구예요. 인감이나 등록 도장을 대신하지 않습니다.<br><span class="version-tag">v1.1 · 2026-11-13 업데이트</span></footer>
 </main>
 
 <script>
@@ -189,6 +189,8 @@ function layoutOf(n){
   return 'vv';
 }
 
+var ELL = 0.72; // 타원형 도장: 가로 반지름 = 세로 반지름 × 0.72 (세로로 긴 타원)
+
 function draw(size){
   var cv = $('cv'), ctx = cv.getContext('2d');
   cv.width = size; cv.height = size;
@@ -207,6 +209,8 @@ function draw(size){
     var h = bw / 2;
     if (shape === 'circle'){
       ctx.beginPath(); ctx.arc(size/2, size/2, size/2 - h - 1, 0, Math.PI*2); ctx.stroke();
+    } else if (shape === 'ellipse'){
+      ctx.beginPath(); ctx.ellipse(size/2, size/2, (size/2 - h - 1) * ELL, size/2 - h - 1, 0, 0, Math.PI*2); ctx.stroke();
     } else {
       var r = shape === 'round' ? size * 0.12 : 0;
       ctx.beginPath();
@@ -217,7 +221,7 @@ function draw(size){
   }
 
   // 글자가 들어갈 안쪽 영역
-  var inner = shape === 'circle' ? (size - bw*2 - 4) * 0.70 : (size - bw*2 - 4) * 0.80;
+  var inner = (shape === 'circle' || shape === 'ellipse') ? (size - bw*2 - 4) * 0.70 : (size - bw*2 - 4) * 0.80;
   var lay = layoutOf(cs.length);
   var cols, rowsN;
   if (lay === 'h'){ cols = cs.length; rowsN = 1; }
@@ -235,6 +239,11 @@ function draw(size){
   var halfW = (cols * stepX) / 2, halfH = (rowsN * stepY) / 2;
   var limit = (size - bw * 2 - 4) / 2 * 0.94;
   var need = shape === 'circle' ? Math.sqrt(halfW*halfW + halfH*halfH) : Math.max(halfW, halfH);
+  if (shape === 'ellipse'){
+    // 타원은 글자 덩어리 모서리 (halfW, halfH) 가 타원 안에 들어와야 한다
+    var q = Math.sqrt(Math.pow(halfW / (limit * ELL), 2) + Math.pow(halfH / limit, 2));
+    need = q * limit;
+  }
   if (need > limit && need > 0){
     var k = limit / need;
     fpx *= k; stepX *= k; stepY *= k;

@@ -64,8 +64,8 @@
         <option value="auto">자동</option><option value="h">가로 한 줄</option><option value="v">세로 한 줄</option><option value="vv">두 줄 세로 (전통)</option></select></label>
       <label>글꼴 <select id="fam" style="width:100%;padding:5px 8px;font-size:13px"></select></label>
       <label>색 <input type="color" id="col" value="#c8102e" style="width:100%;height:30px;padding:0"></label>
-      <label>테두리 두께 <span class="sp-num" id="bwv">7</span>
-        <input type="range" id="bw" min="0" max="16" step="1" value="7"></label>
+      <label>테두리 두께 <span class="sp-num" id="bwv">4</span>
+        <input type="range" id="bw" min="0" max="16" step="1" value="4"></label>
       <label>글자 크기 <span class="sp-num" id="fsv">100</span>%
         <input type="range" id="fs" min="60" max="140" step="5" value="100"></label>
       <label>글자 간격 <span class="sp-num" id="gpv">0</span>
@@ -139,7 +139,7 @@
 <details><summary>남의 이름이나 회사 이름으로 만들어도 되나요?</summary><p>안 됩니다. 다른 사람이나 회사의 이름으로 도장 이미지를 만들어 문서에 쓰면 사문서 위조 같은 문제가 될 수 있어요. 본인 이름이나 권한이 있는 곳의 표시로만 쓰세요.</p></details>
 <details><summary>투명 배경으로 저장되나요?</summary><p>네. PNG로 저장하면 도장 모양만 남고 주변은 투명합니다. 문서나 이미지 위에 그대로 얹어도 흰 네모가 생기지 않아요. JPG는 투명을 담을 수 없어서 이 도구는 PNG로만 저장합니다.</p></details>
 </section>
-  <footer>문서 꾸미기·디자인용 도장 이미지를 만드는 도구예요. 인감이나 등록 도장을 대신하지 않습니다.<br><span class="version-tag">v1.1 · 2026-11-13 업데이트</span></footer>
+  <footer>문서 꾸미기·디자인용 도장 이미지를 만드는 도구예요. 인감이나 등록 도장을 대신하지 않습니다.<br><span class="version-tag">v1.2 · 2026-11-13 업데이트</span></footer>
 </main>
 
 <script>
@@ -153,7 +153,8 @@ var FAMS = [
   ['Gowun Batang','고운바탕',[400,700]],
   ['Noto Serif KR','본명조',[400,700,900]],
   ['Black Han Sans','검은고딕',[400]],
-  ['Noto Sans KR','본고딕',[400,700,900]]
+  ['Noto Sans KR','본고딕',[400,700,900]],
+  ['Nanum Gothic','나눔고딕',[400,700,800]]
 ];
 var byFam = {};
 FAMS.forEach(function(f){
@@ -191,6 +192,9 @@ function layoutOf(n){
 
 var ELL = 0.72; // 타원형 도장: 가로 반지름 = 세로 반지름 × 0.72 (세로로 긴 타원)
 
+function weightOf(fam){ var w = byFam[fam] ? byFam[fam][2] : [700]; return w[w.length - 1]; }
+
+// 실제 도장처럼: 글자마다 잉크 크기를 재서, 도형 안 칸을 꽉 채우도록 가로·세로로 늘려 그린다.
 function draw(size){
   var cv = $('cv'), ctx = cv.getContext('2d');
   cv.width = size; cv.height = size;
@@ -201,75 +205,105 @@ function draw(size){
   var color = $('col').value;
   var bw = $('bw').value / 100 * size;
   var shape = $('shape').value;
-  var pad = size * 0.5 * 0.14;
+  var R0 = size / 2 - 1;            // 테두리 바깥 반지름
+  var cx = size / 2, cy = size / 2;
 
   // 테두리
   if (bw > 0){
     ctx.strokeStyle = color; ctx.lineWidth = bw;
     var h = bw / 2;
-    if (shape === 'circle'){
-      ctx.beginPath(); ctx.arc(size/2, size/2, size/2 - h - 1, 0, Math.PI*2); ctx.stroke();
-    } else if (shape === 'ellipse'){
-      ctx.beginPath(); ctx.ellipse(size/2, size/2, (size/2 - h - 1) * ELL, size/2 - h - 1, 0, 0, Math.PI*2); ctx.stroke();
-    } else {
+    ctx.beginPath();
+    if (shape === 'circle') ctx.arc(cx, cy, R0 - h, 0, Math.PI*2);
+    else if (shape === 'ellipse') ctx.ellipse(cx, cy, R0 * ELL - h, R0 - h, 0, 0, Math.PI*2);
+    else {
       var r = shape === 'round' ? size * 0.12 : 0;
-      ctx.beginPath();
       if (ctx.roundRect) ctx.roundRect(h+1, h+1, size-bw-2, size-bw-2, r);
       else ctx.rect(h+1, h+1, size-bw-2, size-bw-2);
-      ctx.stroke();
     }
+    ctx.stroke();
   }
 
-  // 글자가 들어갈 안쪽 영역
-  var inner = (shape === 'circle' || shape === 'ellipse') ? (size - bw*2 - 4) * 0.70 : (size - bw*2 - 4) * 0.80;
+  // 글자가 들어갈 안쪽 도형 (테두리 안쪽에서 조금 띄움)
+  var margin = size * 0.03;
+  var A, B;   // 안쪽 가로·세로 반지름
+  if (shape === 'circle'){ A = B = R0 - bw - margin; }
+  else if (shape === 'ellipse'){ A = R0 * ELL - bw - margin; B = R0 - bw - margin; }
+  else { A = B = R0 - bw - margin - (shape === 'round' ? size * 0.02 : 0); }
+  if (A <= 0 || B <= 0) return cv;
+  var curved = (shape === 'circle' || shape === 'ellipse');
+  function halfW(y){                 // 높이 y 에서 쓸 수 있는 가로 반폭
+    if (!curved) return A;
+    var t = 1 - (y*y) / (B*B);
+    return t > 0 ? A * Math.sqrt(t) : 0;
+  }
+
+  // 칸 나누기
   var lay = layoutOf(cs.length);
-  var cols, rowsN;
-  if (lay === 'h'){ cols = cs.length; rowsN = 1; }
-  else if (lay === 'v'){ cols = 1; rowsN = cs.length; }
-  else { cols = 2; rowsN = Math.ceil(cs.length / 2); }
-
-  var gap = $('gp').value / 100;
-  var cell = inner / Math.max(cols, rowsN);
-  var fpx = cell * ($('fs').value / 100) * 0.92;
-  var stepX = cell * (1 + gap) * ($('fs').value / 100),
-      stepY = cell * (1 + gap) * ($('fs').value / 100);
-
-  // 글자 덩어리가 도형 밖으로 나가지 않게 줄인다.
-  // 원은 모서리까지의 대각선이 반지름을 넘지 않아야 한다(2열 배치에서 특히).
-  var halfW = (cols * stepX) / 2, halfH = (rowsN * stepY) / 2;
-  var limit = (size - bw * 2 - 4) / 2 * 0.94;
-  var need = shape === 'circle' ? Math.sqrt(halfW*halfW + halfH*halfH) : Math.max(halfW, halfH);
-  if (shape === 'ellipse'){
-    // 타원은 글자 덩어리 모서리 (halfW, halfH) 가 타원 안에 들어와야 한다
-    var q = Math.sqrt(Math.pow(halfW / (limit * ELL), 2) + Math.pow(halfH / limit, 2));
-    need = q * limit;
+  var gap = Math.max(0, 0.03 + $('gp').value / 100);
+  function cellsFor(H){
+    var out = [], top = -H/2;
+    function column(list, colIndex, colCount){
+      var bh = H / list.length;
+      list.forEach(function(c, i){ out.push({ c:c, y0: top + i*bh, y1: top + (i+1)*bh, ci: colIndex, cn: colCount }); });
+    }
+    if (lay === 'h') cs.forEach(function(c, i){ out.push({ c:c, y0: top, y1: top + H, ci: i, cn: cs.length }); });
+    else if (lay === 'v') column(cs, 0, 1);
+    else {
+      var rowsN = Math.ceil(cs.length / 2);
+      column(cs.slice(0, rowsN), 1, 2);     // 오른쪽 줄을 먼저 읽는 전통 배치
+      column(cs.slice(rowsN), 0, 2);
+    }
+    out.forEach(function(k){
+      var bh = k.y1 - k.y0;
+      // 칸 모서리가 곡선에 살짝 걸치는 건 허용(글자 획은 모서리까지 차지 않는다)
+      var e0 = Math.abs(k.y0) > Math.abs(k.y1) ? k.y0 : k.y1;
+      var yy = curved ? (Math.abs(e0) - bh * 0.18) : 0;
+      var w = halfW(Math.max(0, yy));
+      var cw = 2 * w / k.cn;
+      k.x0 = -w + k.ci * cw; k.x1 = k.x0 + cw;
+      var gx = cw * gap / 2, gy = bh * gap / 2;
+      k.x0 += gx; k.x1 -= gx; k.y0 += gy; k.y1 -= gy;
+    });
+    return out;
   }
-  if (need > limit && need > 0){
-    var k = limit / need;
-    fpx *= k; stepX *= k; stepY *= k;
+
+  var MAXS = 2.0;                      // 글자를 한쪽으로 늘리는 최대 배율
+  function fitArea(w, h){              // 정사각 글자를 늘림 한도 안에서 칸에 맞췄을 때 넓이
+    if (w <= 0 || h <= 0) return 0;
+    var fw = Math.min(w, h * MAXS), fh = Math.min(h, w * MAXS);
+    return fw * fh;
+  }
+  // 글자 덩어리 높이를 바꿔 보며 칸들이 가장 커지는 높이를 고른다
+  var best = null, bestScore = -1;
+  for (var f = 0.3; f <= 1.0001; f += 0.02){
+    var cells = cellsFor(2 * B * f), mn = Infinity, sum = 0;
+    cells.forEach(function(k){ var a = fitArea(k.x1 - k.x0, k.y1 - k.y0); mn = Math.min(mn, a); sum += a; });
+    var sc = mn * 0.6 + sum / cells.length * 0.4;   // 가장 작은 칸을 지키면서 전체도 크게
+    if (sc > bestScore * 1.005){ bestScore = sc; best = cells; }
   }
 
-  ctx.font = '700 ' + fpx + 'px "' + $('fam').value + '", serif';
+  var fam = $('fam').value, base = 100;
+  ctx.font = weightOf(fam) + ' ' + base + 'px "' + fam + '", serif';
   ctx.fillStyle = color;
-  ctx.textAlign = 'center';
-  ctx.textBaseline = 'middle';
-  var cx = size/2, cy = size/2;
-
-  if (lay === 'h'){
-    var x0 = cx - (cs.length - 1) * stepX / 2;
-    cs.forEach(function(c, i){ ctx.fillText(c, x0 + i*stepX, cy); });
-  } else if (lay === 'v'){
-    var y0 = cy - (cs.length - 1) * stepY / 2;
-    cs.forEach(function(c, i){ ctx.fillText(c, cx, y0 + i*stepY); });
-  } else {
-    // 두 줄 세로: 오른쪽 줄을 먼저 읽는 전통 배치
-    var right = cs.slice(0, rowsN), left = cs.slice(rowsN);
-    var xR = cx + stepX/2, xL = cx - stepX/2;
-    var yR0 = cy - (right.length - 1) * stepY / 2;
-    right.forEach(function(c, i){ ctx.fillText(c, xR, yR0 + i*stepY); });
-    var yL0 = cy - (left.length - 1) * stepY / 2;
-    left.forEach(function(c, i){ ctx.fillText(c, xL, yL0 + i*stepY); });
-  }
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'alphabetic';
+  var fsk = $('fs').value / 100;
+  best.forEach(function(k){
+    var m = ctx.measureText(k.c);
+    var L = m.actualBoundingBoxLeft, Rr = m.actualBoundingBoxRight, As = m.actualBoundingBoxAscent, De = m.actualBoundingBoxDescent;
+    if (!(Rr + L > 0) || !(As + De > 0)){ L = 0; Rr = m.width || base; As = base * 0.8; De = base * 0.1; }
+    var iw = L + Rr, ih = As + De;
+    var cw = k.x1 - k.x0, ch = k.y1 - k.y0;
+    var sx = cw / iw, sy = ch / ih;
+    if (sx > sy * MAXS) sx = sy * MAXS;
+    if (sy > sx * MAXS) sy = sx * MAXS;
+    sx *= fsk; sy *= fsk;
+    ctx.save();
+    ctx.translate(cx + (k.x0 + k.x1) / 2, cy + (k.y0 + k.y1) / 2);
+    ctx.scale(sx, sy);
+    ctx.fillText(k.c, -(Rr - L) / 2, (As - De) / 2);
+    ctx.restore();
+  });
   return cv;
 }
 
@@ -277,7 +311,7 @@ function update(){
   var fam = $('fam').value;
   loadFont(fam).then(function(){
     var p = (document.fonts && document.fonts.load)
-      ? document.fonts.load('700 64px "' + fam + '"', $('txt').value || '가') : Promise.resolve();
+      ? document.fonts.load(weightOf(fam) + ' 64px "' + fam + '"', $('txt').value || '가') : Promise.resolve();
     return p['catch'](function(){});
   }).then(function(){
     draw(500);
@@ -321,7 +355,7 @@ $('save').addEventListener('click', function(){
 $('reset').addEventListener('click', function(){
   $('txt').value = '홍길동'; $('shape').value = 'circle'; $('layout').value = 'auto';
   $('fam').value = 'Nanum Myeongjo'; $('col').value = '#c8102e';
-  $('bw').value = 7; $('fs').value = 100; $('gp').value = 0; $('px').value = '500';
+  $('bw').value = 4; $('fs').value = 100; $('gp').value = 0; $('px').value = '500';
   sync(); update();
 });
 

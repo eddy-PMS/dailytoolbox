@@ -3,17 +3,17 @@
 #   · 파일이름만 적어도 돼요. 비운 칸은 nav.js 의 제목·설명과 기본 배경색을 씁니다.
 #   · 사용량 순위가 바뀌면 줄 순서만 바꾸세요. python build-guides.py 를 돌리면 홈에 반영돼요(매일 새벽 자동 빌드 때도 반영).
 #   · 7번째 줄부터는 예비예요. 앞의 도구가 없어지면 차례로 올라옵니다.
-# 기준: 2026-11-14 — GA4 2026-11-07 ~ 11-13(7일) 페이지별 이용자(모든 유입), 도구 페이지만, 종류 섞기(계산·생활 3 · 게임·테스트 2 · 공부·어학 1). Growth 가 매일 아침 갱신(11-13 사용자 지시)
-#       이용자: driving-test 226 · pyeong 75 · ipgeo 66 · stamp 58 · random-pick 42 · phone-typing 41 (예비 soldier-pay 56 · school-grade 41 · discharge 35 · mbti-test 29)
+# 기준: 2026-11-15 — GA4 2026-11-08 ~ 11-14(7일) 페이지별 이용자(모든 유입), 도구 페이지만, 종류 섞기(계산·생활 3 · 게임·테스트 2 · 공부·어학 1). Growth 가 매일 아침 갱신(11-13 사용자 지시)
+#       이용자: driving-test 175 · pyeong 70 · ipgeo 56 · phone-typing 46 · soldier-pay 46 · random-pick 33 (예비 stamp 45 · discharge 33 · mbti-test 29 · school-grade 26)
 
 driving-test | 운전면허 필기 모의고사 | 필기 문제 무료 풀기   | #e6f0fd
 pyeong       | 평수 계산기          | 평 ↔ ㎡ 변환         | #e8f6ee
 ipgeo        | IP 주소 확인·조회     | 국가·도시·통신사      | #e7f2fb
-stamp        | 도장 만들기          | 원형·타원형 도장 PNG  | #f3ecfb
-random-pick  | 랜덤 뽑기·제비뽑기    | 당첨자 무작위 추첨    | #fdeaef
 phone-typing | 핸드폰 타자연습       | 엄지 타자 속도       | #fff4d6
-# 아래는 예비(위 도구가 없어질 때만 올라옴) — Growth 11-14 예비 순서
 soldier-pay  | 병사 월급 계산기      | 계급별 월급·총액      | #f3ecfb
-school-grade
+random-pick  | 랜덤 뽑기·제비뽑기    | 당첨자 무작위 추첨    | #fdeaef
+# 아래는 예비(위 도구가 없어질 때만 올라옴) — Growth 11-15 예비 순서
+stamp        | 도장 만들기          | 원형·타원형 도장 PNG  | #f3ecfb
 discharge
 mbti-test
+school-grade

@@ -248,14 +248,19 @@ def og_image(slug=None):
             return f'{SITE}/og/{f}'
     return f'{SITE}/og-image.jpg'
 
-def head_common(title, desc, canonical, keywords, extra_ld, og_img=None):
+# 구글 색인 핵심 가이드(D41, 2026-11-16). 여기 없는 가이드와 /guide/ 목록은 googlebot noindex(네이버·Bing 은 그대로).
+GOOGLE_CORE_GUIDES = {'hiragana-katakana-chart', 'annual-leave-rules', 'gpa-conversion',
+                      'reduce-photo-size', 'self-intro-char-count', 'car-tax-guide'}
+
+def head_common(title, desc, canonical, keywords, extra_ld, og_img=None, google_noindex=False):
     og_img = og_img or f'{SITE}/og-image.jpg'
+    gb = '<meta name="googlebot" content="noindex">\n' if google_noindex else ''
     return f'''<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+{gb}<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="naver-site-verification" content="852adc0d7cb49c870de02857b2624318467fe862" />
@@ -306,7 +311,7 @@ def render_guide(meta, body_md, slug, tools, all_guides, line_offset=0):
         more_html = '<section class="guide-tools"><h2>같은 주제의 다른 글</h2><div class="guide-list">' + ''.join(f'<a class="guide-card" href="/guide/{g["slug"]}"><img class="gic" src="/icons/ui-guide.webp" width="30" height="30" alt="" loading="lazy" decoding="async"><span class="tx"><b>{esc(g["meta"]["title"])}</b></span></a>' for g in others) + '</div></section>'
     # title 접미사 없음 — 도구 페이지 111개가 "제목 - 설명" 형식으로 사이트명을 붙이지 않는다.
     # 예전 " | 데일리 프리 툴박스 생활 가이드"(20자) 때문에 검색 결과에서 뒷부분이 잘렸다.
-    return head_common(meta['title'], meta.get('description', ''), canonical, meta.get('keywords', ''), f'<script type="application/ld+json">{ld}</script>\n<script type="application/ld+json">{crumbs}</script>{faq_ld}', og_image(slug)) + f'''<style>:root {{ --accent:{accent}; --accent-deep:#23603c; }}</style>
+    return head_common(meta['title'], meta.get('description', ''), canonical, meta.get('keywords', ''), f'<script type="application/ld+json">{ld}</script>\n<script type="application/ld+json">{crumbs}</script>{faq_ld}', og_image(slug), slug not in GOOGLE_CORE_GUIDES) + f'''<style>:root {{ --accent:{accent}; --accent-deep:#23603c; }}</style>
 </head>
 <body class="guide-page">
 
@@ -353,7 +358,7 @@ def render_index(all_guides):
             for g in items)
         sections += f'<section class="group" id="{esc(c)}" style="--accent:{CAT_ACCENT.get(c,"#2f7d4f")}"><div class="group-head" style="margin:26px 0 10px"><h2 style="font-size:17px;margin:0">{esc(c)}</h2><span class="count" style="font-size:12px;color:var(--ink-soft);margin-left:8px">{len(items)}편</span></div><div class="guide-list">{cards}</div></section>'
     ld = json.dumps({"@context": "https://schema.org", "@type": "CollectionPage", "name": "생활 가이드", "url": canonical, "description": "연봉·퇴직금·실업급여·연차·사주처럼 매일 쓰는 도구 뒤에 있는 규칙과 계산법을 정리한 글 모음"}, ensure_ascii=False)
-    return head_common('생활 가이드 - 계산기 뒤의 규칙과 방법을 정리한 글 | 데일리 프리 툴박스', '연봉 실수령액·퇴직금·실업급여·연차·사주 보는 법처럼 도구를 쓰기 전에 알아두면 좋은 규칙과 계산 방법을 정리한 생활 가이드. 각 글에서 관련 계산기로 바로 이동.', canonical, '생활 가이드, 계산 방법, 실수령액 계산법, 퇴직금 계산법, 실업급여 조건, 연차 계산법, 사주 보는 법', f'<script type="application/ld+json">{ld}</script>') + '''<style>:root { --accent:#2f7d4f; --accent-deep:#23603c; }</style>
+    return head_common('생활 가이드 - 계산기 뒤의 규칙과 방법을 정리한 글 | 데일리 프리 툴박스', '연봉 실수령액·퇴직금·실업급여·연차·사주 보는 법처럼 도구를 쓰기 전에 알아두면 좋은 규칙과 계산 방법을 정리한 생활 가이드. 각 글에서 관련 계산기로 바로 이동.', canonical, '생활 가이드, 계산 방법, 실수령액 계산법, 퇴직금 계산법, 실업급여 조건, 연차 계산법, 사주 보는 법', f'<script type="application/ld+json">{ld}</script>', google_noindex=True) + '''<style>:root { --accent:#2f7d4f; --accent-deep:#23603c; }</style>
 </head>
 <body class="guide-page">
 

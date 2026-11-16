@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://dailyfreetoolbox.com/sitemap.xml
+Sitemap: https://dailyfreetoolbox.com/sitemap-core.xml

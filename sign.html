@@ -145,7 +145,7 @@
 <h2>저장하면 몇 픽셀로 나오나 — 실제 예시</h2><p>저장 버튼을 누르면 서명이 그려진 작업 칸(가로 760 × 세로 260)을 고른 배율만큼 키운 뒤, <strong>획 둘레에 여백(1배 기준 8픽셀)만 남기고 빈 곳을 잘라서</strong> 저장해요. 파일 이름에 실제 크기가 붙어서 <code>sign-가로x세로.png</code>로 내려받아집니다.</p>
 <p><table><thead><tr><th>저장 배율</th><th>작업 칸 크기</th><th>여백</th></tr></thead><tbody><tr><td>1배</td><td>760 × 260</td><td>8픽셀</td></tr><tr><td>2배 (기본)</td><td>1,520 × 520</td><td>16픽셀</td></tr><tr><td>4배</td><td>3,040 × 1,040</td><td>32픽셀</td></tr></tbody></table></p>
 <p><strong>예시</strong>: "직접 그리기"에서 획 두께 4로, 칸 안의 가로 500 × 세로 140 정도 되는 범위에 서명을 그리고 2배로 저장하면 → 획이 차지한 부분(약 1,010 × 290)에 여백 16픽셀씩이 붙어 <strong>약 1,040 × 320픽셀</strong> 파일이 나와요. 이 파일을 문서에 가로 4cm로 넣으면 1인치(2.54cm)에 약 660픽셀이 들어가는 셈이라 인쇄해도 획이 매끈합니다. 같은 서명을 1배로 저장하면 약 520 × 160픽셀, 가로 4cm 기준 1인치에 약 330픽셀이에요. 화면으로만 보낼 문서라면 1배로도 충분하고, 인쇄하거나 크게 넣을 거라면 2배 이상을 고르세요.</p>
-<p class="note">직접 그리는 칸은 세로가 300이라 결과 칸(260)보다 조금 길어요. 칸 맨 아래쪽까지 내려 그린 획은 저장할 때 잘릴 수 있으니 가운데쯤에 그리세요.</p>
+<p class="note">위 표는 글꼴로 만들 때의 작업 칸이에요. 직접 그리기는 그리는 칸과 같은 760 × 300 칸에 옮겨 그린 뒤 잘라서, 칸 맨 아래까지 그린 획도 그대로 저장돼요.</p>
 
 <h2>글꼴별 라이선스 — 만든 사인을 어디에 써도 되나</h2><p>글꼴로 만든 사인 이미지는 글꼴 라이선스를 따져 봐야 안심하고 쓸 수 있어요. 이 도구가 쓰는 10가지 글꼴은 모두 구글 폰트에 공개된 오픈 라이선스 글꼴입니다.</p>
 <p><table><thead><tr><th>글꼴</th><th>라이선스</th></tr></thead><tbody><tr><td>나눔손글씨 펜·붓, 개구, 하이멜로디, 동글, 감자꽃</td><td>SIL 오픈 폰트 라이선스(OFL)</td></tr><tr><td>Great Vibes, Sacramento, Dancing Script</td><td>SIL 오픈 폰트 라이선스(OFL)</td></tr><tr><td>Satisfy</td><td>Apache License 2.0</td></tr></tbody></table></p>
@@ -263,7 +263,8 @@ $('clear').addEventListener('click', function(){ strokes = []; redrawPad(); upda
 function render(scale, crop){
   scale = scale || 1;
   var cv = $('cv'), ctx = cv.getContext('2d');
-  var W = 760 * scale, H = 260 * scale;
+  // 직접 그리기는 그리는 칸(760×300)과 같은 높이로 그려야 아래쪽 획이 잘리지 않는다
+  var W = 760 * scale, H = (mode === 'draw' ? 300 : 260) * scale;
   cv.width = W; cv.height = H;
   ctx.clearRect(0, 0, W, H);
   var color = $('col').value;

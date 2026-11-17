@@ -71,6 +71,16 @@ function cleanName(v) {
   return n;
 }
 function better(g, a, b) { return g.lower ? a < b : a > b; }
+// ===== 모의고사 의견 =====
+const FB_TOOLS = { cs2: { maxQid: 200, std: '2027' } };   // 의견을 받는 도구: 문항 번호 범위, 출제기준 판
+const FB_TTL = 60 * 60 * 24 * 400;                         // 400일 뒤 자동 삭제
+const FB_DAILY_MAX = 300;                                  // 하루 저장 상한(랭킹과 KV 쓰기 한도를 함께 쓰므로)
+// 글 안의 이메일·전화번호 꼴은 저장 전에 가린다
+function maskContact(s) {
+  return s.replace(/[\w.+-]+@[\w-]+(\.[\w-]+)+/g, '***')
+          .replace(/(\+?82[-.\s]?)?0?1[016789][-.\s]?\d{3,4}[-.\s]?\d{4}/g, '***')
+          .replace(/\b0\d{1,2}[-.\s)]\d{3,4}[-.\s]\d{4}\b/g, '***');
+}
 const VOTE_SAMPLE_AFTER = 100; // 이 참여 수부터 표본 집계
 const VOTE_SAMPLE_RATE = 5;    // 5회 중 1회만 KV 에 기록
 function wcGenId() {
@@ -168,6 +178,37 @@ export default {
       return res;
     }
 
+
+    // ---- 모의고사 의견: 글·문항 번호·응시 여부만 KV 에 400일 저장. IP·기기 정보는 저장하지 않는다 ----
+    if (url.pathname === '/api/feedback' && request.method === 'POST') {
+      if (!isSameOrigin(request, host)) return json({ ok: false, error: 'forbidden' }, 403);
+      if (!env.WORLDCUP_KV) return json({ ok: false, error: 'not_configured' }, 500);
+      let body;
+      try { body = await request.json(); } catch { return json({ ok: false, error: 'bad_request' }, 400); }
+      const tool = FB_TOOLS[body.tool];
+      if (!tool) return json({ ok: false, error: 'bad_tool' }, 400);
+      if (body.website) return json({ ok: false, error: 'bad_request' }, 400);         // 숨은 칸이 채워졌으면 봇
+      const text = maskContact(String(body.text || '').replace(/\s+/g, ' ').trim());
+      if (text.length < 10 || text.length > 500) return json({ ok: false, error: 'length' }, 400);
+      const qid = Number.isInteger(body.qid) && body.qid >= 1 && body.qid <= tool.maxQid ? body.qid : null;
+      const took = body.took === 'yes' || body.took === 'no' ? body.took : null;
+      const ip = request.headers.get('CF-Connecting-IP') || '';
+      if (!rateOk('fbh:' + ip, 5, 60 * 60 * 1000) || !rateOk('fbd:' + ip, 20, 24 * 60 * 60 * 1000)) return json({ ok: false, error: 'rate' }, 429);
+      const now = new Date(), kst = new Date(now.getTime() + 9 * 3600 * 1000);
+      const day = kst.toISOString().slice(0, 10).replace(/-/g, '');
+      const cntKey = `fbc:${body.tool}:${day}`;                          // 하루 상한 세는 키(이틀 뒤 삭제). 목록 앞머리 fb: 와 겹치지 않게 따로 둔다
+      const cnt = Number(await env.WORLDCUP_KV.get(cntKey)) || 0;
+      if (cnt >= FB_DAILY_MAX) return json({ ok: false, error: 'daily_full' }, 429);
+      const key = `fb:${body.tool}:${day}:${wcGenId()}`;
+      const exp = Math.floor(now.getTime() / 1000) + FB_TTL;
+      try {
+        await env.WORLDCUP_KV.put(key, JSON.stringify({ t: now.toISOString(), tool: body.tool, qid, took, text, std: tool.std }), { expiration: exp });
+        await env.WORLDCUP_KV.put(cntKey, String(cnt + 1), { expirationTtl: 2 * 24 * 3600 });
+      } catch (e) {
+        return json({ ok: false, error: 'quota' }, 429);
+      }
+      return json({ ok: true });
+    }
 
     // ---- 밸런스 게임: 짧은 공유 링크 (제목 + A/B 질문 목록을 KV 에 30일 저장) ----
     if (url.pathname === '/api/balance' && request.method === 'POST') {

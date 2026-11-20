@@ -47,7 +47,8 @@
       <div class="field"><label>휴게시간 (점심 등)</label><div class="unit"><input type="number" id="brk" value="60" step="10" min="0"><span>분</span></div></div>
       <div class="field"><label>시급 (월급 ÷ 209 = 통상시급)</label><div class="unit"><input type="number" id="wage" value="15000" step="100"><span>원</span></div></div>
       <div class="field"><label>사업장</label><select id="size"><option value="5">5인 이상 (가산수당 적용)</option><option value="4">5인 미만 (가산 없음)</option></select></div>
-      <div class="field"><label>휴일 근무</label><select id="holiday"><option value="0">아니오</option><option value="1">예 (휴일근로 가산 50%)</option></select></div>
+      <div class="field"><label>휴일 근무</label><select id="holiday"><option value="0">아니오</option><option value="1">예 (8시간까지 50%, 초과 100% 가산)</option></select></div>
+      <div class="field"><label>휴게 중 밤(22~06시)에 쉰 시간</label><div class="unit"><input type="number" id="nbrk" value="0" step="10" min="0"><span>분</span></div></div>
     </div>
     <div id="out" style="margin-top:14px"></div>
   </div>
@@ -63,7 +64,7 @@
 </section>
 <div class="ad-slot" data-ad="in-content"></div>
 <section class="seo faq"><h2>자주 묻는 질문</h2><details><summary>점심시간도 근무시간인가요?</summary><p>자유롭게 쉴 수 있으면 휴게시간이라 근무시간이 아니에요. 전화 대기·업무 지시를 받으면 근무시간으로 인정될 수 있어요.</p></details><details><summary>야근수당을 안 주면요?</summary><p>5인 이상 사업장이라면 임금체불이에요. 출퇴근 기록(교통카드, 메신저, 출입 기록)을 모아 노동청에 진정할 수 있고, 3년 치까지 청구 가능해요.</p></details><details><summary>주 52시간을 넘기면 어떻게 되나요?</summary><p>사업주가 처벌 대상이고, 근로자는 초과분 수당을 받을 권리가 있어요. 특별연장근로 인가 등 예외가 있어요.</p></details></section>
-  <footer>근로기준법 일반 기준이며 포괄임금제·탄력근로제 사업장은 계약서 조건을 따르세요.<br><span class="version-tag">v1.0 · 2026-09-16 업데이트</span></footer>
+  <footer>근로기준법 일반 기준이며 포괄임금제·탄력근로제 사업장은 계약서 조건을 따르세요.<br><span class="version-tag">v1.1 · 2026-11-20 업데이트</span></footer>
 </main>
 
 <script>
@@ -73,27 +74,32 @@ const won=n=>Math.round(n).toLocaleString('ko-KR')+'원';
 const hm=min=>`${Math.floor(min/60)}시간 ${Math.round(min%60)}분`;
 function toMin(t){ const [h,m]=t.split(':').map(Number); return h*60+m; }
 function calc(){
-  const s=toMin($('start').value), e0=toMin($('end').value), brk=+$('brk').value||0, w=+$('wage').value||0, big=$('size').value==='5', hol=$('holiday').value==='1';
+  const s=toMin($('start').value), e0=toMin($('end').value), brk=Math.max(0,+$('brk').value||0), w=+$('wage').value||0, big=$('size').value==='5', hol=$('holiday').value==='1';
   let e=e0; if(e<=s) e+=1440; const total=e-s-brk; if(total<=0){ $('out').innerHTML='<div class="empty">퇴근 시간이 출근 시간보다 뒤여야 해요</div>'; return; }
-  let night=0; for(let t=s;t<e;t++){ const h=Math.floor((t%1440)/60); if(h>=22||h<6) night++; }
+  let nightRaw=0; for(let t=s;t<e;t++){ const h=Math.floor((t%1440)/60); if(h>=22||h<6) nightRaw++; }
+  // 휴게 중 밤에 쉰 시간은 야간에서 뺀다. 낮 시간이 휴게보다 짧으면 남는 휴게는 밤에 쉰 것으로 본다
+  const dayRaw=(e-s)-nightRaw; const nbrk=Math.min(brk,nightRaw,Math.max(+$('nbrk').value||0,brk-dayRaw));
+  const night=Math.min(total,Math.max(0,nightRaw-nbrk));
   const regular=Math.min(total,480), overtime=Math.max(0,total-480);
-  const base=total/60*w; const otExtra= big? overtime/60*w*0.5:0; const nightExtra= big? night/60*w*0.5:0; const holExtra= big&&hol? Math.min(total,480)/60*w*0.5:0;
+  const base=total/60*w; // 휴일근로(근로기준법 제56조 제2항): 8시간 이내 50%, 8시간 초과 100% 가산 — 휴일엔 연장 가산을 따로 얹지 않음
+  const otExtra= big&&!hol? overtime/60*w*0.5:0; const nightExtra= big? night/60*w*0.5:0;
+  const holIn= big&&hol? regular/60*w*0.5:0, holOver= big&&hol? overtime/60*w*1.0:0, holExtra=holIn+holOver;
   const pay=base+otExtra+nightExtra+holExtra;
   $('out').innerHTML=`<div class="big-result">${hm(total)}<small>실 근무시간 (휴게 ${brk}분 제외)</small></div>
     <table style="margin-top:12px"><tbody>
       <tr><td>기본 근무 (8시간 이내)</td><td class="r">${hm(regular)}</td></tr>
       <tr><td>연장 근무 (8시간 초과)</td><td class="r">${hm(overtime)}</td></tr>
-      <tr><td>야간 근무 (22시~06시)</td><td class="r">${hm(night)}</td></tr>
+      <tr><td>야간 근무 (22시~06시${nbrk?`, 휴게 ${nbrk}분 뺌`:''})</td><td class="r">${hm(night)}</td></tr>
       <tr><td>기본급 (실 근무시간 × 시급)</td><td class="r">${won(base)}</td></tr>
-      <tr><td>연장 가산 (50%)</td><td class="r">${won(otExtra)}</td></tr>
+      ${hol?'':`<tr><td>연장 가산 (50%)</td><td class="r">${won(otExtra)}</td></tr>`}
       <tr><td>야간 가산 (50%)</td><td class="r">${won(nightExtra)}</td></tr>
-      ${hol?`<tr><td>휴일 가산 (50%, 8시간 이내)</td><td class="r">${won(holExtra)}</td></tr>`:''}
+      ${hol?`<tr><td>휴일 가산 (8시간 이내 50%)</td><td class="r">${won(holIn)}</td></tr><tr><td>휴일 가산 (8시간 초과 100%)</td><td class="r">${won(holOver)}</td></tr>`:''}
       <tr><td><b>이날 급여 합계</b></td><td class="r"><b>${won(pay)}</b></td></tr>
     </tbody></table>
-    <div class="note">연장·야간·휴일이 겹치면 가산이 각각 더해져요(연장+야간 = 100% 가산). 5인 미만 사업장은 가산 의무가 없어요. 주 52시간(기본 40 + 연장 12)을 넘는 연장근로는 위법이에요. 통상시급은 월 기본급 ÷ 209시간으로 구하세요.</div>`;
+    <div class="note">연장·야간이 겹치면 가산이 각각 더해져요(연장+야간 = 100% 가산). 휴일에 8시간을 넘긴 시간은 휴일 가산 100%이고 연장 가산을 따로 더하지 않아요. 휴게를 밤(22~06시)에 쉬었다면 그 시간을 입력하세요 — 낮 근무가 휴게보다 짧으면 자동으로 밤에 쉰 것으로 봐요. 5인 미만 사업장은 가산 의무가 없어요. 주 52시간(기본 40 + 연장 12)을 넘는 연장근로는 위법이에요. 통상시급은 월 기본급 ÷ 209시간으로 구하세요.</div>`;
   if(typeof gtag==='function') gtag('event','worktime_calculated',{});
 }
-['start','end','brk','wage','size','holiday'].forEach(id=>$(id).addEventListener('input',calc)); calc();
+['start','end','brk','nbrk','wage','size','holiday'].forEach(id=>$(id).addEventListener('input',calc)); calc();
  
 </script>
 

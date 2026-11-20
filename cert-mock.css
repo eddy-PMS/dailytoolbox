@@ -1,0 +1,35 @@
+/* 자격증 필기 모의고사 공통 스타일 (cert-mock.js 와 한 세트) */
+.qhead { display:flex; justify-content:space-between; align-items:center; font-size:14px; color:var(--ink-soft); margin-bottom:10px; gap:8px; flex-wrap:wrap; }
+.qhead .timer { font-weight:700; color:var(--ink); font-variant-numeric:tabular-nums; }
+.qhead .timer.low { color:#c0392b; }
+.bar { height:6px; background:var(--paper-deep); border-radius:3px; overflow:hidden; margin-bottom:14px; } .bar > i { display:block; height:100%; background:var(--accent); }
+.qtext { font-size:17px; font-weight:700; line-height:1.55; margin:0 0 14px; word-break:keep-all; overflow-wrap:anywhere; }
+.qtext, .opt > span:last-child, .review summary, .review p { white-space:pre-wrap; }  /* TRIM 문제처럼 공백 개수가 뜻이 있는 문항 */
+.qtbl { overflow-x:auto; margin:-4px 0 14px; } .qtbl table { width:auto; min-width:160px; font-size:15px; } .qtbl th, .qtbl td { border:1px solid var(--line); padding:6px 12px; text-align:center; } .qtbl th { background:var(--paper-deep); }
+.tag27 { display:inline-block; font-size:13px; font-weight:700; color:#8a4b00; background:#fff3e0; border:1px solid #f1c27d; border-radius:4px; padding:2px 7px; margin-bottom:10px; }
+.opts { display:grid; gap:8px; }
+.opt { display:flex; gap:10px; align-items:flex-start; text-align:left; width:100%; min-height:44px; padding:12px 13px; border:1px solid var(--line); border-radius:8px; background:#fff; font-size:15px; line-height:1.5; color:var(--ink); cursor:pointer; font-family:inherit; word-break:keep-all; overflow-wrap:anywhere; }
+.opt .no { flex:none; width:24px; height:24px; border-radius:50%; border:1px solid var(--line); display:flex; align-items:center; justify-content:center; font-size:13px; color:var(--ink-soft); background:#fff; }
+.opt.sel { border-color:var(--accent); background:#eef4ff; } .opt.sel .no { background:var(--accent); color:#fff; border-color:var(--accent); }
+.opt.right { border-color:#2f7d4f; background:#eaf6ee; } .opt.right .no { background:#2f7d4f; color:#fff; border-color:#2f7d4f; }
+.opt.wrong { border-color:#c0392b; background:#fdecea; } .opt.wrong .no { background:#c0392b; color:#fff; border-color:#c0392b; }
+.opt[disabled] { cursor:default; }
+.expl { margin-top:12px; padding:12px 13px; border-left:3px solid var(--accent); background:#f7f9fd; font-size:14px; line-height:1.65; word-break:keep-all; overflow-wrap:anywhere; }
+.expl b.ok { color:#2f7d4f; } .expl b.no { color:#c0392b; }
+.sheet { display:grid; grid-template-columns:repeat(10,1fr); gap:6px; margin-top:14px; }
+.sheet button { min-height:44px; border:1px solid var(--line); border-radius:6px; background:#fff; font-size:13px; color:var(--ink-soft); cursor:pointer; font-family:inherit; padding:0; }
+.sheet button.done { background:#eef4ff; border-color:#b9cdf5; color:var(--ink); }
+.sheet button.cur { border-color:var(--accent); border-width:2px; color:var(--ink); font-weight:700; }
+@media(max-width:520px){ .sheet { grid-template-columns:repeat(5,1fr); } }
+.sheet-lb { font-size:13px; color:var(--ink-soft); margin-top:16px; }
+.verdict { font-size:16px; font-weight:700; margin:10px 0 0; line-height:1.5; word-break:keep-all; }
+.verdict.pass { color:#2f7d4f; } .verdict.fail { color:#c0392b; }
+.review { margin-top:14px; } .review details { border:1px solid var(--line); border-radius:8px; padding:10px 12px; margin-bottom:8px; background:#fff; }
+.review summary { cursor:pointer; font-size:14px; font-weight:700; line-height:1.5; word-break:keep-all; overflow-wrap:anywhere; }
+.review p { font-size:14px; line-height:1.65; margin:8px 0 0; word-break:keep-all; overflow-wrap:anywhere; }
+.tw { overflow-x:auto; -webkit-overflow-scrolling:touch; } .tw th, .tw td:first-child { word-break:keep-all; }
+.fb { margin-top:16px; border:1px solid var(--line); border-radius:8px; padding:10px 12px; background:#fff; }
+.fb summary { cursor:pointer; font-weight:700; font-size:15px; min-height:28px; }
+.fb textarea { min-height:110px; margin-top:4px; }
+.fb-row { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:8px; } @media(max-width:520px){ .fb-row { grid-template-columns:1fr; } }
+.fb-hp { position:absolute; left:-9999px; width:1px; height:1px; opacity:0; }

@@ -72,7 +72,7 @@ function cleanName(v) {
 }
 function better(g, a, b) { return g.lower ? a < b : a > b; }
 // ===== 모의고사 의견 =====
-const FB_TOOLS = { cs2: { maxQid: 200, std: '2027' } };   // 의견을 받는 도구: 문항 번호 범위, 출제기준 판
+const FB_TOOLS = { cs2: { maxQid: 200, std: '2027' }, ss2: { maxQid: 240, std: '2027' }, ipe: { maxQid: 300, std: '2027' }, wp: { maxQid: 180, std: '2027' }, acc2: { maxQid: 90, std: '2026' }, cs1: { maxQid: 180, std: '2027' }, acc1: { maxQid: 90, std: '2026' } };   // 의견을 받는 도구: 문항 번호 범위, 출제기준 판
 const FB_TTL = 60 * 60 * 24 * 400;                         // 400일 뒤 자동 삭제
 const FB_DAILY_MAX = 300;                                  // 하루 저장 상한(랭킹과 KV 쓰기 한도를 함께 쓰므로)
 // 글 안의 이메일·전화번호 꼴은 저장 전에 가린다

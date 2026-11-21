@@ -3,17 +3,17 @@
 #   · 파일이름만 적어도 돼요. 비운 칸은 nav.js 의 제목·설명과 기본 배경색을 씁니다.
 #   · 사용량 순위가 바뀌면 줄 순서만 바꾸세요. python build-guides.py 를 돌리면 홈에 반영돼요(매일 새벽 자동 빌드 때도 반영).
 #   · 7번째 줄부터는 예비예요. 앞의 도구가 없어지면 차례로 올라옵니다.
-# 기준: 2026-11-20 — GA4 2026-11-13 ~ 11-19(7일) 페이지별 이용자(모든 유입), 도구 페이지만, 종류 섞기(계산·생활 3 · 게임·테스트 2 · 공부·어학 1). Growth 가 매일 아침 갱신(11-13 사용자 지시)
-#       이용자: driving-test 168 · pyeong 96 · phone-typing 68 · ipgeo 45 · reaction 40 · career 31 (예비 school-grade · gpa · shoe-size · worldcup)
+# 기준: 2026-11-22 — GA4 2026-11-15 ~ 11-21(7일) 페이지별 이용자(모든 유입), 도구 페이지만, 종류 섞기(계산·생활 3 · 게임·테스트 2 · 공부·어학 1). Growth 가 매일 아침 갱신(11-13 사용자 지시)
+#       이용자: driving-test 167 · pyeong 105 · phone-typing 62 · reaction 53 · ipgeo 42 · career 29 (예비 school-grade · gpa · discharge · random-pick)
 
 driving-test | 운전면허 필기 모의고사 | 필기 문제 무료 풀기   | #e6f0fd
 pyeong       | 평수 계산기          | 평 ↔ ㎡ 변환         | #e8f6ee
 phone-typing | 핸드폰 타자연습       | 엄지 타자 속도       | #fff4d6
-ipgeo        | IP 주소 확인·조회     | 국가·도시·통신사      | #e7f2fb
 reaction     | 반응속도 테스트       | 5회 평균 ms·등급     | #fdeaef
+ipgeo        | IP 주소 확인·조회     | 국가·도시·통신사      | #e7f2fb
 career       | 경력 계산기          | 근무기간 합산        | #f3ecfb
-# 아래는 예비(위 도구가 없어질 때만 올라옴) — Growth 11-20 예비 순서
+# 아래는 예비(위 도구가 없어질 때만 올라옴) — Growth 11-22 예비 순서
 school-grade
 gpa
-shoe-size
-worldcup     | 이상형 월드컵         | 토너먼트 만들어 공유  | #fdeaef
+discharge
+random-pick

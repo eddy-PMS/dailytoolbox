@@ -72,7 +72,7 @@ function cleanName(v) {
 }
 function better(g, a, b) { return g.lower ? a < b : a > b; }
 // ===== 모의고사 의견 =====
-const FB_TOOLS = { cs2: { maxQid: 200, std: '2027' }, ss2: { maxQid: 240, std: '2027' }, ipe: { maxQid: 300, std: '2027' }, wp: { maxQid: 180, std: '2027' }, acc2: { maxQid: 90, std: '2026' }, cs1: { maxQid: 180, std: '2027' }, acc1: { maxQid: 90, std: '2026' } };   // 의견을 받는 도구: 문항 번호 범위, 출제기준 판
+const FB_TOOLS = { cs2: { maxQid: 200, std: '2027' }, ss2: { maxQid: 240, std: '2027' }, ipe: { maxQid: 300, std: '2027' }, wp: { maxQid: 180, std: '2027' }, acc2: { maxQid: 90, std: '2026' }, cs1: { maxQid: 180, std: '2027' }, acc1: { maxQid: 90, std: '2026' }, 'tf-skku': { maxQid: 399, std: '2026' } };   // 의견을 받는 도구: 문항 번호 범위, 출제기준 판
 const FB_TTL = 60 * 60 * 24 * 400;                         // 400일 뒤 자동 삭제
 const FB_DAILY_MAX = 300;                                  // 하루 저장 상한(랭킹과 KV 쓰기 한도를 함께 쓰므로)
 // 글 안의 이메일·전화번호 꼴은 저장 전에 가린다
@@ -185,7 +185,7 @@ export default {
       if (!env.WORLDCUP_KV) return json({ ok: false, error: 'not_configured' }, 500);
       let body;
       try { body = await request.json(); } catch { return json({ ok: false, error: 'bad_request' }, 400); }
-      const tool = FB_TOOLS[body.tool];
+      const tool = FB_TOOLS[body.tool] || (/^tf-[a-z]{2,12}$/.test(String(body.tool)) ? { maxQid: 399, std: '2026' } : null);   // 편입영어 모의고사는 학교마다 tf-<학교>, qid = 회차×100+문항
       if (!tool) return json({ ok: false, error: 'bad_tool' }, 400);
       if (body.website) return json({ ok: false, error: 'bad_request' }, 400);         // 숨은 칸이 채워졌으면 봇
       const text = maskContact(String(body.text || '').replace(/\s+/g, ' ').trim());

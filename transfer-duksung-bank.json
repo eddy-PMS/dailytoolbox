@@ -1,0 +1,1820 @@
+{
+"school": "duksung",
+"title": "덕성여대 편입영어 모의고사",
+"source": "덕성여대 편입영어 2020~2026학년도 기출 출제 유형(문항 수·영역·문제 꼴, VocabFactory 분석)을 분석해 dailyfreetoolbox 가 새로 만든 연습 문제",
+"checked": "2026-11-23",
+"minutes": 50,
+"points": [
+[
+1,
+4,
+3.0
+],
+[
+5,
+10,
+2.4
+],
+[
+11,
+14,
+3.2
+],
+[
+15,
+16,
+3.4
+],
+[
+17,
+23,
+3.0
+],
+[
+24,
+33,
+3.3
+]
+],
+"sections": [
+{
+"id": "vocab",
+"name": "동의어"
+},
+{
+"id": "cloze",
+"name": "어휘 빈칸"
+},
+{
+"id": "grammar",
+"name": "문법"
+},
+{
+"id": "reading",
+"name": "독해"
+}
+],
+"passages": [
+{
+"id": "r1-s1",
+"text": "In October 2023, the physicist Anne L'Huillier learned that she had won the Nobel Prize in Physics, and she became only the fifth woman ever to receive that award. Marie Curie had first done so in 1903, a hundred and twenty years earlier. The same week, the Hungarian-born biochemist Katalin Karikó shared the prize in medicine for research on messenger RNA that had once been so unfashionable that she struggled for years to secure funding. Such moments are rightly celebrated, but they also <u>throw into relief</u> a stubborn gap. Women now make up roughly a third of researchers worldwide, yet they account for only a small fraction of science prizewinners. Some observers attribute the gap partly to a delay built into the prize itself. Nobel committees typically honor discoveries made decades earlier. Today's winners therefore mirror the laboratories of the 1980s and 1990s, when women were scarcer still. Others argue that the delay explains less than it seems, pointing to the nominations, which come mostly from senior and mainly male scientists. On either account, the prize is less a picture of science today than a delayed and somewhat distorted echo of its past."
+},
+{
+"id": "r1-s2",
+"text": "Why is the sea salty when the rivers that feed it taste fresh? The answer begins on land. Rainwater is slightly acidic, and as it seeps through soil and rock, it slowly dissolves minerals. It then carries tiny amounts of sodium, calcium, and other elements into streams and eventually into the ocean. River water tastes fresh only because these substances are so dilute. Further salts enter the sea from hot springs on the ocean floor and from undersea volcanic eruptions. When seawater evaporates, the water rises into the air as vapor, but the dissolved minerals cannot leave with it. Over hundreds of millions of years, this process has raised the salt level to roughly three and a half percent of the ocean's weight. That level has stayed fairly stable because some salt is continually buried in sediment on the seabed. The sea, in other words, is salty because its water ____."
+},
+{
+"id": "r1-s3",
+"text": "Most people assume that hearing is a matter for the ears alone. A short experiment published in 1976 suggests otherwise. The psychologists Harry McGurk and John MacDonald dubbed a recording of a person saying the syllable ba onto a video of the same person's lips forming ga. Viewers who watched the clip typically reported hearing a third sound, da, which was present in neither the audio nor the video. When they closed their eyes, they heard ba correctly, but when they opened them, the illusion returned at once. This happened even to people who knew exactly how the trick worked. In everyday life this blending is usually beneficial. In a noisy restaurant, watching a speaker's mouth can noticeably improve how well we follow a conversation. That is why many people glance at others' lips without realizing it when a room grows loud. The strength of the effect varies among individuals and perhaps among speakers of different languages, but its basic lesson is clear. The McGurk effect shows that the brain does not simply receive sounds but ____ by combining what the ears report with what the eyes see."
+},
+{
+"id": "r1-s4",
+"text": "The webtoon is a comic designed to be read by scrolling down a smartphone screen rather than by turning pages, and it emerged on Korean web portals in the early 2000s. Because each episode unfolds in a single vertical strip, artists learned to use the gaps between panels. They stretch blank space to build suspense or to stay with a moment of grief. Translation has become central to the business, and popular series now appear in English, Japanese, Spanish, and other languages. For years the format was regarded abroad as a regional curiosity, but that view has <u>eroded</u> rapidly. In June 2024 Webtoon Entertainment, the company behind Naver's platform, made its debut on the Nasdaq stock exchange in New York. The same year an animated adaptation of the Korean webtoon Solo Leveling, produced by a Japanese studio, drew a large international audience. Skeptics caution, however, that constant weekly deadlines have left many artists exhausted, and that rapid growth may only add to the strain."
+},
+{
+"id": "r1-s5",
+"text": "For three centuries the violins made by Antonio Stradivari in the Italian town of Cremona have been honored as the best ever made, and the finest now sell for several million dollars. Explanations for their supposed superiority have multiplied: some point to a secret varnish or to chemical treatments of the wood, while others point to unusually dense timber grown during a long cold period in Europe. In 2010, however, the acoustician Claudia Fritz and the violin maker Joseph Curtin conducted a revealing experiment in a hotel room in Indianapolis during an international violin competition. Twenty-one experienced violinists played six instruments, three new and three old Italian ones, and two of the old ones were by Stradivari. The players wore modified welder's goggles so that they could not see which was which. Most could not reliably tell old from new, and the instrument they preferred most often was a new one. Later tests with famous soloists in larger halls pointed in a similar direction. The violins' fame, it seems, owes as much to history and expectation as to sound. Not everyone accepted the results, however. When the first study was published in 2012, some collectors and dealers objected angrily that a hotel room was no place to judge a great violin."
+},
+{
+"id": "r1-s6",
+"text": "Few trees have a history as ancient as the ginkgo. Fossil leaves almost identical to those of the modern species have been found in rocks laid down long before the first flowering plants appeared. The tree is the sole surviving member of a family that once spread across much of the globe. Today it lines city streets from Seoul to New York, prized for its tolerance of pollution, pests, and compacted soil. Its toughness became famous after 1945. Several of these trees stood within a couple of kilometers of the blast in Hiroshima, yet they sprouted new buds, and some of them are still alive. Even so, the species might not have survived at all without human help. By the time European naturalists first saw it in the late seventeenth century, wild populations had shrunk to a few remote pockets in China. The species may owe its survival largely to Buddhist monks who grew it in temple gardens."
+},
+{
+"id": "r1-s7",
+"text": "For three months the letters kept arriving for someone named Iris Vane. They came in pale blue envelopes addressed in a slanting, old-fashioned hand. Mr. Okafor, who had moved into the flat in March, carefully wrote 'not at this address' on each one and dropped it back into the postbox. In the fourth month a letter arrived with no return address at all. He propped it on the mantelpiece, where it sat for a week, silently reproaching him. At last he asked the landlady about the previous tenant. Iris Vane had died the winter before at ninety-one, she told him. Her only brother lived in a care home in the north and perhaps had never been told. Mr. Okafor sat for a long time with the unopened envelope in his lap. Then he took out a sheet of paper, uncapped his pen, and began, with considerable difficulty, to compose a reply."
+},
+{
+"id": "r2-s1",
+"text": "For most of the past century, owning more clothes was a reliable marker of prosperity. That assumption is now being tested by two business models that promise to decouple style from accumulation. Rental services let subscribers borrow garments for an occasion or a month and send them back, while resale platforms allow owners to sell what they no longer wear, prolonging each item's working life. Advocates portray both as remedies for a notoriously wasteful industry, and regulators have begun to share their concern. Under European Union rules, member states were required to start collecting used textiles separately from other household waste from January 2025. Yet the environmental credentials of these models are less <u>unequivocal</u> than their marketing suggests. A rented dress may shuttle back and forth by courier many times and be dry-cleaned after every wear. One Finnish study published in 2021 even concluded that renting clothes could have a larger climate footprint than buying them and wearing them for a long time, although its result depended on its assumptions. Resale, too, can prove counterproductive if cheap secondhand prices simply encourage shoppers to buy more. What matters most, researchers suggest, is how many times a garment is actually worn before it is discarded, not whether it is owned, rented, or resold."
+},
+{
+"id": "r2-s2",
+"text": "Do animals other than humans laugh? Laughter is usually regarded as a distinctively human trait, shared at most with our closest relatives among the apes. In the late 1990s, however, the neuroscientist Jaak Panksepp reported something that many colleagues found faintly absurd: rats, he claimed, laugh when they are tickled. The sounds are high-pitched chirps at around fifty kilohertz, far beyond the range of human hearing, and they can be detected only with special equipment. Tickled rats emitted them in abundance, and they eagerly pursued the hand that tickled them, as if soliciting more. Young rats chirped most, especially during rough-and-tumble play with one another. Panksepp argued that such chirping might be an ancestral form of human laughter. Skeptics warned against anthropomorphism, the temptation to ____. Later research has nonetheless lent his idea some credence. In a 2016 study, researchers in Berlin identified neurons in the rat brain that fired vigorously during tickling. Rats placed in anxiety-inducing conditions also chirped far less when tickled, much as an apprehensive person is difficult to make laugh."
+},
+{
+"id": "r2-s3",
+"text": "Few schools have exerted an influence so disproportionate to their size and lifespan as the Bauhaus. The architect Walter Gropius founded it in the German city of Weimar in 1919, and it set out to dissolve the hierarchy that ranked painting and sculpture above the so-called applied arts. Students began with a preliminary course before entering workshops. The course encouraged them to experiment with materials, color, and form, while the workshops were devoted to weaving, metalwork, furniture, and other crafts. Their teachers included the painters Paul Klee and Wassily Kandinsky. Over time the school's ambition shifted toward well-made objects that could be mass-produced at modest cost. Its existence was precarious from the outset. Hostility from conservative local politicians forced it to relocate to Dessau in 1925 and then to Berlin in 1932. In 1933, under pressure from the new Nazi government, its staff voted to close it. Yet the closure dispersed rather than extinguished its ideas. Teachers who emigrated carried them to the United States and elsewhere. The clean lines and functional furniture now familiar around the world owe a substantial debt to a school that lasted barely fourteen years."
+},
+{
+"id": "r2-s4",
+"text": "During the Second World War, naval sonar operators were puzzled by an echo that seemed to come from a false seafloor several hundred meters down, even in waters known to be thousands of meters deep. Stranger still, this phantom bottom ____: it rose toward the surface at dusk and sank again at dawn. The mystery was eventually solved. The so-called deep scattering layer turned out to be a dense congregation of small fishes, shrimp, and plankton. Their bodies reflected sound, and so did the gas-filled swim bladders of many fish. Each night, vast numbers of these creatures ascend to feed in the productive surface waters. Each morning they retreat into the gloom of the depths, where predators that hunt by sight have difficulty finding them. Measured by the sheer mass of animals involved, this daily commute is probably the largest migration on the planet. It also matters for the climate. Because the migrants feed near the surface and then excrete and respire at depth, they help transport carbon away from the atmosphere, a service that scientists are only beginning to quantify."
+},
+{
+"id": "r2-s5",
+"text": "In many affluent societies, the cat is quietly overtaking the dog as the household companion of choice. In 2017 an annual industry survey in Japan estimated that pet cats outnumbered pet dogs for the first time, and the gap has persisted since. Demographers attribute the shift less to changing tastes than to changing households. Cats need no daily walks and tolerate cramped apartments, and they can be left alone during long working days. These traits suit the growing number of people who live by themselves or work long hours. The trend has spawned an entire economy, from premium pet food to cat cafés, and some economists have even coined playful terms for the spending it generates. Veterinarians, however, caution that the image of the cat as an undemanding pet is misleading. Cats are adept at concealing illness, so owners who assume they need little attention may overlook early symptoms."
+},
+{
+"id": "r2-s6",
+"text": "'Ten more minutes,' the old woman calls across the empty rink, though I have not said a word. It is past closing time, and I am supposed to be resurfacing the ice. Every Thursday she arrives at nine in a faded red coat, laces her skates with slow, deliberate fingers and glides in wide circles while I wait in the cab of the machine. She is not graceful, exactly; her turns are cautious, and she never attempts a jump. But she keeps one arm extended, as though someone were holding her hand. Tonight she finally steps off the ice and stops beside me. She explains, <u>haltingly</u> at first and then all in a rush, that she and her husband met here fifty years ago, and that he skated far better than she ever could. Then she pats the cold rail twice, the way one might pat a shoulder, and walks out into the snow. I wait a long moment before I start the engine."
+},
+{
+"id": "r3-s1",
+"text": "Women now start a substantial share of new businesses in many countries, but when it comes to venture capital, their share remains strikingly small. Venture capital is the high-risk money that propels fast-growing start-ups. In the United States, companies founded solely by women have for years received only around two percent of all venture funding. That is the estimate of the data firm PitchBook, and the figure barely budged even during the investment boom of 2021. Researchers have offered several explanations. Most venture capitalists are men, and investors, like everyone else, are inclined to back people whose backgrounds resemble their own. In one widely cited study of a start-up pitch competition, investors tended to ask male founders about the potential for gains while asking female founders about the risk of losses. This <u>subtle</u> asymmetry was associated with how much money each group eventually raised. Some governments and funds have responded with programs earmarked for women-led companies, but critics argue that segregated funding may treat the symptom rather than the cause. A more durable remedy, they contend, is to diversify the ranks of investors themselves."
+},
+{
+"id": "r3-s2",
+"text": "For centuries sailors told of monstrous waves that reared up without warning from moderate seas, towering far above anything around them. Oceanographers tended to dismiss such accounts as exaggeration, because the standard models of wave statistics predicted that waves of that height should occur only once in many thousands of years. On New Year's Day 1995, however, a laser instrument on the Draupner gas platform in the North Sea recorded a single wave roughly twenty-six meters high. It was more than twice the height of the surrounding waves. No one could blame this measurement on the imagination of a frightened crew, and it transformed the debate. Researchers have since proposed several mechanisms. Waves traveling at different speeds may overtake one another and momentarily combine, and currents running against the wind can compress and steepen swells. Under certain conditions, a wave may also draw energy from its neighbors and grow at their expense. Satellite surveys suggest that such extreme waves are still rare but far less anomalous than the old models assumed. Ship designers and offshore engineers now take them into account, a belated vindication of generations of mariners whose testimony had been doubted."
+},
+{
+"id": "r3-s3",
+"text": "Why does a fragment of a song, often one you do not even like, lodge itself in the mind for hours? Psychologists call the phenomenon involuntary musical imagery, though the colloquial term earworm is far more common. Surveys suggest that a large majority of people experience such episodes at least once a week. The tunes most likely to become earworms tend to share certain features: they are relatively fast and have a simple, familiar melodic contour. Yet they contain some unusual leap or repetition that makes them distinctive. Recent and frequent exposure also raises the odds, which is why a song heard on the radio that morning is a frequent culprit. Some studies suggest that a moderately demanding task, such as an anagram puzzle, can help to dislodge an earworm. Chewing gum may help as well, perhaps because it interferes with the silent rehearsal that keeps the tune alive. Curiously, however, deliberate attempts to suppress an earworm often ____, much as trying not to think about a white bear only makes the bear harder to forget."
+},
+{
+"id": "r3-s4",
+"text": "Medieval European painters were by no means incompetent, yet their pictures often look curiously flat to modern eyes. Buildings tilt at improbable angles, and figures in the background may be as large as those in front, their size reflecting their importance rather than their distance. Such pictures followed a different convention rather than a mistaken one; Chinese and Japanese painters, too, long used other systems to suggest depth. Many twentieth-century artists would later abandon the method that replaced it. That method, linear perspective, took shape in Renaissance Florence. Around 1415 the architect Filippo Brunelleschi is said to ____ a striking demonstration. Standing in the doorway of the cathedral, he had viewers hold up a painted panel of the baptistery opposite, which had a small hole drilled through it. The viewers peered through the hole from behind at a mirror held in front of the panel. When the mirror was lowered, they saw the real building align with its painted image. Some two decades later, the humanist Leon Battista Alberti codified the method in his treatise On Painting. He explained how parallel lines should converge on a single vanishing point, and linear perspective soon spread across Italy and then Europe."
+},
+{
+"id": "r3-s5",
+"text": "In the past few years, a growing number of patients have consulted a doctor without leaving home. Smartphone apps let them describe their symptoms in a video call, and a prescription can then be sent electronically to a pharmacy of their choosing. South Korea long restricted such consultations but permitted them temporarily during the COVID-19 pandemic and later continued them through a pilot program. In February 2024, a mass walkout by trainee doctors strained hospitals, and the government expanded remote consultations to all patients. Many doctors and pharmacists remain apprehensive, however, warning that a video screen cannot replace a physical examination. Pharmacist groups have also resisted proposals to deliver medicines directly to patients' homes, citing the risk of errors and misuse. For now, most patients who use the apps must still collect their medicines in person. Supporters nonetheless argue that the apps spare elderly and rural patients onerous journeys for routine prescriptions."
+},
+{
+"id": "r3-s6",
+"text": "By eleven the night market smelled mostly of extinguished charcoal. Mrs. Yoon untied the tarpaulin over her stall with the brisk economy of long habit, having performed the same motions for thirty years. She stacked the plastic stools in threes and swept the used skewers into a bucket. Across the alley, the young man who had opened a coffee cart that spring was still grappling with his awning. As it did every night, the awning refused to fold. For weeks she had watched him struggle and said nothing, partly out of reserve and partly from a private conviction that he would not last the season. Tonight, without quite deciding to, she crossed the alley. She took the pole from his hands and showed him the concealed latch. He thanked her so <u>profusely</u> that she waved him off in embarrassment. The next evening a paper cup of coffee was waiting on her counter when she arrived, its lid marked in careful handwriting: for the latch. She did not like coffee. She drank it anyway, slowly, while the first customers drifted in."
+}
+],
+"q": [
+[
+1,
+1,
+"vocab",
+null,
+"Select the word that is most similar in meaning to the word in capital letters.\nOBDURATE",
+[
+"flexible",
+"yielding",
+"generous",
+"stubborn"
+],
+[
+4
+],
+"obdurate 는 '고집 센, 완고한'이라 stubborn 과 같은 뜻이에요. flexible(융통성 있는)·yielding(잘 따르는)은 반대말이고, generous(너그러운)는 뜻이 달라요."
+],
+[
+2,
+1,
+"vocab",
+null,
+"Select the word that is most similar in meaning to the word in capital letters.\nPERFUNCTORY",
+[
+"thorough",
+"superficial",
+"careful",
+"reluctant"
+],
+[
+2
+],
+"perfunctory 는 '형식적인, 건성으로 하는'이라 겉만 훑는 superficial 과 가까워요. thorough(빈틈없는)·careful(꼼꼼한)은 반대말이고, reluctant(마지못한)는 뜻이 달라요."
+],
+[
+3,
+1,
+"vocab",
+null,
+"Select the word that is closest in meaning to the underlined word.\nThe new drainage system was meant to <u>ameliorate</u> the flooding that plagued the old market district every spring.",
+[
+"worsen",
+"improve",
+"damage",
+"predict"
+],
+[
+2
+],
+"ameliorate 는 '(나쁜 상황을) 낫게 하다, 개선하다'라 improve 와 같아요. 해마다 시장을 괴롭히던 홍수를 배수 시설로 덜려 했다는 문맥이에요. worsen(악화시키다)·damage(해치다)는 반대 방향이고, predict(예측하다)는 뜻이 달라요."
+],
+[
+4,
+1,
+"vocab",
+null,
+"Select the word that is closest in meaning to the underlined word.\nValley farmers plan around the <u>capricious</u> spring weather, which can swing from frost to heat within days.",
+[
+"steady",
+"severe",
+"unpredictable",
+"pleasant"
+],
+[
+3
+],
+"capricious 는 '변덕스러운'이라 unpredictable(예측할 수 없는)과 가까워요. 며칠 만에 서리에서 더위로 바뀐다는 뒤 설명이 단서예요. steady(한결같은)는 반대말이고, severe(혹독한)·pleasant(쾌적한)는 뜻이 달라요."
+],
+[
+5,
+1,
+"cloze",
+null,
+"Select the word that best completes the sentence.\nThe study's dramatic conclusion turned out to be ____, resting on a correlation that vanished once the participants' ages were taken into account.",
+[
+"robust",
+"spurious",
+"unanimous",
+"innate"
+],
+[
+2
+],
+"나이를 따져 보니 상관관계가 사라졌다는 것은 결론이 '그럴듯해 보였지만 가짜(spurious)'였다는 뜻이에요. robust(탄탄한)는 반대이고, unanimous(만장일치의)·innate(타고난)는 결론을 꾸미기에 맞지 않아요."
+],
+[
+6,
+1,
+"cloze",
+null,
+"Select the word that best completes the sentence.\nBecause it is given in a single dose, the new vaccine has ____ the need for the painful series of injections that patients once endured.",
+[
+"obviated",
+"corroborated",
+"emulated",
+"heightened"
+],
+[
+1
+],
+"한 번만 맞으면 되니 예전의 아픈 여러 차례 주사가 '필요 없게(obviated)' 됐다는 말이에요. heightened(키웠다)는 반대 방향이고, corroborated(확증했다)·emulated(본떴다)는 the need for ~ 와 이어 뜻이 통하지 않아요."
+],
+[
+7,
+1,
+"cloze",
+null,
+"Select the word that best completes the sentence.\nOnce the leaked emails revealed that he had known about the defect for years, the minister's position became ____, and he resigned within a week.",
+[
+"untenable",
+"impeccable",
+"negotiable",
+"ostentatious"
+],
+[
+1
+],
+"결함을 몇 년 동안 알고 있었다는 사실이 드러나 일주일 만에 물러났으니 자리가 '지킬 수 없게(untenable)' 된 거예요. impeccable(흠잡을 데 없는)은 반대이고, negotiable(협상할 수 있는)·ostentatious(과시하는)는 사임과 이어지지 않아요."
+],
+[
+8,
+1,
+"cloze",
+null,
+"Select the pair of words that best completes the sentence.\nThe mayor, who had once been ____ in her opposition to the park, became one of its most ____ supporters after visiting a similar project abroad.",
+[
+"adamant — reluctant",
+"tentative — reticent",
+"adamant — vociferous",
+"indifferent — reluctant"
+],
+[
+3
+],
+"once 와 became 이 '예전엔 단호히 반대하다가 지금은 가장 앞장서 지지한다'는 바뀜을 보여 줘요. 앞칸은 단호한(adamant), 뒷칸은 목소리 높여 외치는(vociferous)이 맞아요. reluctant(마지못한)·reticent(말을 아끼는) 지지자는 마음을 바꾼 열성과 맞지 않아요."
+],
+[
+9,
+1,
+"cloze",
+null,
+"Select the expression that best connects the two sentences.\nVisitors must reserve their tickets online at least a day in advance. ____, they may be turned away at the door, even if the hall is half empty.",
+[
+"Similarly",
+"In addition",
+"Otherwise",
+"For example"
+],
+[
+3
+],
+"앞 문장은 지켜야 할 조건(하루 전 예매), 뒤 문장은 지키지 않았을 때의 결과(입장 거절)예요. '그렇지 않으면'인 Otherwise 가 맞아요. Similarly(마찬가지로)·In addition(게다가)·For example(예를 들어)은 조건과 결과를 잇지 못해요."
+],
+[
+10,
+1,
+"cloze",
+null,
+"Select the word that best completes the sentence.\nEarly biographers of the explorer tended to ____ his exploits, adding perils and narrow escapes that his own diaries never mention.",
+[
+"embellish",
+"accomplish",
+"diminish",
+"scrutinize"
+],
+[
+1
+],
+"일기에 없는 위험과 아슬아슬한 탈출을 덧붙였다는 것은 업적을 '꾸며 부풀렸다(embellish)'는 뜻이에요. diminish(줄이다)는 반대 방향이고, accomplish(이루다)는 전기 작가가 할 일이 아니며, scrutinize(꼼꼼히 살피다)도 없는 일을 덧붙이는 것과 맞지 않아요."
+],
+[
+11,
+1,
+"grammar",
+null,
+"Select the expression that makes the sentence grammatically correct.\nThe number of applicants for the scholarship ____ risen sharply, and most of them ____ from rural areas.",
+[
+"has — comes",
+"has — come",
+"have — come",
+"have — comes"
+],
+[
+2
+],
+"The number of + 복수 명사는 '~의 수'라 단수 취급해 has 가 맞아요. most of them 은 of 뒤 them(복수)에 맞춰 come 이 맞아요."
+],
+[
+12,
+1,
+"grammar",
+null,
+"Select the expression that makes the sentence grammatically correct.\nIf the bridge had been inspected last spring, the collapse ____ prevented.",
+[
+"could be",
+"can have been",
+"had been",
+"could have been"
+],
+[
+4
+],
+"if 절이 had been inspected(가정법 과거완료)이니 주절은 조동사 과거 + have p.p. 꼴이어야 해요. could have been prevented 가 맞아요."
+],
+[
+13,
+1,
+"grammar",
+null,
+"Select the expression that makes the sentence grammatically correct.\nNot until the final results were published ____ how close the race had been.",
+[
+"we realized",
+"did we realize",
+"we did realize",
+"realized we"
+],
+[
+2
+],
+"Not until ~ 이 문장 앞으로 나오면 주절은 조동사 + 주어 + 동사 순으로 도치돼요. did we realize 가 맞아요."
+],
+[
+14,
+1,
+"grammar",
+null,
+"Select the expression that makes the sentence grammatically correct.\nBy next March, the researchers ____ the river's water quality for ten full years.",
+[
+"have monitored",
+"had monitored",
+"will be monitored",
+"will have monitored"
+],
+[
+4
+],
+"By next March 처럼 미래 한 시점까지 이어진 일은 미래완료 will have p.p. 로 써요. will be monitored 는 수동이라 목적어(the river's water quality)를 받을 수 없어요."
+],
+[
+15,
+1,
+"grammar",
+null,
+"Select the underlined part that is grammatically incorrect.\nLast weekend I finally cleared out my grandfather's attic. Each of the boxes ①<u>were labeled in</u> his careful handwriting, and most of them ②<u>contained letters</u> he had kept since his youth. I spent the whole afternoon ③<u>reading them by</u> the small window, and by evening he seemed ④<u>different than I had imagined</u>.",
+[
+"① were labeled in",
+"② contained letters",
+"③ reading them by",
+"④ different than I had imagined"
+],
+[
+1
+],
+"Each of + 복수 명사는 each 가 주어라 단수 취급해요. were labeled 가 아니라 was labeled 여야 해요. different than 뒤에 절(I had imagined)이 오는 꼴은 사전·문법서도 인정하는 표현이라 틀린 곳이 아니에요."
+],
+[
+16,
+1,
+"grammar",
+null,
+"Select the underlined part that is grammatically incorrect.\nWhen I started volunteering at the animal shelter, I was nervous around the larger dogs. The manager, ①<u>an patient woman</u> in her sixties, told me to ②<u>try and approach</u> them slowly. Within a month I ③<u>had grown confident</u> enough to walk three dogs at once, and the work has ④<u>made me calmer</u> in every part of my life.",
+[
+"① an patient woman",
+"② try and approach",
+"③ had grown confident",
+"④ made me calmer"
+],
+[
+1
+],
+"patient 는 자음 소리 [p]로 시작하니 an 이 아니라 a 가 와야 해요. try and + 동사는 try to 보다 구어적이지만 흔히 쓰는 표현이고, made me calmer(5형식)도 맞아요."
+],
+[
+17,
+1,
+"reading",
+"r1-s1",
+"What is the main idea of the passage?",
+[
+"Women scientists have recently achieved full equality in Nobel recognition.",
+"The scarcity of women among science laureates reflects past conditions and the nomination process more than present-day science.",
+"Research on messenger RNA was neglected because it was led mainly by women.",
+"The Nobel committees should stop honoring discoveries made decades earlier."
+],
+[
+2
+],
+"글은 여성 수상자가 드문 까닭을 두 가지(수상이 수십 년 늦게 오는 것, 추천이 남성 원로에게서 나오는 것)로 설명하고, 상이 지금 과학보다 과거를 비춘다고 맺어요. '이미 평등해졌다'는 말은 글과 반대이고, mRNA 연구가 여성 때문에 외면받았다거나 상 제도를 바꾸자는 주장은 없어요."
+],
+[
+18,
+1,
+"reading",
+"r1-s1",
+"According to the passage, why do some observers believe the Nobel Prize lags behind current science?",
+[
+"It usually honors discoveries made decades before the award.",
+"Its committees refuse to consider research on medicine.",
+"Most of its laureates are chosen by public vote.",
+"It is awarded only to scientists who have retired."
+],
+[
+1
+],
+"Nobel committees typically honor discoveries made decades earlier 라고 했어요. 그래서 지금 수상자가 1980~90년대 연구실 모습을 비춘다는 설명이에요. 의학 연구를 빼거나, 대중 투표나 은퇴자만 받는다는 말은 없어요."
+],
+[
+19,
+1,
+"reading",
+"r1-s1",
+"Which of the following is closest in meaning to the underlined expression?",
+[
+"conceal deliberately",
+"make conspicuous",
+"partially resolve",
+"greatly exaggerate"
+],
+[
+2
+],
+"throw into relief 는 '두드러지게 드러내다'예요. 축하할 일이 오히려 끈질긴 격차를 또렷이 보여 준다는 흐름이라 make conspicuous 가 맞아요. conceal(숨기다)은 반대예요."
+],
+[
+20,
+1,
+"reading",
+"r1-s2",
+"Which of the following best fits in the blank?",
+[
+"absorbs salt directly from the air above it",
+"flows back into the rivers each winter",
+"is constantly lost to the air, but the substances dissolved in it are not",
+"dissolves the rocks of the seafloor every year"
+],
+[
+3
+],
+"바닷물이 증발할 때 물은 수증기로 날아가지만 녹아 있던 광물은 함께 떠나지 못한다고 했어요. 그래서 물은 빠져나가고 광물만 남아 짜진다는 말이 맞아요. 공기에서 소금을 받는다거나 강으로 되돌아간다는 말은 없어요."
+],
+[
+21,
+1,
+"reading",
+"r1-s2",
+"According to the passage, why does river water taste fresh?",
+[
+"Rivers contain no minerals at all.",
+"Rainwater removes the salt from rivers.",
+"Hot springs on the ocean floor purify it.",
+"The minerals dissolved in it are present in very small amounts."
+],
+[
+4
+],
+"River water tastes fresh only because these substances are so dilute 라고 했어요. 광물이 아주 묽게 들어 있어서예요. 광물이 전혀 없다는 것은 지나친 말이고, 빗물은 오히려 광물을 녹여 강으로 가져와요."
+],
+[
+22,
+1,
+"reading",
+"r1-s3",
+"Which of the following best fits in the blank?",
+[
+"ignores whatever the eyes report",
+"records sounds exactly as they arrive",
+"handles vision and hearing separately",
+"builds what we hear out of more than one sense"
+],
+[
+4
+],
+"빈칸 뒤 combining what the ears report with what the eyes see 가 단서예요. 뇌가 소리를 그대로 받는 게 아니라 눈과 귀를 합쳐 '들리는 것'을 만든다는 말이 맞아요. 눈을 무시하거나 따로 처리한다는 것은 실험 결과와 반대예요."
+],
+[
+23,
+1,
+"reading",
+"r1-s3",
+"What is the primary purpose of the passage?",
+[
+"To teach readers how to make their own video recordings",
+"To argue that people should close their eyes during conversations",
+"To describe an illusion showing that what we hear is shaped by what we see",
+"To show that the human ear is easily damaged by noise"
+],
+[
+3
+],
+"1976년 실험으로 맥거크 효과를 소개하고, 듣기가 보는 것의 영향을 받는다는 점을 설명하는 글이에요. 영상 만드는 법이나 대화 때 눈을 감으라는 주장, 귀 손상 이야기는 없어요."
+],
+[
+24,
+1,
+"reading",
+"r1-s3",
+"According to the passage, what did viewers report when they watched the clip?",
+[
+"Hearing exactly the syllable that was recorded",
+"Seeing the speaker's lips form the syllable ba",
+"Hearing a sound that was in neither the audio nor the video",
+"Hearing nothing at all until they closed their eyes"
+],
+[
+3
+],
+"reported hearing a third sound, da 라고 하고, 이 소리는 present in neither the audio nor the video 라고 했어요. 녹음된 ba 는 눈을 감았을 때 제대로 들렸어요."
+],
+[
+25,
+1,
+"reading",
+"r1-s4",
+"Which of the following is NOT true according to the passage?",
+[
+"The comics are designed to be read by scrolling vertically.",
+"Webtoon Entertainment began trading on a New York exchange in 2024.",
+"Some critics worry about the workload of the artists.",
+"The animated Solo Leveling was produced by a Korean studio."
+],
+[
+4
+],
+"Solo Leveling 애니메이션은 produced by a Japanese studio 라고 했어요. 한국 회사가 만들었다는 것은 틀려요. 세로 스크롤, 2024년 나스닥 상장, 작가들의 마감 부담 걱정은 모두 글에 있어요."
+],
+[
+26,
+1,
+"reading",
+"r1-s4",
+"Which of the following is closest in meaning to the underlined expression?",
+[
+"spread widely",
+"been confirmed",
+"suddenly reappeared",
+"weakened"
+],
+[
+4
+],
+"erode 는 '깎여 나가듯 약해지다'예요. 지역 호기심거리로 보던 시각이 빠르게 사라졌다는 흐름이라 weakened 가 맞아요. spread(퍼졌다)·confirmed(확인됐다)는 반대 방향이에요."
+],
+[
+27,
+1,
+"reading",
+"r1-s5",
+"Why does the author mention the welder's goggles?",
+[
+"To show how the players were prevented from identifying the instruments",
+"To suggest that the experiment was dangerous for the players",
+"To explain how the old violins were repaired",
+"To criticize the competition for its poor lighting"
+],
+[
+1
+],
+"용접용 고글을 고쳐 써서 어떤 악기인지 볼 수 없게 했다고 했어요(so that they could not see which was which). 눈가림 장치로 언급한 것이지 위험·수리·조명 이야기가 아니에요."
+],
+[
+28,
+1,
+"reading",
+"r1-s5",
+"Which of the following is true according to the passage?",
+[
+"Some collectors objected to the setting of the 2010 experiment.",
+"The players could easily tell the old violins from the new ones.",
+"Only Stradivari violins were included in the experiment.",
+"The author concludes that old violins are inferior instruments."
+],
+[
+1
+],
+"끝 문장에서 일부 수집가·상인이 호텔 방은 명기를 판단할 곳이 아니라며 반발했다고 했어요. 연주자 대부분은 구별하지 못했고, 새 악기 셋에 옛 악기 셋 가운데 스트라디바리는 둘뿐이었어요. 글쓴이는 옛 악기가 못하다고 하지 않고 '명성이 기대와 역사에 기댄다'고 해요."
+],
+[
+29,
+1,
+"reading",
+"r1-s5",
+"According to the passage, which instrument did the players prefer most often?",
+[
+"A violin by Stradivari",
+"A newly made violin",
+"An old Italian violin of unknown origin",
+"A violin treated with a secret varnish"
+],
+[
+2
+],
+"the instrument they preferred most often was a new one 이라고 했어요. 새로 만든 바이올린이에요."
+],
+[
+30,
+1,
+"reading",
+"r1-s6",
+"Which of the following is the best title for the passage?",
+[
+"The Ginkgo: An Ancient and Remarkably Hardy Survivor",
+"Why Ginkgo Trees Are Disappearing from City Streets",
+"Temple Gardens of Seventeenth-Century Europe",
+"How Flowering Plants Conquered the Globe"
+],
+[
+1
+],
+"아주 오래된 계통의 유일한 생존자라는 점과 공해·히로시마까지 견딘 강인함이 글의 두 축이에요. 도시에서 사라진다는 것은 거리마다 심겨 있다는 내용과 반대이고, 절 정원은 중국 이야기예요."
+],
+[
+31,
+1,
+"reading",
+"r1-s6",
+"Which of the following can be inferred from the passage?",
+[
+"The species first appeared after the earliest flowering plants.",
+"European naturalists brought the tree to China.",
+"The trees near Hiroshima all died within a few years.",
+"Without human cultivation, the species might have become extinct."
+],
+[
+4
+],
+"야생 개체는 몇 곳만 남았고 스님들이 길러 살아남았을 수 있다고 했으니, 사람이 기르지 않았다면 사라졌을 수도 있다고 추론할 수 있어요. 꽃 피는 식물보다 훨씬 먼저 있었고, 히로시마 나무 일부는 지금도 살아 있어요."
+],
+[
+32,
+1,
+"reading",
+"r1-s7",
+"Which of the following best describes the tone of the passage?",
+[
+"tense and menacing",
+"lighthearted and comic",
+"somber and compassionate",
+"detached and indifferent"
+],
+[
+3
+],
+"세상을 떠난 사람에게 계속 오는 편지, 그 사실을 모르는 노쇠한 동생, 힘겹게 답장을 쓰기 시작하는 주인공이 차분하고 연민 어린 분위기를 만들어요. 위협적이거나 우스운 장면은 없고, 주인공은 무관심하기는커녕 오래 고민해요."
+],
+[
+33,
+1,
+"reading",
+"r1-s7",
+"What can be inferred about Mr. Okafor at the end of the passage?",
+[
+"He plans to complain to the landlady about the letters.",
+"He has decided to keep the letters for himself.",
+"He intends to let the letter writer know what happened to Iris Vane.",
+"He believes the letters were meant for him all along."
+],
+[
+3
+],
+"편지를 보낸 사람은 아이리스가 세상을 떠난 걸 모르는 듯하고, 주인공이 그 사실을 알리려 답장을 쓴다고 볼 수 있어요. 집주인에게 따지거나 편지를 갖겠다는 단서는 없어요."
+],
+[
+1,
+2,
+"vocab",
+null,
+"Select the word that is most similar in meaning to the word in capital letters.\nVORACIOUS",
+[
+"greedy",
+"restrained",
+"moderate",
+"cheerful"
+],
+[
+1
+],
+"voracious 는 '게걸스러운, 탐욕스러운'이라 greedy 와 가까워요. restrained(절제하는)·moderate(알맞은)는 반대말이고, cheerful(쾌활한)은 뜻이 달라요."
+],
+[
+2,
+2,
+"vocab",
+null,
+"Select the word that is most similar in meaning to the word in capital letters.\nTRUCULENT",
+[
+"gentle",
+"aggressive",
+"peaceful",
+"weary"
+],
+[
+2
+],
+"truculent 는 '시비조의, 공격적인'이라 aggressive 와 같은 뜻이에요. gentle(온화한)·peaceful(평화로운)은 반대말이고, weary(지친)는 뜻이 달라요."
+],
+[
+3,
+2,
+"vocab",
+null,
+"Select the word that is closest in meaning to the underlined word.\nAfter two decades at the helm, the founder finally agreed to <u>relinquish</u> control of the company to her daughter.",
+[
+"retain",
+"seize",
+"surrender",
+"reveal"
+],
+[
+3
+],
+"relinquish 는 '(권리·지위를) 내주다, 포기하다'라 surrender 와 가까워요. 20년 만에 딸에게 회사를 넘긴다는 문맥이에요. retain(유지하다)·seize(움켜쥐다)는 반대말이고, reveal(드러내다)은 뜻이 달라요."
+],
+[
+4,
+2,
+"vocab",
+null,
+"Select the word that is closest in meaning to the underlined word.\nThe link between the two burglaries was <u>tenuous</u>, resting on a single partial fingerprint.",
+[
+"solid",
+"obvious",
+"recent",
+"weak"
+],
+[
+4
+],
+"tenuous 는 '빈약한, 미약한'이라 weak 와 가까워요. 부분 지문 하나에만 기댄다는 뒤 설명이 단서예요. solid(탄탄한)는 반대말이고, obvious(뚜렷한)·recent(최근의)는 뜻이 달라요."
+],
+[
+5,
+2,
+"cloze",
+null,
+"Select the word that best completes the sentence.\nFolk tales that portray every stepmother as cruel may ____ a prejudice that real stepfamilies must struggle to overcome.",
+[
+"dispel",
+"ratify",
+"perpetuate",
+"abdicate"
+],
+[
+3
+],
+"계모를 모두 잔인하게 그리는 옛이야기는 실제 재혼 가정이 이겨 내야 할 편견을 '이어지게 한다(perpetuate)'는 말이에요. dispel(없애다)은 '모두 잔인하게 그린다'는 앞말과 반대이고, ratify(비준하다)·abdicate(물러나다)는 prejudice 와 어울리지 않아요."
+],
+[
+6,
+2,
+"cloze",
+null,
+"Select the word that best completes the sentence.\nAfter years in a noisy open-plan office, she found the quiet village library a far more ____ place to write.",
+[
+"inhospitable",
+"raucous",
+"perennial",
+"congenial"
+],
+[
+4
+],
+"시끄러운 사무실과 대비해 조용한 도서관이 글쓰기에 '마음에 맞는, 쾌적한(congenial)' 곳이라는 뜻이에요. inhospitable(머물기 힘든)·raucous(시끄러운)는 대비와 반대이고, perennial(늘 계속되는)은 글 쓰기 좋은 장소를 꾸미지 못해요."
+],
+[
+7,
+2,
+"cloze",
+null,
+"Select the pair of words that best completes the sentence.\nAlthough the drug's side effects are usually ____, lasting only a day or two, a small number of patients develop ____ symptoms that persist for months.",
+[
+"protracted — transient",
+"transient — fleeting",
+"transient — protracted",
+"benign — ephemeral"
+],
+[
+3
+],
+"앞칸은 '하루 이틀만 간다'는 설명이니 일시적인(transient), 뒷칸은 '몇 달 이어진다'니 오래 끄는(protracted)이 맞아요. fleeting·ephemeral(덧없는)은 몇 달 간다는 말과 어긋나요."
+],
+[
+8,
+2,
+"cloze",
+null,
+"Select the word that best completes the sentence.\nCritics praised the actors but dismissed the dialogue as ____, a string of clichés that any viewer could predict.",
+[
+"banal",
+"incisive",
+"cryptic",
+"lyrical"
+],
+[
+1
+],
+"누구나 짐작할 수 있는 상투적 표현의 나열이니 '진부한(banal)'이 맞아요. incisive(날카로운)·lyrical(서정적인)은 칭찬이라 dismissed 와 맞지 않고, cryptic(알쏭달쏭한)은 예측할 수 있다는 말과 반대예요."
+],
+[
+9,
+2,
+"cloze",
+null,
+"Select the expression that best connects the two sentences.\nVolunteers will be trained this spring to staff the museum's new galleries. ____, the museum will be able to stay open until nine on weekday evenings.",
+[
+"Nevertheless",
+"In contrast",
+"For instance",
+"As a result"
+],
+[
+4
+],
+"자원봉사자를 길러 전시실을 맡기면(원인) 평일 밤 9시까지 열 수 있다(결과)는 관계예요. As a result 가 맞아요. Nevertheless(그런데도)·In contrast(대조적으로)·For instance(예를 들어)는 원인과 결과를 잇지 못해요."
+],
+[
+10,
+2,
+"cloze",
+null,
+"Select the word that best completes the sentence.\nYears later, the scientist publicly ____ his earlier claims, admitting that an assistant had fabricated much of the data.",
+[
+"repudiated",
+"reiterated",
+"vindicated",
+"publicized"
+],
+[
+1
+],
+"조수가 자료를 지어냈다고 인정했으니 예전 주장을 공개적으로 '부인했다(repudiated)'가 맞아요. reiterated(되풀이했다)·vindicated(정당함을 입증했다)·publicized(널리 알렸다)는 인정한 내용과 반대예요."
+],
+[
+11,
+2,
+"grammar",
+null,
+"Select the expression that makes the sentence grammatically correct.\nOne of the paintings stolen in 1990 ____ never been recovered, and the thieves ____ never been identified.",
+[
+"has — has",
+"have — have",
+"has — have",
+"have — has"
+],
+[
+3
+],
+"앞 주어는 One(하나)이라 단수 has, 뒤 주어 the thieves 는 복수라 have 가 맞아요. of the paintings stolen ... 은 꾸밈말이에요."
+],
+[
+12,
+2,
+"grammar",
+null,
+"Select the expression that makes the sentence grammatically correct.\nI wish I ____ the contract more carefully before I signed it last year.",
+[
+"had read",
+"read",
+"have read",
+"would read"
+],
+[
+1
+],
+"작년(last year)에 하지 못한 일을 아쉬워하니 I wish + 가정법 과거완료(had p.p.)를 써요. read(가정법 과거)는 지금 일을 바랄 때 써요."
+],
+[
+13,
+2,
+"grammar",
+null,
+"Select the expression that makes the sentence grammatically correct.\nOnly after she reached the hotel ____ that her passport had been stolen.",
+[
+"she realized",
+"she did realize",
+"did she realize",
+"realized she"
+],
+[
+3
+],
+"Only after ~ 처럼 only 가 붙은 부사절이 문장 앞에 오면 주절이 조동사 + 주어 + 동사 순으로 도치돼요. did she realize 가 맞아요."
+],
+[
+14,
+2,
+"grammar",
+null,
+"Select the expression that makes the sentence grammatically correct.\nBy the time the conservators arrived, the team ____ nearly three months restoring the damaged manuscript.",
+[
+"has spent",
+"spends",
+"would spend",
+"had spent"
+],
+[
+4
+],
+"전문가들이 도착한 과거 시점까지 이미 석 달을 쓴 것이니 과거완료 had spent 가 맞아요. spend + 시간 + -ing(restoring)도 맞는 꼴이에요."
+],
+[
+15,
+2,
+"grammar",
+null,
+"Select the underlined part that is grammatically incorrect.\nWhen I moved to the city, the first thing I noticed was the noise. The number of cars that pass my window every night ①<u>are truly astonishing</u>. At first I ②<u>could hardly sleep</u>, but after a few weeks I ③<u>got used to</u> the sound, and now the silence of my parents' village, an hour ④<u>outside of the city</u>, strikes me as strangely unsettling.",
+[
+"① are truly astonishing",
+"② could hardly sleep",
+"③ got used to",
+"④ outside of the city"
+],
+[
+1
+],
+"The number of + 복수 명사(~의 수)는 단수 취급이라 are 가 아니라 is 여야 해요. outside of 는 outside 만 쓰는 것보다 덜 깔끔하지만 실제로 흔히 쓰는 표현이에요."
+],
+[
+16,
+2,
+"grammar",
+null,
+"Select the underlined part that is grammatically incorrect.\nOn the morning of my first job interview, I overslept. I ①<u>should have set</u> two alarms, as my sister had suggested. I ran all the way to the office, ②<u>arriving just as</u> my name was called. Although I was ③<u>completely exhausting</u>, I answered every question calmly, and the manager even ④<u>complimented me for</u> my preparation.",
+[
+"① should have set",
+"② arriving just as",
+"③ completely exhausting",
+"④ complimented me for"
+],
+[
+3
+],
+"내가 '지친' 상태이니 감정을 느끼는 쪽의 과거분사 exhausted 여야 해요. exhausting 은 '지치게 하는'이에요. compliment A for B 는 compliment A on B 보다 덜 흔하지만 쓰이는 표현이에요."
+],
+[
+17,
+2,
+"reading",
+"r2-s1",
+"What is the main idea of the passage?",
+[
+"Renting clothes is always greener than buying them.",
+"The environmental benefit of renting or reselling clothes depends chiefly on how often each garment is worn.",
+"European rules have banned the sale of secondhand clothing.",
+"Owning many clothes is still the best sign of wealth."
+],
+[
+2
+],
+"렌털·재판매가 늘 친환경은 아니며(배송·드라이클리닝, 더 사게 만드는 문제), 결국 한 벌을 몇 번 입느냐가 중요하다고 맺어요. '늘 더 친환경'은 글이 반박하는 말이고, 유럽 규정은 헌 옷을 따로 모으게 한 것이지 판매 금지가 아니에요."
+],
+[
+18,
+2,
+"reading",
+"r2-s1",
+"Which of the following is closest in meaning to the underlined expression?",
+[
+"ambiguous",
+"affordable",
+"clear-cut",
+"recent"
+],
+[
+3
+],
+"unequivocal 은 '모호하지 않은, 명백한'이라 clear-cut 과 같아요. ambiguous(모호한)는 반대말이에요. 홍보와 달리 친환경 효과가 그렇게 '분명하지는' 않다는 흐름이에요."
+],
+[
+19,
+2,
+"reading",
+"r2-s1",
+"Which of the following is NOT mentioned in the passage?",
+[
+"The European Union requires used textiles to be collected separately.",
+"Rented garments are often dry-cleaned after each use.",
+"Low secondhand prices may lead people to buy more clothes.",
+"Rental companies have been fined for misleading advertising."
+],
+[
+4
+],
+"렌털 회사가 허위 광고로 벌금을 냈다는 이야기는 글에 없어요. 헌 옷 분리 수거(2025년 1월부터), 입을 때마다 드라이클리닝, 싼 중고 가격이 더 사게 만든다는 점은 모두 나와요."
+],
+[
+20,
+2,
+"reading",
+"r2-s1",
+"According to the passage, why might renting clothes have a large climate footprint?",
+[
+"Rented clothes are made from lower-quality fabrics.",
+"Garments are repeatedly shipped and cleaned between uses.",
+"Rental customers rarely return the clothes they borrow.",
+"Rental companies destroy garments after a single use."
+],
+[
+2
+],
+"빌린 옷이 택배로 여러 번 오가고 입을 때마다 드라이클리닝된다고 했어요. 천 품질, 반납하지 않음, 한 번 쓰고 버림은 글에 없는 말이에요."
+],
+[
+21,
+2,
+"reading",
+"r2-s2",
+"Which of the following best fits in the blank?",
+[
+"ignore the emotional lives of animals entirely",
+"attribute human feelings to animals on the basis of superficial resemblance",
+"study animals only in their natural habitats",
+"record animal sounds with special equipment"
+],
+[
+2
+],
+"anthropomorphism 은 '동물에게 사람 감정을 덮어씌우는 것'이에요. 쥐 소리를 웃음이라 부른 데 대한 경고이니, 겉모습이 비슷하다고 사람 감정을 갖다 붙이는 유혹이 맞아요. 동물 감정을 아예 무시한다는 것은 반대 쪽 잘못이에요."
+],
+[
+22,
+2,
+"reading",
+"r2-s2",
+"Which of the following can be inferred from the passage?",
+[
+"Adult rats chirp more often than young rats.",
+"Humans can hear rat chirps without any equipment.",
+"An animal's emotional state may affect how it responds to tickling.",
+"Panksepp's colleagues accepted his claim immediately."
+],
+[
+3
+],
+"불안한 상황에 둔 쥐는 간지럼에 훨씬 덜 웃었다고 했으니, 감정 상태가 반응을 바꾼다고 볼 수 있어요. 어린 쥐가 가장 많이 울고, 소리는 사람 귀에 들리지 않으며, 동료들은 처음에 터무니없다고 여겼어요."
+],
+[
+23,
+2,
+"reading",
+"r2-s2",
+"Why does the author mention an apprehensive person?",
+[
+"To argue that people should not be tickled",
+"To explain why Panksepp's colleagues doubted him",
+"To show that rats and humans make identical sounds",
+"To compare the anxious rats' reaction to a familiar human experience"
+],
+[
+4
+],
+"불안한 쥐가 간지럼에 덜 웃는 모습을, 걱정 많은 사람은 웃기기 어렵다는 익숙한 경험에 빗댄 거예요. 사람과 쥐 소리가 똑같다는 말은 없어요."
+],
+[
+24,
+2,
+"reading",
+"r2-s3",
+"Which of the following is the best title for the passage?",
+[
+"A Short-Lived School with a Lasting Legacy",
+"Why Painting Is Superior to the Applied Arts",
+"The Life of Paul Klee in Weimar",
+"How the Nazi Government Promoted Modern Design"
+],
+[
+1
+],
+"14년밖에 못 간 학교가 세계의 디자인에 오래 남은 영향을 줬다는 것이 글의 뼈대예요. 회화가 낫다는 것은 학교가 없애려던 위계이고, 나치 정부는 오히려 학교를 닫게 했어요."
+],
+[
+25,
+2,
+"reading",
+"r2-s3",
+"According to the passage, why did the Bauhaus move to Dessau?",
+[
+"Its founder wanted to be closer to Berlin.",
+"Conservative local politicians were hostile to it.",
+"The Nazi government ordered it to move.",
+"Its workshops needed more space for mass production."
+],
+[
+2
+],
+"Hostility from conservative local politicians forced it to relocate to Dessau in 1925 라고 했어요. 나치 정부의 압력은 1933년 문을 닫을 때 이야기예요."
+],
+[
+26,
+2,
+"reading",
+"r2-s3",
+"Which of the following is true according to the passage?",
+[
+"The Bauhaus was founded in Berlin and later moved to Weimar.",
+"The school operated for more than thirty years.",
+"Its teachers refused to design objects for mass production.",
+"Students took an introductory course before joining the workshops."
+],
+[
+4
+],
+"Students began with a preliminary course ... before entering workshops 라고 했어요. 시작은 바이마르, 마지막이 베를린이고, 14년 남짓 운영됐으며, 대량 생산할 물건을 디자인하는 쪽으로 나아갔어요."
+],
+[
+27,
+2,
+"reading",
+"r2-s4",
+"Which of the following best fits in the blank?",
+[
+"remained perfectly still for years",
+"appeared only during violent storms",
+"could be seen from the deck of a ship",
+"moved up and down on a daily schedule"
+],
+[
+4
+],
+"콜론 뒤에 '해 질 녘 올라오고 새벽에 다시 가라앉았다'고 풀어 주니 날마다 오르내렸다는 말이 맞아요. 꼼짝 않았다거나 폭풍 때만 나타났다는 것은 뒤 설명과 어긋나요."
+],
+[
+28,
+2,
+"reading",
+"r2-s4",
+"According to the passage, why do the creatures descend into the depths each morning?",
+[
+"To feed on plants growing on the seafloor",
+"To avoid predators that hunt by sight",
+"To escape the noise of naval sonar",
+"To lay their eggs in warmer water"
+],
+[
+2
+],
+"where predators that hunt by sight have difficulty finding them 이라고 했어요. 낮에 눈으로 사냥하는 포식자를 피하려는 거예요. 먹이는 밤에 얕은 물에서 먹어요."
+],
+[
+29,
+2,
+"reading",
+"r2-s4",
+"Which of the following can be inferred from the passage?",
+[
+"Some carbon taken up near the ocean surface ends up in deeper water.",
+"The deep scattering layer is made up mainly of large whales.",
+"Sonar operators correctly identified the layer during the war.",
+"The daily migration has no effect on the climate."
+],
+[
+1
+],
+"밤에 얕은 물에서 먹고 깊은 곳에서 배설·호흡해 탄소를 대기에서 멀리 옮긴다고 했으니, 표층의 탄소 일부가 깊은 물로 간다고 볼 수 있어요. 산란층은 작은 물고기·새우·플랑크톤이고, 전쟁 때는 가짜 해저로 착각했어요."
+],
+[
+30,
+2,
+"reading",
+"r2-s5",
+"What is the primary purpose of the passage?",
+[
+"To persuade readers to adopt dogs instead of cats",
+"To explain why cats have become more popular pets and to note a related concern",
+"To describe how cat cafés are managed",
+"To compare the intelligence of cats and dogs"
+],
+[
+2
+],
+"고양이가 개를 앞지르는 까닭(1인 가구·긴 근무)을 설명하고, 끝에 '손 덜 가는 동물'이라는 생각이 위험하다는 수의사 경고를 덧붙여요. 개를 권하거나 지능을 견주는 글이 아니에요."
+],
+[
+31,
+2,
+"reading",
+"r2-s5",
+"According to the passage, what mainly explains the shift from dogs to cats?",
+[
+"A sudden change in people's taste in animals",
+"Changes in how people live and work",
+"Government rules that limit dog ownership",
+"The falling price of premium pet food"
+],
+[
+2
+],
+"Demographers attribute the shift less to changing tastes than to changing households 라고 했어요. 혼자 살거나 오래 일하는 사람이 늘어 고양이가 맞는다는 설명이에요. 취향 변화는 오히려 덜 중요하다고 했어요."
+],
+[
+32,
+2,
+"reading",
+"r2-s6",
+"Which of the following best describes the tone of the passage?",
+[
+"bitter and resentful",
+"urgent and alarming",
+"tender and bittersweet",
+"formal and impersonal"
+],
+[
+3
+],
+"남편과 처음 만난 빙판을 혼자 도는 할머니, 누가 손을 잡은 듯 뻗은 팔, 시동을 한참 늦게 거는 화자가 다정하면서도 슬픔이 배어 있는 분위기를 만들어요. 원망하거나 다급한 말투, 딱딱한 말투는 없어요."
+],
+[
+33,
+2,
+"reading",
+"r2-s6",
+"Which of the following is closest in meaning to the underlined expression?",
+[
+"hesitantly",
+"angrily",
+"fluently",
+"carelessly"
+],
+[
+1
+],
+"haltingly 는 '머뭇거리며, 더듬더듬'이라 hesitantly 와 같아요. at first and then all in a rush(처음엔 그러다 한꺼번에 쏟아내듯)라는 대비가 단서예요. fluently(유창하게)는 반대예요."
+],
+[
+1,
+3,
+"vocab",
+null,
+"Select the word that is most similar in meaning to the word in capital letters.\nPROSAIC",
+[
+"ordinary",
+"imaginative",
+"unusual",
+"fragile"
+],
+[
+1
+],
+"prosaic 는 '평범한, 무미건조한'이라 ordinary 와 가까워요. imaginative(상상력이 풍부한)·unusual(색다른)은 반대말이고, fragile(깨지기 쉬운)은 뜻이 달라요."
+],
+[
+2,
+3,
+"vocab",
+null,
+"Select the word that is most similar in meaning to the word in capital letters.\nCIRCUMSPECT",
+[
+"reckless",
+"careless",
+"cautious",
+"wealthy"
+],
+[
+3
+],
+"circumspect 는 '신중한, 용의주도한'이라 cautious 와 같은 뜻이에요. reckless(무모한)·careless(부주의한)는 반대말이고, wealthy(부유한)는 뜻이 달라요."
+],
+[
+3,
+3,
+"vocab",
+null,
+"Select the word that is closest in meaning to the underlined word.\nThe journalist could not <u>substantiate</u> the rumor, so her editor refused to publish the story.",
+[
+"confirm",
+"deny",
+"disprove",
+"invent"
+],
+[
+1
+],
+"substantiate 는 '(증거로) 입증하다'라 confirm 과 가까워요. 입증하지 못해 편집장이 기사를 싣지 않았다는 흐름이에요. deny(부인하다)·disprove(반증하다)는 반대 방향이고, invent(지어내다)는 뜻이 달라요."
+],
+[
+4,
+3,
+"vocab",
+null,
+"Select the word that is closest in meaning to the underlined word.\nSome breeds of dog have a strong <u>propensity</u> to wander, so owners should keep them on a leash.",
+[
+"reluctance",
+"tendency",
+"license",
+"memory"
+],
+[
+2
+],
+"propensity 는 '(타고난) 성향, 경향'이라 tendency 와 같아요. 돌아다니는 성향이 강하니 목줄을 하라는 문맥이에요. reluctance(꺼림)는 반대말이고, license(허가)·memory(기억)는 뜻이 달라요."
+],
+[
+5,
+3,
+"cloze",
+null,
+"Select the word that best completes the sentence.\nLong-term exposure to fine dust can have ____ effects on the lungs, particularly among children and the elderly.",
+[
+"salutary",
+"imperceptible",
+"gregarious",
+"deleterious"
+],
+[
+4
+],
+"미세먼지에 오래 노출되면 폐에 '해로운(deleterious)' 영향이 있고, 아이와 노인에게 특히 그렇다는 말이에요. salutary(이로운)는 반대이고, imperceptible(알아챌 수 없는)은 particularly among ~(특히 ~에게)와 어울리지 않으며, gregarious(사교적인)는 effects 를 꾸밀 수 없어요."
+],
+[
+6,
+3,
+"cloze",
+null,
+"Select the word that best completes the sentence.\nTo ____ the rebuilding of the flooded school, the council approved contracts within days rather than the usual several months.",
+[
+"postpone",
+"obstruct",
+"expedite",
+"extradite"
+],
+[
+3
+],
+"보통 몇 달 걸리던 계약을 며칠 만에 승인했으니 재건을 '서두르려(expedite)' 한 거예요. postpone(미루다)·obstruct(막다)는 반대이고, extradite(범인을 넘겨주다)는 rebuilding 과 어울리지 않아요."
+],
+[
+7,
+3,
+"cloze",
+null,
+"Select the word that best completes the sentence.\nThe donor's will ____ that the land must remain a public park and can never be sold to developers.",
+[
+"stipulates",
+"waives",
+"refutes",
+"speculates"
+],
+[
+1
+],
+"유언장이 '반드시 공원으로 두고 팔 수 없다'는 조건을 '명시한다(stipulates)'가 맞아요. waives(권리를 포기하다)는 조건을 거는 것과 반대이고, refutes(반박하다)·speculates(추측하다)는 유언장이 조건을 다는 말과 맞지 않아요."
+],
+[
+8,
+3,
+"cloze",
+null,
+"Select the pair of words that best completes the sentence.\nFar from being ____ to learning, the cramped and noisy classrooms made it ____ for even the most motivated pupils to concentrate.",
+[
+"conducive — difficult",
+"conducive — effortless",
+"detrimental — difficult",
+"inimical — effortless"
+],
+[
+1
+],
+"Far from ~ 은 '~이기는커녕'이라 앞칸은 배움에 '도움이 되는(conducive)'이 와야 해요. 좁고 시끄러운 교실이니 뒷칸은 집중이 '어려운(difficult)'이 맞아요. detrimental(해로운)을 넣으면 '해롭기는커녕 힘들게 했다'가 되어 앞뒤가 어긋나요."
+],
+[
+9,
+3,
+"cloze",
+null,
+"Select the word that best completes the sentence.\nThe referee was widely criticized for ignoring a ____ foul that every spectator in the stadium had clearly seen.",
+[
+"subtle",
+"stagnant",
+"flagrant",
+"dubious"
+],
+[
+3
+],
+"관중 모두가 똑똑히 본 반칙이니 '노골적인, 명백한(flagrant)'이 맞아요. subtle(미묘한)은 모두가 봤다는 말과 반대이고, dubious(미심쩍은)도 clearly seen 과 어긋나며, stagnant(고여 있는)는 반칙을 꾸밀 수 없어요."
+],
+[
+10,
+3,
+"cloze",
+null,
+"Select the expression that best connects the two sentences.\nThe new bridge was supposed to ease congestion downtown. ____, traffic on the surrounding streets grew heavier, as drivers who had once avoided the area began to use it.",
+[
+"Likewise",
+"For instance",
+"In short",
+"Paradoxically"
+],
+[
+4
+],
+"혼잡을 덜려고 지은 다리인데 오히려 차가 늘었으니, 기대와 반대되는 결과를 잇는 Paradoxically(역설적이게도)가 맞아요. Likewise(마찬가지로)·For instance(예를 들어)·In short(요컨대)는 앞뒤가 어긋나는 관계를 잇지 못해요."
+],
+[
+11,
+3,
+"grammar",
+null,
+"Select the expression that makes the sentence grammatically correct.\nOn our last day in London, we finally visited ____.",
+[
+"a British Museum",
+"the British Museum",
+"British Museum",
+"British Museums"
+],
+[
+2
+],
+"박물관·미술관 같은 건물 이름에는 정관사 the 를 붙여요. the British Museum 이 맞아요."
+],
+[
+12,
+3,
+"grammar",
+null,
+"Select the expression that makes the sentence grammatically correct.\nYou ____ the receipt; now the store will not accept the return.",
+[
+"should have kept",
+"should keep",
+"must keep",
+"should be kept"
+],
+[
+1
+],
+"영수증을 버린 지난 일을 아쉬워하니 '~했어야 했는데'인 should have p.p. 가 맞아요. should be kept 는 수동이라 목적어 the receipt 를 받을 수 없어요."
+],
+[
+13,
+3,
+"grammar",
+null,
+"Select the expression that makes the sentence grammatically correct.\nWhen the firefighters reached the old warehouse, the roof ____.",
+[
+"has already collapsed",
+"had already collapsed",
+"already collapses",
+"have already collapsed"
+],
+[
+2
+],
+"소방관이 도착한 과거 시점보다 먼저 무너졌으니 과거완료 had collapsed 가 맞아요. 주어 the roof 는 단수라 have 도 맞지 않아요."
+],
+[
+14,
+3,
+"grammar",
+null,
+"Select the expression that makes the sentence grammatically correct.\nMost of the information in the brochure ____ outdated, and several of the prices ____ wrong.",
+[
+"is — is",
+"are — are",
+"is — are",
+"are — is"
+],
+[
+3
+],
+"Most of + 명사는 of 뒤 명사에 수를 맞춰요. information 은 셀 수 없는 명사라 is, several of the prices 는 복수라 are 가 맞아요."
+],
+[
+15,
+3,
+"grammar",
+null,
+"Select the underlined part that is grammatically incorrect.\nDuring my first year at university, I joined a hiking club. ①<u>One of the members was</u> a retired geologist, and the rest of us, ②<u>bored by</u> lecture halls, loved the way he taught us to read the rocks along the trail. Not until I went on his walks ③<u>I noticed how much</u> history lay beneath my feet. I ④<u>still keep the fossil</u> he gave me on my desk.",
+[
+"① One of the members was",
+"② bored by",
+"③ I noticed how much",
+"④ still keep the fossil"
+],
+[
+3
+],
+"Not until ~ 이 문장 앞에 나오면 주절이 도치돼야 해요. I noticed 가 아니라 did I notice 여야 해요. bored by 는 bored with 와 함께 널리 쓰는 맞는 표현이에요."
+],
+[
+16,
+3,
+"grammar",
+null,
+"Select the underlined part that is grammatically incorrect.\nYesterday my brother and I ①<u>finally finished painting</u> the fence. We had planned to do it in spring, but the rain ②<u>kept delaying us</u>. By the time we were done, our arms ③<u>ached from the work</u>, and the paint ④<u>has covered more</u> of us than of the fence. Our mother, watching from the porch, laughed until she had to sit down.",
+[
+"① finally finished painting",
+"② kept delaying us",
+"③ ached from the work",
+"④ has covered more"
+],
+[
+4
+],
+"By the time we were done 은 지난 일이라 현재완료 has covered 를 쓸 수 없어요. covered(또는 had covered)여야 해요. 비가 우리를 늦췄다는 kept delaying us 는 조금 어색해 보여도 맞는 표현이에요."
+],
+[
+17,
+3,
+"reading",
+"r3-s1",
+"What is the main idea of the passage?",
+[
+"Women found fewer new businesses than men in every country.",
+"Women-founded start-ups receive a tiny share of venture capital, partly because of who the investors are.",
+"Venture capital funding collapsed during the boom of 2021.",
+"Programs earmarked for women have solved the funding gap."
+],
+[
+2
+],
+"여성 창업 기업이 벤처 자금을 2% 안팎만 받는 현실과, 투자자 구성(대부분 남성)·질문 방식 같은 원인, 투자자를 다양하게 하자는 해법을 다뤄요. 여성 창업이 어디서나 적다거나 전용 자금으로 해결됐다는 말은 없어요."
+],
+[
+18,
+3,
+"reading",
+"r3-s1",
+"According to the passage, how did investors' questions differ by the founder's gender?",
+[
+"Men were asked more personal questions than women.",
+"Men were asked about possible gains, and women about possible losses.",
+"Women were asked about gains, and men about risks.",
+"Women were asked no questions at all."
+],
+[
+2
+],
+"ask male founders about the potential for gains while asking female founders about the risk of losses 라고 했어요. 남성에게는 얻을 것을, 여성에게는 잃을 것을 물었어요."
+],
+[
+19,
+3,
+"reading",
+"r3-s1",
+"Which of the following is closest in meaning to the underlined expression?",
+[
+"deliberate and open",
+"entirely harmless",
+"widely publicized",
+"barely noticeable"
+],
+[
+4
+],
+"subtle 은 '미묘한, 알아채기 어려운'이라 barely noticeable 과 가까워요. 질문 방향이 조금 다를 뿐인데 모인 돈과 이어졌다는 흐름이에요. deliberate and open(대놓고 의도적인)은 반대예요."
+],
+[
+20,
+3,
+"reading",
+"r3-s2",
+"Which of the following is the best title for the passage?",
+[
+"From Sailors' Tales to Scientific Fact: The Rogue Wave",
+"Why Satellites Cannot Measure Ocean Waves",
+"The History of Gas Platforms in the North Sea",
+"How Sailors Exaggerated the Dangers of the Sea"
+],
+[
+1
+],
+"뱃사람의 이야기로만 여기던 거대한 파도가 1995년 측정으로 사실로 확인되고 연구 대상이 된 과정을 다뤄요. 위성은 오히려 이런 파도가 생각보다 흔하다는 걸 보였고, 뱃사람이 과장했다는 것은 글의 결론과 반대예요."
+],
+[
+21,
+3,
+"reading",
+"r3-s2",
+"According to the passage, why did oceanographers once doubt the sailors' accounts?",
+[
+"No ship had ever sailed in the North Sea.",
+"Their models predicted that such waves would be extremely rare.",
+"Satellites had shown that the sea is always calm.",
+"The sailors could not agree on the height of the waves."
+],
+[
+2
+],
+"standard models ... predicted that waves of that height should occur only once in many thousands of years 라고 했어요. 통계 모형이 그런 파도는 거의 없다고 했기 때문이에요."
+],
+[
+22,
+3,
+"reading",
+"r3-s2",
+"Which of the following is NOT true according to the passage?",
+[
+"The Draupner wave was recorded by a laser instrument.",
+"Currents running against the wind can make waves steeper.",
+"The 1995 wave was more than twice as high as the waves around it.",
+"Rogue waves have now been shown to occur daily in every ocean."
+],
+[
+4
+],
+"위성 조사는 이런 파도가 still rare(여전히 드물다)지만 예전 모형보다는 덜 이례적이라고 했어요. 모든 바다에서 날마다 생긴다는 것은 틀려요. 레이저 측정, 바람을 거스르는 해류, 주변 파도의 두 배 넘는 높이는 글에 있어요."
+],
+[
+23,
+3,
+"reading",
+"r3-s3",
+"Which of the following best fits in the blank?",
+[
+"succeed at once",
+"backfire",
+"are never attempted",
+"erase other memories"
+],
+[
+2
+],
+"흰곰을 생각하지 않으려 하면 오히려 더 떠오른다는 비유가 이어지니, 억누르려는 시도가 '역효과를 낸다(backfire)'가 맞아요. 바로 성공한다는 것은 비유와 반대예요."
+],
+[
+24,
+3,
+"reading",
+"r3-s3",
+"Which of the following can be inferred from the passage?",
+[
+"Slow songs with complicated melodies are the most common earworms.",
+"Only people who dislike music experience earworms.",
+"Chewing gum makes earworms last longer.",
+"A song heard several times in the past day is more likely to get stuck than one heard years ago."
+],
+[
+4
+],
+"최근에 자주 들은 노래일수록 귀벌레가 되기 쉽다고 했으니, 어제오늘 여러 번 들은 노래가 오래전 노래보다 잘 맴돈다고 볼 수 있어요. 귀벌레는 빠르고 단순한 노래가 많고, 껌은 오히려 도움이 될 수 있다고 했어요."
+],
+[
+25,
+3,
+"reading",
+"r3-s3",
+"Why does the author mention a white bear?",
+[
+"To give an example of a song that often becomes an earworm",
+"To compare the failure of earworm suppression to a known effect of trying not to think of something",
+"To show that animals also experience earworms",
+"To describe a puzzle that helps people forget songs"
+],
+[
+2
+],
+"생각하지 않으려 할수록 더 떠오르는 흰곰 이야기를 들어, 귀벌레를 억누르려 하면 오히려 안 떠나는 현상을 빗대려는 거예요. 노래 제목이나 동물, 퍼즐 이야기가 아니에요."
+],
+[
+26,
+3,
+"reading",
+"r3-s4",
+"Which of the following is grammatically correct for the blank?",
+[
+"having staged",
+"be staged",
+"staging",
+"have staged"
+],
+[
+4
+],
+"is said to 뒤에는 동사원형이 오고, 말하는 때(지금)보다 앞선 1415년 일이니 완료부정사 to have staged 가 맞아요. be staged 는 수동이라 목적어 a striking demonstration 을 받을 수 없어요."
+],
+[
+27,
+3,
+"reading",
+"r3-s4",
+"According to the passage, how did viewers compare Brunelleschi's painting with the real building?",
+[
+"They looked through a hole at a mirror and then saw the real building when it was lowered.",
+"They walked around the baptistery holding the painting.",
+"They measured the building and the painting with a ruler.",
+"They compared the painting with Alberti's drawings."
+],
+[
+1
+],
+"판자 뒤에서 구멍으로 앞의 거울에 비친 그림을 보다가, 거울을 내리면 실제 건물이 그림과 겹쳐 보였다고 했어요. 걸어 다니거나 자로 쟀다는 말은 없고, 알베르티 책은 그보다 20년쯤 뒤예요."
+],
+[
+28,
+3,
+"reading",
+"r3-s4",
+"Which of the following is true according to the passage?",
+[
+"Medieval painters drew distant figures smaller to show their distance.",
+"Linear perspective was first developed by Chinese painters.",
+"Alberti wrote down rules for making parallel lines meet at a vanishing point.",
+"Twentieth-century artists were required to use linear perspective."
+],
+[
+3
+],
+"알베르티가 『회화론』에서 평행선이 한 소실점으로 모이는 방법을 정리했다고 했어요. 중세 화가는 거리보다 중요도로 크기를 정했고, 중국·일본 화가는 다른 방식을 썼으며, 20세기 화가 다수는 원근법을 일부러 버렸어요."
+],
+[
+29,
+3,
+"reading",
+"r3-s5",
+"What is the primary purpose of the passage?",
+[
+"To describe the spread of remote medical consultations and the concerns they raise",
+"To advertise a particular smartphone app",
+"To argue that pharmacies should be closed",
+"To explain how the COVID-19 pandemic began"
+],
+[
+1
+],
+"비대면 진료와 처방 앱이 퍼진 과정(코로나·시범 사업·2024년 확대)과 의사·약사의 걱정을 함께 소개해요. 특정 앱 광고나 약국 폐지 주장은 없어요."
+],
+[
+30,
+3,
+"reading",
+"r3-s5",
+"Which of the following can be inferred from the passage?",
+[
+"Remote consultations have been banned again in South Korea.",
+"Most patients now receive their medicines by home delivery.",
+"Patients living far from hospitals may benefit greatly from the apps.",
+"Pharmacists strongly supported home delivery of medicines."
+],
+[
+3
+],
+"앱이 노인과 시골 환자의 힘든 병원 길을 덜어 준다고 했으니, 병원에서 먼 사람이 특히 득을 볼 수 있다고 볼 수 있어요. 집으로 약을 배달하는 안은 약사 단체가 반대했고, 대부분 아직 직접 약을 받아요."
+],
+[
+31,
+3,
+"reading",
+"r3-s6",
+"Which of the following best describes the tone of the passage?",
+[
+"furious and bitter",
+"warm and understated",
+"anxious and suspenseful",
+"sarcastic and mocking"
+],
+[
+2
+],
+"말없이 도와주고, 말없이 커피로 갚고, 좋아하지 않는 커피를 천천히 마시는 장면이 감정을 드러내지 않으면서도 따뜻해요. 화나거나 비꼬는 말투, 긴장감은 없어요."
+],
+[
+32,
+3,
+"reading",
+"r3-s6",
+"Which of the following is closest in meaning to the underlined expression?",
+[
+"reluctantly",
+"briefly",
+"sarcastically",
+"abundantly"
+],
+[
+4
+],
+"profusely 는 '아낌없이, 넘치도록'이라 abundantly 와 가까워요. 너무 고마워해서 오히려 손사래를 쳤다는 뒤 내용이 단서예요. briefly(짧게)·reluctantly(마지못해)는 반대 방향이에요."
+],
+[
+33,
+3,
+"reading",
+"r3-s6",
+"According to the passage, why had Mrs. Yoon not helped the young man earlier?",
+[
+"She did not know how the awning worked.",
+"She was angry that he had opened a coffee cart near her stall.",
+"She was reserved and doubted that his business would last.",
+"He had refused her help several times before."
+],
+[
+3
+],
+"partly out of reserve and partly from a private conviction that he would not last the season 이라고 했어요. 원래 말수가 적은 데다 그가 오래 못 버틸 거라 여겼기 때문이에요. 숨은 걸쇠를 바로 알려 줬으니 방법을 몰랐던 것도 아니에요."
+]
+]
+}

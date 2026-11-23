@@ -1,0 +1,2737 @@
+{
+"school": "inha",
+"title": "인하대 편입영어 모의고사",
+"source": "인하대 편입영어 2023~2026학년도 기출 출제 유형(문항 수·영역·문제 꼴, VocabFactory 분석)을 분석해 dailyfreetoolbox 가 새로 만든 연습 문제",
+"checked": "2026-11-23",
+"minutes": 80,
+"points": [
+[
+1,
+1,
+1.5
+],
+[
+2,
+2,
+1
+],
+[
+3,
+4,
+1.5
+],
+[
+5,
+7,
+1
+],
+[
+8,
+8,
+1.5
+],
+[
+9,
+9,
+2
+],
+[
+10,
+13,
+1.5
+],
+[
+14,
+14,
+2
+],
+[
+15,
+17,
+1.5
+],
+[
+18,
+19,
+2
+],
+[
+20,
+20,
+1.5
+],
+[
+21,
+22,
+1.6
+],
+[
+23,
+23,
+2.2
+],
+[
+24,
+25,
+1.6
+],
+[
+26,
+26,
+1.8
+],
+[
+27,
+27,
+2.4
+],
+[
+28,
+29,
+1.8
+],
+[
+30,
+30,
+2.4
+],
+[
+31,
+31,
+1.6
+],
+[
+32,
+32,
+1.8
+],
+[
+33,
+33,
+2.2
+],
+[
+34,
+34,
+2.4
+],
+[
+35,
+35,
+1.8
+],
+[
+36,
+37,
+2.2
+],
+[
+38,
+39,
+2.4
+],
+[
+40,
+40,
+2.2
+]
+],
+"sections": [
+{
+"id": "blank",
+"name": "빈칸"
+},
+{
+"id": "insert",
+"name": "문장 넣기"
+},
+{
+"id": "irrel",
+"name": "무관한 문장"
+},
+{
+"id": "order",
+"name": "순서 배열"
+},
+{
+"id": "single",
+"name": "낱지문 독해"
+},
+{
+"id": "set",
+"name": "지문 세트"
+}
+],
+"passages": [
+{
+"id": "r1-b1",
+"text": "Many writers and composers have insisted that their best ideas arrived not at the desk but during long walks. For decades such testimony was dismissed as romantic anecdote, until two psychologists at Stanford University subjected it to an experimental test in 2014. Participants were asked to devise as many novel uses as they could for ordinary objects, such as a tire or a button, either while seated or while walking on a treadmill facing a blank wall. Judges then rated every answer. The walkers produced responses which were rated considerably higher in ____, the very quality that artists had long attributed to their strolls, and the advantage persisted briefly after they sat down again. Notably, the setting hardly mattered; even a monotonous indoor treadmill was sufficient. What seems to count is the motion of the body itself, which apparently loosens the habitual grip of concentrated thought."
+},
+{
+"id": "r1-b2",
+"text": "____ A popular belief holds that a camel stores water in its hump and draws on it during long journeys across the desert. In fact, the hump is largely a reservoir of fat, which the animal can metabolize for energy when food is scarce. Concentrating fat in one place also helps the camel stay cool, since insulation spread evenly over its body would trap heat. The camel's real defense against thirst lies elsewhere. Its kidneys produce highly concentrated urine, its oval red blood cells keep circulating even when the blood thickens, and its body temperature is permitted to climb several degrees during the day before any water is expended on sweating. When it finally reaches a well, a parched camel can swallow an astonishing volume in a matter of minutes."
+},
+{
+"id": "r1-b3",
+"text": "The word quarantine preserves a trace of its own history. In the fourteenth century, as plague swept repeatedly through Europe, port cities on the Adriatic such as Ragusa and Venice began requiring ships from infected regions to anchor offshore for a period before passengers and cargo could land. The waiting period, at first thirty days in some places, eventually settled at forty, and the Venetian phrase quaranta giorni, meaning forty days, gave English its word. Why forty was chosen remains obscure; the figure carried strong religious associations, recalling the forty days of Lent. Physicians of the era had no concept of germs, so the length of isolation could not have rested on any understanding of how the disease incubated. ____, the practice proved effective enough to spread to harbors across the Mediterranean, and its name has long outlived the epidemics which inspired it."
+},
+{
+"id": "r1-p4",
+"text": "In October 2024, tens of thousands of dockworkers walked off the job at ports along the East and Gulf Coasts of the United States, halting much of the country's container traffic for three days. Wages were part of the dispute, but the issue which proved hardest to resolve was automation. Many of the world's busiest terminals, from Rotterdam to Shanghai, now rely on remotely operated cranes and driverless vehicles which shuttle containers across the yard with minimal human intervention. Port operators contend that such machinery improves safety, eases congestion, and lets terminals operate around the clock. The union countered that automated equipment eliminates well-paid jobs and has not consistently delivered the promised efficiency. The contract finally agreed upon the following January combined substantial raises with provisions restricting fully automated equipment. The episode illustrates a broader dilemma: technologies which promise an industry higher productivity can appear, to those employed in it, primarily as a threat to their livelihood."
+},
+{
+"id": "r1-i5",
+"text": "Elephants are famous for their trumpeting, yet much of their conversation takes place below the threshold of human hearing. [A] Their deep rumbles contain infrasonic frequencies, sounds too low for our ears to detect. [B] Such low-pitched sounds lose little energy as they travel, so a call can reach other elephants several kilometers away, especially in the cool, still air of evening. [C] Researchers have also discovered that the rumbles propagate through the ground as vibrations. [D] An elephant may pick these up through sensitive receptors in its feet and trunk, sometimes freezing and leaning forward as if listening with its entire body. [E] Long-distance signaling of this kind helps scattered family groups coordinate their movements and allows males to locate females which are ready to mate."
+},
+{
+"id": "r1-i6",
+"text": "In 1843 Ada Lovelace, the daughter of the poet Lord Byron, published an English translation of an article by the Italian engineer Luigi Menabrea describing Charles Babbage's proposed Analytical Engine. [A] The machine was never completed, but its design anticipated many features of a modern computer, including a memory and a separate unit for performing calculations. [B] Lovelace's annotations on the article ended up nearly three times as long as the original. [C] In one of them she set out a step-by-step method for calculating a sequence known as the Bernoulli numbers, which is often described as the first published computer program. [D] More striking still was her speculation that such an engine might manipulate symbols of any kind, composing elaborate pieces of music, for instance, if the relations between notes could be expressed in its notation. [E] Where Babbage envisioned a powerful calculator, Lovelace glimpsed a general-purpose machine."
+},
+{
+"id": "r1-i7",
+"text": "In the 1880s, a French agricultural engineer named Maximilien Ringelmann asked men to pull on a rope, first alone and then in groups, while he measured the force they exerted. [A] He found that as more people joined the rope, the average effort of each person declined. [B] A team of eight pulled with nowhere near eight times the force of a single individual. [C] Part of the shortfall was a matter of coordination: people pulling at slightly different moments dissipate some of their strength. [D] Later experiments disentangled these two causes by blindfolding participants and telling them that others were pulling alongside them when in fact they were alone. [E] Even then, people pulled less vigorously than when they believed they were working by themselves, demonstrating that a decline in motivation, now called social loafing, was a genuine phenomenon."
+},
+{
+"id": "r1-x8",
+"text": "Rates of nearsightedness have climbed sharply in recent decades, and in some East Asian cities a large majority of young adults now need glasses to see distant objects clearly. [A] Eyeglasses were first made in Italy in the late thirteenth century, and for centuries they were regarded as a mark of erudition. [B] Because the trend has unfolded far too rapidly to be explained by changes in genes, researchers have sought its causes in the way children now live. [C] Early suspicion fell on reading and screen use, which keep the eyes focused at short distances for hours on end. [D] Yet a growing body of evidence points to a different factor: insufficient time spent outdoors. [E] Bright daylight, which can be many times more intense than indoor lighting, appears to stimulate the release of dopamine in the retina, a chemical that inhibits the elongation of the eyeball responsible for myopia. Trials in which schools added outdoor recess have reported fewer new cases among their pupils."
+},
+{
+"id": "r1-x9",
+"text": "Ludwik Zamenhof, an eye doctor living in the Russian Empire, published in 1887 a short booklet introducing an invented language which came to be known as Esperanto. [A] Zamenhof had grown up in Bialystok, a town where speakers of Polish, Russian, Yiddish, and German often regarded one another with suspicion, and he believed that a shared neutral tongue could ease such hostility. [B] He designed the language to be easy to learn: its spelling is perfectly phonetic, its grammar has no irregular verbs, and new words are built from a modest stock of roots with predictable endings. [C] Some critics objected that its vocabulary, drawn mostly from European languages, was hardly neutral for speakers in Asia or Africa. [D] Esperanto never became the global second language its creator envisioned, yet it retains an active community of speakers, including a small number who acquired it from birth. [E] Polish, the dominant language of Zamenhof's homeland, is written in the Latin alphabet supplemented by several letters bearing distinctive accent marks. Their congresses, held in a different country almost every year, still conduct entire programs in the invented tongue."
+},
+{
+"id": "r1-o10",
+"text": "Few words are used as widely as OK, which turns up in dozens of languages around the world. Its origin, however, was long a subject of colorful speculation.\n(A) Most of those coinages vanished quickly. OK survived, partly because it was soon adopted as a slogan in the presidential election of 1840, when supporters of Martin Van Buren, whose nickname was Old Kinderhook, organized OK Clubs.\n(B) The puzzle was largely solved in the 1960s by the American scholar Allen Walker Read, who traced the term to a Boston newspaper in 1839. At that time, young writers in the city enjoyed a fashion for comic abbreviations of deliberately misspelled phrases, such as O.W. for oll wright.\n(C) Among them was oll korrect, a playful spelling of all correct, which was shortened to O.K. Had the joke remained a passing fad, the word would probably have been forgotten along with its companions."
+},
+{
+"id": "r1-p11",
+"text": "The 2024 Nobel Prize in Physics went to two scientists whose work had long seemed to belong more to computer science than to physics. John Hopfield, an American physicist, devised in 1982 a network of interconnected nodes which could store patterns and reconstruct a complete pattern from a partial or distorted version, much as a person can recognize a familiar face in a blurred photograph. Geoffrey Hinton, a British-Canadian computer scientist, built on that idea with a model that drew on the statistical physics of systems composed of many interacting parts. The Nobel committee emphasized that both researchers had borrowed concepts from physics to create the artificial neural networks underlying today's machine learning. The award was not without irony. Hinton, who left his position at Google in 2023, has since become one of the most prominent voices warning that the technology he helped create could pose grave risks if it is not carefully controlled."
+},
+{
+"id": "r1-p12",
+"text": "Before the 1950s, loading a cargo ship was a slow, labor-intensive affair. Dockworkers carried sacks, barrels, and crates aboard one by one, and a vessel might spend nearly as long in port being loaded and unloaded as it did at sea. In 1956 the American trucking entrepreneur Malcom McLean sent a converted tanker, the Ideal X, from New Jersey to Texas carrying fifty-eight metal boxes which could be lifted directly from truck trailers onto the ship. The concept of standardized containers spread rapidly once international agreements fixed their dimensions, allowing the same box to move seamlessly among ships, trains, and trucks without its contents ever being touched. The consequences were profound. Shipping costs fell so dramatically that it became economical to manufacture goods on one continent and sell them on another. Meanwhile, old waterfront districts emptied out, as container terminals demanded vast open yards and far fewer laborers than the crowded piers they replaced."
+},
+{
+"id": "r1-p13",
+"text": "Good morning, everyone, and welcome aboard. Before we begin, please make sure your audio guide is switched on; the volume control is on the side. We're standing on the deck of a cargo steamer which carried rice and timber along this coast for nearly forty years before being retired and restored. In a moment we'll go below to the engine room, which is narrow and steep, so please keep at least one hand on the rail. Down there you'll see the original boiler. The crew called <u>it</u> the Old Lady, and a careless stoker who let its water run low could make it explode, so they treated it with a mixture of affection and dread. After the engine room, we'll visit the crew's quarters, where eight men slept in a space smaller than most modern kitchens. The tour lasts about forty minutes, and photographs are welcome everywhere except the captain's cabin, where fragile charts are kept away from bright light."
+},
+{
+"id": "r1-p14",
+"text": "In a famous study published in 1968, the psychologist Robert Rosenthal and the school principal Lenore Jacobson gave pupils at a California elementary school an intelligence test and then told teachers that certain children were about to experience a spurt of intellectual growth. In reality, those children had been chosen at random. When the pupils were tested again months later, the selected children, particularly in the youngest grades, had gained more than their classmates. The researchers argued that teachers' expectations had subtly shaped their conduct: they may have offered the chosen pupils warmer encouragement, more challenging questions, and more time to respond. Subsequent studies have shown that such expectancy effects are real but usually modest, and some critics have questioned the original analysis. Still, the broader lesson has endured. What a teacher believes about a student's potential can, through countless small interactions, become part of the reason that potential is or is not realized."
+},
+{
+"id": "r1-s1",
+"text": "In 2010 two Harvard psychologists, Matthew Killingsworth and Daniel Gilbert, used a smartphone app to contact thousands of adults at random moments during the day. Each time, participants reported what they were doing, whether they were thinking about something other than that activity, and how happy they felt. The results were striking. People's minds were wandering nearly half the time, and the proportion was substantial during almost every activity measured. The link to mood was equally notable: people were less happy when their minds wandered than when they were focused, and even pleasant daydreams left them no happier than attention to the task at hand.\nThe researchers concluded that a wandering mind is an unhappy mind, but the relationship may be more ____ than that slogan implies. Other studies suggest that mind wandering helps people plan for the future, rehearse conversations, and stumble upon creative solutions to problems they had set aside. Daydreaming may become harmful mainly when it turns into rumination, the repetitive dwelling on worries and regrets. The capacity to let attention drift, in other words, is not simply a flaw to be eradicated. It is a mental tool whose effects depend largely on where, and how often, the mind chooses to go."
+},
+{
+"id": "r1-s2",
+"text": "Mary Anning was born in 1799 in Lyme Regis, a seaside town on the southern coast of England whose crumbling cliffs regularly exposed the remains of ancient marine creatures. [A] Her family was poor, and selling curiosities to tourists helped them survive after her father died when she was eleven. [B] Around that time, Mary and her brother uncovered the skeleton of an ichthyosaur, a reptile which resembled a dolphin. [C] Over the following decades she found the first complete plesiosaur skeleton and one of the first pterosaurs discovered outside Germany, and she became adept at reading the cliffs after storms, when fresh fossils were most likely to appear. [D] Yet as a woman, and a working-class one, she could not join the Geological Society of London, and the gentlemen who purchased her specimens frequently described them in print without acknowledging her. [E] Only after her death in 1847 did her contribution receive wider recognition, and today historians regard her as one of the most influential fossil hunters of her era."
+},
+{
+"id": "r1-s3",
+"text": "On January 5, 2025, New York City began charging most drivers a toll to enter the busiest part of Manhattan, becoming the first American city to adopt congestion pricing. The idea is hardly new. London introduced a similar charge in 2003, and Stockholm made one permanent in 2007 after a trial period and a referendum. Economists have long favored such schemes because road space in a crowded city center is a scarce resource which drivers otherwise consume without paying for the delays they impose on everyone else. ____, a toll can make each driver weigh the true cost of a trip, while the revenue can be invested in public transit.\nCongestion charges are rarely popular at first. In Stockholm, opinion polls showed most residents opposed to the charge before the trial began, yet support grew once people experienced shorter journeys and quieter streets. New York's program faced lawsuits and fierce political opposition, and early reports of reduced traffic were greeted with both celebration and skepticism. Whether the plan endures may depend less on economic theory than on whether commuters come to believe, as many Stockholm residents eventually did, that the benefits justify the price."
+},
+{
+"id": "r1-b21",
+"text": "In 1982 the social scientists James Q. Wilson and George Kelling published an influential magazine article arguing that visible signs of disorder in a neighborhood, such as broken windows, graffiti, and litter, signal that no one is in charge. In their view, leaving such minor problems unrepaired invites more serious offenses, because potential wrongdoers conclude that they are unlikely to be challenged. The theory inspired police departments in New York and elsewhere to crack down on petty violations like fare evasion. Crime in the city fell dramatically during the 1990s, but the decline cannot be attributed to the policy with any certainty, since crime dropped sharply in many cities which adopted no such strategy. Critics also note that aggressive enforcement against minor offenses fell most heavily on poor and minority residents. The theory's legacy, then, remains ____: admired by some as common sense and condemned by others as a pretext for heavy-handed policing. Few ideas in criminology have provoked such sharply divided reactions."
+},
+{
+"id": "r1-b22",
+"text": "Each satellite in the Global Positioning System carries an atomic clock, and a receiver on the ground calculates its location by comparing time signals from several satellites. Because radio signals travel at the speed of light, an error of a single microsecond would shift a calculated position by about three hundred meters. Einstein's theories of relativity therefore become a practical engineering concern. (A) ____, the satellites move fast relative to the ground, and according to special relativity their clocks should tick slightly slower than ours. (B) ____, they orbit far from Earth's center, where gravity is weaker, and general relativity predicts that clocks there should run faster. The second effect is larger, so the satellite clocks gain roughly thirty-eight microseconds a day. Engineers adjust the clocks' frequency before launch to compensate; without that correction, navigation errors would accumulate by several kilometers each day."
+},
+{
+"id": "r1-b23",
+"text": "____ In a classic experiment, the psychologists Amos Tversky and Daniel Kahneman asked people to choose between two programs to combat an unusual disease expected to kill six hundred people. When the options were described in terms of lives saved, most respondents preferred a program which would save two hundred people for certain over a gamble with the same expected outcome. When the identical options were described in terms of deaths, most preferred the gamble rather than accept that four hundred people would certainly die. Nothing about the actual consequences had changed; only the wording had. Comparable effects pervade everyday life. Shoppers rate ground beef labeled seventy-five percent lean more favorably than beef labeled twenty-five percent fat, and patients are more willing to undergo an operation when told its survival rate than when told its mortality rate."
+},
+{
+"id": "r1-b24",
+"text": "The American journalist Nellie Bly set out from New York in 1889 to test whether a person could circle the globe faster than the fictional hero of Jules Verne's novel Around the World in Eighty Days. Traveling by steamship and train, and carrying little more than a single small bag, she crossed the Atlantic, passed through Europe, the Suez Canal, and Asia, and returned across the Pacific and the American continent. Her newspaper turned the journey into a sensation, publishing regular dispatches and inviting readers to guess the exact time of her return. She arrived back in New York seventy-two days after her departure, setting a world record. The stunt suited her reputation. Bly was already celebrated for an audacious ____ two years earlier, in which she had feigned insanity to get herself committed to an asylum for women and then exposed the brutal conditions she found inside. That report had prompted a grand jury investigation and a substantial increase in public funding for the city's asylums."
+},
+{
+"id": "r1-p25",
+"text": "Few images are as instantly recognizable as The Great Wave off Kanagawa, the woodblock print in which a towering wave curls over three fishing boats while Mount Fuji sits small and serene in the distance. Katsushika Hokusai produced it around 1831, when he was already in his seventies, as part of a series called Thirty-Six Views of Mount Fuji. Much of the print's striking effect comes from its color. Hokusai made lavish use of Prussian blue, a synthetic pigment that a color maker in Berlin had discovered accidentally early in the eighteenth century and that had only recently become affordable in Japan. Unlike the plant-based blues on which Japanese printmakers had relied, which faded quickly, the imported pigment was intense and durable. Its arrival coincided with a vogue for landscape prints, and publishers marketed the series partly on the novelty of its color. A pigment invented by accident in Europe thus helped shape one of the most celebrated works of Japanese art."
+},
+{
+"id": "r1-i26",
+"text": "The Panama Canal depends on fresh water in a way that many people do not realize. [A] Ships passing between the Atlantic and the Pacific are raised and lowered by a series of locks, and each transit releases millions of liters of water from Gatun Lake, an artificial reservoir fed by rainfall, into the sea. [B] In 2023 an unusually severe drought, linked in part to the El Nino climate pattern, left the lake's level perilously low. [C] The canal authority responded by reducing the number of daily transits and limiting how deeply loaded ships could be. [D] Faced with such delays, some shippers paid enormous sums at auction for scarce passage slots, while others opted for longer routes around South America or through the Suez Canal. [E] Rainfall returned the following year and restrictions were gradually eased, but the episode prompted plans to secure additional water, including a proposed reservoir on a nearby river."
+},
+{
+"id": "r1-i27",
+"text": "Earth's orbit is becoming crowded. [A] Alongside thousands of working satellites, the region contains defunct spacecraft, spent rocket stages, and countless fragments produced by explosions and collisions. [B] Because such objects race through low orbit at around eight kilometers per second, even a fleck of paint can strike with enough force to pit a spacecraft window. [C] In 1978 the NASA scientist Donald Kessler warned that the danger could become self-sustaining. [D] Every impact would scatter new debris, making further impacts more likely, until certain orbits became too hazardous to use. [E] Averting such a cascade will require operators to steer satellites into the atmosphere at the end of their working lives and, eventually, to remove some of the largest derelict objects already circling the planet."
+},
+{
+"id": "r1-x28",
+"text": "Australia is one of a small number of democracies in which voting is compulsory. [A] Since 1924, citizens enrolled for federal elections have been legally obliged to cast a ballot, and those who fail to do so without a valid reason receive a modest fine. [B] Turnout in Australian federal elections has usually exceeded ninety percent, far above the levels typical of countries where voting is voluntary. [C] Moreover, Australia's capital, Canberra, was purpose-built after a design competition won by the American architects Walter Burley Griffin and Marion Mahony Griffin. [D] Supporters argue that compulsion produces a parliament reflecting the entire population rather than only its most motivated or affluent citizens. [E] Critics reply that forcing people to vote infringes on individual liberty and may fill ballot boxes with uninformed choices, although the obligation in practice amounts to attending a polling place, since the ballot itself is secret and may be left blank."
+},
+{
+"id": "r1-x29",
+"text": "Pacific salmon hatch in freshwater streams, migrate to the ocean, and spend several years feeding in the open sea before returning to spawn. [A] Remarkably, most of them return not merely to the right river but to the very stream in which they hatched, sometimes after journeys of more than a thousand kilometers. [B] In the open ocean they appear to navigate by sensing Earth's magnetic field, which guides them to the general region of their home coast. [C] Once they reach fresh water, smell takes over: young salmon memorize the distinctive chemical signature of their native stream, and adults follow that scent upstream, choosing the correct branch at every fork. [D] Experiments in which researchers plugged the nostrils of returning fish showed that they were then far more likely to stray into the wrong stream, confirming how heavily the final stage of the journey relies on scent. [E] In addition, wild salmon is prized by chefs for its rich flavor and is often considered more nutritious than farmed fish. Few migrations in the animal kingdom demand such precision, and fewer still end, as the salmon's does, in the very place where life began."
+},
+{
+"id": "r1-o30",
+"text": "In the late 1960s, the psychologists Martin Seligman and Steven Maier conducted a series of animal experiments that would shape decades of research on depression.\n(A) Dogs from the first group quickly learned to leap over the barrier, just as untrained animals did. Their earlier experience of control seemed to carry over into the new situation.\n(B) The second group behaved very differently. Most of those dogs lay down and endured the shocks, even though relief was only a short jump away. Having learned that their actions made no difference, they had apparently stopped trying. Seligman called this state learned helplessness and proposed it as a model of human depression.\n(C) Dogs were first exposed to mild electric shocks. Some could terminate the shocks by pressing a panel with their noses, while others, receiving identical shocks, had no means of control. Later, all the dogs were placed in a box where they could escape the shocks simply by leaping over a low barrier."
+},
+{
+"id": "r1-p31",
+"text": "Ignaz Semmelweis, a physician at the Vienna General Hospital in the 1840s, noticed a troubling pattern. The hospital had two maternity clinics, and in the one staffed by doctors and medical students, mothers died of childbed fever at a rate several times <u>higher</u> than in the clinic run by midwives. Semmelweis observed that the doctors often came directly from performing autopsies, and he suspected that they were carrying some kind of contaminating particles on their hands. In 1847 he required them to wash their hands in a chlorine solution before examining patients, and deaths in the doctors' clinic <u>rose</u> dramatically. Yet many of his colleagues <u>resisted</u> his conclusions. The germ theory of disease had not yet been established, and the suggestion that gentlemen physicians were themselves spreading death struck many as <u>offensive</u>. Only after the work of Louis Pasteur and Joseph Lister decades later did his insight gain general <u>acceptance</u>."
+},
+{
+"id": "r1-p32",
+"text": "Shipping carries most of the world's traded goods and accounts for a significant share of global greenhouse gas emissions, most of it from burning heavy fuel oil. In 2023 the International Maritime Organization, the United Nations agency which regulates shipping, adopted a strategy aiming for net-zero emissions from the industry by or around 2050. Meeting that goal will require new fuels, and ammonia has emerged as one of the leading candidates. Because its molecule contains no carbon, ammonia releases no carbon dioxide when burned, and it can be stored as a liquid under moderate pressure or modest cooling, unlike hydrogen, which must be chilled to extremely low temperatures. The fuel has serious drawbacks, however. Ammonia is highly toxic, so a leak at sea could endanger crews and marine life, and burning it can release nitrous oxide, a potent greenhouse gas, unless engines are meticulously designed. Moreover, most ammonia today is produced from natural gas, so its climate benefits hinge on cleaner methods of manufacture."
+},
+{
+"id": "r1-p33",
+"text": "At four in the morning the airport looks deserted from the outside, but from up here it never really sleeps. The overnight cargo flights arrive in clusters, and each one needs a runway, a taxi route, and a parking position assigned before its wheels touch the ground. My screen shows every aircraft within forty miles as a small tag of letters and numbers, and my headset carries a steady stream of pilots reading back the instructions I give them. Most of the job is routine, but routine is exactly what we labor to preserve. If fog rolls in off the bay, I may have to widen the spacing between arrivals and hold some planes in a slow circle above the city. The hardest part is not any single decision but staying alert through the empty hours, when the radio falls silent for long stretches and it would be easy to let my attention drift. When my relief arrives at six, I hand over my picture of the sky as conscientiously as a nurse hands over a patient."
+},
+{
+"id": "r1-p34",
+"text": "In 1900 the British archaeologist Arthur Evans began excavating the palace at Knossos on Crete and uncovered thousands of clay tablets inscribed in an unknown script. He called it Linear B, and for half a century it resisted every attempt at decipherment. Most scholars, Evans included, assumed it recorded a lost language of the Minoan civilization. The breakthrough came from Michael Ventris, an English architect who had been fascinated by the script since hearing Evans lecture when he was a schoolboy. Building on meticulous work by the American classicist Alice Kober, who had identified patterns of word endings suggesting an inflected language, Ventris constructed grids relating the symbols to probable sounds. In 1952, to his own astonishment, the words which emerged were recognizably an early form of Greek. The discovery pushed back the written record of the Greek language by several centuries and revealed that the tablets were largely mundane administrative records: inventories of livestock, chariots, and jars of oil."
+},
+{
+"id": "r1-s4",
+"text": "In 1968 Spencer Silver, a chemist at the American company 3M, was trying to develop an exceptionally strong adhesive for use in aircraft construction. Instead, he produced the opposite: a glue which clung lightly to surfaces and could be peeled away without leaving a residue. The substance was intriguing, but no one at the company could think of a practical use for it, and for years Silver promoted it to colleagues with little success.\nThe solution came from Art Fry, another 3M scientist, who sang in his church choir. Fry was frustrated that the paper bookmarks he used to mark hymns kept slipping out of his hymnal. Recalling Silver's feeble adhesive, he applied some to slips of paper and found that they stayed in place yet could be removed without tearing the pages. The product that grew out of this idea, a pad of small notes with a strip of glue along one edge, went on sale across the United States in 1980 and soon became an office staple. The story is often told as a lesson in perseverance, but it also shows that an invention's value may lie in ____."
+},
+{
+"id": "r1-s5",
+"text": "Long-distance travelers know the fog of jet lag, when a body that has crossed several time zones keeps insisting that it is still at home. Fewer realize that they may impose a milder version of the same condition on themselves every week. [A] Indeed, some airlines now offer lie-flat seats which allow long-haul passengers to sleep almost as comfortably as in a bed. [B] On workdays, alarm clocks force many people to wake hours earlier than their internal clocks would prefer, and they accumulate a sleep debt that they try to repay by sleeping late on weekends. [C] The resulting shift in sleep timing between weekdays and weekends has been labeled social jet lag, a term introduced by the chronobiologist Till Roenneberg. [D] Like ordinary jet lag, it leaves the body's internal rhythms out of step with the demands of daily life, so that on Monday mornings the alarm rings at what the body treats as the middle of the night. [E] Studies have associated larger gaps between weekday and weekend schedules with poorer mood, weaker academic performance, and a higher risk of obesity.\nResearchers caution that much of this evidence is correlational, so it cannot prove that the shifting schedule itself causes the harm. Even so, many sleep scientists recommend keeping wake-up times fairly consistent across the week, and some argue that schools and employers should permit later starting times for those whose internal clocks run late."
+},
+{
+"id": "r1-s6",
+"text": "The radio had not made a sound since my grandfather's funeral. It sat on a shelf in my mother's kitchen, a wooden box with a cracked dial and a smell of dust and old varnish, and none of us could bring ourselves to throw it away. One winter I resolved to repair it. I knew almost nothing about electronics, so I borrowed library books, watched tutorials late at night, and filled a notebook with diagrams I only half understood. Twice I replaced the wrong component. Once I gave myself a shock which left my fingers tingling for an hour.\nIn February, after I had cleaned the contacts and soldered a new capacitor into place, I switched it on. For a few seconds there was only a low hum. Then, faintly, came the voice of a weather forecaster announcing snow in the mountains. My mother, who had been washing dishes, stood motionless with her hands still in the water. Neither of us said anything. I had expected to feel proud, and I did, but what I felt more strongly was something closer to ____, as if a door I had assumed was locked forever had quietly swung open."
+},
+{
+"id": "r2-b1",
+"text": "Attention is ____ rather than absolute: the brain sets most unattended sounds aside while continuing to monitor them for anything of personal importance. At a crowded party, dozens of conversations merge into a dull roar, yet most of us can follow the voice of the person in front of us with surprising ease. The British cognitive scientist Colin Cherry investigated this ability in 1953, coining the phrase the cocktail party problem. In his experiments, listeners wearing headphones heard a different message in each ear and were asked to repeat one of them aloud. They managed the task well but could report almost nothing about the other message; many failed to notice when it switched to a foreign language. Later research revealed, however, that the neglected channel is not entirely shut out. If one's own name is spoken in it, a substantial minority of listeners notice at once."
+},
+{
+"id": "r2-b2",
+"text": "Learners of English are often bewildered that the letters in words such as bite, meet, and house seem to stand for sounds quite different from those the same letters represent in most European languages. The explanation lies largely in the Great Vowel Shift, a series of changes in pronunciation which unfolded roughly between 1400 and 1700. During this period, the long vowels of English migrated upward in the mouth; the vowel in bite, for instance, was once pronounced much like the vowel in modern beet. Unfortunately for later learners, the shift coincided with the arrival of printing, which encouraged printers and scholars to settle on standardized spellings. Many of those spellings reflected pronunciations that were already changing or would soon vanish. Consequently, the written language ____, preserving in its spelling a snapshot of how English sounded centuries ago. That is why modern English spelling often records the speech of the fifteenth century rather than that of today."
+},
+{
+"id": "r2-b3",
+"text": "Sloths are often mocked as the laziest animals on Earth, but their sluggishness is better understood as an ingenious strategy. Their diet consists mainly of leaves, which are abundant but poor in nutrients and difficult to digest; a single meal can take days or even weeks to pass through a sloth's elaborate stomach. To survive on so little energy, sloths maintain a remarkably low metabolic rate, and their body temperature fluctuates with the surroundings more than in most mammals. They also carry comparatively little muscle, which reduces the energy required to sustain their bodies. Their slowness even offers protection. ____, predators such as harpy eagles and jaguars hunt largely by detecting movement, and a sloth hanging motionless high in the canopy, its fur tinged green by algae, is easily overlooked."
+},
+{
+"id": "r2-p4",
+"text": "In 2023 Mexico overtook China as the largest source of goods imported into the United States, a milestone which reflected a broader rethinking of global supply chains. For decades, companies had chased the lowest production costs, often in East Asia, and accepted lengthy shipping routes as the price of cheap manufacturing. The pandemic exposed the fragility of that model: factory closures and port bottlenecks left shelves empty and assembly lines idle for months. Mounting tensions between Washington and Beijing, including tariffs on Chinese goods, added further incentive to diversify. Many firms have responded by relocating some production closer to their principal markets, a strategy known as nearshoring. Mexico, with its shared border, its trade agreement with the United States and Canada, and its experienced industrial workforce, has been an obvious beneficiary. Yet nearshoring has limits. Some Mexican factories still depend on components shipped from Asia, and shortages of electricity, water, and skilled engineers could constrain how quickly the shift proceeds."
+},
+{
+"id": "r2-i5",
+"text": "Bottlenose dolphins live in fluid societies in which individuals constantly join and leave groups, so keeping track of one another is no trivial matter. [A] Within the first months of life, each dolphin develops a distinctive whistle, a contour of rising and falling pitch which differs from those of its companions. [B] Researchers call these signature whistles, because a dolphin broadcasts its own whistle much as a person announces a name, especially when separated from its group. [C] To test whether such copies really function as names, scientists played recordings to wild dolphins and found that the animals responded more strongly to imitations of their own signature than to the whistles of strangers. [D] Dolphins also appear to remember the whistles of former companions for many years; in one study, animals recognized the signatures of individuals they had not encountered for two decades. [E] Few other animals are known to use such learned vocal labels, which makes dolphins a valuable model for studying how names may have arisen."
+},
+{
+"id": "r2-i6",
+"text": "In 1954 the American writer Sylvia Wright recounted a childhood memory in a magazine essay. [A] Her mother used to read aloud a Scottish ballad which included the line They have slain the Earl o' Moray, and laid him on the green. [B] Young Sylvia heard the last words as and Lady Mondegreen, and for years she pictured a tragic noblewoman perishing beside the earl. [C] Wright proposed calling such misheard phrases mondegreens, and the term has since entered dictionaries. [D] Mondegreens are especially common in song lyrics, where music blurs the boundaries between words and listeners cannot ask the singer to repeat a line. Psychologists find them revealing because they demonstrate that hearing is not a passive recording of sound. [E]"
+},
+{
+"id": "r2-i7",
+"text": "In 1898 the American psychologist Norman Triplett examined cycling records and noticed something curious. [A] To find out whether the effect extended beyond the racetrack, he asked children to wind fishing reels as quickly as possible, sometimes alone and sometimes alongside another child performing the same task. [B] Many of the children wound faster in the presence of a rival, and Triplett concluded that the mere presence of others can energize performance. [C] Later researchers discovered that the story is more complicated. [D] Having an audience tends to improve performance on simple or well-practiced tasks but to impair it on complex or unfamiliar ones, a pattern now known as social facilitation. [E] An accomplished pianist may play better before a crowd, while a novice may stumble over passages which went smoothly at home."
+},
+{
+"id": "r2-o8",
+"text": "Today the Louvre in Paris is the most visited art museum in the world, but for most of its history it was not a museum at all.\n(A) The building began in the late twelfth century as a fortress guarding the western edge of the city. Over the following centuries, French kings transformed it into a grand royal palace and filled it with paintings and sculptures.\n(B) During the French Revolution, the new government seized the royal collections and declared that they belonged to the nation. In August 1793 the palace opened its doors as a public museum, admitting ordinary citizens to see works which had once been reserved for the court.\n(C) That palace, however, gradually lost its central role after Louis XIV moved the court to Versailles in 1682. Artists and academies occupied many of its rooms, while the royal art collection remained largely hidden from public view."
+},
+{
+"id": "r2-x9",
+"text": "Most people have heard of the placebo effect, in which an inert treatment produces real improvement because patients expect it to help. Its darker twin, the nocebo effect, receives far less attention. [A] When patients are warned that a medication may cause side effects such as headaches or nausea, a considerable number report those very symptoms even when they have been given a sugar pill. [B] In fact, sugar pills were once routinely prescribed by doctors who wished to reassure anxious patients without exposing them to potent drugs. [C] In trials of cholesterol-lowering drugs, for instance, people taking dummy tablets have complained of muscle pain almost as often as those taking the genuine medicine. [D] Such findings pose an ethical dilemma for physicians, who are obliged to inform patients of possible risks yet may thereby increase the likelihood of suffering. [E] Some researchers suggest that framing information carefully, for example by emphasizing how many patients tolerate a drug well, may reduce harm without concealing the truth."
+},
+{
+"id": "r2-x10",
+"text": "The calendar now in near-universal civil use emerged from a long struggle to reconcile human timekeeping with the motion of the Earth. [A] In 46 BCE Julius Caesar introduced a calendar of 365 days with an extra day added every fourth year, yielding an average year of 365.25 days. [B] The true solar year, however, is about eleven minutes shorter, and over the centuries the discrepancy accumulated until the spring equinox had drifted roughly ten days from its traditional date. [C] Because the date of Easter depended on the equinox, the Church had compelling reasons to correct the error. [D] Moreover, Easter eggs, decorated in many cultures as symbols of new life, are among the most familiar customs associated with the festival. [E] In 1582 Pope Gregory XIII decreed that ten days be omitted and that century years be leap years only if divisible by four hundred. Catholic countries adopted the change at once, but Britain and its colonies did not follow until 1752, by which time eleven days had to be dropped."
+},
+{
+"id": "r2-p11",
+"text": "In October 2024, NASA launched Europa Clipper, the largest spacecraft the agency had ever built for a planetary mission, on a journey to Jupiter. Its target is Europa, one of Jupiter's many moons, a world slightly smaller than our own Moon whose icy crust is believed to conceal a global ocean of salty water. Because liquid water is considered essential for life as we know it, scientists regard Europa as one of the most promising places in the solar system to search for conditions which could sustain living organisms. The spacecraft will not land. Instead, after arriving in the Jupiter system in 2030, it will orbit the giant planet and swoop past Europa dozens of times, using cameras, radar, and other instruments to gauge the thickness of the ice, analyze the composition of the surface, and look for plumes of water vapor. To withstand Jupiter's intense radiation, its most sensitive electronics are housed inside a vault with thick metal walls. The mission is designed to determine whether Europa could be habitable, not to detect life itself."
+},
+{
+"id": "r2-p12",
+"text": "Across Europe, the share of people registered as organ donors varies enormously between countries which seem otherwise similar. In some, fewer than a fifth of citizens are on the donor list; in neighboring countries with comparable cultures and health systems, nearly everyone is. An influential analysis published in 2003 traced much of this difference to a single administrative detail. Countries with very high rates used an opt-out system, in which citizens are presumed to consent unless they register an objection, whereas countries with low rates required people to actively opt in. Most people, it seems, simply accept whatever option is preset for them, whether out of inertia, uncertainty, or a sense that the default reflects an implicit recommendation. Policymakers have since exploited defaults deliberately, for instance by automatically enrolling employees in pension plans while allowing them to withdraw. Critics warn, however, that a box no one ticks is not the same as genuine consent, and that the actual number of transplants depends on many factors beyond the registry."
+},
+{
+"id": "r2-p13",
+"text": "Every morning at the lost-property office on the airport's lower level, I unlock a storeroom which tells the story of the previous day's departures. There are always umbrellas, phone chargers, and paperback novels abandoned in seat pockets, but some items are harder to explain: a wedding dress, a set of dentures, once a live tortoise traveling in a shoebox. Last spring a man arrived breathless, three hours before his connecting flight, searching for a small blue notebook. He had left <u>it</u> on a bench by gate twelve, he said, and it held nothing valuable to anyone but him: the handwritten recipes of his late wife. We searched the shelves without success. Then a cleaner remembered finding a notebook in a cafe near the gate and handing it to a flight attendant. Forty minutes and several phone calls later, it was back in his hands. He said nothing for a moment; he simply opened it and turned the pages, one by one."
+},
+{
+"id": "r2-p14",
+"text": "Why would anyone deliberately make success less likely? In a 1978 experiment, the psychologists Steven Berglas and Edward Jones gave students a set of problems and then told every one of them that they had performed very well. For some, the problems had been solvable; for others, they had been so difficult that the praise must have seemed baffling. Before a second test, the students were allowed to choose between two drugs, one described as improving performance and the other as impairing it. Students who had received unearned praise were far more likely to select the drug that would supposedly hurt their performance. The researchers called this strategy self-handicapping. By erecting an obstacle in advance, people secure a ready excuse if they fail, while any success appears all the more impressive. Everyday versions are familiar: the student who parties the night before an exam, or the athlete who skips practice before a big match. The protection is costly, however, because the handicap often brings about the very failure it was meant to explain away."
+},
+{
+"id": "r2-s1",
+"text": "In 1967 the psychologists Edward Jones and Victor Harris asked American students to read essays which either praised or criticized Fidel Castro, then the leader of Cuba. Some readers were told that the writers had chosen their position freely; others were told that the writers had been assigned it, much like debaters told which side to argue. Remarkably, even readers who knew the position had been assigned concluded that the authors of pro-Castro essays genuinely admired him more than the others did. They gave too much weight to the writers' character and too little to the circumstances which had dictated what they wrote.\nThe psychologist Lee Ross later named this tendency the fundamental attribution error. It shows up everywhere. A driver who cuts us off seems reckless rather than late for a hospital; a colleague who misses a deadline seems lazy rather than overloaded. Curiously, we rarely judge ourselves so harshly, readily citing traffic or workload to explain our own lapses. Some cross-cultural studies suggest the bias is less ____ in societies that emphasize social roles and relationships, where people are more inclined to seek situational explanations of behavior. Recognizing the error does not abolish it, but pausing to ask what pressures another person might be facing can make our judgments fairer."
+},
+{
+"id": "r2-s2",
+"text": "Marie Sklodowska grew up in Warsaw at a time when the Russian authorities who controlled the city barred women from attending university. [A] In 1891 she moved to Paris, enrolled at the Sorbonne, and lived for a time on so little money that she reportedly fainted from hunger during her studies. [B] There she met the physicist Pierre Curie, whom she married in 1895, and the couple began investigating the mysterious rays emitted by uranium. [C] Working in a drafty shed, they processed tons of mineral ore to isolate two new elements, which they named polonium, after Marie's homeland, and radium. [D] In 1903 she shared the Nobel Prize in Physics with Pierre and Henri Becquerel, becoming the first woman to receive a Nobel Prize. [E] After Pierre was killed in a street accident in 1906, she took over his professorship, and in 1911 she won a second Nobel Prize, this time in chemistry, making her the first person honored in two scientific fields. She died in 1934 of a blood disorder which was very probably caused by decades of exposure to radiation."
+},
+{
+"id": "r2-s3",
+"text": "Proteins are the molecular machines of living cells, and what each one does depends on the intricate three-dimensional shape into which its chain of amino acids folds. For half a century, determining those shapes was painstaking work. Researchers relied on techniques such as X-ray crystallography which could take months or years for a single protein, and predicting a structure from the amino acid sequence alone was regarded as one of biology's grand challenges.\nIn 2020 an artificial intelligence system called AlphaFold, developed by DeepMind, predicted protein structures with accuracy approaching that of laboratory methods. Its creators, Demis Hassabis and John Jumper, shared the 2024 Nobel Prize in Chemistry with David Baker, who had devised computational methods for designing entirely new proteins. AlphaFold's predictions for hundreds of millions of proteins have also been released in a public database, allowing scientists anywhere to examine structures within minutes. The tool is not infallible; its predictions are less reliable for proteins that change shape or lack a stable structure. ____, it has transformed how many laboratories begin their research, turning a question that once demanded years of experimental effort into a starting point."
+},
+{
+"id": "r2-b21",
+"text": "During British rule in India, according to a frequently repeated story, officials in Delhi grew alarmed at the number of venomous cobras in the city and offered a reward for every dead snake. At first the policy appeared to work, as residents brought in carcasses by the hundreds. Before long, however, enterprising locals began breeding cobras in order to collect the bounty. When officials discovered the scheme and canceled the reward, the breeders released their now worthless snakes, leaving the city with more cobras than before. Historians have found little documentary evidence that the episode occurred exactly as described, but the tale endures because it captures a genuine hazard of policymaking. Economists now use the phrase cobra effect for any incentive which produces the ____ of its intended result, as when a reward designed to reduce a problem ends up encouraging people to manufacture it. The label serves as a reminder that people respond to rewards in ways that planners rarely foresee."
+},
+{
+"id": "r2-b22",
+"text": "Scurvy, a disease caused by a lack of vitamin C, killed more sailors during the age of sail than storms and battles combined, according to some estimates. In 1747 James Lind, a Scottish naval surgeon aboard HMS Salisbury, divided twelve sailors suffering from the disease into pairs and gave each pair a different remedy, including cider, vinegar, seawater, and two oranges and a lemon daily. The pair receiving citrus fruit recovered so rapidly that one was fit for duty within a week. Lind's trial is often celebrated as one of the first (A) ____ experiments in medicine, because it compared treatments side by side under similar conditions. Yet its lesson was not quickly heeded. Lind himself remained uncertain of the cause, and the British navy did not issue lemon juice routinely until 1795, nearly fifty years later. The (B) ____ between discovery and practice cost countless lives."
+},
+{
+"id": "r2-b23",
+"text": "____ Before the eleventh century, singers in European monasteries learned the chants of the liturgy almost entirely by ear, a process which could take a decade of patient repetition. Written signs placed above the words reminded singers of the general contour of a melody but did not indicate exact pitches. The Italian monk Guido of Arezzo devised a system of horizontal lines on which notes could be placed to show precisely how high or low each should be sung, the ancestor of the modern staff. He also taught pupils to associate pitches with the opening syllables of each line of a familiar hymn, ut, re, mi, fa, sol, la, a method which survives in the singing exercises still used today. Guido boasted that with his techniques a boy could master in a few months what had previously required years."
+},
+{
+"id": "r2-b24",
+"text": "New Caledonian crows, found on a group of islands in the South Pacific, are among the most accomplished tool users in the animal kingdom. In the wild they fashion hooks from twigs and cut serrated strips from the stiff leaves of pandanus plants and use them to extract insect larvae from holes in dead wood. Their skill is not merely instinctive. Young crows spend months practicing beside their parents, and the shapes of the leaf tools differ from one region of the islands to another, suggesting that designs are transmitted and refined across generations. In laboratory tests, some crows have even solved puzzles requiring several tools to be used in sequence. Such findings have prompted researchers to reconsider the long-held assumption that sophisticated tool use was ____ to our own species and a handful of its primate relatives. Some researchers now compare the crows' problem-solving abilities with those of great apes."
+},
+{
+"id": "r2-p25",
+"text": "Hedy Lamarr was one of the most famous film stars of the 1940s, promoted in Hollywood publicity as the most beautiful woman in the world. Few of her admirers knew that she devoted her spare hours to inventing. During the Second World War, worried that radio-controlled torpedoes could easily be jammed by the enemy, she and the composer George Antheil devised a method in which the transmitter and receiver would switch rapidly among many frequencies in a synchronized pattern, making the signal extremely difficult to intercept or disrupt. Antheil, who had once synchronized player pianos in an avant-garde composition, suggested a mechanism similar to a piano roll. The pair received a patent in 1942, but the United States Navy did not adopt the idea during the war, and Lamarr earned nothing from it. Decades later, frequency-hopping techniques became part of the foundation of secure military communications and, eventually, of technologies related to Wi-Fi and Bluetooth. Lamarr received public recognition for her invention only late in life."
+},
+{
+"id": "r2-o26",
+"text": "The Hungarian-American psychologist Mihaly Csikszentmihalyi spent years asking people to describe the moments when they felt most fully alive.\n(A) This balance helps explain why flow is not a fixed reward. As skill grows, the same task becomes dull, so people must keep seeking slightly greater challenges to recapture the experience, a cycle which drives them to keep improving.\n(B) He also identified the conditions under which it tends to arise. The activity must have clear goals and immediate feedback, and, crucially, its challenge must match the person's skill. A task that is too easy breeds boredom; one that is too hard breeds anxiety.\n(C) Surgeons, rock climbers, chess players, and painters gave strikingly similar answers. They spoke of becoming so absorbed in an activity that time seemed to vanish and self-consciousness dropped away. Csikszentmihalyi called this state flow."
+},
+{
+"id": "r2-i27",
+"text": "More than a tenth of world trade normally passes through the Red Sea and the Suez Canal, the shortest sea route between Asia and Europe. [A] Beginning in late 2023, however, Houthi militants in Yemen launched missiles and drones at commercial ships in the region, describing the attacks as a response to the war in Gaza. [B] Major shipping lines responded by diverting vessels around the Cape of Good Hope at the southern tip of Africa. [C] The detour added roughly ten days to a typical voyage between Asia and northern Europe, along with millions of dollars in extra fuel costs. [D] Freight rates rose sharply, and some European factories briefly halted production while awaiting delayed components. [E] Egypt, which depends heavily on canal fees as a source of foreign currency, saw its revenue from the waterway plummet."
+},
+{
+"id": "r2-i28",
+"text": "For most of history, the length of a second was defined by the rotation of the Earth: one day divided into 86,400 equal parts. [A] Since 1967, however, the official second has been based on the vibrations of cesium atoms, which are far more regular than the planet's spin. [B] The Earth's rotation varies slightly from year to year, influenced by tides, earthquakes, and the movement of its molten core. [C] To keep the two in step, timekeepers began in 1972 to insert an occasional leap second into Coordinated Universal Time. [D] These insertions created headaches for computer networks, some of which crashed or malfunctioned when a minute suddenly contained sixty-one seconds. [E] In 2022, international metrologists voted to stop adding leap seconds by 2035, accepting that atomic time and the Earth's rotation will gradually drift apart."
+},
+{
+"id": "r2-x29",
+"text": "Between 2017 and 2018, Finland conducted one of the most closely watched experiments with a basic income. [A] Notably, Finland is frequently ranked among the happiest countries in the world in international surveys of life satisfaction. [B] The government selected two thousand unemployed people at random and paid each of them a monthly sum of 560 euros, without conditions and without reducing the payment if they found work. [C] Their outcomes were then compared with those of a control group which continued to receive standard unemployment benefits. [D] The results disappointed those who had anticipated a large increase in employment: recipients worked only slightly more days than the control group. [E] They did, however, report notably better well-being, less stress, and greater confidence in their future, findings that supporters cite as evidence that security itself has value. Skeptics reply that a two-year trial limited to the unemployed reveals little about how a universal payment would affect an entire economy."
+},
+{
+"id": "r2-x30",
+"text": "The Arctic tern, a slender seabird weighing little more than a hundred grams, makes the longest known migration of any animal. [A] Each year it breeds in the Arctic during the northern summer and then flies to the edge of Antarctica for the southern summer, so that it probably experiences more daylight than any other creature. [B] Tracking devices small enough to attach to the birds have revealed that their routes are far from direct; many zigzag across the Atlantic to exploit favorable winds and rich feeding areas. [C] As a result, a single tern may travel more than seventy thousand kilometers in a year. [D] Penguins, which cannot fly, are the best-known birds of the Antarctic and rely on thick layers of fat to survive the cold. [E] Because terns can live for thirty years, an individual may cover a distance over its lifetime equivalent to three round trips to the Moon."
+},
+{
+"id": "r2-p31",
+"text": "Why does a walk in a park leave many people feeling mentally refreshed? In the 1980s, the psychologists Rachel and Stephen Kaplan proposed an explanation known as attention restoration theory. Much of modern life, they argued, <u>demands</u> directed attention: we must deliberately focus on traffic, screens, and conversations while suppressing distractions, and this effortful capacity becomes <u>depleted</u> with use. Natural settings, by contrast, engage a gentler kind of attention. Rustling leaves, drifting clouds, and flowing water hold our interest <u>effortlessly</u>, giving the mechanisms of deliberate focus a chance to recover. Some experiments support the idea: participants who walked through an arboretum performed <u>worse</u> afterward on a demanding memory task than those who walked along busy city streets. The theory has practical implications for urban planning, suggesting that parks and street trees are not mere decoration but resources for mental health. Accordingly, many planners now treat green space as a <u>necessity</u> rather than a luxury."
+},
+{
+"id": "r2-p32",
+"text": "Imagine summoning an air taxi which lifts off from a rooftop, glides over traffic jams, and sets you down across the city in minutes. Dozens of companies are racing to make this vision, often called urban air mobility, a reality. Most are developing electric aircraft capable of vertical takeoff and landing, which use multiple small rotors rather than a single large one. Battery power promises quieter and cleaner flight than helicopters, and simpler electric motors could reduce maintenance costs. Formidable obstacles remain, however. Batteries are heavy relative to the energy they store, limiting how far the aircraft can fly and how many passengers they can carry. Regulators must certify an entirely new category of aircraft and devise rules for managing dense low-altitude traffic over cities. Cities, in turn, will need landing sites, known as vertiports, equipped with chargers and space for passengers. Above all, the industry must persuade the public that small aircraft buzzing over homes are safe and tolerably quiet. Several companies have already postponed their planned launch dates more than once."
+},
+{
+"id": "r2-p33",
+"text": "Graduates, I know that some of you are leaving today with a job offer in your pocket and a clear plan for the next ten years. I also know that many of you have no idea what comes next, and that this uncertainty feels like failure on a day meant for celebration. Let me tell you something I wish someone had told me when I sat where you are sitting. My first job after university lasted four months. My second involved selling encyclopedias door to door, which tells you how long ago that was. It took me nearly a decade to find work I loved, and every detour along the way taught me something I still use. The people I admire most did not follow straight lines. They followed their curiosity, tolerated confusion, and kept learning. So if you feel lost today, you are in excellent company. Be patient with yourselves. The path will reveal itself, but only to those who keep walking."
+},
+{
+"id": "r2-p34",
+"text": "Until the late 1970s, deaf children in Nicaragua had little contact with one another. Most lived isolated at home, communicating with their families through simple gestures of their own invention. When new schools for the deaf opened in Managua, hundreds of these children were brought together for the first time. The teachers, who concentrated on lip-reading and spoken Spanish, had little success, but in the schoolyard and on the buses something remarkable was happening. The children were pooling their home gestures into a shared system of signs. As younger children joined and learned from older ones, the system grew more complex, acquiring consistent grammatical rules that the original signers had never used. Linguists who studied the process recognized that they were witnessing the birth of a new language, now known as Nicaraguan Sign Language. The case offers rare evidence that children do not merely absorb language from adults; given a community, they can create one."
+},
+{
+"id": "r2-s4",
+"text": "In 1945 Percy Spencer, a self-taught engineer at the American defense company Raytheon, was working near a magnetron, a device which generated the microwaves used in military radar. According to the often-repeated account, he noticed that a chocolate bar in his pocket had melted, even though he felt no heat himself. Curious, he placed popcorn kernels near the device and watched them burst; an egg he tested next reportedly exploded. Spencer realized that microwaves could heat food by making the water molecules inside it vibrate rapidly.\nRaytheon patented the idea and in 1947 introduced the first commercial microwave oven. It stood nearly as tall as a person, weighed hundreds of kilograms, and cost thousands of dollars, so its early buyers were restaurants, ships, and railway companies rather than households. Decades of engineering were needed to make the device smaller, cheaper, and safer before it became a fixture in ordinary kitchens. The story is a reminder that a chance observation becomes an invention only when ____."
+},
+{
+"id": "r2-s5",
+"text": "In many countries, tipping is limited to a few occasions, but in the United States it has long been woven into the economics of service work. [A] Under federal law, restaurants may pay tipped employees a cash wage far below the standard minimum wage, provided that tips bring their earnings up to at least the minimum. [B] In recent years, however, requests for tips have spread well beyond restaurants. [C] The practice of tipping is believed to have originated in Tudor England, where guests at aristocratic estates gave small sums to their hosts' servants. [D] Digital payment screens at coffee shops, bakeries, and even self-service kiosks now routinely suggest gratuities of fifteen, twenty, or twenty-five percent, often for transactions involving little personal service. [E] Many customers report feeling pressured by these prompts, particularly when an employee is watching them choose.\nSurveys suggest mounting irritation, a phenomenon some commentators have dubbed tip fatigue. Defenders of tipping argue that it rewards good service and supplements low wages, but critics contend that it shifts the responsibility for paying workers from employers to customers and makes earnings unpredictable. Some restaurants have experimented with abolishing tips in favor of higher menu prices and fixed wages, with mixed results."
+},
+{
+"id": "r2-s6",
+"text": "The pilot boat pitched in the black swell as we drew alongside the container ship, a wall of steel rising higher than a ten-story building. Somewhere above, a rope ladder dangled against the hull, swinging with each roll of the vessel. Captain Ruiz, who had been guiding ships into this harbor for twenty-two years, zipped up his jacket, waited for the boat to rise on a wave, and stepped onto the ladder as casually as a man boarding a bus. I was there to learn the job, and my stomach lurched as I watched him climb.\nOn the bridge, he greeted the vessel's commander, studied the radar, and began issuing quiet instructions to the helmsman. For the next two hours he brought the enormous vessel through a narrow channel, past sandbanks and anchored tankers, without once raising his voice. Later I asked how he stayed so calm. He shrugged. The ladder was the only dangerous part, he said; everything else was simply knowing the harbor better than anyone on board. I realized then that his composure was not a matter of temperament but of ____, built from thousands of nights spent learning every bend and shoal of the channel."
+},
+{
+"id": "r3-b1",
+"text": "Musicians and athletes who falter under pressure are often not lacking in skill; their arousal has simply become ____. In 1908 the psychologists Robert Yerkes and John Dodson reported an experiment in which mice learned to choose between two compartments, receiving electric shocks of varying strength whenever they entered the wrong one. Somewhat counterintuitively, the mice learned fastest not with the weakest or the strongest shocks but with those of intermediate intensity, at least when the discrimination was difficult. Later psychologists extrapolated this finding into a principle which now bears their names. Up to a point, stress and arousal heighten vigilance and improve performance; a little anxiety before an exam can motivate careful preparation. Beyond that point, however, performance begins to deteriorate, as intrusive rumination and physical tension crowd out lucid thinking. The ideal level also varies with the task. Simple, well-rehearsed activities tolerate high arousal, whereas intricate ones suffer sooner."
+},
+{
+"id": "r3-b2",
+"text": "Since 1982, a row of burnished steel gates has spanned the River Thames downstream of central London. Most of the time the Thames Barrier lies open, its rotating gates resting flat on the riverbed so that ships can pass freely. When forecasters predict an unusually high tide combined with a storm surge from the North Sea, the gates are swung upward to form a continuous wall, shielding low-lying districts of the city from inundation. The barrier was built after a catastrophic North Sea flood in 1953 killed hundreds of people along England's east coast and exposed how vulnerable the capital was. It was originally expected to provide protection until around 2030, but assiduous maintenance has extended its anticipated life. As sea levels rise, the gates are likely to be closed ever more often. In effect, a structure designed for rare emergencies may gradually become ____. The barrier already closes far more often in a typical year than it did in its first decade of service."
+},
+{
+"id": "r3-b3",
+"text": "The Roman emperor Marcus Aurelius, who ruled from 161 to 180 CE, spent much of his reign on military campaigns along the empire's northern frontier. In the evenings, he wrote private notes to himself in Greek, reminding himself to remain patient, to accept what lay beyond his control, and to treat even difficult people with fairness. These notes, now known as the Meditations, were never intended for publication. ____, they have become one of the most widely read works of ancient philosophy, although they read less like a treatise than like a conversation a man conducts with his own conscience, replete with repetitions, admonitions, and self-corrections. That intimacy may explain their enduring appeal. Readers who would never open a systematic work of philosophy find in them the voice of a powerful man struggling, as ordinary people do, to live up to his own ideals."
+},
+{
+"id": "r3-p4",
+"text": "For most travelers, the airport where they change planes is little more than a place to rush between gates. For the cities which host them, however, major transfer hubs are coveted economic assets. Airlines concentrate their networks at a hub so that passengers from dozens of smaller cities can connect to hundreds of destinations, an arrangement known as the hub-and-spoke system. The more connections a hub offers, the more passengers it attracts, and the more passengers it attracts, the more routes become profitable. This self-perpetuating cycle has fueled intense rivalry. Dubai, Doha, and Istanbul have invested colossal sums in vast terminals and state-backed airlines, positioning themselves as natural stopping points between Europe, Asia, and Africa. Older hubs have responded with new runways and faster transfer procedures, and Incheon in South Korea has promoted itself with expeditious connections and amenities designed for long layovers. Yet the competition rests on a precarious foundation. New long-range aircraft can fly many routes directly, allowing travelers to bypass hubs altogether."
+},
+{
+"id": "r3-x5",
+"text": "The hippocampus, a seahorse-shaped structure deep in the brain, plays a pivotal role in consolidating new memories, and in most adults it gradually shrinks with age. [A] For a long time this decline was regarded as an inevitable feature of growing old. [B] In a widely cited study published in 2011, however, researchers randomly assigned about 120 older adults either to a program of brisk walking three times a week or to a program of stretching and toning exercises. [C] Interestingly, seahorses are unusual among fish because the males, rather than the females, carry the developing young. [D] After a year, the hippocampus had grown by roughly two percent in the walking group, while it had continued to shrink in the stretching group. [E] The walkers also showed modest improvements in spatial memory, suggesting that aerobic exercise may help preserve the aging brain. The researchers caution that exercise is no guarantee against dementia, but the findings offer a compelling reason to keep moving."
+},
+{
+"id": "r3-x6",
+"text": "In the Republic, Plato asks his readers to envisage prisoners who have spent their entire lives shackled inside a cave, facing a blank wall. [A] Behind them burns a fire, and between the fire and the prisoners people carry objects whose shadows fall on the wall. [B] Knowing nothing else, the prisoners mistake the flickering silhouettes for reality itself. [C] If one of them were freed and dragged into the sunlight, he would at first be dazzled and disoriented, and only gradually would his eyes adjust to the luminous world outside. [D] Returning to the cave to free the others, he would find his eyes unaccustomed to the darkness, and his former companions would deride him and obstinately resist his efforts. [E] Indeed, many caves around the world contain prehistoric paintings, some created more than thirty thousand years ago. The allegory has been read as a portrait of education, which Plato saw not as filling an empty vessel but as turning the soul toward the light."
+},
+{
+"id": "r3-i7",
+"text": "Lightning has terrified people for as long as there have been storms, and for centuries church towers, the tallest buildings in most towns, bore the brunt of it. [A] In the early 1750s Benjamin Franklin proposed a safeguard: a pointed iron rod fixed to the top of a building and connected by a wire to the ground. [B] Contrary to a widespread belief, such a rod does not draw lightning toward a building or prevent strikes altogether. [C] What it does is offer the current a safe path, carrying it harmlessly into the earth instead of letting it pass through timber and masonry, where it can ignite conflagrations or fracture walls. [D] Some clergy initially protested that the devices interfered with the will of God, but the steady decline in damage to protected buildings proved decisive. [E] Today lightning protection systems built on Franklin's principle guard everything from skyscrapers to wind turbines."
+},
+{
+"id": "r3-i8",
+"text": "In 2007 a young real estate agent named John Maloof bought a box of old negatives at a Chicago auction, hoping to find pictures for a local history book. [A] Instead he found thousands of extraordinary street photographs taken from the 1950s onward: shoppers, children, laborers, and strangers caught in evanescent moments of humor and sorrow. [B] The photographer was Vivian Maier, a woman who had worked for decades as a nanny for families in Chicago and New York. [C] She had taken well over a hundred thousand pictures but showed them to almost no one, and many of her rolls of film had never even been developed. [D] When Maloof posted some of the images online, they attracted enormous attention, and exhibitions and a documentary film soon followed. [E] Today Maier is counted among the notable street photographers of the twentieth century, although disputes persist over who should profit from work she never chose to publish."
+},
+{
+"id": "r3-i9",
+"text": "Until the middle of the twentieth century, there was no standardized way to appraise the condition of a newborn baby in the first moments of life. [A] In 1952 Virginia Apgar, an American anesthesiologist, devised a rudimentary score to fill that gap. [B] One minute after birth, a doctor or nurse rates the baby from zero to two on each of five signs: heart rate, breathing, muscle tone, reflex response, and skin color. [C] A total of seven or above is generally reassuring, while a low score signals that the infant may need immediate help, and the assessment is usually repeated at five minutes. [D] The method was quick enough to use in a frenetic delivery room and required no specialized apparatus. [E] Within a decade it was being used in hospitals across the United States, and it remains a ubiquitous part of neonatal care around the world."
+},
+{
+"id": "r3-o10",
+"text": "In the early nineteenth century, a Cherokee silversmith named Sequoyah became persuaded that the written words of white Americans, which he called talking leaves, gave them a formidable advantage.\n(A) Although he could not read any language, he set out to create a writing system for his own people. After experimenting fruitlessly with a separate symbol for every word, he realized that the language could be broken down into a limited number of syllables.\n(B) He assigned a symbol to each of them, eventually arriving at a set of eighty-six characters. In 1821, after his young daughter demonstrated that she could read his messages, Cherokee leaders formally endorsed the system.\n(C) What followed was astounding. Because learners needed to memorize only the symbols, many Cherokee became literate within months, and in 1828 the first newspaper in a Native American language, the Cherokee Phoenix, began publication."
+},
+{
+"id": "r3-p11",
+"text": "On October 13, 2024, SpaceX accomplished a feat which many engineers had considered close to impossible. During the fifth test flight of its Starship system, the enormous Super Heavy booster, after lifting the upper stage toward space, turned back toward its launch site in Texas. Instead of landing on legs or plunging into the sea, it slowed its descent with its engines and was caught in midair by two giant mechanical arms mounted on the launch tower. Meanwhile, the Starship upper stage flew on and later made a controlled splashdown in the Indian Ocean. Catching the booster is meant to allow it to be refueled and launched again quickly, and a vehicle without landing legs is lighter and can carry more cargo. Reusability is pivotal to the company's strategy for lowering the cost of reaching orbit. Critics, however, point to the environmental impact of frequent launches and to debris strewn by earlier test vehicles which exploded."
+},
+{
+"id": "r3-p12",
+"text": "A considerable share of the fruit and vegetables grown on farms never reaches a shop shelf, and not because it is spoiled or unsafe. Supermarkets have long imposed stringent cosmetic standards on produce, rejecting forked carrots, blemished apples, or overly curved cucumbers. Shoppers, accustomed to immaculate displays, have come to expect uniformity, and retailers fear that oddly shaped items will remain unsold. As a result, perfectly edible produce is often plowed back into the soil, fed to animals, or discarded. In recent years, campaigns against food waste have attempted to rehabilitate so-called ugly produce. Some retailers sell misshapen fruit and vegetables at a discount, and delivery services offer boxes of imperfect items directly to households. These efforts have had some success, but critics point out that they tackle just one part of the problem, because a large share of the food wasted in wealthy countries is thrown away not on farms but in homes."
+},
+{
+"id": "r3-p13",
+"text": "Few mammals are as superbly adapted to frigid conditions as the Arctic fox. Its thick winter fur, which covers even the soles of its feet, provides such effective insulation that the animal does not begin to shiver until the temperature falls far below zero. Its short legs, small ears, and rounded body minimize the surface area through which heat can dissipate. The fox's coat also changes with the seasons. In many populations, the dense white fur of winter is molted in spring and replaced by a thinner brown or gray coat. The change is not merely a matter of temperature. Against snow, a white coat camouflages the fox from the rodents it stalks and from larger predators; once the snow melts, a white animal would stand out conspicuously against rocks and tundra, while a darker coat blends into the summer landscape. Some populations, particularly along coasts, remain a smoky bluish gray throughout the year."
+},
+{
+"id": "r3-p14",
+"text": "Gyms tend to fill up in January, and resolutions to eat better or save more money coalesce around the start of a new year. Researchers at the University of Pennsylvania wondered whether the calendar itself shapes such efforts. Analyzing gym attendance records and internet searches for the word diet, Hengchen Dai, Katherine Milkman, and Jason Riis found that interest in self-improvement rose not only on New Year's Day but also at the start of each week and month, after public holidays, and following birthdays. They called this pattern the fresh start effect. Such dates, they suggested, act as psychological dividing lines, allowing people to separate their present selves from past failures and to feel that a new chapter has begun. The insight has practical applications. Reminders to begin a savings plan or a health program may be more persuasive when they are tied to an upcoming landmark, such as the first day of spring, than when they arrive on an ordinary Wednesday."
+},
+{
+"id": "r3-s1",
+"text": "For centuries, nostalgia was regarded as a disorder. The word was coined in 1688 by a Swiss medical student, Johannes Hofer, who combined the Greek words for homecoming and pain to describe the debilitating homesickness he observed among soldiers serving far from home. Physicians of later generations blamed it on everything from brain disease to the incessant clanging of cowbells in the Alps. [A] Today, many psychologists take a far more favorable view. [B] Research led by Constantine Sedikides and his colleagues suggests that nostalgia, a sentimental longing for the past, is a common and largely positive emotion. [C] People tend to become nostalgic when they feel lonely, anxious, or adrift, and recalling cherished memories appears to restore a sense of meaning and connection. [D] In experiments, participants asked to recall a nostalgic event subsequently reported higher self-esteem and felt more socially supported than those who recalled an ordinary event. [E] Some studies even suggest that nostalgia can make people feel physically warmer on a chilly day. Nostalgia, in this view, is less a sickness than a resource."
+},
+{
+"id": "r3-s2",
+"text": "When the United States began sending astronauts into orbit, the precise paths of their spacecraft were calculated not only by electronic computers but also by people. Katherine Johnson, an African American mathematician, joined the agency which became NASA in 1953 as one of a group of women employed as human computers. At first she worked in a segregated unit at the Langley laboratory in Virginia, where Black employees were required to use separate dining and restroom facilities.\nHer skill soon made her indispensable. She calculated the trajectory for Alan Shepard's 1961 flight, the first by an American in space, and before John Glenn's orbital flight in 1962 he reportedly insisted that she personally verify the figures produced by the new electronic computers. If she said the numbers were good, he declared, he was ready to go. Despite such trust, her contributions remained largely ____ to the public for decades. Only late in life did recognition arrive: in 2015 she received the Presidential Medal of Freedom, and a popular film released in 2016 brought her story to a wide audience. She died in 2020 at the age of 101."
+},
+{
+"id": "r3-s3",
+"text": "Meat grown from animal cells in large steel tanks, without raising or slaughtering livestock, has migrated from speculative fiction to restaurant menus in only a few years. [A] In 2020 Singapore became the first country to approve the sale of cultivated chicken, and in 2023 regulators in the United States cleared two companies to sell similar products. [B] After all, chicken is among the most widely eaten meats in the world, and global consumption has risen steadily for decades. [C] Supporters argue that cultivated meat could eventually reduce the land, water, and greenhouse gas emissions associated with livestock farming, as well as the suffering of sentient animals. [D] The technology has also provoked a backlash. In 2023 Italy passed a law banning the production and sale of cultivated meat, and in 2024 Florida and Alabama adopted similar bans, invoking the protection of ranchers and traditional food culture. [E] Skeptics also note that producing cultivated meat at scale remains prohibitively expensive and that its environmental benefits depend heavily on the energy used to power production. For now, the products remain scarce, available only in a handful of restaurants."
+},
+{
+"id": "r3-b21",
+"text": "In a continent dominated by a single family of related tongues, Basque remains a genuine ____. Spoken by several hundred thousand people in a region straddling the border between Spain and France, Basque stands apart from every other language in Western Europe. Nearly all of its neighbors, from Spanish and French to English and German, belong to the Indo-European family and share ancestral roots which can be traced through regular sound changes. Basque does not. Linguists have proposed links to languages as distant as Georgian, but none of these theories has won general acceptance, and most scholars classify it as a language isolate. Its survival is remarkable. Basque appears to predate the arrival of Indo-European languages in the region, outlasted centuries of Roman rule, and weathered periods in the twentieth century when its public use was restricted. Today it is taught in schools and broadcast on television."
+},
+{
+"id": "r3-b22",
+"text": "Antarctic krill, shrimp-like crustaceans rarely longer than a person's finger, may be the most abundant wild animal on Earth by total weight. They gather in swarms so dense that they can tint the sea pink, and they constitute the foundation of a food web that sustains whales, seals, penguins, and fish. Their importance extends beyond feeding other animals. Krill graze on microscopic algae near the surface and excrete compact fecal pellets which plummet into the deep ocean, carrying carbon with them. In this way, these tiny animals play a (A) ____ role in removing carbon from the atmosphere and storing it far below the surface. Scientists are therefore concerned about pressures on krill populations, including the loss of the sea ice under which young krill shelter in winter and a growing fishery that harvests them for fish feed and dietary supplements. Protecting krill, they argue, is not a (B) ____ matter for specialists but a question with consequences for the climate of the entire planet."
+},
+{
+"id": "r3-b23",
+"text": "During the 1960s, the psychologist Daniel Kahneman was lecturing flight instructors in the Israeli air force on the virtues of praise when one veteran objected. Whenever he commended a cadet for an exceptionally smooth maneuver, he said, the next attempt was usually worse; whenever he berated a cadet for a clumsy one, the next attempt generally improved. Punishment, he concluded, was more efficacious than praise. Kahneman recognized a statistical illusion. Any single performance reflects both skill and a considerable dose of chance, so an extraordinarily good or bad attempt is likely to be followed by one closer to the pilot's habitual level, whatever the instructor says. Statisticians call this regression to the mean. The phenomenon is ubiquitous and frequently misattributed: a patient who seeks treatment at the peak of an ailment often recovers regardless of the remedy. Before crediting any intervention, therefore, one should ask whether the change would have occurred ____. Many a remedy owes its reputation to patients who would have recovered anyway."
+},
+{
+"id": "r3-b24",
+"text": "For most of the twentieth century, urban planning assumed that cities would keep growing. Detroit, for instance, burgeoned to nearly two million residents by 1950 as the automobile industry flourished. Over the following decades, however, factory jobs disappeared and many families moved to the suburbs or to other regions, and by 2020 the city's population had fallen to roughly 640,000. Detroit is not unique; many industrial cities in Europe and Asia have also lost large numbers of residents. Depopulation presents problems which growth-oriented planning never anticipated: derelict houses, schools without pupils, and streets and pipes that must be maintained for far fewer taxpayers. ____, some cities have begun to treat decline as something to manage rather than reverse, demolishing abandoned buildings, converting empty lots into gardens and parks, and concentrating services in the neighborhoods which remain densely populated."
+},
+{
+"id": "r3-p25",
+"text": "The Tour de France, now one of the world's most famous sporting events, began as a promotional gimmick. In 1903 the French sports newspaper L'Auto was locked in a fierce circulation battle with a rival publication. One of its journalists proposed a bicycle race around the country, and the editor, Henri Desgrange, seized on the scheme, hoping that daily reports of the riders' ordeal would boost sales. The first race covered roughly 2,400 kilometers in six grueling stages, some of which continued through the night over rough roads. Only about a third of the sixty riders who started managed to finish. The gamble proved lucrative: L'Auto's circulation soared, and its rival soon went out of business. The race also left a lasting mark on cycling's traditions. The yellow jersey awarded to the overall leader, introduced in 1919, was chosen to match the yellow paper on which L'Auto was printed."
+},
+{
+"id": "r3-o26",
+"text": "Many households own tools they use only sporadically: a power drill, a ladder, a pressure washer for cleaning the patio.\n(A) Members pay a nominal annual fee or nothing at all and borrow items much as they would borrow books, returning them after a week or two. Many such libraries also hold repair workshops in which volunteers impart rudimentary skills.\n(B) Some communities have responded to this inefficiency by creating libraries of things, which lend tools and equipment instead of books. These collections are often run by volunteers or housed within ordinary public libraries.\n(C) Supporters argue that such borrowing saves money and storage space while curbing the waste and emissions entailed in manufacturing seldom-used goods. The repair workshops may also foster cohesion within communities, since participants exchange advice and skills along with tools."
+},
+{
+"id": "r3-x27",
+"text": "In the 1970s and 1980s, acid rain became one of the most alarming environmental scourges in North America and Europe. [A] Sulfur dioxide released by coal-burning power plants combined with moisture in the atmosphere to form acids, which fell as rain and snow, defoliating forests and leaving lakes too acidic for fish. [B] In 1990 the United States adopted an innovative remedy. [C] Rather than prescribing how each plant should curtail emissions, the government set a national limit on total sulfur dioxide and issued tradable permits, allowing companies that could reduce pollution cheaply to sell their surplus allowances to those for whom cuts were costly. [D] Coal was also the fuel which powered the steam engines of the Industrial Revolution in nineteenth-century Britain. [E] The program curtailed emissions faster and at lower cost than many had predicted, and it became a model for later proposals to limit carbon dioxide through similar cap-and-trade systems."
+},
+{
+"id": "r3-x28",
+"text": "With its body covered in overlapping scales, the pangolin looks more like a walking pine cone than a mammal. [A] Pine trees produce cones which open in dry weather to release their seeds. [B] The scales are made of keratin, the same protein found in human fingernails, and when threatened the animal curls into a tight ball which even a lion struggles to pry open. [C] Pangolins have no teeth; instead they use powerful claws to tear into ant and termite nests and a long, sticky tongue to gather the insects inside. [D] Sadly, the armor which protects them from predators offers no defense against people. [E] Pangolins are believed to be among the most heavily trafficked wild mammals in the world, hunted for their meat and for scales used in traditional remedies, and all eight species are now protected under international trade rules."
+},
+{
+"id": "r3-i29",
+"text": "In 2007 the African Union launched an ambitious project known as the Great Green Wall. [A] The plan was to plant a band of trees roughly eight thousand kilometers long across the southern edge of the Sahara, from Senegal in the west to Djibouti in the east, to halt the advance of the desert. [B] Progress proved far slower than its founders had hoped. [C] These difficulties were compounded by the loss of many early seedlings, which had been placed in harsh soils without the care and water they needed. [D] Over time, the project's emphasis shifted from planting a literal wall of trees to restoring degraded land in many forms, including helping farmers protect the young trees which sprout naturally in their fields. [E] Supporters argue that this approach, which treats local communities as partners rather than laborers, is far more likely to endure."
+},
+{
+"id": "r3-i30",
+"text": "Most fish suffocate within minutes on dry land, but the mudskipper spends much of its life out of the water. [A] Found on tidal mudflats and in mangrove swamps from Africa to Australia, it hops and crawls across the mud on robust pectoral fins, chasing insects and small crabs at low tide. [B] The fish can absorb oxygen through its skin and the lining of its mouth, provided that these surfaces remain moist. [C] It also carries a supply of water in enlarged gill chambers, much as a diver carries air. [D] To stay damp, it rolls in puddles from time to time, and when the tide returns it retreats into a burrow it has dug in the mud. [E] This remarkable parental behavior, together with the fish's amphibious habits, is one reason biologists study mudskippers for clues to how the first vertebrates may have made the transition from water to land hundreds of millions of years ago."
+},
+{
+"id": "r3-p31",
+"text": "Desk jobs, long commutes, and evenings in front of screens leave many adults sedentary for most of the day. Epidemiologists have linked prolonged sitting to a <u>higher</u> risk of heart disease, diabetes, and premature death, and some studies suggest that these risks are <u>reduced</u> only partly by regular exercise. In other words, an hour at the gym may not fully <u>offset</u> an entire day spent in a chair. One explanation is that muscles that remain inactive for long periods use <u>more</u> glucose and fat, allowing these substances to accumulate in the blood. Standing desks have proliferated as a result, but standing still for hours brings ailments of its own, such as lumbar and foot pain. Most experts therefore recommend alternating one's posture and taking short walking breaks every half hour or so. The key, it seems, is not any particular position but <u>frequent</u> movement."
+},
+{
+"id": "r3-p32",
+"text": "Inside many modern warehouses, the shelves come to the workers rather than the other way around. Squat wheeled robots slide beneath tall storage racks, lift them, and carry them to stations where human employees pick the items needed for each order. Other machines sort parcels, unload trucks, or glide autonomously along the aisles carrying plastic totes. The surge in online shopping has accelerated this trend, since retailers face pressure to deliver huge volumes of goods quickly while labor is scarce and costly. Robots excel at monotonous, repetitive movement, but many tasks remain difficult for them. Grasping objects of heterogeneous shape, softness, and size, from a bag of rice to a glass bottle, still challenges even advanced robotic arms, which is why picking is often the last step to be automated. Companies argue that robots relieve workers of exhausting walking and heavy lifting, while labor advocates warn that the machines can intensify the pace of work for those who remain and reduce the number of jobs over time."
+},
+{
+"id": "r3-p33",
+"text": "The painting arrived in my studio last autumn wrapped in blankets, its surface dulled by a century of candle smoke and a thick layer of yellowed varnish. Before intervening, I spent two weeks scrutinizing it under ultraviolet light and magnification, documenting every earlier restoration. Someone in the 1950s had overpainted a damaged corner with a blue which did not quite harmonize with the sky. My first task was to remove the old varnish, working with small cotton swabs and solvents tested on an inconspicuous patch no larger than a fingernail. Progress was painstaking, measured in square centimeters per day. As the grime dissolved, colors which no one living had seen emerged: a pale green in the distant hills, a red scarf on a figure I had assumed was wearing brown. The rule I follow is simple. Everything I add must be reversible, so that a future specialist can undo my work if superior methods emerge."
+},
+{
+"id": "r3-p34",
+"text": "In 1888, when his brother Ludvig died, Alfred Nobel reportedly opened a French newspaper to find his own obituary. The paper had confused the two brothers, and, according to the often-repeated story, it described Alfred, the inventor of dynamite, as a merchant of death who had grown rich by finding ways to kill more people faster. Whether or not the episode happened exactly this way, Nobel became increasingly preoccupied with how he would be remembered. In his final will, signed in 1895, he left most of his immense fortune to establish prizes for those who had conferred the greatest benefit on humankind in physics, chemistry, medicine, literature, and the promotion of peace between nations. His relatives contested the will, and it took several years to settle the estate. The first prizes were awarded in 1901, five years after his death. A fortune built largely on explosives thus came to fund the most prestigious honors in science and letters."
+},
+{
+"id": "r3-s4",
+"text": "In 1970 Soviet scientists began drilling into the Kola Peninsula, near the border with Norway, with an audacious goal: to penetrate as deeply as possible into the Earth's crust. The project continued for roughly two decades. By 1989 the borehole had reached a depth of about 12,262 meters, making it the deepest artificial hole on Earth, a record it still holds. Yet that depth amounts to only about a third of the way through the continental crust in that region, a reminder of how little of the planet's interior humans have directly sampled.\nThe drilling yielded several surprises. Rock temperatures at the bottom reached about 180 degrees Celsius, far hotter than expected, and the heat made the rock behave almost like plastic, causing the drill to become stuck repeatedly. Scientists also found water deep underground, trapped in the rock where few had expected it, and discovered microscopic fossils of plankton several kilometers below the surface. When funding dried up after the collapse of the Soviet Union, the project was abandoned, and the hole was eventually sealed with a metal cap. Its lesson endures: the planet beneath our feet is ____."
+},
+{
+"id": "r3-s5",
+"text": "For much of the twentieth century, cities in the United States required new buildings to provide a minimum number of off-street parking spaces: so many per apartment, per restaurant seat, or per square meter of office space. The rules were intended to keep drivers from crowding neighborhood streets. In his 2005 book The High Cost of Free Parking, the planning scholar Donald Shoup argued that these requirements carried enormous hidden costs. Parking spaces devour land and are expensive to build, especially in garages, and developers pass those costs on through higher rents and prices, even to residents who do not own cars. Mandatory parking also disperses buildings, making walking and public transit less practical and encouraging still more driving.\nPersuaded by such critiques, a growing number of cities have abolished or reduced parking minimums. Buffalo, New York, became the first large American city to eliminate them citywide in 2017, and Minneapolis followed in 2021. In 2022 California barred most minimums near major public transit stops. Early studies suggest that developers still build parking where demand is strong but supply fewer spaces where it is weak, liberating land for housing and shops. The reform does not ban parking; it simply ____."
+},
+{
+"id": "r3-s6",
+"text": "Nobody had warned me that a warehouse is loudest at five in the morning. Trucks reversed into the loading bays with shrill beeps, conveyor belts rattled overhead, and somewhere a radio played a song I could not quite make out. My supervisor, a compact woman named Delia, handed me a high-visibility vest and pointed to a forklift parked by the wall. I had passed the training course the week before, but the machine looked enormous now, and I was terrified of tipping a pallet of glass jars onto the concrete.\nFor the first hour I crept along the aisles so slowly that drivers behind me sighed and honked. Then Delia climbed onto the step beside me. She did not take the controls; she simply told me where to look, when to lower the forks, and when to trust the mirror rather than turning my head. By the end of the shift I had moved forty pallets without dropping a single jar. On my way out, Delia tossed me a packet of biscuits and said I would do. Coming from <u>her</u>, it felt like a medal."
+}
+],
+"q": [
+[
+1,
+1,
+"blank",
+"r1-b1",
+"Choose the most appropriate expression for the blank.",
+[
+"accuracy",
+"authority",
+"originality",
+"loyalty",
+"spirituality"
+],
+[
+3
+],
+"참가자들은 물건의 '새로운(novel) 쓰임새'를 짜냈고, 빈칸 뒤에서 예술가들이 산책 덕분이라고 말해 온 바로 그 성질이라고 했어요. 새롭고 독창적인 생각이니 originality(독창성)가 맞아요. accuracy(정확성)는 쓰임새를 '새로' 떠올리는 과제와 맞지 않고, authority·loyalty·spirituality 는 글과 관계가 없어요."
+],
+[
+2,
+1,
+"blank",
+"r1-b2",
+"Choose the most appropriate expression for the blank.",
+[
+"A camel's hump lets it carry a hidden water supply across the desert.",
+"A camel depends on frequent visits to wells to survive the desert heat.",
+"A camel's fat reserves leave it more vulnerable to overheating than other animals.",
+"A camel's kidneys are poorly suited to conserving water in dry climates.",
+"A camel survives the desert less by storing water than by refusing to waste it."
+],
+[
+5
+],
+"빈칸은 글 전체를 묶는 첫 문장이에요. 뒤에서 혹은 물이 아니라 지방 창고이고, 콩팥·적혈구·체온 조절로 물을 거의 잃지 않는다는 예를 늘어놓아요. '물을 저장해서가 아니라 낭비하지 않아서 버틴다'는 문장이 주제문이에요. 혹에 숨은 물을 지닌다는 문장은 글이 바로잡는 통념이고, 지방 창고는 오히려 더위를 덜 타게 한다고 했어요."
+],
+[
+3,
+1,
+"blank",
+"r1-b3",
+"Choose the most appropriate expression for the blank.",
+[
+"Therefore",
+"Nevertheless",
+"For example",
+"In other words",
+"Similarly"
+],
+[
+2
+],
+"앞 문장은 의사들이 세균 개념이 없어 격리 기간에 의학적 근거가 없었다는 내용이고, 뒤 문장은 그런데도 효과가 있어 널리 퍼졌다는 내용이에요. 예상과 반대되는 결과를 잇는 Nevertheless 가 맞아요. Therefore 를 넣으면 '근거가 없어서 효과가 있었다'가 되어 말이 안 돼요."
+],
+[
+4,
+1,
+"single",
+"r1-p4",
+"Which title best captures the content of the passage?",
+[
+"How Rotterdam Became the World's Busiest Container Port",
+"Why Container Shipping Has Become Cheaper",
+"Automation on the Docks: Efficiency Versus Livelihood",
+"The Early History of Dockworkers' Unions",
+"Driverless Trucks on American Highways"
+],
+[
+3
+],
+"2024년 미국 항만 파업에서 가장 풀기 어려웠던 쟁점이 자동화였고, 효율을 내세우는 운영사와 일자리를 걱정하는 노조가 맞섰다는 글이에요. 마지막 문장도 생산성과 생계의 충돌을 짚어요. 'Automation on the Docks: Efficiency Versus Livelihood'가 맞아요. 로테르담은 예로 한 번 나올 뿐이에요."
+],
+[
+5,
+1,
+"insert",
+"r1-i5",
+"Where in the passage does the following sentence fit most naturally?\nWe can, however, sometimes feel these inaudible sounds as a faint throbbing in the chest when standing close to a calling animal.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+2
+],
+"주어진 문장의 these inaudible sounds(이 들리지 않는 소리)는 바로 앞에 '들리지 않는 소리'가 나와야 받을 수 있고, however 는 '들을 수 없다'와 맞서는 '느낄 수는 있다'예요. [B] 앞 문장이 '깊은 울림은 귀로 듣기에는 너무 낮은 소리'이니 [B]에 들어가면 그 소리를 가리키고 대조도 살아요. [C] 앞은 먼 거리까지 간다는 내용이라 however 가 받을 말이 없어요."
+],
+[
+6,
+1,
+"insert",
+"r1-i6",
+"Where in the passage does the following sentence fit most naturally?\nFar from being a mere supplement, then, the translator's additions dwarfed the text they were meant to explain.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+3
+],
+"주어진 문장은 덧붙인 글이 본문을 '압도했다(dwarfed)', 곧 훨씬 길었다는 말이라 '주석이 원문의 거의 세 배였다'는 문장 바로 뒤여야 해요. 그 문장 뒤 [C]에 넣으면 이어지는 In one of them 이 그 주석을 가리켜 자연스러워요. [B]에는 아직 주석 이야기가 나오지 않았어요."
+],
+[
+7,
+1,
+"insert",
+"r1-i7",
+"Where in the passage does the following sentence fit most naturally?\nBut motivation seemed to play a role as well, since individuals who knew their contribution could not be singled out had less reason to exert themselves.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+4
+],
+"주어진 문장은 as well(~도)로 첫째 원인(호흡이 안 맞는 것) 다음에 둘째 원인(동기)을 더해요. 그리고 [D] 뒤 문장의 these two causes(이 두 원인)가 받으려면 두 원인이 모두 앞에 나와 있어야 해요. 그래서 '협응' 문장 뒤, these two causes 앞인 [D]예요."
+],
+[
+8,
+1,
+"irrel",
+"r1-x8",
+"Which of the sentences [A]~[E] does NOT belong in the flow of the passage?",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+1
+],
+"글은 근시가 빠르게 늘어난 원인을 찾다가 '바깥에서 보내는 시간'과 햇빛을 짚어요. 안경이 13세기 이탈리아에서 처음 만들어졌다는 [A]는 근시가 왜 늘었는가라는 흐름과 관계없어요. [A]를 빼면 [B]의 the trend 가 첫 문장의 '근시 증가'를 바로 받아요."
+],
+[
+9,
+1,
+"irrel",
+"r1-x9",
+"Which of the sentences [A]~[E] does NOT belong in the flow of the passage?",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+5
+],
+"글은 에스페란토를 만든 까닭, 배우기 쉬운 설계, 비판, 오늘의 모습을 차례로 다뤄요. 폴란드어가 라틴 문자에 악센트 붙은 글자를 더해 쓴다는 [E]는 에스페란토 이야기와 관계없어요. [E]를 빼면 마지막 문장의 Their 가 [D]의 '사용자들'을 바로 받아요."
+],
+[
+10,
+1,
+"order",
+"r1-o10",
+"Arrange paragraphs (A), (B), and (C) so that they continue the opening most naturally.",
+[
+"(A) - (B) - (C)",
+"(B) - (A) - (C)",
+"(B) - (C) - (A)",
+"(C) - (A) - (B)",
+"(C) - (B) - (A)"
+],
+[
+3
+],
+"'기원이 오래 추측거리였다' 뒤에는 그 수수께끼를 푼 (B)가 와요. (B)의 '우스운 줄임말 유행'을 Among them 으로 받는 (C)가 다음이고, (C) 끝 '사라질 뻔했다'를 '그런 말들은 대부분 사라졌지만 OK 는 살아남았다'로 잇는 (A)가 마지막이에요."
+],
+[
+11,
+1,
+"single",
+"r1-p11",
+"Which statement about the passage is NOT accurate?",
+[
+"Hopfield's network could restore an incomplete pattern.",
+"Both prize winners were physicists by training.",
+"Hinton's model drew on ideas from statistical physics.",
+"Hinton has warned about the dangers of the technology.",
+"The work honored had appeared to many to be computer science."
+],
+[
+2
+],
+"글은 홉필드를 물리학자, 힌턴을 컴퓨터 과학자로 소개해요. 둘 다 물리학자 출신이라는 문장이 글과 맞지 않아요. 흐릿한 사진 속 얼굴처럼 불완전한 패턴을 되살린다는 것, 통계물리를 빌렸다는 것, 위험을 경고한다는 것은 모두 글에 있어요."
+],
+[
+12,
+1,
+"single",
+"r1-p12",
+"Which conclusion does the passage most strongly support?",
+[
+"The container helped make global production networks economically viable.",
+"McLean's first container voyage crossed the Atlantic Ocean.",
+"International agreements on container sizes came before McLean's first voyage.",
+"Dockworkers welcomed containers because they raised wages.",
+"Traditional city piers expanded to handle container traffic."
+],
+[
+1
+],
+"운송비가 크게 떨어져 한 대륙에서 만들고 다른 대륙에서 파는 것이 '경제성이 생겼다'고 했으니, 컨테이너가 세계적인 생산망을 가능하게 했다고 추론할 수 있어요. 첫 항해는 뉴저지에서 텍사스였고, 규격은 그 뒤에 정해졌고, 부두 일꾼은 오히려 줄었어요."
+],
+[
+13,
+1,
+"single",
+"r1-p13",
+"What does the underlined word refer to?",
+[
+"the cargo steamer",
+"the narrow engine room",
+"the original boiler",
+"the audio guide",
+"the captain's cabin"
+],
+[
+3
+],
+"밑줄 it 바로 앞 문장이 '원래의 보일러를 보게 된다'예요. 화부(stoker)가 물을 모자라게 하면 터질 수 있다는 설명도 보일러에만 맞아요. 배 전체나 기관실이 '물이 모자라 터지는' 것은 아니에요."
+],
+[
+14,
+1,
+"single",
+"r1-p14",
+"What central claim does the passage make?",
+[
+"Intelligence tests given in the early grades cannot predict which children will later succeed.",
+"Young children learn faster than older children do.",
+"Teachers should be told in advance which students are gifted.",
+"Random selection is the best way to group students by ability.",
+"Teachers' expectations can quietly shape how well their students do."
+],
+[
+5
+],
+"무작위로 고른 아이들인데 교사가 기대를 품자 실제로 성적이 더 올랐고, 마지막 문장도 교사의 믿음이 작은 상호작용을 거쳐 학생의 성취에 끼어든다고 정리해요. 교사의 믿음이 학생의 성취에 영향을 준다는 문장이 요지예요. 영재를 미리 알려 줘야 한다는 것은 글의 교훈과 반대 방향이에요."
+],
+[
+15,
+1,
+"set",
+"r1-s1",
+"Choose the most appropriate expression for the blank.",
+[
+"straightforward",
+"rigid",
+"unequivocal",
+"nuanced",
+"placid"
+],
+[
+4
+],
+"빈칸 뒤에서 딴생각이 계획·창의에 도움이 되기도 하고, 되새김이 될 때만 해롭다고 했어요. '딴생각 = 불행'이라는 구호보다 관계가 더 '미묘하고 복잡하다(nuanced)'는 흐름이에요. straightforward(단순한)·unequivocal(명백한)은 그 구호 쪽 설명이라 정반대예요."
+],
+[
+16,
+1,
+"set",
+"r1-s1",
+"Which title best captures the content of the passage?",
+[
+"Smartphones as a Cause of Unhappiness",
+"How to Stop Daydreaming for Good",
+"Why Pleasant Thoughts Make Us Happier",
+"Measuring Intelligence Through Apps",
+"The Mixed Blessings of a Wandering Mind"
+],
+[
+5
+],
+"딴생각이 사람을 덜 행복하게 한다는 연구를 소개한 뒤, 도움이 되는 면도 있어 어디로 얼마나 자주 가는지가 중요하다고 정리해요. 좋고 나쁜 면이 섞였다는 'The Mixed Blessings of a Wandering Mind'가 맞아요. 스마트폰은 조사 도구일 뿐이고, 딴생각을 아예 없애자는 글도 아니에요."
+],
+[
+17,
+1,
+"set",
+"r1-s2",
+"Where in the passage does the following sentence fit most naturally?\nHer skill did not go unnoticed: leading scientists came to rely on her judgment, and some traveled to Lyme Regis to search the cliffs alongside her.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+4
+],
+"주어진 문장의 Her skill 은 바로 앞에 그 솜씨가 나와야 받을 수 있어요. '폭풍 뒤 절벽을 읽는 데 능숙해졌다'는 문장 뒤 [D]에 넣으면, 과학자들이 그녀에게 기댔다는 내용과 Yet 으로 시작하는 '그런데도 학회에 들 수 없었다'가 대조를 이뤄요."
+],
+[
+18,
+1,
+"set",
+"r1-s2",
+"Which of these points is never brought up in the passage?",
+[
+"the age at which Anning lost her father",
+"the animal that an ichthyosaur resembled",
+"the year in which Anning died",
+"why Anning could not join a scientific society",
+"the price Anning received for her first skeleton"
+],
+[
+5
+],
+"아버지를 잃은 나이(열한 살), 어룡이 닮은 동물(돌고래), 죽은 해(1847), 학회에 들 수 없던 까닭(여성이자 노동계층)은 모두 글에 있어요. 첫 골격을 얼마에 팔았는지는 나오지 않아요."
+],
+[
+19,
+1,
+"set",
+"r1-s3",
+"Choose the most appropriate expression for the blank.",
+[
+"Nevertheless",
+"On the contrary",
+"For instance",
+"Accordingly",
+"Meanwhile"
+],
+[
+4
+],
+"앞 문장은 도로가 희소한데 운전자가 값을 치르지 않는다는 문제이고, 빈칸 문장은 '그러니' 통행료로 실제 비용을 따지게 할 수 있다는 결과예요. 앞의 까닭을 받아 결론을 잇는 Accordingly 가 맞아요. Nevertheless·On the contrary 는 맞서는 말이고, 통행료는 앞 문장의 예가 아니라 For instance 도 맞지 않아요."
+],
+[
+20,
+1,
+"set",
+"r1-s3",
+"Which conclusion does the passage most strongly support?",
+[
+"Attitudes toward a congestion charge can shift after people live with it.",
+"New York's toll was approved by a public referendum.",
+"Most Stockholm residents still oppose the charge today.",
+"Economists have generally opposed charging drivers for the use of crowded roads.",
+"The revenue from New York's toll is spent on new highways."
+],
+[
+1
+],
+"스톡홀름에서는 시행 전 반대가 많았지만 짧아진 이동과 조용한 거리를 겪고 나서 지지가 늘었다고 했어요. 직접 겪으면 여론이 바뀔 수 있다고 추론할 수 있어요. 주민 투표는 스톡홀름 이야기이고, 경제학자들은 오히려 이런 제도를 지지해 왔어요."
+],
+[
+21,
+1,
+"blank",
+"r1-b21",
+"Choose the most appropriate expression for the blank.",
+[
+"unequivocal",
+"conclusive",
+"rudimentary",
+"controversial",
+"indispensable"
+],
+[
+4
+],
+"콜론 뒤가 '누구는 상식이라 칭찬하고 누구는 강압적 단속의 핑계라 비난한다'예요. 평가가 갈리니 '논란이 많은(controversial)'이 맞아요. unequivocal(분명한)·conclusive(결정적인)는 효과를 확신할 수 없다는 앞 내용과 반대이고, indispensable(꼭 필요한)도 비판과 맞지 않아요."
+],
+[
+22,
+1,
+"blank",
+"r1-b22",
+"Choose the most appropriate pair of expressions for blanks (A) and (B).",
+[
+"(A) On the one hand — (B) As a result",
+"(A) On the one hand — (B) On the other hand",
+"(A) For example — (B) On the other hand",
+"(A) In contrast — (B) Therefore",
+"(A) Similarly — (B) In short"
+],
+[
+2
+],
+"두 빈칸 뒤에는 시계를 '느리게' 하는 효과와 '빠르게' 하는 효과가 하나씩 나와요. 서로 반대 방향인 두 요인을 나란히 놓으니 '한편으로는 … 다른 한편으로는'으로 잇는 짝이 맞아요. 뒤 빈칸에 As a result·Therefore 를 넣으면 두 번째 효과가 첫 번째의 결과라는 뜻이 되어 어긋나요."
+],
+[
+23,
+1,
+"blank",
+"r1-b23",
+"Choose the most appropriate expression for the blank.",
+[
+"How a choice is worded can change the decision, even when the facts are identical.",
+"People usually choose whichever option saves the greatest number of lives.",
+"Most people avoid taking risks whenever human lives are at stake.",
+"Doctors should always describe operations in terms of survival.",
+"Experts are less easily swayed by the wording of a choice than ordinary people are."
+],
+[
+1
+],
+"빈칸은 첫 문장, 곧 글 전체의 주제문 자리예요. 같은 선택지를 '살린다'로 말하느냐 '죽는다'로 말하느냐에 따라 고르는 것이 달라졌고, 쇠고기·수술 예도 같은 사실을 다르게 말한 경우예요. 표현 방식이 결정을 바꾼다는 문장이 맞아요. '위험을 늘 피한다'는 사망으로 말했을 때 도박을 골랐다는 결과와 어긋나요."
+],
+[
+24,
+1,
+"blank",
+"r1-b24",
+"Choose the most appropriate expression for the blank.",
+[
+"compromise",
+"collaboration",
+"exploit",
+"contrition",
+"reprimand"
+],
+[
+3
+],
+"미친 척해 정신병원에 들어가 안의 참상을 폭로한 일을 꾸미는 말이 audacious(대담한)예요. '대담한 행동, 공적'을 뜻하는 명사 exploit 가 맞아요. compromise(타협)·contrition(뉘우침)·reprimand(질책)는 내용과 맞지 않고, 혼자 위장 잠입한 일이라 collaboration(공동 작업)도 아니에요."
+],
+[
+25,
+1,
+"single",
+"r1-p25",
+"Which title best captures the content of the passage?",
+[
+"Hokusai's Early Life as a Fisherman",
+"How an Imported Blue Shaped a Japanese Masterpiece",
+"The Perils of Sailing near Mount Fuji",
+"Why Plant Dyes Outlast Synthetic Pigments",
+"The Decline of Woodblock Printing in Nineteenth-Century Japan"
+],
+[
+2
+],
+"유럽에서 우연히 만들어진 프러시안 블루가 일본에 들어와 '가나가와 해변의 큰 파도'의 강렬한 빛깔을 만들었다는 글이에요. 'How an Imported Blue Shaped a Japanese Masterpiece'가 맞아요. 식물성 파랑은 오히려 빨리 바랬다고 했어요."
+],
+[
+26,
+1,
+"insert",
+"r1-i26",
+"Where in the passage does the following sentence fit most naturally?\nLong lines of vessels soon formed at both entrances to the canal, some waiting for more than a week.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+4
+],
+"주어진 문장은 통행을 줄인 '결과'로 배들이 줄을 섰다는 내용이에요. 통행 제한 문장 바로 뒤 [D]에 넣으면, 이어지는 Faced with such delays(그런 지연에 맞닥뜨려)가 이 줄 서기를 가리켜 자연스러워요. 다른 자리에서는 such delays 가 받을 말이 없어요."
+],
+[
+27,
+1,
+"insert",
+"r1-i27",
+"Where in the passage does the following sentence fit most naturally?\nMost of these fragments are too small to track, yet they are far from harmless.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+2
+],
+"주어진 문장의 these fragments 는 바로 앞에 '조각'이 나와야 해요. 폭발과 충돌로 생긴 수많은 조각을 말한 문장 뒤 [B]에 넣으면, 이어지는 such objects(그런 물체)가 이 작은 조각을 받고 '페인트 조각도 창을 팰 만큼 세다'로 '그래도 해롭다'를 뒷받침해요."
+],
+[
+28,
+1,
+"irrel",
+"r1-x28",
+"Which of the sentences [A]~[E] does NOT belong in the flow of the passage?",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+3
+],
+"글은 호주의 의무 투표 제도와 그 찬반을 다뤄요. 수도 캔버라를 설계 공모로 지었다는 [C]는 투표 이야기와 관계없어요."
+],
+[
+29,
+1,
+"irrel",
+"r1-x29",
+"Which of the sentences [A]~[E] does NOT belong in the flow of the passage?",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+5
+],
+"글은 연어가 자기가 태어난 개울로 돌아가는 방법(지구 자기장, 냄새)을 설명해요. 자연산 연어가 요리사에게 인기라는 [E]는 길 찾기와 관계없어요. 마지막 문장도 다시 '정확한 귀향'으로 돌아가요."
+],
+[
+30,
+1,
+"order",
+"r1-o30",
+"Arrange paragraphs (A), (B), and (C) so that they continue the opening most naturally.",
+[
+"(C) - (B) - (A)",
+"(B) - (A) - (C)",
+"(C) - (A) - (B)",
+"(A) - (C) - (B)",
+"(A) - (B) - (C)"
+],
+[
+3
+],
+"'실험을 했다' 뒤에는 실험 방법을 설명하며 두 집단을 나누는 (C)가 와요. 그다음 the first group 의 결과인 (A), 마지막으로 '두 번째 집단은 아주 달랐다'로 시작하는 (B)예요. (B)가 (A)보다 먼저 오면 무엇과 '달랐는지'가 앞에 없어요."
+],
+[
+31,
+1,
+"single",
+"r1-p31",
+"Which underlined word does not fit the logic of the passage?",
+[
+"higher",
+"rose",
+"resisted",
+"offensive",
+"acceptance"
+],
+[
+2
+],
+"손을 염소 용액으로 씻게 하자 의사 병동의 사망이 '크게 줄었다'는 흐름이어야 그의 생각이 옳았다는 뒤 내용과 맞아요. rose(늘었다)가 아니라 fell 이 와야 해요. 동료들이 받아들이지 않았다(resisted), 모욕적으로 여겼다(offensive)는 그대로 맞아요."
+],
+[
+32,
+1,
+"single",
+"r1-p32",
+"Which statement about the passage is accurate?",
+[
+"The IMO strategy demands zero emissions from shipping by 2030.",
+"Ammonia is easier to store as a fuel than hydrogen is.",
+"Burning ammonia produces large amounts of carbon dioxide.",
+"Most ammonia today is manufactured without fossil fuels.",
+"Ammonia poses little danger to people if it leaks."
+],
+[
+2
+],
+"암모니아는 적당한 압력이나 약간의 냉각으로 액체로 둘 수 있지만 수소는 아주 낮은 온도로 식혀야 한다고 했어요. 그러니 보관이 수소보다 쉽다는 문장이 맞아요. 목표 시점은 2050년 무렵이고, 탄소가 없어 이산화탄소를 내지 않으며, 지금은 대부분 천연가스로 만들고, 독성이 강하다고 했어요."
+],
+[
+33,
+1,
+"single",
+"r1-p33",
+"Who is most likely the writer of the passage?",
+[
+"a cargo pilot",
+"a weather forecaster",
+"an airport security officer",
+"an air traffic controller",
+"a hospital nurse"
+],
+[
+4
+],
+"화면으로 40마일 안의 모든 비행기를 보고, 조종사들이 '내가 준 지시'를 따라 읽으며, 안개가 끼면 도착 간격을 벌리고 비행기를 선회 대기시킨다고 했어요. 관제사가 하는 일이에요. 조종사는 지시를 받는 쪽이고, 간호사는 마지막 문장의 비유일 뿐이에요."
+],
+[
+34,
+1,
+"single",
+"r1-p34",
+"What is the passage mainly about?",
+[
+"why the Minoan language eventually died out",
+"the architecture of the palace at Knossos",
+"the role of chariots in ancient warfare",
+"a bitter rivalry between British and American archaeologists at Knossos",
+"how an ancient script was deciphered and what it revealed"
+],
+[
+5
+],
+"크레타에서 나온 선형 문자 B 를 코버와 벤트리스가 풀어 초기 그리스어임을 밝혀냈고, 내용이 행정 기록이었다는 글이에요. '옛 문자를 어떻게 해독했고 무엇이 드러났는가'가 주제예요. 미노스어라는 짐작은 오히려 틀린 것으로 드러났고, 전차는 목록에 나오는 물건일 뿐이에요."
+],
+[
+35,
+1,
+"set",
+"r1-s4",
+"Choose the most appropriate expression for the blank.",
+[
+"a purpose its creator never had in mind",
+"the strength of its original design",
+"the price at which it is first sold",
+"the speed with which it is patented",
+"the approval of rival companies"
+],
+[
+1
+],
+"아주 센 접착제를 만들려다 약한 풀이 나왔고, 그 쓰임새는 만든 사람이 아니라 성가대에서 책갈피가 빠져 고생하던 동료가 찾았어요. 발명품의 가치가 '만든 사람이 생각지도 못한 쓰임새'에 있을 수 있다는 결론이에요. '원래 설계의 강도'는 약해서 오히려 쓸모가 생겼다는 이야기와 반대예요."
+],
+[
+36,
+1,
+"set",
+"r1-s4",
+"Which statement about the passage is accurate?",
+[
+"Fry was the chemist who invented the adhesive used in the notes.",
+"The notes were first sold nationwide in 1968.",
+"Silver's colleagues at 3M immediately recognized the commercial value of the glue.",
+"Fry used the notes to keep track of aircraft parts.",
+"Silver's adhesive resulted from an attempt to make a much stronger glue."
+],
+[
+5
+],
+"실버는 항공기 제작에 쓸 아주 센 접착제를 만들려다 '반대로' 약한 풀을 만들었다고 했어요. 그러니 그 내용을 담은 문장이 맞아요. 풀을 만든 사람은 프라이가 아니라 실버이고, 전국 판매는 1980년이며, 동료들은 여러 해 동안 쓸모를 찾지 못했어요."
+],
+[
+37,
+1,
+"set",
+"r1-s5",
+"Which of the sentences [A]~[E] does NOT belong in the flow of the passage?",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+1
+],
+"글은 평일과 주말의 수면 시간이 어긋나는 '사회적 시차'와 그 해로움을 다뤄요. 장거리 비행기에 누워 잘 수 있는 좌석이 있다는 [A]는 흐름과 관계없어요. 첫머리의 비행기 시차는 '매주 스스로 겪는 시차'를 말하려고 끌어온 비유일 뿐이에요."
+],
+[
+38,
+1,
+"set",
+"r1-s5",
+"What central claim does the passage make?",
+[
+"Large weekly shifts in sleep timing may harm health and well-being.",
+"Long-haul flights are the main cause of sleep problems among office workers.",
+"Sleeping late on weekends is the best cure for a weekday sleep debt.",
+"Internal body clocks can be reset permanently by alarm clocks.",
+"Airlines should design seats that help passengers sleep."
+],
+[
+1
+],
+"평일·주말 수면 시간의 차이를 시차에 빗대고, 그 차이가 클수록 기분·성적·비만 위험이 나빠진다는 연구와 일정한 기상 시간을 권하는 조언으로 마무리해요. 수면 일정의 큰 차이가 건강을 해칠 수 있다는 문장이 요지예요. 주말 늦잠으로 빚을 갚으려 한다는 말은 있지만 그것이 '가장 좋은 처방'이라는 말은 없어요."
+],
+[
+39,
+1,
+"set",
+"r1-s6",
+"Choose the most appropriate expression for the blank.",
+[
+"resentment",
+"apprehension",
+"remorse",
+"solace",
+"candor"
+],
+[
+4
+],
+"할아버지 장례 뒤 멈춰 있던 라디오에서 다시 소리가 나자 어머니와 말없이 서 있었고, 영영 잠긴 줄 알았던 문이 열린 것 같았다고 했어요. 슬픔 속에서 받은 '위안(solace)'이 맞아요. resentment(원망)·remorse(후회)·apprehension(불안)은 이 장면의 따뜻한 느낌과 맞지 않아요."
+],
+[
+40,
+1,
+"set",
+"r1-s6",
+"Which conclusion does the passage most strongly support?",
+[
+"The radio held emotional significance for the narrator's family.",
+"The narrator had professional training in repairing electronics.",
+"The narrator's mother strongly disapproved of the repair project from the start.",
+"The radio had broken because it was dropped at the funeral.",
+"The narrator finished the repair within a single afternoon."
+],
+[
+1
+],
+"고장 난 라디오를 아무도 버리지 못했고, 소리가 나자 어머니가 손을 물에 담근 채 굳어 섰어요. 라디오가 가족에게 할아버지를 떠올리게 하는 소중한 물건이었다고 추론할 수 있어요. 글쓴이는 전자 제품을 거의 몰랐고, 수리는 겨울부터 2월까지 걸렸어요."
+],
+[
+1,
+2,
+"blank",
+"r2-b1",
+"Choose the most appropriate expression for the blank.",
+[
+"redundant",
+"sporadic",
+"dormant",
+"permeable",
+"hostile"
+],
+[
+4
+],
+"빈칸은 첫 문장(주제문)이에요. 뒤에 이어지는 실험에서 무시한 귀의 소리는 거의 기억하지 못했지만 자기 이름은 곧바로 알아챘어요. 걸러 내되 틈이 있어 중요한 것은 '스며드는(permeable)' 셈이에요. 콜론 뒤 '대부분 밀어 두되 계속 살핀다'도 같은 뜻이에요. dormant(잠든)는 계속 살핀다는 말과 어긋나고, redundant·sporadic 은 rather than absolute 와 짝이 맞지 않아요."
+],
+[
+2,
+2,
+"blank",
+"r2-b2",
+"Choose the most appropriate expression for the blank.",
+[
+"changed faster than speech did",
+"froze while the spoken language kept moving",
+"abandoned the Latin alphabet",
+"became identical to French",
+"dropped all its silent letters"
+],
+[
+2
+],
+"인쇄가 들어와 철자가 굳었는데 발음은 계속 바뀌었으니, 글말은 '멈춰 섰고 입말은 계속 움직였다'는 흐름이에요. 빈칸 뒤 '몇백 년 전 소리의 스냅사진을 담고 있다'도 같은 뜻이에요. '말보다 빨리 바뀌었다'는 정반대예요."
+],
+[
+3,
+2,
+"blank",
+"r2-b3",
+"Choose the most appropriate expression for the blank.",
+[
+"On the contrary",
+"Nevertheless",
+"As a result",
+"Otherwise",
+"For instance"
+],
+[
+5
+],
+"앞 문장은 '느림이 몸을 지켜 주기도 한다'는 일반 진술이고, 빈칸 문장은 움직임으로 사냥하는 독수리·재규어가 가만히 매달린 나무늘보를 놓친다는, 까닭과 함께 보여 주는 예예요. For instance 가 맞아요. As a result 를 넣으면 나무늘보가 느려서 포식자가 움직임으로 사냥하게 됐다는 뜻이 되어 어긋나요."
+],
+[
+4,
+2,
+"single",
+"r2-p4",
+"Which title best captures the content of the passage?",
+[
+"Why China Remains the World's Factory",
+"The Pandemic and the End of World Trade",
+"How Tariffs on Chinese Goods Lowered Prices for Consumers",
+"Mexico's Struggle to Attract Tourists",
+"Bringing Factories Closer: The Rise of Nearshoring"
+],
+[
+5
+],
+"멕시코가 미국의 최대 수입 상대가 된 일을 실마리로, 팬데믹과 미중 갈등 뒤 기업들이 생산을 시장 가까이 옮기는 니어쇼어링과 그 한계를 다룬 글이에요. 'Bringing Factories Closer: The Rise of Nearshoring'이 맞아요. 세계 무역이 끝났다는 말은 없고, 관세는 다변화의 이유로만 나와요."
+],
+[
+5,
+2,
+"insert",
+"r2-i5",
+"Where in the passage does the following sentence fit most naturally?\nStrikingly, dolphins sometimes imitate the signature whistle of another individual, as if calling out its name.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+3
+],
+"[C] 뒤 문장의 such copies(그런 흉내)는 앞에 '다른 돌고래 휘파람을 흉내 낸다'는 말이 있어야 받을 수 있어요. 휘파람이 이름 같다는 설명 뒤, 실험 문장 앞인 [C]에 넣으면 '흉내가 정말 이름처럼 쓰이는지 시험했다'로 이어져요."
+],
+[
+6,
+2,
+"insert",
+"r2-i6",
+"Where in the passage does the following sentence fit most naturally?\nRather, the brain constantly guesses at what it hears, filling gaps with whichever words seem most familiar or meaningful.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+5
+],
+"주어진 문장은 Rather(오히려)로 시작해 앞의 부정문을 바로잡아요. '듣기는 소리를 수동적으로 녹음하는 것이 아니다'라는 마지막 문장 뒤 [E]에 와야 '오히려 뇌가 짐작해 빈칸을 채운다'로 이어져요."
+],
+[
+7,
+2,
+"insert",
+"r2-i7",
+"Where in the passage does the following sentence fit most naturally?\nRiders racing against others posted faster times than those racing alone against the clock.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+1
+],
+"첫 문장은 '이상한 점을 알아챘다'로 끝나고, [A] 뒤 문장은 the effect(그 효과)가 경주장 밖에서도 나타나는지 알아보려 했다고 해요. 그 사이 [A]에 '함께 달리면 기록이 더 빨랐다'가 들어가야 '이상한 점'과 the effect 가 무엇인지 채워져요."
+],
+[
+8,
+2,
+"order",
+"r2-o8",
+"Arrange paragraphs (A), (B), and (C) so that they continue the opening most naturally.",
+[
+"(A) - (B) - (C)",
+"(B) - (A) - (C)",
+"(A) - (C) - (B)",
+"(C) - (A) - (B)",
+"(C) - (B) - (A)"
+],
+[
+3
+],
+"'오랫동안 박물관이 아니었다' 뒤에는 요새로 시작해 궁전이 된 (A)가 와요. (A)의 궁전을 That palace 로 받아 베르사유 이전 뒤 쓰임이 줄었다는 (C)가 다음이고, 혁명 때 공공 박물관이 된 (B)가 마지막이에요. 시대 순서도 12세기 → 1682년 → 1793년이에요."
+],
+[
+9,
+2,
+"irrel",
+"r2-x9",
+"Which of the sentences [A]~[E] does NOT belong in the flow of the passage?",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+2
+],
+"글은 부작용을 미리 들으면 가짜 약에서도 그 증상을 느끼는 노시보 효과와 그 윤리 문제를 다뤄요. 옛 의사들이 환자를 안심시키려 가짜 약을 처방했다는 [B]는 노시보 이야기의 흐름과 관계없어요."
+],
+[
+10,
+2,
+"irrel",
+"r2-x10",
+"Which of the sentences [A]~[E] does NOT belong in the flow of the passage?",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+4
+],
+"글은 율리우스력의 오차가 쌓여 그레고리력으로 고친 과정을 다뤄요. 부활절 달걀 풍습을 말한 [D]는 달력을 고친 이야기와 관계없어요. 부활절은 [C]에서 '날짜를 고쳐야 했던 까닭'으로만 나와요."
+],
+[
+11,
+2,
+"single",
+"r2-p11",
+"Which statement about the passage is NOT accurate?",
+[
+"Europa is a little smaller than Earth's Moon.",
+"Scientists think an ocean lies beneath Europa's ice.",
+"The spacecraft is scheduled to reach the Jupiter system in 2030.",
+"Europa Clipper is designed to land on Europa's icy surface.",
+"Part of the spacecraft is shielded against radiation."
+],
+[
+4
+],
+"글은 탐사선이 '착륙하지 않는다(will not land)'고 하고, 목성을 돌며 유로파 곁을 수십 번 스쳐 지나간다고 했어요. 표면에 내린다는 문장이 글과 맞지 않아요. 달보다 조금 작다는 것, 얼음 밑 바다, 2030년 도착, 두꺼운 금속 금고 속 전자 장비는 모두 글에 있어요."
+],
+[
+12,
+2,
+"single",
+"r2-p12",
+"Which conclusion does the passage most strongly support?",
+[
+"Countries with opt-in systems have stronger health systems.",
+"Most Europeans have carefully weighed whether to donate their organs after death.",
+"Changing a preset option can greatly alter the choices many people end up with.",
+"Opt-out systems guarantee a higher number of transplants.",
+"Employees strongly dislike being enrolled in pension plans automatically."
+],
+[
+3
+],
+"비슷한 나라끼리도 기본값이 '동의'냐 '비동의'냐에 따라 등록률이 크게 갈렸고, 사람들은 대개 정해진 값을 그대로 둔다고 했어요. 기본값을 바꾸면 많은 사람의 선택이 바뀐다고 추론할 수 있어요. 마지막 문장은 이식 건수가 등록부 말고도 여러 요인에 달렸다고 해 '보장한다'와 어긋나요."
+],
+[
+13,
+2,
+"single",
+"r2-p13",
+"What does the underlined word refer to?",
+[
+"the notebook he was searching for",
+"the bench by gate twelve",
+"his connecting flight",
+"the storeroom of lost items",
+"the shoebox with a tortoise"
+],
+[
+1
+],
+"밑줄 it 바로 앞 문장에서 남자가 '작은 파란 수첩'을 찾고 있었다고 했어요. 게이트 옆 의자에 두고 왔고, 아내의 손글씨 요리법이 적혀 있다는 설명도 수첩에 맞아요. 의자는 '어디에' 두었는지를 말하는 자리예요."
+],
+[
+14,
+2,
+"single",
+"r2-p14",
+"What central claim does the passage make?",
+[
+"People may sabotage their own performance to protect their self-image.",
+"Praise generally improves students' performance on later tests.",
+"Drugs that enhance performance should be banned in schools.",
+"Difficult problems lead students to study harder for later tests.",
+"Athletes perform better when they skip practice before important matches."
+],
+[
+1
+],
+"칭찬이 실력 덕이 아니라고 느낀 학생들이 일부러 성적을 떨어뜨린다는 약을 골랐고, 연구자들은 실패의 핑계를 미리 만드는 이 전략을 '자기 불구화'라 불렀어요. 마지막 문장은 그 대가로 실제 실패를 부른다고 해요. 자기 이미지를 지키려 스스로 성과를 깎는다는 문장이 요지예요. 연습을 빼먹는 선수는 그 나쁜 예로 나왔어요."
+],
+[
+15,
+2,
+"set",
+"r2-s1",
+"Choose the most appropriate expression for the blank.",
+[
+"benign",
+"fleeting",
+"superfluous",
+"conducive",
+"pervasive"
+],
+[
+5
+],
+"사회적 역할과 관계를 중시하는 사회에서는 사람들이 행동의 까닭을 '상황'에서 더 찾는다고 했어요. 그러니 성격 탓으로 돌리는 치우침이 그런 곳에서는 덜 '널리 퍼져 있다(pervasive)'는 흐름이에요. less benign(덜 무해한)이면 더 해롭다는 뜻이 되어 뒤 설명과 맞지 않고, fleeting·superfluous·conducive 는 뜻이 이어지지 않아요."
+],
+[
+16,
+2,
+"set",
+"r2-s1",
+"Which title best captures the content of the passage?",
+[
+"Why Debaters Make Good Psychologists",
+"The Political Legacy of Fidel Castro",
+"How Heavy Traffic Causes Accidents",
+"How a Political Leader Shaped Cuban Culture",
+"Blaming Character, Ignoring Circumstances"
+],
+[
+5
+],
+"남의 행동은 성격 탓으로 돌리고 상황은 가볍게 보는 '근본적 귀인 오류'를 실험과 일상 예로 설명한 글이라 'Blaming Character, Ignoring Circumstances'가 맞아요. 카스트로는 실험 소재일 뿐이고, 한 정치 지도자가 쿠바 문화를 바꿨다는 내용도 없어요."
+],
+[
+17,
+2,
+"set",
+"r2-s2",
+"Where in the passage does the following sentence fit most naturally?\nDespite such hardship, she graduated at the top of her class in physics in 1893.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+2
+],
+"주어진 문장의 such hardship(그런 고생)은 바로 앞에 고생 이야기가 있어야 해요. '배고파 쓰러질 만큼 가난하게 공부했다'는 문장 뒤 [B]에 들어가요. 그 뒤 There(그곳 파리에서) 피에르를 만났다는 문장으로 자연스럽게 이어져요."
+],
+[
+18,
+2,
+"set",
+"r2-s2",
+"Which of these points is never brought up in the passage?",
+[
+"the element named after Curie's homeland",
+"the year Curie married Pierre",
+"the field of Curie's second Nobel Prize",
+"the cause of Pierre Curie's death",
+"how many children the Curies raised"
+],
+[
+5
+],
+"조국 이름을 딴 원소(폴로늄), 결혼한 해(1895), 두 번째 노벨상 분야(화학), 피에르가 죽은 까닭(거리 사고)은 모두 글에 있어요. 자녀가 몇이었는지는 나오지 않아요."
+],
+[
+19,
+2,
+"set",
+"r2-s3",
+"Choose the most appropriate expression for the blank.",
+[
+"For instance",
+"Even so",
+"Similarly",
+"As a result",
+"In other words"
+],
+[
+2
+],
+"앞 문장은 '완벽하지 않다'는 약점이고, 빈칸 문장은 그래도 연구 방식을 바꿔 놓았다는 강점이에요. 앞의 양보를 받고 반대 방향으로 잇는 Even so 가 맞아요. As a result 를 넣으면 '약점 때문에 연구를 바꿨다'가 되어 어긋나요."
+],
+[
+20,
+2,
+"set",
+"r2-s3",
+"Which conclusion does the passage most strongly support?",
+[
+"AlphaFold is most accurate for proteins that keep changing shape.",
+"David Baker was one of the developers of AlphaFold.",
+"AlphaFold's predictions are kept from researchers outside DeepMind.",
+"Before AlphaFold, finding a protein's structure often took a long time.",
+"Laboratories have abandoned X-ray crystallography in favor of computer predictions."
+],
+[
+4
+],
+"엑스선 결정법으로 단백질 하나에 몇 달에서 몇 해가 걸렸다고 했으니, 알파폴드 전에는 구조를 알아내는 데 오래 걸렸다고 추론할 수 있어요. 모양이 바뀌는 단백질은 덜 정확하고, 베이커는 다른 공로로 함께 받았으며, 예측은 공개 자료로 풀렸어요."
+],
+[
+21,
+2,
+"blank",
+"r2-b21",
+"Choose the most appropriate expression for the blank.",
+[
+"equivalent",
+"antithesis",
+"prerequisite",
+"corollary",
+"precursor"
+],
+[
+2
+],
+"뱀을 줄이려던 보상이 오히려 뱀을 늘렸다는 이야기라, 의도한 결과의 '정반대(antithesis)'를 낳는 유인책이에요. 빈칸 뒤 '문제를 줄이려던 보상이 문제를 만들게 한다'도 같은 뜻이에요. equivalent(같은 것)는 반대이고, prerequisite(전제 조건)·precursor(선행하는 것)는 뜻이 맞지 않아요."
+],
+[
+22,
+2,
+"blank",
+"r2-b22",
+"Choose the most appropriate pair of expressions for blanks (A) and (B).",
+[
+"(A) controlled — (B) delay",
+"(A) controlled — (B) agreement",
+"(A) accidental — (B) delay",
+"(A) theoretical — (B) harmony",
+"(A) secret — (B) bond"
+],
+[
+1
+],
+"(A) 비슷한 조건에서 여러 치료법을 나란히 비교했다는 이유가 붙었으니 '대조(통제) 실험(controlled)'이에요. (B) 발견에서 해군의 실제 보급까지 50년 가까이 걸렸으니 그 사이의 '지연(delay)'이 많은 목숨을 앗아 갔다는 말이에요."
+],
+[
+23,
+2,
+"blank",
+"r2-b23",
+"Choose the most appropriate expression for the blank.",
+[
+"Medieval monks preferred learning chants by ear to reading them from written signs.",
+"The modern musical staff was invented in the twentieth century.",
+"A medieval monk transformed the way music was taught and written down.",
+"Hymns were the most popular form of medieval entertainment.",
+"Singing exercises are of little use to beginning musicians."
+],
+[
+3
+],
+"빈칸은 글 전체를 묶는 첫 문장이에요. 귀로만 10년씩 배우던 성가를 귀도가 줄 위에 음 높이를 적는 법과 계이름 익히기로 몇 달 만에 배우게 했다는 내용이니, '중세 수도사가 음악을 가르치고 적는 방법을 바꿨다'가 맞아요."
+],
+[
+24,
+2,
+"blank",
+"r2-b24",
+"Choose the most appropriate expression for the blank.",
+[
+"hostile",
+"indifferent",
+"superfluous",
+"exclusive",
+"conducive"
+],
+[
+4
+],
+"까마귀가 도구를 만들고 대를 이어 다듬는다는 발견 때문에 다시 생각하게 된 '오랜 가정'은 정교한 도구 사용이 사람과 몇몇 영장류에게만 '있는(exclusive to)' 일이라는 생각이에요. hostile·indifferent 는 사람에게 적대적·무관심하다는 뜻이 되어 말이 안 되고, conducive(도움이 되는)도 맞지 않아요."
+],
+[
+25,
+2,
+"single",
+"r2-p25",
+"Which title best captures the content of the passage?",
+[
+"How Hollywood Helped Win the Second World War",
+"The Film Star Behind a Wireless Breakthrough",
+"The Invention of the Player Piano",
+"Why the Navy Rejected Radio Torpedoes",
+"Hedy Lamarr's Greatest Film Roles"
+],
+[
+2
+],
+"1940년대 영화배우 헤디 라마가 주파수를 빠르게 바꾸는 방식을 발명했고, 그것이 뒷날 무선 통신 기술의 바탕이 되었다는 글이라 'The Film Star Behind a Wireless Breakthrough'가 맞아요. 자동 피아노는 아이디어를 빌려 온 곳일 뿐이에요."
+],
+[
+26,
+2,
+"order",
+"r2-o26",
+"Arrange paragraphs (A), (B), and (C) so that they continue the opening most naturally.",
+[
+"(C) - (B) - (A)",
+"(A) - (B) - (C)",
+"(B) - (C) - (A)",
+"(C) - (A) - (B)",
+"(B) - (A) - (C)"
+],
+[
+1
+],
+"'가장 살아 있다고 느낀 순간을 물었다' 뒤에는 그 대답과 '몰입(flow)'이라는 이름이 나오는 (C)가 와요. (B)의 it 은 이 몰입을 받고 '도전과 실력이 맞아야 한다'는 조건을 말해요. (A)의 This balance(이 균형)가 그 조건을 받으니 마지막이에요."
+],
+[
+27,
+2,
+"insert",
+"r2-i27",
+"Where in the passage does the following sentence fit most naturally?\nThe disruption also inflicted heavy losses on a country that had played no part in the attacks.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+5
+],
+"주어진 문장은 '공격과 상관없던 한 나라'가 큰 손해를 봤다고 예고해요. 운하 수수료에 기대는 이집트의 수입이 줄었다는 문장 바로 앞 [E]에 들어가야 그 나라가 누구인지 이어져요. also(또한)도 운임·공장 피해 다음이라는 표시예요."
+],
+[
+28,
+2,
+"insert",
+"r2-i28",
+"Where in the passage does the following sentence fit most naturally?\nAs a result, atomic clocks and the sun gradually fall out of agreement.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+3
+],
+"주어진 문장은 지구 자전이 해마다 조금씩 달라진다는 문장의 '결과'예요. 그리고 [C] 뒤 문장의 the two(그 둘)가 원자시계와 해를 가리키려면 이 문장이 바로 앞에 있어야 해요. 그래서 [C]예요."
+],
+[
+29,
+2,
+"irrel",
+"r2-x29",
+"Which of the sentences [A]~[E] does NOT belong in the flow of the passage?",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+1
+],
+"글은 핀란드 기본소득 실험의 방법과 결과, 해석을 다뤄요. 핀란드가 행복한 나라 순위 위쪽이라는 [A]는 실험 이야기와 관계없어요. [A]를 빼면 첫 문장의 '실험'을 [B]가 바로 설명해요."
+],
+[
+30,
+2,
+"irrel",
+"r2-x30",
+"Which of the sentences [A]~[E] does NOT belong in the flow of the passage?",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+4
+],
+"글은 북극제비갈매기의 긴 이동 거리와 경로를 다뤄요. 날지 못하는 펭귄이 두꺼운 지방으로 추위를 견딘다는 [D]는 흐름과 관계없어요. [E]의 '평생 거리'는 [C]의 '한 해 거리'를 이어 받아요."
+],
+[
+31,
+2,
+"single",
+"r2-p31",
+"Which underlined word does not fit the logic of the passage?",
+[
+"demands",
+"depleted",
+"effortlessly",
+"worse",
+"necessity"
+],
+[
+4
+],
+"실험이 이론을 '뒷받침한다'고 했으니, 수목원을 걸은 사람이 도시 거리를 걸은 사람보다 기억 과제를 '더 잘해야(better)' 해요. worse 가 흐름에 맞지 않아요. 지시적 주의가 '닳는다(depleted)', 자연은 '힘들이지 않고(effortlessly)' 관심을 끈다는 말은 맞아요."
+],
+[
+32,
+2,
+"single",
+"r2-p32",
+"Which statement about the passage is accurate?",
+[
+"Most air taxi designs use several small rotors instead of one large rotor.",
+"Batteries let air taxis carry many passengers over long distances at low cost.",
+"Regulators have already approved rules for crowded low-altitude traffic.",
+"Air taxis are expected to be noisier than helicopters.",
+"Air taxi services have operated in most large cities for years."
+],
+[
+1
+],
+"대부분의 회사가 큰 회전 날개 하나 대신 작은 날개 여러 개를 쓰는 전기 수직 이착륙기를 만든다고 했어요. 그 내용을 담은 문장이 맞아요. 배터리는 무거워 거리와 승객 수를 제한하고, 인증은 이제 해야 할 일이며, 헬리콥터보다 조용할 것으로 기대되고, 출시는 여러 번 미뤄졌어요."
+],
+[
+33,
+2,
+"single",
+"r2-p33",
+"Which pair of words captures the tone of the passage most accurately?",
+[
+"bitter and resentful",
+"encouraging and reassuring",
+"detached and clinical",
+"mocking and sarcastic",
+"apprehensive and pessimistic"
+],
+[
+2
+],
+"졸업생들에게 앞날이 불확실해도 실패가 아니며, 자신도 돌고 돌아 좋아하는 일을 찾았다고 말한 뒤 '조급해하지 말라'고 다독여요. '격려하고 안심시키는(encouraging and reassuring)' 어조예요. 백과사전 이야기에 가벼운 농담은 있지만 비꼬는 글은 아니에요."
+],
+[
+34,
+2,
+"single",
+"r2-p34",
+"What is the passage mainly about?",
+[
+"why lip-reading is the best way to teach deaf children",
+"the history of Spanish in Central America",
+"the difficulty of learning grammar as an adult",
+"school bus safety in Nicaragua",
+"how a group of children created a new language"
+],
+[
+5
+],
+"따로 지내던 니카라과의 청각 장애 아이들이 학교에 모이면서 몸짓을 모아 문법을 갖춘 새 수어를 만들어 냈다는 글이에요. '아이들이 어떻게 새 언어를 만들었는가'가 주제예요. 입 모양 읽기 수업은 오히려 거의 성과가 없었다고 했어요."
+],
+[
+35,
+2,
+"set",
+"r2-s4",
+"Choose the most appropriate expression for the blank.",
+[
+"the inventor has formal academic training",
+"it occurs in a well-funded laboratory",
+"someone recognizes its significance and pursues it",
+"a government agency approves it",
+"the public demands it immediately"
+],
+[
+3
+],
+"녹은 초콜릿은 우연이었지만, 스펜서가 그 까닭을 궁금해하며 팝콘과 달걀로 시험해 원리를 깨닫고 회사가 수십 년 다듬어 발명품이 되었어요. 우연은 '누군가 그 의미를 알아보고 끝까지 파고들 때' 발명이 된다는 결론이에요. 스펜서는 독학한 기술자라 '정식 학위'는 글과 어긋나요."
+],
+[
+36,
+2,
+"set",
+"r2-s4",
+"Which statement about the passage is accurate?",
+[
+"Spencer felt intense heat when standing near the magnetron.",
+"The first microwave ovens were too large and costly for most homes.",
+"Spencer held a doctorate in physics.",
+"Microwave ovens were first sold to households in 1945.",
+"Raytheon originally built magnetrons for cooking food."
+],
+[
+2
+],
+"첫 상업용 전자레인지는 사람 키만 하고 몇백 킬로그램에 몇천 달러라 처음엔 식당·배·철도 회사가 샀다고 했어요. 그 내용을 담은 문장이 맞아요. 스펜서는 열을 느끼지 못했고, 독학한 기술자였으며, 마그네트론은 군용 레이더 장치였어요."
+],
+[
+37,
+2,
+"set",
+"r2-s5",
+"Which of the sentences [A]~[E] does NOT belong in the flow of the passage?",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+3
+],
+"글은 미국에서 팁 요구가 식당 밖으로 번진 일과 그에 대한 찬반을 다뤄요. 팁이 튜더 시대 영국에서 시작됐다는 [C]는 '요즘 팁 요구가 번졌다'와 '결제 화면이 팁을 권한다' 사이를 끊어요. [C]를 빼면 [B]의 주장을 [D]가 바로 예로 받쳐요."
+],
+[
+38,
+2,
+"set",
+"r2-s5",
+"What central claim does the passage make?",
+[
+"Tipping was invented in the United States to support restaurant staff.",
+"Digital payment screens have made customers more generous and more satisfied with service.",
+"The spread of tip requests has sharpened debate over who should pay service workers.",
+"Federal law requires restaurants to pay tipped staff the full minimum wage in cash.",
+"Abolishing tips has proved a clear success for restaurants."
+],
+[
+3
+],
+"식당 밖까지 퍼진 팁 요구에 손님들이 지쳐 가고, 팁이 임금 책임을 손님에게 넘긴다는 비판과 옹호가 맞선다는 글이에요. 팁 요구 확산이 누가 노동자의 임금을 낼지에 대한 논쟁을 키웠다는 문장이 요지예요. 팁 폐지 실험은 '엇갈린 결과'라고 했을 뿐 뚜렷한 성공이라는 말은 없어요."
+],
+[
+39,
+2,
+"set",
+"r2-s6",
+"Choose the most appropriate expression for the blank.",
+[
+"mastery",
+"complacency",
+"obstinacy",
+"resentment",
+"apprehension"
+],
+[
+1
+],
+"침착함이 타고난 성격이 아니라 수천 밤 동안 물길의 굽이와 여울을 익혀 쌓은 것이라 했어요. 오래 익혀 얻은 '숙달(mastery)'이 맞아요. complacency(안일함)는 위험한 줄을 알고 조심한다는 말과 어긋나고, apprehension(불안)은 침착함과 반대예요."
+],
+[
+40,
+2,
+"set",
+"r2-s6",
+"Which conclusion does the passage most strongly support?",
+[
+"Captain Ruiz was nervous about guiding the ship.",
+"The narrator had climbed many ship ladders before.",
+"The ship's master gave orders to Captain Ruiz throughout.",
+"The narrator was training to become a harbor pilot.",
+"The channel was wide and free of obstacles."
+],
+[
+4
+],
+"'이 일을 배우러 왔다(I was there to learn the job)'고 했으니 글쓴이는 도선사 훈련을 받는 중이라고 추론할 수 있어요. 선장은 목소리 한 번 높이지 않았고, 글쓴이는 사다리를 보며 속이 울렁거렸으며, 물길은 좁고 모래톱이 있었어요."
+],
+[
+1,
+3,
+"blank",
+"r3-b1",
+"Choose the most appropriate expression for the blank.",
+[
+"moderate",
+"excessive",
+"rudimentary",
+"indifferent",
+"enigmatic"
+],
+[
+2
+],
+"빈칸은 첫 문장이에요. 뒤에서 어느 선까지는 긴장이 실력을 높이지만 그 선을 넘으면 떨어진다고 설명해요. 압박 속에서 흔들리는 연주자·선수는 실력이 아니라 긴장이 '지나쳐진(excessive)' 것이라는 흐름이에요. moderate(적당한)는 오히려 실력을 높이는 쪽이라 반대예요."
+],
+[
+2,
+3,
+"blank",
+"r3-b2",
+"Choose the most appropriate expression for the blank.",
+[
+"part of the city's routine operation",
+"a popular venue for outdoor concerts",
+"an obstacle that ships can never pass",
+"unnecessary as the climate cools",
+"a major source of electricity for London"
+],
+[
+1
+],
+"드문 비상사태를 위해 지은 방벽인데 해수면이 오르면 점점 더 자주 닫히게 된다고 했어요. 비상용 시설이 '도시가 늘 쓰는 일상 장치'가 되어 간다는 흐름이에요. 배는 평소 자유롭게 지나가고, 글은 기후가 식는다고 하지 않았어요."
+],
+[
+3,
+3,
+"blank",
+"r3-b3",
+"Choose the most appropriate expression for the blank.",
+[
+"Nonetheless",
+"As a result",
+"For example",
+"Similarly",
+"In other words"
+],
+[
+1
+],
+"앞 문장은 '출판할 생각이 없던 개인 메모'였다는 내용이고, 빈칸 문장은 그런데도 가장 널리 읽히는 고대 철학책이 되었다는 내용이에요. 예상과 반대되는 결과를 잇는 Nonetheless 가 맞아요. As a result 를 넣으면 출판할 생각이 없어서 널리 읽혔다는 뜻이 되어 어긋나요."
+],
+[
+4,
+3,
+"single",
+"r3-p4",
+"Which title best captures the content of the passage?",
+[
+"How to Survive a Long Layover",
+"Why Cities Compete to Be the World's Connecting Points",
+"The Decline of Long-Distance Air Travel",
+"Building Runways in the Desert",
+"Why Long-Range Aircraft Have Made Transfer Hubs Obsolete"
+],
+[
+2
+],
+"환승 허브가 도시에 큰 경제 자산이라 두바이·도하·이스탄불·인천 같은 곳이 앞다투어 투자하고, 직항기가 그 경쟁을 흔들 수 있다는 글이에요. 'Why Cities Compete to Be the World's Connecting Points'가 맞아요. 긴 환승 시간 편의 시설은 예로 한 번 나올 뿐이에요."
+],
+[
+5,
+3,
+"irrel",
+"r3-x5",
+"Which of the sentences [A]~[E] does NOT belong in the flow of the passage?",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+3
+],
+"글은 나이 들며 줄어드는 해마가 걷기 운동으로 다시 커졌다는 연구를 다뤄요. 수컷 해마(바닷물고기)가 새끼를 품는다는 [C]는 뇌 이야기와 관계없어요. 해마가 '해마 모양'이라는 첫 문장의 말에 걸려 끼어든 문장이에요."
+],
+[
+6,
+3,
+"irrel",
+"r3-x6",
+"Which of the sentences [A]~[E] does NOT belong in the flow of the passage?",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+5
+],
+"글은 플라톤의 동굴 비유를 차례로 풀고 교육의 뜻으로 마무리해요. 세계 곳곳 동굴에 선사 시대 벽화가 있다는 [E]는 비유의 흐름과 관계없어요. '동굴'이라는 낱말만 같아요."
+],
+[
+7,
+3,
+"insert",
+"r3-i7",
+"Where in the passage does the following sentence fit most naturally?\nUntil then, the customary defense had been to ring the church bells during storms, a practice that killed a considerable number of bell ringers.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+2
+],
+"주어진 문장의 Until then(그때까지)은 바로 앞에 새 방법이 나온 때가 있어야 받을 수 있어요. 1750년대 초 프랭클린이 피뢰침을 제안했다는 문장 뒤 [B]에 넣으면 '그 전까지는 종을 울렸다'로 이어지고, 다음 문장의 such a rod 도 프랭클린의 막대를 그대로 가리켜요."
+],
+[
+8,
+3,
+"insert",
+"r3-i8",
+"Where in the passage does the following sentence fit most naturally?\nMaier herself never saw prints from those undeveloped rolls; she died in 2009, shortly before the public began to see her work.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+4
+],
+"주어진 문장의 those undeveloped rolls(그 현상하지 않은 필름)는 바로 앞에 '현상조차 안 된 필름이 많았다'는 문장이 있어야 받을 수 있어요. 또 '대중이 보기 시작하기 바로 전'에 죽었다고 했으니 '온라인에 올리자 큰 관심을 받았다'보다 앞이어야 해요. 그래서 [D]예요. [E]에 넣으면 이미 전시와 영화가 나온 뒤라 '보기 시작하기 전'과 순서가 어긋나고, [C]에는 아직 필름 이야기가 없어요."
+],
+[
+9,
+3,
+"insert",
+"r3-i9",
+"Where in the passage does the following sentence fit most naturally?\nAttention in the delivery room usually centered on the mother, and a struggling infant could be overlooked or judged only by vague impressions.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+1
+],
+"주어진 문장은 '신생아 상태를 판단할 표준이 없었다'는 첫 문장의 문제를 자세히 풀어요. 그리고 [A] 뒤 문장의 that gap(그 빈틈)이 이 문제를 받아요. 아프가가 점수를 내놓기 전인 [A]예요."
+],
+[
+10,
+3,
+"order",
+"r3-o10",
+"Arrange paragraphs (A), (B), and (C) so that they continue the opening most naturally.",
+[
+"(B) - (A) - (C)",
+"(A) - (C) - (B)",
+"(A) - (B) - (C)",
+"(C) - (A) - (B)",
+"(B) - (C) - (A)"
+],
+[
+3
+],
+"'글이 큰 힘이라고 확신했다' 뒤에는 그래서 문자를 만들기 시작해 음절로 나눌 수 있음을 깨달은 (A)가 와요. (B)의 each of them(그 하나하나)은 (A)의 음절을 받고, (C)의 '그 뒤 일어난 일'은 (B)의 문자 채택 뒤 몇 달 만에 글을 깨친 결과예요."
+],
+[
+11,
+3,
+"single",
+"r3-p11",
+"Which statement about the passage is NOT accurate?",
+[
+"The catch took place during the fifth Starship test flight.",
+"The upper stage came down in the Indian Ocean.",
+"Removing landing legs can let a rocket carry more cargo.",
+"Some earlier Starship test vehicles ended in explosions.",
+"The booster touched down on its own legs beside the launch tower."
+],
+[
+5
+],
+"부스터는 다리로 내리거나 바다에 떨어지는 대신(Instead of landing on legs) 발사탑의 거대한 팔에 공중에서 붙잡혔다고 했어요. '자기 다리로 내려앉았다'는 문장이 글과 맞지 않아요. 다섯 번째 시험 비행, 인도양 착수, 다리가 없으면 더 싣는다는 것, 앞선 기체의 폭발은 모두 글에 있어요."
+],
+[
+12,
+3,
+"single",
+"r3-p12",
+"Which conclusion does the passage most strongly support?",
+[
+"Misshapen vegetables are less nutritious than regular ones.",
+"Supermarkets have abandoned their cosmetic standards.",
+"Most food waste in wealthy countries occurs on farms.",
+"Consumer expectations about appearance contribute to food waste.",
+"Campaigns for ugly produce have addressed most of the food wasted in homes."
+],
+[
+4
+],
+"흠 없는 진열에 익숙한 손님들이 고른 모양을 기대하고, 가게는 못생긴 것이 안 팔릴까 봐 받지 않아 멀쩡한 농산물이 버려진다고 했어요. 소비자의 겉모양 기대가 음식 낭비에 한몫한다고 추론할 수 있어요. 부유한 나라의 낭비는 농장보다 가정에서 많다고 했어요."
+],
+[
+13,
+3,
+"single",
+"r3-p13",
+"Why does the Arctic fox's coat change from white to brown or gray in spring?",
+[
+"to stay hidden in a landscape without snow",
+"to absorb more heat during a cold summer",
+"because melting snow damages its thick white fur",
+"to warn predators of its presence",
+"to reflect sunlight away from its body"
+],
+[
+1
+],
+"눈이 녹으면 흰 여우는 바위와 툰드라에서 눈에 띄지만 짙은 털은 여름 풍경에 섞인다고 했어요. 눈 없는 땅에서 숨기 위해서예요. 글은 털갈이가 '단지 온도 문제만은 아니다'라고 했고, 털이 눈에 상한다는 말은 없어요."
+],
+[
+14,
+3,
+"single",
+"r3-p14",
+"What central claim does the passage make?",
+[
+"Most New Year's resolutions are abandoned within a few weeks.",
+"Birthdays make people less interested in self-improvement.",
+"Gyms should lower their prices in January.",
+"Dates that mark new beginnings can motivate people to pursue personal goals.",
+"Internet searches are an unreliable source of research data."
+],
+[
+4
+],
+"새해뿐 아니라 매주·매달 첫날, 휴일 뒤, 생일 뒤에도 자기 계발 관심이 늘었고, 이런 날이 과거와 선을 긋는 구실을 한다는 '새 출발 효과'를 다룬 글이에요. 새 시작을 알리는 날이 목표를 좇게 만든다는 문장이 요지예요. 결심을 몇 주 만에 버린다는 내용은 글에 없어요."
+],
+[
+15,
+3,
+"set",
+"r3-s1",
+"Where in the passage does the following sentence fit most naturally?\nIts benefits, moreover, may not be confined to the mind.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+5
+],
+"주어진 문장은 그 이로움이 '마음에만 머물지 않을 수 있다'고 해 몸에 미치는 효과를 예고해요. 자존감·사회적 지지 같은 마음의 효과 뒤, '몸이 더 따뜻하게 느껴진다'는 문장 앞인 [E]에 들어가요."
+],
+[
+16,
+3,
+"set",
+"r3-s1",
+"Which title best captures the content of the passage?",
+[
+"How Soldiers Coped with Cold Weather",
+"The Medical History of Swiss Cowbells",
+"Why Loneliness Lowers Self-Esteem",
+"From Illness to Resource: Rethinking Nostalgia",
+"Forgetting the Past to Live in the Present"
+],
+[
+4
+],
+"향수가 예전에는 병으로 여겨졌지만 오늘날 연구는 의미와 유대감을 되살리는 이로운 감정으로 본다는 글이에요. 마지막 문장도 '병이라기보다 자원'이라고 정리해요. 'From Illness to Resource: Rethinking Nostalgia'가 맞아요."
+],
+[
+17,
+3,
+"set",
+"r3-s2",
+"Choose the most appropriate expression for the blank.",
+[
+"conspicuous",
+"redundant",
+"obscure",
+"controversial",
+"precarious"
+],
+[
+3
+],
+"Despite such trust(그런 신뢰에도)는 앞과 반대 내용을 예고하고, 뒤에 '아주 늦게야 인정받았다'가 이어져요. 수십 년 동안 대중에게 '잘 알려지지 않았다(obscure)'가 맞아요. conspicuous(눈에 잘 띄는)는 정반대이고, 그녀의 일이 논란거리(controversial)였다는 말은 없어요."
+],
+[
+18,
+3,
+"set",
+"r3-s2",
+"Which of these points is never brought up in the passage?",
+[
+"the state in which Johnson's laboratory stood",
+"the university from which Johnson graduated",
+"the honor Johnson received in 2015",
+"the astronaut who asked Johnson to check the figures",
+"Johnson's age when she died"
+],
+[
+2
+],
+"연구소가 있던 주(버지니아), 2015년 훈장, 계산 확인을 부탁한 우주비행사(존 글렌), 죽을 때 나이(101세)는 모두 글에 있어요. 어느 대학을 나왔는지는 나오지 않아요."
+],
+[
+19,
+3,
+"set",
+"r3-s3",
+"Which of the sentences [A]~[E] does NOT belong in the flow of the passage?",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+2
+],
+"글은 배양육의 승인, 기대, 반발과 한계를 다뤄요. 닭고기가 세계에서 많이 먹는 고기이고 소비가 늘었다는 [B]는 배양육 이야기의 흐름을 끊어요. [B]를 빼면 승인 소식 뒤에 지지하는 쪽의 주장이 바로 이어져요."
+],
+[
+20,
+3,
+"set",
+"r3-s3",
+"Which conclusion does the passage most strongly support?",
+[
+"Cultivated meat is not yet widely available to ordinary consumers.",
+"Italy was the first country to approve cultivated meat.",
+"Producing cultivated meat requires slaughtering animals.",
+"Florida was the first government to ban the sale of cultivated meat.",
+"Cultivated meat is cheaper to produce than conventional meat."
+],
+[
+1
+],
+"마지막 문장에서 아직은 몇몇 식당에서만 맛볼 수 있다고 했으니 일반 소비자가 쉽게 살 수 없다고 추론할 수 있어요. 처음 승인한 나라는 싱가포르이고, 가장 먼저 금지한 곳은 플로리다가 아니라 이탈리아(2023)이며, 생산비는 아주 비싸다고 했어요."
+],
+[
+21,
+3,
+"blank",
+"r3-b21",
+"Choose the most appropriate expression for the blank.",
+[
+"precursor",
+"derivative",
+"anomaly",
+"compromise",
+"corollary"
+],
+[
+3
+],
+"빈칸은 첫 문장이에요. 뒤에서 유럽 이웃 언어 거의 모두가 한 어족인데 바스크어만 어떤 언어와도 관계가 밝혀지지 않았다고 풀어요. 무리에서 동떨어진 '예외적 존재(anomaly)'가 맞아요. derivative(파생된 것)는 다른 언어에서 나왔다는 뜻이라 정반대이고, precursor(선구)는 글이 말하지 않은 내용이에요."
+],
+[
+22,
+3,
+"blank",
+"r3-b22",
+"Choose the most appropriate pair of expressions for blanks (A) and (B).",
+[
+"(A) significant — (B) global",
+"(A) insignificant — (B) marginal",
+"(A) significant — (B) marginal",
+"(A) harmful — (B) urgent",
+"(A) temporary — (B) public"
+],
+[
+3
+],
+"(A) 크릴의 배설물이 탄소를 깊은 바다로 실어 나른다고 했으니 탄소 제거에 '중요한(significant)' 역할이에요. (B) not A but B 꼴에서 B 가 '온 지구의 기후에 미치는 문제'이니 A 는 '전문가끼리의 사소한(marginal) 문제'여야 해요. global 을 넣으면 앞뒤가 같은 말이 되어 not 과 맞지 않아요."
+],
+[
+23,
+3,
+"blank",
+"r3-b23",
+"Choose the most appropriate expression for the blank.",
+[
+"only after harsher punishment",
+"because of the instructor's experience",
+"if the cadets had been praised more",
+"even if nothing had been done",
+"within the same training session"
+],
+[
+4
+],
+"아주 잘하거나 못한 비행 뒤에는 교관이 무엇을 하든 평소 수준 쪽으로 돌아오기 쉽다고 했어요. 그러니 어떤 조치의 효과를 믿기 전에 '아무것도 하지 않았어도' 그 변화가 일어났을지 따져야 한다는 결론이에요. 벌이 더 낫다는 교관의 생각은 바로 이 착각이에요."
+],
+[
+24,
+3,
+"blank",
+"r3-b24",
+"Choose the most appropriate expression for the blank.",
+[
+"In response",
+"In comparison",
+"For example",
+"Otherwise",
+"Likewise"
+],
+[
+1
+],
+"앞 문장은 인구가 줄며 생긴 문제(빈집, 학생 없는 학교, 관리비)이고, 빈칸 문장은 그 문제에 대처해 도시들이 한 일이에요. In response 가 맞아요. For example 을 넣으면 대처 방안이 앞 문제의 '예'가 되어 어긋나요."
+],
+[
+25,
+3,
+"single",
+"r3-p25",
+"Which title best captures the content of the passage?",
+[
+"The Dangers of Cycling at Night",
+"How France Built Its First Highways",
+"The Origins of the Yellow Paper Used by French Newspapers",
+"The Decline of French Newspapers",
+"From Newspaper Promotion to Sporting Legend"
+],
+[
+5
+],
+"투르 드 프랑스가 신문사의 판매 경쟁 수단으로 시작해 세계적인 대회가 되었고, 노란 저지도 그 신문 종이 색에서 왔다는 글이에요. 'From Newspaper Promotion to Sporting Legend'가 맞아요. 밤길 경주는 첫 대회의 한 장면일 뿐이에요."
+],
+[
+26,
+3,
+"order",
+"r3-o26",
+"Arrange paragraphs (A), (B), and (C) so that they continue the opening most naturally.",
+[
+"(B) - (A) - (C)",
+"(A) - (B) - (C)",
+"(B) - (C) - (A)",
+"(C) - (A) - (B)",
+"(A) - (C) - (B)"
+],
+[
+1
+],
+"'1년에 몇 번 안 쓰는 도구'라는 첫머리를 this inefficiency(이 비효율)로 받는 (B)가 먼저예요. (A)의 Members·such libraries 는 (B)의 '물건 도서관'을 받고, (C)의 The repair workshops 는 (A)에서 처음 나온 수리 강좌를 받으니 마지막이에요."
+],
+[
+27,
+3,
+"irrel",
+"r3-x27",
+"Which of the sentences [A]~[E] does NOT belong in the flow of the passage?",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+4
+],
+"글은 산성비 문제와 이를 줄인 미국의 배출권 거래 제도를 다뤄요. 석탄이 산업혁명 때 증기기관을 움직였다는 [D]는 제도 이야기의 흐름과 관계없어요. [D]를 빼면 제도 설명 뒤에 바로 그 성과가 이어져요."
+],
+[
+28,
+3,
+"irrel",
+"r3-x28",
+"Which of the sentences [A]~[E] does NOT belong in the flow of the passage?",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+1
+],
+"글은 천산갑의 비늘, 먹이 잡는 방법, 밀거래 문제를 다뤄요. 소나무 솔방울이 마른 날 열린다는 [A]는 첫 문장의 비유(걸어 다니는 솔방울)에 걸려 끼어든 문장으로, 천산갑 이야기와 관계없어요."
+],
+[
+29,
+3,
+"insert",
+"r3-i29",
+"Where in the passage does the following sentence fit most naturally?\nFunding, for instance, arrived only in fits and starts, and armed conflict in parts of the region made work dangerous.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+3
+],
+"주어진 문장은 for instance(예를 들어)로 '진행이 훨씬 느렸다'의 까닭(돈·분쟁)을 들어요. 그리고 [C] 뒤 문장의 These difficulties(이런 어려움)가 이 돈·분쟁 문제를 받아요. 그래서 '느렸다' 바로 뒤 [C]예요."
+],
+[
+30,
+3,
+"insert",
+"r3-i30",
+"Where in the passage does the following sentence fit most naturally?\nThese burrows serve as more than shelters: males guard their eggs inside them, sometimes gulping air at the surface and releasing it into the chamber to keep the eggs supplied with oxygen.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]",
+"[E]"
+],
+[
+5
+],
+"주어진 문장의 These burrows(이 굴)는 바로 앞에 '굴'이 나와야 받을 수 있어요. 또 [E] 뒤 문장의 This remarkable parental behavior(이 놀라운 새끼 돌보기)는 수컷이 굴속 알을 지킨다는 주어진 문장을 받아요. 그래서 [E]예요."
+],
+[
+31,
+3,
+"single",
+"r3-p31",
+"Which underlined word does not fit the logic of the passage?",
+[
+"higher",
+"reduced",
+"offset",
+"more",
+"frequent"
+],
+[
+4
+],
+"근육이 오래 쉬면 포도당과 지방이 핏속에 쌓인다고 했으니, 근육이 그것을 '덜(less)' 써야 앞뒤가 맞아요. more 가 흐름에 맞지 않아요. 운동으로 위험이 '일부만 줄어든다(reduced)', 한 시간 운동이 하루 종일 앉아 있기를 다 '메우지(offset)' 못한다는 말은 맞아요."
+],
+[
+32,
+3,
+"single",
+"r3-p32",
+"Which statement about the passage is accurate?",
+[
+"Warehouse robots now handle the picking of most items in large warehouses.",
+"Online shopping has slowed the use of robots in warehouses.",
+"Labor advocates expect robots to slow the pace of work.",
+"Robots are mainly used to design new warehouse buildings.",
+"Robots still struggle to grasp objects of many different shapes."
+],
+[
+5
+],
+"모양·무르기·크기가 제각각인 물건을 집는 일은 최신 로봇 팔에도 아직 어렵다고 했어요. 그 내용을 담은 문장이 맞아요. 물건 집기는 사람이 맡고 있고, 온라인 쇼핑은 오히려 흐름을 빠르게 했으며, 노동 단체는 일의 속도가 빨라질 수 있다고 걱정해요."
+],
+[
+33,
+3,
+"single",
+"r3-p33",
+"Who is most likely the writer of the passage?",
+[
+"an art critic",
+"an art conservator",
+"a landscape painter",
+"a museum security guard",
+"an art dealer"
+],
+[
+2
+],
+"작업실에서 자외선과 확대경으로 옛 수리 자국을 살피고, 솜과 용제로 묵은 바니시를 벗기며, 덧댄 것은 모두 되돌릴 수 있어야 한다는 원칙을 지킨다고 했어요. 그림을 복원하는 '미술품 보존 전문가'예요. 비평가나 화상은 그림을 직접 손보지 않아요."
+],
+[
+34,
+3,
+"single",
+"r3-p34",
+"What is the passage mainly about?",
+[
+"the chemistry of dynamite and other explosives",
+"the rivalry between Alfred Nobel and his brother over the family fortune",
+"how a concern for his legacy led an inventor to found famous prizes",
+"errors commonly found in French newspapers",
+"the legal rights of relatives to contest a will"
+],
+[
+3
+],
+"자신의 부고를 잘못 읽은 일화 뒤 노벨이 어떻게 기억될지 걱정해 유언으로 상을 만들었다는 글이에요. '유산(평판)에 대한 걱정이 유명한 상을 낳은 과정'이 주제예요. 친척의 소송이나 신문의 실수는 곁가지예요."
+],
+[
+35,
+3,
+"set",
+"r3-s4",
+"Choose the most appropriate expression for the blank.",
+[
+"cooler and drier the deeper one goes",
+"easier to drill through than expected",
+"made almost entirely of plastic",
+"already fully mapped by scientists",
+"far less understood than its surface might suggest"
+],
+[
+5
+],
+"세계에서 가장 깊은 구멍도 지각의 3분의 1에 그쳤고, 온도·물·화석까지 예상과 다른 것이 잇달아 나왔어요. 발밑의 지구는 '겉으로 보기보다 훨씬 덜 알려져 있다'는 교훈이에요. 깊을수록 뜨겁고 물도 있었으니 '차갑고 마르다'는 반대예요."
+],
+[
+36,
+3,
+"set",
+"r3-s4",
+"Which statement about the passage is accurate?",
+[
+"The borehole reached the bottom of the Earth's crust beneath the Kola Peninsula.",
+"The project was completed within a few months.",
+"Rock temperatures were lower than scientists had predicted.",
+"The hole remains open for visitors today.",
+"The heat at the bottom of the hole made drilling more difficult."
+],
+[
+5
+],
+"바닥의 바위가 예상보다 훨씬 뜨거워 거의 플라스틱처럼 변했고, 그 때문에 드릴이 자꾸 박혔다고 했어요. 그 내용을 담은 문장이 맞아요. 지각의 3분의 1쯤에 그쳤고, 약 20년 걸렸으며, 구멍은 금속 뚜껑으로 막혔어요."
+],
+[
+37,
+3,
+"set",
+"r3-s5",
+"Choose the most appropriate expression for the blank.",
+[
+"forces every driver to use public transit",
+"lets builders decide how much of it to provide",
+"makes all street parking free of charge",
+"requires twice as many spaces as before",
+"prohibits the construction of garages"
+],
+[
+2
+],
+"최소 주차 기준을 없애도 수요가 많은 곳에는 여전히 주차장을 짓고, 적은 곳에서만 덜 짓는다고 했어요. 주차를 금지하는 게 아니라 '얼마나 지을지 건축주가 정하게 한다'는 뜻이에요. 대중교통을 강제하거나 차고를 금지한다는 말은 없어요."
+],
+[
+38,
+3,
+"set",
+"r3-s5",
+"What central claim does the passage make?",
+[
+"Free parking has made housing noticeably more affordable in most American cities.",
+"Cities are dropping parking rules that raise costs and encourage driving.",
+"Buffalo banned private cars from its downtown in 2017.",
+"Developers now build more parking than they did before the reforms.",
+"Donald Shoup designed the first public parking garage."
+],
+[
+2
+],
+"최소 주차 기준이 집값을 올리고 운전을 부추긴다는 슈프의 주장 뒤, 여러 도시가 그 기준을 없애거나 줄였다는 글이에요. 그 까닭과 변화를 담은 문장이 요지예요. 버펄로는 차를 막은 게 아니라 최소 기준을 없앴어요."
+],
+[
+39,
+3,
+"set",
+"r3-s6",
+"What does the underlined word refer to?",
+[
+"the narrator's training instructor",
+"a truck driver at the loading bay",
+"the narrator's supervisor",
+"the singer on the radio",
+"the narrator's mother"
+],
+[
+3
+],
+"밑줄 her 바로 앞 문장에서 비스킷을 던져 주며 '쓸 만하다'고 한 사람은 감독 델리아예요. 말수 적은 감독의 짧은 칭찬이라 훈장처럼 느껴졌다는 뜻이에요. 교육 과정 강사는 글에 따로 나오지 않아요."
+],
+[
+40,
+3,
+"set",
+"r3-s6",
+"How do the narrator's feelings change over the passage?",
+[
+"from excitement to boredom",
+"from confidence to disappointment",
+"from anger to gratitude",
+"from fear to quiet pride",
+"from indifference to anxiety"
+],
+[
+4
+],
+"처음에는 거대한 지게차가 무섭고 유리병을 엎을까 겁냈지만, 하루를 마치며 하나도 깨지 않았고 감독의 짧은 칭찬이 훈장 같았다고 해요. '두려움에서 조용한 뿌듯함으로' 바뀌었어요. 처음부터 자신만만했던 것은 아니에요."
+]
+]
+}

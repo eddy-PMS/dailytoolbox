@@ -1,0 +1,2194 @@
+{
+"school": "swu",
+"title": "서울여대 편입영어 모의고사",
+"source": "서울여대 편입영어 2021~2026학년도 기출 출제 유형(문항 수·영역·문제 꼴, VocabFactory 분석)을 분석해 dailyfreetoolbox 가 새로 만든 연습 문제",
+"checked": "2026-11-23",
+"minutes": 70,
+"points": [
+[
+1,
+10,
+2
+],
+[
+11,
+30,
+2.5
+],
+[
+31,
+40,
+3
+]
+],
+"sections": [
+{
+"id": "vocab",
+"name": "어휘 동의어"
+},
+{
+"id": "vocabblank",
+"name": "어휘 빈칸"
+},
+{
+"id": "grammar",
+"name": "문법 틀린 곳"
+},
+{
+"id": "grammarblank",
+"name": "문법 빈칸"
+},
+{
+"id": "cloze",
+"name": "단락 빈칸"
+},
+{
+"id": "reading",
+"name": "독해"
+}
+],
+"passages": [
+{
+"id": "r1-s1",
+"text": "On a recent trip down the dairy aisle of my local supermarket, I counted cartons of beverages derived from soybeans, almonds, oats, rice, and even peas. Plant-based milks, once a niche product for consumers who could not digest lactose, have become a commonplace purchase for many households. Buyers cite diverse motives: concern for animal welfare, an aspiration to shrink their environmental footprint, or simply a fondness for the taste in their coffee.\nThe boom has not been immune to controversy. Dairy farmers have contended that the word milk should be reserved for products of animals. In 2017 the European Union's top court sided with them, ruling that beverages made purely from plants generally may not be sold as milk within the bloc. In the United States the Food and Drug Administration proposed in 2023 that such drinks could keep the label but should disclose how their nutrients compare with those of cow's milk.\nThat comparison is far from trivial. Apart from soy drinks, many plant milks contain far less protein than dairy milk, and much of their calcium and vitamin content is added during manufacturing. Environmental claims also vary considerably by crop; almonds, for instance, are often criticized for the copious water needed to cultivate them."
+},
+{
+"id": "r1-s2",
+"text": "If we plotted the personal memories of a seventy-year-old along a timeline, we might anticipate a smooth slope, with the most remote events faintest and the newest ones most abundant. Researchers who have done this with thousands of volunteers, asking each person to describe whatever episode a cue word evokes, find something peculiar. Recent years are indeed well represented and the first few years of life are virtually blank, yet a second peak towers over the stretch from about the age of ten to thirty. A similar peak manifests itself in the songs elderly people cherish most. Psychologists have dubbed it the reminiscence bump.\nWhy should youth claim so disproportionate a share? Part of the answer may be that those years abound with beginnings: the first paycheck, the first time living away from one's parents, the first romance. Events that break a routine are typically recalled in finer detail. Identity offers a second clue, because people at this juncture are settling what they value, and the episodes that shaped those choices get recounted for decades. Culture supplies a third. Communities transmit a common picture of when a life's pivotal chapters ought to begin, and <u>this script</u> steers what people look for in memory when asked to narrate their own past."
+},
+{
+"id": "r1-s3",
+"text": "In the early nineteenth century the London physician Nathaniel Bagshaw Ward adored ferns but could not keep them alive. The coal smoke that shrouded the city poisoned the plants in his garden one after another. His remedy arrived almost accidentally. Around 1829 he shut a moth's cocoon inside a glass bottle on a layer of moist earth, meaning only to see the adult insect hatch. Weeks later the bottle held a surprise: seedlings of a fern and a grass were flourishing in the soil, though nobody had tended them. Because the bottle was closed, the water given off by the earth gathered as droplets on the inside of the glass and ran back into the soil, while the polluted air outside could not penetrate.\nWard went on to build larger glass cases on this principle. They enabled urban dwellers to cultivate delicate plants indoors and helped fuel a Victorian mania for collecting ferns. They also resolved a perennial problem for commerce and science. Plants sent overseas in open crates had usually perished from salt, sun, or thirst, but in sealed cases they could survive months at sea. For over a century botanists and growers relied on them to move living plants from one continent to another."
+},
+{
+"id": "r1-s4",
+"text": "When work began on the Brooklyn Bridge around 1870, the foundations of its towers were dug inside caissons, colossal wooden chambers open at the bottom that were sunk into the riverbed. Compressed air was pumped in to keep out water and mud, and laborers worked in the pressurized space for hours at a stretch. After ascending to the surface, many of them developed excruciating pain in their joints, vertigo, and sometimes paralysis. Several died. Because no one comprehended the cause, the affliction was simply labeled caisson disease. Even the chief engineer Washington Roebling was incapacitated. He spent years directing the project from his room and relied on his wife Emily to convey his instructions to the site.\nWe now understand the mechanism. Under high pressure, surplus nitrogen dissolves into the blood and tissues. If the pressure is released too abruptly, the gas comes out of solution and forms bubbles, much as a bottle of soda fizzes when its cap is suddenly twisted off. The British physiologist John Scott Haldane devised a remedy in the early twentieth century. Divers and caisson workers were brought up in incremental stages so the gas could be expelled harmlessly through the lungs."
+},
+{
+"id": "r1-s5",
+"text": "In 2021 researchers published one of the largest surveys to date of how young people feel about climate change. They questioned 10,000 people aged 16 to 25 in ten countries, from the Philippines to Finland. Most respondents said they were very or extremely worried, many described feeling despondent, apprehensive, powerless, or indignant, and large numbers said their governments were failing them.\nThe findings drew wider attention to what is often called climate anxiety or eco-anxiety. The term can sound like a diagnosis, but it is not listed as a mental disorder, and many psychologists warn against treating it as one. In their view, distress about a real and well-documented threat is a rational response rather than a symptom to be cured. Complications arise when worry becomes so overwhelming that it paralyzes people or disrupts their sleep, study, and relationships.\nCounselors who work with anxious students often advocate two strategies. The first is to talk: young people frequently assume that the adults around them are indifferent, and discovering shared concern can alleviate the sense of isolation. The second is to act, whether by enlisting in a local project or altering a daily habit. Action does not make the problem vanish, but it can transform helplessness into something more tolerable."
+},
+{
+"id": "r1-s6",
+"text": "Few writers have countered complaints about the brevity of life as bluntly as the Roman philosopher Seneca. In a first-century essay usually known in English as On the Shortness of Life he argued that the trouble is not that nature grants us too little time. Life, in his view, is ample for great achievements if it is prudently invested; it seems short only because we squander so much of it.\nSeneca's inventory of wasted time is strikingly familiar. He describes people who spend their days waiting on influential patrons, pursuing fortunes they never pause to savor, or rushing from one frivolous diversion to the next. Such people guard their money and land jealously yet surrender their hours to anyone who asks. They act as if time were the one thing that cost nothing. They postpone living until some future retirement that may never come.\nWhat, then, does a well-spent life look like? For the Stoic Seneca it meant dedicating time to contemplation and to the study of wisdom. Such study links a reader with the most illustrious minds of every era. A person who does so is not confined to his own brief span but can claim the whole of the past as his own.\nReaders have long noted an irony: Seneca was among the wealthiest men in Rome and spent years at the imperial court as an adviser to Nero. Whether he lived up to his own precepts remains contested."
+},
+{
+"id": "r2-s1",
+"text": "For more than a century new medicines have been tested on mice, rats, and monkeys before they reach human volunteers. Yet animals are imperfect proxies for people, and most drugs that enter human trials ultimately fail, often because of adverse effects that animal studies did not foresee. Researchers are now turning to organoids: minuscule clusters of human cells grown from stem cells that spontaneously organize themselves into rudimentary versions of organs such as the liver, the gut, or the brain. Because they are derived from human tissue, organoids can reveal toxic effects that might elude detection in a mouse. And because they can be grown from a particular patient's cells, they let physicians gauge how that person might respond to a treatment. Lawmakers and regulators have taken heed. In 2022 the United States abolished a long-standing statutory requirement that new drugs be tested on animals. In 2025 the Food and Drug Administration announced a plan to phase out animal testing for certain kinds of new drugs, beginning with a class of treatments widely known as monoclonal antibodies. Organoids nonetheless have shortcomings. They lack blood vessels and immune cells, and they cannot reveal how a drug circulates through an entire body. For now most scientists regard them as an adjunct to animal studies rather than a wholesale replacement."
+},
+{
+"id": "r2-s2",
+"text": "For decades broadcasters justified the scant coverage of women's sports with a facile claim: audiences were not interested. The events of 2024 rendered <u>that argument</u> untenable. In April the final of the American college basketball tournament for women drew an average of nearly 19 million television viewers, more than watched the men's final that year. Much of the attention converged on Caitlin Clark of the University of Iowa, whose record-breaking scoring had turned her into a household name. Yet the interest did not dissipate when her college career ended. Professional women's leagues in several sports reported larger crowds, escalating ticket prices, and new broadcasting deals. Researchers who study sports media contend that interest and coverage reinforce each other. When games are shown at convenient hours and promoted with the same zeal as men's events, audiences grow, which in turn induces networks to invest more. In this view the small audiences of the past reflected not indifference but invisibility: fans could hardly embrace athletes they never had a chance to see. Skeptics caution that a single star can produce an ephemeral surge, and that the real test is whether viewers remain steadfast once that star retires."
+},
+{
+"id": "r2-s3",
+"text": "Many of us know the experience: a faint buzz against the thigh, a hand reaching into a pocket, and then the discovery that the phone did not vibrate at all, or is not even there. The sensation has become prevalent enough to earn a name, phantom vibration syndrome, although it is not a medical disorder. In one survey of staff at an American hospital, roughly two-thirds said they had felt such vibrations. Psychologists often explain the phenomenon with signal detection theory. The brain relentlessly sorts ambiguous sensations, such as the brush of fabric or a twitch of muscle, deciding whether each one is salient. When missing a real signal seems costly, as with an urgent message from a supervisor, the brain lowers its threshold and accepts more false alarms in exchange for fewer misses. People who feel anxious about their relationships or who check their phones compulsively appear to report phantom vibrations more often, which is consistent with <u>this account</u>. The illusion is not evidence of some defect in the senses. It reflects a perceptual system trained perhaps too well by the very device it is waiting for. Some users say the sensations diminish once they keep the phone in a bag instead of a pocket."
+},
+{
+"id": "r2-s4",
+"text": "In my first year out of college money was tight, so I canceled a long-planned trip but kept buying my favorite lipstick. When the economy declines, households defer buying cars, cancel vacations, and make do with worn-out furniture. Yet some observers have claimed that spending on small luxuries holds steady or even rises in such periods, an idea known as the lipstick effect. Leonard Lauder, then the chairman of the cosmetics company Estée Lauder, is often credited with popularizing the notion after noticing unusually strong lipstick sales during the economic downturn of 2001. The proposed logic is psychological. When a large purchase is out of reach, a modest indulgence confers a sense of gratification and control at a price most people can still afford. Some commentators have extrapolated the idea to other affordable treats, such as nail polish, chocolate, or a night at the cinema. Yet the evidence is mixed. Scrutiny of sales data suggests the pattern appears in some recessions but not in others. Critics point out that a theory malleable enough to explain rising sales of almost any inexpensive product is difficult to test. Still the concept endures, perhaps because it captures something many shoppers recognize in themselves: the impulse to buy a small reward when their larger hopes are put on hold for a while."
+},
+{
+"id": "r2-s5",
+"text": "In 1851 London hosted the Great Exhibition of the Works of Industry of All Nations, the forerunner of a long line of international fairs. Prince Albert, the husband of Queen Victoria, was among its most ardent promoters. The edifice that housed the event became as renowned as anything on display. It was designed by Joseph Paxton, a gardener who had earlier built large greenhouses for the Duke of Devonshire. It was made almost entirely of cast iron and glass. Assembled from standardized prefabricated parts, the structure rose in Hyde Park in a matter of months. The magazine Punch nicknamed it the Crystal Palace. More than six million visits were recorded before the exhibition closed in October. Visitors could scrutinize steam engines, printing presses, and commodities from distant colonies. For a penny they could also use flushing public toilets, a novelty at the time. The exhibition yielded a handsome profit. It was used to buy land in South Kensington, where several museums including the future Victoria and Albert Museum were later built. The Crystal Palace itself was taken down and rebuilt in south London, where it remained a perennial attraction until it burned down in 1936."
+},
+{
+"id": "r2-s6",
+"text": "Weight for weight the dragline silk that a spider uses to frame its web and to hang from a ceiling is stronger than steel. It is also tougher than Kevlar, the fiber used in bulletproof vests. Toughness measures how much energy a material can absorb before it breaks. Here spider silk excels: it can elongate considerably before snapping, which allows a web to stop a fast-flying insect without tearing. Engineers have long sought to produce the material in bulk, for applications ranging from surgical sutures to lightweight protective gear. Silkworms can be farmed, but spiders cannot; they are territorial and, if crowded together, prone to cannibalism. Researchers have therefore endeavored to hand the job to other organisms, inserting spider silk genes into bacteria, yeast, silkworms, and even goats, whose milk then contains silk proteins. Yet making the proteins has proved far easier than spinning them. A spider pushes liquid silk through a narrow duct, where changes in acidity and pressure align the molecules into a solid thread, a process that laboratories have struggled to replicate. As a result synthetic fibers have generally been weaker than natural ones, and spider silk remains more admired than used."
+},
+{
+"id": "r3-c21",
+"text": "Every working day in Mumbai some 200,000 lunchboxes travel from home kitchens to offices across the city and back again, carried by delivery workers known as dabbawalas. The service has operated for more than a century. What renders it remarkable is how little technology it relies on. Each box is inscribed with a concise code of colors, letters, and numbers showing where it was collected, which railway station it passes through, and where it must be delivered. Many of the workers have had scant formal schooling, yet errors are exceedingly rare. The dabbawalas demonstrate that a complex operation can run smoothly ____."
+},
+{
+"id": "r3-c22",
+"text": "When a new safety device is introduced, people sometimes respond by taking more risks, a pattern researchers call risk compensation. Some studies have suggested that drivers with anti-lock brakes tended to drive more aggressively. They followed other cars more closely, as if spending part of the added protection on extra risk. How strong this effect is remains contentious, and few experts conclude safety equipment should therefore be abandoned. Still, the idea serves as an invaluable reminder that ____."
+},
+{
+"id": "r3-c23",
+"text": "Sunlight looks white, but it encompasses all the colors of the rainbow. As it passes through the atmosphere, it strikes molecules of nitrogen and oxygen that are far smaller than the wavelengths of visible light. Such tiny particles scatter short blue wavelengths much more strongly than long red ones. Blue light is therefore dispersed across the sky in every direction, and wherever we look, some of it reaches our eyes. At sunset the sky changes color for a related reason: because sunlight must travel through far more air to reach us, ____, leaving mostly reds and oranges."
+},
+{
+"id": "r3-c24",
+"text": "When The Jazz Singer opened in 1927 with scenes of synchronized speech and song, audiences were captivated, and within a few years Hollywood had all but abandoned silent films. The change was not welcome to everyone. Some stars of the silent era had voices or accents that did not suit the new medium, and their careers declined rapidly. Cameras that had previously moved freely were at first confined inside soundproof booths to keep their noise off the soundtrack, and many early sound films looked static as a result. In other words, the arrival of sound ____. Only after quieter cameras and movable microphones arrived did filmmakers regain much of the freedom they had lost."
+},
+{
+"id": "r3-c25",
+"text": "The QR code, now printed on everything from restaurant menus to train tickets, was not originally designed for consumers at all. The Japanese company Denso Wave developed it in 1994 to track automotive components in factories. Workers there needed a code that could hold more information than a conventional barcode and be scanned quickly from any angle. Because the company chose not to exercise its patent rights, other firms were free to adopt the format. Outside Japan the codes remained a niche technology for many years. Only when ordinary smartphone cameras could read them without a separate app did they ____. Today scanning one is as unremarkable as tapping a card to pay."
+},
+{
+"id": "r3-c26",
+"text": "Many students prepare for exams by rereading their notes until the material feels familiar. Research in cognitive psychology suggests this strategy is less effective than it seems. Familiarity can create an illusion of mastery: a page we have read several times feels easy, so we presume we know it. A more rigorous method is to close the book and try to recall the information from memory, for instance by answering practice questions. Such retrieval is effortful and often exasperating, yet experiments consistently demonstrate that it produces stronger long-term retention. Paradoxically, the lesson is that ____."
+},
+{
+"id": "r3-c27",
+"text": "Koalas spend most of their lives asleep or resting, often for as long as twenty hours a day. Visitors sometimes presume that the animals are drugged by chemicals in eucalyptus leaves, but the real explanation lies in the poor quality of their diet. Eucalyptus leaves are tough, low in nutrients, and laced with compounds that are toxic to most mammals. Koalas rely on an elongated digestive tract and specialized gut microbes to process them, and the effort yields comparatively little energy. By sleeping for much of the day, koalas ____. In short, rest is how they balance a meager energy budget."
+},
+{
+"id": "r3-s1",
+"text": "When a garment can no longer be sold or worn, it usually ends up in a landfill or an incinerator. Upcycling offers an alternative fate. Conventional recycling often shreds discarded clothes into low-grade fibers. Upcyclers instead turn them into products of equal or greater value: a heap of tattered denim becomes a patchwork jacket, and offcuts swept from a factory floor become a limited batch of bags. A number of luxury houses and many small independent labels now retail upcycled lines, and the approach has gained momentum as governments tighten regulations on textile waste. Since January 2025 member states of the European Union have been mandated to collect used textiles separately from other household rubbish. Yet upcycling faces a formidable obstacle: it is difficult to scale. Because every discarded garment varies in size, color, and condition, each item must be scrutinized, dismantled, and redesigned largely by hand. That makes the clothes expensive to produce and hard to standardize, so skeptics doubt that upcycling alone can absorb more than a modest share of the clothing thrown away each year. Its proponents counter that its real value may lie elsewhere: in persuading consumers to regard old clothes as raw material rather than trash."
+},
+{
+"id": "r3-s2",
+"text": "Tell an adolescent that a particular film is unsuitable for her, and you may have just guaranteed that she will watch it. Psychologists call this response reactance, a term introduced by Jack Brehm in the 1960s. In his theory people believe they possess certain freedoms such as the freedom to choose what to read, eat, or think. When one of those freedoms is threatened, they experience a distressing state that drives them to restore it, often by doing precisely what they were forbidden to do. The prohibited option suddenly looks more alluring, and the person who imposed the restriction appears less credible. Reactance helps explain why heavy-handed public campaigns can backfire. Messages laden with commands such as \"you must\" or \"stop now\" tend to provoke stronger resistance than messages that offer reasons and leave the final decision to the audience. The effect is not universal; it varies with how important the threatened freedom is and how legitimate the source of pressure seems. But the lesson for parents, physicians, and advertisers is fairly consistent: if you want people to change their behavior, ____."
+},
+{
+"id": "r3-s3",
+"text": "When schools around the world closed their doors in 2020, few people anticipated that the effects would persist for years. Yet when researchers assessed students' progress after classrooms reopened, many children had lagged well behind where earlier students had been at the same age. The deficits were generally larger in mathematics than in reading. The damage was not evenly distributed. Students from low-income families lost the most ground, since they were less likely to have a quiet place to study, reliable internet access, or an adult to help at home. This widened disparities dating from before the pandemic. Governments responded with emergency initiatives. One approach garnering particular attention was high-dosage tutoring, in which trained tutors meet small groups of students several times a week during the school day. Studies conducted before the pandemic had shown unusually large gains from such programs, but expanding them rapidly proved arduous: schools struggled to recruit enough tutors and to fit sessions into packed timetables. Meanwhile chronic absenteeism surged in the United States and elsewhere, and children who are not in class cannot benefit from supplementary help. In the United States national test results released in early 2025 showed that average reading scores had declined further rather than recovering. Many educators now contend that recovery will require sustained endeavor over many years."
+},
+{
+"id": "r3-s4",
+"text": "For much of the twentieth century, chemists presumed they understood why slicing an onion makes people cry. Damaging the bulb, they reasoned, allowed a single enzyme to decompose sulfur compounds stored inside it, and the irritating vapor drifting up to the eyes then formed spontaneously from the products of the reaction. But in 2002 a team of Japanese scientists reported in the journal Nature that this account was incomplete. The vapor, they showed, does not simply appear on its own; a second, previously unknown enzyme is required to generate it. The finding mattered for more than scientific tidiness. It meant the tear-inducing gas and many substances giving onions their pungent taste arise from distinct steps, so in principle one might be diminished without losing the other. Researchers soon put the hypothesis to the test. By silencing the gene for the newly identified enzyme, scientists in New Zealand and Japan cultivated onions that released far less of the irritant when cut. The change also altered the onions' chemistry in other ways, elevating the levels of certain sulfur compounds linked to flavor. For cooks who would rather not weep over a cutting board, the work offered hope; for biologists, it was a reminder that even the most commonplace kitchen experience can conceal uncharted chemistry."
+},
+{
+"id": "r3-s5",
+"text": "The shopping cart is so mundane that we easily forget it had to be invented. The first version was introduced in 1937 by Sylvan Goldman, owner of an Oklahoma City supermarket chain. It was fundamentally a folding chair on wheels carrying two baskets. It solved a genuine problem, since shoppers were prone to stop buying once a hand-held basket grew cumbersome, but it spawned new ones. Each cart had to be unfolded before use and folded again afterward, and stores needed space to accommodate them all. The decisive improvement came in the late 1940s, when an inventor named Orla Watson patented a cart with a hinged rear panel that swung open, letting one cart slide snugly into the next. Long rows of nested carts could now be stored in a fraction of the space, and the design became the norm worldwide after decades of refinement. Carts have since grown substantially larger, and retail analysts often speculate that this is no accident: a big basket that looks half empty may subtly encourage shoppers to keep filling it. Many stores, especially in Europe, also equip their carts with coin locks. Customers must insert a coin to release a cart and get the coin back only when they return the cart to its row."
+},
+{
+"id": "r3-s6",
+"text": "\"Strike it on your knee, then hold it near your ear.\" That was all the note said. It had come with a small steel tuning fork in a padded envelope sent by the nephew of Mrs. Arden, my old piano teacher, who had died the month before. According to his short letter, she had asked that the fork be sent to me. I could not fathom why. I had been her least promising student. I practiced grudgingly, mistook speed for proficiency, and quit abruptly at sixteen, telling her that music was a waste of time I could no longer afford. She did not argue. She only tapped the fork against the lid of the piano and said that every note I would ever play, or refuse to play, would still be measured against <u>that one</u>. That evening I struck the fork on my knee as instructed. A thin, steady tone permeated the quiet kitchen and before I knew it I was humming along, then searching for the same pitch on the cheap keyboard my daughter had abandoned in the hall closet. My fingers were stiff and clumsy. But for the first time in twenty years I was playing to impress no one, and even the scales sounded almost forgiving. I suspect she foresaw that I would come back eventually. She simply chose not to say so."
+}
+],
+"q": [
+[
+1,
+1,
+"vocab",
+null,
+"Pick the choice whose meaning best matches the underlined word.\nLocal critics <u>lauded</u> the young director's debut film for its restraint and its unusually honest portrait of rural life.",
+[
+"condemned",
+"belittled",
+"fabricated",
+"applauded"
+],
+[
+4
+],
+"laud 는 '칭찬하다, 찬양하다'라 applauded 와 가까워요. 절제와 솔직한 시골 묘사를 이유로(for) 들었으니 칭찬하는 말이에요. condemned(비난했다)·belittled(깎아내렸다)는 반대 방향이에요."
+],
+[
+2,
+1,
+"vocab",
+null,
+"Pick the choice whose meaning best matches the underlined word.\nThe museum's newest exhibit is an <u>intricate</u> silk carpet that took four skilled weavers nearly a decade to finish.",
+[
+"luxurious",
+"complicated",
+"fragile",
+"conducive"
+],
+[
+2
+],
+"intricate 는 '복잡하고 정교한'이라 complicated 와 가까워요. 솜씨 좋은 직공 넷이 10년 가까이 짰다는 관계절이 단서예요. luxurious(호화로운)·fragile(깨지기 쉬운)은 비단 카펫에서 떠올리기 쉬운 말이지만 뜻이 달라요."
+],
+[
+3,
+1,
+"vocab",
+null,
+"Pick the choice whose meaning best matches the underlined word.\nAs the drought entered its third year, the town's water reserves steadily <u>dwindled</u> to alarming levels.",
+[
+"fluctuated",
+"stabilized",
+"declined",
+"proliferated"
+],
+[
+3
+],
+"dwindle 은 '점점 줄어들다'라 declined 와 가까워요. 가뭄 3년째에 저수량이 걱정스러운 수준까지 갔다는 흐름이에요. proliferated(급증했다)는 반대이고, fluctuated(오르내렸다)는 steadily 와 맞지 않아요."
+],
+[
+4,
+1,
+"vocab",
+null,
+"Pick the choice whose meaning best matches the underlined word.\nA <u>paucity</u> of reliable data makes it difficult to evaluate whether the new pedagogical method actually works.",
+[
+"shortage",
+"validity",
+"alteration",
+"assessment"
+],
+[
+1
+],
+"paucity 는 '부족, 결핍'이라 shortage 와 같아요. 믿을 만한 자료가 모자라서 효과를 판단하기 어렵다는 뜻이에요. validity(타당성)·assessment(평가)는 문장 속 reliable·evaluate 에서 떠올린 말일 뿐 뜻이 달라요."
+],
+[
+5,
+1,
+"vocab",
+null,
+"Pick the choice whose meaning best matches the underlined word.\nDoctors warn that sitting for long hours can be <u>detrimental</u> to the health of office workers, even those who exercise regularly.",
+[
+"salutary",
+"benign",
+"negligible",
+"injurious"
+],
+[
+4
+],
+"detrimental 은 '해로운'이라 injurious 와 같아요. 의사가 경고한다(warn)는 말과 운동하는 사람조차라는 단서가 해롭다는 뜻을 받쳐요. salutary(이로운)·benign(해가 없는)은 반대이고, negligible(하찮은)은 경고와 맞지 않아요."
+],
+[
+6,
+1,
+"vocabblank",
+null,
+"Pick the word or phrase that fits the blank in this sentence most naturally.\nFacing a sharp drop in ticket sales, the orchestra had to ____ its touring schedule for the coming season.",
+[
+"bolster",
+"emulate",
+"placate",
+"curtail"
+],
+[
+4
+],
+"표 판매가 크게 줄었으니 순회 일정을 '줄여야(curtail)' 했어요. bolster(강화하다)는 반대이고, emulate(본뜨다)·placate(달래다)는 일정을 목적어로 받기 어려워요."
+],
+[
+7,
+1,
+"vocabblank",
+null,
+"Pick the word or phrase that fits the blank in this sentence most naturally.\nInvestigators have so far found no evidence to ____ the claim that the warehouse fire was set intentionally.",
+[
+"substantiate",
+"relinquish",
+"admonish",
+"aggravate"
+],
+[
+1
+],
+"증거(evidence)로 주장(claim)을 '입증하다'가 되는 substantiate 가 맞아요. relinquish(포기하다)·admonish(훈계하다)·aggravate(악화시키다)는 증거가 주장에 대해 하는 일이 아니에요."
+],
+[
+8,
+1,
+"vocabblank",
+null,
+"Pick the word or phrase that fits the blank in this sentence most naturally.\nPhysicians assured the patient that the dizziness was ____ and would fade once her body adjusted to the new medication.",
+[
+"congenital",
+"incurable",
+"transient",
+"contagious"
+],
+[
+3
+],
+"곧 사라질(would fade) 증상이니 '일시적인(transient)'이 맞아요. congenital(타고난)·incurable(고칠 수 없는)은 사라진다는 말과 어긋나고, contagious(전염되는)는 약 부작용과 맞지 않아요."
+],
+[
+9,
+1,
+"vocabblank",
+null,
+"Pick the word or phrase that fits the blank in this sentence most naturally.\nWith an adept coach's help, she managed to ____ her fear of deep water and finally swam a full lap.",
+[
+"abet",
+"surmount",
+"allege",
+"aggrandize"
+],
+[
+2
+],
+"두려움을 이겨 내고 마침내 한 바퀴를 헤엄쳤으니 '극복하다(surmount)'가 맞아요. abet(부추기다)·allege(주장하다)·aggrandize(부풀리다)는 두려움을 이겨 냈다는 결과로 이어지지 않아요."
+],
+[
+10,
+1,
+"vocabblank",
+null,
+"Pick the word or phrase that fits the blank in this sentence most naturally.\nOrganizers had to ____ the outdoor concert until Sunday after forecasters warned of severe thunderstorms on Saturday.",
+[
+"look up to",
+"take after",
+"run into",
+"put off"
+],
+[
+4
+],
+"토요일 뇌우 예보 때문에 공연을 일요일까지(until Sunday) '미뤄야(put off)' 했다는 흐름이에요. look up to(존경하다)·take after(닮다)·run into(우연히 만나다)는 공연을 목적어로 쓸 수 없어요."
+],
+[
+11,
+1,
+"grammar",
+null,
+"Pick the one underlined part that needs to be corrected.\n①<u>Encouraged</u> by generous subsidies, transit operators ②<u>in</u> the capital report that the number of electric buses ③<u>operating</u> on its streets ④<u>have</u> risen steadily since 2020.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"that 절의 주어는 the number of ~(~의 수)라 단수예요. 그래서 동사는 has risen 이 되어야 해요. a number of(많은)라면 복수지만 여기는 the number 예요. 주어가 길어 동사와 멀리 떨어졌어도 중심 낱말은 number 예요. Encouraged 는 운수 회사들이 '고무된' 수동 분사구문, in the capital 은 transit operators 를 꾸미는 전치사구, operating 은 buses 를 뒤에서 꾸미는 현재분사라 맞아요."
+],
+[
+12,
+1,
+"grammar",
+null,
+"Pick the one underlined part that needs to be corrected.\nThe average lifespan of a house cat today is substantially ①<u>longer</u> than ②<u>those</u> of a cat a century ago, ③<u>largely</u> because of better nutrition and ④<u>veterinary</u> care.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+2
+],
+"비교하는 것은 '수명(lifespan)'끼리예요. 단수 명사 lifespan 을 대신하니 that of a cat 이 되어야 해요. those 는 복수 명사를 받을 때 써요. 비교급 longer, 이유를 꾸미는 부사 largely, 명사 care 를 꾸미는 형용사 veterinary 는 맞아요."
+],
+[
+13,
+1,
+"grammar",
+null,
+"Pick the one underlined part that needs to be corrected.\n①<u>Founded</u> in a small garage in 1962, the company now designs, ②<u>manufactures</u>, and ③<u>selling</u> farm machinery in more than forty countries, ④<u>employing</u> about twelve thousand people.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"designs, manufactures, and ___ 는 주어 the company 의 동사 셋이 나란히 놓인 병렬이에요. 앞 두 동사처럼 sells 가 되어야 해요. Founded 는 '설립된'이라는 수동 분사구문, employing 은 결과를 덧붙이는 분사구문이라 맞아요."
+],
+[
+14,
+1,
+"grammar",
+null,
+"Pick the one underlined part that needs to be corrected.\nNearly two tons of plastic ①<u>was collected</u> ②<u>within</u> a single afternoon by twenty volunteers, ③<u>most of them</u> had never ④<u>visited</u> the coast before.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"콤마 뒤에서 앞 명사 volunteers 를 받아 절을 이어 주려면 관계대명사가 필요해요. most of whom 이 되어야 해요. them 은 대명사라 두 절을 이을 수 없어요. two tons of plastic 같은 양은 한 덩어리로 보아 단수 was 로 받고, 전치사 within, had 뒤 과거분사 visited 는 맞아요."
+],
+[
+15,
+1,
+"grammar",
+null,
+"Pick the one underlined part that needs to be corrected.\nAfter the committee ①<u>had finished</u> its final report, it ②<u>arranged</u> for copies ③<u>to be sent</u> to every member state and had the summary ④<u>translate</u> into four languages.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"have + 목적어 + 목적보어에서 요약본은 '번역되는' 것이라 과거분사 translated 가 되어야 해요. 사람이 하는 일이면 원형(have him translate)이지만 사물이 당하는 일이면 p.p.예요. arrange for O to be p.p.(~가 …되도록 준비하다)는 맞아요."
+],
+[
+16,
+1,
+"grammarblank",
+null,
+"Pick the form that fits this sentence without any error.\n____ by an abrupt rise in rents, many small shops along the old market street have moved to more affordable neighborhoods.",
+[
+"Squeezing",
+"Squeezed",
+"Having squeezed",
+"To squeeze"
+],
+[
+2
+],
+"가게들은 임대료 상승에 '짓눌린' 쪽이라 수동 분사구문 Squeezed 가 맞아요. 뒤에 by 가 이어지는 것도 단서예요. Squeezing·Having squeezed 는 가게가 누군가를 짓누른다는 능동이 돼요."
+],
+[
+17,
+1,
+"grammarblank",
+null,
+"Pick the form that fits this sentence without any error.\nEven after months of rigorous inspections, no engineer could fully explain ____ the old bridge to collapse without any warning.",
+[
+"what caused",
+"what did cause",
+"that caused",
+"what was caused"
+],
+[
+1
+],
+"explain 의 목적어로 '무엇이 ~하게 했는지'라는 간접의문문이 와요. what 이 주어라 what caused 그대로 써요. 간접의문문에는 did 를 넣지 않고, that caused 는 선행사가 없어 쓸 수 없어요. what was caused 는 뒤 목적어 the old bridge 와 맞지 않아요."
+],
+[
+18,
+1,
+"grammarblank",
+null,
+"Pick the form that fits this sentence without any error.\nUnder the new regulations, the city will allow food trucks ____ in its public parks on weekends for the first time.",
+[
+"operate",
+"operated",
+"to operating",
+"to operate"
+],
+[
+4
+],
+"allow 는 allow + 목적어 + to 부정사 꼴이라 to operate 가 맞아요. 원형 operate 는 let·make 같은 사역동사 뒤에 써요. to operating 은 to 가 전치사인 표현(look forward to 등)에서만 써요."
+],
+[
+19,
+1,
+"grammarblank",
+null,
+"Pick the form that fits this sentence without any error.\nThe longer the negotiations dragged on, ____ for the two sides to reach any kind of compromise.",
+[
+"the harder it became",
+"it became the harder",
+"the harder became it",
+"harder it became"
+],
+[
+1
+],
+"'~할수록 더 …하다'는 The 비교급 + 주어 + 동사, the 비교급 + 주어 + 동사 꼴이에요. 뒤 절도 the harder 를 앞에 두고 it became 순서로 써야 해요. the 를 빼거나 주어·동사를 뒤집으면 틀려요."
+],
+[
+20,
+1,
+"grammarblank",
+null,
+"Pick the form that fits this sentence without any error.\nThe scholarship provides every freshman with a laptop ____ they can complete their online assignments at home.",
+[
+"which",
+"with which",
+"with that",
+"what"
+],
+[
+2
+],
+"they can complete their assignments with a laptop(노트북으로 과제를 하다)에서 전치사 with 가 관계대명사 앞으로 나온 꼴이라 with which 가 맞아요. which 만 쓰면 뒤 절이 완전해서 맞지 않고, 전치사 뒤에는 that 을 쓸 수 없어요. what 은 선행사가 있을 때 못 써요."
+],
+[
+21,
+1,
+"cloze",
+null,
+"Pick the most logical option for the blank in this paragraph.\nIn a longitudinal study at the University of Washington researchers wearing a particular rubber mask trapped a few wild crows on campus, put identification bands on their legs and released them unharmed. For years afterward crows scolded and mobbed anyone who walked by in the same mask but largely disregarded people wearing a neutral one. Strikingly, many of the birds that joined in had never been caught themselves, and some had not even hatched at the time of the trapping. The crows, it seems, ____.",
+[
+"had learned from each other whom to fear",
+"had forgotten the original incident entirely",
+"could no longer tell one human face from another",
+"had gradually grown fond of the researchers who handled them"
+],
+[
+1
+],
+"잡힌 적도 없고 그때 태어나지도 않은 까마귀까지 그 가면을 공격했으니, 위험한 얼굴을 '서로에게서 배웠다'는 결론이 맞아요. 얼굴을 구별 못 하거나 잊었다면 그 가면만 골라 공격할 수 없어요."
+],
+[
+22,
+1,
+"cloze",
+null,
+"Pick the most logical option for the blank in this paragraph.\nThe German philosopher Arthur Schopenhauer told a short parable about a group of porcupines on a freezing winter day. They huddled together to share their warmth, but their sharp quills pricked one another, so they drew apart. The cold soon drove them together again, and again the quills repelled them. After moving back and forth several times, they finally found a moderate distance at which they could ____. Schopenhauer offered the story as an allegory of human society, in which people crave company yet are wounded by excessive intimacy.",
+[
+"huddle as closely as they pleased",
+"stay fairly warm without wounding each other",
+"keep their sharp quills from ever growing back",
+"abandon the group and survive alone through the winter"
+],
+[
+2
+],
+"가까이 가면 찔리고 멀어지면 추우니, 그 사이의 적당한 거리는 '서로 다치지 않으면서 어느 정도 따뜻한' 거리예요. 마음껏 붙어 있을 수 있었다면 적당한 거리를 찾을 필요가 없어요."
+],
+[
+23,
+1,
+"cloze",
+null,
+"Pick the most logical option for the blank in this paragraph.\nPlant a seed from a sweet, crisp apple and you will almost certainly be disappointed. Apples do not grow true from seed: each seed carries a fresh mixture of genes from two parent trees, and the tree that grows from it typically bears small, acidic fruit. For this reason, orchard growers ____. Instead, they cut a twig from a tree with desirable fruit and join it to the rootstock of another tree, a technique called grafting. Every tree of a familiar variety is therefore, in a sense, a living fragment of one original tree.",
+[
+"rarely grow named varieties from seed",
+"harvest their apples before they ripen",
+"prefer the sour fruit of seedling trees",
+"plant several seeds in each hole to improve their chances"
+],
+[
+1
+],
+"씨앗으로 키우면 원래 품종과 다른 열매가 나오니, 재배자는 이름 있는 품종을 '씨앗으로 키우지 않고' 접붙이기를 해요. 빈칸 뒤 Instead 가 앞 방법을 버린다는 단서예요."
+],
+[
+24,
+1,
+"cloze",
+null,
+"Pick the most logical option for the blank in this paragraph.\nIn the early 1970s disability advocates in Berkeley lobbied the city council to cut small ramps into the corners of its sidewalks so that wheelchair users could cross streets independently. The ramps were built for one constituency, yet they soon proved useful to almost everyone: parents pushing strollers, travelers pulling suitcases, and delivery workers with cumbersome carts. Designers now speak of the curb-cut effect, the observation that changes made for people with disabilities ____.",
+[
+"should be limited to large cities",
+"often end up benefiting a much wider public",
+"tend to cost more than they are worth to taxpayers",
+"are rarely used by the very people they were meant to serve"
+],
+[
+2
+],
+"휠체어 사용자를 위한 경사로가 유모차·여행 가방·배달 수레를 미는 사람 모두에게 쓸모 있었다는 예예요. 장애인을 위한 변화가 '훨씬 많은 사람에게 이롭다'는 정리가 맞아요."
+],
+[
+25,
+1,
+"cloze",
+null,
+"Pick the most logical option for the blank in this paragraph.\nDuring the Second World War, the psychologist Carl Hovland and his colleagues studied how soldiers responded to persuasive films. They noticed something unexpected: some of the opinions the films promoted grew stronger weeks later rather than weaker. Subsequent experiments suggested one explanation. When a message comes from a source people distrust, they discount it at first. Over time, however, memory of the source tends to fade faster than memory of the message itself, so ____.",
+[
+"the message is forgotten long before the source is",
+"people grow suspicious of every argument they hear",
+"an argument once dismissed can quietly gain influence",
+"distrusted sources soon come to be seen as trustworthy experts"
+],
+[
+3
+],
+"출처를 믿지 않아 처음엔 깎아 들었지만, 출처 기억이 메시지 기억보다 빨리 흐려진다고 했어요. 그러니 한때 무시한 주장이 나중에 조용히 영향력을 얻는다는 결론이 맞아요. 메시지가 먼저 잊힌다는 보기는 글과 반대이고, 출처가 전문가로 보이게 된다는 말은 글에 없어요."
+],
+[
+26,
+1,
+"cloze",
+null,
+"Pick the most logical option for the blank in this paragraph.\nIf a book has been in print for forty years, a plausible conjecture is that it will stay in print for roughly another forty; a book that has endured a full century may well last another. This rule of thumb, known as the Lindy effect, is applied to things that do not deteriorate physically, such as ideas, technologies, and works of art. Unlike a human being, whose remaining years diminish with every birthday, such things ____.",
+[
+"last exactly as long as their creators live",
+"lose their value as soon as they are created",
+"tend to gain life expectancy the longer they survive",
+"become steadily harder to understand with each passing generation"
+],
+[
+3
+],
+"40년 버틴 책은 40년 더, 100년 버틴 책은 100년 더 간다는 규칙이에요. 사람과 달리(Unlike) 오래 살아남을수록 '남은 기대 수명이 늘어난다'는 말이 맞아요."
+],
+[
+27,
+1,
+"cloze",
+null,
+"Pick the most logical option for the blank in this paragraph.\nA heat pump is often described as a refrigerator running in reverse. Instead of burning fuel, it uses electricity to extract warmth from the outside air, even on a frigid day, and release it indoors. Because it ____, a heat pump can deliver three or four units of heat for every unit of electricity it consumes. Many governments have offered subsidies to induce households to replace gas boilers with the devices, though sales in parts of Europe have stalled recently as some of that support was scaled back.",
+[
+"moves heat rather than making it",
+"stores cheap electricity for use at night",
+"works well only in regions with mild climates",
+"burns natural gas far more efficiently than an ordinary boiler"
+],
+[
+1
+],
+"연료를 태우지 않고 바깥 공기의 열을 '옮겨 오기' 때문에 쓴 전기보다 많은 열을 낼 수 있어요. 앞 문장 Instead of burning fuel 이 단서이고, 가스를 태운다는 보기는 그와 어긋나요."
+],
+[
+28,
+1,
+"reading",
+"r1-s1",
+"What is the passage chiefly concerned with?",
+[
+"the history of lactose intolerance in Europe",
+"a scientific method for measuring protein in drinks",
+"the reasons dairy farming has become more profitable",
+"the spread of plant-based milks and the debates that have followed"
+],
+[
+4
+],
+"식물성 우유가 흔한 상품이 된 이야기로 시작해, 이름 표시 논쟁과 영양·환경 비교로 이어지는 글이에요. '퍼진 과정과 뒤따른 논쟁'이 글 전체를 담아요. 낙농업 수익이나 유당 불내증의 역사는 다루지 않아요."
+],
+[
+29,
+1,
+"reading",
+"r1-s1",
+"Which statement contradicts what the passage says?",
+[
+"Almond-based drinks have drawn criticism over water use.",
+"Soy drinks are an exception to the low protein of plant milks.",
+"Some of the nutrients in plant milks are added by manufacturers.",
+"The EU court decided that plant-based drinks may freely be sold as milk."
+],
+[
+4
+],
+"글은 2017년 유럽연합 법원이 순수 식물성 제품은 대체로 milk 라는 이름으로 팔 수 없다고 판결했다고 했어요. '마음대로 milk 로 팔 수 있다'는 문장은 글과 반대예요. 콩 음료 예외, 영양소 첨가, 아몬드 물 사용 비판은 모두 글에 있어요."
+],
+[
+30,
+1,
+"reading",
+"r1-s2",
+"What is the passage mainly about?",
+[
+"how cue words are used to prompt memories",
+"why recent events are the hardest for older people to recall",
+"why memories from youth dominate the recollections of older people",
+"how the songs elderly people cherish most can reshape their sense of identity"
+],
+[
+3
+],
+"10~30세 무렵 기억이 유독 많이 떠오르는 회고 절정을 소개하고 그 까닭 셋(시작이 많음·정체성·문화)을 든 글이에요. '젊은 시절 기억이 노년의 회상을 차지하는 까닭'이 중심이에요. 단서 낱말은 실험 방법 한 줄이고, 최근 기억은 잘 남아 있다(well represented)고 했으니 최근 일이 가장 떠올리기 어렵다는 말은 반대예요. 노래는 같은 절정이 나타난다는 예일 뿐 정체성을 바꾼다는 말은 없어요."
+],
+[
+31,
+1,
+"reading",
+"r1-s2",
+"What does the underlined \"this script\" refer to?",
+[
+"a shared idea of when major life events happen",
+"a written diary that people keep during early adulthood",
+"a set of written instructions given to the older participants",
+"a list of cue words used to prompt memories in the experiments"
+],
+[
+1
+],
+"this script 는 바로 앞 문장의 '공동체가 물려주는, 인생의 큰 장이 언제 시작돼야 하는지에 대한 공통 그림'을 가리켜요. 실험에서 쓴 단서 낱말(cue word)은 첫 단락 이야기라 다른 것이고, 글로 쓴 지시문·일기는 script 를 글자 그대로 푼 말일 뿐이에요."
+],
+[
+32,
+1,
+"reading",
+"r1-s3",
+"What is the passage mainly about?",
+[
+"the damage coal smoke did to London's gardens",
+"the life cycle of moths raised in glass bottles",
+"an accidental invention that kept plants alive in sealed glass",
+"why Victorian botanists refused to send any living plants overseas"
+],
+[
+3
+],
+"워드가 나방 고치를 넣은 병에서 우연히 밀폐 유리 상자의 원리를 발견하고, 그 상자가 도시 원예와 식물 운송을 바꾼 이야기예요. '밀폐 유리 안에서 식물을 살린 우연한 발명'이 글 전체를 담아요. 석탄 연기 피해는 도입부 한 대목이고, 나방의 한살이는 다루지 않으며, 식물학자들은 한 세기 넘게 이 상자에 의지했다고 했어요."
+],
+[
+33,
+1,
+"reading",
+"r1-s3",
+"The plants inside Ward's sealed bottle survived because ____.",
+[
+"the moth fertilized the soil after it emerged",
+"their water kept recycling through condensation",
+"the bottle shielded the plants from all sunlight",
+"Ward added fresh water to the soil every few days to keep it moist"
+],
+[
+2
+],
+"흙에서 올라간 물기가 유리에 맺혔다가 다시 흘러내려 식물이 '스스로 물을 준' 셈이라고 했어요. 병 안에서 물이 돈 거예요. 아무도 돌보지 않았다(nobody had tended them)고 했으니 며칠마다 물을 줬다는 보기는 틀려요."
+],
+[
+34,
+1,
+"reading",
+"r1-s4",
+"The example of a bottle of soda is used to illustrate ____.",
+[
+"how gas bubbles form when pressure suddenly drops",
+"why nitrogen is heavier than the other gases found in air",
+"why workers drank carbonated drinks while working in the caissons",
+"how compressed air kept water and mud out of the wooden chambers on the riverbed"
+],
+[
+1
+],
+"압력이 갑자기 풀리면 녹아 있던 질소가 거품이 된다는 설명 바로 뒤에, 뚜껑을 열면 탄산음료가 거품을 낸다는 비유가 붙어요. 압력이 떨어질 때 '녹은 기체가 거품이 되는 과정'을 보여 주는 예예요."
+],
+[
+35,
+1,
+"reading",
+"r1-s4",
+"Which of these does the passage leave unmentioned?",
+[
+"the method Haldane proposed to prevent the illness",
+"the exact number of workers who died of the illness",
+"the role Emily Roebling played during the construction",
+"the purpose of pumping compressed air into the caissons"
+],
+[
+2
+],
+"글은 '몇 명이 죽었다(several died)'고만 했고 정확한 사망자 수는 말하지 않았어요. 압축 공기의 목적(물·진흙 막기), 에밀리의 역할(지시 전달), 홀데인의 방법(단계적 상승)은 모두 나와요."
+],
+[
+36,
+1,
+"reading",
+"r1-s5",
+"What would be the most fitting heading for this passage?",
+[
+"A New Drug for Treating Eco-Anxiety",
+"How Governments Solved the Climate Crisis",
+"Climate Anxiety: A Reasonable Fear That Can Be Managed",
+"Why Most Young People Simply Ignore the Threat of Climate Change"
+],
+[
+3
+],
+"큰 설문으로 젊은 세대의 걱정을 보여 주고, 그 불안은 병이 아닌 합당한 반응이며 대화와 행동으로 견딜 만하게 만들 수 있다고 정리한 글이에요. '합당하고 다룰 수 있는 두려움'이 제목으로 맞아요. 약 치료나 정부의 해결은 글에 없어요."
+],
+[
+37,
+1,
+"reading",
+"r1-s5",
+"According to the passage, many psychologists regard climate anxiety as ____.",
+[
+"a sensible response to a real threat",
+"a rare disorder that requires medication",
+"a problem found only among the very young",
+"an exaggerated fear spread mainly by alarming media coverage"
+],
+[
+1
+],
+"많은 심리학자는 실제로 잘 확인된 위협에 대한 괴로움을 '고쳐야 할 증상이 아니라 합당한 반응'으로 본다고 했어요. 정신 질환 목록에 없다고 했으니 약이 필요한 장애라는 보기는 틀려요."
+],
+[
+38,
+1,
+"reading",
+"r1-s6",
+"Which sentence best sums up the central claim of the passage?",
+[
+"Wealth is the surest way to secure a long and happy life.",
+"Ancient Romans lived much shorter lives than people today.",
+"Life feels short mainly because people waste the time they have.",
+"Retirement is the best period of life for the serious study of wisdom and philosophy."
+],
+[
+3
+],
+"세네카는 자연이 시간을 적게 준 게 아니라 우리가 낭비해서 삶이 짧아 보인다고 했어요. 글 전체가 그 주장과 낭비 사례, 잘 쓰는 삶으로 이어져요. 삶을 은퇴 뒤로 미루는 것을 비판했으니 은퇴가 공부하기 가장 좋은 때라는 보기는 반대예요."
+],
+[
+39,
+1,
+"reading",
+"r1-s6",
+"According to Seneca as described in the passage, people tend to treat their time ____.",
+[
+"exactly as they treat their money",
+"far less carefully than their possessions",
+"with excessive caution and constant suspicion",
+"as the most valuable thing they could ever own or inherit"
+],
+[
+2
+],
+"돈과 땅은 악착같이 지키면서 시간은 달라는 사람 누구에게나 내준다고 했어요. 시간을 '재산보다 훨씬 덜 아낀다'는 뜻이에요. 돈처럼 다룬다는 보기는 정반대예요."
+],
+[
+40,
+1,
+"reading",
+"r1-s6",
+"Which statement contradicts what the passage says?",
+[
+"Seneca regarded the study of wisdom as a good use of time.",
+"Seneca's own wealth has struck readers as somewhat ironic.",
+"Seneca criticized people who delay living until a later date.",
+"Seneca believed nature gives human beings too little time to live."
+],
+[
+4
+],
+"글 첫 단락에서 세네카는 '자연이 시간을 너무 적게 준 것이 문제가 아니다'라고 했어요. 자연이 시간을 너무 적게 준다고 믿었다는 문장은 글과 반대예요. 지혜 공부, 부의 아이러니, 삶을 미루는 사람 비판은 모두 글에 있어요."
+],
+[
+1,
+2,
+"vocab",
+null,
+"Choose the word whose sense comes closest to the underlined one.\nOnline reviews can be <u>deceptive</u>, since some companies discreetly pay strangers to praise their products.",
+[
+"exhaustive",
+"misleading",
+"concise",
+"flawless"
+],
+[
+2
+],
+"deceptive 는 '속이는, 현혹하는'이라 misleading 과 가까워요. 회사가 몰래 돈을 주고 칭찬 글을 쓰게 한다는 뒤 내용이 단서예요. exhaustive(빠짐없는)·concise(간결한)는 후기의 길이·꼼꼼함을 말하는 낱말이라 달라요."
+],
+[
+2,
+2,
+"vocab",
+null,
+"Choose the word whose sense comes closest to the underlined one.\nThe fishing village showed remarkable <u>resilience</u>, rebuilding its harbor and homes within a year of the storm.",
+[
+"adaptability",
+"hostility",
+"reticence",
+"scarcity"
+],
+[
+1
+],
+"resilience 는 '(어려움에서) 다시 일어서는 힘, 회복력'이라 변화와 어려움에 맞춰 회복하는 힘인 adaptability 와 가장 가까워요. 폭풍 뒤 1년 안에 항구와 집을 다시 지었다는 내용이 단서예요. reticence(말수 적음)·scarcity(부족)는 관계없어요."
+],
+[
+3,
+2,
+"vocab",
+null,
+"Choose the word whose sense comes closest to the underlined one.\nWhen the pandemic began, some shoppers started to <u>hoard</u> toilet paper, leaving supermarket shelves depleted for weeks.",
+[
+"squander",
+"demolish",
+"amass",
+"replicate"
+],
+[
+3
+],
+"hoard 는 '(몰래) 잔뜩 사재다, 비축하다'라 amass(모으다, 쌓다)와 가까워요. 몇 주 동안 진열대가 비었다는 결과가 단서예요. squander(낭비하다)는 모아 두는 것과 반대예요."
+],
+[
+4,
+2,
+"vocab",
+null,
+"Choose the word whose sense comes closest to the underlined one.\nShe argued so <u>cogently</u> for the new policy that even her harshest critics admitted her reasoning was sound.",
+[
+"hesitantly",
+"convincingly",
+"reluctantly",
+"abruptly"
+],
+[
+2
+],
+"cogently 는 '설득력 있게, 조리 있게'라 convincingly 와 가까워요. 가장 심하게 비판하던 사람들도 논리가 탄탄하다고 인정했다는 내용이 단서예요. hesitantly(머뭇거리며)는 오히려 반대 느낌이에요."
+],
+[
+5,
+2,
+"vocab",
+null,
+"Choose the word whose sense comes closest to the underlined one.\nDecades of overgrazing left the valley <u>barren</u>, and today almost nothing grows on its parched slopes.",
+[
+"fertile",
+"temperate",
+"luminous",
+"desolate"
+],
+[
+4
+],
+"barren 은 '(땅이) 메마른, 황량한'이라 desolate(황량한, 황폐한)와 가까워요. 이제 거의 아무것도 자라지 않는다는 뒤 내용이 단서예요. fertile(비옥한)은 반대말이에요."
+],
+[
+6,
+2,
+"vocabblank",
+null,
+"Select the word that fits the blank best.\nFacing vehement criticism from parents, the school board voted to ____ its decision to shorten the summer vacation.",
+[
+"go back on",
+"stand up for",
+"push ahead with",
+"follow through on"
+],
+[
+1
+],
+"학부모의 거센 비판에 부딪혔으니 방학을 줄이려던 결정을 '뒤집다, 철회하다(go back on)'가 맞아요. stand up for(옹호하다)·push ahead with(밀어붙이다)·follow through on(끝까지 해내다)은 결정을 지키는 쪽이라 문맥과 반대예요."
+],
+[
+7,
+2,
+"vocabblank",
+null,
+"Select the word that fits the blank best.\nBecause fish prices can ____ sharply from week to week, the restaurant prints a new seafood menu every Monday.",
+[
+"stagnate",
+"fluctuate",
+"coagulate",
+"proliferate"
+],
+[
+2
+],
+"주마다 새 메뉴판을 찍는다고 했으니 생선 값이 크게 '오르내린다(fluctuate)'는 말이에요. stagnate(정체되다)라면 메뉴를 매주 바꿀 까닭이 없어요."
+],
+[
+8,
+2,
+"vocabblank",
+null,
+"Select the word that fits the blank best.\nMuscles left unused for several weeks, such as those in a leg kept in a cast, quickly begin to ____.",
+[
+"regenerate",
+"proliferate",
+"oscillate",
+"atrophy"
+],
+[
+4
+],
+"깁스로 몇 주 동안 쓰지 않은 근육은 '위축된다(atrophy)'예요. regenerate(재생하다)는 반대 방향이고, oscillate(진동하다)는 근육을 안 쓰는 것과 관계없어요."
+],
+[
+9,
+2,
+"vocabblank",
+null,
+"Select the word that fits the blank best.\nA cheaper method of making solar panels became a ____ for a clean energy campaign that had languished for years.",
+[
+"deterrent",
+"catalyst",
+"impediment",
+"lethargy"
+],
+[
+2
+],
+"여러 해 멈춰 있던 운동에 값싼 태양광판 제조법이 '촉매, 기폭제(catalyst)'가 됐다는 말이에요. deterrent(억제 요인)·impediment(장애물)는 운동을 막는 쪽이라 반대예요."
+],
+[
+10,
+2,
+"vocabblank",
+null,
+"Select the word that fits the blank best.\nThe assembly instructions were so ____ that even experienced engineers could not work out how the parts fitted together.",
+[
+"succinct",
+"flawless",
+"opaque",
+"concise"
+],
+[
+3
+],
+"숙련된 기술자도 부품 맞추는 법을 알아내지 못했으니 설명서가 '이해하기 어려운(opaque)' 거예요. succinct·concise(간결한), flawless(흠잡을 데 없는)는 모두 좋은 설명서를 말해 결과와 맞지 않아요."
+],
+[
+11,
+2,
+"grammar",
+null,
+"Which underlined part contains an error?\nPlanners blame ①<u>rising</u> housing costs for the fact ②<u>that</u> the average commute in the capital is now ③<u>considerably</u> longer than ④<u>those</u> of any other city in the country.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"비교 대상은 '수도의 통근 시간(the average commute)'과 '다른 도시의 통근 시간'이에요. 단수 commute 를 받으니 those 가 아니라 that 이 맞아요. blame A for B(B를 A 탓으로 돌리다)의 rising 은 '오르는'이라는 현재분사, the fact 뒤 that 은 동격 접속사, considerably 는 비교급 longer 를 꾸미는 부사라 맞아요."
+],
+[
+12,
+2,
+"grammar",
+null,
+"Which underlined part contains an error?\nThe number of students ①<u>who</u> rely on AI tools ②<u>to draft</u> their essays ③<u>have</u> grown so quickly that many universities ④<u>are</u> rewriting their rules on academic honesty.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"주어는 The number(수)라 단수예요. have grown 이 아니라 has grown 이 맞아요. 'a number of + 복수명사'(많은 ~)는 복수로 받지만 'the number of'는 단수예요. are rewriting 의 주어는 복수 universities 라 맞아요."
+],
+[
+13,
+2,
+"grammar",
+null,
+"Which underlined part contains an error?\n①<u>Built</u> over a century ago, the old railway bridge was closed last spring after inspectors ②<u>discovered</u> cracks ③<u>spreading</u> across its supports, ④<u>forced</u> commuters to take a lengthy detour.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"다리가 폐쇄된 결과 통근자들이 돌아가게 됐다는 뜻이니, 앞 절에 이어 결과를 나타내는 분사구문 forcing 이 와야 해요. forced 를 과거 동사로 보면 접속사 없이 동사가 하나 더 붙는 꼴이 되고, 과거분사(수동)로 보면 뒤 목적어 commuters 를 받을 수 없어요. 다리 폐쇄가 통근자들을 돌아가게 '만든' 능동의 결과라 forcing 이에요. Built 는 다리가 '지어진' 것이라 과거분사로 맞아요."
+],
+[
+14,
+2,
+"grammar",
+null,
+"Which underlined part contains an error?\nA new rule allows patients ①<u>see</u> their full medical records online, a change ②<u>welcomed</u> by most doctors but ③<u>criticized</u> by privacy groups ④<u>worried</u> about data leaks.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+1
+],
+"allow 는 'allow + 목적어 + to부정사' 꼴로 써요. allows patients to see 가 맞아요. welcomed·criticized 는 a change 를 뒤에서 꾸미는 과거분사(환영받은, 비판받은)이고, worried about 도 groups 를 꾸미는 형용사로 맞아요."
+],
+[
+15,
+2,
+"grammar",
+null,
+"Which underlined part contains an error?\nVolunteers ①<u>assigned</u> to the animal shelter are expected ②<u>to feed</u> the dogs, ③<u>clean</u> their cages, and ④<u>keeping</u> meticulous records of any signs of illness they notice.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"to feed, (to) clean, and (to) keep 으로 셋이 나란히 이어져야 해요(병렬). keeping 이 아니라 keep 이 맞아요. assigned to 는 Volunteers 를 뒤에서 꾸미는 과거분사(배정된), be expected to feed 는 '~하기로 되어 있다'라 맞아요."
+],
+[
+16,
+2,
+"grammarblank",
+null,
+"Select the form that correctly fills the blank.\nResearchers are still trying to determine ____ some people to remember their dreams far more vividly than others do.",
+[
+"that causes",
+"what is caused",
+"what causes",
+"what causing"
+],
+[
+3
+],
+"determine 의 목적어 자리에 주어가 없는 명사절이 와야 하니 관계대명사 what 이 주어 노릇을 하는 what causes 가 맞아요. cause + 목적어 + to부정사(~가 …하게 하다) 꼴이에요. that 은 앞에 선행사도 없고 절 안에 주어도 없어 안 되고, what is caused 는 뒤 목적어와 맞지 않아요."
+],
+[
+17,
+2,
+"grammarblank",
+null,
+"Select the form that correctly fills the blank.\nThe ease ____ shoppers can now compare prices online has forced many small retailers to slash their profit margins.",
+[
+"which",
+"with that",
+"whom",
+"with which"
+],
+[
+4
+],
+"'쉽게 비교한다'는 compare with ease 이니, ease 를 받는 관계사 앞에 전치사 with 를 붙인 with which 가 맞아요. which 만 쓰면 뒤 절이 완전해서 맞지 않고, 전치사 뒤에는 that 을 쓸 수 없어요."
+],
+[
+18,
+2,
+"grammarblank",
+null,
+"Select the form that correctly fills the blank.\nSince the city opened its new subway line, ____ residents drive to work than before, and congestion downtown has noticeably eased.",
+[
+"less",
+"few",
+"the fewest",
+"fewer"
+],
+[
+4
+],
+"뒤에 than 이 있으니 비교급이 와야 하고, residents 는 셀 수 있는 복수명사라 few 의 비교급 fewer 가 맞아요. less 는 셀 수 없는 명사에 써요."
+],
+[
+19,
+2,
+"grammarblank",
+null,
+"Select the form that correctly fills the blank.\nThe paintings ____ in last spring's fire are being restored by a team of conservators from three countries.",
+[
+"damaged",
+"damaging",
+"were damaged",
+"to damage"
+],
+[
+1
+],
+"그림은 불에 '손상된' 쪽이라 명사를 뒤에서 꾸미는 과거분사 damaged 가 맞아요. 문장의 동사는 are being restored 이므로 were damaged 를 넣으면 동사가 둘이 돼요."
+],
+[
+20,
+2,
+"grammarblank",
+null,
+"Select the form that correctly fills the blank.\nIt was ____ that the guides had to carry the youngest children on their backs for the final hour of the trek.",
+[
+"so steep path",
+"such a steep path",
+"such steep a path",
+"a so steep path"
+],
+[
+2
+],
+"'너무 ~한 길이라서 …했다'는 such + a + 형용사 + 명사 + that 어순이에요. so 를 쓰려면 so steep a path 어순이어야 해요."
+],
+[
+21,
+2,
+"cloze",
+null,
+"Select the phrase best suited to the blank in the paragraph.\nIn 1957 two engineers in New Jersey, Alfred Fielding and Marc Chavannes, sealed two plastic shower curtains together so that neat rows of tiny air bubbles were trapped between the two sheets. They hoped to sell the result as textured wallpaper, but few customers wanted bubbles on their walls. An attempt to market the material as insulation for greenhouses proved equally futile. The breakthrough came a few years later, when IBM needed a way to protect its delicate new computers during shipping. The product that had foundered twice had finally found its true purpose: ____.",
+[
+"cushioning goods in transit",
+"keeping greenhouses warm in winter",
+"decorating the walls of modern homes",
+"replacing the ordinary shower curtain"
+],
+[
+1
+],
+"벽지·온실 단열재로 두 번 실패한 뒤 IBM 이 컴퓨터를 '운반할 때 보호할' 방법을 찾으면서 쓰임새를 찾았다는 흐름이에요. 그래서 '운송 중인 물건을 완충해 보호하기'가 맞아요. 벽지·온실은 실패한 쓰임새예요."
+],
+[
+22,
+2,
+"cloze",
+null,
+"Select the phrase best suited to the blank in the paragraph.\nEngineers often look to nature for design ideas, a practice known as biomimicry. A celebrated exemplar stands in Harare, Zimbabwe. When the architect Mick Pearce designed the Eastgate Centre, an office and shopping complex that opened in 1996, he was asked to keep it comfortable without conventional air conditioning. He drew inspiration from the mounds built by African termites, which were thought to stay cool through a network of tunnels that draws in fresh air and lets warm air escape. Pearce gave his building a similar system of vents and chimneys, and as a result, the complex ____. Its running costs have stayed far below those of similar office blocks nearby.",
+[
+"must be air-conditioned all year round",
+"uses far less energy than comparable buildings",
+"became far too cold for the people working inside it",
+"was later turned into a museum devoted to termite mounds"
+],
+[
+2
+],
+"흰개미 둔덕처럼 환기구와 굴뚝으로 공기를 돌게 해 '일반 냉방 없이' 시원하게 지내도록 만든 건물이니, 결과는 '비슷한 건물보다 에너지를 훨씬 적게 쓴다'예요. 일 년 내내 냉방해야 한다면 설계 목적과 반대예요."
+],
+[
+23,
+2,
+"cloze",
+null,
+"Select the phrase best suited to the blank in the paragraph.\nWhen we feel cold or frightened, tiny muscles at the base of each hair contract, pulling the hairs upright and raising small bumps on the skin. In furry mammals this reflex is advantageous: fluffed-up fur traps a layer of warm air, and an animal with its fur on end appears larger and more formidable to a rival. But humans have lost most of their body hair, so the response does little to warm us or to frighten anyone. Goosebumps are therefore often cited as ____, a trait that persists even though it has largely lost its original function.",
+[
+"a skill that children must learn",
+"an illness caused by sudden cold",
+"a vestigial reflex inherited from our ancestors",
+"a reaction found in humans but in no other mammal"
+],
+[
+3
+],
+"털이 많은 포유류에게는 쓸모 있던 반응이 털이 거의 없는 사람에게는 쓸모를 잃고 '남아 있다'고 했으니 '조상에게서 물려받은 흔적 반사'가 맞아요. 털 많은 포유류도 같은 반응을 보인다고 했으니 '사람에게만'은 틀려요."
+],
+[
+24,
+2,
+"cloze",
+null,
+"Select the phrase best suited to the blank in the paragraph.\nFor thousands of years people in many parts of the world chewed willow bark or brewed it into tea to alleviate pain and fever. In the nineteenth century chemists isolated its active ingredient and learned to make a related compound, salicylic acid. This substance relieved pain, but it had a serious drawback: ____. In 1897 a chemist at the German company Bayer produced a modified form that was far less irritating. From 1899 it was sold under the name aspirin, eventually becoming one of the most ubiquitous drugs in history.",
+[
+"it irritated the stomach",
+"it had no effect on fever",
+"it was cheaper than willow tea",
+"it could be found only in willows"
+],
+[
+1
+],
+"뒤에서 바이엘이 '훨씬 덜 자극적인' 형태를 만들었다고 했으니 원래 약의 단점은 '위에 매우 자극적이었다'는 것이에요. 열에 효과가 없었다면 열을 내리려고 쓴 앞 내용과 맞지 않아요."
+],
+[
+25,
+2,
+"cloze",
+null,
+"Select the phrase best suited to the blank in the paragraph.\nDéjà vu, French for 'already seen,' is the uncanny sense that a new situation has somehow been lived before. Most people report having felt it at least once. One explanation has been corroborated by laboratory studies. Déjà vu may arise when a new scene resembles one we have encountered but cannot consciously recall, such as a room whose furniture is arranged like that of a house we visited as a child. The brain registers the familiarity, yet because the earlier memory remains out of reach, ____.",
+[
+"we never notice anything unusual",
+"the feeling seems to come from nowhere",
+"the new room looks completely strange to us",
+"we suddenly recall the earlier scene in vivid detail"
+],
+[
+2
+],
+"익숙하다는 느낌은 오는데 예전 기억은 떠오르지 않으니, 그 느낌이 '어디서 왔는지 모르게' 느껴진다는 말이에요. 예전 장면을 자세히 떠올린다면 기시감이 아니라 그냥 기억이에요."
+],
+[
+26,
+2,
+"cloze",
+null,
+"Select the phrase best suited to the blank in the paragraph.\nThe word ketchup probably comes from a term used in southern China for a sauce made from fermented fish. British traders met similar sauces in Southeast Asia around the end of the seventeenth century and attempted to emulate them at home with ingredients such as mushrooms, walnuts, and oysters. For more than a century the name was applied indiscriminately to almost any thin, dark, salty sauce. Tomatoes did not appear in recipes until the early nineteenth century, so the thick, sweet condiment found on tables today ____. A diner from the 1700s would scarcely recognize the sauce we now squeeze onto our fries.",
+[
+"was first invented by sailors at sea",
+"has never been popular outside Britain",
+"is only the latest form of a very old sauce",
+"was copied straight from southern China's original fish recipe"
+],
+[
+3
+],
+"생선 소스에서 시작해 버섯·호두 소스를 거쳐 19세기에야 토마토가 들어갔다고 했으니, 오늘날 케첩은 '아주 오래된 소스의 가장 최근 모습'이에요. 중국 원래 요리법은 생선 소스였어요."
+],
+[
+27,
+2,
+"cloze",
+null,
+"Select the phrase best suited to the blank in the paragraph.\nBefore 1840, sending a letter in Britain was cumbersome and costly. Charges depended on the distance a letter traveled and the number of sheets it contained, and they were usually paid not by the sender but by the person receiving it, who could simply decline delivery. The schoolmaster and reformer Rowland Hill contended that a single cheap rate paid in advance would spur far more people to write. His proposal was adopted, and in May 1840 Britain issued the Penny Black, the world's first adhesive postage stamp. Within a few years the number of letters sent had soared, showing that ____.",
+[
+"cheap, simple prices could boost demand",
+"few people were interested in writing letters",
+"distance was the fairest basis for postal charges",
+"people preferred to pay for the letters they received"
+],
+[
+1
+],
+"값을 싸고 하나로 정해 미리 내게 했더니 편지 수가 크게 늘었다고 했어요. '더 단순하고 낮은 값이 수요를 크게 늘릴 수 있다'는 것을 보여 준 거예요. 거리로 값을 매기던 방식은 바꾼 쪽이에요."
+],
+[
+28,
+2,
+"reading",
+"r2-s1",
+"What is the passage mainly about?",
+[
+"how stem cells are used to cure brain diseases",
+"the history of laws protecting laboratory animals",
+"a promising alternative to animal testing and its present limits",
+"the reasons why most new drugs are now far too expensive to develop and test"
+],
+[
+3
+],
+"동물 실험의 한계 → 오가노이드의 장점 → 규제 변화 → 아직 남은 한계 순서라 '동물 실험을 대신할 유망한 방법과 지금의 한계'가 중심이에요. 약값이나 동물 보호법의 역사는 다루지 않아요."
+],
+[
+29,
+2,
+"reading",
+"r2-s1",
+"Which statement finds NO support in the passage?",
+[
+"Organoids are grown from human stem cells.",
+"Organoids can be made from an individual patient's cells.",
+"Many drugs fail in human trials despite earlier animal studies.",
+"Organoids can already show how a drug moves through the whole body."
+],
+[
+4
+],
+"글 끝부분에서 오가노이드는 혈관·면역 세포가 없어 '약이 온몸을 어떻게 도는지 보여 줄 수 없다'고 했어요. 그러니 이미 보여 줄 수 있다는 문장이 글과 맞지 않아요."
+],
+[
+30,
+2,
+"reading",
+"r2-s2",
+"What is the passage mainly about?",
+[
+"why audiences have always ignored women's sports",
+"the scoring records set by one college basketball star",
+"how greater visibility has fueled interest in women's sports",
+"how broadcasters decide which men's games to show at prime time"
+],
+[
+3
+],
+"방송사가 '관심이 없다'며 중계를 적게 하던 주장이 2024년 시청률·관중으로 무너졌고, 연구자들은 노출과 관심이 서로를 키운다고 본다는 글이에요. '더 많이 보이면서 여성 스포츠 관심이 커진 과정'이 중심이에요. 한 스타의 득점 기록은 한 대목이고, 관중이 늘 무관심했다는 말은 글과 반대이며, 남자 경기 편성 방식은 다루지 않아요."
+],
+[
+31,
+2,
+"reading",
+"r2-s2",
+"What does the underlined \"that argument\" refer to?",
+[
+"the claim that audiences were uninterested",
+"the view that one star can change a whole sport",
+"the idea that men's games should be shown at better hours",
+"the belief that college sports are more exciting than professional ones"
+],
+[
+1
+],
+"that argument 는 바로 앞 문장의 '시청자들이 관심이 없다(audiences were not interested)'는 방송사의 주장이에요. 그래서 '시청자가 관심이 없다는 주장'이 맞아요. 한 스타가 종목 전체를 바꾼다는 생각은 방송사의 주장과 관계없어요."
+],
+[
+32,
+2,
+"reading",
+"r2-s3",
+"According to the passage, phantom vibrations occur because ____.",
+[
+"nerves in the leg are damaged by carrying a phone",
+"the brain would rather risk false alarms than misses",
+"smartphones send out weak signals even when switched off",
+"users often confuse the faint sound of a distant ringtone with a vibration"
+],
+[
+2
+],
+"신호를 놓치는 대가가 크다고 느끼면 뇌가 기준을 낮춰 '헛경보를 더 받아들이고 놓침은 줄인다'고 했어요. 그래서 '놓치느니 헛경보를 감수한다'가 맞아요. 감각이 고장 난 게 아니라고도 했으니 신경 손상은 틀려요."
+],
+[
+33,
+2,
+"reading",
+"r2-s3",
+"What does the underlined \"this account\" refer to?",
+[
+"the signal detection explanation",
+"the survey of staff at an American hospital",
+"the advice to keep a phone in a bag, not a pocket",
+"the report that anxious smartphone users feel phantom vibrations more often"
+],
+[
+1
+],
+"this account(이 설명)는 앞에서 든 신호 탐지 이론에 따른 설명이에요. 불안한 사람·폰을 자주 확인하는 사람이 더 자주 겪는다는 사실이 '이 설명과 맞아떨어진다'는 흐름이에요."
+],
+[
+34,
+2,
+"reading",
+"r2-s3",
+"What does the passage fail to mention?",
+[
+"a habit some users say reduces the sensations",
+"the kinds of sensations the brain must interpret",
+"the brand of phone most likely to cause phantom vibrations",
+"the proportion of hospital employees reporting phantom vibrations"
+],
+[
+3
+],
+"병원 직원의 약 3분의 2, 옷깃 스침·근육 떨림 같은 감각, 폰을 가방에 넣는 습관은 모두 나와요. 어느 회사 폰이 유령 진동을 가장 잘 일으키는지는 언급되지 않아요."
+],
+[
+35,
+2,
+"reading",
+"r2-s4",
+"Which option states the central idea of the passage?",
+[
+"Recessions are caused by excessive spending on luxuries.",
+"Cosmetics companies grow fastest when the economy is strong.",
+"People may favor small treats in hard times, though the evidence is uncertain.",
+"Shoppers always stop buying every kind of luxury, large or small, as soon as a recession begins."
+],
+[
+3
+],
+"어려울 때 작은 사치를 산다는 립스틱 효과를 소개하고, 증거는 엇갈린다(mixed)고 덧붙인 글이에요. '불황에 작은 사치를 찾을 수 있지만 증거는 확실하지 않다'가 요지예요."
+],
+[
+36,
+2,
+"reading",
+"r2-s4",
+"According to the passage, why do critics find the lipstick effect difficult to test?",
+[
+"It applies only to the downturn of 2001.",
+"It can be stretched to explain sales of almost any cheap product.",
+"Lipstick sales records from before 2001 were lost or deliberately destroyed.",
+"Economists have refused to study sales data from the cosmetics industry since the downturn of 2001."
+],
+[
+2
+],
+"비판하는 쪽은 '값싼 물건이면 거의 무엇이든 설명할 만큼 유연한 이론은 검증하기 어렵다'고 했어요. 그래서 '거의 모든 싼 물건 판매로 늘려 설명할 수 있다'가 맞아요."
+],
+[
+37,
+2,
+"reading",
+"r2-s5",
+"What is the passage mainly about?",
+[
+"the flushing public toilets of Victorian London",
+"why the Great Exhibition failed to make a profit",
+"Prince Albert's career as a gardener and architect",
+"a landmark exhibition and the remarkable building that housed it"
+],
+[
+4
+],
+"1851년 대박람회와 그 행사를 담은 수정궁(설계·건설·이후 운명)을 함께 다룬 글이에요. '기념비적 박람회와 그 건물'이 중심이에요. 수세식 공중화장실은 한 대목이고, 정원사는 앨버트 공이 아니라 팩스턴이었으며, 박람회는 600만 회 넘는 방문과 큰 이익을 거뒀어요."
+],
+[
+38,
+2,
+"reading",
+"r2-s5",
+"According to the passage, what was the exhibition's profit used for?",
+[
+"buying land for future museums",
+"paying Joseph Paxton for his design",
+"rebuilding the Crystal Palace after the fire",
+"building greenhouses for the Duke of Devonshire"
+],
+[
+1
+],
+"이익으로 사우스켄싱턴 땅을 사서 뒤에 박물관들을 지었다고 했어요. 불은 1936년 일이고, 온실은 팩스턴이 그 전에 지은 것이에요."
+],
+[
+39,
+2,
+"reading",
+"r2-s6",
+"What is the passage mainly about?",
+[
+"how goats are raised on modern farms",
+"why a remarkable natural fiber is hard to produce in large amounts",
+"why Kevlar is the strongest and toughest material ever made by humans",
+"how spiders choose the best place to build a web and catch fast-flying insects"
+],
+[
+2
+],
+"거미줄이 강하고 질기다는 설명 뒤에, 대량으로 만들기 어려운 까닭(거미를 기를 수 없음, 실을 잣는 과정을 흉내 내기 어려움)이 이어져요. '놀라운 천연 섬유를 대량으로 만들기 어려운 까닭'이 중심이에요."
+],
+[
+40,
+2,
+"reading",
+"r2-s6",
+"Which statement finds NO support in the passage?",
+[
+"Some goats now carry spider silk genes.",
+"Labs struggle to copy how spiders spin silk.",
+"Spider silk can stretch a lot before breaking.",
+"Spiders can easily be raised together in large numbers."
+],
+[
+4
+],
+"거미는 영역 다툼이 심하고 모아 두면 서로 잡아먹는다고 했으니 '쉽게 함께 기를 수 있다'는 글과 맞지 않아요. 나머지는 글 내용 그대로예요."
+],
+[
+1,
+3,
+"vocab",
+null,
+"Find the word that comes nearest to the underlined word in meaning.\nThe critic's <u>trenchant</u> review exposed every flaw in the novel's plot within a few short paragraphs.",
+[
+"verbose",
+"hesitant",
+"scathing",
+"indulgent"
+],
+[
+3
+],
+"trenchant 는 '신랄한, 날카로운'이라 scathing(통렬한)과 가까워요. 짧은 몇 문단 만에 약점을 모두 드러냈다는 내용이 단서예요. verbose(말이 많은)·hesitant(머뭇거리는)·indulgent(너그러운)는 맞지 않아요."
+],
+[
+2,
+3,
+"vocab",
+null,
+"Find the word that comes nearest to the underlined word in meaning.\nUnable to win the argument with facts, the salesman tried to <u>cajole</u> the elderly couple into signing the contract.",
+[
+"wheedle",
+"coerce",
+"deter",
+"compensate"
+],
+[
+1
+],
+"cajole 은 '구슬리다, 감언이설로 꾀다'라 wheedle 과 같아요. 사실로는 설득하지 못해 달콤한 말로 서명하게 하려 했다는 흐름이에요. coerce(강압하다)는 힘으로 시키는 것이라 달라요."
+],
+[
+3,
+3,
+"vocab",
+null,
+"Find the word that comes nearest to the underlined word in meaning.\nMuch to her <u>chagrin</u>, the defending champion was knocked out in the first round by an unseeded teenager.",
+[
+"elation",
+"complacency",
+"humiliation",
+"jubilation"
+],
+[
+3
+],
+"chagrin 은 '(실패로 인한) 분함, 굴욕감'이라 humiliation 과 가까워요. 디펜딩 챔피언이 시드 없는 10대에게 첫판에 졌다는 상황이 단서예요. elation·jubilation(크게 기뻐함)은 반대예요."
+],
+[
+4,
+3,
+"vocab",
+null,
+"Find the word that comes nearest to the underlined word in meaning.\nThe guest lecture was so <u>abstruse</u> that even the graduate students struggled to grasp its central thesis.",
+[
+"transparent",
+"obscure",
+"succinct",
+"lengthy"
+],
+[
+2
+],
+"abstruse 는 '난해한'이라 obscure(모호한, 이해하기 어려운)와 가까워요. 대학원생도 요지를 따라가기 힘들었다는 결과가 단서예요. transparent(명료한)는 반대예요."
+],
+[
+5,
+3,
+"vocab",
+null,
+"Find the word that comes nearest to the underlined word in meaning.\nThe university insisted that it would never <u>condone</u> plagiarism, whatever pressure students might face before deadlines.",
+[
+"forbid",
+"scrutinize",
+"suppress",
+"tolerate"
+],
+[
+4
+],
+"condone 은 '(잘못을) 묵인하다, 너그럽게 봐주다'라 tolerate 와 같아요. 마감 압박이 있어도 표절을 봐주지 않겠다는 말이에요. forbid(금지하다)는 반대 방향이에요."
+],
+[
+6,
+3,
+"vocabblank",
+null,
+"Find the word or phrase that rounds off the sentence best.\nStrict censorship laws continued to ____ public debate, so few citizens dared to criticize the ruling party overtly.",
+[
+"stifle",
+"foster",
+"emulate",
+"validate"
+],
+[
+1
+],
+"검열법 때문에 집권당을 대놓고 비판하는 시민이 거의 없었다고 했으니 공개 토론을 '억누르다(stifle)'가 맞아요. foster(북돋우다)는 반대예요."
+],
+[
+7,
+3,
+"vocabblank",
+null,
+"Find the word or phrase that rounds off the sentence best.\nOver three decades of frugal saving, the modest schoolteacher managed to ____ a fortune that astonished even her relatives.",
+[
+"amass",
+"squander",
+"forfeit",
+"dissipate"
+],
+[
+1
+],
+"30년 동안 꼼꼼히 저축해 친척도 놀란 재산을 '모았다(amass)'는 말이에요. squander·dissipate(탕진하다), forfeit(잃다)는 저축과 반대예요."
+],
+[
+8,
+3,
+"vocabblank",
+null,
+"Find the word or phrase that rounds off the sentence best.\nRather than ____ his rivals' work in public, the scientist praised their efforts while politely pointing out a few errors.",
+[
+"look up to",
+"make up for",
+"take over",
+"run down"
+],
+[
+4
+],
+"Rather than 뒤에는 '칭찬했다(praised)'와 반대되는 행동이 와야 해요. 경쟁자의 연구를 '깎아내리다(run down)'가 맞아요. look up to(우러러보다)를 넣으면 대비가 무너지고, make up for(벌충하다)·take over(넘겨받다)는 연구를 깎거나 칭찬하는 일과 관계없어요."
+],
+[
+9,
+3,
+"vocabblank",
+null,
+"Find the word or phrase that rounds off the sentence best.\nAfter months of hostilities, the capital finally regained some ____ of normal life as markets and schools reopened.",
+[
+"scarcity",
+"semblance",
+"impediment",
+"aberration"
+],
+[
+2
+],
+"시장과 학교가 다시 문을 열었으니 수도가 정상 생활의 '겉모습, 비슷한 모습(semblance)'을 되찾았다는 말이에요. some semblance of normal life 는 굳은 표현이에요."
+],
+[
+10,
+3,
+"vocabblank",
+null,
+"Find the word or phrase that rounds off the sentence best.\nThe old ship's log is ____ with graphic descriptions of storms, mutinies, and exotic creatures sighted at sea.",
+[
+"immune",
+"barren",
+"replete",
+"cryptic"
+],
+[
+3
+],
+"폭풍·선상 반란·바다에서 본 기이한 생물 묘사로 '가득한(replete with)'이 맞아요. barren(메마른)은 뜻이 반대이고, immune 은 to 와 짝이라 with 와 맞지 않아요."
+],
+[
+11,
+3,
+"grammar",
+null,
+"Find the underlined part that contains an error.\n①<u>Having been</u> delayed by heavy snow, the train ②<u>arrived</u> in the capital nearly three hours late, ③<u>leaving</u> hundreds of passengers ④<u>strand</u> on the platform.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"leave + 목적어 + 목적보어 꼴이에요. 승객이 '발이 묶인' 상태이니 과거분사 stranded 가 와야 해요. 앞의 Having been delayed 는 기차가 늦춰진 것이라 수동 완료 분사구문으로 맞아요."
+],
+[
+12,
+3,
+"grammar",
+null,
+"Find the underlined part that contains an error.\nEach of the regional hospitals ①<u>that</u> joined the pilot program ②<u>has</u> reported a marked drop in ③<u>their</u> emergency waiting times ④<u>since</u> the scheme began.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"주어가 Each of the hospitals 라 단수이고 사람이 아닌 병원이니 소유격도 its 여야 해요. 동사 has 는 단수 주어와 맞고, since 는 현재완료와 어울려요."
+],
+[
+13,
+3,
+"grammar",
+null,
+"Find the underlined part that contains an error.\nThe speed ①<u>at which</u> false stories spread online ②<u>has</u> dismayed many researchers, ③<u>several</u> of ④<u>them</u> now study how rumors propagate from one platform to another.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"두 절을 접속사 없이 쉼표로만 이었으니 뒤 절은 관계사절이어야 해요. several of them 을 several of whom 으로 고쳐야 해요. at which 는 spread at a speed 에서 온 전치사+관계사이고, has 는 단수 주어 The speed 와 맞아요."
+],
+[
+14,
+3,
+"grammar",
+null,
+"Find the underlined part that contains an error.\nNot until the final inspection report ①<u>was published</u> ②<u>the public learned</u> how ③<u>seriously</u> the old bridge had been damaged by the floods ④<u>earlier</u> that spring.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+2
+],
+"Not until ~ 처럼 부정어구가 문장 맨 앞에 오면 주절은 도치해야 해요. did the public learn 이 맞아요. how seriously 는 과거분사 damaged 를 꾸미는 부사라 맞아요."
+],
+[
+15,
+3,
+"grammar",
+null,
+"Find the underlined part that contains an error.\nYoung people today read printed newspapers far ①<u>less</u> often ②<u>than</u> their parents ③<u>did</u> at the same age, ④<u>despite of</u> repeated efforts by publishers to entice them.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"despite 는 그 자체가 전치사라 of 를 붙이지 않아요. despite repeated efforts 나 in spite of repeated efforts 가 맞아요. less often than ~ did 는 비교 구문으로 맞아요."
+],
+[
+16,
+3,
+"grammarblank",
+null,
+"Find the form that belongs in the blank grammatically.\n____ a city's public transport becomes, the fewer residents feel that they need to own a car.",
+[
+"More reliable",
+"The most reliable",
+"The more reliable",
+"The reliabler"
+],
+[
+3
+],
+"뒤에 the fewer 가 짝으로 나오니 'the 비교급 ~, the 비교급 …(~할수록 더 …하다)' 구문이에요. 앞자리도 The more reliable 이어야 해요. reliable 은 긴 형용사라 -er 을 붙이지 않아요."
+],
+[
+17,
+3,
+"grammarblank",
+null,
+"Find the form that belongs in the blank grammatically.\nMany customers do not really know ____ when they first walk into a furniture store with only a hazy plan.",
+[
+"what do they want",
+"that they want",
+"which want they",
+"what they want"
+],
+[
+4
+],
+"know 의 목적어 자리에 들어가는 간접의문문이라 '의문사 + 주어 + 동사' 어순인 what they want 가 맞아요. what do they want 는 직접의문문 어순이고, that 은 want 의 목적어를 채워 주지 못해요."
+],
+[
+18,
+3,
+"grammarblank",
+null,
+"Find the form that belongs in the blank grammatically.\nThe committee is seriously considering ____ the application deadline by two weeks to give overseas students more time.",
+[
+"to extend",
+"extend",
+"extended",
+"extending"
+],
+[
+4
+],
+"consider 는 목적어로 동명사를 받는 동사예요(consider -ing). 그래서 extending 이 맞아요. to extend 는 decide·plan 같은 동사 뒤에 와요."
+],
+[
+19,
+3,
+"grammarblank",
+null,
+"Find the form that belongs in the blank grammatically.\nThe assembly instructions were written in such technical language ____ most customers gave up after the first page.",
+[
+"that",
+"which",
+"as",
+"what"
+],
+[
+1
+],
+"such + 명사 + that 은 '너무 ~해서 …하다'는 결과 구문이에요. 뒤에 주어(most customers)와 동사가 다 갖춰진 완전한 절이 오니 that 이 맞아요. which·what 은 빠진 자리가 있어야 써요."
+],
+[
+20,
+3,
+"grammarblank",
+null,
+"Find the form that belongs in the blank grammatically.\nShe sat quietly in the cramped waiting room with her eyes ____ on the door of the doctor's office.",
+[
+"fixing",
+"fixed",
+"to fix",
+"fix"
+],
+[
+2
+],
+"with + 명사 + 분사 꼴이에요. 눈이 문에 '고정된' 상태라 수동의 과거분사 fixed 가 맞아요."
+],
+[
+21,
+3,
+"cloze",
+"r3-c21",
+"Find the option that completes the paragraph most logically.",
+[
+"without computers if its rules are simple",
+"only when deliveries are made by private car",
+"only if every worker holds a university degree",
+"as long as it relies on sophisticated tracking software"
+],
+[
+1
+],
+"기술을 거의 쓰지 않고, 정규 교육이 짧은 일꾼들이 색·글자·숫자로 된 간단한 표시만으로 실수 없이 배달한다는 글이에요. '규칙이 단순하면 컴퓨터 없이도' 잘 돌아간다는 결론이 맞아요."
+],
+[
+22,
+3,
+"cloze",
+"r3-c22",
+"Find the option that completes the paragraph most logically.",
+[
+"most accidents are caused by mechanical failure",
+"the benefits of safety measures depend partly on human behavior",
+"drivers routinely disregard all new safety technology in automobiles",
+"safety devices invariably make road accidents considerably more frequent"
+],
+[
+2
+],
+"안전장치가 생기면 사람이 위험을 더 무릅써 효과 일부를 깎아 먹는다는 내용이에요. 그렇다고 장치를 버리자는 것은 아니라고 했으니 '안전 조치의 효과는 사람의 행동에 따라 달라진다'가 맞아요. invariably(언제나)는 글이 부정한 극단이에요."
+],
+[
+23,
+3,
+"cloze",
+"r3-c23",
+"Find the option that completes the paragraph most logically.",
+[
+"much of its blue light is scattered away first",
+"the molecules in the air suddenly grow much larger",
+"blue light is scattered more weakly than red light",
+"the sun itself gives off only red and orange light"
+],
+[
+1
+],
+"파란빛이 더 잘 흩어진다는 원리를 해 질 녘에 적용한 문장이에요. 빛이 공기를 훨씬 길게 지나오면 파란빛은 오는 길에 대부분 흩어져 버리고 붉은빛만 남아요. 파란빛이 더 약하게 흩어진다는 보기는 앞 설명과 반대예요."
+],
+[
+24,
+3,
+"cloze",
+"r3-c24",
+"Find the option that completes the paragraph most logically.",
+[
+"was rejected by audiences for many years",
+"had little effect on the way films were made",
+"brought new limitations along with new possibilities",
+"immediately freed cameras and made films more visually innovative"
+],
+[
+3
+],
+"관객은 열광했지만 목소리가 맞지 않는 배우가 밀려나고 카메라가 방음 상자에 갇혀 화면이 뻣뻣해졌다고 했어요. 새 가능성과 함께 새 제약도 가져왔다는 정리가 맞아요. 관객이 거부했다는 보기는 첫 문장과 어긋나요."
+],
+[
+25,
+3,
+"cloze",
+"r3-c25",
+"Find the option that completes the paragraph most logically.",
+[
+"start to be used in car factories",
+"become a routine part of everyday life",
+"require a special license to print or display",
+"lose their advantage over conventional barcodes in factories and shops"
+],
+[
+2
+],
+"오랫동안 틈새 기술이었다가 스마트폰 카메라가 바로 읽게 되자 식당 메뉴판·기차표까지 퍼졌다는 흐름이에요. '일상의 평범한 일부가 되었다'가 맞아요. 자동차 공장은 처음부터 쓰던 곳이라 순서가 거꾸로예요."
+],
+[
+26,
+3,
+"cloze",
+"r3-c26",
+"Find the option that completes the paragraph most logically.",
+[
+"rereading notes is the surest path to mastery",
+"the struggle to remember is itself part of learning",
+"students should shun practice questions before exams",
+"material that feels familiar is always well understood"
+],
+[
+2
+],
+"힘들고 답답한 떠올리기 연습이 오히려 오래 기억하게 한다는 내용이라, '기억해 내려 애쓰는 것 자체가 배움의 일부'라는 역설적 결론이 맞아요. 다시 읽기가 가장 확실하다는 보기는 글과 반대예요."
+],
+[
+27,
+3,
+"cloze",
+"r3-c27",
+"Find the option that completes the paragraph most logically.",
+[
+"make the leaves they eat more poisonous",
+"attract mates with their quiet behavior",
+"conserve the limited energy their food provides",
+"store extra fat for their long seasonal migrations"
+],
+[
+3
+],
+"질기고 영양이 적은 잎을 소화하느라 얻는 에너지가 적다는 설명 바로 뒤예요. 오래 자는 것은 '먹이에서 얻는 얼마 안 되는 에너지를 아끼는' 방법이라는 결론이 맞아요."
+],
+[
+28,
+3,
+"reading",
+"r3-s1",
+"What topic does the passage chiefly address?",
+[
+"the history of denim as a working fabric",
+"why luxury brands shun secondhand materials",
+"the way the European Union enforces its recycling laws",
+"the promise and practical limits of upcycling in fashion"
+],
+[
+4
+],
+"업사이클링이 버려진 옷에 더 높은 가치를 준다는 장점과, 손이 많이 가 규모를 키우기 어렵다는 한계를 함께 다룬 글이에요. EU 규정은 예로 든 한 문장일 뿐이에요."
+],
+[
+29,
+3,
+"reading",
+"r3-s1",
+"Which claim is NOT backed up by the passage?",
+[
+"EU member states must collect used textiles separately.",
+"Conventional recycling often turns clothes into lower-quality fibers.",
+"Some critics doubt that upcycling alone can absorb most discarded clothes.",
+"Upcycling is easy to automate because discarded clothes are largely uniform."
+],
+[
+4
+],
+"글은 버려진 옷이 크기·색·상태가 모두 달라 하나하나 손으로 다시 디자인해야 해서 규모를 키우기 어렵다고 했어요. 옷이 균일해 자동화가 쉽다는 말은 거꾸로예요."
+],
+[
+30,
+3,
+"reading",
+"r3-s2",
+"Which choice fits the blank in the passage most logically?",
+[
+"let them feel the choice is theirs",
+"issue more explicit and stringent orders",
+"reiterate the warning as often as possible",
+"keep the rationale behind the rule concealed from the people it affects"
+],
+[
+1
+],
+"명령조 메시지는 반발을 부르고, 까닭을 알려 주고 최종 결정을 듣는 사람에게 맡기는 메시지가 덜 반발을 산다고 했어요. '선택이 여전히 자기 것이라고 느끼게 하라'가 맞아요."
+],
+[
+31,
+3,
+"reading",
+"r3-s2",
+"What can reasonably be concluded from the passage?",
+[
+"Reactance occurs only among adolescents.",
+"A polite suggestion can be more persuasive than a direct command.",
+"Brehm believed that the freedoms people think they possess are purely imaginary.",
+"People rarely care about the freedoms that they themselves consider most important."
+],
+[
+2
+],
+"\"you must\" 같은 명령보다 까닭을 주고 결정을 맡기는 메시지가 저항이 적다고 했으니, 정중한 제안이 직접 명령보다 설득력 있을 수 있다고 추론할 수 있어요. 10대는 첫 예일 뿐이고, 중요한 자유일수록 반발이 커진다고 했어요."
+],
+[
+32,
+3,
+"reading",
+"r3-s3",
+"What topic does the passage chiefly address?",
+[
+"how tutors are trained to teach mathematics",
+"the cost of internet access for low-income families",
+"lasting learning losses from the pandemic and the struggle to recover",
+"why most students quickly caught up with their peers once schools reopened"
+],
+[
+3
+],
+"2020년 휴교의 영향이 몇 해 이어진 학습 결손, 저소득층 격차, 집중 과외와 결석 문제, 2025년 결과까지 다루며 회복에 오랜 노력이 필요하다고 맺는 글이에요. '팬데믹이 남긴 오래가는 학습 결손과 회복의 어려움'이 중심이에요. 인터넷은 저소득층 사정 한 대목이고, 과외 교사 양성법은 다루지 않으며, 빨리 따라잡았다는 말은 글과 반대예요."
+],
+[
+33,
+3,
+"reading",
+"r3-s3",
+"Which claim is NOT backed up by the passage?",
+[
+"High-dosage tutoring was first tested after 2020.",
+"Absence from school limits the benefit of extra help.",
+"Pandemic learning losses were generally larger in math than in reading.",
+"Average reading scores in the United States did not recover by early 2025."
+],
+[
+1
+],
+"글은 집중 과외의 효과가 '팬데믹 전에' 한 연구에서 이미 크게 나타났다고 했어요. 2020년 휴교 뒤에야 처음 시험했다는 말은 글과 맞지 않아요."
+],
+[
+34,
+3,
+"reading",
+"r3-s4",
+"Which heading suits the passage best?",
+[
+"A Hidden Step Behind Onion Tears",
+"Why Chefs Refuse to Cook With Onions",
+"The Health Risks of Eating Raw Onions",
+"How Japan Became the Foremost Onion Grower"
+],
+[
+1
+],
+"오랫동안 효소 하나로 설명하던 양파 눈물이 사실은 2002년에 밝혀진 두 번째 효소를 거쳐야 생긴다는 발견과 그 뒤 실험을 다룬 글이에요. '양파 눈물 뒤에 숨은 한 단계'가 제목으로 맞아요."
+],
+[
+35,
+3,
+"reading",
+"r3-s4",
+"According to the passage, the 2002 discovery was important because ____.",
+[
+"it proved that onions contain no sulfur compounds",
+"it suggested that tears could be reduced without forfeiting flavor",
+"it showed that the vapor forms on its own without any enzyme at all",
+"it explained why some people never shed a single tear when they cut onions"
+],
+[
+2
+],
+"눈물 나는 기체와 맛을 내는 물질이 서로 다른 단계에서 생기니, 맛을 잃지 않고 기체만 줄일 수 있을 것이라는 길이 열렸다고 했어요. 기체가 효소 없이 생긴다는 것은 옛 설명이고, 발견은 그 반대를 보여 줬어요."
+],
+[
+36,
+3,
+"reading",
+"r3-s5",
+"What is the passage mainly about?",
+[
+"the coin locks used on European carts",
+"Sylvan Goldman's career as a furniture maker",
+"how the shopping cart was invented and improved over time",
+"why supermarkets have gradually replaced their carts with smaller hand-held baskets"
+],
+[
+3
+],
+"당연해 보이는 쇼핑카트가 골드먼의 접이식 첫 카트에서 왓슨의 포개지는 카트로 바뀌고 점점 커졌다는 발명·개량 이야기예요. 동전 잠금은 끝의 한 대목이고, 골드먼은 슈퍼마켓 체인 주인이었으며, 카트는 오히려 더 커졌다고 했어요."
+],
+[
+37,
+3,
+"reading",
+"r3-s5",
+"Which claim is NOT backed up by the passage?",
+[
+"Shopping carts have become larger over time.",
+"The first carts were based on a folding chair.",
+"Coin locks encourage customers to return carts.",
+"Watson's cart had to be unfolded before every use."
+],
+[
+4
+],
+"펴고 접어야 했던 것은 골드먼의 첫 접이식 카트예요. 왓슨의 카트는 접지 않고 서로 포개어 두는 방식이라 맞지 않아요. 동전 잠금은 카트를 제자리에 돌려놔야 동전을 돌려받으니 반납할 까닭이 돼요."
+],
+[
+38,
+3,
+"reading",
+"r3-s6",
+"Which best describes the change in the narrator's attitude toward music?",
+[
+"from casual curiosity to utter tedium",
+"from fear of failure to assured ambition",
+"from dismissive rejection to quiet, renewed enjoyment",
+"from passionate devotion to the piano to bitter and lasting indifference"
+],
+[
+3
+],
+"어릴 때는 음악을 시간 낭비라며 그만뒀지만, 소리굽쇠를 친 뒤 아무에게도 잘 보일 필요 없이 다시 건반을 누르며 음계가 너그럽게 들린다고 했어요. 거부에서 조용히 되살아난 즐거움으로 바뀐 거예요. 손가락이 굳고 서툴다고 했으니 자신만만한 야망은 아니에요."
+],
+[
+39,
+3,
+"reading",
+"r3-s6",
+"What does the underlined \"that one\" refer to?",
+[
+"the keyboard in the hall closet",
+"the tone produced by the tuning fork",
+"the short letter from the teacher's nephew",
+"the narrator's first piano recital in front of an audience"
+],
+[
+2
+],
+"선생님은 소리굽쇠로 피아노 뚜껑을 두드리며 앞으로 칠 모든 음이 '그 음'에 견주어질 거라고 했어요. that one 은 소리굽쇠가 낸 기준음(note)을 가리켜요."
+],
+[
+40,
+3,
+"reading",
+"r3-s6",
+"Which claim is backed up by the passage?",
+[
+"The narrator's daughter no longer used the keyboard.",
+"Mrs. Arden strove to dissuade the narrator from quitting.",
+"The narrator had been one of Mrs. Arden's most gifted students.",
+"The nephew elaborated at length in his letter on why the fork had been sent to the narrator."
+],
+[
+1
+],
+"건반은 딸이 쓰지 않고 현관 벽장에 둔 싸구려 키보드였다고 했어요. 선생님은 그만둔다는 말에 다투지 않았고, 글쓴이는 가장 가망 없는 학생이었으며, 조카의 편지는 짧아 까닭을 알 수 없었어요."
+]
+]
+}

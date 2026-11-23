@@ -1,0 +1,2177 @@
+{
+"school": "dankook",
+"title": "단국대 편입영어 모의고사",
+"source": "단국대 편입영어 2024~2026학년도 기출 출제 유형(문항 수·영역·문제 꼴, VocabFactory 분석)을 분석해 dailyfreetoolbox 가 새로 만든 연습 문제",
+"checked": "2026-11-23",
+"minutes": 60,
+"points": [
+[
+1,
+30,
+2
+],
+[
+31,
+40,
+4
+]
+],
+"sections": [
+{
+"id": "vocab",
+"name": "어휘"
+},
+{
+"id": "gblank",
+"name": "어법 빈칸"
+},
+{
+"id": "grammar",
+"name": "틀린 곳"
+},
+{
+"id": "reading",
+"name": "독해"
+}
+],
+"passages": [
+{
+"id": "r1-s1",
+"text": "Not long ago, remembering a friend's telephone number was an ordinary task; today many people cannot recall even their own. Psychologists call the habit of handing information to external devices cognitive offloading, and it is hardly new. Scribes kept ledgers, navigators relied on charts, and merchants trusted their account books rather than their memories. What has changed is the scale and speed of the outsourcing. In an influential series of experiments published in 2011, Betsy Sparrow and her colleagues found that participants who believed a piece of trivia would be saved on a computer were less likely to remember the fact itself, though they were often able to recall the folder in which it had been stored. ____, the mind appeared to treat the computer as an external hard drive, retaining the path to the information rather than the information itself.\nWhether this habit is cause for alarm remains contested. Critics warn that a memory accustomed to delegation may grow lazy, leaving people less able to connect ideas they never genuinely absorbed. Defenders counter that the practice frees scarce mental resources for reasoning and creativity, much as a calculator spares us tedious arithmetic. The more sensible conclusion may be that delegating memory is neither a virtue nor a vice in itself; its value depends on what we choose to do with the attention it frees."
+},
+{
+"id": "r1-s2",
+"text": "Shoppers have long been trained to watch prices, but a subtler practice has drawn growing scrutiny since the inflationary surge of 2022: shrinkflation, in which a manufacturer reduces the quantity in a package while leaving its price unchanged or nearly so. A bag of crisps holds a few grams less; a roll of paper towels loses several sheets; a bottle of detergent shrinks by a modest fraction that few consumers notice. Because the packaging often retains its familiar dimensions, the alteration is easy to overlook, and the effective price per unit rises <u>surreptitiously</u>.\nManufacturers defend the tactic as a practical response to soaring costs for ingredients, energy, and transport, arguing that many customers prefer a slightly smaller product to a conspicuous price increase. Consumer advocates are less forgiving. They contend that the practice takes advantage of the limits of human attention, relying on shoppers who compare sticker prices rather than unit prices.\nRegulators have begun to respond. In July 2024, France began requiring large supermarkets to post notices beside products whose quantity had shrunk while their price per unit had risen, and legislators elsewhere have debated comparable measures. Statisticians, for their part, point out that official inflation indices in many countries are designed to capture shrinkflation, since they track the price per unit rather than per package. The difficulty, then, is less one of ____ than of perception: the data register what many shoppers fail to see."
+},
+{
+"id": "r1-s3",
+"text": "Long before public museums opened their doors, wealthy collectors across Renaissance Europe assembled what German speakers called the Wunderkammer, or cabinet of curiosities.\n(A) Yet the clutter was not without logic. Collectors sought to assemble a small model of the world within a single space, placing the products of nature side by side with the products of human ingenuity in order to reveal hidden correspondences between them. Marvels that did not fit any single category were especially prized, precisely because they blurred the lines between categories.\n(B) That very ambition, however, became a weakness once natural philosophers began to favor systematic classification over wonder. Collections were gradually broken up and redistributed by discipline, and some formed the core of the first public museums, such as the Ashmolean in Oxford, which opened in 1683. The modern museum, with its orderly departments, is in this sense both the descendant and the rejection of the cabinet.\n(C) These rooms, and sometimes merely cabinets, packed together objects that would later be divided among separate institutions: narwhal tusks passed off as unicorn horns, branches of coral, Roman coins, mechanical toys, and portraits of distant monarchs. To a modern visitor the effect might seem chaotic, even random."
+},
+{
+"id": "r1-s4",
+"text": "The placebo effect is familiar to most readers: it is the phenomenon whereby a chemically inactive tablet produces real relief simply because the patient anticipates it. Far less familiar is its darker twin, the nocebo effect: negative expectations that produce real symptoms. In clinical trials, participants who receive sugar pills frequently report the very side effects listed on the consent form, such as headaches, nausea, and fatigue. (A) ____, people warned that a procedure will hurt tend to rate it as more painful than those given neutral information.\nThis creates an uncomfortable problem for doctors. Ethical guidelines oblige them to disclose possible adverse effects, yet the act of disclosure may itself trigger some of those effects. A striking illustration came from research on statins, drugs that lower cholesterol. In a 2020 British study, patients who had abandoned these drugs because of muscle aches were given a rotation of the real drug, identical-looking dummy pills, and months with no tablets at all. They reported nearly as much discomfort in the dummy-pill months as in the months on the real drug.\nNone of this means that such symptoms are imaginary or that patients should be kept in the dark. (B) ____, researchers are exploring ways of framing information that are both truthful and less alarming, for instance by stressing that the great majority of patients experience no trouble with a medication instead of focusing on the few who do."
+},
+{
+"id": "r1-s5",
+"text": "With twelve distinct classes of color receptor, compared with the mere three that underpin human color vision, the mantis shrimp was long assumed to perceive a rainbow of colors beyond human imagining. The assumption seemed natural: more receptors ought to mean finer discrimination. When researchers in Australia put the idea to a rigorous test in 2014, however, the results were humbling for the crustacean. Trained to choose between pairs of colors, the shrimp struggled to distinguish wavelengths that differed by less than roughly twelve to twenty-five nanometers, whereas humans can often tell apart colors separated by just a few.\nThe researchers proposed an interesting explanation. Rather than comparing signals from different receptors, as human brains slowly do, the shrimp may simply register which receptor is most strongly stimulated, recognizing colors almost instantly instead of analyzing them. Such a system would sacrifice subtlety for speed, a sensible ____ for a predator that strikes with one of the fastest punches in the animal kingdom and has little time to deliberate."
+},
+{
+"id": "r1-s6",
+"text": "Boredom has a poor reputation. Parents rush to rescue children from it, and adults reach for their phones at the first hint of an idle moment. The dislike runs deep. In a much-discussed 2014 study led by the psychologist Timothy Wilson, participants were asked to sit alone in a bare room with nothing to do but think for up to fifteen minutes. Many found the experience so <u>irksome</u> that they chose to give themselves a mild electric shock, a shock that many of them had earlier said they would pay to avoid. Overall, roughly two-thirds of the men and a quarter of the women pressed the button at least once.\nYet some researchers contend that boredom serves a purpose. Like hunger or pain, it may function as a signal, alerting us that our current activity has ceased to be rewarding and prompting us to seek something more meaningful. There is also tentative evidence that it can nourish creativity. In one British experiment, participants who first spent a quarter of an hour copying numbers from a telephone directory later thought of more inventive uses for a pair of plastic cups than those who had been spared the tedious task, perhaps because a restless mind begins to wander.\nThe implication is not that boredom should be cultivated for its own sake, but that constantly ending it with digital distraction may deprive us of the very discomfort that pushes us toward new pursuits."
+},
+{
+"id": "r1-s7",
+"text": "For decades, discussions of climate-driven migration were framed in distant terms, with forecasts of millions displaced by rising seas at some uncertain point in the future. For the inhabitants of Tuvalu, a Pacific nation of roughly eleven thousand people scattered across low-lying atolls, the issue has never felt abstract. Most of its land lies only a few meters above sea level, and seawater already contaminates the groundwater on which crops depend.\nIn 2023 Tuvalu and Australia signed the Falepili Union, a treaty that, among other provisions, created a special visa pathway allowing up to 280 Tuvaluan citizens a year to settle in Australia with the right to live, work, and study there. When the first ballot for places opened in 2025, registrations vastly exceeded the number of available spots.\nThe agreement has been hailed as a pioneering model for nations confronting deadly environmental threats, yet it has also provoked unease. Some Tuvaluans worry that a steady departure of young people could hollow out their communities and erode a culture rooted in particular islands. The government, for its part, insists that migration is meant to be a choice rather than a mass departure, and it continues to pursue land reclamation while campaigning for its statehood and maritime boundaries to remain recognized even if its territory is eventually submerged."
+},
+{
+"id": "r1-s8",
+"text": "Aristotle's ethics is often summarized by the phrase golden mean, but the slogan invites misunderstanding. It suggests a dull counsel of moderation, as though the virtuous person were someone who never feels anything too intensely. Aristotle meant something considerably more demanding. Each virtue, in his account, lies between two vices, one of excess and one of deficiency. Courage, for example, sits between rashness, which rushes carelessly into danger, and cowardice, which flees from it at the first sign of threat. Generosity lies between prodigality and stinginess.\nCrucially, the mean is not an arithmetical midpoint fixed in advance. It is relative to us, shaped by circumstances, roles, and the particular situation. Fury may be precisely the right response to a grave injustice, whereas mild irritation would be a failure of feeling. ____, a soldier defending a city and a traveler stopped by a stranger on a dark road may experience similar fear yet be called upon to act very differently.\nHow, then, is anyone to identify the mean? Aristotle offers no formula. Instead, he points to practical wisdom, or phronesis, a capacity cultivated through experience and habit rather than learned from rules. We become just by performing just acts, he argues, much as we become builders by building. Virtue, on this view, is less a matter of knowing what is right in the abstract than of having trained one's perceptions and desires so that the right action comes to seem natural."
+},
+{
+"id": "r2-s1",
+"text": "Few items of health advice are repeated as confidently as the injunction to drink eight glasses of water a day. Yet the rule's pedigree is surprisingly murky. It is often traced to a 1945 recommendation from the Food and Nutrition Board in the United States, which suggested that adults needed roughly 2.5 liters of water daily. The very next sentence, frequently omitted in later retellings, noted that most of this quantity is contained in prepared foods. Somewhere along the way, a sensible estimate of total intake hardened into a prescription for glasses of plain water.\nIn fact, the body obtains fluid from a wide range of sources. Fruit and vegetables are largely water, and soups, milk, and even coffee and tea contribute substantially; for habitual drinkers, the mild diuretic effect of caffeine does not cancel out the fluid these beverages supply. For most healthy adults in temperate climates, thirst is a reasonably reliable ____, prompting them to drink well before dehydration becomes hazardous.\nNone of this implies that hydration is trivial. Athletes exercising in the heat, outdoor laborers, and elderly people, whose sense of thirst tends to diminish with age, may need to drink deliberately rather than waiting for the urge. The point is that a single universal number obscures how much requirements vary with body size, exertion, climate, and diet. Drinking water is rarely harmful, but the eight-glass rule owes its longevity more to its memorable simplicity than to evidence."
+},
+{
+"id": "r2-s2",
+"text": "Vertical farming once seemed poised to transform agriculture. By growing leafy greens in stacked trays under LED lights inside warehouses, start-ups promised crops free of pesticides, immune to drought, and harvested a few kilometers from the supermarkets that sold them. Venture capitalists invested billions in the industry during the late 2010s and early 2020s.\nThe reckoning arrived swiftly. Between 2023 and 2024, several prominent vertical-farming companies in the United States and Europe filed for bankruptcy or shut down entirely. The central difficulty was energy. A conventional farm receives its sunlight free of charge, whereas an indoor farm must pay to replace it, and when electricity prices surged after 2021, many operators found their costs (A) ____. Moreover, the crops that thrive indoors, such as lettuce and herbs, are low in calories and fetch modest prices, which limits the revenue each square meter can generate.\nAdvocates insist the idea is far from dead. They argue that cheaper renewable power and more efficient lighting could restore its economics, and that indoor farms make sense where arable land is scarce or the climate is extreme, as in Singapore or the Persian Gulf. Skeptics reply that the technology is likely to remain a (B) ____ rather than a substitute for fields, valuable in particular niches but incapable of feeding cities on its own."
+},
+{
+"id": "r2-s3",
+"text": "In the late 1990s, a series of experiments seemed to reveal something fundamental about self-control: that it behaves like a muscle, growing fatigued with use.\n(A) The controversy has not settled whether willpower can ever be depleted; some researchers maintain that the effect exists but is smaller and more fragile than once believed. What it has done is change how psychologists conduct research. Registering hypotheses in advance and sharing raw data, once rare practices, have become increasingly common, precisely so that a seductive idea cannot again outrun its evidence.\n(B) In the best-known study, hungry participants who had been made to resist a plate of freshly baked cookies and eat radishes instead gave up sooner on an unsolvable puzzle than those who had been allowed to indulge. The researchers called the phenomenon ego depletion, and over the following decade hundreds of studies appeared to corroborate it, extending the idea to dieting, shopping, and even moral conduct.\n(C) Doubts gradually accumulated, however. Many of the original studies relied on small samples, and journals were far more inclined to publish striking positive results than null findings. In 2016 a coordinated replication involving more than twenty laboratories and over two thousand participants found an effect so slight that it was statistically indistinguishable from zero."
+},
+{
+"id": "r2-s4",
+"text": "In the second book of Plato's Republic, Glaucon recounts the legend of Gyges, a shepherd who discovers a golden ring that renders its wearer invisible whenever its setting is turned toward the palm. Armed with this power, Gyges seduces the queen, murders the king, and seizes the throne. Glaucon's purpose in telling the story is deliberately provocative. He contends that anyone who possessed such a ring, the just and the unjust alike, would eventually behave in the same way, because people refrain from wrongdoing only out of fear of being caught. Justice, on this view, is a reluctant compromise struck by <u>the weak</u>: since most of us cannot commit injustice with impunity, we agree not to commit it so that we need not suffer it.\nSocrates devotes much of the remaining dialogue to a rebuttal. He argues that injustice corrupts the soul of the person who commits it, disordering its parts much as disease disorders the body, so that the unjust person is wretched whether or not anyone ever discovers the crime. Whether his answer succeeds has been debated for more than two millennia, but the question Glaucon posed retains its sting: would we remain honest if we knew that no one would ever find out?"
+},
+{
+"id": "r2-s5",
+"text": "At a growing number of airports, the boarding pass is giving way to the face. Travelers approach a camera at the gate, the system compares their image with a photograph on file, and the barrier opens within seconds. Proponents tout the technology as both faster and more secure than inspecting documents by eye, since a machine does not grow weary at the end of a long shift.\nGovernments have embraced it with particular enthusiasm at borders. In October 2025 the European Union began phasing in its Entry/Exit System, ____ records the fingerprints and facial images of most non-EU travelers on short stays and replaces the manual stamping of passports. In the United States, the Transportation Security Administration has expanded facial comparison at airport checkpoints, though passengers there may still decline and request a manual identity check.\nPrivacy advocates remain <u>wary</u>. A stolen password can be changed; a face cannot. They worry that databases assembled for convenience could be repurposed for surveillance, and that error rates, which some studies have found to differ across demographic groups, could subject certain travelers to repeated and humiliating scrutiny. Supporters reply that images are often deleted shortly after verification and that the alternative, a human officer glancing at a photograph, is hardly infallible. The debate is therefore less about whether the technology works than about who controls the data it generates, and for how long."
+},
+{
+"id": "r2-s6",
+"text": "When people imagine how a major life event will affect them, they tend to picture the change itself and overlook what comes after it. A promotion, a new house, or a move to a sunnier city is expected to deliver lasting contentment. Psychologists who track well-being over many years, however, have documented a humbling regularity known as hedonic adaptation: after an initial surge, happiness usually drifts back toward its previous level as the novelty fades and the improvement becomes the new baseline.\nThe same process cushions people against misfortune. Many who suffer serious setbacks report, months later, levels of satisfaction far closer to their former state than they had predicted, although adaptation to some events, such as prolonged unemployment, appears to be slower and less complete. ____, our forecasts err in both directions, exaggerating the joy that good fortune will bring and the misery that adversity will inflict.\nResearchers have proposed ways to slow the fading of pleasure. Experiences that keep changing, such as travel or the mastery of a skill, tend to resist adaptation better than possessions, which remain static. Deliberately savoring small pleasures, or pausing to imagine one's life without a cherished advantage, can also restore a measure of the delight that familiarity erodes."
+},
+{
+"id": "r2-s7",
+"text": "The word quarantine carries the memory of a number. When the Black Death swept through Europe in the mid-fourteenth century, physicians had no conception of bacteria, yet many authorities sensed that the disease traveled with people and goods. In 1377 Ragusa, the Adriatic port now called Dubrovnik, ordered that ships arriving from infected areas must wait thirty days before their passengers and cargo could enter the city. Other harbors, Venice among them, later introduced similar rules, and the waiting time was ultimately lengthened to forty days; the Venetian phrase quaranta giorni gave English its word.\nWhy forty? The figure had no basis in what we would now call epidemiology. ____, it may have owed something to its resonance in Christian tradition, which associated forty days with purification, from the flood of Noah to the fast of Lent. Whatever its origin, the practice proved <u>prescient</u>: separating the possibly infected from the healthy curbed contagion even though no one could explain why.\nPorts built lazarettos, isolated compounds where travelers and merchandise were detained, and where goods were aired or fumigated. Confinement was often grim and occasionally deadly, and merchants resented delays that strangled commerce. Yet the underlying principle has endured for more than six centuries, reappearing in virtually every subsequent epidemic, including the global outbreak of 2020."
+},
+{
+"id": "r2-s8",
+"text": "Much of what we do each day is not, strictly speaking, decided. In diary studies conducted by the psychologist Wendy Wood and her colleagues, participants recorded what they were doing and thinking at regular intervals; roughly 43 percent of their actions were performed almost daily in the same context, usually while their minds were occupied with something else. Such behaviors are habits: responses triggered by cues in the environment rather than by deliberate intention.\nThis insight has practical implications for anyone hoping to change their conduct. Because habits are bound to context, willpower is a feeble instrument for dismantling them; a resolution made in a tranquil moment is easily overridden when the familiar cue reappears. More effective strategies tend to alter the environment itself. People who move house, for instance, often find it easier to abandon old routines, since the cues that sustained them have vanished. Adding friction to undesirable behaviors, such as keeping snacks out of sight, and removing friction from desirable ones, such as laying out running shoes the night before, can accomplish more than repeated exhortations to try harder.\nNew habits, meanwhile, take time to form. One frequently cited study found that the period required for a behavior to become automatic varied enormously, from a few weeks to the better part of a year."
+},
+{
+"id": "r3-s1",
+"text": "Asked how they feel, many people reach for a handful of blunt words: good, bad, stressed, fine. The psychologist Lisa Feldman Barrett has argued that the care with which we label our emotions, a capacity she calls emotional granularity, matters more than we might suppose. A person with high granularity does not merely feel bad; she tells apart being disappointed, resentful, anxious, or homesick, much as a trained wine taster detects flavors that a casual drinker groups together as simply red wine.\nThis is not a mere matter of taste. Studies in this line of research have reported that people who draw finer distinctions among their negative feelings tend to cope with distress more flexibly; they are, for example, less likely to drink heavily or lash out aggressively when upset. ____, people with low granularity may treat every unpleasant state as the same general distress, leaving them with a single, often blunt, remedy. Why should naming help? One possibility is that a precise label suggests a fitting response: someone who recognizes that she is lonely rather than merely miserable knows to call a friend.\nGranularity, moreover, appears to be learnable. Because emotion words are acquired through culture and conversation, enlarging one's vocabulary of feeling, whether by reading fiction, borrowing terms from other languages, or simply pausing to ask what exactly one is experiencing, may sharpen the distinctions themselves."
+},
+{
+"id": "r3-s2",
+"text": "Some seven thousand languages are in use around the world, and linguists estimate that around forty percent of them are endangered, many with only a few elderly speakers. Because of the crisis, the United Nations declared 2022 to 2032 the International Decade of Indigenous Languages. Increasingly, the response is digital. Communities are recording elders' stories, building online dictionaries, and adapting smartphone keyboards to unfamiliar alphabets, so that young people can send messages in their grandparents' tongue.\nArtificial intelligence has added both promise and new problems. Speech-recognition and translation tools could make <u>dwindling</u> languages usable in everyday technology, but such systems require huge amounts of recorded speech, which technology companies have sometimes sought to gather on their own terms. In New Zealand, the Māori broadcaster Te Hiku Media built its own speech-recognition tools for te reo Māori and has insisted that the recordings its community contributed remain under Māori control rather than being absorbed into commercial datasets.\nLinguists caution that technology cannot replace speakers. An archive can preserve the sound of a language, but only families and schools that use it daily can keep it alive. Digital tools are best understood as aids to passing a language on between generations, not as a museum in which a language is stored after its last speaker has gone."
+},
+{
+"id": "r3-s3",
+"text": "For decades, the standard advice about stress was simple: reduce it. Stress hormones were cast as enemies, and a pounding heart before an examination was treated as a symptom to be calmed.\n(A) None of this means that chronic stress is harmless. Prolonged pressure, such as caring for a sick relative for years or enduring persistent poverty, is linked to genuine harm to health, and no change of mindset can eliminate the conditions that produce it. Reappraisal is a tool for acute challenges, not a substitute for addressing their causes.\n(B) In a series of experiments, the psychologist Jeremy Jamieson and his colleagues told some participants, before a stressful task such as a mock job interview or a standardized test, that a racing pulse is a sign of the body getting ready to meet a challenge. Compared with those who received no such message, these participants often showed healthier patterns of heart activity and, in some studies, performed better.\n(C) Researchers have since begun to question whether the bodily response itself is the problem. The rush of adrenaline that comes with a challenge sharpens attention and delivers oxygen-rich blood to muscles and brain, preparing the body to perform. What seems to matter is how that arousal is interpreted."
+},
+{
+"id": "r3-s4",
+"text": "Go down a few hundred meters into the ocean and sunlight fades to nothing, yet the darkness is far from absolute. A large share of the creatures that live in the deep produce their own light. In one survey of animals filmed by remotely operated vehicles off the coast of California, roughly three-quarters of those observed in the water column were capable of bioluminescence. The glow usually arises from a chemical reaction in which a compound called luciferin is oxidized with the help of an enzyme, releasing energy as light rather than heat.\nLight serves very different purposes in this dark world. The anglerfish hangs a glowing lure in front of its head to draw prey toward its jaws. Hatchetfish and some squid emit a faint glow from their bellies that matches the dim light coming from above, hiding the outline a predator below would otherwise see, a tactic known as counter-illumination. Certain tiny plankton flash when disturbed, which may act as a burglar alarm, calling in larger predators that prey on whatever is attacking them.\nBecause most of this light is blue or green, the colors that travel farthest through seawater, many deep-sea animals have eyes tuned to those wavelengths. A few predators, however, produce red light that most of their prey cannot ____, allowing them to illuminate a target without giving away their own position."
+},
+{
+"id": "r3-s5",
+"text": "The promise of the smart city is attractive: sensors that time traffic lights to actual traffic, bins that report when they are full, streetlights that dim when no one is near. Each of these conveniences, however, depends on collecting data about how residents move and behave, and the question of who owns that data has proved far more contentious than the technology itself.\nToronto learned this lesson early. In 2017 the city's waterfront agency selected Sidewalk Labs, a sister company of Google, to develop a high-tech neighborhood on its eastern shoreline. The project soon became caught up in a dispute over surveillance and data governance, and in 2020 the company withdrew, citing economic uncertainty during the pandemic. (A) ____, the episode became a warning for planners elsewhere.\nRegulators have since moved to draw firmer lines. The European Union's Artificial Intelligence Act, adopted in 2024, largely bans police from using real-time facial recognition in publicly accessible spaces, allowing it only in a few clearly defined cases, such as searching for kidnapping victims. Some cities now publish registers of the algorithms they use and require that data be stripped of names before it is shared with private companies.\nSupporters of smart technology warn that too much caution could deprive cities of genuine benefits, such as fewer traffic jams and lower energy use. (B) ____, they argue, the goal should be to govern data wisely rather than to avoid collecting it altogether."
+},
+{
+"id": "r3-s6",
+"text": "When Emily Dickinson died in 1886, she left behind nearly 1,800 poems, fewer than a dozen of which had been published in her lifetime, and those largely without her consent. Her sister discovered the manuscripts in a locked box, many of them sewn into small hand-bound booklets. The first editions, which appeared in the 1890s, were a considerable success, but they presented a curiously <u>domesticated</u> Dickinson. Her editors regularized her punctuation, replaced her abundant dashes with commas and periods, smoothed some of her slant rhymes into conventional ones, and added titles for poems she had left untitled.\nThey meant no harm. They believed that readers would reject verse so unconventional and that minor corrections were the price of recognition. Yet the alterations hid exactly what made the poems distinctive. Dickinson's dashes create pauses and ambiguities that commas cannot reproduce; a line interrupted by a dash may be read in two directions at once.\nOnly in 1955, with an edition by the scholar Thomas H. Johnson that followed the manuscripts closely, did most readers encounter the poems in something approaching their original form. Even now, editors disagree about how to print marks that look sometimes like dashes and sometimes like slanted lines. The case illustrates a larger truth: an editor's choices, however well intentioned, shape the text we believe we are reading."
+},
+{
+"id": "r3-s7",
+"text": "Every sports fan has witnessed it: an experienced professional, perfect in practice, misses an easy putt or a routine free throw when the championship is on the line. Psychologists call this choking under pressure, and research by Sian Beilock and others suggests that it often stems not from too little concentration but from too much of the wrong kind.\nHighly practiced skills are largely automatic; an expert golfer does not consciously watch over each movement of the wrists. Under pressure, however, performers may begin monitoring and controlling actions that ordinarily run on their own, and this conscious meddling breaks up the smooth movement that skill depends on. ____, novices, whose skills are not yet automatic, are less vulnerable to this particular disruption, since they must attend to each step anyway.\nPressure can also hurt performance in a different way, by crowding working memory with worries, which is especially damaging on tasks such as mental arithmetic that require holding information in mind. Several fixes have been suggested. Some studies suggest that writing about one's anxieties shortly before an examination can free up mental resources, while athletes are sometimes taught to fix their attention on a single external target, or to occupy the mind with counting or humming, so that they do not overthink movements best left alone."
+},
+{
+"id": "r3-s8",
+"text": "Myopia, or nearsightedness, has become very common. In parts of East Asia, surveys have found that a large majority of young adults are nearsighted, a proportion far higher than a few generations ago. Because the change has been too rapid to be explained by genetics alone, researchers have looked to the environment, and the habit that first attracted suspicion was close work such as reading and, more recently, staring at screens.\nThe evidence, however, increasingly points to a different cause: too little time outdoors. Children who spend more hours outside tend to be less likely to develop myopia, apparently regardless of how much they read. One leading explanation is that bright daylight, often far more intense than the illumination inside buildings, prompts the retina to release dopamine, a chemical messenger that appears to slow the lengthening of the eyeball that makes distant objects appear blurred.\nSuch findings have prompted policy experiments. In Taiwan, schools were encouraged to send children outdoors for two hours a day, and the share of schoolchildren with myopia, which had been climbing for decades, then began to fall. Researchers caution, however, that outdoor time chiefly helps prevent the onset of myopia rather than reversing it once established, which is why attention has turned to treatments that might slow its progression in children who are already nearsighted."
+}
+],
+"q": [
+[
+1,
+1,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nFacing reporters after the defeat, the coach adopted a <u>truculent</u> tone, accusing referees of bias and threatening to boycott the league's next disciplinary hearing.",
+[
+"punctual",
+"persuasive",
+"plausible",
+"pugnacious"
+],
+[
+4
+],
+"truculent 는 '싸우려 드는, 공격적인'이라 pugnacious 와 가까워요. 심판을 편파적이라 몰아붙이고 청문회 보이콧까지 들먹였다는 뒷말이 단서예요. punctual(시간을 지키는)·persuasive(설득력 있는)·plausible(그럴듯한)은 뜻이 달라요."
+],
+[
+2,
+1,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nThe judge reminded both attorneys that only evidence <u>germane</u> to the alleged breach of contract would be admitted, so digressions about the founders' personal feud were struck.",
+[
+"permanent",
+"persistent",
+"pernicious",
+"pertinent"
+],
+[
+4
+],
+"germane 은 '(논점과) 밀접한 관련이 있는'이라 pertinent 와 같은 뜻이에요. 창업자들의 개인 다툼 같은 곁가지는 지웠다는 대비가 단서예요. permanent(영구적인)·persistent(끈질긴)·pernicious(해로운)는 생김새만 비슷해요."
+],
+[
+3,
+1,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nBehind the museum's glamorous exhibitions lies a rather <u>prosaic</u> reality of humidity logs, insurance paperwork, and conservators patiently removing decades of grime with cotton swabs.",
+[
+"hectic",
+"haughty",
+"humdrum",
+"hostile"
+],
+[
+3
+],
+"prosaic 는 '평범하고 단조로운'이라 humdrum 과 가까워요. 화려한 전시 뒤에 습도 기록·보험 서류 같은 지루한 일이 있다는 대비가 단서예요. hectic(정신없이 바쁜)·haughty(오만한)·hostile(적대적인)은 맞지 않아요."
+],
+[
+4,
+1,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nThe minister's <u>reticence</u> about the trade talks fueled speculation in the markets, since she had previously been eager to share every detail of the negotiations with journalists.",
+[
+"reserve",
+"temerity",
+"tenacity",
+"tolerance"
+],
+[
+1
+],
+"reticence 는 '말을 아낌, 과묵함'이라 reserve(말을 삼감)와 같은 뜻이에요. 전에는 세세한 내용까지 기자들에게 말하던 사람이 입을 닫았다는 대비가 단서예요. temerity(무모함)·tenacity(끈기)·tolerance(관용)는 뜻이 달라요."
+],
+[
+5,
+1,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nInstalling sensors that detect leaks automatically would <u>obviate</u> the need for the monthly inspections that currently require engineers to crawl through narrow and poorly ventilated tunnels.",
+[
+"prescribe",
+"preserve",
+"preclude",
+"predict"
+],
+[
+3
+],
+"obviate 는 '(필요·문제를) 미리 없애다'라 preclude 와 가까워요. 센서가 자동으로 새는 곳을 찾으면 매달 하던 점검이 필요 없어진다는 흐름이에요. prescribe(규정하다)·preserve(지키다)·predict(예측하다)는 뜻이 달라요."
+],
+[
+6,
+1,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nFor many small exporters, the sheer complexity of customs regulations has proved a greater <u>impediment</u> to growth than tariffs themselves, consuming hours that could be spent courting new clients.",
+[
+"entreaty",
+"hindrance",
+"endowment",
+"enactment"
+],
+[
+2
+],
+"impediment 는 '방해물, 장애'라 hindrance 와 가까워요. 복잡한 통관 규정이 새 고객을 찾을 시간을 잡아먹는다는 뒷말이 단서예요. entreaty(간청)·endowment(기부, 재능)·enactment(법 제정)는 맞지 않아요."
+],
+[
+7,
+1,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nThe anthropologist kept <u>copious</u> notes during her fieldwork, filling more than forty notebooks with observations of rituals, kinship terms, and the prices of goods at the weekly market.",
+[
+"proficient",
+"profane",
+"abundant",
+"private"
+],
+[
+3
+],
+"copious 는 '아주 많은, 풍부한'이라 abundant 와 가까워요. 공책 마흔 권 넘게 채웠다는 뒷말이 단서예요. proficient(능숙한)·profane(불경한)·private(사적인)은 뜻이 달라요."
+],
+[
+8,
+1,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nCritics who <u>disparage</u> graphic novels as mere comics for adolescents often overlook how sophisticated the interplay between image and text can be in the best examples of the form.",
+[
+"delineate",
+"denigrate",
+"deplete",
+"dedicate"
+],
+[
+2
+],
+"disparage 는 '깎아내리다, 얕보다'라 denigrate 와 같은 뜻이에요. 그래픽노블을 '청소년용 만화일 뿐'이라 낮춰 본다는 내용이 단서예요. delineate(묘사하다)·deplete(고갈시키다)·dedicate(바치다)는 뜻이 달라요."
+],
+[
+9,
+1,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nPatients recovering from the virus often remain <u>lethargic</u> for weeks after their fever subsides, struggling to concentrate at work and sleeping far longer than they normally would.",
+[
+"timid",
+"turbulent",
+"sluggish",
+"tender"
+],
+[
+3
+],
+"lethargic 은 '무기력한, 나른한'이라 sluggish(굼뜨고 활기 없는)와 가까워요. 집중이 어렵고 잠을 훨씬 오래 잔다는 뒷말이 단서예요. timid(소심한)·turbulent(격동하는)·tender(다정한, 아픈)는 맞지 않아요."
+],
+[
+10,
+1,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nEtiquette manuals of the Victorian era obsessed over <u>propriety</u>, prescribing exactly how long a social call should last and when a gentleman might remove his gloves.",
+[
+"dexterity",
+"decadence",
+"decorum",
+"devotion"
+],
+[
+3
+],
+"propriety 는 '예의범절, 품위 있는 행동'이라 decorum 과 같은 뜻이에요. 방문 시간, 장갑 벗는 때까지 정해 줬다는 예가 단서예요. dexterity(솜씨)·decadence(퇴폐)·devotion(헌신)은 뜻이 달라요."
+],
+[
+11,
+1,
+"gblank",
+null,
+"빈칸에 들어갈 말로 어법상 가장 알맞은 것을 고르시오.\nThe regional archive holds thousands of wartime letters, ____ were written by soldiers who never returned from the front and have never been published.",
+[
+"most of these",
+"most of which",
+"most of whom",
+"which most"
+],
+[
+2
+],
+"빈칸 뒤에 동사 were written 이 바로 오니 접속사 구실을 하는 관계사가 필요해요. 선행사가 사물인 letters 라 most of which 가 맞아요. most of these 는 접속사가 없어 두 문장이 그냥 붙고, whom 은 사람을 받을 때 써요."
+],
+[
+12,
+1,
+"gblank",
+null,
+"빈칸에 들어갈 말로 어법상 가장 알맞은 것을 고르시오.\nHistorians are still debating the precise process ____ the medieval manuscript reached the monastery library, although a donation from a local merchant seems the most plausible explanation.",
+[
+"which",
+"by which",
+"by that",
+"of what"
+],
+[
+2
+],
+"빈칸 뒤 the manuscript reached the library 는 빠진 성분이 없는 완전한 문장이에요. 그래서 관계대명사 which 혼자는 못 오고, '그 과정을 거쳐'라는 뜻의 전치사+관계대명사 by which 가 맞아요. 전치사 뒤에는 관계대명사 that 을 쓸 수 없어요."
+],
+[
+13,
+1,
+"gblank",
+null,
+"빈칸에 들어갈 말로 어법상 가장 알맞은 것을 고르시오.\nAlthough the new tax form was intended to simplify filing, many accountants found it remarkably difficult ____, especially for clients with income from several countries.",
+[
+"interpret",
+"to interpreting",
+"to interpret",
+"of interpreting"
+],
+[
+3
+],
+"found it difficult to do 꼴로, it 은 가목적어이고 진짜 목적어는 to부정사예요. 형용사 difficult 뒤에는 to interpret 가 와요. 여기서 to 는 전치사가 아니라 to interpreting 은 틀려요."
+],
+[
+14,
+1,
+"gblank",
+null,
+"빈칸에 들어갈 말로 어법상 가장 알맞은 것을 고르시오.\nBy the time the bridge reopens next spring, its steel cables ____ entirely, a task that engineers estimate will cost nearly twice the original budget.",
+[
+"will have been replaced",
+"will have replaced",
+"have been replaced",
+"are replacing"
+],
+[
+1
+],
+"By the time + 현재시제(reopens)는 미래의 한 시점까지 끝나 있을 일을 말하니 미래완료가 필요해요. 케이블은 '교체되는' 쪽이라 수동 will have been replaced 가 맞아요. will have replaced 는 케이블이 무언가를 교체한다는 능동이에요."
+],
+[
+15,
+1,
+"gblank",
+null,
+"빈칸에 들어갈 말로 어법상 가장 알맞은 것을 고르시오.\nMost of the vaccines ____ in the trial had to be kept at extremely low temperatures, which made distributing them to remote clinics a formidable logistical challenge.",
+[
+"administering",
+"were administered",
+"administered",
+"having administered"
+],
+[
+3
+],
+"문장의 동사는 had to be kept 이니 빈칸은 앞 명사 the vaccines 를 꾸미는 말이에요. 백신은 '투여되는' 것이라 과거분사 administered 가 맞아요. were administered 를 넣으면 동사가 둘이 돼요."
+],
+[
+16,
+1,
+"grammar",
+null,
+"밑줄 친 ①~④ 가운데 어법상 옳지 않은 것을 고르시오.\n①<u>Faced with</u> a surge in asylum applications and mounting budget pressures, several governments have revised policies ②<u>that</u> had remained largely unchanged for decades, a decision ③<u>which</u> has provoked fierce debate among legislators who ④<u>represents</u> border regions.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"who 의 선행사가 복수 legislators 라 관계사절 동사도 represent 여야 해요. 문장 앞 Faced with 는 주어 governments 가 '직면하게 된' 것을 나타내는 수동 분사구문이라 맞아요."
+],
+[
+17,
+1,
+"grammar",
+null,
+"밑줄 친 ①~④ 가운데 어법상 옳지 않은 것을 고르시오.\nAlthough the company insists that ①<u>it is</u> committed to ②<u>reduce</u> its emissions, critics note that its newest plant, ③<u>which</u> opened last year, burns more coal than the three older facilities it was meant ④<u>to replace</u>.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+2
+],
+"be committed to 의 to 는 전치사라 뒤에 동명사가 와야 해요. reduce 가 아니라 reducing 이 맞아요. 끝의 was meant to replace 는 '대체하기로 되어 있던'이라는 to부정사라 맞아요."
+],
+[
+18,
+1,
+"grammar",
+null,
+"밑줄 친 ①~④ 가운데 어법상 옳지 않은 것을 고르시오.\nVolunteers who enrolled in the study were asked to weigh ①<u>themselves</u> every morning, but many found the routine so tedious that they ②<u>stopped</u> after a week, leaving the researchers ③<u>to rely</u> on the handful of participants who had kept ④<u>himself</u> motivated.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"재귀대명사는 가리키는 말과 수가 같아야 해요. who 의 선행사가 복수 participants 이니 himself 가 아니라 themselves 가 맞아요. 앞의 weigh themselves 는 복수 Volunteers 를 받으니 맞아요."
+],
+[
+19,
+1,
+"grammar",
+null,
+"밑줄 친 ①~④ 가운데 어법상 옳지 않은 것을 고르시오.\nThe noise ①<u>generated</u> by trucks passing through the narrow streets at night ②<u>has</u> long troubled residents, many of ③<u>whom</u> welcomed the council's decision to ④<u>comply</u> the new regulations on freight traffic.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"comply 는 자동사라 '규정을 따르다'는 comply with the regulations 처럼 전치사 with 가 있어야 해요. 주어 The noise 가 단수라 has, 사람(residents)을 받는 many of whom 은 맞아요."
+],
+[
+20,
+1,
+"grammar",
+null,
+"밑줄 친 ①~④ 가운데 어법상 옳지 않은 것을 고르시오.\nEarly reviewers ①<u>dismissed</u> the novel as tedious, and its author, ②<u>discouraged</u> by poor sales, neither revised the manuscript ③<u>or</u> attempted another book for nearly a decade, a silence ④<u>that</u> puzzled even his closest friends.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"neither 는 nor 와 짝을 이뤄 'A 도 B 도 아닌'을 만들어요. neither revised ... nor attempted 가 되어야 하니 or 가 틀려요. 판매 부진에 '낙담한'은 과거분사 discouraged 가 맞아요."
+],
+[
+21,
+1,
+"reading",
+"r1-s1",
+"Which of the following best fills in the blank?",
+[
+"Nevertheless",
+"By contrast",
+"Otherwise",
+"In effect"
+],
+[
+4
+],
+"빈칸 앞은 실험 결과(사실은 잊고 저장 위치는 기억함), 뒤는 그 결과를 '컴퓨터를 외장 하드처럼 쓴다'고 풀어 말한 거예요. 앞 내용을 한마디로 정리하니 In effect(사실상)가 맞아요. 대조(By contrast)나 양보(Nevertheless)의 흐름이 아니에요."
+],
+[
+22,
+1,
+"reading",
+"r1-s1",
+"Which of the following is true according to the passage?",
+[
+"Cognitive offloading first emerged with the spread of personal computers.",
+"Defenders of offloading argue that it gradually weakens people's capacity for careful reasoning.",
+"The author concludes that offloading is inherently harmful to memory.",
+"Participants sometimes remembered where a fact was saved even when they forgot the fact itself."
+],
+[
+4
+],
+"2011년 실험에서 사실은 잘 기억하지 못해도 저장된 폴더는 떠올린 경우가 많았다고 했어요. 오프로딩은 '새롭지 않다(hardly new)'고 했고, 옹호하는 쪽은 오히려 추론에 쓸 자원을 아껴 준다고 했어요. 글쓴이는 그 자체로 좋지도 나쁘지도 않다고 결론 내려요."
+],
+[
+23,
+1,
+"reading",
+"r1-s2",
+"Which of the following is closest in meaning to the underlined word?",
+[
+"furtively",
+"abruptly",
+"legitimately",
+"temporarily"
+],
+[
+1
+],
+"surreptitiously 는 '남몰래, 슬그머니'라 furtively 와 같은 뜻이에요. 포장 크기는 그대로라 바뀐 걸 알아채기 어렵다는 앞말이 단서예요. abruptly(갑자기)는 '눈에 띄지 않게'라는 뜻이 없어요."
+],
+[
+24,
+1,
+"reading",
+"r1-s2",
+"Which of the following is most appropriate for the blank?",
+[
+"morality",
+"packaging",
+"competition",
+"measurement"
+],
+[
+4
+],
+"통계 지표는 이미 단위당 가격으로 슈링크플레이션을 잡아낸다고 했어요. 그러니 문제는 '측정(measurement)'이 아니라 소비자가 '알아채느냐(perception)'라는 대비예요. 콜론 뒤 '자료는 기록하지만 소비자는 못 본다'가 단서예요."
+],
+[
+25,
+1,
+"reading",
+"r1-s2",
+"Which of the following is NOT true according to the passage?",
+[
+"France banned manufacturers from reducing the size of their products in 2024.",
+"Some manufacturers claim that customers prefer smaller portions to visibly higher prices.",
+"Shrinkflation can raise the effective unit price without changing the sticker price.",
+"Official inflation figures may reflect shrinkflation by tracking prices per unit."
+],
+[
+1
+],
+"프랑스는 양을 줄이는 걸 금지한 게 아니라, 양이 줄고 단위 가격이 오른 상품 옆에 안내문을 붙이게 했어요. 제조사의 변명, 표시 가격은 그대로인데 단위 가격이 오르는 점, 단위 가격으로 재는 물가 지표는 모두 글과 맞아요."
+],
+[
+26,
+1,
+"reading",
+"r1-s3",
+"Which of the following is the most appropriate order of paragraphs (A), (B), and (C)?",
+[
+"(A) – (C) – (B)",
+"(C) – (A) – (B)",
+"(B) – (A) – (C)",
+"(C) – (B) – (A)"
+],
+[
+2
+],
+"첫 문장 뒤에는 그 방에 무엇이 있었는지 보여 주는 (C)가 와요. (C)의 '뒤죽박죽처럼 보인다'를 (A)가 Yet the clutter(그래도 그 어수선함에도 논리가 있었다)로 받고, (A)의 '세상을 한곳에 모으려는 야심'을 (B)가 That very ambition 으로 받아요."
+],
+[
+27,
+1,
+"reading",
+"r1-s3",
+"What is the topic of the passage?",
+[
+"the origins and legacy of the cabinet of curiosities",
+"the trade in narwhal tusks sold as unicorn horns",
+"the founding of the Ashmolean Museum in Oxford in 1683",
+"the techniques Renaissance painters used for royal portraits"
+],
+[
+1
+],
+"호기심의 방에 무엇이 있었고, 어떤 생각으로 모았으며, 어떻게 흩어져 근대 박물관의 바탕이 됐는지를 차례로 다뤄요. 일각고래 엄니와 애슈몰린 박물관은 한 부분에 나오는 예일 뿐이고, 왕 초상화 기법은 글에 없어요."
+],
+[
+28,
+1,
+"reading",
+"r1-s4",
+"Which of the following best fills in blanks (A) and (B)?",
+[
+"(A) In contrast — (B) Instead",
+"(A) Similarly — (B) Instead",
+"(A) Similarly — (B) Otherwise",
+"(A) Nevertheless — (B) For example"
+],
+[
+2
+],
+"(A) 가짜 약으로 부작용을 느끼는 예에 '아플 거라는 말을 들으면 더 아프다'는 같은 쪽 예를 더하니 Similarly 예요. (B) '숨기자는 말이 아니다'를 받아 '그 대신' 덜 겁주는 설명법을 찾는다는 흐름이라 Instead 가 맞아요."
+],
+[
+29,
+1,
+"reading",
+"r1-s4",
+"What is the main idea of the passage?",
+[
+"Negative expectations can cause real symptoms, which complicates how doctors communicate risks.",
+"Patients in clinical trials often report the side effects that are listed on their consent forms.",
+"Patients who are warned that a procedure will hurt tend to rate it as more painful.",
+"Doctors should stop informing patients about possible side effects."
+],
+[
+1
+],
+"부정적 기대가 실제 증상을 낳는 노시보 효과와, 그 때문에 의사가 위험을 알리는 방식이 어려워진다는 게 중심이에요. 동의서 부작용 호소, 아프다는 말을 들은 환자 이야기는 한 부분의 예일 뿐이고, 글은 환자에게 숨기자는 게 아니라고 분명히 말해요."
+],
+[
+30,
+1,
+"reading",
+"r1-s4",
+"Which of the following is true according to the passage?",
+[
+"Patients taking placebos sometimes report side effects described on consent forms.",
+"The nocebo effect is more widely known than the placebo effect.",
+"In the 2020 study, participants felt far less discomfort with dummy pills than with the real drug.",
+"The author recommends withholding information about risks from patients."
+],
+[
+1
+],
+"가짜 약을 먹은 참가자가 동의서에 적힌 부작용을 그대로 호소한다고 했어요. 노시보는 플라세보보다 '훨씬 덜' 알려졌고, 2020년 연구에서는 가짜 약 기간에도 '거의 비슷하게' 불편을 느꼈어요."
+],
+[
+31,
+1,
+"reading",
+"r1-s5",
+"Which of the following is most appropriate for the blank?",
+[
+"coincidence",
+"handicap",
+"trade-off",
+"extravagance"
+],
+[
+3
+],
+"섬세함을 포기하고 속도를 얻는다는 앞말은 하나를 내주고 다른 하나를 얻는 '맞바꿈(trade-off)'이에요. sensible(현명한)과 어울려야 하니 handicap(불리한 조건)·extravagance(낭비)는 맞지 않아요."
+],
+[
+32,
+1,
+"reading",
+"r1-s5",
+"Which of the following is NOT true according to the passage?",
+[
+"The 2014 experiments confirmed that mantis shrimp detect far subtler color differences than humans.",
+"Human color vision relies on three types of color receptor.",
+"The shrimp's visual system may favor rapid recognition over precise comparison.",
+"The researchers trained the shrimp to choose between pairs of colors."
+],
+[
+1
+],
+"2014년 실험은 오히려 갯가재가 사람보다 가까운 색을 덜 구별한다는 걸 보여 줬어요. 그래서 '사람보다 훨씬 미세한 차이를 본다'가 글과 맞지 않아요. 사람의 수용체 세 종류, 빠른 인식, 색 고르기 훈련은 글과 같아요."
+],
+[
+33,
+1,
+"reading",
+"r1-s6",
+"Which of the following is closest in meaning to the underlined word?",
+[
+"soothing",
+"instructive",
+"mysterious",
+"vexing"
+],
+[
+4
+],
+"irksome 은 '짜증스러운, 성가신'이라 vexing 과 가까워요. 차라리 전기 충격을 택할 만큼 혼자 생각만 하는 시간이 괴로웠다는 뒷말이 단서예요. soothing(마음을 달래는)은 반대예요."
+],
+[
+34,
+1,
+"reading",
+"r1-s6",
+"Which of the following is the best title for the passage?",
+[
+"Why People Shock Themselves When Alone",
+"The Unexpected Uses of Boredom",
+"Smartphones and the Fear of Idle Moments",
+"Why Children Should Never Be Bored"
+],
+[
+2
+],
+"사람들이 지루함을 몹시 싫어하지만, 지루함이 '다른 걸 찾으라'는 신호가 되고 창의성을 키울 수도 있다는 글이라 'The Unexpected Uses of Boredom'이 맞아요. 전기 충격 실험·스마트폰은 한 부분의 예일 뿐이고, 아이들이 절대 지루해선 안 된다는 주장은 글에 없어요."
+],
+[
+35,
+1,
+"reading",
+"r1-s6",
+"Which of the following is true according to the passage?",
+[
+"Women in the 2014 study shocked themselves more often than the men taking part did.",
+"In one study, people who first did a dull task later gave more creative answers.",
+"The author recommends making oneself bored as often as possible.",
+"Researchers have proven that boredom always leads to creativity."
+],
+[
+2
+],
+"전화번호부를 베끼는 지루한 일을 먼저 한 사람들이 플라스틱 컵 쓰임새를 더 기발하게 떠올렸다고 했어요. 버튼을 누른 비율은 남자가 더 높았고, 글쓴이는 일부러 지루해지자는 게 아니라고 했으며, 창의성 근거는 '잠정적(tentative)'이라고 했어요."
+],
+[
+36,
+1,
+"reading",
+"r1-s7",
+"According to the passage, what concern do some Tuvaluans have about the visa pathway?",
+[
+"It admits too few applicants with professional qualifications.",
+"It requires migrants to renounce their Tuvaluan citizenship before they settle in Australia.",
+"It forces residents to leave the islands by a fixed date.",
+"It might drain the islands of young people and weaken their culture."
+],
+[
+4
+],
+"젊은이들이 꾸준히 떠나면 공동체가 비고 섬에 뿌리내린 문화가 약해질 수 있다고 걱정한다고 했어요. 자격 조건, 국적 포기, 정해진 날짜까지 떠나야 한다는 이야기는 글에 없어요."
+],
+[
+37,
+1,
+"reading",
+"r1-s7",
+"Which of the following is NOT true according to the passage?",
+[
+"The treaty allows a limited number of Tuvaluans to move to Australia each year.",
+"Seawater has already affected the groundwater used for crops.",
+"Few Tuvaluans applied when the first ballot opened.",
+"Tuvalu's government seeks continued recognition of its statehood even if its land disappears."
+],
+[
+3
+],
+"첫 추첨 때 신청이 자리 수를 '크게 넘었다(vastly exceeded)'고 했으니, 신청한 사람이 적었다는 말은 글과 맞지 않아요. 해마다 정해진 인원, 바닷물에 오염된 지하수, 국가 지위 인정 요구는 글과 같아요."
+],
+[
+38,
+1,
+"reading",
+"r1-s8",
+"Which of the following best fills in the blank?",
+[
+"Likewise",
+"Nonetheless",
+"In contrast",
+"Even so"
+],
+[
+1
+],
+"앞 문장은 '상황에 따라 알맞은 감정이 다르다'는 예이고, 빈칸 뒤 병사와 나그네도 같은 두려움에 달리 행동해야 한다는 또 하나의 예예요. 같은 쪽 예를 더하니 Likewise 가 맞아요."
+],
+[
+39,
+1,
+"reading",
+"r1-s8",
+"What is the main idea of the passage?",
+[
+"Courage, for Aristotle, lies between the vices of rashness and cowardice.",
+"For Aristotle, virtue is a context-dependent mean found through practical wisdom.",
+"Aristotle believed that people become just mainly by performing just acts repeatedly.",
+"Aristotle argued that the virtuous person should avoid feeling any emotion too intensely."
+],
+[
+2
+],
+"중용은 미리 정해진 산술적 가운데가 아니라 상황에 따라 달라지고, 경험으로 기른 실천적 지혜로 알아본다는 게 요지예요. 용기의 예, 정의로운 행동의 반복은 한 부분의 내용이고, 감정을 늘 약하게 느끼라는 건 글이 '오해'라고 한 내용이에요."
+],
+[
+40,
+1,
+"reading",
+"r1-s8",
+"Which of the following is true according to the passage?",
+[
+"Aristotle held that virtues are developed through repeated practice.",
+"Aristotle defined the mean as an exact midpoint between two extremes.",
+"For Aristotle, generosity is itself a form of excess.",
+"Aristotle believed that phronesis could be learned entirely from written rules."
+],
+[
+1
+],
+"정의로운 행동을 해서 정의로워진다, 집을 지어 목수가 되듯이라고 했으니 덕은 되풀이한 실천으로 길러져요. 중용은 정확한 가운데가 아니고, 너그러움은 지나침(낭비)과 모자람(인색) 사이의 덕이에요. 실천적 지혜는 규칙으로 배우는 게 아니라고 했어요."
+],
+[
+1,
+2,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nThe usually <u>loquacious</u> senator, notorious for speeches that stretched past midnight, answered every question at the hearing with a terse yes or no.",
+[
+"voluble",
+"vigilant",
+"volatile",
+"venerable"
+],
+[
+1
+],
+"loquacious 는 '말이 많은, 수다스러운'이라 voluble(입담 좋은, 말이 술술 나오는)과 가까워요. 자정을 넘기는 연설로 이름난 사람이 이번엔 짧게만 답했다는 대비가 단서예요. vigilant(경계하는)·volatile(변덕스러운)·venerable(존경받는)은 뜻이 달라요."
+],
+[
+2,
+2,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nThe renovated train station remains <u>redolent</u> of the industrial age, its iron arches and soot-darkened brickwork recalling an era when the city manufactured locomotives for half the continent.",
+[
+"evasive",
+"exclusive",
+"evocative",
+"exhaustive"
+],
+[
+3
+],
+"redolent of 는 '~을 떠올리게 하는'이라 evocative 와 같은 뜻이에요. 철제 아치와 그을린 벽돌이 기관차를 만들던 시대를 떠올리게 한다는 뒷말이 단서예요. evasive(얼버무리는)·exclusive(배타적인)·exhaustive(철저한)는 생김새만 비슷해요."
+],
+[
+3,
+2,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nInvestors who make <u>impetuous</u> decisions during a market panic often sell their shares at the worst possible moment, locking in losses that patience would have reversed.",
+[
+"rigid",
+"rash",
+"rational",
+"routine"
+],
+[
+2
+],
+"impetuous 는 '성급한, 충동적인'이라 rash 와 가까워요. 공포에 휩쓸려 최악의 순간에 팔고, 참았으면 되돌릴 손실을 굳힌다는 내용이 단서예요. rational(이성적인)은 반대 방향이에요."
+],
+[
+4,
+2,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nAfter a decade in prison, the man was finally <u>exonerated</u> when DNA evidence showed that the hair recovered at the crime scene belonged to someone else entirely.",
+[
+"vindicated",
+"vilified",
+"validated",
+"verified"
+],
+[
+1
+],
+"exonerate 는 '무죄임을 밝히다, 혐의를 벗기다'라 vindicated 와 가까워요. 현장 머리카락이 다른 사람 것이었다는 DNA 증거가 단서예요. vilified(비방당한)는 반대쪽이고 validated·verified 는 '확인된'이라 사람에게 쓰면 뜻이 맞지 않아요."
+],
+[
+5,
+2,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nAuditors flagged a <u>discrepancy</u> between the charity's published accounts and its bank records, noting that nearly two million dollars in donations could not be traced.",
+[
+"indulgence",
+"inconsistency",
+"insolvency",
+"incentive"
+],
+[
+2
+],
+"discrepancy 는 '불일치, 어긋남'이라 inconsistency 와 같은 뜻이에요. 공개 장부와 은행 기록이 맞지 않아 기부금 2백만 달러를 추적할 수 없었다는 뒷말이 단서예요. insolvency(지급 불능)는 두 기록 '사이'의 문제가 아니에요."
+],
+[
+6,
+2,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nAlthough the goal of planting a million trees is <u>laudable</u>, ecologists warn that saplings placed in unsuitable soil may wither within a year, squandering both money and effort.",
+[
+"commensurate",
+"compatible",
+"commendable",
+"contentious"
+],
+[
+3
+],
+"laudable 은 '칭찬할 만한'이라 commendable 과 같은 뜻이에요. Although 로 '목표는 좋지만 실제로는 문제가 있다'고 이어지는 흐름이 단서예요. commensurate(걸맞은)·compatible(양립하는)·contentious(논란이 있는)는 맞지 않아요."
+],
+[
+7,
+2,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nResidents were told to remain indoors until the storm <u>abated</u>, but many ventured out early to inspect the flooded streets and the fallen trees blocking their driveways.",
+[
+"subsided",
+"subscribed",
+"subsisted",
+"substituted"
+],
+[
+1
+],
+"abate 는 '(기세가) 누그러지다, 잦아들다'라 subsided 와 가까워요. 폭풍이 잦아들 때까지 집에 있으라는 지시가 문맥이에요. subscribed(구독했다)·subsisted(근근이 살았다)·substituted(대신했다)는 생김새만 비슷해요."
+],
+[
+8,
+2,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nNews that executives had awarded themselves bonuses while freezing workers' wages provoked widespread <u>indignation</u>, and several unions announced strikes within days.",
+[
+"optimism",
+"oblivion",
+"outrage",
+"obedience"
+],
+[
+3
+],
+"indignation 은 '(부당한 일에 대한) 분개'라 outrage 와 가까워요. 임원만 상여금을 챙기고 임금은 묶었다는 내용과 곧바로 이어진 파업이 단서예요. obedience(복종)는 반대 반응이에요."
+],
+[
+9,
+2,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nEarly drafts of the policy were so <u>amorphous</u> that officials from different ministries could not agree on what problem it was meant to solve or how success would be measured.",
+[
+"nominal",
+"numerous",
+"neutral",
+"nebulous"
+],
+[
+4
+],
+"amorphous 는 '형체가 없는, 막연한'이라 nebulous(흐릿한, 모호한)와 가까워요. 무슨 문제를 풀려는지조차 합의하지 못했다는 결과가 단서예요. nominal(명목상의)·numerous(수많은)·neutral(중립의)은 뜻이 달라요."
+],
+[
+10,
+2,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nThe <u>intrepid</u> correspondent traveled alone through territory controlled by armed militias, documenting abuses in villages that international observers had been unable to reach.",
+[
+"fearless",
+"feckless",
+"fastidious",
+"fraudulent"
+],
+[
+1
+],
+"intrepid 는 '두려움 없는, 대담한'이라 fearless 와 같은 뜻이에요. 무장 세력이 장악한 지역을 혼자 다녔다는 내용이 단서예요. feckless(무능한)·fastidious(까다로운)·fraudulent(사기의)는 생김새만 비슷해요."
+],
+[
+11,
+2,
+"gblank",
+null,
+"빈칸에 들어갈 말로 어법상 가장 알맞은 것을 고르시오.\nHaving been ____ twice by the same publisher, the poet decided to print her collection herself and sell copies at readings in local bookshops.",
+[
+"rejecting",
+"rejected",
+"reject",
+"to reject"
+],
+[
+2
+],
+"Having been 다음에는 과거분사가 와서 완료 수동 분사구문을 만들어요. 시인은 출판사에게 '거절당한' 쪽이고, 그 일이 직접 출판을 결심한 것보다 먼저라 Having been rejected 가 맞아요."
+],
+[
+12,
+2,
+"gblank",
+null,
+"빈칸에 들어갈 말로 어법상 가장 알맞은 것을 고르시오.\nIt was ____ that the organizers had to postpone the outdoor concert and move the entire audience into the cramped gymnasium next door.",
+[
+"so a fierce storm",
+"such fierce a storm",
+"so fierce a storm",
+"a so fierce storm"
+],
+[
+3
+],
+"so 를 쓰면 so + 형용사 + a + 명사 순서가 돼요. such 를 쓰면 such a fierce storm 이어야 하니 such fierce a storm 은 틀리고, a so fierce storm 도 쓰지 않는 어순이에요."
+],
+[
+13,
+2,
+"gblank",
+null,
+"빈칸에 들어갈 말로 어법상 가장 알맞은 것을 고르시오.\nThe museum honored a local physician ____ research on childhood malnutrition had shaped national health policy for nearly three decades.",
+[
+"who",
+"whom",
+"whose",
+"what"
+],
+[
+3
+],
+"빈칸 뒤 research 가 '그 의사의 연구'이니 소유격 관계대명사 whose 가 맞아요. who·whom 을 쓰면 research 앞에 소유를 나타낼 말이 없어 문장이 성립하지 않고, what 은 앞에 선행사가 올 수 없어요."
+],
+[
+14,
+2,
+"gblank",
+null,
+"빈칸에 들어갈 말로 어법상 가장 알맞은 것을 고르시오.\nContrary ____ widespread belief, bulls are not enraged by the color red; they charge at the movement of the cape, which matadors wave precisely to provoke them.",
+[
+"to",
+"with",
+"from",
+"against"
+],
+[
+1
+],
+"'~와 반대로'는 contrary to 로 써요. 전치사 짝이 정해진 표현이라 with·from·against 는 쓰지 않아요."
+],
+[
+15,
+2,
+"gblank",
+null,
+"빈칸에 들어갈 말로 어법상 가장 알맞은 것을 고르시오.\nEngineers ____ the cracked dam for nearly three months, and they still cannot say when it will be safe to refill the reservoir behind it.",
+[
+"had been inspecting",
+"are inspected",
+"inspect",
+"have been inspecting"
+],
+[
+4
+],
+"for nearly three months 로 석 달 전부터 지금까지 이어지는 일을 말하고, 뒤에 still cannot 이 현재라 현재완료진행 have been inspecting 이 맞아요. had been 은 과거 어느 때까지를 말하고, are inspected 는 수동이라 목적어 the dam 을 받을 수 없어요."
+],
+[
+16,
+2,
+"grammar",
+null,
+"밑줄 친 ①~④ 가운데 어법상 옳지 않은 것을 고르시오.\n①<u>Discovered</u> in a cave near the Dead Sea, the ancient manuscript ②<u>has been</u> painstakingly restored, and scholars expect that its contents, ③<u>written</u> in an obscure dialect of Aramaic, will ④<u>publish</u> in a full English translation within two years.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"내용(contents)은 출판하는 쪽이 아니라 '출판되는' 쪽이라 will be published 처럼 수동이어야 해요. 문장 앞 Discovered 는 '발견된', 삽입된 written 은 '쓰인'이라는 수동 분사라 맞고, 복원'되어 온'(has been restored)도 맞는 꼴이에요."
+],
+[
+17,
+2,
+"grammar",
+null,
+"밑줄 친 ①~④ 가운데 어법상 옳지 않은 것을 고르시오.\nThe committee praised the ①<u>applicant's</u> ②<u>persistent</u> in pursuing the project despite repeated ③<u>setbacks</u>, and it awarded her a grant ④<u>that</u> will fund two more years of research.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+2
+],
+"소유격 applicant's 뒤에는 명사가 와야 하니 형용사 persistent 가 아니라 명사 persistence(끈기)가 맞아요. 거듭된 좌절(setbacks), 보조금을 받는 관계대명사 that 은 맞아요."
+],
+[
+18,
+2,
+"grammar",
+null,
+"밑줄 친 ①~④ 가운데 어법상 옳지 않은 것을 고르시오.\n①<u>Exhausted</u> after a twelve-hour shift, the nurse dozed off on the last train and awoke to find that her bag, ②<u>containing</u> her keys and wallet, ③<u>had vanished</u>, ④<u>left</u> her with no way of getting into her apartment.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"가방이 사라진 일의 결과를 덧붙이는 자리라 분사구문 leaving her ... 가 되어야 해요. left 로 쓰면 동사가 접속사 없이 또 나오게 돼요. 지쳐서(Exhausted), 열쇠가 '들어 있는'(containing)은 맞아요."
+],
+[
+19,
+2,
+"grammar",
+null,
+"밑줄 친 ①~④ 가운데 어법상 옳지 않은 것을 고르시오.\nThe family ①<u>whose</u> fortune came from shipping donated the paintings ②<u>displayed</u> in the east wing and required that each of the works ③<u>remain</u> on public view; every one of them ④<u>are</u> still exhibited there today.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"every one of them 은 단수 취급이라 are 가 아니라 is 가 맞아요. required that 뒤에는 동사원형을 쓰므로 each 가 주어여도 remain 이 맞는 꼴이에요."
+],
+[
+20,
+2,
+"grammar",
+null,
+"밑줄 친 ①~④ 가운데 어법상 옳지 않은 것을 고르시오.\nThe study examined the extent ①<u>to which</u> social media use ②<u>affects</u> adolescents' sleep, and it found that teenagers who ③<u>checks</u> their phones after midnight were twice as likely to report fatigue ④<u>while</u> they were at school.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"who 의 선행사가 복수 teenagers 라 관계사절 동사도 check(ed) 여야 해요. checks 는 단수형이라 틀려요. the extent to which(어느 정도로)는 맞는 전치사+관계대명사이고, 주어 social media use 는 단수라 affects 도 맞아요."
+],
+[
+21,
+2,
+"reading",
+"r2-s1",
+"Which of the following is most appropriate for the blank?",
+[
+"obstacle",
+"guide",
+"illusion",
+"luxury"
+],
+[
+2
+],
+"목마름이 탈수가 위험해지기 훨씬 전에 물을 마시게 해 준다는 뒷말이 단서예요. 언제 마실지 알려 주는 믿을 만한 '길잡이(guide)'라는 뜻이에요. illusion(착각)이면 reliable 과 어긋나요."
+],
+[
+22,
+2,
+"reading",
+"r2-s1",
+"Which of the following best summarizes the passage?",
+[
+"The eight-glass rule rests on a misread recommendation and ignores how much fluid needs vary.",
+"Caffeinated drinks such as coffee and tea still contribute to the body's fluid intake.",
+"Elderly people may need to drink deliberately because their thirst declines with age.",
+"Most adults suffer from mild dehydration without realizing it."
+],
+[
+1
+],
+"1945년 권고의 '대부분은 음식에 들어 있다'는 말이 빠지면서 여덟 잔 규칙이 굳었고, 필요량은 몸집·활동·기후·식단에 따라 다르다는 게 글 전체 내용이에요. 커피·차의 수분, 노인의 갈증 감소는 한 부분의 내용이고, 대부분 어른이 탈수 상태라는 말은 글에 없어요."
+],
+[
+23,
+2,
+"reading",
+"r2-s1",
+"Which of the following is NOT true according to the passage?",
+[
+"Thirst may become a less reliable signal of the body's needs as people grow older.",
+"The 1945 recommendation stated that all daily water should come from plain drinking water.",
+"Caffeinated drinks can still contribute to a person's fluid intake.",
+"How much fluid a person needs depends partly on body size, climate, diet, and physical exertion."
+],
+[
+2
+],
+"1945년 권고는 그 양의 대부분이 조리된 음식에 들어 있다고 덧붙였어요. 그러니 '모두 맹물로 채워야 한다'고 했다는 건 글과 맞지 않아요. 나이 들수록 갈증이 줄어드는 점, 카페인 음료의 수분, 몸집·기후·식단·활동량에 따른 차이는 글과 같아요."
+],
+[
+24,
+2,
+"reading",
+"r2-s2",
+"Which of the following best fills in blanks (A) and (B)?",
+[
+"(A) negligible — (B) supplement",
+"(A) unsustainable — (B) replacement",
+"(A) manageable — (B) catastrophe",
+"(A) unsustainable — (B) supplement"
+],
+[
+4
+],
+"(A) 전기료가 치솟아 회사들이 문을 닫았다는 흐름이니 비용을 '감당할 수 없었다(unsustainable)'예요. (B) 들판을 '대신하는 것(substitute)'이 아니라 일부 틈새에서만 쓸모 있는 '보탬(supplement)'이라는 대비예요. replacement 는 substitute 와 같은 뜻이라 rather than 과 맞지 않아요."
+],
+[
+25,
+2,
+"reading",
+"r2-s2",
+"Which of the following is true according to the passage?",
+[
+"Vertical farms are most profitable when they grow high-calorie grains.",
+"Every vertical-farming company had closed by the end of 2024.",
+"Indoor farms must pay for the light that outdoor farms receive for free.",
+"Advocates believe indoor farms can replace conventional agriculture in every region of the world."
+],
+[
+3
+],
+"일반 농장은 햇빛을 공짜로 받지만 실내 농장은 그것을 돈 들여 대신해야 한다고 했어요. 실내에서 잘 자라는 건 열량 낮은 채소이고, 문을 닫은 건 '몇몇' 회사예요. 옹호하는 쪽도 땅이 부족한 곳에서 쓸모 있다고 했을 뿐이에요."
+],
+[
+26,
+2,
+"reading",
+"r2-s3",
+"Which of the following is the most appropriate order of paragraphs (A), (B), and (C)?",
+[
+"(B) – (A) – (C)",
+"(B) – (C) – (A)",
+"(C) – (B) – (A)",
+"(A) – (C) – (B)"
+],
+[
+2
+],
+"첫 문장의 '일련의 실험'을 (B)가 In the best-known study 로 받아 쿠키·무 실험을 소개해요. (B)의 '수백 건이 뒷받침했다'를 (C)가 Doubts ... however 로 뒤집고, (C)의 재현 실패를 (A)가 The controversy 로 받아 마무리해요."
+],
+[
+27,
+2,
+"reading",
+"r2-s3",
+"What is the main idea of the passage?",
+[
+"A once-celebrated theory of self-control failed to replicate, prompting reforms in psychological research.",
+"Hungry participants who resisted cookies gave up sooner on an unsolvable puzzle than others.",
+"Psychologists now register hypotheses in advance and share their raw data more often.",
+"Willpower has been proven to be unlimited and inexhaustible."
+],
+[
+1
+],
+"널리 받아들여지던 자아 고갈 이론이 대규모 재현에서 거의 효과를 보이지 못했고, 그 일로 연구 방식이 바뀌었다는 게 요지예요. 쿠키·무 실험과 연구 관행 변화는 한 부분의 내용이고, 의지력이 고갈되는지는 아직 결론이 나지 않았다고 했으니 '무한하다고 증명됐다'는 지나쳐요."
+],
+[
+28,
+2,
+"reading",
+"r2-s3",
+"According to the passage, what did the 2016 replication find?",
+[
+"A stronger effect than the original study had reported",
+"That only hungry participants showed signs of depletion",
+"An effect too small to distinguish from no effect at all",
+"That participants who ate the cookies gave up on the puzzle sooner"
+],
+[
+3
+],
+"2016년 공동 재현은 효과가 너무 작아 통계적으로 0과 구별되지 않았다고 했어요. 쿠키 먹은 쪽이 일찍 포기했다는 건 사실과 반대이고, 원래 실험에서도 일찍 포기한 쪽은 무를 먹은 참가자들이에요."
+],
+[
+29,
+2,
+"reading",
+"r2-s4",
+"What does the underlined expression refer to?",
+[
+"people whose bodies are frail or sickly",
+"shepherds who serve powerful kings",
+"people who cannot do wrong without risking punishment",
+"rulers who fear rebellion by the many subjects they govern"
+],
+[
+3
+],
+"바로 뒤 콜론 다음에 '대부분은 벌 받지 않고 부정을 저지를 수 없으니'라고 풀어 줘요. 여기서 the weak 는 몸이 약한 사람이 아니라 '들키지 않고 잘못을 저지를 힘이 없는 사람들'이에요."
+],
+[
+30,
+2,
+"reading",
+"r2-s4",
+"Which of the following is true according to the passage?",
+[
+"Socrates argues that injustice harms the wrongdoer even if it goes undetected.",
+"Glaucon believes that only unjust people would misuse the ring.",
+"Gyges used the ring to protect the king and queen from their enemies.",
+"Scholars now generally agree that Socrates' rebuttal to Glaucon is entirely convincing."
+],
+[
+1
+],
+"소크라테스는 부정이 저지른 사람의 영혼을 망가뜨려, 들키든 말든 그 사람을 비참하게 만든다고 했어요. 글라우콘은 정의로운 사람도 '똑같이' 행동할 거라 했고, 기게스는 왕을 죽였어요. 소크라테스의 답이 성공했는지는 2천 년 넘게 논쟁 중이에요."
+],
+[
+31,
+2,
+"reading",
+"r2-s5",
+"Which of the following is closest in meaning to the underlined word?",
+[
+"apprehensive",
+"indifferent",
+"enthusiastic",
+"ignorant"
+],
+[
+1
+],
+"wary 는 '경계하는, 조심스러운'이라 apprehensive(걱정하는)와 가까워요. 비밀번호와 달리 얼굴은 바꿀 수 없다며 감시와 오류를 걱정한다는 뒷말이 단서예요. enthusiastic(열광하는)은 찬성하는 쪽의 태도예요."
+],
+[
+32,
+2,
+"reading",
+"r2-s5",
+"Which of the following is grammatically correct for the blank?",
+[
+"what",
+"which",
+"that",
+"it"
+],
+[
+2
+],
+"쉼표 뒤에서 앞 명사 the Entry/Exit System 을 받아 덧붙여 설명하는 자리라 계속적 용법의 관계대명사 which 가 맞아요. 쉼표 뒤 계속적 용법에는 that 을 쓰지 않고, it 을 쓰면 접속사 없이 두 문장이 붙어요."
+],
+[
+33,
+2,
+"reading",
+"r2-s5",
+"Which of the following is NOT true according to the passage?",
+[
+"The EU system replaces the practice of stamping passports by hand.",
+"Some studies have found that error rates vary across different demographic groups of travelers.",
+"Supporters note that images are often deleted soon after verification.",
+"Travelers in the United States are required to use facial comparison at checkpoints."
+],
+[
+4
+],
+"미국 공항에서는 승객이 얼굴 대조를 거부하고 직원 확인을 요청할 수 있다고 했어요. 그러니 '반드시 써야 한다'는 글과 맞지 않아요. 여권 도장 대체, 집단별 오류율 차이, 확인 뒤 사진 삭제는 글과 같아요."
+],
+[
+34,
+2,
+"reading",
+"r2-s6",
+"Which of the following best fills in the blank?",
+[
+"Nevertheless",
+"For instance",
+"In short",
+"Otherwise"
+],
+[
+3
+],
+"앞에서 좋은 일에도, 나쁜 일에도 생각보다 빨리 익숙해진다고 했어요. 빈칸 뒤는 그 둘을 묶어 '예측이 양쪽으로 다 빗나간다'고 정리하니 In short(요컨대)가 맞아요. 새 예를 드는 For instance 가 아니에요."
+],
+[
+35,
+2,
+"reading",
+"r2-s6",
+"What is the main idea of the passage?",
+[
+"Experiences such as travel resist adaptation better than possessions, which remain static.",
+"Adaptation to some misfortunes, such as prolonged unemployment, appears to be slower and less complete.",
+"Psychologists advise people to avoid major changes in their lives.",
+"People adapt to good and bad changes more than they expect, skewing their forecasts."
+],
+[
+4
+],
+"좋은 변화든 나쁜 변화든 행복이 원래 수준으로 돌아오는 쾌락 적응 때문에 앞날의 기쁨과 고통을 부풀려 예측한다는 게 요지예요. 여행 같은 경험, 실업에 대한 느린 적응은 한 부분의 내용이고, 큰 변화를 피하라는 조언은 글에 없어요."
+],
+[
+36,
+2,
+"reading",
+"r2-s7",
+"Which of the following best fills in the blank?",
+[
+"Instead",
+"Consequently",
+"Similarly",
+"In addition"
+],
+[
+1
+],
+"앞 문장은 40이라는 숫자에 의학적 근거가 없다고 했고, 빈칸 뒤는 '그 대신' 종교 전통에서 왔을 수 있다고 다른 이유를 대요. 근거를 부정한 뒤 다른 설명을 내놓으니 Instead 가 맞아요."
+],
+[
+37,
+2,
+"reading",
+"r2-s7",
+"Which of the following is closest in meaning to the underlined word?",
+[
+"futile",
+"lucrative",
+"arbitrary",
+"farsighted"
+],
+[
+4
+],
+"prescient 는 '선견지명이 있는'이라 farsighted 와 가까워요. 이유는 몰랐어도 격리가 실제로 전염을 막았다는 콜론 뒤 설명이 단서예요. futile(헛된)은 반대이고, 숫자가 임의적이었다는 건 앞 문단 얘기라 arbitrary 는 이 자리에 맞지 않아요."
+],
+[
+38,
+2,
+"reading",
+"r2-s7",
+"Which of the following is true according to the passage?",
+[
+"Fourteenth-century physicians understood that bacteria caused the plague.",
+"Ragusa's original isolation period was shorter than the later standard.",
+"The forty-day period was chosen on the basis of careful medical observation.",
+"Merchants generally welcomed quarantine because it protected trade."
+],
+[
+2
+],
+"라구사는 처음에 30일을 정했고, 뒤에 40일로 늘었다고 했어요. 당시 의사들은 세균을 몰랐고, 40일은 의학적 근거가 없었으며, 상인들은 장사를 막는 지체에 분개했어요."
+],
+[
+39,
+2,
+"reading",
+"r2-s8",
+"Which of the following is true according to the passage?",
+[
+"Wood's studies found that most daily actions are carefully deliberated.",
+"Changing one's surroundings can help break established habits.",
+"Willpower is the most reliable means of dismantling habits.",
+"New habits generally become automatic within a few days."
+],
+[
+2
+],
+"이사한 사람이 옛 습관을 더 쉽게 버린다며 환경을 바꾸는 전략을 권했어요. 행동의 약 43%가 딴생각 중에 하는 습관이었고, 의지력은 약한 도구라 했으며, 습관이 자리 잡는 데는 몇 주에서 1년 가까이 걸렸어요."
+],
+[
+40,
+2,
+"reading",
+"r2-s8",
+"Which of the following is NOT true according to the passage?",
+[
+"Habits are triggered largely by cues in the environment.",
+"Making unwanted behaviors less convenient can help reduce them.",
+"The time needed for a new behavior to become automatic can vary very widely.",
+"Moving to a new home tends to make old routines harder to abandon."
+],
+[
+4
+],
+"이사하면 옛 습관을 지탱하던 단서가 사라져 버리기가 '더 쉬워진다'고 했으니, 더 어려워진다는 말은 글과 맞지 않아요. 환경 단서, 불편함 더하기(과자 숨기기), 습관 형성 기간의 큰 차이는 글과 같아요."
+],
+[
+1,
+3,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nThe billionaire's <u>cryptic</u> post, consisting of a single emoji and a date, sent the company's shares soaring as investors speculated about an imminent announcement.",
+[
+"emphatic",
+"enigmatic",
+"everlasting",
+"energetic"
+],
+[
+2
+],
+"cryptic 은 '수수께끼 같은, 알쏭달쏭한'이라 enigmatic 과 같은 뜻이에요. 이모지 하나와 날짜뿐이라 투자자들이 뜻을 짐작하느라 바빴다는 내용이 단서예요. emphatic(단호한)·everlasting(영원한)·energetic(활기찬)은 생김새만 비슷해요."
+],
+[
+2,
+3,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nJudges in several states have begun fining plaintiffs who file <u>frivolous</u> lawsuits, arguing that such claims clog the courts and delay justice for people with legitimate grievances.",
+[
+"groundless",
+"graceful",
+"grammatical",
+"gradual"
+],
+[
+1
+],
+"frivolous lawsuit 은 '근거 없는(장난 같은) 소송'이라 groundless 와 가까워요. 정당한 불만을 가진 사람들(legitimate grievances)과 대비된다는 점이 단서예요. graceful(우아한)·grammatical(문법의)·gradual(점진적인)은 맞지 않아요."
+],
+[
+3,
+3,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nUnlicensed food-delivery apps have <u>proliferated</u> in the city since the pandemic, making it nearly impossible for inspectors to track which kitchens meet basic hygiene standards.",
+[
+"bungled",
+"burnished",
+"burgeoned",
+"bartered"
+],
+[
+3
+],
+"proliferate 는 '급증하다, 우후죽순처럼 늘다'라 burgeoned 와 같은 뜻이에요. 너무 많아져 단속반이 따라갈 수 없다는 뒷말이 단서예요. bungled(망쳤다)·burnished(광을 냈다)·bartered(물물교환했다)는 생김새만 비슷해요."
+],
+[
+4,
+3,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nBoard members insisted that the chief executive's <u>remuneration</u>, which exceeded that of any rival in the industry, was justified by the company's record profits.",
+[
+"embargo",
+"emblem",
+"embryo",
+"emolument"
+],
+[
+4
+],
+"remuneration 은 '보수, 급여'라 emolument(봉급, 보수)와 같은 뜻이에요. 경쟁사보다 많았지만 기록적 이익으로 정당하다는 말이 단서예요. embargo(수출입 금지)·emblem(상징)·embryo(배아)는 생김새만 비슷해요."
+],
+[
+5,
+3,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nThe court's ruling was <u>unequivocal</u>: the agency had acted unlawfully, and the deported asylum seekers must be allowed to return while their cases were reconsidered.",
+[
+"categorical",
+"catastrophic",
+"cautious",
+"casual"
+],
+[
+1
+],
+"unequivocal 은 '애매하지 않은, 명백한'이라 categorical(단정적인, 무조건적인)과 가까워요. 콜론 뒤에 위법이라는 판단과 해야 할 일을 딱 잘라 말한 내용이 단서예요. catastrophic(파국적인)·cautious(신중한)·casual(무심한)은 맞지 않아요."
+],
+[
+6,
+3,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nThe central bank cut interest rates in an effort to <u>bolster</u> consumer confidence, which had fallen to its lowest level since the financial crisis of 2008.",
+[
+"berate",
+"buttress",
+"betray",
+"bankrupt"
+],
+[
+2
+],
+"bolster 는 '북돋우다, 떠받치다'라 buttress 와 같은 뜻이에요. 바닥까지 떨어진 소비자 신뢰를 금리 인하로 끌어올리려 했다는 흐름이 단서예요. berate(꾸짖다)·betray(배신하다)·bankrupt(파산시키다)는 맞지 않아요."
+],
+[
+7,
+3,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nThe novel's villain is an <u>avaricious</u> landlord who raises rents every winter, knowing that his impoverished tenants have nowhere else to go once the snow begins.",
+[
+"rapacious",
+"rapid",
+"radiant",
+"rational"
+],
+[
+1
+],
+"avaricious 는 '탐욕스러운'이라 rapacious 와 같은 뜻이에요. 갈 곳 없는 가난한 세입자의 처지를 노려 해마다 겨울에 세를 올린다는 내용이 단서예요. rapid(빠른)·radiant(빛나는)·rational(이성적인)은 생김새만 비슷해요."
+],
+[
+8,
+3,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nModerators of the televised debate pleaded for <u>civility</u> after the candidates repeatedly interrupted one another and traded personal insults about each other's families.",
+[
+"custody",
+"competition",
+"courtesy",
+"clemency"
+],
+[
+3
+],
+"civility 는 '정중함, 예의'라 courtesy 와 가까워요. 말을 끊고 가족까지 들먹이며 모욕을 주고받자 진행자가 요청한 것이라는 앞뒤가 단서예요. custody(양육권, 구금)·competition(경쟁)·clemency(관용, 감형)는 뜻이 달라요."
+],
+[
+9,
+3,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nCritics alleged that the party leadership had deliberately chosen a <u>pliable</u> candidate for the chairmanship, someone unlikely to challenge decisions made behind closed doors.",
+[
+"tangible",
+"traditional",
+"tentative",
+"tractable"
+],
+[
+4
+],
+"pliable 은 사람에게 쓰면 '고분고분한, 남의 뜻대로 움직이는'이라 tractable 과 가까워요. 밀실 결정에 맞서지 않을 사람이라는 뒷말이 단서예요. tangible(실체가 있는)·traditional(전통적인)·tentative(잠정적인)는 맞지 않아요."
+],
+[
+10,
+3,
+"vocab",
+null,
+"밑줄 친 낱말과 의미가 가장 가까운 것을 고르시오.\nIn many villages along the river, residents still <u>venerate</u> an ancient banyan tree, leaving offerings of rice and flowers at its roots before every harvest festival.",
+[
+"revere",
+"repair",
+"replace",
+"reprove"
+],
+[
+1
+],
+"venerate 는 '숭배하다, 공경하다'라 revere 와 같은 뜻이에요. 수확 축제 때마다 뿌리에 쌀과 꽃을 바친다는 내용이 단서예요. repair(고치다)·replace(바꾸다)·reprove(나무라다)는 생김새만 비슷해요."
+],
+[
+11,
+3,
+"gblank",
+null,
+"빈칸에 들어갈 말로 어법상 가장 알맞은 것을 고르시오.\nThe documentary depicts a remote mountain village ____ electricity arrived only in 2015, transforming daily routines that had remained largely unchanged for centuries.",
+[
+"in which",
+"which",
+"whom",
+"that"
+],
+[
+1
+],
+"빈칸 뒤 electricity arrived 는 빠진 성분이 없는 완전한 문장이라 관계대명사 which·that 만으로는 이을 수 없어요. '그 마을에'라는 뜻의 전치사+관계대명사 in which 가 맞아요. whom 은 사람을 받는 목적격이라 맞지 않아요."
+],
+[
+12,
+3,
+"gblank",
+null,
+"빈칸에 들어갈 말로 어법상 가장 알맞은 것을 고르시오.\nNot only ____ the new pension policy, but she also refused to meet the union leaders who had traveled from the provinces to see her.",
+[
+"the minister rejected",
+"the minister did reject",
+"did the minister reject",
+"rejected the minister"
+],
+[
+3
+],
+"Not only 가 문장 맨 앞에 오면 주어와 조동사 자리가 바뀌어 Not only did + 주어 + 동사원형 꼴이 돼요. 그래서 did the minister reject 가 맞아요."
+],
+[
+13,
+3,
+"gblank",
+null,
+"빈칸에 들어갈 말로 어법상 가장 알맞은 것을 고르시오.\n____ in haste during the war, the bridge required extensive repairs within a decade and was eventually replaced by a sturdier structure downstream.",
+[
+"Built",
+"Building",
+"Having built",
+"To build"
+],
+[
+1
+],
+"다리는 '지어진' 것이니 수동의 분사구문 Built 가 맞아요. Building·Having built 는 다리가 무엇을 지었다는 능동이 되고, To build 는 '짓기 위해'라 뜻이 맞지 않아요."
+],
+[
+14,
+3,
+"gblank",
+null,
+"빈칸에 들어갈 말로 어법상 가장 알맞은 것을 고르시오.\nThe retrospective is well worth ____, if only for the rarely displayed sketches the painter made during her final years in the mountains.",
+[
+"visiting",
+"to visit",
+"visited",
+"being visited"
+],
+[
+1
+],
+"worth 는 뒤에 동명사를 받아 '~할 가치가 있다'는 뜻이 돼요. 주어 the retrospective 를 목적어로 보는 꼴이라 수동처럼 보여도 능동 visiting 을 써요."
+],
+[
+15,
+3,
+"gblank",
+null,
+"빈칸에 들어갈 말로 어법상 가장 알맞은 것을 고르시오.\nThe scholar ____ the selection committee believed was best qualified withdrew her application at the last minute, citing unexpected family obligations.",
+[
+"whom",
+"who",
+"which",
+"whose"
+],
+[
+2
+],
+"the committee believed 는 끼어든 말이고, 관계사절의 뼈대는 '(그 학자가) was best qualified'예요. 빈칸이 was 의 주어 자리라 주격 who 가 맞아요. believed 의 목적어로 착각해 whom 을 고르기 쉬워요."
+],
+[
+16,
+3,
+"grammar",
+null,
+"밑줄 친 ①~④ 가운데 어법상 옳지 않은 것을 고르시오.\nA growing number of commuters ①<u>have</u> abandoned their cars in favor of bicycles, a shift ②<u>that</u> city planners attribute to new protected lanes and to fuel prices, which ③<u>has risen</u> ④<u>sharply</u> since the spring.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"which 가 받는 말은 복수 fuel prices 라 관계사절 동사도 have risen 이어야 해요. a number of + 복수 명사는 복수 취급이라 have 는 맞아요."
+],
+[
+17,
+3,
+"grammar",
+null,
+"밑줄 친 ①~④ 가운데 어법상 옳지 않은 것을 고르시오.\nAfter the museum ①<u>offered</u> a reward for the stolen painting, it was ②<u>flooded</u> with tips, but none of them ③<u>proved</u> useful, and the police still lack reliable ④<u>informations</u> about where the canvas is hidden.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"information 은 셀 수 없는 명사라 복수형 informations 를 쓰지 않아요. 박물관이 제보에 '파묻힌' 것이라 수동 was flooded 는 맞아요."
+],
+[
+18,
+3,
+"grammar",
+null,
+"밑줄 친 ①~④ 가운데 어법상 옳지 않은 것을 고르시오.\nThe advisory committee, ①<u>made up of</u> nine members ②<u>elected</u> for staggered terms, ③<u>meets</u> twice a year to review the foundation's investments, which ④<u>consist with</u> bonds, property, and a small portfolio of shares.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"'~로 이루어지다'는 consist of 예요. consist with 는 '~와 일치하다'라 뜻이 달라요. 앞의 made up of(~로 구성된)는 같은 뜻의 맞는 분사구이고, 단수 committee 에 맞춘 meets 도 맞아요."
+],
+[
+19,
+3,
+"grammar",
+null,
+"밑줄 친 ①~④ 가운데 어법상 옳지 않은 것을 고르시오.\nFarmers in the valley, who ①<u>are used to</u> ②<u>cope</u> with drought, ③<u>were</u> nonetheless unprepared for the floods that ④<u>swept</u> away their irrigation channels last autumn.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+2
+],
+"be used to 의 to 는 전치사라 뒤에 동명사가 와야 해요. cope 가 아니라 coping 이 맞아요. 주어 Farmers 에 맞춘 were, 지난가을 일이라 swept 는 맞아요."
+],
+[
+20,
+3,
+"grammar",
+null,
+"밑줄 친 ①~④ 가운데 어법상 옳지 않은 것을 고르시오.\nThe new reactor is ①<u>far more</u> efficient ②<u>than</u> its predecessor, producing twice as much electricity ③<u>while</u> consuming ④<u>few</u> fuel and generating a fraction of the waste once considered unavoidable.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"fuel 은 셀 수 없는 명사라 few 가 아니라 less(또는 little)로 꾸며야 해요. 비교급을 강조하는 far more, 비교의 than 은 맞아요."
+],
+[
+21,
+3,
+"reading",
+"r3-s1",
+"Which of the following best fills in the blank?",
+[
+"Likewise",
+"By contrast",
+"As a result",
+"For this reason"
+],
+[
+2
+],
+"빈칸 앞은 감정을 잘게 구별하는 사람들 이야기이고, 뒤는 구별을 잘 못하는(low granularity) 사람들 이야기예요. 서로 반대 무리를 견주니 By contrast 가 맞아요."
+],
+[
+22,
+3,
+"reading",
+"r3-s1",
+"What is the topic of the passage?",
+[
+"the origins of emotion words in foreign languages",
+"the benefits of describing one's feelings precisely",
+"the dangers of drinking alcohol when upset",
+"the history of emotion research in German universities"
+],
+[
+2
+],
+"감정을 정확히 이름 붙이는 능력(감정 입자도)이 고통에 대처하는 데 어떻게 도움이 되는지, 그리고 기를 수 있는지를 다뤄요. 외국어 감정 낱말·음주는 한 부분의 예이고, 독일 대학의 감정 연구사는 글에 없어요."
+],
+[
+23,
+3,
+"reading",
+"r3-s1",
+"According to the passage, how might a person improve emotional granularity?",
+[
+"By enlarging the vocabulary he or she uses for feelings",
+"By suppressing negative emotions as soon as they appear",
+"By avoiding conversations with friends about emotional topics",
+"By tasting wine with a trained expert"
+],
+[
+1
+],
+"감정 낱말은 문화와 대화로 배우는 것이라, 소설을 읽거나 다른 언어의 말을 빌리는 등 감정 어휘를 늘리면 구별이 날카로워질 수 있다고 했어요. 감정을 누르거나 대화를 피하라는 말은 없어요."
+],
+[
+24,
+3,
+"reading",
+"r3-s2",
+"Which of the following is the farthest in meaning from the underlined word?",
+[
+"declining",
+"waning",
+"diminishing",
+"flourishing"
+],
+[
+4
+],
+"dwindling 은 '점점 줄어드는'이라 declining·waning·diminishing 과 뜻이 같아요. 가장 거리가 먼 것은 '번성하는'이라는 flourishing 이에요."
+],
+[
+25,
+3,
+"reading",
+"r3-s2",
+"Which of the following is true according to the passage?",
+[
+"Most of the world's languages are now considered endangered.",
+"Te Hiku Media has sought to keep its community's recordings under Māori control.",
+"Linguists believe that digital archives alone can keep a language alive.",
+"The UN decade for Indigenous languages ended in 2022."
+],
+[
+2
+],
+"테히쿠 미디어는 공동체가 낸 녹음이 상업용 데이터에 흡수되지 않고 마오리 쪽 관리 아래 남아야 한다고 했어요. 위기 언어는 약 40%로 '대부분'은 아니고, 기록만으로는 언어를 살릴 수 없다고 했으며, 유엔의 10년은 2022년에 '시작'됐어요."
+],
+[
+26,
+3,
+"reading",
+"r3-s3",
+"Which of the following is the most appropriate order of paragraphs (A), (B), and (C)?",
+[
+"(B) – (C) – (A)",
+"(C) – (A) – (B)",
+"(A) – (B) – (C)",
+"(C) – (B) – (A)"
+],
+[
+4
+],
+"'줄여라'는 옛 조언 뒤에 그 생각을 의심하기 시작했다는 (C)가 와요. (C)의 '어떻게 해석하느냐가 중요하다'를 (B)의 실험이 뒷받침하고, (A)가 None of this means 로 '만성 스트레스까지 괜찮다는 뜻은 아니다'라며 한계를 그어요."
+],
+[
+27,
+3,
+"reading",
+"r3-s3",
+"Which of the following best summarizes the passage?",
+[
+"Adrenaline sharpens attention and sends oxygen-rich blood to the muscles and brain.",
+"Seeing stress arousal as helpful can aid acute performance but cannot cure chronic stress.",
+"Prolonged pressures such as persistent poverty are linked to genuine harm to people's health.",
+"Mock job interviews are the most effective way to reduce anxiety."
+],
+[
+2
+],
+"두근거림을 '준비 신호'로 받아들이면 짧은 도전에서 몸의 반응과 성적이 나아질 수 있지만, 오래가는 스트레스의 원인까지 없애 주지는 않는다는 게 글 전체예요. 아드레날린의 역할, 만성 압박의 해는 한 부분의 내용이고, 모의 면접이 가장 좋은 불안 해소법이라는 말은 글에 없어요."
+],
+[
+28,
+3,
+"reading",
+"r3-s3",
+"Which of the following is NOT true according to the passage?",
+[
+"Adrenaline can help prepare the body to perform.",
+"The author claims that reappraisal can eliminate the harms of long-term poverty.",
+"Some participants were told that a racing pulse signals the body's readiness to perform.",
+"Earlier advice treated stress chiefly as something to be reduced."
+],
+[
+2
+],
+"글쓴이는 마음가짐을 바꿔도 만성 스트레스를 낳는 조건은 없앨 수 없다고 했어요. 그러니 '오랜 가난의 해까지 없앤다'는 글과 맞지 않아요. 아드레날린의 역할, 실험 참가자에게 준 안내, 옛 조언은 글과 같아요."
+],
+[
+29,
+3,
+"reading",
+"r3-s4",
+"Which of the following is most appropriate for the blank?",
+[
+"resist",
+"digest",
+"detect",
+"imitate"
+],
+[
+3
+],
+"심해 동물 눈은 대부분 파랑·초록에 맞춰져 있다고 했어요. 그래서 빨간 빛은 먹잇감이 '알아채지(detect)' 못하고, 포식자는 들키지 않고 먹잇감을 비출 수 있다는 흐름이에요."
+],
+[
+30,
+3,
+"reading",
+"r3-s4",
+"Which of the following is NOT true according to the passage?",
+[
+"Bioluminescence typically produces more heat than light.",
+"Counter-illumination helps an animal hide its outline from predators below.",
+"Blue and green light travel farther through seawater than other colors.",
+"The anglerfish uses light to attract its prey."
+],
+[
+1
+],
+"생물 발광은 에너지를 열이 아니라 빛으로 내보낸다고 했으니, 빛보다 열을 더 낸다는 말은 글과 맞지 않아요. 배 쪽 빛으로 윤곽을 지우는 역조명, 멀리 가는 파랑·초록 빛, 아귀의 미끼는 글과 같아요."
+],
+[
+31,
+3,
+"reading",
+"r3-s5",
+"Which of the following best fills in blanks (A) and (B)?",
+[
+"(A) For instance — (B) Therefore",
+"(A) Nevertheless — (B) For example",
+"(A) Nevertheless — (B) Therefore",
+"(A) Consequently — (B) Otherwise"
+],
+[
+3
+],
+"(A) 회사는 공식적으로 '경제 불확실성'을 이유로 댔지만, '그럼에도' 이 일은 데이터 문제를 경계하는 교훈이 됐다는 흐름이라 Nevertheless 예요. (B) 지나친 조심이 이익을 빼앗는다는 앞말에서 '그러므로' 데이터를 잘 다스리자는 결론을 끌어내니 Therefore 가 맞아요."
+],
+[
+32,
+3,
+"reading",
+"r3-s5",
+"What is the main idea of the passage?",
+[
+"Toronto's high-tech waterfront project collapsed amid a controversy over surveillance and data governance.",
+"The EU AI Act largely bars police from using real-time facial recognition in public.",
+"The value of smart-city technology depends on how the data it gathers is governed.",
+"Cities should stop collecting data about their residents altogether."
+],
+[
+3
+],
+"스마트 도시의 편리함은 데이터 수집에 달려 있고, 진짜 쟁점은 그 데이터를 누가 어떻게 관리하느냐라는 게 요지예요. 토론토 사업, 유럽연합 AI법은 한 부분의 사례이고, 수집을 아예 그만두자는 주장은 글에 없어요."
+],
+[
+33,
+3,
+"reading",
+"r3-s5",
+"Which of the following is true according to the passage?",
+[
+"The EU AI Act lets police use real-time facial recognition without restriction.",
+"Toronto selected Sidewalk Labs to build its neighborhood in 2020.",
+"Supporters of smart technology want cities to collect less data.",
+"Sidewalk Labs withdrew from the Toronto project in 2020."
+],
+[
+4
+],
+"사이드워크 랩스는 2020년에 토론토 사업에서 물러났다고 했어요. 토론토가 이 회사를 고른 건 2017년이고, 유럽연합 법은 실시간 얼굴 인식을 좁은 경우에만 허용해요. 스마트 기술 지지자들은 수집을 피하지 말고 잘 관리하자고 했어요."
+],
+[
+34,
+3,
+"reading",
+"r3-s6",
+"Which of the following is closest in meaning to the underlined word?",
+[
+"celebrated",
+"neglected",
+"tamed",
+"exaggerated"
+],
+[
+3
+],
+"domesticated 는 원래 '길들인'이라, 여기서는 디킨슨의 낯선 구두점과 운율을 다듬어 평범하게 만든, 즉 '길들인(tamed)' 모습이라는 뜻이에요. 뒤 문장의 구두점 정리·줄표 바꾸기가 단서예요."
+],
+[
+35,
+3,
+"reading",
+"r3-s6",
+"What is the main idea of the passage?",
+[
+"Well-meant editing altered Dickinson's poems, showing how editors shape the texts we read.",
+"Dickinson's dashes create pauses and ambiguities that ordinary commas simply cannot reproduce.",
+"The first editions of Dickinson's poems in the 1890s were a considerable commercial success.",
+"Nineteenth-century editors set out to damage Dickinson's reputation."
+],
+[
+1
+],
+"선의로 한 편집이 디킨슨 시의 특징(줄표 등)을 가렸고, 이 일은 편집자의 선택이 우리가 읽는 글을 만든다는 점을 보여 준다는 게 요지예요. 줄표의 효과, 1890년대 판의 성공은 한 부분의 내용이고, 편집자들은 악의가 없었다고 했어요."
+],
+[
+36,
+3,
+"reading",
+"r3-s6",
+"According to the passage, why did Dickinson's early editors change her poems?",
+[
+"They wanted to hide her identity as the author.",
+"They had been instructed to do so by Dickinson herself before she died.",
+"They were unable to read her handwriting.",
+"They feared readers would reject such unconventional verse."
+],
+[
+4
+],
+"편집자들은 독자가 그렇게 낯선 시를 받아들이지 않을 거라 여겨, 작은 손질을 인정받기 위한 대가로 봤다고 했어요. 작가를 숨기려 했다거나 디킨슨이 시켰다는 말은 없어요."
+],
+[
+37,
+3,
+"reading",
+"r3-s7",
+"Which of the following best fills in the blank?",
+[
+"Likewise",
+"In other words",
+"Conversely",
+"For example"
+],
+[
+3
+],
+"앞은 숙련자가 압박 속에 자기 동작을 의식해 무너진다는 이야기이고, 빈칸 뒤는 반대로 초보자는 이런 방해를 덜 받는다는 이야기예요. 반대쪽 경우를 드니 Conversely 가 맞아요."
+],
+[
+38,
+3,
+"reading",
+"r3-s7",
+"Which of the following is true according to the passage?",
+[
+"Choking is usually caused by a lack of concentration.",
+"Novices are more prone than experts to disruption from self-monitoring.",
+"Writing about anxieties before a test tends to worsen performance.",
+"Experts may perform worse when they consciously control automatic movements."
+],
+[
+4
+],
+"압박을 받으면 숙련자가 평소 저절로 되던 동작을 의식해 통제하고, 그 때문에 매끄러운 수행이 깨진다고 했어요. 집중이 '모자라서'가 아니라 엉뚱한 집중이 '지나쳐서'이고, 초보자는 덜 흔들리며, 걱정을 적으면 오히려 도움이 될 수 있어요."
+],
+[
+39,
+3,
+"reading",
+"r3-s8",
+"Which of the following is NOT true according to the passage?",
+[
+"The rapid rise of myopia suggests that environmental factors are involved.",
+"Outdoor light is generally far brighter than indoor lighting.",
+"Outdoor time has been shown to reverse established myopia in most children.",
+"Myopia rates among Taiwanese schoolchildren fell after the policy on outdoor time began."
+],
+[
+3
+],
+"바깥 활동은 근시가 '생기는 것'을 주로 막을 뿐, 이미 생긴 근시를 되돌리지는 못한다고 했어요. 그러니 '되돌린다'는 글과 맞지 않아요. 환경 요인, 밝은 바깥 빛, 대만의 근시 비율 감소는 글과 같아요."
+],
+[
+40,
+3,
+"reading",
+"r3-s8",
+"What would most likely follow the passage?",
+[
+"A history of eyeglass manufacturing in Europe",
+"A discussion of treatments that slow myopia in children who already have it",
+"An argument that genetics alone fully explains the recent rise of myopia in Asia",
+"A description of how screens permanently damage the retina"
+],
+[
+2
+],
+"글 끝에서 이미 근시가 된 아이들의 진행을 늦추는 치료로 관심이 옮겨 갔다고 했으니, 다음에는 그 치료 이야기가 이어질 거예요. 유전만으로는 설명이 안 된다고 했으니 유전 주장은 맞지 않아요."
+]
+]
+}

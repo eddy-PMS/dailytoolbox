@@ -1,0 +1,2969 @@
+{
+"school": "ajou",
+"title": "아주대 편입영어 모의고사",
+"source": "아주대 편입영어 2024~2026학년도 기출 출제 유형(문항 수·영역·문제 꼴, VocabFactory 분석)을 분석해 dailyfreetoolbox 가 새로 만든 연습 문제",
+"checked": "2026-11-23",
+"minutes": 90,
+"sections": [
+{
+"id": "vocab",
+"name": "단어 빈칸"
+},
+{
+"id": "expression",
+"name": "어법 빈칸"
+},
+{
+"id": "grammar",
+"name": "틀린 곳"
+},
+{
+"id": "statement",
+"name": "진술 고르기"
+},
+{
+"id": "reading",
+"name": "독해"
+}
+],
+"points": [
+[
+1,
+4,
+0.8
+],
+[
+5,
+5,
+1.0
+],
+[
+6,
+7,
+0.8
+],
+[
+8,
+9,
+1.0
+],
+[
+10,
+10,
+1.1
+],
+[
+11,
+12,
+1.0
+],
+[
+13,
+14,
+1.1
+],
+[
+15,
+18,
+1.1
+],
+[
+19,
+21,
+1.0
+],
+[
+22,
+22,
+1.1
+],
+[
+23,
+25,
+1.0
+],
+[
+26,
+26,
+1.1
+],
+[
+27,
+33,
+1.0
+],
+[
+34,
+34,
+1.1
+],
+[
+35,
+41,
+1.0
+],
+[
+42,
+42,
+1.1
+],
+[
+43,
+49,
+1.0
+],
+[
+50,
+50,
+1.1
+]
+],
+"passages": [
+{
+"id": "r1-p15",
+"text": "In July 2025, the British government announced plans to lower the voting age for all elections in the United Kingdom from eighteen to sixteen. The change would not be wholly new. Sixteen- and seventeen-year-olds were already permitted to vote in elections for the Scottish Parliament and the Welsh Senedd, as well as in local elections in those two nations. Supporters contended that young people who can work, pay taxes, and join the armed forces at sixteen deserve a say in how they are governed, and that voting early helps form an enduring habit. Critics retorted that most sixteen-year-olds are still in school and may be too easily swayed, and some suspected that the governing party expected to gain from the reform."
+},
+{
+"id": "r1-p16",
+"text": "For centuries in the ancient Mediterranean world, the most prestigious hue was a deep purple produced in the city of Tyre, in what is now Lebanon. The dye came from sea snails, and thousands of them had to be crushed to yield a small amount, which made the hue extraordinarily expensive. Wearing it became an emblem of power. In Rome, purple stripes and borders on their clothing marked senators and magistrates, and later emperors endeavored to reserve the finest shades for themselves. The association between purple and royalty outlived the dye itself, which fell into disuse after the fall of Constantinople in 1453. In 1856, a young English chemist named William Perkin accidentally produced a purple synthetic dye, and purple clothing at last became affordable to ordinary people."
+},
+{
+"id": "r1-p17",
+"text": "Pisa's renowned bell tower started leaning within a few years of the start of its construction in 1173. The ground beneath it consists of soft clay and sand, and the foundation was far too shallow for such a heavy structure. Work then stopped for nearly a century, and the pause presumably saved the tower: the soil had time to compress and consolidate before more weight was added. Later builders endeavored to compensate by making the upper floors marginally taller on the leaning side, so the tower is curved. By the late twentieth century, the tilt had grown so perilous that the tower was closed. Engineers then excavated soil from beneath the higher side, reducing the lean by about 40 centimeters, and the tower reopened in 2001."
+},
+{
+"id": "r1-p18",
+"text": "Self-checkout machines spread rapidly through supermarkets in the 2000s and 2010s, promising shorter lines and lower labor costs. In recent years, however, several large retailers in the United States and Britain have curtailed the number of machines in some stores or limited them to customers buying only a few items. Store managers have reported higher rates of theft and scanning blunders at the machines, and many customers resent doing work that employees once did for them. Supporters retort that the machines remain popular with shoppers who are buying a handful of items and prize speed over conversation. The debate suggests that automation does not invariably save as much money as it first appears to, notably when its concealed costs are counted."
+},
+{
+"id": "r1-s1",
+"text": "[A] For more than a decade, technology companies promised that self-driving cars were (a) <u>imminent</u>, and for more than a decade the promise slipped. That pattern has finally begun to change. In several American cities, including Phoenix, San Francisco, and Los Angeles, residents can now open an app and summon an automobile with no one in the driver's seat, paying a fare much as they would for an ordinary taxi. In China, fleets of driverless taxis operate in parts of Wuhan and other large cities. What was only recently an experiment has become, in certain neighborhoods, an unremarkable part of daily life.\n[B] Supporters point first to safety. Human drivers are weary, distracted, and occasionally drunk, and road accidents kill more than a million people worldwide each year. A machine never checks its phone. Operators have released data indicating that their vehicles are involved in fewer injury crashes per mile than human drivers in the same cities, although independent researchers note that such comparisons are difficult to make fairly. Supporters also contend that driverless taxis could offer independence to elderly and disabled people who cannot drive themselves.\n[C] Critics are less enthusiastic. The vehicles still meet situations they handle poorly, such as atypical construction zones or police officers directing traffic by hand, and in those moments remote staff may need to (b) <u>intervene</u>. Emergency crews in some cities have complained that stalled vehicles blocked their path. Labor unions, meanwhile, warn that millions of people who drive for a living, from taxi and delivery drivers to long-haul truckers, could eventually lose their jobs. To them, hailing the technology now seems (c) <u>premature</u>.\n[D] Regulators face a difficult balancing act. Regulations that are too stringent could stall a technology that may one day prevent many deaths; regulations that are too loose could let companies test unfinished systems on public thoroughfares, leaving ordinary pedestrians to bear the risk of any (d) <u>defect</u> in the software. Some governments have responded by permitting driverless taxis only in limited zones, expanding them step by step as safety records accumulate. Most observers concur that wider use is now (e) <u>inevitable</u>. The open question is how quickly it should come, and who should decide."
+},
+{
+"id": "r1-s2",
+"text": "[A] In 1989 the American sociologist Ray Oldenburg popularized the term \"third place\" to designate the informal gathering spots that exist apart from the home, the first place, and the workplace, the second. Cafés, barbershops, taverns, and neighborhood bakeries were his canonical examples. What distinguished them, he contended, was not what they sold but what they permitted: people of disparate backgrounds could drop in uninvited, linger without being hurried, and converse with acquaintances (a) <u>they might never meet</u> elsewhere. Oldenburg also underscored that such venues are egalitarian: within them, a factory worker and a bank manager meet as peers, and social rank counts for less than wit or good humor. The ambience is playful rather than solemn, and the genuine allure is the company of the regulars rather than the coffee or beer on the counter.\n[B] Oldenburg maintained that such places performed inconspicuous but indispensable work for democracy. Conversation among neighbors, he argued, cultivates the loose ties of trust (b) <u>that</u> enable communities to cooperate when crises arise. In aggregate, such modest bonds constitute a form of social capital that no institution can readily manufacture. Regulars register when someone is absent; shopkeepers know which elderly patron lives alone. These relationships are seldom profound, but their very casualness renders them effortless to form and (c) <u>surprisingly durable</u>.\n[C] Many commentators lament that third places are in precipitous decline; suburban development, which separates homes from shops by lengthy drives, (d) <u>have made</u> spontaneous encounters more elusive. Escalating rents squeeze out independent cafés, and the chains that supplant them are frequently engineered for rapid takeaway rather than leisurely conversation. The internet provides a surrogate of sorts, though online forums seldom convene people who disagree in the way a crowded counter once did.\n[D] Not everyone shares this bleak prognosis, however: some researchers point to new kinds of gathering places, from community centers (e) <u>reinvented</u> as hubs for clubs and classes to climbing gyms and board-game cafés that appeal to young adults. Whether these will assume the same civic function remains to be seen. What seems evident is that third places do not endure by accident; they depend on zoning ordinances, affordable rents, and proprietors willing to let customers linger longer than is strictly profitable."
+},
+{
+"id": "r1-s3",
+"text": "[A] Long before notebooks were affordable, educated people cultivated their memories with a technique now known as the method of loci. According to an ancient anecdote, the Greek poet Simonides was the sole survivor when the roof of a banquet hall collapsed, and he was able to identify the crushed guests by recalling where each had been seated. Whether or not the tale is apocryphal, Roman teachers of rhetoric erected an entire system on its central insight: memory adheres to places.\n[B] An orator preparing an address would envision a familiar edifice and deposit a vivid image representing each point of the argument in a separate chamber. During the oration, he proceeded through the edifice in his mind, retrieving the images in their prescribed sequence. Because speeches were customarily delivered without notes, the capacity to (a) <u>articulate</u> a protracted argument fluently hinged on such training. Roman handbooks advised making the images arresting, even grotesque or violent, since commonplace pictures were readily forgotten. Modern readers who encounter the bizarre illustrations in extant memory manuals often struggle to (b) <u>decipher</u> them. Writing existed, of course, but manuscripts were costly and cumbersome to consult, so a disciplined memory remained the principal repository of knowledge.\n[C] Medieval scholars elaborated the art still further: monks committed vast portions of scripture to memory, and teachers deployed imagined buildings, gardens, and ladders to classify what their pupils absorbed. Such discipline was believed to (c) <u>foster</u> not only recall but also moral and spiritual contemplation, and an erudite reader would (d) <u>meditate</u> on a text by pacing deliberately through its images. Memory, in this conception, was not a storeroom but a ____: a site for thinking, not merely for keeping.\n[D] The printing press gradually eroded this culture, for once books grew inexpensive and indexes ubiquitous, many writers came to regard memorization as antiquated, and the elaborate art was disparaged as a (e) <u>trivial</u> trick. It has never entirely vanished, however; competitive memory champions still rely on imagined edifices to recall lengthy sequences of playing cards or digits, and empirical studies indicate that novices instructed in the method can markedly augment their recall within a few weeks of practice."
+},
+{
+"id": "r1-s4",
+"text": "[A] Most people are serenely confident that they would notice if their interlocutor were suddenly replaced by someone else. Experiments on what psychologists term change blindness suggest otherwise. (Ⅰ) Our conviction that we perceive a rich and meticulously detailed world at every instant is partly an illusion. The brain retains far less than it seems to, filling the gaps with expectations about what is presumably there, and so long as nothing salient appears altered, we tacitly assume that nothing has changed. Perception, in other words, is less a faithful transcript of the world than a plausible reconstruction of it.\n[B] In a celebrated study from the late 1990s, a researcher approached pedestrians on a college campus to ask for directions. Midway through the exchange, two men hauling a large door barged rudely between them. (Ⅱ) Concealed behind the door, the researcher was surreptitiously replaced by a different person, who calmly resumed the conversation. Approximately half of the pedestrians failed to notice that they were now addressing a stranger, even though the two experimenters differed conspicuously in height, attire, and voice. (Ⅲ) Those who did detect the switch tended to be close in age to the experimenters.\n[C] Change blindness is not a sign of poor eyesight or of unusual carelessness. (Ⅳ) Attention is a finite resource, and the brain must incessantly discern what merits tracking. In a perfunctory exchange about directions, a stranger's identity may simply not seem pertinent, so the particulars of his face are never encoded firmly enough to be compared with what ensues. Film editors have long exploited this vulnerability: continuity errors, such as a glass that is brimming in one shot and empty in the next, routinely elude most viewers.\n[D] The phenomenon carries tangible consequences: drivers may overlook a motorcycle that emerges while they glance at a mirror, and eyewitnesses may confidently misidentify a suspect in a police lineup. (Ⅴ) Researchers contend that the most reliable safeguard is a measure of humility about our own perception. The sensation of having seen everything is no proof that nothing has changed, and consequential judgments should not rest on that sensation alone, a caveat that is anything but academic in courtrooms and on highways alike."
+},
+{
+"id": "r1-s5",
+"text": "[A] In June 2023, smoke from hundreds of wildfires burning across Canada drifted south and turned the sky over New York City a hazy orange. For a few days, the city recorded some of the worst air quality of any major city in the world, and residents who had never given wildfires a thought found themselves scrambling for masks. The episode was dramatic, but it was not unique. As fire seasons grow longer and more intense, smoke is becoming a (a) <u>chronic</u> problem for communities that may lie hundreds or even thousands of kilometers from the nearest flame.\n[B] The main peril comes from fine particles known as PM2.5, which are less than 2.5 micrometers across, approximately thirty times thinner than a human hair. Unlike larger particles, which are trapped in the nose and throat, these can penetrate deep into the lungs and even pass into the bloodstream. Short-term exposure can (b) <u>aggravate</u> asthma and other breathing problems, and studies have linked smoky days to surges in emergency-room visits for heart and lung conditions. Some research suggests that particles from wildfire smoke may be more detrimental, gram for gram, than those from other sources, conceivably because burning homes and vehicles release a mixture of toxic chemicals along with the burning vegetation.\n[C] The burden does not fall evenly. Outdoor workers, such as farm laborers and construction crews, often cannot stay inside on smoky days without forfeiting wages. Older adults, young children, and pregnant women are notably (c) <u>sensitive</u> to polluted air; children, for example, breathe more air relative to their body weight than adults do, and their lungs are still developing. And people living in poorly sealed housing may breathe virtually as much smoke indoors as outdoors, while wealthier households can retreat behind closed windows and run air purifiers.\n[D] Public health officials have begun to respond. Many regions now issue smoke forecasts, much as they issue weather warnings, and some cities open \"clean air shelters\" with filtered air during the worst episodes. Researchers underscore that simple measures can (d) <u>diminish</u> exposure considerably: a well-fitting N95 mask filters out most fine particles, and a homemade purifier built from a box fan and a filter can clean the air in a single room. Such steps cannot (e) <u>substitute</u> for longer-term endeavors to manage forests and slow the warming that feeds larger fires, but they can safeguard people while those endeavors take effect."
+},
+{
+"id": "r1-s6",
+"text": "[A] In the mangrove swamps and river mouths of Southeast Asia and northern Australia lives a diminutive fish with a most peculiar method of hunting. The archerfish lurks just beneath the surface until it detects an insect alighting on foliage that overhangs the water. It then presses its tongue against a groove in the roof of its mouth and abruptly contracts its gill covers, (a) <u>firing</u> a jet of water that can dislodge the prey from its perch at a distance of more than a meter. By the time the stunned insect strikes the surface, the fish is usually poised directly beneath it, ready to engulf its quarry.\n[B] The feat is more formidable than it appears. Because light bends, or is refracted, as it passes from air into water, an insect viewed from below appears displaced from its actual position. An archerfish, however, (b) <u>adjust</u> its aim to compensate for this optical distortion, and seasoned adults seldom miss. The fish can even modulate the jet so that the water gathers into a compact mass just before it reaches the target, delivering a more forceful blow than a uniform stream would.\n[C] Archerfish are also unusually adept learners. In controlled laboratory experiments, juvenile fish that had (c) <u>watched</u> skilled companions hit moving targets subsequently sharpened their own aim, apparently by learning vicariously, through observation, rather than through trial and error alone. In another study, fish (d) <u>trained</u> to spit at one of two photographs of human faces continued to single out the correct face even when it was embedded among dozens of unfamiliar ones, an astonishing aptitude for an animal whose small, comparatively rudimentary brain lacks the specialized regions that mammals employ to recognize faces.\n[D] Researchers scrutinize the archerfish not merely for its own sake but for what it reveals about how nervous systems solve difficult computational problems. Its hunting entails the rapid, simultaneous estimation of distance, angle, and timing, and its proficiency implies that intricate skills need not depend on a large brain. Scientists caution against drawing sweeping conclusions from a single species, but the little fish (e) <u>has become</u> a favorite model in debates over the nature of animal cognition."
+},
+{
+"id": "r1-s7",
+"text": "[A] In August 2021, the United Nations Environment Programme announced that leaded gasoline for cars had finally vanished from service stations worldwide, after Algeria, the last country still selling it, exhausted its remaining supplies. In the early 1920s, American engineers had discovered that adding a compound dubbed tetraethyl lead to gasoline stopped engines from knocking, a damaging form of uneven combustion. The additive was cheap and efficacious, and within a few decades it was being burned in vehicles on every inhabited continent.\n[B] Its perils were apparent from the start. Workers at plants producing the additive in the 1920s suffered hallucinations, and several perished. Lead is a poison that accumulates in the body, and it is notably detrimental to children, whose developing brains are vulnerable even to small amounts. Health authorities now assert that no level of lead exposure is known to be safe; even low levels are associated with poorer attention and lower scores on intelligence tests. Yet for decades the industry insisted that the quantities released from automobile exhausts were harmless, and few independent scientists scrutinized the question closely.\n[C] That began to change after the geochemist Clair Patterson, while endeavoring to measure the age of the Earth, found lead contamination everywhere in his laboratory and in the environment around it. His later measurements demonstrated that lead levels in modern people and in recent layers of polar ice were far higher than in earlier times, and he spent years contending that leaded gasoline was the main source. As countries phased out the additive, beginning in the 1970s, average levels of lead in children's blood fell drastically. In the United States, they dropped by more than 90 percent.\n[D] Economists have since endeavored to estimate what the change was worth. One analysis backed by the United Nations estimated that ending leaded gasoline prevents more than a million premature deaths each year and saves trillions of dollars, largely by safeguarding children's health and future earnings. Some researchers have gone further, linking the decline of lead to falling crime rates, although that claim remains contested. Whatever the exact figures, the narrative offers a sobering lesson: a substance can spread across the entire planet long before anyone ____."
+},
+{
+"id": "r1-s8",
+"text": "[A] On Saturday mornings the municipal pool was the dominion of children, shrieking and splashing and gliding through the water with the effortless grace of fish, and of one middle-aged man who had never learned to swim. I was that man: for decades I had eschewed beaches and pools, concocting elaborate excuses whenever friends broached the prospect of an excursion, and the (a) <u>embarrassed</u> silence that greeted my refusals had become a familiar companion. The phobia had originated, as nearly as I could reconstruct it, on a childhood afternoon when a breaker overturned me at the seaside and pinned me beneath the surf for what felt like an eternity. When my daughter enrolled in lessons, however, I recognized that I had no wish to bequeath her my dread along with my surname.\n[B] The instructor, a retired lifeguard named Mrs. Ortiz, did not commence with strokes or breathing drills. For the first two weeks she required of me only that I float, (A) ____ by her hand at first and subsequently by nothing at all. I detested the regimen, for floating, it transpired, demanded the very surrender I had (b) <u>devoted</u> my entire life to evading: to cease struggling and trust that the water's buoyancy would sustain me. Every primal reflex urged me to thrash, clutch, and hold my head aloft, and each time I yielded to those reflexes, I sank.\n[C] By the third month I could manage a laborious, clumsy length of the pool. It was hardly a (c) <u>magnificent</u> achievement, and the children in the adjacent lane overtook me with casual ease. Yet I emerged from the water that evening feeling inexplicably (d) <u>blissful</u>, as though I had relinquished a burden I had shouldered for decades. Neither my daughter nor her friends (B) ____ impressed, of course; to them, swimming was as mundane as walking.\n[D] What endured was not the swimming itself but the counterintuitive lesson of those initial weeks. So much of my apprehension, I came to understand, had stemmed from my own (e) <u>rigidity</u>, the reflexive impulse to combat whatever eluded my control. I still recall that pool whenever a predicament seems to demand ever more strenuous effort. On occasion, I remind myself, the more prudent course is to lie back, loosen my grip, and let the water perform its quiet work."
+},
+{
+"id": "r2-p15",
+"text": "In October 2025, Sanae Takaichi became the first woman to serve as prime minister of Japan. Earlier that month she had won the leadership of the Liberal Democratic Party, which has governed Japan for most of the period since the 1950s, but becoming prime minister still required a vote in parliament. Her path was complicated when the party's long-time coalition partner, Komeito, withdrew from the government, and the Liberal Democrats reached a new agreement with another party in order to secure enough support. Her election drew attention abroad partly because women remain a small minority in Japan's parliament and in senior business positions. Observers noted, however, that her policy views were largely conservative and that her rise did not by itself signal broader change."
+},
+{
+"id": "r2-p16",
+"text": "The arrangement of letters on most English keyboards, known as QWERTY after the first six letters of the top row, dates back to typewriters of the 1870s. A popular narrative holds that the layout was designed to slow typists down so that the machine's metal arms would not jam. Historians have questioned this account. Some contend that the arrangement owed more to the needs of telegraph operators, who transcribed Morse code, than to any desire to curtail speed. Whatever its origins, the layout has proved remarkably durable. Alternative designs that assert to be faster have existed for nearly a century, yet few people embrace them, because the cost of relearning outweighs the modest benefit for most users."
+},
+{
+"id": "r2-p17",
+"text": "In 1898, the psychologist Norman Triplett discerned that cyclists rode faster when racing against others than when riding alone against the clock. In a follow-up experiment, children winding fishing reels tended to work faster when another child was doing the same task beside them. Later researchers dubbed this social facilitation: the presence of others can enhance performance. The effect, however, has a catch. In the 1960s, the psychologist Robert Zajonc contended that an audience raises arousal, which helps on simple or well-practiced tasks but hurts on arduous or unfamiliar ones. An expert violinist may perform at her best in a packed hall, whereas a novice may falter on passages she plays effortlessly in private."
+},
+{
+"id": "r2-p18",
+"text": "Rainbows are produced by water droplets acting as minuscule prisms. Sunlight enters a drop, is bent, bounces off the drop's inner surface, and is bent once more as it exits. Red and violet light are bent to marginally unequal degrees, and this small difference fans the sunlight out into separate hues. An observer can see the bow only when the sun shines from behind and rain is falling ahead, and the colored arc invariably sits approximately 42 degrees away from the shadow of the observer's head. Because each person's eyes collect light from their own particular droplets, two friends standing apart are looking at two distinct rainbows. The ground usually conceals the bottom of the arc, yet pilots flying above the clouds occasionally see a rainbow as a full ring."
+},
+{
+"id": "r2-s1",
+"text": "[A] Few institutions seem as timeless as the restaurant, yet in its modern incarnation it is scarcely more than two and a half centuries old. Before the late eighteenth century, travelers in France could dine at inns or purchase prepared dishes from caterers, but they customarily sat at a communal table, consumed whatever the host happened to be serving, and paid a fixed price. Food was frequently presented on large shared platters, and latecomers might find the platters all but depleted. The notion of selecting from an array of dishes, at a private table, at an hour of one's own choosing, would have struck most diners as decidedly peculiar.\n[B] The word \"restaurant\" originally denoted not a place but a food: a rich broth believed to (a) <u>cure</u> exhaustion and restore the vigor of the feeble and the infirm. In the 1760s, Parisian entrepreneurs began opening establishments that sold these restorative broths to customers who wished to eat sparingly, and the shops themselves came to be dubbed restaurants. Unlike inns, they allowed patrons to (b) <u>consult</u> a menu, sit at small separate tables, and come and go at any hour. Their earliest clientele often comprised people of delicate health, or those who wished to appear so.\n[C] The French Revolution is often credited with disseminating the new institution; according to a popular account, cooks who had served aristocratic households lost their employers and opened restaurants of their own. Historians now deem this narrative (c) <u>exaggerated</u>, since restaurants already existed in Paris before 1789. The upheaval did, however, help render dining out a fashionable pursuit for an expanding middle class, who could now display their discernment in public as only nobles once had. Proprietors swiftly discovered that a reputation for culinary excellence could attract throngs.\n[D] What the restaurant offered, above all, was a new kind of ____. Diners were no longer guests obliged to accept whatever they were given; they were customers entitled to choose. The menu, with its catalogue of dishes and prices, transformed eating into an expression of personal taste and gave cooks an incentive to (d) <u>refine</u> their dishes in competition with rivals. A diner could also remain (e) <u>anonymous</u> in a crowded room, eating among strangers without owing anyone conversation. Much of modern urban life, from the café to the food court, grew out of that deceptively simple change."
+},
+{
+"id": "r2-s2",
+"text": "[A] For years, European industries complained that the fight against climate change left them at a disadvantage. Factories in the European Union must buy permits for every tonne of carbon dioxide they emit, while competitors in countries without such regulations face no comparable cost. Economists warned of \"carbon leakage\": production, and the emissions that come with it, might simply relocate abroad, (a) <u>leaving</u> the planet no better off and Europe poorer. Without some correction, Europe's climate policy could end up exporting jobs rather than curtailing pollution. Some heavy industries, such as steel and cement, seemed notably likely to relocate.\n[B] The EU's answer is the Carbon Border Adjustment Mechanism, customarily shortened to CBAM. Under the scheme, importers of certain carbon-intensive goods, namely iron and steel, aluminum, cement, fertilizers, electricity, and hydrogen, must pay a charge (b) <u>based on</u> the emissions released in producing them, approximately matching what a European manufacturer would pay. Importers will cover the charge by buying certificates whose price follows that of carbon permits inside the EU. A transitional phase that began in October 2023 required importers only to report those emissions; importers become liable for the charge on goods imported from 2026. If an exporting country already (c) <u>impose</u> a carbon price of its own, the amount paid there can be deducted.\n[C] Supporters see the mechanism as a way to safeguard European industry while nudging other countries toward cleaner production. A steelmaker in Asia or Africa that wants to keep selling to Europe now has a reason to measure, and eventually to cut, its emissions. Several governments, (d) <u>having watched</u> the EU's plans develop, have begun designing carbon-pricing systems of their own, partly so that the revenue stays at home rather than flowing to Brussels. In this sense, the measure may spread carbon pricing far beyond Europe's borders.\n[D] Critics, however, raise several objections. Exporters in developing countries contend that the measure is protectionism dressed in green clothing, and that it punishes nations which contributed least to historical emissions. Companies of every size complain about the paperwork, since calculating the emissions embedded in a single shipment can be extraordinarily complicated. Others fear retaliation, since trading partners might answer with taxes of their own on European goods. Some economists also doubt how much the charge will curtail global emissions, (e) <u>given</u> that producers may simply send their cleanest goods to Europe and their dirtiest to other markets."
+},
+{
+"id": "r2-s3",
+"text": "[A] In 1609, Galileo Galilei was a mathematics professor at the University of Padua, esteemed by colleagues but far from affluent. His salary was modest, and he supplemented it by taking in student lodgers and selling instruments. Like many scholars of his time, he aspired to escape these burdens by finding a powerful (a) <u>patron</u> at one of Italy's princely courts. That year he heard of a Dutch device that made distant objects appear closer, and he quickly built enhanced versions of his own, grinding the lenses himself until his instruments could magnify objects about twenty times.\n[B] Turning his telescope to the night sky in early 1610, Galileo saw mountains on the Moon, countless stars invisible to the naked eye, and four small points of light circling Jupiter. He rushed his findings into print in a short book, The Starry Messenger, and made a shrewd decision: he named the four moons the Medicean Stars, in honor of Cosimo II de' Medici, the young Grand Duke of Tuscany, and his brothers. Before the book appeared, Galileo had been relatively (b) <u>obscure</u> outside Italian academic circles; within months he was renowned across Europe, and copies of the book were eagerly sought in distant cities.\n[C] The strategy worked. Later that year Cosimo appointed him chief mathematician and philosopher to the Grand Duke, a position that freed him from teaching and permitted him to (c) <u>obtain</u> a generous salary for life. Galileo's (d) <u>aspiration</u> had long been to devote himself to research rather than to the routine duties of a professor, and the court post seemed to fulfill it at last.\n[D] Historians note that patronage shaped early modern science in ways that are easy to overlook. Scholars competed for the attention of princes, and discoveries could serve as gifts that brought prestige to both giver and receiver. It would be a blunder, however, to (e) <u>attribute</u> Galileo's achievements to flattery alone; his observations were meticulous and could be checked by anyone with a good telescope. The episode demonstrates that even revolutionary science depended on money, status, and the favor of the powerful."
+},
+{
+"id": "r2-s4",
+"text": "[A] \"It isn't broken, only tired,\" the old man said, turning the little red car over in his fingers. My son, who was six, had been inconsolable since the train left the city, and our fellow passengers had begun to signal their (a) <u>disdain</u> for the noise with conspicuous sighs. One wheel of his cherished toy had worked loose, and I possessed nothing with which to mend it. The man across the aisle, who had been reading unobtrusively for most of the journey, (A) ____ his newspaper and asked whether he might inspect it.\n[B] He extracted a hairpin from his coat pocket, bent it into a minuscule hook, and worked at the axle with a gravity that (b) <u>captivated</u> my son. He labored in silence, holding the car close to his spectacles, while my son nestled against my arm and tracked every deft movement. Within ten minutes the wheel rotated freely; my son's tears stopped at once, and he spent the remainder of the trip racing the car along the windowsill, murmuring engine noises under his breath. When I attempted to express my gratitude, he merely shrugged and remarked that he had spent his working life repairing radios, and that small machines seldom required anything more than a modicum of attention.\n[C] We disembarked at different stations, and I never learned his name, and for years I presumed that my son had long since forgotten the episode; he was so young, and the toy had been lost long ago. Then, at his university graduation, he alluded unprompted to the man on the train. He said it was the first time he (B) ____ that a stranger could help simply because help was needed, without anticipating any recompense. The memory, he confided, had (c) <u>shaped</u> the way he treated people he would never encounter again.\n[D] I have since become persuaded that the kindnesses we remember are seldom grand. They are unassuming, (d) <u>incidental</u> gestures performed by people who anticipate no thanks and who depart before any can be offered. Such acts entail virtually no cost, yet their effects can be (e) <u>cumulative</u>, passing unobtrusively from one person to the next in ways that no one can trace. I think of the man whenever I am tempted to avert my gaze from a stranger's modest predicament and persuade myself that it is none of my concern."
+},
+{
+"id": "r2-s5",
+"text": "[A] It is widely assumed that the long summer vacation in American schools exists because children were once needed to help on family farms. The explanation is tidy, endlessly repeated, and largely erroneous, for in the agrarian communities of the nineteenth century, children's labor was most indispensable during spring planting and autumn harvest, and rural schools typically convened their sessions in winter and summer, when fieldwork was less onerous. Summer, in other words, was frequently a season of schooling in the countryside rather than a respite from it.\n[B] The modern summer break originated instead in the cities. In the early nineteenth century, many urban schools operated virtually year-round, with brief recesses interspersed throughout the calendar. As reformers sought to standardize education, they contended that such protracted school years overtaxed children's minds and bodies, a concern that some physicians of the era echoed in alarming terms. Sweltering heat in congested classrooms, (a) <u>which</u> had no air conditioning, made learning arduous, and affluent families routinely (b) <u>left</u> the cities for cooler retreats in July and August. A uniform summer vacation incrementally emerged as a compromise between the urban and rural calendars, and by the early twentieth century it (c) <u>has become</u> the national norm.\n[C] The break has proved remarkably resilient, but it has also attracted sustained criticism. Researchers have long documented that students tend to forfeit some academic skills over the summer, a pattern colloquially dubbed the summer slide, and that the losses (d) <u>appear</u> larger for children from low-income families, whose summers may offer fewer books, camps, and trips. More recent studies have disputed the magnitude and consistency of the effect, but apprehension about it has galvanized experiments with shorter breaks distributed more evenly across the year.\n[D] Such calendars remain the exception rather than the rule, largely because parents organize employment and childcare around the long break, tourism and summer camps depend on it, and many instructors prize it as an interval for recuperation and professional development. The history of the summer vacation thus affords a broader lesson: customs that seem to have self-evident practical origins are occasionally explained after the fact by narratives that are more gratifying than accurate, and those narratives can make an arrangement appear far more intractable than it (e) <u>really is</u>."
+},
+{
+"id": "r2-s6",
+"text": "[A] Every few months, it seems, another company announces that it has been hacked. Telecommunications carriers, retailers, hospitals, and government agencies have all reported breaches in recent years, some exposing the personal information of tens of millions of people at once. Names, phone numbers, addresses, passwords, and in the worst cases national identification numbers and medical records have ended up for sale in online criminal markets. For the individuals affected, the consequences may not appear for months: a fraudulent loan application, an unfamiliar charge on a card, or a convincing phone call from someone who already knows a great deal about them.\n[B] Several trends have made breaches both more prevalent and more damaging. Companies collect far more data than they did a generation ago, often keeping it long after it has served its purpose. Ransomware gangs, which lock up a victim's computer systems and demand payment, increasingly steal data as well, threatening to publish it unless they are paid. And because many organizations rely on the same outside software providers, a single weakness in one extensively used program can expose thousands of customers at once. Security experts often assert that attackers need to succeed only once, while defenders must succeed every time.\n[C] Once data has leaked, it cannot be called back. A password can be changed, but a date of birth or a fingerprint cannot. This is why many experts contend that the most efficacious protection is ____: information that was never gathered, or that was deleted when it was no longer needed, cannot be stolen. Some privacy laws now require companies to justify the data they hold and to dispose of what they do not need, though enforcement varies extensively from country to country.\n[D] Regulators have also begun to elevate the cost of carelessness. In several jurisdictions, companies that fail to safeguard customer data now face fines calculated as a share of their annual revenue, and executives may be required to explain their failures in public hearings. Customers, for their part, are advised to use distinct passwords for distinct services, to turn on two-step verification, and to treat unforeseen messages asking for personal information with suspicion. None of these measures guarantees safety. Together, however, they can make an individual a harder target, and in the economics of cybercrime, attackers tend to move on to easier ones."
+},
+{
+"id": "r2-s7",
+"text": "[A] Most people who fail to reach their objectives do not lack good intentions. They resolve to exercise, to save money, or to complete a report early; somehow, the moment for action slips by. The predicament is not confined to the weak-willed; it afflicts virtually everyone at some juncture. The psychologist Peter Gollwitzer has devoted decades to investigating this chasm between intention and action, and he has proposed a strikingly simple remedy. (Ⅰ) Rather than merely deciding what they wish to attain, people should stipulate in advance precisely when, where, and how they will act.\n[B] Gollwitzer dubs such plans \"implementation intentions,\" and they adopt an if-then format: \"If it is 7 a.m. on a weekday, then I will put on my running shoes.\" (Ⅱ) The plan links a specific situation to a specific behavior, so that when the situation arises, the behavior ensues with little need for fresh deliberation. In effect, the person delegates control of the action to the environment and no longer has to remember the goal and summon willpower at precisely the opportune moment; the situation does the reminding. Dozens of studies have tested the technique. (Ⅲ) Meta-analyses that aggregate the results of many of them have found that it substantially enhances the likelihood that people actually execute their plans.\n[C] The technique seems notably beneficial for people who struggle with self-control, and for objectives that are easily forgotten or deferred, such as taking medication or attending a medical screening. (Ⅳ) It can also help people resist entrenched habits. Someone endeavoring to curtail snacking, for example, might resolve: \"If I feel hungry in the afternoon, then I will eat an apple.\" The plan does not eliminate the craving, but it furnishes a ready response before the craving can prevail.\n[D] Implementation intentions are no panacea. (Ⅴ) They work best when the underlying objective is one a person genuinely wishes to attain, and they can backfire if plans are so inflexible that a single disruption derails everything. Still, their appeal lies in their modesty: rather than exhorting people to become more disciplined in general, they ask them only to determine, ahead of time, what they will do when the moment arrives. Some researchers recommend coupling such plans with a candid appraisal of the obstacles likely to stand in the way."
+},
+{
+"id": "r2-s8",
+"text": "[A] Visitors to Venice marvel at its palaces and churches, but few contemplate what lies beneath them. The city rests on a cluster of small islands in a shallow lagoon, where the substrate consists largely of soft mud and sand. To build on such unstable ground, Venetian builders over many centuries drove millions of wooden piles, hewn from trees such as alder, larch, and oak, deep into the lagoon floor, and then laid platforms of timber and stone atop them. Beneath the largest edifices, the piles were driven so densely that they constitute a virtually solid mass.\n[B] At first glance, the method seems doomed to failure, since timber left in water ordinarily rots within years. The piles beneath Venice, however, have survived for centuries because they are entirely submerged in waterlogged mud, an environment so deficient in oxygen that the fungi responsible for most decay cannot (a) <u>flourish</u>. Over time, minerals in the water have (b) <u>permeated</u> the wood, rendering parts of it harder and better able to (c) <u>withstand</u> the immense load above. The builders appear to have grasped this empirically long before anyone could elucidate it scientifically.\n[C] The system is by no means invulnerable: analyses of piles extracted during repairs demonstrate that anaerobic bacteria, which tolerate scant oxygen, do gradually soften the outer layers of the wood. Wherever the water level drops and air reaches the piles, decay accelerates drastically. The graver (d) <u>threat</u>, however, now emanates from above the waterline, where salt water that inundates the city with mounting frequency corrodes brick and stone. As it rises by capillary action into the walls, the salt crystallizes and gradually crumbles the masonry.\n[D] Since 2020, a system of mobile barriers at the inlets to the lagoon has been raised during exceptionally high tides to repel the sea. The barriers have spared the city several floods, but they are costly to operate, and scientists warn that rising sea levels may necessitate deploying them so frequently that the lagoon's ecology deteriorates. Some experts have proposed more radical interventions, from elevating pavements to injecting water deep underground to lift the city marginally. Venice's foundations have endured for a millennium; whether the city above them can (e) <u>secure</u> its future for another century is a far more open question."
+},
+{
+"id": "r3-p15",
+"text": "In January 2025, European climate scientists corroborated that 2024 had been the warmest year since reliable records began, and the first calendar year in which the global average temperature was more than 1.5 degrees Celsius above the level before industrialization. The figure drew attention because 1.5 degrees is the more ambitious limit named in the Paris Agreement. Scientists underscored, however, that the agreement refers to warming averaged over two decades or more, so a single hot year does not by itself mean the target has been missed. Part of the heat came from El Niño, a natural pattern of warm water in the Pacific Ocean that raises global temperatures for a time. Most of it, they added, reflected the long-term warming driven by greenhouse gases."
+},
+{
+"id": "r3-p16",
+"text": "The seven-day week is so familiar that it seems natural, yet unlike the day, the month, or the year, it corresponds to no evident cycle in nature. Its roots lie in the ancient Near East. The Babylonians attached special significance to the number seven, and the Jewish tradition of a weekly day of rest gave the seven-day cycle an enduring religious meaning. The Romans, who had long used an eight-day market cycle, incrementally embraced the seven-day week, and in 321 the emperor Constantine made Sunday an official day of rest. Endeavors to replace the system have not lasted. Revolutionary France introduced a ten-day week in the 1790s, but it proved profoundly unpopular and was abandoned about a decade later."
+},
+{
+"id": "r3-p17",
+"text": "Instructors often tell students to stop doodling and pay attention, presuming that drawing in the margins is a sign of a wandering mind. A study published in 2009 hints that the reverse can occasionally hold. Participants listened to a long, tedious telephone message full of the names of people and places. One cohort filled in printed squares and circles with a pencil during the recording, while a second cohort sat without any task. Afterward, in a surprise memory test, the doodlers recalled about 29 percent more information. The researcher proposed that a simple drawing task may keep the mind from drifting into daydreams, holding attention at a level just high enough to stay engaged with a boring task. The finding does not mean, however, that every kind of drawing helps."
+},
+{
+"id": "r3-p18",
+"text": "Sharks are often depicted as living fossils, but the label is misleading. The earliest sharks appeared more than 400 million years ago, long before the first trees grew on land, yet modern sharks are not unchanged relics. Over that immense span, they have diversified into more than five hundred species, from the plankton-eating whale shark, the largest fish alive, to small species that glow faintly in the deep sea. What has persisted is a successful basic design: a skeleton of flexible cartilage rather than bone, keen senses that can detect minuscule electrical fields, and teeth that are continually replaced throughout life. Today, however, overfishing has put a large share of shark species at risk of extinction."
+},
+{
+"id": "r3-s1",
+"text": "[A] Visitors to old European churches are occasionally told that medieval window glass is thicker at the bottom because glass is genuinely a liquid that has been flowing slowly downward for centuries. The narrative is charming and extensively repeated, but physicists and historians of glassmaking concur that it is spurious. Its appeal (a) <u>derives</u> partly from a genuine puzzle. Glass is not a crystal like ice or quartz, and so it occupies an atypical place among the familiar states of matter, which is enough to make the notion of an exceedingly sluggish liquid sound plausible.\n[B] In a crystal, atoms are arranged in a regular, repeating pattern. In glass, they are frozen in a disordered arrangement resembling that of a liquid, because molten glass cools too quickly for an orderly structure to form. Scientists hence dub glass an amorphous solid. Calculations suggest that at room temperature ordinary window glass would need far longer than the age of the universe to flow noticeably. Ancient Roman glass vessels in museums show no sign of sagging, and old telescope lenses still focus light without the slightest (b) <u>distortion</u>.\n[C] The uneven windows have a simpler explanation. Many medieval glaziers made flat glass by spinning a blob of molten glass into a large disc, a method that produced panes of uneven thickness. When the panes were cut and installed, the thicker edge was often placed at the bottom, conceivably for stability. Yet (c) <u>verification</u> of the flowing-glass theory would require that virtually every old window be thicker at the bottom, and that is not what meticulous surveys find: some panes are thicker at the top or along one side.\n[D] The persistence of the myth demonstrates how a vivid explanation can (d) <u>interfere</u> with the spread of a correct but less colorful one. Still, the puzzle that gave rise to it is genuine. Why some liquids, when cooled, freeze into a glass instead of a crystal, and what exactly happens to their atoms as they do, remains one of the (e) <u>fundamental</u> open questions in the physics of solids."
+},
+{
+"id": "r3-s2",
+"text": "[A] Aviation is among the most intractable industries to decarbonize. Automobiles can run on batteries, but batteries powerful enough to propel a long-haul jet across an ocean would be so heavy that they would leave scant room for passengers or cargo. Hydrogen-powered aircraft remain, for now, largely experimental. For the foreseeable future, therefore, much of the industry has pinned its hopes on sustainable aviation fuel, or SAF: jet fuel (a) <u>made</u> not from crude oil but from feedstocks such as used cooking oil, agricultural residues, or even carbon captured from the air.\n[B] The appeal of SAF is that it can be blended with conventional kerosene and burned in existing engines without substantial modification, so airlines need not await a new generation of aircraft. Its carbon dioxide emissions at the point of combustion are comparable to those of fossil fuel, but because the raw materials (b) <u>absorbing</u> carbon from the atmosphere as they grew, or would otherwise have been discarded, its emissions over its entire life cycle can be dramatically lower, by as much as 80 percent according to some estimates.\n[C] Governments have begun to mandate its use. Under a European Union regulation, fuel supplied at EU airports must contain at least 2 percent SAF from 2025, rising to 6 percent in 2030 and 70 percent by 2050. The principal obstacles are supply and price. SAF still accounts for well under 1 percent of the jet fuel consumed worldwide, and it typically commands a price several times that of conventional fuel. The supply of used cooking oil, the cheapest feedstock, is finite, and critics fear that surging demand could spur fraud, (c) <u>with</u> virgin palm oil passed off as waste, or divert crops away from food production.\n[D] Proponents contend that mandates are precisely what is needed to (d) <u>bring</u> costs down, much as government subsidies once helped make solar panels affordable; producers investing in new refineries need assurance that buyers will materialize. Skeptics retort that fuel is only part of the problem, since aviation also warms the climate through contrails and other non-carbon effects, and that the most dependable way to curb its emissions in the short term may simply be to fly less. Both camps concur, however, that much of the additional cost will eventually (e) <u>be passed</u> on to passengers in the form of higher fares."
+},
+{
+"id": "r3-s3",
+"text": "[A] The transition to electric vehicles hinges on batteries, and most of today's batteries hinge on lithium. Demand for the metal has skyrocketed over the past decade, and so has scrutiny of the places where it is found. Some of the world's largest reserves lie beneath the salt flats of the \"lithium triangle,\" a high, arid plateau spanning parts of Chile, Argentina, and Bolivia. There, lithium is dissolved in saline groundwater, or brine, which producers pump to the surface and disperse across vast evaporation ponds. Over a period of many months, the desert sun evaporates the water, leaving behind a concentrated solution from which lithium can be extracted.\n[B] The method is relatively inexpensive, but it poses a vexing question in one of the most parched places on Earth. Producing lithium this way entails the evaporation of colossal quantities of water. Companies contend that the brine they pump is far too saline to drink or to irrigate crops, and that it is therefore not comparable to fresh water. Hydrologists and local communities are less sanguine; subterranean brine and fresh water are interconnected in intricate ways, they point out, and depleting one may lower the level of the other, imperiling wetlands, flamingo habitats, and the springs on which indigenous herding communities depend.\n[C] The scientific picture remains murky, partly because long-term monitoring data are scarce and are frequently collected by the mining companies themselves. Since electric vehicles are meant to safeguard the environment, the controversy has proved acutely awkward for carmakers. Several indigenous communities in the region have demanded a greater voice in mining on their ancestral lands, and some have initiated litigation against companies. Governments, meanwhile, confront competing pressures, since lithium promises export revenue and employment at a time when many of these economies need both, and Chile has announced plans to give its state-owned copper company a larger role in the industry, hoping to retain more of the profits domestically.\n[D] Engineers are devising alternatives: so-called direct lithium extraction technologies aim to separate lithium from brine more rapidly and to reinject most of the water underground, which could substantially curtail evaporation losses. Recycling batteries at the end of their lives could also alleviate the pressure on new mining, although that will take years to matter, since most electric vehicles on the road today are still young. Until such approaches mature, the clean-energy transition will carry an uncomfortable irony: ____."
+},
+{
+"id": "r3-s4",
+"text": "[A] Pronounce a simple word, such as \"door,\" aloud thirty times in succession, and something curious is likely to transpire. (Ⅰ) Somewhere along the way, the word begins to sound peculiar, even meaningless, as though it were an arbitrary noise in a foreign tongue rather than a familiar component of ordinary discourse. Psychologists term this experience semantic satiation, a label coined in the early 1960s by the researcher Leon Jakobovits James, who made it the subject of his doctoral dissertation.\n[B] Why does it occur? One prominent explanation invokes a kind of neural fatigue. (Ⅱ) When we hear or utter a word, a pattern of neural activity binds its sound to its meaning. Reiterating the word over and over triggers that pattern again and again, and the response incrementally attenuates, much as a muscle tires after repeated exertion. For a short interval the sound continues to register, but its tether to meaning grows tenuous. (Ⅲ) The effect is transient, however; after a brief respite, the word regains its ordinary sense.\n[C] Researchers have documented analogous effects beyond spoken words: scrutinizing a written word for a prolonged period can make its spelling look erroneous, and viewing the same face or shape repeatedly can induce a comparable erosion of recognition. (Ⅳ) Such findings suggest that satiation is not an idiosyncrasy of language alone but a pervasive feature of how the brain responds to repetitive stimulation. Even a beloved song can forfeit some of its charm when it is played on a loop for an entire afternoon.\n[D] The phenomenon has even been harnessed for practical ends. Some therapists have experimented with asking anxious clients to repeat a distressing word until it sheds some of its emotional potency, and there is tentative evidence that the technique can alleviate distress, though further research is warranted. Most people, however, encounter satiation only inadvertently: a student copying a difficult word many times before a spelling test may abruptly doubt whether it is spelled correctly at all. (Ⅴ) The experience is a modest reminder that meaning does not reside inside words themselves but is incessantly reconstructed by the mind."
+},
+{
+"id": "r3-s5",
+"text": "[A] The envelope had lain wedged behind a kitchen drawer for nearly forty years when Mina discovered it while clearing out her late aunt's apartment. It was addressed in pencil to a woman she had never heard of, stamped but never posted. Inside was a single page, folded twice and (A) ____ in a meticulous, slanting hand that Mina recognized at once as her aunt's. She sank onto the bare floor of the emptied kitchen and read it before she had quite resolved whether she ought to.\n[B] The letter was an act of contrition: her aunt, who had invariably struck Mina as the most (a) <u>placid</u> of people, recounted a quarrel with a close friend over a borrowed sum of money. She confessed that she had (b) <u>belittled</u> her friend's explanation and that pride had hardened a petty misunderstanding into an enduring estrangement. She wrote that she had begun the letter many times and abandoned it on each occasion, unable to summon words that did not ring like excuses. Her handwriting grew cramped toward the bottom of the page, as if her resolve had been running out as fast as the space.\n[C] Mina spent two weeks endeavoring to trace the friend; old directories proved fruitless, but a former neighbor recollected the name and directed her to a nursing home on the outskirts of the city. The woman there was ninety-one, frail but lucid. When Mina proffered the letter, the old woman read it twice in silence and then chuckled softly. She said that she (B) ____ waiting for that letter for most of her life, and that she had forgiven Mina's aunt decades earlier without ever (c) <u>revealing</u> it to anyone.\n[D] Mina had feared that her visits might seem (d) <u>intrusive</u>, but the old woman received them with evident pleasure, and Mina returned several times before the old woman died the following spring. Neither the aunt nor her friend, it appeared, had ever wholly ceased to dwell on the other. They conversed at length about her aunt as a young woman, quick-tempered and magnanimous, whom Mina had never known. Mina still retains a copy of the letter, not as a record of a (e) <u>breach</u> between two friends, but as a reminder of how long an unspoken word can linger, and of how little it might have taken to utter it."
+},
+{
+"id": "r3-s6",
+"text": "[A] For centuries, readers of the Iliad and the Odyssey puzzled over a curious feature of Homer's style. Certain phrases recur again and again: dawn is virtually invariably \"rosy-fingered,\" the sea \"wine-dark,\" and Achilles \"swift-footed.\" To modern readers, such repetition can seem (a) <u>rudimentary</u>, even tiresome. Some scholars suspected negligent copying by later scribes; others revered the phrases as poetic ornaments without asking why there were so many of them or why they appeared in such predictable places.\n[B] In the 1920s and 1930s, a young American scholar named Milman Parry proposed a distinct explanation. The repeated phrases, he contended, were tools of oral composition. A singer composing aloud in front of an audience could not stop to search for the perfect word. He needed a stock of ready-made phrases that would (b) <u>adhere</u> to the strict rhythm of the line, and the epithets supplied exactly that: each fit a particular position in the meter, so that a name could be completed in whatever space remained.\n[C] To test the notion, Parry and his assistant Albert Lord traveled to Yugoslavia, where traditional singers still performed long epic songs without writing. They recorded singers who could perform thousands of lines and found that no two performances of the same song were identical. The singers were not reciting a fixed text; they were recomposing the narrative each time from familiar phrases and scenes, much as Homer's epithets suggested. One singer produced a song of more than twelve thousand lines. For many scholars, the findings were a (c) <u>revelation</u>. Parry died young in 1935, and Lord later set out their conclusions in a renowned book, The Singer of Tales.\n[D] Parry's work transformed the study of early literature. It suggested that the Homeric poems emerged from a long tradition of oral performance before being written down, and it changed how scholars approach epics from many cultures. Debate continues over exactly how and when the poems took their written form, and whether a single poet of genius shaped them. Yet few now regard the repeated phrases as indications of carelessness. They are, instead, (d) <u>potent</u> reminders that literature was performed long before it was read, and of the skill that permitted singers to (e) <u>sustain</u> a performance for hours."
+},
+{
+"id": "r3-s7",
+"text": "[A] Standard economic theory treats money as fungible, or fully interchangeable. A dollar is a dollar, whether it derives from wages, a gift, or a fortuitous find, and it should be spent with identical prudence. Real people, the economist Richard Thaler observed, do not conduct themselves this way; they sort money into mental categories, such as rent money, vacation money, or free money, and they (a) <u>treating</u> each account by its own rules. Thaler christened this proclivity mental accounting.\n[B] Mental accounting elucidates many otherwise perplexing choices: a person who wins a small prize at a casino may gamble it away with abandon, since it feels like the house's money rather than his own. Families occasionally keep money in a savings account yielding negligible interest while carrying credit card debt at a far steeper rate, (b) <u>because</u> the savings are earmarked for a special purpose. In one celebrated example, people (c) <u>who</u> lose a theater ticket are less willing to purchase a replacement than people who lose an equivalent amount of cash on the way to buy one, even though the loss is identical.\n[C] Such behavior is not wholly irrational, since labeling money can be a valuable instrument of self-control. A household that allocates a fixed sum for groceries each week, or a worker who treats a tax refund as savings rather than discretionary income, may (d) <u>be</u> better off than one that treats all its money as a single undifferentiated pool. Some researchers contend that mental accounts function like fences, insulating long-term objectives from short-term temptations.\n[D] Businesses and governments have become adept at exploiting these tendencies. Retailers promote gift cards, which customers tend to spend more liberally than cash. Some governments have found that labeling a cash transfer for a particular purpose, such as children's education, alters how families spend it, (e) <u>even though</u> nothing precludes them from diverting the money elsewhere. Lottery winners and recipients of an unforeseen bonus often spend that money quite differently from their regular income as well. Money, it seems, carries the labels we affix to it."
+},
+{
+"id": "r3-s8",
+"text": "[A] In the late nineteenth century, the port neighborhoods of Buenos Aires and Montevideo were crowded with newcomers: immigrants from Italy and Spain, migrants from the countryside, and the descendants of enslaved Africans. Many lived in cramped tenements where conditions could be (a) <u>oppressive</u>, with whole families sharing a single room around a common courtyard. Out of this mixture of peoples and musical traditions, a new music and dance emerged: the tango.\n[B] Early tango drew on European dance forms, the Cuban habanera, and rhythms associated with Afro-Argentine communities. It was played in dance halls, cafés, and on street corners, at first with guitar, flute, and violin, and later with the bandoneon, a kind of accordion brought by German immigrants. Respectable society regarded the dance as vulgar, linking it with poverty and nightlife, and many middle-class families forbade their children to learn it. The close embrace of the dancers seemed to (b) <u>unleash</u> everything that courteous manners tried to restrain.\n[C] Around 1913, the tango abruptly became a sensation in Paris. Affluent young Argentines living in Europe had brought it with them, and Parisians, who found it (c) <u>exotic</u> and daring, crowded into dance schools for lessons, held afternoon tango teas, and even bought clothing in a fashionable tango orange. The craze quickly spread to London, New York, and Berlin, where newspapers debated whether the dance was a harmless amusement or a threat to public morals. Ironically, the upper classes of Buenos Aires, who had scorned the dance for years, embraced it only after ____.\n[D] In the decades that followed, tango became a symbol of national identity in both Argentina and Uruguay, and its music developed into a sophisticated art form that composers eventually carried into the concert hall. In 2009, UNESCO formally recognized the tango as part of humanity's living heritage, an honor that the two countries share. Its history demonstrates how a form born on the margins of society can (d) <u>transcend</u> its origins, and it remains a (e) <u>compelling</u> example of how cultural prestige occasionally travels home by way of foreign approval."
+}
+],
+"q": [
+[
+1,
+1,
+"vocab",
+null,
+"Choose the word that best completes the passage.\nAcross many rural regions, local newspapers have closed at a steady pace over the past two decades. As advertising moved online, revenues began to ____, and owners slashed newsroom staff until little remained but reprinted press releases. Researchers have found that when a town loses its paper, fewer candidates run for local office, and municipal borrowing costs tend to rise, conceivably because no one is watching how public money is spent.",
+[
+"flourish",
+"burgeon",
+"dwindle",
+"proliferate",
+"stabilize"
+],
+[
+3
+],
+"광고가 온라인으로 옮겨 가자 기자를 줄였다고 이어지므로 수입이 '줄어들기(dwindle)' 시작한 거예요. flourish·burgeon·proliferate(불어나다)·stabilize 는 기자를 자른 결과와 맞지 않아요."
+],
+[
+2,
+1,
+"vocab",
+null,
+"Choose the word that best completes the passage.\nEarly reports claimed that a popular cold remedy shortened illness by several days. When independent scientists scrutinized the original trial, however, they found that it had enrolled only forty patients and lacked a proper control group. The evidence for the remedy's benefits, they concluded, was ____ at best, and they urged regulators to require a larger, meticulously designed study before permitting any such claims on the packaging.",
+[
+"compelling",
+"conclusive",
+"cogent",
+"tenuous",
+"incontrovertible"
+],
+[
+4
+],
+"환자 40명에 대조군도 없는 시험이었으니 근거는 '빈약한(tenuous)' 거예요. '____ at best'는 '잘 봐줘야 ~'라 약하다는 말만 들어가요. compelling·conclusive·cogent·incontrovertible 은 모두 '확실한, 설득력 있는' 쪽이라 반대예요."
+],
+[
+3,
+1,
+"vocab",
+null,
+"Choose the word that best completes the passage.\nWhen the city announced that it would close a popular downtown street to cars on weekends, many shop owners were furious. Officials explained their ____ at a public meeting: foot traffic data from comparable projects elsewhere demonstrated that pedestrians linger longer and spend more than drivers who simply pass through. Several skeptical merchants agreed to a three-month trial before deciding whether to oppose the plan.",
+[
+"animosity",
+"apology",
+"rationale",
+"ambiguity",
+"reluctance"
+],
+[
+3
+],
+"쌍점 뒤에 다른 도시 자료라는 '이유'가 나오므로 결정의 '근거(rationale)'를 설명한 거예요. animosity(적대감)는 화난 상인 쪽 감정이에요."
+],
+[
+4,
+1,
+"vocab",
+null,
+"Choose the word that best completes the passage.\nMountain trails that once saw a few hundred hikers a year now receive tens of thousands, thanks largely to photographs shared on social media. The crowds bring welcome income to nearby villages, but they also trample vegetation, widen paths, and leave behind waste that rarely decomposes at high altitude. Park rangers warn that unless visitor numbers are capped, the popularity of these routes could ____ the very scenery that draws people to them.",
+[
+"enhance",
+"jeopardize",
+"legitimize",
+"embellish",
+"rejuvenate"
+],
+[
+2
+],
+"사람이 몰려 풀을 밟고 쓰레기를 남긴다고 했으니, 인기가 사람을 끌어들이는 경치 자체를 '위태롭게 할(jeopardize)' 수 있다는 경고예요. enhance·embellish·rejuvenate 는 반대 방향이에요."
+],
+[
+5,
+1,
+"vocab",
+null,
+"Choose the word that best completes the passage.\nFor decades, economists treated small differences in how choices are presented as ____, presuming that rational people would see past the wording. Experiments have since shown otherwise. When a medical treatment is depicted as having a 90 percent survival rate rather than a 10 percent mortality rate, far more patients and even physicians choose it, although the two descriptions are mathematically identical.",
+[
+"pivotal",
+"inconsequential",
+"deliberate",
+"contagious",
+"insidious"
+],
+[
+2
+],
+"합리적인 사람이면 표현에 휘둘리지 않는다고 여겼다는 말이니 표현 차이를 '대수롭지 않은(inconsequential)' 것으로 봤어요. pivotal(중대한)은 반대예요. 실험은 그 반대, 곧 표현이 선택을 바꾼다는 걸 보여 줬어요."
+],
+[
+6,
+1,
+"expression",
+null,
+"Select the phrase that correctly fills the blank in the sentence.\nOnly after the old bridge had been closed for repairs for nearly three months ____ how heavily the town's economy depended on traffic from the neighboring district.",
+[
+"residents began to realize",
+"did residents began to realize",
+"residents did begin realizing",
+"did residents begin to realize",
+"began residents to realize"
+],
+[
+4
+],
+"Only after 같은 'only + 부사구'가 문장 앞에 오면 주절은 조동사 did 가 주어 앞으로 나오는 도치가 돼요. 도치 뒤 동사는 원형 begin 이라 did residents begin to realize 만 맞아요."
+],
+[
+7,
+1,
+"expression",
+null,
+"Select the phrase that correctly fills the blank in the sentence.\nWhat the mayor presented on Monday was ____ for the committee to approve without further debate, so its members agreed to postpone the vote until the following session.",
+[
+"a too ambitious plan",
+"too an ambitious plan",
+"so ambitious a plan",
+"too ambitious a plan",
+"an ambitious too plan"
+],
+[
+4
+],
+"too 뒤에는 '형용사 + a + 명사' 어순이라 too ambitious a plan 이에요. so ambitious a plan 도 어순은 맞지만 뒤에 for ~ to 가 아니라 that 절이 와야 해요."
+],
+[
+8,
+1,
+"expression",
+null,
+"Select the phrase that correctly fills the blank in the sentence.\n____, the hikers decided to set up camp below the ridge rather than risk crossing it in the dark after a long day of climbing.",
+[
+"The weather has worsened sharply",
+"Having worsened the weather sharply",
+"The weather worsening sharply having",
+"Having the weather sharply worsened",
+"The weather having worsened sharply"
+],
+[
+5
+],
+"날씨와 등산객은 주어가 달라서 분사구문 앞에 주어 the weather 를 남긴 독립분사구문이 필요해요. has worsened 는 쉼표로 두 문장을 잇게 되고, Having worsened the weather 는 등산객이 날씨를 나쁘게 했다는 말이 돼요."
+],
+[
+9,
+1,
+"expression",
+null,
+"Select the phrase that correctly fills the blank in the sentence.\nThe archive finally released the letters ____, revealing that the two scientists had quarreled bitterly over credit for the discovery for nearly two decades.",
+[
+"which the biography had been based",
+"on that the biography had been based",
+"the biography had been based on which",
+"on which the biography had been based",
+"on which had the biography been based"
+],
+[
+4
+],
+"be based on 의 on 을 관계대명사 앞으로 옮긴 on which 가 맞아요. 전치사 뒤에는 that 을 쓸 수 없고, which 만 쓰면 on 이 빠져요."
+],
+[
+10,
+1,
+"expression",
+null,
+"Select the phrase that correctly fills the blank in the sentence.\nThe safety inspectors insisted that the factory ____ until every worker had completed the new training course on handling hazardous chemicals safely.",
+[
+"not being reopened",
+"not be reopened",
+"be reopened not",
+"not reopened be",
+"did not be reopened"
+],
+[
+2
+],
+"'~해야 한다'고 요구하는 insist that 절에는 (should) 뒤 동사원형이 와서 not be reopened 가 돼요. 공장은 다시 '열리는' 쪽이라 수동 be reopened 예요."
+],
+[
+11,
+1,
+"grammar",
+null,
+"Choose the underlined part that must be changed to make the passage grammatically correct.\nWhen the first bicycles appeared in the early nineteenth century, they had no pedals at all; riders ①<u>pushed</u> themselves along with their feet. Pedals were added decades later, but early designs placed them on the front wheel, which was enlarged to increase speed. These high-wheeled machines were fast but notoriously perilous, and a sudden stop could throw the rider ②<u>headfirst</u> over the handlebars. Not until the 1880s ③<u>a safer design appeared</u>, with two wheels of equal size and a chain that drove the rear wheel. Its popularity was immediate, ④<u>giving</u> ordinary people, including many women, a degree of independence ⑤<u>that</u> few had previously enjoyed.",
+[
+"pushed",
+"headfirst",
+"a safer design appeared",
+"giving",
+"that"
+],
+[
+3
+],
+"Not until 가 문장 앞에 오면 주절이 도치돼서 did a safer design appear 가 돼야 해요. a safer design appeared 는 도치가 안 된 꼴이에요."
+],
+[
+12,
+1,
+"grammar",
+null,
+"Choose the underlined part that must be changed to make the passage grammatically correct.\nIn recent years, a number of public libraries ①<u>have expanded</u> their collections far beyond books. Patrons can now borrow sewing machines, telescopes, and power drills, items ②<u>that</u> most households need only a few times a year. Supporters contend that such 'libraries of things' save money and curtail waste, since a single drill ③<u>shared</u> among dozens of families replaces dozens of drills gathering dust in garages. Librarians report that the programs also draw in residents ④<u>who</u> had not visited a library in years. The main challenge is maintenance: tools come back broken more often than books do, and few libraries have staff trained ⑤<u>repairing</u> them.",
+[
+"have expanded",
+"that",
+"shared",
+"who",
+"repairing"
+],
+[
+5
+],
+"be trained 뒤에 '~하도록' 훈련받았다는 뜻은 to부정사로 써서 trained to repair 가 맞아요. a number of 는 '여러'라 복수 have 가 맞아요."
+],
+[
+13,
+1,
+"grammar",
+null,
+"Choose the underlined part that must be changed to make the passage grammatically correct.\n①<u>That</u> early cooks regarded as a happy accident is now one of the most closely studied processes in food science. When vegetables are salted and sealed away from air, bacteria ②<u>naturally present</u> on their leaves convert sugars into lactic acid. The acid not only gives fermented foods their sour taste but also ③<u>prevents</u> detrimental microbes from multiplying, which is why such foods could be stored through long winters. Researchers are now scrutinizing whether the bacteria in these foods benefit the human gut, ④<u>though</u> they caution that many popular claims ⑤<u>remain</u> poorly supported by evidence.",
+[
+"That",
+"naturally present",
+"prevents",
+"though",
+"remain"
+],
+[
+1
+],
+"regarded as 뒤에 목적어가 빠진 불완전한 절이 문장 주어가 되므로 '~하는 것'을 뜻하는 관계대명사 What 이 와야 해요. That 은 완전한 절만 이끌어요."
+],
+[
+14,
+1,
+"grammar",
+null,
+"Choose the underlined part that must be changed to make the passage grammatically correct.\nScientists have long suspected that working at night ①<u>takes</u> a toll on the body. Large studies of nurses and factory workers ②<u>have linked</u> years of night shifts to higher rates of diabetes and heart disease, even after differences in diet and smoking ③<u>were</u> taken into account. The likely culprit is the body's internal clock, which expects darkness and sleep at night and ④<u>reacting</u> poorly when those signals are reversed. Some employers now schedule shifts so that rotations move forward, from morning to evening to night, a pattern ⑤<u>that</u> appears to be easier on workers than the reverse.",
+[
+"takes",
+"have linked",
+"were",
+"reacting",
+"that"
+],
+[
+4
+],
+"which 절 안에서 expects 와 and 로 나란히 이어지는 동사라 reacts 가 돼야 해요. reacting 은 짝이 맞지 않아요."
+],
+[
+15,
+1,
+"statement",
+"r1-p15",
+"Read the passage. Choose the statement(s) that restate the passage or can be inferred from it.\n(a) Some sixteen-year-olds in the United Kingdom could already vote before the announcement.\n(b) Supporters believe voting at a young age can spur people to keep voting later.\n(c) The plan would raise the voting age for all British elections.\n(d) Critics agreed that sixteen-year-olds are mature enough to vote.",
+[
+"(a), (c)",
+"(a), (b)",
+"(b), (d)",
+"(a), (b), (c)",
+"(c), (d)"
+],
+[
+2
+],
+"스코틀랜드·웨일스에서는 이미 16·17세가 투표할 수 있었고(a), 찬성하는 쪽은 일찍 투표하면 습관이 오래간다(b)고 했어요. 투표 나이를 '낮추는' 계획이고, 비판하는 쪽은 쉽게 휘둘릴 수 있다고 했으니 c·d 는 틀려요."
+],
+[
+16,
+1,
+"statement",
+"r1-p16",
+"Read the passage. Choose the statement(s) that restate the passage or can be inferred from it.\n(a) Making the dye required an exceedingly large number of sea creatures.\n(b) Purple was a cheap hue worn predominantly by the poor in Rome.\n(c) Perkin did not set out to create a purple dye.\n(d) Purple's link with royalty lasted longer than the ancient dye.",
+[
+"(a), (c), (d)",
+"(a), (b)",
+"(b), (c)",
+"(a), (b), (d)",
+"(b), (c), (d)"
+],
+[
+1
+],
+"바다 고둥 수천 마리를 으깨야 했고(a), 퍼킨은 우연히 보라 염료를 만들었으며(c), 보라와 왕실의 연결은 염료가 사라진 뒤에도 남았다(d)고 했어요. 보라는 몹시 비싼 권력의 색이었으니 b 는 틀려요."
+],
+[
+17,
+1,
+"statement",
+"r1-p17",
+"Read the passage. Choose the statement(s) that restate the passage or can be inferred from it.\n(a) The tower stood perfectly straight for its first few centuries.\n(b) The long pause in construction may have helped the tower survive.\n(c) Engineers added soil beneath the lower side of the tower.\n(d) The tower's shape reflects attempts to correct its tilt.",
+[
+"(b), (d)",
+"(a), (b)",
+"(c), (d)",
+"(a), (c)",
+"(b), (c), (d)"
+],
+[
+1
+],
+"공사가 백 년 가까이 멈춘 사이 땅이 다져져 탑이 살았을 것이고(b), 기운 쪽 위층을 조금 높게 지어 탑이 휘어 있다(d)고 했어요. 공사 시작 몇 해 만에 기울었고, 흙은 높은 쪽 아래에서 '파냈으니' a·c 는 틀려요."
+],
+[
+18,
+1,
+"statement",
+"r1-p18",
+"Read the passage. Choose the statement(s) that restate the passage or can be inferred from it.\n(a) Some retailers have lately scaled back their use of self-checkout.\n(b) Self-checkout machines have eliminated theft in supermarkets.\n(c) All customers prefer self-checkout to staffed counters.\n(d) Automation invariably saves retailers more money than expected.",
+[
+"(a), (b)",
+"(a), (c)",
+"(b), (d)",
+"(a), (c), (d)",
+"(a) only"
+],
+[
+5
+],
+"미국·영국의 큰 소매업체 몇 곳이 기계를 줄이거나 쓰임을 제한했다고 했으니 a 만 맞아요. 오히려 도난이 늘었고, 싫어하는 손님도 많으며, 자동화가 생각만큼 돈을 아끼지 못할 수 있다고 했어요."
+],
+[
+19,
+1,
+"reading",
+"r1-s1",
+"Which title best suits the passage?",
+[
+"Why Self-Driving Cars Will Never Be Safe",
+"How China Overtook America in Car Manufacturing and Global Exports",
+"Driverless Taxis Arrive: Real Promise, Unsettled Questions",
+"Labor Unions and the History of the Taxi Industry",
+"A Guide to Using Ride-Hailing Apps Abroad"
+],
+[
+3
+],
+"무인 택시가 실제로 돈을 받고 달리기 시작했다는 [A], 안전을 앞세운 찬성 [B], 비판 [C], 규제의 고민 [D]로 짜여 있어요. 가능성과 남은 문제를 함께 다룬 제목이 맞아요."
+],
+[
+20,
+1,
+"reading",
+"r1-s1",
+"Which statement agrees with the passage?",
+[
+"Independent researchers have corroborated that robotaxis cause fewer crashes than humans.",
+"Remote staff are never needed once a driverless vehicle is on the road.",
+"Emergency crews have acclaimed the vehicles for clearing their path.",
+"Driverless taxi services already carry paying passengers in parts of the US and China.",
+"Most governments have banned driverless taxis from city centers."
+],
+[
+4
+],
+"피닉스·샌프란시스코·로스앤젤레스와 우한 등에서 요금을 내고 탄다고 했어요. 사고가 적다는 건 운영사 자료이고, 독립 연구자들은 공정한 비교가 어렵다고 했어요."
+],
+[
+21,
+1,
+"reading",
+"r1-s1",
+"What can be inferred from the passage?",
+[
+"Robotaxis now operate in virtually every major American city.",
+"Labor unions are among the strongest supporters of driverless taxis.",
+"Driverless vehicles handle atypical road situations better than human drivers.",
+"Regulators have agreed to remove all limits on where robotaxis may drive.",
+"Safety figures published by operators may not settle the debate on their own."
+],
+[
+5
+],
+"운영사가 낸 사고 자료를 두고 독립 연구자들이 비교가 어렵다고 했으니, 그 숫자만으로 논쟁이 끝나지는 않는다고 볼 수 있어요. 공사 구간 같은 낯선 상황은 아직 잘 못 다룬다고 했어요."
+],
+[
+22,
+1,
+"reading",
+"r1-s1",
+"Among the pairs of an underlined word and its replacement, which is NOT appropriate?",
+[
+"(a) imminent — just around the corner",
+"(b) intervene — withdraw",
+"(c) premature — hasty",
+"(d) defect — glitch",
+"(e) inevitable — bound to happen"
+],
+[
+2
+],
+"intervene 은 '끼어들다, 개입하다'라 step in 과 가까워요. withdraw(물러나다)는 거의 반대라 바꿔 쓸 수 없어요."
+],
+[
+23,
+1,
+"reading",
+"r1-s2",
+"What is the passage mainly arguing?",
+[
+"Online forums have successfully replaced cafés and pubs as the main places where neighbors gather for civic discussion.",
+"Chain cafés welcome long conversations more than independent ones do.",
+"Oldenburg's theory has been disproven by recent research.",
+"Suburban living spurs closer friendships than city life.",
+"Informal gathering places play a crucial social role and may need deliberate support to survive."
+],
+[
+5
+],
+"제3의 장소가 이웃 사이 신뢰를 쌓는 일을 하지만 사라지고 있고, 저절로 살아남지 않는다는 결론이에요. 사회적 역할과 그것을 지킬 노력이 요지예요."
+],
+[
+24,
+1,
+"reading",
+"r1-s2",
+"Which statement does NOT agree with the passage?",
+[
+"Oldenburg brought the term 'third place' into wide use in 1989.",
+"Oldenburg counted the workplace as one of the third places.",
+"Rising rents can force independent cafés to close.",
+"Some researchers see new kinds of gathering places emerging.",
+"Relationships formed in third places tend to be casual."
+],
+[
+2
+],
+"직장은 '두 번째 장소'이고 제3의 장소는 집과 직장 밖의 모임 자리라고 했어요. 직장을 제3의 장소로 쳤다는 말이 글과 맞지 않아요."
+],
+[
+25,
+1,
+"reading",
+"r1-s2",
+"According to the passage, why did Oldenburg think third places mattered for democracy?",
+[
+"They build loose ties of trust that help neighbors cooperate.",
+"They provide rooms for formal political debates.",
+"They generate tax revenue for local governments.",
+"They allow people to eschew unwanted contact with strangers and neighbors in their daily lives.",
+"They train citizens to run for public office."
+],
+[
+1
+],
+"이웃끼리 나누는 대화가 느슨한 신뢰를 쌓아 문제가 생겼을 때 함께 움직이게 한다고 했어요."
+],
+[
+26,
+1,
+"reading",
+"r1-s2",
+"Which of the underlined parts (a)~(e) is grammatically INCORRECT?",
+[
+"(a) they might never meet",
+"(b) that",
+"(c) surprisingly durable",
+"(d) have made",
+"(e) reinvented"
+],
+[
+4
+],
+"주어는 단수 Suburban development 이고 which 절은 끼어든 말이라 동사는 has made 가 돼야 해요. have made 가 틀렸어요."
+],
+[
+27,
+1,
+"reading",
+"r1-s3",
+"Which title best suits the passage?",
+[
+"The Art of Memory: Remembering by Places",
+"Why Roman Banquet Halls Collapsed",
+"The Invention of the Printing Press",
+"How Monks Copied Manuscripts",
+"Card Games in the Ancient World"
+],
+[
+1
+],
+"기억할 것을 상상 속 장소에 놓는 '장소법'이 어디서 나와 [A], 로마 연설가와 [B] 중세 학자에게 쓰이고 [C], 인쇄술 뒤 밀려났다가 지금도 쓰인다 [D]는 글이에요. 장소로 기억하는 기술이라는 제목이 맞아요."
+],
+[
+28,
+1,
+"reading",
+"r1-s3",
+"Which statement agrees with the passage?",
+[
+"Roman instructors advised using ordinary, simple images.",
+"The method links things to be remembered with envisioned locations.",
+"Speeches in ancient Rome were customarily read aloud from written notes prepared in advance.",
+"The printing press made the art of memory more popular.",
+"No one uses the method of loci today."
+],
+[
+2
+],
+"익숙한 건물을 떠올려 방마다 요점을 나타내는 그림을 놓는다고 했어요. 그림은 오히려 이상하고 강렬하게 만들라고 했고, 연설은 메모 없이 했으며, 지금도 기억력 대회 선수들이 써요."
+],
+[
+29,
+1,
+"reading",
+"r1-s3",
+"Which choice best completes the blank?",
+[
+"museum of finished notions",
+"prison for perilous notions",
+"workshop for producing new thoughts",
+"substitute for prayer",
+"burden to be eschewed"
+],
+[
+3
+],
+"쌍점 뒤 '간직만 하는 곳이 아니라 생각하는 곳'이 빈칸의 풀이예요. 창고(storeroom)와 대비되는, 새 생각을 만드는 '작업장'이 맞아요. museum 은 다 된 것을 보관하는 곳이라 창고 쪽이에요."
+],
+[
+30,
+1,
+"reading",
+"r1-s3",
+"Among the pairs of an underlined word and its replacement, which is NOT appropriate?",
+[
+"(a) articulate — express",
+"(b) decipher — work out",
+"(c) foster — nurture",
+"(d) meditate — reflect",
+"(e) trivial — weighty"
+],
+[
+5
+],
+"trivial 은 '사소한'이라 weighty(무게 있는, 중대한)와 반대예요. 정성 들인 기술을 '하찮은 재주'로 깎아내렸다는 뜻이라 바꿔 쓸 수 없어요."
+],
+[
+31,
+1,
+"reading",
+"r1-s4",
+"What can be inferred from the passage?",
+[
+"Change blindness occurs only in people with poor eyesight.",
+"Most viewers meticulously notice continuity errors in films.",
+"The pedestrians in the study were deliberately negligent.",
+"People may be unaware of how much visual detail they fail to store.",
+"Eyewitnesses are invariably accurate whenever they feel confident about the person they identify."
+],
+[
+4
+],
+"우리는 모든 걸 자세히 본다고 느끼지만 뇌는 훨씬 적게 담는다고 했어요. 놓친 세부를 스스로는 모를 수 있다고 볼 수 있어요. 시력이나 부주의 탓이 아니라고 했어요."
+],
+[
+32,
+1,
+"reading",
+"r1-s4",
+"Which statement does NOT agree with the passage?",
+[
+"Most pedestrians in the study noticed the switch immediately.",
+"The researcher was replaced while a door blocked the pedestrian's view.",
+"The two researchers differed in height and clothing.",
+"Film editors rely on viewers not noticing small changes.",
+"Change blindness may affect drivers."
+],
+[
+1
+],
+"보행자 절반쯤이 상대가 바뀐 것을 알아채지 못했다고 했어요. 대부분이 바로 알아챘다는 말이 글과 맞지 않아요."
+],
+[
+33,
+1,
+"reading",
+"r1-s4",
+"Which case best illustrates change blindness as depicted in the passage?",
+[
+"A student forgets the name of a book she read years ago.",
+"A viewer fails to notice that an actor's shirt changes hue between two shots of a film.",
+"A driver notices a sudden change in the traffic lights.",
+"A shopper cannot read a distant sign in the store because she left her reading glasses at home.",
+"An instructor immediately sees that a student has a new haircut."
+],
+[
+2
+],
+"변화맹은 눈앞의 장면이 바뀌어도 알아채지 못하는 거예요. 두 장면 사이에 배우 셔츠 색이 바뀌었는데 모르는 관객이 딱 맞는 예이고, 안경을 놓고 온 건 시력 문제예요."
+],
+[
+34,
+1,
+"reading",
+"r1-s4",
+"Where does the following sentence fit best?\nMany of them were astonished, even disbelieving, when the researchers later explained what had happened.",
+[
+"(Ⅰ)",
+"(Ⅱ)",
+"(Ⅲ)",
+"(Ⅳ)",
+"(Ⅴ)"
+],
+[
+3
+],
+"'그들 다수(Many of them)'는 바로 앞의 '알아채지 못한 보행자'를 받고, '무슨 일이 있었는지'는 이미 끝난 바꿔치기를 가리켜요. 그 뒤 '알아챈 사람들은'으로 넘어가는 흐름도 자연스러워요."
+],
+[
+35,
+1,
+"reading",
+"r1-s5",
+"Which title best suits the passage?",
+[
+"Beyond the Flames: The Spreading Health Threat of Wildfire Smoke",
+"How Canada Fights Its Wildfires",
+"Why Air Purifiers Are Too Expensive for Most Families",
+"New York's Plan to Ban Outdoor Work",
+"The Chemistry of Burning Forests"
+],
+[
+1
+],
+"불길에서 먼 곳까지 번지는 연기가 건강을 해치고 [A][B], 피해가 고르지 않으며 [C], 대응이 시작됐다 [D]는 글이에요. 불 너머로 퍼지는 건강 위협이라는 제목이 맞아요."
+],
+[
+36,
+1,
+"reading",
+"r1-s5",
+"What can be inferred from the passage?",
+[
+"Wildfire smoke rarely affects people far from the fires.",
+"Masks are useless against fine particles.",
+"Clean air shelters have ended smoke-related hospital visits in the cities that opened them.",
+"Forest management is no longer deemed necessary.",
+"Low-income households may face greater health risks from smoke."
+],
+[
+5
+],
+"바깥 일꾼은 일당을 잃을까 봐 집에 못 있고, 허술한 집에 사는 사람은 실내에서도 연기를 마시는 반면 넉넉한 집은 공기청정기를 돌린다고 했어요. 소득이 낮을수록 위험이 크다고 볼 수 있어요."
+],
+[
+37,
+1,
+"reading",
+"r1-s5",
+"Which statement agrees with the passage?",
+[
+"The orange sky over New York was caused by fires within the city.",
+"PM2.5 particles are thicker than a human hair.",
+"Outdoor workers can easily stay home without losing income.",
+"Officials have stopped issuing smoke forecasts.",
+"Fine particles in wildfire smoke can enter the bloodstream."
+],
+[
+5
+],
+"아주 작은 입자는 폐 깊이 들어가 혈관으로까지 들어갈 수 있다고 했어요. 연기는 캐나다 산불에서 왔고, 입자는 머리카락보다 30배쯤 가늘어요."
+],
+[
+38,
+1,
+"reading",
+"r1-s5",
+"Among the pairs of an underlined word and its replacement, which is NOT appropriate?",
+[
+"(a) chronic — temporary",
+"(b) aggravate — inflame",
+"(c) sensitive — susceptible",
+"(d) diminish — cut",
+"(e) substitute — stand in"
+],
+[
+1
+],
+"chronic 은 '만성적인, 늘 되풀이되는'이에요. 산불철이 길어져 연기가 한때의 일이 아니라는 흐름이라 temporary(일시적인)와는 반대예요."
+],
+[
+39,
+1,
+"reading",
+"r1-s6",
+"Why does the author mention that light bends as it passes from air into water?",
+[
+"To elucidate why hitting a target above the water is arduous",
+"To demonstrate that insects cannot see the fish below them",
+"To depict how the fish produces its jet of water",
+"To elucidate why archerfish live in muddy rivers",
+"To contend that the fish has poor eyesight"
+],
+[
+1
+],
+"빛이 꺾여 물속에서 보면 벌레가 실제와 다른 곳에 있는 것처럼 보인다는 설명 뒤에 '그런데도 조준을 고친다'가 이어져요. 물 위 표적을 맞히기가 왜 어려운지 밝히려는 거예요."
+],
+[
+40,
+1,
+"reading",
+"r1-s6",
+"Which statement agrees with the passage?",
+[
+"Archerfish hunt predominantly in the open ocean.",
+"Young archerfish cannot enhance their aim.",
+"Archerfish can learn to recognize particular human faces.",
+"Archerfish have large brains with the same face-recognition regions as mammals.",
+"The water jet is produced by the fish's tail."
+],
+[
+3
+],
+"사람 얼굴 사진 하나에 물을 쏘도록 훈련한 물고기가 낯선 얼굴 수십 장 사이에서도 그 얼굴을 골랐다고 했어요. 맹그로브 늪·강 하구에 살고, 뇌는 작으며, 물줄기는 입과 아가미 덮개로 쏘아요."
+],
+[
+41,
+1,
+"reading",
+"r1-s6",
+"According to the passage, how did young archerfish in laboratory experiments enhance their aim?",
+[
+"by practicing alone in total darkness",
+"by being fed only when they missed",
+"by watching skilled companions hit moving targets",
+"by copying the movements of insects",
+"by growing larger gill covers"
+],
+[
+3
+],
+"어린 물고기가 솜씨 좋은 동료가 움직이는 표적을 맞히는 것을 지켜본 뒤 조준이 나아졌다고 했어요."
+],
+[
+42,
+1,
+"reading",
+"r1-s6",
+"Which of the underlined parts (a)~(e) is grammatically INCORRECT?",
+[
+"(a) firing",
+"(b) adjust",
+"(c) watched",
+"(d) trained",
+"(e) has become"
+],
+[
+2
+],
+"주어가 단수 An archerfish 라서 동사도 adjusts 가 돼야 해요. adjust 가 틀렸어요."
+],
+[
+43,
+1,
+"reading",
+"r1-s7",
+"Which title best suits the passage?",
+[
+"How Car Engines Became More Powerful",
+"Lead in the Tank: The Rise and Fall of Leaded Gasoline",
+"The Life of a Renowned Geochemist",
+"Why Algeria Builds Its Own Cars",
+"Measuring the Age of the Earth"
+],
+[
+2
+],
+"유연 휘발유가 퍼졌다가 [A], 위험이 늦게야 제대로 연구되고 [B][C], 퇴출된 뒤 그 값어치를 따지는 [D] 흐름이에요. 유연 휘발유의 흥망이라는 제목이 맞아요."
+],
+[
+44,
+1,
+"reading",
+"r1-s7",
+"What can be inferred from the passage?",
+[
+"Leaded gasoline for ordinary cars is still sold legally in a few countries around the world.",
+"Lead is harmless to children in small amounts.",
+"Patterson originally set out to study car exhaust.",
+"Commercial interests may have delayed recognition of the additive's perils.",
+"Experts concur that lead caused rising crime rates."
+],
+[
+4
+],
+"업계는 수십 년 동안 배기가스 속 납이 해롭지 않다고 우겼고 독립 연구도 드물었다고 했어요. 상업적 이해가 위험을 알아차리는 일을 늦췄다고 볼 수 있어요."
+],
+[
+45,
+1,
+"reading",
+"r1-s7",
+"Which choice best completes the blank?",
+[
+"finds a use for it in industry",
+"learns how to produce it cheaply",
+"seriously investigates the harm it may cause",
+"notices that it enhances engines",
+"gives it a brand name"
+],
+[
+3
+],
+"납 첨가제는 위험이 처음부터 보였는데도 수십 년간 제대로 연구되지 않은 채 온 세계로 퍼졌어요. '누군가 그 해를 진지하게 따져 보기 훨씬 전에' 퍼질 수 있다는 교훈이에요."
+],
+[
+46,
+1,
+"reading",
+"r1-s7",
+"Which is NOT discussed in the passage?",
+[
+"the name of the company that first sold leaded gasoline",
+"the last country to sell leaded gasoline for cars",
+"why lead was originally added to gasoline",
+"how children's blood lead levels changed in the United States",
+"an estimate of premature fatalities precluded each year"
+],
+[
+1
+],
+"알제리, 노킹을 막으려고 넣었다는 점, 90% 넘게 줄었다는 혈중 납, 해마다 백만 명 넘는 조기 사망을 막는다는 추정은 모두 나와요. 처음 판 회사 이름은 나오지 않아요."
+],
+[
+47,
+1,
+"reading",
+"r1-s8",
+"What can be inferred from the passage?",
+[
+"The narrator had often relished beach trips with his friends before his daughter was born.",
+"The instructor taught advanced strokes in the first week.",
+"The narrator eventually swam faster than the children.",
+"The narrator's daughter was afraid of the water.",
+"The narrator's decision to learn swimming was connected to his child."
+],
+[
+5
+],
+"딸이 수업을 시작하자 아버지의 두려움까지 물려받게 하고 싶지 않았다고 했어요. 수영을 배운 계기가 딸과 이어져 있다고 볼 수 있어요."
+],
+[
+48,
+1,
+"reading",
+"r1-s8",
+"Which statement agrees with the passage?",
+[
+"The narrator first learned to swim as a child.",
+"The narrator could swim a full length after two weeks.",
+"The children in the next lane were impressed by the narrator.",
+"The instructor was a professional swimmer still competing abroad.",
+"The instructor began by teaching the narrator to float."
+],
+[
+5
+],
+"강사는 영법이나 호흡이 아니라 처음 두 주 동안 물에 뜨기만 시켰다고 했어요. 한 바퀴를 헤엄친 건 석 달째이고, 강사는 은퇴한 인명구조원이에요."
+],
+[
+49,
+1,
+"reading",
+"r1-s8",
+"Choose the pair that correctly fills blanks (A) and (B).",
+[
+"(A) supporting — (B) were",
+"(A) supported — (B) was",
+"(A) supporting — (B) was",
+"(A) supported — (B) were",
+"(A) to support — (B) were"
+],
+[
+4
+],
+"(A)는 '강사의 손에 받쳐진 채' 뜨는 것이라 수동 분사 supported 예요. (B)는 neither A nor B 가 가까운 B(her friends)에 수를 맞추므로 복수 were 예요."
+],
+[
+50,
+1,
+"reading",
+"r1-s8",
+"Among the pairs of an underlined word and its replacement, which is NOT appropriate?",
+[
+"(a) embarrassed — awkward",
+"(b) devoted — given",
+"(c) magnificent — modest",
+"(d) blissful — joyful",
+"(e) rigidity — stiffness"
+],
+[
+3
+],
+"magnificent 는 '훌륭한, 대단한'이라 modest(대단치 않은)와 반대예요. 'hardly a magnificent achievement'는 대단한 일이 아니라는 뜻이라 바꾸면 뜻이 뒤집혀요."
+],
+[
+1,
+2,
+"vocab",
+null,
+"Choose the word that best completes the passage.\nFor centuries, the mountain villages of the region have depended on a single road for supplies. Every winter, heavy snow and frequent rockslides ____ the delivery of food, fuel, and medicine, occasionally cutting communities off for weeks at a time. A new tunnel, scheduled to open next year, is expected to change that, although some residents worry that easier access will also bring crowds of tourists and rising land prices.",
+[
+"expedite",
+"guarantee",
+"subsidize",
+"hasten",
+"impede"
+],
+[
+5
+],
+"눈과 낙석 때문에 마을이 몇 주씩 끊긴다고 이어지므로 배달을 '가로막는다(impede)'가 맞아요. expedite·hasten(앞당기다)·guarantee 는 반대 흐름이에요."
+],
+[
+2,
+2,
+"vocab",
+null,
+"Choose the word that best completes the passage.\nFor years, applicants to the city's selective high schools had little idea how admission decisions were made. The schools published no scoring rules, interviews transpired behind closed doors, and rejected students received only a brief letter with no explanation. Because the process was so ____, many parents came to suspect that personal connections mattered more than merit, and some of them eventually went to court to demand the release of the selection criteria.",
+[
+"transparent",
+"candid",
+"unbiased",
+"opaque",
+"redundant"
+],
+[
+4
+],
+"채점 기준을 공개하지 않고 면접도 닫힌 문 뒤에서 하며 떨어진 학생에게 설명도 없었으니 속이 들여다보이지 않는 '불투명한(opaque)' 절차예요. transparent·candid(솔직한)는 정반대이고, 연줄을 의심했으니 unbiased 도 아니에요."
+],
+[
+3,
+2,
+"vocab",
+null,
+"Choose the word that best completes the passage.\nTwo neighborhoods only a few kilometers apart in the same city can differ in average life expectancy by more than a decade. Public health researchers say this ____ cannot be elucidated by medical care alone. Differences in income, housing quality, access to fresh food, and exposure to pollution all accumulate over a lifetime, shaping who stays healthy and who falls ill.",
+[
+"parity",
+"disparity",
+"symmetry",
+"affinity",
+"concord"
+],
+[
+2
+],
+"가까운 두 동네의 기대수명이 10년 넘게 다르다는 앞 문장을 this 로 받으니 '격차(disparity)'예요. parity(동등)·symmetry·concord 는 같거나 어울린다는 뜻이라 맞지 않아요."
+],
+[
+4,
+2,
+"vocab",
+null,
+"Choose the word that best completes the passage.\nFairy tales have often been criticized for presenting girls as passive figures waiting to be rescued. Some scholars contend that such stories, retold generation after generation, help ____ narrow notions about what boys and girls can do. Others retort that the oldest versions of many tales contain ingenious, resourceful heroines, and that the passive princess is largely a creation of later editors.",
+[
+"subvert",
+"repudiate",
+"perpetuate",
+"refute",
+"topple"
+],
+[
+3
+],
+"동화가 비판받는 이유를 말하는 문장이라, 대대로 다시 들려주면서 좁은 생각을 '계속 이어지게 한다(perpetuate)'가 맞아요. subvert·refute·topple 은 좁은 생각을 무너뜨린다는 뜻이라 오히려 칭찬이 돼요."
+],
+[
+5,
+2,
+"vocab",
+null,
+"Choose the word that best completes the passage.\nWhen physicians discovered a small lump in her neck, the patient feared the worst. A series of tests, however, demonstrated that the growth was ____ and posed no threat to her health. Her physician recommended simply monitoring it with an ultrasound once a year, explaining that removing it would carry greater risks than leaving it alone.",
+[
+"malignant",
+"contagious",
+"benign",
+"pernicious",
+"acute"
+],
+[
+3
+],
+"however 로 '최악을 걱정했다'와 대비되고 건강에 위협이 없다고 했으니 '양성의, 해롭지 않은(benign)'이에요. malignant(악성의)·pernicious(해로운)는 반대예요."
+],
+[
+6,
+2,
+"expression",
+null,
+"Select the phrase that correctly fills the blank in the sentence.\nThe longer the negotiations over the fishing agreement dragged on, ____ that any deal would survive the next change of government in either country.",
+[
+"the less confident the diplomats became",
+"the less the diplomats became confident",
+"less confident the diplomats became",
+"the diplomats became the less confident",
+"the less confident did the diplomats become"
+],
+[
+1
+],
+"'the + 비교급 ~, the + 비교급 …' 구문이에요. 뒤쪽도 the less confident 를 통째로 앞에 두고 주어·동사를 이어 the less confident the diplomats became 가 돼요. did 를 넣는 도치는 쓰지 않아요."
+],
+[
+7,
+2,
+"expression",
+null,
+"Select the phrase that correctly fills the blank in the sentence.\nThe free exhibition of photographs from the early twentieth century proved ____ that the museum had to extend its opening hours twice in the first week alone.",
+[
+"such popular with visitors",
+"so popular with visitors",
+"so much popular with visitors",
+"popular so with visitors",
+"too popular with visitors"
+],
+[
+2
+],
+"뒤에 that 결과절이 오므로 'so + 형용사 + that'이에요. such 는 명사가 있어야 하고, much 는 원급 형용사 앞에 쓰지 않으며, too 는 that 절과 어울리지 않아요."
+],
+[
+8,
+2,
+"expression",
+null,
+"Select the phrase that correctly fills the blank in the sentence.\n____, the plan to grow vegetables on the flat roofs of city office buildings faces serious engineering obstacles, from water supply to weight limits.",
+[
+"As it may seem attractive",
+"Attractive as may it seem",
+"Attractive as it may seem",
+"It may seem as attractive",
+"As attractive it may seem"
+],
+[
+3
+],
+"'형용사 + as + 주어 + 동사'는 '아무리 ~하더라도'라는 양보 구문이라 Attractive as it may seem 이 맞아요. as 뒤에서 주어와 조동사를 뒤집지 않아요."
+],
+[
+9,
+2,
+"expression",
+null,
+"Select the phrase that correctly fills the blank in the sentence.\n____ was not the size of the effect but the speed with which it appeared, often within a few days of the change in the volunteers' diet.",
+[
+"That surprised the researchers most",
+"What the researchers surprised most",
+"It surprised the researchers most",
+"What surprised the researchers most",
+"Which surprised most the researchers"
+],
+[
+4
+],
+"주어 자리에 '~한 것'이 와야 하고 절 안의 주어가 빠졌으니 관계대명사 What 이 맞아요. 연구자들이 '놀란' 것이라 What 이 surprised 의 주어가 되고 researchers 는 목적어예요."
+],
+[
+10,
+2,
+"expression",
+null,
+"Select the phrase that correctly fills the blank in the sentence.\n____, the results of the survey should be interpreted with caution and corroborated by a larger study before any policy is changed.",
+[
+"Given the small number of participants",
+"Giving the small number of participants",
+"Given that the small number of participants",
+"The small number of participants giving",
+"Being given the small number of participants"
+],
+[
+1
+],
+"given 은 '~을 고려하면'이라는 전치사처럼 명사구를 바로 받아요. given that 뒤에는 동사가 있는 절이 와야 하는데 여기엔 동사가 없어요."
+],
+[
+11,
+2,
+"grammar",
+null,
+"Choose the underlined part that must be changed to make the passage grammatically correct.\nBefore the First World War, travelers in much of Europe ①<u>could cross</u> borders with little more than a train ticket. Passports existed, but checking them was so rare that the number of officials assigned to the task ②<u>were</u> minuscule. The war changed everything. Governments anxious about spies ③<u>began</u> to require photographs and elaborate descriptions of each traveler, and after the fighting ended, the temporary measures ④<u>were never fully lifted</u>. Many people resented the new rules, which seemed to treat every traveler as a suspect. An international conference in 1920 even agreed on a standard format, ⑤<u>establishing</u> a booklet that most of the world still carries today.",
+[
+"could cross",
+"were",
+"began",
+"were never fully lifted",
+"establishing"
+],
+[
+2
+],
+"'the number of + 복수 명사'는 '~의 수'라 단수로 받아서 was 가 돼야 해요. 뒤의 measures 는 복수라 were 가 맞아요."
+],
+[
+12,
+2,
+"grammar",
+null,
+"Choose the underlined part that must be changed to make the passage grammatically correct.\nAnyone who has stood in a slow line knows that waiting time is partly psychological. Researchers have found that unoccupied time ①<u>feels</u> longer than occupied time, which is why some hotels ②<u>installed</u> mirrors beside their elevators: guests busy looking at themselves complained less about the delay. Uncertain waits also seem longer than known ones, so a sign ③<u>announcing</u> a fifteen-minute delay can calm passengers more than silence. Perhaps most important, waits that feel unfair are the hardest to bear; few things irritate customers more than ④<u>see</u> a later arrival served first, ⑤<u>however</u> short the delay may be.",
+[
+"feels",
+"installed",
+"announcing",
+"see",
+"however"
+],
+[
+4
+],
+"전치사처럼 쓰인 than 뒤에서 '보는 것'은 동명사 seeing 으로 써야 해요. 동사원형 see 는 이 자리에 올 수 없어요."
+],
+[
+13,
+2,
+"grammar",
+null,
+"Choose the underlined part that must be changed to make the passage grammatically correct.\nVolcanic eruptions are customarily remembered for the destruction they cause, yet the land around many volcanoes ①<u>is</u> among the most fertile on Earth. Ash ②<u>deposited</u> by an eruption incrementally weathers into soil rich in minerals such as potassium and phosphorus. This is one reason why dense farming communities have long ③<u>flourished</u> on the slopes of active volcanoes in Indonesia, Italy, and Central America. Farmers there weigh a peril that may come once in a lifetime against harvests ④<u>that</u> arrive every year, and many families have refused to leave their land even after ⑤<u>warning</u> by scientists that an eruption was likely.",
+[
+"is",
+"deposited",
+"flourished",
+"that",
+"warning"
+],
+[
+5
+],
+"가족들이 과학자에게 '경고를 받은' 것이라 수동 being warned 가 돼야 해요. after warning 은 가족이 경고한 것이 되고 뒤의 by 와도 맞지 않아요."
+],
+[
+14,
+2,
+"grammar",
+null,
+"Choose the underlined part that must be changed to make the passage grammatically correct.\nThe modern marathon ①<u>inspired</u> by a legend about a Greek messenger who ran from the battlefield at Marathon to Athens to announce a victory, then collapsed and died. Historians doubt the narrative, ②<u>which</u> first appears in sources written centuries after the battle. Nevertheless, when the first modern Olympic Games ③<u>were held</u> in Athens in 1896, organizers created a long-distance race to honor it. Fittingly, a Greek runner won that first race, to the delight of the home crowd. The distance varied for years before ④<u>being fixed</u> at 42.195 kilometers, a figure ⑤<u>that</u> is often traced to the 1908 London Games.",
+[
+"inspired",
+"which",
+"were held",
+"being fixed",
+"that"
+],
+[
+1
+],
+"마라톤은 전설에서 '영감을 받은' 쪽이라 was inspired 가 돼야 해요. inspired 만 쓰면 마라톤이 무언가에 영감을 준 것이 되고 by 와도 맞지 않아요."
+],
+[
+15,
+2,
+"statement",
+"r2-p15",
+"Read the passage. Choose the statement(s) that restate the passage or can be inferred from it.\n(a) Takaichi was the first woman to lead Japan's government.\n(b) She became prime minister without needing a vote in parliament.\n(c) The party's long-time partner remained in the coalition.\n(d) Women hold a relatively small share of seats in Japan's parliament.",
+[
+"(a), (b)",
+"(b), (c)",
+"(a), (c), (d)",
+"(a), (d)",
+"(b), (d)"
+],
+[
+4
+],
+"일본 첫 여성 총리였고(a), 의회·기업 고위직에서 여성은 아직 적다(d)고 했어요. 총리가 되려면 의회 투표가 필요했고, 오랜 연립 상대 공명당은 정부에서 빠졌으니 b·c 는 틀려요."
+],
+[
+16,
+2,
+"statement",
+"r2-p16",
+"Read the passage. Choose the statement(s) that restate the passage or can be inferred from it.\n(a) The name QWERTY comes from letters on the keyboard itself.\n(b) Historians concur that the layout was designed to curtail typing speed.\n(c) The work of telegraph operators may have influenced the layout.\n(d) Most users have switched to newer, faster layouts.",
+[
+"(a), (b)",
+"(b), (d)",
+"(a), (c), (d)",
+"(b), (c)",
+"(a), (c)"
+],
+[
+5
+],
+"이름은 윗줄 첫 여섯 글자에서 왔고(a), 전신 기사의 필요가 배열에 영향을 줬을 수 있다(c)고 했어요. 속도를 늦추려 했다는 이야기는 역사학자들이 의문을 품었고, 더 빠른 배열은 거의 쓰이지 않는다고 했어요."
+],
+[
+17,
+2,
+"statement",
+"r2-p17",
+"Read the passage. Choose the statement(s) that restate the passage or can be inferred from it.\n(a) Triplett's observations involved cyclists.\n(b) Working beside others can speed up simple tasks.\n(c) An audience can harm performance on unfamiliar tasks.\n(d) Zajonc found that the presence of others invariably enhances performance.",
+[
+"(a), (c), (d)",
+"(b), (d)",
+"(a), (d)",
+"(b), (c), (d)",
+"(a), (b), (c)"
+],
+[
+5
+],
+"트리플렛은 자전거 선수를 보고(a), 옆에 다른 아이가 있으면 낚싯줄을 더 빨리 감았으며(b), 낯선 일은 관중 앞에서 더 못한다(c)고 했어요. 자이언스는 '늘' 좋아진다고 하지 않았으니 d 는 틀려요."
+],
+[
+18,
+2,
+"statement",
+"r2-p18",
+"Read the passage. Choose the statement(s) that restate the passage or can be inferred from it.\n(a) The bow can be seen only by someone facing toward the sun.\n(b) Two friends standing apart receive light from distinct droplets.\n(c) Every hue is bent to exactly the same degree inside a droplet.\n(d) It is impossible to see a rainbow as a complete ring.",
+[
+"(b) only",
+"(a), (b)",
+"(b), (c)",
+"(a), (c), (d)",
+"(c), (d)"
+],
+[
+1
+],
+"떨어져 선 두 친구는 서로 다른 물방울에서 오는 빛을 본다(b)는 것만 맞아요. 해를 등져야 무지개가 보이고, 빨강과 보라가 꺾이는 정도가 달라 색이 갈리며, 구름 위 조종사는 둥근 고리로도 본다고 했어요."
+],
+[
+19,
+2,
+"reading",
+"r2-s1",
+"Which title best suits the passage?",
+[
+"From Healing Broth to Dining Room: The Birth of the Restaurant",
+"How the French Revolution Ended Aristocratic Cooking in Paris and Beyond",
+"The Health Benefits of Eating Soup",
+"Why Inns Vanished from Eighteenth-Century France",
+"A History of Food Courts in Modern Cities"
+],
+[
+1
+],
+"'레스토랑'이 원래 기운을 되살리는 수프 이름이었다가 가게 이름이 되고, 고르는 식사라는 새 문화가 된 과정을 따라가요. 수프에서 식당으로라는 제목이 맞아요."
+],
+[
+20,
+2,
+"reading",
+"r2-s1",
+"Which statement agrees with the passage?",
+[
+"Inns in eighteenth-century France offered diners a wide choice of dishes.",
+"Early restaurants permitted customers to eat at individual tables.",
+"The word 'restaurant' first referred to a type of building.",
+"Historians concur that the Revolution created the first restaurants.",
+"Early restaurants served food only at fixed mealtimes."
+],
+[
+2
+],
+"초기 레스토랑은 메뉴를 보고 작은 탁자에 따로 앉아 아무 때나 오갈 수 있게 했다고 했어요. 여관은 주인이 내는 대로 먹었고, 레스토랑은 1789년 전에도 있었어요."
+],
+[
+21,
+2,
+"reading",
+"r2-s1",
+"Which choice best completes the blank?",
+[
+"obligation to the host",
+"religious devotion",
+"enforced silence",
+"freedom of choice",
+"dependence on others"
+],
+[
+4
+],
+"손님이 주는 대로 받던 '초대받은 사람'에서 '고르는 손님'이 됐다는 뒤 문장이 단서예요. 레스토랑이 준 것은 새로운 '고르는 자유(freedom of choice)'예요. 주인에게 매인 의무는 여관 쪽 이야기예요."
+],
+[
+22,
+2,
+"reading",
+"r2-s1",
+"Among the pairs of an underlined word and its replacement, which is NOT appropriate?",
+[
+"(a) cure — relieve",
+"(b) consult — check",
+"(c) exaggerated — overstated",
+"(d) refine — coarsen",
+"(e) anonymous — unnamed"
+],
+[
+4
+],
+"refine 은 '다듬다, 더 낫게 하다'예요. 경쟁자와 겨루며 요리를 다듬는다는 뜻이라 coarsen(거칠게 하다)과는 반대예요."
+],
+[
+23,
+2,
+"reading",
+"r2-s2",
+"Why does the author mention \"carbon leakage\" in paragraph [A]?",
+[
+"To contend that European factories emit more carbon than others",
+"To elucidate the problem that the mechanism is meant to address",
+"To demonstrate that the mechanism has already failed",
+"To depict a new technology for capturing emissions",
+"To praise the climate policies of developing countries"
+],
+[
+2
+],
+"규제 없는 나라로 생산과 배출이 옮겨 가는 '탄소 누출'을 먼저 말한 뒤 [B]에서 '그 해답'으로 CBAM 을 소개해요. 제도가 풀려는 문제를 설명하려고 꺼낸 거예요."
+],
+[
+24,
+2,
+"reading",
+"r2-s2",
+"Which statement agrees with the passage?",
+[
+"The charge applies to every kind of good imported into the EU.",
+"Carbon prices paid in the exporting country cannot be deducted.",
+"All critics concur that the measure will sharply cut global emissions.",
+"During the first phase, importers only had to report emissions.",
+"The transitional phase began in 2026."
+],
+[
+4
+],
+"2023년 10월에 시작한 전환 단계에서는 배출량을 보고만 하면 됐다고 했어요. 대상은 철강·알루미늄·시멘트 등 몇 가지 품목뿐이고, 수출국에서 낸 탄소 가격은 빼 줘요."
+],
+[
+25,
+2,
+"reading",
+"r2-s2",
+"According to the passage, why might the charge curtail global emissions less than expected?",
+[
+"European factories would stop buying emission permits.",
+"Importers would refuse to report their emissions.",
+"The charge is too small to affect any company's decisions about where to produce goods.",
+"Producers could send cleaner goods to Europe and dirtier ones elsewhere.",
+"Developing countries would ban exports to Europe."
+],
+[
+4
+],
+"생산자가 깨끗하게 만든 물건만 유럽에 보내고 더러운 물건은 다른 시장에 보낼 수 있다는 점을 들어 감축 효과를 의심했어요."
+],
+[
+26,
+2,
+"reading",
+"r2-s2",
+"Which of the underlined parts (a)~(e) is grammatically INCORRECT?",
+[
+"(a) leaving",
+"(b) based on",
+"(c) impose",
+"(d) having watched",
+"(e) given"
+],
+[
+3
+],
+"If 절의 주어가 단수 an exporting country 라 동사는 imposes 가 돼야 해요. impose 가 틀렸어요."
+],
+[
+27,
+2,
+"reading",
+"r2-s3",
+"Which title best suits the passage?",
+[
+"How the Telescope Was Invented in Holland",
+"The Geography of Jupiter's Moons",
+"Stars for a Prince: Galileo and the Power of Patronage",
+"Why Galileo Refused to Teach",
+"A History of the University of Padua"
+],
+[
+3
+],
+"가난한 교수 갈릴레오가 목성의 위성에 메디치 가문 이름을 붙여 궁정 자리를 얻은 과정과, 후원이 과학에 끼친 영향을 다뤄요. 군주를 위한 별, 곧 후원의 힘이라는 제목이 맞아요."
+],
+[
+28,
+2,
+"reading",
+"r2-s3",
+"Which statement agrees with the passage?",
+[
+"Galileo invented the first telescope.",
+"Galileo was already affluent before 1610.",
+"The Starry Messenger was largely disregarded by scholars across Europe.",
+"Galileo named Jupiter's moons after the Medici family.",
+"Cosimo II made Galileo a university professor."
+],
+[
+4
+],
+"목성의 네 위성을 코시모 2세와 형제들을 기려 '메디치의 별'이라고 불렀다고 했어요. 망원경은 네덜란드 기구를 개량한 것이고, 궁정 자리는 오히려 강의에서 풀어 줬어요."
+],
+[
+29,
+2,
+"reading",
+"r2-s3",
+"What can be inferred from the passage?",
+[
+"Galileo's naming of the moons was partly meant to win a powerful supporter.",
+"Galileo's observations could not be checked by others, because only he owned a good telescope.",
+"Princes had no interest in scientific discoveries.",
+"Galileo relished his duties as a professor.",
+"Cosimo II discovered the moons of Jupiter himself."
+],
+[
+1
+],
+"후원자를 찾고 싶어 했고 위성에 대공의 이름을 붙이는 '영리한 결정'을 한 뒤 궁정 자리를 얻었다고 했어요. 이름 붙이기가 후원을 얻으려는 뜻이었다고 볼 수 있어요."
+],
+[
+30,
+2,
+"reading",
+"r2-s3",
+"Among the pairs of an underlined word and its replacement, which is NOT appropriate?",
+[
+"(a) patron — opponent",
+"(b) obscure — little-known",
+"(c) obtain — receive",
+"(d) aspiration — ambition",
+"(e) attribute — credit"
+],
+[
+1
+],
+"patron 은 '후원자'예요. 궁정에서 힘 있는 후원자를 찾았다는 뜻이라 opponent(반대자)와는 정반대예요."
+],
+[
+31,
+2,
+"reading",
+"r2-s4",
+"What can be inferred from the passage?",
+[
+"The narrator met the man again at the graduation.",
+"The narrator's son never thought about the incident again.",
+"The man was annoyed by the crying child.",
+"The man did not seek any reward for his help.",
+"The toy was repaired with a professional tool."
+],
+[
+4
+],
+"고맙다고 하자 어깨만 으쓱했고 이름도 알려 주지 않은 채 내렸어요. 대가를 바라지 않았다고 볼 수 있어요. 도구는 머리핀이었고, 아들은 졸업식에서 그 일을 꺼냈어요."
+],
+[
+32,
+2,
+"reading",
+"r2-s4",
+"Which statement agrees with the passage?",
+[
+"The narrator's son was six years old at the time of the trip.",
+"The man across the aisle had been sleeping before he offered help.",
+"The man said he had worked as a toy designer.",
+"The narrator and the man got off at the same station.",
+"The narrator still keeps the red toy car at home."
+],
+[
+1
+],
+"아들이 여섯 살이었다고 했어요. 남자는 신문을 읽고 있었고, 평생 라디오를 고쳤으며, 서로 다른 역에서 내렸고, 장난감은 오래전에 잃어버렸어요."
+],
+[
+33,
+2,
+"reading",
+"r2-s4",
+"Choose the pair that correctly fills blanks (A) and (B).",
+[
+"(A) has folded — (B) had understood",
+"(A) folded — (B) has understood",
+"(A) folded — (B) had understood",
+"(A) has folded — (B) has understood",
+"(A) was folded — (B) had understood"
+],
+[
+3
+],
+"(A)는 지난 기차 안의 일이라 단순과거 folded 이고, 남자가 신문을 접은 것이라 능동이에요. (B)는 'it was the first time + 과거완료' 꼴이라 had understood 예요."
+],
+[
+34,
+2,
+"reading",
+"r2-s4",
+"Among the pairs of an underlined word and its replacement, which is NOT appropriate?",
+[
+"(a) disdain — contempt",
+"(b) captivated — fascinated",
+"(c) shaped — molded",
+"(d) incidental — minor",
+"(e) cumulative — short-lived"
+],
+[
+5
+],
+"cumulative 는 '쌓여 가는, 누적되는'이에요. 한 사람에게서 다음 사람으로 조용히 이어진다는 뒤 말과 맞고, short-lived(잠깐뿐인)는 반대예요."
+],
+[
+35,
+2,
+"reading",
+"r2-s5",
+"What is the passage mainly arguing?",
+[
+"Farm children needed the summer free to help with the harvest.",
+"Year-round schooling has now replaced the long summer break in most American public schools, as reformers had hoped.",
+"Summer vacation was created predominantly to support the tourism industry.",
+"Air conditioning has ended the debate over school calendars.",
+"The long summer vacation has origins distinct from the popular farm narrative, yet it remains hard to change."
+],
+[
+5
+],
+"농사 때문이라는 흔한 설명이 틀렸다는 것 [A][B], 비판과 실험이 있어도 긴 방학이 여전하다는 것 [C][D]이 글의 줄기예요. 기원은 통념과 다르지만 바꾸기 어렵다는 요지예요."
+],
+[
+36,
+2,
+"reading",
+"r2-s5",
+"Which statement does NOT agree with the passage?",
+[
+"Rural schools of the nineteenth century customarily closed during the summer.",
+"Many city schools once operated virtually all year.",
+"Reformers worried that long school years exhausted children.",
+"Some recent studies question the size and consistency of the summer learning loss.",
+"Many parents arrange childcare around the long break."
+],
+[
+1
+],
+"시골 학교는 농사일이 덜한 겨울과 여름에 수업을 했다고 했어요. 여름에 문을 닫았다는 말이 글과 맞지 않아요."
+],
+[
+37,
+2,
+"reading",
+"r2-s5",
+"According to the passage, why might summer learning loss be larger for children from low-income families?",
+[
+"They attend school for fewer days during the year.",
+"Their schools have longer summer breaks than others.",
+"Their summers may offer fewer books, camps, and trips.",
+"They are needed to work on family farms.",
+"Their instructors spend the summer in further training."
+],
+[
+3
+],
+"형편이 어려운 집 아이들은 여름에 책·캠프·여행 같은 기회가 적을 수 있어서 손실이 더 크게 나타난다고 했어요."
+],
+[
+38,
+2,
+"reading",
+"r2-s5",
+"Which of the underlined parts (a)~(e) is grammatically INCORRECT?",
+[
+"(a) which",
+"(b) left",
+"(c) has become",
+"(d) appear",
+"(e) really is"
+],
+[
+3
+],
+"by the early twentieth century 는 지나간 과거의 한 시점까지 이미 끝난 일을 말하니 과거완료 had become 이 돼야 해요. 현재완료 has become 은 과거 시점 부사구와 어울리지 않아요."
+],
+[
+39,
+2,
+"reading",
+"r2-s6",
+"Which title best suits the passage?",
+[
+"How to Become a Successful Security Engineer",
+"The History of the Password, from Ancient Sentries to the Modern Login Screen",
+"Why Hospitals No Longer Keep Medical Records",
+"The Rise of Online Shopping After the Pandemic",
+"When Data Escapes: Why Breaches Keep Growing and What Can Be Done"
+],
+[
+5
+],
+"유출이 잦아진 까닭 [A][B], 한번 새면 돌이킬 수 없다는 점과 덜 모으기 [C], 규제와 개인의 대비 [D]를 다뤄요. 유출이 늘어나는 이유와 대책이라는 제목이 맞아요."
+],
+[
+40,
+2,
+"reading",
+"r2-s6",
+"What can be inferred from the passage?",
+[
+"Data breaches predominantly affect individual users who choose feeble passwords rather than the companies that store their data.",
+"A company that stores less personal information is likely to cause less harm if it is hacked.",
+"Most stolen data is returned once a ransom has been paid.",
+"Hospitals are rarely targeted by hackers.",
+"Two-step verification makes an account utterly safe."
+],
+[
+2
+],
+"모은 적 없거나 지운 정보는 도둑맞을 수 없다고 했으니, 덜 가진 회사일수록 해킹당해도 피해가 작다고 볼 수 있어요. 어떤 대책도 안전을 보장하지 않는다고 했어요."
+],
+[
+41,
+2,
+"reading",
+"r2-s6",
+"Which choice best completes the blank?",
+[
+"paying ransoms as quickly as possible",
+"storing all data in a single location",
+"changing passwords every day",
+"publishing data before hackers can steal it",
+"collecting less data in the first place"
+],
+[
+5
+],
+"쌍점 뒤에 '모은 적 없거나 지운 정보는 도둑맞지 않는다'는 설명이 붙어요. 가장 좋은 보호는 '처음부터 데이터를 덜 모으는 것'이에요."
+],
+[
+42,
+2,
+"reading",
+"r2-s6",
+"Which is NOT discussed in the passage?",
+[
+"a reason one weakness can affect thousands of customers",
+"how ransomware gangs pressure their victims",
+"a kind of personal information that cannot be changed",
+"a way some regulators calculate fines",
+"the name of a specific company that was hacked"
+],
+[
+5
+],
+"같은 외부 소프트웨어를 쓰는 문제, 공개하겠다는 협박, 바꿀 수 없는 생년월일·지문, 매출 비율 벌금은 모두 나와요. 해킹당한 특정 회사 이름은 나오지 않아요."
+],
+[
+43,
+2,
+"reading",
+"r2-s7",
+"What can be inferred from the passage?",
+[
+"People who fail to reach their objectives customarily have no real intentions.",
+"Simply wanting to reach an objective is often not enough to make people act.",
+"Implementation intentions work only for physical exercise.",
+"Flexible plans are more likely to backfire than rigid ones.",
+"Gollwitzer believes willpower can be trained like a muscle."
+],
+[
+2
+],
+"목표를 못 이루는 사람도 좋은 의도는 있는데 행동할 순간을 놓친다고 했어요. 원하기만 해서는 행동으로 이어지지 않는다고 볼 수 있어요. 역효과는 지나치게 '딱딱한' 계획 쪽이에요."
+],
+[
+44,
+2,
+"reading",
+"r2-s7",
+"Which statement does NOT agree with the passage?",
+[
+"Implementation intentions take an if-then form.",
+"Many studies have tested the technique.",
+"The technique can help people remember to take medication or to attend a medical screening.",
+"Overly rigid plans can be derailed by a single disruption.",
+"The technique works equally well whether or not a person truly values the objective."
+],
+[
+5
+],
+"정말로 이루고 싶은 목표일 때 가장 잘 듣는다고 했어요. 목표를 소중히 여기든 말든 똑같이 듣는다는 말은 글과 맞지 않아요."
+],
+[
+45,
+2,
+"reading",
+"r2-s7",
+"Which plan is the best example of an implementation intention as depicted in the passage?",
+[
+"I want to become a much healthier person this year.",
+"If I finish dinner, then I will spend ten minutes reviewing my vocabulary notes.",
+"From now on, I will try much harder to save money and spend less on things I do not need.",
+"I hope to read more books someday.",
+"Exercise is crucial, so I should do more of it."
+],
+[
+2
+],
+"실행 의도는 '이런 상황이 오면 이렇게 하겠다'는 if-then 계획이에요. 저녁을 다 먹으면(상황) 10분 단어를 보겠다(행동)는 계획만 이 꼴을 갖췄고, 나머지는 막연한 다짐이에요."
+],
+[
+46,
+2,
+"reading",
+"r2-s7",
+"Where does the following sentence fit best?\nIn one such study, students who wrote down exactly when and where they would write an essay over the holidays were far more likely to finish it than students who merely intended to.",
+[
+"(Ⅰ)",
+"(Ⅱ)",
+"(Ⅲ)",
+"(Ⅳ)",
+"(Ⅴ)"
+],
+[
+3
+],
+"'그런 연구 가운데 하나(one such study)'는 바로 앞의 '수십 건의 연구'를 받아야 해요. 그 뒤에 여러 연구를 합친 분석 결과가 이어지는 흐름도 자연스러워요."
+],
+[
+47,
+2,
+"reading",
+"r2-s8",
+"Which title best suits the passage?",
+[
+"What Holds Venice Up: Wooden Foundations and Rising Waters",
+"The Art of Venetian Glassmaking",
+"Why Oak Is the Best Wood for Furniture",
+"Tourism and the Economy of Northern Italy Since the Second World War",
+"How Fungi Help Forests Grow"
+],
+[
+1
+],
+"물속 나무 말뚝이 어떻게 도시를 떠받쳐 왔는지 [A][B], 그 약점과 더 큰 위협인 바닷물 [C][D]을 다뤄요. 베네치아를 받치는 것과 차오르는 물이라는 제목이 맞아요."
+],
+[
+48,
+2,
+"reading",
+"r2-s8",
+"What can be inferred from the passage?",
+[
+"Wood generally lasts longer when it is exposed to air than when it is kept submerged in waterlogged mud.",
+"Venice was built on solid rock rather than mud.",
+"If the water level around the piles fell permanently, the foundations could weaken faster.",
+"The mobile barriers have no drawbacks.",
+"Bacteria cannot survive in waterlogged mud."
+],
+[
+3
+],
+"물이 빠져 공기가 말뚝에 닿는 곳마다 썩는 속도가 크게 빨라진다고 했어요. 그러니 물높이가 아예 내려가면 기초가 더 빨리 약해질 수 있다고 볼 수 있어요."
+],
+[
+49,
+2,
+"reading",
+"r2-s8",
+"Which statement agrees with the passage?",
+[
+"The wooden piles were all made from a single type of tree.",
+"Mobile barriers are raised to safeguard the city from high tides.",
+"The piles beneath Venice rotted within a few decades.",
+"Salt water does no damage to the city's brick and stone.",
+"The barriers are cheap and easy to operate."
+],
+[
+2
+],
+"2020년부터 물이 아주 높이 찰 때 이동식 방벽을 세워 바다를 막는다고 했어요. 말뚝은 오리나무·낙엽송·참나무 등 여러 나무로 만들었고, 방벽은 운영비가 비싸요."
+],
+[
+50,
+2,
+"reading",
+"r2-s8",
+"Among the pairs of an underlined word and its replacement, which is NOT appropriate?",
+[
+"(a) flourish — multiply",
+"(b) permeated — drained from",
+"(c) withstand — bear",
+"(d) threat — menace",
+"(e) secure — safeguard"
+],
+[
+2
+],
+"permeate 는 '스며들다, 배어들다'예요. 물속 광물이 나무에 스며들어 단단하게 했다는 뜻이라 drained from(빠져나가다)과는 반대예요."
+],
+[
+1,
+3,
+"vocab",
+null,
+"Choose the word that best completes the passage.\nSmallpox killed hundreds of millions of people in the twentieth century alone. In 1967, the World Health Organization launched an intensified campaign to ____ the disease wholly, vaccinating people in dozens of countries and tracking down every new outbreak. The effort succeeded in part because of a feature of the virus itself: it infected only humans, so once it stopped spreading between people, it had nowhere left to hide.",
+[
+"condone",
+"mimic",
+"propagate",
+"eradicate",
+"aggravate"
+],
+[
+4
+],
+"백신을 놓고 새 발병을 모두 쫓아가 결국 바이러스가 '숨을 곳이 없어졌다'고 했으니 병을 '뿌리 뽑다(eradicate)'가 맞아요. propagate(퍼뜨리다)·aggravate(악화시키다)는 반대 방향이고, condone(눈감아 주다)도 맞지 않아요."
+],
+[
+2,
+3,
+"vocab",
+null,
+"Choose the word that best completes the passage.\nFew policies in the city's recent history have been as ____ as the proposal to charge drivers a fee for entering the downtown area during rush hour. Business groups warned that it would drive shoppers away, while environmental organizations acclaimed it as long overdue. At one public hearing, the debate grew so heated that the chair had to suspend the session twice.",
+[
+"contentious",
+"innocuous",
+"trite",
+"prosaic",
+"unobtrusive"
+],
+[
+1
+],
+"상인 단체는 반대하고 환경 단체는 반기며 공청회가 두 번이나 중단될 만큼 격했으니 '논란이 많은(contentious)' 정책이에요. innocuous(무난한)·unobtrusive(눈에 띄지 않는)는 반대 뜻이에요."
+],
+[
+3,
+3,
+"vocab",
+null,
+"Choose the word that best completes the passage.\nMany people presume that a glass of wine before bed enhances sleep. Although alcohol can help people fall asleep more quickly, researchers have found that it tends to ____ the deep and dreaming stages of sleep later in the night. As a result, drinkers often wake feeling unrefreshed, even after spending a full eight hours in bed, and may mistakenly reach for another drink the following evening.",
+[
+"bolster",
+"intensify",
+"protract",
+"inhibit",
+"consolidate"
+],
+[
+4
+],
+"Although 로 '잠은 빨리 들게 한다'와 대비되고, 그 결과 개운하지 않게 깬다고 했으니 깊은 잠을 '억누른다(inhibit)'가 맞아요. bolster·intensify·protract(늘이다)·consolidate 는 모두 깊은 잠을 돕는 쪽이라 반대예요."
+],
+[
+4,
+3,
+"vocab",
+null,
+"Choose the word that best completes the passage.\nIn a classic series of experiments, participants were asked to judge which of three lines matched a reference line in length. The task was easy, yet when several other people in the room, covertly working with the researcher, gave an obviously wrong answer, many participants went along with them at least once. The studies became a renowned demonstration of ____, the pressure to match one's judgments to those of a group.",
+[
+"obstinacy",
+"lethargy",
+"conformity",
+"reverence",
+"austerity"
+],
+[
+3
+],
+"쉼표 뒤 '자기 판단을 무리에 맞추라는 압력'이 빈칸의 뜻풀이예요. 그래서 '동조(conformity)'가 맞고, obstinacy(고집)는 오히려 반대예요."
+],
+[
+5,
+3,
+"vocab",
+null,
+"Choose the word that best completes the passage.\nEconomists who study water pricing face an arduous balance. Charging more for water spurs conservation, but a flat increase hits poor households hardest, since they spend a larger share of their income on basic needs. Many cities hence use tiered rates, in which the first units needed for drinking and washing are cheap, and prices rise only for heavy use. Such schemes aim to be both efficient and ____.",
+[
+"profligate",
+"capricious",
+"regressive",
+"clandestine",
+"equitable"
+],
+[
+5
+],
+"꼭 필요한 양은 싸게 해서 가난한 집 부담을 덜려는 제도이니 효율적이면서 '공평한(equitable)' 것을 노려요. regressive(가난한 쪽에 더 무거운)는 피하려는 쪽이에요."
+],
+[
+6,
+3,
+"expression",
+null,
+"Select the phrase that correctly fills the blank in the sentence.\nIt was not until the late nineteenth century ____ that minuscule organisms, rather than bad air, caused many of the infectious diseases that had puzzled physicians for centuries.",
+[
+"that most doctors accepted",
+"that did most doctors accept",
+"most doctors accepted",
+"that most doctors were accepted",
+"which most doctors accepted"
+],
+[
+1
+],
+"'It was not until A that B' 강조 구문이라 that 뒤에는 도치 없이 평서문 어순이 와요. that 이 빠지거나 which 로 바뀌면 구문이 깨지고, 의사가 받아들인 것이라 수동도 안 돼요."
+],
+[
+7,
+3,
+"expression",
+null,
+"Select the phrase that correctly fills the blank in the sentence.\n____ who knew every ridge and shelter in the valley, the expedition would almost certainly have perished in the storm that swept across the pass that night.",
+[
+"If it had not been the local guides",
+"Had it not been for the local guides",
+"Had not it been for the local guides",
+"It had not been for the local guides",
+"Were it not for the local guides"
+],
+[
+2
+],
+"주절이 would have perished 라 과거 사실의 반대예요. If it had not been for 에서 If 를 빼고 도치한 Had it not been for 가 맞아요. Were it not for 는 현재 사실의 반대라 시제가 어긋나요."
+],
+[
+8,
+3,
+"expression",
+null,
+"Select the phrase that correctly fills the blank in the sentence.\nNo sooner ____ than the first customers began lining up outside, many of them carrying broken electronics they hoped to have repaired for free.",
+[
+"had the repair café opened its doors",
+"the repair café had opened its doors",
+"had the repair café open its doors",
+"has the repair café opened its doors",
+"did the repair café opened its doors"
+],
+[
+1
+],
+"No sooner 가 문장 앞에 오면 'had + 주어 + 과거분사'로 도치하고 than 과 짝을 이뤄요. 뒤가 과거 began 이라 현재완료 has 는 안 맞아요."
+],
+[
+9,
+3,
+"expression",
+null,
+"Select the phrase that correctly fills the blank in the sentence.\nThe new space telescope can collect ____ its predecessor, permitting astronomers to study galaxies that formed shortly after the universe began in far greater detail than before.",
+[
+"roughly as six times much light as",
+"roughly six times as much light as",
+"six times roughly as light much as",
+"roughly six times as many light as",
+"roughly six times more light as"
+],
+[
+2
+],
+"배수 비교는 '배수 + as much(many) + 명사 + as'예요. light 는 셀 수 없어서 many 가 아니라 much 를 쓰고, more 는 than 과 짝이라 as 와 못 써요."
+],
+[
+10,
+3,
+"expression",
+null,
+"Select the phrase that correctly fills the blank in the sentence.\nMany teenagers say they would rather their parents ____ their private messages, even when the parents insist that they are only worried about their children's safety online.",
+[
+"do not read",
+"did not reading",
+"not to read",
+"have not read",
+"did not read"
+],
+[
+5
+],
+"'would rather + 주어 + 과거형'은 지금 일에 대한 바람을 나타내서 did not read 가 맞아요. 현재형·현재완료는 이 자리에 오지 않아요. 말할 때 쓰는 현재형(do not read)은 시험 기준으로는 오답이에요."
+],
+[
+11,
+3,
+"grammar",
+null,
+"Choose the underlined part that must be changed to make the passage grammatically correct.\nBefore the 1840s, surgery was a terrifying ordeal that patients ①<u>endured</u> fully awake. Surgeons prized speed above all, since a quick amputation meant less time in agony, and some ②<u>could remove</u> a leg in under a minute. The introduction of ether and, soon afterward, chloroform ③<u>transformed</u> the operating room. For the first time, surgeons could work slowly and meticulously, ④<u>attempting</u> procedures that had previously been unthinkable. Yet anesthesia alone did not make surgery safe; until physicians understood the need for clean hands and instruments, many patients who survived the operation itself ⑤<u>were died</u> of infection afterward.",
+[
+"endured",
+"could remove",
+"transformed",
+"attempting",
+"were died"
+],
+[
+5
+],
+"die 는 목적어를 받지 않는 자동사라 수동태로 쓸 수 없어요. 그냥 died 가 맞아요."
+],
+[
+12,
+3,
+"grammar",
+null,
+"Choose the underlined part that must be changed to make the passage grammatically correct.\nIn many cities, escalator users follow an unwritten rule: those who wish to stand ①<u>keep</u> to one side, leaving the other side free for people in a hurry. Engineers have pointed out, however, that this custom may actually ②<u>slow</u> everyone down. Because few people are willing to walk up a long escalator, the walking lane often ③<u>remain</u> half empty while a long queue forms for the standing side. Trials in which ④<u>all</u> passengers were asked to stand on both sides have moved more people per minute, ⑤<u>although</u> many commuters resented being told not to walk. Habits, it seems, are harder to change than escalator speeds.",
+[
+"keep",
+"slow",
+"remain",
+"all",
+"although"
+],
+[
+3
+],
+"주어가 단수 the walking lane 이라 동사도 remains 가 돼야 해요."
+],
+[
+13,
+3,
+"grammar",
+null,
+"Choose the underlined part that must be changed to make the passage grammatically correct.\nIn 1816, a French physician named René Laennec ①<u>was examining</u> a young woman with symptoms of heart disease. Placing an ear directly against the patient's chest was the customary method of listening to the heart, but Laennec ②<u>was felt</u> that it would be improper in her case. Instead, he curled a few pages of paper into a narrow cylinder, ③<u>placed</u> one end on her chest, and was astonished to hear the heartbeat more clearly than ever before. He soon replaced the paper with a wooden cylinder and spent years ④<u>studying</u> the sounds of diseased hearts and lungs, ⑤<u>which</u> he depicted in a book published in 1819.",
+[
+"was examining",
+"was felt",
+"placed",
+"studying",
+"which"
+],
+[
+2
+],
+"Laennec 가 '느낀' 것이라 능동 felt 가 돼야 해요. 뒤에 that 절이 목적어로 오는데 수동 was felt 는 맞지 않아요."
+],
+[
+14,
+3,
+"grammar",
+null,
+"Choose the underlined part that must be changed to make the passage grammatically correct.\nHigh in the Andes of Peru, the Inca site of Machu Picchu ①<u>was built</u> in the fifteenth century, presumably as an estate for an emperor. It remained largely unknown to the outside world until 1911, when the American explorer Hiram Bingham, ②<u>who</u> was guided there by local farmers, brought it to international attention. His expeditions ③<u>removed</u> thousands of artifacts and shipped them to Yale University, a decision that became the subject of a long dispute. Peruvian officials contended that the objects, ④<u>which taking</u> out of the country under temporary permits, belonged to Peru, and most of them ⑤<u>were</u> finally returned in 2011 and 2012.",
+[
+"was built",
+"who",
+"removed",
+"which taking",
+"were"
+],
+[
+4
+],
+"유물은 나라 밖으로 '옮겨진' 것이고 관계절에 동사가 있어야 하니 which had been taken 이 돼야 해요. which taking 으로는 절의 동사가 없어요."
+],
+[
+15,
+3,
+"statement",
+"r3-p15",
+"Read the passage. Choose the statement(s) that restate the passage or can be inferred from it.\n(a) 2024 was warmer than any earlier year in the reliable record.\n(b) The Paris target has officially been broken because of 2024's temperature.\n(c) The Paris limit refers to an average over many years.\n(d) A natural climate pattern added to the heat of 2024.",
+[
+"(a), (c), (d)",
+"(a), (b)",
+"(b), (c)",
+"(a), (b), (d)",
+"(b), (c), (d)"
+],
+[
+1
+],
+"2024년이 기록상 가장 더웠고(a), 파리협정 기준은 20년 넘는 평균이며(c), 자연 현상인 엘니뇨도 더위를 보탰다(d)고 했어요. 한 해 더웠다고 목표를 놓친 것은 아니라고 했으니 b 는 틀려요."
+],
+[
+16,
+3,
+"statement",
+"r3-p16",
+"Read the passage. Choose the statement(s) that restate the passage or can be inferred from it.\n(a) The seven-day week is not based on any evident natural cycle.\n(b) The Romans had invariably used a seven-day week.\n(c) A ten-day week was once tried in France.\n(d) The French ten-day week remains in use today.",
+[
+"(a), (c)",
+"(a), (b)",
+"(c), (d)",
+"(a), (b), (c)",
+"(b), (d)"
+],
+[
+1
+],
+"주는 날·달·해와 달리 자연의 주기와 맞지 않고(a), 프랑스가 10일 주를 썼다가 버렸다(c)고 했어요. 로마는 원래 8일 장날 주기를 썼으니 b 가 틀리고, 10일 주는 10년쯤 뒤 버렸으니 d 도 틀려요."
+],
+[
+17,
+3,
+"statement",
+"r3-p17",
+"Read the passage. Choose the statement(s) that restate the passage or can be inferred from it.\n(a) Doodling may help people remember information from a tedious task.\n(b) The doodlers were told in advance that their memory would be tested.\n(c) The study demonstrates that all kinds of drawing enhance memory.\n(d) Daydreaming may curtail attention to a boring task.",
+[
+"(a), (b)",
+"(a), (d)",
+"(b), (c)",
+"(a), (c), (d)",
+"(c), (d)"
+],
+[
+2
+],
+"낙서한 사람이 지루한 메시지를 29%쯤 더 기억했고(a), 공상으로 빠지면 지루한 일에서 주의가 흩어진다(d)는 설명이에요. 기억 시험은 '예고 없이' 봤고, 모든 그림이 돕는 건 아니라고 했으니 b·c 는 틀려요."
+],
+[
+18,
+3,
+"statement",
+"r3-p18",
+"Read the passage. Choose the statement(s) that restate the passage or can be inferred from it.\n(a) Sharks existed before trees appeared on land.\n(b) Modern sharks are identical to the earliest sharks.\n(c) The whale shark feeds predominantly on other sharks.\n(d) Sharks lose and replace their teeth only once in their lives.",
+[
+"(a), (d)",
+"(b), (c)",
+"(a), (b), (c)",
+"(a) only",
+"(c), (d)"
+],
+[
+4
+],
+"상어는 육지에 첫 나무가 자라기 훨씬 전에 나타났다(a)는 것만 맞아요. 변하지 않은 유물이 아니라고 했고, 고래상어는 플랑크톤을 먹으며, 이빨은 평생 계속 갈아 끼운다고 했어요."
+],
+[
+19,
+3,
+"reading",
+"r3-s1",
+"Which title best suits the passage?",
+[
+"How Medieval Churches Were Built",
+"The History of the Telescope",
+"Does Glass Flow? A Persistent Myth and a Real Puzzle",
+"Why Crystals Grow in Caves",
+"Modern Methods of Recycling Old Window Glass into New Bottles and Jars"
+],
+[
+3
+],
+"'유리는 아주 느리게 흐르는 액체'라는 통념이 틀린 까닭 [A]~[C]과, 그래도 유리가 품은 진짜 수수께끼 [D]를 다뤄요. 끈질긴 통념과 진짜 수수께끼라는 제목이 맞아요."
+],
+[
+20,
+3,
+"reading",
+"r3-s1",
+"What can be inferred from the passage?",
+[
+"All medieval windows are thicker at the bottom.",
+"Glass has the same atomic structure as quartz.",
+"Roman glass vessels in museum collections have visibly sagged and thickened at the base over the centuries.",
+"If glass flowed noticeably, old telescope lenses would presumably no longer focus properly.",
+"Scientists have fully elucidated why liquids turn into glass."
+],
+[
+4
+],
+"옛 망원경 렌즈가 아직도 조금도 일그러지지 않고 빛을 모은다는 것을 유리가 흐르지 않는 증거로 들었어요. 유리가 눈에 띄게 흘렀다면 렌즈가 제대로 초점을 맞추지 못했을 거라고 볼 수 있어요."
+],
+[
+21,
+3,
+"reading",
+"r3-s1",
+"Which statement agrees with the passage?",
+[
+"The atoms in glass are arranged in a regular, repeating pattern like those in a crystal.",
+"Window glass flows noticeably within a few centuries.",
+"Physicists support the flowing-glass explanation.",
+"Every old window surveyed was thicker at the bottom.",
+"Some medieval glass was made by spinning molten glass into a disc."
+],
+[
+5
+],
+"중세 유리공은 녹은 유리 덩이를 돌려 큰 원판으로 만들었다고 했어요. 유리 원자는 액체처럼 무질서하고, 위나 옆이 더 두꺼운 창도 있었어요."
+],
+[
+22,
+3,
+"reading",
+"r3-s1",
+"Among the pairs of an underlined word and its replacement, which is NOT appropriate?",
+[
+"(a) derives — springs",
+"(b) distortion — warping",
+"(c) verification — rejection",
+"(d) interfere — get in the way",
+"(e) fundamental — deep"
+],
+[
+3
+],
+"verification 은 '확인, 입증'이라 confirmation 과 가까워요. rejection(거부)은 뜻이 전혀 달라 바꿔 쓸 수 없어요."
+],
+[
+23,
+3,
+"reading",
+"r3-s2",
+"What is the passage mainly arguing?",
+[
+"Battery-powered jets will soon replace conventional aircraft.",
+"Sustainable aviation fuel produces no carbon dioxide at all when it is burned in existing jet engines.",
+"Governments should ban long-haul flights immediately.",
+"Sustainable aviation fuel offers a promising but costly and limited way to cut aviation emissions.",
+"Used cooking oil is an unlimited source of jet fuel."
+],
+[
+4
+],
+"다른 길이 마땅치 않아 SAF 에 기대를 걸지만 [A][B], 공급이 적고 값이 비싸며 [C], 그것만으로는 부족하다는 반론도 있어요 [D]. 유망하지만 비싸고 한계가 있다는 요지예요."
+],
+[
+24,
+3,
+"reading",
+"r3-s2",
+"Which statement does NOT agree with the passage?",
+[
+"Hydrogen-powered aircraft are still largely experimental.",
+"EU rules require the share of SAF in fuel at EU airports to increase over time.",
+"SAF currently makes up an exceedingly small share of jet fuel.",
+"Some fear that demand for SAF could spur fraud.",
+"Using SAF requires airlines to replace their existing engines."
+],
+[
+5
+],
+"SAF 는 보통 등유와 섞어 지금 엔진에 큰 손질 없이 쓸 수 있다고 했어요. 엔진을 바꿔야 한다는 말이 글과 맞지 않아요."
+],
+[
+25,
+3,
+"reading",
+"r3-s2",
+"According to the passage, why can SAF's life-cycle emissions be lower than those of conventional fuel?",
+[
+"It releases far less carbon dioxide than conventional kerosene at the moment of burning.",
+"Its raw materials took in carbon as they grew or would otherwise have been wasted.",
+"It is made predominantly from crude oil of higher quality.",
+"It allows aircraft to fly at lower altitudes.",
+"It is used only on short domestic flights."
+],
+[
+2
+],
+"태울 때 나오는 양은 보통 연료와 비슷하지만, 원료가 자라면서 탄소를 흡수했거나 버려질 것이었기 때문에 전 과정 배출이 적다고 했어요."
+],
+[
+26,
+3,
+"reading",
+"r3-s2",
+"Which of the underlined parts (a)~(e) is grammatically INCORRECT?",
+[
+"(a) made",
+"(b) absorbing",
+"(c) with",
+"(d) bring",
+"(e) be passed"
+],
+[
+2
+],
+"because 절에 동사가 있어야 하니 '원료가 흡수했다'는 absorbed 가 돼야 해요. absorbing 으로는 절의 동사가 없고, 뒤의 would have been 과도 나란히 맞지 않아요."
+],
+[
+27,
+3,
+"reading",
+"r3-s3",
+"Which title best suits the passage?",
+[
+"How Electric Cars Are Built",
+"The Economic History of Chilean Copper",
+"Why Flamingos Live in Salt Flats",
+"The Hidden Water Cost of Lithium",
+"A Guide to Recycling Household Batteries"
+],
+[
+4
+],
+"리튬을 얻으려고 사막에서 엄청난 물을 증발시키는 문제와 그 논쟁, 대안을 다뤄요. 리튬에 숨은 물 비용이라는 제목이 맞아요."
+],
+[
+28,
+3,
+"reading",
+"r3-s3",
+"What can be inferred from the passage?",
+[
+"Lithium mining in the region uses no water at all.",
+"All local communities welcome the expansion of mining.",
+"Battery recycling can already replace most new mining of lithium in the region.",
+"Independent evidence about the effects of brine pumping is limited.",
+"Brine is safe to drink once lithium has been removed."
+],
+[
+4
+],
+"장기 관측 자료가 드물고 그마저 광산 회사가 모은 경우가 많다고 했어요. 회사와 무관한 근거가 부족하다고 볼 수 있어요. 재활용은 효과를 내려면 몇 해가 걸린다고 했어요."
+],
+[
+29,
+3,
+"reading",
+"r3-s3",
+"Which choice best completes the blank?",
+[
+"electric vehicles will invariably cost more than gasoline cars",
+"lithium will soon no longer be needed for batteries",
+"a technology meant to safeguard the environment may strain a fragile one",
+"deserts will become wetter as mining expands",
+"recycling will replace all mining within a single year"
+],
+[
+3
+],
+"'불편한 아이러니'는 환경을 지키려는 전기차 배터리가 메마른 사막의 물과 생태를 압박한다는 점이에요. 환경을 위한 기술이 다른 환경을 짓누를 수 있다는 보기가 맞아요."
+],
+[
+30,
+3,
+"reading",
+"r3-s3",
+"Which is NOT discussed in the passage?",
+[
+"the countries that make up the lithium triangle",
+"a reason recycling cannot yet replace new mining",
+"the exact amount of water lost for each tonne of lithium",
+"a role Chile plans to give a state-owned company",
+"an animal whose habitat may be affected"
+],
+[
+3
+],
+"칠레·아르헨티나·볼리비아, 아직 젊은 전기차가 많다는 재활용의 한계, 국영 구리 회사의 역할, 플라밍고 서식지는 모두 나와요. 리튬 1톤에 잃는 물의 정확한 양은 '엄청나다'고만 했어요."
+],
+[
+31,
+3,
+"reading",
+"r3-s4",
+"What can be inferred from the passage?",
+[
+"Semantic satiation permanently damages a person's vocabulary and ability to recall words.",
+"A word that has lost its meaning through repetition will soon seem normal again.",
+"The effect occurs only with words from foreign languages.",
+"Repeating a word makes its meaning stronger and clearer.",
+"Therapists have proven that repetition cures anxiety."
+],
+[
+2
+],
+"잠깐 쉬면 낱말이 원래 뜻을 되찾는다고 했으니, 되풀이로 뜻을 잃은 낱말도 곧 다시 평범하게 느껴진다고 볼 수 있어요. 치료 효과는 연구가 더 필요하다고 했어요."
+],
+[
+32,
+3,
+"reading",
+"r3-s4",
+"Which statement does NOT agree with the passage?",
+[
+"The term was introduced in the 1960s.",
+"Semantic satiation affects only spoken words.",
+"One explanation compares the effect to muscle fatigue.",
+"The effect customarily disappears after a short rest.",
+"Some therapists have tried using repetition to reduce distress."
+],
+[
+2
+],
+"글자를 오래 보거나 같은 얼굴·모양을 거듭 볼 때도 비슷한 일이 생긴다고 했어요. 말로 하는 낱말에만 생긴다는 말이 글과 맞지 않아요."
+],
+[
+33,
+3,
+"reading",
+"r3-s4",
+"Which case best illustrates semantic satiation as depicted in the passage?",
+[
+"A student forgets a word she learned last year.",
+"A traveler cannot comprehend a foreign language.",
+"A singer memorizes a long song by repeating its lyrics aloud many times before her first public performance.",
+"A reader looks up an unfamiliar word in a dictionary.",
+"After repeating the word \"spoon\" many times, a child says it no longer sounds like a real word."
+],
+[
+5
+],
+"의미 포화는 익숙한 낱말을 여러 번 되풀이하면 잠깐 뜻 없는 소리처럼 느껴지는 거예요. spoon 을 거듭 말하다 진짜 낱말 같지 않다는 아이가 딱 맞는 예예요."
+],
+[
+34,
+3,
+"reading",
+"r3-s4",
+"Where does the following sentence fit best?\nThe more often she writes it, the less certain she feels that it looks right.",
+[
+"(Ⅰ)",
+"(Ⅱ)",
+"(Ⅲ)",
+"(Ⅳ)",
+"(Ⅴ)"
+],
+[
+5
+],
+"'그녀(she)'는 바로 앞의 받아쓰기 시험을 앞둔 학생이에요. 쓸수록 맞는지 더 헷갈린다는 말이 '철자가 맞는지 갑자기 의심한다'를 이어받아요."
+],
+[
+35,
+3,
+"reading",
+"r3-s5",
+"What can be inferred from the passage?",
+[
+"Mina had known about the quarrel for many years.",
+"The friend had refused to forgive Mina's aunt.",
+"The aunt and her friend never settled their quarrel face to face.",
+"The letter had been mailed but was returned unopened.",
+"Mina's aunt was still alive when Mina found the letter in the kitchen."
+],
+[
+3
+],
+"편지는 끝내 부치지 않았고, 친구는 오래전에 용서했지만 아무에게도 말하지 않았다고 했어요. 둘이 직접 화해하지 못했다고 볼 수 있어요. 고모는 이미 세상을 떠난 뒤였어요."
+],
+[
+36,
+3,
+"reading",
+"r3-s5",
+"Which statement agrees with the passage?",
+[
+"The letter was written in ink on several pages.",
+"The quarrel began over a piece of jewelry.",
+"The friend was in poor mental health when Mina first met her at the home.",
+"Mina visited the friend only once.",
+"Mina found the friend with help from a former neighbor."
+],
+[
+5
+],
+"옛 이웃이 이름을 기억하고 요양원을 알려 줬다고 했어요. 편지는 한 장이었고, 다툼은 빌린 돈 때문이었으며, 친구는 몸은 약해도 정신은 또렷했고, 미나는 여러 번 찾아갔어요."
+],
+[
+37,
+3,
+"reading",
+"r3-s5",
+"Choose the pair that correctly fills blanks (A) and (B).",
+[
+"(A) writing — (B) had been",
+"(A) written — (B) has been",
+"(A) writing — (B) has been",
+"(A) written — (B) had been",
+"(A) wrote — (B) had been"
+],
+[
+4
+],
+"(A)는 종이가 글씨로 '쓰인' 것이라 folded 와 나란한 과거분사 written 이에요. (B)는 말한 때(said)보다 앞서 이어진 기다림이라 과거완료 진행 had been waiting 이에요."
+],
+[
+38,
+3,
+"reading",
+"r3-s5",
+"Among the pairs of an underlined word and its replacement, which is NOT appropriate?",
+[
+"(a) placid — even-tempered",
+"(b) belittled — dismissed",
+"(c) revealing — disclosing",
+"(d) intrusive — welcome",
+"(e) breach — falling-out"
+],
+[
+4
+],
+"intrusive 는 '끼어드는, 거슬리는'이에요. 방문이 '폐가 될까' 걱정했다는 뜻이라 welcome(반가운)과는 반대예요."
+],
+[
+39,
+3,
+"reading",
+"r3-s6",
+"Which title best suits the passage?",
+[
+"Rosy-Fingered Dawn: What Repetition Reveals About Homer",
+"The Life and Death of Achilles",
+"Why Medieval Scribes Made So Many Blunders When Copying Ancient Books",
+"A History of Music in Yugoslavia",
+"How to Memorize Long Poems Quickly"
+],
+[
+1
+],
+"호메로스의 되풀이되는 표현이 실수가 아니라 구전으로 짓는 도구였다는 걸 패리의 연구로 밝혀 가요. 되풀이가 호메로스에 대해 알려 주는 것이라는 제목이 맞아요."
+],
+[
+40,
+3,
+"reading",
+"r3-s6",
+"Which statement agrees with the passage?",
+[
+"The singers in Yugoslavia recited a fixed text word for word.",
+"Parry believed the repeated phrases were copying errors.",
+"Parry and Lord recorded traditional singers in Yugoslavia.",
+"Scholars now concur on exactly when the poems were written down.",
+"Every epithet in Homer could fit anywhere in a line."
+],
+[
+3
+],
+"패리와 로드가 유고슬라비아에 가서 글 없이 노래하는 가수들을 녹음했다고 했어요. 같은 노래도 매번 달랐고, 표현마다 운율 속 자리가 정해져 있었어요."
+],
+[
+41,
+3,
+"reading",
+"r3-s6",
+"What can be inferred from the passage?",
+[
+"Homer's poems were presumably shaped by performance before live audiences.",
+"Oral epic traditions had utterly vanished by the 1930s.",
+"Parry's theory has been rejected by most modern scholars.",
+"Written texts were the original source of the Homeric poems.",
+"Singers in Yugoslavia could not perform songs longer than a few hundred lines."
+],
+[
+1
+],
+"청중 앞에서 소리 내어 짓던 가수의 도구가 호메로스의 표현이라는 주장이니, 두 서사시가 실제 공연 속에서 다듬어졌다고 볼 수 있어요. 1930년대에도 유고슬라비아에 구전 가수가 있었어요."
+],
+[
+42,
+3,
+"reading",
+"r3-s6",
+"Among the pairs of an underlined word and its replacement, which is NOT appropriate?",
+[
+"(a) rudimentary — unsophisticated",
+"(b) adhere — fit",
+"(c) revelation — eye-opener",
+"(d) potent — forceful",
+"(e) sustain — interrupt"
+],
+[
+5
+],
+"sustain 은 '이어 가다, 유지하다'예요. 몇 시간 동안 공연을 끌고 가는 솜씨라는 뜻이라 interrupt(끊다)와는 반대예요."
+],
+[
+43,
+3,
+"reading",
+"r3-s7",
+"Why does the author mention families who keep savings while carrying credit card debt?",
+[
+"To contend that credit cards should be banned",
+"To demonstrate that families with credit card debt never manage to save money",
+"To elucidate how casinos make a profit",
+"To depict how governments label cash payments",
+"To illustrate a choice that standard theory cannot easily explain"
+],
+[
+5
+],
+"이자가 거의 없는 저축은 두고 비싼 카드 빚을 지는 건 '돈은 다 같다'는 표준 이론으로는 설명하기 어려워요. 마음속 장부가 설명하는 '이상한 선택'의 예로 든 거예요."
+],
+[
+44,
+3,
+"reading",
+"r3-s7",
+"Which statement agrees with the passage?",
+[
+"Standard theory says money from gifts should be spent more freely than money from wages.",
+"People who lose a ticket are more willing to buy another one.",
+"Mental accounting can occasionally help people control their spending.",
+"Customers spend gift cards more meticulously than cash.",
+"Labeled payments legally restrict how families may spend them."
+],
+[
+3
+],
+"돈에 이름표를 붙이는 것이 자기 통제의 도구가 될 수 있다고 했어요. 상품권은 현금보다 쉽게 쓰고, 이름표를 붙인 돈도 다른 데 쓰는 걸 막지는 않아요."
+],
+[
+45,
+3,
+"reading",
+"r3-s7",
+"According to the passage, why might someone who wins money at a casino gamble it away freely?",
+[
+"Casinos require winners to keep playing.",
+"He has already set aside enough money for the week's groceries.",
+"It feels like money that is not genuinely his own.",
+"The prize is too small to save.",
+"He has lost a theater ticket."
+],
+[
+3
+],
+"카지노에서 딴 돈은 자기 돈이 아니라 '카지노의 돈'처럼 느껴져서 쉽게 다시 건다고 했어요."
+],
+[
+46,
+3,
+"reading",
+"r3-s7",
+"Which of the underlined parts (a)~(e) is grammatically INCORRECT?",
+[
+"(a) treating",
+"(b) because",
+"(c) who",
+"(d) be",
+"(e) even though"
+],
+[
+1
+],
+"and 로 sort 와 나란히 이어지는 주절의 동사라 treat 가 돼야 해요. treating 으로는 동사가 없어요."
+],
+[
+47,
+3,
+"reading",
+"r3-s8",
+"Which title best suits the passage?",
+[
+"How to Dance the Tango in Ten Steps",
+"From Port Tenements to Paris: The Journey of the Tango",
+"The History of the Accordion in Germany",
+"Why Immigrants Left Italy for South America",
+"The Fashion Industry of Paris Before the War"
+],
+[
+2
+],
+"항구 셋방에서 태어난 탱고 [A][B]가 파리에서 유행한 뒤 고향에서 인정받고 [C], 나라를 대표하는 문화가 된 [D] 여정을 다뤄요."
+],
+[
+48,
+3,
+"reading",
+"r3-s8",
+"Which statement agrees with the passage?",
+[
+"The bandoneon was brought to the region by German immigrants.",
+"The tango was first danced in Paris.",
+"Middle-class families spurred their children to learn the tango early on.",
+"UNESCO recognized the tango as belonging to Argentina alone.",
+"Tango music has never been performed in concert halls."
+],
+[
+1
+],
+"반도네온은 독일 이민자가 들여온 아코디언의 한 종류라고 했어요. 탱고는 부에노스아이레스·몬테비데오 항구에서 생겼고, 중산층은 배우지 못하게 했으며, 유네스코 등재는 두 나라가 함께 받았어요."
+],
+[
+49,
+3,
+"reading",
+"r3-s8",
+"Which choice best completes the blank?",
+[
+"the government banned it from the dance halls and cafés of the port districts",
+"it had won approval in the fashionable capitals of Europe",
+"immigrants stopped dancing it",
+"it was taught in rural schools",
+"it had lost all popularity abroad"
+],
+[
+2
+],
+"Ironically 가 단서예요. 고향의 상류층은 탱고를 몇 해나 깔봤는데, 파리 등 유럽에서 크게 유행한 '뒤에야' 받아들였다는 말이 이어져야 해요."
+],
+[
+50,
+3,
+"reading",
+"r3-s8",
+"Among the pairs of an underlined word and its replacement, which is NOT appropriate?",
+[
+"(a) oppressive — freeing",
+"(b) unleash — unlock",
+"(c) exotic — strikingly foreign",
+"(d) transcend — rise above",
+"(e) compelling — persuasive"
+],
+[
+1
+],
+"oppressive 는 '숨 막히게 짓누르는'이에요. 한 방에 온 식구가 사는 비좁은 셋방 형편이라 freeing(풀어 주는)과는 반대예요."
+]
+]
+}

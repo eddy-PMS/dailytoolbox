@@ -1,0 +1,1770 @@
+{
+"school": "sogang",
+"title": "서강대 편입영어 모의고사",
+"source": "서강대 편입영어 2017~2026학년도 기출 출제 유형(문항 수·영역·문제 꼴, VocabFactory 분석)을 분석해 dailyfreetoolbox 가 새로 만든 연습 문제",
+"checked": "2026-11-23",
+"minutes": 60,
+"sections": [
+{
+"id": "vocab",
+"name": "어휘"
+},
+{
+"id": "cloze",
+"name": "빈칸"
+},
+{
+"id": "order",
+"name": "배열"
+},
+{
+"id": "grammar",
+"name": "문법"
+},
+{
+"id": "restate",
+"name": "재진술"
+},
+{
+"id": "dialogue",
+"name": "대화"
+},
+{
+"id": "reading",
+"name": "독해"
+}
+],
+"points": [
+[
+1,
+4,
+2
+],
+[
+5,
+16,
+3
+],
+[
+17,
+30,
+4
+]
+],
+"passages": [
+{
+"id": "r1-s1",
+"text": "It is often said that people with nothing to hide have nothing to fear from cameras. That reassurance rests on an assumption that is fast becoming (A) ____. A camera on a city street once registered only what passed in front of it; matching a face to a name required a human witness who fortuitously recognized it. Facial recognition software has removed that limit. Algorithms trained on millions of images can now compare a passing face against a database in a fraction of a second, and police forces in many countries deploy such systems to scour crowds, or footage amassed after a crime, for suspects.\nSupporters cite arrests that might otherwise never have been made, whereas critics retort that the technology, for all its speed, is less trustworthy than its promotion implies. A 2019 study by a United States federal laboratory found that many algorithms generated erroneous matches far more often for some demographic groups than for others, and several Americans have been mistakenly arrested after a computer flagged them as suspects. Such errors, in other words, are (B) ____ rather than random.\nYet even a flawless system would raise a deeper problem — one that, I would argue, deserves more attention than any error rate. In a society where anyone can be identified anywhere, the anonymity in public that people have long taken for granted imperceptibly (C) ____. Legislators have responded unevenly: some American cities have barred their own agencies from deploying the technology, while the European Union's AI Act, adopted in 2024, stringently curtails real-time identification in public spaces by police, permitting it only in a narrow set of exceptional cases."
+},
+{
+"id": "r1-s2",
+"text": "In 523 or 524, the Roman statesman Boethius, once the most influential official at the court of the Ostrogothic king Theodoric, was arrested on charges of treason and imprisoned near Pavia. While awaiting execution, he wrote The Consolation of Philosophy, a dialogue between himself and a majestic figure who materializes in his cell — Philosophy herself, in human form.\nAt first Boethius is (A) ____: he laments bitterly that he has lost his wealth, his honors, and his good name, and he cannot comprehend why a righteous man should suffer while the wicked prosper. Philosophy does not deny his misfortune, but she diagnoses his despair as a malady that calls for gentle remedies before strong ones. Fortune, she reminds him, spins a wheel; anyone who ascends it has no right to grumble when it carries him down again. The goods that Fortune bestows were never truly his, and their loss is therefore less (B) ____ than it appears. The true good, Philosophy contends, resides in what no one can confiscate: a mind ordered toward wisdom and virtue.\nThe book was transcribed and translated throughout the Middle Ages, and both King Alfred and Chaucer rendered it into English. Its enduring appeal may derive partly from its setting, for the claim that external fortune is (C) ____ carries far more weight when it comes from a man who has just lost everything."
+},
+{
+"id": "r1-s3",
+"text": "In August 1653 the Dutch merchant ship Sperwer, bound for Japan, was wrecked in a tempest off the coast of Jeju Island. Of its crew of sixty-four, thirty-six reached the shore alive, among them Hendrick Hamel, the ship's bookkeeper — a man with no training as a writer and no reason to expect that his name would outlive the voyage. Joseon at the time admitted virtually no foreigners, and the survivors were forbidden to leave. They were taken to the capital, assigned to military units, and later scattered among provincial towns, where they dwelt for years as curiosities, sometimes begging to survive.\nIn 1666, after thirteen years in the country, Hamel and seven companions contrived to obtain a small boat and escaped to Nagasaki, where the Dutch kept an outpost. There Hamel compiled an account of the shipwreck and of the realm in which he had been detained, partly to support a claim for the wages owed to the crew for the years of their captivity. Published in the Netherlands in 1668, it became one of the first thorough descriptions of Korea accessible to European readers.\nThe account is invaluable precisely because its author was not a scholar: Hamel depicted what he encountered, from dwellings and punishments to the education of children and the way ordinary people treated strangers, without a theory to defend, and his sometimes mistaken judgments now tell historians as much about European assumptions as about Korea itself."
+},
+{
+"id": "r1-s4",
+"text": "(A) In December 1817, the young poet John Keats wrote a letter to his brothers describing an attribute he believed every eminent writer possessed. He called it negative capability: the capacity for being in uncertainties, mysteries, and doubts without any irritable reaching after fact and reason.\n(B) Keats found the supreme example in Shakespeare, whose plays give voice to murderers and saints, fools and kings, without ever settling into a single verdict on them. A mediocre writer, Keats implied, cannot endure leaving a question open and hastens to resolve it, sacrificing the richness of experience for the solace of an answer.\n(C) Keats had trained as a surgeon's apprentice and qualified as an apothecary before abandoning medicine for poetry, a decision that dismayed the guardian who controlled the family's finances.\n(D) The phrase has since migrated far beyond poetry. Psychoanalysts have adopted it to denote the patience a therapist needs to sit with a patient's confusion rather than imposing an early interpretation, and instructors in design invoke it to admonish students against settling on the first workable solution.\n(E) What these uses share is a suspicion of premature certainty. Negative capability is not a refusal to think but a discipline of thinking — the willingness to let a difficulty remain difficult long enough to be understood."
+},
+{
+"id": "r1-s5",
+"text": "Last spring, a dozen parents in my daughter's class met in a school gym and signed a short pledge: none of us would give our children a smartphone before the age of fourteen. It was not an act of nostalgia, since most of us work on screens all day and rely on them more than we care to concede. What united us was a more basic fear — that whichever family held out alone would be turning its child into an outcast.\nThat fear is the engine of the whole problem, for few parents I know genuinely want their eleven-year-olds carrying a device that offers endless video and the ceaseless judgment of classmates. They give in because everyone else seems to be giving in, and a pact, by binding families to one another, breaks that spiral, which is why comparable agreements have proliferated among parents in Britain and elsewhere since 2024, when the social psychologist Jonathan Haidt's book The Anxious Generation drew considerable attention to escalating anxiety among adolescents.\nI do not contend that the evidence is conclusive; researchers still dispute how much of that surge can be attributed to smartphones. Nor is our pledge a ban on technology, since our children can still text from a rudimentary phone and use the family computer. But I would rather we err on the side of a prolonged childhood than discover, belatedly, that the skeptics were mistaken. Waiting, after all, can be undone. A lost childhood cannot."
+},
+{
+"id": "r1-s6",
+"text": "Few paintings so thoroughly defeat the (A) ____ glance as Hans Holbein's The Ambassadors, painted in 1533 and now in the National Gallery in London. Visitors who stand directly in front of it behold two sumptuously attired young Frenchmen posed beside a set of shelves cluttered with objects that proclaim learning and affluence: a celestial globe, a terrestrial globe, sundials, a book of arithmetic, a hymnbook, and a lute. Across the floor at the men's feet, however, stretches an eerie pale shape that looks at first like a smear or a bone. Only when the viewer walks to the side of the painting and looks back at an oblique angle does the shape (B) ____ into a human skull.\nThe technique, called anamorphosis, deliberately distorts an image so that it can be seen correctly only from one viewpoint. Holbein used it to convey a message that the remainder of the picture seems contrived to conceal: the instruments and books celebrate human knowledge, but the skull reminds the viewer that death awaits every scholar and statesman, however accomplished, and even the lute, on close inspection, has a snapped string — a conventional emblem of discord.\nSome historians speculate that the painting was meant to hang beside a doorway or staircase, so that people leaving the room would glimpse the skull as they passed. If so, the effect was carefully (C) ____: the viewer, having admired the splendor of worldly achievement face to face, would discover its limits only on turning away."
+},
+{
+"id": "r1-s7",
+"text": "What would you do with something the whole world could not afford to lose? Before I talk about my own work, I want to tell you about a building most of you will never visit. It is carved into a mountain on Spitsbergen, an island in the Norwegian Arctic about thirteen hundred kilometers from the North Pole, and since it opened in 2008 the Svalbard Global Seed Vault has received duplicate samples of crop seeds from gene banks around the world — well over a million of them by now — and safeguarded them in chambers kept at about minus eighteen degrees Celsius.\nPeople sometimes dub it the doomsday vault, as if it were waiting for the end of the world. The truth is less sensational and more pragmatic: in 2015, researchers whose gene bank near Aleppo had been disrupted by the Syrian civil war asked for some of their deposited seeds back; they used them to rebuild their collections in Lebanon and Morocco, and later returned fresh samples to the mountain. The vault, in other words, worked exactly as intended: not as a monument to catastrophe but as an ordinary backup copy.\nI tell you this story because many of you are about to embark on careers in agriculture and science, and you will be tempted to think that consequential work must be glamorous. Most of it is not. It is painstaking, repetitive, and easy to overlook, like labeling a box of seeds and placing it on a cold shelf in case someone, someday, needs it."
+},
+{
+"id": "r2-s1",
+"text": "More than two thousand years ago, the Chinese philosopher Zhuangzi chronicled a dream. He dreamed that he was a butterfly — flitting blithely from flower to flower, wholly oblivious that he was Zhuangzi. Then he awoke and found himself, corporeal and unmistakable, lying in bed. But now he could not ascertain whether he was Zhuangzi who had dreamed of being a butterfly, or a butterfly now dreaming that it was Zhuangzi.\nWestern readers often construe the story as a precursor of a skeptical conundrum: how can I prove that I am not dreaming at this very moment? Descartes, nearly two thousand years later, would formulate an analogous question, yet Zhuangzi does not appear perturbed: he offers no argument to escape the doubt and evinces no inclination to find one. He simply avers that between Zhuangzi and the butterfly there must be some distinction, and calls the passage from one to the other <u>the transformation of things</u>.\nFor Zhuangzi, the insight lies less in what we can know than in how we cling to who we are. If the self can flow from one form into another, then clinging tenaciously to any single form, whether as a scholar, an official, or even a living body, may be a source of unnecessary suffering rather than of security."
+},
+{
+"id": "r2-s2",
+"text": "For much of the past decade, the subscription appeared to be the consummate business model. Instead of selling a product once, companies could charge a modest fee every month for software, films, music, meal kits, and even car features such as heated seats. Investors relished the predictable revenue, and consumers savored the convenience of never having to contemplate renewing anything.\nThat very convenience has begun to curdle. Surveys in several countries suggest that many households underestimate how much they spend on subscriptions, often paying for services they rarely use. Some companies have made signing up a matter of one click while concealing the cancellation option behind phone calls, bewildering menus, and eleventh-hour discount offers, designs for which regulators have a name — dark patterns. In 2024 the Federal Trade Commission in Washington promulgated a regulation obliging businesses to make cancelling as easy as signing up, a rule that business groups challenged and that a federal appeals court struck down in July 2025.\nConsumers, meanwhile, have begun to adapt on their own. Streaming services report that a burgeoning share of customers sign up for a single month to watch one series, cancel, and return later for the next. Services have responded with cheaper plans that carry advertisements, reviving the very commercials that many people had subscribed in order to avoid. The subscription, it appears, is entering a more ____ phase, in which customers treat each monthly payment not as a habit but as a decision."
+},
+{
+"id": "r2-s3",
+"text": "In Akira Kurosawa's 1950 film Rashomon, a samurai is discovered slain in a forest, and four witnesses give their accounts of what happened — a bandit, the samurai's wife, a woodcutter, and the dead man himself, speaking through a medium. The accounts Ⓐ<u>conflict</u> on almost every important point; several of the speakers depict events in ways that flatter their own conduct, and the film never discloses which version is true.\nThe film was an improbable success, garnering the top prize at the Venice Film Festival in 1951 and introducing many Western audiences to Japanese cinema. Its title has since permeated the vocabulary of law, journalism, and social science. The Rashomon effect denotes the way disparate observers of the same event can produce Ⓑ<u>contradictory</u> yet sincere accounts of it.\nThe phrase is often misused, however. It does not mean that there is no truth, or that every account is equally Ⓒ<u>valid</u>. Something did transpire in the forest. What the film Ⓓ<u>dramatizes</u> is how memory and self-interest shape testimony. Courts and historians who contend with conflicting witnesses do not simply abandon the search for facts; instead, they collate accounts, scrutinize physical evidence, and weigh each witness's motives. Kurosawa's achievement was to make that difficulty Ⓔ<u>trivial</u> for audiences, so that viewers leave the theater feeling the uncertainty rather than merely understanding it."
+},
+{
+"id": "r2-s4",
+"text": "Blaise Pascal, the seventeenth-century French mathematician who helped found the theory of probability, left among his unfinished notes an argument that has provoked readers ever since. It concerns belief in God, but its form is that of a bet.\nReason, Pascal granted, cannot settle whether God exists. Yet we cannot simply decline to choose, since living as though there were no God is itself a choice. We must therefore weigh the possible outcomes. If we believe and God exists, we gain an infinite reward; if we believe and God does not exist, we forfeit little — perhaps a few worldly pleasures; if we refuse to believe and God exists, the loss is infinite. Since even a negligible probability of an infinite gain outweighs any finite cost, Pascal inferred, a rational gambler should bet on God. The argument does not claim to prove that God exists; it claims to show that belief is the ____ choice.\nCritics have lodged manifold objections: some query which God one should bet on, since many religions promise rewards and punishments, while others doubt that belief can be adopted at will merely because it is advantageous. Pascal anticipated this last objection: a person who cannot believe, he ventured, should commence by acting as believers do, in the hope that conviction would follow.\nWhatever its merits as theology, the wager has had a long career in other domains. Decision theorists cite it as an early exemplar of reasoning about expected value, and some writers on environmental policy have co-opted its structure to contend that the cost of acting on an uncertain threat may be trivial compared with the cost of disregarding it."
+},
+{
+"id": "r2-s5",
+"text": "Not long ago, a programmer who answered emails from a beach in Bali was doing something of dubious legality. Most tourist visas prohibit holders from working, and few governments had made provision for people who earned salaries from employers in one country while living in another, until the pandemic, which rendered remote work commonplace for millions of office workers, changed that.\nEstonia was among the first countries to offer a visa tailored to such workers, inaugurating one in 2020. A multitude of others have followed — from Caribbean islands to European states such as Portugal and Spain; in Asia, Japan and South Korea both introduced their own versions in 2024. The customary arrangement entitles a foreigner to reside for a year or more, provided that he or she can demonstrate a steady income from abroad above a set threshold. Governments hope that these visitors will spend their foreign salaries locally without depriving residents of jobs.\nThe repercussions have been mixed: cafés and landlords in coveted destinations have welcomed the newcomers, but residents of some cities, notably Lisbon and Mexico City, lament that affluent remote workers have helped drive rents beyond what local wages can sustain. Tax authorities confront dilemmas of their own, since it is often unclear which country is entitled to tax income earned by someone who lives in one place, works for a company in another, and holds citizenship in a third.\nThese tensions raise a question that many governments are only beginning to grapple with: whether the rules they adopted so eagerly now need to be rewritten."
+},
+{
+"id": "r2-s6",
+"text": "In the 1490s, a scholar named Aldus Manutius set up a printing house in Venice with an unconventional ambition: to put the great works of ancient Greek literature into print before the manuscripts that preserved them were lost. He engaged Greek scholars, many of them exiles, as editors, and over the following two decades his press issued the first printed editions of Aristotle, Plato, Sophocles, and many others.\nHis most enduring contributions, however, pertained to the form of the book rather than its content. In 1501 he published an edition of the Roman poet Virgil in a format small enough to carry in a saddlebag or a large pocket. Books of the period were customarily ponderous volumes meant to rest on a desk or a lectern; Aldus's (A) ____ editions made it feasible for cultivated readers to take literature with them on journeys and into gardens. To accommodate more words on these diminutive pages, he had his type cutter, Francesco Griffo, design a slanted, compact typeface modeled on refined handwriting, the precursor of what we now call italic type.\nAldus also helped establish the modern semicolon, which appeared in a book he printed in 1496, and he favored a cleaner, more (B) ____ style of punctuation than the cluttered marks of many manuscripts. Readers rarely notice such conventions — they simply expect them — and that we take them for granted is perhaps the best measure of how thoroughly the Aldine press reshaped the experience of reading."
+},
+{
+"id": "r2-s7",
+"text": "In August 2024, a federal judge in Washington ruled that Google had illegally maintained a monopoly in online search. The case, brought by the United States Department of Justice together with a group of states, was the most consequential antitrust trial against a technology company in more than two decades. Pivotal to the ruling were the billions of dollars Google paid each year to companies such as Apple and to makers of web browsers so that its search engine would be the default on their devices. Those payments, the judge found, had excluded rivals from the most crucial channels by which users access a search engine.\nGoogle argued that people use its search engine because it is the best — not because they are compelled to — and that switching to a rival takes only a few taps. The court was not persuaded that defaults are so easily overridden. Most users, it noted, never alter the settings that come with their phones, which is precisely why companies are eager to pay so lavishly to control them.\nThe case reflects a broader shift. For decades, antitrust enforcement in the United States focused chiefly on whether a company's conduct inflated prices for consumers. Since search engines are free to use, that criterion made it difficult to demonstrate any harm. The newer doctrine holds that harm can manifest in other forms, such as reduced innovation or diminished choice, and that a firm can impair competition even while its product costs users nothing."
+},
+{
+"id": "r2-s8",
+"text": "In 1872, a young assistant at the British Museum named George Smith was sifting through clay tablets that had been shipped to London from the ruins of Nineveh, the ancient Assyrian capital. Smith had left school at fourteen to apprentice as a banknote engraver, but he had taught himself to read cuneiform during lunch breaks spent in the museum's galleries, and his proficiency had earned him a post there.\nOne fragmentary tablet recounted the story of a man who, warned by a god, built a colossal boat, loaded it with his family and animals, and survived a flood that annihilated the rest of humanity, after which he sent out birds to find dry land. Smith discerned at once how closely the story resembled the account of Noah in the Book of Genesis. When he unveiled his findings in London in December of that year, the prime minister, William Gladstone, was in the audience.\nThe discovery caused a sensation. A newspaper, The Daily Telegraph, financed a journey for Smith to the site of Nineveh to search for the missing pieces, and remarkably he found a fragment that filled part of the gap within about a week of starting to dig. The tablet proved to belong to a far lengthier poem — the work now known as the Epic of Gilgamesh. Smith himself did not live to see the epic widely acclaimed; he succumbed to illness in 1876 during his third expedition, still in his thirties."
+},
+{
+"id": "r3-s1",
+"text": "In 1325, a twenty-one-year-old legal scholar named Ibn Battuta left his home in Tangier to make the pilgrimage to Mecca. He anticipated an absence of perhaps a year and a half, yet he did not return, as it turned out, for nearly a quarter of a century. Following a <u>wayward</u> itinerary that took him across North Africa, through the Middle East, down the coast of East Africa, across Central Asia to India, and possibly as far as China, he traversed, by some reckonings, more than one hundred thousand kilometers — far more than Marco Polo.\nHis travels were facilitated by the immense network of Muslim societies that sprawled across much of the known world. As a trained judge, he could procure employment and hospitality almost anywhere Islamic law prevailed; in Delhi the sultan appointed him a judge, and he later held the same post in the Maldives.\nAfter he at last resettled in Morocco, its sovereign commissioned him to record his journeys, whereupon Ibn Battuta dictated his memories to a court scholar, Ibn Juzayy, who wrought them into a book conventionally known as the Rihla, or Travels. Because the account was composed from memory years after the events, historians regard some of its details with circumspection, and a few passages appear to have been borrowed from earlier writers; its panorama of the fourteenth-century world, however, is unrivaled."
+},
+{
+"id": "r3-s2",
+"text": "Japan has a housing problem that many countries would envy — too many homes. A government survey released in 2024 counted about nine million vacant houses, known as akiya, a record that constitutes nearly one in seven dwellings in the country. The figure Ⓐ<u>reflects</u> a dwindling and aging population, as well as a long-standing preference for new construction over old houses, which in Japan often lose most of their value within a few decades.\nEmpty houses are not merely a waste. Left unattended, they decay, become infested with pests, and can Ⓑ<u>collapse</u> in earthquakes or typhoons, endangering their neighbors. Because owners have long paid lower property taxes on land with a house standing on it than on vacant land, many have had little incentive to Ⓒ<u>preserve</u> derelict buildings, even when they have no intention of ever inhabiting them. Inheritance aggravates matters: houses pass to heirs who reside in distant cities and remain undecided about what to do with them.\nLocal governments have responded in diverse ways: some run online listings, known as akiya banks, that offer vacant houses for sale, sometimes for almost nothing, and furnish subsidies to young families inclined to relocate to the countryside and Ⓓ<u>renovate</u> them. Foreign buyers, drawn by stories of homes sold for the price of a used car, have added to the interest. Yet many akiya stand in remote villages with few jobs and waning services, and a house acquired for a pittance cannot by itself Ⓔ<u>reverse</u> the decline of the community around it."
+},
+{
+"id": "r3-s3",
+"text": "On 13 January 1898, the Paris newspaper L'Aurore devoted its front page to an open letter from the novelist Emile Zola to the President of France. Its headline — J'accuse — became one of the most renowned in the history of journalism. Zola <u>excoriated</u> the army officers and officials who had condemned Alfred Dreyfus, a Jewish captain convicted of passing military secrets to Germany, and who had then shielded the officer whom the evidence implicated as the real culprit.\nZola knew full well what he was jeopardizing, since by naming individuals and accusing them of deliberate injustice, he invited a prosecution for libel, and he was in fact convicted and fled to England to avoid prison. Yet the letter accomplished its objective, turning a closed military case into a national debate that polarized France for years, pitting those who placed the honor of the army above the rights of one man against those who insisted that justice could not be sacrificed to institutional pride. Dreyfus was exonerated in 1906.\nThe affair is often said to have given birth to the modern figure of the intellectual: a writer or scholar who draws on a reputation acquired in one domain to intervene in political questions. Whether that role is admirable or presumptuous has been disputed ever since."
+},
+{
+"id": "r3-s4",
+"text": "For decades, the map of international education had a familiar shape: students from Asia, Africa, and Latin America gravitated toward four English-speaking destinations — the United States, the United Kingdom, Canada, and Australia — which together hosted a large share of the world's internationally mobile students. Universities in those countries came to depend on the fees these students paid, which were often far higher than those charged to domestic students.\nThat map, however, is now being redrawn, for since 2024 Canada, the United Kingdom, and Australia have all moved to restrict numbers. Canada announced a cap on new study permits early that year, citing the strain on housing. The United Kingdom stopped most taught master's students from bringing family members with them, and Australia raised its student visa fee and sought to limit enrollments. Governments portrayed these measures as responses to housing shortages and public anxiety about migration, but universities warned that lost fees would compel them to curtail courses and staff.\nMeanwhile, other destinations have stepped forward: several countries in continental Europe now offer degree programs taught entirely in English, often at little or no tuition cost. In Asia, governments have set ambitious targets; South Korea, for instance, has proclaimed the objective of attracting three hundred thousand international students by 2027. For students, the result is a more expansive array of choices; for the traditional destinations, it is a competition that they, having dominated the field for so long, once assumed they could not lose."
+},
+{
+"id": "r3-s5",
+"text": "In 416 BCE, during the long war between Athens and Sparta, an Athenian fleet arrived at the small island of Melos, which had tried to remain neutral, and before launching an assault, the Athenian envoys conferred with the island's magistrates. The historian Thucydides, who reconstructed the exchange, presents it as a debate between two conceptions of how states ought to comport themselves.\nThe Melians appealed to justice: they had done Athens no wrong, and the gods, they hoped, would favor the side that was in the right. The Athenians, however, refused to argue on those terms, declaring that questions of justice arise only between equals in power; otherwise <u>the strong do what they can and the weak suffer what they must</u>. Submission, they added, would spare Melos from destruction, while resistance would gain it nothing.\nThe Melians, unwilling to buy their safety at such a price, refused to surrender; after a siege the city fell, and the Athenians killed the men and enslaved the women and children. Thucydides offers no comment, but he places the episode just before his account of the Athenian expedition to Sicily, the overreaching campaign that ended in catastrophe and helped bring about the city's eventual defeat. Many readers have taken the arrangement as a tacit verdict — a power that recognizes no limit but its own strength may in the end be undone by it."
+},
+{
+"id": "r3-s6",
+"text": "In 1605 Miguel de Cervantes published the first part of Don Quixote, the story of an aging gentleman who devours so many tales of chivalry that he sets out to become a knight himself. The book was an immediate success, and readers awaited its continuation avidly; before Cervantes could complete it, however, a rival forestalled him. In 1614 a sequel appeared under the name Alonso Fernandez de Avellaneda, a pseudonym whose owner has never been identified with certainty. Its preface mocked Cervantes for his age and — more cruelly — for the hand he had lost the use of in battle.\nCervantes took his revenge inside the fiction itself: in his own second part, published in 1615, the characters learn that a false history of their adventures is circulating. Don Quixote, leafing through a copy, finds it rife with errors, and because the impostor's Quixote had traveled to the jousts at Zaragoza, the real one changes his plans and goes to Barcelona instead, determined to expose the other book as a fabrication. Later he even meets a character from the rival novel and persuades him to make a formal declaration that the Quixote and Sancho he had known were frauds.\nIn this episode Cervantes does something remarkably modern, for rather than simply <u>upbraiding</u> the forger in a preface, he folds the dispute into the story, letting his characters become cognizant that they have a public life in print. The theft, in a sense, provoked one of the earliest and most whimsical experiments in fiction that reflects on its own making."
+},
+{
+"id": "r3-s7",
+"text": "On 19 July 2024, millions of computers around the world abruptly crashed and displayed the blue error screen that Windows users dread. Airlines Ⓐ<u>grounded</u> flights, hospitals postponed operations, and banks and broadcasters strove to keep running. The cause was not a cyberattack but a faulty software update from CrowdStrike — a cybersecurity company whose program runs deep inside the Windows operating system on many corporate machines. Microsoft later estimated that about 8.5 million devices had been Ⓑ<u>affected</u>.\nThe update itself was small, and the company withdrew it within about an hour and a half. Repairing the damage took far longer. Because the affected machines could not start normally, technicians often had to fix them one by one, sometimes in person, and some organizations needed days to recover fully.\nThe episode exposed a Ⓒ<u>paradox</u> of modern computing: security software is given deep access to a system precisely so that it can protect it, but that same access means a single error can propagate with alarming velocity. And because a few firms supply such software to a large share of the world's businesses, the global economy has become Ⓓ<u>resilient</u> to the mistakes of a handful of companies. Some specialists now urge organizations to test updates on a few machines before installing them everywhere and to keep backup systems that do not share the same Ⓔ<u>weaknesses</u>."
+},
+{
+"id": "r3-s8",
+"text": "Ask a reader to name a tale from The Thousand and One Nights, and the answer is likely to be Aladdin or Ali Baba. It is one of the ironies of literary history that neither story appears in any of the surviving medieval Arabic manuscripts of the collection.\nThe Nights reached Europe through the French scholar Antoine Galland, whose translation began to appear in 1704 and became a sensation almost overnight. Galland's main source was a Syrian manuscript copied centuries earlier, but it broke off long before the promised thousand and one nights were complete, and readers and publishers demanded more. In 1709 Galland met Hanna Diyab, a young Maronite Christian from Aleppo who was visiting Paris and who told him a number of stories from memory, which Galland noted down in his diary. Several, including the tales we now know as Aladdin and Ali Baba, appeared in later volumes of the translation, retold in Galland's elegant French.\nFor nearly three centuries, Diyab's part was almost forgotten, while scholars searched in vain for the Arabic originals of these orphan tales, and some manuscripts that purported to contain them turned out to be translations back into Arabic from Galland's French. Only in recent decades, through the study of the travel memoir Diyab himself wrote, has the young storyteller begun to garner credit.\nThe history of the Nights is thus a history of collaboration across languages — one in which the line between translating and creating is difficult to delineate. The most famous Arabian tales in the world may owe their shape as much to a Syrian traveler and a French scholar as to any medieval source."
+}
+],
+"q": [
+[
+1,
+1,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nReviewers dismissed the debut novel's dialogue as <u>jejune</u>, complaining that its characters exchanged flat, predictable remarks that revealed nothing about who they were.",
+[
+"laconic",
+"verbose",
+"candid",
+"vapid",
+"placid"
+],
+[
+4
+],
+"jejune 은 '무미건조한, 내용 없는'이라 vapid(김빠진, 따분한)와 가까워요. 밋밋하고 뻔한 말만 오간다는 뒤 설명이 단서예요. laconic(말수가 적은)·verbose(말이 많은)는 같은 '말투' 영역이지만 길이를 말할 뿐 내용이 없다는 뜻은 아니에요."
+],
+[
+2,
+1,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nColleagues found the new director <u>saturnine</u> and rarely cheerful; he seldom smiled in meetings and greeted even good news with a heavy sigh.",
+[
+"gloomy",
+"aloof",
+"petulant",
+"diffident",
+"sanguine"
+],
+[
+1
+],
+"saturnine 은 '음울한, 침울한'이라 gloomy 와 가까워요. 좀처럼 웃지 않고 좋은 소식에도 한숨을 쉰다는 내용이 단서예요. aloof(쌀쌀맞은)·diffident(숫기 없는)는 같은 '성격' 영역의 근접어지만 음울함을 뜻하지 않고, sanguine(낙관적인)은 반대예요."
+],
+[
+3,
+1,
+"cloze",
+null,
+"Choose the one that best completes the sentence.\nThe professor's lectures were so ____ that students who missed a single class often found themselves unable to follow the next one; each idea depended on everything that had come before.",
+[
+"cursory",
+"cumulative",
+"capricious",
+"convivial",
+"candid"
+],
+[
+2
+],
+"한 번만 빠져도 다음 강의를 따라갈 수 없고 모든 내용이 앞 내용에 기대어 쌓인다는 뒤 문장이 빈칸을 다시 풀어 말해요. '누적되는(cumulative)'이 맞아요. cursory(대충 하는)·capricious(변덕스러운)는 뒤 설명과 이어지지 않아요."
+],
+[
+4,
+1,
+"cloze",
+null,
+"Choose the one that best completes the sentence.\nThe philosopher hosted lively dinners several nights a week and sought out strangers in taverns; far from being ____, he was known throughout the city for his warm good humor.",
+[
+"misanthropic",
+"prolific",
+"dogmatic",
+"eclectic",
+"cryptic"
+],
+[
+1
+],
+"앞에서 저녁 모임을 열고 낯선 사람을 찾아다녔다고 했으니, far from(~이기는커녕) 뒤에는 그와 반대되는 '사람을 싫어하는(misanthropic)'이 와야 해요. 나머지는 사교성과 상관없는 말이에요."
+],
+[
+5,
+1,
+"cloze",
+null,
+"Choose the one that best completes the passage.\nMost of what we know about the Roman army comes from official histories that celebrate generals and battles, but the wooden writing tablets found at Vindolanda, a fort near Hadrian's Wall, tell a different story. Written around the end of the first century, they include requests for warm socks, complaints about bad roads, and an invitation to a birthday party sent from one officer's wife to another. Because they were never intended for posterity, these notes offer a ____ glimpse of the ordinary people behind the imperial legend.",
+[
+"solemn",
+"candid",
+"spurious",
+"pompous",
+"sanctimonious"
+],
+[
+2
+],
+"후세에 보이려고 쓴 글이 아니었기 때문에(Because) 꾸밈없는 모습이 드러난다는 인과라 '솔직한(candid)'이 맞아요. solemn(엄숙한)은 장군과 전투를 기리는 공식 역사 쪽이고, spurious(가짜의)는 맞지 않아요."
+],
+[
+6,
+1,
+"cloze",
+null,
+"Choose the one that best completes the sentence.\nEach side suspected that the figures the other had placed on the table were invented, and so the negotiations collapsed not over the price itself but over mutual suspicion of ____.",
+[
+"mendacity",
+"complacency",
+"extravagance",
+"arrogance",
+"hubris"
+],
+[
+1
+],
+"앞에서 서로 상대가 내놓은 숫자를 '지어낸 것'이라 의심했다고 했으니, 그 의심의 대상은 '거짓말하는 버릇(mendacity)'이에요. complacency(안일함)·arrogance(오만함)도 결점이지만 숫자를 꾸며 냈다는 의심과는 맞지 않아요."
+],
+[
+7,
+1,
+"order",
+null,
+"Choose the most logical order of the sentences Ⓐ through Ⓔ.\nⒶ Curious, he is said to have weighed the hammers and found that the harmonious pairs stood in simple ratios, such as two to one.\nⒷ The underlying discovery, however, was real: strings whose lengths stand in simple ratios do produce consonant intervals, such as the octave.\nⒸ According to an ancient legend, Pythagoras was walking past a blacksmith's workshop when he noticed that some hammer blows sounded pleasing together while others clashed.\nⒹ This insight that musical harmony could be expressed in numbers encouraged the Pythagorean belief that the whole universe was ordered by mathematics.\nⒺ Later writers pointed out that the story cannot be literally true, since hammers of different weights striking the same anvil do not behave that way.",
+[
+"Ⓒ - Ⓔ - Ⓐ - Ⓑ - Ⓓ",
+"Ⓒ - Ⓐ - Ⓑ - Ⓔ - Ⓓ",
+"Ⓒ - Ⓐ - Ⓔ - Ⓑ - Ⓓ",
+"Ⓐ - Ⓒ - Ⓔ - Ⓑ - Ⓓ",
+"Ⓒ - Ⓐ - Ⓔ - Ⓓ - Ⓑ"
+],
+[
+3
+],
+"대장간 앞을 지나던 피타고라스의 전설이 먼저, 망치 무게를 달아 봤다는(he ~ the hammers) 문장이 다음이에요. 이어 그 이야기가 사실일 수 없다는 지적, '그래도(however)' 발견 자체는 진짜였다는 문장, 그 통찰(This insight)이 수학적 우주관으로 이어졌다는 결론 순서예요."
+],
+[
+8,
+1,
+"order",
+null,
+"Choose the most logical order of the sentences Ⓐ through Ⓔ.\nⒶ They taped the insect into the log beside a dry note recording the first actual case of a bug being found.\nⒷ Engineers had used the word bug for mechanical faults since at least the time of Thomas Edison.\nⒸ That year, operators of the Harvard Mark II computer traced a malfunction to a moth trapped in one of its relays.\nⒹ The joke worked precisely because the word was already familiar, so the story shows how popular the term was rather than where it came from.\nⒺ Even so, a famous logbook entry from 1947 is often credited with giving the term its modern meaning.",
+[
+"Ⓑ - Ⓔ - Ⓐ - Ⓒ - Ⓓ",
+"Ⓑ - Ⓔ - Ⓒ - Ⓐ - Ⓓ",
+"Ⓑ - Ⓒ - Ⓔ - Ⓐ - Ⓓ",
+"Ⓔ - Ⓑ - Ⓒ - Ⓐ - Ⓓ",
+"Ⓑ - Ⓔ - Ⓒ - Ⓓ - Ⓐ"
+],
+[
+2
+],
+"에디슨 때부터 bug 를 썼다는 문장 뒤에 '그런데도(Even so)' 1947년 기록이 기원으로 꼽힌다는 문장이 와요. 그해(That year) 나방을 찾은 일, 그 벌레(the insect)를 일지에 붙인 일이 이어지고, 농담이 통한 까닭을 짚는 문장이 끝이에요."
+],
+[
+9,
+1,
+"order",
+null,
+"Choose the most logical order of the sentences Ⓐ through Ⓔ.\nⒶ Over the following centuries it took on a series of other senses, including shy and, later, precise or fussy.\nⒷ Words often drift far from their original meanings, and few have travelled as far as nice.\nⒸ Only in the eighteenth century did the word begin to acquire the warm, rather vague sense of pleasant that it carries now.\nⒹ It comes from the Latin nescius, meaning ignorant, and when it entered English in the Middle Ages it meant foolish or silly.\nⒺ A trace of that last sense survives today in phrases such as a nice distinction, meaning a fine or subtle one.",
+[
+"Ⓑ - Ⓓ - Ⓐ - Ⓒ - Ⓔ",
+"Ⓑ - Ⓐ - Ⓓ - Ⓔ - Ⓒ",
+"Ⓓ - Ⓑ - Ⓐ - Ⓔ - Ⓒ",
+"Ⓑ - Ⓓ - Ⓐ - Ⓔ - Ⓒ",
+"Ⓑ - Ⓓ - Ⓔ - Ⓐ - Ⓒ"
+],
+[
+4
+],
+"nice 를 소개하는 문장 뒤에 라틴어 어원(It comes from)이 와요. 이어 여러 뜻을 거쳐 '정확한'이 된 문장, 그 '마지막 뜻(that last sense)'이 a nice distinction 에 남았다는 문장이 붙어요. '즐거운'이라는 지금 뜻은 18세기 이야기라 맨 끝이에요. that last sense 앞에 '즐거운'이 오면 뜻풀이가 맞지 않아요."
+],
+[
+10,
+1,
+"grammar",
+null,
+"Which of the underlined parts is grammatically NOT acceptable?\nIn 1901, sponge divers working off the Greek island of Antikythera Ⓐ<u>recovered</u> a lump of corroded bronze from an ancient shipwreck. For decades the object was an enigma to scholars. Only when X-ray images Ⓑ<u>revealed</u> dozens of minuscule interlocking gears Ⓒ<u>did</u> scholars realize that the object was a calculating device. It Ⓓ<u>was used</u> to predict the positions of the sun and moon and even the dates of eclipses, and nothing of comparable complexity Ⓔ<u>is appeared</u> in the surviving record for more than a thousand years afterward.",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ",
+"Ⓔ"
+],
+[
+5
+],
+"appear 는 목적어를 받지 않는 자동사라 수동태(is appeared)로 쓸 수 없어요. appears 가 맞아요. Only when ~ did scholars realize 는 Only 가 앞에 나와 생긴 도치라 맞고, was used(쓰였다)는 기계가 쓰인 쪽이라 수동이 맞아요."
+],
+[
+11,
+1,
+"grammar",
+null,
+"Which of the underlined parts is grammatically NOT acceptable?\nWhen Samuel Johnson signed a contract to write a dictionary of English in 1746, he Ⓐ<u>boasted</u> that he would finish it in three years, but the work in fact Ⓑ<u>took</u> nearly nine. By the time it was published in 1755, Johnson Ⓒ<u>defines</u> more than forty thousand words, many of them Ⓓ<u>illustrated</u> with quotations from earlier writers. Some of his definitions were notoriously idiosyncratic, and readers still enjoy Ⓔ<u>discovering</u> the jokes he slipped into them.",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ",
+"Ⓔ"
+],
+[
+3
+],
+"By the time it was published(출간될 무렵까지)는 과거의 한 시점까지 이미 끝난 일을 말하므로 과거완료 had defined 가 되어야 해요. 현재형 defines 는 시제가 맞지 않아요. enjoy 뒤 동명사 discovering 은 맞아요."
+],
+[
+12,
+1,
+"grammar",
+null,
+"Which of the underlined parts is grammatically NOT acceptable?\nTravellers who visit Iceland in midsummer often find it hard to sleep, because the sun barely sets. The inhabitants, however, Ⓐ<u>are used to</u> the endless light, Ⓑ<u>that</u> they shut out simply by hanging thick curtains over their windows. Visitors, by contrast, cannot help Ⓒ<u>feeling</u> restless at midnight, when the sky still looks like late afternoon. Many end up Ⓓ<u>wandering</u> the streets, Ⓔ<u>surprised</u> to find cafés full of people who seem in no hurry to go home.",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ",
+"Ⓔ"
+],
+[
+2
+],
+"쉼표 뒤에서 앞 명사(the endless light)를 덧붙여 설명하는 계속적 용법에는 that 을 쓸 수 없어요. which 가 맞아요. cannot help feeling(~하지 않을 수 없다), end up wandering, surprised to find 는 틀려 보여도 맞는 꼴이에요."
+],
+[
+13,
+1,
+"grammar",
+null,
+"Which of the underlined parts is grammatically NOT acceptable?\nBartolomeo Cristofori, an instrument maker employed by Ⓐ<u>the</u> Medici family in Florence, is generally credited with building Ⓑ<u>a</u> first piano around 1700. Earlier keyboard instruments such as the harpsichord plucked their strings, so players could not make a note louder by pressing Ⓒ<u>harder</u>. Cristofori's design struck the strings with small hammers instead, Ⓓ<u>allowing</u> performers to shade every phrase. Its original Italian name, which described this ability to play both soft and loud, Ⓔ<u>was</u> later shortened to piano.",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ",
+"Ⓔ"
+],
+[
+2
+],
+"first 처럼 순서를 정하는 말 앞에는 정관사가 와요. a 가 아니라 the 가 맞아요(the first piano). 긴 꾸밈말을 지난 주어 Its original Italian name 은 단수라 was 가 맞고, pressing harder 의 harder 는 동사를 꾸미는 부사예요."
+],
+[
+14,
+1,
+"grammar",
+null,
+"Which of the underlined parts is grammatically NOT acceptable?\nNew Caledonian crows are among the few animals that make tools rather than simply use them; in the wild, they Ⓐ<u>carefully</u> strip leaves from twigs and shape the ends into hooks Ⓑ<u>that</u> can draw insect larvae out of holes in dead wood. In laboratory tests, some birds have solved puzzles Ⓒ<u>requiring</u> several steps in a fixed order. Researchers say the crows plan their actions Ⓓ<u>remarkable</u> well, Ⓔ<u>suggesting</u> abilities once thought unique to primates.",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ",
+"Ⓔ"
+],
+[
+4
+],
+"well 이라는 부사를 꾸미는 말도 부사여야 해서 remarkably well 이 맞아요. 형용사 remarkable 은 틀려요. puzzles requiring(~을 필요로 하는 퍼즐)은 능동 분사라 맞아요."
+],
+[
+15,
+1,
+"grammar",
+null,
+"Which of the underlined parts is grammatically NOT acceptable?\nIn 1915 the ship Endurance, Ⓐ<u>trapped</u> in the pack ice of the Weddell Sea, was slowly crushed and sank. Astonishingly, not one of the men aboard Ⓑ<u>was</u> lost during the long ordeal that followed, and their survival Ⓒ<u>depended</u> on a perilous voyage in a small open boat across hundreds of miles of stormy ocean. The wreck itself Ⓓ<u>were</u> finally located in 2022, lying about three thousand meters below the surface and Ⓔ<u>remarkably</u> well preserved.",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ",
+"Ⓔ"
+],
+[
+4
+],
+"주어 The wreck itself 는 단수라 동사는 was 가 맞아요. were 는 수 일치가 틀려요. not one of the men 도 '한 명'이 중심이라 was 가 맞고, trapped 는 배가 '갇힌' 것이라 수동 분사가 맞아요."
+],
+[
+16,
+1,
+"restate",
+null,
+"Choose the one that best restates the underlined part.\n<u>Not until the last guests had left did the host allow himself to sit down</u>, and even then he spent the rest of the evening worrying about the leftover food.",
+[
+"The host sat down only after the last guests had left.",
+"The host sat down only after the first guests had left.",
+"The host stood up only after the last guests had left.",
+"The host never sat down, even after the guests had left.",
+"The guests refused to leave until the host had sat down."
+],
+[
+1
+],
+"Not until A did B 는 'A 하고 나서야 비로소 B 했다'라는 뜻이에요. 마지막 손님이 떠난 뒤에야 앉았다는 것이니 only after 로 바꾼 문장이 같아요. '첫 손님'으로 바꾸거나 '일어섰다'로 바꾼 문장은 한 곳만 달라 보여도 뜻이 달라져요. even then 이 나오니 결국 앉기는 했어요."
+],
+[
+17,
+1,
+"reading",
+"r1-s1",
+"What is the passage mainly about?",
+[
+"cybersecurity",
+"censorship",
+"surveillance",
+"espionage",
+"automation"
+],
+[
+3
+],
+"얼굴인식으로 누구나 어디서든 식별되는 세상, 그 오류와 익명성의 소멸, 각국의 제한을 다룬 글이라 주제는 '감시(surveillance)'예요. cybersecurity(정보 보안)·espionage(첩보)는 같은 분야의 근접 개념이지만 글의 중심이 아니에요."
+],
+[
+18,
+1,
+"reading",
+"r1-s1",
+"Which of the following best fills in blanks (A), (B), and (C)?",
+[
+"obsolete — accidental — erodes",
+"universal — systematic — flourishes",
+"obsolete — systematic — strengthens",
+"indisputable — accidental — endures",
+"obsolete — systematic — erodes"
+],
+[
+5
+],
+"(A) 뒤 문장들이 '예전엔 사람이 알아봐야 했지만 이제 소프트웨어가 그 한계를 없앴다'고 풀어 주니, 그 안심은 '낡아 가는(obsolete)' 가정이에요. (B) 바로 앞 문장의 '특정 집단에서 훨씬 자주 틀린다'를 다시 받아 무작위가 아니라 '체계적인(systematic)' 오류예요. (C) 첫 단락에서 예전엔 이름을 알려면 사람이 알아봐야 했다고 한 것과 대비해, 누구나 식별되는 사회에서는 익명성이 '서서히 깎여 나간다(erodes)'는 말이에요."
+],
+[
+19,
+1,
+"reading",
+"r1-s2",
+"Which of the following best fills in blanks (A), (B), and (C)?",
+[
+"inconsolable — negligible — unimportant",
+"serene — devastating — paramount",
+"inconsolable — devastating — paramount",
+"serene — negligible — paramount",
+"inconsolable — devastating — unimportant"
+],
+[
+5
+],
+"(A) 바로 뒤 문장이 '몹시 한탄하고 왜 의인이 고통받는지 이해하지 못한다'고 구체화하니 '위로할 길 없는(inconsolable)'이에요. (B) 앞에서 운명이 준 것은 애초에 그의 것이 아니었다고 했으니, 잃은 것도 보이는 것만큼 '치명적(devastating)'이지 않아요. (C) 앞 단락에서 참된 선은 빼앗길 수 없는 마음에 있다고 했으니, 바깥 운은 '중요하지 않다(unimportant)'는 주장이에요."
+],
+[
+20,
+1,
+"reading",
+"r1-s2",
+"With which of the following statements would Philosophy, as presented in the passage, most likely agree?",
+[
+"Boethius was right to blame heaven for his suffering.",
+"Wealth and honors rightly belong to those who have earned them.",
+"Strong remedies should be applied to despair before gentle ones.",
+"A person's real good depends on the state of the mind, not on possessions.",
+"Studying the stars and the planets is the surest route to lasting peace of mind."
+],
+[
+4
+],
+"철학의 여신은 참된 선이 누구도 빼앗을 수 없는 마음, 곧 지혜와 덕으로 향한 정신에 있다고 했어요. 재산보다 마음 상태가 중요하다는 문장에 동의할 거예요. 한탄을 탓하고 재물은 그의 것이 아니었다고 했으니 하늘 탓·재물 소유는 반대이고, 처방 순서는 뒤집혔으며, 별 공부 이야기는 글에 없어요."
+],
+[
+21,
+1,
+"reading",
+"r1-s3",
+"According to the passage, the survivors' long detention was chiefly the result of Joseon's ____.",
+[
+"mercantilism",
+"colonialism",
+"isolationism",
+"militarism",
+"feudalism"
+],
+[
+3
+],
+"조선이 당시 외국인을 거의 들이지 않아 생존자들이 떠날 수 없었다고 했으니, 억류의 원인은 '쇄국(isolationism)'이에요. mercantilism(중상주의)·colonialism(식민주의)은 같은 정치·경제 분야의 근접 개념이지만 글의 근거와 맞지 않아요."
+],
+[
+22,
+1,
+"reading",
+"r1-s3",
+"Which of the following CANNOT be inferred from the passage?",
+[
+"More than a third of the Sperwer's crew did not survive the wreck.",
+"Joseon at the time strictly limited contact with foreigners.",
+"Hamel's mistaken judgments can themselves be useful to historians.",
+"Not all of the survivors escaped from Korea together with Hamel.",
+"Hamel stayed in the capital for the whole of his time in Joseon."
+],
+[
+5
+],
+"생존자들은 수도로 갔다가 나중에 지방 고을로 흩어졌다고 했어요. 내내 수도에 머물렀다는 말은 끌어낼 수 없어요. 64명 가운데 36명만 살아남았으니 3분의 1 넘게 잃었고, 함께 탈출한 사람은 하멜을 포함해 여덟 명뿐이었어요."
+],
+[
+23,
+1,
+"reading",
+"r1-s4",
+"Which paragraph does NOT contribute to the main argument of the passage?",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)",
+"(E)"
+],
+[
+3
+],
+"글은 '불확실함을 견디는 힘'이라는 개념을 소개하고(A), 셰익스피어 예(B), 다른 분야로 퍼진 쓰임(D), 공통점(E)으로 이어져요. 키츠가 의학을 그만둔 이력(C)은 이 주장에 보탬이 되지 않는 배경 단락이에요."
+],
+[
+24,
+1,
+"reading",
+"r1-s4",
+"Which of the following can be inferred from the passage?",
+[
+"Keats believed that Shakespeare's plays lacked moral seriousness because they never judged their characters.",
+"Negative capability means refusing to think about difficult problems until they resolve themselves.",
+"Keats prized tolerating open questions over supplying quick answers.",
+"Psychoanalysts were the first to use the phrase negative capability, long before Keats did.",
+"Keats regarded medicine as a more respectable career than poetry and later returned to it."
+],
+[
+3
+],
+"키츠는 질문을 열어 두지 못하고 서둘러 답을 내는 작가를 '못한 작가'라 했고, 끝 단락은 확실성을 서두르지 않는 태도로 정리해요. 열린 질문을 견디는 힘을 더 높이 쳤다는 것을 끌어낼 수 있어요. 끝 단락은 이 개념이 생각을 거부하는 것이 아니라고 했고, 말을 만든 사람은 키츠예요. 셰익스피어가 판단을 내리지 않은 것을 '도덕적 진지함이 없다'로 비튼 문장과 의학으로 돌아갔다는 문장은 근거가 없어요."
+],
+[
+25,
+1,
+"reading",
+"r1-s5",
+"Which of the following best describes the tone of the passage?",
+[
+"sardonic",
+"earnest",
+"nostalgic",
+"detached",
+"alarmist"
+],
+[
+2
+],
+"글쓴이는 약속을 진지하게 옹호하면서도 증거가 아직 확실하지 않다고 인정하고 기술 금지도 아니라고 선을 그어요. 어조는 '진지한(earnest)'이에요. 향수 때문이 아니라고 직접 밝혔고(nostalgic 아님), 공포를 부추기지도(alarmist 아님) 거리를 두지도(detached 아님) 않아요."
+],
+[
+26,
+1,
+"reading",
+"r1-s5",
+"Who is most likely the author of the passage?",
+[
+"pediatrician",
+"legislator",
+"researcher",
+"parent",
+"teacher"
+],
+[
+4
+],
+"'우리 딸 반 학부모 열두 명'과 함께 약속에 서명했다고 1인칭으로 쓴 글이라 글쓴이는 '학부모(parent)'예요. 증거가 정리되지 않았다고 했으니 연구자가 아니고, 법으로 막자는 말도 없으며, 학교 체육관은 모인 장소일 뿐이에요."
+],
+[
+27,
+1,
+"reading",
+"r1-s6",
+"Which of the following best fills in blanks (A), (B), and (C)?",
+[
+"casual — resolve — staged",
+"casual — dissolve — accidental",
+"patient — resolve — accidental",
+"patient — dissolve — staged",
+"casual — fade — random"
+],
+[
+1
+],
+"(A) 글 전체가 정면에서 보면 해골을 놓치고 옆으로 가서야 보인다고 하니, 이 그림이 무너뜨리는 것은 '대충 보는(casual)' 눈길이에요. (B) 앞에서 처음엔 얼룩이나 뼈처럼 보인다고 했으니 비스듬히 보면 해골로 '또렷해진다(resolve into)'예요. (C) 뒤의 콜론 설명처럼 돌아설 때에야 한계를 깨닫게 짰다면 그 효과는 치밀하게 '연출된(staged)' 것이에요."
+],
+[
+28,
+1,
+"reading",
+"r1-s6",
+"Which of the following can be inferred from the passage?",
+[
+"The full meaning of the painting depends partly on where exactly the viewer stands.",
+"Holbein added the skull by accident while correcting an error.",
+"The objects on the shelves were meant to mock learning as worthless.",
+"The skull is clearly visible to anyone standing in front of the painting.",
+"Holbein painted several other works using the same distorting technique."
+],
+[
+1
+],
+"해골은 옆에서 비스듬히 볼 때만 드러나고, 그래야 지식과 부 뒤의 죽음이라는 뜻이 완성돼요. 보는 자리에 따라 그림의 뜻이 달라진다는 추론이 맞아요. 우연이었다거나 정면에서 잘 보인다는 것은 반대이고, 책과 도구는 지식을 기린다고 했으니 '쓸모없다고 조롱'은 비튼 말이며, 다른 작품 이야기는 글에 없어요."
+],
+[
+29,
+1,
+"reading",
+"r1-s7",
+"According to the speaker, the vault is best understood as a form of ____.",
+[
+"monument",
+"museum",
+"laboratory",
+"fortress",
+"insurance"
+],
+[
+5
+],
+"연사는 저장고가 재앙의 기념물이 아니라 평범한 백업이며, 끝 문장처럼 '언젠가 누군가 필요할 때를 대비해' 두는 것이라 했어요. 그 성격을 한 낱말로 끌어올리면 '보험(insurance)'이에요. monument(기념물)는 연사가 직접 부정한 말이에요."
+],
+[
+30,
+1,
+"reading",
+"r1-s7",
+"What kind of text is the passage most likely taken from?",
+[
+"editorial",
+"report",
+"memoir",
+"brochure",
+"speech"
+],
+[
+5
+],
+"청중에게 질문을 던지며 시작하고, '제 일 이야기를 하기 전에'라고 말을 꺼낸 뒤, 곧 농업·과학 분야로 나갈 '여러분'에게 교훈을 건네며 끝나요. 학생들 앞에서 한 '연설(speech)'이에요. 온도 같은 사실은 이야기의 배경일 뿐이라 보고서(report)가 아니에요."
+],
+[
+1,
+2,
+"cloze",
+null,
+"Choose the one that best completes the sentence.\nAlthough the treaty was hailed as a breakthrough, its key provisions were so ____ that each government could later interpret them in whatever way suited its own interests.",
+[
+"assiduous",
+"spurious",
+"sumptuous",
+"ingenuous",
+"ambiguous"
+],
+[
+5
+],
+"나라마다 제 편한 대로 해석할 수 있었다면 조항이 '여러 뜻으로 읽히는, 모호한(ambiguous)' 것이었다는 말이에요. 같은 어미 -ous 묶음 가운데 spurious(가짜의)·assiduous(부지런한)·sumptuous(호화로운)는 조항의 해석 문제와 이어지지 않아요."
+],
+[
+2,
+2,
+"cloze",
+null,
+"Choose the one that best completes the sentence.\nMany listeners found the senator's apology ____; he expressed regret for any offense that might have been taken but never admitted that he had done anything wrong.",
+[
+"belligerent",
+"fortuitous",
+"superfluous",
+"clandestine",
+"disingenuous"
+],
+[
+5
+],
+"'불쾌했다면 유감'이라고만 하고 잘못은 끝내 인정하지 않았으니 겉과 속이 다른 '진심 없는(disingenuous)' 사과예요. belligerent(호전적인)·fortuitous(우연한)·clandestine(은밀한)은 사과의 진정성과 상관이 없어요."
+],
+[
+3,
+2,
+"cloze",
+null,
+"Choose the one that best completes the sentence.\nRather than ____ her opponents' arguments, the young lawyer took the time to restate them fairly and completely, which made her eventual rebuttal all the more persuasive.",
+[
+"dispense",
+"dissipate",
+"disparage",
+"dislodge",
+"disinherit"
+],
+[
+3
+],
+"Rather than 뒤에는 '공정하게 다시 정리했다'와 반대되는 태도가 와야 해요. 상대 주장을 '깎아내리다(disparage)'가 맞아요. dispense(나눠 주다)·dissipate(흩뜨리다)는 논증과 어울리지 않아요."
+],
+[
+4,
+2,
+"cloze",
+null,
+"Choose the one that best completes the passage.\nFor most of the nineteenth century, physicians who suggested that doctors themselves might be disseminating disease were met with hostility. When Ignaz Semmelweis showed in the 1840s that handwashing sharply reduced deaths among women who had just given birth, many of his colleagues found the implication insulting rather than ____. His ideas won acceptance only after later scientists explained how microscopic germs could pass from a doctor's hand to a patient.",
+[
+"defamatory",
+"perfunctory",
+"salutary",
+"superfluous",
+"ambivalent"
+],
+[
+3
+],
+"insulting rather than 은 '이롭기보다 모욕적으로' 받아들였다는 대비라 빈칸에는 '유익한(salutary)'이 와요. defamatory(명예를 훼손하는)는 insulting 과 같은 쪽이라 대비가 되지 않아요."
+],
+[
+5,
+2,
+"grammar",
+null,
+"Which of the underlined parts is grammatically NOT acceptable?\nIn September 1940, four adolescents exploring the hills near Montignac in southwestern France Ⓐ<u>came across</u> a narrow opening in the ground. The cave Ⓑ<u>which</u> they crawled led to chambers adorned with hundreds of painted animals, some Ⓒ<u>dating back</u> about seventeen thousand years. The site opened to the public after the war, but the breath of so many visitors Ⓓ<u>damaged</u> the paintings so badly that it was closed in 1963. Today tourists see an exact replica Ⓔ<u>built</u> nearby.",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ",
+"Ⓔ"
+],
+[
+2
+],
+"crawl 은 자동사라 '그 안으로 기어 들어간 동굴'은 into which 가 되어야 해요. which 만 쓰면 crawl 의 목적어처럼 되어 틀려요. some dating back 은 '일부는 ~로 거슬러 올라가는'이라는 분사구라 맞아요."
+],
+[
+6,
+2,
+"grammar",
+null,
+"Which of the underlined parts is grammatically NOT acceptable?\nThe idea that a single taste can evoke a flood of memories Ⓐ<u>is</u> often linked to Marcel Proust. In the opening volume of his great novel, the narrator, Ⓑ<u>dipping</u> a small cake into a cup of tea, Ⓒ<u>suddenly recalling</u> the Sunday mornings of his childhood. Psychologists Ⓓ<u>who study</u> memory have since found that smells and tastes tend to elicit older and more emotional memories than pictures do, a finding Ⓔ<u>that</u> would hardly have astonished the novelist.",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ",
+"Ⓔ"
+],
+[
+3
+],
+"주어 the narrator 로 시작하는 문장에는 그 뒤에 본동사가 없어요. dipping ~ 은 삽입된 분사구이니 recalling 이 아니라 recalls 가 본동사가 되어야 해요. 첫 문장 주어 The idea 는 단수라 is 가 맞아요."
+],
+[
+7,
+2,
+"grammar",
+null,
+"Which of the underlined parts is grammatically NOT acceptable?\nWeary commuters on the London Underground are often greeted by poems Ⓐ<u>displayed</u> among the advertisements in the carriages. The scheme, Ⓑ<u>launched</u> in 1986, was meant to give passengers something Ⓒ<u>to read</u> other than notices about delays. Many riders say they find the short verses surprisingly Ⓓ<u>moved</u>, and some poems have become so popular that they Ⓔ<u>have been reprinted</u> in best-selling anthologies.",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ",
+"Ⓔ"
+],
+[
+4
+],
+"find + 목적어 + 보어에서 시가 사람을 '감동시키는' 것이니 현재분사 moving 이 맞아요. moved 는 사람이 감동받았을 때 써요. poems displayed(전시된 시), something to read(읽을거리)는 맞는 꼴이에요."
+],
+[
+8,
+2,
+"order",
+null,
+"Choose the most logical order of the sentences Ⓐ through Ⓔ.\nⒶ At the same moment in Alexandria, however, a vertical stick cast a short shadow, showing that the sun's rays struck at an angle of about seven degrees.\nⒷ Multiplying the distance between the cities by fifty gave him a figure remarkably close to the modern value.\nⒸ He had heard that at noon on the summer solstice, the sun shone straight down a well in the southern city of Syene, casting no shadow.\nⒹ Around 240 BCE, the scholar Eratosthenes, who presided over the great library of Alexandria, set out to measure the size of the earth.\nⒺ Since seven degrees is roughly one-fiftieth of a full circle, he reasoned that the distance between the two cities must be one-fiftieth of the earth's circumference.",
+[
+"Ⓓ - Ⓐ - Ⓒ - Ⓔ - Ⓑ",
+"Ⓓ - Ⓒ - Ⓐ - Ⓔ - Ⓑ",
+"Ⓓ - Ⓒ - Ⓔ - Ⓐ - Ⓑ",
+"Ⓒ - Ⓓ - Ⓐ - Ⓔ - Ⓑ",
+"Ⓓ - Ⓒ - Ⓐ - Ⓑ - Ⓔ"
+],
+[
+2
+],
+"에라토스테네스를 소개하는 문장이 먼저, 시에네 우물 이야기(He had heard)가 다음이에요. '같은 시각 알렉산드리아에서는(At the same moment)'이 그 뒤에 와야 대비가 되고, 7도가 원의 50분의 1이라는 추론, 50을 곱한 계산 순서예요. seven degrees 는 그림자 문장에서 처음 나와요."
+],
+[
+9,
+2,
+"reading",
+"r2-s1",
+"Which of the following is the most appropriate title for the passage?",
+[
+"Proving That We Are Awake: Zhuangzi's Answer to Descartes",
+"Butterflies as Symbols in Classical Chinese Painting",
+"The Science of Dreaming in Ancient China",
+"Why Philosophers Should Never Trust Their Senses",
+"A Dream Without Alarm: Zhuangzi and the Fluid Self"
+],
+[
+5
+],
+"장자는 꿈과 깸을 가리지 못해도 괴로워하지 않고, 자아가 이 꼴에서 저 꼴로 흘러간다는 데서 교훈을 찾아요. '놀라지 않는 꿈'과 '흐르는 자아'를 담은 제목이 맞아요. 장자는 깨어 있음을 증명하려 하지 않았다고 했어요."
+],
+[
+10,
+2,
+"reading",
+"r2-s1",
+"What does the underlined phrase most likely refer to?",
+[
+"the biological process by which a caterpillar slowly turns into a butterfly",
+"the moment of waking up from a vivid dream",
+"a logical method for proving that one is awake",
+"the passing of a being from one form of existence into another",
+"the regular change of the seasons in nature"
+],
+[
+4
+],
+"밑줄은 장자와 나비 사이를 오가는 일, 곧 한 존재가 다른 꼴로 바뀌어 가는 것을 가리켜요. 뒤 단락의 '자아가 한 꼴에서 다른 꼴로 흐른다'가 같은 뜻이에요. 애벌레가 나비가 되는 생물 변태는 낱말만 보고 고르기 쉬운 함정이에요."
+],
+[
+11,
+2,
+"reading",
+"r2-s2",
+"Which of the following best fills in the blank?",
+[
+"deliberate",
+"impulsive",
+"lavish",
+"nostalgic",
+"monopolistic"
+],
+[
+1
+],
+"빈칸 뒤 '매달 결제를 습관이 아니라 결정으로 여긴다'가 풀이예요. 한 달만 가입했다 끊는 소비자처럼 따져 보고 고르는 '신중한(deliberate)' 단계예요. impulsive(충동적인)는 정반대예요."
+],
+[
+12,
+2,
+"reading",
+"r2-s2",
+"Which of the following is NOT true according to the passage?",
+[
+"Some car makers have offered features on a subscription basis.",
+"Many households spend more money on their subscriptions than they actually realize.",
+"Some viewers repeatedly cancel and rejoin streaming services.",
+"The 2024 rule required that cancelling be made harder than signing up.",
+"Streaming services have introduced plans that include advertisements."
+],
+[
+4
+],
+"2024년 규칙은 해지를 가입만큼 '쉽게' 하라는 것이었어요. 더 어렵게 했다는 문장이 글과 맞지 않아요. 열선 시트 구독, 지출을 낮춰 짐작하는 가구, 한 달만 보고 끊는 시청자, 광고 요금제는 모두 글에 있어요."
+],
+[
+13,
+2,
+"reading",
+"r2-s2",
+"Which of the following can be inferred from the passage?",
+[
+"Investors have lost all interest in subscription businesses of every kind.",
+"Some companies profit from customers who find cancelling too troublesome.",
+"Congress has repealed the 2024 rule on cancelling subscriptions.",
+"Advertising has disappeared from the plans offered by streaming services.",
+"Cancelling a subscription is generally as easy as signing up for one."
+],
+[
+2
+],
+"해지 버튼을 숨기는 설계(dark patterns)를 쓰는 것은 귀찮아서 해지하지 못하는 고객에게서 돈을 버는 셈이라는 추론이 맞아요. 광고는 오히려 돌아왔고 해지는 숨겨져 있다고 했으니 반대이고, 의회 폐지 이야기는 글에 없으며, '모든 관심을 잃었다'는 지나친 말이에요."
+],
+[
+14,
+2,
+"reading",
+"r2-s3",
+"Which of the following is the most appropriate title for the passage?",
+[
+"Rashomon: How Kurosawa Proved That Objective Truth Does Not Exist",
+"Venice 1951: The Festival That Changed Film Prizes",
+"Crime and Punishment in Medieval Japanese Forests",
+"New Rules for Questioning Witnesses in Court",
+"The Rashomon Effect: Sincere Witnesses, Conflicting Accounts"
+],
+[
+5
+],
+"영화와 그 이름에서 나온 '라쇼몽 효과', 곧 진심이지만 서로 어긋나는 증언을 다룬 글이에요. 글은 진실이 없다는 뜻으로 쓰는 것을 '잘못 쓰는 것'이라 했으니 '진실이 없음을 증명했다'는 제목은 반대예요."
+],
+[
+15,
+2,
+"reading",
+"r2-s3",
+"Which of the underlined words is NOT appropriate in the context?",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ",
+"Ⓔ"
+],
+[
+5
+],
+"관객이 불확실함을 머리로만 아는 게 아니라 '느끼며' 나가게 했다는 문장이니, 그 어려움을 '생생하게(vivid)' 만들었다고 해야 해요. trivial(사소한)은 흐름과 반대예요."
+],
+[
+16,
+2,
+"reading",
+"r2-s3",
+"Which of the following can be inferred from the passage?",
+[
+"Kurosawa meant the film to reveal clearly which of the witnesses told the truth.",
+"Kurosawa later remade the film with a different ending for Western audiences.",
+"Every witness in the film deliberately lies in order to protect someone else.",
+"The author objects to using the term to claim that no account is truer than another.",
+"The Rashomon effect describes witnesses who give false accounts on purpose."
+],
+[
+4
+],
+"글쓴이는 이 말이 '모든 증언이 똑같이 타당하다'는 뜻이 아니라며 잘못된 쓰임을 바로잡아요. '어느 증언도 다른 증언보다 더 참일 수 없다'는 주장에 이 말을 쓰는 데 반대한다는 추론이 맞아요. 영화는 진실을 밝히지 않고 증언은 '진심'이라 했으니 반대이고, 다시 찍었다는 이야기는 없으며, '모든 증인이 일부러 거짓말'은 비튼 말이에요."
+],
+[
+17,
+2,
+"reading",
+"r2-s4",
+"Which of the following best expresses the main idea of the passage?",
+[
+"Pascal proved the existence of God by means of probability theory.",
+"Pascal held that anyone can adopt a belief instantly by an act of will.",
+"Critics have unanimously accepted Pascal's argument as sound.",
+"Decision theorists invented the wager in order to study environmental policy.",
+"Pascal argued that, since reason cannot settle the question, belief in God is the wiser bet given the possible outcomes."
+],
+[
+5
+],
+"이성으로는 신의 존재를 가릴 수 없으니 얻고 잃을 것을 따져 믿는 쪽에 거는 것이 낫다는 파스칼의 논증이 글의 중심이에요. 글은 이 논증이 신의 존재를 '증명'하려는 것이 아니라고 분명히 했어요."
+],
+[
+18,
+2,
+"reading",
+"r2-s4",
+"Which of the following best fills in the blank?",
+[
+"prudent",
+"popular",
+"irrational",
+"effortless",
+"final"
+],
+[
+1
+],
+"증명이 아니라, 결과를 따져 볼 때 믿음이 '현명한(prudent)' 선택임을 보이려는 논증이라는 말이에요. 앞 문장의 rational gambler 가 단서이고, irrational 은 정반대예요."
+],
+[
+19,
+2,
+"reading",
+"r2-s4",
+"Which of the following CANNOT be inferred from the passage?",
+[
+"Pascal thought that refusing to choose was a way to avoid the bet altogether.",
+"Pascal regarded the possible reward of belief as far greater than its finite cost.",
+"Some critics question whether belief can be chosen deliberately.",
+"The variety of religions creates a difficulty for Pascal's argument.",
+"The structure of the wager has been applied outside religion."
+],
+[
+1
+],
+"파스칼은 고르지 않는 것도 '신이 없는 듯 사는 선택'이라 내기를 피할 수 없다고 했어요. 고르지 않으면 내기를 피할 수 있다고 생각했다는 말은 끌어낼 수 없어요. 나머지는 글에서 읽혀요."
+],
+[
+20,
+2,
+"reading",
+"r2-s5",
+"Which of the following is the most appropriate title for the passage?",
+[
+"How the Pandemic Brought a Sudden and Lasting End to Remote Work Everywhere",
+"Estonia's Plan to Become a Tourist Paradise",
+"Why Remote Workers Never Pay Any Taxes",
+"Working From Anywhere: The Promise and Strain of Digital Nomad Visas",
+"The Hidden Dangers of Bali's Beaches"
+],
+[
+4
+],
+"원격 근무자를 위한 비자가 퍼진 과정(기대)과 집세·세금 문제(부담)를 함께 다룬 글이라 '약속과 긴장'을 담은 제목이 맞아요. 팬데믹은 원격 근무를 오히려 흔하게 만들었다고 했어요."
+],
+[
+21,
+2,
+"reading",
+"r2-s5",
+"Which of the following is true according to the passage?",
+[
+"Holders of such visas usually must prove a regular income earned locally.",
+"Holders of such visas rarely need to prove a regular income earned abroad.",
+"Japan was the first country to introduce a digital nomad visa.",
+"Holders of such visas usually must prove a regular income earned abroad.",
+"Residents of Lisbon have welcomed the rise in local rents."
+],
+[
+4
+],
+"보통 해외에서 일정 기준 넘는 꾸준한 소득을 보여야 머물 수 있다고 했어요. '현지에서 번 소득'이나 '증명할 필요가 거의 없다'로 한 곳만 바꾼 문장은 글과 달라요. 가장 먼저 연 곳은 에스토니아(2020)이고, 리스본 주민은 집세 상승에 불만이라고 했어요."
+],
+[
+22,
+2,
+"reading",
+"r2-s5",
+"What would most likely follow the passage?",
+[
+"a discussion of possible changes to digital nomad visa rules",
+"a detailed history of tourist visas in the nineteenth century",
+"practical advice on choosing a beach in Bali",
+"a description of Estonia's medieval architecture",
+"an argument that all remote work should be banned"
+],
+[
+1
+],
+"마지막 문장은 서둘러 만든 규칙을 '다시 써야 하는지'라는 물음으로 끝나요. 이어서 규칙을 어떻게 바꿀 수 있는지 다룰 가능성이 가장 커요."
+],
+[
+23,
+2,
+"reading",
+"r2-s6",
+"Which pair of words best fills in blanks (A) and (B)?",
+[
+"(A) portable — (B) ornate",
+"(A) portable — (B) consistent",
+"(A) cumbersome — (B) consistent",
+"(A) expensive — (B) cluttered",
+"(A) illustrated — (B) decorative"
+],
+[
+2
+],
+"(A) 안장 가방이나 주머니에 넣어 여행·정원에 들고 갈 수 있었으니 '들고 다닐 수 있는(portable)' 판이에요. (B) 어지러운 필사본 부호와 대비되는 더 깔끔하고 '일관된(consistent)' 구두점이에요. ornate(화려한)는 cleaner 와 맞지 않아요."
+],
+[
+24,
+2,
+"reading",
+"r2-s6",
+"Which of the following is NOT true according to the passage?",
+[
+"Aldus printed the first editions of several Greek authors.",
+"The 1501 Virgil was smaller than most books of its time.",
+"Aldus himself designed the typeface that became italic.",
+"The semicolon appeared in a book printed by Aldus in 1496.",
+"Aldus employed Greek scholars as editors."
+],
+[
+3
+],
+"기울어진 글자체를 만든 사람은 활자공 프란체스코 그리포라고 했어요. 알두스가 직접 디자인했다는 문장이 글과 맞지 않아요. 나머지는 모두 글에 그대로 있어요."
+],
+[
+25,
+2,
+"reading",
+"r2-s6",
+"Which of the following can be inferred from the passage?",
+[
+"Aldus cared more about the appearance of books than about preserving texts.",
+"Successful conventions in printing tend to become invisible to readers.",
+"Italic type was first designed for printing Greek texts.",
+"Aldus's small editions were meant to stay on a desk or a lectern.",
+"Aldus's press closed before it could print any work by Plato."
+],
+[
+2
+],
+"글쓴이는 독자가 이런 관례를 알아채지 못하고 당연하게 여기는 것이 그 영향력의 증거라고 했어요. 성공한 관례는 눈에 띄지 않게 된다는 추론이 맞아요. 작은 판은 들고 다니려고 만들었고 플라톤도 찍었다고 했으니 반대이고, 이탤릭이 그리스어용이었다는 말은 없으며, 책 모양을 더 중시했다는 것은 첫 목표(고전 보존)를 비튼 말이에요."
+],
+[
+26,
+2,
+"reading",
+"r2-s7",
+"Which of the following is the most appropriate title for the passage?",
+[
+"How Google Won Its Long Legal Battle With American Regulators",
+"The Falling Price of Online Search",
+"Paying to Be the Default: The Antitrust Case Against Google",
+"Why Users Love Changing Their Phone Settings",
+"Apple's Plan to Build Its Own Search Engine"
+],
+[
+3
+],
+"판결의 핵심은 구글이 기본 검색 엔진 자리를 돈 주고 사서 경쟁을 막았다는 점이에요. '기본값이 되려고 돈을 낸 일'을 담은 제목이 맞아요. 구글은 이 재판에서 졌어요."
+],
+[
+27,
+2,
+"reading",
+"r2-s7",
+"Which of the following is true according to the passage?",
+[
+"Google argued that users choose its search engine on its merits.",
+"Google argued that users choose its search engine because of defaults.",
+"Google argued that users rarely choose its search engine on its merits.",
+"The case was brought by a group of rival search companies.",
+"The judge found that users frequently change their default settings."
+],
+[
+1
+],
+"구글은 사람들이 강요 때문이 아니라 가장 좋아서 쓴다고 주장했어요. '기본값 때문에' 또는 '좀처럼 ~하지 않는다'로 한 곳만 바꾼 문장은 구글의 주장과 반대예요. 소송은 법무부와 여러 주가 냈고, 법원은 대부분 사용자가 설정을 바꾸지 않는다고 봤어요."
+],
+[
+28,
+2,
+"reading",
+"r2-s7",
+"Which of the following can be inferred from the passage?",
+[
+"The court ordered Google to sell its search business immediately.",
+"The older test struggled to capture harm from free services.",
+"Apple paid Google to place Apple's search engine on its devices.",
+"Antitrust enforcers have always focused on innovation rather than prices.",
+"Default settings have little value to technology companies."
+],
+[
+2
+],
+"예전 기준은 가격이 올랐는지를 봤는데 검색은 공짜라 피해를 보이기 어려웠다고 했어요. 그 추론이 맞아요. 매각 명령은 글에 없고, 돈을 낸 쪽은 애플이 아니라 구글이라 비튼 말이며, 집행은 오랫동안 가격에 집중했고 기본값은 돈을 낼 만큼 값지다고 했으니 반대예요."
+],
+[
+29,
+2,
+"reading",
+"r2-s8",
+"According to the passage, why did Smith's tablet cause a sensation?",
+[
+"It proved that the Bible had been copied from Assyrian sources.",
+"It was the first cuneiform tablet ever to be deciphered.",
+"It described a flood strikingly similar to the one in the Book of Genesis.",
+"It revealed the location of an Assyrian king's tomb.",
+"It was written in a language that no one could read."
+],
+[
+3
+],
+"신의 경고를 받고 배를 지어 가족과 동물을 태우고 홍수에서 살아남아 새를 날려 보낸 이야기가 창세기 노아 이야기와 아주 닮았다고 했어요. 성경이 그것을 베꼈다고 '증명'했다는 말은 없고, 스미스는 쐐기 문자를 읽을 줄 알았어요."
+],
+[
+30,
+2,
+"reading",
+"r2-s8",
+"Which of the following can be inferred from the passage?",
+[
+"Smith's lack of formal education did not prevent him from making a major discovery.",
+"Smith found the missing fragment in London without ever travelling to Nineveh.",
+"The Daily Telegraph opposed any further excavation at the site of Nineveh.",
+"The Epic of Gilgamesh was composed long after the Book of Genesis.",
+"Every tablet that reached London from Nineveh described the great flood."
+],
+[
+1
+],
+"열네 살에 학교를 그만두고 독학으로 쐐기 문자를 익혀 큰 발견을 했으니, 정규 교육이 없어도 큰 업적을 낼 수 있었다는 추론이 맞아요. 조각은 니네베에 가서 찾았고 신문사는 발굴비를 댔으니 반대이고, 두 작품의 선후는 글에 없으며, '모든 서판'이 홍수를 다뤘다는 것은 지나친 말이에요."
+],
+[
+1,
+3,
+"cloze",
+null,
+"Choose the one that best completes the sentence.\nDetermined to ____ the museum's reputation for dusty, lifeless exhibitions, the new director filled its galleries with interactive displays and invited musicians to perform there late at night.",
+[
+"foment",
+"relegate",
+"dispel",
+"venerate",
+"stipulate"
+],
+[
+3
+],
+"'먼지 쌓인 지루한 전시'라는 나쁜 평판을 없애려고 체험 전시와 밤 공연을 들였으니 '떨쳐 내다(dispel)'가 맞아요. foment(부추기다)·relegate(좌천시키다)·venerate(숭배하다)는 평판을 없앤다는 뜻이 아니에요."
+],
+[
+2,
+3,
+"cloze",
+null,
+"Choose the one that best completes the sentence.\nThe ambassador was so ____ at press conferences that reporters joked about the price of each word, yet colleagues who dined with him described a witty and endlessly talkative companion.",
+[
+"petulant",
+"ostentatious",
+"belligerent",
+"fallacious",
+"laconic"
+],
+[
+5
+],
+"기자들이 '한 마디에 값이 얼마냐'고 농담할 만큼 말을 아꼈다니 '말수가 적은(laconic)'이 맞아요. yet 뒤에 사석에서는 말이 많았다는 대비가 이어져요. petulant(성마른)·belligerent(호전적인)는 말의 양과 상관없어요."
+],
+[
+3,
+3,
+"cloze",
+null,
+"Choose the one that best completes the sentence.\nThe judge warned that allowing the company to break its contracts with ____ would encourage other firms to believe that the law simply did not apply to them.",
+[
+"impunity",
+"probity",
+"anonymity",
+"alacrity",
+"temerity"
+],
+[
+1
+],
+"계약을 어겨도 벌을 받지 않으면 다른 회사도 법이 자기에게는 적용되지 않는다고 여길 거라는 경고라 '처벌받지 않고(with impunity)'가 맞아요. alacrity(선뜻)·temerity(무모함)는 법이 적용되지 않는다는 결과와 이어지지 않아요."
+],
+[
+4,
+3,
+"cloze",
+null,
+"Choose the one that best completes the sentence.\nEarly critics found the composer's harmonies so ____ that some walked out of the premiere, yet within a generation the same sounds had become the familiar background of film scores.",
+[
+"ethereal",
+"placid",
+"anachronistic",
+"jarring",
+"sumptuous"
+],
+[
+4
+],
+"공연 중에 나가 버릴 만큼 귀에 '거슬렸다(jarring)'는 말이에요. yet 뒤에 나중에는 익숙한 영화 음악이 됐다는 대비가 와요. ethereal(천상의)·placid(잔잔한)는 관객이 나갈 이유가 되지 않아요."
+],
+[
+5,
+3,
+"cloze",
+null,
+"Choose the one that best completes the passage.\nIn the early days of photography, sitters had to remain perfectly still for long exposures, sometimes for well over a minute, and studios used concealed metal stands to brace their heads and backs. This helps explain why so many early portraits look stiff and solemn: holding a smile for that long was nearly impossible, and a blurred face ruined the picture. The somber expressions, in other words, were often a technical ____ rather than a reflection of the sitters' moods.",
+[
+"accomplishment",
+"constraint",
+"embellishment",
+"collusion",
+"prerogative"
+],
+[
+2
+],
+"오래 가만히 있어야 해서 웃음을 버틸 수 없었다는 설명이니 굳은 표정은 기술이 준 '제약(constraint)'이었다는 말이에요. accomplishment(성취)·embellishment(꾸밈)는 기술의 한계와 반대 방향이에요."
+],
+[
+6,
+3,
+"cloze",
+null,
+"Choose the one that best completes the passage.\nWhen the Oxford English Dictionary was being compiled in the nineteenth century, its editors appealed to the public for help. Volunteers across the English-speaking world read books and mailed in slips of paper showing how particular words had been used. One of the most valuable contributors turned out to be an American former army surgeon confined to an asylum in England. His slips, numbering in the thousands, were so ____ that the editors came to depend on them.",
+[
+"capricious",
+"scrupulous",
+"frivolous",
+"sporadic",
+"ostentatious"
+],
+[
+2
+],
+"편집자들이 기댈 만큼 '가장 값진' 기여자였다면 그의 쪽지는 '꼼꼼하고 정확했다(scrupulous)'는 말이에요. capricious(변덕스러운)·sporadic(드문드문한)은 의지할 이유가 되지 않아요."
+],
+[
+7,
+3,
+"dialogue",
+null,
+"Which line of the conversation is inappropriate or awkward?\nA: Did you manage to get tickets for Saturday's concert?\nⒶ B: Only just — they sold out within an hour of going on sale.\nⒷ A: Lucky you. Where are the seats?\nⒸ B: Near the back, I'm afraid, but at least we'll be able to see the stage.\nⒹ A: Great, front-row seats are the best!\nⒺ B: Well, beggars can't be choosers, can they?",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ",
+"Ⓔ"
+],
+[
+4
+],
+"B 가 '뒤쪽 자리'라고 했는데 A 가 '좋다, 맨 앞줄이 최고'라고 하면 앞말과 어긋나요. 뒷자리를 아쉬워하는 말에 맞는 대답이 와야 해요. B 의 '얻어먹는 처지에 가릴 수 없지'는 뒷자리를 받아들이는 말이라 자연스러워요."
+],
+[
+8,
+3,
+"dialogue",
+null,
+"Which line of the conversation is inappropriate or awkward?\nA: Excuse me, could you tell me whether this train stops at Riverside?\nⒶ B: It does, but only on weekdays; on weekends, I'm afraid, it runs express.\nⒷ A: Today's Sunday, isn't it?\nⒸ B: Yes, unfortunately, so you'll need to change at Central for the local service.\nⒹ A: How often do the local trains run?\nⒺ B: It takes about twenty minutes to get there from Central.",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ",
+"Ⓔ"
+],
+[
+5
+],
+"완행열차가 '얼마나 자주(How often)' 다니는지 물었는데 '가는 데 20분 걸린다'고 걸리는 시간을 답했어요. 배차 간격으로 답해야 해서 '20분 걸린다'는 줄이 어색해요."
+],
+[
+9,
+3,
+"reading",
+"r3-s1",
+"Which of the following is closest in meaning to the underlined word?",
+[
+"parsimonious",
+"venerable",
+"opulent",
+"erratic",
+"solemn"
+],
+[
+4
+],
+"wayward 는 '정해진 길을 벗어나 제멋대로인'이라 erratic(종잡을 수 없는)과 가까워요. 메카만 다녀오려다 아프리카·아시아를 돌며 24년을 떠돈 길이라는 내용이 단서예요."
+],
+[
+10,
+3,
+"reading",
+"r3-s1",
+"Which of the following is true according to the passage?",
+[
+"Ibn Battuta's medical training helped him find work during his travels.",
+"Ibn Battuta's legal training helped him find work only in Morocco.",
+"Ibn Battuta's legal training helped him find work during his travels.",
+"He planned from the start to travel for twenty-five years.",
+"Historians accept every detail of the Rihla as accurate."
+],
+[
+3
+],
+"법관 교육을 받아서 이슬람법이 쓰이는 곳이면 어디서든 일자리를 얻었고 델리·몰디브에서 법관을 지냈다고 했어요. '의학 교육'이나 '모로코에서만'으로 한 곳만 바꾼 문장은 글과 달라요. 처음엔 1년 반쯤 예정이었고, 역사가들은 일부 세부를 조심스럽게 본다고 했어요."
+],
+[
+11,
+3,
+"grammar",
+null,
+"Which of the underlined parts is grammatically NOT acceptable?\nWhen the first public libraries opened in Victorian Britain, critics warned that they would fill the heads of workers with idle fiction. Supporters Ⓐ<u>replied</u> that a reading room offered a working man a warmer and Ⓑ<u>more sober</u> evening than the public house. Librarians, Ⓒ<u>anxious</u> to prove their value, kept meticulous records of what was borrowed and Ⓓ<u>explained the committees</u> that novels drew in readers who later moved on to history and science. Ⓔ<u>Whether</u> that was really true is still debated.",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ",
+"Ⓔ"
+],
+[
+4
+],
+"explain 은 사람을 바로 목적어로 받지 못해요. explain + 내용 + to 사람 꼴이라 explained to the committees that ~ 이 맞아요. anxious to prove(증명하고 싶어 하는)와 Whether 가 이끄는 주어절은 맞아요."
+],
+[
+12,
+3,
+"grammar",
+null,
+"Which of the underlined parts is grammatically NOT acceptable?\nAccording to the best-known account, in 1947 a Bedouin shepherd Ⓐ<u>searched</u> for a lost goat threw a stone into a cave near the Dead Sea and heard something shatter. Inside were clay jars Ⓑ<u>containing</u> ancient scrolls, some of Ⓒ<u>which</u> were more than two thousand years old. Over the next decade, researchers recovered fragments of hundreds of manuscripts from caves in the area, Ⓓ<u>including</u> the oldest known copies of many books of the Hebrew Bible. Scholars still argue about the community Ⓔ<u>that</u> produced and hid them.",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ",
+"Ⓔ"
+],
+[
+1
+],
+"문장의 본동사는 threw 예요. 앞의 searched 는 동사가 하나 더 생겨 틀리고, 양치기를 꾸미는 능동 분사 searching(염소를 찾던)이 되어야 해요. some of which 는 jars 가 아니라 scrolls 를 받는 관계대명사라 맞아요."
+],
+[
+13,
+3,
+"reading",
+"r3-s2",
+"Which of the following is the most appropriate title for the passage?",
+[
+"How Japan Finally Ended Its Long Housing Shortage in the Cities",
+"Why Japanese Houses Gain Value With Age",
+"Building Homes That Survive Earthquakes",
+"The Rapid Growth of Japan's Rural Villages",
+"Too Many Homes: Japan's Struggle With Empty Houses"
+],
+[
+5
+],
+"일본에 빈집이 900만 채에 이르게 된 까닭, 빈집이 낳는 문제, 지자체의 대응과 한계를 다룬 글이라 '집이 너무 많다'는 제목이 맞아요. 일본 집은 몇십 년이면 값어치를 거의 잃는다고 했어요."
+],
+[
+14,
+3,
+"reading",
+"r3-s2",
+"Which of the underlined words is NOT appropriate in the context?",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ",
+"Ⓔ"
+],
+[
+3
+],
+"집이 서 있는 땅의 세금이 빈 땅보다 낮으면 주인은 낡은 집을 그냥 두려 해요. 그러니 '허물(demolish)' 까닭이 거의 없다고 해야 맞아요. preserve(보존하다)는 흐름과 반대예요."
+],
+[
+15,
+3,
+"reading",
+"r3-s3",
+"Which of the following is closest in meaning to the underlined word?",
+[
+"vindicated",
+"lauded",
+"appeased",
+"flattered",
+"decried"
+],
+[
+5
+],
+"excoriate 는 '맹렬히 비난하다'라 decried(공공연히 규탄했다)와 가까워요. 고의로 불의를 저질렀다고 실명으로 고발해 명예훼손으로 기소됐다는 뒤 내용이 단서예요. vindicated(무죄를 입증했다)·lauded(칭찬했다)는 반대예요."
+],
+[
+16,
+3,
+"reading",
+"r3-s3",
+"Which of the following best expresses the main idea of the passage?",
+[
+"Zola's letter failed because its author was convicted of libel.",
+"At great personal risk, Zola's letter turned the Dreyfus case into a national debate and helped define the public intellectual.",
+"The French army eventually proved that Dreyfus was guilty.",
+"Newspapers in 1898 rarely printed letters from novelists.",
+"Intellectuals should stay out of political questions altogether."
+],
+[
+2
+],
+"졸라는 처벌을 무릅쓰고 편지를 냈고, 그 편지가 사건을 전국적 논쟁으로 만들었으며, 이 일로 '지식인'이라는 모습이 생겼다는 것이 글의 요지예요. 졸라는 유죄를 받았지만 편지는 목적을 이뤘다고 했어요."
+],
+[
+17,
+3,
+"reading",
+"r3-s4",
+"Which of the following is the most appropriate title for the passage?",
+[
+"Why International Students Around the World No Longer Wish to Study Abroad at All",
+"Shifting Routes: How Caps and Competition Are Redrawing Student Mobility",
+"Canada's Booming Housing Market",
+"The Rising Cost of Tuition for Domestic Students",
+"English as the Only Language of Higher Education"
+],
+[
+2
+],
+"전통적인 네 나라가 유학생 수를 막기 시작하고 유럽·아시아가 새로 나서면서 유학 지도가 바뀐다는 글이에요. 제한과 경쟁으로 '경로가 다시 그려진다'는 제목이 맞아요. 유학 자체가 사라진다는 말은 없어요."
+],
+[
+18,
+3,
+"reading",
+"r3-s4",
+"Which of the following is NOT true according to the passage?",
+[
+"The United States capped new study permits in early 2024.",
+"Universities in the traditional destinations relied on fees from international students.",
+"The United Kingdom limited the family members some students could bring.",
+"Some European degree programs are taught in English at low cost.",
+"South Korea has set a numerical target for international students."
+],
+[
+1
+],
+"2024년 초 학업 허가 상한을 발표한 나라는 캐나다라고 했어요. 제한에 나선 나라로 캐나다·영국·호주만 들었고 미국은 없어요. 나머지는 글에 그대로 있어요."
+],
+[
+19,
+3,
+"reading",
+"r3-s4",
+"Which of the following can be inferred from the passage?",
+[
+"Housing shortages in those host countries were caused entirely by international students.",
+"South Korea has already reached its target of three hundred thousand students.",
+"The new limits may squeeze the finances of the traditional destinations' universities.",
+"European universities generally charge higher fees than those in Australia.",
+"The traditional destinations have welcomed more international students since 2024."
+],
+[
+3
+],
+"대학들은 유학생 등록금에 기대 왔고, 줄어든 등록금 때문에 강좌와 인력을 줄여야 한다고 경고했어요. 새 제한이 대학 재정을 압박할 수 있다는 추론이 맞아요. 주택난이 '전부' 유학생 탓은 지나친 말이고, 한국의 목표 달성은 글에 없으며, 유럽은 오히려 싸고 전통 나라들은 수를 줄였으니 반대예요."
+],
+[
+20,
+3,
+"reading",
+"r3-s5",
+"Which of the following best expresses the main idea of the passage?",
+[
+"The Melians defeated Athens by appealing to the justice of the gods.",
+"Thucydides openly condemned the Athenians in a long commentary.",
+"Thucydides' account of Melos sets appeals to justice against the logic of power and may quietly pass judgment on that logic.",
+"Neutral states were protected by the rules of ancient warfare.",
+"The Sicilian expedition was Athens' greatest military victory."
+],
+[
+3
+],
+"정의에 호소한 멜로스와 힘의 논리를 내세운 아테네를 맞세우고, 그 뒤에 시칠리아 원정의 참패를 놓아 말없이 심판했다는 것이 요지예요. 투키디데스는 '논평하지 않았다'고 했고, 시칠리아 원정은 재앙이었어요."
+],
+[
+21,
+3,
+"reading",
+"r3-s5",
+"What does the underlined sentence mean?",
+[
+"Between unequal powers, might rather than right decides the outcome.",
+"Strong states have a moral duty to protect weaker ones.",
+"Weak states can win if they endure long enough.",
+"The gods reward those who suffer patiently.",
+"Strong and weak states suffer equally in war."
+],
+[
+1
+],
+"아테네 사절은 정의는 힘이 같은 사이에서만 따진다며 이 말을 했어요. 힘이 다르면 옳고 그름이 아니라 힘이 결과를 정한다는 뜻이에요. 강자의 보호 의무나 신의 보상은 아테네가 물리친 생각이에요."
+],
+[
+22,
+3,
+"reading",
+"r3-s6",
+"Which of the following is the most appropriate title for the passage?",
+[
+"How Avellaneda Became Spain's Greatest and Most Celebrated Novelist of His Age",
+"The Origins of the Chivalric Romance in Spain",
+"The Jousts of Zaragoza in the Seventeenth Century",
+"Why Literary Sequels Always Disappoint Readers",
+"A Sequel Turned Against Its Thief: Cervantes and the False Quixote"
+],
+[
+5
+],
+"남이 먼저 낸 가짜 속편을 세르반테스가 자기 2부 이야기 안으로 끌어들여 되갚았다는 글이라 '도둑에게 되돌려 준 속편'이 제목으로 맞아요. 사라고사는 가짜 속편의 행선지로만 나와요."
+],
+[
+23,
+3,
+"reading",
+"r3-s6",
+"Which of the following is closest in meaning to the underlined word?",
+[
+"emulating",
+"placating",
+"coaxing",
+"venerating",
+"berating"
+],
+[
+5
+],
+"upbraid 는 '호되게 나무라다'라 berating 과 가까워요. 가짜 속편이 세르반테스를 조롱했으니 서문에서 '꾸짖는' 대신 이야기 안에서 갚았다는 흐름이에요. emulating(본받는)·placating(달래는)은 맞지 않아요."
+],
+[
+24,
+3,
+"reading",
+"r3-s6",
+"Which of the following can be inferred from the passage?",
+[
+"Cervantes altered his own plot partly in reaction to the rival book.",
+"Cervantes revealed the true identity of Avellaneda in his second part.",
+"The first part of Don Quixote was poorly received by its readers.",
+"Cervantes and Avellaneda later met in Madrid and settled their quarrel.",
+"The false sequel was written by a character from Cervantes's own novel."
+],
+[
+1
+],
+"가짜 돈키호테가 사라고사에 갔기 때문에 진짜는 계획을 바꿔 바르셀로나로 간다고 했어요. 경쟁 책에 맞서 줄거리를 바꿨다는 추론이 맞아요. 아베야네다의 정체는 지금도 확실하지 않고 1부는 곧바로 성공했으니 반대이며, 둘이 화해했다는 말은 없고, 가짜 속편의 등장인물을 만난 일을 '등장인물이 썼다'로 비튼 문장도 틀려요."
+],
+[
+25,
+3,
+"reading",
+"r3-s7",
+"Which of the underlined words is NOT appropriate in the context?",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ",
+"Ⓔ"
+],
+[
+4
+],
+"소수 회사의 보안 프로그램을 세계 기업 상당수가 쓰니, 그 몇 곳의 실수에 경제 전체가 '취약해졌다(vulnerable)'고 해야 흐름이 맞아요. resilient(잘 견디는)는 반대예요."
+],
+[
+26,
+3,
+"reading",
+"r3-s7",
+"Which of the following is true according to the passage?",
+[
+"The crashes were caused by a faulty update rather than by hackers.",
+"The crashes were caused by a faulty cable rather than by hackers.",
+"The crashes were caused by a faulty update from Microsoft rather than by hackers.",
+"The faulty update was withdrawn only after several weeks.",
+"Only a few hundred computers were affected by the problem."
+],
+[
+1
+],
+"원인은 사이버 공격이 아니라 보안 회사(크라우드스트라이크)의 잘못된 업데이트였다고 했어요. '케이블'이나 '마이크로소프트의 업데이트'로 한 곳만 바꾼 문장은 글과 달라요. 업데이트는 한 시간 반쯤 만에 거둬들였고, 약 850만 대가 피해를 입었어요."
+],
+[
+27,
+3,
+"reading",
+"r3-s8",
+"What is the passage mainly about?",
+[
+"the structure of medieval Arabic poetry",
+"the life and adventures of the storyteller Scheherazade in medieval Baghdad",
+"how two famous tales joined the Nights through Galland and Diyab",
+"the economics of publishing in eighteenth-century Paris",
+"the history of Aleppo as a trading city"
+],
+[
+3
+],
+"알라딘과 알리바바가 아랍어 필사본에는 없고, 디야브가 들려준 이야기를 갈랑이 프랑스어로 옮기면서 천일야화에 들어갔다는 과정을 다룬 글이에요. 셰에라자드나 알레포 역사는 나오지 않아요."
+],
+[
+28,
+3,
+"reading",
+"r3-s8",
+"Which of the following is true according to the passage?",
+[
+"Galland met Hanna Diyab in Aleppo in 1709.",
+"Galland met Hanna Diyab in Paris in 1709.",
+"Galland met Hanna Diyab in Paris in 1704.",
+"French readers paid little attention to Galland's translation.",
+"Diyab was a Muslim scholar who lived in Cairo."
+],
+[
+2
+],
+"갈랑은 1709년 파리에 와 있던 알레포 출신 디야브를 만났다고 했어요. 만난 곳을 '알레포'로, 해를 번역이 나오기 시작한 '1704년'으로 한 곳만 바꾼 문장은 글과 달라요. 번역은 곧바로 큰 인기를 끌었고, 디야브는 마론파 그리스도교인이에요."
+],
+[
+29,
+3,
+"reading",
+"r3-s8",
+"Which of the following can be inferred from the passage?",
+[
+"Galland invented Aladdin entirely on his own, without relying on any outside source.",
+"Some later Arabic versions of Aladdin were based on Galland's French text.",
+"Diyab wrote the tales down in Arabic before he ever met Galland.",
+"Diyab later translated Galland's French version back into Arabic himself.",
+"Diyab has always been recognized by scholars as the source of every tale."
+],
+[
+2
+],
+"알라딘이 담긴 듯한 필사본 일부가 갈랑의 프랑스어를 다시 아랍어로 옮긴 것이었다고 했어요. 뒤의 아랍어판 일부가 갈랑의 글에 기댔다는 추론이 맞아요. 갈랑은 디야브에게서 들었고 디야브는 기억으로 들려줬으니 반대이고, 디야브가 직접 다시 옮겼다는 말은 없으며, '늘·모든'은 오랫동안 잊혔다는 글과 맞지 않는 지나친 말이에요."
+],
+[
+30,
+3,
+"order",
+null,
+"Choose the most logical order of the sentences Ⓐ through Ⓔ.\nⒶ Their instinct proved sound, since the patina actually protects the metal beneath it from further corrosion.\nⒷ Over the following decades this process covered the statue in the pale green coating, or patina, that visitors know today.\nⒸ When the Statue of Liberty was dedicated in New York Harbor in 1886, its thin copper skin shone a reddish brown, like a new coin.\nⒹ When officials proposed painting the statue early in the twentieth century, many people objected to hiding its new color.\nⒺ Exposed to wind, rain, and salt air, however, the copper slowly reacted with the atmosphere.",
+[
+"Ⓒ - Ⓑ - Ⓔ - Ⓓ - Ⓐ",
+"Ⓒ - Ⓔ - Ⓓ - Ⓑ - Ⓐ",
+"Ⓔ - Ⓒ - Ⓑ - Ⓓ - Ⓐ",
+"Ⓒ - Ⓔ - Ⓑ - Ⓓ - Ⓐ",
+"Ⓒ - Ⓔ - Ⓑ - Ⓐ - Ⓓ"
+],
+[
+4
+],
+"1886년 갓 세운 동상이 붉은 갈색이었다는 문장이 먼저, '그러나(however)' 구리가 공기와 반응했다는 문장이 다음이에요. 이 과정(this process)이 초록 녹을 입혔고, 칠하자는 제안에 사람들이 반대했으며, 그 직감(Their instinct)이 옳았다는 문장이 끝이에요."
+]
+]
+}

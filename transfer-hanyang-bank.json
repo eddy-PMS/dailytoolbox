@@ -1,0 +1,2545 @@
+{
+"school": "hanyang",
+"title": "한양대 편입영어 모의고사",
+"source": "한양대 편입영어 2017~2026학년도 기출 출제 유형(문항 수·영역·문제 꼴, VocabFactory 분석)을 분석해 dailyfreetoolbox 가 새로 만든 연습 문제",
+"checked": "2026-11-23",
+"minutes": 70,
+"points": [
+[
+1,
+8,
+2
+],
+[
+9,
+17,
+3
+],
+[
+18,
+18,
+2
+],
+[
+19,
+19,
+3
+],
+[
+20,
+20,
+2
+],
+[
+21,
+21,
+3
+],
+[
+22,
+22,
+2
+],
+[
+23,
+23,
+3
+],
+[
+24,
+24,
+2
+],
+[
+25,
+25,
+3
+],
+[
+26,
+26,
+2
+],
+[
+27,
+27,
+3
+],
+[
+28,
+28,
+2
+],
+[
+29,
+29,
+3
+],
+[
+30,
+30,
+2
+],
+[
+31,
+31,
+3
+],
+[
+32,
+32,
+2
+],
+[
+33,
+33,
+3
+],
+[
+34,
+34,
+2
+],
+[
+35,
+35,
+3
+],
+[
+36,
+36,
+2
+],
+[
+37,
+37,
+3
+],
+[
+38,
+38,
+2
+],
+[
+39,
+39,
+3
+],
+[
+40,
+40,
+2
+]
+],
+"penalty": 0,
+"sections": [
+{
+"id": "vocab",
+"name": "어휘"
+},
+{
+"id": "cloze",
+"name": "빈칸"
+},
+{
+"id": "grammar",
+"name": "문법"
+},
+{
+"id": "reading",
+"name": "독해"
+}
+],
+"passages": [
+{
+"id": "r1-p10",
+"text": "In 1566 a twenty-year-old Danish nobleman named Tycho Brahe lost part of his nose in a sword duel, reportedly after an altercation over mathematics, and wore a metal prosthesis for the rest of his life. He is remembered for far more than that disfigurement. In 1576 the Danish king bestowed on him the island of Hven, where he built Uraniborg, an observatory furnished with colossal instruments for gauging the positions of stars and planets. Tycho worked before the advent of the telescope, yet his naked-eye measurements surpassed in precision any made before. He also spurned the Sun-centered system advanced by Copernicus, preferring a hybrid scheme in which the planets circled the Sun while the Sun orbited a stationary Earth. Ironically, after his death in 1601 his assistant Johannes Kepler used Tycho's own records to show that the planets trace ellipses around the Sun, a result that bolstered the very theory Tycho had repudiated."
+},
+{
+"id": "r1-p11",
+"text": "The naked mole-rat, a nearly hairless rodent from the dry grasslands of East Africa, looks like something assembled from spare parts, yet biologists regard it as one of the most singular mammals alive. It lives out its existence entirely underground in colonies of dozens or even hundreds of animals, and, as in colonies of bees and ants, each colony has a single breeding female, the queen, while the others excavate tunnels, forage for roots, and defend the nest. It is also astonishingly long-lived. A mouse of comparable size seldom survives more than a few years, but naked mole-rats in captivity have lived beyond thirty, and they are strikingly resistant to cancer. In a 2017 experiment they survived eighteen minutes with no oxygen at all, apparently by switching to a metabolic pathway more characteristic of plants. Researchers hope that deciphering such capacities might one day help safeguard human tissue after heart attacks and strokes."
+},
+{
+"id": "r1-p12",
+"text": "For more than a century, the painted caves of Europe, with their bison, horses, and lions, were hailed as the birthplace of figurative art. Discoveries on the Indonesian island of Sulawesi have progressively eroded that assumption. In 2024 researchers reported that a faded red painting in a limestone cave there, depicting three human-like figures apparently interacting with a wild pig, was at least 51,200 years old. That means it predates any known cave art in Europe by many thousands of years. The team dated the image not from the pigment itself but from thin mineral crusts that had accreted over it, using a refined laser technique that measures the slow decay of uranium in such deposits. Because the crusts grew on top of the paint, the painting must be older still — and the scene is significant for another reason. It appears to tell a story, suggesting that the human propensity for narrating events in pictures is far more ancient than once believed."
+},
+{
+"id": "r1-p13",
+"text": "Hearing an assertion more than once makes it seem more plausible, even when it is false; psychologists first documented this illusory truth effect in 1977, when volunteers assessed the truth of trivia statements over several sessions. Statements they had seen before were deemed more likely to be true than new ones, irrespective of whether they were accurate. The explanation lies in what researchers call processing fluency. A familiar claim is easier for the mind to process, and that ease is misconstrued as a sign of truth. More disquieting, a later study found that repetition could amplify belief even in claims that contradicted facts the participants already knew. The effect has far-reaching implications for advertising and political messaging, and it complicates efforts to rectify misinformation. A correction that repeats a myth in order to refute it may inadvertently make the myth more familiar. For that reason, some experts advocate stating the accurate information first and alluding to the falsehood only briefly."
+},
+{
+"id": "r1-p14",
+"text": "When European ships began visiting Rapa Nui, the Pacific island also called Easter Island, in the eighteenth century, visitors described its colossal stone statues but made no mention of writing. Only in the 1860s did a missionary report wooden tablets inscribed with rows of small carved signs: birds, fish, human figures, and geometric shapes. The script, known as rongorongo, survives on about two dozen objects now dispersed among museums around the world, and no one has deciphered it. By the mid-1860s slave raids and epidemics had ravaged the population, killing, it is thought, those who could read the signs. Some scholars have contended that rongorongo was invented only after the islanders watched Spanish officials sign a decree annexing the island in 1770. A 2024 study complicated that hypothesis: radiocarbon dating showed that the wood of one tablet came from a tree cut down well before European contact, although the signs themselves could have been carved later."
+},
+{
+"id": "r1-p15",
+"text": "Jakarta, home to more than ten million people, is among the fastest-sinking large cities on Earth. Decades of pumping groundwater have caused the soft ground beneath parts of the city to subside by several centimeters a year, and in places by far more, while the sea along its coast is rising. Floods are chronic and traffic is notoriously bad. In 2019 Indonesia's president announced that the country would build an entirely new capital, later named Nusantara, on the island of Borneo. The government touted it as a green, smart city surrounded by forest, and in August 2024 Independence Day was commemorated there for the first time. The project has nevertheless faced persistent skepticism. Private investment has arrived more slowly than hoped, construction has lagged, and conservation groups worry about deforestation and the rights of local communities. Relocating government offices, critics add, will do little to alleviate the plight of the millions who remain in Jakarta."
+},
+{
+"id": "r1-p16",
+"text": "In 1929 the Belgian painter René Magritte exhibited a meticulously painted picture of a tobacco pipe, smooth and brown against a plain background, as lifelike as an illustration in a shop catalogue. Beneath it, in neat handwriting, he added a sentence in French that translates as This is not a pipe. Viewers were perplexed and some were indignant: of course it was a pipe, they protested. Magritte's point was simple once grasped. The object on the canvas was not a pipe but a picture of one, a few ounces of pigment daubed on a flat surface; no one could fill it with tobacco. The title he gave the work, The Treachery of Images, suggests how readily we conflate the two. Decades later the philosopher Michel Foucault wrote a short book about the painting, and it remains a canonical example in discussions of how words and images refer to the world. Magritte had painted, in effect, <u>a pipe that no one will ever smoke</u>."
+},
+{
+"id": "r1-s1",
+"text": "For decades, the story of nuclear power in many Western countries was one of retrenchment — projects ran years behind schedule, costs ballooned, and accidents such as Fukushima in 2011 hardened public opposition. Recently, however, the technology has enjoyed a resurgence of interest, driven by anxieties about climate change and energy security, and much of the enthusiasm has coalesced around small modular reactors, or SMRs. Instead of building a gigantic plant on site as a one-off engineering project, the idea is to manufacture smaller reactor units in factories and ship them for assembly, much as aircraft are fabricated on production lines. Proponents contend that standardized designs would allow costs to fall as builders gain experience, and that small units could be situated near factories or on the sites of decommissioned coal plants. The economics, however, remain unproven and the obstacles substantial. In 2023 one of the most advanced American projects, backed by a group of utilities in Utah, was cancelled after its projected price of electricity soared and too few buyers signed up. Critics note that the savings anticipated from factory production hinge on building many units of the same design, yet no one wants to place the first orders until those savings have been demonstrated. Until that ____ is broken, small reactors may look more attractive on paper than on the grid."
+},
+{
+"id": "r1-s2",
+"text": "When Franz Kafka died of tuberculosis in 1924, he left his closest friend, the writer Max Brod, an unequivocal instruction: everything he had not published, including diaries, letters, and manuscripts, was to be burned unread. Brod refused. In subsequent years he edited and published the unfinished novels The Trial, The Castle, and Amerika, which transformed an obscure Prague insurance official into one of the most influential writers of the twentieth century. Was Brod's disobedience a betrayal or an act of loyalty? Brod himself offered a rationale. He said he had told Kafka years earlier that he would never carry out such a request, and that Kafka, knowing this, would have chosen a different executor had he truly wanted the papers destroyed. On this view, Kafka's <u>putative</u> wish to destroy his work was less a command than a gesture of self-doubt. Some critics remain ambivalent; a writer's wishes about his own work, they argue, should count for something, even if the world profits by disregarding them. The story has a curious sequel: when Brod fled the Nazis in 1939, he carried a suitcase of Kafka's papers to Palestine, and decades of litigation followed before most of them reached the National Library of Israel."
+},
+{
+"id": "r1-s3",
+"text": "Almost all the data that crosses the oceans, from video calls to bank transfers, travels not through satellites but through fiber-optic cables lying on the seabed. Several hundred such cables connect the continents, and in deep water many are no thicker than a garden hose — and surprisingly vulnerable. Every year a considerable number are damaged, mostly by accident, when fishing trawlers drag their nets or ships drop anchor in the wrong place. Repair ships can usually restore service within days or weeks, and because traffic is rerouted through other lines, ordinary users rarely notice. Recent incidents have nevertheless turned cables into a strategic concern. In late 2024 several cables and a power line under the Baltic Sea were damaged within a few weeks, each time near the route of a merchant ship that had apparently dragged its anchor along the seabed. Finnish authorities boarded one tanker suspected of causing the damage. Proof of deliberate sabotage, however, is notoriously elusive: an anchor dragged by a negligent crew leaves much the same trace as one dragged on purpose. Governments have responded by intensifying naval patrols, mapping vulnerable routes, and encouraging companies to lay redundant lines. The episode exposes a basic ____: infrastructure built to be cheap and efficient was never designed to be defended."
+},
+{
+"id": "r1-s4",
+"text": "In 1688 the Irish scientist William Molyneux, whose wife had lost her sight, sent the philosopher John Locke a question: suppose a man born blind has learned to distinguish a cube from a sphere by touch. If he were abruptly granted sight, could he tell which was which merely by looking, before touching them? Locke discussed the puzzle in his Essay Concerning Human Understanding, and he agreed with Molyneux that the answer was no. Knowledge of shape, both men thought, derives from experience, and a newly sighted person would not yet know how the look of an object corresponds to its feel. For three centuries the question remained a hypothetical exercise, debated by philosophers who had no means of testing it — until, in 2011, researchers working in India with children who had been born with treatable cataracts reported a direct test. Shortly after surgery gave them sight, the children could match shapes perfectly well by touch alone or by sight alone, but they matched a seen shape to a touched one only slightly better than chance. The connection between the two senses was at first <u>tenuous</u>. Within days, however, their performance improved markedly, suggesting that the brain learns to link touch and sight remarkably quickly once it has the chance."
+},
+{
+"id": "r1-s5",
+"text": "In October 2024 the Norwegian Nobel Committee awarded the Peace Prize to Nihon Hidankyo, a Japanese organization of survivors of the atomic bombings of Hiroshima and Nagasaki. The survivors, known in Japanese as hibakusha, founded the group in 1956, more than a decade after the bombings, partly in response to radioactive fallout from American nuclear tests in the Pacific that had sickened Japanese fishermen. For nearly seventy years its members have traveled the world recounting their stories: of the flash and the heat, of relatives who vanished, of ailments that emerged years later, and of the discrimination many endured in marriage and work. The committee commended the group for helping to establish what is sometimes called the nuclear taboo, the potent norm that nuclear weapons must never be used again. It also noted, with some urgency, that this norm is under pressure, as several states modernize their arsenals and leaders issue overt threats. Time poses another difficulty: the average age of the surviving hibakusha is now well over eighty, and within a generation no one will be left who can say, I was there. Many fear that once their voices fall silent, the memory of nuclear war will become ____, a matter of textbooks and statistics rather than of human faces."
+},
+{
+"id": "r1-s6",
+"text": "In 1969 the French writer Georges Perec published La Disparition, a novel of some three hundred pages in which the letter e, the most common letter in French, never appears. Such a text is termed a lipogram, and writing one at that length is fiendishly difficult: Perec had to <u>eschew</u> countless ordinary words, including the French words for he, she, and the. The plot itself is a sly joke about the constraint. It follows a group of characters searching for a missing friend, and members of the group begin to disappear whenever they come close to naming what is absent. Perec belonged to Oulipo, a circle of writers and mathematicians founded in Paris in 1960 who believed that stringent rules, far from stifling creativity, could provoke it. Yet many readers have discerned something more than a game in his novel. Perec's father was killed in the Second World War, and his mother was deported to Auschwitz when he was a small child; he grew up surrounded by an absence he could not name. Read in this light, a book organized around a vanished letter becomes a meditation on loss. The English writer Gilbert Adair later translated it, also without a single e, under the title A Void."
+},
+{
+"id": "r1-s7",
+"text": "In 1954 a small group in the American Midwest became convinced, through messages its leader said she received from another planet, that a great flood would destroy much of the world before dawn on December 21. Its members believed that they alone would be evacuated by a flying saucer, and some quit their jobs and disposed of their possessions. The psychologist Leon Festinger and two colleagues, intrigued by how believers would respond when the prophecy failed, infiltrated the group without revealing their purpose and observed it. Midnight passed, and no saucer materialized. After hours of anguish, the leader announced a new message: the little group had spread so much light that God had spared the world. What happened next fascinated Festinger: members who had previously shunned publicity began phoning newspapers and seeking converts. Rather than abandoning their faith, many of the most devout clung to it more fervently. Festinger explained this with his theory of cognitive dissonance: when beliefs clash with clear evidence, the discomfort impels people to reduce the conflict, and those who have sacrificed the most often find it easier to <u>reinterpret the evidence than to admit the loss</u>. Later researchers have questioned the rigor of the study's methods, since the observers' presence may itself have influenced the group."
+},
+{
+"id": "r1-s8",
+"text": "Conventional computers store information in bits that are either 0 or 1. Quantum computers use qubits, which can exist in combinations of both states at once and become linked to one another in ways that have no everyday equivalent. In principle this allows certain calculations, such as simulating molecules, to be performed far faster than any conventional machine could manage; in practice, however, qubits are maddeningly delicate. Heat, vibration, or stray electromagnetic signals can disrupt them within a tiny fraction of a second, introducing errors that proliferate as more qubits are added. For decades physicists have hoped to solve this with error correction, combining many physical qubits into a single, more reliable logical qubit. The catch is that every added qubit is another chance for error. In December 2024 Google reported that its new chip, Willow, had crossed a pivotal threshold: as the groups of qubits grew larger, the error rate went down rather than up. The company also said the chip had finished a benchmark calculation in under five minutes that would take a leading supercomputer an unimaginably long time. Independent experts lauded the error-correction result but noted that the benchmark had no practical use. Useful quantum computers, they cautioned, are still ____: promising, but far from ready for everyday work."
+},
+{
+"id": "r1-s9",
+"text": "\"Don't open the back until the film is rewound,\" the man at the camera shop said, sliding my grandfather's old camera across the counter. It had lain in a drawer for twenty years, and I had brought it in only because the shutter still clicked. He sold me a single roll of film, thirty-six frames, and wished me luck in a tone that implied I would need it. I was accustomed to a phone that let me take two hundred pictures of a sunset and delete one hundred and ninety-nine. Now every press of the button cost something, and there was no screen to tell me whether I had failed. It took me a month to finish the roll: my grandmother in her garden, the fish market at dawn, my sister asleep on a train. Each time I dithered so long that the moment almost passed. A community center nearby ran a darkroom class on Thursday evenings. Winding the film onto the developing reel in total darkness, I fumbled so badly and my nervousness was so <u>palpable</u> that the instructor, an elderly woman, began to hum quietly beside me. When the negatives finally hung up to dry, a third of them were blurred — but the portrait of my grandmother was sharp, and I have never deleted it, because there was never any way to."
+},
+{
+"id": "r1-s10",
+"text": "In English a speaker can say It rained last night without revealing how she knows: perhaps she heard the rain, perhaps she saw the wet streets in the morning, or perhaps a neighbor told her. Many languages do not tolerate such vagueness; in grammatical systems known as evidentials, speakers must mark the source of their information. Turkish, for example, uses one past-tense ending for events the speaker witnessed and another for events learned from others or inferred from traces. Some Amazonian languages go much further, with separate endings for what was seen, heard, inferred, assumed, or reported. Linguists have long speculated whether such grammar shapes how speakers think. Some studies suggest that children learning evidential languages begin using the markers early but grasp the ideas behind them only later, around the age when they also understand that other people can hold false beliefs. Speakers of these languages sometimes say that English sounds oddly careless, since a sentence without an evidential seems to conceal whether the speaker is a witness or merely passing on gossip. English speakers can of course make the same distinctions when they wish, by adding words such as apparently or I saw. For speakers of evidential languages, however, the distinction is ____, built into the verb itself."
+},
+{
+"id": "r1-s11",
+"text": "Common sense says that adding a road to a congested network should alleviate congestion, and removing one should make it worse. In 1968 the German mathematician Dietrich Braess showed that this is not always true: in certain networks, opening a new shortcut can make every driver's journey slower. The reason is that each driver, choosing the route that is quickest for himself, converges on the new link, and the resulting equilibrium can be worse for everyone than the one before. No driver has any incentive to change course, yet all would be better off if the shortcut did not exist — a finding now known as Braess's paradox. Real cities have furnished some striking illustrations. In Seoul, an elevated highway that carried large volumes of traffic over the Cheonggyecheon stream was demolished in 2003, and the buried stream was restored as a public park and walkway, opening in 2005. Critics had prophesied gridlock. Instead, traffic in the area did not worsen as feared, partly because drivers altered their routes, timing, or modes of travel, and partly because some trips simply disappeared. Engineers caution that the paradox holds only under particular conditions, and that removing roads is not a universal cure. But the episode helped persuade planners that road capacity and traffic speed are not linked as simply as once assumed."
+},
+{
+"id": "r1-s12",
+"text": "A piano tuned today is, strictly speaking, slightly out of tune, and the reason lies in an awkward quirk of acoustics. Intervals that sound perfectly pure, such as the octave and the fifth, rest on simple ratios between frequencies, but stacking twelve pure fifths does not quite bring you back to the starting note seven octaves higher; a small gap is left over. Tuning systems are different ways of concealing that gap. For centuries many keyboard instruments were tuned so that the most common keys sounded beautifully pure, while remote keys sounded so harsh that composers simply shunned them. Equal temperament solves the problem by spreading the gap evenly across all twelve notes, so that every key sounds equally tolerable, if never perfectly pure. Johann Sebastian Bach's collection The Well-Tempered Clavier, with preludes and fugues in all twenty-four major and minor keys, is often cited as an early celebration of the latitude such tunings permitted, although historians contend that Bach in all likelihood used an unequal temperament in which each key kept a slightly different color. Some performers of early music prefer those older systems. To their ears equal temperament, for all its convenience, can sound a little <u>insipid</u>, as if every key had been painted the same shade of gray."
+},
+{
+"id": "r2-p10",
+"text": "Consider two drivers who have each consumed several drinks at a party and drive home along similar roads with precisely the same degree of care, or negligence. One arrives home safely. The other, through no further fault of his own, meets a child who runs into the street, and the child is killed. Most people condemn the second driver far more harshly, and the law punishes him far more severely — yet the two committed precisely the same act; the only difference lay in contingencies neither of them controlled. The philosophers Bernard Williams and Thomas Nagel called this problem moral luck, and it unsettles a widely held principle, that people should be judged only for what lies within their control; if we applied that principle rigorously, we would have to judge the two drivers equally. If we abandon it, we must admit that our moral standing hinges partly on luck. Neither alternative is palatable, and the tension, Nagel argued, cannot simply be argued away."
+},
+{
+"id": "r2-p11",
+"text": "In June 2025 a new observatory on a mountaintop in Chile released its first images, unveiling luminous clouds of gas and millions of distant galaxies in exquisite detail. The Vera C. Rubin Observatory carries the largest digital camera ever built for astronomy, and its mission is unconventional. Rather than studying a few objects closely, it will sweep across the whole sky visible from the Southern Hemisphere again and again, returning to each patch every few nights for a decade, producing a kind of time-lapse film of the cosmos. Astronomers anticipate that it will detect vast numbers of asteroids, supernovae, and other objects that move or change. The observatory is named after the American astronomer Vera Rubin, whose measurements of how swiftly stars revolve within galaxies furnished some of the most compelling early evidence for dark matter, an invisible form of matter that appears to outweigh ordinary matter several times over. Fittingly, mapping the influence of dark matter is among the observatory's principal goals."
+},
+{
+"id": "r2-p12",
+"text": "One of the earliest photographs to include a human being was taken almost by accident. In 1838 Louis Daguerre pointed his camera from a high window at the Boulevard du Temple, one of the busiest streets in Paris. The image depicts rows of buildings and trees, yet the street itself looks eerily deserted. The reason was the exposure time: the plate needed several minutes to record a scene, so carriages and pedestrians moving along the boulevard left no trace. Only one figure remained stationary long enough to be captured, a man near a corner who appears to be having his boots polished, together with the faint silhouette of the person polishing them. Neither could have known that he was being recorded. Today the picture is often heralded as the first photograph of a person, although historians concede that other early images may also have caught people and simply not survived."
+},
+{
+"id": "r2-p13",
+"text": "How can we ascertain whether an animal recognizes itself? In 1970 the psychologist Gordon Gallup devised a deceptively simple test. After chimpanzees had grown used to a mirror, he anesthetized them and painted a red mark on a brow or ear that they could not see without a reflection. When they woke and looked into the mirror, they touched the mark on their own bodies, suggesting that they understood the image to be themselves. Monkeys subjected to the same test generally failed. Since then a handful of other species have passed, including some elephants, dolphins, and magpies, and in 2019 researchers controversially reported success with a small reef fish. Critics argue that the test is skewed toward animals that rely on vision. Dogs, which navigate the world chiefly through smell, usually disregard their reflections, yet they can discriminate their own scent from that of other dogs. Failing the mirror test, then, may reveal more about the test than about the animal."
+},
+{
+"id": "r2-p14",
+"text": "For more than two centuries the one-cent coin was a fixture of American life, but in 2025 the United States resolved to stop minting it. In February the president directed the Treasury to end production, noting that each penny now cost nearly four cents to manufacture and distribute, and in November the Mint struck its final pennies for circulation. The decision capped years of debate. Economists had long pointed out that the coin has negligible purchasing power, that many people leave pennies in jars or simply refuse them as change, and that the government lost money on every one it produced. Defenders argued that abolishing the coin would compel shops to round cash prices upward, surreptitiously costing consumers money, although studies of countries that had already jettisoned their smallest coins, such as Canada in 2013, found little evidence of that. The billions of pennies already in circulation remain legal tender, though some businesses have begun rounding cash totals to the nearest five cents."
+},
+{
+"id": "r2-p15",
+"text": "For most of the twentieth century, archaeologists assumed a clear chronology: people first learned to farm, then settled in villages, and only after that, with surplus food and organized labor, built monumental temples. Göbekli Tepe, a hilltop site in southeastern Turkey, overturned that sequence. Excavations led by the German archaeologist Klaus Schmidt from the mid-1990s unearthed rings of massive T-shaped limestone pillars, some towering more than five meters and carved with foxes, boars, snakes, and vultures. The oldest structures date to around 9500 BCE, before pottery, metal tools, or the wheel, and apparently before farming had taken hold in the region. The builders seem to have been hunter-gatherers — and Schmidt conjectured that the need to provision large gatherings at the site may itself have encouraged the cultivation of wild cereals. Later research has found evidence of dwellings and cisterns nearby, suggesting that the site was not only a ceremonial center but also a place where people lived."
+},
+{
+"id": "r2-p16",
+"text": "Look at a photograph of five friends at a party, and each face may seem more attractive than it would if you saw it alone. In 2014 two psychologists tested this impression, which had been named the cheerleader effect after a popular television sitcom. Volunteers evaluated the attractiveness of faces shown either in group photographs or cut out and displayed on their own. The same faces received higher ratings when they appeared in a group, and the researchers postulated an explanation grounded in how vision works: when we see several similar objects together, the brain tends to summarize them, computing a kind of average. Average faces, earlier studies had shown, are generally deemed attractive, because their irregularities cancel out. Seen in a crowd, each face is pulled slightly toward that pleasing average in our perception. In other words, <u>the group quietly lends each member its average</u>, smoothing over the idiosyncrasies that stand out when a face is viewed alone."
+},
+{
+"id": "r2-s1",
+"text": "Hydrogen has been called the fuel of the future for so long that the phrase has become something of a joke. Burned or used in a fuel cell, it releases energy with water as its only direct by-product, and it can be stored and shipped in ways that electricity cannot. The difficulty lies in making it: almost all the hydrogen produced today is extracted from natural gas in a process that releases large amounts of carbon dioxide, while so-called green hydrogen, made by splitting water with electricity from renewable sources, avoids those emissions but remains considerably more expensive. Partly for this reason, enthusiasm has shifted. Hydrogen cars, once touted as rivals to battery vehicles, have largely lost that race, since using electricity directly in a battery wastes far less energy than converting it into hydrogen and back again. Many analysts now contend that hydrogen should be reserved for tasks that are hard to electrify, such as making fertilizer, refining fuel, and producing steel; in Sweden a pilot plant has already made steel with hydrogen instead of coal. Even in these areas, however, several large projects announced with great fanfare have been delayed or cancelled as costs escalated. The fuel of the future, it seems, will be ____ rather than universal: valuable in particular niches, but not the answer to every energy problem."
+},
+{
+"id": "r2-s2",
+"text": "In July 1962 the French geologist Michel Siffre, then twenty-three, descended into an underground glacier in the Alps and remained there in solitude for about two months. He took no clock or watch. Whenever he woke, ate, or went to sleep, he telephoned a team on the surface, who recorded the times but were forbidden to divulge anything about them. The results astonished everyone, including Siffre. His body maintained a fairly regular rhythm of sleeping and waking, but each cycle ran somewhat longer than twenty-four hours, so that his internal days slowly drifted out of step with the sun. When the team finally told him that the experiment was over, he believed it was a date nearly a month earlier; he had lost track of roughly twenty-five days. His experience helped substantiate that humans possess an internal clock that keeps time on its own, though it needs daylight to remain accurately calibrated. Siffre was nothing if not <u>tenacious</u>. Despite the cold, the damp, and the isolation, which left him grappling with lapses of memory and bouts of melancholy, he returned to caves for subsequent experiments in later decades, including one in his sixties."
+},
+{
+"id": "r2-s3",
+"text": "In April 1964, at the age of thirty-one, the Canadian pianist Glenn Gould gave a recital in Los Angeles and then never performed in public again. He was at the height of his fame. His 1955 recording of Bach's Goldberg Variations, played with startling clarity and velocity, had become one of the best-selling classical albums of its time, and concert halls around the world clamored for him. Gould, however, had come to detest the concert as an institution. He found the atmosphere competitive, even predatory, as if part of the audience were waiting for a mistake, and he believed that a live performance, heard once and then gone, was a poor way to present music. For the rest of his life he confined himself mainly to recording studios, where he could play a passage many times and splice together the best versions, much as a film director assembles scenes. Critics accused him of misleading listeners. Gould retorted that a recording was a different art form from a concert, as a film is from a play, and that the listener at home, free to replay and reflect, would become <u>a participant rather than a witness</u>. He also became known for humming audibly as he played, a habit his engineers never managed to expunge from the tapes; in 1981, a year before his death, he recorded the Goldberg Variations again, far more slowly."
+},
+{
+"id": "r2-s4",
+"text": "Few questions polarize the artificial intelligence industry as sharply as whether powerful models should be released openly. When a company publishes a model's weights, the vast tables of numbers that govern its behavior, anyone with enough computing power can download, study, modify, and run it. Meta adopted this approach with its Llama models, and in early 2025 the Chinese firm DeepSeek startled the industry by releasing a formidable reasoning model whose weights were freely available. Advocates of openness advance several arguments. Independent researchers can scrutinize open models for flaws instead of trusting a company's assurances; small firms and universities can build on them without paying exorbitant fees; and power over a pivotal technology is not concentrated in a handful of corporations. Detractors reply that once weights are published they cannot be retracted, and the safety filters built into a model can be stripped away by anyone determined to use it for <u>nefarious</u> purposes, such as producing more convincing scams. Even the terminology is contested. In 2024 the Open Source Initiative, which has long defined what counts as open-source software, issued a definition for AI that requires enough information about training data to allow a model to be rebuilt, a standard that many so-called open models do not meet."
+},
+{
+"id": "r2-s5",
+"text": "In 1842 Queen Victoria welcomed the German composer Felix Mendelssohn to Buckingham Palace and sang one of his songs for him — she chose Italien, which she said was her favorite — and Mendelssohn, mortified, confessed that the song was not his. It had been written by his elder sister, Fanny, and published under his name years earlier, along with several of her other songs. Fanny Mendelssohn was, by many accounts, as gifted as her brother; both received a rigorous musical education as children, but their paths soon diverged. Their father wrote to her that music might become Felix's profession, whereas for her it could only ever be an ornament, never the foundation of her life. The social expectations imposed on a woman of her class pointed the same way. Fanny nevertheless composed more than four hundred works, and she organized private Sunday concerts at the family home in Berlin where many of them were heard. Only in 1846, encouraged by friends, did she begin publishing music under her own name, but she died suddenly the following year, at forty-one. For more than a century her reputation remained ____, and much of her music has been performed and recorded only in recent decades."
+},
+{
+"id": "r2-s6",
+"text": "In 1955 the British historian C. Northcote Parkinson published a satirical essay in The Economist that began with a sentence still quoted in offices around the world: work expands so as to fill the time available for its completion. An elderly lady with a whole day free, he observed, might squander hours writing and sending a single postcard, a task a busy person would dispatch in minutes. Behind the jest lay a serious contention about organizations. Officials, Parkinson argued, want to multiply subordinates rather than rivals, and they create work for one another, so that the size of a bureaucracy grows irrespective of how much there is to do. His favorite example was the British Royal Navy, whose administrative staff grew substantially between 1914 and 1928 even as the number of its major warships dwindled sharply. Parkinson added a further observation, sometimes called the law of triviality. A committee asked to approve a costly nuclear reactor, he suggested, might pass it in minutes, because few members grasped its intricacies, and then wrangle at length over the cost of a bicycle shed, a subject everyone felt competent to discuss. Though his essays were written as satire, managers and economists have found them uncomfortably ____, and his phrases have entered everyday speech."
+},
+{
+"id": "r2-s7",
+"text": "Coffee reached England in the mid-seventeenth century, and the first English coffeehouse is generally said to have opened in Oxford around 1650. Within a few decades hundreds had proliferated across London. For the price of a cup, customers could linger for hours, read the newspapers and pamphlets kept on the tables, and argue with strangers about politics, science, and commerce. Because a visitor could acquire an education in current affairs for about a penny, the coffeehouses were nicknamed penny universities. Particular houses attracted particular crowds. Scientists congregated at some, writers at others, and merchants and ship captains at a house run by Edward Lloyd, where reliable shipping news drew people who wanted to insure vessels and cargoes; the insurance market Lloyd's of London evolved from those gatherings. Not everyone approved of such establishments. In 1675 King Charles II, suspecting that coffeehouses were breeding grounds for dissent against his government, issued a proclamation ordering them closed. The public outcry was so vehement that the order was withdrawn within days, before it had even taken effect. For historians, the coffeehouses show how new social spaces can <u>disseminate</u> information and opinion far beyond the reach of official channels."
+},
+{
+"id": "r2-s8",
+"text": "In August 2024 the World Health Organization declared the spread of mpox a public health emergency of international concern, its highest level of alarm. It was the second such declaration in two years. In 2022 a different lineage of the virus had spread rapidly across dozens of countries, mainly through close sexual contact, before cases plummeted with vaccination and changes in behavior. The 2024 alarm was driven by a newer strain spreading in the Democratic Republic of the Congo and adjacent countries, where it was afflicting adults and children alike. A day earlier, the African Union's public health agency had declared its own continental emergency, the first in its history. The disease causes fever and painful skin lesions and can be lethal, especially for young children and people with weakened immune systems. Efficacious vaccines exist, but in 2024 most doses were held by affluent countries, while the places with the greatest need had very few. Health officials pointed out that the same disparity had been evident during the Covid-19 pandemic. Donations and new purchases belatedly began to arrive, yet they amounted to only a fraction of what was required. Many experts argued that the episode showed once again that, against infectious disease, global ____ is not charity but self-protection."
+},
+{
+"id": "r2-s9",
+"text": "The rehearsal hall smelled of rosin and wet umbrellas. I had enrolled in the community orchestra in October and had been placed, to my dismay, at the back of the second violins beside a man named Mr. Petrov, who was eighty-three and a veteran of forty years in a professional orchestra. I was certain he could hear every wrong note I played — and he could. For the first month he said nothing; then, during a break, he leaned toward me and pointed at a passage I had been fumbling for weeks. \"You are playing the notes,\" he said, \"but you are not listening to the cellos.\" I was baffled. He told me to stop staring at the page during the next run-through, to watch the cellists' bows instead, and to come in only when I could feel their phrase arriving. It felt preposterous. But when the passage came, I heard for the first time that my part was not a line of its own but an answer to theirs. At the concert in December I still played wrong notes, perhaps more than in rehearsal. Afterward Mr. Petrov shook my hand and said only, \"Better. Now you are <u>inside the music</u>.\" I have tried to stay there ever since."
+},
+{
+"id": "r2-s10",
+"text": "Of all the philosophers of ancient Greece, few left behind more stories and fewer writings than Diogenes of Sinope. None of his works are extant; what we know comes largely from anecdotes compiled centuries later, many of which may be exaggerated. According to these accounts, Diogenes lived in Athens in a large ceramic storage jar, owned almost nothing, and subsisted by begging. On seeing a child drink water from cupped hands, he is said to have thrown away his only cup, ashamed to have been outdone in simplicity. Diogenes belonged to a school later called the Cynics, from the Greek word for dog, an epithet he seems to have embraced. His <u>austere</u> way of life was not merely a personal preference but a form of argument. He believed that most human customs, wealth, and social rank were contrived, and that a person who needed nothing could not be manipulated by anyone. He made his case through public spectacle: he was said to roam the marketplace in daylight carrying a lamp, claiming to be searching for an honest man. When Alexander the Great supposedly visited him and asked what he could do for him, Diogenes replied that the king could step aside, since he was blocking the sunlight."
+},
+{
+"id": "r2-s11",
+"text": "In January 2025 the Bulletin of the Atomic Scientists moved the hands of its Doomsday Clock to eighty-nine seconds to midnight, the closest they have ever been to the symbolic hour of global catastrophe. The clock was created in 1947 by scientists, many of whom had worked on the first atomic bombs and sought to alert the public to the dangers they had helped to unleash. It was first set at seven minutes to midnight, and in the decades since, a board of experts has moved it forward and back in response to geopolitical events. It reached its farthest point, seventeen minutes, in 1991, after the end of the Cold War and new agreements to cut nuclear arsenals. Today the board's deliberations extend beyond nuclear weapons — its announcements also weigh climate change, biological threats, and the misuse of new technologies such as artificial intelligence. In 2025 it cited escalating nuclear tensions among major powers and the absence of tangible progress on several of these risks. Supporters say the clock remains an evocative way to condense intricate dangers into a single image that anyone can grasp. Critics reply that it quantifies nothing precisely, that its settings reflect the subjective judgments of a small coterie, and that a clock which has hovered near midnight for years risks making alarm ____ rather than galvanizing action."
+},
+{
+"id": "r2-s12",
+"text": "In 1993 the psychologist Anders Ericsson and his colleagues published a study of violin students at a music academy in Berlin. The best students, those their teachers expected to become international soloists, had accumulated far more hours of solitary, focused practice by the age of twenty than students who were merely good. Ericsson argued that expert performance is cultivated largely through what he called deliberate practice: effortful work on particular deficiencies, guided by a teacher and by immediate feedback, as opposed to simply playing pieces one already enjoys. The idea was later popularized, in simplified form, as a rule that ten thousand hours of practice can make anyone an expert, a version Ericsson himself repudiated. Later research has muddied the picture. A large meta-analysis published in 2014 synthesized dozens of studies and found that the amount of practice explained a substantial share of differences in performance in games such as chess and in music, a smaller share in sports, and very little in academic education and many professions. Other factors, including the age at which training starts, working memory, and perhaps genetic differences, are also implicated, though few researchers doubt that practice is indispensable. The debate centers on how much variance it explains, and which kinds of practice most reliably <u>fortify</u> performance."
+},
+{
+"id": "r3-p10",
+"text": "On the morning of June 30, 1908, witnesses in a remote part of Siberia saw a column of blue light streak across the sky, followed by a flash and a shock wave that knocked people off their feet dozens of kilometers away. Near the Tunguska River, some eighty million trees were leveled across an expanse of more than two thousand square kilometers. Because the region was so inaccessible, and because Russia was soon engulfed by war and revolution, no scientific expedition reached the site until 1927. Its leader, Leonid Kulik, anticipated finding a great crater and a buried meteorite, but he found neither; instead, the fallen trees radiated outward from a central zone where some trunks still stood upright, denuded of their branches. Most scientists now surmise that a rocky or icy body from space exploded in the air several kilometers above the ground, releasing its energy before it could strike the surface."
+},
+{
+"id": "r3-p11",
+"text": "The word gentrification was coined in 1964 by the British sociologist Ruth Glass to characterize what she observed happening in parts of London: middle-class newcomers buying up dilapidated working-class houses, renovating them, and gradually transforming the character of whole districts. Six decades later, the term has migrated to cities around the world, and it has rarely been more contested. Critics point to escalating rents that displace long-time residents and the small shops that served them, replacing hardware stores and cheap cafés with boutiques that few locals can afford. Some economists, however, have found that low-income residents of gentrifying neighborhoods are not always more likely to move away than residents of poorer areas that remain unchanged, and that those who stay may profit from safer streets and better services. The debate is partly empirical and partly a matter of values: whether a neighborhood belongs chiefly to those who live there now or to anyone willing to pay to move in."
+},
+{
+"id": "r3-p12",
+"text": "For most of the twentieth century, doctors presumed that stomach ulcers were caused mainly by stress, spicy food, and excess acid; treatment consisted of bland diets, antacids, and in grave cases surgery, and ulcers often came back. Around 1982 the Australian pathologist Robin Warren and a young physician, Barry Marshall, proposed an alternative explanation: a spiral-shaped bacterium, later named Helicobacter pylori, that colonized the stomach lining of many ulcer patients. The idea met fierce resistance, since most experts were convinced that no bacterium could survive for long in such an acidic environment. Unable to infect laboratory animals, Marshall took a drastic step in 1984: he drank a culture of the bacteria, developed acute stomach inflammation within days, and then cured himself with antibiotics. Over the following decade the evidence accumulated and antibiotic treatment became standard; in 2005 the two men were awarded a Nobel Prize for their discovery."
+},
+{
+"id": "r3-p13",
+"text": "For more than a century the diamond industry extolled its gems as rare, eternal, and the quintessential symbol of lasting love — a message that now faces an unprecedented challenge. Diamonds grown in laboratories, either by replicating the crushing pressure and heat deep inside the Earth or by depositing carbon atoms layer by layer from a gas, are chemically and physically identical to mined stones. Even trained jewelers cannot differentiate them without specialized equipment that detects subtle discrepancies in how the crystals grew. As production has burgeoned, the price of laboratory diamonds has fallen steeply, and in some markets they now constitute a large share of engagement rings. Mined diamonds have also become cheaper. Producers of natural stones argue that their gems carry a story billions of years in the making, while critics reply that much of the value of any diamond was always a matter of marketing rather than of scarcity."
+},
+{
+"id": "r3-p14",
+"text": "When the Portuguese poet Fernando Pessoa died in Lisbon in 1935, he was known only to a small circle of readers, and just one book of his poetry in Portuguese had appeared under his own name. He left behind a trunk holding more than twenty-five thousand pages of manuscripts and typescripts, many of them written not as Pessoa at all. Over his lifetime he conceived dozens of literary personas, which he called heteronyms, each with its own biography, philosophy, and style. Alberto Caeiro was a country poet who distrusted thought and wished only to see things as they are; Ricardo Reis was a doctor who wrote restrained odes in a classical manner; Alvaro de Campos was a naval engineer whose poems teemed with noise and modern machines. These were not mere pseudonyms: Pessoa had them disagree with one another, critique one another's work, and he even cast their horoscopes. Scholars are still cataloguing the trunk's contents, and new texts continue to appear."
+},
+{
+"id": "r3-p15",
+"text": "Why is water, without which no one can live, so cheap, while diamonds, which serve almost no utilitarian purpose, are so expensive? Adam Smith posed this conundrum in The Wealth of Nations in 1776, distinguishing between the value of a thing in use and its value in exchange. He did not fully resolve it. The resolution emerged about a century later, when several economists working independently, among them the Austrian Carl Menger and Léon Walras, a French economist working in Lausanne, developed the idea of marginal utility. What determines price, they argued, is not the total usefulness of a good but the usefulness of one more unit of it. Because water is usually abundant, an extra glass adds little to our well-being, so we will pay little for it; diamonds are scarce, so an additional one is prized. The calculus changes with circumstances: a traveler lost in a desert might gladly barter a diamond for a single bottle of water."
+},
+{
+"id": "r3-p16",
+"text": "March 3. Experiment 14 failed, like the previous thirteen: the protein refuses to crystallize; every tray shows the same gray sludge, and my supervisor says nothing, which is worse than criticism; I have started to wonder whether I am simply not suited to this work.\nMarch 9. Changed the temperature again. Nothing. A first-year student asked me how long it usually takes to get crystals, and I laughed in a way that frightened us both.\nMarch 17. Tray 6, well C4: something glittering under the microscope. Too small to be sure. I did not tell anyone in case it vanishes by morning.\nMarch 18. It did not disappear. Three tiny needles, sharp-edged and translucent. I photographed them eleven times. My supervisor scrutinized them for a long while and said, \"Well. Now we have something to argue about.\" From him, that is practically an oration. I walked home in the rain without an umbrella and did not notice until I reached the door."
+},
+{
+"id": "r3-s1",
+"text": "Weapons that can select and attack targets without a human decision at the moment of attack are no longer the stuff of science fiction. Rudimentary versions, such as defensive systems that automatically fire at incoming missiles, have existed for decades. What has changed is the proliferation of cheap drones and image-recognition software, which together make it possible to build machines that search for, identify, and strike targets autonomously. Reports from recent conflicts suggest that drones with increasing degrees of autonomy are already being deployed on the battlefield. Diplomats have deliberated over the issue since 2014 under a United Nations weapons convention in Geneva, but those talks operate by consensus, and a few states have been able to block binding rules. In December 2023 the UN General Assembly adopted its first resolution on lethal autonomous weapons, voicing apprehension about their risks, and the UN Secretary-General and the International Committee of the Red Cross jointly urged states to conclude a treaty by 2026. Many proposals revolve around the idea of meaningful human control: a person, not an algorithm, should remain responsible for decisions to use lethal force. Opponents of a ban contend that well-designed systems might make fewer errors than fatigued or frightened soldiers. Supporters reply that the real danger lies in removing ____ from killing, so that no identifiable person answers for a machine's mistake."
+},
+{
+"id": "r3-s2",
+"text": "In 2014 a British company unveiled Vantablack, a coating made of tiny carbon tubes standing upright like a dense forest. Light entering the forest ricochets between the tubes until almost all of it is absorbed, and the original coating reflected only a minute fraction of the light that struck it. Objects covered in it seem to lose their shape and become flat holes in space. The substance itself was engineered for a scientific purpose: suppressing stray light in telescopes and satellite instruments. The art world took a different interest. In 2016 the sculptor Anish Kapoor acquired the exclusive right to use a version of Vantablack in art, and many artists were incensed that a single person could monopolize a color. One of them, the painter Stuart Semple, responded by releasing a vivid pink pigment that anyone could buy, except, according to its terms of sale, Anish Kapoor. Semple went on to produce affordable ultra-black paints of his own for general sale. The dispute raised a weighty question in a whimsical form. Artists have always depended on the materials at their disposal, but when a pigment is a patented industrial product rather than a pulverized mineral, access to color can become a matter of legal ____ rather than of skill."
+},
+{
+"id": "r3-s3",
+"text": "In June 2024 two veteran NASA astronauts, Butch Wilmore and Suni Williams, launched to the International Space Station aboard Boeing's Starliner capsule on its first crewed test flight. The visit was supposed to last about a week; during the approach to the station, however, several of the capsule's thrusters failed and small helium leaks were detected. Engineers spent weeks analyzing the malfunctions, and ultimately NASA concluded that bringing the crew home in Starliner was too risky. The capsule returned to Earth uncrewed in September, touching down safely, while the two astronauts remained on the station, where their stay was prolonged to more than nine months. They finally came home in March 2025 aboard a SpaceX Dragon capsule. Much of the public coverage described them as stranded, a word both astronauts politely rejected. They were seasoned professionals, they pointed out, aboard a well-supplied station, and they spent the extra months on routine station work, from experiments to repairs and spacewalks. The episode nevertheless dealt a blow to Boeing, whose program had already endured years of delays and cost overruns, and it underscored NASA's reliance on a single company for crew transport. Space agencies have long argued that keeping two independent ways to reach orbit is a matter of ____, not luxury."
+},
+{
+"id": "r3-s4",
+"text": "In the early 1960s geologists began reporting an anomaly. Rocks deposited by glaciers, with their characteristic jumble of striated stones, kept turning up in layers roughly seven hundred million years old in places that, according to magnetic evidence, had then lain close to the equator. If ice had reached the tropics, had the whole planet frozen over? For years many geologists considered the idea barely <u>tenable</u>. A frozen Earth would reflect so much sunlight back into space that it should have stayed frozen forever, yet life evidently survived and the ice eventually vanished. In 1992 the geologist Joseph Kirschvink gave the hypothesis its memorable name, Snowball Earth, and proposed a way out: even on an icy planet, volcanoes would continue to emit carbon dioxide. With oceans sealed under ice and little exposed rock to absorb the gas, it would slowly accumulate over millions of years until the greenhouse effect became potent enough to melt the ice, perhaps quite abruptly. Anomalous layers of carbonate rock lying directly on top of the glacial deposits seem to chronicle that abrupt warming, though debate continues over whether the oceans froze completely or left open water near the equator, a version some call Slushball Earth."
+},
+{
+"id": "r3-s5",
+"text": "Deep in the Brazilian Amazon, a few hundred people speak Pirahã, a language unrelated to any other living tongue. Much of what the outside world knows about it comes from Daniel Everett, an American who arrived in the 1970s as a missionary, spent years immersed among the Pirahã, and eventually became a linguist and renounced his religious faith. In 2005 Everett published a paper that provoked one of the fiercest debates in modern linguistics. He reported that Pirahã appeared to lack recursion, the ability to place one phrase or clause inside another of the same kind, as in the sentence I think that you said that it rained. Many linguists, following Noam Chomsky, had treated recursion as the defining feature shared by all human languages. Everett also claimed that the language had no words for exact numbers, only terms meaning roughly a small amount and a larger amount, and he attributed these features to a culture focused on immediate experience. Critics retorted sharply. Some reanalyzed his own recordings and argued that Pirahã does contain embedded structures, while others noted that few outsiders could verify his claims because so few people speak the language. The dispute remains unresolved, partly because the evidence comes from so ____ a source."
+},
+{
+"id": "r3-s6",
+"text": "For sale: baby shoes, never worn. These six words are often called the shortest story ever written, and they are almost always attributed to Ernest Hemingway. According to a popular legend, he wrote them to win a bet with fellow writers who doubted that a complete story could be told in so few words. The tale is beguiling, and it fits Hemingway's reputation for <u>terse</u> prose, stripped of ornament and full of meaning left unsaid. Unfortunately, there is no evidence that he ever wrote it. The anecdote about the bet did not appear in print until decades after his death, and researchers have unearthed newspaper notices with strikingly similar wording from the early twentieth century, when Hemingway was still a child. The real history is in some ways more intriguing. Small advertisements were charged by the word, so sellers had every reason to be concise, and a notice offering unused baby clothes could allude to a private grief that the advertiser never spelled out. Readers seem to have felt the poignant power of such lines long before anyone credited them to a famous author. Today the phrase has spawned whole collections of six-word memoirs, in which ordinary people try to sum up their lives in the same compressed form."
+},
+{
+"id": "r3-s7",
+"text": "Venezuela once had six glaciers high in the Andes, in the Sierra Nevada de Mérida — but by the twenty-first century only one remained, the Humboldt glacier, and it was receding fast. In 2024 scientists reported that it had dwindled to less than two hectares, far too small to be classified as a glacier, and it was reclassified as an ice field. With that, Venezuela became the first country in modern times known to have lost all of its glaciers. Researchers anticipate that others will follow; small glaciers in countries such as Indonesia, Mexico, and Slovenia are also shrinking. In late 2023 the Venezuelan government had attempted a salvage operation, covering part of the remaining ice with a large thermal blanket meant to reflect sunlight and slow the melting. Scientists were skeptical. The ice was already too diminished to salvage, they said, and the blanket might shed plastic fibers into the fragile mountain environment. Above all, they argued, such measures address <u>the symptom rather than the disease</u>: tropical glaciers are vanishing because the planet is warming, and no covering on a single mountainside can change that. The loss is partly symbolic, since the glacier furnished little water, but it also eliminates a habitat and a landmark cherished by local communities for generations."
+},
+{
+"id": "r3-s8",
+"text": "It is often said that William Shakespeare invented thousands of English words, and the claim has a reputable source. When the editors of the great Oxford English Dictionary began compiling examples in the nineteenth century, they relied heavily on eminent authors, and Shakespeare's works had been studied more closely than almost any other texts of his time. As a result, his plays often furnished the earliest recorded example of a word, and readers understandably inferred that he had coined it. The digital age has muddied this picture. Once millions of pages of sixteenth- and seventeenth-century books, pamphlets, and sermons were scanned and made searchable, researchers found many supposedly Shakespearean words in texts written years or decades before his plays. Such discoveries <u>belie</u> the popular image of a lone genius stocking the language single-handedly. Shakespeare was still an extraordinary innovator. He combined existing words in fresh ways, turned nouns into verbs with remarkable audacity, and gave phrases a memorable form that ensured their survival. But he worked within a language that was expanding rapidly on its own, as writers borrowed freely from Latin, French, and other tongues. His real achievement, many scholars now maintain, was less to invent new words than to show what could be done with them."
+},
+{
+"id": "r3-s9",
+"text": "Few countries have embraced digital payment as enthusiastically as Sweden. Cash now accounts for only a meager share of purchases there, many shops and cafés refuse banknotes altogether, and a mobile payment app is used by most of the adult population. For a time, Sweden was held up as a paragon of the cashless future, and its efficiency is undeniable: digital transactions are fast, easy to record, and difficult for criminals to hide. Lately, however, Swedish authorities have begun to have second thoughts, partly because some groups find digital payment daunting, including many elderly people, recent immigrants without bank accounts, and people with certain disabilities. A more pressing worry, though, concerns resilience. If power grids or communication networks falter, through storms, technical faults, or a deliberate attack, a society that has abandoned cash may find itself unable to procure food or medicine. Sweden's central bank has urged lawmakers to make sure that essential services continue to accept cash, and civil defense guidance encourages households to keep a small amount at home for emergencies. These efforts do not reflect antipathy toward technology. Their aim, which most observers consider <u>laudable</u>, is to ensure that convenience for the many does not become a snare for the vulnerable or a weakness in a crisis."
+},
+{
+"id": "r3-s10",
+"text": "In the summer of 1954 the social psychologist Muzafer Sherif conducted an experiment at a camp in Robbers Cave State Park in Oklahoma. Twenty-two eleven-year-old boys, homogeneous in background and strangers to one another, were divided into two groups and brought to the camp separately. For about a week each group bonded on its own, choosing a name, the Eagles and the Rattlers, and developing its own customs. Then the researchers introduced a tournament of competitive games with prizes for the winners, and hostility escalated quickly: the groups burned each other's flags, ransacked each other's cabins, and refused to eat together. Simply bringing the boys together for pleasant activities, such as watching films, did not defuse the conflict. What worked, Sherif reported, were superordinate goals, problems that neither group could solve alone, such as repairing a broken water supply or pooling money to rent a film. Cooperation on such tasks gradually eroded the rivalry. Later scholars have pointed out that Sherif's earlier attempt at a similar study had collapsed when the boys turned against the staff instead, and that the experimenters orchestrated events more than their reports acknowledged. The study remains influential, but perhaps more as a vivid illustration than as ____ proof."
+},
+{
+"id": "r3-s11",
+"text": "Ludwig van Beethoven began to lose his hearing in his late twenties, and by his late forties he could barely follow a conversation. From about 1818 his visitors therefore wrote their side of the exchange in notebooks, while Beethoven usually answered aloud. Some four hundred of these conversation books are thought to have existed, and the roughly 140 that survive are an invaluable record. They capture discussions of politics, money, his nephew's tribulations, and his music, along with shopping lists and grievances about servants — yet they are also a cautionary tale about historical sources. After Beethoven's death, his secretary and early biographer Anton Schindler retained the books, and he destroyed many of them. Worse, in the 1970s scholars ascertained that Schindler had added entries of his own after the composer's death, fabricating conversations that made himself appear a closer and more trusted friend than he had been. Some of the best-known anecdotes about Beethoven turned out to rest on these forgeries; yet the surviving genuine pages also enrich our sense of the man. At the premiere of his Ninth Symphony in 1824, Beethoven, unable to hear the applause, had to be turned around to see the audience on its feet, a scene that the books help to place within the long silence of his later years."
+},
+{
+"id": "r3-s12",
+"text": "Does health insurance make people healthier? The question sounds straightforward, but it is hard to answer, because people who have insurance differ from those who do not in income, education, and myriad other ways. In 2008 the state of Oregon inadvertently created an ideal test. Having funds to enroll only some of the low-income adults who wanted to join its public insurance program, it held a lottery, randomly drawing names from a waiting list of about ninety thousand people. Researchers then compared the winners, who could apply for coverage, with those who were not chosen; the results, published over the following years, were mixed. Within two years, those given access to insurance used more health care, including doctor visits and prescriptions; they were far less likely to face catastrophic medical bills, and rates of depression were appreciably lower. However, the study found no statistically significant improvement in measures such as blood pressure and cholesterol. Each side of the American health care debate seized on the findings that bolstered its position. Many economists argued that the most <u>germane</u> result was the reduction in financial strain, since protecting people from ruinous costs is the fundamental purpose of insurance."
+}
+],
+"q": [
+[
+1,
+1,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nMany of the dance crazes that sweep across social media prove <u>ephemeral</u>; a routine copied by millions of teenagers in March is often forgotten entirely by the start of the summer holidays.",
+[
+"fleeting",
+"perennial",
+"contagious",
+"ostentatious",
+"intractable"
+],
+[
+1
+],
+"ephemeral 은 '아주 짧게 가는, 덧없는'이라 fleeting(잠깐 스치는)과 가까워요. 3월에 수백만이 따라 한 춤이 여름 방학 전에 잊힌다는 뒤 내용이 단서예요. perennial(오래 이어지는)은 반대예요."
+],
+[
+2,
+1,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nThe professor's lectures on medieval church law were so <u>recondite</u> that even her doctoral students admitted they followed barely half of the references, most of which came from manuscripts that had never been translated.",
+[
+"pellucid",
+"rudimentary",
+"esoteric",
+"transparent",
+"trite"
+],
+[
+3
+],
+"recondite 는 '소수만 아는, 난해한'이라 esoteric 과 가까워요. 박사 과정 학생도 절반밖에 못 따라갔고 번역된 적 없는 필사본을 인용했다는 내용이 단서예요. pellucid(명쾌한)·rudimentary(기초적인)는 반대쪽이에요."
+],
+[
+3,
+1,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nThe new director was exasperated by the <u>obsequious</u> manner of several staff members, who laughed loudly at all of his jokes and praised each of his decisions before they had even heard the details.",
+[
+"truculent",
+"aloof",
+"sycophantic",
+"punctilious",
+"diffident"
+],
+[
+3
+],
+"obsequious 는 '지나치게 비위를 맞추는, 아첨하는'이라 sycophantic 과 같은 뜻이에요. 농담마다 크게 웃고 내용도 듣기 전에 결정을 칭찬했다는 예가 단서예요. truculent(공격적인)·aloof(쌀쌀맞은)는 반대 방향이에요."
+],
+[
+4,
+1,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nThe new biography exposes the senator's <u>mendacity</u> in excruciating detail, placing his public speeches side by side with private letters in which he admitted the very facts he had repeatedly denied.",
+[
+"dishonesty",
+"probity",
+"candor",
+"magnanimity",
+"arrogance"
+],
+[
+1
+],
+"mendacity 는 '거짓말하는 버릇, 허위'라 dishonesty(부정직, 거짓)와 가까워요. 공개 연설에서 부인한 사실을 사적 편지에서는 인정했다는 대비가 단서예요. probity(정직)·candor(솔직함)는 반대예요."
+],
+[
+5,
+1,
+"cloze",
+null,
+"빈칸에 들어가기에 가장 알맞은 것을 고르시오.\nHer reply to the reporter was deliberately ____: she neither confirmed nor denied the rumor, leaving both her supporters and her critics free to read whatever they wished into her words.",
+[
+"categorical",
+"unequivocal",
+"evasive",
+"truculent",
+"ostentatious"
+],
+[
+3
+],
+"콜론 뒤에서 확인도 부인도 하지 않았다고 풀어 주니 '얼버무리는(evasive)' 답이에요. categorical·unequivocal(딱 잘라 말하는)은 정반대예요."
+],
+[
+6,
+1,
+"cloze",
+null,
+"빈칸에 들어가기에 가장 알맞은 것을 고르시오.\nAfter decades of drought, the once ____ valley now supports little more than thorny shrubs, and the orchards that fed three villages survive only in old photographs.",
+[
+"fecund",
+"barren",
+"arid",
+"frigid",
+"diffident"
+],
+[
+1
+],
+"once(한때)는 지금과 반대인 예전 모습을 말해요. 지금은 가시덤불만 남았으니 예전에는 '비옥한(fecund)' 골짜기였어요. barren·arid(메마른)는 지금 모습이라 once 와 어울리지 않아요."
+],
+[
+7,
+1,
+"cloze",
+null,
+"빈칸에 들어가기에 가장 알맞은 것을 고르시오.\nVisitors to a hillside in central Utah see what appears to be a forest of roughly forty-seven thousand aspen trees. Genetic tests, however, have shown that the trunks are not discrete individuals at all. They rise from a single vast root system and share identical DNA, so the grove, known as Pando, is better described as one enormous organism. Ecologists now worry that it can no longer ____ itself: deer and cattle eat the young shoots before they can replace the aging trunks.",
+[
+"irrigate",
+"obfuscate",
+"exacerbate",
+"disseminate",
+"regenerate"
+],
+[
+5
+],
+"콜론 뒤에서 어린 싹을 동물이 먹어 늙은 줄기를 대신하지 못한다고 하니, 숲이 스스로 '되살아나지(regenerate)' 못한다는 걱정이에요. 나머지는 '물을 대다·흐리다·악화하다·퍼뜨리다'라 itself 와 뜻이 맞지 않아요."
+],
+[
+8,
+1,
+"grammar",
+null,
+"다음 글의 밑줄 친 ①~⑤ 가운데 어법상 옳지 않은 것을 고르시오.\nChess historians agree ①<u>that the game reached Europe</u> through the Islamic world, but they still argue about ②<u>where it was first played</u>. One theory holds that an Indian game called chaturanga, ③<u>whose pieces represented</u> the four divisions of an ancient army, was its direct ancestor. What remains puzzling is ④<u>what the earliest written rules describe</u> a game already quite different, a fact ⑤<u>that some scholars explain</u> by centuries of lost development.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+4
+],
+"What remains puzzling is 뒤에는 보어가 되는 명사절이 와요. 'the earliest written rules describe a game' 은 주어·동사·목적어가 다 갖춰진 완전한 절이라 what 이 아니라 that 이 맞아요. where it was first played 는 의문사절, whose pieces 는 소유격 관계사, a fact that 은 관계절이라 모두 맞아요."
+],
+[
+9,
+1,
+"cloze",
+null,
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.\nIn 1848 an iron rod more than a meter long shot through the skull of Phineas Gage, a railway foreman in Vermont, when an explosive charge detonated prematurely. Astonishingly, he survived and within weeks could walk and talk. According to his physician, however, the once dependable foreman became (A) ____, quick to anger, profane, and unable to keep to his plans. His case became early evidence that particular regions of the brain shape personality. Later historians note that the most lurid accounts of his decline were written long after his death, and that he spent his final years driving coaches in Chile, which suggests that he may have (B) ____ more than the legend admits.",
+[
+"(A) choleric — (B) regressed",
+"(A) placid — (B) recuperated",
+"(A) equable — (B) regressed",
+"(A) complacent — (B) dissembled",
+"(A) choleric — (B) recuperated"
+],
+[
+5
+],
+"(A) 바로 뒤 quick to anger(쉽게 화내는)와 나란히 놓였으니 '성마른(choleric)'이 맞아요. placid·equable(차분한)은 반대예요. (B) 말년에 칠레에서 마차를 몰았다니 전설보다 더 '회복했다(recuperated)'는 추측이에요."
+],
+[
+10,
+1,
+"reading",
+"r1-p10",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Tycho built his observatory after the telescope had been invented.",
+"Tycho accepted Copernicus's view that the Earth moves around the Sun.",
+"The Danish king took the island of Hven away from Tycho in 1576.",
+"Tycho's measurements were always less precise than those made by earlier astronomers.",
+"Kepler used Tycho's records to support a theory that Tycho himself had opposed."
+],
+[
+5
+],
+"티코가 죽은 뒤 케플러가 티코의 관측 기록으로 행성의 타원 궤도를 보여, 티코가 거부한 태양 중심설을 오히려 굳혔다고 했어요. 망원경 발명 전에 관측했고, 코페르니쿠스 체계를 거부했으며, 1576년에 섬을 '받았고', 측정은 그 전 누구보다 정밀했어요."
+],
+[
+11,
+1,
+"reading",
+"r1-p11",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Naked mole-rats usually live for only about as long as mice do.",
+"Naked mole-rats spend much of their time in the open grassland.",
+"Cancer is a common cause of death among naked mole-rats.",
+"A colony normally has a single female that produces young.",
+"The animals died within minutes when deprived of oxygen."
+],
+[
+4
+],
+"한 군락에 새끼를 낳는 암컷은 여왕 하나뿐이라고 했어요. 쥐보다 훨씬 오래 살고(30년 넘게), 평생 땅속에서 지내며, 암은 아주 드물고, 산소 없이 18분을 버텼어요."
+],
+[
+12,
+1,
+"reading",
+"r1-p12",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"The age of the painting was estimated from mineral layers that formed over it.",
+"The Sulawesi painting is younger than the oldest cave art in Europe.",
+"The painting shows a herd of bison and horses.",
+"Researchers dated the painting only by analyzing the chemistry of its red pigment directly.",
+"The scene contains no suggestion of a story."
+],
+[
+1
+],
+"물감이 아니라 그 위에 생긴 얇은 광물 껍질의 우라늄 붕괴를 재어 나이를 매겼다고 했어요. 유럽 동굴 벽화보다 수천 년 넘게 오래됐고, 사람 모습 셋과 멧돼지를 그렸으며, 이야기를 담은 듯하다고 했어요."
+],
+[
+13,
+1,
+"reading",
+"r1-p13",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Only accurate statements became more believable when repeated.",
+"Repetition can raise belief even in claims that conflict with what people know.",
+"Familiar claims are harder for the mind to process than new ones.",
+"Experts always recommend repeating a myth several times before finally correcting it.",
+"The effect was first described in a study of political advertising."
+],
+[
+2
+],
+"뒷날 연구에서 이미 아는 사실과 어긋나는 주장도 되풀이하면 더 믿게 됐다고 했어요. 정확성과 상관없이 효과가 있었고, 익숙한 주장이 더 처리하기 쉬우며, 전문가들은 거짓은 짧게만 말하라고 하고, 첫 연구는 상식 문장 실험이었어요."
+],
+[
+14,
+1,
+"reading",
+"r1-p14",
+"글의 내용과 들어맞지 않는 것을 고르시오.",
+[
+"Rongorongo has been deciphered with the help of islanders who could read it.",
+"Early European visitors did not mention writing on the island.",
+"The surviving rongorongo objects are kept in different museums.",
+"Many people who might have read the signs died in the nineteenth century.",
+"The dating of one tablet challenged the idea that the script came after 1770."
+],
+[
+1
+],
+"롱고롱고는 아무도 해독하지 못했고 읽을 줄 알던 사람들은 노예 사냥과 전염병으로 죽었다고 했으니 해독됐다는 말이 글과 어긋나요. 첫 방문자들이 글자를 말하지 않은 것, 여러 박물관에 흩어진 것, 2024년 연대 측정은 글과 같아요."
+],
+[
+15,
+1,
+"reading",
+"r1-p15",
+"글의 내용과 들어맞지 않는 것을 고르시오.",
+[
+"Pumping groundwater has contributed to the sinking of Jakarta.",
+"The new capital is being built on the same island as Jakarta.",
+"An Independence Day ceremony was held in Nusantara in 2024.",
+"Private investment in the project has fallen short of expectations.",
+"Critics doubt that the move will help people who stay in Jakarta."
+],
+[
+2
+],
+"새 수도 누산타라는 보르네오섬에 짓는다고 했으니 자카르타와 같은 섬이라는 말이 글과 어긋나요. 지하수 퍼 올리기로 인한 침하, 2024년 독립기념일 행사, 더딘 민간 투자, 남는 주민에 대한 비판은 글과 같아요."
+],
+[
+16,
+1,
+"reading",
+"r1-p16",
+"밑줄 친 부분이 뜻하는 바로 가장 알맞은 것을 고르시오.",
+[
+"A real pipe that Magritte refused to lend to the exhibition.",
+"A tobacco product that was banned in Belgium in 1929.",
+"An image that represents an object but can never be the object itself.",
+"A painting that most viewers found far too unrealistic to recognize as a pipe.",
+"A pipe that Magritte later gave to Michel Foucault."
+],
+[
+3
+],
+"캔버스 위 파이프는 물감으로 그린 '그림'이라 담배를 채울 수 없다고 했어요. 밑줄은 대상을 나타낼 뿐 대상 자체는 결코 될 수 없는 이미지를 뜻해요. 그림은 오히려 상품 목록처럼 사실적이었어요."
+],
+[
+17,
+1,
+"reading",
+"r1-s1",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"The Fukushima accident increased public support for nuclear power.",
+"SMRs are meant to be built entirely on site as unique projects.",
+"The project backed by Utah utilities was cancelled mainly because of public protests.",
+"SMRs have already proved cheaper than large nuclear plants.",
+"Supporters expect costs to fall as the same reactor design is built repeatedly."
+],
+[
+5
+],
+"지지자들은 같은 설계를 되풀이해 지으면 경험이 쌓여 값이 내려간다고 본다고 했어요. 후쿠시마는 반대를 굳혔고, 공장에서 만들어 옮겨 조립하는 방식이며, 유타 쪽 사업은 전기값 상승과 구매자 부족으로 취소됐고, 경제성은 아직 증명되지 않았어요."
+],
+[
+18,
+1,
+"reading",
+"r1-s1",
+"글의 빈칸에 들어가기에 가장 알맞은 것을 고르시오.",
+[
+"stalemate",
+"consensus",
+"hegemony",
+"renaissance",
+"anomaly"
+],
+[
+1
+],
+"많이 지어야 싸지는데, 싸진 게 증명되기 전엔 아무도 먼저 주문하지 않는다는 서로 물린 상황이에요. 이런 '교착 상태(stalemate)'가 깨져야 한다는 말이에요. consensus(합의)·renaissance(부흥)는 깨야 할 대상이 아니에요."
+],
+[
+19,
+1,
+"reading",
+"r1-s2",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Kafka published The Trial shortly before his death.",
+"Brod burned Kafka's diaries but kept his novels.",
+"All critics now agree that Brod made the right decision.",
+"Brod claimed that Kafka knew he would not destroy the papers.",
+"Kafka's papers passed to a library after Brod's death without any dispute."
+],
+[
+4
+],
+"브로트는 몇 해 전 그런 부탁은 들어주지 않겠다고 카프카에게 말했고, 카프카도 그걸 알았다고 변론했어요. 『소송』은 브로트가 사후에 냈고, 브로트는 아무것도 태우지 않았으며, 비평가 일부는 여전히 불편해하고, 도서관에 가기까지 수십 년 소송이 있었어요."
+],
+[
+20,
+1,
+"reading",
+"r1-s2",
+"글에서 밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.",
+[
+"ineluctable",
+"apparent",
+"clandestine",
+"irrevocable",
+"actual"
+],
+[
+2
+],
+"putative 는 '그렇다고 여겨지는, 추정상의'라 apparent(겉으로 그렇게 보이는)와 가까워요. 브로트는 그 '소원'이 진짜 명령이 아니라 자기 회의의 몸짓이었다고 보니, 겉으로만 그렇게 보였다는 뜻이에요. irrevocable(돌이킬 수 없는)은 뜻이 다르고, actual(실제의)은 '겉으로만 그렇게 여겨지는'과 반대예요."
+],
+[
+21,
+1,
+"reading",
+"r1-s3",
+"글의 내용과 들어맞지 않는 것을 고르시오.",
+[
+"Satellites carry only a small share of data that crosses the oceans.",
+"Users often do not notice cable breaks because traffic is rerouted.",
+"Most cable damage is caused by deliberate attacks.",
+"It is hard to tell whether damage from an anchor was intentional.",
+"Governments have increased naval patrols to protect the cables."
+],
+[
+3
+],
+"케이블 손상은 대부분 고기잡이 그물이나 닻 때문에 '사고로' 생긴다고 했으니 대부분 고의 공격이라는 말이 글과 어긋나요. 위성 몫이 작다는 것, 우회 덕에 잘 모른다는 것, 고의 증명이 어렵다는 것, 순찰 강화는 글과 같아요."
+],
+[
+22,
+1,
+"reading",
+"r1-s3",
+"글의 빈칸에 들어가기에 가장 알맞은 것을 고르시오.",
+[
+"paradox",
+"panacea",
+"renaissance",
+"concord",
+"hegemony"
+],
+[
+1
+],
+"콜론 뒤에서 '싸고 효율적으로 지은 시설을 이제 지켜야 한다'는 어긋남을 설명해요. 만든 목적과 지금 요구가 맞지 않으니 '역설(paradox)'이에요. concord(일치)는 반대 뜻이고, panacea(만병통치약)·hegemony(패권)·renaissance(부흥)는 문맥과 맞지 않아요."
+],
+[
+23,
+1,
+"reading",
+"r1-s4",
+"글의 내용과 들어맞지 않는 것을 고르시오.",
+[
+"Molyneux's question concerned a person who had been blind from birth.",
+"Locke believed that the newly sighted man would recognize the shapes at once.",
+"For centuries the question could not be tested by experiment.",
+"The children in the study had cataracts that could be treated.",
+"The children's ability to match touch and sight improved within days."
+],
+[
+2
+],
+"로크는 몰리뉴와 같이 '아니다', 곧 보자마자 알아보지 못한다고 했으니 곧바로 알아볼 거라 믿었다는 말이 글과 어긋나요. 태어날 때부터 눈먼 사람, 300년 동안 시험 불가, 치료 가능한 백내장, 며칠 만의 향상은 글과 같아요."
+],
+[
+24,
+1,
+"reading",
+"r1-s4",
+"글에서 밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.",
+[
+"indomitable",
+"ostentatious",
+"insidious",
+"flimsy",
+"venerable"
+],
+[
+4
+],
+"tenuous 는 '빈약한, 약한'이라 flimsy(얄팍한, 허술한)와 가까워요. 본 모양과 만진 모양을 맞히는 게 우연보다 조금 나은 정도였다는 앞 내용이 단서예요. indomitable(굴하지 않는)은 반대예요."
+],
+[
+25,
+1,
+"reading",
+"r1-s5",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"The committee declared that the nuclear taboo is now completely secure everywhere.",
+"Nihon Hidankyo was founded more than ten years after the atomic bombings.",
+"The group was created by American survivors of nuclear tests.",
+"Most surviving hibakusha are now in their fifties.",
+"Survivors rarely faced discrimination in Japanese society."
+],
+[
+2
+],
+"피폭자들은 원폭 투하 10여 년 뒤인 1956년에 단체를 만들었다고 했어요. 위원회는 핵 금기가 압박받고 있다고 했고, 단체는 일본 피폭자들이 만들었으며, 평균 나이는 여든이 훨씬 넘고, 결혼·일자리 차별을 겪었다고 했어요."
+],
+[
+26,
+1,
+"reading",
+"r1-s5",
+"글의 빈칸에 들어가기에 가장 알맞은 것을 고르시오.",
+[
+"ornamental",
+"onerous",
+"labyrinthine",
+"abstract",
+"poignant"
+],
+[
+4
+],
+"콜론 뒤 '사람의 얼굴이 아니라 교과서와 통계의 일'이라는 풀이와 맞는 건 '추상적인(abstract)' 기억이에요. poignant(가슴 아픈, 절절한)는 '사람의 얼굴이 아니라 교과서와 통계'와 반대이고, ornamental(장식용의)·labyrinthine(미로 같은)은 그 풀이와 이어지지 않아요."
+],
+[
+27,
+1,
+"reading",
+"r1-s6",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Oulipo writers believed that strict rules always destroy creativity.",
+"La Disparition is a short story of about thirty pages.",
+"Perec's parents survived the Second World War.",
+"The letter e is one of the rarest letters in French.",
+"The English translation of the novel also avoids the letter e."
+],
+[
+5
+],
+"길버트 어데어의 영어 번역 A Void 도 e 를 하나도 쓰지 않았다고 했어요. 울리포는 규칙이 창작을 자극한다고 믿었고, 소설은 300쪽쯤이며, 부모는 전쟁에서 목숨을 잃었고, e 는 프랑스어에서 가장 흔한 글자예요."
+],
+[
+28,
+1,
+"reading",
+"r1-s6",
+"글에서 밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.",
+[
+"embrace",
+"emulate",
+"forgo",
+"expound",
+"exacerbate"
+],
+[
+3
+],
+"eschew 는 '일부러 피하다, 삼가다'라 forgo(하지 않고 넘어가다)와 가까워요. e 가 든 수많은 흔한 낱말을 쓰지 않아야 했다는 문맥이에요. embrace(받아들이다)·emulate(본뜨다)는 반대 방향이에요."
+],
+[
+29,
+1,
+"reading",
+"r1-s7",
+"글의 내용과 들어맞지 않는 것을 고르시오.",
+[
+"Some members gave up their jobs before the predicted date.",
+"Festinger's team told the group about their research before joining it.",
+"The group began seeking publicity after the prophecy failed.",
+"The leader claimed that the world had been spared because of the light the group had spread.",
+"Later researchers have criticized some of the study's methods."
+],
+[
+2
+],
+"페스팅거 팀은 '목적을 밝히지 않고' 들어갔다고 했으니 미리 알렸다는 말이 글과 어긋나요. 직장을 그만둔 사람, 예언이 빗나간 뒤 언론에 연락한 일, 지도자의 새 메시지, 뒷날의 방법 비판은 글과 같아요."
+],
+[
+30,
+1,
+"reading",
+"r1-s7",
+"밑줄 친 부분이 뜻하는 바로 가장 알맞은 것을 고르시오.",
+[
+"They study the evidence more carefully and give up their belief.",
+"They admit their loss but deny having sacrificed anything.",
+"They ask outside experts to interpret the evidence for them.",
+"They forget the prediction and return to their ordinary lives.",
+"They change how they read the facts rather than admit they were wrong."
+],
+[
+5
+],
+"밑줄은 '손실을 인정하기보다 증거를 다르게 해석하는 편이 쉽다'는 뜻이에요. 실제로 지도자는 '우리 덕에 세상이 살았다'고 풀이했고 믿음은 더 굳어졌어요. 믿음을 버리거나 잊는 쪽은 글과 반대예요."
+],
+[
+31,
+1,
+"reading",
+"r1-s8",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Qubits easily resist heat, vibration, and stray signals.",
+"Experts agreed that the benchmark calculation had great practical value.",
+"Willow's error rate fell as larger groups of qubits were used.",
+"Adding qubits has always reduced errors in quantum computers.",
+"A logical qubit is made by splitting one physical qubit into many."
+],
+[
+3
+],
+"윌로는 큐비트 묶음이 커질수록 오류율이 '내려갔다'고 했어요. 큐비트는 열·진동에 매우 약하고, 벤치마크는 실용성이 없다고 했으며, 원래는 큐비트를 늘릴수록 오류가 늘었고, 논리 큐비트는 여러 물리 큐비트를 합친 거예요."
+],
+[
+32,
+1,
+"reading",
+"r1-s8",
+"글의 빈칸에 들어가기에 가장 알맞은 것을 고르시오.",
+[
+"obsolete",
+"innocuous",
+"imminent",
+"redundant",
+"nascent"
+],
+[
+5
+],
+"콜론 뒤 '유망하지만 일상에 쓰기엔 아직 멀었다'는 풀이와 맞는 건 '이제 막 생겨난, 초기의(nascent)'예요. imminent(곧 닥칠)는 far from ready 와 어긋나고, obsolete(낡은)는 유망하다는 말과 맞지 않아요."
+],
+[
+33,
+1,
+"reading",
+"r1-s9",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"How Digital Cameras Changed Modern Photography",
+"Thirty-Six Chances: Learning to Wait with an Old Camera",
+"A Shopkeeper's Guide to Repairing Old Cameras",
+"Why Film Photographs Are Always Sharper",
+"The Fish Market at Dawn"
+],
+[
+2
+],
+"버튼 한 번이 아까운 필름 서른여섯 장으로 한 달을 찍고, 현상까지 기다리며 망설임과 긴장을 겪는 이야기라 'Thirty-Six Chances' 가 맞아요. 사진의 3분의 1은 흐렸으니 필름 사진이 늘 더 선명하다는 제목은 틀리고, 새벽 어시장은 찍은 장면 하나일 뿐이에요."
+],
+[
+34,
+1,
+"reading",
+"r1-s9",
+"글에서 밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.",
+[
+"dissembled",
+"transient",
+"innocuous",
+"conspicuous",
+"ambivalent"
+],
+[
+4
+],
+"palpable 은 '손에 잡힐 듯 뚜렷한'이라 conspicuous(눈에 확 띄는)와 가까워요. 말없이 강사가 곁에서 콧노래를 불러 줄 만큼 긴장이 겉으로 드러났다는 문맥이에요. dissembled(감춘)는 반대예요."
+],
+[
+35,
+1,
+"reading",
+"r1-s10",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"English grammar requires speakers to mark the source of their information.",
+"Amazonian languages generally have fewer evidential endings than Turkish.",
+"Children fully understand evidential ideas as soon as they use the markers.",
+"Turkish uses different past-tense endings depending on how the speaker knows of an event.",
+"Speakers of evidential languages consider English especially precise."
+],
+[
+4
+],
+"튀르키예어는 직접 본 일과 남에게 듣거나 짐작한 일에 서로 다른 과거 어미를 쓴다고 했어요. 영어는 출처 표시가 필수가 아니고, 아마존 언어는 더 많이 나누며, 아이들은 뜻을 나중에야 이해하고, 그 화자들은 영어가 오히려 엉성하게 들린다고 해요."
+],
+[
+36,
+1,
+"reading",
+"r1-s10",
+"글의 빈칸에 들어가기에 가장 알맞은 것을 고르시오.",
+[
+"ornamental",
+"superfluous",
+"labyrinthine",
+"arduous",
+"obligatory"
+],
+[
+5
+],
+"영어 화자는 원할 때만(when they wish) 낱말을 덧붙이지만, 증거성 언어에서는 동사 자체에 들어 있으니 '반드시 해야 하는(obligatory)' 구별이에요. ornamental·superfluous(군더더기의)는 반대예요."
+],
+[
+37,
+1,
+"reading",
+"r1-s11",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"How Seoul Built Its Largest Highway",
+"Why Drivers Always Choose the Slowest Route",
+"Why Fewer Roads Need Not Mean More Congestion",
+"The Mathematics of Building Public Parks",
+"Removing Roads: A Cure for Every City"
+],
+[
+3
+],
+"새 길이 오히려 모두를 느리게 만들 수 있다는 브라에스의 역설과, 고가도로를 헐어도 교통이 나빠지지 않은 서울 사례를 다룬 글이라 'Why Fewer Roads Need Not Mean More Congestion' 이 맞아요. 모든 도시의 해법은 아니라고 분명히 했어요."
+],
+[
+38,
+1,
+"reading",
+"r1-s11",
+"글의 내용과 들어맞지 않는 것을 고르시오.",
+[
+"Traffic around the Cheonggyecheon area became gridlocked after the demolition.",
+"Braess showed that a new road can slow down every driver.",
+"Each driver choosing the fastest personal route can make everyone worse off.",
+"Some drivers changed the time or the way they traveled.",
+"Engineers say the paradox holds only under certain conditions."
+],
+[
+1
+],
+"비판자들은 극심한 정체를 예상했지만 실제로는 우려만큼 나빠지지 않았다고 했어요. 정체에 빠졌다는 말이 글과 어긋나요. 새 길의 역효과, 각자 최선이 모두에게 나쁜 결과, 시간·수단을 바꾼 운전자, 특정 조건에서만이라는 단서는 글과 같아요."
+],
+[
+39,
+1,
+"reading",
+"r1-s12",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Twelve pure fifths return exactly to the starting note seven octaves up.",
+"Bach may not have used equal temperament in his own performances.",
+"Older tunings made every key sound equally pure.",
+"The Well-Tempered Clavier contains pieces in only twelve keys.",
+"Performers of early music generally prefer equal temperament."
+],
+[
+2
+],
+"역사가들은 바흐가 조마다 색이 조금씩 다른 '고르지 않은' 조율을 썼을 거라고 본다고 했어요. 순정 5도 열두 개는 딱 맞지 않고, 옛 조율은 먼 조가 거칠었으며, 곡집은 24개 조이고, 고음악 연주자 일부는 옛 방식을 좋아해요."
+],
+[
+40,
+1,
+"reading",
+"r1-s12",
+"글에서 밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.",
+[
+"flamboyant",
+"strident",
+"hostile",
+"bland",
+"harmonious"
+],
+[
+4
+],
+"insipid 는 '밋밋한, 맛없는'이라 bland(밋밋한, 무미건조한)와 가까워요. 모든 조를 같은 회색으로 칠한 것 같다는 비유가 단서예요. flamboyant(화려한)는 반대이고, strident(귀에 거슬리는)는 '밋밋함'과 다른 불만이에요."
+],
+[
+1,
+2,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nThe weather on the island is notoriously <u>capricious</u>; hikers who set out under a cloudless sky are often caught in hail before noon, and forecasters rarely predict conditions more than a few hours ahead.",
+[
+"steadfast",
+"resolute",
+"persistent",
+"sumptuous",
+"volatile"
+],
+[
+5
+],
+"capricious 는 '변덕스러운, 종잡을 수 없는'이라 volatile(변덕이 심한, 급변하는)과 가까워요. 맑게 시작해도 낮 전에 우박을 만나고 몇 시간 앞도 예보하기 어렵다는 내용이 단서예요. steadfast·resolute(흔들림 없는)와 persistent(끈질기게 이어지는)는 반대 방향이에요."
+],
+[
+2,
+2,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nAfter years of broken promises, many residents of the district had grown <u>apathetic</u>, tossing campaign leaflets away unread and staying home on election day even when the race was expected to be close.",
+[
+"enthusiastic",
+"zealous",
+"vindictive",
+"indifferent",
+"affluent"
+],
+[
+4
+],
+"apathetic 은 '무관심한, 냉담한'이라 indifferent(무관심한)와 가까워요. 선거 전단을 읽지도 않고 버리고, 접전이 예상돼도 투표하러 가지 않았다는 내용이 단서예요. enthusiastic(열성적인)·zealous(열렬한)는 반대예요."
+],
+[
+3,
+2,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nThe general's long career came to an <u>ignominious</u> end when he was caught fleeing the capital in disguise, leaving behind the troops he had sworn never to abandon.",
+[
+"triumphant",
+"disgraceful",
+"auspicious",
+"sanguine",
+"tractable"
+],
+[
+2
+],
+"ignominious 는 '수치스러운, 불명예스러운'이라 disgraceful(수치스러운, 망신스러운)과 가까워요. 변장하고 달아나다 붙잡혀 버리지 않겠다던 군대를 버렸다는 내용이 단서예요. triumphant(의기양양한)는 반대예요."
+],
+[
+4,
+2,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nColleagues admired the old judge's <u>sagacity</u>; she could listen to hours of tangled testimony and then, in a few quiet sentences, identify the single question on which the entire case depended.",
+[
+"obtuseness",
+"discernment",
+"credulity",
+"ineptitude",
+"hostility"
+],
+[
+2
+],
+"sagacity 는 '현명함, 뛰어난 판단력'이라 discernment(분별력, 통찰)와 가까워요. 엉킨 증언 속에서 사건의 핵심 질문 하나를 짚어 냈다는 예가 단서예요. obtuseness(둔함)·ineptitude(무능)는 반대쪽이에요."
+],
+[
+5,
+2,
+"cloze",
+null,
+"빈칸에 들어가기에 가장 알맞은 것을 고르시오.\nThe commission's final report was famously ____, running to nine hundred pages, yet most readers agreed that its central recommendation could have been distilled into a single paragraph.",
+[
+"succinct",
+"pithy",
+"prolix",
+"ascetic",
+"propitious"
+],
+[
+3
+],
+"900쪽인데 핵심은 한 문단이면 됐다는 내용이니 '장황한(prolix)' 보고서예요. succinct·pithy(간결한)는 정반대예요."
+],
+[
+6,
+2,
+"cloze",
+null,
+"빈칸에 들어가기에 가장 알맞은 것을 고르시오.\nAlthough he had earned a fortune, the collector lived in a cramped flat and haggled over the price of bread, so his ____ bequest of four hundred paintings to the city astonished everyone who knew him.",
+[
+"parsimonious",
+"stingy",
+"torpid",
+"arcane",
+"lavish"
+],
+[
+5
+],
+"빵값을 깎던 사람이 그림 400점을 기증해 모두 놀랐다는 대비이니 '아낌없는(lavish)' 기증이에요. parsimonious·stingy(인색한)는 평소 모습이라 놀랄 까닭이 없어요."
+],
+[
+7,
+2,
+"cloze",
+null,
+"빈칸에 들어가기에 가장 알맞은 것을 고르시오.\nWhen Mount Vesuvius buried Pompeii in 79 CE, it preserved not only temples and villas but thousands of messages scratched or painted on walls. Visitors expecting profound reflections on Roman life are often surprised. Most of the inscriptions are strikingly ____: advertisements for gladiator shows, notices about lost property, election slogans, and complaints about neighbors. Yet for historians this is precisely their value. Official histories record the deeds of emperors and generals; the walls of Pompeii preserve the voices of shopkeepers, slaves, and schoolchildren.",
+[
+"esoteric",
+"sublime",
+"arcane",
+"mundane",
+"salutary"
+],
+[
+4
+],
+"깊은 성찰을 기대한 방문객이 놀란다고 했고, 콜론 뒤에 광고·분실물·이웃 불평이 이어지니 '평범한, 일상적인(mundane)'이 맞아요. esoteric·arcane(난해한)·sublime(숭고한)은 기대했던 쪽이에요."
+],
+[
+8,
+2,
+"grammar",
+null,
+"다음 글의 밑줄 친 ①~⑤ 가운데 어법상 옳지 않은 것을 고르시오.\nThe Tacoma Narrows Bridge in Washington State ①<u>was opened to traffic</u> in July 1940 and quickly earned the nickname Galloping Gertie, because its deck undulated even in moderate winds. Drivers ②<u>crossing it</u> sometimes watched the cars ahead vanish into a trough. Only in November of that year, when the deck twisted itself apart in a steady wind, ③<u>engineers fully grasped</u> how dangerous such motion could be. The collapse, ④<u>which was filmed</u> by the owner of a local camera shop, is still shown to students ⑤<u>to illustrate</u> how wind can interact with a structure.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+3
+],
+"Only 가 이끄는 부사구(Only in November of that year ...)가 문장 앞에 오면 주어와 조동사가 자리를 바꿔요. 그래서 engineers fully grasped 가 아니라 did engineers fully grasp 가 되어야 해요. Drivers crossing it 은 분사구 수식, which was filmed 는 수동 관계절, to illustrate 는 목적을 나타내는 to부정사라 맞아요."
+],
+[
+9,
+2,
+"cloze",
+null,
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.\nIn the early 1900s a retired schoolteacher in Berlin, Wilhelm von Osten, astonished the public with his horse, Hans, which appeared to add, subtract, and even tell the time by tapping its hoof. A commission of experts scrutinized the animal in 1904 and found no evidence of (A) ____ on its owner's part. The psychologist Oskar Pfungst then devised meticulous experiments and discovered that Hans answered correctly only when the questioner knew the answer and could be seen by the horse. Questioners, without realizing it, relaxed their posture slightly when the tapping reached the right number, and Hans stopped. Von Osten had not cheated anyone; he had (B) ____ trained the horse to read human body language. Researchers today use blind procedures partly to forestall what is now called the Clever Hans effect.",
+[
+"(A) subterfuge — (B) inadvertently",
+"(A) subterfuge — (B) deliberately",
+"(A) erudition — (B) inadvertently",
+"(A) erudition — (B) deliberately",
+"(A) veracity — (B) deliberately"
+],
+[
+1
+],
+"(A) 위원회는 주인 쪽의 '속임수(subterfuge)' 증거를 찾지 못했어요. 뒤에서 폰 오스텐이 아무도 속이지 않았다고 한 것과 이어져요. (B) 질문자들이 '깨닫지 못한 채' 몸짓 신호를 줬으니 말을 '자기도 모르게(inadvertently)' 훈련한 거예요. deliberately(일부러)는 반대예요."
+],
+[
+10,
+2,
+"reading",
+"r2-p10",
+"글쓴이가 말하려는 요지로 가장 알맞은 것을 고르시오.",
+[
+"The law should punish both drivers far more severely than it currently does, regardless of the outcome of their journeys.",
+"Philosophers have finally resolved the problem of moral luck by showing that only intentions should ever be judged.",
+"Our moral judgments often depend on chance, which clashes with the belief that only what we control should count.",
+"Drunk drivers who arrive home safely deserve no criticism at all.",
+"Luck plays no part in how people judge one another."
+],
+[
+3
+],
+"같은 행동을 한 두 운전자가 결과(운)에 따라 다르게 평가받는 모순, 곧 '통제할 수 있는 것만으로 판단해야 한다'는 원칙과 실제 판단이 부딪친다는 게 요지예요. 네이글은 이 긴장이 쉽게 풀리지 않는다고 했으니 해결됐다는 보기는 틀려요."
+],
+[
+11,
+2,
+"reading",
+"r2-p11",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"The observatory will repeatedly photograph the same regions of sky for a decade.",
+"The observatory is designed mainly to study a few nearby stars in great detail over many years.",
+"Its camera is smaller than those of earlier observatories.",
+"Vera Rubin built the observatory's camera herself.",
+"Dark matter is thought to be lighter than ordinary matter."
+],
+[
+1
+],
+"남쪽 하늘 전체를 며칠마다 10년 동안 찍는다고 했으니 같은 하늘을 되풀이해 찍는 거예요. 몇몇 천체를 자세히 보는 게 아니고, 카메라는 역대 가장 크며, 루빈은 이름을 딴 천문학자이고, 암흑 물질은 보통 물질보다 몇 배 무겁다고 했어요."
+],
+[
+12,
+2,
+"reading",
+"r2-p12",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Daguerre asked the man to stand still while the picture was taken.",
+"The street was empty because the photograph was taken early on a public holiday morning.",
+"Moving people were not recorded because the exposure lasted several minutes.",
+"The photograph shows crowds of pedestrians as blurred shapes.",
+"Historians are certain that no earlier image showed a person."
+],
+[
+3
+],
+"노출에 몇 분이 걸려 움직이는 마차와 행인은 흔적이 남지 않았다고 했어요. 두 사람은 찍히는 줄 몰랐고, 거리가 빈 까닭은 휴일이 아니라 노출 시간이며, 흐릿한 군중도 남지 않았고, 역사가들은 더 이른 사진이 있었을 수 있다고 인정해요."
+],
+[
+13,
+2,
+"reading",
+"r2-p13",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Monkeys passed the test as reliably as chimpanzees did.",
+"An animal that fails the test may still have some form of self-recognition.",
+"Gallup marked the chimpanzees while they were awake and watching.",
+"All researchers immediately accepted the 2019 report about the small reef fish passing the test.",
+"Dogs show strong interest in their own reflections."
+],
+[
+2
+],
+"개는 거울은 무시해도 자기 냄새는 가려낸다면서, 시험에 떨어진 것이 동물보다 시험에 대해 더 말해 줄 수 있다고 했어요. 원숭이는 대체로 실패했고, 표시는 마취한 뒤 칠했으며, 물고기 보고는 논란이 있었고, 개는 거울 속 모습을 대개 무시해요."
+],
+[
+14,
+2,
+"reading",
+"r2-p14",
+"글의 내용과 들어맞지 않는 것을 고르시오.",
+[
+"Producing a penny had come to cost more than the coin's face value.",
+"Pennies already in circulation are no longer accepted as legal money.",
+"Many people leave pennies unused or decline to accept them.",
+"Canada stopped using its smallest coin before the United States did.",
+"Some businesses round cash totals to the nearest five cents."
+],
+[
+2
+],
+"이미 돌고 있는 수십억 개의 페니는 여전히 법정 통화라고 했으니 더는 돈으로 받지 않는다는 말이 글과 어긋나요. 만드는 비용이 액면가보다 큰 것, 쓰지 않고 쌓아 두는 것, 캐나다가 2013년에 먼저 없앤 것, 5센트 단위 반올림은 글과 같아요."
+],
+[
+15,
+2,
+"reading",
+"r2-p15",
+"글의 내용과 들어맞지 않는 것을 고르시오.",
+[
+"The site challenged the assumed order of farming, settled villages, and monumental temples.",
+"Some of the pillars are carved with images of animals.",
+"The oldest structures were built before pottery came into use.",
+"The pillars at Göbekli Tepe were raised by people who already farmed widely.",
+"Later research suggests that people also lived at the site."
+],
+[
+4
+],
+"기둥을 세운 사람들은 농사가 자리 잡기 전의 수렵채집인이었던 것 같다고 했으니 이미 널리 농사를 지었다는 말이 글과 어긋나요. 통념의 순서를 뒤집은 것, 동물 조각, 토기보다 이른 연대, 사람이 살았다는 뒷날 연구는 글과 같아요."
+],
+[
+16,
+2,
+"reading",
+"r2-p16",
+"밑줄 친 부분이 뜻하는 바로 가장 알맞은 것을 고르시오.",
+[
+"Friends in a group tend to mimic one another's facial expressions without realizing it.",
+"People in groups spend more money on their appearance.",
+"Photographers usually edit group pictures to conceal blemishes.",
+"Attractive people prefer to be photographed in groups.",
+"Perceiving faces together makes each one seem closer to an attractive average."
+],
+[
+5
+],
+"여러 얼굴을 함께 보면 뇌가 평균을 내고, 평균 얼굴은 매력적으로 보이므로 각 얼굴이 그 평균 쪽으로 끌려 보인다고 했어요. 밑줄은 무리 속에서 각 얼굴이 평균의 덕을 본다는 뜻이에요."
+],
+[
+17,
+2,
+"reading",
+"r2-s1",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Using electricity directly in batteries wastes less energy than converting it to hydrogen.",
+"Most hydrogen today is produced entirely with renewable electricity from wind and solar farms.",
+"Burning hydrogen releases large amounts of carbon dioxide.",
+"Hydrogen cars have overtaken battery vehicles in the market and now dominate sales almost everywhere.",
+"All large hydrogen projects have proceeded on schedule."
+],
+[
+1
+],
+"전기를 배터리에 바로 쓰는 편이 수소로 바꿨다 되돌리는 것보다 에너지를 훨씬 덜 버린다고 했어요. 지금 수소는 대부분 천연가스에서 뽑고, 태우면 물만 나오며, 수소차는 경쟁에서 졌고, 큰 사업 여럿이 늦어지거나 취소됐어요."
+],
+[
+18,
+2,
+"reading",
+"r2-s1",
+"글의 빈칸에 들어가기에 가장 알맞은 것을 고르시오.",
+[
+"pervasive",
+"obsolete",
+"specialized",
+"clandestine",
+"ostentatious"
+],
+[
+3
+],
+"universal(어디에나 쓰이는)과 맞서고, 콜론 뒤에 '특정 틈새에서 가치 있다'고 풀이하니 '특정 용도에 한정된(specialized)'이 맞아요. pervasive(널리 퍼진)는 universal 과 같은 쪽이고, obsolete(낡은)는 '가치 있다'와 어긋나요."
+],
+[
+19,
+2,
+"reading",
+"r2-s2",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Siffre's cycle of sleeping and waking was slightly longer than a day.",
+"Siffre's team told him the time whenever he asked for it.",
+"Siffre believed that more time had passed than really had.",
+"The experiment showed that humans have no internal clock.",
+"Siffre never returned to caves after his first experiment."
+],
+[
+1
+],
+"주기 하나가 24시간보다 조금 길었다고 했어요. 팀은 시간을 알려 주지 못하게 돼 있었고, 시페르는 실제보다 '덜' 지났다고 여겼으며(25일쯤 모자람), 실험은 몸속 시계가 있음을 보였고, 그는 뒤에도 동굴로 돌아갔어요."
+],
+[
+20,
+2,
+"reading",
+"r2-s2",
+"글에서 밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.",
+[
+"pliant",
+"hostile",
+"credulous",
+"resolute",
+"tractable"
+],
+[
+4
+],
+"tenacious 는 '끈질긴, 집요한'이라 resolute(굳게 마음먹은)와 가까워요. 추위와 외로움으로 힘들었는데도 수십 년 뒤 예순 넘어서까지 다시 동굴에 들어갔다는 뒤 내용이 단서예요. pliant·tractable(남 말을 잘 따르는, 고분고분한)은 반대쪽이에요."
+],
+[
+21,
+2,
+"reading",
+"r2-s3",
+"글의 내용과 들어맞지 않는 것을 고르시오.",
+[
+"Gould's 1955 recording sold unusually well for a classical album.",
+"Gould combined parts of different takes in his recordings.",
+"Some critics thought that Gould's studio methods misled listeners.",
+"Gould's humming can be heard on his recordings.",
+"Gould stopped performing in public because his fame had declined."
+],
+[
+5
+],
+"굴드는 명성이 가장 높을 때(at the height of his fame) 무대를 떠났어요. 인기가 떨어져서 그만뒀다는 말이 글과 어긋나요. 1955년 음반의 큰 판매, 여러 연주를 이어 붙인 녹음, 비평가의 비난, 녹음에 남은 허밍은 글과 같아요."
+],
+[
+22,
+2,
+"reading",
+"r2-s3",
+"밑줄 친 부분이 뜻하는 바로 가장 알맞은 것을 고르시오.",
+[
+"a performer who joins the pianist on stage",
+"someone who engages actively with the music instead of merely observing a single event",
+"a critic who reviews concerts for a newspaper rather than listening to recordings at home",
+"an engineer who edits the recording tapes",
+"a spectator who waits for the performer to make a mistake so that the concert can be criticized"
+],
+[
+2
+],
+"집에서 마음대로 다시 듣고 곱씹을 수 있는 청자는 한 번 지나가는 공연을 '지켜보는 사람'이 아니라 음악에 적극적으로 '참여하는 사람'이 된다는 뜻이에요. 실수를 기다리는 관객은 굴드가 싫어한 공연장 쪽이에요."
+],
+[
+23,
+2,
+"reading",
+"r2-s4",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"How DeepSeek Overtook Meta in AI Research",
+"Why Open Models Are Safer Than Closed Ones",
+"A Short History of Open-Source Software Licenses",
+"The Debate over Releasing AI Models Openly",
+"A Guide to Building Safety Filters for AI"
+],
+[
+4
+],
+"가중치를 공개할지를 두고 찬성 쪽(검증·비용·권력 분산)과 반대 쪽(회수 불가·악용) 주장을 나란히 놓고, 용어 논쟁까지 다룬 글이라 'The Debate over Releasing AI Models Openly' 가 맞아요. 한쪽이 더 안전하다고 결론 내리지 않았어요."
+],
+[
+24,
+2,
+"reading",
+"r2-s4",
+"글에서 밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.",
+[
+"malicious",
+"altruistic",
+"righteous",
+"laudable",
+"mundane"
+],
+[
+1
+],
+"nefarious 는 '아주 사악한, 못된'이라 malicious(악의적인)와 가까워요. 더 그럴듯한 사기를 만드는 일이 예로 나와요. altruistic(이타적인)·laudable(칭찬할 만한)·righteous(올바른)는 반대예요."
+],
+[
+25,
+2,
+"reading",
+"r2-s5",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Queen Victoria knew that Italien had been written by Fanny.",
+"Fanny received a weaker musical education than Felix.",
+"Fanny's father encouraged her to make music her profession.",
+"Fanny first published music under her own name while she was still only a teenager.",
+"Some of Fanny's songs were first published under her brother's name."
+],
+[
+5
+],
+"파니의 노래 몇 곡이 펠릭스 이름으로 나왔다고 했어요. 여왕은 펠릭스 곡인 줄 알았고, 둘 다 엄격한 교육을 받았으며, 아버지는 음악이 그녀에게는 '장식'일 뿐이라 했고, 자기 이름으로 낸 것은 1846년(마흔 무렵)이에요."
+],
+[
+26,
+2,
+"reading",
+"r2-s5",
+"글의 빈칸에 들어가기에 가장 알맞은 것을 고르시오.",
+[
+"venerable",
+"glorious",
+"cosmopolitan",
+"obscure",
+"deleterious"
+],
+[
+4
+],
+"작품 상당수가 최근 수십 년에야 연주·녹음됐다고 하니 한 세기 넘게 명성이 '묻혀 있었다(obscure)'는 말이 맞아요. venerable(존경받는)·glorious(빛나는)는 반대예요."
+],
+[
+27,
+2,
+"reading",
+"r2-s6",
+"글의 주제로 가장 알맞은 것을 고르시오.",
+[
+"satirical observations about how work and bureaucracy grow",
+"the history of the British Royal Navy's warships",
+"methods for writing postcards efficiently",
+"the engineering of nuclear reactors",
+"why committees always make careful decisions"
+],
+[
+1
+],
+"일이 주어진 시간만큼 늘어나고 관료 조직이 할 일과 상관없이 커진다는 파킨슨의 풍자적 관찰이 중심이에요. 해군과 자전거 보관소는 그 예일 뿐이에요."
+],
+[
+28,
+2,
+"reading",
+"r2-s6",
+"글의 빈칸에 들어가기에 가장 알맞은 것을 고르시오.",
+[
+"trite",
+"esoteric",
+"incisive",
+"laudatory",
+"obsolete"
+],
+[
+3
+],
+"풍자로 썼는데도 관리자·경제학자가 '불편할 만큼' 느꼈다는 건 그 관찰이 날카롭게 들어맞았다는 뜻이라 '날카로운, 정곡을 찌르는(incisive)'이 맞아요. obsolete(낡은)는 그의 말이 지금도 쓰인다는 내용과 어긋나요."
+],
+[
+29,
+2,
+"reading",
+"r2-s7",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"The first English coffeehouse opened in London around 1700.",
+"Coffeehouses charged a high fee for reading newspapers.",
+"Charles II's attempt to close the coffeehouses was quickly abandoned.",
+"Lloyd's coffeehouse was popular mainly among scientists.",
+"The coffeehouses stayed closed for several years after the royal proclamation of 1675."
+],
+[
+3
+],
+"찰스 2세의 폐쇄 명령은 거센 반발로 며칠 만에, 시행되기도 전에 거둬졌다고 했어요. 첫 커피하우스는 1650년쯤 옥스퍼드에 생겼고, 커피 한 잔 값이면 신문을 읽었으며, 로이드 집에는 상인과 선장이 모였어요."
+],
+[
+30,
+2,
+"reading",
+"r2-s7",
+"글에서 밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.",
+[
+"suppress",
+"stifle",
+"adjudicate",
+"propagate",
+"embellish"
+],
+[
+4
+],
+"disseminate 는 '널리 퍼뜨리다'라 propagate(전파하다)와 가까워요. 공식 통로 밖으로 정보와 의견을 퍼뜨린다는 문맥이에요. suppress·stifle(억누르다)은 찰스 2세가 하려던 쪽이라 반대예요."
+],
+[
+31,
+2,
+"reading",
+"r2-s8",
+"글의 내용과 들어맞지 않는 것을 고르시오.",
+[
+"The 2022 outbreak spread mainly through close sexual contact.",
+"The newer strain was infecting children as well as adults.",
+"The African Union's health agency declared an emergency before WHO did.",
+"Most vaccine doses were held by wealthy countries in 2024.",
+"The 2024 declaration was the first time WHO had raised such an alarm about mpox."
+],
+[
+5
+],
+"2024년 선언은 두 해 사이 '두 번째' 선언이라고 했으니 처음이라는 말이 글과 어긋나요. 2022년 전파 경로, 어린이 감염, 하루 앞선 아프리카연합 선언, 부유한 나라의 백신 보유는 글과 같아요."
+],
+[
+32,
+2,
+"reading",
+"r2-s8",
+"글의 빈칸에 들어가기에 가장 알맞은 것을 고르시오.",
+[
+"solidarity",
+"forbearance",
+"complacency",
+"insouciance",
+"profligacy"
+],
+[
+1
+],
+"백신이 필요한 곳에 모자랐던 불균형을 지적하고 '자선이 아니라 자기 보호'라고 했으니 나라끼리 돕는 '연대(solidarity)'가 맞아요. complacency(안일함)·insouciance(무관심)는 반대예요."
+],
+[
+33,
+2,
+"reading",
+"r2-s9",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Mr. Petrov criticized the narrator's playing harshly from the very first rehearsal onward.",
+"The narrator learned that their part answered another section of the orchestra.",
+"The narrator played without any mistakes at the concert.",
+"Mr. Petrov told the narrator to study the score more closely.",
+"The narrator was always seated at the front of the first violins."
+],
+[
+2
+],
+"'내' 성부가 혼자 가는 선율이 아니라 첼로에 대한 대답임을 처음 들었다고 했어요. 페트로프는 첫 달 동안 아무 말도 안 했고, 연주회에서도 틀렸으며, 악보 대신 첼로 활을 보라고 했고, '나'는 제2바이올린 맨 뒤에 앉았어요."
+],
+[
+34,
+2,
+"reading",
+"r2-s9",
+"밑줄 친 부분이 뜻하는 바로 가장 알맞은 것을 고르시오.",
+[
+"memorizing the entire score by heart",
+"playing every note without error",
+"sitting closer to the conductor",
+"performing as a soloist before the orchestra",
+"listening and playing as part of the whole ensemble"
+],
+[
+5
+],
+"연주회에서 여전히 틀렸는데도 '나아졌다'고 했으니 정확성 얘기가 아니에요. 첼로를 들으며 내 성부를 대답처럼 연주하게 된 것, 곧 합주 전체의 일부로 듣고 연주한다는 뜻이에요."
+],
+[
+35,
+2,
+"reading",
+"r2-s10",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"How Diogenes Wrote His Lost Books",
+"A Philosopher Who Argued by Living Simply",
+"Alexander the Great as a Student of Philosophy",
+"The Origin of Greek Ceramic Jars",
+"Why the Cynics Admired Wealth and Rank"
+],
+[
+2
+],
+"디오게네스의 소박한 삶이 단순한 취향이 아니라 '논증의 한 방식'이었다는 게 중심이라 'A Philosopher Who Argued by Living Simply' 가 맞아요. 남은 저작은 없고, 견유학파는 부와 지위를 인위적이라 봤어요."
+],
+[
+36,
+2,
+"reading",
+"r2-s10",
+"글에서 밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.",
+[
+"opulent",
+"sumptuous",
+"spartan",
+"garrulous",
+"lavish"
+],
+[
+3
+],
+"austere 는 '꾸밈없고 엄격하게 검소한'이라 spartan(검소하고 엄격한)과 가까워요. 항아리에서 살고 하나뿐인 컵도 버렸다는 일화가 단서예요. opulent·sumptuous·lavish(호화로운)는 반대예요."
+],
+[
+37,
+2,
+"reading",
+"r2-s11",
+"글의 주제로 가장 알맞은 것을 고르시오.",
+[
+"the scientific method for measuring the exact time remaining before a nuclear war",
+"how the Cold War ended through new arms agreements",
+"the development of the first atomic bombs",
+"why artificial intelligence is now the only threat that truly matters to the board",
+"the history and meaning of a symbolic warning about global catastrophe"
+],
+[
+5
+],
+"1947년에 생긴 '운명의 날 시계'가 무엇을 나타내고 어떻게 움직여 왔으며 어떤 평가를 받는지 다룬 글이라 '세계적 파국을 알리는 상징적 경고의 역사와 의미'가 주제예요. 시계는 무엇도 정밀하게 재지 않는다는 비판이 나와요."
+],
+[
+38,
+2,
+"reading",
+"r2-s11",
+"글의 빈칸에 들어가기에 가장 알맞은 것을 고르시오.",
+[
+"quotidian",
+"ethereal",
+"ornamental",
+"labyrinthine",
+"incendiary"
+],
+[
+1
+],
+"몇 해째 자정 근처를 맴도는 시계는 경고를 '일상적인 것(quotidian)'으로 만들어 행동을 끌어내지 못할 수 있다는 비판이에요. galvanizing action(행동을 일깨우다)과 맞서는 자리예요. incendiary(불을 붙이는, 선동적인)라면 오히려 행동을 부추기니 rather than 의 대조와 맞지 않아요."
+],
+[
+39,
+2,
+"reading",
+"r2-s12",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"The best violin students had practiced less than the merely good ones.",
+"Deliberate practice means playing pieces one already enjoys.",
+"The 2014 analysis found that practice explained most differences in education.",
+"Ericsson did not accept the popular ten-thousand-hour rule.",
+"Researchers now agree that practice alone determines expertise."
+],
+[
+4
+],
+"1만 시간이면 누구나 전문가가 된다는 단순한 규칙은 에릭슨 자신이 거부했다고 했어요. 최고 학생들이 연습을 '더' 많이 했고, 의도적 연습은 약점을 파고드는 힘든 연습이며, 교육 분야에서는 설명력이 아주 작았고, 다른 요인도 중요하다고 했어요."
+],
+[
+40,
+2,
+"reading",
+"r2-s12",
+"글에서 밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.",
+[
+"undermine",
+"reinforce",
+"eliminate",
+"stifle",
+"erode"
+],
+[
+2
+],
+"fortify 는 '튼튼하게 하다, 강화하다'라 reinforce(강화하다)와 가까워요. 어떤 연습이 실력(performance)을 가장 확실하게 끌어올리느냐는 문맥이에요. undermine·erode(약화하다)·stifle(억누르다)은 반대이고, eliminate(없애다)는 문맥과 맞지 않아요."
+],
+[
+1,
+3,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nArchitecture critics dismissed the casino hotel's lobby as <u>meretricious</u>, a riot of fake gold leaf, plastic marble, and gargantuan chandeliers designed to dazzle guests at first glance rather than to please them for long.",
+[
+"unadorned",
+"tawdry",
+"solvent",
+"obdurate",
+"transparent"
+],
+[
+2
+],
+"meretricious 는 '겉만 번지르르하고 싸구려인'이라 tawdry(야하고 값싼)와 가까워요. 가짜 금박·플라스틱 대리석으로 첫눈에만 현혹하려 했다는 내용이 단서예요. unadorned(꾸밈없는)는 반대예요."
+],
+[
+2,
+3,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nEven after his third restaurant closed within a year, Marco remained an <u>incorrigible</u> optimist, already sketching plans for a fourth and assuring his weary investors that this one would surely succeed.",
+[
+"incurable",
+"reluctant",
+"tractable",
+"sporadic",
+"reticent"
+],
+[
+1
+],
+"incorrigible 은 '고칠 수 없는, 구제 불능의'라 incurable(못 말리는, 고칠 수 없는)과 가까워요. 식당이 세 번 망해도 벌써 네 번째를 계획하며 이번엔 꼭 된다고 했다는 내용이 단서예요. tractable(다루기 쉬운)은 반대이고, reluctant(마지못한)는 내용과 맞지 않아요."
+],
+[
+3,
+3,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nAs a young composer he was so <u>impecunious</u> that he copied other people's scores by candlelight to pay his rent and sometimes went two days without a proper meal.",
+[
+"affluent",
+"solvent",
+"impoverished",
+"garrulous",
+"vitriolic"
+],
+[
+3
+],
+"impecunious 는 '돈이 없는, 가난한'이라 impoverished(가난한, 궁핍한)와 가까워요. 남의 악보를 베껴 방세를 내고 이틀씩 굶었다는 내용이 단서예요. affluent(부유한)·solvent(빚 갚을 능력이 있는)는 반대예요."
+],
+[
+4,
+3,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nThe defendant's letter to the victim's family expressed genuine <u>contrition</u>; he did not ask for forgiveness, but he described in detail the harm he had caused and how he hoped to make amends.",
+[
+"hostility",
+"complacency",
+"audacity",
+"remorse",
+"deference"
+],
+[
+4
+],
+"contrition 은 '깊은 뉘우침, 회한'이라 remorse(뉘우침, 가책)와 가까워요. 자기가 끼친 해를 자세히 적고 보상하려 했다는 내용이 단서예요. complacency(자기만족)는 반대쪽이에요."
+],
+[
+5,
+3,
+"cloze",
+null,
+"빈칸에 들어가기에 가장 알맞은 것을 고르시오.\nThe critic's review of the new opera was ____: she called the libretto incoherent, the staging slipshod, and the lead tenor's performance the weakest she had heard in twenty years.",
+[
+"effusive",
+"scathing",
+"laudatory",
+"ambivalent",
+"contingent"
+],
+[
+2
+],
+"콜론 뒤에 대본·연출·주연을 모두 혹평하니 '신랄한(scathing)' 평이에요. effusive(칭찬이 넘치는)·laudatory(칭찬하는)는 반대이고, ambivalent(이도 저도 아닌)는 한쪽으로 몰아친 내용과 맞지 않아요."
+],
+[
+6,
+3,
+"cloze",
+null,
+"빈칸에 들어가기에 가장 알맞은 것을 고르시오.\nOnly a junior clerk would have had the ____ to correct the chairman's arithmetic in front of the entire board, and only a chairman with a sense of humor would have promoted him for it.",
+[
+"diffidence",
+"temerity",
+"deference",
+"reticence",
+"complacency"
+],
+[
+2
+],
+"이사회 앞에서 회장의 계산을 바로잡는 건 겁 없는 행동이라 '무모한 대담함(temerity)'이 맞아요. diffidence(자신 없음)·deference(공손한 복종)·reticence(말을 아낌)는 그런 행동을 막는 쪽이에요."
+],
+[
+7,
+3,
+"cloze",
+null,
+"빈칸에 들어가기에 가장 알맞은 것을 고르시오.\nIn 1908 an Italian archaeologist excavating the Minoan palace of Phaistos on Crete found a small disc of fired clay, about sixteen centimeters across. Both faces are covered with symbols arranged in a spiral, and each symbol was pressed into the wet clay with a stamp, making the disc perhaps the earliest known example of printing with movable signs. Its forty-five distinct signs include walking figures, heads wearing plumed headdresses, fish, and tools. Because no other object bearing the same script has ever been found, scholars have almost nothing to compare it with, and the disc remains as ____ as on the day it was unearthed.",
+[
+"transparent",
+"prodigal",
+"mercenary",
+"apposite",
+"inscrutable"
+],
+[
+5
+],
+"같은 글자가 적힌 물건이 하나도 없어 견줄 것이 없다는 앞 내용과 맞는 건 '헤아릴 수 없는(inscrutable)'이에요. transparent(뻔히 보이는)는 반대예요."
+],
+[
+8,
+3,
+"grammar",
+null,
+"다음 글의 밑줄 친 ①~⑤ 가운데 어법상 옳지 않은 것을 고르시오.\nMost of the large sarsen stones at Stonehenge ①<u>were brought from hills</u> about twenty-five kilometers to the north. The smaller bluestones, however, came from much farther away. Each of these stones, some weighing two tonnes or more, ②<u>were thought to have been moved</u> roughly two hundred kilometers from the Preseli Hills in Wales. In 2024 researchers reported that the central Altar Stone, ③<u>long assumed to be Welsh</u>, in fact came from northeastern Scotland, a journey ④<u>that would have covered</u> some seven hundred kilometers. How Neolithic people managed such transport ⑤<u>remains a matter</u> of debate.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+2
+],
+"주어는 Each of these stones 이고, each 는 늘 단수로 받아요. 그래서 were thought 가 아니라 was thought 가 맞아요. 사이에 낀 some weighing two tonnes or more 는 삽입구라 수에 영향을 주지 않아요. long assumed to be Welsh 는 분사구 삽입, a journey that would have covered 는 관계절, How ... transport 라는 명사절 주어는 단수라 remains 가 맞아요."
+],
+[
+9,
+3,
+"cloze",
+null,
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.\nUntil the 1950s, the banana sold in most Western shops was not the variety familiar today but one called the Gros Michel, which many people remembered as creamier and more flavorful. It was decimated on commercial plantations by Panama disease, a soil fungus that attacks the roots. Growers replaced it with the Cavendish, which was largely (A) ____ to that strain of the fungus. Yet the Cavendish shares the weakness that doomed its predecessor. Commercial bananas are grown from cuttings rather than seeds, so the plants on a plantation are genetic clones, and a plantation is therefore extremely (B) ____: a disease able to kill one plant can kill them all. A newer strain of the fungus, known as Tropical Race 4, has already spread from Asia to Africa and Latin America.",
+[
+"(A) susceptible — (B) precarious",
+"(A) resistant — (B) superfluous",
+"(A) resistant — (B) precarious",
+"(A) susceptible — (B) ornamental",
+"(A) labyrinthine — (B) precarious"
+],
+[
+3
+],
+"(A) 그로 미셸을 대신했다면 캐번디시는 그 곰팡이 균주에 '잘 견디는, 내성이 있는(resistant)' 품종이어야 해요. susceptible(걸리기 쉬운)이면 바꿀 까닭이 없어요. (B) 콜론 뒤 '한 그루를 죽이는 병이 모두를 죽인다'는 풀이와 맞는 건 '위태로운(precarious)'이에요."
+],
+[
+10,
+3,
+"reading",
+"r3-p10",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"The explosion probably took place in the air rather than on the ground.",
+"Kulik's expedition found a large crater and fragments of a meteorite at the center of the site.",
+"Scientists reached the area within a few weeks of the event.",
+"The trees at the center were knocked down in every direction.",
+"No one witnessed any light or sound at the time of the event."
+],
+[
+1
+],
+"많은 과학자는 우주에서 온 물체가 땅 위 몇 킬로미터 공중에서 폭발했다고 본다고 했어요. 쿨리크는 구덩이도 운석도 찾지 못했고, 첫 탐사는 1927년이었으며, 한가운데 나무는 가지만 잃고 서 있었고, 목격자들은 빛과 충격을 겪었어요."
+],
+[
+11,
+3,
+"reading",
+"r3-p11",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Ruth Glass coined the word to praise the renovation of London houses.",
+"The term gentrification first appeared in the twenty-first century.",
+"Some research questions whether gentrification leads to greater displacement.",
+"Critics argue that gentrification mainly benefits small local shops.",
+"Economists agree that residents who stay behind gain nothing at all from the change."
+],
+[
+3
+],
+"일부 경제학자는 젠트리피케이션 지역의 저소득 주민이 늘 더 많이 떠나지는 않는다는 결과를 냈다고 했어요. 글래스는 현상을 '묘사'하려고 1964년에 이 말을 만들었고, 비판자들은 작은 가게가 밀려난다고 하며, 남은 주민이 득을 볼 수 있다는 연구도 있어요."
+],
+[
+12,
+3,
+"reading",
+"r3-p12",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Marshall developed an ulcer after drinking the bacteria and needed surgery.",
+"The bacterium was first discovered in laboratory animals.",
+"Many experts doubted that bacteria could survive in the acidic stomach.",
+"Ulcers almost never returned under the older treatments.",
+"Warren and Marshall received the Nobel Prize in the 1980s."
+],
+[
+3
+],
+"대부분의 전문가는 그런 산성 환경에서 세균이 살 수 없다고 확신했다고 했어요. 마셜은 위염이 생겼다가 항생제로 스스로 고쳤고, 동물 감염에는 실패했으며, 옛 치료로는 궤양이 자주 재발했고, 노벨상은 2005년이에요."
+],
+[
+13,
+3,
+"reading",
+"r3-p13",
+"글의 내용과 들어맞지 않는 것을 고르시오.",
+[
+"Specialized equipment is needed to tell laboratory diamonds from mined ones.",
+"Laboratory diamonds differ chemically from diamonds that are mined.",
+"The price of laboratory diamonds has dropped sharply.",
+"Some laboratory diamonds are made by depositing carbon from a gas.",
+"The prices of mined diamonds have also declined."
+],
+[
+2
+],
+"실험실 다이아몬드는 캐낸 것과 화학적·물리적으로 같다고 했으니 화학적으로 다르다는 말이 글과 어긋나요. 특수 장비가 있어야 구별한다는 것, 값이 크게 내린 것, 기체에서 탄소를 쌓는 방식, 천연석 값도 내린 것은 글과 같아요."
+],
+[
+14,
+3,
+"reading",
+"r3-p14",
+"글의 내용과 들어맞지 않는 것을 고르시오.",
+[
+"Pessoa left a large collection of unpublished writing.",
+"Each heteronym had a distinct biography and style.",
+"Ricardo Reis wrote poems in a classical manner.",
+"Pessoa published many books of poetry under his own name during his life.",
+"Work on Pessoa's manuscripts is still continuing."
+],
+[
+4
+],
+"살아 있을 때 자기 이름으로 낸 포르투갈어 시집은 한 권뿐이었다고 했으니 여러 권 냈다는 말이 글과 어긋나요. 2만 5천 쪽이 넘는 원고, 이명마다 다른 삶과 문체, 고전풍의 레이스, 아직 이어지는 편집은 글과 같아요."
+],
+[
+15,
+3,
+"reading",
+"r3-p15",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"How Adam Smith Discovered Marginal Utility",
+"The Mining of Diamonds in the Eighteenth Century",
+"Why Water Should Always Be Free",
+"Why Scarcity, Not Usefulness, Sets Prices",
+"A Traveler's Guide to Surviving in the Desert"
+],
+[
+4
+],
+"값을 정하는 건 물건 전체의 쓸모가 아니라 '하나 더'의 쓸모이고, 흔하면 싸고 드물면 비싸다는 한계효용 이야기라 'Why Scarcity, Not Usefulness, Sets Prices' 가 맞아요. 스미스는 수수께끼를 냈을 뿐 풀지 못했어요."
+],
+[
+16,
+3,
+"reading",
+"r3-p16",
+"글에 드러난 '나'의 심경 변화로 가장 알맞은 것을 고르시오.",
+[
+"complacent → disillusioned",
+"apathetic → apprehensive",
+"despondent → elated",
+"envious → grateful",
+"exhilarated → bored"
+],
+[
+3
+],
+"처음에는 열네 번째 실험도 실패해 이 일이 맞지 않나 의심하며 '낙담'했어요. 결정을 확인하고 사진을 열한 번 찍고, 비를 맞으면서도 모를 만큼 '들뜬' 마음으로 바뀌었어요."
+],
+[
+17,
+3,
+"reading",
+"r3-s1",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Some states have blocked binding rules in talks that require consensus.",
+"Automatic defensive weapons were invented only in the last few years.",
+"The UN General Assembly adopted a binding treaty banning such weapons in 2023.",
+"Supporters of a ban believe machines make fewer errors than soldiers.",
+"International talks on the issue began after 2023."
+],
+[
+1
+],
+"제네바 협상은 만장일치로 움직여 몇몇 나라가 구속력 있는 규칙을 막을 수 있었다고 했어요. 방어용 자동 무기는 수십 년 전부터 있었고, 2023년 총회 결의는 우려 표명이지 조약이 아니며, 실수가 적을 수 있다는 건 금지 '반대' 쪽 주장이고, 논의는 2014년에 시작됐어요."
+],
+[
+18,
+3,
+"reading",
+"r3-s1",
+"글의 빈칸에 들어가기에 가장 알맞은 것을 고르시오.",
+[
+"efficiency",
+"accountability",
+"automation",
+"precision",
+"complacency"
+],
+[
+2
+],
+"빈칸 뒤 '어떤 사람도 기계의 실수에 답하지 않게 된다'는 풀이와 맞는 건 '책임(accountability)'을 없애는 위험이에요. efficiency·precision 을 빼는 게 위험이라는 건 앞 내용과 이어지지 않아요."
+],
+[
+19,
+3,
+"reading",
+"r3-s2",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Vantablack reflects most of the light that strikes it.",
+"Kapoor shared his right to use Vantablack freely with all artists who asked for it.",
+"Semple's pink pigment was offered for sale to Kapoor as well.",
+"Semple refused to sell any black paints of his own.",
+"Vantablack was first designed for scientific instruments rather than for art."
+],
+[
+5
+],
+"밴타블랙은 망원경·위성 장비의 빛 번짐을 줄이려고 만든 과학용이었다고 했어요. 빛을 거의 다 흡수하고, 카푸어는 독점권을 얻었으며, 셈플의 분홍은 카푸어만 빼고 팔았고, 셈플은 값싼 검정 물감도 팔았어요."
+],
+[
+20,
+3,
+"reading",
+"r3-s2",
+"글의 빈칸에 들어가기에 가장 알맞은 것을 고르시오.",
+[
+"alacrity",
+"forbearance",
+"prerogative",
+"deference",
+"temerity"
+],
+[
+3
+],
+"특허 받은 공업 제품이면 색을 쓸 수 있느냐가 솜씨가 아니라 법적 '특권, 권리(prerogative)'의 문제가 된다는 말이에요. 카푸어의 독점권 이야기와 이어져요. alacrity(민첩함)·deference(복종)는 맞지 않아요."
+],
+[
+21,
+3,
+"reading",
+"r3-s3",
+"글의 내용과 들어맞지 않는 것을 고르시오.",
+[
+"The mission was originally planned to last about a week.",
+"Engineers found thruster failures and helium leaks.",
+"The astronauts objected to being described as stranded.",
+"The episode highlighted NASA's dependence on one company.",
+"The astronauts returned to Earth aboard Starliner in September 2024."
+],
+[
+5
+],
+"9월에 스타라이너는 '빈 채로' 돌아왔고 두 사람은 2025년 3월 스페이스X 드래건으로 귀환했어요. 스타라이너를 타고 돌아왔다는 말이 글과 어긋나요. 일주일 계획, 추진기·헬륨 문제, '고립'이라는 말에 대한 반박, 한 회사 의존은 글과 같아요."
+],
+[
+22,
+3,
+"reading",
+"r3-s3",
+"글의 빈칸에 들어가기에 가장 알맞은 것을 고르시오.",
+[
+"extravagance",
+"profligacy",
+"complacency",
+"insouciance",
+"prudence"
+],
+[
+5
+],
+"luxury(사치)와 맞서는 자리이고, 한 회사에만 기대는 위험을 말했으니 두 길을 갖추는 건 '신중함(prudence)'의 문제예요. extravagance·profligacy(낭비)는 luxury 와 같은 쪽이에요."
+],
+[
+23,
+3,
+"reading",
+"r3-s4",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"How Glaciers Formed the Modern Continents",
+"Volcanoes as the Main Cause of Ice Ages",
+"Why Life Could Not Survive in Ancient Oceans",
+"Did the Whole Earth Once Freeze Over?",
+"Magnetic Evidence and the Age of the Earth"
+],
+[
+4
+],
+"적도 근처까지 빙하가 있었다는 증거에서 출발해 지구 전체가 얼었는지, 어떻게 풀려났는지를 다루는 글이라 'Did the Whole Earth Once Freeze Over?' 가 맞아요. 화산은 빙하기의 원인이 아니라 얼음에서 벗어난 길로 나와요."
+],
+[
+24,
+3,
+"reading",
+"r3-s4",
+"글에서 밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.",
+[
+"preposterous",
+"incontrovertible",
+"venal",
+"defensible",
+"prodigal"
+],
+[
+4
+],
+"tenable 은 '(주장이) 지킬 수 있는, 옹호할 만한'이라 defensible 과 가까워요. 얼어붙은 지구는 영원히 얼어 있어야 한다는 반론 때문에 '겨우 받아들일 만하다'고 여겼다는 문맥이에요. preposterous(터무니없는)는 반대쪽이에요."
+],
+[
+25,
+3,
+"reading",
+"r3-s5",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Everett came to the Pirahã as a missionary before becoming a linguist.",
+"Pirahã is closely related to several other living languages.",
+"Everett claimed that Pirahã has words for exact numbers.",
+"All linguists have accepted Everett's analysis of Pirahã without any reservations.",
+"Chomsky argued that recursion is absent from most languages."
+],
+[
+1
+],
+"에버렛은 1970년대에 선교사로 와서 나중에 언어학자가 됐다고 했어요. 피라항어는 살아 있는 어떤 언어와도 관련이 없고, 정확한 수를 나타내는 말이 없다고 했으며, 비판이 거셌고, 촘스키 쪽은 재귀를 모든 언어의 핵심으로 봤어요."
+],
+[
+26,
+3,
+"reading",
+"r3-s5",
+"글의 빈칸에 들어가기에 가장 알맞은 것을 고르시오.",
+[
+"pervasive",
+"prolific",
+"cosmopolitan",
+"redundant",
+"circumscribed"
+],
+[
+5
+],
+"말하는 사람이 몇백 명뿐이고 바깥 사람이 확인하기 어렵다는 앞 내용과 맞는 건 근거가 '좁게 한정된(circumscribed)' 출처라는 말이에요. pervasive(널리 퍼진)·cosmopolitan(세계적인)은 반대예요."
+],
+[
+27,
+3,
+"reading",
+"r3-s6",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Similar wording appeared in newspapers before Hemingway became a writer.",
+"Hemingway's notebooks contain the original draft of the story.",
+"The bet with other writers was reported in newspapers during his lifetime.",
+"Classified advertisements were usually printed free of charge.",
+"The six-word memoir form was invented entirely by Hemingway himself."
+],
+[
+1
+],
+"헤밍웨이가 아이였던 20세기 초 신문 광고에 아주 비슷한 문구가 있었다고 했어요. 그가 썼다는 증거는 없고, 내기 일화는 죽고 수십 년 뒤에야 나왔으며, 광고는 낱말 수로 값을 받았고, 여섯 낱말 회고록은 이 문구에서 영감을 얻은 거예요."
+],
+[
+28,
+3,
+"reading",
+"r3-s6",
+"글에서 밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.",
+[
+"verbose",
+"effusive",
+"refractory",
+"solvent",
+"succinct"
+],
+[
+5
+],
+"terse 는 '짧고 간결한'이라 succinct 와 가까워요. 꾸밈을 걷어 내고 말하지 않은 뜻을 담은 문체라는 뒤 설명이 단서예요. verbose(말이 많은)·effusive(감정이 넘치는)는 반대예요."
+],
+[
+29,
+3,
+"reading",
+"r3-s7",
+"글의 내용과 들어맞지 않는 것을 고르시오.",
+[
+"Venezuela formerly had several glaciers in the Andes.",
+"The Humboldt glacier was reclassified as an ice field in 2024.",
+"Glaciers in other countries are also expected to disappear.",
+"Scientists praised the thermal blanket as an effective way to save the glacier.",
+"The loss of the glacier affects a habitat and a familiar landmark."
+],
+[
+4
+],
+"과학자들은 단열 덮개에 시큰둥했고 이미 늦었으며 플라스틱 섬유까지 걱정했다고 했으니 효과적이라고 칭찬했다는 말이 글과 어긋나요. 빙하 여섯 개, 2024년 얼음밭 재분류, 다른 나라 빙하, 서식지·명소 상실은 글과 같아요."
+],
+[
+30,
+3,
+"reading",
+"r3-s7",
+"밑줄 친 부분이 뜻하는 바로 가장 알맞은 것을 고르시오.",
+[
+"Studying the glacier's history instead of its current condition.",
+"Treating local melting instead of the global warming that causes it.",
+"Protecting local water supplies instead of tourism.",
+"Blaming scientists instead of the government.",
+"Measuring the ice instead of photographing it."
+],
+[
+2
+],
+"밑줄 바로 뒤에 풀이가 있어요. 빙하가 사라지는 까닭은 지구 온난화인데, 산비탈 하나를 덮는 건 원인이 아니라 겉으로 드러난 녹는 현상만 다룬다는 뜻이에요."
+],
+[
+31,
+3,
+"reading",
+"r3-s8",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Searchable digital texts revealed earlier uses of words credited to Shakespeare.",
+"Dictionary editors deliberately ignored the works of famous authors when collecting examples.",
+"Shakespeare never used nouns as verbs in his plays.",
+"English was borrowing very few foreign words in Shakespeare's time.",
+"Scholars now deny that Shakespeare was an innovator at all."
+],
+[
+1
+],
+"수백만 쪽을 검색할 수 있게 되자 셰익스피어 낱말이라던 말이 더 이른 글에서 나왔다고 했어요. 사전 편집자는 오히려 유명 작가에게 기댔고, 그는 명사를 동사로 자유롭게 썼으며, 당시 영어는 외래어를 마구 들였고, 학자들은 여전히 그를 혁신가로 봐요."
+],
+[
+32,
+3,
+"reading",
+"r3-s8",
+"글에서 밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.",
+[
+"vindicate",
+"refute",
+"substantiate",
+"embellish",
+"reinforce"
+],
+[
+2
+],
+"belie 는 '(사실이) ~이 틀렸음을 보여 주다, 어긋나다'라 refute(반박하다, 틀렸음을 보이다)와 가까워요. 더 이른 쓰임이 나와 '혼자 다 만들었다'는 통념이 틀렸다는 문맥이에요. vindicate·substantiate·reinforce(옳음을 입증하다, 뒷받침하다)는 반대예요."
+],
+[
+33,
+3,
+"reading",
+"r3-s9",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"Sweden's Second Thoughts about a Cashless Society",
+"How Sweden Abolished Banknotes by Law",
+"Why Criminals Prefer Digital Payment",
+"The History of Sweden's Mobile Payment App",
+"Elderly Swedes Who Refuse to Use Technology"
+],
+[
+1
+],
+"현금 없는 사회의 본보기였던 스웨덴이 취약 계층과 위기 대비 때문에 현금을 지키려 한다는 글이라 'Sweden's Second Thoughts about a Cashless Society' 가 맞아요. 지폐를 법으로 없앤 적은 없고, 디지털 거래는 범죄자가 숨기기 어렵다고 했어요."
+],
+[
+34,
+3,
+"reading",
+"r3-s9",
+"글에서 밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.",
+[
+"commendable",
+"reprehensible",
+"illusory",
+"fallacious",
+"ludicrous"
+],
+[
+1
+],
+"laudable 은 '칭찬할 만한'이라 commendable 과 같은 뜻이에요. 편리함이 약자의 덫이 되지 않게 하려는 목표를 대부분이 좋게 본다는 문맥이에요. reprehensible(비난받을 만한)은 반대예요."
+],
+[
+35,
+3,
+"reading",
+"r3-s10",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"The boys were divided into groups according to their different backgrounds.",
+"The groups competed against each other from the first day at the camp.",
+"Sherif's earlier study produced the same results without any problems.",
+"Pleasant shared activities alone did not end the hostility between the groups.",
+"Watching films together was the most effective way to reduce conflict between the two groups."
+],
+[
+4
+],
+"영화 보기 같은 즐거운 활동만으로는 갈등이 줄지 않았다고 했어요. 아이들은 배경이 비슷했고, 처음 일주일은 따로 지냈으며, 앞선 연구는 아이들이 직원에게 맞서며 무너졌고, 효과가 있었던 건 함께 풀어야 할 과제였어요."
+],
+[
+36,
+3,
+"reading",
+"r3-s10",
+"글의 빈칸에 들어가기에 가장 알맞은 것을 고르시오.",
+[
+"fallacious",
+"ludicrous",
+"ornamental",
+"conclusive",
+"labyrinthine"
+],
+[
+4
+],
+"실험자가 사건을 보고서보다 더 많이 이끌었다는 비판 뒤라, 생생한 예시일 뿐 '결정적인(conclusive)' 증거는 아니라는 말이 맞아요. fallacious(오류의)·ludicrous(터무니없는)를 넣으면 뜻이 서지 않아요."
+],
+[
+37,
+3,
+"reading",
+"r3-s11",
+"글의 주제로 가장 알맞은 것을 고르시오.",
+[
+"the musical structure of Beethoven's Ninth Symphony",
+"why Beethoven refused to speak aloud after losing his hearing",
+"the medical causes of Beethoven's deafness",
+"Schindler's career as a composer in Vienna",
+"what Beethoven's conversation books reveal and how they were distorted"
+],
+[
+5
+],
+"대화 노트가 베토벤의 삶을 얼마나 생생히 담았는지와 신들러가 없애고 지어낸 기록이라는 경고를 함께 다룬 글이라 '대화 노트가 보여 주는 것과 그것이 어떻게 왜곡됐는지'가 주제예요. 교향곡 구조나 난청의 원인은 다루지 않아요."
+],
+[
+38,
+3,
+"reading",
+"r3-s11",
+"글의 내용과 들어맞지 않는 것을 고르시오.",
+[
+"Visitors wrote their part of conversations in the notebooks.",
+"Fewer than half of the conversation books survive today.",
+"Schindler added false entries to make himself look more important.",
+"Some well-known stories about Beethoven depend on forged entries.",
+"Beethoven usually wrote his answers in the books as well."
+],
+[
+5
+],
+"방문객은 써서 말하고 베토벤은 대개 '소리 내어' 답했다고 했으니 베토벤도 답을 썼다는 말이 글과 어긋나요. 400권쯤 가운데 140권 정도만 남았고, 신들러의 위조와 그에 기댄 일화는 글과 같아요."
+],
+[
+39,
+3,
+"reading",
+"r3-s12",
+"글의 내용과 가장 잘 들어맞는 것을 고르시오.",
+[
+"Oregon chose participants according to their medical needs.",
+"Insurance clearly and quickly lowered the participants' blood pressure and cholesterol.",
+"Lottery winners became less likely to face catastrophic medical bills.",
+"Lottery winners used less health care than the others.",
+"The study found no effect on depression."
+],
+[
+3
+],
+"보험을 얻은 사람은 막대한 의료비를 떠안을 가능성이 크게 줄었다고 했어요. 참가자는 무작위 추첨으로 뽑았고, 혈압 개선은 뚜렷하지 않았으며, 의료 이용은 늘었고, 우울증 비율은 낮아졌어요."
+],
+[
+40,
+3,
+"reading",
+"r3-s12",
+"글에서 밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.",
+[
+"extraneous",
+"illusory",
+"pertinent",
+"irrelevant",
+"prodigal"
+],
+[
+3
+],
+"germane 은 '밀접한 관련이 있는, 적절한'이라 pertinent(관련 있는, 적절한)와 가까워요. 보험의 기본 목적과 가장 맞닿은 결과가 재정 부담 감소라는 문맥이에요. extraneous·irrelevant(관계없는)는 반대예요."
+]
+]
+}

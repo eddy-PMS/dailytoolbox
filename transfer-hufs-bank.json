@@ -1,0 +1,2750 @@
+{
+"school": "hufs",
+"title": "한국외대 편입영어 모의고사",
+"source": "한국외대 편입영어 2018~2026학년도 기출 출제 유형(문항 수·영역·문제 꼴, VocabFactory 분석)을 분석해 dailyfreetoolbox 가 새로 만든 연습 문제",
+"checked": "2026-11-23",
+"minutes": 60,
+"points": [
+[
+1,
+13,
+1
+],
+[
+14,
+17,
+1.5
+],
+[
+18,
+30,
+2
+],
+[
+31,
+40,
+2.5
+],
+[
+41,
+50,
+3
+]
+],
+"sections": [
+{
+"id": "vocab",
+"name": "어휘"
+},
+{
+"id": "rephrase",
+"name": "문장 바꿔 쓰기"
+},
+{
+"id": "grammar",
+"name": "문법"
+},
+{
+"id": "reading",
+"name": "독해"
+}
+],
+"passages": [
+{
+"id": "r1-s1",
+"text": "For decades, wealthy democracies had treated foreign aid as a modest but durable fixture of their budgets, a commitment that weathered the vagaries of changing governments with only minor adjustments. That consensus fractured with startling speed in 2025. On its first day in office, the new administration in Washington ordered a ninety-day pause on most foreign assistance. The United States Agency for International Development, which had managed the bulk of America's humanitarian and development programs, was soon being dismantled. A month later, the British government announced that it would shrink aid from 0.5 to 0.3 percent of national income by 2027 and redirect the savings to defense, and several other European donors pared their own budgets. Proponents of the retrenchment argue that governments must prioritize their own citizens. In their view, aid has too often entrenched dependence rather than fostering self-sufficiency. Detractors counter that the sums involved are a minuscule share of national spending, while their absence is acutely felt. Clinics distributing HIV medication, vaccination drives, and famine early-warning systems rely on predictable funding, and such funding cannot be conjured overnight. Some economists add a more pragmatic objection. Aid, they note, has long been an inexpensive instrument of influence, and when established donors retreat, rival powers are seldom loath to fill the vacuum."
+},
+{
+"id": "r1-s2",
+"text": "Of the roughly seven thousand languages spoken today, only a tiny fraction is well represented in the vast troves of text used to train large language models. English alone accounts for a large share of the material on the public internet. Chatbots that converse eloquently in English or Mandarin often falter in Yoruba, Quechua, or Lao. They produce stilted phrasing or outright errors. Researchers call such languages low-resource. The label describes not their expressive richness but the paucity of digitized text. The disparity matters because AI systems are rapidly being woven into public services, from medical triage to legal advice. Speakers of underserved languages may be nudged toward a dominant tongue simply to be understood by the machine, and such pressure could precipitate the decline of languages already under strain. Yet the same technology offers a glimmer of hope. Community groups have begun chronicling elders, transcribing oral narratives, and compiling modest datasets on their own terms, sometimes insisting on licenses that keep control in local hands. Whether AI ultimately ____ linguistic diversity may therefore depend less on the algorithms themselves than on who gathers the data and who decides how it is used."
+},
+{
+"id": "r1-s3",
+"text": "Ask adults how much their tastes, values, and personalities have changed over the past decade, and most will readily concede that they are quite different people from who they once were. Ask the same adults how much they expect to change over the next decade, however, and their predictions shrink precipitously. In a study published in 2013, psychologists surveyed more than nineteen thousand participants. They found this asymmetry at every age they examined, from young adults to people in their late sixties. The researchers dubbed it the end of history illusion: the persistent belief that the person one is today is, at last, the finished version. One plausible explanation concerns effort. Recalling past change is easy, since memories supply ready evidence. Imagining future change is laborious, and the absence of a vivid image is mistaken for the absence of change itself. The illusion carries practical costs. Participants said they would pay considerably more to see their current favorite band perform a decade from now than to see a once-beloved band perform today. Recognizing the illusion need not paralyze decision-making, but it does counsel humility. When committing to choices that are difficult to reverse, we would do well to remember that the self who must live with them has not yet arrived."
+},
+{
+"id": "r1-s4",
+"text": "Shop signs promising Ye Olde Tea Shoppe are meant to evoke a quaint medieval past, but their very first word rests on a misunderstanding. Old and Middle English possessed a letter called thorn, which represented the sound now spelled th. When printing reached England in the 1470s, the typefaces available had been cast on the Continent, where no language required thorn, so printers were forced to (A) ____. Some substituted the pair th, but others used y, whose handwritten form had come to resemble thorn closely. Thus ye, in phrases such as ye olde, was simply a printed abbreviation of the. It was pronounced exactly as the is today. Readers of later centuries were unfamiliar with the convention and took the y at face value. In modern times the pronunciation yee has become a playful marker of antiquity. Thorn was not the only casualty of the transition from manuscript to print. Its companion eth stood for the same sounds and had fallen into desuetude long before. The letter yogh, used for various guttural sounds, gave way to combinations such as gh, leaving English with silent letters in words like night and though. The episode illustrates how technology can quietly reshape a writing system. Decisions made by a handful of printers, constrained by the type they happened to own, hardened into conventions that later generations treated as (B) ____, mistaking accidents of equipment for features of the language itself."
+},
+{
+"id": "r1-s5",
+"text": "The goal of ten thousand steps a day is so widely repeated that many people assume it emerged from medical research. In fact, its origins lie largely in marketing. Around the time of the 1964 Tokyo Olympics, a Japanese company deftly marketed a pedometer whose name translated roughly as ten-thousand-step meter, a round figure that was memorable and, conveniently, ambitious. The number later proliferated through fitness trackers and public health campaigns around the world, acquiring an aura of scientific precision it had never earned. When researchers finally scrutinized it, the results were instructive. A 2019 study of older women found that those who walked about 4,400 steps a day had markedly lower mortality than the least active women. The benefits leveled off at around 7,500 steps. A later analysis pooled data from several countries and reported broadly similar plateaus, generally between six and eight thousand steps for adults over sixty and somewhat higher for younger adults. None of this means that walking more is deleterious, and additional steps may still improve fitness. But the findings suggest that an arbitrary target may dishearten sedentary people who regard it as unattainable. Far more modest increases would bring substantial gains. The most important steps, it appears, are simply the first few thousand."
+},
+{
+"id": "r1-s6",
+"text": "The distinctive scent that rises from dry ground after the first rain of a season received its name only in 1964. That year two Australian chemists called it petrichor. The word comes from the Greek words for stone and for the fluid said to flow in the veins of the gods. Much of the aroma emanates from geosmin, a compound produced by soil bacteria, and the human nose is extraordinarily sensitive to it, detecting it at a few parts per trillion. How the scent becomes airborne remained inscrutable until 2015. Engineers using high-speed cameras then showed that raindrops striking porous soil trap tiny pockets of air, which rise through the drop and burst into a fine aerosol. Light rain on sandy or clay soil releases the most aerosol. This explains why a gentle shower can smell more pungent than a downpour. Why our noses should be so finely attuned to geosmin is less certain. One hypothesis holds that sensitivity to the smell of wet earth helped our ancestors locate water in arid landscapes. Recent research on springtails, minuscule soil animals that are drawn to geosmin and in turn disperse the bacteria's spores, suggests that the compound may be ____ rather than a mere by-product."
+},
+{
+"id": "r1-s7",
+"text": "Rembrandt's The Night Watch, completed in 1642, is among the most celebrated paintings in the Netherlands. Yet the canvas visitors admire today is not the one Rembrandt delivered. In 1715 Ⓐ<u>the enormous group portrait</u> was moved to the town hall of Amsterdam. It proved too large for the wall assigned to it, so strips were trimmed from all four sides, the widest from the left. Two figures at the edge vanished entirely. The composition had originally placed the striding captain slightly off-center to convey forward movement, but after the cut it became noticeably more static. The excised pieces have never been found. Our knowledge of what is missing comes largely from a much smaller copy painted before the cut by Gerrit Lundens, a contemporary. Even the familiar title is a later accretion, for the scene was not set at night at all. Over time Ⓑ<u>the painting</u> darkened under layers of varnish and grime, inspiring a nickname that stuck. The Rijksmuseum, which has displayed Ⓒ<u>the work</u> since the late nineteenth century, unveiled an unusual reconstruction in 2021. Researchers trained a computer program on Rembrandt's brushwork and palette and used Ⓓ<u>the copy</u> as a guide to generate the missing strips, which were printed and mounted temporarily around the original. The project did not pretend to restore Rembrandt's own hand. Its aim was more modest: to let viewers glimpse, for a few months, the sense of movement that a mundane decision about wall space had quietly erased three centuries earlier."
+},
+{
+"id": "r1-s8",
+"text": "Can smiling make you happier? The idea that facial expressions not only reflect emotions but also shape them has a long pedigree. Both Charles Darwin and William James entertained versions of it. In 1988 a team of German psychologists concocted an ingenious test. To keep participants from guessing the purpose of the study, they asked them to hold a pen either between their teeth or between their lips. The first position forces the face into something resembling a smile, and the second prevents one. Participants in the first condition rated cartoons as funnier, and the experiment became a staple of introductory textbooks. In 2016, however, seventeen laboratories repeated the procedure with nearly two thousand participants and found no effect at all. The failure was widely cited as an emblem of psychology's replication crisis. Yet the story did not end there. The original author pointed out that participants in the new studies had been filmed, and a later experiment suggested that the effect appeared only when no camera was present, perhaps because being observed makes people self-conscious. In 2022 an international collaboration involving thousands of participants in many countries reported that deliberately posing a smile produced a small but detectable increase in happiness. The emerging picture is more ____ than either the original enthusiasm or the subsequent dismissal: our faces may nudge our feelings, but only slightly, and only under certain conditions."
+},
+{
+"id": "r1-s9",
+"text": "Students preparing for examinations tend to favor rereading their notes and highlighting textbooks, strategies that feel productive because the material grows increasingly familiar. Familiarity, however, is a treacherous guide to learning. A large body of research indicates that retrieving information from memory, rather than reviewing it, consolidates it most durably. In one well-known experiment, students read a prose passage and then tried to recall it in writing. A week later they remembered considerably more than students who had spent the same time rereading, even though the rereaders had predicted they would perform better. Psychologists call this the testing effect. It belongs to a broader family of what one researcher termed desirable difficulties. These are conditions that make learning feel slower and more arduous in the moment but yield sturdier retention. Spacing study sessions apart rather than cramming is another example. So is interleaving different kinds of problems rather than practicing one kind in a block. The paradox is that learners gauge their progress by fluency, the ease with which material comes to mind while it lies in front of them, and fluency is precisely what these effective techniques sacrifice. Teachers who adopt frequent low-stakes quizzes must therefore try to persuade students that the discomfort of struggling to remember is not a symptom of failure but the very mechanism of learning."
+},
+{
+"id": "r1-s10",
+"text": "Few words seem as breezy and informal as ciao, the greeting that Italians use both on meeting and on parting. It has spread into dozens of other languages. Its origins, however, are surprisingly servile. The word comes from the Venetian dialect, in which s-ciavo meant slave, derived from the medieval Latin sclavus. For centuries, Venetians greeted one another with a phrase roughly meaning I am your slave, a courteous formula of deference comparable to the English your humble servant, which once closed formal letters. Through ceaseless repetition, the expression was worn down to a single syllable. Its original meaning faded from awareness, much as few English speakers today hear God be with you inside goodbye. By the twentieth century, ciao had spread from northern Italy across the country and shed any trace of formality. It became the casual greeting reserved for friends and family, while strangers were addressed more formally. A similar transformation occurred in parts of central Europe, where servus, the Latin word for slave, survives as a friendly hello. These histories illustrate a recurring pattern in language: expressions of exaggerated ____ tend, through overuse, to become ordinary pleasantries, their literal content quietly drained away."
+},
+{
+"id": "r1-s11",
+"text": "Ask a room of teachers whether students learn better when lessons match their preferred learning style, whether visual, auditory, or kinesthetic, and most hands will go up. Surveys in several countries have found that a large majority of educators endorse the idea. An industry of questionnaires, workshops, and classroom materials has burgeoned around it. The appeal is easy to understand. People do have preferences, and tailoring instruction to each child sounds both scientific and humane. The claim at the heart of the theory, however, <u>does not survive contact with the evidence</u>. To demonstrate it, a study would need to sort learners by style, teach each group in several ways, and show that each learns best when instruction matches its style. In 2008 a team of cognitive psychologists reviewed the research. Very few studies had used such a design, and those that had largely failed to find the predicted pattern. Later experiments reached similar conclusions. Students who describe themselves as visual learners do not remember more from pictures than from words, compared with students who claim other styles. What does matter is the fit between the method and the material. A map conveys geography better than a spoken description for nearly everyone, just as pronunciation is best learned by listening. Critics of the myth argue that it is subtly deleterious: it can encourage students to shun challenging modes of learning and divert teachers' limited time toward matching lessons to labels."
+},
+{
+"id": "r1-s12",
+"text": "For a time, the name of a piece of software became a verb. In the late 2000s people spoke of skyping relatives abroad, and the program's free calls over the internet seemed little short of miraculous to families accustomed to paying extortionate rates for international telephone calls. Launched in 2003 by Scandinavian entrepreneurs working with Estonian engineers, Skype routed calls directly between users' computers, a design that kept its costs remarkably low. Its success attracted (A) ____ buyers: the auction company eBay acquired it in 2005. Microsoft bought it in 2011 for roughly eight and a half billion dollars, at the time the largest acquisition in its history. Yet in May 2025 Microsoft shut Skype down and directed its remaining users to its workplace application, Teams. The decline had been gradual and then sudden. Smartphones favored messaging apps that were built for mobile devices from the start, while Skype, designed for desktop computers, floundered. When the pandemic sent billions of people online in 2020, it was a younger rival, Zoom, that became the default for remote meetings and classes. Part of the reason was that joining a call required nothing more than clicking a link. Analysts glean several lessons from the episode. Being first confers no permanent advantage; a product's architecture can become a liability when the technology around it shifts. And ownership by a large company does not guarantee survival, particularly when the parent is focused elsewhere. Skype's fate is a reminder of how (B) ____ dominance in consumer technology can be."
+},
+{
+"id": "r2-s1",
+"text": "Every time a European shopper buys from an American website or a hospital consults software hosted abroad, personal data crosses a border. Governments are increasingly zealous about controlling where it goes. The European Union's data protection regulation, in force since 2018, countenances transfers of personal information to other countries only if it will receive protection commensurate with that guaranteed at home. Twice, Europe's highest court has struck down arrangements for the free flow of such data to the United States. In the court's view, American surveillance law afforded Europeans scant recourse. A new framework replaced those arrangements in 2023, and in the same year Meta was fined 1.2 billion euros for transfers made under the earlier rules. Other governments have espoused their own versions of data sovereignty. Some mandate the domestic storage of certain categories of information, while others subject exports of data to stringent security reviews. Advocates contend that such rules are the only way to keep privacy rights from evaporating at the border. Critics decry the prospect of a splintering internet. Firms would have to duplicate infrastructure in each jurisdiction, and small companies would be priced out of international markets. The free flow of information behind the internet's growth would be supplanted by a patchwork of incompatible regimes."
+},
+{
+"id": "r2-s2",
+"text": "Many workers are familiar with the slump of the early afternoon, when concentration wavers and eyelids grow heavy. The dip is often imputed to lunch. In fact it is largely built into the body's daily rhythm and occurs even when the midday meal is skipped. A brief nap is among the most efficacious remedies. In a well-known study for NASA in the 1990s, long-haul pilots were allowed a planned rest of forty minutes in the cockpit while a colleague flew the aircraft. They slept about twenty-five minutes and afterward displayed markedly better alertness and performance than pilots with no rest. The benefits depend heavily on timing and length, however. Sleep researchers generally recommend naps of ten to twenty minutes in the early afternoon. Longer naps allow the sleeper to descend into deep sleep, and waking from that stage produces sleep inertia, a groggy disorientation that can linger for half an hour and temporarily impair judgment. Late naps can also hamper sleep at night. Some aficionados recommend drinking coffee immediately before a short nap, since the caffeine takes effect just as the sleeper wakes. Employers once derided napping at work as a symptom of indolence. Now a growing number provide quiet rooms for the purpose, cognizant that a few minutes of rest can pay for themselves in safer and more productive work."
+},
+{
+"id": "r2-s3",
+"text": "The word person has a theatrical lineage. In the theater of ancient Rome, actors wore masks to identify the characters they played, and the Latin term for such a mask was persona. A popular explanation, repeated since antiquity, derives the word from per sonare, to sound through, because the actor's voice resonated through the opening of the mask. Most modern linguists regard this etymology as spurious, since the vowel lengths do not match. Many surmise a borrowing from Etruscan, the language of Rome's northern neighbors, in which a similar word is associated with a masked figure. Whatever its origin, persona soon transcended the stage. Roman jurists used it for an individual who bears rights and duties. Early Christian theologians employed it in intricate debates about the nature of God. In the twentieth century the psychologist Carl Jung revived the word to describe the social face an individual presents to the world. Such a mask is expedient but perilous when mistaken for the whole self. The history is ____: the vocabulary we use for our innermost identity began as a term for something worn on the outside, a device for playing a role before an audience."
+},
+{
+"id": "r2-s4",
+"text": "When economists tally the money that flows into developing countries, one source now (A) ____ the rest. Remittances, the funds that migrant workers send to relatives at home, amount to several hundred billion dollars a year, according to World Bank estimates. This exceeds foreign direct investment and official aid combined. In some smaller economies, they equal a quarter or more of national output. Unlike aid, which is channeled through governments and agencies, remittances go directly to households, where they pay for food, school fees, medical bills, and housing. They also tend to be remarkably resilient. When disaster strikes a home country, migrants often send more rather than less, cushioning the blow precisely when other forms of finance dry up. Yet the money comes at a cost, in more than one sense. Sending a small sum across borders still costs about six percent on average, double the target the United Nations has set for 2030. Fees are often highest on routes serving the most impoverished countries. Critics also fret that heavy reliance on remittances can relieve governments of pressure to create jobs at home, while the departure of young workers depletes villages of talent and leaves children to be raised by grandparents. Digital payment services have begun to whittle fees down. Some governments also offer incentives for migrants to invest their savings in local businesses. Whether remittances can do more than (B) ____ hardship, however, may depend on whether home countries build economies that give their citizens a reason to stay."
+},
+{
+"id": "r2-s5",
+"text": "The white streaks that trail behind aircraft at cruising altitude are not smoke but ice. Contrails form when hot, humid exhaust meets the frigid air of the upper atmosphere, and in dry air they vanish within seconds. In air already saturated with moisture, however, they can persist for hours, diffusing into thin sheets of cirrus cloud. These artificial clouds exert an outsized effect on the climate. By day they reflect some sunlight back to space, but they also trap heat radiating from the earth. On balance they warm the planet, especially at night, when there is no sunlight to reflect. By some estimates, the warming from contrail clouds rivals or even exceeds that of the carbon dioxide emitted by aviation itself. Strikingly, a small fraction of flights produces most of this effect, because only certain layers of the atmosphere are humid enough to sustain long-lived contrails. That raises an intriguing possibility: airlines might obviate costly engine redesigns simply by adjusting altitudes to bypass such layers. In a 2023 trial, an airline and a technology company used forecasts to reroute several dozen flights and reported that contrails were cut by roughly half. Skeptics note that detours squander extra fuel and that forecasting humid layers remains imprecise. Still, the potential gains appear substantial relative to the cost."
+},
+{
+"id": "r2-s6",
+"text": "Look up through the canopy of certain forests and you may see something anomalous. The crowns of neighboring trees stop just short of touching, leaving narrow channels of sky between them, like fissures in dried mud or the lines of a jigsaw puzzle. The phenomenon, known as crown shyness, has been noted by foresters since at least the 1920s. It is especially striking among camphor trees in Malaysia, though it occurs in many other species as well. Why trees should keep their distance remains a matter of conjecture. One explanation emphasizes wind. As tall, spindly trees sway, their outer branches strike those of their neighbors, snapping twigs and impairing growing buds, so that over time the gaps are effectively pruned into place. Studies of pines in windy locations found wider gaps between crowns that collided more often. Another explanation focuses on light. Plants can detect the altered light reflected by nearby leaves, and a branch that senses a neighbor may simply cease growing toward it, avoiding shade. A third suggestion is that the gaps forestall the spread of leaf-eating insects and disease from one tree to the next. These explanations are not mutually exclusive, and the pattern may well have ____ causes that vary from one forest to another."
+},
+{
+"id": "r2-s7",
+"text": "Diego Velazquez's Las Meninas, painted in 1656 and hanging today in the Prado Museum in Madrid, has been called the most scrutinized painting in Western art. At first glance it seems a candid scene from the Spanish court. At the center stands Ⓐ<u>the five-year-old princess</u> Margarita Teresa, attended by two maids of honor, the meninas of the title, along with two dwarfs, a dog, and other members of the household. To the left, Ⓑ<u>the painter</u> himself stands before an enormous canvas with brush in hand and gazes out toward the viewer. But what he is painting is hidden from us, since we see only the back of the canvas. A small mirror on the rear wall offers a clue. It reflects the blurry figures of King Philip IV and Queen Mariana, who seem to be standing exactly where we stand. The viewer is thus drawn into an unsettling loop as both spectator and subject. Is Ⓒ<u>the artist</u> depicting the royal couple, the princess, or the very picture before us? Further intrigue surrounds the red cross on his chest, the emblem of a knightly order that Ⓓ<u>he</u> joined only in 1659, three years after the canvas was completed. The cross must have been added later. Centuries on, the work continues to provoke. Pablo Picasso painted a profusion of variations on it in 1957, and the philosopher Michel Foucault opened a celebrated book with an essay on its play of gazes, treating the painting as a meditation on representation itself."
+},
+{
+"id": "r2-s8",
+"text": "During the pandemic, millions of office employees discovered that much of their work could be done from a kitchen table. Many employers, at first reluctantly, discovered the same. Since then the pendulum has been swinging back. In September 2024 Amazon told its corporate staff to be in the office five days a week from the start of 2025, and several large banks and technology firms issued similar edicts. Executives defending such mandates invoke intangible benefits: serendipitous conversations that engender ideas, the mentoring of junior colleagues who learn by watching, and a shared culture that is difficult to sustain over video calls. The evidence, however, is more ____ than either side tends to concede. A randomized experiment at a large Chinese travel company was published in 2024. Letting employees work from home two days a week cut resignations by about a third without harming performance or promotion prospects. Other studies suggest that fully remote arrangements can hamper the training of newcomers and erode collaboration across teams. Much depends on the nature of the work, the stage of an employee's career, and how deliberately an organization structures time together. Some observers also suspect that rigid mandates serve a tacit purpose. They may precipitate voluntary departures at a time when firms wish to trim payrolls without announcing layoffs. Whatever the motive, the debate has shifted from whether offices matter to a subtler question: what offices are for, and how often people must gather in them to obtain the benefits that justify the commute."
+},
+{
+"id": "r2-s9",
+"text": "Most of us believe we understand how a zipper works, or a flush toilet, or a bicycle. In a series of experiments published in 2002, psychologists asked people to rate their understanding of such everyday devices, then to write a detailed, step-by-step explanation of how each one functions. After attempting the explanation, participants revised their ratings sharply downward. The researchers called this gap the illusion of explanatory depth. We conflate familiarity with an object, and the knowledge that its workings are known to someone, with an understanding we personally possess. The illusion is not confined to gadgets. Later studies asked people with strong opinions on political issues, such as a cap-and-trade system for carbon emissions, to explain precisely how the policy would operate. Struggling to delineate the mechanism, many became less certain and adopted more moderate positions. Notably, merely listing reasons for their views did not have the same effect. The distinction is instructive. Justifying a belief draws on arguments one has already rehearsed, whereas explaining a mechanism forces a confrontation with the limits of one's knowledge. The research suggests a modest technique for anyone hoping to defuse an acrimonious discussion. Instead of asking an opponent why they believe something, ask them how it would actually work."
+},
+{
+"id": "r2-s10",
+"text": "Few marks of punctuation inspire as much fervor as the serial comma, the optional comma placed before the final and in a list of three or more items, as in red, white, and blue. It is often called the Oxford comma because the house style of Oxford University Press has long required it. Many newspapers, following the style guide of the Associated Press, omit it to save space. Defenders argue that the comma precludes ambiguity. Without it, a dedication to my parents, Ayn Rand and God could be read as claiming that the author's parents are Ayn Rand and God. Detractors reply that the comma can beget ambiguities of its own and that careful writers can simply rephrase ungainly sentences. The dispute might seem pedantic, but in 2017 it proved expensive. A Maine law exempted from overtime pay the canning, processing, preserving, freezing, drying, marketing, storing, packing for shipment or distribution of certain foods. Delivery drivers for a dairy company argued that no comma separated the last two items. In their reading, the law exempted packing for shipment or distribution, not distribution itself, and therefore not their work. A federal appeals court found the phrase ambiguous and sided with the drivers. The company later agreed to a settlement of five million dollars. The case became a favorite of grammar pedants, a rare instance in which a single ____ mark carried a price tag."
+},
+{
+"id": "r2-s11",
+"text": "Once we know how a story ended, it is remarkably difficult to remember how uncertain it once seemed. In a classic study, psychologists asked students to estimate the likelihood of various possible outcomes of President Richard Nixon's 1972 visits to China and the Soviet Union, such as whether he would meet Mao Zedong. After the trips, the students were asked to recall their original estimates. Those whose predicted events had actually occurred tended to remember having assigned them higher probabilities than they really had. The phenomenon, now called hindsight bias, is sometimes summarized as the knew-it-all-along effect. It is not merely an idiosyncrasy of memory. Hindsight bias turns ordinary observers into <u>Monday-morning quarterbacks</u>, confident that a disaster was foreseeable and that those in charge must have been careless or incompetent. In experiments on legal judgments, mock jurors who learn of an accident rate it as more predictable. They also judge the defendant more negligent than jurors who evaluate the same precautions without knowing the outcome. Physicians reviewing a case are similarly swayed by knowledge of the final diagnosis. The bias also vitiates learning: if the past always appears inevitable, we draw overconfident lessons from it and underestimate the role of chance. One partial remedy is to consider the opposite, deliberately imagining how events might have unfolded differently. This restores some of the uncertainty that hindsight effaces."
+},
+{
+"id": "r2-s12",
+"text": "For most of history, the night sky was a shared inheritance that changed only on astronomical timescales. Within a few years, it has been (A) ____ by commerce. Since the first batch of Starlink satellites was launched in 2019, the network has grown to more than six thousand spacecraft by the end of 2024, and other companies plan constellations of their own. These satellites deliver broadband internet to remote villages, ships at sea, and regions where conventional infrastructure has been destroyed, a service of palpable humanitarian value. For astronomers, however, they pose a burgeoning nuisance. Sunlit satellites passing overhead at dusk and dawn leave bright streaks across long-exposure images. The problem is especially acute for wide-field instruments such as the Vera C. Rubin Observatory in Chile, which released its first images in 2025 and will photograph the entire southern sky every few nights. Radio astronomers report a different hazard: stray emissions from satellite electronics that can drown out faint signals from distant galaxies. Operators have responded with some (B) ____, testing darker coatings and sun visors that reduce reflected light and sharing orbital data so that observatories can schedule exposures around passing satellites. Astronomers acknowledge these efforts but warn that mitigation has limits when tens of thousands more satellites are planned. The International Astronomical Union has established a center to protect dark and quiet skies. Yet there is no binding international rule governing satellite brightness, leaving the fate of the night sky largely to the goodwill of companies and the vigilance of national regulators."
+},
+{
+"id": "r3-s1",
+"text": "In 1990 the political scientist Joseph Nye coined the term soft power. It describes a country's ability to get what it wants through attraction rather than coercion or payment. Military strength and economic sanctions can compel, Nye argued, but a nation whose culture, values, and policies others admire can persuade without firing a shot. Governments have since sought to cultivate such influence assiduously. Britain's cultural agency has promoted the English language abroad since the 1930s, and Japan launched a Cool Japan initiative to market its animation and cuisine. South Korea, whose films, dramas, and pop music now command global audiences, has expanded its cultural centers around the world. Yet soft power resists engineering. Much of Korea's cultural success emerged from fiercely competitive private industries rather than ministerial planning, and audiences everywhere gravitate toward what feels authentic and recoil from what smells of propaganda. When culture is too visibly enlisted in the service of the state, it can prove counterproductive. China's Confucius Institutes were established on university campuses from 2004 onward to teach language and culture. They incurred suspicion that they constrained academic freedom, and many were closed in the United States and Europe. The paradox of soft power is that it tends to be most efficacious when it appears least intended."
+},
+{
+"id": "r3-s2",
+"text": "Pick a large collection of naturally occurring numbers, such as the populations of towns or the lengths of rivers, and then look only at the first digit of each one. Intuition suggests that each digit from one to nine should lead about equally often. In fact, one appears first roughly thirty percent of the time, while nine leads fewer than five percent of the numbers. The astronomer Simon Newcomb noticed the pattern in 1881, observing that the early pages of books of logarithm tables were far more worn than the later ones. The physicist Frank Benford documented it in 1938, and the law now bears his name. Benford's law arises in data that spread across several orders of magnitude, because a quantity growing at a steady rate lingers longer among the low leading digits than among the high ones. The law does not apply to numbers assigned by people, such as telephone numbers, or to quantities confined to a narrow range, such as adult heights. Its most salient use lies in detecting fraud. People who fabricate figures tend to distribute leading digits too evenly. Auditors and tax investigators now scrutinize financial records for departures from the expected pattern. A deviation does not establish culpability, but it can tell investigators where to look more closely. Benford's law thus turns a ____ quirk of arithmetic into a tool of surprising practical value."
+},
+{
+"id": "r3-s3",
+"text": "Why is it so much easier to give sensible advice to a friend than to follow it ourselves? Psychologists have a name for this asymmetry: Solomon's paradox, after the biblical king renowned for his wisdom yet notorious for his personal misjudgments. In a 2014 study, participants reasoned more wisely about a romantic partner's infidelity when they imagined it happening to a friend rather than to themselves. They were likelier to consider other viewpoints, acknowledge the limits of their knowledge, and seek compromise. Remarkably, the gap shrank when people were simply asked to reflect on their own dilemma in the third person. Related research on self-talk points the same way. Volunteers who prepared for a stressful speech by addressing themselves by their own name, rather than as I, reported less anxiety afterward and were later rated by observers as performing better. The researchers call this strategy self-distancing. Shifting perspective, it seems, loosens the grip of immediate emotion. It allows the reasoning we readily apply to others to be applied to ourselves. The technique is no panacea, for it cannot supply information we lack, and it may feel awkward at first. Yet the technique costs nothing at all, and it suggests that the counsel we need is often already within reach, waiting only for us to step outside our own heads."
+},
+{
+"id": "r3-s4",
+"text": "Hosting the Olympic Games was once a prize for which cities vied fiercely. Increasingly, it looks like a burden that only a few are willing to (A) ____. The financial record is sobering. Montreal took some thirty years to pay off the debt from its 1976 Games. Researchers at the University of Oxford who examined Games held since 1960 found that every one for which reliable data exist exceeded its original budget, often by a very wide margin. Stadiums built for a few weeks of competition can become costly white elephants, and the vaunted surge in tourism frequently fails to materialize, as regular visitors avoid the crowds and inflated prices. Voters have taken notice. When bidding opened for the 2022 Winter Games, several European cities withdrew after public opposition or referendums, leaving only two candidates. The International Olympic Committee has responded by changing its approach. It now encourages hosts to use existing and temporary venues, and it invites potential hosts into informal dialogue rather than costly open contests. Paris in 2024 relied overwhelmingly on existing or temporary facilities, and Los Angeles has pledged to build no new permanent venues for 2028. Supporters argue that the Games can still serve as a catalyst for long-delayed transport and housing projects, as Barcelona's 1992 Olympics are often said to have done. Critics reply that such investments could be made more cheaply without the deadlines and security demands of a global spectacle. The emerging consensus favors a more (B) ____ model, in which the event adapts to the city rather than the city to the event."
+},
+{
+"id": "r3-s5",
+"text": "To an English speaker, the notion that a table or a spoon should be masculine or feminine can seem whimsical. Yet in many of the world's languages, every noun belongs to a grammatical class, and that class governs the forms of the words around it. In French, a table is feminine; in German, the word for girl, Mädchen, is neuter. Nouns ending in that diminutive suffix take neuter gender regardless of meaning, a fact Mark Twain lampooned in a famous essay. Grammatical gender, linguists stress, is largely a matter of form rather than biology. Some languages divide nouns not by sex at all but into classes such as animate and inanimate, and Swahili, spoken across East Africa, partitions its nouns into more than a dozen classes. English itself once had masculine, feminine, and neuter nouns, but the distinctions eroded in the centuries after the Norman Conquest. Whether gender shapes thought is a more contentious question. One widely publicized study compared German and Spanish speakers. For German speakers bridge is feminine, and they described bridges with words such as elegant. For Spanish speakers it is masculine, and they chose words such as strong. Subsequent attempts to replicate such findings have often failed, however. Most researchers now regard any influence as subtle at best."
+},
+{
+"id": "r3-s6",
+"text": "Few insects defend themselves as dramatically as the bombardier beetle. When threatened, it aims the tip of its abdomen at the attacker and fires a boiling, noxious spray, accompanied by an audible pop. The beetle accomplishes this feat with a two-chamber system. One reservoir holds a solution of hydroquinones and hydrogen peroxide, and when the beetle contracts its muscles, the mixture flows into a thick-walled reaction chamber. Enzymes lining this chamber decompose the peroxide almost instantly. The reaction releases enough heat to bring the liquid to about the boiling point of water, along with enough gas to blast it out. In 2015 researchers using high-speed X-ray imaging found that the spray is not continuous but pulsed, with hundreds of tiny explosions each second. Between pulses the chamber has a moment to cool, which may help the insect avoid ____ itself. The defense is remarkably efficacious. In a 2018 experiment, toads that swallowed bombardier beetles frequently vomited them up, sometimes more than an hour later. Many of the expelled beetles walked away alive. Engineers have studied the mechanism in the hope of designing more efficient fuel injectors and fire extinguishers, an example of how the solutions evolved by small creatures can inspire human technology."
+},
+{
+"id": "r3-s7",
+"text": "Jan van Eyck's portrait of a couple standing in a lavishly furnished room rewards close looking like few other works. It was painted in 1434 and is today held by London's National Gallery. Ⓐ<u>The man</u> is usually identified as Giovanni Arnolfini, an Italian merchant living in the Flemish city of Bruges, and he raises his right hand while holding the woman's hand in his left. Every surface is rendered with astonishing precision, from the fur trim of the clothing to the oranges on the windowsill, a precision made possible by the oil glazes that Ⓑ<u>the Flemish master</u> handled with unrivaled skill. The most famous detail is a small convex mirror on the back wall. In it the couple appear from behind, and beyond them two further figures stand in the doorway, one of whom may be the painter himself. Above the mirror, an elaborate Latin inscription declares that Jan van Eyck was here, 1434. In an influential essay published in 1934, the art historian Erwin Panofsky argued that the picture records a marriage. In his view the two figures in the mirror serve as witnesses, and the inscription functions like a signature on a legal document. Many scholars now dispute this reading. Archival research has complicated the identification of Ⓒ<u>the merchant</u> and his companion. The woman's full gown was once taken as a sign of pregnancy, but she appears simply to be dressed in the fashion of the day. Who exactly is depicted, and why Ⓓ<u>Arnolfini</u> commissioned so intimate an image, may never be settled. That uncertainty has only heightened the painting's allure."
+},
+{
+"id": "r3-s8",
+"text": "In 2020 the American Ornithological Society, which sets the official English names of birds in North America, renamed a small songbird known as McCown's longspur. The bird's namesake, a nineteenth-century army officer, had later fought for the Confederacy, and the bird became the thick-billed longspur, a name that simply describes what the bird actually looks like. Three years later the society went much further. In November 2023 it announced that it would replace the English names of all birds within its jurisdiction that honor people, roughly seventy to eighty species in all, with the work beginning in 2024. Among them are birds named for John James Audubon, the celebrated painter of birds who also enslaved people. The society argued that names honoring individuals can be ____ to potential birdwatchers. It added that descriptive names referring to plumage, song, or habitat are more useful for identifying birds in the field. The society also invited the public to take part in choosing replacements. The decision provoked acrimonious debate. Critics contended that the move effaces history. Judging historical figures by modern standards, they warned, is a slippery slope. Some noted that many honorees were obscure collectors rather than notorious villains. Supporters replied that a bird's name should tell us something about the bird rather than about the person who happened to shoot a specimen. Notably, the change applies only to English common names; the Latin scientific names, governed by a separate international code, will remain untouched."
+},
+{
+"id": "r3-s9",
+"text": "Many listeners know the sensation: at a particular moment in a piece of music, a shiver runs down the spine and the fine hair on the arms stands on end. Researchers call these episodes chills, or frisson, and they have proved a valuable window into how the brain processes reward. In a study published in 2011, a team of neuroscientists asked volunteers to bring recordings of music that reliably gave them chills, and then scanned their brains while they listened to the music. At the moments of peak emotion, the brain released dopamine, the same chemical messenger involved in responses to food and other tangible rewards. Strikingly, dopamine release also surged in a different region during the seconds before the peak, as listeners anticipated the passage they loved. Chills tend to accompany musical surprises: an unexpected harmony, a sudden shift in volume, or the entrance of a solo voice. Composers, in other words, may elicit pleasure partly by setting up expectations and then delaying or thwarting them. Not everyone experiences chills, however. Later research found that people who do may have denser connections between the brain areas that process sound and those involved in emotion. Why should an abstract pattern of sounds, with no discernible value for survival, tap into such ancient reward circuitry? That remains an open question."
+},
+{
+"id": "r3-s10",
+"text": "In the eighth and ninth centuries, Baghdad, the new capital of the Abbasid caliphs, became the center of one of history's most ambitious intellectual undertakings. Over roughly two hundred years, scholars translated into Arabic a vast body of Greek learning, including the works of Aristotle on logic, Galen on medicine, Euclid on geometry, and Ptolemy on astronomy. The translators often worked through intermediate translations in Syriac. The most celebrated translator, Hunayn ibn Ishaq, compared multiple manuscripts to establish reliable texts before rendering them, a practice that presaged modern scholarly editing. The patrons of the movement included caliphs, courtiers, and wealthy families. Their motives ranged from practical needs in medicine and administration to political prestige. Later accounts credit a royal library known as the House of Wisdom, although historians now debate whether it was a grand academy of learning or a more modest collection of books. The arrival of papermaking from China made books far cheaper than parchment and further fueled the enterprise. Crucially, the translators and their successors did more than ____ ancient texts. Thinkers such as the mathematician al-Khwarizmi built on Greek and Indian sources to produce original work. His name gave us the word algorithm. Much of this knowledge later reached medieval Europe through Latin translations made in Spain."
+},
+{
+"id": "r3-s11",
+"text": "After a conversation with someone new, many of us ruminate on the exchange, wincing at an awkward pause or a joke that fell flat. A series of studies published in 2018 suggests that this self-scrutiny leads us systematically astray. Researchers paired up strangers for brief conversations and afterward asked each participant two simple questions: how much they liked their partner, and how much they thought their partner liked them. Time and again, people underestimated how much they were liked. The researchers called this discrepancy the liking gap. It appeared whether conversations lasted a few minutes or up to three-quarters of an hour. It also persisted among first-year university students who shared living quarters, narrowing only gradually over several months. Part of the explanation, the researchers proposed, is that <u>we are our own harshest critics</u>. During a conversation, we are preoccupied with monitoring our own performance. We therefore overlook the signals of warmth and interest that our partners display, signals that outside observers notice readily. Afterward, our memories dwell on our missteps rather than on the pleasant moments. The consequences may be more than emotional. If people assume they made a poor impression, they may forgo friendships or collaborations that would in fact be welcome. The findings carry an encouraging message: the stranger across the table is probably enjoying the conversation far more than we imagine, and we can afford to be gentler with ourselves."
+},
+{
+"id": "r3-s12",
+"text": "When Pope Francis died in April 2025, the Catholic Church turned to a procedure whose essentials have changed little in centuries. Cardinals under the age of eighty, 133 of them on this occasion, gathered in the Sistine Chapel. They were sequestered from the outside world, forbidden to communicate with anyone beyond its walls until they had chosen a successor. The word conclave itself comes from the Latin for with a key, a reminder of the procedure's (A) ____ origins. In the thirteenth century, cardinals meeting in the Italian town of Viterbo failed for nearly three years to agree on a pope. Exasperated local officials locked them in, curtailed their rations, and reportedly even removed the roof of their lodging. The ordeal produced a decision, and the new pope later issued rules requiring future electors to be confined until they reached one. Today a candidate needs a two-thirds majority. After each round of voting, the ballots are burned in a stove whose chimney is visible from St. Peter's Square. Black smoke signals that no one has been elected, and white smoke signals that the church has a new leader. In May 2025 the white smoke appeared on the second day. The cardinals had chosen Robert Prevost, a Chicago-born missionary who had spent many years in Peru, and he took the name Leo XIV, becoming the first pope from the United States. A process conducted in secret by a small group nonetheless riveted the attention of millions, observers noted. It is a blend of ancient ritual and modern spectacle that remains remarkably (B) ____."
+}
+],
+"q": [
+[
+1,
+1,
+"vocab",
+null,
+"Select the best word for the blank.\nAfter both sides remained ____ on wages for six months, the mediator declared the negotiations deadlocked and quietly withdrew.",
+[
+"intransigent",
+"pliable",
+"conciliatory",
+"loquacious"
+],
+[
+1
+],
+"여섯 달 동안 버텨서 협상이 교착됐다고 했으니 '양보하지 않는, 완강한(intransigent)'이 맞아요. pliable(유순한)·conciliatory(달래는)는 정반대이고, loquacious(말 많은)는 교착의 이유가 되지 않아요."
+],
+[
+2,
+1,
+"vocab",
+null,
+"Select the best word for the blank.\nThe inspector gave the factory only a ____ glance, signing the safety certificate within minutes without opening a single cabinet.",
+[
+"meticulous",
+"clandestine",
+"vociferous",
+"perfunctory"
+],
+[
+4
+],
+"몇 분 만에, 캐비닛 하나 열지 않고 서명했다는 내용이 단서예요. 형식만 갖춘 '대충 하는(perfunctory)' 눈길이에요. meticulous(꼼꼼한)는 반대이고, clandestine(은밀한)·vociferous(시끄러운)는 단서와 맞지 않아요."
+],
+[
+3,
+1,
+"vocab",
+null,
+"Select the best word for the blank.\nFacing mounting losses, the airline decided to ____ its unprofitable long-haul routes and concentrate on short regional flights.",
+[
+"bequeath",
+"extol",
+"jettison",
+"placate"
+],
+[
+3
+],
+"손실이 쌓여 짧은 노선에 집중하겠다는 결정이니 돈 안 되는 장거리 노선을 '버리다(jettison)'가 맞아요. bequeath(물려주다)·extol(칭찬하다)·placate(달래다)는 노선을 목적어로 받아 뜻이 통하지 않아요."
+],
+[
+4,
+1,
+"vocab",
+null,
+"Select the best word for the blank.\nEconomists regard the sudden slump in shipping orders as a ____ of recession, since factories usually cut imports before they cut jobs.",
+[
+"vestige",
+"harbinger",
+"pariah",
+"panacea"
+],
+[
+2
+],
+"공장이 일자리보다 수입을 먼저 줄인다고 했으니 주문 급감은 불황이 올 것을 미리 알리는 '전조(harbinger)'예요. vestige(흔적)는 지나간 것에 쓰고, panacea(만병통치약)·pariah(따돌림받는 사람)는 뜻이 맞지 않아요."
+],
+[
+5,
+1,
+"vocab",
+null,
+"Select the underlined word's nearest synonym.\nDespite tearful appeals from the victims' families, the official remained <u>obdurate</u> and refused to reopen the investigation.",
+[
+"amenable",
+"despondent",
+"adamant",
+"capricious"
+],
+[
+3
+],
+"obdurate 는 '고집스러운, 꿈쩍 않는'이라 adamant(단호한)와 가까워요. 눈물의 호소에도 재수사를 거부했다는 내용이 단서예요. amenable(순순히 따르는)은 반대이고, capricious(변덕스러운)도 맞지 않아요."
+],
+[
+6,
+1,
+"vocab",
+null,
+"Select the underlined word's nearest synonym.\nThe coach gently <u>chided</u> the young players for arriving late, then reminded them that punctuality was part of teamwork.",
+[
+"rebuked",
+"commended",
+"appeased",
+"venerated"
+],
+[
+1
+],
+"chide 는 '나무라다'라 rebuked(꾸짖었다)와 가까워요. 늦게 온 것을 두고 한 말이고 시간 엄수를 일깨웠다는 뒤 내용이 단서예요. commended(칭찬했다)·venerated(숭배했다)는 반대 쪽이에요."
+],
+[
+7,
+1,
+"vocab",
+null,
+"Select the underlined word's nearest synonym.\nCustomers complained that the new receptionist was <u>brusque</u>, answering their questions in a few clipped words before turning away.",
+[
+"affable",
+"pensive",
+"obstinate",
+"terse"
+],
+[
+4
+],
+"brusque 는 '퉁명스러운'이라 terse(퉁명스럽게 짧은)와 가까워요. 몇 마디 짧게 끊어 답하고 돌아섰다는 뒤 내용이 단서예요. affable(상냥한)은 반대예요."
+],
+[
+8,
+1,
+"vocab",
+null,
+"Select the underlined word's nearest synonym.\nAs the drought persisted into a third year, the town's reservoir <u>dwindled</u> to a muddy pool barely a meter deep.",
+[
+"waned",
+"proliferated",
+"fluctuated",
+"stagnated"
+],
+[
+1
+],
+"dwindle 은 '점점 줄어들다'라 waned 와 가까워요. 가뭄 3년째에 1미터도 안 되는 흙탕 웅덩이가 됐다는 결과가 단서예요. proliferated(급증했다)는 반대이고, fluctuated(오르내렸다)는 한 방향으로 준 흐름과 맞지 않아요."
+],
+[
+9,
+1,
+"vocab",
+null,
+"Select the underlined word's nearest synonym.\nHistorians once described the empire's collapse as <u>inexorable</u>, yet recent studies suggest it might have been averted by timely reforms.",
+[
+"unrelenting",
+"sporadic",
+"mutable",
+"ambivalent"
+],
+[
+1
+],
+"inexorable 은 '막을 수 없는'이라 unrelenting(멈추지 않는, 가차 없는)과 가까워요. 뒤에서 '개혁으로 피할 수도 있었다'고 반박하는 대조가 단서예요. mutable(바뀔 수 있는)은 반대 쪽이에요."
+],
+[
+10,
+1,
+"vocab",
+null,
+"Select the underlined word's meaning IN CONTEXT.\nAlthough she spoke calmly, the trembling of her hands <u>betrayed</u> her trepidation about the verdict.",
+[
+"was disloyal to",
+"handed over to an enemy",
+"revealed unintentionally",
+"led astray"
+],
+[
+3
+],
+"손이 떨려서 판결에 대한 불안(trepidation)이 '드러났다'는 뜻이에요. 그래서 '본의 아니게 드러냈다(revealed unintentionally)'가 맞아요. '배신하다', '적에게 넘기다'는 betray 의 다른 뜻이에요."
+],
+[
+11,
+1,
+"vocab",
+null,
+"Select the underlined word's meaning IN CONTEXT.\nInvestors trusted the firm because its finances remained <u>sound</u> even during the worst months of the recession.",
+[
+"audible",
+"deep and undisturbed",
+"thorough and severe",
+"solid and reliable"
+],
+[
+4
+],
+"불황에도 재무가 '건전했다'는 뜻이라 solid and reliable 이 맞아요. deep and undisturbed 는 sound sleep(깊은 잠), thorough and severe 는 a sound beating(호된 매질)에서의 뜻이에요."
+],
+[
+12,
+1,
+"vocab",
+null,
+"Select the underlined word's meaning IN CONTEXT.\nThe committee was praised for <u>discharging</u> its duties with integrity despite intense political pressure.",
+[
+"releasing from a hospital",
+"carrying out",
+"firing a weapon",
+"emitting a liquid"
+],
+[
+2
+],
+"목적어가 its duties(임무)라 '수행하다(carrying out)'가 맞아요. 퇴원시키다, 발사하다, 액체를 내보내다는 discharge 의 다른 뜻이에요."
+],
+[
+13,
+1,
+"vocab",
+null,
+"Select the underlined word's meaning IN CONTEXT.\nStrict building codes helped <u>check</u> the spread of the fire to the neighboring districts.",
+[
+"examine",
+"mark with a tick",
+"restrain",
+"deposit for safekeeping"
+],
+[
+3
+],
+"엄격한 건축 규정이 불이 옆 동네로 번지는 것을 '막았다'는 뜻이라 restrain(억제하다)이 맞아요. examine(점검하다)이 가장 흔한 뜻이지만 여기서는 번짐을 '점검'한 게 아니에요."
+],
+[
+14,
+1,
+"rephrase",
+null,
+"Select the closest paraphrase of this sentence.\nHardly had the speech begun when the lights in the cavernous hall went out.",
+[
+"The lights in the hall stayed on long after the speech began.",
+"The lights in the hall went out almost as soon as the speech began.",
+"The lights in the hall had gone out before the speech began.",
+"The speech began with great difficulty because the lights went out."
+],
+[
+2
+],
+"Hardly had A p.p. when B 는 'A 하자마자 B 했다'예요. 연설이 시작되자마자 불이 나갔다는 뜻이에요. 불이 계속 켜져 있었다는 문장은 뜻을 뒤집었고, 불이 먼저 나갔다는 문장은 시점을 바꿨어요. hardly 를 '간신히, 어렵게'로 읽은 문장도 함정이에요."
+],
+[
+15,
+1,
+"rephrase",
+null,
+"Select the closest paraphrase of this sentence.\nShe is the last person who would betray a friend's trust.",
+[
+"She would never betray a friend's trust.",
+"She would readily betray a friend's trust.",
+"She was the last one in the group to betray a friend's trust.",
+"She has recently betrayed a friend's trust."
+],
+[
+1
+],
+"the last person who would ~ 는 '결코 ~할 사람이 아니다'라는 뜻이에요. 그래서 '친구의 믿음을 절대 저버리지 않는다'는 문장이 같아요. 쉽게 저버린다는 문장은 뜻을 뒤집었고, last 를 '마지막 차례'로 읽은 문장과 최근에 저버렸다는 문장은 사실을 바꿨어요."
+],
+[
+16,
+1,
+"grammar",
+null,
+"Select the grammatical completion of the sentence.\nThe upsurge in childhood asthma near the highway was ____ for the city council to ignore any longer.",
+[
+"a too serious problem",
+"too a serious problem",
+"serious a too problem",
+"too serious a problem"
+],
+[
+4
+],
+"too 가 형용사를 꾸미며 명사 앞에 올 때는 too + 형용사 + a + 명사 순서예요. 그래서 too serious a problem 이 맞아요. a too serious problem 처럼 관사를 앞에 두면 틀려요."
+],
+[
+17,
+1,
+"grammar",
+null,
+"Select the grammatical completion of the sentence.\nThe archivist kept the friable manuscripts in a sealed vault ____ be damaged by humidity.",
+[
+"lest should they",
+"they lest should",
+"lest they should",
+"should lest they"
+],
+[
+3
+],
+"lest 는 '~하지 않도록'이라는 접속사로, lest + 주어 + (should) + 동사원형 순서로 써요. 그래서 lest they should be damaged 가 맞아요. lest 뒤에서 주어와 should 를 뒤집지 않아요."
+],
+[
+18,
+1,
+"grammar",
+null,
+"Select the grammatically INCORRECT underlined part.\nMuch of the evidence ①<u>presented</u> at the trial ②<u>were</u> circumstantial, so the jury ③<u>deliberated</u> for three days before ④<u>reaching</u> a verdict.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+2
+],
+"Much of 뒤 명사가 셀 수 없는 evidence 라 동사도 단수예요. were 를 was 로 고쳐야 해요. presented(제시된)는 evidence 를 꾸미는 과거분사, deliberated 는 '숙의하다'라는 자동사, before reaching 은 전치사 뒤 동명사라 모두 맞아요."
+],
+[
+19,
+1,
+"grammar",
+null,
+"Select the grammatically INCORRECT underlined part.\nThe delegates spent the entire afternoon ①<u>discussing about</u> the contentious proposal, but ②<u>none of them</u> was willing ③<u>to commit</u> funds until the budget ④<u>had been approved</u>.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+1
+],
+"discuss 는 목적어를 바로 받는 타동사라 about 을 붙이지 않아요. discussing the proposal 이 맞아요. spend + 시간 + -ing, none of them was, be willing to, 과거 기준 이전 일인 had been approved 는 모두 맞아요."
+],
+[
+20,
+1,
+"grammar",
+null,
+"Select the grammatically INCORRECT sentence.",
+[
+"Never have I seen such a crowded railway station.",
+"Not only did she win the race, but she also broke the record.",
+"Only after the storm passed did the ferries resume service.",
+"Seldom the committee meets more than twice a year."
+],
+[
+4
+],
+"부정어(Seldom, Never, Not only, Only after ~)가 문장 앞에 오면 주어와 조동사를 뒤집어요. Seldom 문장은 Seldom does the committee meet 이 되어야 해요. 나머지 셋은 have I, did she, did the ferries 로 바르게 뒤집었어요."
+],
+[
+21,
+1,
+"grammar",
+null,
+"Select the grammatically INCORRECT sentence.",
+[
+"What surprised the scientists was the celerity of the change.",
+"The museum displayed everything what the donor had left.",
+"This is exactly what I had been hoping for.",
+"She could not remember what she had said at the meeting."
+],
+[
+2
+],
+"what 은 선행사를 품은 관계대명사라 앞에 선행사가 오지 않아요. everything 이 선행사이니 everything that the donor had left 가 맞아요. 나머지 셋은 what 이 주어절·보어절·목적어절을 바르게 이끌어요."
+],
+[
+22,
+1,
+"reading",
+"r1-s1",
+"Which title suits the passage best?",
+[
+"How Foreign Aid Eliminated Dependence in Poor Countries",
+"The Sudden Unraveling of a Long-Standing Aid Consensus",
+"Why Defense Spending Has Declined Across Europe",
+"A Proposal to Double Global Health Funding by 2027"
+],
+[
+2
+],
+"정권이 바뀌어도 이어지던 원조 합의가 2025년에 갑자기 무너졌다는 이야기와 그 찬반을 다뤄요. 그래서 '오래된 원조 합의의 갑작스러운 붕괴'가 제목으로 맞아요. 영국은 원조를 줄여 국방에 돌린다고 했으니 국방비가 줄었다는 제목은 거꾸로예요."
+],
+[
+23,
+1,
+"reading",
+"r1-s1",
+"Which statement conflicts with the passage?",
+[
+"The British government planned to use the money saved from aid for defense.",
+"Supporters of the cuts claim that aid has sometimes fostered dependence.",
+"Critics of the cuts maintain that aid accounts for a large proportion of national budgets.",
+"Some economists worry that other powers may gain influence where donors withdraw."
+],
+[
+3
+],
+"삭감을 비판하는 쪽은 원조 액수가 나라 지출에서 '아주 작은(minuscule)' 몫이라고 했어요. 큰 비중이라고 했다는 문장이 글과 달라요. 국방으로 돌린다는 영국 계획, 의존을 키웠다는 찬성 쪽 주장, 경쟁 세력이 빈자리를 채운다는 걱정은 모두 글에 있어요."
+],
+[
+24,
+1,
+"reading",
+"r1-s2",
+"What does the passage chiefly discuss?",
+[
+"the risks and possibilities that AI poses for languages with little digital text",
+"the methods engineers use to translate English into Mandarin",
+"the history of how English came to dominate the text used to train chatbots online",
+"the reasons oral traditions are more reliable than written records"
+],
+[
+1
+],
+"디지털 글이 적은 언어가 AI 때문에 더 밀려날 위험과, 공동체가 자료를 모으며 생기는 희망을 함께 다뤄요. 그래서 '디지털 글이 적은 언어에 AI 가 주는 위험과 가능성'이 주제예요. 영어가 인터넷을 장악한 역사는 배경으로 한 줄 나올 뿐이에요."
+],
+[
+25,
+1,
+"reading",
+"r1-s2",
+"What best fills the blank?",
+[
+"erodes or sustains",
+"accelerates the translation of",
+"measures the economic value of",
+"replaces the teaching of"
+],
+[
+1
+],
+"앞에서 AI 가 소수 언어의 쇠퇴를 앞당길 수도(위험), 기록을 도울 수도(희망) 있다고 했어요. 결과가 '누가 자료를 모으느냐'에 달렸다는 결론이니 '갉아먹을지 지켜 줄지(erodes or sustains)'가 맞아요."
+],
+[
+26,
+1,
+"reading",
+"r1-s3",
+"Why was the passage most likely written?",
+[
+"To argue that personality becomes permanently fixed once people reach early adulthood",
+"To criticize psychologists for relying too heavily on surveys",
+"To show that people underrate their future change and to urge caution",
+"To recommend that people avoid long-term commitments entirely"
+],
+[
+3
+],
+"사람들이 앞으로 자신이 바뀔 정도를 얕잡아 보는 착각을 소개하고, 되돌리기 어려운 결정 앞에서 겸손하자고 마무리해요. 그래서 '자기 변화를 예측하는 편향을 설명하고 오래가는 결정에 신중하자고 권하려고'가 목적이에요. need not paralyze 라고 했으니 결정을 아예 피하라는 말은 아니에요."
+],
+[
+27,
+1,
+"reading",
+"r1-s3",
+"Which statement agrees with the passage?",
+[
+"The study found the bias among participants of widely different ages.",
+"Participants predicted more future change than they reported past change.",
+"The author believes that people should never make irreversible choices.",
+"Recalling past change was found to require more effort than imagining future change."
+],
+[
+1
+],
+"연구는 젊은 성인부터 60대 후반까지 '모든 나이에서' 이 비대칭을 찾았다고 했어요. 앞으로의 변화를 지난 변화보다 '적게' 예측했으니 more future change 문장은 거꾸로이고, 힘이 드는 쪽은 과거 회상이 아니라 미래 상상이에요."
+],
+[
+28,
+1,
+"reading",
+"r1-s4",
+"Which title suits the passage best?",
+[
+"Why Medieval English Had No Written Form",
+"How a Missing Letter Produced a Mistaken Ye",
+"The Invention of Printing in Continental Europe",
+"Shop Signs as Reliable Evidence of Medieval Speech"
+],
+[
+2
+],
+"인쇄 활자에 thorn 글자가 없어 y 로 대신 찍었고, 그 y 를 뒷사람들이 '이'로 잘못 읽게 됐다는 글이에요. 그래서 '빠진 글자 하나가 잘못된 ye 를 낳은 사연'이 제목이에요. 가게 간판은 오히려 오해의 예로 나왔어요."
+],
+[
+29,
+1,
+"reading",
+"r1-s4",
+"Which statement agrees with the passage?",
+[
+"Printers in England cast their own type that included thorn.",
+"Eth remained in common use well after thorn disappeared.",
+"The word ye in ye olde was originally pronounced like the.",
+"The letter yogh was replaced by y in words such as night."
+],
+[
+3
+],
+"ye 는 the 를 줄여 찍은 꼴이고 발음도 오늘의 the 와 똑같았다고 했어요. 활자는 대륙에서 들여왔고, eth 는 훨씬 전에 사라졌으며, yogh 자리는 gh 같은 묶음이 차지했어요."
+],
+[
+30,
+1,
+"reading",
+"r1-s4",
+"What best fills blanks (A) and (B)?",
+[
+"(A) improvise — (B) arbitrary",
+"(A) abstain — (B) authentic",
+"(A) protest — (B) temporary",
+"(A) improvise — (B) authentic"
+],
+[
+4
+],
+"(A) 활자에 thorn 이 없어서 th 나 y 로 '임시변통했다(improvise)'는 흐름이에요. (B) 뒷사람들이 장비 탓에 생긴 우연을 언어 본래 특징으로 착각했다고 했으니 '진짜 전통(authentic)'으로 여긴 거예요. arbitrary(제멋대로인)로 봤다면 착각이 아니에요."
+],
+[
+31,
+1,
+"reading",
+"r1-s5",
+"What does the passage chiefly discuss?",
+[
+"the history of the 1964 Tokyo Olympics",
+"how a popular fitness target arose and what research says about it",
+"why walking more than ten thousand steps a day is dangerous for older adults",
+"how fitness trackers measure the heart rate"
+],
+[
+2
+],
+"'하루 만 보'라는 목표가 연구가 아니라 만보계 광고에서 나왔고, 실제 연구로는 더 적은 걸음에서 효과가 멈춘다는 글이에요. 그래서 how a popular fitness target arose ~ 가 주제예요. 더 걷는 게 해롭다고는 하지 않았어요."
+],
+[
+32,
+1,
+"reading",
+"r1-s5",
+"Which statement conflicts with the passage?",
+[
+"In a 2019 study, mortality benefits leveled off at around 7,500 steps.",
+"Younger adults may benefit from somewhat more steps than older adults.",
+"The author suggests that a high target might discourage inactive people.",
+"The ten-thousand-step goal was originally based on medical research."
+],
+[
+4
+],
+"글 첫머리에서 이 목표는 의학 연구가 아니라 '주로 광고(marketing)'에서 나왔다고 했어요. 그래서 based on medical research 라는 문장이 글과 달라요. 7,500보 정체, 젊은 층은 조금 더 많음, 높은 목표가 기를 꺾을 수 있다는 말은 모두 글에 있어요."
+],
+[
+33,
+1,
+"reading",
+"r1-s6",
+"What best fills the blank?",
+[
+"a toxin that repels every soil animal",
+"a substance produced mainly by rain clouds",
+"a chemical that humans release by accident",
+"a signal that benefits the bacteria themselves"
+],
+[
+4
+],
+"톡토기가 지오스민에 끌려와 세균의 포자를 퍼뜨린다고 했어요. 그러니 지오스민은 그냥 생기는 부산물이 아니라 '세균 자신에게 도움이 되는 신호'일 수 있다는 말이에요. 동물을 쫓는 독이라면 톡토기가 끌려올 리 없어요."
+],
+[
+34,
+1,
+"reading",
+"r1-s6",
+"Which statement agrees with the passage?",
+[
+"Gentle rain can release more of the scent-carrying aerosol than heavy rain.",
+"The word petrichor was used by ancient Greek writers.",
+"Geosmin is produced by the impact of raindrops on soil.",
+"Humans can detect geosmin only at high concentrations."
+],
+[
+1
+],
+"가벼운 비가 에어로졸을 가장 많이 내보내서 소나기가 폭우보다 냄새가 진할 수 있다고 했어요. petrichor 는 1964년에 그리스어로 '지은' 말이고, 지오스민은 빗방울이 아니라 흙 속 세균이 만들어요. 사람 코는 아주 적은 양도 맡아요."
+],
+[
+35,
+1,
+"reading",
+"r1-s7",
+"What does the passage chiefly discuss?",
+[
+"Rembrandt's technique for painting scenes set at night",
+"the architectural history of Amsterdam's town hall",
+"how The Night Watch was altered and how researchers tried to show its lost parts",
+"why computer programs can now fully restore any damaged painting to its original state"
+],
+[
+3
+],
+"1715년 벽 크기에 맞추려고 그림 가장자리를 잘라 냈고, 2021년 연구진이 남은 모사본과 컴퓨터로 잘린 부분을 보여 줬다는 글이에요. 그래서 how The Night Watch was altered ~ 가 주제예요. 원래 밤 장면이 아니었다고 했고, 렘브란트 붓질을 되살린 척하지 않았다고 했어요."
+],
+[
+36,
+1,
+"reading",
+"r1-s7",
+"Which statement conflicts with the passage?",
+[
+"The painting was not originally meant to depict a night scene.",
+"The missing strips were rediscovered in the town hall in 2021.",
+"A copy made before the trimming helped the researchers.",
+"The reconstructed strips were displayed only for a limited time."
+],
+[
+2
+],
+"잘려 나간 조각은 '한 번도 발견되지 않았다(never been found)'고 했어요. 그래서 2021년에 다시 찾았다는 문장이 글과 달라요. 2021년에는 컴퓨터로 만든 조각을 인쇄해 몇 달 동안 붙였을 뿐이에요."
+],
+[
+37,
+1,
+"reading",
+"r1-s7",
+"Which underlined part refers to something else?",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ"
+],
+[
+4
+],
+"the enormous group portrait(거대한 단체 초상화), the painting, the work 는 모두 렘브란트의 「야경」을 가리켜요. the copy 만 룬던스가 그린 작은 모사본을 가리켜요."
+],
+[
+38,
+1,
+"reading",
+"r1-s8",
+"Which title suits the passage best?",
+[
+"Why Cameras Improve the Results of Experiments",
+"Darwin's Experiments with Pens and Cartoons",
+"Does a Smile Make Us Happier? A Finding Lost and Partly Found",
+"The Proven Power of Smiling to Cure Depression"
+],
+[
+3
+],
+"웃는 표정이 기분을 바꾼다는 펜 실험이 2016년 재현에 실패했다가, 카메라 문제와 2022년 대규모 연구로 '작은 효과'가 다시 드러났다는 글이에요. 그래서 '잃었다가 일부 되찾은 발견'이 제목이에요. 다윈은 생각을 품었을 뿐 펜 실험을 하지 않았어요."
+],
+[
+39,
+1,
+"reading",
+"r1-s8",
+"What best fills the blank?",
+[
+"sensational",
+"conclusive",
+"qualified",
+"pessimistic"
+],
+[
+3
+],
+"콜론 뒤에서 표정이 기분을 '조금, 어떤 조건에서만' 움직인다고 했어요. 처음의 열광과 뒤의 전면 부정 사이에서 단서가 붙은, '제한적인(qualified)' 그림이에요. sensational(떠들썩한)·conclusive(결정적인)는 반대 쪽이에요."
+],
+[
+40,
+1,
+"reading",
+"r1-s8",
+"Which statement agrees with the passage?",
+[
+"The 2016 replication confirmed the original effect.",
+"Darwin conducted the first experiment using pens.",
+"The 2022 collaboration found that posed smiles greatly increased happiness.",
+"Participants in the 1988 study held a pen in their mouths."
+],
+[
+4
+],
+"1988년 실험 참가자들은 펜을 이나 입술로 물었다고 했어요. 2016년 재현은 효과를 찾지 못했고, 2022년 연구의 효과는 '작았어요(small)'. 다윈은 실험을 한 사람으로 나오지 않아요."
+],
+[
+41,
+1,
+"reading",
+"r1-s9",
+"What does the passage chiefly discuss?",
+[
+"how highlighting textbooks strengthens memory",
+"the dangers of replacing frequent high-stakes examinations with low-stakes quizzes",
+"the origin of the term desirable difficulties",
+"why effortful retrieval produces better long-term learning than rereading"
+],
+[
+4
+],
+"다시 읽기보다 기억에서 꺼내 보는 노력이 오래가는 학습을 만든다는 '시험 효과'가 중심이에요. 밑줄 긋기는 효과가 덜한 방법의 예로 나왔고, 글은 부담 적은 퀴즈를 권해요."
+],
+[
+42,
+1,
+"reading",
+"r1-s9",
+"What can reasonably be inferred?",
+[
+"Students may misjudge which study methods work best for them.",
+"Cramming is more effective than spaced study for long-term retention.",
+"Low-stakes quizzes are popular because students find them easy.",
+"Rereading produces stronger memories after a week than recall does."
+],
+[
+1
+],
+"다시 읽은 학생들이 자기가 더 잘할 거라고 예측했는데 결과는 반대였어요. 학생들이 익숙함으로 진도를 재기 때문에 어떤 방법이 좋은지 잘못 판단할 수 있다고 끌어낼 수 있어요. 벼락치기와 다시 읽기가 낫다는 문장은 글과 반대예요."
+],
+[
+43,
+1,
+"reading",
+"r1-s10",
+"Which title suits the passage best?",
+[
+"Why Italians Avoid Informal Greetings",
+"From Servitude to Friendship: The Story of Ciao",
+"The Latin Grammar of Venetian Merchants",
+"How Venice Abolished Slavery in the Middle Ages"
+],
+[
+2
+],
+"'당신의 노예입니다'라는 공손한 인사가 닳고 닳아 친구끼리 쓰는 가벼운 ciao 가 됐다는 글이에요. 그래서 '노예에서 우정으로, ciao 이야기'가 제목이에요. 이탈리아 사람이 가벼운 인사를 피한다는 말은 없어요."
+],
+[
+44,
+1,
+"reading",
+"r1-s10",
+"What best fills the blank?",
+[
+"hostility",
+"curiosity",
+"grief",
+"humility"
+],
+[
+4
+],
+"'당신의 노예', '당신의 비천한 종'처럼 자신을 한껏 낮추는 표현이 예로 나왔어요. 지나친 '겸손(humility)'의 표현이 자꾸 쓰이다 평범한 인사가 된다는 결론이에요."
+],
+[
+45,
+1,
+"reading",
+"r1-s11",
+"What does the passage chiefly discuss?",
+[
+"how to design questionnaires for classroom teachers",
+"why a popular belief about learning styles lacks scientific support",
+"the history of teaching geography with maps",
+"why visual learners outperform other students when lessons match their preferred style"
+],
+[
+2
+],
+"교사 대부분이 믿는 '학습 유형에 맞춰 가르치면 더 잘 배운다'는 생각이 제대로 된 실험에서 뒷받침되지 않는다는 글이에요. 그래서 why a popular belief ~ lacks scientific support 가 주제예요. 시각형 학습자가 더 낫다는 말은 없어요."
+],
+[
+46,
+1,
+"reading",
+"r1-s11",
+"Which statement agrees with the passage?",
+[
+"Few studies before 2008 had used a design suitable for testing the theory.",
+"Self-described visual learners remember pictures far better than others do.",
+"The author regards the belief as completely harmless.",
+"Most teachers surveyed rejected the idea of learning styles."
+],
+[
+1
+],
+"2008년 검토에서 이론을 제대로 시험할 설계를 쓴 연구가 아주 적었다고 했어요. 스스로 시각형이라는 학생도 그림으로 더 기억하지 않았고, 이 믿음은 해가 없지 않으며, 교사 대다수는 이 생각을 '지지'했어요."
+],
+[
+47,
+1,
+"reading",
+"r1-s11",
+"What does the underlined part mean?",
+[
+"is not supported when carefully tested",
+"has been proven by many experiments",
+"is too complex to be tested",
+"has become popular among scientists"
+],
+[
+1
+],
+"'증거와 맞닥뜨리면 살아남지 못한다'는 말은 제대로 시험하면 뒷받침되지 않는다는 뜻이에요. 바로 뒤에 맞는 설계의 연구가 드물고, 있어도 예측한 결과가 안 나왔다는 내용이 이어져요."
+],
+[
+48,
+1,
+"reading",
+"r1-s12",
+"Which title suits the passage best?",
+[
+"How Skype Defeated Zoom During the Pandemic",
+"Why eBay Still Owns Skype Today",
+"The Rise and Fall of a Software Pioneer",
+"The Invention of the Telephone in Estonia"
+],
+[
+3
+],
+"한때 동사로 쓰일 만큼 성공한 스카이프가 모바일과 줌에 밀려 2025년에 문을 닫았다는 글이에요. 그래서 '소프트웨어 선구자의 흥망'이 제목이에요. 팬데믹 때 기본 도구가 된 쪽은 줌이었어요."
+],
+[
+49,
+1,
+"reading",
+"r1-s12",
+"Which statement agrees with the passage?",
+[
+"Microsoft sold Skype to eBay in 2011.",
+"Skype was originally designed for desktop computers.",
+"Joining a Zoom call required installing Skype first.",
+"Skype charged high fees for international calls."
+],
+[
+2
+],
+"스카이프는 데스크톱용으로 만들어져 모바일에 적응하기 어려웠다고 했어요. 2011년에는 마이크로소프트가 사들였고, 줌은 링크만 누르면 됐으며, 스카이프 통화는 공짜였어요."
+],
+[
+50,
+1,
+"reading",
+"r1-s12",
+"What best fills blanks (A) and (B)?",
+[
+"(A) reluctant — (B) fleeting",
+"(A) eager — (B) permanent",
+"(A) eager — (B) fleeting",
+"(A) anonymous — (B) inevitable"
+],
+[
+3
+],
+"(A) 이베이와 마이크로소프트가 큰돈을 주고 앞다퉈 샀으니 '열성적인(eager)' 구매자예요. (B) 먼저 나온 것이 영원한 이점이 아니라는 교훈이니 기술 시장의 지배는 '덧없다(fleeting)'예요. permanent(영원한)는 정반대예요."
+],
+[
+1,
+2,
+"vocab",
+null,
+"Select the best word for the blank.\nFor decades the barriers to routine genome sequencing seemed ____, yet the cost of sequencing has since fallen dramatically.",
+[
+"negligible",
+"insuperable",
+"fortuitous",
+"auspicious"
+],
+[
+2
+],
+"yet 뒤에서 값이 크게 떨어졌다고 했으니, 그전에는 장벽이 '넘을 수 없어 보였다(insuperable)'는 대조예요. 장벽이 negligible(하찮은) 것처럼 보였다면 yet 으로 이을 까닭이 없어요."
+],
+[
+2,
+2,
+"vocab",
+null,
+"Select the best word for the blank.\nTo ____ angry residents, the council promised to plant two new trees for every one removed during the road project.",
+[
+"exasperate",
+"placate",
+"scrutinize",
+"emulate"
+],
+[
+2
+],
+"나무를 두 배로 심겠다고 약속한 목적은 화난 주민을 '달래는(placate)' 것이에요. exasperate(더 화나게 하다)는 정반대이고, scrutinize(면밀히 살피다)·emulate(본받다)는 주민을 목적어로 받아 뜻이 맞지 않아요."
+],
+[
+3,
+2,
+"vocab",
+null,
+"Select the best word for the blank.\nThe senator later chose to ____ the controversial remarks, insisting they reflected neither her views nor those of her party.",
+[
+"ratify",
+"embellish",
+"reiterate",
+"repudiate"
+],
+[
+4
+],
+"자기 견해도 당의 견해도 아니라고 했으니 그 발언을 '부인하다, 거부하다(repudiate)'가 맞아요. reiterate(되풀이하다)·embellish(꾸미다)는 발언을 이어 가는 쪽이라 뒤 내용과 어긋나요."
+],
+[
+4,
+2,
+"vocab",
+null,
+"Select the best word for the blank.\nAfter the heavy holiday meal, the guests sank into a pleasant ____, too drowsy even to finish their conversation.",
+[
+"vigor",
+"alacrity",
+"torpor",
+"candor"
+],
+[
+3
+],
+"대화도 끝내지 못할 만큼 졸렸다고 했으니 '나른함, 무기력(torpor)'이에요. vigor(활력)·alacrity(민첩함)는 반대이고, candor(솔직함)는 졸림과 관계없어요."
+],
+[
+5,
+2,
+"vocab",
+null,
+"Select the underlined word's nearest synonym.\nThe general's <u>laconic</u> report consisted of just three words, yet it conveyed everything the anxious ministers needed to know.",
+[
+"pithy",
+"verbose",
+"vehement",
+"obsequious"
+],
+[
+1
+],
+"laconic 은 '말수가 적고 간결한'이라 pithy(짧고 함축적인)와 가까워요. 세 낱말뿐인데 필요한 것을 다 전했다는 내용이 단서예요. verbose(장황한)는 반대예요."
+],
+[
+6,
+2,
+"vocab",
+null,
+"Select the underlined word's nearest synonym.\nColonial trading companies were often <u>rapacious</u>, seizing land and resources with little regard for the communities that depended on them.",
+[
+"avaricious",
+"benevolent",
+"timorous",
+"gregarious"
+],
+[
+1
+],
+"rapacious 는 '탐욕스러운, 강탈하는'이라 avaricious 와 가까워요. 땅과 자원을 빼앗았다는 뒤 내용이 단서예요. benevolent(자비로운)는 반대예요."
+],
+[
+7,
+2,
+"vocab",
+null,
+"Select the underlined word's nearest synonym.\nThe new regulations sharply <u>circumscribe</u> the powers of the agency, allowing it to issue warnings but not to impose fines.",
+[
+"amplify",
+"curtail",
+"elucidate",
+"substantiate"
+],
+[
+2
+],
+"circumscribe 는 '(범위를) 제한하다'라 curtail(줄이다, 제한하다)과 가까워요. 경고만 하고 벌금은 못 매기게 했다는 내용이 단서예요. amplify(키우다)는 반대예요."
+],
+[
+8,
+2,
+"vocab",
+null,
+"Select the underlined word's nearest synonym.\nCritics who once dismissed the novel now <u>extol</u> it as a masterpiece that anticipated many concerns of the digital age.",
+[
+"denigrate",
+"abrogate",
+"assuage",
+"acclaim"
+],
+[
+4
+],
+"extol 은 '극찬하다'라 acclaim 과 가까워요. 예전에 깎아내리던(dismissed) 비평가들이 이제는 걸작이라 부른다는 대조가 단서예요. denigrate(폄하하다)는 반대예요."
+],
+[
+9,
+2,
+"vocab",
+null,
+"Select the underlined word's nearest synonym.\nInvestigators questioned the <u>putative</u> author of the anonymous letter, but she produced convincing evidence that she had not written it.",
+[
+"incontrovertible",
+"pivotal",
+"transient",
+"supposed"
+],
+[
+4
+],
+"putative 는 '추정되는, ~로 여겨지는'이라 supposed(~로 여겨지는, 추정되는)와 가까워요. 알고 보니 그 사람이 쓰지 않았다는 뒤 내용이 단서예요. incontrovertible(논란의 여지가 없는)은 반대 쪽이에요."
+],
+[
+10,
+2,
+"vocab",
+null,
+"Select the underlined word's meaning IN CONTEXT.\nAfter the scandal became public, the minister had little choice but to <u>tender</u> his resignation.",
+[
+"treat gently",
+"offer formally",
+"feel sore",
+"make soft"
+],
+[
+2
+],
+"목적어가 his resignation(사직서)이라 '정식으로 내다(offer formally)'가 맞아요. tender 가 형용사일 때의 '다정한', '아픈', '연한' 뜻은 여기 맞지 않아요."
+],
+[
+11,
+2,
+"vocab",
+null,
+"Select the underlined word's meaning IN CONTEXT.\nDoctors hope that the new drug will <u>arrest</u> the progress of the disease in its earliest stages.",
+[
+"seize by legal authority",
+"halt",
+"attract and hold",
+"detain for questioning"
+],
+[
+2
+],
+"병의 진행(progress)을 목적어로 받으니 '멈추게 하다(halt)'예요. '체포하다', '(눈길을) 끌다'는 arrest 의 다른 뜻이에요."
+],
+[
+12,
+2,
+"vocab",
+null,
+"Select the underlined word's meaning IN CONTEXT.\nThe committee <u>tempered</u> its criticism with praise for the staff's dedication during the crisis.",
+[
+"moderated",
+"hardened by heating",
+"mixed with water",
+"tuned to a pitch"
+],
+[
+1
+],
+"비판에 칭찬을 섞었다는 문장이라 '누그러뜨렸다(moderated)'가 맞아요. '(쇠를) 담금질했다'는 temper 의 다른 뜻이고, '(물감·진흙에) 물을 섞어 개다'도 temper 의 다른 뜻이에요."
+],
+[
+13,
+2,
+"vocab",
+null,
+"Select the underlined word's meaning IN CONTEXT.\nAfter hours of deliberation, the jury finally <u>delivered</u> its verdict to a silent courtroom.",
+[
+"handed over goods",
+"gave birth to",
+"pronounced",
+"rescued"
+],
+[
+3
+],
+"목적어가 verdict(평결)라 '선고했다, 공표했다(pronounced)'가 맞아요. 배달하다, 출산하다, 구해 내다는 deliver 의 다른 뜻이에요."
+],
+[
+14,
+2,
+"rephrase",
+null,
+"Select the closest paraphrase of this sentence.\nBut for his timely warning, the expedition would have ended in disaster.",
+[
+"Because he warned them in time, the expedition ended in disaster.",
+"Had he not warned them in time, the expedition would have ended in disaster.",
+"Although he warned them in time, part of the expedition ended in disaster.",
+"His warning came only after the expedition had ended in disaster."
+],
+[
+2
+],
+"But for ~ 는 '~가 없었다면'이라는 가정법이에요. 제때 경고해서 재앙을 피했다는 뜻이니 Had he not warned ~ 문장과 같아요. 경고 덕에 재앙이 났다는 문장은 뜻을 뒤집었고, 재앙 뒤에 경고했다는 문장은 시점을 바꿨으며, 일부가 재앙을 맞았다는 문장은 원래 문장에 없는 내용이에요."
+],
+[
+15,
+2,
+"rephrase",
+null,
+"Select the closest paraphrase of this sentence.\nTo most readers, the second half of the novel is anything but dull.",
+[
+"Most readers find the second half of the novel extremely dull.",
+"Most readers find nothing but dullness in the novel's second half.",
+"Most readers found the second half of the novel dull until they reread it.",
+"Most readers find the second half of the novel far from dull."
+],
+[
+4
+],
+"anything but 은 '결코 ~이 아닌'이라 far from 과 같은 뜻이에요. nothing but 은 '오직 ~뿐'이라 정반대 뜻이 되고, 다시 읽기 전까지 지루했다는 문장은 시점을 바꾼 함정이니 헷갈리지 않게 봐 두세요."
+],
+[
+16,
+2,
+"grammar",
+null,
+"Select the grammatical completion of the sentence.\nIt was ____ that the audience rose to its feet before the final chord had faded.",
+[
+"a so moving performance",
+"so a moving performance",
+"so moving a performance",
+"moving so a performance"
+],
+[
+3
+],
+"so 가 형용사를 꾸미며 명사 앞에 올 때는 so + 형용사 + a + 명사 순서예요. 그래서 so moving a performance 가 맞아요. such 를 쓴다면 such a moving performance 가 돼요."
+],
+[
+17,
+2,
+"grammar",
+null,
+"Select the grammatical completion of the sentence.\nThe old bridge was not ____ the weight of the new freight trains, so engineers mandated its reinforcement.",
+[
+"enough strong to bear",
+"strong to bear enough",
+"strong enough to bear",
+"enough to bear strong"
+],
+[
+3
+],
+"enough 가 형용사를 꾸밀 때는 형용사 뒤에 와요. 형용사 + enough + to 부정사 순서라 strong enough to bear 가 맞아요."
+],
+[
+18,
+2,
+"grammar",
+null,
+"Select the grammatically INCORRECT underlined part.\nWhen the rescue team finally ①<u>reached</u> the ledge, the climbers, ②<u>exhausted</u> and cold, said they ③<u>had survived</u> for two days on energy bars they ④<u>have packed</u> before the ascent.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"에너지바를 챙긴 일은 말한 때(said)보다, 버틴 때보다도 앞선 과거예요. 그래서 have packed 를 had packed 로 고쳐야 해요. had survived 는 said 보다 앞선 일이라 맞고, exhausted 는 climbers 를 설명하는 말이라 맞아요."
+],
+[
+19,
+2,
+"grammar",
+null,
+"Select the grammatically INCORRECT underlined part.\nMost of the damage ①<u>was done</u> before the firefighters ②<u>arrived</u>, but the venerable library, which ③<u>was consisted</u> of three separate wings, ④<u>was</u> partly saved.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"consist of 는 자동사라 수동태로 쓰지 않아요. which consisted of three separate wings 가 맞아요. damage was done(피해가 났다)과 library was saved(도서관이 구해졌다)는 맞는 수동태예요."
+],
+[
+20,
+2,
+"grammar",
+null,
+"Select the grammatically INCORRECT sentence.",
+[
+"I wish I had studied more assiduously before last week's exam.",
+"She talks as if she knew the minister personally.",
+"It is high time we left for the airport.",
+"I would rather you do not mention this to anyone."
+],
+[
+4
+],
+"would rather + 주어 + 동사 꼴은 지금 일을 바랄 때 과거형을 써요. 그래서 I would rather you didn't mention this 가 맞아요. wish + had p.p., as if + 과거, It is high time + 과거는 모두 바른 가정법이에요."
+],
+[
+21,
+2,
+"grammar",
+null,
+"Select the grammatically INCORRECT sentence.",
+[
+"This year's harvest is much more bountiful than last year's.",
+"The more you practice, the more confident you become.",
+"This bridge is more longer than the one downstream.",
+"Her essay was the more persuasive of the two."
+],
+[
+3
+],
+"longer 가 이미 비교급이라 more 를 겹쳐 쓰지 않아요. This bridge is longer than ~ 가 맞아요. much 로 비교급 강조, the 비교급 the 비교급, 둘 중 하나에 쓰는 the + 비교급은 모두 맞아요."
+],
+[
+22,
+2,
+"reading",
+"r2-s1",
+"Which title suits the passage best?",
+[
+"How American Surveillance Law Was Abolished in 2023",
+"Data Borders and a Fragmenting Internet",
+"Why Small Companies Benefit Most from Data Rules",
+"The End of International Online Shopping"
+],
+[
+2
+],
+"개인정보가 국경을 넘을 때 나라들이 규제를 거는 흐름과, 그 찬반(사생활 보호 대 인터넷 쪼개짐)을 다뤄요. 그래서 Data Borders and a Fragmenting Internet 이 제목으로 맞아요. 미국 감시법이 폐지됐다는 말은 없어요."
+],
+[
+23,
+2,
+"reading",
+"r2-s1",
+"Which statement conflicts with the passage?",
+[
+"European rules require protection abroad roughly equal to that at home.",
+"Europe's highest court has invalidated earlier transfer arrangements with the US.",
+"Some governments require certain data to be kept within their borders.",
+"Critics argue that data rules help small companies enter foreign markets."
+],
+[
+4
+],
+"비판하는 쪽은 작은 회사가 해외 시장에서 '밀려난다(priced out)'고 했어요. 진출을 돕는다는 문장이 글과 달라요. 국내와 비슷한 보호 요구, 두 차례 무효 판결, 국내 저장 요구는 모두 글에 있어요."
+],
+[
+24,
+2,
+"reading",
+"r2-s2",
+"Why was the passage most likely written?",
+[
+"To argue that lunch is the main cause of afternoon fatigue",
+"To explain why short naps help and how to take them",
+"To warn pilots never to sleep in the cockpit during long flights",
+"To criticize employers for providing quiet rooms for napping"
+],
+[
+2
+],
+"오후의 처짐은 몸의 하루 리듬 때문이고, 짧은 낮잠이 좋은 처방이며 길이와 때를 맞추라는 조언으로 이어져요. 그래서 To explain why short naps help ~ 가 목적이에요. 점심 탓이라는 생각은 글이 오히려 반박했어요."
+],
+[
+25,
+2,
+"reading",
+"r2-s2",
+"Which statement agrees with the passage?",
+[
+"The afternoon dip occurs only after a heavy lunch.",
+"Researchers recommend naps of at least an hour.",
+"Waking from deep sleep can leave a person groggy for some time.",
+"The NASA study found that pilots who rested in the cockpit performed worse afterward."
+],
+[
+3
+],
+"깊은 잠에서 깨면 30분쯤 멍한 '수면 관성'이 남는다고 했어요. 오후 처짐은 점심을 걸러도 오고, 권하는 낮잠은 10~20분이며, 쉰 조종사들이 더 잘했어요."
+],
+[
+26,
+2,
+"reading",
+"r2-s3",
+"What does the passage chiefly discuss?",
+[
+"the changing meanings of the word that gave us person",
+"the architecture and seating of theaters in ancient Rome",
+"Carl Jung's theory of how social masks appear in our dreams",
+"why Etruscan eventually replaced Latin as the language of Rome"
+],
+[
+1
+],
+"가면을 뜻하던 라틴어 persona 가 법, 신학, 심리학을 거치며 '사람'이라는 뜻이 된 과정을 다뤄요. 그래서 the changing meanings of the word ~ 가 주제예요. 융은 persona 를 되살린 사람으로만 나와요."
+],
+[
+27,
+2,
+"reading",
+"r2-s3",
+"What best fills the blank?",
+[
+"redundant",
+"ironic",
+"fabricated",
+"predictable"
+],
+[
+2
+],
+"콜론 뒤에서 가장 안쪽의 정체성을 가리키는 말이 원래 '바깥에 쓰는 것'이었다고 했어요. 기대와 거꾸로인 사실이니 '아이러니한(ironic)'이 맞아요. 지어낸 역사(fabricated)라는 말은 없어요."
+],
+[
+28,
+2,
+"reading",
+"r2-s4",
+"What does the passage chiefly discuss?",
+[
+"the benefits and limits of money sent home by migrant workers",
+"why governments should ban international money transfers to poorer nations",
+"how foreign aid came to exceed remittances",
+"the history and structure of the World Bank"
+],
+[
+1
+],
+"이주 노동자의 송금이 가정에 바로 닿고 위기에 강하다는 장점과, 비싼 수수료·의존·인력 유출 같은 한계를 함께 다뤄요. 그래서 the benefits and limits ~ 가 주제예요. 송금이 원조보다 크다고 했으니 foreign aid came to exceed remittances 는 거꾸로예요."
+],
+[
+29,
+2,
+"reading",
+"r2-s4",
+"Which statement agrees with the passage?",
+[
+"Migrants often increase the money they send when disaster hits their home country.",
+"Remittances are usually distributed through government agencies.",
+"Fees for sending money abroad are typically lowest on the routes that serve the poorest countries.",
+"The average transfer fee already meets the UN target."
+],
+[
+1
+],
+"고향에 재난이 나면 이주민이 오히려 더 많이 보낸다고 했어요. 송금은 정부를 거치지 않고 가정으로 바로 가고, 수수료는 가난한 나라 쪽이 더 비싸며, 평균 수수료는 유엔 목표의 두 배예요."
+],
+[
+30,
+2,
+"reading",
+"r2-s4",
+"What best fills blanks (A) and (B)?",
+[
+"(A) trails — (B) alleviate",
+"(A) dwarfs — (B) aggravate",
+"(A) mirrors — (B) conceal",
+"(A) dwarfs — (B) alleviate"
+],
+[
+4
+],
+"(A) 송금이 외국인 직접투자와 원조를 합친 것보다 많다고 했으니 나머지를 '압도한다(dwarfs)'예요. (B) 송금이 지금 하는 일은 어려움을 '덜어 주는(alleviate)' 것이고, 그 이상이 되려면 일자리가 필요하다는 흐름이에요."
+],
+[
+31,
+2,
+"reading",
+"r2-s5",
+"Which title suits the passage best?",
+[
+"Rethinking Flight Paths to Reduce Contrail Warming",
+"Why Contrails Cool the Planet at Night",
+"The Smoke Problem in Modern Jet Engines",
+"How Rising Fuel Prices Brought the 2023 Rerouting Trial to an End"
+],
+[
+1
+],
+"비행운이 지구를 데우는데 그 대부분이 일부 비행에서 나오니, 고도를 바꿔 피하자는 방안을 다뤄요. 그래서 '비행운 온난화를 줄이려 비행 경로를 다시 생각하기'가 제목이에요. 비행운은 연기가 아니라 얼음이에요."
+],
+[
+32,
+2,
+"reading",
+"r2-s5",
+"Which statement conflicts with the passage?",
+[
+"Contrails disappear quickly in dry air.",
+"Contrails warm the climate mainly during the day.",
+"Most contrail warming comes from relatively few flights.",
+"Rerouting flights can increase fuel consumption."
+],
+[
+2
+],
+"비행운은 반사할 햇빛이 없는 '밤에 특히' 지구를 데운다고 했어요. 그래서 낮에 주로 데운다는 문장이 글과 달라요. 마른 공기에서 금방 사라짐, 일부 비행의 큰 몫, 우회하면 연료가 더 듦은 모두 글에 있어요."
+],
+[
+33,
+2,
+"reading",
+"r2-s6",
+"What best fills the blank?",
+[
+"supernatural",
+"identical",
+"multiple",
+"recent"
+],
+[
+3
+],
+"바람, 빛, 해충이라는 세 가지 설명을 들고 '서로 배타적이지 않다'고 했어요. 그러니 이 현상은 숲마다 다른 '여러(multiple)' 원인을 가질 수 있다는 말이에요. identical(똑같은)은 '숲마다 다르다'와 부딪혀요."
+],
+[
+34,
+2,
+"reading",
+"r2-s6",
+"Which statement agrees with the passage?",
+[
+"Crown shyness occurs only among the camphor trees that grow in the forests of Malaysia.",
+"Foresters first noticed the phenomenon in the 2020s.",
+"Trees in windy places tend to have wider gaps when their crowns collide often.",
+"Scientists have agreed on a single explanation."
+],
+[
+3
+],
+"바람 센 곳의 소나무는 꼭대기가 자주 부딪칠수록 틈이 넓었다고 했어요. 녹나무 말고 다른 종에도 있고, 1920년대부터 알려졌으며, 원인은 아직 논쟁 중이에요."
+],
+[
+35,
+2,
+"reading",
+"r2-s7",
+"What does the passage chiefly discuss?",
+[
+"the daily routine of the Spanish royal family",
+"Picasso's rejection of the style Velazquez used for portraits of the royal court",
+"the techniques used to restore old mirrors",
+"why a famous court painting has long puzzled and fascinated viewers"
+],
+[
+4
+],
+"화가가 무엇을 그리는지 감춰져 있고 거울 속 왕과 왕비가 보는 사람 자리에 서 있는 듯한 구성 때문에 오래 수수께끼가 된 그림이라는 글이에요. 그래서 why a famous court painting ~ 가 주제예요. 피카소는 이 그림을 따라 그렸지 거부하지 않았어요."
+],
+[
+36,
+2,
+"reading",
+"r2-s7",
+"Which statement conflicts with the passage?",
+[
+"The mirror on the back wall reflects the king and queen.",
+"The red cross was painted after the work was first completed.",
+"Picasso produced many versions based on the painting.",
+"The front of the large canvas in the painting is visible to viewers."
+],
+[
+4
+],
+"그림 속 큰 캔버스는 '뒷면만' 보여서 무엇을 그리는지 알 수 없다고 했어요. 앞면이 보인다는 문장이 글과 달라요. 거울 속 왕과 왕비, 나중에 그려 넣은 붉은 십자가, 피카소의 여러 변주는 모두 글에 있어요."
+],
+[
+37,
+2,
+"reading",
+"r2-s7",
+"Which underlined part refers to something else?",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ"
+],
+[
+1
+],
+"the painter, the artist, he 는 모두 화가 벨라스케스 자신을 가리켜요. the five-year-old princess 만 마르가리타 공주를 가리켜요."
+],
+[
+38,
+2,
+"reading",
+"r2-s8",
+"Which title suits the passage best?",
+[
+"Why Remote Work Has Been Banned Worldwide",
+"The Return to the Office and the Unsettled Evidence",
+"Amazon's Decision to Close Its Offices",
+"How Video Calls Improved the Mentoring of Newcomers"
+],
+[
+2
+],
+"회사들이 다시 출근을 요구하지만 근거는 한쪽으로 깔끔하지 않다는 글이에요. 그래서 '사무실 복귀와 아직 정리되지 않은 근거'가 제목이에요. 아마존은 사무실을 닫은 게 아니라 주 5일 출근을 요구했어요."
+],
+[
+39,
+2,
+"reading",
+"r2-s8",
+"What best fills the blank?",
+[
+"nuanced",
+"conclusive",
+"unanimous",
+"trivial"
+],
+[
+1
+],
+"뒤에서 주 2일 재택은 이직을 줄였지만 완전 원격은 신입 교육을 해칠 수 있고, 일의 성격에 따라 다르다고 했어요. 양쪽이 인정하는 것보다 '미묘하고 복잡하다(nuanced)'가 맞아요. conclusive(결정적인)·unanimous(만장일치인)는 정반대예요."
+],
+[
+40,
+2,
+"reading",
+"r2-s8",
+"Which statement agrees with the passage?",
+[
+"Amazon's mandate required staff in the office three days a week.",
+"Fully remote work has been shown to improve both the training of newcomers and collaboration.",
+"A study found that partial remote work reduced resignations without hurting performance.",
+"All observers agree that the mandates are intended to boost creativity."
+],
+[
+3
+],
+"중국 여행사 실험에서 주 2일 재택이 퇴사를 약 3분의 1 줄였고 성과는 해치지 않았다고 했어요. 아마존은 주 5일이고, 완전 원격은 신입 교육을 '해칠' 수 있으며, 감원 목적을 의심하는 사람도 있다고 했어요."
+],
+[
+41,
+2,
+"reading",
+"r2-s9",
+"What does the passage chiefly discuss?",
+[
+"the engineering history of the zipper and the bicycle",
+"why political opinions can never be changed",
+"a method for persuading opponents by listing as many reasons for one's beliefs as possible",
+"how attempting detailed explanations reveals the limits of what we know"
+],
+[
+4
+],
+"자세히 설명해 보려 할 때 비로소 자기가 아는 것이 얕다는 걸 깨닫는 '설명 깊이의 착각'이 중심이에요. 그래서 how attempting detailed explanations ~ 가 주제예요. 설명해 보게 하자 정치적 입장도 누그러졌다고 했으니 opinions can never be changed 는 틀려요."
+],
+[
+42,
+2,
+"reading",
+"r2-s9",
+"What can reasonably be inferred?",
+[
+"Listing reasons for a belief usually makes people more moderate.",
+"Asking someone to explain a policy step by step may soften extreme views.",
+"People generally underestimate how well they understand devices.",
+"Familiarity with an object guarantees genuine understanding of it."
+],
+[
+2
+],
+"정책이 어떻게 돌아가는지 설명하게 하자 확신이 줄고 입장이 온건해졌다고 했어요. 그러니 단계별 설명 요구가 극단적인 견해를 누그러뜨릴 수 있다고 끌어낼 수 있어요. 이유 나열은 그런 효과가 없었고, 사람들은 이해를 '과대'평가해요."
+],
+[
+43,
+2,
+"reading",
+"r2-s10",
+"Which title suits the passage best?",
+[
+"Why Newspapers Always Use the Oxford Comma",
+"The History of Dairy Farming in Rural Maine",
+"A Small Comma with Costly Consequences",
+"How Oxford University Invented Punctuation"
+],
+[
+3
+],
+"목록 끝 and 앞 쉼표를 둘러싼 논쟁이 2017년 메인주 소송에서 500만 달러짜리 문제가 됐다는 글이에요. 그래서 '값비싼 결과를 낳은 작은 쉼표'가 제목이에요. 신문들은 오히려 이 쉼표를 빼는 쪽이라고 했어요."
+],
+[
+44,
+2,
+"reading",
+"r2-s10",
+"What best fills the blank?",
+[
+"trade",
+"check",
+"birth",
+"punctuation"
+],
+[
+4
+],
+"글 전체가 쉼표 하나 때문에 큰돈이 오간 이야기예요. 그러니 '문장 부호(punctuation mark)' 하나에 가격표가 붙었다는 말이 맞아요. trade mark(상표)·check mark(체크 표시)는 쉼표와 관계없어요."
+],
+[
+45,
+2,
+"reading",
+"r2-s11",
+"What does the passage chiefly discuss?",
+[
+"the diplomatic results of Nixon's visits in 1972",
+"why jurors should ignore medical evidence",
+"how knowing an outcome distorts our judgments about the past",
+"the history of the rules of American football"
+],
+[
+3
+],
+"결과를 알고 나면 처음부터 알았던 것처럼 느끼는 '사후 확신 편향'과 그것이 판단과 배움을 흐리는 방식을 다뤄요. 닉슨 방문은 실험 소재로만 나왔어요."
+],
+[
+46,
+2,
+"reading",
+"r2-s11",
+"Which statement agrees with the passage?",
+[
+"Mock jurors who knew of an accident judged it more foreseeable.",
+"Students accurately recalled their original predictions.",
+"Hindsight bias helps people appreciate the role of chance.",
+"Deliberately imagining alternative outcomes tends to intensify hindsight bias."
+],
+[
+1
+],
+"사고가 났다는 걸 안 모의 배심원이 그 사고를 더 예측 가능했다고 봤다고 했어요. 학생들은 자기 예측을 부풀려 기억했고, 이 편향은 우연의 몫을 '얕잡아' 보게 하며, 다른 결과를 상상하는 것은 처방이에요."
+],
+[
+47,
+2,
+"reading",
+"r2-s11",
+"What does the underlined part mean?",
+[
+"critics who judge decisions after the outcome is known",
+"athletes who train hard early in the week",
+"managers who plan carefully before acting",
+"fans who refuse to watch important games"
+],
+[
+1
+],
+"Monday-morning quarterback 은 주말 경기가 끝난 뒤 월요일에 '그때 이렇게 했어야지' 하고 훈수 두는 사람이에요. 바로 뒤 '재난은 내다볼 수 있었고 책임자가 부주의했다고 확신한다'는 말이 단서예요."
+],
+[
+48,
+2,
+"reading",
+"r2-s12",
+"Which title suits the passage best?",
+[
+"How Telescopes Interfere with Internet Service",
+"Satellite Swarms and the Struggle for a Dark Sky",
+"A New Treaty Limits the Brightness of Satellites",
+"The Humanitarian Failure of Satellite Internet"
+],
+[
+2
+],
+"인터넷 위성이 크게 늘면서 광학·전파 천문 관측을 방해하고, 이를 막을 구속력 있는 규칙이 없다는 글이에요. 그래서 '위성 무리와 어두운 하늘을 지키려는 싸움'이 제목이에요. 밝기를 묶는 국제 규칙은 '없다'고 했어요."
+],
+[
+49,
+2,
+"reading",
+"r2-s12",
+"Which statement agrees with the passage?",
+[
+"Satellites cause problems only for optical telescopes.",
+"Operators have refused to share orbital data with observatories.",
+"The Rubin Observatory in Chile photographs the entire northern sky only once a year.",
+"There is currently no binding global rule on how bright satellites may be."
+],
+[
+4
+],
+"위성 밝기를 정하는 구속력 있는 국제 규칙은 없다고 했어요. 전파 천문학도 방해를 받고, 운영사는 궤도 자료를 '나누고' 있으며, 루빈 천문대는 남쪽 하늘 전체를 며칠마다 찍어요."
+],
+[
+50,
+2,
+"reading",
+"r2-s12",
+"What best fills blanks (A) and (B)?",
+[
+"(A) transformed — (B) concessions",
+"(A) preserved — (B) concessions",
+"(A) transformed — (B) threats",
+"(A) abandoned — (B) lawsuits"
+],
+[
+1
+],
+"(A) 천문학적 시간에만 바뀌던 하늘이 몇 해 만에 상업 위성 때문에 '바뀌었다(transformed)'는 대조예요. (B) 어두운 칠, 햇빛 가리개, 궤도 자료 공유는 운영사가 내놓은 '양보(concessions)'예요."
+],
+[
+1,
+3,
+"vocab",
+null,
+"Select the best word for the blank.\nWary of appearing partisan, the newly appointed judge chose to ____ public comment on any case that might come before her court.",
+[
+"espouse",
+"eschew",
+"procure",
+"expound"
+],
+[
+2
+],
+"편파적으로 보일까 조심했다(Wary of appearing partisan)는 앞말이 단서예요. 그래서 공개 발언을 '삼가다(eschew)'가 맞아요. espouse(지지하다)·expound(자세히 설명하다)는 오히려 말을 하는 쪽이에요."
+],
+[
+2,
+3,
+"vocab",
+null,
+"Select the best word for the blank.\nThe human appendix was long dismissed as a ____ organ, a useless remnant of a digestive system adapted to a diet of raw plants.",
+[
+"vestigial",
+"nascent",
+"indispensable",
+"salutary"
+],
+[
+1
+],
+"콤마 뒤 '쓸모없는 잔재(useless remnant)'가 빈칸을 풀어 쓴 말이에요. 그래서 '흔적만 남은(vestigial)'이 맞아요. indispensable(없어서는 안 될)은 정반대이고, salutary(이로운)도 '쓸모없는'과 어긋나며, nascent(막 생겨나는)는 잔재와 맞지 않아요."
+],
+[
+3,
+3,
+"vocab",
+null,
+"Select the best word for the blank.\nUnlike her careless predecessor, the new auditor was ____, checking every receipt and questioning even trivial discrepancies.",
+[
+"lackadaisical",
+"punctilious",
+"negligent",
+"remiss"
+],
+[
+2
+],
+"Unlike her careless predecessor 로 앞사람과 대비되고, 영수증을 하나하나 확인했다고 했어요. 그래서 '아주 꼼꼼한(punctilious)'이 맞아요. 나머지 셋은 모두 '부주의한' 쪽이라 앞사람 설명에 가까워요."
+],
+[
+4,
+3,
+"vocab",
+null,
+"Select the best word for the blank.\nThe exhibition celebrates ____ objects such as spoons, buttons, and bus tickets, which people handle every day without a second thought.",
+[
+"momentous",
+"recondite",
+"sporadic",
+"quotidian"
+],
+[
+4
+],
+"숟가락, 단추, 버스표처럼 날마다 무심코 쓰는 물건이라고 했으니 '일상적인(quotidian)'이 맞아요. momentous(중대한)·recondite(난해한)는 정반대이고, sporadic(산발적인)은 매일 쓴다는 말과 맞지 않아요."
+],
+[
+5,
+3,
+"vocab",
+null,
+"Select the underlined word's nearest synonym.\nThe columnist's latest article was less a reasoned argument than a <u>diatribe</u> against everyone who had criticized her earlier work.",
+[
+"panegyric",
+"encomium",
+"lament",
+"invective"
+],
+[
+4
+],
+"diatribe 는 '격렬한 비난'이라 invective(독설, 욕설)와 가까워요. less a reasoned argument than(차분한 논증이라기보다)이라는 대조와 against(~을 겨냥한)가 단서예요. panegyric·encomium(찬사)은 반대예요."
+],
+[
+6,
+3,
+"vocab",
+null,
+"Select the underlined word's nearest synonym.\nWhen pressed about the missing funds, the spokesman continued to <u>equivocate</u>, offering vague answers that committed him to nothing.",
+[
+"prevaricate",
+"expound",
+"acquiesce",
+"capitulate"
+],
+[
+1
+],
+"equivocate 는 '얼버무리다'라 prevaricate 와 가까워요. 아무것도 약속하지 않는 모호한 답이라는 뒤 내용이 단서예요. expound(상세히 설명하다)는 반대 쪽이에요."
+],
+[
+7,
+3,
+"vocab",
+null,
+"Select the underlined word's nearest synonym.\nAfter the documentary aired, the small charity was <u>inundated</u> with offers of help and donations from across the country.",
+[
+"pacified",
+"enervated",
+"exonerated",
+"overwhelmed"
+],
+[
+4
+],
+"inundate 는 원래 '물에 잠기게 하다'이고, 여기서는 '(편지·요청이) 쇄도하다'라 overwhelmed 와 가까워요. 전국에서 도움과 기부가 밀려왔다는 내용이 단서예요."
+],
+[
+8,
+3,
+"vocab",
+null,
+"Select the underlined word's nearest synonym.\nThe <u>irresolute</u> committee debated the proposal for months, unable to commit either to approving it or to rejecting it.",
+[
+"vacillating",
+"steadfast",
+"impetuous",
+"complacent"
+],
+[
+1
+],
+"irresolute 는 '결단력 없는'이라 vacillating(이랬다저랬다 망설이는)과 가까워요. 몇 달 동안 찬성도 반대도 정하지 못했다는 뒤 내용이 단서예요. steadfast(확고한)는 반대이고, impetuous(성급한)도 맞지 않아요."
+],
+[
+9,
+3,
+"vocab",
+null,
+"Select the underlined word's nearest synonym.\nAs a condition of his release, the former militant agreed to publicly <u>abjure</u> violence and cooperate with the authorities.",
+[
+"uphold",
+"solicit",
+"renounce",
+"vindicate"
+],
+[
+3
+],
+"abjure 는 '(신념·행동을) 공식적으로 버리다'라 renounce(공식적으로 버리다, 포기하다)와 가까워요. 석방 조건으로 당국에 협조하겠다는 뒤 내용이 단서예요. uphold(지지하다)는 반대예요."
+],
+[
+10,
+3,
+"vocab",
+null,
+"Select the underlined word's meaning IN CONTEXT.\nThe scientist was careful to <u>qualify</u> her conclusions, noting that the sample was small and the results preliminary.",
+[
+"become eligible for",
+"limit the scope of",
+"pass an examination in",
+"train for a profession"
+],
+[
+2
+],
+"표본이 작고 결과가 잠정적이라고 덧붙였으니 결론의 '범위를 제한하다(limit the scope of)'예요. 자격을 얻다, 시험에 붙다는 qualify 의 더 흔한 뜻이지만 여기 맞지 않아요."
+],
+[
+11,
+3,
+"vocab",
+null,
+"Select the underlined word's meaning IN CONTEXT.\nBy ignoring repeated warnings from its engineers, the airline was <u>courting</u> disaster for its entire fleet.",
+[
+"wooing romantically",
+"seeking the favor of",
+"inviting",
+"judging in a trial"
+],
+[
+3
+],
+"목적어가 disaster(재앙)라 '스스로 불러들이다(inviting)'가 맞아요. 경고를 무시했다는 앞말이 단서예요. 구애하다, 환심을 사다, 재판하다는 court 의 다른 뜻이에요."
+],
+[
+12,
+3,
+"vocab",
+null,
+"Select the underlined word's meaning IN CONTEXT.\nMany shops in the old town close early in order to <u>observe</u> the religious holiday.",
+[
+"watch carefully",
+"celebrate according to custom",
+"remark",
+"notice"
+],
+[
+2
+],
+"가게 문을 일찍 닫는 까닭이 종교 휴일이니 '관습대로 지키다, 기념하다'가 맞아요. 관찰하다, 말하다, 알아채다는 observe 의 다른 뜻이에요."
+],
+[
+13,
+3,
+"vocab",
+null,
+"Select the underlined word's meaning IN CONTEXT.\nThe hotel's top floor <u>commands</u> a sweeping view of the harbor and the mountains beyond.",
+[
+"overlooks",
+"orders",
+"controls troops",
+"deserves and receives"
+],
+[
+1
+],
+"꼭대기 층이 항구와 산을 '내려다보다(overlooks)'라는 뜻이에요. 명령하다, 군대를 지휘하다, command respect 의 '받을 만하다'는 다른 뜻이에요."
+],
+[
+14,
+3,
+"rephrase",
+null,
+"Select the closest paraphrase of this sentence.\nIt was not until the final results were published that the team could relax.",
+[
+"The team relaxed well before the final results were published.",
+"Part of the team relaxed once the first results were published.",
+"The team never relaxed, even after the final results were published.",
+"The team could relax only after the final results were published."
+],
+[
+4
+],
+"It was not until A that B 는 'A 하고 나서야 비로소 B 했다'예요. 그래서 '결과가 나온 뒤에야 마음을 놓을 수 있었다'는 문장과 같아요. 끝내 못 쉬었다는 문장은 뜻을 뒤집었고, 결과 전에 쉬었다는 문장은 시점을 바꿨으며, 일부가 첫 결과에 쉬었다는 문장은 원래 문장에 없는 내용이에요."
+],
+[
+15,
+3,
+"rephrase",
+null,
+"Select the closest paraphrase of this sentence.\nYou cannot be too careful when you sign a contract.",
+[
+"You should not be overly careful when signing a contract.",
+"It is impossible to be excessively careful when signing a contract.",
+"You were not careful enough when you signed the contract.",
+"You are too careful to sign a contract."
+],
+[
+2
+],
+"cannot be too ~ 는 '아무리 ~해도 지나치지 않다'예요. 그래서 '계약할 때는 지나치게 조심하는 것이 불가능하다(아무리 조심해도 괜찮다)'는 문장과 같아요. 너무 조심하지 말라는 문장은 정반대이고, too ~ to 로 읽은 문장과 지난 계약을 말하는 문장은 함정이에요."
+],
+[
+16,
+3,
+"grammar",
+null,
+"Select the grammatical completion of the sentence.\nShe is ____ as you are likely to meet anywhere in the notoriously competitive legal profession.",
+[
+"as a talented lawyer",
+"a as talented lawyer",
+"as talented a lawyer",
+"as talented lawyer a"
+],
+[
+3
+],
+"as 가 형용사를 꾸미며 명사 앞에 올 때는 as + 형용사 + a + 명사 순서예요. 그래서 as talented a lawyer as ~ 가 맞아요. as a talented lawyer 는 '유능한 변호사로서'라는 뜻이 되어 뒤 as 와 이어지지 않아요."
+],
+[
+17,
+3,
+"grammar",
+null,
+"Select the grammatical completion of the sentence.\nNot until the lights came on ____ how late it had become.",
+[
+"did we realize",
+"we did realize",
+"realize did we",
+"did realize we"
+],
+[
+1
+],
+"Not until ~ 이 문장 앞에 오면 주절의 주어와 조동사를 뒤집어요. 그래서 did we realize 가 맞아요. we did realize 는 도치를 하지 않은 꼴이에요."
+],
+[
+18,
+3,
+"grammar",
+null,
+"Select the grammatically INCORRECT underlined part.\nThe documents, which ①<u>had been stored</u> in a dank basement for decades, ②<u>showing</u> clear signs of mold when archivists ③<u>finally</u> ④<u>examined</u> them last spring.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+2
+],
+"주어 The documents 뒤에 콤마 사이 관계절만 있고 문장의 동사가 없어요. 그래서 showing 을 동사 showed 로 고쳐야 해요. had been stored 는 조사보다 앞선 일이라 맞고, finally examined 도 맞아요."
+],
+[
+19,
+3,
+"grammar",
+null,
+"Select the grammatically INCORRECT underlined part.\nRescuers ①<u>reached</u> the room ②<u>where</u> the fire had started and carried the ③<u>asleep</u> child outside before the roof ④<u>collapsed</u>.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"asleep 은 서술 용법으로만 쓰는 형용사라 명사 앞에 두지 않아요. the sleeping child 가 맞아요. the child who was asleep 처럼 뒤에서 서술하면 괜찮아요. where 는 the room 을 받는 관계부사라 맞아요."
+],
+[
+20,
+3,
+"grammar",
+null,
+"Select the grammatically INCORRECT sentence.",
+[
+"The doctor insisted that he rest for at least a week.",
+"The committee recommended that the contentious plan be postponed.",
+"It is essential that every passenger wear a seat belt.",
+"The manager demanded that the report is finished by Friday."
+],
+[
+4
+],
+"demand, insist, recommend, essential 처럼 요구·필요를 나타내는 말 뒤 that 절에는 (should) 동사원형을 써요. 그래서 the report be finished 가 맞아요. 나머지 셋은 rest, be postponed, wear 로 바르게 썼어요."
+],
+[
+21,
+3,
+"grammar",
+null,
+"Select the grammatically INCORRECT sentence.",
+[
+"It was such a beautiful day that we walked home.",
+"They had a such long journey that they slept all day.",
+"She spent half an hour looking for her keys.",
+"He made quite a blunder in his first week."
+],
+[
+2
+],
+"such 는 관사 앞에 와서 such a + 형용사 + 명사 순서예요. 그래서 such a long journey 가 맞아요. half an hour, quite a blunder 도 관사가 뒤에 오는 바른 어순이에요."
+],
+[
+22,
+3,
+"reading",
+"r3-s1",
+"Which title suits the passage best?",
+[
+"How Military Strength Became Obsolete",
+"Japan's Plan to Export Its Language",
+"Confucius Institutes and the Global Rise of K-pop",
+"Attraction Cannot Be Manufactured"
+],
+[
+4
+],
+"나라들이 문화로 호감을 사려 하지만 정부가 티 나게 만들수록 역효과가 난다는 '소프트파워의 역설'이 중심이에요. 그래서 Attraction Cannot Be Manufactured(끌림은 찍어 낼 수 없다)가 제목이에요. 군사력이 쓸모없어졌다는 말은 없어요."
+],
+[
+23,
+3,
+"reading",
+"r3-s1",
+"Which statement conflicts with the passage?",
+[
+"Nye contrasted attraction with coercion and payment.",
+"Some Confucius Institutes were shut down amid concerns about academic freedom.",
+"Britain's cultural agency has promoted the English language abroad since the 1930s.",
+"Korea's cultural success was mainly the product of detailed government planning."
+],
+[
+4
+],
+"한국 문화의 성공은 정부 계획보다 '치열한 민간 산업'에서 나왔다고 했어요. 그래서 government planning 이라는 문장이 글과 달라요. 나이(Nye)의 정의, 공자학원 폐쇄, 영국의 영어 보급은 모두 글에 있어요."
+],
+[
+24,
+3,
+"reading",
+"r3-s2",
+"What does the passage chiefly discuss?",
+[
+"why telephone numbers and adult heights follow Benford's law most closely",
+"the career of Simon Newcomb as an astronomer",
+"an unexpected pattern in the first digits of real data and its uses",
+"methods for memorizing logarithm tables"
+],
+[
+3
+],
+"실제 자료의 첫 자릿수에 1이 훨씬 자주 나온다는 벤퍼드 법칙과, 그것으로 조작된 숫자를 찾아내는 쓰임을 다뤄요. 그래서 an unexpected pattern ~ and its uses 가 주제예요. 전화번호처럼 사람이 정한 숫자에는 맞지 않는다고 했어요."
+],
+[
+25,
+3,
+"reading",
+"r3-s2",
+"What best fills the blank?",
+[
+"curious",
+"fraudulent",
+"legal",
+"deliberate"
+],
+[
+1
+],
+"직관과 달리 1이 30%나 앞에 온다는 것은 산수의 '기묘한(curious)' 특이점이에요. 그것이 부정 적발이라는 실용 도구가 됐다는 대조예요. 법칙 자체가 사기(fraudulent)나 일부러 만든 것(deliberate)은 아니에요."
+],
+[
+26,
+3,
+"reading",
+"r3-s3",
+"Why was the passage most likely written?",
+[
+"To show how stepping back improves our own judgment",
+"To argue that people should always follow the advice their friends give them",
+"To criticize a 2014 study for relying on imagined scenarios of infidelity",
+"To describe the life and reign of a biblical king renowned for wisdom"
+],
+[
+1
+],
+"남의 일은 현명하게 보면서 내 일은 그러지 못하는 까닭과, 제삼자처럼 거리를 두면 판단이 나아진다는 연구를 소개해요. 그래서 To show how stepping back ~ 이 목적이에요. 솔로몬 왕은 이름의 유래로만 나왔어요."
+],
+[
+27,
+3,
+"reading",
+"r3-s3",
+"Which statement agrees with the passage?",
+[
+"People reasoned more wisely about their own dilemmas than about a friend's.",
+"The author presents self-distancing as a cure for every problem.",
+"Using one's own name in self-talk reduced anxiety before a speech.",
+"Observers rated the speakers who used their own names as performing worse."
+],
+[
+3
+],
+"발표 전에 자기 이름을 불러 혼잣말한 사람들이 불안을 덜 느꼈다고 했어요. 사람들은 친구 일을 더 현명하게 따졌으니 자기 일을 더 현명하게 따졌다는 문장은 두 대상을 바꿔치기해 틀렸고, 만병통치약이 아니라고(no panacea) 했으며, 관찰자들은 '더 잘했다'고 평가했어요."
+],
+[
+28,
+3,
+"reading",
+"r3-s4",
+"Which title suits the passage best?",
+[
+"Why Every Olympic Games Since 1960 Has Turned a Profit",
+"Montreal's Plan to Host the Olympic Games Once Again",
+"The Shrinking Appeal of Hosting the Olympics",
+"How Local Referendums Created the Modern Olympic Movement"
+],
+[
+3
+],
+"예산 초과와 빚 때문에 올림픽 개최를 원하는 도시가 줄고, IOC 와 개최지가 기존 시설을 쓰는 쪽으로 바뀌고 있다는 글이에요. 그래서 '시들해진 올림픽 개최의 매력'이 제목이에요. 모든 대회가 예산을 넘었다고 했어요."
+],
+[
+29,
+3,
+"reading",
+"r3-s4",
+"Which statement agrees with the passage?",
+[
+"Several cities dropped out of the bidding for the 2022 Winter Games.",
+"The Oxford researchers found that most Games since 1960 stayed within their budgets.",
+"Paris built mostly new permanent venues for the 2024 Games.",
+"Tourism reliably surges in host cities during the Games."
+],
+[
+1
+],
+"2022 겨울 대회 유치전에서 유럽 도시 여럿이 빠져 후보가 둘만 남았다고 했어요. 옥스퍼드 연구는 모든 대회가 예산을 넘었다고 했고, 파리는 기존·임시 시설을 썼으며, 관광 특수는 자주 오지 않았어요."
+],
+[
+30,
+3,
+"reading",
+"r3-s4",
+"What best fills blanks (A) and (B)?",
+[
+"(A) shoulder — (B) extravagant",
+"(A) refuse — (B) frugal",
+"(A) celebrate — (B) secretive",
+"(A) shoulder — (B) frugal"
+],
+[
+4
+],
+"(A) Increasingly 앞 문장의 '탐내던 상'과 대비되는 '짐(burden)'이니, 그 짐을 '지겠다(shoulder)'는 도시가 몇 안 된다는 뜻이에요. (B) 기존 시설을 쓰고 행사가 도시에 맞추는 방식이니 '검소한(frugal)' 모델이에요."
+],
+[
+31,
+3,
+"reading",
+"r3-s5",
+"What does the passage chiefly discuss?",
+[
+"why German is the hardest language to learn",
+"Mark Twain's travels through Europe",
+"how the Norman Conquest gave English its masculine, feminine, and neuter nouns",
+"what grammatical gender is and whether it affects thinking"
+],
+[
+4
+],
+"명사의 문법적 성이 무엇인지(생물학적 성이 아닌 형태의 문제)와 그것이 생각에 영향을 주는지를 다뤄요. 그래서 what grammatical gender is ~ 가 주제예요. 마크 트웨인은 독일어 성을 놀린 예로만 나왔어요."
+],
+[
+32,
+3,
+"reading",
+"r3-s5",
+"Which statement conflicts with the passage?",
+[
+"German assigns neuter gender to nouns with a certain diminutive suffix.",
+"Attempts to replicate the bridge study have consistently confirmed it.",
+"Some languages classify nouns as animate or inanimate.",
+"English once distinguished three genders of nouns."
+],
+[
+2
+],
+"다리 연구를 다시 해 본 시도는 '자주 실패했다'고 했어요. 그래서 꾸준히 확인됐다는 문장이 글과 달라요. 독일어 작은말 꼬리의 중성, 생물·무생물 분류, 옛 영어의 세 성은 모두 글에 있어요."
+],
+[
+33,
+3,
+"reading",
+"r3-s6",
+"What best fills the blank?",
+[
+"feeding",
+"scalding",
+"cloning",
+"starving"
+],
+[
+2
+],
+"물이 끓는 온도까지 오르는 반응인데, 분사 사이에 방이 잠깐 식는다고 했어요. 그러니 벌레가 자기 몸을 '데는(scalding)' 것을 피한다는 말이 맞아요."
+],
+[
+34,
+3,
+"reading",
+"r3-s6",
+"Which statement agrees with the passage?",
+[
+"Some beetles swallowed by toads survived after being vomited up.",
+"The beetle's spray is released as a single continuous stream.",
+"The chemicals are stored together in the reaction chamber at all times.",
+"The spray is cold and has no smell."
+],
+[
+1
+],
+"두꺼비가 삼켰다가 토해 낸 벌레 중 다수가 살아서 걸어갔다고 했어요. 분사는 초당 수백 번 끊어지는 펄스이고, 원료는 따로 두었다가 반응 방으로 보내며, 분사액은 끓을 만큼 뜨겁고 냄새가 고약해요."
+],
+[
+35,
+3,
+"reading",
+"r3-s7",
+"What does the passage chiefly discuss?",
+[
+"the details and disputed meaning of a famous fifteenth-century portrait",
+"how Italian merchants living in Bruges traded oranges and fur across fifteenth-century Europe",
+"Panofsky's career as a portrait painter",
+"the technique of manufacturing convex mirrors"
+],
+[
+1
+],
+"반 에이크의 부부 초상화가 지닌 정밀한 세부(거울, 서명)와, 결혼 기록이라는 해석이 흔들리는 사정을 다뤄요. 그래서 the details and disputed meaning ~ 이 주제예요. 파노프스키는 화가가 아니라 미술사학자예요."
+],
+[
+36,
+3,
+"reading",
+"r3-s7",
+"Which statement conflicts with the passage?",
+[
+"The mirror shows figures standing in a doorway.",
+"The inscription states that van Eyck was present.",
+"Panofsky's marriage interpretation is now accepted by nearly all scholars.",
+"The woman's gown was once thought to indicate pregnancy."
+],
+[
+3
+],
+"파노프스키의 결혼 해석은 '많은 학자가 이제 의심한다'고 했어요. 그래서 거의 모두가 받아들인다는 문장이 글과 달라요. 문간의 두 사람, '반 에이크가 여기 있었다'는 글귀, 임신으로 오해된 옷은 모두 글에 있어요."
+],
+[
+37,
+3,
+"reading",
+"r3-s7",
+"Which underlined part refers to something else?",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ"
+],
+[
+2
+],
+"The man, the merchant, Arnolfini 는 모두 그림 속 상인 조반니 아르놀피니를 가리켜요. the Flemish master(플랑드르의 거장)만 화가 반 에이크를 가리켜요."
+],
+[
+38,
+3,
+"reading",
+"r3-s8",
+"Which title suits the passage best?",
+[
+"Why Audubon Painted Only Songbirds in His Famous Book",
+"Renaming Birds: Whom Should a Name Honor?",
+"Scientists Change the Latin Names of All Birds",
+"The Disappearance of the Thick-Billed Longspur"
+],
+[
+2
+],
+"북미 조류학회가 사람 이름을 딴 새 이름을 모두 바꾸기로 하면서 생긴 찬반을 다뤄요. 그래서 '새 이름 바꾸기, 이름은 누구를 기려야 하나'가 제목이에요. 라틴어 학명은 그대로 둔다고 했어요."
+],
+[
+39,
+3,
+"reading",
+"r3-s8",
+"What best fills the blank?",
+[
+"flattering",
+"indispensable",
+"profitable",
+"alienating"
+],
+[
+4
+],
+"학회는 사람 이름 대신 모양·노래·서식지를 담은 이름이 낫다고 했고, 노예를 부린 사람의 이름이 예로 나왔어요. 그런 이름이 새를 보려는 사람들을 '멀어지게 할(alienating)' 수 있다는 논리예요."
+],
+[
+40,
+3,
+"reading",
+"r3-s8",
+"Which statement agrees with the passage?",
+[
+"The society renamed McCown's longspur in 2023.",
+"Critics argued that descriptive names are more useful.",
+"The Latin scientific names of birds are not affected by the change.",
+"The public was excluded from the process of choosing replacement names for the birds."
+],
+[
+3
+],
+"바뀌는 것은 영어 일반명뿐이고 라틴어 학명은 그대로라고 했어요. 맥카운 긴발톱멧새는 2020년에 바뀌었고, 묘사형 이름이 낫다는 것은 학회 쪽 주장이며, 학회는 시민 참여를 청했어요."
+],
+[
+41,
+3,
+"reading",
+"r3-s9",
+"What does the passage chiefly discuss?",
+[
+"what musical chills reveal about the brain's reward system",
+"how to compose music that never surprises or disappoints its listeners",
+"the evolutionary history of the hair that stands up on the human arm",
+"why dopamine is released only in response to food and other tangible rewards"
+],
+[
+1
+],
+"음악을 듣다 소름이 돋는 순간 뇌에서 도파민이 나오고, 기대하는 순간에도 나온다는 연구로 뇌의 보상 체계를 설명해요. 그래서 what musical chills reveal ~ 이 주제예요. 도파민은 음식뿐 아니라 음악에도 반응해 나왔어요."
+],
+[
+42,
+3,
+"reading",
+"r3-s9",
+"What can reasonably be inferred?",
+[
+"Entirely predictable music is the most likely to cause chills.",
+"Everyone experiences chills when hearing a favorite song.",
+"Dopamine plays no role in the enjoyment of music.",
+"Anticipating a favorite passage can itself be rewarding."
+],
+[
+4
+],
+"절정 직전 몇 초 동안, 좋아하는 대목을 기대할 때도 도파민이 솟았다고 했어요. 그러니 기대 자체가 보상이 될 수 있다고 끌어낼 수 있어요. 소름은 '뜻밖의' 대목에서 나고, 모두가 느끼지는 않아요."
+],
+[
+43,
+3,
+"reading",
+"r3-s10",
+"Which title suits the passage best?",
+[
+"Why Greek Learning Vanished in the Middle Ages",
+"Baghdad's Translators and the Transmission of Knowledge",
+"The Invention of Paper in Baghdad",
+"Hunayn ibn Ishaq's Reign as Caliph"
+],
+[
+2
+],
+"아바스 왕조의 바그다드에서 그리스 학문을 아랍어로 옮기고 새로 발전시켜 유럽까지 전한 번역 운동을 다뤄요. 그래서 '바그다드의 번역가들과 지식의 전달'이 제목이에요. 종이 만드는 법은 중국에서 들어왔다고 했어요."
+],
+[
+44,
+3,
+"reading",
+"r3-s10",
+"What best fills the blank?",
+[
+"preserve",
+"censor",
+"ridicule",
+"sell"
+],
+[
+1
+],
+"뒤에서 알콰리즈미가 그리스·인도 자료 위에 '독창적인' 연구를 했다고 했어요. 옛 문헌을 '보존하는(preserve)' 데서 그치지 않았다는 말이에요. 검열하거나 비웃었다는 내용은 없어요."
+],
+[
+45,
+3,
+"reading",
+"r3-s11",
+"What does the passage chiefly discuss?",
+[
+"how to end a conversation politely",
+"how university students who share living quarters gradually come to like each other",
+"why people tend to underestimate how much others like them",
+"why outside observers misjudge conversations"
+],
+[
+3
+],
+"처음 만난 사람과 대화한 뒤 상대가 나를 좋아하는 정도를 얕잡아 보는 '호감 격차'를 다뤄요. 그래서 why people tend to underestimate ~ 가 주제예요. 바깥 관찰자는 오히려 호감 신호를 잘 알아챘어요."
+],
+[
+46,
+3,
+"reading",
+"r3-s11",
+"Which statement agrees with the passage?",
+[
+"The gap disappeared after a few minutes of conversation.",
+"Outside observers noticed signs of interest that participants missed.",
+"People generally overestimated how much they were liked.",
+"The gap vanished at once among students who shared rooms."
+],
+[
+2
+],
+"대화 당사자는 놓친 따뜻함과 관심의 신호를 바깥 관찰자는 쉽게 알아챘다고 했어요. 격차는 길게 대화해도 남았고, 사람들은 호감을 '적게' 짐작했으며, 같이 사는 학생들 사이에서도 몇 달에 걸쳐 천천히 줄었어요."
+],
+[
+47,
+3,
+"reading",
+"r3-s11",
+"What does the underlined part mean?",
+[
+"professional critics are harsher than ordinary people",
+"people rarely think about their own behavior",
+"people judge their own performance more severely than others do",
+"others criticize us more than we expect"
+],
+[
+3
+],
+"'우리는 자신에게 가장 가혹한 비평가'라는 말은 남보다 자기 자신을 더 엄하게 평가한다는 뜻이에요. 뒤에 대화 중 자기 모습만 살피고 실수만 곱씹는다는 설명이 이어져요."
+],
+[
+48,
+3,
+"reading",
+"r3-s12",
+"Which title suits the passage best?",
+[
+"How the Pope Is Chosen by Public Vote",
+"Why the Sistine Chapel Was Closed for Repairs",
+"Locked In with a Key: The Enduring Ritual of the Conclave",
+"The Missionary Work of Cardinals in Peru"
+],
+[
+3
+],
+"추기경들을 가둬 놓고 교황을 뽑는 콘클라베의 유래와 절차, 2025년 선출을 다뤄요. 그래서 '열쇠로 잠근 채, 오래 이어진 콘클라베 의식'이 제목이에요. 소수의 추기경이 비밀리에 뽑지 대중 투표가 아니에요."
+],
+[
+49,
+3,
+"reading",
+"r3-s12",
+"Which statement agrees with the passage?",
+[
+"A simple majority is enough to elect a pope.",
+"Leo XIV was the second pope from the United States.",
+"The Viterbo election was settled within a few days.",
+"Black smoke indicates that no pope has yet been elected."
+],
+[
+4
+],
+"검은 연기는 아직 아무도 뽑히지 않았다는 신호라고 했어요. 3분의 2가 필요하고, 레오 14세는 미국 출신 첫 교황이며, 비테르보 선거는 3년 가까이 걸렸어요."
+],
+[
+50,
+3,
+"reading",
+"r3-s12",
+"What best fills blanks (A) and (B)?",
+[
+"(A) coercive — (B) compelling",
+"(A) leisurely — (B) compelling",
+"(A) coercive — (B) tedious",
+"(A) democratic — (B) forgotten"
+],
+[
+1
+],
+"(A) 관리들이 추기경을 가두고 음식을 줄여 결정을 '강요한' 데서 왔으니 coercive 예요. (B) 비밀 절차인데도 수백만 명의 관심을 끌었으니 여전히 '눈을 떼기 어렵다(compelling)'예요. tedious(지루한)는 정반대예요."
+]
+]
+}

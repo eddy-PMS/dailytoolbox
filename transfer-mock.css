@@ -1,0 +1,18 @@
+/* 대학별 편입영어 모의고사 공통 스타일 (transfer-mock.js 와 한 세트, cert-mock.css 위에 얹음) */
+.modes { display:grid; grid-template-columns:1fr 1fr; gap:8px; } @media(max-width:520px){ .modes { grid-template-columns:1fr; } }
+.modes .btn, .modes .btn-ghost { min-height:44px; }
+.qwrap.two { display:grid; grid-template-columns:1fr; gap:14px; }
+@media(min-width:1000px){ .qwrap.two { grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); align-items:start; } .qwrap.two .psg { position:sticky; top:12px; max-height:calc(100vh - 24px); overflow-y:auto; } }
+.psg { border:1px solid var(--line); border-radius:8px; background:#fbfaf6; padding:12px 14px; }
+.psg .lb { font-size:13px; font-weight:700; color:var(--ink-soft); margin-bottom:6px; }
+.psgtx p { font-size:15px; line-height:1.75; margin:0 0 10px; overflow-wrap:anywhere; } .psgtx p:last-child { margin-bottom:0; }
+.qtext u, .opt u, .psgtx u { text-decoration-thickness:2px; text-underline-offset:3px; }
+.sheet button.mk { box-shadow:inset 0 -4px 0 #f1a33c; }
+.secs { margin-top:14px; } .secs h2, .review h2 { font-size:17px; margin:0 0 8px; }
+.srow { display:grid; grid-template-columns:5.5em 1fr auto; gap:8px; align-items:center; font-size:14px; margin-bottom:8px; }
+.sbar { height:10px; background:var(--paper-deep); border-radius:5px; overflow:hidden; } .sbar i { display:block; height:100%; background:var(--accent); }
+.sv { color:var(--ink-soft); font-variant-numeric:tabular-nums; white-space:nowrap; }
+.rpsg { margin-top:8px; } .rpsg summary { font-size:13px; font-weight:400; color:var(--accent-deep); } .rpsg .psgtx { margin-top:6px; }
+.pick { display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:12px; } .plb { font-size:14px; font-weight:700; color:var(--ink-soft); }
+.rseg { display:flex; gap:6px; } .rseg button { min-width:64px; min-height:44px; padding:0 14px; border:1px solid var(--line); border-radius:8px; background:#fff; font-family:inherit; font-size:15px; color:var(--ink); cursor:pointer; } .rseg button.on { background:var(--accent); border-color:var(--accent); color:#fff; font-weight:700; }
+.big-result { word-break:keep-all; } .big-result small { display:inline-block; }

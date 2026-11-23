@@ -1,0 +1,2303 @@
+{
+"school": "tukorea",
+"title": "한국공학대 편입영어 모의고사",
+"source": "한국공학대 편입영어 2020~2026학년도 기출 출제 유형(문항 수·영역·문제 꼴, VocabFactory 분석)을 분석해 dailyfreetoolbox 가 새로 만든 연습 문제",
+"checked": "2026-11-23",
+"minutes": 60,
+"points": [
+[
+1,
+2,
+2.5
+],
+[
+3,
+3,
+2
+],
+[
+4,
+7,
+2.5
+],
+[
+8,
+8,
+3
+],
+[
+9,
+9,
+2.5
+],
+[
+10,
+10,
+2
+],
+[
+11,
+15,
+2.5
+],
+[
+16,
+16,
+3
+],
+[
+17,
+18,
+2.5
+],
+[
+19,
+19,
+2
+],
+[
+20,
+23,
+2.5
+],
+[
+24,
+24,
+3
+],
+[
+25,
+27,
+2.5
+],
+[
+28,
+28,
+2
+],
+[
+29,
+31,
+2.5
+],
+[
+32,
+32,
+3
+],
+[
+33,
+35,
+2.5
+],
+[
+36,
+36,
+2
+],
+[
+37,
+39,
+2.5
+],
+[
+40,
+40,
+3
+]
+],
+"sections": [
+{
+"id": "vocab",
+"name": "어휘"
+},
+{
+"id": "grammar",
+"name": "문법"
+},
+{
+"id": "logic",
+"name": "논리"
+},
+{
+"id": "reading",
+"name": "독해"
+}
+],
+"passages": [
+{
+"id": "r1-p26",
+"text": "Car factories have used robots for decades. Most, however, are anchored to the floor and repeat a single motion, such as welding a seam, thousands of times a day. [A] A new generation of humanoid robots, with two arms, two legs, and cameras for eyes, is now being tested on assembly lines in the United States and China. [B] Their appeal lies in their anatomy. Factories were designed for human workers. A machine built like a person can therefore reach the same shelves, climb the same stairs, and use the same tools without the building being redesigned around it. [C] For now, the trials are rudimentary. The robots mostly carry parts from one station to another, and they work far more slowly than people. [D] Even their makers admit that years of testing lie ahead before the machines can handle tasks that demand nuanced judgment."
+},
+{
+"id": "r1-p27",
+"text": "In August 2024, an electric car parked in the underground garage of a large apartment complex in Incheon caught fire early in the morning. The blaze burned for about eight hours, destroyed or damaged well over a hundred vehicles, and left many households without water or electricity for days. Fires in lithium-ion batteries are notoriously hard to extinguish because of a process called thermal runaway. Once one cell overheats, it sets off its neighbors. The battery then keeps generating its own heat even when it is doused with water. In an enclosed garage, smoke and heat accumulate rapidly, making it dangerous for firefighters to get close. After the fire, some apartment complexes moved to prohibit electric cars from their underground garages, and the government pressed carmakers to disclose who made their batteries."
+},
+{
+"id": "r1-p28",
+"text": "In the late twentieth century the Japanese astrophysicist Koryo Miura devised a way of folding a flat sheet that has since found applications far beyond paper. In a Miura fold, the sheet is creased into a grid of slightly slanted parallelograms. The result can be collapsed into a compact block and then opened again in one smooth motion just by tugging on two opposite corners. Because all the folds move together, the sheet unfolds without tangling or tearing. The technique was tested on a solar panel array carried by a Japanese satellite launched in 1995. Engineers still study it as a way of deploying large structures in space. Back on Earth, some folding maps use the same pattern."
+},
+{
+"id": "r1-p29",
+"text": "In a well-known 1999 study, the psychologists Tanya Chartrand and John Bargh paired volunteers with a researcher posing as another participant. The researcher deliberately rubbed her face during some sessions and jiggled her foot during others. Without realizing it, the volunteers tended to imitate whichever habit their partner displayed. In a follow-up experiment, the researcher subtly mirrored the volunteers' own postures and gestures. Afterward, those who had been mimicked rated the conversation as smoother and the researcher as more likable than those who had not, although almost none had noticed the copying. The researchers dubbed this unconscious imitation the chameleon effect."
+},
+{
+"id": "r1-p30",
+"text": "Desert ants of the genus Cataglyphis forage across flat, featureless sand, sometimes wandering more than a hundred meters from their nest in search of food. Once they find something, they run straight home rather than retracing their meandering route. How do they know how far to go? In a 2006 experiment, researchers glued tiny stilts made of pig bristles onto the legs of some ants, elongating their stride, and trimmed the legs of others. The ants on stilts overshot their nest, while those with shortened legs stopped short of it. The results suggest that the ants ____."
+},
+{
+"id": "r1-p31",
+"text": "Few words in office life sound as harmless as deadline. Yet the term has a macabre origin. During the American Civil War, it referred to a line marked around a prison camp; any prisoner who crossed it could be shot by the guards. Only in the early twentieth century did printers and newspaper editors begin using it for the time by which a story had to be finished. Today, when a manager announces a deadline for a report, few employees envision armed guards. Over the years, the word has <u>lost its edge</u>, keeping its sense of a firm limit while shedding the threat of death."
+},
+{
+"id": "r1-p32",
+"text": "Economics textbooks long used the lighthouse as the classic example of a public good. A lighthouse's beam guides every passing ship, the reasoning went, but its owner cannot make a ship pay for the light it uses. Private firms would therefore never build one, and only governments can. In 1974, however, the economist Ronald Coase examined the history of British lighthouses and found that many had been built and run by private individuals. With official permission, they collected fees from ships when they arrived in port. Coase's point was not that governments are unnecessary, but that economists should study how institutions actually work before pronouncing on what markets cannot do."
+},
+{
+"id": "r1-p33",
+"text": "The Soviet psychologist Lev Vygotsky maintained that a child's ability should not be judged only by what the child can do alone. Between the tasks a learner can already manage independently and the tasks that are still beyond their grasp lies a middle territory, which he called the zone of proximal development. In this zone, a learner can succeed with help from a teacher or a more capable classmate, for example through a hint, a question, or a demonstration. Work that is too easy teaches nothing new, while work that is far too hard leaves students discouraged. Vygotsky therefore believed that teaching is most effective when it targets this zone."
+},
+{
+"id": "r1-s1",
+"text": "In 2000 the United States declared that measles was no longer spreading continuously within its borders, a triumph attributed to widespread vaccination. Early in 2025, however, an outbreak that began in a rural community in West Texas swelled into one of the largest the country had seen in decades. Two unvaccinated school-age children died. Measles is among the most contagious diseases known: an infected person can transmit it to most of the unprotected people nearby. Two doses of the vaccine are about 97 percent effective, but to keep the virus from circulating, roughly 95 percent of a community must be immune. Where vaccination rates slip below that threshold, even a single imported case can ____."
+},
+{
+"id": "r1-s2",
+"text": "In March 2025, the road surface in a busy district of eastern Seoul suddenly gave way. The hole was roughly twenty meters wide, and a motorcyclist who fell into it was killed. The accident rekindled public anxiety about sinkholes, which in cities are usually caused not by natural caves but by what lies beneath the streets. When old water and sewer pipes crack, leaking water can gradually wash away the soil under the pavement. A cavity forms and grows <u>imperceptibly</u> until the road above can no longer bear the weight of traffic. Large construction projects that pump out groundwater can aggravate the problem. Ground-penetrating radar can detect many cavities before they collapse, but surveying every street regularly is prohibitively expensive, so cities must decide which areas to examine first."
+},
+{
+"id": "r1-s3",
+"text": "(A) In the early 1850s an American mechanic named Elisha Otis devised a remedy. He fitted a hoist with a spring-loaded catch that would grip toothed rails on either side of the shaft if the rope ever broke. In 1854, at an exhibition in New York, he rode an open platform high above a skeptical crowd and ordered the rope to be cut. The platform dropped only a few inches before the catch held it fast.\n(B) Within a few decades, passenger elevators with similar safety brakes were being installed in offices and hotels, and architects were free to build far higher than before. Elevators also inverted an old pattern of city life. The top floors, once left to servants and the poor, became the most prestigious addresses in a building, a status that penthouse apartments still enjoy today.\n(C) In the early nineteenth century, few buildings rose above five or six stories. Hoists for lifting goods already existed, but they hung from a single rope, and if it snapped, the platform and anything on it plunged to the bottom. Few people were willing to ride in such a machine. Climbing many flights of stairs was grueling, so upper floors were the least desirable part of any building."
+},
+{
+"id": "r2-p26",
+"text": "Building a house typically takes months and requires dozens of skilled laborers. [A] A growing number of companies now hope to reduce both time and labor by printing homes. A giant robotic arm or gantry moves back and forth over the site, squeezing out a thick paste of concrete layer by layer, much as a desktop printer builds a small plastic toy. [B] In Texas, one builder has used the method to construct an entire neighborhood of roughly one hundred houses. [C] Proponents say that printing generates less waste, since the machine deposits material only where it is needed. [D] Roofs, windows, wiring, and plumbing must still be installed by hand, so printing accelerates only part of the job, and building codes in many places were not drafted with printed walls in mind."
+},
+{
+"id": "r2-p27",
+"text": "For decades, weather forecasts have been produced by supercomputers that solve equations describing how air, heat, and moisture circulate through the atmosphere. Running these physics-based models consumes hours of computing time. Since 2023, however, several technology companies and research centers have released forecasting systems built on machine learning. Instead of solving the equations directly, these systems extract patterns from decades of archived weather data and can generate a ten-day global forecast in about a minute. In 2025 the European Centre for Medium-Range Weather Forecasts began running such a model alongside its traditional one. Meteorologists caution, though, that AI models are only as reliable as the historical record they were trained on and may falter in extreme events unlike anything in that record."
+},
+{
+"id": "r2-p28",
+"text": "Most countries use a system of paper sizes in which a sheet of A4 is precisely half the size of A3, which is in turn half of A2. The trick lies in the ratio of the sides. Every sheet in the series has sides in the proportion of one to the square root of two, roughly 1 to 1.41. Because of this, cutting a sheet in half yields two smaller sheets with exactly the same proportions as the original. The largest standard size, A0, has an area of one square meter. The idea was proposed by a German scientist in the eighteenth century, but it was not widely adopted until the twentieth. The United States and Canada still predominantly use letter-size paper, which lacks this convenient property."
+},
+{
+"id": "r2-p29",
+"text": "Negotiators often walk into a meeting assuming that whatever one side gains, the other must lose. Researchers call this the fixed-pie bias. A familiar parable illustrates its cost. Two sisters quarrel over a single orange and finally agree to cut it in half. One squeezes her half for juice and discards the peel, while the other grates the peel of her half for a cake and throws away the fruit. Had they simply asked each other why they wanted the orange, each could have received everything she needed. Studies of negotiation suggest that people who disclose their underlying priorities routinely reach better agreements than those who quarrel only over positions."
+},
+{
+"id": "r2-p30",
+"text": "A solid steel bolt dropped into a harbor sinks instantly, yet a ship made of thousands of tons of steel floats. The explanation goes back to a principle articulated by Archimedes more than two thousand years ago: an object immersed in water is pushed upward by a force equal to the weight of the water it displaces. A steel bolt displaces water weighing far less than the bolt itself. A ship's hull, by contrast, is shaped into a wide, hollow shell filled mostly with air, so it pushes aside an enormous volume of water. What keeps a ship afloat, then, is not the material it is made of but ____."
+},
+{
+"id": "r2-p31",
+"text": "In 1969 the educator Laurence J. Peter proposed a sardonic rule about organizations. Employees who perform well, he observed, are usually rewarded with promotion to a higher position. If they excel there, they are promoted again. The process halts only when they reach a job they cannot do well, where they then remain. Over time, Peter argued, every position tends to be occupied by someone <u>who has risen to a level of incompetence</u>. The principle was intended partly as satire, but some later studies of sales staff promoted to management have found evidence for it: the best salespeople did not necessarily make the best managers."
+},
+{
+"id": "r2-p32",
+"text": "Before modern banknotes, many coins contained precious metal, and their value depended on how much gold or silver they held. When a government issued new coins with less silver but decreed them worth the same as the old ones, people behaved predictably. They spent the new, debased coins and hoarded the old, purer ones or melted them down. Soon only the inferior coins were circulating. This tendency is known as Gresham's law, after a sixteenth-century English financier, and it is often summed up as bad money drives out good. Economists note that the same logic can surface wherever two things are officially treated as equivalent but are not equal in reality."
+},
+{
+"id": "r2-p33",
+"text": "The full moon looks enormous when it rises just above the horizon and noticeably smaller a few hours later, high in the sky. Yet photographs show that its apparent size barely changes. The moon illusion, as it is called, has puzzled thinkers since ancient times, and there is still no single agreed explanation. One popular theory holds that the brain judges the moon near the horizon to be more distant, because it appears beyond faraway trees and buildings, and therefore inflates its size. Whatever the cause, the illusion is a reminder that what we see is not a simple recording of the world but an interpretation constructed by the brain."
+},
+{
+"id": "r2-s1",
+"text": "In January 2022, South Korea's Serious Accidents Punishment Act took effect after years of public outrage over deaths at construction sites and factories. Earlier laws had mostly penalized site managers and safety officers. The new law, by contrast, can hold business owners and chief executives criminally liable if a worker is killed and the company is found to have neglected its duty to maintain proper safety systems. Penalties can include prison terms. Initially, the law applied only to businesses with fifty or more workers, but in January 2024 it was extended to smaller firms with five or more. Business groups contend that the rules are vague and onerous for small companies, while labor groups reply that the law's real purpose is to make safety ____ rather than an afterthought."
+},
+{
+"id": "r2-s2",
+"text": "Visitors to Hong Kong are often startled to see skyscrapers under construction wrapped in bamboo. For generations, teams of <u>dexterous</u> workers have lashed bamboo poles together with nylon ties to build scaffolding dozens of stories high. The material is cheap, light, and flexible, and a skilled crew can erect or dismantle it far faster than a comparable metal frame. Bamboo, however, varies in strength from pole to pole, is flammable, and deteriorates in the humid climate, and accidents involving scaffolding have long worried safety officials. In 2025 the city's government announced that metal scaffolding should gradually replace bamboo on many public works projects. Champions of the old craft fear that a distinctive tradition, along with the livelihoods of thousands of scaffolders, may slowly vanish."
+},
+{
+"id": "r2-s3",
+"text": "(A) That afternoon I made another bracket, and then another. The fourth one matched the drawing to within a hair. He did not praise it; he simply handed me a more intricate drawing. Years later, when I began training apprentices of my own, I kept a scrap bin beside my bench, and on each newcomer's first day I recounted the story of the foreman's notebook.\n(B) On my first day at the machine shop, the foreman handed me a steel block, a file, and a drawing of a simple bracket. \"Make this,\" he said, and walked away. I spent the whole morning filing, measuring, and filing again. By lunchtime my hands ached, and the bracket was still a millimeter too thick on one side. When I finally showed it to him, he held it up to the light, nodded once, and tossed it into a bin full of scrap.\n(C) I was too stunned to speak. Noticing my dismay, he pulled a battered notebook from his pocket and opened it to a page crowded with pencil sketches. \"My first bracket went into that same bin,\" he said. \"So did the next three. Nobody here remembers my first bracket. They remember that I learned to measure twice before I cut.\""
+},
+{
+"id": "r3-p26",
+"text": "Cement and steel plants are among the most intractable sources of greenhouse gases. [A] Even if they ran entirely on renewable electricity, making cement would still release carbon dioxide, because the chemical reaction that converts limestone into clinker emits the gas directly. [B] One proposed remedy is carbon capture. Chemical solvents absorb carbon dioxide from a plant's exhaust before it escapes into the atmosphere. The gas is then compressed and transported for permanent storage deep underground. [C] In 2025 a cement plant in Brevik, Norway, began capturing part of its emissions and shipping them to be stored beneath the North Sea. [D] Yet the equipment is expensive, consumes a substantial amount of energy, and typically captures only a portion of a plant's emissions. Critics therefore warn that it must not become a pretext for delaying other cuts."
+},
+{
+"id": "r3-p27",
+"text": "In the early hours of March 26, 2024, a large container ship leaving the port of Baltimore lost electrical power and drifted into a support pier of the Francis Scott Key Bridge. Within seconds, much of the 2.6-kilometer bridge collapsed into the river. Six members of a road maintenance crew working on the bridge were killed. The toll could have been far higher. Moments before the impact, the ship's crew sent a distress call, and police halted traffic onto the bridge. The disaster prompted engineers to scrutinize older bridges, many of which were designed decades ago, when cargo vessels were far smaller, and to ask whether their piers are adequately shielded against collisions."
+},
+{
+"id": "r3-p28",
+"text": "In 1965 Stephanie Kwolek, a chemist at the DuPont company, was searching for a lightweight fiber that could reinforce car tires. One of her experimental solutions turned out cloudy and thin, unlike the thick, clear liquids that usually yielded useful fibers. The technician in charge of the spinning machine was reluctant to test it. Kwolek persuaded him to spin it anyway. The resulting fiber proved, weight for weight, about five times stronger than steel. Marketed as Kevlar from the 1970s, it is now used in bulletproof vests, helmets, ropes, and protective gloves. Her story is often cited as evidence that a disappointing result can merit a second look."
+},
+{
+"id": "r3-p29",
+"text": "In studies conducted in the 1940s and again in the 1970s, psychologists showed chess positions to players of varying skill for just a few seconds. They then asked the players to reconstruct the boards from memory. Masters reproduced positions from real games with astonishing accuracy, placing most pieces correctly, while beginners recalled only a handful. When the pieces were scattered at random, however, the masters' advantage almost vanished. The researchers concluded that experts do not possess extraordinary memories in general. Rather, years of play have stored thousands of familiar configurations in their minds, allowing them to perceive a board as a few meaningful chunks instead of two dozen separate pieces."
+},
+{
+"id": "r3-p30",
+"text": "Some species of bamboo behave in a way that has long baffled botanists. For decades, sometimes for more than a century, the plants grow and spread without producing a single flower. Then, across an entire region, every plant of the species blooms at almost the same moment, sets seed, and dies. One explanation is that this synchronized flowering ____. The sudden flood of seeds is far more than rats, birds, and other seed-eaters can consume, so enough survive to sprout. Such mass flowering can, however, spark explosions in rat populations, which then devastate nearby crops."
+},
+{
+"id": "r3-p31",
+"text": "The Greek philosopher Heraclitus, who lived around 500 BCE, left behind only scattered fragments, many of them obscure. The most famous is usually paraphrased as follows: <u>no one ever steps into the same river twice</u>. The water that touched a swimmer's feet yesterday has long since flowed out to sea, and the swimmer, too, has aged and changed in countless small ways. For Heraclitus, the river was a symbol of the whole universe, in which everything is in constant change and stability is merely an appearance. Later thinkers, including Plato, found the idea unsettling, since it seemed to cast doubt on the possibility of lasting knowledge."
+},
+{
+"id": "r3-p32",
+"text": "On March 27, 1977, two jumbo jets collided on a fog-covered runway on the island of Tenerife, killing 583 people in the deadliest accident in aviation history. Investigators found that misunderstandings in radio communication had played a central role. One crew believed it had been cleared for takeoff when it had not. In addition, an ambiguous phrase from the cockpit was misinterpreted by the control tower. In the decades that followed, aviation authorities standardized the wording pilots and controllers use, and the International Civil Aviation Organization later required those on international routes to demonstrate proficiency in English. The goal was not eloquence but clarity, leaving as little room as possible for a fatal misunderstanding. In this sense, a single foggy afternoon reshaped the language of the skies."
+},
+{
+"id": "r3-p33",
+"text": "When words migrate from one language to another, they rarely arrive unchanged. Korean, for example, has adopted the English word fighting as a cheer of encouragement, a sense it does not carry in English. Korean speakers also say hand phone for what Americans call a cell phone. Japanese has turned the English word mansion into a term for an ordinary apartment building. Such shifts are not blunders but adaptations. A borrowed word is reshaped to fill a gap in its new language, and it soon belongs to the borrowers rather than to the lenders. Linguists therefore treat loanwords as genuinely new words, with histories of their own."
+},
+{
+"id": "r3-s1",
+"text": "A digital twin is a virtual replica of a physical object or system, continuously updated with data from sensors on its real-world counterpart. Engineers first applied the idea to complex machines such as jet engines, whose twins can flag signs of wear before a component fails. The concept has since expanded to entire factories and even cities. Singapore, for instance, has built a detailed three-dimensional model of the whole city-state that planners use to simulate how a new building might alter wind flow or sunlight in the surrounding streets. A twin is only as accurate as the data feeding it, and keeping that data current can be a daunting task. Still, the appeal is obvious: testing a change on a digital copy is far cheaper and safer than ____."
+},
+{
+"id": "r3-s2",
+"text": "Since the Concorde was retired in 2003, no passenger airliner has flown faster than sound. In January 2025, a small experimental jet built by the American startup Boom Supersonic broke the sound barrier over the California desert. The company hailed it as the first time an independently developed jet had done so. The firm hopes the test will pave the way for a larger airliner. Formidable obstacles remain, however. Supersonic flight burns far more fuel per passenger than ordinary flight, and the sonic booms it generates led many countries, including the United States, to <u>prohibit</u> such flights over land decades ago. Engineers are now exploring aircraft shapes that could soften the boom to a muffled thump."
+},
+{
+"id": "r3-s3",
+"text": "(A) In 1869 the Russian chemist Dmitri Mendeleev published a table that arranged the elements by atomic weight while grouping those with similar behavior in the same column. What set his work apart was its boldness. Where no known element fit, he left a gap, insisting that an undiscovered element belonged there, and he went further, predicting the weight, density, and chemical properties of the missing substances. Few chemists of the day would have risked their reputations on such specific claims.\n(B) By the 1860s chemists had identified about sixty elements, but no one had found a convincing way to organize them. Several scientists noticed that elements with similar properties seemed to recur at regular intervals when they were listed in order of atomic weight. Yet their schemes contained awkward exceptions, and their colleagues largely ignored or even ridiculed them. One English chemist who likened the pattern to the octaves of a musical scale was openly mocked at a scientific meeting.\n(C) Within two decades, three of the missing elements, now called gallium, scandium, and germanium, were discovered, and their properties closely matched his forecasts. These vindicated predictions won over skeptical chemists. The periodic table, which now hangs on the wall of nearly every science classroom, became the organizing framework of modern chemistry. It was later expanded to accommodate elements that Mendeleev himself never imagined."
+}
+],
+"q": [
+[
+1,
+1,
+"vocab",
+null,
+"Choose the option closest in meaning to the underlined part.\nDespite weeks of complaints from shop owners, the mayor remained <u>adamant</u> that the new bus lanes on the main street would stay.",
+[
+"apprehensive",
+"complacent",
+"astute",
+"resolute"
+],
+[
+4
+],
+"adamant 는 '단호한, 꿈쩍도 않는'이라 resolute(굳게 결심한)와 가까워요. 몇 주 동안 불평이 이어져도 버스 차로를 그대로 둔다고 했다는 문맥이 단서예요. apprehensive(걱정하는)·complacent(안주하는)·astute(기민한)는 문장에 넣으면 말은 되지만 '물러서지 않는다'는 뜻이 아니에요."
+],
+[
+2,
+1,
+"vocab",
+null,
+"Choose the option closest in meaning to the underlined part.\nThe link between the popular diet and a longer life is <u>tenuous</u> at best, resting on a single small survey of volunteers.",
+[
+"controversial",
+"conspicuous",
+"fragile",
+"versatile"
+],
+[
+3
+],
+"tenuous 는 '(근거·관계가) 빈약한, 약한'이라 fragile(무너지기 쉬운)과 가까워요. 자원자 몇 명을 조사한 작은 설문 하나에 기대고 있다는 뒤 내용이 단서예요. controversial(논란이 많은)·conspicuous(눈에 띄는)는 연관성을 꾸밀 수는 있어도 '약하다'는 뜻이 없고, versatile(다재다능한)은 상관없어요."
+],
+[
+3,
+1,
+"vocab",
+null,
+"Choose the option closest in meaning to the underlined part.\nShareholders criticized the board for its <u>lavish</u> spending on a three-day retreat at a luxury resort while factory wages remained frozen.",
+[
+"intricate",
+"extravagant",
+"secretive",
+"impulsive"
+],
+[
+2
+],
+"lavish 는 '(돈을) 아낌없이 쓰는, 호화로운'이라 extravagant(사치스러운)와 가까워요. 공장 임금은 묶어 두고 고급 휴양지 행사에 돈을 썼다는 대비가 단서예요. intricate(복잡한)·secretive(비밀스러운)·impulsive(충동적인)도 spending 을 꾸밀 수는 있지만 '호화롭게 많이 쓴'이라는 뜻은 아니에요."
+],
+[
+4,
+1,
+"vocab",
+null,
+"Choose the option closest in meaning to the underlined part.\nSome apps let users <u>circumvent</u> regional restrictions on video services by routing their traffic through servers in other countries.",
+[
+"dodge",
+"detect",
+"disclose",
+"highlight"
+],
+[
+1
+],
+"circumvent 는 '(규제·장애를) 피해 가다'라 dodge(교묘히 피하다)와 가까워요. 다른 나라 서버를 거쳐 지역 제한을 비켜 간다는 문맥이에요. detect(알아내다)·disclose(밝히다)·highlight(강조하다)는 restrictions 와 어울려도 '피해 간다'는 뜻이 아니에요."
+],
+[
+5,
+1,
+"vocab",
+null,
+"Choose the option closest in meaning to the underlined part.\nBecause of the heavy snowfall, the city council decided to <u>put off</u> its vote on the stadium plan until the following month.",
+[
+"approve",
+"defer",
+"rescind",
+"remove"
+],
+[
+2
+],
+"put off 는 '미루다, 연기하다'라 defer 와 같아요. 투표를 다음 달까지 미뤘다는 until 이 단서예요. remove(벗다, 치우다)는 put off 를 글자 그대로 읽은 뜻이고, approve(승인하다)·rescind(철회하다)는 투표를 미루는 것과 달라요."
+],
+[
+6,
+1,
+"vocab",
+null,
+"Choose the word that best fills in the blank.\nHeavy fines alone are a surprisingly weak ____ against speeding; drivers slow down far more reliably when they believe they are likely to be caught.",
+[
+"merit",
+"anomaly",
+"deterrent",
+"catalyst"
+],
+[
+3
+],
+"against speeding(과속을 막는) 앞에 오려면 '억제책(deterrent)'이어야 해요. 벌금보다 단속될 거라는 믿음이 더 잘 막는다는 뒤 내용과도 맞아요. merit(장점)·anomaly(예외)·catalyst(촉매)는 against 와 어울리지 않아요."
+],
+[
+7,
+1,
+"vocab",
+null,
+"Choose the word that best fills in the blank.\nAs young people left for jobs in the cities, the village's population continued to ____, and its last elementary school closed in 2019.",
+[
+"diversify",
+"accumulate",
+"rebound",
+"decline"
+],
+[
+4
+],
+"젊은 사람들이 떠나고 마지막 학교가 문을 닫았으니 인구가 '줄어들었다(decline)'가 맞아요. diversify(다양해지다)·accumulate(쌓이다)는 인구를 말할 수는 있어도 학교가 닫은 까닭이 되지 않고, rebound(되살아나다)는 반대예요."
+],
+[
+8,
+1,
+"vocab",
+null,
+"Choose the word that best fills in the blank.\nBright orange vests make road workers ____ to approaching drivers, even in thick fog or at dusk.",
+[
+"conspicuous",
+"oblivious",
+"susceptible",
+"hostile"
+],
+[
+1
+],
+"밝은 주황색 조끼는 안개나 해 질 녘에도 운전자 눈에 '잘 띄게(conspicuous)' 해 줘요. oblivious(알아차리지 못하는)는 일꾼이 운전자를 못 본다는 뜻이 되어 조끼의 목적과 반대예요."
+],
+[
+9,
+1,
+"grammar",
+null,
+"Choose the option that makes the sentence grammatically correct.\n____ surprised the engineers most about the new alloy was not its strength but how cheaply it could be produced in conventional factories.",
+[
+"That",
+"Which",
+"It",
+"What"
+],
+[
+4
+],
+"빈칸부터 alloy 까지가 문장 전체의 주어이고 동사는 was 예요. '~한 것'이라는 명사절을 이끌면서 절 안에서 주어 구실까지 하는 말은 관계대명사 What 뿐이에요. That·Which 는 앞에 선행사가 없어 쓸 수 없고, It 을 넣으면 동사가 둘이 돼요."
+],
+[
+10,
+1,
+"grammar",
+null,
+"Choose the option that makes the sentence grammatically correct.\nWhen ____ to direct sunlight for several summers, the plastic used in inexpensive garden chairs gradually becomes brittle and loses its color.",
+[
+"exposing",
+"exposed",
+"it exposes",
+"having exposed"
+],
+[
+2
+],
+"주절의 주어 the plastic 이 햇빛에 '노출되는' 쪽이라 수동의 과거분사가 필요해요. When exposed 는 When it is exposed 에서 주어와 be동사를 뺀 분사구문이에요. exposing·having exposed 는 능동이고, it exposes 도 능동이라 뜻이 맞지 않아요."
+],
+[
+11,
+1,
+"grammar",
+null,
+"Choose the option that makes the sentence grammatically correct.\nThanks to a new chemistry, the latest battery for electric buses stores ____ the model it replaced, yet it weighs about the same.",
+[
+"three times as much energy as",
+"as three times much energy as",
+"three times as energy much as",
+"as much as three times energy"
+],
+[
+1
+],
+"배수 비교는 '배수 + as much + 명사 + as' 어순이에요. 그래서 three times as much energy as 가 맞아요. 배수(three times)는 첫 as 앞에 오고, much 는 명사 energy 바로 앞에 붙어요."
+],
+[
+12,
+1,
+"grammar",
+null,
+"Choose the option that makes the sentence grammatically correct.\nThe stone bridge at the edge of the village ____ in the twelfth century, although no written record of its construction has ever been unearthed.",
+[
+"is believed to have been built",
+"is believed to been have built",
+"is to believed have been built",
+"have been believed is to built"
+],
+[
+1
+],
+"다리는 사람들이 '그렇게 믿는' 대상이라 is believed 이고, 지어진 때(12세기)가 믿는 지금보다 앞서므로 완료 부정사 to have been built 를 써요. 같은 낱말을 다른 순서로 놓은 나머지는 to 뒤에 have 가 바로 오지 않거나 be동사 자리가 어긋나 문장이 되지 않아요."
+],
+[
+13,
+1,
+"grammar",
+null,
+"Choose the option that makes the sentence grammatically correct.\nThe safety inspector did not approve the new scaffolding, nor ____ to explain to the site manager what was wrong with it.",
+[
+"she did bother",
+"bother did she",
+"did she bother",
+"did bother she"
+],
+[
+3
+],
+"부정어 nor 가 절 앞에 오면 조동사가 주어 앞으로 나와요(도치). 일반동사 과거라 did 를 앞으로 내 nor did she bother 가 돼요. she did bother 는 도치가 안 됐고, bother did she·did bother she 는 동사원형이 주어보다 앞에 와 어순이 틀려요."
+],
+[
+14,
+1,
+"grammar",
+null,
+"Choose the option that makes the sentence grammatically correct.\nMany visitors to the rainforest hope to see a jaguar. In reality, ____ tourists ever catch sight of one. The animals are shy, they hunt mainly at night, and their spotted coats blend almost seamlessly into the shadows of the forest floor. Most visitors go home with photographs of footprints instead — a sign of good luck, guides insist.",
+[
+"little",
+"few",
+"a little",
+"much"
+],
+[
+2
+],
+"tourists 는 셀 수 있는 복수 명사라 few 가 붙어요. '거의 없다'는 부정의 뜻이라 In reality(실제로는)와 이어지고, 발자국 사진만 들고 간다는 뒤 내용과도 맞아요. little·a little·much 는 셀 수 없는 명사에 써요."
+],
+[
+15,
+1,
+"grammar",
+null,
+"Choose the underlined part that is NOT grammatically correct.\nThe world's first traffic signal ①<u>was installed</u> outside the Houses of Parliament in London in December 1868. Designed by a railway engineer, it used two movable arms by day and a gas lamp at night, ②<u>which</u> showed red or green to approaching carriages. A police officer had to turn a lever by hand to change the signal. Only a few weeks later, a gas leak caused the lamp to explode, and the officer ③<u>operating</u> it was badly injured. The idea was abandoned for decades. Electric signals arrived only in the early twentieth century, when the number of motor cars on city streets ④<u>were</u> rising rapidly.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"the number of + 복수 명사는 '~의 수'라 단수로 받아요. 주어의 중심이 number 이니 were 가 아니라 was 가 맞아요. which 는 a gas lamp 를 받는 관계대명사이고, operating 은 the officer 를 꾸미는 현재분사라 맞아요."
+],
+[
+16,
+1,
+"grammar",
+null,
+"Choose the underlined part that is NOT grammatically correct.\nBefore 1816, a doctor who wanted to listen to a patient's heart ①<u>had to</u> press an ear directly against the chest. That year, the French physician René Laennec, ②<u>embarrassing</u> by the prospect of doing so with a young female patient, rolled a sheet of paper into a tight tube and placed one end on her chest. To his surprise, the heartbeat ③<u>was</u> louder and clearer than he had ever heard it. He went on to build a wooden version of the device, ④<u>which</u> he named the stethoscope, from Greek words meaning chest and to examine.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+2
+],
+"라에네크는 그 상황 때문에 '당황한' 사람이라 수동의 과거분사 embarrassed 가 맞아요. embarrassing 은 '당황하게 만드는'이라 사람이 주어일 때 뜻이 뒤집혀요. which 는 the device 를 받는 목적격 관계대명사라 맞아요."
+],
+[
+17,
+1,
+"logic",
+null,
+"Choose the option that best completes the passage.\nEngineers often discover that nature has already solved their problems. When Japan's bullet trains raced out of tunnels, they pushed a wave of air ahead of them that burst into a loud boom, disturbing nearby residents. One engineer, a keen birdwatcher, recalled that the kingfisher dives from air into water with barely a splash. A redesigned nose modeled on the bird's long, narrow beak proved quieter and used less electricity. Such cases suggest that the living world is a ____ source of ideas for designers.",
+[
+"negligible",
+"spurious",
+"fertile",
+"inert"
+],
+[
+3
+],
+"물총새 부리를 본떠 소음과 전기를 함께 줄인 예는 자연이 아이디어를 '풍부하게 주는(fertile)' 원천이라는 근거예요. negligible(하찮은)·spurious(가짜의)·inert(활기 없는)는 예와 반대 평가예요."
+],
+[
+18,
+1,
+"logic",
+null,
+"Choose the option that best completes the passage.\nDuring the pandemic, many carmakers discovered how precarious their supply chains were. Because they bought computer chips from only a handful of suppliers, a single factory shutdown could halt assembly lines on the other side of the world. Since then, many firms have spread their orders across several suppliers in different countries, even when doing so costs more. Their new strategy can be summed up by an old saying: ____.",
+[
+"don't put all your eggs in one basket",
+"strike while the iron is hot",
+"too many cooks spoil the broth",
+"you can't have your cake and eat it too"
+],
+[
+1
+],
+"공급처 한두 곳에 몰았다가 크게 당하고, 이제 비용이 들어도 여러 나라로 나눠 주문한다는 글이에요. '달걀을 한 바구니에 담지 마라(don't put all your eggs in one basket)'가 맞아요. 쇠는 달았을 때 두드려라·사공이 많으면 배가 산으로 간다는 내용과 맞지 않아요."
+],
+[
+19,
+1,
+"logic",
+null,
+"Choose the option that best completes the passage.\nAfter losing an arm, many patients continue to feel the missing limb, and some suffer painful cramps in a hand that is no longer there. In the 1990s, the neuroscientist V. S. Ramachandran tried a simple remedy. Patients placed their remaining hand beside a mirror so that its reflection appeared where the missing hand should be. When they moved the healthy hand while watching the reflection, the brain seemed to accept that the lost hand was moving too, and in many cases the cramping ____.",
+[
+"proliferated",
+"subsided",
+"intensified",
+"recurred"
+],
+[
+2
+],
+"간단한 '치료법(remedy)'을 써 봤더니 뇌가 잃은 손도 움직인다고 받아들였다는 흐름이라, 경련이 '가라앉았다(subsided)'가 맞아요. intensified(심해졌다)·recurred(다시 났다)는 치료가 실패했다는 뜻이 돼요."
+],
+[
+20,
+1,
+"logic",
+null,
+"Choose the pair that best fills in blanks (A) and (B).\nOnline reviews have changed the way people shop, allowing them to learn from the experiences of thousands of strangers. (A) ____, these ratings are less informative than they appear. Customers who are delighted or furious are far more likely to write a review than those whose experience was merely adequate. As a result, scores tend to cluster at the extremes. (B) ____, some sellers pay for fake reviews, further distorting the picture that shoppers rely on.",
+[
+"(A) However — (B) Moreover",
+"(A) Therefore — (B) Moreover",
+"(A) However — (B) Nevertheless",
+"(A) For instance — (B) In contrast"
+],
+[
+1
+],
+"(A) 앞은 후기의 좋은 점, 뒤는 생각보다 쓸모가 덜하다는 반대 내용이라 However 예요. (B) 점수가 양 끝에 몰린다는 문제에 가짜 후기라는 문제를 하나 더 보태니 Moreover 가 맞아요."
+],
+[
+21,
+1,
+"logic",
+null,
+"Choose the option that best completes the passage.\nA single candle is easy to notice in a dark room, yet the same candle lit in a bright office goes almost unseen. In the nineteenth century, the German scientists Ernst Weber and Gustav Fechner investigated this paradox and concluded that our senses do not register changes in absolute terms. Instead, we perceive ____. Adding one kilogram to a two-kilogram load is obvious; adding the same kilogram to a fifty-kilogram load is barely noticeable.",
+[
+"every change of the same size equally well",
+"changes only when we expect them",
+"light more accurately than weight",
+"a change in proportion to what is already there"
+],
+[
+4
+],
+"같은 촛불·같은 1kg 이라도 원래 있던 양이 많으면 잘 못 느낀다는 예예요. 변화를 '이미 있는 양에 비례해서' 느낀다는 말이 들어가야 해요. 같은 크기면 똑같이 느낀다는 보기는 앞 문장(not in absolute terms)과 정반대예요."
+],
+[
+22,
+1,
+"logic",
+null,
+"Choose the option that best completes the passage.\nWeight for weight, spider silk is stronger than steel and far more elastic than nylon. That makes it attractive for products ranging from surgical thread to light body armor. Yet no one has managed to farm spiders the way people farm silkworms. The obstacle is behavioral: many spiders are ____ creatures, and when they are kept together in large numbers, they tend to fight and even eat one another. Researchers have therefore inserted silk genes into bacteria and yeast in hopes of producing the fiber without the spiders.",
+[
+"territorial",
+"gregarious",
+"placid",
+"docile"
+],
+[
+1
+],
+"모아 두면 서로 싸우고 잡아먹기까지 한다는 뒤 설명이니 '제 영역을 지키려 드는(territorial)' 동물이에요. gregarious(무리 짓기 좋아하는)·placid(온순한)·docile(유순한)은 모두 정반대 성질이에요."
+],
+[
+23,
+1,
+"logic",
+null,
+"Choose the option that best completes the passage.\nDeep in the Antarctic ice sheet lie layers of snow that fell hundreds of thousands of years ago. As each layer was buried and compressed, it trapped tiny bubbles of the air of its time. By drilling out long cylinders of ice and analyzing these bubbles, scientists have reconstructed the composition of the atmosphere going back about 800,000 years. In this sense, the ice sheet serves as ____.",
+[
+"a natural barrier against rising sea levels",
+"a reliable source of fresh water for research stations",
+"a frozen archive of the planet's past",
+"proof that the climate never changes"
+],
+[
+3
+],
+"층마다 그때의 공기를 가둬 두어 80만 년 전 대기까지 되짚을 수 있다는 글이라 '지구 과거를 담은 얼어붙은 기록 보관소'가 맞아요. 해수면·식수 이야기는 글에 없고, 기후가 변하지 않는다는 증거라는 말도 근거가 없어요."
+],
+[
+24,
+1,
+"logic",
+null,
+"Choose the option that best completes the passage.\nIn 1987 governments agreed in Montreal to phase out the chemicals that were thinning the ozone layer. Scientists now expect the layer over Antarctica to recover by about the 2060s. The treaty is often praised as a triumph of international goodwill, but its success also owed much to economics. Manufacturers had already developed substitutes that were cheap to produce, so the ban proved far less ____ for industry than many had feared; that is, complying cost manufacturers relatively little.",
+[
+"lucrative",
+"conspicuous",
+"transparent",
+"onerous"
+],
+[
+4
+],
+"값싼 대체 물질이 이미 있었으니 금지가 산업계에 우려보다 훨씬 덜 '부담스러웠다(onerous)'는 흐름이에요. lucrative(돈벌이가 되는)는 '두려워했다(feared)'와 어울리지 않고, conspicuous·transparent 는 비용 이야기와 상관없어요."
+],
+[
+25,
+1,
+"logic",
+null,
+"Choose the option that best completes the passage.\nOn hot summer days, steel and concrete expand, and in cold weather they contract. A long bridge built as a single rigid piece would fracture under these repeated fluctuations. Engineers therefore leave small gaps, called expansion joints, at intervals along the deck. The metal teeth that rattle under a car's tires as it crosses a bridge are not a sign of poor construction; rather, they ____.",
+[
+"show that the bridge is about to collapse",
+"were added to slow down passing traffic",
+"allow the structure to move without breaking",
+"stop the deck from expanding at all"
+],
+[
+3
+],
+"온도에 따라 늘고 줄어드는 다리가 깨지지 않도록 일부러 틈을 둔다고 했어요. 쇠 이빨은 구조물이 '부서지지 않고 움직이게 해 준다'가 맞아요. 아예 늘어나지 못하게 막는다는 보기는 틈을 두는 까닭과 반대예요."
+],
+[
+26,
+1,
+"reading",
+"r1-p26",
+"Where would the following sentence best fit in the passage?\nCritics also note that their batteries often last only a few hours, far short of a full shift.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]"
+],
+[
+4
+],
+"주어진 문장은 Critics also note(비판자들은 ~도 지적한다)로 시작해 앞에 약점이 먼저 나와야 해요. 사람보다 훨씬 느리다는 약점 뒤, 만드는 회사도 시험이 더 필요하다고 인정한다는 문장 앞인 [D] 가 맞아요. [C] 앞은 장점 이야기라 also 로 이을 수 없어요."
+],
+[
+27,
+1,
+"reading",
+"r1-p27",
+"According to the passage, why are battery fires difficult to put out?",
+[
+"Water reacts with lithium and causes explosions in the garage.",
+"Electric cars are usually parked far from fire hydrants.",
+"The battery keeps heating itself as one cell sets off the next.",
+"Firefighters are not allowed to enter apartment garages."
+],
+[
+3
+],
+"글은 열 폭주(thermal runaway)를 들어, 한 셀이 과열되면 옆 셀을 연달아 달구고 물을 뿌려도 배터리가 스스로 열을 낸다고 했어요. 물이 리튬과 반응해 폭발한다는 말은 글에 없고, 소화전 거리, 진입 금지는 글에 없는 내용이에요."
+],
+[
+28,
+1,
+"reading",
+"r1-p28",
+"Which of the following is NOT true according to the passage?",
+[
+"Opening the sheet takes many separate steps.",
+"The sheet is creased into slightly slanted parallelograms.",
+"The pattern was tried out on equipment in space.",
+"The same folding method appears in some maps."
+],
+[
+1
+],
+"글은 마주 보는 두 모서리만 당기면 '한 번에(in one smooth motion)' 펼쳐진다고 했어요. 여러 단계를 거쳐야 한다는 문장이 글과 맞지 않아요. 비스듬한 평행사변형, 1995년 위성 시험, 접는 지도는 모두 글에 있어요."
+],
+[
+29,
+1,
+"reading",
+"r1-p29",
+"Which of the following can be inferred from the passage?",
+[
+"Unnoticed imitation can make encounters more pleasant.",
+"People usually notice at once when someone copies their gestures.",
+"Rubbing one's face is a common sign of dislike.",
+"The volunteers copied the researcher on purpose to seem polite."
+],
+[
+1
+],
+"흉내 낸 것을 거의 아무도 알아채지 못했는데도 따라 해 준 쪽과의 대화를 더 매끄럽고 상대를 더 호감 있게 느꼈다고 했어요. 모르는 사이의 따라 하기가 만남을 더 좋게 느끼게 한다고 추론할 수 있어요. 알아채지 못했다고 했으니 곧바로 알아챈다는 보기는 반대이고, 자원자들의 흉내는 의식하지 못한 것(without realizing it)이라 일부러 했다는 보기도 틀려요."
+],
+[
+30,
+1,
+"reading",
+"r1-p30",
+"Which of the following best fills in the blank?",
+[
+"follow the scent left on their outward path",
+"keep track of distance by counting their steps",
+"use rocks and plants as landmarks",
+"rely on the position of the moon at night"
+],
+[
+2
+],
+"보폭을 늘린 개미는 집을 지나치고, 줄인 개미는 못 미쳐 멈췄어요. 걸음 수로 거리를 잰다는 뜻이라 '걸음을 세어 거리를 잰다'가 맞아요. 갔던 길을 되짚지 않는다고 했으니 냄새 따라가기는 아니고, 모래가 밋밋하다(featureless)고 했으니 지형지물도 아니에요."
+],
+[
+31,
+1,
+"reading",
+"r1-p31",
+"Which of the following best explains the underlined part?",
+[
+"has fallen out of everyday use",
+"has changed its spelling completely",
+"has become far less menacing in meaning",
+"has grown more precise in meaning"
+],
+[
+3
+],
+"lost its edge 는 '날카로움을 잃었다'는 비유예요. 바로 뒤에 굳은 기한이라는 뜻은 남기고 죽음의 위협은 벗었다고 풀어 주니 '뜻이 훨씬 덜 무시무시해졌다'가 맞아요. 지금도 사무실에서 흔히 쓴다고 했으니 안 쓰이게 됐다는 보기는 틀려요."
+],
+[
+32,
+1,
+"reading",
+"r1-p32",
+"Why does the author mention the history of British lighthouses?",
+[
+"to argue that governments should stop building public works",
+"to explain how lighthouse technology developed over time",
+"to show that a standard textbook example did not match reality",
+"to praise the courage of early lighthouse keepers"
+],
+[
+3
+],
+"교과서는 등대를 정부만 지을 수 있는 공공재의 본보기로 들었는데, 코스는 영국 등대 상당수를 개인이 짓고 항구에서 요금을 받았다는 역사를 찾아냈어요. 교과서의 예가 실제와 달랐음을 보이려는 거예요. 정부가 필요 없다는 뜻은 아니라고 글이 직접 말해요."
+],
+[
+33,
+1,
+"reading",
+"r1-p33",
+"What is the main idea of the passage?",
+[
+"Children learn most when they are left to study entirely on their own.",
+"Tests should measure only what students can do without any help.",
+"Peer help is the dominant factor in nearly all children's learning.",
+"Teaching works best on tasks just beyond what learners can do alone."
+],
+[
+4
+],
+"비고츠키는 혼자 할 수 있는 일과 아직 못 하는 일 사이, 도움을 받으면 해내는 구역을 겨눌 때 가르침이 가장 잘 먹힌다고 했어요(마지막 문장). 혼자 공부하게 두라는 보기와 도움 없이 할 수 있는 것만 재라는 보기는 글과 반대이고, 친구의 도움이 거의 모든 배움을 좌우한다는 보기는 글을 부풀린 과장이에요."
+],
+[
+34,
+1,
+"reading",
+"r1-s1",
+"Which of the following best fills in the blank?",
+[
+"make the vaccine more effective",
+"protect the rest of the community",
+"eliminate the disease permanently",
+"ignite a chain of infections"
+],
+[
+4
+],
+"전염성이 매우 강해 주변의 면역 없는 사람 대부분에게 옮는다고 했고, 면역 비율이 95% 아래로 떨어진 곳이라는 조건이 붙어요. 그런 곳에서는 들어온 환자 한 명이 '감염의 사슬을 일으킬' 수 있다는 흐름이에요. 지역을 지켜 준다거나 병을 없앤다는 보기는 조건과 정반대예요."
+],
+[
+35,
+1,
+"reading",
+"r1-s1",
+"Which of the following is the best title for the passage?",
+[
+"A New Cure for Measles Discovered in Texas",
+"Why Measles Returned When Vaccination Slipped",
+"How Rural Schools Teach Science",
+"The History of Vaccines in Europe"
+],
+[
+2
+],
+"퇴치를 선언했던 홍역이 2025년 텍사스에서 크게 다시 번졌고, 면역 비율이 기준 아래로 떨어지면 다시 퍼진다는 글이라 'Why Measles Returned When Vaccination Slipped'가 맞아요. 새 치료제나 유럽의 백신 역사 이야기는 없어요."
+],
+[
+36,
+1,
+"reading",
+"r1-s2",
+"Which of the following is closest in meaning to the underlined word?",
+[
+"unnoticeably",
+"rapidly",
+"visibly",
+"intermittently"
+],
+[
+1
+],
+"imperceptibly 는 '알아차릴 수 없을 만큼 조금씩'이라 unnoticeably 와 가까워요. 땅속 빈 곳이 아무도 모르게 커지다가 어느 날 도로가 무너진다는 흐름이에요. visibly(눈에 띄게)는 반대이고, rapidly(빠르게)도 gradually 와 맞지 않아요."
+],
+[
+37,
+1,
+"reading",
+"r1-s2",
+"Which of the following is true according to the passage?",
+[
+"Most urban sinkholes are caused by natural caves.",
+"Radar cannot locate cavities before a road collapses.",
+"Nobody was hurt in the 2025 accident in Seoul.",
+"Leaking pipes can carry away the soil beneath roads."
+],
+[
+4
+],
+"낡은 상하수도관이 깨지면 새는 물이 포장 아래 흙을 쓸어 간다고 했어요. 도시 땅꺼짐은 자연 동굴 탓이 아니라고 했고, 레이더는 무너지기 전에 빈 곳을 찾을 수 있다고 했으며, 사고로 오토바이 운전자가 숨졌어요."
+],
+[
+38,
+1,
+"reading",
+"r1-s3",
+"Choose the most appropriate order of paragraphs (A), (B), and (C).",
+[
+"(A) – (C) – (B)",
+"(B) – (A) – (C)",
+"(C) – (A) – (B)",
+"(C) – (B) – (A)"
+],
+[
+3
+],
+"(C) 가 밧줄 하나에 매달린 위험한 승강기와 인기 없던 위층이라는 문제를 내놓고, (A) 가 a remedy 로 오티스의 안전장치와 시연을 소개해요. (B) 는 그 뒤 수십 년 사이 생긴 결과(높은 건물, 위층의 인기)라 맨 끝이에요."
+],
+[
+39,
+1,
+"reading",
+"r1-s3",
+"What is the main idea of the passage?",
+[
+"Elevators were first invented to help servants carry heavy goods.",
+"A safety brake made tall buildings practical and upper floors desirable.",
+"New York was the first city in the world to build skyscrapers.",
+"Elevators became the dominant feature of nearly every nineteenth-century city."
+],
+[
+2
+],
+"밧줄이 끊겨도 멈추는 장치 덕분에 높은 건물이 가능해지고 위층의 가치가 뒤집혔다는 글이에요. 엘리베이터가 거의 모든 19세기 도시를 지배했다는 말은 글에 없는 과장이고, 하인용 짐 운반이나 뉴욕 최초의 고층 건물 이야기도 없어요."
+],
+[
+40,
+1,
+"reading",
+"r1-s3",
+"According to the passage, what happened during Otis's demonstration?",
+[
+"The rope held, so the catch was never tested.",
+"The platform fell slightly before the catch stopped it.",
+"The platform crashed to the ground, but no one was hurt.",
+"Otis watched from below while an assistant rode the platform."
+],
+[
+2
+],
+"밧줄을 끊게 하자 발판이 몇 인치만 떨어지고 걸쇠가 꽉 붙들었다고 했어요. 밧줄은 실제로 끊었고, 오티스가 직접 발판에 타고 있었어요."
+],
+[
+1,
+2,
+"vocab",
+null,
+"Choose the option closest in meaning to the underlined part.\nNegotiations collapsed after the union remained <u>intransigent</u>, rejecting any settlement that did not restore the previous pay scale in full.",
+[
+"anxious",
+"hesitant",
+"consistent",
+"rigid"
+],
+[
+4
+],
+"intransigent 는 '타협하지 않는, 고집스러운'이라 rigid(완고한)와 가까워요. 옛 임금표를 다 되돌리지 않으면 어떤 합의도 거부했다는 뒤 내용이 단서예요. anxious(불안한)·hesitant(망설이는)·consistent(한결같은)는 노조를 꾸밀 수는 있지만 '어떤 합의도 거부한다'는 태도를 뜻하지 않아요."
+],
+[
+2,
+2,
+"vocab",
+null,
+"Choose the option closest in meaning to the underlined part.\nThe study's most <u>salient</u> finding was that nearly half of the city's bicycle collisions occurred at just twelve intersections.",
+[
+"provisional",
+"prominent",
+"controversial",
+"accessible"
+],
+[
+2
+],
+"salient 는 '가장 두드러진, 핵심적인'이라 prominent 와 가까워요. 사고 절반이 교차로 열두 곳에 몰렸다는 눈에 띄는 결과를 가리켜요. provisional(임시의)·controversial(논란이 많은)·accessible(접근하기 쉬운)도 finding 을 꾸밀 수 있지만 '두드러진'이라는 뜻은 아니에요."
+],
+[
+3,
+2,
+"vocab",
+null,
+"Choose the option closest in meaning to the underlined part.\nVolcanologists warned that a major eruption was <u>imminent</u> and urged residents of the surrounding villages to evacuate at once.",
+[
+"sporadic",
+"forthcoming",
+"hypothetical",
+"premature"
+],
+[
+2
+],
+"imminent 는 '곧 닥칠, 임박한'이라 forthcoming(곧 다가올)과 가까워요. 주민들에게 당장(at once) 대피하라고 했다는 내용이 단서예요. hypothetical(가정의)은 실제로 일어날지 모른다는 뜻이라 at once 와 어울리지 않고, sporadic(산발적인)·premature(너무 이른)도 달라요."
+],
+[
+4,
+2,
+"vocab",
+null,
+"Choose the option closest in meaning to the underlined part.\nSeveral European municipalities have decided to <u>do away with</u> paper parking tickets and now require drivers to pay through a mobile app.",
+[
+"accomplish",
+"subsidize",
+"abolish",
+"simplify"
+],
+[
+3
+],
+"do away with 는 '없애다, 폐지하다'라 abolish 와 같아요. 종이 주차권 대신 이제 앱으로 내게 한다는 뒤 내용이 단서예요. accomplish(해내다)는 do 를 글자 그대로 읽은 뜻이고, subsidize(보조금을 대다)·simplify(단순하게 하다)는 주차권을 남겨 둔다는 뜻이라 달라요."
+],
+[
+5,
+2,
+"vocab",
+null,
+"Choose the option closest in meaning to the underlined part.\nIn a <u>candid</u> interview after the final, the coach conceded that his own tactical blunders had cost the team the championship.",
+[
+"straightforward",
+"lengthy",
+"exclusive",
+"spontaneous"
+],
+[
+1
+],
+"candid 는 '솔직한, 숨김없는'이라 straightforward(솔직한)와 가까워요. 자기 전술 실수 탓에 우승을 놓쳤다고 인정했다는 내용이 단서예요. lengthy(긴)·exclusive(단독의)·spontaneous(즉석의)도 interview 를 꾸밀 수 있지만 '솔직한'이라는 뜻은 아니에요."
+],
+[
+6,
+2,
+"vocab",
+null,
+"Choose the word that best fills in the blank.\nFor many couriers, the smartphone has become ____: it navigates them to each address, logs every delivery, and receives new orders throughout the day.",
+[
+"innovative",
+"indispensable",
+"extravagant",
+"static"
+],
+[
+2
+],
+"길 안내, 배송 기록, 새 주문 받기까지 하루 종일 휴대폰에 기댄다는 설명이니 '없어서는 안 될(indispensable)'이 맞아요. innovative(혁신적인)는 휴대폰 자체의 성질이지 쌍점 뒤 설명과 이어지지 않고, extravagant(사치스러운)·static(정지된)도 맞지 않아요."
+],
+[
+7,
+2,
+"vocab",
+null,
+"Choose the word that best fills in the blank.\nThe city planted thousands of trees along its busiest boulevards in the hope that their shade would help ____ the summer heat trapped between tall buildings.",
+[
+"alleviate",
+"simulate",
+"circulate",
+"forfeit"
+],
+[
+1
+],
+"나무 그늘이 빌딩 사이에 갇힌 더위를 '누그러뜨리기(alleviate)'를 바란다는 흐름이에요. simulate(흉내 내다)·circulate(돌게 하다)·forfeit(잃다)는 그늘이 더위에 하는 일로 맞지 않아요."
+],
+[
+8,
+2,
+"vocab",
+null,
+"Choose the word that best fills in the blank.\nEngineers praised the ____ design of the folding bicycle, which collapses to the size of a briefcase in under ten seconds.",
+[
+"ingenious",
+"ingenuous",
+"indigenous",
+"indulgent"
+],
+[
+1
+],
+"10초 안에 서류 가방 크기로 접히는 자전거라 '기발한, 재치 있는(ingenious)' 설계예요. 철자가 비슷한 ingenuous(순진한), indigenous(토착의), indulgent(너그러운)는 뜻이 전혀 달라요."
+],
+[
+9,
+2,
+"grammar",
+null,
+"Choose the option that makes the sentence grammatically correct.\nThe workshop ____ the town's first bicycles were assembled now houses a modest museum that is open to visitors on weekends.",
+[
+"which",
+"where in",
+"in which",
+"in that"
+],
+[
+3
+],
+"빈칸 뒤 절(the town's first bicycles were assembled)은 빠진 성분 없이 완전해요. 그래서 '그 작업장에서'라는 뜻의 전치사 + 관계대명사 in which 가 필요해요. which 만 쓰면 뒤 절이 불완전해야 하고, that 앞에는 전치사를 둘 수 없어요."
+],
+[
+10,
+2,
+"grammar",
+null,
+"Choose the option that makes the sentence grammatically correct.\nThe leak ____ much earlier if the sensors in the tunnel had been inspected as frequently as the safety manual stipulated.",
+[
+"could been have detected",
+"have could been detected",
+"could have detected been",
+"could have been detected"
+],
+[
+4
+],
+"if 절이 had been inspected(가정법 과거완료)라 주절은 조동사 + have p.p. 여야 하고, 누수는 '발견되는' 쪽이라 수동 could have been detected 예요. 같은 낱말을 다른 순서로 놓은 나머지는 조동사 뒤에 have 가 바로 오지 않거나 been 이 뒤로 밀려 문장이 되지 않아요."
+],
+[
+11,
+2,
+"grammar",
+null,
+"Choose the option that makes the sentence grammatically correct.\nWithout an up-to-date satellite signal, a navigation app is ____ a paper map of the wrong city.",
+[
+"no useful more than",
+"more useful no than",
+"no more useful than",
+"no more than useful"
+],
+[
+3
+],
+"'A 는 B 와 마찬가지로 쓸모없다'는 no more + 원급 + than 꼴이에요. 같은 낱말이라도 more 는 useful 바로 앞, than 은 비교 대상 바로 앞에 와야 해서 나머지 어순은 틀려요."
+],
+[
+12,
+2,
+"grammar",
+null,
+"Choose the option that makes the sentence grammatically correct.\nThe residents' association objected to ____ the dilapidated playground before a new one had been built nearby.",
+[
+"the city demolishes",
+"the city demolished",
+"the city's demolishing",
+"the city to demolish"
+],
+[
+3
+],
+"object to 의 to 는 전치사라 뒤에 동명사가 와요. 동명사의 행위자(의미상 주어)는 소유격 the city's 로 나타내요. 절(the city demolishes)이나 to부정사는 전치사 to 뒤에 올 수 없어요."
+],
+[
+13,
+2,
+"grammar",
+null,
+"Choose the option that makes the sentence grammatically correct.\nAmong the artifacts salvaged from the shipwreck ____ a brass compass and two letters that were still partly legible.",
+[
+"was",
+"were",
+"being",
+"to be"
+],
+[
+2
+],
+"장소 부사구 Among ~ shipwreck 가 앞으로 나와 동사와 주어가 뒤바뀐 문장이에요. 진짜 주어는 a brass compass and two letters 로 복수라 were 가 맞아요. being·to be 로는 문장의 동사가 생기지 않아요."
+],
+[
+14,
+2,
+"grammar",
+null,
+"Choose the option that makes the sentence grammatically correct.\nThe small telephone museum in the old post office displays forty early handsets, ____ were manufactured before 1900. Visitors may pick up the receivers and listen to recordings of operators connecting calls by hand, and on the first Saturday of each month a retired engineer explains how the switchboard worked.",
+[
+"which most of",
+"most which of",
+"of most which",
+"most of which"
+],
+[
+4
+],
+"쉼표 뒤에 동사 were 가 바로 오니 앞 문장과 이어 주는 관계대명사가 필요하고, 부분 표현은 '수량사 + of which' 순서예요. 같은 낱말을 다른 순서로 놓은 나머지는 이 꼴이 깨져 문장이 되지 않아요."
+],
+[
+15,
+2,
+"grammar",
+null,
+"Choose the underlined part that is NOT grammatically correct.\nThe zipper took decades to become a ubiquitous object. An early version, ①<u>patented</u> in the United States in 1893, was intended for fastening shoes, but it jammed so often that few people bought it. Twenty years later, the engineer Gideon Sundback ②<u>was developed</u> a far more dependable design with rows of interlocking teeth. Even then, the device remained a curiosity until a rubber company began using it on boots in the 1920s and gave it the catchy name ③<u>that</u> stuck. Clothing makers were slow to adopt it, ④<u>worrying</u> that it would spoil the elegance of fine garments.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+2
+],
+"선드백은 설계를 '개발한' 사람이고 뒤에 목적어 a far more dependable design 이 있어요. 그러니 수동 was developed 가 아니라 능동 developed 여야 해요. patented 는 an early version 을 꾸미는 과거분사, worrying 은 분사구문이라 맞아요."
+],
+[
+16,
+2,
+"grammar",
+null,
+"Choose the underlined part that is NOT grammatically correct.\nSalt lowers the temperature ①<u>at which</u> water freezes. When it is spread on an icy road, it dissolves into the thin film of liquid water ②<u>that</u> coats the surface of the ice, and the resulting brine melts more ice around it. Salt becomes far less effective, however, when temperatures ③<u>plunge</u> well below freezing, ④<u>what</u> is why some cities switch to calcium chloride during the harshest weeks. Road salt also carries hidden costs: it corrodes vehicles and bridges and can damage the vegetation and streams beside the road.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"쉼표 뒤에서 앞 절 전체를 받아 '그것이 ~하는 이유다'라고 할 때는 which is why 를 써요. what 은 선행사를 품은 관계대명사라 앞 절을 받을 수 없어요. at which(그 온도에서)와 that(the thin film 을 꾸미는 관계대명사)은 맞아요."
+],
+[
+17,
+2,
+"logic",
+null,
+"Choose the option that best completes the passage.\nIn many Japanese factories, workers are encouraged to propose small improvements to their daily routines: moving a tool closer to where it is used, shortening a walking route, or adding a simple guide that makes a common mistake impossible. This practice, known as kaizen, rests on the conviction that progress need not wait for ____ breakthroughs. Hundreds of modest adjustments, each easy to test and to reverse, can accumulate into large gains in quality over time.",
+[
+"incremental",
+"gradual",
+"trivial",
+"radical"
+],
+[
+4
+],
+"작은 개선 수백 개가 쌓여 큰 성과가 된다는 글이라, 진보가 '근본적인, 획기적인(radical)' 돌파구를 기다릴 필요가 없다는 뜻이에요. incremental·gradual(점진적인)은 카이젠 자체의 성질이라 'need not wait for' 뒤에 오면 뜻이 뒤집혀요."
+],
+[
+18,
+2,
+"logic",
+null,
+"Choose the option that best completes the passage.\nBiologists have noticed that some songbirds inhabiting cities sing at a higher pitch than members of the same species in nearby forests. Traffic and machinery produce a constant low rumble, and a song pitched above that noise is easier for other birds to hear. By shifting their songs upward, urban birds keep their calls from being ____ by the clamor of the city, which helps them attract mates and defend territory.",
+[
+"amplified",
+"obscured",
+"harmonized",
+"imitated"
+],
+[
+2
+],
+"낮은 소음보다 높게 불러야 잘 들린다고 했으니 노래가 도시 소리에 '가려지지(obscured)' 않게 한다는 흐름이에요. amplified(커지다)라면 오히려 바라는 일이고, harmonized(어울리다)·imitated(흉내 내다)는 소음과 맞지 않아요."
+],
+[
+19,
+2,
+"logic",
+null,
+"Choose the option that best completes the passage.\nHospital monitors beep incessantly, and studies have found that the vast majority of these alarms do not require any action. As a result, nurses can become desensitized and respond more sluggishly, even when an alarm signals a genuine emergency. Safety experts call this alarm fatigue, and many hospitals are now striving to reduce superfluous alerts. The problem is a modern version of an old lesson: ____.",
+[
+"if you cry wolf too often, no one listens when the wolf comes",
+"better late than never",
+"actions speak louder than words",
+"two heads are better than one"
+],
+[
+1
+],
+"쓸데없는 경보가 너무 많아 진짜 응급 경보에도 늦게 반응한다는 글이에요. '늑대가 왔다고 자주 외치면 진짜 늑대가 와도 아무도 듣지 않는다'는 교훈과 같아요. 늦더라도 하는 게 낫다·백지장도 맞들면 낫다는 내용과 상관없어요."
+],
+[
+20,
+2,
+"logic",
+null,
+"Choose the pair that best fills in blanks (A) and (B).\nStanding desks became fashionable after several studies linked prolonged sitting to heart disease and diabetes. (A) ____, standing all day is not the answer either; long periods on one's feet have been associated with back pain and swollen veins in the legs. Researchers instead recommend changing posture often and moving throughout the day. (B) ____, a brief walk every half hour may do more good than any particular kind of desk.",
+[
+"(A) However — (B) In contrast",
+"(A) Therefore — (B) For example",
+"(A) However — (B) For example",
+"(A) Similarly — (B) Nevertheless"
+],
+[
+3
+],
+"(A) 앞은 앉아 있기의 해로움, 뒤는 서 있기도 답이 아니라는 반대 내용이라 However 예요. (B) 자세를 자주 바꾸고 움직이라는 권고의 구체적 예로 30분마다 짧게 걷기를 드니 For example 이 맞아요."
+],
+[
+21,
+2,
+"logic",
+null,
+"Choose the option that best completes the passage.\nPolite new terms are often coined to replace words that have come to sound insulting. Over time, however, the new terms tend to acquire the same negative connotations, because the attitudes of the people using them have not changed, and yet another replacement becomes necessary. The psychologist Steven Pinker called this cycle the euphemism treadmill. It implies that words are not the cause of prejudice but merely its ____; that is, they reveal attitudes rather than create them.",
+[
+"antidote",
+"remedy",
+"indicator",
+"adversary"
+],
+[
+3
+],
+"새 말도 곧 같은 나쁜 뜻을 얻는 까닭은 쓰는 사람의 태도가 그대로라서예요. 말은 편견의 원인이 아니라 편견을 '드러내는 지표(indicator)'일 뿐이라는 결론이에요. antidote·remedy(해독제, 치료법)는 말이 편견을 고친다는 뜻이 되어 글과 반대예요."
+],
+[
+22,
+2,
+"logic",
+null,
+"Choose the option that best completes the passage.\nAlmost everyone has had a tune stuck in their head, replaying a single chorus again and again. Psychologists call these involuntary musical memories earworms. In a 2015 study, researchers at the University of Reading found that people who chewed gum reported fewer intrusive musical thoughts than those who did not. Their explanation was that chewing ____, since silently singing along involves the same muscles of the jaw and tongue.",
+[
+"interferes with the inner rehearsal of a song",
+"makes the music sound louder in the mind",
+"helps people recall the lyrics more vividly",
+"teaches the brain to enjoy repetitive melodies"
+],
+[
+1
+],
+"속으로 따라 부를 때 쓰는 턱·혀 근육을 껌 씹기가 차지한다는 설명이니, 씹기가 '머릿속에서 노래를 되풀이하는 것을 방해한다'가 맞아요. 소리를 키우거나 가사를 더 잘 떠올리게 한다면 귀벌레가 줄어들 수 없어요."
+],
+[
+23,
+2,
+"logic",
+null,
+"Choose the option that best completes the passage.\nMost people who travel to high altitudes produce extra red blood cells, which thickens the blood and can trigger illness. Many Tibetans, whose ancestors have inhabited the high plateau for thousands of years, avoid this response thanks to a particular gene variant. Remarkably, geneticists have found that this variant appears to be ____ from the Denisovans, an extinct group of archaic humans whose DNA survives in small amounts in some living populations.",
+[
+"discarded",
+"concealed",
+"excreted",
+"derived"
+],
+[
+4
+],
+"멸종한 데니소바인의 DNA 가 오늘날 사람에게 조금 남아 있다고 했으니, 그 유전자 변이가 데니소바인에게서 '물려받은, 비롯된(derived from)' 것이라는 뜻이에요. discarded(버려진)·concealed(숨겨진)·excreted(배출된)는 from 과 이어도 뜻이 통하지 않아요."
+],
+[
+24,
+2,
+"logic",
+null,
+"Choose the option that best completes the passage.\nToday billions of barcodes are scanned every day, from grocery stores to hospital wards. The idea, however, originated in a strikingly simple way. In the late 1940s, an engineering student named Joseph Woodland, searching for a way to encode product information, sat on a Miami beach and traced the dots and dashes of Morse code in the sand with his fingers. Extending them downward into thin and thick lines, he realized he had found his answer. In other words, one of the most pervasive technologies in modern commerce began ____.",
+[
+"in a government laboratory during wartime",
+"as a toy designed for children",
+"with a powerful early computer program",
+"with lines drawn in the sand of a beach"
+],
+[
+4
+],
+"우들랜드가 해변 모래에 모스 부호를 손가락으로 그리고 아래로 늘여 가는 줄과 굵은 줄을 만들었다고 했어요. 그러니 '해변 모래에 그은 선에서' 시작됐다가 맞아요. 정부 실험실·장난감·컴퓨터 프로그램 이야기는 글에 없어요."
+],
+[
+25,
+2,
+"logic",
+null,
+"Choose the option that best completes the passage.\nConcrete is strong but brittle, and minute cracks admit water that slowly corrodes the steel reinforcement inside. Some researchers have developed self-healing concrete that contains bacteria together with a source of nutrients. The bacteria can lie ____ inside the dry concrete for many years. When a crack opens and water seeps in, they revive, consume the nutrients, and produce limestone that gradually seals the gap.",
+[
+"rampant",
+"dormant",
+"prolific",
+"hostile"
+],
+[
+2
+],
+"물이 스며들면 '되살아난다(revive)'고 했으니 그전까지는 '잠든, 활동하지 않는(dormant)' 상태로 있어야 해요. rampant(마구 퍼지는)·prolific(많이 번식하는)은 반대이고, hostile(적대적인)은 상관없어요."
+],
+[
+26,
+2,
+"reading",
+"r2-p26",
+"Where would the following sentence best fit in the passage?\nNot everyone is convinced, however.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]"
+],
+[
+4
+],
+"주어진 문장은 '하지만 모두가 납득한 건 아니다'라 앞에는 장점, 뒤에는 한계가 와야 해요. 쓰레기가 적다는 지지자 말 뒤, 지붕·배관은 여전히 손으로 해야 한다는 한계 앞인 [D] 가 맞아요."
+],
+[
+27,
+2,
+"reading",
+"r2-p27",
+"According to the passage, what is one concern about AI weather models?",
+[
+"They take hours to produce a single forecast.",
+"They cannot be used alongside traditional models.",
+"They ignore past weather data entirely.",
+"They may handle unprecedented extreme events poorly."
+],
+[
+4
+],
+"기상학자들은 AI 모델이 학습한 과거 기록에 기대기 때문에 그 기록에 없던 극단적 현상에는 약할 수 있다고 걱정해요. 몇 시간이 걸리는 쪽은 물리 모델이고, AI 는 오히려 과거 자료에서 배운다고 했어요. 유럽 센터는 두 모델을 나란히 돌린다고 했어요."
+],
+[
+28,
+2,
+"reading",
+"r2-p28",
+"Which of the following is NOT true according to the passage?",
+[
+"Halving a sheet in the series keeps its proportions.",
+"The system was suggested long before it became common.",
+"A sheet of A4 has an area of one square meter.",
+"Letter-size paper lacks the special ratio of the series."
+],
+[
+3
+],
+"넓이가 1제곱미터인 것은 가장 큰 A0 이에요. A4 는 A0 를 네 번 반으로 자른 크기라 그보다 훨씬 작아요. 반으로 잘라도 비율이 같다는 것, 18세기에 제안돼 20세기에 퍼졌다는 것, 레터 용지는 이 성질이 없다는 것은 글과 같아요."
+],
+[
+29,
+2,
+"reading",
+"r2-p29",
+"Which of the following can be inferred from the passage?",
+[
+"Dividing a resource equally always produces the fairest outcome.",
+"The two sisters wanted exactly the same part of the orange.",
+"Asking about each side's interests can reveal deals that help both.",
+"Skilled negotiators avoid sharing any information with the other side."
+],
+[
+3
+],
+"자매가 왜 오렌지를 원하는지 서로 물었다면 둘 다 필요한 것을 다 얻을 수 있었고, 우선순위를 밝히는 사람이 더 나은 합의에 이른다고 했어요. 상대의 관심사를 물으면 양쪽 모두에게 좋은 길이 보인다고 추론할 수 있어요. 반씩 나눈 결과가 오히려 손해였으니 똑같이 나누면 늘 공정하다는 보기는 글과 어긋나고, 한 사람은 즙을, 한 사람은 껍질을 원했으니 같은 부분을 원했다는 보기도 틀려요."
+],
+[
+30,
+2,
+"reading",
+"r2-p30",
+"Which of the following best fills in the blank?",
+[
+"the amount of water its shape displaces",
+"the lightness of modern steel",
+"the salt dissolved in seawater",
+"the speed at which it moves"
+],
+[
+1
+],
+"물에 잠긴 물체는 밀어낸 물의 무게만큼 위로 떠받쳐진다는 원리를 들고, 배는 속이 빈 넓은 모양이라 물을 엄청나게 밀어낸다고 했어요. 그러니 '모양 덕에 밀어내는 물의 양'이 맞아요. 재료(강철의 가벼움)가 아니라고 문장이 직접 말해요."
+],
+[
+31,
+2,
+"reading",
+"r2-p31",
+"Which of the following best explains the underlined part?",
+[
+"who was promoted into a job beyond his or her abilities",
+"who trained hard to master a demanding new role",
+"who refused promotion in order to stay in a comfortable job",
+"who was hired from outside the organization"
+],
+[
+1
+],
+"잘하면 승진하고, 잘 못하는 자리에 이르러서야 승진이 멈춰 거기 머문다고 했어요. 밑줄은 '능력을 넘어서는 자리까지 승진한 사람'이라는 뜻이에요. 승진을 거절했다거나 외부에서 뽑혔다는 내용은 글의 과정과 맞지 않아요."
+],
+[
+32,
+2,
+"reading",
+"r2-p32",
+"Why does the author mention the coins with less silver?",
+[
+"to show that silver coins were easier to counterfeit than gold ones",
+"to illustrate how people respond when unequal money is treated as equal",
+"to argue that governments should stop issuing coins altogether",
+"to explain how the first banknotes came to be printed"
+],
+[
+2
+],
+"은이 덜 든 새 동전을 옛 동전과 같은 값으로 정하자 사람들이 새 동전만 쓰고 옛 동전은 쌓아 두었다는 예예요. 실제 값이 다른 돈을 같다고 할 때 사람들이 어떻게 움직이는지 보여 주려는 거예요. 위조나 지폐의 기원 이야기는 글에 없어요."
+],
+[
+33,
+2,
+"reading",
+"r2-p33",
+"What is the main idea of the passage?",
+[
+"What we see is the brain's interpretation, not a simple image.",
+"The moon comes closer to Earth when it rises above the horizon.",
+"Photographs of the moon usually distort its true size.",
+"Most scientists now agree that distance alone explains the illusion."
+],
+[
+1
+],
+"사진으로는 크기가 거의 같은데 지평선 근처 달이 커 보이는 까닭은 뇌의 해석 때문이라는 글이에요. 마지막 문장이 요지예요. 달이 실제로 가까워진다는 보기는 사진 이야기와 반대이고, 아직 정설이 없다고 했으니 대부분의 과학자가 거리만으로 설명한다는 보기는 과장이에요."
+],
+[
+34,
+2,
+"reading",
+"r2-s1",
+"Which of the following best fills in the blank?",
+[
+"the responsibility of individual workers alone",
+"a priority for those at the top",
+"a matter the courts can safely ignore",
+"cheaper than paying occasional fines"
+],
+[
+2
+],
+"이 법은 현장 관리자보다 사업주·대표에게 책임을 묻는다는 점이 핵심이라, 안전을 뒷전이 아니라 '꼭대기에 있는 사람들의 우선순위'로 만들려는 것이 맞아요. 개별 노동자에게만 책임을 지운다는 보기는 대표에게 책임을 묻는 이 법의 취지와 반대예요."
+],
+[
+35,
+2,
+"reading",
+"r2-s1",
+"Which of the following is the best title for the passage?",
+[
+"Making Company Leaders Answer for Workplace Deaths",
+"Why Construction Sites Are Getting Smaller",
+"Korea's New Rules for Hiring Foreign Workers",
+"How Small Businesses Avoid Paying Taxes"
+],
+[
+1
+],
+"산업재해 사망에 대해 사업주·경영자에게 형사 책임을 묻는 법과 그 확대, 찬반을 다룬 글이라 'Making Company Leaders Answer for Workplace Deaths'가 맞아요. 외국인 노동자나 세금 이야기는 없어요."
+],
+[
+36,
+2,
+"reading",
+"r2-s2",
+"Which of the following is closest in meaning to the underlined word?",
+[
+"clumsy",
+"skillful",
+"reluctant",
+"elderly"
+],
+[
+2
+],
+"dexterous 는 '손재주가 좋은, 솜씨 있는'이라 skillful 과 가까워요. 대나무를 묶어 수십 층 높이의 비계를 세우고, 숙련된 팀이 금속 틀보다 훨씬 빨리 세운다는 내용이 단서예요. clumsy(서투른)는 반대이고, reluctant(마지못한)·elderly(나이 든)는 솜씨와 상관없어요."
+],
+[
+37,
+2,
+"reading",
+"r2-s2",
+"Which of the following is true according to the passage?",
+[
+"Every bamboo pole has the same strength as the next.",
+"The 2025 policy banned bamboo on all private buildings in the city.",
+"Bamboo scaffolding goes up faster than a similar metal frame.",
+"Bamboo scaffolding is used only on low buildings."
+],
+[
+3
+],
+"숙련된 팀은 비슷한 금속 틀보다 훨씬 빨리 세우고 해체할 수 있다고 했어요. 대나무는 장대마다 강도가 다르고, 2025년 방침은 많은 공공 공사에서 점차 금속으로 바꾸라는 것이었으며, 수십 층 높이 건물에도 쓴다고 했어요."
+],
+[
+38,
+2,
+"reading",
+"r2-s3",
+"Choose the most appropriate order of paragraphs (A), (B), and (C).",
+[
+"(B) – (A) – (C)",
+"(C) – (B) – (A)",
+"(A) – (C) – (B)",
+"(B) – (C) – (A)"
+],
+[
+4
+],
+"(B) 가 첫날 만든 브래킷이 고철통에 버려지는 장면으로 시작하고, (C) 는 그 일에 놀란 나에게 반장이 수첩을 보여 주는 장면이에요. (A) 는 That afternoon 으로 이어져 다시 만들고 훗날 이 이야기를 전한다는 마무리라 맨 끝이에요."
+],
+[
+39,
+2,
+"reading",
+"r2-s3",
+"Which of the following is the best title for the passage?",
+[
+"How to Run a Profitable Machine Shop",
+"Why I Quit My First Job",
+"A Bracket in the Scrap Bin",
+"The History of the Metal File"
+],
+[
+3
+],
+"첫 작품이 고철통에 들어간 일에서 실패를 거쳐 배운다는 교훈을 얻고 훗날 견습생에게 전하는 이야기라 'A Bracket in the Scrap Bin'이 맞아요. 나는 일을 그만두지 않고 오히려 견습생을 가르치게 됐어요."
+],
+[
+40,
+2,
+"reading",
+"r2-s3",
+"According to the passage, why did the foreman show the narrator his notebook?",
+[
+"to show that he too had failed before he learned",
+"to prove that the narrator's measurements were correct",
+"to ask the narrator to copy his old drawings",
+"to warn the narrator that a second failure would end the job"
+],
+[
+1
+],
+"반장은 수첩을 펴며 자기 첫 브래킷도, 그다음 셋도 같은 통에 들어갔다고 말해요. 자기도 처음엔 실패했다는 걸 보여 주려는 거예요. 치수가 맞았다는 증명이나 해고 경고는 글에 없어요."
+],
+[
+1,
+3,
+"vocab",
+null,
+"Choose the option closest in meaning to the underlined part.\nThe airline offered travel vouchers to <u>make up for</u> the cancellations that had ruined the plans of thousands of holiday passengers.",
+[
+"compensate",
+"fabricate",
+"disclose",
+"forfeit"
+],
+[
+1
+],
+"make up for 는 '(손해·잘못을) 메우다, 보상하다'라 compensate 와 같아요. 결항으로 계획을 망친 승객에게 여행권을 줬다는 문맥이에요. fabricate(지어내다)는 make up 을 따로 읽은 뜻이고, disclose(밝히다)·forfeit(잃다)도 결항을 두고 할 일로 맞지 않아요."
+],
+[
+2,
+3,
+"vocab",
+null,
+"Choose the option closest in meaning to the underlined part.\nThe startup's early popularity proved <u>evanescent</u>; within a year, most of its users had drifted to a rival app.",
+[
+"tangible",
+"fleeting",
+"contagious",
+"static"
+],
+[
+2
+],
+"evanescent 는 '덧없이 사라지는'이라 fleeting(잠깐뿐인)과 가까워요. 1년 안에 사용자 대부분이 경쟁 앱으로 옮겨 갔다는 뒤 내용이 단서예요. tangible(실재하는)·contagious(전염성 있는)·static(정지된)은 인기를 꾸밀 수 있어도 '금세 사라진'이라는 뜻이 아니에요."
+],
+[
+3,
+3,
+"vocab",
+null,
+"Choose the option closest in meaning to the underlined part.\nThe <u>tenacious</u> reporter filed request after request for three years until the ministry finally released the inspection records.",
+[
+"prominent",
+"placid",
+"persistent",
+"tolerant"
+],
+[
+3
+],
+"tenacious 는 '끈질긴, 집요한'이라 persistent 와 가까워요. 3년 동안 요청을 거듭한 끝에 기록을 받아 냈다는 내용이 단서예요. prominent(저명한)·placid(차분한)·tolerant(관대한)는 기자를 꾸밀 수 있지만 끈기를 뜻하지 않아요."
+],
+[
+4,
+3,
+"vocab",
+null,
+"Choose the option closest in meaning to the underlined part.\nInvestigators found the pilot's account <u>plausible</u>, since it matched both the radar data and the testimony of the air traffic controller.",
+[
+"credible",
+"accessible",
+"scrupulous",
+"controversial"
+],
+[
+1
+],
+"plausible 은 '그럴듯한, 믿을 만한'이라 credible 과 가까워요. 레이더 자료와 관제사 증언이 모두 들어맞았다는 since 이하가 단서예요. accessible(이해하기 쉬운)·scrupulous(꼼꼼한)·controversial(논란이 많은)은 진술을 꾸밀 수 있어도 '믿을 만한'이라는 뜻이 아니에요."
+],
+[
+5,
+3,
+"vocab",
+null,
+"Choose the option closest in meaning to the underlined part.\nCampers prefer <u>sturdy</u> folding chairs made of aluminum, which can bear a heavy load yet weigh less than two kilograms.",
+[
+"versatile",
+"lavish",
+"amenable",
+"durable"
+],
+[
+4
+],
+"sturdy 는 '튼튼한'이라 durable(오래 견디는)과 가까워요. 무거운 무게를 견딘다는 뒤 내용이 단서예요. versatile(여러 용도로 쓰는)은 의자를 꾸밀 수 있지만 튼튼하다는 뜻이 아니고, lavish(호화로운)·amenable(순순히 따르는)도 달라요."
+],
+[
+6,
+3,
+"vocab",
+null,
+"Choose the word that best fills in the blank.\nAfter several fatal accidents, regulators imposed ____ limits on how long truck drivers may work without a rest, backed by heavy fines and electronic records.",
+[
+"permissive",
+"stringent",
+"negligent",
+"indulgent"
+],
+[
+2
+],
+"치명적 사고 뒤에 무거운 벌금과 전자 운행 기록까지 붙인 제한이니 '엄격한(stringent)'이 맞아요. permissive(허용적인)·indulgent(너그러운)는 반대이고, negligent(태만한)는 규제를 만든 쪽을 꾸미기에 맞지 않아요."
+],
+[
+7,
+3,
+"vocab",
+null,
+"Choose the word that best fills in the blank.\nPrices of fresh vegetables are notoriously ____, soaring after a single typhoon and plunging again within weeks once the harvest recovers.",
+[
+"volatile",
+"steadfast",
+"integral",
+"benign"
+],
+[
+1
+],
+"태풍 한 번에 치솟았다가 몇 주 만에 다시 떨어진다니 '변동이 심한(volatile)' 가격이에요. steadfast(변함없는)는 반대이고, integral(필수적인)·benign(무해한)은 가격의 움직임과 상관없어요."
+],
+[
+8,
+3,
+"vocab",
+null,
+"Choose the word that best fills in the blank.\nIt soon became ____ that the warehouse fire had started in the battery storage room, where investigators found the most severe damage.",
+[
+"clandestine",
+"deliberate",
+"pivotal",
+"apparent"
+],
+[
+4
+],
+"가장 심한 피해가 배터리 보관실에서 발견됐다는 뒤 내용으로 화재 시작점이 '분명해졌다(apparent)'는 뜻이에요. It became ~ that 꼴에 맞는 말도 apparent 예요. clandestine(은밀한)·deliberate(고의적인)·pivotal(중추적인)은 이 꼴과 뜻에 맞지 않아요."
+],
+[
+9,
+3,
+"grammar",
+null,
+"Choose the option that makes the sentence grammatically correct.\nThe prototype ____ has already attracted firm orders from three overseas airlines and a domestic carrier.",
+[
+"unveiled at last month's trade fair",
+"at last month's trade fair unveiled",
+"unveiled last month's at trade fair",
+"last month's trade fair at unveiled"
+],
+[
+1
+],
+"시제품은 박람회에서 '공개된' 것이라 과거분사 unveiled 가 이끄는 구가 바로 뒤에서 명사를 꾸며야 해요. 분사가 구 끝으로 가거나 전치사 at 이 명사 뒤로 밀린 나머지 어순은 문장이 되지 않아요."
+],
+[
+10,
+3,
+"grammar",
+null,
+"Choose the option that makes the sentence grammatically correct.\nInvestors were less interested in ____ than in the engineers it had managed to recruit.",
+[
+"what had the startup built",
+"the startup what had built",
+"had what the startup built",
+"what the startup had built"
+],
+[
+4
+],
+"전치사 in 뒤에 '스타트업이 만든 것'이라는 명사절이 와야 해요. 관계대명사 what 절은 what + 주어 + 동사 어순이라 what the startup had built 가 맞아요. what had the startup built 는 의문문 어순이고, 나머지는 what 이 절 맨 앞에 오지 않아 틀려요."
+],
+[
+11,
+3,
+"grammar",
+null,
+"Choose the option that makes the sentence grammatically correct.\nThe delay was caused ____ by a chronic shortage of spare parts at the regional depot.",
+[
+"not so much by bad weather as",
+"not so much as by bad weather",
+"not much so by bad weather as",
+"so not much by bad weather as"
+],
+[
+1
+],
+"'A 라기보다는 B'는 not so much A as B 꼴이고, A·B 자리에 같은 꼴(by + 명사)이 와요. 그래서 not so much by bad weather as (by a shortage) 가 맞아요. 나머지는 not so much 의 순서가 깨지거나 as 가 A 앞에 와 짝이 맞지 않아요."
+],
+[
+12,
+3,
+"grammar",
+null,
+"Choose the option that makes the sentence grammatically correct.\nMany older factory workers worry about ____ by automated systems that can operate around the clock without breaks.",
+[
+"replacing",
+"being replaced",
+"to be replaced",
+"be replaced"
+],
+[
+2
+],
+"전치사 about 뒤에는 동명사가 와요. 노동자는 자동화 시스템에 '대체되는' 쪽이라 수동 동명사 being replaced 가 맞아요. replacing 은 노동자가 무언가를 대체한다는 능동이고, to부정사는 전치사 뒤에 올 수 없어요."
+],
+[
+13,
+3,
+"grammar",
+null,
+"Choose the option that makes the sentence grammatically correct.\nThe site manager required that every visitor ____ a hard hat and safety boots before entering the construction zone.",
+[
+"wears",
+"wore",
+"wear",
+"wearing"
+],
+[
+3
+],
+"require(요구하다)처럼 요구·명령을 나타내는 동사 뒤 that 절의 동사는 (should) + 동사원형이에요. 그래서 wear 가 맞아요. wears·wore 는 사실을 말할 때의 꼴이고, wearing 으로는 that 절의 동사가 생기지 않아요."
+],
+[
+14,
+3,
+"grammar",
+null,
+"Choose the option that makes the sentence grammatically correct.\n____ months of torrential rain, the old stone aqueduct continued to carry water to the town without a single leak. Engineers who examined it afterward were astonished. The blocks had been cut so precisely that no mortar was needed to hold them together. The gentle gradient of the channel kept the water flowing steadily over many kilometers.",
+[
+"Although",
+"Because of",
+"Despite",
+"Nevertheless"
+],
+[
+3
+],
+"빈칸 뒤는 명사구(months of torrential rain)이고, 폭우에도 물이 새지 않았다는 양보의 뜻이라 전치사 Despite 가 맞아요. Although 는 절을 이끌어야 하고, Nevertheless 는 부사라 명사구를 받을 수 없어요. Because of 는 뜻이 반대예요."
+],
+[
+15,
+3,
+"grammar",
+null,
+"Choose the underlined part that is NOT grammatically correct.\nFor centuries, lighthouses relied on open fires or oil lamps, and much of their light was simply lost. Some keepers placed curved mirrors behind the flame, but even these ①<u>wasting</u> a large share of it. In 1822 the French physicist Augustin Fresnel proposed a new kind of lens, ②<u>composed</u> of concentric rings of glass prisms. Because it was far thinner than a conventional lens of the same power, it was lighter and cheaper ③<u>to manufacture</u>. Within a few decades, Fresnel lenses ④<u>had been installed</u> in lighthouses along coasts around the world, allowing their beams to be seen from more than twenty miles away.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+1
+],
+"but even these 다음에는 문장의 동사가 와야 하는데 wasting 은 동사 구실을 못 해요. 과거 이야기이니 wasted 가 맞아요. composed 는 a new kind of lens 를 꾸미는 과거분사, to manufacture 는 형용사를 꾸미는 to부정사라 맞아요."
+],
+[
+16,
+3,
+"grammar",
+null,
+"Choose the underlined part that is NOT grammatically correct.\nThe claim that the Great Wall of China ①<u>can be seen</u> with the naked eye from space has circulated for decades. Astronauts, however, have repeatedly contradicted it. The wall is extremely long but quite narrow, and its color closely ②<u>resembles</u> that of the surrounding terrain. In 2003 China's first astronaut, Yang Liwei, told reporters that he ③<u>had not been able</u> to spot it from orbit. Yet the myth persists, ④<u>repeating</u> in textbooks, quiz shows, and travel brochures around the world.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"통념(the myth)은 교과서와 퀴즈 쇼에서 '되풀이되는' 쪽이라 수동 분사 repeated 가 맞아요. repeating 이면 통념이 무언가를 되풀이한다는 능동이 돼요. had not been able 은 말한 때보다 앞선 일이라 과거완료로 맞아요."
+],
+[
+17,
+3,
+"logic",
+null,
+"Choose the option that best completes the passage.\nIn 2015 a large team of psychologists published the results of an ambitious project. They had attempted to ____ one hundred experiments from leading psychology journals, following the original methods as closely as possible. Fewer than half of the repeated studies produced the same results as before. The finding fueled a broad debate about publication practices and prompted many journals to demand larger samples and openly shared data.",
+[
+"fabricate",
+"refute",
+"replicate",
+"discard"
+],
+[
+3
+],
+"원래 방법을 최대한 따라 다시 해 봤더니(repeated studies) 절반도 안 되는 연구만 같은 결과가 나왔다는 흐름이라 '재현하다(replicate)'가 맞아요. fabricate(조작하다)·discard(버리다)는 뜻이 맞지 않고, refute(반박하다)라면 원래 방법을 그대로 따를 까닭이 없어요."
+],
+[
+18,
+3,
+"logic",
+null,
+"Choose the option that best completes the passage.\nEngineers estimate that every dollar spent on routine maintenance of roads and bridges saves several dollars in later repairs. A small crack sealed today prevents water from seeping in, freezing, and widening the gap into a pothole. Yet maintenance rarely wins headlines or votes, so budgets often favor spectacular new projects over routine upkeep. Infrastructure experts have a familiar saying for this predicament: ____.",
+[
+"every cloud has a silver lining",
+"don't count your chickens before they hatch",
+"a stitch in time saves nine",
+"where there's smoke, there's fire"
+],
+[
+3
+],
+"지금 작은 틈을 메우면 나중의 큰 수리비를 아낀다는 글이라 '제때 한 바늘이 아홉 바늘을 던다(a stitch in time saves nine)'가 맞아요. 나쁜 일에도 좋은 면이 있다·김칫국부터 마시지 마라는 내용과 상관없어요."
+],
+[
+19,
+3,
+"logic",
+null,
+"Choose the option that best completes the passage.\nThe leaves of the lotus plant emerge from muddy ponds yet stay remarkably clean. Under a microscope, their surface turns out to be covered with tiny bumps coated in wax. Water droplets cannot spread out on it; instead they bead up and roll off, sweeping away particles of dirt as they go. Manufacturers have since developed paints and glass coatings that ____ this microscopic structure, allowing building walls and windows to be cleaned by little more than rain.",
+[
+"mimic",
+"conceal",
+"erode",
+"dissolve"
+],
+[
+1
+],
+"연잎의 표면 구조 덕에 빗물만으로 깨끗해진다는 원리를 페인트·유리 코팅에 옮겼으니 그 구조를 '본뜨다(mimic)'가 맞아요. conceal(숨기다)·erode(깎아 내다)·dissolve(녹이다)라면 빗물로 깨끗해지는 효과를 얻을 수 없어요."
+],
+[
+20,
+3,
+"logic",
+null,
+"Choose the pair that best fills in blanks (A) and (B).\nCard payments are faster than cash and reduce the risk of theft, so a growing number of shops have stopped accepting bills and coins altogether. (A) ____, a cashless store can shut out people who lack bank accounts or are uncomfortable with digital payment, many of them elderly or poor. (B) ____, several American cities, including Philadelphia and New York, have passed laws requiring most stores to accept cash.",
+[
+"(A) Moreover — (B) For this reason",
+"(A) However — (B) For this reason",
+"(A) However — (B) By contrast",
+"(A) In short — (B) Nevertheless"
+],
+[
+2
+],
+"(A) 앞은 카드 결제의 장점, 뒤는 현금을 안 받는 가게가 일부 사람을 배제한다는 반대 내용이라 However 예요. (B) 그 문제 때문에 현금을 받도록 하는 법을 만들었으니 결과를 잇는 For this reason 이 맞아요."
+],
+[
+21,
+3,
+"logic",
+null,
+"Choose the option that best completes the passage.\nIn the eighteenth century, every gun was made individually by hand, and a broken lock or trigger had to be painstakingly refitted by hand. In 1785 the French gunsmith Honoré Blanc staged a striking demonstration: he took apart a batch of gun locks, shuffled the pieces, and reassembled working locks from parts chosen at random. The secret of his method was ____, so that any piece could take the place of any other. The idea later became the foundation of mass production.",
+[
+"manufacturing each part to an exact, uniform pattern",
+"decorating every gun with a unique engraving",
+"hiring the most famous gunsmiths in France",
+"using softer metals that were easy to bend"
+],
+[
+1
+],
+"부품을 섞어 아무거나 골라도 맞물렸다는 시연과 so that any piece could take the place of any other 가 단서예요. 그러려면 '부품마다 정확히 같은 규격으로 만드는 것'이 비결이어야 해요. 총마다 다른 새김이나 유명 장인 고용은 부품을 바꿔 끼우는 것과 반대 방향이에요."
+],
+[
+22,
+3,
+"logic",
+null,
+"Choose the option that best completes the passage.\nThe popular claim that people use only ten percent of their brains is ____; that is, it has no basis in what scientists actually observe. Brain imaging shows that even simple tasks activate many regions at once, and over the course of a day virtually every part of the brain is put to work. Moreover, damage to almost any area, however small, produces some noticeable loss of function, which would hardly be the case if ninety percent of the organ lay idle.",
+[
+"irrefutable",
+"conclusive",
+"accurate",
+"fallacious"
+],
+[
+4
+],
+"뇌 영상으로 하루 동안 거의 모든 부분이 쓰이고, 어디를 다쳐도 기능이 떨어진다는 반박 근거가 이어져요. 10% 설은 '틀린(fallacious)' 주장이에요. irrefutable(반박할 수 없는)·conclusive(결정적인)·accurate(정확한)는 모두 반대 평가예요."
+],
+[
+23,
+3,
+"grammar",
+null,
+"Choose the option that best completes the passage.\nThe city's history museum, which ____ closed for earthquake retrofitting since 2021, will reopen next spring. Engineers have placed the entire building on rubber and steel bearings that allow the ground to shift beneath it while the structure above moves only slightly, protecting both visitors and fragile exhibits.",
+[
+"was",
+"is",
+"had been",
+"has been"
+],
+[
+4
+],
+"since 2021(2021년부터 지금까지)이 있어 현재까지 이어지는 상태를 나타내는 현재완료 has been 이 맞아요. 다시 문을 여는 것은 앞으로의 일(will reopen)이라 과거완료 had been 은 기준 시점이 맞지 않고, was·is 는 since 와 어울리지 않아요."
+],
+[
+24,
+3,
+"logic",
+null,
+"Choose the option that best completes the passage.\nIn a 2008 experiment in Japan, researchers asked twenty-two drivers to circle a track at a steady speed of about thirty kilometers per hour. At first the cars moved smoothly. Within minutes, however, tiny variations in speed began to amplify. One driver slowed slightly, the driver behind slowed even more, and soon a cluster of cars came to a complete halt before moving on again. The experiment demonstrated that traffic jams can arise ____.",
+[
+"only when a road narrows from several lanes to one",
+"from small changes in speed alone",
+"because drivers deliberately try to block one another",
+"mainly at night, when drivers are tired"
+],
+[
+2
+],
+"막힌 곳도 사고도 없는 둥근 길에서 작은 속도 차이가 커져 차들이 멈췄다는 실험이에요. '사고나 병목이 없어도 작은 속도 변화만으로' 정체가 생긴다가 맞아요. 길이 좁아질 때만 생긴다는 보기는 좁아지는 곳이 없는 트랙에서 정체가 생긴 실험 결과와 반대예요."
+],
+[
+25,
+3,
+"logic",
+null,
+"Choose the option that best completes the passage.\nBy weight, saffron is among the most expensive spices in the world, and the reason lies in how it is harvested. Each crocus flower yields only three slender red threads, which must be plucked by hand during a brief flowering season. The harvest is ____: producing a single kilogram requires the threads of well over a hundred thousand flowers. Because the work is so delicate, no machine has yet replaced the skilled pickers who do this painstaking work.",
+[
+"lucrative",
+"effortless",
+"intuitive",
+"arduous"
+],
+[
+4
+],
+"꽃마다 실 세 가닥을 손으로 따고, 쌍점 뒤에 1kg 에 꽃 10만 송이 넘게 든다는 설명이 오니 수확이 '몹시 고된(arduous)' 일이에요. effortless(힘들지 않은)는 반대이고, lucrative(돈이 되는)·intuitive(직관적인)는 쌍점 뒤 설명과 이어지지 않아요."
+],
+[
+26,
+3,
+"reading",
+"r3-p26",
+"Where would the following sentence best fit in the passage?\nIts operator describes it as the first cement plant in the world to do so on an industrial scale.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]"
+],
+[
+4
+],
+"주어진 문장의 it 과 do so 는 '배출가스를 붙잡아 저장하는 시멘트 공장'을 가리켜야 해요. 노르웨이 브레비크 공장이 처음 나오는 문장 바로 뒤인 [D] 가 맞아요. [C] 앞에서는 아직 특정 공장이 나오지 않아 it 이 가리킬 대상이 없어요."
+],
+[
+27,
+3,
+"reading",
+"r3-p27",
+"According to the passage, what helped limit the number of deaths?",
+[
+"The bridge had been closed for repairs that night.",
+"Traffic was stopped after the ship's crew sent a warning.",
+"The ship struck a pier that was no longer in use.",
+"Rescue boats were already waiting beside the bridge."
+],
+[
+2
+],
+"충돌 직전 배 선원들이 조난 신호를 보냈고 경찰이 다리로 들어오는 차를 막았다고 했어요. 그래서 사망자가 더 늘지 않았어요. 다리는 보수 중이라 닫혀 있지 않았고(보수 작업자가 일하고 있었어요), 구조선 이야기는 글에 없어요."
+],
+[
+28,
+3,
+"reading",
+"r3-p28",
+"Which of the following is NOT true according to the passage?",
+[
+"The new fiber was first sought for use in tires.",
+"Kevlar is stronger than steel of the same weight.",
+"The technician was eager to test the solution.",
+"The material is now used in protective equipment."
+],
+[
+3
+],
+"글은 방사 장치를 맡은 기술자가 탁한 용액을 시험하기를 꺼렸고(reluctant) 콜렉이 설득했다고 했어요. 기꺼이 시험하려 했다는 문장이 글과 맞지 않아요. 타이어 보강용으로 찾던 섬유, 같은 무게 강철의 다섯 배 강도, 보호 장비 쓰임은 글과 같아요."
+],
+[
+29,
+3,
+"reading",
+"r3-p29",
+"Which of the following can be inferred from the passage?",
+[
+"Chess masters have better general memory than beginners.",
+"Random positions are easier to remember than real ones.",
+"Expertise rests largely on field-specific knowledge.",
+"Beginners outperform masters when pieces are placed randomly."
+],
+[
+3
+],
+"실제 대국 배치는 고수가 훨씬 잘 기억했지만 아무렇게나 놓으면 차이가 거의 사라졌어요. 고수의 힘은 타고난 기억력이 아니라 체스에서 쌓은 익숙한 형태 지식에서 나온다고 추론할 수 있어요. 기억력 전반이 좋다는 보기는 글이 직접 부정해요."
+],
+[
+30,
+3,
+"reading",
+"r3-p30",
+"Which of the following best fills in the blank?",
+[
+"protects the plants from harsh winters",
+"overwhelms the animals that feed on seeds",
+"attracts more pollinating insects to the forest",
+"allows each plant to live longer"
+],
+[
+2
+],
+"한꺼번에 쏟아진 씨앗이 쥐·새가 다 먹을 수 없을 만큼 많아 살아남는 씨가 생긴다는 뒤 문장이 설명이에요. 그러니 '씨앗을 먹는 동물을 압도한다'가 맞아요. 꽃을 피운 뒤 죽는다고 했으니 더 오래 산다는 보기는 반대예요."
+],
+[
+31,
+3,
+"reading",
+"r3-p31",
+"Which of the following best explains the underlined part?",
+[
+"Rivers are too dangerous to cross more than once.",
+"People rarely return to places they have visited.",
+"Everything, ourselves included, keeps changing.",
+"Water always flows back to where it began."
+],
+[
+3
+],
+"어제 발을 적신 물은 이미 바다로 흘러갔고 사람도 그사이 변했다는 설명, 강이 '모든 것이 끊임없이 변한다'는 우주의 상징이라는 말이 단서예요. 밑줄은 '우리 자신까지 모든 것이 늘 변한다'는 뜻이에요. 강이 위험하다거나 물이 처음 자리로 돌아온다는 말은 글과 달라요."
+],
+[
+32,
+3,
+"reading",
+"r3-p32",
+"Why does the author mention the 1977 collision?",
+[
+"to argue that fog makes air travel too dangerous on small islands like Tenerife",
+"to criticize the design of the two jumbo jets",
+"to explain why English is an easy language to learn",
+"to show how a misunderstanding led to standard aviation language"
+],
+[
+4
+],
+"테네리페 사고의 주된 원인이 무선 교신의 오해였고, 그 뒤 표준 문구와 영어 능력 요건이 생겼다고 이어져요. 불분명한 교신이 항공 언어 규칙으로 이어졌음을 보이려는 거예요. 안개나 기체 설계를 탓하는 내용은 없어요."
+],
+[
+33,
+3,
+"reading",
+"r3-p33",
+"What is the main idea of the passage?",
+[
+"Borrowed words take on new meanings and belong to their new language.",
+"Korean and Japanese speakers frequently misuse English words.",
+"Loanwords should be replaced with native words wherever possible in schools.",
+"Nearly all loanwords in Korean and Japanese come from English."
+],
+[
+1
+],
+"빌려 온 말은 새 언어의 빈자리를 채우도록 모양과 뜻이 바뀌어 빌린 쪽의 말이 된다는 글이에요. 글은 그런 변화가 실수가 아니라고 했으니 영어를 잘못 쓴다는 보기는 반대이고, 거의 모든 외래어가 영어에서 왔다는 보기는 글에 없는 과장이에요."
+],
+[
+34,
+3,
+"reading",
+"r3-s1",
+"Which of the following best fills in the blank?",
+[
+"ignoring the problem entirely",
+"building the copy in the first place",
+"experimenting on the real thing",
+"asking residents for their opinions"
+],
+[
+3
+],
+"디지털 복제본에서 바꿔 보는 것이 무엇보다 싸고 안전하다는 비교라, 견주는 대상은 '실물에 직접 실험하는 것'이에요. 문제를 무시하거나 주민에게 묻는 일은 복제본으로 시험하는 것과 견줄 대상이 아니에요."
+],
+[
+35,
+3,
+"reading",
+"r3-s1",
+"Which of the following is the best title for the passage?",
+[
+"Why Jet Engines Wear Out So Quickly",
+"Testing the Real World on a Virtual Copy",
+"Singapore's Changing Weather Patterns",
+"The End of Physical Engineering"
+],
+[
+2
+],
+"센서 자료로 계속 갱신되는 가상 복제본으로 기계·공장·도시를 미리 시험한다는 디지털 트윈 이야기라 'Testing the Real World on a Virtual Copy'가 맞아요. 제트 엔진과 싱가포르는 예로 나올 뿐이에요."
+],
+[
+36,
+3,
+"reading",
+"r3-s2",
+"Which of the following is closest in meaning to the underlined word?",
+[
+"permit",
+"ban",
+"monitor",
+"promote"
+],
+[
+2
+],
+"prohibit 은 '금지하다'라 ban 과 같아요. 소닉붐 때문에 육지 위 초음속 비행을 막았다는 문맥이에요. permit(허가하다)·promote(장려하다)는 반대이고, monitor(감시하다)는 금지와 달라요."
+],
+[
+37,
+3,
+"reading",
+"r3-s2",
+"Which of the following is true according to the passage?",
+[
+"Boom's jet carried paying passengers in 2025.",
+"Supersonic flight uses less fuel than ordinary flight.",
+"The Concorde was still in service in 2025.",
+"The U.S. has long restricted supersonic flights over land."
+],
+[
+4
+],
+"소닉붐 때문에 미국을 비롯한 여러 나라가 수십 년 전 육지 위 초음속 비행을 금지했다고 했어요. 2025년 비행은 작은 시험기였고, 초음속 비행은 연료를 훨씬 많이 쓰며, 콩코드는 2003년에 퇴역했어요."
+],
+[
+38,
+3,
+"reading",
+"r3-s3",
+"Choose the most appropriate order of paragraphs (A), (B), and (C).",
+[
+"(B) – (A) – (C)",
+"(A) – (B) – (C)",
+"(B) – (C) – (A)",
+"(C) – (A) – (B)"
+],
+[
+1
+],
+"(B) 가 원소를 정리할 방법이 없던 1860년대 상황을 내놓고, (A) 가 1869년 멘델레예프의 표와 빈칸·예측을 소개해요. (C) 는 his forecasts 가 들어맞아 표가 받아들여졌다는 결과라 맨 끝이에요."
+],
+[
+39,
+3,
+"reading",
+"r3-s3",
+"What is the main idea of the passage?",
+[
+"Chemists in the 1860s had already agreed on how to organize the elements.",
+"Gallium was the most important element discovered in the nineteenth century.",
+"Mendeleev's table won acceptance once its predictions proved correct.",
+"Mendeleev refused to change his table after new elements were found."
+],
+[
+3
+],
+"빈칸을 남기고 미지의 원소를 예측한 대담함, 그리고 그 예측이 들어맞아 주기율표가 받아들여졌다는 흐름이 요지예요. 1860년대에는 정리 방법이 없었다고 했으니 화학자들이 이미 합의했다는 보기는 반대예요."
+],
+[
+40,
+3,
+"reading",
+"r3-s3",
+"According to the passage, what did Mendeleev do when no known element fit a position?",
+[
+"He moved the nearest element into that position.",
+"He left a gap and predicted an element to fill it.",
+"He removed that column from the table.",
+"He asked other chemists to vote on the problem."
+],
+[
+2
+],
+"맞는 원소가 없는 자리는 비워 두고 아직 발견되지 않은 원소가 들어갈 자리라며 그 성질까지 예측했다고 했어요. 가까운 원소를 옮기거나 칸을 없앴다는 내용은 없어요."
+]
+]
+}

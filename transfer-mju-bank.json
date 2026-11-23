@@ -1,0 +1,1435 @@
+{
+"school": "mju",
+"title": "명지대 편입영어 모의고사",
+"source": "명지대 편입영어 2018~2026학년도 기출 출제 유형(문항 수·영역·문제 꼴, VocabFactory 분석)을 분석해 dailyfreetoolbox 가 새로 만든 연습 문제 (2027학년도 25문항 꼴에 맞춰 2026 영역 비율로 줄인 구성)",
+"checked": "2026-11-23",
+"minutes": 60,
+"points": [
+[
+1,
+25,
+4
+]
+],
+"sections": [
+{
+"id": "vocab",
+"name": "동의어"
+},
+{
+"id": "vblank",
+"name": "어휘 빈칸"
+},
+{
+"id": "grammar",
+"name": "문법"
+},
+{
+"id": "cloze",
+"name": "단락 빈칸"
+},
+{
+"id": "reading",
+"name": "독해"
+}
+],
+"passages": [
+{
+"id": "r1-p18",
+"text": "In 1917 the French composer Erik Satie proposed a kind of music that nobody was supposed to listen to. He called it musique d'ameublement, or furniture music, and imagined it occupying a room the way wallpaper or an armchair does: present, useful, but never demanding attention. At a gallery in Paris in 1920, Satie and his colleague Darius Milhaud had a small ensemble play short, repetitive pieces during the intermission of a play. According to a well-known account, the audience promptly fell silent and returned to their seats to listen, and Satie hurried among them urging them to keep talking and walking about. By its own peculiar standard, the experiment was a failure. Yet the notion proved prophetic. Within a few decades, recorded background music was being piped into elevators, offices, and shops, engineered precisely so that people would not notice it. In 1978 the British musician Brian Eno released an album intended for airports and wrote that such music should be as ignorable as it is interesting. Satie's whimsical provocation, it turned out, had anticipated an entire way of hearing."
+},
+{
+"id": "r1-p19",
+"text": "In a short essay written in 1769, the French philosopher Denis Diderot described a curious misfortune. A friend had given him a splendid scarlet dressing gown, and he discarded his old one, shabby but comfortable. Soon the new garment made everything around it look drab. His straw chair seemed unworthy of it, so he replaced it with a leather armchair; then the desk, the bookshelves, and the tapestries had to be upgraded in turn, until his modest study had become an elegant room in which he felt, as he put it, less master of his gown than its slave. Two centuries later, the anthropologist Grant McCracken gave the phenomenon a name: the Diderot effect. A single new acquisition can disrupt the apparent harmony among our possessions and set off a chain of further purchases, each one justified by the last. Retailers understand this well, which is why a new phone is sold beside cases, chargers, and headphones designed to match it. The implication is not that we should never buy anything new, but that the true cost of a purchase may include everything it persuades us to buy next."
+},
+{
+"id": "r1-p20",
+"text": "Writers and students speak of deadlines so casually that the word's grim history is easily forgotten. During the American Civil War, the Confederate prison at Andersonville, Georgia, held tens of thousands of Union soldiers in a crowded and filthy stockade. A short distance inside the outer wall ran a marked line, and guards had orders to shoot any prisoner who crossed it. The prisoners called it the dead line. After the war, the term surfaced at the trial of the camp's commander, Henry Wirz, convicted and hanged in 1865. In the early twentieth century, the word drifted into the vocabulary of printing, where it seems to have referred to a guideline on a press beyond which type would not print. Newspaper offices then gave it the meaning familiar today: the time by which a story must be submitted. By the 1920s journalists were using deadline in this sense, and the expression soon spread to other trades and to ordinary speech. The modern deadline still carries a faint echo of menace, though missing one now costs a reprimand rather than a life."
+},
+{
+"id": "r1-p21",
+"text": "The European eel is a fish whose life cycle posed, for centuries, one of natural history's most stubborn riddles. Fishermen caught adult eels in rivers all over Europe, yet no one had ever found an eel egg or a newborn eel. Aristotle concluded that eels arose spontaneously from mud. The answer began to emerge in the early twentieth century, when the Danish biologist Johannes Schmidt spent years trawling the Atlantic for the tiny, transparent, leaf-shaped larvae of eels. He noticed that the farther west he sailed, the smaller the larvae became, and he traced the smallest of all to the Sargasso Sea, a region of the western Atlantic thousands of kilometers from European shores. The eels, it seemed, swim there to spawn and die, and their offspring drift back toward Europe on ocean currents, a voyage that may take years. Remarkably, nobody has yet observed European eels spawning in the wild, and scientists still debate how the adults navigate such an immense distance. The question has acquired urgency, because the number of young eels reaching European coasts has fallen precipitously since the 1980s."
+},
+{
+"id": "r1-p22",
+"text": "In the 1980s the psychologist James Pennebaker asked a group of college students to write for fifteen minutes on four consecutive days. Some wrote about the most upsetting experiences of their lives, while others described neutral subjects such as their rooms or their shoes. ①<u>Many of those who wrote about trauma found the exercise painful, and some left the sessions in tears.</u> Yet in the months that followed, they visited the campus health center less often than students in the comparison group. ②<u>Later studies have linked such expressive writing to modest improvements in mood and sleep, although not every experiment has replicated the effect.</u> ③<u>Many universities now require students to submit their essays electronically rather than on paper.</u> Why should putting distress into words help at all? ④<u>Pennebaker came to believe that the benefit lies less in venting emotion than in organizing it, turning a chaotic memory into a coherent story.</u> Participants whose essays showed an increasing use of words such as because and realize tended to improve the most, as if understanding had gradually replaced mere turmoil."
+},
+{
+"id": "r1-p23",
+"text": "Timbuktu, on the southern edge of the Sahara in what is now Mali, was a renowned center of learning in the fifteenth and sixteenth centuries. Scholars there transcribed and composed manuscripts on law, astronomy, medicine, and poetry, and families preserved these works for generations, often hidden in wooden chests or buried in the sand to protect them from invaders and damp. When armed militants seized the city in 2012, librarians and families dreaded that the collections would be destroyed. In a clandestine operation, they packed many thousands of manuscripts into metal trunks and smuggled them south to the capital, Bamako, by road and by river, often passing through hostile checkpoints. When the militants fled in early 2013, they set fire to a library building, but most of the manuscripts had already been spirited away. The rescue preserved an archive that refutes an entrenched prejudice, namely that Africa south of the Sahara possessed no written intellectual tradition. The more formidable challenge today is conservation, since the fragile pages suffer in the humid climate of Bamako, and efforts are under way to digitize them."
+},
+{
+"id": "r1-p24",
+"text": "On August 8, 2024, a magnitude 7.1 earthquake struck off the coast of Kyushu in southern Japan, near the edge of a vast undersea fault known as the Nankai Trough.\n[A] The response revealed how difficult it is to convey an uncertain risk. Some vacationers canceled trips to beaches along the Pacific coast, and stores reported runs on bottled water and emergency supplies, even though officials stressed that they were not predicting a disaster.\n[B] For the first time, the Japan Meteorological Agency responded by issuing a special advisory. It warned that the chance of a far larger earthquake along the trough, which has unleashed devastating quakes and tsunamis in the past, had risen slightly above its usual level.\n[C] When the advisory was lifted a week later without incident, critics complained that it had harmed tourism for nothing. Seismologists replied that this was the wrong lesson: a slightly elevated risk of catastrophe is still worth knowing about, and the absence of a quake did not mean the warning had been mistaken."
+},
+{
+"id": "r1-p25",
+"text": "Hildegard of Bingen was a twelfth-century abbess who defies categorization as thoroughly as any figure of the Middle Ages. Born in 1098 into a noble family in the Rhineland, she was entrusted to a religious community as a child and eventually became the abbess of her own convent. From early childhood she experienced visions but kept them largely to herself until middle age, when she began to record them in a series of books that won the cautious approval of the pope. Yet visionary writing was only one of her pursuits. She composed dozens of liturgical songs, whose soaring melodies are performed and recorded today, as well as a musical drama about the struggle between the virtues and the devil. She wrote treatises on medicine and natural history describing the healing properties of plants, stones, and animals. She corresponded with popes and emperors, occasionally rebuking them sharply, and in her sixties she undertook preaching tours, an extraordinary activity for a woman of her era. In 2012, more than eight centuries after her death, the Catholic Church formally declared her a saint and a Doctor of the Church."
+},
+{
+"id": "r1-s1",
+"text": "Nora's aunt ran an alteration shop in a single narrow room beneath a stairway in the old market, and for most of her childhood Nora regarded it as the most tedious place on earth. [A] When her mother began working evenings, Nora was sent there after school, and she spent the first weeks sulking among bolts of lining fabric and jars of mismatched buttons. Her aunt barely spoke to her. She worked with pins pressed between her lips, chalking lines on trousers and coats that customers had outgrown, outlived, or inherited. [B] One afternoon a man brought in a wool suit that had belonged to his late father and asked whether it could be made to fit him for his daughter's wedding. The aunt studied the jacket for a long time, turning it inside out and running her thumb along the seams. [C] \"Your father was broader in the shoulders,\" she said at last, \"but he stood the same way you do.\" She showed Nora how the original tailor had left generous seams, almost as if he had expected the suit to be altered someday, and she let the girl unpick the stitches while she explained what each one had been for. When the man returned two weeks later and tried on the jacket, he stood in front of the mirror for a long while without saying anything. [D] Then he thanked the aunt quietly and paid without looking at the bill. After he left, the aunt handed Nora a needle and a spool of gray thread. Nora did not realize until years later that her aunt had been waiting all along for her to show an interest."
+},
+{
+"id": "r1-s2",
+"text": "For much of the twentieth century, psychologists who studied trauma concentrated, understandably, on the damage it inflicts: the nightmares, the hypervigilance, the sense of a future foreshortened. Yet clinicians persistently heard something else from survivors of bereavement, illness, and disaster. Alongside their suffering, many reported that the ordeal had changed them in ways they valued. They felt a deeper appreciation for ordinary days, a closer bond with the friends and relatives at their side, or a surprising confidence that they could endure whatever came next. In the mid-1990s the psychologists Richard Tedeschi and Lawrence Calhoun gave this pattern a name, posttraumatic growth, and devised a questionnaire to measure it. They were careful to underscore what the concept does not mean. Growth does not erase distress; the two often coexist for years. Nor is the trauma itself the source of any benefit. In their account, growth arises from the struggle to make sense of what has happened, as survivors are forced to rebuild beliefs about the world that the crisis has shattered. The notion has attracted criticism as well as enthusiasm. Some researchers suspect that people who report growth are partly engaging in wishful thinking, a comforting story that may not match any measurable change in their behavior. Others worry that popular accounts transform growth into an obligation, so that survivors who simply feel wounded come to believe they have failed. Tedeschi and Calhoun themselves cautioned that growth should never be demanded of any survivor."
+},
+{
+"id": "r2-p16",
+"text": "When the program AlphaGo defeated the champion Lee Sedol four games to one in Seoul in March 2016, many observers anticipated a bleak future for professional baduk. If a machine could defeat the best humans, what was the purpose of human competition? Lee himself retired in 2019, citing the dominance of artificial intelligence among his reasons. Yet the game has not declined; if anything, it has flourished. A study published in 2023 analyzed millions of moves made by professional players over several decades and found that the quality of their decisions improved considerably after AlphaGo appeared, while their play also became more inventive, departing more often from conventional patterns. Players now train with AI programs that assess every position, and a generation of young professionals has acquired insights that centuries of human play had overlooked. The transformation is not universally endorsed. Some veterans lament that openings have grown homogeneous, as players imitate the engines rather than develop a personal style, and that memorizing machine-approved sequences can substitute for understanding. Still, the evidence thus far suggests that a superhuman opponent has made human players stronger rather than rendering them redundant."
+},
+{
+"id": "r2-p17",
+"text": "Clara Wieck was born in Leipzig in 1819, and her father, a piano teacher of formidable and overbearing ambition, set out to make her a virtuoso. He succeeded spectacularly. By her teens she was performing across Europe to considerable acclaim, and before she turned seventeen she had completed a piano concerto of her own. Her father was considerably less pleased when she fell in love with one of his former pupils, the composer Robert Schumann, and he fought the match so bitterly that the couple had to take him to court before they could marry in 1840. In the years that followed, Clara bore eight children, managed the household, and kept performing, often championing her husband's music before skeptical audiences. After Robert suffered a mental collapse and died in an asylum in 1856, she sustained the family largely through her concert tours, which continued for decades. She composed far less after her marriage and sometimes doubted that a woman should compose at all, yet her songs and piano works are now increasingly performed. Her portrait once appeared on the German hundred-mark banknote, a tangible measure of how her reputation has grown."
+},
+{
+"id": "r2-p19",
+"text": "Ostriches do not, in fact, bury their heads in the sand when danger approaches; the image is an ancient misunderstanding. Yet economists borrowed it to name a very human habit. The ostrich effect is the inclination to evade information that we suspect will be unpleasant, even when that information would help us make better decisions. In one study, researchers examined how often investors in Sweden logged in to check their accounts. When markets were rising, they looked frequently, as if eager to savor good news; when markets were falling, the number of visits dropped noticeably. Comparable avoidance appears in medicine, where some people postpone screening tests because they dread a frightening result, and in household finance, where unopened bills accumulate on the kitchen table. The behavior is easy to understand. Bad news stings, and ignorance offers a transient refuge from anxiety. But the refuge is illusory, because the underlying facts do not change while we look away; the investment keeps losing value and the illness keeps progressing. Acknowledging the impulse is the first step toward resisting it, and some people find it easier to schedule regular, routine checks so that each look does not demand a fresh act of courage."
+},
+{
+"id": "r2-p20",
+"text": "On a Sunday morning in October 2025, shortly after the Louvre opened its doors to visitors, a small group of thieves raised a lift mounted on a truck to an upper window of the Apollo Gallery, the gilded hall that houses the remnants of the French crown jewels. They cut through the window, smashed display cases, and escaped with several pieces of nineteenth-century jewelry within minutes. In their haste they dropped a crown that had belonged to the empress Eugénie, which was later recovered, though damaged. The museum closed for the day, and an intensive manhunt commenced. The brazen theft provoked anguish and humiliation in France, but also a dispute that extended well beyond one museum. How could the most visited museum in the world have been so conspicuously vulnerable? Critics pointed to antiquated alarm systems and to audits whose warnings had gone unheeded. Museum directors elsewhere conceded an uncomfortable truth: institutions that exist to display treasures to millions of people can never be sealed like bank vaults, and every gain in openness carries some measure of risk. The theft thus exposed a dilemma that no alarm system can fully resolve."
+},
+{
+"id": "r2-p21",
+"text": "The Tasmanian devil, a stocky, aggressive carnivorous marsupial about the size of a small dog, survives in the wild only on the Australian island of Tasmania. In 1996 a photographer noticed devils with grotesque swellings around their mouths and faces. The cause proved to be one of the most bizarre diseases known: a cancer that is itself contagious. Devils frequently bite one another on the face while feeding and mating, and the bites transfer living tumor cells from one animal to another, where they grow as if they were a parasite. Infected devils usually perish within months, often of starvation once the disfiguring tumors make eating impossible. As the disease spread across the island, devil populations declined by roughly eighty percent. Authorities responded by establishing healthy insurance populations in zoos and on an offshore island. More recently there has been a faint glimmer of hope. Genetic studies suggest that devils in some heavily affected areas are evolving resistance, and a few animals have even been observed recovering from their tumors. Whether evolution can outpace the disease remains a matter of conjecture."
+},
+{
+"id": "r2-p22",
+"text": "Most people can say whether they are hungry or tired, but far fewer can tell, without touching their wrist, how fast their heart is beating. This sense of the body's internal state is called interoception. In a common laboratory test, volunteers silently count the beats of their heart over a short interval, and their tally is compared with an electronic recording. ①<u>Some people are remarkably accurate, while others miss many beats or count beats that never occurred.</u> These differences appear to matter well beyond the laboratory, with implications for mental health. ②<u>The heart pumps blood through a network of vessels that, laid end to end, would stretch for many thousands of kilometers.</u> Several studies have found that people who perceive their heartbeats more accurately also report experiencing emotions more intensely, a finding that echoes an old idea that feelings are partly the mind's reading of bodily changes. ③<u>The link may also run in a troubling direction, since a person who misreads ordinary sensations as danger may be prone to anxiety.</u> ④<u>Researchers are therefore testing whether interoception can be trained, for example by having people check their counts against a monitor.</u> The early results are promising, but the field remains young."
+},
+{
+"id": "r2-p23",
+"text": "High on a limestone cliff in western Iran, beside an ancient road, the Persian king Darius I ordered an enormous inscription carved around 520 BCE to proclaim his victories over rebels. The text was repeated in three languages, Old Persian, Elamite, and Babylonian, all written in wedge-shaped cuneiform. For more than two millennia virtually nobody could read it. In the 1830s and 1840s a British army officer, Henry Rawlinson, made copies of the inscription, at times balancing on ladders and ropes above a sheer drop. Because Old Persian used a relatively small set of signs and could be compared with known later languages, it was deciphered first, and it subsequently served as a key to the far more complex Babylonian script. Skeptics doubted that the decipherment was authentic and suspected that its claims were largely speculative. In 1857, a newly discovered Assyrian text was sent to four scholars, including Rawlinson, who translated it independently and in secret. When their sealed versions were opened and compared, they agreed closely enough to convince the learned world that cuneiform could indeed be read, opening the libraries of ancient Mesopotamia to modern study."
+},
+{
+"id": "r2-p25",
+"text": "Time spent in nature is widely thought to benefit health, but how much of it a person needs has long been unclear. A study published in 2019 tried to answer that question using survey data from roughly twenty thousand adults in England. Participants reported how many minutes they had spent in parks, woodlands, beaches, and other natural settings during the previous week, as well as how they rated their own health and well-being. The researchers found a striking threshold. People who had spent at least 120 minutes in nature were substantially more likely to report good health and high well-being than those who had spent no time there at all, whereas those who spent less than 120 minutes showed no clear advantage. The benefit leveled off at around 200 to 300 minutes, so that longer stays yielded little additional gain. Intriguingly, it did not seem to matter whether the time was taken in one long excursion or in several short visits spread across the week. The study was correlational, so it could not prove that nature caused the improvement; healthier people may simply go outdoors more. Even so, a weekly target of two hours is a modest and attainable goal."
+},
+{
+"id": "r2-s1",
+"text": "The buyer arrived on a gray morning in March, a younger man from a harbor two hours down the coast, and he walked twice around the boat that had belonged to Hana's father before saying anything at all.\n[A] Hana had anticipated feeling relief. For three years after her father's death the boat had sat at the pier, costing the family considerable mooring fees, and every storm warning sent her down to the harbor in the dark to check the ropes. Her mother had stopped asking when she would sell it, and the silence was worse than the asking.\n[B] Instead, as the man knelt to inspect the hull, Hana found herself listing things he had not asked about: the engine her father had rebuilt one winter in their kitchen, the dent near the bow from a night when the fog came in faster than anyone predicted, the radio that worked only if someone tapped it twice. The buyer listened courteously and nodded as if each blemish were a credential.\n[C] When they had signed the papers, he asked whether she wanted to take the boat out one last time. She said no, and then she said yes. They went out past the breakwater together, and he let her steer. On the way back he did not talk, and she was grateful. At the pier she handed him the keys and the small notebook in which her father had recorded every repair for thirty years, and she walked home without looking back, something she had not known she could do."
+},
+{
+"id": "r2-s2",
+"text": "During the pandemic, when travel abroad became virtually impossible and crowded indoor spaces felt risky, camping in Korea surged in popularity. [A] Campsites that had once been tranquil on weekdays were booked weeks in advance, outdoor retailers reported booming sales of tents and portable stoves, and television programs followed celebrities as they cooked over open fires. A particularly Korean variation, chabak, or sleeping in one's car, attracted those who wanted the outdoors without the labor of pitching a tent. With the rear seats folded down and a mattress laid in the back, an ordinary sport utility vehicle could become a bedroom parked beside a beach or a lake. [B] The boom brought tribulations as well as pleasures. Residents of coastal villages complained that car campers occupied public parking lots for days, idled their engines through the night, and left behind heaps of refuse. [C] Several local governments responded by prohibiting overnight stays in particular parking areas or by designating official sites with toilets and waste collection. Safety officials, for their part, repeatedly warned campers against using fuel-burning heaters inside closed tents and vehicles, where carbon monoxide can accumulate without any warning smell. [D] As borders reopened, some expected that the craze would fade. It has cooled from its peak, but camping appears to have settled into a durable habit for many families. The implication for local authorities is that a pastime once deemed marginal now demands the same planning as any other form of tourism."
+},
+{
+"id": "r3-p16",
+"text": "In the summer of 2025, a band called the Velvet Sundown attracted more than a million monthly listeners on a major streaming service before acknowledging that its songs had been created with the help of artificial intelligence. The episode brought into focus anxieties that had been accumulating for some time. Generative software can now produce a passable pop song in seconds, complete with lyrics and a synthetic voice. One streaming platform reported that a substantial share of the tracks uploaded to it each day were made entirely by machines. For listeners, the immediate issue is one of transparency: many feel deceived when they discover that a singer they admired does not exist, and some services have begun labeling music generated by AI. For musicians, the stakes are economic. Streaming royalties are divided according to the number of plays, so an avalanche of cheap, automated tracks dilutes the income of human artists, many of whom already earn very little. Yet outright prohibition is neither feasible nor evidently desirable, since numerous artists now use AI tools for tasks such as mixing or composing backing parts. The most promising policies, critics suggest, concentrate on disclosure and on preventing fraudulent streams rather than on banning the technology."
+},
+{
+"id": "r3-p17",
+"text": "Tawdry, meaning cheap and showy, has a surprisingly saintly origin. In the seventh century an Anglo-Saxon princess named Æthelthryth, later known as Saint Audrey, founded an abbey at Ely in eastern England. According to a story recorded by the historian Bede, she suffered in her final illness from a painful swelling on her neck. She regarded it as a just punishment for her youthful fondness for wearing necklaces. Centuries later, an annual fair held at Ely in her honor became renowned for selling silk neckbands known as Saint Audrey's lace. At first the lace was presumably a respectable souvenir, but over time the merchandise of the fair acquired a reputation for being garish and poorly made. Spoken quickly, Saint Audrey's lace was shortened to tawdry lace, and by the late seventeenth century tawdry was being used on its own to describe anything cheap and vulgar in its decoration. The word thus preserves, fused from a saint's name, the memory of a medieval marketplace and of the gradual decline of its wares from emblems of devotion to objects of dubious quality."
+},
+{
+"id": "r3-p18",
+"text": "After the First World War, the Australian government granted land in Western Australia to thousands of former soldiers, encouraging them to grow wheat. By 1932 the farmers confronted a peculiar adversary. Some twenty thousand emus, large flightless birds that migrate inland after their breeding season, had descended on the farmland, devouring crops and trampling fences. When the veterans appealed for help, the Minister of Defence dispatched a small detachment of soldiers armed with two machine guns and ten thousand rounds of ammunition. The operation, launched in November, swiftly degenerated into a humiliation. The birds scattered into small groups whenever the soldiers approached, ran at astonishing speed, and proved surprisingly difficult to kill. On one occasion a gun jammed just as a large flock came within range. After several weeks and thousands of rounds, the military withdrew, having killed only a modest fraction of the birds. Newspapers mocked the campaign, and a politician asked in Parliament whether medals were to be struck for the birds. In later years farmers relied instead on a bounty system and on better fencing, which proved far more effective than soldiers had been."
+},
+{
+"id": "r3-p20",
+"text": "For more than a century, railway lines have sliced through the hearts of Korean cities, carrying passengers and freight but also dividing neighborhoods, generating noise, and forcing pedestrians to detour around fences and level crossings. Relocating those tracks underground has long been an aspiration of urban planners, and one celebrated precedent shows what can be gained. When a section of the Gyeongui Line in western Seoul was moved below ground, the corridor it vacated was transformed into a long, narrow park lined with trees, coffee shops, and bookstores. The park quickly became one of the city's most popular places to stroll. In 2024 the National Assembly passed a special act intended to make such projects feasible on a far larger scale. The central idea is that the land freed by burying the tracks can be redeveloped and sold, and that the proceeds will help finance the enormously expensive tunneling. Advocates envision rail corridors across the country reborn as green spaces and new districts. Skeptics question whether land values outside the capital are high enough to cover the costs, and they warn that the projects could become a heavy fiscal burden if the anticipated development fails to materialize."
+},
+{
+"id": "r3-p21",
+"text": "The bar-tailed godwit is a wading bird that probes mudflats for worms and shellfish, and it holds a remarkable record. In October 2022, a young godwit fitted with a tiny satellite tag took off from Alaska and did not touch down again for eleven days. When it finally landed in Tasmania, it had flown roughly 13,500 kilometers without a single stop, a distance believed to be the longest nonstop flight ever recorded for a bird. Godwits cannot rest on the open ocean, so the journey demands extraordinary preparation. In the weeks before departure, the birds gorge themselves until fat accounts for more than half of their body weight. At the same time, organs they will not need in flight, such as parts of the digestive system, shrink dramatically, while the heart and flight muscles enlarge. The birds also appear to time their departures to coincide with favorable winds from passing storms, which can carry them a considerable part of the way. Scientists continue to investigate how they navigate with such precision across thousands of kilometers of featureless sea. What is already evident is that the bird's physiology is finely tuned to an undertaking that would be fatal to almost any other animal of its size."
+},
+{
+"id": "r3-p22",
+"text": "When we are anxious, we often talk to ourselves, and the manner in which we do so may matter more than we realize. The psychologist Ethan Kross and his colleagues asked volunteers to prepare a short speech under time pressure, a reliably stressful task. ①<u>Some were instructed to reflect on their feelings using the word \"I,\" while others were told to refer to themselves by name or with the word \"you.\"</u> Those in the second group reported less anxiety, and independent judges rated their speeches as better. Kross calls this technique distanced self-talk. ②<u>The idea is that addressing oneself as if speaking to another person creates a small psychological distance, allowing us to give ourselves the calm advice we would readily offer a friend.</u> ③<u>Because the shift requires only a change of pronoun, it can be used almost anywhere and costs nothing.</u> ④<u>Public speaking courses have become popular electives at many universities, where students practice before an audience every week.</u> The psychologist cautions that the technique is not a cure for serious anxiety disorders. As a way of steadying oneself before an interview or a difficult conversation, however, it appears to be remarkably effective."
+},
+{
+"id": "r3-p23",
+"text": "For most of the twentieth century, the invention of abstract painting was credited to a handful of men, among them Wassily Kandinsky, who produced his first nonrepresentational canvases around 1910. Yet in 1906 a Swedish painter named Hilma af Klint had already begun a series of vast, vividly colored works composed of spirals, petals, and geometric forms that represented nothing in the visible world. She was a trained and respected artist who earned her living painting conventional landscapes and portraits. Her abstract works arose from an entirely different source: she belonged to a small circle of women who held séances, and she believed that her monumental paintings were commissioned by spiritual guides. Doubting that her contemporaries would understand them, she rarely exhibited the works and stipulated that they should not be shown publicly until at least twenty years after her death. She died in 1944, and it was not until the 1980s that her abstractions reached a wider audience. In 2018 an exhibition at the Guggenheim Museum in New York became the most visited show in that institution's history, prompting art historians to reconsider a narrative they had long deemed settled."
+},
+{
+"id": "r3-p24",
+"text": "In 1933 the Chicago Symphony Orchestra gave the premiere of the Symphony in E minor by Florence Price, making her the first African American woman to have a symphony performed by a major American orchestra.\n[A] That precarious legacy was rescued by chance. In 2009 a couple preparing to renovate an abandoned house in St. Anne, Illinois, discovered boxes of her manuscripts, including two violin concertos and a symphony that had been presumed lost. The house had once been Price's summer home.\n[B] The achievement was all the more remarkable given the formidable obstacles she had confronted. Born in Little Rock, Arkansas, in 1887, she had moved north to escape racial violence, raised her children largely on her own after a difficult marriage, and supported them by teaching and by writing popular songs under a pseudonym.\n[C] Despite that early triumph, her reputation dwindled after her death in 1953. Orchestras rarely programmed her music, and much of it remained unpublished, scattered among private collections or simply unaccounted for.\nSince the discovery, performances and recordings of her works have multiplied, and Price is increasingly recognized not as a historical curiosity but as a composer of genuine distinction."
+},
+{
+"id": "r3-s1",
+"text": "The dog appeared at the bus terminal during the first cold week of November, a lean yellow mongrel with one torn ear, and for several days nobody paid him much heed. Jisu, working the ticket window on the late shift that winter and selling seats on the last buses to the mountain villages, noticed him because he always arrived around nine and lay down beside the radiator near Gate 4. Mrs. Bae, who ran the snack kiosk, was the first to feed him. She claimed she was only getting rid of day-old rice cakes. Then the cleaner, Mr. Seo, who complained loudly about the hair on his freshly mopped floor, quietly brought an old blanket and folded it beside the radiator. The drivers named him Gate Four. Within a month he had a water bowl, a collar donated by a passenger, and a small cardboard sign, written by a schoolgirl, asking people not to step on his tail. What none of the staff could explain was why he kept coming. One night, when a bus from the eastern villages pulled in late, Jisu watched him rise, walk to the door, and examine each passenger as they stepped down. Then he went back to his blanket. Mr. Seo mentioned that a farmer from that route had died in the autumn, and that the farmer had always taken his dog to town. After that, nobody at the terminal complained about the hair. They understood at last whom the dog came to meet every night, and that the terminal, without quite deciding to, had become a place for him to keep doing it."
+},
+{
+"id": "r3-s2",
+"text": "For generations the public library was defined by silence: long rows of shelves, reading tables, and a librarian ready to hush anyone who spoke above a whisper. In recent years, however, libraries in many countries have been remodeled into something closer to community centers. [A] Helsinki's central library, Oodi, which opened in 2018, devotes most of its floor space not to books but to sewing machines, 3D printers, recording studios, and kitchens that visitors can reserve. Many Korean cities have followed a similar course, renovating aging libraries with coffee shops, children's play areas, and terraces, and some report that visitor numbers have risen sharply after reopening. The rationale is partly practical. [B] As more reading and research move online, libraries must justify their budgets with services that a screen cannot provide. It is also civic. A library is one of the few indoor public spaces where anyone may stay for hours without buying anything. Planners increasingly see it as a remedy for loneliness and a meeting ground for people of different ages and backgrounds. [C] Not everyone is pleased. Students preparing for examinations and older readers complain that the new libraries are noisy and that quiet study spaces have shrunk to make room for events. [D] Some librarians fear that the emphasis on attractive spaces has diverted funds from collections and professional staff. The most successful renovations seem to be those that separate the lively and the contemplative, designating clearly zoned quiet floors so that a library can serve as a bustling public square without ceasing to be a refuge."
+}
+],
+"q": [
+[
+1,
+1,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nThe plan to replace the old covered market with a parking garage drew <u>vociferous</u> opposition from residents, who packed the council chamber and shouted down every speaker in favor of it.",
+[
+"arboreal",
+"sporadic",
+"covert",
+"clamorous"
+],
+[
+4
+],
+"vociferous 는 '시끄럽게 외치는, 목소리 높이는'이라 clamorous 와 가까워요. 회의장을 메우고 찬성 발언을 고함으로 막았다는 뒤 내용이 단서예요. arboreal(나무에 사는)은 문장과 관계없고, sporadic(산발적인)·covert(은밀한)는 소리 높여 반대하는 모습과 맞지 않아요."
+],
+[
+2,
+1,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nRather than confront the director, several actors <u>surreptitiously</u> rewrote their own lines during rehearsals, hoping that nobody would notice the changes before opening night.",
+[
+"covertly",
+"reluctantly",
+"flagrantly",
+"vehemently"
+],
+[
+1
+],
+"surreptitiously 는 '남몰래, 슬그머니'라 covertly 와 같은 뜻이에요. 감독과 맞서지 않고 아무도 모르기를 바랐다는 내용이 단서예요. flagrantly(노골적으로)는 반대이고, reluctantly(마지못해)·vehemently(격렬하게)는 숨긴다는 뜻이 없어요."
+],
+[
+3,
+1,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nThe museum's founder was famously <u>parsimonious</u>, reusing old envelopes and refusing to heat the galleries in winter even as he spent a fortune acquiring paintings.",
+[
+"lavish",
+"irascible",
+"gregarious",
+"stingy"
+],
+[
+4
+],
+"parsimonious 는 '몹시 인색한'이라 stingy 와 가까워요. 봉투를 다시 쓰고 난방도 안 했다는 예가 단서예요. lavish(아낌없는)는 반대이고, irascible(성마른)·gregarious(사교적인)는 돈 쓰는 태도와 관계없어요."
+],
+[
+4,
+1,
+"vblank",
+null,
+"Choose the word that best fills in the blank.\nMany travelers are convinced that searching for flights late at night guarantees a cheaper fare. Analyses of millions of ticket prices, however, suggest that such savings are largely ____: airlines adjust fares according to demand, route, and the date of departure, not the hour at which a customer happens to click.",
+[
+"exorbitant",
+"illusory",
+"perpetual",
+"tangible"
+],
+[
+2
+],
+"however 뒤에서 항공사는 수요·노선·날짜로 값을 정할 뿐 검색 시각과는 관계없다고 하니, 밤에 찾으면 싸다는 이득은 '착각에 불과한(illusory)' 거예요. tangible(실제로 손에 잡히는)은 반대이고, exorbitant(터무니없이 비싼)·perpetual(영원한)은 문맥과 맞지 않아요."
+],
+[
+5,
+1,
+"vblank",
+null,
+"Choose the word that best fills in the blank.\nAfter three weeks of high fever, the patient sank into a profound ____, sleeping through most of the day and showing little interest in food, visitors, or even the letters her grandchildren sent. Her doctors assured the family that such exhaustion was common during a long convalescence and would lift as her strength returned.",
+[
+"lethargy",
+"euphoria",
+"vigilance",
+"frenzy"
+],
+[
+1
+],
+"하루 대부분을 자고 음식·손님에도 관심이 없으며, 뒤에서 such exhaustion(그런 탈진)이라고 받으니 '무기력(lethargy)'이 맞아요. euphoria(행복감)·frenzy(광란)는 반대 방향이고, vigilance(경계)는 잠만 자는 모습과 어긋나요."
+],
+[
+6,
+1,
+"grammar",
+null,
+"Choose the underlined part that is NOT correct.\nIn 1849 the New York mechanic Walter Hunt, ①<u>who owed a friend</u> fifteen dollars, sat twisting a length of brass wire while he pondered how to repay the debt. Within a few hours he had fashioned a pin with a coiled spring at one end and a clasp that shielded the point. Hunt soon ②<u>turned his idea a patent</u> and sold the rights for four hundred dollars, a sum ③<u>that cleared his debt</u> with plenty to spare. The buyer, ④<u>not the inventor</u>, went on to earn a fortune from the humble safety pin.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+2
+],
+"'A를 B로 바꾸다'는 turn A into B 꼴이라 turned his idea into a patent 처럼 into 가 있어야 해요. 짝 전치사가 빠진 꼴이에요. who owed a friend fifteen dollars 는 owe+사람+돈 꼴, that cleared his debt 는 a sum 을 받는 관계절, not the inventor 는 The buyer 와 맞세운 삽입구라 맞아요."
+],
+[
+7,
+1,
+"grammar",
+null,
+"Choose the underlined part that is NOT correct.\nAnna Russell, the seventh Duchess of Bedford, is often credited ①<u>with inventing</u> afternoon tea in the 1840s. Because dinner in fashionable households ②<u>was served</u> as late as eight o'clock, she began asking for tea and a light snack in the late afternoon. Friends ③<u>invited to join</u> her soon adopted the habit themselves. Had the duchess not complained of a sinking feeling between meals, the custom might never ④<u>become</u> a national institution.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"Had the duchess not complained ... 는 if 를 뺀 가정법 과거완료(If the duchess had not complained)예요. 1840년대라는 지난 일을 거꾸로 가정하므로 주절도 might never have become 이 되어야 해요. credited with inventing, 수동 was served, 과거분사 invited 는 맞아요."
+],
+[
+8,
+1,
+"grammar",
+null,
+"Choose the underlined part that is NOT correct.\nWombats are the only animals known to produce cube-shaped droppings, a peculiarity ①<u>what</u> puzzled biologists for many years. Researchers long wondered ②<u>how such a shape could form</u> inside a soft, round intestine. A team that examined wombats ③<u>killed in road accidents</u> found that the final section of the gut has walls of uneven stiffness, which ④<u>squeeze</u> the waste into cubes. The animals then stack the droppings on rocks and logs, probably to mark their territory.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+1
+],
+"a peculiarity 라는 선행사가 있으므로 관계대명사는 that 이나 which 여야 해요. what 은 선행사를 품은 관계대명사라 앞에 명사를 둘 수 없어요. how such a shape could form 은 간접의문문 어순(how+주어+동사), killed 는 수동 분사, squeeze 는 복수 walls 와 맞아요."
+],
+[
+9,
+1,
+"grammar",
+null,
+"Choose the underlined part that is NOT correct.\nFor more than a century, Thomas Edison was believed ①<u>to have made</u> the first recording of a human voice in 1877. That honor now ②<u>is belonging</u> to Édouard-Léon Scott de Martinville, a Parisian printer whose device could write sound waves onto paper ③<u>but could not</u> play them back. In 2008 American researchers converted into sound a set of his tracings ④<u>made in 1860</u>, revealing the faint voice of someone singing a French folk song.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+2
+],
+"belong 은 '~에 속하다'라는 상태를 나타내는 동사라 진행형으로 쓰지 않아요. is belonging 이 아니라 belongs 가 맞아요. to have made 는 believed 보다 앞선 일을 나타내는 완료부정사, but could not 은 could write 와 짝을 이루는 대등 구조, made in 1860 은 tracings 를 꾸미는 과거분사예요."
+],
+[
+10,
+1,
+"cloze",
+null,
+"Choose the expression that best completes the passage.\nWhen Melvil Dewey published his classification scheme in 1876, many libraries shelved books by size or by the date on which they had been acquired. Dewey divided knowledge into ten main classes, each assigned a block of a hundred numbers, and allowed every class to be subdivided by adding digits after a decimal point. Critics have since pointed out its biases, such as the meager range of numbers it originally allotted to religions other than Christianity. Even so, the beauty of the system was that ____: a new book on, say, beekeeping could slip into place beside its neighbors without forcing librarians to renumber the rest of the collection.",
+[
+"it could expand indefinitely without disturbing existing numbers",
+"it obliged libraries to purchase new shelves every single year",
+"it treated the physical size of a book as its defining feature",
+"it arranged every book strictly by the year of its first publication"
+],
+[
+1
+],
+"콜론 뒤에서 새 책이 다른 책 번호를 바꾸지 않고 제자리에 들어간다고 했어요. 소수점 뒤로 숫자를 붙여 '기존 번호를 건드리지 않고 끝없이 늘릴 수 있다'는 것이 장점이에요. 크기나 날짜로 꽂던 방식은 듀이 이전의 모습이에요."
+],
+[
+11,
+1,
+"cloze",
+null,
+"Choose the expression that best completes the passage.\nSailors in the age of sail had no speedometer, yet they needed to know how fast their ships were moving in order to estimate their position. Their solution was ingeniously simple. A wooden board weighted to float upright was tossed overboard, trailing a line in which knots had been tied at regular intervals. Speed at sea is still measured in knots today, long after satellites have made the old wooden log obsolete, and the reason lies in how the measurement was taken: while one sailor watched a small sandglass, another counted ____.",
+[
+"how many knots slipped away while the ship lay at anchor",
+"how many waves struck the hull before the glass was empty",
+"how many knots slipped through his fingers before the sand ran out",
+"how many sailors climbed up the rigging while the sand was still falling"
+],
+[
+3
+],
+"모래시계가 다 떨어질 때까지 손가락 사이로 풀려 나간 매듭 수를 세면 곧 속도가 되고, 그래서 지금도 바다 속도 단위가 knot 라고 이어져요. 파도·선원 수는 매듭과도 속도와도 관계가 없고, 닻을 내리고 서 있는 배로는 속도를 잴 수 없어요."
+],
+[
+12,
+1,
+"cloze",
+null,
+"Choose the expression that best completes the passage.\nOn the morning of All Saints' Day in 1755, an earthquake, followed by a tsunami and days of fire, devastated Lisbon, then one of the wealthiest cities in Europe. The catastrophe shook more than buildings. Voltaire attacked the fashionable optimism of his age, first in a poem on the disaster and later, more famously, in his satirical novel Candide, whose cheerful tutor insists that all is for the best even as calamity follows calamity. What he found grotesque, in the face of so much innocent suffering, was the claim of several influential thinkers that ours was the best of all possible worlds, ____.",
+[
+"so that even apparent evils must serve some greater good",
+"and that earthquakes could be foretold by careful study",
+"and that such suffering showed how badly the world was made",
+"although few of them had ever traveled beyond their homeland"
+],
+[
+1
+],
+"볼테르가 무고한 희생 앞에서 이 생각을 끔찍하게 여겼고, 캉디드의 가정교사가 재앙 속에서도 '모든 것이 최선'이라 우긴다고 했어요. 그러니 빈칸은 '겉보기 악도 더 큰 선에 쓰인다'는 낙관론이 맞아요. 지진 예측은 그 철학과 관계없고, 세상이 잘못 만들어졌다는 것은 낙관론과 정반대예요."
+],
+[
+13,
+1,
+"cloze",
+null,
+"Choose the expression that best completes the passage.\nIn 1865 the English economist William Stanley Jevons published The Coal Question, a book that economists still invoke when they ask whether more efficient cars, lights, or computers will genuinely reduce the total consumption of energy. Its central puzzle troubled many of his contemporaries. James Watt's improvements had made steam engines far more efficient, so that each engine burned much less coal to perform the same work. One might expect such efficiency to conserve the nation's coal, but Jevons argued the opposite: by making steam power cheaper, efficiency encouraged so many new uses that Britain ____.",
+[
+"returned to water power",
+"exported its engines abroad",
+"stopped mining coal altogether",
+"consumed more coal than ever"
+],
+[
+4
+],
+"효율이 좋아져 증기 동력이 싸지자 새 쓰임이 너무 많이 생겼다는 흐름이니, 영국은 '어느 때보다 많은 석탄을 썼다'가 맞아요. 같은 문장 앞쪽의 '석탄을 아낄 것 같다'와 반대(but … the opposite)라는 말이 단서예요. 채굴 중단·수력 회귀는 근거가 없어요."
+],
+[
+14,
+1,
+"reading",
+"r1-p18",
+"Which of the following is the best title for the passage?",
+[
+"The Bitter Rivalry Between Satie and Milhaud",
+"How Airports Commissioned Their First Composers",
+"Why Parisian Audiences Stopped Talking at Concerts",
+"Music Not Meant to Be Heard: Satie's Prophetic Joke"
+],
+[
+4
+],
+"아무도 귀 기울이지 않기를 바란 '가구 음악'이 그때는 실패했지만 배경 음악과 이노의 공항 음반으로 이어졌다는 글이라 'Music Not Meant to Be Heard: Satie's Prophetic Joke' 보기가 맞아요. 청중이 조용해진 일은 한 일화일 뿐이고, 사티와 미요는 함께 일한 동료였어요."
+],
+[
+15,
+1,
+"reading",
+"r1-p19",
+"Which of the following best states the main idea of the passage?",
+[
+"One new purchase can push us into a series of further purchases.",
+"Retailers deceive customers by selling poorly made accessories.",
+"Philosophers should not accept expensive gifts from their friends.",
+"A single purchase rarely affects what else a person decides to buy."
+],
+[
+1
+],
+"새 가운 하나 때문에 의자·책상·벽걸이까지 바꾸게 된 일화로, 물건 하나가 줄줄이 다음 구매를 부른다는 '디드로 효과'를 설명해요. 지문 마지막 문장도 구매의 진짜 값에 그다음 구매까지 들어간다고 정리해요. 물건 하나가 다른 구매에 거의 영향을 주지 않는다는 것은 정반대예요."
+],
+[
+16,
+1,
+"reading",
+"r1-p20",
+"Which of the following is NOT stated or implied in the passage?",
+[
+"The word was used in printing before it gained its present meaning.",
+"Prisoners at Andersonville feared the dead line more than they feared disease.",
+"Guards at Andersonville were ordered to shoot any prisoners who crossed a marked line.",
+"Journalists were using the word in its modern sense more than fifty years after Wirz's trial."
+],
+[
+2
+],
+"포로들이 dead line 을 병보다 더 두려워했다는 비교는 글에 없어요. 'Prisoners at Andersonville feared the dead line more than they feared disease.' 보기가 답이에요. 선을 넘으면 쏘라는 명령, 인쇄 용어를 거쳐 지금 뜻이 된 것은 글과 같고, 1865년 재판에서 1920년대까지는 50년이 넘으니 기자들이 지금 뜻으로 쓴 때도 맞아요."
+],
+[
+17,
+1,
+"reading",
+"r1-p21",
+"Which of the following is NOT stated or implied in the passage?",
+[
+"the decline in young eels arriving in Europe",
+"an ancient explanation of where eels come from",
+"the price that European eels fetch in fish markets",
+"the clue that led Schmidt to the eels' distant spawning area"
+],
+[
+3
+],
+"아리스토텔레스의 '진흙에서 생긴다'는 설명, 서쪽으로 갈수록 작아지는 유생이라는 슈미트의 단서, 1980년대 뒤 어린 뱀장어 감소는 모두 나와요. 시장에서 팔리는 값은 나오지 않아요."
+],
+[
+18,
+1,
+"reading",
+"r1-p22",
+"Which of the underlined sentences does NOT fit the flow of the passage?",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"글은 괴로운 일을 글로 쓰면 건강에 도움이 된다는 페니베이커 연구와 그 까닭을 다뤄요. 대학이 과제를 전자 파일로 받는다는 문장은 이 흐름과 관계가 없어요."
+],
+[
+19,
+1,
+"reading",
+"r1-p23",
+"Which of the following is true according to the passage?",
+[
+"The manuscripts deal almost entirely with religious law.",
+"Most of the manuscripts had been moved out before the militants left.",
+"Bamako was the city where most of the manuscripts were originally written.",
+"The militants destroyed nearly all of the manuscripts when they fled in 2013."
+],
+[
+2
+],
+"무장 세력이 달아나며 도서관에 불을 질렀지만 문서 대부분은 이미 빼돌려졌다고 했으니 'Most of the manuscripts had been moved out before the militants left.' 보기가 맞아요. 거의 다 불탔다는 것은 반대이고, 문서를 쓴 곳은 바마코가 아니라 팀북투이며, 법·천문·의학·시까지 다뤘다고 했어요."
+],
+[
+20,
+1,
+"reading",
+"r1-p24",
+"Choose the most appropriate order of [A], [B], and [C] to follow the given paragraph.",
+[
+"[A] - [B] - [C]",
+"[B] - [C] - [A]",
+"[C] - [A] - [B]",
+"[B] - [A] - [C]"
+],
+[
+4
+],
+"지문 첫 단락의 지진 뒤에 처음으로 특별 경보를 냈다는 [B], 그 경보에 대한 반응(The response)을 다룬 [A], 일주일 뒤 경보가 풀리고 나온 비판과 반론 [C] 순서예요. [A] 의 The response 는 경보가 먼저 나와야 받을 수 있어요."
+],
+[
+21,
+1,
+"reading",
+"r1-p25",
+"What is the passage mainly about?",
+[
+"the medical value of plants and stones",
+"the decline of medieval liturgical music",
+"the reasons the pope distrusted religious visions",
+"the remarkably varied accomplishments of a medieval abbess"
+],
+[
+4
+],
+"환시 기록, 작곡, 의학·자연사 저술, 교황·황제와의 편지, 설교 여행까지 힐데가르트가 해낸 여러 일을 차례로 드는 글이라 'the remarkably varied accomplishments of a medieval abbess' 보기가 맞아요. 식물·돌의 약효는 그중 한 저술의 내용일 뿐이에요."
+],
+[
+22,
+1,
+"reading",
+"r1-s1",
+"Which is the best place in the passage for the following sentence?\nNora had never seen anyone read a garment the way other people read a letter.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]"
+],
+[
+3
+],
+"넣을 문장은 옷을 편지처럼 '읽는' 모습을 처음 봤다는 감탄이에요. 고모가 재킷을 뒤집고 솔기를 더듬어 본 뒤, 아버지의 어깨와 서 있던 자세까지 읽어 내는 말 사이인 [C] 가 맞아요. [D] 앞은 손님이 거울을 보는 장면이라 이어지지 않아요."
+],
+[
+23,
+1,
+"reading",
+"r1-s1",
+"Which of the following is true according to the passage?",
+[
+"Nora asked to work in the shop from the very first day.",
+"The aunt could tell something about the customer's father from his suit.",
+"The aunt had trained as a tailor in the city before opening the shop.",
+"The customer brought in a suit he had worn at his own wedding many years before."
+],
+[
+2
+],
+"고모는 양복만 보고 아버지가 어깨가 더 넓었고 아들과 같은 자세로 섰다고 말해요. 'The aunt could tell something about the customer's father from his suit.' 보기가 맞아요. 노라는 처음 몇 주 뾰로통해 있었고, 양복은 돌아가신 아버지 것이었으며, 고모가 어디서 일을 배웠는지는 나오지 않아요."
+],
+[
+24,
+1,
+"reading",
+"r1-s2",
+"According to Tedeschi and Calhoun, what gives rise to posttraumatic growth?",
+[
+"the traumatic event itself",
+"advice offered by strangers who share no experience",
+"survivors' efforts to understand what they have been through",
+"the complete and permanent absence of any lasting emotional distress"
+],
+[
+3
+],
+"두 연구자는 성장이 일어난 일을 이해하려고 애쓰는 과정에서 나오고, 생존자가 무너진 믿음을 다시 세우게 된다고 했어요. 'survivors' efforts to understand what they have been through' 보기가 맞아요. 트라우마 자체가 좋은 것을 주는 건 아니라고 했고, 고통이 사라진다는 것은 '둘이 함께 간다'는 설명과 반대이며, 낯선 사람의 조언은 나오지 않아요."
+],
+[
+25,
+1,
+"reading",
+"r1-s2",
+"Which of the following is NOT true according to the passage?",
+[
+"The researchers warned against expecting every survivor to grow.",
+"Some critics think reports of growth may reflect wishful thinking.",
+"Tedeschi and Calhoun claimed that growth usually removes distress entirely.",
+"Survivors described valuing ordinary days and supportive people more after their ordeal."
+],
+[
+3
+],
+"두 연구자는 성장이 고통을 지우지 않고 둘이 몇 해씩 함께 간다고 했어요. 고통을 '없앤다'는 'Tedeschi and Calhoun claimed that growth usually removes distress entirely.' 보기가 글과 맞지 않아요. 평범한 날을 더 소중히 여기게 된 것, 바람이 섞인 이야기일 수 있다는 비판, 모두에게 성장을 바라지 말라는 경고는 글과 같아요."
+],
+[
+1,
+2,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nThe senator later apologized for his <u>facetious</u> remark about the flood, admitting that a joke was hardly appropriate while thousands of families were still waiting to return to their homes.",
+[
+"flippant",
+"solemn",
+"slanderous",
+"verbose"
+],
+[
+1
+],
+"facetious 는 '(진지해야 할 때) 농담조의, 경박한'이라 flippant 와 가까워요. a joke was hardly appropriate(농담은 맞지 않았다)가 단서예요. solemn(엄숙한)은 반대이고, slanderous(중상하는)·verbose(장황한)는 농담과 관계없어요."
+],
+[
+2,
+2,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nOfficials accused the anonymous accounts of trying to <u>foment</u> unrest by spreading false rumors that the government planned to seize private savings.",
+[
+"instigate",
+"quell",
+"document",
+"forecast"
+],
+[
+1
+],
+"foment 는 '(불화·소요를) 부추기다, 조장하다'라 instigate 와 같은 뜻이에요. 거짓 소문을 퍼뜨린다는 수단이 단서예요. quell(진압하다)은 반대이고, document(기록하다)·forecast(예측하다)는 소요를 일으키는 뜻이 없어요."
+],
+[
+3,
+2,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nGrowers in the valley now sow several different crops each season, because the spring weather there is notoriously <u>capricious</u>, swinging from frost to heat within a single week.",
+[
+"opulent",
+"arid",
+"torrential",
+"fickle"
+],
+[
+4
+],
+"capricious 는 '변덕스러운'이라 fickle 과 가까워요. 한 주 안에 서리에서 더위로 오간다는 뒤 내용이 단서예요. opulent(호화로운)는 날씨와 관계없고, arid(메마른)·torrential(퍼붓는)은 날씨 한쪽만 가리켜요."
+],
+[
+4,
+2,
+"vblank",
+null,
+"Choose the word that best fills in the blank.\nWolfgang Amadeus Mozart was a strikingly ____ child. He was composing short keyboard pieces by the age of five and touring the courts of Europe as a performer before most children have learned to read music at all. Such early brilliance, however, offers no guarantee of later achievement, and many child prodigies fade from view.",
+[
+"indolent",
+"taciturn",
+"precocious",
+"obstinate"
+],
+[
+3
+],
+"다섯 살에 곡을 쓰고 어린 나이에 유럽 궁정을 돌며 연주했다는 내용, 뒤의 early brilliance 와 child prodigies 가 단서라 '조숙한(precocious)'이 맞아요. indolent(게으른)는 반대이고, taciturn(과묵한)·obstinate(완고한)는 재능과 관계없어요."
+],
+[
+5,
+2,
+"vblank",
+null,
+"Choose the word that best fills in the blank.\nRestoring a medieval manuscript is painstaking work. Conservators may spend an entire week stabilizing a single page, examining every flake of pigment under a microscope and recording each step so that later specialists can understand what was done. Only a ____ temperament is suited to a task in which a moment of haste can destroy what has survived for eight centuries.",
+[
+"meticulous",
+"impetuous",
+"complacent",
+"cavalier"
+],
+[
+1
+],
+"한 쪽에 한 주를 들이고 물감 조각 하나까지 현미경으로 본다는 내용, '서두르면 망친다'는 마지막 말이 단서라 '꼼꼼한(meticulous)' 기질이 맞아요. impetuous(성급한)는 반대이고, complacent(안일한)·cavalier(무신경한)도 이 일과 맞지 않아요."
+],
+[
+6,
+2,
+"grammar",
+null,
+"Choose the underlined part that is NOT correct.\nOn April 3, 2024, the strongest earthquake ①<u>to strike</u> Taiwan in a quarter of a century shook the eastern county of Hualien. Landslides ②<u>were blocked</u> roads in Taroko Gorge, a national park famous for its marble cliffs, where hundreds of hikers and workers ③<u>were stranded</u>. Yet the death toll remained relatively low, a result that experts credited largely to strict building codes, which ④<u>have been tightened</u> repeatedly since a devastating quake in 1999, and to alerts sent to mobile phones.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+2
+],
+"block 은 목적어(roads)를 받는 타동사이고 산사태가 길을 '막은' 것이라 능동 blocked 가 맞아요. 목적어가 있는데 수동태 were blocked 를 쓸 수 없어요. to strike 는 최상급 the strongest earthquake 를 꾸미는 to부정사, were stranded 는 '발이 묶였다'는 수동, have been tightened 는 복수 선행사 codes 에 맞춘 현재완료 수동이라 맞아요."
+],
+[
+7,
+2,
+"grammar",
+null,
+"Choose the underlined part that is NOT correct.\n①<u>Naming</u> after a bakery in Connecticut, the Frisbee began life as a humble pie tin. Students at nearby colleges are said to have tossed empty tins from the Frisbie Pie Company across their campuses, ②<u>shouting a warning</u> to anyone in the way. In the late 1940s an inventor named Walter Morrison designed a plastic disc ③<u>that flew</u> farther and more steadily than any tin, and a toy company that bought his design in 1957 soon renamed it, ④<u>borrowing the bakery's name</u> with a slight change in spelling.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+1
+],
+"분사구문의 숨은 주어는 the Frisbee 예요. 프리스비는 빵집 이름을 '따서 이름 붙여진' 쪽이므로 능동 Naming 이 아니라 수동 Named 가 맞아요. shouting, borrowing 은 주어가 직접 하는 일이라 능동 분사가 맞고, that flew 는 disc 를 받는 관계절이에요."
+],
+[
+8,
+2,
+"grammar",
+null,
+"Choose the underlined part that is NOT correct.\nNearly two thousand years ago, the engineer Hero of Alexandria described a device that some historians call the first vending machine. A worshipper dropped a coin into a slot at the top of the box, where it landed on a small pan ①<u>attached to</u> a lever. As the pan tilted under the weight, the lever opened a valve, and holy water flowed out. Hero even explained ②<u>how much water would the machine release</u>: the flow stopped as soon as the coin ③<u>slid off</u> the pan and the lever ④<u>swung back</u>.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+2
+],
+"explained 의 목적어로 쓰인 간접의문문은 '의문사+주어+동사' 어순이라 how much water the machine would release 가 되어야 해요. would the machine 처럼 주어·조동사를 뒤집는 것은 직접의문문 어순이에요. attached to 는 pan 을 꾸미는 과거분사, slid off·swung back 은 과거 시제로 맞아요."
+],
+[
+9,
+2,
+"grammar",
+null,
+"Choose the underlined part that is NOT correct.\nIn 1935 the department store owner Edgar Kaufmann asked Frank Lloyd Wright to design a weekend house near a waterfall in the woods of Pennsylvania. Kaufmann ①<u>had expected</u> a house with a view of the falls. Instead, Wright placed the building directly ②<u>above the stream</u>, so that the water seemed to flow beneath the living room. The house, which ③<u>was resembled</u> a stack of stone and concrete shelves, ④<u>was largely completed</u> by 1937, and it is now regarded as one of the masterpieces of American architecture.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"resemble 은 '~를 닮다'라는 뜻의 타동사지만 수동태로 쓰지 않는 동사예요. which resembled a stack of ... shelves 가 맞아요. had expected 는 설계보다 앞선 기대를 나타내는 과거완료, above the stream 은 위치, was largely completed 는 집이 '지어진' 것이라 수동이 맞아요."
+],
+[
+10,
+2,
+"cloze",
+null,
+"Choose the expression that best completes the passage.\nOn the tiny Galápagos island of Daphne Major, the biologists Peter and Rosemary Grant measured the beaks of nearly every finch for decades. In 1977 a severe drought struck, and the small, soft seeds the birds preferred all but vanished. What remained were large, hard seeds that only finches with deeper, stronger beaks could crack. Much of the population perished. Evolution, which Darwin had presumed was far too slow to observe, was then measured in a single generation: the survivors were not a random sample, and when they bred, ____.",
+[
+"their offspring had noticeably larger beaks on average",
+"their chicks preferred small seeds even more strongly",
+"the island's plants began producing softer seeds again",
+"the birds abandoned the island for wetter neighboring islands"
+],
+[
+1
+],
+"가뭄에 크고 단단한 씨를 깰 수 있는 부리 큰 새만 살아남았고, 그 새들이 번식했으니 새끼 부리가 '평균적으로 더 커졌다'가 맞아요. 같은 문장 앞에서도 한 세대 만에 진화를 쟀다고 해요. 작은 씨를 더 좋아하게 됐다거나 섬을 떠났다는 말은 근거가 없어요."
+],
+[
+11,
+2,
+"cloze",
+null,
+"Choose the expression that best completes the passage.\nIn the early years of Soviet cinema, the filmmaker Lev Kuleshov is said to have conducted a celebrated experiment. He took a close-up of an actor with a deliberately blank expression and intercut it with three different images: a bowl of soup, a child in a coffin, and a woman reclining on a sofa. Audiences reportedly lauded the actor's subtle performance, even though the face in which they perceived hunger, grief, or desire ____, a result whose implication for filmmakers was profound: meaning arises not only from individual shots but from the way they are juxtaposed.",
+[
+"was hidden from view by heavy shadow throughout",
+"belonged to a far more famous and expensive actor",
+"had been filmed separately for each of the three scenes",
+"had in fact remained exactly the same in every version"
+],
+[
+4
+],
+"같은 무표정 장면을 서로 다른 그림과 붙였을 뿐인데 관객은 배고픔·슬픔·욕망을 읽었다는 실험이에요. 그러니 그 얼굴은 '세 편 모두 똑같았다'가 맞고, even though 가 이 반전을 알려 주며 빈칸 뒤의 '배열에서 뜻이 생긴다'와도 이어져요. 따로 찍었다면 실험의 요점이 사라져요."
+],
+[
+12,
+2,
+"cloze",
+null,
+"Choose the expression that best completes the passage.\nThe five interlocking rings that serve as the emblem of the Olympic Games were designed in 1913 by Pierre de Coubertin, the French aristocrat who revived the Games, and first flew on an Olympic flag at the Antwerp Games of 1920. The rings, colored blue, yellow, black, green, and red on a white background, are often said to stand for five continents, although the official charter has never been quite so specific. Coubertin himself offered a different explanation, one that counted the white background as well: ____, from the blue and yellow of Sweden to the red and white of Japan.",
+[
+"the colors had been chosen at random, with no meaning at all",
+"each color stood for a sport that had appeared in ancient Greece",
+"together the six colors could reproduce the flag of every nation",
+"the rings honored the five cities that had first hosted the Games"
+],
+[
+3
+],
+"흰 바탕까지 센 Coubertin 의 설명이 들어갈 자리예요. 여섯 색으로 모든 나라 국기를 그릴 수 있다는 것이 그 설명이고, 빈칸 뒤 스웨덴·일본 국기 예가 이를 받쳐 줘요. 고대 종목·첫 개최 도시는 색 이야기와 이어지지 않고, 아무 뜻 없이 골랐다는 것은 설명을 내놓았다는 흐름과 반대예요."
+],
+[
+13,
+2,
+"cloze",
+null,
+"Choose the expression that best completes the passage.\nEvery twenty years, the main sanctuaries of the Ise Grand Shrine in Japan are dismantled and rebuilt on an adjacent plot of land, using fresh cypress timber and the same techniques that have been employed for well over a thousand years. The most recent rebuilding was completed in 2013. To outsiders the practice can seem extravagant, since the old buildings are hardly worn out. Yet what the shrine preserves is less a building than a body of knowledge, and the interval is chosen accordingly: twenty years is long enough that the work must be repeated, but short enough that ____.",
+[
+"the priests of the shrine can avoid learning any new skills",
+"visitors never notice that the buildings have been replaced",
+"the cypress trees used for the timber have no time to grow at all",
+"craftsmen who learned the work as apprentices can later teach it as masters"
+],
+[
+4
+],
+"앞에서 신궁이 지키는 것은 건물보다 '지식'이라고 했어요. 20년이면 젊을 때 견습으로 배운 장인이 다음 번엔 스승으로 가르칠 수 있으니 기술이 세대를 건너 이어진다는 'craftsmen who learned the work as apprentices can later teach it as masters' 보기가 맞아요. 나무가 자랄 틈이 없다거나 새 기술을 안 배운다는 것은 흐름과 어긋나요."
+],
+[
+14,
+2,
+"reading",
+"r2-p16",
+"Which of the following best states the main idea of the passage?",
+[
+"Young players should avoid training with AI programs.",
+"AI has, on balance, raised the level of human professional baduk.",
+"Professional baduk lost most of its players after AlphaGo appeared.",
+"Traditional patterns of play have proved superior to AI suggestions."
+],
+[
+2
+],
+"AlphaGo 뒤 비관적 예측과 달리 프로 기사의 수 선택이 좋아지고 새로워졌다는 연구를 들며, 지문 마지막 문장에서 AI 가 사람을 더 강하게 만들었다고 정리해요. 획일화 걱정도 나오지만 '그래도(Still)' 뒤가 요지예요. 기사가 대부분 떠났다는 말은 없어요."
+],
+[
+15,
+2,
+"reading",
+"r2-p17",
+"Which of the following is true according to the passage?",
+[
+"Clara toured Europe mainly to escape her father's control.",
+"Clara gave up performing in public after her marriage to Robert.",
+"Clara had to win a legal dispute with her father in order to marry.",
+"Robert Schumann was the man who first taught Clara to play the piano as a child."
+],
+[
+3
+],
+"아버지가 혼인을 몹시 반대해 법정까지 가서야 1840년에 결혼했다고 했으니 'Clara had to win a legal dispute with her father in order to marry.' 보기가 맞아요. 결혼 뒤에도 연주를 이어 갔고, 처음 가르친 사람은 아버지이며, 아버지에게서 벗어나려고 연주 여행을 했다는 말은 없어요."
+],
+[
+16,
+2,
+"reading",
+"r2-p19",
+"What is the passage mainly about?",
+[
+"the benefits of regular medical screening tests",
+"the advantages of ignoring bad news about one's health",
+"the actual behavior of wild ostriches confronting approaching danger",
+"the habit of avoiding information that is likely to be unpleasant"
+],
+[
+4
+],
+"나쁜 소식이 짐작되는 정보를 피하는 '타조 효과'를 투자·건강 검진·청구서 예로 설명하는 글이에요. 타조의 실제 행동은 지문 첫 문장에서 이름의 유래로만 나오고, 검진의 이점은 예 가운데 하나일 뿐이에요. 나쁜 소식을 외면하는 데 이점이 있다는 것은 글과 반대예요."
+],
+[
+17,
+2,
+"reading",
+"r2-p20",
+"Which of the following is true according to the passage?",
+[
+"The thieves had worked as guards at the museum before the theft.",
+"All of the stolen jewels were recovered undamaged on the same day.",
+"The thieves entered the gallery through a window rather than a door.",
+"Museum directors argued that museums can be made perfectly secure with modern alarms."
+],
+[
+3
+],
+"트럭에 단 리프트로 위층 창문까지 올라가 창을 자르고 들어갔다고 했으니 'The thieves entered the gallery through a window rather than a door.' 보기가 맞아요. 도둑들이 경비원이었다는 말은 없고, 되찾은 것은 떨어뜨린 왕관 하나이며 그마저 손상됐어요. 관장들은 금고처럼 막을 수는 없다고 인정했어요."
+],
+[
+18,
+2,
+"reading",
+"r2-p21",
+"Which of the following is NOT stated or implied in the passage?",
+[
+"how the devils' numbers changed before 1996",
+"where conservationists placed healthy devils",
+"how the cancer passes from one devil to another",
+"evidence that some devils may be developing resistance"
+],
+[
+1
+],
+"물기로 암세포가 옮는다는 것, 동물원과 앞바다 섬에 건강한 개체를 두었다는 것, 저항성이 생긴다는 연구는 모두 나와요. 1996년 이전에 개체 수가 어떻게 바뀌었는지는 나오지 않아요."
+],
+[
+19,
+2,
+"reading",
+"r2-p22",
+"Which of the underlined sentences does NOT fit the flow of the passage?",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+2
+],
+"글은 몸 안의 상태를 알아채는 감각(심장 박동을 세는 감각)이 감정·불안과 어떻게 이어지는지를 다뤄요. 혈관을 이으면 수천 킬로미터라는 문장은 심장 이야기이긴 해도 이 흐름과 관계가 없어요."
+],
+[
+20,
+2,
+"reading",
+"r2-p23",
+"Which of the following is NOT stated or implied in the passage?",
+[
+"The scholars in 1857 worked without consulting one another.",
+"Rawlinson copied the inscription at considerable personal risk.",
+"The Assyrian text of 1857 was harder to translate than the inscription itself.",
+"More than two thousand years separated the carving of the inscription from Rawlinson's copies."
+],
+[
+3
+],
+"1857년 아시리아 문서가 비문보다 번역하기 어려웠다는 비교는 글에 없어요. 'The Assyrian text of 1857 was harder to translate than the inscription itself.' 보기가 답이에요. 기원전 520년 무렵 새긴 비문을 1830~40년대에 베꼈으니 2천 년이 훨씬 넘게 떨어져 있고, 절벽 위 위험한 필사, 따로 비밀리에 한 번역은 글과 같아요."
+],
+[
+21,
+2,
+"reading",
+"r2-p25",
+"Which of the following is the best title for the passage?",
+[
+"How Parks in England Became Overcrowded",
+"Why Healthy People Prefer Beaches to Woodlands",
+"Long Excursions Versus Short Visits: A Clear Winner",
+"Two Hours a Week: Finding a Threshold for Nature's Benefits"
+],
+[
+4
+],
+"주 120분이라는 문턱을 넘어야 건강·행복 응답이 좋아진다는 연구를 소개하고 '주 두 시간'을 목표로 제안하는 글이라 'Two Hours a Week: Finding a Threshold for Nature's Benefits' 보기가 맞아요. 한 번에 길게 가든 여러 번 짧게 가든 차이가 없었다고 했으니 'Long Excursions Versus Short Visits: A Clear Winner' 보기는 글과 반대예요."
+],
+[
+22,
+2,
+"reading",
+"r2-s1",
+"Choose the most appropriate order of [A], [B], and [C] to follow the given paragraph.",
+[
+"[A] - [B] - [C]",
+"[B] - [A] - [C]",
+"[A] - [C] - [B]",
+"[C] - [A] - [B]"
+],
+[
+1
+],
+"구매자가 배를 둘러보는 첫 장면 뒤, '안도할 줄 알았다'는 기대를 밝힌 [A], 그와 달리(Instead) 묻지도 않은 사연을 늘어놓는 [B], 서류에 서명한 뒤 마지막 항해와 작별을 다룬 [C] 순서예요. [B] 의 Instead 는 [A] 의 기대를 받아야 뜻이 통해요."
+],
+[
+23,
+2,
+"reading",
+"r2-s1",
+"Which of the following is true according to the passage?",
+[
+"Hana hid the boat's defects from the buyer.",
+"Hana gave the buyer a record of the boat's repairs.",
+"The buyer had once worked on the boat with Hana's father.",
+"Hana's mother had rebuilt the engine one winter in the kitchen."
+],
+[
+2
+],
+"부두에서 열쇠와 함께 아버지가 30년 동안 수리를 적은 공책을 건넸다고 했으니 'Hana gave the buyer a record of the boat's repairs.' 보기가 맞아요. 엔진을 고친 사람은 아버지이고, 구매자가 전에 이 배에서 일했다는 말은 없으며, 하나는 오히려 흠을 줄줄이 말했어요."
+],
+[
+24,
+2,
+"reading",
+"r2-s2",
+"Which is the best place in the passage for the following sentence?\nThe appeal was that the trip could be arranged on a whim, with almost no preparation and at little cost.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]"
+],
+[
+2
+],
+"넣을 문장의 The appeal 은 바로 앞의 매력을 받아요. 텐트 치는 수고 없이 차 뒷자리를 침실로 만드는 차박 설명 바로 뒤인 [B] 에 들어가야 '즉흥적으로, 준비 없이, 싸게'라는 말이 이어져요. [D] 앞은 안전 경고라 매력과 맞지 않아요."
+],
+[
+25,
+2,
+"reading",
+"r2-s2",
+"Which of the following is NOT true according to the passage?",
+[
+"Some car campers stayed in public parking lots for several days.",
+"Officials warned that carbon monoxide can build up without a smell.",
+"Certain local governments set up official sites with waste collection.",
+"Camping lost nearly all of its popularity once travel abroad resumed."
+],
+[
+4
+],
+"국경이 다시 열린 뒤 정점에서 식기는 했지만 많은 가족에게 오래가는 습관으로 자리 잡았다고 했어요. 인기를 거의 다 잃었다는 'Camping lost nearly all of its popularity once travel abroad resumed.' 보기가 글과 맞지 않아요. 며칠씩 주차장을 차지한 일, 냄새 없는 일산화탄소 경고, 공식 야영지 지정은 글과 같아요."
+],
+[
+1,
+3,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nFashion trends propelled by short videos tend to be <u>ephemeral</u>; a style that saturates everyone's feeds in March is frequently forgotten altogether by the summer.",
+[
+"perennial",
+"transient",
+"ubiquitous",
+"lucrative"
+],
+[
+2
+],
+"ephemeral 은 '오래가지 못하는, 덧없는'이라 transient 와 같은 뜻이에요. 3월에 넘치던 유행이 여름이면 잊힌다는 뒤 내용이 단서예요. perennial(오래 이어지는)은 반대이고, ubiquitous(어디에나 있는)·lucrative(돈벌이가 되는)는 '짧다'는 뜻이 없어요."
+],
+[
+2,
+3,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nAsked directly whether he would support the tax increase, the minister gave an <u>equivocal</u> reply that allowed both supporters and opponents of the plan to claim him as an ally.",
+[
+"ambiguous",
+"categorical",
+"belligerent",
+"verbatim"
+],
+[
+1
+],
+"equivocal 은 '이렇게도 저렇게도 읽히는, 애매한'이라 ambiguous 와 가까워요. 찬성하는 쪽도 반대하는 쪽도 자기편이라 여겼다는 뒤 내용이 단서예요. categorical(단정적인)은 반대이고, belligerent(호전적인)·verbatim(글자 그대로의)은 답의 성격과 맞지 않아요."
+],
+[
+3,
+3,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nThe hospital board faced a genuine <u>quandary</u>: expanding the emergency room would shorten waiting times, but the only funds available had already been pledged to the children's ward.",
+[
+"dilemma",
+"consensus",
+"panacea",
+"grievance"
+],
+[
+1
+],
+"quandary 는 '어찌할지 모르는 곤경, 진퇴양난'이라 dilemma 와 같은 뜻이에요. 응급실을 넓히자니 돈이 어린이 병동 몫이라는, 둘 중 하나를 골라야 하는 처지가 단서예요. consensus(합의)·grievance(불만)는 곤경과 뜻이 다르고, panacea(만병통치약)는 문장과 관계없어요."
+],
+[
+4,
+3,
+"vblank",
+null,
+"Choose the word that best fills in the blank.\nAlthough the expedition lost half of its provisions in an avalanche and several members fell gravely ill, its leader remained ____, rationing food scrupulously and insisting every morning that they would reach the summit. Her stubborn refusal to be disheartened eventually carried the exhausted team to the top.",
+[
+"despondent",
+"indomitable",
+"irresolute",
+"lackadaisical"
+],
+[
+2
+],
+"보급품을 잃고 대원이 앓아누워도 날마다 정상에 오른다고 했고, 뒤에서 '낙담하기를 거부했다'고 받으니 '굴하지 않는(indomitable)'이 맞아요. despondent(낙담한)·irresolute(우유부단한)는 반대이고, lackadaisical(설렁설렁하는)은 꼼꼼히 식량을 나눈 모습과 어긋나요."
+],
+[
+5,
+3,
+"vblank",
+null,
+"Choose the word that best fills in the blank.\nThe new stadium was supposed to revitalize the surrounding neighborhood, bringing restaurants, shops, and permanent jobs to an area that had long been neglected. Five years on, however, it has conspicuously ____ those promises. Most of the shops around it remain shuttered on days without a match, and the jobs it created were largely temporary.",
+[
+"lived up to",
+"made up for",
+"fallen short of",
+"gone along with"
+],
+[
+3
+],
+"however 뒤에 경기 없는 날엔 가게가 닫혀 있고 일자리도 대부분 임시였다고 하니, 약속에 '못 미쳤다(fallen short of)'가 맞아요. lived up to(기대에 부응했다)는 정반대이고, made up for(벌충했다)·gone along with(따랐다)는 약속과 어울리지 않아요."
+],
+[
+6,
+3,
+"grammar",
+null,
+"Choose the underlined part that is NOT correct.\nIn January 2025, wildfires driven by fierce Santa Ana winds ①<u>swept through</u> parts of Los Angeles County. The Palisades and Eaton fires together destroyed thousands of homes, many of ②<u>which had stood</u> for generations. Many residents ③<u>were not expected</u> the flames to spread so quickly, and in the Pacific Palisades some ④<u>were forced to abandon</u> their cars on a narrow road as they fled on foot. Investigators later spent months examining how the fires had started.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"expect 는 'expect+목적어+to부정사' 꼴로 쓰는 타동사예요. 주민이 불길이 번지리라 '예상하지 못한' 것이니 능동 did not expect the flames to spread 가 되어야 하고, 목적어가 있는데 수동 were not expected 를 쓸 수 없어요. 차를 버리도록 '강요당한' 것은 수동 were forced 가 맞아요."
+],
+[
+7,
+3,
+"grammar",
+null,
+"Choose the underlined part that is NOT correct.\nThe Ferris wheel, the star of the World's Columbian Exposition ①<u>held in Chicago in 1893</u>, was built to outshine the Eiffel Tower, the sensation of the Paris fair four years earlier. Historians ②<u>attribute its triumph its sheer novelty</u>, since nothing like it had ever been built. The engineer George Ferris designed a revolving steel wheel ③<u>so enormous that</u> each of its thirty-six cars could hold dozens of passengers. Skeptics predicted ④<u>that it would collapse</u>, yet it carried well over a million riders.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+2
+],
+"'A를 B의 덕으로 돌리다'는 attribute A to B 꼴이라 attribute its triumph to its sheer novelty 처럼 to 가 있어야 해요. 짝 전치사가 빠진 꼴이에요. held in Chicago 는 박람회를 꾸미는 과거분사, so ~ that 구문, predicted 의 목적어 that 절은 맞아요."
+],
+[
+8,
+3,
+"grammar",
+null,
+"Choose the underlined part that is NOT correct.\nWhen the volcano Krakatoa erupted in August 1883, the explosion ①<u>was heard</u> on an island in the Indian Ocean nearly 4,800 kilometers away. Its pressure wave was even more far-reaching. Barometers in cities ②<u>as distant as</u> London and Washington registered a sudden jump in air pressure, and over the following days they recorded the wave ③<u>passing</u> again and again. If it had not been for these instruments, scientists would never ④<u>know</u> that the wave had circled the globe several times.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"If it had not been for ~ 는 지난 일을 거꾸로 가정하는 가정법 과거완료예요. 그러니 주절도 would never have known 이 되어야 해요. was heard 는 수동, as distant as 는 '~만큼 먼', recorded the wave passing 은 목적어+분사 꼴이라 맞아요."
+],
+[
+9,
+3,
+"grammar",
+null,
+"Choose the underlined part that is NOT correct.\nIn August 1875, a merchant navy captain named Matthew Webb waded into the sea at Dover, his body ①<u>smeared with</u> porpoise oil to ward off the cold. At the time, there was a widespread belief ②<u>which no one</u> could swim the English Channel unaided. Webb proved otherwise. Stung by jellyfish and ③<u>swept off course</u> by the tides, he reached the French coast nearly twenty-two hours later, ④<u>having swum</u> the entire way using breaststroke.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+2
+],
+"a widespread belief 의 내용을 풀어 주는 동격절이므로 접속사 that 을 써야 해요. which 는 관계대명사라 뒤에 빠진 성분이 있어야 하는데, no one could swim the English Channel 은 완전한 문장이에요. smeared with, swept off course, having swum 은 모두 맞는 분사 꼴이에요."
+],
+[
+10,
+3,
+"cloze",
+null,
+"Choose the expression that best completes the passage.\nIn 2003 a photographer documenting coastal erosion in California posted thousands of aerial images online, one of which happened to show the clifftop mansion of the singer Barbra Streisand. She sued to have the photograph removed, citing her privacy. Before the lawsuit, the image had reportedly been downloaded only a handful of times; once news of the case spread, hundreds of thousands of people visited the site to see it. The suit was dismissed, and her name became attached to a now familiar irony: an attempt to suppress a piece of information ____, drawing attention that it would never otherwise have received.",
+[
+"usually succeeds when it is pursued in the courts",
+"can end up publicizing it far more widely than before",
+"rarely attracts the notice of most ordinary internet users",
+"is usually undertaken by celebrities rather than ordinary citizens"
+],
+[
+2
+],
+"소송 전에는 몇 번 내려받지 않던 사진이 소송 소식이 퍼지자 수십만 명이 보러 왔다는 이야기예요. 정보를 감추려다 '오히려 훨씬 널리 알리게 된다'는 아이러니가 맞아요. 법원에서 이긴다거나 사람들 눈에 잘 띄지 않는다는 보기는 사실과 반대이고, 유명인이 주로 그런다는 말은 없어요."
+],
+[
+11,
+3,
+"cloze",
+null,
+"Choose the expression that best completes the passage.\nTo earn a license to drive one of London's black cabs, an applicant must master what is known simply as the Knowledge: the layout of some twenty-five thousand streets and thousands of landmarks within a few miles of central London. Preparation typically takes three or four years of riding around the city on a motor scooter and reciting routes aloud. Brain scans have shown that a region of the hippocampus involved in spatial memory tends to be larger in qualified drivers, and a later study found that it grew in trainees who passed the examination. Neuroscientists have taken an interest in these drivers because ____.",
+[
+"London's streets are laid out in a perfectly regular grid",
+"most of them eventually forget the routes they once memorized",
+"their training offers a rare natural experiment in how learning reshapes the brain",
+"they are required by law to donate their brains to medical research upon their death"
+],
+[
+3
+],
+"앞 문장에서 공간 기억을 맡는 해마 부위가 합격한 기사에게서 더 크고, 공부한 사람에게서 실제로 커졌다고 해요. 그러니 이들의 훈련이 '배움이 뇌를 바꾸는 과정을 볼 드문 자연 실험'이라는 보기가 맞아요. 런던 길이 바둑판처럼 반듯하다면 수년씩 외울 까닭이 없어요."
+],
+[
+12,
+3,
+"cloze",
+null,
+"Choose the expression that best completes the passage.\nFor much of the twentieth century, some scholars argued that the remote islands of the Pacific had been settled largely by accident, as canoes blown off course drifted to unknown shores. In 1976 a double-hulled voyaging canoe named Hōkūleʻa set out from Hawaii for Tahiti, more than four thousand kilometers away, to test that claim. Its navigator, Mau Piailug, used no compass or charts, reading the stars, the swells, and the flight of seabirds instead. Although a single voyage could not reveal what ancient sailors had actually intended, when the canoe reached Tahiti after about a month at sea, it ____.",
+[
+"persuaded navigators to abandon the stars in favor of compasses",
+"proved that the islands had been settled only by drifting canoes",
+"lent powerful support to the view that ancient voyagers had sailed deliberately",
+"showed that such a long journey was quite impossible without modern navigational instruments"
+],
+[
+3
+],
+"계기 없이 별·너울·바닷새만 보고 4천 킬로미터를 건너 타히티에 닿았으니, '표류해서 우연히 닿았다'는 주장을 시험한 결과는 '옛 항해자들이 일부러 항해했다'는 쪽을 뒷받침한 거예요. 표류설을 증명했다거나 현대 계기 없이는 불가능하다는 보기는 정반대예요."
+],
+[
+13,
+3,
+"cloze",
+null,
+"Choose the expression that best completes the passage.\nIn 1291 the government of Venice ordered the city's glassmakers to move their furnaces to Murano, a cluster of islands in the lagoon. The official reason was fire, since a blaze in a crowded city built largely of timber could be catastrophic. The relocation, however, served a second purpose. Concentrated on a few islands, the craftsmen could be watched closely, and in later centuries they were forbidden to leave the territory of the Republic without permission. In this way Venice hoped to keep ____ for as long as possible: a glassmaker who slipped away to a rival city could carry the formulas with him.",
+[
+"its glassmaking methods freely available to other cities",
+"the people of Murano entirely separate from those of the city",
+"the price of fine glass well within the reach of ordinary households",
+"the secrets of its lucrative craft out of the hands of its rivals"
+],
+[
+4
+],
+"유리공을 섬에 모아 지켜보고 허락 없이 나라를 떠나지 못하게 했다는 것은 기술이 새어 나가지 않게 하려는 것이에요. 그래서 '돈이 되는 기술의 비밀을 경쟁 도시 손에 넘기지 않는다'가 맞아요. 유리값을 낮추는 일과는 관계가 없고, 기술을 다른 도시에 내준다는 것은 정반대예요."
+],
+[
+14,
+3,
+"reading",
+"r3-p16",
+"Which of the following best states the main idea of the passage?",
+[
+"Human musicians have stopped using AI tools because of public pressure.",
+"Listeners can no longer distinguish human singers from synthetic voices.",
+"Streaming services should stop paying royalties based on the number of plays.",
+"AI-made music calls for rules on disclosure and fraud rather than an outright ban."
+],
+[
+4
+],
+"AI 음악이 일으킨 투명성·수익 문제를 짚은 뒤, 금지는 어렵고 바람직하지도 않으니 표시 의무와 가짜 재생 막기에 힘을 쏟자는 것이 글의 결론이에요. 재생 수 배분을 없애자거나 음악가들이 AI 를 끊었다는 말은 없어요. 오히려 많은 음악가가 AI 도구를 쓴다고 했어요."
+],
+[
+15,
+3,
+"reading",
+"r3-p17",
+"Which of the following is NOT stated or implied in the passage?",
+[
+"Saint Audrey's lace was first made by the nuns of her abbey.",
+"Bede recorded a story about the illness that ended the princess's life.",
+"The lace sold at the fair came to be regarded as cheap and of poor quality.",
+"The adjective tawdry appeared about a thousand years after the abbey was founded."
+],
+[
+1
+],
+"레이스를 수녀원 수녀들이 처음 만들었다는 내용은 글에 없어요. 'Saint Audrey's lace was first made by the nuns of her abbey.' 보기가 답이에요. 비드가 남긴 병 이야기, 레이스가 싸구려로 여겨진 것은 글과 같고, 7세기에 세운 수녀원에서 17세기 후반의 tawdry 까지는 약 천 년이에요."
+],
+[
+16,
+3,
+"reading",
+"r3-p18",
+"Which of the following is the best title for the passage?",
+[
+"Migration and Breeding: The Seasonal Habits of Australia's Largest Birds",
+"Outmaneuvered by Birds: Australia's Failed Military Campaign Against Emus",
+"Weapons in the Fields: Why Machine Guns Transformed Twentieth-Century Farming",
+"From Battlefield to Wheat Field: How Australian Veterans Became Prosperous Farmers"
+],
+[
+2
+],
+"군인과 기관총까지 보냈지만 에뮤가 흩어지고 빨리 달려 몇 주 만에 물러났다는 이야기라, 새에게 '한 수 밀린' 군사 작전이라는 'Outmaneuvered by Birds: Australia's Failed Military Campaign Against Emus' 보기가 맞아요. 퇴역 군인 농부, 에뮤의 번식 습성은 배경일 뿐이에요."
+],
+[
+17,
+3,
+"reading",
+"r3-p20",
+"What is the passage mainly about?",
+[
+"the reasons Korean cities are building new railways above ground",
+"the promise and financial risks of moving urban railways underground",
+"the reasons coffee shops and bookstores prefer narrow urban parks",
+"the steady decline in the number of passengers using Korea's city railways"
+],
+[
+2
+],
+"도시 철도를 땅속으로 옮기는 일의 기대(경의선 숲길, 새 공원·지구)와, 땅 팔아 공사비를 댄다는 구상이 수도권 밖에서 통할지 하는 재정 걱정을 함께 다루는 글이에요. 지상에 새 철도를 놓는다는 것은 글과 반대이고, 승객 감소는 나오지 않아요."
+],
+[
+18,
+3,
+"reading",
+"r3-p21",
+"Which of the following is NOT stated or implied in the passage?",
+[
+"the role of storm winds in the birds' journey",
+"the food these birds normally find in the mud",
+"the number of eggs a female godwit usually lays",
+"how godwits change their bodies before departure"
+],
+[
+3
+],
+"떠나기 전 몸을 바꾸는 일(지방 늘리기, 소화 기관 줄이기), 폭풍 바람을 타는 것, 갯벌에서 벌레·조개를 찾아 먹는다는 것은 모두 나와요. 암컷이 낳는 알의 수는 나오지 않아요."
+],
+[
+19,
+3,
+"reading",
+"r3-p22",
+"Which of the underlined sentences does NOT fit the flow of the passage?",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"글은 자기를 이름이나 you 로 부르며 말을 걸면 불안이 줄어든다는 '거리 두기 혼잣말'을 다뤄요. 대학에서 말하기 강의가 인기 선택 과목이 됐다는 문장은 연설 이야기와 겉으로만 닮았을 뿐 흐름과 관계가 없어요."
+],
+[
+20,
+3,
+"reading",
+"r3-p23",
+"Which of the following is true according to the passage?",
+[
+"Af Klint studied painting under Kandinsky in Munich.",
+"Af Klint began her abstract works after Kandinsky had made his.",
+"Af Klint supported herself by painting conventional subjects.",
+"Kandinsky earned his living by painting conventional landscapes and portraits."
+],
+[
+3
+],
+"af Klint 은 평범한 풍경화·초상화를 그려 생계를 꾸린 화가였다고 했으니 'Af Klint supported herself by painting conventional subjects.' 보기가 맞아요. 칸딘스키(1910년 무렵)보다 이른 1906년에 시작했고, 칸딘스키에게 배웠다는 말은 없으며, 풍경화·초상화로 생계를 꾸린 사람은 칸딘스키가 아니라 af Klint 예요."
+],
+[
+21,
+3,
+"reading",
+"r3-p24",
+"Choose the most appropriate order of [A], [B], and [C] to follow the given paragraph.",
+[
+"[B] - [C] - [A]",
+"[A] - [B] - [C]",
+"[C] - [A] - [B]",
+"[B] - [A] - [C]"
+],
+[
+1
+],
+"지문 첫 단락의 초연 성과를 The achievement 로 받아 고난을 설명하는 [B], 그 이른 성공(that early triumph)에도 죽은 뒤 잊혔다는 [C], 그렇게 위태롭던 유산(That precarious legacy)이 2009년 우연히 되살아났다는 [A] 순서예요. 지문 마지막 단락의 Since the discovery 도 [A] 의 발견을 받아요."
+],
+[
+22,
+3,
+"reading",
+"r3-s1",
+"Why did the dog keep coming to the terminal?",
+[
+"He hoped that one of the bus drivers would adopt him.",
+"He came only for the rice cakes that Mrs. Bae gave him.",
+"He wanted to sleep beside the warm radiator near Gate 4.",
+"He was still waiting for an owner who would never come back."
+],
+[
+4
+],
+"개는 동쪽 마을에서 오는 버스 승객을 하나하나 살피고 돌아갔고, 그 노선의 농부가 가을에 죽었으며 늘 개를 데리고 읍내에 왔다고 했어요. 그러니 개는 돌아오지 않을 주인을 기다리고 있었던 거예요. 'He was still waiting for an owner who would never come back.' 보기가 맞아요. 라디에이터 옆에 누운 것이나 떡은 버스 승객을 살피는 행동을 설명하지 못하고, 기사가 데려가기를 바랐다는 말은 없어요."
+],
+[
+23,
+3,
+"reading",
+"r3-s1",
+"Which of the following is true according to the passage?",
+[
+"Mr. Seo refused to have anything to do with the dog.",
+"A passenger eventually took the dog home to the eastern villages.",
+"The dog belonged to one of the bus drivers who worked at the terminal.",
+"Several people at the terminal cared for the dog in their own ways."
+],
+[
+4
+],
+"매점 주인은 떡을, 청소부는 담요를, 손님은 목줄을, 여학생은 팻말을 주었으니 여러 사람이 저마다 개를 돌봤다는 'Several people at the terminal cared for the dog in their own ways.' 보기가 맞아요. 손님이 개를 데려갔다는 말은 없고, 서 씨는 투덜대면서도 담요를 가져왔으며, 개는 죽은 농부의 개였어요."
+],
+[
+24,
+3,
+"reading",
+"r3-s2",
+"Which is the best place in the passage for the following sentence?\nThe change is visible the moment one walks through the door.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]"
+],
+[
+1
+],
+"넣을 문장의 The change 는 앞 문장의 '공동체 센터 같은 곳으로 바뀌었다'를 받고, 문을 들어서자마자 보인다는 말 뒤에 오디 도서관의 재봉틀·3D 프린터 같은 구체적 모습이 이어져야 해요. 그래서 [A] 가 맞아요. [B]·[C]·[D] 앞뒤는 까닭이나 불만을 다뤄 이어지지 않아요."
+],
+[
+25,
+3,
+"reading",
+"r3-s2",
+"Which of the following is NOT true according to the passage?",
+[
+"Oodi gives most of its space to traditional bookshelves.",
+"Some librarians fear that collections are losing funding.",
+"Separating quiet zones from lively ones appears to work well.",
+"Some Korean libraries reported more visitors after renovation."
+],
+[
+1
+],
+"오디는 공간 대부분을 책이 아니라 재봉틀·3D 프린터·녹음실·부엌에 쓴다고 했어요. 대부분이 책장이라는 'Oodi gives most of its space to traditional bookshelves.' 보기가 글과 맞지 않아요. 고친 뒤 방문객이 늘었다는 것, 장서 예산 걱정, 조용한 층을 나누는 방식이 잘 된다는 것은 글과 같아요."
+]
+]
+}

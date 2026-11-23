@@ -1,0 +1,2782 @@
+{
+"school": "ssu",
+"title": "숭실대 편입영어 모의고사",
+"source": "숭실대 편입영어 2011~2026학년도 기출 출제 유형(문항 수·영역·문제 꼴, VocabFactory 분석)을 분석해 dailyfreetoolbox 가 새로 만든 연습 문제",
+"checked": "2026-11-23",
+"minutes": 90,
+"points": [
+[
+1,
+10,
+1
+],
+[
+11,
+20,
+1.5
+],
+[
+21,
+35,
+2
+],
+[
+36,
+45,
+2.5
+],
+[
+46,
+50,
+4
+]
+],
+"sections": [
+{
+"id": "grammar",
+"name": "문법"
+},
+{
+"id": "cloze",
+"name": "어휘 빈칸"
+},
+{
+"id": "vocab",
+"name": "동의어"
+},
+{
+"id": "reading",
+"name": "독해"
+}
+],
+"passages": [
+{
+"id": "r1-s1",
+"text": "For most of the past decade, the electricity consumed by the world's data centers grew far more slowly than the volume of computing they performed. Each new generation of chips accomplished more work per watt, and operators consolidated scattered servers into vast, efficiently cooled facilities. That reassuring equilibrium has been disrupted by generative artificial intelligence. Training a large language model requires thousands of specialized processors running continuously for weeks, and answering the queries of hundreds of millions of users afterward consumes still more power. A 2025 assessment by the International Energy Agency (IEA) put the share of global electricity consumed by such facilities in 2024 at roughly one and a half percent and forecast that their appetite could more than double before 2030.\nThe consequences are already conspicuous in corporate disclosures. Several of the largest technology firms, which had pledged to become carbon neutral or even carbon negative by 2030, reported that their emissions had risen rather than fallen, largely because of the construction and operation of new data centers. Google — to take one example — acknowledged in 2024 that its greenhouse gas emissions were nearly half again as high as in 2019. Executives insist that the trajectory is temporary and that artificial intelligence will ultimately ____ its own footprint by optimizing power grids, accelerating the discovery of novel materials, and making buildings more frugal with energy.\nSkeptics remain unpersuaded. They observe that efficiency gains have historically been swallowed by rising consumption — a pattern economists call the rebound effect — and that utilities in several regions have postponed the retirement of coal and gas plants to satisfy the voracious appetite of new server farms. Whether the technology proves a net burden or a net boon for the climate, they contend, depends less on engineering ingenuity than on deliberate choices about where facilities are built and how their electricity is generated."
+},
+{
+"id": "r1-s2",
+"text": "When speakers encounter a word whose structure makes no sense to them, they sometimes reshape it into something that seems more transparent — a process linguists call folk etymology. The results can be charming. The Old English word brydguma combined bride with guma — an archaic word for man. As guma fell out of use, speakers no longer recognized it, and by the sixteenth century it had been reinterpreted as groom, which then meant a male servant, so that the bridegroom became, in effect, the bride's attendant. Similarly, shamefaced was originally shamefast, meaning held fast by modesty, in the same sense that steadfast means firmly fixed; once the suffix lost its meaning, speakers substituted the more familiar face.\nBorrowings from other languages are especially <u>susceptible</u>. The name of a North American rodent, adapted from an Algonquian word, was refashioned by English settlers into woodchuck, although the animal has nothing to do with chucking wood. The cockroach owes its English form to the Spanish cucaracha, recast as if it were composed of two English words. Even polished speakers participate: asparagus was long called sparrowgrass in England, a form that some eighteenth-century authorities described as the customary pronunciation in polite company.\nFolk etymology is often regarded as a species of error, and in a narrow sense it is one, since the new form misrepresents the history of the word. Linguists nonetheless tend to view it sympathetically. It reveals that ordinary speakers are not passive recipients of vocabulary but active interpreters who expect words to mean something. A form that seems arbitrary is a burden on memory, whereas a form that appears to be assembled from familiar parts is easier to learn and recall, even if the parts mislead.\nThe phenomenon is by no means confined to English. Speakers of every language reinterpret opaque words, and many folk etymologies have become so entrenched that it would be pedantic to call them mistakes. They are simply part of the language now, preserving in their very shape a record of how earlier generations strove to make sense of it."
+},
+{
+"id": "r1-s3",
+"text": "By the 1840s astronomers had a puzzle on their hands. Uranus (discovered by William Herschel in 1781) stubbornly refused to follow the path that Newton's law of gravitation predicted for it. Its position wavered, now slightly ahead of schedule, now slightly behind, by amounts too large to blame on careless observation. Some scientists wondered whether Newton's law itself (hitherto spectacularly successful) weakened over immense distances. Others suspected a more conventional culprit — an unseen planet lying still farther from the Sun, whose gravity was tugging Uranus off course.\nTwo mathematicians pursued the second hypothesis independently. In England, John Couch Adams — a young graduate of Cambridge — calculated the probable position of the hypothetical planet, but his results met with a lukewarm reception from senior astronomers, and the search that eventually began at Cambridge was sluggish and fruitless. In France, Urbain Le Verrier performed similar calculations and, unable to persuade observers in Paris to act promptly, sent his prediction to Johann Galle at the Berlin Observatory. On the very night Galle received the letter in September 1846, he and his assistant located the planet within about one degree of the predicted spot.\nThe discovery was hailed as a triumph of theory over mere observation — a world had been found with pen and paper before anyone had knowingly glimpsed it. When I first read the correspondence of the period as a student, what struck me was less the genius of the calculation than the certainty of its authors. The discovery also ignited a rancorous quarrel over credit between British and French scientists — a dispute that historians have revisited many times since. Ironically, the same method later led its champion astray. When the orbit of Mercury displayed a small anomaly of its own, Le Verrier postulated yet another hidden planet, which came to be called Vulcan. No such body exists. The discrepancy was finally explained in 1915 by Einstein's general theory of relativity, which showed that, in this instance, it was ____ that required revision."
+},
+{
+"id": "r1-s4",
+"text": "\"If you rush the glue, the book will remember,\" Mrs. Ferrante said, lifting the brush out of my hand before I could protest.\nI had answered the notice in the window of her narrow shop near the university, expecting to spend the summer shelving and running errands. Instead, on my first morning she handed me a hymnal whose spine had split in three places and told me to take it apart. It took me two days. She made me number every gathering of pages in pencil, cut the old threads one by one, and scrape the brittle glue from the folds with a blunt knife. When I grumbled that a machine could rebind the whole thing in an hour, she agreed. \"A machine would also trim the margins,\" she said, \"and lose the notes someone wrote there in 1931.\"\nFor weeks I sewed practice books from scrap paper, and for weeks she <u>unpicked</u> them. My stitches were too tight, then too loose; my folds drifted off true by a millimeter that she could detect with a fingertip. She seldom praised anything, but she was never impatient with honest mistakes, only with careless ones, and she distinguished between them with unnerving accuracy.\nIn August a woman brought in a cookbook so battered that its pages were held together with rubber bands. It had belonged to her mother. Mrs. Ferrante gave it to me. I labored over it for nine days, and when I finally pressed the new cover onto the boards and left it overnight beneath a stack of dictionaries, I could not sleep. The next morning the woman opened it, turned to a page stained with what looked like tomato sauce, and wept. Mrs. Ferrante said nothing to me then. But that afternoon she moved my stool from the corner to the bench beside her own."
+},
+{
+"id": "r1-s5",
+"text": "The promise of the cashierless store is seductively simple — walk in, pick up what you want, and walk out, while cameras and shelf sensors tally your purchases and charge your account automatically. Amazon opened the first of its Go stores to the public in Seattle in 2018, and the company later licensed the underlying technology (branded Just Walk Out) to stadiums, airports, and university campuses. Competitors in China, Japan, and Korea experimented with their own versions, some relying on radio tags attached to each item rather than on computer vision.\nThe model has proved harder to scale than its champions anticipated. In 2024 Amazon announced that it would remove Just Walk Out from its large Fresh grocery stores in the United States, replacing it with smart carts that customers scan themselves. Media reports at the time claimed that a large team of workers overseas reviewed many of the transactions by watching video footage; Amazon disputed that characterization, saying the staff chiefly labeled data to improve the system. Whatever the precise division of labor, the episode <u>punctured</u> the impression that the stores operated without human involvement.\nIn Korea a humbler variant has spread rapidly — small shops selling ice cream, snacks, or stationery, staffed by no one at all and monitored remotely through security cameras. When I visited one such shop late one evening, the only sound was the hum of the freezers. Owners welcome the savings on wages and the ability to remain open around the clock. Yet the arrangement redistributes burdens rather than eliminating them. Shoplifting and vandalism must be dealt with after the fact, often by owners scrutinizing footage late at night, and elderly customers unfamiliar with self-service kiosks may find themselves effectively excluded. The automated store, in other words, does not abolish labor so much as relocate it — to distant reviewers, to anxious proprietors, and to the customers who now perform the cashier's work themselves."
+},
+{
+"id": "r1-s6",
+"text": "From the late seventeenth century until the early nineteenth, a young Englishman of wealthy family was expected to complete his education with a journey across the Continent that could last from several months to several years. The itinerary of this Grand Tour was fairly standardized. Travelers crossed the Channel to France, lingered in Paris to acquire polished manners and fluent French, and then crossed the Alps, often carried over the mountain passes in chairs Ⓐ<u>borne</u> by local porters, to reach the true objective, Italy. In Rome, Florence, and Venice they studied classical ruins and Renaissance paintings, the remnants of a civilization Ⓑ<u>which</u> they had read about since childhood in Latin grammar lessons.\nThe young men rarely traveled alone. Most were accompanied by a tutor — often an impecunious scholar or clergyman — whose task was to supervise their studies and restrain their excesses. The task frequently proved impossible. Contemporary satirists ridiculed tourists who returned with affected accents, extravagant clothing, and debts, having spent more time Ⓒ<u>gambled</u> and flirting than contemplating antiquity. Parents nonetheless regarded the expense as a sound investment, since familiarity with Continental culture marked a gentleman as fit for political office and polite society.\nThe Tour left a durable imprint on British taste. Travelers shipped home crates of sculpture, antiquities, and paintings, many of which still adorn country houses and museums. I have walked through several of those houses, and the souvenirs remain where the travelers' fathers placed them. Demand for souvenirs sustained entire trades — the Venetian painter Canaletto produced views of his city Ⓓ<u>largely</u> for English buyers. The custom waned in the nineteenth century, when railways and steamships made Continental travel cheaper and faster, and the leisurely aristocratic pilgrimage gave way to the organized excursions of an expanding middle class. Some historians regard the Grand Tour as the ancestor of modern tourism, though its participants would have been appalled to hear their education described in such commercial terms."
+},
+{
+"id": "r1-s7",
+"text": "In 2010 three researchers published a study suggesting that posture could alter not only how confident a person felt but also the chemistry of the body. Participants who spent two minutes in expansive 'power poses' (such as leaning back with their hands clasped behind the head) reportedly showed higher levels of testosterone, lower levels of the stress hormone cortisol, and a greater appetite for risk than participants who adopted cramped, contracted postures. The finding was irresistible — a free and effortless intervention that seemed to promise a measurable advantage before job interviews or examinations. A lecture popularizing the idea became one of the most watched talks ever posted online, and corporate trainers eagerly incorporated the poses into their workshops.\nSubsequent scrutiny has been less flattering. In 2015 a team using a considerably larger sample attempted to reproduce the original experiment and found no effect on hormones or on willingness to gamble, although participants did report feeling somewhat more powerful. The following year one of the original authors publicly announced that she no longer believed the effects were real, and she described analytical choices in the initial study that, while common at the time, are now recognized as prone to generating spurious results. Defenders of the research maintain that the modest effect on self-reported feelings is genuine, but even sympathetic reviewers concede that the dramatic physiological claims were ____.\nThe episode has become a cautionary tale in the broader reckoning that psychologists call the replication crisis. Small samples, flexible analyses, and the predilection of journals for striking positive findings conspired to produce a literature in which many celebrated effects proved fragile. None of this means that posture is irrelevant to how people feel; ordinary experience suggests otherwise. But the saga illustrates how a vivid result can outrun its evidence, acquiring the status of established fact through sheer repetition before anyone has rigorously tested it."
+},
+{
+"id": "r1-s8",
+"text": "Among the many forms the early novel assumed, one of the most popular was also one of the most artificial — the story told entirely through letters. Samuel Richardson's Pamela (published in 1740) consists almost wholly of the correspondence of a young servant who resists the advances of her employer, and its success inspired a deluge of imitators across Europe. Richardson followed it with Clarissa, a vast epistolary tragedy that remains among the longest novels in the English language, and on the Continent the form reached a pinnacle of sophistication in Choderlos de Laclos's Dangerous Liaisons in 1782.\nThe appeal of the letter novel lay in its <u>immediacy</u>. Because characters wrote — as Richardson put it — 'to the moment,' readers seemed to witness emotions as they unfolded rather than as they were recollected afterward. A heroine could describe a threat while still uncertain how it would end, and the reader shared her suspense. Letters also allowed authors to juxtapose conflicting perspectives without an intrusive narrator — in Laclos's novel, the same event appears in the triumphant letters of the schemers and the anguished letters of their victims, and the reader must reconcile the versions.\nI confess a fondness for the form, but its drawbacks were conspicuous. Critics mocked heroines who continued composing lengthy, elegantly phrased letters in the midst of abductions and fires, and the need to justify why every crucial scene was committed to paper strained credibility. By the early nineteenth century most novelists had abandoned the device in favor of a third-person narrator able to enter the minds of several characters at once. Yet the epistolary impulse never entirely vanished. It resurfaced in Mary Shelley's Frankenstein and Bram Stoker's Dracula, and some critics discern its descendants in contemporary novels assembled from emails, text messages, and social media posts."
+},
+{
+"id": "r1-s9",
+"text": "Cuttlefish, relatives of squid and octopuses, are among the most accomplished masters of disguise in the sea. Within a fraction of a second they can alter the color, pattern, and even the apparent texture of their skin, blending into sand, rock, or seaweed, or flashing bold stripes to startle a predator or court a mate. [A]\nThe mechanism lies in the skin. Each animal possesses millions of chromatophores, tiny elastic sacs of yellow, red, or brown pigment, each encircled by muscles controlled directly by nerves from the brain. When the muscles contract, a sac is stretched open and its pigment becomes visible; when they relax, it shrinks to an almost imperceptible dot. Beneath the chromatophores lie reflective cells that produce iridescent blues and greens and a white layer that scatters light. Tiny muscles can also raise bumps called papillae, allowing a smooth animal to mimic the rough surface of coral or a frond of algae. [B]\nExperiments have shown that cuttlefish do not replicate their surroundings in detail. Instead, they appear to deploy a limited repertoire of general patterns (uniform, mottled, or disruptive), selecting among them according to visual cues such as the size and contrast of nearby objects. Researchers have tested this by placing the animals on artificial checkerboards — when the squares roughly match the size of a distinctive white patch on the cuttlefish's own body, the animals tend to adopt bold disruptive markings. [C]\nThe ability poses a profound puzzle. By most measures, cuttlefish are colorblind, since their eyes contain only one type of photoreceptor. How an animal that apparently cannot distinguish hues matches the colors of its background so convincingly remains unresolved. Some researchers have suggested that the peculiar U-shaped pupil may allow the eye to extract color information from the way different wavelengths come into focus, while others have proposed that light-sensitive proteins in the skin itself contribute. [D] Neither hypothesis has yet been confirmed."
+},
+{
+"id": "r1-s10",
+"text": "Most mathematics teachers have watched the same scene unfold. A student is handed an unfamiliar kind of problem, stares at it, tries one approach after another, and eventually either stumbles on the answer or abandons the attempt in frustration. The traditional view holds that such struggle is valuable — by wrestling with problems on their own, learners discover methods for themselves and retain them better. Research on beginners, however, points in a different direction.\nIn the 1980s the Australian psychologist John Sweller and his colleagues began investigating what they called cognitive load, the demand that a task places on working memory (which can hold only a handful of new elements at once). A novice confronting an unfamiliar problem must keep in mind the goal, the current state of the problem, and the possible moves between them, a juggling act that leaves little capacity for noticing the underlying principle. Sweller's experiments suggested that beginners often learn more by studying (A) ____ solutions, laid out step by step, before attempting similar problems themselves. Learners who alternated between reading a worked example and solving a parallel problem frequently outperformed those who spent the same time solving problems unaided.\nThe effect has an important limit. As learners gain expertise, worked examples become redundant and can even impair performance — a phenomenon researchers call the expertise reversal effect. Students who already understand a procedure gain little from reading every step and may be distracted by information they no longer need; for them, independent problem solving is the more productive exercise. The appropriate amount of guidance, in other words, should (B) ____ as competence grows.\nSome educators worry that worked examples encourage passive imitation. Researchers respond that examples are most effective when students are prompted to explain each step to themselves, and when support is withdrawn gradually, for instance by omitting the final steps of a solution for the learner to complete. Struggle, on this view, is not worthless; it is simply more fruitful once the learner possesses enough knowledge to struggle productively."
+},
+{
+"id": "r1-s11",
+"text": "In 1602 the States General of the Dutch Republic granted a charter to the United East India Company (known by its Dutch initials as the VOC), giving it a monopoly on Dutch trade with Asia. The company was a novel kind of institution. Earlier trading ventures had typically been financed voyage by voyage — investors pooled money to fit out a fleet, and when the ships returned, the profits were divided and the partnership dissolved. The VOC, by contrast, raised capital that was committed for years and soon (in practice) <u>indefinitely</u>, allowing it to build warehouses, fortresses, and a permanent fleet.\nBecause investors could not withdraw their money from the company, they needed another way to recover it. The solution was to let them sell their shares to other investors. Trading in VOC shares soon became a routine activity in Amsterdam, conducted first in the open air and then in a purpose-built exchange completed in 1611. Many historians therefore regard the VOC as one of the first companies whose shares were traded publicly, and Amsterdam as the site of an early stock market, complete with brokers, speculation, and even contracts resembling modern futures and options.\nThe company's commercial success was spectacular for much of the seventeenth century, and it paid lavish dividends. Yet its power rested on coercion as well as commerce. The charter authorized it to wage war, conclude treaties, and govern territories, and it wielded these powers ruthlessly. In the Banda Islands (then the world's only source of nutmeg), company forces under Jan Pieterszoon Coen killed, enslaved, or expelled most of the inhabitants in 1621 to secure control of the spice.\nBy the late eighteenth century the VOC was mired in debt, enfeebled by corruption, competition, and war, and it was dissolved in 1799. Its legacy remains ambivalent. The financial innovations it pioneered became foundations of modern capitalism, while its conduct in Asia illustrates how a commercial enterprise armed with state authority could inflict immense suffering."
+},
+{
+"id": "r1-s12",
+"text": "Artemisia Gentileschi (born in Rome in 1593) was trained by her father, Orazio — a painter who had absorbed the dramatic lighting of Caravaggio. Women were barred from the academies where artists studied anatomy and drew from the nude model, and most female painters of the period confined themselves to portraits and still lifes. Ⓐ<u>She</u> chose instead the large, crowded scenes from history and scripture that were regarded as the most prestigious genre, and she executed them with a vehemence that astonished her contemporaries.\nHer early life was marked by a notorious trial. In 1612 her father brought a case against the painter Agostino Tassi, his collaborator and her tutor in perspective, for raping her. During the proceedings, which lasted months, Ⓑ<u>she</u> was questioned under thumbscrews — a common method of testing a witness's veracity. Tassi was convicted, though his sentence was never enforced. Soon afterward she married and moved to Florence, where in 1616 she became the first woman admitted to the city's Academy of the Arts of Drawing (Accademia delle Arti del Disegno).\nFor centuries she was remembered, if at all, chiefly as Orazio's daughter, and several of Ⓒ<u>his</u> paintings were attributed to her and vice versa. Her rediscovery began in the twentieth century, and feminist art historians of the 1970s brought her work renewed attention. Her depictions of Judith beheading the Assyrian general Holofernes, in which the heroine and her maid grip the struggling man with startling physical resolve, became her most celebrated works, and many critics have read them as a response to her own ordeal.\nRecent scholars, however, caution against reducing her art to biography. Artemisia was a shrewd professional who negotiated with powerful patrons across Italy and even in London, where Ⓓ<u>she</u> joined her father at the court of Charles I in the late 1630s. Her letters reveal an artist acutely conscious of her worth, who insisted that her work be judged by the same standards as that of men."
+},
+{
+"id": "r1-s13",
+"text": "For much of human history, goiter — a swelling of the thyroid gland in the neck — was so prevalent in certain regions that it was regarded almost as a normal feature of local appearance. In parts of the Alps, the Himalayas, and the Great Lakes region of North America, a large share of the population was afflicted. The cause, established gradually during the nineteenth and early twentieth centuries, was a deficiency of iodine, an element the thyroid needs to manufacture hormones that regulate metabolism and the development of the brain. Iodine is plentiful in seawater, but in areas once scoured by glaciers or repeatedly flooded, it has been leached from the soil, and crops grown there contain little of it.\nThe consequences extended far beyond the visible swelling. Severe deficiency during pregnancy could cause profound intellectual disability and stunted growth in the child, and even mild deficiency in childhood is associated with diminished cognitive performance. Because the damage accrued silently, communities often failed to recognize how much potential was being squandered.\nThe remedy turned out to be remarkably cheap. Swiss authorities began adding iodine to table salt in the 1920s, and in 1924 iodized salt went on sale in Michigan, one of the American states where goiter was endemic. Within a few years the prevalence of goiter in affected areas fell dramatically. Salt was an ideal vehicle — nearly everyone consumes it (in fairly consistent amounts), and adding iodine costs a pittance per person each year.\nIn the following decades, international agencies promoted universal salt iodization, and today the great majority of households worldwide use iodized salt. Some economists have hailed it as one of the most cost-effective public health measures ever devised, and studies of the American program have linked it to measurable gains in the cognitive outcomes of children born in previously deficient areas. Its success carries a lesson for policy — an intervention need not be dramatic to be transformative, provided it is ____ enough to reach almost everyone."
+},
+{
+"id": "r1-s14",
+"text": "Imagine a heap of sand containing a million grains. Remove a single grain, and you still have a heap; one grain, surely, cannot make the difference between a heap and a non-heap. Remove another, and the same reasoning applies. Yet if you continue long enough, you will be left with a solitary grain, which is plainly not a heap. Somewhere a heap must have ceased to exist, but there seems to be no grain whose removal was responsible. This puzzle (attributed to the ancient Greek philosopher Eubulides of Miletus) is known as the sorites paradox, from the Greek word for heap.\nThe paradox arises because many of our concepts are vague. Words such as tall, bald, rich, and old apply clearly to some cases and clearly fail to apply to others, but they also have <u>borderline</u> cases in which no answer seems correct. A man with a hundred thousand hairs is not bald and a man with none is, but how many hairs mark the boundary? Insisting on a precise number seems arbitrary, yet denying that there is any boundary seems to lead straight to absurdity.\nPhilosophers have proposed several responses. Epistemicists maintain that there is in fact a sharp boundary — a precise number of grains at which a heap ceases to be one — but that we are incapable of knowing where it lies. Others propose degrees of truth, so that the statement that something is a heap becomes gradually less true as grains are removed. Still others hold that vague statements are neither true nor false in borderline cases. Each solution exacts a cost, and none commands general assent.\nThe puzzle has practical ramifications. Laws must often draw sharp lines through vague territory, stipulating, for example, the precise age at which a person may vote or the exact speed at which driving becomes illegal. Such lines are admittedly arbitrary, but a society that refused to draw them would find itself paralyzed. The paradox thus reminds us that precision is sometimes a convenience we impose on a world that does not supply it."
+},
+{
+"id": "r1-s15",
+"text": "Most of the world's writing systems evolved gradually over centuries, shaped by countless anonymous scribes. The Korean alphabet is a striking exception. It was devised under the direction of King Sejong and promulgated in 1446 in a document titled Hunminjeongeum, meaning the correct sounds for the instruction of the people. Before then, Koreans wrote with Chinese characters, a system ill suited to the Korean language and so demanding that literacy was largely confined to a small, educated elite.\nThe new script was remarkable for its design. Its basic consonant letters were modeled on the shape of the speech organs used to pronounce them — the letter for the k sound depicts the root of the tongue blocking the throat, and the letter for n depicts the tip of the tongue touching the ridge behind the upper teeth. Further consonants were derived by adding strokes to these basic shapes, so that related sounds look related on the page. Vowels were built from three elements representing heaven, earth, and humanity. Letters are grouped into syllable blocks, preserving the visual rhythm of Chinese writing while recording sounds rather than meanings.\nThe innovation encountered resistance. Some scholar-officials objected that abandoning Chinese characters would estrange Korea from the civilization of China and debase learning. For centuries the script was used chiefly by women, commoners, and authors of popular literature, while official documents and serious scholarship continued in classical Chinese. Only in the late nineteenth century, amid rising national consciousness, did it acquire official status, and it became the predominant script of Korean public life in the twentieth century.\nLinguists have frequently praised the alphabet as one of the most ingeniously engineered writing systems ever devised, and its creation is commemorated in South Korea by a national holiday on October 9. Its history also illustrates a broader point — a writing system is not merely a technical tool but a social institution, and its fate depends as much on politics and prestige as on design."
+},
+{
+"id": "r2-s1",
+"text": "English speakers who say they, them, and their every few seconds rarely pause to consider that these humble pronouns are not native to their language. They were borrowed from Old Norse, the tongue of the Scandinavian settlers who began raiding the coasts of Britain in the late eighth century. These settlers later occupied a broad swath of northern and eastern England — a region known as the Danelaw. Borrowing pronouns is exceedingly rare. Languages typically import words for novel objects or institutions, not the basic grammatical machinery of everyday speech. That English did so testifies to an unusually <u>intimate</u> coexistence between two peoples.\nOld English and Old Norse were closely related Germanic languages, and their speakers could probably understand each other in a rudimentary way. In mixed communities, where Anglo-Saxon and Scandinavian families intermarried and traded, speakers seem to have simplified their speech to make it mutually intelligible. Some scholars argue that this contact accelerated the erosion of the elaborate inflectional endings that distinguished Old English from the far simpler grammar of modern English, though the extent of Norse responsibility remains disputed.\nThe vocabulary bequeathed by the settlers is strikingly ordinary. Sky, egg, knife, window, skin, and husband all derive from Norse (as do the verbs take, get, and call). In some cases a Norse word ousted its English counterpart; in others both survived with diverging meanings, so that English now possesses shirt and skirt, originally the same word in its Old English and Norse guises. Place names tell a similar story — hundreds of towns in northern England end in -by, the Norse word for a farmstead or village, as in Derby and Whitby.\nThe Normans who conquered England in 1066 contributed a larger and more prestigious vocabulary of law, cuisine, and government. Yet it is the Scandinavians, whose legacy is woven into the most commonplace words, who arguably left the deeper imprint on the structure of the language."
+},
+{
+"id": "r2-s2",
+"text": "Every year the world discards a staggering quantity of electrical and electronic equipment — smartphones replaced after two or three years, laptops that no longer receive software updates, refrigerators, toasters, cables, toys with flashing lights, and disposable vapes thrown away after a few days of use. According to the Global E-waste Monitor published by United Nations agencies in 2024, humanity generated about sixty-two million tonnes of such waste in 2022 (an increase of more than eighty percent since 2010). The report projected that the figure could reach eighty-two million tonnes by 2030.\nOnly a fraction of this refuse is handled responsibly. The same report found that less than a quarter of the e-waste generated in 2022 was documented as properly collected and recycled. The remainder was hoarded in drawers and attics, buried in landfills, incinerated, or shipped, sometimes illicitly, to countries where informal workers dismantle devices by hand. In such settings, cables are often burned in the open air to recover copper, releasing toxic fumes, and circuit boards are soaked in acid baths, exposing workers, many of them children, to lead, mercury, and other hazardous substances.\nThe waste also represents economic profligacy on a grand scale. Discarded electronics contain gold, silver, copper, and scarce metals indispensable to the energy transition. The report valued the metals in the 2022 e-waste at tens of billions of dollars. Recovering them, however, is technically ____: devices are designed to be compact and sealed rather than readily disassembled, and the precious materials are present in minute quantities dispersed across dozens of components.\nPolicymakers have begun to respond. The European Union now mandates a common charging port for many portable devices, a measure intended to reduce the number of superfluous chargers that end up in drawers and bins, and several jurisdictions oblige manufacturers to make spare parts and repair manuals available. Advocates contend that the most effective remedy lies upstream, in products engineered to last longer and to be mended rather than replaced."
+},
+{
+"id": "r2-s3",
+"text": "The fountain pen arrived in a shoebox wrapped in brown paper, three weeks after my grandfather's funeral, with no letter enclosed, only a card bearing my name in his angular, slanting hand. It was black, scratched along the barrel, and so heavy that I first mistook it for a tool. My mother said he had bought it in 1962, the year he passed the examination that allowed him to leave the village and train as a schoolteacher, and that he had used it every day for half a century.\nI had no idea what to make of it. I typed my essays, sent messages with my thumbs, and could not remember the last time I had written more than a shopping list by hand. The first time I filled it, ink flooded my fingers and blotted the page. The nib, worn to the angle of his grip after fifty years, felt <u>recalcitrant</u> in mine; my letters lurched and skidded across the paper as if the pen were resisting a stranger.\nYet I persisted, perhaps out of guilt. Every evening I copied a few paragraphs from whatever book I was reading, slowly, because the pen punished haste. After a month the ink stopped pooling. After two, I noticed that I had begun to compose sentences in my head before committing them to paper, weighing words with a deliberation I had never practiced at a keyboard, where every error could be deleted without a trace.\nI still use the pen, though not for everything. It has never become entirely mine; the nib still tugs slightly toward an angle that is not quite my own. I have come to think of that small resistance as a kind of conversation, the only one with him that I am still able to have."
+},
+{
+"id": "r2-s4",
+"text": "In 1984 the biologist Katy Payne was observing elephants at a zoo in Portland, Oregon, when she noticed a faint throbbing in the air — a sensation she compared to the deepest notes of a pipe organ. She suspected that the animals were producing sounds too low for human ears to detect. Recordings made with specialized equipment confirmed her hunch — elephants communicate extensively through infrasound, vibrations below about twenty hertz (the lower threshold of human hearing).\nLow-frequency sound has a remarkable property. Because its long waves are absorbed and scattered far less than high-pitched sounds by vegetation and terrain, it can travel great distances. Researchers in Africa have estimated that under favorable conditions, particularly in the cool, still air of evening, elephant rumbles may be audible to other elephants several kilometers away. This capacity helps explain observations that had long puzzled field biologists — scattered family groups that seemed to coordinate their movements without any visible signal, and males that appeared to converge on receptive females from far beyond the range of sight or smell.\nSubsequent research has revealed that elephants may also ____ these vibrations through the ground. Rumbles propagate through the soil as seismic waves, and elephants have been observed freezing in place, leaning forward, and pressing their trunks to the earth or lifting a foot when such signals arrive, as if listening with their entire bodies. Sensitive receptors in the feet and trunk are thought to register the vibrations, and the dense bones of the skull may conduct them to the inner ear. I once stood beside an enclosure while a keeper played back one of these recordings, and I felt it in my chest before I could say whether I had heard anything.\nThe discoveries have practical ramifications. Conservationists now deploy acoustic monitors in forests where elephants are difficult to observe directly, estimating their numbers and tracking their movements by their calls. Because the same devices also record gunshots, researchers have explored whether they can help rangers locate poachers before more animals are slaughtered."
+},
+{
+"id": "r2-s5",
+"text": "In 1720 Britain experienced one of the most spectacular financial manias in its history. The South Sea Company (founded in 1711) had been granted a monopoly on British trade with Spanish America, a privilege of little real value given that Britain and Spain were frequently at war and Spain jealously restricted foreign commerce. The company's true business was finance. In 1720 it persuaded Parliament to approve a scheme under which it would assume a large part of the national debt, offering holders of government bonds the chance to exchange them for South Sea shares.\nThe scheme depended on a rising share price, and the directors did everything in their power to ensure one. They circulated rumors of fabulous profits from trade, lent money to investors so that they could buy still more shares, and offered shares to politicians on favorable terms to secure their support. The price climbed from about one hundred and thirty pounds early in the year to roughly one thousand pounds by the summer. The frenzy spilled over into dozens of other ventures, some of them patently dubious, prompting Parliament to pass an act requiring new joint-stock companies to obtain a royal charter, a measure the South Sea Company itself had supported in order to (A) ____ competition for investors' money.\nWhen confidence faltered in the late summer, the price collapsed, falling below two hundred pounds by the end of the year. Thousands of investors were ruined. A parliamentary inquiry uncovered bribery and fraud, several directors had their estates confiscated, and the Chancellor of the Exchequer was expelled from the House of Commons and imprisoned. Robert Walpole, who managed the aftermath and restored a measure of stability, rose to become the dominant political figure of the following two decades.\nHistorians continue to debate how irrational the episode was. Some emphasize mass delusion; others note that many investors bought shares expecting to sell them to others at even higher prices, a strategy that is perfectly rational for each individual so long as the price keeps rising but (B) ____ for the market as a whole."
+},
+{
+"id": "r2-s6",
+"text": "Imagine that a stranger is handed a hundred dollars and told to offer you some portion of it. If you accept the offer, the money is divided as proposed; if you reject it, neither of you receives anything. Standard economic theory, which assumes that people seek to maximize their own gain, makes a stark prediction — the proposer should offer the smallest possible amount, and you should accept it, since a single dollar is better than nothing. This scenario — known as the ultimatum game — was first studied experimentally by German economists in 1982, and the results flatly contradicted the theory.\nIn experiments conducted mainly with university students in industrialized countries, proposers typically offered between forty and fifty percent of the sum, and responders frequently rejected offers below about twenty percent, forfeiting real money in order to punish what they perceived as unfairness. The pattern proved remarkably robust, persisting even when the stakes were raised substantially. Many researchers concluded that a sense of fairness, and a willingness to pay a price to enforce it, is a deep-seated feature of human psychology.\nA team of anthropologists and economists then put that conclusion to a more demanding test by taking the game to fifteen small-scale societies around the world. The results (published in 2001) were strikingly <u>heterogeneous</u>. Among the Machiguenga (horticulturalists of the Peruvian Amazon who rarely cooperate beyond the family), offers averaged about a quarter of the stake and were almost never rejected. Among the whale hunters of Lamalera in Indonesia, whose livelihood depends on large cooperative crews, average offers exceeded half. In two groups in Papua New Guinea, where accepting a gift can create an onerous obligation to reciprocate, some generous offers were actually refused.\nThe researchers found that offers tended to be higher in societies more integrated into markets and more dependent on cooperation with non-kin. Fairness, it seems, is not a fixed quantity but a norm calibrated by the economic and social life of a community. The findings also served as a caution against treating students in a handful of wealthy countries as representative of humanity at large."
+},
+{
+"id": "r2-s7",
+"text": "The COVID-19 pandemic exposed a stark imbalance in the global production of vaccines. By the end of 2021, wealthy countries had vaccinated a large majority of their adult populations, while in many low-income countries only a small percentage of people had received even a single dose. COVAX — an international initiative created to ensure equitable access — delivered well over a billion doses before it was wound down at the end of 2023. It repeatedly found itself at the back of the queue, however, as rich governments that had signed advance contracts with manufacturers received their supplies first.\nFor Africa the episode underscored a longstanding vulnerability. The continent produces only a tiny fraction of the vaccines it uses (roughly one percent by commonly cited estimates) and depends overwhelmingly on imports. When export restrictions and soaring demand constricted supply in 2021, African health systems had little recourse. The African Union subsequently set a goal of manufacturing sixty percent of the continent's vaccines locally by 2040, and in 2024 the vaccine alliance Gavi launched the African Vaccine Manufacturing Accelerator — a financing mechanism offering up to 1.2 billion dollars over ten years to support fledgling producers.\nBuilding a vaccine industry from scratch is a formidable undertaking. Plants are costly, regulatory agencies must be strengthened to approve their products, and manufacturers need reliable buyers to remain viable between emergencies, when demand evaporates. A World Health Organization project established in South Africa in 2021 sought to share messenger RNA technology with manufacturers in lower-income countries, enabling them to develop their own products rather than waiting for licenses.\nGovernments have also attempted to codify lessons at the international level. In May 2025 the World Health Assembly adopted a Pandemic Agreement intended to improve prevention, preparedness, and the equitable distribution of medical products in future emergencies, though several crucial details — including rules for sharing pathogens and the benefits derived from them — were deferred to further negotiation. Whether these commitments will withstand the pressures of the next crisis remains to be seen."
+},
+{
+"id": "r2-s8",
+"text": "The sonnet — a poem of fourteen lines — was perfected in thirteenth- and fourteenth-century Italy, and its most influential practitioner was Francesco Petrarch, Ⓐ<u>whose</u> poems to an idealized beloved named Laura set the pattern for European love poetry for two centuries. The Petrarchan sonnet divides into an octave of eight lines and a sestet of six. The octave typically poses a problem or describes a predicament, and at the ninth line comes a turn, the volta, in which the poem changes direction, Ⓑ<u>offering</u> a resolution, a reversal, or a deepening of the opening thought.\nThe form arrived in England in the early sixteenth century through the translations of Sir Thomas Wyatt — a diplomat who encountered Petrarch's work during missions to Italy. English, however, is comparatively poor in rhyming words, and the Italian rhyme scheme (which requires the octave to repeat only two rhymes) proved <u>onerous</u> to sustain. Wyatt's younger contemporary Henry Howard, Earl of Surrey, devised an alternative Ⓒ<u>that</u> was better suited to the language — three quatrains of four lines, each with its own pair of rhymes, followed by a concluding couplet.\nThis English form is now associated above all with Shakespeare, whose 154 sonnets, Ⓓ<u>publishing</u> in 1609, exploit its structure brilliantly. The final couplet can deliver an epigrammatic summary, a witty twist, or an ironic undercutting of everything that precedes it. Some critics complain that the couplet encourages glib conclusions; others admire the tension between the meditative quatrains and the abrupt finality of the last two lines. Like many students, I first met the form as a set of rules to be memorized.\nOver the following centuries poets continually reinvented the form. Milton turned it toward politics and religion, the Romantics revived it after a period of neglect, and modern writers have stretched it almost beyond recognition, discarding rhyme or meter while retaining the compressed argument of fourteen lines. Its longevity suggests that constraint, far from stifling invention, can provoke it."
+},
+{
+"id": "r2-s9",
+"text": "In the early nineteenth century, transporting living plants across oceans was a frustrating enterprise. Seedlings carried on the decks of sailing ships were battered by salt spray, scorched by tropical sun, and starved of fresh water, and most perished long before they reached their destination. [A] Botanists lamented that only a tiny fraction of the specimens dispatched from distant colonies survived the journey.\nThe solution was discovered by accident. Around 1829 Nathaniel Bagshaw Ward — a London physician with a passion for natural history — buried the chrysalis of a moth in moist soil inside a sealed glass bottle. Some weeks later he noticed that a fern and a grass had sprouted in the soil and were flourishing, although he had never watered them. Inside the closed container, moisture evaporated from the soil and leaves, condensed on the glass, and trickled back down, creating a self-sustaining miniature climate. [B]\nWard commissioned larger glazed cases and, in 1833, sent two of them filled with plants on a voyage to Australia. They arrived months later in excellent condition, and the cases, restocked with Australian plants, made the return voyage just as successfully. [C] The Wardian case (as it came to be called) soon became standard equipment for botanical gardens and commercial nurseries, and a fashionable ornament in Victorian parlors.\nIts consequences were far-reaching. In 1848 the Scottish botanist Robert Fortune was employed by the East India Company to obtain tea plants and seeds from China, where their export was jealously guarded, and he shipped thousands of them to India in Wardian cases, helping to establish the tea industry of the Himalayan foothills. [D] Historians have therefore described the humble glass box as an instrument of empire, one that enabled colonial powers to ____ lucrative crops from their native regions to territories under their own control, often to the detriment of the countries from which they were taken."
+},
+{
+"id": "r2-s10",
+"text": "Basketball players and fans have long believed in the hot hand — the notion that a player who has made several shots in a row is more likely than usual to make the next one. In 1985 the psychologists Thomas Gilovich, Robert Vallone, and Amos Tversky set out to test this belief. Analyzing shooting records from a professional team and conducting controlled experiments with college players, they found no evidence that success followed success more often than chance would predict. Streaks occurred, but no more frequently than they would in a random sequence of hits and misses — much as a fair coin occasionally produces several heads in a row.\nThe study became a celebrated example of a cognitive illusion. People, the authors argued, expect random sequences to alternate more than they actually do, and so they perceive meaningful patterns in streaks that are merely the product of chance. Coaches and players remained unconvinced, but among psychologists and economists the hot hand fallacy became a textbook illustration of human irrationality.\nThree decades later the conclusion was challenged from an unexpected quarter. In a paper first circulated in 2015, the economists Joshua Miller and Adam Sanjurjo demonstrated that the method used in the original analysis contained a subtle statistical bias. When one examines a finite sequence of coin flips and calculates the proportion of heads that immediately follow a run of heads, the expected result is actually below fifty percent rather than equal to it. A player whose accuracy after streaks merely matched his overall average was therefore performing better than a truly random shooter would. Correcting for the bias, Miller and Sanjurjo found evidence of a modest hot hand in the original experimental data.\nThe reversal has been widely discussed as a lesson in humility. Researchers who had exposed a supposed flaw in ordinary intuition had themselves relied on an intuition about probability that proved mistaken. Whether the hot hand in real games is large enough to matter remains contested, but the episode suggests that claims of irrationality deserve as much scrutiny as the beliefs they disparage."
+},
+{
+"id": "r2-s11",
+"text": "At 8:01 on the morning of June 26, 1974, a cashier at a supermarket in Troy, Ohio, passed a ten-pack of chewing gum over a scanner, and a computer registered its price. The purchase (it cost sixty-seven cents) is commonly cited as the first commercial scan of a product bearing a Universal Product Code, the pattern of black bars and white spaces that now adorns almost every packaged item on earth.\nThe notion of encoding information in printed lines had been patented more than two decades earlier, but it languished for want of affordable technology to read the codes. Two developments made it practicable — inexpensive lasers and increasingly powerful computers. Equally important was an agreement among American grocery manufacturers and retailers, reached in 1973 after protracted negotiations, to adopt a single standard. Without such consensus, a code printed by a cereal company would be useless to a store whose scanner could not interpret it.\nAdoption was initially <u>sluggish</u>. Stores were reluctant to invest in costly scanners before many products carried codes, while manufacturers hesitated to print codes until enough stores could read them — a classic chicken-and-egg dilemma. Some consumers also distrusted the change, fearing that the removal of price stickers from individual items would make it easier for stores to overcharge. I still remember my mother peeling price stickers off jars at the kitchen table. By the early 1980s, however, the benefits had become ____: checkout lines moved faster, errors declined, and retailers gained an unprecedented, item-by-item record of what sold, when, and where.\nThat last advantage proved the most consequential. Detailed sales data allowed retailers to manage inventory with precision, to negotiate with suppliers from a position of strength, and to identify which products deserved prime shelf space. Some historians argue that the barcode helped shift power in the consumer economy from manufacturers to large retail chains — a shift whose effects are still palpable. The modest pack of gum that inaugurated this transformation now resides in a museum collection in Washington."
+},
+{
+"id": "r2-s12",
+"text": "Between 1980 and 1994, conservators working for the Vatican cleaned the frescoes that Michelangelo painted on the ceiling and altar wall of the Sistine Chapel. The artist had completed the ceiling in 1512, and Ⓐ<u>he</u> returned more than two decades later to paint the Last Judgment on the wall behind the altar. Over the centuries the paintings had been dimmed by candle smoke, dust, and layers of animal glue and varnish applied by earlier restorers Ⓑ<u>who</u> had hoped to brighten them. As the grime was removed, colors emerged that startled many viewers — vivid pinks, acid greens, and luminous oranges where generations of scholars had admired somber, sculptural browns.\nThe project provoked a bitter controversy. A number of artists and critics argued that the restorers were removing not only dirt but also a final layer of shading that Michelangelo Ⓒ<u>himself</u> had added in glue-based paint after the plaster dried — a technique known as a secco. Without it, they contended, the figures had lost their depth and modeling, and the ceiling had been reduced to a garish cartoon. Some petitioned the Vatican to halt the work.\nThe restorers and their supporters rejected these charges. They maintained that close examination revealed no systematic retouching of that kind on the ceiling, and that the dark layers removed were the residue of later interventions and centuries of pollution. The brilliant palette, they argued, was consistent with the practice of Florentine painters of the period and with Ⓓ<u>his</u> own training. Photographs were taken at every stage so that the work could be scrutinized by others.\nThe dispute has never been entirely resolved, partly because what was removed cannot be examined again. Yet it altered the way many scholars understand the artist. Michelangelo had long been regarded as a sculptor who painted almost reluctantly, favoring form over color; the cleaned frescoes suggested a bold colorist as well. The debate also prompted conservators elsewhere to document their methods more meticulously — an outcome that both camps could applaud."
+},
+{
+"id": "r2-s13",
+"text": "In 1806 a young Boston merchant named Frederic Tudor dispatched a ship loaded with ice cut from a New England pond to the Caribbean island of Martinique. Acquaintances regarded the venture as preposterous, and their skepticism seemed vindicated — much of the cargo melted, local buyers had no means of storing what remained, and Tudor lost a considerable sum. Over the following years his debts mounted so precipitously that he was more than once confined in a debtors' prison.\nTudor persisted, and he gradually solved the problems that had doomed his first voyage. He built insulated icehouses at his destinations so that ice could be stored and sold over weeks rather than hours. He discovered that sawdust — a worthless by-product of New England's lumber mills — made an excellent and cheap insulator for cargo in ships' holds. Collaborators developed a horse-drawn cutter that scored the frozen surface of a pond into uniform blocks, which packed tightly and melted more slowly than irregular chunks. Equally important, Tudor cultivated demand, offering free cold drinks to bartenders and teaching customers in hot climates to regard chilled beverages as a necessity rather than a luxury.\nBy the 1830s the trade had become lucrative. In 1833 a ship carrying ice from Massachusetts reached Calcutta after a voyage of some four months, with a substantial part of its cargo intact, and ice from New England was soon sold in ports across the tropics. By mid-century the harvesting of natural ice employed thousands of workers, and Tudor (once derided) was celebrated as the Ice King.\nThe business did not endure. In the late nineteenth century mechanical refrigeration matured, and manufactured ice, which could be produced anywhere and was free of the contamination that increasingly afflicted ponds near growing cities, steadily displaced the harvested kind. Yet the ice trade left a lasting legacy — it habituated consumers to cold food and drink and created the expectation on which the refrigeration industry would later build."
+},
+{
+"id": "r2-s14",
+"text": "Few moral philosophies have been stated more crisply than utilitarianism. Its founder, the English reformer Jeremy Bentham, proposed in 1789 that the rightness of an action, or of a law, should be judged solely by its consequences for human happiness, understood as the balance of pleasure over pain. He even sketched a felicific calculus for measuring pleasures according to their intensity, duration, certainty, and other dimensions. Pushpin — a simple children's game — was in his view as valuable as poetry if it yielded as much pleasure.\nBentham's doctrine had a radical edge. Because every person's happiness counted equally, it furnished an argument against laws that served the privileged few at the expense of the many. Bentham applied it to prisons, the treatment of animals, and the reform of Parliament. Detractors, however, derided it as a philosophy fit for swine, since it seemed to place the crudest physical gratifications on a level with the noblest pursuits of the mind.\nJohn Stuart Mill (who had been raised by his father as a disciple of Bentham) attempted to rebut this charge in his essay Utilitarianism, first published in 1861. Pleasures, he argued, differ in quality as well as quantity; anyone acquainted with both intellectual and sensual pleasures will prefer the former, even at the cost of some discontent. Hence his famous declaration that it is better to be a human being dissatisfied than a pig satisfied.\nMill's <u>amendment</u> has been admired and criticized in equal measure. Admirers regard it as a humane refinement that rescues utilitarianism from vulgarity. Critics object that once qualities of pleasure are introduced, the theory no longer rests on a single measurable standard, since judging that one pleasure is higher than another appears to require some value other than pleasure itself. The debate continues to reverberate in contemporary ethics, from cost-benefit analysis in public policy to arguments about effective charitable giving."
+},
+{
+"id": "r2-s15",
+"text": "In 1961 Jane Jacobs — a journalist without formal training in planning — published The Death and Life of Great American Cities, a book that challenged the reigning orthodoxy of urban renewal. At the time, planners in the United States were demolishing entire neighborhoods they regarded as slums and replacing them with expressways and towers set in open lawns. Their premise was that light, air, and the segregation of functions would cure social ills. Jacobs, who lived in the dense, mixed neighborhood of Greenwich Village in New York, argued that these planners had fundamentally misunderstood what makes cities work.\nHer central insight concerned safety. Streets are safe, she contended, not because of police patrols or empty spaces but because of what she called eyes on the street — the continuous, informal surveillance provided by shopkeepers, residents looking out of windows, and passersby. Such vigilance requires a mixture of uses (shops, homes, bars, and workplaces) so that people are present at all hours. The sterile plazas of the housing projects, deserted for much of the day, offered no such protection and often became more perilous than the crowded blocks they replaced. Walking through such a neighborhood today, I find her argument almost self-evident.\nJacobs also extolled short blocks, buildings of varied age, and a density that planners deplored as congestion. Old buildings, she observed, provided cheap space for fledgling businesses that could not afford new construction. Diversity, in her account, was not a nuisance to be eradicated but the very engine of urban vitality.\nHer ideas were initially dismissed by many professionals, but she proved a formidable activist, helping to defeat a plan to drive an expressway through lower Manhattan. Today her principles are so widely accepted that critics worry about an ironic consequence — the lively, walkable neighborhoods she championed have become so coveted that soaring rents are displacing the very residents and small businesses that made them vibrant."
+},
+{
+"id": "r3-s1",
+"text": "For most of history, aging was deemed an inexorable fact of life rather than a process that medicine might alter. That assumption is now being challenged by a burgeoning field known as geroscience (the study of how aging drives disease). Its central proposition is that many of the ailments that afflict the elderly, including heart disease, dementia, and several cancers, share common biological roots in the insidious deterioration of cells and tissues, and that slowing this deterioration might postpone all of them at once.\nLaboratory findings have kindled considerable optimism. Researchers have extended the lifespans of worms, flies, and mice by altering single genes, by restricting their calories, and by administering drugs such as rapamycin. Other experiments have targeted senescent cells — damaged cells that stop dividing but linger in tissues, secreting substances that promote inflammation; eliminating them has improved several measures of health in elderly mice. Investors have been quick to take notice. In recent years wealthy technology entrepreneurs have poured billions of dollars into companies devoted to understanding and reversing aging, and one such firm was launched in 2022 with three billion dollars in funding.\nSkeptics counsel caution. Results in short-lived laboratory animals seldom translate neatly to human beings, and trials that measured lifespan directly in people would be prohibitively protracted. Some researchers have therefore espoused a more modest goal — extending healthspan, the years lived in good health, rather than lifespan itself. A proposed trial of metformin — an inexpensive diabetes drug — was designed in part to persuade regulators that aging, or at least a cluster of age-related diseases, could serve as a legitimate target for treatment.\nCritics also voice ethical qualms. If costly therapies became available, they might widen already <u>conspicuous</u> gaps in life expectancy between rich and poor, and populations that lived much longer would impose fresh burdens on pensions and health systems. Proponents retort that even partial success could alleviate immense suffering, since a treatment that delayed the onset of several diseases at once would benefit far more people than a cure for any single one."
+},
+{
+"id": "r3-s2",
+"text": "English is unusually replete with pairs of words that descend from the same ancestor but entered the language by different routes. Linguists call them doublets. Frail and fragile both come from the Latin fragilis; the first arrived through Old French in the Middle Ages, abraded by centuries of colloquial speech, while the second was borrowed directly from Latin by later scholars, preserving a form much closer to the original. Royal and regal, loyal and legal, and sure and secure (all from Latin) form similar pairs. In each case the word that passed through French is shorter and more eroded, whereas the learned borrowing retains more of its Latin shape.\nDoublets also arise when the same word is borrowed more than once. Chief and chef both derive from the Latin word for head — the first entered English from Old French in the Middle Ages, the second from modern French in the nineteenth century, when English diners adopted French culinary vocabulary. Guard and ward share a Germanic origin; ward is native English, while guard reached English through French, whose speakers turned the initial w sound into gu. A similar difference between Norman and central French dialects produced warranty and guarantee.\nWhat makes doublets linguistically intriguing is that the members of a pair seldom remain synonyms. Languages tend to resist exact redundancy, and speakers gradually assign a different meaning or register to each form. Frail usually describes the body, fragile objects and situations. Regal connotes grandeur, royal mere membership in a royal family. Hospital and hostel (both derived from a Latin word related to hospes, 'guest') now denote entirely different institutions, and hotel, borrowed later from modern French, adds a third.\nFor historians of the language, doublets function as a kind of stratigraphy. Just as layers of rock record successive geological epochs, parallel forms reveal successive waves of contact and borrowing. A single Latin root, encountered at disparate moments, can leave several discrete deposits in the vocabulary."
+},
+{
+"id": "r3-s3",
+"text": "Dear Seo-yeon,\nYour mother tells me you have chosen your dormitory and bought a desk lamp that folds flat, and that you are nervous. Good. Nervousness means you understand that something important is about to happen. I was nervous every morning for the first year I ran the shop, and I ran it for thirty-eight.\nYou will not remember the shop well; you were six when I closed it. It was a narrow room above a pharmacy, with two sewing machines, a long cutting table, and a mirror that made everyone look slightly taller (which I never repaired, for obvious commercial reasons). People brought me suits to alter for weddings and funerals, school uniforms to lengthen every spring, coats they could not afford to replace. I learned more about the town from hems and seams than any newspaper could have divulged. A jacket let out twice in one year meant prosperity or poor health; a dress taken in meant grief, or love.\nWhat I want to tell you is this. The most valuable thing I possessed was not my skill, which was ordinary, but my habit of measuring twice. Young tailors always want to cut. The cloth is right there, the scissors are sharp, the customer is waiting. But a cut cannot be undone, and an hour of forbearance at the table spares a week of remorse. You are about to be surrounded by clever people who will urge you to decide quickly what you believe and who you are. Measure twice. Ask the question again. There is no shame in being slow if what you make fits.\nI have enclosed a small pair of scissors. They were my first. They will not help you with chemistry, but they will remind you of an old woman who is very proud of you.\nWith love,\nGrandmother"
+},
+{
+"id": "r3-s4",
+"text": "The blueness of the sky seems too obvious to require explanation, yet the question preoccupied some of the finest scientific minds of the nineteenth century. Sunlight appears white because it contains a mixture of all the colors of the visible spectrum, from long-wavelength red to short-wavelength violet. As this light passes through the atmosphere, it encounters molecules of nitrogen and oxygen vastly smaller than the wavelengths of light themselves. In 1871 the British physicist John William Strutt (Lord Rayleigh) showed mathematically that such minute particles scatter light with an intensity that rises steeply as wavelength decreases (in proportion to the inverse fourth power of the wavelength). Blue light, with its shorter wavelength, is therefore scattered several times more strongly than red, and it reaches our eyes from every direction of the sky.\nAn obvious objection ensues. If shorter wavelengths scatter more, the sky ought to look violet rather than blue. Several factors explain why it does not. Sunlight contains less violet than blue to begin with, a little violet is absorbed high in the atmosphere, and the human eye is considerably less sensitive to violet than to blue. The perceived color is thus a joint product of physics and physiology.\nThe same principle accounts for the reds and oranges of sunrise and sunset. When the sun is low, its light must traverse a far longer path through the atmosphere before reaching an observer. Along the way, most of the blue is scattered out of the direct beam, leaving the longer wavelengths to ____. Dust, smoke, and volcanic ash can accentuate the effect, which is why sunsets following major eruptions are often unusually lurid.\nClouds, by contrast, are white because their water droplets are much larger than the wavelengths of visible light. Such droplets scatter all colors more or less indiscriminately — a regime described by a different theory — so the light they send toward us retains the mixture of the original sunlight. On the Moon, which has no atmosphere to scatter sunlight, the daytime sky is black."
+},
+{
+"id": "r3-s5",
+"text": "Cities have always been prone to inundation, but the peril is mutating in character. As the climate warms, the atmosphere can hold more moisture (roughly seven percent more for each degree Celsius of warming), and intense downpours are becoming more frequent in many regions. At the same time, the spread of pavement and buildings has sealed the ground that once absorbed rainfall, so that water races across streets toward drainage systems designed for the climate of decades past.\nUnderground spaces have proved especially perilous. In August 2022 record rainfall in Seoul flooded semi-basement apartments (known in Korean as banjiha) and several residents who could not escape drowned in their homes. The tragedy prompted the city government to announce that it would phase out such dwellings as residences. Comparable disasters have struck elsewhere — in September 2021 the remnants of Hurricane Ida killed eleven people in basement apartments in New York City, and in October 2024 flash floods around Valencia, in eastern Spain, killed more than two hundred people, some of whom were trapped in underground garages after going to move their cars.\nThe danger in such spaces <u>escalates</u> with startling speed. Water inundating a basement can rise to the ceiling within minutes, and the pressure of water against a door can render it impossible to open from within. Electricity may fail, and occupants may remain oblivious to the threat until escape is foreclosed. Subway systems face analogous risks, and several cities have installed floodgates at station entrances.\nEngineers increasingly contend that the remedy cannot rely on ever larger pipes alone. Instead, many cities are pursuing what is sometimes called the sponge approach — rehabilitating wetlands, building parks and plazas designed to flood harmlessly, installing permeable pavement, and constructing underground reservoirs that store stormwater temporarily. The vast drainage tunnels and holding tanks of the Tokyo area (completed in 2006) are often invoked as a paradigm. Yet the poorest residents, who are most likely to live in basements and low-lying districts, are often the last to benefit from such investments, a pattern that transmutes a natural hazard into a question of social justice."
+},
+{
+"id": "r3-s6",
+"text": "Long before email, the great cities of the nineteenth century experimented with a strikingly physical way of sending messages quickly — blowing them through tubes. In 1853 a telegraph company in London installed a short pneumatic line to carry written telegrams between its central office and the stock exchange, sparing the couriers who had previously scurried through the congested streets. The principle was rudimentary. A message was rolled into a cylindrical container and inserted into a tube, and air pressure or a vacuum propelled it to its destination at speeds that could exceed those of any horse-drawn carriage.\nParis developed the most extensive and enduring system. Beginning in 1866, engineers laid tubes beneath the city's streets (often through the sewers), and by the early twentieth century the network extended for hundreds of kilometers, linking post offices throughout the capital. Parisians could send a pneumatique, a small card or letter that would typically arrive across the city within a couple of hours. The service became interwoven with the city's social fabric, carrying business messages, invitations, and declarations of love, and it appears in the novels and films of the period as an emblem of urgency.\nThe networks were exorbitantly expensive to maintain, however. Tubes ruptured, canisters jammed, and the pumps devoured prodigious amounts of energy. As the telephone spread through middle-class homes in the twentieth century, demand gradually waned, and fax machines later offered a faster alternative for documents. Paris finally <u>discontinued</u> its pneumatic post in 1984, after more than a century of service. Similar systems in Berlin, Vienna, and Prague met the same fate, although part of the Prague network survived until it was damaged by flooding in 2002.\nPneumatic tubes have not become entirely obsolete. Many hospitals use them to dispatch blood samples and medications between departments, and some banks still rely on them at drive-through windows. Historians of technology note that the tubes presaged a distinctly modern preoccupation — the desire to move information across a city faster than people themselves can travel."
+},
+{
+"id": "r3-s7",
+"text": "Many of the most illustrious novels of Victorian England were not first published as books at all. Charles Dickens's career was launched in 1836 with The Pickwick Papers, which appeared in monthly installments of thirty-two pages (each costing a shilling and bound in green paper covers). Sales of the early numbers were lackluster, but after Dickens introduced the comic servant Sam Weller in the fourth installment, demand soared, and by the end of the run the publisher was printing some forty thousand copies of each part. Serial publication would remain the backbone of Dickens's career, and contemporaries such as William Makepeace Thackeray and Elizabeth Gaskell published in much the same way.\nThe format conferred economic advantages. Readers who could not afford a complete novel in three volumes (which typically cost a guinea and a half) could buy it piece by piece, and publishers could recoup their costs gradually. Advertisements bound into each installment furnished additional revenue.\nSerialization also shaped the novels themselves. Because each part had to entice readers to return, authors learned to end installments with suspense or an unresolved question, and to sustain sprawling casts of idiosyncratic minor characters who could be revisited from month to month. Writing only a few installments ahead of publication, Dickens could respond to readers' reactions, and he occasionally altered his plans in response to letters or flagging sales. Critics have argued that the loose, episodic structure of many Victorian novels, sometimes disparaged as a defect, was a rational <u>adaptation</u> to the conditions under which they were written and read.\nWhen I teach these novels, students are often astonished that the first readers waited a month for each new chapter. The experience of reading was also communal in a manner that is now scarce. A new installment could be discussed by families, read aloud to those who could not read, and debated in the press before the next appeared. Some commentators have likened it to following a television series week by week, and the comparison is apt — in both cases, the rhythm of release becomes part of the work's meaning."
+},
+{
+"id": "r3-s8",
+"text": "Popular self-help literature often avers that imagining success vividly will help bring it about. The psychologist Gabriele Oettingen has spent decades scrutinizing that claim, and her findings suggest that it is, at best, partial. In a series of studies, people who indulged in especially positive fantasies about the future, Ⓐ<u>whether</u> about finding a job, recovering from surgery, or winning the affection of someone they admired, tended to fare worse than those whose expectations were more circumspect. Graduates who fantasized most glowingly about landing their ideal job (to take one example) submitted fewer applications and received fewer offers two years later.\nOettingen's explanation is that pleasant fantasies allow the mind to savor a goal as if it Ⓑ<u>had</u> already been achieved. In experiments measuring blood pressure, participants who wallowed in positive fantasies showed diminished signs of physiological energization, Ⓒ<u>suggesting</u> that the imagined success had partly sapped the motivation needed to pursue the real thing.\nShe does not conclude that people should abandon their dreams. Instead, she advocates a technique she calls mental contrasting. People first imagine the desired outcome and then deliberately identify the principal obstacle within themselves that stands in the way, such as a tendency to procrastinate or a fear of rejection. Juxtaposing the two images appears to fortify commitment to goals that are feasible and to help people disengage from goals that are not. Combined with specific plans for overcoming the obstacle, the method has been tested in studies Ⓓ<u>involved</u> students, patients, and employees, with encouraging results.\nI have tried the technique myself before difficult deadlines, and the obstacle I identify is nearly always the same — my own procrastination. The research confounds a cultural message that equates optimism with success. Expectations, in Oettingen's account, are not the problem; people who judge their chances realistically and still expect to succeed tend to work hard. What erodes effort is fantasy that floats untethered from the reality it must eventually confront."
+},
+{
+"id": "r3-s9",
+"text": "People from disparate cultures may, in some respects, literally perceive the world differently. A well-known experiment published in 2001 by the psychologists Takahiko Masuda and Richard Nisbett points in that direction. Japanese and American university students watched short animated scenes of an underwater environment featuring a few large, fast-moving fish together with smaller creatures, plants, rocks, and bubbles. Afterward, they were asked to describe what they had seen.\nThe American participants tended to commence with the most salient objects, typically by mentioning the big fish. The Japanese participants were more likely to begin with the setting, describing the water, the color of the background, or the plants, and they made more statements about relationships between the fish and their surroundings. In a subsequent recognition test, the Japanese participants were less accurate at identifying a previously seen fish when it appeared against an unfamiliar background, whereas the Americans' recognition was relatively unaffected by the change of context.\nNisbett and his colleagues interpret such findings as evidence of two broad cognitive styles. Analytic thinking (which they associate with Western societies) focuses on objects and their attributes, detaching them from their context. Holistic thinking (which they associate with East Asian societies) attends to the field as a whole and to the relations among its elements. They trace the difference partly to <u>divergent</u> social traditions, contrasting cultures that emphasize individual independence with those that emphasize interdependence.\nThe thesis has drawn trenchant criticism. Some researchers argue that the differences, although statistically reliable, are modest, that variation within each culture is substantial, and that labels such as Western and East Asian obscure immense heterogeneity. Others note that cognitive styles can shift with circumstance — people primed to think about relationships become more holistic, regardless of where they grew up. Even so, the studies have helped persuade psychologists that findings drawn from Western university students cannot automatically be assumed to describe human beings in general."
+},
+{
+"id": "r3-s10",
+"text": "By the middle of the nineteenth century, Britain's factories were turning out furniture, textiles, and ornaments in unprecedented quantities, and many critics found the results deplorable. Machine-made goods, they complained, were shoddy in construction and smothered in imitative decoration, while the workers who produced them performed monotonous tasks that afforded no scope for skill or pleasure. The writer John Ruskin (1819–1900) argued that the degradation of the object and the degradation of the worker were inseparable, and his ideas made a profound impression on a young Oxford graduate named William Morris.\nWhen Morris married in 1859, he and the architect Philip Webb designed a house for the couple, and finding nothing in the shops that satisfied him, Morris and his friends decorated it themselves. The experience led him in 1861 to found a firm that produced wallpapers, textiles, stained glass, and furniture by traditional methods. Morris immersed himself in obsolete techniques, reviving vegetable dyes and hand-block printing, and his flowing designs of intertwined leaves and birds remain familiar today. He insisted that people should keep nothing in their homes that they did not know to be useful or believe to be beautiful.\nMorris's enterprise harbored a painful contradiction. Goods made slowly by skilled hands were expensive, and his customers were largely the affluent, whereas the ordinary workers he hoped to emancipate could not afford them. Morris was acutely conscious of this <u>predicament</u>, which helped draw him toward socialism in the 1880s; he came to believe that the conditions of labor could not be reformed without transforming society itself. In his final years he founded the Kelmscott Press (1891), producing exquisitely printed books.\nThe movement his example inspired took its name from the Arts and Crafts Exhibition Society (founded in 1887), and it spread through Britain, Europe, and the United States. Its practitioners championed honest construction, respect for materials, and the dignity of handwork. Ironically, many of its ideals were eventually realized not by rejecting machines but by applying its principles of simplicity and integrity to industrial design — an outcome Morris himself might have regarded with ambivalence."
+},
+{
+"id": "r3-s11",
+"text": "In most elections in the United States and Britain, voters mark a single candidate, and whoever receives the most votes wins, even without a majority. Critics maintain that this system (often called first past the post) yields skewed outcomes when more than two candidates compete. Voters who prefer a minor candidate may fear that supporting their favorite will merely help the candidate they like least — a dilemma known as the spoiler effect — and so they cast a tactical vote instead of a sincere one.\nRanked-choice voting (also called instant-runoff voting) is designed to address this problem. Voters rank the candidates in order of preference. If no candidate receives a majority of first choices, the candidate with the fewest is eliminated, and the ballots of that candidate's supporters are transferred to their next preference. The process repeats until one candidate holds a majority of the remaining ballots. Australia has used a version of the system for elections to its House of Representatives for more than a century, and in recent years it has been adopted in the American state of Maine, for New York City's party primaries, and in Alaska.\nAdvocates claim that the method enables voters to express their genuine preferences without fear of wasting their votes, and that it encourages candidates to court the second-choice support of their rivals' voters, tempering campaign rhetoric. Detractors raise several objections. The ballots are more complicated, and some studies have found that a larger share of them are filled out incorrectly or exhausted, meaning that every candidate they rank has been eliminated before the final round. Counting can take longer, and results can be harder for the public to verify.\nPolitical scientists also point out that ranked-choice voting is not immune to paradoxes. In rare cases, a candidate can lose by gaining support, or a candidate whom a majority prefers to every rival can be eliminated early. Such anomalies are by no means peculiar to this system; the economist Kenneth Arrow showed in 1951 that no ranked voting method can satisfy every reasonable criterion of fairness at once. The choice of an electoral system, in other words, is a choice among ____ rather than a quest for perfection."
+},
+{
+"id": "r3-s12",
+"text": "Few aspects of schooling foment as much domestic strife as homework. Parents complain that it consumes family evenings; teachers worry that without it students will not practice enough; and students, for their part, rarely need persuading that there is too much of it. Surprisingly, the research evidence on its benefits is more equivocal than either its champions or its detractors tend to concede. As a parent, I have witnessed many such evenings at our own kitchen table.\nThe most influential reviews of the subject, conducted by the American psychologist Harris Cooper and his colleagues, found that the relationship between homework and achievement depends heavily on age. Among secondary school students, those who did more homework generally performed better on tests and in their grades, although the benefit appeared to level off beyond a certain amount. Among elementary school children, by contrast, the association was weak or negligible. Cooper has suggested a rough guideline of about ten minutes per night for each grade level (so that a child in the third grade would do about half an hour).\nInterpreting such correlations is notoriously fraught. Students who do more homework may differ from their peers in motivation, parental support, or prior achievement, and struggling students may spend longer on assignments precisely because they find them hard. The quality of assignments matters too — tasks that ask students to practice skills already taught, or to apply them in unfamiliar contexts, appear more useful than busywork assigned out of habit.\nAdvocates of homework for young children argue that its value lies less in immediate academic gains than in cultivating habits such as time management and self-discipline, and in giving parents a window into what their children are learning. Skeptics retort that these benefits are largely unsubstantiated and that excessive assignments can breed rancor toward learning itself. The emerging consensus favors moderation — shorter, purposeful assignments in the early grades and more substantial work as students mature."
+},
+{
+"id": "r3-s13",
+"text": "Like human languages, the songs of many birds vary from place to place. The phenomenon has been studied most closely in the white-crowned sparrow — a small songbird of North America. In the 1960s researchers in California discerned that males living only a few kilometers apart sang recognizably different versions of the species' song, with distinctive trills and phrases that marked each local population much as an accent marks a human speaker. On early walks I have noticed this myself — the sparrows in one park do not sound quite like those a few kilometers away.\nExperiments illuminated how these dialects are acquired. Young males learn their songs by listening to adult males during a sensitive period early in life, then practicing, at first producing rambling, rudimentary sequences reminiscent of a human infant's babbling, before settling on a crystallized adult song. Birds raised in isolation sang abnormal songs, and birds exposed during the sensitive period to recordings of a particular dialect sang that dialect, even if it was not the one sung by their own parents. The song, in other words, is not fully encoded in the genes but must be learned from tutors.\nBecause the songs are learned, they are mutable. Researchers who compared recordings made decades apart in the San Francisco area found that some dialects had shifted over time, possibly in response to traffic noise (which masks lower frequencies and may favor songs pitched higher). A study of a related species, the white-throated sparrow in Canada, documented a new song variant that originated in the western part of its range and spread eastward across the continent within roughly two decades, <u>supplanting</u> the older version in many areas.\nThese findings make songbirds a valuable model for studying vocal learning — a capacity shared by relatively few animals, among them humans, parrots, hummingbirds, whales, and bats. The striking parallels with human speech, from the babbling stage to the importance of early exposure, have encouraged neuroscientists to investigate whether similar brain mechanisms underlie both."
+},
+{
+"id": "r3-s14",
+"text": "When Mount Vesuvius erupted in the year 79, it buried the Roman town of Herculaneum beneath deep layers of volcanic material. In the eighteenth century, excavators tunneling into a luxurious villa outside the town discovered a library of papyrus scrolls, the only intact library known to survive from the classical world. The searing heat of the eruption had carbonized the scrolls, turning them into fragile black cylinders that resembled lumps of charcoal. Attempts to unroll them, first by hand and later with ingenious machines, obliterated many and yielded only fragments, while hundreds remained unopened for more than two and a half centuries.\nIn recent decades scientists have tried to read the scrolls without unrolling them. The computer scientist Brent Seales and his colleagues developed methods of virtual unwrapping — high-resolution X-ray scans reveal the internal structure of a scroll, and software traces its tightly wound layers and flattens them digitally. A formidable obstacle remained, however. The ink used at Herculaneum was carbon-based, and in the scans it is scarcely distinguishable from the carbonized papyrus on which it lies.\nIn 2023 a competition called the Vesuvius Challenge offered prizes to anyone who could extract legible text from the scans. Participants trained machine-learning models to detect subtle traces of ink, and in October of that year the first word to be read from inside an unopened scroll was announced — a Greek word meaning purple. In early 2024 a team of three students was awarded the grand prize for revealing several columns of text (apparently a work by an Epicurean philosopher reflecting on pleasure).\nScholars hope that the techniques will eventually allow the entire collection to be read, and some speculate that further excavation of the villa, much of which remains buried, might uncover additional scrolls. The project has also become emblematic of a novel kind of collaboration, in which classicists, physicists, and amateur programmers around the world work together to retrieve texts long considered irretrievably lost."
+}
+],
+"q": [
+[
+1,
+1,
+"grammar",
+null,
+"Choose the one that is grammatically INCORRECT.\nArchivists cataloguing the merchant's papers ①<u>discovered</u> that most of the letters ②<u>sending</u> from the colony in the 1760s were never answered, a silence ③<u>which</u> historians have long attributed to the frequent loss of ships ④<u>bound</u> for Europe.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+2
+],
+"편지는 식민지에서 '보내진' 것이라 명사 letters 를 뒤에서 꾸미는 말은 수동의 과거분사 sent 여야 해요. sending 은 편지가 무엇을 보낸다는 능동이 되어 맞지 않아요. which 는 a silence 를 받는 목적격 관계대명사, bound for 는 '~로 향하는'이라 맞아요."
+],
+[
+2,
+1,
+"grammar",
+null,
+"Choose the one that is grammatically INCORRECT.\nThe committee rejected the proposal, ①<u>arguing</u> that ②<u>what</u> the city needed was not another stadium but housing ③<u>that</u> ordinary families could afford, a position ④<u>what</u> surprised even its own supporters.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"a position 이라는 선행사가 앞에 있으니 관계대명사는 which 여야 해요. what 은 선행사를 품은 관계대명사라 앞에 명사를 둘 수 없어요. 앞쪽 what the city needed 는 '도시에 필요한 것'이라는 명사절이라 맞고, housing that ... 의 that 도 맞아요."
+],
+[
+3,
+1,
+"cloze",
+null,
+"Choose the one that best fills in the blank.\nThe ministry hastily issued a detailed statement to ____ public fears that the new vaccine had been approved without adequate scrutiny.",
+[
+"stoke",
+"allay",
+"chronicle",
+"emulate"
+],
+[
+2
+],
+"정부가 서둘러 자세한 설명을 낸 목적은 국민의 걱정을 '가라앉히는(allay)' 것이에요. stoke(부채질하다)는 반대 방향이고, chronicle(연대순으로 기록하다)·emulate(본받다)는 fears 와 어울리지 않아요."
+],
+[
+4,
+1,
+"cloze",
+null,
+"Choose the one that best fills in the blank.\nOnce the auditors pointed out the discrepancy, the firm moved swiftly to ____ the error and reissued its annual report.",
+[
+"perpetrate",
+"condone",
+"extol",
+"rectify"
+],
+[
+4
+],
+"감사인이 지적하자 곧바로 보고서를 다시 냈으니 잘못을 '바로잡았다(rectify)'가 맞아요. condone(눈감아 주다)·extol(칭송하다)은 보고서를 다시 낸 행동과 맞지 않고, perpetrate(저지르다)도 엉뚱해요."
+],
+[
+5,
+1,
+"cloze",
+null,
+"Choose the one that best fills in the blank.\nAfter the licensing rules were relaxed, small private clinics began to ____, and within five years their number had tripled.",
+[
+"dwindle",
+"coalesce",
+"abdicate",
+"proliferate"
+],
+[
+4
+],
+"5년 만에 세 배가 됐다는 뒤 내용이 단서라 '급증하다(proliferate)'가 맞아요. dwindle(줄어들다)은 반대이고, coalesce(합쳐지다)라면 수가 늘지 않아요."
+],
+[
+6,
+1,
+"cloze",
+null,
+"Choose the one that best fills in the blank.\nDespite her early acclaim, the novelist was ____ to obscurity after critics turned against her experimental later work.",
+[
+"elevated",
+"relegated",
+"exempted",
+"entitled"
+],
+[
+2
+],
+"비평가들이 등을 돌린 뒤 무명으로 '밀려났다(relegated)'가 맞아요. elevated(높여졌다)는 반대이고, exempted·entitled 는 to obscurity 와 뜻이 이어지지 않아요."
+],
+[
+7,
+1,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nHer cheerful, almost nonchalant tone during the interview <u>belied</u> the exhaustion she later admitted to feeling.",
+[
+"revealed",
+"aggravated",
+"disguised",
+"vindicated"
+],
+[
+3
+],
+"belie 는 '(겉모습으로) 실제를 가리다, 거짓으로 보이게 하다'라 disguised 와 가까워요. 밝은 말투 뒤에 피로를 숨겼다는 문맥이에요. revealed(드러냈다)는 정반대예요."
+],
+[
+8,
+1,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nTo <u>placate</u> furious commuters, the railway company offered free monthly passes after the week-long strike.",
+[
+"provoke",
+"interrogate",
+"outnumber",
+"appease"
+],
+[
+4
+],
+"placate 는 '(화난 사람을) 달래다'라 appease 와 같은 뜻이에요. 화난(furious) 통근객에게 무료 정기권을 준 이유가 단서예요. provoke(화나게 하다)는 반대예요."
+],
+[
+9,
+1,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nEconomists called the budget <u>myopic</u>, since it slashed research funding merely to balance a single year's accounts.",
+[
+"farsighted",
+"extravagant",
+"transparent",
+"shortsighted"
+],
+[
+4
+],
+"myopic 은 원래 '근시의'이고 정책에 쓰면 '근시안적인'이라 shortsighted 와 같아요. 한 해 장부를 맞추려고 연구비를 깎았다는 설명이 단서예요. farsighted(멀리 내다보는)는 반대예요."
+],
+[
+10,
+1,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nThe investigation was hampered by a <u>paucity</u> of reliable records from rural districts, where few registers had been kept.",
+[
+"abundance",
+"distortion",
+"scarcity",
+"duplication"
+],
+[
+3
+],
+"paucity 는 '부족, 결핍'이라 scarcity 와 같아요. 기록을 남긴 곳이 거의 없었다는 뒤 내용이 단서예요. abundance(풍부함)는 반대예요."
+],
+[
+11,
+1,
+"reading",
+"r1-s1",
+"Which of the following best fills in the blank?",
+[
+"offset",
+"magnify",
+"conceal",
+"inherit"
+],
+[
+1
+],
+"경영진은 지금의 배출 증가가 '일시적'이고, AI 가 전력망 최적화·신소재 발견으로 결국 자기 배출을 '상쇄할(offset)' 거라고 주장해요. magnify(키우다)는 '일시적'이라는 낙관과 반대이고, conceal(숨기다)은 줄이는 방법(최적화·절약)과 이어지지 않아요."
+],
+[
+12,
+1,
+"reading",
+"r1-s1",
+"According to the passage, why have the emissions of some large technology companies increased?",
+[
+"They have abandoned their climate pledges.",
+"They have seen their processors grow less efficient per watt.",
+"They have been building and operating new data centers.",
+"They have paid utilities more for renewable electricity."
+],
+[
+3
+],
+"둘째 문단에 배출이 늘어난 까닭이 '새 데이터센터를 짓고 돌렸기 때문(largely because of the construction and operation of new data centers)'이라고 나와요. 약속을 공식 철회했다거나 칩 효율이 나빠졌다는 말은 없어요. 칩은 오히려 와트당 일을 더 했다고 했어요."
+],
+[
+13,
+1,
+"reading",
+"r1-s1",
+"Which of the following is the best title for the passage?",
+[
+"The Chipmakers Who Conquered the Energy Problem",
+"The Worldwide Disappearance of Coal Plants",
+"The Climate Bill of the Generative AI Boom",
+"The Rebound Effect in Household Appliances"
+],
+[
+3
+],
+"생성형 AI 로 데이터센터 전력 수요와 기업 배출이 늘어난 일, 그리고 그 득실을 두고 갈리는 의견을 다룬 글이라 'AI 붐의 기후 청구서'가 맞아요. 석탄 발전소는 오히려 폐쇄가 미뤄진다고 했고, 가전제품 이야기는 없어요."
+],
+[
+14,
+1,
+"reading",
+"r1-s2",
+"The underlined word \"susceptible\" is closest in meaning to:",
+[
+"resistant",
+"valuable",
+"ancient",
+"vulnerable"
+],
+[
+4
+],
+"susceptible 은 '(영향을) 받기 쉬운'이에요. 외래어가 특히 민간 어원으로 바뀌기 쉽다는 뜻이고, 뒤에 woodchuck·cockroach 같은 예가 줄줄이 나와요. vulnerable 이 가까워요. resistant(잘 견디는)는 반대예요."
+],
+[
+15,
+1,
+"reading",
+"r1-s2",
+"According to the passage, how did the word bridegroom acquire its present form?",
+[
+"An element speakers no longer understood was replaced by a familiar word.",
+"Scholars deliberately altered its spelling to match a Latin original.",
+"It was borrowed from a Spanish word for a servant who attended a bride.",
+"The word groom gradually lost its old meaning of a male servant."
+],
+[
+1
+],
+"첫 문단에 '남자'를 뜻하던 guma 가 쓰이지 않게 되자 사람들이 알아보지 못했고, 16세기에 익숙한 groom 으로 다시 해석됐다고 나와요. 학자가 일부러 바꾼 게 아니라 말하는 사람들이 바꾼 거예요."
+],
+[
+16,
+1,
+"reading",
+"r1-s2",
+"Which of the following is NOT true according to the passage?",
+[
+"The word woodchuck has no real connection to chopping wood.",
+"Shamefaced was originally the word shamefast.",
+"Folk etymology occurs in English but not in other languages.",
+"Linguists see folk etymology as speakers' search for meaning."
+],
+[
+3
+],
+"마지막 문단에 이 현상은 영어에만 있는 게 아니고 모든 언어에서 일어난다고 했어요. 영어에만 있다는 보기가 글과 맞지 않아요. woodchuck·shamefast·의미를 찾는 화자 이야기는 글과 같아요."
+],
+[
+17,
+1,
+"reading",
+"r1-s3",
+"Which of the following best fills in the blank?",
+[
+"the accuracy of telescopes",
+"the theory of gravitation itself",
+"the estimated mass of Mercury",
+"the name of the new planet"
+],
+[
+2
+],
+"천왕성 때는 '숨은 행성'이 답이었지만 수성은 숨은 행성(불칸)이 없었고, 아인슈타인의 상대성 이론이 설명했어요. 즉 이번에는 뉴턴 중력 '이론 자체'를 고쳐야 했다는 뜻이에요. 첫 문단에서 일부 학자가 뉴턴 법칙을 의심했던 것과 이어져요."
+],
+[
+18,
+1,
+"reading",
+"r1-s3",
+"Why did Le Verrier send his prediction to Johann Galle?",
+[
+"Galle had already noticed an unknown object.",
+"Adams had recommended the Berlin Observatory to him.",
+"Only Berlin possessed a telescope able to see the planet.",
+"Observers in Paris were slow to begin a search."
+],
+[
+4
+],
+"둘째 문단에 르베리에가 파리 관측자들을 서둘러 움직이게 하지 못해(unable to persuade observers in Paris to act promptly) 갈레에게 보냈다고 나와요. 갈레가 미리 봤다거나 애덤스가 추천했다는 말은 없어요."
+],
+[
+19,
+1,
+"reading",
+"r1-s4",
+"What does Mrs. Ferrante's moving the narrator's stool most likely suggest?",
+[
+"She had come to regard the narrator as a trusted colleague.",
+"She wanted the narrator to leave the shop before autumn.",
+"She was displeased with the work on the cookbook.",
+"She needed more room in the corner for her supplies."
+],
+[
+1
+],
+"칭찬을 거의 하지 않던 주인이 요리책 수선 뒤 말없이 의자를 구석에서 자기 작업대 옆으로 옮겼어요. 말 대신 행동으로 이제 함께 일하는 사람으로 인정했다는 뜻이에요. 손님이 울며 기뻐했으니 불만이라는 보기는 맞지 않아요."
+],
+[
+20,
+1,
+"reading",
+"r1-s4",
+"The underlined word \"unpicked\" is closest in meaning to:",
+[
+"undid",
+"admired",
+"copied",
+"sold"
+],
+[
+1
+],
+"unpick 은 '(바느질한 것을) 뜯어내다'예요. 바늘땀이 너무 조이거나 느슨했다는 뒤 문장이 단서라, 연습으로 꿰맨 책을 주인이 다시 '풀어 버렸다(undid)'가 맞아요."
+],
+[
+21,
+1,
+"reading",
+"r1-s5",
+"What did Amazon announce in 2024?",
+[
+"It would close all of its Go stores in Seattle and other cities.",
+"It would replace its checkout-free system in Fresh stores with smart carts.",
+"It would stop licensing Just Walk Out to stadiums and airports.",
+"It would hire overseas workers to watch footage from every store."
+],
+[
+2
+],
+"둘째 문단에 2024년 미국 프레시 매장에서 Just Walk Out 을 빼고 손님이 직접 찍는 스마트 카트로 바꾼다고 발표했다고 나와요. 해외 직원 이야기는 언론 보도였고 아마존은 그 설명에 반박했어요."
+],
+[
+22,
+1,
+"reading",
+"r1-s5",
+"Which of the following is NOT true according to the passage?",
+[
+"Some cashierless systems identify goods by means of radio tags.",
+"Amazon disagreed with how its overseas staff were described.",
+"Unstaffed shops in Korea usually keep a cashier on duty at night.",
+"Older customers may have difficulty using self-service kiosks."
+],
+[
+3
+],
+"한국의 무인 가게는 '아무도 두지 않고(staffed by no one at all)' 카메라로 원격 감시한다고 했어요. 밤에 계산원을 둔다는 보기는 글과 맞지 않아요. 무선 태그, 아마존의 반박, 노인의 키오스크 어려움은 모두 글에 있어요."
+],
+[
+23,
+1,
+"reading",
+"r1-s5",
+"The underlined word \"punctured\" is closest in meaning to:",
+[
+"confirmed",
+"inflated",
+"publicized",
+"undermined"
+],
+[
+4
+],
+"puncture 는 '구멍을 내다'에서 '(믿음·인상을) 깨뜨리다'로 쓰여요. 사람 손 없이 돌아간다는 인상을 '무너뜨렸다'는 뜻이라 undermined 가 맞아요. confirmed(확인했다)는 반대예요."
+],
+[
+24,
+1,
+"reading",
+"r1-s6",
+"Which of the underlined parts Ⓐ~Ⓓ is grammatically INCORRECT?",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ"
+],
+[
+3
+],
+"spend time -ing 꼴에서 뒤에 오는 동사는 -ing 여야 하고, 짝을 이루는 flirting 과도 나란해야 해요. gambled 가 아니라 gambling 이 맞아요. borne 은 '짐꾼이 나르는' 의자라 수동 과거분사로 맞고, which 는 a civilization 을 받는 관계대명사, largely 는 부사로 맞아요."
+],
+[
+25,
+1,
+"reading",
+"r1-s6",
+"According to the passage, why did parents consider the Grand Tour worth its cost?",
+[
+"It prepared their sons for public life and polite society.",
+"It allowed their sons to buy Italian paintings cheaply.",
+"It kept their sons away from gambling and debts at home.",
+"It trained their sons to become professional tutors."
+],
+[
+1
+],
+"둘째 문단 끝에 대륙 문화를 아는 것이 신사가 공직과 상류 사회에 걸맞다는 표시였기 때문에 부모들이 좋은 투자로 여겼다고 나와요. 도박은 오히려 여행 중에 벌어진 일로 풍자됐어요."
+],
+[
+26,
+1,
+"reading",
+"r1-s6",
+"The main purpose of the passage is to:",
+[
+"describe an aristocratic custom and its lasting effects",
+"explain why Venetian painting declined after Canaletto's death",
+"argue that tutors caused the excesses of the young travelers",
+"compare the schooling of English and French aristocrats"
+],
+[
+1
+],
+"젊은 귀족의 교육 여행이 어떤 관습이었는지(경로·동행·일탈)와 영국 취향·관광에 남긴 영향을 설명하는 글이라 'describe an aristocratic custom and its lasting effects'가 맞아요. 가정교사 탓이라는 주장이나 카날레토 사후 이야기는 없어요."
+],
+[
+27,
+1,
+"reading",
+"r1-s7",
+"Which of the following best fills in the blank?",
+[
+"understated",
+"indisputable",
+"harmless",
+"unsupported"
+],
+[
+4
+],
+"더 큰 표본의 재현 실험에서 호르몬 변화가 나오지 않았고 원저자 한 명도 효과를 믿지 않는다고 했어요. 그러니 우호적인 검토자도 극적인 생리 효과 주장은 '근거가 없었다(unsupported)'고 인정한다는 흐름이에요. indisputable(논란의 여지 없는)은 정반대예요."
+],
+[
+28,
+1,
+"reading",
+"r1-s7",
+"According to the passage, what did the 2015 replication find?",
+[
+"Participants' testosterone rose even more than first reported.",
+"Participants felt more powerful, but their hormones did not change.",
+"Participants became more willing to gamble but felt no more powerful.",
+"Participants' cortisol fell in contracted postures."
+],
+[
+2
+],
+"둘째 문단에 2015년 연구는 호르몬과 도박 성향에는 효과가 없었지만, 참가자들이 조금 더 힘이 있다고 '느꼈다'고는 답했다고 나와요. 도박 성향이 늘었다는 보기는 거꾸로예요."
+],
+[
+29,
+1,
+"reading",
+"r1-s7",
+"The author's attitude toward the original power-pose study is best described as:",
+[
+"unqualified admiration",
+"measured skepticism",
+"outright contempt",
+"complete indifference"
+],
+[
+2
+],
+"글쓴이는 자세가 기분과 무관하다는 건 아니라고 인정하면서도, 생생한 결과가 증거보다 앞서 나갔다고 짚어요. 절제된 '의심'이에요. 연구를 깔보거나(contempt) 무관심한 말투는 아니에요."
+],
+[
+30,
+1,
+"reading",
+"r1-s8",
+"What is the passage mainly about?",
+[
+"the private correspondence of Samuel Richardson and his readers",
+"the influence of Frankenstein on modern fiction",
+"the reasons readers came to prefer third-person narrators",
+"the rise, appeal, and decline of the novel written in letters"
+],
+[
+4
+],
+"편지로만 쓴 소설이 18세기에 유행하고(등장), 생생함과 여러 관점이라는 매력이 있었지만 억지스러움 때문에 밀려났다가 흔적을 남긴 과정을 다뤄요. 리처드슨의 개인 편지나 프랑켄슈타인은 일부 예일 뿐이에요."
+],
+[
+31,
+1,
+"reading",
+"r1-s8",
+"The underlined word \"immediacy\" is closest in meaning to:",
+[
+"brevity",
+"formality",
+"directness",
+"obscurity"
+],
+[
+3
+],
+"immediacy 는 '직접 겪는 듯한 생생함, 즉시성'이에요. 감정을 나중에 떠올리는 게 아니라 일어나는 순간 보는 듯했다는 뒤 문장이 단서라 directness 가 맞아요. brevity(간결함)는 오히려 긴 편지와 맞지 않아요."
+],
+[
+32,
+1,
+"reading",
+"r1-s8",
+"According to the passage, what was one criticism of the epistolary novel?",
+[
+"Its letters were too brief to convey intense emotion convincingly.",
+"Its narrator intruded too often on the thoughts of its characters.",
+"Its characters implausibly kept writing during moments of crisis.",
+"Its point of view was confined to a single character."
+],
+[
+3
+],
+"셋째 문단에 납치나 화재 한가운데서도 길고 우아한 편지를 계속 쓰는 여주인공을 비평가들이 비웃었다고 나와요. 서간체는 오히려 끼어드는 서술자 없이 여러 관점을 나란히 보여 준다는 게 장점이었어요."
+],
+[
+33,
+1,
+"reading",
+"r1-s9",
+"Where would the following sentence best fit in the passage?\nBecause the chromatophores are operated by nerves rather than by hormones, the changes can be almost instantaneous, far swifter than the color shifts of a chameleon.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]"
+],
+[
+2
+],
+"주어진 문장의 '색소 주머니가 신경으로 움직인다'는 말은 둘째 문단 설명을 받아요. 그래서 색소 주머니 설명이 끝난 [B] 가 맞아요. [A] 앞에는 색소 주머니가 아직 나오지 않았어요."
+],
+[
+34,
+1,
+"reading",
+"r1-s9",
+"According to the passage, what happens when the muscles around a chromatophore contract?",
+[
+"The sac shrinks until its pigment is an almost invisible dot.",
+"The sac is stretched and its pigment becomes visible.",
+"The skin raises small bumps called papillae.",
+"The reflective cells beneath it produce iridescent blues."
+],
+[
+2
+],
+"둘째 문단에 근육이 수축하면 주머니가 당겨져 열리며 색소가 보이고, 이완하면 점처럼 작아진다고 나와요. 작아지는 것은 이완할 때예요."
+],
+[
+35,
+1,
+"reading",
+"r1-s9",
+"Which of the following is NOT mentioned as a purpose of the cuttlefish's changing appearance?",
+[
+"blending into its surroundings",
+"startling an approaching predator",
+"regulating its body temperature",
+"courting a potential mate"
+],
+[
+3
+],
+"첫 문단에 주변에 섞이기, 포식자 놀라게 하기, 짝에게 구애하기가 나와요. 체온 조절은 글에 없어요."
+],
+[
+36,
+1,
+"reading",
+"r1-s10",
+"Which of the following best fills in blanks (A) and (B)?",
+[
+"(A) completed — (B) increase",
+"(A) completed — (B) diminish",
+"(A) unsolved — (B) diminish",
+"(A) unfamiliar — (B) remain constant"
+],
+[
+2
+],
+"(A) 단계별로 풀어 놓은 '완성된(completed)' 풀이, 즉 풀이 예제를 먼저 공부하는 게 초보에게 낫다는 말이에요. (B) 실력이 늘면 예제가 오히려 방해가 된다(전문성 역전)고 했으니 도움은 '줄어야(diminish)' 해요."
+],
+[
+37,
+1,
+"reading",
+"r1-s10",
+"According to the passage, what is the expertise reversal effect?",
+[
+"Worked examples become less useful, or even harmful, for advanced learners.",
+"Beginners learn more from solving problems unaided than from examples.",
+"Experts gradually forget procedures they have not practiced recently.",
+"Teachers with more expertise tend to give less effective explanations."
+],
+[
+1
+],
+"셋째 문단에 실력이 쌓이면 풀이 예제가 군더더기가 되고 오히려 수행을 해칠 수 있다고 하며 이를 전문성 역전 효과라 불렀어요. 초보가 혼자 푸는 게 낫다는 보기는 글의 주장과 반대예요."
+],
+[
+38,
+1,
+"reading",
+"r1-s10",
+"Which of the following is the best title for the passage?",
+[
+"Why Struggling Alone Is Always the Best Teacher",
+"The Limits of Working Memory in Adult Learners",
+"How Australia Reformed Mathematics",
+"When Worked Examples Help and When They Hinder"
+],
+[
+4
+],
+"초보에게는 풀이 예제가 도움이 되지만 실력이 늘면 방해가 된다는 두 면을 다룬 글이라 'When Worked Examples Help and When They Hinder'가 맞아요. 혼자 씨름하는 게 늘 최선이라는 보기는 글이 반박한 옛 생각이에요."
+],
+[
+39,
+1,
+"reading",
+"r1-s11",
+"According to the passage, why did VOC investors need to be able to sell their shares?",
+[
+"The company refused to pay any dividends to them.",
+"Each partnership was dissolved after a voyage.",
+"They could not withdraw their money from the company.",
+"The government taxed shares that were held for long."
+],
+[
+3
+],
+"둘째 문단 첫머리에 투자자가 회사에서 돈을 빼낼 수 없었기 때문에 돈을 되찾을 다른 길이 필요했고, 그래서 주식을 남에게 팔게 했다고 나와요. 항해마다 해산한 것은 그 이전 방식이에요."
+],
+[
+40,
+1,
+"reading",
+"r1-s11",
+"The underlined word \"indefinitely\" is closest in meaning to:",
+[
+"without a set time limit",
+"in violation of the law",
+"in complete secrecy",
+"for a single voyage only"
+],
+[
+1
+],
+"indefinitely 는 '기한 없이'예요. 몇 년씩 묶였다가 사실상 끝없이 묶였다는 흐름이고, 그 덕에 창고·요새·상설 선단을 지었다고 했어요. for a single voyage 는 예전 방식 쪽이에요."
+],
+[
+41,
+1,
+"reading",
+"r1-s11",
+"Which of the following can be inferred from the passage?",
+[
+"The VOC acted in some respects like a government.",
+"The VOC's investors received no return on their money.",
+"The trading ventures before the VOC kept their capital for decades.",
+"The nutmeg tree grew widely throughout Asia in 1621."
+],
+[
+1
+],
+"특허장이 전쟁을 하고 조약을 맺고 영토를 다스릴 권한을 줬다고 했으니 회사가 정부처럼 움직였다고 추론할 수 있어요. 배당을 후하게 줬고, 육두구는 반다 제도에서만 났어요."
+],
+[
+42,
+1,
+"reading",
+"r1-s12",
+"Which of the underlined Ⓐ~Ⓓ refers to something different from the others?",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ"
+],
+[
+3
+],
+"She(대작을 고른 사람)·she(재판에서 심문받은 사람)·she(런던 궁정에 간 사람)는 모두 아르테미시아예요. his 는 그림이 딸의 것과 뒤섞였다는 아버지 오라치오를 가리켜요."
+],
+[
+43,
+1,
+"reading",
+"r1-s12",
+"According to the passage, what distinguished Artemisia from most female painters of her time?",
+[
+"She painted large scenes from history and scripture.",
+"She specialized in portraits and still lifes.",
+"She studied anatomy with male students in Rome.",
+"She refused to work for wealthy or powerful patrons."
+],
+[
+1
+],
+"첫 문단에 당시 여성 화가 대부분은 초상화·정물화에 머물렀지만 그녀는 가장 격이 높던 역사·성경 장면의 대작을 골랐다고 나와요. 여성은 아카데미에서 해부학을 배우지 못했고, 그녀는 후원자들과 능숙하게 거래했어요."
+],
+[
+44,
+1,
+"reading",
+"r1-s13",
+"According to the passage, why was iodine deficiency common in certain regions?",
+[
+"In those regions, people avoided eating salt.",
+"In those regions, the water contained too much salt.",
+"In those regions, crops absorbed too much iodine from glaciers.",
+"In those regions, iodine had been washed out of the soil."
+],
+[
+4
+],
+"첫 문단 끝에 빙하가 훑고 갔거나 자주 물에 잠긴 지역은 흙에서 요오드가 씻겨 나가 그곳 작물에 요오드가 적다고 나와요. 소금을 피했다는 말은 없어요."
+],
+[
+45,
+1,
+"reading",
+"r1-s13",
+"Which of the following best fills in the blank?",
+[
+"exotic",
+"accessible",
+"controversial",
+"elaborate"
+],
+[
+2
+],
+"소금이 좋은 수단이었던 까닭은 거의 모두가 먹고 값이 아주 싸서였어요. 극적이지 않아도 거의 모든 사람에게 닿을 만큼 '손쉽게 얻을 수 있으면(accessible)' 된다는 결론이에요. elaborate(정교한)는 '극적이지 않아도'와 맞지 않아요."
+],
+[
+46,
+1,
+"reading",
+"r1-s14",
+"The underlined word \"borderline\" is closest in meaning to:",
+[
+"extreme",
+"intermediate",
+"imaginary",
+"typical"
+],
+[
+2
+],
+"borderline 은 '경계에 걸친, 이도 저도 아닌'이에요. 분명히 해당하는 경우와 분명히 아닌 경우 사이에서 답이 없어 보이는 경우를 말하니 intermediate(중간의)가 맞아요. extreme(극단의)은 반대예요."
+],
+[
+47,
+1,
+"reading",
+"r1-s14",
+"According to the passage, what do epistemicists claim?",
+[
+"Vague statements are neither true nor false in borderline cases.",
+"Statements become gradually less true as grains are removed.",
+"A sharp boundary exists, but we cannot know where it is.",
+"No heap of sand has ever genuinely existed at all."
+],
+[
+3
+],
+"셋째 문단에 인식론자(epistemicists)는 실제로 날카로운 경계가 있지만 우리가 그 자리를 알 수 없다고 본다고 나와요. 참·거짓이 아니라는 것과 진리의 정도는 다른 학자들의 답이에요."
+],
+[
+48,
+1,
+"reading",
+"r1-s14",
+"What is the passage mainly about?",
+[
+"the life and teachings of the philosopher Eubulides of Miletus",
+"the scientific measurement of individual grains of sand",
+"the history of laws that fix precise limits on speed",
+"the puzzle that arises from vague concepts and attempts to resolve it"
+],
+[
+4
+],
+"모래 더미 역설을 소개하고 그것이 모호한 개념에서 생긴다는 점, 철학자들의 해결 시도, 법의 경계선 같은 실제 의미까지 다룬 글이에요. 속도 제한은 예로만 나와요."
+],
+[
+49,
+1,
+"reading",
+"r1-s15",
+"Which of the following is the best title for the passage?",
+[
+"The Deliberate Design of the Korean Alphabet",
+"The Spread of Chinese Characters Across East Asia",
+"The Decline of Classical Chinese Scholarship",
+"The Slow Evolution of Writing Systems"
+],
+[
+1
+],
+"오랜 세월 저절로 생긴 다른 문자와 달리 한글은 발음 기관 모양·획 더하기·천지인 같은 원리로 '일부러 설계'됐고, 그 뒤 받아들여지기까지의 과정을 다룬 글이에요. 문자가 천천히 진화한다는 것은 한글과 대비되는 일반 사례예요."
+],
+[
+50,
+1,
+"reading",
+"r1-s15",
+"Which of the following is NOT true according to the passage?",
+[
+"The new script was immediately used for all official documents.",
+"Some consonant shapes imitate the organs of speech.",
+"Vowels were built from three basic graphic elements.",
+"Before the script, literacy was largely limited to an elite."
+],
+[
+1
+],
+"셋째 문단에 공문서와 학문은 오랫동안 한문으로 썼고, 한글은 19세기 말에야 공식 지위를 얻었다고 했어요. 곧바로 모든 공문서에 쓰였다는 보기는 글과 맞지 않아요."
+],
+[
+1,
+2,
+"grammar",
+null,
+"Choose the one that is grammatically INCORRECT.\nThe revised curriculum requires undergraduates to read primary sources, ①<u>to evaluate</u> competing interpretations, and ②<u>presenting</u> their conclusions in a seminar ③<u>attended</u> by faculty members ④<u>who</u> did not teach the course.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+2
+],
+"requires 뒤에 to read, to evaluate 가 나란히 이어지니 세 번째도 (to) present 여야 병렬이 맞아요. presenting 만 꼴이 달라요. attended by 는 '교수들이 참석하는' 세미나라 수동 과거분사로 맞고, who 는 faculty members 를 받는 관계대명사예요."
+],
+[
+2,
+2,
+"grammar",
+null,
+"Choose the one that is grammatically INCORRECT.\n①<u>Restoring</u> the wetlands that ②<u>once</u> fringed the estuary ③<u>have proved</u> far more expensive than the planners ④<u>anticipated</u>, largely because the soil had been contaminated by decades of industrial runoff.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"주어는 동명사구 Restoring the wetlands ... 라 단수로 받아야 해요. 바로 앞 wetlands 에 끌려 복수로 쓰면 안 되고 has proved 가 맞아요. once 는 '한때'라는 부사, anticipated 는 과거 시제로 맞아요."
+],
+[
+3,
+2,
+"cloze",
+null,
+"Choose the one that best fills in the blank.\nThe beleaguered airline hoped to ____ its pandemic losses by raising fares on its busiest international routes.",
+[
+"squander",
+"forfeit",
+"disburse",
+"recoup"
+],
+[
+4
+],
+"운임을 올려 팬데믹 때 본 손실을 '만회하려(recoup)' 했다는 흐름이에요. squander(낭비하다)·forfeit(잃다)·disburse(지출하다)는 손실을 메우는 행동이 아니에요."
+],
+[
+4,
+2,
+"cloze",
+null,
+"Choose the one that best fills in the blank.\nThe hastily drafted treaty failed to ____ the frontier clearly, leaving both nations to claim the same fertile valley.",
+[
+"delineate",
+"obfuscate",
+"alienate",
+"eradicate"
+],
+[
+1
+],
+"두 나라가 같은 골짜기를 서로 제 땅이라 하게 된 까닭은 국경을 분명히 '획정하지(delineate)' 못했기 때문이에요. obfuscate(흐리게 하다)는 clearly 와 부딪히고, alienate(멀어지게 하다)·eradicate(뿌리 뽑다)는 국경을 분명히 한다는 뜻이 아니에요."
+],
+[
+5,
+2,
+"cloze",
+null,
+"Choose the one that best fills in the blank.\nA sense of foreboding seemed to ____ the entire village in the weeks before the new dam was scheduled to open.",
+[
+"pervade",
+"elude",
+"exonerate",
+"embellish"
+],
+[
+1
+],
+"불길한 예감이 마을 전체에 '퍼져 있었다(pervade)'가 맞아요. elude(교묘히 피하다)·exonerate(무죄로 하다)·embellish(꾸미다)는 마을 전체를 덮는 분위기와 어울리지 않아요."
+],
+[
+6,
+2,
+"cloze",
+null,
+"Choose the one that best fills in the blank.\nAlthough the herbal remedy is widely marketed, rigorous clinical trials have found it no more ____ than a sugar pill.",
+[
+"venomous",
+"efficacious",
+"ostentatious",
+"contagious"
+],
+[
+2
+],
+"임상시험이 따지는 것은 약효라서, 설탕 알약(위약)보다 더 '효과가 있지(efficacious)' 않다는 뜻이 맞아요. 나머지는 약의 효능 비교와 이어지지 않아요."
+],
+[
+7,
+2,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nThe inspector cast only a <u>perfunctory</u> glance at the machinery before signing the safety certificate.",
+[
+"cursory",
+"meticulous",
+"hostile",
+"nostalgic"
+],
+[
+1
+],
+"perfunctory 는 '형식적인, 건성인'이라 cursory(대충 하는)와 가까워요. 기계를 흘끗 보고 바로 서명했다는 문맥이 단서예요. meticulous(꼼꼼한)는 반대예요."
+],
+[
+8,
+2,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nThe professor drew a simple diagram to <u>elucidate</u> a theory that had baffled her students for weeks.",
+[
+"obscure",
+"clarify",
+"fabricate",
+"endorse"
+],
+[
+2
+],
+"elucidate 는 '알기 쉽게 설명하다, 밝히다'라 clarify 와 같아요. 학생들을 헷갈리게 한(baffled) 이론을 간단한 그림으로 풀었다는 문맥이에요. obscure(흐리게 하다)는 반대예요."
+],
+[
+9,
+2,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nFurious supporters blamed the team's <u>lackadaisical</u> defending for the humiliating defeat in the final.",
+[
+"aggressive",
+"ingenious",
+"impeccable",
+"listless"
+],
+[
+4
+],
+"lackadaisical 은 '열의 없는, 느슨한'이라 listless(무기력한)와 가까워요. 굴욕적인 패배의 탓으로 돌렸다는 말이 단서예요. impeccable(흠잡을 데 없는)은 반대예요."
+],
+[
+10,
+2,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nAnalysts feared that the chairman's abrupt resignation might <u>precipitate</u> a crisis of confidence in the bank.",
+[
+"avert",
+"diagnose",
+"trigger",
+"conceal"
+],
+[
+3
+],
+"precipitate 는 동사로 '(나쁜 일을) 갑자기 일으키다, 촉발하다'라 trigger 와 같아요. 갑작스러운 사임을 걱정했다는 문맥이에요. avert(막다)는 반대예요."
+],
+[
+11,
+2,
+"reading",
+"r2-s1",
+"The underlined word \"intimate\" is closest in meaning to:",
+[
+"close",
+"hostile",
+"brief",
+"formal"
+],
+[
+1
+],
+"intimate 는 '친밀한, 가까운'이에요. 서로 결혼하고 장사하며 섞여 살았다는 뒤 내용이 단서라 close 가 맞아요. hostile(적대적인)은 약탈 이야기에 끌린 오답이에요."
+],
+[
+12,
+2,
+"reading",
+"r2-s1",
+"According to the passage, why is the borrowing of English pronouns from Norse remarkable?",
+[
+"Old Norse had no pronouns of its own.",
+"The Normans later replaced most of them.",
+"Languages seldom borrow basic grammatical words.",
+"Pronouns usually come from the language of conquerors."
+],
+[
+3
+],
+"첫 문단에 대명사를 빌리는 일은 아주 드물고, 언어는 보통 새 물건·제도를 가리키는 말을 들여오지 일상 문법의 뼈대는 빌리지 않는다고 나와요. 노르만이 대명사를 바꿨다는 말은 없어요."
+],
+[
+13,
+2,
+"reading",
+"r2-s1",
+"Which of the following is the best title for the passage?",
+[
+"The Norman Transformation of English Law",
+"The Disappearance of Old Norse in Scandinavia",
+"The Viking Imprint on Everyday English",
+"The Growing Complexity of English Grammar"
+],
+[
+3
+],
+"they·sky·egg 같은 아주 흔한 낱말과 -by 지명까지, 스칸디나비아 정착민이 영어에 남긴 깊은 흔적을 다룬 글이에요. 영어 문법은 오히려 단순해졌다고 했으니 'The Growing Complexity of English Grammar'는 거꾸로예요."
+],
+[
+14,
+2,
+"reading",
+"r2-s2",
+"According to the passage, what share of the e-waste generated in 2022 was documented as properly recycled?",
+[
+"less than one quarter",
+"roughly one half of it",
+"more than eighty percent",
+"nearly all of the total"
+],
+[
+1
+],
+"둘째 문단 첫머리에 2022년 전자 폐기물 가운데 제대로 수거·재활용됐다고 기록된 것은 4분의 1이 안 된다고 나와요. '80% 넘게'는 2010년 이후 증가율 숫자를 끌어온 오답이에요."
+],
+[
+15,
+2,
+"reading",
+"r2-s2",
+"Which of the following is NOT mentioned as a hazard of informal recycling?",
+[
+"toxic fumes from burning cables",
+"radiation leaking from discarded screens",
+"exposure to lead and mercury",
+"acid baths used on circuit boards"
+],
+[
+2
+],
+"둘째 문단에 전선을 태울 때 나오는 독한 연기, 회로 기판을 담그는 산 용액, 납·수은 노출이 나와요. 버린 화면에서 나오는 방사선은 글에 없어요."
+],
+[
+16,
+2,
+"reading",
+"r2-s2",
+"Which of the following best fills in the blank?",
+[
+"trivial",
+"arduous",
+"obsolete",
+"unnecessary"
+],
+[
+2
+],
+"대시 뒤에 기기가 분해하기 어렵게 봉해져 있고 귀한 금속은 수십 개 부품에 아주 조금씩 흩어져 있다는 이유가 나와요. 회수가 '힘들다(arduous)'는 뜻이에요. trivial(사소한)은 정반대예요."
+],
+[
+17,
+2,
+"reading",
+"r2-s3",
+"Which of the following can be inferred about the narrator?",
+[
+"The narrator had often written long letters by hand before.",
+"The narrator eventually had the worn nib replaced.",
+"The narrator came to value the pen as a link to the grandfather.",
+"The narrator's grandfather had enclosed instructions with the pen."
+],
+[
+3
+],
+"마지막 문단에서 펜촉이 아직 할아버지 쪽 각도로 끌리는 것을 '그와 아직 나눌 수 있는 유일한 대화'라고 했어요. 펜을 할아버지와 이어 주는 끈으로 여기게 된 거예요. 편지 없이 카드 한 장만 왔고, 펜촉은 여전히 할아버지 각도라 바꾸지 않았어요."
+],
+[
+18,
+2,
+"reading",
+"r2-s3",
+"The underlined word \"recalcitrant\" is closest in meaning to:",
+[
+"fragile",
+"luxurious",
+"familiar",
+"uncooperative"
+],
+[
+4
+],
+"recalcitrant 는 '말을 듣지 않는, 다루기 힘든'이에요. 글씨가 비틀거리고 펜이 낯선 사람을 거부하는 것 같았다는 뒤 내용이 단서라 uncooperative 가 맞아요. familiar(익숙한)는 반대예요."
+],
+[
+19,
+2,
+"reading",
+"r2-s4",
+"Which of the following best fills in the blank?",
+[
+"suppress",
+"perceive",
+"imitate",
+"ignore"
+],
+[
+2
+],
+"뒤 문장에 땅을 타고 오는 진동이 오면 코끼리가 멈춰 서서 코를 대고 발을 드는 모습, 발과 코의 감각 수용기가 진동을 느낀다는 설명이 나와요. 땅으로 진동을 '감지한다(perceive)'가 맞아요."
+],
+[
+20,
+2,
+"reading",
+"r2-s4",
+"According to the passage, why can elephant rumbles travel long distances?",
+[
+"The low-frequency waves are absorbed less by vegetation and terrain.",
+"The elephants call only during hot and windy afternoons.",
+"The rumbles are louder than any other sound in the forest.",
+"The forests amplify high-pitched sounds over great distances."
+],
+[
+1
+],
+"둘째 문단에 낮은 소리의 긴 파장은 높은 소리보다 풀숲·지형에 덜 흡수되고 덜 흩어져 멀리 간다고 나와요. 오히려 서늘하고 바람 없는 저녁이 좋은 조건이라고 했어요."
+],
+[
+21,
+2,
+"reading",
+"r2-s5",
+"Which of the following best fills in blanks (A) and (B)?",
+[
+"(A) curb — (B) beneficial",
+"(A) encourage — (B) ruinous",
+"(A) encourage — (B) harmless",
+"(A) curb — (B) ruinous"
+],
+[
+4
+],
+"(A) 회사가 새 회사 설립을 어렵게 하는 법을 지지한 까닭은 투자금을 두고 벌이는 경쟁을 '억누르려(curb)'는 것이에요. (B) 개인에게는 합리적이지만 값이 계속 오를 때만 그렇다고 했으니 시장 전체로는 '파멸적(ruinous)'이라는 대비예요."
+],
+[
+22,
+2,
+"reading",
+"r2-s5",
+"According to the passage, why did the company's directors lend money to investors?",
+[
+"to compensate them for losses in the Spanish trade",
+"to enable them to buy more shares and push up the price",
+"to help them repay their share of the national debt",
+"to persuade them to sell their government bonds abroad"
+],
+[
+2
+],
+"둘째 문단에 계획이 주가 상승에 달려 있어서 이사들이 투자자에게 돈을 빌려줘 주식을 더 사게 했다고 나와요. 손실을 메워 주려던 게 아니에요."
+],
+[
+23,
+2,
+"reading",
+"r2-s5",
+"Which of the following can be inferred from the passage?",
+[
+"The company's trade monopoly was not the real source of its share value.",
+"Walpole was among the directors who were punished.",
+"The South Sea Company opposed the act requiring royal charters.",
+"The share price stayed above one thousand pounds until the end of the year."
+],
+[
+1
+],
+"첫 문단에 남미 무역 독점은 실제 가치가 거의 없었고 회사의 진짜 사업은 금융이었다고 했어요. 그러니 주가는 무역에서 나온 게 아니라고 추론할 수 있어요. 월폴은 뒷수습을 한 사람이고, 회사는 그 법을 지지했어요."
+],
+[
+24,
+2,
+"reading",
+"r2-s6",
+"According to the passage, why did responders often reject low offers?",
+[
+"to show that they had misunderstood the rules of the game",
+"to signal that the stakes were too small to matter",
+"to earn more money in later rounds of play",
+"to punish what they regarded as unfair treatment"
+],
+[
+4
+],
+"둘째 문단에 응답자는 불공정하다고 느낀 제안을 벌주려고 실제 돈을 포기하면서까지 낮은 제안을 거절했다고 나와요. 판돈을 크게 올려도 같은 양상이 이어졌다고 했으니 판돈이 작아서도 아니에요."
+],
+[
+25,
+2,
+"reading",
+"r2-s6",
+"The underlined word \"heterogeneous\" is closest in meaning to:",
+[
+"uniform",
+"predictable",
+"insignificant",
+"varied"
+],
+[
+4
+],
+"heterogeneous 는 '제각각인, 이질적인'이에요. 4분의 1을 내놓은 집단, 절반 넘게 내놓은 집단, 후한 제안을 거절한 집단까지 결과가 크게 갈렸으니 varied 가 맞아요. uniform(한결같은)은 반대예요."
+],
+[
+26,
+2,
+"reading",
+"r2-s6",
+"The main purpose of the passage is to:",
+[
+"prove that standard economic theory predicts how people share money",
+"show how cross-cultural evidence complicated a claim about fairness",
+"describe the whaling methods of a village in eastern Indonesia",
+"advise readers on how to bargain successfully with strangers"
+],
+[
+2
+],
+"최후통첩 게임 결과로 '공정성은 인간 공통의 깊은 본성'이라는 결론이 나왔다가, 여러 사회에서 결과가 갈리며 그 결론이 복잡해진 과정을 보여 주는 글이라 'show how cross-cultural evidence complicated a claim about fairness'가 맞아요. 표준 경제 이론은 오히려 결과와 어긋났어요."
+],
+[
+27,
+2,
+"reading",
+"r2-s7",
+"What is the purpose of the African Vaccine Manufacturing Accelerator?",
+[
+"to buy vaccines from wealthy countries at a discount",
+"to provide funding for new vaccine producers in Africa",
+"to train African regulators at agencies in Europe",
+"to replace COVAX as a vaccine distributor"
+],
+[
+2
+],
+"둘째 문단에 Gavi 가 2024년 아프리카의 새 백신 생산자를 돕도록 10년간 최대 12억 달러를 대는 자금 장치로 만들었다고 나와요. COVAX 를 대신해 백신을 나눠 준다는 말은 없어요."
+],
+[
+28,
+2,
+"reading",
+"r2-s7",
+"Which of the following is NOT true according to the passage?",
+[
+"Africa imports the great majority of the vaccines it uses.",
+"Some details of the Pandemic Agreement were left for later talks.",
+"COVAX received its vaccine supplies before wealthy governments did.",
+"Vaccine makers need steady buyers between emergencies."
+],
+[
+3
+],
+"첫 문단에 COVAX 는 제조사와 미리 계약한 부자 나라 정부들 뒤로 밀려 '줄 맨 뒤'에 섰다고 했어요. COVAX 가 먼저 받았다는 보기는 글과 맞지 않아요."
+],
+[
+29,
+2,
+"reading",
+"r2-s7",
+"What is the passage mainly about?",
+[
+"the scientific development of messenger RNA vaccines",
+"the history of the World Health Organization",
+"the efforts to correct the unequal global supply of vaccines",
+"the economic cost of the COVID-19 pandemic"
+],
+[
+3
+],
+"코로나 때 드러난 백신 공급 불균형과, 아프리카 현지 생산·기술 공유·팬데믹 협정 같은 바로잡기 노력을 다룬 글이에요. mRNA 기술은 그 노력의 한 예로만 나와요."
+],
+[
+30,
+2,
+"reading",
+"r2-s8",
+"Which of the underlined parts Ⓐ~Ⓓ is grammatically INCORRECT?",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ"
+],
+[
+4
+],
+"셰익스피어의 소네트는 1609년에 '출판된' 것이라 수동의 과거분사 published 가 맞아요. publishing 은 소네트가 무엇을 출판한다는 능동이 돼요. offering 은 앞 절의 주어 the poem 이 '내놓는' 능동 분사구문이라 맞고, whose·that 도 맞아요."
+],
+[
+31,
+2,
+"reading",
+"r2-s8",
+"The underlined word \"onerous\" is closest in meaning to:",
+[
+"effortless",
+"burdensome",
+"fashionable",
+"ambiguous"
+],
+[
+2
+],
+"onerous 는 '부담스러운, 힘든'이에요. 영어는 운이 맞는 낱말이 적어서 같은 운 둘만으로 여덟 줄을 끌고 가기 어려웠다는 문맥이라 burdensome 이 맞아요. effortless(손쉬운)는 반대예요."
+],
+[
+32,
+2,
+"reading",
+"r2-s8",
+"According to the passage, why did Surrey devise a new form of the sonnet?",
+[
+"He wished to imitate Shakespeare's couplets.",
+"Petrarch's poems had been banned in England.",
+"Wyatt's translations were too long to publish.",
+"English has relatively few rhyming words."
+],
+[
+4
+],
+"둘째 문단에 영어는 운 맞는 낱말이 비교적 적어 이탈리아식 운 배치가 버거웠고, 그래서 서리가 언어에 더 맞는 다른 꼴을 만들었다고 나와요. 셰익스피어는 그 뒤 사람이라 흉내 냈다는 보기는 순서가 틀려요."
+],
+[
+33,
+2,
+"reading",
+"r2-s9",
+"Where would the following sentence best fit in the passage?\nWard soon realized that such an enclosure might shield plants from the hazards of a long sea voyage.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]"
+],
+[
+2
+],
+"such an enclosure 는 물이 안에서 돌고 도는 '닫힌 유리병'을 가리켜요. 병 속 작은 기후 설명이 끝난 [B] 에 들어가야 바로 뒤 '더 큰 상자를 주문해 호주로 보냈다'로 이어져요. [A] 앞에는 유리병이 아직 나오지 않았어요."
+],
+[
+34,
+2,
+"reading",
+"r2-s9",
+"According to the passage, why did the plants in Ward's bottle thrive without watering?",
+[
+"The moth's chrysalis supplied them with water and nutrients.",
+"Ward kept the bottle outdoors where rain could reach it.",
+"Moisture recirculated inside the sealed container.",
+"Ferns and grasses need no water at all in order to grow."
+],
+[
+3
+],
+"둘째 문단에 닫힌 병 안에서 흙과 잎의 물기가 증발해 유리에 맺혔다가 다시 흘러내려 스스로 유지되는 작은 기후가 생겼다고 나와요."
+],
+[
+35,
+2,
+"reading",
+"r2-s9",
+"Which of the following best fills in the blank?",
+[
+"eradicate",
+"transfer",
+"conceal",
+"purify"
+],
+[
+2
+],
+"포춘이 중국의 차나무를 인도로 실어 날라 차 산업을 세운 예가 바로 앞에 있어요. 값진 작물을 원산지에서 자기 식민지로 '옮기게(transfer)' 해 줬다는 뜻이에요. eradicate(뿌리 뽑다)는 작물을 키운 결과와 맞지 않아요."
+],
+[
+36,
+2,
+"reading",
+"r2-s10",
+"According to Miller and Sanjurjo, what was wrong with the original analysis?",
+[
+"It relied on records from too few professional players.",
+"It ignored the opinions of experienced coaches and players.",
+"It contained a statistical bias that concealed streak shooting.",
+"It used coin flips instead of real basketball shots."
+],
+[
+3
+],
+"셋째 문단에 원래 분석 방법에 미묘한 통계적 편향이 있어서, 평균과 같은 성적이 사실은 무작위보다 나은 것이었다고 나와요. 편향을 바로잡자 '뜨거운 손'이 조금 드러났으니 편향이 그것을 가린 셈이에요."
+],
+[
+37,
+2,
+"reading",
+"r2-s10",
+"Which of the following is NOT true according to the passage?",
+[
+"The 1985 study included experiments with college players.",
+"Coaches and players were not persuaded by the 1985 study.",
+"People tend to expect random sequences to alternate often.",
+"Miller and Sanjurjo found no hot hand in the original data."
+],
+[
+4
+],
+"셋째 문단 끝에 밀러와 산후르호는 편향을 바로잡은 뒤 원래 실험 자료에서 '조금의 뜨거운 손'을 찾았다고 했어요. 찾지 못했다는 보기는 글과 맞지 않아요."
+],
+[
+38,
+2,
+"reading",
+"r2-s10",
+"Which of the following is the best title for the passage?",
+[
+"The Art of Shooting a Basketball Accurately",
+"The Myth That Coin Flips Are Random",
+"The Rise of Statistics in Professional Sports",
+"The Hot Hand: A Fallacy About a Fallacy?"
+],
+[
+4
+],
+"'뜨거운 손은 착각'이라는 연구가 정작 확률에 대한 착각에 기대고 있었다는 반전을 다룬 글이라 'A Fallacy About a Fallacy?'가 맞아요. 동전 던지기가 무작위가 아니라는 말은 없어요."
+],
+[
+39,
+2,
+"reading",
+"r2-s11",
+"According to the passage, why did some consumers distrust the barcode at first?",
+[
+"They feared stores would overcharge once price stickers disappeared.",
+"They believed the lasers in checkout scanners were dangerous.",
+"They thought chewing gum would become more costly.",
+"They objected to the slower checkout lines the scanners would create."
+],
+[
+1
+],
+"셋째 문단에 물건마다 붙던 가격표가 사라지면 가게가 값을 더 받기 쉬워질까 걱정했다고 나와요. 계산 줄은 오히려 빨라졌다고 했어요."
+],
+[
+40,
+2,
+"reading",
+"r2-s11",
+"The underlined word \"sluggish\" is closest in meaning to:",
+[
+"widespread",
+"reckless",
+"slow",
+"profitable"
+],
+[
+3
+],
+"sluggish 는 '느릿한, 부진한'이에요. 가게와 제조사가 서로 상대가 먼저 하기를 기다린 닭이 먼저냐 달걀이 먼저냐 상황이 단서라 slow 가 맞아요. widespread(널리 퍼진)는 반대예요."
+],
+[
+41,
+2,
+"reading",
+"r2-s11",
+"Which of the following best fills in the blank?",
+[
+"evident",
+"negligible",
+"illusory",
+"controversial"
+],
+[
+1
+],
+"however 로 처음의 부진과 대비되고, 대시 뒤에 줄이 빨라지고 오류가 줄고 판매 기록이 생겼다는 이점이 줄줄이 나와요. 이점이 '분명해졌다(evident)'가 맞아요. negligible·illusory 는 뒤 내용과 정반대예요."
+],
+[
+42,
+2,
+"reading",
+"r2-s12",
+"Which of the underlined Ⓐ~Ⓓ refers to something different from the others?",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ"
+],
+[
+2
+],
+"he(천장을 마치고 돌아와 최후의 심판을 그린 사람)·himself(마른 회반죽 위에 덧칠했다는 사람)·his(피렌체에서 받은 수련)는 모두 미켈란젤로예요. who 는 그림을 밝히려고 아교와 니스를 바른 '예전 복원가들'이에요."
+],
+[
+43,
+2,
+"reading",
+"r2-s12",
+"Which of the following best describes the author's attitude toward the restoration controversy?",
+[
+"balanced and even-handed",
+"firmly opposed to the restoration",
+"contemptuous of the critics",
+"indifferent to its outcome"
+],
+[
+1
+],
+"글쓴이는 비판 쪽 주장과 복원 쪽 반론을 차례로 소개하고, 논쟁이 완전히 풀리지 않았지만 양쪽 모두 반길 결과도 있었다고 맺어요. 어느 한쪽을 깎아내리지 않는 '균형 잡힌' 태도예요."
+],
+[
+44,
+2,
+"reading",
+"r2-s13",
+"According to the passage, why did Tudor use sawdust?",
+[
+"It made the ice taste better to customers in the tropics.",
+"It was required by the lumber mills nearby.",
+"It was a cheap and effective insulator for ice in ships.",
+"It helped workers cut the ice into uniform blocks."
+],
+[
+3
+],
+"둘째 문단에 제재소의 쓸모없던 부산물인 톱밥이 배 짐칸 얼음을 싸게 단열하는 데 아주 좋았다고 나와요. 얼음을 고르게 자른 것은 말이 끄는 절단기예요."
+],
+[
+45,
+2,
+"reading",
+"r2-s13",
+"Which of the following can be inferred from the passage?",
+[
+"Tudor's commercial success depended partly on changing customers' habits.",
+"Tudor abandoned the ice trade soon after his first voyage failed.",
+"Natural ice from ponds remained cleaner than manufactured ice.",
+"Ice could not be shipped as far as India without melting away."
+],
+[
+1
+],
+"공짜 찬 음료를 주며 더운 지방 사람들이 찬 음료를 '필수품'으로 여기게 가르쳤다고 했으니, 성공은 손님의 습관을 바꾼 데에도 기댔다고 추론할 수 있어요. 도시 근처 연못 얼음은 오히려 오염됐고, 얼음은 캘커타까지 갔어요."
+],
+[
+46,
+2,
+"reading",
+"r2-s14",
+"The underlined word \"amendment\" is closest in meaning to:",
+[
+"rejection",
+"summary",
+"modification",
+"prediction"
+],
+[
+3
+],
+"amendment 는 '수정, 고침'이에요. 밀은 공리주의를 버린 게 아니라 쾌락에 '질'의 차이를 넣어 고쳤으니 modification 이 맞아요. rejection(거부)은 틀린 방향이에요."
+],
+[
+47,
+2,
+"reading",
+"r2-s14",
+"According to Mill, how do pleasures differ from one another?",
+[
+"in quality as well as in quantity",
+"only in their intensity and duration",
+"only in how many people share them",
+"in their cost rather than their value"
+],
+[
+1
+],
+"셋째 문단에 밀은 쾌락이 양뿐 아니라 질에서도 다르다고 주장했다고 나와요. 강도·지속 시간으로만 재는 것은 벤담의 계산법 쪽이에요."
+],
+[
+48,
+2,
+"reading",
+"r2-s14",
+"What is the passage mainly about?",
+[
+"the history and rules of the children's game pushpin",
+"the criticism Mill made of the way his father had educated him",
+"the utilitarianism of Bentham and Mill's attempt to refine it",
+"the reform of British prisons under Bentham"
+],
+[
+3
+],
+"벤담의 공리주의, 그에 대한 '돼지 철학' 비판, 쾌락의 질로 이를 고치려 한 밀과 그 평가를 차례로 다룬 글이에요. 푸시핀과 감옥 개혁은 예로만 나와요."
+],
+[
+49,
+2,
+"reading",
+"r2-s15",
+"Which of the following is the best title for the passage?",
+[
+"The Triumph of the Urban Expressway in New York City",
+"Why Planners Preferred Open Lawns to Busy Shops",
+"Police Patrols and the Fall in Crime",
+"Eyes on the Street: Jane Jacobs and the Living City"
+],
+[
+4
+],
+"도시 재개발의 정설에 맞서 '거리의 눈', 용도 섞기, 오래된 건물과 밀도를 옹호한 제이컵스의 생각을 다룬 글이라 'Eyes on the Street: Jane Jacobs and the Living City'가 맞아요. 고속도로는 그녀가 막아 낸 계획이에요."
+],
+[
+50,
+2,
+"reading",
+"r2-s15",
+"According to Jacobs, what makes a city street safe?",
+[
+"frequent and highly visible patrols by the police",
+"wide open spaces between tall buildings",
+"the strict separation of homes from shops",
+"the constant presence of people who watch it"
+],
+[
+4
+],
+"둘째 문단에 거리를 안전하게 하는 것은 경찰 순찰이나 빈 공간이 아니라 가게 주인·주민·행인이 늘 지켜보는 '거리의 눈'이라고 나와요. 용도 분리는 오히려 그녀가 비판한 계획가들의 생각이에요."
+],
+[
+1,
+3,
+"grammar",
+null,
+"Choose the one that is grammatically INCORRECT.\nThe expedition recruited forty local guides, most of ①<u>them</u> had never ②<u>traveled</u> beyond the remote valley ③<u>in which</u> they ④<u>had been born</u>.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+1
+],
+"쉼표 뒤에 또 하나의 절(most of them had never traveled ...)이 접속사 없이 붙어 있어요. 두 절을 이으려면 관계대명사를 써서 most of whom 이 되어야 해요. in which 는 the remote valley 를 받는 '전치사+관계대명사'로 맞고, had been born 은 과거보다 앞선 일이라 맞아요."
+],
+[
+2,
+3,
+"grammar",
+null,
+"Choose the one that is grammatically INCORRECT.\nBy the time the committee ①<u>released</u> its report, several of the firms ②<u>under investigation</u> had already ③<u>began</u> destroying documents ④<u>that</u> might have incriminated them.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"had 뒤에는 과거분사가 와서 과거완료가 되어야 하니 began 이 아니라 begun 이 맞아요. released 는 by the time 절의 과거 시제, under investigation 은 firms 를 꾸미는 전치사구, that 은 documents 를 받는 관계대명사로 모두 맞아요."
+],
+[
+3,
+3,
+"cloze",
+null,
+"Choose the one that best fills in the blank.\nResidents were urged to remain indoors until the floodwaters began to ____, which officials expected within two days.",
+[
+"surge",
+"subside",
+"stagnate",
+"coalesce"
+],
+[
+2
+],
+"집 안에 머물다 나올 때는 물이 '빠지기(subside)' 시작할 때예요. surge(밀려들다)는 반대이고, stagnate(고이다)·coalesce(합쳐지다)는 안전해졌다는 신호가 아니에요."
+],
+[
+4,
+3,
+"cloze",
+null,
+"Choose the one that best fills in the blank.\nThe inquiry did not ____ the minister of all blame, but it concluded that her aides had concealed the report from her.",
+[
+"absolve",
+"indict",
+"apprise",
+"implore"
+],
+[
+1
+],
+"not ... but 구조라, 책임을 모두 '면해 주지는(absolve)' 않았지만 보좌진이 보고서를 숨겼다고 결론 냈다는 흐름이에요. absolve A of B(A의 B를 면제하다) 꼴도 맞아요. indict(기소하다)는 of all blame 과 어울리지 않아요."
+],
+[
+5,
+3,
+"cloze",
+null,
+"Choose the one that best fills in the blank.\nBefore each experiment, technicians must carefully ____ the sensors so that their readings match a known standard.",
+[
+"insulate",
+"calibrate",
+"fabricate",
+"lubricate"
+],
+[
+2
+],
+"측정값을 알려진 기준에 맞추는 일은 '보정하다(calibrate)'예요. insulate(단열하다)·fabricate(만들어 내다)·lubricate(기름칠하다)는 기준값 맞추기와 상관없어요."
+],
+[
+6,
+3,
+"cloze",
+null,
+"Choose the one that best fills in the blank.\nPatients are instructed to ____ from eating or drinking for eight hours before the blood test.",
+[
+"benefit",
+"emerge",
+"abstain",
+"recover"
+],
+[
+3
+],
+"검사 전 여덟 시간 동안 먹고 마시는 것을 '삼가라(abstain from)'는 지시예요. benefit from(득을 보다)·recover from(회복하다)은 from 과 어울려도 뜻이 맞지 않아요."
+],
+[
+7,
+3,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nThe auditor was renowned for her <u>scrupulous</u> attention to detail, checking every receipt at least twice.",
+[
+"careless",
+"generous",
+"meticulous",
+"sporadic"
+],
+[
+3
+],
+"scrupulous 는 '꼼꼼한, 세심한'이라 meticulous 와 같아요. 영수증마다 두 번 이상 확인했다는 뒤 내용이 단서예요. careless(부주의한)는 반대예요."
+],
+[
+8,
+3,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nThe two former partners became embroiled in an <u>acrimonious</u> dispute over the patent for their invention.",
+[
+"amicable",
+"brief",
+"technical",
+"bitter"
+],
+[
+4
+],
+"acrimonious 는 '험악한, 신랄한'이라 bitter 와 가까워요. embroiled(휘말린) 다툼이라는 말이 단서예요. amicable(우호적인)은 반대예요."
+],
+[
+9,
+3,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nEngineers had to <u>surmount</u> formidable obstacles to lay a railway across the mountain range.",
+[
+"create",
+"overcome",
+"survey",
+"ignore"
+],
+[
+2
+],
+"surmount 는 '(어려움을) 극복하다'라 overcome 과 같아요. formidable obstacles(만만찮은 장애물)를 넘어 철도를 놓았다는 문맥이에요."
+],
+[
+10,
+3,
+"vocab",
+null,
+"Choose the one that is closest in meaning to the underlined word.\nMany consumers remain <u>leery</u> of apps that demand access to their contacts and location.",
+[
+"fond",
+"ignorant",
+"proud",
+"wary"
+],
+[
+4
+],
+"leery 는 '경계하는, 미심쩍어하는'이라 wary 와 같아요. 연락처·위치 접근을 요구하는 앱이라는 대상이 단서예요. fond(좋아하는)는 반대예요."
+],
+[
+11,
+3,
+"reading",
+"r3-s1",
+"According to the second paragraph, what are senescent cells?",
+[
+"impaired cells that cease dividing but persist in tissues",
+"healthy cells that proliferate unusually rapidly in old age",
+"cells that are created by the drug rapamycin",
+"cells that shield tissues from inflammation"
+],
+[
+1
+],
+"둘째 문단에 노화 세포는 분열을 멈췄지만 조직에 남아 염증을 부르는 물질을 내는 손상된 세포라고 나와요. 염증을 막는 게 아니라 오히려 부추겨요."
+],
+[
+12,
+3,
+"reading",
+"r3-s1",
+"The underlined word \"conspicuous\" is closest in meaning to:",
+[
+"invisible",
+"noticeable",
+"temporary",
+"deliberate"
+],
+[
+2
+],
+"conspicuous 는 '눈에 띄는, 뚜렷한'이에요. 부자와 가난한 사람의 기대수명 차이가 '이미 뚜렷한데' 더 벌어질 수 있다는 문맥이라 noticeable 이 맞아요. invisible 은 반대예요."
+],
+[
+13,
+3,
+"reading",
+"r3-s1",
+"Which of the following is the best title for the passage?",
+[
+"Why Mice Live Longer Than Humans",
+"The Hidden Risks of Diabetes Drugs",
+"Can Aging Itself Become a Target of Medicine?",
+"How Tech Moguls Squander Their Fortunes"
+],
+[
+3
+],
+"노화 자체를 치료 대상으로 보는 노화 과학의 기대, 회의론, 윤리 문제를 다룬 글이라 'Can Aging Itself Become a Target of Medicine?'이 맞아요. 메트포르민은 시험 예로만 나와요."
+],
+[
+14,
+3,
+"reading",
+"r3-s2",
+"According to the passage, compared with its learned counterpart, the member of a doublet that passed through Old French is usually:",
+[
+"longer and closer to the Latin original",
+"shorter and more worn down in form",
+"more formal in tone and register",
+"borrowed more recently from Latin"
+],
+[
+2
+],
+"첫 문단 끝에 프랑스어를 거친 낱말은 더 짧고 닳은 꼴이고, 학자들이 라틴어에서 바로 빌린 낱말이 라틴어 꼴을 더 지닌다고 나와요. 프랑스어를 거친 쪽이 먼저(중세) 들어왔어요."
+],
+[
+15,
+3,
+"reading",
+"r3-s2",
+"Why do the members of a doublet rarely remain synonyms?",
+[
+"Dictionaries prohibit two words with exactly the same meaning.",
+"Speakers tend to give each form its own meaning or register.",
+"One member of each pair always disappears from use.",
+"French and Latin words cannot be articulated alike."
+],
+[
+2
+],
+"셋째 문단에 언어는 똑같은 말이 둘 있는 것을 꺼려서 사람들이 점차 각 꼴에 다른 뜻이나 말씨를 준다고 나와요. 한쪽이 늘 사라진다는 말은 없고, 오히려 둘 다 남아 뜻이 갈려요."
+],
+[
+16,
+3,
+"reading",
+"r3-s2",
+"Which of the following is NOT presented as a doublet in the passage?",
+[
+"frail and fragile",
+"chief and chef",
+"guard and ward",
+"hospital and patient"
+],
+[
+4
+],
+"frail·fragile, chief·chef, guard·ward 는 모두 같은 뿌리의 짝으로 나와요. hospital 은 hostel·hotel 과 짝으로 나오고 patient 는 글에 없어요."
+],
+[
+17,
+3,
+"reading",
+"r3-s3",
+"Which of the following can be inferred about the writer?",
+[
+"She laments having closed her shop prematurely.",
+"She wants Seo-yeon to become a tailor.",
+"She values careful deliberation more than speed.",
+"She regards nervousness as a symptom of frailty."
+],
+[
+3
+],
+"'두 번 재라', '느려도 맞기만 하면 부끄럽지 않다'는 말에서 서두름보다 신중함을 중히 여긴다는 것을 읽을 수 있어요. 긴장은 오히려 '좋다'고 했고, 재단사가 되라는 말은 없어요."
+],
+[
+18,
+3,
+"reading",
+"r3-s3",
+"The tone of the letter is best described as:",
+[
+"affectionate and earnest",
+"embittered and resentful",
+"aloof and coldly formal",
+"anxious and despondent"
+],
+[
+1
+],
+"손녀의 긴장을 다독이고 가게 이야기에 농담(키를 크게 보이게 하는 거울)을 섞으며 진지한 조언을 건넨 뒤 자랑스럽다고 맺어요. 다정하면서도 진지한 말투예요."
+],
+[
+19,
+3,
+"reading",
+"r3-s4",
+"According to the second paragraph, why does the sky not appear violet?",
+[
+"Violet light has a longer wavelength than blue light and scatters less.",
+"Nitrogen molecules in the lower atmosphere absorb all of the violet light.",
+"Sunlight contains relatively little violet, and the eye is less sensitive to it.",
+"Clouds high in the atmosphere deflect violet light back into space."
+],
+[
+3
+],
+"둘째 문단에 햇빛에 보라가 파랑보다 적고, 일부는 높은 대기에서 흡수되며, 사람 눈이 보라에 덜 민감하다고 나와요. 보라는 파랑보다 파장이 더 짧아요."
+],
+[
+20,
+3,
+"reading",
+"r3-s4",
+"Which of the following best fills in the blank?",
+[
+"dominate",
+"vanish",
+"scatter",
+"multiply"
+],
+[
+1
+],
+"해가 낮으면 빛이 대기를 길게 지나며 파랑이 거의 흩어져 빠지니, 남은 긴 파장(빨강·주황)이 '주를 이룬다(dominate)'는 뜻이에요. 그래서 노을이 붉어요. vanish(사라지다)는 정반대예요."
+],
+[
+21,
+3,
+"reading",
+"r3-s5",
+"According to the second paragraph, what did the Seoul city government announce after the 2022 floods?",
+[
+"It would construct subterranean garages for residents.",
+"It would install floodgates in every apartment.",
+"It would phase out semi-basement dwellings as homes.",
+"It would relocate its drainage tunnels to Tokyo's model."
+],
+[
+3
+],
+"둘째 문단에 서울시가 반지하를 주거용으로 점차 없애겠다고 발표했다고 나와요. 도쿄 배수 터널은 넷째 문단의 다른 예예요."
+],
+[
+22,
+3,
+"reading",
+"r3-s5",
+"It can be inferred from the passage that:",
+[
+"larger drainage pipes alone can fully solve the problem of urban flooding",
+"the risks of urban flooding fall unequally on different social groups",
+"warmer air holds less moisture than cooler air does",
+"subterranean spaces are safer than streets during torrential rain"
+],
+[
+2
+],
+"마지막 문장에 가장 가난한 사람이 반지하·저지대에 살 가능성이 크고 대책의 혜택은 늦게 받는다고 했어요. 홍수 위험이 계층마다 다르게 돌아간다고 추론할 수 있어요. 큰 관만으로는 안 된다고 했고, 따뜻한 공기는 물기를 '더' 머금어요."
+],
+[
+23,
+3,
+"reading",
+"r3-s5",
+"The underlined word \"escalates\" is closest in meaning to:",
+[
+"subsides",
+"disappears",
+"intensifies",
+"stabilizes"
+],
+[
+3
+],
+"escalate 는 '(위험·사태가) 급격히 커지다'예요. 몇 분 만에 물이 천장까지 차고 문이 안 열린다는 뒤 내용이 단서라 intensifies 가 맞아요. subsides(가라앉다)는 반대예요."
+],
+[
+24,
+3,
+"reading",
+"r3-s6",
+"According to the passage, a pneumatique was:",
+[
+"a telephone line installed in many middle-class Parisian homes",
+"a short written message delivered across Paris through tubes",
+"a horse-drawn carriage used by messengers in the city",
+"a pump that drove air through the sewers of Paris"
+],
+[
+2
+],
+"둘째 문단에 파리 사람들이 보낼 수 있던 작은 카드나 편지로, 관을 타고 보통 두어 시간 안에 시내 반대편에 닿았다고 나와요."
+],
+[
+25,
+3,
+"reading",
+"r3-s6",
+"The underlined word \"discontinued\" is closest in meaning to:",
+[
+"ended",
+"expanded",
+"modernized",
+"privatized"
+],
+[
+1
+],
+"discontinue 는 '중단하다, 끝내다'예요. 전화·팩스에 밀려 수요가 줄었고 한 세기 넘는 운영 '끝에' 1984년에 그만뒀다는 흐름이라 ended 가 맞아요."
+],
+[
+26,
+3,
+"reading",
+"r3-s6",
+"The main purpose of the passage is to:",
+[
+"argue that hospitals should replace their tubes with electronic systems",
+"explain how the telephone was first introduced in Paris",
+"describe how the sewers of Paris were constructed",
+"trace the history of a once-popular message service"
+],
+[
+4
+],
+"1853년 런던에서 시작해 파리에서 꽃피고 1984년에 문을 닫기까지 관 우편의 흐름을 따라간 글이라 'trace the history of a once-popular message service'가 맞아요. 병원 관을 바꾸자는 주장은 없고, 전화는 쇠퇴 이유로만 나와요."
+],
+[
+27,
+3,
+"reading",
+"r3-s7",
+"According to the first paragraph, what happened after Dickens introduced Sam Weller?",
+[
+"The publisher reduced the price to a shilling.",
+"Dickens stopped publishing in monthly parts.",
+"Readers protested and sales plummeted.",
+"Sales of the installments rose dramatically."
+],
+[
+4
+],
+"첫 문단에 4회차에 하인 샘 웰러가 나오자 수요가 치솟아 연재 끝 무렵에는 회마다 4만 부쯤 찍었다고 나와요. 1실링은 처음부터의 값이에요."
+],
+[
+28,
+3,
+"reading",
+"r3-s7",
+"The underlined word \"adaptation\" is closest in meaning to:",
+[
+"adjustment",
+"imitation",
+"translation",
+"accident"
+],
+[
+1
+],
+"adaptation 은 '(조건에) 맞춰 바꿈, 적응'이에요. 느슨한 구조가 흠이 아니라 연재라는 조건에 '맞춘' 합리적 결과라는 뜻이라 adjustment 가 맞아요. accident(우연)는 rational 과 맞지 않아요."
+],
+[
+29,
+3,
+"reading",
+"r3-s7",
+"What is the passage mainly about?",
+[
+"the childhood ordeals that inspired Dickens's characters",
+"the decline of the three-volume novel in the twentieth century",
+"the similarities between novels and modern television",
+"the way serial publication shaped Victorian novels and how they were read"
+],
+[
+4
+],
+"월간 연재가 가격·수익(경제), 결말과 인물 구성(작품), 함께 읽는 경험(독서)까지 바꾼 것을 다룬 글이에요. 텔레비전과의 비교는 마지막에 한 번 나오는 비유예요."
+],
+[
+30,
+3,
+"reading",
+"r3-s8",
+"Which of the underlined parts Ⓐ~Ⓓ is grammatically INCORRECT?",
+[
+"Ⓐ",
+"Ⓑ",
+"Ⓒ",
+"Ⓓ"
+],
+[
+4
+],
+"연구는 학생·환자·직원을 '포함하는(involving)' 것이라 능동의 현재분사가 studies 를 꾸며야 해요. involved 라면 연구가 무엇에 휘말렸다는 수동이 되어 뒤 목적어와 맞지 않아요. as if 뒤 had (been achieved), 분사구문 suggesting, whether about A, B, or C 는 맞아요."
+],
+[
+31,
+3,
+"reading",
+"r3-s8",
+"According to the passage, what does mental contrasting involve?",
+[
+"supplanting positive fantasies with pessimistic forecasts",
+"imagining a desired outcome and then identifying an inner obstacle",
+"measuring one's blood pressure before setting a goal",
+"relinquishing any goal that seems arduous to attain"
+],
+[
+2
+],
+"셋째 문단에 먼저 바라는 결과를 떠올린 뒤 그 길을 막는 자기 안의 장애물을 일부러 찾는 기법이라고 나와요. 꿈을 버리라는 게 아니라고 분명히 했어요."
+],
+[
+32,
+3,
+"reading",
+"r3-s8",
+"Which of the following can be inferred from the passage?",
+[
+"People with low expectations of success usually work the hardest.",
+"Oettingen believes that optimism of any kind invariably culminates in failure.",
+"Positive fantasies increase physiological energy before a difficult task.",
+"Merely visualizing success is unlikely to be enough to reach a difficult goal."
+],
+[
+4
+],
+"성공을 생생하게 그리기만 한 사람은 지원서를 덜 내고 에너지도 줄었다고 했으니, 그리기만으로는 어려운 목표에 닿기 어렵다고 추론할 수 있어요. 현실적이면서 기대가 높은 사람은 열심히 한다고 했으니 낙관이 늘 실패로 간다는 보기는 지나쳐요."
+],
+[
+33,
+3,
+"reading",
+"r3-s9",
+"According to the second paragraph, how did the Japanese participants perform in the recognition test?",
+[
+"They recognized the fish more accurately than the Americans in every case.",
+"They ignored the background in their descriptions.",
+"They were less accurate when a fish appeared on an unfamiliar background.",
+"They were unaffected when the background behind a fish changed."
+],
+[
+3
+],
+"둘째 문단에 일본 참가자는 전에 본 물고기가 낯선 배경에 나오면 덜 정확했고, 미국 참가자는 배경이 바뀌어도 별로 영향을 받지 않았다고 나와요. 배경이 바뀌어도 영향을 받지 않았다는 보기는 미국 참가자 쪽 설명이에요."
+],
+[
+34,
+3,
+"reading",
+"r3-s9",
+"The underlined word \"divergent\" is closest in meaning to:",
+[
+"differing",
+"ancient",
+"identical",
+"harmonious"
+],
+[
+1
+],
+"divergent 는 '서로 갈라지는, 다른'이에요. 개인의 독립을 중시하는 문화와 상호 의존을 중시하는 문화를 대비했으니 differing 이 맞아요. identical(같은)은 반대예요."
+],
+[
+35,
+3,
+"reading",
+"r3-s9",
+"Which of the following is NOT mentioned as a criticism of the thesis?",
+[
+"The differences between cultures are only modest.",
+"The variation within each culture is substantial.",
+"The experiment used too few participants.",
+"The cognitive styles of individuals can change with circumstances."
+],
+[
+3
+],
+"넷째 문단의 비판은 차이가 작다, 문화 안의 차이가 크다, 상황에 따라 바뀐다는 것이에요. 참가자 수가 적었다는 비판은 글에 없어요."
+],
+[
+36,
+3,
+"reading",
+"r3-s10",
+"According to the first paragraph, what did Ruskin argue about mass production?",
+[
+"Factories degraded both the goods they produced and the workers who made them.",
+"Factories should emulate traditional ornament more faithfully.",
+"Factories would eventually liberate workers from toil.",
+"Factories made handmade goods too costly to be worthwhile."
+],
+[
+1
+],
+"첫 문단에 러스킨은 물건의 질이 떨어지는 것과 노동자가 망가지는 것은 떼어 놓을 수 없다고 주장했다고 나와요. 손으로 만든 물건이 비싸다는 문제는 모리스 쪽 고민이에요."
+],
+[
+37,
+3,
+"reading",
+"r3-s10",
+"The underlined word \"predicament\" is closest in meaning to:",
+[
+"triumph",
+"routine",
+"rumor",
+"dilemma"
+],
+[
+4
+],
+"predicament 는 '곤경, 딜레마'예요. 손으로 만든 물건은 비싸서 부자만 사고, 정작 돕고 싶던 노동자는 살 수 없다는 모순을 가리키니 dilemma 가 맞아요."
+],
+[
+38,
+3,
+"reading",
+"r3-s10",
+"Which of the following can be inferred from the passage?",
+[
+"Morris refused to sell his goods to wealthy customers.",
+"Morris invented the techniques of hand-block printing.",
+"Morris came to see the problem of labor as a political one.",
+"Morris believed machines would solve the problems of craftsmen."
+],
+[
+3
+],
+"셋째 문단에 이 모순이 그를 사회주의로 이끌었고, 사회 자체를 바꾸지 않고는 노동 조건을 고칠 수 없다고 믿게 됐다고 했어요. 노동 문제를 정치 문제로 보게 됐다고 추론할 수 있어요. 손님은 주로 부자였고, 날염은 '되살린' 옛 기술이에요."
+],
+[
+39,
+3,
+"reading",
+"r3-s10",
+"Which of the following is the best title for the passage?",
+[
+"How Factories Ameliorated British Furniture and Textiles",
+"The Life and Teachings of John Ruskin at Oxford",
+"Printing Techniques of the Kelmscott Press",
+"William Morris and the Revolt Against the Machine Age"
+],
+[
+4
+],
+"공장 물건과 노동에 반발한 모리스의 공방, 그 모순, 그가 낳은 미술공예운동을 다룬 글이라 'William Morris and the Revolt Against the Machine Age'가 맞아요. 켈름스콧 출판사는 말년 이야기로만 나와요."
+],
+[
+40,
+3,
+"reading",
+"r3-s11",
+"According to the passage, what is the spoiler effect?",
+[
+"the risk that voting for a minor candidate helps the least preferred one",
+"the elimination of the weakest candidate in each round",
+"the transfer of eliminated ballots to voters' next preferences",
+"the tendency of complicated ballots to be filled out incorrectly by voters"
+],
+[
+1
+],
+"첫 문단에 군소 후보를 찍으면 가장 싫어하는 후보를 도울까 두려워하는 딜레마를 spoiler effect 라 부른다고 나와요. 꼴찌 탈락과 표 이전은 순위 선택 투표의 개표 방식이에요."
+],
+[
+41,
+3,
+"reading",
+"r3-s11",
+"Which of the following best fills in the blank?",
+[
+"trade-offs",
+"certainties",
+"traditions",
+"majorities"
+],
+[
+1
+],
+"애로가 모든 공정성 기준을 한꺼번에 채우는 방식은 없다고 보였으니, 선거 제도 고르기는 완벽을 찾는 게 아니라 장단점을 맞바꾸는 '절충(trade-offs)' 사이의 선택이라는 결론이에요. certainties(확실한 것들)는 정반대예요."
+],
+[
+42,
+3,
+"reading",
+"r3-s11",
+"According to the passage, what does it mean for a ballot to be exhausted?",
+[
+"It has been tallied more than once by mistake during counting.",
+"The candidates it ranks have been eliminated before the final round.",
+"It ranks every candidate on the list in order of preference.",
+"It was cast for the candidate who eventually won a majority."
+],
+[
+2
+],
+"셋째 문단에 '소진된(exhausted)' 표는 그 표에 적힌 후보가 결선 전에 모두 탈락한 표라고 풀이돼 있어요."
+],
+[
+43,
+3,
+"reading",
+"r3-s12",
+"According to the passage, what did Cooper's reviews find about elementary school children?",
+[
+"They benefited from homework more than older students did.",
+"They needed two hours of homework nightly.",
+"They performed worse whenever they were given homework.",
+"Their homework bore little relation to their achievement."
+],
+[
+4
+],
+"둘째 문단에 초등학생은 숙제와 성취의 관련이 약하거나 거의 없었다고 나와요. 효과가 뚜렷한 쪽은 중고등학생이에요."
+],
+[
+44,
+3,
+"reading",
+"r3-s12",
+"According to the third paragraph, why is it difficult to interpret correlations between homework and achievement?",
+[
+"Teachers decline to disclose how much homework they assign to students in each grade.",
+"Students who do more homework may differ from their peers in other important ways.",
+"The time spent on homework cannot be measured reliably in minutes.",
+"Parents habitually complete much of their children's homework for them."
+],
+[
+2
+],
+"셋째 문단에 숙제를 많이 하는 학생은 동기·부모 지원·이전 성적이 다를 수 있고, 어려워하는 학생이 더 오래 붙잡고 있을 수도 있다고 나와요. 상관이 곧 원인이 아닌 까닭이에요."
+],
+[
+45,
+3,
+"reading",
+"r3-s12",
+"What is the passage mainly about?",
+[
+"the history of homework in American schools",
+"the methods parents use to help children with homework",
+"the deleterious effects of homework on family life",
+"the uncertain and age-dependent benefits of homework"
+],
+[
+4
+],
+"숙제의 효과가 나이에 따라 다르고 해석도 어렵다는 연구, 찬반 양쪽 주장, '적당히'라는 결론을 다룬 글이에요. 가족 갈등은 첫머리 도입으로만 나와요."
+],
+[
+46,
+3,
+"reading",
+"r3-s13",
+"According to the passage, young white-crowned sparrows acquire their dialect:",
+[
+"by inheriting genes that fully encode the adult song",
+"by mimicking the songs of other species nearby",
+"by listening to adult males during an early sensitive period",
+"by practicing alone after leaving the region where they hatched"
+],
+[
+3
+],
+"둘째 문단에 어린 수컷은 생애 초기 민감기에 어른 수컷의 노래를 듣고 연습해 익힌다고 나와요. 노래가 유전자에 다 들어 있지 않고 배워야 한다고 했어요."
+],
+[
+47,
+3,
+"reading",
+"r3-s13",
+"Which of the following can be inferred from the passage?",
+[
+"Changes in the urban environment can influence how bird songs develop.",
+"White-crowned sparrows are unable to learn a new dialect later.",
+"All animals with complex songs are capable of vocal learning.",
+"Birds raised in isolation still sing their parents' dialect."
+],
+[
+1
+],
+"샌프란시스코에서 노래가 바뀐 까닭으로 낮은 소리를 덮는 교통 소음이 거론됐으니, 도시 환경이 새 노래 변화에 영향을 줄 수 있다고 추론할 수 있어요. 홀로 자란 새는 비정상적인 노래를 불렀고, 음성 학습은 '비교적 적은' 동물만 해요."
+],
+[
+48,
+3,
+"reading",
+"r3-s13",
+"The underlined word \"supplanting\" is closest in meaning to:",
+[
+"imitating",
+"replacing",
+"protecting",
+"accompanying"
+],
+[
+2
+],
+"supplant 는 '(밀어내고) 대신하다'예요. 새 노래가 서쪽에서 동쪽으로 퍼지며 여러 곳에서 옛 노래를 '대체했다'는 뜻이라 replacing 이 맞아요."
+],
+[
+49,
+3,
+"reading",
+"r3-s14",
+"Which of the following is the best title for the passage?",
+[
+"The Eruption That Destroyed Pompeii",
+"How Papyrus Was Fabricated in Rome",
+"Reading the Unreadable: The Herculaneum Scrolls",
+"Epicurean Philosophy and the Pursuit of Pleasure"
+],
+[
+3
+],
+"화산재에 탄 두루마리를 펼치지 않고 엑스선과 기계 학습으로 읽어 낸 과정을 다룬 글이라 'Reading the Unreadable: The Herculaneum Scrolls'가 맞아요. 에피쿠로스 철학은 읽어 낸 내용으로만 잠깐 나와요."
+],
+[
+50,
+3,
+"reading",
+"r3-s14",
+"Why was it difficult to read the scrolls even in X-ray scans?",
+[
+"The scrolls were too voluminous to fit inside the X-ray scanners.",
+"The carbon-based ink looked almost the same as the carbonized papyrus.",
+"The text was written in a language that no scholar could read.",
+"The earlier excavators had effaced the ink while unrolling them."
+],
+[
+2
+],
+"둘째 문단에 헤르쿨라네움 잉크는 탄소로 만들어져 스캔에서 탄화된 파피루스와 거의 구별되지 않았다고 나와요. 그리스어로 읽혔으니 모르는 언어도 아니에요."
+]
+]
+}

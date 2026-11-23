@@ -1,0 +1,1662 @@
+{
+"school": "kau",
+"title": "한국항공대 편입영어 모의고사",
+"source": "한국항공대 편입영어 2024~2026학년도 기출 출제 유형(문항 수·영역·문제 꼴, VocabFactory 분석)을 분석해 dailyfreetoolbox 가 새로 만든 연습 문제",
+"checked": "2026-11-23",
+"minutes": 60,
+"points": [
+[
+1,
+5,
+3.1
+],
+[
+6,
+10,
+3.3
+],
+[
+11,
+12,
+3.8
+],
+[
+13,
+17,
+3.5
+],
+[
+18,
+30,
+3.3
+]
+],
+"sections": [
+{
+"id": "vocab",
+"name": "동의어"
+},
+{
+"id": "cloze",
+"name": "단락 빈칸"
+},
+{
+"id": "grammar",
+"name": "틀린 곳"
+},
+{
+"id": "phrase",
+"name": "구·절 빈칸"
+},
+{
+"id": "reading",
+"name": "독해"
+}
+],
+"passages": [
+{
+"id": "r1-s1",
+"text": "For years, delivery by drone seemed to be a technology that was always just around the corner. Recently it has finally begun to materialize, at least in a handful of locales. In parts of the Dallas area, you can order household staples from a large retailer, and a small drone then lowers them into your yard, often within half an hour. The company Zipline has been flying blood and other medical supplies to hospitals in Rwanda since 2016, and it has since extended its service to several other countries. Proponents argue that drones can reach outlying clinics faster than trucks on rutted roads; for lightweight parcels, they add, drones also use far less energy than a delivery van. Regulation has been the most formidable impediment. Most rules have required that each drone stay within sight of a human operator, which renders long routes impractical and keeps costs high. In the United States, the Federal Aviation Administration has granted case-by-case exemptions for some companies to fly beyond that limit, and in 2025 it proposed rules intended to make such flights commonplace. ____, technical approval does not guarantee public acceptance. In some neighborhoods, residents have grumbled about the incessant buzzing overhead; others fret about privacy, since many drones carry cameras. The economics also remain precarious. Each flight can carry only a small parcel, and inclement weather can ground an entire fleet. For now, drone delivery looks less like a substitute for trucks than a useful supplement in particular niches."
+},
+{
+"id": "r1-s2",
+"text": "In May 2024, a Singapore Airlines flight from London to Singapore encountered severe turbulence over Myanmar. The aircraft plunged abruptly, passengers who were not strapped in were catapulted against the ceiling, and one elderly passenger died, apparently of cardiac arrest. The plane diverted to Bangkok, and dozens of people were treated in hospital there. The mishap drew attention to a question that atmospheric scientists had been probing for years: is turbulence becoming more common as the climate warms? Much of the most hazardous turbulence is of the clear-air kind, which occurs without visible clouds; the weather radar that pilots use cannot detect it. It is generated largely by wind shear, the difference in wind speed between neighboring layers of air, and shear is most pronounced around the jet streams. Accumulating greenhouse gases alter the temperature differences at the altitudes where airliners cruise, and this appears to be intensifying the shear inside the jet streams. A 2023 study by researchers at the University of Reading, which used data from 1979 to 2020, found that the total yearly duration of severe clear-air turbulence at a typical point over the North Atlantic had swelled by about 55 percent. So should you be worried the next time you fly? Modern airliners are engineered to withstand forces far greater than turbulence normally produces, so the peril to the aircraft itself is slight. The real risk falls on people inside the cabin who are ____. Airlines are therefore investing in more accurate forecasts and exhorting passengers to keep their seat belts fastened whenever they are seated."
+},
+{
+"id": "r1-s3",
+"text": "Empathy, the capacity to share and respond to the distress of others, was long thought to be largely confined to humans and perhaps a few other primates. A series of experiments at the University of Chicago, published in 2011, challenged that view. The subject was an unprepossessing one: the laboratory rat. In each trial, one rat roamed freely in an arena while a cagemate was trapped inside a cramped transparent tube, which could be opened only from the outside, by nudging a door with some exertion. At first the free rats seemed perturbed, circling the tube and gnawing at its walls. Within days, the majority had learned to open the door and liberate their companions, and they did so swiftly and deliberately. When the tube was empty or contained a toy rat, by contrast, the free rats seldom bothered to open it. Then the researchers gave the rats a thornier dilemma: a second tube was filled with chocolate chips, a delicacy rats prize highly. Instead of devouring the whole treat themselves, many free rats opened both tubes and left part of the chocolate for the freed companion. The researchers were careful to emphasize that rats do not experience the world as people do. Still, the results suggest that the behavior was driven by something like ____ rather than by curiosity or the prospect of a reward. After all, releasing the cagemate brought the free rat nothing it could eat or use."
+},
+{
+"id": "r1-s4",
+"text": "Economists have long recognized that many workers save too little for retirement. Simply admonishing them to save more seldom works. In the late 1990s, the economists Richard Thaler and Shlomo Benartzi designed a program that took an unorthodox approach: rather than combating the habits of mind that thwart saving, it tried to harness them. They called it \"Save More Tomorrow,\" and it rested on three insights about human behavior. First, people find it far easier to commit to a sacrifice in the future than to make one today. Isn't it easier to promise a diet next month than to forgo dessert tonight? Second, people loathe seeing their take-home pay dwindle, even by a small amount. Third, once people are enrolled in a plan, most of them stay in it, because changing anything takes effort. Traditional retirement plans, the economists noticed, asked workers to defy all three tendencies at once. You had to curtail your spending immediately, accept a smaller paycheck, and make an active decision. Employees were therefore invited to commit, in advance, to setting aside a portion of each future pay raise, so their take-home pay never shrank. They could withdraw from the program at any time, but few did. At the first company to pilot it, participants' average savings rate rose from about 3.5 percent of their pay to more than 13 percent within a few years. Since then, the idea has ____. In the United States, a 2006 statute encouraged employers to enroll workers automatically in plans that raise contributions step by step, and employers in many other countries have since adopted similar designs."
+},
+{
+"id": "r1-s5",
+"text": "In the early 1950s the de Havilland Comet, the world's first jet airliner, was the pride of British aviation. Then, in 1954, two Comets disintegrated in the air within a few months, and investigators struggled to ascertain why. There were no survivors and no record of what had happened in the cockpit. Among the scientists asked to help was David Warren, a young researcher at a government aeronautical laboratory in Melbourne, Australia. Warren had an idea that seemed self-evident once it was articulated. What if a small device on board could record the pilots' voices and the readings of the main instruments? Investigators would then know far more about the final minutes of a flight. Until then, they had to rely on scattered shards of metal and on the accounts of witnesses on the ground, neither of which could reveal what the crew had seen, said, or tried to do at the end. Warren had recently seen a miniature recorder at a trade fair and realized that such machines could be adapted for the purpose. By the late 1950s he and his colleagues had built a working prototype, which stored several hours of sound and data on a thin steel wire. The reaction at home was disheartening. Aviation officials saw little merit in the device. Pilots objected to having their conversations recorded, fearing that the machine would be used for covert surveillance. Would you want every word you said at work kept on tape? The idea found a more receptive audience in Britain, where officials could see its value for investigating accidents. Attitudes in Australia shifted after a fatal crash in 1960 that investigators could not fully explain, and the country soon became one of the first to mandate flight recorders on its airliners. Today every large passenger plane carries them, and they are popularly known as \"black boxes.\" In fact, they are painted ____ so that searchers can spot them among the wreckage. They are built to survive searing heat, crushing impact, and prolonged immersion in the sea. The information they preserve has helped to elucidate countless accidents and to prevent many more."
+},
+{
+"id": "r1-s6",
+"text": "For decades, most aid to impoverished households took the form of goods and services chosen by outsiders: livestock, sewing machines, training courses, or bags of grain. The rationale seemed sound. Donors were apprehensive that if they simply handed over money, it might be squandered on alcohol and tobacco rather than on food and school fees. Giving goods also allowed donors to trace exactly how their money had been used. (A) In the last twenty years, however, a growing body of evidence has undermined that assumption. Much of it stems from Kenya, where mobile-phone money transfers became ubiquitous in the late 2000s. (B) A charity called GiveDirectly, founded by a group of young economists, began disbursing sums of cash directly to poor households in rural villages, with no conditions attached. Researchers then compared households that received transfers with similar households that did not. The households that received money were chosen at random, so differences between the two groups could reasonably be attributed to the cash itself. A widely cited study published in 2016 found that recipients increased their spending on food, invested in durable assets such as metal roofs and livestock, and reported less anxiety and greater life satisfaction. Economists at the World Bank reviewed studies from many countries and reached a similar conclusion: on average, cash transfers did not increase spending on alcohol or tobacco, and in many cases such spending fell. (C) Advocates of cash aid draw a broader lesson from such findings. People living in poverty, they argue, generally understand their own needs better than distant planners do. A farmer may need a new roof more than a goat, and a mother may need school fees more than a sewing machine. Treating recipients as capable decision makers, they add, also preserves a sense of dignity that handouts of goods can undermine. ____, it is often cheaper to deliver money through a phone than to buy, ship, and distribute goods. Cash also lets families cope with emergencies, such as an illness or a failed harvest, that no planner could have anticipated. (D) Skeptics raise legitimate concerns: some worry that large transfers could inflate local prices and penalize neighbors who receive nothing. Others ask a simple question: \"What happens once the money is spent?\" Some economists also point out that cash cannot build roads or hospitals; those still require public investment. Researchers are now conducting long-term experiments to answer such questions. Even so, the burden of proof has shifted. Many aid agencies now compare their programs against the simple benchmark of handing people cash."
+},
+{
+"id": "r2-s1",
+"text": "For most of the space age, rockets were used once and discarded. After lifting its payload toward orbit, a booster would plummet into the ocean or burn up in the atmosphere, and the next launch required a brand-new one. Critics of the practice liked to ask, \"Would you fly with an airline that scrapped each jet after a single trip?\" That has begun to change. In December 2015, the company SpaceX landed the first stage of a Falcon 9 rocket upright on a landing pad after sending satellites into orbit, and within two years it was flying salvaged boosters again; some individual boosters have since flown more than twenty missions. In October 2024, the company went further, catching the colossal first stage of its Starship rocket in mid-air with a pair of mechanical arms on the launch tower. Rival companies and space agencies, in the United States, China, and elsewhere, are now developing reusable rockets of their own. The chief allure is cost. Building a booster accounts for a hefty share of the price of a launch. Reusing it allows that outlay to be amortized across many flights. ____, launching a satellite has become considerably cheaper, and the objects sent into orbit have proliferated. Reuse is not costless, however. Recovered boosters must be scrutinized and refurbished, and a rocket that carries fuel for landing can carry less to orbit. Engineers contend that these costs are worth bearing. How far reuse can lower prices, though, will hinge on how quickly a booster can be turned around."
+},
+{
+"id": "r2-s2",
+"text": "When air travel imploded in 2020, airlines around the world parked their planes and encouraged thousands of experienced pilots to retire early. Few foresaw that within two or three years they would be scrambling to find enough people to fly and fix their aircraft. So what went wrong? As demand for travel rebounded, the industry discovered that the personnel it had let go could not be swiftly replaced. Part of the predicament is time and money. Becoming an airline pilot entails hundreds of hours of flight training. In many countries, students must shell out tens of thousands of dollars for it before earning a single paycheck. In the United States, rules adopted after a fatal regional airline crash in 2009 require most new first officers to have logged 1,500 hours of flight time. Meeting that requirement alone is a laborious process. At the other end of a career, American airline pilots must retire at 65. A large generation of pilots hired in the 1980s and 1990s is now reaching that age. Maintenance faces a comparable squeeze, since many veteran mechanics are nearing retirement and too few young technicians are entering the profession. The shortages have had tangible effects: some smaller airlines have axed routes to towns that were already poorly served. ____, airlines have raised wages, opened their own flight academies, and offered to defray training costs for promising students. Such measures will take years to bear fruit, because no amount of money can shorten the time it takes to train a safe pilot or a skilled mechanic."
+},
+{
+"id": "r2-s3",
+"text": "A dung beetle that has sculpted a ball of dung faces an urgent problem: rival beetles are eager to steal it. Its best strategy is to roll the ball away from the crowded dung pile in a straight line. A straight path carries it away from competitors most efficiently. Researchers in South Africa noticed that beetles manage this feat even on moonless nights, and they set out to discover how. In experiments published in 2013, the scientists fitted some beetles with tiny cardboard caps that blocked their view of the sky. Capped beetles wandered erratically. Those with an unobstructed view rolled their balls along remarkably straight routes. To identify which celestial cues mattered, the team moved the experiments into a planetarium in Johannesburg, where they could display or conceal particular features of the night sky, something real nights never permit. When only the brightest individual stars were shown, the beetles' performance deteriorated, but when only the diffuse glow of the Milky Way was visible, they oriented almost as well as under a full starry sky. The insects' compound eyes are probably too ____ to distinguish most individual stars. They can, however, detect the luminous band of the galaxy and keep it at a constant angle. The finding made the dung beetle the first animal known to navigate by the Milky Way. It is a reminder that sophisticated orientation does not require a large brain."
+},
+{
+"id": "r2-s4",
+"text": "Few habits are extolled as consistently as thrift. Parents exhort their children to save, and households that put money aside for hard times are rightly deemed prudent. If you have ever cut back on spending because a recession seemed imminent, you were doing exactly what sensible people do. Yet economists have long observed that what is wise for one family can become ____ when everyone does it at once. The idea is known as the \"paradox of thrift.\" Versions of the argument appeared as early as the eighteenth century, but it is most closely identified with the British economist John Maynard Keynes, who developed it during the Great Depression of the 1930s. The reasoning runs as follows. In an economy, one person's expenditure is another person's income. When a single household retrenches, the effect on the wider economy is negligible, and the family ends up with more savings. But suppose that, dreading a recession, millions of households cut their spending at the same time. Shops sell less, factories scale back production, and workers lose hours or jobs. Because incomes slump, people find that they cannot save as much as they had planned, and some must deplete the savings they already have. In the end, the collective endeavor to save more may leave the total amount of saving unchanged or even lower, while the economy shrinks. This logic helps explain why many governments try to increase their own spending during severe downturns, even as households tighten their belts. Critics retort that such spending must eventually be repaid and that government debt carries risks of its own. The debate over how much the state should spend in a crisis has never been resolved, but few economists now repudiate the paradox itself."
+},
+{
+"id": "r2-s5",
+"text": "In the mid-1990s, the social psychologists Claude Steele and Joshua Aronson ran a simple experiment that later grew into one of the most debated studies in their field. Black and white undergraduates at an elite American university took an arduous test made up of questions from a graduate school entrance exam. For some students, the test was described as a measure of intellectual ability. For others, it was framed as a laboratory exercise about problem solving that said nothing about ability. When the test was billed as a measure of ability, Black students scored conspicuously lower than white students with similar academic records. When it was not, the gap largely vanished. Why would a mere label change the scores? Steele and Aronson called the phenomenon stereotype threat: when people know that a negative stereotype exists about their group, the fear of confirming it can breed anxiety, divert attention, and sap the mental resources needed for difficult tasks. The idea was soon extended to other groups; studies reported, for example, that women performed worse on challenging math tests when reminded of the stereotype that men are better at mathematics. The effect even seemed to surface among groups not usually seen as disadvantaged, such as white men, who in one study did worse on a hard math test when told that their scores would be compared with those of Asian students. The research had an encouraging implication: if part of a performance gap was created by the testing situation, then changing the situation might shrink it. Schools experimented with brief interventions, such as having students write about values that mattered to them. In one widely reported case, a short writing exercise given to middle school students early in the year was said to narrow the achievement gap over the following months. In recent years, however, the field has confronted thornier questions. Some large studies designed to replicate the original findings have produced smaller effects than expected, or none at all, and researchers have also debated whether early results were inflated by small samples. Few psychologists now maintain that stereotype threat explains most differences in test scores. Many still think it is real in some situations, but the effect appears to be ____ than was once believed."
+},
+{
+"id": "r2-s6",
+"text": "For twenty-seven years, a small number of affluent travelers could cross the Atlantic in about three and a half hours. The Concorde, built jointly by Britain and France, entered passenger service in 1976 and cruised at more than twice the speed of sound. Yet despite all its speed and glamour, it never became the future of air travel that its designers had imagined. Only twenty were ever manufactured, and British Airways and Air France retired their fleets in 2003. Passengers paid many times the price of an ordinary ticket, and the aircraft became a symbol of luxury and national pride. (A) So why did it fail? Its fuel consumption was prodigious, its fares were exorbitant for ordinary travelers, and a fatal crash near Paris in 2000 eroded public confidence. The most fundamental constraint, however, was noise. An aircraft flying faster than sound produces shock waves that reach the ground as a sonic boom. If you lived beneath the flight path, you would hear an abrupt thunderclap that could rattle windows for miles. (B) In 1973, the United States banned civilian aircraft from flying faster than sound over land, and other countries imposed similar restrictions. These confined the Concorde largely to routes over the ocean, which ____. Engineers have spent decades seeking a feasible way to circumvent the problem. The key insight is that the contour of an aircraft dictates how its shock waves coalesce. A long, carefully sculpted nose and fuselage can keep the waves from merging into a single powerful boom, so that people on the ground hear only a soft thump. The idea is not new, but only in recent decades have computer simulations made it possible to design such shapes with confidence. (C) NASA has built an experimental jet called the X-59 to test the idea; unveiled in January 2024, the aircraft has a nose so elongated that the pilot cannot see straight ahead and must rely on a camera and a screen instead. The X-59 is not intended to carry passengers. Its purpose is to fly over designated communities and gauge how residents react to the quieter sound. The results will be shared with regulators, who must decide whether the overland ban could be replaced by a noise limit. (D) Several private companies are already designing supersonic airliners in the hope that regulators will lift the ban."
+},
+{
+"id": "r3-s1",
+"text": "On May 27, 2024, South Korea opened a new national space agency, the Korea AeroSpace Administration, in Sacheon in South Gyeongsang Province. Its establishment marked a watershed in the way the country runs its space program. Until then, responsibility for space policy had been fragmented among several government bodies. Officials argued that this disjointed structure, in which research institutes reported to a science ministry that also oversaw many unrelated fields, hampered large, long-term projects and impeded swift responses to a rapidly evolving industry. The new agency consolidated policy, research, and industrial support under a single roof. Major institutes were placed under its direction, including the Korea Aerospace Research Institute, the developer of the country's Nuri rocket. Nuri had already shown what Korean engineers could accomplish. It placed satellites into orbit in 2022 and 2023, and the lunar orbiter Danuri had been circling the Moon since December 2022. The government has set lofty goals for the agency, including a Moon landing in the early 2030s and a much larger domestic space industry. Attaining them will be arduous: Korea's space budget remains modest next to those of the United States, China, or Japan. The agency must also vie with established players for talent and contracts. Even its location has been contentious, since many researchers are based far away in Daejeon. So why bother with a new agency at all? ____, supporters argue that a dedicated agency gives Korea something it lacked before: a clear voice for space in government and a single partner for international cooperation."
+},
+{
+"id": "r3-s2",
+"text": "If you live near a busy airport, the roar of jet engines is not an occasional nuisance but a perpetual feature of daily life. At peak hours, aircraft may pass overhead every minute or two. They drown out conversations and disrupt classes, and near airports that operate at night, they break sleep. A typical resident might shrug and say, \"You stop hearing it after a while.\" The body, research suggests, does not. Studies in several countries have linked long-term exposure to aircraft noise with disturbed sleep, higher blood pressure, and an increased risk of heart disease. Disentangling the effects of noise from those of income and air pollution, however, is difficult. Some studies have also found that children at schools under flight paths lag behind in reading. In 2018, the World Health Organization recommended a stricter limit for aircraft noise than for road traffic noise, citing its particularly intrusive character. Governments have attempted several remedies: some airports, including Gimpo in Seoul, close to most flights late at night, and others charge higher landing fees for noisier planes. Many subsidize double-glazed windows and better insulation in nearby homes and schools. Newer aircraft are also considerably quieter than those of a few decades ago. Yet these gains are frequently offset by growth in air traffic, so that ____. Residents who feel ignored increasingly mobilize to oppose new runways, turning airport noise into a political issue as much as a technical one."
+},
+{
+"id": "r3-s3",
+"text": "Do spiders dream? The question sounds whimsical, but it touches a serious scientific puzzle. Rapid eye movement sleep, the stage most closely tied to vivid dreams in humans, was long studied almost exclusively in mammals and birds. Detecting it in other animals is daunting, since researchers usually rely on recordings of brain activity, or on watching the eyes flicker beneath closed lids. Jumping spiders, however, offered an unexpected window: these diminutive hunters have large, forward-facing eyes. In newly hatched spiders, the body is so ____ that you can see the long tubes behind the eyes from the outside; the animals move these tubes to shift their gaze. In a study published in 2022, researchers in Germany filmed young jumping spiders at night as they dangled inert from silk threads. Every so often, the spiders' eye tubes began to flit back and forth in brief bursts, much as human eyes do during REM sleep. During these same episodes, their legs twitched and curled, and the bursts recurred at fairly regular intervals throughout the night. The researchers were careful not to claim that the spiders dream. Do these episodes serve the same purposes as REM sleep in mammals, such as consolidating memories? No one knows, and no one can ask a spider what it experiences, so answering that question will require ways of studying the inner life of animals that do not yet exist. Still, the observations raise the possibility that something like REM sleep evolved far earlier, or more often, than scientists had assumed."
+},
+{
+"id": "r3-s4",
+"text": "Winning an auction feels like a coup, but economists warn that in certain auctions victory itself can be an ominous sign. The hazard arises when the item has roughly the same value to every bidder, but no one knows exactly what that value is. An oil field, for example, is worth whatever oil it contains, yet each company can only estimate that amount from its own surveys; some estimates will be too low, and others will be inflated. Now suppose every company bids according to its own estimate. Who wins? Usually the company with the most ____ estimate, which is likely to be too high. Unless bidders adjust for this, the winner tends to pay more than the item is worth. In 1971, engineers at an American oil company described the problem, arguing that firms bidding for offshore drilling rights in the Gulf of Mexico had reaped disappointingly low returns for precisely this reason. They called it the \"winner's curse.\" You can see the effect in a classroom: ask students to bid on a jar of coins without telling them how much money it holds. The average bid is often below the true value, but the winning bid frequently exceeds it. Once again, the person who wins tends to be the one who has overestimated the most. The lesson for bidders is to pare their bids below their estimates and to pare them further as the number of rivals grows, since more bidders mean a higher chance that someone will overestimate. Sellers, meanwhile, have every incentive to foster crowded and zealous bidding. When several European governments auctioned licenses for mobile phone networks around 2000, companies paid exorbitant sums, and some later floundered under the debt they had taken on."
+},
+{
+"id": "r3-s5",
+"text": "Imagine that you are locked inside a room and that you know no Chinese. Through a slot in the door come slips of paper covered in Chinese characters. You consult a massive rulebook, written in English, that tells you exactly what symbols to send back in response to each string you receive. The rules are so elaborate that your replies are flawless. To native speakers outside, the room appears to be holding a fluent conversation in Chinese. Yet you understand not a single word; you are merely matching shapes. This thought experiment, known as the Chinese room, was devised in 1980 by the American philosopher John Searle. His target was a claim popular among some researchers in artificial intelligence: that a computer running the right program would genuinely understand language and thus possess a mind. A computer, Searle observed, does exactly what the person in the room does: it manipulates symbols according to formal rules. If the person gains no understanding by following the rulebook, he argued, neither does the machine. In his famous formulation, syntax is not sufficient for semantics; shuffling symbols, in other words, is not the same as grasping meaning. The argument provoked a torrent of rebuttals. The most common, called the systems reply, concedes that the person does not understand Chinese. But doesn't the room as a whole, person and rulebook together, understand it? Searle retorted that the person could memorize the entire rulebook and work outside the room, and still understand nothing. Others contended that genuine understanding requires a body that perceives and acts in the world, so that symbols become linked to the things they stand for. For decades the debate seemed largely academic, since no existing program could converse convincingly. The arrival of chatbots capable of fluent, wide-ranging dialogue has revived it with unexpected urgency. Critics invoke Searle to argue that such systems merely predict plausible sequences of words. Defenders reply that the line between simulating understanding and possessing it may be harder to draw than the thought experiment suggests. Whichever side proves right, the Chinese room remains valuable because it ____."
+},
+{
+"id": "r3-s6",
+"text": "Time-restricted eating is a form of intermittent fasting: you eat all your meals within a fixed window of, say, eight hours each day. It has become one of the most popular dietary fads of the past decade, and its allure is easy to fathom. Instead of counting calories, followers simply watch the clock, and many report feeling more in control of their eating. Supporters have also claimed benefits beyond weight loss, from better sleep to sharper concentration, though such claims are harder to test. Early enthusiasm owed much to animal studies. In a widely cited 2012 study, mice were fed a high-fat diet but allowed to eat only during an eight-hour window each day. They gained far less weight than mice that ate the same food whenever they liked, yet both groups consumed similar numbers of calories. Researchers proposed that eating in tune with the body's internal clock improved the way the animals processed fat and sugar. (A) Human trials have yielded a more nuanced picture. In a 2020 study, overweight adults who were told to eat only between noon and eight in the evening lost, over twelve weeks, little more weight than adults who ate on a normal schedule. They also lost a small amount of muscle, a finding that surprised the researchers. (B) A larger trial in China, published in 2022, followed two groups of people for a full year, both of which cut their calories, but only one of which also limited eating to an eight-hour window. ____, the time limit made no significant difference: both groups lost similar amounts of weight. These results suggest that, for many people, the benefits of time-restricted eating come mainly from eating less overall. (C) A shorter eating window may make it harder to snack late at night, for example. Skipping a late snack removes calories regardless of when the remaining meals are eaten. That is not a negligible advantage: a simple rule that people can adhere to may be more useful than an elaborate diet they abandon. But it also means that the clock itself may matter less than its champions claim. Researchers continue to study whether meal timing affects health in other ways, such as blood sugar control, and whether certain groups benefit more than others. (D) For now, most nutrition experts offer simple advice: the best diet is the one you can sustain."
+}
+],
+"q": [
+[
+1,
+1,
+"vocab",
+null,
+"Select the word that is nearest in meaning to the underlined word.\nThe senator's <u>pompous</u> speech, packed with grand Latin phrases, bored even his most loyal supporters.",
+[
+"unassuming",
+"inept",
+"cordial",
+"arrogant"
+],
+[
+4
+],
+"pompous 는 '거만한, 젠체하는'이라 arrogant(거만한)와 가까워요. 거창한 라틴어 문구를 잔뜩 넣었다는 말이 단서예요. unassuming(잘난 체하지 않는)은 반대말이고, inept(서투른)·cordial(다정한)은 뜻이 달라요."
+],
+[
+2,
+1,
+"vocab",
+null,
+"Select the word that is nearest in meaning to the underlined word.\nAfter a cabin panel blew out on a jet in January 2024, investigators offered only <u>tentative</u> explanations at first.",
+[
+"provisional",
+"conclusive",
+"adverse",
+"fanciful"
+],
+[
+1
+],
+"tentative 는 '잠정적인, 확정되지 않은'이라 provisional(임시의, 잠정적인)과 가까워요. 조사 초기(at first)라 아직 확실하지 않은 설명이라는 흐름이에요. conclusive(결정적인)는 반대이고, adverse(불리한)·fanciful(공상적인)은 맞지 않아요."
+],
+[
+3,
+1,
+"vocab",
+null,
+"Select the word that is nearest in meaning to the underlined word.\nCritics accused the company of using technical jargon to <u>evade</u> questions about the real cost of its new subscription plan.",
+[
+"anticipate",
+"dodge",
+"spur",
+"solicit"
+],
+[
+2
+],
+"evade 는 '(질문·책임을) 피하다, 얼버무리다'라 dodge(피하다)와 가까워요. 비판받는 일(accused)이고 어려운 전문 용어를 썼다고 했으니, 진짜 비용에 대한 질문을 피했다는 흐름이에요. anticipate(예상하다)·spur(자극하다)·solicit(청하다)도 questions 앞에 넣으면 말은 되지만, 비난받을 행동도 아니고 밑줄 낱말의 뜻과도 달라요."
+],
+[
+4,
+1,
+"vocab",
+null,
+"Select the word that is nearest in meaning to the underlined word.\nHer <u>prowess</u> at chess became obvious when she defeated three adult masters at the age of eleven.",
+[
+"skill",
+"candor",
+"hubris",
+"derision"
+],
+[
+1
+],
+"prowess 는 '뛰어난 솜씨, 기량'이라 skill 과 가까워요. 열한 살에 어른 고수 셋을 이겼다는 뒤 내용이 단서예요. candor(솔직함)·hubris(오만)·derision(조롱)은 뜻이 달라요."
+],
+[
+5,
+1,
+"vocab",
+null,
+"Select the word that is nearest in meaning to the underlined word.\nWhat began as a <u>banal</u> remark about the weather somehow turned into a bitter family feud.",
+[
+"profound",
+"trite",
+"arcane",
+"pernicious"
+],
+[
+2
+],
+"banal 은 '진부한, 흔해 빠진'이라 trite 와 가까워요. 날씨 이야기처럼 흔한 말이 싸움으로 번졌다는 대비가 단서예요. profound(심오한)는 반대 쪽이고, arcane(난해한)·pernicious(해로운)는 뜻이 달라요."
+],
+[
+6,
+1,
+"cloze",
+null,
+"Choose the option that most appropriately fills in the blank in the paragraph.\nPlay is usually associated with mammals such as puppies and kittens. But could insects play, too? A study published in 2022 suggests that some may. Researchers at Queen Mary University of London placed bumblebees in an arena with an unobstructed path to a feeding station. Along one side of the path lay small wooden balls that the bees were able to move. Many bees repeatedly deviated from the path to roll the balls, even though the balls held no food and the bees could reach the sugar water without touching them. Younger bees rolled balls more often than older ones, much as juvenile mammals tend to frolic more than adults do. Biologists look for one telling sign when they try to identify play in animals: the activity must be done for its own sake. The bees' rolling passed that test: it earned them no food, no mate, and no shelter, so it seemed to serve no ____ purpose at all.",
+[
+"utilitarian",
+"recreational",
+"ornamental",
+"juvenile"
+],
+[
+1
+],
+"먹이도 짝도 쉼터도 얻지 못한다는 같은 문장 앞부분과, 놀이는 그 자체가 목적이어야 한다는 앞 문장이 단서예요. 쓸모를 위한 '실용적인(utilitarian)' 목적이 없다는 말이 맞아요. recreational(오락의)을 넣으면 '놀이 목적이 없다'가 되어 결론과 거꾸로이고, ornamental(장식용의)은 관계없으며, juvenile(어린)은 어린 벌 이야기에서 끌어온 낱말이라 purpose 와 이어지지 않아요."
+],
+[
+7,
+1,
+"cloze",
+null,
+"Choose the option that most appropriately fills in the blank in the paragraph.\nFor years, public health advice fixated almost entirely on exercise: half an hour of brisk walking a day, several days a week. More recent research suggests that this advice, while sound, omits a crucial part of the picture. Consider people who work out regularly but spend the rest of their waking hours seated at desks, in cars, and on sofas. They may still face higher risks of heart disease and diabetes than people who sit less. Put simply, sixty minutes at the gym cannot fully ____ ten hours in a chair. Some studies have found that simply standing up and walking for a few minutes every half hour can curb blood sugar spikes after meals. So if you work at a desk, the lesson is not to abandon exercise. It is to treat prolonged, unbroken stretches of sitting as a separate habit worth changing.",
+[
+"compound",
+"corroborate",
+"offset",
+"abandon"
+],
+[
+3
+],
+"규칙적으로 운동해도 오래 앉아 있으면 위험이 남는다는 앞 문장을 Put simply 로 다시 말하는 자리예요. 헬스장 한 시간이 의자 열 시간을 '상쇄하지(offset)' 못한다가 맞아요. compound(악화시키다)는 반대 방향이고, corroborate(확증하다)는 관계없으며, abandon 은 끝 문장의 '운동을 그만두라'에서 끌어온 낱말이라 뜻이 통하지 않아요."
+],
+[
+8,
+1,
+"cloze",
+null,
+"Choose the option that most appropriately fills in the blank in the paragraph.\nAirlines misplace millions of checked bags every year. Most of them are found and returned to their owners within a few days. But what happens to the rest? The share that is never claimed at all is ____: far less than one percent of all checked luggage. Even so, the absolute number is large enough to sustain an unusual business. Airlines first spend months trying to trace the owners and compensate the passengers; after that, some of these orphaned suitcases are sold off. In the small town of Scottsboro, Alabama, a store called Unclaimed Baggage buys such bags and resells their contents, from winter coats and cameras to wedding dresses and musical instruments. Bargain hunters flock in from neighboring states, and the store has become a modest tourist magnet. For many visitors, the appeal lies less in the low prices than in a peculiar thrill: discovering what strangers once thought worth packing.",
+[
+"minuscule",
+"substantial",
+"contentious",
+"peculiar"
+],
+[
+1
+],
+"빈칸 바로 뒤 '전체 위탁 수하물의 1퍼센트에도 한참 못 미친다'가 풀이라 '아주 작은(minuscule)'이 맞아요. Even so(그래도) 뒤에 '절대 수는 많다'가 오는 흐름과도 맞아요. substantial(상당한)은 반대 방향이고, contentious(논쟁적인)는 관계없으며, peculiar 는 끝 문장의 '묘한 짜릿함'에서 끌어온 낱말이라 비율을 설명하지 못해요."
+],
+[
+9,
+1,
+"cloze",
+null,
+"Choose the option that most appropriately fills in the blank in the paragraph.\nThe English word serendipity was coined in 1754 by the writer Horace Walpole, who explained in a letter to a friend that he had borrowed the idea from a Persian fairy tale, The Three Princes of Serendip. Its heroes kept stumbling upon valuable things they had not been looking for. Serendip, by the way, is an archaic name for the island now called Sri Lanka. For nearly two centuries the word remained obscure, known mainly to bibliophiles and antiquarian collectors. ____, its fortunes changed in the twentieth century. Scientists adopted it to describe fortuitous discoveries such as penicillin, which Alexander Fleming noticed in 1928 after mold had contaminated one of his bacterial cultures. Today the word is so fashionable that it appears in the names of cafes, hotels, and dating apps, and its link to a fairy tale is largely forgotten.",
+[
+"Similarly",
+"However",
+"Therefore",
+"For example"
+],
+[
+2
+],
+"앞에서는 이 낱말이 거의 두 세기 동안 잘 알려지지 않았다고 했고, 빈칸 뒤에서는 20세기에 사정이 바뀌었다고 해요. 앞뒤가 반대로 흐르니 However 가 맞아요. Similarly·Therefore 는 같은 방향, For example 은 예를 들 때 써요."
+],
+[
+10,
+1,
+"cloze",
+null,
+"Choose the option that most appropriately fills in the blank in the paragraph.\nMost accidents in commercial aviation happen not at cruising altitude but during takeoff, climb, descent, and landing, when the crew has the least time to rectify a mistake. In 1981, the United States Federal Aviation Administration responded with what pilots call the \"sterile cockpit\" rule. The rule applies during these critical phases of flight, generally whenever the aircraft is below ten thousand feet. Crew members may then not engage in any activity or conversation that is not required for safe operation; banter about sports, holiday plans, or office gossip is strictly prohibited. To an outsider, the rule may seem ____, a finicky insistence on silence among seasoned professionals. Accident investigators, however, had found that idle chatter distracted crews in several crashes. In a 1974 accident in North Carolina, for example, the pilots discussed extraneous topics during their approach. And if you have had surgery recently, your operating room may have followed the same idea, because many hospitals have since adopted the same rule.",
+[
+"pedantic",
+"lax",
+"nostalgic",
+"seasoned"
+],
+[
+1
+],
+"잡담을 금지하는 규칙이 바깥 사람 눈에는 '숙련된 전문가에게 침묵을 강요하는 까다로운 고집(a finicky insistence)'으로 보일 수 있다고 같은 문장 뒤에서 풀어 줘요. 그래서 '지나치게 규칙을 따지는(pedantic)'이 맞아요. lax(느슨한)는 엄격한 규칙과 정반대이고, nostalgic(향수 어린)은 관계없으며, seasoned 는 같은 문장의 '노련한 전문가'에서 끌어온 낱말이라 규칙을 꾸미지 못해요."
+],
+[
+11,
+1,
+"grammar",
+null,
+"Which of the underlined parts is grammatically wrong or unacceptable?\nHave you ever watched geese crossing an autumn sky and wondered why so many large birds travel in a V? Engineers had long surmised that the formation conserves energy: each bird, they reasoned, can ride the rising air ①<u>created</u> at the wingtips of the bird in front of it. Testing the idea in the wild, however, was virtually impossible, since no one could shadow a flock closely enough to see how individual birds behaved. An opportunity finally arose in Europe, where conservationists were teaching captive-bred northern bald ibises, an endangered species, to migrate ②<u>by leading</u> them south behind a small, slow aircraft. Researchers fitted the birds with lightweight data loggers that recorded their position, their speed, and every beat of their wings. The results, published in 2014, showed that the ibises did far more than simply follow one another. Each bird positioned itself slightly to the side of the bird ahead and timed its wingbeats so that its wingtips traced the path of the rising air. When a bird happened to fly directly behind another, it changed the timing, apparently to avoid the sinking air in that spot. Such precision demands close ③<u>attention at</u> the movements of neighbors. What made the finding remarkable was that hand-reared young birds made these constant adjustments ④<u>by themselves</u>, without ever having been taught.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"attention 은 대상 앞에 to 를 쓰는 짝 전치사 명사예요(pay attention to, close attention to). attention at 이 아니라 attention to the movements 여야 해요. created 는 '만들어진' 공기를 꾸미는 과거분사, by leading 은 '이끄는 방법으로'라는 수단의 전치사구, by themselves 는 '스스로'라는 재귀대명사 관용구라 모두 맞아요."
+],
+[
+12,
+1,
+"grammar",
+null,
+"Which of the underlined parts is grammatically wrong or unacceptable?\nWhen commercial passenger flights began in the 1920s, the job of looking after travelers usually fell to the copilot or to young men engaged as cabin boys. That changed in 1930, thanks to Ellen Church, a registered nurse from Iowa who ①<u>had trained</u> as a pilot. Unable to find work flying airplanes, she approached Boeing Air Transport, a precursor of United Airlines. Nurses ②<u>on board</u>, she argued, could care for passengers and reassure a public that still regarded flying as perilous. The company consented to a trial and hired eight nurses. They came to be dubbed stewardesses. They served meals, soothed jittery travelers, and looked after anyone who became airsick on the jolting, unpressurized flights of the day. The idea proved so popular that other airlines soon replicated it. During the Second World War, however, nurses were in acute demand in the armed forces, and the nursing requirement was gradually dropped. In its place came rules that now seem astonishing. At many airlines, stewardesses had to be young and unmarried, and those who married or reached a certain age were dismissed. ③<u>In first</u>, few of them dared to protest. Such rules were contested in court in the 1960s and 1970s, and they were eventually phased out. Today's cabin crew are ④<u>in charge</u> of passenger safety above all, from evacuations to medical emergencies.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"'처음에는'은 시간 전치사 관용구 at first 로 써요. In first 는 쓰지 않으니 At first, few of them dared to protest 가 되어야 해요. had trained 는 1930년보다 앞선 일이라 과거완료, on board 는 '기내에 탄'이라는 전치사 관용구, in charge 는 뒤의 of 와 짝을 이루는 '~을 맡은'이라 모두 맞아요."
+],
+[
+13,
+1,
+"phrase",
+null,
+"Choose the expression that best completes the paragraph.\nAsk a group of newlyweds how likely they are to divorce. Many will put their own chances close to zero, even though they know that a large share of marriages end in divorce. Psychologists call this tendency the \"optimism bias.\" People expect good things to happen to them more often than to others, and bad things less often. Why does the bias survive contact with reality? Laboratory studies offer a clue. Volunteers are first asked to gauge their risk of various misfortunes, such as being burglarized or developing a serious illness, and then they are told the actual average risk. When the real figure turns out to be better than their estimate, they revise their beliefs readily. When it turns out to be worse, however, they barely adjust at all. In other words, ____. Some researchers argue that a mild optimism bias is useful, because it keeps people motivated to pursue their goals; the danger comes when it leads people to skip precautions such as insurance or regular medical checkups.",
+[
+"people revise their beliefs more readily after bad news than after good news",
+"people revise their beliefs more readily after news from friends than from strangers",
+"people revise their beliefs more readily about others than about themselves",
+"people revise their beliefs more readily after good news than after bad news"
+],
+[
+4
+],
+"실제 위험이 생각보다 낮으면(좋은 소식) 믿음을 쉽게 고치고, 높으면(나쁜 소식) 거의 고치지 않는다는 바로 앞 두 문장을 In other words 로 묶는 자리예요. 좋은 소식 뒤에 믿음을 더 쉽게 고친다는 문장이 맞아요. 나쁜 소식 쪽이 더 쉽다는 말은 방향이 거꾸로이고, 친구와 낯선 사람 이야기는 글에 없으며, 남과 나를 비교한 말은 앞의 낙관 편향 정의에서 끌어온 것이라 실험 결과를 정리하지 못해요."
+],
+[
+14,
+1,
+"phrase",
+null,
+"Choose the expression that best completes the paragraph.\nSea turtles have no sex chromosomes of the kind found in mammals. Instead, the sex of a hatchling depends largely on the temperature of the sand around its egg: warmer nests produce mostly females, and cooler nests mostly males. This arrangement has served turtles for millions of years, but it leaves them unusually vulnerable to a warming climate. In a study published in 2018, researchers examined green turtles feeding on Australia's Great Barrier Reef and traced each animal to the beaches of its birth; among young turtles from the warm northern beaches, more than 99 percent were female. A population with almost no males could eventually struggle to reproduce. The effect may take decades to manifest, though, because turtles live so long. Conservationists have tried shading nests and dousing them with water to cool the sand. Such measures may buy time, but they cannot ____. In the long run, only a cooler planet will keep the sexes in balance.",
+[
+"help the turtles in any way at all",
+"lower the temperature of the sand",
+"replace efforts to curb the warming itself",
+"attract much attention from the general public"
+],
+[
+3
+],
+"그늘을 치고 물을 뿌리는 일은 시간을 버는(buy time) 임시방편이고, but 뒤에는 그 한계가 와야 해요. 바로 뒤 문장도 결국 행성이 식어야 한다고 하니, 온난화 자체를 줄이는 노력을 '대신할 수 없다'가 맞아요. 전혀 돕지 못한다는 말은 buy time 과 반대이고, 모래 온도를 낮추는 것은 바로 그 방법이 하는 일이라 거꾸로이며, 대중의 관심은 글과 관계없어요."
+],
+[
+15,
+1,
+"phrase",
+null,
+"Choose the expression that best completes the paragraph.\nWhen a busy intersection is controlled by traffic lights, drivers often speed up to beat a yellow light, and the most serious crashes tend to be side impacts at high speed. A roundabout works differently. Every driver must slow down and yield to traffic already circling. As a result, vehicles merge at low speeds and at oblique angles, and the collisions that do occur are usually minor. Studies in the United States have found that converting ordinary intersections into roundabouts drastically reduces crashes that cause injuries or deaths. Yet proposals to build roundabouts often meet vehement local opposition, partly because the idea can seem bewildering if you have never driven through one. Once they are built, however, opinions tend to shift. Surveys taken a year or two after construction usually show that most residents have ____ them. Even the fiercest critics are often the quickest to forget that they ever objected.",
+[
+"come around to",
+"steered clear of",
+"lost track of",
+"merged into"
+],
+[
+1
+],
+"however 와 opinions tend to shift(생각이 바뀐다)가 단서예요. 짓기 전 반대하던 주민 다수가 나중에는 생각을 바꿔 받아들이게 됐다는 뜻이라 come around to(처음 반대하다가 받아들이게 되다)가 맞아요. steered clear of(피했다)는 반대 방향이고, lost track of(놓쳤다)는 관계없으며, merged into 는 차들이 합류한다는 앞 문장에서 끌어온 표현이라 주민의 생각과 맞지 않아요."
+],
+[
+16,
+1,
+"phrase",
+null,
+"Choose the expression that best completes the paragraph.\nFlight attendants on some airlines have long noticed an intriguing pattern. Passengers who would never order tomato juice on the ground request it aloft. Why? Part of the explanation may lie in how the cabin environment changes our sense of taste. At cruising altitude the air is very dry, and the cabin pressure is lower than at sea level. Both conditions dull the senses of smell and taste. Noise appears to matter as well. In a 2015 study, researchers at Cornell University exposed volunteers to loud background noise, similar to the din inside an aircraft cabin. The noise dampened their perception of sweetness while amplifying their perception of umami, the savory taste found in tomatoes. Airline caterers have responded by ____. After all, a dish that tastes balanced in a kitchen on the ground can seem bland at thirty-five thousand feet. So if your in-flight meal seems heavily seasoned, now you know why.",
+[
+"seasoning in-flight meals more lightly than usual",
+"lowering the level of noise inside the cabin",
+"seasoning in-flight meals more heavily than usual",
+"printing their menus in several languages"
+],
+[
+3
+],
+"바로 뒤 문장이 근거예요. 지상에서 알맞던 음식도 높은 하늘에서는 싱겁게(bland) 느껴지니, 기내식을 '평소보다 강하게 간한다'가 맞아요. 더 싱겁게 간한다는 말은 방향이 거꾸로이고, 소음을 낮추는 일은 앞의 소음 실험에서 끌어온 것이라 음식을 만드는 쪽이 하는 대응이 아니며, 메뉴 언어는 관계없어요."
+],
+[
+17,
+1,
+"phrase",
+null,
+"Choose the expression that best completes the paragraph.\nThe Greek philosopher Epicurus, who taught in Athens around 300 BCE, believed that much human misery springs from fear, above all the fear of death. If you share that fear, he had an argument for you. His argument against that fear is strikingly succinct. Death, he reasoned, is the end of all sensation, and good and bad things can only matter to a being that is able to experience them. While we are alive, death has not yet arrived; once it has arrived, we no longer exist to feel it. It follows that ____. Critics have objected that this reasoning neglects what death takes away: the future experiences a person would otherwise have enjoyed. Epicurus never denied that dying might be painful; his claim was only that being dead could not be.",
+[
+"death is the worst of all evils for the one who dies",
+"death is bad for the one who dies only if it is feared",
+"death is good for the one who dies only in old age",
+"death is neither good nor bad for the one who dies"
+],
+[
+4
+],
+"느낄 수 있는 존재에게만 좋고 나쁨이 있는데, 죽으면 느낄 존재가 없다는 앞의 원리를 적용하는 자리예요. 그러니 죽음은 죽는 사람에게 좋지도 나쁘지도 않다는 결론이 이어져요. 가장 큰 악이라는 말은 정반대이고, 두려워할 때만 나쁘다는 말은 앞의 '두려움'을 끌어와 결론을 비튼 것이며, 늙어서만 좋다는 조건은 근거가 없어요."
+],
+[
+18,
+1,
+"reading",
+"r1-s1",
+"Which of the following best completes the blank?",
+[
+"As a result",
+"Even so",
+"For instance",
+"In the same way"
+],
+[
+2
+],
+"앞에서는 규제가 풀리는 쪽으로 가고 있다고 했고, 빈칸 뒤에서는 그래도 주민이 받아들인다는 보장은 없다고 해요. 앞 내용을 인정하면서 반대 이야기를 꺼내니 Even so 가 맞아요. As a result 는 결과, For instance 는 예, In the same way 는 같은 방향을 이을 때 써요."
+],
+[
+19,
+1,
+"reading",
+"r1-s1",
+"Which of the following can be inferred from the passage?",
+[
+"Regulators have recently made long drone flights harder for companies to get.",
+"Drone delivery will become cheaper than trucks once drone batteries improve.",
+"Drones have already replaced delivery trucks in nearly every American city and suburb.",
+"Drone delivery is spreading, but rules, noise, and cost still limit its growth."
+],
+[
+4
+],
+"글은 드론 배송이 몇몇 곳에서 시작됐지만 규제·소음·사생활·비용 때문에 트럭을 대신하기보다 보탬이 되는 정도라고 맺어요. 퍼지고는 있지만 아직 한계가 있다는 문장이 요지예요. 규제가 더 까다로워졌다는 말은 허가를 넓히고 있다는 글과 반대이고, 배터리가 좋아지면 더 싸진다는 말은 글에 없는 원인이며, 거의 모든 도시에서 트럭을 대신했다는 말은 과장이에요."
+],
+[
+20,
+1,
+"reading",
+"r1-s2",
+"Which of the following best completes the blank?",
+[
+"strapped firmly into their seats",
+"traveling in business class",
+"not wearing their seat belts",
+"watching the weather radar"
+],
+[
+3
+],
+"앞에서 안전띠를 매지 않은 승객이 천장에 부딪혔다고 했고, 바로 뒤 문장에서도 앉아 있을 때 늘 안전띠를 매라고 해요. 위험은 '안전띠를 매지 않은' 사람에게 있다는 흐름이에요. 단단히 매고 있다는 말은 거꾸로이고, 좌석 등급은 관계없으며, 기상 레이더는 조종사가 쓰는 장비라는 앞 내용을 끌어온 것이라 객실 승객과 맞지 않아요."
+],
+[
+21,
+1,
+"reading",
+"r1-s2",
+"Which of the following is the most appropriate title for the passage?",
+[
+"Clear-air turbulence is becoming rarer as the planet warms",
+"Cheaper fares are putting more passengers in the path of turbulence",
+"Every flight over the Atlantic now faces severe turbulence",
+"A warming climate may be making the skies bumpier"
+],
+[
+4
+],
+"사고 이야기로 시작해 온난화가 제트기류의 바람 차이를 키워 맑은 하늘 난기류가 늘고 있다는 연구를 소개하는 글이라, 기후와 난기류 증가를 묶은 제목이 맞아요. 난기류가 줄고 있다는 제목은 연구 결과와 반대이고, 싼 항공권 이야기는 글에 없는 원인이며, 모든 비행이 심한 난기류를 만난다는 말은 과장이에요."
+],
+[
+22,
+1,
+"reading",
+"r1-s3",
+"Which of the following best completes the blank?",
+[
+"empathy",
+"greed",
+"boredom",
+"curiosity"
+],
+[
+1
+],
+"글 첫머리에서 공감(empathy)을 소개하고, 먹을 것도 쓸 것도 생기지 않는데 갇힌 동료를 풀어 주고 초콜릿까지 나눴다고 했어요. 그 행동을 움직인 것은 '공감'에 가까운 것이에요. greed(탐욕)는 초콜릿을 나눈 일과 반대이고, boredom(지루함)은 단서가 없으며, curiosity 는 같은 문장에서 '호기심 때문이 아니라'고 한 낱말을 끌어온 것이라 맞지 않아요."
+],
+[
+23,
+1,
+"reading",
+"r1-s3",
+"Which of the following can be inferred from the passage?",
+[
+"Rats free other rats only when they are rewarded with food.",
+"Rats may act to relieve another rat's distress even at some cost to themselves.",
+"Rats free their cagemates mainly because they dislike the noise of distress calls.",
+"Rats feel a trapped companion's distress in exactly the same way that humans do."
+],
+[
+2
+],
+"쥐는 보상이 없어도 갇힌 동료를 풀어 주었고, 좋아하는 초콜릿까지 남겨 두었어요. 자기 몫을 덜어서라도 동료의 괴로움을 덜어 주려 한다는 문장이 글에서 끌어낼 수 있는 내용이에요. 먹이를 줄 때만 풀어 준다는 말은 반대이고, 괴로운 울음소리가 싫어서라는 말은 글에 없는 원인이며, 사람과 '똑같다'는 말은 연구자들의 조심스러운 말과 어긋나는 과장이에요."
+],
+[
+24,
+1,
+"reading",
+"r1-s4",
+"Which of the following best completes the blank?",
+[
+"faltered",
+"proliferated",
+"coagulated",
+"curtailed"
+],
+[
+2
+],
+"빈칸 뒤에서 2006년 미국 법이 이 방식을 권했고 다른 여러 나라 고용주도 비슷한 설계를 받아들였다고 해요. 생각이 널리 '퍼졌다(proliferated)'가 맞아요. faltered(흔들렸다)는 반대 방향이고, coagulated(엉겼다)는 관계없으며, curtailed 는 앞에서 '지출을 줄이다'에 쓴 낱말을 끌어온 것이라 목적어 없이 뜻이 통하지 않아요."
+],
+[
+25,
+1,
+"reading",
+"r1-s4",
+"Which of the following is the most appropriate title for the passage?",
+[
+"Most workers already save more than they need",
+"Employer matching is why workers suddenly saved more",
+"Behavioral economics has ended inadequate saving everywhere",
+"Working with mental habits can raise retirement savings"
+],
+[
+4
+],
+"글은 '더 저축하라'는 말만으로는 효과가 없지만, 미래 약속·손실 싫어함·관성 같은 마음 습관을 이용한 프로그램은 저축률을 크게 올렸다고 해요. 그래서 마음 습관을 이용하면 노후 저축을 늘릴 수 있다는 제목이 맞아요. 이미 필요보다 많이 저축한다는 제목은 반대이고, 고용주가 돈을 보태 줘서라는 제목은 글에 없는 원인이며, 부족한 저축 문제를 어디서나 끝냈다는 제목은 과장이에요."
+],
+[
+26,
+1,
+"reading",
+"r1-s5",
+"Which of the following best completes the blank?",
+[
+"a bright orange",
+"a dull black",
+"the same color as the wreckage",
+"a different color every year"
+],
+[
+1
+],
+"흔히 블랙박스라 부르지만 '사실은(In fact)' 다른 색이고, 잔해 속에서 찾기 쉽게(so that searchers can spot them) 칠한다고 했어요. 눈에 잘 띄는 밝은 주황색이 맞아요. 칙칙한 검정은 이름만 보고 고른 반대 방향이고, 잔해와 같은 색은 같은 문장의 wreckage 를 끌어와 목적과 거꾸로 만든 것이며, 해마다 다른 색은 관계없어요."
+],
+[
+27,
+1,
+"reading",
+"r1-s5",
+"Which of the following can be inferred from the passage?",
+[
+"Pilots welcomed flight recorders as soon as Warren proposed them.",
+"The flight recorder was at first resisted but is now on every large airliner.",
+"Australia adopted flight recorders mainly because Britain pressured its government.",
+"Flight recorders have made passenger air travel completely free of accidents."
+],
+[
+2
+],
+"워런의 기록 장치는 처음에 호주 항공 당국과 조종사에게 외면받았지만, 뒤에 의무 장비가 되어 지금은 모든 대형 여객기에 실린다고 했어요. 처음엔 반대에 부딪혔지만 지금은 모든 대형 여객기에 실린다는 문장이 글에서 끌어낼 수 있는 내용이에요. 조종사가 제안 즉시 반겼다는 말은 반대이고, 영국이 압력을 넣어 호주가 받아들였다는 말은 글에 없는 원인이며, 사고가 완전히 없어졌다는 말은 과장이에요."
+],
+[
+28,
+1,
+"reading",
+"r1-s6",
+"Which position in the passage best suits the sentence below?\nRecipients, in other words, did not behave in the way that many donors had feared.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+3
+],
+"넣을 문장은 '다시 말해 받은 사람들은 기부자들이 걱정한 대로 행동하지 않았다'는 정리예요. in other words 로 앞 내용을 묶으므로, 현금을 음식·재산에 쓰고 술·담배 지출은 늘지 않았다는 연구 결과가 모두 나온 뒤인 (C)가 맞아요. (A)·(B)는 아직 연구 결과가 나오기 전이고, (D)는 비용 이야기 뒤라 이어지지 않아요."
+],
+[
+29,
+1,
+"reading",
+"r1-s6",
+"Which of the following best completes the blank?",
+[
+"Nevertheless",
+"Instead",
+"Otherwise",
+"Moreover"
+],
+[
+4
+],
+"앞 문장들은 가난한 사람이 자기 필요를 더 잘 알고 존엄도 지킨다는 근거이고, 빈칸 뒤는 돈을 전화로 보내는 편이 물건을 사서 나르는 것보다 싸다는 또 다른 근거예요. 근거를 하나 더 보태니 Moreover 가 맞아요. Nevertheless·Instead 는 반대, Otherwise 는 '그렇지 않으면'이라 맞지 않아요."
+],
+[
+30,
+1,
+"reading",
+"r1-s6",
+"Which of the following can be inferred from the passage?",
+[
+"Most recipients of cash aid spend it mainly on alcohol and tobacco.",
+"Cash aid works mainly because mobile phones make recipients better informed.",
+"Giving poor households cash directly can be an effective and efficient form of aid.",
+"Cash transfers have been proven to end poverty permanently in every rural village they reach."
+],
+[
+3
+],
+"케냐 연구와 세계은행 검토는 현금을 받은 가정이 음식·재산에 쓰고 술·담배 지출은 늘지 않았다고 했고, 돈으로 주는 편이 싸다는 근거도 들었어요. 현금 직접 지원이 효과적이고 효율적일 수 있다는 문장이 요지예요. 술·담배에 쓴다는 말은 반대이고, 휴대전화가 정보를 줘서라는 말은 글에 없는 원인이며, 모든 마을에서 가난을 영원히 끝냈다는 말은 과장(장기 효과는 아직 연구 중)이에요."
+],
+[
+1,
+2,
+"vocab",
+null,
+"Select the word that is nearest in meaning to the underlined word.\nDespite the <u>frailty</u> of her health in old age, the novelist persisted in writing for several hours every morning.",
+[
+"vigor",
+"weakness",
+"solidarity",
+"hauteur"
+],
+[
+2
+],
+"frailty 는 '허약함, 약함'이라 weakness 와 가까워요. 나이가 들어 몸이 약했는데도(Despite) 매일 글을 썼다는 대비가 단서예요. vigor(활력)는 반대말이고, solidarity(결속)·hauteur(오만)는 뜻이 달라요."
+],
+[
+2,
+2,
+"vocab",
+null,
+"Select the word that is nearest in meaning to the underlined word.\nWhen the manager hailed the botched launch as a brilliant success, everyone understood that he was being <u>sarcastic</u>.",
+[
+"cordial",
+"solemn",
+"bumptious",
+"mocking"
+],
+[
+4
+],
+"sarcastic 은 '비꼬는, 빈정대는'이라 mocking(조롱하는)과 가까워요. 실패한 출시를 '대성공'이라 부른 것을 모두 알아들었다는 말이 단서예요. cordial(다정한)·solemn(진지한)은 반대 쪽이고, bumptious(주제넘은)는 뜻이 달라요."
+],
+[
+3,
+2,
+"vocab",
+null,
+"Select the word that is nearest in meaning to the underlined word.\nJapan's first megaquake advisory, issued in August 2024, warned that a powerful tremor might <u>herald</u> a far larger one.",
+[
+"signal",
+"avert",
+"precipitate",
+"offset"
+],
+[
+1
+],
+"herald 는 '~이 올 것을 알리다, 예고하다'라 signal(신호가 되다)과 가까워요. 강한 지진이 더 큰 지진의 전조일 수 있다는 경보예요. avert(막다)·precipitate(촉발하다)·offset(상쇄하다)도 문장에 넣으면 말은 되지만, 알리는 것이 아니라 막거나 일으키거나 상쇄한다는 뜻이라 뜻을 알아야 골라낼 수 있어요."
+],
+[
+4,
+2,
+"vocab",
+null,
+"Select the word that is nearest in meaning to the underlined word.\nJudges are expected to remain <u>impartial</u>, even when a case stirs up strong public feeling.",
+[
+"unbiased",
+"vigilant",
+"taciturn",
+"sanguine"
+],
+[
+1
+],
+"impartial 은 '공정한, 치우치지 않은'이라 unbiased(편견 없는)와 가까워요. 여론이 들끓어도 판사는 한쪽 편을 들지 않아야 한다는 문장이에요. vigilant(경계하는)·taciturn(과묵한)·sanguine(낙관적인)은 뜻이 달라요."
+],
+[
+5,
+2,
+"vocab",
+null,
+"Select the word that is nearest in meaning to the underlined word.\nSmallholdings that proved <u>resilient</u> during the protracted drought usually cultivated several crops rather than just one.",
+[
+"fragile",
+"susceptible",
+"hardy",
+"disdainful"
+],
+[
+3
+],
+"resilient 는 '잘 견디고 회복하는'이라 hardy(강인한, 잘 견디는)와 가까워요. 긴 가뭄을 버틴 농장이라는 내용이 단서예요. fragile(연약한)·susceptible(취약한)은 반대 쪽이고, disdainful(경멸하는)은 뜻이 달라요."
+],
+[
+6,
+2,
+"cloze",
+null,
+"Choose the option that most appropriately fills in the blank in the paragraph.\nReading a breast tissue sample under the microscope is an exacting skill that pathologists spend years acquiring. So you might be astonished to learn that, in a study published in 2015, researchers in the United States trained ordinary pigeons to perform a comparable task. The birds were shown digitized images of tissue and rewarded with grain whenever they pecked the correct button for healthy or cancerous samples. After a few weeks of training, individual pigeons classified the images with an accuracy of about 85 percent. When the verdicts of several birds were pooled, a kind of avian \"wisdom of the crowd,\" accuracy climbed far higher. Crucially, the pigeons also categorized images they had never seen before. They had learned the visual features of the disease rather than memorizing specific pictures. The authors had a modest aim: pigeons could help test new imaging technology more cheaply than human specialists. Even so, skeptics might have derided the whole project as ____.",
+[
+"plausible",
+"altruistic",
+"modest",
+"preposterous"
+],
+[
+4
+],
+"Even so(그렇다 해도) 뒤에서 의심하는 사람들(skeptics)이 비둘기에게 암 조직 판별을 가르친 연구를 깎아내리는(deride) 말이 들어가야 하니 '터무니없는(preposterous)'이 맞아요. plausible(그럴듯한)은 반대 방향의 좋은 평가이고, altruistic(이타적인)은 글과 상관없으며, modest 는 바로 앞 문장에서 연구진의 목적을 말할 때 쓴 낱말을 끌어온 것이라 깎아내리는 흐름과 맞지 않아요."
+],
+[
+7,
+2,
+"cloze",
+null,
+"Choose the option that most appropriately fills in the blank in the paragraph.\nIf you write with your left hand, you belong to a minority of roughly one person in ten. The proportion is similar in countries with vastly disparate cultures. For centuries, however, left-handedness was treated as a defect to be remedied. Many languages linked the left side with misfortune or clumsiness; the English word sinister comes from the Latin word for left. In many schools, left-handed children were compelled to write with their right hands, sometimes with their left hands bound behind their backs. ____ such efforts, the share of left-handers did not fall; it was merely concealed. How do we know? When schools in several Western countries ceased coercing children to switch during the twentieth century, the share of people writing with their left hands rose appreciably, reaching roughly the level seen today. Researchers now think that handedness is shaped partly by genes and partly by events in the womb, and that it cannot simply be eradicated by training.",
+[
+"Despite",
+"Because of",
+"Instead of",
+"Apart from"
+],
+[
+1
+],
+"빈칸 뒤에 명사구(such efforts)가 오고, 오른손을 강요했는데도 왼손잡이 비율은 줄지 않았다는 양보의 흐름이라 Despite 가 맞아요. Because of 는 노력 때문에 줄지 않았다는 엉뚱한 인과가 되고, Instead of(~ 대신에)·Apart from(~ 말고도)도 뜻이 맞지 않아요."
+],
+[
+8,
+2,
+"cloze",
+null,
+"Choose the option that most appropriately fills in the blank in the paragraph.\nAirlines routinely sell more tickets than there are seats on a flight. The practice rests on a straightforward observation: some ticket holders fail to show up, and years of booking records let airlines predict the no-shows with uncanny accuracy. If an airline sold only as many tickets as it had seats, many planes would take off with vacant rows. You would then pay for those empty seats through higher fares. When the prediction is wrong, the airline solicits volunteers to take a later flight in exchange for cash or travel vouchers. To passengers who are bumped involuntarily, however, the practice can seem ____, as though the airline prized filling seats above honoring its promises. For this reason, many countries oblige airlines to pay such passengers stipulated sums in compensation. In the European Union, for instance, the amount depends on the distance of the flight.",
+[
+"scrupulous",
+"unscrupulous",
+"frivolous",
+"straightforward"
+],
+[
+2
+],
+"원치 않게 자리에서 밀려난 승객 눈에는 약속보다 좌석 채우기를 앞세우는 것처럼(as though ~) 보인다고 했으니 '양심 없는(unscrupulous)'이 맞아요. 같은 문장 뒤쪽 as though 절이 바로 그 뜻을 풀어 줘요. scrupulous(양심적인)는 정반대이고, frivolous(경박한)는 상관없는 낱말이며, straightforward 는 앞에서 관찰을 설명할 때 쓴 낱말을 끌어온 것이라 비난하는 흐름과 맞지 않아요."
+],
+[
+9,
+2,
+"cloze",
+null,
+"Choose the option that most appropriately fills in the blank in the paragraph.\nIf you have ever traveled by ship, you may have heard the words port and starboard for the left and right sides of a vessel. The reason dates back more than a millennium. Early Scandinavian ships were steered not with a rudder at the stern but with a large oar mounted on one side. Since most mariners were right-handed, the oar was customarily placed on the right, and that side became known as the steering board, or starboard. Because the oar stuck out from the right, ships moored with their left side against the quay, and that side came to be called the loading side. Its old name, however, sounded confusingly similar to starboard when bellowed in a gale, so it was eventually ____ by port, the side facing the harbor. Aviation inherited the same terms. To this day, passengers usually board airliners through doors on the left.",
+[
+"supplanted",
+"preserved",
+"fortified",
+"moored"
+],
+[
+1
+],
+"옛 이름이 starboard 와 헷갈리게 들려서(so) 결국 port 라는 말로 '대체되었다(supplanted)'는 흐름이에요. 지금 왼쪽을 port 라고 부른다는 첫 문장과도 이어져요. preserved(보존된)는 바뀌지 않았다는 반대 방향이고, fortified(강화된)는 상관없는 낱말이며, moored 는 앞 문장에서 배를 부두에 댄다고 할 때 쓴 낱말을 끌어온 것이라 이름 이야기와 맞지 않아요."
+],
+[
+10,
+2,
+"cloze",
+null,
+"Choose the option that most appropriately fills in the blank in the paragraph.\nRewards are widely assumed to strengthen whatever behavior they follow. A classic experiment published in 1973, however, revealed a curious exception. Psychologists at Stanford University identified preschoolers who already relished drawing with colored markers during free play. Some were told in advance that they would receive an attractive certificate for drawing; others received the same award unexpectedly, and a third group received nothing. One to two weeks later, the markers were quietly reintroduced into the classroom, and observers recorded how long each child spent with them. The children who had expected the award now drew markedly less than the other two groups: the promised prize had ____ their enthusiasm rather than boosting it. Their pictures during the experiment were also judged to be of lower quality. Psychologists call this the overjustification effect: an external incentive can crowd out an intrinsic enjoyment.",
+[
+"bolstered",
+"stifled",
+"replicated",
+"expected"
+],
+[
+2
+],
+"상을 기대한 아이들이 오히려 그림을 덜 그렸고, 빈칸 뒤에서 '북돋우기는커녕(rather than boosting it)'이라고 했으니 열의를 '꺾었다(stifled)'가 맞아요. bolstered(북돋웠다)는 정반대이고, replicated(복제했다)는 상관없는 낱말이며, expected 는 같은 문장 앞에서 아이들이 상을 기대했다고 할 때 쓴 낱말을 끌어온 것이라 뜻이 맞지 않아요."
+],
+[
+11,
+2,
+"grammar",
+null,
+"Which of the underlined parts is grammatically wrong or unacceptable?\nIn the early days of commercial aviation, there was no one on the ground to keep airplanes from colliding. Pilots simply watched for one another and hoped for the best, an approach that sufficed only while the skies were nearly deserted. As traffic burgeoned, airports began to seek a better system, and one of the first airports to act was Lambert Field in Missouri, where in 1929 a young man named Archie League began marshaling planes. League had no radio and no radar; he stood at the periphery of the field with a pair of flags. A checkered flag told pilots to proceed, and a red one told them to hold. To shield himself ①<u>from</u> the elements, he worked under a beach umbrella attached to a wheelbarrow. As the field grew busier, keeping departures ②<u>in schedule</u> became harder. Within a few years, radio towers had superseded the flags at busy airports, and controllers could speak to pilots who ③<u>had</u> not yet come into view. League himself went on to a lengthy career ④<u>with</u> the federal agency that later became the Federal Aviation Administration. Today controllers guide thousands of flights through crowded skies with radar, satellites, and computers. Yet the fundamental task, keeping aircraft safely separated, remains the one League performed with two flags.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+2
+],
+"'예정대로, 제시간에'는 시간 전치사 관용구 on schedule 로 써요. in schedule 은 쓰지 않으니 keeping planes on schedule 이 되어야 해요. shield himself from 은 '~로부터 자신을 막다'라는 짝 전치사, had not yet come 은 말을 건 시점보다 앞선 상태를 나타내는 과거완료, a career with the agency 는 '그 기관에서의 경력'이라 모두 맞아요."
+],
+[
+12,
+2,
+"grammar",
+null,
+"Which of the underlined parts is grammatically wrong or unacceptable?\nFew words convey as much urgency as mayday, the international distress call used by pilots and ship captains in peril. Despite its spelling, the word bears no relation to the first day of May. It was coined in the early 1920s by Frederick Stanley Mockford, a senior radio officer at Croydon Airport near London, which at the time handled the bulk of the air traffic between England and France. Mockford was asked to devise a signal that pilots and ground staff in both countries would readily comprehend. He settled on an anglicized spelling of the French phrase m'aider, meaning help me. Ships in distress had long relied on SOS, a signal designed for Morse code. Its letters, however, could be hard to make out ①<u>over</u> a crackling voice radio. Mockford wanted a word that was short, distinctive, and unlikely to be confused ②<u>with</u> ordinary conversation. The call is always repeated three times, so that it cannot be mistaken for a word mentioned in passing. For less grave problems, pilots use a different call, pan-pan, which comes from the French word for a breakdown. A false distress call can divert rescue crews from real emergencies. In ③<u>response of</u> such hoaxes, many countries treat a fake mayday as a criminal offense, and people ④<u>found</u> guilty can face hefty fines or even imprisonment. Controllers who hear a genuine call must clear the adjacent airspace and summon help at once.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"'~에 대응하여'는 명사 response 뒤에 to 를 붙인 in response to 로 써요. response of 는 짝이 틀렸으니 In response to such hoaxes 가 되어야 해요. over a crackling radio 는 '지직거리는 무전 너머로', be confused with 는 '~와 혼동되다'라는 짝 전치사, found guilty 는 '유죄로 판정된' 사람을 꾸미는 과거분사로 모두 맞아요."
+],
+[
+13,
+2,
+"phrase",
+null,
+"Choose the expression that best completes the paragraph.\nPeople like to think of their moral character as immutable. Experiments indicate, however, that it can fluctuate from one hour to the next. In a typical study, volunteers first get a chance to feel virtuous, perhaps by recalling a magnanimous act or espousing a fair-minded cause. Next they face a second choice in which behaving well carries a modest cost. Compared with volunteers who skipped the first task, those who had just affirmed their own rectitude were somewhat more inclined to cut corners or to give less to charity. Psychologists dub this pattern \"moral licensing.\" The idea is that ____, so that a good deed today can quietly excuse a lapse tomorrow. If you have ever treated yourself to dessert after a virtuous trip to the gym, you may recognize the logic. The effect is not ubiquitous, and some later studies have found it weaker than first reported. Still, it offers a salutary warning to anyone who feels smug about their own virtue.",
+[
+"feeling virtuous can make our standards looser",
+"feeling virtuous can make our standards stricter",
+"feeling guilty can make our standards stricter",
+"feeling guilty can make our standards looser"
+],
+[
+1
+],
+"착한 일을 떠올려 스스로 떳떳하다고 느낀 사람이 바로 뒤에 오히려 손해 보는 선행을 덜 했다는 실험이에요. 빈칸 바로 뒤 '오늘의 선행이 내일의 잘못을 슬그머니 봐준다'와 이어지려면 '떳떳하다고 느끼면 기준이 느슨해진다'가 맞아요. 같은 틀에서 기준이 엄격해진다는 말은 반대이고, 죄책감이 기준을 엄격하게 한다는 말은 그럴듯하지만 이 글과 상관없으며, 죄책감이 기준을 느슨하게 한다는 말은 실험의 조건(떳떳함)을 바꿔 놓은 것이에요."
+],
+[
+14,
+2,
+"phrase",
+null,
+"Choose the expression that best completes the paragraph.\nWhen Taipei 101 opened in 2004, it was the tallest building in the world, and its engineers faced a formidable adversary. Taiwan is buffeted by typhoons and shaken by earthquakes. A slender tower more than five hundred meters tall inevitably sways in strong winds. The swaying seldom jeopardizes the structure itself, but it can make occupants of the upper floors queasy and anxious. So how do you keep a skyscraper from swaying? The engineers' solution hangs near the top of the tower: a gigantic steel sphere weighing about 660 tonnes that is suspended by cables between the eighty-seventh and ninety-second floors and connected to enormous shock absorbers. Known as a tuned mass damper, the sphere is calibrated so that when gusts push the building one way, the heavy pendulum lags behind and ____. Its inertia thus counteracts the motion and dissipates much of its energy. The damper has become a tourist attraction in its own right, and visitors can watch it swing during storms.",
+[
+"swings in the opposite direction",
+"swings in the same direction",
+"remains locked firmly in place",
+"unsettles the occupants of the upper floors"
+],
+[
+1
+],
+"건물이 한쪽으로 밀릴 때 무거운 추가 뒤처지며 움직여 그 관성이 흔들림을 '상쇄한다(counteracts)'고 바로 뒤 문장에서 말해요. 그러려면 추가 '반대 방향으로 흔들려야' 해요. 같은 방향이면 흔들림을 키우는 반대 방향의 답이고, 꼼짝 않는다는 말은 폭풍 때 추가 흔들린다는 끝 문장과 맞지 않으며, 위층 사람을 불안하게 한다는 말은 앞에서 건물 흔들림을 설명한 표현을 추에 잘못 붙인 것이에요."
+],
+[
+15,
+2,
+"phrase",
+null,
+"Choose the expression that best completes the paragraph.\nWhen a city proposes replacing on-street parking with a protected bicycle lane, the fiercest resistance often comes from local shop owners. Their apprehension is understandable. A typical merchant might say, \"No parking, no customers.\" Yet when researchers have polled both merchants and shoppers on the same streets, a consistent pattern has emerged. Shop owners ____. In several cities, a large share of customers turned out to have arrived on foot, by bicycle, or by public transport. Those customers also tended to visit more frequently, even if they spent less on each errand. Studies of streets where bicycle lanes were actually installed have generally found that trade held steady or flourished. None of this implies that parking never matters, especially for stores selling cumbersome goods. It suggests, though, that decisions should rest on data rather than conjecture.",
+[
+"greatly underestimated how many customers arrived by car",
+"greatly underestimated how far their customers lived from the store",
+"greatly overestimated how much each customer spent per visit",
+"greatly overestimated how many customers arrived by car"
+],
+[
+4
+],
+"빈칸 바로 뒤에서 손님 상당수가 걸어서·자전거로·대중교통으로 왔다고 했으니, 가게 주인들은 차로 오는 손님 수를 '크게 부풀려 짐작했다'가 맞아요. 같은 틀에서 낮게 짐작했다는 말은 반대이고, 손님이 사는 거리는 글에 나오지 않으며, 한 번에 쓰는 돈은 뒤 문장의 '한 번에 덜 쓴다'는 사실을 끌어와 비튼 것이라 근거가 되지 않아요."
+],
+[
+16,
+2,
+"phrase",
+null,
+"Choose the expression that best completes the paragraph.\nA hiccup begins with a sudden, involuntary contraction of the diaphragm, the muscle beneath the lungs that powers respiration. A fraction of a second later, the vocal cords clamp shut, abruptly halting the incoming air and producing the familiar sound. Most bouts last only a few minutes, but they can occasionally linger for days. One man in the United States reportedly hiccupped for nearly seventy years. So why does the reflex exist at all? Scientists still disagree: one theory holds that it is a leftover from ancestors that breathed with gills; another suggests that it helps nursing infants expel air from their stomachs. Folk remedies abound, and you have probably tried a few, from holding your breath to swallowing a spoonful of sugar. Physicians note, however, that ____. Most hiccups subside on their own, and the remedies that ostensibly work may simply be receiving undeserved credit for that.",
+[
+"most folk remedies reliably cure hiccups within minutes",
+"no single remedy has been shown to work for everyone",
+"hiccups are an early sign of serious lung disease",
+"the reflex helps infants expel swallowed air"
+],
+[
+2
+],
+"however 뒤에는 민간요법을 믿기 어렵다는 말이 와야 하고, 다음 문장도 대부분 저절로 멈추는데 요법이 공을 가져간다고 해요. '모두에게 듣는다고 밝혀진 요법은 없다'가 맞아요. 민간요법이 몇 분 만에 확실히 낫게 한다는 말은 반대이고, 폐 질환의 신호라는 말은 글과 상관없으며, 아기가 공기를 내보내게 돕는다는 말은 앞에서 딸꾹질이 왜 있는지 설명한 가설을 끌어온 것이라 however 뒤 흐름과 맞지 않아요."
+],
+[
+17,
+2,
+"phrase",
+null,
+"Choose the expression that best completes the paragraph.\nSpeakers of every language studied so far pad their pauses with small sounds: um and uh in English, euh in French, eto in Japanese. Teachers and speaking coaches often treat these fillers as pernicious habits to be eradicated, regarding them as symptoms of nervousness or sloppy thinking. Some linguists see them otherwise. In one influential analysis of transcribed conversations, English speakers tended to use uh before short pauses and um before longer ones. Listeners, in turn, seemed to use the fillers to anticipate what was coming. A speaker who says um is likely searching for a word, and a listener who hears it may wait rather than interject. On this view, fillers are ____. Other studies suggest that a word following a filler is recalled slightly better, perhaps because the pause draws attention to it. Linguists sometimes label such sounds \"disfluencies,\" but the label may undersell them.",
+[
+"errors that listeners simply learn to ignore",
+"signals that help conversations run smoothly",
+"habits found only among nervous speakers",
+"relics of an ancient language once shared by all humans"
+],
+[
+2
+],
+"um·uh 가 쉬는 길이를 알려 주고, 듣는 사람은 그것으로 다음을 짐작해 끼어들지 않는다는 앞 내용을 정리하면, 군말은 '대화를 매끄럽게 돕는 신호'예요. 듣는 사람이 무시하는 실수라는 말은 반대이고, 긴장한 사람만의 버릇이라는 말은 앞에서 교사들의 생각(nervousness)을 끌어와 비튼 것이며, 옛 공통 언어의 흔적이라는 말은 글과 상관없어요."
+],
+[
+18,
+2,
+"reading",
+"r2-s1",
+"Which of the following best completes the blank?",
+[
+"In contrast",
+"Even so",
+"As a result",
+"Until then"
+],
+[
+3
+],
+"빈칸 앞은 발사체를 다시 써서 비용을 여러 비행에 나눌 수 있다는 원인이고, 뒤는 위성 발사가 훨씬 싸지고 쏘아 올린 물체가 크게 늘었다는 결과예요. As a result 가 맞아요. In contrast 는 대조, Even so 는 양보, Until then 은 '그때까지'라 원인과 결과를 잇지 못해요."
+],
+[
+19,
+2,
+"reading",
+"r2-s1",
+"Which of the following can be inferred from the passage?",
+[
+"A rocket that saves fuel for landing can lift more cargo into orbit.",
+"Reusing rockets has lowered launch costs, though reuse brings costs of its own.",
+"Reusable rockets became possible mainly because governments sharply raised their space budgets after 2015.",
+"Every rocket launched today is recovered and flown again within weeks."
+],
+[
+2
+],
+"글은 재사용으로 발사 비용이 내려갔지만, 점검·정비가 필요하고 착륙용 연료 때문에 실을 수 있는 무게가 줄어든다는 대가도 있다고 해요. 그 요지를 담은 문장이 맞아요. 착륙 연료를 실은 로켓이 더 많이 싣는다는 말은 반대이고, 정부 예산이 늘어서 가능해졌다는 말은 글에 없는 원인이며, 오늘날 모든 로켓을 회수한다는 말은 과장이에요."
+],
+[
+20,
+2,
+"reading",
+"r2-s2",
+"Which of the following best completes the blank?",
+[
+"In response",
+"In other words",
+"By contrast",
+"For example"
+],
+[
+1
+],
+"빈칸 앞은 인력 부족으로 노선이 줄었다는 문제이고, 뒤는 항공사들이 임금을 올리고 비행 학교를 열고 훈련비를 대 주었다는 대응이에요. 문제에 대한 대응이니 In response 가 맞아요. In other words 는 바꿔 말하기, By contrast 는 대조, For example 은 앞 내용의 예를 들 때 써요."
+],
+[
+21,
+2,
+"reading",
+"r2-s2",
+"Which of the following is the most appropriate title for the passage?",
+[
+"Airlines now have more pilots than they can hire",
+"How cheaper fuel led airlines to cut their training budgets",
+"Every small airline has stopped flying to rural towns",
+"Why the pilot shortage cannot be fixed overnight"
+],
+[
+4
+],
+"훈련에 시간과 돈이 들고 은퇴가 몰려 사람이 모자라게 됐으며, 돈으로도 훈련 시간을 줄일 수 없어 대책이 효과를 내려면 몇 년이 걸린다는 글이라 '조종사 부족을 하루아침에 풀 수 없는 이유'가 맞아요. 조종사가 남아돈다는 말은 반대이고, 연료값이 내려 훈련 예산을 줄였다는 말은 글에 없는 원인이며, 모든 작은 항공사가 지방 노선을 끊었다는 말은 '일부 작은 항공사'를 부풀린 과장이에요."
+],
+[
+22,
+2,
+"reading",
+"r2-s3",
+"Which of the following best completes the blank?",
+[
+"acute",
+"fragile",
+"coarse",
+"diffuse"
+],
+[
+3
+],
+"빈칸 문장은 겹눈이 너무 ~해서 낱낱의 별을 구별하지 못한다는 뜻이고, 앞에서 밝은 별만 보여 주면 길을 잘 못 찾았다고 했어요. 눈이 '거칠다(coarse)', 곧 해상도가 낮다는 말이 맞아요. acute(예민한)는 반대 방향이고, fragile(깨지기 쉬운)은 구별 능력과 상관없으며, diffuse 는 앞 문장에서 은하수의 '퍼진' 빛을 말할 때 쓴 낱말을 눈에 잘못 붙인 것이에요."
+],
+[
+23,
+2,
+"reading",
+"r2-s3",
+"Which of the following can be inferred from the passage?",
+[
+"Dung beetles roll in straight lines only under a bright moon.",
+"Beetles rely on the galaxy mainly because their sense of smell is too weak.",
+"All nocturnal insects find their way by the light of the Milky Way.",
+"Precise navigation does not necessarily require a large brain."
+],
+[
+4
+],
+"끝 문장은 쇠똥구리 연구가 '정교한 방향 찾기에 큰 뇌가 필요하지 않다'는 것을 일깨운다고 해요. 그 문장을 바꿔 쓴 것이 맞아요. 밝은 달 아래서만 곧게 굴린다는 말은 달 없는 밤에도 해낸다는 내용과 반대이고, 후각이 약해서라는 말은 글에 없는 원인이며, 밤에 다니는 모든 곤충이 은하수로 길을 찾는다는 말은 쇠똥구리 한 종의 결과를 부풀린 과장이에요."
+],
+[
+24,
+2,
+"reading",
+"r2-s4",
+"Which of the following best completes the blank?",
+[
+"beneficial",
+"unanimous",
+"negligible",
+"harmful"
+],
+[
+4
+],
+"한 가구에는 현명한 저축이 모두가 한꺼번에 하면 소득이 줄고 경제가 쪼그라든다는 '역설'을 뒤에서 풀어 설명해요. 그러니 모두가 하면 '해로운(harmful)' 것이 될 수 있다는 말이 맞아요. beneficial(이로운)은 반대 방향이고, unanimous(만장일치의)는 상관없는 낱말이며, negligible 은 뒤에서 한 가구만 줄일 때의 영향을 말한 낱말을 끌어온 것이라 모두가 할 때의 결과와 맞지 않아요."
+],
+[
+25,
+2,
+"reading",
+"r2-s4",
+"Which of the following is the most appropriate title for the passage?",
+[
+"How household saving always speeds economic recovery",
+"Why saving together can shrink the economy",
+"Why Keynes blamed the Great Depression on reckless bank lending",
+"Governments should never borrow money during a crisis"
+],
+[
+2
+],
+"한 가구에는 현명한 저축도 모두가 한꺼번에 하면 소득과 경제를 줄인다는 '절약의 역설'을 설명한 글이라 '함께 저축하면 왜 경제가 쪼그라들 수 있나'가 맞아요. 가계 저축이 늘 회복을 앞당긴다는 말은 반대이고, 케인스가 은행의 무리한 대출을 탓했다는 말은 글에 없는 원인이며, 정부가 위기 때 절대 빌리면 안 된다는 말은 비판자들의 걱정을 부풀린 과장이에요."
+],
+[
+26,
+2,
+"reading",
+"r2-s5",
+"Which of the following best completes the blank?",
+[
+"larger and more reliable",
+"older and more widespread",
+"smaller and less consistent",
+"more anxious and less attentive"
+],
+[
+3
+],
+"다시 해 본 큰 연구들에서 효과가 예상보다 작거나 아예 없었고, 점수 차이 대부분을 설명한다고 믿는 학자는 적다고 했어요. 효과가 생각보다 '더 작고 들쭉날쭉하다'가 맞아요. 더 크고 믿을 만하다는 말은 정반대이고, 더 오래되고 널리 퍼졌다는 말은 상관없으며, 더 불안하고 덜 집중한다는 말은 앞에서 학생이 겪는 증상(anxiety, attention)을 끌어와 '효과'에 잘못 붙인 것이에요."
+],
+[
+27,
+2,
+"reading",
+"r2-s5",
+"Which of the following can be inferred from the passage?",
+[
+"Stereotype threat explains nearly all score differences between groups of students.",
+"The original findings were weakened mainly because later tests used much easier questions.",
+"Women always perform worse than men on every kind of mathematics test.",
+"Stereotype threat may be real, but its influence on test scores appears limited."
+],
+[
+4
+],
+"초기 연구는 시험을 어떻게 소개하느냐에 따라 점수 차이가 생겼다고 했지만, 최근 반복 연구에서 효과가 작게 나와 '어떤 상황에서는 있지만 영향은 생각보다 작다'고 맺어요. 그 요지를 담은 문장이 맞아요. 거의 모든 차이를 설명한다는 말은 끝부분과 반대이고, 나중 시험이 쉬워서 결과가 약해졌다는 말은 글에 없는 원인이며, 여성이 어떤 수학 시험에서든 늘 못한다는 말은 과장이에요."
+],
+[
+28,
+2,
+"reading",
+"r2-s6",
+"Which position in the passage best suits the sentence below?\nIf this nose-and-fuselage shaping works in practice, the main obstacle that grounded the Concorde could finally be overcome.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+3
+],
+"넣을 문장은 '이 기체 앞부분·동체 모양 설계가 실제로 통하면' 콩코드를 멈춰 세운 큰 걸림돌(소음)을 넘을 수 있다는 말이에요. 기체 모양으로 충격파가 하나로 합쳐지지 않게 해 '쿵' 하는 작은 소리만 나게 한다는 방법을 설명한 바로 뒤, NASA 시험기 이야기가 나오기 전인 (C)가 맞아요. (A)·(B)는 아직 해결 방법이 나오기 전이고, (D)는 X-59의 목적과 규제 당국 이야기 뒤라 this nose-and-fuselage shaping 이 가리킬 모양 설명에서 멀어요."
+],
+[
+29,
+2,
+"reading",
+"r2-s6",
+"Which of the following best completes the blank?",
+[
+"allowed it to reach nearly every major city in the world",
+"made its sonic boom louder than ever before",
+"persuaded regulators to lift the ban on noise",
+"severely limited the number of routes it could serve"
+],
+[
+4
+],
+"땅 위 초음속 비행이 금지돼 콩코드가 주로 바다 위 노선에만 묶였다고 했어요. 그 제한 때문에 운항할 수 있는 노선 수가 '크게 줄었다'가 맞아요. 거의 모든 대도시에 갈 수 있었다는 말은 반대이고, 붐이 더 커졌다는 말은 제한과 상관없으며, 규제를 풀게 했다는 말은 끝 문장의 '규제가 풀리기를 바란다'를 끌어와 비튼 것이에요."
+],
+[
+30,
+2,
+"reading",
+"r2-s6",
+"Which of the following can be inferred from the passage?",
+[
+"Sonic booms have never been a serious concern for people on the ground.",
+"The Concorde was retired mainly because its engines had become too costly to repair.",
+"Quieter supersonic flight could revive overland routes if regulators accept it.",
+"Supersonic airliners will certainly replace ordinary jets within a decade."
+],
+[
+3
+],
+"콩코드는 소음 규제 때문에 바다 위 노선에 묶였고, 지금은 기체 모양으로 붐을 줄이는 시험을 하며 그 결과로 규제 당국이 금지를 소음 기준으로 바꿀지 정한다고 해요. 조용한 초음속 비행이 받아들여지면 땅 위 노선이 되살아날 수 있다는 문장이 맞아요. 붐이 걱정거리가 아니었다는 말은 반대이고, 엔진 수리비 때문에 퇴역했다는 말은 글에 없는 원인이며, 10년 안에 반드시 보통 여객기를 대신한다는 말은 과장이에요."
+],
+[
+1,
+3,
+"vocab",
+null,
+"Select the word that is nearest in meaning to the underlined word.\nThe <u>dismal</u> gray skies of a northern winter can leave some people feeling listless and despondent for months.",
+[
+"upbeat",
+"buoyant",
+"parsimonious",
+"gloomy"
+],
+[
+4
+],
+"dismal 은 '음울한, 우울하게 하는'이라 gloomy(어두운, 우울한)와 가까워요. 몇 달씩 기운 없고 처지게 만든다는 뒤 내용이 단서예요. upbeat·buoyant(밝은, 쾌활한)는 반대말이고, parsimonious(인색한)는 뜻이 달라요."
+],
+[
+2,
+3,
+"vocab",
+null,
+"Select the word that is nearest in meaning to the underlined word.\nEven one night without sleep can <u>impair</u> a driver's judgment about as much as alcohol does.",
+[
+"bolster",
+"weaken",
+"fortify",
+"perpetuate"
+],
+[
+2
+],
+"impair 는 '손상시키다, 약하게 하다'라 weaken 과 가까워요. 술처럼 판단력을 흐린다는 비교가 단서예요. bolster·fortify(강화하다)는 반대말이고, perpetuate(영속시키다)는 뜻이 달라요."
+],
+[
+3,
+3,
+"vocab",
+null,
+"Select the word that is nearest in meaning to the underlined word.\nThe coach credited the team's <u>cohesive</u> spirit, rather than any single star, for its unexpected championship.",
+[
+"discontinuous",
+"indiscriminate",
+"penurious",
+"unified"
+],
+[
+4
+],
+"cohesive 는 '결속력 있는, 똘똘 뭉친'이라 unified(하나로 뭉친)와 가까워요. 스타 한 명이 아니라(rather than any single star) 팀 정신 덕분이라는 대비가 단서예요. discontinuous(끊어진)는 반대 쪽이고, indiscriminate(무차별적인)·penurious(가난한)는 뜻이 달라요."
+],
+[
+4,
+3,
+"vocab",
+null,
+"Select the word that is nearest in meaning to the underlined word.\nAfter a <u>hiatus</u> of almost three years, the band resurfaced on stage with a sold-out concert in its hometown.",
+[
+"tribute",
+"pause",
+"remnant",
+"decree"
+],
+[
+2
+],
+"hiatus 는 '(활동의) 중단, 공백'이라 pause(멈춤)와 가까워요. 거의 3년 만에 다시 무대에 섰다(resurfaced)는 내용이 단서예요. tribute(헌사), remnant(남은 것), decree(법령)는 모두 같은 명사지만 뜻이 달라요."
+],
+[
+5,
+3,
+"vocab",
+null,
+"Select the word that is nearest in meaning to the underlined word.\nEven after the long surgery, the elderly patient remained <u>lucid</u> and answered every question articulately.",
+[
+"affable",
+"coherent",
+"candid",
+"stoic"
+],
+[
+2
+],
+"lucid 는 '정신이 맑은, 말이 또렷한'이라 coherent(조리 있는)와 가까워요. 긴 수술 뒤에도 모든 질문에 또렷이 답했다는 내용이 단서예요. affable(상냥한)·candid(솔직한)·stoic(꿋꿋한)은 문장에 넣어도 말이 되지만 '정신이 맑다'는 뜻이 아니에요."
+],
+[
+6,
+3,
+"cloze",
+null,
+"Choose the option that most appropriately fills in the blank in the paragraph.\nIf you have ever startled a flock of pigeons, you know that most birds make a distinctive whooshing sound when they flap their wings. Many owls, by contrast, swoop toward their prey in near silence, and the secret lies in the anatomy of their feathers. The leading edge of each wing carries a row of rigid, comb-like serrations that break up the flow of air, while the trailing edge ends in a downy fringe that dampens the turbulence left behind. Together with a velvety coat on the upper surface, these features muffle the noise that a wing would ordinarily make. To a mouse rustling through the grass at night, an approaching owl is therefore virtually ____ until the instant its talons strike. Engineers have taken notice. Designs modeled on owl feathers are now being tested on fans, wind turbine blades, and aircraft parts in the hope of making them quieter.",
+[
+"raucous",
+"obsolete",
+"inaudible",
+"turbulent"
+],
+[
+3
+],
+"깃털 구조가 날갯짓 소리를 거의 없앤다(muffle the noise)고 했으니, 쥐에게 다가오는 올빼미는 발톱이 닿는 순간까지 '들리지 않는(inaudible)' 셈이에요. raucous(시끄러운)는 반대 방향이고, obsolete(구식의)는 상관없는 말이며, turbulent(요동치는)는 지문의 turbulence 를 끌어와 바꾼 함정이에요."
+],
+[
+7,
+3,
+"cloze",
+null,
+"Choose the option that most appropriately fills in the blank in the paragraph.\nWhy do people so often cherish the very things that cost them the most? In a classic experiment published in 1959, the psychologists Elliot Aronson and Judson Mills invited female undergraduates to join a discussion group. Before joining, some of the students had to pass a mortifying screening test, reading sexually explicit words aloud to a male experimenter. Others faced a mild version or none at all. All of them then heard a recording of the group's discussion, deliberately made as tedious as possible. You might expect the embarrassed students to resent the group after such an ordeal; ____, they rated it and its members as more engaging than the others did. The researchers explained the result in terms of cognitive dissonance. Having suffered to get in, the students justified their effort by persuading themselves that the group was worth it.",
+[
+"Likewise",
+"Therefore",
+"Instead",
+"For instance"
+],
+[
+3
+],
+"앞에서 '창피를 당한 학생들은 모임을 원망하리라 예상할 수 있다'고 하고, 빈칸 뒤에서는 오히려 더 재미있다고 평가했다고 해요. 예상과 반대 결과가 오니 Instead(그러기는커녕)가 맞아요. Likewise·Therefore 는 같은 방향으로 잇고, For instance 는 예를 들 때 써요."
+],
+[
+8,
+3,
+"cloze",
+null,
+"Choose the option that most appropriately fills in the blank in the paragraph.\nIn 2003, Germany introduced a mandatory deposit on most single-use drink bottles and cans. When they buy a drink, shoppers pay a modest surcharge, known in German as the \"Pfand,\" which they get back when they return the empty container to almost any store that sells drinks. Critics at the time warned that the system would be costly and cumbersome, and the early years were indeed marred by confusion over eligible containers. Today, however, reverse vending machines that scan returned bottles are a familiar sight in German supermarkets, and the overwhelming majority of deposit containers come back. Because an empty bottle now has a cash value, a discarded one rarely stays in a park for long. Some low-income residents even gather them as a supplementary source of income. Supporters say the scheme shows how a modest financial ____ can change everyday behavior far more effectively than appeals to conscience.",
+[
+"inducement",
+"prohibition",
+"anomaly",
+"admonition"
+],
+[
+1
+],
+"빈 병에 돈이 붙자 사람들이 버려진 병까지 주워 돌려준다는 내용이고, 양심에 호소하는 것보다 낫다고 했어요. 작은 금전적 '유인(inducement)'이 맞아요. prohibition(금지)은 하게 만드는 쪽이 아니라 막는 쪽이라 방향이 반대이고, anomaly(이례)는 상관없는 말이며, admonition(훈계)은 같은 문장의 appeals to conscience 를 끌어온 함정이에요."
+],
+[
+9,
+3,
+"cloze",
+null,
+"Choose the option that most appropriately fills in the blank in the paragraph.\nIf you have visited a museum of ancient art, you have probably seen Greek and Roman statues in pristine, gleaming white marble. That image has shaped Western taste for centuries. Renaissance sculptors revered the pale stone, and eighteenth-century critics praised whiteness as essential to classical beauty. Contrary to this popular image, however, many ancient statues were once brightly painted. Under ultraviolet light and chemical analysis, researchers have found traces of red, blue, green, and gold pigment in hair, clothing, and eyes. Exhibitions of full-color reconstructions have disconcerted many visitors, some of whom find the painted statues ____, closer to a carnival float than a work of art. Most of the paint, it turns out, was worn away long ago by weathering and burial. Some was even scrubbed off by overzealous collectors who mistook it for grime. What we take for classical purity, then, is partly an accident of time.",
+[
+"austere",
+"tawdry",
+"lucrative",
+"pristine"
+],
+[
+2
+],
+"빈칸 뒤 '예술품이라기보다 축제 행렬 수레에 가깝다'를 바꿔 말한 낱말이라 '싸구려처럼 번쩍거리는(tawdry)'이 맞아요. austere(꾸밈없는, 수수한)는 반대 방향이고, lucrative(돈벌이가 되는)는 상관없는 말이며, pristine(티 없이 깨끗한)은 첫 문장의 하얀 대리석 묘사를 끌어온 함정이에요."
+],
+[
+10,
+3,
+"cloze",
+null,
+"Choose the option that most appropriately fills in the blank in the paragraph.\nOn January 15, 2009, about two minutes after leaving LaGuardia Airport in New York, a US Airways jet plowed into a flock of Canada geese. Both engines lost thrust, and the plane was too low to reach any runway. So the captain, Chesley Sullenberger, and the first officer, Jeffrey Skiles, guided the crippled airliner down onto the icy Hudson River, where ferries and rescue boats converged on the scene, and all 155 people on board survived. A safe landing on water by a large jet is so ____ that the press quickly dubbed the event the \"Miracle on the Hudson.\" Investigators later credited the crew's training and calm decisions rather than luck alone. The accident also drew attention to bird strikes, which occur thousands of times a year, and it spurred new efforts to control bird populations around airports.",
+[
+"improbable",
+"routine",
+"frugal",
+"frequent"
+],
+[
+1
+],
+"대형 여객기가 물 위에 무사히 내려앉는 일은 언론이 '기적'이라 부를 만큼 '일어날 것 같지 않은(improbable)' 일이에요. routine(일상적인)은 반대 방향이고, frugal(검소한)은 상관없는 말이며, frequent(잦은)는 한 해 수천 번 일어난다는 새 충돌 이야기를 착륙에 옮겨 붙인 함정이에요."
+],
+[
+11,
+3,
+"grammar",
+null,
+"Which of the underlined parts is grammatically wrong or unacceptable?\nIn 1986, the British magazine The Economist published a lighthearted guide to whether currencies were overvalued or undervalued. Its yardstick was an unlikely one: the price of a Big Mac hamburger. The idea rests on a venerable economic theory called purchasing-power parity. It holds that ①<u>in</u> the long run, exchange rates should adjust until identical goods cost the same everywhere. Why a burger? It is sold in more than a hundred countries and is made to nearly the same recipe wherever it appears. Suppose a burger costs five dollars in the United States but only the equivalent of three dollars elsewhere. By the logic of the index, the foreign currency is undervalued ②<u>by</u> about forty percent. Economists were quick to point out the flaws in this reasoning. Hamburgers cannot be shipped across borders, and their prices also show a heavy dependence ③<u>to</u> local rents and wages, which tend to be far lower in poorer countries. The magazine later added an adjusted version that takes national income into account. Even so, the index ④<u>has endured</u> for decades, partly because it offers a vivid and digestible way to explain an abstract concept to readers who would never open an economics textbook.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"dependence(의존)는 짝 전치사 on 과 함께 써요. dependence to 가 아니라 dependence on local rents and wages 가 맞아요. in the long run 은 '장기적으로'라는 관용구, undervalued by about forty percent 의 by 는 차이(정도)를 나타내는 전치사, has endured 는 for decades 와 어울리는 현재완료로 모두 맞아요."
+],
+[
+12,
+3,
+"grammar",
+null,
+"Which of the underlined parts is grammatically wrong or unacceptable?\nIn 1932, five years after Charles Lindbergh's solo flight across the Atlantic, Amelia Earhart set out to show that a woman could do the same. She took off from Harbour Grace, Newfoundland, in a single-engine Lockheed Vega and headed east into the night. The flight was far from uneventful. Her altimeter failed, leaving her uncertain ①<u>of</u> her altitude above the waves, and ice formed on the wings as she climbed through clouds. Later, she spotted flames licking from a cracked exhaust pipe and fuel dripping ②<u>into</u> the cockpit. Earhart had planned to reach Paris, but she resolved to land as soon as possible. After about fifteen hours in the air, she came down in a pasture near Londonderry in Northern Ireland ③<u>in</u> the afternoon of May 21, and a flabbergasted farmhand asked whether she had come far. The flight made her an international luminary, and she used her fame to promote aviation and to encourage women to pursue careers ④<u>that</u> had long been closed to them. Five years later, she vanished over the Pacific Ocean during an attempt to fly around the world, and the mystery of her fate has never been fully unraveled.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"특정한 날짜의 오후·저녁처럼 날이 정해지면 시간 전치사 on 을 써요. in the afternoon of May 21 이 아니라 on the afternoon of May 21 이 맞아요. uncertain of 는 '~을 확신하지 못하는'이라는 짝 전치사, dripping into 는 '~ 안으로 떨어지는', that 은 careers 를 받는 관계대명사로 모두 맞아요."
+],
+[
+13,
+3,
+"phrase",
+null,
+"Choose the expression that best completes the paragraph.\nDoes the ability to resist a sweet at age four really predict success in life? In a series of famous experiments begun in the 1960s, Stanford psychologists offered preschoolers a choice: eat one marshmallow now, or wait alone for several minutes and get two. Follow-up studies years later reported that the children who had waited longer tended to have higher test scores as adolescents. The marshmallow test soon became an iconic emblem of self-control, cited in books and classrooms. In 2018, however, researchers repeated the study with a much larger and more diverse group of children, and the link between waiting and later achievement turned out to be considerably weaker than earlier reports had suggested. Once they accounted for family income and the children's early language and thinking skills, most of the association evaporated. The newer findings suggest that ____. None of this means that self-control is worthless. But it does mean that a simple test of patience reveals less about a child than its fame implied.",
+[
+"willpower is the single key to success in life",
+"a child's background may matter more than willpower alone",
+"children who eat the marshmallow will fail at school",
+"the original experiment was never actually carried out"
+],
+[
+2
+],
+"새 연구에서 기다림과 이후 성취의 관계가 훨씬 약했고, 가정 소득·어릴 때 언어와 사고 능력을 고려하자 대부분 사라졌다고 했어요. 의지력만이 아니라 아이의 배경이 더 중요할 수 있다는 결론이 맞아요. 의지력이 성공의 유일한 열쇠라는 말은 새 결과와 반대이고, 마시멜로를 먹은 아이가 학교에서 실패한다는 말은 옛 연구 내용을 부풀려 끌어온 것이며, 실험이 없었다는 말은 글과 상관없어요."
+],
+[
+14,
+3,
+"phrase",
+null,
+"Choose the expression that best completes the paragraph.\nWhen the astronauts of Apollo 11 left the Moon in 1969, they left behind a small panel of reflectors pointed at the Earth. Observatories have been firing laser pulses at it ever since, timing how long the light takes to ricochet back. The results reveal that the Moon is drifting away from us by about 3.8 centimeters a year, roughly as fast as your fingernails grow. The cause is the tides. The Moon's gravity raises bulges in Earth's oceans. Because the Earth spins faster than the Moon orbits, those bulges are dragged slightly ahead of the Moon. Their pull accelerates the Moon, propelling it into a wider orbit, while the Moon in turn acts as a brake on the Earth's rotation. One consequence is that ____. The change is tiny, about two thousandths of a second per century. Over hundreds of millions of years, though, it adds up: growth rings in ancient corals suggest that a day once lasted only about 22 hours.",
+[
+"the Earth is spinning faster, so days are growing shorter",
+"the Moon is spinning more slowly, so months are growing shorter",
+"the Earth is spinning more slowly, so the oceans are growing deeper",
+"the Earth is spinning more slowly, so days are growing longer"
+],
+[
+4
+],
+"달이 지구 자전에 브레이크를 건다(acts as a brake)고 했으니 지구가 조금씩 느리게 돌아 하루가 '길어진다'가 맞아요. 뒤의 '옛날에는 하루가 22시간'이라는 산호 증거도 같은 방향이에요. 더 빨리 돌아 짧아진다는 말은 반대이고, 달의 자전·한 달 길이로 바꾼 말은 대상을 바꿔치기한 것이며, 바다가 깊어진다는 말은 글과 상관없어요."
+],
+[
+15,
+3,
+"phrase",
+null,
+"Choose the expression that best completes the paragraph.\n\"How much do you make?\" is a question many workers would never dare to ask a colleague. In many workplaces, such talk has long been considered indecorous, and some employers have actively stifled it. Lately, though, more and more governments have moved the other way. In the United States, Colorado began requiring employers to post salary ranges in job advertisements in 2021. New York City followed in 2022. In 2023, the European Union adopted a directive requiring companies to tell job applicants about pay and to report gaps between men's and women's earnings. Supporters argue that pay secrecy tends to reward ____. Workers who dislike bargaining, or who simply do not know what others earn, may accept far less for the same work. Critics worry that published ranges could make salaries more inflexible, leaving employers less latitude to reward exceptional performance.",
+[
+"those who negotiate least aggressively",
+"those who report pay gaps most often",
+"those who commute the longest distances",
+"those who negotiate most aggressively"
+],
+[
+4
+],
+"빈칸 바로 뒤 문장이 '흥정을 싫어하거나 남의 급여를 모르는 사람은 훨씬 적게 받을 수 있다'고 해요. 그 반대편, 곧 '가장 세게 협상하는 사람'이 급여 비밀의 덕을 본다는 말이 맞아요. '가장 덜 협상하는 사람'은 방향이 반대이고, 임금 격차를 보고하는 사람은 EU 지침 이야기를 끌어온 것이며, 출퇴근 거리는 글과 상관없어요."
+],
+[
+16,
+3,
+"phrase",
+null,
+"Choose the expression that best completes the paragraph.\nHave you noticed that you laugh far more often with friends than when you are alone? That pattern suggests that laughter is above all a social signal. A study published in 2011 explored one way it might forge bonds between people. Volunteers watched either comedy clips or dull documentaries, some alone and some in small groups. Before and after each session, researchers measured how long they could endure an uncomfortable sensation, such as a tight blood pressure cuff or a frozen sleeve on the arm. After watching comedy, and especially after laughing together, volunteers could withstand the pain noticeably longer. The researchers proposed that hearty laughter triggers the release of endorphins, natural chemicals that blunt pain and induce a mild sense of well-being. If so, ____. Sharing a laugh may do for humans something like what grooming does for other primates: create a pleasurable feeling that cements social bonds.",
+[
+"laughing together may slowly weaken social bonds",
+"laughing alone is the best way to reduce pain",
+"laughing together may help bind social groups",
+"documentaries may soon replace comedies on television"
+],
+[
+3
+],
+"함께 웃으면 엔도르핀이 나와 기분이 좋아진다는 원리를 앞에서 말하고, 빈칸 뒤에서 털 고르기처럼 사회적 유대를 굳힌다고 해요. 그 원리를 적용하면 '함께 웃는 것이 집단을 묶어 줄 수 있다'가 맞아요. 유대를 약하게 한다는 말은 반대이고, 혼자 웃는 것이 통증 줄이기에 최고라는 말은 실험 내용을 비틀어 끌어온 것이며, 다큐멘터리 이야기는 글과 상관없어요."
+],
+[
+17,
+3,
+"phrase",
+null,
+"Choose the expression that best completes the paragraph.\nThe Tale of Genji, written in Japan about a thousand years ago, is often called the world's first novel. Its author, known to history as Murasaki Shikibu, was a lady-in-waiting at the imperial court in Kyoto. Her sprawling story follows the loves and political fortunes of a dashing, amorous prince and the generations after him. The work runs to fifty-four chapters and features hundreds of characters, many portrayed with striking psychological depth. Whether it truly deserves the title of \"first novel,\" however, ____. Scholars point to lengthy prose narratives from ancient Greece and Rome. Others argue that the modern novel began only in early modern Europe. What no one disputes is the book's influence. It has permeated Japanese literature and art for centuries, and translations have carried it to readers around the world.",
+[
+"is beyond dispute among scholars today",
+"can be proved by counting its fifty-four chapters",
+"depends on how one defines a novel",
+"matters only to collectors of rare books"
+],
+[
+3
+],
+"빈칸 뒤에서 고대 그리스·로마의 긴 산문을 드는 학자도, 근대 유럽에서 소설이 시작됐다는 학자도 있다고 해요. 기준이 저마다 다르니 '첫 소설'인지는 '소설을 어떻게 정의하느냐에 달렸다(depends on)'가 맞아요. 학자들 사이에 다툼이 없다는 말은 반대이고, 54장을 세어 증명한다는 말은 지문의 장 수를 끌어온 것이며, 희귀본 수집가 이야기는 글과 상관없어요."
+],
+[
+18,
+3,
+"reading",
+"r3-s1",
+"Which of the following best completes the blank?",
+[
+"Despite these challenges",
+"Because of these advantages",
+"In addition to these goals",
+"As a result of this success"
+],
+[
+1
+],
+"빈칸 앞은 예산이 작고 인재·계약 경쟁이 어렵고 위치 논란도 있다는 어려움이고, 뒤는 그래도 전담 기관이 꼭 필요한 것을 준다는 지지자들의 말이에요. 어려움을 인정하고 반대 방향으로 넘어가니 Despite these challenges 가 맞아요. 나머지는 앞 내용을 장점·목표·성공으로 받아 흐름이 맞지 않아요."
+],
+[
+19,
+3,
+"reading",
+"r3-s1",
+"Which of the following can be inferred from the passage?",
+[
+"Korea's new space agency consolidates tasks once fragmented among several bodies.",
+"Korea has given up its plan to land on the Moon.",
+"Several rival cities vied fiercely to host the headquarters of Korea's new space agency.",
+"Korea now leads all of Asia in every area of space research."
+],
+[
+1
+],
+"여러 정부 기관에 흩어져 있던 우주 정책·연구·산업 지원을 2024년 문을 연 우주항공청 한 지붕 아래로 모았다고 했으니, '새 우주 기관이 예전에 여러 기관에 흩어져 있던 일을 한데 모은다'가 맞아요. 2030년대 초 달 착륙이 목표로 남아 있어 '달 착륙 계획을 버렸다'는 반대이고, 여러 도시가 본부 유치 경쟁을 했다는 말은 글에 없으며, 모든 분야에서 아시아 전체를 이끈다는 말은 예산이 작다는 내용과 어긋나는 과장이에요."
+],
+[
+20,
+3,
+"reading",
+"r3-s2",
+"Which of the following best completes the blank?",
+[
+"the noise near airports has disappeared entirely",
+"newer aircraft have grown louder than older models",
+"airlines have stopped selling tickets for night flights",
+"the total burden of noise has fallen less than hoped"
+],
+[
+4
+],
+"새 비행기가 조용해졌지만 그 효과가 늘어난 항공편에 상쇄된다(offset)고 했어요. 그 결과 전체 소음 부담은 '기대만큼 줄지 않았다'가 맞아요. 소음이 완전히 사라졌다는 말은 반대이고, 새 비행기가 더 시끄럽다는 말은 '더 조용하다'는 지문 문장을 비튼 것이며, 야간 항공권 판매 중단은 글과 상관없어요."
+],
+[
+21,
+3,
+"reading",
+"r3-s2",
+"Which of the following is the most appropriate title for the passage?",
+[
+"Residents stop being harmed once they no longer hear jets",
+"Airport noise impairs health, and fixes only partly work",
+"Jet fuel fumes, not the noise, harm residents near runways",
+"Every airport in the world has now banned all night flights"
+],
+[
+2
+],
+"글은 비행기 소음이 잠·혈압·심장·아이들 읽기에 해를 줄 수 있고, 야간 운항 제한·방음 공사·조용한 기종 같은 대책도 늘어난 운항에 상쇄돼 문제가 남는다고 해요. 그 요지를 담은 '공항 소음은 건강을 해치고, 대책은 일부만 통한다'가 맞아요. 소리를 못 듣게 되면 해도 멈춘다는 말은 '몸은 그렇지 않다'와 반대이고, 소음이 아니라 제트 연료 매연 탓이라는 원인은 글에 없으며, 세계 모든 공항이 밤 운항을 막았다는 말은 과장이에요."
+],
+[
+22,
+3,
+"reading",
+"r3-s3",
+"Which of the following best completes the blank?",
+[
+"translucent",
+"opaque",
+"cantankerous",
+"diminutive"
+],
+[
+1
+],
+"빈칸 뒤 '눈 뒤의 긴 관이 밖에서 보인다'를 바꿔 말한 낱말이라 '반투명한(translucent)'이 맞아요. opaque(불투명한)는 반대 방향이고, cantankerous(심술궂은)는 상관없는 말이며, diminutive(아주 작은)는 바로 앞 문장의 거미 묘사를 끌어온 함정이에요. 몸이 작다고 속이 보이지는 않아요."
+],
+[
+23,
+3,
+"reading",
+"r3-s3",
+"Which of the following can be inferred from the passage?",
+[
+"Scientists have proved that jumping spiders dream about hunting their prey.",
+"Spiders twitch at night mainly because their bodies are busy digesting recently caught insects.",
+"Jumping spiders show sleep episodes resembling REM sleep, though their meaning is unclear.",
+"REM-like sleep has now been found in every animal species on Earth."
+],
+[
+3
+],
+"어린 깡충거미가 밤에 실에 매달린 채 눈 관을 빠르게 움직이고 다리를 떠는 일을 되풀이해 렘수면을 닮았지만, 그것이 꿈인지·같은 구실인지는 모른다고 했어요. 그 요지를 담은 문장이 맞아요. 꿈을 증명했다는 말은 연구자들이 조심한 내용과 반대이고, 소화 때문이라는 원인은 글에 없으며, 모든 동물에서 찾았다는 말은 과장이에요."
+],
+[
+24,
+3,
+"reading",
+"r3-s4",
+"Which of the following best completes the blank?",
+[
+"optimistic",
+"pessimistic",
+"accurate",
+"elaborate"
+],
+[
+1
+],
+"빈칸 뒤 '그 짐작은 너무 높기 쉽다'가 단서예요. 가장 높게, 곧 가장 '낙관적으로(optimistic)' 짐작한 회사가 이긴다는 말이 맞아요. pessimistic(비관적인)은 반대 방향이고, accurate(정확한)는 '아무도 정확히 모른다'는 앞 문장 표현을 비틀어 끌어온 것이며, elaborate(정교한)는 짐작의 높낮이와 상관없어요."
+],
+[
+25,
+3,
+"reading",
+"r3-s4",
+"Which of the following is the most appropriate title for the passage?",
+[
+"Auction winners almost always make a large profit",
+"With uncertain value, the auction winner often overpays",
+"Auctioneers hide flaws, so bidders end up paying too much",
+"Every auction winner in history has lost money on the deal"
+],
+[
+2
+],
+"값이 같지만 아무도 정확히 모르는 물건을 경매하면 가장 낙관적으로 짐작한 사람이 이기므로 너무 많이 내기 쉽다는 것이 글의 요지라 '값이 불확실하면 낙찰자는 흔히 너무 많이 낸다'가 맞아요. 낙찰자가 거의 늘 큰 이익을 본다는 말은 반대이고, 경매인이 흠을 숨겨서라는 원인은 글에 없으며, 역사상 모든 낙찰자가 손해를 봤다는 말은 과장이에요."
+],
+[
+26,
+3,
+"reading",
+"r3-s5",
+"Which of the following best completes the blank?",
+[
+"settles the debate about machine minds forever",
+"proves that chatbots merely predict words",
+"shows that Chinese is harder than other languages",
+"forces us to say what understanding really is"
+],
+[
+4
+],
+"반박과 재반박이 이어지고 챗봇 시대에 다시 살아난 논쟁을 소개한 뒤, 어느 쪽이 옳든 이 사고 실험이 값진 이유를 말해요. '이해란 정말 무엇인지 말하게 만든다'가 맞아요. 논쟁을 영원히 끝냈다는 말은 아직 다툼이 이어진다는 내용과 반대이고, 챗봇이 낱말만 예측한다는 증명은 비판자 한쪽의 주장을 끌어온 것이며, 중국어가 어렵다는 말은 논점과 상관없어요."
+],
+[
+27,
+3,
+"reading",
+"r3-s5",
+"Which of the following can be inferred from the passage?",
+[
+"The systems reply finally settled the debate over whether machines have minds.",
+"Searle built the first chatbot so that he could win his debate with critics.",
+"Every philosopher now agrees that computers can genuinely think and understand language.",
+"Searle argued that following rules for symbols does not amount to understanding."
+],
+[
+4
+],
+"설은 규칙에 따라 기호만 맞추는 방 안 사람이 뜻을 이해하지 못하듯 컴퓨터도 그렇다고 하며 '구문은 의미에 충분하지 않다'고 했어요. 그래서 '기호를 다루는 규칙을 따르는 것은 이해에 이르지 못한다'고 주장했다는 문장이 맞아요. 시스템 응답이 논쟁을 끝냈다는 말은 반박과 재반박이 이어진다는 내용과 반대이고, 설이 챗봇을 만들었다는 말은 글에 없으며, 모든 철학자가 컴퓨터가 생각한다고 동의한다는 말은 과장이에요."
+],
+[
+28,
+3,
+"reading",
+"r3-s6",
+"Which position in the passage best suits the sentence below?\nWhether the same would hold true for people, however, remained an open question.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+1
+],
+"넣을 문장은 '그러나 사람에게도 같을지는 아직 열린 질문이었다'로, 쥐 실험과 그 해석을 마치고 사람 시험으로 넘어가는 다리예요. 쥐 실험 설명이 끝난 (A)가 맞아요. (B)는 이미 사람 시험 결과가 나온 뒤이고, (C)·(D)는 결론 부분이라 이어지지 않아요."
+],
+[
+29,
+3,
+"reading",
+"r3-s6",
+"Which of the following best completes the blank?",
+[
+"For this reason",
+"In the end",
+"Otherwise",
+"In addition"
+],
+[
+2
+],
+"두 무리 모두 1년 동안 열량을 줄였고 한쪽만 시간 제한을 더했는데, 빈칸 뒤에서 '결국' 시간 제한은 큰 차이를 만들지 못했다는 결과를 말해요. 1년 실험의 최종 결과이니 In the end 가 맞아요. For this reason 은 앞에 원인이 없고, Otherwise(그렇지 않으면)·In addition(게다가)도 결과를 이끌지 못해요."
+],
+[
+30,
+3,
+"reading",
+"r3-s6",
+"Which of the following can be inferred from the passage?",
+[
+"Time-restricted eating may help mainly by making people eat less overall.",
+"Human studies have fully confirmed the results of the earlier mouse experiments.",
+"People on a time limit lose weight mainly because their sleep improves at night.",
+"Experts now say everyone, including children, must eat within a strict eight-hour window."
+],
+[
+1
+],
+"쥐 실험과 달리 사람 시험에서는 시간 제한이 열량 줄이기 이상의 효과를 거의 보이지 않았고, 이점은 주로 덜 먹게 돕는 데서 온다고 했어요. 그 요지를 담은 문장이 맞아요. 쥐 결과를 그대로 확인했다는 말은 반대이고, 잠이 좋아져서라는 원인은 글에 없으며, 아이까지 모두 8시간 안에 먹어야 한다는 말은 과장이에요. 전문가들은 '지킬 수 있는 식단'을 권한다고 했어요."
+]
+]
+}

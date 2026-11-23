@@ -1,0 +1,1795 @@
+{
+"school": "uos",
+"title": "서울시립대 편입영어 모의고사",
+"source": "서울시립대 편입영어 2023~2026학년도 기출 출제 유형(문항 수·영역·문제 꼴, VocabFactory 분석)을 분석해 dailyfreetoolbox 가 새로 만든 연습 문제",
+"checked": "2026-11-23",
+"minutes": 60,
+"points": [
+[
+1,
+7,
+3
+],
+[
+8,
+8,
+4
+],
+[
+9,
+9,
+3
+],
+[
+10,
+10,
+4
+],
+[
+11,
+11,
+3
+],
+[
+12,
+12,
+4
+],
+[
+13,
+13,
+3
+],
+[
+14,
+14,
+4
+],
+[
+15,
+17,
+3
+],
+[
+18,
+18,
+4
+],
+[
+19,
+21,
+3
+],
+[
+22,
+22,
+4
+],
+[
+23,
+23,
+3
+],
+[
+24,
+25,
+4
+],
+[
+26,
+26,
+3
+],
+[
+27,
+27,
+4
+],
+[
+28,
+29,
+3
+],
+[
+30,
+30,
+4
+]
+],
+"sections": [
+{
+"id": "vocab",
+"name": "어휘"
+},
+{
+"id": "cloze",
+"name": "빈칸"
+},
+{
+"id": "grammar",
+"name": "문법"
+},
+{
+"id": "reading",
+"name": "독해"
+}
+],
+"passages": [
+{
+"id": "r1-s1",
+"text": "It is widely assumed that cheaper fares will lure drivers out of their cars. When Seoul introduced its Climate Card in January 2024, the city touted it as an environmental measure rather than a mere discount. For a fixed monthly fee of about 62,000 won, holders could make unlimited trips on the city's subway lines and buses. For a few thousand won more, they could also use the public bicycles (A)<u>scattered</u> across the capital. The underlying notion was straightforward: if each additional journey cost nothing, motorists who drove short distances might forgo their cars altogether.\nFlat-rate passes are hardly a novelty. Many European municipalities have long sold monthly tickets. In 2023 Germany launched a nationwide pass that let holders ride local and regional trains and buses anywhere in the country for a single monthly price. What has rendered such schemes newly fashionable is the aspiration (B)<u>that</u> they can cut emissions as well as household costs. On that point the evidence is equivocal. Studies of earlier fare reductions indicate that cheaper tickets predominantly attract people who would otherwise have walked, cycled, or stayed at home, (C)<u>while</u> drivers respond more to the speed and convenience of a service than to its price.\nAdvocates counter that price is not the only thing a pass changes. Because holders no longer (D)<u>calculating</u> the cost of each ride, they may begin to regard public transport as a default rather than as a purchase, a change of habit that a single fare cut rarely induces. Whether that change is substantial enough to justify the public subsidy remains contentious."
+},
+{
+"id": "r1-s2",
+"text": "Common sense might suggest that a family whose income doubles will simply spend twice as much on everything it buys. In 1857 the German statistician Ernst Engel published a study of the budgets of working-class families in Belgium. He discerned a pattern that has since been documented in almost every country where household spending has been measured. As income rises, the amount a family spends on food usually rises as well, but the proportion of its budget devoted to food diminishes. An impoverished household may spend more than half of what it earns on things to eat; an affluent one, though it buys finer ingredients and eats out more often, spends only a modest fraction.\nThe regularity, now known as Engel's law, is invaluable precisely because it is so ____. Economists can exploit the food share of a household's budget as a rough gauge of the living standards of its members. This works even where reliable income figures are elusive, as is often the case in countries where much work is informal or paid in kind. A declining food share across an entire population is construed as a sign of rising prosperity, and development agencies monitor it alongside more familiar measures.\nThe law also sheds light on a long-term shift in the structure of economies. As nations prosper, demand for farm products expands more sluggishly than demand for manufactured goods and services. The share of employment and output attributable to agriculture contracts, not because people eat less, but because each additional unit of income is spent on other things. A dwindling farm sector, seen in this light, is less a symptom of malaise than a predictable consequence of growth."
+},
+{
+"id": "r1-s3",
+"text": "On a frigid morning in December 1849, a group of young men were escorted into a square in St. Petersburg, where they had been told they would be shot. They had been detained months earlier for belonging to a clandestine circle that met to discuss socialist ideas and to read banned writings aloud. Among them was Fyodor Dostoevsky, then twenty-eight and known chiefly for his first novel, Poor Folk. The prisoners were dressed in white shirts, the first three were tied to posts, and the soldiers leveled their rifles. At the last moment a messenger arrived with word that the tsar had commuted their sentences. The entire ceremony had been elaborately staged; the reprieve had been determined in advance.\nDostoevsky was sent to a prison camp in Siberia, where he endured four years in fetters, followed by several more years of compulsory service as a soldier. He returned to the scene two decades later in his novel The Idiot. There the guileless Prince Myshkin describes a man reprieved at the scaffold and wonders how anyone could endure knowing the exact moment of his own death.\nBiographers are divided over how profoundly the episode shaped his later work. Some see in it the origin of his <u>relentless</u> preoccupation with suffering, faith, and the value of a single moment of life. Others caution against interpreting an entire body of fiction through one dramatic morning, noting that his religious convictions deepened gradually during the long years of privation that followed."
+},
+{
+"id": "r1-s4",
+"text": "Anyone who has flicked a few drops of water onto a hot frying pan has witnessed something peculiar. If the pan is merely warm, the drops hiss and evaporate within a second or two. If it is much hotter, the drops do not boil away at once but (A)<u>skate</u> across the surface for a minute or more, as if the metal were coated with ice. The phenomenon is called the Leidenfrost effect, after the German physician Johann Leidenfrost, who described it in 1756.\nThe explanation lies in a thin cushion of vapor. When a drop contacts a surface far above its boiling point, which for water means roughly 200 degrees Celsius, its underside evaporates so (B)<u>rapidly</u> that the drop comes to rest on a layer of its own steam. Because vapor conducts heat poorly, this layer functions as an insulator, and the drop persists far longer than it would on a cooler pan. Beyond a certain temperature, in other words, making the surface hotter actually ____.\nThe effect is more than a culinary curiosity. Cooks exploit it to gauge when a pan is ready for searing, but engineers often regard it as a (C)<u>blessing</u>. A film of vapor can form when red-hot metal is quenched in water to harden it, or when the fuel in a nuclear reactor must be cooled in an emergency. Such a film impedes the transfer of heat at precisely the moment it is most needed. Researchers have therefore developed textured surfaces that (D)<u>suppress</u> the formation of such films, allowing liquid to stay in contact with the metal at much higher temperatures."
+},
+{
+"id": "r1-s5",
+"text": "In January 2024 a television drama about an obscure accounting dispute provoked a storm of public anger in Britain. It told the story of the subpostmasters, the self-employed operators of local post office branches. Between 1999 and 2015 they were prosecuted in large numbers after a computer system called Horizon reported shortfalls in their accounts. More than nine hundred were convicted of theft, fraud, or false accounting. Some went to prison, many were bankrupted, and several took their own lives. The shortfalls, it eventually emerged, had often been produced by (A) ____ in the software itself.\nHow could so many people be convicted on such fragile evidence? Part of the answer lies in a legal presumption, long applied in English courts, that a computer was operating correctly unless someone could prove otherwise. Defendants who insisted they had taken nothing found it almost impossible to obtain the technical data needed to rebut the presumption. Meanwhile the Post Office, which brought many of the prosecutions itself, repeatedly assured courts that Horizon was robust.\nThe drama achieved in weeks what years of campaigning had not. Within months Parliament passed a law quashing the convictions en masse, an extraordinary step that some lawyers criticized for bypassing the courts. Others replied that the scale of the injustice demanded it. The episode has prompted a broader debate about whether courts should treat computer evidence with greater (B) ____, especially as automated systems spread into ever more areas of public life."
+},
+{
+"id": "r1-s6",
+"text": "Paris is often imagined as a city that matured gracefully over the centuries. In fact, between 1853 and 1870, much of its medieval center was razed and rebuilt on the orders of Emperor Napoleon III and his prefect, Baron Haussmann. Narrow, twisting lanes, many of them gloomy, congested, and (A) ____, were demolished to make way for broad, straight boulevards lined with trees and with uniform apartment buildings of cream-colored stone. Beneath the streets, engineers laid hundreds of kilometers of new sewers and water mains, and the city acquired parks, squares, and railway stations that still define it today.\nAdmirers cite the results: a capital of grand vistas that inspired planners in cities from Brussels to Buenos Aires, and a city far more hygienic than the one it supplanted. Critics, then and since, have been less (B) ____. Tens of thousands of working-class residents were evicted as their neighborhoods were obliterated. The exorbitant rents of the new buildings displaced many of them to the edges of the city. Some contemporaries also alleged that the wide avenues were designed to make it harder for rebels to raise barricades and easier for troops to move quickly, a motive that historians still dispute.\nHaussmann himself was dismissed in 1870, brought down in part by the staggering debts his projects had accrued. Yet the city he built outlived both him and the empire he served, and visitors who admire Paris today are, to a remarkable degree, admiring his work."
+},
+{
+"id": "r1-s7",
+"text": "It seems intuitive that there is only a fixed quantity of work to go around. On this view, if some people work longer or retire later, others must inevitably be left without jobs. Economists call this belief the lump of labour fallacy, and they have long argued that it misconstrues how economies function. The amount of work is not fixed: people who earn wages spend them, generating demand for goods and services that other people are employed to produce. When women entered the labour force in large numbers during the second half of the twentieth century, total employment in rich countries expanded; men were not simply displaced one for one.\nThe fallacy nonetheless resurfaces whenever unemployment rises. In the 1970s, 1980s, and 1990s several European governments encouraged older employees to retire early, hoping thereby to ____. Subsequent comparative studies found little evidence that the policy achieved its aim. Countries in which more older people kept working tended, if anything, to have higher employment among the young as well, while the schemes proved ruinously expensive for pension systems.\nNone of this implies that particular workers never lose out. A new technology or a surge of foreign competition can devastate a specific occupation or region. The costs of adjustment may then fall heavily on those least able to bear them. The error lies in assuming that the total quantity of work is fixed, not in recognizing that its distribution can shift in ways that are painful for those caught on the losing side."
+},
+{
+"id": "r1-s8",
+"text": "For nearly a century and a half, the line judges of Wimbledon were as much a part of the tournament as its grass courts and its strawberries. Dressed in matching uniforms, they crouched along the perimeter of each court and called out whenever a ball strayed out of play. In October 2024, however, the All England Club announced that from the following summer those calls would be made instead by an electronic system relying on cameras positioned around every court. The decision aligned the oldest of the four major championships with the Australian Open and the US Open, which had already (A) ____ human line judges on their courts.\nThe rationale for automation seemed compelling. Camera systems had for years been deployed to review disputed calls. Their verdicts were widely acknowledged as more precise than the human eye, particularly for serves traveling at well over 200 kilometers an hour. Removing the line judges also eliminated a perennial source of acrimonious arguments between players and officials.\nThe first tournament under the new regime was not entirely (B) ____. Several players protested that calls seemed erroneous. In one widely reported incident the system was inadvertently switched off for part of a game, so that a ball that had plainly landed long went uncalled. The club apologized and attributed the lapse to human error rather than to the technology itself. The episode exemplified a broader paradox of automation: as machines take over routine judgments, the sporadic failures that remain can become more conspicuous, precisely because nobody is standing by to catch them."
+},
+{
+"id": "r1-s9",
+"text": "On the evening of May 29, 1913, the Ballets Russes presented a new work at the recently opened Théâtre des Champs-Élysées in Paris. The music was by Igor Stravinsky, a thirty-year-old Russian composer, and the choreography by the dancer Nijinsky. Within minutes of the curtain rising, the audience grew restive. [A] Jeers and laughter vied with the orchestra, and the dancers could barely hear the music; Nijinsky stood on a chair in the wings, shouting out the counts to them. [B] Accounts of the night diverge on how unruly the scene became, and some of the most colorful stories were written down many years later.\nWhat provoked such hostility? Part of the answer lies in the music, with its jagged rhythms, clashing harmonies, and an opening melody played by a bassoon in an uncomfortably high register. [C] Part lies in the dancing, which replaced the graceful leaps of classical ballet with stamping, hunched, inward-turned movements intended to evoke a primitive pagan ritual. Some historians contend that the audience itself was polarized between wealthy patrons expecting elegance and young enthusiasts eager to champion the avant-garde, so that each camp provoked the other. [D]\nWhatever transpired that night, the reputation of the ballet was rehabilitated within a year. When the score was performed in concert in Paris in 1914, Stravinsky was carried through the streets on the shoulders of admirers. The Rite of Spring is now hailed as one of the most influential compositions of the twentieth century."
+},
+{
+"id": "r1-s10",
+"text": "It has long been assumed that the smoother a surface is, the easier it is to keep clean. The lotus, revered in Asian religions as an emblem of purity because it rises unblemished out of muddy ponds, suggests otherwise. The secret of its cleanliness remained (A) ____ until the 1970s, when the German botanist Wilhelm Barthlott examined lotus leaves under a scanning electron microscope. Far from being smooth, the surface proved to be covered with tiny bumps, each coated with crystals of wax.\nThis rough, waxy texture exerts a striking influence on water. A drop landing on the leaf touches only the tips of the bumps, resting on a cushion of trapped air, and so it keeps an almost perfectly spherical shape. The slightest tilt sends it rolling away, and as it rolls it collects particles of dust and grime, which cling to the water more readily than to the leaf, and carries them off. Rain, in effect, performs the cleaning. Surfaces that repel water this vigorously are classified as superhydrophobic.\nBarthlott later patented the principle under the name Lotus-Effect, and it has since been (B) ____ in products ranging from self-cleaning exterior paints to stain-resistant fabrics. Engineers have found it difficult to replicate nature, however. Artificial coatings tend to lose their properties once their delicate surface texture is scratched or worn away, whereas a living plant can simply secrete more wax."
+},
+{
+"id": "r1-s11",
+"text": "For decades, large multinational companies were able to pare their tax bills by booking profits in countries with very low corporate tax rates. These were often places where they had few employees and little substantive activity.\n(A) Under the agreement, a country can levy a top-up tax when a large group's profits in another jurisdiction are taxed at less than 15 percent. The rules pertain only to groups with annual revenue of at least 750 million euros, so most smaller firms are exempt. The European Union, South Korea, Japan, and a number of other economies began applying them in 2024.\n(B) Governments vied to attract these profits by cutting their rates still further, a pattern critics derided as a race to the bottom. In 2021, after years of negotiation hosted by the Organisation for Economic Co-operation and Development, more than 130 countries agreed on a remedy: a global minimum effective tax rate of 15 percent for the largest companies.\n(C) Implementation has not been seamless. In 2025 the United States, which had never written the rules into its own law, declared that it would not be bound by them. The other members of the Group of Seven later agreed in principle to an arrangement that would largely exempt American-based groups from parts of the system. Proponents of the deal warn that such exceptions could reopen the very loopholes it was meant to close."
+},
+{
+"id": "r1-s12",
+"text": "[가] Yet the charter did not die. After John's death in 1216, the advisers ruling on behalf of his nine-year-old son reissued it in a revised form, hoping to regain the allegiance of the barons. Further revised versions followed later. The text issued in 1225 was gradually treated as part of the law of the land, and later monarchs were pressed to confirm it repeatedly.\n[나] In June 1215, in a meadow called Runnymede beside the River Thames, King John of England set his seal to a charter drawn up by rebellious barons. Its clauses constituted a catalog of specific grievances, intended to (A) ____ a king who had levied taxes at will and punished his opponents without trial.\n[다] The modern prestige of the document owes much to lawyers of the seventeenth century, such as Edward Coke, who invoked it against the prerogatives claimed by the Stuart kings. American colonists later cited it in their own quarrels with the British crown. Much of its original content, concerned with feudal payments, royal forests, and fish traps in rivers, would seem (B) ____ to a modern reader, and only a handful of its clauses remain in force in English law today. What endures is its fundamental principle: that even a ruler is bound by the law.\n[라] The peace it was meant to secure lasted only a few weeks. Each side harbored deep distrust of the other, and within months Pope Innocent III, at John's request, declared the charter null and void. England descended into civil war, and some of the barons invited a French prince to claim the throne."
+},
+{
+"id": "r2-s1",
+"text": "In the late 1980s, confronted with soaring housing prices, the South Korean government launched an ambitious program to build two million homes. Its centerpiece was a cluster of planned towns around Seoul, including Bundang and Ilsan, where tens of thousands of apartments were completed in the early 1990s. For a generation these first-generation new towns were regarded as exemplars of orderly suburban living. Today, however, many of their buildings are more than thirty years old, plagued by (A)<u>corroded</u> pipes, scarce parking, and floor plans ill-suited to contemporary households.\nIn 2024 a special law took effect that (B)<u>was designed</u> to expedite the redevelopment of such aging planned towns. It permits considerably higher densities than ordinary regulations allow, on the rationale that taller buildings containing more units can help defray the cost of rebuilding. Late that year the government selected the first districts to proceed.\nThe obstacles, however, are formidable and manifold. Reconstruction requires the consent of a substantial majority of owners, (C)<u>many of whom</u> are elderly residents on fixed incomes, wary of contributing to construction costs. Tens of thousands of households would need temporary accommodation during demolition, and a sudden wave of relocation could inflate rents in neighboring areas. Some urban planners also worry that piling more apartments onto towns (D)<u>designing</u> for a smaller population will strain roads, schools, and water supplies unless infrastructure is upgraded simultaneously."
+},
+{
+"id": "r2-s2",
+"text": "Rising tuition fees and medical bills are often blamed on greed or wasteful management. In the 1960s, however, the economists William Baumol and William Bowen proposed a less obvious explanation that began, of all places, with a string quartet. Performing a quartet by a classical composer requires four musicians and roughly the same amount of time today as it did in the nineteenth century. Productivity in live music, in other words, has scarcely changed, whereas in manufacturing technology has enabled each worker to produce vastly more than before, and wages have risen accordingly.\nHerein lies the crux. Musicians, teachers, and nurses must be paid wages roughly comparable to those in other occupations, or they would defect to better-paid work. Because their productivity has not grown at the same pace, the cost of their services climbs inexorably relative to manufactured goods. Baumol called this phenomenon the cost disease, though he conceded that the label was somewhat misleading. Services were not becoming ____; they were merely becoming more expensive compared with the things that factories had learned to make cheaply.\nThe insight has awkward implications for public finances. Because health care and education absorb a growing share of national income, governments often face pressure to curtail spending on them. Yet, Baumol argued, an affluent society can afford them precisely because productivity elsewhere has soared."
+},
+{
+"id": "r2-s3",
+"text": "Double-entry bookkeeping is often said to have been invented by Luca Pacioli, a Franciscan friar who in 1494 published in Venice a vast compendium of mathematics. Most of its six hundred pages dealt with arithmetic, geometry, and proportion, but a brief section of some twenty-seven pages would prove more consequential than everything else in the book. It explained, in plain Italian rather than Latin, the system of accounting that Venetian merchants had been using for generations. Every transaction was recorded twice, once as a debit and once as a credit, so that the two sides of the ledger should always balance.\nThe friar did not invent the method; surviving account books from Genoa and Florence indicate that it was in use nearly two centuries earlier. His contribution was to describe it so lucidly that it could be learned from a book rather than through years of apprenticeship. The treatise was soon imitated across Europe, and its basic method is still taught today.\nWhy did the system prove so significant? A merchant who kept <u>impeccable</u> double-entry books could detect at a glance whether an error or a theft had occurred, because any discrepancy would leave the accounts out of balance. More importantly, he could calculate the profit of each venture and the total worth of his enterprise at any moment. Some historians have gone further, arguing that this habit of rational calculation helped make modern capitalism possible, though others regard that claim as an exaggeration."
+},
+{
+"id": "r2-s4",
+"text": "Anyone standing beside a road as an ambulance races past will notice its siren drop in pitch at the very moment it passes. The siren itself does not alter; what changes is the motion of its source relative to the listener. As the ambulance approaches, each successive sound wave is emitted from a point slightly closer to the listener than the last, so the waves arrive (A)<u>compressed</u> and are perceived as higher in pitch. Once the vehicle has passed, the waves are stretched out and the pitch (B)<u>falls</u>.\nThe phenomenon is named after the Austrian physicist Christian Doppler, who proposed it in 1842. His idea was tested in a memorable experiment in the Netherlands in 1845. The scientist Christoph Buys Ballot arranged for trumpeters to play a sustained note aboard a moving train while musicians with a keen ear listened from beside the track. The observers reported that the note sounded higher as the train approached and lower as it receded, just as Doppler had (C)<u>doubted</u>.\nThe same principle applies to light, where its ramifications have been even more profound. Light from a galaxy moving away from us is shifted toward longer, redder wavelengths. In the 1920s astronomers discovered that the light of distant galaxies is almost invariably shifted toward red, and that the shift grows larger the more remote a galaxy is. The conclusion was (D)<u>startling</u>: the universe ____."
+},
+{
+"id": "r2-s5",
+"text": "On January 1, 2026, Bulgaria adopted the euro, becoming the twenty-first country to share the single currency. Every such accession revives an old question: when does it make sense for a nation to relinquish its own money? In a celebrated 1961 paper, the economist Robert Mundell described the conditions under which a group of regions might form an optimum currency area. Sharing a currency eliminates the expense of converting money and the risk of volatile exchange rates, encouraging trade and investment. But it also deprives a country of two instruments for coping with economic shocks: setting its own interest rates and allowing its currency to depreciate. Where workers move freely between regions and economic cycles are closely synchronized, those losses matter less.\nIn Bulgaria's case, the sacrifice was arguably (A) ____. Since 1997 the country had operated a currency board, a rigorous arrangement under which the lev was pegged first to the German mark and then to the euro. This left Bulgarian authorities with almost no autonomous control over monetary policy. Joining the euro area merely added a seat at the table where decisions affecting Bulgaria were already being made.\nPublic sentiment was nonetheless polarized. Many Bulgarians feared that shopkeepers would exploit the changeover to round prices upward, an anxiety fueled by reports from earlier entrants. The government responded by requiring stores to display prices in both currencies for a transitional period, hoping to keep such (B) ____ in check."
+},
+{
+"id": "r2-s6",
+"text": "Bicycle sharing is commonly regarded as a creation of the smartphone age, yet the notion of bicycles that anyone may borrow is far older. In 1965 members of Provo, a group of anarchist activists in Amsterdam, painted bicycles white and left them unlocked around the city for public use. It was a protest against the dominance of the automobile. The police promptly impounded many of them, citing a rule against leaving bicycles unlocked, and the experiment fizzled. Subsequent schemes learned from that fiasco. In the 1990s Copenhagen offered bicycles that could be released with a coin deposit, but theft remained a chronic problem, since nothing linked a bicycle to its rider.\nThe breakthrough came with technology that made riders (A) ____. Modern systems, such as Paris's Vélib', inaugurated in 2007, and Seoul's Ttareungyi, introduced in 2015, require users to register with a card or smartphone, so that each trip can be traced. Docking stations lock the bicycles securely between rides, and fees are structured to encourage brief journeys.\nIn the late 2010s, Chinese start-ups pushed the model further with dockless bicycles that could be unlocked through an app and abandoned almost anywhere. Millions inundated city streets within a few years. When investment evaporated, several of the companies collapsed, leaving vast heaps of discarded bicycles that came to symbolize the (B) ____ of the boom. Municipal governments responded by capping fleet sizes and designating parking zones, a reminder that shared bicycles require rules as much as they require wheels."
+},
+{
+"id": "r2-s7",
+"text": "It is widely believed that memories of shocking public events are uniquely reliable. Where were you when you heard about such an event? Many people can answer such a question in extraordinary detail, recalling who told them, what they were doing, and even what they were wearing. In 1977 the psychologists Roger Brown and James Kulik named these recollections flashbulb memories, suggesting that emotionally overwhelming news triggers a special mechanism that preserves the scene as faithfully as a photograph.\nSubsequent research has challenged that interpretation. The space shuttle Challenger exploded in January 1986. On the following morning, the psychologist Ulric Neisser and his colleague Nicole Harsch asked a group of students to write down how they had learned of the disaster. Two and a half years later, they questioned the same students again. Many of the later accounts diverged substantially from the originals, and some were entirely wrong. Strikingly, the students who misremembered were often supremely confident, and some insisted that their current memory was correct even when confronted with their own earlier handwriting.\nThe lesson is not that flashbulb memories are worthless, but that their ____. Emotion seems to bolster our certainty about a memory more than it reinforces the memory itself. Researchers examining recollections of later events, such as the attacks of September 11, 2001, have detected the same pattern: accuracy deteriorates over time much as it does for ordinary memories, while confidence remains stubbornly high."
+},
+{
+"id": "r2-s8",
+"text": "On January 20, 2024, Japan became the fifth country to accomplish a soft landing on the Moon, after the Soviet Union, the United States, China, and India. Its spacecraft, the Smart Lander for Investigating Moon, or SLIM, had a modest objective by the standards of earlier missions. It was to demonstrate that a probe could touch down within 100 meters of a chosen target, rather than somewhere within a zone several kilometers wide. Such precision is crucial because the most scientifically intriguing sites often lie on slopes or near craters, where an (A) ____ landing could prove fatal.\nThe landing was simultaneously a triumph and a fiasco. SLIM came down within about 55 meters of its target, but one of its main engines had lost thrust shortly before touchdown. The craft ended up resting on its nose, with its solar panels facing the wrong way. Unable to generate electricity, it was switched off to conserve its battery. Engineers hoped that as the Sun moved across the lunar sky, light might eventually reach the panels. Days later it did, and SLIM briefly revived to transmit images of nearby rocks. Remarkably, it continued to reawaken after several frigid lunar nights, which it had never been designed to endure, far surpassing its designers' (B) ____."
+},
+{
+"id": "r2-s9",
+"text": "Few debates in Chinese philosophy have proved as durable as the one between Mencius and Xunzi, two followers of Confucius who lived in the fourth and third centuries BCE. Both concurred that people could become virtuous and that education and ritual were essential to the process. They diverged sharply, however, on the question of where goodness originates. [A]\nMencius held that human nature is fundamentally good, and to illustrate the point he asked his listeners to imagine someone who suddenly sees a small child about to fall into a well. Anyone, he contended, would feel alarm and compassion, not because he hoped to earn the gratitude of the parents or the praise of neighbors, but spontaneously. [B] Such feelings were, in his famous image, sprouts: tender beginnings of virtue that needed cultivation but did not need to be implanted from outside.\nXunzi took the opposite view. Human beings, he asserted, are born with cravings for profit and pleasure that, left unchecked, lead to strife and disorder. [C] Goodness is the product of deliberate effort, just as a warped piece of wood becomes straight only when it is steamed and pressed against a frame. For him, teachers, rituals, and laws were therefore not mere aids to a natural process but the indispensable means by which civilization is constructed. [D]\nLater Confucian orthodoxy sided largely with Mencius, but his rival's insistence on the transformative power of education has never lost its appeal."
+},
+{
+"id": "r2-s10",
+"text": "In April 2025 a team of researchers at the University of California, Berkeley, reported that they had enabled people to perceive a color no human had seen before. They named it olo. The claim sounds fanciful, but it rests on a thoroughly documented feature of human vision. The retina contains three kinds of cone cells, which respond to long, medium, and short wavelengths of light. Their sensitivities overlap considerably, so that any natural light which stimulates the medium-wavelength cones also stimulates at least some of the others. As a result, certain patterns of cone activity are (A) ____ in ordinary life.\nThe researchers circumvented this limitation by mapping the retinas of volunteers in meticulous detail and then using a laser to deliver minute doses of light to individual medium-wavelength cones alone. The participants, several of whom were authors of the study, described the result as a blue-green of unprecedented saturation. To verify that the sensation was genuinely unusual, they adjusted ordinary colors to match it as closely as possible, and found that they could do so only by diluting the new hue with white light.\nSome vision scientists contend that the hue is better described as an extremely saturated version of a familiar hue than as a novel color. Others note that the apparatus is far too elaborate to leave the laboratory. Still, the work offers a (B) ____ demonstration that the colors we experience are constrained less by the world itself than by the architecture of our eyes."
+},
+{
+"id": "r2-s11",
+"text": "A familiar complaint about two-party democracies is that the major parties end up offering voters programs so similar that the choice between them hardly seems to matter.\n(A) Hotelling had himself hinted at the political parallel, and in 1957 the economist Anthony Downs developed it fully. He assumed that voters can be arranged along a single spectrum from left to right and that each supports whichever party stands nearer to his or her own position. Under those conditions, he argued, two parties competing for a majority will both drift toward the median voter, the citizen with exactly as many voters on either side.\n(B) Real elections frequently depart from this prediction. Parties must also satisfy activists and donors who hold more extreme views, primary contests can reward candidates far from the center, and voters who find both parties too moderate may simply abstain. Nonetheless, the model remains a valuable benchmark, because it predicts the electoral price that a party is likely to pay when it strays far from the middle.\n(C) Economists offered an explanation long before most political scientists took up the question. In 1929 Harold Hotelling analyzed where competing shops would locate along a street. He showed that two sellers would tend to cluster side by side at the midpoint, since each could secure half the customers plus any it could lure from its rival's side."
+},
+{
+"id": "r2-s12",
+"text": "[가] Why he wrote this way has long (A) ____ scholars. A prevalent theory holds that he wished to conceal his ideas from rivals. Yet the script is hardly an unbreakable code, since anyone with a mirror can decipher it. A more mundane explanation is that Leonardo was left-handed: writing from right to left allowed him to avoid smudging wet ink as his hand moved across the page.\n[나] Those that survive are scattered across libraries and private collections. One of them is a manuscript on water, rocks, and the light of the Moon now known as the Codex Leicester. In 1994 Bill Gates bought it at auction for about 30.8 million dollars, at the time the highest price ever paid for a book.\n[다] Leonardo da Vinci left behind not only a handful of celebrated paintings but thousands of pages of notes and drawings, covering subjects from anatomy and optics to flight and the turbulent flow of water. Many of these pages are written in mirror script, running from right to left, so that they are most easily read with the aid of a mirror.\n[라] Whatever the reason, the notebooks endured a troubled afterlife. After his death in 1519 they passed to his devoted pupil Francesco Melzi, whose heirs (B) ____ them. Pages were sold, bestowed as gifts, or cut up and rebound by collectors, and a substantial portion is thought to have been lost forever."
+},
+{
+"id": "r3-s1",
+"text": "For much of the twentieth century, municipal governments treated the hours after dark chiefly as a matter of law enforcement: noise, drunkenness, and crime. In recent decades a contrasting perspective has gained ground. Bars, theaters, restaurants, and music venues, along with the cleaners, drivers, and medical staff who work through the night, (A)<u>constitute</u> what planners now call the night-time economy, a sector that in major metropolises employs hundreds of thousands of people.\nAmsterdam emerged as a pioneer of this approach. Its night mayor, an independent advocate (B)<u>chosen</u> to represent nightlife businesses and their patrons, attracted international attention in the 2010s for brokering compromises between club owners, residents, and the police. In 2016 London appointed a night czar of its own, and dozens of cities around the world have since created comparable posts.\nThe role is an inherently delicate one. A night mayor must champion the cultural and economic value of nightlife while (C)<u>address</u> the grievances of residents kept awake by crowds and traffic. Some cities have experimented with extending public transport through the night, so that revelers can disperse promptly instead of loitering on the streets. Others have offered subsidies to help venues install soundproofing. Skeptics allege that such measures primarily benefit commercial interests, and that the people most affected by a lively night-time economy, those (D)<u>living</u> nearby, seldom enjoy an equal voice."
+},
+{
+"id": "r3-s2",
+"text": "It is often said that public services cannot be chosen like ordinary goods, since nobody reveals how much they truly value them. How much should a municipality spend on schools, parks, and rubbish collection, and how heavily should it tax its residents to pay for them? In most markets, consumers disclose their preferences by choosing what to buy. Public goods, however, appear to lack such a mechanism, since residents have little incentive to state honestly how much they value a service they will receive regardless. In 1956 the economist Charles Tiebout proposed an ingenious answer. Where a metropolitan area contains many independent municipalities, each offering a different combination of services and taxes, households can choose among them as shoppers choose among stores. Families who prize excellent schools will gravitate toward towns that provide them and accept higher taxes; those who care little for such services will settle where taxes are low. Residents, as the saying goes, vote with their feet.\nThe model implies that competition among local governments can be ____, pushing each to deliver what its residents actually want at a reasonable price. Critics point out that its assumptions are stringent. Relocation is costly, employment anchors people to particular places, and households with low incomes may be priced out of desirable towns altogether. Indeed, some scholars contend that sorting of this kind can entrench inequality, as affluent families cluster in jurisdictions with generous services and leave poorer neighbors with shrinking tax bases. The insight endures, but so does the debate over whether the sorting it describes is a virtue or a vice."
+},
+{
+"id": "r3-s3",
+"text": "In December 1784 a Berlin monthly magazine published a short essay by the philosopher Immanuel Kant in reply to a deceptively simple question: what is enlightenment? His answer was that enlightenment is humanity's emergence from a self-imposed immaturity, by which he meant the inability to use one's own understanding without guidance from another. Such immaturity is self-imposed, he argued, when its cause lies not in a lack of intelligence but in a lack of resolve and courage. Dependence is seductive: a person who lets a book do his thinking, a pastor serve as his conscience, and a physician prescribe his diet need never exert himself. The motto Kant proposed for his age was a Latin phrase meaning dare to know.\nYet the essay is more circumspect than its rousing opening implies. Kant distinguished between the public use of reason, which a scholar addresses to the reading public and which should be entirely free, and the private use of reason. The private use is what a person exercises in a particular post or office, and it may legitimately be curtailed. An officer must obey orders while on duty, though he may later publish criticisms of military policy. Nor did Kant regard reason as <u>infallible</u>; its authority, for him, derived from being exposed to the scrutiny of others. Enlightenment, in his view, would be an incremental, collective process rather than a sudden revolution."
+},
+{
+"id": "r3-s4",
+"text": "Of all the pollutants that afflict modern cities, noise is perhaps the most (A)<u>overestimated</u>. It leaves no visible residue and no stain on the lungs, yet a substantial body of research links chronic exposure to road, rail, and aircraft noise with disturbed sleep, elevated stress hormones, and a heightened risk of heart disease. The World Health Organization's guidelines for Europe, published in 2018, recommend that average road traffic noise be kept below 53 decibels, a level (B)<u>exceeded</u> in many residential streets.\nTo remedy a problem, a city must first quantify it. Under a European Union directive adopted in 2002, large cities in member states must produce strategic noise maps every five years. The maps show how many people are exposed to various levels of sound, and cities must also draw up action plans in response. The maps are typically generated by computer models that combine traffic counts, the layout of buildings, and the properties of road surfaces, supplemented by measurements at selected sites.\nThe results are often (C)<u>sobering</u>. Maps routinely reveal that the burden of noise is distributed inequitably: housing along major arteries, frequently the cheapest in a city, absorbs a disproportionate share. They have also enabled planners to evaluate interventions such as quieter road surfaces, lower speed limits, and barriers along motorways. Critics note, however, that the models (D)<u>average</u> sound over long periods and can therefore ____, such as the roar of a single motorcycle at three in the morning."
+},
+{
+"id": "r3-s5",
+"text": "In April 2025 Spain stopped issuing so-called golden visas, which since 2013 had granted residence permits to non-European investors who bought property worth at least 500,000 euros. The scheme had been instituted in the aftermath of the financial crisis, when the country was desperate to (A) ____ foreign capital into a moribund housing market. Over the ensuing decade it attracted thousands of buyers, a large share of them from China and Russia, who concentrated their purchases in Madrid, Barcelona, and coastal resorts.\nBy the 2020s, however, the political climate had altered markedly. Rents in the largest Spanish cities had risen far faster than wages, and young people increasingly found themselves priced out of neighborhoods where they had grown up. The government contended that residence permits tied to property purchases treated housing as a speculative asset rather than a basic necessity. It presented their abolition as part of a broader campaign to make homes affordable.\nEconomists doubted that the measure would exert much influence on its own. Golden-visa purchases accounted for only a small fraction of all property transactions, and foreign buyers without visas, including many from other European Union countries, remained free to buy. The decision was therefore widely interpreted as more (B) ____ than practical: a signal of priorities rather than a solution. Portugal and Ireland had earlier restricted or terminated similar programs, reflecting a wider European reassessment."
+},
+{
+"id": "r3-s6",
+"text": "For more than a century, cities buried their streams. As urban areas expanded in the nineteenth and twentieth centuries, small rivers that had degenerated into open sewers were confined to culverts, paved over with roads and parking lots, and largely forgotten. Burial alleviated immediate hazards of stench and disease, and it freed valuable land for development. It also generated new predicaments. Underground channels can be overwhelmed by torrential rain, and a buried stream supports almost no plant or animal life.\nIn recent decades a growing number of cities have begun to reverse the process, a practice known as daylighting. One frequently cited example is Yonkers, a city just north of New York, which in 2012 uncovered a section of the Saw Mill River that had flowed beneath its downtown through an enclosed channel for decades. The restored stretch, lined with plantings and walkways, now draws visitors and has become a centerpiece of efforts to (A) ____ the surrounding district, while fish have returned to waters that were once lightless.\nDaylighting is rarely straightforward. Exposing a stream may entail removing roads, relocating pipes and cables, and negotiating with property owners, and the expense can be considerable. Some restored waterways are also more engineered than natural, with banks reinforced by concrete and flows regulated by pumps. Critics dismiss such projects as (B) ____, but supporters reply that even a partly artificial stream brings water, light, and life back to places from which they had been banished."
+},
+{
+"id": "r3-s7",
+"text": "It is commonly supposed that a country's party system simply mirrors the divisions within its society, so that wherever opinions are diverse, many parties will flourish. In the 1950s the French political scientist Maurice Duverger argued that electoral rules matter at least as much. Under a plurality system, in which each district elects a single representative and the candidate with the most votes wins, small parties are squeezed. Their supporters, realizing that a vote for a minor candidate is likely to be wasted, tend to switch to whichever of the two leading candidates they find less objectionable. Ambitious politicians, anticipating this, gravitate toward the larger parties. Over time, Duverger contended, such systems ____. Proportional representation, by contrast, allocates seats according to each party's share of the vote, so that smaller parties can win representation and multiparty systems tend to persist.\nThe regularity is robust but not absolute, which is why many political scientists hesitate to call it a law in the strict sense. Britain and Canada, both of which use plurality voting, sustain several parties in their parliaments, largely because some smaller parties draw their voters from particular regions, where they can win seats outright. India, which also elects its lower house by plurality, has a notably fragmented party system. Political scientists therefore treat the law as a tendency operating at the level of individual districts rather than as an iron rule for entire nations."
+},
+{
+"id": "r3-s8",
+"text": "In July 2024 the US Food and Drug Administration approved donanemab, the second drug shown in a large clinical trial to slow the progression of Alzheimer's disease. The first, lecanemab, had been approved the previous year. Both drugs are antibodies that help the immune system eliminate amyloid, a sticky protein that accumulates in plaques in the brains of people with the disease. For decades the amyloid hypothesis, the idea that these plaques drive the destruction of brain cells, had been both influential and (A) ____, as one drug after another removed amyloid without producing any measurable benefit for patients.\nThe new drugs furnished the first persuasive evidence that clearing amyloid can make a difference, but the benefit is modest. In the main trial, donanemab slowed cognitive decline by roughly a quarter to a third over eighteen months, depending on the measure, among patients in the early stages of the disease. It does not arrest the illness, let alone reverse it. The treatment also entails risks, notably swelling and small bleeds in the brain, which are usually symptomless but occasionally serious, and it requires regular infusions and brain scans.\nPhysicians therefore confront (B) ____ decisions. For a patient in the early stages, a few additional months of autonomy may be invaluable. For health systems, the cost of the drug and of the scans needed to identify suitable patients and monitor side effects is substantial. One feature of donanemab is distinctive: patients may stop treatment once scans show that the amyloid has been cleared."
+},
+{
+"id": "r3-s9",
+"text": "For decades the demolition of Pruitt-Igoe was told as a cautionary tale about modern architecture. On March 16, 1972, the city of St. Louis began demolishing the first of the thirty-three buildings of the Pruitt-Igoe housing complex, less than two decades after the project had opened. Designed by the architect Minoru Yamasaki, who would later design the World Trade Center in New York, the complex of eleven-story towers had been hailed in the architectural press as a model of modern public housing. [A] By the late 1960s it had become notorious for vandalism, crime, and vacancy, and photographs of its towers crumbling in clouds of dust were disseminated around the world.\nThe critic Charles Jencks later declared that modern architecture had died with that demolition. [B] In his account, the failure of Pruitt-Igoe exposed the folly of an architectural ideology that believed rational design could cure social ills. Generations of students absorbed the story as a parable about the arrogance of planners.\nHistorians have since complicated that orthodox narrative. [C] Budget cuts forced cheaper construction and the elimination of amenities, and elevators that stopped only on certain floors left long, unsupervised corridors. More fundamentally, the city's population and industrial base were shrinking, and the residents, overwhelmingly poor and Black, were left with few jobs and dwindling public services. The housing authority, starved of revenue, could not afford routine maintenance. [D] In this telling, Pruitt-Igoe was destroyed less by its architecture than by the economic and political forces surrounding it."
+},
+{
+"id": "r3-s10",
+"text": "In March 2024 the European Commission fined Apple about 1.8 billion euros for abusing its dominant position in the market for distributing music-streaming apps to iPhone users. The case had originated in a formal complaint from Spotify, the Swedish streaming service. Apple took a commission of up to 30 percent on subscriptions sold through its App Store. It also prohibited developers from informing users, inside their apps, that cheaper subscriptions were available elsewhere, for example on the developer's own website. Such rules, the Commission concluded, left consumers (A) ____ of better deals and probably led many of them to pay more than necessary.\nApple rejected the decision and announced an appeal, arguing that the Commission had failed to find credible evidence of consumer harm and that Spotify, the market leader in Europe, was hardly a vulnerable competitor. The company maintained that its commission financed the security and convenience of a store used by hundreds of millions of people.\nThe penalty was among the largest the Commission had ever imposed on a technology company. It arrived just as the Digital Markets Act, a new law obliging the largest digital platforms to open their services to rivals, was taking full effect. Together, the decision and the law signaled that European regulators intended to treat app stores not as private shops whose owners may set any terms they please but as (B) ____ infrastructure subject to public rules."
+},
+{
+"id": "r3-s11",
+"text": "In the early 1930s, a new novel in Britain typically cost several shillings, a sum that placed serious literature beyond the reach of many laborers and clerks.\n(A) In 1935 the publisher Allen Lane set out to change that. According to a story he liked to tell, he was waiting at Exeter station for a train to London and found nothing worth reading at the bookstall. He resolved to publish fiction and nonfiction of authentic merit in paperback at sixpence a copy, roughly the price of a packet of cigarettes, and to sell the books wherever people passed by, not merely in bookshops.\n(B) Not everyone welcomed such success. Some publishers and booksellers feared that inexpensive editions would cannibalize sales of expensive hardbacks. George Orwell, reviewing Penguin's early titles, praised them as splendid value for readers while warning that they might prove ruinous for authors and the book trade.\n(C) The gamble proved a spectacular triumph. Penguin sold millions of copies within its first year, and its distinctive covers, color-coded by genre with orange for fiction and green for crime, became a familiar sight on railway platforms and in high street shops. Readers who had never possessed a book of their own began to accumulate modest libraries."
+},
+{
+"id": "r3-s12",
+"text": "[가] Only when archaeologists examined the equipment found beside him did the (A) ____ of the discovery become clear. He was equipped with a copper-bladed axe, a bow and arrows, and a container made of birch bark, and radiocarbon dating later showed that he had died some 5,300 years ago. The ice had conserved not only his body but his clothing, his tools, and even the contents of his stomach.\n[나] Since that revelation he has become arguably the most meticulously studied human body in the world. Analyses of his teeth, bones, and genome have illuminated his diet, his ailments, and his ancestry, and his skin bears more than sixty tattoos. Each novel technique seems to yield fresh information, and scientists expect that he will continue to (B) ____ his secrets for decades to come.\n[다] The most sensational revelation came a decade later. In 2001 an X-ray revealed a stone arrowhead lodged in his left shoulder, a wound that had probably severed an artery. The Iceman, as he came to be known, had not succumbed to cold or exhaustion, as researchers had long supposed, but had been killed.\n[라] In September 1991 two German hikers walking in the Alps near the border between Austria and Italy noticed a brownish shape protruding from the thawing glacier. They assumed they had stumbled upon the body of an unlucky mountaineer, and the first recovery team, sharing that assumption, damaged the corpse while hacking it free with a pneumatic drill and ice axes."
+}
+],
+"q": [
+[
+1,
+1,
+"vocab",
+null,
+"밑줄 친 hinge의 문맥상 뜻을 가장 잘 풀어 쓴 것을 고르시오.\nThe success of the city's new flood-defense plan may <u>hinge</u> on a single variable: whether the national government releases the funds it promised before the rainy season begins.",
+[
+"swing open",
+"be modeled",
+"depend entirely",
+"be fastened"
+],
+[
+3
+],
+"hinge on 은 문맥에서 '전적으로 ~에 달려 있다'라 depend entirely (on)로 바꿔 쓸 수 있어요. 성공이 정부 예산 하나에 걸려 있다는 뒷말이 단서예요. swing open 은 hinge(경첩)의 사전 첫 뜻 '경첩으로 열리다'를 옮긴 것이라 문맥과 맞지 않고, be modeled(본뜨다)·be fastened(고정되다)도 '조건에 달렸다'는 뜻이 아니에요."
+],
+[
+2,
+1,
+"vocab",
+null,
+"밑줄 친 overlook의 문맥상 뜻을 가장 잘 풀어 쓴 것을 고르시오.\nFrom the old customs house, whose upper terraces <u>overlook</u> the harbor, visitors can watch container ships glide past the lighthouse and into the busy port below.",
+[
+"fail to notice",
+"stand guard over",
+"lie hidden from",
+"command a view of"
+],
+[
+4
+],
+"overlook 은 여기서 '내려다보다, 전망하다'라 command a view of 와 같아요. 테라스에서 배가 지나가는 것을 볼 수 있다는 뒷말이 단서예요. fail to notice(못 보고 지나치다)는 overlook 의 흔한 사전 뜻이지만 이 문맥과는 맞지 않아요. stand guard over(지키다)·lie hidden from(가려져 있다)은 뜻이 달라요."
+],
+[
+3,
+1,
+"vocab",
+null,
+"밑줄 친 impenetrable의 문맥상 뜻과 가장 가까운 것을 고르시오.\nConsumer advocates complain that the terms of service for many popular apps are <u>impenetrable</u>: page after page of legal jargon that almost nobody reads before tapping the button to accept them.",
+[
+"impeccable",
+"incomprehensible",
+"impetuous",
+"impartial"
+],
+[
+2
+],
+"impenetrable 은 원래 '뚫을 수 없는'이고 글·말에 쓰면 '도무지 이해할 수 없는'이라 incomprehensible 과 가까워요. 법률 용어가 끝없이 이어져 아무도 읽지 않는다는 뒷말이 단서예요. impeccable(흠잡을 데 없는)·impetuous(성급한)·impartial(공정한)은 머리글자만 닮은 낱말이에요."
+],
+[
+4,
+1,
+"cloze",
+null,
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.\nIn March 2024 the Bank of Japan raised its short-term interest rate for the first time in seventeen years, ending the world's last remaining policy of negative interest rates. For eight years, commercial banks had in effect paid a small charge to park surplus reserves at the central bank, a measure intended to divert money into lending and to lift prices that had been (A) ____ for decades. The decision had been widely anticipated, and financial markets responded with notable calm. Economists emphasized that the adjustment was modest: borrowing costs remained close to zero, and the bank indicated that any further increases would be incremental. For many households, the most (B) ____ effect was expected to materialize not in mortgage payments but in savings accounts, which had earned almost nothing for a generation.",
+[
+"(A) flat — (B) negligible",
+"(A) stagnant — (B) tangible",
+"(A) soaring — (B) tangible",
+"(A) volatile — (B) negligible"
+],
+[
+2
+],
+"(A) 물가를 '끌어올리려' 했다니 물가는 수십 년 제자리였어요. stagnant·flat 둘 다 이 칸에 맞고, soaring(치솟는)·volatile(널뛰는)은 끌어올릴 까닭과 맞지 않아요. 답은 (B)에서 갈려요. 거의 이자가 없던 예금 통장에서 변화가 '눈에 띄게' 드러난다는 말이니 tangible 이 맞고, negligible(무시해도 될)은 not A but B 로 강조한 흐름과 어긋나요."
+],
+[
+5,
+1,
+"cloze",
+null,
+"빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.\nIn July 2024 Japan put new banknotes into circulation for the first time in twenty years. The 10,000-yen note now bears the portrait of Shibusawa Eiichi, an industrialist who helped found hundreds of companies in the late nineteenth century. The new notes also carry three-dimensional holograms designed to make them harder to counterfeit. To some observers the redesign seemed curiously timed. Cashless payments had been proliferating steadily, and the government itself was encouraging people to rely less on coins and paper money. Officials insisted, however, that cash was far from ____. Many elderly residents still preferred it, small retailers in rural areas often accepted nothing else, and in a country prone to earthquakes, notes and coins keep working when power lines and phone networks fail.",
+[
+"obsolete",
+"indispensable",
+"ubiquitous",
+"prevalent"
+],
+[
+1
+],
+"far from 은 '전혀 ~이 아닌'이에요. 노인들이 여전히 현금을 좋아하고 시골 가게는 현금만 받으며 지진 때도 쓸 수 있다는 뒷말은 현금이 '한물가지(obsolete)' 않았다는 근거예요. indispensable(없어서는 안 될)·ubiquitous·prevalent(널리 퍼진)를 넣으면 '전혀 필요하지 않다·흔하지 않다'가 되어 뒷말과 어긋나요."
+],
+[
+6,
+1,
+"grammar",
+null,
+"다음 글의 밑줄 친 부분 가운데 어법상 틀린 것을 고르시오.\nIn March 2025 a fire at an electrical substation in west London ①<u>cut</u> power to Heathrow, forcing one of Europe's busiest airports to close for most of a day. More than a thousand flights were canceled or diverted, and passengers ②<u>stranded</u> as far away as Asia and North America waited anxiously for news. The airport had backup generators, but they were intended ③<u>to keep</u> essential safety systems running, not to supply entire terminals. The shutdown, which ④<u>was occurred</u> without warning in the early hours of the morning, raised awkward questions about how a single fault could paralyze such a vital piece of national infrastructure. Airlines needed several days to return their aircraft and crews to the places where they were supposed to be.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+4
+],
+"occur 는 목적어를 받지 않는 자동사라 수동태가 될 수 없어요. which occurred 가 맞아요. passengers stranded 는 '발이 묶인 승객'이라는 과거분사 꾸밈이고, be intended to keep 도 맞는 꼴이에요."
+],
+[
+7,
+1,
+"reading",
+"r1-s1",
+"윗글의 (A)~(D) 가운데 어법상 틀린 것을 고르시오.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+4
+],
+"Because 절의 주어 holders 에 동사가 있어야 하므로 calculating 이 아니라 calculate 가 맞아요. scattered 는 틀려 보여도 '흩어져 있는' 자전거를 꾸미는 과거분사이고, that 은 aspiration 의 내용을 잇는 동격절, while 은 대조의 접속사예요."
+],
+[
+8,
+1,
+"reading",
+"r1-s1",
+"윗글에서 추론할 수 없는 것을 고르시오.",
+[
+"The Climate Card was meant in part to discourage the use of cars for short journeys.",
+"Germany introduced its nationwide transit pass before Seoul launched the Climate Card.",
+"The Climate Card was the first flat-rate transit pass in Europe or Asia.",
+"Lowering fares alone may not persuade many drivers to switch to public transport."
+],
+[
+3
+],
+"글은 월 정액권이 '새롭지 않다(hardly new)'며 유럽 도시들과 2023년 독일 전국 정액권을 예로 들어요. 그러니 기후동행카드가 유럽·아시아 첫 정액권이라는 말은 끌어낼 수 없어요. 짧은 거리 차량 이용을 줄이려 했다는 것, 독일 정액권이 먼저라는 것, 운전자는 값보다 속도·편리함에 반응한다는 것은 글에 맞아요."
+],
+[
+9,
+1,
+"reading",
+"r1-s2",
+"빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"contested",
+"consistent",
+"obscure",
+"recent"
+],
+[
+2
+],
+"엥겔의 법칙은 '거의 모든 나라에서' 확인된 규칙이라, 소득 자료가 없을 때도 식비 비중으로 생활 수준을 가늠할 수 있다고 했어요. 늘 들어맞는(consistent) 규칙이라 쓸모 있다는 흐름이에요. contested(논란이 있는)·obscure(잘 알려지지 않은)는 그 쓸모와 맞지 않고, recent(최근의)는 1857년 발견과 어긋나요."
+],
+[
+10,
+1,
+"reading",
+"r1-s2",
+"윗글에서 추론할 수 없는 것을 고르시오.",
+[
+"Wealthy households spend less money on food in absolute terms than poor households do.",
+"The food share of spending can serve as an indicator where income data are lacking.",
+"Engel drew his conclusion from the household budgets of Belgian workers.",
+"A shrinking agricultural sector in a rich economy need not mean that people eat less."
+],
+[
+1
+],
+"글은 소득이 늘면 식비 '액수'는 대개 함께 늘고 '비중'만 줄어든다고 했어요. 부유한 가정이 식비를 더 적게 쓴다는 말은 끌어낼 수 없어요. 식비 비중이 생활 수준 지표가 된다는 것, 벨기에 노동자 가계부를 썼다는 것, 농업이 줄어도 덜 먹는 것은 아니라는 것은 글과 맞아요."
+],
+[
+11,
+1,
+"reading",
+"r1-s3",
+"밑줄 친 relentless의 문맥상 뜻과 가장 가까운 것을 고르시오.",
+[
+"morbid",
+"feigned",
+"nascent",
+"unremitting"
+],
+[
+4
+],
+"relentless 는 '끊임없는, 수그러들지 않는'이라 unremitting 과 가까워요. 고통·믿음·삶의 한순간이라는 주제가 그의 작품 전체에 걸쳐 이어졌다는 흐름이 단서예요. morbid(병적인)는 뜻이 다르고, feigned(꾸며 낸)·nascent(막 생겨난)는 '평생 붙든 관심사'와 맞지 않아요."
+],
+[
+12,
+1,
+"reading",
+"r1-s3",
+"윗글에서 추론할 수 있는 것을 고르시오.",
+[
+"The prisoners learned of their pardon long before they were brought to the square.",
+"The ceremony was an unplanned response to the sudden arrival of a messenger.",
+"The authorities meant the condemned men to expect death until the very last instant.",
+"Biographers agree that his faith was transformed on that single winter morning."
+],
+[
+3
+],
+"처형식 전체가 연출이었고 사면은 미리 정해져 있었다고 했으니, 당국은 죄수들이 마지막 순간까지 죽는다고 믿게 하려 한 거예요. 사면 소식은 마지막 순간에 왔고, 의식은 미리 꾸민 것이었어요. 믿음이 그날 아침 바뀌었다는 것은 일부 전기 작가의 견해일 뿐이고, 다른 이들은 시베리아 시절에 서서히 깊어졌다고 봐요."
+],
+[
+13,
+1,
+"reading",
+"r1-s4",
+"윗글의 (A)~(D) 가운데 문맥에 맞지 않는 낱말을 고르시오.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+3
+],
+"요리사에게는 쓸모 있지만(but) 공학자에게는 열이 꼭 필요할 때 빠져나가지 못하게 막는 증기막이 '골칫거리(nuisance)'예요. but 뒤 대조와 뒤 문장의 위험한 예를 보면 '축복(blessing)'은 흐름에 맞지 않아요. skate·rapidly·suppress 는 앞뒤 설명과 맞아요."
+],
+[
+14,
+1,
+"reading",
+"r1-s4",
+"빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"makes a drop boil away more quickly",
+"slows the rate at which a drop evaporates",
+"turns the layer of vapor back into liquid",
+"removes the cushion beneath the drop"
+],
+[
+2
+],
+"아주 뜨거운 판에서는 증기 층이 단열재 노릇을 해서 물방울이 오히려 더 오래 버틴다고 했어요. 판을 더 뜨겁게 하면 '증발이 느려진다'는 역설이 빈칸 자리예요. 더 빨리 끓어 없어진다는 말은 정반대이고, 증기 층이 사라진다는 말도 설명과 어긋나요."
+],
+[
+15,
+1,
+"reading",
+"r1-s5",
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.",
+[
+"(A) defects — (B) skepticism",
+"(A) flaws — (B) deference",
+"(A) safeguards — (B) skepticism",
+"(A) upgrades — (B) deference"
+],
+[
+1
+],
+"(A) 회계 부족분이 사실은 소프트웨어 '자체'에서 생겼다니 프로그램의 결함이 원인이에요. defects·flaws 둘 다 이 칸에 맞고, safeguards(안전장치)·upgrades(개선)는 맞지 않아요. 답은 (B)에서 갈려요. 컴퓨터가 옳다고 미리 믿어 준 탓에 억울한 유죄가 나왔으니 이제는 컴퓨터 증거를 더 '의심(skepticism)'해야 하느냐는 논쟁이에요. deference(존중)는 문제의 원인 쪽이에요."
+],
+[
+16,
+1,
+"reading",
+"r1-s5",
+"윗글의 내용과 맞지 않는 것을 고르시오.",
+[
+"The convictions were overturned one by one through individual court appeals.",
+"English courts had long presumed that computers were working properly.",
+"Many of the prosecutions were brought by the Post Office itself.",
+"Some lawyers objected that the new law sidestepped the judicial process."
+],
+[
+1
+],
+"의회가 법을 만들어 유죄 판결을 '한꺼번에(en masse)' 무효로 했다고 했어요. 법원 항소로 하나씩 뒤집혔다는 말이 글과 맞지 않아요. 컴퓨터가 정상이라고 보는 추정, 우체국이 직접 기소한 것, 법원을 건너뛴다는 비판은 글에 나와요."
+],
+[
+17,
+1,
+"reading",
+"r1-s6",
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.",
+[
+"(A) squalid — (B) critical",
+"(A) spacious — (B) enthusiastic",
+"(A) orderly — (B) critical",
+"(A) unsanitary — (B) enthusiastic"
+],
+[
+4
+],
+"(A) gloomy, congested 와 나란히 놓인 낱말이라 '불결한' 뜻이 와요. unsanitary·squalid 둘 다 이 칸에 맞고, spacious(널찍한)·orderly(정돈된)는 narrow 와 어긋나요. 답은 (B)에서 갈려요. 뒤에 쫓겨난 주민 이야기가 이어지니 비판자들은 '덜 열광적(less enthusiastic)'이었다는 흐름이에요. less critical 이면 정반대가 돼요."
+],
+[
+18,
+1,
+"reading",
+"r1-s6",
+"윗글에서 추론할 수 없는 것을 고르시오.",
+[
+"Historians now agree that the boulevards were built chiefly to put down uprisings.",
+"Many poorer Parisians had to move away from the center as rents rose.",
+"The expense of the projects contributed to his removal from office.",
+"The rebuilding of Paris involved work below ground as well as above it."
+],
+[
+1
+],
+"넓은 대로가 폭동 진압용이었다는 주장은 '역사가들이 아직도 논쟁한다(still debate)'고 했어요. 지금은 다들 동의한다는 말은 끌어낼 수 없어요. 가난한 주민이 밀려난 것, 빚 때문에 물러난 것, 하수도·수도관 공사는 글에 나와요."
+],
+[
+19,
+1,
+"reading",
+"r1-s7",
+"빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"raise the official age of retirement",
+"free up positions for younger job seekers",
+"attract more immigrants into the workforce",
+"reduce the cost of public pensions"
+],
+[
+2
+],
+"일자리 양이 정해져 있다는 오류에 기대어 나이 든 사람을 일찍 내보냈으니, 그 목적은 젊은 사람에게 '자리를 비워 주는 것'이에요. 같은 문장의 retire early 와 바로 뒤 문장의 employment among the young 이 단서예요. 정년을 올린다는 말은 조기 은퇴와 반대이고, 이민자·연금 절감은 이 정책의 목적으로 나오지 않아요. 연금은 오히려 큰돈이 들었다고 했어요."
+],
+[
+20,
+1,
+"reading",
+"r1-s7",
+"윗글의 내용과 가장 거리가 먼 것을 고르시오.",
+[
+"The wages that workers receive create demand that sustains employment elsewhere.",
+"Technological change can inflict heavy losses on members of a particular trade.",
+"Early retirement schemes in Europe markedly lowered youth unemployment.",
+"Nations with more older people in work often saw stronger youth employment too."
+],
+[
+3
+],
+"비교 연구는 조기 은퇴 정책이 목적을 이뤘다는 증거를 거의 찾지 못했다고 했어요. 젊은 층 실업을 크게 줄였다는 말이 글과 가장 거리가 멀어요. 임금이 수요를 만든다는 것, 기술 변화가 특정 직종에 큰 피해를 줄 수 있다는 것, 나이 든 사람이 더 일하는 나라에서 젊은 층 고용도 높았다는 것은 글에 나와요."
+],
+[
+21,
+1,
+"reading",
+"r1-s8",
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.",
+[
+"(A) retained — (B) seamless",
+"(A) replaced — (B) smooth",
+"(A) replaced — (B) troubled",
+"(A) retained — (B) contentious"
+],
+[
+2
+],
+"(B) 뒤에 선수 불만과 시스템이 꺼진 사고가 이어지니 첫 대회가 '순탄하지' 않았다는 말이라 smooth·seamless 둘 다 이 칸에 맞아요. 답은 (A)에서 갈려요. 윔블던이 호주오픈·US오픈과 같은 방식이 됐다니 두 대회는 이미 선심을 기계로 '바꾼(replaced)' 상태였고, retained(유지했다)면 어긋나요."
+],
+[
+22,
+1,
+"reading",
+"r1-s8",
+"윗글에서 추론할 수 없는 것을 고르시오.",
+[
+"Electronic systems were already trusted to review disputed calls before 2025.",
+"The incident at Wimbledon resulted from a flaw in the camera software.",
+"Wimbledon was not the first major championship to do without line judges.",
+"Automation can make the failures that still occur more noticeable."
+],
+[
+2
+],
+"클럽은 시스템이 꺼진 사고를 기술이 아니라 '사람의 실수(human error)' 탓으로 돌렸다고 했어요. 카메라 소프트웨어 결함 때문이라는 말은 끌어낼 수 없어요. 판정 검토에 이미 카메라를 썼다는 것, 다른 두 대회가 먼저였다는 것, 남은 실패가 더 눈에 띈다는 것은 글에 나와요."
+],
+[
+23,
+1,
+"reading",
+"r1-s9",
+"글의 흐름으로 보아 다음 문장이 들어가기에 가장 알맞은 곳을 고르시오.\nSo strange did it sound that some listeners reportedly could not tell which instrument was playing.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]"
+],
+[
+3
+],
+"주어진 문장의 it 은 '어떤 악기가 연주하는지 모를 만큼 낯선 소리'를 가리켜요. 바순이 불편할 만큼 높은 음역으로 첫 선율을 분다는 문장 바로 뒤에 와야 it 이 그 선율을 받아요. 다른 표시 앞에는 악기 이야기가 없어요."
+],
+[
+24,
+1,
+"reading",
+"r1-s9",
+"윗글의 내용과 가장 가까운 것을 고르시오.",
+[
+"Nijinsky abandoned the performance as soon as the jeering began.",
+"The ballet stayed out of favor in Paris for many years after its debut.",
+"Accounts of the uproar on opening night may have grown more lurid with retelling.",
+"Historians blame the commotion solely on rivalry between factions in the audience."
+],
+[
+3
+],
+"그날 밤 소동이 얼마나 컸는지는 기록마다 다르고 가장 화려한 이야기는 여러 해 뒤에 적혔다고 했으니, 소동 이야기가 다시 전해지며 부풀었을 수 있다는 말이 가장 가까워요. 니진스키는 공연을 멈추지 않고 박자를 외쳤고, 작품은 1년 안에 평가가 뒤집혔어요. 관객 분열은 음악·춤과 함께 든 원인 후보 가운데 하나일 뿐 '오로지' 그 탓이라고 하지 않았어요."
+],
+[
+25,
+1,
+"reading",
+"r1-s10",
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.",
+[
+"(A) obscure — (B) abandoned",
+"(A) elusive — (B) imitated",
+"(A) obvious — (B) imitated",
+"(A) apparent — (B) abandoned"
+],
+[
+2
+],
+"(A) 1970년대 전자 현미경으로 보고서야 비밀이 풀렸으니 그전까지는 '알기 어려웠다'는 말이 와요. elusive·obscure 둘 다 이 칸에 맞고, obvious·apparent(뻔한)는 현미경이 필요했다는 말과 어긋나요. 답은 (B)에서 갈려요. 특허를 내고 페인트·옷감 같은 제품에 쓰였다니 연잎 원리를 '본떴다(imitated)'가 맞고, abandoned(버려진)는 뒤의 제품 예와 어긋나요."
+],
+[
+26,
+1,
+"reading",
+"r1-s10",
+"윗글의 내용과 맞는 것을 고르시오.",
+[
+"Under the microscope Barthlott found the lotus leaf to be unusually even and flat.",
+"Artificial water-repellent coatings prove more durable than the surface of a living leaf.",
+"A leaf stays free of dirt chiefly because its surface is smoother than that of other plants.",
+"Specks of grime adhere more strongly to rolling droplets than to the leaf itself."
+],
+[
+4
+],
+"먼지가 잎보다 물방울에 더 잘 달라붙어 물방울이 굴러가며 쓸어 간다고 했어요. 잎 표면은 매끈하지 않고 돌기투성이였고, 인공 코팅은 긁히면 성질을 잃지만 식물은 왁스를 다시 만들어 내니 인공 코팅이 더 오래간다는 말도 틀려요. 매끈할수록 깨끗하다는 것은 글이 반박한 옛 통념이에요."
+],
+[
+27,
+1,
+"reading",
+"r1-s11",
+"주어진 첫 문단 다음에 이어질 (A)~(C)의 순서로 가장 알맞은 것을 고르시오.",
+[
+"(B) – (A) – (C)",
+"(A) – (C) – (B)",
+"(B) – (C) – (A)",
+"(C) – (A) – (B)"
+],
+[
+1
+],
+"첫 문단의 '세율 낮은 나라로 이익 옮기기'를 (B)의 these profits 가 받고, (B) 끝의 15% 최저세 합의를 (A)의 the agreement 가 받아요. 마지막으로 (C)가 2025년 미국의 이탈로 시행이 순탄치 않다고 맺어요."
+],
+[
+28,
+1,
+"reading",
+"r1-s11",
+"윗글의 내용과 맞는 것을 고르시오.",
+[
+"Washington was among the first governments to enforce the levy, beginning in 2024.",
+"The accord was reached swiftly, without prolonged international bargaining.",
+"Backers of the accord welcomed the exemptions for American groups as a sensible compromise.",
+"The levy leaves the great majority of modest-sized enterprises untouched."
+],
+[
+4
+],
+"규칙은 연 매출 7억 5천만 유로 이상 그룹에만 적용되어 작은 회사 대부분은 영향이 없다고 했어요. 미국은 오히려 규칙을 따르지 않겠다고 했고, 합의는 여러 해 협상 끝에 나왔어요. 합의를 지지한 쪽은 미국 예외가 허점을 다시 열 수 있다고 걱정했으니 '반겼다'는 말은 견해를 뒤바꾼 거예요."
+],
+[
+29,
+1,
+"reading",
+"r1-s12",
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.",
+[
+"(A) constrain — (B) accessible",
+"(A) celebrate — (B) arcane",
+"(A) curb — (B) arcane",
+"(A) cultivate — (B) accessible"
+],
+[
+3
+],
+"(A) 제멋대로 세금을 걷고 재판 없이 벌한 왕에 맞선 불만 목록이니 왕의 힘을 '억제하려' 했어요. curb·constrain 둘 다 이 칸에 맞고, celebrate(기리다)·cultivate(기르다)는 맞지 않아요. 답은 (B)에서 갈려요. 봉건 부담금·왕실 숲·강의 통발 이야기는 지금 독자에게 '낯설고 난해하게(arcane)' 보일 테니 accessible(쉽게 다가오는)은 맞지 않아요."
+],
+[
+30,
+1,
+"reading",
+"r1-s12",
+"[가]~[라] 문단을 글의 흐름에 맞게 가장 알맞게 늘어놓은 것을 고르시오.",
+[
+"[나] – [라] – [가] – [다]",
+"[나] – [가] – [라] – [다]",
+"[라] – [나] – [다] – [가]",
+"[나] – [다] – [라] – [가]"
+],
+[
+1
+],
+"1215년 헌장 서명이 처음([나])이고, [라]의 The peace it was meant to secure 가 그 헌장을 받아 곧 무효가 되고 내전이 났다고 이어요. [가]의 Yet the charter did not die 가 무효 선언 뒤 다시 발행된 이야기로 넘어가고, [다]가 17세기 이후의 명성과 오늘의 뜻으로 맺어요."
+],
+[
+1,
+2,
+"vocab",
+null,
+"밑줄 친 flatter의 문맥상 뜻을 가장 잘 풀어 쓴 것을 고르시오.\nCritics complained that the official portraits of the minister were designed to <u>flatter</u> him, smoothing away his wrinkles and making him look a decade younger than he actually was.",
+[
+"compliment insincerely",
+"frame elaborately",
+"satirize subtly",
+"show favorably"
+],
+[
+4
+],
+"flatter 는 여기서 '실제보다 낫게 보이게 하다'라 show favorably 로 바꿀 수 있어요. 주름을 지우고 열 살은 젊어 보이게 했다는 뒷말이 단서예요. compliment insincerely(입에 발린 칭찬을 하다)는 flatter 의 사전 첫 뜻이지만 초상화가 하는 일과 맞지 않아요. frame elaborately(화려하게 액자에 넣다)·satirize subtly(은근히 풍자하다)는 뜻이 달라요."
+],
+[
+2,
+2,
+"vocab",
+null,
+"밑줄 친 slim의 문맥상 뜻을 가장 잘 풀어 쓴 것을 고르시오.\nWith only two days left before the deadline and dozens of ballots still uncounted in her opponent's strongholds, the incumbent's chances of retaining her seat looked <u>slim</u>.",
+[
+"attractively thin",
+"rather small",
+"hard to measure",
+"widely discussed"
+],
+[
+2
+],
+"slim 은 chances 와 함께 쓰여 '가능성이 희박한'이라 rather small 과 같아요. 상대 텃밭에서 표가 아직 많이 남았다는 앞말이 단서예요. attractively thin(날씬한)은 slim 의 사전 첫 뜻을 옮긴 것이라 문맥과 맞지 않고, hard to measure(재기 어려운)·widely discussed(널리 논의된)는 뜻이 달라요."
+],
+[
+3,
+2,
+"vocab",
+null,
+"밑줄 친 laudable의 문맥상 뜻과 가장 가까운 것을 고르시오.\nThe charity's ambition of providing free breakfasts to every pupil in the district was <u>laudable</u>, but auditors observed that the program had been launched without any coherent plan for paying its cooks once the initial grant expired.",
+[
+"commendable",
+"laborious",
+"laconic",
+"lucrative"
+],
+[
+1
+],
+"laudable 은 '칭찬할 만한'이라 commendable 과 같은 뜻이에요. but 뒤에 계획이 허술했다는 비판이 이어지니 앞에는 목표 자체를 칭찬하는 말이 와요. laborious(힘든)·laconic(말수 적은)·lucrative(돈벌이가 되는)는 머리글자만 닮은 낱말이에요."
+],
+[
+4,
+2,
+"cloze",
+null,
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.\nIn February 2024 Parisians voted in a local referendum to triple on-street parking charges for visitors driving heavy cars, a measure aimed chiefly at the sport utility vehicles that had proliferated on the capital's streets. The rules took effect that October. Drivers of combustion-engine and hybrid vehicles weighing more than 1.6 tonnes, or of electric cars weighing more than 2 tonnes, must now pay 18 euros an hour in the city center. Proponents argued that such vehicles occupy more space, consume more energy, and are more (A) ____ to pedestrians in collisions. Opponents retorted that turnout had been dismal, under 6 percent of registered voters, and questioned whether so meager a vote could (B) ____ such a sweeping change. Residents of Paris, notably, were exempt from the new charges.",
+[
+"(A) dangerous — (B) obstruct",
+"(A) benign — (B) legitimize",
+"(A) hazardous — (B) legitimize",
+"(A) harmless — (B) obstruct"
+],
+[
+3
+],
+"(A) 큰 차를 비판하는 근거이니 충돌 때 보행자에게 더 위험하다는 말이 와요. hazardous·dangerous 둘 다 이 칸에 맞고, benign·harmless(해가 없는)는 반대예요. 답은 (B)에서 갈려요. 투표율이 6%도 안 됐다며 반대한 사람들이 문제 삼은 것은 그런 적은 표가 큰 변화를 '정당화할(legitimize)' 수 있느냐예요. obstruct(가로막다)는 반대자의 논리와 맞지 않아요."
+],
+[
+5,
+2,
+"cloze",
+null,
+"빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.\nOn September 19, 2024, Shohei Ohtani of the Los Angeles Dodgers became the first player in the history of Major League Baseball to hit 50 home runs and steal 50 bases in a single season. He reached both milestones in the same game, an astonishing performance in Miami in which he hit three home runs and stole two bases. The feat was all the more remarkable because Ohtani, renowned for excelling as both a pitcher and a hitter, did not pitch at all that year while recovering from elbow surgery. Before that season only five players had ever managed even 40 of each, and many analysts had regarded a 50-50 season as virtually ____, given how rarely a single player combines such prodigious power with such speed.",
+[
+"routine",
+"trivial",
+"inevitable",
+"unattainable"
+],
+[
+4
+],
+"40-40도 다섯 명뿐이었고 힘과 빠르기를 함께 갖춘 선수가 드물다고 했으니, 50-50은 '사실상 이룰 수 없는(unattainable)' 기록으로 여겨졌어요. routine(흔한)·trivial(하찮은)·inevitable(피할 수 없는)은 '드물다'는 근거와 어긋나요."
+],
+[
+6,
+2,
+"grammar",
+null,
+"다음 글의 밑줄 친 부분 가운데 어법상 틀린 것을 고르시오.\nIn January 2024 the US Securities and Exchange Commission approved the first exchange-traded funds ①<u>that</u> hold bitcoin directly, ending roughly a decade of rejections. Billions of dollars ②<u>flowed</u> into the new funds within weeks, as ordinary investors, who were accustomed to ③<u>buy</u> shares through brokerage accounts, gained exposure to the cryptocurrency without having to store it. The price of bitcoin climbed sharply in the months that followed. The agency's chairman, however, stressed that approving the products did not amount to ④<u>endorsing</u> bitcoin, which he characterized as a speculative and volatile asset, and he urged investors to remain cautious. Many analysts nonetheless saw the approval as a turning point for an industry long regarded with suspicion by regulators.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"be accustomed to 의 to 는 전치사라 뒤에 동명사가 와야 해요. buy 가 아니라 buying 이 맞아요. 틀려 보이는 endorsing 은 amount to 의 to 가 전치사라 동명사가 맞고, that 은 funds 를 꾸미는 관계대명사, flowed 는 과거 동사예요."
+],
+[
+7,
+2,
+"reading",
+"r2-s1",
+"윗글의 (A)~(D) 가운데 어법상 틀린 것을 고르시오.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+4
+],
+"towns 는 사람이 '설계한' 대상이라 수동의 과거분사 designed 가 꾸며야 해요. designing 이면 도시가 무언가를 설계한다는 뜻이 돼요. corroded 는 '부식된' 관이라 맞고, was designed to 는 법이 '~하도록 만들어졌다', many of whom 은 owners 를 받는 관계대명사로 맞아요."
+],
+[
+8,
+2,
+"reading",
+"r2-s1",
+"윗글에서 추론할 수 없는 것을 고르시오.",
+[
+"Allowing greater density is meant partly to make reconstruction financially feasible.",
+"The special law reduced the density of housing permitted in the old new towns.",
+"Relocating residents during construction could affect rents in nearby areas.",
+"The new towns were originally built in response to high housing prices."
+],
+[
+2
+],
+"특별법은 보통 규정보다 '훨씬 높은 밀도'를 허용한다고 했으니, 밀도를 낮췄다는 말은 끌어낼 수 없어요. 더 많은 가구로 공사비를 메우려는 것, 이주 수요가 주변 임대료를 밀어 올릴 수 있다는 것, 집값 급등에 맞서 신도시를 지었다는 것은 글에 나와요."
+],
+[
+9,
+2,
+"reading",
+"r2-s2",
+"빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"more expensive to provide",
+"a larger share of national spending",
+"costlier relative to manufactured goods",
+"less efficient"
+],
+[
+4
+],
+"'질병'이라는 이름이 오해를 부른다고 한 까닭은, 서비스가 나빠지거나 '덜 효율적으로(less efficient)' 된 게 아니라 단지 상대적으로 비싸졌을 뿐이기 때문이에요. 나머지 셋은 글에서 실제로 일어난다고 한 일이라, not 뒤에 넣으면 글과 어긋나요."
+],
+[
+10,
+2,
+"reading",
+"r2-s2",
+"윗글에서 추론할 수 없는 것을 고르시오.",
+[
+"The productivity of live musical performance has changed little over the centuries.",
+"Wages in service occupations are tied to wages elsewhere in the economy.",
+"Baumol believed that rising costs meant society could no longer afford education.",
+"Baumol and Bowen drew on an example from music to illustrate their idea."
+],
+[
+3
+],
+"보몰은 다른 분야 생산성이 치솟았기 때문에 부유한 사회는 오히려 의료·교육을 '감당할 수 있다'고 했어요. 더는 감당할 수 없다고 믿었다는 말은 끌어낼 수 없어요. 나머지는 현악 사중주 예와 임금 설명에 그대로 나와요."
+],
+[
+11,
+2,
+"reading",
+"r2-s3",
+"밑줄 친 impeccable의 문맥상 뜻과 가장 가까운 것을 고르시오.",
+[
+"flawless",
+"voluminous",
+"ostentatious",
+"clandestine"
+],
+[
+1
+],
+"impeccable 은 '흠잡을 데 없는'이라 flawless 와 같아요. 장부가 완벽해야 작은 차이로도 실수나 도둑질을 바로 알아챌 수 있다는 흐름이 단서예요. voluminous(분량이 많은)·ostentatious(과시하는)·clandestine(은밀한)은 장부에 붙일 수는 있어도 장부를 꼼꼼히 맞춘다는 뜻과 상관없어요."
+],
+[
+12,
+2,
+"reading",
+"r2-s3",
+"윗글에서 추론할 수 있는 것을 고르시오.",
+[
+"Pacioli wrote his treatise in Latin for an audience of university scholars.",
+"Most of the pages of the friar's compendium were devoted to accounting.",
+"Before Pacioli, double-entry bookkeeping was usually acquired through practical training.",
+"Historians unanimously agree that double-entry bookkeeping created capitalism."
+],
+[
+3
+],
+"파치올리의 공은 복식 부기를 '오랜 도제 수업 대신 책으로' 배울 수 있게 설명한 것이라 했어요. 그전에는 주로 현장 수련으로 익혔다고 추론할 수 있어요. 책은 라틴어가 아니라 이탈리아어였고, 회계 부분은 600쪽 가운데 27쪽쯤이며, 자본주의 주장에는 반론도 있다고 했어요."
+],
+[
+13,
+2,
+"reading",
+"r2-s4",
+"윗글의 (A)~(D) 가운데 문맥에 맞지 않는 낱말을 고르시오.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+3
+],
+"기차가 다가올 때 높고 멀어질 때 낮게 들렸다는 결과는 도플러가 '예측한(predicted)' 그대로였다는 말이 되어야 해요. '의심했던(doubted)' 대로라면 그의 생각이 틀렸다는 뜻이 되어 흐름과 어긋나요. compressed·falls·startling 은 앞뒤와 맞아요."
+],
+[
+14,
+2,
+"reading",
+"r2-s4",
+"빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"is expanding, carrying galaxies away from one another",
+"is slowly contracting toward a single center",
+"has remained the same size since its origin",
+"revolves around our own galaxy at great speed"
+],
+[
+1
+],
+"멀어지는 은하의 빛은 붉은 쪽으로 밀리는데, 먼 은하가 거의 모두 붉게 밀리고 멀수록 더 밀린다면 은하들이 서로 멀어지고 있다는 뜻이에요. 그래서 '우주가 팽창하고 있다'가 결론이에요. 수축하거나 크기가 그대로라는 말은 적색 편이와 반대예요."
+],
+[
+15,
+2,
+"reading",
+"r2-s5",
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.",
+[
+"(A) modest — (B) opportunism",
+"(A) limited — (B) generosity",
+"(A) enormous — (B) opportunism",
+"(A) immense — (B) generosity"
+],
+[
+1
+],
+"(A) 1997년부터 통화위원회 제도로 이미 통화 정책을 거의 스스로 정하지 못했으니 유로를 받아들여 잃는 것은 크지 않았어요. modest·limited 둘 다 이 칸에 맞고, enormous·immense(막대한)는 맞지 않아요. 답은 (B)에서 갈려요. 전환을 틈타 값을 올려 받는 상인의 행태는 '기회주의(opportunism)'이고, generosity(너그러움)는 정반대예요."
+],
+[
+16,
+2,
+"reading",
+"r2-s5",
+"윗글의 내용과 맞지 않는 것을 고르시오.",
+[
+"Mundell analyzed when regions might benefit from sharing a currency.",
+"A shared currency removes the risk of fluctuating exchange rates.",
+"Retailers were obliged for a while to post prices in lev and euro alike.",
+"Before joining the euro, Bulgaria freely set its own interest rates."
+],
+[
+4
+],
+"통화위원회 아래에서 레프가 마르크·유로에 묶여 불가리아는 통화 정책을 거의 스스로 정하지 못했다고 했어요. 금리를 자유롭게 정했다는 말이 글과 맞지 않아요. 나머지는 먼델의 논의와 두 통화 가격 표시 의무로 글에 나와요."
+],
+[
+17,
+2,
+"reading",
+"r2-s6",
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.",
+[
+"(A) traceable — (B) prudence",
+"(A) anonymous — (B) excesses",
+"(A) accountable — (B) excesses",
+"(A) invisible — (B) prudence"
+],
+[
+3
+],
+"(A) 카드·스마트폰으로 등록해 이용 기록을 추적할 수 있게 했으니 이용자를 '책임지게, 추적할 수 있게' 만든 거예요. accountable·traceable 둘 다 이 칸에 맞고, anonymous(익명의)·invisible(보이지 않는)은 도둑 문제를 풀지 못한 예전 방식이에요. 답은 (B)에서 갈려요. 수백만 대가 쏟아졌다가 회사가 망하고 버려진 자전거 더미가 남았으니 붐의 '지나침(excesses)'을 상징하고, prudence(신중함)는 정반대예요."
+],
+[
+18,
+2,
+"reading",
+"r2-s6",
+"윗글에서 추론할 수 없는 것을 고르시오.",
+[
+"The white bicycles of 1965 were withdrawn because riders refused to pay deposits.",
+"Linking each trip to a registered user helped curb the theft of bicycles.",
+"Dockless bicycles could be left in places other than fixed stations.",
+"The rapid growth of dockless fleets prompted cities to impose new rules."
+],
+[
+1
+],
+"1965년 하얀 자전거는 경찰이 '잠그지 않은 자전거' 규칙을 들어 거둬 가면서 끝났어요. 보증금은 1990년대 코펜하겐 이야기라, 보증금을 안 내서 거둬들였다는 말은 끌어낼 수 없어요. 나머지는 글에 나와요."
+],
+[
+19,
+2,
+"reading",
+"r2-s7",
+"빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"accuracy improves with each retelling",
+"vividness is a poor guide to their accuracy",
+"details usually fade within a few days",
+"emotional content makes them impossible to recall"
+],
+[
+2
+],
+"학생들은 틀리게 기억하면서도 확신에 차 있었고, 감정은 정확성보다 '확신'을 키운다고 했어요. 그러니 생생함은 정확성을 알려 주는 믿을 만한 잣대가 아니라는 말이 빈칸에 맞아요. 다시 말할수록 정확해진다거나 며칠 만에 사라진다는 말은 글에 없어요."
+],
+[
+20,
+2,
+"reading",
+"r2-s7",
+"윗글의 내용과 가장 거리가 먼 것을 고르시오.",
+[
+"Brown and Kulik believed that shocking news could preserve memories with special fidelity.",
+"Confidence in a memory may stay high even as its accuracy declines.",
+"Neisser and Harsch found that the later accounts were almost always accurate.",
+"The students first recorded their experience shortly after the disaster."
+],
+[
+3
+],
+"두 해 반 뒤 다시 물었을 때 많은 학생의 기억이 처음 기록과 크게 달랐고 아예 틀린 것도 있었다고 했어요. 나중 기억이 거의 늘 정확했다는 말이 글과 가장 거리가 멀어요. 나머지는 브라운·쿨릭의 주장, 확신은 그대로라는 결론, 사고 다음 날 아침 기록과 맞아요."
+],
+[
+21,
+2,
+"reading",
+"r2-s8",
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.",
+[
+"(A) inaccurate — (B) rivals",
+"(A) accurate — (B) expectations",
+"(A) precise — (B) rivals",
+"(A) imprecise — (B) expectations"
+],
+[
+4
+],
+"(A) 경사나 분화구 근처에서는 부정확한 착륙이 치명적일 수 있어서 정밀 착륙이 중요하다는 흐름이에요. imprecise·inaccurate 둘 다 이 칸에 맞고, accurate·precise 는 거꾸로예요. 답은 (B)에서 갈려요. 견디도록 설계되지 않은 밤을 여러 번 넘겼으니 설계자들의 '기대(expectations)'를 훌쩍 넘어선 것이고, rivals(경쟁자)는 앞에 나온 적이 없어요."
+],
+[
+22,
+2,
+"reading",
+"r2-s8",
+"윗글에서 추론할 수 없는 것을 고르시오.",
+[
+"SLIM landed farther from its target than earlier probes typically did.",
+"SLIM lost power because of the direction in which its solar panels faced.",
+"SLIM had not been built with surviving lunar nights in mind.",
+"A problem with an engine affected SLIM's final descent."
+],
+[
+1
+],
+"예전 탐사선은 수 킬로미터 넓이 안 어딘가에 내렸지만 SLIM은 목표에서 약 55미터 안에 내렸어요. 그러니 예전보다 목표에서 더 멀리 내렸다는 말은 끌어낼 수 없어요. 태양 전지판 방향 때문에 전기를 못 만든 것, 밤을 견디도록 설계되지 않은 것, 엔진 문제는 글에 나와요."
+],
+[
+23,
+2,
+"reading",
+"r2-s9",
+"글의 흐름으로 보아 다음 문장이 들어가기에 가장 알맞은 곳을 고르시오.\nWhoever lacks this immediate response, he concluded, can scarcely be called human.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]"
+],
+[
+2
+],
+"주어진 문장의 this immediate response 는 우물에 빠지려는 아이를 보고 '저절로' 일어나는 놀람과 측은한 마음을 가리켜요. 그래서 맹자의 우물 예 바로 뒤에 와야 해요. 다른 표시 앞에는 그런 반응 이야기가 없어요."
+],
+[
+24,
+2,
+"reading",
+"r2-s9",
+"윗글의 내용과 가장 가까운 것을 고르시오.",
+[
+"The two thinkers agreed on the value of education but not on its starting point.",
+"Mencius denied that the sprouts of virtue required any cultivation.",
+"Xunzi believed that people naturally shun strife and disorder.",
+"Later Confucian orthodoxy generally favored the position of Xunzi."
+],
+[
+1
+],
+"둘 다 교육과 예가 꼭 필요하다는 데는 뜻을 같이했지만 선함이 어디서 오는지(본성인지 노력인지)는 달랐다고 했어요. 맹자는 싹에 가꿈이 필요하다고 했고, 순자는 사람이 본래 다툼으로 흐른다고 봤으며, 후대 정통은 맹자 편이었어요."
+],
+[
+25,
+2,
+"reading",
+"r2-s10",
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.",
+[
+"(A) unobtainable — (B) vague",
+"(A) unachievable — (B) vivid",
+"(A) unremarkable — (B) vivid",
+"(A) unexceptional — (B) vague"
+],
+[
+2
+],
+"(A) 자연의 빛은 중파장 원뿔세포만 따로 자극할 수 없다고 했으니 그런 활동 패턴은 일상에서 얻을 수 없어요. unachievable·unobtainable 둘 다 이 칸에 맞고, unremarkable·unexceptional(흔한)은 레이저 실험이 필요했다는 말과 어긋나요. 답은 (B)에서 갈려요. Still(그래도)로 비판을 넘어 연구의 가치를 인정하는 흐름이니 '생생한(vivid)' 증명이고, vague(모호한)는 그 흐름과 맞지 않아요."
+],
+[
+26,
+2,
+"reading",
+"r2-s10",
+"윗글의 내용과 맞는 것을 고르시오.",
+[
+"Natural light can stimulate the medium-wavelength cones on their own.",
+"The laser in the experiment was aimed at individual cone cells.",
+"All vision scientists accept that the hue is an entirely novel color.",
+"The equipment used in the study could easily be taken outside the laboratory."
+],
+[
+2
+],
+"연구진은 망막을 지도로 그린 뒤 레이저로 중파장 원뿔세포 하나하나에 빛을 쐈다고 했어요. 자연광은 그 세포만 따로 자극하지 못하고, 새 색이 아니라는 반론이 있으며, 장치는 너무 복잡해 실험실 밖으로 나갈 수 없다고 했어요."
+],
+[
+27,
+2,
+"reading",
+"r2-s11",
+"주어진 첫 문단 다음에 이어질 (A)~(C)의 순서로 가장 알맞은 것을 고르시오.",
+[
+"(A) – (C) – (B)",
+"(C) – (B) – (A)",
+"(B) – (C) – (A)",
+"(C) – (A) – (B)"
+],
+[
+4
+],
+"첫 문단의 '두 정당 공약이 비슷하다'는 불만에 (C)가 경제학의 설명, 곧 호텔링의 가게 위치 연구로 답을 꺼내요. (A)의 Hotelling had himself hinted 가 호텔링을 받아 다운스의 정치 모형으로 옮기고, (B)의 this prediction 이 다운스의 예측을 받아 현실과의 차이로 맺어요."
+],
+[
+28,
+2,
+"reading",
+"r2-s11",
+"윗글의 내용과 맞는 것을 고르시오.",
+[
+"Hotelling expected rival shopkeepers to spread out evenly along the length of a street.",
+"The model implies that a party drifting away from the center risks losing support.",
+"Downs assumed that citizens back whichever party lies farther from their own views.",
+"Downs, rather than Hotelling, first studied where competing stores would choose to locate."
+],
+[
+2
+],
+"모형은 가운데에서 멀어진 정당이 치를 선거의 대가를 예측한다고 했으니, 중심에서 벗어나면 지지를 잃을 수 있다는 말이 맞아요. 호텔링은 가게들이 가운데에 나란히 모인다고 했고, 다운스는 유권자가 '더 가까운' 정당을 고른다고 가정했어요. 가게 위치를 먼저 연구한 사람은 호텔링이니 마지막 진술은 두 사람을 뒤바꾼 거예요."
+],
+[
+29,
+2,
+"reading",
+"r2-s12",
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.",
+[
+"(A) puzzled — (B) neglected",
+"(A) perplexed — (B) treasured",
+"(A) satisfied — (B) neglected",
+"(A) reassured — (B) treasured"
+],
+[
+1
+],
+"(A) 비밀 유지설, 왼손잡이설처럼 여러 설명이 맞서니 그 까닭은 오래 학자들을 어리둥절하게 했어요. puzzled·perplexed 둘 다 이 칸에 맞고, satisfied·reassured(안심한)는 맞지 않아요. 답은 (B)에서 갈려요. 노트가 팔리고 잘리고 상당 부분 사라졌다니 상속자들은 노트를 '소홀히 다뤘다(neglected)'이고, treasured(소중히 여겼다)는 뒤 내용과 반대예요."
+],
+[
+30,
+2,
+"reading",
+"r2-s12",
+"[가]~[라] 문단을 글의 흐름에 맞게 가장 알맞게 늘어놓은 것을 고르시오.",
+[
+"[다] – [라] – [가] – [나]",
+"[다] – [가] – [라] – [나]",
+"[가] – [다] – [나] – [라]",
+"[다] – [나] – [라] – [가]"
+],
+[
+2
+],
+"레오나르도의 노트와 거울 글씨를 소개하는 [다]가 처음이에요. [가]의 Why he wrote this way 가 거울 글씨를 받고, [라]의 Whatever the reason 이 그 까닭 논의를 받아 노트가 흩어진 뒷이야기로 넘어가요. 마지막 [나]의 Those that survive 가 남은 노트와 코덱스 레스터로 맺어요."
+],
+[
+1,
+3,
+"vocab",
+null,
+"밑줄 친 floor의 문맥상 뜻을 가장 잘 풀어 쓴 것을 고르시오.\nThe sheer scale of the fraud would <u>floor</u> even the most seasoned investigators, who had assumed that no bank could conceal losses of that magnitude from its auditors for so long.",
+[
+"knock to the ground",
+"thoroughly exhaust",
+"deeply offend",
+"utterly astonish"
+],
+[
+4
+],
+"floor 는 동사로 '말문이 막힐 만큼 놀라게 하다'라 utterly astonish 와 같아요. 그만큼 큰 손실을 숨길 수 있으리라 아무도 생각 못 했다는 뒷말이 단서예요. knock to the ground(바닥에 때려눕히다)는 floor 의 사전 첫 뜻을 옮긴 것이라 문맥과 맞지 않고, thoroughly exhaust(지치게 하다)·deeply offend(불쾌하게 하다)는 뜻이 달라요."
+],
+[
+2,
+3,
+"vocab",
+null,
+"밑줄 친 compromise의 문맥상 뜻을 가장 잘 풀어 쓴 것을 고르시오.\nSecurity experts warned that storing passwords in plain text on a shared server could <u>compromise</u> the privacy of every customer whose data the company held.",
+[
+"settle by mutual concession",
+"temporarily suspend",
+"formally regulate",
+"seriously endanger"
+],
+[
+4
+],
+"compromise 는 여기서 '위태롭게 하다, 손상하다'라 seriously endanger 와 같아요. 비밀번호를 암호 없이 저장했다는 위험한 상황이 단서예요. settle by mutual concession(서로 양보해 타협하다)은 compromise 의 사전 첫 뜻이지만 이 문맥과 맞지 않아요. temporarily suspend(잠시 멈추다)·formally regulate(규제하다)는 뜻이 달라요."
+],
+[
+3,
+3,
+"vocab",
+null,
+"밑줄 친 indiscriminate의 문맥상 뜻과 가장 가까운 것을 고르시오.\nEnvironmental groups condemned the <u>indiscriminate</u> use of pesticides on the island's farms, arguing that chemicals sprayed without regard to which insects were actually present were killing bees and butterflies along with the pests.",
+[
+"haphazard",
+"ingenious",
+"indefatigable",
+"insolvent"
+],
+[
+1
+],
+"indiscriminate 는 '가리지 않는, 마구잡이의'라 haphazard(되는대로의)와 가까워요. 어떤 벌레가 있는지 따지지 않고 뿌려 벌과 나비까지 죽인다는 뒷말이 단서예요. ingenious(기발한)·indefatigable(지칠 줄 모르는)·insolvent(파산한)는 머리글자만 닮은 낱말이에요."
+],
+[
+4,
+3,
+"cloze",
+null,
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.\nIn March 2024 Swiss voters approved a proposal to give pensioners a thirteenth monthly pension payment each year, the first time a popular initiative from the political left to expand the welfare state had prevailed in a national vote. Roughly 58 percent of voters backed the measure, despite (A) ____ from the government and most business associations, which warned that the country could not afford it. Advocates argued that escalating rents, health-insurance premiums, and food prices had steadily eroded the purchasing power of retirees, many of whom struggled to make ends meet. Because the initiative did not specify how the additional payments would be financed, the vote left parliament with the (B) ____ task of finding several billion francs a year, whether through higher payroll contributions, an increase in value-added tax, or cuts elsewhere.",
+[
+"(A) resistance — (B) effortless",
+"(A) opposition — (B) unenviable",
+"(A) endorsement — (B) unenviable",
+"(A) encouragement — (B) effortless"
+],
+[
+2
+],
+"(A) 정부와 경제 단체가 '감당할 수 없다'고 경고했으니 이들은 반대했어요. opposition·resistance 둘 다 이 칸에 맞고, endorsement·encouragement(지지)는 despite 와 어긋나요. 답은 (B)에서 갈려요. 재원도 정하지 않은 채 해마다 수십억 프랑을 마련해야 하니 '달갑지 않은(unenviable)' 일이고, effortless(손쉬운)는 흐름과 반대예요."
+],
+[
+5,
+3,
+"cloze",
+null,
+"빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.\nThe 2026 Winter Olympics, held in February in Milan and Cortina d'Ampezzo, were the first Games officially awarded to two host cities. They were also among the most geographically ____ in history. Events were staged at venues scattered across a vast swath of northern Italy, from the arenas of Milan to the ski slopes and sliding track of the Dolomites, some of them several hours apart by road. Organizers defended the arrangement as a deliberate break with precedent. Rather than constructing expensive new facilities that might later stand empty, they relied largely on existing venues, in keeping with the International Olympic Committee's recent emphasis on curbing costs. Critics countered that spreading the Games so widely diluted the atmosphere and complicated travel for athletes and spectators alike.",
+[
+"compact",
+"dispersed",
+"centralized",
+"concentrated"
+],
+[
+2
+],
+"경기장이 북이탈리아 넓은 지역에 흩어져 있고 차로 몇 시간 떨어진 곳도 있었다니 '지리적으로 흩어진(dispersed)' 대회예요. compact·centralized·concentrated(한데 모인)는 모두 반대예요."
+],
+[
+6,
+3,
+"grammar",
+null,
+"다음 글의 밑줄 친 부분 가운데 어법상 틀린 것을 고르시오.\nWhen Taylor Swift's Eras Tour ended in Vancouver in December 2024, it had earned more than two billion dollars from 149 shows across five continents. Never before ①<u>had a concert tour grossed</u> so much. Commentators coined the term Swiftonomics to describe the surge in spending on hotels, restaurants, and transport ②<u>that</u> accompanied each concert. Among the cities that benefited most ③<u>was</u> those in Europe and Asia where she performed only a few times, because fans traveled great distances ④<u>to attend</u>. Some governments even competed to secure performances, hoping to capture a share of the windfall for their local businesses. Skeptical economists cautioned, however, that much of this spending merely displaced purchases residents would otherwise have made.",
+[
+"①",
+"②",
+"③",
+"④"
+],
+[
+3
+],
+"Among ~ most 가 앞으로 나온 도치 문장이라 주어는 동사 뒤의 those(복수)예요. 그래서 was 가 아니라 were 가 맞아요. 틀려 보이는 had a concert tour grossed 는 Never before 뒤의 도치라 맞고, that 은 spending 을 꾸미는 관계대명사, to attend 는 목적을 나타내는 to부정사예요."
+],
+[
+7,
+3,
+"reading",
+"r3-s1",
+"윗글의 (A)~(D) 가운데 어법상 틀린 것을 고르시오.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+3
+],
+"while 은 접속사라 뒤에 주어 없이 이어지려면 분사 꼴이 되어야 해요. while addressing 이 맞아요. constitute 는 복수 주어(Bars, theaters ...)의 동사, chosen 은 advocate 를 꾸미는 과거분사, living 은 those 를 꾸미는 현재분사로 맞아요."
+],
+[
+8,
+3,
+"reading",
+"r3-s1",
+"윗글에서 추론할 수 없는 것을 고르시오.",
+[
+"Workers in the night-time economy include people outside the entertainment industry.",
+"Keeping trains and buses running after midnight can help crowds disperse quickly.",
+"Some critics believe residents are underrepresented in decisions about nightlife.",
+"London was the first city anywhere to appoint a nightlife official."
+],
+[
+4
+],
+"암스테르담의 밤 시장이 2010년대에 이미 주목받았고 런던은 2016년에 '자기 나름의' 밤 담당관을 뒀다고 했어요. 런던이 세계 처음이라는 말은 끌어낼 수 없어요. 청소·운전·의료 인력도 밤 경제에 든다는 것, 심야 교통, 주민 목소리가 작다는 비판은 글에 나와요."
+],
+[
+9,
+3,
+"reading",
+"r3-s2",
+"빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"beneficial",
+"wasteful",
+"irrelevant",
+"illegal"
+],
+[
+1
+],
+"빈칸 뒤 '주민이 원하는 것을 알맞은 값에 내놓게 밀어붙인다'는 좋은 결과를 설명하니, 지방 정부 사이 경쟁이 '이로울(beneficial)' 수 있다는 뜻이에요. wasteful(낭비적인)·irrelevant(상관없는)·illegal(불법인)은 그 설명과 맞지 않아요."
+],
+[
+10,
+3,
+"reading",
+"r3-s2",
+"윗글에서 추론할 수 없는 것을 고르시오.",
+[
+"Tiebout held that residents reveal their preferences for public goods by answering surveys honestly.",
+"The model presumes that people can move between municipalities with relative ease.",
+"Sorting among towns may widen the gap between rich and poor communities.",
+"Tiebout likened the choice of a town to the choice among shops."
+],
+[
+1
+],
+"글은 주민이 공공재를 얼마나 원하는지 '정직하게 말할 까닭이 없다'는 문제에서 출발해, 대신 사는 곳을 고르는 것으로 선호가 드러난다고 했어요. 설문에 정직하게 답해 드러낸다는 말은 끌어낼 수 없어요. 이사가 쉽다는 가정, 불평등 우려, 가게 고르기 비유는 글에 나와요."
+],
+[
+11,
+3,
+"reading",
+"r3-s3",
+"밑줄 친 infallible의 문맥상 뜻과 가장 가까운 것을 고르시오.",
+[
+"inscrutable",
+"immutable",
+"indispensable",
+"unerring"
+],
+[
+4
+],
+"infallible 은 '절대 틀리지 않는'이라 unerring 과 같아요. 이성의 권위는 남의 검토를 받는 데서 나온다는 뒷말이 '이성도 틀릴 수 있다'는 단서예요. inscrutable(헤아릴 수 없는)·immutable(변치 않는)·indispensable(없어서는 안 될)은 같은 꼴의 형용사이지만 뜻이 달라요."
+],
+[
+12,
+3,
+"reading",
+"r3-s3",
+"윗글에서 추론할 수 있는 것을 고르시오.",
+[
+"Kant demanded that officers be free to disobey orders they disagreed with.",
+"Kant expected enlightenment to arrive suddenly through a political revolution.",
+"Kant held that scholars, like officers on duty, must accept limits on what they publish.",
+"Kant thought many stay immature because thinking for oneself takes effort and courage."
+],
+[
+4
+],
+"미성숙은 지능이 아니라 결단과 용기가 모자라서이고, 남에게 기대는 것이 편하다고 했어요. 그러니 스스로 생각하는 데는 수고와 용기가 든다는 추론이 맞아요. 장교는 근무 중 명령을 따라야 하고, 계몽은 점진적이며, 학자가 독자에게 이성을 쓰는 일은 완전히 자유로워야 한다고 했으니 장교의 제한을 학자에게 옮긴 진술도 틀려요."
+],
+[
+13,
+3,
+"reading",
+"r3-s4",
+"윗글의 (A)~(D) 가운데 문맥에 맞지 않는 낱말을 고르시오.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+1
+],
+"소음은 눈에 보이는 흔적이 없는데도(yet) 수면 장애·심장병 위험과 이어진다고 했으니, 가장 '과소평가된(underestimated)' 오염이라야 흐름이 맞아요. '과대평가된(overestimated)'은 yet 뒤 내용과 어긋나요. exceeded·sobering·average 는 앞뒤와 맞아요."
+],
+[
+14,
+3,
+"reading",
+"r3-s4",
+"빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"exaggerate the noise levels of quiet streets",
+"understate brief bursts of sound that disrupt sleep",
+"record every passing vehicle with perfect precision",
+"ignore the layout of buildings along a road"
+],
+[
+2
+],
+"모델은 긴 시간에 걸쳐 소리를 '평균' 내기 때문에, 새벽 세 시 오토바이 한 대처럼 짧고 큰 소리는 묻혀 실제보다 작게 잡혀요. 그래서 '잠을 깨우는 짧은 소음을 작게 나타낸다'가 맞아요. 모델은 건물 배치를 넣어 계산한다고 했으니 건물 배치를 무시한다는 보기도 틀려요."
+],
+[
+15,
+3,
+"reading",
+"r3-s5",
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.",
+[
+"(A) lure — (B) symbolic",
+"(A) attract — (B) substantive",
+"(A) deter — (B) symbolic",
+"(A) discourage — (B) substantive"
+],
+[
+1
+],
+"(A) 금융 위기 뒤 죽어 가던 주택 시장을 살리려고 투자자에게 체류 허가를 줬으니 외국 자본을 끌어들이려 한 거예요. lure·attract 둘 다 이 칸에 맞고, deter·discourage(막다)는 반대예요. 답은 (B)에서 갈려요. 효과는 작고 '해법이 아니라 우선순위를 알리는 신호'라 했으니 실용보다 '상징적(symbolic)'이라는 말이 맞고, substantive(실질적인)는 그 흐름과 어긋나요."
+],
+[
+16,
+3,
+"reading",
+"r3-s5",
+"윗글의 내용과 맞지 않는 것을 고르시오.",
+[
+"Citizens of other EU countries could still buy Spanish property after the change.",
+"The scheme was originally designed to support a struggling housing market.",
+"Golden-visa buyers accounted for most of the property sales in Spain.",
+"Other European countries had also curtailed comparable programs."
+],
+[
+3
+],
+"골든 비자 매입은 전체 부동산 거래의 '작은 일부(a small fraction)'였다고 했어요. 대부분을 차지했다는 말이 글과 맞지 않아요. 나머지는 글에 그대로 나와요."
+],
+[
+17,
+3,
+"reading",
+"r3-s6",
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.",
+[
+"(A) revitalize — (B) cosmetic",
+"(A) rejuvenate — (B) visionary",
+"(A) relinquish — (B) cosmetic",
+"(A) relocate — (B) visionary"
+],
+[
+1
+],
+"(A) 되살린 물길이 방문객을 끌고 물고기도 돌아왔다니 주변 지역을 되살리는 사업의 중심이 됐어요. revitalize·rejuvenate 둘 다 이 칸에 맞고, relinquish(내주다)·relocate(옮기다)는 맞지 않아요. 답은 (B)에서 갈려요. 콘크리트 둑과 펌프로 만든 물길을 비판하는 말이니 '겉치레(cosmetic)'가 맞고, visionary(선견지명 있는)는 칭찬이라 Critics dismiss 와 어긋나요."
+],
+[
+18,
+3,
+"reading",
+"r3-s6",
+"윗글에서 추론할 수 없는 것을 고르시오.",
+[
+"Streams were buried partly to deal with threats to public health.",
+"Daylighting a stream usually costs less than keeping it underground.",
+"Restored streams can provide habitat that buried channels lack.",
+"Not every daylighted stream returns to a wholly natural condition."
+],
+[
+2
+],
+"물길을 여는 데는 도로·배관을 옮기고 땅 주인과 협상해야 해서 비용이 상당하다고 했을 뿐, 묻어 두는 것보다 싸다는 말은 없어요. 악취·질병 때문에 묻었다는 것, 묻힌 물길엔 생물이 거의 없다는 것, 일부는 인공적이라는 것은 글에 나와요."
+],
+[
+19,
+3,
+"reading",
+"r3-s7",
+"빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"encourage the proliferation of small parties",
+"tend toward competition between two dominant parties",
+"allocate seats in proportion to national vote shares",
+"erase regional differences in voting behavior"
+],
+[
+2
+],
+"작은 정당 지지자는 표가 버려질까 두 큰 후보 가운데 하나로 옮기고 정치인도 큰 정당으로 모인다고 했으니, 결국 '두 큰 정당의 경쟁'으로 기울어요. 바로 뒤 문장의 by contrast 와 multiparty systems 도 단서예요. 작은 정당이 늘어난다는 말은 반대이고, 득표율대로 의석을 나누는 것은 비례대표제 설명이에요."
+],
+[
+20,
+3,
+"reading",
+"r3-s7",
+"윗글의 내용과 가장 거리가 먼 것을 고르시오.",
+[
+"Backers of minor parties may switch their votes rather than see them wasted.",
+"Parties with geographically concentrated support can capture seats under plurality voting.",
+"Duverger maintained that electoral rules scarcely affect how many parties a country has.",
+"Proportional representation tends to sustain more than two significant parties."
+],
+[
+3
+],
+"뒤베르제는 선거 규칙이 사회의 분열 못지않게 '중요하다'고 했어요. 선거 규칙이 정당 수에 거의 영향을 주지 않는다는 말이 글과 가장 거리가 멀어요. 나머지는 표를 옮기는 지지자, 지역에 몰린 정당, 비례대표제 설명으로 글에 나와요."
+],
+[
+21,
+3,
+"reading",
+"r3-s8",
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.",
+[
+"(A) controversial — (B) delicate",
+"(A) contested — (B) trivial",
+"(A) uncontested — (B) delicate",
+"(A) undisputed — (B) trivial"
+],
+[
+1
+],
+"(A) 약이 아밀로이드를 없애도 효과가 없던 일이 되풀이됐다니 가설은 영향력이 큰 만큼 논란도 많았어요. controversial·contested 둘 다 이 칸에 맞고, uncontested·undisputed(이견 없는)는 그 실패와 맞지 않아요. 답은 (B)에서 갈려요. 몇 달의 자립과 큰 비용·부작용을 저울질해야 하니 '까다로운(delicate)' 결정이고, trivial(사소한)은 맞지 않아요."
+],
+[
+22,
+3,
+"reading",
+"r3-s8",
+"윗글에서 추론할 수 없는 것을 고르시오.",
+[
+"Earlier drugs that removed amyloid failed to show clear benefits for patients.",
+"Treatment with donanemab may not need to continue indefinitely.",
+"Donanemab can restore memories that patients have already lost.",
+"Identifying patients suitable for the drug requires brain imaging."
+],
+[
+3
+],
+"도나네맙은 병을 멈추지도 못하고 '되돌리는 것은 더더욱(let alone reverse)' 못 한다고 했어요. 잃은 기억을 되살린다는 말은 끌어낼 수 없어요. 예전 약의 실패, 아밀로이드가 없어지면 끊을 수 있다는 것, 뇌 촬영이 필요하다는 것은 글에 나와요."
+],
+[
+23,
+3,
+"reading",
+"r3-s9",
+"글의 흐름으로 보아 다음 문장이 들어가기에 가장 알맞은 곳을 고르시오.\nMany of its troubles, they argue, began before a single resident had moved in.",
+[
+"[A]",
+"[B]",
+"[C]",
+"[D]"
+],
+[
+3
+],
+"주어진 문장의 they 는 앞 문장의 Historians 이고, '입주 전부터 시작된 문제'는 바로 뒤의 예산 삭감으로 값싸게 지은 공사와 이어져요. 그래서 '역사가들이 이야기를 복잡하게 만들었다'는 문장 바로 다음에 와요."
+],
+[
+24,
+3,
+"reading",
+"r3-s9",
+"윗글의 내용과 가장 가까운 것을 고르시오.",
+[
+"Pruitt-Igoe was demolished before most of its apartments had been occupied.",
+"Recent historians stress economic and political causes of the complex's decline.",
+"Jencks blamed budget cuts rather than architecture for the project's failure.",
+"Yamasaki designed Pruitt-Igoe after completing the World Trade Center."
+],
+[
+2
+],
+"역사가들은 인구·산업 쇠퇴와 재정난 같은 경제·정치적 힘이 더 큰 원인이었다고 본다고 했어요. 철거는 문을 연 지 20년 가까이 지나서였고, 젱크스는 건축 이념을 탓했으며, 세계무역센터는 '나중에' 설계했어요."
+],
+[
+25,
+3,
+"reading",
+"r3-s10",
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.",
+[
+"(A) ignorant — (B) optional",
+"(A) unaware — (B) essential",
+"(A) informed — (B) essential",
+"(A) apprised — (B) optional"
+],
+[
+2
+],
+"(A) 앱 안에서 더 싼 구독 방법을 알리지 못하게 했으니 소비자는 더 나은 조건을 모르는 채 남았어요. unaware·ignorant 둘 다 이 칸에 맞고, informed·apprised(알고 있는)는 반대예요. 답은 (B)에서 갈려요. 공공 규칙을 따라야 하는 기반 시설이라는 말이니 '없어서는 안 될(essential)'이 맞고, optional(있어도 그만인)은 흐름과 어긋나요."
+],
+[
+26,
+3,
+"reading",
+"r3-s10",
+"윗글의 내용과 맞는 것을 고르시오.",
+[
+"Apple barred apps from mentioning cheaper prices available outside the App Store.",
+"Apple accepted the Commission's decision without any challenge.",
+"Spotify claimed that it was too small to compete with Apple.",
+"The Digital Markets Act was repealed shortly after the fine was imposed."
+],
+[
+1
+],
+"애플은 개발자가 앱 안에서 다른 곳의 더 싼 구독을 알리지 못하게 했다고 했어요. 애플은 항소했고, 스포티파이가 약자가 아니라고 주장한 쪽은 애플이며, 디지털시장법은 그때 막 전면 시행되고 있었어요."
+],
+[
+27,
+3,
+"reading",
+"r3-s11",
+"주어진 첫 문단 다음에 이어질 (A)~(C)의 순서로 가장 알맞은 것을 고르시오.",
+[
+"(A) – (B) – (C)",
+"(C) – (A) – (B)",
+"(A) – (C) – (B)",
+"(B) – (C) – (A)"
+],
+[
+3
+],
+"첫 문단의 '비싼 책값'을 (A)의 change that 이 받아 앨런 레인의 6펜스 문고 구상을 소개해요. (C)의 The gamble 은 그 모험을 받아 큰 성공을 말하고, (B)의 such success 가 그 성공을 받아 반발로 맺어요."
+],
+[
+28,
+3,
+"reading",
+"r3-s11",
+"윗글의 내용과 맞는 것을 고르시오.",
+[
+"Lane priced his paperbacks higher than a typical new hardback novel.",
+"Booksellers unanimously welcomed the arrival of cheap editions.",
+"Penguin used the colors of its covers to indicate different kinds of books.",
+"Orwell hit upon the idea of sixpenny paperbacks while waiting for a train."
+],
+[
+3
+],
+"표지 색을 장르별로 나눠 소설은 주황, 추리는 초록으로 했다고 했어요. 값은 6펜스로 몇 실링 하던 새 소설보다 쌌고, 일부 출판·서점 업계는 반발했으며, 기차역에서 생각을 떠올린 사람은 오웰이 아니라 레인이에요."
+],
+[
+29,
+3,
+"reading",
+"r3-s12",
+"빈칸 (A), (B)에 들어갈 말을 가장 알맞게 짝지은 것을 고르시오.",
+[
+"(A) importance — (B) conceal",
+"(A) insignificance — (B) surrender",
+"(A) triviality — (B) conceal",
+"(A) significance — (B) surrender"
+],
+[
+4
+],
+"(A) 구리 도끼와 활, 5,300년 전이라는 연대가 밝혀지며 발견의 중요성이 드러났어요. significance·importance 둘 다 이 칸에 맞고, insignificance·triviality(하찮음)는 맞지 않아요. 답은 (B)에서 갈려요. 새 기법마다 새 정보가 나온다니 앞으로도 비밀을 '내놓을(surrender)' 거라는 말이 맞고, conceal(감추다)은 앞 문장과 어긋나요."
+],
+[
+30,
+3,
+"reading",
+"r3-s12",
+"[가]~[라] 문단을 글의 흐름에 맞게 가장 알맞게 늘어놓은 것을 고르시오.",
+[
+"[라] – [다] – [가] – [나]",
+"[가] – [라] – [나] – [다]",
+"[라] – [가] – [나] – [다]",
+"[라] – [가] – [다] – [나]"
+],
+[
+4
+],
+"1991년 등산객이 얼음 속 시신을 발견한 [라]가 처음이에요. [가]의 Only when archaeologists examined 가 처음의 오해를 바로잡으며 연대를 밝히고, [다]의 a decade later(2001년)가 화살촉 발견을 잇고, [나]의 Since that revelation 이 그 뒤의 연구로 맺어요."
+]
+]
+}

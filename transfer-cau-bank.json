@@ -1,0 +1,2210 @@
+{
+"school": "cau",
+"title": "중앙대 편입영어 모의고사",
+"source": "중앙대 편입영어 2014~2026학년도 기출 출제 유형(문항 수·영역·문제 꼴, VocabFactory 분석)을 분석해 dailyfreetoolbox 가 새로 만든 연습 문제",
+"checked": "2026-11-23",
+"minutes": 60,
+"sections": [
+{
+"id": "vocab",
+"name": "어휘"
+},
+{
+"id": "dialogue",
+"name": "대화"
+},
+{
+"id": "grammar",
+"name": "문법"
+},
+{
+"id": "sentence",
+"name": "문장 빈칸"
+},
+{
+"id": "paragraph",
+"name": "단락 빈칸"
+},
+{
+"id": "reading",
+"name": "독해"
+}
+],
+"points": [
+[
+1,
+7,
+2
+],
+[
+8,
+9,
+2
+],
+[
+10,
+12,
+2
+],
+[
+13,
+20,
+2
+],
+[
+21,
+26,
+2
+],
+[
+27,
+28,
+3
+],
+[
+29,
+40,
+3.5
+]
+],
+"passages": [
+{
+"id": "r1-p27",
+"text": "In 1571, the French nobleman Michel de Montaigne retreated from public life to a tower on his family estate, intending to devote his remaining years to tranquil reading. Idleness, however, proved less (A)<u>restful</u> than he had hoped. His mind, he lamented, behaved like a runaway horse, spawning a throng of chimerical and disorderly fancies. To subdue them, and perhaps to make them ashamed of themselves, as he wryly put it, he began to write them down. The result was a book without precedent. Montaigne called his compositions essais, signifying attempts or trials, and the name was (B)<u>apt</u>: rather than propounding settled conclusions, each essay tests an idea, digresses from it, circles back, and often culminates in doubt. He wrote about cannibals and friendship, about thumbs and odors, about the dread of death and the delights of conversation, and above all about himself, not because he thought himself (C)<u>exceptional</u> but because he was the one subject he could scrutinize at close range. Earlier authors had sought to edify readers with the borrowed authority of antiquity. Montaigne invited them instead to eavesdrop on a mind at work, (D)<u>concealing</u> its contradictions as openly as its insights. His habitual question, 'What do I know?', became an emblem of a skeptical, probing kind of writing, and the form he stumbled upon has long outlived the Latin erudition it quietly subverted."
+},
+{
+"id": "r1-p28",
+"text": "A lichen looks like a single organism, a crusty blotch of gray, ochre, or green sprawled across a rock or a tree trunk. In fact it is a collaboration. Most of a lichen's body is made by a fungus, whose tangled filaments form a tough outer structure. Living inside that structure are photosynthetic partners, usually green algae or cyanobacteria, which convert sunlight into sugars that sustain the whole arrangement. The fungus, in return, shields its partners from drying out and from harsh light, and it helps gather water and minerals. This symbiosis allows lichens to colonize habitats where neither partner could survive alone: barren rock, arid soil crusts, polar tundra, and even old gravestones. By slowly breaking down the rock beneath them, lichens also help generate the first thin strata of soil in which mosses and plants can later take root. Their growth is extraordinarily slow, often a millimeter or so a year, and some patches are thought to be many centuries old. Because many species absorb water and nutrients directly from the air, lichens are acutely sensitive to pollution; their vanishing from city trees was among the earliest harbingers of foul air noted by nineteenth-century naturalists. Recent research has muddied the classic picture of two partners, revealing that some lichens also harbor yeasts and other microbes, so that a single lichen may be less a couple than a small community."
+},
+{
+"id": "r1-s1",
+"text": "Over the past few years, a once-unthinkable idea has moved swiftly into the mainstream of education policy: banishing smartphones from the school day altogether. The Netherlands introduced national guidance restricting phones in most secondary classrooms at the start of 2024, England issued guidance the following month urging schools to prohibit them throughout the day, and a growing number of American states have passed laws requiring districts to curtail their use. In South Korea, legislators approved a measure in 2025 restricting phone use during lessons.\nProponents cite a familiar litany of harms. Teachers report that notifications fragment attention, that students film one another for social media, and that bullying no longer ceases when the final bell sounds. Advocates also contend that a ban spares families an exhausting negotiation. Few parents want their child to be the only one without a phone, but many are quietly relieved when no one is allowed to use one in class.\nThe evidence, however, is more ____ than the enthusiasm suggests. Some studies of schools that restricted phones have found modest gains in test scores, particularly among lower-achieving pupils, while others have detected little measurable change in either grades or well-being. Part of the complication is that the word ban encompasses very different policies, from phones sealed in locked pouches for the entire day to rules that merely ask students to keep devices silent in their bags. Enforcement varies just as widely from one school to the next.\nDetractors raise further misgivings. Some parents insist on being able to contact their children in an emergency, and some educators argue that schools ought to teach students to manage technology judiciously rather than simply confiscate it. Even many supporters concede that the classroom is only a fraction of the problem, since much screen time occurs at home, late at night, far from any teacher's gaze. A phone-free school day may be a prudent place to start, they suggest, but it cannot by itself undo habits that are cultivated everywhere else."
+},
+{
+"id": "r1-s2",
+"text": "Every morning the sun has risen, and we confidently anticipate that it will rise tomorrow. But what justifies that expectation? In the eighteenth century, the Scottish philosopher David Hume pressed this question with disconcerting force. Our beliefs about the future, he observed, rest on inferences from past experience: because bread has nourished us before, we assume it will nourish us again. Such inferences, however, can be defended only by assuming that the future will resemble the past, and that assumption is precisely what is in dispute. To argue that nature has always behaved uniformly and will therefore continue to do so is to reason in a circle, using induction to justify induction.\nHume did not conclude that we should stop expecting bread to nourish us. His point was that our reliance on past regularities is not a product of reason at all but of custom. Having seen one event follow another many times, the mind is simply swept along to expect the next, much as a walker who has trodden a path daily finds his feet turning onto it without any deliberate decision. We cannot help reasoning this way, and ordinary life would be impossible if we did not. What we cannot do is furnish the habit with a rational foundation.\nPhilosophers have grappled with the conundrum ever since. Some have argued that induction is justified because it has worked so well in the past, only to find themselves ensnared in the very circle Hume described. Others, most famously Karl Popper in the twentieth century, proposed that science does not depend on induction at all. On Popper's view, scientists do not establish theories by amassing confirming instances. They advance bold conjectures and strive to refute them, provisionally retaining those that survive. Whether this strategy truly escapes Hume's challenge remains contested, since we still seem to trust that theories which have survived testing will go on surviving it.\nThe problem Hume identified, it turns out, is far easier to articulate than to dissolve. Some philosophers have even concluded that the demand for a justification was misguided from the start, since no argument could satisfy it without presupposing the very principle in dispute. More than two centuries later, the problem continues to haunt every attempt to explain why the methods of science merit the confidence we repose in them."
+},
+{
+"id": "r1-s3",
+"text": "For most of evolutionary history, the night was dark except for the moon and stars, and countless animals came to rely on that darkness. Artificial light has transformed this condition in little more than a century. Satellite measurements suggest that a substantial share of humanity now lives under skies so illuminated by streetlights and buildings that the Milky Way is no longer visible.\n(A) Migratory birds are among the most conspicuous casualties. Many species migrate nocturnally, steering partly by the stars, and brightly lit buildings can lure them off course, especially in fog or overcast conditions. (B) Disoriented birds may circle illuminated towers until they are exhausted or collide with glass, and surveys in North American cities have documented hundreds or even thousands of deaths on single nights during peak migration. (C) Fitting an ordinary streetlight with a downward-facing shield, moreover, typically adds only a few dollars to the cost of each new fixture it replaces. Insects fare little better. Moths and other night-flying species spiral endlessly around streetlights, where they are easily devoured or simply perish from fatigue, and the losses ripple through food webs that depend on them. (D) Even newly hatched sea turtles, which instinctively crawl toward the brighter horizon above the ocean, can be lured inland by beachfront lighting.\nUnlike many environmental problems, however, light pollution is remarkably easy to reverse. Shielding fixtures so that light points downward, choosing warmer colors that disturb wildlife less, and simply extinguishing lamps that nobody needs can restore much of the lost darkness at negligible cost. Several cities now run lights-out campaigns during the migration seasons, asking the owners of tall buildings to dim their lights late at night.\nThe impediment is less technical than psychological. People have come to associate bright light with security and affluence, and darkness, however natural, can feel like neglect. Persuading them that a dimmer night is not a more perilous one may prove harder than changing any bulb."
+},
+{
+"id": "r1-s4",
+"text": "Few medicines have moved from the pharmacy shelf to the dinner-table conversation as swiftly as the class of drugs known as GLP-1 receptor agonists. They mimic a hormone released by the gut after a meal, one that signals satiety to the brain and slows the emptying of the stomach. Originally developed to treat type 2 diabetes, the drugs were found to induce substantial weight loss, and versions approved specifically for obesity, such as semaglutide and later tirzepatide, became fervently sought after. (A) In clinical trials, many participants lost approximately 15 percent of their body weight or more, results that earlier diet pills had never remotely approached.\nDemand surged, and within months it had outstripped supply by a wide margin. (B) For long stretches of 2022 and 2023, pharmacies in the United States reported shortages, and some patients with diabetes struggled to obtain medicines they had relied on for years. The price, often exceeding a thousand dollars a month without insurance, raised thorny questions about who would benefit and who would pay. (C)\nResearchers have since reported additional benefits, including fewer heart attacks and strokes among some high-risk patients, and are probing possible effects on conditions ranging from kidney disease to addiction. Yet the drugs are no panacea. Common side effects include nausea and other digestive complaints, and people who stop treatment frequently regain much of the weight they lost, which suggests that many may need to take the drugs indefinitely. (D) Some physicians also fear that precipitous weight loss can strip away muscle along with fat, particularly in older patients.\nThe advent of these medicines has also unsettled long-held assumptions about obesity itself. For decades, excess weight was widely regarded as a failure of willpower, a problem to be solved by discipline alone. A drug that quiets the persistent preoccupation with food that many patients describe suggests instead that appetite is governed largely by biology. That shift in understanding may prove as consequential as the drugs themselves."
+},
+{
+"id": "r1-s5",
+"text": "Why do we read poems at all, when ordinary prose conveys information far more efficiently? In 1917 a young Russian critic, Viktor Shklovsky, offered an answer that would profoundly shape literary theory for much of the century. Habit, he argued, devours experience. The first time we hold a pen or walk down an unfamiliar street, we notice everything; after a thousand repetitions, we perceive almost nothing, and our actions slip into a kind of automatic fog. A life lived wholly in that fog, he suggested, is in a sense not lived at all, since what we no longer notice might as well not exist for us. Familiar words suffer the same fate: they glide past the eye and ear without leaving a vestige.\nArt exists, in Shklovsky's account, to break the enchantment. Its devices, from incongruous metaphors to strange rhythms and deliberately difficult syntax, slow down perception and compel us to look again at what we assumed we already knew. He called this process making strange, a phrase usually rendered in English as defamiliarization. One of his favorite illustrations came from Tolstoy, who in War and Peace describes an evening at the opera as it appears to a young woman unused to its conventions, reducing the elaborate spectacle to painted cardboard and people singing in peculiar costumes. By refusing to name things in the conventional way, the writer makes the familiar ____ once more.\nThe idea has proved remarkably resilient. Critics have invoked it to explain why a hackneyed word placed in an unexpected setting can startle us, why satirists so often adopt the viewpoint of an outsider or a child, and why avant-garde movements have repeatedly tried to jolt audiences out of complacency. Its influence even extended to the theater, where later playwrights deliberately interrupted the action so that audiences could not sink comfortably into illusion. It also carries a disquieting implication. Every successful device eventually ossifies into a convention, and a convention, once familiar, loses the very power that made it valuable. Art must therefore perpetually renew itself, not out of mere restlessness or a hunger for novelty, but because whatever once awakened perception gradually lulls it back to sleep."
+},
+{
+"id": "r1-s6",
+"text": "Recipes are usually imagined as exact instructions that anyone can follow, yet many of the most cherished ones were never meant for strangers. A food writer once described the card her late mother had left her, written in a slanting hand on a yellowed index card. It listed the ingredients for a soybean paste stew without a single quantity: paste, enough; garlic, plenty; water, until it looks right. For years the writer kept the card in a kitchen drawer, unable either to use it or to discard it.\nHer first attempts to follow it were failures. One pot was so salty that it had to be poured away; the next was bland, the third merely edible. An aunt finally explained that the mother had never cooked the dish the same way twice; she tasted, adjusted, and tasted again. The card, the writer came to realize, was not really a recipe at all but a set of reminders for someone who already knew what she was doing.\nShe therefore resolved to cook as her mother had, standing over the pot and tasting incessantly. (A) She learned that enough depended on the brand of paste, and that until it looks right meant a particular shade of reddish brown. (B) Gradually the stew came to taste familiar, though never quite identical to her mother's. (C) Her aunt, sampling it one winter evening, declared it indistinguishable from the original and then, after a long pause, admitted that it was not; it was the writer's own, she said, and that was what the mother would have wanted. (D) Is soybean paste stew not, after all, far more nourishing than the clear broths served in so many other cuisines?\nThe philosopher Michael Polanyi had a name for what the card left out. Much of what a skilled person knows, he argued, cannot be stated as explicit rules: the knack of keeping one's balance on a bicycle or of judging when a sauce is done is acquired only by practice, usually under someone's example. Read in that light, the card's vagueness, which once seemed so frustrating, is less a defect than a quiet form of trust. Its author presumed that whoever read it would learn by doing, just as she had."
+},
+{
+"id": "r2-p27",
+"text": "Ask most people who invented printing with movable type, and they will name Johannes Gutenberg, whose workshop in Mainz produced its celebrated Bible in the 1450s. The story is (A)<u>incomplete</u>. Centuries earlier, Chinese artisans had tinkered with movable characters of fired clay, and in Korea, printers of the Goryeo dynasty were casting type in metal well before Gutenberg was born. The oldest surviving book printed with movable metal type, an anthology of Buddhist teachings conventionally known as Jikji, was produced at a temple in 1377. Only its second volume endures, and it is housed not in Korea but in the National Library of France, a (B)<u>reminder</u> of the tangled routes by which cultural treasures migrate.\nWhy, then, did metal type revolutionize Europe so much more profoundly than East Asia? Historians attribute the difference partly to writing systems. A European printer required only a few dozen letters and marks to compose any text, whereas the Chinese characters used widely in Korea at the time numbered in the thousands, making each complete font enormously (C)<u>economical</u> to produce. Social conditions were pivotal as well. In Korea, printing was largely monopolized by the state and by temples, which produced modest runs for scholars and officials, while in Europe a commercial market of rival printers disseminated cheap books and pamphlets with explosive speed. Gutenberg's accomplishment, in other words, lay less in a wholly novel invention than in (D)<u>combining</u> existing techniques into a system suited to a society avid for print."
+},
+{
+"id": "r2-p28",
+"text": "In 1935 the American psychologist John Ridley Stroop published a deceptively simple experiment. Participants were shown color words, such as red, green, and blue, printed in colored ink, and were asked to name the color of the ink as quickly as possible while disregarding the word itself. When the word and the ink coincided, the task was effortless. When they clashed, for example when the word blue appeared in red ink, people slowed down noticeably and committed more errors, often blurting out the written word before correcting themselves. The explanation most psychologists accept is that, for practiced readers, reading has become automatic. We cannot simply decide not to read a familiar word placed before our eyes, so the meaning of the word vies with the color we are trying to report, and resolving that interference consumes time. The task has since become one of the most ubiquitous instruments in psychology. Researchers employ versions of it to gauge attention and self-control, to study the effects of aging and brain injury, and to explore how emotionally charged words, such as those pertaining to a person's phobias, capture attention more strongly than neutral ones. Few experiments so brief have illuminated so much about the hidden workings of the mind, or about how skills we labor to acquire can subsequently operate beyond our control."
+},
+{
+"id": "r2-s1",
+"text": "In the late 2010s, plant-based meat seemed poised to conquer the world. Burgers made from pea and soy protein, engineered to sizzle and even appear to bleed like beef, proliferated on the menus of fast-food chains, and the shares of one prominent producer soared after its stock market debut in 2019. Investors funneled billions of dollars into the sector, and analysts projected that a sizable slice of the global meat market would soon belong to plants.\nThe fervor proved ephemeral. After an initial surge, sales of plant-based meat in American supermarkets stagnated and then dwindled, and the share price of that once celebrated company lost more than 90 percent of its peak value. Several restaurant chains quietly dropped meatless options that had failed to win repeat customers, and a number of smaller start-ups that had raised money at lofty valuations were sold for a fraction of their worth or folded altogether.\nAnalysts offer several explanations. Many shoppers tried the products out of curiosity but did not return, grumbling that the taste and texture still fell short of the real thing. Price was another impediment. Plant-based burgers typically cost more than the ground beef they were meant to supplant, a grave handicap once inflation began to strain household budgets. The products also became entangled in a controversy over processing. Critics, including some nutritionists, highlighted their long lists of ingredients, and the label ultra-processed began to erode the wholesome image on which much of their marketing had relied.\nSupporters of alternative proteins contend that the slump reflects inflated expectations rather than a fundamental failure. The environmental case remains compelling, they contend, since raising livestock accounts for a substantial share of greenhouse gas emissions and occupies vast tracts of land. Some companies are now reformulating their products with shorter ingredient lists, while others are wagering on cheaper hybrids of meat and vegetables. Whether the sector can rebound may depend less on laboratory breakthroughs than on whether it can deliver what most diners ultimately want: food that is palatable, affordable, and familiar."
+},
+{
+"id": "r2-s2",
+"text": "In 1791 the English philosopher Jeremy Bentham published blueprints for a new kind of prison, which he called the Panopticon. Its cells were to be arranged in a ring around a central tower, from which a single inspector could peer into any cell at any moment. Crucially, blinds and careful lighting would prevent the inmates from discerning whether anyone was actually watching. Since they could never know when they were being observed, Bentham reasoned, they would behave at all times as if they were. Surveillance would thereby become ____: a handful of guards, or even an empty tower, could discipline hundreds of inmates.\nBentham championed the design for years and proposed it for factories, schools, and hospitals as well, but no prison was built to his plan in his lifetime, and the long, fruitless campaign, which consumed much of his fortune and his patience with Parliament, left him embittered. The idea might have remained a curiosity of penal reform had the French philosopher Michel Foucault not revived it in 1975. In Discipline and Punish, Foucault treated the Panopticon as an emblem of modern power. Where earlier rulers had flaunted their authority through public spectacles of punishment, modern institutions, he argued, operate quietly by rendering individuals visible, documenting, scrutinizing, and ranking them until they learn to police themselves. Schools, barracks, hospitals, and factories, in this view, share the logic of the tower: power works best not by crushing bodies but by molding habits, and it is most effective when those subject to it no longer notice its presence.\nSince then, the Panopticon has become one of the most frequently invoked metaphors of the digital age. Commentators apply it to security cameras, to workplace software that logs keystrokes, and to online platforms that track every click. Some scholars caution, however, that the metaphor can be misleading. In Bentham's prison the watcher was solitary and the watched were acutely aware of the tower. Online, by contrast, data are harvested by countless companies and agencies, often invisibly and for purposes no one fully explains, and many people voluntarily broadcast the minutiae of their own lives. The result may be less a single all-seeing eye than a dense web of observers, among whom, increasingly, we must count ourselves."
+},
+{
+"id": "r2-s3",
+"text": "On winter evenings in many parts of Europe, vast flocks of starlings congregate above their roosts and perform aerial displays known as murmurations. Thousands, sometimes hundreds of thousands, of birds wheel and swirl across the darkening sky, the whole flock shifting its contours like smoke or a single rippling sheet of cloth. Throngs of spectators often linger on bridges and hillsides simply to watch. (A) For centuries, observers puzzled over how such coordination was possible without a leader, and some even speculated that the birds might communicate by a kind of telepathy.\nThe modern explanation is both simpler and more surprising. Meticulous studies in which researchers filmed flocks from several angles at once and reconstructed the position of every bird in three dimensions found that each starling responds to a fixed number of its nearest neighbors, about six or seven. (B) By tracking only these few companions and mirroring their speed and direction, each bird transmits changes in movement swiftly to others, so that a turn begun at one edge of the flock can sweep across thousands of birds in a fraction of a second.\n(C) Such patterns are an example of what scientists call emergent behavior: intricate order at the level of the group arising from simple rules obeyed by individuals, none of whom has any conception of the whole. (D) Analogous principles help to explain the movements of fish schools, the foraging trails of ants, and even the traffic jams that form on highways without any discernible cause.\nWhy starlings perform murmurations at all is less certain. The explanation most widely accepted is protection from predators. Falcons and hawks find it hard to single out one bird from a dense, constantly shifting mass, and studies of many flocks have found that the displays tend to be larger and longer when predators are present. The gatherings may also help the birds keep warm at the roost and exchange information about productive feeding sites, although these ideas have proved considerably harder to test in the field."
+},
+{
+"id": "r2-s4",
+"text": "For most of its history, highly pathogenic avian influenza was regarded chiefly as a menace to poultry farms. Outbreaks were devastating for farmers, who were often required to cull entire flocks, but they tended to flare up and then subside. The strain of the H5N1 virus that began proliferating around the globe in the early 2020s has behaved differently. Carried by migrating wild birds, it reached nearly every continent, including South America and, by 2024, the Antarctic region, killing seabirds in staggering numbers.\n(A) The virus has also crossed into an unusually diverse range of mammals. Foxes, bears, and other predators have died after scavenging infected birds, and mass die-offs of sea lions and elephant seals were recorded along South American coasts. (B) In March 2024, American authorities confirmed that the virus had been found in dairy cattle, a species not previously considered a significant host, and infected herds were soon reported in numerous states. (C) Dairy farmers, meanwhile, have long complained that the price they receive for milk has barely kept pace with the cost of feed. The discovery alarmed scientists, because every new mammalian host gives the virus further opportunities to acquire mutations that might enable it to spread efficiently between people.\n(D) So far, that has not transpired. Human infections have been sporadic and mostly mild, occurring chiefly among farm workers in close contact with ailing animals, although a small number of severe cases and deaths have been reported. Public health agencies assess the immediate risk to the general public as low, while stressing the importance of vigilant monitoring. Pasteurization, they note, inactivates the virus in milk, one reason officials advise consumers to shun raw milk.\nThe economic repercussions have been more immediate. The culling of millions of egg-laying hens contributed to steep increases in egg prices in the United States in early 2025, turning an obscure veterinary problem into a topic of kitchen-table conversation. For scientists, however, the deeper apprehension has not changed: the more widely the virus circulates, the more chances it has to change."
+},
+{
+"id": "r2-s5",
+"text": "Around 1600, the paintings of Michelangelo Merisi da Caravaggio caused a sensation in Rome. Earlier Renaissance artists had generally bathed their figures in an even, clarifying light that revealed every part of a composition with equal diligence. Caravaggio did something far more dramatic. (A) Was the Venetian Titian, then, not a still greater colorist than any of the painters who came after him? (B) In works such as The Calling of Saint Matthew, figures emerge from deep shadow, struck by a single shaft of light that appears to descend from a window beyond the frame. The technique, often called tenebrism, from the Italian word for darkness, pushes to an extreme the older practice of chiaroscuro, the modeling of forms through contrasts of light and shade.\nThe effect is theatrical, but it is also intimate. Caravaggio frequently enlisted ordinary Romans as models for saints and apostles, painting them with grimy feet, furrowed faces, and threadbare clothing. (C) Coupled with the harsh lighting, this realism made sacred scenes feel as though they were unfolding in a tavern or on a street corner the viewer might know. Some church authorities found such paintings indecorous and spurned them; at least one altarpiece was reportedly rejected because its saint looked too much like a common laborer.\nCaravaggio's personal life was as turbulent as his canvases. He was repeatedly arrested for brawling, and after killing a man in 1606 he fled Rome, spending his final years shuttling between Naples, Malta, and Sicily. He died in 1610, not yet forty years old, while traveling back toward Rome in the hope of securing a pardon. For much of the following two centuries his reputation faded, and some critics dismissed him as a gifted but vulgar copier of nature.\nHis influence, however, long outlived both him and those critics. (D) Painters across Europe, from Utrecht to Seville, emulated his stark contrasts, and art historians have traced a line from his canvases to the luminous shadows of Rembrandt. Even today, film directors who light an actor's face from a single source to evoke inner conflict are drawing, knowingly or not, on a visual vocabulary he forged."
+},
+{
+"id": "r2-s6",
+"text": "When people who share no common language must trade or work side by side, they often improvise a simplified means of communication called a pidgin. A pidgin usually draws most of its vocabulary from one language, frequently that of a dominant group such as colonial traders or plantation owners, while its sounds and structure are colored by the speakers' own languages. Pidgins have rudimentary vocabularies, few grammatical endings, and loose rules, and no one speaks a pidgin as a first language. It is a tool for circumscribed purposes, such as haggling or issuing commands.\nSomething remarkable can happen, however, when children grow up immersed in a pidgin. Needing a language that can express everything a human language must, they elaborate it, adding consistent rules for tense, mood, and the relations between clauses. The result is a creole, a full-fledged language with native speakers. Haitian Creole, which derives much of its vocabulary from French, and Tok Pisin, an official language of Papua New Guinea, are well-known examples. Linguists once disparaged creoles as debased versions of European languages, but they are now recognized as complete systems, as capable of poetry, law, and philosophy as any other tongue.\nThe study of creoles has fueled a spirited debate about the human capacity for language. Some researchers, most notably Derek Bickerton, argued that creoles around the world share striking similarities even when they arose far apart, and that these similarities reveal an innate blueprint on which children draw whenever the language around them is ____. Others counter that the shared features can be explained by the languages that contributed to each creole and by the social circumstances of its genesis. The case of Nicaraguan Sign Language, created by deaf children who were assembled in new schools in the 1970s and 1980s, has been cited by both camps. Whatever the outcome, the debate has turned once-scorned languages into a crucial source of evidence about the workings of the human mind."
+},
+{
+"id": "r3-p27",
+"text": "When a disciple asked Confucius what he would do first if he were entrusted with administering a state, the answer reportedly startled him: he would rectify names. The reply can sound (A)<u>pedantic</u>, as though the sage were more preoccupied with vocabulary than with famine or war. Confucius, however, had something far more pragmatic in mind. According to the Analects, he explained that when names are erroneous, speech no longer corresponds to reality, and when speech diverges from reality, no undertaking can prosper. A ruler who does not behave as a ruler should, a father who shirks a father's duties, or an official who treats his title merely as a source of profit opens a chasm between what things are called and what they actually are. That rift, Confucius believed, was not a minor (B)<u>inconsistency</u> but a source of disorder, because people who can no longer trust words cannot coordinate their conduct. The remedy was to realign behavior with the titles people bore, so that each role carried its attendant obligations. The doctrine has sometimes been construed as a recipe for ossified hierarchy, and later rulers certainly (C)<u>invoked</u> it to exact obedience. Yet it also supplies a standard by which the powerful may be judged: a king who governs tyrannically, some later Confucian thinkers argued, forfeits the very name of king. Modern readers perturbed by political euphemism, in which wars become operations and mass layoffs become restructuring, may find the ancient teaching surprisingly (D)<u>obsolete</u>."
+},
+{
+"id": "r3-p28",
+"text": "The human gut is home to trillions of microbes, mostly bacteria, belonging to hundreds of different species. For much of the twentieth century they were dismissed largely as passive passengers or as potential sources of infection. Research over the past two decades has upended that view. Gut bacteria help digest dietary fibers that human enzymes cannot break down, yielding compounds that nourish the cells lining the intestine. They help calibrate the immune system, crowd out pathogenic invaders, and synthesize certain vitamins. The makeup of this community varies markedly from person to person and is molded by diet, medication, and early life. Babies born vaginally, for instance, acquire somewhat different microbes from those delivered by cesarean section, although the differences appear to dwindle over time. A course of antibiotics can sharply diminish the variety of gut bacteria, and in some patients the community takes months to rebound. Studies in mice have hinted at even more startling effects. Germ-free mice that receive gut bacteria from obese donors tend to gain more fat than those receiving bacteria from lean donors, and gut microbes appear to influence behavior through chemical signals that reach the brain. Researchers caution, however, that many such findings derive from animals or from studies that reveal correlations rather than causes. Despite the hype surrounding probiotic supplements, evidence that they benefit healthy people remains limited, and scientists are still working out what a healthy microbiome actually entails."
+},
+{
+"id": "r3-s1",
+"text": "For centuries, explorers sought a northern sea passage between Europe and Asia, and many perished in the ice. Today a warming climate is accomplishing what they could not. Arctic sea ice in late summer has shrunk precipitously since satellite records began in the late 1970s, and the waters along Russia's northern coast, known as the Northern Sea Route, now remain navigable for longer stretches each year.\nThe allure is simple geography. A voyage from East Asia to northern Europe along the Arctic coast can be thousands of kilometers shorter than the traditional route through the Suez Canal, economizing on both fuel and time. Interest intensified further after attacks on merchant ships in the Red Sea from late 2023 compelled many vessels to make the long detour around Africa, reminding shipping companies how vulnerable the conventional routes could be.\nYet the Arctic shortcut remains far less practical than maps suggest. The navigable season still lasts only a few months, and drifting ice can materialize unexpectedly even then. Many ships require reinforced hulls or icebreaker escorts, which inflate costs. Ports, repair yards, and rescue services along the route are sparse, and insurers levy higher premiums for voyages through such remote waters. Because the route runs largely through waters that Russia asserts the right to regulate, geopolitical tensions since 2022 have deterred many Western companies from using it. As a result, traffic, though growing, remains a tiny fraction of the volume that passes through Suez.\nEnvironmental scientists add a different warning. More ships mean more soot settling on snow and ice, darkening surfaces that would otherwise reflect sunlight and thereby hastening the very melting that made the route possible. A fuel spill would be extraordinarily difficult to contain in icy, secluded waters, and underwater noise may disorient whales and other marine mammals. The opening of the Arctic, in short, presents a paradox: a consequence of climate change that, if exploited recklessly, could accelerate it."
+},
+{
+"id": "r3-s2",
+"text": "In 1961 the political philosopher Hannah Arendt traveled to Jerusalem to report on the trial of Adolf Eichmann, a senior Nazi official who had organized the deportation of millions of Jews to the death camps. Many observers anticipated a monster. Arendt instead described a man who struck her as disturbingly ordinary: a careerist eager for promotion, fond of clichés and bureaucratic jargon, who seemed driven less by fanatical hatred than by an inability to consider what he was doing from anyone else's point of view. Her book on the trial, published in 1963, coined a phrase that has provoked controversy ever since: the banality of evil.\nArendt did not mean that Eichmann's crimes were trivial or that he was innocent; she endorsed his execution. Her claim was that enormous evil need not spring from ____ motives. It can be carried out by people who are thoughtless rather than demonic, who adhere to procedures, pursue their careers, and never pause to ask what their routine tasks add up to. In this sense, the peril she identified was not a rare form of wickedness but a common failure of judgment.\nThe book provoked a furor. Critics accused Arendt of trivializing the Holocaust, and her remarks about the conduct of certain Jewish community leaders under Nazi rule aggrieved many readers. Later historians, drawing on archival documents unavailable to her, have argued that Eichmann was in fact a committed antisemite who presented himself in court as a mere functionary in order to save his life, and that Arendt was taken in by his performance.\nEven so, the concept has outlived the controversy over its original subject. Scholars of bureaucracy, corporate wrongdoing, and atrocity continue to invoke it, because it names something they encounter again and again: harm produced not chiefly by villains but by ordinary people discharging their duties without reflecting on the consequences. Whether or not it aptly describes Eichmann, the idea confronts every reader with a disquieting question about the thinking they may neglect in their own daily work."
+},
+{
+"id": "r3-s3",
+"text": "Why is the night sky dark? The question sounds naive, yet it confounded astronomers for centuries. If the universe were infinite, unchanging, and uniformly filled with stars, then every line of sight, extended far enough, would inevitably terminate on the surface of a star. The whole sky, by this reasoning, ought to blaze as brightly as the sun, by night as well as by day. The puzzle is conventionally named after the German astronomer Heinrich Olbers, who discussed it in the 1820s, although others had raised it earlier.\n(A) Some early solutions posited that clouds of dust between the stars absorb the missing light. (B) This explanation fails, however, because dust that absorbed so much energy would itself heat up until it glowed as brightly as the stars behind it. (C) Dust in interstellar space is also a vital raw material from which new stars and planets eventually form. The real solution emerged only with modern cosmology. (D) The universe, it turns out, is not infinitely old. Because light travels at a finite speed, we can see only those stars and galaxies whose light has had time to reach us since the universe began approximately 13.8 billion years ago, and that observable region contains far too few stars to fill every line of sight.\nThe expansion of the universe adds a secondary effect. As space stretches, light from distant galaxies is shifted toward longer wavelengths, shedding energy en route, and much of it is pushed out of the visible range altogether. Even the afterglow of the early universe, which once suffused space with intense radiation, now reaches us only as faint microwaves detectable with sensitive instruments.\nThere is something poetic in this resolution. The darkness between the stars, which seems the most mundane feature of the night, turns out to carry evidence that the universe had a beginning and has been expanding ever since. A question a child might ask leads directly to one of the most profound discoveries of modern science."
+},
+{
+"id": "r3-s4",
+"text": "Disputes over which books merit a place in school libraries are as old as school libraries themselves, but in the United States they have escalated sharply in recent years. The American Library Association, which has monitored such challenges for decades, reported record numbers of attempts to remove books in 2022 and 2023. (A) A substantial share of the targeted titles addressed race, sexuality, or gender identity, and many challenges were filed not against a single book but against long lists of titles at once. (B)\nThose seeking removals generally describe their aim as protecting children rather than suppressing ideas. Parents, they argue, have a right to shape what their children encounter at school, and some books contain material, such as explicit sexual scenes, that they consider unsuitable for young readers. (C) Several states have enacted laws requiring schools to audit their library collections or giving parents greater leverage to object. Proponents of such laws say they simply bring transparency to decisions that were once made quietly by a handful of staff, and that families deserve to know what is on the shelves. Some districts now publish online catalogs of their libraries for exactly this reason, inviting parents to browse them.\nLibrarians, authors, and free-speech groups perceive the matter quite differently. (D) They point out that a parent who objects to a book can already stop his or her own child from reading it, whereas removing it from the shelves deprives every other family of that choice. They also note that many challenged books have garnered literary prizes, are widely taught, and speak to students who rarely see their own experiences reflected in print. Some school librarians have reported harassment, and a number have abandoned their posts.\nCourts have been embroiled in the conflict. In a 1982 case, the Supreme Court suggested that school boards may not remove books simply because they disapprove of the ideas the books contain, but the justices were deeply divided, the ruling left many questions unresolved, and lower courts have since reached differing conclusions.\nBeneath the legal arguments lies a more fundamental disagreement about the purpose of a school library. Is it an extension of the classroom, whose contents should reflect community standards, or a place where young people may encounter perspectives their families and teachers do not share? The answers communities give may dictate what a generation of students is able to read."
+},
+{
+"id": "r3-s5",
+"text": "Researchers who study classroom feedback have long suspected that a teacher's brief written comment can matter more than the grade beside it, although its effects may surface only years later and are therefore rarely observed. One science journalist encountered such a delayed effect in an unusual way. An envelope arrived addressed in handwriting he had not seen for twenty years: the tall, looping capitals of Mr. Hale, who had taught him chemistry in the provincial town he left as soon as he could. Inside was a photocopy of a test he had taken at sixteen. Across the top, in red ink, was a score of 34 out of 100, and beneath it a note telling him that he understood more than the score showed and that he should come and talk to his teacher.\nHe remembered the test, and he remembered not going. He had been mortified, and shame, at sixteen, makes a person ____. He shunned the chemistry classroom for weeks, sat at the back when he could not avoid it, and told himself that the subject was simply not for him. Eventually the teacher ceased trying, or so the boy believed.\nThe accompanying letter explained that Mr. Hale was retiring and clearing out forty years of files. He had kept the test, he wrote, because it was the one he most regretted. Mr. Hale should have walked down the corridor and sought him out instead of waiting for an apprehensive teenager to come to him.\nHe had found his way regardless, though by a circuitous path. He studied history, drifted into journalism, and now writes about science for a living, explaining to readers the very subjects he once fled. He had never associated that career with a red number on a sheet of paper, but the letter made him wonder whether he had spent years proving something to a teacher who had never doubted him.\nHe replied that evening, describing his work, thanking his old teacher for the note, and confessing that he had read it at sixteen and chosen to ignore it. The answer came a week later and was a mere two lines long. The note had done its work after all, Mr. Hale wrote; teachers seldom linger long enough in a student's life to find that out."
+},
+{
+"id": "r3-s6",
+"text": "On an August evening in 1952, at a concert hall near Woodstock, New York, the pianist David Tudor sat down at the piano, closed the lid over the keyboard, and played nothing. Over the next four minutes and thirty-three seconds, he raised and lowered the lid to demarcate the work's three movements and turned the pages of a score that contained no notes. The piece, by the American composer John Cage, would become one of the most notorious works of the twentieth century. (A) Would a pianist not need far more stamina, after all, to perform one of the longer sonatas of Liszt? Some listeners reportedly left in exasperation; others felt they had been the victims of a prank.\n(B) Cage insisted that the piece was not silent at all. During the premiere, he subsequently recalled, the audience could hear wind in the trees outside, rain pattering on the roof, and finally the murmurs and grumbles of the listeners themselves. (C) The work frames these incidental sounds, which concertgoers customarily screen out, and invites us to attend to them as music. A year or so earlier, Cage had entered an anechoic chamber, a room engineered to absorb every echo, and had been astonished to discern two sounds there, which an engineer told him were his own nervous system and his circulating blood. Absolute silence, he concluded, does not exist for a living listener.\nThe piece also drew on Cage's study of Zen Buddhism and on his aspiration to purge the composer's ego from music. (D) Rather than imposing his own choices, he wished to let sounds be themselves. Critics have disputed whether this ambition is profound or pretentious, and whether a work with no composed sounds can meaningfully be called a composition at all.\nWhatever one concludes, the piece has had an influence out of all proportion to its brevity. It helped pave the way for subsequent experiments in which chance, environment, and audience became materials of art, and it continues to pose a question that many listeners find unsettling: where does music end and the rest of the world begin?"
+}
+],
+"q": [
+[
+1,
+1,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nDespite weeks of painstaking mediation, the landlord remained <u>intractable</u> and declined even to discuss the tenants' plea for rudimentary repairs.",
+[
+"ebullient",
+"diffident",
+"obstinate",
+"penurious"
+],
+[
+3
+],
+"intractable 은 '고집이 세서 다루기 힘든'이라 obstinate(완고한)와 가까워요. 수리 요청을 논의조차 거부했다는 뒷부분이 단서예요."
+],
+[
+2,
+1,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nThe airline tried to <u>mollify</u> stranded passengers with meal vouchers, but most of them merely wanted to ascertain when they could leave.",
+[
+"exacerbate",
+"conciliate",
+"vilify",
+"forestall"
+],
+[
+2
+],
+"mollify 는 '(화난 사람을) 달래다'라 conciliate(달래서 누그러뜨리다)와 같은 뜻이에요. 식권을 주며 달래려 했지만 승객들은 떠날 시간만 알고 싶어 했다는 대비가 단서예요."
+],
+[
+3,
+1,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nThe fragrance of the night-blooming flower is <u>evanescent</u>, pervading the garden at midnight and vanishing utterly before dawn.",
+[
+"ephemeral",
+"ubiquitous",
+"luminous",
+"palpable"
+],
+[
+1
+],
+"evanescent 는 '금세 사라지는, 덧없는'이라 ephemeral 과 가까워요. 한밤에 퍼졌다가 새벽 전에 사라진다는 설명이 그대로 뜻풀이예요."
+],
+[
+4,
+1,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nThe inspector surveyed the factory only <u>cursorily</u> before signing its safety certificate, a lapse that subsequently proved catastrophic.",
+[
+"meticulously",
+"belligerently",
+"effusively",
+"superficially"
+],
+[
+4
+],
+"cursorily 는 '대충, 건성으로'라 superficially(겉만 훑어)와 가까워요. 뒤에 재앙을 부른 실수(lapse)였다는 말이 단서이고, meticulously(꼼꼼히)는 반대예요."
+],
+[
+5,
+1,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nThe coach did not <u>reprehend</u> the players for their negligent defending; instead, he quietly replayed the footage of every goal they conceded.",
+[
+"exonerate",
+"upbraid",
+"cajole",
+"emulate"
+],
+[
+2
+],
+"reprehend 는 '꾸짖다, 나무라다'라 upbraid(호되게 나무라다)와 같은 뜻이에요. 꾸짖는 대신(instead) 조용히 실점 장면을 다시 틀었다는 대비가 단서예요."
+],
+[
+6,
+1,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nThanks to a <u>munificent</u> bequest from an erstwhile student, the modest college was able to waive tuition for every incoming freshman.",
+[
+"bountiful",
+"parsimonious",
+"sanctimonious",
+"perfidious"
+],
+[
+1
+],
+"munificent 는 '아낌없이 후한'이라 bountiful 과 가까워요. 신입생 전원의 등록금을 면제할 만큼 큰 유증이었다는 결과가 단서예요. parsimonious(인색한)는 반대예요."
+],
+[
+7,
+1,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nFrustrated by the council's <u>dilatory</u> handling of the permit, the developers threatened to relocate the entire project to an adjacent city.",
+[
+"assiduous",
+"capricious",
+"tardy",
+"punctilious"
+],
+[
+3
+],
+"dilatory 는 '꾸물거리는, 지연시키는'이라 tardy(늑장 부리는)와 가까워요. 허가 처리가 늦어 답답해 사업을 옮기겠다고 했다는 흐름이에요."
+],
+[
+8,
+1,
+"dialogue",
+null,
+"다음 대화 가운데 흐름이 가장 어색한 것을 고르시오.\n(A) A: Could you cover my shift on Saturday? My sister is getting married.\n    B: Sure, no problem. You'd do the same for me, so consider it done.\n(B) A: I heard the new manager is quite strict about deadlines.\n    B: That's right. She doesn't cut anyone any slack, so you'd better hand in your report on time.\n(C) A: Should we take a taxi or wait for the bus? It's pouring outside.\n    B: Let's grab a taxi. The bus could take ages in this weather, and we're already late.\n(D) A: You look exhausted. Did you pull an all-nighter for the exam?\n    B: Yes, I went to bed right after dinner and slept soundly until noon.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+4
+],
+"pull an all-nighter 는 '밤을 새우다'인데, 그렇다고 해 놓고 저녁 먹고 바로 자서 낮까지 푹 잤다고 하니 관용구 뜻을 거꾸로 받은 대답이에요. 나머지는 근무 대신 서 주기, 봐주지 않는(cut no slack) 상사, 비 오는 날 택시 이야기로 자연스러워요."
+],
+[
+9,
+1,
+"dialogue",
+null,
+"다음 대화 가운데 흐름이 가장 어색한 것을 고르시오.\n(A) A: I'm going to ask my boss for a raise at the meeting tomorrow.\n    B: Good luck. Just don't beat around the bush; tell her exactly what you want.\n(B) A: Do you want to split the bill, or should I get this one?\n    B: Let's go Dutch this time. You paid for dinner last week, remember?\n(C) A: I can't make heads or tails of these assembly instructions.\n    B: Let me take a look. Sometimes the diagrams make more sense than the words.\n(D) A: This sweater was a steal. It cost only ten dollars at the flea market.\n    B: That's a shame. Sounds like they really ripped you off this time.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+4
+],
+"a steal 은 '거저나 다름없이 싼 물건'이라는 뜻인데, 거꾸로 바가지를 썼다(ripped you off)며 안됐다고 답해 흐름이 어색해요. 돌려 말하지 말라(beat around the bush), 각자 내자(go Dutch), 도무지 모르겠다(make heads or tails) 대화는 자연스러워요."
+],
+[
+10,
+1,
+"grammar",
+null,
+"밑줄 친 부분 가운데 어법상 틀린 것을 고르시오. 모두 옳으면 ④를 고르시오.\nThe documents ①<u>submitting</u> by the committee last month ②<u>contained</u> several inaccuracies ③<u>that</u> postponed the final vote on the proposed budget for nearly three weeks.",
+[
+"submitting",
+"contained",
+"that",
+"No error"
+],
+[
+1
+],
+"서류는 위원회가 '제출한' 것이라 수동 관계예요. 명사 뒤 분사는 과거분사 submitted 가 맞아요. contained 는 본동사, that 은 inaccuracies 를 꾸미는 관계대명사로 맞아요."
+],
+[
+11,
+1,
+"grammar",
+null,
+"밑줄 친 부분 가운데 어법상 틀린 것을 고르시오. 모두 옳으면 ④를 고르시오.\nEducation researchers argue that the number of students who ①<u>rely</u> on online tutoring ②<u>have grown</u> steadily, ③<u>prompting</u> schools to rethink how they accommodate learners outside the classroom.",
+[
+"rely",
+"have grown",
+"prompting",
+"No error"
+],
+[
+2
+],
+"주어는 the number(수)라 단수예요. 관계절 who rely ...(복수 students 에 맞춘 rely 는 맞음)에 끌리지 말고 has grown 으로 써야 해요."
+],
+[
+12,
+1,
+"grammar",
+null,
+"밑줄 친 부분 가운데 어법상 틀린 것을 고르시오. 모두 옳으면 ④를 고르시오.\nThe new guidelines encourage teachers ①<u>to set</u> more explicit goals for each term, ②<u>to give</u> feedback more frequently, and ③<u>involving</u> parents more actively in deliberations about their children's progress.",
+[
+"to set",
+"to give",
+"involving",
+"No error"
+],
+[
+3
+],
+"encourage A to do 뒤에 to set, to give 가 나란히 이어지므로 세 번째도 to involve 로 맞춰야 병렬이 돼요."
+],
+[
+13,
+1,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nFar from being a ____ figure, the poet was so reclusive that even her nearest neighbors seldom glimpsed her leaving the house.",
+[
+"gregarious",
+"taciturn",
+"cloistered",
+"abstemious"
+],
+[
+1
+],
+"Far from(전혀 ~이 아닌) 뒤에는 '은둔한(reclusive)'과 반대되는 말이 와야 해요. 어울리기 좋아하는 gregarious 가 맞고, taciturn·cloistered 는 오히려 은둔 쪽이에요."
+],
+[
+14,
+1,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nThe senator's speech was so ____, crammed with digressions and superfluous repetition, that half the audience had dozed off before he reached his point.",
+[
+"pithy",
+"prolix",
+"trenchant",
+"cogent"
+],
+[
+2
+],
+"곁가지와 쓸데없는 반복으로 가득했다니 '장황한(prolix)' 연설이에요. pithy(간결한)·trenchant(날카로운)·cogent(설득력 있는)는 모두 반대 방향이에요."
+],
+[
+15,
+1,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nBecause the treaty's wording was deliberately ____, each government could assert that the text vindicated its own interpretation of the territorial dispute.",
+[
+"peremptory",
+"verbatim",
+"emphatic",
+"nebulous"
+],
+[
+4
+],
+"양쪽 정부가 저마다 자기 해석이 맞다고 할 수 있었다면 문구가 일부러 '모호했던(nebulous)' 거예요."
+],
+[
+16,
+1,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nAlthough its publisher marketed it as an audacious experiment, critics dismissed the novel as ____, contending that its plot merely rehashed clichés that earlier writers had exhausted decades before.",
+[
+"seminal",
+"derisive",
+"iconoclastic",
+"derivative"
+],
+[
+4
+],
+"예전 작가들이 다 써 버린 상투를 되풀이했다는 비판이라 '독창성 없는, 남의 것을 본뜬(derivative)'이 맞아요. seminal(획기적인)·iconoclastic(인습 타파의)은 반대이고, 철자가 비슷한 derisive(조롱하는)는 상투 되풀이와 상관이 없어요."
+],
+[
+17,
+1,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nYears of drought had left the once fertile valley ____, its fields fissured and its wells reduced to shallow, muddy puddles.",
+[
+"deluged",
+"desiccated",
+"decorous",
+"debonair"
+],
+[
+2
+],
+"가뭄으로 밭이 갈라지고 우물이 말랐으니 '바싹 마른(desiccated)'이 맞아요. deluged(물에 잠긴)는 반대이고, decorous(예의 바른)·debonair(멋진)는 골짜기를 그리는 말이 아니에요."
+],
+[
+18,
+1,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nRather than ____ the scandal, the minister's maladroit denials only drew more scrutiny to it and prolonged its life in the headlines.",
+[
+"inflame",
+"defuse",
+"corroborate",
+"chronicle"
+],
+[
+2
+],
+"Rather than 뒤에는 실제 결과(관심을 더 끌고 오래가게 함)와 반대되는 의도가 와요. 스캔들을 '가라앉히다(defuse)'가 맞아요."
+],
+[
+19,
+1,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nThe chemist was ____ about her preliminary results, refusing to announce any breakthrough until other laboratories had replicated them independently.",
+[
+"vainglorious",
+"credulous",
+"cavalier",
+"reticent"
+],
+[
+4
+],
+"다른 실험실이 재현하기 전까지 발표를 거부했으니 결과에 대해 '말을 아끼는(reticent)' 태도예요. vainglorious(자랑을 일삼는)·cavalier(경솔한)는 반대예요."
+],
+[
+20,
+1,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nThe museum's new director hopes to ____ the institution's long-standing reputation for elitism by admitting visitors free of charge every weekend.",
+[
+"disseminate",
+"dignify",
+"distend",
+"dispel"
+],
+[
+4
+],
+"주말마다 무료로 연다는 것은 '엘리트주의'라는 평판을 '떨쳐 없애려는(dispel)' 조치예요. disseminate(퍼뜨리다)는 반대이고, dignify(위엄을 주다)·distend(부풀리다)는 무료 입장과 이어지지 않아요."
+],
+[
+21,
+1,
+"paragraph",
+null,
+"빈칸 (A), (B), (C)에 들어갈 말로 가장 알맞은 것을 고르시오.\nWhen the table fork first appeared in western Europe, it was greeted with (A)____ rather than enthusiasm. According to an anecdote recounted by many historians, a Byzantine bride who married into a Venetian noble family in the eleventh century scandalized local churchmen by conveying her food to her mouth with a diminutive golden fork instead of her fingers. To her detractors, the implement was a token of excessive refinement, an (B)____ to the hands that God had provided for eating. Over the ensuing centuries, however, the fork gradually shed its (C)____ reputation. By the eighteenth century, eating without one had become a hallmark of poor breeding rather than of piety.",
+[
+"suspicion — affront — decadent",
+"suspicion — tribute — austere",
+"acclaim — boon — utilitarian",
+"rapture — tribute — rustic"
+],
+[
+1
+],
+"(A) 열광(enthusiasm)이 아니라 성직자들을 분개하게 했으니 '의심(suspicion)'이에요. (B) 지나친 세련됨의 표시라며 비난했으니 신이 준 손에 대한 '모욕(affront)'이에요. (C) 지나친 세련됨이라는 비난을 받았으니 '퇴폐적인(decadent)' 평판이에요. suspicion — tribute — austere 는 (A)만 맞는 짝이에요."
+],
+[
+22,
+1,
+"paragraph",
+null,
+"빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것을 고르시오.\nBefore the printing press, every book in Europe was transcribed by hand, often by monks toiling for long hours in frigid, poorly lit rooms. Their labor was meant to be anonymous and devout, yet the scribes did not always endure their lot in silence. In the margins of the folios they copied, they frequently (A)____ their weariness, scribbling plaintive complaints about numb fingers, inferior ink, or the interminable length of the text before them. For centuries such marginalia were dismissed as frivolous distractions from the sacred works they surrounded. Today they are (B)____ by historians as rare glimpses into the inner lives of humble laborers, whose voices otherwise left scarcely a trace in the written record.",
+[
+"vented — prized",
+"vented — disregarded",
+"concealed — derided",
+"suppressed — dismissed"
+],
+[
+1
+],
+"(A) 손가락이 곱았다는 불평을 적었으니 지친 마음을 '털어놓았다(vented)'예요. (B) 예전엔 하찮게 여겼지만 오늘날은 드문 기록으로 '귀하게 여긴다(prized)'는 대비예요. vented — disregarded 는 (A)만 맞는 짝이에요."
+],
+[
+23,
+1,
+"paragraph",
+null,
+"빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것을 고르시오.\nRed foxes, once creatures of forest edges and farmland, have become (A)____ residents of many European cities. In London alone, their numbers are estimated in the thousands, and they are routinely seen trotting across gardens, railway embankments, and even school playgrounds. Their success attests to remarkable adaptability. Far from being (B)____ by human presence, urban foxes exploit it, foraging for discarded food, rearing cubs beneath garden sheds, and mastering the rhythms of traffic. Studies comparing urban and rural foxes suggest that the urban animals may even be evolving subtly different skull shapes, perhaps because scavenging demands less biting force than predation.",
+[
+"rare — deterred",
+"elusive — enticed",
+"familiar — deterred",
+"reclusive — attracted"
+],
+[
+3
+],
+"(A) 정원·철길·운동장에서 흔히 보인다니 '낯익은(familiar)' 주민이에요. (B) Far from ~ 뒤에는 '이용한다'와 반대인 '쫓겨나는(deterred)'이 와야 해요. rare — deterred 는 (B)만 맞는 짝이에요."
+],
+[
+24,
+1,
+"paragraph",
+null,
+"빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것을 고르시오.\nThe world's first widely circulated paper money appeared in China in the early eleventh century, when merchants in Sichuan, weary of lugging unwieldy strings of iron coins, began exchanging receipts instead. Unlike gold or copper, paper had no (A)____ value; a note was worth something only because people trusted that others would accept it. The state soon took over the issuing of notes, printing them with ornate designs and stern admonitions against forgery, and for a time the system functioned seamlessly, facilitating commerce across a vast empire whose provinces had long relied on incompatible coins. Later regimes, however, discovered how tempting it was to defray their expenses simply by printing more. When they did so too profligately, ruinous (B)____ followed, and public faith in paper money evaporated, a lesson that subsequent monetary systems would learn repeatedly.",
+[
+"nominal — inflation",
+"intrinsic — inflation",
+"symbolic — deflation",
+"ostensible — austerity"
+],
+[
+2
+],
+"(A) 종이는 금·구리와 달리 그 자체의 '본질적(intrinsic)' 가치가 없고, 사람들의 믿음 덕분에만 값어치가 있어요. (B) 돈을 마구 찍으면 물가가 치솟는 '인플레이션(inflation)'이 따라와요. nominal — inflation 은 (B)만 맞는 짝이에요."
+],
+[
+25,
+1,
+"paragraph",
+null,
+"빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것을 고르시오.\nFor most of the twentieth century, the typewriter was the indispensable tool of offices, newsrooms, and novelists' studies. Its incessant clatter filled entire floors of government buildings, and typing pools employed legions of skilled clerks. In the 1980s and 1990s, however, personal computers and word processors made the machine (A)____ with startling rapidity, and manufacturers shuttered their factories one after another. Yet the device now inspires a curious (B)____. Collectors pay handsome sums for lovingly restored models, repair shops that once seemed doomed report waiting lists, and aficionados congregate at public events to type letters on machines their grandparents might have used.",
+[
+"obsolete — indifference",
+"indispensable — aversion",
+"obsolete — nostalgia",
+"ubiquitous — disdain"
+],
+[
+3
+],
+"(A) 개인용 컴퓨터에 밀려 공장이 잇따라 문을 닫았으니 '쓸모없어진(obsolete)'이에요. (B) 수집가, 수리점 대기 줄, 타자기 모임이 이어지니 사라진 기계를 그리워하는 '향수(nostalgia)'예요. obsolete — indifference 는 (A)만 맞는 짝이에요."
+],
+[
+26,
+1,
+"paragraph",
+null,
+"빈칸 (A), (B), (C)에 들어갈 말로 가장 알맞은 것을 고르시오.\nBefore the eighteenth century, naturalists often designated a plant by a lengthy Latin phrase enumerating its features, a label that might run to a dozen words and was (A)____ to remember. The Swedish botanist Carl Linnaeus (B)____ the practice by giving every species a two-part name, the first identifying its genus and the second the species itself. The system was adopted with remarkable alacrity because it was both succinct and universal. Common names, by contrast, vary from region to region and language to language, so that a single flower may be known by a dozen names, a constant source of (C)____ that the scientific label avoids.",
+[
+"cumbersome — standardized — confusion",
+"concise — standardized — precision",
+"succinct — complicated — clarity",
+"memorable — obscured — harmony"
+],
+[
+1
+],
+"(A) 열 낱말이 넘는 이름은 외우기 '번거로웠고(cumbersome)', (B) 린네가 두 부분 이름으로 '표준화했으며(standardized)', (C) 지역마다 다른 일반 이름은 '혼란(confusion)'을 낳아요. concise — standardized — precision 은 (B)만 맞는 짝이에요."
+],
+[
+27,
+1,
+"reading",
+"r1-p27",
+"글의 흐름상 밑줄 친 (A)~(D) 가운데 적절하지 않은 것을 고르시오.",
+[
+"(A) restful",
+"(B) apt",
+"(C) exceptional",
+"(D) concealing"
+],
+[
+4
+],
+"모순을 통찰만큼이나 '드러내 놓고(as openly as)' 보여 줬다는 말이므로 감춘다(concealing)가 아니라 드러낸다(revealing)가 맞아요. 한가함이 기대만큼 편하지 않았다(restful), 시도라는 이름이 딱 맞았다(apt)는 흐름에 맞아요."
+],
+[
+28,
+1,
+"reading",
+"r1-p28",
+"글의 내용과 일치하지 않는 것을 고르시오.",
+[
+"The fungus in a lichen protects its photosynthetic partners from drying out and from harsh light.",
+"Lichens usually spread several centimeters across a surface every year.",
+"Lichens help produce the first thin layers of soil by gradually breaking down rock.",
+"Lichens can serve as early indicators of air pollution because many absorb nutrients from the air."
+],
+[
+2
+],
+"지의류는 한 해에 1밀리미터 안팎으로 아주 느리게 자란다고 했어요. 해마다 몇 센티미터씩 퍼진다는 문장이 글과 맞지 않아요. 균류가 마르지 않게 지켜 주고, 바위를 부숴 흙을 만들고, 오염에 민감하다는 내용은 글에 있어요."
+],
+[
+29,
+1,
+"reading",
+"r1-s1",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"damning",
+"inconclusive",
+"unequivocal",
+"technical"
+],
+[
+2
+],
+"바로 뒤에서 성적이 조금 오른 연구와 거의 변화가 없는 연구가 함께 나오므로, 증거가 열기만큼 분명하지 않고 '결론이 나지 않은(inconclusive)' 상태예요."
+],
+[
+30,
+1,
+"reading",
+"r1-s1",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"How Smartphones Have Enhanced Classroom Learning",
+"Why Parents Oppose Every Restriction on Screen Time",
+"Phone-Free Schools: A Popular Remedy of Uncertain Worth",
+"Locked Pouches and Other Technologies for Storing Phones"
+],
+[
+3
+],
+"여러 나라가 학교 휴대폰 금지에 나섰고 지지 이유도 많지만, 효과 증거는 엇갈리고 비판도 있다는 글이에요. '인기 있지만 효과는 불확실한 처방'이라는 제목이 맞아요."
+],
+[
+31,
+1,
+"reading",
+"r1-s2",
+"글의 주제로 가장 알맞은 것을 고르시오.",
+[
+"the difficulty of rationally justifying our reliance on past experience",
+"Hume's advice that people should abandon all of their expectations about the future",
+"the way Popper finally proved that induction is rational",
+"the role of bread and other foods in eighteenth-century philosophy"
+],
+[
+1
+],
+"미래가 과거를 닮으리라는 기대를 이성으로 정당화할 수 없다는 흄의 문제와, 그 뒤의 해결 시도가 여전히 논란이라는 글이에요. 흄은 기대를 버리라고 하지 않았고, 포퍼도 문제를 끝내지 못했어요."
+],
+[
+32,
+1,
+"reading",
+"r1-s2",
+"글에서 추론할 수 있는 것을 고르시오.",
+[
+"Hume believed that custom gives our inductive inferences a secure and rational foundation.",
+"Popper's proposal has been embraced by nearly all philosophers as a definitive solution.",
+"Hume would expect people to go on forming expectations from experience.",
+"Hume proposed that scientists should test bold conjectures instead of relying on induction."
+],
+[
+3
+],
+"흄은 우리가 이렇게 추론할 수밖에 없고 그러지 않으면 삶이 불가능하다고 했으니, 자기 논증과 상관없이 사람들은 계속 경험으로 기대를 세울 거라고 볼 거예요. 습관은 이성적 근거가 아니라고 했고, 포퍼의 생각은 지금도 논란이며, 대담한 추측을 시험하자는 것은 흄이 아니라 포퍼의 제안이에요."
+],
+[
+33,
+1,
+"reading",
+"r1-s3",
+"(A)~(D) 가운데 글의 흐름과 관계없는 문장을 고르시오.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+3
+],
+"글은 인공 빛이 철새·곤충·바다거북을 해치는 피해를 차례로 들어요. (C)는 가로등 가림막 값이 얼마 안 든다는 비용 이야기라, 피해를 늘어놓는 단락 한가운데에 들어갈 문장이 아니에요(해결책은 다음 단락 소재예요)."
+],
+[
+34,
+1,
+"reading",
+"r1-s3",
+"글의 내용과 일치하는 것을 고르시오.",
+[
+"Light pollution is considerably harder to reverse than most other environmental problems are.",
+"Birds that migrate at night tend to steer clear of brightly lit buildings, especially in fog.",
+"Newly hatched sea turtles instinctively crawl away from the ocean toward darker inland areas.",
+"Some cities ask building owners to dim their lights during migration seasons."
+],
+[
+4
+],
+"몇몇 도시가 철새 이동철에 높은 건물 주인에게 밤늦게 불을 줄여 달라고 한다고 했어요. 빛 공해는 오히려 되돌리기 쉽고, 새는 안개 속에서 불빛에 끌려가며, 새끼 거북은 밝은 바다 쪽으로 기어간다고 했어요."
+],
+[
+35,
+1,
+"reading",
+"r1-s4",
+"다음 문장이 들어가기에 가장 알맞은 곳을 고르시오.\nThe question was far from academic: employers and public health programs, which pay for much of the nation's medication, began to ask whether they could afford to cover the drugs for everyone who qualified.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+3
+],
+"주어진 문장의 The question 은 '누가 혜택을 보고 누가 돈을 낼지'라는 물음을 받아, 약값을 대는 고용주·공공 의료 쪽 고민으로 이어 가요. 그 물음 바로 뒤인 (C)가 알맞아요."
+],
+[
+36,
+1,
+"reading",
+"r1-s4",
+"글에서 추론할 수 없는 것을 고르시오.",
+[
+"Some patients with diabetes were affected by the drugs' popularity for weight loss.",
+"Many patients may have to keep taking the drugs to maintain their weight loss.",
+"GLP-1 drugs were first developed with obesity rather than diabetes in mind.",
+"The drugs have undermined the view that obesity is mainly a matter of willpower."
+],
+[
+3
+],
+"이 약은 원래 2형 당뇨 치료용으로 개발됐다고 했으니 처음부터 비만을 겨냥했다는 말은 끌어낼 수 없어요. 품귀로 당뇨 환자가 약을 구하기 힘들었고, 끊으면 체중이 돌아오며, 의지력 문제라는 생각을 흔들었다는 내용은 글에서 나와요."
+],
+[
+37,
+1,
+"reading",
+"r1-s5",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"perceptible",
+"obsolete",
+"habitual",
+"invisible"
+],
+[
+1
+],
+"익숙한 이름을 쓰지 않아 습관에 묻힌 대상을 다시 '느끼고 알아볼 수 있게(perceptible)' 만든다는 흐름이에요. invisible·habitual 은 습관이 만든 상태 쪽이에요."
+],
+[
+38,
+1,
+"reading",
+"r1-s5",
+"글의 주제로 가장 알맞은 것을 고르시오.",
+[
+"art's role in renewing a perception dulled by habit",
+"the superiority of prose over poetry in conveying information",
+"Tolstoy's description of an evening at the opera in War and Peace",
+"the enduring power of artistic conventions once they become familiar"
+],
+[
+1
+],
+"습관이 경험을 삼키고, 예술은 낯설게 하기로 무뎌진 지각을 되살린다는 쉬클롭스키의 생각이 중심이에요. 톨스토이의 오페라 장면은 예시 하나일 뿐이고, 관습은 익숙해지면 힘을 잃는다고 했어요."
+],
+[
+39,
+1,
+"reading",
+"r1-s6",
+"(A)~(D) 가운데 글의 흐름과 관계없는 문장을 고르시오.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+4
+],
+"글은 양이 적히지 않은 요리 카드로 맛보며 익히는 법을 배우고, 그런 앎은 규칙으로 적을 수 없다는 생각으로 이어져요. (D)는 된장찌개가 다른 나라 국물보다 영양이 좋지 않으냐고 묻는 엉뚱한 비교라 흐름과 관계가 없어요. (C)는 똑같다고 했다가 아니라고 고백하는 장면이라 맞아요."
+],
+[
+40,
+1,
+"reading",
+"r1-s6",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"Why Written Recipes Should Always Give Exact Quantities",
+"Learning from a Recipe That Gave No Measurements",
+"An Aunt's Collection of Treasured Family Recipes",
+"The Perils of Following Every Recipe Too Precisely"
+],
+[
+2
+],
+"양이 적히지 않은 어머니의 요리 카드를 처음엔 쓰지 못하다가, 맛보며 고치는 법을 익히고 그 모호함을 말로 다 못 하는 앎에 대한 믿음으로 이해하게 된 글이에요. 정확한 양을 적어야 한다는 것은 글과 반대이고, 이모는 이야기 속 한 사람일 뿐이에요."
+],
+[
+1,
+2,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nEven as the storm warnings grew more urgent, the surfers remained <u>insouciant</u>, bantering on the beach while the waves surged higher.",
+[
+"apprehensive",
+"blithe",
+"pugnacious",
+"sanctimonious"
+],
+[
+2
+],
+"insouciant 는 '태평한, 무사태평한'이라 blithe(걱정 없이 태평한)와 가까워요. 경보가 다급해지는데도 농담을 했다는 대비가 단서이고, apprehensive(불안해하는)는 반대예요."
+],
+[
+2,
+2,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nThe candidate accused his rivals of hiring consultants to <u>traduce</u> his record with half-truths and anonymous online posts.",
+[
+"calumniate",
+"extol",
+"emulate",
+"placate"
+],
+[
+1
+],
+"traduce 는 '(남의 이름을) 헐뜯다, 중상하다'라 calumniate(비방하다)와 같은 뜻이에요. 반쪽 진실과 익명 글로 했다는 수단이 단서이고, extol(칭송하다)은 반대예요."
+],
+[
+3,
+2,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nThe young challenger faced a <u>redoubtable</u> opponent who had not lost a single match in more than three years.",
+[
+"formidable",
+"credulous",
+"ignominious",
+"ostentatious"
+],
+[
+1
+],
+"redoubtable 은 '만만찮은, 가공할'이라 formidable 과 가까워요. 3년 넘게 한 번도 지지 않았다는 설명이 단서예요."
+],
+[
+4,
+2,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nAn <u>inveterate</u> collector of old maps, my grandfather spent nearly every weekend scouring secondhand bookshops for new additions.",
+[
+"repentant",
+"fledgling",
+"habitual",
+"impetuous"
+],
+[
+3
+],
+"inveterate 는 '오래 몸에 밴, 상습적인'이라 habitual 과 가까워요. 거의 주말마다 헌책방을 뒤졌다는 내용이 단서이고, fledgling(갓 시작한)은 반대 쪽이에요."
+],
+[
+5,
+2,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nInvestors have grown far more <u>circumspect</u> since the crash, scrutinizing every proposal before committing even modest sums of money.",
+[
+"brazen",
+"chary",
+"garrulous",
+"indolent"
+],
+[
+2
+],
+"circumspect 는 '신중한, 조심스러운'이라 chary(조심스러워하는)와 가까워요. 작은 돈을 넣기 전에도 제안을 꼼꼼히 따진다는 뒷부분이 단서예요."
+],
+[
+6,
+2,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nPublic health officials vowed to <u>extirpate</u> the disease from the region, launching a vaccination campaign in every remote village.",
+[
+"proliferate",
+"corroborate",
+"eradicate",
+"sequester"
+],
+[
+3
+],
+"extirpate 는 '뿌리 뽑다, 근절하다'라 eradicate 와 같은 뜻이에요. 외딴 마을마다 예방접종을 벌였다는 조치가 단서예요."
+],
+[
+7,
+2,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nThe film's <u>doleful</u> soundtrack, all slow strings and muffled drums, seemed oddly out of place in a lighthearted romantic comedy.",
+[
+"jocular",
+"pedantic",
+"mournful",
+"laconic"
+],
+[
+3
+],
+"doleful 은 '슬픔에 잠긴, 구슬픈'이라 mournful 과 가까워요. 느린 현악과 둔한 북소리, 가벼운 코미디와 어울리지 않았다는 말이 단서예요."
+],
+[
+8,
+2,
+"dialogue",
+null,
+"다음 대화 가운데 흐름이 가장 어색한 것을 고르시오.\n(A) A: Have you finished the report for tomorrow's meeting yet?\n    B: Almost. I'm just putting the finishing touches on the charts right now.\n(B) A: I heard your job interview is this afternoon. Break a leg!\n    B: Why would you wish me harm? I thought you were on my side.\n(C) A: Sorry, I completely forgot to bring the book you lent me.\n    B: No worries. There's no rush, so just bring it whenever you get a chance.\n(D) A: How did your presentation go? You were worried about it all week.\n    B: Better than I expected. Once I got going, it went off without a hitch.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+2
+],
+"Break a leg 는 '행운을 빈다'는 응원인데, 다치라는 저주로 거꾸로 받아 왜 해를 비느냐고 되물으니 흐름이 어색해요. 마무리 손질(finishing touches), 서두를 것 없다(no rush), 아무 문제 없이 잘 끝났다(without a hitch)는 자연스러워요."
+],
+[
+9,
+2,
+"dialogue",
+null,
+"다음 대화 가운데 흐름이 가장 어색한 것을 고르시오.\n(A) A: Let's call it a day. We've been working on this for ten hours straight.\n    B: Good idea. Let's start the next chapter right now while we still have the energy.\n(B) A: Can you keep an eye on my bag while I grab a coffee?\n    B: Of course. Take your time; I'll be here reading for a while anyway.\n(C) A: I think I'm coming down with a cold. My throat is killing me.\n    B: You should take it easy today and drink plenty of warm tea.\n(D) A: Please don't tell anyone about the surprise party we're planning for Mina.\n    B: Don't worry. My lips are sealed; I won't breathe a word to anyone.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+1
+],
+"call it a day 는 '오늘은 그만하자'는 말인데, 좋다고 해 놓고 지금 다음 장을 시작하자고 하니 앞뒤가 맞지 않아요. 가방 봐 주기(keep an eye on), 감기 기운(coming down with), 입을 꼭 다물겠다(my lips are sealed)는 자연스러워요."
+],
+[
+10,
+2,
+"grammar",
+null,
+"밑줄 친 부분 가운데 어법상 틀린 것을 고르시오. 모두 옳으면 ④를 고르시오.\nAlthough the proposal seemed ①<u>financially</u> sound at first, ②<u>closer</u> analysis revealed that its costs would far exceed the ③<u>saves</u> promised by its most enthusiastic supporters.",
+[
+"financially",
+"closer",
+"saves",
+"No error"
+],
+[
+3
+],
+"the 뒤에서 promised 의 꾸밈을 받는 자리는 명사가 와야 해요. 동사 saves 가 아니라 명사 savings 가 맞아요. sound 를 꾸미는 부사 financially, analysis 를 꾸미는 형용사 closer 는 맞아요."
+],
+[
+11,
+2,
+"grammar",
+null,
+"밑줄 친 부분 가운데 어법상 틀린 것을 고르시오. 모두 옳으면 ④를 고르시오.\nNot only did the festival ①<u>attract</u> a record number of visitors this summer, but it also ②<u>raised</u> enough money ③<u>to restore</u> the old theater where it had first been held decades ago.",
+[
+"attract",
+"raised",
+"to restore",
+"No error"
+],
+[
+4
+],
+"Not only 가 앞으로 나가 did 가 도치됐으니 뒤는 동사원형 attract, but also 뒤 절은 과거 raised, 목적을 나타내는 enough money to restore 모두 맞아요. 틀린 곳이 없어요."
+],
+[
+12,
+2,
+"grammar",
+null,
+"밑줄 친 부분 가운데 어법상 틀린 것을 고르시오. 모두 옳으면 ④를 고르시오.\nThe ancient manuscript, which ①<u>was disappeared</u> from the monastery library during the war, ②<u>was</u> finally ③<u>returned</u> last year by a collector who had bought it without knowing its provenance.",
+[
+"was disappeared",
+"was",
+"returned",
+"No error"
+],
+[
+1
+],
+"disappear 는 목적어를 받지 않는 자동사라 수동태로 쓸 수 없어요. which disappeared 가 맞아요. 원고는 '돌려받은' 것이라 was returned 는 맞아요."
+],
+[
+13,
+2,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nThe professor's lectures were notoriously ____, wandering from topic to topic so freely that students struggled to discern any central argument.",
+[
+"didactic",
+"diaphanous",
+"disingenuous",
+"discursive"
+],
+[
+4
+],
+"주제에서 주제로 마음대로 옮겨 다녔으니 '두서없이 흐르는(discursive)' 강의예요. didactic(교훈적인)·disingenuous(솔직하지 못한)는 두서없음과 상관없고, diaphanous(비치는 듯 얇은)는 강의를 그리는 말이 아니에요."
+],
+[
+14,
+2,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nThough the new law was hailed as a breakthrough for consumers, skeptics warned that its many loopholes would render it largely ____.",
+[
+"nugatory",
+"draconian",
+"inviolable",
+"salutary"
+],
+[
+1
+],
+"허점이 많아 법이 힘을 쓰지 못한다는 경고이니 '쓸모없는, 효력 없는(nugatory)'이 맞아요. draconian(가혹한)은 반대로 너무 센 법이에요."
+],
+[
+15,
+2,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nThe explorer's diaries reveal a man of extraordinary ____, who pressed on through blizzards and starvation long after his companions had turned back.",
+[
+"diffidence",
+"profligacy",
+"levity",
+"fortitude"
+],
+[
+4
+],
+"동료들이 돌아선 뒤에도 눈보라와 굶주림을 뚫고 나아갔으니 '불굴의 용기(fortitude)'예요."
+],
+[
+16,
+2,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nMany economists regard the new sales tax as ____, since it takes a far larger share of income from impoverished households than from affluent ones.",
+[
+"progressive",
+"remunerative",
+"equitable",
+"regressive"
+],
+[
+4
+],
+"가난한 가구 소득에서 더 큰 몫을 가져가는 세금은 '역진적(regressive)'이에요. progressive(누진적)는 반대이고, equitable(공평한)도 맞지 않아요."
+],
+[
+17,
+2,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nAfter decades of mutual suspicion, the two neighboring countries finally reached a ____, reopening their shared border and restoring full diplomatic relations.",
+[
+"stalemate",
+"schism",
+"rapprochement",
+"impasse"
+],
+[
+3
+],
+"국경을 다시 열고 외교 관계를 되살렸으니 '관계 회복, 화해(rapprochement)'예요. stalemate·impasse(교착)·schism(분열)은 반대예요."
+],
+[
+18,
+2,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nWith its factories shuttered and its population halved, the once thriving industrial town has become ____, its main street lined with boarded-up shops.",
+[
+"moribund",
+"effervescent",
+"opulent",
+"cosmopolitan"
+],
+[
+1
+],
+"공장이 닫히고 인구가 반으로 줄어 판자로 막은 가게가 늘어섰으니 '죽어 가는, 쇠락한(moribund)' 도시예요."
+],
+[
+19,
+2,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nAlthough the witness spoke with unwavering confidence and never hesitated under cross-examination, her account was so plainly ____ with the physical evidence, contradicting it at nearly every point, that the jury quickly dismissed it as unreliable.",
+[
+"interchangeable",
+"intertwined",
+"incongruent",
+"ineffable"
+],
+[
+3
+],
+"물적 증거와 거의 모든 점에서 어긋났고(contradicting) 배심원이 믿을 수 없다고 물리쳤으니 '맞지 않는(incongruent)'이 맞아요. interchangeable(바꿔 쓸 수 있는)·intertwined(긴밀히 얽힌)는 반대이고, ineffable(형언할 수 없는)은 with 와 어울리지 않아요."
+],
+[
+20,
+2,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nInstead of rewarding loyal customers, the company's new pricing policy seemed designed to ____ them, raising fees on precisely the services they used most.",
+[
+"placate",
+"alienate",
+"beguile",
+"indulge"
+],
+[
+2
+],
+"단골이 가장 많이 쓰는 서비스 값을 올렸으니 그들을 '등 돌리게(alienate)' 하는 정책이에요. Instead of rewarding 과 대비돼요."
+],
+[
+21,
+2,
+"paragraph",
+null,
+"빈칸 (A), (B), (C)에 들어갈 말로 가장 알맞은 것을 고르시오.\nFor centuries, people who wished to erase a pencil mark relied on a (A)____ remedy: they rubbed it away with a lump of moist bread. In 1770 the English chemist Joseph Priestley, better known for his work on gases, observed that a substance recently brought from South America could perform the task far more effectively. Because it rubbed out mistakes, the material came to be called rubber in English, a name that (B)____ even after it found countless other applications in tires, boots, and machinery. Today the word has become so (C)____ that few people pause to wonder where it came from or picture a schoolroom when they hear it.",
+[
+"crude — faded — arcane",
+"ingenious — vanished — contentious",
+"costly — lapsed — ephemeral",
+"crude — endured — entrenched"
+],
+[
+4
+],
+"(A) 젖은 빵 덩이로 문질렀다니 '조잡한(crude)' 방법이에요. (B) 쓰임이 넓어진 뒤에도(even after) 이름이 '살아남았다(endured)'예요. (C) 유래를 아무도 묻지 않을 만큼 '굳어진(entrenched)' 말이에요. crude — faded — arcane 은 (A)만 맞는 짝이에요."
+],
+[
+22,
+2,
+"paragraph",
+null,
+"빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것을 고르시오.\nAnyone who has traversed a university campus has seen them: narrow dirt tracks cutting diagonally across lawns where no path was ever planned. Landscape architects call them desire lines. (A)____ the neat sidewalks laid out by designers, pedestrians wear their own shortcuts into the grass, choosing the most direct route between the destinations they actually want to reach. Rather than combat this habit with fences and admonitory signs, some campuses have learned to (B)____ it. They leave the grounds of a new building unpaved for a year, monitor where people walk, and then lay the permanent paths along the lines that feet have already drawn.",
+[
+"Following — harness",
+"Ignoring — harness",
+"Following — forbid",
+"Admiring — suppress"
+],
+[
+2
+],
+"(A) 계획에 없던 지름길을 내니 보도를 '무시하고(Ignoring)'예요. (B) 막지 않고(Rather than combat) 사람들이 낸 길을 따라 포장하니 그 습관을 '활용한다(harness)'예요. Following — harness 는 (B)만 맞는 짝이에요."
+],
+[
+23,
+2,
+"paragraph",
+null,
+"빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것을 고르시오.\nSince the book dealer Wilfrid Voynich acquired it in 1912, a small illustrated manuscript now held at Yale University has (A)____ generations of cryptographers and linguists. Its pages teem with an indecipherable script and with drawings of unidentifiable plants, star charts, and bathing figures. Radiocarbon dating has placed its vellum in the early fifteenth century, but no one has convincingly deciphered a single sentence. Proposed decipherments have surfaced regularly, identifying the language as everything from an early form of Romance to a code based on Hebrew, yet none has persuaded the specialists who have tested them. Statistical studies show that the text has some patterns resembling natural language, yet other features are strangely repetitive, with the same words repeated two or three times in a row. Some scholars therefore surmise that the writing is meaningless, an elaborate (B)____ devised to impress or deceive an affluent buyer.",
+[
+"baffled — treatise",
+"baffled — hoax",
+"enlightened — manifesto",
+"edified — chronicle"
+],
+[
+2
+],
+"(A) 아직 한 문장도 읽지 못했으니 학자들을 '당혹스럽게 했다(baffled)'예요. (B) 글이 아무 뜻도 없을 수 있다니 부자를 속이려고 꾸민 '날조(hoax)'예요. treatise(논문)는 뜻 있는 글이라 맞지 않아서 baffled — treatise 는 (A)만 맞는 짝이에요."
+],
+[
+24,
+2,
+"paragraph",
+null,
+"빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것을 고르시오.\nThe claim that hot water can freeze faster than cold water sounds (A)____, yet it has a long history. Aristotle alluded to something like it, and in the 1960s a Tanzanian schoolboy named Erasto Mpemba revived interest after noticing that warm ice-cream mixture set sooner than cool mixture in his school freezer. Since then, physicists have posited explanations involving evaporation, dissolved gases, and currents within the cooling water. Careful experiments, however, have found the effect (B)____: it appears under some conditions and vanishes under others, and some researchers doubt it exists at all once measurements are conducted with sufficient rigor.",
+[
+"counterintuitive — elusive",
+"self-evident — elusive",
+"self-evident — robust",
+"unremarkable — reproducible"
+],
+[
+1
+],
+"(A) 뜨거운 물이 더 빨리 언다는 말은 '직관에 어긋나게(counterintuitive)' 들려요. (B) 어떤 조건에서는 나타나고 어떤 조건에서는 사라지니 '잡히지 않는(elusive)' 현상이에요. robust(늘 확실한)는 반대예요. self-evident — elusive 는 (B)만 맞는 짝이에요."
+],
+[
+25,
+2,
+"paragraph",
+null,
+"빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것을 고르시오.\nIn 1793, revolutionary France set out to rationalize not only weights and measures but time itself. A new decree divided the day into ten hours, each of one hundred minutes, each of one hundred seconds, and clockmakers began fashioning dials marked with the new numbers. The reform, however, proved (A)____ unpopular. Replacing clocks and watches was prohibitively expensive, ordinary citizens stubbornly went on reckoning in the familiar hours, and many of the new dials had to display both systems simultaneously. In less than two years, the government (B)____ the mandatory use of decimal time, although the metric system for length and weight, introduced in the same reforming spirit, eventually spread across most of the world.",
+[
+"barely — abandoned",
+"barely — extended",
+"mildly — enforced",
+"deeply — abandoned"
+],
+[
+4
+],
+"(A) 비싼 시계 교체, 옛 시간으로 생각하는 사람들 이야기가 이어지니 '몹시(deeply)' 인기가 없었어요. (B) 그래서 2년도 안 돼 십진 시간의 의무 사용을 '거둬들였다(abandoned)'예요. 미터법은 살아남았다는 although 와도 맞아요. barely — abandoned 는 (B)만 맞는 짝이에요."
+],
+[
+26,
+2,
+"paragraph",
+null,
+"빈칸 (A), (B), (C)에 들어갈 말로 가장 알맞은 것을 고르시오.\nDogs were bred by humans for hunting, herding, and guarding, but cats were probably not domesticated so much as (A)____. When early farmers in the Near East began stockpiling grain, mice flocked to their settlements, and wildcats followed the mice. Farmers had ample reason to welcome the newcomers, and the relationship that developed was (B)____: the cats gained a steady supply of prey, and the people gained free pest control. Because humans did little to reshape their behavior for most of this history, it may be no surprise that cats remain somewhat (C)____ even today, affectionate on their own terms but rarely eager to obey.",
+[
+"trained — mutual — obedient",
+"trained — exploitative — docile",
+"bred — one-sided — submissive",
+"tolerated — mutual — aloof"
+],
+[
+4
+],
+"(A) 사람이 일부러 길들였다기보다 스스로 와서 '받아들여졌다(tolerated)', (B) 고양이는 먹이를, 사람은 쥐 잡기를 얻었으니 '서로에게 이로운(mutual)', (C) 시키는 대로 따르지 않으니 '쌀쌀맞은(aloof)'이에요. trained — mutual — obedient 는 (B)만 맞는 짝이에요."
+],
+[
+27,
+2,
+"reading",
+"r2-p27",
+"글의 흐름상 밑줄 친 (A)~(D) 가운데 적절하지 않은 것을 고르시오.",
+[
+"(A) incomplete",
+"(B) reminder",
+"(C) economical",
+"(D) combining"
+],
+[
+3
+],
+"글자가 수천 자나 되니 한 벌의 활자를 만드는 일은 '돈과 품이 많이 드는(costly)' 일이었어요. '경제적인(economical)'은 흐름과 반대예요. 구텐베르크 이야기가 '불완전하다(incomplete)'는 앞의 중국·고려 사례와 맞아요."
+],
+[
+28,
+2,
+"reading",
+"r2-p28",
+"글의 내용과 일치하지 않는 것을 고르시오.",
+[
+"People name the ink color faster when the word names a different color.",
+"Practiced readers find it difficult to avoid reading a familiar word placed before them.",
+"Versions of the task are used to study aging and brain injury.",
+"Emotionally charged words can capture attention more strongly than neutral words."
+],
+[
+1
+],
+"낱말과 잉크 색이 다를 때 사람들은 눈에 띄게 느려지고 실수가 늘었다고 했어요. 다른 색 이름일 때 더 빨리 말한다는 문장이 글과 맞지 않아요."
+],
+[
+29,
+2,
+"reading",
+"r2-s1",
+"글의 주제로 가장 알맞은 것을 고르시오.",
+[
+"why enthusiasm for plant-based meat faded and what may decide its future",
+"the health benefits that ultra-processed plant-based foods offer to ordinary diners",
+"how plant-based burgers are engineered to mimic beef",
+"the environmental damage caused by vast soybean plantations"
+],
+[
+1
+],
+"대체육이 한때 세상을 바꿀 듯했지만 맛·가격·가공식품 논란으로 열기가 식었고, 앞으로는 맛있고 싸고 익숙한 음식을 내놓느냐에 달렸다는 글이에요."
+],
+[
+30,
+2,
+"reading",
+"r2-s1",
+"글에서 추론할 수 있는 것을 고르시오.",
+[
+"Plant-based burgers were generally cheaper than the beef they replaced.",
+"Many early buyers of plant-based meat did not become regular customers.",
+"Nutritionists were unanimous in praising plant-based meat as healthy.",
+"Investors lost interest after livestock emissions proved to be negligible."
+],
+[
+2
+],
+"호기심에 사 본 사람이 많았지만 다시 사지 않았다고 했으니 단골이 되지 못한 사람이 많았다고 볼 수 있어요. 대체육은 오히려 소고기보다 비쌌고, 일부 영양학자는 비판했으며, 축산 배출은 여전히 크다고 했어요."
+],
+[
+31,
+2,
+"reading",
+"r2-s2",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"physically exhausting",
+"visible to all",
+"remarkably efficient",
+"openly violent"
+],
+[
+3
+],
+"감시받는지 알 수 없으니 늘 감시받는 듯 행동하고, 그래서 몇 안 되는 간수나 빈 탑으로도 수백 명을 다스린다는 뒷말이 이어져요. 적은 힘으로 큰 효과를 내니 '놀랄 만큼 효율적(remarkably efficient)'이에요."
+],
+[
+32,
+2,
+"reading",
+"r2-s2",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"Why Bentham's Prisons Succeeded in Curbing Crime",
+"Foucault's Proposal for a New Kind of Prison",
+"The Panopticon: From Prison Plan to Digital Metaphor",
+"How Modern Security Cameras Track Every Visitor"
+],
+[
+3
+],
+"벤담의 감옥 설계가 실제로 지어지지 않았지만 푸코가 되살려 현대 권력과 디지털 감시를 설명하는 비유가 됐다는 흐름이라, 감옥 설계에서 디지털 시대의 비유로 이어진 흐름이 제목으로 맞아요. 감시 카메라는 디지털 감시의 한 예일 뿐이에요."
+],
+[
+33,
+2,
+"reading",
+"r2-s3",
+"다음 문장이 들어가기에 가장 알맞은 곳을 고르시오.\nStrikingly, this number stays the same whether the flock is densely packed or loosely spread, so the birds seem to keep track of companions by count rather than by distance.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+2
+],
+"주어진 문장의 this number 는 '가장 가까운 이웃 여섯이나 일곱'을 가리켜요. 그 숫자가 나온 바로 뒤인 (B)에 들어가야 하고, 이어지는 these few companions 와도 맞아요."
+],
+[
+34,
+2,
+"reading",
+"r2-s3",
+"글의 내용과 일치하는 것을 고르시오.",
+[
+"Murmurations are orchestrated by a small cadre of seasoned leaders.",
+"Murmurations tend to be smaller when predators are nearby.",
+"Murmurations mainly serve to guide the birds toward feeding sites far from the roost.",
+"Each starling coordinates its movement mainly with a few nearby birds."
+],
+[
+4
+],
+"찌르레기 한 마리는 가장 가까운 이웃 여섯이나 일곱 마리만 보고 움직인다고 했어요. 지도자는 없고, 포식자가 있으면 군무가 더 커지며, 먹이터 정보를 나눈다는 생각은 아직 시험하기 어렵다고 했을 뿐 주된 까닭으로 든 것은 포식자 방어예요."
+],
+[
+35,
+2,
+"reading",
+"r2-s4",
+"(A)~(D) 가운데 글의 흐름과 관계없는 문장을 고르시오.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+3
+],
+"글은 H5N1 이 여러 포유류와 젖소로 번지며 사람 감염 위험을 키운다는 흐름이에요. (C)는 낙농가가 받는 우유값이 사료값을 못 따라간다는 가격 이야기라, 바이러스가 포유류로 번지는 단락 한가운데에 들어갈 문장이 아니에요(경제 이야기는 마지막 단락 소재예요)."
+],
+[
+36,
+2,
+"reading",
+"r2-s4",
+"글에서 추론할 수 없는 것을 고르시오.",
+[
+"Wild birds helped carry the virus from one continent to another.",
+"The H5N1 virus has been shown to pass easily from person to person.",
+"Drinking raw milk may carry more risk than drinking pasteurized milk.",
+"Outbreaks on poultry farms can affect the prices consumers pay."
+],
+[
+2
+],
+"사람 사이에 잘 퍼지게 될까 걱정하지만 '아직 그런 일은 없다'고 했어요. 사람끼리 쉽게 옮는다는 말은 끌어낼 수 없어요. 철새가 옮겼고, 살균하면 바이러스가 죽으며, 산란계 살처분이 달걀값을 올렸다는 내용은 글에서 나와요."
+],
+[
+37,
+2,
+"reading",
+"r2-s5",
+"(A)~(D) 가운데 글의 흐름과 관계없는 문장을 고르시오.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+1
+],
+"글은 카라바조의 극적인 명암과 사실성, 그리고 그 영향을 차례로 설명해요. (A)는 티치아노가 뒤 세대 누구보다 뛰어난 색채가가 아니었느냐고 묻는 엉뚱한 비교라 흐름과 관계가 없어요. (B)는 '훨씬 극적인' 기법의 예이고, (C)·(D)는 사실성과 영향을 이어 가요."
+],
+[
+38,
+2,
+"reading",
+"r2-s5",
+"글의 주제로 가장 알맞은 것을 고르시오.",
+[
+"the brawls and crimes that forced Caravaggio to flee from Rome in 1606",
+"Caravaggio's dramatic lighting and realism and their enduring influence",
+"how Renaissance painters first invented the technique of chiaroscuro",
+"why Caravaggio's harsh lighting faded from art without leaving a lasting trace"
+],
+[
+2
+],
+"카라바조의 강한 명암 대비와 평범한 사람을 모델로 한 사실성, 그리고 그것이 렘브란트와 영화 조명까지 이어진 영향이 글의 중심이에요. 도피 이야기는 일부일 뿐이고, 명암 대비는 앞 시대 기법을 극단으로 밀어붙인 것이며, 영향은 오늘날까지 남았다고 했어요."
+],
+[
+39,
+2,
+"reading",
+"r2-s6",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"standardized",
+"abundant",
+"written",
+"impoverished"
+],
+[
+4
+],
+"아이들이 피진처럼 어휘·규칙이 모자란 말을 듣고 자랄 때 타고난 설계도를 꺼내 쓴다는 주장이에요. 주변 말이 '빈약할(impoverished)' 때가 맞고, abundant(풍부한)는 반대예요."
+],
+[
+40,
+2,
+"reading",
+"r2-s6",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"Why Pidgins Never Evolve into Real Languages",
+"The Influence of French on the World's Languages",
+"Teaching Sign Language in Nicaraguan Schools",
+"From Makeshift Speech to Mother Tongue"
+],
+[
+4
+],
+"임시로 만든 피진이 아이들 손에서 모국어인 크리올이 되는 과정과, 그것이 언어 능력 논쟁에 주는 의미를 다룬 글이에요. 피진이 언어가 되지 못한다는 것은 글과 반대예요."
+],
+[
+1,
+3,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nThe new manager quickly wearied of his assistant's <u>officious</u> interference in decisions that were plainly none of her concern.",
+[
+"lethargic",
+"recalcitrant",
+"meddlesome",
+"taciturn"
+],
+[
+3
+],
+"officious 는 '쓸데없이 참견하는'이라 meddlesome 과 가까워요. 자기 일도 아닌 결정에 끼어들었다(interference)는 말이 단서예요."
+],
+[
+2,
+3,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nA single contaminated sample was enough to <u>vitiate</u> the results of the entire study, obliging the team to repeat months of work.",
+[
+"substantiate",
+"impair",
+"ameliorate",
+"expedite"
+],
+[
+2
+],
+"vitiate 는 '(가치·효력을) 손상하다, 무효로 만들다'라 impair 와 가까워요. 몇 달 치 실험을 다시 해야 했다는 결과가 단서이고, substantiate(입증하다)는 반대예요."
+],
+[
+3,
+3,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nWith interest rates declining and consumer sentiment rising, analysts considered the timing <u>felicitous</u> for launching the new product.",
+[
+"ominous",
+"precarious",
+"superfluous",
+"opportune"
+],
+[
+4
+],
+"felicitous 는 '딱 알맞은, 적절한'이라 opportune(때가 좋은)과 가까워요. 금리가 내리고 소비 심리가 오른다는 좋은 조건이 단서이고, ominous(불길한)는 반대예요."
+],
+[
+4,
+3,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nWeary after the long drive, the <u>querulous</u> passengers complained about everything from the air conditioning to the choice of music.",
+[
+"placid",
+"gregarious",
+"magnanimous",
+"peevish"
+],
+[
+4
+],
+"querulous 는 '불평을 늘어놓는, 투덜거리는'이라 peevish(짜증 내는)와 가까워요. 에어컨부터 음악까지 모든 것에 불평했다는 내용이 그대로 뜻풀이예요."
+],
+[
+5,
+3,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nA <u>fastidious</u> editor, she would gladly devote an entire afternoon to debating the placement of a single comma in a manuscript.",
+[
+"slovenly",
+"exacting",
+"gullible",
+"truculent"
+],
+[
+2
+],
+"fastidious 는 '몹시 꼼꼼하고 까다로운'이라 exacting(엄격한)과 가까워요. 쉼표 하나로 오후를 보낸다는 예가 단서이고, slovenly(지저분하고 엉성한)는 반대예요."
+],
+[
+6,
+3,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nThe official report sharply <u>castigated</u> the agency for disregarding repeated warnings about the bridge's deteriorating condition.",
+[
+"chastised",
+"exalted",
+"beguiled",
+"abjured"
+],
+[
+1
+],
+"castigate 는 '혹독하게 비판하다'라 chastise 와 같은 뜻이에요. 거듭된 경고를 무시했다는 잘못과 sharply 가 단서이고, exalted(칭송했다)는 반대예요."
+],
+[
+7,
+3,
+"vocab",
+null,
+"밑줄 친 부분과 의미가 가장 가까운 것을 고르시오.\nMany historians regard the empire's collapse not as an accident but as the <u>ineluctable</u> result of decades of overexpansion.",
+[
+"ambiguous",
+"incongruous",
+"inescapable",
+"tenuous"
+],
+[
+3
+],
+"ineluctable 은 '피할 수 없는'이라 inescapable 과 같은 뜻이에요. 우연(accident)이 아니라는 대비가 단서예요."
+],
+[
+8,
+3,
+"dialogue",
+null,
+"다음 대화 가운데 흐름이 가장 어색한 것을 고르시오.\n(A) A: Would you mind if I opened the window? It's a bit stuffy in here.\n    B: Not at all. Go ahead; I could use some fresh air myself.\n(B) A: I'm sorry I snapped at you yesterday. I was under a lot of pressure.\n    B: That's water under the bridge. We all have bad days now and then.\n(C) A: Do you think the restaurant will be crowded tonight?\n    B: Probably. It's Friday, so we'd better book a table in advance.\n(D) A: Guess what? I aced the final exam! I still can't believe it.\n    B: Don't worry too much. You can always retake the course next semester.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+4
+],
+"ace 는 '시험을 아주 잘 보다'라는 뜻인데, 낙제한 사람을 위로하듯 다음 학기에 재수강하면 된다고 답해 흐름이 어색해요. Would you mind ~? 에 Not at all(괜찮다), 지난 일이니 잊자(water under the bridge), 금요일이라 붐빌 테니 미리 예약하자는 대화는 자연스러워요."
+],
+[
+9,
+3,
+"dialogue",
+null,
+"다음 대화 가운데 흐름이 가장 어색한 것을 고르시오.\n(A) A: I've been feeling under the weather since Monday.\n    B: Maybe you should see a doctor if it doesn't get better soon.\n(B) A: Can you give me a hand with these boxes? They're really heavy.\n    B: Sure, I'll leave you alone so you can carry them all by yourself.\n(C) A: This new phone costs an arm and a leg.\n    B: I know. I'm going to wait until the price comes down a bit.\n(D) A: Shall we go over the plan once more before the client arrives?\n    B: Good idea. I don't want any surprises once the meeting starts.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+2
+],
+"give me a hand 는 '좀 도와 달라'는 말인데, 좋다고 해 놓고 혼자 나르게 비켜 주겠다며 뜻을 거꾸로 받아 흐름이 어색해요. 몸이 안 좋다(under the weather), 엄청 비싸다(an arm and a leg), 다시 검토하자(go over)는 자연스러워요."
+],
+[
+10,
+3,
+"grammar",
+null,
+"밑줄 친 부분 가운데 어법상 틀린 것을 고르시오. 모두 옳으면 ④를 고르시오.\nThe students were so ①<u>confusing</u> by the guest lecture that many of them ②<u>left</u> before the speaker ③<u>had finished</u> explaining his central argument about urban planning.",
+[
+"confusing",
+"left",
+"had finished",
+"No error"
+],
+[
+1
+],
+"학생들은 강연 때문에 '헷갈린' 쪽이라 과거분사 confused 가 맞아요(by the guest lecture 와도 이어져요). confusing 은 헷갈리게 하는 쪽에 써요. 떠난 것보다 설명을 끝낸 것이 앞서니 had finished 는 맞아요."
+],
+[
+11,
+3,
+"grammar",
+null,
+"밑줄 친 부분 가운데 어법상 틀린 것을 고르시오. 모두 옳으면 ④를 고르시오.\nThe museum's new exhibition chronicles how jazz ①<u>spread</u> from New Orleans to Chicago in ②<u>1920s</u>, ③<u>transforming</u> popular music across the country within a single decade.",
+[
+"spread",
+"1920s",
+"transforming",
+"No error"
+],
+[
+2
+],
+"특정 연대를 가리킬 때는 정관사를 붙여 in the 1920s 라고 써요. spread 는 과거형, transforming 은 결과를 나타내는 분사구문으로 맞아요."
+],
+[
+12,
+3,
+"grammar",
+null,
+"밑줄 친 부분 가운데 어법상 틀린 것을 고르시오. 모두 옳으면 ④를 고르시오.\nThe stone tools that the archaeologists ①<u>uncovered</u> near the riverbank ②<u>suggest</u> that people ③<u>was living</u> in the valley far earlier than historians had presumed.",
+[
+"uncovered",
+"suggest",
+"was living",
+"No error"
+],
+[
+3
+],
+"that 절의 주어 people 은 복수라 were living(또는 had been living)이 맞아요. 큰 문장의 주어 tools 가 복수라 suggest 는 맞아요."
+],
+[
+13,
+3,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nThe chief executive's ____ remarks about his own employees, delivered at a public conference, provoked outrage and a formal apology from the board.",
+[
+"disparaging",
+"discreet",
+"diffident",
+"digressive"
+],
+[
+1
+],
+"분노와 이사회의 공식 사과를 불렀으니 직원을 '깎아내리는(disparaging)' 말이에요. discreet(신중한)·diffident(자신 없는)·digressive(곁길로 새는)는 분노와 공식 사과를 부를 말이 아니에요."
+],
+[
+14,
+3,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nAlthough the two theories appear ____ at first glance, closer scrutiny reveals that they make virtually identical predictions about the behavior of markets.",
+[
+"interchangeable",
+"tautological",
+"irreconcilable",
+"complementary"
+],
+[
+3
+],
+"Although 로 '자세히 보면 거의 같은 예측을 한다'와 맞서므로 처음엔 '도저히 조화될 수 없어(irreconcilable)' 보였다는 말이 맞아요."
+],
+[
+15,
+3,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nThe village's ____ economy, reliant almost entirely on a single crop, was devastated when blight ravaged the harvest two years in succession.",
+[
+"precarious",
+"diversified",
+"resilient",
+"burgeoning"
+],
+[
+1
+],
+"작물 하나에만 기대다가 병충해로 무너졌으니 '불안정한(precarious)' 경제예요. diversified(다각화된)·resilient(회복력 있는)는 반대예요."
+],
+[
+16,
+3,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nHer ____ rise from lowly clerk to chief executive in less than a decade astonished colleagues who had spent their entire careers at the firm.",
+[
+"meandering",
+"mendacious",
+"methodical",
+"meteoric"
+],
+[
+4
+],
+"10년도 안 돼 말단에서 최고경영자가 됐으니 '눈부시게 빠른(meteoric)' 출세예요. meandering(구불구불 더딘)·methodical(차근차근한)은 반대 쪽이고, mendacious(거짓말하는)는 출세의 빠르기와 상관없어요."
+],
+[
+17,
+3,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nBecause the evidence against the suspect was entirely ____, consisting of rumors and hearsay, the judge declined to issue a warrant.",
+[
+"incontrovertible",
+"forensic",
+"damning",
+"tenuous"
+],
+[
+4
+],
+"소문과 전해 들은 말뿐이라 영장을 거부했으니 증거가 '빈약한(tenuous)' 거예요. incontrovertible(반박할 수 없는)·damning(결정적으로 불리한)은 반대예요."
+],
+[
+18,
+3,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nThe veteran diplomat was lauded for her ____, managing to deliver unwelcome news to foreign governments without ever giving offense.",
+[
+"brusqueness",
+"finesse",
+"temerity",
+"ineptitude"
+],
+[
+2
+],
+"달갑지 않은 소식을 기분 상하지 않게 전했으니 '노련한 솜씨(finesse)'예요. brusqueness(무뚝뚝함)는 오히려 기분을 상하게 해요."
+],
+[
+19,
+3,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nThe new regulations were intended to ____ the spread of counterfeit medicines, which had been inundating pharmacies in rural areas for years.",
+[
+"curb",
+"abet",
+"foment",
+"cultivate"
+],
+[
+1
+],
+"가짜 약이 쏟아져 들어오던 상황에서 만든 규제이니 확산을 '억제하다(curb)'가 맞아요. abet·foment(부추기다)·cultivate(키우다)는 반대예요."
+],
+[
+20,
+3,
+"sentence",
+null,
+"빈칸에 들어갈 낱말로 가장 알맞은 것을 고르시오.\nMost scientists were initially ____ of the startling claim, since no other laboratory had been able to reproduce the published results.",
+[
+"enamored",
+"heedless",
+"dubious",
+"oblivious"
+],
+[
+3
+],
+"다른 실험실이 결과를 재현하지 못했으니 주장을 '의심스러워했다(dubious)'가 맞아요. enamored(반한)는 반대예요."
+],
+[
+21,
+3,
+"paragraph",
+null,
+"빈칸 (A), (B), (C)에 들어갈 말로 가장 알맞은 것을 고르시오.\nMany ancient Greek and Latin manuscripts were written without spaces between words, in a continuous stream of letters that readers had to (A)____ for themselves, often by reading aloud. For native speakers versed in the practice, this was less of an (B)____ than it sounds. In the early Middle Ages, however, Irish and English scribes, who were transcribing Latin as a foreign language, began to insert gaps between words. The change made reading noticeably (C)____ for those unfamiliar with the language, since the eye could now recognize whole words at a glance, and over the following centuries the custom diffused across Europe.",
+[
+"parse — advantage — slower",
+"parse — impediment — easier",
+"ignore — amenity — rarer",
+"embellish — advantage — obligatory"
+],
+[
+2
+],
+"(A) 띄어쓰기 없이 이어진 글자를 소리 내어 읽으며 낱말로 '끊어 읽어야(parse)' 했어요. (B) 익숙한 사람에게는 생각만큼 큰 '걸림돌(impediment)'이 아니었다는 말이에요. (C) 눈이 낱말 전체를 한눈에 알아보게 됐으니 읽기가 '쉬워졌다(easier)'예요. parse — advantage — slower 는 (A)만 맞는 짝이에요."
+],
+[
+22,
+3,
+"paragraph",
+null,
+"빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것을 고르시오.\nIn 1993, a short paper reported that college students who had listened to ten minutes of a Mozart sonata performed marginally better on a spatial reasoning task than students who had sat in silence. The improvement lasted only a few minutes, but the finding ignited a commercial (A)____. Recordings purporting to make babies smarter sold in prodigious numbers, and one American state governor even proposed distributing classical music to the parents of every newborn. Later research was far less enthusiastic. Many attempts to replicate the experiment failed, and meta-analyses concluded that the benefit had been (B)____: small, fleeting, and probably the result of a transient lift in mood and alertness that any enjoyable music could produce.",
+[
+"craze — confirmed",
+"craze — overstated",
+"skepticism — vindicated",
+"backlash — corroborated"
+],
+[
+2
+],
+"(A) 아기 음반이 많이 팔리고 주지사가 음반 선물까지 제안했으니 상업적 '열풍(craze)'이에요. (B) 재현이 잘 안 되고 효과가 작고 잠깐이었다니 '부풀려졌다(overstated)'예요. craze — confirmed 는 (A)만 맞는 짝이에요."
+],
+[
+23,
+3,
+"paragraph",
+null,
+"빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것을 고르시오.\nGeckos can scamper up panes of glass and dangle from ceilings by a single toe, yet their feet use neither suction nor glue. Each toe is carpeted with millions of microscopic hairs that split into even finer tips. These tips come so close to a surface that weak attractions between molecules begin to act. Individually, such forces are (A)____, but summed over billions of tips they can support many times the animal's weight. Just as remarkably, the grip is easily (B)____: by curling its toes upward and peeling them away, a gecko can detach in milliseconds, which enables it to dart across a wall without getting stuck. Engineers have exploited the principle to design reusable adhesive tapes.",
+[
+"feeble — released",
+"powerful — released",
+"powerful — tightened",
+"formidable — reinforced"
+],
+[
+1
+],
+"(A) 하나하나는 '약하지만(feeble)' 수십억 개가 모이면 몸무게를 버틴다는 대비예요. (B) 발가락을 말아 떼면 순식간에 떨어지니 붙잡은 힘이 쉽게 '풀린다(released)'예요. powerful — released 는 (B)만 맞는 짝이에요."
+],
+[
+24,
+3,
+"paragraph",
+null,
+"빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것을 고르시오.\nPopular accounts often attribute the loss of the great library of Alexandria to a single catastrophic fire, whether set by Julius Caesar's troops in 48 BC or by later invaders. Historians recount a less cinematic story. Caesar's fire may have consumed some scrolls stored near the harbor, but the library seems to have weathered it, and its decline appears to have been (A)____, the result of dwindling budgets, political purges of scholars, and centuries of neglect. Yet the (B)____ version endures, perhaps because a burning library offers a vivid moral about barbarism, whereas the slow withering of an underfunded institution makes a far less memorable tale.",
+[
+"sudden — dramatic",
+"sudden — mundane",
+"abrupt — prosaic",
+"gradual — dramatic"
+],
+[
+4
+],
+"(A) 예산 축소와 수백 년의 방치로 쇠퇴했으니 '서서히(gradual)'예요. (B) 한 번의 큰불 이야기가 살아남는다니 '극적인(dramatic)' 판본이에요. mundane(평범한)은 서서히 시든 쪽 이야기예요. sudden — dramatic 은 (B)만 맞는 짝이에요."
+],
+[
+25,
+3,
+"paragraph",
+null,
+"빈칸 (A), (B)에 들어갈 말로 가장 알맞은 것을 고르시오.\nIn a classic experiment from the 1960s, students listened to recordings of a man answering difficult quiz questions. In some versions he answered nearly every question correctly; in others he floundered. At the end of certain recordings, he clumsily spilled a cup of coffee over himself. Listeners rated the highly competent man as more (A)____ after the accident than before it, apparently because the blunder made him seem human rather than intimidatingly perfect. The same mishap, however, made the mediocre performer seem even less attractive. Clumsiness, it seems, (B)____ the appeal only of those who are already admired.",
+[
+"repellent — enhances",
+"repellent — diminishes",
+"likable — enhances",
+"intimidating — erodes"
+],
+[
+3
+],
+"(A) 실수 덕분에 완벽해서 위압적인 사람이 아니라 인간적으로 보였으니 '호감 가는(likable)'이에요. (B) 평범한 사람은 오히려 덜 매력적으로 보였으니 실수는 이미 존경받는 사람의 매력만 '높여 준다(enhances)'예요. repellent — enhances 는 (B)만 맞는 짝이에요."
+],
+[
+26,
+3,
+"paragraph",
+null,
+"빈칸 (A), (B), (C)에 들어갈 말로 가장 알맞은 것을 고르시오.\nReturning from a hike in the Alps in the early 1940s, the Swiss engineer George de Mestral noticed burrs (A)____ stubbornly to his trousers and to his dog's fur. Intrigued, he scrutinized one under a microscope and found that it was bristling with tiny hooks that (B)____ the loops of fabric and hair. It took him years of trial and error to recreate the effect with woven nylon, one strip bearing hooks and the other loops. The result was a (C)____ fastener that could be pressed shut and pulled open thousands of times, and it went on to fasten everything from children's shoes to astronauts' equipment.",
+[
+"yielding — repelled — reusable",
+"reverting — dissolved — disposable",
+"succumbing — repelled — fragile",
+"clinging — snagged — reusable"
+],
+[
+4
+],
+"(A) 바지와 개털에 '달라붙은(clinging)', (B) 갈고리가 섬유 고리에 '걸렸다(snagged)', (C) 수천 번 붙였다 뗄 수 있으니 '다시 쓸 수 있는(reusable)' 여밈이에요. yielding(굴복하는)·reverting(되돌아가는)·succumbing(무릎 꿇는)도 to 와는 어울리지만 가시 열매가 바지에 들러붙은 모습과 뜻이 맞지 않아요. yielding — repelled — reusable 은 (C)만 맞는 짝이에요."
+],
+[
+27,
+3,
+"reading",
+"r3-p27",
+"글의 흐름상 밑줄 친 (A)~(D) 가운데 적절하지 않은 것을 고르시오.",
+[
+"(A) pedantic",
+"(B) inconsistency",
+"(C) invoked",
+"(D) obsolete"
+],
+[
+4
+],
+"전쟁을 '작전'으로, 대량 해고를 '구조 조정'으로 부르는 완곡어법에 신경 쓰는 오늘의 독자라면 이름을 바로잡으라는 가르침이 '뜻밖에 시의적절하다(timely)'고 느낄 거예요. '낡았다(obsolete)'는 흐름과 반대예요."
+],
+[
+28,
+3,
+"reading",
+"r3-p28",
+"글의 내용과 일치하지 않는 것을 고르시오.",
+[
+"Probiotic supplements have been clearly shown to benefit healthy people.",
+"Gut bacteria can break down dietary fibers that human enzymes are unable to digest.",
+"A course of antibiotics can sharply diminish the variety of bacteria living in the gut.",
+"Some of the findings about gut microbes are based on experiments conducted with mice."
+],
+[
+1
+],
+"유산균 보충제가 건강한 사람에게 도움이 된다는 증거는 아직 부족하다고 했어요. 분명히 입증됐다는 문장이 글과 맞지 않아요."
+],
+[
+29,
+3,
+"reading",
+"r3-s1",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"Why the Suez Canal Will Soon Be Abandoned",
+"The Explorers Who Finally Conquered the Arctic Ice",
+"Arctic Shipping: A Shortcut of Promise and Peril",
+"How Modern Icebreakers Are Engineered and Built"
+],
+[
+3
+],
+"얼음이 녹아 짧은 북극 항로가 열리지만, 항해 기간·비용·정치 문제와 함께 기후 변화를 더 부추길 위험이 있다는 글이라 '약속과 위험을 함께 지닌 지름길'이 제목으로 맞아요. 탐험가는 도입부에 잠깐 나올 뿐이에요."
+],
+[
+30,
+3,
+"reading",
+"r3-s1",
+"글에서 추론할 수 없는 것을 고르시오.",
+[
+"Security problems along traditional routes can heighten shippers' interest in alternative routes.",
+"Most shipping between Asia and Europe has already migrated to the Arctic route.",
+"Increased shipping in the Arctic may contribute to the further loss of sea ice.",
+"The cost of insurance can add considerably to the expense of voyages through the Arctic."
+],
+[
+2
+],
+"북극 항로 물동량은 늘고 있지만 수에즈를 지나는 양의 아주 작은 일부라고 했어요. 대부분이 이미 북극으로 옮겼다는 말은 끌어낼 수 없어요. 홍해 공격, 그을음, 보험료 이야기는 글에서 나와요."
+],
+[
+31,
+3,
+"reading",
+"r3-s2",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"petty",
+"monstrous",
+"ordinary",
+"economic"
+],
+[
+2
+],
+"바로 뒤에 '악마 같은 사람이 아니라 생각 없는 사람도 저지를 수 있다'가 이어지므로, 큰 악이 꼭 '괴물 같은(monstrous)' 동기에서 나오지는 않는다는 말이 맞아요. ordinary 는 아렌트가 본 쪽이라 반대예요."
+],
+[
+32,
+3,
+"reading",
+"r3-s2",
+"글의 주제로 가장 알맞은 것을 고르시오.",
+[
+"Arendt's idea that great evil can spring from thoughtlessness",
+"the legal protocols observed during the Eichmann trial",
+"new archival evidence that has exonerated Eichmann of the crimes with which he was charged",
+"the history of Jewish community leaders under Nazi rule"
+],
+[
+1
+],
+"아렌트가 아이히만에게서 본 '악의 평범성', 곧 생각하지 않는 평범한 사람도 큰 악을 저지를 수 있다는 생각과 논란, 그리고 그 개념이 지금도 쓰이는 까닭이 글의 중심이에요."
+],
+[
+33,
+3,
+"reading",
+"r3-s3",
+"(A)~(D) 가운데 글의 흐름과 관계없는 문장을 고르시오.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+3
+],
+"글은 밤하늘이 왜 어두운지 묻고, 먼지 가설이 왜 틀렸는지와 우주의 나이·팽창이라는 진짜 답을 차례로 설명해요. (C)는 먼지가 별과 행성의 재료라는 이야기라 흐름과 관계가 없어요."
+],
+[
+34,
+3,
+"reading",
+"r3-s3",
+"글에서 추론할 수 있는 것을 고르시오.",
+[
+"Olbers was the first astronomer ever to raise the puzzle of why the night sky is dark.",
+"Dust between the stars absorbs enough light to explain the darkness, as early astronomers proposed.",
+"The dark night sky is consistent with a universe that had a beginning.",
+"The expansion of space makes distant galaxies shine more brightly in the visible range than nearby ones."
+],
+[
+3
+],
+"밤하늘의 어둠이 우주에 시작이 있었고 팽창해 왔다는 증거가 된다고 했어요. 올베르스보다 먼저 이 문제를 낸 사람이 있었고, 먼지 가설은 틀렸으며, 팽창은 먼 은하의 빛을 오히려 가시광선 밖으로 밀어낸다고 했어요."
+],
+[
+35,
+3,
+"reading",
+"r3-s4",
+"다음 문장이 들어가기에 가장 알맞은 곳을 고르시오.\nCritics note that such lists are often compiled from websites and organized campaigns, sometimes by people who have not read the books in question.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+2
+],
+"주어진 문장의 such lists 는 '한꺼번에 낸 긴 책 목록'을 가리켜요. 그 말이 나온 첫 단락 끝 (B)에 들어가야 해요."
+],
+[
+36,
+3,
+"reading",
+"r3-s4",
+"글의 내용과 일치하는 것을 고르시오.",
+[
+"The Supreme Court's 1982 decision settled the legal questions decisively.",
+"Few of the challenged books had received any literary recognition.",
+"Many challenges targeted a number of books simultaneously.",
+"Most of the challenged books were removed from school libraries within a year."
+],
+[
+3
+],
+"책 한 권이 아니라 긴 목록을 한꺼번에 문제 삼은 경우가 많았다고 했어요. 1982년 판결은 의견이 갈려 질문을 많이 남겼고, 문제가 된 책 다수는 문학상을 받았으며, 책이 실제로 얼마나 빠졌는지는 글에 나오지 않아요."
+],
+[
+37,
+3,
+"reading",
+"r3-s5",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"evasive",
+"curious",
+"boastful",
+"generous"
+],
+[
+1
+],
+"부끄러워서 화학 교실을 피하고 뒷자리에 앉았다는 행동이 이어지므로, 수치심이 사람을 '피하게(evasive)' 만든다는 말이 맞아요."
+],
+[
+38,
+3,
+"reading",
+"r3-s5",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"How to Pass a Difficult Chemistry Exam",
+"A Teacher's Note That Was Never Read",
+"The Rewards of a Career in Journalism",
+"A Note That Took Twenty Years to Work"
+],
+[
+4
+],
+"열여섯 살 때 외면한 선생님의 쪽지가 스무 해 뒤 편지로 돌아와, 그 쪽지가 결국 제 몫을 했음을 서로 확인하는 이야기예요."
+],
+[
+39,
+3,
+"reading",
+"r3-s6",
+"(A)~(D) 가운데 글의 흐름과 관계없는 문장을 고르시오.",
+[
+"(A)",
+"(B)",
+"(C)",
+"(D)"
+],
+[
+1
+],
+"글은 아무것도 연주하지 않는 곡이 던진 물음(침묵은 없다, 무엇이 음악인가)을 차례로 설명해요. (A)는 리스트의 긴 소나타가 체력이 더 든다는 엉뚱한 비교·반문이라 흐름과 관계가 없어요. (B)·(C)는 침묵이 아니라는 케이지의 주장, (D)는 선(禪)에서 온 생각으로 이어져요."
+],
+[
+40,
+3,
+"reading",
+"r3-s6",
+"글의 주제로 가장 알맞은 것을 고르시오.",
+[
+"the technical difficulty of performing Cage's piano works before large audiences",
+"how Cage proved that a concert hall can achieve absolute silence",
+"the construction of anechoic chambers for scientific research on sound",
+"how Cage's silent piece challenged ideas about silence and music"
+],
+[
+4
+],
+"아무것도 연주하지 않는 4분 33초가 '완전한 침묵은 없다'는 생각과 무엇이 음악인가라는 물음을 던졌다는 것이 글의 중심이에요. 케이지는 오히려 완전한 침묵은 없다고 했고, 무향실은 그 생각의 계기로 나올 뿐이에요."
+]
+]
+}

@@ -1,0 +1,2505 @@
+{
+"school": "police",
+"title": "경찰대 편입영어 모의고사",
+"source": "경찰대 편입 영어 2026학년도 기출 출제 유형(문항 수·영역·문제 꼴, VocabFactory 분석)을 분석해 dailyfreetoolbox 가 새로 만든 연습 문제",
+"checked": "2026-11-23",
+"minutes": 60,
+"sections": [
+{
+"id": "vocab",
+"name": "어휘"
+},
+{
+"id": "dialogue",
+"name": "생활영어"
+},
+{
+"id": "pair",
+"name": "낱말 짝 빈칸"
+},
+{
+"id": "grammar",
+"name": "문법"
+},
+{
+"id": "reading",
+"name": "독해"
+}
+],
+"passages": [
+{
+"id": "r1-p13",
+"text": "In 1764 a young Milanese aristocrat named Cesare Beccaria published a slim volume, On Crimes and Punishments, that would galvanize legal reformers across Europe and America. Writing in an era when torture was routinely used to extract confessions and when petty thefts could incur the death penalty, Beccaria argued that punishment is justified only insofar as it forestalls future crimes. ( ① ) Anything beyond that, he insisted, is gratuitous cruelty. ( ② ) His most enduring contention concerned how punishment deters. ( ③ ) A lenient penalty that follows a transgression swiftly and with near certainty, he reasoned, will dissuade offenders more effectively than a draconian penalty that they expect to evade. ( ④ ) Modern research has largely vindicated him: studies of deterrence suggest that people considering a crime respond far more to the probability of apprehension than to the length of the sentence they might receive. ( ⑤ ) This is why many criminologists contend that money spent on making arrests more probable may curtail crime more than money spent on keeping prisoners incarcerated longer."
+},
+{
+"id": "r1-p14",
+"text": "Eyewitness testimony is among the most compelling kinds of evidence a jury can hear, yet memory is not a pristine recording that can simply be replayed. In a well-known study published in 1974, the psychologists Elizabeth Loftus and John Palmer showed undergraduates short films of traffic collisions and then asked them how fast the cars had been going. ( ① ) The phrasing of the question varied subtly from group to group. ( ② ) Some students were asked how fast the cars were going when they hit each other; others heard the verbs smashed, collided, bumped, or contacted instead. Those who heard smashed gave the highest estimates, while those who heard contacted gave the lowest. ( ③ ) In a subsequent experiment, another cohort watched a similar film and answered the question with either smashed or hit. ( ④ ) A week later, all of them were asked whether they had seen any broken glass. ( ⑤ ) Students from the smashed group were more than twice as likely to say yes, although no glass had in fact been shattered. A single word, it seemed, had not merely skewed their answers but distorted what they remembered seeing."
+},
+{
+"id": "r1-p15",
+"text": "Voice phishing, in which callers impersonate prosecutors, bank employees, or family members to dupe people into sending money, has cost victims in South Korea staggering sums, and the money rarely lingers where it is first sent. ( ① ) Criminal syndicates funnel illicit funds through bank accounts registered in other people's names, known in Korea as daepo accounts. ( ② ) Some of these accounts are bought from people in dire financial straits. ( ③ ) Others are relinquished by people who have been hoodwinked by bogus job advertisements promising lucrative work from home. ( ④ ) Many of these account holders later protest that they had no idea what their accounts would be used for. ( ⑤ ) Lending or selling one's account is itself a crime under Korean law, and those who do so can face criminal sanctions as well as restrictions on opening new accounts. Banks, for their part, can freeze accounts that are flagged in connection with fraud. Officials underscore one simple rule: no bona fide prosecutor or bank will ever ask a citizen to move money into a so-called safe account over the phone."
+},
+{
+"id": "r1-p16",
+"text": "In March 1800, the Prussian naturalist Alexander von Humboldt arrived in the plains of what is now Venezuela, eager to scrutinize the electric eel, a fish capable of generating shocks of several hundred volts. ( ① ) Local guides proposed an unorthodox way of capturing them. ( ② ) They drove about thirty horses and mules into a murky pool where the eels lived. ( ③ ) The fish rose to the surface and pressed themselves against the animals' bellies, unleashing shock after shock. ( ④ ) Several horses collapsed, and at least two drowned. ( ⑤ ) After a while, however, the onslaught waned, and the depleted eels could be hauled from the water with little danger. For two centuries many scientists dismissed the story as an embellishment, since no one else had documented eels leaping from the water to attack. In 2016, however, the biologist Kenneth Catania reported that eels in his laboratory leapt from the water and pressed their chins against objects that approached them, delivering stronger shocks than they could underwater. Humboldt's horses, it seems, had been casualties of a genuine defensive behavior."
+},
+{
+"id": "r1-p17",
+"text": "For most of the nineteenth century, police had no reliable way to prove that a particular person had been present at the scene of a crime. Witnesses could be mistaken or mendacious, and confessions were sometimes extracted under heavy duress.\n(A) The investigator compared the print with impressions taken from the people involved. It matched the right thumb of the children's mother, Francisca Rojas, who then confessed. The case is often cited as the first crime solved by fingerprint evidence, and within a few years Argentina became one of the first countries to replace older identification methods with fingerprints.\n(B) In the 1880s, scientists in Britain began to posit that the patterns of ridges on human fingertips were unique to each individual and remained immutable throughout life. Their ideas reached Juan Vucetich, a police official in Argentina, who devised his own system for classifying prints and began cataloguing the fingerprints of arrested men.\n(C) In 1892, two young children were found dead in a village on the Argentine coast. Their mother accused a neighbor, who was arrested and interrogated harshly but denied everything. An investigator trained in Vucetich's methods then discerned a bloody thumbprint on a door frame of the house."
+},
+{
+"id": "r1-p18",
+"text": "Salespeople have long maintained that the hardest part of persuasion is getting a customer to agree to anything at all. Once a small request has been accepted, the thinking goes, a larger one follows more easily. Door-to-door vendors, charity fundraisers, and political campaigners have all relied on this idea, though for a long time it rested on anecdote rather than evidence.\n(A) Two weeks earlier, however, some of the residents had been visited by a different researcher, who asked them to display a small card, about three inches square, that exhorted people to be safe drivers. Nearly all of them had agreed to this innocuous request.\n(B) In 1966 the psychologists Jonathan Freedman and Scott Fraser put this conviction to the test in California. A researcher asked homeowners whether they would allow a large, crudely lettered sign reading Drive Carefully to be placed on their front lawns. Fewer than one in five consented.\n(C) Among these residents, more than three quarters agreed to the large sign. The researchers surmised that assenting to the first request had altered their self-perception: they had become, in their own eyes, the kind of citizens who champion worthy causes."
+},
+{
+"id": "r1-p19",
+"text": "In January 2024, the company Neuralink implanted a wireless device in the brain of its first human volunteer, a man paralyzed below the shoulders after a diving accident. The device deciphers electrical signals from neurons involved in planning movement.\n(A) Not everything went smoothly, however. Within weeks, many of the device's hair-thin threads retracted from the brain tissue, diminishing the number of signals the system could read, and engineers had to recalibrate the software so that the volunteer could keep using it.\n(B) Such setbacks are not anomalous in a nascent field. University laboratories had enabled paralyzed patients to move cursors and robotic arms years earlier, but their systems relied on cumbersome equipment connected through the skull by cables. Several companies are now vying in the field, some with electrodes that rest on the surface of the brain instead of penetrating it. Still, turning a promising experiment into a dependable medical product remains a formidable task.\n(C) Soon he was moving a cursor on a computer screen simply by thinking about moving his hand, and he played online chess for hours at a time. The results were widely hailed as a milestone."
+},
+{
+"id": "r1-p20",
+"text": "On her first morning as a substitute teacher, Ms. Park was forewarned by the principal that the class she was taking over had driven away two exasperated teachers in a single term.\n(A) She walked in, wrote her name on the board, and waited impassively. The din did not subside. So instead of bellowing, she took a stopwatch from her bag, set it on the desk, and announced that the class had just used up four minutes of its own lunch break. A few students snickered, but the laughter faded when she added that every further minute would come out of the same place.\n(B) That afternoon the principal stopped her in the corridor to ask how she had survived. \"I didn't have to do much,\" she replied. \"They were too busy counting.\" She never divulged that the stopwatch had not been running at all.\n(C) Thirty seconds later, the room was so hushed that she could hear the clock on the wall. A gangly boy in the front row raised his hand and asked how much of lunch they had left. \"Exactly as much as you had yesterday,\" she said, \"as long as we get through this lesson.\""
+},
+{
+"id": "r1-p21",
+"text": "Sophocles' tragedy Antigone, first performed in Athens around 441 BCE, dramatizes a conflict that still vexes legal philosophers. After a civil war in which two brothers slay each other, the new king, Creon, decrees that one of them, a traitor in his eyes, must lie unburied. ① His sister Antigone defies the order and sprinkles earth over the corpse, insisting that the unwritten laws of the gods supersede any decree of a mortal ruler. ② Creon, for his part, argues that a city cannot endure if its citizens obey only the laws they personally approve of. ③ The theater of Dionysus, where such plays were staged, could seat many thousands of spectators on the slope below the Acropolis. ④ Neither character is unequivocally right, and the play punishes both: Antigone is condemned to death, and Creon loses his son and his wife. ⑤ Readers have since enlisted the play on both sides of the question of whether conscience can justify breaking the law, from dissidents under unjust regimes to defenders of public order."
+},
+{
+"id": "r1-p22",
+"text": "In October 2024, the Tokyo Metropolitan Assembly passed what was described as Japan's first ordinance aimed specifically at customer harassment, known in Japanese by the abbreviated term kasuhara. ① The ordinance, which took effect in April 2025, prohibits customers from abusing workers through threats, insults, or exorbitant demands. ② It carries no penalties, but it urges businesses to devise guidelines for protecting their staff and makes clear that workers need not endure mistreatment as part of their jobs. ③ Surveys in Japan had found that a large share of service workers had been subjected to abuse from customers, sometimes including demands that they kneel in apology. ④ Japan is also known for its convenience stores, which sell everything from fresh rice balls to concert tickets around the clock. ⑤ Similar concerns have proliferated elsewhere; in South Korea, the emotional labor of call-center and retail workers has become a subject of public debate and legal protection. Critics of the ordinance worry that without penalties it will prove toothless, but supporters argue that its real purpose is to shift public expectations of how customers should behave."
+},
+{
+"id": "r1-p23",
+"text": "Most hibernating mammals let their body temperature fall to just a few degrees above freezing. The arctic ground squirrel of Alaska and northern Canada goes much further. ① During hibernation, which can last up to eight months, its core temperature plummets below zero degrees Celsius, reaching nearly minus three degrees, yet its blood does not freeze. ② The phenomenon, documented by the physiologist Brian Barnes in 1989, is known as supercooling: in the absence of ice crystals to seed it, the fluid remains liquid well below its normal freezing point. ③ Remarkably, the squirrel does not stay in this state throughout the winter but rouses itself every few weeks, shivering vigorously to rewarm its body for about a day before plunging back into torpor. ④ Arctic summers, by contrast, are brief, and the tundra where the squirrels burrow is carpeted with wildflowers for only a few weeks each year. ⑤ These periodic arousals consume most of the energy it expends all winter, and scientists still debate why they are necessary. Medical researchers are scrutinizing the animal closely, hoping that its tolerance of extreme cold and reduced blood flow might suggest ways to protect human organs during surgery or after strokes."
+},
+{
+"id": "r1-p24",
+"text": "In the early 1960s, the Yale psychologist Stanley Milgram asked volunteers to take part in what they believed was a study of learning. Each volunteer was instructed to administer electric shocks of increasing strength to a learner in another room whenever he made a mistake. ① The shocks were not real, and the learner was an actor who protested, cried out, and eventually fell silent. ② About two thirds of the volunteers in the best-known version continued to the highest level when the experimenter calmly insisted that they go on. ③ Milgram concluded that ordinary people will perpetrate harmful acts when instructed by an authority they regard as legitimate. ④ Later scholars, however, have impugned this interpretation, noting that many participants doubted the shocks were real and that obedience plummeted when the experimenter's authority seemed more tenuous. ⑤ Yale, founded in 1701, is one of the oldest universities in the United States. The experiments also prompted stricter ethical rules for research, since many volunteers had left the laboratory deeply traumatized."
+},
+{
+"id": "r1-p25",
+"text": "On November 19, 1863, a throng of about fifteen thousand gathered at Gettysburg, Pennsylvania, to dedicate a cemetery for soldiers killed in the battle fought there that July. The main speaker was Edward Everett, a former secretary of state and one of the most illustrious orators in the country, who spoke for about two hours, recounting the battle in meticulous detail. President Abraham Lincoln, invited almost as an afterthought to offer a few appropriate remarks, then rose and spoke for roughly two minutes. His address contained about 270 words. Newspaper verdicts diverged largely along partisan lines. Everett, however, wrote to the president the next day, saying that he would be glad if he had come as near to the central idea of the occasion in two hours as Lincoln had in two minutes. Today Everett's speech is almost forgotten, while Lincoln's is memorized by schoolchildren and inscribed in stone on the wall of his memorial in Washington. Its brevity, far from diminishing it, gave each sentence a gravity that a longer speech could not have carried."
+},
+{
+"id": "r1-p26",
+"text": "For many years, stalking in South Korea was treated as a minor offense, punishable at most by a small fine under a law covering misdemeanors such as littering. Victims who reported being shadowed or inundated with unwanted messages were often told that the police could do little until something graver happened. A spate of cases in which stalking culminated in violence transformed public opinion, and in 2021 a law specifically punishing stalking took effect. Even that law soon drew censure. It originally allowed prosecution to be dropped if the victim did not wish to pursue it, a provision that exposed victims to coercion from the very people they feared. In 2023 lawmakers revised the law, removing this provision and allowing courts to order electronic monitoring of suspects during investigations, a measure that took effect the following year. The changes reflect a broader shift in how the offense is understood: stalking is no longer seen as an awkward surfeit of romantic ardor but as ____."
+},
+{
+"id": "r1-p27",
+"text": "Witnesses to armed robberies often give elaborate descriptions of the weapon but strikingly hazy accounts of the robber's face. Psychologists call this the weapon focus effect. In laboratory studies, participants watch a short scene in which a man approaches a cashier holding either a gun or an ordinary object such as a checkbook. Those who see the gun spend more time fixating on it and are later less accurate at picking out the man from a set of photographs. The intuitive explanation is fear: a weapon signals danger, and a frightened mind narrows its attention to the source of the threat. Yet later research muddied this account. Studies found that a bizarre but harmless object, one that simply did not belong in the scene, could draw the eyes in much the same way. The weapon, it seems, captures attention not only because it is dangerous but because ____. For investigators, the lesson is that a witness's confident description of a gun says little about the reliability of her identification of the person holding it."
+},
+{
+"id": "r1-p28",
+"text": "In 1999 the psychologists Daniel Simons and Christopher Chabris asked volunteers to watch a short video of two teams passing basketballs and to count the passes made by the players in white. About halfway through, a person in a gorilla suit sauntered into the middle of the scene, faced the camera, thumped its chest, and walked off. Roughly half of the viewers were utterly oblivious to it, and some, when shown the video again, refused to believe it was the same recording. The phenomenon, known as inattentional blindness, is not a symptom of negligence or poor eyesight. It reflects the way attention works: when we concentrate on one task, the brain filters out much of what is irrelevant to it, even when that material appears in plain view. The finding has unsettling implications for anyone who relies on what witnesses report. A driver who insists that a cyclist came out of nowhere may be recounting candidly what he experienced. Looking directly at something, in other words, ____."
+},
+{
+"id": "r1-p29",
+"text": "In June 1925, a twenty-three-year-old German physicist named Werner Heisenberg, afflicted by a severe bout of hay fever, retreated to Helgoland, a rocky island in the North Sea almost free of pollen. There, working late into the night, he decided to ____. Instead of picturing electrons circling the nucleus in tidy orbits that no experiment could ever detect, he would describe atoms using only quantities that could actually be measured, such as the frequencies of the light they gave off. The paper he wrote on his return is often heralded as the birth of quantum mechanics, and to mark its centenary the United Nations declared 2025 the International Year of Quantum Science and Technology. The theory that grew from it is famously counterintuitive: particles behave in some experiments like waves, and certain pairs of properties cannot both be known precisely at the same time. Yet it is also among the most rigorously tested theories in science, and it undergirds technologies ranging from lasers to the transistors inside every phone."
+},
+{
+"id": "r1-p30",
+"text": "Ernest Hemingway likened good writing to an iceberg: only a small part should show above the surface, while the rest remains hidden below. In his 1932 book on bullfighting, Death in the Afternoon, he argued that a writer who truly knows his subject can omit things, and that the reader, if the writing is honest, will feel those things as strongly as if they had been stated. His short story Hills Like White Elephants, published in 1927, shows the method at work. A man and a woman wait for a train at a small Spanish station, sipping beer and chatting about the scenery and about an operation that the man insists is simple. The nature of the operation is never named, nor does either character state directly what he or she feels. Yet by the end, most readers intuit that the relationship is disintegrating. The technique demands trust in both directions: the writer must trust the reader to notice, and the reader must trust that the silences are deliberate. Hemingway believed that ____."
+},
+{
+"id": "r1-p31",
+"text": "My aunt ran a small photo studio on the second floor of a building near the market, and on Saturdays I was allowed to help. Most customers came for passport pictures, which she took with a speed and confidence that seemed (A) [effortless / hesitant]: a quick adjustment of the chin, a word about the eyes, a single click. Wedding portraits and family photographs were different. For those she might spend an hour rearranging a grandmother's shawl or waiting for a fidgety toddler to (B) [settle / unsettle]. Once I asked why she did not simply take dozens of pictures and pick the best. She said that a camera can record a face in an instant, but it cannot make a person feel at ease; that part was her job, and it could not be hurried. Years later, when I stumbled upon a box of her old prints, I noticed that the people in them looked (C) [stiff / relaxed] in a way that people in my own phone photos rarely do. I had always thought her slowness was a quirk of her generation. Looking at those faces, I understood it had been a skill."
+},
+{
+"id": "r1-p32",
+"text": "Most students assume that answering questions before studying a topic is futile, since they are bound to get the answers wrong. Research suggests otherwise. In a series of experiments, learners who first tried to guess the answers to questions about a passage, and then read it, later (A) [remembered / forgot] the material better than learners who simply spent the same amount of time reading. The benefit appeared even though nearly all of the initial guesses were erroneous. Psychologists proffer several explanations. An unsuccessful attempt may pique learners' curiosity about the right answer, so that they read with greater (B) [attention / indifference]. It may also reveal what they do not yet know, dispelling the common illusion that a passage they have skimmed is already understood. The wrong guesses themselves rarely (C) [persist / desist], provided that learners receive the correct answers soon afterward. For teachers, the lesson is that a short quiz at the start of a lesson need not be graded to be useful; its purpose is not to measure what students know but to prepare them to learn."
+},
+{
+"id": "r1-p33",
+"text": "The high seas, the vast expanses of ocean beyond any country's jurisdiction, cover nearly half of the planet's surface, yet for decades they were governed by a patchwork of fragmented rules that left most of them unprotected. In January 2026 a new international treaty, commonly called the High Seas Treaty, entered into force after more than sixty countries had ratified it. Adopted at the United Nations in 2023 after nearly two decades of arduous negotiation, the agreement establishes, for the first time, a mechanism for creating marine protected areas in international waters. It also requires assessments of the environmental impact of activities planned there and sets rules for sharing the benefits of marine genetic resources, such as compounds from deep-sea organisms that may yield new medicines. Supporters regard the treaty as indispensable to the widely endorsed goal of protecting thirty percent of the ocean by 2030. Skeptics caution that it lacks a strong enforcement mechanism and that some major maritime powers have not ratified it. Even so, it marks a significant shift: the open ocean is no longer treated simply as a frontier to be exploited, but as a shared inheritance to be managed."
+},
+{
+"id": "r1-p34",
+"text": "The Roman philosopher Seneca wrote a long treatise on anger in the first century, and his advice remains surprisingly pragmatic. Anger, he argued, is the most pernicious of the passions because it disguises itself as justice. The angry person feels not that he is losing control but that he is finally seeing clearly, and so he acts in ways he would never condone in a calmer moment. Seneca rejected the view, held by some philosophers of his time, that anger could be harnessed for good purposes; in his eyes it was a servant that quickly became a master. His most useful remedy was delay. The first surge of anger, he observed, is almost impossible to stifle, but no one is obliged to act on it immediately. A person who waits allows judgment to catch up with feeling, and many offenses that seemed intolerable in the moment turn out, on reflection, to be trivial or misunderstood. He also advocated reviewing one's day each evening and asking where one had been unreasonable. The goal was not to feel nothing but to give reason time to speak."
+},
+{
+"id": "r1-p35",
+"text": "Kim Jeong-ho, a mapmaker of the late Joseon period, completed the Daedongyeojido, a map of the Korean Peninsula, in 1861. Remarkably little is known about his life; even the years of his birth and death are uncertain. The map was printed from carved woodblocks, which allowed copies to be made far more cheaply than by hand. It was divided into twenty-two sections, each folded like the pages of a book, so that a traveler could carry only the parts needed for a particular journey. When all of the sections are laid out together, the map stands more than six meters tall. Rivers are drawn with double lines where boats could travel on them and with single lines where they could not, and roads are marked with small ticks every ten ri, letting users gauge distances at a glance. A popular legend claims that the authorities, alarmed that the map disclosed national secrets, imprisoned Kim and destroyed his woodblocks. Historians now regard this tale as unfounded, and some of the original woodblocks survive in the National Museum of Korea."
+},
+{
+"id": "r1-p36",
+"text": "Shortly after noon on April 28, 2025, the electricity supply across almost all of Spain and Portugal collapsed within a matter of seconds. Trains stalled between stations, traffic lights went dark, and many people lost mobile phone service as the backup batteries at transmission sites ran down. Hospitals switched to their own generators. Power began to return within hours, and by the following morning supply had been restored almost everywhere. The blackout prompted an acrimonious debate about its causes. Because solar power was supplying a large share of Spain's electricity at that moment, some pundits blamed renewable energy, arguing that grids dominated by solar panels lack the stabilizing inertia provided by the heavy spinning turbines of conventional power plants. Official investigations, however, pointed to a more intricate chain of events involving problems in controlling voltage, and officials ruled out a cyberattack. Engineers note that the episode was less a verdict on any single source of energy than a reminder that grids undergoing rapid transformation need new tools to keep them stable."
+},
+{
+"id": "r1-s1",
+"text": "For thirty years Mr. Gu ran a cramped bicycle repair shop beside the elementary school, and the children regarded him with a mixture of awe and terror. He was gruff, he charged exactly what the repair was worth, and he refused to fix anything a child had broken through sheer carelessness until the child could explain what had gone wrong. To Mr. Gu, mending a bicycle was less a trade than an act of ____, and he expected the same patience from his young customers. One autumn a boy named Taeho arrived with a bicycle so mangled that most adults would have advised him to buy a new one. The boy had no money; the bicycle had belonged to his late grandfather. Mr. Gu told Taeho to come back every afternoon after school. For six weeks the boy sat on an upturned crate, handing over wrenches, straightening spokes, and learning the names of parts he had never noticed. When the bicycle finally rolled out of the shop, gleaming, Taeho asked how much he owed. Mr. Gu shook his head. The bill, he said, had already been paid in afternoons. Years later, Taeho would say that the shop had taught him something no classroom had: that some things are worth repairing because of what they carry, not what they cost."
+},
+{
+"id": "r1-s2",
+"text": "Niccolo Machiavelli's The Prince, written in 1513 after he had been dismissed from the government of Florence, poses a question that rulers had rarely heard put so bluntly: is it better to be loved or feared? Machiavelli's answer is that it would be best to be both, but since the two rarely go together, it is safer to be feared. Love, he argues, depends on the goodwill of others, which can evaporate the moment their interests change; fear depends on the ruler himself, who can sustain it through the prospect of punishment. Yet the passage is often quoted without its crucial caveat. Machiavelli insists that a prince must shun being hated, and he warns that the surest way to provoke hatred is to confiscate the property of his subjects or to dishonor their families. Fear, in his account, is useful only when it is ____; a ruler must be able to calibrate it and his subjects to anticipate its limits. A ruler who terrifies people at random does not earn obedience; he invites conspiracy. Read carefully, the book is less a celebration of cruelty than a cold calculation of what keeps power stable."
+},
+{
+"id": "r2-p13",
+"text": "In September 1984, the British geneticist Alec Jeffreys was investigating the inheritance of hereditary disorders at the University of Leicester when he spotted an anomaly on an X-ray film. ( ① ) Certain stretches of DNA, duplicated many times over, varied so drastically in length between individuals that the pattern they generated resembled a bar code peculiar to each person. ( ② ) He swiftly realized that the technique could distinguish individuals from minute samples of blood or other biological material. ( ③ ) Its first momentous test came in 1986, when police investigating the murders of two adolescent girls in nearby villages enlisted his help. ( ④ ) A young man had already confessed to one of the killings, yet the DNA demonstrated that he could not have committed either. ( ⑤ ) Police then asked thousands of local men to furnish samples, and the real culprit, Colin Pitchfork, was eventually apprehended after a colleague was overheard admitting that he had given a sample in Pitchfork's place. The case thus also yielded one of the first convictions based on DNA evidence. Today, DNA databases help solve crimes around the world, although they also raise thorny questions about privacy."
+},
+{
+"id": "r2-p14",
+"text": "Thomas Hobbes published Leviathan in 1651, shortly after the English Civil War had shown him how precarious political order could be. ( ① ) He invited his readers to envisage human life without any government at all, a condition he called the state of nature. ( ② ) In such a world, he argued, people would be roughly equal in their capacity to harm one another, since even the feeblest could kill the strongest by cunning or in alliance with others. ( ③ ) Each person would therefore have reason to dread everyone else and to strike preemptively. ( ④ ) There would be no husbandry, no commerce, and no science, because no one could be assured of reaping the fruits of his labor. ( ⑤ ) Life, in his most famous phrase, would be solitary, poor, nasty, brutish, and short. To escape this predicament, people would consent to surrender their power to a sovereign formidable enough to keep the peace. Critics have countered that Hobbes's sovereign could itself become an instrument of tyranny, but his central claim, that security is the paramount purpose of government, still underpins debates about the state."
+},
+{
+"id": "r2-p15",
+"text": "In the summer of 2024, South Korea was shaken by reports that sexually explicit images of women, fabricated by grafting their faces onto other bodies with artificial intelligence, were proliferating in online chat rooms. Many of the victims were university students, teachers, and even schoolgirls. ( ① ) Many of the perpetrators sharing the images, moreover, turned out to be teenagers themselves. ( ② ) The public backlash was swift and vociferous. ( ③ ) Within weeks, the National Assembly amended the law on sexual crimes so that knowingly possessing, purchasing, or viewing such material became a crime punishable by up to three years in prison. ( ④ ) The amendment also stiffened the maximum sentence for producing or distributing it. ( ⑤ ) Supporters argued that a counterfeit image can devastate a real person's life as surely as a genuine photograph, while some jurists questioned how prosecutors would prove that a person knew an image was illicit. Schools, meanwhile, began admonishing students that creating such images, even as a prank, is a grave crime rather than an innocuous joke."
+},
+{
+"id": "r2-p16",
+"text": "Why do people sometimes behave in a crowd in ways they would never countenance alone? Psychologists use the term deindividuation for the erosion of self-awareness that can occur when people feel anonymous and engulfed by a group. ( ① ) A study conducted on Halloween in the 1970s offered a memorable illustration. ( ② ) Researchers arranged for costumed children who came trick-or-treating at certain homes in Seattle to be greeted by a woman who invited them to take a single piece of candy from a bowl and then left the room. ( ③ ) Some children were asked their names and addresses before she departed; others remained anonymous behind their masks. ( ④ ) Children who were anonymous and in groups pilfered extra candy far more often than children who were alone and had disclosed their names. ( ⑤ ) Being identifiable, it seems, keeps people tethered to their customary standards. The finding is often invoked in debates about anonymity, from masked crowds at demonstrations to the comment sections of the internet, though researchers caution that anonymity can also embolden people to act more magnanimously."
+},
+{
+"id": "r2-p17",
+"text": "In 1401, King Taejong of Joseon decreed that a large drum be hung outside the royal palace in Hanyang. Any subject with a grievance that local officials had failed to redress could, in principle, strike it to bring the complaint directly to the king's attention.\n(A) Partly because of these obstacles, the system fell into disuse and was abolished and reinstated several times over the following centuries. Later monarchs experimented with other channels, such as permitting commoners to petition by striking a gong when the king passed in a procession, a practice that brought the ruler's ear somewhat closer to the streets.\n(B) The drum became known as the sinmungo, and its very existence was intended as a political statement. A ruler who invited complaints was proclaiming that injustice anywhere in the kingdom concerned him personally, a claim rooted in the Confucian ideal of a monarch who cares for his people as a father cares for his children.\n(C) In practice, however, the drum seldom served the people it was ostensibly meant for. Stringent regulations required petitioners first to exhaust every lower level of appeal, and the palace was remote from most villages. Records intimate that it was used mostly by officials and residents of the capital, sometimes for matters as private as inheritance disputes."
+},
+{
+"id": "r2-p18",
+"text": "In March 2025, schools in South Korea began using digital textbooks equipped with artificial intelligence in subjects such as English and mathematics. The government promised that the software would tailor itself to each student, offering easier problems to those who floundered and more demanding ones to those who were ahead.\n(A) Within months, the National Assembly amended the textbooks' legal status, reclassifying them as supplementary learning materials. Schools could still use them, but they were no longer obliged to, and the decision was left to each school.\n(B) Teachers and parents, however, voiced misgivings from the outset. Some worried about the cost and the training required, others about the hours children would squander staring at screens, and still others about how students' personal data would be stored and safeguarded.\n(C) The episode epitomizes a recurring pattern in educational technology. Novel tools often arrive with grandiose promises, but their value depends less on the software itself than on whether teachers have the time and support to wield it well. A tablet cannot compensate for a curriculum that nobody has had time to plan."
+},
+{
+"id": "r2-p19",
+"text": "Almost every living thing, from bacteria to human beings, follows an internal rhythm of roughly twenty-four hours. This circadian clock signals to the body when to sleep, when to release certain hormones, and when to digest food.\n(A) Working with fruit flies, three American scientists, Jeffrey Hall, Michael Rosbash, and Michael Young, isolated a gene that governs this rhythm. They showed that the protein it encodes accumulates in cells during the night and degrades during the day, forming a self-regulating loop. In 2017 they received the Nobel Prize in Physiology or Medicine for this work.\n(B) Their discovery has tangible consequences. When the internal clock falls out of step with the outside world, as it does during jet lag or prolonged night-shift work, people may suffer not only fatigue but, over time, a heightened risk of various ailments.\n(C) For a long time, however, no one knew how such a clock could operate at the level of individual cells. Scientists had observed as early as the eighteenth century that some plants open and close their leaves on a daily cycle even when kept in constant darkness, but the mechanism remained an enigma."
+},
+{
+"id": "r2-p20",
+"text": "It was nearly midnight when the last passenger of Mr. Choi's shift climbed out of his taxi in front of a maternity hospital, thanked him twice, and scurried through the glass doors without looking back.\n(A) The call came at six in the morning. The passenger, whose wife had given birth in the small hours, had found the note at the front desk and had not even realized the bag was missing. When Mr. Choi handed it over in the hospital lobby, the man tried to force money on him, and when he refused, pressed a box of rice cakes into his hands instead.\n(B) He promptly drove back to the hospital, but without a name the receptionist on duty could do little. Mr. Choi left his phone number along with a description of the bag and, somewhat reluctantly, went home to sleep.\n(C) Only when he stopped for fuel twenty minutes later did he notice a small leather bag on the back seat. Inside were a wallet, a set of keys, and a tiny knitted cap still wrapped in tissue paper."
+},
+{
+"id": "r2-p21",
+"text": "In 1963, Ernesto Miranda was arrested in Phoenix, Arizona, and after two hours of police interrogation signed a confession. ① He had never been informed that he had the right to remain silent or to have a lawyer present. ② In 1966 the United States Supreme Court overturned his conviction, ruling that statements obtained during custodial questioning were inadmissible unless suspects had first been apprised of these rights. ③ The warning that resulted, beginning with the words you have the right to remain silent, has since become familiar to viewers around the world through films and television dramas. ④ Miranda himself was killed in 1976 in a fight at a bar in Phoenix, and the man arrested for the stabbing was reportedly read the very warning that bore his name. ⑤ Police organizations initially predicted that the ruling would make confessions scarce and crimes insoluble, but research in the following decades found that most suspects still elected to talk. Miranda had in fact been retried using other evidence and convicted again, a telling reminder that the decision safeguarded a procedure rather than any particular defendant."
+},
+{
+"id": "r2-p22",
+"text": "Parents have always flaunted photographs of their children, but the internet has transformed the audience from a handful of relatives into potentially millions of strangers. The habit of sharing children's images online has even acquired its own name: sharenting. ① In February 2024, France adopted a law stating explicitly that parents must protect their children's right to their own image and must take the child's privacy into account. ② Under the law, if parents are at odds over posting a child's photographs, a judge can prohibit one of them from doing so without the other's consent. ③ In especially egregious cases, a court can even transfer the right to manage a child's image to a third party. ④ In 2023, French lawmakers had also voted to require parental consent before children under fifteen could open social media accounts of their own. ⑤ Supporters point out that photographs posted today may haunt children into adulthood, revealing their whereabouts, mortifying them in front of future classmates, or being misappropriated by strangers. Skeptics doubt that the law will be easy to enforce, but its proponents say its main purpose is to change parents' habits rather than to fill courtrooms."
+},
+{
+"id": "r2-p23",
+"text": "Homing pigeons released hundreds of kilometers from their lofts can find their way back, a skill that humans exploited for thousands of years to convey messages. How they accomplish this feat has perplexed scientists for just as long. ① Experiments suggest that pigeons use the position of the sun as a compass, compensating for the time of day with their internal clocks. ② When the sky is overcast, they appear to rely on the earth's magnetic field instead. ③ Near home, they also discern familiar landmarks such as highways, rivers, and coastlines, and some studies indicate that they follow roads even when a straighter route is available. ④ Several experiments further suggest that odors carried on the wind contribute to their orientation. ⑤ Pigeons are also omnipresent in city squares, where many residents regard them as a nuisance because of the mess they leave on buildings and statues. No single cue explains the achievement; rather, the birds seem to integrate several sources of information, switching between them as circumstances change."
+},
+{
+"id": "r2-p24",
+"text": "In August 1971, the psychologist Philip Zimbardo recruited undergraduates to play guards and prisoners in a mock prison built in the basement of a building at Stanford University. ① The study was planned to last two weeks but was halted after six days, reportedly because some guards had become sadistic and several prisoners displayed signs of acute distress. ② For decades, the experiment was taught as proof that ordinary people thrust into a powerful role will quickly abuse it. ③ Later investigations of recordings and archives, however, revealed that the guards had been goaded by the researchers to act tough, and some participants confessed they had been performing the parts they surmised were expected of them. ④ Zimbardo himself went on to a distinguished career and was elected president of the American Psychological Association in 2002. ⑤ Many psychologists now argue that the study reveals less about the power of situations than about the influence of leaders who tell people what a role requires. It remains a riveting story, but it is a flimsy foundation for sweeping conclusions about human nature."
+},
+{
+"id": "r2-p25",
+"text": "Victor Hugo's Les Miserables, published in 1862, follows Jean Valjean, a man imprisoned for nineteen years for stealing bread and later attempting to escape, who is transformed by an unexpected act of clemency from a bishop and spends the rest of his life doing good under an assumed name. Pursuing him for decades is Javert, a police inspector who is not a villain in any ordinary sense. He is scrupulously upright, incorruptible, and utterly devoted to the law, which he regards as the only bulwark between society and chaos. For Javert, a person who has once broken the law remains a criminal forever; repentance is irrelevant. The crisis comes when Valjean, given the chance to kill his pursuer, sets him free instead. Javert later finds himself in a position to arrest Valjean and cannot bring himself to do it. Unable to reconcile his rigid sense of duty with the mercy he has received and now shown, he is destroyed by the contradiction. Hugo's point is not that law is worthless but that law without mercy cannot account for the capacity of human beings to change."
+},
+{
+"id": "r2-p26",
+"text": "When investigators seize a phone or a laptop, the cardinal and inviolable rule of digital forensics is to avoid altering anything on it. Merely switching a computer on can modify thousands of files, updating the dates on which they were last opened and overwriting data that might otherwise have been retrieved. Examiners therefore usually work not on the original device but on an exact replica of its storage, made with equipment that prevents anything from being written back to the original. To verify that the copy is faithful, they calculate a hash value, a long string of characters generated from the data by a mathematical formula. Changing even a single character in the data yields a completely different hash, so identical values before and after an examination demonstrate that nothing has been tampered with. Every person who handles the evidence is documented in a log known as the chain of custody. These procedures may seem tedious and pedantic, but in court the crucial question is often not only what a device contains but ____."
+},
+{
+"id": "r2-p27",
+"text": "In the third century BCE, as rival states in China vied for supremacy, the philosopher Han Feizi repudiated the Confucian belief that rulers could govern through moral example. People, he argued, are moved chiefly by self-interest: they covet rewards and shun punishment. A shrewd ruler should therefore not rely on the virtue of his ministers or subjects but on explicit laws, publicly proclaimed and applied without exception, with munificent rewards for those who obey and severe penalties for those who do not. The law, in his celebrated metaphor, does not bend to the noble any more than a carpenter's measuring line bends around a crooked piece of wood. The state of Qin adopted ideas of this kind and went on to unify China in 221 BCE. Yet the Qin dynasty disintegrated within fifteen years, and later historians blamed its harshness for fomenting rebellion. Han Feizi's legacy is thus double-edged: his insistence that the law ____ anticipated a principle modern societies cherish, while his faith in draconian punishment has largely been rejected."
+},
+{
+"id": "r2-p28",
+"text": "In 1956 the psychologist George Miller published a paper with a whimsical title, The Magical Number Seven, Plus or Minus Two. Surveying a range of experiments, he observed that people could hold about seven items, such as digits or words, in immediate memory before they began to falter. The number became one of the most widely cited findings in psychology, invoked to justify everything from the length of telephone numbers to the number of options on a menu. Subsequent research, however, suggested that Miller's estimate was too generous. People remember long strings of digits partly by grouping them into chunks, as when a phone number is split into sections, and when such grouping is precluded, the true capacity appears closer to four items. Designers who assume that users can juggle seven separate pieces of information may therefore be demanding far too much of them. The psychologist Nelson Cowan, who scrutinized this evidence in 2001, argued that ____."
+},
+{
+"id": "r2-p29",
+"text": "In 2024 the Nobel Memorial Prize in Economic Sciences went to Daron Acemoglu, Simon Johnson, and James Robinson for research on how institutions shape the prosperity of nations. One of their favorite illustrations is the city of Nogales, which is bisected by the border between the United States and Mexico. The inhabitants on both sides share ancestors, a climate, and much of their culture, yet residents of the northern half are on average far more affluent, healthier, and better served by public services. The yawning disparity, the economists contend, lies not in geography or culture but in rules: on one side, institutions that protect property, enforce contracts, and give citizens a voice in government; on the other, institutions that have historically served narrower interests. Their historical research traced such differences back to the colonial era, when Europeans built very different institutions depending on whether they intended to settle in a territory or merely plunder its resources. The lesson they draw is that ____. Detractors argue that the theory underplays other factors, but few dispute that rules matter enormously."
+},
+{
+"id": "r2-p30",
+"text": "On April 26, 1937, during the Spanish Civil War, German and Italian aircraft supporting General Franco bombed the Basque town of Guernica on a bustling market day, razing much of the town and killing many civilians. Pablo Picasso, living in Paris, had been commissioned to paint a mural for the Spanish pavilion at the forthcoming World's Fair. He discarded his earlier plans and, within about five weeks, produced an immense canvas in black, white, and gray. It contains no airplanes and no bombs. Instead, it depicts a shrieking mother cradling a dead child, an anguished horse, a slain soldier, and a woman leaning from a window with a lamp. By refusing to depict the event literally, Picasso created a picture that ____. Picasso stipulated that the painting should not go to Spain until democracy had been restored there, and it arrived in Madrid only in 1981, several years after Franco's death. It now hangs in a museum in the capital, where crowds still congregate before it in a silence that few paintings command."
+},
+{
+"id": "r2-p31",
+"text": "Our neighbor Mrs. Han kept four beehives at the bottom of her garden, and for most of my childhood I was (A) [terrified / fond] of them. Every summer I would cross the street rather than walk past her fence, convinced that the bees were lying in wait for me. In the fourth grade, she finally coaxed me into watching her open a hive, and to my astonishment she wore no gloves. She moved unhurriedly, she explained, because bees react to abrupt movements, and she never opened a hive on a cold or stormy day, when the colony was (B) [calm / irritable]. I watched her lift a frame laden with honey while dozens of bees ambled across her bare wrists, and not one of them stung her. That autumn she gave me a jar with my name written on the lid. I still cannot profess to love insects, but I learned something that afternoon that has served me in many situations since: much of what we fear becomes (C) [manageable / unmanageable] once we understand what provokes it."
+},
+{
+"id": "r2-p32",
+"text": "Students are often counseled to rewrite their notes in order to remember them. Research by psychologists at the University of Waterloo suggests that drawing may work even better. In a series of experiments, participants were given a list of simple words, such as apple, and asked either to write each word out repeatedly or to sketch a quick picture of it within the same amount of time. On a surprise test afterward, those who had illustrated the words (A) [retained / detained] substantially more of them, and the advantage persisted even among participants who considered themselves inept at drawing. The quality of the pictures appeared immaterial. The researchers suggest that drawing compels learners to (B) [combine / separate] several kinds of processing at once: pondering what a word means, imagining its appearance, and moving the hand to create it. Writing a word repeatedly, by contrast, can be done almost (C) [mechanically / thoughtfully], with scant attention to its meaning. The findings do not imply that every lesson should become an art class, but they suggest that even crude sketches can make information stick."
+},
+{
+"id": "r2-p33",
+"text": "The 2025 Nobel Prize in Chemistry was awarded to Susumu Kitagawa, Richard Robson, and Omar Yaghi for developing metal-organic frameworks. These materials are assembled from metal ions linked by long organic molecules, forming crystals riddled with regularly shaped cavities. The cavities are so numerous that a few grams of some frameworks contain an internal surface area roughly the size of a football field. Because chemists can choose the building blocks, they can tailor frameworks whose pores capture particular molecules. Researchers have devised versions that harvest water vapor from desert air, trap carbon dioxide from industrial exhaust, store volatile gases securely, and decompose toxic substances. Robson built the first rudimentary structures in the late 1980s, but they were fragile and prone to collapse; the work of Kitagawa and Yaghi in the 1990s showed that they could be made robust and even flexible. Many applications remain at an early stage, and manufacturing the materials cheaply at scale is still a formidable challenge. Nevertheless, the prize recognized an entirely new way of designing matter, one in which empty space itself becomes the most valuable ingredient."
+},
+{
+"id": "r2-p34",
+"text": "Anton Chekhov is credited with a piece of advice that writers still repeat: if a gun hangs on the wall in the first act of a play, it must be discharged by the last. The principle is notoriously misconstrued as a rule about guns or about foreshadowing alone. Its deeper point concerns economy. Every detail in a story makes a tacit and binding promise to the audience that it matters, and an audience that has been plied with dozens of details will squander its attention trying to remember them all. A detail that is never used therefore does not merely occupy space; it misleads. Chekhov's own stories exemplify this austere discipline. They are often short, unhurried, and deceptively plain, yet almost nothing in them is idle. Modern editors apply the same logic when they urge writers to excise scenes that are beautifully written but serve no purpose, however painful the cut may be. The test is not whether a passage is good in isolation but whether the story would lose anything without it."
+},
+{
+"id": "r2-p35",
+"text": "In 1967 the British philosopher Philippa Foot described a puzzle that would become one of the most debated in moral philosophy. A runaway tram is hurtling toward five workers on the track, and its driver can steer onto a side track where it will kill one worker instead. Most people say that steering is permissible. Yet in a variation later developed by the American philosopher Judith Jarvis Thomson, who coined the name trolley problem, the only way to save the five is to push a large man off a footbridge into the tram's path. Although the arithmetic is identical, most people say this is wrong. Philosophers have spent decades striving to explain the discrepancy, pointing to distinctions between killing and letting die or between harming someone as a means and harming someone as a side effect. The puzzle gained fresh urgency with the development of self-driving cars. A 2018 online experiment called the Moral Machine amassed millions of decisions from people in more than two hundred countries and territories about whom a car should spare in an unavoidable crash, revealing both shared intuitions and striking cultural differences."
+},
+{
+"id": "r2-p36",
+"text": "In December 2024, South Korea officially became a super-aged society, with people aged sixty-five or older making up more than a fifth of the population. One consequence is conspicuous on the roads. The number of older drivers has swelled steadily, and so has the share of traffic accidents in which they are at fault. Many local governments now encourage older residents to relinquish their licenses voluntarily, offering inducements such as prepaid transportation cards. Drivers aged seventy-five or older must also renew their licenses more frequently than younger drivers and complete a safety course that includes a test of cognitive ability. Yet the policy debate is far from tidy. Age alone is a crude and unreliable predictor of driving skill, and many older people in rural areas, where buses are sparse, depend on their cars to reach hospitals and markets. Revoking a license can leave them isolated. Some specialists therefore favor tests that measure actual driving ability rather than rigid age limits, along with better public transportation and, eventually, vehicles that can assist or even replace the driver."
+},
+{
+"id": "r2-s1",
+"text": "For two years I worked the night shift at a convenience store across from a hospital, and the customers who came after midnight were seldom in a hurry to leave. There were nurses buying instant noodles at the end of grueling shifts, cabbies nursing canned coffee by the window, and an elderly man who arrived every night at two and bought a single newspaper, although the morning edition had not yet come out and he always had to settle for yesterday's. For months I presumed he was befuddled. One night I ventured, as gently as I could, that the new paper would arrive at five. He smiled wistfully and said he knew. His wife was in the hospital across the street, he explained, and he could not sleep at home, and buying a newspaper gave him a reason to walk somewhere and speak to someone. What he was really purchasing every night, I came to see, was ____. After that I set the crossword page aside for him, and on quiet nights we argued cheerfully over the answers until the delivery truck arrived. I have forgotten most of the prices I memorized in that job, but I have never forgotten that for some people, a shop at night is less a place to buy things than a place to be."
+},
+{
+"id": "r2-s2",
+"text": "In George Orwell's novel Nineteen Eighty-Four, published in 1949, the ruling Party is fashioning a new language called Newspeak. Unlike every other language, it is designed to dwindle each year. Words are abolished outright or stripped of their unwanted meanings, so that free, for example, can still describe a field free of weeds but no longer refers to political liberty. The aim, as one character explains with unsettling enthusiasm, is to make certain thoughts literally impossible, since a person cannot think clearly about what he has no words for. Orwell's appendix on Newspeak reads like a dry linguistic report, which renders it all the more chilling. Modern linguists generally doubt that language constrains thought as completely as the novel imagines; people routinely apprehend ideas before they find names for them. Yet Orwell's warning concerns something subtler than grammar. Political language, he had argued in an essay three years earlier, is riddled with ____. Such phrases allow ugly realities to pass unexamined: when defenseless villages are bombed from the air, the operation is called pacification. The danger is not that words make thought impossible but that they can make careless or dishonest thinking easier."
+},
+{
+"id": "r3-p13",
+"text": "Closed-circuit television cameras have become so ubiquitous in cities that most residents scarcely register them, and governments routinely justify new installations by pledging safer streets. ( ① ) The evidence for that pledge is more equivocal than the enthusiasm suggests. ( ② ) Large meta-analyses that aggregated decades of studies have found that cameras are associated with a modest reduction in crime overall, but the effect is clustered in particular settings, notably car parks and residential areas. ( ③ ) For violent offenses, which are often impulsive and committed in the heat of the moment, the deterrent effect appears negligible. ( ④ ) Cameras seem to work best when they are vigilantly monitored and combined with other measures, such as improved lighting or regular patrols. ( ⑤ ) Critics also warn of displacement, the possibility that offenders simply relocate to streets beyond the cameras' reach, though several studies suggest that nearby areas sometimes benefit instead. None of this means that cameras are futile; recorded footage frequently enables investigators to pinpoint suspects after the fact. But a camera that deters a calculating thief may mean nothing to a person in a paroxysm of rage."
+},
+{
+"id": "r3-p14",
+"text": "In his Second Treatise of Government, published in 1689, John Locke set out to explain how anything could rightfully become private property in a world that God, he assumed, had bestowed on humanity in common. ( ① ) His answer was labor. ( ② ) Every person owns his own body, Locke reasoned, and therefore the work of his hands. ( ③ ) When someone gathers apples from a wild tree or tills an unclaimed field, he mingles his labor with what nature provided and thereby makes it his own. ( ④ ) Locke attached two conditions to such acquisition: one may take only as much as one can use before it spoils, and there must be enough, and as good, left for others. ( ⑤ ) The theory proved enormously influential, shaping later arguments for limited government and individual rights. It was also put to troubling uses. Colonists in North America invoked it to claim that land not cultivated in the European manner was effectively vacant and could be appropriated, disregarding the ways in which indigenous peoples had long used it. Locke's provisos, critics note, were quietly forgotten by those who found his central idea convenient."
+},
+{
+"id": "r3-p15",
+"text": "In a classic 1973 study, Amos Tversky and Daniel Kahneman posed a deceptively simple question to their participants: in a typical English text, is the letter K more likely to appear as the first letter of a word or as the third? ( ① ) Most respondents chose the first position. ( ② ) In fact, words with K in the third position, such as ask, make, and like, are considerably more common. ( ③ ) The researchers attributed the error to what they called the availability heuristic. ( ④ ) In this case, words beginning with K spring to mind far more readily than words with K buried inside them, so people mistake ease of recall for frequency. ( ⑤ ) The same bias distorts our judgments of risk. Dramatic causes of death, such as plane crashes, homicides, and shark attacks, receive extensive media coverage and are therefore vivid in memory, so people tend to overestimate them, while quieter killers such as diabetes and strokes are underestimated. Policymakers are not immune: a single memorable disaster can divert public spending toward rare dangers while more prevalent ones are neglected."
+},
+{
+"id": "r3-p16",
+"text": "On an August evening in 1913, the roulette wheel at the casino in Monte Carlo landed on black again and again. As the streak lengthened, gamblers thronged around the table, staking ever larger sums on red in the conviction that a reversal was overdue. ( ① ) The ball fell on black twenty-six times in a row before red finally appeared, and by then many of the bettors had squandered fortunes. ( ② ) Their blunder now bears the name of the place: the gambler's fallacy, or the Monte Carlo fallacy. ( ③ ) It is the belief that past outcomes of independent random events alter the probability of future ones. ( ④ ) The wheel is devoid of memory; on every spin, the chance of red or black is exactly what it was before. ( ⑤ ) The fallacy is not confined to casinos. Parents who have had several sons sometimes feel that a daughter is now more likely, and investors sometimes sell a stock simply because it has risen for several days in succession. Researchers have even found traces of it in the decisions of judges and loan officers, who seem loath to issue too many identical rulings in a row, as if fairness required the results to alternate."
+},
+{
+"id": "r3-p17",
+"text": "Under South Korean law, children younger than fourteen cannot be held criminally culpable for their actions. Those aged ten to thirteen who commit offenses, known as chokbeop sonyeon, are instead referred to juvenile courts, which may impose protective measures such as probation or placement in a juvenile institution.\n(A) Opponents counter that the number of such cases is small, that children of that age are still developing the capacity to grasp the consequences of their acts, and that harsher punishment seldom deters impulsive behavior. Many argue that resources would be better allocated to early intervention, counseling, and support for beleaguered families.\n(B) In recent years, however, a series of highly publicized cases involving serious violence by children near the age limit has provoked public outrage. Critics contend that today's children mature earlier than those of the past and that some exploit the law, knowing they cannot be prosecuted. In 2022 the Ministry of Justice proposed lowering the upper age from fourteen to thirteen.\n(C) The dispute thus pits two legitimate concerns against each other: the public's demand for accountability and the conviction that children should be treated differently from adults. Whatever the threshold, most experts agree that what happens after a young offender is caught matters more than the precise age written into the statute."
+},
+{
+"id": "r3-p18",
+"text": "In 1679 the English Parliament passed the Habeas Corpus Act, fortifying one of the oldest protections in the common law. The Latin phrase, meaning you shall have the body, refers to a court order directing a jailer to bring a prisoner before a judge.\n(A) The principle crossed the Atlantic with English settlers, and the framers of the United States Constitution enshrined it, permitting its suspension only in cases of rebellion or invasion. That exception proved consequential: at the outbreak of the Civil War, President Lincoln suspended the writ in certain areas, provoking an acrimonious dispute over whether the president or Congress held that power.\n(B) Similar controversies have recurred in later emergencies, whenever governments have claimed the right to hold suspects without trial. The persistence of these debates suggests that the old writ remains anything but an antiquarian curiosity; it is a test that every state claiming to respect liberty must face.\n(C) The order sounds merely procedural, but its implications are profound. The jailer must justify the detention by showing a lawful reason for it, and if he cannot, the prisoner must be released. A ruler can no longer simply make dissenters vanish into a cell without explanation."
+},
+{
+"id": "r3-p19",
+"text": "In February 2025 the computer scientist Andrej Karpathy coined the phrase vibe coding to describe a new way of building software. Instead of writing code line by line, the programmer describes what he wants in plain language, lets an artificial intelligence system generate the code, and accepts the result largely without reading it.\n(A) The phrase spread with astonishing rapidity, and by the end of the year Collins Dictionary had named it its word of the year. Enthusiasts extolled the way it enabled people with no technical training to build simple apps and websites in an afternoon.\n(B) The debate echoes earlier quarrels about calculators and spelling checkers. Each tool eventually found its place, but only after people learned which tasks could safely be delegated and which still required human judgment and expertise.\n(C) Seasoned programmers were more ambivalent. Code that no one has read, they warned, can conceal security flaws and errors that surface only later, when they are far harder and more costly to rectify. Several observers suggested that the approach suits impromptu experiments but not software on which people's money or safety depends."
+},
+{
+"id": "r3-p20",
+"text": "Every autumn, the retired schoolteacher Mr. Baek entered the village pumpkin contest, and every autumn he lost to his neighbor Mr. Do, whose pumpkins were invariably larger.\n(A) Mr. Baek gaped at it for a long moment, then asked whether Mr. Do had been playing the violin all summer. \"Of course not,\" his neighbor replied cheerfully. \"I can't play a note. But I needed you to stop watering yours at dawn and start practicing instead.\"\n(B) The following autumn, Mr. Baek's pumpkin was enormous, and the villagers were certain he would finally win. On the morning of the contest, however, Mr. Do arrived pushing a wheelbarrow that held a pumpkin so colossal it had cracked the barrow's wooden sides.\n(C) One year, determined to discover the secret, Mr. Baek invited his rival to dinner and, over a third glass of rice wine, asked him point-blank. Mr. Do leaned forward conspiratorially and murmured that he played the violin to his pumpkins every evening. The next morning Mr. Baek bought a violin."
+},
+{
+"id": "r3-p21",
+"text": "In 2008 South Korea introduced citizen participation trials, its first experiment with juries in criminal cases. Under the system, a defendant charged with a serious crime may request that ordinary citizens hear the evidence alongside professional judges. ① The jurors deliberate and deliver a verdict, but their decision is merely advisory: the judges are not legally bound to follow it. ② In practice, however, judges have agreed with the jury's verdict in the great majority of cases. ③ The Korean court system also includes specialized courts for family matters and for administrative disputes involving government agencies. ④ Supporters argue that the trials make the judiciary more transparent and bring the law closer to the people it serves. ⑤ Skeptics note that only a meager share of eligible defendants request them, partly because the process is unfamiliar and partly because some lawyers doubt that juries will be sympathetic. Proposals to make jury verdicts binding have been mooted repeatedly, but for now the system remains a cautious hybrid between the lay participation familiar in many countries and Korea's long tradition of trial by professional judges."
+},
+{
+"id": "r3-p22",
+"text": "Teachers spend countless hours grading, on the assumption that marks motivate students and tell them how they are faring. A well-known study by the Israeli psychologist Ruth Butler, published in 1988, cast doubt on that assumption. ① Butler gave schoolchildren a series of thinking tasks and returned their work with one of three kinds of feedback: written comments alone, numerical grades alone, or comments together with grades. ② Students who received only comments displayed greater interest in the tasks and performed better in later sessions. ③ Numerical grading systems vary widely between countries, from letters in the United States to scales of twenty in France. ④ Strikingly, students who received both comments and grades fared no better than those who received grades alone. ⑤ The grade, it seems, eclipsed the comment: students glanced at the number, compared it with their classmates' scores, and ignored the advice beside it. Few schools can abandon grades entirely, but the study suggests that feedback intended to help students improve may be more potent when it is delivered before, or instead of, a mark."
+},
+{
+"id": "r3-p23",
+"text": "Vampire bats live on a diet that leaves no margin for error. ① A common vampire bat must drink blood almost every night; after two or three nights without a meal, it may starve to death. ② Since roughly a third of young bats fail to find a meal on any given night, survival would seem to be largely a matter of luck. ③ In 1984, however, the biologist Gerald Wilkinson reported that bats returning to the roost with a full stomach often regurgitate blood to feed hungry roost-mates. ④ Bats are also the only mammals capable of true powered flight, and they account for roughly a fifth of all mammal species. ⑤ Crucially, the sharing is not indiscriminate: bats are more likely to feed individuals that have fed them in the past, as well as their close kin. Later experiments found that bats which had cultivated a wide network of sharing partners coped better when a regular partner was removed. The arrangement resembles a system of mutual insurance, and it has become one of the most frequently cited examples of reciprocal altruism among animals."
+},
+{
+"id": "r3-p24",
+"text": "In 1377 the North African scholar Ibn Khaldun completed the Muqaddimah, an introduction to a history of the world that has since been hailed as a precursor of sociology. ① Dissatisfied with chroniclers who merely recorded events, he sought the underlying causes of the rise and fall of dynasties. ② His central concept was asabiyya, a form of group solidarity that he found strongest among the hardy peoples of the desert. ③ Bound by this cohesion, such groups could conquer settled kingdoms, but once established in cities, their descendants grew accustomed to luxury, their solidarity eroded, and they became prey to a new group from the margins. ④ Ibn Khaldun himself served several rulers as a judge and adviser and, late in life, met the conqueror Timur outside Damascus. ⑤ By his reckoning, the cycle typically ran its course within three or four generations. Modern historians question the regularity of the pattern, yet Ibn Khaldun's insistence that history should be explained by social forces rather than by the deeds of great men remains strikingly modern."
+},
+{
+"id": "r3-p25",
+"text": "Vincent van Gogh wrote more than eight hundred letters that survive, most of them to his younger brother Theo, an art dealer in Paris who subsidized him for much of his adult life. They are vivid, erudite, and often harrowing, for Vincent describes the paintings he is working on, sketches them in the margins, argues about color and literature, and confesses his loneliness and fear of failure. Without them, the popular image of the artist would be far poorer. He sold scarcely any paintings during his lifetime, and when he died in 1890, followed by Theo only six months later, his reputation might easily have sunk into oblivion. That it did not is due in large part to Theo's widow, Johanna van Gogh-Bonger. She orchestrated exhibitions of Vincent's work, haggled with dealers, and spent years transcribing the letters, which she published in 1914. In her introduction she insisted that readers should come to know the man before judging the paintings. The strategy succeeded spectacularly: the letters transformed an obscure painter into one of the most beloved figures in the history of art, and they remain one of the most moving records of an artistic life ever written."
+},
+{
+"id": "r3-p26",
+"text": "In November 2025, after two decades of planning, construction, and repeated delays, the Grand Egyptian Museum officially opened beside the pyramids of Giza. Touted as the largest museum in the world devoted to a single civilization, it houses tens of thousands of artifacts, including, for the first time in one place, the entire collection of objects found in the tomb of Tutankhamun. Visitors enter through a vast atrium dominated by a colossal statue of Ramesses II, which was moved to the site from central Cairo. Egyptian officials have presented the museum not only as a lure for tourism but as a statement of cultural sovereignty. For two centuries, many of the most celebrated Egyptian antiquities have been displayed in European and American museums, and Egyptian scholars have long argued that some of them should return. The new building bolsters their position. Museums abroad have often justified keeping such objects by contending that their countries of origin could not care for them adequately. A state-of-the-art institution beside the pyramids ____."
+},
+{
+"id": "r3-p27",
+"text": "The Art of War, attributed to the Chinese general Sun Tzu and probably compiled around the fifth century BCE, is often imagined as a manual of ruthless aggression. Its central teaching is almost the opposite, for the supreme achievement, the text declares, is not to win a hundred battles but to subdue the enemy without fighting at all. Warfare is portrayed as ruinously expensive: it depletes treasuries, drains the population, and invites opportunistic neighbors to attack a weakened state. The wise commander therefore seeks to thwart the enemy's plans, sever his alliances, and prevail through deception, intelligence, and positioning before a single soldier is committed. Knowledge is paramount; a general who knows both the enemy and himself, the text famously asserts, need not fear the outcome of a hundred battles. Little wonder that executives, diplomats, and sports coaches have adopted the book as a guide. Read carefully, The Art of War is less a glorification of combat than an argument that the most skillful victory is ____."
+},
+{
+"id": "r3-p28",
+"text": "Hotels have long placed cards in their bathrooms urging guests to reuse their towels in order to protect the environment. In a 2008 study, the psychologists Noah Goldstein, Robert Cialdini, and Vladas Griskevicius tested whether a subtle change in wording could make these appeals more persuasive. One version of the card offered the standard environmental message. Another informed guests that the majority of people staying in the hotel had reused their towels at least once. The second card increased reuse substantially, and a version noting that most previous guests who had stayed in that very room had done so proved more effective still. The finding illustrates the power of descriptive social norms: people look to the behavior of others, especially others in circumstances resembling their own, to gauge what is appropriate. It also carries a sobering warning for campaigners. Messages that lament how many people litter, squander water, or skip vaccinations may inadvertently ____, signaling that the undesirable behavior is perfectly normal."
+},
+{
+"id": "r3-p29",
+"text": "The immune system confronts a perpetual dilemma: it must attack bacteria and viruses with ferocity, yet it must never turn that ferocity against the body's own tissues. For decades, scientists presumed that this restraint was achieved mainly in the thymus, where immune cells that react against the body are culled before they mature. The 2025 Nobel Prize in Physiology or Medicine honored three researchers who showed that this is only part of the story. In 1995 the Japanese immunologist Shimon Sakaguchi identified a previously unknown class of cells, now called regulatory T cells, that patrol the body and suppress immune reactions that might otherwise damage healthy tissue. Several years later, the geneticists Mary Brunkow and Fred Ramsdell, studying a strain of mice prone to severe autoimmune disease, discovered a gene essential to these cells, and showed that mutations in the same gene cause a rare and serious disorder in humans. Their work revealed that the body's defense depends on ____. Researchers are now exploring ways to boost these cells to treat autoimmune diseases, or to weaken them so that the immune system can attack tumors more vigorously."
+},
+{
+"id": "r3-p30",
+"text": "Many of the fables attributed to Aesop end with a tidy lesson: slow and steady wins the race, or it is easy to despise what you cannot get. Yet almost nothing certain is known about Aesop himself. Ancient chroniclers described him as a slave who lived on the Greek island of Samos in the sixth century BCE and won his freedom through his wit, but much of his biography is apocryphal. The fables circulated orally for centuries before they were written down, and the extant collections were assembled long after his death by compilers who interpolated, altered, and sometimes fabricated stories. Scholars have also noticed that the morals attached to the fables frequently sit incongruously with the stories themselves. The fox who dismisses the grapes as sour, for instance, can be read as a lesson in self-deception, in consolation, or in plain good sense, depending on the reader. The neat sentences at the end were often added by later editors eager to make the tales serve as edification. Read without those morals, the fables ____."
+},
+{
+"id": "r3-p31",
+"text": "Every Sunday morning the laundromat on our corner held the same three customers: a nurse who slept through the whole cycle, a student with enormous headphones, and an elderly man in a pressed gray suit who worked the crossword in the newspaper. I was (A) [curious / incurious] about him for months before I mustered the courage to speak. One morning he sighed ruefully and tapped the page with his pen. Nine letters, he said, meaning stubborn, and he looked thoroughly vexed. I suggested obstinate, and he wrote it in with visible (B) [delight / reluctance]. After that, he saved the hardest clues for me. I learned that he had been a court interpreter for forty years and that he did the puzzle because his late wife had always done it with him; finishing it alone, he admitted, felt like an (C) [admission / denial] that she was really gone. So we finished it together, week after week, until the spring he moved to his daughter's city. He left an envelope with the attendant addressed to me. Inside was a dictionary, its margins crowded with his tiny handwriting, and a note that said only: for the next nine letters."
+},
+{
+"id": "r3-p32",
+"text": "Teenagers who struggle to get out of bed are often accused of laziness, but biology offers a more charitable and plausible explanation. During adolescence, the body's internal clock shifts later, so that many teenagers do not feel sleepy until well after eleven at night. Early school start times therefore (A) [deprive / provide] them of the sleep they need, with repercussions for attention, mood, and even road safety. In 2014 the American Academy of Pediatrics recommended that middle and high schools begin no earlier than 8:30 in the morning. When the school district in Seattle moved its high school start time nearly an hour later in 2016, researchers who tracked students with wrist sensors found that they slept about half an hour longer on school nights, and their grades and attendance (B) [improved / deteriorated]. California went further, passing a law that took effect in 2022 requiring most public high schools to begin no earlier than 8:30. Later start times are not without costs: bus schedules, sports practices, and parents' working hours all have to be (C) [rearranged / deranged]. But the evidence suggests that the inconvenience may be a price well worth paying."
+},
+{
+"id": "r3-p33",
+"text": "In January 2026, South Korea's Framework Act on Artificial Intelligence took effect, making the country one of the first in the world, after the European Union, to adopt a comprehensive law governing the technology. Passed by the National Assembly in December 2024, the act endeavors to reconcile two aims that often pull in opposite directions: fostering a domestic AI industry and protecting citizens from the technology's risks. It requires companies to notify users when they are interacting with generative AI and to label content, such as realistic images or video, that has been produced by it. Developers of so-called high-impact systems, used in areas such as medical care, hiring, and lending, must assess risks and explain how their systems reach decisions. Large foreign companies must also designate a local representative. Business lobbies have warned that nebulous definitions could stifle innovation, while civic organizations argue that the penalties are too modest to deter serious violations. Officials have pledged to refine the rules through detailed regulations. How rigorously the law is enforced will determine whether it becomes a model for other countries or a cautionary tale."
+},
+{
+"id": "r3-p34",
+"text": "Conventional criminal justice asks three questions: what law was broken, who broke it, and what punishment the offender deserves. Restorative justice asks a different set: who was harmed, what do they need, and who is obliged to repair the damage. In practice, this often means bringing victims and offenders together, with the help of a trained facilitator, so that the offender hears firsthand how the crime affected the victim and takes part in deciding how to make amends. New Zealand made such meetings, known as family group conferences, a central part of its youth justice system in 1989, and similar programs have since spread to many countries. The approach is not a lenient option; confronting the person one has harmed is, for many offenders, far more daunting than sitting silently in a courtroom. Research suggests that victims who take part are generally more satisfied than those whose cases go through ordinary courts, and that reoffending often declines modestly. Restorative justice cannot replace the courts for every crime, but its central insight deserves wider attention: justice is served not only by punishing wrongdoers but by repairing what they have broken."
+},
+{
+"id": "r3-p35",
+"text": "A dog's nose contains roughly three hundred million scent receptors, compared with about six million in a human nose, and the part of its brain devoted to analyzing smells is proportionally far larger than ours. Trained dogs can detect explosives, narcotics, and certain diseases at concentrations that laboratory instruments struggle to match. Police forces and border agencies depend on them extensively, and a well-trained detection dog can search a vehicle in minutes that would take human officers hours. Yet dogs are not infallible, and their performance hinges on training, fatigue, and, surprisingly, on their handlers. In a 2011 study, researchers placed no target scents at all in a series of rooms, but told some handlers that scents were present and marked certain spots with red paper. The dogs alerted frequently, and disproportionately at the marked locations, apparently responding to almost imperceptible cues from handlers who believed something was there. The finding does not mean that detection dogs are unreliable, but it suggests that searches should be designed so that handlers do not know in advance where, or whether, a target is hidden."
+},
+{
+"id": "r3-p36",
+"text": "Jang Yeong-sil rose from remarkably lowly origins to become one of the most celebrated inventors of the Joseon dynasty. Born to a family of low status, he was serving as a government servant when his mechanical talent came to the attention of King Sejong, who brought him to the court and eventually granted him an official rank, an extraordinary distinction for a man of his background. His most famous creation was the Jagyeongnu, completed in 1434, an ingenious water clock that announced the time automatically. As water flowed steadily into a vessel, a rising float triggered a series of balls and levers that set small wooden figures in motion, striking a bell, a drum, and a gong at the appropriate hours. The clock spared officials the tedious chore of monitoring the water levels through the night. Jang's career ended ignominiously in 1442, when a royal palanquin built under his supervision broke, and he disappears from the records soon afterward. The clock itself did not survive intact, but a working reconstruction based on surviving descriptions was completed in 2007 and can be seen today in Seoul."
+},
+{
+"id": "r3-s1",
+"text": "My older brother's first apartment was a single room above a noodle shop, and the day he moved in, he called to ask whether I owned a screwdriver. I did not, but our father did, and so the three of us spent a sultry Saturday assembling a bookshelf whose instructions appeared to have been garbled in translation through several languages. Father, who had crafted half the furniture in our childhood home, refused to look at the diagram. For him, assembly was a matter of ____ rather than instructions. He held each piece up to the light, grumbled, and fitted it somewhere unexpected. Twice he was mistaken, and twice he dismantled the whole thing without complaint. By evening the bookshelf stood, slightly crooked, against the only wall without a window. My brother thanked him and then, as Father was leaving, quietly asked if he could keep the toolbox for a while. Father hesitated, then relinquished it with a long litany of instructions about which screwdriver was for what. Years later, when I helped my brother move into a house of his own, the same toolbox came out of the moving truck first. Some gifts, I realized, are less about the object than about what it lets you carry on."
+},
+{
+"id": "r3-s2",
+"text": "In 1862 Charles Darwin received a box of orchids from Madagascar, among them a striking white flower, Angraecum sesquipedale, whose nectar lay at the base of a slender tube nearly thirty centimeters long. Darwin was intrigued and made a bold prediction that rested on ____ rather than observation: since orchids depend on insects to carry their pollen, there must exist a moth with a tongue long enough to reach the nectar, and in pushing its head into the flower it would pick up pollen and carry it to the next bloom. No such moth was known, and some entomologists derided the prediction. Alfred Russel Wallace, however, defended it, noting that a kindred moth from Africa had a proboscis nearly long enough. In 1903, two decades after Darwin's death, a hawk moth from Madagascar with an enormously long tongue was formally described and christened with the subspecies name praedicta, the predicted one. Remarkably, nobody photographed the elusive moth actually feeding on the orchid in the wild until the 1990s. The story is now a textbook example of how a sound theory can anticipate discoveries that no one has yet made."
+}
+],
+"q": [
+[
+1,
+1,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nMy grandfather remained <u>obdurate</u> to the end, spurning every offer to sell the orchard even after the bank's letters began arriving weekly.",
+[
+"stubborn",
+"obsequious",
+"obsolete",
+"affable",
+"contrite"
+],
+[
+1
+],
+"obdurate 는 '고집스러운, 완고한'이라 stubborn 과 가까워요. 은행 편지가 매주 와도 과수원을 팔라는 제안을 끝까지 거절했다는 뒤 내용이 단서예요. obsequious(아첨하는)·obsolete(낡은)는 철자만 비슷한 낱말이고, contrite(뉘우치는)는 끝까지 버티는 모습과 맞지 않아요."
+],
+[
+2,
+1,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nExhausted after the long march, the soldiers grew <u>truculent</u>, snapping at their officers and picking quarrels over the smallest portions of bread.",
+[
+"placid",
+"convivial",
+"hostile",
+"amiable",
+"pensive"
+],
+[
+3
+],
+"truculent 는 '시비조의, 공격적인'이라 hostile 과 가까워요. 장교에게 쏘아붙이고 빵 조각 하나로 싸움을 걸었다는 뒤 내용이 단서예요. placid(차분한)·amiable(상냥한)·convivial(유쾌하게 어울리는)은 반대 방향이고, pensive(생각에 잠긴)는 싸움을 거는 모습과 맞지 않아요."
+],
+[
+3,
+1,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nNothing she wrote in her long letter could <u>assuage</u> the guilt he felt for having missed his brother's final days in the hospital.",
+[
+"aggravate",
+"vindicate",
+"bolster",
+"corroborate",
+"ease"
+],
+[
+5
+],
+"assuage 는 '(죄책감·고통을) 누그러뜨리다'라 ease 와 가까워요. 형의 마지막 날들을 놓친 죄책감을 긴 편지로도 달랠 수 없었다는 문장이에요. aggravate(악화시키다)·bolster(북돋우다)는 반대 방향이고, vindicate(정당함을 입증하다)·corroborate(뒷받침하다)는 죄책감과 어울리지 않아요."
+],
+[
+4,
+1,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nThe treasurer had <u>absconded</u> with the club's savings the night before the audit, leaving behind only an empty safe and a polite note of apology.",
+[
+"fled",
+"acquiesced",
+"abstained",
+"lingered",
+"capitulated"
+],
+[
+1
+],
+"abscond 는 '(돈을 가지고) 몰래 달아나다'라 fled 와 가까워요. 감사 전날 밤 빈 금고와 사과 쪽지만 남겼다는 내용이 단서예요. lingered(머뭇거리며 남았다)는 반대이고, abstained(삼갔다)는 앞부분 철자만 비슷하며, acquiesced(묵인했다)·capitulated(항복했다)는 돈을 들고 사라진 일과 맞지 않아요."
+],
+[
+5,
+1,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nThe old woman asked the clerk to <u>expunge</u> her late husband's name from the list of debtors, since the loan had been repaid decades earlier.",
+[
+"expound",
+"expedite",
+"ratify",
+"erase",
+"embellish"
+],
+[
+4
+],
+"expunge 는 '(기록에서) 지우다, 삭제하다'라 erase 와 같은 뜻이에요. 빚을 수십 년 전에 갚았으니 채무자 명단에서 이름을 빼 달라는 부탁이에요. expound(자세히 설명하다)·expedite(빨리 처리하다)는 앞부분 철자만 비슷하고, ratify(승인하다)·embellish(꾸미다)는 뜻이 달라요."
+],
+[
+6,
+1,
+"dialogue",
+null,
+"대화의 빈칸에 들어가기에 가장 알맞은 표현을 고르시오.\nA: Minji, do you have a minute? It's about Friday.\nB: Sure. Is this about Mr. Kang's farewell dinner?\nA: Yes. Everyone on the team has chipped in, and the restaurant is booked for seven.\nB: Great. Does he still think we're just having an ordinary meeting that evening?\nA: As far as I know. That's why I'm a little worried about Junho.\nB: Junho? Why him?\nA: He's hopeless at keeping secrets. Last year he told our manager about her birthday cake two whole days early.\nB: Oh, I remember that. She feigned surprise, but nobody believed her for a second.\nA: Exactly. And this morning I saw him chatting with Mr. Kang by the coffee machine for almost twenty minutes.\nB: Did you hear what they were talking about?\nA: Only the very end. Mr. Kang was laughing and saying, \"Friday sounds wonderful.\"\nB: Hmm. That could mean anything. Maybe they were talking about the weekend weather.\nA: Maybe. But if Junho has already ____, the whole surprise is ruined.\nB: Let's not panic yet. I'll ask him casually at lunch. If he did say something, we can still change the plan.\nA: How?\nB: We could move the dinner to Thursday. Mr. Kang would never expect it a day early.\nA: That's ingenious. Just make sure nobody tells Junho the new date.",
+[
+"spilled the beans",
+"broken the ice",
+"called it a day",
+"hit the books",
+"pulled everyone's leg"
+],
+[
+1
+],
+"spill the beans 는 '비밀을 털어놓다'라는 숙어예요. 비밀을 못 지키는 준호가 강 부장과 오래 이야기했으니 깜짝 송별회를 이미 말해 버렸으면 다 망친다는 흐름이에요. break the ice(어색함을 깨다)·call it a day(일을 마치다)·hit the books(공부하다)는 비밀과 관계없고, pull one's leg(놀리다)는 깜짝 파티가 망가지는 이유가 되지 않아요."
+],
+[
+7,
+1,
+"pair",
+null,
+"글의 빈칸 (A), (B), (C)에 들어갈 낱말을 가장 알맞게 짝지은 것을 고르시오.\nCarved into a black stone pillar more than two meters tall, the laws of Hammurabi, who ruled Babylon in the eighteenth century BCE, are among the oldest legal codes that survive in (A) ____ form. The pillar was discovered in 1901 by French archaeologists at Susa, in present-day Iran, where it had been carted off as plunder centuries after it was made; it now stands in the Louvre. Its nearly three hundred provisions cover matters ranging from the wages of hired laborers to the punishment of builders whose houses collapsed. The code is often cited as the source of the principle of an eye for an eye, and many readers conclude that Babylonian justice was at least (B) ____, applying the same harsh rule to everyone. Yet the penalties varied markedly with the social rank of the victim: injuring a nobleman brought an equal injury in return, while injuring a commoner or a slave was often settled with a payment of silver. Scholars also debate whether the code was ever applied in actual courts. Few surviving legal records cite it, which suggests that it may have served less as a working statute than as a public (C) ____ of the king's devotion to justice.",
+[
+"written …… hierarchical …… display",
+"written …… impartial …… display",
+"oral …… impartial …… denial",
+"written …… impartial …… denial",
+"oral …… hierarchical …… display"
+],
+[
+2
+],
+"(A) 돌기둥에 새긴 법이니 '글로 적힌(written)' 꼴로 남은 법전이에요. (B) 모두에게 같은 규칙을 적용했다(applying the same harsh rule to everyone)고 여긴다니 '공평한(impartial)'이에요. 바로 뒤 Yet 문장이 신분에 따라 벌이 달랐다고 뒤집어요. (C) 실제 재판에 거의 안 쓰였으니 왕이 정의를 중시한다는 것을 '보여 주는 것(display)'이었다는 결론이에요."
+],
+[
+8,
+1,
+"pair",
+null,
+"글의 빈칸 (A), (B), (C)에 들어갈 낱말을 가장 알맞게 짝지은 것을 고르시오.\nHagfish are eel-shaped scavengers of the deep sea whose basic body plan has changed little over hundreds of millions of years. They lack jaws, and their skeletons are made of cartilage rather than bone, yet they are remarkably hard to (A) ____. When a shark or another predator seizes one, glands along the hagfish's body secrete a small quantity of mucus and protein threads that expand on contact with seawater into a large mass of slime within a fraction of a second. The slime clogs the attacker's gills, and underwater video recordings show predators abruptly letting go and retreating, apparently struggling to breathe. The hagfish itself avoids (B) ____ in its own defense by tying its body into a knot and sliding the knot along its length, scraping the slime away. Engineers have taken a keen interest in the threads, which are extraordinarily slender yet robust for their size. Some researchers hope to synthesize similar fibers in the laboratory as a(n) (C) ____ to the synthetic materials now made from petroleum, though no such product has yet reached ordinary shops or the wider market.",
+[
+"devour …… starving …… alternative",
+"overlook …… suffocating …… alternative",
+"devour …… suffocating …… alternative",
+"devour …… suffocating …… obstacle",
+"overlook …… starving …… alternative"
+],
+[
+3
+],
+"(A) 턱도 뼈도 없어 약해 보이지만(yet) 상어가 물어도 놓아 버리니 '잡아먹기(devour)' 어렵다는 말이에요. (B) 점액이 아가미를 막아 상대가 숨을 못 쉰다고 했으니 자기도 그 점액에 '숨 막히는(suffocating)' 일을 몸을 매듭지어 피해요. (C) 석유로 만든 합성 소재를 '대신할 것(alternative)'으로 실을 만들고 싶어 한다는 뜻이에요."
+],
+[
+9,
+1,
+"grammar",
+null,
+"글의 밑줄 친 부분 가운데 어법상 옳은 것을 고르시오.\nWhen Robert Peel founded the Metropolitan Police in London in 1829, many residents feared that a uniformed force would become an instrument of political espionage. The new officers were deliberately made to look ①<u>as different from soldiers than possible</u>: they wore blue tailcoats and tall hats instead of red uniforms, and they carried only a short wooden truncheon. The idea that the police should depend on public approval rather than on force ②<u>have been</u> associated with Peel ever since, although historians note that the famous list of nine principles bearing his name was probably compiled long after his death. Early recruits were expected to be sober, courteous, and ③<u>remarkably patient</u> with the crowds they controlled, and those who failed were summarily dismissed. A large share of the first recruits were removed from the force, many of them for ④<u>be drunk</u> on duty. Even so, the experiment proved ⑤<u>so successfully that</u> other British cities soon created similar forces of their own.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+3
+],
+"부사 remarkably 가 형용사 patient 를 꾸며 '놀랄 만큼 참을성 있는'이 되니 맞아요. 나머지는 틀렸어요. as ~ as possible 이라 than 이 아니라 as 가 와야 하고, 주어 The idea 가 단수라 has been 이어야 해요. 전치사 for 뒤에는 동명사 being drunk 가 오고, proved 뒤 보어는 형용사라 so successful that 이 맞아요."
+],
+[
+10,
+1,
+"grammar",
+null,
+"글의 밑줄 친 문장 가운데 어법상 옳지 않은 것을 고르시오.\n①<u>The polygraph, often called a lie detector, does not actually detect lies.</u> It records several bodily signals at once, such as breathing, pulse, blood pressure, and the sweating of the fingertips. ②<u>The assumption behind it is that the lies a person tells cause stress, which in turn produces measurable changes in the body.</u> The trouble is that stress has many sources. ③<u>An honest suspect who is terrified of being disbelieved may react more strongly than a calm and practiced liar.</u> Critics also point out that some people can learn to manipulate their own readings. ④<u>A major report by the United States National Academy of Sciences in 2003 concluded that the scientific basis for the test, given the evidence then available, was weak.</u> For these reasons, courts in many countries refuse to admit polygraph results as evidence, although investigators still use the test as an aid in questioning. ⑤<u>Some experts argue that its real power lies in the belief of the suspect, who may confess because he considers the machine infallibly.</u>",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+5
+],
+"consider 는 'consider + 목적어 + 보어' 꼴이라 보어 자리에 부사 infallibly 가 아니라 형용사 infallible 이 와야 해요(기계를 '틀림없다'고 여긴다). the lies a person tells 는 목적격 관계사가 빠진 꼴이고(the lies that a person tells), given the evidence 의 given 은 '~을 고려하면'이라는 전치사처럼 쓰는 분사라 틀려 보여도 맞아요. 비교급 more strongly than 문장, 거짓말을 직접 잡지 못한다는 문장도 맞아요."
+],
+[
+11,
+1,
+"grammar",
+null,
+"글의 밑줄 친 부분 가운데 어법상 옳지 않은 것을 고르시오.\nThe prisoner's dilemma, ①<u>first described</u> by mathematicians working at the RAND Corporation in 1950, is perhaps the best-known puzzle in game theory. Two suspects are arrested and held in separate rooms, ②<u>unable to communicate</u> with each other. Each is offered the same deal: betray your partner and go free, while he serves a long sentence. If both stay silent, both receive a short sentence on a minor charge; if both betray, both serve a fairly long term. Whatever the other does, each prisoner is better off ③<u>betraying</u>, so two rational players end up worse off than if they had trusted each other. The puzzle has been used to elucidate arms races, price wars, and the overfishing of shared seas. In repeated rounds, however, cooperation becomes possible. In computer tournaments ④<u>organizing</u> by the political scientist Robert Axelrod around 1980, the winning program was a simple strategy called tit for tat, ⑤<u>which began</u> by cooperating and then copied whatever the opponent had done in the previous round.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+4
+],
+"대회는 액설로드가 '연' 것이라 수동의 과거분사 organized 가 명사 tournaments 를 꾸며야 해요(by 가 단서). first described 는 '처음 설명된'이라는 수동 분사, unable to communicate 는 형용사구 분사구문, better off 뒤 betraying 은 '배신하는 편이'라는 동명사, which began 은 앞 명사를 받는 관계절이라 모두 맞아요."
+],
+[
+12,
+1,
+"grammar",
+null,
+"글의 밑줄 친 부분 가운데 어법상 옳지 않은 것을 고르시오.\nDetective fiction is a surprisingly young genre. Most historians of the form trace it to 1841, when Edgar Allan Poe published The Murders in the Rue Morgue, a story ①<u>in which</u> an eccentric amateur named C. Auguste Dupin solves a crime that has baffled the Paris police. Dupin relies not on luck or confession but on reasoning, ②<u>notice</u> small details that others overlook and drawing audacious conclusions from them. The story is told by an admiring friend who records the detective's methods, a device that Arthur Conan Doyle would later appropriate for Dr. Watson. Poe wrote only two more stories about Dupin, yet he established many conventions that still ③<u>shape</u> the genre: the brilliant investigator, the baffled official, the locked room, and the final explanation ④<u>delivered</u> to astonished listeners. Poe himself called these works tales of ratiocination, and he seems to have regarded them as ⑤<u>less important</u> than his poetry, although they have arguably had a far wider influence.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+2
+],
+"relies on reasoning 뒤에 '작은 단서를 알아차리며'를 덧붙이는 분사구문이라 동사원형 notice 가 아니라 noticing 이어야 해요(뒤의 drawing 과도 짝이에요). in which 는 완전한 절 앞의 '전치사 + 관계사', shape 는 복수 선행사 conventions 에 맞춘 동사, delivered 는 '(which is) delivered'에서 줄어든 분사, less important than 은 비교 꼴이라 맞아요."
+],
+[
+13,
+1,
+"reading",
+"r1-p13",
+"글의 흐름으로 보아, 다음 문장이 들어가기에 가장 알맞은 곳을 고르시오.\nThe reason, he explained, is that the human mind is impressed far more by what is likely than by what is merely possible.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+4
+],
+"주어진 문장은 '그 까닭은'으로 시작해 앞에 나온 주장의 이유를 대요. 가벼운 벌이라도 확실하면 피할 수 있다고 믿는 무거운 벌보다 낫다는 베카리아의 추론 바로 뒤에 와야 '확실한 것이 그저 가능한 것보다 마음을 더 움직인다'는 설명이 이어져요. 뒤의 현대 연구 문장은 he explained 로 받을 수 없어요."
+],
+[
+14,
+1,
+"reading",
+"r1-p14",
+"글의 흐름으로 보아, 다음 문장이 들어가기에 가장 알맞은 곳을 고르시오.\nIn other words, the more violent the verb sounded, the faster the cars seemed to have been moving.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+3
+],
+"In other words 는 앞 내용을 다시 정리할 때 써요. smashed 를 들은 쪽이 가장 빠르게, contacted 를 들은 쪽이 가장 느리게 답했다는 결과 바로 뒤에 와야 '동사가 거칠수록 차가 빨랐다고 기억한다'는 정리가 돼요. 결과가 나오기 전 자리에는 다시 말할 내용이 없어요."
+],
+[
+15,
+1,
+"reading",
+"r1-p15",
+"글의 흐름으로 보아, 다음 문장이 들어가기에 가장 알맞은 곳을 고르시오.\nCourts, however, have often been unpersuaded by this defense, particularly when the holder received money in exchange for the account.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+5
+],
+"주어진 문장의 this defense(이 변명)는 앞에 변명이 먼저 나와야 받을 수 있어요. 통장 명의자들이 어디에 쓰일지 몰랐다고 주장한다는 문장 바로 뒤가 알맞아요. 이어지는 '통장을 빌려주거나 파는 것 자체가 범죄'라는 문장과도 자연스럽게 이어져요."
+],
+[
+16,
+1,
+"reading",
+"r1-p16",
+"글의 흐름으로 보아, 다음 문장이 들어가기에 가장 알맞은 곳을 고르시오.\nThe idea was to let the fish exhaust their electricity on these animals first.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+3
+],
+"주어진 문장의 these animals 는 앞에 나온 말과 노새를 받고, 말을 물에 넣은 '목적'을 밝혀요. 그러니 말과 노새를 웅덩이로 몰아넣었다는 문장 바로 뒤가 알맞아요. 그 앞 자리에서는 아직 말이 나오지 않아 these animals 가 가리킬 것이 없고(them 은 뱀장어예요), 말들이 쓰러졌다는 문장 뒤에서는 계획이 이미 실행된 뒤라 어색해요."
+],
+[
+17,
+1,
+"reading",
+"r1-p17",
+"주어진 글 다음에 이어질 글의 순서로 가장 알맞은 것을 고르시오.",
+[
+"(A) - (C) - (B)",
+"(B) - (A) - (C)",
+"(B) - (C) - (A)",
+"(C) - (A) - (B)",
+"(C) - (B) - (A)"
+],
+[
+3
+],
+"지문의 고유성과 부세티치의 분류법을 소개하는 (B)가 먼저예요. (C)는 Vucetich's methods 를 익힌 수사관이 엄지 자국을 찾는 장면이라 (B) 뒤에 와요. (A)의 the print 는 (C)의 엄지 자국을 가리키니 마지막이에요."
+],
+[
+18,
+1,
+"reading",
+"r1-p18",
+"주어진 글 다음에 이어질 글의 순서로 가장 알맞은 것을 고르시오.",
+[
+"(A) - (C) - (B)",
+"(B) - (A) - (C)",
+"(B) - (C) - (A)",
+"(C) - (A) - (B)",
+"(C) - (B) - (A)"
+],
+[
+2
+],
+"(B)가 '이 믿음(this belief)'을 실험한 내용과 큰 표지판 요청을 처음 소개해요. (A)의 the residents 와 however 는 (B)의 주민과 낮은 승낙률을 받아 '그런데 일부는 두 주 전에 작은 부탁을 받았다'고 이어요. (C)의 these residents 는 (A)의 그 주민들이라 마지막이에요."
+],
+[
+19,
+1,
+"reading",
+"r1-p19",
+"주어진 글 다음에 이어질 글의 순서로 가장 알맞은 것을 고르시오.",
+[
+"(A) - (C) - (B)",
+"(B) - (A) - (C)",
+"(B) - (C) - (A)",
+"(C) - (A) - (B)",
+"(C) - (B) - (A)"
+],
+[
+4
+],
+"주어진 글 다음에는 이식 뒤 커서를 움직이고 체스를 둔 성과 (C)가 와요. (A)의 however 는 그 성공과 맞서는 문제(실이 빠져나감)를 꺼내요. (B)의 Such setbacks 는 (A)의 문제를 받아 이 분야의 과제로 정리하니 마지막이에요."
+],
+[
+20,
+1,
+"reading",
+"r1-p20",
+"주어진 글 다음에 이어질 글의 순서로 가장 알맞은 것을 고르시오.",
+[
+"(A) - (C) - (B)",
+"(B) - (A) - (C)",
+"(B) - (C) - (A)",
+"(C) - (A) - (B)",
+"(C) - (B) - (A)"
+],
+[
+1
+],
+"교실에 들어가 초시계를 꺼낸 장면 (A)가 먼저예요. (C)의 Thirty seconds later 와 점심시간이 얼마 남았냐는 질문은 (A)의 '점심시간을 썼다'는 말에 이어져요. 그날 오후 교장과 나눈 대화 (B)가 마지막이에요."
+],
+[
+21,
+1,
+"reading",
+"r1-p21",
+"글의 흐름과 관계없는 문장을 고르시오.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+3
+],
+"글은 『안티고네』가 그리는 '양심과 국가의 법' 사이 충돌을 다뤄요. 디오니소스 극장이 관객 수천 명을 앉힐 수 있었다는 문장은 공연 장소 이야기라 흐름과 관계없어요."
+],
+[
+22,
+1,
+"reading",
+"r1-p22",
+"글의 흐름과 관계없는 문장을 고르시오.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+4
+],
+"글은 도쿄의 고객 갑질(카스하라) 방지 조례와 노동자 보호를 다뤄요. 일본 편의점이 주먹밥부터 공연표까지 판다는 문장은 고객 갑질과 관계없어요."
+],
+[
+23,
+1,
+"reading",
+"r1-p23",
+"글의 흐름과 관계없는 문장을 고르시오.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+4
+],
+"글은 북극땅다람쥐가 겨울잠 동안 체온이 영하로 떨어져도 얼지 않는 과냉각과 주기적으로 깨어나는 현상을 다뤄요. 북극의 짧은 여름에 툰드라가 들꽃으로 덮인다는 문장은 같은 서식지 이야기지만 겨울잠의 원리와 관계없고, 뒤의 These periodic arousals 가 바로 앞 '몇 주마다 깨어난다'를 받아야 하는 흐름도 끊어요."
+],
+[
+24,
+1,
+"reading",
+"r1-p24",
+"글의 흐름과 관계없는 문장을 고르시오.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+5
+],
+"글은 밀그램의 복종 실험과 그 해석, 연구 윤리에 끼친 영향을 다뤄요. 예일 대학교가 1701년에 세워진 오래된 대학이라는 문장은 실험 내용과 관계없어요."
+],
+[
+25,
+1,
+"reading",
+"r1-p25",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"Two Minutes That Outlasted Two Hours",
+"Everett's Triumph Over a Modest President",
+"The Military Strategy of the Battle of Gettysburg",
+"Newspaper Reactions to a Presidential Speech",
+"The Dedication of a Pennsylvania Cemetery"
+],
+[
+1
+],
+"두 시간 연설은 잊히고 2분짜리 링컨의 연설이 오래 남았다는 대비가 글의 중심이라 'Two Minutes That Outlasted Two Hours'가 맞아요. 'Everett's Triumph Over a Modest President'는 에버렛 스스로 링컨이 핵심에 더 가까웠다고 인정한 내용과 반대예요. 신문 반응·묘지 봉헌은 글의 한 부분일 뿐이고, 전투 전략은 글에 없어요."
+],
+[
+26,
+1,
+"reading",
+"r1-p26",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"a private squabble best settled between the two people",
+"a pattern of control that often escalates into violence",
+"a trivial nuisance that rarely warrants police attention",
+"a mental disorder that calls for treatment, not punishment",
+"a provision that prosecutors may drop at the victim's request"
+],
+[
+2
+],
+"스토킹이 폭력으로 끝난 사건들 뒤 법을 만들고, 피해자 뜻에 따른 처벌 불원 조항을 없애고 전자 감시까지 넣었다고 했어요. 이제 스토킹을 '폭력으로 번지기 쉬운 통제의 반복'으로 본다는 말이 맞아요. 'a private squabble'·'a trivial nuisance'는 예전 시각이라 글과 반대이고, 'a mental disorder'는 글에 근거가 없으며, 'a provision that prosecutors may drop'은 지문 낱말을 섞었지만 이미 없앤 조항이에요."
+],
+[
+27,
+1,
+"reading",
+"r1-p27",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"it signals danger and nothing else",
+"it is exactly what witnesses expect to see",
+"it is usually concealed until the very last possible moment",
+"it is incongruous in the setting where it appears",
+"it narrows the mind to the robber's face"
+],
+[
+4
+],
+"해롭지 않아도 그 자리에 '어울리지 않는' 물건이 비슷하게 눈을 끈다고 했어요. 그러니 무기가 눈길을 끄는 까닭은 위험해서만이 아니라 '그 장면에서 뜻밖이기' 때문이에요. 'it signals danger and nothing else'는 not only because it is dangerous 와 부딪치고, 'it is exactly what witnesses expect to see'는 정반대예요. 'concealed until the very last possible moment'는 글에 근거가 없고, 'narrows the mind to the robber's face'는 지문 낱말을 섞었지만 오히려 얼굴을 못 본다는 내용과 어긋나요."
+],
+[
+28,
+1,
+"reading",
+"r1-p28",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"makes it almost impossible to forget it later",
+"requires more effort than most people assume",
+"is the only reliable way to remember it",
+"filters out whatever is irrelevant to the task at hand",
+"is no guarantee that we will actually see it"
+],
+[
+5
+],
+"고릴라가 화면 한가운데를 지나가도 절반이 못 봤다고 했어요. 눈이 향해 있어도 '실제로 본다는 보장은 없다'는 말이 결론이에요. 'makes it almost impossible to forget'·'the only reliable way to remember'는 정반대이고, 'requires more effort'는 글에 근거가 없어요. 'filters out whatever is irrelevant'는 지문 낱말을 섞었지만 '보는 것'이 아니라 뇌의 주의를 설명한 말이에요."
+],
+[
+29,
+1,
+"reading",
+"r1-p29",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"abandon physics entirely and return to pure mathematics",
+"build his theory only on what could be observed",
+"prove that electrons travel in perfectly circular orbits",
+"measure the frequencies of light with new instruments",
+"rely on the intuitions of earlier classical physicists"
+],
+[
+2
+],
+"바로 뒤 문장이 빈칸을 풀어 줘요. 볼 수 없는 궤도를 그리는 대신 '실제로 잴 수 있는 양만으로' 원자를 설명하겠다고 했으니 관찰할 수 있는 것만으로 이론을 세우기로 한 거예요. 'prove that electrons travel in perfectly circular orbits'·'rely on the intuitions of earlier classical physicists'는 정반대이고, 'abandon physics'는 근거가 없어요. 'measure the frequencies of light'는 지문 낱말을 섞었지만 새 장비로 잰 이야기가 아니에요."
+],
+[
+30,
+1,
+"reading",
+"r1-p30",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"a good story must explain every character's feelings directly",
+"omissions handled with real knowledge can strengthen a story",
+"a writer should state outright everything the reader needs",
+"short stories can never match the emotional power of novels",
+"dialogue about scenery reveals a writer's true knowledge"
+],
+[
+2
+],
+"빙산처럼 대부분을 물 아래 두고, 잘 아는 작가가 빼놓은 것은 독자가 오히려 강하게 느낀다고 했어요. 그래서 '제대로 알고 빼면 이야기가 더 강해진다'가 맞아요. 'explain every character's feelings directly'·'state outright everything'은 정반대이고, 'short stories can never match ... novels'는 근거가 없어요. 'dialogue about scenery'는 지문 낱말(대화·풍경)을 섞었지만 초점이 어긋나요."
+],
+[
+31,
+1,
+"reading",
+"r1-p31",
+"(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 알맞은 것을 고르시오.",
+[
+"effortless …… settle …… relaxed",
+"effortless …… unsettle …… relaxed",
+"hesitant …… settle …… stiff",
+"effortless …… settle …… stiff",
+"hesitant …… unsettle …… relaxed"
+],
+[
+1
+],
+"(A) 턱만 살짝 고치고 한 번에 찍었으니 '힘들이지 않는(effortless)' 솜씨예요. (B) 가만있지 못하는 아이가 '진정되기(settle)'를 기다렸다는 말이에요. unsettle 은 '불안하게 만들다'라는 타동사라 목적어 없이 쓸 수 없고 뜻도 반대예요. (C) 이모는 사람을 편하게 만드는 게 자기 일이라고 했으니 옛 사진 속 사람들은 '편안해(relaxed)' 보였어요."
+],
+[
+32,
+1,
+"reading",
+"r1-p32",
+"(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 알맞은 것을 고르시오.",
+[
+"forgot …… attention …… persist",
+"remembered …… indifference …… desist",
+"remembered …… attention …… desist",
+"forgot …… indifference …… persist",
+"remembered …… attention …… persist"
+],
+[
+5
+],
+"(A) Research suggests otherwise 로 '헛되다'는 생각을 뒤집으니 먼저 추측한 쪽이 더 잘 '기억했다(remembered)'예요. (B) 정답이 궁금해지니 더 '주의(attention)'를 기울여 읽어요. (C) 곧 정답을 받기만 하면 틀린 추측은 거의 '남지(persist)' 않는다는 말이라 오답이 해롭지 않다는 흐름이에요. desist(그만두다)는 어근이 같고 앞부분만 다른 철자 혼동어로, 추측이 '그만둔다'는 말은 뜻이 통하지 않아요."
+],
+[
+33,
+1,
+"reading",
+"r1-p33",
+"글의 주제로 가장 알맞은 것을 고르시오.",
+[
+"a new treaty to protect ocean areas beyond national control",
+"the profits of deep-sea mining companies",
+"why most coastal countries refuse to sign international ocean agreements",
+"the history of naval warfare on the high seas",
+"techniques for discovering medicines in coral reefs"
+],
+[
+1
+],
+"어느 나라 관할도 아닌 공해를 보호하려는 공해 조약이 2026년 발효했고, 해양 보호 구역·환경 영향 평가·유전 자원 이익 나누기를 정했다는 글이라 '국가 관할 밖 바다를 지키는 새 조약'이 주제예요. 60개국 넘게 비준했으니 대부분 서명을 거부한다는 보기는 틀려요."
+],
+[
+34,
+1,
+"reading",
+"r1-p34",
+"글의 요지로 가장 알맞은 것을 고르시오.",
+[
+"Anger is useful when it is directed at genuine injustice.",
+"People should express their anger at once to avoid lasting and corrosive resentment.",
+"Philosophers should not give practical advice about the emotions.",
+"Postponing action is the best defense against the misjudgments of anger.",
+"Reviewing one's day matters more than learning to control anger."
+],
+[
+4
+],
+"세네카의 가장 쓸모 있는 처방은 '미루기'였어요. 첫 분노는 막기 어렵지만 바로 행동할 필요는 없고, 기다리면 판단이 따라와 잘못 본 것을 알게 된다고 했어요. 분노가 쓸모 있다는 견해는 세네카가 물리친 것이고, 저녁 돌아보기는 덧붙인 방법일 뿐이에요."
+],
+[
+35,
+1,
+"reading",
+"r1-p35",
+"글의 내용과 일치하는 것을 고르시오.",
+[
+"Kim Jeong-ho's exact year of birth is recorded in official documents.",
+"Each copy of the map was drawn entirely by hand.",
+"Single lines on the map show rivers that boats could travel on.",
+"All of the original woodblocks were destroyed by the authorities.",
+"Travelers could carry the map in parts rather than all at once."
+],
+[
+5
+],
+"스물두 부분을 책처럼 접어 여행에 필요한 부분만 들고 다닐 수 있었다고 했으니 일치해요. 태어난 해도 확실하지 않고, 목판으로 찍었으며, 배가 다니는 강은 두 줄(double lines)이고, 목판 일부가 지금도 남아 있어요."
+],
+[
+36,
+1,
+"reading",
+"r1-p36",
+"글의 내용과 일치하지 않는 것을 고르시오.",
+[
+"Hospitals relied on their own generators during the outage.",
+"Solar power supplied a large part of Spain's electricity when the blackout began.",
+"Some commentators argued that renewable energy had weakened the grid.",
+"Officials found no evidence that a cyberattack had caused the blackout.",
+"Electricity was not restored in most areas until several days later."
+],
+[
+5
+],
+"전기는 몇 시간 안에 돌아오기 시작해 다음 날 아침에는 거의 모든 곳에서 복구됐다고 했어요. 며칠 뒤에야 복구됐다는 문장이 글과 맞지 않아요. 병원 발전기, 태양광 비중, 재생에너지 탓을 한 논평, 사이버 공격 배제는 모두 글과 같아요."
+],
+[
+37,
+1,
+"reading",
+"r1-s1",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"devotion",
+"indifference",
+"haste",
+"commerce",
+"carelessness"
+],
+[
+1
+],
+"빈칸 뒤 이야기가 단서예요. 돈 없는 아이의 할아버지 자전거를 여섯 주 동안 함께 고쳐 주고 값도 받지 않았으니, 그에게 수리는 장사라기보다 '정성(devotion)'이었어요. indifference(무관심)·haste(서두름)는 여섯 주 동안 매달린 이야기와 정반대이고, commerce(장사)는 less a trade than 이 부정한 쪽이에요. carelessness 는 지문 낱말이지만 아이들이 물건을 망가뜨린 까닭을 말한 거예요."
+],
+[
+38,
+1,
+"reading",
+"r1-s1",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"Choosing a New Bicycle on a Budget",
+"A Bill Paid in Afternoons",
+"A Repairman Feared by Children",
+"A Boy Who Refused to Learn",
+"The Rising Cost of Bicycle Repairs"
+],
+[
+2
+],
+"수리비 대신 여섯 주의 오후를 함께 보낸 아이와 수리공의 이야기이고, '청구서는 오후들로 이미 치렀다'는 말이 핵심이라 'A Bill Paid in Afternoons'가 맞아요. 'A Repairman Feared by Children'은 도입부 한 부분이고, 'A Boy Who Refused to Learn'·'The Rising Cost of Bicycle Repairs'는 부품 이름까지 익히고 돈을 받지 않은 이야기와 반대예요. 'Choosing a New Bicycle on a Budget'은 글에 없어요."
+],
+[
+39,
+1,
+"reading",
+"r1-s2",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"arbitrary",
+"measured",
+"limitless",
+"mutual",
+"loving"
+],
+[
+2
+],
+"빈칸 뒤에서 군주가 두려움을 가늠하고 백성이 그 한계를 내다볼 수 있어야 하며, 아무 때나 겁주는 군주는 음모를 부른다고 했어요. 그러니 두려움은 '절제된(measured)' 것일 때만 쓸모 있어요. arbitrary(제멋대로인)·limitless(끝없는)는 바로 뒤 문장과 정반대이고, mutual(서로의)은 근거가 없어요. loving 은 지문의 love 를 섞었지만 마키아벨리가 두려움과 맞세운 쪽이에요."
+],
+[
+40,
+1,
+"reading",
+"r1-s2",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"Machiavelli's Dismissal From Florence",
+"The Prince as a Guide to Winning the People's Love",
+"Feared but Not Hated: Reading Machiavelli Carefully",
+"Property Rights in Renaissance Italy",
+"Cruelty as the Foundation of All Lasting Power"
+],
+[
+3
+],
+"사랑보다 두려움이 안전하다는 말에는 '미움은 피하라'는 조건이 붙어 있고, 잘 읽으면 잔인함 예찬이 아니라는 글이라 'Feared but Not Hated'가 맞아요. 'The Prince as a Guide to Winning the People's Love'·'Cruelty as the Foundation of All Lasting Power'는 글쓴이의 결론과 반대이고, 'Machiavelli's Dismissal From Florence'는 첫 문장의 배경일 뿐이며, 'Property Rights in Renaissance Italy'는 글의 주제가 아니에요."
+],
+[
+1,
+2,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nBy the third week of the delayed voyage, even the most forbearing passengers had grown <u>querulous</u>, grumbling incessantly about the food, the cramped cabins, and the endless gray sea.",
+[
+"quixotic",
+"sanguine",
+"complaining",
+"stoic",
+"gregarious"
+],
+[
+3
+],
+"querulous 는 '불평이 많은, 투덜대는'이라 complaining 과 가까워요. 음식·선실·바다를 두고 쉬지 않고 투덜댔다(grumbling incessantly)는 뒤 내용이 단서예요. quixotic(공상적인)은 앞부분 철자만 비슷하고, sanguine(낙관적인)·stoic(묵묵히 참는)은 반대 방향이며, gregarious(사교적인)는 불평과 관계없는 낱말이에요."
+],
+[
+2,
+2,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nAlthough she had won nearly every prize the academy offered, she remained <u>diffident</u> about her paintings and seldom showed them even to her closest friends.",
+[
+"defiant",
+"shy",
+"pompous",
+"ostentatious",
+"meticulous"
+],
+[
+2
+],
+"diffident 는 '자신 없어 하는, 수줍은'이라 shy 와 가까워요. 상을 거의 다 받고도 그림을 친한 친구에게조차 잘 보여 주지 않았다는 내용이 단서예요. defiant(반항적인)는 철자만 비슷하고, pompous(거만한)·ostentatious(과시하는)는 반대 방향이며, meticulous(꼼꼼한)는 수줍음과 관계없어요."
+],
+[
+3,
+2,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nThe engineer's patient explanation did little to <u>allay</u> the villagers' fears that the new dam upstream would one day burst and inundate their fields.",
+[
+"calm",
+"ally",
+"foment",
+"aggravate",
+"ratify"
+],
+[
+1
+],
+"allay 는 '(두려움·의심을) 가라앉히다'라 calm 과 가까워요. 차분한 설명으로도 댐이 터질까 하는 두려움을 거의 달래지 못했다는 문장이에요. ally(동맹을 맺다)는 철자만 비슷하고, foment(부추기다)·aggravate(악화시키다)는 반대 방향이며, ratify(비준하다)는 두려움과 어울리지 않아요."
+],
+[
+4,
+2,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nThe night watchman was later indicted for having <u>abetted</u> the burglary by leaving a side gate unlocked and switching off the warehouse alarm before midnight.",
+[
+"abated",
+"assisted",
+"thwarted",
+"deplored",
+"replicated"
+],
+[
+2
+],
+"abet 는 '(범행을) 돕다, 방조하다'라 assisted 와 가까워요. 옆문을 열어 두고 경보를 꺼 두었다는 뒤 내용이 단서예요. abated(누그러졌다)는 철자만 비슷하고, thwarted(막았다)는 반대이고, deplored(개탄했다)·replicated(되풀이했다)는 범행을 도운 일과 맞지 않아요."
+],
+[
+5,
+2,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nFaced with a deluge of indignant letters from parents, the school board voted to <u>rescind</u> its decision to close the village library on weekends.",
+[
+"cancel",
+"resuscitate",
+"uphold",
+"commend",
+"bolster"
+],
+[
+1
+],
+"rescind 는 '(결정·법을) 철회하다, 취소하다'라 cancel 과 가까워요. 분노한 학부모 편지가 쏟아지자 주말 휴관 결정을 거두었다는 흐름이에요. resuscitate(되살리다)는 앞부분 철자만 비슷하고, uphold(유지하다)는 반대이고, commend(칭찬하다)·bolster(북돋우다)는 결정을 거두는 일과 관계없어요."
+],
+[
+6,
+2,
+"dialogue",
+null,
+"대화의 빈칸에 들어가기에 가장 알맞은 표현을 고르시오.\nA: Hey, Seojin. You look worried. Is everything all right?\nB: Not really. I think I made a grave mistake in our group report.\nA: The one we submitted to Professor Lim on Monday?\nB: Yes. I was in charge of the survey data, and last night I noticed that I'd copied the wrong column into one of the tables.\nA: Oh no. Does it change our conclusion?\nB: A little. The share of students who use the library at night is much lower than we wrote.\nA: Hmm. Has anyone else noticed?\nB: Not yet. Part of me wants to keep quiet and hope nobody checks.\nA: I understand, but the professor is notorious for checking everything. She found a typo in a footnote last semester.\nB: I know. That's exactly what scares me. If she finds it herself, she'll think we were careless or even dishonest.\nA: Then I think you should just ____ and email her today. Explain what happened and attach the corrected table.\nB: You're right. It'll be embarrassing, but waiting will only make it worse.\nA: And tell the others first, so they aren't caught off guard.\nB: Good idea. I'll message the group before I write to her.\nA: Do you want me to read your email before you send it?\nB: Would you? That would really help.",
+[
+"beat around the bush",
+"pass the buck",
+"sit on the fence",
+"jump the gun",
+"bite the bullet"
+],
+[
+5
+],
+"bite the bullet 은 '괴롭지만 피할 수 없는 일을 꾹 참고 하다'라는 숙어예요. 창피해도 오늘 교수에게 실수를 털어놓으라는 흐름에 맞아요. pass the buck(책임을 남에게 떠넘기다)은 스스로 털어놓으라는 흐름과 반대이고, beat around the bush(돌려 말하다)·sit on the fence(결정을 미루다)·jump the gun(성급하게 굴다)은 오늘 바로 설명하라는 말과 맞지 않아요."
+],
+[
+7,
+2,
+"pair",
+null,
+"글의 빈칸 (A), (B), (C)에 들어갈 낱말을 가장 알맞게 짝지은 것을 고르시오.\nThe verb boycott, now used in dozens of languages, began as the surname of a single reviled man. In 1880 Charles Boycott was working in County Mayo, Ireland, as the agent of an absentee landlord, collecting rents from tenant farmers. That year, after a dismal harvest, the tenants petitioned for a substantial reduction in their rents. When the request was largely rebuffed and Boycott attempted to evict several families, local leaders exhorted the community to (A) ____ him rather than resort to violence. His laborers walked off the job, shopkeepers refused to serve him, and even the postman declined to deliver his letters. The campaign proved remarkably (B) ____: Boycott's crops were salvaged only when dozens of volunteers from other counties were brought in under the protection of soldiers, at a cost that vastly exceeded the value of the harvest. Within months he had left Ireland, and his name had entered the newspapers as a verb describing precisely what had befallen him. The episode demonstrated that a concerted refusal to cooperate could exert (C) ____ pressure without a single shot being fired.",
+[
+"isolate …… effective …… enormous",
+"isolate …… futile …… enormous",
+"support …… effective …… negligible",
+"isolate …… effective …… negligible",
+"support …… futile …… enormous"
+],
+[
+1
+],
+"(A) 폭력 대신 일꾼·상점·집배원까지 그를 상대하지 않았으니 '고립시키다(isolate)'예요. (B) 군인이 지키는 가운데 다른 지역 사람들을 데려와야 겨우 거둘 수 있었으니 운동은 '효과가 컸다(effective)'예요. (C) 총 한 발 없이도 '엄청난(enormous)' 압력을 줄 수 있다는 결론이에요."
+],
+[
+8,
+2,
+"pair",
+null,
+"글의 빈칸 (A), (B), (C)에 들어갈 낱말을 가장 알맞게 짝지은 것을 고르시오.\nIn the early 1920s, many astronomers believed that the entire universe consisted of a single galaxy, our own Milky Way, marooned in empty space. The faint spiral smudges visible through telescopes were widely presumed to be clouds of gas lying (A) ____ it. In 1924 the American astronomer Edwin Hubble settled the question. Using the colossal new telescope at Mount Wilson in California, he identified in the Andromeda nebula a type of star whose brightness fluctuates in a regular cycle. Because the intrinsic brightness of such stars can be calculated from the length of the cycle, Hubble could deduce how far away it was, and the distance proved far too vast for Andromeda to belong to the Milky Way. It was a galaxy in its own right. Five years later he made a second, even more startling discovery: the more distant a galaxy is, the faster it appears to be receding from us. The universe, it turned out, is not (B) ____ but expanding. Hubble himself, a meticulous observer, remained (C) ____ about the meaning of his findings, preferring to report careful measurements rather than speculate about the origins of the cosmos.",
+[
+"within …… dynamic …… cautious",
+"beyond …… static …… dogmatic",
+"within …… static …… dogmatic",
+"beyond …… dynamic …… cautious",
+"within …… static …… cautious"
+],
+[
+5
+],
+"(A) 은하가 하나뿐이라 여겼으니 나선 얼룩도 우리 은하 '안(within)'의 가스 구름이라고 봤어요. (B) not A but expanding 이니 '멈춰 있는(static)' 우주가 아니라는 대비예요. (C) 기원을 추측하기보다 측정값만 보고했으니 해석에 '조심스러웠다(cautious)'예요."
+],
+[
+9,
+2,
+"grammar",
+null,
+"글의 밑줄 친 부분 가운데 어법상 옳은 것을 고르시오.\nOn the evening of December 3, 1926, the novelist Agatha Christie left her home in Berkshire and vanished. Her car was found the next morning abandoned on a hillside near Guildford, its headlights still on, and the disappearance ①<u>trigger</u> one of the most extensive manhunts in British history. More than a thousand police officers, ②<u>assisted</u> by thousands of volunteers, scoured the countryside, and newspapers offered rewards for information. Arthur Conan Doyle, the creator of Sherlock Holmes, even gave one of her gloves to a spiritualist medium in the hope ③<u>of locate</u> her. After eleven days she was discovered at a hotel in the spa town of Harrogate, where she ④<u>has registered</u> under the surname of the woman with whom her husband was conducting an affair. Christie never explained what had happened; her autobiography passes over the episode in conspicuous silence. Doctors at the time attributed it to amnesia, but biographers still debate ⑤<u>whether did she</u> suffer a genuine breakdown or orchestrate the episode deliberately, perhaps to humiliate her unfaithful husband.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+2
+],
+"officers 를 꾸미는 assisted 는 '도움을 받은'이라는 수동의 과거분사라 맞아요. 나머지는 틀렸어요. 주어 the disappearance 의 동사는 과거라 triggered 여야 하고, 전치사 of 뒤에는 동명사 locating 이 와야 해요. 발견되기 전에 이미 등록한 것이니 had registered(과거완료)여야 하고, whether 절은 평서문 어순이라 whether she 가 맞아요."
+],
+[
+10,
+2,
+"grammar",
+null,
+"글의 밑줄 친 문장 가운데 어법상 옳지 않은 것을 고르시오.\n①<u>Sidney Lumet's film Twelve Angry Men, released in 1957, takes place almost entirely in a single cramped room.</u> On a sweltering afternoon, twelve jurors must decide whether a teenager accused of killing his father is guilty. ②<u>Their verdict must be unanimous, and a guilty verdict will mean a death sentence.</u> ③<u>Eleven of them, eager to get home and convinced that the case is obvious, vote guilty at once.</u> Only one juror, played by Henry Fonda, demurs. ④<u>He does not claim to know that the boy is innocent; he simply insists that the evidence, considering what is at stake, deserves closer scrutiny.</u> One by one, the seemingly airtight pieces of testimony begin inexorably to unravel under examination. ⑤<u>By the end of the film, the unraveling testimony leaves every juror who had voted guilty thoroughly convincing of the boy's innocence.</u> The film is often screened in law schools, not because it portrays real deliberations accurately, but because it dramatizes the principle that doubt, honestly examined, is a safeguard rather than an obstacle.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+5
+],
+"leave + 목적어 + 보어 꼴에서 배심원은 '확신하게 된' 쪽이라 convincing 이 아니라 과거분사 convinced 가 와야 해요. eager ..., convinced ... 처럼 being 이 빠진 형용사구 뒤의 vote, '~을 고려하면'이라는 전치사처럼 쓰는 considering 은 틀려 보여도 맞아요. 영화가 한 방에서 펼쳐진다는 문장, 만장일치 문장도 맞아요."
+],
+[
+11,
+2,
+"grammar",
+null,
+"글의 밑줄 친 부분 가운데 어법상 옳지 않은 것을 고르시오.\nIn his Commentaries on the Laws of England, ①<u>published</u> in the 1760s, the jurist William Blackstone declared that it is better that ten guilty persons escape than that one innocent suffer. The maxim, now known as Blackstone's ratio, expresses a deliberate judgment about which kind of error a legal system ②<u>should fear</u> more. Convicting the innocent, in this view, inflicts a twofold injury: it ruins a blameless life and leaves the real offender at large. Writers before and after Blackstone proposed different numbers, ranging from five to a thousand, but all shared a commitment ③<u>to protecting</u> the innocent. The ratio helps explain why criminal courts demand proof beyond reasonable doubt and why the accused is never obliged ④<u>to proving</u> his own innocence. Its cost is undeniable, since some culpable defendants will inevitably ⑤<u>go</u> free. Proponents of the principle retort that a society which tolerates wrongful convictions erodes the very trust on which law depends.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+4
+],
+"be obliged to 의 to 는 부정사 표시라 뒤에 동사원형이 와야 하니 to proving 이 아니라 to prove 예요. 반대로 a commitment to protecting 의 to 는 전치사라 동명사가 맞아요. published 는 '(which was) published'에서 줄어든 분사, should fear 는 조동사 + 원형, will go free 도 맞아요."
+],
+[
+12,
+2,
+"grammar",
+null,
+"글의 밑줄 친 부분 가운데 어법상 옳지 않은 것을 고르시오.\nBefore Darwin, the French naturalist Jean-Baptiste Lamarck postulated that organisms could transmit traits ①<u>acquired</u> during their lifetimes to their offspring. In the illustration most often ②<u>associated</u> with him, giraffes strained their necks to reach high foliage, and each generation was born with a slightly longer neck than the last. Darwin's theory of natural selection offered a different explanation: giraffes ③<u>whose</u> necks happened to be longer survived droughts and reproduced more prolifically. Lamarck's idea was largely discredited in the twentieth century, when geneticists ④<u>demonstrating</u> that changes to an animal's body during its life do not alter the genes it passes on. Recent research on epigenetics, which examines how the activity of genes can be switched on or off, has revived interest in a limited version of his idea, although most biologists caution against ⑤<u>overstating</u> its significance. Lamarck, long dismissed as Darwin's erroneous predecessor, is now remembered more charitably as a pioneer who insisted that species change over time.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+4
+],
+"when 절의 주어 geneticists 에 동사가 없으니 demonstrating 이 아니라 과거 동사 demonstrated 여야 해요. traits acquired 는 '(which were) acquired'에서 줄어든 분사, associated 도 수동 분사, whose 는 소유격 관계대명사, caution against overstating 은 전치사 뒤 동명사라 틀려 보여도 맞아요."
+],
+[
+13,
+2,
+"reading",
+"r2-p13",
+"글의 흐름으로 보아, 다음 문장이 들어가기에 가장 알맞은 곳을 고르시오.\nIt was the first time that DNA had been used to exonerate a suspect in a criminal case.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+5
+],
+"주어진 문장은 DNA 로 용의자의 '혐의를 벗긴' 첫 사례라고 해요. 자백한 젊은이가 DNA 로 두 범행 모두 저지를 수 없었다고 밝혀진 문장 바로 뒤가 알맞아요. 뒤의 'The case thus also yielded ... convictions'의 also 도 앞에 다른 '처음'이 있어야 자연스러워요."
+],
+[
+14,
+2,
+"reading",
+"r2-p14",
+"글의 흐름으로 보아, 다음 문장이 들어가기에 가장 알맞은 곳을 고르시오.\nEquality of this kind, paradoxically, would breed not harmony but pervasive suspicion.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+3
+],
+"주어진 문장의 Equality of this kind 는 바로 앞에서 '평등'을 말해야 받을 수 있어요. 누구나 서로 해칠 힘이 비슷하다는 문장 다음에 와서, 그 평등이 의심을 낳고 그래서 서로 두려워해 먼저 친다는 다음 문장으로 이어져요. 그 앞 자리에는 평등이 아직 나오지 않았어요."
+],
+[
+15,
+2,
+"reading",
+"r2-p15",
+"글의 흐름으로 보아, 다음 문장이 들어가기에 가장 알맞은 곳을 고르시오.\nUntil then, the law had punished only those who made or spread such images of adults, not those who merely kept or watched them.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+4
+],
+"Until then(그때까지)은 법이 바뀐 시점을 가리켜요. 소지·구입·시청까지 처벌하도록 법을 고쳤다는 문장 바로 뒤에 와야 '전에는 만들거나 퍼뜨린 사람만 처벌했다'는 대비가 살아요. 그 뒤 The amendment also raised ... 가 개정 내용을 이어 가요."
+],
+[
+16,
+2,
+"reading",
+"r2-p16",
+"글의 흐름으로 보아, 다음 문장이 들어가기에 가장 알맞은 곳을 고르시오.\nThis simple question was enough to strip them of their anonymity.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+4
+],
+"This simple question 은 앞에 '질문'이 나와야 받을 수 있어요. 글에서 질문은 아이들에게 이름과 주소를 물었다는 것뿐이라, 그 문장 바로 뒤가 알맞아요. 그래야 익명이 벗겨진 아이와 가면 뒤에 남은 아이의 비교로 이어져요."
+],
+[
+17,
+2,
+"reading",
+"r2-p17",
+"주어진 글 다음에 이어질 글의 순서로 가장 알맞은 것을 고르시오.",
+[
+"(A) - (C) - (B)",
+"(B) - (A) - (C)",
+"(B) - (C) - (A)",
+"(C) - (A) - (B)",
+"(C) - (B) - (A)"
+],
+[
+3
+],
+"북의 이름과 정치적 뜻을 밝히는 (B)가 먼저예요. (C)는 However 로 '실제로는' 백성이 잘 쓰지 못했다는 한계를 말하니 (B) 뒤예요. (A)의 these obstacles 는 (C)의 엄격한 절차와 먼 거리를 받으니, 폐지와 부활, 징을 치는 다른 길을 말하는 (A)가 마지막이에요."
+],
+[
+18,
+2,
+"reading",
+"r2-p18",
+"주어진 글 다음에 이어질 글의 순서로 가장 알맞은 것을 고르시오.",
+[
+"(A) - (C) - (B)",
+"(B) - (A) - (C)",
+"(B) - (C) - (A)",
+"(C) - (A) - (B)",
+"(C) - (B) - (A)"
+],
+[
+2
+],
+"주어진 글의 정부 약속에 맞서는 우려를 however 로 꺼내는 (B)가 먼저예요. 그 우려 끝에 몇 달 만에 법적 지위가 바뀐 (A)가 이어지고, 이 일을 교육 기술의 되풀이되는 모습으로 정리하는 (C)가 마지막이에요."
+],
+[
+19,
+2,
+"reading",
+"r2-p19",
+"주어진 글 다음에 이어질 글의 순서로 가장 알맞은 것을 고르시오.",
+[
+"(A) - (C) - (B)",
+"(B) - (A) - (C)",
+"(B) - (C) - (A)",
+"(C) - (A) - (B)",
+"(C) - (B) - (A)"
+],
+[
+4
+],
+"주어진 글의 생체 시계를 받아 '그러나 세포 수준의 작동 원리는 몰랐다'는 (C)가 먼저예요. 그 수수께끼를 초파리 유전자로 푼 (A)가 이어지고, (B)의 Their discovery 가 (A)의 세 과학자의 발견을 받아 쓸모를 말하니 마지막이에요."
+],
+[
+20,
+2,
+"reading",
+"r2-p20",
+"주어진 글 다음에 이어질 글의 순서로 가장 알맞은 것을 고르시오.",
+[
+"(A) - (C) - (B)",
+"(B) - (A) - (C)",
+"(B) - (C) - (A)",
+"(C) - (A) - (B)",
+"(C) - (B) - (A)"
+],
+[
+5
+],
+"택시에서 내린 승객 다음에는 뒷좌석에서 가방을 발견하는 (C)가 와요. 곧장 병원으로 돌아가 번호를 남기는 (B)가 이어지고, (B)에서 남긴 쪽지(the note)를 보고 아침에 전화가 온 (A)가 마지막이에요."
+],
+[
+21,
+2,
+"reading",
+"r2-p21",
+"글의 흐름과 관계없는 문장을 고르시오.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+4
+],
+"글은 미란다 판결과 그 뒤 생긴 권리 고지, 판결의 효과를 다뤄요. 미란다가 1976년 술집 싸움으로 숨졌다는 문장은 같은 인물의 다른 이야기라 판결과 그 효과를 따지는 흐름과 관계없어요."
+],
+[
+22,
+2,
+"reading",
+"r2-p22",
+"글의 흐름과 관계없는 문장을 고르시오.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+4
+],
+"글은 아이 사진을 온라인에 올리는 셰어런팅과 이를 다룬 프랑스 법을 다뤄요. 열다섯 살 아래 아이가 SNS 계정을 열 때 부모 동의를 받게 한 법은 같은 프랑스의 아이 보호 이야기지만, 부모가 올리는 아이 사진과 그 피해를 다루는 흐름과 관계없어요."
+],
+[
+23,
+2,
+"reading",
+"r2-p23",
+"글의 흐름과 관계없는 문장을 고르시오.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+5
+],
+"글은 비둘기가 해·지구 자기장·지형지물·냄새를 함께 써서 집을 찾는 방법을 다뤄요. 도시 광장의 비둘기가 건물을 더럽혀 골칫거리라는 문장은 길 찾기와 관계없어요."
+],
+[
+24,
+2,
+"reading",
+"r2-p24",
+"글의 흐름과 관계없는 문장을 고르시오.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+4
+],
+"글은 스탠퍼드 감옥 실험과 그 해석을 다시 따지는 비판을 다뤄요. 짐바르도가 뒤에 미국심리학회장이 됐다는 문장은 같은 인물의 경력 이야기라 실험 해석을 다시 따지는 흐름과 관계없어요."
+],
+[
+25,
+2,
+"reading",
+"r2-p25",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"Jean Valjean's Escape From Prison",
+"Law Without Mercy: The Tragedy of Javert",
+"The Life of a Corrupt Police Inspector",
+"Hugo's Campaign Against the French Monarchy",
+"The Price of Bread in Nineteenth-Century Paris"
+],
+[
+2
+],
+"법만 믿던 자베르가 장 발장의 자비를 받고 무너지는 이야기를 통해 '자비 없는 법의 한계'를 말하는 글이라 'Law Without Mercy: The Tragedy of Javert'가 맞아요. 자베르는 오히려 청렴한(incorruptible) 사람이라 'The Life of a Corrupt Police Inspector'는 반대이고, 탈옥·빵값은 곁가지이며, 왕정 반대 운동은 글에 없어요."
+],
+[
+26,
+2,
+"reading",
+"r2-p26",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"whether examiners may freely modify it to find more evidence",
+"whether anyone could have tampered with it along the way",
+"whether switching it on first is the safest step",
+"whether its manufacturer still supports the model",
+"whether its hash value contains enough characters"
+],
+[
+2
+],
+"원본을 건드리지 않고, 해시값으로 바뀌지 않았음을 보이고, 다룬 사람을 모두 기록한다고 했어요. 모두 '중간에 누가 손댈 수 있었는가'에 답하려는 절차라, 법정에서는 내용뿐 아니라 그것이 문제라는 말이 맞아요. 'examiners may freely modify it'·'switching it on first is the safest step'은 아무것도 바꾸지 말라는 첫 규칙과 정반대이고, 제조사 지원은 근거가 없어요. 'its hash value contains enough characters'는 지문 낱말을 섞었지만 초점이 어긋나요."
+],
+[
+27,
+2,
+"reading",
+"r2-p27",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"should apply equally to everyone, regardless of rank",
+"should be kept secret from ordinary people and officials alike",
+"should depend on the personal virtue of judges",
+"should change with every new ruler's wishes",
+"should reward loyalty more lavishly than obedience"
+],
+[
+1
+],
+"법은 귀족에게도 굽지 않는다는 먹줄 비유가 단서예요. 신분과 상관없이 '누구에게나 똑같이' 적용해야 한다는 주장이 오늘날 사회도 소중히 여기는 원칙이에요. 법을 공개(publicly proclaimed)하라고 했으니 비밀로 하라는 보기는 반대이고, 덕에 기대지 말라고 했으니 판관의 덕도 반대예요. 'change with every new ruler's wishes'는 근거가 없고, 'reward loyalty more lavishly'는 지문의 rewards 를 섞었지만 초점이 어긋나요."
+],
+[
+28,
+2,
+"reading",
+"r2-p28",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"seven was in fact a considerable underestimate of human memory capacity",
+"chunking makes no difference to how much we can remember",
+"the limit of what we can keep in mind is smaller than believed",
+"telephone numbers ought to be at least ten digits long",
+"memory capacity expands steadily throughout adult life"
+],
+[
+3
+],
+"묶기(chunking)를 막으면 실제 용량은 넷 정도라고 했고, 일곱 개를 다루라는 설계는 너무 많은 것을 요구한다고 했어요. 그러니 '머리에 담을 수 있는 한계가 생각보다 작다'가 맞아요. 'seven was ... an underestimate'·'chunking makes no difference'는 정반대이고, 나이에 따라 는다는 말은 근거가 없어요. 'telephone numbers'는 지문 낱말을 섞었지만 초점이 어긋나요."
+],
+[
+29,
+2,
+"reading",
+"r2-p29",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"climate is the principal cause of disparities in wealth",
+"a shared culture and climate guarantee similar living standards everywhere",
+"free trade alone determines how wealthy a nation becomes",
+"border cities divided by rules share a single economy",
+"lasting prosperity hinges heavily on the quality of institutions"
+],
+[
+5
+],
+"같은 조상·기후·문화를 가진 노갈레스 두 쪽의 차이가 지리나 문화가 아니라 '규칙(제도)'에서 나온다고 했어요. 그러니 오래가는 번영은 제도의 질에 크게 달려 있다는 결론이에요. 'climate is the principal cause'·'a shared culture and climate guarantee'는 글쓴이가 부정한 것이라 반대예요. 자유무역만으로 정해진다는 말은 근거가 없고, 'border cities ... share a single economy'는 지문 낱말을 섞었지만 두 쪽 형편이 다르다는 내용과 어긋나요."
+],
+[
+30,
+2,
+"reading",
+"r2-p30",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"records exactly how the bombing raid was conducted",
+"glorifies the military prowess of the attacking pilots",
+"speaks to the suffering of civilians in any war",
+"chronicles the daily life of the town before the attack",
+"could only be understood by people from the Basque region"
+],
+[
+3
+],
+"비행기도 폭탄도 그리지 않고 울부짖는 어머니, 다친 말 같은 고통만 담았다고 했어요. 사건을 그대로 그리지 않았기에 '어느 전쟁에서나 민간인이 겪는 고통'을 말하는 그림이 됐다는 흐름이에요. 'records exactly how the bombing raid was conducted'·'glorifies the military prowess'는 정반대이고, 마을의 일상은 근거가 없어요. 'only ... the Basque region'은 지문 낱말을 섞었지만 범위를 좁혀 초점이 어긋나요."
+],
+[
+31,
+2,
+"reading",
+"r2-p31",
+"(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 알맞은 것을 고르시오.",
+[
+"fond …… irritable …… manageable",
+"terrified …… calm …… unmanageable",
+"terrified …… irritable …… unmanageable",
+"fond …… calm …… manageable",
+"terrified …… irritable …… manageable"
+],
+[
+5
+],
+"(A) 울타리 옆을 지나지 않으려 길을 건넜으니 벌을 '무서워했다(terrified)'예요. (B) 춥거나 궂은 날에는 벌통을 열지 않는다고 했으니 그런 날 벌은 '예민하다(irritable)'예요. (C) 무엇이 벌을 자극하는지 알면 두려운 것도 '다룰 만해진다(manageable)'는 깨달음이에요. unmanageable 은 같은 낱말에 un- 만 붙은 철자 혼동어로 뜻이 반대예요."
+],
+[
+32,
+2,
+"reading",
+"r2-p32",
+"(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 알맞은 것을 고르시오.",
+[
+"retained …… combine …… mechanically",
+"detained …… combine …… mechanically",
+"retained …… separate …… thoughtfully",
+"retained …… combine …… thoughtfully",
+"detained …… separate …… mechanically"
+],
+[
+1
+],
+"(A) 그리기가 더 낫다고 했으니 그린 쪽이 더 많이 '기억에 담았다(retained)'예요. detained(붙잡아 두었다)는 어근이 같고 앞부분만 다른 철자 혼동어예요. (B) 뜻 생각·모습 떠올리기·손 움직이기를 '한꺼번에(at once)' 하니 '합친다(combine)'예요. (C) 뜻에 거의 주의하지 않고(with scant attention) 할 수 있으니 '기계적으로(mechanically)'예요."
+],
+[
+33,
+2,
+"reading",
+"r2-p33",
+"글의 주제로 가장 알맞은 것을 고르시오.",
+[
+"the perils of toxic gases in industrial exhaust",
+"a prize-winning class of materials engineered around tiny cavities",
+"why most newly invented materials ultimately prove unstable and unusable",
+"the history of the Nobel Prize in Chemistry",
+"techniques for locating underground water in deserts"
+],
+[
+2
+],
+"2025년 노벨 화학상을 받은 금속-유기 골격체가 작은 빈 공간(구멍)을 설계해 물·이산화탄소를 붙잡는다는 글이라 '작은 구멍을 중심으로 설계한 수상 물질'이 주제예요. 배기가스·사막의 물은 쓰임의 한 부분이고, 새 물질이 대부분 불안정하다는 말은 글과 반대이며, 노벨상의 역사는 글에 없어요."
+],
+[
+34,
+2,
+"reading",
+"r2-p34",
+"글의 요지로 가장 알맞은 것을 고르시오.",
+[
+"Plays should include at least one dramatic weapon to hold attention.",
+"Short stories are far harder to write than long novels.",
+"Every detail in a story should serve a purpose, or it misleads the audience.",
+"Beautifully written scenes deserve to be kept even if they serve no real purpose.",
+"Foreshadowing is the most important technique a writer can master."
+],
+[
+3
+],
+"체호프의 총 이야기는 총이나 복선에 대한 규칙이 아니라 '경제성'에 대한 말이라고 했어요. 쓰이지 않는 세부는 독자를 헷갈리게 하니 모든 세부는 쓸모가 있어야 한다는 것이 요지예요. 아름다워도 쓸모없는 장면은 빼라고 했으니 남기라는 보기와, 총을 꼭 넣으라는 보기는 반대예요. 단편이 더 어렵다는 말은 글에 없고, 복선은 오해의 한 부분이에요."
+],
+[
+35,
+2,
+"reading",
+"r2-p35",
+"글의 내용과 일치하는 것을 고르시오.",
+[
+"Most people judge two cases with the same number of deaths differently.",
+"Philippa Foot invented the name trolley problem.",
+"Most people consider it wrong to steer the tram onto the side track to save the five.",
+"Philosophers swiftly agreed on an explanation of the puzzle.",
+"The Moral Machine experiment found no cultural differences."
+],
+[
+1
+],
+"다섯을 살리고 하나가 죽는 셈은 같아도(the arithmetic is identical) 선로를 바꾸는 것은 괜찮고 사람을 미는 것은 잘못이라고 답한다고 했으니 일치해요. 이름을 붙인 사람은 톰슨이고, 선로 바꾸기는 대부분 허용된다고 했으며, 철학자들은 수십 년째 설명을 찾고 있고, 문화 차이도 드러났어요."
+],
+[
+36,
+2,
+"reading",
+"r2-p36",
+"글의 내용과 일치하지 않는 것을 고르시오.",
+[
+"Older drivers in rural areas can easily rely on frequent bus services.",
+"People aged sixty-five or older make up over a fifth of Korea's population.",
+"Some local governments reward older people who give up their licenses.",
+"Drivers aged seventy-five or older must renew their licenses more often.",
+"Some experts prefer ability tests to rigid age limits."
+],
+[
+1
+],
+"시골은 버스가 드물어(buses are sparse) 노인이 차에 기대 병원과 시장에 간다고 했어요. 잦은 버스에 쉽게 기댈 수 있다는 문장이 글과 맞지 않아요. 초고령 사회 비율, 면허 반납 혜택, 75세 이상 짧은 갱신 주기, 실제 운전 능력 검사 선호는 글과 같아요."
+],
+[
+37,
+2,
+"reading",
+"r2-s1",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"solitude",
+"silence",
+"company",
+"information",
+"yesterday"
+],
+[
+3
+],
+"바로 앞 문장이 단서예요. 신문은 '걸어갈 곳과 말 걸 사람'을 얻는 핑계였으니 노인이 매일 밤 산 것은 '사람과 함께하는 시간(company)'이에요. solitude(혼자 있음)·silence(침묵)는 정반대이고, information(정보)은 신문에서 떠올릴 법하지만 근거가 없어요. yesterday 는 어제 신문(yesterday's)에서 따온 지문 낱말이에요."
+],
+[
+38,
+2,
+"reading",
+"r2-s1",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"Surviving the Night Shift: A Practical Guide",
+"The Late Delivery of Morning Newspapers",
+"The Two O'Clock Newspaper",
+"A Lonely Shift Without Customers",
+"Memorizing Prices at a Convenience Store"
+],
+[
+3
+],
+"매일 새벽 두 시에 어제 신문을 사러 오던 노인과의 이야기가 중심이라 'The Two O'Clock Newspaper'가 맞아요. 아침 신문 배달은 곁가지이고, 야간 근무 요령은 글에 없어요. 손님이 없었다거나 가격을 외운 이야기라는 제목은 손님들이 머물렀고 가격은 다 잊었다는 내용과 반대예요."
+],
+[
+39,
+2,
+"reading",
+"r2-s2",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"candor",
+"euphemisms",
+"precision",
+"dialects",
+"weeds"
+],
+[
+2
+],
+"빈칸 뒤 문장이 단서예요. 그런 말들이 추한 현실을 따져 보지 않고 넘어가게 하고, 마을 폭격을 '평정'이라 부른다고 했으니 정치 언어에 가득한 것은 '완곡어(euphemisms)'예요. candor(솔직함)·precision(정확함)은 정반대이고, dialects(사투리)는 같은 언어 영역이지만 근거가 없어요. weeds 는 지문 낱말(잡초)이에요."
+],
+[
+40,
+2,
+"reading",
+"r2-s2",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"Newspeak and the Politics of Shrinking Language",
+"Orwell's Study of Foreign Languages",
+"Linguists' Praise for the Grammar of Newspeak",
+"The Appendix to Nineteen Eighty-Four",
+"Euphemism as a Tool of Polite Conversation"
+],
+[
+1
+],
+"말을 줄여 생각을 통제하려는 뉴스피크와, 정치 언어가 생각을 흐리게 하는 위험을 다룬 글이라 'Newspeak and the Politics of Shrinking Language'가 맞아요. 완곡어는 예의가 아니라 추한 현실을 가리는 도구로 나오고, 언어학자들은 오히려 소설의 생각을 의심한다고 했으니 그 둘은 반대예요. 부록 이야기는 한 부분이고, 오웰의 외국어 공부는 글에 없어요."
+],
+[
+1,
+3,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nMy taciturn uncle, notoriously <u>parsimonious</u> with praise, merely nodded at my diploma, though he later framed it and hung it above his own desk.",
+[
+"prodigal",
+"parochial",
+"garrulous",
+"stingy",
+"affluent"
+],
+[
+4
+],
+"parsimonious 는 '몹시 아끼는, 인색한'이라 stingy 와 가까워요. 칭찬에 인색해 졸업장에 고개만 끄덕였다는 문장이에요. prodigal(헤프게 쓰는)은 반대이고, parochial(편협한)은 앞부분 철자만 비슷하며, garrulous(수다스러운)·affluent(부유한)는 뜻이 달라요."
+],
+[
+2,
+3,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nThe <u>dauntless</u> rescuers descended into the flooded mine again and again, heedless of the rising water and the ominous groans of the timber above them.",
+[
+"fearless",
+"timorous",
+"craven",
+"dainty",
+"gloomy"
+],
+[
+1
+],
+"dauntless 는 '겁 없는, 굴하지 않는'이라 fearless 와 가까워요. 물이 차오르고 버팀목이 삐걱대도 몇 번이고 광산에 내려갔다는 내용이 단서예요. timorous(겁 많은)·craven(비겁한)은 반대이고, dainty(앙증맞은)는 앞부분 철자만 비슷하며, gloomy(우울한)도 맞지 않아요."
+],
+[
+3,
+3,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nA single afternoon of torrential rain was enough to <u>obliterate</u> the footprints we had followed for hours across the muddy riverbank.",
+[
+"obfuscate",
+"destroy",
+"obligate",
+"rejuvenate",
+"expedite"
+],
+[
+2
+],
+"obliterate 는 '흔적 없이 지우다, 없애다'라 destroy 와 가까워요. 몇 시간 따라온 발자국을 장대비가 지워 버렸다는 문장이에요. obfuscate(흐리게 하다)·obligate(의무를 지우다)는 앞부분 철자만 비슷하고, rejuvenate(되살리다)는 반대이고, expedite(서두르다)는 발자국과 어울리지 않아요."
+],
+[
+4,
+3,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nBy dawn the gale had finally begun to <u>abate</u>, and the fishermen who had sheltered in the harbor office all night ventured back to inspect their boats.",
+[
+"intensify",
+"burgeon",
+"weaken",
+"abase",
+"meander"
+],
+[
+3
+],
+"abate 는 '(폭풍·고통이) 약해지다, 누그러지다'라 weaken 과 가까워요. 밤새 피해 있던 어부들이 새벽에 배를 보러 나갔다는 뒤 내용이 단서예요. intensify(심해지다)·burgeon(급증하다)은 반대 방향이고, abase(낮추다)는 앞부분 철자만 비슷하며, meander(굽이쳐 흐르다)는 폭풍과 어울리지 않아요."
+],
+[
+5,
+3,
+"vocab",
+null,
+"밑줄 친 낱말과 뜻이 가장 가까운 것을 고르시오.\nAfter a painstaking inquiry, the review board voted to <u>absolve</u> the young officer of any blame for the collision at the crossroads.",
+[
+"absorb",
+"indict",
+"procure",
+"clear",
+"censure"
+],
+[
+4
+],
+"absolve 는 '(책임·죄에서) 벗어나게 하다'라 clear(혐의를 벗기다)와 가까워요. of any blame 이 단서예요. absorb(흡수하다)는 철자만 비슷하고, indict(기소하다)·censure(견책하다)는 반대 방향이며, procure(구하다)는 뜻이 달라요."
+],
+[
+6,
+3,
+"dialogue",
+null,
+"대화의 빈칸에 들어가기에 가장 알맞은 표현을 고르시오.\nA: Jiwoo! I thought you were already in Busan. What happened?\nB: Don't ask. I missed the nine o'clock train by a mere thirty seconds. I watched it pull away from the platform.\nA: Oh no. Weren't you supposed to give a presentation there this afternoon?\nB: I was. I called the organizers in a panic, and it turns out they had just postponed the whole session.\nA: Postponed? Why?\nB: Their keynote speaker came down with the flu, so they moved everything to next Friday.\nA: So even if you'd caught the train, you would have arrived for nothing.\nB: Exactly. And there's more. While I was waiting for the next train, I ran into my old thesis adviser in the station café.\nA: Professor Seo? I haven't seen her in years.\nB: Neither had I. We talked for an hour, and she mentioned that her lab is looking for a research assistant next semester.\nA: You've been hoping for a position like that since graduation!\nB: I know. She asked me to send her my résumé tonight.\nA: So by missing the train, you actually ____.\nB: I really did. If I'd been on time, I would have spent the whole day in Busan for nothing and never seen her.\nA: Just leave for the station an hour early next time.",
+[
+"missed the boat",
+"drew the short straw",
+"rocked the boat",
+"jumped the gun",
+"hit the jackpot"
+],
+[
+5
+],
+"hit the jackpot 은 '뜻밖에 큰 행운을 잡다'라는 숙어예요. 기차를 놓쳤지만 발표는 미뤄졌고 옛 지도교수를 만나 일자리 이야기까지 들었으니 딱 맞아요. missed the boat(기회를 놓쳤다)·drew the short straw(운 나쁘게 궂은일을 맡았다)는 정반대이고, rocked the boat(평지풍파를 일으켰다)·jumped the gun(성급하게 굴었다)은 이 상황과 맞지 않아요."
+],
+[
+7,
+3,
+"pair",
+null,
+"글의 빈칸 (A), (B), (C)에 들어갈 낱말을 가장 알맞게 짝지은 것을 고르시오.\nDuring the Antarctic winter, male emperor penguins endure one of the most grueling ordeals in the animal kingdom. While the females return to the sea to feed, each male balances a single egg on his feet for about two months, fasting the entire time as temperatures plummet far below freezing and blizzards sweep across the ice. Alone, no bird could survive these inhospitable conditions. The males therefore congregate in dense huddles that may contain thousands of individuals, pressing so snugly together that the temperature inside can (A) ____ that of a spring afternoon. Such warmth poses a problem of its own: birds at the center risk overheating, while those on the windward edge are exposed to the bitter cold. Researchers who filmed huddles over long periods discovered that the formation is not (B) ____ at all. Every minute or so, the whole mass shuffles forward in tiny steps that ripple through the group like waves, so that individuals gradually rotate between the edge and the interior. No single penguin directs the movement; the pattern (C) ____ from countless small adjustments, distributing both the burden of the cold and the benefit of the warmth with uncanny equity.",
+[
+"exceed …… dynamic …… emerges",
+"exceed …… static …… emerges",
+"fall below …… static …… deviates",
+"exceed …… static …… deviates",
+"fall below …… dynamic …… emerges"
+],
+[
+2
+],
+"(A) 수천 마리가 빽빽이 붙어 안쪽이 너무 더워질 위험까지 있다고 했으니 봄 오후 기온을 '넘을(exceed)' 수 있어요. (B) 1분마다 앞으로 움직이며 자리를 바꾼다고 했으니 무리는 전혀 '멈춰 있지(static)' 않아요. (C) 지휘하는 펭귄 없이 작은 조정들에서 무늬가 '생겨난다(emerges)'예요."
+],
+[
+8,
+3,
+"pair",
+null,
+"글의 빈칸 (A), (B), (C)에 들어갈 낱말을 가장 알맞게 짝지은 것을 고르시오.\nThe word police has a surprisingly lofty and venerable ancestry. It descends, through French and Latin, from the Greek polis, the city-state, the same root that gave English politics and, more distantly, policy. For centuries the word referred not to uniformed officers but to the (A) ____ of a community in the broadest sense. When eighteenth-century writers spoke of the police of a city, they meant the regulation of its markets, the sanitation of its streets, the lighting of its lamps, and the general good order and conduct of its many inhabitants. Only gradually did the meaning (B) ____, until it denoted the specific body of officials charged with preventing crime and enforcing the law. The older sense survives in a few legal phrases: lawyers still refer to the police power of a state, meaning its general authority to regulate health, safety, and welfare, not merely its prerogative to make arrests. The history of the word is a reminder that maintaining public order was once understood as a (C) ____ of civic life rather than the specialized task of a single profession.",
+[
+"administration …… broaden …… dimension",
+"administration …… narrow …… dimension",
+"invasion …… narrow …… dimension",
+"administration …… narrow …… violation",
+"invasion …… broaden …… violation"
+],
+[
+2
+],
+"(A) 시장 규제·거리 청결·가로등까지 공동체를 다스리는 일 전체를 뜻했으니 '관리, 행정(administration)'이에요. (B) 넓은 뜻에서 범죄를 막는 특정 조직으로 바뀌었으니 뜻이 '좁아졌다(narrow)'예요. (C) 질서 유지가 한 직업의 일이 아니라 시민 생활의 한 '측면(dimension)'이었다는 대비예요."
+],
+[
+9,
+3,
+"grammar",
+null,
+"글의 밑줄 친 부분 가운데 어법상 옳은 것을 고르시오.\nIn the mid-eighteenth century, London had no professional police force. Order was ①<u>keeping</u> by unpaid parish constables and night watchmen, many of them elderly and notoriously ineffectual, while private thief-takers collected rewards for apprehending criminals and were sometimes in league with them. In 1748 the novelist Henry Fielding, author of Tom Jones, was appointed magistrate at Bow Street, and the following year he organized a small band of paid men ②<u>who's</u> task was to pursue offenders and bring them before the court. The group, later known as the Bow Street Runners, ③<u>was</u> remarkably successful for its modest size. After Fielding's death in 1754, his blind half-brother John, who reputedly could recognize thousands of criminals by their voices alone, ④<u>expanding</u> the operation and circulated descriptions of wanted men in newspapers. The Runners survived until 1839, a decade after the creation of the Metropolitan Police had rendered them ⑤<u>redundantly</u>.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+3
+],
+"주어 The group 은 단수라 was 가 맞아요(later known as ... 는 삽입이에요). 나머지는 틀렸어요. 질서는 '유지되는' 것이라 수동 was kept 여야 하고, task 를 꾸미는 소유격 관계대명사는 whose 예요. 주어 his blind half-brother John 의 동사가 없으니 expanded 여야 하고, render + 목적어 + 보어 자리에는 형용사 redundant 가 와야 해요."
+],
+[
+10,
+3,
+"grammar",
+null,
+"글의 밑줄 친 문장 가운데 어법상 옳지 않은 것을 고르시오.\n①<u>In May 1997, an IBM computer called Deep Blue defeated the world chess champion Garry Kasparov in a six-game match.</u> Kasparov had beaten an earlier version of the machine the previous year, and many pundits expected him to prevail again. ②<u>The machine did not think about chess in anything like the way a grandmaster does.</u> It relied instead on sheer computational brute force, evaluating an enormous number of positions every second. ③<u>Kasparov, unsettled by a move he found inexplicably humanlike, accused the team of receiving secret help, a charge IBM denied.</u> ④<u>The match was widely portrayed as a turning point in which machines had finally surpassed human intelligence.</u> In retrospect, the verdict appears premature, since the program could do nothing except play chess. ⑤<u>What the victory demonstrated, many researchers now argue, is that narrow tasks can be mastered by machines lacking anything resembled general understanding.</u> Kasparov himself later became a vocal champion of collaboration between humans and computers.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+5
+],
+"anything 을 뒤에서 꾸미는 말은 '~을 닮은'이라는 능동이라 과거분사 resembled 가 아니라 현재분사 resembling 이어야 해요. a move he found 는 목적격 관계사가 빠진 꼴, the way a grandmaster does 는 대동사를 쓴 구어적 비교, unsettled by ... 는 being 이 빠진 분사구문이라 틀려 보여도 맞아요."
+],
+[
+11,
+3,
+"grammar",
+null,
+"글의 밑줄 친 부분 가운데 어법상 옳지 않은 것을 고르시오.\nOn a November night in 1935, a fire broke out in a house on Wimpole Street in London. A neighbor ①<u>who</u> tried to summon help found that the telephone exchange was jammed with ordinary calls, and five women died in the blaze. The ensuing inquest concluded that callers in an emergency needed a number that, ②<u>once dialed</u>, would be recognized instantly by operators and given priority over all other traffic. On 30 June 1937, London introduced 999, the world's first emergency telephone number. When the number was dialed, a buzzer sounded and a red light flashed at the exchange, ③<u>alerting</u> operators to answer at once. The digits were chosen partly because they could be found easily in the dark ④<u>to feel</u> for the last hole on a rotary dial. Other countries adopted similar numbers ⑤<u>following</u> the British example: the United States adopted 911 in 1968, and South Korea today uses 112 for the police and 119 for fire and medical emergencies.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+4
+],
+"'손으로 더듬어' 찾는다는 수단은 전치사 by 뒤 동명사로 by feeling 이라고 써야 해요. to feel 로는 '어둠 속에서 찾는 방법'을 나타낼 수 없어요. who 는 사람 선행사를 받는 관계대명사, once dialed 는 'once it was dialed'에서 주어와 be 가 빠진 꼴, alerting 은 결과를 나타내는 분사구문, following 은 '~에 뒤이어'라는 전치사처럼 쓰는 분사라 틀려 보여도 맞아요."
+],
+[
+12,
+3,
+"grammar",
+null,
+"글의 밑줄 친 부분 가운데 어법상 옳지 않은 것을 고르시오.\nFew inventions have reshaped a landscape as profoundly as barbed wire. On the treeless Great Plains of the United States, timber for fences was scarce and costly, and smooth wire, ①<u>however tightly strung</u>, was easily pushed aside by cattle. In 1874 an Illinois farmer named Joseph Glidden patented a design ②<u>in which</u> short, sharp barbs were twisted around a strand of wire and held in place by a second strand. The wire was cheap, light, and ③<u>remarkably</u> effective, and within a few years factories were churning it out by the thousands of tons. Its consequences were far from benign. By enclosing land that had once been open range, it hastened the end of the long cattle drives and ④<u>provoking</u> violent clashes, known as fence-cutting wars, between ranchers and small farmers. Decades later it would acquire a darker association still, ⑤<u>stretched</u> across the battlefields of the First World War in dense, impenetrable belts that trapped advancing soldiers under fire.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+4
+],
+"By enclosing ... 뒤에서 it 의 동사 hastened 와 and 로 나란히 이어지니 provoking 이 아니라 과거 동사 provoked 여야 해요. however tightly strung 은 'however tightly it was strung'에서 주어와 be 가 빠진 꼴이고, in which 는 a design 을 받는 '전치사 + 관계대명사', remarkably 는 형용사 effective 를 꾸미는 부사, stretched 는 '(being) stretched'에서 줄어든 분사구문이라 틀려 보여도 맞아요."
+],
+[
+13,
+3,
+"reading",
+"r3-p13",
+"글의 흐름으로 보아, 다음 문장이 들어가기에 가장 알맞은 곳을 고르시오.\nSuch places invite precisely the kind of calculated offense, such as breaking into a parked car, in which a would-be thief weighs the risk of being recorded.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+3
+],
+"주어진 문장의 Such places 는 앞에 '장소'가 나와야 받을 수 있어요. 카메라 효과가 주차장·주거지에 몰린다는 문장 바로 뒤에 와서, 그런 곳에서는 도둑이 찍힐 위험을 '따져 보는' 계산된 범죄가 일어난다고 풀어 줘요. 이어지는 폭력 범죄는 충동적이라 효과가 없다는 문장과 대비도 살아요."
+],
+[
+14,
+3,
+"reading",
+"r3-p14",
+"글의 흐름으로 보아, 다음 문장이 들어가기에 가장 알맞은 곳을 고르시오.\nIf the work of his hands is his, then so, Locke concluded, is whatever that work transforms.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+3
+],
+"주어진 문장은 the work of his hands 를 그대로 받아 '그 손의 일이 그의 것이면 그 일이 바꾼 것도 그의 것'이라는 결론을 내요. 그러니 '자기 몸, 그래서 손의 일도 자기 것'이라는 문장 바로 뒤가 알맞고, 이어서 사과 따기·밭 갈기라는 예로 넘어가요."
+],
+[
+15,
+3,
+"reading",
+"r3-p15",
+"글의 흐름으로 보아, 다음 문장이 들어가기에 가장 알맞은 곳을 고르시오.\nWe judge how frequent something is, they argued, by how easily examples of it come to mind.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+4
+],
+"주어진 문장은 '가용성 어림법'이 무엇인지 일반 원리로 설명해요. 그래서 그 이름을 소개한 문장 바로 뒤에 와야 하고, 다음 문장의 In this case(이 경우에는)가 그 원리를 K 문제에 적용하는 흐름이 돼요. 이름만 나온 뒤에는 In this case 가 받을 원리가 없어요."
+],
+[
+16,
+3,
+"reading",
+"r3-p16",
+"글의 흐름으로 보아, 다음 문장이 들어가기에 가장 알맞은 곳을 고르시오.\nA long run of one color, in other words, does nothing to make the other color more probable.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+5
+],
+"in other words 는 바로 앞 말을 바꿔 말할 때 써요. '바퀴는 기억이 없어 매번 빨강·검정 확률이 같다'는 문장 다음에 와야 '한 색이 길게 이어져도 다른 색이 더 잘 나오지 않는다'로 다시 말한 셈이 돼요. 그 뒤 '이 오류는 카지노에만 있지 않다'로 넘어가요."
+],
+[
+17,
+3,
+"reading",
+"r3-p17",
+"주어진 글 다음에 이어질 글의 순서로 가장 알맞은 것을 고르시오.",
+[
+"(A) - (B) - (C)",
+"(A) - (C) - (B)",
+"(B) - (A) - (C)",
+"(C) - (A) - (B)",
+"(C) - (B) - (A)"
+],
+[
+3
+],
+"주어진 글의 제도에 however 로 반발이 커진 상황과 2022년 연령 낮추기 제안을 말하는 (B)가 먼저예요. 그 제안에 반대하는 쪽(Opponents counter)의 논리 (A)가 이어지고, 두 입장을 정리하는 (C)의 The dispute 가 마지막이에요."
+],
+[
+18,
+3,
+"reading",
+"r3-p18",
+"주어진 글 다음에 이어질 글의 순서로 가장 알맞은 것을 고르시오.",
+[
+"(A) - (C) - (B)",
+"(B) - (A) - (C)",
+"(B) - (C) - (A)",
+"(C) - (A) - (B)",
+"(C) - (B) - (A)"
+],
+[
+4
+],
+"주어진 글의 법원 명령을 받아 그 의미(간수가 구금 이유를 밝혀야 한다)를 풀어 주는 (C)가 먼저예요. 그 원칙이 미국 헌법으로 건너가 링컨의 정지 논란을 낳은 (A)가 이어지고, (B)의 Similar controversies 가 (A)의 논란을 받아 마무리해요."
+],
+[
+19,
+3,
+"reading",
+"r3-p19",
+"주어진 글 다음에 이어질 글의 순서로 가장 알맞은 것을 고르시오.",
+[
+"(A) - (C) - (B)",
+"(B) - (A) - (C)",
+"(B) - (C) - (A)",
+"(C) - (A) - (B)",
+"(C) - (B) - (A)"
+],
+[
+1
+],
+"주어진 글의 새 말이 빠르게 퍼지고 열광을 받았다는 (A)가 먼저예요. (C)는 전문가들이 더 '양가적'이었다며 (A)의 열광과 대비되는 우려를 말해요. (B)의 The debate 는 (A)·(C)의 찬반을 받아 계산기 이야기로 정리하니 마지막이에요."
+],
+[
+20,
+3,
+"reading",
+"r3-p20",
+"주어진 글 다음에 이어질 글의 순서로 가장 알맞은 것을 고르시오.",
+[
+"(A) - (C) - (B)",
+"(B) - (A) - (C)",
+"(B) - (C) - (A)",
+"(C) - (A) - (B)",
+"(C) - (B) - (A)"
+],
+[
+5
+],
+"비결을 캐려고 이웃을 초대하고 바이올린을 산 (C)가 먼저예요. 다음 가을 큰 호박을 키웠지만 이웃이 더 큰 호박을 끌고 온 (B)가 이어져요. (A)는 그 호박(it)을 보고 바이올린을 물으니 마지막이고, 이웃의 속셈이 드러나는 반전이에요."
+],
+[
+21,
+3,
+"reading",
+"r3-p21",
+"글의 흐름과 관계없는 문장을 고르시오.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+3
+],
+"글은 한국의 국민참여재판이 어떻게 운영되고 어떤 평가를 받는지 다뤄요. 가정법원·행정 사건 전문 법원이 따로 있다는 문장은 배심 제도와 관계없어요."
+],
+[
+22,
+3,
+"reading",
+"r3-p22",
+"글의 흐름과 관계없는 문장을 고르시오.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+3
+],
+"글은 점수와 말로 된 평가 가운데 어떤 피드백이 학생을 더 잘 이끄는지 다룬 버틀러의 연구예요. 나라마다 점수 체계가 다르다(미국은 문자, 프랑스는 20점)는 문장은 이 흐름과 관계없어요."
+],
+[
+23,
+3,
+"reading",
+"r3-p23",
+"글의 흐름과 관계없는 문장을 고르시오.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+4
+],
+"글은 흡혈박쥐가 굶은 동료에게 피를 나눠 주고, 받은 만큼 돌려주는 상호 이타 행동을 다뤄요. 박쥐가 유일하게 제대로 나는 포유류이고 포유류 종의 5분의 1이라는 문장은 피 나누기와 관계없어요."
+],
+[
+24,
+3,
+"reading",
+"r3-p24",
+"글의 흐름과 관계없는 문장을 고르시오.",
+[
+"①",
+"②",
+"③",
+"④",
+"⑤"
+],
+[
+4
+],
+"글은 이븐 할둔이 집단 결속(아사비야)으로 왕조의 흥망을 설명한 이론을 다뤄요. 그가 여러 군주를 섬기고 티무르를 만났다는 문장은 같은 인물의 생애 이야기라, 뒤의 '그 순환(the cycle)'이 바로 앞 흥망 과정을 받아야 하는 흐름을 끊어요."
+],
+[
+25,
+3,
+"reading",
+"r3-p25",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"Letters to Theo: The Making of a Reputation",
+"Theo van Gogh's Career as a Painter",
+"Van Gogh's Refusal to Sell His Work",
+"Color Techniques in Nineteenth-Century Paris",
+"A Widow's Struggle to Run an Art Gallery"
+],
+[
+1
+],
+"편지가 화가의 사람됨을 보여 주었고, 요한나가 그것을 펴내 무명 화가를 사랑받는 인물로 만들었다는 글이라 'Letters to Theo: The Making of a Reputation'이 맞아요. 테오는 화가가 아니라 화상이었으니 'Theo van Gogh's Career as a Painter'는 반대이고, 팔기를 거부했다는 말은 없어요. 색채 이야기·미망인의 노력은 글의 한 부분이에요."
+],
+[
+26,
+3,
+"reading",
+"r3-p26",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"proves that foreign museums are the most competent custodians",
+"makes that argument considerably harder to sustain",
+"houses more visitors than any museum in Europe",
+"shows that tourists prefer European collections",
+"suggests that Egypt has abandoned its demands"
+],
+[
+2
+],
+"외국 박물관은 '원래 나라가 유물을 제대로 돌볼 수 없다'는 논리로 유물을 지켜 왔다고 했어요. 피라미드 옆 최신 시설은 바로 그 논리를 '지키기 훨씬 어렵게' 만들어요. 앞 문장 'The new building bolsters their position'도 같은 방향이에요. 'foreign museums are the most competent custodians'·'Egypt has abandoned its demands'는 글과 반대이고, 관광객 선호는 근거가 없어요. 'houses more visitors than any museum in Europe'는 지문의 박물관·유럽 낱말을 섞었지만 방문객 수는 글에 근거가 없고 빈칸이 묻는 논리와도 어긋나요."
+],
+[
+27,
+3,
+"reading",
+"r3-p27",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"the one that annihilates the enemy completely",
+"the one achieved with the least destruction",
+"the one won by sheer numbers of soldiers",
+"the one that requires no knowledge of the enemy",
+"the one won in a hundred separate battles"
+],
+[
+2
+],
+"가장 뛰어난 일은 싸우지 않고 적을 굴복시키는 것이고, 전쟁은 나라를 망가뜨릴 만큼 비싸다고 했어요. 그러니 가장 솜씨 있는 승리는 '가장 적게 부수고 얻은 승리'예요. 적을 완전히 없애는 승리는 정반대이고, 적과 나를 알라고 했으니 적을 몰라도 된다는 보기도 반대예요. 병사 수로 이긴다는 말은 근거가 없고, 'won in a hundred separate battles'는 지문 낱말을 섞었지만 백 번 이기는 것이 최고가 아니라고 했어요."
+],
+[
+28,
+3,
+"reading",
+"r3-p28",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"encourage the very behavior they are meant to prevent",
+"reduce the undesirable behavior they describe",
+"make guests more willing to pay extra for freshly laundered towels",
+"persuade audiences better than positive norms do",
+"compare guests with those who stayed in the very room"
+],
+[
+1
+],
+"사람들은 남들, 특히 처지가 비슷한 사람들이 하는 대로 따른다고 했어요. 그러니 '쓰레기 버리는 사람이 많다'고 한탄하는 메시지는 그 행동이 흔하다는 신호가 되어 '막으려던 바로 그 행동을 부추길' 수 있어요. 'reduce the undesirable behavior'·'persuade audiences better than positive norms'는 정반대이고, 수건값은 근거가 없어요. 'compare guests with those who stayed in the very room'은 지문 낱말을 섞었지만 한탄 메시지와 관계없어요."
+],
+[
+29,
+3,
+"reading",
+"r3-p29",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"removing every immune cell before it can mature",
+"soldiers that attack every invader without any restraint or limit at all",
+"vaccines painstakingly developed in laboratories",
+"the thymus, which removes every harmful cell before birth",
+"both soldiers that attack invaders and guardians that restrain them"
+],
+[
+5
+],
+"면역은 침입자를 사납게 공격하면서도 제 몸은 공격하면 안 된다는 딜레마에서 시작해요. 조절 T세포가 몸을 돌며 지나친 면역 반응을 억누른다고 했으니, 방어는 '공격하는 병사와 그들을 제어하는 보호자 둘 다'에 달려 있어요. 'without any restraint or limit at all'은 억누르는 세포가 있다는 내용과 정반대이고, 'the thymus, which removes every harmful cell before birth'는 흉선만으로는 '이야기의 일부일 뿐'이라는 내용과 어긋나요. 백신은 근거가 없고, 'removing every immune cell before it can mature'는 흉선 이야기의 낱말을 섞었지만 모든 면역 세포를 없앤다는 틀린 말이에요."
+],
+[
+30,
+3,
+"reading",
+"r3-p30",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"turn out to confirm every lesson their editors attached",
+"turn out to be simpler and less open to interpretation",
+"turn out to have been written for very young children",
+"turn out to be the very tales the editors dismissed as sour grapes",
+"turn out to be far more ambiguous than their labels suggest"
+],
+[
+5
+],
+"교훈 문장은 후대 편집자가 덧붙인 것이 많고, 여우와 포도 이야기도 읽는 사람에 따라 여러 교훈으로 읽힌다고 했어요. 그러니 교훈을 떼고 읽으면 '붙은 꼬리표보다 훨씬 다의적'이에요. 'confirm every lesson'·'simpler and less open to interpretation'은 정반대이고, 아이들을 위해 썼다는 말은 근거가 없어요. 'the very tales the editors dismissed as sour grapes'는 여우와 신 포도 이야기의 낱말을 섞었지만 초점이 어긋나요."
+],
+[
+31,
+3,
+"reading",
+"r3-p31",
+"(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 알맞은 것을 고르시오.",
+[
+"incurious …… delight …… admission",
+"curious …… delight …… admission",
+"curious …… reluctance …… denial",
+"curious …… delight …… denial",
+"incurious …… reluctance …… admission"
+],
+[
+2
+],
+"(A) 몇 달 동안 말을 걸 용기를 냈다고 했으니 그에게 '궁금했다(curious)'예요. incurious 는 in- 만 붙은 철자 혼동어로 뜻이 반대예요. (B) 막힌 칸을 채우고 그 뒤로 어려운 문제를 남겨 두었으니 '기뻐하며(delight)' 적었어요. (C) 아내와 하던 퍼즐을 혼자 끝내면 아내가 정말 떠났음을 '인정하는(admission)' 느낌이라 함께 풀었다는 흐름이에요."
+],
+[
+32,
+3,
+"reading",
+"r3-p32",
+"(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 알맞은 것을 고르시오.",
+[
+"provide …… improved …… rearranged",
+"deprive …… deteriorated …… deranged",
+"deprive …… improved …… deranged",
+"provide …… deteriorated …… rearranged",
+"deprive …… improved …… rearranged"
+],
+[
+5
+],
+"(A) 밤 열한 시가 넘어야 졸린데 학교가 일찍 시작하니 잠을 '빼앗는다(deprive of)'예요. (B) 잠이 30분 늘어난 뒤 성적과 출석이 '좋아졌다(improved)'는 흐름이에요. (C) 버스·운동·부모 출근 시간을 '다시 짜야(rearranged)' 하는 비용이에요. deranged(미친, 어지럽혀진)는 어근이 같고 앞부분만 다른 철자 혼동어라 뜻이 통하지 않아요."
+],
+[
+33,
+3,
+"reading",
+"r3-p33",
+"글의 주제로 가장 알맞은 것을 고르시오.",
+[
+"the technical architecture of high-impact AI systems",
+"why foreign companies are leaving the Korean market",
+"Korea's attempt to regulate AI while nurturing its industry",
+"the history of the European Union's AI policy",
+"public enthusiasm for AI-generated images and video"
+],
+[
+3
+],
+"한국 인공지능 기본법이 산업 육성과 국민 보호라는 두 목표를 함께 잡으려는 내용과 그에 대한 엇갈린 평가를 다룬 글이라 '산업을 키우면서 AI 를 규제하려는 한국의 시도'가 주제예요. 외국 기업은 대리인을 두라고 했을 뿐 떠난다는 말은 글과 반대이고, 고영향 AI 설계는 한 부분이며, EU 정책의 역사는 너무 넓고, 생성 이미지 열광은 글에 없어요."
+],
+[
+34,
+3,
+"reading",
+"r3-p34",
+"글의 요지로 가장 알맞은 것을 고르시오.",
+[
+"Repairing harm to victims deserves a central place in pursuing justice.",
+"Restorative justice should replace criminal courts for every offense.",
+"Restorative justice is cheaper than any other form of sentencing.",
+"Punishment is the only reliable way to reduce reoffending among young people.",
+"Youth justice systems should copy New Zealand exactly."
+],
+[
+1
+],
+"글쓴이는 회복적 사법이 모든 범죄에서 법원을 대신할 수는 없지만, 처벌뿐 아니라 '망가진 것을 고치는 것'도 정의라는 핵심 통찰은 더 주목받아야 한다고 해요. 모든 범죄에 법원을 대신하라는 보기와 처벌만이 재범을 줄인다는 보기는 글과 반대이고, 비용이 가장 싸다는 말은 글에 없으며, 뉴질랜드는 한 부분 사례예요."
+],
+[
+35,
+3,
+"reading",
+"r3-p35",
+"글의 내용과 일치하는 것을 고르시오.",
+[
+"Handlers' expectations can influence where detection dogs signal.",
+"Human noses contain more scent receptors than dogs' noses.",
+"Laboratory instruments detect smells better than dogs in most cases.",
+"In the 2011 study, target scents were hidden in every room.",
+"The author concludes that detection dogs should no longer be used."
+],
+[
+1
+],
+"냄새가 하나도 없는데도 개들이 표시해 둔 곳에서 자주 신호를 보냈고, 무언가 있다고 믿는 조련사의 작은 신호에 반응한 것으로 보인다고 했으니 일치해요. 개의 수용체가 훨씬 많고, 기계가 따라가기 힘든 수준까지 맡으며, 실험 방에는 냄새를 두지 않았고, 탐지견을 쓰지 말자는 것이 아니라 검색 설계를 바꾸자고 했어요."
+],
+[
+36,
+3,
+"reading",
+"r3-p36",
+"글의 내용과 일치하지 않는 것을 고르시오.",
+[
+"King Sejong gave Jang an official rank despite his background.",
+"Jang Yeong-sil was born into a family of high rank.",
+"The Jagyeongnu used moving figures to sound the hours.",
+"The clock spared officials from watching water levels at night.",
+"A working copy of the clock was rebuilt in the twenty-first century."
+],
+[
+2
+],
+"장영실은 신분이 낮은 집안에서 태어나 관노로 일하다 세종의 눈에 띄었다고 했어요. 높은 신분 출신이라는 문장이 글과 맞지 않아요. 세종이 벼슬을 준 일, 인형이 종·북·징을 쳐 시간을 알린 일, 밤새 물 높이를 지켜보는 수고를 덜어 준 일, 2007년 복원은 모두 글과 같아요."
+],
+[
+37,
+3,
+"reading",
+"r3-s1",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"obedience",
+"intuition",
+"documentation",
+"strength",
+"translation"
+],
+[
+2
+],
+"빈칸 뒤 이야기가 단서예요. 아버지는 설명서 대신 조각을 불빛에 비춰 보고 뜻밖의 자리에 끼웠다가 틀리면 다시 뜯었으니 조립은 '감(intuition)'의 문제였어요. obedience(지시 따르기)·documentation(문서)은 설명서를 따르는 쪽이라 rather than instructions 와 정반대이고, strength(힘)는 근거가 없어요. translation 은 '번역이 엉망인 설명서'에서 따온 지문 낱말이에요."
+],
+[
+38,
+3,
+"reading",
+"r3-s1",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"The Toolbox That Stayed",
+"Assembling Furniture Without a Diagram",
+"A Gift Returned Unused",
+"Fathers and Their Distrust of Diagrams",
+"Moving Day Disasters"
+],
+[
+1
+],
+"형의 첫 자취방에서 아버지가 책장을 맞춰 주고, 형이 그 공구함을 빌려 이사 때마다 가지고 다닌 이야기라 'The Toolbox That Stayed'가 맞아요. 설명서 없는 조립은 이야기의 한 부분이고, 공구함을 금방 돌려줬다는 제목은 오래 간직한 내용과 반대예요. 모든 아버지 이야기로 넓히는 제목은 지나치고, 이사 날 사고는 글에 없어요."
+],
+[
+39,
+3,
+"reading",
+"r3-s2",
+"글의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.",
+[
+"inference",
+"eyewitnesses",
+"coincidence",
+"tradition",
+"nectar"
+],
+[
+1
+],
+"같은 문장 뒤쪽이 단서예요. 난초는 곤충이 꽃가루를 옮기니 꿀에 닿을 만큼 혀가 긴 나방이 '있어야만 한다'고 따져 낸 것이라 '추론(inference)'이에요. eyewitnesses(목격자)는 아무도 그 나방을 본 적이 없다는 내용과 정반대이고, coincidence(우연)도 따져서 낸 결론과 반대예요. tradition(전통)은 근거가 없고, nectar 는 지문 낱말이지만 예측의 바탕이 아니에요."
+],
+[
+40,
+3,
+"reading",
+"r3-s2",
+"글의 제목으로 가장 알맞은 것을 고르시오.",
+[
+"The Spread of Orchids Across Africa",
+"Wallace's Rivalry With Darwin",
+"The Moths of Madagascar",
+"Collecting Orchids in the Nineteenth Century",
+"The Moth That Darwin Foresaw"
+],
+[
+5
+],
+"다윈이 난초 꽃의 모양만 보고 긴 혀 나방이 있다고 예측했고 그것이 사실로 밝혀진 이야기라 'The Moth That Darwin Foresaw'가 맞아요. 월리스는 오히려 다윈의 예측을 옹호했으니 둘의 경쟁이라는 제목은 반대예요. 마다가스카르 나방 전체는 너무 넓고, 난초 수집은 한 부분이며, 아프리카로 퍼진 난초는 글에 없어요."
+]
+]
+}

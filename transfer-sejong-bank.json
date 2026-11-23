@@ -1,0 +1,3169 @@
+{
+"school": "sejong",
+"title": "세종대 편입영어 모의고사",
+"source": "세종대 편입영어 2017~2026학년도 기출 출제 유형(문항 수·영역·문제 꼴, VocabFactory 분석)을 분석해 dailyfreetoolbox 가 새로 만든 연습 문제",
+"checked": "2026-11-23",
+"minutes": 100,
+"sections": [
+{
+"id": "vocab",
+"name": "어휘"
+},
+{
+"id": "analogy",
+"name": "유추"
+},
+{
+"id": "gblank",
+"name": "문법 빈칸"
+},
+{
+"id": "gerror",
+"name": "문법 틀린 곳"
+},
+{
+"id": "reading",
+"name": "독해"
+}
+],
+"points": [
+[
+1,
+10,
+2.8
+],
+[
+11,
+15,
+3.8
+],
+[
+16,
+30,
+3.2
+],
+[
+31,
+45,
+2.8
+],
+[
+46,
+60,
+4.2
+]
+],
+"penalty": 0.25,
+"passages": [
+{
+"id": "r1-s1",
+"text": "Few readers pause to admire the index at the back of a book, yet it is one of the most ingenious tools ever devised for navigating knowledge. Its lineage begins not with printing but with the cloisters and universities of the thirteenth century. Novices and preachers then needed to locate passages swiftly in a burgeoning mass of texts. Learned clerics responded by compiling alphabetical inventories of key terms, each accompanied by a reference to where the term occurred.\nSuch early indexes faced a formidable obstacle. Because every manuscript was transcribed by hand, the same passage fell on a different page in each copy, so references usually had to point to chapters or sections rather than to pages. Only when printing produced thousands of identical copies did the page number become a ____ address, and the index as we know it could flourish.\nNot everyone embraced the innovation. Critics lamented that readers who leapt straight to the index would skim books rather than scrutinize them, plucking out fragments without comprehending the whole.\nThe grievance sounds eerily familiar today, when a search engine can retrieve a single sentence from a vast library. \"Every tool that makes knowledge easier to reach,\" one historian of the book has observed, \"invites the apprehension that it will render knowledge shallower.\""
+},
+{
+"id": "r1-s2",
+"text": "Every search query, streamed film, and chatbot reply hinges on buildings most people never glimpse: data centers, cavernous warehouses crammed with servers that hum incessantly. For years their appetite for electricity grew more sluggishly than many had feared, as engineers wrung more computing out of each watt. The boom in artificial intelligence has upended that picture. Training and operating gargantuan AI models requires specialized chips that consume far more power than conventional servers, and technology companies have been scrambling to erect ever larger facilities to accommodate them.\nThe International Energy Agency estimated that data centers used roughly 1.5 percent of the world's electricity in 2024, and projected that their consumption could roughly double by the end of the decade. The figure sounds innocuous, but the demand is intensely localized. In some regions a single new campus can devour as much power as a mid-sized city, compelling utilities to postpone the retirement of fossil-fuel plants or even to construct new ones. In such places <u>the promise of clean computing</u> can collide with the arithmetic of the local grid.\nWater is a less conspicuous concern. Servers emit intense heat, and many facilities cool them by evaporating water, consuming prodigious volumes in the process. In arid areas, residents and farmers have begun to question whether a server farm should take precedence over their own needs during a drought.\nCompanies retort that they are signing contracts for wind, solar and even nuclear power and piloting cooling systems that recycle water. \"Such pledges are only as dependable as the grids and rivers they draw on,\" one energy analyst countered. Either way, the cloud turns out to be firmly tethered to the ground."
+},
+{
+"id": "r1-s3",
+"text": "In 1977 NASA launched two small spacecraft named Voyager 1 and Voyager 2 on an odyssey to the outer planets. Their primary mission, a close inspection of Jupiter and Saturn, was expected to last about five years. A rare alignment of Jupiter, Saturn, Uranus, and Neptune allowed a probe to swing from one planet to the next by harnessing each planet's gravity. Exploiting it, the twins transmitted the first detailed images of distant moons, rings, and storms. [1] Voyager 2 remains the only spacecraft ever to have visited Uranus and Neptune.\nAstonishingly, both probes remain operational nearly half a century later. In 2012, Voyager 1 became the first human-made object to cross into interstellar space, the region beyond the vast bubble of charged particles blown outward by the Sun; Voyager 2 followed in 2018. [2] Their signals, traveling at the speed of light, now take close to a day to reach Earth, and they arrive so feeble that only colossal dish antennas can detect them.\nSustaining such antiquated machines has become an exercise in ingenuity. The probes draw their electricity from the heat of decaying plutonium. [3] To conserve it, engineers have deactivated heaters and scientific instruments one by one, deliberating carefully over which measurements justify the cost. In late 2023, Voyager 1 began transmitting garbled strings of data. After months of painstaking detective work, the team traced the problem to a single failed memory chip. In 2024 it relocated the affected software to other parts of the memory, restoring the stream of scientific data. [4] \"We repaired it by radio across billions of kilometers on a computer designed in the early 1970s,\" one engineer remarked.\nEach Voyager also carries a gold-plated copper record containing sounds and images of Earth, intended for any sentient beings who might one day stumble upon it. The likelihood that anyone will is vanishingly small, but the record has proved illuminating in another way: it invites people on Earth to ponder what they would choose to convey about themselves to strangers. Sometime in the coming years the probes' power will finally ____, and they will fall silent and drift inexorably toward the stars."
+},
+{
+"id": "r1-s4",
+"text": "Almost everyone has promised to finish a task by a certain date and then ruefully watched the deadline slip past. The psychologists Daniel Kahneman and Amos Tversky gave this ubiquitous experience a name in 1979: the planning fallacy. It is the tendency to underestimate how long a future task will take, even when we know that similar tasks have overrun in the past. The salient feature of the bias is not that we are sometimes wrong, but that our errors skew consistently in one direction.\nLarge public projects offer the most conspicuous examples. The Sydney Opera House was scheduled to open in 1963 at a modest cost but was completed a full decade late and at many times its original budget. Yet the bias is just as pervasive in private life. In one often-cited study, students asked to forecast when they would complete their theses took considerably longer than they had anticipated, and most missed even the date they had offered as a worst-case scenario.\nWhy do we persist in making the same mistake? When we plan, we are prone to envisage the particular steps of the task at hand, picturing <u>a smooth path</u> from start to finish. The interruptions, ailments, and setbacks that derailed earlier ventures seem like aberrations unlikely to recur, so we omit them from the forecast.\nA widely endorsed remedy is to step outside the project and ask a different question: not how long this will take me but how long similar projects took others. Forecasters who begin from such ____ data and only then adjust for the idiosyncrasies of their own case tend to produce estimates that are less flattering but far more accurate."
+},
+{
+"id": "r2-s1",
+"text": "For decades, the manufacture of sophisticated computer chips was left largely to the market, and the market clustered it in a handful of locales. By the early 2020s, most of the world's leading-edge chips were fabricated in Taiwan, while South Korea had become a dominant producer of memory chips. The acute shortages of 2021, which idled car factories from Germany to the United States, transformed this geography into a geopolitical preoccupation. Governments reasoned that chips were too vital to be left to chance.\nWhat followed was a subsidy race. In 2022 the United States enacted the CHIPS and Science Act, which earmarked roughly $52 billion to bolster chip research and domestic manufacturing. The European Union adopted its own chips act the following year, and Japan offered lavish support to a new fabrication plant that Taiwan's TSMC built on the island of Kyushu. Resolved not to lag behind, South Korea expanded tax credits for its own producers.\nProponents contend that the money buys <u>insurance</u>. They observe that a single earthquake, blockade or conflict in East Asia could paralyze the supply of components on which nearly every modern industry depends. Dispersing production across several regions may inflate costs, but it makes the whole system more ____.\nSkeptics remain unpersuaded. Chip foundries are extraordinarily costly, and their success depends on skilled engineers and intricate networks of suppliers that cannot be conjured up with grants alone. \"When affluent governments bid against one another, companies may simply pocket subsidies from whichever country offers the most while taxpayers foot the bill,\" one trade economist cautioned. Some economists also fear that the race could culminate in a glut of factories producing more chips than the world can absorb."
+},
+{
+"id": "r2-s2",
+"text": "Saw through the trunk of a venerable tree, and you will find a chronicle of its life inscribed in concentric rings. In temperate climates, a tree adds one ring annually: pale, rapidly grown wood in spring followed by darker, denser wood in late summer. Tallying the rings discloses the tree's age, but their genuine value resides in their width. [1] In arid regions, a year of abundant rainfall yields a wide ring, while a year of drought leaves only a slender line.\nThe science of reading these records is known as dendrochronology. It was pioneered in the early twentieth century by the American astronomer Andrew Ellicott Douglass. He was seeking evidence that cycles of solar activity influenced the Earth's climate, and he hoped that gnarled old trees in Arizona might have preserved a record of them. [2] His solar hypothesis never won wide acceptance, but his method proved enormously fruitful. Because all the trees in a region experience the same sequence of wet and dry years, they share a distinctive pattern of wide and narrow rings much like a bar code. By collating the overlapping patterns of living trees, old timbers, and preserved wood, researchers can extend a chronology far beyond the lifespan of any single tree.\nIn 1929, Douglass deployed such a chronology to date the wooden beams of ancient dwellings in the American Southwest, telling researchers in which years the buildings had been constructed. [3] Today the same technique is employed to date violins, panel paintings, and the timbers of medieval churches. Because the spruce top of a violin preserves the rings of the tree it came from, experts can judge whether an instrument ascribed to a renowned maker could plausibly have been built in his lifetime.\nTree rings have also become one of the most indispensable archives of past climate. Some bristlecone pines in the mountains of California are more than four thousand years old, and together with long-dead wood their rings record centuries of droughts that no instrument ever gauged. [4] Such records have shown that the American Southwest has endured droughts more protracted and more severe than any experienced in modern times. \"That is a sobering lesson for planners who presume that the climate of the past century is a reliable guide to the future,\" one climatologist has said."
+},
+{
+"id": "r2-s3",
+"text": "Few workplace experiments have garnered as much attention as the four-day week. In 2022 around sixty British companies ranging from software firms to a fish-and-chip shop consented to let their employees work four days a week for six months without any reduction in pay. The stipulation was that productivity should not decline.\nThe results were published the following year and were striking. Most participating companies reported that output held steady, staff reported diminished stress and fatigue, and fewer employees resigned. When the trial ended, the great majority of firms opted to retain the shorter week, at least for the time being. Trials in several other countries have yielded broadly comparable findings.\nSkeptics counsel caution before drawing sweeping conclusions. \"The companies volunteered to take part, so they were probably those most confident that the scheme would succeed,\" one labor economist noted. Many were small offices whose work could be readily reorganized. Hospitals, schools, and factories, where someone must be physically present, face far more formidable obstacles. And some of the gains may reflect the novelty of the experiment rather than an enduring transformation.\nStill, the trials have reframed the debate. The question is no longer whether a shorter week is ____ at all, but for which kinds of work it makes sense and how it should be organized."
+},
+{
+"id": "r2-s4",
+"text": "In a celebrated passage of his Confessions written around the year 400, Augustine describes watching Ambrose, the bishop of Milan, reading in silence: his eyes scanned the page while his voice and tongue remained still. Augustine evidently found the habit worth remarking upon, and for a long time historians took his surprise as conclusive proof that almost everyone in the ancient world read aloud.\nThe explanation seemed self-evident. Greek and Latin texts were commonly written as an unbroken chain of letters, with no gaps to mark where one word ended and the next began. Scholars argued that deciphering such a page required sounding it out, much as a child learning to read still does. Reading was therefore a communal and audible act, often performed for listeners rather than in private.\nMore recent scholarship has <u>complicated this tidy picture</u>. Sporadic references in ancient plays and letters suggest that silent reading, though perhaps less common, was by no means unknown. What astonished Augustine may have been not the silence itself but the bishop's refusal to share what he was reading with the visitors waiting before him.\nEven so, there is scant doubt that the habit became far more prevalent in the Middle Ages. Scribes in Ireland and Britain who were transcribing a Latin they had not grown up speaking began to demarcate words with spaces, and the practice then gradually diffused across Europe. A page divided into words could be absorbed by the eye alone, quickly and ____. Silent reading in turn made the book a more personal companion that could harbor unorthodox ideas, intimate confessions or simply the reader's own unhurried thoughts."
+},
+{
+"id": "r3-s1",
+"text": "Economists have long acknowledged that a dismal harvest can inflate the price of bread. What is novel is how frequently bad harvests now materialize, and how many crops they afflict at once. Pundits have coined an ungainly word for the result: <u>climateflation</u>, the upward pressure on prices engendered by a warmer and more erratic climate.\nRecent years have furnished ample examples. Côte d'Ivoire and Ghana jointly cultivate more than half of the world's cocoa and suffered meager harvests after anomalous heat and torrential rains fostered disease, so in 2024 cocoa prices soared to record highs. This ratcheted up the cost of chocolate worldwide. In Spain, the foremost producer of olive oil, two consecutive years of drought slashed output, and supermarket prices for the oil more than doubled. Coffee, oranges, and rice have all endured similar upheavals.\nFor central banks, such price surges pose a vexing ____. \"Raising interest rates can dampen demand but cannot make rain fall on parched fields or resurrect a ruined harvest,\" one central banker conceded. If food prices spike because of capricious weather, more stringent monetary policy may slow the economy without addressing the cause. Yet if central bankers disregard the shocks and they become chronic, households may come to anticipate permanently elevated inflation.\nThe burden is distributed inequitably. Affluent households devote only a modest share of their income to food, so a costlier chocolate bar is a trifling irritation. For impoverished families, particularly in countries that import most of their food, the same shocks can entail skipped meals. Adaptation, from drought-tolerant cultivars to more diversified sources of supply, will alleviate the strain. Yet few economists expect the pressure to dissipate while the climate continues to warm."
+},
+{
+"id": "r3-s2",
+"text": "Why do zebras have stripes? The question has perplexed naturalists since the nineteenth century, and the conjectures offered have been almost as diverse as the animals' markings. Some speculated that the stripes camouflage zebras in tall grass or bewilder lions during a pursuit. Others thought they help the animals dissipate heat or enable them to recognize one another.\nOver the past two decades, field observations and controlled experiments have tilted the debate toward a more prosaic explanation: flies. Biting flies such as horseflies transmit diseases that can be lethal to horses and their kin, and zebras inhabit regions where such insects proliferate.\nIn one trial in Britain, researchers draped horses in black-and-white striped coats. Flies approached the striped coats about as often as plain ones, but they rarely succeeded in alighting on them, apparently because the pattern disoriented them during the final moments of approach.\nThe other theories have not been entirely discarded, and stripes may fulfill more than one function. \"Lions seem to have little difficulty catching zebras,\" one field biologist noted, a fact that undermines the notion of stripes as protection against formidable predators. The pattern that spawned so much speculation may owe its existence chiefly to some of the most diminutive creatures on the savanna."
+},
+{
+"id": "r3-s3",
+"text": "\"Watch the water, not the boat,\" my aunt said on the first morning, and for the rest of that summer she said very little else. She had sailed the lake behind her house for thirty years. When my parents dispatched me to stay with her at fifteen, sullen and convinced I would be bored, she simply handed me a life jacket and pointed at a small wooden dinghy moored at the dock.\nI learned slowly and clumsily. I capsized twice in the first week, snarled the ropes so thoroughly that it took an hour to disentangle them, and once drifted so far downwind that she had to row out and tow me home. She never reproached me, but she never praised me either. When I finally managed a clean turn, she glanced up from her newspaper, nodded once and returned to her reading. I concluded she found me tedious.\nIn late August, we were halfway across the lake together when the wind veered without warning. The sky to the west assumed the color of a bruise, and gusts began to darken the water in patches that hurtled toward us. I reached for the tiller to surrender it to her, but she folded her arms and told me it was my boat. For twenty minutes I wrestled with the gusts, easing the sail out whenever a dark patch struck and steering us inch by inch toward the dock. My hands were raw and my heart was hammering when we bumped against the wood. \"You watched the water,\" she said after she had secured the boat and stepped ashore.\nIt took me years to comprehend that afternoon. I had mistaken her silence for indifference, when it was something closer to <u>a vote of confidence</u>: she had been scrutinizing me all summer, and she had decided I was ready long before I believed it myself. I have taught many people to sail since then, and I still find it harder to stay silent than to dispense instructions. But I have learned that the most ____ thing a teacher can sometimes do is step back and let the student hold the tiller."
+},
+{
+"id": "r3-s4",
+"text": "For most of history, blue was the most precious color a painter could employ. The finest blue pigment, ultramarine, was ground from lapis lazuli, a semi-precious stone quarried in the remote mountains of what is now northeastern Afghanistan. Its name, meaning 'beyond the sea,' evokes the arduous journey the stone made to reach European workshops. Extracting the pure pigment was laborious: the stone had to be pulverized, blended into a paste, and kneaded repeatedly to isolate the blue particles from impurities. At times, the result was more costly than gold.\nSuch extravagance shaped the symbolism of the color. In Renaissance Italy, patrons who commissioned altarpieces sometimes stipulated in their contracts how much ultramarine was to be used and on which figures, and the resplendent blue was customarily reserved for the robes of the Virgin Mary. A viewer did not need to peruse a contract to decipher the message: the most ____ material was devoted to the most sacred subject.\nThe color's exclusivity dissolved in the nineteenth century. In 1824 a French society offered a prize to anyone who could synthesize ultramarine at a reasonable price, and within a few years a chemist claimed it with a synthetic version. The new pigment was chemically virtually identical to the natural one and cost a small fraction as much.\nInexpensive blue revolutionized painting. Artists could now lavish it on skies and seas, and some later painters would construct entire works around it. Yet something was forfeited as well as gained. \"Once any painter could afford it, ultramarine ceased to connote wealth or piety,\" one art historian has written. Blue became merely one color among many, cherished for its beauty rather than its price."
+}
+],
+"q": [
+[
+1,
+1,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nOnce a ____ trade that made several merchant families rich, the export of dried fish dwindled sharply after refrigerated shipping became cheap and commonplace.",
+[
+"lugubrious",
+"lucrative",
+"arboreal",
+"verbose"
+],
+[
+2
+],
+"몇몇 상인 집안을 부자로 만든 장사였다는 말이 단서라 '돈벌이가 되는(lucrative)'이 맞아요. lugubrious 는 철자만 비슷한 '침울한'이고, arboreal(나무에 사는)·verbose(장황한)는 문맥과 관계없어요."
+],
+[
+2,
+1,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nHoping to ____ the irate farmers before the election, the minister promised to defer the new water levy and to visit every affected village personally.",
+[
+"irrigate",
+"excavate",
+"transcribe",
+"conciliate"
+],
+[
+4
+],
+"세금을 미루고 마을마다 직접 찾아가겠다고 약속했으니 성난 농민을 '달래려는(conciliate)' 것이에요. irrigate(물을 대다)·excavate(발굴하다)·transcribe(옮겨 적다)는 문맥과 관계없어요."
+],
+[
+3,
+1,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nOur ____ tour guide chattered without pause for three hours, leaving us almost no time to contemplate the paintings we had traveled so far to see.",
+[
+"myopic",
+"aquatic",
+"metallic",
+"garrulous"
+],
+[
+4
+],
+"세 시간 내내 쉬지 않고 말했다는 설명이 단서라 '수다스러운(garrulous)'이 맞아요. myopic(근시의)·aquatic(물에 사는)·metallic(금속의)은 문맥과 관계없어요."
+],
+[
+4,
+1,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nBefore the final match, the coach did not criticize anyone; instead, she chose to ____ her exhausted players to give everything for one last half.",
+[
+"exhort",
+"laminate",
+"fumigate",
+"embroider"
+],
+[
+1
+],
+"꾸짖지 않고 대신(instead) 마지막까지 다 쏟으라고 했으니 '권하다, 북돋우다(exhort)'가 맞아요. laminate(얇게 입히다)·fumigate(훈증 소독하다)·embroider(수놓다)는 문맥과 관계없어요."
+],
+[
+5,
+1,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nAfter the scandal, the party moved quickly to ____ the senator's remarks, insisting that they in no way reflected its official views.",
+[
+"hibernate",
+"pollinate",
+"repudiate",
+"upholster"
+],
+[
+3
+],
+"그 발언이 당의 공식 입장이 전혀 아니라고 했으니 발언을 '부인하다, 거부하다(repudiate)'가 맞아요. hibernate(겨울잠 자다)·pollinate(꽃가루를 옮기다)·upholster(덮개를 씌우다)는 문맥과 관계없어요."
+],
+[
+6,
+1,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nForfeiting the contract was painful, but it proved a ____ lesson: the company finally stopped relying on a single client and began to diversify.",
+[
+"nautical",
+"porous",
+"salutary",
+"galvanic"
+],
+[
+3
+],
+"아팠지만(but) 거래처를 늘리는 계기가 됐으니 '유익한(salutary)' 교훈이에요. nautical(항해의)·porous(구멍이 많은)·galvanic(전류의)은 문맥과 관계없어요."
+],
+[
+7,
+1,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nEconomists cautioned that the ____ shipbuilding industry, which had not secured a major order in a decade, could not survive without fundamental reform.",
+[
+"amphibious",
+"moribund",
+"culinary",
+"lyrical"
+],
+[
+2
+],
+"10년 동안 큰 주문을 못 받았고 개혁 없이는 살아남기 어렵다고 했으니 '다 죽어 가는(moribund)' 산업이에요. amphibious(물과 뭍 양쪽의)·culinary(요리의)·lyrical(서정적인)은 문맥과 관계없어요."
+],
+[
+8,
+1,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nA ____ reader since childhood, she routinely finished three or four novels a week and still grumbled that the library could not keep up.",
+[
+"veracious",
+"geological",
+"rectangular",
+"voracious"
+],
+[
+4
+],
+"한 주에 소설 서너 권을 읽고도 모자랐다니 '왕성하게 읽는(voracious)' 독자예요. veracious(진실한)는 철자만 비슷하고, geological(지질의)·rectangular(직사각형의)는 문맥과 관계없어요."
+],
+[
+9,
+1,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nFaced with a precipitous drop in revenue, the city council voted to ____ spending on new ventures and to postpone the stadium renovation indefinitely.",
+[
+"serenade",
+"curtail",
+"embalm",
+"paraphrase"
+],
+[
+2
+],
+"수입이 갑자기 줄어 경기장 공사도 미뤘으니 새 사업 지출을 '줄이다(curtail)'가 맞아요. serenade(세레나데를 부르다)·embalm(방부 처리하다)·paraphrase(바꿔 말하다)는 문맥과 관계없어요."
+],
+[
+10,
+1,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nDespite hours of relentless pressure from his attorneys, the witness remained ____ that he had seen the defendant at the station that night and refused to change his story.",
+[
+"edible",
+"adamant",
+"nocturnal",
+"ornamental"
+],
+[
+2
+],
+"몇 시간 압박에도 진술을 바꾸지 않았으니 '단호한(adamant)'이 맞아요. edible(먹을 수 있는)·nocturnal(야행성의)·ornamental(장식용의)은 문맥과 관계없어요."
+],
+[
+11,
+1,
+"analogy",
+null,
+"주어진 단어 쌍과 관계가 가장 비슷한 것을 고르시오.\n[보기] HOT : COLD :: ① large : big ② up : down ③ red : color ④ hand : finger (두 낱말이 반대 관계라 정답은 ②)\ntheologian : religion ::",
+[
+"botanist : greenhouse",
+"geologist : hammer",
+"astronomer : stars",
+"historian : archivist"
+],
+[
+3
+],
+"신학자는 종교를 연구하는 사람이에요(학자 : 연구 대상). 천문학자와 별도 같은 관계예요. 식물학자와 온실은 '사람 : 일하는 곳', 지질학자와 망치는 '사람 : 도구', 역사가와 기록 관리인은 함께 일하는 사람이에요."
+],
+[
+12,
+1,
+"analogy",
+null,
+"주어진 단어 쌍과 관계가 가장 비슷한 것을 고르시오.\nfrugal : extravagant ::",
+[
+"momentary : short-lived",
+"annual : year",
+"clock : time",
+"transient : permanent"
+],
+[
+4
+],
+"검소한 것과 사치스러운 것은 반대 관계예요. 잠깐인 것과 영구적인 것이 같은 반대 관계예요. momentary 와 short-lived 는 비슷한 말, annual 과 year 는 '형용사 : 바탕 명사', clock 과 time 은 '도구 : 재는 것'이에요."
+],
+[
+13,
+1,
+"analogy",
+null,
+"주어진 단어 쌍과 관계가 가장 비슷한 것을 고르시오.\nthermometer : temperature ::",
+[
+"scale : weight",
+"telescope : astronomer",
+"hammer : nail",
+"map : traveler"
+],
+[
+1
+],
+"온도계는 온도를 재는 도구예요(도구 : 재는 것). 저울과 무게가 같은 관계이고, 망원경과 천문학자는 '도구 : 쓰는 사람'이에요."
+],
+[
+14,
+1,
+"analogy",
+null,
+"주어진 단어 쌍과 관계가 가장 비슷한 것을 고르시오.\ncub : bear ::",
+[
+"flock : sheep",
+"nest : bird",
+"foal : horse",
+"horn : deer"
+],
+[
+3
+],
+"새끼 곰과 곰은 '새끼 : 어미' 관계예요. 망아지와 말이 같고, flock 은 무리, nest 는 사는 곳, horn 은 몸의 일부예요."
+],
+[
+15,
+1,
+"analogy",
+null,
+"주어진 단어 쌍과 관계가 가장 비슷한 것을 고르시오.\ndrought : famine ::",
+[
+"cough : cold",
+"infection : fever",
+"surgeon : scalpel",
+"bandage : laceration"
+],
+[
+2
+],
+"가뭄이 기근을 부르는 '원인 : 결과' 관계예요. 감염이 열을 부르는 것과 같아요. 기침과 감기는 순서가 거꾸로(결과 : 원인)이고, 외과 의사와 메스는 '사람 : 도구', 붕대와 찢어진 상처는 '도구 : 쓰는 대상'이에요."
+],
+[
+16,
+1,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nNobody on the oversight committee could elucidate ____ for a project that had never been formally approved.",
+[
+"why had the money been spent",
+"why the money had spent been",
+"why the money had been spent",
+"the money why had been spent"
+],
+[
+3
+],
+"elucidate 의 목적어로 들어간 간접의문문은 '의문사 + 주어 + 동사' 순서예요. 돈은 '쓰인' 것이라 had been spent 가 한 덩어리로 주어 뒤에 와요."
+],
+[
+17,
+1,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nThe new bridge is not ____ heavy trucks, so they must still rely on the precarious old ferry.",
+[
+"strong enough to carry",
+"enough strong to carry",
+"strong to carry enough",
+"enough to carry strong"
+],
+[
+1
+],
+"enough 가 형용사를 꾸밀 때는 형용사 뒤에 와요(strong enough). 그 뒤에 to부정사가 이어져요."
+],
+[
+18,
+1,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nAlthough the museum is hugely popular with foreign tourists, ____ local residents have ever visited its new wing.",
+[
+"a only handful of",
+"only handful of a",
+"a handful only of",
+"only a handful of"
+],
+[
+4
+],
+"'몇 안 되는'은 a handful of 로 쓰고, only 는 그 앞에 와서 only a handful of 가 돼요. a 와 of 는 handful 에 붙어 다녀요."
+],
+[
+19,
+1,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nThe perfunctory lecture was ____ several students dozed off before the first half had ended.",
+[
+"so poorly organized that",
+"poorly so organized that",
+"so organized poorly that",
+"so poorly that organized"
+],
+[
+1
+],
+"'너무 ~해서 …하다'는 so + 부사 + 형용사 + that 순서예요. so 는 poorly organized 앞에, that 은 뒤 절 바로 앞에 와요."
+],
+[
+20,
+1,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\n____ a city grows, the harder it becomes to provide affordable housing for its burgeoning workforce.",
+[
+"The fastest",
+"Faster",
+"The faster",
+"As faster"
+],
+[
+3
+],
+"'~할수록 더 …하다'는 'the 비교급, the 비교급' 꼴이에요. 뒤에 the harder 가 있으니 앞도 The faster 예요."
+],
+[
+21,
+1,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nThe archival documents ____ in the basement of the derelict courthouse shed new light on the town's obscure early history.",
+[
+"discovering last spring",
+"discovered last spring",
+"were discovered last spring",
+"which discovered last spring"
+],
+[
+2
+],
+"문서는 '발견된' 것이라 과거분사 discovered 가 뒤에서 꾸며요. 문장의 동사는 shed 라서 were 를 또 쓸 수 없어요."
+],
+[
+22,
+1,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nThe surgeon recommended that the patient ____ for two weeks to avoid aggravating the wound.",
+[
+"does not lift anything heavy",
+"not lifts anything heavy",
+"to not lift anything heavy",
+"not lift anything heavy"
+],
+[
+4
+],
+"recommend that 뒤 절에는 동사원형을 써요(should 생략). 부정은 not + 원형이라 not lift 가 맞아요."
+],
+[
+23,
+1,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\n____ most was how quickly the bleached coral began to regenerate.",
+[
+"That surprised the researchers",
+"What surprised the researchers",
+"Which the researchers surprised",
+"It surprised the researchers"
+],
+[
+2
+],
+"주어 자리에 '~한 것'이 필요하니 선행사를 품은 What 이 맞아요. That 은 뒤에 완전한 절이 와야 해요."
+],
+[
+24,
+1,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nNot only ____ the deadline, but it also exceeded its already exorbitant budget by nearly a third.",
+[
+"the project did miss",
+"did miss the project",
+"the project miss did",
+"did the project miss"
+],
+[
+4
+],
+"부정어 Not only 가 문장 앞에 오면 조동사가 주어 앞으로 나와요(did the project miss)."
+],
+[
+25,
+1,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nThe population of the sprawling capital is far larger than ____ any other city in the country.",
+[
+"those of",
+"that of",
+"it of",
+"of that"
+],
+[
+2
+],
+"비교 대상은 '다른 도시의 인구'예요. 단수 the population 을 다시 받으니 that of 가 맞아요. those of 는 복수를 받을 때 써요."
+],
+[
+26,
+1,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\n____ that a road this long was built entirely by hand, without the aid of any mechanized equipment.",
+[
+"It is remarkable",
+"That is remarkable",
+"What is remarkable",
+"It remarkable is"
+],
+[
+1
+],
+"that절이 진짜 주어이고 앞에 가주어 It 을 세워요. What is remarkable 은 뒤에 is 가 하나 더 있어야 해요."
+],
+[
+27,
+1,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nShe inherited ____ from her eccentric grandmother, who had carefully shipped it from Italy.",
+[
+"a wooden beautiful old table",
+"a beautiful wooden old table",
+"a beautiful old wooden table",
+"a table beautiful old wooden"
+],
+[
+3
+],
+"형용사가 여럿이면 '평가(beautiful) → 나이(old) → 재료(wooden)' 순서로 명사 앞에 놓아요."
+],
+[
+28,
+1,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nThe number of students applying to study abroad ____ every year since 2015, alarming university administrators.",
+[
+"have declined steadily",
+"has steadily declining",
+"has declined steadily",
+"declining steadily has"
+],
+[
+3
+],
+"The number of 는 '수'라는 단수 주어라 has 예요. since 2015 가 있어 현재완료가 맞아요."
+],
+[
+29,
+1,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\n____ wins the election, the new government will face a formidable budget deficit.",
+[
+"No matter who",
+"No matter whom",
+"Whatever who",
+"Who no matter"
+],
+[
+1
+],
+"빈칸 뒤 wins 의 주어가 필요하니 주격 who 를 쓴 No matter who(누가 ~하든)가 맞아요."
+],
+[
+30,
+1,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nThe monastic library, which ____ nearly two centuries ago, still preserves many of its pristine original manuscripts.",
+[
+"has been founded",
+"founded",
+"had founded",
+"was founded"
+],
+[
+4
+],
+"ago 는 과거 시점이라 현재완료와 함께 못 써요. 도서관은 '세워진' 것이라 수동 과거 was founded 예요."
+],
+[
+31,
+1,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nOfficials asserted that the new subway line, ①<u>which</u> opened last month, has ②<u>significant</u> reduced commuting times for residents ③<u>living</u> in the city's ④<u>eastern</u> suburbs.",
+[
+"which",
+"significant",
+"living",
+"eastern"
+],
+[
+2
+],
+"과거분사 reduced 를 꾸미는 자리라 부사 significantly 가 와야 해요."
+],
+[
+32,
+1,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe relentless rise in rents, ①<u>combined</u> with stagnant wages, ②<u>has pushed</u> many young workers ③<u>to share</u> apartments, a trend that analysts say ④<u>are</u> unlikely to reverse soon.",
+[
+"combined",
+"has pushed",
+"to share",
+"are"
+],
+[
+4
+],
+"that 의 선행사는 단수 a trend 예요. analysts say 는 끼어든 말이라 동사는 is 가 맞아요."
+],
+[
+33,
+1,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe hamlet ①<u>has</u> long depended on a single precarious road ②<u>that</u> is often closed in winter, and, ③<u>surrounding</u> by mountains on three sides, it remains ④<u>largely</u> cut off.",
+[
+"has",
+"that",
+"surrounding",
+"largely"
+],
+[
+3
+],
+"마을은 산에 '둘러싸인' 것이라 과거분사 surrounded 가 와야 해요. by 가 수동의 단서예요."
+],
+[
+34,
+1,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe company announced a recall of its flagship model, ①<u>citing</u> a battery defect that ②<u>could cause</u> overheating, ③<u>that</u> dismayed investors who had ④<u>expected</u> strong sales.",
+[
+"citing",
+"could cause",
+"that",
+"expected"
+],
+[
+3
+],
+"콤마 뒤에서 앞 내용 전체를 받는 계속적 용법에는 that 을 쓸 수 없어 which 가 맞아요. 앞의 a battery defect that 은 제한적 용법이라 괜찮아요."
+],
+[
+35,
+1,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nMany residents ①<u>who</u> live near the bustling harbor ②<u>remain strongly</u> opposed ③<u>to build</u> a new cruise terminal, ④<u>arguing</u> that it would exacerbate congestion and pollution.",
+[
+"who",
+"remain strongly",
+"to build",
+"arguing"
+],
+[
+3
+],
+"be opposed to 의 to 는 전치사라 뒤에 동명사가 와요. to building 이 맞아요."
+],
+[
+36,
+1,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nA rescue team, ①<u>guided</u> by a signal from his phone, ②<u>finally</u> reached the disoriented hiker, who ③<u>had been</u> missing since dawn and had ④<u>laid</u> on the frozen ground for six hours.",
+[
+"guided",
+"finally",
+"had been",
+"laid"
+],
+[
+4
+],
+"'누워 있었다'는 자동사 lie 를 써서 had lain 이 돼야 해요. laid 는 '~을 놓다(lay)'의 과거·과거분사라 목적어가 필요해요."
+],
+[
+37,
+1,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nSince the antiquated factory ①<u>closed</u> in 2019, the town's population ②<u>has fallen by a fifth</u>, and several schools ③<u>that once served</u> hundreds of pupils have ④<u>been disappeared</u> entirely.",
+[
+"closed",
+"has fallen by a fifth",
+"that once served",
+"been disappeared"
+],
+[
+4
+],
+"disappear 는 목적어를 받지 않는 자동사라 수동태로 쓸 수 없어요. been 을 빼고 have disappeared 로 써야 해요."
+],
+[
+38,
+1,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nRecent surveys ①<u>suggest</u> that the political opinions of younger voters often diverge sharply from ②<u>that</u> of their parents, ③<u>especially</u> on issues ④<u>related</u> to climate and housing.",
+[
+"suggest",
+"that",
+"especially",
+"related"
+],
+[
+2
+],
+"받는 말이 복수 the political opinions 라 that 이 아니라 those 로 받아야 해요(those of their parents)."
+],
+[
+39,
+1,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nArchaeologists ①<u>diving</u> on the submerged wreck said that among the objects ②<u>they</u> recovered ③<u>was</u> two bronze statues ④<u>made</u> in Greece more than two thousand years ago.",
+[
+"diving",
+"they",
+"was",
+"made"
+],
+[
+3
+],
+"장소 부사구 among the objects ~ 가 앞으로 나온 도치라 주어는 뒤의 two bronze statues(복수)예요. 동사는 were 가 맞아요."
+],
+[
+40,
+1,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nOfficials ①<u>praised</u> the scheme for ②<u>encouraging</u> farmers to adopt sophisticated irrigation, but its long-term ③<u>impact</u> on yields, and the ④<u>effective</u> of its subsidies, remain ambiguous.",
+[
+"praised",
+"encouraging",
+"impact",
+"effective"
+],
+[
+4
+],
+"the 와 of 사이는 명사 자리라 형용사 effective 가 아니라 명사 effectiveness 가 와야 해요."
+],
+[
+41,
+1,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe volcano, which had been dormant for decades, ①<u>suddenly</u> erupted last week, ②<u>forced</u> thousands of residents ③<u>to flee</u> ④<u>their</u> homes.",
+[
+"suddenly",
+"forced",
+"to flee",
+"their"
+],
+[
+2
+],
+"문장의 동사는 erupted 하나예요. 콤마 뒤는 결과를 덧붙이는 분사구문이라 forcing 이 맞아요."
+],
+[
+42,
+1,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nSafety inspectors announced that the bridge ①<u>would</u> remain closed ②<u>until</u> engineers had completed a ③<u>through</u> examination of the corroded cables ④<u>damaged</u> in the storm.",
+[
+"would",
+"until",
+"through",
+"damaged"
+],
+[
+3
+],
+"명사 examination 을 꾸미는 '철저한'은 thorough 예요. through 는 '~을 통해'라는 전치사예요."
+],
+[
+43,
+1,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\n①<u>That</u> the report ②<u>recommended</u> was a modest levy on sugary drinks, a controversial measure ③<u>that</u> several other countries ④<u>have</u> already adopted.",
+[
+"That",
+"recommended",
+"that",
+"have"
+],
+[
+1
+],
+"recommended 의 목적어가 빠진 불완전한 절이 주어 자리에 왔으니 That 이 아니라 What 이 맞아요."
+],
+[
+44,
+1,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe festival, which ①<u>now attracts</u> devotees from around the world, ②<u>began</u> as a modest gathering of amateur musicians that ③<u>has taken</u> place more than forty years ago ④<u>in</u> a parking lot.",
+[
+"now attracts",
+"began",
+"has taken",
+"in"
+],
+[
+3
+],
+"more than forty years ago 는 지난 시점이라 현재완료를 쓸 수 없어요. took place 가 맞아요."
+],
+[
+45,
+1,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe novel, ①<u>written</u> in just six weeks, ②<u>became</u> an improbable ③<u>bestseller</u> and has since ④<u>translated</u> into more than thirty languages.",
+[
+"written",
+"became",
+"bestseller",
+"translated"
+],
+[
+4
+],
+"소설은 '번역된' 것이라 has since been translated 로 수동이 돼야 해요. translated 앞에 been 이 빠졌어요."
+],
+[
+46,
+1,
+"reading",
+"r1-s1",
+"What is the passage mainly about?",
+[
+"why printed books replaced handwritten manuscripts",
+"the methods medieval monks used to transcribe the Bible by hand",
+"how the book index developed and the worries it provoked",
+"how search engines rank information online"
+],
+[
+3
+],
+"13세기 낱말 목록에서 시작해 인쇄 뒤 쪽수 색인으로 자리 잡은 과정과, 책을 대충 읽게 만든다는 걱정까지 다뤄요. 인쇄·검색 엔진은 곁가지예요."
+],
+[
+47,
+1,
+"reading",
+"r1-s1",
+"Which of the following best fills in the blank?",
+[
+"reliable",
+"ornamental",
+"clandestine",
+"temporary"
+],
+[
+1
+],
+"같은 구절이 사본마다 다른 쪽에 놓였지만 인쇄본은 똑같아서 쪽수가 '믿을 수 있는(reliable)' 주소가 됐다는 흐름이에요."
+],
+[
+48,
+1,
+"reading",
+"r1-s1",
+"Why did early indexes refer to chapters or sections rather than to pages?",
+[
+"Because most medieval readers could not decipher page numbers.",
+"Because friars in the universities were prohibited from numbering the pages of sacred texts.",
+"Because printed books had not yet been bound into volumes.",
+"Because the same passage fell on different pages in different handwritten copies."
+],
+[
+4
+],
+"손으로 베낀 책은 같은 구절이 사본마다 다른 쪽에 놓여서 쪽수 대신 장·절을 가리켰다고 했어요."
+],
+[
+49,
+1,
+"reading",
+"r1-s2",
+"What does the underlined phrase most likely refer to?",
+[
+"the practice of evaporating large volumes of water to cool the servers in data centers",
+"the ability of AI to supplant human labor",
+"technology companies' pledges to run their facilities on low-carbon energy",
+"a fall in electricity prices for ordinary consumers"
+],
+[
+3
+],
+"뒤 문단에서 기업들이 풍력·태양광·원자력 계약을 맺는다고 했어요. '깨끗한 컴퓨팅'이라는 약속이 화석연료 발전소를 더 돌려야 하는 지역 전력 사정과 부딪친다는 뜻이에요."
+],
+[
+50,
+1,
+"reading",
+"r1-s2",
+"Which of the following is true according to the passage?",
+[
+"Data centers used about 15 percent of global electricity in 2024.",
+"Many facilities cool their servers by evaporating water.",
+"AI chips consume less power than conventional servers.",
+"The IEA expects data center consumption to fall by 2030."
+],
+[
+2
+],
+"많은 시설이 물을 증발시켜 서버를 식힌다고 했어요. 전력 비중은 약 1.5퍼센트이고, AI 칩은 전력을 더 많이 쓰며, 소비는 두 배쯤 늘 것으로 봤어요."
+],
+[
+51,
+1,
+"reading",
+"r1-s2",
+"Why have some utilities delayed the retirement of fossil-fuel plants?",
+[
+"To meet the large power demand of new data centers.",
+"Because wind and solar power became prohibitively expensive.",
+"Because residents protested against new power lines.",
+"To supply water for cooling nearby farms."
+],
+[
+1
+],
+"새 데이터센터 한 곳이 중간 크기 도시만큼 전기를 써서 전력 회사가 화석연료 발전소 폐쇄를 미룬다고 했어요."
+],
+[
+52,
+1,
+"reading",
+"r1-s2",
+"Which of the following can be inferred from the passage?",
+[
+"Cloud computing will soon move underground to conserve energy.",
+"Digital services that seem weightless rely heavily on physical resources.",
+"Most new data centers are deliberately built in regions with copious rainfall.",
+"Water shortages have already shut down most data centers."
+],
+[
+2
+],
+"마지막 문장 '구름(cloud)은 땅에 단단히 뿌리박고 있다'는, 눈에 안 보이는 디지털 서비스도 전기·물·땅 같은 물리 자원에 기댄다는 뜻으로 읽혀요."
+],
+[
+53,
+1,
+"reading",
+"r1-s3",
+"Where would the following sentence best fit in the passage?\nThat supply shrinks a little every year, and the spacecraft now have far less power than they did at launch.",
+[
+"[1]",
+"[2]",
+"[3]",
+"[4]"
+],
+[
+3
+],
+"That supply 는 바로 앞 '붕괴하는 플루토늄의 열에서 얻는 전기'를 가리키고, 뒤의 To conserve it(그것을 아끼려고)과 이어져요. 그래서 [3]이에요."
+],
+[
+54,
+1,
+"reading",
+"r1-s3",
+"Which of the following best fills in the blank?",
+[
+"surge",
+"recover",
+"double",
+"fail"
+],
+[
+4
+],
+"전력이 해마다 줄어든다고 했으니 결국 전력이 '바닥나(fail)' 탐사선이 조용해진다는 흐름이에요. 뒤의 fall silent 가 단서예요."
+],
+[
+55,
+1,
+"reading",
+"r1-s3",
+"Which of the following is NOT true according to the passage?",
+[
+"The mission was originally expected to last about five years.",
+"Voyager 1 was the only probe to visit Uranus and Neptune.",
+"Voyager 2 entered interstellar space after Voyager 1.",
+"The probes are powered by heat from decaying plutonium."
+],
+[
+2
+],
+"천왕성과 해왕성에 간 탐사선은 보이저 2호뿐이라고 했어요. 1호라고 한 이 문장이 글과 달라요."
+],
+[
+56,
+1,
+"reading",
+"r1-s3",
+"What caused Voyager 1 to transmit garbled data in late 2023?",
+[
+"A single memory chip had failed.",
+"Its plutonium supply had run out completely.",
+"It had collided with an object in interstellar space.",
+"Its original engineers had all retired."
+],
+[
+1
+],
+"몇 달 동안 원인을 추적한 끝에 메모리 칩 하나가 고장 난 것을 찾아냈고, 소프트웨어를 다른 메모리로 옮겨 고쳤다고 했어요."
+],
+[
+57,
+1,
+"reading",
+"r1-s4",
+"Which of the following best fills in the blank?",
+[
+"confidential",
+"comparative",
+"personal",
+"fabricated"
+],
+[
+2
+],
+"내 일이 아니라 '비슷한 일을 남들은 얼마나 걸렸나'에서 출발하라는 처방이니 '비교할 수 있는(comparative)' 자료예요. personal 은 바로 그 반대 시각이에요."
+],
+[
+58,
+1,
+"reading",
+"r1-s4",
+"What does the underlined phrase suggest about how people plan?",
+[
+"They prefer to begin with easy tasks before turning to difficult ones.",
+"They meticulously list every conceivable setback.",
+"They rely on the experience of other people.",
+"They imagine the task proceeding without obstacles."
+],
+[
+4
+],
+"계획할 때 눈앞의 단계만 떠올려 처음부터 끝까지 '매끄러운 길'을 그리고, 방해·병·좌절은 빼 버린다는 뜻이에요."
+],
+[
+59,
+1,
+"reading",
+"r1-s4",
+"Which of the following is true according to the passage?",
+[
+"The planning fallacy was first described in the 1990s.",
+"The Sydney Opera House was finished ten years later than planned.",
+"Most students in the study finished before their worst-case date.",
+"The bias makes people's forecasting errors fall randomly in both directions."
+],
+[
+2
+],
+"오페라하우스는 1963년 개관 예정이었으나 꼬박 10년 늦게 끝났다고 했어요. 이름은 1979년에 붙었고, 학생 대부분은 최악의 날짜도 넘겼어요."
+],
+[
+60,
+1,
+"reading",
+"r1-s4",
+"According to the passage, what makes the planning fallacy distinctive?",
+[
+"It affects only large public projects.",
+"It vanishes once people deliberately recall the delays of past projects.",
+"Its errors consistently point in the same direction.",
+"It was discovered by studying opera houses."
+],
+[
+3
+],
+"이 편향의 두드러진 점은 가끔 틀린다는 것이 아니라 오차가 늘 한쪽(너무 짧게)으로 쏠린다는 것이라고 했어요."
+],
+[
+1,
+2,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nEven during the acrimonious debate, the two candidates remained ____, addressing each other courteously and never once raising their voices.",
+[
+"decrepit",
+"decorous",
+"botanical",
+"subterranean"
+],
+[
+2
+],
+"서로 예의 바르게 부르고 목소리 한 번 높이지 않았으니 '품위 있는, 점잖은(decorous)'이 맞아요. decrepit(노쇠한)는 철자만 비슷하고, botanical(식물의)·subterranean(지하의)은 문맥과 관계없어요."
+],
+[
+2,
+2,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nProud of his independence, the old fisherman continued to ____ every offer of help from his neighbors, even after his boat was badly battered.",
+[
+"pasteurize",
+"transplant",
+"varnish",
+"spurn"
+],
+[
+4
+],
+"독립심이 강해 배가 망가진 뒤에도 이웃의 도움을 '퇴짜 놓았다(spurn)'는 흐름이에요. pasteurize(저온 살균하다)·transplant(옮겨 심다)·varnish(니스를 칠하다)는 문맥과 관계없어요."
+],
+[
+3,
+2,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nHuman rights advocates were quick to ____ the arrest of the journalists, calling it a blatant attempt to muzzle criticism of the government.",
+[
+"ferment",
+"calibrate",
+"prune",
+"deplore"
+],
+[
+4
+],
+"체포를 비판을 막으려는 뻔한 시도라고 불렀으니 '개탄하다, 강하게 비난하다(deplore)'가 맞아요. ferment(발효시키다)·calibrate(눈금을 맞추다)·prune(가지를 치다)은 문맥과 관계없어요."
+],
+[
+4,
+2,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nThe scientist was long ridiculed for her heterodox theory, but new evidence from the deep-sea expedition finally seemed to ____ her.",
+[
+"marinate",
+"fertilize",
+"vindicate",
+"sculpt"
+],
+[
+3
+],
+"오래 비웃음을 샀지만(but) 새 증거가 나왔으니 그녀가 옳았음을 '입증하다(vindicate)'가 맞아요. marinate(양념에 재우다)·fertilize(비료를 주다)·sculpt(조각하다)는 문맥과 관계없어요."
+],
+[
+5,
+2,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nThe general who had sworn to safeguard the king later tried to ____ the throne, claiming that the country needed a more forceful ruler.",
+[
+"irrigate",
+"embroider",
+"distill",
+"usurp"
+],
+[
+4
+],
+"왕을 지키겠다던 장군이 더 강한 통치자가 필요하다며 왕좌를 '빼앗으려(usurp)' 했다는 뜻이에요. irrigate(물을 대다)·embroider(수놓다)·distill(증류하다)은 문맥과 관계없어요."
+],
+[
+6,
+2,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nInvestors were ____ when the start-up asserted it could cut battery costs by ninety percent within a year, and several demanded independent verification.",
+[
+"aquatic",
+"incredulous",
+"vegetarian",
+"mountainous"
+],
+[
+2
+],
+"따로 증거를 요구했으니 '믿지 않는(incredulous)' 반응이에요. aquatic(물에 사는)·vegetarian(채식의)·mountainous(산이 많은)는 문맥과 관계없어요."
+],
+[
+7,
+2,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nThe economy began to ____ in the spring, as rising interest rates deterred borrowing and consumers curbed their spending.",
+[
+"gargle",
+"knit",
+"falter",
+"solder"
+],
+[
+3
+],
+"금리가 올라 대출과 소비가 줄었으니 경제가 '휘청거리기(falter)' 시작했다는 말이에요. gargle(입을 헹구다)·knit(뜨개질하다)·solder(땜질하다)는 문맥과 관계없어요."
+],
+[
+8,
+2,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nThe antiquated application process was so ____ that many eligible families abandoned their applications before completing the twelve-page form.",
+[
+"cumbersome",
+"nocturnal",
+"carnivorous",
+"maritime"
+],
+[
+1
+],
+"12쪽짜리 서류를 다 쓰기 전에 포기했다니 절차가 '번거로운(cumbersome)' 것이에요. nocturnal(야행성의)·carnivorous(육식의)·maritime(바다의)은 문맥과 관계없어요."
+],
+[
+9,
+2,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nCritics contend that textbooks which portray scientists only as elderly men ____ stereotypes that discourage girls from pursuing scientific careers.",
+[
+"perforate",
+"perpetuate",
+"hibernate",
+"cauterize"
+],
+[
+2
+],
+"과학자를 나이 든 남성으로만 그리는 교과서가 고정관념을 '이어 가게 한다(perpetuate)'는 비판이에요. perforate(구멍을 내다)는 철자만 비슷하고, hibernate(겨울잠 자다)·cauterize(지져서 소독하다)는 문맥과 관계없어요."
+],
+[
+10,
+2,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nA discerning editor excises ____ details that distract the reader, keeping only what is truly essential to the argument.",
+[
+"amphibious",
+"extraneous",
+"lunar",
+"edible"
+],
+[
+2
+],
+"독자의 주의를 흩뜨려 지우는 세부이니 '관계없는, 군더더기(extraneous)'예요. amphibious(물과 뭍 양쪽의)·lunar(달의)·edible(먹을 수 있는)은 문맥과 관계없어요."
+],
+[
+11,
+2,
+"analogy",
+null,
+"주어진 단어 쌍과 관계가 가장 비슷한 것을 고르시오.\n[보기] HOT : COLD :: ① large : big ② up : down ③ red : color ④ hand : finger (두 낱말이 반대 관계라 정답은 ②)\nsparrow : bird ::",
+[
+"wing : feather",
+"kennel : dog",
+"salmon : fish",
+"herd : cattle"
+],
+[
+3
+],
+"참새는 새의 한 종류예요(종류 : 상위 개념). 연어와 물고기가 같은 관계예요. kennel 은 개집, herd 는 무리예요."
+],
+[
+12,
+2,
+"analogy",
+null,
+"주어진 단어 쌍과 관계가 가장 비슷한 것을 고르시오.\nwarm : hot ::",
+[
+"scorching : hot",
+"frost : winter",
+"sweltering : frigid",
+"chilly : freezing"
+],
+[
+4
+],
+"따뜻한 것이 더 심해지면 뜨거워요(약한 정도 : 센 정도). 쌀쌀한 것과 꽁꽁 언 것이 같은 관계예요. scorching : hot 은 순서가 거꾸로(센 정도 : 약한 정도), frost : winter 는 '현상 : 계절', sweltering : frigid 는 반대말이에요."
+],
+[
+13,
+2,
+"analogy",
+null,
+"주어진 단어 쌍과 관계가 가장 비슷한 것을 고르시오.\nbook : chapter ::",
+[
+"composer : symphony",
+"symphony : movement",
+"conductor : orchestra",
+"violin : instrument"
+],
+[
+2
+],
+"장(chapter)은 책의 한 부분이에요(전체 : 부분). 교향곡과 악장(movement)이 같아요. 작곡가와 교향곡은 '만든 사람 : 작품', 지휘자와 관현악단은 '이끄는 사람 : 이끄는 무리', violin : instrument 는 '종류 : 상위 개념'이에요."
+],
+[
+14,
+2,
+"analogy",
+null,
+"주어진 단어 쌍과 관계가 가장 비슷한 것을 고르시오.\nclay : potter ::",
+[
+"chisel : sculptor",
+"workshop : blacksmith",
+"wood : carpenter",
+"apprentice : craftsman"
+],
+[
+3
+],
+"도공은 점토로 물건을 만들어요(재료 : 만드는 사람). 나무와 목수가 같아요. 끌과 조각가는 '도구 : 쓰는 사람', 작업장과 대장장이는 '일하는 곳 : 사람', 견습생과 장인은 '배우는 사람 : 가르치는 사람'이에요."
+],
+[
+15,
+2,
+"analogy",
+null,
+"주어진 단어 쌍과 관계가 가장 비슷한 것을 고르시오.\nanatomist : body ::",
+[
+"ecologist : ecosystem",
+"biologist : microscope",
+"linguist : interpreter",
+"zoologist : zoo"
+],
+[
+1
+],
+"해부학자는 몸을 연구해요(학자 : 연구 대상). 생태학자와 생태계가 같아요. 생물학자와 현미경은 '사람 : 도구', 언어학자와 통역사는 비슷한 분야의 다른 직업, 동물학자와 동물원은 '사람 : 일하는 곳'이에요."
+],
+[
+16,
+2,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nThe municipal survey asked residents ____ to pay higher taxes to subsidize better public transport.",
+[
+"whether they would be willing",
+"whether would they be willing",
+"would they be whether willing",
+"they whether would be willing"
+],
+[
+1
+],
+"asked 의 목적어인 간접의문문은 '접속사 whether + 주어 + 동사' 순서예요. 의문문처럼 would 를 앞으로 빼지 않아요."
+],
+[
+17,
+2,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\n____ in the remote village owns a smartphone, yet reliable internet access is still remarkably scarce.",
+[
+"Almost everyone",
+"Almost every people",
+"Most of everyone",
+"Almost of everyone"
+],
+[
+1
+],
+"almost 는 부사라 everyone 을 바로 꾸며요. every 뒤에는 단수 명사가 와야 해서 every people 은 틀려요."
+],
+[
+18,
+2,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nThe ambiguous new policy has caused ____ confusion among small-business proprietors than officials had expected.",
+[
+"many more",
+"more much",
+"much more",
+"very more"
+],
+[
+3
+],
+"confusion 은 셀 수 없는 명사라 much 로 비교급 more 를 강조해요. many more 는 셀 수 있는 복수 명사 앞에 써요."
+],
+[
+19,
+2,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\n____ the invention of the printing press that made the rapid dissemination of unorthodox ideas possible.",
+[
+"What was",
+"It was",
+"That was",
+"It being"
+],
+[
+2
+],
+"'바로 ~였다'를 강조하는 It was ~ that 구문이에요. 강조할 말이 It was 와 that 사이에 들어가요."
+],
+[
+20,
+2,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nThe new model is ____ the previous one, but it is far more economical on long journeys.",
+[
+"as nearly powerful as",
+"nearly as powerful as",
+"as powerful nearly as",
+"powerful as nearly as"
+],
+[
+2
+],
+"원급 비교는 as + 원급 + as 이고, '거의'를 뜻하는 nearly 는 그 덩어리 맨 앞에 와요(nearly as powerful as)."
+],
+[
+21,
+2,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nTorrential rains over the weekend caused the river ____ its banks in several places.",
+[
+"overflow",
+"overflowing",
+"to overflowing",
+"to overflow"
+],
+[
+4
+],
+"cause 는 'cause + 목적어 + to부정사' 꼴로 써요. 원형은 make·let 같은 사역동사 뒤에 와요."
+],
+[
+22,
+2,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nThe researchers found the results ____ and decided to replicate the experiment with a larger sample.",
+[
+"deeply confused",
+"deeply confusingly",
+"deep confusing",
+"deeply confusing"
+],
+[
+4
+],
+"결과가 사람을 '혼란스럽게 하는' 것이라 현재분사 confusing 이에요. 분사를 꾸미는 말은 부사 deeply 예요."
+],
+[
+23,
+2,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nThis is the tranquil coastal town ____ the composer spent the final years of his life in seclusion.",
+[
+"which",
+"in whichever",
+"in which",
+"in that"
+],
+[
+3
+],
+"빈칸 뒤가 빠진 것 없는 완전한 절이라 장소를 나타내는 '전치사 + 관계대명사' in which(= where)가 맞아요. 전치사 뒤에는 that 을 못 써요."
+],
+[
+24,
+2,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nMy older sister has never ventured outside the country, and ____.",
+[
+"have I neither",
+"neither I have",
+"neither have I",
+"I have neither"
+],
+[
+3
+],
+"부정문에 '나도 그렇다'고 이을 때는 neither + 조동사 + 주어 순서예요. 앞이 현재완료라 have 를 써요."
+],
+[
+25,
+2,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\n____ the warning earlier, the villagers could have escaped before the devastating flood arrived.",
+[
+"Had they received",
+"They had received",
+"Received had they",
+"Had received they"
+],
+[
+1
+],
+"주절이 could have escaped(가정법 과거완료)라 조건절은 If they had received 예요. if 를 빼면 Had they received 로 도치해요. They had received 는 접속사 없이 절 두 개를 콤마로만 잇게 돼요."
+],
+[
+26,
+2,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nLooking back on his illustrious career, he wishes he ____ more time with his children when they were young.",
+[
+"spends",
+"has spent",
+"would spend",
+"had spent"
+],
+[
+4
+],
+"지나간 일(when they were young)을 아쉬워하는 wish 뒤에는 과거완료 had spent 가 와요."
+],
+[
+27,
+2,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nBecause the instructions were so lucid, ____ needed any help assembling the shelves.",
+[
+"few of the customers",
+"a few of the customer",
+"few customer of the",
+"little of the customers"
+],
+[
+1
+],
+"any 가 있으니 부정의 뜻이 필요해 few(거의 없는)가 맞아요. 셀 수 있는 customers 라 little 은 쓸 수 없어요."
+],
+[
+28,
+2,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nScholarships will be awarded to ____ financial need and exemplary academic records.",
+[
+"who those demonstrate",
+"those demonstrate who",
+"those who demonstrate",
+"demonstrate those who"
+],
+[
+3
+],
+"'~하는 사람들'은 those who 로 쓰고 바로 뒤에 관계절 동사 demonstrate 가 와요. 전치사 to 의 목적어가 those 예요."
+],
+[
+29,
+2,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nThere is ____ habitual exercise slows the deterioration of memory in old age.",
+[
+"growing evidence which",
+"growing evidence that",
+"evidence growing what",
+"growing evidence of"
+],
+[
+2
+],
+"evidence 의 내용을 설명하는 완전한 절이 이어지니 동격 that 이 맞아요. which 는 뒤에 빠진 성분이 있어야 해요."
+],
+[
+30,
+2,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nMany veteran employees are not yet used ____ online tools for every meeting.",
+[
+"relying on to",
+"on relying to",
+"relying to on",
+"to relying on"
+],
+[
+4
+],
+"be used to(~에 익숙하다)의 to 는 전치사라 바로 뒤에 동명사 relying 이 오고, rely 에 붙는 on 이 이어져요."
+],
+[
+31,
+2,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe museum, ①<u>which</u> reopened after a protracted renovation, now exhibits several paintings ②<u>that</u> ③<u>was</u> ④<u>long</u> hidden in storage vaults beneath the main gallery.",
+[
+"which",
+"that",
+"was",
+"long"
+],
+[
+3
+],
+"that 의 선행사는 복수 several paintings 라 관계절 동사도 were 가 돼야 해요."
+],
+[
+32,
+2,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe delegates ①<u>postponed</u> the meeting ②<u>until</u> the following morning, ③<u>exhausting</u> by the arduous journey and ④<u>eager</u> to reach a definitive agreement after a night's rest.",
+[
+"postponed",
+"until",
+"exhausting",
+"eager"
+],
+[
+3
+],
+"대표단은 긴 여정에 '지친' 것이라 과거분사 exhausted 로 써야 해요. by 가 수동의 단서예요."
+],
+[
+33,
+2,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe report cautioned that the region's water supply ①<u>is</u> ②<u>increasingly</u> ③<u>vulnerable</u> to drought and called for ④<u>urgently</u> investment in reservoirs and pipelines.",
+[
+"is",
+"increasingly",
+"vulnerable",
+"urgently"
+],
+[
+4
+],
+"명사 investment 를 꾸미는 자리라 부사 urgently 가 아니라 형용사 urgent 가 와야 해요."
+],
+[
+34,
+2,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nScientists ①<u>have identified</u> a hitherto unknown species of frog ②<u>which</u> vivid blue skin may help ③<u>warn</u> predators ④<u>that</u> it is poisonous.",
+[
+"have identified",
+"which",
+"warn",
+"that"
+],
+[
+2
+],
+"개구리'의' 파란 피부라는 소유 관계라 which 가 아니라 whose 가 맞아요(whose vivid blue skin)."
+],
+[
+35,
+2,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe charity, ①<u>which</u> was ②<u>find</u> by a group of retired teachers in 1998, ③<u>now</u> provides free tutoring to ④<u>more than</u> two thousand underprivileged children.",
+[
+"which",
+"find",
+"now",
+"more than"
+],
+[
+2
+],
+"'설립되다'는 found(세우다)의 수동 was founded 예요. find(찾다)와 헷갈리기 쉬워요."
+],
+[
+36,
+2,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe ancient manuscript, ①<u>which</u> scholars ②<u>had believed</u> lost for centuries, ③<u>was</u> recently found in a secluded monastery library and is currently ④<u>restoring</u> by conservators in Rome.",
+[
+"which",
+"had believed",
+"was",
+"restoring"
+],
+[
+4
+],
+"원고는 전문가들에 의해 '복원되는' 것이라 is currently being restored 처럼 수동 진행형이 돼야 해요."
+],
+[
+37,
+2,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\n①<u>Much</u> residents of the historic quarter ②<u>complained</u> that the stringent new parking rules ③<u>were</u> introduced without ④<u>adequate</u> consultation with the people most affected by them.",
+[
+"Much",
+"complained",
+"were",
+"adequate"
+],
+[
+1
+],
+"residents 는 셀 수 있는 복수 명사라 Much 가 아니라 Many 가 와야 해요."
+],
+[
+38,
+2,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe committee will ①<u>discuss</u> the proposal next week, but several members have ②<u>already expressed</u> reservations and plan to ③<u>oppose to</u> it ④<u>unless</u> the exorbitant costs are reduced.",
+[
+"discuss",
+"already expressed",
+"oppose to",
+"unless"
+],
+[
+3
+],
+"oppose 는 목적어를 바로 받는 타동사라 to 를 쓰지 않아요(oppose it). be opposed to 와 헷갈리기 쉬워요."
+],
+[
+39,
+2,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nAlthough the old phones were bulkier, many users ①<u>insist</u> that they ②<u>were</u> ③<u>more durable</u> than the sleek new ④<u>one</u> sold in stores today.",
+[
+"insist",
+"were",
+"more durable",
+"one"
+],
+[
+4
+],
+"받는 말이 복수 phones 라 대명사도 복수 ones 로 써야 해요."
+],
+[
+40,
+2,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe ferocious storm, which ①<u>is expected</u> to weaken ②<u>as</u> it moves northward over cooler waters, ③<u>knocking</u> out power to thousands of households ④<u>last night</u>.",
+[
+"is expected",
+"as",
+"knocking",
+"last night"
+],
+[
+3
+],
+"주어 The ferocious storm 의 동사가 없어요. which 절은 콤마 안에서 끝나니 knocking 을 정동사 knocked 로 고쳐야 문장이 완성돼요."
+],
+[
+41,
+2,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nOnly after the floodwaters ①<u>had receded</u> ②<u>did</u> officials ③<u>realized</u> how many homes in the inundated valley ④<u>had been</u> destroyed.",
+[
+"had receded",
+"did",
+"realized",
+"had been"
+],
+[
+3
+],
+"Only after ~ 가 앞에 와서 did 가 주어 앞으로 나온 도치문이에요. did 뒤에는 동사원형 realize 가 와요."
+],
+[
+42,
+2,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nMany companies now ①<u>allow</u> employees ②<u>working</u> from home two days a week, a policy ③<u>that</u> was unusual ④<u>before</u> the pandemic.",
+[
+"allow",
+"working",
+"that",
+"before"
+],
+[
+2
+],
+"allow 는 'allow + 목적어 + to부정사' 꼴이라 to work 가 맞아요."
+],
+[
+43,
+2,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nScientists ①<u>were</u> astonished to discover ②<u>that</u> the bacteria ③<u>could</u> survive in extreme conditions ④<u>what</u> would kill most other organisms.",
+[
+"were",
+"that",
+"could",
+"what"
+],
+[
+4
+],
+"선행사 conditions 가 있으니 what 이 아니라 관계대명사 that(또는 which)이 와야 해요."
+],
+[
+44,
+2,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nArguing that low-paid workers ①<u>needed</u> help ②<u>coping</u> with soaring prices for food and rent, the government ③<u>finally</u> ④<u>rose</u> the minimum wage last year.",
+[
+"needed",
+"coping",
+"finally",
+"rose"
+],
+[
+4
+],
+"최저임금을 '올리다'는 목적어를 받는 타동사 raise 의 과거 raised 예요. rise 는 자동사예요."
+],
+[
+45,
+2,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nEvery summer, ①<u>thousands of</u> tourists ②<u>visit</u> the picturesque island, and ③<u>hundred of</u> local families ④<u>depend on</u> the revenue they bring.",
+[
+"thousands of",
+"visit",
+"hundred of",
+"depend on"
+],
+[
+3
+],
+"막연히 '수백의'라고 할 때는 hundreds of 로 복수형을 써요."
+],
+[
+46,
+2,
+"reading",
+"r2-s1",
+"What does the underlined word mean in the context of the passage?",
+[
+"protection against the risk of a sudden supply disruption",
+"a policy that lowers the price of chips for consumers",
+"a levy that chip companies remit to governments",
+"a guarantee from governments that every new factory will turn a profit"
+],
+[
+1
+],
+"지진·봉쇄·분쟁 하나로 공급이 끊길 수 있다는 설명이 이어지니, 보조금은 공급 차질에 대비한 '보험'이라는 뜻이에요."
+],
+[
+47,
+2,
+"reading",
+"r2-s1",
+"Which of the following best fills in the blank?",
+[
+"resilient",
+"profitable",
+"uniform",
+"fragile"
+],
+[
+1
+],
+"비용은 오를 수 있지만(but) 여러 지역에 나누면 한 곳이 멈춰도 버티는 '회복력 있는(resilient)' 체계가 된다는 흐름이에요. profitable 은 비용이 오른다는 앞말과 부딪쳐요."
+],
+[
+48,
+2,
+"reading",
+"r2-s1",
+"Which of the following is NOT true according to the passage?",
+[
+"Shortages in 2021 forced some car factories to stop production.",
+"Japan supported a factory that TSMC built on Kyushu.",
+"South Korea expanded tax credits for its chip producers.",
+"The CHIPS and Science Act was passed by the European Union."
+],
+[
+4
+],
+"CHIPS and Science Act 는 2022년 미국이 통과시킨 법이에요. 유럽연합은 그다음 해 자체 반도체법을 따로 만들었어요."
+],
+[
+49,
+2,
+"reading",
+"r2-s1",
+"What do skeptics fear about the subsidy race?",
+[
+"Chip factories will become too inexpensive to construct.",
+"Skilled engineers will refuse to work in factories that were built with public subsidies.",
+"Governments will cease funding chip research altogether.",
+"Firms might chase the largest handout while taxpayers bear the cost."
+],
+[
+4
+],
+"정부끼리 값을 올려 부르면 기업은 가장 많이 주는 나라의 보조금만 챙기고 부담은 납세자에게 돌아간다고 걱정했어요."
+],
+[
+50,
+2,
+"reading",
+"r2-s2",
+"Where would the following sentence best fit in the passage?\nArchaeologists, who had previously been able to offer only rough guesses, suddenly had exact calendar dates.",
+[
+"[1]",
+"[2]",
+"[3]",
+"[4]"
+],
+[
+3
+],
+"주어진 문장은 옛 집터의 건축 연도를 알아냈다는 내용 바로 뒤에 와야 '어림짐작만 하던 고고학자들이 정확한 연도를 얻었다'로 이어져요. 그래서 [3]이에요."
+],
+[
+51,
+2,
+"reading",
+"r2-s2",
+"Which of the following is true according to the passage?",
+[
+"Douglass's theory about solar cycles was widely accepted.",
+"Douglass was originally interested in the sun's influence on climate.",
+"In arid regions, a year of severe drought usually produces an especially wide ring.",
+"Dendrochronology can date only trees that are still alive."
+],
+[
+2
+],
+"더글러스는 태양 활동 주기가 기후에 영향을 준다는 증거를 찾다가 나이테를 연구했다고 했어요. 그 이론은 널리 받아들여지지 않았고, 가문 해에는 고리가 가늘어요."
+],
+[
+52,
+2,
+"reading",
+"r2-s2",
+"Why do trees in the same region share a similar pattern of rings?",
+[
+"Because they were all planted in the same year.",
+"Because they belong to the same species and therefore grow at the same rate.",
+"Because they experience the same sequence of wet and dry years.",
+"Because their rings are counted by the same method."
+],
+[
+3
+],
+"한 지역의 나무는 같은 순서로 비 많은 해와 가문 해를 겪어서 넓고 좁은 고리의 무늬가 바코드처럼 같아진다고 했어요."
+],
+[
+53,
+2,
+"reading",
+"r2-s2",
+"Which of the following can be inferred from the passage?",
+[
+"Bristlecone pines grow more rapidly than most other trees.",
+"Medieval churches were built mainly from Arizona timber.",
+"Modern instruments have recorded droughts in the American Southwest for four thousand years.",
+"Relying only on recent climate records may underestimate the risk of severe drought."
+],
+[
+4
+],
+"나이테는 근대에 겪은 것보다 길고 심한 가뭄이 있었음을 보여 줬다고 했어요. 그러니 지난 100년 기록만 믿으면 가뭄 위험을 낮게 잡을 수 있다고 추론할 수 있어요."
+],
+[
+54,
+2,
+"reading",
+"r2-s3",
+"Which of the following best fills in the blank?",
+[
+"feasible",
+"mandatory",
+"outdated",
+"unpopular"
+],
+[
+1
+],
+"실험에서 생산성이 유지됐으니 이제 '가능한가(feasible)'가 아니라 어떤 일에 맞는지를 묻게 됐다는 흐름이에요."
+],
+[
+55,
+2,
+"reading",
+"r2-s3",
+"What is the main purpose of the passage?",
+[
+"to urge all employers to adopt a four-day week at once",
+"to weigh the results of four-day-week trials against their limits",
+"to explain why British companies have suffered from sluggish productivity for decades",
+"to compare the working hours of different countries"
+],
+[
+2
+],
+"영국 실험의 좋은 결과를 소개한 뒤 자원 참여·업종 한계 같은 신중론을 함께 놓고 저울질하는 글이에요. 당장 도입하자고 주장하지는 않아요."
+],
+[
+56,
+2,
+"reading",
+"r2-s3",
+"Why do skeptics question the results of the trial?",
+[
+"Productivity plummeted in most of the participating companies during the final months.",
+"The companies volunteered and were probably confident the scheme would succeed.",
+"Employees were paid less during the trial.",
+"The trial lasted only a few days."
+],
+[
+2
+],
+"회사들이 스스로 지원했으니 성공을 자신하던 곳이었을 테고, 일을 쉽게 재편할 수 있는 작은 사무실이 많았다고 했어요."
+],
+[
+57,
+2,
+"reading",
+"r2-s4",
+"Which of the following best fills in the blank?",
+[
+"publicly",
+"aloud",
+"privately",
+"collectively"
+],
+[
+3
+],
+"낱말이 띄어진 쪽은 눈으로만 빠르고 '혼자서(privately)' 읽을 수 있었다는 흐름이에요. 뒤 문장의 '더 개인적인 동반자'가 단서예요."
+],
+[
+58,
+2,
+"reading",
+"r2-s4",
+"What does the underlined phrase mean in the passage?",
+[
+"proved that no one in antiquity read silently",
+"made the history of reading easier to teach",
+"shown that the earlier view was too simple",
+"corroborated Augustine's account in every detail"
+],
+[
+3
+],
+"고대에는 모두 소리 내어 읽었다는 깔끔한 설명에, 묵독도 드물지 않았다는 증거를 더해 그 설명이 너무 단순했음을 보여 줬다는 뜻이에요."
+],
+[
+59,
+2,
+"reading",
+"r2-s4",
+"Which of the following is true according to the passage?",
+[
+"Augustine was the bishop of Milan.",
+"Ancient Greek and Latin texts were often written without spaces between words.",
+"Irish and British scribes had spoken Latin as their native language since childhood.",
+"Silent reading was invented in the Middle Ages."
+],
+[
+2
+],
+"그리스어·라틴어 글은 흔히 낱말 사이를 띄우지 않고 이어 썼다고 했어요. 밀라노 주교는 암브로시우스이고, 묵독은 고대에도 있었어요."
+],
+[
+60,
+2,
+"reading",
+"r2-s4",
+"According to the passage, what may have surprised Augustine?",
+[
+"that Ambrose could read Greek as well as Latin",
+"that Ambrose did not share his reading with the people waiting for him",
+"that the book Ambrose was reading had been written with spaces between its words",
+"that Ambrose read the text aloud to a crowd"
+],
+[
+2
+],
+"최근 연구는 아우구스티누스를 놀라게 한 것이 침묵 자체보다, 기다리는 방문객에게 읽는 내용을 나누지 않은 태도였을 수 있다고 봐요."
+],
+[
+1,
+3,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nThe ____ student not only arrived late but also interrupted the professor in front of everyone to complain that the lecture was boring.",
+[
+"volcanic",
+"impudent",
+"herbal",
+"tidal"
+],
+[
+2
+],
+"늦게 와서 모두 앞에서 교수 말을 끊고 지루하다고 불평했으니 '건방진, 무례한(impudent)'이 맞아요. volcanic(화산의)·herbal(약초의)·tidal(조수의)은 문맥과 관계없어요."
+],
+[
+2,
+3,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nAlthough the actor had always treated his colleagues courteously, tabloid writers continued to ____ him with fabricated stories about his temper.",
+[
+"irrigate",
+"malign",
+"varnish",
+"hatch"
+],
+[
+2
+],
+"지어낸 이야기로 성질이 나쁘다고 썼으니 '헐뜯다, 중상하다(malign)'가 맞아요. irrigate(물을 대다)·varnish(니스를 칠하다)·hatch(알을 까다)는 문맥과 관계없어요."
+],
+[
+3,
+3,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nAfter the station aired the story, it was ____ with thousands of letters and calls from viewers demanding a further inquiry.",
+[
+"fermented",
+"inundated",
+"pickled",
+"pruned"
+],
+[
+2
+],
+"편지와 전화가 수천 통 몰려왔으니 '쇄도하다, 넘쳐 나다(be inundated with)'가 맞아요. fermented(발효된)·pickled(절인)·pruned(가지를 친)는 문맥과 관계없어요."
+],
+[
+4,
+3,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nThe ____ old judge could usually discern within minutes which witnesses were truthful, a skill honed over forty years on the bench.",
+[
+"porous",
+"aquatic",
+"lunar",
+"sagacious"
+],
+[
+4
+],
+"몇 분 만에 누가 진실을 말하는지 알아보는 40년 경력의 판사이니 '현명한, 통찰력 있는(sagacious)'이 맞아요. porous(구멍이 많은)·aquatic(물에 사는)·lunar(달의)는 문맥과 관계없어요."
+],
+[
+5,
+3,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nHer ____ remarks about her colleagues' work, delivered in nearly every meeting, ultimately made her the least popular manager in the office.",
+[
+"botanical",
+"metallic",
+"censorious",
+"nocturnal"
+],
+[
+3
+],
+"동료 일에 대한 말 때문에 가장 인기 없는 관리자가 됐으니 '흠잡기 좋아하는(censorious)' 말이에요. botanical(식물의)·metallic(금속의)·nocturnal(야행성의)은 문맥과 관계없어요."
+],
+[
+6,
+3,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nThe referee's mistake was so ____ that even fans of the winning team conceded the decisive goal should never have been allowed.",
+[
+"gregarious",
+"carnivorous",
+"egregious",
+"subterranean"
+],
+[
+3
+],
+"이긴 팀 팬조차 인정할 만큼 '터무니없이 심한(egregious)' 실수예요. gregarious(사교적인)는 철자만 비슷하고, carnivorous(육식의)·subterranean(지하의)은 문맥과 관계없어요."
+],
+[
+7,
+3,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nThe public's ____ appetite for celebrity gossip keeps dozens of magazines in business, no matter how trivial the stories become.",
+[
+"rectangular",
+"amphibious",
+"geological",
+"insatiable"
+],
+[
+4
+],
+"아무리 시시해도 수십 개 잡지가 먹고살 만큼이니 '채워지지 않는, 끝없는(insatiable)' 욕구예요. rectangular(직사각형의)·amphibious(물과 뭍 양쪽의)·geological(지질의)은 문맥과 관계없어요."
+],
+[
+8,
+3,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nUnlike the tempestuous coast to the north, the bay remained ____ throughout the year, making it ideal for novice swimmers and small boats.",
+[
+"edible",
+"lyrical",
+"culinary",
+"placid"
+],
+[
+4
+],
+"폭풍 치는 북쪽 해안과 달리(Unlike) 초보 수영객에게 알맞았으니 '잔잔한(placid)'이 맞아요. edible(먹을 수 있는)·lyrical(서정적인)·culinary(요리의)는 문맥과 관계없어요."
+],
+[
+9,
+3,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nOnly three copies of the original edition are still ____; the rest perished in a fire at the printer's warehouse.",
+[
+"extant",
+"extinct",
+"herbivorous",
+"melodious"
+],
+[
+1
+],
+"나머지는 불에 탔으니 세 부만 '현존하는(extant)' 것이에요. extinct(멸종한)는 철자만 비슷하고, herbivorous(초식의)·melodious(선율이 고운)는 문맥과 관계없어요."
+],
+[
+10,
+3,
+"vocab",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nPublic opinion on the contentious proposal seemed to ____ wildly from week to week, swinging from enthusiasm to hostility and back again.",
+[
+"embalm",
+"oscillate",
+"serenade",
+"upholster"
+],
+[
+2
+],
+"열광과 적대 사이를 오갔다고 했으니 '흔들리다, 오락가락하다(oscillate)'가 맞아요. embalm(방부 처리하다)·serenade(세레나데를 부르다)·upholster(덮개를 씌우다)는 문맥과 관계없어요."
+],
+[
+11,
+3,
+"analogy",
+null,
+"주어진 단어 쌍과 관계가 가장 비슷한 것을 고르시오.\n[보기] HOT : COLD :: ① large : big ② up : down ③ red : color ④ hand : finger (두 낱말이 반대 관계라 정답은 ②)\ncandid : frank ::",
+[
+"timid : bold",
+"generous : generosity",
+"obstinate : stubborn",
+"humble : boast"
+],
+[
+3
+],
+"candid 와 frank 는 둘 다 '솔직한'이라 뜻이 같은 관계예요. obstinate 와 stubborn(고집 센)이 같아요. timid : bold 는 반대말, generous : generosity 는 '형용사 : 명사', humble : boast 는 '그런 사람이 하지 않는 일'이에요."
+],
+[
+12,
+3,
+"analogy",
+null,
+"주어진 단어 쌍과 관계가 가장 비슷한 것을 고르시오.\nscarce : abundant ::",
+[
+"elderly : aged",
+"millennium : century",
+"dawn : morning",
+"ancient : modern"
+],
+[
+4
+],
+"드문 것과 풍부한 것은 반대 관계예요. 아주 오래된 것과 현대의 것이 같은 반대 관계예요. elderly : aged 는 비슷한 말, millennium : century 는 '큰 단위 : 작은 단위', dawn : morning 은 '부분 : 전체'예요."
+],
+[
+13,
+3,
+"analogy",
+null,
+"주어진 단어 쌍과 관계가 가장 비슷한 것을 고르시오.\nneedle : sew ::",
+[
+"pen : writer",
+"knife : sharp",
+"shovel : dig",
+"oven : kitchen"
+],
+[
+3
+],
+"바늘은 바느질하는 데 쓰는 도구예요(도구 : 하는 일). 삽과 파다가 같아요. pen : writer 는 '도구 : 쓰는 사람'이에요."
+],
+[
+14,
+3,
+"analogy",
+null,
+"주어진 단어 쌍과 관계가 가장 비슷한 것을 고르시오.\ninsult : anger ::",
+[
+"friction : heat",
+"smoke : fire",
+"insulation : heat",
+"engine : fuel"
+],
+[
+1
+],
+"모욕이 분노를 일으켜요(원인 : 결과). 마찰이 열을 일으키는 것과 같아요. smoke : fire 는 순서가 거꾸로(결과 : 원인), insulation : heat 는 '막는 것 : 막히는 것', engine : fuel 은 '쓰는 것 : 쓰이는 것'이에요."
+],
+[
+15,
+3,
+"analogy",
+null,
+"주어진 단어 쌍과 관계가 가장 비슷한 것을 고르시오.\nflower : petal ::",
+[
+"leaf : branch",
+"bicycle : wheel",
+"garden : gardener",
+"seed : plant"
+],
+[
+2
+],
+"꽃잎은 꽃의 한 부분이에요(전체 : 부분). 자전거와 바퀴가 같은 관계예요. leaf : branch 는 순서가 거꾸로(부분 : 전체)예요."
+],
+[
+16,
+3,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nFew affluent consumers realize ____ to manufacture a single cotton T-shirt.",
+[
+"how much it takes water",
+"how it takes much water",
+"how much water it takes",
+"it takes how much water"
+],
+[
+3
+],
+"realize 의 목적어인 간접의문문은 '의문사구(how much water) + 주어 + 동사' 순서예요. how much water 는 한 덩어리로 맨 앞에 와요."
+],
+[
+17,
+3,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nThe orator in the cavernous hall spoke ____ for everyone in the back row to hear him.",
+[
+"loudly enough",
+"enough loudly",
+"loudly so",
+"so loudly enough"
+],
+[
+1
+],
+"enough 가 부사를 꾸밀 때도 뒤에 와요(loudly enough). 그 뒤에 for + 의미상 주어 + to부정사가 이어져요."
+],
+[
+18,
+3,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nThanks to economies of scale, solar panels now cost ____ what they did twenty years ago.",
+[
+"only fraction of a",
+"only a fraction of",
+"a only fraction of",
+"of only a fraction"
+],
+[
+2
+],
+"'~의 일부분'은 a fraction of 이고 only 는 그 앞에 와요. 뒤의 what절이 of 의 목적어예요."
+],
+[
+19,
+3,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nIt was ____ that the ferry service was suspended indefinitely.",
+[
+"such a violent storm",
+"a violent such storm",
+"such violent a storm",
+"a such violent storm"
+],
+[
+1
+],
+"'너무 ~한 명사라서'는 such + a + 형용사 + 명사 + that 순서예요. such 가 맨 앞, 관사 a 가 그 바로 뒤에 와요."
+],
+[
+20,
+3,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nLake Baikal in Siberia is ____ lake in the world, reaching a staggering depth of more than 1,600 meters.",
+[
+"deepest the freshwater",
+"the freshwater deepest",
+"the deepest freshwater",
+"freshwater the deepest"
+],
+[
+3
+],
+"in the world 와 함께 최상급을 써요. the deepest 가 한 덩어리로 앞에 오고, 명사 lake 를 꾸미는 freshwater 는 lake 바로 앞에 붙어요."
+],
+[
+21,
+3,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\n____, the medicine can cause deleterious side effects such as vertigo.",
+[
+"When taking in large doses",
+"When it taken in large doses",
+"Taken when large doses in",
+"When taken in large doses"
+],
+[
+4
+],
+"약은 '복용되는' 것이라 접속사 When 뒤에 과거분사 taken 을 써요(When it is taken 에서 it is 생략)."
+],
+[
+22,
+3,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nEach of the candidates ____ to alleviate the tax burden on middle-class families.",
+[
+"has promised",
+"have promised",
+"having promised",
+"promising"
+],
+[
+1
+],
+"Each of + 복수 명사는 '각각'이라 단수로 받아 has 를 써요. 문장에 동사가 필요해서 분사만으로는 안 돼요."
+],
+[
+23,
+3,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nThe reticent author, ____ was translated into twenty languages, rarely grants interviews.",
+[
+"who first novel",
+"whose first novel",
+"that her first novel",
+"which first novel"
+],
+[
+2
+],
+"작가'의' 첫 소설이라는 소유 관계라 whose 가 맞아요. 콤마 뒤 계속적 용법에는 that 도 못 써요."
+],
+[
+24,
+3,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nIt is high time the city ____ the precarious old bridge before someone is gravely injured.",
+[
+"repairs",
+"repaired",
+"will repair",
+"to repair"
+],
+[
+2
+],
+"It is (high) time + 주어 뒤에는 '벌써 했어야 한다'는 뜻으로 과거형 동사를 써요."
+],
+[
+25,
+3,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nRarely ____ such a vociferous crowd for a provincial football match.",
+[
+"has the stadium seen",
+"the stadium has seen",
+"has seen the stadium",
+"the stadium seen has"
+],
+[
+1
+],
+"부정어 Rarely 가 앞에 오면 조동사 has 가 주어 앞으로 나와요(has the stadium seen)."
+],
+[
+26,
+3,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nThe new warehouse is ____ the old one, yet automation allows it to operate with fewer workers.",
+[
+"as large three times as",
+"as three times large as",
+"three times as large as",
+"three as times large as"
+],
+[
+3
+],
+"배수 비교는 '배수 + as + 원급 + as' 순서예요. three times 가 첫 as 앞에 와요."
+],
+[
+27,
+3,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nThe success of the project will depend largely ____ local communities to embrace it.",
+[
+"within the willingness of",
+"the willingness on",
+"on willingness the of",
+"on the willingness of"
+],
+[
+4
+],
+"depend 는 전치사 on 과 함께 써요(depend on). 그 뒤 the willingness of + 명사가 이어져요."
+],
+[
+28,
+3,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nIt is important ____ the instructions carefully before starting the rigorous test.",
+[
+"of every participant to read",
+"every participant to read",
+"for every participant's reading",
+"for every participant to read"
+],
+[
+4
+],
+"important 같은 판단 형용사 뒤 to부정사의 의미상 주어는 for + 목적격이에요. of 는 kind·careless 처럼 사람 성격을 말할 때 써요."
+],
+[
+29,
+3,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nThe documentary offered ____ account of daily life inside the notorious prison.",
+[
+"a surprising honestly",
+"surprisingly an honest",
+"a surprisingly honest",
+"an honest surprisingly"
+],
+[
+3
+],
+"명사 account 앞은 '관사 + 부사 + 형용사' 순서예요. 형용사 honest 를 부사 surprisingly 가 꾸며요."
+],
+[
+30,
+3,
+"gblank",
+null,
+"다음 빈칸에 들어갈 가장 알맞은 표현을 고르시오.\nBy the time the rescue team arrives, the stranded climbers ____ without food for three days.",
+[
+"have been",
+"had been",
+"would have been",
+"will have been"
+],
+[
+4
+],
+"By the time + 현재시제(arrives)는 미래 시점이라, 그때까지 이어진 상태는 미래완료 will have been 이에요. would have been 은 가정이나 과거 기준에 쓰는 꼴이라 맞지 않아요."
+],
+[
+31,
+3,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nExperts ①<u>warn</u> that the ②<u>rapid</u> growth of online shopping has ③<u>left</u> many small retailers struggling to ④<u>survival</u> in a fiercely competitive market.",
+[
+"warn",
+"rapid",
+"left",
+"survival"
+],
+[
+4
+],
+"to 뒤에 동사원형이 와야 하는 to부정사 자리라 명사 survival 이 아니라 동사 survive 가 맞아요."
+],
+[
+32,
+3,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nVisitors ①<u>who</u> came to see the exhibition described it as deeply ②<u>moved</u>, especially the room ③<u>devoted</u> to letters ④<u>written</u> by conscripted soldiers.",
+[
+"who",
+"moved",
+"devoted",
+"written"
+],
+[
+2
+],
+"전시가 사람을 '감동시키는' 것이라 현재분사 moving 이 맞아요. moved 는 감동을 받은 사람에게 써요."
+],
+[
+33,
+3,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nA number of studies ①<u>have shown</u> that children ②<u>who</u> read voraciously for pleasure ③<u>tends</u> to develop ④<u>richer</u> vocabularies than those who do not.",
+[
+"have shown",
+"who",
+"tends",
+"richer"
+],
+[
+3
+],
+"that절의 주어는 복수 children 이라 동사도 tend 가 돼야 해요. who read voraciously for pleasure 는 끼어든 관계절이에요."
+],
+[
+34,
+3,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe paintings, ①<u>which</u> may be ②<u>among</u> the oldest in Europe, were discovered ③<u>during</u> the team was exploring a ④<u>remarkably</u> well-preserved cave.",
+[
+"which",
+"among",
+"during",
+"remarkably"
+],
+[
+3
+],
+"during 은 전치사라 뒤에 절(주어 + 동사)을 받을 수 없어요. 접속사 while 이 와야 해요."
+],
+[
+35,
+3,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe village ①<u>where</u> the reclusive poet grew up ②<u>has changed</u> little, and visitors can still see the school ③<u>he</u> attended and the house ④<u>which</u> he was born.",
+[
+"where",
+"has changed",
+"he",
+"which"
+],
+[
+4
+],
+"he was born 은 빠진 성분 없는 완전한 절이라 which 가 아니라 in which(또는 where)가 와야 해요."
+],
+[
+36,
+3,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe museum's most celebrated painting, ①<u>which</u> ②<u>had been</u> missing for decades, ③<u>discovered</u> last year in the attic of a dilapidated farmhouse ④<u>near the border</u>.",
+[
+"which",
+"had been",
+"discovered",
+"near the border"
+],
+[
+3
+],
+"그림은 '발견된' 것이라 was discovered 로 수동이 돼야 해요. 지금은 그림이 무언가를 발견한 꼴이에요."
+],
+[
+37,
+3,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe acrimonious negotiations ①<u>dragged</u> on ②<u>for</u> weeks, but ③<u>though</u> long nights of deliberation the two sides ④<u>gradually</u> narrowed their differences over wages.",
+[
+"dragged",
+"for",
+"though",
+"gradually"
+],
+[
+3
+],
+"명사구 long nights of deliberation 앞에서 '~을 거쳐'라는 뜻이니 전치사 through 예요. though 는 절을 받는 접속사예요."
+],
+[
+38,
+3,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\n①<u>Few</u> attention was paid to the early, prescient warnings of scientists, ②<u>who</u> had predicted ③<u>that</u> the dam would rupture ④<u>within</u> a decade.",
+[
+"Few",
+"who",
+"that",
+"within"
+],
+[
+1
+],
+"attention 은 셀 수 없는 명사라 Few 가 아니라 Little 로 써야 해요."
+],
+[
+39,
+3,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe revamped curriculum encourages students ①<u>to ask</u> questions, ②<u>to work</u> in groups, and ③<u>learning</u> from their mistakes rather than ④<u>simply memorizing</u> isolated facts.",
+[
+"to ask",
+"to work",
+"learning",
+"simply memorizing"
+],
+[
+3
+],
+"encourage 뒤 to부정사 셋이 나란히 놓이니 learning 도 to learn 으로 맞춰야 해요."
+],
+[
+40,
+3,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe climate of the island is ①<u>much</u> milder than ②<u>that</u> of the mainland, ③<u>allowing</u> farmers there to cultivate citrus fruit ④<u>successful</u> for centuries.",
+[
+"much",
+"that",
+"allowing",
+"successful"
+],
+[
+4
+],
+"동사 cultivate 를 꾸미는 자리라 형용사 successful 이 아니라 부사 successfully 가 와야 해요."
+],
+[
+41,
+3,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nResidents ①<u>are still waiting</u> for the municipal government ②<u>to replace</u> the old bridge ③<u>that</u> ④<u>has collapsed</u> two years ago during a ferocious storm.",
+[
+"are still waiting",
+"to replace",
+"that",
+"has collapsed"
+],
+[
+4
+],
+"two years ago 는 지난 시점이라 현재완료와 함께 못 써요. collapsed 가 맞아요."
+],
+[
+42,
+3,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nOceanographers are studying how rising ocean temperatures ①<u>might</u> ②<u>effect</u> the seasonal migration of humpback whales, ③<u>which</u> depend on cold waters ④<u>rich</u> in nutrients.",
+[
+"might",
+"effect",
+"which",
+"rich"
+],
+[
+2
+],
+"조동사 might 뒤 동사 자리라 '영향을 주다'는 affect 예요. effect 는 주로 명사(효과)로 써요."
+],
+[
+43,
+3,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nOnline courses can be ①<u>just as efficacious</u> ②<u>as</u> classroom teaching, but students ③<u>who</u> lack self-discipline often find them ④<u>more harder</u> to complete.",
+[
+"just as efficacious",
+"as",
+"who",
+"more harder"
+],
+[
+4
+],
+"harder 가 이미 비교급이라 more 를 겹쳐 쓸 수 없어요. harder 만 써요."
+],
+[
+44,
+3,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nThe ancient city, ①<u>once</u> home to tens of thousands of inhabitants, ②<u>was</u> deserted when the river that ③<u>supply</u> its water ④<u>shifted</u> its course.",
+[
+"once",
+"was",
+"supply",
+"shifted"
+],
+[
+3
+],
+"that 의 선행사는 단수 the river 이고, 옛날 일이라 과거형 supplied 가 맞아요."
+],
+[
+45,
+3,
+"gerror",
+null,
+"다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\nBehind the old library ①<u>stands</u> a row of venerable oak trees, and among them ②<u>is</u> several ③<u>that</u> were planted ④<u>when</u> the edifice opened in 1890.",
+[
+"stands",
+"is",
+"that",
+"when"
+],
+[
+2
+],
+"장소 부사구가 앞으로 나온 도치문이라 주어는 뒤의 several(여러 그루)예요. 복수라 are 가 맞아요. 앞의 a row 는 단수라 stands 가 맞아요."
+],
+[
+46,
+3,
+"reading",
+"r3-s1",
+"What does the underlined word refer to?",
+[
+"the cost of constructing climate-friendly factories",
+"a new tax imposed on the products whose manufacture causes carbon emissions",
+"price increases driven by extreme or anomalous weather",
+"a fall in prices after an unusually good harvest"
+],
+[
+3
+],
+"바로 뒤에서 '더 덥고 변덕스러운 기후 때문에 물가가 오르는 압력'이라고 풀어 줬어요."
+],
+[
+47,
+3,
+"reading",
+"r3-s1",
+"Which of the following best fills in the blank?",
+[
+"dilemma",
+"opportunity",
+"relief",
+"certainty"
+],
+[
+1
+],
+"금리를 올리면 원인은 못 건드리고 경기만 식히고, 가만두면 물가 기대가 굳을 수 있어요. 어느 쪽도 쉽지 않은 '딜레마(dilemma)'예요."
+],
+[
+48,
+3,
+"reading",
+"r3-s1",
+"Which of the following is true according to the passage?",
+[
+"Ghana alone grows more than half of the world's cocoa.",
+"Spain's olive oil output fell after two years of drought.",
+"Higher interest rates can repair damaged harvests.",
+"Poor households spend a smaller share of income on food than rich ones."
+],
+[
+2
+],
+"스페인은 2년 잇단 가뭄으로 올리브유 생산이 크게 줄었다고 했어요. 카카오 절반 이상은 코트디부아르와 가나를 합친 몫이에요."
+],
+[
+49,
+3,
+"reading",
+"r3-s1",
+"Why might raising interest rates be an unsatisfactory response to food price shocks?",
+[
+"It may slow the economy without addressing the cause of the price rise.",
+"It makes imported food considerably cheaper for affluent households in rich countries.",
+"It induces farmers to grow less cocoa.",
+"It prolongs droughts."
+],
+[
+1
+],
+"금리 인상은 수요를 식힐 수는 있어도 비를 내리게 하거나 망친 수확을 되돌리지 못해, 원인은 그대로 둔 채 경기만 늦출 수 있다고 했어요."
+],
+[
+50,
+3,
+"reading",
+"r3-s2",
+"What is the passage mainly about?",
+[
+"how lions stalk zebras on the savanna",
+"evidence that zebra stripes mainly protect against biting flies",
+"why horses contract more diseases than zebras living on the same savanna",
+"the history of naturalists' expeditions to Africa"
+],
+[
+2
+],
+"여러 가설을 소개한 뒤, 실험 증거가 '등에를 막는다'는 설명 쪽으로 기울었다는 내용이 중심이에요."
+],
+[
+51,
+3,
+"reading",
+"r3-s2",
+"Which of the following is NOT true according to the passage?",
+[
+"Biting flies can transmit diseases harmful to horses.",
+"Flies approached the striped coats much less often than plain ones.",
+"Some naturalists once suggested that the stripes help zebras dissipate heat and stay cool.",
+"Lions appear to catch zebras without great difficulty."
+],
+[
+2
+],
+"파리는 줄무늬 옷에도 민무늬 옷만큼 다가갔지만 내려앉지를 못했다고 했어요. 덜 다가갔다는 문장이 글과 달라요."
+],
+[
+52,
+3,
+"reading",
+"r3-s2",
+"What happened when flies approached the striped coats in the experiment?",
+[
+"They were repelled from a great distance.",
+"They landed only on the black stripes.",
+"They landed more often than on plain coats.",
+"They usually failed to land on them."
+],
+[
+4
+],
+"파리가 줄무늬 옷에 거의 내려앉지 못했고, 마지막 접근 순간에 무늬가 헷갈리게 한 것으로 보인다고 했어요."
+],
+[
+53,
+3,
+"reading",
+"r3-s3",
+"What does the underlined phrase mean in the passage?",
+[
+"a formal verdict reached by a committee after a lengthy debate",
+"a trophy awarded to the victor of a race",
+"a sign that she trusted the narrator's ability",
+"a warning that the narrator was in peril"
+],
+[
+3
+],
+"이모의 침묵은 무관심이 아니라, 여름 내내 지켜보고 이미 해낼 수 있다고 판단한 '믿음의 표시'였다고 했어요."
+],
+[
+54,
+3,
+"reading",
+"r3-s3",
+"Which of the following best fills in the blank?",
+[
+"careless",
+"convenient",
+"embarrassing",
+"valuable"
+],
+[
+4
+],
+"가만히 있기가 더 어렵지만 뒤로 물러나 학생에게 키를 맡기는 것이 때로 가장 '값진(valuable)' 일이라는 깨달음이에요. 어렵다고 했으니 convenient 는 맞지 않아요."
+],
+[
+55,
+3,
+"reading",
+"r3-s3",
+"According to the passage, what did the aunt do when the narrator first made a clean turn?",
+[
+"She commended the narrator in front of the neighbors.",
+"She nodded once and went back to her newspaper.",
+"She took the tiller and showed a better turn.",
+"She rowed out to tow the boat home."
+],
+[
+2
+],
+"처음 깔끔하게 방향을 바꿨을 때 이모는 신문에서 눈을 들어 한 번 고개를 끄덕이고 다시 읽었다고 했어요. 배를 끌고 온 것은 바람에 떠밀렸을 때예요."
+],
+[
+56,
+3,
+"reading",
+"r3-s3",
+"Which is true about the narrator?",
+[
+"The narrator never sailed again after that summer.",
+"The narrator's parents were seasoned sailors.",
+"The narrator later went on to teach sailing to others.",
+"The narrator was eager to spend the summer at the lake."
+],
+[
+3
+],
+"그 뒤로 많은 사람에게 항해를 가르쳤다고 했어요. 처음엔 지루할 거라며 뾰로통했으니 여름을 기대했다는 말은 틀려요."
+],
+[
+57,
+3,
+"reading",
+"r3-s4",
+"Which of the following best fills in the blank?",
+[
+"fragile",
+"ordinary",
+"local",
+"precious"
+],
+[
+4
+],
+"금보다 비쌀 때도 있던 안료를 가장 성스러운 인물에 썼다는 흐름이라 '가장 귀한(precious)' 재료예요. 먼 곳에서 왔으니 local 도 아니에요."
+],
+[
+58,
+3,
+"reading",
+"r3-s4",
+"Which of the following is true according to the passage?",
+[
+"Ultramarine's name refers to the distance the stone traveled.",
+"Lapis lazuli was quarried in the hills of Renaissance Italy.",
+"The synthetic pigment was chemically quite distinct from the natural one.",
+"Renaissance painters usually reserved ultramarine for skies and seas."
+],
+[
+1
+],
+"'바다 건너'라는 이름이 돌이 유럽까지 온 긴 여정을 떠올리게 한다고 했어요. 합성 안료는 천연과 화학적으로 거의 같았어요."
+],
+[
+59,
+3,
+"reading",
+"r3-s4",
+"Why was ultramarine so expensive before the nineteenth century?",
+[
+"Painters had to pay a special levy on blue.",
+"The stone came from far away and was difficult to process.",
+"Only a few French chemists knew the secret of how to synthesize it.",
+"It was blended with gold to enhance its brilliance."
+],
+[
+2
+],
+"돌은 먼 아프가니스탄 산지에서 왔고, 부수고 반죽하고 여러 번 주물러야 순수한 안료를 얻을 수 있었다고 했어요."
+],
+[
+60,
+3,
+"reading",
+"r3-s4",
+"Which of the following is the best title for the passage?",
+[
+"The Life of a Renaissance Patron",
+"Mining Gold in Afghanistan",
+"How a Costly Blue Became Common",
+"Why Painters Abandoned Blue"
+],
+[
+3
+],
+"금보다 비싸 성모의 옷에만 쓰던 파랑이 합성 안료 덕에 흔한 색이 된 과정을 다루므로 이 제목이 맞아요."
+]
+]
+}

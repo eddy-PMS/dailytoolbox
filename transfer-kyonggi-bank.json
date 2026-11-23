@@ -1,0 +1,2170 @@
+{
+"school": "kyonggi",
+"title": "경기대 편입영어 모의고사",
+"source": "경기대 편입영어 2016~2025학년도 기출 출제 유형(문항 수·영역·문제 꼴, VocabFactory 분석)을 분석해 dailyfreetoolbox 가 새로 만든 연습 문제",
+"checked": "2026-11-23",
+"minutes": 60,
+"points": [
+[
+1,
+10,
+2.0
+],
+[
+11,
+30,
+2.5
+],
+[
+31,
+40,
+3.0
+]
+],
+"sections": [
+{
+"id": "dialogue",
+"name": "대화 빈칸"
+},
+{
+"id": "sentence",
+"name": "문장 빈칸"
+},
+{
+"id": "grammar",
+"name": "어법 빈칸"
+},
+{
+"id": "reading",
+"name": "독해"
+}
+],
+"passages": [
+{
+"id": "r1-p31",
+"text": "Touchscreen kiosks have made ordering faster for many Koreans, yet they have also shut some customers out. The machines have supplanted cashiers in restaurants, cinemas, and even hospitals, and an order can be modified with a single tap. Older adults and people with visual impairments often find them baffling. Tiny text and cluttered menus bewilder them. Screens set too high for wheelchair users turn a routine purchase into an ordeal. In response, Korea has begun requiring many new kiosks to offer voice guidance and adjustable screen heights. Some local governments also run free classes where seniors can practice ordering on training machines."
+},
+{
+"id": "r1-p32",
+"text": "The sandwich is so mundane that we seldom ask where its name originated. According to a widely told anecdote, the fourth Earl of Sandwich was once so engrossed in a card game in London that he refused to leave the table for a meal. He instructed a servant to bring him slices of meat between two pieces of bread. This let him eat with one hand and keep gambling without smearing grease on the cards. Others at the table soon began ordering \"the same as Sandwich.\" Historians note that people had consumed bread with fillings long before the eighteenth century. Some even contend that the earl was busy at his desk, not gambling. Still, it was his title that gave the snack its name."
+},
+{
+"id": "r1-p33",
+"text": "Sea otters live along the coasts of the northern Pacific and are among the few mammals other than primates known to use tools. Floating on their backs, they place a flat stone on their chests and pound shellfish against it until the shells fracture. Unlike most marine mammals, otters lack a thick layer of blubber. Instead, they rely on exceptionally dense fur to keep warm in cold water. They must also eat roughly a quarter of their body weight each day. This voracious appetite benefits the coast because otters devour sea urchins that graze on kelp. Underwater kelp forests can therefore thrive where otters live, which is why biologists have come to regard these animals as a keystone species."
+},
+{
+"id": "r1-p34",
+"text": "The Scream by the Norwegian artist Edvard Munch is one of the most iconic images in modern art. Munch said the idea came to him during a walk at sunset, when the sky abruptly turned blood red. He sensed an immense scream passing through nature. Rather than paint the scene only once, he revisited it several times in paint and pastel. He also made a print that could be reproduced many times. The best-known painted version from 1893 is housed in the National Museum of Norway. The image has also lured thieves. Two different versions were stolen from Oslo museums in 1994 and 2004. Both were later recovered."
+},
+{
+"id": "r1-s1",
+"text": "Ordering dinner through a delivery app takes only a few taps, but the meal often arrives encased in far more packaging than food. A single order of soup and side dishes may come in half a dozen plastic containers with their own lids. Disposable spoons and chopsticks usually arrive in yet another plastic bag. The problem is not merely aesthetic, since plastic that escapes collection can clog drains and eventually fragment into microplastics. When delivery orders surged during the pandemic, the containers accumulated in apartment recycling areas. Residents grumbled about the stench.\nRecycling them is not as straightforward as it seems. Containers stained with oil or sauce are often too contaminated to be recycled and end up being incinerated or buried instead, while others are made of composite materials that recycling facilities cannot separate.\nSeveral remedies are being tested. Many apps now let customers decline disposable cutlery, which curbs waste at negligible cost. A few cities have experimented with reusable containers that are collected after the meal and washed for the next order. These programs have struggled to entice enough users because returning containers is cumbersome. Experts maintain that even a modest habit such as rinsing containers before recycling them is beneficial. Such inconspicuous steps add up when millions of households repeat them."
+},
+{
+"id": "r1-s2",
+"text": "For centuries, sailors could gauge how far north or south they were by looking at the sun or stars. They had no dependable way, however, to ascertain their longitude, their position east or west. Navigators relied on dead reckoning, an estimate based on speed, heading, and elapsed time. Its errors compounded over long voyages. Such errors cost ships and lives, so in 1714 the British government offered a lucrative prize to anyone who could resolve the problem.\nMany experts expected the answer to come from astronomy by measuring the position of the moon against the stars, a method that demanded careful observation and elaborate tables of calculations. John Harrison, a self-taught carpenter and clockmaker from the north of England, pursued a different approach. He reasoned that a ship could carry a clock set precisely to the time of its home port, and sailors could then compare it with the local time at sea and calculate how far they had traveled. The trouble was that ordinary clocks ran unreliably on rolling ships and in fluctuating temperatures. Harrison devoted decades to building one timepiece after another. His fourth, no bigger than a large pocket watch, kept impeccable time on a voyage to Jamaica in the early 1760s.\nEven so, the officials in charge of the prize kept insisting on further trials. Many of them were astronomers. Harrison grew increasingly exasperated as he entered his seventies. Only in 1773, after the king himself took an interest, did the elderly clockmaker receive most of the money he was owed."
+},
+{
+"id": "r1-s3",
+"text": "Mr. Han's repair stall stood at the corner of our market street between a fish shop and a shoe store. He mended umbrellas mostly, though people also brought him zippers, watch straps, and once a child's broken toy train. Neighbors lingered to chat while he worked, and he dispensed advice as freely as spare buttons. The first time I went there, I carried a flimsy umbrella with two bent ribs and expected him to tell me to buy a new one, as most shopkeepers would have done. Instead, he spread it open on his workbench and scrutinized it as meticulously as a physician examining a patient. \"Nothing is ruined just because it is broken,\" he said as he straightened the metal with a small pair of pliers. It took him ten minutes and cost me the price of a cup of coffee, and I left feeling oddly elated, as though he had salvaged something more precious than an umbrella.\nThe stall vanished years ago and was replaced by a convenience store. I still cherish that umbrella, though its handle is faded and one panel no longer matches the others. Whenever I am tempted to discard something, I hear his quiet voice and reach for my repair kit instead."
+},
+{
+"id": "r2-p31",
+"text": "Single-person households now make up about a third of all households in Korea, and businesses have taken notice. Convenience stores sell ready-made meals tailored for one, and supermarkets offer produce in small packs. Many restaurants have added counter seats so that solo diners do not feel self-conscious. Even the housing market is evolving, with more compact apartments and shared buildings that provide communal laundry rooms and kitchens. Surveys indicate that people who live alone tend to spend a larger share of their money on convenience, hobbies, and pets than larger households do. For companies, the implication is clear: products built around the conventional family of four no longer suit a substantial segment of consumers."
+},
+{
+"id": "r2-p32",
+"text": "Louis Braille was blinded after an accident in his father's workshop in France at the age of three. At a school for blind children in Paris, he learned to read from cumbersome books printed with large raised letters, which were tedious to read and costly to produce. When a former soldier named Charles Barbier visited the school with a code of raised dots devised for passing messages in the dark, the young Braille recognized its potential but also its flaws. By the age of fifteen, he had streamlined the code into a system of six-dot cells that could each be felt with a single fingertip. Today his system is employed by blind readers across the globe."
+},
+{
+"id": "r2-p33",
+"text": "Hummingbirds live life at high speed. Their wings can flap dozens of times per second, which lets them hover in front of flowers while they sip nectar, and their hearts can beat more than a thousand times a minute during flight. Such exertion burns enormous amounts of energy, so a hummingbird must feed almost incessantly during the day. At night it cannot feed and faces a real risk of running out of fuel. To survive, many hummingbirds enter a deep sleep-like state called torpor. Their body temperature plummets and their heartbeat slows drastically, which substantially reduces the energy they use until morning."
+},
+{
+"id": "r2-p34",
+"text": "Barcelona's Sagrada Família is renowned both for its astonishing design and for how protracted its construction has been. Construction began in 1882, and the following year a young architect named Antoni Gaudí took over the project. He dedicated the remainder of his life to it and in his final months even lived in his workshop on the site. When Gaudí died in 1926 after being struck by a tram, only a fraction of the church was complete. Work proceeded sluggishly and was financed largely by donations and visitors' tickets rather than by the government. Today cranes still loom beside towers that Gaudí never saw finished."
+},
+{
+"id": "r2-s1",
+"text": "For most of the twentieth century, cities were designed around the automobile. Homes, offices, and shops were segregated into distinct zones linked by wide roads, and buying groceries often necessitated a drive. A growing number of planners now advocate the opposite approach. The idea of the \"15-minute city,\" promoted by the researcher Carlos Moreno, holds that residents should be able to reach most daily needs, such as schools, clinics, parks, and stores, within a short walk or bike ride from home.\nParis has become the best-known example. Under Mayor Anne Hidalgo, the city has converted some traffic lanes into bike paths, opened school playgrounds to the public on weekends, and planted trees along busy streets. Proponents say walkable neighborhoods curb pollution, foster exercise, and help neighbors get to know one another.\nThe idea has detractors too. Some shop owners fear losing customers who arrive by car. In several cities, rumors circulated online that the plan would forbid residents from leaving their own districts. Planners have repeatedly refuted this and explain that the objective is to add choices, not to take them away. Critics also worry that walkable districts may become so desirable that rents soar and displace the very residents the plan was meant to serve."
+},
+{
+"id": "r2-s2",
+"text": "On a mild January day in 1919, a bizarre catastrophe struck Boston's North End. A huge steel tank holding more than eight million liters of molasses, a thick syrup used to make industrial alcohol, abruptly burst open. A brown wave several meters high surged through the streets at a terrifying speed, knocking buildings off their foundations and bending the steel supports of a nearby elevated railway. Twenty-one people were killed and about 150 were injured. As the evening grew colder, the molasses thickened and hampered rescuers who waded through the sticky mass.\nInvestigators later discovered that the tank had been shoddily built and never adequately tested. Residents had long grumbled that it leaked so badly that local children collected the dripping syrup. Instead of remedying the defect, the company had simply painted the tank brown so that the leaks would be harder to see. After a lengthy lawsuit the company was held liable. The catastrophe also led to stricter regulations requiring qualified engineers to check and approve the plans for large construction projects."
+},
+{
+"id": "r2-s3",
+"text": "Leafcutter ants, found in the forests of Central and South America, are among the oldest farmers on Earth. Long lines of them can be seen marching along the ground, each ant carrying a piece of leaf much larger than itself. It would be tempting to assume that the ants devour the leaves, but they do not. Instead, they carry the pieces deep into their underground nests, chew them into a soft paste, and use it to feed a special fungus that grows in large gardens. The fungus in turn yields nourishment that the ants and their young eat.\nThey began this kind of farming millions of years before humans planted their first crops. Like human farmers, they must safeguard their gardens from pests. Some of the ants harbor beneficial bacteria on their bodies that produce chemicals which prevent harmful molds from overrunning the fungus. Researchers have even studied these chemicals in the hope of discovering new antibiotics. A large colony can contain millions of ants divided by size into distinct roles. Tiny workers tend the garden while large soldiers guard the nest. Collectively, a single colony can strip an astonishing amount of vegetation from the surrounding forest."
+},
+{
+"id": "r3-p31",
+"text": "During the pandemic, many people were confined at home for long months, and sales of houseplants soared in Korea and many other countries. For some owners, the plants became more than ornaments. They christened them, chatted to them, and fretted when the leaves turned yellow. The term \"companion plant\" has since become commonplace, and some local governments, including Seoul's, have even opened clinics where residents can bring ailing plants for diagnosis and advice. Researchers posit that tending a living thing, even a silent one, can instill a sense of routine and purpose. For those who live in solitude or cannot keep pets, a plant on the windowsill may be a modest but meaningful companion."
+},
+{
+"id": "r3-p32",
+"text": "The word robot is now ubiquitous, from factory floors to science fiction, but it originated on a theater stage. In 1920 the Czech writer Karel Čapek finished a play about a factory that manufactures artificial workers. He first intended to call these beings by a word based on the Latin for labor, but it struck him as too scholarly. According to Čapek, his brother Josef, a painter, suggested robot instead, a word drawn from the Czech robota, meaning forced labor. When the play was staged in London and New York in the early 1920s, the new word traveled with it. Within a few years it had permeated many languages around the world."
+},
+{
+"id": "r3-p33",
+"text": "The pistol shrimp is only a few centimeters long, yet it is one of the noisiest creatures in the sea. One of its two claws is much larger than the other and can snap shut at astonishing velocity. The snap propels a jet of water so rapidly that it forms a minute bubble. When the bubble implodes a moment later, it emits a sharp crack and a burst of heat that briefly reaches thousands of degrees. The shock is potent enough to stun or even kill small fish and crabs, which the shrimp then devours. Intriguingly, the noise does not stem from the claw striking itself but from the collapsing bubble."
+},
+{
+"id": "r3-p34",
+"text": "The Mona Lisa is now the most visited painting in the Louvre, but it was not always so celebrated. In August 1911 it vanished from the museum. The thief was Vincenzo Peruggia, an Italian handyman who had once worked at the Louvre. He concealed himself inside the building, removed the painting from the wall, and strolled out with it under his garments. According to most accounts, the painting stayed hidden in his room in Paris for more than two years. Meanwhile, newspapers everywhere covered the mystery and throngs came to gaze at the vacant space. In 1913 Peruggia attempted to sell the painting to an art dealer in Florence and was apprehended. By then the Mona Lisa had become a global celebrity."
+},
+{
+"id": "r3-s1",
+"text": "Local festivals have become a lifeline for many small towns in Korea. Virtually every region now hosts one, celebrating anything from cherry blossoms and butterflies to local foods such as crab and ginseng. For towns with dwindling populations, a thriving festival can attract tens of thousands of visitors in a single weekend, filling restaurants and guesthouses that are deserted the rest of the year.\nSuccess has its drawbacks, however. In recent years, visitors have posted photos online of exorbitantly priced food at some festivals, such as a small plate of grilled pork that cost as much as a full meal at an upscale restaurant. Such posts circulate rapidly, and a single complaint can tarnish a festival's reputation for years. In response, some towns began to disclose food prices in advance and to inspect stalls during the event.\nExperts also observe that many festivals look alike, with the same food trucks, singers, and souvenirs. They urge towns to concentrate on what makes their area distinctive, whether it is a local craft, a historic site, or a dish found nowhere else. Such features give visitors an incentive to return."
+},
+{
+"id": "r3-s2",
+"text": "The colors of autumn leaves come from a quiet chemical change inside them. During spring and summer, leaves are saturated with chlorophyll, the green pigment that plants use to convert sunlight into nourishment. Chlorophyll is so abundant that it masks other pigments in the leaf, including yellow and orange ones called carotenoids. As the days grow shorter and cooler, trees prepare to shed their leaves for winter. They cease producing new chlorophyll and break down what remains, reclaiming valuable nutrients before the leaves fall. With the green gone, the hidden yellows and oranges finally emerge.\nReds and purples are a separate matter. These colors come from pigments called anthocyanins, which many trees actually synthesize in autumn rather than simply reveal. Scientists are still debating why a tree would expend energy manufacturing new pigments in leaves it is about to lose. One hypothesis is that the pigments function like sunscreen and protect the leaf while the tree extracts nutrients from it. Sunny days and cool nights tend to yield the most vivid reds, which is one reason autumn colors fluctuate from year to year."
+},
+{
+"id": "r3-s3",
+"text": "My grandmother sold vegetables from a folding table at the edge of the morning market. On Saturdays she let me take charge of the money box. It was a battered cookie tin, and inside it she kept coins arranged in paper cups. Her customers were mostly elderly neighbors who seldom bargained, and some lingered to gossip. I was proud of my quick arithmetic, so the first time a customer handed me a large bill, I calculated the change mentally and dropped it into his palm without a word. Grandmother remained silent until he had gone. Then she demonstrated her own method, placing each coin and note into the customer's hand one at a time and counting up aloud from the price to the amount paid. \"It is not about whether you are right,\" she said. \"It is about letting them see that you are honest.\"\nI have worked in offices for two decades now, and I seldom handle cash. But whenever I submit a report or an invoice to a client, I strive to show my work step by step, the way she counted coins into a stranger's hand."
+}
+],
+"q": [
+[
+1,
+1,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: Did the manager say anything about the report you handed in two days late?\nB: Not much. She was quite ____ about it and only asked me to be on time next month.",
+[
+"lenient",
+"nimble",
+"archaic",
+"sterile"
+],
+[
+1
+],
+"늦은 보고서에 대해 다음 달엔 제때 내라고만 했다는 뒷말이 단서라 '너그러운(lenient)'이 맞아요. nimble(재빠른)·archaic(낡은)·sterile(불모의)는 사람이 일을 대하는 태도와 이어지지 않아요."
+],
+[
+2,
+1,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: Your roommate practices the drums every night? That must drive you crazy.\nB: Yeah, it really does ____ me. I can hardly sleep before midnight.",
+[
+"exasperate",
+"recoup",
+"certify",
+"replenish"
+],
+[
+1
+],
+"A 의 drive you crazy(미치게 하다)를 B 가 Yeah 로 받아 바꿔 말한 자리라 '몹시 짜증 나게 하다(exasperate)'가 맞아요. recoup(되찾다)·certify(증명하다)·replenish(다시 채우다)는 소음과 관계없어요."
+],
+[
+3,
+1,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: The taxi driver charged us double the usual fare last night. That's way too much.\nB: I know. The fare was simply ____; next time we're taking the bus.",
+[
+"pliable",
+"exorbitant",
+"taciturn",
+"intangible"
+],
+[
+2
+],
+"A 의 way too much(너무 비싸다)를 I know 로 받아 고쳐 말했으니 '터무니없이 비싼(exorbitant)'이 맞아요. pliable(유연한)·taciturn(과묵한)·intangible(만질 수 없는)은 요금을 꾸미지 못해요."
+],
+[
+4,
+1,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: You're still studying for that certification exam? You never give up, do you?\nB: Right. My sister keeps urging me to ____, and I'm still at it.",
+[
+"encrypt",
+"calibrate",
+"swaddle",
+"persist"
+],
+[
+4
+],
+"A 의 never give up(포기하지 않다)을 Right 로 받아 바꿔 말한 자리라 '끈질기게 계속하다(persist)'가 맞아요. encrypt(암호화하다)·calibrate(눈금을 맞추다)·swaddle(포대기로 싸다)는 공부와 이어지지 않아요."
+],
+[
+5,
+1,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: You must have been really nervous before the job interview yesterday.\nB: Oh, yes. I was full of ____ the whole morning before it started.",
+[
+"remittance",
+"verbiage",
+"trepidation",
+"posterity"
+],
+[
+3
+],
+"A 의 really nervous(몹시 긴장한)를 Oh, yes 로 받아 고쳐 말했으니 '두려움, 불안(trepidation)'이 맞아요. remittance(송금)·verbiage(군말)·posterity(후손)은 마음 상태가 아니에요."
+],
+[
+6,
+1,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: Should we tell the new neighbors that their dog barks all night?\nB: Yes, and let's be ____ of their feelings when we do. They just moved in.",
+[
+"considerate",
+"frigid",
+"extant",
+"legible"
+],
+[
+1
+],
+"be ____ of their feelings 짝이 단서예요. considerate of(~을 배려하는)로 이어지고, 이사 온 지 얼마 안 됐다는 뒷말과도 맞아요. frigid(몹시 추운)·extant(현존하는)·legible(읽을 수 있는)은 feelings 와 짝이 되지 않아요."
+],
+[
+7,
+1,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: Is everyone in your group actually doing their share of the project?\nB: Not really. One member keeps finding excuses to ____ his duties, and the rest of us cover for him.",
+[
+"dodge",
+"ripen",
+"exhale",
+"consecrate"
+],
+[
+1
+],
+"his duties 를 목적어로 받는 짝이 단서예요. 핑계를 대며 맡은 일을 '피하다(dodge)'가 맞아요. ripen(익다)·exhale(숨을 내쉬다)·consecrate(신성하게 하다)는 duties 와 짝이 되지 않아요."
+],
+[
+8,
+1,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: The forecast for Saturday looks dismal. Maybe we should go hiking another day.\nB: Agreed. Let's ____ the trip until next weekend.",
+[
+"laminate",
+"abduct",
+"defer",
+"extort"
+],
+[
+3
+],
+"A 의 another day(다른 날에)를 Agreed 로 받아 바꿔 말한 자리라 '미루다(defer)'가 맞아요. laminate(코팅하다)·abduct(납치하다)·extort(갈취하다)는 여행 일정과 관계없어요."
+],
+[
+9,
+1,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: The CEO's speech this morning lasted barely two minutes, didn't it?\nB: Yes, it was very ____, and it still covered everything that mattered.",
+[
+"hereditary",
+"concise",
+"indigenous",
+"populous"
+],
+[
+2
+],
+"A 의 barely two minutes(2분도 안 되는)를 Yes 로 받아 고쳐 말했으니 '간결한(concise)'이 맞아요. hereditary(유전의)·indigenous(토착의)·populous(인구가 많은)은 연설을 꾸미지 못해요."
+],
+[
+10,
+1,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: Are Minho and Jisu still not talking after their quarrel last month?\nB: Actually, they finally ____ last week. They're even planning a trip together.",
+[
+"reconciled",
+"evacuated",
+"appraised",
+"conscripted"
+],
+[
+1
+],
+"함께 여행을 계획한다는 뒷말이 단서라 다툰 두 사람이 '화해했다(reconciled)'가 맞아요. evacuated(대피했다)·appraised(감정했다)·conscripted(징집했다)는 다툼 뒤의 일과 이어지지 않아요."
+],
+[
+11,
+1,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nBecause the evidence against him was so ____, the jury needed less than an hour to reach a guilty verdict.",
+[
+"pliable",
+"laconic",
+"compelling",
+"febrile"
+],
+[
+3
+],
+"Because 와 so 뒤 '한 시간도 안 걸려 유죄 평결'이 결과라, 증거가 '설득력 있는(compelling)' 것이었어요. pliable(유연한)·laconic(말수 적은)·febrile(열이 나는)은 증거를 꾸미지 못해요."
+],
+[
+12,
+1,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nTo ____ the irate customers, the new manager offered every table a free meal and a written apology.",
+[
+"revamp",
+"placate",
+"foreshadow",
+"salvage"
+],
+[
+2
+],
+"To 부정사가 목적이고, 화난 손님에게 무료 식사와 사과문을 건넸으니 '달래다(placate)'가 맞아요. revamp(개편하다)·foreshadow(예고하다)·salvage(건져 내다)는 손님을 목적어로 받는 뜻이 아니에요."
+],
+[
+13,
+1,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nAlthough critics disregarded the painter during her lifetime, her works are now considered ____ and have shaped generations of artists.",
+[
+"tepid",
+"queasy",
+"seminal",
+"prosodic"
+],
+[
+3
+],
+"Although 로 살아서 무시당한 것과 대비되고, 여러 세대 화가에게 영향을 주었으니 '새 흐름을 연(seminal)'이 맞아요. tepid(미지근한)·queasy(메스꺼운)·prosodic(운율의)는 작품 평가로 이어지지 않아요."
+],
+[
+14,
+1,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nThe senator refused to ____ the details of the agreement, keeping them confidential until both sides had signed it.",
+[
+"hoist",
+"sow",
+"pluck",
+"divulge"
+],
+[
+4
+],
+"keeping them confidential(비밀로 두다)이 앞말을 고쳐 말한 것이라, 내용을 '밝히기(divulge)'를 거부했다가 맞아요. hoist(들어 올리다)·sow(씨를 뿌리다)·pluck(뽑다)는 details 와 이어지지 않아요."
+],
+[
+15,
+1,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nDoctors recommend regular exercise to ____ the symptoms of mild depression, along with professional treatment.",
+[
+"mitigate",
+"tantalize",
+"anoint",
+"devolve"
+],
+[
+1
+],
+"to 부정사가 운동의 목적이라 증상을 '누그러뜨리다(mitigate)'가 맞아요. tantalize(애태우다)·anoint(기름을 붓다)·devolve(넘겨주다)는 symptoms 와 짝이 되지 않아요."
+],
+[
+16,
+1,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nThe hikers took a ____ route around the lake, a long, winding detour that added two hours to their trip.",
+[
+"circuitous",
+"nonchalant",
+"solicitous",
+"superlative"
+],
+[
+1
+],
+"쉼표 뒤 a long, winding detour(길고 구불구불한 우회로)가 빈칸을 고쳐 말한 것이라 '빙 돌아가는(circuitous)'이 맞아요. nonchalant(태연한)·solicitous(걱정하는)·superlative(최상의)는 길을 꾸미는 말이 아니에요."
+],
+[
+17,
+1,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nThe entrepreneur's start was ____: a small garage, two employees, and a single borrowed table saw.",
+[
+"spurious",
+"tacit",
+"salubrious",
+"modest"
+],
+[
+4
+],
+"쌍점 뒤 작은 차고, 직원 둘, 빌린 톱 하나가 빈칸을 풀어 쓴 것이라 '보잘것없는(modest)'이 맞아요. spurious(가짜의)·tacit(암묵적인)·salubrious(건강에 좋은)은 그 목록과 이어지지 않아요."
+],
+[
+18,
+1,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nMarine biologists warn that coral reefs are highly ____ to even slight increases in water temperature.",
+[
+"susceptible",
+"taciturn",
+"thrifty",
+"placid"
+],
+[
+1
+],
+"____ to 짝과 warn 이 단서라 '~에 영향받기 쉬운(susceptible to)'이 맞아요. taciturn(과묵한)·thrifty(검소한)·placid(차분한)은 to 와 짝을 이루어 수온 변화와 이어지지 않아요."
+],
+[
+19,
+1,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nThe author's earlier books were so ____ that only specialists could follow their arguments.",
+[
+"congenial",
+"lukewarm",
+"hardy",
+"abstruse"
+],
+[
+4
+],
+"so ~ that 뒤 '전문가만 따라갈 수 있었다'가 결과라 '난해한(abstruse)'이 맞아요. congenial(마음 맞는)·lukewarm(미지근한)·hardy(강인한)은 읽기 어려움의 까닭이 되지 않아요."
+],
+[
+20,
+1,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nMany residents publicly ____ the highway plan as a threat to the area's last green space.",
+[
+"whittled",
+"outsourced",
+"sequestered",
+"decried"
+],
+[
+4
+],
+"decry A as B(A를 B라며 비난하다) 짝이 단서예요. 마지막 녹지를 위협한다고 했으니 '공공연히 비난했다(decried)'가 맞아요. whittled(깎았다)·outsourced(외주를 주었다)·sequestered(격리했다)는 as a threat 와 짝이 되지 않아요."
+],
+[
+21,
+1,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nPatients with heartburn should avoid ____ large meals shortly before going to bed.",
+[
+"to eat",
+"eating",
+"eat",
+"to eating"
+],
+[
+2
+],
+"avoid 는 목적어로 동명사를 받는 동사라 avoid eating 이 맞아요. to eat 처럼 to부정사는 쓸 수 없어요."
+],
+[
+22,
+1,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nAfter months of negotiation, the two corporations decided ____ their research departments next year.",
+[
+"merging",
+"to merge",
+"merge",
+"to merging"
+],
+[
+2
+],
+"decide 는 목적어로 to부정사를 받아 decided to merge 가 맞아요. 동명사 merging 이나 원형 merge 는 decide 뒤에 올 수 없어요."
+],
+[
+23,
+1,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nThe bridge ____ in 1890 is still used by thousands of commuters every day.",
+[
+"built",
+"building",
+"was built",
+"has built"
+],
+[
+1
+],
+"다리는 '지어진' 것이라 수동의 과거분사 built 가 앞 명사를 꾸며요. 문장 동사 is used 가 따로 있으니 was built·has built 같은 동사는 또 올 수 없고, building 은 능동이라 맞지 않아요."
+],
+[
+24,
+1,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nThe coach demanded that every player ____ at the stadium two hours before kickoff.",
+[
+"arrives",
+"arrived",
+"arrive",
+"arriving"
+],
+[
+3
+],
+"demand(요구하다) 뒤 that절에는 (should) 동사원형을 써요. 그래서 arrive 가 맞고, arrives·arrived 는 쓸 수 없어요."
+],
+[
+25,
+1,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nBy the time the new library opens next spring, workers ____ more than two hundred thousand volumes.",
+[
+"have moved",
+"had moved",
+"are moving",
+"will have moved"
+],
+[
+4
+],
+"By the time + 미래(내년 봄 개관) 때까지 끝나 있을 일이라 미래완료 will have moved 가 맞아요. had moved 는 과거 어느 때까지의 일에 써요."
+],
+[
+26,
+1,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nMany adolescents find it hard to cope ____ the pressure of relentless online comparison.",
+[
+"for",
+"at",
+"with",
+"on"
+],
+[
+3
+],
+"'~에 대처하다'는 cope with 로 짝지어 써요. 다른 전치사는 cope 와 어울리지 않아요."
+],
+[
+27,
+1,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\n____ surprised the researchers most was how swiftly the forest recovered after the blaze.",
+[
+"That",
+"Which",
+"It",
+"What"
+],
+[
+4
+],
+"빈칸부터 most 까지가 주어 자리이고, 앞에 선행사가 없으니 '~하는 것'이라는 관계대명사 What 이 맞아요. That·Which 는 선행사가 있어야 하고, It 으로 시작하면 동사가 두 개(surprised, was)가 돼요."
+],
+[
+28,
+1,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nThe number of visitors to the national park ____ steadily since the new trail opened.",
+[
+"have risen",
+"has risen",
+"are rising",
+"rising"
+],
+[
+2
+],
+"The number of ~ 는 '~의 수'라 단수 취급하고, since 가 있으니 현재완료 has risen 이에요. have risen·are rising 은 복수 동사이고, rising 만으로는 동사가 없어요."
+],
+[
+29,
+1,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nDense fog ____ on schedule at the island airport this morning.",
+[
+"prevented from the plane landing",
+"prevented the plane from landing",
+"the plane prevented from landing",
+"prevented landing the plane from"
+],
+[
+2
+],
+"'A가 ~하지 못하게 하다'는 prevent A from -ing 순서예요. 그래서 prevented the plane from landing 이 맞고, 나머지는 어순이 흐트러졌어요."
+],
+[
+30,
+1,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nThis is the small laboratory ____ the vaccine was first developed in 1955.",
+[
+"which",
+"in that",
+"what",
+"in which"
+],
+[
+4
+],
+"뒤 절 the vaccine was first developed 가 빠진 것 없는 완전한 절이라 '그 실험실에서'를 나타내는 전치사 + 관계대명사 in which 가 맞아요. which 만 쓰면 전치사가 빠지고, 전치사 뒤에는 that 을 쓸 수 없으며, what 은 앞에 선행사가 있으면 못 써요."
+],
+[
+31,
+1,
+"reading",
+"r1-p31",
+"Which statement best sums up the central idea of the passage?",
+[
+"Kiosks help restaurants trim their labor costs and serve customers more swiftly.",
+"Kiosks bring convenience to many customers but create barriers for others.",
+"Kiosks are now mandatory in Korean hospitals and local government offices.",
+"Kiosks have transformed the way cinemas design their ticket counters."
+],
+[
+2
+],
+"글은 키오스크가 많은 사람에게 주문을 빠르게 했지만 일부 손님을 밀어냈다는 주제문으로 시작해, 노인·시각장애인의 어려움과 대책으로 풀어 가요. 편리함과 장벽을 함께 담은 보기가 요지예요. 인건비·영화관 매표소는 같은 소재의 옆 이야기이고, 병원·지자체에 의무화했다는 말은 지문 낱말을 엮어 사실을 비튼 거예요."
+],
+[
+32,
+1,
+"reading",
+"r1-p32",
+"Which would make the most fitting title for the passage?",
+[
+"Why the Earl of Sandwich Refused to Eat at Card Tables",
+"How Bread with Fillings Spread Across Eighteenth-Century Europe",
+"Why Card Games Became Fashionable in Old London Society",
+"How an Earl's Title Became the Name of a Snack"
+],
+[
+4
+],
+"글 전체가 샌드위치라는 이름이 샌드위치 백작의 작위에서 왔다는 이야기와 그 진위를 다뤄요. 백작은 카드 탁자를 떠나지 않으려 했을 뿐 탁자에서 먹기를 거부한 게 아니라 지문 낱말을 비튼 보기예요. 빵의 전파나 카드놀이 유행은 옆 주제예요."
+],
+[
+33,
+1,
+"reading",
+"r1-p33",
+"According to the passage, which of the following is true?",
+[
+"Otters eat sea urchins mainly in order to protect the kelp forests.",
+"Otters crack shellfish by dropping them from a height.",
+"Otters rely on dense fur, not body fat, for warmth.",
+"Otters need only a meager amount of food each day."
+],
+[
+3
+],
+"해달은 두꺼운 지방층이 없고 아주 빽빽한 털에 기대 체온을 지킨다고 했어요. 성게를 먹는 결과로 켈프 숲이 살아나는 것이지 숲을 지키려고 먹는 게 아니에요. 조개는 가슴에 올린 돌에 내리쳐 깨고, 하루에 몸무게의 4분의 1쯤을 먹어요."
+],
+[
+34,
+1,
+"reading",
+"r1-p34",
+"According to the passage, which of the following is NOT true?",
+[
+"Munch got the idea for it while out walking.",
+"Munch made one version that could be printed many times.",
+"Munch made only one version of The Scream.",
+"Munch's work was stolen twice and later recovered."
+],
+[
+3
+],
+"뭉크는 이 장면을 한 번만 그리지 않고 물감·파스텔·판화로 여러 번 만들었다고 했어요. 한 점만 만들었다는 문장이 글과 맞지 않아요. 산책하다 떠올린 것, 여러 장 찍을 수 있는 판화, 도난당한 작품을 되찾은 것은 글과 같아요."
+],
+[
+35,
+1,
+"reading",
+"r1-s1",
+"Which statement best sums up the central idea of the passage?",
+[
+"Delivery apps have changed how families in Korea plan and eat dinner.",
+"Delivery workers faced mounting pressure during the pandemic years.",
+"Delivery containers are mostly burned because recycling plants charge far too much.",
+"Delivery meals generate excessive packaging, and several fixes are under trial."
+],
+[
+4
+],
+"글은 배달 음식이 음식보다 포장이 더 많다는 주제문으로 시작해, 재활용이 어려운 까닭과 여러 해결 시도를 이어 가요. 가족 식사나 배달 노동자 이야기는 같은 소재의 옆 주제이고, 용기를 태우는 까닭을 비용이라고 한 보기는 지문 낱말을 엮어 까닭을 비튼 거예요."
+],
+[
+36,
+1,
+"reading",
+"r1-s1",
+"According to the passage, why are many delivery containers not recycled?",
+[
+"They come with plastic lids that facilities refuse to accept.",
+"They are often too dirty with leftover food to process.",
+"They are made of one pure plastic that cannot be melted.",
+"They are kept by restaurants and used again."
+],
+[
+2
+],
+"기름·소스가 묻은 용기는 너무 더러워 재활용되지 못하고 태우거나 묻는다고 했어요. 뚜껑을 받지 않는다는 말은 지문 낱말을 엮은 왜곡이고, 지문은 여러 재질이 섞여 분리하지 못한다고 했으니 한 가지 재질이라는 보기는 반대예요. 식당이 다시 쓴다는 내용은 없어요."
+],
+[
+37,
+1,
+"reading",
+"r1-s2",
+"According to the passage, which of the following is true?",
+[
+"Harrison measured the moon's position with a new clock.",
+"Harrison's first machine won the full prize right away.",
+"Harrison planned to find longitude by comparing two times.",
+"Harrison studied astronomy at a famous university in England."
+],
+[
+3
+],
+"해리슨은 출발 항구 시각을 지키는 시계를 실어 바다의 현지 시각과 비교하면 경도를 셈할 수 있다고 보았어요. 달의 위치를 재는 건 천문학자들의 방법이라 지문 낱말을 섞어 비튼 보기예요. 상금은 넷째 시계를 만든 뒤에도 한참 지나서 받았고, 그는 독학한 목수·시계공이었어요."
+],
+[
+38,
+1,
+"reading",
+"r1-s2",
+"What can be inferred from the passage?",
+[
+"Astronomers on the board may have favored their own method.",
+"Harrison's clocks failed on the voyage to Jamaica.",
+"The board flatly refused to test Harrison's fourth clock at all.",
+"The king designed the clock that finally won the prize."
+],
+[
+1
+],
+"전문가들은 천문학에서 답이 나오리라 보았고, 상금을 맡은 관리 상당수가 천문학자로 시험을 거듭 요구했어요. 자기 분야의 방법을 더 밀었을 수 있다는 결론까지 한 걸음 나아갈 수 있어요. 자메이카 항해에서 시계는 아주 정확했고, 관리들은 시험을 거부한 게 아니라 더 요구했으며, 왕이 시계를 만들었다는 말은 없어요."
+],
+[
+39,
+1,
+"reading",
+"r1-s3",
+"What can be inferred about the writer?",
+[
+"The writer later bought a convenience store on that corner.",
+"The writer now throws away anything that breaks.",
+"Mr. Han changed how the writer treats damaged belongings.",
+"The writer found Mr. Han's repairs too expensive."
+],
+[
+3
+],
+"글쓴이는 지금도 무언가를 버리고 싶을 때마다 한 씨의 목소리를 떠올리고 수선 도구를 꺼낸다고 했어요. 고장 난 물건을 대하는 태도가 그에게서 바뀌었다고 짐작할 수 있어요. 편의점은 노점 자리에 들어섰을 뿐이고, 버린다는 건 반대이며, 수리비는 커피 한 잔 값이었어요."
+],
+[
+40,
+1,
+"reading",
+"r1-s3",
+"Which would make the most fitting title for the passage?",
+[
+"The Proliferation of Convenience Stores on Market Streets",
+"What an Umbrella Repairman Taught Me",
+"Why Mr. Han Sold His Stall to a Store",
+"Life Between a Fish Shop and a Shoe Store"
+],
+[
+2
+],
+"글 전체가 우산을 고쳐 준 한 씨와 '고장 났다고 끝난 게 아니다'라는 말이 글쓴이에게 남긴 교훈을 다뤄요. 편의점 확산과 가게 사이의 삶은 옆 이야기이고, 한 씨가 노점을 팔았다는 건 지문 낱말을 엮어 지어낸 내용이에요."
+],
+[
+1,
+2,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: The hotel says there's no record of our reservation for tonight.\nB: Then let's ask them to ____ it against the confirmation email we received last week.",
+[
+"verify",
+"inundate",
+"divest",
+"swaddle"
+],
+[
+1
+],
+"____ it against the email(메일과 대조해 ~하다) 짝이 단서라 '확인하다(verify)'가 맞아요. inundate(범람시키다)·divest(빼앗다)·swaddle(포대기로 싸다)는 against 와 함께 예약 확인 뜻이 되지 않아요."
+],
+[
+2,
+2,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: You look so energetic today. Did that walk this morning help?\nB: Definitely. That brisk walk really ____ me.",
+[
+"laminated",
+"encrypted",
+"consigned",
+"invigorated"
+],
+[
+4
+],
+"A 의 energetic(기운 넘치는)을 Definitely 로 받아 바꿔 말한 자리라 '활력을 주었다(invigorated)'가 맞아요. laminated(코팅했다)·encrypted(암호화했다)·consigned(맡겼다)는 산책의 효과가 아니에요."
+],
+[
+3,
+2,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: Does your son still refuse to eat vegetables at dinner?\nB: He's extremely ____ about food. He won't eat a thing if the peas touch his rice.",
+[
+"hereditary",
+"populous",
+"legible",
+"fastidious"
+],
+[
+4
+],
+"완두콩이 밥에 닿기만 해도 안 먹는다는 뒷말이 단서라 '몹시 까다로운(fastidious)'이 맞아요. hereditary(유전의)·populous(인구가 많은)·legible(읽을 수 있는)은 식습관을 꾸미지 못해요."
+],
+[
+4,
+2,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: I heard the director praised Sora in front of the whole team.\nB: Yes, she ____ her for finishing the project two weeks early.",
+[
+"commended",
+"evacuated",
+"sequestered",
+"anointed"
+],
+[
+1
+],
+"A 의 praised(칭찬했다)를 Yes 로 받아 고쳐 말했으니 '칭찬했다(commended)'가 맞아요. evacuated(대피시켰다)·sequestered(격리했다)·anointed(기름을 부었다)는 일을 일찍 끝낸 사람에게 할 일이 아니에요."
+],
+[
+5,
+2,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: The construction noise next door is so annoying, isn't it?\nB: It's a real ____, especially on weekends when I want to sleep in.",
+[
+"remittance",
+"posterity",
+"nuisance",
+"vestige"
+],
+[
+3
+],
+"A 의 annoying(성가신)을 받아 바꿔 말한 자리라 '골칫거리(nuisance)'가 맞아요. remittance(송금)·posterity(후손)·vestige(흔적)은 소음을 가리킬 수 없어요."
+],
+[
+6,
+2,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: Jun didn't really say when he's coming back from his trip, did he?\nB: No, his answer was so ____ that I still don't know if it's this week or next.",
+[
+"vague",
+"frigid",
+"salubrious",
+"archaic"
+],
+[
+1
+],
+"A 의 didn't really say(제대로 말하지 않았다)를 No 로 받아 바꿔 말한 자리라 '모호한(vague)'이 맞아요. frigid(몹시 추운)·salubrious(건강에 좋은)·archaic(낡은)은 대답을 꾸미지 못해요."
+],
+[
+7,
+2,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: How was dinner with your old classmate last night?\nB: Tiring. He kept ____ about his new car and his hefty salary all evening.",
+[
+"hoisting",
+"ripening",
+"abducting",
+"boasting"
+],
+[
+4
+],
+"____ about his new car 짝이 단서예요. boast about(~을 자랑하다)이 맞고, hoisting(들어 올리다)·ripening(익다)·abducting(납치하다)는 about 과 함께 말하기를 나타내지 못해요."
+],
+[
+8,
+2,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: We should save my phone battery for the map, right?\nB: Right. Let's use it ____ until we reach the station.",
+[
+"sparingly",
+"presciently",
+"outlandishly",
+"belatedly"
+],
+[
+1
+],
+"A 의 save(아끼다)를 Right 로 받아 바꿔 말한 자리라 '아껴서(sparingly)'가 맞아요. presciently(선견지명 있게)·outlandishly(괴상하게)·belatedly(뒤늦게)는 배터리를 쓰는 방식이 아니에요."
+],
+[
+9,
+2,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: That leather jacket looks expensive. How did you get such a good price?\nB: The seller wanted fifty dollars, and I ____ with him until he agreed to thirty.",
+[
+"scampered",
+"sizzled",
+"twirled",
+"haggled"
+],
+[
+4
+],
+"50달러를 30달러로 깎을 때까지 했다는 뒷말이 단서라 '흥정했다(haggled)'가 맞아요. scampered(종종걸음쳤다)·sizzled(지글거렸다)·twirled(빙빙 돌렸다)는 값을 깎는 일과 관계없어요."
+],
+[
+10,
+2,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: Ms. Park handed most of her tasks to her assistant before her surgery, didn't she?\nB: Yes, she ____ them so that nothing would be delayed while she's away.",
+[
+"consecrated",
+"delegated",
+"quarried",
+"embalmed"
+],
+[
+2
+],
+"A 의 handed her tasks to her assistant(일을 조수에게 넘겼다)를 Yes 로 받아 바꿔 말한 자리라 '맡겼다(delegated)'가 맞아요. consecrated(봉헌했다)·quarried(채석했다)·embalmed(방부 처리했다)는 업무와 관계없어요."
+],
+[
+11,
+2,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nTo attract office workers, the museum decided to ____ its opening hours until nine on Fridays.",
+[
+"jostle",
+"extend",
+"muster",
+"foreshadow"
+],
+[
+2
+],
+"To 부정사가 목적이라 직장인이 오게 하려고 문 여는 시간을 '늘렸다(extend)'가 맞아요. jostle(밀치다)·muster(소집하다)·foreshadow(예고하다)는 opening hours 와 짝이 되지 않아요."
+],
+[
+12,
+2,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nThe volunteers worked ____ through the night, filling sandbags without a single break.",
+[
+"industriously",
+"absurdly",
+"prematurely",
+"indiscreetly"
+],
+[
+1
+],
+"쉼표 뒤 '한 번도 쉬지 않고 모래주머니를 채웠다'가 빈칸을 고쳐 말한 것이라 '부지런히(industriously)'가 맞아요. absurdly(터무니없이)·prematurely(너무 이르게)·indiscreetly(경솔하게)는 그 모습과 이어지지 않아요."
+],
+[
+13,
+2,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nHer remarks about her rivals were so ____ that they dominated the headlines for a whole week.",
+[
+"immaculate",
+"contentious",
+"makeshift",
+"incombustible"
+],
+[
+2
+],
+"so ~ that 뒤 '일주일 내내 신문 머리기사를 차지했다'가 결과라 '논란을 일으키는(contentious)'이 맞아요. immaculate(티 없는)·makeshift(임시변통의)·incombustible(불연성의)는 발언을 꾸미지 못해요."
+],
+[
+14,
+2,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nBecause the old bridge had begun to ____, engineers closed it to heavy trucks until repairs were done.",
+[
+"twirl",
+"reciprocate",
+"abound",
+"deteriorate"
+],
+[
+4
+],
+"Because 절이 '트럭 통행을 막고 수리했다'의 까닭이라 다리가 '낡아 나빠지다(deteriorate)'가 맞아요. twirl(빙빙 돌다)·reciprocate(보답하다)·abound(많다)는 다리에 일어날 일이 아니에요."
+],
+[
+15,
+2,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nArchaeologists unearthed only a few ____ of the ancient wall, scattered stones left after centuries of looting.",
+[
+"remnants",
+"verbiage",
+"stipulations",
+"ratios"
+],
+[
+1
+],
+"쉼표 뒤 '수백 년 약탈 뒤 남은 흩어진 돌'이 빈칸을 고쳐 말한 것이라 '남은 조각(remnants)'이 맞아요. verbiage(군말)·stipulations(규정)·ratios(비율)은 성벽의 일부가 아니에요."
+],
+[
+16,
+2,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\n____ to most forecasts, the economy grew faster this year than in any year of the past decade.",
+[
+"Tranquil",
+"Sterile",
+"Febrile",
+"Contrary"
+],
+[
+4
+],
+"____ to most forecasts 는 contrary to(~와 반대로) 짝으로 쓰여요. 예측과 달리 경제가 더 빨리 컸다는 뜻이 돼요. tranquil(고요한)·sterile(불모의)·febrile(열이 나는)은 to forecasts 와 짝이 되지 않아요."
+],
+[
+17,
+2,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nCritics hailed the young violinist as a ____, a child whose skill rivaled that of musicians three times her age.",
+[
+"prodigy",
+"culprit",
+"tyrant",
+"beneficiary"
+],
+[
+1
+],
+"쉼표 뒤 '세 배 나이 음악가와 겨루는 실력의 아이'가 빈칸을 고쳐 말한 것이라 '신동(prodigy)'이 맞아요. culprit(범인)·tyrant(폭군)·beneficiary(수혜자)는 그 설명과 이어지지 않아요."
+],
+[
+18,
+2,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nAlthough the company slashed its prices, its profits continued to ____ as customers defected to rivals.",
+[
+"recline",
+"wriggle",
+"dwindle",
+"flutter"
+],
+[
+3
+],
+"Although 로 값을 내렸는데도, 손님이 경쟁사로 떠나 이익이 '줄어들다(dwindle)'가 맞아요. recline(기대어 눕다)·wriggle(꿈틀거리다)·flutter(펄럭이다)는 이익에 쓰지 않아요."
+],
+[
+19,
+2,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nThe witness's account was ____ with the security footage, so the detectives began to doubt her testimony.",
+[
+"intriguing",
+"adamant",
+"inconsistent",
+"tractable"
+],
+[
+3
+],
+"____ with the footage 짝이 단서예요. inconsistent with(~와 어긋나는)가 맞고, 그래서 진술을 의심했다는 뒷말과도 이어져요. intriguing(흥미로운)·adamant(단호한)·tractable(다루기 쉬운)은 with 영상과 짝이 되지 않아요."
+],
+[
+20,
+2,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nThe government will ____ extra funds to rural schools in order to help them hire more teachers.",
+[
+"expunge",
+"allocate",
+"stow",
+"peruse"
+],
+[
+2
+],
+"in order to 가 목적이라 교사를 더 뽑게 돕도록 돈을 '배정하다(allocate)'가 맞아요. expunge(지우다)·stow(넣어 두다)·peruse(정독하다)는 funds to schools 와 짝이 되지 않아요."
+],
+[
+21,
+2,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nSeveral residents admitted ____ the warning signs before the flood reached their homes.",
+[
+"to ignore",
+"ignore",
+"ignoring",
+"to ignoring"
+],
+[
+3
+],
+"admit 는 목적어로 동명사를 받는 동사라 admitted ignoring 이 맞아요. to ignore 같은 to부정사는 admit 뒤에 오지 않아요."
+],
+[
+22,
+2,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nThe museum refused ____ the masterpiece to the foreign gallery for the exhibition.",
+[
+"lending",
+"lend",
+"to lend",
+"to lending"
+],
+[
+3
+],
+"refuse 는 to부정사를 목적어로 받아 refused to lend 가 맞아요. lending 같은 동명사는 refuse 뒤에 쓰지 않아요."
+],
+[
+23,
+2,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\n____ from the top of the tower, the medieval town resembles a painting.",
+[
+"Seeing",
+"Seen",
+"Having seen",
+"Is seen"
+],
+[
+2
+],
+"주어 the medieval town 은 탑 위에서 '보이는' 쪽이라 수동 분사구문 Seen 이 맞아요. Seeing·Having seen 은 마을이 무엇을 본다는 능동이 되고, Is seen 은 문장 동사 resembles 가 이미 있어 동사가 두 개가 돼요."
+],
+[
+24,
+2,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\n____ any problems arise during the installation, please contact our support center promptly.",
+[
+"Were",
+"Had",
+"Did",
+"Should"
+],
+[
+4
+],
+"If any problems should arise 에서 if 를 빼고 Should 를 앞으로 낸 도치예요. 뒤 동사가 원형 arise 라서 Should 만 맞고, Were·Had·Did 로는 arise 를 받을 수 없어요."
+],
+[
+25,
+2,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nI ____ dinner in the kitchen when the lights abruptly went out last night.",
+[
+"have cooked",
+"am cooking",
+"was cooking",
+"have been cooking"
+],
+[
+3
+],
+"불이 나간(went out) 과거 순간에 하고 있던 일이라 과거진행 was cooking 이 맞아요. last night 이 있어 현재완료나 현재진행은 쓸 수 없어요."
+],
+[
+26,
+2,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nThe museum owns thousands of old letters, many of ____ have never been shown to the public.",
+[
+"them",
+"which",
+"that",
+"whose"
+],
+[
+2
+],
+"many of ____ 이 앞 명사 letters 를 받아 동사 have 의 주어가 되는 관계절이라 many of which 가 맞아요. them 을 쓰면 두 절을 접속사 없이 쉼표로만 이은 꼴이 되고, 전치사 of 뒤에는 that 을 쓸 수 없으며, whose 는 뒤에 명사가 있어야 해요."
+],
+[
+27,
+2,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nEven with a detailed map, the tourists ____ find the hidden temple in the mountains.",
+[
+"could hard",
+"could hardly",
+"could not hardly",
+"hard could"
+],
+[
+2
+],
+"'거의 ~할 수 없었다'는 could hardly 예요. hard 는 '열심히'라 뜻이 맞지 않고, hardly 에 이미 부정 뜻이 있어 not 과 함께 쓰지 않아요."
+],
+[
+28,
+2,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nEach of the students who joined the program ____ a certificate at the end of the course.",
+[
+"receive",
+"are receiving",
+"receives",
+"have received"
+],
+[
+3
+],
+"주어 Each of ~ 는 단수라 단수 동사 receives 가 맞아요. students 에 끌려 복수 동사를 쓰면 틀려요."
+],
+[
+29,
+2,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nThe meeting room was not ____ all the guests who came to the launch event.",
+[
+"enough large to hold",
+"large to hold enough",
+"enough to hold large",
+"large enough to hold"
+],
+[
+4
+],
+"형용사를 꾸미는 enough 는 형용사 뒤에 와서 large enough to ~ 순서예요. 나머지는 어순이 맞지 않아요."
+],
+[
+30,
+2,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nThe former employee was accused ____ pilfering confidential documents from the company.",
+[
+"for",
+"of",
+"with",
+"about"
+],
+[
+2
+],
+"'~로 고발되다'는 be accused of 로 짝지어 써요. for·with·about 은 accuse 와 어울리지 않아요."
+],
+[
+31,
+2,
+"reading",
+"r2-p31",
+"Which statement best sums up the central idea of the passage?",
+[
+"Single-person households in Korea are struggling to afford spacious apartments in big cities.",
+"Korean families of four are spending more on pets and hobbies than before.",
+"Businesses are adjusting their goods and services to suit those living on their own.",
+"Convenience stores now sell more meals than traditional Korean restaurants."
+],
+[
+3
+],
+"글은 1인 가구가 늘자 기업이 주목했다는 주제문으로 시작해 편의점·마트·식당·주택의 변화를 예로 들어요. 기업이 혼자 사는 사람에게 맞춰 상품을 바꾼다는 보기가 요지예요. 집값 부담은 같은 소재의 옆 주제이고, 반려동물·취미 지출은 혼자 사는 사람 이야기를 4인 가족으로 비튼 보기예요."
+],
+[
+32,
+2,
+"reading",
+"r2-p32",
+"Which would make the most fitting title for the passage?",
+[
+"How a Former Soldier's Night Code Became the Army's Standard",
+"Why Raised-Letter Books Were So Laborious to Produce",
+"The Boy Who Gave Blind People a Way to Read",
+"Growing Up in a Nineteenth-Century French Workshop"
+],
+[
+3
+],
+"글 전체가 어려서 시력을 잃은 브라유가 열다섯 살에 여섯 점 점자를 만들어 시각장애인이 읽을 수 있게 된 이야기예요. 군인의 암호가 군대 표준이 됐다는 건 지문 낱말을 엮은 왜곡이고, 돋을새김 책값이나 작업장 생활은 옆 주제예요."
+],
+[
+33,
+2,
+"reading",
+"r2-p33",
+"According to the passage, which of the following is true?",
+[
+"Hummingbirds hover in front of flowers all night long to save their energy.",
+"Hummingbirds do most of their feeding during the night.",
+"A hummingbird's heart slows abruptly while it is flying.",
+"At night, hummingbirds lower their body temperature to conserve energy."
+],
+[
+4
+],
+"밤에 벌새는 토퍼(휴면 상태)에 들어가 체온과 심박을 크게 낮춰 에너지를 아낀다고 했어요. 꽃 앞에서 떠 있는 건 낮에 꿀을 먹는 모습이라 지문 낱말을 섞어 비튼 보기이고, 밤에 먹는다는 것과 날 때 심장이 느려진다는 것은 반대예요."
+],
+[
+34,
+2,
+"reading",
+"r2-p34",
+"According to the passage, which of the following is NOT true?",
+[
+"The government has funded most of the construction.",
+"Gaudí was not the first architect of the project.",
+"Gaudí did not live to see the church completed.",
+"Revenue from visitors helps finance the work."
+],
+[
+1
+],
+"공사비는 정부가 아니라 주로 기부금과 입장권으로 마련했다고 했어요. 정부가 대부분을 냈다는 문장이 글과 맞지 않아요. 공사가 1882년에 시작되고 다음 해에 가우디가 맡았으니 그가 첫 건축가는 아니에요."
+],
+[
+35,
+2,
+"reading",
+"r2-s1",
+"Which statement best sums up the central idea of the passage?",
+[
+"Paris has become the costliest city in Europe to live in.",
+"Electric cars could greatly alleviate the pollution and noise problems of congested cities.",
+"The 15-minute city forbids residents from leaving their own districts.",
+"Planners are promoting neighborhoods where daily needs sit within walking distance."
+],
+[
+4
+],
+"글 전체가 자동차 중심 도시와 달리 생활 시설을 걸어서 닿는 거리에 두자는 15분 도시와 파리의 예, 비판을 다뤄요. 파리 집값과 전기차는 같은 소재의 옆 주제이고, 동네를 못 떠나게 한다는 건 글이 헛소문이라고 한 내용을 비튼 보기예요."
+],
+[
+36,
+2,
+"reading",
+"r2-s1",
+"According to the passage, what false claim spread online about the plan?",
+[
+"That bike paths would supplant every road in Paris",
+"That people would be confined to their own neighborhoods",
+"That residents would have more choices than before",
+"That school playgrounds would close on weekends"
+],
+[
+2
+],
+"계획이 주민을 자기 구역에 묶어 둔다는 소문이 온라인에 퍼졌고 계획자들이 이를 거듭 부인했다고 했어요. 자전거 길이 모든 도로를 대신한다는 건 지문 낱말을 엮은 왜곡이고, 선택지가 늘어난다는 건 계획자들의 설명이며, 운동장은 오히려 주말에 열었어요."
+],
+[
+37,
+2,
+"reading",
+"r2-s2",
+"According to the passage, why was the tank painted brown?",
+[
+"To keep children from collecting the syrup",
+"To prove that the tank had been tested",
+"To disguise the fact that it was leaking",
+"To shield the steel from the January cold"
+],
+[
+3
+],
+"회사가 새는 곳을 고치지 않고 잘 안 보이게 갈색으로 칠했다고 했어요. 아이들이 시럽을 모은 건 칠한 까닭이 아니라 새는 정도를 보여 주는 이야기라 지문 낱말을 비튼 보기예요. 탱크는 제대로 시험받지 않았고, 추위 이야기는 없어요."
+],
+[
+38,
+2,
+"reading",
+"r2-s2",
+"What can be inferred from the passage?",
+[
+"Heeding the residents' complaints might have prevented the disaster.",
+"The children who collected syrup caused the tank to rupture.",
+"The company was never held legally liable.",
+"Molasses was used chiefly to sweeten confectionery products at the time."
+],
+[
+1
+],
+"주민들이 오래전부터 샌다고 불평했는데 회사가 칠만 했다고 했으니, 불평을 받아들였다면 막을 수 있었다는 결론까지 나아갈 수 있어요. 아이들이 터뜨렸다는 건 왜곡이고, 회사는 책임을 졌으며, 당밀은 공업용 알코올을 만드는 데 쓰였어요."
+],
+[
+39,
+2,
+"reading",
+"r2-s3",
+"According to the passage, which of the following is true?",
+[
+"The ants feed on a fungus that they raise with leaves.",
+"The ants eat the leaves after chewing them into a paste.",
+"All members of a colony are roughly the same size.",
+"The ants keep their gardens high up in the forest trees."
+],
+[
+1
+],
+"개미는 잎을 먹지 않고 반죽으로 만들어 균을 키우고, 그 균이 만든 먹이를 먹는다고 했어요. 잎을 반죽해 먹는다는 건 지문 낱말을 엮은 왜곡이고, 개미는 크기에 따라 일이 나뉘며, 밭은 땅속 굴에 있어요."
+],
+[
+40,
+2,
+"reading",
+"r2-s3",
+"What is the passage mainly about?",
+[
+"Why rainforest fungi proliferate so rapidly",
+"How leafcutter ants grow their own food",
+"How bacteria cause disease in rainforest plants",
+"Why leafcutter ants damage the forests they inhabit"
+],
+[
+2
+],
+"글은 잎꾼개미가 지구에서 가장 오래된 농부 가운데 하나라는 주제문으로 시작해, 잎으로 균을 키우고 밭을 지키는 모습을 풀어 가요. 균의 확산과 식물 병은 옆 주제이고, 숲을 해친다는 건 식물을 벗겨 낸다는 낱말을 엮어 비튼 보기예요."
+],
+[
+1,
+3,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: You keep stumbling over the funny part of your wedding speech, don't you?\nB: I know. I always ____ right there, no matter how much I practice.",
+[
+"dangle",
+"falter",
+"rebound",
+"scamper"
+],
+[
+2
+],
+"A 의 stumbling over(더듬거리다)를 I know 로 받아 바꿔 말한 자리라 '말이 막히다(falter)'가 맞아요. dangle(매달리다)·rebound(되튀다)·scamper(종종걸음치다)는 연설하는 사람에게 쓰지 않아요."
+],
+[
+2,
+3,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: You quit the gym because running on the same machine every day got boring?\nB: Exactly. It became so ____ that I started skipping workouts.",
+[
+"intrepid",
+"spotless",
+"underprivileged",
+"monotonous"
+],
+[
+4
+],
+"A 의 got boring(지루해졌다)을 Exactly 로 받아 바꿔 말한 자리라 '단조로운(monotonous)'이 맞아요. intrepid(용감한)·spotless(티 없는)·underprivileged(혜택받지 못한)은 운동을 꾸미지 못해요."
+],
+[
+3,
+3,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: The new intern hardly said a word at lunch today. Is he aloof?\nB: I don't think so. He's just ____ and needs a few weeks to open up.",
+[
+"diffident",
+"ephemeral",
+"extant",
+"incombustible"
+],
+[
+1
+],
+"몇 주 지나면 마음을 연다는 뒷말이 단서라 쌀쌀한 게 아니라 '수줍어하는(diffident)' 성격이에요. ephemeral(덧없는)·extant(현존하는)·incombustible(불연성의)는 사람의 성격이 아니에요."
+],
+[
+4,
+3,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: Was the sequel as good as the first film?\nB: Not at all. The plot was so ____ that I had to read a synopsis online to follow it.",
+[
+"thrifty",
+"convoluted",
+"indigenous",
+"affluent"
+],
+[
+2
+],
+"so ~ that 뒤 '줄거리를 따라가려고 요약을 찾아 읽었다'가 까닭을 알려 주니 '복잡하게 뒤얽힌(convoluted)'이 맞아요. thrifty(검소한)·indigenous(토착의)·affluent(부유한)은 줄거리를 꾸미지 못해요."
+],
+[
+5,
+3,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: So the doctor thinks your knee will heal quickly?\nB: Yes, the ____ is good. She says I'll be running again in about a month.",
+[
+"stationery",
+"vestige",
+"ratification",
+"prognosis"
+],
+[
+4
+],
+"A 의 will heal quickly(빨리 나을 것이다)를 Yes 로 받아 바꿔 말한 자리라 '예후, 회복 전망(prognosis)'이 맞아요. stationery(문구류)·vestige(흔적)·ratification(비준)은 무릎 치료와 관계없어요."
+],
+[
+6,
+3,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: This leftover fish smells a little strange. Is it still okay to eat?\nB: I wouldn't risk it. Seafood can ____ quickly in this sweltering weather.",
+[
+"spoil",
+"abound",
+"conform",
+"wriggle"
+],
+[
+1
+],
+"A 의 smells strange(냄새가 이상하다)를 받아 바꿔 말한 자리라 해산물이 '상하다(spoil)'가 맞아요. abound(많다)·conform(순응하다)·wriggle(꿈틀거리다)는 음식에 쓰지 않아요."
+],
+[
+7,
+3,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: Mrs. Lee has given half her income to the orphanage for twenty years. She's so generous.\nB: She really is. I've never met anyone so ____.",
+[
+"peripheral",
+"benevolent",
+"hypothetical",
+"impromptu"
+],
+[
+2
+],
+"A 의 generous(너그러운)를 She really is 로 받아 바꿔 말한 자리라 '자비로운(benevolent)'이 맞아요. peripheral(주변의)·hypothetical(가설의)·impromptu(즉석의)는 사람을 칭찬하는 말이 아니에요."
+],
+[
+8,
+3,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: So you still can't decide about the job in the Singapore office?\nB: No, I'm still ____. The salary is great, and I'd hate to leave my family.",
+[
+"splintering",
+"curling",
+"wavering",
+"flanking"
+],
+[
+3
+],
+"A 의 can't decide(정하지 못하다)를 No 로 받아 바꿔 말한 자리라 '망설이는(wavering)'이 맞아요. splintering(쪼개지는)·curling(말리는)·flanking(옆에 서는)은 마음 상태가 아니에요."
+],
+[
+9,
+3,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: Why has our train been stopped here for twenty minutes?\nB: A fallen tree is ____ the tracks ahead, and workers are trying to clear it away.",
+[
+"embellishing",
+"salvaging",
+"replenishing",
+"obstructing"
+],
+[
+4
+],
+"____ the tracks 짝과 치우는 중이라는 말이 단서라 선로를 '막고 있다(obstructing)'가 맞아요. embellishing(꾸미는)·salvaging(건져 내는)·replenishing(다시 채우는)은 쓰러진 나무와 선로의 짝이 되지 않아요."
+],
+[
+10,
+3,
+"dialogue",
+null,
+"Choose the word that most appropriately completes the dialogue.\nA: The clients said wonderful things about your presentation today.\nB: I know. They were very ____ about my slides, which made those late nights worth it.",
+[
+"pristine",
+"complimentary",
+"causative",
+"immutable"
+],
+[
+2
+],
+"be ____ about my slides 짝이 단서예요. complimentary about(~을 칭찬하는)이 맞고, A 의 said wonderful things 와도 이어져요. pristine(깨끗한)·causative(원인이 되는)·immutable(변하지 않는)은 사람이 슬라이드를 평하는 말이 아니에요."
+],
+[
+11,
+3,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nThe author's memoir is remarkably ____, openly admitting blunders that most writers would prefer to conceal.",
+[
+"spotless",
+"tepid",
+"centripetal",
+"candid"
+],
+[
+4
+],
+"쉼표 뒤 '다른 작가라면 숨길 실수를 털어놓는다'가 빈칸을 고쳐 말한 것이라 '솔직한(candid)'이 맞아요. spotless(티 없는)·tepid(미지근한)·centripetal(구심성의)는 회고록을 꾸미지 못해요."
+],
+[
+12,
+3,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nFirefighters worked for six hours to ____ the blaze before it engulfed the neighboring buildings.",
+[
+"peruse",
+"pamper",
+"extinguish",
+"whittle"
+],
+[
+3
+],
+"to 부정사가 여섯 시간 일한 목적이라 불을 '끄다(extinguish)'가 맞아요. peruse(정독하다)·pamper(응석을 받아 주다)·whittle(깎다)는 the blaze 와 짝이 되지 않아요."
+],
+[
+13,
+3,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nBefore approving the project, the council asked experts whether it was financially ____.",
+[
+"nocturnal",
+"mournful",
+"precocious",
+"feasible"
+],
+[
+4
+],
+"financially ____ 짝이 단서예요. financially feasible(재정적으로 실현 가능한)이 맞고, 승인 전에 묻는 내용과도 이어져요. nocturnal(야행성의)·mournful(슬픈)·precocious(조숙한)은 financially 와 짝이 되지 않아요."
+],
+[
+14,
+3,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nThe suspect gave a fictitious name in an attempt to ____ the police.",
+[
+"pamper",
+"deceive",
+"divest",
+"calibrate"
+],
+[
+2
+],
+"in an attempt to 가 가짜 이름을 댄 목적이라 경찰을 '속이다(deceive)'가 맞아요. pamper(응석을 받아 주다)·divest(빼앗다)·calibrate(눈금을 맞추다)는 가짜 이름의 목적이 될 수 없어요."
+],
+[
+15,
+3,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nVisitors may not touch the ancient murals because the oils on human skin can ____ their pigments.",
+[
+"sow",
+"stow",
+"exhale",
+"damage"
+],
+[
+4
+],
+"because 절이 만지지 말라는 까닭이라 손의 기름이 색을 '손상시키다(damage)'가 맞아요. sow(씨를 뿌리다)·stow(넣어 두다)·exhale(내쉬다)는 pigments 와 짝이 되지 않아요."
+],
+[
+16,
+3,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nThe island's ____ climate, mild in winter and cool in summer, attracts retirees from across the country.",
+[
+"equable",
+"laconic",
+"deferential",
+"vengeful"
+],
+[
+1
+],
+"쉼표 사이 '겨울엔 포근하고 여름엔 선선한'이 빈칸을 고쳐 말한 것이라 '온화하고 고른(equable)'이 맞아요. laconic(말수 적은)·deferential(공손한)·vengeful(앙심 품은)은 기후를 꾸미지 못해요."
+],
+[
+17,
+3,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nLawmakers voted to ____ the minister after journalists revealed that she had diverted public funds to personal travel.",
+[
+"drape",
+"oust",
+"jostle",
+"pluck"
+],
+[
+2
+],
+"after 절이 표결의 까닭이라 공금을 빼돌린 장관을 '쫓아내다(oust)'가 맞아요. drape(천을 걸치다)·jostle(밀치다)·pluck(뽑다)는 표결로 할 일이 아니에요."
+],
+[
+18,
+3,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nAlthough wolves were once ____ throughout Europe, hunting reduced them to scattered, isolated populations.",
+[
+"solicitous",
+"prosodic",
+"intangible",
+"widespread"
+],
+[
+4
+],
+"Although 로 '흩어진 작은 무리로 줄었다'와 대비되니 예전에는 '널리 퍼져 있던(widespread)'이 맞아요. solicitous(걱정하는)·prosodic(운율의)·intangible(만질 수 없는)은 동물 분포를 나타내지 못해요."
+],
+[
+19,
+3,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nScholars are still trying to ____ the ancient script, that is, to work out what its symbols actually say.",
+[
+"ravage",
+"pester",
+"decipher",
+"recline"
+],
+[
+3
+],
+"that is 뒤 '기호가 무슨 뜻인지 알아내다'가 빈칸을 고쳐 말한 것이라 '해독하다(decipher)'가 맞아요. ravage(파괴하다)·pester(괴롭히다)·recline(기대어 눕다)는 그 풀이와 이어지지 않아요."
+],
+[
+20,
+3,
+"sentence",
+null,
+"Choose the word that most appropriately fills in the blank.\nHer ____ attention to detail made her the newspaper's finest editor.",
+[
+"nocturnal",
+"causative",
+"vengeful",
+"meticulous"
+],
+[
+4
+],
+"____ attention to detail 짝이 단서예요. meticulous attention(꼼꼼한 주의)이 맞고, 최고의 편집자가 된 까닭과도 이어져요. nocturnal(야행성의)·causative(원인이 되는)·vengeful(앙심 품은)은 attention 과 짝이 되지 않아요."
+],
+[
+21,
+3,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nThe new supervisor suggested ____ the weekly meeting from Monday to Wednesday.",
+[
+"to move",
+"move",
+"moving",
+"to moving"
+],
+[
+3
+],
+"suggest 는 목적어로 동명사를 받아 suggested moving 이 맞아요. suggest 뒤에는 to부정사를 쓰지 않아요."
+],
+[
+22,
+3,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nThe two nations have pledged ____ their territorial dispute through peaceful negotiation.",
+[
+"to settle",
+"settling",
+"settle",
+"to settling"
+],
+[
+1
+],
+"pledge 는 to부정사를 받아 pledged to settle 이 맞아요. settling 같은 동명사는 pledge 뒤에 오지 않아요."
+],
+[
+23,
+3,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nThe woman ____ beside the window is the author of the novel we analyzed last month.",
+[
+"sits",
+"is sitting",
+"sitting",
+"to be sat"
+],
+[
+3
+],
+"문장 동사 is 가 따로 있으니 빈칸은 앞 명사를 꾸미는 말이어야 해요. 여자가 '앉아 있는' 능동이라 현재분사 sitting 이 맞아요. sits·is sitting 은 동사가 두 개가 돼요."
+],
+[
+24,
+3,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nThe safety inspector recommended that the dilapidated factory ____ immediately.",
+[
+"is closed",
+"closes",
+"be closed",
+"was closed"
+],
+[
+3
+],
+"recommend(권고하다) 뒤 that절에는 (should) 동사원형을 쓰고, 공장은 '닫히는' 쪽이라 수동 원형 be closed 가 맞아요."
+],
+[
+25,
+3,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nWilliam Shakespeare ____ Hamlet around 1600, during the reign of Queen Elizabeth I.",
+[
+"wrote",
+"has written",
+"had written",
+"writes"
+],
+[
+1
+],
+"1600년 무렵이라는 지난 때의 일이라 단순 과거 wrote 가 맞아요. 과거 시점 부사와 현재완료는 함께 쓰지 않고, had written 은 기준이 되는 다른 과거가 없어요."
+],
+[
+26,
+3,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nMost respondents in the survey said they were satisfied ____ the new online learning platform.",
+[
+"of",
+"to",
+"with",
+"for"
+],
+[
+3
+],
+"'~에 만족하다'는 be satisfied with 로 짝지어 써요. of·to·for 는 satisfied 와 어울리지 않아요."
+],
+[
+27,
+3,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nThe professor ____ I wrote my dissertation retired from the university last year.",
+[
+"whom",
+"under which",
+"under that",
+"under whom"
+],
+[
+4
+],
+"'그 교수 밑에서(under the professor)' 논문을 썼으니 전치사 + 관계대명사 under whom 이 맞아요. whom 만 쓰면 전치사가 빠지고, 사람이라 which 는 안 되며, 전치사 바로 뒤에는 that 을 쓸 수 없어요."
+],
+[
+28,
+3,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nI honestly can't remember ____ before I left the house this morning.",
+[
+"where did I put my keys",
+"where I put my keys",
+"where put I my keys",
+"my keys where I put"
+],
+[
+2
+],
+"remember 의 목적어로 들어간 간접의문문은 '의문사 + 주어 + 동사' 순서라 where I put my keys 가 맞아요. where did I put 은 직접의문문 어순이에요."
+],
+[
+29,
+3,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nOnly ____ students passed the rigorous exam, so the professor decided to revisit the material.",
+[
+"a little",
+"a few",
+"much",
+"little"
+],
+[
+2
+],
+"students 는 셀 수 있는 복수 명사라 a few 가 맞아요. a little·much·little 은 셀 수 없는 명사 앞에 써요."
+],
+[
+30,
+3,
+"grammar",
+null,
+"Choose the expression that makes the sentence grammatically correct.\nA large amount of money ____ to the hospital by an anonymous benefactor last year.",
+[
+"was donated",
+"were donated",
+"donated",
+"has donated"
+],
+[
+1
+],
+"A large amount of + 셀 수 없는 명사는 단수 취급하고, 돈은 '기부된' 쪽이며 by 가 있으니 수동 was donated 가 맞아요. were 는 복수, donated·has donated 는 능동이에요."
+],
+[
+31,
+3,
+"reading",
+"r3-p31",
+"Which statement best sums up the central idea of the passage?",
+[
+"Looking after houseplants has given many people comfort and company.",
+"Plant clinics in Seoul are now busier than veterinary hospitals.",
+"Houseplant sales plummeted once the pandemic finally subsided.",
+"Talking to ailing houseplants helps them recuperate more quickly."
+],
+[
+1
+],
+"글 전체가 팬데믹 때 늘어난 반려식물이 이름을 붙이고 돌보는 동반자가 되었고, 돌봄이 일상과 목적의식을 준다는 이야기예요. 식물 병원 이용이나 판매 감소는 같은 소재의 옆 이야기이고, 말을 걸면 빨리 낫는다는 건 지문 낱말을 엮어 비튼 보기예요."
+],
+[
+32,
+3,
+"reading",
+"r3-p32",
+"Which would make the most fitting title for the passage?",
+[
+"Why Josef Čapek Became a Renowned Painter",
+"How Factories First Employed Artificial Workers",
+"How a Stage Play Coined a Global Word",
+"Why Latin Words Sounded Too Academic"
+],
+[
+3
+],
+"글은 robot 이라는 낱말이 연극 무대에서 태어났다는 주제문으로 시작해 차페크 형제와 낱말의 전파를 풀어 가요. 요제프가 유명 화가가 된 까닭이나 라틴어 이야기는 지문 낱말을 엮은 왜곡이고, 공장의 인조 노동자는 희곡 속 설정일 뿐이라 옆 주제예요."
+],
+[
+33,
+3,
+"reading",
+"r3-p33",
+"According to the passage, which of the following is true?",
+[
+"The shrimp's larger claw heats the water in order to kill prey.",
+"The shrimp's loud crack comes from a bubble, not its claw.",
+"The shrimp's two claws are exactly the same size.",
+"The shrimp's prey is usually caught after a lengthy pursuit."
+],
+[
+2
+],
+"소리는 집게가 부딪쳐서가 아니라 거품이 꺼지며 난다고 했어요. 열은 거품이 꺼질 때 나는 것이지 집게가 물을 데우는 게 아니라 지문 낱말을 섞어 비튼 보기예요. 집게 하나가 훨씬 크고, 먹이는 충격으로 기절시켜 잡아요."
+],
+[
+34,
+3,
+"reading",
+"r3-p34",
+"According to the passage, which of the following is NOT true?",
+[
+"The thief had once been employed at the Louvre.",
+"People flocked to the museum just to look at the blank wall.",
+"The theft helped make the painting more renowned.",
+"The painting was smuggled to Italy shortly after it was stolen."
+],
+[
+4
+],
+"그림은 2년 넘게 파리의 그의 방에 숨겨져 있다가 1913년에야 피렌체에서 팔려다 붙잡혔어요. 도난 직후 이탈리아로 옮겨졌다는 문장이 글과 맞지 않아요. 도둑이 루브르에서 일한 적 있다는 것, 빈 벽을 보러 사람이 몰린 것, 더 유명해진 것은 글과 같아요."
+],
+[
+35,
+3,
+"reading",
+"r3-s1",
+"Which statement best sums up the central idea of the passage?",
+[
+"Festivals aid small towns but must tackle pricing and originality problems.",
+"Korean food trucks are venturing into festival markets overseas.",
+"Cherry blossom festivals attract the largest crowds in Korea.",
+"Online festival posts have devastated most small towns' finances."
+],
+[
+1
+],
+"글은 지역 축제가 작은 마을의 생명줄이 되었다는 주제문으로 시작해, 바가지 가격과 비슷비슷한 모습이라는 문제와 해법을 이어 가요. 푸드트럭 해외 진출과 벚꽃 축제 인파는 옆 주제이고, 온라인 글이 마을 재정을 망쳤다는 건 지문 낱말을 엮어 부풀린 보기예요."
+],
+[
+36,
+3,
+"reading",
+"r3-s1",
+"According to the passage, what have some towns done in response to complaints about prices?",
+[
+"They inspected guesthouses to lower room rates.",
+"They raised food prices to attract wealthier visitors.",
+"They published their food prices ahead of time.",
+"They prohibited visitors from posting photos online."
+],
+[
+3
+],
+"일부 마을이 음식 가격을 미리 알리고 행사 중에 노점을 점검했다고 했어요. 숙소를 점검했다는 건 지문 낱말을 엮은 왜곡이고, 가격을 올렸다는 건 반대이며, 사진 게시를 막았다는 말은 없어요."
+],
+[
+37,
+3,
+"reading",
+"r3-s2",
+"According to the passage, why do yellow and orange colors appear in autumn?",
+[
+"Because the green pigment covering them breaks down",
+"Because trees make them to shield leaves from sunlight",
+"Because trees produce more chlorophyll in autumn",
+"Because they are absorbed from the soil"
+],
+[
+1
+],
+"노랑·주황 색소는 원래 잎에 있었는데 엽록소에 가려 있다가, 가을에 엽록소가 분해되면서 드러난다고 했어요. 햇빛 가리개 구실은 빨강·보라 색소에 관한 가설이라 지문 낱말을 비튼 보기이고, 엽록소를 더 만든다는 건 반대이며, 흙에서 빨아올린다는 말은 없어요."
+],
+[
+38,
+3,
+"reading",
+"r3-s2",
+"What can be inferred from the passage?",
+[
+"Fallen autumn leaves hold fewer nutrients than summer leaves.",
+"Trees reclaim chlorophyll by growing new leaves in autumn.",
+"Leaves contain no yellow pigments during the summer.",
+"Scientists fully agree on why trees make red pigments."
+],
+[
+1
+],
+"나무는 잎이 떨어지기 전에 엽록소를 분해해 귀한 양분을 거둬들인다고 했어요. 그러니 떨어진 잎에는 여름 잎보다 양분이 적으리라 짐작할 수 있어요. 새 잎을 키운다는 건 왜곡이고, 노란 색소는 여름에도 가려져 있을 뿐이며, 과학자들은 아직 논쟁 중이에요."
+],
+[
+39,
+3,
+"reading",
+"r3-s3",
+"What can be inferred about the grandmother?",
+[
+"She thought her grandchild's arithmetic was often wrong.",
+"She valued her customers' trust more than speed.",
+"She scolded her grandchild in front of the customer.",
+"She preferred selling only to her elderly neighbors."
+],
+[
+2
+],
+"할머니는 계산이 맞느냐보다 손님이 정직함을 보게 하는 것이 중요하다고 했어요. 빠르기보다 신뢰를 아꼈다고 짐작할 수 있어요. 계산이 틀렸다는 건 할머니 말을 비튼 보기이고, 손님이 간 뒤에야 말을 꺼냈으며, 이웃에게만 팔고 싶었다는 말은 없어요."
+],
+[
+40,
+3,
+"reading",
+"r3-s3",
+"Which would make the most fitting title for the passage?",
+[
+"How to Run a Lucrative Vegetable Stall",
+"The Decline of Cash in Contemporary Offices",
+"Counting Coins, Showing Honesty",
+"A Grandmother Who Hated Quick Arithmetic"
+],
+[
+3
+],
+"글 전체가 할머니가 거스름돈을 하나씩 세어 건네며 가르친 '정직을 보여 주는 법'이 지금 일하는 방식까지 이어졌다는 이야기예요. 채소 장사와 현금 감소는 옆 주제이고, 빠른 암산을 싫어했다는 건 지문 낱말을 엮어 비튼 보기예요."
+]
+]
+}

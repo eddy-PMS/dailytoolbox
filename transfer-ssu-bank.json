@@ -52,7 +52,7 @@
 "passages": [
 {
 "id": "r1-s1",
-"text": "For most of the past decade, the electricity consumed by the world's data centers grew far more slowly than the volume of computing they performed. Each new generation of chips accomplished more work per watt, and operators consolidated scattered servers into vast, efficiently cooled facilities. That reassuring equilibrium has been disrupted by generative artificial intelligence. Training a large language model requires thousands of specialized processors running continuously for weeks, and answering the queries of hundreds of millions of users afterward consumes still more power. A 2025 assessment by the International Energy Agency (IEA) put the share of global electricity consumed by such facilities in 2024 at roughly one and a half percent and forecast that their appetite could more than double before 2030.\nThe consequences are already conspicuous in corporate disclosures. Several of the largest technology firms, which had pledged to become carbon neutral or even carbon negative by 2030, reported that their emissions had risen rather than fallen, largely because of the construction and operation of new data centers. Google — to take one example — acknowledged in 2024 that its greenhouse gas emissions were nearly half again as high as in 2019. Executives insist that the trajectory is temporary and that artificial intelligence will ultimately ____ its own footprint by optimizing power grids, accelerating the discovery of novel materials, and making buildings more frugal with energy.\nSkeptics remain unpersuaded. They observe that efficiency gains have historically been swallowed by rising consumption — a pattern economists call the rebound effect — and that utilities in several regions have postponed the retirement of coal and gas plants to satisfy the voracious appetite of new server farms. Whether the technology proves a net burden or a net boon for the climate, they contend, depends less on engineering ingenuity than on deliberate choices about where facilities are built and how their electricity is generated."
+"text": "For most of the twentieth century, air conditioning was a luxury concentrated in a handful of wealthy, hot countries, above all the United States. Each new generation of compressors accomplished more cooling per watt, and the electricity devoted to keeping cool remained a modest share of the global total. That reassuring equilibrium has been disrupted by rising incomes in the tropics. Hundreds of millions of families in India, Indonesia, and other warm, populous countries are buying their first units, and every machine switched on during a heat wave adds to the strain on the grid at the very moment demand peaks. A 2018 report by the International Energy Agency (IEA) estimated that fans and air conditioners already accounted for about a tenth of global electricity consumption and forecast that the number of units in operation could more than triple by 2050.\nThe consequences are already conspicuous on the hottest days of the year. Grid operators in several regions, which had planned for steadily rising demand, have reported that summer peaks climbed faster than expected, largely because of the spread of air conditioners. Delhi — to take one example — has repeatedly set records for peak electricity demand during summer heat waves. Manufacturers insist that the trajectory is manageable and that better machines will ultimately ____ the extra demand by using variable-speed compressors, smarter thermostats, and refrigerants that trap far less heat.\nSkeptics remain unpersuaded. They observe that efficiency gains have historically been swallowed by rising consumption — a pattern economists call the rebound effect — and that utilities in many regions still meet summer peaks by firing up their dirtiest plants. They also point to a vicious circle: the machines expel heat into city streets and, through leaking refrigerants and fossil-fueled power, warm the very planet that makes them necessary. Whether cooling proves a net burden or a manageable cost for the climate, they contend, depends less on engineering ingenuity than on deliberate choices about how buildings are designed and how their electricity is generated."
 },
 {
 "id": "r1-s2",
@@ -413,24 +413,24 @@ null,
 [
 1
 ],
-"경영진은 지금의 배출 증가가 '일시적'이고, AI 가 전력망 최적화·신소재 발견으로 결국 자기 배출을 '상쇄할(offset)' 거라고 주장해요. magnify(키우다)는 '일시적'이라는 낙관과 반대이고, conceal(숨기다)은 줄이는 방법(최적화·절약)과 이어지지 않아요."
+"제조사들은 지금의 추세가 '감당할 만하고', 더 나은 기계가 가변 속도 압축기·똑똑한 온도 조절기·열을 덜 가두는 냉매로 결국 늘어난 수요를 '상쇄할(offset)' 거라고 주장해요. magnify(키우다)는 '감당할 만하다'는 낙관과 반대이고, conceal(숨기다)은 수요를 줄이는 방법(효율 높은 부품)과 이어지지 않아요."
 ],
 [
 12,
 1,
 "reading",
 "r1-s1",
-"According to the passage, why have the emissions of some large technology companies increased?",
+"According to the passage, why have some grid operators seen summer peaks climb faster than expected?",
 [
-"They have abandoned their climate pledges.",
-"They have seen their processors grow less efficient per watt.",
-"They have been building and operating new data centers.",
-"They have paid utilities more for renewable electricity."
+"Because grid operators abandoned their plans for steadily rising demand.",
+"Because compressors have grown less efficient per watt.",
+"Because more households have been installing air conditioners.",
+"Because utilities have charged more for electricity at night."
 ],
 [
 3
 ],
-"둘째 문단에 배출이 늘어난 까닭이 '새 데이터센터를 짓고 돌렸기 때문(largely because of the construction and operation of new data centers)'이라고 나와요. 약속을 공식 철회했다거나 칩 효율이 나빠졌다는 말은 없어요. 칩은 오히려 와트당 일을 더 했다고 했어요."
+"둘째 문단에 여름 최대 수요가 예상보다 빨리 오른 까닭이 '에어컨이 퍼졌기 때문(largely because of the spread of air conditioners)'이라고 나와요. 전력 회사가 계획을 버렸다거나 밤 요금을 올렸다는 말은 없어요. 압축기는 오히려 와트당 더 많이 식혔다고 했어요."
 ],
 [
 13,
@@ -439,15 +439,15 @@ null,
 "r1-s1",
 "Which of the following is the best title for the passage?",
 [
-"The Chipmakers Who Conquered the Energy Problem",
-"The Worldwide Disappearance of Coal Plants",
-"The Climate Bill of the Generative AI Boom",
-"The Rebound Effect in Household Appliances"
+"The Engineers Who Finally Conquered the Summer Heat",
+"The Worldwide Disappearance of Electric Fans",
+"The Climate Bill of the Air-Conditioning Boom",
+"The Rebound Effect in Household Lighting"
 ],
 [
 3
 ],
-"생성형 AI 로 데이터센터 전력 수요와 기업 배출이 늘어난 일, 그리고 그 득실을 두고 갈리는 의견을 다룬 글이라 'AI 붐의 기후 청구서'가 맞아요. 석탄 발전소는 오히려 폐쇄가 미뤄진다고 했고, 가전제품 이야기는 없어요."
+"더워지는 나라들에 에어컨이 퍼지며 전력 수요와 여름 최대 부하가 늘어난 일, 그리고 그 득실을 두고 갈리는 의견을 다룬 글이라 '에어컨 붐의 기후 청구서'가 맞아요. 더위를 정복했다는 말은 없고, 선풍기는 에어컨과 함께 전력을 쓴다고만 했으며, 조명 이야기는 없어요."
 ],
 [
 14,

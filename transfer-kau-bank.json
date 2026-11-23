@@ -80,7 +80,7 @@
 },
 {
 "id": "r2-s1",
-"text": "For most of the space age, rockets were used once and discarded. After lifting its payload toward orbit, a booster would plummet into the ocean or burn up in the atmosphere, and the next launch required a brand-new one. Critics of the practice liked to ask, \"Would you fly with an airline that scrapped each jet after a single trip?\" That has begun to change. In December 2015, the company SpaceX landed the first stage of a Falcon 9 rocket upright on a landing pad after sending satellites into orbit, and within two years it was flying salvaged boosters again; some individual boosters have since flown more than twenty missions. In October 2024, the company went further, catching the colossal first stage of its Starship rocket in mid-air with a pair of mechanical arms on the launch tower. Rival companies and space agencies, in the United States, China, and elsewhere, are now developing reusable rockets of their own. The chief allure is cost. Building a booster accounts for a hefty share of the price of a launch. Reusing it allows that outlay to be amortized across many flights. ____, launching a satellite has become considerably cheaper, and the objects sent into orbit have proliferated. Reuse is not costless, however. Recovered boosters must be scrutinized and refurbished, and a rocket that carries fuel for landing can carry less to orbit. Engineers contend that these costs are worth bearing. How far reuse can lower prices, though, will hinge on how quickly a booster can be turned around."
+"text": "For decades, an airliner with only two engines was forbidden to venture far from land. Under a rule adopted in the United States in 1953, a twin-engine airliner had to stay within sixty minutes' flying time of an airport, so that it could land quickly if one engine failed. Long ocean crossings therefore remained the preserve of jets with three or four engines, such as the Boeing 747. Critics of the rule liked to ask, \"If a modern engine almost never fails, why must you keep a twin within an hour of land?\" That began to change in 1985. Because jet engines had become far more robust, regulators allowed specially approved twin-engine jets to fly up to two hours from the nearest airport, and a Boeing 767 soon crossed the Atlantic under the new terms. The limits were later stretched further; the Boeing 777 entered service in 1995 already cleared to fly three hours from an airport, and some newer jets have been approved for even longer stretches. Rival manufacturers, in Europe and elsewhere, have built long-range twins of their own. The chief allure is cost. Fuel and maintenance account for a hefty share of the price of operating an airliner, and two engines burn less fuel and need less upkeep than four. ____, twin-engine jets now dominate long-distance routes, and the four-engine giants have dwindled; the last Airbus A380 was delivered in 2021. The arrangement is not costless, however. Airlines must adhere to more stringent maintenance standards, train crews to handle an engine failure far from land, and meticulously plan every route around airports where a stricken jet could divert. Airlines contend that these costs are worth bearing. How far the limits can be stretched, though, will hinge on how reliable engines remain."
 },
 {
 "id": "r2-s2",
@@ -100,7 +100,7 @@
 },
 {
 "id": "r2-s6",
-"text": "For twenty-seven years, a small number of affluent travelers could cross the Atlantic in about three and a half hours. The Concorde, built jointly by Britain and France, entered passenger service in 1976 and cruised at more than twice the speed of sound. Yet despite all its speed and glamour, it never became the future of air travel that its designers had imagined. Only twenty were ever manufactured, and British Airways and Air France retired their fleets in 2003. Passengers paid many times the price of an ordinary ticket, and the aircraft became a symbol of luxury and national pride. (A) So why did it fail? Its fuel consumption was prodigious, its fares were exorbitant for ordinary travelers, and a fatal crash near Paris in 2000 eroded public confidence. The most fundamental constraint, however, was noise. An aircraft flying faster than sound produces shock waves that reach the ground as a sonic boom. If you lived beneath the flight path, you would hear an abrupt thunderclap that could rattle windows for miles. (B) In 1973, the United States banned civilian aircraft from flying faster than sound over land, and other countries imposed similar restrictions. These confined the Concorde largely to routes over the ocean, which ____. Engineers have spent decades seeking a feasible way to circumvent the problem. The key insight is that the contour of an aircraft dictates how its shock waves coalesce. A long, carefully sculpted nose and fuselage can keep the waves from merging into a single powerful boom, so that people on the ground hear only a soft thump. The idea is not new, but only in recent decades have computer simulations made it possible to design such shapes with confidence. (C) NASA has built an experimental jet called the X-59 to test the idea; unveiled in January 2024, the aircraft has a nose so elongated that the pilot cannot see straight ahead and must rely on a camera and a screen instead. The X-59 is not intended to carry passengers. Its purpose is to fly over designated communities and gauge how residents react to the quieter sound. The results will be shared with regulators, who must decide whether the overland ban could be replaced by a noise limit. (D) Several private companies are already designing supersonic airliners in the hope that regulators will lift the ban."
+"text": "Have you ever stepped off a long flight with a dull headache, a dry throat, and an odd lethargy? Part of the reason lies in the air you breathed on board. Airliners cruise at around thirty-five thousand feet, where the air is far too rarefied to sustain a person for long. Their cabins are therefore pressurized, but not to the level found on the ground. Under the rules that regulators follow, the pressure inside may be no lower than that at eight thousand feet, roughly the elevation of Aspen, Colorado. For decades, most jets kept their cabins close to that limit. (A) So why not simply pressurize the cabin to sea level? The answer lies in the fuselage itself. Each time a plane climbs, the air pumped into the cabin pushes outward on its skin, and each time it lands, that strain is released. If you bent a metal paper clip back and forth many times, you would see it eventually snap; aluminum fuselages succumb to repeated strain in a similar way, through a process known as metal fatigue. (B) The greater the gap between the pressure inside and outside, the harder the skin is stretched on every flight. Keeping the cabin at eight thousand feet rather than at sea level therefore mitigated the strain on aluminum airframes, which ____. Comfort, in other words, was sacrificed for durability. Engineers have long sought a way around this compromise. The key insight is that some materials withstand repeated stretching far better than aluminum does. Carbon-fiber composites, made of strong fibers embedded in hardened resin, do not suffer from fatigue in the same way. Nor do they corrode when moisture collects inside the cabin. (C) Boeing built the fuselage of its 787 Dreamliner largely from these composites; when the jet entered service in 2011, its cabin was pressurized to the equivalent of six thousand feet, and its air was kept more humid than in older jets. The benefit is subtle but tangible. A study sponsored by Boeing found that discomfort such as headaches became more common as cabin altitude rose toward eight thousand feet, and Airbus later chose a similar cabin setting for its A350. (D) Some airlines now mention the gentler cabin air in their advertising, hoping to entice frequent flyers onto their newer jets. Older aluminum jets, meanwhile, keep flying with the old setting."
 },
 {
 "id": "r3-s1",
@@ -235,7 +235,7 @@ null,
 1,
 "cloze",
 null,
-"Choose the option that most appropriately fills in the blank in the paragraph.\nFor years, public health advice fixated almost entirely on exercise: half an hour of brisk walking a day, several days a week. More recent research suggests that this advice, while sound, omits a crucial part of the picture. Consider people who work out regularly but spend the rest of their waking hours seated at desks, in cars, and on sofas. They may still face higher risks of heart disease and diabetes than people who sit less. Put simply, sixty minutes at the gym cannot fully ____ ten hours in a chair. Some studies have found that simply standing up and walking for a few minutes every half hour can curb blood sugar spikes after meals. So if you work at a desk, the lesson is not to abandon exercise. It is to treat prolonged, unbroken stretches of sitting as a separate habit worth changing.",
+"Choose the option that most appropriately fills in the blank in the paragraph.\nFor years, advice about sun protection fixated almost entirely on one figure: the SPF number printed on the bottle. More recent research suggests that this focus, while sensible, omits a crucial part of the picture. Manufacturers measure SPF in the laboratory with a thick coat of about two milligrams of lotion on each square centimeter of skin. Consider beachgoers who buy the highest number on the shelf but rub in only a quarter to a half of that amount. They may get far less protection than the label promises, and they may stay in the sun longer than people who trust the bottle less. Put simply, a higher number on the bottle cannot fully ____ a thin layer on the skin. Some studies have found that simply applying a second coat soon after the first can bring protection much closer to the stated level. So if you spend long days outdoors, the lesson is not to abandon sunscreen. It is to treat generous, repeated application as a separate habit worth building.",
 [
 "compound",
 "corroborate",
@@ -245,7 +245,7 @@ null,
 [
 3
 ],
-"규칙적으로 운동해도 오래 앉아 있으면 위험이 남는다는 앞 문장을 Put simply 로 다시 말하는 자리예요. 헬스장 한 시간이 의자 열 시간을 '상쇄하지(offset)' 못한다가 맞아요. compound(악화시키다)는 반대 방향이고, corroborate(확증하다)는 관계없으며, abandon 은 끝 문장의 '운동을 그만두라'에서 끌어온 낱말이라 뜻이 통하지 않아요."
+"SPF 숫자는 두껍게 발랐을 때를 기준으로 잰 것인데 사람들은 그 4분의 1에서 절반만 바른다는 앞 문장들을 Put simply 로 다시 말하는 자리예요. 병에 적힌 높은 숫자가 얇게 바른 층을 '상쇄하지(offset)' 못한다가 맞아요. compound(악화시키다)는 반대 방향이고, corroborate(확증하다)는 관계없으며, abandon 은 끝 문장의 '자외선 차단제를 그만 쓰라'에서 끌어온 낱말이라 뜻이 통하지 않아요."
 ],
 [
 8,
@@ -339,10 +339,10 @@ null,
 null,
 "Choose the expression that best completes the paragraph.\nAsk a group of newlyweds how likely they are to divorce. Many will put their own chances close to zero, even though they know that a large share of marriages end in divorce. Psychologists call this tendency the \"optimism bias.\" People expect good things to happen to them more often than to others, and bad things less often. Why does the bias survive contact with reality? Laboratory studies offer a clue. Volunteers are first asked to gauge their risk of various misfortunes, such as being burglarized or developing a serious illness, and then they are told the actual average risk. When the real figure turns out to be better than their estimate, they revise their beliefs readily. When it turns out to be worse, however, they barely adjust at all. In other words, ____. Some researchers argue that a mild optimism bias is useful, because it keeps people motivated to pursue their goals; the danger comes when it leads people to skip precautions such as insurance or regular medical checkups.",
 [
-"people revise their beliefs more readily after bad news than after good news",
-"people revise their beliefs more readily after news from friends than from strangers",
-"people revise their beliefs more readily about others than about themselves",
-"people revise their beliefs more readily after good news than after bad news"
+"people update beliefs faster after bad news than good news",
+"people update beliefs faster after news from friends than strangers",
+"people update beliefs faster about others than about themselves",
+"people update beliefs faster after good news than bad news"
 ],
 [
 4
@@ -407,10 +407,10 @@ null,
 null,
 "Choose the expression that best completes the paragraph.\nThe Greek philosopher Epicurus, who taught in Athens around 300 BCE, believed that much human misery springs from fear, above all the fear of death. If you share that fear, he had an argument for you. His argument against that fear is strikingly succinct. Death, he reasoned, is the end of all sensation, and good and bad things can only matter to a being that is able to experience them. While we are alive, death has not yet arrived; once it has arrived, we no longer exist to feel it. It follows that ____. Critics have objected that this reasoning neglects what death takes away: the future experiences a person would otherwise have enjoyed. Epicurus never denied that dying might be painful; his claim was only that being dead could not be.",
 [
-"death is the worst of all evils for the one who dies",
-"death is bad for the one who dies only if it is feared",
-"death is good for the one who dies only in old age",
-"death is neither good nor bad for the one who dies"
+"death is the worst of all evils for the dead",
+"death is bad for the dead only if it is feared",
+"death is good for the dead only in old age",
+"death is neither good nor bad for the dead"
 ],
 [
 4
@@ -441,10 +441,10 @@ null,
 "r1-s1",
 "Which of the following can be inferred from the passage?",
 [
-"Regulators have recently made long drone flights harder for companies to get.",
-"Drone delivery will become cheaper than trucks once drone batteries improve.",
-"Drones have already replaced delivery trucks in nearly every American city and suburb.",
-"Drone delivery is spreading, but rules, noise, and cost still limit its growth."
+"Regulators have made long drone flights harder to approve.",
+"Better batteries will soon make drones cheaper than trucks.",
+"Drones have replaced delivery trucks in nearly every American city and suburb.",
+"Drone delivery is spreading, but rules and costs still limit it."
 ],
 [
 4
@@ -475,10 +475,10 @@ null,
 "r1-s2",
 "Which of the following is the most appropriate title for the passage?",
 [
-"Clear-air turbulence is becoming rarer as the planet warms",
-"Cheaper fares are putting more passengers in the path of turbulence",
-"Every flight over the Atlantic now faces severe turbulence",
-"A warming climate may be making the skies bumpier"
+"Warming is making clear-air turbulence rarer",
+"Cheaper fares are exposing more fliers to turbulence",
+"Every Atlantic flight now meets severe turbulence",
+"Warming may be making the skies bumpier"
 ],
 [
 4
@@ -509,10 +509,10 @@ null,
 "r1-s3",
 "Which of the following can be inferred from the passage?",
 [
-"Rats free other rats only when they are rewarded with food.",
-"Rats may act to relieve another rat's distress even at some cost to themselves.",
-"Rats free their cagemates mainly because they dislike the noise of distress calls.",
-"Rats feel a trapped companion's distress in exactly the same way that humans do."
+"Rats free other rats only when rewarded with food.",
+"Rats may ease a cagemate's distress even at some cost.",
+"Rats free cagemates mainly to silence their annoying distress calls.",
+"Rats feel a trapped companion's distress exactly as humans do."
 ],
 [
 2
@@ -543,10 +543,10 @@ null,
 "r1-s4",
 "Which of the following is the most appropriate title for the passage?",
 [
-"Most workers already save more than they need",
-"Employer matching is why workers suddenly saved more",
-"Behavioral economics has ended inadequate saving everywhere",
-"Working with mental habits can raise retirement savings"
+"Most workers already save too much",
+"Employer matching drove the jump in savings",
+"Behavioral economics has ended undersaving everywhere",
+"Mental habits can boost retirement savings"
 ],
 [
 4
@@ -577,10 +577,10 @@ null,
 "r1-s5",
 "Which of the following can be inferred from the passage?",
 [
-"Pilots welcomed flight recorders as soon as Warren proposed them.",
-"The flight recorder was at first resisted but is now on every large airliner.",
-"Australia adopted flight recorders mainly because Britain pressured its government.",
-"Flight recorders have made passenger air travel completely free of accidents."
+"Pilots welcomed Warren's recorder from the very start.",
+"Once resisted, flight recorders are now on every large airliner.",
+"Australia adopted flight recorders mainly under British pressure.",
+"Flight recorders have made passenger air travel completely accident-free."
 ],
 [
 2
@@ -628,15 +628,15 @@ null,
 "r1-s6",
 "Which of the following can be inferred from the passage?",
 [
-"Most recipients of cash aid spend it mainly on alcohol and tobacco.",
-"Cash aid works mainly because mobile phones make recipients better informed.",
-"Giving poor households cash directly can be an effective and efficient form of aid.",
-"Cash transfers have been proven to end poverty permanently in every rural village they reach."
+"Most recipients spend cash aid mainly on alcohol and tobacco.",
+"Cash aid works mainly because phones keep recipients better informed.",
+"Giving cash directly can be effective and efficient aid.",
+"Cash transfers have been proven to end rural poverty permanently."
 ],
 [
 3
 ],
-"케냐 연구와 세계은행 검토는 현금을 받은 가정이 음식·재산에 쓰고 술·담배 지출은 늘지 않았다고 했고, 돈으로 주는 편이 싸다는 근거도 들었어요. 현금 직접 지원이 효과적이고 효율적일 수 있다는 문장이 요지예요. 술·담배에 쓴다는 말은 반대이고, 휴대전화가 정보를 줘서라는 말은 글에 없는 원인이며, 모든 마을에서 가난을 영원히 끝냈다는 말은 과장(장기 효과는 아직 연구 중)이에요."
+"케냐 연구와 세계은행 검토는 현금을 받은 가정이 음식·재산에 쓰고 술·담배 지출은 늘지 않았다고 했고, 돈으로 주는 편이 싸다는 근거도 들었어요. 현금 직접 지원이 효과적이고 효율적일 수 있다는 문장이 요지예요. 술·담배에 쓴다는 말은 반대이고, 휴대전화가 정보를 줘서라는 말은 글에 없는 원인이며, 농촌 가난을 영원히 끝낸다고 증명됐다는 말은 과장(장기 효과는 아직 연구 중)이에요."
 ],
 [
 1,
@@ -942,7 +942,7 @@ null,
 [
 3
 ],
-"빈칸 앞은 발사체를 다시 써서 비용을 여러 비행에 나눌 수 있다는 원인이고, 뒤는 위성 발사가 훨씬 싸지고 쏘아 올린 물체가 크게 늘었다는 결과예요. As a result 가 맞아요. In contrast 는 대조, Even so 는 양보, Until then 은 '그때까지'라 원인과 결과를 잇지 못해요."
+"빈칸 앞은 엔진이 둘인 비행기가 넷인 비행기보다 연료를 덜 쓰고 정비도 덜 든다는 원인이고, 뒤는 쌍발기가 장거리 노선을 차지하고 엔진 넷인 대형기가 사라져 간다는 결과예요. As a result 가 맞아요. In contrast 는 대조, Even so 는 양보, Until then 은 '그때까지'라 원인과 결과를 잇지 못해요."
 ],
 [
 19,
@@ -951,15 +951,15 @@ null,
 "r2-s1",
 "Which of the following can be inferred from the passage?",
 [
-"A rocket that saves fuel for landing can lift more cargo into orbit.",
-"Reusing rockets has lowered launch costs, though reuse brings costs of its own.",
-"Reusable rockets became possible mainly because governments sharply raised their space budgets after 2015.",
-"Every rocket launched today is recovered and flown again within weeks."
+"A jet with four engines burns less fuel than a jet with two.",
+"Flying twins over oceans saves money but brings costs of its own.",
+"The rules changed mainly because passengers demanded faster ocean crossings.",
+"Every long-distance flight today is flown by a jet with just two engines."
 ],
 [
 2
 ],
-"글은 재사용으로 발사 비용이 내려갔지만, 점검·정비가 필요하고 착륙용 연료 때문에 실을 수 있는 무게가 줄어든다는 대가도 있다고 해요. 그 요지를 담은 문장이 맞아요. 착륙 연료를 실은 로켓이 더 많이 싣는다는 말은 반대이고, 정부 예산이 늘어서 가능해졌다는 말은 글에 없는 원인이며, 오늘날 모든 로켓을 회수한다는 말은 과장이에요."
+"글은 엔진 둘인 비행기로 바다를 건너면 연료비와 정비비가 줄지만, 더 엄격한 정비 기준·승무원 훈련·비상 착륙 공항을 고려한 노선 계획이라는 대가도 있다고 해요. 그 요지를 담은 문장이 맞아요. 엔진 넷이 연료를 덜 쓴다는 말은 반대이고, 승객이 더 빠른 횡단을 요구해 규칙이 바뀌었다는 말은 글에 없는 원인이며, 오늘날 모든 장거리 비행을 쌍발기가 맡는다는 말은 과장이에요."
 ],
 [
 20,
@@ -985,9 +985,9 @@ null,
 "r2-s2",
 "Which of the following is the most appropriate title for the passage?",
 [
-"Airlines now have more pilots than they can hire",
-"How cheaper fuel led airlines to cut their training budgets",
-"Every small airline has stopped flying to rural towns",
+"Airlines now have a surplus of pilots",
+"Cheaper fuel led airlines to cut training budgets",
+"Every small airline has stopped serving rural towns",
 "Why the pilot shortage cannot be fixed overnight"
 ],
 [
@@ -1019,9 +1019,9 @@ null,
 "r2-s3",
 "Which of the following can be inferred from the passage?",
 [
-"Dung beetles roll in straight lines only under a bright moon.",
-"Beetles rely on the galaxy mainly because their sense of smell is too weak.",
-"All nocturnal insects find their way by the light of the Milky Way.",
+"Dung beetles roll straight only under a bright moon.",
+"Beetles rely on the galaxy mainly because their sense of smell is weak.",
+"All nocturnal insects navigate by the Milky Way.",
 "Precise navigation does not necessarily require a large brain."
 ],
 [
@@ -1055,7 +1055,7 @@ null,
 [
 "How household saving always speeds economic recovery",
 "Why saving together can shrink the economy",
-"Why Keynes blamed the Great Depression on reckless bank lending",
+"Keynes blamed the Depression on reckless lending",
 "Governments should never borrow money during a crisis"
 ],
 [
@@ -1087,10 +1087,10 @@ null,
 "r2-s5",
 "Which of the following can be inferred from the passage?",
 [
-"Stereotype threat explains nearly all score differences between groups of students.",
-"The original findings were weakened mainly because later tests used much easier questions.",
-"Women always perform worse than men on every kind of mathematics test.",
-"Stereotype threat may be real, but its influence on test scores appears limited."
+"Stereotype threat explains nearly all group score gaps.",
+"The findings weakened mainly because later tests used easier questions.",
+"Women always score worse than men on every math test.",
+"Stereotype threat may be real, but its effect seems limited."
 ],
 [
 4
@@ -1102,7 +1102,7 @@ null,
 2,
 "reading",
 "r2-s6",
-"Which position in the passage best suits the sentence below?\nIf this nose-and-fuselage shaping works in practice, the main obstacle that grounded the Concorde could finally be overcome.",
+"Which position in the passage best suits the sentence below?\nWith a fuselage made of such material, a cabin could safely be kept at a higher pressure, closer to what passengers feel on the ground.",
 [
 "(A)",
 "(B)",
@@ -1112,7 +1112,7 @@ null,
 [
 3
 ],
-"넣을 문장은 '이 기체 앞부분·동체 모양 설계가 실제로 통하면' 콩코드를 멈춰 세운 큰 걸림돌(소음)을 넘을 수 있다는 말이에요. 기체 모양으로 충격파가 하나로 합쳐지지 않게 해 '쿵' 하는 작은 소리만 나게 한다는 방법을 설명한 바로 뒤, NASA 시험기 이야기가 나오기 전인 (C)가 맞아요. (A)·(B)는 아직 해결 방법이 나오기 전이고, (D)는 X-59의 목적과 규제 당국 이야기 뒤라 this nose-and-fuselage shaping 이 가리킬 모양 설명에서 멀어요."
+"넣을 문장은 '그런 재료로 만든 동체라면' 기내 기압을 지상에 더 가깝게 높여도 된다는 말이에요. 반복해서 늘어나도 피로가 덜하고 부식도 없는 탄소섬유 복합재를 설명한 바로 뒤, 그 재료로 787 동체를 만들어 기내를 6천 피트 기압으로 맞췄다는 이야기가 나오기 전인 (C)가 맞아요. (A)는 아직 피로 문제도 나오기 전이고, (B)는 알루미늄의 금속 피로 바로 뒤라 such material 이 오히려 피로에 약한 알루미늄을 가리키게 되며, (D)는 승객 연구와 A350 이야기 뒤라 such material 이 가리킬 재료 설명에서 멀어요."
 ],
 [
 29,
@@ -1121,15 +1121,15 @@ null,
 "r2-s6",
 "Which of the following best completes the blank?",
 [
-"allowed it to reach nearly every major city in the world",
-"made its sonic boom louder than ever before",
-"persuaded regulators to lift the ban on noise",
-"severely limited the number of routes it could serve"
+"caused them to crack after a few flights",
+"made their engines far noisier on takeoff",
+"spared passengers any headaches on board",
+"helped them stay in service for decades"
 ],
 [
 4
 ],
-"땅 위 초음속 비행이 금지돼 콩코드가 주로 바다 위 노선에만 묶였다고 했어요. 그 제한 때문에 운항할 수 있는 노선 수가 '크게 줄었다'가 맞아요. 거의 모든 대도시에 갈 수 있었다는 말은 반대이고, 붐이 더 커졌다는 말은 제한과 상관없으며, 규제를 풀게 했다는 말은 끝 문장의 '규제가 풀리기를 바란다'를 끌어와 비튼 것이에요."
+"기내를 해수면이 아닌 8천 피트 기압으로 두면 알루미늄 동체가 비행마다 덜 늘어나 금속 피로가 덜 쌓인다고 했어요. 그래서 동체가 '수십 년 동안 쓰일 수 있었다'가 맞아요. 몇 번 비행 만에 금이 갔다는 말은 반대이고, 이륙 때 엔진 소음은 글과 상관없으며, 승객이 두통을 겪지 않았다는 말은 첫머리의 두통 이야기를 끌어와 비튼 것이에요."
 ],
 [
 30,
@@ -1138,15 +1138,15 @@ null,
 "r2-s6",
 "Which of the following can be inferred from the passage?",
 [
-"Sonic booms have never been a serious concern for people on the ground.",
-"The Concorde was retired mainly because its engines had become too costly to repair.",
-"Quieter supersonic flight could revive overland routes if regulators accept it.",
-"Supersonic airliners will certainly replace ordinary jets within a decade."
+"Aluminum handles repeated pressurization better than composites do.",
+"Cabin pressure was kept low mainly to save fuel on long routes.",
+"New materials let some jets keep cabin air closer to ground conditions.",
+"Every airliner flying today keeps its cabin at the six-thousand-foot level."
 ],
 [
 3
 ],
-"콩코드는 소음 규제 때문에 바다 위 노선에 묶였고, 지금은 기체 모양으로 붐을 줄이는 시험을 하며 그 결과로 규제 당국이 금지를 소음 기준으로 바꿀지 정한다고 해요. 조용한 초음속 비행이 받아들여지면 땅 위 노선이 되살아날 수 있다는 문장이 맞아요. 붐이 걱정거리가 아니었다는 말은 반대이고, 엔진 수리비 때문에 퇴역했다는 말은 글에 없는 원인이며, 10년 안에 반드시 보통 여객기를 대신한다는 말은 과장이에요."
+"알루미늄 동체는 반복되는 압력 차에 피로가 쌓여 기내 기압을 낮게 두었지만, 피로에 강한 복합재 동체 덕에 787 같은 기체는 기내를 6천 피트 수준으로 유지한다고 해요. 새 재료 덕에 기내 공기를 지상에 더 가깝게 둘 수 있다는 문장이 맞아요. 알루미늄이 복합재보다 반복 가압에 강하다는 말은 반대이고, 연료를 아끼려 기압을 낮췄다는 말은 글에 없는 원인이며, 오늘날 모든 여객기가 6천 피트로 맞춘다는 말은 과장이에요."
 ],
 [
 1,
@@ -1376,10 +1376,10 @@ null,
 null,
 "Choose the expression that best completes the paragraph.\nWhen the astronauts of Apollo 11 left the Moon in 1969, they left behind a small panel of reflectors pointed at the Earth. Observatories have been firing laser pulses at it ever since, timing how long the light takes to ricochet back. The results reveal that the Moon is drifting away from us by about 3.8 centimeters a year, roughly as fast as your fingernails grow. The cause is the tides. The Moon's gravity raises bulges in Earth's oceans. Because the Earth spins faster than the Moon orbits, those bulges are dragged slightly ahead of the Moon. Their pull accelerates the Moon, propelling it into a wider orbit, while the Moon in turn acts as a brake on the Earth's rotation. One consequence is that ____. The change is tiny, about two thousandths of a second per century. Over hundreds of millions of years, though, it adds up: growth rings in ancient corals suggest that a day once lasted only about 22 hours.",
 [
-"the Earth is spinning faster, so days are growing shorter",
-"the Moon is spinning more slowly, so months are growing shorter",
-"the Earth is spinning more slowly, so the oceans are growing deeper",
-"the Earth is spinning more slowly, so days are growing longer"
+"the Earth spins faster, so days grow shorter",
+"the Moon spins more slowly, so months grow shorter",
+"the Earth spins more slowly, so oceans grow deeper",
+"the Earth spins more slowly, so days grow longer"
 ],
 [
 4
@@ -1391,17 +1391,17 @@ null,
 3,
 "phrase",
 null,
-"Choose the expression that best completes the paragraph.\n\"How much do you make?\" is a question many workers would never dare to ask a colleague. In many workplaces, such talk has long been considered indecorous, and some employers have actively stifled it. Lately, though, more and more governments have moved the other way. In the United States, Colorado began requiring employers to post salary ranges in job advertisements in 2021. New York City followed in 2022. In 2023, the European Union adopted a directive requiring companies to tell job applicants about pay and to report gaps between men's and women's earnings. Supporters argue that pay secrecy tends to reward ____. Workers who dislike bargaining, or who simply do not know what others earn, may accept far less for the same work. Critics worry that published ranges could make salaries more inflexible, leaving employers less latitude to reward exceptional performance.",
+"Choose the expression that best completes the paragraph.\n\"What is your best price?\" is a question few shoppers in a modern supermarket would ever think to ask. For most of history, though, haggling was the norm. A merchant named a figure, the buyer countered, and the final price depended on who gave in first. By the eighteenth century, Quaker merchants in Britain and America became known for refusing to bargain. They held that charging different people different prices for the same goods was a kind of dishonesty. In the nineteenth century, large department stores such as John Wanamaker's in Philadelphia helped make printed price tags common. For such stores, training a growing army of clerks to haggle well would have been impractical. Defenders of fixed prices argued that bargaining tends to reward ____. Customers who dislike confrontation, or who simply do not know what others paid, may hand over far more for the same goods. Today, some critics worry that personalized pricing online could quietly revive the old inequality.",
 [
-"those who negotiate least aggressively",
-"those who report pay gaps most often",
-"those who commute the longest distances",
-"those who negotiate most aggressively"
+"those who haggle least aggressively",
+"those who print price tags most often",
+"those who travel the longest distances",
+"those who haggle most aggressively"
 ],
 [
 4
 ],
-"빈칸 바로 뒤 문장이 '흥정을 싫어하거나 남의 급여를 모르는 사람은 훨씬 적게 받을 수 있다'고 해요. 그 반대편, 곧 '가장 세게 협상하는 사람'이 급여 비밀의 덕을 본다는 말이 맞아요. '가장 덜 협상하는 사람'은 방향이 반대이고, 임금 격차를 보고하는 사람은 EU 지침 이야기를 끌어온 것이며, 출퇴근 거리는 글과 상관없어요."
+"빈칸 바로 뒤 문장이 '맞서기 싫어하거나 남이 얼마 냈는지 모르는 손님은 같은 물건에 훨씬 많이 낼 수 있다'고 해요. 그 반대편, 곧 '가장 세게 흥정하는 사람'이 흥정 관행의 덕을 본다는 말이 맞아요. '가장 덜 흥정하는 사람'은 방향이 반대이고, 가격표를 자주 찍는 사람은 백화점 가격표 이야기를 끌어온 것이며, 먼 길을 오가는 사람은 글과 상관없어요."
 ],
 [
 16,
@@ -1461,15 +1461,15 @@ null,
 "r3-s1",
 "Which of the following can be inferred from the passage?",
 [
-"Korea's new space agency consolidates tasks once fragmented among several bodies.",
-"Korea has given up its plan to land on the Moon.",
-"Several rival cities vied fiercely to host the headquarters of Korea's new space agency.",
-"Korea now leads all of Asia in every area of space research."
+"Korea's new agency unites tasks once split among several bodies.",
+"Korea has abandoned its plan to land on the Moon.",
+"Rival cities fought fiercely to host the new agency's headquarters.",
+"Korea now leads Asia in every area of space research."
 ],
 [
 1
 ],
-"여러 정부 기관에 흩어져 있던 우주 정책·연구·산업 지원을 2024년 문을 연 우주항공청 한 지붕 아래로 모았다고 했으니, '새 우주 기관이 예전에 여러 기관에 흩어져 있던 일을 한데 모은다'가 맞아요. 2030년대 초 달 착륙이 목표로 남아 있어 '달 착륙 계획을 버렸다'는 반대이고, 여러 도시가 본부 유치 경쟁을 했다는 말은 글에 없으며, 모든 분야에서 아시아 전체를 이끈다는 말은 예산이 작다는 내용과 어긋나는 과장이에요."
+"여러 정부 기관에 흩어져 있던 우주 정책·연구·산업 지원을 2024년 문을 연 우주항공청 한 지붕 아래로 모았다고 했으니, '새 우주 기관이 예전에 여러 기관에 흩어져 있던 일을 한데 모은다'가 맞아요. 2030년대 초 달 착륙이 목표로 남아 있어 '달 착륙 계획을 버렸다'는 반대이고, 여러 도시가 본부 유치 경쟁을 했다는 말은 글에 없으며, 모든 분야에서 아시아 전체를 이끈다는 말은 예산이 작다는 내용과 어긋나는 과장이에요. (위치 논란은 연구자들이 대전에 있어서였어요)"
 ],
 [
 20,
@@ -1478,10 +1478,10 @@ null,
 "r3-s2",
 "Which of the following best completes the blank?",
 [
-"the noise near airports has disappeared entirely",
-"newer aircraft have grown louder than older models",
-"airlines have stopped selling tickets for night flights",
-"the total burden of noise has fallen less than hoped"
+"airport noise has vanished entirely",
+"newer aircraft have grown louder",
+"airlines have stopped selling overnight tickets",
+"total noise has fallen less than hoped"
 ],
 [
 4
@@ -1495,15 +1495,15 @@ null,
 "r3-s2",
 "Which of the following is the most appropriate title for the passage?",
 [
-"Residents stop being harmed once they no longer hear jets",
-"Airport noise impairs health, and fixes only partly work",
-"Jet fuel fumes, not the noise, harm residents near runways",
-"Every airport in the world has now banned all night flights"
+"Unheard jets no longer harm residents",
+"Airport noise harms health despite partial fixes",
+"Fuel fumes, not noise, harm residents near runways",
+"Every airport has now banned night flights"
 ],
 [
 2
 ],
-"글은 비행기 소음이 잠·혈압·심장·아이들 읽기에 해를 줄 수 있고, 야간 운항 제한·방음 공사·조용한 기종 같은 대책도 늘어난 운항에 상쇄돼 문제가 남는다고 해요. 그 요지를 담은 '공항 소음은 건강을 해치고, 대책은 일부만 통한다'가 맞아요. 소리를 못 듣게 되면 해도 멈춘다는 말은 '몸은 그렇지 않다'와 반대이고, 소음이 아니라 제트 연료 매연 탓이라는 원인은 글에 없으며, 세계 모든 공항이 밤 운항을 막았다는 말은 과장이에요."
+"글은 비행기 소음이 잠·혈압·심장·아이들 읽기에 해를 줄 수 있고, 야간 운항 제한·방음 공사·조용한 기종 같은 대책도 늘어난 운항에 상쇄돼 문제가 남는다고 해요. 그 요지를 담은 '대책이 일부 통해도 공항 소음은 건강을 해친다'가 맞아요. 소리를 못 듣게 되면 해도 멈춘다는 말은 '몸은 그렇지 않다'와 반대이고, 소음이 아니라 제트 연료 매연 탓이라는 원인은 글에 없으며, 세계 모든 공항이 밤 운항을 막았다는 말은 과장이에요."
 ],
 [
 22,
@@ -1529,10 +1529,10 @@ null,
 "r3-s3",
 "Which of the following can be inferred from the passage?",
 [
-"Scientists have proved that jumping spiders dream about hunting their prey.",
-"Spiders twitch at night mainly because their bodies are busy digesting recently caught insects.",
-"Jumping spiders show sleep episodes resembling REM sleep, though their meaning is unclear.",
-"REM-like sleep has now been found in every animal species on Earth."
+"Scientists have proved that jumping spiders dream of hunting.",
+"Spiders twitch at night mainly because they are busy digesting their prey.",
+"Jumping spiders show REM-like sleep, though its meaning is unclear.",
+"REM-like sleep has been found in every animal species."
 ],
 [
 3
@@ -1563,15 +1563,15 @@ null,
 "r3-s4",
 "Which of the following is the most appropriate title for the passage?",
 [
-"Auction winners almost always make a large profit",
-"With uncertain value, the auction winner often overpays",
-"Auctioneers hide flaws, so bidders end up paying too much",
-"Every auction winner in history has lost money on the deal"
+"Auction winners almost always profit",
+"Winners of items of uncertain value often overpay",
+"Auctioneers hide flaws, so bidders end up overpaying",
+"Every auction winner in history has lost money"
 ],
 [
 2
 ],
-"값이 같지만 아무도 정확히 모르는 물건을 경매하면 가장 낙관적으로 짐작한 사람이 이기므로 너무 많이 내기 쉽다는 것이 글의 요지라 '값이 불확실하면 낙찰자는 흔히 너무 많이 낸다'가 맞아요. 낙찰자가 거의 늘 큰 이익을 본다는 말은 반대이고, 경매인이 흠을 숨겨서라는 원인은 글에 없으며, 역사상 모든 낙찰자가 손해를 봤다는 말은 과장이에요."
+"값이 같지만 아무도 정확히 모르는 물건을 경매하면 가장 낙관적으로 짐작한 사람이 이기므로 너무 많이 내기 쉽다는 것이 글의 요지라 '값이 불확실한 물건의 낙찰자는 흔히 너무 많이 낸다'가 맞아요. 낙찰자가 거의 늘 이익을 본다는 말은 반대이고, 경매인이 흠을 숨겨서라는 원인은 글에 없으며, 역사상 모든 낙찰자가 손해를 봤다는 말은 과장이에요."
 ],
 [
 26,
@@ -1580,15 +1580,15 @@ null,
 "r3-s5",
 "Which of the following best completes the blank?",
 [
-"settles the debate about machine minds forever",
+"settles the machine-mind debate forever",
 "proves that chatbots merely predict words",
-"shows that Chinese is harder than other languages",
-"forces us to say what understanding really is"
+"shows Chinese is harder than other languages",
+"forces us to define understanding"
 ],
 [
 4
 ],
-"반박과 재반박이 이어지고 챗봇 시대에 다시 살아난 논쟁을 소개한 뒤, 어느 쪽이 옳든 이 사고 실험이 값진 이유를 말해요. '이해란 정말 무엇인지 말하게 만든다'가 맞아요. 논쟁을 영원히 끝냈다는 말은 아직 다툼이 이어진다는 내용과 반대이고, 챗봇이 낱말만 예측한다는 증명은 비판자 한쪽의 주장을 끌어온 것이며, 중국어가 어렵다는 말은 논점과 상관없어요."
+"반박과 재반박이 이어지고 챗봇 시대에 다시 살아난 논쟁을 소개한 뒤, 어느 쪽이 옳든 이 사고 실험이 값진 이유를 말해요. '이해가 무엇인지 정의하게 만든다'가 맞아요. 논쟁을 영원히 끝냈다는 말은 아직 다툼이 이어진다는 내용과 반대이고, 챗봇이 낱말만 예측한다는 증명은 비판자 한쪽의 주장을 끌어온 것이며, 중국어가 어렵다는 말은 논점과 상관없어요."
 ],
 [
 27,
@@ -1597,15 +1597,15 @@ null,
 "r3-s5",
 "Which of the following can be inferred from the passage?",
 [
-"The systems reply finally settled the debate over whether machines have minds.",
-"Searle built the first chatbot so that he could win his debate with critics.",
-"Every philosopher now agrees that computers can genuinely think and understand language.",
-"Searle argued that following rules for symbols does not amount to understanding."
+"The systems reply finally settled the machine-mind debate.",
+"Searle built the first chatbot so he could win his debate with critics.",
+"Every philosopher now agrees that computers truly understand.",
+"Searle argued that following symbol rules is not understanding."
 ],
 [
 4
 ],
-"설은 규칙에 따라 기호만 맞추는 방 안 사람이 뜻을 이해하지 못하듯 컴퓨터도 그렇다고 하며 '구문은 의미에 충분하지 않다'고 했어요. 그래서 '기호를 다루는 규칙을 따르는 것은 이해에 이르지 못한다'고 주장했다는 문장이 맞아요. 시스템 응답이 논쟁을 끝냈다는 말은 반박과 재반박이 이어진다는 내용과 반대이고, 설이 챗봇을 만들었다는 말은 글에 없으며, 모든 철학자가 컴퓨터가 생각한다고 동의한다는 말은 과장이에요."
+"설은 규칙에 따라 기호만 맞추는 방 안 사람이 뜻을 이해하지 못하듯 컴퓨터도 그렇다고 하며 '구문은 의미에 충분하지 않다'고 했어요. 그래서 '기호 규칙을 따르는 것은 이해가 아니다'라고 주장했다는 문장이 맞아요. 시스템 응답이 논쟁을 끝냈다는 말은 반박과 재반박이 이어진다는 내용과 반대이고, 설이 챗봇을 만들었다는 말은 글에 없으며, 컴퓨터가 정말 이해한다고 모든 철학자가 동의한다는 말은 과장이에요."
 ],
 [
 28,
@@ -1648,10 +1648,10 @@ null,
 "r3-s6",
 "Which of the following can be inferred from the passage?",
 [
-"Time-restricted eating may help mainly by making people eat less overall.",
-"Human studies have fully confirmed the results of the earlier mouse experiments.",
-"People on a time limit lose weight mainly because their sleep improves at night.",
-"Experts now say everyone, including children, must eat within a strict eight-hour window."
+"Time-restricted eating may work mainly by cutting total intake.",
+"Human studies have fully confirmed the mouse results.",
+"Time limits cause weight loss mainly by improving sleep.",
+"Experts say everyone, even children, must eat within eight hours."
 ],
 [
 1

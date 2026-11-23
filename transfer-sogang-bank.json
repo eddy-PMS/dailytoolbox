@@ -331,7 +331,7 @@ null,
 1,
 "grammar",
 null,
-"Which of the underlined parts is grammatically NOT acceptable?\nWhen Samuel Johnson signed a contract to write a dictionary of English in 1746, he Ⓐ<u>boasted</u> that he would finish it in three years, but the work in fact Ⓑ<u>took</u> nearly nine. By the time it was published in 1755, Johnson Ⓒ<u>defines</u> more than forty thousand words, many of them Ⓓ<u>illustrated</u> with quotations from earlier writers. Some of his definitions were notoriously idiosyncratic, and readers still enjoy Ⓔ<u>discovering</u> the jokes he slipped into them.",
+"Which of the underlined parts is grammatically NOT acceptable?\nWhen Gustave Flaubert began writing Madame Bovary in 1851, he Ⓐ<u>resolved</u> that the novel would be told in a plain, impersonal voice, and the task ultimately Ⓑ<u>took</u> him nearly five years. By the time the book was serialized in 1856, Flaubert Ⓒ<u>rewrites</u> countless sentences, many of them Ⓓ<u>tested</u> by being shouted aloud in a room he called his gueuloir. His letters from those years are full of laments about the agony of style, and readers still enjoy Ⓔ<u>quoting</u> them.",
 [
 "Ⓐ",
 "Ⓑ",
@@ -342,7 +342,7 @@ null,
 [
 3
 ],
-"By the time it was published(출간될 무렵까지)는 과거의 한 시점까지 이미 끝난 일을 말하므로 과거완료 had defined 가 되어야 해요. 현재형 defines 는 시제가 맞지 않아요. enjoy 뒤 동명사 discovering 은 맞아요."
+"By the time the book was serialized(연재될 무렵까지)는 과거의 한 시점까지 이미 끝난 일을 말하므로 과거완료 had rewritten 이 되어야 해요. 현재형 rewrites 는 시제가 맞지 않아요. enjoy 뒤 동명사 quoting 은 맞아요."
 ],
 [
 12,
@@ -837,16 +837,16 @@ null,
 "r2-s1",
 "Which of the following is the most appropriate title for the passage?",
 [
-"Proving That We Are Awake: Zhuangzi's Answer to Descartes",
-"Butterflies as Symbols in Classical Chinese Painting",
-"The Science of Dreaming in Ancient China",
-"Why Philosophers Should Never Trust Their Senses",
-"A Dream Without Alarm: Zhuangzi and the Fluid Self"
+"How Zhuangzi Proved That We Are Not Dreaming",
+"Butterflies as Symbols in Chinese Painting",
+"Dream Science in Ancient China",
+"Why Philosophers Distrust the Senses",
+"An Untroubled Dream and the Fluid Self"
 ],
 [
 5
 ],
-"장자는 꿈과 깸을 가리지 못해도 괴로워하지 않고, 자아가 이 꼴에서 저 꼴로 흘러간다는 데서 교훈을 찾아요. '놀라지 않는 꿈'과 '흐르는 자아'를 담은 제목이 맞아요. 장자는 깨어 있음을 증명하려 하지 않았다고 했어요."
+"장자는 꿈과 깸을 가리지 못해도 괴로워하지 않고, 자아가 이 꼴에서 저 꼴로 흘러간다는 데서 교훈을 찾아요. '괴로워하지 않는 꿈'과 '흐르는 자아'를 담은 제목이 맞아요. 장자는 깨어 있음을 증명하려 하지 않았다고 했어요."
 ],
 [
 10,
@@ -855,11 +855,11 @@ null,
 "r2-s1",
 "What does the underlined phrase most likely refer to?",
 [
-"the biological process by which a caterpillar slowly turns into a butterfly",
-"the moment of waking up from a vivid dream",
-"a logical method for proving that one is awake",
-"the passing of a being from one form of existence into another",
-"the regular change of the seasons in nature"
+"the slow change of a caterpillar into a winged butterfly",
+"waking up from a vivid dream",
+"a method for proving one is awake",
+"the passing of a being from one form into another",
+"the regular change of the seasons"
 ],
 [
 4
@@ -891,11 +891,11 @@ null,
 "r2-s2",
 "Which of the following is NOT true according to the passage?",
 [
-"Some car makers have offered features on a subscription basis.",
-"Many households spend more money on their subscriptions than they actually realize.",
+"Some car makers sell features by subscription.",
+"Many households spend more on subscriptions than they realize.",
 "Some viewers repeatedly cancel and rejoin streaming services.",
-"The 2024 rule required that cancelling be made harder than signing up.",
-"Streaming services have introduced plans that include advertisements."
+"The 2024 rule made cancelling harder than signing up.",
+"Streaming services now offer plans with advertising."
 ],
 [
 4
@@ -909,11 +909,11 @@ null,
 "r2-s2",
 "Which of the following can be inferred from the passage?",
 [
-"Investors have lost all interest in subscription businesses of every kind.",
-"Some companies profit from customers who find cancelling too troublesome.",
-"Congress has repealed the 2024 rule on cancelling subscriptions.",
-"Advertising has disappeared from the plans offered by streaming services.",
-"Cancelling a subscription is generally as easy as signing up for one."
+"Investors have lost all interest in subscriptions.",
+"Some firms profit from customers who find cancelling troublesome.",
+"Congress has repealed the 2024 cancellation rule.",
+"Streaming plans no longer carry any advertising.",
+"Cancelling is generally as easy as signing up."
 ],
 [
 2
@@ -927,11 +927,11 @@ null,
 "r2-s3",
 "Which of the following is the most appropriate title for the passage?",
 [
-"Rashomon: How Kurosawa Proved That Objective Truth Does Not Exist",
-"Venice 1951: The Festival That Changed Film Prizes",
-"Crime and Punishment in Medieval Japanese Forests",
-"New Rules for Questioning Witnesses in Court",
-"The Rashomon Effect: Sincere Witnesses, Conflicting Accounts"
+"Rashomon: How Kurosawa Proved That Truth Does Not Exist",
+"The Festival That Changed Film Prizes",
+"Crime in Medieval Japanese Forests",
+"New Rules for Questioning Witnesses",
+"Rashomon: Sincere Witnesses, Conflicting Accounts"
 ],
 [
 5
@@ -963,16 +963,16 @@ null,
 "r2-s3",
 "Which of the following can be inferred from the passage?",
 [
-"Kurosawa meant the film to reveal clearly which of the witnesses told the truth.",
-"Kurosawa later remade the film with a different ending for Western audiences.",
-"Every witness in the film deliberately lies in order to protect someone else.",
-"The author objects to using the term to claim that no account is truer than another.",
-"The Rashomon effect describes witnesses who give false accounts on purpose."
+"Kurosawa meant the film to reveal which witness told the truth.",
+"Kurosawa later remade the film with a different ending.",
+"Every witness in the film lies to protect someone else.",
+"The author objects to using the term to deny that truth exists.",
+"The Rashomon effect describes witnesses who lie on purpose."
 ],
 [
 4
 ],
-"글쓴이는 이 말이 '모든 증언이 똑같이 타당하다'는 뜻이 아니라며 잘못된 쓰임을 바로잡아요. '어느 증언도 다른 증언보다 더 참일 수 없다'는 주장에 이 말을 쓰는 데 반대한다는 추론이 맞아요. 영화는 진실을 밝히지 않고 증언은 '진심'이라 했으니 반대이고, 다시 찍었다는 이야기는 없으며, '모든 증인이 일부러 거짓말'은 비튼 말이에요."
+"글쓴이는 이 말이 '모든 증언이 똑같이 타당하다'는 뜻이 아니라며 잘못된 쓰임을 바로잡아요. '진실은 없다'는 주장에 이 말을 쓰는 데 반대한다는 추론이 맞아요. 영화는 진실을 밝히지 않고 증언은 '진심'이라 했으니 반대이고, 다시 찍었다는 이야기는 없으며, '모든 증인이 일부러 거짓말'은 비튼 말이에요."
 ],
 [
 17,
@@ -981,11 +981,11 @@ null,
 "r2-s4",
 "Which of the following best expresses the main idea of the passage?",
 [
-"Pascal proved the existence of God by means of probability theory.",
-"Pascal held that anyone can adopt a belief instantly by an act of will.",
+"Pascal proved the existence of God through probability theory.",
+"Pascal held that belief can be adopted instantly at will.",
 "Critics have unanimously accepted Pascal's argument as sound.",
-"Decision theorists invented the wager in order to study environmental policy.",
-"Pascal argued that, since reason cannot settle the question, belief in God is the wiser bet given the possible outcomes."
+"Decision theorists invented the wager to study environmental policy.",
+"Since reason cannot decide, Pascal argued, believing in God is the wiser bet."
 ],
 [
 5
@@ -1017,10 +1017,10 @@ null,
 "r2-s4",
 "Which of the following CANNOT be inferred from the passage?",
 [
-"Pascal thought that refusing to choose was a way to avoid the bet altogether.",
-"Pascal regarded the possible reward of belief as far greater than its finite cost.",
+"Pascal thought refusing to choose avoided the bet altogether.",
+"Pascal saw the possible reward of belief as far greater than its cost.",
 "Some critics question whether belief can be chosen deliberately.",
-"The variety of religions creates a difficulty for Pascal's argument.",
+"The variety of religions poses a problem for Pascal.",
 "The structure of the wager has been applied outside religion."
 ],
 [
@@ -1035,10 +1035,10 @@ null,
 "r2-s5",
 "Which of the following is the most appropriate title for the passage?",
 [
-"How the Pandemic Brought a Sudden and Lasting End to Remote Work Everywhere",
-"Estonia's Plan to Become a Tourist Paradise",
-"Why Remote Workers Never Pay Any Taxes",
-"Working From Anywhere: The Promise and Strain of Digital Nomad Visas",
+"How the Pandemic Put an End to Remote Work",
+"Estonia's Tourist Paradise Plan",
+"Why Remote Workers Never Pay Taxes",
+"Digital Nomad Visas: Promise and Strain",
 "The Hidden Dangers of Bali's Beaches"
 ],
 [
@@ -1053,11 +1053,11 @@ null,
 "r2-s5",
 "Which of the following is true according to the passage?",
 [
-"Holders of such visas usually must prove a regular income earned locally.",
-"Holders of such visas rarely need to prove a regular income earned abroad.",
-"Japan was the first country to introduce a digital nomad visa.",
-"Holders of such visas usually must prove a regular income earned abroad.",
-"Residents of Lisbon have welcomed the rise in local rents."
+"Such visa holders usually must prove income earned locally.",
+"Such visa holders rarely need to prove income earned abroad.",
+"Japan introduced the first digital nomad visa.",
+"Such visa holders usually must prove income earned abroad.",
+"Lisbon residents have welcomed rising rents."
 ],
 [
 4
@@ -1071,11 +1071,11 @@ null,
 "r2-s5",
 "What would most likely follow the passage?",
 [
-"a discussion of possible changes to digital nomad visa rules",
-"a detailed history of tourist visas in the nineteenth century",
-"practical advice on choosing a beach in Bali",
+"possible changes to digital nomad visa rules",
+"a history of tourist visas since 1800",
+"advice on choosing a beach in Bali",
 "a description of Estonia's medieval architecture",
-"an argument that all remote work should be banned"
+"a call to ban all remote work"
 ],
 [
 1
@@ -1107,10 +1107,10 @@ null,
 "r2-s6",
 "Which of the following is NOT true according to the passage?",
 [
-"Aldus printed the first editions of several Greek authors.",
-"The 1501 Virgil was smaller than most books of its time.",
-"Aldus himself designed the typeface that became italic.",
-"The semicolon appeared in a book printed by Aldus in 1496.",
+"Aldus issued first editions of Greek authors.",
+"The 1501 Virgil was smaller than most books then.",
+"Aldus himself designed the italic typeface.",
+"An Aldus book of 1496 used the semicolon.",
 "Aldus employed Greek scholars as editors."
 ],
 [
@@ -1125,11 +1125,11 @@ null,
 "r2-s6",
 "Which of the following can be inferred from the passage?",
 [
-"Aldus cared more about the appearance of books than about preserving texts.",
-"Successful conventions in printing tend to become invisible to readers.",
-"Italic type was first designed for printing Greek texts.",
-"Aldus's small editions were meant to stay on a desk or a lectern.",
-"Aldus's press closed before it could print any work by Plato."
+"Aldus cared more about the look of books than preserving texts.",
+"Successful printing conventions tend to become invisible.",
+"Italic type was first made for Greek texts.",
+"Aldus's small editions were meant to stay on desks.",
+"Aldus's press closed before printing any Plato."
 ],
 [
 2
@@ -1143,11 +1143,11 @@ null,
 "r2-s7",
 "Which of the following is the most appropriate title for the passage?",
 [
-"How Google Won Its Long Legal Battle With American Regulators",
+"How Google Beat American Regulators in Court",
 "The Falling Price of Online Search",
-"Paying to Be the Default: The Antitrust Case Against Google",
+"Paying for the Default: Google on Trial",
 "Why Users Love Changing Their Phone Settings",
-"Apple's Plan to Build Its Own Search Engine"
+"Apple's Plan for Its Own Search Engine"
 ],
 [
 3
@@ -1161,11 +1161,11 @@ null,
 "r2-s7",
 "Which of the following is true according to the passage?",
 [
-"Google argued that users choose its search engine on its merits.",
-"Google argued that users choose its search engine because of defaults.",
-"Google argued that users rarely choose its search engine on its merits.",
-"The case was brought by a group of rival search companies.",
-"The judge found that users frequently change their default settings."
+"Google argued that users choose its engine on merit.",
+"Google argued that users choose its engine because of defaults.",
+"Google argued that users rarely choose its engine on merit.",
+"Rival search companies brought the case.",
+"The judge found users often change default settings."
 ],
 [
 1
@@ -1179,11 +1179,11 @@ null,
 "r2-s7",
 "Which of the following can be inferred from the passage?",
 [
-"The court ordered Google to sell its search business immediately.",
-"The older test struggled to capture harm from free services.",
-"Apple paid Google to place Apple's search engine on its devices.",
-"Antitrust enforcers have always focused on innovation rather than prices.",
-"Default settings have little value to technology companies."
+"The court ordered Google to sell its search business.",
+"The older test missed harm from free services.",
+"Apple paid Google for default placement.",
+"Enforcers have always focused on innovation, not prices.",
+"Defaults matter little to technology companies."
 ],
 [
 2
@@ -1197,11 +1197,11 @@ null,
 "r2-s8",
 "According to the passage, why did Smith's tablet cause a sensation?",
 [
-"It proved that the Bible had been copied from Assyrian sources.",
-"It was the first cuneiform tablet ever to be deciphered.",
-"It described a flood strikingly similar to the one in the Book of Genesis.",
-"It revealed the location of an Assyrian king's tomb.",
-"It was written in a language that no one could read."
+"It proved that the Bible copied Assyrian sources.",
+"It was the first cuneiform tablet ever deciphered.",
+"It described a flood much like the one in Genesis.",
+"It revealed the tomb of an Assyrian king.",
+"It was in a language no one could read."
 ],
 [
 3
@@ -1215,11 +1215,11 @@ null,
 "r2-s8",
 "Which of the following can be inferred from the passage?",
 [
-"Smith's lack of formal education did not prevent him from making a major discovery.",
-"Smith found the missing fragment in London without ever travelling to Nineveh.",
-"The Daily Telegraph opposed any further excavation at the site of Nineveh.",
-"The Epic of Gilgamesh was composed long after the Book of Genesis.",
-"Every tablet that reached London from Nineveh described the great flood."
+"Smith made a major discovery despite little formal schooling.",
+"Smith found the missing fragment without leaving London.",
+"The Daily Telegraph opposed any further excavation at Nineveh.",
+"The Epic of Gilgamesh was written long after Genesis.",
+"Every tablet from Nineveh described the great flood."
 ],
 [
 1
@@ -1395,11 +1395,11 @@ null,
 "r3-s1",
 "Which of the following is true according to the passage?",
 [
-"Ibn Battuta's medical training helped him find work during his travels.",
+"Ibn Battuta's medical training helped him find work abroad.",
 "Ibn Battuta's legal training helped him find work only in Morocco.",
-"Ibn Battuta's legal training helped him find work during his travels.",
-"He planned from the start to travel for twenty-five years.",
-"Historians accept every detail of the Rihla as accurate."
+"Ibn Battuta's legal training helped him find work abroad.",
+"He planned to travel for twenty-five years.",
+"Historians trust every detail of the Rihla."
 ],
 [
 3
@@ -1449,11 +1449,11 @@ null,
 "r3-s2",
 "Which of the following is the most appropriate title for the passage?",
 [
-"How Japan Finally Ended Its Long Housing Shortage in the Cities",
+"How Japan Ended Its Housing Shortage",
 "Why Japanese Houses Gain Value With Age",
 "Building Homes That Survive Earthquakes",
-"The Rapid Growth of Japan's Rural Villages",
-"Too Many Homes: Japan's Struggle With Empty Houses"
+"The Rapid Growth of Rural Japan",
+"Too Many Homes: Japan's Empty Houses"
 ],
 [
 5
@@ -1503,11 +1503,11 @@ null,
 "r3-s3",
 "Which of the following best expresses the main idea of the passage?",
 [
-"Zola's letter failed because its author was convicted of libel.",
-"At great personal risk, Zola's letter turned the Dreyfus case into a national debate and helped define the public intellectual.",
-"The French army eventually proved that Dreyfus was guilty.",
+"Zola's letter failed because he was convicted of libel.",
+"Zola's risky letter sparked a national debate and the modern intellectual.",
+"The army eventually proved Dreyfus guilty.",
 "Newspapers in 1898 rarely printed letters from novelists.",
-"Intellectuals should stay out of political questions altogether."
+"Intellectuals should stay out of politics."
 ],
 [
 2
@@ -1521,16 +1521,16 @@ null,
 "r3-s4",
 "Which of the following is the most appropriate title for the passage?",
 [
-"Why International Students Around the World No Longer Wish to Study Abroad at All",
-"Shifting Routes: How Caps and Competition Are Redrawing Student Mobility",
+"Why Students No Longer Wish to Study Abroad at All",
+"Caps and Competition Redraw the Student Map",
 "Canada's Booming Housing Market",
-"The Rising Cost of Tuition for Domestic Students",
-"English as the Only Language of Higher Education"
+"Rising Tuition for Domestic Students",
+"English as Higher Education's Only Language"
 ],
 [
 2
 ],
-"전통적인 네 나라가 유학생 수를 막기 시작하고 유럽·아시아가 새로 나서면서 유학 지도가 바뀐다는 글이에요. 제한과 경쟁으로 '경로가 다시 그려진다'는 제목이 맞아요. 유학 자체가 사라진다는 말은 없어요."
+"전통적인 네 나라가 유학생 수를 막기 시작하고 유럽·아시아가 새로 나서면서 유학 지도가 바뀐다는 글이에요. 제한과 경쟁으로 '유학 지도가 다시 그려진다'는 제목이 맞아요. 유학 자체가 사라진다는 말은 없어요."
 ],
 [
 18,
@@ -1539,11 +1539,11 @@ null,
 "r3-s4",
 "Which of the following is NOT true according to the passage?",
 [
-"The United States capped new study permits in early 2024.",
-"Universities in the traditional destinations relied on fees from international students.",
-"The United Kingdom limited the family members some students could bring.",
-"Some European degree programs are taught in English at low cost.",
-"South Korea has set a numerical target for international students."
+"The United States capped new study permits in 2024.",
+"Traditional host universities relied on foreign students' fees.",
+"Britain limited some students' ability to bring family.",
+"Some European programs are taught cheaply in English.",
+"South Korea has set a target for foreign students."
 ],
 [
 1
@@ -1557,11 +1557,11 @@ null,
 "r3-s4",
 "Which of the following can be inferred from the passage?",
 [
-"Housing shortages in those host countries were caused entirely by international students.",
-"South Korea has already reached its target of three hundred thousand students.",
-"The new limits may squeeze the finances of the traditional destinations' universities.",
-"European universities generally charge higher fees than those in Australia.",
-"The traditional destinations have welcomed more international students since 2024."
+"Foreign students alone caused the housing shortages.",
+"South Korea has already reached its student target.",
+"The new limits may strain the finances of host universities.",
+"European universities charge more than Australian ones.",
+"The traditional destinations have admitted more foreign students since 2024."
 ],
 [
 3
@@ -1575,11 +1575,11 @@ null,
 "r3-s5",
 "Which of the following best expresses the main idea of the passage?",
 [
-"The Melians defeated Athens by appealing to the justice of the gods.",
+"The Melians beat Athens by appealing to divine justice.",
 "Thucydides openly condemned the Athenians in a long commentary.",
-"Thucydides' account of Melos sets appeals to justice against the logic of power and may quietly pass judgment on that logic.",
-"Neutral states were protected by the rules of ancient warfare.",
-"The Sicilian expedition was Athens' greatest military victory."
+"Thucydides pits justice against power at Melos and may silently pass judgment on power.",
+"Ancient rules of war protected neutral states.",
+"The Sicilian expedition was Athens' greatest victory."
 ],
 [
 3
@@ -1593,11 +1593,11 @@ null,
 "r3-s5",
 "What does the underlined sentence mean?",
 [
-"Between unequal powers, might rather than right decides the outcome.",
-"Strong states have a moral duty to protect weaker ones.",
-"Weak states can win if they endure long enough.",
+"With unequal power, might, not right, decides.",
+"Strong states must protect weaker ones.",
+"Weak states win if they endure long enough.",
 "The gods reward those who suffer patiently.",
-"Strong and weak states suffer equally in war."
+"Strong and weak states suffer equally in any war."
 ],
 [
 1
@@ -1611,11 +1611,11 @@ null,
 "r3-s6",
 "Which of the following is the most appropriate title for the passage?",
 [
-"How Avellaneda Became Spain's Greatest and Most Celebrated Novelist of His Age",
-"The Origins of the Chivalric Romance in Spain",
-"The Jousts of Zaragoza in the Seventeenth Century",
+"How Avellaneda Became Spain's Most Celebrated Novelist",
+"The Origins of Chivalric Romance in Spain",
+"Seventeenth-Century Jousts at Zaragoza",
 "Why Literary Sequels Always Disappoint Readers",
-"A Sequel Turned Against Its Thief: Cervantes and the False Quixote"
+"A Sequel Turned Against Its Thief"
 ],
 [
 5
@@ -1647,11 +1647,11 @@ null,
 "r3-s6",
 "Which of the following can be inferred from the passage?",
 [
-"Cervantes altered his own plot partly in reaction to the rival book.",
-"Cervantes revealed the true identity of Avellaneda in his second part.",
-"The first part of Don Quixote was poorly received by its readers.",
-"Cervantes and Avellaneda later met in Madrid and settled their quarrel.",
-"The false sequel was written by a character from Cervantes's own novel."
+"Cervantes changed his plot partly because of the rival book.",
+"Cervantes revealed Avellaneda's true identity in his second part.",
+"Readers received the first part of Don Quixote poorly.",
+"Cervantes and Avellaneda later met and settled their quarrel.",
+"A character from Cervantes's novel wrote the false sequel."
 ],
 [
 1
@@ -1683,11 +1683,11 @@ null,
 "r3-s7",
 "Which of the following is true according to the passage?",
 [
-"The crashes were caused by a faulty update rather than by hackers.",
-"The crashes were caused by a faulty cable rather than by hackers.",
-"The crashes were caused by a faulty update from Microsoft rather than by hackers.",
-"The faulty update was withdrawn only after several weeks.",
-"Only a few hundred computers were affected by the problem."
+"A faulty update, not hackers, caused the crashes.",
+"A faulty cable, not hackers, caused the crashes.",
+"A faulty Microsoft update, not hackers, caused the crashes.",
+"The update was withdrawn only after weeks.",
+"Only a few hundred computers were affected."
 ],
 [
 1
@@ -1702,10 +1702,10 @@ null,
 "What is the passage mainly about?",
 [
 "the structure of medieval Arabic poetry",
-"the life and adventures of the storyteller Scheherazade in medieval Baghdad",
-"how two famous tales joined the Nights through Galland and Diyab",
+"the life and adventures of Scheherazade in Baghdad",
+"how Aladdin and Ali Baba entered the Nights",
 "the economics of publishing in eighteenth-century Paris",
-"the history of Aleppo as a trading city"
+"Aleppo's history as a trading city"
 ],
 [
 3
@@ -1737,11 +1737,11 @@ null,
 "r3-s8",
 "Which of the following can be inferred from the passage?",
 [
-"Galland invented Aladdin entirely on his own, without relying on any outside source.",
-"Some later Arabic versions of Aladdin were based on Galland's French text.",
-"Diyab wrote the tales down in Arabic before he ever met Galland.",
-"Diyab later translated Galland's French version back into Arabic himself.",
-"Diyab has always been recognized by scholars as the source of every tale."
+"Galland invented Aladdin entirely on his own.",
+"Some Arabic versions of Aladdin came from Galland's French.",
+"Diyab wrote the tales in Arabic before meeting Galland.",
+"Diyab himself translated Galland's French back into Arabic.",
+"Scholars have always credited Diyab with every tale."
 ],
 [
 2

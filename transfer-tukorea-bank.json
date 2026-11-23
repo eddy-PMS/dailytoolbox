@@ -147,7 +147,7 @@
 },
 {
 "id": "r1-p31",
-"text": "Few words in office life sound as harmless as deadline. Yet the term has a macabre origin. During the American Civil War, it referred to a line marked around a prison camp; any prisoner who crossed it could be shot by the guards. Only in the early twentieth century did printers and newspaper editors begin using it for the time by which a story had to be finished. Today, when a manager announces a deadline for a report, few employees envision armed guards. Over the years, the word has <u>lost its edge</u>, keeping its sense of a firm limit while shedding the threat of death."
+"text": "Few words sound as lighthearted as bedlam, which today describes nothing worse than a noisy classroom or a crowded sale. Yet the term has a grim origin. It is a shortened form of Bethlem, the name of a London hospital that by the early fifteenth century was housing the mentally ill. For centuries its patients were often kept in chains, and curious members of the public came to stare at them. By the seventeenth century, the word had come to mean any scene of wild confusion. Today, when a parent calls a birthday party bedlam, few listeners picture chained patients. Over the years, the word has <u>lost its edge</u>, keeping its sense of uproar while shedding its link to suffering."
 },
 {
 "id": "r1-p32",
@@ -519,7 +519,7 @@ null,
 1,
 "grammar",
 null,
-"Choose the underlined part that is NOT grammatically correct.\nBefore 1816, a doctor who wanted to listen to a patient's heart ①<u>had to</u> press an ear directly against the chest. That year, the French physician René Laennec, ②<u>embarrassing</u> by the prospect of doing so with a young female patient, rolled a sheet of paper into a tight tube and placed one end on her chest. To his surprise, the heartbeat ③<u>was</u> louder and clearer than he had ever heard it. He went on to build a wooden version of the device, ④<u>which</u> he named the stethoscope, from Greek words meaning chest and to examine.",
+"Choose the underlined part that is NOT grammatically correct.\nIn the early 1920s, Earle Dickson, a cotton buyer for the company Johnson & Johnson, noticed that his wife Josephine ①<u>often cut</u> or burned her fingers while cooking. The loose gauze and tape of the day were hard to put on with one hand. Dickson, ②<u>worrying</u> by how often she hurt herself, stuck small pads of gauze along a strip of surgical tape and covered them with fabric so that she could dress a cut ③<u>by herself</u>. His employer soon began selling the invention, ④<u>which</u> it named the Band-Aid. Sales were slow at first, but the bandages eventually became a fixture in medicine cabinets around the world.",
 [
 "①",
 "②",
@@ -529,7 +529,7 @@ null,
 [
 2
 ],
-"라에네크는 그 상황 때문에 '당황한' 사람이라 수동의 과거분사 embarrassed 가 맞아요. embarrassing 은 '당황하게 만드는'이라 사람이 주어일 때 뜻이 뒤집혀요. which 는 the device 를 받는 목적격 관계대명사라 맞아요."
+"딕슨은 아내가 자주 다치는 일 때문에 '걱정한' 사람이라 수동의 과거분사 worried 가 맞아요(worried by ~ 때문에 걱정한). worrying 은 '걱정스럽게 만드는'이라 사람을 꾸밀 때 뜻이 뒤집혀요. by herself 는 '혼자서'라 맞고, which 는 the invention 을 받는 목적격 관계대명사라 맞아요."
 ],
 [
 17,
@@ -777,14 +777,14 @@ null,
 "Which of the following best explains the underlined part?",
 [
 "has fallen out of everyday use",
-"has changed its spelling completely",
-"has become far less menacing in meaning",
+"has narrowed to a medical term",
+"has become far less grim in its meaning",
 "has grown more precise in meaning"
 ],
 [
 3
 ],
-"lost its edge 는 '날카로움을 잃었다'는 비유예요. 바로 뒤에 굳은 기한이라는 뜻은 남기고 죽음의 위협은 벗었다고 풀어 주니 '뜻이 훨씬 덜 무시무시해졌다'가 맞아요. 지금도 사무실에서 흔히 쓴다고 했으니 안 쓰이게 됐다는 보기는 틀려요."
+"lost its edge 는 '날카로움을 잃었다'는 비유예요. 바로 뒤에 소란이라는 뜻은 남기고 고통과의 연결은 벗었다고 풀어 주니 '뜻이 훨씬 덜 음울해졌다'가 맞아요. 지금도 시끄러운 교실이나 생일 파티에 쓴다고 했으니 안 쓰이게 됐다거나 의학 용어로 좁아졌다는 보기는 틀려요."
 ],
 [
 32,
@@ -1267,7 +1267,7 @@ null,
 2,
 "logic",
 null,
-"Choose the pair that best fills in blanks (A) and (B).\nStanding desks became fashionable after several studies linked prolonged sitting to heart disease and diabetes. (A) ____, standing all day is not the answer either; long periods on one's feet have been associated with back pain and swollen veins in the legs. Researchers instead recommend changing posture often and moving throughout the day. (B) ____, a brief walk every half hour may do more good than any particular kind of desk.",
+"Choose the pair that best fills in blanks (A) and (B).\nMany employers list the capacity to multitask among the most coveted qualities in prospective hires. (A) ____, cognitive psychologists have found that the brain seldom handles two demanding tasks concurrently; instead, it toggles back and forth between them, incurring a small penalty in time and focus with each switch. Researchers therefore recommend finishing one task before embarking on the next. (B) ____, an employee who completes a report before checking e-mail may get both done sooner than a colleague who keeps juggling them.",
 [
 "(A) However — (B) In contrast",
 "(A) Therefore — (B) For example",
@@ -1277,7 +1277,7 @@ null,
 [
 3
 ],
-"(A) 앞은 앉아 있기의 해로움, 뒤는 서 있기도 답이 아니라는 반대 내용이라 However 예요. (B) 자세를 자주 바꾸고 움직이라는 권고의 구체적 예로 30분마다 짧게 걷기를 드니 For example 이 맞아요."
+"(A) 앞은 여러 일을 한꺼번에 하는 능력을 바란다는 내용, 뒤는 뇌가 실제로는 두 일을 동시에 못 하고 오가며 손해를 본다는 반대 내용이라 However 예요. (B) 한 일을 끝내고 다음 일을 하라는 권고의 구체적 예로 보고서를 다 쓰고 메일을 보는 직원을 드니 For example 이 맞아요."
 ],
 [
 21,
@@ -1301,17 +1301,17 @@ null,
 2,
 "logic",
 null,
-"Choose the option that best completes the passage.\nAlmost everyone has had a tune stuck in their head, replaying a single chorus again and again. Psychologists call these involuntary musical memories earworms. In a 2015 study, researchers at the University of Reading found that people who chewed gum reported fewer intrusive musical thoughts than those who did not. Their explanation was that chewing ____, since silently singing along involves the same muscles of the jaw and tongue.",
+"Choose the option that best completes the passage.\nAfter witnessing something harrowing, many people find the scene intruding on their minds again and again as vivid, unbidden images. Psychologists call these recurrent memories flashbacks. In a 2009 study, researchers at the University of Oxford showed volunteers a disturbing film and found that those who subsequently played the video game Tetris for ten minutes reported fewer flashbacks over the following week than those who merely sat quietly. Their explanation was that the game ____, since rotating and fitting the falling blocks draws on the same visual resources the brain uses to consolidate such images.",
 [
-"interferes with the inner rehearsal of a song",
-"makes the music sound louder in the mind",
-"helps people recall the lyrics more vividly",
-"teaches the brain to enjoy repetitive melodies"
+"disrupts the storage of vivid mental images",
+"makes the frightening scenes feel more real",
+"helps people recall the film more accurately",
+"teaches the brain to enjoy disturbing stories"
 ],
 [
 1
 ],
-"속으로 따라 부를 때 쓰는 턱·혀 근육을 껌 씹기가 차지한다는 설명이니, 씹기가 '머릿속에서 노래를 되풀이하는 것을 방해한다'가 맞아요. 소리를 키우거나 가사를 더 잘 떠올리게 한다면 귀벌레가 줄어들 수 없어요."
+"떨어지는 블록을 맞추는 일이 장면을 그림으로 저장할 때 쓰는 뇌의 시각 자원을 함께 쓴다는 설명이니, 게임이 '생생한 머릿속 그림이 저장되는 것을 방해한다'가 맞아요. 장면을 더 실감 나게 하거나 영화를 더 정확히 떠올리게 한다면 플래시백이 줄어들 수 없어요."
 ],
 [
 23,
@@ -1335,17 +1335,17 @@ null,
 2,
 "logic",
 null,
-"Choose the option that best completes the passage.\nToday billions of barcodes are scanned every day, from grocery stores to hospital wards. The idea, however, originated in a strikingly simple way. In the late 1940s, an engineering student named Joseph Woodland, searching for a way to encode product information, sat on a Miami beach and traced the dots and dashes of Morse code in the sand with his fingers. Extending them downward into thin and thick lines, he realized he had found his answer. In other words, one of the most pervasive technologies in modern commerce began ____.",
+"Choose the option that best completes the passage.\nSince the 1940s, hundreds of millions of Slinky toys have been sold worldwide, delighting children who send them cascading down stairs. The idea, however, originated in a strikingly fortuitous way. In 1943 a naval engineer named Richard James was devising springs that could stabilize delicate instruments aboard ships in rough seas. When he inadvertently knocked one off a shelf, it did not simply drop but kept stepping end over end across the floor. Watching this mishap, he realized he had stumbled upon a toy. In other words, one of the best-selling toys of the twentieth century began ____.",
 [
-"in a government laboratory during wartime",
-"as a toy designed for children",
-"with a powerful early computer program",
-"with lines drawn in the sand of a beach"
+"as a puzzle designed by a math teacher",
+"in a contest held by a toy company",
+"with a sketch drawn by a young child",
+"with a spring that tumbled off a shelf"
 ],
 [
 4
 ],
-"우들랜드가 해변 모래에 모스 부호를 손가락으로 그리고 아래로 늘여 가는 줄과 굵은 줄을 만들었다고 했어요. 그러니 '해변 모래에 그은 선에서' 시작됐다가 맞아요. 정부 실험실·장난감·컴퓨터 프로그램 이야기는 글에 없어요."
+"제임스가 배의 계기를 안정시킬 용수철을 만들다 선반에서 떨어뜨렸더니 바닥을 걸어가듯 넘어갔다고 했어요. 그러니 '선반에서 굴러떨어진 용수철에서' 시작됐다가 맞아요. 수학 교사의 퍼즐·장난감 회사 공모전·아이가 그린 그림 이야기는 글에 없어요."
 ],
 [
 25,

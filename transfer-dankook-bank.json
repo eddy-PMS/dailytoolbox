@@ -41,7 +41,7 @@
 },
 {
 "id": "r1-s2",
-"text": "Shoppers have long been trained to watch prices, but a subtler practice has drawn growing scrutiny since the inflationary surge of 2022: shrinkflation, in which a manufacturer reduces the quantity in a package while leaving its price unchanged or nearly so. A bag of crisps holds a few grams less; a roll of paper towels loses several sheets; a bottle of detergent shrinks by a modest fraction that few consumers notice. Because the packaging often retains its familiar dimensions, the alteration is easy to overlook, and the effective price per unit rises <u>surreptitiously</u>.\nManufacturers defend the tactic as a practical response to soaring costs for ingredients, energy, and transport, arguing that many customers prefer a slightly smaller product to a conspicuous price increase. Consumer advocates are less forgiving. They contend that the practice takes advantage of the limits of human attention, relying on shoppers who compare sticker prices rather than unit prices.\nRegulators have begun to respond. In July 2024, France began requiring large supermarkets to post notices beside products whose quantity had shrunk while their price per unit had risen, and legislators elsewhere have debated comparable measures. Statisticians, for their part, point out that official inflation indices in many countries are designed to capture shrinkflation, since they track the price per unit rather than per package. The difficulty, then, is less one of ____ than of perception: the data register what many shoppers fail to see."
+"text": "Shoppers have long been trained to compare advertised prices, but a subtler practice has drawn growing scrutiny: drip pricing, in which a seller advertises a low headline price and reveals additional fees only as the buyer moves through checkout. A concert ticket acquires a service charge and a processing fee; a hotel room picks up a nightly resort fee; a budget airfare swells once a seat and a bag are added. Because each charge appears separately and late, the total is easy to underestimate, and the real price climbs <u>surreptitiously</u>.\nSellers defend the tactic as an honest way of itemizing genuine costs, arguing that customers can still inspect every fee before they pay. Consumer advocates are less forgiving. They contend that the practice takes advantage of the limits of human attention, relying on buyers who, having invested time in a purchase, are reluctant to abandon it at the final screen.\nRegulators have begun to respond. A rule adopted by the US Federal Trade Commission in late 2024 requires sellers of live-event tickets and short-term lodging to display the total price, including mandatory fees, from the start, and legislators elsewhere have debated comparable measures. Economists, for their part, point out that the fees are seldom hidden outright, since they are usually listed before the buyer confirms the purchase. The difficulty, then, is less one of ____ than of timing: the information arrives, but only after the decision has largely been made."
 },
 {
 "id": "r1-s3",
@@ -522,7 +522,7 @@ null,
 [
 1
 ],
-"surreptitiously 는 '남몰래, 슬그머니'라 furtively 와 같은 뜻이에요. 포장 크기는 그대로라 바뀐 걸 알아채기 어렵다는 앞말이 단서예요. abruptly(갑자기)는 '눈에 띄지 않게'라는 뜻이 없어요."
+"surreptitiously 는 '남몰래, 슬그머니'라 furtively 와 같은 뜻이에요. 요금이 따로따로 늦게 붙어 총액을 얕잡아 보기 쉽다는 앞말이 단서예요. abruptly(갑자기)는 '눈에 띄지 않게'라는 뜻이 없어요."
 ],
 [
 24,
@@ -532,14 +532,14 @@ null,
 "Which of the following is most appropriate for the blank?",
 [
 "morality",
-"packaging",
+"technology",
 "competition",
-"measurement"
+"disclosure"
 ],
 [
 4
 ],
-"통계 지표는 이미 단위당 가격으로 슈링크플레이션을 잡아낸다고 했어요. 그러니 문제는 '측정(measurement)'이 아니라 소비자가 '알아채느냐(perception)'라는 대비예요. 콜론 뒤 '자료는 기록하지만 소비자는 못 본다'가 단서예요."
+"경제학자들은 수수료가 아예 숨겨지는 일은 드물고 결제 확정 전에 보통 다 적혀 있다고 했어요. 그러니 문제는 '공개(disclosure)' 여부가 아니라 '언제 보여 주느냐(timing)'라는 대비예요. 콜론 뒤 '정보는 오지만 결정이 거의 끝난 뒤에 온다'가 단서예요."
 ],
 [
 25,
@@ -548,15 +548,15 @@ null,
 "r1-s2",
 "Which of the following is NOT true according to the passage?",
 [
-"France banned manufacturers from reducing the size of their products in 2024.",
-"Some manufacturers claim that customers prefer smaller portions to visibly higher prices.",
-"Shrinkflation can raise the effective unit price without changing the sticker price.",
-"Official inflation figures may reflect shrinkflation by tracking prices per unit."
+"The FTC banned all additional fees on concert tickets in late 2024.",
+"Some sellers claim that listing fees separately is an honest way to show costs.",
+"Drip pricing can make the total cost higher than the advertised price suggests.",
+"The fees in drip pricing are usually shown before a purchase is confirmed."
 ],
 [
 1
 ],
-"프랑스는 양을 줄이는 걸 금지한 게 아니라, 양이 줄고 단위 가격이 오른 상품 옆에 안내문을 붙이게 했어요. 제조사의 변명, 표시 가격은 그대로인데 단위 가격이 오르는 점, 단위 가격으로 재는 물가 지표는 모두 글과 맞아요."
+"미국 연방거래위원회는 수수료를 금지한 게 아니라, 공연 표·단기 숙박 판매자가 의무 수수료를 넣은 총액을 처음부터 보여 주게 했어요. 수수료를 따로 적는 게 정직하다는 판매자 주장, 총액이 광고 가격보다 커지는 점, 결제 확정 전에 수수료가 보통 적혀 있다는 점은 모두 글과 맞아요."
 ],
 [
 26,

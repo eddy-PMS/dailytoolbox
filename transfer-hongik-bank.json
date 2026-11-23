@@ -581,8 +581,8 @@ null,
 "According to the passage, the German photographer declined his prize because ______.",
 [
 "the judges discovered that his portrait had been plagiarized from another artist",
-"copyright law forbade him to accept remuneration for the image",
-"he had entered to test whether contests were ready for machine-made images",
+"copyright law forbade him to accept any remuneration for an image made by software",
+"he had entered as a test of whether such contests were ready for machine-made images",
 "he believed photographs should be segregated from paintings in every competition"
 ],
 [
@@ -597,10 +597,10 @@ null,
 "r1-s1",
 "Which of the following can be inferred from the passage?",
 [
-"Careful prompting alone does not make someone the legal author of software-generated imagery.",
-"The Colorado judges would have rejected the image had they perused the competition rules more carefully.",
+"Careful prompting alone does not make someone the legal author of the imagery that software generates.",
+"The Colorado judges would have rejected the image had they perused the competition rules more carefully beforehand.",
 "Most art competitions have now abolished their separate categories for photography and painting.",
-"The Copyright Office agreed to register the Colorado image after the 2025 ruling."
+"The Copyright Office agreed to register the Colorado image after the federal appeals court ruled in 2025."
 ],
 [
 1
@@ -632,9 +632,9 @@ null,
 "Which of the following CANNOT be inferred from the passage?",
 [
 "Gettier's paper challenged a view that many philosophers had long taken for granted.",
-"In the clock example, the woman's reasons are not what make her belief true.",
-"Gettier proposed a fourth condition that philosophers eventually accepted as a solution.",
-"Attempts to shore up the traditional definition were repeatedly thwarted by new counterexamples."
+"In the clock example, the woman's reasons are not what make her belief about the time true.",
+"Gettier himself proposed a fourth condition that philosophers eventually accepted as a satisfactory solution.",
+"Attempts to shore up the traditional definition of knowledge were repeatedly thwarted by fresh counterexamples."
 ],
 [
 3
@@ -648,10 +648,10 @@ null,
 "r1-s2",
 "Which of the following would most likely follow the passage?",
 [
-"A discussion of what surveys have revealed about how ordinary people judge such cases",
-"A biography describing Plato's early life and education in Athens",
-"An argument that railway station clocks are generally too capricious to be trusted by travelers",
-"A history of how philosophers stopped requiring justification for knowledge"
+"A discussion of what cross-cultural surveys have revealed about how ordinary people judge such cases",
+"A biography describing Plato's early life, his travels, and his education in Athens",
+"An argument that railway station clocks are generally too capricious to be trusted by hurried travelers",
+"A history of how philosophers gradually stopped requiring justification as a condition for knowledge"
 ],
 [
 1
@@ -682,10 +682,10 @@ null,
 "r1-s3",
 "Which of the following is the best title for the passage?",
 [
-"How Arrowheads Hoodwink the Eye into Seeing Unequal Lines",
-"Why Undergraduates Make the Most Reliable Research Participants",
-"The Economics of Dividing a Sum of Money Fairly Among Strangers",
-"A Narrow Window on Human Nature: The Problem of WEIRD Samples"
+"How Arrowheads Hoodwink the Eye into Seeing Two Equal Lines as Unequal",
+"Why Undergraduates Make the Most Reliable and Representative Participants for Psychological Research",
+"The Economics of Dividing a Sum of Money Fairly Among Total Strangers",
+"A Narrow Window on Human Nature: The Problem of WEIRD Research Samples"
 ],
 [
 4
@@ -700,8 +700,8 @@ null,
 "Which of the following is NOT true according to the passage?",
 [
 "Many participants in psychology studies were students recruited for convenience.",
-"The explanation involving rectilinear buildings has not been settled.",
-"Some international projects now run the same experiment in many countries.",
+"The explanation involving people reared among rectilinear buildings has not yet been settled by researchers.",
+"Some international collaborations now run one and the same experiment in dozens of countries.",
 "The Müller-Lyer illusion was found to affect all societies to roughly the same degree."
 ],
 [
@@ -714,7 +714,7 @@ null,
 1,
 "reading",
 "r1-s4",
-"Where would the following sentence best fit in the passage?\nSuch sales enrich distant collectors, while the neighborhoods that once hosted the works receive nothing at all.",
+"Where would the following sentence best fit in the passage?\nSuch sales enrich dealers and distant buyers, while the neighborhoods that once hosted the works receive nothing at all.",
 [
 "[A]",
 "[B]",
@@ -750,10 +750,10 @@ null,
 "r1-s4",
 "Which of the following is consistent with the passage?",
 [
-"All of the 2024 London images were preserved by local authorities.",
-"The 5Pointz owner had always forbidden painting on his buildings.",
+"All of the 2024 London images were removed and preserved for safekeeping by the local authorities.",
+"The 5Pointz owner never once allowed any aerosol artists to paint on his old factory buildings.",
 "Every city has adopted the same policy toward murals that appear on private walls.",
-"The 5Pointz walls were painted over before the artists brought their lawsuit."
+"The 5Pointz walls were painted over before the artists brought their lawsuit under federal law."
 ],
 [
 4
@@ -1243,10 +1243,10 @@ null,
 "r2-s1",
 "What is the passage mainly about?",
 [
-"The chronicle of the preeminent auction houses in New York, London, and Hong Kong",
-"The reasons why online art sales declined sharply after the pandemic ended",
-"How a new generation of young artists garnered record auction prices in 2024",
-"The 2024 art market downturn and what it reveals about different kinds of buyers"
+"The chronicle of the preeminent auction houses in New York, London, and Hong Kong since their founding",
+"The reasons why online art sales declined sharply among younger collectors after the pandemic ended",
+"How a new generation of young artists garnered record prices at major auction houses in 2024",
+"The art market downturn of 2024 and what it reveals about different kinds of buyers and works"
 ],
 [
 4
@@ -1260,9 +1260,9 @@ null,
 "r2-s1",
 "According to the passage, many sellers held back their best works in 2024 because ______.",
 [
-"a lackluster auction result could depress the perceived value of an artist's other works",
-"auction houses refused to accept any work priced above ten million dollars",
-"online platforms offered them far higher prices than auction houses did",
+"a lackluster auction result could publicly depress the perceived value of an artist's other works",
+"auction houses refused to accept any work whose estimated price exceeded ten million dollars",
+"online platforms offered them far higher prices than the traditional auction houses did in that year",
 "high interest rates made it cheaper to keep paintings in storage"
 ],
 [
@@ -1278,9 +1278,9 @@ null,
 "Which of the following CANNOT be inferred from the passage?",
 [
 "Owners who buy art for enjoyment are less affected by changes in interest rates.",
-"Online art sales lost most of the audience they had gained during the pandemic.",
-"The total value of art and antiques sold fell in two consecutive years.",
-"The revenue of auction houses hinges partly on the prices of the works they sell."
+"Online art sales lost most of the audience they had gained during the pandemic once it ended.",
+"The total value of art and antiques sold worldwide fell in two consecutive years, 2023 and 2024.",
+"The revenue of auction houses hinges partly on the prices fetched by the works they sell."
 ],
 [
 2
@@ -1294,10 +1294,10 @@ null,
 "r2-s2",
 "Which of the following is NOT true according to the passage?",
 [
-"Designing a typeface involves decisions about how pairs of letters are spaced.",
-"Design patents for typefaces exist in the US but are seldom sought.",
-"Some font licenses restrict the use of a font in commercial products.",
-"American copyright law forbids anyone to redraw letters that resemble a protected typeface."
+"Designing a typeface involves decisions about how common pairs of letters are spaced next to each other.",
+"Design patents for typefaces exist in the United States but are costly and seldom sought.",
+"Some font licenses restrict the use of a font in apps or other commercial products.",
+"American copyright law forbids anyone to redraw by hand letters that resemble a protected typeface."
 ],
 [
 4
@@ -1311,10 +1311,10 @@ null,
 "r2-s2",
 "Based on the passage, which act would most likely serve as an example of copyright infringement under American law?",
 [
-"Printing a flyer for a local event using a font whose license permits it",
-"Studying a printed alphabet and sketching novel letters inspired by its contours",
-"Writing a magazine article about the history of a famous typeface",
-"Duplicating a purchased font file and posting it online for anyone to download"
+"Printing a flyer for a local event using a font whose license explicitly permits such use",
+"Studying a printed alphabet closely and sketching novel letters inspired by the contours of its forms",
+"Writing a magazine article about the history and influence of a famous typeface",
+"Duplicating a purchased font file without permission and posting it online for anyone to download"
 ],
 [
 4
@@ -1328,10 +1328,10 @@ null,
 "r2-s2",
 "Which of the following is the best title for the passage?",
 [
-"How to Design a Complete Typeface in Ten Simple Steps",
-"Letters, Files, and Licenses: The Uneven Law of Typefaces",
-"Why Free Fonts Will Soon Supplant Professional Type Designers",
-"The Rise of Calligraphy in Korean Schools and Offices"
+"A Beginner's Guide to Designing a Complete Typeface in Ten Simple Steps",
+"Letters, Files, and Licenses: The Uneven Law of Typefaces Around the World",
+"Why Free Fonts Will Soon Supplant the Work of Professional Type Designers",
+"The Rise of Calligraphy Classes in Korean Schools and Local Government Offices"
 ],
 [
 2
@@ -1362,9 +1362,9 @@ null,
 "r2-s3",
 "Which of the following can be inferred from the passage?",
 [
-"Quine was certain that the word gavagai could only mean rabbit.",
-"For Quine, behavioral evidence cannot decide between two translations that both fit it.",
-"Young children usually assume that new words refer to the parts of objects.",
+"Quine was certain that the native word gavagai could only mean rabbit and nothing else.",
+"For Quine, behavioral evidence alone cannot decide between two translations that both fit it equally.",
+"Young children usually assume that new words refer to the parts or qualities of objects.",
 "Quine thought indeterminacy arises only between speakers of two entirely different languages."
 ],
 [
@@ -1379,10 +1379,10 @@ null,
 "r2-s3",
 "According to the passage, asking further questions does not solve the linguist's problem because ______.",
 [
-"the native speakers habitually decline to answer questions put to them by outsiders",
-"interpreting the answers requires translating words that are equally uncertain",
-"rabbits run away before the linguist has time to point at them",
-"the linguist already possesses a reliable bilingual dictionary"
+"the native speakers habitually decline to answer any questions put to them by outsiders",
+"interpreting the answers requires translating words such as same and part, which are equally uncertain",
+"rabbits usually run away before the linguist has enough time to point at them",
+"the linguist already possesses a reliable bilingual dictionary compiled by earlier visitors"
 ],
 [
 2
@@ -1397,9 +1397,9 @@ null,
 "Which of the following would the author most likely agree with?",
 [
 "Surveys are too untrustworthy to be used in the social sciences at all.",
-"Asking a larger number of people is enough to eliminate social desirability bias.",
-"Guaranteeing respondents' privacy can make answers to sensitive questions more accurate.",
-"The randomized response technique reveals each respondent's true answer to the interviewer."
+"Asking a larger number of people is by itself enough to eliminate social desirability bias.",
+"Guaranteeing respondents' privacy can make their answers to sensitive questions more candid and accurate.",
+"The randomized response technique reveals each individual respondent's true answer to the interviewer."
 ],
 [
 3
@@ -1413,10 +1413,10 @@ null,
 "r2-s4",
 "According to the passage, a yes answer in the coin version does not expose an individual respondent because ______.",
 [
-"respondents are permitted to skip any question they find disconcerting",
-"the answers are destroyed before any researcher has a chance to read them",
-"only respondents whose coin shows heads are asked to answer at all",
-"the interviewer cannot tell whether the coin or the truth produced it"
+"respondents are permitted to skip any question that they find disconcerting or embarrassing",
+"the answers are destroyed before any researcher has had a chance to read them",
+"only respondents whose coin shows heads are asked to answer the sensitive question at all",
+"the interviewer never learns whether the coin or the truth produced that particular answer"
 ],
 [
 4
@@ -1430,10 +1430,10 @@ null,
 "r2-s4",
 "Which of the following is consistent with the passage?",
 [
-"Warner's technique works best when the sample of respondents is minuscule.",
+"Warner's technique works best when the sample of respondents is minuscule rather than large.",
 "Comparisons with official records have shown that some people falsely claim to have voted.",
-"People tend to overstate how much alcohol they drink when asked in surveys.",
-"Spoken interviews generally produce more candid answers than private questionnaires."
+"People tend to overstate how much alcohol they drink when asked about it in surveys.",
+"Spoken interviews generally produce more candid answers about sensitive topics than private questionnaires."
 ],
 [
 2
@@ -1923,10 +1923,10 @@ null,
 "r3-s1",
 "Which of the following is the best title for the passage?",
 [
-"How Van Gogh Painted His Sunflowers in the South of France",
-"Projected Light and Painted Canvas: The Promise and Problems of Immersive Art",
-"Why Museums Should Prohibit Photography in Their Galleries",
-"The Engineering Behind Outdoor LED Screens in Seoul"
+"How Van Gogh Painted His Sunflowers During His Final Years in the South of France",
+"Projected Light and Painted Canvas: The Promise and Problems of Immersive Art Exhibitions",
+"Why Museums Should Prohibit Visitors from Taking Photographs and Selfies in Their Galleries",
+"The Engineering Behind the Giant Outdoor LED Screens That Display Waves in Seoul"
 ],
 [
 2
@@ -1940,10 +1940,10 @@ null,
 "r3-s1",
 "Which of the following can be inferred from the passage?",
 [
-"Critics commend animated reproductions for retaining the texture of the original canvases.",
-"Most visitors to immersive shows are regular museumgoers who already know the original paintings.",
-"Works created for projection may be harder for museums to preserve than traditional paintings.",
-"teamLab permanently closed its Borderless museum in Tokyo in the year 2024."
+"Critics commend animated reproductions for faithfully retaining the texture and scale of the original canvases.",
+"Most visitors to immersive shows are regular museumgoers who already know the original paintings quite well.",
+"Works created for projection may be harder for museums to preserve over time than traditional paintings.",
+"teamLab permanently closed its Borderless museum in Tokyo in 2024 and has not reopened it since."
 ],
 [
 3
@@ -1957,10 +1957,10 @@ null,
 "r3-s1",
 "According to the passage, defenders of immersive shows mention color reproductions in books because ______.",
 [
-"older formats that spread art were once also accused of cheapening it",
-"printed books reproduce the colors of paintings more accurately than projections do",
-"immersive exhibitions first began as color illustrations printed in expensive art books",
-"museums now sell books of reproductions at the end of immersive exhibitions"
+"older formats that spread art more widely were once also accused of cheapening it",
+"printed books reproduce the colors of famous paintings more accurately than digital projections do",
+"immersive exhibitions first began as color illustrations printed in expensive art books for collectors",
+"museums now sell books of color reproductions to visitors at the end of immersive exhibitions"
 ],
 [
 1
@@ -1974,10 +1974,10 @@ null,
 "r3-s2",
 "What is the passage mainly about?",
 [
-"The life and scientific career of the physicist Eugene Wigner",
-"Competing explanations for why abstract mathematics describes the physical world so well",
-"The reasons why physicists finally jettisoned complex numbers",
-"How Einstein invented non-Euclidean geometry to explain gravity"
+"The life, education, and scientific career of the physicist Eugene Wigner before 1960",
+"Competing explanations for why abstract mathematics describes the physical world so remarkably well",
+"The reasons why physicists finally jettisoned complex numbers in favor of simpler tools",
+"How Einstein invented non-Euclidean geometry himself in order to explain gravity"
 ],
 [
 2
@@ -1991,10 +1991,10 @@ null,
 "r3-s2",
 "Which of the following CANNOT be inferred from the passage?",
 [
-"Some mathematical ideas found physical applications long after they were first developed.",
-"Wigner argued that mathematics is equally precise in every science.",
-"The selection explanation implies that unsuccessful mathematics tends to be overlooked.",
-"According to one view, mathematics keeps links to its origins in practical activities."
+"Some mathematical ideas found physical applications long after they were first developed for other reasons.",
+"Wigner argued that mathematics is equally precise in every science, including biology and economics.",
+"The selection explanation implies that mathematics that has never described anything physical tends to be overlooked.",
+"According to one view, mathematics keeps links to its origins in counting, measuring, and other practical activities."
 ],
 [
 2
@@ -2008,10 +2008,10 @@ null,
 "r3-s2",
 "Which of the following would most likely follow the passage?",
 [
-"A biography of the mathematicians who first used imaginary numbers",
-"Step-by-step instructions for solving the basic equations of quantum mechanics",
-"A discussion of whether physical simplicity reflects the universe or physicists' choices",
-"A history of how locks and keys were manufactured in Europe"
+"A biography of the mathematicians who first used imaginary numbers centuries ago",
+"Step-by-step instructions for solving the basic equations of quantum mechanics with complex numbers",
+"A discussion of whether physical simplicity reflects the universe itself or merely physicists' choices",
+"A history of how locks and keys were manufactured and sold in Europe"
 ],
 [
 3
@@ -2059,10 +2059,10 @@ null,
 "r3-s3",
 "Which of the following is consistent with the passage?",
 [
-"An implicature can be canceled without the speaker contradicting himself or herself.",
+"An implicature can be canceled later on without the speaker contradicting himself or herself.",
 "Grice believed that speakers consciously recite his maxims to themselves before they speak.",
-"The word some logically rules out the possibility that all are included.",
-"Later theorists accepted Grice's maxims without making any changes."
+"The word some logically rules out the possibility that all of the items are included.",
+"Later theorists accepted all of Grice's maxims without making any changes."
 ],
 [
 1
@@ -2077,9 +2077,9 @@ null,
 "According to the passage, a highly efficient new building may not benefit the climate right away because ______.",
 [
 "efficient buildings cost more to heat and cool each year than older ones",
-"old buildings are always better insulated than new buildings",
-"new construction materials absorb carbon dioxide from the air",
-"the emissions of its construction must first be offset by savings"
+"old buildings are always better insulated than new buildings, whatever their condition or design",
+"new construction materials such as cement and steel absorb carbon dioxide from the air",
+"the emissions caused by its construction must first be offset by years of energy savings"
 ],
 [
 4
@@ -2093,10 +2093,10 @@ null,
 "r3-s4",
 "Which of the following would the author most likely agree with?",
 [
-"No old building should ever be demolished, whatever its condition.",
-"Building codes should apply only to newly constructed buildings, never to old ones.",
-"Demolition decisions should count the carbon already invested in existing buildings.",
-"Developers are usually right to prefer building new towers over converting old warehouses."
+"No old building should ever be demolished, whatever its condition or the cost of repairing it.",
+"Building codes should apply only to newly constructed buildings, never to old ones that are converted.",
+"Decisions about demolition should take into account the carbon already invested in existing buildings.",
+"Developers are usually right to prefer building new towers over converting old and uncertain warehouses."
 ],
 [
 3
@@ -2110,10 +2110,10 @@ null,
 "r3-s4",
 "Which of the following is NOT true according to the passage?",
 [
-"Tate Modern is housed in a building that was once a power station.",
-"The 2021 Pritzker Prize honored architects who replaced old housing blocks with new towers.",
+"Tate Modern in London is housed in a building that was once a power station.",
+"The 2021 Pritzker Prize honored two architects who replaced old housing blocks with new towers.",
 "Hidden defects in old warehouses may become apparent only after conversion work has commenced.",
-"Some cities offer incentives to developers who convert existing buildings."
+"Some cities now offer incentives to developers who convert existing buildings instead of demolishing them."
 ],
 [
 2

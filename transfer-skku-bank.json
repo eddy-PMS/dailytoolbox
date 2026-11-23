@@ -201,7 +201,7 @@
 },
 {
 "id": "r3-s5",
-"text": "The electric car is often marketed as a clean machine, but every one of them depends on a long and frequently grimy supply chain. Its battery requires lithium, nickel, cobalt, graphite, and other minerals. These must be extracted, refined, and assembled into cells before a single vehicle leaves the factory. As sales of electric vehicles have climbed, governments have begun to regard this chain less as a matter of commerce than as one of national security.\nThe anxiety stems from concentration: a large share of the world's cobalt is mined in the Democratic Republic of the Congo, often under conditions criticized trenchantly by human-rights groups. China dominates the refining of many battery minerals and the manufacture of the cells themselves. Countries hoping to build battery industries of their own therefore find themselves dependent on a ____ that is also a strategic rival. In ordinary times such reliance may seem a reasonable bargain, since Chinese producers have invested heavily and offer low prices. In a crisis, critics warn, it could prove a crippling vulnerability.\nIn response the United States, the European Union, and others have offered generous subsidies to encourage mining, refining, and battery production at home or among trusted partners. Skeptics note that these policies can raise costs for consumers and provoke disputes with trading partners and that new mines and refineries take many years to build amid fierce local opposition over pollution and water use. A mine approved today may not yield ore until the next decade.\nEngineers, meanwhile, are attacking the problem from another direction. Batteries based on lithium iron phosphate require no cobalt or nickel and have rapidly gained market share, and researchers are developing sodium-ion cells that dispense with lithium altogether. Recycling may eventually supply a meaningful fraction of the minerals needed, as the first generation of electric cars reaches the scrapyard. None of these innovations will end the scramble for raw materials soon, but together they suggest that the map of dependence is not immutable."
+"text": "The electric car is often marketed as a clean machine, but it depends on a long and frequently grimy supply chain. Its battery requires lithium, nickel, cobalt, graphite, and other minerals. These must be extracted, refined, and assembled into cells before a single vehicle leaves the factory. As sales of electric vehicles have climbed, governments have begun to regard this chain less as a matter of commerce than as one of national security.\nThe anxiety stems from concentration: a large share of the world's cobalt is mined in the Democratic Republic of the Congo, often under conditions criticized trenchantly by human-rights groups. China dominates the refining of many battery minerals and the manufacture of the cells themselves. Countries hoping to build battery industries of their own therefore find themselves dependent on a ____ that is also a strategic rival. In ordinary times such reliance may seem a reasonable bargain, since Chinese producers have invested heavily and offer low prices. In a crisis, critics warn, it could prove a crippling vulnerability.\nIn response the United States, the European Union, and others have offered generous subsidies to encourage mining, refining, and battery production at home or among trusted partners. Skeptics note that these policies can raise costs for consumers and provoke disputes with trading partners and that new mines and refineries take many years to build amid fierce local opposition over pollution and water use. A mine approved today may not yield ore until the next decade.\nEngineers, meanwhile, are attacking the problem from another direction. Batteries based on lithium iron phosphate require no cobalt or nickel and have rapidly gained market share, and researchers are developing sodium-ion cells that dispense with lithium altogether. Recycling may eventually supply a meaningful fraction of the minerals needed, as the first generation of electric cars reaches the scrapyard. None of these innovations will end the scramble for raw materials soon, but together they suggest that the map of dependence is not immutable."
 },
 {
 "id": "r3-s6",
@@ -684,7 +684,7 @@ null,
 [
 "Octopuses can open jars.",
 "Most octopus neurons are in the arms.",
-"Octopuses depend on excellent color vision for camouflage.",
+"Octopuses rely on sharp color vision.",
 "Octopus arms can act independently.",
 "Most octopus species live briefly."
 ],
@@ -1096,7 +1096,7 @@ null,
 "s9",
 "According to the passage, young adults most often attribute their decision to delay or forgo children to ____.",
 [
-"too little public cash for families",
+"too little cash at birth, in allowances, and for childcare",
 "child-rearing becoming cheaper and easier",
 "the cost of housing alone",
 "housing costs, educational competition, and long hours",
@@ -1762,7 +1762,7 @@ null,
 "r2-s4",
 "What does the underlined expression mean in the passage?",
 [
-"be quietly neglected and abandoned",
+"be neglected and dropped",
 "be strictly observed on busy sites",
 "be enforced more firmly by inspectors",
 "be abolished by every government",
@@ -1926,8 +1926,8 @@ null,
 [
 "Johnson gave up on fixing English.",
 "Volunteers helped build the Oxford dictionary.",
-"Dictionaries moved from prescribing to describing, but the tension remains.",
-"Modern dictionaries have returned to strict rules.",
+"Dictionaries shifted to describing usage, yet tension remains.",
+"Modern dictionaries have gone back to strict rules of correct usage.",
 "British dictionaries include more informal words."
 ],
 [
@@ -2033,15 +2033,15 @@ null,
 "Choose the one that is closest in meaning to the underlined expression.\nAsked directly about the missing funds, the treasurer chose to <u>dissemble</u>, offering vague assurances instead of a straightforward account of the losses.",
 [
 "confess everything",
-"come clean",
-"speak candidly",
+"lose his temper",
+"apologize publicly",
 "conceal the truth",
 "disclose the facts"
 ],
 [
 4
 ],
-"dissemble 은 '속마음이나 사실을 숨기다, 시치미 떼다'라 conceal the truth 와 가까워요. 솔직한 설명 대신 모호한 장담만 했다는 뒤 내용이 단서예요. confess everything·come clean·speak candidly·disclose the facts 는 모두 '털어놓다' 쪽이라 반대예요."
+"dissemble 은 '속마음이나 사실을 숨기다, 시치미 떼다'라 conceal the truth 와 가까워요. 솔직한 설명 대신 모호한 장담만 했다는 뒤 내용이 단서예요. confess everything·disclose the facts 는 '털어놓다' 쪽이라 반대이고, lose his temper(화를 내다)·apologize publicly(공개 사과하다)는 모호한 장담만 했다는 내용과 맞지 않아요."
 ],
 [
 2,
@@ -2053,13 +2053,13 @@ null,
 "favorable",
 "ominous",
 "inauspicious",
-"inopportune",
-"untimely"
+"costly",
+"unprecedented"
 ],
 [
 1
 ],
-"propitious 는 '(때·조건이) 형편이 좋은, 길한'이라 favorable 과 가까워요. 금리는 내리고 소비 심리는 오르는 좋은 조건이 단서예요. ominous·inauspicious(불길한), inopportune·untimely(때가 나쁜)는 모두 반대 쪽이에요."
+"propitious 는 '(때·조건이) 형편이 좋은, 길한'이라 favorable 과 가까워요. 금리는 내리고 소비 심리는 오르는 좋은 조건이 단서예요. ominous·inauspicious(불길한)는 반대 쪽이고, costly(돈이 많이 드는)·unprecedented(전례 없는)는 금리 하락·소비 심리 상승이라는 단서와 이어지지 않아요."
 ],
 [
 3,

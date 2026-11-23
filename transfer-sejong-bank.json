@@ -89,7 +89,7 @@
 },
 {
 "id": "r3-s1",
-"text": "Economists have long acknowledged that a dismal harvest can inflate the price of bread. What is novel is how frequently bad harvests now materialize, and how many crops they afflict at once. Pundits have coined an ungainly word for the result: <u>climateflation</u>, the upward pressure on prices engendered by a warmer and more erratic climate.\nRecent years have furnished ample examples. Côte d'Ivoire and Ghana jointly cultivate more than half of the world's cocoa and suffered meager harvests after anomalous heat and torrential rains fostered disease, so in 2024 cocoa prices soared to record highs. This ratcheted up the cost of chocolate worldwide. In Spain, the foremost producer of olive oil, two consecutive years of drought slashed output, and supermarket prices for the oil more than doubled. Coffee, oranges, and rice have all endured similar upheavals.\nFor central banks, such price surges pose a vexing ____. \"Raising interest rates can dampen demand but cannot make rain fall on parched fields or resurrect a ruined harvest,\" one central banker conceded. If food prices spike because of capricious weather, more stringent monetary policy may slow the economy without addressing the cause. Yet if central bankers disregard the shocks and they become chronic, households may come to anticipate permanently elevated inflation.\nThe burden is distributed inequitably. Affluent households devote only a modest share of their income to food, so a costlier chocolate bar is a trifling irritation. For impoverished families, particularly in countries that import most of their food, the same shocks can entail skipped meals. Adaptation, from drought-tolerant cultivars to more diversified sources of supply, will alleviate the strain. Yet few economists expect the pressure to dissipate while the climate continues to warm."
+"text": "Economists have long acknowledged that a dismal harvest can inflate the price of bread. What is novel is how frequently bad harvests now materialize, and how many crops they afflict at once. Pundits have coined an ungainly word for the result: <u>climateflation</u>, the upward pressure on prices engendered by a warmer and more erratic climate.\nRecent years have furnished ample examples. Côte d'Ivoire and Ghana, which together grow more than half of the world's cocoa, suffered meager harvests after anomalous heat and torrential rains fostered disease, so in 2024 cocoa prices soared to record highs. This ratcheted up the cost of chocolate worldwide. In Spain, the foremost producer of olive oil, two consecutive years of drought slashed output, and supermarket prices for the oil more than doubled. Coffee, oranges, and rice have all endured similar upheavals.\nFor central banks, such price surges pose a vexing ____. \"Raising interest rates can dampen demand but cannot make rain fall on parched fields or resurrect a ruined harvest,\" one central banker conceded. If food prices spike because of capricious weather, more stringent monetary policy may slow the economy without addressing the cause. Yet if central bankers disregard the shocks and they become chronic, households may come to anticipate permanently elevated inflation.\nThe burden is distributed inequitably. Affluent households devote only a modest share of their income to food, so a costlier chocolate bar is a trifling irritation. For impoverished families, particularly in countries that import most of their food, the same shocks can entail skipped meals. Adaptation, from drought-tolerant cultivars to more diversified sources of supply, will alleviate the strain. Yet few economists expect the pressure to dissipate while the climate continues to warm."
 },
 {
 "id": "r3-s2",
@@ -114,13 +114,13 @@ null,
 [
 "lugubrious",
 "lucrative",
-"arboreal",
-"verbose"
+"fastidious",
+"taciturn"
 ],
 [
 2
 ],
-"몇몇 상인 집안을 부자로 만든 장사였다는 말이 단서라 '돈벌이가 되는(lucrative)'이 맞아요. lugubrious 는 철자만 비슷한 '침울한'이고, arboreal(나무에 사는)·verbose(장황한)는 문맥과 관계없어요."
+"몇몇 상인 집안을 부자로 만든 장사였다는 말이 단서라 '돈벌이가 되는(lucrative)'이 맞아요. lugubrious(침울한)·fastidious(까다로운)·taciturn(과묵한)는 문맥과 맞지 않아요."
 ],
 [
 2,
@@ -129,15 +129,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nHoping to ____ the irate farmers before the election, the minister promised to defer the new water levy and to visit every affected village personally.",
 [
-"irrigate",
-"excavate",
-"transcribe",
+"antagonize",
+"exonerate",
+"emulate",
 "conciliate"
 ],
 [
 4
 ],
-"세금을 미루고 마을마다 직접 찾아가겠다고 약속했으니 성난 농민을 '달래려는(conciliate)' 것이에요. irrigate(물을 대다)·excavate(발굴하다)·transcribe(옮겨 적다)는 문맥과 관계없어요."
+"세금을 미루고 마을마다 직접 찾아가겠다고 약속했으니 성난 농민을 '달래려는(conciliate)' 것이에요. antagonize(적대감을 사다)·exonerate(무죄를 밝히다)·emulate(본받다)는 문맥과 맞지 않아요."
 ],
 [
 3,
@@ -147,14 +147,14 @@ null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nOur ____ tour guide chattered without pause for three hours, leaving us almost no time to contemplate the paintings we had traveled so far to see.",
 [
 "myopic",
-"aquatic",
-"metallic",
+"reticent",
+"frugal",
 "garrulous"
 ],
 [
 4
 ],
-"세 시간 내내 쉬지 않고 말했다는 설명이 단서라 '수다스러운(garrulous)'이 맞아요. myopic(근시의)·aquatic(물에 사는)·metallic(금속의)은 문맥과 관계없어요."
+"세 시간 내내 쉬지 않고 말했다는 설명이 단서라 '수다스러운(garrulous)'이 맞아요. myopic(근시안적인)·reticent(말수 적은)·frugal(검소한)는 문맥과 맞지 않아요."
 ],
 [
 4,
@@ -164,14 +164,14 @@ null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nBefore the final match, the coach did not criticize anyone; instead, she chose to ____ her exhausted players to give everything for one last half.",
 [
 "exhort",
-"laminate",
-"fumigate",
-"embroider"
+"berate",
+"exempt",
+"dissuade"
 ],
 [
 1
 ],
-"꾸짖지 않고 대신(instead) 마지막까지 다 쏟으라고 했으니 '권하다, 북돋우다(exhort)'가 맞아요. laminate(얇게 입히다)·fumigate(훈증 소독하다)·embroider(수놓다)는 문맥과 관계없어요."
+"꾸짖지 않고 대신(instead) 마지막까지 다 쏟으라고 했으니 '권하다, 북돋우다(exhort)'가 맞아요. berate(꾸짖다)·exempt(면제하다)·dissuade(단념시키다)는 문맥과 맞지 않아요."
 ],
 [
 5,
@@ -180,15 +180,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nAfter the scandal, the party moved quickly to ____ the senator's remarks, insisting that they in no way reflected its official views.",
 [
-"hibernate",
-"pollinate",
+"endorse",
+"reiterate",
 "repudiate",
-"upholster"
+"embellish"
 ],
 [
 3
 ],
-"그 발언이 당의 공식 입장이 전혀 아니라고 했으니 발언을 '부인하다, 거부하다(repudiate)'가 맞아요. hibernate(겨울잠 자다)·pollinate(꽃가루를 옮기다)·upholster(덮개를 씌우다)는 문맥과 관계없어요."
+"그 발언이 당의 공식 입장이 전혀 아니라고 했으니 발언을 '부인하다, 거부하다(repudiate)'가 맞아요. endorse(지지하다)·reiterate(되풀이하다)·embellish(꾸미다)는 문맥과 맞지 않아요."
 ],
 [
 6,
@@ -197,15 +197,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nForfeiting the contract was painful, but it proved a ____ lesson: the company finally stopped relying on a single client and began to diversify.",
 [
-"nautical",
-"porous",
+"futile",
+"spurious",
 "salutary",
-"galvanic"
+"frivolous"
 ],
 [
 3
 ],
-"아팠지만(but) 거래처를 늘리는 계기가 됐으니 '유익한(salutary)' 교훈이에요. nautical(항해의)·porous(구멍이 많은)·galvanic(전류의)은 문맥과 관계없어요."
+"아팠지만(but) 거래처를 늘리는 계기가 됐으니 '유익한(salutary)' 교훈이에요. futile(헛된)·spurious(가짜의)·frivolous(경박한)는 문맥과 맞지 않아요."
 ],
 [
 7,
@@ -214,15 +214,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nEconomists cautioned that the ____ shipbuilding industry, which had not secured a major order in a decade, could not survive without fundamental reform.",
 [
-"amphibious",
+"burgeoning",
 "moribund",
-"culinary",
-"lyrical"
+"lucrative",
+"ubiquitous"
 ],
 [
 2
 ],
-"10년 동안 큰 주문을 못 받았고 개혁 없이는 살아남기 어렵다고 했으니 '다 죽어 가는(moribund)' 산업이에요. amphibious(물과 뭍 양쪽의)·culinary(요리의)·lyrical(서정적인)은 문맥과 관계없어요."
+"10년 동안 큰 주문을 못 받았고 개혁 없이는 살아남기 어렵다고 했으니 '다 죽어 가는(moribund)' 산업이에요. burgeoning(급성장하는)·lucrative(수익성 좋은)·ubiquitous(어디에나 있는)는 문맥과 맞지 않아요."
 ],
 [
 8,
@@ -232,14 +232,14 @@ null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nA ____ reader since childhood, she routinely finished three or four novels a week and still grumbled that the library could not keep up.",
 [
 "veracious",
-"geological",
-"rectangular",
+"reluctant",
+"indifferent",
 "voracious"
 ],
 [
 4
 ],
-"한 주에 소설 서너 권을 읽고도 모자랐다니 '왕성하게 읽는(voracious)' 독자예요. veracious(진실한)는 철자만 비슷하고, geological(지질의)·rectangular(직사각형의)는 문맥과 관계없어요."
+"한 주에 소설 서너 권을 읽고도 모자랐다니 '왕성하게 읽는(voracious)' 독자예요. veracious(진실한)·reluctant(마지못해 하는)·indifferent(무관심한)는 문맥과 맞지 않아요."
 ],
 [
 9,
@@ -248,15 +248,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nFaced with a precipitous drop in revenue, the city council voted to ____ spending on new ventures and to postpone the stadium renovation indefinitely.",
 [
-"serenade",
+"augment",
 "curtail",
-"embalm",
-"paraphrase"
+"squander",
+"commend"
 ],
 [
 2
 ],
-"수입이 갑자기 줄어 경기장 공사도 미뤘으니 새 사업 지출을 '줄이다(curtail)'가 맞아요. serenade(세레나데를 부르다)·embalm(방부 처리하다)·paraphrase(바꿔 말하다)는 문맥과 관계없어요."
+"수입이 갑자기 줄어 경기장 공사도 미뤘으니 새 사업 지출을 '줄이다(curtail)'가 맞아요. augment(늘리다)·squander(낭비하다)·commend(칭찬하다)는 문맥과 맞지 않아요."
 ],
 [
 10,
@@ -265,15 +265,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nDespite hours of relentless pressure from his attorneys, the witness remained ____ that he had seen the defendant at the station that night and refused to change his story.",
 [
-"edible",
+"ambivalent",
 "adamant",
-"nocturnal",
-"ornamental"
+"diffident",
+"remorseful"
 ],
 [
 2
 ],
-"몇 시간 압박에도 진술을 바꾸지 않았으니 '단호한(adamant)'이 맞아요. edible(먹을 수 있는)·nocturnal(야행성의)·ornamental(장식용의)은 문맥과 관계없어요."
+"몇 시간 압박에도 진술을 바꾸지 않았으니 '단호한(adamant)'이 맞아요. ambivalent(갈피를 못 잡는)·diffident(자신 없는)·remorseful(뉘우치는)는 문맥과 맞지 않아요."
 ],
 [
 11,
@@ -1134,13 +1134,13 @@ null,
 [
 "decrepit",
 "decorous",
-"botanical",
-"subterranean"
+"belligerent",
+"strident"
 ],
 [
 2
 ],
-"서로 예의 바르게 부르고 목소리 한 번 높이지 않았으니 '품위 있는, 점잖은(decorous)'이 맞아요. decrepit(노쇠한)는 철자만 비슷하고, botanical(식물의)·subterranean(지하의)은 문맥과 관계없어요."
+"서로 예의 바르게 부르고 목소리 한 번 높이지 않았으니 '품위 있는, 점잖은(decorous)'이 맞아요. decrepit(노쇠한)·belligerent(호전적인)·strident(귀에 거슬리는)는 문맥과 맞지 않아요."
 ],
 [
 2,
@@ -1149,15 +1149,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nProud of his independence, the old fisherman continued to ____ every offer of help from his neighbors, even after his boat was badly battered.",
 [
-"pasteurize",
-"transplant",
-"varnish",
+"solicit",
+"embrace",
+"covet",
 "spurn"
 ],
 [
 4
 ],
-"독립심이 강해 배가 망가진 뒤에도 이웃의 도움을 '퇴짜 놓았다(spurn)'는 흐름이에요. pasteurize(저온 살균하다)·transplant(옮겨 심다)·varnish(니스를 칠하다)는 문맥과 관계없어요."
+"독립심이 강해 배가 망가진 뒤에도 이웃의 도움을 '퇴짜 놓았다(spurn)'는 흐름이에요. solicit(간청하다)·embrace(받아들이다)·covet(탐내다)는 문맥과 맞지 않아요."
 ],
 [
 3,
@@ -1166,15 +1166,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nHuman rights advocates were quick to ____ the arrest of the journalists, calling it a blatant attempt to muzzle criticism of the government.",
 [
-"ferment",
-"calibrate",
-"prune",
+"condone",
+"commend",
+"emulate",
 "deplore"
 ],
 [
 4
 ],
-"체포를 비판을 막으려는 뻔한 시도라고 불렀으니 '개탄하다, 강하게 비난하다(deplore)'가 맞아요. ferment(발효시키다)·calibrate(눈금을 맞추다)·prune(가지를 치다)은 문맥과 관계없어요."
+"체포를 비판을 막으려는 뻔한 시도라고 불렀으니 '개탄하다, 강하게 비난하다(deplore)'가 맞아요. condone(묵인하다)·commend(칭찬하다)·emulate(본받다)는 문맥과 맞지 않아요."
 ],
 [
 4,
@@ -1183,15 +1183,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nThe scientist was long ridiculed for her heterodox theory, but new evidence from the deep-sea expedition finally seemed to ____ her.",
 [
-"marinate",
-"fertilize",
+"discredit",
+"ostracize",
 "vindicate",
-"sculpt"
+"implicate"
 ],
 [
 3
 ],
-"오래 비웃음을 샀지만(but) 새 증거가 나왔으니 그녀가 옳았음을 '입증하다(vindicate)'가 맞아요. marinate(양념에 재우다)·fertilize(비료를 주다)·sculpt(조각하다)는 문맥과 관계없어요."
+"오래 비웃음을 샀지만(but) 새 증거가 나왔으니 그녀가 옳았음을 '입증하다(vindicate)'가 맞아요. discredit(신뢰를 떨어뜨리다)·ostracize(배척하다)·implicate(연루시키다)는 문맥과 맞지 않아요."
 ],
 [
 5,
@@ -1200,15 +1200,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nThe general who had sworn to safeguard the king later tried to ____ the throne, claiming that the country needed a more forceful ruler.",
 [
-"irrigate",
-"embroider",
-"distill",
+"abdicate",
+"bequeath",
+"venerate",
 "usurp"
 ],
 [
 4
 ],
-"왕을 지키겠다던 장군이 더 강한 통치자가 필요하다며 왕좌를 '빼앗으려(usurp)' 했다는 뜻이에요. irrigate(물을 대다)·embroider(수놓다)·distill(증류하다)은 문맥과 관계없어요."
+"왕을 지키겠다던 장군이 더 강한 통치자가 필요하다며 왕좌를 '빼앗으려(usurp)' 했다는 뜻이에요. abdicate((왕위에서) 물러나다)·bequeath(물려주다)·venerate(숭배하다)는 문맥과 맞지 않아요."
 ],
 [
 6,
@@ -1217,15 +1217,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nInvestors were ____ when the start-up asserted it could cut battery costs by ninety percent within a year, and several demanded independent verification.",
 [
-"aquatic",
+"complacent",
 "incredulous",
-"vegetarian",
-"mountainous"
+"credulous",
+"indifferent"
 ],
 [
 2
 ],
-"따로 증거를 요구했으니 '믿지 않는(incredulous)' 반응이에요. aquatic(물에 사는)·vegetarian(채식의)·mountainous(산이 많은)는 문맥과 관계없어요."
+"따로 증거를 요구했으니 '믿지 않는(incredulous)' 반응이에요. complacent(안주하는)·credulous(잘 믿는)·indifferent(무관심한)는 문맥과 맞지 않아요."
 ],
 [
 7,
@@ -1234,15 +1234,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nThe economy began to ____ in the spring, as rising interest rates deterred borrowing and consumers curbed their spending.",
 [
-"gargle",
-"knit",
+"flourish",
+"rebound",
 "falter",
-"solder"
+"overheat"
 ],
 [
 3
 ],
-"금리가 올라 대출과 소비가 줄었으니 경제가 '휘청거리기(falter)' 시작했다는 말이에요. gargle(입을 헹구다)·knit(뜨개질하다)·solder(땜질하다)는 문맥과 관계없어요."
+"금리가 올라 대출과 소비가 줄었으니 경제가 '휘청거리기(falter)' 시작했다는 말이에요. flourish(번창하다)·rebound(반등하다)·overheat(과열되다)는 문맥과 맞지 않아요."
 ],
 [
 8,
@@ -1252,14 +1252,14 @@ null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nThe antiquated application process was so ____ that many eligible families abandoned their applications before completing the twelve-page form.",
 [
 "cumbersome",
-"nocturnal",
-"carnivorous",
-"maritime"
+"streamlined",
+"lucid",
+"lenient"
 ],
 [
 1
 ],
-"12쪽짜리 서류를 다 쓰기 전에 포기했다니 절차가 '번거로운(cumbersome)' 것이에요. nocturnal(야행성의)·carnivorous(육식의)·maritime(바다의)은 문맥과 관계없어요."
+"12쪽짜리 서류를 다 쓰기 전에 포기했다니 절차가 '번거로운(cumbersome)' 것이에요. streamlined(간소화된)·lucid(명료한)·lenient(관대한)는 문맥과 맞지 않아요."
 ],
 [
 9,
@@ -1270,13 +1270,13 @@ null,
 [
 "perforate",
 "perpetuate",
-"hibernate",
-"cauterize"
+"dispel",
+"refute"
 ],
 [
 2
 ],
-"과학자를 나이 든 남성으로만 그리는 교과서가 고정관념을 '이어 가게 한다(perpetuate)'는 비판이에요. perforate(구멍을 내다)는 철자만 비슷하고, hibernate(겨울잠 자다)·cauterize(지져서 소독하다)는 문맥과 관계없어요."
+"과학자를 나이 든 남성으로만 그리는 교과서가 고정관념을 '이어 가게 한다(perpetuate)'는 비판이에요. perforate(구멍을 뚫다)·dispel(떨쳐 없애다)·refute(반박하다)는 문맥과 맞지 않아요."
 ],
 [
 10,
@@ -1285,15 +1285,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nA discerning editor excises ____ details that distract the reader, keeping only what is truly essential to the argument.",
 [
-"amphibious",
+"pertinent",
 "extraneous",
-"lunar",
-"edible"
+"indispensable",
+"salient"
 ],
 [
 2
 ],
-"독자의 주의를 흩뜨려 지우는 세부이니 '관계없는, 군더더기(extraneous)'예요. amphibious(물과 뭍 양쪽의)·lunar(달의)·edible(먹을 수 있는)은 문맥과 관계없어요."
+"독자의 주의를 흩뜨려 지우는 세부이니 '관계없는, 군더더기(extraneous)'예요. pertinent(관련 있는)·indispensable(없어서는 안 될)·salient(두드러진)는 문맥과 맞지 않아요."
 ],
 [
 11,
@@ -2001,7 +2001,7 @@ null,
 [
 "Because they were all planted in the same year.",
 "Because they belong to the same species and therefore grow at the same rate.",
-"Because they experience the same sequence of wet and dry years.",
+"Because they live through the same run of rainy and dry years.",
 "Because their rings are counted by the same method."
 ],
 [
@@ -2152,15 +2152,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nThe ____ student not only arrived late but also interrupted the professor in front of everyone to complain that the lecture was boring.",
 [
-"volcanic",
+"deferential",
 "impudent",
-"herbal",
-"tidal"
+"diligent",
+"reticent"
 ],
 [
 2
 ],
-"늦게 와서 모두 앞에서 교수 말을 끊고 지루하다고 불평했으니 '건방진, 무례한(impudent)'이 맞아요. volcanic(화산의)·herbal(약초의)·tidal(조수의)은 문맥과 관계없어요."
+"늦게 와서 모두 앞에서 교수 말을 끊고 지루하다고 불평했으니 '건방진, 무례한(impudent)'이 맞아요. deferential(공손한)·diligent(성실한)·reticent(말수 적은)는 문맥과 맞지 않아요."
 ],
 [
 2,
@@ -2169,15 +2169,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nAlthough the actor had always treated his colleagues courteously, tabloid writers continued to ____ him with fabricated stories about his temper.",
 [
-"irrigate",
+"exalt",
 "malign",
-"varnish",
-"hatch"
+"pamper",
+"exonerate"
 ],
 [
 2
 ],
-"지어낸 이야기로 성질이 나쁘다고 썼으니 '헐뜯다, 중상하다(malign)'가 맞아요. irrigate(물을 대다)·varnish(니스를 칠하다)·hatch(알을 까다)는 문맥과 관계없어요."
+"지어낸 이야기로 성질이 나쁘다고 썼으니 '헐뜯다, 중상하다(malign)'가 맞아요. exalt(칭송하다)·pamper(떠받들다)·exonerate(무죄를 밝히다)는 문맥과 맞지 않아요."
 ],
 [
 3,
@@ -2186,15 +2186,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nAfter the station aired the story, it was ____ with thousands of letters and calls from viewers demanding a further inquiry.",
 [
-"fermented",
+"deprived",
 "inundated",
-"pickled",
-"pruned"
+"acquainted",
+"replenished"
 ],
 [
 2
 ],
-"편지와 전화가 수천 통 몰려왔으니 '쇄도하다, 넘쳐 나다(be inundated with)'가 맞아요. fermented(발효된)·pickled(절인)·pruned(가지를 친)는 문맥과 관계없어요."
+"편지와 전화가 수천 통 몰려왔으니 '쇄도하다, 넘쳐 나다(be inundated with)'가 맞아요. deprived(빼앗긴)·acquainted(잘 아는)·replenished(다시 채워진)는 문맥과 맞지 않아요."
 ],
 [
 4,
@@ -2203,15 +2203,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nThe ____ old judge could usually discern within minutes which witnesses were truthful, a skill honed over forty years on the bench.",
 [
-"porous",
-"aquatic",
-"lunar",
+"gullible",
+"obtuse",
+"capricious",
 "sagacious"
 ],
 [
 4
 ],
-"몇 분 만에 누가 진실을 말하는지 알아보는 40년 경력의 판사이니 '현명한, 통찰력 있는(sagacious)'이 맞아요. porous(구멍이 많은)·aquatic(물에 사는)·lunar(달의)는 문맥과 관계없어요."
+"몇 분 만에 누가 진실을 말하는지 알아보는 40년 경력의 판사이니 '현명한, 통찰력 있는(sagacious)'이 맞아요. gullible(잘 속는)·obtuse(둔한)·capricious(변덕스러운)는 문맥과 맞지 않아요."
 ],
 [
 5,
@@ -2220,15 +2220,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nHer ____ remarks about her colleagues' work, delivered in nearly every meeting, ultimately made her the least popular manager in the office.",
 [
-"botanical",
-"metallic",
+"laudatory",
+"diffident",
 "censorious",
-"nocturnal"
+"magnanimous"
 ],
 [
 3
 ],
-"동료 일에 대한 말 때문에 가장 인기 없는 관리자가 됐으니 '흠잡기 좋아하는(censorious)' 말이에요. botanical(식물의)·metallic(금속의)·nocturnal(야행성의)은 문맥과 관계없어요."
+"동료 일에 대한 말 때문에 가장 인기 없는 관리자가 됐으니 '흠잡기 좋아하는(censorious)' 말이에요. laudatory(칭찬하는)·diffident(자신 없는)·magnanimous(너그러운)는 문맥과 맞지 않아요."
 ],
 [
 6,
@@ -2238,14 +2238,14 @@ null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nThe referee's mistake was so ____ that even fans of the winning team conceded the decisive goal should never have been allowed.",
 [
 "gregarious",
-"carnivorous",
+"negligible",
 "egregious",
-"subterranean"
+"inconspicuous"
 ],
 [
 3
 ],
-"이긴 팀 팬조차 인정할 만큼 '터무니없이 심한(egregious)' 실수예요. gregarious(사교적인)는 철자만 비슷하고, carnivorous(육식의)·subterranean(지하의)은 문맥과 관계없어요."
+"이긴 팀 팬조차 인정할 만큼 '터무니없이 심한(egregious)' 실수예요. gregarious(사교적인)·negligible(무시해도 될 만한)·inconspicuous(눈에 띄지 않는)는 문맥과 맞지 않아요."
 ],
 [
 7,
@@ -2254,15 +2254,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nThe public's ____ appetite for celebrity gossip keeps dozens of magazines in business, no matter how trivial the stories become.",
 [
-"rectangular",
-"amphibious",
-"geological",
+"waning",
+"fastidious",
+"tepid",
 "insatiable"
 ],
 [
 4
 ],
-"아무리 시시해도 수십 개 잡지가 먹고살 만큼이니 '채워지지 않는, 끝없는(insatiable)' 욕구예요. rectangular(직사각형의)·amphibious(물과 뭍 양쪽의)·geological(지질의)은 문맥과 관계없어요."
+"아무리 시시해도 수십 개 잡지가 먹고살 만큼이니 '채워지지 않는, 끝없는(insatiable)' 욕구예요. waning(줄어드는)·fastidious(까다로운)·tepid(미지근한)는 문맥과 맞지 않아요."
 ],
 [
 8,
@@ -2271,15 +2271,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nUnlike the tempestuous coast to the north, the bay remained ____ throughout the year, making it ideal for novice swimmers and small boats.",
 [
-"edible",
-"lyrical",
-"culinary",
+"turbulent",
+"treacherous",
+"volatile",
 "placid"
 ],
 [
 4
 ],
-"폭풍 치는 북쪽 해안과 달리(Unlike) 초보 수영객에게 알맞았으니 '잔잔한(placid)'이 맞아요. edible(먹을 수 있는)·lyrical(서정적인)·culinary(요리의)는 문맥과 관계없어요."
+"폭풍 치는 북쪽 해안과 달리(Unlike) 초보 수영객에게 알맞았으니 '잔잔한(placid)'이 맞아요. turbulent(거친)·treacherous(위험한)·volatile(변덕스러운)는 문맥과 맞지 않아요."
 ],
 [
 9,
@@ -2290,13 +2290,13 @@ null,
 [
 "extant",
 "extinct",
-"herbivorous",
-"melodious"
+"obsolete",
+"apocryphal"
 ],
 [
 1
 ],
-"나머지는 불에 탔으니 세 부만 '현존하는(extant)' 것이에요. extinct(멸종한)는 철자만 비슷하고, herbivorous(초식의)·melodious(선율이 고운)는 문맥과 관계없어요."
+"나머지는 불에 탔으니 세 부만 '현존하는(extant)' 것이에요. extinct(멸종한)·obsolete(구식인)·apocryphal(진위가 의심스러운)는 문맥과 맞지 않아요."
 ],
 [
 10,
@@ -2305,15 +2305,15 @@ null,
 null,
 "다음 빈칸에 들어갈 가장 알맞은 것을 고르시오.\nPublic opinion on the contentious proposal seemed to ____ wildly from week to week, swinging from enthusiasm to hostility and back again.",
 [
-"embalm",
+"stagnate",
 "oscillate",
-"serenade",
-"upholster"
+"coalesce",
+"plummet"
 ],
 [
 2
 ],
-"열광과 적대 사이를 오갔다고 했으니 '흔들리다, 오락가락하다(oscillate)'가 맞아요. embalm(방부 처리하다)·serenade(세레나데를 부르다)·upholster(덮개를 씌우다)는 문맥과 관계없어요."
+"열광과 적대 사이를 오갔다고 했으니 '흔들리다, 오락가락하다(oscillate)'가 맞아요. stagnate(정체되다)·coalesce(합쳐지다)·plummet(급락하다)는 문맥과 맞지 않아요."
 ],
 [
 11,
@@ -2968,10 +2968,10 @@ null,
 "r3-s1",
 "Why might raising interest rates be an unsatisfactory response to food price shocks?",
 [
-"It may slow the economy without addressing the cause of the price rise.",
+"It can cool demand but cannot remedy a weather-driven shortage.",
 "It makes imported food considerably cheaper for affluent households in rich countries.",
 "It induces farmers to grow less cocoa.",
-"It prolongs droughts."
+"It encourages farmers to switch from cocoa to cheaper crops."
 ],
 [
 1

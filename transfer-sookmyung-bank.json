@@ -1013,14 +1013,14 @@ null,
 [
 "It was the first Korean movie ever streamed on Netflix.",
 "It was based on the drama Squid Game.",
-"It was made by an American studio, though about K-pop.",
+"Although it was about K-pop, it was not made in Korea.",
 "Only Korean musicians and labels produced it.",
 "It premiered only in Seoul movie theaters."
 ],
 [
 3
 ],
-"그 애니메이션은 한국이 아니라 미국 스튜디오가 만들었다는 점을 짚었으니 It was made by an American studio, though about K-pop 이 맞아요. Squid Game 은 2021년 드라마일 뿐이고, 한국 음악인들만 만들었다는 말은 반대예요."
+"그 애니메이션은 한국이 아니라 미국 스튜디오가 만들었다는 점을 짚었으니 Although it was about K-pop, it was not made in Korea 가 맞아요. Squid Game 은 2021년 드라마일 뿐이고, 한국 음악인들만 만들었다는 말은 반대예요."
 ],
 [
 18,
@@ -1074,7 +1074,7 @@ null,
 [
 4
 ],
-"갖고 있다는 것만으로 물건 값을 더 높게 매기는 '소유 효과'와 그것이 무료 체험으로 기업에 돈이 되는 까닭을 다루니 how ownership inflates value, and how firms exploit it 이 맞아요. 무작위로 나눠 줘도 거래는 드물었으니 공정한 거래를 보장한다는 말은 반대예요."
+"갖고 있다는 것만으로 물건 값을 더 높게 매기는 '소유 효과'와 그것이 무료 체험으로 기업에 돈이 되는 까닭을 다루니 how ownership inflates value, and how firms exploit it 이 맞아요. 무작위로 나눠 줬는데도 거래는 드물었으니 잔의 절반이 거래된다는 말은 반대예요."
 ],
 [
 21,
@@ -1302,7 +1302,7 @@ null,
 "Digital images endure forever once created.",
 "The Smithsonian levies fees for images.",
 "Most museums have cut admission fees.",
-"Curators concur originals may then be discarded.",
+"Curators agree that originals may be discarded once scanned.",
 "Digital archives need ongoing funding."
 ],
 [
@@ -1572,8 +1572,8 @@ null,
 "reducing the workload of a smaller staff … giving patients more rest",
 "giving patients more rest … luring more visitors",
 "giving patients more rest … reducing the workload of a smaller staff",
-"giving patients more rest … improving hospital food",
-"giving patients more rest … training new doctors"
+"cutting visitors' parking fees … reducing the workload of a smaller staff",
+"preventing infections … saving money on overtime pay"
 ],
 [
 3
@@ -1590,8 +1590,8 @@ null,
 "share knowledge with developers … generating publicity for new products",
 "promote the company's new products … sharing knowledge with developers",
 "share knowledge with developers … grooming its own staff",
-"share knowledge with developers … rewarding loyal customers",
-"share knowledge with developers … slashing its prices"
+"recruit talented engineers … generating publicity for new products",
+"reward loyal customers … attracting investors"
 ],
 [
 1

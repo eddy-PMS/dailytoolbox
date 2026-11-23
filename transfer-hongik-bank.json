@@ -156,14 +156,14 @@ null,
 "Select the option nearest in meaning to the underlined word.\nThe biography portrays the court painter as <u>sycophantic</u>, forever flattering his royal patrons in letters and portraits alike, though recent scholars argue that such flattery was simply expected of artists at the time.",
 [
 "truculent",
-"combative",
+"insouciant",
 "obsequious",
-"quarrelsome"
+"laconic"
 ],
 [
 3
 ],
-"sycophantic 은 '아첨하는'이라 obsequious(비위를 맞추는)와 가까워요. 후원자에게 늘 아첨했다(flattering)는 뒷말이 단서예요. truculent·combative·quarrelsome 은 모두 '싸우기 좋아하는'이라는 같은 뜻 묶음이고 아첨과는 관계없어요."
+"sycophantic 은 '아첨하는'이라 obsequious(비위를 맞추는)와 가까워요. 후원자에게 늘 아첨했다(flattering)는 뒷말이 단서예요. truculent(호전적인)·insouciant(태평한, 무관심한)·laconic(말수가 적은)은 아첨과 관계없어요."
 ],
 [
 6,
@@ -190,14 +190,14 @@ null,
 "Select the option nearest in meaning to the underlined word.\nThe lecture drew on such <u>recondite</u> sources, including medieval treatises on optics and forgotten manuals of pigment preparation, that even the specialists in the audience struggled to follow every reference.",
 [
 "tawdry",
-"garish",
-"meretricious",
+"perspicuous",
+"ephemeral",
 "abstruse"
 ],
 [
 4
 ],
-"recondite 는 '(잘 알려지지 않아) 난해한'이라 abstruse 와 가까워요. 전문가도 따라가기 힘들었다는 결과가 단서예요. tawdry·garish·meretricious 는 모두 '천박하게 번지르르한'이라는 같은 뜻 묶음이라 난해함과 관계없어요."
+"recondite 는 '(잘 알려지지 않아) 난해한'이라 abstruse 와 가까워요. 전문가도 따라가기 힘들었다는 결과가 단서예요. perspicuous(명료한)는 반대이고, tawdry(싸구려 같은)·ephemeral(덧없는)은 관계없는 낱말이에요."
 ],
 [
 8,
@@ -2040,7 +2040,7 @@ null,
 3,
 "reading",
 "r3-s3",
-"Where should the word not be inserted to make the passage logically consistent?",
+"Where should the word \"not\" be inserted to make the passage logically consistent?",
 [
 "[A]",
 "[B]",

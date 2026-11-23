@@ -1279,7 +1279,7 @@ null,
 null,
 "Select the phrase best suited to the blank in the paragraph.\nBefore 1840, sending a letter in Britain was cumbersome and costly. Charges depended on the distance a letter traveled and the number of sheets it contained, and they were usually paid not by the sender but by the person receiving it, who could simply decline delivery. The schoolmaster and reformer Rowland Hill contended that a single cheap rate paid in advance would spur far more people to write. His proposal was adopted, and in May 1840 Britain issued the Penny Black, the world's first adhesive postage stamp. Within a few years the number of letters sent had soared, showing that ____.",
 [
-"low, simple rates spur demand",
+"low, simple rates boost demand",
 "people liked paying on delivery",
 "few people cared to write letters",
 "distance is the fairest basis for fees"
@@ -1858,9 +1858,9 @@ null,
 "Find the option that completes the paragraph most logically.",
 [
 "with simple rules and no computers",
-"only if every worker holds a degree",
-"only when deliveries go by private car",
-"only with sophisticated tracking software"
+"if every worker holds a degree",
+"through a fleet of private delivery vans",
+"with sophisticated tracking software"
 ],
 [
 1

@@ -46,7 +46,7 @@
 },
 {
 "id": "r1-p32",
-"text": "Bluetooth is so common that we seldom ask where its odd name originated. In 1997, engineers from several rival firms were collaborating on a short-range radio link that would let phones and computers exchange data without cables. One of them, Jim Kardach of Intel, had been reading a historical novel about the Vikings. He suggested naming the project after Harald Bluetooth, a tenth-century king who had united the Danish tribes. The technology, he argued, would likewise unite competing industries. The name was intended only as a temporary code name, and marketers preferred a blander label. That label, however, could not be registered as a trademark in time. Still, it was the king's nickname that ended up on billions of devices."
+"text": "Bluetooth is so common that we seldom ask where its odd name originated. In 1997, engineers from several rival firms were collaborating on a short-range radio link that would let phones and computers exchange data without cables. One of them, Jim Kardach of Intel, had been reading a historical novel about the Vikings. He suggested naming the project after Harald Bluetooth, a tenth-century king who had united the Danish tribes. The technology, he argued, would likewise unite competing industries. The name was intended only as a temporary code name, and marketers preferred a blander label. That label, however, could not be registered as a trademark in time. As a result, it was the king's nickname that ended up on billions of devices."
 },
 {
 "id": "r1-p33",
@@ -1610,7 +1610,7 @@ null,
 3,
 "dialogue",
 null,
-"Choose the word that most appropriately completes the dialogue.\nA: So you still can't decide about the job in the Singapore office?\nB: No, I'm still ____. The salary is great, and I'd hate to leave my family.",
+"Choose the word that most appropriately completes the dialogue.\nA: So you still can't decide about the job in the Singapore office?\nB: No, I'm still ____. The salary is great, but I'd hate to leave my family.",
 [
 "splintering",
 "curling",

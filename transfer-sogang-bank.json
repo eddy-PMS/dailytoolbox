@@ -1053,8 +1053,8 @@ null,
 "r2-s5",
 "Which of the following is true according to the passage?",
 [
-"Such visa holders usually must prove income earned locally.",
-"Such visa holders rarely need to prove income earned abroad.",
+"Such visa holders must find a local employer before arriving.",
+"Such visas usually allow a stay of only a few weeks.",
 "Japan introduced the first digital nomad visa.",
 "Such visa holders usually must prove income earned abroad.",
 "Lisbon residents have welcomed rising rents."
@@ -1062,7 +1062,7 @@ null,
 [
 4
 ],
-"보통 해외에서 일정 기준 넘는 꾸준한 소득을 보여야 머물 수 있다고 했어요. '현지에서 번 소득'이나 '증명할 필요가 거의 없다'로 한 곳만 바꾼 문장은 글과 달라요. 가장 먼저 연 곳은 에스토니아(2020)이고, 리스본 주민은 집세 상승에 불만이라고 했어요."
+"보통 해외에서 일정 기준 넘는 꾸준한 소득을 보여야 머물 수 있다고 했어요. 현지 고용주를 먼저 구해야 한다거나 몇 주만 머물 수 있다는 말은 글(해외 소득, 1년 이상 체류)과 달라요. 가장 먼저 연 곳은 에스토니아(2020)이고, 리스본 주민은 집세 상승에 불만이라고 했어요."
 ],
 [
 22,
@@ -1162,15 +1162,15 @@ null,
 "Which of the following is true according to the passage?",
 [
 "Google argued that users choose its engine on merit.",
-"Google argued that users choose its engine because of defaults.",
-"Google argued that users rarely choose its engine on merit.",
+"The court held that a free product cannot harm competition.",
+"Google stopped paying for default placement before the trial.",
 "Rival search companies brought the case.",
 "The judge found users often change default settings."
 ],
 [
 1
 ],
-"구글은 사람들이 강요 때문이 아니라 가장 좋아서 쓴다고 주장했어요. '기본값 때문에' 또는 '좀처럼 ~하지 않는다'로 한 곳만 바꾼 문장은 구글의 주장과 반대예요. 소송은 법무부와 여러 주가 냈고, 법원은 대부분 사용자가 설정을 바꾸지 않는다고 봤어요."
+"구글은 사람들이 강요 때문이 아니라 가장 좋아서 쓴다고 주장했어요. 글은 무료 제품도 경쟁을 해칠 수 있다는 새 시각을 소개했고, 구글이 재판 전에 기본값 대가 지급을 멈췄다는 말은 없어요. 소송은 법무부와 여러 주가 냈고, 법원은 대부분 사용자가 설정을 바꾸지 않는다고 봤어요."
 ],
 [
 28,
@@ -1395,8 +1395,8 @@ null,
 "r3-s1",
 "Which of the following is true according to the passage?",
 [
-"Ibn Battuta's medical training helped him find work abroad.",
-"Ibn Battuta's legal training helped him find work only in Morocco.",
+"He returned home after about eighteen months.",
+"The sultan of Delhi refused to give him any post.",
 "Ibn Battuta's legal training helped him find work abroad.",
 "He planned to travel for twenty-five years.",
 "Historians trust every detail of the Rihla."
@@ -1404,7 +1404,7 @@ null,
 [
 3
 ],
-"법관 교육을 받아서 이슬람법이 쓰이는 곳이면 어디서든 일자리를 얻었고 델리·몰디브에서 법관을 지냈다고 했어요. '의학 교육'이나 '모로코에서만'으로 한 곳만 바꾼 문장은 글과 달라요. 처음엔 1년 반쯤 예정이었고, 역사가들은 일부 세부를 조심스럽게 본다고 했어요."
+"법관 교육을 받아서 이슬람법이 쓰이는 곳이면 어디서든 일자리를 얻었고 델리·몰디브에서 법관을 지냈다고 했어요. 1년 반 만에 돌아왔다거나 델리 술탄이 일을 주지 않았다는 말은 글(25년 가까이 여행, 델리에서 법관 임명)과 달라요. 처음엔 1년 반쯤 예정이었고, 역사가들은 일부 세부를 조심스럽게 본다고 했어요."
 ],
 [
 11,
@@ -1684,15 +1684,15 @@ null,
 "Which of the following is true according to the passage?",
 [
 "A faulty update, not hackers, caused the crashes.",
-"A faulty cable, not hackers, caused the crashes.",
-"A faulty Microsoft update, not hackers, caused the crashes.",
+"Hospitals were unaffected by the outage.",
+"Most machines were repaired remotely within minutes.",
 "The update was withdrawn only after weeks.",
 "Only a few hundred computers were affected."
 ],
 [
 1
 ],
-"원인은 사이버 공격이 아니라 보안 회사(크라우드스트라이크)의 잘못된 업데이트였다고 했어요. '케이블'이나 '마이크로소프트의 업데이트'로 한 곳만 바꾼 문장은 글과 달라요. 업데이트는 한 시간 반쯤 만에 거둬들였고, 약 850만 대가 피해를 입었어요."
+"원인은 사이버 공격이 아니라 보안 회사(크라우드스트라이크)의 잘못된 업데이트였다고 했어요. 병원은 수술을 미뤘고, 기계는 하나씩, 때로 직접 가서 고쳐야 했으니 두 문장은 글과 달라요. 업데이트는 한 시간 반쯤 만에 거둬들였고, 약 850만 대가 피해를 입었어요."
 ],
 [
 27,
@@ -1719,16 +1719,16 @@ null,
 "r3-s8",
 "Which of the following is true according to the passage?",
 [
-"Galland met Hanna Diyab in Aleppo in 1709.",
+"Galland's main source was a complete Egyptian manuscript.",
 "Galland met Hanna Diyab in Paris in 1709.",
-"Galland met Hanna Diyab in Paris in 1704.",
+"Diyab's role was widely celebrated soon after 1709.",
 "French readers paid little attention to Galland's translation.",
 "Diyab was a Muslim scholar who lived in Cairo."
 ],
 [
 2
 ],
-"갈랑은 1709년 파리에 와 있던 알레포 출신 디야브를 만났다고 했어요. 만난 곳을 '알레포'로, 해를 번역이 나오기 시작한 '1704년'으로 한 곳만 바꾼 문장은 글과 달라요. 번역은 곧바로 큰 인기를 끌었고, 디야브는 마론파 그리스도교인이에요."
+"갈랑은 1709년 파리에 와 있던 알레포 출신 디야브를 만났다고 했어요. 갈랑의 주 원본은 중간에 끊긴 시리아 사본이었고, 디야브의 몫은 거의 3세기 동안 잊혔다고 했어요. 번역은 곧바로 큰 인기를 끌었고, 디야브는 마론파 그리스도교인이에요."
 ],
 [
 29,

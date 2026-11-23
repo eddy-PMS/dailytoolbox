@@ -257,7 +257,7 @@
 },
 {
 "id": "r3-s12",
-"text": "[가] Only when archaeologists examined the equipment found beside him did the (A) ____ of the discovery become clear. He was equipped with a copper-bladed axe, a bow and arrows, and a container made of birch bark, and radiocarbon dating later showed that he had died some 5,300 years ago. The ice had conserved not only his body but his clothing, his tools, and even the contents of his stomach.\n[나] Since that revelation he has become arguably the most meticulously studied human body in the world. Analyses of his teeth, bones, and genome have illuminated his diet, his ailments, and his ancestry, and his skin bears more than sixty tattoos. Each novel technique seems to yield fresh information, and scientists expect that he will continue to (B) ____ his secrets for decades to come.\n[다] The most sensational revelation came a decade later. In 2001 an X-ray revealed a stone arrowhead lodged in his left shoulder, a wound that had probably severed an artery. The Iceman, as he came to be known, had not succumbed to cold or exhaustion, as researchers had long supposed, but had been killed.\n[라] In September 1991 two German hikers walking in the Alps near the border between Austria and Italy noticed a brownish shape protruding from the thawing glacier. They assumed they had stumbled upon the body of an unlucky mountaineer, and the first recovery team, sharing that assumption, damaged the corpse while hacking it free with a pneumatic drill and ice axes."
+"text": "[가] Only when archaeologists examined the equipment found beside him did the (A) ____ of the discovery become clear. He was equipped with a copper-bladed axe, a bow and arrows, and a container made of birch bark, and radiocarbon dating later showed that he had died some 5,300 years ago. The ice had conserved not only his body but his clothing, his tools, and even the contents of his stomach.\n[나] Since the arrowhead came to light, he has become arguably the most meticulously studied human body in the world. Analyses of his teeth, bones, and genome have illuminated his diet, his ailments, and his ancestry, and his skin bears more than sixty tattoos. Each novel technique seems to yield fresh information, and scientists expect that he will continue to (B) ____ his secrets for decades to come.\n[다] The most sensational revelation came a decade later. In 2001 an X-ray revealed a stone arrowhead lodged in his left shoulder, a wound that had probably severed an artery. The Iceman, as he came to be known, had not succumbed to cold or exhaustion, as researchers had long supposed, but had been killed.\n[라] In September 1991 two German hikers walking in the Alps near the border between Austria and Italy noticed a brownish shape protruding from the thawing glacier. They assumed they had stumbled upon the body of an unlucky mountaineer, and the first recovery team, sharing that assumption, damaged the corpse while hacking it free with a pneumatic drill and ice axes."
 }
 ],
 "q": [
@@ -1789,7 +1789,7 @@ null,
 [
 4
 ],
-"1991년 등산객이 얼음 속 시신을 발견한 [라]가 처음이에요. [가]의 Only when archaeologists examined 가 처음의 오해를 바로잡으며 연대를 밝히고, [다]의 a decade later(2001년)가 화살촉 발견을 잇고, [나]의 Since that revelation 이 그 뒤의 연구로 맺어요."
+"1991년 등산객이 얼음 속 시신을 발견한 [라]가 처음이에요. [가]의 Only when archaeologists examined 가 처음의 오해를 바로잡으며 연대를 밝히고, [다]의 a decade later(2001년)가 화살촉 발견을 잇고, [나]의 Since the arrowhead came to light 가 화살촉 발견 뒤의 연구로 맺어요."
 ]
 ]
 }

@@ -216,7 +216,7 @@
 },
 {
 "id": "r3-s12",
-"text": "Few aspects of schooling foment as much domestic strife as homework. Parents complain that it consumes family evenings; teachers worry that without it students will not practice enough; and students, for their part, rarely need persuading that there is too much of it. Surprisingly, the research evidence on its benefits is more equivocal than either its champions or its detractors tend to concede. As a parent, I have witnessed many such evenings at our own kitchen table.\nThe most influential reviews of the subject, conducted by the American psychologist Harris Cooper and his colleagues, found that the relationship between homework and achievement depends heavily on age. Among secondary school students, those who did more homework generally performed better on tests and in their grades, although the benefit appeared to level off beyond a certain amount. Among elementary school children, by contrast, the association was weak or negligible. Cooper has suggested a rough guideline of about ten minutes per night for each grade level (so that a child in the third grade would do about half an hour).\nInterpreting such correlations is notoriously fraught. Students who do more homework may differ from their peers in motivation, parental support, or prior achievement, and struggling students may spend longer on assignments precisely because they find them hard. The quality of assignments matters too — tasks that ask students to practice skills already taught, or to apply them in unfamiliar contexts, appear more useful than busywork assigned out of habit.\nAdvocates of homework for young children argue that its value lies less in immediate academic gains than in cultivating habits such as time management and self-discipline, and in giving parents a window into what their children are learning. Skeptics retort that these benefits are largely unsubstantiated and that excessive assignments can breed rancor toward learning itself. The emerging consensus favors moderation — shorter, purposeful assignments in the early grades and more substantial work as students mature."
+"text": "Few aspects of schooling foment as much domestic strife as homework. Parents complain that it consumes family evenings; teachers worry that without it students will not practice enough; and students, for their part, rarely need persuading that there is too much of it. Surprisingly, the research evidence on its benefits is more equivocal than either its champions or its detractors tend to concede. As a parent, I have seen many evenings consumed this way at our own kitchen table.\nThe most influential reviews of the subject, conducted by the American psychologist Harris Cooper and his colleagues, found that the relationship between homework and achievement depends heavily on age. Among secondary school students, those who did more homework generally performed better on tests and in their grades, although the benefit appeared to level off beyond a certain amount. Among elementary school children, by contrast, the association was weak or negligible. Cooper has suggested a rough guideline of about ten minutes per night for each grade level (so that a child in the third grade would do about half an hour).\nInterpreting such correlations is notoriously fraught. Students who do more homework may differ from their peers in motivation, parental support, or prior achievement, and struggling students may spend longer on assignments precisely because they find them hard. The quality of assignments matters too — tasks that ask students to practice skills already taught, or to apply them in unfamiliar contexts, appear more useful than busywork assigned out of habit.\nAdvocates of homework for young children argue that its value lies less in immediate academic gains than in cultivating habits such as time management and self-discipline, and in giving parents a window into what their children are learning. Skeptics retort that these benefits are largely unsubstantiated and that excessive assignments can breed rancor toward learning itself. The emerging consensus favors moderation — shorter, purposeful assignments in the early grades and more substantial work as students mature."
 },
 {
 "id": "r3-s13",
@@ -2278,7 +2278,7 @@ null,
 "It would construct subterranean garages for residents.",
 "It would install floodgates in every apartment.",
 "It would phase out semi-basement dwellings as homes.",
-"It would relocate its drainage tunnels to Tokyo's model."
+"It would redesign its drainage tunnels on Tokyo's model."
 ],
 [
 3
@@ -2412,8 +2412,8 @@ null,
 "What is the passage mainly about?",
 [
 "the childhood ordeals that inspired Dickens's characters",
-"the decline of the three-volume novel in the twentieth century",
-"the similarities between novels and modern television",
+"the way the high price of three-volume novels limited their readership in Victorian England",
+"the way modern television borrowed the structure of Victorian novels",
 "the way serial publication shaped Victorian novels and how they were read"
 ],
 [
@@ -2718,7 +2718,7 @@ null,
 "Which of the following can be inferred from the passage?",
 [
 "Changes in the urban environment can influence how bird songs develop.",
-"White-crowned sparrows are unable to learn a new dialect later.",
+"White-crowned sparrows sing the same song throughout North America.",
 "All animals with complex songs are capable of vocal learning.",
 "Birds raised in isolation still sing their parents' dialect."
 ],

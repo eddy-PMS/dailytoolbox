@@ -7,7 +7,7 @@ const $=id=>document.getElementById(id);
 const CIRC=['①','②','③','④','⑤'];
 // 기록은 회차별로 따로: tf_last_<학교>_r<회차>. 문항 id 는 회차 안에서만 겹치지 않는다
 const ev=(name,p)=>{ if(typeof gtag==='function') gtag('event','tf_'+name,Object.assign({school:C.school,round:ROUND},p)); };
-let BANK=null, SEC={}, PSG={}, LIMIT=0, ROUNDS=[], ROUND=1, POINTS=null, PENALTY=0;
+let T0=0, BANK=null, SEC={}, PSG={}, LIMIT=0, ROUNDS=[], ROUND=1, POINTS=null, PENALTY=0;
 // 문항별 배점(데이터 최상위 points:[[시작id,끝id,점수],…])이 있으면 끝 화면 점수를 배점 합으로
 const fr=v=>({0.25:'1/4',0.5:'1/2',0.2:'1/5',0.3333:'1/3'})[v]||`${Math.round(v*100)}%`;
 const ptOf=q=>{ if(!POINTS) return 1; const r=POINTS.find(([a,b])=>q[0]>=a&&q[0]<=b); return r? r[2] : 0; };
@@ -18,6 +18,10 @@ const show=(id,on)=>{ const e=$(id); if(e) e.classList.toggle('hidden',!on); };
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 const rich=s=>esc(s).replace(/&lt;u&gt;([\s\S]*?)&lt;\/u&gt;/g,'<u>$1</u>');
 const plain=s=>String(s).replace(/<\/?u>/g,'');
+// 낱말 상자(보기 20개): 번호 대신 (A)~(T), 지문 id 가 -box 로 끝나면 상자를 격자로 그린다
+const lab=(q,i)=> q[5].length>5? String.fromCharCode(65+i) : CIRC[i];
+const isBoxP=pid=>/-box$/.test(String(pid));
+const boxHtml=t=>{ const m=[...String(t).matchAll(/\(([A-T])\)\s*([^()]+?)(?=\s*\([A-T]\)|\s*$)/g)]; return m.length? '<div class="boxgrid">'+m.map(x=>'<span><b>'+x[1]+'</b> '+esc(x[2].trim())+'</span>').join('')+'</div>' : paras(t); };
 const paras=s=>String(s).split(/\n+/).map(p=>'<p>'+rich(p)+'</p>').join('');
 function store(){ try{ return JSON.parse(localStorage.getItem(storeKey()))||null; }catch(e){ return null; } }
 function save(v){ try{ localStorage.setItem(storeKey(),JSON.stringify(v)); }catch(e){} }
@@ -26,8 +30,8 @@ function load(){
   $('startExam').disabled=true; $('startPrac').disabled=true; $('loadmsg').textContent='문제를 불러오는 중이에요…';
   fetch(C.bank).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }).then(d=>{
     BANK=d.q; SEC={}; d.sections.forEach(s=>{ SEC[s.id]=s.name; }); PSG={}; (d.passages||[]).forEach(p=>{ PSG[p.id]=p.text; });
-    LIMIT=Number(d.minutes)*60; POINTS=Array.isArray(d.points)&&d.points.length? d.points : null; PENALTY=Number(d.penalty)>0&&Number(d.penalty)<1? Number(d.penalty) : 0;
-    const rn=$('rulenote'); if(rn){ rn.textContent= PENALTY? `실전 모드는 이 학교 방식대로 틀린 문항마다 그 문항 배점의 ${fr(PENALTY)}을 빼요(답하지 않은 문항은 0점). 한 문제씩 풀기는 감점하지 않아요.` : ''; show('rulenote',!!PENALTY); } ROUNDS=[...new Set(BANK.map(q=>q[1]))].sort((a,b)=>a-b);
+    /* 시험 시간이 없는 학교(minutes null)는 시간 제한 없이 풀고 걸린 시간만 보여 준다 */ LIMIT=Number(d.minutes)>0? Number(d.minutes)*60 : 0; POINTS=Array.isArray(d.points)&&d.points.length? d.points : null; PENALTY=Number(d.penalty)>0&&Number(d.penalty)<1? Number(d.penalty) : 0;
+    const rn=$('rulenote'); if(rn){ rn.textContent=(PENALTY? `실전 모드는 이 학교 방식대로 틀린 문항마다 그 문항 배점의 ${fr(PENALTY)}을 빼요(답하지 않은 문항은 0점). 한 문제씩 풀기는 감점하지 않아요. ` : '')+(LIMIT? '' : `${C.name||'이 학교'} 문제지에는 시험 시간이 적혀 있지 않아 시간 제한 없이 풀어요. 실전 모드는 끝나면 걸린 시간을 보여 줘요.`); show('rulenote',!!PENALTY||!LIMIT); } ROUNDS=[...new Set(BANK.map(q=>q[1]))].sort((a,b)=>a-b);
     if(!ROUNDS.includes(ROUND)) ROUND=ROUNDS[0];
     const rs=$('rounds'); rs.textContent='';
     ROUNDS.forEach(r=>{ const b=document.createElement('button'); b.type='button'; b.textContent=r+'회'; b.dataset.r=r; b.setAttribute('aria-pressed',r===ROUND?'true':'false'); if(r===ROUND) b.classList.add('on');
@@ -37,7 +41,7 @@ function load(){
   }).catch(()=>{ $('loadmsg').textContent='문제를 불러오지 못했어요. 네트워크를 확인하고 다시 시도해 주세요.'; show('retry',true); });
 }
 const roundQs=()=>BANK.filter(q=>q[1]===ROUND);
-function label(){ $('startExam').textContent=`${ROUNDS.length>1?ROUND+'회 ':''}실전 모드 (${roundQs().length}문항 · ${LIMIT/60}분)`; $('startPrac').textContent=`${ROUNDS.length>1?ROUND+'회 ':''}한 문제씩 풀기`; }
+function label(){ $('startExam').textContent=`${ROUNDS.length>1?ROUND+'회 ':''}실전 모드 (${roundQs().length}문항 · ${LIMIT? LIMIT/60+'분' : '시간 제한 없음'})`; $('startPrac').textContent=`${ROUNDS.length>1?ROUND+'회 ':''}한 문제씩 풀기`; }
 // 이 기기에 남은 지난번 틀린 문제
 function lastBox(){
   const L=store(), b=$('lastwrap'); b.textContent=''; if(!L||!BANK) return;
@@ -48,7 +52,8 @@ function lastBox(){
 
 function startExam(){
   set=roundQs(); mode='exam'; idx=0; ans={}; marks={}; begin();
-  left=LIMIT; tick(); clearInterval(timer); timer=setInterval(()=>{ left--; tick(); if(left<=0){ clearInterval(timer); finishExam(true); } },1000);
+  T0=Date.now(); clearInterval(timer);
+  if(LIMIT){ left=LIMIT; tick(); timer=setInterval(()=>{ left--; tick(); if(left<=0){ clearInterval(timer); finishExam(true); } },1000); }
   ev('started',{mode:'exam'});
 }
 function startPrac(list,retry){
@@ -58,7 +63,7 @@ function startPrac(list,retry){
 }
 function begin(){
   show('setup',false); show('result',false); show('quiz',true);
-  show('timer',mode==='exam'); show('sheetwrap',mode==='exam'); show('prev',mode==='exam'); show('submit',mode==='exam'); show('mark',mode==='exam'); show('check',mode==='prac');
+  show('timer',mode==='exam'&&LIMIT>0); show('sheetwrap',mode==='exam'); show('prev',mode==='exam'); show('submit',mode==='exam'); show('mark',mode==='exam'); show('check',mode==='prac');
   render(); $('quiz').scrollIntoView({block:'start'});
 }
 function tick(){ const h=Math.floor(left/3600), m=Math.floor(left%3600/60), s=left%60; $('timer').textContent=`남은 시간 ${h?h+':'+String(m).padStart(2,'0'):m}:${String(s).padStart(2,'0')}`; $('timer').classList.toggle('low',left<=300); }
@@ -68,15 +73,16 @@ function render(){
   $('qbar').style.width=(idx/set.length*100)+'%';
   const pid=q[3], ps=$('psg');
   if(pid && PSG[pid]!=null){
-    const same=set.filter(x=>x[3]===pid), first=set.indexOf(same[0])+1, last=set.indexOf(same[same.length-1])+1;
-    $('psglb').textContent= same.length>1? `[${first}~${last}] 다음 글을 읽고 물음에 답하세요.` : `[${first}] 다음 글을 읽고 물음에 답하세요.`;
-    $('psgtx').innerHTML=paras(PSG[pid]); ps.classList.remove('hidden'); $('qwrap').classList.add('two');
+    const same=set.filter(x=>x[3]===pid), first=set.indexOf(same[0])+1, last=set.indexOf(same[same.length-1])+1, rng= same.length>1? `[${first}~${last}]` : `[${first}]`;
+    const isBox=isBoxP(pid);
+    $('psglb').textContent= isBox? `${rng} 아래 상자에서 빈칸에 알맞은 낱말을 고르세요.` : `${rng} 다음 글을 읽고 물음에 답하세요.`;
+    $('psgtx').innerHTML= isBox? boxHtml(PSG[pid]) : paras(PSG[pid]); ps.classList.remove('hidden'); $('qwrap').classList.toggle('two',!isBox);
   } else { ps.classList.add('hidden'); $('qwrap').classList.remove('two'); }
   $('qtext').innerHTML=rich(q[4]);
-  const box=$('opts'); box.textContent='';
+  const box=$('opts'); box.textContent=''; box.classList.toggle('many',q[5].length>5);
   q[5].forEach((t,i)=>{
     const b=document.createElement('button'); b.type='button'; b.className='opt'; b.dataset.i=i+1;
-    const no=document.createElement('span'); no.className='no'; no.textContent=i+1;
+    const no=document.createElement('span'); no.className='no'; no.textContent= q[5].length>5? lab(q,i) : i+1;
     const tx=document.createElement('span'); tx.innerHTML=rich(t);
     b.appendChild(no); b.appendChild(tx); b.addEventListener('click',()=>pick(i+1)); box.appendChild(b);
   });
@@ -100,7 +106,7 @@ function check(){
   ev('answer',answerEv(q,ok,'practice'));
   document.querySelectorAll('#opts .opt').forEach(b=>{ const i=+b.dataset.i; b.disabled=true; b.classList.remove('sel'); if(i===a) b.classList.add('right'); else if(i===ans[idx]) b.classList.add('wrong'); });
   const e=$('expl'); e.textContent='';
-  const h=document.createElement('b'); h.className=ok?'ok':'no'; h.textContent=(ok?'맞았어요. ':'틀렸어요. ')+'정답 '+CIRC[a-1];
+  const h=document.createElement('b'); h.className=ok?'ok':'no'; h.textContent=(ok?'맞았어요. ':'틀렸어요. ')+'정답 '+lab(q,a-1);
   const p=document.createElement('div'); p.style.marginTop='6px'; p.textContent='해설: '+q[7];
   e.appendChild(h); e.appendChild(p); show('expl',true);
   show('check',false); show('next',true); $('next').disabled=false; $('next').textContent= idx+1<set.length? '다음 문제' : '결과 보기';
@@ -123,8 +129,8 @@ function reviewList(list, into){
   list.forEach(({q,mine})=>{ const d=document.createElement('details'); const s=document.createElement('summary'); s.textContent=`${SEC[q[2]]||''} · ${plain(q[4])}`;
     d.appendChild(s);
     if(q[3] && PSG[q[3]]!=null){ const pd=document.createElement('details'); pd.className='rpsg'; const ps=document.createElement('summary'); ps.textContent='지문 보기'; const pt=document.createElement('div'); pt.className='psgtx'; pt.innerHTML=paras(PSG[q[3]]); pd.appendChild(ps); pd.appendChild(pt); d.appendChild(pd); }
-    if(mine!==undefined){ const p0=document.createElement('p'); p0.textContent= mine? '내 답: '+CIRC[mine-1]+' '+plain(q[5][mine-1]) : '내 답: 고르지 않음'; d.appendChild(p0); }
-    const a=document.createElement('p'); a.textContent='정답: '+CIRC[q[6][0]-1]+' '+plain(q[5][q[6][0]-1]);
+    if(mine!==undefined){ const p0=document.createElement('p'); p0.textContent= mine? '내 답: '+lab(q,mine-1)+' '+plain(q[5][mine-1]) : '내 답: 고르지 않음'; d.appendChild(p0); }
+    const a=document.createElement('p'); a.textContent='정답: '+lab(q,q[6][0]-1)+' '+plain(q[5][q[6][0]-1]);
     const e=document.createElement('p'); e.textContent='해설: '+q[7];
     d.appendChild(a); d.appendChild(e); rv.appendChild(d); });
   into.appendChild(rv);
@@ -139,6 +145,7 @@ function finishExam(timeout){
   const got=Math.max(0,Math.round((raw-minus)*100)/100);
   const score= POINTS? got : Math.round(got/set.length*1000)/10; const r=$('result'); r.textContent='';
   if(timeout){ const n=document.createElement('p'); n.className='note'; n.textContent=`${LIMIT/60}분이 지나 자동으로 채점했어요.`; r.appendChild(n); }
+  if(!LIMIT){ const sec=Math.round((Date.now()-T0)/1000), n=document.createElement('p'); n.className='note'; n.textContent=`걸린 시간 ${Math.floor(sec/60)}분 ${sec%60}초`; r.appendChild(n); }
   const big=document.createElement('div'); big.className='big-result'; big.textContent=`${set.length}문항 중 ${cnt}문항 맞았어요`;
   const sm=document.createElement('small'); sm.textContent=(POINTS? `(배점 합 ${got}점 / ${full}점` : `(100점 환산 ${score}점`)+(PENALTY? (POINTS? ` · 오답 감점 ${Math.round(minus*100)/100}점 반영)` : ' · 오답 감점 반영)') : ')'); big.appendChild(sm); r.appendChild(big);
   r.appendChild(secBars(set,q=>ans[set.indexOf(q)]===q[6][0]));

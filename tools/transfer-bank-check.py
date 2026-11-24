@@ -43,7 +43,7 @@ def check(path):
             if pid in last_p and last_p[pid] != n - 1:
                 err.append(f'{tag}: 지문 {pid} 문항이 떨어져 있음')
             last_p[pid] = n
-        if not (4 <= len(opts) <= 5) or any(not str(o).strip() for o in opts):
+        if not (4 <= len(opts) <= 5 or (sec == 'wordbox' and len(opts) == 20)) or any(not str(o).strip() for o in opts):
             err.append(f'{tag}: 보기 {len(opts)}개 또는 빈 보기')
         if len(ans) != 1 or not (1 <= ans[0] <= len(opts)):
             err.append(f'{tag}: 정답이 1개가 아니거나 범위 밖 {ans}')

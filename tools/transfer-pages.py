@@ -52,7 +52,7 @@ def page(c):
     sibs = ('<div class="sibs"><div class="lb">공부·어학 도구 더 보기</div><div class="chips">' + ''.join(chip(f, t) for f, t in SIBS)
             + '<a class="more" href="/#공부·어학">전체 보기 →</a></div></div>')
     ic = f'/icons/transfer-{s}.webp' if os.path.isfile(os.path.join(ROOT, 'icons', f'transfer-{s}.webp')) else '/icons/cat-study.webp'
-    tf = json.dumps({"school": s, "bank": f"/transfer-{s}-bank.json", "fb": f"tf-{s}"}, ensure_ascii=False)
+    tf = json.dumps({"school": s, "name": name, "bank": f"/transfer-{s}-bank.json", "fb": f"tf-{s}"}, ensure_ascii=False)
     sub = f'{name} 편입영어 {c["years"]}학년도 기출 유형을 분석해 새로 만든 문제 {c.get("rounds_label", "3회분")}으로, 영역별 점수와 틀린 문제 해설을 바로 확인해요.'
     note = (f'이 문제는 {name} 편입영어 {c["years"]}학년도 기출의 출제 유형(문항 수·영역·문제 꼴)을 분석해 새로 만든 연습 문제예요. '
             f'실제 기출 문제가 아니며, 시험 정보는 {univ} 입학처 모집요강이 기준이에요(확인일 {c["checked"]}).')

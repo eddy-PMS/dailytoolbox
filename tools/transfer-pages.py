@@ -53,6 +53,7 @@ def page(c):
             + '<a class="more" href="/#공부·어학">전체 보기 →</a></div></div>')
     ic = f'/icons/transfer-{s}.webp' if os.path.isfile(os.path.join(ROOT, 'icons', f'transfer-{s}.webp')) else '/icons/cat-study.webp'
     tf = json.dumps({"school": s, "name": name, "bank": f"/transfer-{s}-bank.json", "fb": f"tf-{s}"}, ensure_ascii=False)
+    setup_note = c.get('setup_note', '실전 모드는 시험 시간이 지나면 자동으로 채점하고, 끝에 맞은 수·영역별 정답률·틀린 문제 해설을 보여 줘요. 한 문제씩 풀기는 고르자마자 정답과 해설을 확인해요. 독해는 지문 하나에 문항이 여러 개 이어져요.')
     sub = f'{name} 편입영어 {c["years"]}학년도 기출 유형을 분석해 새로 만든 문제 {c.get("rounds_label", "3회분")}으로, 영역별 점수와 틀린 문제 해설을 바로 확인해요.'
     note = (f'이 문제는 {name} 편입영어 {c["years"]}학년도 기출의 출제 유형(문항 수·영역·문제 꼴)을 분석해 새로 만든 연습 문제예요. '
             f'실제 기출 문제가 아니며, 시험 정보는 {univ} 입학처 모집요강이 기준이에요(확인일 {c["checked"]}).')
@@ -112,7 +113,7 @@ def page(c):
     <div class="btn-row"><button class="btn-ghost hidden" id="retry" type="button">다시 시도</button></div>
     <p class="note hidden" id="rulenote"></p>
     <div id="lastwrap"></div>
-    <p class="note">실전 모드는 시험 시간이 지나면 자동으로 채점하고, 끝에 맞은 수·영역별 정답률·틀린 문제 해설을 보여 줘요. 한 문제씩 풀기는 고르자마자 정답과 해설을 확인해요. 독해는 지문 하나에 문항이 여러 개 이어져요.</p>
+    <p class="note">{setup_note}</p>
   </div>
   <div class="card hidden" id="quiz">
     <div class="qhead"><span id="qno"></span><span class="timer" id="timer"></span></div>

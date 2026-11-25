@@ -1,0 +1,5267 @@
+{
+ "exam": "teps",
+ "title": "텝스 모의고사 (어휘·문법·독해)",
+ "source": "텝스 공개 문제(2018~2026)의 출제 유형(파트·문항 수·문제 꼴, VocabFactory 분석)을 분석해 dailyfreetoolbox 가 새로 만든 연습 문제",
+ "checked": "2026-11-25",
+ "minutes": {
+  "all": 65,
+  "vg": 25,
+  "r": 40
+ },
+ "sections": [
+  {
+   "id": "v1",
+   "area": "어휘",
+   "name": "어휘 Part I 대화 빈칸"
+  },
+  {
+   "id": "v2",
+   "area": "어휘",
+   "name": "어휘 Part II 문장 빈칸"
+  },
+  {
+   "id": "g1",
+   "area": "문법",
+   "name": "문법 Part I 대화 빈칸"
+  },
+  {
+   "id": "g2",
+   "area": "문법",
+   "name": "문법 Part II 문장 빈칸"
+  },
+  {
+   "id": "g3",
+   "area": "문법",
+   "name": "문법 Part III 틀린 곳 고르기"
+  },
+  {
+   "id": "r1",
+   "area": "독해",
+   "name": "독해 Part I 지문 빈칸"
+  },
+  {
+   "id": "r2",
+   "area": "독해",
+   "name": "독해 Part II 흐름에 맞지 않는 문장"
+  },
+  {
+   "id": "r3",
+   "area": "독해",
+   "name": "독해 Part III 1지문 1문항"
+  },
+  {
+   "id": "r4",
+   "area": "독해",
+   "name": "독해 Part IV 1지문 2문항"
+  }
+ ],
+ "passages": [
+  {
+   "id": "r1-p61",
+   "text": "New to yoga or coming back after a long break? Willow Lane Yoga, the small studio above the corner bakery on Hart Street, is opening its doors to the neighborhood this month. Our classes are capped at twelve people, so instructors can give every student personal attention, and mats and blocks are provided free of charge. Morning, lunchtime, and evening sessions fit around any schedule. To welcome new members, we are offering 50 percent off your first month of unlimited classes. Just sign up before the end of the month and ____."
+  },
+  {
+   "id": "r1-p62",
+   "text": "Is your old bicycle gathering dust in the garage because of a flat tire or a squeaky chain? Spokes & Gears Community Garage is holding a hands-on repair workshop every Saturday morning in November. Our volunteer mechanics will show you how to patch tubes, adjust brakes, and replace worn chains, and then you do the work with your own hands. We also sell refurbished secondhand bikes at fair prices, and every one has been inspected for safety. Bring your own bike along, and by the end of the session, ____."
+  },
+  {
+   "id": "r1-p63",
+   "text": "____. Along the principal highways of their empire, the Romans erected tall stone columns at regular intervals, each inscribed with the distance to the nearest settlement or back to Rome itself. The Roman mile was reckoned as a thousand paces of a marching legionary, a unit that gave these markers their name: milestones. For merchants, couriers, and armies alike, the columns made it feasible to plan an itinerary and estimate its duration. Many survive today, and the word has endured as a metaphor for any significant juncture of progress."
+  },
+  {
+   "id": "r1-p64",
+   "text": "____. Its creator, L. L. Zamenhof, grew up in a city where Polish, Russian, German, and Yiddish speakers coexisted but often harbored mutual suspicion. He was convinced that much of this hostility stemmed from people's inability to comprehend one another. In the late nineteenth century, he published a language with simple, regular grammar and virtually no exceptions, hoping it could function as a neutral auxiliary language for all. Because it belonged to no single nation, no ethnic group would gain an advantage by adopting it."
+  },
+  {
+   "id": "r1-p65",
+   "text": "When offices emptied during the transition to remote work, the repercussions extended far beyond the companies themselves. Downtown delicatessens, dry cleaners, and parking garages had long depended on the steady influx of commuters who arrived each weekday morning. With many employees now working from home several days a week, these businesses saw their weekday clientele plummet. Some closed permanently, while others curtailed their hours or relocated closer to residential areas. Meanwhile, cafes in suburban neighborhoods reported busier lunchtimes than ever. In short, remote work did not diminish spending so much as ____."
+  },
+  {
+   "id": "r1-p66",
+   "text": "____. When employees must actively enroll in a retirement savings plan, many never get around to it, even if they intend to save. But when companies enroll workers automatically and allow them to opt out, participation rises dramatically. The available options are identical in both cases; only the starting point differs. Economists call this the default effect: people tend to adhere to whatever option is preselected for them, whether out of inertia, procrastination, or a tacit assumption that the preset choice must be the recommended one."
+  },
+  {
+   "id": "r1-p67",
+   "text": "____. Proponents argue that tipping rewards attentive service and gives servers a chance to earn more than a fixed wage would permit. Critics, however, contend that it renders workers' income volatile and shifts the burden of compensating staff from employers to customers. Some studies also suggest that the size of a gratuity depends less on the quality of service than on extraneous factors such as the weather or the server's appearance. Consequently, a growing number of restaurants have replaced tipping with higher menu prices and fixed wages."
+  },
+  {
+   "id": "r1-p68",
+   "text": "As single-person households multiply, grocery chains and food manufacturers are reconsidering what they sell. A family-sized sack of potatoes or a whole watermelon makes little sense for someone cooking only for one, and much of it ends up being discarded. In response, supermarkets now stock half cabbages, single servings of meat, and soups in containers designed for one meal. Convenience stores have likewise expanded their assortments of individually packaged side dishes. For these retailers, the lesson is unmistakable: in a society of smaller households, ____."
+  },
+  {
+   "id": "r1-p69",
+   "text": "The octopus is a consummate master of camouflage. Specialized cells in its skin, called chromatophores, allow it to change color in a fraction of a second, and it can raise minute protrusions on its skin to mimic the texture of rocks or seaweed. What makes this ability so perplexing is that most octopuses are believed to be colorblind, possessing only one type of photoreceptor in their eyes. ____, they somehow manage to match the hues of their surroundings with remarkable fidelity. Scientists are still investigating the mechanism, and some speculate that their skin itself may be able to detect light."
+  },
+  {
+   "id": "r1-p70",
+   "text": "Birds inhabiting cities face a challenge that their rural counterparts do not: incessant noise. Traffic, construction, and machinery generate a persistent low-pitched rumble that can drown out birdsong. To make themselves audible, many urban birds have modified their songs. Researchers comparing urban and woodland populations of the same species have found that city birds often sing at a noticeably higher pitch. ____, their songs rise above the frequencies dominated by traffic, allowing mates and rivals to discern them more clearly. Some species also sing earlier in the morning, before the rush hour commences."
+  },
+  {
+   "id": "r1-p71",
+   "text": "The margins of medieval manuscripts are often filled with bizarre images. (a) Most manuscripts were written on parchment, which was fashioned from meticulously prepared animal hides. (b) Alongside solemn religious texts, scribes and illuminators drew knights battling giant snails, rabbits hunting people, and monkeys playing instruments. (c) Scholars still debate why these incongruous scenes appear, suggesting that they may have been jokes, moral allegories, or simply a means of relieving tedium. (d) Whatever their purpose, the drawings offer a rare glimpse of the humor and imagination of the artisans who produced the books."
+  },
+  {
+   "id": "r1-p72",
+   "text": "Bike-sharing schemes have become a ubiquitous sight in cities around the world. (a) Users can unlock a bicycle with a smartphone app, ride it across town, and leave it at another docking station near their destination. (b) For short trips, this is often quicker than waiting for a bus and cheaper than hailing a taxi. (c) Professional cyclists, by contrast, usually train on lightweight racing bikes that can cost thousands of dollars. (d) Municipal officials also hope the schemes will mitigate traffic congestion and encourage residents to exercise more."
+  },
+  {
+   "id": "r1-p73",
+   "text": "NOTICE: Temporary Closure of Maplewood Public Library\nThe Maplewood Public Library will be closed from Monday, March 3, through Sunday, March 16, while new heating equipment is installed. During this period, all due dates will be automatically extended until March 20, and no late fees will be charged. The book drop outside the main entrance will remain open, but returned items will not be checked in until we reopen. Patrons can still borrow e-books and audiobooks through our website. We apologize for any inconvenience."
+  },
+  {
+   "id": "r1-p74",
+   "text": "To: All Residents of Birchwood Apartments\nFrom: Building Management Office\nSubject: Elevator Inspection on Thursday\n\nDear Residents,\nPlease be advised that the annual safety inspection of both elevators will take place this Thursday from 9 a.m. to 3 p.m. During this time, the elevators will be out of service, so residents will need to use the stairs. If you have difficulty with stairs or are expecting a large delivery, please contact the office by Wednesday so that we can make other arrangements. Thank you for your patience and cooperation.\n\nBuilding Management Office"
+  },
+  {
+   "id": "r1-p75",
+   "text": "Now Hiring: Part-Time Baristas\nCorner Cup Cafe is looking for friendly, reliable baristas to join our team for weekend shifts. No prior experience is necessary, as all new staff will complete a two-week paid training program covering coffee preparation, food safety, and customer service. Applicants must be available on both Saturdays and Sundays and able to work early morning hours. Staff enjoy free drinks during shifts and a discount on all menu items. To apply, drop off your resume at the counter or email it to our manager."
+  },
+  {
+   "id": "r1-p76",
+   "text": "I never thought of myself as a runner. Two years ago, I could barely jog to the end of my street without stopping. But after a friend talked me into joining a beginners' running club, I slowly built up my distance, week by week. Last Sunday, I crossed the finish line of my first marathon. My time was far from impressive, and I walked for parts of the last few miles, but that didn't matter. What I learned is that big goals rarely require extraordinary talent, only small steps taken consistently."
+  },
+  {
+   "id": "r1-p77",
+   "text": "Dear Hannah,\nMy roommate and I have shared an apartment for a year, and we used to get along well. Lately, though, she leaves dirty dishes in the sink for days and has friends over late on weeknights when I need to sleep. I've dropped hints, but nothing has changed. How can I fix this without ruining our friendship?\n- Tired in Toledo\n\nDear Tired,\nHints are easy to miss. Choose a calm moment and tell her directly how these habits affect you. Then suggest a few simple house rules that you can both agree on."
+  },
+  {
+   "id": "r1-p78",
+   "text": "Kabuki, one of Japan's most renowned theatrical forms, is famous today for its all-male casts. Yet the genre was actually pioneered in the early seventeenth century by a woman, Izumo no Okuni, whose exuberant dance performances in Kyoto drew large crowds. Female troupes soon flourished, but the ruling shogunate, concerned that the shows fostered immoral conduct, barred women from the stage. Adolescent boys assumed their roles until they, too, were prohibited for similar reasons. Adult male actors then became the norm, and some specialized in portraying female characters, a role known as onnagata."
+  },
+  {
+   "id": "r1-p79",
+   "text": "Most world maps displayed in classrooms are based on a projection devised by the Flemish cartographer Gerardus Mercator in the sixteenth century. Mercator designed his map for mariners: any straight line drawn on it represents a constant compass bearing, which made navigation considerably simpler. To achieve this, however, the map must enlarge areas progressively the farther they lie from the equator. Consequently, Greenland appears roughly comparable in size to Africa, even though Africa is in fact more than ten times larger. Territories near the poles thus look far more expansive than they really are."
+  },
+  {
+   "id": "r1-p80",
+   "text": "In negotiations, the first figure mentioned often exerts a disproportionate influence on the final outcome. This phenomenon, known as anchoring, occurs because people tend to adjust their estimates from an initial reference point, and they seldom adjust sufficiently. A seller who opens with an exorbitant price, for example, can pull the buyer's counteroffer upward, even if the buyer recognizes the opening figure as unrealistic. For this reason, many negotiation experts advise making the first offer yourself, provided you have ascertained what a reasonable price would be."
+  },
+  {
+   "id": "r1-p81",
+   "text": "Streaming video, music, cloud storage, meal kits, fitness apps: for many consumers, monthly subscriptions have quietly proliferated. Each one seems affordable in isolation, but cumulatively they can amount to a substantial monthly bill. Analysts have coined the term \"subscription fatigue\" to describe the exasperation people feel as they struggle to keep track of what they pay for. One widespread grievance is that cancelling is often far more cumbersome than signing up, requiring phone calls or several bewildering steps. As a result, some consumers now audit their subscriptions every few months and terminate those they rarely use."
+  },
+  {
+   "id": "r1-p82",
+   "text": "Under a deposit-return scheme, shoppers pay a small surcharge when they buy a beverage in a plastic bottle or can. When they bring the empty container back to a store or a reverse vending machine, the deposit is refunded. Because the money is reimbursed only if the container comes back, people have a tangible incentive not to throw it away, and when some do discard containers, others often collect them for the refund. Jurisdictions that have adopted such schemes typically see much higher return rates, and the collected containers are cleaner and easier to recycle than those retrieved from mixed household waste."
+  },
+  {
+   "id": "r1-p83",
+   "text": "As populations age, many countries are debating whether elderly drivers should face more stringent license renewal requirements. Advocates of tougher rules point out that eyesight, reflexes, and judgment can deteriorate with age, and they call for mandatory vision and cognitive assessments beyond a certain age. Opponents argue that age alone is an unreliable predictor of driving competence and that such rules unfairly target a demographic that, as a whole, is not the most hazardous on the road. They also warn that revoking a license can leave older residents of rural areas isolated, since they may have no alternative means of transportation."
+  },
+  {
+   "id": "r1-p84",
+   "text": "Sleep is not merely a period when the brain shuts down. During deep sleep, the hippocampus, a region implicated in forming new memories, replays patterns of neural activity from the day. These signals appear to facilitate the transfer of information to the brain's outer layer, the cortex, where memories are consolidated for the long term. In experiments, participants who learned a task and then slept performed better the next day than those who remained awake for an equivalent interval. Researchers believe that sleep helps the brain determine which experiences merit retention."
+  },
+  {
+   "id": "r1-p85",
+   "text": "Every year, many migratory birds travel thousands of kilometers and return to the same breeding grounds with astonishing precision. Part of their secret appears to be an ability to perceive Earth's magnetic field. In laboratory experiments, birds placed in cages surrounded by artificial magnetic fields altered the direction in which they attempted to fly when the field was shifted. Scientists hypothesize that certain proteins in the birds' retinas respond to magnetism, possibly enabling them to \"see\" the field as a pattern superimposed on their vision. Exactly how the signal reaches the brain, however, remains elusive."
+  },
+  {
+   "id": "r1-p86",
+   "text": "Why I Still Keep a Paper Diary\nEvery night before bed, I open a battered notebook and chronicle my day with a fountain pen. Friends who know me as someone glued to a laptop all day find this ritual oddly anachronistic. Why not simply type notes into a phone app, they ask, where everything can be searched and backed up?\nMy answer is that handwriting compels me to slow down. Because I cannot write as quickly as I think, I have to decide which thoughts deserve a place on the page. That modest act of selection transforms a jumble of events into something closer to reflection. Several studies have suggested that people who take notes by hand tend to process information more deeply than those who type, and that corroborates my own experience.\nThere is also something about the physical notebook itself. Leafing through old pages, I can see where my handwriting grew hurried during a stressful month or tidy and relaxed on a holiday. No app has ever given me that. My diary is not efficient, but efficiency was never the point."
+  },
+  {
+   "id": "r1-p88",
+   "text": "Paper is among history's most consequential inventions, yet for centuries it was known only in East Asia. Chinese artisans were manufacturing paper from plant fibers such as hemp and mulberry bark during the Han dynasty, and the technique gradually spread to Korea and Japan. Its westward diffusion, however, was far slower.\nAccording to a well-known anecdote, Chinese papermakers captured during a battle in Central Asia in the eighth century taught their craft in Samarkand. Historians now question whether the story is entirely accurate, but it is evident that papermaking was established in the Islamic world around that time. Baghdad soon had its own paper mills, and officials there swiftly adopted paper in place of parchment and papyrus for administrative records, since it was cheaper and harder to alter without leaving traces.\nFrom the Middle East, the technique migrated across North Africa into Spain, which had paper mills by the twelfth century, and later spread to Italy and the rest of Europe. By the time the printing press emerged in the fifteenth century, Europe had an ample supply of paper, which helped printed books disseminate rapidly."
+  },
+  {
+   "id": "r1-p90",
+   "text": "Can Working Less Mean Accomplishing More?\nOver the past several years, dozens of companies in different countries have experimented with a four-day work week, in which employees work four days instead of five without any reduction in pay. The idea sounds like a recipe for diminished productivity, but the preliminary results have surprised many skeptics.\nIn many of the trials, companies reported that output remained roughly constant. Managers found that staff squandered less time in superfluous meetings and were more focused during the hours they did work. Employees, for their part, described lower stress, better sleep, and more time for family. Several firms also said that the extra day off made it easier to recruit and retain skilled workers.\nStill, the model is not a panacea for every workplace. Hospitals, schools, and stores that must remain open daily cannot simply close on Fridays, and they often have to hire additional staff or reconfigure shifts. Critics also note that the companies that volunteered for the trials may have been unusually well suited to them in the first place."
+  },
+  {
+   "id": "r1-p92",
+   "text": "Before booking a hotel or purchasing a new gadget, most shoppers now consult online reviews. That habit has spawned a lucrative market for fraudulent ones. Some businesses pay people to post glowing reviews of their own products, while others publish fabricated complaints about competitors. Specialized firms even sell bundles of five-star ratings written by accounts that have never used the product.\nRegulators in several countries have begun to respond. New rules empower authorities to fine companies that buy, sell, or knowingly publish fake reviews, and they also target businesses that suppress negative reviews while displaying only favorable ones. Online platforms, for their part, are deploying algorithms to detect suspicious patterns, such as dozens of near-identical reviews posted within a few hours.\nEnforcement remains arduous, however. Fake reviewers increasingly use AI tools to generate text that sounds authentic, and many operate from countries beyond the jurisdiction of local regulators. Consumer advocates therefore advise shoppers to read a range of reviews, including moderate ones, rather than relying on star averages alone."
+  },
+  {
+   "id": "r1-p94",
+   "text": "Artificial light has transformed the nocturnal environment across much of the planet. Streetlights, illuminated billboards, and floodlit buildings now brighten the sky over cities and their suburbs, a phenomenon known as light pollution. For many creatures that are active after dark, this glow is far from innocuous.\nFireflies are particularly vulnerable. Many species rely on rhythmic flashes of light to locate and attract mates, and males and females communicate through precisely timed signals. In brightly lit areas, these faint flashes are obscured by the surrounding glare, so prospective partners struggle to find one another. Researchers have observed that fireflies in illuminated habitats tend to flash less frequently, and some local populations appear to be dwindling as a result.\nMigratory birds face a different hazard. Many species travel at night and orient themselves partly by the stars. Brightly lit skyscrapers can disorient them, luring them off course until they circle the buildings in exhaustion or collide with windows. In response, several cities now urge the owners of tall buildings to dim or switch off nonessential lights during peak migration seasons."
+  },
+  {
+   "id": "r2-p61",
+   "text": "Have you always aspired to build your own app but never known where to begin? CodeNest Academy offers beginner-friendly online courses taught by practicing developers. Our concise video lessons fit into any schedule, and each unit culminates in a small project you can showcase to friends or prospective employers. Stuck on a problem? Our mentors respond to queries within a day. Best of all, you can sample any course for two weeks without paying a cent. Enroll today and ____."
+  },
+  {
+   "id": "r2-p62",
+   "text": "Tired of supermarket vegetables that were harvested weeks ago? Visit the Maple Square Weekend Market, open every Saturday and Sunday from 8 a.m. to 1 p.m. More than forty local growers bring produce picked the day before, along with artisanal bread, wildflower honey, and handmade cheese. Because there are no intermediaries, prices are often lower than in stores, and you can ask the farmers themselves how their crops were cultivated. Bring your own bags, arrive early for the choicest selection, and ____."
+  },
+  {
+   "id": "r2-p63",
+   "text": "In ancient Greek theater, ____. A small cast of actors, often no more than three, was expected to perform every speaking role in a play, including women, deities, and monarchs. By simply swapping masks between scenes, a single actor could embody several distinct characters. The masks also bore exaggerated features that remained recognizable even to spectators seated far from the stage in vast open-air amphitheaters. Because they were typically fashioned from linen, cork, or wood, scarcely any original masks have survived; most of what we know derives from vase paintings and sculptures."
+  },
+  {
+   "id": "r2-p64",
+   "text": "The word 'robot' originated not in a laboratory but on a stage. It first appeared in R.U.R., a 1920 play by the Czech writer Karel Čapek, in which a factory manufactures artificial laborers that eventually revolt against their human masters. Čapek later credited his brother Josef with coining the term, which derived from the Czech word robota, denoting forced labor or drudgery. The play was soon translated into numerous languages, and the neologism spread with it. In other words, a term now associated with cutting-edge engineering ____."
+  },
+  {
+   "id": "r2-p65",
+   "text": "Psychologists have found that ____. In one classic experiment, participants who were given a coffee mug demanded far more money to relinquish it than others were willing to pay to acquire the identical mug. Having owned the item for only a few minutes, the sellers already perceived parting with it as a loss. This tendency, known as loss aversion, helps explain why investors cling to plummeting stocks and why consumers respond more strongly to a 'lose your discount' message than to a 'gain a discount' one."
+  },
+  {
+   "id": "r2-p66",
+   "text": "On a summer afternoon, ____. Asphalt roads, concrete facades, and dark rooftops absorb sunlight during the day and radiate the heat gradually at night, while the scarcity of trees means there is little shade or cooling from evaporation. One increasingly popular remedy is the green roof, a layer of soil and vegetation installed atop a building. The plants shade the surface and release moisture into the air, keeping the roof and the rooms beneath it cooler, and they also absorb rainwater that would otherwise overwhelm storm drains."
+  },
+  {
+   "id": "r2-p67",
+   "text": "When e-readers surged in popularity, many analysts predicted that the printed book would soon go the way of the cassette tape. For a few years, sales of electronic books rose sharply, seemingly vindicating the forecast. Then growth decelerated and plateaued, while print sales held steady and in some genres even rebounded. Surveys suggest that many readers relish the tactile feel of paper, like to display books at home, and crave a respite from screens. For now, it seems, digital and printed books ____."
+  },
+  {
+   "id": "r2-p68",
+   "text": "Online platforms ____. Every click, like, and pause is logged, and recommendation algorithms exploit this data to show more of whatever kept a user watching or reading. The result can be comfortable, but critics warn that it also fosters a 'filter bubble,' in which people seldom encounter views that challenge their own. Over time, a user who mainly sees articles endorsing one opinion may come to believe that nearly everyone shares it. Some platforms now let users reset their recommendations or deliberately inject unfamiliar topics."
+  },
+  {
+   "id": "r2-p69",
+   "text": "Male humpback whales sing long, intricate songs during the breeding season, and all the males in one population usually sing nearly the same version. These songs, however, are not static. Researchers studying whales in the South Pacific found that a novel song would emerge in one population and then be adopted by neighboring groups, propagating across the ocean over a few years until the old song had vanished. ____, the whales seem to be transmitting a cultural trait, much as catchy pop songs spread from one city to another."
+  },
+  {
+   "id": "r2-p70",
+   "text": "Before the mid-nineteenth century, news could travel no faster than the horse, ship, or train that carried it, so reports of distant events often arrived days or even weeks late. The advent of electric telegraphy altered this dramatically. Operators transmitted messages as electrical pulses along wires using Morse code, a system in which each letter is represented by a sequence of short and long signals called dots and dashes. ____, information that once took weeks to cross a continent could arrive within minutes, and newspapers began printing dispatches from faraway cities on the very day events occurred."
+  },
+  {
+   "id": "r2-p71",
+   "text": "Numerous everyday English expressions were first recorded in the celebrated plays of William Shakespeare. (a) Shakespeare's playhouse, the Globe, was reconstructed near its original site in London in the late twentieth century. (b) Characterizing jealousy as a 'green-eyed monster,' for instance, derives from his tragedy Othello. (c) Likewise, a futile pursuit is still dubbed a 'wild-goose chase,' a phrase found in Romeo and Juliet. (d) Because his plays were performed and printed so extensively, such phrases gradually permeated common speech and persist in usage even today."
+  },
+  {
+   "id": "r2-p72",
+   "text": "Several cities have experimented with making public transportation free for everyone. (a) Proponents argue that abolishing fares helps low-income residents reach jobs, schools, and hospitals more readily. (b) Cities that piloted the idea usually saw ridership climb, especially among people who had seldom taken buses before. (c) However, studies suggest that many new riders were former pedestrians or cyclists, so congestion did not abate as much as anticipated. (d) Bus drivers in many countries must pass a rigorous licensing test that includes both written and road examinations."
+  },
+  {
+   "id": "r2-p73",
+   "text": "Harbor City Museum of Natural History: Summer Evening Hours\nFrom July 1 to August 31, the museum will remain open until 9 p.m. every Friday and Saturday. Evening visitors can explore all permanent galleries, but the special dinosaur exhibition will close at 7 p.m. for nightly maintenance. On Saturday evenings only, guided flashlight tours of the Ocean Hall will commence at 8 p.m. Admission is half price after 6 p.m., and tickets can be purchased at the entrance. Members are admitted free at all times."
+  },
+  {
+   "id": "r2-p74",
+   "text": "Dear Ms. Alvarez,\nThank you for booking your flight to Lisbon with SkyBridge Airways. We are writing to notify you of a revision to our baggage policy that will apply to your itinerary. Effective next month, the complimentary checked baggage allowance on economy fares will be reduced from two bags to one, and each bag may weigh no more than 23 kilograms. A second bag can be added online for a fee prior to departure, which costs less than paying at the airport. Your carry-on allowance remains unchanged.\nSincerely,\nSkyBridge Customer Service"
+  },
+  {
+   "id": "r2-p75",
+   "text": "Lumen Language Services is seeking freelance translators to join our expanding team. We handle documents for clients in law, medicine, and technology, and we currently need translators working from Korean or Japanese into English. Applicants should possess at least three years of professional experience and be comfortable meeting stringent deadlines. All work is conducted remotely, and you can decide how many assignments to accept each month. To apply, submit your résumé and a one-page sample translation via the Careers page on our website."
+  },
+  {
+   "id": "r2-p76",
+   "text": "When I moved into a cramped apartment last spring, I assumed gardening was a pastime I would have to forgo. Then a neighbor gave me a few cherry tomato seedlings, and I set them in pots on my sunny balcony. Within weeks I had added lettuce, basil, and chili peppers. The harvest was never bountiful, but plucking a salad's worth of leaves before dinner felt like a small daily triumph. More than the produce, I cherished the tranquil ten minutes I spent watering each morning. A tiny balcony, I discovered, is ample space for a garden."
+  },
+  {
+   "id": "r2-p77",
+   "text": "Q: I'm 34 and have worked as an accountant for ten years. The pay is good, but I dread Monday mornings. I've always aspired to become a high school teacher, yet I worry it's too late and that my family can't absorb a pay cut. (Stuck in Numbers)\nA: It's not too late. Many teachers enter the classroom from other careers, and your aptitude for numbers could make you a formidable math teacher. Before you resign, though, test the idea. Volunteer as a tutor on weekends. Meanwhile, sit down with your family and draft a budget based on a teacher's salary."
+  },
+  {
+   "id": "r2-p78",
+   "text": "The Inca built one of the largest empires in the Americas without any known writing system. Instead, they kept records using khipu (also spelled quipu), bundles of dyed cotton or wool cords knotted at intervals. The type and position of each knot denoted a number, and the system was decimal, based on units of ten. Administrators used khipu to monitor taxes, census tallies, and commodities stored in state storehouses. Some scholars believe khipu also encoded narratives or names, but no one has yet fully deciphered them."
+  },
+  {
+   "id": "r2-p79",
+   "text": "The haiku is a Japanese poetic form renowned for its brevity. A traditional haiku comprises seventeen sound units arranged in three phrases of five, seven, and five. It customarily includes a seasonal word, known as a kigo, such as 'frog' for spring or 'snow' for winter, which situates the poem in a particular time of year. Rather than articulating feelings directly, a haiku presents a single vivid image and leaves readers to intuit the emotion beneath it. The seventeenth-century poet Matsuo Bashō helped elevate the form to a serious art."
+  },
+  {
+   "id": "r2-p80",
+   "text": "Delivery couriers, ride-hailing drivers, and other app-based workers constitute a growing share of the labor force. Platform companies classify most of them as independent contractors rather than employees, so the companies are not obliged to provide paid leave, health insurance, or a guaranteed minimum wage. Companies contend that this arrangement affords workers the flexibility to choose their own hours. Critics retort that many gig workers rely on a single app for their entire livelihood and should be protected accordingly. Several governments are now weighing legislation that would establish an intermediate category with basic benefits."
+  },
+  {
+   "id": "r2-p81",
+   "text": "A smartphone app called PlateSaver is helping restaurants and bakeries curb food waste. Near closing time, shops list items they have not sold that day, and app users can reserve a 'surprise bag' of these items for roughly a third of the usual price. Users do not know precisely what the bag will contain, and they must collect it in person during a designated time window. Shops recoup some of their costs, customers get inexpensive meals, and perfectly edible food stays out of landfills. Apps of this kind have proliferated in many cities."
+  },
+  {
+   "id": "r2-p82",
+   "text": "Economists have long debated why fertility rates are declining in many affluent countries, and housing costs are emerging as one pivotal factor. Studies in several countries have found that when home prices escalate sharply, young couples who rent tend to postpone having children or have fewer of them. Many couples feel they need an extra bedroom before starting a family, and larger dwellings are especially costly. Intriguingly, homeowners sometimes respond in the opposite way: rising prices make them feel wealthier, and their fertility may even show a slight uptick."
+  },
+  {
+   "id": "r2-p83",
+   "text": "A growing number of resorts now offer 'digital detox' packages. Guests surrender their phones and laptops at check-in and spend their stay hiking, cooking, or simply reading by the lake. Paradoxically, these packages often cost more than ordinary stays, yet many sell out months in advance. Organizers say their most loyal patrons are executives and office workers who answer emails late into the night. Several guests concede that the first day feels disorienting, but by the third day they stop instinctively reaching for their pockets."
+  },
+  {
+   "id": "r2-p84",
+   "text": "Laughter is remarkably contagious. Researchers have found that people are far more likely to laugh in the company of others than in solitude, even while watching the same comedy. Neuroimaging studies show that merely hearing someone laugh activates brain regions that prime the facial muscles to smile, as if the listener were preparing to join in. Interestingly, most laughter in daily conversation follows mundane remarks rather than jokes, suggesting that its primary role is social bonding."
+  },
+  {
+   "id": "r2-p85",
+   "text": "Scientists searching for life on Mars face a perplexing problem: the planet's soil may be hostile to the very evidence they seek. Landers have detected salts called perchlorates in the Martian regolith. These compounds are toxic to many organisms, and when soil samples are heated inside a lander's instruments, perchlorates can decompose organic molecules before they are measured. Moreover, the tenuous atmosphere lets intense radiation bombard the surface. For these reasons, many researchers argue that the most promising place to look is in rock beneath the surface."
+  },
+  {
+   "id": "r2-p86",
+   "text": "Not long ago, dining alone at a restaurant was something many people avoided. Patrons sitting by themselves feared being stigmatized as lonely or unpopular, and some establishments even refused to seat solitary customers during peak hours. Today the landscape has changed dramatically. Noodle shops with private booths, counter seating at cafés, and menus offering single portions have made solo dining commonplace in many cities.\nPart of the shift is demographic: more people live alone than ever before, and grueling working hours leave scant time to arrange meals with friends. But I believe something more profound is at play. For many of us, a meal alone is no longer a sign of failure but a modest act of self-care. It is an opportunity to savor exactly what we crave, at an unhurried pace, without the obligation of conversation. I often bring a book, and I leave feeling more rejuvenated than after a boisterous group dinner.\nOf course, communal meals still matter. Yet a society that embraces solo diners is one that respects personal autonomy, and that is worth celebrating."
+  },
+  {
+   "id": "r2-p88",
+   "text": "When people think of printing with movable metal type, they usually envision Johannes Gutenberg in fifteenth-century Germany. Yet decades before his celebrated Bible, printers in Korea's Goryeo dynasty were already producing books with metal type.\nThe most compelling evidence is Jikji, an anthology of Buddhist teachings printed at Heungdeok Temple in Cheongju in 1377. It is the oldest extant book known to have been printed with movable metal type. Historical records indicate that Goryeo printers had employed metal type even earlier, but no copies of those volumes remain.\nIronically, the sole known surviving copy of Jikji is not in Korea. It was taken to France in the late nineteenth century and is now housed at the National Library of France in Paris. Only the second of its two volumes survives. In 2001, UNESCO inscribed Jikji on its Memory of the World Register, acknowledging its significance in the history of printing. Today, Cheongju operates a museum devoted to early printing, and many Koreans hope the book will one day be exhibited at home."
+  },
+  {
+   "id": "r2-p90",
+   "text": "The European Union has some of the world's most stringent regulations on carbon emissions. Factories inside the EU must buy permits for the carbon dioxide they release, which raises their costs. This creates a risk known as 'carbon leakage': companies may relocate production to countries with laxer rules, or EU buyers may simply import cheaper goods manufactured there. Either way, emissions are not curtailed; they are merely displaced elsewhere.\nTo tackle this problem, the EU has introduced the Carbon Border Adjustment Mechanism, or CBAM. Under this system, importers of certain carbon-intensive products, such as steel, cement, aluminum, and fertilizers, must pay a levy based on the emissions generated in making those goods. If a producer has already paid a carbon price in its home country, that amount can be deducted.\nProponents say the measure puts domestic and foreign producers on an equal footing and incentivizes other countries to adopt their own carbon pricing. Detractors, especially in developing economies, contend that it functions as a disguised trade barrier and imposes a heavy burden on exporters that lack the capital to adopt cleaner technology."
+  },
+  {
+   "id": "r2-p92",
+   "text": "When clinics shut their doors during the pandemic, many patients consulted their doctors through a screen for the first time. Video appointments, once a niche service, swiftly became routine, and many people discovered they preferred them. Patients in rural areas no longer had to drive for hours to see a specialist, and harried parents could consult a pediatrician without taking a day off work.\nTelemedicine is not, however, a flawless substitute for an office visit. Physicians cannot listen to a patient's lungs or palpate a tender abdomen through a camera, so some conditions may be overlooked. Elderly patients, who often need care the most, may struggle with apps or lack dependable internet connections. There are also qualms about privacy when sensitive medical information is transmitted online.\nFor these reasons, many health experts now favor a hybrid model. Routine check-ins, prescription renewals, and follow-up consultations can be handled remotely, while initial diagnoses and physical examinations remain in person. Used this way, telemedicine can save patients time and free up clinic capacity for those who genuinely need to be seen."
+  },
+  {
+   "id": "r2-p94",
+   "text": "Scientists once regarded the bacteria in our intestines chiefly as aids to digestion. Increasingly, however, researchers suspect that these trillions of microbes also modulate how we feel.\nThe gut and the brain are linked by the vagus nerve, a long nerve that relays signals in both directions. In addition, gut bacteria help synthesize compounds that act on the nervous system, and much of the body's serotonin, a neurotransmitter associated with mood, is produced in the gut. In experiments, germ-free mice raised without any bacteria reacted to stress differently from ordinary mice. When researchers transplanted gut bacteria from people with depression into rodents, the animals began to exhibit more anxious behavior.\nThese findings have sparked enthusiasm about 'psychobiotics,' probiotic foods or supplements that might bolster mental health. Yet experts urge caution. Most of the evidence derives from animal studies, and human trials have so far yielded inconsistent results. Diet, sleep, and stress all affect both mood and gut bacteria, making cause and effect difficult to disentangle. For now, eating a varied diet rich in fiber is prudent, but it is no substitute for proven treatments."
+  },
+  {
+   "id": "r3-p61",
+   "text": "Do you feel guilty leaving your dog home alone all day? At Brightpaw Day Care, your furry companion will spend the day frolicking with other dogs under the vigilant eye of our certified trainers. Our spacious indoor play area is sanitized twice daily, and every dog gets a secluded nap corner after lunch. Owners can even check in through live video on their phones. Drop your dog off on your commute and collect a tired, contented companion in the evening. With us, ____."
+  },
+  {
+   "id": "r3-p62",
+   "text": "Don't let the frigid weather keep you out of shape this season. Riverside City Pool is offering a new lineup of winter swimming classes for all ages, from toddlers splashing for the first time to adults hoping to refine their butterfly stroke. Our indoor pool is heated to a comfortable temperature, and the locker rooms have just been thoroughly renovated. Classes are intimate, with no more than eight students per instructor. City residents receive a 20 percent discount on all courses. Register now, because ____."
+  },
+  {
+   "id": "r3-p63",
+   "text": "____. Before the Vikings adopted the Latin alphabet, they inscribed runes, a set of angular characters carved into wood, bone, and stone. Horizontal strokes would have run parallel to the grain of the wood and been nearly invisible, so carvers avoided them and favored vertical and diagonal lines instead. Carving was also laborious, so most surviving runic inscriptions are terse: names of owners, memorials to the deceased, or brief messages. Longer narratives, such as the renowned sagas, were transmitted orally and committed to parchment only centuries later."
+  },
+  {
+   "id": "r3-p64",
+   "text": "____. In the seventeenth and eighteenth centuries, the most celebrated stars of Italian opera were castrati, male singers who had been castrated as boys so that their voices would never deepen. As adults, they combined a soprano or alto range with the lung capacity of a grown man, producing a timbre audiences found exhilarating. Composers wrote dazzling heroic roles for them, and the most illustrious could amass fortunes. Today the practice is rightly regarded as barbaric, and those roles are usually performed by women or by countertenors."
+  },
+  {
+   "id": "r3-p65",
+   "text": "Many retailers pledge to match any lower price a customer finds at a rival store. At first glance, such guarantees seem to be a boon to shoppers, since they appear to drive stores into fierce price wars. Economists, however, point out a subtler consequence. If every store promises to match its rivals, no store gains additional customers by slashing its prices, because competitors will simply match the cut. Consequently, the guarantees may eliminate the incentive to compete at all. In this way, a policy that sounds consumer-friendly can paradoxically ____."
+  },
+  {
+   "id": "r3-p66",
+   "text": "____. A decade ago, coworking spaces were patronized mostly by freelancers and fledgling start-ups that could not afford an office lease of their own. Now large corporations rent entire floors in them. Companies say the arrangement lets them add or eliminate desks within weeks instead of committing to ten-year leases, and it allows staff to work closer to home in branches dispersed across the city. Some firms also hope that sharing premises with young start-ups will expose their employees to innovative ideas."
+  },
+  {
+   "id": "r3-p67",
+   "text": "In spring, when fine dust sweeps across the Korean peninsula, sales of protective masks surge. Convenience stores and pharmacies now monitor air-quality forecasts and stockpile extra masks before a hazy day arrives. Store managers report that sales often begin to climb a day in advance, as soon as warnings appear on the news and on smartphone apps, even while the sky remains clear. For many shoppers, then, the decision to purchase a mask hinges less on what they observe outdoors than on ____."
+  },
+  {
+   "id": "r3-p68",
+   "text": "____. South Korea recently replaced the familiar sell-by date on most packaged foods with a use-by date. A sell-by date tells retailers how long they may display a product, and it is typically set well before the food actually spoils. Many consumers, however, interpreted it as the last safe day for consumption and discarded perfectly edible food. A use-by date instead indicates how long food can be safely eaten if stored as directed, so it falls later. The government hopes the change will curtail both household waste and expenses."
+  },
+  {
+   "id": "r3-p69",
+   "text": "Beneath a forest floor, the roots of most trees are enveloped in fine filaments of fungi. These fungi extend far through the soil, absorbing water and minerals such as phosphorus that roots cannot readily reach, and transfer them to the trees. ____, the trees supply the fungi with sugars synthesized through photosynthesis, which the fungi cannot produce on their own. Some scientists contend that these fungal networks also connect neighboring trees, allowing nutrients to flow from one tree to another, although the extent of this exchange remains disputed."
+  },
+  {
+   "id": "r3-p70",
+   "text": "Lightning originates inside towering storm clouds, where powerful updrafts carry water droplets high into freezing air. There, tiny ice crystals and heavier pellets of soft hail collide repeatedly, and these collisions transfer electric charge between them. The light ice crystals, which tend to acquire a positive charge, are swept to the top of the cloud, while the heavier, negatively charged pellets accumulate near the bottom. ____, the cloud becomes partitioned into regions of opposite charge. When the imbalance grows sufficiently large, the air can no longer act as an insulator, and a colossal spark discharges across the gap."
+  },
+  {
+   "id": "r3-p71",
+   "text": "In East Asian calligraphy, the brush, ink, paper, and inkstone are collectively known as the Four Treasures of the Study. (a) The brush, usually fashioned from animal hair, lets the writer modulate a stroke's thickness through subtle shifts in pressure. (b) Ink traditionally came in solid sticks of soot and animal glue, which had to be ground on the inkstone with water. (c) Paper made from plant fibers absorbs ink almost instantly, so a calligrapher has scant opportunity to rectify a careless stroke. (d) Many contemporary students, however, now learn to write characters by typing them on computer keyboards."
+  },
+  {
+   "id": "r3-p72",
+   "text": "Teenagers who work part-time are often unaware of the legal rights that protect them. (a) Under the legislation of many countries, they are entitled to at least the minimum wage, just like adult workers. (b) Employers are also usually obligated to provide a written contract that stipulates their hours and pay. (c) Many teenagers say that working at a café taught them how to deal courteously with demanding customers. (d) Because young workers are rarely acquainted with these regulations, some employers exploit them by withholding wages or demanding unpaid overtime."
+  },
+  {
+   "id": "r3-p73",
+   "text": "NOTICE: Lakeside Summer Concert Postponed\nDue to torrential rain forecast for this Saturday, the Lakeside Summer Concert has been rescheduled to Sunday at the same time and venue. All tickets purchased for Saturday will remain valid for the new date, so there is no need to exchange them. Ticket holders unable to attend on Sunday may request a full refund through our website until Friday at 6 p.m. Food trucks and the children's play area will operate as originally planned. We apologize for any inconvenience and appreciate your understanding."
+  },
+  {
+   "id": "r3-p74",
+   "text": "Dear Ms. Larson,\nThank you for choosing the Harborview Inn. This email confirms your reservation for a double room with an ocean view for three nights, arriving on May 8. Check-in begins at 3 p.m., and check-out is at 11 a.m. A complimentary breakfast is served daily in the lobby café. Please note that cancellations are free of charge up to 48 hours before arrival. Should you require an airport shuttle or wish to request an early check-in, simply reply to this email.\nWarm regards,\nDaniel Cho, Front Desk"
+  },
+  {
+   "id": "r3-p75",
+   "text": "Volunteers Needed for Sleep Study\nThe Department of Psychology at Westbrook University is recruiting healthy adults aged 20 to 35 to participate in a study on how evening screen use affects sleep. Participants will wear a lightweight wristband that monitors sleep patterns for two weeks and complete a brief online questionnaire each morning. No further laboratory visits are required after the initial orientation session. Those who complete the study will receive a $50 gift card. To apply, email the research team at the address below."
+  },
+  {
+   "id": "r3-p76",
+   "text": "When I relocated to Madrid for work, my Spanish was limited to ordering coffee. A colleague recommended a language exchange that convened every Thursday at a café near my office. The premise was simple: you spent half an hour conversing in Spanish with a local, then half an hour helping them with English. At first I was petrified of making mistakes, but my partners were patient because they were grappling with English themselves. After six months, I could chat with ease, and two of those partners have become my closest friends in the city."
+  },
+  {
+   "id": "r3-p77",
+   "text": "Dear Ms. Reyes,\nMy parents insist that I study law, but I aspire to become a chef. Every time I broach the subject, we end up quarreling. What should I do?\n— Torn in Toronto\nDear Torn,\nYour parents are probably anxious about your financial security, not about cooking itself. Rather than arguing, demonstrate that you have thought it through. Research culinary programs, find out what chefs realistically earn, and perhaps take a part-time kitchen job to prove your commitment. Then invite your parents to sit down and discuss your plan. A coherent plan is far more persuasive than passion alone."
+  },
+  {
+   "id": "r3-p78",
+   "text": "The Rosetta Stone, unearthed in Egypt by French soldiers in 1799, bears the same royal decree inscribed in three scripts: Egyptian hieroglyphs, a later cursive script called Demotic, and ancient Greek. Because scholars could already read Greek, the stone offered a key to the long-forgotten hieroglyphs. Even so, decipherment took more than two decades. Early researchers presumed that every hieroglyph symbolized an idea. The French scholar Jean-François Champollion demonstrated that many signs actually represented sounds, a breakthrough that finally rendered the script legible."
+  },
+  {
+   "id": "r3-p79",
+   "text": "To many listeners, jazz improvisation sounds as though musicians are simply concocting melodies on the spot. In reality, improvisers rely on years of meticulous preparation. They memorize the chord progressions of standard tunes, rehearse countless short melodic patterns, and scrutinize recordings of earlier players note by note. During a performance, they combine and reshape this stored repertoire in response to their fellow musicians. Improvisation, in other words, is less like inventing a language from scratch and more like holding a spontaneous conversation in a language one already knows intimately."
+  },
+  {
+   "id": "r3-p80",
+   "text": "Unmanned convenience stores, where customers scan and pay for items themselves, have proliferated in recent years. Owners save on labor costs, and shoppers enjoy round-the-clock access. Theft, however, has become a persistent headache. Although most stores are equipped with surveillance cameras, the footage is often reviewed only after losses are discovered, and petty thefts are rarely reported to the police because pursuing them costs more than the merchandise is worth. Some owners have begun requiring customers to scan a card or phone at the entrance before entering."
+  },
+  {
+   "id": "r3-p81",
+   "text": "Many countries with aging populations face an intensifying debate over their public pension systems. As birth rates decline and life expectancy rises, fewer workers are paying contributions while more retirees are drawing benefits. Proposed remedies diverge sharply. Some economists favor raising contribution rates, arguing that today's workers must shoulder the burden. Others advocate raising the age at which benefits commence, noting that people now live and work longer. Younger workers, meanwhile, often resist both options, complaining that they are being asked to pay more for a system that may ultimately offer them less."
+  },
+  {
+   "id": "r3-p82",
+   "text": "As veterinary care becomes more sophisticated, it has also become costlier, and a single surgery for a dog or cat can run to thousands of dollars. Pet insurance promises to alleviate that burden, but owners should scrutinize the fine print. Most policies exclude conditions the animal already had when coverage began, and many levy higher premiums as pets age. Routine expenses such as vaccinations and dental cleanings are often excluded as well. Experts recommend enrolling while a pet is still young and healthy."
+  },
+  {
+   "id": "r3-p83",
+   "text": "Online secondhand marketplaces have made it effortless to sell unwanted items to strangers nearby. Unfortunately, they have also become fertile ground for fraud. A common ploy is for a seller to list a coveted gadget at an enticing price, ask the buyer to transfer money directly to a bank account, and then vanish without sending anything. Most platforms offer an escrow service that holds the buyer's payment until the item arrives, but scammers often persuade buyers to bypass it, claiming that the service is sluggish or charges extra fees."
+  },
+  {
+   "id": "r3-p84",
+   "text": "Caffeine sustains alertness by blocking adenosine, a compound that accumulates in the brain during waking hours and induces drowsiness. When caffeine occupies the receptors to which adenosine normally binds, the signal to rest is muffled. Habitual coffee drinkers, however, face a dilemma. The brain compensates for daily caffeine by producing additional adenosine receptors, so the same cup yields a weaker effect over time. This is why heavy drinkers who abruptly quit often suffer headaches and fatigue: they are left with surplus receptors and no caffeine to block them."
+  },
+  {
+   "id": "r3-p85",
+   "text": "New Caledonian crows, native to a group of islands in the South Pacific, are among the few animals known to manufacture their own tools. In the wild, they strip leaves from twigs and fashion them into hooks to extract insect larvae from crevices in decaying wood. Juvenile crows do not master this skill quickly; they spend many months practicing near their parents, often producing clumsy implements at first. Researchers have also observed that tool designs vary from one part of the islands to another, much as human customs differ between regions."
+  },
+  {
+   "id": "r3-p86",
+   "text": "Slow Down to See More\nFor years, my vacations followed the same pattern: seven cities in ten days, a checklist of famous sights, and a camera roll crammed with landmarks I barely remember. Last spring I tried something different. I rented a modest apartment in a single coastal town in Portugal and stayed for three weeks. Without a packed itinerary, I began to notice details I had always rushed past. I learned the baker's name, discovered which beach the locals preferred, and spent whole afternoons reading in the same café. By the end, the town felt less like a destination and more like a temporary home.\nThis approach, often dubbed slow travel, is not for everyone. It demands more vacation days than many workers have, and some travelers simply relish the thrill of constant motion. But for those who can manage it, lingering longer in fewer places offers something a whirlwind tour cannot: the chance to inhabit a place rather than merely visit it. I came home with fewer photos, but far more vivid memories."
+  },
+  {
+   "id": "r3-p88",
+   "text": "The ancient Olympic Games were held every four years at Olympia, a sanctuary in southern Greece dedicated to Zeus. Unlike the modern Games, they were as much a religious festival as a sporting event; animal sacrifices and offerings to the deities took place alongside the competitions. According to tradition, the earliest Games featured just one event, a sprint of roughly 200 meters called the stadion. Later, wrestling, boxing, chariot racing, and the pentathlon were incorporated.\nOnly freeborn Greek men were eligible to compete, and married women were generally prohibited from spectating. To ensure that athletes and spectators could reach Olympia safely, a sacred truce was proclaimed before each festival, allowing pilgrims to traverse warring territories unharmed. Victors did not receive gold medals. Instead, they were crowned with a wreath of olive leaves. Back home, however, a champion might be rewarded with free meals, statues erected in his honor, and enduring renown."
+  },
+  {
+   "id": "r3-p90",
+   "text": "For more than a decade, large supermarkets in South Korea have been required to close two days a month, usually on Sundays. The regulation was introduced to protect traditional markets and small neighborhood shops, which struggled to compete with giant retailers. Proponents argue that the closures give small merchants a fair chance and guarantee rest days for supermarket employees.\nCritics, however, question whether the policy is achieving its aims. Surveys suggest that on closing days, many shoppers do not head to traditional markets at all; they simply shop at the supermarket the day before or order groceries online. Meanwhile, farmers and small suppliers who distribute their products through supermarkets forfeit a day of sales. Online retailers, which face no such restrictions, have emerged as the clearest beneficiaries.\nIn response, several local governments have shifted closing days from Sundays to weekdays, a change welcomed by many consumers but opposed by some labor unions, who contend that workers deserve to spend weekends with their families. The controversy illustrates how difficult it is to protect one group without inadvertently harming another."
+  },
+  {
+   "id": "r3-p92",
+   "text": "Free Wi-Fi is now available almost everywhere, from cafés and airports to subway cars. For travelers and students without generous data plans, it is a convenience that is hard to resist. Cybersecurity experts, however, warn that public networks carry genuine risks.\nThe principal danger is that many public networks do not encrypt the data traversing them. On such a network, a person with rudimentary software can sometimes intercept information transmitted by other users. A more cunning trick is the counterfeit hotspot: a criminal sets up a network with a name like \"Free_Airport_WiFi,\" and unsuspecting users connect to it, routing everything they do straight through the criminal's device.\nExperts recommend a few basic precautions. Users should refrain from logging into bank accounts or entering card numbers on public networks, and they should verify the exact network name with staff before connecting. Disabling the setting that makes a phone join open networks automatically also helps. For people who rely on public Wi-Fi frequently, a virtual private network, or VPN, which encrypts all traffic, offers more robust protection."
+  },
+  {
+   "id": "r3-p94",
+   "text": "In April 2019, astronomers unveiled the first image ever captured of a black hole. It depicted a dark central region encircled by a lopsided ring of glowing gas, situated at the heart of a giant galaxy known as M87.\nObtaining the picture was a remarkable feat, because black holes themselves emit no light. What the image reveals is the black hole's shadow, silhouetted against superheated material swirling around it. The black hole is also extraordinarily distant, so it appears minuscule from Earth, and no single telescope was powerful enough to resolve it. Instead, scientists linked radio telescopes at observatories around the world, meticulously synchronizing their observations so that collectively they functioned like one telescope nearly as wide as the planet itself. The data were so voluminous that they were shipped on hard drives rather than transmitted over the internet.\nThe image also served as a test of Einstein's theory of general relativity, which predicted the size and shape of such a shadow. The results corroborated those predictions remarkably well."
+  }
+ ],
+ "q": [
+  [
+   1,
+   1,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: I heard you finally got your driver's license.\nB: Yes! I passed the road test on my second ____.",
+   [
+    "request",
+    "attempt",
+    "purpose",
+    "account"
+   ],
+   [
+    2
+   ],
+   "'두 번째 시도에서 붙었다'는 뜻이라 on my second attempt(시도)가 맞아요. request(요청)·purpose(목적)·account(계좌, 설명)는 시험에 붙은 횟수를 나타내지 못해요."
+  ],
+  [
+   2,
+   1,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: How was the new phone you ordered online?\nB: It arrived ____. The screen was cracked when I opened the box.",
+   [
+    "damaged",
+    "spotless",
+    "complete",
+    "polished"
+   ],
+   [
+    1
+   ],
+   "화면이 깨져 있었다고 했으니 '파손된 채로(damaged)' 도착한 거예요. spotless(티 없이 깨끗한)·complete(빠짐없는)·polished(광이 나는)는 깨진 화면과 맞지 않아요."
+  ],
+  [
+   3,
+   1,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: Why did you change seats?\nB: The man next to me kept talking on his phone. It was really ____.",
+   [
+    "relaxing",
+    "generous",
+    "familiar",
+    "annoying"
+   ],
+   [
+    4
+   ],
+   "옆 사람이 계속 통화해서 자리를 옮겼으니 '짜증 나는(annoying)'이 맞아요. relaxing(편안한)·generous(너그러운)·familiar(익숙한)는 자리를 옮긴 이유가 되지 않아요."
+  ],
+  [
+   4,
+   1,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: Do you think we'll need umbrellas for the picnic tomorrow?\nB: Probably. The forecast says rain is ____ in the afternoon.",
+   [
+    "willing",
+    "eager",
+    "capable",
+    "likely"
+   ],
+   [
+    4
+   ],
+   "Probably 와 우산 이야기로 보아 '비가 올 것 같다'는 rain is likely(~할 것 같은)가 맞아요. willing(기꺼이 하는)·eager(열망하는)·capable(능력 있는)은 사람의 마음·능력을 말해 비를 주어로 쓰지 않아요."
+  ],
+  [
+   5,
+   1,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: Jenna, you look exhausted.\nB: I am. I had to ____ my little brother all weekend while my parents were away.",
+   [
+    "inherit",
+    "babysit",
+    "nominate",
+    "imitate"
+   ],
+   [
+    2
+   ],
+   "부모님이 안 계신 동안 동생을 '돌봐야(babysit)' 해서 지친 거예요. inherit(물려받다)·nominate(후보로 지명하다)·imitate(흉내 내다)는 부모님이 없는 상황과 이어지지 않아요."
+  ],
+  [
+   6,
+   1,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: Tom quit his stable job to open a bakery.\nB: Quitting was ____, but he's never been happier.",
+   [
+    "meager",
+    "audacious",
+    "tepid",
+    "docile"
+   ],
+   [
+    2
+   ],
+   "안정된 직장을 그만두고 빵집을 연 것은 '대담한(audacious)' 일이에요. meager(빈약한)·tepid(미지근한, 열의 없는)·docile(유순한)은 위험을 무릅쓴 결정을 설명하지 못해요."
+  ],
+  [
+   7,
+   1,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: Did the landlord fix the heater?\nB: Not yet. He keeps making excuses, but I won't let him ____ his responsibility.",
+   [
+    "bolster",
+    "ratify",
+    "shirk",
+    "embellish"
+   ],
+   [
+    3
+   ],
+   "핑계만 대는 집주인이 수리 책임을 '회피하게(shirk)' 두지 않겠다는 말이에요. bolster(강화하다)·ratify(비준하다)·embellish(꾸미다, 과장하다)는 책임과 어울려 이 뜻을 만들지 못해요."
+  ],
+  [
+   8,
+   1,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: How's your thesis going?\nB: Slowly. I've been ____ the data for weeks, but the results still don't make sense.",
+   [
+    "turning down",
+    "making off with",
+    "poring over",
+    "dropping in on"
+   ],
+   [
+    3
+   ],
+   "몇 주째 자료를 '꼼꼼히 들여다보고(poring over)' 있는데도 결과가 이해되지 않는다는 흐름이에요. turning down(거절하다)·making off with(훔쳐 달아나다)·dropping in on(잠깐 들르다)은 자료를 분석하는 일과 맞지 않아요."
+  ],
+  [
+   9,
+   1,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: Will the new manager last?\nB: I doubt it. Her plans are so ____ that nobody takes them seriously.",
+   [
+    "outlandish",
+    "prudent",
+    "feasible",
+    "judicious"
+   ],
+   [
+    1
+   ],
+   "아무도 진지하게 받아들이지 않는 계획이니 '터무니없는(outlandish)'이 맞아요. prudent(신중한)·feasible(실현 가능한)·judicious(현명한)는 좋은 뜻이라 무시당하는 이유가 되지 않아요."
+  ],
+  [
+   10,
+   1,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: Should I tell Mark about the surprise party?\nB: No way. He can't keep a secret. He'd ____ for sure.",
+   [
+    "break the ice",
+    "hit the sack",
+    "spill the beans",
+    "cut corners"
+   ],
+   [
+    3
+   ],
+   "비밀을 못 지키는 사람이니 '비밀을 누설하다(spill the beans)'가 맞아요. break the ice(어색함을 깨다)·hit the sack(잠자리에 들다)·cut corners(대충 하다)는 깜짝 파티를 망치는 일과 상관없어요."
+  ],
+  [
+   11,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe city council voted to ____ the old factory into a public library and community center.",
+   [
+    "convert",
+    "deprive",
+    "consult",
+    "resemble"
+   ],
+   [
+    1
+   ],
+   "convert A into B 로 '옛 공장을 도서관으로 바꾸다'가 돼요. deprive(빼앗다, of 와 씀)·consult(상의하다)·resemble(닮다)은 into 와 이어 이 뜻을 만들지 못해요."
+  ],
+  [
+   12,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nResearchers ____ that the new drug could reduce recovery time by half, though more trials are needed.",
+   [
+    "neglect",
+    "prohibit",
+    "decorate",
+    "estimate"
+   ],
+   [
+    4
+   ],
+   "'회복 기간을 절반으로 줄일 수 있다고 추정한다(estimate)'가 맞고, 더 시험이 필요하다는 말과도 이어져요. neglect(소홀히 하다)·prohibit(금지하다)·decorate(꾸미다)는 that 절의 판단을 받지 못해요."
+  ],
+  [
+   13,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nBecause the instructions were so ____, many customers assembled the shelf incorrectly.",
+   [
+    "thorough",
+    "vague",
+    "punctual",
+    "spacious"
+   ],
+   [
+    2
+   ],
+   "설명서가 '모호해서(vague)' 많은 사람이 잘못 조립했다는 인과예요. thorough(철저한)는 반대 결과를 낳고, punctual(시간을 지키는)·spacious(널찍한)는 설명서에 쓰지 않아요."
+  ],
+  [
+   14,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe company plans to ____ 200 new workers to staff its second factory.",
+   [
+    "recruit",
+    "dismiss",
+    "evacuate",
+    "retire"
+   ],
+   [
+    1
+   ],
+   "두 번째 공장에 사람을 채우려면 직원을 '모집해야(recruit)' 해요. dismiss(해고하다)는 반대이고, evacuate(대피시키다)·retire(은퇴하다)는 인력을 채우는 일이 아니에요."
+  ],
+  [
+   15,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe museum offers free ____ to students who present a valid ID card.",
+   [
+    "ingredient",
+    "admission",
+    "pension",
+    "occupation"
+   ],
+   [
+    2
+   ],
+   "학생증을 보여 주면 '무료 입장(free admission)'이 돼요. ingredient(재료)·pension(연금)·occupation(직업)은 박물관이 학생에게 주는 것과 맞지 않아요."
+  ],
+  [
+   16,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nHeavy rain forced organizers to ____ the outdoor concert until the following weekend.",
+   [
+    "dominate",
+    "postpone",
+    "accelerate",
+    "reveal"
+   ],
+   [
+    2
+   ],
+   "until the following weekend 가 있으니 '다음 주말로 미루다(postpone)'가 맞아요. dominate(지배하다)·accelerate(가속하다)·reveal(드러내다)은 until 과 이어 일정을 옮기는 뜻이 되지 않아요."
+  ],
+  [
+   17,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe new smartphone is so ____ that it can survive a fall from a second-floor window.",
+   [
+    "transparent",
+    "generous",
+    "durable",
+    "tentative"
+   ],
+   [
+    3
+   ],
+   "2층에서 떨어져도 버틸 정도면 '튼튼한(durable)'이에요. transparent(투명한)·generous(너그러운)·tentative(잠정적인)는 떨어져도 버티는 이유가 되지 않아요."
+  ],
+  [
+   18,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nVolunteers worked through the night to ____ food and blankets to families who had lost their homes.",
+   [
+    "consume",
+    "withdraw",
+    "accuse",
+    "distribute"
+   ],
+   [
+    4
+   ],
+   "distribute A to B 로 '음식과 담요를 가족들에게 나눠 주다'가 돼요. consume(소비하다)·withdraw(인출하다, 철수하다)·accuse(고발하다)는 봉사자가 이재민에게 하는 일이 아니에요."
+  ],
+  [
+   19,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nSome scientists ____ that the region's rising temperatures are linked to the loss of its forests.",
+   [
+    "persuade",
+    "forbid",
+    "borrow",
+    "suspect"
+   ],
+   [
+    4
+   ],
+   "suspect that ~ 은 '~라고 짐작하다'로 과학자의 판단을 나타내요. persuade(설득하다)는 사람 목적어가 먼저 와야 하고, forbid(금지하다)·borrow(빌리다)는 that 절을 받지 않아요."
+  ],
+  [
+   20,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe witness gave a ____ account of the accident, recalling every detail down to the time on the clock.",
+   [
+    "brief",
+    "hollow",
+    "vivid",
+    "dormant"
+   ],
+   [
+    3
+   ],
+   "시계 시각까지 세세히 떠올렸으니 '생생한(vivid)' 진술이에요. brief(짧은)는 내용과 반대이고, hollow(공허한)·dormant(휴면 중인)는 진술을 꾸미기에 맞지 않아요."
+  ],
+  [
+   21,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nCritics say the new law will ____ press freedom by letting officials block unwelcome reports.",
+   [
+    "curtail",
+    "vindicate",
+    "exonerate",
+    "replenish"
+   ],
+   [
+    1
+   ],
+   "공무원이 싫은 보도를 막게 하면 언론 자유를 '제한하게(curtail)' 돼요. vindicate(정당성을 입증하다)·exonerate(혐의를 벗기다)·replenish(다시 채우다)는 비판하는 흐름과 반대거나 어울리지 않아요."
+  ],
+  [
+   22,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe ancient manuscript was so badly damaged that scholars could barely ____ the faded writing.",
+   [
+    "obliterate",
+    "fabricate",
+    "reiterate",
+    "decipher"
+   ],
+   [
+    4
+   ],
+   "훼손이 심해 흐려진 글씨를 겨우 '해독할(decipher)' 수 있었다는 뜻이에요. obliterate(완전히 지우다)·fabricate(꾸며 내다)·reiterate(되풀이하다)는 학자가 옛 글을 읽는 일과 맞지 않아요."
+  ],
+  [
+   23,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe senator tried to ____ the scandal by claiming the documents had been taken out of context.",
+   [
+    "downplay",
+    "corroborate",
+    "commemorate",
+    "ostracize"
+   ],
+   [
+    1
+   ],
+   "문서가 맥락에서 벗어났다고 주장한 건 추문을 '대수롭지 않게 보이게 하려는(downplay)' 것이에요. corroborate(뒷받침하다)·commemorate(기념하다)·ostracize(따돌리다)는 의원이 자기 추문에 할 일이 아니에요."
+  ],
+  [
+   24,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nDespite its ____ appearance, the plant is highly toxic and should be kept away from pets.",
+   [
+    "grotesque",
+    "cumbersome",
+    "innocuous",
+    "ostentatious"
+   ],
+   [
+    3
+   ],
+   "'겉모습과 달리(Despite) 독성이 강하다'는 흐름이라 겉보기엔 '해롭지 않은(innocuous)'이 맞아요. grotesque(기괴한)·cumbersome(거추장스러운)·ostentatious(과시하는)는 독성과 반대되는 겉모습이 아니에요."
+  ],
+  [
+   25,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nInvestors grew nervous when the company failed to ____ its claims of record profits with any financial records.",
+   [
+    "substantiate",
+    "relinquish",
+    "disparage",
+    "conciliate"
+   ],
+   [
+    1
+   ],
+   "재무 기록으로 사상 최대 이익 주장을 '입증하지(substantiate)' 못해 투자자들이 불안해했어요. relinquish(포기하다)·disparage(깎아내리다)·conciliate(달래다)는 with any financial records 와 이어지지 않아요."
+  ],
+  [
+   26,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe professor's lectures are ____ of ideas borrowed from philosophy, economics, and biology.",
+   [
+    "reprisals",
+    "impasses",
+    "amalgams",
+    "stipends"
+   ],
+   [
+    3
+   ],
+   "세 분야에서 빌려 온 생각을 섞은 것이니 '혼합물(amalgams)'이 맞아요. reprisals(보복)·impasses(교착 상태)·stipends(급료)는 of ideas 와 어울려 이 뜻을 만들지 못해요."
+  ],
+  [
+   27,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe coach refused to ____ any rule-breaking, benching even his best player for arriving late.",
+   [
+    "censure",
+    "condone",
+    "abhor",
+    "rescind"
+   ],
+   [
+    2
+   ],
+   "지각한 최고 선수까지 뺐으니 규칙 위반을 '눈감아 주기(condone)'를 거부한 거예요. censure(비난하다)·abhor(혐오하다)는 거부하면 뒤 행동과 반대가 되고, rescind(철회하다)는 위반을 목적어로 쓰지 않아요."
+  ],
+  [
+   28,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe documentary attempts to ____ the myth that sharks routinely hunt humans.",
+   [
+    "dispel",
+    "bequeath",
+    "emulate",
+    "placate"
+   ],
+   [
+    1
+   ],
+   "상어가 사람을 사냥한다는 잘못된 믿음을 '떨쳐 없애다(dispel)'가 맞아요. bequeath(유산으로 남기다)·emulate(본받다)·placate(달래다)는 myth 를 목적어로 이 뜻을 만들지 못해요."
+  ],
+  [
+   29,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nOnce a ____ fishing village, the town is now crowded with hotels and tourists all year round.",
+   [
+    "boisterous",
+    "opulent",
+    "cosmopolitan",
+    "secluded"
+   ],
+   [
+    4
+   ],
+   "Once ~ now 대조라서 지금의 '붐빈다'와 반대인 '외딴, 한적한(secluded)'이 맞아요. boisterous(떠들썩한)·opulent(호화로운)·cosmopolitan(국제적인)은 지금 모습과 대조가 되지 않아요."
+  ],
+  [
+   30,
+   1,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nRather than confront his critics directly, the minister chose to ____ their questions with vague, rambling answers.",
+   [
+    "solicit",
+    "parry",
+    "rectify",
+    "embolden"
+   ],
+   [
+    2
+   ],
+   "정면으로 맞서지 않고 모호한 답으로 질문을 '받아넘겼다(parry)'는 뜻이에요. solicit(요청하다)·rectify(바로잡다)·embolden(대담하게 하다)은 질문을 피하는 행동이 아니에요."
+  ],
+  [
+   31,
+   1,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Have you seen Kate lately?\nB: No, I ____ her since she moved to Busan last spring.",
+   [
+    "didn't see",
+    "don't see",
+    "haven't seen",
+    "hadn't seen"
+   ],
+   [
+    3
+   ],
+   "since(~이후로)가 과거부터 지금까지를 말하니 현재완료 haven't seen 이 맞아요. 과거형·현재형은 since 와 함께 못 쓰고, 과거완료는 기준이 되는 과거 시점이 없어요."
+  ],
+  [
+   32,
+   1,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Jake didn't show up for the budget negotiation this morning.\nB: He ____ forgotten about it. He's never missed one before.",
+   [
+    "must have",
+    "should have",
+    "need have",
+    "ought to"
+   ],
+   [
+    1
+   ],
+   "과거 일에 대한 강한 추측은 must have p.p.(~했음이 틀림없다)예요. should have p.p.는 '했어야 했다'는 후회, need have 는 부정문·의문문에만 쓰고, ought to 뒤에는 have 가 빠져 forgotten 을 받을 수 없어요."
+  ],
+  [
+   33,
+   1,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Would you like some more coffee?\nB: Just ____, please. Too much caffeine aggravates my insomnia.",
+   [
+    "a few",
+    "a little",
+    "many",
+    "few"
+   ],
+   [
+    2
+   ],
+   "coffee 는 셀 수 없는 명사라 a little(조금)이 맞아요. a few·many·few 는 셀 수 있는 복수 명사에 써요."
+  ],
+  [
+   34,
+   1,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Who's the woman talking to the dean?\nB: She's the author ____ memoir we read in class last month.",
+   [
+    "who",
+    "whom",
+    "which",
+    "whose"
+   ],
+   [
+    4
+   ],
+   "뒤의 memoir 가 '그 작가의' 회고록이니 소유격 관계대명사 whose 가 맞아요. who·whom·which 뒤에는 관사 없는 명사 memoir 가 바로 올 수 없어요."
+  ],
+  [
+   35,
+   1,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Are you still considering the job offer in Seoul?\nB: Yes, but I'm not used to ____ in such a crowded city.",
+   [
+    "live",
+    "living",
+    "be living",
+    "have lived"
+   ],
+   [
+    2
+   ],
+   "be used to 의 to 는 전치사라 뒤에 동명사 living 이 와요. live·be living·have lived 는 동사원형 꼴이라 전치사 뒤에 못 써요."
+  ],
+  [
+   36,
+   1,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Did you attend the symposium on climate policy?\nB: No. If I ____ about it earlier, I would have gone.",
+   [
+    "knew",
+    "have known",
+    "had known",
+    "would know"
+   ],
+   [
+    3
+   ],
+   "주절이 would have gone 이니 과거 사실 반대인 가정법 과거완료, if 절은 had known 이에요. knew 는 현재 반대 가정, have known·would know 는 if 절 꼴이 아니에요."
+  ],
+  [
+   37,
+   1,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Do you know ____?\nB: I think the keynote lecture begins at seven.",
+   [
+    "what time does the lecture start",
+    "what time the lecture starts",
+    "the lecture starts what time",
+    "what time starts the lecture"
+   ],
+   [
+    2
+   ],
+   "문장 안에 들어간 의문문(간접 의문문)은 '의문사 + 주어 + 동사' 순서라 what time the lecture starts 가 맞아요. does 를 앞에 둔 꼴이나 주어·동사 순서를 바꾼 꼴은 틀려요."
+  ],
+  [
+   38,
+   1,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Why is the elevator out of service?\nB: It ____ right now. The technicians expect it to be operational by noon.",
+   [
+    "is being repaired",
+    "is repairing",
+    "has repaired",
+    "repairs"
+   ],
+   [
+    1
+   ],
+   "엘리베이터는 '수리되는' 쪽이고 right now 가 진행을 나타내니 진행 수동태 is being repaired 예요. 나머지는 모두 능동태라 엘리베이터가 무언가를 고친다는 뜻이 돼요."
+  ],
+  [
+   39,
+   1,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Should I bring an umbrella to the outdoor ceremony?\nB: Yes, take one ____ it drizzles during the procession.",
+   [
+    "so that",
+    "unless",
+    "in case",
+    "as if"
+   ],
+   [
+    3
+   ],
+   "in case 는 '~할 경우에 대비해'라 우산을 챙기는 이유가 돼요. so that(~하도록)은 비가 오게 하려는 뜻, unless(~하지 않으면)는 반대 뜻, as if(마치 ~처럼)는 뜻이 맞지 않아요."
+  ],
+  [
+   40,
+   1,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: I've never been to Jeju Island.\nB: ____ Let's plan a trip there together.",
+   [
+    "So have I.",
+    "Neither I have.",
+    "Nor I haven't.",
+    "Neither have I."
+   ],
+   [
+    4
+   ],
+   "부정문에 '나도 그래'는 Neither + 조동사 + 주어로 도치한 Neither have I 예요. So have I 는 긍정문에 쓰고, Neither I have 는 도치가 안 됐고, Nor I haven't 는 부정이 겹쳐요."
+  ],
+  [
+   41,
+   1,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\n____ in the late nineteenth century, the bridge is the oldest structure still standing in the city.",
+   [
+    "Built",
+    "Building",
+    "Having built",
+    "To build"
+   ],
+   [
+    1
+   ],
+   "다리는 '지어진' 것이라 수동 분사구문 Built 가 맞아요. Building·Having built 는 다리가 무언가를 지었다는 능동 뜻이고, To build 는 목적을 나타내 뜻이 맞지 않아요."
+  ],
+  [
+   42,
+   1,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe scholarship committee stipulated that every applicant ____ an official transcript by Friday.",
+   [
+    "submits",
+    "submitted",
+    "submit",
+    "will submit"
+   ],
+   [
+    3
+   ],
+   "stipulate(규정하다) 같은 요구 동사 뒤 that 절에는 (should) 동사원형을 써서 submit 이 맞아요. submits·submitted·will submit 은 이 자리에 쓰지 않아요."
+  ],
+  [
+   43,
+   1,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe new subway line will make the commute ____ it is now.",
+   [
+    "as twice fast as",
+    "twice as fast as",
+    "twice faster as",
+    "as fast twice as"
+   ],
+   [
+    2
+   ],
+   "배수 비교는 '배수사 + as 원급 as' 순서라 twice as fast as 예요. twice 를 as 사이나 뒤에 두거나 faster 와 as 를 섞은 꼴은 틀려요."
+  ],
+  [
+   44,
+   1,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nBy the time the museum reopens next year, it ____ closed for nearly three years.",
+   [
+    "will have been",
+    "has been",
+    "will be",
+    "had been"
+   ],
+   [
+    1
+   ],
+   "미래 시점(다시 문 여는 내년)까지 이어지는 기간이라 미래완료 will have been 이에요. has been 은 지금까지, had been 은 과거 기준이고, will be 는 기간(for nearly three years)의 누적을 나타내지 못해요."
+  ],
+  [
+   45,
+   1,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nSoaring rents have made ____ for young families to remain in gentrifying neighborhoods.",
+   [
+    "difficult it",
+    "it difficult",
+    "that difficult",
+    "difficult"
+   ],
+   [
+    2
+   ],
+   "make + 가목적어 it + 형용사 + for ~ to 부정사 꼴이라 it difficult 순서예요. 형용사를 it 앞에 두거나 it 을 빼거나 that 을 쓰면 틀려요."
+  ],
+  [
+   46,
+   1,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\n____ of the two candidates had held public office before, so both campaigned as political outsiders.",
+   [
+    "Neither",
+    "None",
+    "No",
+    "Either"
+   ],
+   [
+    1
+   ],
+   "둘 중 어느 쪽도 공직 경험이 없어 둘 다 정치 신인으로 나섰다는 뜻이라 Neither 가 맞아요. None 은 셋 이상, No 는 of 를 바로 받지 못하고, Either 는 '둘 중 하나는 있었다'가 되어 뒤와 맞지 않아요."
+  ],
+  [
+   47,
+   1,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe coastal town ____ the novelist spent her adolescence has changed beyond recognition.",
+   [
+    "which",
+    "what",
+    "that",
+    "where"
+   ],
+   [
+    4
+   ],
+   "spend her adolescence 는 이미 목적어를 갖춰 장소를 이어 줄 관계부사 where 가 맞아요. which·that 을 쓰려면 끝에 in 이 있어야 하고, what 은 선행사 town 과 함께 못 써요."
+  ],
+  [
+   48,
+   1,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nOnly after the forensic investigation was completed ____ the full extent of the structural damage.",
+   [
+    "officials realized",
+    "officials did realize",
+    "realized officials",
+    "did officials realize"
+   ],
+   [
+    4
+   ],
+   "Only + 부사절이 문장 앞에 오면 주절이 도치되어 did + 주어 + 동사원형이 돼요. 그래서 did officials realize 예요. 나머지는 도치가 안 됐거나 순서가 잘못됐어요."
+  ],
+  [
+   49,
+   1,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nVisitors are asked to avoid ____ flash photography inside the gallery.",
+   [
+    "to use",
+    "use",
+    "using",
+    "used"
+   ],
+   [
+    3
+   ],
+   "avoid 는 동명사를 목적어로 받아 avoid using 이에요. to use·use·used 는 avoid 뒤에 쓰지 않아요."
+  ],
+  [
+   50,
+   1,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nAccording to ornithologists, the number of migratory species visiting the wetland ____ doubled over the past decade.",
+   [
+    "have",
+    "has",
+    "are",
+    "is"
+   ],
+   [
+    2
+   ],
+   "주어 the number(~의 수)는 단수라 has 가 맞아요. have 는 복수형이고, are·is doubled 는 '두 배로 늘었다'는 완료 뜻이 되지 못해요."
+  ],
+  [
+   51,
+   1,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nIt was ____ that the inaugural ceremony was relocated indoors.",
+   [
+    "a such cold day",
+    "such cold a day",
+    "a cold such day",
+    "such a cold day"
+   ],
+   [
+    4
+   ],
+   "such 는 'such + a + 형용사 + 명사' 순서라 such a cold day 예요. a 를 such 앞에 두거나 형용사를 a 앞에 둔 꼴은 틀려요."
+  ],
+  [
+   52,
+   1,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe regional festival was postponed ____ mounting concerns about the approaching typhoon.",
+   [
+    "because",
+    "although",
+    "despite",
+    "due to"
+   ],
+   [
+    4
+   ],
+   "뒤에 명사구 mounting concerns 가 오고 '~ 때문에'라는 뜻이라 전치사 due to 가 맞아요. because·although 는 접속사라 절이 와야 하고, despite(~에도 불구하고)는 뜻이 반대예요."
+  ],
+  [
+   53,
+   1,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nMany residents were ____ by the sudden announcement that the city park would be privatized.",
+   [
+    "surprising",
+    "surprised",
+    "surprise",
+    "to surprise"
+   ],
+   [
+    2
+   ],
+   "주민들이 발표에 '놀란' 쪽이고 by 가 있으니 과거분사 surprised 예요. surprising 은 놀라게 하는 쪽을 말하고, surprise·to surprise 는 were 뒤에서 수동 뜻을 만들지 못해요."
+  ],
+  [
+   54,
+   1,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nVolcanic ash grounded the flight, so the stranded passengers ____ wait at the terminal overnight.",
+   [
+    "had to",
+    "must",
+    "should have",
+    "need"
+   ],
+   [
+    1
+   ],
+   "과거 일에 대한 '~해야 했다'는 had to 예요. must 는 과거 사실에 쓰지 않고, should have 뒤에는 p.p.가 와야 하며, need 는 긍정문에서 동사원형을 바로 받지 않아요."
+  ],
+  [
+   55,
+   1,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe climate in Busan is milder than ____ of Seoul.",
+   [
+    "that",
+    "those",
+    "it",
+    "one"
+   ],
+   [
+    1
+   ],
+   "비교 대상이 '서울의 기후'이고 앞의 단수 명사 the climate 를 되받으니 that 이 맞아요. those 는 복수, it 은 of 수식을 받지 못하고, one 은 the 없이 of 구를 받지 않아요."
+  ],
+  [
+   56,
+   1,
+   "g3",
+   null,
+   "Choose the line that contains an awkward expression or a grammatical error.",
+   [
+    "A: Are you joining the mountaineering expedition on Saturday?",
+    "B: I'd love to, but I'm considering to skip it because of my knee.",
+    "A: Oh no, did you injure it again while jogging?",
+    "B: Yes, the physiotherapist told me to rest for two weeks."
+   ],
+   [
+    2
+   ],
+   "(b) consider 는 동명사를 목적어로 받아 'considering to skip'은 'considering skipping'이어야 해요. (c) while jogging(분사구문), (d) told me to rest 는 맞는 꼴이에요."
+  ],
+  [
+   57,
+   1,
+   "g3",
+   null,
+   "Choose the line that contains an awkward expression or a grammatical error.",
+   [
+    "A: How was your trip to the countryside last weekend?",
+    "B: Delightful, but we brought too many luggages for just two days.",
+    "A: Ha, you always pack as if you're embarking on a month-long voyage.",
+    "B: I know. Next time I'll try to travel lighter."
+   ],
+   [
+    2
+   ],
+   "(b) luggage 는 셀 수 없는 명사라 복수형이 없어요. 'too many luggages'는 'too much luggage'여야 해요. (c) as if, (d) travel lighter(비교급 부사)는 맞아요."
+  ],
+  [
+   58,
+   1,
+   "g3",
+   null,
+   "Choose the line that contains an awkward expression or a grammatical error.",
+   [
+    "Volcanic eruptions can devastate the surrounding landscape, yet they also leave behind some of the most fertile soils on Earth.",
+    "As ash and lava weather over centuries, they release minerals such as potassium and phosphorus that crops readily absorb.",
+    "The remarkable fertility of these soils explain why dense agricultural settlements often cluster on the slopes of active volcanoes.",
+    "Farmers in such regions accept the occasional danger of eruptions in exchange for unusually abundant harvests."
+   ],
+   [
+    3
+   ],
+   "(c) 주어는 단수 'The remarkable fertility'라서 'explain'은 'explains'여야 해요. of these soils 는 꾸밈말이라 수를 정하지 않아요. (b) they release 는 복수 주어 ash and lava 에 맞아요."
+  ],
+  [
+   59,
+   1,
+   "g3",
+   null,
+   "Choose the line that contains an awkward expression or a grammatical error.",
+   [
+    "In many metropolitan areas, the number of employees who telecommute has grown steadily over the past decade.",
+    "This shift has prompted some corporations to downsize their headquarters and economize on rent.",
+    "At the same time, cafes in residential districts have attracted more patrons during weekday hours.",
+    "Critics, however, contend that working in isolation can leave employees feeling detached and lead to a gradually erosion of collegiality."
+   ],
+   [
+    4
+   ],
+   "(d) 명사 erosion 을 꾸미는 자리라 부사 'gradually'가 아니라 형용사 'gradual'이어야 해요. (a) the number ... has 는 수 일치가 맞고, (b) prompt + 목적어 + to 부정사도 맞아요."
+  ],
+  [
+   60,
+   1,
+   "g3",
+   null,
+   "Choose the line that contains an awkward expression or a grammatical error.",
+   [
+    "Despite the city lowered bus fares last year, the volume of private vehicles on its roads has barely changed.",
+    "Transportation experts maintain that inexpensive fares alone cannot persuade commuters to relinquish the comfort of their cars.",
+    "Buses must also run frequently and reliably enough to accommodate passengers' daily itineraries.",
+    "Consequently, several cities now combine fare reductions with dedicated bus lanes and real-time arrival information."
+   ],
+   [
+    1
+   ],
+   "(a) Despite 는 전치사라 뒤에 절(the city lowered ...)이 올 수 없어요. 'Although'나 'Despite the fact that'으로 고쳐야 해요. (c) frequently and reliably enough 는 부사 + enough 순서로 맞아요."
+  ],
+  [
+   61,
+   1,
+   "r1",
+   "r1-p61",
+   "Choose the best option to complete the passage.",
+   [
+    "attend any two classes each week for free",
+    "take home a free mat and set of blocks",
+    "book a private lesson with our head instructor",
+    "pay only half the usual fee for a month of membership"
+   ],
+   [
+    4
+   ],
+   "광고 앞에서 '첫 달 무제한 수업 50% 할인'을 내건다고 했으니, 마지막 문장은 그 혜택(한 달 이용료를 절반만 냄)을 다시 짚는 (d)가 맞아요. (a) 매주 두 번 무료, (b) 매트 무료 증정, (c) 원장 개인 레슨은 광고에 나오지 않는 혜택이에요."
+  ],
+  [
+   62,
+   1,
+   "r1",
+   "r1-p62",
+   "Choose the best option to complete the passage.",
+   [
+    "we will buy it from you at a fair price",
+    "you can trade it in for a brand-new model",
+    "you will know how to keep it running yourself",
+    "our mechanics will have repaired it for free"
+   ],
+   [
+    3
+   ],
+   "봉사 정비사들이 타이어 때우기·브레이크 조정·체인 교체 '방법을 보여 준다(show you how)'는 실습 워크숍이고 작업은 '직접 손으로(with your own hands)' 하니, 끝나면 스스로 자전거를 고쳐 탈 수 있게 된다는 (c)가 맞아요. (a) 자전거 매입, (b) 새 모델로 교환은 광고에 없고, (d) 정비사가 대신 고쳐 준다는 것은 직접 배우는 워크숍 취지와 어긋나요."
+  ],
+  [
+   63,
+   1,
+   "r1",
+   "r1-p63",
+   "Choose the best option to complete the passage.",
+   [
+    "Roman roads were constructed primarily to transport commercial goods",
+    "Ancient travelers relied heavily on celestial navigation",
+    "Few Romans ever ventured beyond their native towns",
+    "Roman travelers seldom had to guess how far they had journeyed"
+   ],
+   [
+    4
+   ],
+   "뒤에서 로마인이 간선 도로를 따라 일정한 간격으로 '가장 가까운 마을이나 로마까지의 거리'를 새긴 돌기둥을 세웠다고 설명하므로, 여행자가 온 거리를 짐작할 필요가 거의 없었다는 (d)가 첫 문장으로 맞아요. (a) 도로의 건설 목적, (b) 별을 보고 길 찾기, (c) 고향을 거의 떠나지 않음은 이정표 이야기와 이어지지 않아요."
+  ],
+  [
+   64,
+   1,
+   "r1",
+   "r1-p64",
+   "Choose the best option to complete the passage.",
+   [
+    "Esperanto was devised to supplant the native languages of Europe",
+    "Esperanto was created to bridge divides between speakers of different languages",
+    "Esperanto originated as a clandestine code among Polish merchants",
+    "Esperanto was intended to simplify the grammar of German"
+   ],
+   [
+    2
+   ],
+   "자멘호프가 말이 통하지 않아 서로 의심하는 사람들을 보고, 모두가 쓸 '중립적인 보조 언어(neutral auxiliary language)'를 만들었다는 내용이므로 언어가 다른 사람들 사이의 벽을 잇기 위해 만들었다는 (b)가 맞아요. (a)는 '보조 언어'라는 말과 어긋나고(모국어 대체 아님), (c) 상인의 비밀 암호, (d) 독일어 문법 단순화는 지문에 없어요."
+  ],
+  [
+   65,
+   1,
+   "r1",
+   "r1-p65",
+   "Choose the best option to complete the passage.",
+   [
+    "increase it across all categories of local retailers",
+    "redistribute it from city centers to residential areas",
+    "halt it entirely in suburban neighborhoods",
+    "cause it to surge in downtown districts"
+   ],
+   [
+    2
+   ],
+   "도심 델리·세탁소는 손님이 급감하고 교외 카페는 점심이 더 붐볐다고 했으니, 소비가 줄었다기보다 도심에서 주거지로 옮겨 갔다는 (b)가 결론으로 맞아요. (a) 모든 가게에서 증가, (c) 교외에서 소비 중단, (d) 도심에서 급증은 지문 내용과 반대예요."
+  ],
+  [
+   66,
+   1,
+   "r1",
+   "r1-p66",
+   "Choose the best option to complete the passage.",
+   [
+    "Most workers prefer to manage their own pension portfolios",
+    "Retirement plans have become too convoluted for most employees",
+    "The way a choice is framed can shape what people decide",
+    "Employers rarely offer savings plans to new recruits"
+   ],
+   [
+    3
+   ],
+   "선택지는 똑같은데 '자동 가입 후 원하면 탈퇴'로 시작점만 바꾸자 가입률이 크게 올랐다는 기본값 효과 이야기이므로, 선택을 제시하는 방식이 결정을 바꾼다는 (c)가 첫 문장으로 맞아요. (a) 직접 운용 선호, (b) 제도가 너무 복잡함, (d) 회사가 제도를 거의 제공 안 함은 지문의 요지가 아니에요."
+  ],
+  [
+   67,
+   1,
+   "r1",
+   "r1-p67",
+   "Choose the best option to complete the passage.",
+   [
+    "Few customs polarize diners as sharply as tipping does",
+    "Tipping is a tradition that enjoys near-universal support",
+    "Restaurants have long prohibited customers from leaving tips",
+    "The amount people tip is mandated by law in most places"
+   ],
+   [
+    1
+   ],
+   "뒤에 팁을 지지하는 쪽(Proponents)과 비판하는 쪽(Critics)의 주장이 차례로 나오므로, 팁만큼 손님들의 의견을 갈라놓는 관습도 드물다는 (a)가 첫 문장으로 맞아요. (b) 거의 모두가 지지한다는 것은 비판 내용과 어긋나고, (c) 식당이 팁을 금지해 왔다, (d) 팁 액수가 법으로 정해져 있다는 지문에 없어요."
+  ],
+  [
+   68,
+   1,
+   "r1",
+   "r1-p68",
+   "Choose the best option to complete the passage.",
+   [
+    "bulk discounts will lure the most shoppers",
+    "home cooking will soon become obsolete",
+    "smaller portions are becoming a bigger business",
+    "fresh produce will be supplanted by frozen meals"
+   ],
+   [
+    3
+   ],
+   "1인 가구가 늘자 마트가 반 통 양배추·1인분 고기·한 끼 수프처럼 작은 포장을 늘렸다는 내용이므로, 작은 분량이 오히려 큰 사업이 되고 있다는 (c)가 결론으로 맞아요. (a) 대용량 할인은 흐름과 반대이고, (b) 집밥이 사라진다, (d) 신선 식품이 냉동식품으로 바뀐다는 지문에 근거가 없어요."
+  ],
+  [
+   69,
+   1,
+   "r1",
+   "r1-p69",
+   "Choose the best option to complete the passage.",
+   [
+    "As a result",
+    "Even so",
+    "For instance",
+    "In other words"
+   ],
+   [
+    2
+   ],
+   "앞 문장은 문어가 대부분 색맹이라고 하고, 빈칸 뒤는 그런데도 주변 색을 정확히 맞춘다고 하므로 양보의 (b) Even so(그렇다 해도)가 맞아요. (a) As a result(그 결과), (c) For instance(예를 들어), (d) In other words(다시 말해)는 앞뒤의 대조 관계에 맞지 않아요."
+  ],
+  [
+   70,
+   1,
+   "r1",
+   "r1-p70",
+   "Choose the best option to complete the passage.",
+   [
+    "In this way",
+    "Nevertheless",
+    "On the other hand",
+    "Until then"
+   ],
+   [
+    1
+   ],
+   "앞에서 도시 새가 더 높은 음으로 노래한다고 했고, 빈칸 뒤는 그 방법으로 교통 소음 대역 위로 소리가 올라가 잘 들린다는 결과를 말하므로 (a) In this way(이렇게 해서)가 맞아요. (b) Nevertheless(그럼에도), (c) On the other hand(반면에)는 대조를, (d) Until then(그때까지)은 시간을 나타내 흐름에 맞지 않아요."
+  ],
+  [
+   71,
+   1,
+   "r2",
+   "r1-p71",
+   "Choose the sentence that does NOT belong in the passage.",
+   [
+    "Most manuscripts were written on parchment, which was fashioned from meticulously prepared animal hides.",
+    "Alongside solemn religious texts, scribes and illuminators drew knights battling giant snails, rabbits hunting people, and monkeys playing instruments.",
+    "Scholars still debate why these incongruous scenes appear, suggesting that they may have been jokes, moral allegories, or simply a means of relieving tedium.",
+    "Whatever their purpose, the drawings offer a rare glimpse of the humor and imagination of the artisans who produced the books."
+   ],
+   [
+    1
+   ],
+   "주제문은 중세 필사본 '여백의 기묘한 그림'이고 (b)~(d)는 그 그림의 내용·이유·의미를 이어 가요. (a)는 필사본 재료인 양피지 이야기로, 같은 필사본을 다루지만 초점이 그림에서 벗어났어요."
+  ],
+  [
+   72,
+   1,
+   "r2",
+   "r1-p72",
+   "Choose the sentence that does NOT belong in the passage.",
+   [
+    "Users can unlock a bicycle with a smartphone app, ride it across town, and leave it at another docking station near their destination.",
+    "For short trips, this is often quicker than waiting for a bus and cheaper than hailing a taxi.",
+    "Professional cyclists, by contrast, usually train on lightweight racing bikes that can cost thousands of dollars.",
+    "Municipal officials also hope the schemes will mitigate traffic congestion and encourage residents to exercise more."
+   ],
+   [
+    3
+   ],
+   "주제문은 도시 공유 자전거이고 (a) 이용 방법, (b) 짧은 거리의 장점, (d) 시의 기대 효과가 이어져요. (c)는 프로 선수의 비싼 경주용 자전거 이야기로, 자전거라는 낱말만 같고 공유 자전거와 관계가 없어요."
+  ],
+  [
+   73,
+   1,
+   "r3",
+   "r1-p73",
+   "Why will the library be closed?",
+   [
+    "To install a new heating system",
+    "To expand its e-book collection",
+    "To repair the book drop at the main entrance",
+    "To reorganize its shelves for the new year"
+   ],
+   [
+    1
+   ],
+   "'while new heating equipment is installed'라고 했으니 새 난방 설비 설치 때문이라는 (a)가 맞아요. (b) 전자책은 휴관 중에도 빌릴 수 있다는 안내일 뿐이고, (c) 반납함은 계속 열려 있으며, (d) 서가 정리는 나오지 않아요."
+  ],
+  [
+   74,
+   1,
+   "r3",
+   "r1-p74",
+   "What is the main purpose of the email?",
+   [
+    "To tell residents the elevators will be out of service",
+    "To ask residents to report problems with the elevators",
+    "To announce that a new elevator system has been installed",
+    "To remind residents to schedule all deliveries for Thursday"
+   ],
+   [
+    1
+   ],
+   "목요일 오전 9시~오후 3시 정기 안전 점검 동안 엘리베이터를 쓸 수 없다고 알리는 이메일이므로 (a)가 맞아요. (b) 고장 신고 요청, (c) 새 엘리베이터 설치는 나오지 않고, (d) 큰 택배를 받을 예정이면 미리 연락하라는 것이지 목요일로 잡으라는 게 아니에요."
+  ],
+  [
+   75,
+   1,
+   "r3",
+   "r1-p75",
+   "What is the main purpose of the advertisement?",
+   [
+    "To promote a new weekend menu at the cafe",
+    "To recruit weekend staff, including beginners",
+    "To advertise a coffee-making course for the public",
+    "To find an experienced manager for the cafe"
+   ],
+   [
+    2
+   ],
+   "주말 근무 바리스타를 뽑는다며 '경력이 없어도 된다(No prior experience is necessary)'고 했으니 초보자도 포함해 주말 직원을 모집한다는 (b)가 맞아요. (a) 새 메뉴 홍보, (c) 일반인 대상 강좌는 아니고(교육은 신입 직원용), (d) 경력 매니저를 찾는 글도 아니에요."
+  ],
+  [
+   76,
+   1,
+   "r3",
+   "r1-p76",
+   "What is the main point of the passage?",
+   [
+    "Running clubs are the best way to make new friends",
+    "Marathon runners should focus on improving their times",
+    "Beginners should avoid walking during long races",
+    "Steady effort can lead to goals once thought impossible"
+   ],
+   [
+    4
+   ],
+   "길 끝까지도 못 뛰던 글쓴이가 조금씩 거리를 늘려 첫 마라톤을 완주했고, 큰 목표에는 꾸준한 작은 걸음이 필요하다고 맺으므로 (d)가 요지예요. (a) 친구 사귀기는 요지가 아니고, (b) 기록은 중요하지 않았다고 했으며, (c) 걷지 말라는 조언은 없어요."
+  ],
+  [
+   77,
+   1,
+   "r3",
+   "r1-p77",
+   "Which of the following is correct according to the passage?",
+   [
+    "The writer has already spoken to her roommate directly.",
+    "The roommates have disliked each other since they met.",
+    "Hannah advises the writer to look for a new apartment.",
+    "The roommate's guests disturb the writer's sleep."
+   ],
+   [
+    4
+   ],
+   "룸메이트가 잠을 자야 하는 평일 밤늦게 친구들을 부른다고 했으니 (d)가 맞아요. (a) 글쓴이는 넌지시 알리기(hints)만 했고, (b) 예전에는 잘 지냈으며, (c) 해나는 이사가 아니라 직접 말하고 규칙을 정하라고 조언해요."
+  ],
+  [
+   78,
+   1,
+   "r3",
+   "r1-p78",
+   "Which of the following is correct according to the passage?",
+   [
+    "Kabuki was originally performed exclusively by adult men.",
+    "Okuni's performances failed to attract a substantial audience.",
+    "The shogunate banned adolescent actors before women.",
+    "Some male actors came to specialize in female roles."
+   ],
+   [
+    4
+   ],
+   "마지막 문장에 성인 남자 배우 중 일부가 여자 역할을 전문으로 맡았고 이를 온나가타라 한다고 했으니 (d)가 맞아요. (a) 처음에는 여성 오쿠니가 시작했고, (b) 오쿠니의 공연은 많은 관객을 모았으며, (c) 여성이 먼저 금지되고 그다음에 소년 배우가 금지됐어요."
+  ],
+  [
+   79,
+   1,
+   "r3",
+   "r1-p79",
+   "Which of the following is correct according to the passage?",
+   [
+    "Mercator created his map primarily for classroom use.",
+    "The map exaggerates the size of regions near the poles.",
+    "Greenland and Africa are roughly equivalent in actual area.",
+    "Straight lines on the map indicate the shortest routes."
+   ],
+   [
+    2
+   ],
+   "적도에서 멀수록 면적을 점점 크게 그려서 극지방 가까운 지역이 실제보다 훨씬 넓어 보인다고 했으니 (b)가 맞아요. (a) 메르카토르는 선원을 위해 만들었고, (c) 실제로는 아프리카가 그린란드보다 열 배 넘게 크며, (d) 직선은 '일정한 나침반 방위'를 뜻할 뿐 가장 짧은 길이라는 말은 없어요."
+  ],
+  [
+   80,
+   1,
+   "r3",
+   "r1-p80",
+   "Which of the following is correct according to the passage?",
+   [
+    "Anchoring works only when the initial offer seems plausible.",
+    "Adjustments from an initial figure are often insufficient.",
+    "Experts recommend letting the counterpart make the first offer.",
+    "Buyers typically disregard a seller's unrealistic opening price."
+   ],
+   [
+    2
+   ],
+   "사람들은 처음 기준점에서 판단을 고쳐 가지만 '충분히 고치는 일이 드물다(seldom adjust sufficiently)'고 했으니 (b)가 맞아요. (a) 비현실적인 첫 가격도 효과가 있다고 했고, (c) 전문가들은 첫 제안을 직접 하라고 권하며, (d) 구매자는 비현실적인 가격에도 끌려간다고 했어요."
+  ],
+  [
+   81,
+   1,
+   "r3",
+   "r1-p81",
+   "According to the passage, what is a common complaint about subscriptions?",
+   [
+    "Cancelling them is more arduous than signing up",
+    "Their prices escalate without any advance notice",
+    "They offer an insufficient range of content",
+    "They require users to prepay for a full year"
+   ],
+   [
+    1
+   ],
+   "'cancelling is often far more cumbersome than signing up'이라고 했으니 해지가 가입보다 번거롭다는 (a)가 맞아요. (b) 예고 없는 가격 인상, (c) 콘텐츠 부족, (d) 1년치 선불은 지문에 나오지 않는 불만이에요."
+  ],
+  [
+   82,
+   1,
+   "r3",
+   "r1-p82",
+   "Which of the following is correct according to the passage?",
+   [
+    "Shoppers are reimbursed for each container they return.",
+    "Shoppers may decide whether or not to pay the deposit.",
+    "Containers retrieved from household waste are easier to recycle.",
+    "Only plastic bottles are covered by deposit-return schemes."
+   ],
+   [
+    1
+   ],
+   "빈 용기를 가게나 회수기에 돌려주면 보증금을 돌려받는다고 했으니 (a)가 맞아요. (b) 보증금은 음료를 살 때 붙는 추가 요금이라 고를 수 없고, (c) 오히려 따로 모은 용기가 섞인 생활 쓰레기에서 건진 것보다 재활용하기 쉬우며, (d) 캔(can)도 포함돼요."
+  ],
+  [
+   83,
+   1,
+   "r3",
+   "r1-p83",
+   "What can be inferred from the passage?",
+   [
+    "Most countries have already prohibited elderly people from driving.",
+    "Younger drivers seldom cause traffic accidents.",
+    "Public transportation is scarce in some rural areas.",
+    "Cognitive assessments are already compulsory for all drivers."
+   ],
+   [
+    3
+   ],
+   "면허를 잃으면 시골 노인은 '다른 이동 수단이 없을 수 있어' 고립된다고 했으니, 일부 시골은 대중교통이 부족하다고 추론할 수 있어 (c)가 맞아요. (a) 이미 금지한 것이 아니라 아직 논쟁 중이고, (b) 노인이 '가장 위험한 집단은 아니다'라는 말은 다른 집단이 더 위험할 수 있다는 뜻이라 맞지 않으며, (d) 인지 검사는 일정 나이 이후에 의무화하자는 주장일 뿐이에요."
+  ],
+  [
+   84,
+   1,
+   "r3",
+   "r1-p84",
+   "What can be inferred from the passage?",
+   [
+    "Brief naps are more beneficial than a full night's sleep.",
+    "The hippocampus is dormant during deep sleep.",
+    "Forgoing sleep after studying may impair memory.",
+    "Long-term memories are stored primarily in the hippocampus."
+   ],
+   [
+    3
+   ],
+   "과제를 배운 뒤 잔 사람이 깨어 있던 사람보다 다음 날 더 잘했다고 했으니, 공부 뒤 잠을 거르면 기억이 약해질 수 있다는 (c)를 추론할 수 있어요. (a) 낮잠 비교는 없고, (b) 해마는 깊은 잠 동안 낮의 활동을 되풀이하며, (d) 장기 기억은 대뇌 피질에서 굳어진다고 했어요."
+  ],
+  [
+   85,
+   1,
+   "r3",
+   "r1-p85",
+   "What can be inferred from the passage?",
+   [
+    "Birds depend solely on magnetism to orient themselves.",
+    "Artificial magnetic fields permanently damage birds' retinas.",
+    "The proteins in birds' retinas were identified decades ago.",
+    "Birds probably rely on more than one cue to navigate."
+   ],
+   [
+    4
+   ],
+   "자기장 감지는 철새가 길을 찾는 비결의 '일부(Part of their secret)'라고 했으니 다른 단서도 함께 쓴다고 추론할 수 있어 (d)가 맞아요. (a) '자기장만'은 이와 어긋나고, (b) 망막 손상 이야기는 없으며, (c) 망막의 단백질은 아직 과학자들이 '가설로 세우는(hypothesize)' 단계라고 했어요."
+  ],
+  [
+   86,
+   1,
+   "r4",
+   "r1-p86",
+   "What is the writer's main point?",
+   [
+    "Digital note apps are more secure than paper notebooks",
+    "Writing by hand offers benefits that typing lacks",
+    "Students should be required to take notes by hand",
+    "Keeping a diary helps people fall asleep faster"
+   ],
+   [
+    2
+   ],
+   "손글씨는 생각을 골라 되돌아보게 하고 공책 자체가 그때의 마음을 담는다며 '효율은 처음부터 목적이 아니었다'고 맺으므로, 손으로 쓰기에는 타자에 없는 장점이 있다는 (b)가 요지예요. (a) 앱이 더 안전하다는 것은 친구들의 물음일 뿐이고, (c) 학생 의무화, (d) 잠이 빨리 든다는 말은 없어요."
+  ],
+  [
+   87,
+   1,
+   "r4",
+   "r1-p86",
+   "What can be inferred about the writer from the passage?",
+   [
+    "The writer seldom uses technology at work.",
+    "The writer intends to switch to a digital diary soon.",
+    "The diary also preserves traces of the writer's past moods.",
+    "The writer writes in the diary only on holidays."
+   ],
+   [
+    3
+   ],
+   "옛 쪽을 넘기면 스트레스 많던 달에는 글씨가 급하고 휴가 때는 단정하다고 했으니, 일기장이 지난 기분의 흔적까지 담고 있다는 (c)를 추론할 수 있어요. (a) 하루 종일 노트북에 붙어 있다고 했고, (b) 앱으로 바꿀 생각은 드러나지 않으며, (d) 매일 밤 쓴다고 했어요."
+  ],
+  [
+   88,
+   1,
+   "r4",
+   "r1-p88",
+   "According to the passage, why did officials in Baghdad prefer paper for records?",
+   [
+    "It was more durable than papyrus in arid climates",
+    "It could be produced from locally grown bark",
+    "It was more portable on long journeys",
+    "It was inexpensive and resisted covert tampering"
+   ],
+   [
+    4
+   ],
+   "'cheaper and harder to alter without leaving traces'라고 했으니 값이 싸고 몰래 고치기 어려웠다는 (d)가 맞아요. (a) 건조한 기후에서 오래간다, (b) 현지 나무껍질로 만든다(뽕나무 껍질은 중국의 재료로만 나와요), (c) 들고 다니기 쉽다는 지문에 없는 이유예요."
+  ],
+  [
+   89,
+   1,
+   "r4",
+   "r1-p88",
+   "Which of the following is correct according to the passage?",
+   [
+    "Paper reached Spain before most other parts of Europe.",
+    "The anecdote about the captured papermakers is fully verified.",
+    "Paper was invented in Central Asia in the eighth century.",
+    "Europe began manufacturing paper only after the printing press."
+   ],
+   [
+    1
+   ],
+   "제지 기술이 북아프리카를 거쳐 스페인에 먼저 들어갔고(12세기에 제지소), 그 뒤 이탈리아와 나머지 유럽으로 퍼졌다고 했으니 (a)가 맞아요. (b) 역사가들은 그 일화가 다 맞는지 의문을 품고, (c) 종이는 중국에서 만들어졌으며, (d) 인쇄기가 나왔을 때 유럽에는 이미 종이가 넉넉했어요."
+  ],
+  [
+   90,
+   1,
+   "r4",
+   "r1-p90",
+   "What is the passage mainly about?",
+   [
+    "Why most companies have rejected a four-day week",
+    "How a shorter week reduced workers' pay in many firms",
+    "Why hospitals pioneered the four-day week",
+    "Preliminary results and limitations of a four-day week"
+   ],
+   [
+    4
+   ],
+   "주 4일 근무 실험에서 생산량 유지·스트레스 감소 같은 결과가 나왔지만, 매일 문을 여는 곳에는 맞지 않는 한계도 있다는 글이므로 (d)가 주제예요. (a) 대부분 거부했다는 말은 없고, (b) 임금 삭감 없이 실험했으며, (c) 병원은 오히려 적용하기 어려운 예로 나와요."
+  ],
+  [
+   91,
+   1,
+   "r4",
+   "r1-p90",
+   "According to the passage, what did managers observe during the trials?",
+   [
+    "Employees spent fewer hours in unproductive gatherings",
+    "Workers petitioned to revert to a five-day week",
+    "Productivity declined sharply toward the weekend",
+    "Staff required supplementary training to stay focused"
+   ],
+   [
+    1
+   ],
+   "관리자들은 직원들이 불필요한 회의에 허비하는 시간이 줄고 일하는 시간에 더 집중했다고 했으니 (a)가 맞아요. (b) 주 5일로 돌아가자는 청원, (c) 주말 무렵 생산성 급감, (d) 집중을 위한 추가 교육은 나오지 않아요(생산량은 거의 그대로였어요)."
+  ],
+  [
+   92,
+   1,
+   "r4",
+   "r1-p92",
+   "Which of the following is correct according to the passage?",
+   [
+    "Fake reviews are written exclusively by a product's competitors.",
+    "New rules chiefly target shoppers who post fabricated complaints.",
+    "Platforms have ceased using software to screen reviews.",
+    "Suppressing unfavorable reviews may also violate the rules."
+   ],
+   [
+    4
+   ],
+   "새 규칙은 가짜 리뷰를 사고파는 회사뿐 아니라 나쁜 리뷰는 감추고 좋은 리뷰만 보여 주는 업체도 겨냥한다고 했으니 (d)가 맞아요. (a) 자기 제품 칭찬 리뷰도 돈 주고 올리고, (b) 규제 대상은 쇼핑객이 아니라 회사이며, (c) 플랫폼은 알고리즘으로 걸러 내고 있어요."
+  ],
+  [
+   93,
+   1,
+   "r4",
+   "r1-p92",
+   "What can be inferred from the passage?",
+   [
+    "Domestic regulations cannot reach every fake reviewer.",
+    "Star averages are the most reliable guide for consumers.",
+    "Fake reviews have largely vanished since the new rules.",
+    "AI tools make fake reviews easier to detect."
+   ],
+   [
+    1
+   ],
+   "가짜 리뷰어 다수가 현지 규제 기관의 관할 밖 나라에서 활동한다고 했으니, 한 나라의 규제로는 모두 막을 수 없다는 (a)를 추론할 수 있어요. (b) 별점 평균만 믿지 말라고 했고, (c) 단속은 여전히 어렵다고 했으며, (d) AI는 오히려 진짜 같은 가짜 글을 만들어 적발을 어렵게 해요."
+  ],
+  [
+   94,
+   1,
+   "r4",
+   "r1-p94",
+   "According to the passage, why do fireflies struggle to find mates in brightly lit areas?",
+   [
+    "Artificial light stops them from producing any light",
+    "Streetlights attract predators that feed on them",
+    "Ambient lighting makes their flashes hard to detect",
+    "Bright light shortens their breeding season"
+   ],
+   [
+    3
+   ],
+   "밝은 곳에서는 반딧불이의 희미한 불빛이 주변의 강한 빛(glare)에 가려져 짝이 서로를 찾기 어렵다고 했으니 (c)가 맞아요. (a) 빛을 아예 못 낸다는 것이 아니라 덜 자주 깜박인다고 했고, (b) 포식자, (d) 번식기가 짧아진다는 말은 지문에 없어요."
+  ],
+  [
+   95,
+   1,
+   "r4",
+   "r1-p94",
+   "What can be inferred from the passage?",
+   [
+    "Fireflies have fully adapted to illuminated habitats.",
+    "Migratory birds navigate solely by Earth's magnetic field.",
+    "Light pollution mainly harms animals active during the day.",
+    "Dimming tall buildings at night could reduce bird collisions."
+   ],
+   [
+    4
+   ],
+   "밝은 고층 건물이 철새를 홀려 창문에 부딪히게 하자 여러 도시가 이동철에 불을 줄이거나 끄라고 권한다고 했으니, 건물 조명을 줄이면 충돌이 줄 수 있다는 (d)를 추론할 수 있어요. (a) 일부 무리는 오히려 줄고 있고, (b) 철새는 별을 보고도 방향을 잡으며, (c) 피해를 입는 것은 어두울 때 활동하는 생물이에요."
+  ],
+  [
+   1,
+   2,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: I can't find my keys anywhere. Have you seen them?\nB: Check the kitchen counter. You usually ____ them there.",
+   [
+    "lend",
+    "leave",
+    "raise",
+    "spend"
+   ],
+   [
+    2
+   ],
+   "열쇠를 보통 거기에 '둔다'는 말이라 leave(두다)가 맞아요. lend(빌려주다), raise(올리다), spend(쓰다)는 문맥에 맞지 않아요."
+  ],
+  [
+   2,
+   2,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: Is the new café on Main Street any good?\nB: It's pretty ____. Nothing special, really.",
+   [
+    "generous",
+    "curious",
+    "ordinary",
+    "anxious"
+   ],
+   [
+    3
+   ],
+   "'특별할 건 없다'는 말과 이어지는 ordinary(평범한)가 맞아요. generous(관대한), curious(호기심 많은), anxious(불안한)는 카페를 평가하는 말로 어울리지 않아요."
+  ],
+  [
+   3,
+   2,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: How did your interview go?\nB: Pretty well. They'll ____ me of their decision by Friday.",
+   [
+    "cure",
+    "deprive",
+    "notify",
+    "rob"
+   ],
+   [
+    3
+   ],
+   "면접 결과를 금요일까지 '알려 준다(notify A of B)'가 맞아요. cure(낫게 하다)·deprive(빼앗다)·rob(강탈하다)도 of 와 쓰이지만 결과를 전하는 뜻이 아니에요."
+  ],
+  [
+   4,
+   2,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: Why are you selling your car?\nB: It's too expensive to ____. I spend a fortune on repairs.",
+   [
+    "abandon",
+    "maintain",
+    "approve",
+    "imitate"
+   ],
+   [
+    2
+   ],
+   "수리비가 많이 든다는 말에서 차를 '유지하기' 비싸다는 뜻이라 maintain(유지하다)이 맞아요. abandon(버리다), approve(승인하다), imitate(흉내 내다)는 맞지 않아요."
+  ],
+  [
+   5,
+   2,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: How long have you lived here?\nB: About ten years. I moved here after I got ____ and started a family.",
+   [
+    "married",
+    "borrowed",
+    "repeated",
+    "divided"
+   ],
+   [
+    1
+   ],
+   "'가정을 꾸렸다'와 이어지는 get married(결혼하다)가 맞아요. borrowed(빌린), repeated(반복된), divided(나뉜)는 'got ~ and started a family'와 어울리지 않아요."
+  ],
+  [
+   6,
+   2,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: Did your landlord fix the heater yet?\nB: No, and he keeps giving me ____ answers about it.",
+   [
+    "lucrative",
+    "gregarious",
+    "frugal",
+    "noncommittal"
+   ],
+   [
+    4
+   ],
+   "고쳐 주겠다는 확답 없이 얼버무린다는 뜻이라 noncommittal(확답을 피하는)이 맞아요. lucrative(돈벌이가 되는), gregarious(사교적인), frugal(검소한)은 '대답'을 꾸미는 말로 맞지 않아요."
+  ],
+  [
+   7,
+   2,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: There's so much to clean up after the party.\nB: If we all ____, we'll be done in no time.",
+   [
+    "give out",
+    "pitch in",
+    "back down",
+    "fall through"
+   ],
+   [
+    2
+   ],
+   "모두 '거들면' 금방 끝난다는 뜻이라 pitch in(힘을 보태다)이 맞아요. give out(나눠 주다·바닥나다), back down(물러서다), fall through(무산되다)는 맞지 않아요."
+  ],
+  [
+   8,
+   2,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: Should I raise my concerns at the meeting?\nB: Yes. If you stay quiet, the problem will only ____.",
+   [
+    "comply",
+    "recede",
+    "fester",
+    "deplete"
+   ],
+   [
+    3
+   ],
+   "말하지 않으면 문제가 '곪아 더 커진다'는 뜻이라 fester(곪다·악화되다)가 맞아요. comply(따르다), recede(물러나다·줄어들다), deplete(고갈시키다)는 'will only' 뒤 뜻이 맞지 않아요."
+  ],
+  [
+   9,
+   2,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: Jason keeps bragging about his promotion.\nB: I know. His constant ____ is getting on everyone's nerves.",
+   [
+    "modesty",
+    "gloating",
+    "diligence",
+    "lethargy"
+   ],
+   [
+    2
+   ],
+   "승진 자랑을 계속한다는 말과 이어지는 gloating(우쭐대며 자랑하기)이 맞아요. modesty(겸손), diligence(근면), lethargy(무기력)는 자랑하는 모습과 맞지 않아요."
+  ],
+  [
+   10,
+   2,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: Nervous about tomorrow's presentation?\nB: Not really. I've practiced so much that I could do it ____.",
+   [
+    "on the fence",
+    "under the weather",
+    "in my sleep",
+    "out of the blue"
+   ],
+   [
+    3
+   ],
+   "연습을 많이 해서 '눈 감고도' 할 수 있다는 뜻이라 in my sleep(자면서도, 아주 쉽게)이 맞아요. on the fence(망설이는), under the weather(몸이 안 좋은), out of the blue(갑자기)는 맞지 않아요."
+  ],
+  [
+   11,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nResearchers ____ the sleep of 200 volunteers for six weeks using sensors worn on the wrist.",
+   [
+    "monitored",
+    "abolished",
+    "deposited",
+    "evaporated"
+   ],
+   [
+    1
+   ],
+   "손목 센서로 6주 동안 수면을 '관찰했다'는 뜻이라 monitored(관찰·감시하다)가 맞아요. abolished(폐지하다), deposited(예금하다·놓다), evaporated(증발하다)는 맞지 않아요."
+  ],
+  [
+   12,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nMany hikers underestimate how ____ mountain weather can be, as clear skies may turn stormy within an hour.",
+   [
+    "transparent",
+    "punctual",
+    "edible",
+    "unpredictable"
+   ],
+   [
+    4
+   ],
+   "맑은 하늘이 한 시간 만에 폭풍으로 바뀐다는 말에서 unpredictable(예측할 수 없는)이 맞아요. transparent(투명한), punctual(시간을 지키는), edible(먹을 수 있는)은 맞지 않아요."
+  ],
+  [
+   13,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe automaker had to ____ thousands of vehicles after a defect was discovered in their braking systems.",
+   [
+    "obey",
+    "invent",
+    "recall",
+    "resign"
+   ],
+   [
+    3
+   ],
+   "결함이 발견되어 차량을 '회수했다'는 뜻이라 recall(리콜하다)이 맞아요. obey(복종하다), invent(발명하다), resign(사임하다)은 맞지 않아요."
+  ],
+  [
+   14,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe new law will ____ employers to provide at least two weeks of paid leave each year.",
+   [
+    "oblige",
+    "relieve",
+    "diminish",
+    "conceal"
+   ],
+   [
+    1
+   ],
+   "'oblige A to do(A가 ~하도록 의무를 지우다)' 꼴이라 oblige가 맞아요. relieve(덜어 주다), diminish(줄이다), conceal(숨기다)은 'employers to provide' 꼴과 뜻이 맞지 않아요."
+  ],
+  [
+   15,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe charity festival was canceled at the last minute due to a ____ of volunteers.",
+   [
+    "shortage",
+    "surplus",
+    "pledge",
+    "glimpse"
+   ],
+   [
+    1
+   ],
+   "자원봉사자가 '부족해서' 취소됐다는 뜻이라 shortage(부족)가 맞아요. surplus(과잉)는 취소 이유가 되지 않고, pledge(서약), glimpse(힐끗 봄)도 맞지 않아요."
+  ],
+  [
+   16,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nOnline shoppers often ____ the quality of a product by reading reviews written by other customers.",
+   [
+    "donate",
+    "exile",
+    "gauge",
+    "inherit"
+   ],
+   [
+    3
+   ],
+   "후기를 읽고 품질을 '가늠한다'는 뜻이라 gauge(측정하다·판단하다)가 맞아요. donate(기부하다), exile(추방하다), inherit(물려받다)는 맞지 않아요."
+  ],
+  [
+   17,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe store manager tried to ____ the angry customer by offering a full refund and a gift card.",
+   [
+    "accuse",
+    "provoke",
+    "imitate",
+    "pacify"
+   ],
+   [
+    4
+   ],
+   "환불을 해 주며 화난 손님을 '달래려' 했다는 뜻이라 pacify(진정시키다)가 맞아요. accuse(비난하다), provoke(화나게 하다), imitate(흉내 내다)는 환불을 주는 행동과 맞지 않아요."
+  ],
+  [
+   18,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nVolunteers ____ food and blankets to families who had lost their homes in the flood.",
+   [
+    "convinced",
+    "consumed",
+    "distributed",
+    "postponed"
+   ],
+   [
+    3
+   ],
+   "'distribute A to B(A를 B에게 나눠 주다)' 꼴이라 distributed가 맞아요. convinced(설득하다), consumed(소비하다), postponed(미루다)는 맞지 않아요."
+  ],
+  [
+   19,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nAlthough the hotel looked ____ in the online photos, the rooms turned out to be cramped and dirty.",
+   [
+    "luxurious",
+    "shabby",
+    "hostile",
+    "reluctant"
+   ],
+   [
+    1
+   ],
+   "Although 때문에 '좁고 더러웠다'와 반대되는 말이 와야 해서 luxurious(호화로운)가 맞아요. shabby(허름한)는 대조가 안 되고, hostile(적대적인), reluctant(꺼리는)는 호텔을 꾸미는 말로 맞지 않아요."
+  ],
+  [
+   20,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nPassengers are asked to ____ from using electronic devices while the aircraft is taking off.",
+   [
+    "refrain",
+    "recover",
+    "retreat",
+    "resign"
+   ],
+   [
+    1
+   ],
+   "이륙 중에는 전자기기 사용을 '삼가 달라(refrain from)'는 안내라 refrain 이 맞아요. recover(회복하다)·retreat(물러나다)·resign(사임하다)도 from 과 쓰이지만 뜻이 맞지 않아요."
+  ],
+  [
+   21,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe documentary ____ the hardships faced by migrant workers with unflinching honesty.",
+   [
+    "rescinds",
+    "portrays",
+    "abdicates",
+    "embezzles"
+   ],
+   [
+    2
+   ],
+   "다큐멘터리가 이주 노동자의 고난을 '그려 낸다'는 뜻이라 portrays(묘사하다)가 맞아요. rescinds(철회하다), abdicates(퇴위하다·포기하다), embezzles(횡령하다)는 맞지 않아요."
+  ],
+  [
+   22,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nHer ____ remarks during the negotiation offended the other party and nearly ended the talks.",
+   [
+    "conciliatory",
+    "benign",
+    "solvent",
+    "insolent"
+   ],
+   [
+    4
+   ],
+   "상대를 불쾌하게 해 협상을 깰 뻔했다는 말에서 insolent(무례한)가 맞아요. conciliatory(회유하는)와 benign(온화한)은 결과와 반대이고, solvent(지급 능력이 있는)는 발언을 꾸미지 않아요."
+  ],
+  [
+   23,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nDays of heavy rain continued to ____ the low-lying villages, forcing thousands of residents to evacuate.",
+   [
+    "ratify",
+    "embellish",
+    "rejuvenate",
+    "inundate"
+   ],
+   [
+    4
+   ],
+   "폭우가 저지대 마을을 '물에 잠기게 해' 주민이 대피했다는 뜻이라 inundate(침수시키다)가 맞아요. ratify(비준하다), embellish(꾸미다), rejuvenate(활기를 되찾게 하다)는 맞지 않아요."
+  ],
+  [
+   24,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe official was accused of attempting to ____ the investigation by destroying key documents.",
+   [
+    "exonerate",
+    "obstruct",
+    "commend",
+    "replenish"
+   ],
+   [
+    2
+   ],
+   "핵심 문서를 없애 수사를 '방해하려' 했다는 뜻이라 obstruct(방해하다)가 맞아요. exonerate(무죄를 밝히다), commend(칭찬하다), replenish(다시 채우다)는 수사와 이어지는 뜻이 맞지 않아요."
+  ],
+  [
+   25,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe guest lecture was so full of technical ____ that few students could follow the speaker's main argument.",
+   [
+    "clemency",
+    "fervor",
+    "sanctuary",
+    "jargon"
+   ],
+   [
+    4
+   ],
+   "전문 '용어'가 많아 학생들이 따라가지 못했다는 뜻이라 jargon(전문 용어)이 맞아요. clemency(관용), fervor(열정), sanctuary(피난처)는 technical과 어울리지 않아요."
+  ],
+  [
+   26,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nInvestors grew uneasy as the firm continued to ____ its capital on ventures that never turned a profit.",
+   [
+    "hoard",
+    "levy",
+    "squander",
+    "garnish"
+   ],
+   [
+    3
+   ],
+   "수익이 나지 않는 사업에 자본을 '낭비했다'는 뜻이라 squander(허비하다)가 맞아요. hoard(비축하다), levy(부과하다), garnish(음식을 장식하다)는 'on ventures'와 이어지는 뜻이 맞지 않아요."
+  ],
+  [
+   27,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nSecurity footage helped ____ the defendant's claim that he was at home on the night of the robbery.",
+   [
+    "emancipate",
+    "levitate",
+    "fumigate",
+    "corroborate"
+   ],
+   [
+    4
+   ],
+   "CCTV 영상이 피고의 주장을 '뒷받침했다'는 뜻이라 corroborate(입증하다)가 맞아요. emancipate(해방하다), levitate(공중에 뜨게 하다), fumigate(훈증 소독하다)는 주장(claim)을 목적어로 받지 않아요."
+  ],
+  [
+   28,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nDespite his ____ reputation as a demanding editor, he was known among young writers for his patience.",
+   [
+    "formidable",
+    "gullible",
+    "amiable",
+    "frivolous"
+   ],
+   [
+    1
+   ],
+   "Despite로 '인내심'과 대조되는 무서운 평판이 와야 해서 formidable(만만치 않은, 무서운)이 맞아요. amiable(상냥한)은 대조가 안 되고, gullible(잘 속는), frivolous(경박한)는 까다로운 편집자와 맞지 않아요."
+  ],
+  [
+   29,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nBefore purchasing the painting, the gallery hired experts to ____ whether it was genuine.",
+   [
+    "relinquish",
+    "ascertain",
+    "abhor",
+    "flaunt"
+   ],
+   [
+    2
+   ],
+   "그림이 진품인지 '확인하려' 전문가를 고용했다는 뜻이라 ascertain(알아내다·확인하다)이 맞아요. relinquish(포기하다), abhor(혐오하다), flaunt(과시하다)는 whether절과 맞지 않아요."
+  ],
+  [
+   30,
+   2,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe author's later novels are so ____ that even devoted fans struggle to keep track of their plots.",
+   [
+    "lucid",
+    "succinct",
+    "trite",
+    "convoluted"
+   ],
+   [
+    4
+   ],
+   "열성 팬도 줄거리를 따라가기 힘들다는 말에서 convoluted(난해하게 뒤얽힌)가 맞아요. lucid(명쾌한), succinct(간결한)는 반대이고, trite(진부한)는 따라가기 어려운 이유가 되지 않아요."
+  ],
+  [
+   31,
+   2,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Have you finished your thesis proposal yet?\nB: Not yet. I ____ on it since early this morning.",
+   [
+    "am working",
+    "worked",
+    "have been working",
+    "had worked"
+   ],
+   [
+    3
+   ],
+   "since early this morning(오늘 아침부터 지금까지)이 있어 현재완료진행 have been working이 맞아요. 현재진행·과거·과거완료는 since와 함께 지금까지 이어지는 일을 나타내지 못해요."
+  ],
+  [
+   32,
+   2,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Any advice on negotiating a lease renewal?\nB: Not really. I don't have ____ experience with that.",
+   [
+    "much",
+    "many",
+    "a few",
+    "several"
+   ],
+   [
+    1
+   ],
+   "experience(경험)는 여기서 셀 수 없는 명사라 much가 맞아요. many, a few, several은 셀 수 있는 복수 명사와 써요."
+  ],
+  [
+   33,
+   2,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Do you remember the restaurant ____ we had dinner on your birthday?\nB: The one downtown? Of course.",
+   [
+    "which",
+    "what",
+    "whose",
+    "where"
+   ],
+   [
+    4
+   ],
+   "뒤 절 'we had dinner'가 빠진 성분 없이 완전해서 장소 관계부사 where가 맞아요. which는 'at which'처럼 전치사가 있어야 하고, what은 선행사를 받지 않으며, whose는 뒤에 명사가 와야 해요."
+  ],
+  [
+   34,
+   2,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Do you mind ____ the window? It's freezing in here.\nB: Not at all. I was getting cold too.",
+   [
+    "to close",
+    "close",
+    "closing",
+    "closed"
+   ],
+   [
+    3
+   ],
+   "mind는 동명사를 목적어로 받아서 closing이 맞아요. to부정사·동사원형·과거분사는 mind의 목적어로 올 수 없어요."
+  ],
+  [
+   35,
+   2,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: I failed my driving test again.\nB: If you ____ more thoroughly, you would have passed easily.",
+   [
+    "have prepared",
+    "had prepared",
+    "would prepare",
+    "had been prepared"
+   ],
+   [
+    2
+   ],
+   "주절이 would have passed인 과거 사실 반대 가정이라 if절은 과거완료 had prepared가 맞아요. 현재완료·would prepare는 가정법 과거완료 꼴이 아니고, had been prepared는 수동이라 주어 you와 맞지 않아요."
+  ],
+  [
+   36,
+   2,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: I saw Kevin at the mall today.\nB: You ____ have seen him. He's been in Tokyo all week.",
+   [
+    "must",
+    "can't",
+    "should",
+    "would"
+   ],
+   [
+    2
+   ],
+   "케빈이 일주일 내내 도쿄에 있었으니 '봤을 리가 없다'는 can't have p.p.가 맞아요. must have(틀림없이 ~했다)는 반대 뜻이고, should have(~했어야 했다), would have(~했을 것이다)는 문맥에 맞지 않아요."
+  ],
+  [
+   37,
+   2,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Do you know ____?\nB: I think the symposium starts at seven, but let me check.",
+   [
+    "what time does the symposium begin",
+    "the symposium begins what time",
+    "what time begins the symposium",
+    "what time the symposium begins"
+   ],
+   [
+    4
+   ],
+   "간접의문문은 '의문사+주어+동사' 순서라 what time the symposium begins가 맞아요. 나머지는 직접의문문 어순이거나 의문사 자리가 틀렸어요."
+  ],
+  [
+   38,
+   2,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Are you still going on the coastal hike this weekend?\nB: Only ____ it doesn't rain. The forecast doesn't look good.",
+   [
+    "unless",
+    "even though",
+    "if",
+    "so that"
+   ],
+   [
+    3
+   ],
+   "'비가 안 올 때만 간다'는 조건이라 only if가 맞아요. unless는 'doesn't rain'과 겹쳐 뜻이 뒤집히고, even though(비록 ~이지만), so that(~하도록)은 조건을 나타내지 않아요."
+  ],
+  [
+   39,
+   2,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Why didn't you pick up when I called last night?\nB: Sorry, I ____ a shower at the time.",
+   [
+    "have been taking",
+    "have taken",
+    "am taking",
+    "was taking"
+   ],
+   [
+    4
+   ],
+   "어젯밤 전화가 온 '그때' 진행 중이던 일이라 과거진행 was taking이 맞아요. 현재완료(진행)와 현재진행은 last night의 과거 시점과 맞지 않아요."
+  ],
+  [
+   40,
+   2,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: How was the hiking trip?\nB: Great, but we had ____ trouble finding the trail at first.",
+   [
+    "a few",
+    "many",
+    "a little",
+    "few"
+   ],
+   [
+    3
+   ],
+   "trouble(어려움)은 셀 수 없는 명사라 a little이 맞아요. a few, many, few는 셀 수 있는 복수 명사와 써요."
+  ],
+  [
+   41,
+   2,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nAll foreign delegates ____ to present valid credentials at the summit's security checkpoint.",
+   [
+    "require",
+    "are requiring",
+    "are required",
+    "have required"
+   ],
+   [
+    3
+   ],
+   "대표단은 신분 증명서 제시를 '요구받는' 쪽이라 수동태 are required가 맞아요. require, are requiring, have required는 능동이라 뒤에 목적어가 있어야 해요."
+  ],
+  [
+   42,
+   2,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\n____ in the early twelfth century, the cathedral remains a pristine example of Romanesque architecture.",
+   [
+    "Built",
+    "Building",
+    "Having built",
+    "To build"
+   ],
+   [
+    1
+   ],
+   "대성당은 '지어진' 것이라 수동 분사구문 Built가 맞아요. Building과 Having built는 능동이라 대성당이 무언가를 지었다는 뜻이 되고, To build는 목적을 나타내 맞지 않아요."
+  ],
+  [
+   43,
+   2,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe revised subsidy program attracted ____ the original initiative did.",
+   [
+    "as twice many applicants as",
+    "twice as applicants many as",
+    "as many twice applicants as",
+    "twice as many applicants as"
+   ],
+   [
+    4
+   ],
+   "배수 비교는 '배수+as+many+명사+as' 순서라 twice as many applicants as가 맞아요. 나머지는 배수사나 many의 자리가 틀렸어요."
+  ],
+  [
+   44,
+   2,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nNot until the clinical data were scrutinized ____ that the drug posed serious risks.",
+   [
+    "did regulators acknowledge",
+    "regulators acknowledged",
+    "regulators did acknowledge",
+    "acknowledged regulators"
+   ],
+   [
+    1
+   ],
+   "Not until ~ 부정어구가 문장 앞에 나오면 주절이 'did+주어+동사원형'으로 도치돼서 did regulators acknowledge가 맞아요. 나머지는 도치가 안 됐거나 어순이 틀렸어요."
+  ],
+  [
+   45,
+   2,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nBy the time the stranded expedition is rescued, its members ____ without provisions for three days.",
+   [
+    "will have been",
+    "have been",
+    "had been",
+    "are"
+   ],
+   [
+    1
+   ],
+   "By the time + 현재시제(is rescued)는 미래 시점을 나타내서, 그때까지 이어질 일은 미래완료 will have been이 맞아요. 현재완료·과거완료·현재는 미래 기준점과 맞지 않아요."
+  ],
+  [
+   46,
+   2,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe municipal council has received ____ grievances about noise from the nearby construction site.",
+   [
+    "an amount of",
+    "a number of",
+    "a great deal of",
+    "much"
+   ],
+   [
+    2
+   ],
+   "grievances(불만 제기)는 셀 수 있는 복수 명사라 a number of가 맞아요. an amount of, a great deal of, much는 셀 수 없는 명사와 써요."
+  ],
+  [
+   47,
+   2,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe professor encouraged her students ____ primary sources beyond the assigned textbook.",
+   [
+    "to evaluate",
+    "evaluating",
+    "evaluate",
+    "having evaluated"
+   ],
+   [
+    1
+   ],
+   "'encourage A to do(A에게 ~하도록 권하다)' 꼴이라 to evaluate가 맞아요. 동명사·동사원형·완료동명사는 encourage의 목적격 보어로 쓰지 않아요."
+  ],
+  [
+   48,
+   2,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe decision to decommission the aging reactor was made ____ vehement objections from local residents.",
+   [
+    "although",
+    "even though",
+    "in spite",
+    "despite"
+   ],
+   [
+    4
+   ],
+   "뒤에 명사구(vehement objections)가 와서 전치사 despite가 맞아요. although와 even though는 접속사라 절이 와야 하고, in spite는 of가 있어야 해요."
+  ],
+  [
+   49,
+   2,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nFollowing repeated warnings from structural engineers, the authorities finally ____.",
+   [
+    "had aging the bridge reinforced",
+    "had the bridge reinforced aging",
+    "reinforced had the aging bridge",
+    "had the aging bridge reinforced"
+   ],
+   [
+    4
+   ],
+   "사역동사 have는 'have+목적어+과거분사'로 '~을 보강하게 하다'라는 뜻이라 had the aging bridge reinforced가 맞아요. 나머지는 aging이나 동사의 자리가 틀렸어요."
+  ],
+  [
+   50,
+   2,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe physician insisted that the patient ____ under close observation for at least another week.",
+   [
+    "remain",
+    "remains",
+    "remained",
+    "will remain"
+   ],
+   [
+    1
+   ],
+   "'~해야 한다'는 당위의 insist that절에는 (should) 동사원형을 써서 remain이 맞아요. remains, remained, will remain은 당위 뜻의 that절에 맞지 않아요."
+  ],
+  [
+   51,
+   2,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe proportion of employees ____ remotely has increased dramatically over the past decade.",
+   [
+    "working",
+    "worked",
+    "to have worked",
+    "are working"
+   ],
+   [
+    1
+   ],
+   "employees를 뒤에서 꾸미는 능동 현재분사 working이 맞아요. worked는 수동 뜻이 되고, to have worked는 뜻이 맞지 않으며, are working은 동사가 하나 더 생겨 문장이 틀려요."
+  ],
+  [
+   52,
+   2,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe archive ____ inaccessible to scholars since the renovation began, so its manuscripts have been digitized.",
+   [
+    "was",
+    "is",
+    "has been",
+    "had been"
+   ],
+   [
+    3
+   ],
+   "since the renovation began(보수 공사가 시작된 뒤 지금까지)이 있어 현재완료 has been이 맞아요. was와 is는 since와 쓰지 않고, had been은 과거 기준점이 없어 맞지 않아요."
+  ],
+  [
+   53,
+   2,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nIt was ____ that the committee postponed its verdict indefinitely.",
+   [
+    "such a contentious proposal",
+    "so a contentious proposal",
+    "a such contentious proposal",
+    "such contentious a proposal"
+   ],
+   [
+    1
+   ],
+   "'such+a+형용사+명사+that' 순서라 such a contentious proposal이 맞아요. so를 쓰려면 'so contentious a proposal' 순서여야 하고, 나머지는 a의 자리가 틀렸어요."
+  ],
+  [
+   54,
+   2,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe newly established laboratory still requires ____ before researchers can relocate next month.",
+   [
+    "an equipment",
+    "some equipment",
+    "some equipments",
+    "many equipment"
+   ],
+   [
+    2
+   ],
+   "equipment(장비)는 셀 수 없는 명사라 some equipment가 맞아요. 불가산 명사에는 an을 붙이거나 복수형을 쓰지 않고, many와도 쓰지 않아요."
+  ],
+  [
+   55,
+   2,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nMany pediatricians recommend ____ exposure to screens for toddlers under the age of two.",
+   [
+    "to limit",
+    "limit",
+    "limiting",
+    "having been limited"
+   ],
+   [
+    3
+   ],
+   "recommend는 동명사를 목적어로 받아서 limiting이 맞아요. to limit와 동사원형은 recommend의 목적어로 쓰지 않고, having been limited는 수동이라 exposure를 목적어로 받지 못해요."
+  ],
+  [
+   56,
+   2,
+   "g3",
+   null,
+   "Choose the line that contains an awkward expression or a grammatical error.",
+   [
+    "A: Are you still searching for an apartment near campus?",
+    "B: Yes, but everything I've inspected so far is either cramped or too expensive.",
+    "A: My cousin is moving out next month, and her place is quite affordable.",
+    "B: Really? Could you send me some informations about it?"
+   ],
+   [
+    4
+   ],
+   "(d) 'informations'가 틀렸어요. information은 셀 수 없는 명사라 복수형을 쓰지 않으니 'some information'이어야 해요."
+  ],
+  [
+   57,
+   2,
+   "g3",
+   null,
+   "Choose the line that contains an awkward expression or a grammatical error.",
+   [
+    "A: Did you watch the championship match last night?",
+    "B: No, I missed it because of I had to stay late at the office.",
+    "A: That's a shame. It was one of the best games of the season.",
+    "B: I'll try to catch the highlights online later tonight."
+   ],
+   [
+    2
+   ],
+   "(b) 'because of'는 전치사라 뒤에 절(I had to ~)이 올 수 없어요. 접속사 'because'여야 해요."
+  ],
+  [
+   58,
+   2,
+   "g3",
+   null,
+   "Choose the line that contains an awkward expression or a grammatical error.",
+   [
+    "Honeybees communicate the location of food sources through an elaborate sequence of movements known as the waggle dance.",
+    "When a forager returns to the hive, its principal task is convey information about where it found nectar.",
+    "The angle of the dance indicates the direction of the food relative to the position of the sun.",
+    "The duration of each waggle, meanwhile, signals to fellow foragers approximately how far they must fly."
+   ],
+   [
+    2
+   ],
+   "(b) be동사 is 뒤 보어 자리에 동사원형 'convey'가 올 수 없어요. 'to convey'나 'conveying'이어야 해요."
+  ],
+  [
+   59,
+   2,
+   "g3",
+   null,
+   "Choose the line that contains an awkward expression or a grammatical error.",
+   [
+    "Over the past decade, numerous municipalities have begun converting vacant parking lots into compact public parks and community gardens.",
+    "Proponents contend that these green spaces offer residents a tranquil place to unwind and socialize with their neighbors.",
+    "They also note that vegetation helps mitigate heat in densely populated neighborhoods during sweltering summers.",
+    "Detractors, however, worry that the loss of parking could create seriously problems for local merchants."
+   ],
+   [
+    4
+   ],
+   "(d) 명사 'problems'를 꾸미는 자리라 부사 'seriously'가 아니라 형용사 'serious'여야 해요."
+  ],
+  [
+   60,
+   2,
+   "g3",
+   null,
+   "Choose the line that contains an awkward expression or a grammatical error.",
+   [
+    "Deserts are commonly imagined as places where it is hot all year round.",
+    "In reality, temperatures in many deserts plummet after sunset because arid air retains little heat.",
+    "Some deserts, such as the one blanketing most of Antarctica, receive scant precipitation and remain frigid throughout the year.",
+    "Climatologists therefore stress that the amount of precipitation a region receives, not its temperature, determine whether it qualifies as a desert."
+   ],
+   [
+    4
+   ],
+   "(d) that절의 주어는 단수 'the amount'라 동사 'determine'은 'determines'여야 해요."
+  ],
+  [
+   61,
+   2,
+   "r1",
+   "r2-p61",
+   "Choose the best option to complete the passage.",
+   [
+    "claim a refund on your previous purchase",
+    "meet our mentors in person at the downtown campus",
+    "write your first lines of code for free",
+    "pay a reduced fee starting the second month"
+   ],
+   [
+    3
+   ],
+   "온라인 코딩 강좌 광고로, 2주 동안 돈을 내지 않고 체험할 수 있다(without paying a cent)고 했으니 '무료로 첫 코드를 써 보라'는 (c)가 맞아요. (a) 환불, (b) 시내 캠퍼스 방문, (d) 둘째 달 할인은 지문에 없는 내용이에요."
+  ],
+  [
+   62,
+   2,
+   "r1",
+   "r2-p62",
+   "Choose the best option to complete the passage.",
+   [
+    "order your groceries online for home delivery",
+    "enjoy imported fruit from around the world",
+    "visit our stores on weekday evenings too",
+    "taste the difference that freshness makes"
+   ],
+   [
+    4
+   ],
+   "전날 수확한 지역 농산물을 파는 주말 장터 광고라서 '신선함의 차이를 맛보라'는 (d)가 자연스러워요. (a) 온라인 주문·배달, (b) 수입 과일, (c) 평일 저녁 매장은 직접 와서 사는 주말 지역 장터와 맞지 않아요."
+  ],
+  [
+   63,
+   2,
+   "r1",
+   "r2-p63",
+   "Choose the best option to complete the passage.",
+   [
+    "masks were worn chiefly to conceal the actors' identities",
+    "only affluent citizens were permitted to attend plays",
+    "actors were selected primarily for their vocal talent",
+    "a few performers could portray numerous characters"
+   ],
+   [
+    4
+   ],
+   "배우 몇 명이 가면만 바꿔 여러 인물을 연기했다는 내용이 이어지므로 (d) '적은 배우가 많은 인물을 연기할 수 있었다'가 첫 문장으로 맞아요. (a) 신분 숨기기, (b) 부유한 시민만 관람, (c) 노래 실력은 뒤 내용과 이어지지 않아요."
+  ],
+  [
+   64,
+   2,
+   "r1",
+   "r2-p64",
+   "Choose the best option to complete the passage.",
+   [
+    "began as a piece of theatrical fiction",
+    "was first devised by a team of engineers",
+    "originally denoted the proprietor of a factory",
+    "has seldom been used outside of science"
+   ],
+   [
+    1
+   ],
+   "'robot'은 실험실이 아니라 무대(차페크의 희곡)에서 나온 말이라고 했으니 '연극 속 허구에서 시작됐다'는 (a)가 맞아요. (b) 기술자 팀이 만듦, (c) 공장 주인이라는 뜻(원뜻은 강제 노동), (d) 과학 밖에서 거의 안 쓰임은 지문과 어긋나요."
+  ],
+  [
+   65,
+   2,
+   "r1",
+   "r2-p65",
+   "Choose the best option to complete the passage.",
+   [
+    "people value objects primarily according to their price",
+    "buyers usually pay more than sellers anticipate",
+    "losing something hurts more than gaining it pleases",
+    "most people would rather share their belongings with others"
+   ],
+   [
+    3
+   ],
+   "머그잔 실험과 손실 회피(loss aversion) 설명이 이어지므로 '잃는 고통이 얻는 기쁨보다 크다'는 (c)가 맞아요. (a) 가격으로만 가치 판단, (b) 사는 사람이 더 많이 냄(실험은 반대), (d) 나누기 선호는 내용과 맞지 않아요."
+  ],
+  [
+   66,
+   2,
+   "r1",
+   "r2-p66",
+   "Choose the best option to complete the passage.",
+   [
+    "cities can get considerably hotter than the countryside",
+    "rooftop gardens are mostly used to cultivate vegetables",
+    "rural areas tend to trap more heat than cities",
+    "most urban buildings are designed to reflect sunlight"
+   ],
+   [
+    1
+   ],
+   "아스팔트·콘크리트가 열을 품고 나무가 없어 도시가 더워진다는 설명(도시 열섬)이 이어지므로 (a)가 맞아요. (c)는 도시와 시골이 거꾸로이고, (b) 채소 재배, (d) 햇빛 반사 설계는 지문 내용과 달라요."
+  ],
+  [
+   67,
+   2,
+   "r1",
+   "r2-p67",
+   "Choose the best option to complete the passage.",
+   [
+    "are losing readers at precisely the same rate",
+    "coexist rather than supplant each other",
+    "have both been eclipsed by audiobooks",
+    "are sold almost exclusively through online retailers"
+   ],
+   [
+    2
+   ],
+   "전자책 성장은 멈추고(plateaued) 종이책은 버티거나 되살아났다(rebounded)고 했으니 '서로 대체하지 않고 함께 간다'는 (b)가 맞아요. (a) 같은 속도로 독자 감소, (c) 오디오북에 밀림, (d) 온라인에서만 판매는 지문에 근거가 없어요."
+  ],
+  [
+   68,
+   2,
+   "r1",
+   "r2-p68",
+   "Choose the best option to complete the passage.",
+   [
+    "rarely gather data on their users' habits",
+    "tend to show us what we already like",
+    "are obligated to present all viewpoints equally",
+    "make it easy for us to find dissenting opinions"
+   ],
+   [
+    2
+   ],
+   "추천 알고리즘이 사용자를 붙잡은 것을 더 보여 줘 '필터 버블'이 생긴다는 글이라 '이미 좋아하는 것을 보여 준다'는 (b)가 맞아요. (a)는 클릭까지 기록한다는 내용과 반대이고, (c) 모든 관점 의무 제시, (d) 반대 의견 찾기 쉬움도 지문과 어긋나요."
+  ],
+  [
+   69,
+   2,
+   "r1",
+   "r2-p69",
+   "Choose the best option to complete the passage.",
+   [
+    "Nevertheless",
+    "In this sense",
+    "On the other hand",
+    "For instance"
+   ],
+   [
+    2
+   ],
+   "앞에서 설명한 노래 전파 현상을 '문화 전달'로 해석해 다시 말하는 자리라 (b) In this sense(이런 의미에서)가 맞아요. (a) Nevertheless(그럼에도), (c) On the other hand(반면에)는 대조, (d) For instance(예를 들어)는 예시라 맞지 않아요."
+  ],
+  [
+   70,
+   2,
+   "r1",
+   "r2-p70",
+   "Choose the best option to complete the passage.",
+   [
+    "As a result",
+    "In spite of this",
+    "Even so",
+    "Otherwise"
+   ],
+   [
+    1
+   ],
+   "전신이 소식을 전선의 전기 신호로 보내게 된 결과 몇 주 걸리던 소식이 몇 분 만에 닿게 됐다는 인과 관계라 (a) As a result(그 결과)가 맞아요. (b) In spite of this(그럼에도 불구하고), (c) Even so(그렇더라도)는 앞뒤가 어긋날 때 쓰고, (d) Otherwise(그렇지 않으면)는 가정이라 흐름과 맞지 않아요."
+  ],
+  [
+   71,
+   2,
+   "r2",
+   "r2-p71",
+   "Choose the sentence that does NOT belong in the passage.",
+   [
+    "Shakespeare's playhouse, the Globe, was reconstructed near its original site in London in the late twentieth century.",
+    "Characterizing jealousy as a 'green-eyed monster,' for instance, derives from his tragedy Othello.",
+    "Likewise, a futile pursuit is still dubbed a 'wild-goose chase,' a phrase found in Romeo and Juliet.",
+    "Because his plays were performed and printed so extensively, such phrases gradually permeated common speech and persist in usage even today."
+   ],
+   [
+    1
+   ],
+   "셰익스피어 희곡에서 나온 일상 표현이 주제인데 (a)는 글로브 극장 재건 이야기라 초점이 벗어났어요. (b)·(c)는 표현의 예, (d)는 그 표현이 퍼진 이유라 주제와 이어져요."
+  ],
+  [
+   72,
+   2,
+   "r2",
+   "r2-p72",
+   "Choose the sentence that does NOT belong in the passage.",
+   [
+    "Proponents argue that abolishing fares helps low-income residents reach jobs, schools, and hospitals more readily.",
+    "Cities that piloted the idea usually saw ridership climb, especially among people who had seldom taken buses before.",
+    "However, studies suggest that many new riders were former pedestrians or cyclists, so congestion did not abate as much as anticipated.",
+    "Bus drivers in many countries must pass a rigorous licensing test that includes both written and road examinations."
+   ],
+   [
+    4
+   ],
+   "대중교통 무료화 실험의 근거와 결과가 주제인데 (d)는 버스 기사 면허 시험 이야기라 흐름에서 벗어나요. (a) 찬성 이유, (b) 이용객 증가, (c) 교통 체증 효과의 한계는 모두 무료화 실험에 관한 내용이에요."
+  ],
+  [
+   73,
+   2,
+   "r3",
+   "r2-p73",
+   "When do the flashlight tours take place?",
+   [
+    "Every Friday at 7 p.m.",
+    "On Fridays and Saturdays at 9 p.m.",
+    "Every evening after 6 p.m. in July",
+    "On Saturday evenings at 8 p.m."
+   ],
+   [
+    4
+   ],
+   "'On Saturday evenings only, guided flashlight tours ... will commence at 8 p.m.'이라고 했으니 (d)가 맞아요. 7시는 공룡 전시가 닫는 시각, 9시는 문 닫는 시각, 6시는 반값 입장이 시작되는 시각이에요."
+  ],
+  [
+   74,
+   2,
+   "r3",
+   "r2-p74",
+   "What is the main purpose of the email?",
+   [
+    "To confirm that a flight has been rescheduled",
+    "To inform a customer of revised checked luggage rules",
+    "To apologize for luggage lost on a recent trip",
+    "To announce a change in the limits on carry-on bags"
+   ],
+   [
+    2
+   ],
+   "부치는 짐(checked baggage) 무료 허용량이 두 개에서 하나로 줄어든다는 규정 변경을 알리는 메일이라 (b)가 맞아요. 기내 수하물(carry-on)은 그대로라 (d)는 틀리고, (a) 일정 변경, (c) 분실 사과는 나오지 않아요."
+  ],
+  [
+   75,
+   2,
+   "r3",
+   "r2-p75",
+   "What is the main purpose of the advertisement?",
+   [
+    "To promote a new piece of translation software",
+    "To offer language courses to medical practitioners",
+    "To recruit full-time staff for a new office",
+    "To seek translators for remote freelance work"
+   ],
+   [
+    4
+   ],
+   "프리랜서 번역가를 찾고 모든 일은 원격(remotely)으로 한다고 했으니 (d)가 맞아요. (c)는 정규직·사무실 근무라 틀리고, (a) 번역 프로그램 홍보, (b) 의료인 어학 강좌는 지문에 없어요."
+  ],
+  [
+   76,
+   2,
+   "r3",
+   "r2-p76",
+   "What is the main idea of the passage?",
+   [
+    "Tomatoes are the easiest vegetables for novice gardeners.",
+    "Balcony gardens yield more produce than backyard plots.",
+    "Even a small balcony can offer the joys of gardening.",
+    "The writer had to abandon gardening after moving to an apartment."
+   ],
+   [
+    3
+   ],
+   "마지막 문장 'A tiny balcony ... is ample space for a garden'이 요지라 (c)가 맞아요. (d)는 처음 생각일 뿐 실제로는 텃밭을 가꿨고, (a) 토마토가 가장 쉬움, (b) 뒷마당보다 수확이 많음은 나오지 않아요."
+  ],
+  [
+   77,
+   2,
+   "r3",
+   "r2-p77",
+   "Which of the following is correct according to the passage?",
+   [
+    "The writer was recently dismissed from an accounting job.",
+    "The columnist advises resigning from the job immediately.",
+    "The writer's family has urged a change of career.",
+    "The columnist suggests tutoring to try out teaching."
+   ],
+   [
+    4
+   ],
+   "답변에서 주말에 과외 봉사(Volunteer as a tutor)로 먼저 시험해 보라고 했으니 (d)가 맞아요. 사연자는 지금도 회계사로 일하고 있고(a), 답변은 그만두기 전에 시험해 보라고 했으며(b), 가족은 오히려 수입 감소를 감당할 수 있을지가 걱정이에요(c)."
+  ],
+  [
+   78,
+   2,
+   "r3",
+   "r2-p78",
+   "Which of the following is correct according to the passage?",
+   [
+    "Khipu were mostly made from thin strips of animal hide.",
+    "The Inca counted using a system based on twelve.",
+    "Khipu helped officials keep track of taxes and goods.",
+    "Scholars have decoded all of the narratives in khipu."
+   ],
+   [
+    3
+   ],
+   "관리들이 키푸로 세금·인구 집계·창고 물품을 기록했다(monitor taxes ... commodities)고 했으니 (c)가 맞아요. 재료는 염색한 면·양모 끈이고(a), 10 단위 체계이며(b), 아직 완전히 해독되지 않았어요(d)."
+  ],
+  [
+   79,
+   2,
+   "r3",
+   "r2-p79",
+   "Which of the following is correct according to the passage?",
+   [
+    "A haiku is divided into five phrases of equal length.",
+    "Haiku poets usually state their emotions explicitly.",
+    "A haiku often includes a word evoking a season.",
+    "Bashō invented the haiku in the twentieth century."
+   ],
+   [
+    3
+   ],
+   "하이쿠에는 보통 계절을 나타내는 말(seasonal word, kigo)이 들어간다고 했으니 (c)가 맞아요. 5·7·5의 세 구이고(a), 감정을 직접 말하지 않으며(b), 바쇼는 17세기 시인이에요(d)."
+  ],
+  [
+   80,
+   2,
+   "r3",
+   "r2-p80",
+   "Which of the following is correct according to the passage?",
+   [
+    "Companies say gig work lets people set their own hours.",
+    "Under current law, most gig workers are treated as salaried employees.",
+    "Critics believe gig workers already receive ample benefits.",
+    "Governments have outlawed app-based delivery services."
+   ],
+   [
+    1
+   ],
+   "회사들은 이 방식이 일할 시간을 스스로 고르는 유연성을 준다고 주장한다고 했으니 (a)가 맞아요. 대부분 직원이 아닌 개인 사업자로 분류되고(b), 비판하는 쪽은 보호가 더 필요하다고 보며(c), 정부는 금지가 아니라 중간 범주 법을 검토 중이에요(d)."
+  ],
+  [
+   81,
+   2,
+   "r3",
+   "r2-p81",
+   "How do users get the food they reserve on the app?",
+   [
+    "It is delivered to their homes the next morning.",
+    "It is sent to a local food bank on their behalf.",
+    "It is mailed to them in a frozen package.",
+    "They collect it at the shop during a set time."
+   ],
+   [
+    4
+   ],
+   "'they must collect it in person during a designated time window'라고 했으니 정해진 시간에 가게에서 직접 받는 (d)가 맞아요. (a) 다음 날 배달, (b) 푸드뱅크 기부, (c) 냉동 택배는 나오지 않아요."
+  ],
+  [
+   82,
+   2,
+   "r3",
+   "r2-p82",
+   "Which of the following is correct according to the passage?",
+   [
+    "Rising home prices can affect renters and owners differently.",
+    "Housing costs are the sole cause of declining birth rates.",
+    "Renters tend to have more children when prices rise.",
+    "Most couples prefer compact homes when starting a family."
+   ],
+   [
+    1
+   ],
+   "집값이 오르면 세입자는 출산을 미루지만 집주인은 오히려 출산율이 조금 오를 수 있다고 했으니 (a)가 맞아요. 집값은 '중요한 요인 하나'일 뿐이고(b), 세입자는 아이를 덜 낳으며(c), 방이 하나 더 있는 집을 원한다고 했어요(d)."
+  ],
+  [
+   83,
+   2,
+   "r3",
+   "r2-p83",
+   "What can be inferred from the passage?",
+   [
+    "Most digital detox guests are retirees.",
+    "Some people will pay extra to be kept offline.",
+    "Guests may use their phones during meal times.",
+    "Digital detox resorts struggle to attract enough guests to stay solvent."
+   ],
+   [
+    2
+   ],
+   "기기를 맡기는 상품이 보통 숙박보다 비싼데도 몇 달 전에 매진된다고 했으니 '오프라인을 위해 돈을 더 내는 사람이 있다'는 (b)를 추론할 수 있어요. 주 고객은 임원·직장인이고(a), 휴대폰은 체크인 때 맡기며(c), 매진될 만큼 인기가 있어요(d)."
+  ],
+  [
+   84,
+   2,
+   "r3",
+   "r2-p84",
+   "What can be inferred from the passage?",
+   [
+    "People laugh more at jokes when they watch alone.",
+    "Recorded laughter may make viewers laugh more readily.",
+    "Most laughter is triggered by especially witty jokes.",
+    "Hearing laughter has negligible effects on the brain."
+   ],
+   [
+    2
+   ],
+   "웃음소리만 들어도 웃을 준비를 하는 뇌 영역이 움직인다고 했으니 녹음된 웃음이 시청자를 더 쉽게 웃게 할 수 있다는 (b)를 추론할 수 있어요. 혼자일 때 덜 웃고(a), 대부분의 웃음은 농담이 아닌 평범한 말 뒤에 나오며(c), 뇌에 분명한 반응이 있어요(d)."
+  ],
+  [
+   85,
+   2,
+   "r3",
+   "r2-p85",
+   "What can be inferred from the passage?",
+   [
+    "Perchlorates are a sign that life once existed on Mars.",
+    "Earlier analyses may have overlooked traces of past life.",
+    "Radiation on the Martian surface is fairly weak.",
+    "Surface soil is the optimal place to search for life."
+   ],
+   [
+    2
+   ],
+   "시료를 가열할 때 과염소산염이 유기 분자를 측정 전에 분해할 수 있다고 했으니 예전 분석이 생명의 흔적을 놓쳤을 수 있다는 (b)를 추론할 수 있어요. 과염소산염은 생물에 해로운 물질이고(a), 방사선은 강하며(c), 땅속 암석을 봐야 한다고 했어요(d)."
+  ],
+  [
+   86,
+   2,
+   "r4",
+   "r2-p86",
+   "What is the main point of the column?",
+   [
+    "Restaurants should stop offering single portions.",
+    "People who eat alone are often lonely and miserable.",
+    "Group dinners are more relaxing than solo meals.",
+    "Eating alone has become an accepted personal choice."
+   ],
+   [
+    4
+   ],
+   "혼밥이 예전엔 피하는 일이었지만 이제 평범해졌고, 개인의 선택을 존중하는 사회라 반길 일이라는 것이 요지라 (d)가 맞아요. (b)는 예전 사람들의 걱정일 뿐이고, (a) 1인분 메뉴 중단, (c) 단체 식사가 더 편함은 필자 생각과 반대예요."
+  ],
+  [
+   87,
+   2,
+   "r4",
+   "r2-p86",
+   "Which statement would the writer most likely agree with?",
+   [
+    "Restaurants should not seat solitary diners at peak times.",
+    "Time spent eating alone can help a person recharge.",
+    "Living alone usually leads people to skip meals.",
+    "Shared meals have lost all of their social value."
+   ],
+   [
+    2
+   ],
+   "필자는 혼밥을 '작은 자기 돌봄'이라 하고 시끄러운 단체 식사 뒤보다 더 기운을 되찾아(rejuvenated) 나온다고 했으니 (b)에 동의할 거예요. (a)는 예전 일부 식당의 관행이고, (c)는 나오지 않으며, 필자는 함께 먹는 식사도 여전히 중요하다고 했어요(d)."
+  ],
+  [
+   88,
+   2,
+   "r4",
+   "r2-p88",
+   "Which of the following is correct according to the passage?",
+   [
+    "Jikji was printed several decades after Gutenberg's Bible.",
+    "Both volumes of Jikji are now kept in Paris.",
+    "Jikji was printed at a temple in the city of Seoul.",
+    "Earlier Goryeo books printed with metal type have been lost."
+   ],
+   [
+    4
+   ],
+   "고려가 그보다 앞서 금속활자를 썼다는 기록은 있지만 그 책은 남아 있지 않다(no copies ... remain)고 했으니 (d)가 맞아요. 직지는 구텐베르크보다 앞서고(a), 두 권 중 하권만 남았으며(b), 청주 흥덕사에서 찍었어요(c)."
+  ],
+  [
+   89,
+   2,
+   "r4",
+   "r2-p88",
+   "Where is the surviving copy of Jikji kept today?",
+   [
+    "In the French capital",
+    "In a printing museum in Cheongju",
+    "At Heungdeok Temple in Korea",
+    "In a private collection in Germany"
+   ],
+   [
+    1
+   ],
+   "'now housed at the National Library of France in Paris'라고 했으니 (a)가 맞아요. 청주 인쇄 박물관(b)과 흥덕사(c)는 한국에 있는 곳이고 책은 그곳에 없으며, 독일은 구텐베르크와 관련해 나온 나라예요(d)."
+  ],
+  [
+   90,
+   2,
+   "r4",
+   "r2-p90",
+   "What is the passage mainly about?",
+   [
+    "How the EU sets market prices for steel and cement",
+    "Why developing countries repudiate every carbon tax",
+    "The history of carbon permit trading in Europe",
+    "An EU measure to keep emissions from migrating abroad"
+   ],
+   [
+    4
+   ],
+   "탄소 누출(배출이 다른 나라로 옮겨 가는 문제)을 막으려고 EU가 도입한 탄소 국경 조정 제도(CBAM)를 설명하는 글이라 (d)가 맞아요. (a) 철강 가격 결정, (c) 배출권 거래의 역사는 다루지 않고, (b) 개도국 비판은 일부 내용이며 '모든 탄소세 거부'도 아니에요."
+  ],
+  [
+   91,
+   2,
+   "r4",
+   "r2-p90",
+   "According to the passage, how can a foreign producer reduce its CBAM levy?",
+   [
+    "By showing it already paid a carbon price at home",
+    "By exporting only finished consumer goods",
+    "By forming a partnership with a European importer",
+    "By lowering the retail price of its merchandise"
+   ],
+   [
+    1
+   ],
+   "자국에서 이미 탄소 가격을 냈다면 그 금액을 뺄 수 있다(can be deducted)고 했으니 (a)가 맞아요. (b) 완제품만 수출, (c) 유럽 수입업체와 제휴, (d) 판매가 인하는 부담금을 줄이는 방법으로 나오지 않아요."
+  ],
+  [
+   92,
+   2,
+   "r4",
+   "r2-p92",
+   "Which of the following is correct according to the passage?",
+   [
+    "Video visits spared rural patients long trips to specialists.",
+    "Doctors can examine patients' lungs adequately through a camera.",
+    "Elderly patients find telemedicine apps the most intuitive.",
+    "Experts recommend conducting all initial diagnoses online."
+   ],
+   [
+    1
+   ],
+   "시골 환자들이 전문의를 보러 몇 시간씩 운전하지 않아도 됐다고 했으니 (a)가 맞아요. 카메라로는 폐 소리를 들을 수 없고(b), 노인은 앱을 어려워할 수 있으며(c), 첫 진단은 대면으로 하자는 것이 전문가 의견이에요(d)."
+  ],
+  [
+   93,
+   2,
+   "r4",
+   "r2-p92",
+   "What can be inferred from the passage?",
+   [
+    "Telemedicine was ubiquitous long before the pandemic.",
+    "Most patients want to stop using video appointments.",
+    "A new patient with chest pain would likely be seen in person.",
+    "Privacy concerns have led to telemedicine being prohibited."
+   ],
+   [
+    3
+   ],
+   "첫 진단과 신체 검진은 대면으로 남긴다는 혼합 모델(hybrid model)을 권하므로 가슴 통증으로 처음 온 환자는 직접 진료받을 것이라는 (c)를 추론할 수 있어요. 원격 진료는 예전엔 틈새 서비스였고(a), 많은 사람이 더 좋아하게 됐으며(b), 금지됐다는 말은 없어요(d)."
+  ],
+  [
+   94,
+   2,
+   "r4",
+   "r2-p94",
+   "What happened to the rodents that received gut bacteria from people with depression?",
+   [
+    "They became less susceptible to stress.",
+    "They started to behave more anxiously.",
+    "They secreted more serotonin in the gut.",
+    "They lost the use of their vagus nerve."
+   ],
+   [
+    2
+   ],
+   "우울증 환자의 장내 세균을 옮긴 동물이 더 불안한 행동을 보였다(more anxious behavior)고 했으니 (b)가 맞아요. (a)는 반대이고, (c) 세로토닌 증가, (d) 미주신경 손상은 그 실험 결과로 나오지 않아요."
+  ],
+  [
+   95,
+   2,
+   "r4",
+   "r2-p94",
+   "What is the main idea of the passage?",
+   [
+    "Probiotic supplements are a proven cure for depression.",
+    "The vagus nerve primarily regulates how food is digested.",
+    "Gut microbes may affect mood, but more proof is needed.",
+    "Animal studies show that diet has no bearing on mood."
+   ],
+   [
+    3
+   ],
+   "장내 미생물이 기분에 영향을 줄 수 있다는 연구를 소개하면서도 사람 대상 근거는 아직 부족하니 조심하라는 글이라 (c)가 맞아요. (a)는 '입증된 치료'가 아니라고 했고, (b) 미주신경의 소화 조절, (d) 식단 무관은 지문과 달라요."
+  ],
+  [
+   1,
+   3,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: How's the novel I lent you?\nB: Honestly, it's so ____ that I keep falling asleep.",
+   [
+    "thrilling",
+    "boring",
+    "famous",
+    "generous"
+   ],
+   [
+    2
+   ],
+   "자꾸 잠이 든다는 말이 단서라 '지루한(boring)'이 맞아요. thrilling(아주 흥미진진한)은 반대 뜻이고, famous(유명한)·generous(너그러운)는 잠이 오는 이유가 되지 않아요."
+  ],
+  [
+   2,
+   3,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: Can I return this jacket? It's too small for me.\nB: Sure, as long as you still have the ____.",
+   [
+    "license",
+    "passport",
+    "receipt",
+    "recipe"
+   ],
+   [
+    3
+   ],
+   "옷을 반품할 때 있어야 하는 것은 '영수증(receipt)'이에요. license(면허증)·passport(여권)·recipe(요리법)는 반품과 관계없어요."
+  ],
+  [
+   3,
+   3,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: Why did you pick this apartment? It's far from the subway.\nB: The rent was ____, and nothing nearby was cheaper.",
+   [
+    "affordable",
+    "visible",
+    "mandatory",
+    "furious"
+   ],
+   [
+    1
+   ],
+   "근처에 더 싼 곳이 없었다는 뒷말이 단서라 '감당할 만한, 저렴한(affordable)'이 맞아요. visible(눈에 보이는)·mandatory(의무적인)·furious(몹시 화난)는 집을 고른 이유가 되지 않아요."
+  ],
+  [
+   4,
+   3,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: You look exhausted. Up late again?\nB: Yeah, I had to ____ an essay that was due at 9 a.m.",
+   [
+    "borrow",
+    "complete",
+    "refuse",
+    "forgive"
+   ],
+   [
+    2
+   ],
+   "아침 9시 마감 에세이 때문에 늦게 잤으니 '끝내다(complete)'가 맞아요. borrow(빌리다)·refuse(거절하다)·forgive(용서하다)는 밤샘 이유와 이어지지 않아요."
+  ],
+  [
+   5,
+   3,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: Is Mina coming to the picnic on Saturday?\nB: She's not sure yet. She said she'd ____ me by Friday night.",
+   [
+    "obey",
+    "accept",
+    "contact",
+    "attend"
+   ],
+   [
+    3
+   ],
+   "아직 모르니 금요일 밤까지 '연락하겠다(contact)'는 말이 자연스러워요. obey(복종하다)·accept(받아들이다)·attend(참석하다)는 나에게 알려 준다는 뜻이 없어요."
+  ],
+  [
+   6,
+   3,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: The CEO's interview was so vague. What was his point?\nB: No idea. He gave ____ answers to every direct question.",
+   [
+    "candid",
+    "succinct",
+    "evasive",
+    "lucid"
+   ],
+   [
+    3
+   ],
+   "요점을 알 수 없었다는 말과 이어지려면 '얼버무리는, 회피하는(evasive)'이 맞아요. candid(솔직한)·succinct(간결한)·lucid(명료한)는 모두 요점이 분명하다는 쪽이라 앞말과 어긋나요."
+  ],
+  [
+   7,
+   3,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: Are you still planning to open your own bakery?\nB: Not now. I'll ____ opening it until the economy improves.",
+   [
+    "take after",
+    "run into",
+    "make up for",
+    "hold off on"
+   ],
+   [
+    4
+   ],
+   "경기가 나아질 때까지 미루겠다는 뜻이라 '~을 미루다, 보류하다(hold off on)'가 맞아요. take after(~을 닮다)·run into(우연히 만나다)·make up for(~을 만회하다)는 가게 열기를 미룬다는 뜻이 없어요."
+  ],
+  [
+   8,
+   3,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: Did the companies agree on the merger?\nB: No. Talks have come to a ____, and neither side will budge.",
+   [
+    "rapport",
+    "surplus",
+    "tribute",
+    "standstill"
+   ],
+   [
+    4
+   ],
+   "어느 쪽도 물러서지 않는다는 뒷말이 단서라 '교착 상태(standstill)'가 맞아요. rapport(친밀한 관계)·surplus(흑자, 남는 양)·tribute(찬사)는 막힌 협상을 나타내지 않아요."
+  ],
+  [
+   9,
+   3,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: I can't believe Jake got promoted instead of you.\nB: Me neither, but there's no use ____. I'll just work harder.",
+   [
+    "breaking the ice",
+    "hitting the road",
+    "crying over spilled milk",
+    "pulling my leg"
+   ],
+   [
+    3
+   ],
+   "이미 끝난 일을 두고 한탄해 봐야 소용없다는 흐름이라 '엎질러진 물을 두고 울다(crying over spilled milk)'가 맞아요. breaking the ice(어색함을 깨다)·hitting the road(길을 나서다)·pulling my leg(놀리다)는 승진 탈락과 이어지지 않아요."
+  ],
+  [
+   10,
+   3,
+   "v1",
+   null,
+   "Choose the best answer for the blank.\nA: Your grandmother remembers every detail of her childhood.\nB: I know. Her memory is remarkably ____ for someone in her nineties.",
+   [
+    "fickle",
+    "frugal",
+    "dormant",
+    "retentive"
+   ],
+   [
+    4
+   ],
+   "어린 시절을 하나하나 기억한다는 말이라 '기억력이 좋은(retentive)'이 맞아요. fickle(변덕스러운)·frugal(검소한)·dormant(잠자는, 휴면의)는 뛰어난 기억력을 나타내지 않아요."
+  ],
+  [
+   11,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe city plans to ____ the old bridge next year because it can no longer carry heavy trucks safely.",
+   [
+    "inherit",
+    "replace",
+    "applaud",
+    "imitate"
+   ],
+   [
+    2
+   ],
+   "무거운 트럭을 안전하게 버티지 못하니 다리를 '교체하다(replace)'가 맞아요. inherit(물려받다)·applaud(박수 치다)·imitate(흉내 내다)는 낡은 다리에 할 일이 아니에요."
+  ],
+  [
+   12,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nBecause the instructions were written in plain language, even first-time users found the device ____ to set up.",
+   [
+    "reluctant",
+    "straightforward",
+    "vulnerable",
+    "temporary"
+   ],
+   [
+    2
+   ],
+   "설명서가 쉬운 말로 쓰였으니 설치가 '간단한(straightforward)'이 맞아요. reluctant(꺼리는)는 사람에게 쓰고, vulnerable(취약한)·temporary(일시적인)는 설치가 쉬운 이유와 이어지지 않아요."
+  ],
+  [
+   13,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nResearchers ____ data from more than two thousand households to study changes in spending.",
+   [
+    "abandoned",
+    "postponed",
+    "collected",
+    "resembled"
+   ],
+   [
+    3
+   ],
+   "소비 변화를 연구하려고 가구 자료를 '모았다(collected)'가 맞아요. abandoned(버렸다)·postponed(미뤘다)·resembled(닮았다)는 연구 목적과 맞지 않아요."
+  ],
+  [
+   14,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe museum will ____ its opening hours during the holiday season to welcome more visitors.",
+   [
+    "decline",
+    "conceal",
+    "dismiss",
+    "extend"
+   ],
+   [
+    4
+   ],
+   "방문객을 더 받으려면 운영 시간을 '늘리다(extend)'가 맞아요. decline(거절하다)·conceal(숨기다)·dismiss(묵살하다)는 더 많은 방문객을 맞는 것과 맞지 않아요."
+  ],
+  [
+   15,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nMany employees expressed ____ with the new policy, saying it added hours of paperwork each week.",
+   [
+    "curiosity",
+    "gratitude",
+    "tolerance",
+    "frustration"
+   ],
+   [
+    4
+   ],
+   "서류 일이 몇 시간씩 늘었다고 했으니 '불만, 좌절(frustration)'이 맞아요. curiosity(호기심)·gratitude(감사)·tolerance(관용)는 불평하는 말과 맞지 않아요."
+  ],
+  [
+   16,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nTo reduce traffic, the government will ____ drivers who enter the city center during rush hour.",
+   [
+    "reward",
+    "charge",
+    "admire",
+    "elect"
+   ],
+   [
+    2
+   ],
+   "교통량을 줄이려면 혼잡 시간에 들어오는 운전자에게 '요금을 물리다(charge)'가 맞아요. reward(보상하다)는 오히려 진입을 늘리고, admire(감탄하다)·elect(선출하다)는 정책 수단이 아니에요."
+  ],
+  [
+   17,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nUnlike most of his colleagues, the professor remained ____ about the results until other labs could repeat the experiment.",
+   [
+    "obedient",
+    "generous",
+    "fragile",
+    "cautious"
+   ],
+   [
+    4
+   ],
+   "다른 연구실이 재현할 때까지 기다렸으니 결과에 '신중한(cautious)'이 맞아요. obedient(순종하는)·generous(너그러운)·fragile(깨지기 쉬운)은 결과를 대하는 태도로 맞지 않아요."
+  ],
+  [
+   18,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe new law aims to ____ consumers from companies that collect personal data without permission.",
+   [
+    "shield",
+    "borrow",
+    "wander",
+    "recruit"
+   ],
+   [
+    1
+   ],
+   "허락 없이 개인 정보를 모으는 회사로부터 소비자를 '보호하다(shield A from B)'가 맞아요. borrow(빌리다)·wander(돌아다니다)·recruit(모집하다)는 이런 뜻이 없어요."
+  ],
+  [
+   19,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nSeveral witnesses came forward to ____ the driver's account of how the accident happened.",
+   [
+    "confirm",
+    "misplace",
+    "donate",
+    "hesitate"
+   ],
+   [
+    1
+   ],
+   "목격자들이 나서서 운전자의 진술을 '확인해 주다(confirm)'가 맞아요. misplace(잘못 두다)·donate(기부하다)는 진술과 맞지 않고, hesitate(망설이다)는 목적어를 받지 않아요."
+  ],
+  [
+   20,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe region's economy is highly ____ on tourism, so the pandemic hit local businesses especially hard.",
+   [
+    "keen",
+    "dependent",
+    "intent",
+    "insistent"
+   ],
+   [
+    2
+   ],
+   "관광이 줄자 지역 상권이 크게 타격을 입었다는 뒷말이 단서라 관광에 '의존하는(dependent on)'이 맞아요. keen(열망하는)·intent(작정한)·insistent(고집하는)도 on 과 쓰이지만 경제를 꾸미는 뜻이 아니에요."
+  ],
+  [
+   21,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nCritics argue that the new tax will ____ the gap between rich and poor rather than narrow it.",
+   [
+    "expedite",
+    "exacerbate",
+    "emancipate",
+    "reciprocate"
+   ],
+   [
+    2
+   ],
+   "'좁히기보다는'과 대조되니 격차를 '악화시키다, 더 벌리다(exacerbate)'가 맞아요. expedite(신속히 처리하다)·emancipate(해방하다)·reciprocate(보답하다)는 격차를 목적어로 쓰지 않아요."
+  ],
+  [
+   22,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe senator refused to ____ his earlier statement, insisting that every word of it was accurate.",
+   [
+    "retract",
+    "emulate",
+    "bequeath",
+    "ostracize"
+   ],
+   [
+    1
+   ],
+   "모든 말이 정확하다고 버텼으니 발언을 '철회하다(retract)'를 거부한 거예요. emulate(본받다)·bequeath(유산으로 남기다)·ostracize(따돌리다)는 자기 발언에 할 일이 아니에요."
+  ],
+  [
+   23,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe documentary's ____ portrayal of factory life shows workers' exhaustion without softening any detail.",
+   [
+    "placid",
+    "frivolous",
+    "unvarnished",
+    "ostentatious"
+   ],
+   [
+    3
+   ],
+   "어떤 장면도 순화하지 않았으니 '꾸밈없는, 있는 그대로의(unvarnished)'가 맞아요. placid(잔잔한)·frivolous(경박한)·ostentatious(과시하는)는 거친 현실을 그대로 보여 준다는 뜻이 없어요."
+  ],
+  [
+   24,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nLawmakers hope stricter penalties will ____ companies from dumping waste into rivers.",
+   [
+    "exempt",
+    "absolve",
+    "deter",
+    "discharge"
+   ],
+   [
+    3
+   ],
+   "더 센 처벌로 기업이 강에 폐기물을 버리지 못하게 '막는다(deter A from)'가 맞아요. exempt(면제하다)·absolve(죄·책임을 면해 주다)·discharge(내보내다, 풀어 주다)도 from 과 쓰이지만 처벌의 목적과 반대거나 뜻이 맞지 않아요."
+  ],
+  [
+   25,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nAfter the scandal, the company hired a new spokesperson to ____ its damaged reputation.",
+   [
+    "relinquish",
+    "disparage",
+    "proliferate",
+    "rehabilitate"
+   ],
+   [
+    4
+   ],
+   "손상된 평판을 '회복시키다(rehabilitate)'가 맞아요. relinquish(포기하다)·disparage(깎아내리다)는 새 대변인을 쓴 목적과 반대이고, proliferate(급증하다)는 목적어를 받지 않아요."
+  ],
+  [
+   26,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe novelist's latest book is a ____ of short stories she wrote over three decades.",
+   [
+    "anthology",
+    "dichotomy",
+    "paradigm",
+    "misnomer"
+   ],
+   [
+    1
+   ],
+   "30년 동안 쓴 단편을 모은 책이니 '모음집(anthology)'이 맞아요. dichotomy(이분법)·paradigm(전형, 틀)·misnomer(잘못된 이름)는 여러 작품을 묶은 책을 뜻하지 않아요."
+  ],
+  [
+   27,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe startup's founders tried to ____ investors' concerns by publishing detailed financial reports every month.",
+   [
+    "instigate",
+    "assuage",
+    "galvanize",
+    "forfeit"
+   ],
+   [
+    2
+   ],
+   "자세한 재무 보고서를 매달 공개한 목적은 투자자 걱정을 '누그러뜨리다(assuage)'예요. instigate(부추기다)·galvanize(자극하다)는 걱정을 키우는 쪽이고, forfeit(몰수당하다, 잃다)는 걱정과 어울리지 않아요."
+  ],
+  [
+   28,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nOnce a ____ fishing village that few outsiders ever visited, the town is now one of the region's busiest ports.",
+   [
+    "isolated",
+    "belligerent",
+    "verbose",
+    "gregarious"
+   ],
+   [
+    1
+   ],
+   "외부인이 거의 찾지 않던 어촌이라 '외딴(isolated)'이 맞아요. belligerent(호전적인)·verbose(말이 많은)·gregarious(사교적인)는 마을을 꾸미기에 어울리지 않아요."
+  ],
+  [
+   29,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nThe committee voted to ____ the outdated regulation, which had not been enforced for years.",
+   [
+    "rescind",
+    "bolster",
+    "infer",
+    "placate"
+   ],
+   [
+    1
+   ],
+   "몇 년째 집행되지 않은 낡은 규정을 '폐지하다(rescind)'가 맞아요. bolster(강화하다)는 낡은 규정에 할 일이 아니고, infer(추론하다)·placate(달래다)는 규정을 목적어로 쓰지 않아요."
+  ],
+  [
+   30,
+   3,
+   "v2",
+   null,
+   "Choose the best answer for the blank.\nRising sea levels threaten to ____ low-lying islands in the Pacific within the next century.",
+   [
+    "commemorate",
+    "abdicate",
+    "submerge",
+    "extrapolate"
+   ],
+   [
+    3
+   ],
+   "해수면 상승이 낮은 섬을 '물에 잠기게 하다(submerge)'가 맞아요. commemorate(기념하다)·abdicate(퇴위하다)·extrapolate(추정하다)는 바닷물이 섬에 하는 일이 아니에요."
+  ],
+  [
+   31,
+   3,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Have you heard from Professor Lim lately?\nB: No, I ____ her since she went on sabbatical last spring.",
+   [
+    "don't see",
+    "didn't see",
+    "wasn't seeing",
+    "haven't seen"
+   ],
+   [
+    4
+   ],
+   "since(~이후로)가 과거부터 지금까지 이어진 기간을 말하니 현재완료 haven't seen 이 맞아요. don't see·didn't see·wasn't seeing 은 since 와 함께 쓸 수 없어요."
+  ],
+  [
+   32,
+   3,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Jisu didn't respond to any of my messages last night.\nB: She ____ exhausted after defending her dissertation that afternoon.",
+   [
+    "must have been",
+    "must be being",
+    "has to being",
+    "can have been"
+   ],
+   [
+    1
+   ],
+   "지난밤 일을 두고 '틀림없이 ~였을 것이다'라고 추측하니 must have been 이 맞아요. must be being 은 상태를 진행형으로 써서 어색하고, has to being 은 to 뒤 형태가 틀렸으며, can have been 은 긍정문 추측에 쓰지 않아요."
+  ],
+  [
+   33,
+   3,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Did you buy anything at the market?\nB: Just a few apples. There wasn't ____ fruit left when I arrived.",
+   [
+    "many",
+    "much",
+    "a few",
+    "few"
+   ],
+   [
+    2
+   ],
+   "fruit 는 여기서 셀 수 없는 명사로 쓰였으니 부정문에서 much 가 맞아요. many·a few·few 는 셀 수 있는 복수 명사 앞에 써요."
+  ],
+  [
+   34,
+   3,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Which one is your sister in this photo?\nB: She's the one ____ hair is tied back with a red ribbon.",
+   [
+    "who",
+    "which",
+    "whose",
+    "that"
+   ],
+   [
+    3
+   ],
+   "'그녀의 머리'처럼 뒤 명사 hair 와 소유 관계를 이으니 whose 가 맞아요. who·which·that 은 뒤에 주어나 목적어가 빠진 절이 와야 하는데 여기는 빠진 것이 없어요."
+  ],
+  [
+   35,
+   3,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: It's freezing in here.\nB: Would you mind ____ the window, then? I can't reach it.",
+   [
+    "closing",
+    "to close",
+    "close",
+    "to closing"
+   ],
+   [
+    1
+   ],
+   "mind 는 동명사를 목적어로 받으니 closing 이 맞아요. to close·close·to closing 은 mind 뒤에 올 수 없어요."
+  ],
+  [
+   36,
+   3,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: How was the concert last night?\nB: I missed it. If I ____ about it earlier, I would have gone.",
+   [
+    "know",
+    "knew",
+    "have known",
+    "had known"
+   ],
+   [
+    4
+   ],
+   "would have gone 으로 과거 사실과 반대를 가정하니 if 절은 과거완료 had known 이 맞아요. know·knew·have known 은 가정법 과거완료의 if 절 형태가 아니에요."
+  ],
+  [
+   37,
+   3,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: I can't figure out how to calibrate this microscope.\nB: Let me ask someone ____.",
+   [
+    "where is the manual kept",
+    "where the manual is kept",
+    "the manual is kept where",
+    "where is kept the manual"
+   ],
+   [
+    2
+   ],
+   "ask 의 목적어로 들어간 간접 의문문은 '의문사 + 주어 + 동사' 순서라 where the manual is kept 가 맞아요. 나머지는 의문문 어순이 남았거나 의문사·동사 자리가 틀렸어요."
+  ],
+  [
+   38,
+   3,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Which of these two shirts do you like better?\nB: Honestly, I don't like ____. They both look too formal.",
+   [
+    "either of it",
+    "either of them",
+    "neither of them",
+    "both of them"
+   ],
+   [
+    2
+   ],
+   "둘 다 싫다는 뜻을 not ~ either 로 나타내니 either of them 이 맞아요. either of it 은 대명사 수가 틀렸고, don't ~ neither 는 이중 부정, don't like both 는 '둘 다 좋은 건 아니다'라 뒷말과 어긋나요."
+  ],
+  [
+   39,
+   3,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Can you let me know when you get to the hotel?\nB: Sure, I'll text you as soon as I ____.",
+   [
+    "will arrive",
+    "would arrive",
+    "am arrived",
+    "arrive"
+   ],
+   [
+    4
+   ],
+   "as soon as 같은 시간 부사절에서는 미래 일을 현재형으로 쓰니 arrive 가 맞아요. will arrive·would arrive 는 시간 부사절에 쓰지 않고, am arrived 는 자동사를 수동처럼 써서 틀렸어요."
+  ],
+  [
+   40,
+   3,
+   "g1",
+   null,
+   "Choose the best answer for the blank.\nA: Your car looks brand new!\nB: Thanks. I ____ just last week.",
+   [
+    "had it repainted",
+    "had repainted it",
+    "had it repaint",
+    "had it to repaint"
+   ],
+   [
+    1
+   ],
+   "차가 '칠해지게 한' 것이니 'have + 목적어 + 과거분사' had it repainted 가 맞아요. had repainted it 은 last week 와 맞지 않는 과거완료이고, had it repaint·had it to repaint 는 목적어와 동사의 수동 관계를 못 나타내요."
+  ],
+  [
+   41,
+   3,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nBy the time the relief convoy reached the devastated village, the floodwaters ____ to recede.",
+   [
+    "begin",
+    "have begun",
+    "are beginning",
+    "had begun"
+   ],
+   [
+    4
+   ],
+   "구호 차량 행렬이 도착한 과거 시점보다 먼저 일어난 일이니 과거완료 had begun 이 맞아요. begin·have begun·are beginning 은 과거 시점을 말하는 by the time 절과 시제가 맞지 않아요."
+  ],
+  [
+   42,
+   3,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe medieval manuscript, which ____ in a remote monastery for centuries, is now exhibited at the national archive.",
+   [
+    "had been kept",
+    "had kept",
+    "was keeping",
+    "has kept"
+   ],
+   [
+    1
+   ],
+   "필사본은 '보관된' 대상이라 수동태 had been kept 가 맞아요. had kept·was keeping·has kept 는 능동이라 필사본이 무언가를 보관했다는 뜻이 돼요."
+  ],
+  [
+   43,
+   3,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nNever before ____ such a dramatic surge of young voters in a municipal election.",
+   [
+    "had the town seen",
+    "the town had seen",
+    "had seen the town",
+    "the town seen had"
+   ],
+   [
+    1
+   ],
+   "부정어 Never before 가 문장 앞에 오면 '조동사 + 주어 + 동사'로 도치하니 had the town seen 이 맞아요. 나머지는 도치가 안 됐거나 주어·동사 순서가 틀렸어요."
+  ],
+  [
+   44,
+   3,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\n____ in accessible prose, the treatise on climate economics has attracted readers far beyond academia.",
+   [
+    "Writing",
+    "Written",
+    "Having written",
+    "To write"
+   ],
+   [
+    2
+   ],
+   "논문은 '쓰인' 대상이라 수동 분사구문 Written 이 맞아요. Writing·Having written 은 논문이 직접 썼다는 뜻이 되고, To write 는 목적의 뜻이라 어울리지 않아요."
+  ],
+  [
+   45,
+   3,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe safety board recommended that every technician ____ a safety course before the reactor resumes operation.",
+   [
+    "completed",
+    "has completed",
+    "completing",
+    "complete"
+   ],
+   [
+    4
+   ],
+   "recommend 처럼 권고하는 동사 뒤 that 절에는 동사원형을 쓰니 complete 가 맞아요. completed·has completed·completing 은 이 자리에 쓰지 않아요."
+  ],
+  [
+   46,
+   3,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe revised edition of the dictionary is ____ the original, with nearly twice as many entries.",
+   [
+    "as long twice as",
+    "twice long as as",
+    "as twice long as",
+    "twice as long as"
+   ],
+   [
+    4
+   ],
+   "배수 비교는 '배수 + as + 형용사 + as' 순서라 twice as long as 가 맞아요. 나머지는 같은 낱말의 순서가 틀렸어요."
+  ],
+  [
+   47,
+   3,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe science museum attracts ____ visitors on weekdays than on weekends.",
+   [
+    "less",
+    "little",
+    "fewer",
+    "few"
+   ],
+   [
+    3
+   ],
+   "visitors 는 셀 수 있는 복수 명사이고 뒤에 than 이 있으니 비교급 fewer 가 맞아요. less·little 은 셀 수 없는 명사에 쓰고, few 는 than 과 함께 쓸 수 없어요."
+  ],
+  [
+   48,
+   3,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe conglomerate is committed to ____ its carbon emissions by half over the next decade.",
+   [
+    "reducing",
+    "reduce",
+    "be reduced",
+    "have reduced"
+   ],
+   [
+    1
+   ],
+   "be committed to 의 to 는 전치사라 뒤에 동명사 reducing 이 와요. reduce·be reduced·have reduced 는 to 를 부정사로 잘못 본 형태예요."
+  ],
+  [
+   49,
+   3,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe excavation was suspended ____ the torrential rain that had been forecast for the region.",
+   [
+    "because",
+    "because of",
+    "although",
+    "due"
+   ],
+   [
+    2
+   ],
+   "뒤에 절이 아니라 명사구(the torrential rain …)가 오니 전치사 because of 가 맞아요. because·although 는 접속사라 절이 와야 하고, due 는 to 없이 전치사로 쓰지 않아요."
+  ],
+  [
+   50,
+   3,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe coastal town ____ I grew up has undergone such drastic gentrification that I barely recognize it.",
+   [
+    "which",
+    "what",
+    "where",
+    "that"
+   ],
+   [
+    3
+   ],
+   "grew up 뒤에 장소 전치사가 없으니 관계부사 where 가 맞아요. which·that 을 쓰려면 grew up in 이 필요하고, what 은 앞에 선행사가 있으면 쓸 수 없어요."
+  ],
+  [
+   51,
+   3,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe noise from the demolition site kept ____ for most of the night.",
+   [
+    "awake the residents",
+    "the residents awake",
+    "awake residents the",
+    "the awake residents"
+   ],
+   [
+    2
+   ],
+   "'keep + 목적어 + 형용사(목적격 보어)' 꼴이라 the residents awake 가 맞아요. 나머지는 목적어와 보어 순서가 틀렸거나 보어가 빠졌어요."
+  ],
+  [
+   52,
+   3,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe results of the national survey were ____ to the researchers, who had anticipated the opposite.",
+   [
+    "surprise",
+    "surprised",
+    "surprising",
+    "to surprise"
+   ],
+   [
+    3
+   ],
+   "결과가 연구자들에게 '놀라움을 주는' 것이니 현재분사 surprising 이 맞아요. surprised 는 사람이 놀란 상태이고, surprise 는 동사원형·명사, to surprise 는 보어 뜻이 어색해요."
+  ],
+  [
+   53,
+   3,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe two heads of state signed a treaty pledging to respect ____ territorial sovereignty.",
+   [
+    "each other's",
+    "each others",
+    "one another",
+    "themselves"
+   ],
+   [
+    1
+   ],
+   "'서로의 영토 주권'이라는 소유 뜻이니 each other's 가 맞아요. each others 는 틀린 꼴이고, one another·themselves 는 소유격이 아니라 명사 앞에 올 수 없어요."
+  ],
+  [
+   54,
+   3,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nEpidemiologists ____ the long-term effects of the vaccine for over a decade, and the study is still ongoing.",
+   [
+    "studied",
+    "had studied",
+    "have been studying",
+    "will study"
+   ],
+   [
+    3
+   ],
+   "10년 넘게 이어 왔고 지금도 진행 중이니 현재완료 진행 have been studying 이 맞아요. studied 는 끝난 일, had studied 는 과거 기준, will study 는 앞으로의 일이라 어긋나요."
+  ],
+  [
+   55,
+   3,
+   "g2",
+   null,
+   "Choose the best answer for the blank.\nThe old bridge is too narrow for heavy trucks ____ safely.",
+   [
+    "crossing",
+    "crossed",
+    "to cross",
+    "cross"
+   ],
+   [
+    3
+   ],
+   "'too + 형용사 + for 의미상 주어 + to부정사' 꼴이라 to cross 가 맞아요. crossing·crossed·cross 는 이 구문에 들어갈 수 없어요."
+  ],
+  [
+   56,
+   3,
+   "g3",
+   null,
+   "Choose the line that contains an awkward expression or a grammatical error.",
+   [
+    "A: Are you still planning to attend the archaeology conference in Lisbon?",
+    "B: I was, but my advisor suggested to postpone the trip until spring.",
+    "A: Why? Did the organizers change the schedule?",
+    "B: Not really. She just thinks my paper needs more work first."
+   ],
+   [
+    2
+   ],
+   "(b) suggest 는 동명사를 목적어로 받으니 'to postpone'이 아니라 'postponing'이어야 해요. 나머지 줄은 어법상 문제없어요."
+  ],
+  [
+   57,
+   3,
+   "g3",
+   null,
+   "Choose the line that contains an awkward expression or a grammatical error.",
+   [
+    "A: How was the career expo you attended yesterday afternoon?",
+    "B: Crowded. There was hundreds of graduates queuing at every booth.",
+    "A: Did you manage to speak with any of the recruiters?",
+    "B: Only two, but one of them asked me to forward my portfolio."
+   ],
+   [
+    2
+   ],
+   "(b) there 구문의 동사는 뒤 주어 'hundreds of graduates'에 맞춰야 하니 'was'가 아니라 'were'여야 해요. 나머지 줄은 어법상 문제없어요."
+  ],
+  [
+   58,
+   3,
+   "g3",
+   null,
+   "Choose the line that contains an awkward expression or a grammatical error.",
+   [
+    "Honeybees convey the location of nectar through a remarkably precisely movement known as the waggle dance.",
+    "When a forager returns to the hive, she walks in a figure-eight pattern while waggling her body.",
+    "The angle of the straight part of the dance indicates the direction of the food relative to the sun.",
+    "The length of the dance, meanwhile, tells the other bees roughly how far they need to fly."
+   ],
+   [
+    1
+   ],
+   "(a) 명사 movement 를 꾸미는 자리라 부사 'precisely'가 아니라 형용사 'precise'여야 해요(remarkably 가 precise 를 꾸며요). 나머지 문장은 어법상 문제없어요."
+  ],
+  [
+   59,
+   3,
+   "g3",
+   null,
+   "Choose the line that contains an awkward expression or a grammatical error.",
+   [
+    "In many large cities worldwide, the proportion of people who live alone has risen steadily over the past few decades.",
+    "This demographic shift has occurred partly because of young adults are postponing marriage considerably longer than previous generations did.",
+    "At the same time, longer life expectancy means that more elderly people now outlive their spouses.",
+    "As a result, builders are increasingly designing smaller homes and single-serving products for this growing market."
+   ],
+   [
+    2
+   ],
+   "(b) 뒤에 주어와 동사가 있는 절(young adults are postponing …)이 오니 전치사 'because of'가 아니라 접속사 'because'여야 해요. 나머지 문장은 어법상 문제없어요."
+  ],
+  [
+   60,
+   3,
+   "g3",
+   null,
+   "Choose the line that contains an awkward expression or a grammatical error.",
+   [
+    "In recent decades, neuroscientists have accumulated many evidences that regular exercise protects cognitive function as well as physical health.",
+    "Aerobic activity increases cerebral blood flow, supplying the brain with the oxygen and nutrients it requires.",
+    "Exercise also stimulates the secretion of proteins that help neurons survive and form new synaptic connections.",
+    "For these reasons, many doctors now recommend physical activity as a way to lower the risk of memory loss."
+   ],
+   [
+    1
+   ],
+   "(a) evidence 는 셀 수 없는 명사라 'many evidences'가 아니라 'much evidence'(또는 a great deal of evidence)여야 해요. 나머지 문장은 어법상 문제없어요."
+  ],
+  [
+   61,
+   3,
+   "r1",
+   "r3-p61",
+   "Choose the best option to complete the passage.",
+   [
+    "your dog will learn to tolerate solitude at home",
+    "you can finally bring your dog to the office",
+    "your dog will never endure a lonely day again",
+    "you will no longer need to exercise your dog"
+   ],
+   [
+    3
+   ],
+   "광고 앞부분이 '하루 종일 개를 혼자 두는 게 미안한가요?'로 시작하고 낮 동안 다른 개들과 놀게 해 준다고 하므로 (c) '다시는 외로운 하루를 보내지 않는다'가 맞아요. (a) 집에서 혼자 있는 법을 배운다, (b) 사무실에 데려간다, (d) 운동시킬 필요가 없다는 광고 내용과 관계없어요."
+  ],
+  [
+   62,
+   3,
+   "r1",
+   "r3-p62",
+   "Choose the best option to complete the passage.",
+   [
+    "the outdoor pool will reopen next spring",
+    "spots in each class fill up very quickly",
+    "private lessons incur an additional fee",
+    "the locker rooms will be renovated next year"
+   ],
+   [
+    2
+   ],
+   "'지금 등록하세요, 왜냐하면 ~'이므로 서둘러야 하는 이유인 (b) '반마다 자리가 빨리 찬다'가 맞아요. (a) 야외 수영장 재개장, (c) 개인 강습 추가 요금은 서두를 이유가 아니고, (d)는 탈의실을 이미 새로 고쳤다는 내용과 어긋나요."
+  ],
+  [
+   63,
+   3,
+   "r1",
+   "r3-p63",
+   "Choose the best option to complete the passage.",
+   [
+    "The Vikings recorded their lengthy sagas on stone monuments",
+    "Viking script was shaped by the materials it was carved into",
+    "Viking runes were borrowed directly from the Latin alphabet",
+    "Viking carvers preferred writing on paper to carving wood"
+   ],
+   [
+    2
+   ],
+   "나뭇결 때문에 가로획을 피했고, 새기는 일이 고돼 글이 짧았다는 내용이 이어지므로 첫 문장은 (b) '바이킹 문자는 새기는 재료에 따라 모양이 정해졌다'예요. (a) 사가는 말로 전해졌고, (c) 라틴 문자는 나중에 받아들였으며, (d) 종이 이야기는 없어요."
+  ],
+  [
+   64,
+   3,
+   "r1",
+   "r3-p64",
+   "Choose the best option to complete the passage.",
+   [
+    "Baroque composers seldom wrote heroic parts for high voices",
+    "Women sang most of the leading heroic roles in baroque opera",
+    "Baroque opera's heroes were often sung by an unusual voice type",
+    "Baroque opera declined because its star singers were too costly"
+   ],
+   [
+    3
+   ],
+   "바로크 오페라의 영웅 역을 높은 음역의 남성 가수 카스트라토가 불렀다는 글이므로 (c) '영웅 역을 특이한 목소리가 불렀다'가 맞아요. (a) 높은 목소리용 영웅 역을 많이 썼고, (b) 당시 주역은 여성이 아니었으며, (d) 쇠퇴 이유는 나오지 않아요."
+  ],
+  [
+   65,
+   3,
+   "r1",
+   "r3-p65",
+   "Choose the best option to complete the passage.",
+   [
+    "compel stores to lower their prices even further",
+    "lure customers away from competing stores",
+    "keep prices higher than they would otherwise be",
+    "foster shoppers' loyalty to discount retailers"
+   ],
+   [
+    3
+   ],
+   "모든 가게가 가격을 맞춰 주면 값을 내릴 동기가 사라진다고 했으므로 소비자에게 좋아 보이는 정책이 역설적으로 (c) '가격을 오히려 높게 유지하게 한다'가 맞아요. (a)는 반대 내용이고, (b) 손님 빼앗기, (d) 할인점 충성도는 글의 결론과 관계없어요."
+  ],
+  [
+   66,
+   3,
+   "r1",
+   "r3-p66",
+   "Choose the best option to complete the passage.",
+   [
+    "Freelancers are abandoning coworking spaces for home offices",
+    "Start-ups now prefer long-term leases to shared offices",
+    "Coworking spaces are struggling to attract new clientele",
+    "Coworking spaces no longer cater only to small businesses"
+   ],
+   [
+    4
+   ],
+   "예전엔 프리랜서·스타트업이 주로 썼지만 이제는 대기업도 층 전체를 빌린다는 글이므로 (d) '공유 오피스는 더 이상 작은 회사만의 것이 아니다'가 맞아요. (a) 프리랜서가 떠난다, (b) 스타트업이 장기 임대를 선호한다, (c) 손님 모으기가 어렵다는 내용은 없어요."
+  ],
+  [
+   67,
+   3,
+   "r1",
+   "r3-p67",
+   "Choose the best option to complete the passage.",
+   [
+    "how much masks cost at nearby stores",
+    "whether they already own a smartphone",
+    "what they learn from air-quality alerts",
+    "the hue of the sky that morning"
+   ],
+   [
+    3
+   ],
+   "하늘이 아직 맑아도 뉴스·앱에 경고가 뜨면 판매가 하루 먼저 오른다고 했으므로 (c) '대기질 경보로 알게 되는 것'이 맞아요. (a) 가격, (b) 스마트폰 소유는 근거가 없고, (d) 하늘 빛깔은 '밖에서 보는 것'이라 빈칸 앞 내용과 반대예요."
+  ],
+  [
+   68,
+   3,
+   "r1",
+   "r3-p68",
+   "Choose the best option to complete the passage.",
+   [
+    "Food labels in Korea now carry more nutritional information",
+    "Retailers in Korea must remove old food from shelves sooner",
+    "A subtle change on food labels is aimed at curbing waste",
+    "Korean shoppers are being urged to discard food earlier"
+   ],
+   [
+    3
+   ],
+   "유통기한을 소비기한으로 바꿔 멀쩡한 음식을 버리는 일을 줄이려 한다는 글이므로 (c) '식품 표시의 작은 변화가 낭비를 줄이려는 것'이 맞아요. (a) 영양 정보, (b) 더 빨리 치우기, (d) 더 일찍 버리기는 글과 다르거나 반대예요."
+  ],
+  [
+   69,
+   3,
+   "r1",
+   "r3-p69",
+   "Choose the best option to complete the passage.",
+   [
+    "In return",
+    "Otherwise",
+    "For instance",
+    "Nevertheless"
+   ],
+   [
+    1
+   ],
+   "균류가 나무에 물과 무기질을 주고, 나무는 그 대가로 당분을 준다는 주고받기 관계이므로 (a) In return(그 대가로)이 맞아요. (b) Otherwise(그렇지 않으면), (c) For instance(예를 들어), (d) Nevertheless(그럼에도)는 앞뒤 관계에 맞지 않아요."
+  ],
+  [
+   70,
+   3,
+   "r1",
+   "r3-p70",
+   "Choose the best option to complete the passage.",
+   [
+    "In contrast",
+    "As a result",
+    "For example",
+    "Even so"
+   ],
+   [
+    2
+   ],
+   "가벼운 양전하 얼음은 위로, 무거운 음전하 알갱이는 아래로 모인 결과 구름이 반대 전하로 나뉜다는 흐름이므로 (b) As a result(그 결과)가 맞아요. (a) In contrast(반대로), (c) For example(예를 들어), (d) Even so(그렇더라도)는 원인-결과 관계가 아니에요."
+  ],
+  [
+   71,
+   3,
+   "r2",
+   "r3-p71",
+   "Choose the sentence that does NOT belong in the passage.",
+   [
+    "The brush, usually fashioned from animal hair, lets the writer modulate a stroke's thickness through subtle shifts in pressure.",
+    "Ink traditionally came in solid sticks of soot and animal glue, which had to be ground on the inkstone with water.",
+    "Paper made from plant fibers absorbs ink almost instantly, so a calligrapher has scant opportunity to rectify a careless stroke.",
+    "Many contemporary students, however, now learn to write characters by typing them on computer keyboards."
+   ],
+   [
+    4
+   ],
+   "주제문은 붓·먹·종이·벼루, 즉 문방사우를 소개하고 (a)~(c)는 각각 붓, 먹, 종이를 설명해요. (d)는 요즘 학생들이 키보드로 글자를 익힌다는 다른 이야기라 흐름에 맞지 않아요."
+  ],
+  [
+   72,
+   3,
+   "r2",
+   "r3-p72",
+   "Choose the sentence that does NOT belong in the passage.",
+   [
+    "Under the legislation of many countries, they are entitled to at least the minimum wage, just like adult workers.",
+    "Employers are also usually obligated to provide a written contract that stipulates their hours and pay.",
+    "Many teenagers say that working at a café taught them how to deal courteously with demanding customers.",
+    "Because young workers are rarely acquainted with these regulations, some employers exploit them by withholding wages or demanding unpaid overtime."
+   ],
+   [
+    3
+   ],
+   "주제는 아르바이트하는 청소년이 자기 노동권을 잘 모른다는 것이고 (a) 최저임금, (b) 근로계약서, (d) 이를 악용하는 고용주로 이어져요. (c)는 카페 일로 손님 대하는 법을 배웠다는 경험담이라 권리 이야기에서 벗어나요."
+  ],
+  [
+   73,
+   3,
+   "r3",
+   "r3-p73",
+   "What should ticket holders do if they cannot attend on Sunday?",
+   [
+    "Exchange their tickets at the box office",
+    "Attend the concert on Saturday as planned",
+    "Contact the food vendors to obtain a voucher",
+    "Ask for their money back online"
+   ],
+   [
+    4
+   ],
+   "일요일에 못 오는 사람은 금요일 오후 6시까지 웹사이트에서 전액 환불을 요청할 수 있다고 했으니 (d)가 맞아요. (a) 표는 바꿀 필요가 없다고 했고, (b) 토요일 공연은 미뤄졌으며, (c) 음식 판매자 쿠폰 이야기는 없어요."
+  ],
+  [
+   74,
+   3,
+   "r3",
+   "r3-p74",
+   "What is the main purpose of the email?",
+   [
+    "To offer a guest a discount on her next stay",
+    "To explain a revision to the hotel's cancellation policy",
+    "To ask a guest to pay for an airport shuttle",
+    "To confirm the details of a guest's booking"
+   ],
+   [
+    4
+   ],
+   "'This email confirms your reservation'으로 시작해 방·날짜·체크인 시간·조식을 알려 주므로 목적은 (d) '예약 내용 확인'이에요. (a) 다음 숙박 할인, (b) 취소 규정 변경, (c) 셔틀 요금 요청은 나오지 않아요."
+  ],
+  [
+   75,
+   3,
+   "r3",
+   "r3-p75",
+   "What is the main purpose of the notice?",
+   [
+    "To recruit participants for a research project",
+    "To report the findings of a sleep experiment",
+    "To advertise a new wristband for tracking sleep",
+    "To caution students about using screens at night"
+   ],
+   [
+    1
+   ],
+   "제목이 'Volunteers Needed'이고 참가 조건·보상·지원 방법을 안내하므로 (a) '연구 참가자 모집'이 목적이에요. (b) 결과 보고, (c) 손목밴드 광고, (d) 밤 화면 사용 경고는 공고의 목적이 아니에요."
+  ],
+  [
+   76,
+   3,
+   "r3",
+   "r3-p76",
+   "What is the writer mainly saying about the language exchange?",
+   [
+    "It was too stressful for a novice to enjoy",
+    "It improved the writer's Spanish and social life",
+    "It prepared the writer to teach English professionally",
+    "It was mostly useful for learning business Spanish"
+   ],
+   [
+    2
+   ],
+   "여섯 달 뒤 편하게 대화하게 됐고 짝 두 명이 가장 친한 친구가 됐다고 했으므로 (b) '스페인어와 인간관계 모두 나아졌다'가 요지예요. (a) 처음엔 두려웠지만 상대가 참을성 있었다고 했고, (c) 영어 강사, (d) 업무용 스페인어는 나오지 않아요."
+  ],
+  [
+   77,
+   3,
+   "r3",
+   "r3-p77",
+   "Which of the following is correct according to the passage?",
+   [
+    "The writer's parents have already endorsed the plan to become a chef",
+    "Ms. Reyes advises the writer to abandon cooking and study law",
+    "Ms. Reyes believes passion matters more than meticulous planning",
+    "Ms. Reyes suggests gaining some work experience in a kitchen"
+   ],
+   [
+    4
+   ],
+   "답장에서 '주방 아르바이트를 해서 진심을 보여 주라'고 했으니 (d)가 맞아요. (a) 부모는 아직 반대하고, (b) 요리를 포기하라고 하지 않았으며, (c) '분명한 계획이 열정보다 설득력 있다'고 했으니 반대예요."
+  ],
+  [
+   78,
+   3,
+   "r3",
+   "r3-p78",
+   "Which of the following is correct according to the passage?",
+   [
+    "The stone repeats a single text in three distinct scripts",
+    "Hieroglyphs were deciphered shortly after the stone was found",
+    "Scholars used hieroglyphs to help them decipher ancient Greek",
+    "Champollion proved that all hieroglyphs symbolized ideas"
+   ],
+   [
+    1
+   ],
+   "같은 칙령이 상형문자·민중문자·그리스어 세 가지로 적혀 있다고 했으니 (a)가 맞아요. (b) 해독에 20년 넘게 걸렸고, (c) 그리스어를 실마리로 상형문자를 읽었으며, (d) 샹폴리옹은 많은 기호가 소리를 나타낸다고 밝혔어요."
+  ],
+  [
+   79,
+   3,
+   "r3",
+   "r3-p79",
+   "Which of the following is correct according to the passage?",
+   [
+    "Jazz musicians avoid listening to recordings of other players",
+    "Improvisers draw on material they have rehearsed in advance",
+    "Jazz improvisation disregards what the other musicians are playing",
+    "Jazz players usually invent novel chord progressions during a show"
+   ],
+   [
+    2
+   ],
+   "즉흥연주자는 코드 진행·짧은 선율 패턴을 미리 익혀 두고 연주 중에 이를 조합한다고 했으니 (b)가 맞아요. (a) 앞 세대 녹음을 한 음씩 공부하고, (c) 다른 연주자에게 반응하며, (d) 표준곡의 코드 진행을 외운다고 했어요."
+  ],
+  [
+   80,
+   3,
+   "r3",
+   "r3-p80",
+   "Which of the following is correct according to the passage?",
+   [
+    "Unmanned stores usually close late at night to deter theft",
+    "Police investigate most petty thefts at unmanned stores",
+    "Most unmanned stores operate without any surveillance cameras",
+    "Some stores now verify shoppers at the door"
+   ],
+   [
+    4
+   ],
+   "일부 점주가 들어오기 전에 카드나 휴대폰을 찍게 한다고 했으니 (d)가 맞아요. (a) 24시간 이용할 수 있고, (b) 작은 도난은 신고하는 일이 드물며, (c) 대부분 보안 카메라가 있다고 했어요."
+  ],
+  [
+   81,
+   3,
+   "r3",
+   "r3-p81",
+   "Why do younger workers often oppose the proposed solutions?",
+   [
+    "They think pensions should commence at an earlier age",
+    "They believe older workers should retire much sooner",
+    "They expect to pay more but receive diminished benefits",
+    "They want contribution rates to be set by economists"
+   ],
+   [
+    3
+   ],
+   "젊은 세대는 '덜 줄지도 모르는 제도에 더 내라고 한다'며 반대한다고 했으니 (c)가 맞아요. (a) 수급 나이, (b) 고령자 조기 은퇴, (d) 경제학자가 보험료율을 정하는 것은 젊은 세대의 반대 이유로 나오지 않아요."
+  ],
+  [
+   82,
+   3,
+   "r3",
+   "r3-p82",
+   "Which of the following is correct according to the passage?",
+   [
+    "Pet insurance usually covers routine vaccinations",
+    "Premiums often rise as a pet grows older",
+    "Policies cover ailments a pet had before enrolling",
+    "Experts advise insuring pets once they become ill"
+   ],
+   [
+    2
+   ],
+   "많은 보험이 반려동물이 나이 들수록 보험료를 더 받는다고 했으니 (b)가 맞아요. (a) 예방접종은 흔히 빠지고, (c) 가입 전 질환은 보장하지 않으며, (d) 어리고 건강할 때 가입하라고 했어요."
+  ],
+  [
+   83,
+   3,
+   "r3",
+   "r3-p83",
+   "What can be inferred from the passage?",
+   [
+    "Using a platform's escrow service mitigates the risk of fraud",
+    "Most fraud on these platforms is perpetrated by buyers",
+    "Sellers of coveted gadgets are obliged to meet buyers in person",
+    "Scammers usually offer cheap items that nobody wants"
+   ],
+   [
+    1
+   ],
+   "사기꾼이 물건이 올 때까지 돈을 맡아 두는 안전결제(escrow)를 건너뛰게 설득한다고 했으니, 안전결제를 쓰면 사기 위험이 줄어든다는 (a)를 추론할 수 있어요. (b) 글의 예는 판매자 사기이고, (c) 직거래 의무는 없으며, (d) 인기 기기를 싸게 올린다고 했어요."
+  ],
+  [
+   84,
+   3,
+   "r3",
+   "r3-p84",
+   "What can be inferred from the passage?",
+   [
+    "Habitual drinkers may need more coffee for the same effect",
+    "Adenosine levels in the brain decline throughout the day",
+    "Caffeine works by increasing the amount of adenosine in the brain",
+    "People who rarely drink coffee have more adenosine receptors"
+   ],
+   [
+    1
+   ],
+   "매일 카페인을 먹으면 수용체가 늘어 같은 한 잔의 효과가 약해진다고 했으니, 같은 효과를 보려면 더 마셔야 한다는 (a)를 추론할 수 있어요. (b) 아데노신은 깨어 있는 동안 쌓이고, (c) 카페인은 아데노신을 막으며, (d) 수용체가 늘어나는 쪽은 자주 마시는 사람이에요."
+  ],
+  [
+   85,
+   3,
+   "r3",
+   "r3-p85",
+   "What can be inferred from the passage?",
+   [
+    "Juvenile crows can make hooks without any practice",
+    "The crows use their tools mainly to defend themselves",
+    "Tool making is prevalent among most species of birds",
+    "Crows may acquire tool making partly from older crows"
+   ],
+   [
+    4
+   ],
+   "어린 까마귀가 부모 곁에서 몇 달씩 연습하고 지역마다 도구 모양이 다르다고 했으니, 나이 든 까마귀에게서 일부 배운다는 (d)를 추론할 수 있어요. (a) 처음엔 서툰 도구를 만들고, (b) 도구는 애벌레를 꺼내는 데 쓰며, (c) 도구를 만드는 동물은 드물다고 했어요."
+  ],
+  [
+   86,
+   3,
+   "r4",
+   "r3-p86",
+   "What is the main point of the passage?",
+   [
+    "Visiting many cities is the best way to understand a country",
+    "Travelers should take more photos to preserve their memories",
+    "Slow travel is cheaper than a guided tour of many cities",
+    "Lingering in one place can make travel more meaningful"
+   ],
+   [
+    4
+   ],
+   "적은 곳에 오래 머물면 '그냥 들르는 것이 아니라 그곳에 살아 볼 기회'를 얻는다는 것이 글의 요지라 (d)가 맞아요. (a)는 글쓴이가 버린 방식이고, (b) 사진은 오히려 적었으며, (c) 비용 비교는 나오지 않아요."
+  ],
+  [
+   87,
+   3,
+   "r4",
+   "r3-p86",
+   "What can be inferred about the writer?",
+   [
+    "The writer moved to Portugal permanently after the trip",
+    "The writer's earlier trips left few lasting impressions",
+    "The writer disliked the cuisine of the coastal town",
+    "The writer believes slow travel suits every kind of tourist"
+   ],
+   [
+    2
+   ],
+   "예전 여행은 '거의 기억나지 않는 명소' 사진만 가득했다고 했으니 이전 여행이 오래 남는 인상을 주지 못했다는 (b)를 추론할 수 있어요. (a) 3주 머문 뒤 집에 돌아왔고, (c) 음식 불만은 없으며, (d) 모두에게 맞지는 않는다고 했어요."
+  ],
+  [
+   88,
+   3,
+   "r4",
+   "r3-p88",
+   "Which of the following is correct according to the passage?",
+   [
+    "The Games combined athletic contests with religious rituals",
+    "Women of all kinds were free to spectate at the competitions",
+    "Winners at Olympia were awarded medals made of gold",
+    "Chariot racing was the inaugural event held at the Games"
+   ],
+   [
+    1
+   ],
+   "고대 올림픽은 운동 경기이자 종교 축제로 경기와 함께 제물을 바쳤다고 했으니 (a)가 맞아요. (b) 기혼 여성은 대체로 관람이 금지됐고, (c) 우승자는 올리브 관을 받았으며, (d) 첫 종목은 단거리 달리기 '스타디온'이었어요."
+  ],
+  [
+   89,
+   3,
+   "r4",
+   "r3-p88",
+   "What was the purpose of the sacred truce?",
+   [
+    "To terminate the wars between Greek city-states permanently",
+    "To allow married women to attend the festival",
+    "To determine which athletes were eligible to compete",
+    "To protect people traveling to and from Olympia"
+   ],
+   [
+    4
+   ],
+   "선수와 관중이 올림피아에 안전하게 오가도록 신성한 휴전을 선포했다고 했으니 (d)가 맞아요. (a) 전쟁을 아주 끝낸 것이 아니라 축제 동안 지나가게 해 준 것이고, (b) 기혼 여성 관람, (c) 출전 자격 결정과는 관계없어요."
+  ],
+  [
+   90,
+   3,
+   "r4",
+   "r3-p90",
+   "What is the passage mainly about?",
+   [
+    "The reasons traditional markets have become more popular",
+    "The rapid growth of online grocery shopping in South Korea",
+    "The conflicting views on a regulation closing large supermarkets",
+    "The working conditions of employees at large supermarkets"
+   ],
+   [
+    3
+   ],
+   "대형마트 의무휴업을 두고 찬성(소상공인 보호·직원 휴식)과 반대(전통시장 효과 없음·온라인만 이득) 의견을 함께 보여 주므로 (c)가 주제예요. (a) 전통시장 인기는 오히려 의문이고, (b) 온라인 성장과 (d) 직원 근무 환경은 일부 내용일 뿐이에요."
+  ],
+  [
+   91,
+   3,
+   "r4",
+   "r3-p90",
+   "Why do some labor unions oppose moving closing days to weekdays?",
+   [
+    "They fear supermarkets will slash employees' wages",
+    "They believe online retailers should also close",
+    "They think traditional markets will lose customers",
+    "They want staff to have weekends off"
+   ],
+   [
+    4
+   ],
+   "일부 노조는 직원도 주말을 가족과 보내야 한다며 평일 휴업에 반대한다고 했으니 (d)가 맞아요. (a) 임금 삭감, (b) 온라인 업체 휴업, (c) 전통시장 손님 감소는 노조의 반대 이유로 나오지 않아요."
+  ],
+  [
+   92,
+   3,
+   "r4",
+   "r3-p92",
+   "How does a counterfeit hotspot deceive users?",
+   [
+    "By sending fraudulent payment requests to users' phones",
+    "By slowing down nearby legitimate networks",
+    "By imitating a genuine network so users connect",
+    "By infiltrating banks' computer systems directly"
+   ],
+   [
+    3
+   ],
+   "가짜 핫스폿은 'Free_Airport_WiFi' 같은 이름으로 진짜처럼 보이는 망을 열어 사용자가 접속하게 만든다고 했으니 (c)가 맞아요. (a) 가짜 결제 요청, (b) 진짜 망 속도 늦추기, (d) 은행 전산 침입은 나오지 않아요."
+  ],
+  [
+   93,
+   3,
+   "r4",
+   "r3-p92",
+   "What can be inferred from the passage?",
+   [
+    "Automatic connections can lead users onto counterfeit networks",
+    "Encrypted public networks are riskier than unencrypted ones",
+    "Café staff often set up fake hotspots to steal information",
+    "VPNs are mainly useful for people who seldom use public Wi-Fi"
+   ],
+   [
+    1
+   ],
+   "열린 망에 자동으로 접속하는 설정을 끄라고 권하므로, 자동 접속이 가짜 망으로 이어질 수 있다는 (a)를 추론할 수 있어요. (b) 위험한 쪽은 암호화하지 않는 망이고, (c) 직원에게 망 이름을 확인하라고 했으며, (d) VPN은 자주 쓰는 사람에게 권했어요."
+  ],
+  [
+   94,
+   3,
+   "r4",
+   "r3-p94",
+   "Which of the following is correct according to the passage?",
+   [
+    "The black hole in the image emits a brilliant light of its own",
+    "Telescopes at different sites were combined for the observation",
+    "The image showed a perfectly symmetrical ring of glowing gas",
+    "The observations refuted Einstein's theory of relativity"
+   ],
+   [
+    2
+   ],
+   "세계 여러 곳의 전파망원경을 연결해 지구만 한 망원경처럼 썼다고 했으니 (b)가 맞아요. (a) 블랙홀은 스스로 빛을 내지 않고, (c) 고리는 한쪽으로 치우쳐 있었으며, (d) 결과는 아인슈타인의 예측과 잘 맞았어요."
+  ],
+  [
+   95,
+   3,
+   "r4",
+   "r3-p94",
+   "What can be inferred from the passage?",
+   [
+    "The black hole in M87 is relatively close to Earth",
+    "Transmitting the data online would have been impractical",
+    "Scientists expected the image to look completely different",
+    "A single larger telescope could easily take a similar picture"
+   ],
+   [
+    2
+   ],
+   "자료가 너무 커서 인터넷 대신 하드디스크로 실어 보냈다고 했으니 온라인 전송은 현실적이지 않았다는 (b)를 추론할 수 있어요. (a) 아주 멀리 있고, (c) 결과가 예측과 잘 맞았으며, (d) 망원경 하나로는 볼 수 없었다고 했어요."
+  ]
+ ]
+}

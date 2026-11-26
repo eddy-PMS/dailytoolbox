@@ -52,6 +52,9 @@
     var src = useM ? safeUrl(c.imgM) : safeUrl(c.img); if (!src) return false;
     var iw = useM ? +c.wM : +c.w, ih = useM ? +c.hM : +c.h;
     var href = safeUrl(c.href);
+    // 이동 주소의 {page} 는 쪽 이름(끝 .html 뺀 파일 이름, 영문 소문자·숫자·하이픈만)으로 바꾼다 — 배너 경유 설치를 쪽 단위로 잇기 위한 꼬리표.
+    // referrer 안의 이미 인코딩된 자리에 들어가므로 따로 인코딩하지 않는다. {page} 가 없는 주소는 그대로
+    if (href.indexOf('{page}') >= 0) href = safeUrl(href.split('{page}').join(path.replace(/\.html$/, '').replace(/[^a-z0-9-]/g, '')));
     var img = document.createElement('img');
     img.src = src; img.alt = c.alt || ''; img.decoding = 'async';
     if (iw > 0 && ih > 0) { img.width = iw; img.height = ih; }

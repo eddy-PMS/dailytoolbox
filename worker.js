@@ -81,6 +81,60 @@ function maskContact(s) {
           .replace(/(\+?82[-.\s]?)?0?1[016789][-.\s]?\d{3,4}[-.\s]?\d{4}/g, '***')
           .replace(/\b0\d{1,2}[-.\s)]\d{3,4}[-.\s]\d{4}\b/g, '***');
 }
+// ===== 편입영어 모의고사 '응시자 중 내 위치' =====
+// 이 기능 저장은 D1 dtb-main(바인딩 DB, dailytoolbox 계정) tf_rank_dist·tf_rank_day. 저장 1건 = 한 batch 에 D1 쓰기 2줄, 회차당 하루 TF_RANK_ROUND_DAY(행 81개 합 최대 8,100건 = 16,200줄, 무료 하루 10만 가정), 요청 1건 = 읽기 1~2줄. KV 는 쓰지 않는다. Studio 스펙 2026-11-27-dtb-transfer-rank 변경 이력 (5)
+// 저장은 학교·회차·판·점수 칸(100점 기준 1점 단위) 합계와 날짜별 응시 수뿐. IP·User-Agent·시각은 저장하지 않는다(rateOk 메모리 대조만).
+// 환경 변수 TF_RANK_PAUSE === '1' 이면 저장만 멈춘다('0'·없음은 정상). 값은 대시보드에서 대표가 넣는다(코드·wrangler.jsonc 에 값 없음).
+const TF_RANK_SCHOOLS = ['skku', 'sookmyung', 'sejong', 'cau', 'gachon', 'konkuk', 'kyonggi', 'khu', 'sogang', 'dankook', 'ajou', 'duksung', 'ssu', 'inha', 'hufs', 'kw', 'mju', 'tukorea', 'kau', 'swu', 'hongik', 'uos', 'police', 'catholic', 'hanyang', 'ewha'];
+// 학교별 문제 파일 checked → 판 글자. 오타·해설 손질로 checked 만 바뀌면 새 checked 를 같은 판 글자로 더한다(표본 유지).
+// 문항 내용·정답이 바뀌면 새 checked 를 새 판 글자('2'…)로 더한다. 옛 checked 줄은 지우지 않는다(캐시된 옛 파일 사용자용).
+const TF_RANK_VERS = {
+  skku: { '2026-11-23': '1', '2026-11-27': '2' }, sookmyung: { '2026-11-23': '1' }, sejong: { '2026-11-23': '1' }, cau: { '2026-11-23': '1' },
+  gachon: { '2026-11-23': '1' }, konkuk: { '2026-11-23': '1' }, kyonggi: { '2026-11-23': '1' }, khu: { '2026-11-23': '1' },
+  sogang: { '2026-11-23': '1' }, dankook: { '2026-11-23': '1' }, ajou: { '2026-11-23': '1' }, duksung: { '2026-11-23': '1' },
+  ssu: { '2026-11-23': '1' }, inha: { '2026-11-23': '1' }, hufs: { '2026-11-23': '1' }, kw: { '2026-11-23': '1' },
+  mju: { '2026-11-23': '1' }, tukorea: { '2026-11-23': '1' }, kau: { '2026-11-23': '1' }, swu: { '2026-11-23': '1' },
+  hongik: { '2026-11-23': '1' }, uos: { '2026-11-23': '1' }, police: { '2026-11-23': '1' }, catholic: { '2026-11-23': '1' },
+  hanyang: { '2026-11-23': '1' }, ewha: { '2026-11-24': '1' }
+};
+const TF_RANK_ROUNDS = 3;        // 허용 회차 1~3
+const TF_RANK_ROUND_DAY = 100;   // 회차(행)당 하루(UTC) 저장 몫. 행의 d·w 로 같은 upsert 안에서 판단(판단에 쓰기 0)
+const TF_RANK_KEEP_DAYS = 400;   // 마지막 저장일(dist)·그 날짜(day)로부터 400일 뒤 scheduled() 가 지운다
+const TF_RANK_MIN_N = 20;        // 이 수보다 적으면 위치 대신 표본 부족
+// 내 칸: 29/50*100 = 57.99999999999999 같은 부동소수 오차를 먼저 걷어 낸다
+function tfRankBin(pct) { return Math.floor(Math.round(pct * 1000) / 1000); }
+function utcDay(t = new Date()) { return t.toISOString().slice(0, 10).replace(/-/g, ''); }
+// 학교·회차·ver 검사. 통과하면 행 키 {school, round, ver: 판 글자}, 아니면 오류 이름
+function tfRankKeyOf(school, round, ver) {
+  if (!TF_RANK_SCHOOLS.includes(school)) return { error: 'bad_request' };
+  if (!Number.isInteger(round) || round < 1 || round > TF_RANK_ROUNDS) return { error: 'bad_request' };
+  const vers = TF_RANK_VERS[school];
+  if (typeof ver !== 'string' || !Object.prototype.hasOwnProperty.call(vers, ver)) return { error: 'bad_ver' };
+  return { school, round, ver: vers[ver] };
+}
+// 저장된 b(101칸 JSON 글자) → 정수 배열
+function tfRankParse(s) {
+  let a; try { a = JSON.parse(s); } catch { a = null; }
+  if (!Array.isArray(a) || a.length !== 101) return new Array(101).fill(0);
+  return a.map(x => Number.isInteger(x) && x > 0 ? x : 0);
+}
+// 저장 1건 = 아래 두 문장을 env.DB.batch 한 번(한 트랜잭션). ?6 경로는 JS 에서 '$[58]' 꼴 글자로 묶는다
+const TF_RANK_UPSERT = `INSERT INTO tf_rank_dist (school, round, ver, b, n, d, w) VALUES (?1, ?2, ?3, ?4, 1, ?5, 1)
+ON CONFLICT (school, round, ver) DO UPDATE SET
+  b = json_set(b, ?6, json_extract(b, ?6) + 1),
+  n = n + 1,
+  w = CASE WHEN d = ?5 THEN w + 1 ELSE 1 END,
+  d = ?5
+WHERE d <> ?5 OR w < ?7
+RETURNING b, n, w`;
+const TF_RANK_DAY_UPSERT = `INSERT INTO tf_rank_day (day, school, round, ver, n) SELECT ?1, ?2, ?3, ?4, 1 WHERE changes() = 1
+ON CONFLICT (day, school, round, ver) DO UPDATE SET n = n + 1`;
+// 상위 % = (나보다 높은 칸 수 + 1) / n. 정수 곱을 먼저 해 부동소수 오차를 피한다
+function tfRankTop(b, n, bin) {
+  if (n < TF_RANK_MIN_N) return null;
+  let higher = 0; for (let i = bin + 1; i < 101; i++) higher += b[i];
+  return Math.max(1, Math.ceil((higher + 1) * 100 / n));
+}
 const VOTE_SAMPLE_AFTER = 100; // 이 참여 수부터 표본 집계
 const VOTE_SAMPLE_RATE = 5;    // 5회 중 1회만 KV 에 기록
 function wcGenId() {
@@ -178,6 +232,67 @@ export default {
       return res;
     }
 
+
+    // ---- 편입영어 모의고사 '응시자 중 내 위치': 실전 모드를 끝내면 점수 칸 합계에 더하고 상위 % 를 돌려준다 ----
+    if (url.pathname === '/api/tf-rank' && request.method === 'POST') {
+      if (!isSameOrigin(request, host)) return json({ ok: false, error: 'forbidden' }, 403);
+      const ip = request.headers.get('CF-Connecting-IP') || '';
+      if (!rateOk('tfrx:' + ip, 60, 60 * 1000)) return json({ ok: false, error: 'rate' }, 429);
+      if (!env.DB) return json({ ok: false, error: 'not_configured' }, 500);
+      let b;
+      try { b = await request.json(); } catch { return json({ ok: false, error: 'bad_request' }, 400); }
+      if (!b || typeof b !== 'object') return json({ ok: false, error: 'bad_request' }, 400);
+      const school = String(b.school || ''), round = b.round;
+      const k = tfRankKeyOf(school, round, b.ver);
+      if (k.error) return json({ ok: false, error: k.error }, 400);
+      const { pct, total, answered, dur } = b;
+      if (typeof pct !== 'number' || !Number.isFinite(pct) || pct < 0 || pct > 100) return json({ ok: false, error: 'bad_request' }, 400);
+      if (!Number.isInteger(total) || total < 10 || total > 200) return json({ ok: false, error: 'bad_request' }, 400);
+      if (!Number.isInteger(answered) || answered < Math.ceil(total / 2) || answered > total) return json({ ok: false, error: 'bad_request' }, 400);
+      if (typeof dur !== 'number' || !Number.isFinite(dur) || dur < answered * 8000) return json({ ok: false, error: 'bad_request' }, 400);
+      if (b.website) return json({ ok: false, error: 'bad_request' }, 400);         // 숨은 칸이 채워졌으면 봇
+      // 집계 여부: 같은 IP 1시간 10건, 같은 IP·같은 회차 하루 3건까지. 넘쳐도 오류 없이 위치만 보여 준다
+      const use = b.count === true && rateOk('tfrh:' + ip, 10, 60 * 60 * 1000) && rateOk('tfr1:' + ip + ':' + school + ':' + round, 3, 24 * 60 * 60 * 1000);
+      const today = utcDay(), paused = env.TF_RANK_PAUSE === '1';
+      const bin = tfRankBin(pct);
+      if (!Number.isInteger(bin) || bin < 0 || bin > 100) return json({ ok: false, error: 'bad_request' }, 400);
+      let saved = false, full = false, dist = null, n = 0;
+      if (use && !paused) {
+        const path = '$[' + bin + ']';                // 경로는 JS 에서 글자로(SQL 안에서 숫자를 이어 붙이면 '$[58.0]' 이 될 수 있음)
+        const mine = new Array(101).fill(0); mine[bin] = 1;
+        try {
+          const r = await env.DB.batch([
+            env.DB.prepare(TF_RANK_UPSERT).bind(k.school, k.round, k.ver, JSON.stringify(mine), today, path, TF_RANK_ROUND_DAY),
+            env.DB.prepare(TF_RANK_DAY_UPSERT).bind(today, k.school, k.round, k.ver)
+          ]);
+          const row = r[0] && r[0].results && r[0].results[0];
+          if (row) { saved = true; dist = tfRankParse(row.b); n = row.n; }
+          else full = true;                           // 회차당 하루 몫 찼음: 쓰기 0
+        } catch (e) { console.error('tf_rank_db', e && e.message); }   // IP·User-Agent 는 남기지 않는다
+      }
+      if (!saved) {
+        try {
+          const row = await env.DB.prepare('SELECT b, n FROM tf_rank_dist WHERE school = ?1 AND round = ?2 AND ver = ?3').bind(k.school, k.round, k.ver).first();
+          dist = row ? tfRankParse(row.b) : new Array(101).fill(0); n = row ? row.n : 0;
+        } catch (e) { console.error('tf_rank_db', e && e.message); return json({ ok: false, error: 'db' }, 503); }
+        if (use) { dist[bin] += 1; n += 1; }         // 멈춤·몫 찼음·저장 실패도 저장됐을 때와 같은 식
+      }
+      const out = { ok: true, n, top: tfRankTop(dist, n, bin), saved };
+      if (use && paused) out.paused = true;
+      if (use && full) out.full = true;
+      return json(out);
+    }
+    // 측정용 조회: 저장된 n 과 오늘(UTC) 저장 수
+    if (url.pathname === '/api/tf-rank' && request.method === 'GET') {
+      if (!env.DB) return json({ ok: false, error: 'not_configured' }, 500);
+      const school = url.searchParams.get('school') || '', round = Number(url.searchParams.get('round'));
+      const k = tfRankKeyOf(school, round, url.searchParams.get('ver') || '');
+      if (k.error) return json({ ok: false, error: k.error }, 400);
+      let row;
+      try { row = await env.DB.prepare('SELECT n, d, w FROM tf_rank_dist WHERE school = ?1 AND round = ?2 AND ver = ?3').bind(k.school, k.round, k.ver).first(); }
+      catch (e) { console.error('tf_rank_db', e && e.message); return json({ ok: false, error: 'db' }, 503); }
+      return json({ ok: true, n: row ? row.n : 0, today: row && row.d === utcDay() ? row.w : 0 }, 200, { 'cache-control': 'public, max-age=60' });
+    }
 
     // ---- 모의고사 의견: 글·문항 번호·응시 여부만 KV 에 400일 저장. IP·기기 정보는 저장하지 않는다 ----
     if (url.pathname === '/api/feedback' && request.method === 'POST') {
@@ -544,5 +659,17 @@ export default {
     }
 
     return env.ASSETS.fetch(request);
+  },
+
+  // 하루 1번(wrangler.jsonc crons 41 15 * * * = KST 00:41): D1 dtb-main 의 400일 넘은 줄을 지운다(privacy 약속 — 다음 D1 작업에서도 지우지 않는다)
+  async scheduled(event, env, ctx) {
+    if (!env.DB) return;
+    const cut = utcDay(new Date((event && event.scheduledTime ? event.scheduledTime : Date.now()) - TF_RANK_KEEP_DAYS * 24 * 3600 * 1000));
+    try {
+      await env.DB.batch([
+        env.DB.prepare('DELETE FROM tf_rank_day WHERE day < ?1').bind(cut),
+        env.DB.prepare('DELETE FROM tf_rank_dist WHERE d < ?1').bind(cut)
+      ]);
+    } catch (e) { console.error('tf_rank_db', e && e.message); }
   }
 };

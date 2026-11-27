@@ -21,3 +21,7 @@
 .boxgrid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:4px 14px; font-size:15px; line-height:1.6; } @media(min-width:600px){ .boxgrid { grid-template-columns:repeat(4,minmax(0,1fr)); } }
 .boxgrid b { color:var(--accent-deep); margin-right:2px; }
 .qwrap:not(.two) .psg { margin-bottom:14px; }
+.tf-rank { margin:12px 0 4px; padding:12px 14px; border-radius:8px; background:var(--paper-deep); border:1px solid var(--line); word-break:keep-all; }
+.tf-rank-h { margin:0; font-size:15px; font-weight:700; color:var(--ink); }
+.tf-rank-v { margin:6px 0 0; font-size:15px; line-height:1.5; } .tf-rank-v.ok { font-size:18px; font-weight:700; color:var(--accent); } .tf-rank-v.ok b { font-size:22px; }
+.tf-rank .btn-row { margin-top:8px; } .tf-rank .note { margin:8px 0 0; }

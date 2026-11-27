@@ -9,7 +9,7 @@ const $=id=>document.getElementById(id);
 const CIRC=['①','②','③','④','⑤'];
 // 기록은 회차별로 따로: tf_last_<학교>_r<회차>. 문항 id 는 회차 안에서만 겹치지 않는다
 const ev=(name,p)=>{ if(typeof gtag==='function') gtag('event','tf_'+name,Object.assign({school:C.school,round:ROUND},AREA?{section:AREA.k}:{},p)); };
-let T0=0, BANK=null, SEC={}, SECA={}, PSG={}, LIMIT=0, ROUNDS=[], ROUND=1, POINTS=null, PENALTY=0, MINS=null, AREA=null;
+let T0=0, BANK=null, SEC={}, SECA={}, PSG={}, LIMIT=0, ROUNDS=[], ROUND=1, POINTS=null, PENALTY=0, MINS=null, AREA=null, VER='';
 // 문항별 배점(데이터 최상위 points:[[시작id,끝id,점수],…])이 있으면 끝 화면 점수를 배점 합으로
 const fr=v=>({0.25:'1/4',0.5:'1/2',0.2:'1/5',0.3333:'1/3'})[v]||`${Math.round(v*100)}%`;
 const ptOf=q=>{ if(!POINTS) return 1; const r=POINTS.find(([a,b])=>q[0]>=a&&q[0]<=b); return r? r[2] : 0; };
@@ -33,7 +33,7 @@ function save(v){ try{ localStorage.setItem(storeKey(),JSON.stringify(v)); }catc
 function load(){
   $('startExam').disabled=true; $('startPrac').disabled=true; $('loadmsg').textContent='문제를 불러오는 중이에요…';
   fetch(C.bank).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }).then(d=>{
-    BANK=d.q; SEC={}; SECA={}; d.sections.forEach(s=>{ SEC[s.id]=s.name; SECA[s.id]=s.area; }); PSG={}; (d.passages||[]).forEach(p=>{ PSG[p.id]=p.text; });
+    BANK=d.q; VER= d.checked!=null? String(d.checked) : ''; SEC={}; SECA={}; d.sections.forEach(s=>{ SEC[s.id]=s.name; SECA[s.id]=s.area; }); PSG={}; (d.passages||[]).forEach(p=>{ PSG[p.id]=p.text; });
     /* 시험 시간이 없는 학교(minutes null)는 시간 제한 없이 풀고 걸린 시간만 보여 준다 */ MINS= d.minutes&&typeof d.minutes==='object'&&Array.isArray(C.areas)? d.minutes : null; if(!MINS) AREA=null; else if(!AREA) AREA=C.areas[0];
     LIMIT= MINS? Number(MINS[AREA.min])*60||0 : Number(d.minutes)>0? Number(d.minutes)*60 : 0; POINTS=Array.isArray(d.points)&&d.points.length? d.points : null; PENALTY=Number(d.penalty)>0&&Number(d.penalty)<1? Number(d.penalty) : 0;
     const rn=$('rulenote'); if(rn){ rn.textContent=(PENALTY? `실전 모드는 이 학교 방식대로 틀린 문항마다 그 문항 배점의 ${fr(PENALTY)}을 빼요(답하지 않은 문항은 0점). 한 문제씩 풀기는 감점하지 않아요. ` : '')+(LIMIT? '' : `${C.name||'이 학교'} 문제지에는 시험 시간이 적혀 있지 않아 시간 제한 없이 풀어요. 실전 모드는 끝나면 걸린 시간을 보여 줘요.`); show('rulenote',!!PENALTY||!LIMIT); } ROUNDS=[...new Set(BANK.map(q=>q[1]))].sort((a,b)=>a-b);
@@ -171,12 +171,48 @@ function finishExam(timeout){
   if(!LIMIT){ const sec=Math.round((Date.now()-T0)/1000), n=document.createElement('p'); n.className='note'; n.textContent=`걸린 시간 ${Math.floor(sec/60)}분 ${sec%60}초`; r.appendChild(n); }
   const big=document.createElement('div'); big.className='big-result'; big.textContent=`${set.length}문항 중 ${cnt}문항 맞았어요`;
   const sm=document.createElement('small'); sm.textContent= C.noScore? `정답률 ${(cnt/set.length*100).toFixed(1)}%` : (POINTS? `(배점 합 ${got}점 / ${full}점` : `(100점 환산 ${score}점`)+(PENALTY? (POINTS? ` · 오답 감점 ${Math.round(minus*100)/100}점 반영)` : ' · 오답 감점 반영)') : ')'); big.appendChild(sm); r.appendChild(big);
+  try{ const answered=Object.keys(ans).length, dur=Date.now()-T0;
+    if(mode==='exam' && set.length===roundQs().length && !C.noScore && !C.areas && answered>=Math.ceil(set.length/2) && dur>=answered*8000)
+      r.appendChild(rankBox({pct: Math.min(100, POINTS? got/full*100 : score), total:set.length, answered, dur}));
+  }catch(e){}
   r.appendChild(bars(set,q=>ans[set.indexOf(q)]===q[6][0]));
   const note=document.createElement('p'); note.className='note'; note.textContent= C.noScore? (C.scoreNote||'') : (POINTS? '문항별 배점을 더한 점수예요. ' : '맞은 문항 수를 100점으로 환산한 점수예요. ')+(PENALTY? `틀린 문항은 배점의 ${fr(PENALTY)}을 뺐고, 답하지 않은 문항은 0점으로 셌어요. ` : '')+'실제 시험 점수와는 다를 수 있어요.'; r.appendChild(note);
   r.appendChild(buttons(wl.map(x=>x.q)));
   reviewList(wl, r); r.appendChild(fbForm(wl.map(x=>x.q), set)); r.scrollIntoView({block:'start'});
   save({d:today(), n:set.length, c:cnt, wrong:wl.map(x=>x.q[0])});
   ev('result',C.noScore? {correct:cnt,total:set.length} : Object.assign({score}, POINTS? {full} : {}, PENALTY? {penalty:PENALTY} : {}));
+}
+// 응시자 중 내 위치: 실전 모드 한 회차를 끝내면 학교·회차·판·점수만 이름 없이 서버로 보내고 상위 % 를 받는다.
+// 이 기기에서 같은 회차·같은 판을 이미 집계에 넣었으면(tf_rank_<학교>_r<회차> = 판) count=false 로 위치만 본다.
+function rankBox(p){
+  const rk='tf_rank_'+C.school+'_r'+ROUND, school=C.school, round=ROUND, ver=VER;
+  let count=true; try{ count= localStorage.getItem(rk)!==ver; }catch(e){ count=true; }
+  const w=document.createElement('div'); w.className='tf-rank';
+  const h=document.createElement('p'); h.className='tf-rank-h'; h.textContent='응시자 중 내 위치'; w.appendChild(h);
+  const v=document.createElement('p'); v.className='tf-rank-v'; v.setAttribute('role','status'); w.appendChild(v);
+  const row=document.createElement('div'); row.className='btn-row hidden'; const again=document.createElement('button'); again.type='button'; again.className='btn-ghost'; again.textContent='다시 불러오기'; row.appendChild(again); w.appendChild(row);
+  const second=document.createElement('p'); second.className='note hidden'; second.textContent='두 번째 이후 응시라 이번 점수는 집계에 넣지 않았어요.'; w.appendChild(second);
+  const nt=document.createElement('p'); nt.className='note'; nt.textContent='실전 모드를 끝내면 학교·회차·점수만 이름 없이 자동으로 모여요. 이 기기에서 처음 본 점수만 모으며, 실제 시험 합격선과는 달라요.'; w.appendChild(nt);
+  const fmt=n=>Number(n||0).toLocaleString('ko-KR');
+  const send=async()=>{
+    v.className='tf-rank-v'; v.textContent='불러오는 중이에요…'; row.classList.add('hidden'); again.disabled=true;
+    try{
+      const r=await fetch('/api/tf-rank',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({school,round,ver,pct:p.pct,total:p.total,answered:p.answered,dur:p.dur,count,website:''})});
+      const j=await r.json().catch(()=>({}));
+      if(!r.ok||!j.ok||!Number.isInteger(j.n)) throw new Error(r.status);
+      v.textContent='';
+      if(j.top==null){ v.textContent=`아직 ${fmt(j.n)}명이 모였어요. 20명이 모이면 위치를 알려 드려요.`; }
+      else { v.classList.add('ok'); const b=document.createElement('b'); b.textContent=`상위 ${j.top}%`; v.appendChild(document.createTextNode(`지금까지 이 회차를 본 ${fmt(j.n)}명 중 `)); v.appendChild(b); v.appendChild(document.createTextNode('예요')); }
+      second.classList.toggle('hidden',count);
+      if(j.saved===true){ try{ localStorage.setItem(rk,ver); }catch(e){} }
+      ev('rank',{school, round, counted:j.saved?1:0, top:j.top||0, n:j.n});
+    }catch(e){ v.className='tf-rank-v'; v.textContent='지금은 위치를 불러오지 못했어요.'; row.classList.remove('hidden'); again.disabled=false; }
+  };
+  again.addEventListener('click',send);
+  // 상자를 붙인 직후 한 번만 tf_rank_shown, 보내기는 비동기라 나머지 결과 화면을 막지 않는다
+  setTimeout(()=>{ ev('rank_shown',{school, round}); send(); },0);
+  v.textContent='불러오는 중이에요…';
+  return w;
 }
 function finishPrac(){
   const n=idx+(checked?1:0); show('quiz',false);

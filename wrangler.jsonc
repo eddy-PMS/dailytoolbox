@@ -1,4 +1,5 @@
 {
+  "account_id": "3547b6e547eeba3c6eb05de821bf8828",
   "keep_vars": true,
   "name": "dailytoolbox",
   "main": "worker.js",
@@ -14,5 +15,14 @@
       "binding": "WORLDCUP_KV",
       "id": "40d9b75cbf704d93ad53030f6f225439"
     }
-  ]
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "dtb-main",
+      "database_id": "92521796-b413-4bfc-b726-97af60734c71",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "triggers": { "crons": ["41 15 * * *"] }
 }
